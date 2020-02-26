@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestActionResultModel API | Extensions for Azure DevOps Services
+description: Data representation of a test action result model.
 ms.assetid: 076fbaff-95b1-0334-cc71-ceb5be95c317
 ms.prod: devops
 ms.technology: devops-ecosystem

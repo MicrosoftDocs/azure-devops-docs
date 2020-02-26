@@ -1,5 +1,5 @@
 ﻿---
-title: Troubleshoot GitHub repo connection to a project in Azure DevOps
+title: Troubleshoot GitHub repo connection to a project
 titleSuffix: Azure Boards
 description: Learn how to resolve connection problems with a GitHub repository and Azure Boards project  
 ms.assetid: 
@@ -15,7 +15,7 @@ ms.date: 03/05/2019
 
 # Troubleshoot GitHub & Azure Boards connection 
 
-[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
 ::: moniker range="azure-devops"
 When you create a GitHub connection, you are granted access to GitHub as an OAuth app or by using a Personal Access Token (PAT).
@@ -32,7 +32,7 @@ The access by Azure Boards to the GitHub repositories can be revoked in several 
 ::: moniker-end
 
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 ::: moniker range="azure-devops"
 <a id="integrate-repo-to-several-organizations" />

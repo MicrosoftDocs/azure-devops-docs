@@ -34,7 +34,7 @@ To promote a package-version into the release view:
 1. Click the Promote button
 1. Select the view to promote to and select **Promote**
 
-![Promote button next to the package ID](_img/release-views-promote.png)
+![Promote button next to the package ID](media/release-views-promote.png)
 
 You can also promote using REST APIs. 
 
@@ -50,7 +50,7 @@ Once a package-version is in a release view, you can connect your package client
 
 <!-- 1. Optionally, select the view -->
 
-![Connect to view dialog with view URL](_img/connect-to-view.png)
+![Connect to view dialog with view URL](media/connect-to-view.png)
 
 For more details, see [Consume NuGet packages in Visual Studio](../nuget/consume.md), [Install npm modules](../get-started-npm.md), or [Install Maven artifacts](../maven/install.md).
 
@@ -70,7 +70,7 @@ Today, the **NuGet Publisher** build task uses the `-prerelease` part of a SemVe
 
 You can create your own views and rename and delete existing views in the feed settings dialog.
 
-[!INCLUDE [edit-feed](../_shared/edit-feed.md)]
+[!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
 In the edit feed dialog:
 - Select **Release views**
@@ -79,4 +79,4 @@ In the edit feed dialog:
 
 ## Views for other scenarios
 
-In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Azure Artifacts UserVoice](https://visualstudio.uservoice.com/forums/330519-team-services/category/145266-package-management).
+In time, we expect to provide views for a wider range of scenarios. For example, you might create a view to filter to packages from a certain author or with a certain OSS license. If you have a scenario you'd like to suggest, please visit the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).

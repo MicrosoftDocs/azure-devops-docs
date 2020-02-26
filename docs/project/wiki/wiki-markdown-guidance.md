@@ -11,14 +11,14 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 10/25/2019
+ms.date: 12/17/2019
 ---
 
 # Syntax guidance for Markdown usage in Wiki
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../boards/work-items/includes/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [version-selector](../../_shared/version-selector.md)]
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
 
 In this article, find some Wiki-specific Markdown syntax guidance for use in Azure DevOps.
 
@@ -28,24 +28,24 @@ In this article, find some Wiki-specific Markdown syntax guidance for use in Azu
 
 ## Table of contents (TOC) for Wiki pages
 
-You can now just add a tag [[\_TOC\_]] to enable a table of contents in your page. The TOC is generated when the tag is added and there is at least one heading in the page.
+To create a table of contents, add a \[[\_TOC\_]]. The TOC is generated when the tag is added and there's at least one heading on the page.
 
 > [!div class="mx-imgBorder"]
-> ![Table of contents](_img/toc_sample.png)
+> ![Table of contents](media/toc_sample.png)
 
-The [[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
+The \[[\_TOC\_]] can be placed anywhere in the page to render the table of contents.
 Only Markdown headings are considered for TOC (HTML heading tags aren't).
 
 All HTML and Markdown tags are stripped from the headings while adding it inside the TOC block.
 For example: Adding bold and italics to a heading text renders the TOC as follows.
 
 > [!div class="mx-imgBorder"]
-> ![Tags for TOC](_img/toc_tags.png)
+> ![Tags for TOC](media/toc_tags.png)
 
 Consistency is maintained in the formatting in TOC.
 
 > [!NOTE]
-> The tag [[\_TOC\_]] is case-sensitive. For example, [[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
+> The tag \[[\_TOC\_]] is case-sensitive. For example, \[[\_toc\_]] may not render the TOC. Also, only the first instance of [[\_TOC\_]] is rendered and the rest are ignored.
 
 ::: moniker-end
 
@@ -53,14 +53,11 @@ Consistency is maintained in the formatting in TOC.
 
 ## Add Mermaid diagrams to a Wiki page
 
-> [!NOTE] 
-> Mermaid diagram support was added in the [Sprint 158 update (September 23, 2019) release](/azure/devops/release-notes/2019/sprint-158-update#mermaid-diagram-support-in-wiki) and is in the process of deployment. Until deployment is completed, the feature is not available in all organizations at this time. If you don't see the Mermaid toolbar button, Mermaid support is not yet deployed and available in your organization.
-
 Wiki supports the following Mermaid diagram types:
 
-1.	[Flowcharts](https://mermaidjs.github.io/#/flowchart)
-2.	[Sequence diagrams](https://mermaidjs.github.io/#/sequenceDiagram)
-3.	[Gantt Charts](https://mermaidjs.github.io/#/gantt)
+1.	[Flowcharts](https://mermaid-js.github.io/mermaid/#/flowchart)
+2.	[Sequence diagrams](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
+3.	[Gantt Charts](https://mermaid-js.github.io/mermaid/#/gantt)
 
 To add Mermaid diagrams to a wiki page, use the following syntax:
 
@@ -70,12 +67,13 @@ To add Mermaid diagrams to a wiki page, use the following syntax:
 :::
 ```
 
-Alternatively, there's also a toolbar button to add a default Mermaid diagram to a wiki page.
+There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
-![Mermaid diagram visual](_img/wiki/mermaid-diagram.png)
+![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
 > HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> Current version of Mermaid used is 8.2.6 
 
 ::: moniker-end
 
@@ -111,7 +109,7 @@ title: Hello world
 ---
 ```
 
-![YAML tag, basic example](_img/wiki/yaml_basic_example.png)
+![YAML tag, basic example](media/wiki/yaml_basic_example.png)
 
 Tags with list:
 ```yaml
@@ -124,7 +122,7 @@ title: Hello world
 ---
 ```
 
-![YAML tags with list example](_img/wiki/yaml_tags_with_list.png)
+![YAML tags with list example](media/wiki/yaml_tags_with_list.png)
 
 ## Embed Azure Boards query results in Wiki
 
@@ -135,22 +133,36 @@ To embed Azure Boards query results in a wiki page as a table, use the following
 :::
 ```
 
-Alternatively, you can also use the toolbar icon and the query selector to embed the query results in a wiki page.
+You can also use the toolbar icon and the query selector to embed the query results in a wiki page.
 
-> ![Query Results Icon](_img/query_selector_icon.png)
+> ![Query Results Icon](media/query_selector_icon.png)
 >
-> ![Query Selector Pane](_img/query_selector_pane.png)
+> ![Query Selector Pane](media/query_selector_pane.png)
 
 ## @mention users and groups
 
-To @mention users or groups in wiki, key in "@" in the wiki editor. This will open up an autosuggest from which you can mention users or groups who will get notified by email.
+To @mention users or groups in wiki, key in "@" in the wiki editor. This @mention opens autosuggest, from which you can mention users or groups to get notified by email.
 
-> ![Mention Autosuggest](_img/mention-autosuggest.png)
+> ![Mention Autosuggest](media/mention-autosuggest.png)
 
 You can also select "@mention" from the edit toolbar.
 
-> ![Mention from edit toolbar](_img/mention-toolbar.png)
+> ![Mention from edit toolbar](media/mention-toolbar.png)
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+## Page visits for wiki pages
+
+Automatically, you see an aggregated page visits count for the last 30 days on every page.
+
+Use the batch API `pagesBatch` to see the daily quantity of visits to all pages in a paginated way. They aren't sorted by number of visits, however. For data over 30 days old, you can get all page visits using the rest API. Sort these pages based on the number of visits to get the top 100. You can store these visits in a dashboard or database.
+
+![Wiki page visits](media/wiki/wiki-page-visits.png)
+
+> [!NOTE]
+> A page visit is defined as a page view by a given user in a 15-minute interval.
 
 ::: moniker-end
 
@@ -178,13 +190,6 @@ Enter the pound sign (`#`), and then enter a work item ID.
 
 In wiki pages, you can also create rich content using HTML tags.
 
-::: moniker range="tfs-2018"
-
-> [!NOTE]
-> Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
-> 
-::: moniker-end
-
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
@@ -197,7 +202,6 @@ In wiki pages, you can also create rich content using HTML tags.
 </video>
 ```
 
-**For example:**
 ```HTML
 <video src="https://sec.ch9.ms/ch9/7247/7c8ddc1a-348b-4ba9-ab61-51fded6e7247/vstswiki_high.mp4" width=400 controls>
 </video>
@@ -206,7 +210,7 @@ In wiki pages, you can also create rich content using HTML tags.
 </br>
 <strong>Result:</strong>
 </br>
-<video src="_img/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
+<video src="media/markdown-guidance/vstswiki_mid.mp4" width="600" controls>
 </video>
 
 **Example - Rich text format**
@@ -225,9 +229,9 @@ In wiki pages, you can also create rich content using HTML tags.
 
 **Result:**
 
-![Light theme view](_img/wiki/green-red-light-theme.png)
+![Light theme view](media/wiki/green-red-light-theme.png)
 
-![Dark theme view](_img/wiki/green-red-dark-theme.png)
+![Dark theme view](media/wiki/green-red-dark-theme.png)
 
 <!---
 <p>This text needs to <del>strikethrough</del> <ins>since it is redundant</ins>!</p>

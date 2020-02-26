@@ -1,5 +1,5 @@
-﻿---
-title: Quick reference index for tasks & concepts using Data & Analytics
+---
+title: Tasks & concepts using Data & Analytics
 titleSuffix: Azure DevOps  
 description: Supported tasks and concepts to generate results using OData backed Analytics for Azure DevOps 
 ms.prod: devops
@@ -15,11 +15,11 @@ ms.date: 10/03/2019
 
 # Extend Analytics with OData (Preview) quick reference
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics. You can also find additional OData query examples in the articles available from [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md).
 
@@ -206,6 +206,6 @@ Use this quick reference to access information and sample queries using OData an
 ## Related articles
 - [PowerBI](../powerbi/overview.md)  
 - [Dashboards, charts, reports, & widgets](../dashboards/overview.md)  
-- [OData Extension for Data Aggregation Version 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
+- [OData Extension for Data Aggregation Version 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)
 
 

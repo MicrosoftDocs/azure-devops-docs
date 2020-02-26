@@ -16,13 +16,13 @@ ms.date: 10/17/2017
 
 # Work Item History tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for historical data about bugs, tasks, and other types of work items by using FactWorkItemHistory and the associated dimension tables as the following illustration shows. Historical data provides information about the status of a work item or a value of a field for a work item as it changed over time. Progress and burndown charts are examples of reports that are built from work item history tables. The data is stored by using compensating records.  
   
  For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test cases and work items](perspective-test-analyze-report-work.md).  
   
- ![Fact Table for Work Item History](_img/teamproj_itemhistory.png "TeamProj_ItemHistory")  
+ ![Fact Table for Work Item History](media/teamproj_itemhistory.png "TeamProj_ItemHistory")  
   
  FactWorkItemHistory is associated with the following dimension tables:  
   

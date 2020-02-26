@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # FAQs about signing up and getting started
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Signing up for Azure DevOps is now easier than ever - it's a two-minute process. See the following FAQs, which contain links for getting started.
 
@@ -53,10 +53,10 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)  
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/../java/download-android-studio-plug-in.md)
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
-- [Visual Studio Code](/../java/vscode-extension.md)
+- [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)  
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
+- [Visual Studio Code](../java/vscode-extension.md)
 
 ::: moniker-end
 

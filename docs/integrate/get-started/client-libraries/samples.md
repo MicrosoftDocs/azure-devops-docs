@@ -18,7 +18,7 @@ Samples showing how to extend and integrate with Team Foundation Server and Azur
 
 
 ## Samples in GitHub
-There are many samples with instructions on how to run them on our [.NET Sample GitHub Page](https://github.com/Microsoft/vsts-dotnet-samples). 
+There are many samples with instructions on how to run them on our [.NET Sample GitHub Page](https://github.com/microsoft/azure-devops-dotnet-samples). 
 
 ## Other samples
 REST examples on this page require the following NuGet packages:
@@ -152,7 +152,7 @@ public static void AADRestSample()
 ```
 
 ##### OAuth Authentication for REST services
-Follow this link to learn how to obtain and refresh an OAuth accessToken: https://github.com/Microsoft/vsts-auth-samples
+Follow this link to learn how to obtain and refresh an OAuth accessToken: https://github.com/microsoft/azure-devops-auth-samples
 ```cs
 public static void OAuthSample()
 {

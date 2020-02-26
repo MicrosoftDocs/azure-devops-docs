@@ -2,11 +2,11 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 11/04/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: jillfra
+ms.manager: mijacobs
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
@@ -37,67 +37,53 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </thead>
     <tbody>
         <tr>
-            <td rowspan="51"><strong>2019 Q4</strong></td>
-            <td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414" data-raw-source="[Updated Permissions & Org Settings pages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366414)">Updated Permissions & Org Settings pages</a></td><td>Administration</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420" data-raw-source="[Pay for users once per user across organizations under the same Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420)">Pay for users once per user across organizations under the same Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705" data-raw-source="[Policy to control and restrict new Azure DevOps organizations](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1510705)">Policy to control and restrict new Azure DevOps organizations</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602" data-raw-source="[Export list of all Azure DevOps users paid under an Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1511602)">Export list of all Azure DevOps users paid under an Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854" data-raw-source="[Improve the team management and team member management user experience in project settings](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1562854)">Improve the team management and team member management user experience in project settings</a></td><td>Administration</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788" data-raw-source="[Streaming for Azure DevOps Auditing](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1565788)">Streaming for Azure DevOps Auditing</a></td><td>Administration</td><td>TBD</td></tr>
+        <td rowspan="22"><strong>2020 Q1</strong></td>
+            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1565788" data-raw-source="[Streaming for Azure DevOps Auditing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1565788)">Streaming for Azure DevOps Auditing</a></td><td>Administration</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1366420" data-raw-source="[Pay for users once per user across organizations under the same Azure subscription](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1366420)">Pay for users once per user across organizations under the same Azure subscription</a></td><td>Administration</td><td>N/A</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166" data-raw-source="[Sign-in attempts and manage events for PAT, SSH and alt creds available in the Audit Log](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1617166)">Sign-in attempts and manage events for PAT, SSH and alt creds available in the Audit Log</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1618074" data-raw-source="[New Account Manager control in Azure DevOps that enables a consistent experience for viewing and switching accounts](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1618074)">New Account Manager control in Azure DevOps that enables a consistent experience for viewing and switching accounts</a></td><td>Administration</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582456" data-raw-source="[Hide field based on group membership](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582456)">Hide field based on group membership</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582465" data-raw-source="[Full support for parent field on backlogs, boards, and queries](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1582465)">Full support for parent field on backlogs, boards, and queries</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596091" data-raw-source="[Open source project to automate state transitions based on child work item state](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596091)">Open source project to automate state transitions based on child work item state</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596092" data-raw-source="[Allow system work item types to appear on a backlog level](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596092)">Allow system work item types to appear on a backlog level</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596095" data-raw-source="[Add state transition restriction rules to the inherited process model](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596095)">Add state transition restriction rules to the inherited process model</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596096" data-raw-source="[Improve deployments control on the work item form to filter and sort for large repos and active releases](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1596096)">Improve deployments control on the work item form to filter and sort for large repos and active releases</a></td><td>Boards</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614051" data-raw-source="[Azure Repos app for MS Teams](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614051)">Azure Repos app for MS Teams</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614163" data-raw-source="[Upgrade Repos Landing Pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614163)">Upgrade Repos Landing Pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614171" data-raw-source="[Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614171)">Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614172" data-raw-source="[Upgrade Commit details page to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614172)">Upgrade Commit details page to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614173" data-raw-source="[Upgrade branch compare pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614173)">Upgrade branch compare pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614236" data-raw-source="[Add required reviewers per pull request](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614236)">Add required reviewers per pull request</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614239" data-raw-source="[View members of a team by clicking the team name](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614239)">View members of a team by clicking the team name</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614246" data-raw-source="[Suggesting and accepting code changes in a PR](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614246)">Suggesting and accepting code changes in a PR</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728" data-raw-source="[Better support for branch policy administration across repos & projects](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1437728)">Better support for branch policy administration across repos & projects</a></td><td>Repos</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614053" data-raw-source="[@mention support in Azure Pipelines, Board and Repos app in MS Teams](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1614053)">@mention support in Azure Pipelines, Board and Repos app in MS Teams</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570285" data-raw-source="[Automated checks (gates) between stages](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570285)">Automated checks (gates) between stages</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570271" data-raw-source="[Environment to support virtual machine resource](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570271)">Environment to support virtual machine resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570277" data-raw-source="[Container images as a first class pipeline resource](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570277)">Container images as a first class pipeline resource</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570280" data-raw-source="[Azure Resource Group based environments](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570280)">Azure Resource Group based environments</a></td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570281" data-raw-source="[Auditing for pipeline events](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570281)">Auditing for pipeline events</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026" data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1615463" data-raw-source="[General availability of multi-stage pipelines UX](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1615463)">General availability of multi-stage pipelines UX</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174" data-raw-source="[Elastic self-hosted agent pools](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221174)">Elastic self-hosted agent pools</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030" data-raw-source="[External pipelines as a first class resource in yaml pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1454030)">External pipelines as a first class resource in yaml pipelines</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570283" data-raw-source="[Automatic creation of Release notes with wiki](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1570283)">Automatic creation of Release notes with wiki</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286" data-raw-source="[Deployments with zero downtime and minimum risk](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286)">Deployments with zero downtime and minimum risk</a></td><td>Pipelines</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580259" data-raw-source="[Sprint Burndown widget](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580259)">Sprint Burndown widget</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580261" data-raw-source="[Create Dashboards without a Team](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1580261)">Create Dashboards without a Team</a></td><td>Reporting</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1656089" data-raw-source="[Restrict Invitations from Project and Team Administrators](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1656089)">Restrict Invitations from Project and Team Administrators</a></td><td>Administration</td><td>N/A</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666199" data-raw-source="[Improved error handling for Required fields](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666199)">Improved error handling for Required fields</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663889" data-raw-source="[Notification for pending approvals](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663889)">Notification for pending approvals</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663896" data-raw-source="[Share service connection across multiple projects](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663896)">Share service connection across multiple projects</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285" data-raw-source="[Automated checks (gates) between stages](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570285)">Automated checks (gates) between stages</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1615463" data-raw-source="[General availability of multi-stage pipelines UX](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1615463)">General availability of multi-stage pipelines UX</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454026" data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174" data-raw-source="[Elastic self-hosted agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174)">Elastic self-hosted agent pools</a></td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1512182" data-raw-source="[Enhanced pipeline duration report](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1512182)">Enhanced pipeline duration report</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004" data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1616285" data-raw-source="[Persona-based new Test Plans page](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1616285)">Persona-based new Test Plans page</a></td><td>Test Plans</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496" data-raw-source="[Simplified Artifacts setup and Pipelines experiences](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566496)">Simplified Artifacts setup and Pipelines experiences</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616773" data-raw-source="[Artifacts events available in the auditing service](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616773)">Artifacts events available in the auditing service</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616782" data-raw-source="[Pipeline Artifacts GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616782)">Pipeline Artifacts GA</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616780" data-raw-source="[Pipeline Caching GA](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616780)">Pipeline Caching GA</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498" data-raw-source="[Billing management and cost controls](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1566498)">Billing management and cost controls</a></td><td>Artifacts</td><td>2020</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1639233" data-raw-source="[Disable metadata cache for internal feeds, or reduce delay from publish to read to satisfactory amount](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1639233)">Disable metadata cache for internal feeds, or reduce delay from publish to read to satisfactory amount</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833" data-raw-source="[Universal Packages feature updates](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1502833)">Universal Packages feature updates</a></td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609297" data-raw-source="[Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609297)">Deprecate old Azure Artifacts tasks in Azure Pipelines and default to new, auth-only tasks</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1640382" data-raw-source="[Add PowerShell Get support to Azure Artifacts](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1640382)">Add PowerShell Get support to Azure Artifacts</a></td><td>Artifacts</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1574749" data-raw-source="[Page visits in Wiki](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1574749)">Page visits in Wiki</a></td><td>Wiki</td><td>TBD</td></tr>
-        </tr>
-        <tr>
-        <td rowspan="6"><strong>Future</strong></td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/16380044" data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>Reporting</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1649330" data-raw-source="[Close the feature gap in build expiration for manually triggered build policy in PR](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1649330)">Close the feature gap in build expiration for manually triggered build policy in PR</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614171" data-raw-source="[Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614171)">Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614172" data-raw-source="[Upgrade Commit details page to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614172)">Upgrade Commit details page to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614173" data-raw-source="[Upgrade branch compare pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614173)">Upgrade branch compare pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614236" data-raw-source="[Add required reviewers per pull request](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614236)">Add required reviewers per pull request</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614239" data-raw-source="[View members of a team by clicking the team name](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614239)">View members of a team by clicking the team name</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614246" data-raw-source="[Suggesting and accepting code changes in a pull request](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614246)">Suggesting and accepting code changes in a pull request</a></td><td>Repos</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285" data-raw-source="[Persona-based new Test Plans page](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285)">Persona-based new Test Plans page</a></td><td>Test Plans</td><td>TBD</td></tr>
+        <td rowspan="4"><strong>2020 Q2</strong></td>
+            <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1511602" data-raw-source="[Export list of all Azure DevOps users paid under an Azure subscription](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1511602)">Export list of all Azure DevOps users paid under an Azure subscription</a></td><td>Administration</td><td>N/A</td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614053" data-raw-source="[@mention support in Azure Pipelines, Board and Repos app in MS Teams](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614053)">@mention support in Azure Pipelines, Board and Repos app in MS Teams</a></td><td>Pipelines</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194" data-raw-source="[Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194)">Clone work item including subtasks</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663893" data-raw-source="[Manual validation in YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663893)">Manual validation in YAML pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
+        <td rowspan="15"><strong>Future</strong></td>
             <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221164" data-raw-source="[CC/BCC (carbon copy) recipient support for email notifications](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221164)">CC/BCC (carbon copy) recipient support for email notifications</a></td><td>Administration</td><td>TBD</td>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165" data-raw-source="[Notification feed](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1221165)">Notification feed</a></td><td>Administration</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826" data-raw-source="[Export Permissions Log by Resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826)">Export Permissions Log by Resource</a></td><td>Administration</td><td>2020</td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1596095" data-raw-source="[Add state transition restriction rules to the inherited process model](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1596095)">Add state transition restriction rules to the inherited process model</a></td><td>Boards</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138" data-raw-source="[Work Item support for Markdown editing](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221138)">Work Item support for Markdown editing</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193" data-raw-source="[Maintain backlog hierarchy when filters are applied](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666193)">Maintain backlog hierarchy when filters are applied</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666195" data-raw-source="[Customize work item state after PR is closed](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666195)">Customize work item state after PR is closed</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196" data-raw-source="[Provide previewing software for attachments to work items](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666196)">Provide previewing software for attachments to work items</a></td><td>Boards</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280" data-raw-source="[Azure Resource Group based environments](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570280)">Azure Resource Group based environments</a></td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286" data-raw-source="[Deployments with zero downtime and minimum risk](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1570286)">Deployments with zero downtime and minimum risk</a></td><td>Pipelines</td><td>2020</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609290" data-raw-source="[Adding custom upstream sources](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609290)">Adding custom upstream sources</a></td><td>Artifacts</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609307" data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/ff7255dd-8f4c-46f2-8988-8de9eddde156/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>TBD</td>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826" data-raw-source="[Export Permissions Log by Resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826)">Export Permissions Log by Resource</a></td><td>Artifacts</td><td>TBD</td>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227" data-raw-source="[Support for Nuget icon licenses](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227)">Support for Nuget icon licenses</a></td><td>Artifacts</td><td>TBD</td>
+        </tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670229" data-raw-source="[Billing dashboard V3 ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670229)">Billing dashboard V3 </a></td><td>Artifacts</td><td>TBD</td>
+        </tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670230" data-raw-source="[Add disabled upstream notifications](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670230)">Add disabled upstream notifications</a></td><td>Artifacts</td><td>TBD</td>
+        </tr>
         </tr>
     </tbody>
 </table>
@@ -117,6 +103,58 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="5"><a href="2020/sprint-165-update.md" data-raw-source="[17 February 2020](2020/sprint-163-update.md)">17 February 2020</a></td>
+            <td>Disable Request Access policy</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Preview fully parsed YAML document without running the pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Disable automatic agents upgrades at a pool level</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Azure File Copy Task now supports AzCopy V10</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Custom notification subscription for draft pull requests</td><td>Repos</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="5"><a href="2020/sprint-164-update.md" data-raw-source="[28 January 2020](2020/sprint-164-update.md)">28 January 2020</a></td>
+            <td>Restrict organization creation via Azure AD tenant policy</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Read-only variables</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Support for output variables in deployment job</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Avoid rollback of critical changes</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Removing older images in Azure Pipelines hosted pools</td><td>Pipelines</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="7"><a href="2020/sprint-163-update.md" data-raw-source="[13 January 2020](2020/sprint-163-update.md)">13 January 2020</a></td>
+            <td>Get compact and organized notifications in the Microsoft Teams app from Azure Boards, Azure Pipelines and Azure Repos</td><td>General</td><td>N/A</td>
+        </tr> 
+        <tr><td>Delete bulk subscriptions created in a Microsoft Teams or Slack channel</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Use pipeline decorators to inject steps automatically in a deployment job</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Allow repository references to other Azure Repos organizations</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Step targeting and command isolation</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Builds and releases auditing</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Enhancements to evaluate artifacts checks policy in pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="12"><a href="2019/sprint-162-update.md" data-raw-source="[16 December 2019](2019/sprint-162-update.md)">16 December 2019</a></td>
+            <td>New web platform conversion landing pages</td><td>Repos</td><td>Future</td>
+        </tr> 
+        <tr><td>Support for Kotlin language</td><td>Repos</td><td>Future</td></tr>
+        <tr><td>Updated multi-stage pipelines UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>VSTest TestResultsDirectory option is available in the task UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use extends keyword in pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Markdown support in automated test error messages</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Collect automatic and user-specified metadata from pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to service connections UI</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>VM deployments with Environments</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Skipping stages in a YAML pipeline</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Inline sprint burndown thumbnail</td><td>Reporting</td><td>Future</td></tr>
+        <tr><td>Create a dashboard without a team</td><td>Reporting</td><td>Future</td></tr>
+        <tr>
+            <td rowspan="8"><a href="2019/sprint-161-update.md" data-raw-source="[2 December 2019](2019/sprint-161-update.md)">2 December 2019</a></td>
+            <td>Use publish profile to deploy Azure WebApps for Windows from the Deployment Center</td><td>General</td><td>Future</td>
+        </tr>
+        <tr><td>Checkout multiple repositories in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use GitHub Actions to trigger a run in Azure Pipelines</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updated ServiceNow integration with Azure Pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Set VSTest tasks to fail if a minimum number of test are not run</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>UCS-4 support for Python 2.7</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Pipelines app for Slack and Microsoft Teams</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Create bulk subscriptions in Azure Repos app for Slack and Microsoft Teams</td><td>Repos</td><td>N/A</td></tr>
         <tr>
             <td rowspan="23"><a href="2019/sprint-160-update.md" data-raw-source="[4 November 2019](2019/sprint-160-update.md)">4 November 2019</a></td>
             <td>Cross-repo branch policy administration</td><td>Repos</td><td>Future</td>
@@ -143,7 +181,6 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr><td>A Sprint Burndown widget with everything you've been asking for</td><td>Reporting</td><td>Future</td></tr>
         <tr><td>Synchronous scroll for editing wiki pages</td><td>Wiki</td><td>Future</td></tr>
         <tr><td>Page visits for wiki pages</td><td>Wiki</td><td>Future</td></tr>
-        <tr>
         <tr>
             <td rowspan="17"><a href="2019/sprint-159-update.md" data-raw-source="[14 October 2019](2019/sprint-159-update.md)">14 October 2019</a></td>
             <td>Azure Boards app for Microsoft Teams</td><td>Boards</td><td>N/A</td>
@@ -3119,7 +3156,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2015/nov-24-team-services.md" data-raw-source="[24 Nov 2015](2015/nov-24-team-services.md)">24 Nov 2015</a></td>
             <td>Git and TFVC in the same team project</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Package Management build tasks</td>
@@ -3177,23 +3214,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="6"><a href="2015/oct-30-team-services.md" data-raw-source="[30 Oct 2015](2015/oct-30-team-services.md)">30 Oct 2015</a></td>
             <td>Dashboards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved pull request experience</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Manual test iteration results</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Retention policy for test results</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Reorder and re-parent tasks from the Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
@@ -3206,15 +3243,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Starting with Git, made easy</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Improved commit details</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis from a Maven build task</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>PREVIEW: New Work Item form</td>
@@ -3223,23 +3260,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2015/sep-18-team-services.md" data-raw-source="[18 Sep 2015](2015/sep-18-team-services.md)">18 Sep 2015</a></td>
             <td>Inline tasks on the Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Query and display of Kanban fields</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Multi-select items on the backlog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Branch policy to require linked work items</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Export test outcomes</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Work item trend and rollup reporting in Power BI</td>
@@ -3247,67 +3284,67 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Support for publishing xUnit results</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-26-team-services.md" data-raw-source="[26 Aug 2015](2015/aug-26-team-services.md)">26 Aug 2015</a></td>
             <td>Rename columns in place</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Choosing users for capacity planning</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Burndown with available capacity</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>SonarQube analysis build tasks</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/aug-07-team-services.md" data-raw-source="[7 Aug 2015](2015/aug-07-team-services.md)">7 Aug 2015</a></td>
             <td>Multi-select items on the product backlog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Reorder cards when changing columns</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Color tags and titles on your cards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Libraries for integrating with VSTS now available at nuget.org</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx" data-raw-source="[22 Jul 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)">22 Jul 2015</a></td>
+            <td rowspan="1"><a href="https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/" data-raw-source="[22 Jul 2015](https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/)">22 Jul 2015</a></td>
             <td>Power BI reporting on Work Item data</td>
             <td></td><td>Future</td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/jul-17-team-services.md" data-raw-source="[17 Jul 2015](2015/jul-17-team-services.md)">17 Jul 2015</a></td>
             <td>Multiple activities per team member</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Configure settings directly from backlogs/boards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Hide empty fields on cards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Card coloring on Taskboard</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Drag any item to an iteration from anywhere</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Build your projects hosted in GitHub</td>
@@ -3320,7 +3357,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2015/jul-07-team-services.md" data-raw-source="[7 Jul 2015](2015/jul-07-team-services.md)">7 Jul 2015</a></td>
             <td>Card coloring on Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Personal access tokens</td>
@@ -3328,49 +3365,49 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Adding work directly to a sprint</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/jun-03-team-services.md" data-raw-source="[3 Jun 2015](2015/jun-03-team-services.md)">3 Jun 2015</a></td>
             <td>Kanban swim lanes</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>#Mention work items</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Automated testing in Build vNext</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015.1](https://go.microsoft.com/fwlink/?LinkId=533008)">2015.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
             <td>Team settings API</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="7"><a href="2015/may-15-team-services.md" data-raw-source="[15 May 2015](2015/may-15-team-services.md)">15 May 2015</a></td>
             <td>Build vNext</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Backlog navigation update</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Opt-in to portfolio backlogs</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Improved SAFe support</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban collapsed columns</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Git branch policies</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Power BI &amp; VSO</td>
@@ -3403,15 +3440,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/apr-27-team-services.md" data-raw-source="[27 Apr 2015](2015/apr-27-team-services.md)">27 Apr 2015</a></td>
             <td>Adding fields to cards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board filtering</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Card options on the Taskboard</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Account restore</td>
@@ -3420,7 +3457,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2015/apr-24-team-services.md" data-raw-source="[24 Apr 2015](2015/apr-24-team-services.md)">24 Apr 2015</a></td>
             <td>Team Project Rename</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/apr-22-team-services.md" data-raw-source="[22 Apr 2015](2015/apr-22-team-services.md)">22 Apr 2015</a></td>
@@ -3431,26 +3468,26 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx" data-raw-source="[17 Apr 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)">17 Apr 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/" data-raw-source="[17 Apr 2015](https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/)">17 Apr 2015</a></td>
             <td>CodeLens General Availability on Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2015/apr-10-team-services.md" data-raw-source="[10 Apr 2015](2015/apr-10-team-services.md)">10 Apr 2015</a></td>
             <td>Configure cards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Markdown editing for definition of done</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CFD options</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Web history view for Git projects</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2015/mar-27-team-services.md" data-raw-source="[27 Mar 2015](2015/mar-27-team-services.md)">27 Mar 2015</a></td>
@@ -3460,27 +3497,27 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2015/mar-10-team-services.md" data-raw-source="[10 Mar 2015](2015/mar-10-team-services.md)">10 Mar 2015</a></td>
             <td>Current iteration query token</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban definition of done</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Responsive card sizes</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Bugs on the Taskboard</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Syntax highlight for XML, Sass, Objective-C, R</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for accounts in West Europe</td>
@@ -3494,22 +3531,22 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/feb-18-team-services.md" data-raw-source="[18 Feb 2015](2015/feb-18-team-services.md)">18 Feb 2015</a></td>
             <td>Adding and editing directly from the board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Split columns on the Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Assign multiple people to test suites</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Application Insights in the Azure Preview Portal</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx" data-raw-source="[13 Feb 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)">13 Feb 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/" data-raw-source="[13 Feb 2015](https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/)">13 Feb 2015</a></td>
             <td>Limited preview for Code Search</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3521,19 +3558,19 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2015/jan-27-team-services.md" data-raw-source="[27 Jan 2015](2015/jan-27-team-services.md)">27 Jan 2015</a></td>
             <td>Basic license upgraded</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Reordering on the Taskboard</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Unparented Tasks on the Taskboard</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Inline editing on the Kanban board</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx" data-raw-source="[15 Jan 2015](https://blogs.msdn.com/b/bharry/archive/2015/01/15/visual-studio-online-iso-27001-certification-and-european-model-clauses.aspx)">15 Jan 2015</a></td>
@@ -3543,15 +3580,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="6"><a href="2014/dec-17-team-services.md" data-raw-source="[17 Dec 2014](2014/dec-17-team-services.md)">17 Dec 2014</a></td>
             <td>Quick code editing</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Filtering on backlogs and queries</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Sprint backlog and task board improvements</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>New integrations: Slack and Azuqua</td>
@@ -3559,7 +3596,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Preview APIs for adding and updating files in source control</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>CodeLens for Visual Studio Team Services</td>
@@ -3577,23 +3614,23 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5"><a href="2014/dec-02-team-services.md" data-raw-source="[2 Dec 2014](2014/dec-02-team-services.md)">2 Dec 2014</a></td>
             <td>Identity control and avatars</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Pull Request improvements</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Taskboard changes</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Kanban board persisted column headers</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Sharing personal queries</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td><a href="2014/dec-02-team-services.md" data-raw-source="[12 Nov 2014](2014/dec-02-team-services.md)">12 Nov 2014</a></td>
@@ -3603,31 +3640,31 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="7"><a href="2014/nov-04-team-services.md" data-raw-source="[4 Nov 2014](2014/nov-04-team-services.md)">4 Nov 2014</a></td>
             <td>Bugs on the backlog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test execution charts</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Recent test results</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Preview Markdown and HTML files in Code Explorer</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Browse link dialog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>REST batch support</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Third-party OAuth scopes</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/oct-28-team-services.md" data-raw-source="[28 Oct 2014](2014/oct-28-team-services.md)">28 Oct 2014</a></td>
@@ -3645,45 +3682,45 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2014/oct-14-team-services.md" data-raw-source="[14 Oct 2014](2014/oct-14-team-services.md)">14 Oct 2014</a></td>
             <td>Test artifacts as work items</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>Copy and paste query results</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/sep-23-team-services.md" data-raw-source="[23 Sep 2014](2014/sep-23-team-services.md)">23 Sep 2014</a></td>
             <td>Maximizing text area fields</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Navigating to links</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Work item performance improvements</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="6"><a href="2014/sep-04-team-services.md" data-raw-source="[4 Sep 2014](2014/sep-04-team-services.md)">4 Sep 2014</a></td>
             <td>Work Item query improvements</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Quick search through tree controls</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Longer trend charts</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Test Cases related to Test Suites</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>WIT REST API v1.2</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Event and resource versioning within service hooks</td>
@@ -3692,16 +3729,16 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2014/aug-27-team-services.md" data-raw-source="[27 Aug 2014](2014/aug-27-team-services.md)">27 Aug 2014</a></td>
             <td>A license for Stakeholders</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/aug-18-team-services.md" data-raw-source="[18 Aug 2014](2014/aug-18-team-services.md)">18 Aug 2014</a></td>
             <td>Project Welcome pages</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=533008" data-raw-source="[2015](https://go.microsoft.com/fwlink/?LinkId=533008)">2015</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
             <td>Tagging support in the Test Hub</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="5"><a href="2014/jul-21-team-services.md" data-raw-source="[21 Jul 2014](2014/jul-21-team-services.md)">21 Jul 2014</a></td>
@@ -3714,7 +3751,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Trend charts + aggregation</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Test Hub added to the Advanced License</td>
@@ -3727,20 +3764,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/jul-01-team-services.md" data-raw-source="[1 Jul 2014](2014/jul-01-team-services.md)">1 Jul 2014</a></td>
             <td>Hiding work in progress on the backlog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>Full Screen on the backlog and boards</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td>Move to position on the backlog</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td><a href="2014/jun-10-team-services.md" data-raw-source="[10 Jun 2014](2014/jun-10-team-services.md)">10 Jun 2014</a></td>
             <td>Pull Requests</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=510319" data-raw-source="[2013.4](https://go.microsoft.com/fwlink/?LinkId=510319)">2013.4</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.4](https://www.microsoft.com/download/details.aspx?id=44911)">2013.4</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/may-20-team-services.md" data-raw-source="[20 May 2014](2014/may-20-team-services.md)">20 May 2014</a></td>
@@ -3749,7 +3786,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Copy/Paste shared parameter data between VS Online and Excel</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.3](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.3</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.3](https://www.microsoft.com/download/details.aspx?id=44911)">2013.3</a></td>
         </tr>
         <tr>
             <td>End of data export period</td>
@@ -3775,7 +3812,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Shared Parameters for Test Cases</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2014/mar-18-team-services.md" data-raw-source="[18 Mar 2014](2014/mar-18-team-services.md)">18 Mar 2014</a></td>
@@ -3789,7 +3826,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2014/feb-28-team-services.md" data-raw-source="[28 Feb 2014](2014/feb-28-team-services.md)">28 Feb 2014</a></td>
             <td>Build support for Java code managed in Git</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Java JDK, Ant, and Maven libraries preinstalled in hosted build</td>
@@ -3802,24 +3839,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2014/feb-10-team-services.md" data-raw-source="[10 Feb 2014](2014/feb-10-team-services.md)">10 Feb 2014</a></td>
             <td>Exporting test artifacts</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>New “create tags” permission</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2014/jan-22-team-services.md" data-raw-source="[22 Jan 2014](2014/jan-22-team-services.md)">22 Jan 2014</a></td>
             <td>Querying tags</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Removing weekends from the Burndown</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Configurable CFD dates</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/dec-11-team-services.md" data-raw-source="[11 Dec 2013](2013/dec-11-team-services.md)">11 Dec 2013</a></td>
@@ -3832,7 +3869,7 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Asynchronous backlogs</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/nov-13-team-services.md" data-raw-source="[13 Nov 2013](2013/nov-13-team-services.md)">13 Nov 2013</a></td>
@@ -3850,12 +3887,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2013/nov-08-team-services.md" data-raw-source="[8 Nov 2013](2013/nov-08-team-services.md)">8 Nov 2013</a></td>
             <td>Work item chart pinning</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-21-team-services.md" data-raw-source="[21 Oct 2013](2013/oct-21-team-services.md)">21 Oct 2013</a></td>
             <td>New account and project pages</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/oct-17-team-services.md" data-raw-source="[17 Oct 2013](2013/oct-17-team-services.md)">17 Oct 2013</a></td>
@@ -3865,15 +3902,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2013/sep-30-team-services.md" data-raw-source="[30 Sep 2013](2013/sep-30-team-services.md)">30 Sep 2013</a></td>
             <td>New languages supported for code syntax highlighting</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Color picking in charts</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td>Column options for the test case grid view</td>
-            <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=392762" data-raw-source="[2013.2](https://go.microsoft.com/fwlink/?LinkId=392762)">2013.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=44911" data-raw-source="[2013.2](https://www.microsoft.com/download/details.aspx?id=44911)">2013.2</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2013/sep-09-team-services.md" data-raw-source="[9 Sep 2013](2013/sep-09-team-services.md)">9 Sep 2013</a></td>
@@ -4008,15 +4045,15 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="4"><a href="2013/mar-04-team-services.md" data-raw-source="[4 Mar 2013](2013/mar-04-team-services.md)">4 Mar 2013</a></td>
             <td>Customizable Kanban columns</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>TCM improvements – edit test steps when running tests</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Annotate/Blame for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Scheduled builds for Git-based projects</td>
@@ -4029,20 +4066,20 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>WIT tagging cleanup for unused tags</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Download as Zip for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2013/jan-30-team-services.md" data-raw-source="[30 Jan 2013](2013/jan-30-team-services.md)">30 Jan 2013</a></td>
             <td>Work item tagging</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Git support</td>
@@ -4050,12 +4087,12 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
         <tr>
             <td>Test Hub in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/jan-21-team-services.md" data-raw-source="[21 Jan 2013](2013/jan-21-team-services.md)">21 Jan 2013</a></td>
             <td>Changeset context menu in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2013/jan-09-team-services.md" data-raw-source="[9 Jan 2013](2013/jan-09-team-services.md)">9 Jan 2013</a></td>
@@ -4065,32 +4102,32 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="5"><a href="2013/jan-07-team-services.md" data-raw-source="[7 Jan 2013](2013/jan-07-team-services.md)">7 Jan 2013</a></td>
             <td>Email work items from backlog</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Search for changesets by ID in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Full screen mode for code viewing</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Inline diff of images in version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Collapsible left pane in all left panels in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2012/dec-10-team-services.md" data-raw-source="[10 Dec 2012](2012/dec-10-team-services.md)">10 Dec 2012</a></td>
             <td>Renamed Source to Code in Web UI hub</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Code Explorer updates in Web UI</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Hosted build updates for Azure SDK 1.8, TypeScript 0.8.1, and VS 2012 Update 1</td>
@@ -4099,11 +4136,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="2"><a href="2012/nov-19-team-services.md" data-raw-source="[19 Nov 2012](2012/nov-19-team-services.md)">19 Nov 2012</a></td>
             <td>Send work items in email from TFS web access</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td>Build file counts and sizes in summary reports</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=39305)">2012.2</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
             <td><a href="2012/oct-31-team-services.md" data-raw-source="[31 Oct 2012](2012/oct-31-team-services.md)">31 Oct 2012</a></td>
@@ -4118,29 +4155,29 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td><a href="2012/oct-08-team-services.md" data-raw-source="[8 Oct 2012](2012/oct-08-team-services.md)">8 Oct 2012</a></td>
             <td>400 character server paths for version control</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="3"><a href="2012/sep-17-team-services.md" data-raw-source="[17 Sep 2012](2012/sep-17-team-services.md)">17 Sep 2012</a></td>
             <td>Drag/drop in sprint planning to assign to person or activity</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Web usability improvements (tabs and UX modified, collapse left pane in work items)</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Process template updates to Agile 6.1 and Scrum 2.1</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="4"><a href="2012/aug-27-team-services.md" data-raw-source="[27 Aug 2012](2012/aug-27-team-services.md)">27 Aug 2012</a></td>
             <td>Improved source browsing, viewing, and searching</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Improved source &quot;diff&quot;</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Hosted builds of SharePoint components</td>
@@ -4153,24 +4190,24 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
             <td rowspan="3"><a href="2012/aug-13-team-services.md" data-raw-source="[13 Aug 2012](2012/aug-13-team-services.md)">13 Aug 2012</a></td>
             <td>Kanban board</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Cumulative Flow Diagram</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>WIP Limits</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td rowspan="2"><a href="2012/aug-06-team-services.md" data-raw-source="[6 Aug 2012](2012/aug-06-team-services.md)">6 Aug 2012</a></td>
             <td>Drag/drop in task board to move tasks between people and stories</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
         <tr>
             <td>Azure continuous deployment summary report</td>
-            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=39305" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=39305)">2012.1</a></td>
+            <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.1](https://www.microsoft.com/download/details.aspx?id=36392)">2012.1</a></td>
         </tr>
     </tbody>
 </table>
@@ -4186,6 +4223,11 @@ Versions in the “Server” column are linked to the appropriate download locat
         </tr>
 </thead>
 <tbody>
+        <tr>
+          <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1.1</a></td>
+          <td>Dec. 10, 2019</td>
+          <td>17.153.29522.3</td>
+        </tr>
         <tr>
           <td><a href="https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1" data-raw-source="[2019.1](https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019u1)">2019.1</a></td>
           <td>Aug. 20, 2019</td>
@@ -4264,8 +4306,9 @@ Versions in the “Server” column are linked to the appropriate download locat
         <tr>
           <td>2017.1</td>
           <td>Mar. 9, 2017 (Mar. 7, 2017)</td>
-          <td>15.112.26307.00
-          (15.112.26301.0)<a href="https://visualstudio.microsoft.com/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[*](https://visualstudio.microsoft.com/news/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)"><em></a></td>
+          <td><a href="https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier" data-raw-source="[15.112.26307.00
+          (15.112.26301.0)](https://docs.microsoft.com/visualstudio/releasenotes/tfs2017-update1#build-doesnt-work-when-upgrading-to-tfs-2017-update-1-build-15112263010-from-tfs-2013-or-earlier)">15.112.26307.00
+          (15.112.26301.0)<em></a></td>
         </tr>
         <tr>
           <td><a href="https://aka.ms/tfs2017-relnotes" data-raw-source="[2017.0.1](https://aka.ms/tfs2017-relnotes)">2017.0.1</a></td>
@@ -4371,7 +4414,7 @@ Versions in the “Server” column are linked to the appropriate download locat
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> ["div class="mx-imgBorder"]
-> "[Make a suggestion](_img/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"]
+> ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

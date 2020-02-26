@@ -15,14 +15,14 @@ ms.date: 04/05/2019
 
 # Project and organization-scoped queries
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Using Analytics for Azure DevOps, you can construct project or organization-scoped queries to return work items of interest. You run these queries directly in your browser.
 
 Project-scope queries help answer questions about a single project whereas organization-scope queries allow you to answer questions which cross project boundaries. Organization scoped queries require broader user permissions or careful scoping restrictions to ensure that your query isn't blocked due to a lack of project permissions.
 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## Prerequisites
@@ -50,7 +50,7 @@ Project-scope queries help answer questions about a single project whereas organ
 
 ## Project-scoped queries
 
-You construct a query by entering the OData URL into a [supported web browser](/tfs/server/compatibility#supported-browsers).  
+You construct a query by entering the OData URL into a [supported web browser](/azure/devops/server/compatibility#supported-browsers).  
 
 The base URL for project level queries is:
 
@@ -79,7 +79,7 @@ In the examples provided, make the following replacements:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 <a id="work-item-count" />
 

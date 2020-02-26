@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2015'
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo), you have the following options.
+While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
 | Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
@@ -64,7 +64,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ## Clean the local repo on the agent
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 ::: moniker-end
 
@@ -101,7 +101,7 @@ Select one of the following options:
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ### TFS 2015 RTM
 
@@ -119,7 +119,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 Select **true** to delete the repository folder.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Select **true** to delete the repository folder.
 
 ## Label sources
 
-[!INCLUDE [include](_shared/label-sources.md)]
+[!INCLUDE [include](includes/label-sources.md)]
 
 The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
@@ -174,7 +174,9 @@ If your source is in any other type of remote repository, then you cannot use Az
 
 ## Checkout path
 
-By default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+
+If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code will be checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
 
@@ -429,12 +431,12 @@ When using an Other/external Git repository, CI builds require that the reposito
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/git-protocols.md)]
+[!INCLUDE [temp](includes/git-protocols.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

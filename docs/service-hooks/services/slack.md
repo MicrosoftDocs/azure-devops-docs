@@ -1,8 +1,8 @@
----
+﻿---
 ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Create a service hook for Azure DevOps Services and TFS with Slack
+title: Create a service hook with Slack
 description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 ms.manager: mijacobs
@@ -33,17 +33,17 @@ like completed builds, code changes, pull requests, releases, work items changes
 1. From any page on your team's Slack (```https://[team].slack.com/...```), click your account name in the left window pane
 to open up the menu, and find **Apps and integrations**:
 
-   <img alt="Integrations link on the account home page" src="./_img/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="Integrations link on the account home page" src="./media/slack/slack-integrations.png" style="border: 1px solid #CCCCCC; width:35%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Search for and click the Azure DevOps Services integration (Search "Visual Studio Team Services"):
 
-   <img alt="Azure DevOps Services link" src="./_img/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="Azure DevOps Services link" src="./media/slack/vso.png" style="border: 1px solid #CCCCCC; width:65%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. On the Azure DevOps Services integration page, click **Install**.
 1. Choose a channel to have notifications posted to from the dropdown and click **Add Visual Studio Integration**. 
 1. Scroll down the page and copy the web hook URL to use when you create the service hook subscription in your organization.
 
-<img alt="Web hook URL in the integration settings section" src="./_img/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+<img alt="Web hook URL in the integration settings section" src="./media/slack/webhook-url.png" style="border: 1px solid #CCCCCC; width:70%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ## Create a service hook subscription in your organization
 
@@ -53,7 +53,7 @@ to open up the menu, and find **Apps and integrations**:
 
 	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./_img/add-devops-service-hook.png)
+	![Project administration page](./media/add-devops-service-hook.png)
 
 	Select **Create Subscription**.
 
@@ -64,11 +64,11 @@ to open up the menu, and find **Apps and integrations**:
 
 1. Paste the web hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the web hook URL" src="./_img/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="Action dialog box with the web hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-   <img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="General channel with a real pull request notification" src="./media/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ::: moniker-end
 
@@ -78,7 +78,7 @@ to open up the menu, and find **Apps and integrations**:
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./_img/add-service-hook.png)
+	![Project administration page](./media/add-service-hook.png)
 
 	Select **Create Subscription**.
 
@@ -89,11 +89,11 @@ to open up the menu, and find **Apps and integrations**:
 
 1. Paste the web hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the web hook URL" src="./_img/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="Action dialog box with the web hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 1. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-   <img alt="General channel with a real pull request notification" src="./_img/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="General channel with a real pull request notification" src="./media/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 ::: moniker-end
 

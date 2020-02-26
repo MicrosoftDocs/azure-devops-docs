@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 Service which allows interaction with the browser location and navigation of the host frame
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/HostNavigationService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/HostNavigationService.md)]
 
 ## Methods
 

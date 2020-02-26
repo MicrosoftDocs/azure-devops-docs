@@ -1,5 +1,5 @@
 ﻿---
-title: Define the work item types available for synchronization
+title: Define work item types available to synchronize
 titleSuffix: TFS 
 description: Configure the two server products before you synchronize data between Team Foundation Server & Project Server
 ms.prod: devops
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Define the work item types available for synchronization
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must configure the integration of the two server products. As part of the configuration tasks, you must associate an enterprise project plan with a project, and you must specify the types of work items that will participate in synchronization. After you make your initial configurations and mapping, you can change the types of work items that are mapped.  
   

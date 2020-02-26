@@ -1,4 +1,4 @@
----
+﻿---
 title: Key concepts and terminology used for Azure Repos
 titleSuffix: Azure Repos  
 description: Key definitions for objects and items used to code with Azure Repos
@@ -84,11 +84,11 @@ Use this workflow if you're new to Git. As your team gets more experienced and c
 
 Learn more: [how we use Git at Microsoft](/azure/devops/learn/devops-at-microsoft/use-git-microsoft).
 
-[!INCLUDE [glossary-terms-notifications](../../_shared/glossary-terms/notifications.md)]
+[!INCLUDE [glossary-terms-notifications](../../includes/glossary-terms/notifications.md)]
 
-[!INCLUDE [glossary-terms-projects](../../_shared/glossary-terms/projects.md)]
+[!INCLUDE [glossary-terms-projects](../../includes/glossary-terms/projects.md)]
 
-[!INCLUDE [glossary-terms-public-projects](../../_shared/glossary-terms/public-projects.md)]
+[!INCLUDE [glossary-terms-public-projects](../../includes/glossary-terms/public-projects.md)]
 
 ## Pull request
 
@@ -119,6 +119,6 @@ Learn more: [push](../git/pushing.md).
 
 A repository is a location for your code managed by version control. Azure Repos supports both [Git](#git) and [TFVC](#team-foundation-version-control-tfvc).
 
-[!INCLUDE [glossary-terms-teams](../../_shared/glossary-terms/teams.md)]
+[!INCLUDE [glossary-terms-teams](../../includes/glossary-terms/teams.md)]
 
-[!INCLUDE [glossary-terms-tfvc](../../_shared/glossary-terms/tfvc-repo.md)]
+[!INCLUDE [glossary-terms-tfvc](../../includes/glossary-terms/tfvc-repo.md)]

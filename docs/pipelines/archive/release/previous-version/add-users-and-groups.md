@@ -1,5 +1,5 @@
----
-title: Add users and groups and control access in Release Management
+﻿---
+title: Add users/groups & control access in Release Management
 ms.custom: seodec18
 description: Add users and groups and control access in Release Management server/client for Visual Studio 2015 and Team Foundation Server 2015
 ms.assetid: AEB78F81-1F59-47DE-AED0-F38C724024FC
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Add users and groups, and control access to Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You must add the user account of anyone who wants to set up, start, or approve
 releases to Release Management. Also, you must add the service accounts that 
@@ -51,7 +51,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
 1. Open the New User page from the **Administration** | **Manage Users** tab.
 
-   ![Open the New User page](_img/add-users-01.png)
+   ![Open the New User page](media/add-users-01.png)
 
 1. Choose a user account using the ellipsis (**...**) button, and set the 
    user role.
@@ -73,7 +73,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. Choose the type of group you want to add from the **Administration** | 
    **Manage Groups** tab.
 
-   ![Add a user group](_img/add-users-02.png) 
+   ![Add a user group](media/add-users-02.png) 
 
    The **Manage Groups** tab is available only when you are connected to 
    Release Management Server. You cannot add groups when you are connected
@@ -82,7 +82,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. On the **Security** tab, select the permissions that you want to enable 
    for this group.
 
-   ![Select the permissions for a group ](_img/add-users-03.png)
+   ![Select the permissions for a group ](media/add-users-03.png)
 
 1. Under **Stages**, keep the default **All Stage Types** or add one or more 
    stages.
@@ -98,7 +98,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. If you create a Release Management group (one not associated with TFS or 
    AD), link existing user accounts to be members of this group.
 
-   ![Link existing user accounts as members of group ](_img/add-users-04.png)
+   ![Link existing user accounts as members of group ](media/add-users-04.png)
 
    Or, you can add a user account by choosing the **Create** button.
 
@@ -201,6 +201,6 @@ members, you must delete them manually from the Manage Users page.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
 
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

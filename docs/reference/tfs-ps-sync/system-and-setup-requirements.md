@@ -1,5 +1,5 @@
 ﻿---
-title: System and setup requirements to support TFS-Project Server
+title: System and setup requirements for TFS-Project Server
 titleSuffix: TFS 
 description: Requirements to support Team Foundation Server-Project Server integration 
 ms.prod: devops
@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 # System and setup requirements to support TFS-Project Server integration  
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a>
 You can synchronize data between Visual Studio Team Foundation Server (TFS) and Office Project Server by installing Team Foundation Server Extensions for Project Server. You can install the extensions on Project Server 2010 with SP1 or Project Server 2013. 
@@ -106,7 +106,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
   
 5.  **Configure the integration**. As the following illustration shows, you must perform six main steps when you configure the integration of the two server products.  
   
-     ![Provisioning Project Server&#45;Team Foundation Server](_img/pstfs_provisioning.png "PSTFS_Provisioning")  
+     ![Provisioning Project Server&#45;Team Foundation Server](media/pstfs_provisioning.png "PSTFS_Provisioning")  
   
      For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   

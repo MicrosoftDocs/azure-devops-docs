@@ -1,5 +1,5 @@
 ﻿---
-title: Manage field mappings for TFS-Project Server integration
+title: Field mappings for TFS-Project Server integration
 titleSuffix: TFS 
 description: Modify how fields are mapped and synchronized to support Team Foundation Server-Project Server integration 
 ms.technology: devops-agile
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Manage field mappings for TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="BackToTop"></a> You can customize how you synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server by modifying the field mapping file. This file defines the data fields that are synchronized and how they are synchronized to support the integration of TFS and Project Server. You can manage this file by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
   

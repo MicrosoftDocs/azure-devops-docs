@@ -1,5 +1,5 @@
----
-title: Troubleshoot changing application access policies for organizations
+﻿---
+title: Troubleshoot changing app access policies
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like what apps integrate with Azure DevOps and how personal access tokens differ from alternate authentication credentials.
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot changing app access policies for your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 <a name="Oauth"></a>
 
@@ -38,18 +38,18 @@ A:  Find the [apps that integrate with Azure DevOps](https://marketplace.visuals
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../../_shared/qa-find-organization-owner.md)]
+[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
-[!INCLUDE [why-no-owned-organizations](../../_shared/qa-why-no-owned-organizations.md)]
+[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
 
 <a name="ChooseOrgAcctMSAcct"></a>
 
-[!INCLUDE [choose-msa-azuread-account](../../_shared/qa-choose-msa-azuread-account.md)]
+[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
 
-[!INCLUDE [choose-msa-azuread-account2](../../_shared/qa-choose-msa-azuread-account2.md)]
+[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../_shared/qa-why-cant-sign-in-msa-azuread-account.md)]
+[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="get-support"></a>
 
-[!INCLUDE [get-team-services-support](../../_shared/qa-get-vsts-support.md)]
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]

@@ -1,5 +1,5 @@
----
-title: Delete or remove users from an organization connected to Azure Active Directory
+﻿---
+title: Remove users from organization connected to Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Understand how to delete users from Azure DevOps connected to Azure Active Directory (Azure AD) via the Azure portal
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Delete users from your organization connected to Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) about how to use Azure Active Directory (Azure AD) with Azure DevOps.
 
@@ -31,7 +31,7 @@ You can [delete the user from each organization](delete-organization-users.md) w
 
 2. Go to **Azure Active Directory**. Find the Azure AD that's connected to your organization.
 
-   ![Find the directory connected to your organization](_img/manage-work-access/azurefindconnecteddirectory.png)
+   ![Find the directory connected to your organization](media/manage-work-access/azurefindconnecteddirectory.png)
 
 3. Follow [these steps](/azure/active-directory/active-directory-users-delete-user-azure-portal) on the Azure portal.
 

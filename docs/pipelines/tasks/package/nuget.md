@@ -17,13 +17,13 @@ monikerRange: '>= tfs-2018'
 
 **Version 2.**
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetCommandV2.md)]
 
 ::: moniker-end
 
@@ -68,11 +68,11 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
 | `packDestination`<br/>Package folder | Folder where packages will be created. If empty, packages will be created at the source root. |
-| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](http://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
+| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](https://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
 | `includeReferencedProjects`<br/>Environment variable | Enter the variable name without $, $env, or %. |
-| `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
-| `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
-| `patchVersion`<br/>Patch | The 'Z' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
+| `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
+| `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
+| `patchVersion`<br/>Patch | The 'Z' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
 | `packTimezone`<br/>Time zone | Specifies the desired time zone used to produce the version of the package. Selecting UTC is recommended if you're using hosted build agents as their date and time might differ.<br/>Options: `utc`, `local` |
 | `includeSymbols`<br/>Create symbols package | Specifies that the package contains sources and symbols. When used with a .nuspec file, this creates a regular NuGet package file and the corresponding symbols package. |
 | `toolPackage`<br/>Tool Package | Determines if the output files of the project should be in the tool folder. |
@@ -80,7 +80,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `basePath`<br/>Base path | The base path of the files defined in the nuspec file. |
 | `verbosityPack`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
 | `arguments`<br/>Command and arguments | The command and arguments which will be passed to NuGet.exe for execution. If NuGet 3.5 or later is used, authenticated commands like list, restore, and publish against any feed in this organization/collection that the Project Collection Build Service has access to will be automatically authenticated. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ::: moniker range="> tfs-2018"
 
@@ -101,12 +101,33 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
 
 ```YAML
-# Restore project
+# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    feedsToUse: Select
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
     restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from an organization scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-organization-scoped-feed'
+    restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from feed(s) set in nuget.config
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
 ```
 
 ### Package
@@ -139,7 +160,7 @@ Push/Publish a package to a feed defined in your NuGet.config.
     nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
 ```
 
-Push/Publish a package to a feed you define in the task
+Push/Publish a package to a feed in the same organization you define in the task
 
 ```YAML
 # Push a project
@@ -147,6 +168,7 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
     publishVstsFeed: 'myTestFeed'
 ```
 
@@ -169,15 +191,15 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/nuget-step-qa.md)]
+[!INCLUDE [temp](../includes/nuget-step-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../includes/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
