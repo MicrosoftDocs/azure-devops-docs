@@ -1,7 +1,6 @@
 ---
 title: Azure App Service Settings task
 description:  Azure App Service Settings Task supports configuring App settings, connection strings and other general settings in bulk using JSON syntax on your web app or any of its deployment slots. 
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: 57D04B69-1068-4A06-80B8-4C0FE7BEEC55
 ms.author: ushan

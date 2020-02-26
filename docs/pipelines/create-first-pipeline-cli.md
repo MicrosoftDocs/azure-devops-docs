@@ -2,7 +2,6 @@
 title: Create your first pipeline using the Azure CLI
 ms.custom: seodec18
 description: Create your first pipeline in Azure Pipelines, Azure DevOps
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: geverghe

@@ -1,7 +1,6 @@
 ---
 title: Run pipelines with Anaconda environments
 description: Set up and use Anaconda environments with Azure Pipelines, Azure DevOps
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.author: vijayma

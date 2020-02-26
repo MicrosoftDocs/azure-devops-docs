@@ -2,7 +2,6 @@
 title: Package and sign Helm charts
 titleSuffix: Azure Pipelines & TFS
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 0B8D8335-A15A-4F8E-A731-767BC6C6A4B3
 ms.author: atulmal

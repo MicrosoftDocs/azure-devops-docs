@@ -3,7 +3,6 @@ ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Generate a pipeline to deploy an ASP.NET app
 ms.custom: seodec18
 description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET app from Azure Pipelines or Team Foundation Server (TFS)
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair

@@ -1,7 +1,6 @@
 ---
 title: Build an image
 description: Build container images
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.author: atulmal

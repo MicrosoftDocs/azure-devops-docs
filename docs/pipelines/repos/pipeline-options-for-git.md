@@ -2,10 +2,7 @@
 title: Options for Git repositories
 description: Options that are available when using a Git repository with Azure Pipelines
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.author: sdanie
-author: steved0x
 ms.custom: seodec18
 ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'

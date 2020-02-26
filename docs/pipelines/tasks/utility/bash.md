@@ -2,7 +2,6 @@
 title: Bash task
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.custom: seodec18
 ms.author: macoope

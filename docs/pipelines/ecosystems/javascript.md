@@ -1,10 +1,7 @@
 ---
 title: Build and deploy JavaScript and Node.js apps
 description: Automatically build JavaScript and Node.js apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
-ms.author: jukullam
-author: juliakm
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019

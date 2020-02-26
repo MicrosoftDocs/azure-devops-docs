@@ -1,7 +1,6 @@
 ---
 title: Canary deployment strategy for Kubernetes deployments
 description: Demo of performing canary deployments on Kubernetes clusters using Azure Pipelines
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
 ms.author: atulmal

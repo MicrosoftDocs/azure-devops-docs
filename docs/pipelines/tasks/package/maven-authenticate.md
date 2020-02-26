@@ -3,7 +3,6 @@ title: Maven Authenticate task (for task runners)
 ms.custom: seodec18
 description: Provides credentials for Azure Artifacts feeds and external Maven repositories.
 ms.topic: reference
-ms.technology: devops-cicd
 ms.date: 08/06/2019
 monikerRange: 'azure-devops'
 ---

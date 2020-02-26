@@ -1,6 +1,7 @@
 ---
 ms.topic: include
 ms.technology: devops-cicd
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 02/19/2020

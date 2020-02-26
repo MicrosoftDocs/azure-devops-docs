@@ -2,7 +2,6 @@
 title: Xamarin License task
 description: Activate or deactivate a Xamarin license when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 07F571D7-DB66-4B8E-8CB1-F37B6D56EBD7
 ms.custom: seodec18
 ms.author: dastahel

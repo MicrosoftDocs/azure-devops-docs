@@ -3,6 +3,7 @@ author: ninallam
 ms.service: devops
 ms.topic: include
 ms.date: 12/10/2019
+ms.manager: mijacobs
 ms.author: ninallam
 ---
 
