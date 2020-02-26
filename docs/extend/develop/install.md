@@ -14,6 +14,6 @@ ms.date: 08/04/2016
 
 # Install your extension
 
-[!INCLUDE [Install](../_shared/procedures/install.md)]
+[!INCLUDE [Install](../includes/procedures/install.md)]
 
 

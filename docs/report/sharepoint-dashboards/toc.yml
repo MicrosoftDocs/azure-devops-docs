@@ -48,7 +48,7 @@
     - name: Add SharePoint products to TFS
       href: /azure/devops/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
     - name: Modify or remove access between SharePoint web app and TFS
-      href: /azure/devops/server/admin/modify-remove-access-shareport-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
+      href: /azure/devops/server/admin/modify-remove-access-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
     - name: Configure SharePoint Server 2010 or 2007 for dashboards
       href: /azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
   - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016

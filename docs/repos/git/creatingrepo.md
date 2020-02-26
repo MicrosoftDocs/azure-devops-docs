@@ -56,15 +56,15 @@ Later you can connect this Git repo to a remote Git repo to share your work with
 
 Create a new Git repo for your new Visual Studio solution by selecting **Create new Git repository** when creating the solution:
 
-![Select Create new Git repository when creating a new solution](_img/vscreategitrepo.png) 
+![Select Create new Git repository when creating a new solution](media/vscreategitrepo.png) 
 
 ### From an existing solution
 
-To create a repo from an existing solution not in version control, select the **Publish** button in the bottom-right of the lower status bar ![Visual Studio publish button](_img/share-your-code-in-git-vs/publish_status_bar.png).
+To create a repo from an existing solution not in version control, select the **Publish** button in the bottom-right of the lower status bar ![Visual Studio publish button](media/share-your-code-in-git-vs/publish_status_bar.png).
 This creates a new Git repo in the same directory as your solution and opens up the **Publish** view in Team Explorer so you can [push](pushing.md) your code to Azure Repos or 
 another remote Git repository.
 
-![Publishing a solution to a new remote Git repository in Visual Studio Team Explorer](_img/vspublish.gif)
+![Publishing a solution to a new remote Git repository in Visual Studio Team Explorer](media/vspublish.gif)
 
 ### In an empty folder
 
@@ -72,15 +72,15 @@ another remote Git repository.
 2. Under **Local Git Repositories**, select **New** and enter a folder where the repo will be created. This directory must be empty.  
 3. Select **Create** to create the repo.
 
-   ![Creating a new local Git repository in Visual Studio Team Explorer](_img/CreateNewRepoVS.png)</ol>
+   ![Creating a new local Git repository in Visual Studio Team Explorer](media/CreateNewRepoVS.png)</ol>
 
-<a name="remotes" />
+<a name="remotes"></a>
 ### Connect a local repo to a remote
 
 To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.
 Under **Remotes**, select **Add**.    
 
-![Add a remote for a repo in Visual Studio Team Explorer](_img/add_remote_vs.png)
+![Add a remote for a repo in Visual Studio Team Explorer](media/add_remote_vs.png)
 
 Enter `origin` in the **Name** field and enter the [clone URL](clone.md#clone_url) for your repo in the **Fetch** field. 
 Make sure that **Push matches fetch** is checked and select **Save**. 

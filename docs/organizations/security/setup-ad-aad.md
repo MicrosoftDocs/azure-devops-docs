@@ -1,5 +1,5 @@
 ﻿---
-title: Set up Active Directory / Azure Active Directory for Azure DevOps
+title: Set up Active Directory / Azure AD
 description: Manage large groups of users using Active Directory (AD) for Azure DevOps Server or Azure Active Directory (Azure AD) for Azure DevOps 
 ms.prod: devops
 ms.technology: devops-security
@@ -15,13 +15,13 @@ ms.date: 10/14/2019
 
 # Set up Active Directory or Azure Active Directory
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) for Azure DevOps Server or Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps to support billing.
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range="azure-devops"
 Use this topic to access articles that show you how to:

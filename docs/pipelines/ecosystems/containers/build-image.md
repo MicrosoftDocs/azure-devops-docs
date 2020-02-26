@@ -6,15 +6,15 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build an image
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Azure Pipelines can be used to build images for any repository containing a Dockerfile. Building of both Linux and Windows containers is possible based on the agent platform used for the build.
 
@@ -89,6 +89,9 @@ steps:
     command: build
     Dockerfile: app/Dockerfile
 ```
+
+> [!NOTE]
+> BuildKit is not currently supported on Windows hosts.
 
 ## Pre-cached images on hosted agents
 

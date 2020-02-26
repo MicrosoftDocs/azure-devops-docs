@@ -1,6 +1,6 @@
 ---
-title: Migration overview from Azure DevOps Server to Azure DevOps Services | Azure DevOps 
-description: Overview of the high fidelity migration process from Azure DevOps Server to Azure DevOps Services
+title: Azure DevOps Server to Services Migration overview
+description: Overview of the high fidelity migration process from Server to Services
 ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
@@ -9,21 +9,21 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/13/2018
+ms.date: 12/16/2019
 ---
 
-# Migrate data from Azure DevOps Server to Azure DevOps Services 
+# Migrate data from Azure DevOps Server to Azure DevOps Services  
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!NOTE]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
->
-> On Tuesday, September 3rd support for Azure DevOps Server 2019 RTW imports will be deprecated. If you're planning to import from that version, please complete your import before September 3rd or upgrade to Azure DevOps Server 2019.0.1 
+
+
 
 ## Data migration tool for Azure DevOps
 
-The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
+The data migration tool for Azure DevOps provides a high fidelity way to migrate collection databases from Azure DevOps Server to Azure DevOps Services. It's recommended that you download the [migration guide and tool](https://aka.ms/AzureDevOpsImport) if you're looking to use this service to import your collection(s). The guide serves as a walk through of the different steps involved in an import. Providing best practices, checklists, and helpful tips to make your import as easy as possible. The guide should be used in conjunction with the more technical documentation referenced below to successfully import to Azure DevOps Services. 
 
 
 ## Supported Azure DevOps Server versions for import
@@ -33,7 +33,7 @@ The data migration tool for Azure DevOps provides a high fidelity way to migrate
 
 The data migration tool for Azure DevOps supports the two latest releases of Azure DevOps Server at a given time. Releases include updates and major releases. Currently the following versions of Azure DevOps Server are supported for import:
 
-* Azure DevOps Server 2019.0.1
+* Azure DevOps Server 2019.1.1
 * Azure DevOps Server 2019 Update 1
 
 > [!NOTE]
@@ -55,18 +55,18 @@ The following features can be included with your import, but are currently in a 
 
 When queueing an import you can elect to include preview features with your import. If you do, data related to these features will be copied into your new organization along with all your other data. Should you choose to not include these features then their data will not be copied.
 
-For a list of items not included with an import please see the [migration guide](https://aka.ms/AzureDevOpsImport).
+For a list of items not included with an import, see the [migration guide and tool](https://aka.ms/AzureDevOpsImport).
 
 ## Data migration tool for Azure DevOps resources
 
-In general you should use the [migration guide](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the below documentation. These articles offer deeper technical knowledge on various import topics. 
+In general you should use the [migration guide and tool](https://aka.ms/AzureDevOpsImport) when going through an import. When it's required the guide links back to the following articles. These articles offer deeper technical knowledge on various import topics. 
 
 ### Import process 
 
-* [Validating a collection for import](migration-import.md#validating-a-collection)
-* [Preparing a collection for import](migration-import.md#generating-import-files)
-* [Before import steps](migration-import.md#getting-ready-to-import)
-* [Run an Import](migration-import.md#run-an-import)
+* [Validate a collection for import](migration-import.md#validate-a-collection)
+* [Prepare a collection for import](migration-import.md#generate-import-files)
+* [Prepare for import](migration-import.md#prepare-import)
+* [Run an import](migration-import.md#run-an-import)
 * [Post import steps](migration-post-import.md)
 
 ### Troubleshooting 

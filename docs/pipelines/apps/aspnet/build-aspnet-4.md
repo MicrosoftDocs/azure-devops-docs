@@ -6,8 +6,8 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
+ms.author: jukullam
+author: juliakm
 ms.custom: seodec18
 ms.date: 01/24/2019
 monikerRange: '>= tfs-2017'
@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2017'
 
 # Build ASP.NET apps
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 

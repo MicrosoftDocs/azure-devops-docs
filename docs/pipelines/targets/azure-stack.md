@@ -21,7 +21,7 @@ monikerRange: '> tfs-2018'
 is an extension of Azure that enables the agility and fast-paced innovation of cloud computing
 through a hybrid cloud and on-premises environment.
 
-> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-service-principal-for-ad-fs) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/tfs/release-notes/azuredevops2019#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
+> In addition to supporting Azure AD, Azure DevOps Server 2019 can be used to deploy to Azure stack with [Active Directory Federation Services](/azure/azure-stack/azure-stack-create-service-principals#create-a-service-principal-that-uses-a-client-secret-credential) (AD FS) using a [service principal with certificate](https://docs.microsoft.com/azure/devops/release-notes/2018/sprint-141-update#create-azure-service-connection-with-service-principal-that-authenticates-with-a-certificate).
 
 **Prerequisites**
 
@@ -70,5 +70,5 @@ The following Azure tasks are validated with Azure Stack:
 
 To ignore SSL errors, set a variable named `VSTS_ARM_REST_IGNORE_SSL_ERRORS` to the value `true` in the build or release pipeline.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
 

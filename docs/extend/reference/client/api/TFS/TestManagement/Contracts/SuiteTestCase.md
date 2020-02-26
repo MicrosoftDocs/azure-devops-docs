@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts SuiteTestCase API | Extensions for Azure DevOps Services
+description: Data representation of a suite test case.
 ms.assetid: dce9714b-f803-edb9-a73f-1a27e8693613
 ms.prod: devops
 ms.technology: devops-ecosystem

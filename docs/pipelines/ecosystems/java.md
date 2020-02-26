@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Build Java apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -37,7 +37,7 @@ This guidance explains how to automatically build Java projects. (If you're work
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
 
@@ -61,9 +61,9 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ::: moniker-end
 
@@ -71,14 +71,14 @@ https://github.com/MicrosoftDocs/pipelines-java
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Maven**.
 
 1. When your new pipeline appears, take a look at the YAML to see what it does. When you're ready, select **Save and run**.
 
    > [!div class="mx-imgBorder"] 
-   > ![Save and run button in a new YAML pipeline](_img/save-and-run-button-new-yaml-pipeline.png)
+   > ![Save and run button in a new YAML pipeline](media/save-and-run-button-new-yaml-pipeline.png)
 
 2. You're prompted to commit a new _azure-pipelines.yml_ file to your repository. After you're happy with the message, select **Save and run** again.
 
@@ -118,7 +118,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images.

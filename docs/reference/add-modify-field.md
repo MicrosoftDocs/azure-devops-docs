@@ -15,9 +15,9 @@ ms.date: 01/24/2019
 
 # Add or modify a field to track work 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
 
-Your project contains 100 or more data fields, based on the process&#151;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&#151;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
+Your project contains 100 or more data fields, based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. You update data by [modifying the data field within a work item](../boards/backlogs/add-work-items.md). Each work item is associated with a work item type (WIT), and the data you can track corresponds to the fields assigned to the WIT. 
 
 You can modify an existing field or add a custom field to support tracking additional data requirements. For example, you can customize the pick list within a drop-down menu, add a rule to specify a default value or restrict the value it can take, or change a field attribute.  
 
@@ -60,14 +60,14 @@ To add a custom field, add field rules, or change the label of a field on a work
 
 To change a field attribute or rename a field, use the **witadmin** command line tool. Otherwise, to modify a field, you add or modify the rules associated with the field within a WIT definition.   
 
-![Summary of field attributes and field rules ](_img/add-modify-field-tfs-summary.png)
+![Summary of field attributes and field rules ](media/add-modify-field-tfs-summary.png)
 
 <a id="edit">  </a>
 ## To edit a WIT definition file 
 
 To add rules or add a custom field, export, edit, and then import the WIT definition file.
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 Any field that you want to use to track data must be added to the WIT definition file. This is true for all but system fields (fields whose reference name start with **System.**). All System fields are defined for all WITs, whether or not you include them in WIT definition. To learn more about each field, see [Work item field index](../boards/work-items/guidance/work-item-field.md).
 
@@ -113,7 +113,7 @@ To modify the pick list for most string or integer fields within a work item for
 <tbody>
 <tr>
 <td>Custom field and pick list<br /><br />
-<img src="_img/custom-pick-list.png" alt="Custom pick list"/><br/></td>
+<img src="media/custom-pick-list.png" alt="Custom pick list"/><br/></td>
 <td>
 <pre><code>&lt;FIELD name=&quot;Resolution&quot; refname=&quot;MyCompany.Resolution&quot; type=&quot;String&quot;&gt;    
 &lt;ALLOWEDVALUES&gt;
@@ -221,7 +221,7 @@ To add a custom field, edit the WIT definition to add a **FIELD** element within
 
    The following illustration shows that the work item form for the product backlog item now contains the new field.  
 
-   ![New field in form](_img/IC539047.png)  
+   ![New field in form](media/IC539047.png)  
 
 
 <a id="change-label">  </a>
@@ -325,7 +325,7 @@ To get added as an administrator, [Add administrators](../organizations/security
 
 <a id="field-reference"></a>
 
-[!INCLUDE [temp](../_shared/field-reference.md)]
+[!INCLUDE [temp](../includes/field-reference.md)]
 
 <a id="list-fields"></a> 
 ### List or review fields  
@@ -344,23 +344,23 @@ To list or review fields, you can use one of the following tools, depending on t
 
 <tr>
 <td align="left"><a href="../organizations/settings/work/customize-process-field.md#review-fields" data-raw-source="[Web portal: List inherited and custom-defined fields](../organizations/settings/work/customize-process-field.md#review-fields)">Web portal: List inherited and custom-defined fields</a></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/><sup>1</sup></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/><sup>1</sup></td>
 <td> </td>
 </tr>
 
 <tr>
 <td align="left"><a href="#wi-explorer" data-raw-source="[Work item field explorer](#wi-explorer)">Work item field explorer</a> <sup>2</sup> </td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
 <td align="left"><a href="witadmin/manage-work-item-fields.md" data-raw-source="[witadmin listfields command line tool](witadmin/manage-work-item-fields.md)">witadmin listfields command line tool</a></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="../_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -378,7 +378,7 @@ To list or review fields, you can use one of the following tools, depending on t
 
 In addition to the attributes that you can change for a work item field, there are several non-changeable and virtually hidden attributes for each field. You can look up the assignments of these fields using the Work Item Field Explorer tool.  
 
-![Work Item Field Explorer](_img/IC633020.png)
+![Work Item Field Explorer](media/IC633020.png)
 
 For a description of each attribute, see this post: [Work Item Field Attributes - What You Can and Can't Change](https://blogs.msdn.microsoft.com/devops/2012/08/17/work-item-field-attributes-what-you-can-and-cant-change/).
 

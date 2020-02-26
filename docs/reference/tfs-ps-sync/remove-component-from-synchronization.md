@@ -1,5 +1,5 @@
 ﻿---
-title: Remove a component from participating in data synchronization
+title: Remove a component from participating in data sync
 titleSuffix: TFS 
 description: Remove components configured to participate in data synchronization between Visual Studio Team Foundation Server and Project Server
 ms.prod: devops
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 01/12/2017
 ---
 # Remove a component from participating in data synchronization
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You can remove components that you have configured to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server. To permanently shut down synchronization, you must unmap each project collection that is mapped and unregister each instance of Project Web Access or Project Web App (PWA) that is registered to TFS.  
   
@@ -39,7 +39,7 @@ When you delete a task from Project Server that has been synchronized with a wor
 ##  <a name="removeintegration"></a> Remove integration and shut down synchronization  
  The following illustration shows the systematic sequence of steps that you take to shut down the synchronization engine and remove the integration of Team Foundation Server and Project Server. You can perform the sequence of steps as shown, or you can use the **/force** switch when you perform step 3 using the `TfsAdmin ProjectServer /UnMapPWAFromCollection` command option.  
   
- ![Workflow for removing mapping between PS and TFS](_img/pstfs_unmap_workflow.png "PSTFS_UnMap_Workflow")  
+ ![Workflow for removing mapping between PS and TFS](media/pstfs_unmap_workflow.png "PSTFS_UnMap_Workflow")  
   
 > [!NOTE]
 >  If you delete not only a mapped project collection but also all instances of PWA that were mapped to it, you will remove all mappings of work items that have been synchronized. However, the instance of PWA to Team Foundation Server will still be registered.  

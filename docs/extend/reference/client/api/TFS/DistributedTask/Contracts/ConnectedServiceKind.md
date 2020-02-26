@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts ConnectedServiceKind API | Extensions for Azure DevOps Services
+description: Data representation of a connected service kind.
 ms.assetid: de0051da-b780-1e52-6e3c-713051ec9dfb
 ms.prod: devops
 ms.technology: devops-ecosystem

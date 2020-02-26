@@ -23,7 +23,9 @@ Displays detailed information about past merges between the specified source and
 **Required Permissions**  
 To use the **merges** command, you must have the **Read** permission set to **Allow** for both source and destination branches. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
+```
+tf merges [source] destination [/recursive] [/extended] [/format:(brief|detailed)] [/login:username, [password]] [/showall]]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters<table>
 
@@ -77,15 +79,19 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The following example displays information about all merge operations performed between Beta1\_branch and RTM\_branch.
 
-    c:\projects>tf merges /recursive Beta1_branch RTM_branch
+```
+c:\projects>tf merges /recursive Beta1_branch RTM_branch
+```
 
 -   Sample output:
 
-        Changeset  Merged in Changeset   Author   Date
-        --------------------------------------------------------
-        135         162                   Justin     10/31/2003
-        146         162                   Justin      10/31/2003
-        147*        167                   Bill       11/02/2003
+    ```
+	Changeset  Merged in Changeset   Author   Date
+	--------------------------------------------------------
+	135         162                   Justin     10/31/2003
+	146         162                   Justin      10/31/2003
+	147*        167                   Bill       11/02/2003
+    ```
 
     The asterisk '\*' next to changeset 147 indicates that only some of the changes in that changeset \#147 were merged into changeset \#167.
 

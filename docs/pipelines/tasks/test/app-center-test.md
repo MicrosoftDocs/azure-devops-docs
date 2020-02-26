@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # App Center Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 This task lets you run test suites against an application binary (`.apk` or `.ipa` file) using App Center Test.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
@@ -23,7 +23,7 @@ This task lets you run test suites against an application binary (`.apk` or `.ip
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -31,7 +31,7 @@ This task lets you run test suites against an application binary (`.apk` or `.ip
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AppCenterTestV1.md)]
+[!INCLUDE [temp](../includes/yaml/AppCenterTestV1.md)]
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ This task lets you run test suites against an application binary (`.apk` or `.ip
 <tr><td>App Center CLI location</td><td>(Optional) Path to the App Center CLI on the build or release agent.</td></tr>
 <tr><td>Enable debug output</td><td>(Optional) Add <code>--debug</code> to the App Center CLI for verbose output.</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 

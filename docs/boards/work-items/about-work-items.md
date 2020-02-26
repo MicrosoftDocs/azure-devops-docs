@@ -1,5 +1,5 @@
-﻿---
-title: Using work items to track user stories, issues, & more
+---
+title: Using work items to track user stories, & more
 titleSuffix: Azure Boards and TFS
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
 ms.custom: work-items, seodec18
@@ -11,12 +11,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 08/26/2019
+ms.date: 01/10/2020
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. Work items are similar to GitHub issues, but offer different types to track different types of information.
 
@@ -79,7 +79,7 @@ You can use work items to track anything you need to track. Each work item repre
 
 To track different types of work, different WITs are defined. The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
 
-[!INCLUDE [temp](../_shared/work-item-types.md)]
+[!INCLUDE [temp](../includes/work-item-types.md)]
 
 The items in your backlog may be called user stories (agile) issues (Basic), product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
 
@@ -104,7 +104,7 @@ Each form contains a number of controls as shown below and described in [Work it
 
 ::: moniker range=">= tfs-2018"
 
-![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 ::: moniker-end
 
@@ -116,18 +116,18 @@ The new form and its corresponding features are available from the web portal. T
 
 The new web form provides a number of experiences not provided with the old web form. To learn more, see [New work item experience](../../reference/process/new-work-item-experience.md). 
 
-![Work item form to track features or user stories](../backlogs/_img/add-work-item-vsts-user-story-form.png)
+![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 **Old web form** 
 
-![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
+![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
 
 ---
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
-![Work item form to track features or user stories](../backlogs/_img/work-item-form-to-track-user-stories.png)
+![Work item form to track features or user stories](../backlogs/media/work-item-form-to-track-user-stories.png)
 ::: moniker-end
 
 
@@ -146,7 +146,7 @@ You can add and update work items from the web portal and various clients. For a
 
 Use the web portal to accomplish the following tasks. 
 
-[!INCLUDE [temp](../_shared/page-work-item-tasks.md)] 
+[!INCLUDE [temp](../includes/page-work-item-tasks.md)] 
 
 
 <a id="assign" />
@@ -156,13 +156,13 @@ Use the web portal to accomplish the following tasks.
 
 You can only assign a work item to one person at a time. The **Assigned To** field is a person-name field designed to hold an user identity recognizable by the system. Within the work item form, choose the **Assigned To** field to select a project member. Or, you can begin typing the name of a project member to quickly focus your search to a select few. 
 
-![Web work item form, Assign to field](../_shared/_img/assign-work-items.png)  
+![Web work item form, Assign to field](../media/assign-work-items.png)  
 
 Anyone who has write access to a project can assign work items, including users with [Basic and Stakeholder access](#permissions-access).   
 
 **Note the following:**
 
-- You can assign a work item only to users that have been [added a project or team](../../organizations/security/add-users-team-project.md)  
+- You can assign a work item only to users that have been [added to a project or team](../../organizations/security/add-users-team-project.md)  
 - You can assign a work item to one and only one user at a time. If work is split across two or more users, then you should consider creating additional work items that you'll assign to each user responsible for the work to be completed  
 - Over time, the drop-down menu of person-name fields will display the names you have most recently selected  
 - Some drop-down menus that support assignment from a team backlog or board are automatically limited to users assigned to the team   

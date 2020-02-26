@@ -7,17 +7,17 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: ronai
-author: RoopeshNair
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 

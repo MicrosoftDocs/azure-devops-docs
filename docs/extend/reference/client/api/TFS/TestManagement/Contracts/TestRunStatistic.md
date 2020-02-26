@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts TestRunStatistic API | Extensions for Azure DevOps Services
+description: Data representation of a test run statistic.
 ms.assetid: 47639bdc-2643-3fd8-2383-db703f5616c5
 ms.prod: devops
 ms.technology: devops-ecosystem

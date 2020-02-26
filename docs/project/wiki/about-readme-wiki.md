@@ -1,5 +1,5 @@
----
-title: Share information using a project, repo, README, or Wiki
+﻿---
+title: Share info with a project, repo, README, or Wiki
 titleSuffix: Azure DevOps
 description: Share information using a project, repo, README, or Wiki in Azure DevOps. 
 ms.technology: devops-collab
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2015'
 
 # About Wikis, READMEs, and Markdown
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= tfs-2018"
 

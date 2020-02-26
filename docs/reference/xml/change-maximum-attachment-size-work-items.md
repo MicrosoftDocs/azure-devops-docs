@@ -15,7 +15,7 @@ ms.date: 05/10/2017
 
 # Change the maximum attachment size for work items
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work item attachments to 4 MB. For on-premises deployments, you can use the web service to increase the size of files you attach to up to 2GB. 
   
@@ -31,7 +31,7 @@ By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work
   
 4.  Enter the size in bytes, and then choose **Invoke**.  
   
-     ![SetMaxAttachmentSize, ConfigurationSettingsService](_img/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
+     ![SetMaxAttachmentSize, ConfigurationSettingsService](media/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
 

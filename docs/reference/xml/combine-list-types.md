@@ -14,7 +14,7 @@ ms.date: 04/05/2017
 
 # Combine list types
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]  
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]  
 
 You can specify multiple types of lists for a single field. This topic defines how the resulting list of items is determined.  
   

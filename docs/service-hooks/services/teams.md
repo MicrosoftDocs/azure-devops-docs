@@ -1,5 +1,5 @@
----
-title: Create a service hook for Azure DevOps Services and TFS with Microsoft Teams
+﻿---
+title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Services, TFS 2017
 description: Use Microsoft Teams with your Azure DevOps organization
 ms.author: phwilson
@@ -42,19 +42,19 @@ While the functionality is the same across Azure DevOps Services and Team Founda
 
 1. To bring events from Azure DevOps Services into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and then select Connectors.
 
-    <img alt="Adding a new Connector to Teams" src="./_img/teams/Teams Connector config 1.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+    <img alt="Adding a new Connector to Teams" src="./media/teams/Teams Connector config 1.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 2. Select **Azure DevOps Services** from the list.
 
-    <img alt="Connectors list" src="./_img/teams/Teams Connector config 2.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+    <img alt="Connectors list" src="./media/teams/Teams Connector config 2.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 3. Select your organization (you may be prompted to sign in first), the project, and your team.
 
-    <img alt="Azure DevOps Services Connector event configuration" src="./_img/teams/Teams Connector config 4.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+    <img alt="Azure DevOps Services Connector event configuration" src="./media/teams/Teams Connector config 4.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 4. Choose the type of activity you want to be notified about. Depending on the event, you may be given further fields to filter down the notifications so you can filter out notifications your team does not care about. For example, for work item events, you can filter by area path, work item type, and even particular field changes.
 
-    <img alt="Example work item event configuration" src="./_img/teams/Teams Connector config 5.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+    <img alt="Example work item event configuration" src="./media/teams/Teams Connector config 5.png" style="border: 1px solid #CCCCCC; width:80%; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 5. When you are happy with the configuration, save it.
 
@@ -65,7 +65,7 @@ Activity from your Azure DevOps Services project will start appearing in your Te
 To make a change to an existing connector:
 
 1. Navigate to the "Configured" tab on the Connector dialog, find the connector, and click Manage.
-<img alt="Example work item event configuration" src="./_img/teams/Teams Connector config 6.png" style="width:80%;" />
+<img alt="Example work item event configuration" src="./media/teams/Teams Connector config 6.png" style="width:80%;" />
 
 ## Configuring a new connector for TFS
 
@@ -78,15 +78,15 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 
 1. To bring events from TFS into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select Connectors. 
 
-   <img alt="Adding a new Connector to Teams" src="./_img/teams/Teams Connector config 1.png" style="width:80%;" />
+   <img alt="Adding a new Connector to Teams" src="./media/teams/Teams Connector config 1.png" style="width:80%;" />
 
 1. Select **Team Foundation Server** from the list.
 
-   <img alt="Connectors list" src="./_img/teams/Teams Connector config tfs 1.png" style="width:80%;" />
+   <img alt="Connectors list" src="./media/teams/Teams Connector config tfs 1.png" style="width:80%;" />
 
 1. Choose a name for the Connector, for example "My project notifications", and click Create. Note: this name is only used for managing the Connector.
 <br/>
-<img alt="Connectors list" src="./_img/teams/Teams Connector config tfs 2.png" style="width:80%;" />
+<img alt="Connectors list" src="./media/teams/Teams Connector config tfs 2.png" style="width:80%;" />
 
 1. Copy the generated web hook URL. You will provide this URL when setting up service hook subscriptions in your TFS project.
 
@@ -94,7 +94,7 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 
 1. From your TFS team project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
 
-   <img alt="Azure DevOps Services Service Hook Settings" src="./_img/slack/vsts-service-hooks.png" style="width:70%; height:auto;" />
+   <img alt="Azure DevOps Services Service Hook Settings" src="./media/slack/vsts-service-hooks.png" style="width:70%; height:auto;" />
 
 1. Click **Create subscription** and select the "Teams" service.
 
@@ -109,7 +109,7 @@ Activity from your TFS project will start appearing in your Teams channel.
 
 ## Kanban board & Dashboards in Teams (Azure DevOps Services only)
 
-<img alt="Kanban board tab in Teams channel" src="./_img/teams/Teams Kanban board 2.png" style="width:100%;" />
+<img alt="Kanban board tab in Teams channel" src="./media/teams/Teams Kanban board 2.png" style="width:100%;" />
 
 Bring in your teams kanban board or favorite dashboard directly into Microsoft Teams.
 
@@ -122,14 +122,14 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
 
 1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Visual Studio icon and follow the steps to connect to your organization.
 
-   <img alt="Add a new tab to Teams channel" src="./_img/teams/Teams Kanban board 3.png" style="width:80%;" />
+   <img alt="Add a new tab to Teams channel" src="./media/teams/Teams Kanban board 3.png" style="width:80%;" />
 
 2. Once you have authenticated and selected your organization, you will be displayed a screen to select a Kanban board or Dashboard.
    <br/>
-   <img alt="Teams tab configuration" src="./_img/teams/Teams Kanban board 4.png" style="width:80%;" />
+   <img alt="Teams tab configuration" src="./media/teams/Teams Kanban board 4.png" style="width:80%;" />
 
    <br>
-   <img alt="Select Kanban board or Dashboard tab configuration" src="./_img/teams/Teams Kanban board 6.png" style="width:80%;" />
+   <img alt="Select Kanban board or Dashboard tab configuration" src="./media/teams/Teams Kanban board 6.png" style="width:80%;" />
 
 ## Q & A
 

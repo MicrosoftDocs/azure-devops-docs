@@ -32,16 +32,16 @@ Assume three feeds, Fabrikam, Contoso, and AdventureWorks. In this example, we'l
 
 At first, Fabrikam has no upstream sources, and users connected to Fabrikam can only install versions 1.0.0 and 2.0.0 of the Widgets package. Likewise, Contoso has no upstream sources, and users connected to Contoso can only install versions 1.0.0 and 3.0.0 of the Gizmos package. Ditto for the AdventureWorks feed, where connected users can only install versions 1.0.0 and 2.0.0 of the Gadgets package or version 1.0.0 of the Things package.
 
-![3 feeds with no upstream sources](_img/upstream-source-graph1.svg)
+![3 feeds with no upstream sources](media/upstream-source-graph1.svg)
 
 Next, consider what happens if Contoso adds an upstream source to AdventureWorks. Then, a user connected to Contoso can install any version of Gizmos, any version of Gadgets, or any version of Things. If she installs Gadgets@2.0.0, that package-version is *saved* into Contoso (with a link back to AdventureWorks).
 
-![Contoso adds an upstream to AdventureWorks](_img/upstream-source-graph2.svg)
+![Contoso adds an upstream to AdventureWorks](media/upstream-source-graph2.svg)
 
 Now, let's have the Fabrikam feed add an upstream source to the Contoso feed. Once that's done, a user connected to Fabrikam can install any version of Widgets, any version of Gizmos, but only *saved* versions (i.e. 2.0.0) of Gadgets. 
 
-![Fabrikam adds an upstream source to Contoso](_img/upstream-source-graph3.svg)
+![Fabrikam adds an upstream source to Contoso](media/upstream-source-graph3.svg)
 
 He cannot install version 1.0.0 of Gadgets or any version of Things, because those package-versions haven't been saved into Contoso by a Contoso user.
 
-![Fabrikam cannot access AdventureWorks packages unless they've been saved by Contoso](_img/upstream-source-graph4.svg)
+![Fabrikam cannot access AdventureWorks packages unless they've been saved by Contoso](media/upstream-source-graph4.svg)

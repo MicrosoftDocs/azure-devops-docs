@@ -14,20 +14,20 @@ monikerRange: '>= tfs-2015'
 
 # Collect more diagnostic data in manual tests
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 **For Azure DevOps and TFS, see [Collect diagnostic data while testing](../collect-diagnostic-data.md).**
 
 While you are testing your application, Microsoft Test Manager can collect data that will help diagnose any fault that you might find. If you create a bug report while you're testing, the data is automatically attached to the bug work item.  
   
-![Test settings machine roles and adapters](_img/collect-more-diagnostic-data-in-manual-tests/testsettingsmachineroleconceptual.png)  
+![Test settings machine roles and adapters](media/collect-more-diagnostic-data-in-manual-tests/testsettingsmachineroleconceptual.png)  
   
 You can decide what kinds of data you want to collect.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ## What diagnostic data can I collect in a test?
 
@@ -51,27 +51,27 @@ You need test settings only if you want to collect more data than the default. T
   
    - In the Properties of your test plan, set the test environment you want to use for manual tests.  
   
-   ![In test plan properties, choose a lab environment.](_img/collect-more-diagnostic-data-in-manual-tests/almt_ws91chooseenv.png)  
+   ![In test plan properties, choose a lab environment.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws91chooseenv.png)  
   
 1. Choose an existing test settings file, or create a new one.  
   
-   ![Select or create test settings.](_img/collect-more-diagnostic-data-in-manual-tests/almt_ws92newsettings.png)  
+   ![Select or create test settings.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws92newsettings.png)  
   
    This sets the default selection for performing tests in this test plan. You can override the selection when you perform individual test runs.  
   
 1. Give the test settings file a name.  
   
-   ![Set the name of the new test settings.](_img/collect-more-diagnostic-data-in-manual-tests/almt_ws93newsettingsname.png)  
+   ![Set the name of the new test settings.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws93newsettingsname.png)  
   
 1. Choose the lab environment you want to use for your tests. If you aren't using a lab environment, choose Local.  
   
-   ![On the Roles tab, choose the lab environment.](_img/collect-more-diagnostic-data-in-manual-tests/almt_ws94newsettingsrole.png)  
+   ![On the Roles tab, choose the lab environment.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws94newsettingsrole.png)  
   
    Each test settings file matches one set of machine roles.  
   
 1. For each machine role, choose the data you want to collect from that machine.  
   
-   ![Choose diagnostics for each machine role.](_img/collect-more-diagnostic-data-in-manual-tests/almt_ws95newsettingsdda.png)  
+   ![Choose diagnostics for each machine role.](media/collect-more-diagnostic-data-in-manual-tests/almt_ws95newsettingsdda.png)  
   
    The Local role is the client machine on which you'll perform the tests.  
   
@@ -80,7 +80,7 @@ You need test settings only if you want to collect more data than the default. T
 
 On the Data and Diagnostics page you can add and configure diagnostic adapters to collect data for each machine role in your lab environment. In most cases the diagnostic data is included with the test results.  
   
-![Test setting Data and Diagnostic page](_img/collect-more-diagnostic-data-in-manual-tests/mtr_danddpage.png)  
+![Test setting Data and Diagnostic page](media/collect-more-diagnostic-data-in-manual-tests/mtr_danddpage.png)  
   
 |Diagnostic data adapter|Configuration|  
 |-----------------------------|-------------------|  
@@ -92,4 +92,4 @@ On the Data and Diagnostics page you can add and configure diagnostic adapters t
 |**Test impact**: Enables the **Recommended Tests** feature in Testing Center, Track. This determines which tests are affected by the changes since a previous build, based on code coverage.|If you are testing an ASP.NET application:<br /><br /> 1. On the role where the IIS server will run, enable **Test Impact** and then choose **Configure**, **Advanced**, **ASP.NET**.<br />2.  In the web client role, enable **ASP.NET Client Proxy for IntelliTrace and Test Impact**<br /><br /> Restart your server application after enabling this option.|  
 |**Video Recorder** records the desktop in real time while you work.|To record audio, choose **Configure**.|
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

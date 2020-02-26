@@ -16,7 +16,7 @@ ms.date: 10/15/2019
 
 # Delete a project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
 
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify the navigation to projects that are only in use.
 
@@ -31,17 +31,17 @@ In this article, learn how to delete a project from Azure DevOps. Deleting a pro
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Projects**, and then check one or more projects to delete. Select **Delete**. 
 
-   :::image type="content" source="_img/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
+   :::image type="content" source="media/delete-project/delete-multiple-projects.png" alt-text="In Organization settings, select Projects, check each project, delete":::
 
 4. Confirm deletion by entering the project name, and then select **Delete** in the popup screen.
 
-    ![popup confirmation delete project screen](_img/delete-project/confirm-delete-project.png)
+    ![popup confirmation delete project screen](media/delete-project/confirm-delete-project.png)
 
 Your project is deleted and can be restored up to 28 days afterward.
 
@@ -52,13 +52,13 @@ Your project is deleted and can be restored up to 28 days afterward.
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
 
-[!INCLUDE [temp](../../_shared/open-admin-organization-settings.md)]
+[!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
 
 ## Delete a project from TFS
 
 Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
-1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator-tfs):
+1. If you're not a member of one or more of the following administrator groups, [get permissions now](/azure/devops/server/admin/add-administrator):
 
     - Team Foundation Administrators group (required).
 
@@ -68,11 +68,11 @@ Using the administration console, you can delete a project from a project collec
 
 2. Open the administration console for TFS and delete the project from its project collection.
 
-    ![project collection delete button](_img/delete-project/ic686856.png)
+    ![project collection delete button](media/delete-project/ic686856.png)
 
 3. Choose whether to delete external data associated with the project and then initiate the delete action.
 
-    ![delete projects dialog](_img/delete-project/ic687180.png)
+    ![delete projects dialog](media/delete-project/ic687180.png)
 
 4. (Optional) To review the status of the delete action, open the **Status** tab.
 
@@ -87,7 +87,7 @@ Using the administration console, you can delete a project from a project collec
 
 If your on-premises project used reporting, and you didn't choose to delete external artifacts, you can delete the reports using SQL Server Report Manager. From the project collection page, delete the folder that corresponds to the deleted project.
 
-![context menu with delete command](_img/delete-project/ic686857.png)
+![context menu with delete command](media/delete-project/ic686857.png)
 
 ::: moniker-end
 
@@ -148,7 +148,7 @@ az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
 ::: moniker-end
 
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 
