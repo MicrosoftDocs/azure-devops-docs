@@ -141,7 +141,7 @@ User accounts that you add must conform to the following restrictions.
 
 Groups enable you to apply certain rights or permissions to a group of users.
 
-On-premises Azure DevOps groups can consist of Active Directory group accounts, Azure DevOps security groups , Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups](../../organizations/security/add-manage-security-groups.md).  
+On-premises Azure DevOps groups can consist of Active Directory group accounts, Azure DevOps security groups , Windows user accounts, Windows group accounts, or any mixture of these types. See [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
 
 Groups that you add must conform to the following restrictions.  
 
