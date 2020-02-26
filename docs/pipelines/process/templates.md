@@ -212,25 +212,45 @@ jobs:
 Stages can also be reused with templates.
 
 ```yaml
-# File: templates/stages.yml
+# File: templates/stages1.yml
 stages:
-- stage: Stage1
+- stage: Angular
   jobs:
-  - job: Build
+  - job: angularinstall
     steps:
-    - script: npm install
+    - script: npm install angular
+```
 
-  - job: Test
+```yaml
+# File: templates/stages2.yml
+stages:
+- stage: Print
+  jobs:
+  - job: printhello
     steps:
-    - script: npm test
+      - script: 'echo Hello world'
 ```
 
 ```yaml
 # File: azure-pipelines.yml
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
 
 stages:
-- template: templates/stages.yml  # Template reference
+- stage: Install
+  jobs: 
+    - job: npminstall
+      steps:
+      - task: Npm@1
+        inputs:
+          command: 'install'
+- template: templates/stages1.yml
+- template: templates/stages2.yml
 ```
+
 
 ### Job, stage, and step templates with parameters
 
