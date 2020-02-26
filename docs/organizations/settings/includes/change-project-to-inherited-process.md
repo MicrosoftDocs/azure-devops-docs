@@ -11,6 +11,31 @@ After you've verified your customizations, you can now apply the process to your
 > [!TIP]    
 > As you customize a WIT, all projects that reference the inherited process that you're customizing automatically updates to reflect the custom WITs you've added. To view your customizations, refresh your web browser.
 
+::: moniker range="azure-devops"
+
+1. For the process currently used by the project, choose the number of projects. 
+
+	Here we open the menu for the Agile default process. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Agile process, Choose number of team projects](/azure/devops/organizations/settings/work/media/process/choose-process-team-projects.png) 
+
+1. Open the &hellip; context menu for the project you want to change,  and choose the **Change process** option. 
+
+	Here we open the menu for the MyFirstProject1. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Project, Change process](/azure/devops/organizations/settings/work/media/process/choose-change-process.png) 
+
+1. From the Change the project process dialog, choose the process from the menu of options. And, then choose **Save**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Change process dialog](/azure/devops/organizations/settings/work/media/process/change-project-process-inherited-agile.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
 1. Open the &hellip; context menu for the process and choose the **Change team projects**&hellip; option. 
 
 	Here we open the menu for the MyAgile inherited process. 
@@ -26,4 +51,6 @@ After you've verified your customizations, you can now apply the process to your
 	> ![Change process to an inherited process dialog](/azure/devops/organizations/settings/work/media/process/customize-change-process-dialog.png) 
 
 1. After  you've confirmed that the projects you want to change are correct, choose **Ok**. 
+
+::: moniker-end
 
