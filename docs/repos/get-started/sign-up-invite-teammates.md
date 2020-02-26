@@ -14,16 +14,16 @@ monikerRange: 'azure-devops'
 
 # Sign up for free and invite others to collaborate on your project
 
-[!INCLUDE [acquisition-intro-devops](../../_shared/acquisition-intro-devops.md)]
+[!INCLUDE [acquisition-intro-devops](../../includes/acquisition-intro-devops.md)]
 
 <a name="MicrosoftAccount"></a>
 
-[!INCLUDE [sign-up-msft-account](../../_shared/sign-up-msft-account.md)]
+[!INCLUDE [sign-up-msft-account](../../includes/sign-up-msft-account.md)]
 
 <a name="GitHubAccount"></a>
 
-[!INCLUDE [sign-in-github-account](../../_shared/sign-in-github-account.md)]
+[!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 
 <a id="invite-others" />
 
-[!INCLUDE [invite-teammates](../../_shared/invite-teammates.md)]
+[!INCLUDE [invite-teammates](../../includes/invite-teammates.md)]

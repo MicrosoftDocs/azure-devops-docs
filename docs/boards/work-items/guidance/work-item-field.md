@@ -16,7 +16,7 @@ ms.date: 10/03/2019
 
 # Work item field index  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -244,7 +244,7 @@ Values in parenthesis indicate the following:
 <br/>
 
 
-####Notes: 
+#### Notes: 
 
 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 

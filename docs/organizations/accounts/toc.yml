@@ -1,106 +1,78 @@
-- name: Manage organizations
-  href: index.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
-- name: About managing organizations
-  href: organization-management.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json
+- name: About managing organizations 
+  href: organization-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Access with Azure AD
-  href: access-with-azure-ad.md
+  href: access-with-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Create your organization or project collection
-  href: create-organization.md
+  href: create-organization.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Concepts
   items:
   - name: Plan your org structure
-    href: ../../user-guide/plan-your-azure-devops-org-structure.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Azure Active Directory groups
+    href: access-with-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Project member resources
-    href: resources-granted-to-project-members.md
+    href: resources-granted-to-project-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Manage your organization
-    items:
-    - name: Change organization Owner
-      href: change-organization-ownership-vs.md
-    - name: Rename organization
-      href: rename-vsts-organization.md
-    - name: Delete organization
-      href: delete-your-organization.md
-    - name: Recover organization
-      href: recover-your-vsts-organization.md
-    - name: Change organization location
-      href: change-organization-location.md
-    - name: Add privacy policy URL
-      href: add-privacy-policy-url.md
-    - name: Change time zone
-      href: change-time-zone.md
   - name: Manage access
     items:
     - name: Add users to your organization
-      href: add-organization-users.md
+      href: add-organization-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Add members to a team or project
+      href: add-team-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Manage users
-      href: manage-users-table-view.md
+      href: manage-users-table-view.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Manage Conditional Access
-      href: manage-conditional-access.md
-    - name: Authenticate with PATs
-      href: use-personal-access-tokens-to-authenticate.md
-    - name: Revoke user PATs - for admins
-      href: admin-revoke-user-pats.md
+      href: manage-conditional-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Change app access policies
-      href: change-application-access-policies.md
+      href: change-application-access-policies.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Remove users from organization
       displayname: delete
-      href: delete-organization-users.md
+      href: delete-organization-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Add external users
-      href: add-external-user.md
-    - name: Access with Azure AD
-      items:
-      - name: Connect organization to Azure AD
-        href: connect-organization-to-azure-ad.md
-      - name: Change Azure AD connection
-        href: change-azure-ad-connection.md
-      - name: Disconnect from Azure AD
-        href: disconnect-organization-from-azure-ad.md
-      - name: Manage groups
-        href: manage-azure-active-directory-groups-vsts.md
-      - name: Add users to Azure AD
-        href: add-users-to-azure-ad.md
-      - name: Delete users connected to Azure AD
-        href: delete-users-from-services-aad.md
-      - name: Restrict organization creation
-        href: azure-ad-tenant-policy-restrict-org-creation.md
-      - name: FAQ 
-        href: faq-azure-access.md#faq-connect    
-  - name: Manage group-based licensing 
+      href: add-external-user.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Disable Request Access policy
+      href: disable-request-access-policy.md
+  - name: Manage access with Azure AD
     items:
-    - name: Assign access levels and extensions
-      href: assign-access-levels-and-extensions-by-group-membership.md
-    - name: Remove direct assignments
-      href: remove-direct-assignments.md
-  - name: Add and manage banners
-    href: ../settings/manage-banners.md  
+    - name: Connect organization to Azure AD
+      href: connect-organization-to-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Manage groups
+      href: manage-azure-active-directory-groups.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Add users to Azure AD
+      href: add-users-to-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Change Azure AD connection
+      href: change-azure-ad-connection.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Disconnect from Azure AD
+      href: disconnect-organization-from-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Delete users connected to Azure AD
+      href: delete-users-from-services-aad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Restrict organization creation
+      href: azure-ad-tenant-policy-restrict-org-creation.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Resolve orphaned organization
+      href: /azure/devops/organizations/accounts/resolve-orphaned-organization?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: FAQ 
+      href: faq-azure-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json#faq-connect
+  - name: Manage access with group rules 
+    href: assign-access-levels-and-extensions-by-group-membership.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Create organization
-    href: faq-create-organization.md
   - name: Add and delete organization users
-    href: faq-add-delete-users.md
+    href: faq-add-delete-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add team members
-    href: faq-add-team-members.md
-  - name: Access with Azure AD
-    href: faq-azure-access.md
-  - name: Change app access
-    href: faq-change-app-access.md
+    href: faq-add-team-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add administrators
-    href: faq-add-administrators.md
-  - name: Change organization Ownership
-    href: faq-change-organization-ownership.md
-  - name: Delete and restore organization
-    href: faq-delete-restore-organization.md
-  - name: Set up Visual Studio
-    href: faq-set-up-vs.md
-  - name: Manage group-based licensing
-    href: faq-manage-group-based-licensing.md
+    href: faq-add-administrators.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Leave organization
+    href: faq-leave-organization.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Access with Azure AD
-    href: faq-azure-access.md
-
-
-
- 
+    href: faq-azure-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Change app access
+    href: faq-change-app-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Set up Visual Studio
+    href: faq-set-up-vs.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Manage group-based licensing
+    href: faq-manage-group-based-licensing.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Access with Azure AD
+    href: faq-azure-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 

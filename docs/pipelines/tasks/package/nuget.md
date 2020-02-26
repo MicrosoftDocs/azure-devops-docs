@@ -17,13 +17,13 @@ monikerRange: '>= tfs-2018'
 
 **Version 2.**
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetCommandV2.md)]
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `basePath`<br/>Base path | The base path of the files defined in the nuspec file. |
 | `verbosityPack`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
 | `arguments`<br/>Command and arguments | The command and arguments which will be passed to NuGet.exe for execution. If NuGet 3.5 or later is used, authenticated commands like list, restore, and publish against any feed in this organization/collection that the Project Collection Build Service has access to will be automatically authenticated. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ::: moniker range="> tfs-2018"
 
@@ -101,12 +101,33 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
 
 ```YAML
-# Restore project
+# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    feedsToUse: Select
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
     restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from an organization scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-organization-scoped-feed'
+    restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from feed(s) set in nuget.config
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
 ```
 
 ### Package
@@ -139,7 +160,7 @@ Push/Publish a package to a feed defined in your NuGet.config.
     nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
 ```
 
-Push/Publish a package to a feed you define in the task
+Push/Publish a package to a feed in the same organization you define in the task
 
 ```YAML
 # Push a project
@@ -147,6 +168,7 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
     publishVstsFeed: 'myTestFeed'
 ```
 
@@ -169,15 +191,15 @@ These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipel
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/nuget-step-qa.md)]
+[!INCLUDE [temp](../includes/nuget-step-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../includes/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

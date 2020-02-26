@@ -8,16 +8,16 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 10/12/2017
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Artifacts in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
@@ -53,7 +53,7 @@ YAML is not supported in TFS.
 
 
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -96,7 +96,7 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 You can create multiple artifact items. For example:
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -112,7 +112,7 @@ You can create multiple artifact items. For example:
 
 * Artifact publish location: Azure Pipelines/TFS (**TFS 2018 RTM and older**: Artifact type: Server)
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -130,7 +130,7 @@ You can create multiple artifact items. For example:
 
 The completed build delivers two sets of artifacts.
 
-![Artifacts tab of a build with two artifacts](_img/build-with-two-artifacts.png)
+![Artifacts tab of a build with two artifacts](media/build-with-two-artifacts.png)
 
 > You would probably never need to drop two copies of the same files. The point of this example is to show how you can drop multiple sets of artifacts that can be independently organized, explored, downloaded, and used by your deployment pipeline.
 
@@ -160,7 +160,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/_img/copy-files.png) **Utility: Copy Files**
+![icon](../tasks/utility/media/copy-files.png) **Utility: Copy Files**
 
 * Source folder:
 
@@ -180,7 +180,7 @@ YAML is not supported in TFS.
    $(Build.ArtifactStagingDirectory)
    ```
 
-![icon](../tasks/utility/_img/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
+![icon](../tasks/utility/media/publish-build-artifacts.png) **Utility: Publish Build Artifacts**
 
 * Path to publish:
 
@@ -231,7 +231,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/_img/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
+![icon](../tasks/utility/media/downloadbuildartifacts.png) **Utility: Download Build Artifacts**
 
 * Download artifacts produced by: Current build
 
@@ -268,9 +268,9 @@ YAML is not supported in TFS.
 
 Use these tasks to publish artifacts:
 
-* ![icon](../tasks/utility/_img/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
-* ![icon](../tasks/utility/_img/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
-* ![icon](../tasks/utility/_img/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
+* ![icon](../tasks/utility/media/copy-files.png) [Utility: Copy Files](../tasks/utility/copy-files.md) By copying files to `$(Build.ArtifactStagingDirectory)`, you can publish multiple files of different types from different places specified by your [matching patterns](../tasks/file-matching-patterns.md).
+* ![icon](../tasks/utility/media/delete-files.png) [Utility: Delete Files](../tasks/utility/delete-files.md) You can prune unnecessary files that you copied to the staging directory.
+* ![icon](../tasks/utility/media/publish-build-artifacts.png) [Utility: Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md)
 
 ## Explore, download, and deploy your artifacts
 
@@ -278,7 +278,7 @@ Use these tasks to publish artifacts:
 
 When the build is done, if you watched it run, select the **Summary** tab and see your artifact in the **Build artifacts published** section.
 
-![Artifacts tab of a build with one artifact](_img/build-artifact-tab-current.png)
+![Artifacts tab of a build with one artifact](media/build-artifact-tab-current.png)
 
 ::: moniker-end
 
@@ -286,7 +286,7 @@ When the build is done, if you watched it run, select the **Summary** tab and se
 
 When the build is done, if you watched it run, select the name of the completed build and then select the **Artifacts** tab to see your artifact.
 
-![Artifacts tab of a build with one artifact](_img/build-artifact-tab.png)
+![Artifacts tab of a build with one artifact](media/build-artifact-tab.png)
 
 ::: moniker-end
 

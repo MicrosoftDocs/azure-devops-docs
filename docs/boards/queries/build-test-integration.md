@@ -16,7 +16,7 @@ ms.date: 02/06/2019
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  
@@ -97,7 +97,7 @@ Most build and test integration fields have a data type of String, PlainText, or
 
 Open a new query, set the query type to Work items and direct links. Filter for bugs in the top-level and add the filter for Test Cases in the linked work items filter. 
 
-<img src="_img/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
+<img src="media/query-build-integration-bugs-linked-test-cases.png" alt="List bugs and the test cases that test them" />
 
 > [!NOTE]    
 >You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the **Test>Test Plans** page](../../test/create-a-test-plan.md). 

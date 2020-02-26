@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage your release
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Improve the process of managing the release of your app. Deploy your app to a specific 
 environment for each separate stage.
@@ -51,7 +51,7 @@ Manage the steps in the process with approvals for each step.
 
 ## Set up and start a release
 
-![Set up stages, servers and environments; create release path and template; start release](_img/manage-release-01.png) 
+![Set up stages, servers and environments; create release path and template; start release](media/manage-release-01.png) 
 
 <a name="SetupBackend"></a>
 ### Set up Release Management
@@ -85,12 +85,12 @@ Start the Release Management Client and connect to your Release Management URL, 
 Azure Pipelines URL or an on-premises server URL.
 If you are not prompted automatically, go to **Administration**, **Settings**.
 
-![Configure service URL](_img/manage-release-02.png) 
+![Configure service URL](media/manage-release-02.png) 
 
 View the guide and checklist that is provided to help you to set up your release pipeline.
 First **[add users, set up groups, and control access](add-users-and-groups.md)**.  
 
-![Get started screen to help you with your release pipeline steps](_img/manage-release-03.png) 
+![Get started screen to help you with your release pipeline steps](media/manage-release-03.png) 
 
 The following steps guide you through the essential parts of the release pipeline.
 
@@ -99,11 +99,11 @@ The following steps guide you through the essential parts of the release pipelin
 
 From the **Administration** tab, add a stage type for each step you need in the release pipeline of your app.
 
-![Add a stage type](_img/manage-release-04.png) 
+![Add a stage type](media/manage-release-04.png) 
 
 View the stage types that you have added.
 
-![View of stage types](_img/manage-release-05.png)
+![View of stage types](media/manage-release-05.png)
 
 <a name="SetupServEnv"></a>
 ### Set up servers and environments
@@ -114,7 +114,7 @@ that contain these servers.
 With Visual Studio 2015, you can use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
 Windows PowerShell Desired State Configuration 
-([DSC](https://technet.microsoft.com/library/dn249912.aspx)), 
+([DSC](/powershell/scripting/dsc/configurations/configurations)), 
 or [Chef](https://www.getchef.com/) to deploy to a server without a deployment agent.
 If you already deploy using any of these tools, 
 you can use the same scripts with Release Management. Or, you can use deployment agents 
@@ -153,15 +153,15 @@ You have the following options for creating release templates:
 
 Start a new release.
 
-![From the Releases tab, select the Releases page and choose the New button](_img/manage-release-06.png)
+![From the Releases tab, select the Releases page and choose the New button](media/manage-release-06.png)
 
 Name the release and choose the release template that you want to use.
 
-![Start a release](_img/manage-release-07.png)
+![Start a release](media/manage-release-07.png)
 
 The release pipeline begins.
 
-![Release in progress](_img/manage-release-08.png)
+![Release in progress](media/manage-release-08.png)
 
 You can also start a release automatically from a build. Go 
 **[here](trigger-a-release.md)** to find out how.
@@ -174,7 +174,7 @@ You can find any requests that are awaiting your approval.
 When you are ready, approve the action for the stage. The release then continues to the 
 next step or the next stage.
 
-![From the Releases tab, choose My Approval Requests](_img/manage-release-09.png)
+![From the Releases tab, choose My Approval Requests](media/manage-release-09.png)
 
 Manual steps must be approved before automated steps in a stage can continue.
 
@@ -190,11 +190,11 @@ To access this client, use the following URL:
 
 **A**: Yes, you can create components with separate deployment information.
 
-![Configure Apps tab, Components](_img/manage-release-10.png)
+![Configure Apps tab, Components](media/manage-release-10.png)
 
 Add the component to the release template. Now you can add this component to any stage that needs it.
 
-![Configure Apps tab, Release Templates, right-click Components and choose Add](_img/manage-release-11.png)
+![Configure Apps tab, Release Templates, right-click Components and choose Add](media/manage-release-11.png)
 
 ### Q: What release actions can I add to the deployment sequence?
 
@@ -206,7 +206,7 @@ Add the component to the release template. Now you can add this component to any
 **A**: Use the shortcut menu of a sequence to copy it. Select the sequence where you want to 
 paste it, and use its shortcut menu to **Paste Deployment Sequence**.  
 
-![Release template with deployment sequence selected](_img/manage-release-12.png)
+![Release template with deployment sequence selected](media/manage-release-12.png)
 
 <a name="ServerTags"></a>
 ### Q: How can tags for servers help me set up my environments for each stage?
@@ -216,14 +216,14 @@ For example, if you have multiple web servers in your environment then you can t
 If only some of the web servers need a specific service configured on that machine then you can 
 add a tag **ServiceX** for that.
 
-![Enter tags as a comma-separated list in the tags field for each server in your environment](_img/manage-release-13.png)
+![Enter tags as a comma-separated list in the tags field for each server in your environment](media/manage-release-13.png)
 
 Next set up the actions for each tag. After you drag the tag to the deployment sequence, drag 
 each required action into the tag and configure the action.
 When a stage is deployed, these actions are performed on any server with this tag. So you only 
 have to create the set of actions once for multiple servers.
 
-![Select tag and drag to the deployment sequence; drag actions to the sequence for this tag](_img/manage-release-14.png)
+![Select tag and drag to the deployment sequence; drag actions to the sequence for this tag](media/manage-release-14.png)
 
 You can create multiple sets of actions for each tag if you need to add another action for a 
 specific server between these sets.
@@ -232,7 +232,7 @@ You can **[copy the actions](#CopySequence)** for a tag between stages and relea
 When you copy a sequence for a tag, 
 you can remap these tag sequences to a different tag if you want.
 
-![Right-click the stage tab; select Copy Deployment sequence; right-click the destination stage and choose Paste Deployment Sequence](_img/manage-release-15.png)
+![Right-click the stage tab; select Copy Deployment sequence; right-click the destination stage and choose Paste Deployment Sequence](media/manage-release-15.png)
 
 ### Q: Can I find out which user stories were completed or bugs fixed in a specific release?
 
@@ -240,9 +240,9 @@ you can remap these tag sequences to a different tag if you want.
 **[vNext release path](release-without-agents.md)**, 
 you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
-**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
+**[here](https://devblogs.microsoft.com/devops/work-items-tracking-using-release-management/)**.
 
-![Configure Apps tab; vNext Release Templates tab; Change Summary tab](_img/manage-release-16.png)
+![Configure Apps tab; vNext Release Templates tab; Change Summary tab](media/manage-release-16.png)
 
 You can also view the change summary using the Release Management web browser client.
 To access this client, use the following URL:
@@ -253,7 +253,7 @@ To access this client, use the following URL:
 
 **A**: Yes. You can edit settings based on your system requirements.
 
-![Administration System Settings page](_img/manage-release-17.png)
+![Administration System Settings page](media/manage-release-17.png)
 
 <a name="optout"></a>
 ### Q: Can I opt out of the Visual Studio Experience Improvement Program for Release Management?
@@ -268,7 +268,7 @@ Improvement Program**.
 **Using the Release Management Client**: From Administration, choose the **Settings** tab and from 
 the **Configure Services** dialog box opt out of the program.
 
-![Choose Edit on the Settings tab; uncheck Join the Visual Studio Experience program in the Configure Services dialog](_img/manage-release-18.png)
+![Choose Edit on the Settings tab; uncheck Join the Visual Studio Experience program in the Configure Services dialog](media/manage-release-18.png)
 
 ### Q: Are there any limitations to using Release Management in the cloud?
 
@@ -293,6 +293,6 @@ for hands-on labs to try Release Management and other devops products.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

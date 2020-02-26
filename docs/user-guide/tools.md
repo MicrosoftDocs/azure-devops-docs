@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2013'
 
 # Tools and clients that connect to Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In this article, learn about the tools and clients that connect to Azure DevOps.
 
@@ -69,7 +69,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |
 > |-------------|----------|
-> |<img src="../organizations/projects/_img/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/_img/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
+> |<img src="../organizations/projects/media/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/media/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
 
 ## Office integration tools
 
@@ -95,7 +95,7 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 
 > [!TIP]
 > Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
-> ![Check Azure DevOps Office Integration](_img/check-azure-devops-office-integration-code-tools.png)
+> ![Check Azure DevOps Office Integration](media/check-azure-devops-office-integration-code-tools.png)
 
 ::: moniker-end
 
@@ -141,7 +141,7 @@ The following clients support specific tasks, such as managing testing efforts, 
 
 ### Web portal
 
-The collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. For release notes, see [Azure DevOps Services Features Timeline](../extend/support/release-notes.md).
+The collaboration tools supported through the web portal are summarized under [Essential services](services.md). New features are deployed every three weeks for Azure DevOps Services, and quarterly for Azure DevOps Server. For release notes, see [Azure DevOps Services Features Timeline](/azure/devops/release-notes/features-timeline).
  
 You can use the following browsers to access the web portal:
 

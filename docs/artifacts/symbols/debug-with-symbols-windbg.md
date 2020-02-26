@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Debug with symbols in WinDbg
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+[!INCLUDE [](../includes/availability-symbols.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols). To use symbols in Visual Studio, see [this page](debug-with-symbols-visual-studio.md).
 

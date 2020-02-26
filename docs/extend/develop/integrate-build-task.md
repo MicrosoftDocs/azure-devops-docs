@@ -14,7 +14,7 @@ ms.date: 11/29/2018
 
 # Reference for integrating custom build tasks into extensions
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Custom tasks
 

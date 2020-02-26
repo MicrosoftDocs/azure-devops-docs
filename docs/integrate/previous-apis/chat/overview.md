@@ -22,7 +22,7 @@ ms.date: 08/04/2016
 
 You can create [team rooms](./rooms.md) where [users](./users.md) can post [messages](./messages.md) to one another.
 
-![Team room resources](./_img/team-room-resources.png)
+![Team room resources](./media/team-room-resources.png)
 
 * [Messages](./messages.md)
 * [Rooms](./rooms.md)

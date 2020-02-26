@@ -8,20 +8,20 @@ ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 11/13/2019
+ms.date: 02/12/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
 
 # Troubleshoot Build and Release
 
-[!INCLUDE [temp](_shared/version.md)]
+[!INCLUDE [temp](includes/version.md)]
 
 This topic provides general troubleshooting guidance. For specific troubleshooting about .NET Core, see [.NET Core troubleshooting](ecosystems/dotnet-core.md#troubleshooting).
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](_shared/concept-rename-note.md)]
+[!INCLUDE [temp](includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ### Overridden YAML trigger setting
 
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#overriding-yaml-triggers).
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#override-yaml-triggers).
 
 ### Using pull request triggers with Azure Repos
 
@@ -99,15 +99,15 @@ If you are currently running other pipelines, you may not have any remaining par
 
 To check your limits, navigate to **Project settings**, **Parallel jobs**.
 
-![Pipelines concurrent jobs](_img/troubleshooting/concurrent-pipeline-limits.png)
+![Pipelines concurrent jobs](media/troubleshooting/concurrent-pipeline-limits.png)
 
 You can view the count of in-progress jobs by selecting **View in-progress jobs**.
 
-![View in-progress jobs](_img/troubleshooting/view-in-progress-jobs.png)
+![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
 
 You can view all jobs, including queued jobs, by selecting **Agent pools** from the **Project settings**.
 
-![View queued jobs](_img/troubleshooting/agent-pools-jobs.png)
+![View queued jobs](media/troubleshooting/agent-pools-jobs.png)
 
 In this example, the concurrent job limit is one, with one job running and one queued up. When all agents are busy running jobs, as in this example, the following message is displayed when additional jobs are queued: `The agent request is not running because all potential agents are running other requests. Current position in queue: 1`. In this example the job is next in the queue so its position is one.
 
@@ -123,7 +123,7 @@ If you are currently running other pipelines, you may not have any remaining par
 
 If your pipeline has demands that don't meet the capabilities of any of your agents, your pipeline won't start. If only some of your agents have the desired capabilities and they are currently running other pipelines, your pipeline will be stalled until one of those agents becomes available.
 
-To check the capabilities and demands specified for your agents and pipelines, see [Capabilites](agents/agents.md#capabilities).
+To check the capabilities and demands specified for your agents and pipelines, see [Capabilities](agents/agents.md#capabilities).
 
 ::: moniker range="azure-devops"
 
@@ -174,7 +174,7 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Run pipeline** (or **Queue** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)) and selecting **Enable system diagnostics**, **Run**.
 
-  ![Enable system diagnostics](_img/troubleshooting/enable-system-diagnostics.png)
+  ![Enable system diagnostics](media/troubleshooting/enable-system-diagnostics.png)
 
 * To configure verbose logs for all runs, you can add a variable named `system.debug` and set its value to `true`. 
 
@@ -194,11 +194,11 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 To view individual logs for each step, navigate to the build results for the run, and select the job and step. 
 
-![Task log](_img/troubleshooting/job-task-logs.png)
+![Task log](media/troubleshooting/job-task-logs.png)
 
 To download all logs, navigate to the build results for the run, select **...**, and choose **Download logs** (or **Download all logs** if you don't have [Multi-stage pipelines experience turned on](../project/navigation/preview-features.md)).
 
-![Download logs](_img/troubleshooting/download-logs.png)
+![Download logs](media/troubleshooting/download-logs.png)
 
 ::: moniker-end
 
@@ -311,6 +311,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 ## Common issues and resolutions
 
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
+* [My pipeline is failing on a checkout step](#my-pipeline-is-failing-on-a-checkout-step)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
 * [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
 * [Process hang](#process-hang)
@@ -320,6 +321,7 @@ Use Charles Proxy (similar to Fiddler on Windows) to capture the HTTP trace of t
 * [Team Foundation Version Control (TFVC)](#team-foundation-version-control-tfvc)
 * [Job Time-Out](#job-time-out)
 * [Service Connection related issues](#service-connection-related-issues)
+* [Parallel jobs not running](#parallel-jobs-not-running)
 
 ### My pipeline is failing on a command-line step such as MSBUILD
 
@@ -334,6 +336,13 @@ For example, is the problem happening during the MSBuild part of your build pipe
 
 Keep in mind, some differences are in effect when executing a command on a local machine and when a build or release is running on an agent. If the agent is configured to run as a service on Linux, macOS, or Windows, then it is not running within an interactive logged-on session. Without an interactive logged-on session, UI interaction and other limitations exist.
 
+### My pipeline is failing on a checkout step
+
+If you are using a `checkout` step on an Azure Repos Git repository in your organization that is in a different project than your pipeline, ensure that the **Limit job authorization scope to current project** setting is disabled, or follow the steps in [Scoped build identities](build/options.md) to ensure that your pipeline has access to the repository.
+
+When your pipeline can't access the repository due to limited job authorization scope, you will receive the error `Git fetch failed with exit code 128` and your logs will contain an entry similar to `Remote: TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting.`
+
+If your pipeline is failing immediately with `Could not find a project that corresponds with the repository`, ensure that your project and repository name are correct in the `checkout` step or the repository resource declaration.
 
 ### File or folder in use errors
 
@@ -469,7 +478,7 @@ VS30063: You are not authorized to access http://<SERVER>:8080/tfs
 
 If the above error is received while configuring the agent, log on to your TFS machine. Start the Internet Information Services (IIS) manager. Make sure **Anonymous Authentication** is enabled.
 
-![iis tfs anonymous authentication enabled](_img/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
+![is TFS anonymous authentication enabled](media/troubleshooting/iis-tfs-anonymous-authentication-enabled.png)
 
 <!-- https://go.microsoft.com/fwlink/?linkid=846610 -->
 <h3 id="renew-lock">Agent lost communication</h3>
@@ -533,6 +542,57 @@ Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=
 ### Service Connection related issues
 
 To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+
+### Parallel jobs not running
+
+There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, your runs still sit in the queue and run one after the other. If your jobs aren't running, check the following items.
+
+* [You don't have enough concurrency](#you-dont-have-enough-concurrency)
+* [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
+* [All available agents are in use](#all-available-agents-are-in-use)
+
+The following scenarios won’t consume a parallel job:
+* If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
+* When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
+
+Learn more:
+[How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
+[Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline),
+[Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
+[Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
+
+#### You don't have enough concurrency
+ 
+To check how much concurrency you have:
+
+1. To check your limits, navigate to **Project settings**, **Parallel jobs**.
+
+    ![Concurrent pipeline limits](media/troubleshooting/concurrent-pipeline-limits.png)
+
+    You can also reach this page by navigating to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`, or choosing **manage parallel jobs** from the logs.
+
+    ![Manage parallel jobs](media/troubleshooting/manage-parallel-jobs.png)  
+        
+2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
+
+3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
+
+    ![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
+ 
+#### Your job may be waiting for approval
+ 
+Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](process/approvals.md).
+ 
+#### All available agents are in use 
+ 
+Jobs may wait if all your agents are currently busy. To check your agents:
+1. Navigate to `https://dev.azure.com/{org}/_settings/agentpools`
+2. Select the agent pool to check, in this example **FabrikamPool**, and choose **Agents**.
+
+    ![Agent status](media/troubleshooting/agents-online.png)
+
+    This page shows all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
+
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 

@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy a website or web app usin
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/IISWebAppDeploymentOnMachineGroupV0.md)]
+[!INCLUDE [temp](../includes/yaml/IISWebAppDeploymentOnMachineGroupV0.md)]
 
 ::: moniker-end
 

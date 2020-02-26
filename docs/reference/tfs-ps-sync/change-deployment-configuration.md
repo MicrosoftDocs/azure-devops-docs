@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Change your deployment configuration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> After you have configured Visual Studio Team Foundation Server (TFS) and Microsoft Project Server to support data synchronization, you might need to perform additional administrative tasks when you change your deployment. For example, you might need to remove, re-register, or re-map a component before or after you move or delete a project, a project collection, or an application-tier server. Before you change your deployment or perform maintenance operations, you should consider the impact that these operations have on the synchronization process.  
   
@@ -45,7 +45,7 @@ ms.date: 01/12/2017
   
 1.  Move or split the collection.  
 
-     For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
+     For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).  
   
 2.  Grant required permissions to the service account for the second instance of Team Foundation Server.  
   
@@ -70,7 +70,7 @@ ms.date: 01/12/2017
   
 2. Move or split the collection.  
 
-    For more information, see [Manage project collections](/azure/devops/server/admin/manage-team-project-collections).  
+    For more information, see [Manage project collections](/azure/devops/server/admin/manage-project-collections).  
   
 3. Assign all required permissions.  
   
@@ -119,7 +119,7 @@ ms.date: 01/12/2017
 ##  <a name="upgrading"></a> Upgrade from Project Server 2007 to Project Server 2010  
  If you have an instance of Project Web Access that is registered to TFS and the synchronization process is running for a collection, you must perform the following procedures before you upgrade the instance from Project Server 2007 to Project Server 2010:  
   
-1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=211859)  
+1.  Perform the steps on the following page of the Microsoft website: [Database-attach full upgrade to Project Server 2010](https://blogs.msdn.microsoft.com/chrisfie/2010/05/27/how-to-upgrade-from-project-server-2007-to-project-server-2010-in-10min/)  
   
 2.  To enable the synchronization after the upgrade, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   

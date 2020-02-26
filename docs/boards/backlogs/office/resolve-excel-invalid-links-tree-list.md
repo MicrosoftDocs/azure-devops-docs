@@ -13,7 +13,7 @@ ms.date: 02/22/2017
 ---
 # Resolve invalid links in an Excel tree list 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items if the title of a work item title is missing or occurs in the wrong title column.  
   
@@ -120,7 +120,7 @@ This message indicates that you can publish the changes that you made to the fie
 
 <a name="tf208104"></a>   
 ##  TF208104: Hierarchical link Relationship is locked  
- If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
+ If you publish a worksheet that contains work items that are synchronized with Project Server and whose hierarchical link relationships are locked (![Locked link icon](media/icon_lockedlink.png "Icon_lockedLink")), the following error message may appear:  
   
 >TF208104: You have modified one or more hierarchical link relationships that may have been locked by other processes, such as Project Server.
 >

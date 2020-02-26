@@ -1,5 +1,5 @@
-﻿---
-title: Learn about Power BI integration
+---
+title: Learn about Power BI integration and supported connection methods
 titleSuffix: Azure DevOps
 description: Describes the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
@@ -16,13 +16,13 @@ ms.date: 10/04/2019
 
 # About Power BI integration
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Azure DevOps, you can create [dashboards](../dashboards/dashboards.md) and [add widgets to them](../dashboards/add-widget-to-dashboard.md). Azure DevOps also provides several reports in the product itself. Both dashboards and in-line reports offer easy access to [Azure DevOps Analytics](what-is-analytics.md) to enable data-driven decisions. However, we acknowledge that customers often need more than what is provided in the product. 
 
 With Power BI, you can pull data from [Azure DevOps Analytics](what-is-analytics.md), generate reports, and customize them to meet your needs. [Power BI](https://powerbi.microsoft.com) is a suite of business analytics tools. Use it to do ad hoc analysis, produce beautiful reports, and publish for enterprise consumption.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## Prerequisites
@@ -84,14 +84,6 @@ You can pull data from Analytics into Power BI in one of three ways. It is impor
 
 ## Sample Reports
 
-### Sample reports using OData Queries
-
-To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
-
-For specific examples, see one of the following articles: 
-
-[!INCLUDE [temp](_shared/sample-fulllist.md)].
-
 ### Sample reports using Analytics View
 
 - [Active bugs report](active-bugs-sample-report.md)  
@@ -99,6 +91,17 @@ For specific examples, see one of the following articles:
 - [Add a last refresh date](add-last-refresh-time.md)   
 - [Filter on teams](create-team-filter.md)   
 - [Calculate time-in-state for an existing Analytics view](create-timeinstate-report.md)   
+
+### Sample reports using OData Queries
+
+To get started using OData queries in Power BI reports, see [Overview of sample reports using OData queries](sample-odata-overview.md)
+
+For specific examples, see one of the following articles: 
+
+| Azure Boards reports | Azure Test Plans reports |
+|----------------------|--------------------------| 
+| [!INCLUDE [temp](includes/sample-fulllist.md)] | [!INCLUDE [temp](includes/sample-full-list-test-plans.md)] | 
+
 
 
 ## Related articles

@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Process parameters
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
 > 
@@ -29,7 +29,7 @@ This means you can quickly edit these arguments without needing to click through
 Templates come with a set of predefined process parameters.
 ::: moniker range="<= tfs-2018"
 
-![Schematic showing tasks](_img/2017-user-experience/process-parameters-view-1.png)
+![Schematic showing tasks](media/2017-user-experience/process-parameters-view-1.png)
 ::: moniker-end
 
 > [!NOTE]
@@ -42,9 +42,9 @@ To link additional arguments across all tasks to new or existing process paramet
 ::: moniker range="<= tfs-2018"
 You can link additional arguments across all tasks to new or existing process parameters.
 
-![Schematic showing tasks](_img/2017-user-experience/tasks-linking.png)
+![Schematic showing tasks](media/2017-user-experience/tasks-linking.png)
 
-![Schematic showing tasks](_img/2017-user-experience/process-parameters-view-2.png)
+![Schematic showing tasks](media/2017-user-experience/process-parameters-view-2.png)
 ::: moniker-end
 
 ::: moniker range="> tfs-2018"
@@ -53,7 +53,7 @@ Select **Unlink** if you need to disconnect an argument from a process parameter
 ::: moniker range="<= tfs-2018"
 You can also unlink arguments from process parameters.
 
-![Schematic showing tasks](_img/2017-user-experience/tasks-unlinking.png)
+![Schematic showing tasks](media/2017-user-experience/tasks-unlinking.png)
 ::: moniker-end
 
 Process parameters differ from variables in the kind of input supported by them. Variables only take in string inputs while process parameters in addition to string inputs support additional data types like check boxes and drop-down list boxes.

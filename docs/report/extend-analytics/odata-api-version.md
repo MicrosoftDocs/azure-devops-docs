@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 # OData API versioning
 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 As Analytics grows we are dedicated to providing consistency and reliability to our users. Therefore Analytics for Azure DevOps provides a versioned OData API that will remain compatible with clients designed for those versions. Each version may be enhanced with additional functionality and non-breaking changes. Incompatible or breaking changes will be rolled into future versions of the API.
 
@@ -35,12 +35,12 @@ The API version follows the _odata element in the request path and has value as 
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/$metadata
+> https://{servername}:{port}/tfs/{CollectionName}/{ProjectName}/_odata/{version}/$metadata
 > ```
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## Preview versions

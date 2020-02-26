@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Run Git commands in a script
 
-[!INCLUDE [temp](../_shared/version.md)]
+[!INCLUDE [temp](../includes/version.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 For some workflows you need your build pipeline to run Git commands. For example, after a CI build on a feature branch is done, the team might want to merge the branch to master.
@@ -27,6 +27,7 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 
 
 <a name="enable"></a>
+
 ## Enable scripts to run Git commands
 
 > [!NOTE]
@@ -35,6 +36,8 @@ Git is available on [Microsoft-hosted agents](../agents/hosted.md) and on [on-pr
 > git config --global user.email "you@example.com"
 > git config --global user.name "Your Name"
 > ```
+
+<a name="version-control"></a>
 
 ### Grant version control permissions to the build service
 
@@ -50,7 +53,7 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 
 <p>
 
-![manage project](_img/manage-project.png)
+![manage project](media/manage-project.png)
 
 </p>
 
@@ -58,13 +61,13 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 
 <p>
 
-![control panel top to project](_img/control-panel-top-to-team-project.png)
+![control panel top to project](media/control-panel-top-to-team-project.png)
 
 </p>
 
 <p>
 
-![control panel project version control tab](_img/control-panel-team-project-version-control-tab.png)
+![control panel project version control tab](media/control-panel-team-project-version-control-tab.png)
 
 </p>
 
@@ -72,14 +75,14 @@ Go to the <a data-toggle="collapse" href="#expando-version-control-permissions">
 
 On the **Version Control** tab, select the repository in which you want to run Git commands, and then select **Project Collection Build Service**. By default, this identity can read from the repo but cannot push any changes back to it.
 
-![permissions](_img/control-panel-version-control-project-collection-build-service.png)
+![permissions](media/control-panel-version-control-project-collection-build-service.png)
 
 Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Branch creation:**  Allow
+* **Create branch:**  Allow
 * **Contribute:**  Allow
-* **Read:**  Inherited allow
-* **Tag creation:**  Inherited allow
+* **Read:**  Allow
+* **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
 
@@ -179,7 +182,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/_img/command-line.png)<br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+| ![](../tasks/utility/media/command-line.png)<br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to master
 
@@ -219,7 +222,7 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/_img/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
+| ![](../tasks/utility/media/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
 ## Q & A
 
@@ -275,10 +278,10 @@ When you set ```system.prefergit``` to ```true```, the build pipeline uses comma
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Quickstart: Install extensions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Add new features and capabilities to your organization by installing extensions.
 
@@ -36,17 +36,17 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select the shopping bag icon, and then select **Browse Marketplace**.
 
-   ![Select the shopping bag icon to browse the Marketplace](_img/shopping-bag-icon-browse-marketplace.png)
+   ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 
 3.	Find the extension that you want to install.
 
 4.	Select **Get** or **Get it free**.
 
-    ![Get extension](_img/get-vsts-extensions/get-extension.png)
+    ![Get extension](media/get-vsts-extensions/get-extension.png)
 
 5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
-    ![Select organization for this extension](_img/get-vsts-extensions/select-install-extension.png)
+    ![Select organization for this extension](media/get-vsts-extensions/select-install-extension.png)
 
    * [Why don't I see any organizations?](./faq-extensions.md#no-organizations) 
 
@@ -54,7 +54,7 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
 Your extension is now installed! You can now go to your organization to use your extension. Also, tell your team about this extension, so they can start using its capabilities.
 
-![Extension installed](_img/get-vsts-extensions/you-are-all-set.png)
+![Extension installed](media/get-vsts-extensions/you-are-all-set.png)
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -65,15 +65,15 @@ You can install an extension with the [az devops extension install](/cli/azure/e
 If necessary, first search for an extension with the [az devops extension search](overview.md#search-extension) command.
 
 ```CLI 
-az devops extension install --extension-name
-                            --publisher-name
+az devops extension install --extension-id
+                            --publisher-id
                             [--org]
 ``` 
 
 #### Parameters 
 
-- **extension-name**: The name of the extension to install.
-- **publisher-name**: The name of the extension publisher.
+- **extension-id**: The name of the extension to install.
+- **publisher-id**: The name of the extension publisher.
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
 
 #### Example 
@@ -81,7 +81,7 @@ az devops extension install --extension-name
 The following command installs the **Timetracker** extension and shows the result in YAML format.  
 
 ```CLI
-az devops extension install --extension-name Timetracker --publisher-name 7pace --output yaml
+az devops extension install --extension-id Timetracker --publisher-id 7pace --output yaml
 
 baseUri: null
 constraints: null
@@ -113,7 +113,7 @@ version: 5.0.1.34507
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
 

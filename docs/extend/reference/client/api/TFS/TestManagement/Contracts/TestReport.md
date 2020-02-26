@@ -23,7 +23,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `build`: [BuildReference](../../../TFS/TestManagement/Contracts/BuildReference.md). 
 
-* `teamProject`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `teamProject`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `testFailures`: [TestFailuresAnalysis](../../../TFS/TestManagement/Contracts/TestFailuresAnalysis.md). 
 
