@@ -31,40 +31,46 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ## Product planning 
 
-::: moniker range="tfs-2017"
-- [Delivery Plans](../plans/review-team-plans.md)
-- [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-::: moniker-end
-
-::: moniker range="tfs-2018"
-- [Delivery Plans](../plans/review-team-plans.md)
-- [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
-- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-
-::: moniker-end
-
-
-
-::: moniker range="azure-devops-2019"
-
-- [Delivery Plans](../plans/review-team-plans.md)
-- [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) 
-- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
-- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
-::: moniker-end
-
 
 ::: moniker range="azure-devops"
 
 - [Delivery Plans](../plans/review-team-plans.md)
-- [Feature timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Feature Timeline](feature-timeline.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Dependency Tracker](dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 - [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
 - [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
 - [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+
 ::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline](feature-timeline.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
+- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel)
+- [Team Calendar](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-calendar)
+::: moniker-end
+
+::: moniker range="tfs-2018"
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline](feature-timeline.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline](feature-timeline.md)
+- [Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+::: moniker-end
+
+
+
 
 
 
@@ -117,5 +123,6 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ## Command line interface
 
 - [Azure DevOps CLI](../../cli/index.md)
+- [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
 
 ::: moniker-end

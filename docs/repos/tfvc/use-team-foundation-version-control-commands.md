@@ -28,8 +28,9 @@ To launch the Visual Studio command prompt, from Windows **Start**, choose **Vis
 
 In most cases, you run the version control command in the context of a directory that is mapped in the workspace. For example, `$/SiteApp/Main/` is mapped to `c:\\code\\SiteApp\\Main\\`. To get the latest version of all items in the workspace:
 
-    c:\code\SiteApp\Main\SolutionA>tf get
-
+```
+c:\code\SiteApp\Main\SolutionA>tf get
+```
 
 ### Set up your dev machine and manage workspaces
 
@@ -204,7 +205,9 @@ Some commands support shortcuts. For example, you can call the [Delete command](
 
 For example, the [Checkout command](checkout-or-edit-command.md):
 
-    tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
+```
+tf checkout [/lock:( none|checkin|checkout)] [/recursive] itemspec [/login: username,[ password]]
+```
 
 Let's review the arguments from this example:
 
@@ -238,15 +241,19 @@ A server itemspec argument specifies a path to items on your Team Foundation Ser
 
 You typically use server itemspec arguments when you need run a command on items not on the client machine. For example, you are working on a dev machine and need to get some revision history data about some items that are in a project collection you don't work in:
 
-    c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
-    $/SiteApp/Main/SolutionA/Project1/* /recursive  
-    /noprompt 
+```
+c:\>tf history /collection:http://fabrikam-3:8080/tfs/DefaultCollection
+$/SiteApp/Main/SolutionA/Project1/* /recursive  
+/noprompt 
+```
 
 #### Multiple itemspec arguments
 
 For some commands, you can specify multiple *itemspec* arguments. For example:
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 Checks out program.cs and program2.c.
 
@@ -260,7 +267,9 @@ You use a *versionspec* (version specification) to specify the version of items 
 
 When you use the [History command](history-command.md) or the [Difference Command](difference-command.md), you can specify a range of versions by separating the versions with a tilde (~). For example:
 
-    c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
+c:\code\SiteApp\Main\SolutionA>tf history /noprompt * /recursive /v:D4/12/2012~D4/24/2012
+```
 
 Use the following syntax to specify a *versionspec*.
 
@@ -412,11 +421,15 @@ Use the **/login** option to specify the Team Foundation Server user account to 
 
 For example, Julia is working with Peter at his dev machine. She uses the [Lock command](lock-command.md) to unlock a file that she locked earlier:
 
-    c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI,JuliaPassword
+```
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI,JuliaPassword
+```
 
 If she wants to avoid having her password appear in the command prompt, she can enter the command without the password:
 
-    c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI
+```
+c:\code\SiteApp\Main> tf lock /lock:none program.cs /login:JuliaI
+```
 
 After she enters this command, the system then prompts her to type her password in a dialog box that masks her input.
 
@@ -437,7 +450,9 @@ After she enters this command, the system then prompts her to type her password 
 
 Use the **/lock** option to apply or remove a lock at the same time you run another command such as [Add](add-command.md) or [Edit](checkout-or-edit-command.md).
 
-    /lock:(none|checkin|checkout)
+```
+/lock:(none|checkin|checkout)
+```
 
 -   **None**: No lock is placed on an item. If a lock is already in place, it is removed.
 
@@ -569,6 +584,8 @@ Version control commands return the following exit codes:
 
 For example:
 
-    c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
+c:\code\SiteApp\Main\SolutionA\Project1\>tf checkout program1.cs program2.c
+```
 
 If one of the files you are trying to check out does not exist on the server, the command returns **1** to indicate partial success.

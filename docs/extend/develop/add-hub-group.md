@@ -14,12 +14,12 @@ ms.date: 08/04/2016
 
 # Add a hub group
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 We'll create a hub group and add a hub to it.
 If you haven't already, [create the Hello hub](./add-hub.md) first, andmthen follow these steps to create the hub group.
 
-[!INCLUDE [Hub_group](../_shared/procedures/create-hub-group.md)]
+[!INCLUDE [Hub_group](../includes/procedures/create-hub-group.md)]
 
 Here's the complete extension manifest with Hello in the samples hub group.
 

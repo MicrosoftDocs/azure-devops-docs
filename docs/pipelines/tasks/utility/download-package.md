@@ -24,7 +24,7 @@ Requires the Package Management extension.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadPackageV1.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadPackageV1.md)]
 
 ::: moniker-end
 

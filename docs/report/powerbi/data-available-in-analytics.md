@@ -15,7 +15,7 @@ ms.date: 10/24/2019
 
 # Data available from Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and in preview for Azure DevOps Server 2019. 
 
@@ -79,7 +79,7 @@ Currently, you can access the following data from Analytics. This information wa
 > [!NOTE]   
 > Analytics doesn't support reporting on plain text and HTML fields at this time. 
 
-As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://blogs.msdn.microsoft.com/devops/tag/reporting/).
+As more data types come online, we will update this page. Look for announcements on the [Microsoft DevOps Blog](https://devblogs.microsoft.com/devops/tag/reporting/).
 
 
 ## Try this next

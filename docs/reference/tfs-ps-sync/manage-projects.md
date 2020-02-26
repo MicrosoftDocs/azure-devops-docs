@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Manage projects using TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> 
 Project managers and software development teams can use the tools they prefer, work at the granularity that supports their needs, and share information transparently between Visual Studio Team Foundation Server and Microsoft Project Server. When the two server products are configured, the synchronization engine maintains scheduling data and resource usage for the configured data in the mapped enterprise project plan and the project.  

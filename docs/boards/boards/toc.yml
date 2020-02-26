@@ -42,14 +42,10 @@
     href: reorder-cards.md
   - name: Filter your Kanban board
     href: filter-kanban-board.md 
-- name: Troubleshooting
-  items:
-  - name: Set up your backlogs and boards
-    href: ../backlogs/set-up-your-backlog.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
 - name: Reference
   items:
-  - name: Boards (Kanban) board controls
+  - name: Kanban board controls
     href: kanban-board-controls.md
-  - name: Boards (Kanban) board keyboard shortcuts
+  - name: Kanban board keyboard shortcuts
     href: kanban-board-keyboard-shortcuts.md
 

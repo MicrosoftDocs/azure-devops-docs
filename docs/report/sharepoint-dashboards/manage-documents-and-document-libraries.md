@@ -15,7 +15,7 @@ ms.topic: conceptual
 
 # Manage documents and document libraries
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can share documents and files that you want to make available to all team members by uploading them to the project portal for your team project. You can create document libraries and organize the files that you upload to your project portal within those libraries, in addition to folders and subfolders. The folders and subfolders always appear in alphabetical order.  
   

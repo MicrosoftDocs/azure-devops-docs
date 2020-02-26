@@ -14,7 +14,7 @@ ms.date: 01/20/2017
 
 # TF30031: Team Explorer cannot open the document because the WebClient service is not running.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when Team Explorer tries to open a document stored in the document library for a project. The WebClient service is not running on the local computer. You can use the procedure below to help you correct the problem.  
   

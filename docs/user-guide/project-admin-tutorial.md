@@ -16,7 +16,7 @@ ms.date: 06/14/2019
 
 # Manage your project 
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]  
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
@@ -85,7 +85,7 @@ To simplify the web portal user interface, you can disable select services. For 
 This example shows that **Test Plans** is disabled:
 
 > [!div class="mx-imgBorder"]
-> ![Disable a service](_img/services/set-service-visibility.png)
+> ![Disable a service](media/services/set-service-visibility.png)
 
 ::: moniker-end  
 
@@ -121,12 +121,12 @@ If you support several products, you can assign work items by feature area by de
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |<img src="../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
+> |<img src="../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
 
 ## Customize work-tracking processes
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
   
 All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
@@ -158,7 +158,7 @@ A number of notifications are predefined for each project you add. Notifications
 If users believe they're getting too many notifications, direct them to [opt out of a subscription](../notifications/howto-manage-personal-notifications.md).
 
 > [!div class="mx-imgBorder"]  
-> ![Personal notifications](_img/services/personal-notifications.png)   
+> ![Personal notifications](media/services/personal-notifications.png)   
 
 
 ::: moniker range="<= azure-devops-2019"  
@@ -173,7 +173,7 @@ In order for team members to receive notifications, [you must configure an SMTP 
 
 We recommend that you add teams as your organization grows. Each team gets [access to their own set of customizable Agile tools](../organizations/settings/about-teams-and-settings.md).
 
-![Agile tools and team assets](../organizations/settings/_img/agile-tools/agile-tools-team-assets-post-2018.png)
+![Agile tools and team assets](../organizations/settings/media/agile-tools/agile-tools-team-assets-post-2018.png)
 
 To learn more, see the following articles:
 

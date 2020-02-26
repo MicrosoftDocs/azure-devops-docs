@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # READMEs & Wikis  
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
 Wikis and repository README files are great ways to share information with your team and stakeholders.
 

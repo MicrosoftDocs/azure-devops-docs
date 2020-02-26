@@ -9,16 +9,16 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 02/18/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # File transforms and variable substitution reference
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Some tasks, such as the [Azure App Service Deploy](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureRmWebAppDeploymentV3) task
@@ -130,7 +130,7 @@ for `Web.config` with `Web.Release.config` followed by `Web.Production.config`.
 
 3. Add an **Azure App Service Deploy** task and set (tick) the **XML transformation** option.
 
-   ![Release pipeline for XML transformation](_img/release-definition2.png)
+   ![Release pipeline for XML transformation](media/release-definition2.png)
 
 4. Save the release pipeline and start a new release.
 
@@ -232,7 +232,7 @@ As an example, consider the task of changing the following values in `Web.config
 
 1. Add an **Azure App Service Deploy** task and set (tick) the **XML variable substitution** option.
 
-   ![Release pipeline for XML variable substitution](_img/release-definition.png)
+   ![Release pipeline for XML variable substitution](media/release-definition.png)
 
 1. Define the required values in release pipeline variables:
 
@@ -346,6 +346,8 @@ As an example, consider the task of overriding values in this JSON file:
 The task is to override the values of **ConnectionString**, **DebugMode**,
 the first of the **Users** values, and **NewWelcomeMessage** at the respective places within the JSON file hierarchy.
 
+# [Classic](#tab/Classic)
+
 1. Create a release pipeline with a stage named **Release**.
 
 2. Add an **Azure App Service Deploy** task and enter a newline-separated
@@ -354,7 +356,7 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
    You can use wildcards to search for JSON files. For example:
    `**/*.json` means substitute values in all the JSON files within the package.
 
-   ![Release pipeline for JSON variable substitution](_img/json-setting.png)
+   ![Release pipeline for JSON variable substitution](media/json-setting.png)
 
 3. Define the required substitution values in release pipeline or stage variables.
 
@@ -395,6 +397,33 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
      }
    }
    '''
+
+# [YAML](#tab/yaml)
+
+Following YAML snippet showcases JSON variable substitution.
+
+```YAML
+- variables:
+    Data.DebugMode: disabled
+    Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
+    Data.DBAccess.Users.0: Admin-3
+    Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
+
+- stage: Deploy
+  jobs:
+  - job: DeployJob
+    steps:
+    - task: AzureRmWebAppDeployment@4
+      inputs:
+        ConnectionType: Azure Resource Manager
+        azureSubscription: <Name of the Azure subscription>
+        appType: <Name of the App Service type>
+        WebAppName: <Name of the Azure WebApp>
+        package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        JSONFiles: '**/appsettings.json'
+```
+
+* * *
 
 ### JSON variable substitution notes
 

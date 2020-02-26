@@ -15,13 +15,13 @@ ms.date: 10/16/2019
 
 # What is Analytics?
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Analytics provides the reporting platform for Azure DevOps and Azure DevOps Server. Use it to answer quantitative questions about the past or present state of your projects. This service provides a concise data model over Azure DevOps. Built for reporting, Analytics is optimized for fast read-access and server-based aggregations.
 
 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 ::: moniker range="azure-devops"
 
@@ -48,7 +48,7 @@ You can create [dashboards](../dashboards/dashboards.md) and [add widgets to the
 
 For example, the Velocity widget shown in the following image provides insights into a team's historical performance over six iterations. 
 
-![Analytics - Velocity Widget](_img/what-is-analytics/dashboard-showing-velocity.png)
+![Analytics - Velocity Widget](media/what-is-analytics/dashboard-showing-velocity.png)
 
 Here, the Velocity widget shows that this team has a history of closing stories late. It also shows a discrepancy between planned and completed work across all the sprints displayed. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 

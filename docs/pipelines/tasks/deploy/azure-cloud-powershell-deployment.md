@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to deploy an Azure Cloud Service.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureCloudPowerShellDeploymentV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureCloudPowerShellDeploymentV1.md)]
 
 ::: moniker-end
 

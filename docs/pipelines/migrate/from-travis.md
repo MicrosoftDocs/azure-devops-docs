@@ -196,7 +196,7 @@ the completion of one step, and then fan back in with a single step that runs af
 This model gives you options to define complex workflows if necessary. For now, here's
 a simple example:
 
-![Simple Parallel Execution Illustration](_img/parallel-travis.png)
+![Simple Parallel Execution Illustration](media/parallel-travis.png)
 
 For example, to run a build script, then upon its completion run both the
 unit tests and the integration tests in parallel, and once all tests have
@@ -251,7 +251,7 @@ and the resources that it produces when it's done.
 For example, a team has a set of fast-running unit tests, and another set of and slower integration tests. The team wants to begin creating the .ZIP file for a release as soon as the unit are completed because they provide high confidence 
 that the build will provide a good package. But before they deploy to pre-production, they want to wait until all tests have passed:
 
-![Advanced Parallel Execution Illustration](_img/parallel-azurepipelines.png)
+![Advanced Parallel Execution Illustration](media/parallel-azurepipelines.png)
 
 In Azure Pipelines they can do it this way:
 
@@ -317,7 +317,7 @@ script: echo $MY_ENVIRONMENT_VARIABLE
 **azure-pipelines.yml**
 ``` yaml
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 strategy:
   matrix:
     set_env_to_one:
@@ -400,7 +400,7 @@ strategy:
     linux:
       imageName: 'ubuntu-16.04'
     mac:
-      imageName: 'macos-10.13'
+      imageName: 'macos-10.14'
     windows:
       imageName: 'vs2017-win2016'
 

@@ -15,7 +15,7 @@ ms.date: 12/12/2019
 
 # Allowed address lists and network connections   
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 If your organization use security measures, like a firewall or a proxy server, you need to add certain IP addresses and domain URLs to the **Allow list**. Adding them to the Allow list helps to ensure that you have the best experiences with Azure DevOps.
 
@@ -42,6 +42,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 
 ### Additional URLs for signing into Azure DevOps and Azure
 
+* `https://amcdn.msftauth.net`
 * `https://windows.net`
 * `https://microsoftonline.com`
 * `https://visualstudio.com`
@@ -134,7 +135,7 @@ If you use Microsoft-hosted agent to run your jobs and you need the information 
 
 ## Private Build Agents
 
-If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQ](../../pipelines/agents/v2-windows.md#im-running-a-firewall-and-my-code-is-in-azure-repos-what-urls-does-the-agent-need-to-communicate-with). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
+If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQ](../../pipelines/agents/v2-windows.md). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
 
 ## Hosted Windows and Linux Agents
 

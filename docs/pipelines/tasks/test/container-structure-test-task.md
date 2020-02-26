@@ -40,27 +40,27 @@ The container structure test task can be added in the classic pipeline as well a
 In the new YAML based unified pipeline, you can search for task in the window.
 
 > [!div class="mx-imgBorder"]
-> ![Container Test in Unified Pipeline](_img/unified-pipeline-creation.png)
+> ![Container Test in Unified Pipeline](media/unified-pipeline-creation.png)
 
 Once the task is added, you need to set the config file path, docker registory service connection, container repository and tag, if required. Task input in the yaml based pipeline is created.
 
 > [!div class="mx-imgBorder"]
-> ![Container Test in YAML based Pipeline](_img/yaml-based-pipeline.png)
+> ![Container Test in YAML based Pipeline](media/yaml-based-pipeline.png)
 
 ### YAML file
 
 > [!div class="mx-imgBorder"]
-> ![YAML file](_img/yaml-file.png)
+> ![YAML file](media/yaml-file.png)
 
 Sample YAML
-[!INCLUDE [temp](../_shared/yaml/ContainerStructureTestV1.md)]
+[!INCLUDE [temp](../includes/yaml/ContainerStructureTestV1.md)]
 
 # [Classic](#tab/classic)
 
 In the classic pipeline, you can add this task from the designer view. 
 
 > [!div class="mx-imgBorder"]
-> ![Container Test in Classic Pipeline](_img/classic-pipeline-creation.png)
+> ![Container Test in Classic Pipeline](media/classic-pipeline-creation.png)
 
 * * *
 
@@ -71,6 +71,6 @@ in the pipeline summary and help you to measure pipeline quality, review traceab
 troubleshoot failures, and drive failure ownership. 
 
 > [!div class="mx-imgBorder"]
-> ![Test Reporting Page](_img/results-page.png)
+> ![Test Reporting Page](media/results-page.png)
 
 

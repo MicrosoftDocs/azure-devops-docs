@@ -15,7 +15,7 @@ ms.date: 05/30/2019
 
 # Reporting roadmap for Azure DevOps 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 The future of reporting for Azure DevOps and Azure DevOps Server is Analytics. 
 
@@ -50,7 +50,7 @@ To learn more, see [What is Analytics](what-is-analytics.md). It currently conta
 
 Since [Team Foundation Server (TFS)](https://visualstudio.microsoft.com/tfs/) was released in 2005, we've offered a reporting solution [based on a data warehouse and OLAP cube](../sql-reports/reporting-services-reports.md), coupled with [an SSRS server](../sql-reports/create-and-manage-reporting-services-reports.md?toc=../sql-reports/toc.json&bc=../sql-reports/breadcrumb/toc.json) to host reports.
 
-<!--- ![TFS Data warehouse architecture conceptual diagram](../sql-reports/_img/tfs_datawarearch_r.png)  -->
+<!--- ![TFS Data warehouse architecture conceptual diagram](../sql-reports/media/tfs_datawarearch_r.png)  -->
 
 While the configuration is somewhat complex, it provides a powerful solution. You can create custom reports by writing [customized SSRS reports](../sql-reports/create-and-manage-reporting-services-reports.md?toc=/azure/devops/report/sql-reports/toc.json&bc=/azure/devops/report/sql-reports/breadcrumb/to]c.json). You can also create reports [using Excel](../excel/create-status-and-trend-excel-reports.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json), and share them on SharePoint once you've [configured SharePoint to host Excel Charts](../sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier.md).
 
@@ -60,7 +60,7 @@ We have no plans to bring a cloud version of our SQL Server Reporting story to A
 
 We currently support SQL Server Reporting through TFS 2018, and will continue to support it in Azure DevOps Server 2019.  
 
-We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This allows customers time to convert their reports to Analytics.
+We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This plan allows customers time to convert their reports to Analytics.
 
 ::: moniker-end  
 

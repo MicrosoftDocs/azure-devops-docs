@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot managing group-based licensing
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 In this article, find the following frequently asked questions and answers (FAQs) about managing group-based licensing.
 
@@ -26,7 +26,7 @@ In this article, find the following frequently asked questions and answers (FAQs
 A: Users in the group **TestGroup** lose access to group resources if the users haven't been explicitly assigned to the resources or assigned via a different group rule.
 
 > [!div class="mx-imgBorder"]
-> ![remove-test-group-group-rule-managing_group-based-licensing](_img/faq/remove-test-group-rule.png)
+> ![remove-test-group-group-rule-managing_group-based-licensing](media/faq/remove-test-group-rule.png)
 
 #### Q: Will my Azure DevOps or Azure AD group be deleted if I remove its group rule?
 

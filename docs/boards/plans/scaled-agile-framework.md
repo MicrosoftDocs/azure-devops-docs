@@ -16,7 +16,7 @@ ms.date: 07/22/2017
 
 # Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework&reg; (SAFe&reg;).  
 
@@ -32,44 +32,44 @@ SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.]
 
 The SAFe big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
-![SAFe architectural overview &copy; D. Leffing..](_img/safe-concepts-poster-v4.0.png)
+![SAFe architectural overview &copy; D. Leffing..](media/safe-concepts-poster-v4.0.png)
 
 
 Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](https://www.scaledagile.com/). All rights reserved.  
 
 Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
-![Agile tool structure to support SAFe](_img/safe-objects-map-to-vso-objects.png)  
+![Agile tool structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
 ## SAFe&reg; portfolios, programs, and teams map to Agile tool teams and projects  
 
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
-![SAFe roles to Agile tool teams](_img/safe-roles-to-vso-roles.png)  
+![SAFe roles to Agile tool teams](media/safe-roles-to-vso-roles.png)  
 
 To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
 ### SAFe&reg; backlogs map to your Agile tools backlogs
 Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
 
-![Hierarchical backlog: epics, features, and stories](_img/safe-epics-to-stories-value-area.png)
+![Hierarchical backlog: epics, features, and stories](media/safe-epics-to-stories-value-area.png)
 
 ### SAFe&reg; releases, iterations, and sprints map to iterations
 
 SAFe Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 
 
-![SAFe release trains map to Agile tool iterations](_img/safe-release-trains-map.png)  
+![SAFe release trains map to Agile tool iterations](media/safe-release-trains-map.png)  
 
 Because epics can span several release trains, the Portfolio team isn't associated with any specific iterations. Program teams track their Feature deliverables, which ship with a PI. And Feature teams work in Sprints to complete several stories. Each team chooses which iterations will support them to track their focused set of deliverables.
 
 
-![Teams track deliverables using iterations](_img/safe-teams-track-deliverables.png)  
+![Teams track deliverables using iterations](media/safe-teams-track-deliverables.png)  
 
 ### SAFe&reg; value streams and budgets map to tags and the Value Area field  
 You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, and associated budgets.
 
-![Tags can track value streams or associated budgets](_img/save-epics-value-stream-tags.png)  
+![Tags can track value streams or associated budgets](media/save-epics-value-stream-tags.png)  
 
 With tags that you add to work items, you can:
 
@@ -79,7 +79,7 @@ With tags that you add to work items, you can:
 
 For a more robust mapping of work to architecture or business features, you can specify the Value Area for each epic, feature, or story.  
 
-![Value Area tracks Business or Architectural work](_img/safe-epic-to-stories-map-to-value-area.png)  
+![Value Area tracks Business or Architectural work](media/safe-epic-to-stories-map-to-value-area.png)  
 
 ## Plan and track SAFe&reg; projects using your Agile tools 
 
@@ -89,18 +89,18 @@ Once you've configured your Agile tools to support SAFe, trace relationships can
 The program team can map features to epics using the mapping pane. Feature teams can use the same experience to map their stories to features.
  
 
-![Map features to epics](_img/safe-map-features-to-epics.png)  
+![Map features to epics](media/safe-map-features-to-epics.png)  
 
 ### Portfolio team's view of progress
 
 To track the progress of epics that span Releases, the Portfolio team's backlog shows epics. Each epic can be expanded to show the features and user stories that support it.
 
 
-![Hierarchy of epics, features, and stories](_img/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
+![Hierarchy of epics, features, and stories](media/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
 
 The Portfolio team can also view the progress of epics on their Kanban board.
 
-![Epic Kanban board](_img/safe-epics-kanan-board.png)  
+![Epic Kanban board](media/safe-epics-kanan-board.png)  
 
  
 > [!TIP]  
@@ -109,32 +109,32 @@ The Portfolio team can also view the progress of epics on their Kanban board.
 ### Program teams' progress view 
 Program teams, primarily concerned with Release Trains, can see the features in their backlog, along with the PIs with which they're associated.
 
-![Program team backlog of features and stories](_img/safe-fiber-suite-features-to-stories.png)  
+![Program team backlog of features and stories](media/safe-fiber-suite-features-to-stories.png)  
 
 Just like the Portfolio team, they can also toggle their view to see which epics their features support, or the user stories that support their features, or both.  
 
 Another view available to program teams shows query-based graphs of release train progress, backlog items, or active tasks during a shipping sprint. A customizable home page view is available to each team.
 
-![Team dashboard](_img/safe-team-dashboard.png)  
+![Team dashboard](media/safe-team-dashboard.png)  
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the [rich reporting options and built-in reports](../../report/dashboards/overview.md).
 
 ### Feature teams' view of progress
 For individual feature teams, their backlog view shows the Stories that they're working on.
 
-![Migrate feature team backlog of stories](_img/safe-migrate-feature-team-stories.png)  
+![Migrate feature team backlog of stories](media/safe-migrate-feature-team-stories.png)  
 
 Because feature teams don't own epics or features, epics and features don't appear in their team-level backlog views. However, if the team wants to know which epics and features their stories support, they can turn on those views from their backlog.
 
-![Migrate team backlog of stories to epics](_img/safe-migrate-team-stories-to-epics.png)  
+![Migrate team backlog of stories to epics](media/safe-migrate-team-stories-to-epics.png)  
 
 They can also break down their work into tasks and use the taskboard to keep themselves on track during specific sprints.
 
-![Migrate team Sprint 3 taskboard](_img/safe-migrate-sprint3-task-board.png)
+![Migrate team Sprint 3 taskboard](media/safe-migrate-sprint3-task-board.png)
 
 The chart view of queries becomes very useful in the Innovation and Planning (IP) sprint, when feature teams work together to stabilize the features scheduled for a Release.  
 
-![Bug charts](_img/safe-feature-team-active-bug-charts.png)  
+![Bug charts](media/safe-feature-team-active-bug-charts.png)  
 
 For everything else, it is very much business as usual for individual feature teams. They can sprint in their usual cadences, use their Kanban board and taskboard to track progress and break down work into manageable chunks.  
 
@@ -143,7 +143,7 @@ However, now their progress on individual stories is visible to their program an
 ## Configure your Agile tools to support SAFe&reg;  
 In this section, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
-![Hierarchical areas support 3 levels of 9 teams](_img/safe-config-teams.png) 
+![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
 
 Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
 
@@ -156,16 +156,16 @@ You'll need to be a [member of the Project Administrators group](../../organizat
 
 ### Create areas to support your team hierarchy
 
-1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../_img/icons/gear_icon.png) to open the administration page for the default team.  
+1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../media/icons/gear_icon.png) to open the administration page for the default team.  
 2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
 
-	![Create child area](_img/safe-add-area-path.png)  
+	![Create child area](media/safe-add-area-path.png)  
 
 3.  Next, create a second area at the same child level, and name it after the second program team.  
 
 4.  Under each program area, create a child area for each feature team that will support their respective program team. You should end up with a 3-level area path hierarchy.
 
-	![Areas page, 9 area paths defined](_img/safe-team-area-paths-added.png)  
+	![Areas page, 9 area paths defined](media/safe-team-area-paths-added.png)  
 
 ### Create iterations to support your release trains and sprints
 To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
@@ -174,10 +174,10 @@ If you already have iterations for your default team, you can rename them. You'l
 
 1. Under the default iteration, which shares the same name as the project, create a child iteration that will represent your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration will be broken down further into sprints.
 
-	![Create iterations](_img/safe-create-iterations.png)
+	![Create iterations](media/safe-create-iterations.png)
 
 2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your feature teams' cadences.  
-	![Iterations page, create IP Sprint iteration](_img/safe-view-of-iterations.png)
+	![Iterations page, create IP Sprint iteration](media/safe-view-of-iterations.png)
 
 
 ### Create and configure your teams
@@ -194,24 +194,24 @@ You'll need to be a [project administrator](../../organizations/security/add-use
 
 1. From the Overview page for the project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
 
-	![Create team](_img/safe-create-team.png)  
+	![Create team](media/safe-create-team.png)  
 
 2. Choose the team from the list, go to the Areas page, and select the check box next to the area path that you previously created for that team.  
 
-	![Areas page, Program team, set default areas](_img/safe-map-team-to-area.png)  
+	![Areas page, Program team, set default areas](media/safe-map-team-to-area.png)  
 
 3. Use the context menu to exclude sub-areas. By excluding sub-areas, the team's backlog only includes those items whose Area Path matches the team's default area path.
 
-	![Areas page for Program team, Exclude sub-areas](_img/safe-exclude-sub-areas-for-fabrikam-fiber-suite.png)  
+	![Areas page for Program team, Exclude sub-areas](media/safe-exclude-sub-areas-for-fabrikam-fiber-suite.png)  
 
 4. Next, configure the iterations that will be active for the program team. In this example, we have configured three PIs, each with five two-week sprints. Four of the sprints are regular sprints and the last sprint is an Innovation and Planning (IP) sprint.  
-	![Iterations page, Program team](_img/safe-map-team-iterations.png)  
+	![Iterations page, Program team](media/safe-map-team-iterations.png)  
   
 	Because the Fiber Suite program team is concerned with Release Trains, we choose PI 1, 2, and 3, but we don't choose the individual sprints.
 
 6. Once you've selected which iterations are active for the team, add users to the new team. Ideally, you would add the scrum masters for each feature team, product owners, as well as the Release Train Engineers (RTEs) to the program teams, such as Fiber Suite.  
 
-	![Add team members](_img/safe-add-team-members.png)  
+	![Add team members](media/safe-add-team-members.png)  
 
 6. If you've more than one team at the program level, repeat steps 1 through 4 for each program team. 
 
@@ -222,19 +222,19 @@ Next, we'll create some feature teams to get work done at the third level of the
 
 1. Create a new team from the administration page for the original team, and name the team. Just like before, make sure you clear the check box next to **Create an area path with the name of the team**.
 
-	![Create another team](_img/safe-create-another-team.png)  
+	![Create another team](media/safe-create-another-team.png)  
 
 2. Just as before, choose the team from the list, go to the Areas page, and select the check box next to the area path that you previously created for that team.  
 
-	![Set default area path for Migrate feature team](_img/safe-configure-migrate-team-area-path.png)  
+	![Set default area path for Migrate feature team](media/safe-configure-migrate-team-area-path.png)  
 
 3. Configure iterations for the team, using the PIs and sprints you created earlier. Unlike the program teams, this time select the individual sprints as the working iterations for the feature team.  
 
-	![Migrate team iterations](_img/safe-configure-migrate-team-iterations.png)  
+	![Migrate team iterations](media/safe-configure-migrate-team-iterations.png)  
 
 4. Lastly, add the accounts for the developers, testers, and the scrum master for the team. Your Agile tools support assigning a scrum master to multiple teams. The scrum master can track work across multiple teams.  
 
-	![Migrate team members](_img/safe-add-migrate-team-members.png) 
+	![Migrate team members](media/safe-add-migrate-team-members.png) 
 
 5. Repeat steps 1 through 4 for each feature team in your organization. Make sure that the default area path you configure for the team is sub-area path under its corresponding program-level area path. This ensures rollup from feature teams to program teams.
 
@@ -244,19 +244,19 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 
 1. On the Areas page for the project, change the settings so that sub-areas are not included. Make sure you choose the project and not the default team, Fabrikam.  
 
-	![Areas page for Portfolio team, Exclude sub areas](_img/safe-exclude-sub-areas-for-portfolio-team.png)  
+	![Areas page for Portfolio team, Exclude sub areas](media/safe-exclude-sub-areas-for-portfolio-team.png)  
 
 2. On the Iterations page, clear the check boxes next to all iterations except for the root level, which cannot be cleared. Because the Portfolio team is only concerned with epics that span PIs, it only uses the root iteration and not the PIs or sprints. Portfolio teams don't work in sprints.  
 
-	![Iterations page, Portfolio team](_img/safe-PMO_Iterations-cleared.png)  
+	![Iterations page, Portfolio team](media/safe-PMO_Iterations-cleared.png)  
 
 3. Lastly, add and remove users from the Portfolio team appropriate to this level. From the Overview page, choose the default team.  
 
-	![Overview tab, choose default team](_img/safe-overview-teams.png)   
+	![Overview tab, choose default team](media/safe-overview-teams.png)   
 
 	If you're following SAFe, you'll probably want to add portfolio managers, enterprise-level architects, and Release Train Engineers (RTEs) at this level and remove everyone else.
 
-	![Overview page, Portfolio team members](_img/safe-overview-portfolio-team-members.png)
+	![Overview page, Portfolio team members](media/safe-overview-portfolio-team-members.png)
 
 
 ### Update the Area Path for existing work items
@@ -264,45 +264,45 @@ For any existing work items to show up on a team's backlog, you must update the 
 
 1. Create a query that contains the work items you want to edit, select the ones you want to edit, and then open the context menu from any one of the selected items.  
 
-	![Query results context menu](_img/safe-bulk-modify-area-paths.png)   
+	![Query results context menu](media/safe-bulk-modify-area-paths.png)   
 
 2. Select the area path that corresponds to the team's default area path.  
 
-	![Edit work items](_img/safe-bulk-modify-area-paths-edit-dialog.png)   
+	![Edit work items](media/safe-bulk-modify-area-paths-edit-dialog.png)   
 
 3.  Bulk save all work items that you modified.
 
-	![Bulk save edited work items](_img/safe-bulk-modify-area-paths-bulk-save.png)  
+	![Bulk save edited work items](media/safe-bulk-modify-area-paths-bulk-save.png)  
 
 	For more info on bulk modifying work items, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
 
 ### Add epics and map epics to features
 You add epics in the same way you add user stories and features. From the Portfolio team's backlog page for epics, add an epic backlog item.
 
-![Epic backlog, add an epic using quick add panel](_img/safe-add-epics.png)   
+![Epic backlog, add an epic using quick add panel](media/safe-add-epics.png)   
 
 Add as many epics as you need. Drag them to reorder them and have them listed in their order of importance.
 
-![Epic backlog, reorder items](_img/safe-reorder-epics.png)   
+![Epic backlog, reorder items](media/safe-reorder-epics.png)   
 
 The default Business Value for epics is Business, but you can change this to Architectural by opening the form.  
 
-![Epic work item form](_img/safe-epic-form.png)  
+![Epic work item form](media/safe-epic-form.png)  
 
 You can also add tags to your epics, to help you track the investment themes each epic supports.  
 
-![Epic work item form, add tags](_img/safe-add-tags-to-epic.png)
+![Epic work item form, add tags](media/safe-add-tags-to-epic.png)
 
 Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](https://www.scaledagileframework.com/portfolio-kanban/).
 
-![Epic kanban board with custom columns](_img/safe-kanban-custom-columns.png)
+![Epic kanban board with custom columns](media/safe-kanban-custom-columns.png)
 
 However, this is not very interesting yet. Nothing is in progress, and you can't drill down to see which features support your epics. You'll want to map existing features to the epics you just created, and map user stories to those features, if they're not already mapped.  
 
 ### Map multiple items if you've an existing backlog 
 Mapping work items is easy using the mapping pane. First, turn on the mapping pane from the features or stories backlog page. Here, we choose the Fiber Suite team and turn on both the mapping pane and the view to see the hierarchy of features mapped to epics.
 
-![Map features to epics](_img/safe-map-features-to-epics.png)
+![Map features to epics](media/safe-map-features-to-epics.png)
 
 Note that if you've already changed the area path of all your features to the appropriate program-level team, the features list will be empty, because the Portfolio team does not own any features! In that case, switch to one of the program teams.  
 
@@ -310,7 +310,7 @@ Drag items from the backlog onto the item you want to associate as a parent. Kee
 
 Repeat this process at each backlog level until you've created the hierarchy you want. 
 
-![Epics-to-stories view](_img/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
+![Epics-to-stories view](media/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
 
 What about features already in progress? They definitely won't appear on the Portfolio team's backlog. They are the responsibility of the program teams, so they appear on that team's backlog. (This is actually a function of the area path set for the work item; a work item will only appear on a team's backlog if you assign it to the area path you created for that team.) You can map them from there.  
 
@@ -320,7 +320,7 @@ Since an important aspect of SAFe is to map work to business or architecture goa
 
 The same principles apply to user stories in progress. You can map them to features, change the requirement type to Architecture for work that you do to support architectural epics, and add tags for tracking themes.  
 
-![User Story work item form](_img/safe-user-story-new-form.png)  
+![User Story work item form](media/safe-user-story-new-form.png)  
 
 ::: moniker range="tfs-2013" 
 

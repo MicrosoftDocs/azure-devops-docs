@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 # Add organization users to your Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 <a name="SetUpCurrentUsers"></a>
 
@@ -44,7 +44,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    Here's what the Fabrikam directory might look like in the Azure portal after Jamal adds users from his organization:
 
-   ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
+   ![Directory after adding users](media/manage-work-access/azureaddmembers3.png)
 
    For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
 

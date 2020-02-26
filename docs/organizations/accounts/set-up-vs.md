@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Launch Visual Studio via Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 When you first open [Visual Studio 2015](https://visualstudio.microsoft.com/products/vs-2015-product-editions), 
 you can sign in and connect to [Azure DevOps](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs).
@@ -61,7 +61,7 @@ and then sign in to create your profile.
 	If you're a Visual Studio subscriber, 
 	use the sign-in address for your subscription. 
 
-	![Sign in to Visual Studio](_img/set-up-vs/sign-in-visual-studio.png)
+	![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)
 
 	[Can't sign in?](faq-set-up-vs.md#cannot-sign-in)
 
@@ -70,12 +70,12 @@ and then enter your password.
 
 4.	Add your Visual Studio profile details. You have to do this only once. 
 
-	![Create your profile](_img/set-up-vs/profile-organization-details.png)
+	![Create your profile](media/set-up-vs/profile-organization-details.png)
 
 5.	Give your organization a name, 
 and confirm its location. 
 
-	![Name your organization, confirm its location](_img/set-up-vs/profile-organization-details2.png)
+	![Name your organization, confirm its location](media/set-up-vs/profile-organization-details2.png)
 
 	[How can I create an organization later](faq-set-up-vs.md#WhatIsVSO) or [change its location?](faq-set-up-vs.md#change-location)
 
@@ -84,7 +84,7 @@ work items, backlog, builds, tests, and other assets.
 Name your project, select a process to organize your work, 
 and choose the version control to manage your code.
 
-	![Create your project](_img/set-up-vs/create-team-project-vs.png)
+	![Create your project](media/set-up-vs/create-team-project-vs.png)
 
 	Not sure which to choose? Learn which 
 	[process](../../boards/work-items/guidance/choose-process.md) 
@@ -95,7 +95,7 @@ and choose the version control to manage your code.
 7.	If you're a new Visual Studio user, you can change your settings here, 
 or change them later in Visual Studio options.
 
-	![Change settings, if you want](_img/set-up-vs/hellonewprofile.png)
+	![Change settings, if you want](media/set-up-vs/hellonewprofile.png)
 
 	These changes are saved with your profile, 
 	and your settings roam with you wherever you sign in. 

@@ -15,11 +15,11 @@ monikerRange: '>= tfs-2015'
 
 # Azure Pipelines agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -36,7 +36,7 @@ Jobs can be run [directly on the host machine of the agent](../process/phases.md
 
 ## Microsoft-hosted agents
 
-[!INCLUDE [include](_shared/hosted-agent-intro.md)]
+[!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 [Learn more about Microsoft-hosted agents](hosted.md).
 
@@ -129,11 +129,11 @@ You can view the details of an agent, including its version and system capabilit
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab:
  
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -258,13 +258,13 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 
 > [!TIP]
 >
-> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up.
+> After you install new software on a self-hosted agent, you must restart the agent for the new capability to show up. For more information, see [Restart Windows agent](v2-windows.md#how-do-i-restart-the-agent), [Restart Linux agent](v2-linux.md#how-do-i-restart-the-agent), and [Restart Mac agent](v2-osx.md#how-do-i-restart-the-agent).
 
 <h2 id="communication">Communication</h2>
 
@@ -287,11 +287,11 @@ The agent communicates with Azure Pipelines or TFS to determine which job it nee
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 < azure-devops"
-![Agent topologies](_img/agent-topologies-tfs.png)
+![Agent topologies](media/agent-topologies-tfs.png)
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-![Agent topologies](_img/agent-topologies-devops.png)
+![Agent topologies](media/agent-topologies-devops.png)
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -337,7 +337,7 @@ manually configure a self-hosted agent on on-premises computer(s). The agents mu
 on-premises environments, and access to the Internet to connect to Azure Pipelines or Team Foundation Server,
 as shown in the following schematic.
 
-![Agent connectivity for on-premises environments](_img/agent-connections-devops.png)
+![Agent connectivity for on-premises environments](media/agent-connections-devops.png)
 ::: moniker-end
 
 <a name="configure-tfs-authentication"></a>
@@ -379,9 +379,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with a valid provider such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
+![IIS TFS windows authentication with ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-ntlm-provider.png)
 
 ### Negotiate
 
@@ -393,9 +393,9 @@ To use this method of authentication, you must first configure your TFS server.
 
 1. Start Internet Information Services (IIS) Manager. Select your TFS site and make sure Windows Authentication is enabled with the Negotiate provider and with another method such as NTLM or Kerberos.
 
-![IIS TFS windows authentication](_img/configure-tfs-authentication/iis-tfs-authentication-windows.png)
+![IIS TFS windows authentication](media/configure-tfs-authentication/iis-tfs-authentication-windows.png)
 
-![IIS TFS windows authentication with negotiate and ntlm provider](_img/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
+![IIS TFS windows authentication with negotiate and ntlm provider](media/configure-tfs-authentication/iis-tfs-authentication-windows-negotiate-and-ntlm-providers.png)
 
 
 ### Alternate
@@ -502,7 +502,7 @@ You can view the version of an agent by navigating to **Agent pools** and select
 
 ## Q & A
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 
