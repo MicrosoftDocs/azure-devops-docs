@@ -105,7 +105,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
+> Review [CI/CD Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
 
 ## Dealing with monitoring and noise
 
