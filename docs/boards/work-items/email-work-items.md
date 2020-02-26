@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

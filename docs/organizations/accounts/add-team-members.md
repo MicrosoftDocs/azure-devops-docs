@@ -3,11 +3,9 @@ title: Add members, contributors to projects
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: How to add members to projects so you can share code, work with your team, track status, coordinate dev, build, test, and release activities
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 1cd6673e-f83a-403b-884b-b69b8e3f5c46
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/13/2019

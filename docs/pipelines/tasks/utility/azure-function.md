@@ -2,10 +2,8 @@
 title: Invoke Azure Function task 
 description: Invoke a HTTP triggered function in an Azure function app and parse the response in Azure Pipelines and TFS
 ms.assetid: 8D3F3DAA-92C8-4631-96C6-938D43C60008
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

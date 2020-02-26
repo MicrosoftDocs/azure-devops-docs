@@ -2,10 +2,8 @@
 title: Add a Hub | Extensions for Azure DevOps Services
 description: Extend Azure DevOps Services with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley

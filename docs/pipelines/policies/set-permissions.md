@@ -3,12 +3,8 @@ title: Add users to Azure Pipelines
 ms.custom: seodec18
 description: Add users to Azure Pipelines, Azure DevOps Server, or TFS
 ms.assetid: DCEDB5E6-B6FB-4814-B3B9-F688094EA88B
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 05/02/2019
 monikerRange: '>= tfs-2015'
 ---

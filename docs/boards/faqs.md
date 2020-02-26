@@ -2,9 +2,7 @@
 title: Azure Boards FAQs 
 description: Answers to frequently asked questions about Azure Boards 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

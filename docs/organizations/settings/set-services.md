@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Control which services are available for a project from the web portal  
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

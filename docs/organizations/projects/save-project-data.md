@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Save project data, like source code, custom build templates, build data, and work items.
 ms.assetid: b944f980-81c0-4100-b0d8-2fc575c65693
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018

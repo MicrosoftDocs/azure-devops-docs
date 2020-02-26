@@ -3,10 +3,8 @@ title: Grunt build and release task
 ms.custom: seodec18
 description: Grunt build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: FB181C61-BAC3-4568-B340-48ACE15C2519
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016

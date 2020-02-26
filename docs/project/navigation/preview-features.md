@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
 ms.custom: Navigation
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

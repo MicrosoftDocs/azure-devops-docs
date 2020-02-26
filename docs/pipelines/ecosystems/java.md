@@ -1,10 +1,8 @@
 ---
 title: Build Java apps
 description: Automatically building Java apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 604822a1-a46b-49d3-ad30-8152e9420758
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.reviewer: dastahel

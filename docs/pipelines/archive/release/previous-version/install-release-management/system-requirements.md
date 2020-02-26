@@ -3,10 +3,8 @@ title: System requirements for Release Management
 ms.custom: seodec18
 description: Learn about the system requirements for Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 5B39B13E-166B-48DF-B8CB-45725355F644
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

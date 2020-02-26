@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces ConfigurationContextApis API | Extensions for Azure DevOps Services
 description: MVC api configuration
 ms.assetid: 1839096e-8cb0-cb2f-de48-f77d726f53ed
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

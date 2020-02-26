@@ -2,10 +2,8 @@
 title: Dashboards | REST API Reference for Team Foundation Server
 description: Work with dashboard programmatically using the REST APIs for VSTS.
 ms.assetid: EE46001A-8B9C-4E09-B99B-4F104013DFAD
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

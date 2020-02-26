@@ -2,11 +2,9 @@
 title: Build your .NET desktop app for Windows
 ms.custom: seodec18
 description: Learn how you can define a continuous integration (CI) pipeline that builds your .NET app on Team Foundation Server and Azure Pipelines.
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 2BFC43A2-4F6C-4A5C-86EE-6DDA8733829D
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 12/20/2017

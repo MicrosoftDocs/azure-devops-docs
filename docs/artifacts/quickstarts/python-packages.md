@@ -1,12 +1,8 @@
 ---
 title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 10/03/2019
 monikerRange: '=azure-devops'
 ---

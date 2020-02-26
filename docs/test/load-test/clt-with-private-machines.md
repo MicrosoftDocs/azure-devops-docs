@@ -2,10 +2,8 @@
 title: Run cloud-based load tests on your machines
 description: Run cloud-based load tests by using your own subscription and machines using Azure DevOps and TFS
 ms.assetid: FF61D623-7947-4769-B310-B3F477584BA2
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

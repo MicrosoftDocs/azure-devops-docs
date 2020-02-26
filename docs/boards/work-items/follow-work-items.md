@@ -4,9 +4,7 @@ titleSuffix: Azure Boards & Azure Repos
 description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
 ms.custom: work-items, seodec18
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Filter your Kanban board based on work item type, assigned to, iteration or sprint, tags, or parent work items
 ms.custom: boards-kanban
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

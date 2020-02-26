@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildServer API | Extensions for Azure DevOps Services
 description: Data representation of a build server.
 ms.assetid: e7221ea0-3b12-685c-1f54-47ed0489caf7
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

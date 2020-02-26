@@ -3,10 +3,8 @@ title: Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 12/05/2019

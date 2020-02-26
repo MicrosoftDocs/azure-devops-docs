@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts PlanEnvironment API | Extensions for Azure DevOps Services
 description: Data representation of a plan environment.
 ms.assetid: 0e70ae54-5dda-3635-5740-de5d24900890
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

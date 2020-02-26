@@ -1,13 +1,9 @@
 ---
 title: Use npm to store JavaScript packages in Azure DevOps Services
 description: Use npm to store your JavaScript packages in Azure DevOps Services or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 11/14/2019
 monikerRange: '>= tfs-2017'
 ---

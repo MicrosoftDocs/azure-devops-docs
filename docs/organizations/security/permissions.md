@@ -1,12 +1,10 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

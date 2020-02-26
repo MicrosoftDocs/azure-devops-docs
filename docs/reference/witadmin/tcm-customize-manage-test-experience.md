@@ -2,12 +2,10 @@
 title: Customize and manage the test experience
 titleSuffix: TFS  
 description: Customize three of the features that are supported - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018

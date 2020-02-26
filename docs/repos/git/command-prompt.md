@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Commands reference for common Git tasks in Visual Studio or the command line
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

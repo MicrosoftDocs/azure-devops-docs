@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: At-a-glance view of default permissions assigned to built-in security groups made for Git repositories and branches 
 ms.topic: reference
 ms.assetid:  
-ms.prod: devops
 ms.technology: devops-security
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/28/2018

@@ -2,10 +2,8 @@
 title: Associate automated tests with test cases
 description: Continuous testing. Associate an automated test with a test case using Microsoft Test Manager and Azure DevOps with a build or release pipeline
 ms.assetid: 606679F2-1604-40EA-A720-63CDDA93DD76
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

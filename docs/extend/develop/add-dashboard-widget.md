@@ -1,11 +1,9 @@
 ---
 title: Add a dashboard widget | Extensions for Azure DevOps Services
 description: Tutorial for creating a widget that you can then add to a dashboard  
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
