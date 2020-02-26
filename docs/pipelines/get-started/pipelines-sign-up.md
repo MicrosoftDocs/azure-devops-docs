@@ -112,7 +112,7 @@ You can add and invite others to work on your project by adding their email addr
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
-2. Select **Users** > **Add new users**.
+2. Select **Users** > **Add users**.
 
    :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users":::]
 
