@@ -15,11 +15,11 @@ ms.date: 04/05/2019
 
 # Query trend data
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Examining trends in data and making period-over-period comparisons are important aspects of reporting and data analysis. Analytics supports these capabilities.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 Trend data is exposed in the WorkItemSnapshot and WorkItemBoardSnapshot entity sets. They are constructed such that every work item, from the day it was created until today, exists for each day. This means that for an organization with only one work item that was created a year ago, there are 365 rows in this entity. For very large projects, these entities would be impractical to use with client tools.
 
@@ -45,7 +45,7 @@ Using the OData Aggregation Extensions, you can return aggregated data from Azur
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 <a id="trend-data" />
 

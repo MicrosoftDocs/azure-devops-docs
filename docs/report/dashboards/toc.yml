@@ -26,9 +26,9 @@
   - name: View/configure velocity 
     displayname: planned, completed, completed late, incomplete, team, in-context report, analytics
     href: team-velocity.md
-  - name: Monitor sprint burndown
+  - name: View/configure sprint burndown
     displayname: sprint backlog, current, past
-    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: configure-sprint-burndown.md
   - name: Configure a Burndown or Burnup widget
     href: configure-burndown-burnup-widgets.md
     displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval 

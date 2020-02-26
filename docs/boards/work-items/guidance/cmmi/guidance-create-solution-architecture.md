@@ -1,5 +1,5 @@
----
-title: CMMI process guidance, Create a solution architecture
+﻿---
+title: Create a solution architecture
 titleSuffix: Azure Boards
 description: Investigate alternative architectural strategies to create good architecture  
 ms.prod: devops
@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # Create a solution architecture
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 
 Part of creating a good architecture is investigating alternative architectural strategies. Alternative strategies have different benefits that are based on platform selection, technologies that are used, and code reuse. Each strategy is designed and proofs of concept are built to further investigate the costs and benefits of each strategy. The strategies are assessed against product and quality requirements, and ultimately a strategy is chosen to be used to implement the product. Finally, security and performance are architectural concerns for which work must be done over the entire product.  

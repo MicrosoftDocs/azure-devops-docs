@@ -15,7 +15,7 @@ ms.date: 11/2/2018
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
@@ -27,7 +27,7 @@ In this article you'll learn:
 > * How to construct a query to return hierarchically (parent-child) linked work items
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 
@@ -39,7 +39,7 @@ In this article you'll learn:
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 
 
@@ -95,7 +95,7 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
-> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State;$levels=max)&$filter=WorkItemId eq 105
+> https://analytics.dev.azure.com/{OrganizationName}/{ProjectName}/_odata/{version}//WorkItems?$select=WorkItemId,Title,State&$expand=Parent($select=WorkItemId,Title,State)&$filter=WorkItemId eq 105
 > ```
 
 **Response**
@@ -112,17 +112,13 @@ By replacing **Children** with **Parent** in the ```$expand``` option you can re
 >             "WorkItemId": 55,
 >             "Title": "Story 22",
 >             "State": "New",
->             "Parent": {
->                 "WorkItemId": 103,
->                 "Title": "Feature Y",
->                 "State": "New"
->             }
 >         }
 >     }]
 > }
 > ```
 
 ## Query for non-hierarchical links
+
 In addition to the Parent/Child hierarchy items can be directly related to other items with link types like *Related* or *Duplicate*. The **Links** navigation property allows you to request these relationships.
 
 ### Example: Request an item's links

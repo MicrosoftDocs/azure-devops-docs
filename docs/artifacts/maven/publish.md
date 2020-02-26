@@ -9,7 +9,7 @@ ms.author: phwilson
 author: chasewilson
 ms.topic: conceptual
 ms.reviewer: dastahel
-ms.date: 01/31/2018
+ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'
 ---
 
@@ -19,4 +19,4 @@ monikerRange: '>= tfs-2018'
 
 **Azure DevOps Services** | **TFS 2018**
 
-[!INCLUDE [](../_shared/maven/publish.md)]
+[!INCLUDE [](../includes/maven/publish.md)]

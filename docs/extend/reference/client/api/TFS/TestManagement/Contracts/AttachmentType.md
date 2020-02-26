@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts AttachmentType API | Extensions for Azure DevOps Services
+description: Data representation of an attachment type.
 ms.assetid: c6fad8b2-b0ec-b9d7-3ccb-89bc652f8636
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -17,7 +17,7 @@ ms.date: 09/18/2019
 
 # Create and embed a work item from wiki
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 
 Learn how to create and embed work items in your wiki page content. This feature gives you an easy way to promote text to a link to a feature, task, or user story.
@@ -26,13 +26,13 @@ Learn how to create and embed work items in your wiki page content. This feature
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`), and then select your **project**.
 
-   ![Screenshot of sign-in to Azure DevOps, and then select Project](_img/wiki/sign-in-to-azure-devops-select-project.png)
+   ![Screenshot of sign-in to Azure DevOps, and then select Project](media/wiki/sign-in-to-azure-devops-select-project.png)
 
 2. Select your **wiki**.
 2. Highlight the text, and then select the type of work item you want to create from the **New work item** dropdown menu, which appears above the highlighted text. The work item form opens with the selected text added as the title and description of the work item. 
 3. Add information to the work item, such as entering an assignee in the Assign To box, and then select **Save**.
   
-    ![Create and embed work items from Wiki content](_img/wiki/create-embed-wit-from-wiki.gif)
+    ![Create and embed work items from Wiki content](media/wiki/create-embed-wit-from-wiki.gif)
 
 The selected content in the wiki page is replaced with the embedded work item.
 
@@ -43,5 +43,5 @@ The selected content in the wiki page is replaced with the embedded work item.
 
 The status of an embedded work item is present in the wiki page, along with its ID and title. Work item references in pull request comments and Boards discussions also show the status.
 
-![Work item status shown on wiki page](_img/wiki/show-work-item-status-wiki.png)
+![Work item status shown on wiki page](media/wiki/show-work-item-status-wiki.png)
 

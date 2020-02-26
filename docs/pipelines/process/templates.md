@@ -1,29 +1,155 @@
 ---
 title: Templates
 ms.custom: seodec18
-description: How to re-use pipelines through templates
+description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.manager: mijacobs
-ms.author: macoope
-author: vtbassmatt
-ms.date: 09/25/2019
+ms.author: jukullam
+author: juliakm
+ms.date: 02/11/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
-# Templates
+# Template types & usage
 
-**Azure Pipelines**
+Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
-Use templates to define your logic once and then reuse it several times.
-Templates combine the content of multiple YAML files into a single pipeline.
-You can pass parameters into a template from your parent pipeline.
+If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
 
-## Step re-use
+## Parameters
 
-You can reuse one or more steps across several jobs.
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. The `parameters` section defines what parameters are available. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the pipeline.
+
+### Passing parameters
+
+Parameters must contain a name and data type. In `azure-pipelines.yml`, when the parameter `yesNo` is set to a boolean value, the build succeeds. When `yesNo` is set to a string such as `apples`, the build fails.
+
+```yaml
+# File: simple-param.yml
+parameters:
+- name: yesNo # name of the parameter; required
+  type: boolean # data type of the parameter; required
+  default: false
+
+steps:
+    - script: echo ${{ parameters.yesNo }}
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+    template: simple-param.yml
+    parameters:
+        yesNo: false # set to a non-boolean value to have the build fail
+```
+
+### Parameter data types
+
+| Data type | Notes |
+|-----------|-------|
+| `string` | string
+| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
+| `boolean` | `true` or `false`
+| `object` | any YAML structure
+| `step` | a single step
+| `stepList` | sequence of steps
+| `job` | a single job
+| `jobList` | sequence of jobs
+| `deployment` | a single deployment job
+| `deploymentList` | sequence of deployment jobs
+| `stage` | a single stage
+| `stageList` | sequence of stages
+
+
+## Extend from a template
+
+You can use templates to define how parameters can be used. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
+
+```yaml
+# File: start.yml
+parameters:
+- name: buildSteps # the name of the parameter is buildSteps
+  type: stepList # data type is StepList
+  default: [] # default value of buildSteps
+stages:
+- stage: secure_buildstage
+  pool: Hosted VS2017
+  jobs:
+  - job: secure_buildjob
+    steps:
+
+    - script: echo This happens before code 
+      displayName: 'Base: Pre-build'
+
+    - script: echo Building
+      displayName: 'Base: Build'
+
+    - ${{ each step in parameters.buildSteps }}:
+      - ${{ each pair in step }}:
+          ${{ if ne(pair.key, 'script') }}:
+            ${{ pair.key }}: ${{ pair.value }}       
+          ${{ if eq(pair.key, 'script') }}: # checks for buildStep with script
+            'Rejecting Script: ${{ pair.value }}': error # rejects buildStep when script is found         
+
+    - script: echo This happens after code
+      displayName: 'Base: Signing'
+```
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- master
+
+extends:
+  template: start.yml
+  parameters:
+    buildSteps:  
+      - bash: echo Test #Passes
+        displayName: Test - Will Pass
+      - bash: echo "Test"
+        displayName: Test 2 - Will Pass
+      - script: echo "Script Test" # Comment out to successfully pass
+        displayName: Test 3 - Will Fail
+```
+
+## Insert a template
+
+You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
+
+```yaml
+# File: include-npm-steps.yml
+
+steps:
+- script: npm install
+- script: yarn install
+- script: npm run compile
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+jobs:
+- job: Linux
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: templates/include-npm-steps.yml  # Template reference
+```
+
+### Step reuse
+
+You can insert a template to reuse one or more steps across several jobs.
 In addition to the steps from the template, each job can define additional steps.
 
 ```yaml
@@ -45,7 +171,7 @@ jobs:
 
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - template: templates/npm-steps.yml  # Template reference
 
@@ -58,9 +184,9 @@ jobs:
   - script: echo This step runs after the template's steps.
 ```
 
-## Job re-use
+### Job reuse
 
-Much like steps, jobs can be reused.
+Much like steps, jobs can be reused with templates.
 
 ```yaml
 # File: templates/jobs.yml
@@ -81,58 +207,50 @@ jobs:
 - template: templates/jobs.yml  # Template reference
 ```
 
-## Stage re-use
+### Stage reuse
 
-Stages can also be reused.
+Stages can also be reused with templates.
 
 ```yaml
-# File: templates/stages.yml
+# File: templates/stages1.yml
 stages:
-- stage: Stage1
+- stage: Angular
   jobs:
-  - job: Build
+  - job: angularinstall
     steps:
-    - script: npm install
+    - script: npm install angular
+```
 
-  - job: Test
+```yaml
+# File: templates/stages2.yml
+stages:
+- stage: Print
+  jobs:
+  - job: printhello
     steps:
-    - script: npm test
+      - script: 'echo Hello world'
 ```
 
 ```yaml
 # File: azure-pipelines.yml
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
 
 stages:
-- template: templates/stages.yml  # Template reference
+- stage: Install
+  jobs: 
+    - job: npminstall
+      steps:
+      - task: Npm@1
+        inputs:
+          command: 'install'
+- template: templates/stages1.yml
+- template: templates/stages2.yml
 ```
 
-## Variable re-use
-
-Variables can be defined in one YAML and used in another.
-
-```yaml
-# File: vars.yml
-variables:
-  favoriteVeggie: 'brussels sprouts'
-```
-
-```yaml
-# File: azure-pipelines.yml
-
-variables:
-- template: vars.yml  # Template reference
-
-steps:
-- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
-```
-
-## Passing parameters
-
-You can pass parameters to templates.
-The `parameters` section defines what parameters are available in the template and their default values. 
-Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
-
-To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
 ### Job, stage, and step templates with parameters
 
@@ -140,8 +258,10 @@ To use parameters across multiple pipelines, see how to create a [variable group
 # File: templates/npm-with-params.yml
 
 parameters:
-  name: ''  # defaults for any parameters that aren't specified
-  vmImage: ''
+- name: name  # defaults for any parameters that aren't specified
+  default: ''
+- name: vmImage
+  default: ''
 
 jobs:
 - job: ${{ parameters.name }}
@@ -167,7 +287,7 @@ jobs:
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
     name: macOS
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
 
 - template: templates/npm-with-params.yml  # Template reference
   parameters:
@@ -182,11 +302,13 @@ For example, steps with parameters:
 # File: templates/steps-with-params.yml
 
 parameters:
-  runExtendedTests: 'false'  # defaults for any parameters that aren't specified
+- name: 'runExtendedTests'  # defaults for any parameters that aren't specified
+  type: boolean
+  default: false
 
 steps:
 - script: npm test
-- ${{ if eq(parameters.runExtendedTests, 'true') }}:
+- ${{ if eq(parameters.runExtendedTests, true) }}:
   - script: npm test --extended
 ```
 
@@ -205,15 +327,14 @@ steps:
 ```
 
 > [!Note]
-> Scalar parameters are always treated as strings.
-> For example, `eq(parameters['myparam'], true)` will almost always return `true`, even if the `myparam` parameter is the word `false`.
+> Scalar parameters without a specified type are treated as strings.
+> For example, `eq(parameters['myparam'], true)` will return `true`, even if the `myparam` parameter is the word `false`, if `myparam` is not explicitly made `boolean`.
 > Non-empty strings are cast to `true` in a Boolean context.
 > That [expression](expressions.md) could be rewritten to explicitly compare strings: `eq(parameters['myparam'], 'true')`.
 
 Parameters are not limited to scalar strings.
-As long as the place where the parameter expands expects a mapping, the parameter can be a mapping.
-Likewise, sequences can be passed where sequences are expected.
-For example:
+See the list of [data types](#parameter-data-types).
+For example, using the `object` type:
 
 ```yaml
 # azure-pipelines.yml
@@ -226,14 +347,38 @@ jobs:
 
 # process.yml
 parameters:
-  pool: {}
+- name: 'pool'
+  type: object
+  default: {}
 
 jobs:
 - job: build
   pool: ${{ parameters.pool }}
 ```
 
-## Using other repositories
+### Variable reuse
+
+Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. 
+
+```yaml
+# File: vars.yml
+variables:
+  favoriteVeggie: 'brussels sprouts'
+```
+
+```yaml
+# File: azure-pipelines.yml
+
+variables:
+- template: vars.yml  # Template reference
+
+steps:
+- script: echo My favorite vegetable is ${{ variables.favoriteVeggie }}.
+```
+
+
+
+## Use other repositories
 
 You can keep your templates in other repositories.
 For example, suppose you have a core pipeline that you want all of your app pipelines to use.
@@ -243,7 +388,9 @@ You can put the template in a core repo and then refer to it from each of your a
 # Repo: Contoso/BuildTemplates
 # File: common.yml
 parameters:
-  vmImage: 'ubuntu 16.04'
+- name: 'vmImage'
+  default: 'ubuntu 16.04'
+  type: string
 
 jobs:
 - job: Build
@@ -289,7 +436,17 @@ jobs:
 
 For `type: github`, `name` is `<identity>/<repo>` as in the examples above.
 For `type: git` (Azure Repos), `name` is `<project>/<repo>`.
-The project must be in the same organization; cross-organization references are not supported.
+If that project is in a separate Azure DevOps organization, you'll need to configure a [service connection](../library/service-endpoints.md) with access to the project and include that in YAML:
+
+```yaml
+resources:
+  repositories:
+  - repository: templates
+    name: Contoso/BuildTemplates
+    endpoint: myServiceConnection # Azure DevOps service connection
+jobs:
+- template: common.yml@templates
+```
 
 Repositories are resolved only once, when the pipeline starts up.
 After that, the same resource is used for the duration of the pipeline.
@@ -311,13 +468,15 @@ You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression.
 
-For example you define a template:
+For example, you define a template:
 
 ```yaml
 # File: steps/msbuild.yml
 
 parameters:
-  solution: '**/*.sln'
+- name: 'solution'
+  default: '**/*.sln'
+  type: string
 
 steps:
 - task: msbuild@1
@@ -341,8 +500,8 @@ steps:
 
 ### Context
 
-Within a template expression, you have access to the `parameters` context which contains the values of parameters passed in.
-Additionally, you have access to the `variables` context which contains all the variables specified in the YAML file plus 
+Within a template expression, you have access to the `parameters` context that contains the values of parameters passed in.
+Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
 the [system variables](../build/variables.md#system-variables). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
@@ -357,7 +516,9 @@ Here's an example that checks for the `solution` parameter using Bash (which ena
 # File: steps/msbuild.yml
 
 parameters:
-  solution: ''
+- name: 'solution'
+  default: ''
+  type: string
 
 steps:
 - bash: |
@@ -404,8 +565,12 @@ You can use [general functions](expressions.md#functions) in your templates. You
 
 ```yaml
 parameters:
-  restoreProjects: ''
-  buildProjects: ''
+- name: 'restoreProjects'
+  default: ''
+  type: string
+- name: 'buildProjects'
+  default: ''
+  type: string
 
 steps:
 - script: echo ${{ coalesce(parameters.foo, parameters.bar, 'Nothing to see') }}
@@ -420,9 +585,15 @@ For instance, to insert into a sequence:
 # File: jobs/build.yml
 
 parameters:
-  preBuild: []
-  preTest: []
-  preSign: []
+- name: 'preBuild'
+  type: stepList
+  default: []
+- name: 'preTest'
+  type: stepList
+  default: []
+- name: 'preSign'
+  type: stepList
+  default: []
 
 jobs:
 - job: Build
@@ -457,7 +628,9 @@ To insert into a mapping, use the special property `${{ insert }}`.
 ```yaml
 # Default values
 parameters:
-  additionalVariables: {}
+- name: 'additionalVariables'
+  type: object
+  default: {}
 
 jobs:
 - job: build
@@ -480,15 +653,20 @@ jobs:
 
 ### Conditional insertion
 
-If you want to conditionally insert into a sequence or a mapping, then use insertions and expression evaluation.
+If you want to conditionally insert into a sequence or a mapping in a template, use insertions and expression evaluation. You can also use `if` statements [outside of templates](expressions.md) as long as you use template syntax.  
 
-For example, to insert into a sequence:
+For example, to insert into a sequence in a template:
 
 ```yaml
 # File: steps/build.yml
 
 parameters:
-  toolset: msbuild
+- name: 'toolset'
+  default: msbuild
+  type: string
+  values:
+  - msbuild
+  - dotnet
 
 steps:
 # msbuild
@@ -515,18 +693,20 @@ steps:
     toolset: dotnet
 ```
 
-For example, to insert into a mapping:
+For example, to insert into a mapping in a template:
 
 ```yaml
 # File: steps/build.yml
 
 parameters:
-  debug: false
+- name: 'debug'
+  type: boolean
+  default: false
 
 steps:
 - script: tool
   env:
-    ${{ if eq(parameters.debug, 'true') }}:
+    ${{ if eq(parameters.debug, true) }}:
       TOOL_DEBUG: true
       TOOL_DEBUG_DIR: _dbg
 ```
@@ -547,7 +727,9 @@ For example, you can wrap the steps of each job with additional pre- and post-st
 ```yaml
 # job.yml
 parameters:
-  jobs: []
+- name: 'jobs'
+  type: jobList
+  default: []
 
 jobs:
 - ${{ each job in parameters.jobs }}: # Each job
@@ -580,8 +762,9 @@ For example, to add additional dependencies:
 
 ```yaml
 # job.yml
-parameters:
-  jobs: []
+- name: 'jobs'
+  type: jobList
+  default: []
 
 jobs:
 - job: SomeSpecialTool                # Run your special tool in its own job first
@@ -613,6 +796,14 @@ jobs:
       - script: echo This job depends on both Job A and on SomeSpecialTool.
 ```
 
-### Escaping
+### Escape a value
 
-If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example, `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+
+## Limits
+
+Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
+To help prevent runaway growth, Azure Pipelines imposes the following limits:
+- No more than 50 separate YAML files may be included (directly or indirectly)
+- No more than 10 megabytes of total YAML content can be included
+- No more than 2000 characters per template expression are allowed

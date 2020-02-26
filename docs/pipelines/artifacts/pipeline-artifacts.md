@@ -14,7 +14,7 @@ ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline artifacts in Azure Pipelines
+# Publish and download artifacts
 
 **Azure Pipelines**
 
@@ -24,6 +24,8 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 > Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
 
 ## Publishing artifacts
+
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 
@@ -50,7 +52,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -63,6 +65,12 @@ steps:
    ```
    $(System.DefaultWorkingDirectory)/bin/WebApp
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
 
 ---
 
@@ -117,13 +125,19 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
    ```
    WebApp
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
 
 ---
 
@@ -179,7 +193,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -198,6 +212,10 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
    ```
    '**/*.js'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 
@@ -232,13 +250,17 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Matching patterns:
 
    ```
    '**/*.zip'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 

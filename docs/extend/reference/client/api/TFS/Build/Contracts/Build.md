@@ -1,6 +1,6 @@
 ---
 title: TFS/Build/Contracts Build API | Extensions for Azure DevOps Services
-description: Data representation of a build
+description: Data representation of a build.
 ms.assetid: c9030833-785f-f748-cbd7-2269619f1fd7
 ms.prod: devops
 ms.technology: devops-ecosystem
@@ -45,13 +45,13 @@ Module path: `TFS/Build/Contracts`
 
 * `logs`: [BuildLogReference](./BuildLogReference.md). Log location of the build
 
-* `orchestrationPlan`: [TaskOrchestrationPlanReference](./TaskOrchestrationPlanReference.md). Orchestration plan for the build
+* `orchestrationPlan`: [TaskOrchestrationPlanReference](../../distributedtask/contracts/TaskOrchestrationPlanReference.md). Orchestration plan for the build
 
 * `parameters`: string. Parameters for the build
 
 * `priority`: [QueuePriority](./QueuePriority.md). The build&#x27;s priority
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The project
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project
 
 * `properties`: any. 
 

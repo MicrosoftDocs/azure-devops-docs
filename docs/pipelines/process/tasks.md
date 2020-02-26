@@ -1,5 +1,5 @@
 ---
-title: Build and Release Tasks in Azure Pipelines and TFS
+title: Build and Release Tasks
 ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
@@ -9,15 +9,15 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 07/30/2019
+ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Tasks
+# Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 A **task** is the building block for defining automation in a
 pipeline.
@@ -26,7 +26,21 @@ abstracted with a set of inputs.
 
 When you add a task to your pipeline, it may also add a set of **demands** to the pipeline. The demands define the prerequisites that must be installed on the [agent](../agents/agents.md) for the task to run. When you run the build or deployment, an agent that meets these demands will be chosen.
 
+::: moniker range="> azure-devops-2019"
+
+When you run a [job](phases.md), all the tasks are run in sequence, one after the other.
+To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+
+By default, all tasks run in the same context, whether that's on the [host](phases.md) or in a [job container](container-phases.md).
+You may optionally use [step targets](#step-target) to control context for an individual task.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 When you run a [job](phases.md), all the tasks are run in sequence, one after the other, on an agent. To run the same set of tasks in parallel on multiple agents, or to run some tasks without using an agent, see [jobs](phases.md).
+
+::: moniker-end
 
 ## Custom tasks
 
@@ -117,10 +131,25 @@ Control options are available as keys on the `task` section.
   continueOnError: boolean  # 'true' if future steps should run even if this step fails; defaults to 'false'
   enabled: boolean          # whether or not to run this step; defaults to 'true'
   timeoutInMinutes: number  # how long to wait before timing out the task
+  target: string            # 'host' or the name of a container resource to target
 ```
 
 The timeout period begins when the task starts running. It does not include the
 time the task is queued or is waiting for an agent.
+
+In this YAML, `PublishTestResults@2` will run even if the previous step fails because of the [succeededOrFailed() condition](expressions.md#succeededorfailed).
+
+```yaml
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.7'
+    architecture: 'x64'
+- task: PublishTestResults@2
+  inputs:
+   testResultsFiles: "**/TEST-*.xml"
+  condition: succeededOrFailed()
+```
 
 > [!NOTE]
 > For the full schema, see [YAML schema for `task`](../yaml-schema.md#task).
@@ -128,9 +157,30 @@ time the task is queued or is waiting for an agent.
 
 ### Conditions
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
+### Step target
+
+Tasks run in an execution context, which is either the agent host or a container.
+An individual step may override its context by specifying a `target`.
+Available options are the word `host` to target the agent host plus any containers defined in the pipeline.
+For example:
+
+```yaml
+resources:
+  containers:
+  - container: pycontainer
+    image: python:3.8
+
+steps:
+- task: SampleTask@1
+  target: host
+- task: AnotherTask@1
+  target: pycontainer
+```
+
+Here, the `SampleTask` runs on the host and `AnotherTask` runs in a container.
 
 ::: moniker-end
 
@@ -167,7 +217,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 
 Select the condition for running this task:
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
@@ -249,7 +299,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/_img/node.png) Tool: Node.js Installer
+![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -257,7 +307,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/_img/command-line.png) Utility: Command Line
+![icon](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```
@@ -287,10 +337,10 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
 
-## Related topics
+## Related articles
 
-* [Task jobs](phases.md)
+* [Jobs](phases.md)
 * [Task groups](../library/task-groups.md)
 * [Built-in task catalog](../tasks/index.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

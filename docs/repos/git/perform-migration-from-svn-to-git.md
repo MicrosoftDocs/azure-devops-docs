@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Learn how to migrate from Subversion (SVN) to Git, including history
 
-When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/azure/devops/learn/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a history *with* migration.
+When moving to Git from another version control system like Subversion (SVN), we generally recommend that you perform a "[tip migration](/azure/devops/learn/git/centralized-to-git)", which migrates just the latest version of the repository contents, without including history.  However, many people want to perform a more advanced migration, including history.  This guidance will introduce a migration *with* history.
 
 SVN migrations to Git can vary in complexity, depending on how old the repository is and how many branches were created and merged, and whether you're using regular SVN or close relative like SVK. 
 
@@ -46,7 +46,7 @@ The high-level workflow for migrating from SVN to Git is as follows:
 Configure a migration environment on a local workstation and install the following software:
 
 * [Git](https://git-for-windows.github.io/)
-* [Subversion](http://subversion.apache.org/packages.html)
+* [Subversion](https://subversion.apache.org/packages.html)
 * [git-svn utility](https://www.kernel.org/pub/software/scm/git/docs/git-svn.html) (already part of Git)
 
 You will also need to create a Git repository for your organization to host the converted SVN repository, you may follow [Create a new Git repo in your project
@@ -60,7 +60,7 @@ The goal of this step is to convert the source Subversion repository to a local 
 >
 > *Bare* Git repositories are structured differently and given the fact that it doesn't have a working directory prevent direct commit to the repository.
 >
-> ![Bare git repo](_img/perform-migration-from-svn-to-git/bare-git-repo.png)
+> ![Bare git repo](media/perform-migration-from-svn-to-git/bare-git-repo.png)
 
 ### Retrieve a list of all Subversion authors
 
@@ -68,11 +68,11 @@ Subversion just uses the username for each commit, while Git stores both a real 
 
 **Subversion users**
 
-![Subversion users](_img/perform-migration-from-svn-to-git/svn-log.png)
+![Subversion users](media/perform-migration-from-svn-to-git/svn-log.png)
 
 **Git users**
 
-![git users](_img/perform-migration-from-svn-to-git/git-log.png)
+![git users](media/perform-migration-from-svn-to-git/git-log.png)
 
 To extract a list of all SVN users from the root of your local Subversion checkout, run this PowerShell command:
 

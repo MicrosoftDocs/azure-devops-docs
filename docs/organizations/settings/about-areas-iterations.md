@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # About area and iteration paths (aka sprints) 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -27,7 +27,7 @@ The areas and iterations you see depend on the process you used to create your p
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |<img src="_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
+> |<img src="media/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="media/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
 
 
@@ -107,14 +107,14 @@ Add iterations to support these requirements:
 
 In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
-<img src="_img/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 As you create the backlog of product features and tasks, you can start to assign them to the milestones by which you expect the team to finish the features and tasks.
 As your needs change, you can add events under each major milestone that reflect how your team schedules and manages its work.  
 
 As the following example shows, the Beta 1 iteration now contains three child nodes, one for each sprint in the Beta 1 time period.  
 
-<img src="_img/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 
@@ -135,6 +135,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 > | Path hierarchy depth | Must be fewer than 14 levels deep | 
 
 ## Related articles 
+
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 - [Define area paths and assign to a team](set-area-paths.md)
@@ -144,18 +145,23 @@ As you can see, areas and iterations play a major role in supporting Agile tools
 
 
 <a name="export"></a>
+
 ### Export tree structures  
 
 You can't export the structure of tree paths for one project to use with another  project.  
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 <a name="field-rules"></a>
+
 ### Supported field rules  
 
 You can [specify only a small subset of rules](../../reference/xml/apply-rule-work-item-field.md#system), such as ```HELPTEXT``` and ```READONLY``` to System.XXX fields. 
 
 <a name="team-field"></a>
+
 ### Team field versus team area path  
+
 If your organization has several teams that work from a common backlog and across many product areas, you might want to change how teams are configured. By [adding a custom field to represent teams](../../reference/use-team-fields-instead-area-paths.md) in your organization, you can reconfigure the agile planning tools and pages to support your teams and decouple assignment to teams and area paths. 
 
 ::: moniker-end

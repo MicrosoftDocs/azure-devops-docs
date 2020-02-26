@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildStatus API | Extensions for Azure DevOps Services
+description: Data representation of a build status.
 ms.assetid: 45aacfd8-bc44-6bb7-c5d5-26bd4fc62ed3
 ms.prod: devops
 ms.technology: devops-ecosystem

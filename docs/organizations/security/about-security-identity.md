@@ -11,12 +11,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 06/02/2019
+ms.date: 11/26/2019
 ---
 
 # About security and identity
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 For anyone to access a project, you must add them to a security group. For a quick look at what permissions are assigned to the default security groups, see [Default permissions and access assignments](permissions-access.md).
 
@@ -47,9 +49,9 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 ### Authentication methods, integrating with other services and apps
 
-Other applications and services can integrate with Azure DevOps services and resources. To access your account without asking for user credentials multiple times, apps can use these authentication methods:
+Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
-*	[Alternate credentials](../../repos/git/auth-overview.md#alternate-credentials) 
+*	[Alternate credentials](../../repos/git/auth-overview.md) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
@@ -66,13 +68,13 @@ to generate tokens for:
 	*	Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
 
 *	[OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
-to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/azure/devops/integrate/api/shared/accounts) 
-and [Profiles](/azure/devops/integrate/api/shared/profiles) 
+to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
+and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
 *	[SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
-or Windows running [Git for Windows](http://www.git-scm.com/download/win) 
+or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 
 [Git credential managers](../../repos/git/set-up-credential-managers.md) 
 or [personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
@@ -152,7 +154,7 @@ Azure DevOps is pre-configured with default security groups. Default permissions
 
 You can populate these groups by using individual users. However, for ease of management, it's easier if you populate these groups by using Azure AD or AD security groups. This method enables you to manage group membership and permissions more efficiently across multiple computers.
 
-![Conceptual image of permissions and access levels](_img/permissions/permissions-overview.png) 
+![Conceptual image of permissions and access levels](media/permissions/permissions-overview.png) 
 
 Azure DevOps controls access through these three inter-connected functional areas:
 
@@ -164,7 +166,7 @@ Azure DevOps controls access through these three inter-connected functional area
 
 Each functional area uses groups to simplify management across the deployment. You add users and groups through the web administration context. Permissions are automatically set based on the security group that you add users to, or based on the object, project, collection, or server level to which you add groups. On the other hand, access level management controls access for all users and groups at the server level.
 
-<img src="_img/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
+<img src="media/access-groups-permissions.png" alt="Access levels, membership management, and permissions management" style="border: 1px solid #C3C3C3;" />  
 
 You can create local groups or Active Directory (AD) [groups to manage your users](/azure/devops/server/admin/setup-ad-groups). If you decide to use groups, make sure that membership in those groups is limited to valid users. Because group membership can be altered by their owners at any time, if those owners did not consider Azure DevOps Server access when they created those groups, their changes to membership can cause unwanted side effects within the server.
 
@@ -172,7 +174,7 @@ You can create local groups or Active Directory (AD) [groups to manage your user
 
 The following image shows the default permission assignments made to the Contributors group.
 
-![Contributor role default permissions](_img/contributor-permissions.png)
+![Contributor role default permissions](media/contributor-permissions.png)
 
 To learn more about other groups and their permission assignments,
 see [Permissions and groups reference](permissions.md).

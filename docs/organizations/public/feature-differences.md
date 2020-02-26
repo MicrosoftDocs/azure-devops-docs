@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # How access to services are limited for non-members of a public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In a public project, most features work the same for members and non-members.
 Today, non-members get read-only access to public projects and members get access based on their access level and permissions. Over time, we give non-members more features, for example commenting on work items.
@@ -70,4 +70,4 @@ Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't 
 
 The following dashboard widgets won't display any useful information for non-members.
 
-[!INCLUDE [temp](_shared/unavailable-widgets.md)]  
+[!INCLUDE [temp](includes/unavailable-widgets.md)]  

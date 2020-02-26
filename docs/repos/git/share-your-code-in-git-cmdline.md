@@ -54,7 +54,7 @@ easily connect to Azure Repos.
 
 ### macOS
 
-Use [Homebrew](http://brew.sh/) to install and set up Git.
+Use [Homebrew](https://brew.sh/) to install and set up Git.
 
 ```
 brew install git

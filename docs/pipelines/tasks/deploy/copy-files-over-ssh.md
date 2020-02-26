@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Copy Files Over SSH task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to copy files from a source folder to a target folder on a remote machine over SSH.
 
@@ -25,7 +25,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -38,7 +38,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
+[!INCLUDE [temp](../includes/yaml/CopyFilesOverSSHV0.md)]
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 * [SSH task](ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
@@ -70,9 +70,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+[!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ### Is this task supported for target machines running operating systems other than Linux?
 This task is intended for target machines running Linux.
@@ -81,7 +81,7 @@ This task is intended for target machines running Linux.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

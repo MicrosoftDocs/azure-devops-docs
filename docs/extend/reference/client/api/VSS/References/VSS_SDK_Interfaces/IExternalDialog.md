@@ -1,5 +1,6 @@
 ---
 title: VSS/References/VSS.SDK.Interfaces IExternalDialog API | Extensions for Azure DevOps Services
+description: Data representation of iExternal diaglog.
 ms.assetid: a688252e-d157-d55c-ee40-cf4c5def92fd
 ms.prod: devops
 ms.technology: devops-ecosystem

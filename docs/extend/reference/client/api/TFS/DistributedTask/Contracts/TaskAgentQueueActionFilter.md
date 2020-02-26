@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts TaskAgentQueueActionFilter API | Extensions for Azure DevOps Services
+description: Data representation of a task agent queue action filter.
 ms.assetid: 1faa30c0-c194-72ab-15c4-bb3de32e0aa2
 ms.prod: devops
 ms.technology: devops-ecosystem

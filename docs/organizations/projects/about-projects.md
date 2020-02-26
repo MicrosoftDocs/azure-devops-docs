@@ -9,14 +9,14 @@ ms.assetid:
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/24/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ---
 
 # About projects and scaling your organization
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps.
 
@@ -27,12 +27,12 @@ When you create your project, a team of the same name is automatically created. 
 <tr>
 <td width="40%">
 
-<strong>Single project and team defined within an organization or collection</strong><br/><img src="_img/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
+<strong>Single project and team defined within an organization or collection</strong><br/><img src="media/about-projects/project-concept.png" alt="Single collection-project-team conceptual image"/><br/></td>
 
 <td width="60%">
 
 <strong>Multiple projects and teams defined within organization or collection</strong>
-<img src="_img/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
+<img src="media/about-projects/multiple-projects-concept.png" alt="Scaled collection-project-team conceptual image"/><br/>
 </td>
 </tr>
 </tbody>
@@ -80,10 +80,10 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects](_img/about-projects/projects-hub-vert.png)  
+    > ![Open Projects](media/about-projects/projects-hub-vert.png)  
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -91,15 +91,15 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the ![](../../_img/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](../../_shared/_img/settings/open-project-hub-horz.png)
+    > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](_img/about-projects/projects-hub-horz.png)
+    > ![Open Projects, horizontal nav](media/about-projects/projects-hub-horz.png)
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ You can view the projects defined for your organization by opening the **Project
 1. Choose the name of the server.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Projects, horizontal nav](_img/about-projects/open-projects-tfs-15.png)
+    > ![Open Projects, horizontal nav](media/about-projects/open-projects-tfs-15.png)
 
 2. From there, you can choose a project from the set of projects listed.
 
@@ -178,8 +178,8 @@ You can configure and customize most services and applications to support your b
 - **Dashboards**: Each team can [configure their set of dashboards](../../report/dashboards/dashboards.md) to share information and monitor their progress.
 - **Source control**: For each [Git repository](../../repos/git/index.md), you can apply branch policies and define branch permissions. For TFVC repositories, you can [set check-in policies](../../repos/tfvc/add-check-policies.md).
 - **Work tracking**: You can add fields, change the workflow, add custom rules, and add custom pages to the work item form of most work item types. You can also add custom work item types. For details, see [Customize an inheritance process](../settings/work/inheritance-process-model.md).
-- **Build and Release**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
-- **Test**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
+- **Azure Pipelines**: You can fully customize your build and release pipelines, define build steps, release environments, and deployment schedule. For details, see [Build and Release](../../pipelines/index.yml).  
+- **Azure Test Plans**: You can define and configure test plans, test suites, and test cases as well as configure test environments; additionally you can add test steps within your build pipelines. For details, see [Exploratory & Manual Testing](../../test/index.yml) and [continuous testing for your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 
 ::: moniker-end
 

@@ -10,20 +10,22 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 08/15/2019
+ms.date: 11/07/2019
 ---
 
 # Manage and configure team tools
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
 In this article, learn how to configure team tools and manage teams in Azure DevOps.
+
+[!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 
 Most permissions are governed by security groups or defined at the object level. Team settings are managed by the team administrator role. Users assigned as a team administrator can configure and manage all team tools. Specifically, when a team is added to a project, a project admin should [add one or more team administrators](add-team-administrator.md). 
 
 Then, those team admins should look at doing the following specific tasks: 
 - Add team members 
-- Configure area and iteration paths
+- Subscribe to area and iteration paths
 - Configure backlogs and other common team settings
 - Configure Kanban boards 
 
@@ -42,22 +44,22 @@ Optional tasks to consider include:
 - Open a team profile to quickly access items defined for a team. The team profile is available from the **Overview>Dashboards**, **Boards>Boards**, **Boards>Backlogs**, and **Boards>Sprints** pages. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open team profile](../../project/navigation/_img/breadcrumbs/open-team-profile.png)
+	> ![Open team profile](../../project/navigation/media/breadcrumbs/open-team-profile.png)
 
 	A panel opens that shows all items defined for the team. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team profile all items](../../project/navigation/_img/breadcrumbs/team-profile-all-items.png)
+	> ![Team profile all items](../../project/navigation/media/breadcrumbs/team-profile-all-items.png)
 
 - You can filter the list to show only **Dashboards**, **Boards**, **Backlogs**, or  **Sprints** by choosing from the menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Filter team tools](../../project/navigation/_img/breadcrumbs/filter-team-profile.png)
+	> ![Filter team tools](../../project/navigation/media/breadcrumbs/filter-team-profile.png)
 
 - To view the team admins and members of the team, choose **Members**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team members](../../project/navigation/_img/breadcrumbs/team-profile-members.png)
+	> ![Team members](../../project/navigation/media/breadcrumbs/team-profile-members.png)
 
 - To view or change the team configuration, choose **Team Settings**.  
 	You can then complete the following tasks: 
@@ -115,79 +117,79 @@ You can configure most of your team settings from the common configuration dialo
 > The common configuration Settings dialog is available for TFS 2015.1 and later versions.  
 ::: moniker-end  
 
-[!INCLUDE [temp](../../boards/_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../../boards/includes/setup-backlogs-boards.md)]
 
 ::: moniker range=">= azure-devops-2019"  
 
 1. (1) Check that you selected the right project, (2) choose **Boards** > **Boards**, and then (3) select the correct team from the team selector menu.
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Kanban board](../../boards/boards/_img/quickstart/open-kanban-board-agile.png)
+	> ![Open Kanban board](../../boards/boards/media/quickstart/open-kanban-board-agile.png)
 
-1. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
+2. Make sure that you select the team backlog or board that you want to configure using the team selector. To learn more, see [Use breadcrumbs and selectors to navigate and open artifacts](../../project/navigation/use-breadcrumbs-selectors.md). 
 
-1. Choose the product or portfolio backlog from the board-selection menu. 
+3. Choose the product or portfolio backlog from the board-selection menu. 
 	> [!div class="mx-imgBorder"]
-	> ![Choose board level, vert nav](_img/configure-team/choose-board-level-vert.png)
+	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
 
-1. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
-
-	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
-
-1. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+4. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
+	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
+
+5. Choose a tab under any of the sections&mdash;**Cards** ,**Board**, **Charts**, and **General**&mdash;to configure the cards or boards, the cumulative flow chart, or other team settings.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Common configuration dialog team settings](media/configure-team/common-configuration-dialog.png)
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
-	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
+	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
 2. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
+	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
 
 	> [!div class="mx-imgBorder"]
-	> ![Kanban board, open common configuration settings](_img/configure-team/open-settings-vsts-horz.png)
+	> ![Kanban board, open common configuration settings](media/configure-team/open-settings-vsts-horz.png)
 
-2. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
+4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Common configuration dialog team settings]../.../boards/boards/_img/customize-cards/common-config-141.png)
+	> ![Common configuration dialog team settings]../.../boards/boards/media/customize-cards/common-config-141.png)
 
 ::: moniker-end  
 
 ::: moniker range="tfs-2015"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../_img/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
-	![Choose another team from the project menu](../../_shared/_img/work-web-portal-ts-switch-team-focus.png)
+	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
 2. Open **Work>Backlogs>Board**. 
 
 	> [!div class="mx-imgBorder"]
-	>![Open Kanban board](../../boards/boards/_img/kanban-basics-intro.png)  
+	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 
-	![Kanban board, open common configuration settings](_img/configure-team/open-settings-tfs-2015-horz.png)
+	![Kanban board, open common configuration settings](media/configure-team/open-settings-tfs-2015-horz.png)
 
 
 4. Choose a tab under **Cards** or **Board** to configure the cards and Kanban board columns and swimlanes.  
 
-	![Common configuration dialog team settings](_img/configure-team/common-configuration-dialog.png)
+	![Common configuration dialog team settings](media/configure-team/common-configuration-dialog.png)
 
 ::: moniker-end  
 
@@ -414,7 +416,19 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Update team description and picture
 
-Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB. 
+::: moniker range="azure-devops" 
+
+Team settings also include the team name, description, and team profile image. To add a team picture, open the **Settings** tab, and then choose **Upload image**. The maximum file size is 2.5 MB.
+
+![Update team profile picture](media/team-defaults/update-team-profile-pic-preview.png)
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+Team settings also include the team name, description, and team profile image. To add a team picture. Open the Team Profile and choose the picture icon. The maximum file size is 4 MB.
+
+::: moniker-end
 
 ## Manage team notifications 
 

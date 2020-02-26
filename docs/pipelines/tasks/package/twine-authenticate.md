@@ -20,14 +20,11 @@ monikerRange: 'azure-devops'
 
 Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the scope of the build. This enables you to publish Python packages to feeds with `twine` from your build. 
 
-> [!NOTE]
-> The Python Twine Upload Authenticate task in Azure Pipelines is currently in public preview.
-
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/TwineAuthenticateV1.md)]
+[!INCLUDE [temp](../includes/yaml/TwineAuthenticateV1.md)]
 
 ::: moniker-end
 
@@ -38,7 +35,7 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 | --------| -----------|
 | `artifactFeed`<br/>My feed| (Optional) An Azure Artifacts feed name to authenticate with `twine`. |
 | `pythonUploadServiceConnection`<br/>Feed from external organizations | (Optional) A <a href="~/pipelines/library/service-endpoints.md#sep-python-upload" data-raw-source="[twine service connection](~/pipelines/library/service-endpoints.md#sep-python-upload)">twine service connection</a> name from external organization to authenticate with `twine`. The credentials stored in the endpoint must have package upload permissions. |
-| [!INCLUDE [temp](../_shared/control-options-arguments.md)] |
+| [!INCLUDE [temp](../includes/control-options-arguments.md)] |
 
 ## Examples
 
@@ -59,13 +56,15 @@ In this example, we are setting authentication for publishing to a private Azure
 - task: TwineAuthenticate@1
   displayName: 'Twine Authenticate'
   inputs:
-    # In this case, name of the feed is 'myTestFeed'
-    artifactFeed: myTestFeed
+    # In this case, name of the feed is 'myTestFeed' in the project 'myTestProject'. Project is needed because the feed is project scoped.
+    artifactFeed: myTestProject/myTestFeed
   
 # Use command line script to 'twine upload', use -r to pass the repository name and --config-file to pass the environment variable set by the authenticate task.
 - script: |
-   python -m twine upload -r "myTestFeed" --config-file $(PYPIRC_PATH) dist/*.whl
+   python -m twine upload -r myTestFeed --config-file $(PYPIRC_PATH) dist/*.whl
 ```
+
+The 'artifactFeed' input will contain the project and the feed name if the feed is project scoped. If the feed is organization scoped, only the feed name must be provided. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Publish python distribution to official python registry
 

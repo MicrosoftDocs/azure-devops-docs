@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts BuildAuthorizationScope API | Extensions for Azure DevOps Services
+description: Data representation of a build authorization scope.
 ms.assetid: 5432e038-94b1-ac95-e0ea-4ec8907ec7b5
 ms.prod: devops
 ms.technology: devops-ecosystem

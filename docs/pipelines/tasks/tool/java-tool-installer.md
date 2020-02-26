@@ -7,10 +7,10 @@ ms.technology: devops-cicd
 ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
 ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 12/07/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Java Tool Installer task
@@ -29,7 +29,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/JavaToolInstallerV0.md)]
+[!INCLUDE [temp](../includes/yaml/JavaToolInstallerV0.md)]
 
 ::: moniker-end
 
@@ -93,6 +93,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

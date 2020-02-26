@@ -1,4 +1,4 @@
----
+﻿---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
 description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
@@ -16,7 +16,7 @@ ms.date: 10/17/2019
 
 # Best tool to add, update, and link work items 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 Azure Boards provides you several tools&mdash;many designed to perform a single task and others that support several tasks. This article provides a guide to the best tool for specific tasks that will help you work most efficiently. 
 
@@ -70,7 +70,7 @@ Use the [Work Items](view-add-work-items.md) page to quickly focus on work items
 The two types of Kanban boards, product backlog and portfolio backlogs, provide the quickest means for adding user stories and portfolio work item types. You can also quickly add and update the status of child items within a hierarchy. As shown in the following image for the Agile process, when you add tasks to user stories, users stories to features, or features to epics, you automatically create parent-child links between the work items.   
 
 > [!div class="mx-imgBorder"]  
-> ![Agile process, hierarchy of work items types](_img/best-tool/agile-process-plan-wits.png)
+> ![Agile process, hierarchy of work items types](media/best-tool/agile-process-plan-wits.png)
 
 [Product backlog board](../boards/kanban-quickstart.md) | [Features or Epics board](../boards/kanban-epics-features-stories.md) | [Customize cards](../boards/customize-cards.md)
 
@@ -92,11 +92,11 @@ The two types of Kanban boards, product backlog and portfolio backlogs, provide 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md#update-fields-from-the-card)  
+- [Assigning a work item, updating a field displayed on a card](../boards/kanban-quickstart.md)  
 - [Monitoring cumulative flow](../../report/dashboards/cumulative-flow.md)  
 ::: moniker-end  
 
-[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
 ## Backlogs
 
@@ -169,7 +169,7 @@ Sprint tools provide teams a focused view of work items they've assigned to a sp
 - [Emailing or sharing a sprint plan](../sprints/share-plan.md)
 
 **Additional supported tasks**: 
-- [Monitoring sprint burndown](../sprints/sprint-burndown.md)  
+- [Monitoring sprint burndown](../../report/dashboards/configure-sprint-burndown.md)  
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
 
 
@@ -304,7 +304,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 </tbody>
 </table>
 
-<
+
 
 
 ## Other tools 

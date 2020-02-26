@@ -1,5 +1,6 @@
 ---
 title: TFS/DistributedTask/Contracts DataSource API | Extensions for Azure DevOps Services
+description: Data representation of a data source.
 ms.assetid: 084ef408-b158-de62-a294-e4156c498641
 ms.prod: devops
 ms.technology: devops-ecosystem

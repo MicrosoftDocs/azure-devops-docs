@@ -1,5 +1,6 @@
 ---
 title: TFS/Build/Contracts ScheduleTrigger API | Extensions for Azure DevOps Services
+description: Data representation of a schedule trigger.
 ms.assetid: a983d1c1-3064-4c60-9dde-7869eacdf43f
 ms.prod: devops
 ms.technology: devops-ecosystem

@@ -1,5 +1,6 @@
 ---
 title: TFS/TestManagement/Contracts SharedStepModel API | Extensions for Azure DevOps Services
+description: Data representation of a shared step model.
 ms.assetid: 07304356-5f97-2bfd-f084-ca4798f6679c
 ms.prod: devops
 ms.technology: devops-ecosystem

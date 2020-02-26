@@ -4,10 +4,10 @@ description: Use Azure Artifacts within Azure DevOps Services to create your own
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
+ms.author: rabououn
+author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 11/19/2018
+ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -41,17 +41,17 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 2. From your home page, open your profile. Go to your security details:
 
-    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/media/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
 3. Create a personal access token.
 
-   <img alt="Add a personal access token" src="../../repos/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a personal access token" src="../../repos/git/media/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 4.  Name your token. Select a lifespan for your token.
 
 	If you have more than one organization, you can also select the organization where you want to use the token.
 
-    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will authorize for *your specific tasks*.
 
@@ -59,7 +59,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 6. When you're done, make sure to *copy the token*, as this value will only be shown once. You'll use this token as your password, you can choose to store this value in whatever manner you prefer, but it should be treated as safely as a password. **You will need this value later in the tutorial**.
 
-> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-persona-access-tokens-to-authenticaate).
+> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
 ## Create the feed
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
 description: Add workflow states to a work item type for an inherited process for a project
@@ -16,25 +16,25 @@ ms.date: 04/22/2019
 
 # Customize the workflow (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
 
 Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
 
-<img src="_img/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
+<img src="media/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 > [!NOTE]    
 > Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 <a id="states">  </a>
 <a id="add-states"></a>
@@ -50,13 +50,13 @@ States you add appear in the picklist for the States field shown in work item fo
 1. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
 	> [!div class="mx-imgBorder"]  
-	> ![Process page, Bug WIT, States tab, Add state](_img/process/cpworkflow-add-state.png) 
+	> ![Process page, Bug WIT, States tab, Add state](media/process/cpworkflow-add-state.png) 
 
 	If the <strong>New state</strong> option is disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
 2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
-	<img src="_img/process/cpw-new-state-triaged.png" alt="State dialog box" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/cpw-new-state-triaged.png" alt="State dialog box" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]   
 	> You can't change the order of states. States are listed in the order you add them within the **States** page, and they're listed alphabetically within the drop down list of a work item form).  
@@ -66,7 +66,7 @@ States you add appear in the picklist for the States field shown in work item fo
 	Here we show the State drop-down menu with Triaged selected. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Bug form, Triaged state added](_img/process/cpw-added-triage-state-in-form.png) 
+	> ![Bug form, Triaged state added](media/process/cpw-added-triage-state-in-form.png) 
 
 1. Remember, when you add a State to a WIT which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
@@ -78,7 +78,7 @@ You can edit the category or the color of a custom state. However, you can't cha
 1. Choose <strong>Edit</strong> from the &hellip; context menu for the state you want to modify.  
   
 	> [!div class="mx-imgBorder"]  
-	> ![Bug WIT, Edit custom state](_img/process/cpworkflow-edit-state.png)
+	> ![Bug WIT, Edit custom state](media/process/cpworkflow-edit-state.png)
 
 1. Modify the category or color, and then choose <strong>Save</strong>. 
 
@@ -103,7 +103,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 	Here we hide the Resolved state for the Bug WIT. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Hide an inherited state](_img/process/cpworkflow-hide-state.png)  
+	> ![Hide an inherited state](media/process/cpworkflow-hide-state.png)  
 
 	> [!NOTE]    
 	> If you hide the state of a WIT tracked on a Kanban board, each team  that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
@@ -117,7 +117,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 1. From the Remove State dialog, click <strong>Remove</strong>.   
 
-	<img src="_img/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
 2. If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
  

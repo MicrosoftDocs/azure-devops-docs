@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # Manage risks
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 Risk implies that actual outcomes may vary, sometimes significantly, from desired outcomes. Both the probability of this variance and the degree of variance between actual and desired outcomes is encapsulated in the term "risk." When you manage risk, you strategically minimize the variance between the outcome that you want and the actual outcome.  
   
@@ -35,7 +35,7 @@ Risk implies that actual outcomes may vary, sometimes significantly, from desire
   
  The work item form for a risk stores data in the fields that the following illustration shows:  
   
- ![Risk work item form](_img/procguid_cmmiriskform.png "ProcGuid_CMMIriskform")  
+ ![Risk work item form](media/procguid_cmmiriskform.png "ProcGuid_CMMIriskform")  
   
 ##  <a name="SelectActions"></a> Select actions to be taken  
  After you create a list of risks and they have been sufficiently analyzed, it is time to decide what, if any, actions will be taken to manage these risks. Are there any actions that will reduce the probability of occurrence that you want to take now or describe in an iteration plan? Are there any actions that would mitigate the impact of occurrence that you want to take now or describe in an iteration plan? Taking actions to reduce or mitigate risks costs time and resources. This must be traded against using those resources and the available time to move the project work forward and turn the scope into working software. Document the risk reduction and mitigation actions that you plan on the Mitigation tab of the risk.  

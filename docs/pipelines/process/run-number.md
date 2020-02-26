@@ -9,13 +9,13 @@ ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Run (build) number
+# Configure run or build numbers
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`.
 
@@ -43,7 +43,8 @@ YAML builds are not yet available on TFS.
 If you leave this field blank, your completed build is given a unique integer as its name. But you can give completed builds much more useful names that are meaningful to your team. You can use a combination of tokens, variables, and underscore characters.
 
 * * *
-### Example
+
+## Example
 
 At the time a run is started:
 
@@ -53,7 +54,7 @@ At the time a run is started:
 
 * Branch: master
 
-* Run ID: 752
+* Build ID/Run ID: 752
 
 * Date: May 5, 2019.
 
@@ -69,14 +70,15 @@ $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev
 
 Then the second run on this day would be named: **Fabrikam\_CIBuild_master\_20190505.2**
 
-### Tokens
+
+## Tokens
 
 The following table shows how each token is resolved based on the previous example.
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
 | `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
-| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID.|
+| `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
 | `$(Hours)` | 21 |
@@ -90,7 +92,9 @@ The following table shows how each token is resolved based on the previous examp
 | `$(Year:yy)` | 09 |
 | `$(Year:yyyy)` | 2009 |
 
-### Variables
+
+
+## Variables
 
 You can also use user-defined and predefined variables that have a scope of "All" in your number. For example, if you've defined `My.Variable`, you could specify the following number format:
 
@@ -104,7 +108,7 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### How big can a run number be?
+### How large can a run number be?
 
 Runs may be up to 255 characters.
 
@@ -119,6 +123,25 @@ The time zone is UTC.
 ::: moniker range=">= tfs-2015 < azure-devops"
 
 The time zone is the same as the time zone of the operating system of the machine where you are running your application tier server.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+### How can you reference the run number variable within a script?
+
+The run number variable can be called with `$(Build.BuildNumber)`. You can define a new variable that includes the run number or call the run number directly. In this example, `$(MyRunNumber)` is a new variable that includes the run number.
+
+```yaml
+# Set MyRunNumber
+variables: 
+  MyRunNumber: '1.0.0-CI-$(Build.BuildNumber)'
+
+
+steps:
+- script: echo $(MyRunNumber) # display MyRunNumber
+- script: echo $(Build.BuildNumber) #display Run Number
+```
 
 ::: moniker-end
 

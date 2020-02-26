@@ -1,4 +1,4 @@
----
+﻿---
 title: Quick reference to dashboards, charts, & widgets 
 titleSuffix: Azure DevOps  
 description: Index to dashboard, charts&, and widgets tasks for Azure Boards, Azure DevOps, & Team Foundation Server 
@@ -11,16 +11,16 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2015'
-ms.date: 04/05/2019
+ms.date: 10/23/2019
 ---
 
 # Dashboards, reports, & widgets quick reference 
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ## Tasks
 
@@ -69,13 +69,14 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Reports</strong>
 <ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
 <li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 </ul>
 <strong>Widgets</strong>
 <ul>
 <li><a href="add-widget-to-dashboard.md#configure" data-raw-source="[Configure a widget](add-widget-to-dashboard.md#configure)">Configure a widget</a> 
 <li><a href="configure-burndown-burnup-widgets.md" data-raw-source="[Configure the Burndown/Burnup widget](configure-burndown-burnup-widgets.md)">Configure the Burndown/Burnup widget</a> 
+<li><a href="configure-sprint-burndown.md">Configure Sprint Burndown widget</a> 
 <li><a href="cumulative-flow.md" data-raw-source="[Configure the Cumulative Flow widget](cumulative-flow.md)">Configure the Cumulative Flow widget</a> 
 <li><a href="cycle-time-and-lead-time.md" data-raw-source="[Configure the Lead/Cycle Time widget](cycle-time-and-lead-time.md)">Configure the Lead/Cycle Time widget</a> 
 <li><a href="team-velocity.md" data-raw-source="[Configure the Velocity widget](team-velocity.md)">Configure the Velocity widget</a> 
@@ -138,7 +139,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 </ul>
 <strong>Reports</strong>
 <ul>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Power BI reports](../../boards/sprints/sprint-burndown.md)">Power BI reports</a></li>
+<li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
 <li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 <li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
 <li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
@@ -174,7 +175,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="add-charts-to-dashboard.md" data-raw-source="[Add a built-in chart to a dashboard](add-charts-to-dashboard.md)">Add a built-in chart to a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md" data-raw-source="[Add a widget to a dashboard](add-widget-to-dashboard.md)">Add a widget to a dashboard</a></li>
 <li><a href="add-markdown-to-dashboard.md" data-raw-source="[Add Markdown to a dashboard](add-markdown-to-dashboard.md)">Add Markdown to a dashboard</a></li>
-<li><a href="add-widget-to-dashboard.md#copy" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md#copy)">Copy a widget to a dashboard</a>
+<li><a href="add-widget-to-dashboard.md" data-raw-source="[Copy a widget to a dashboard](add-widget-to-dashboard.md)">Copy a widget to a dashboard</a>	
 <li><a href="dashboards.md" data-raw-source="[Delete a dashboard](dashboards.md)">Delete a dashboard</a></li>
 <li><a href="add-widget-to-dashboard.md#move-delete" data-raw-source="[Delete a widget from a dashboard](add-widget-to-dashboard.md#move-delete)">Delete a widget from a dashboard</a> </li>
 <li><a href="dashboards.md" data-raw-source="[Edit a dashboard](dashboards.md)">Edit a dashboard</a></li>
@@ -242,7 +243,7 @@ In-context reports appear on specific service pages, such as **Boards>Boards**, 
 <strong>Boards</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
-<li><a href="../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a></li>
 <li><a href="team-velocity.md" data-raw-source="[Velocity chart](team-velocity.md)">Velocity chart</a> </li>
 </ul>
 </td>
@@ -277,18 +278,18 @@ In-context reports appear on specific service pages, such as **Work>Backlog**, *
 <strong>Work</strong>
 <ul>
 <li><a href="cumulative-flow.md#configure-built-in-cfd" data-raw-source="[Cumulative Flow Diagram (CFD)](cumulative-flow.md#configure-built-in-cfd)">Cumulative Flow Diagram (CFD)</a></li>
-<li><a href="../../boards/sprints/sprint-burndown.md" data-raw-source="[Sprint burndown](../../boards/sprints/sprint-burndown.md)">Sprint burndown</a></li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a></li>
 <li><a href="team-velocity.md" data-raw-source="[Velocity chart)](team-velocity.md)">Velocity chart)</a> </li>
 </ul>
 <td width="50%">
 <strong>Build &amp; Release</strong>
 <ul>
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Build test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Build test results</a></li> 
-<li><a href="../../pipelines/test/review-code-coverage-results.md" data-raw-source="[Code coverage](../../pipelines/test/review-code-coverage-results.md)">Code coverage</a></li> 
-<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md" data-raw-source="[Release test results](../../pipelines/test/review-continuous-test-results-after-build.md)">Release test results</a></li> 
-<li><a href="../../pipelines/test/requirements-traceability.md" data-raw-source="[Trace test requirements](../../pipelines/test/requirements-traceability.md)">Trace test requirements</a></li> 
-<li><a href="../../pipelines/test/test-analytics.md" data-raw-source="[Test failures](../../pipelines/test/test-analytics.md)">Test failures</a></li> 
-<li><a href="../../pipelines/test/test-impact-analysis.md" data-raw-source="[Test impact analysis](../../pipelines/test/test-impact-analysis.md)">Test impact analysis</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Build test results</a></li> 
+<li><a href="../../pipelines/test/review-code-coverage-results.md">Code coverage</a></li> 
+<li><a href="../../pipelines/test/review-continuous-test-results-after-build.md">Release test results</a></li> 
+<li><a href="../../pipelines/test/requirements-traceability.md">Trace test requirements</a></li> 
+<li><a href="../../pipelines/test/test-analytics.md">Test failures</a></li> 
+<li><a href="../../pipelines/test/test-impact-analysis.md">Test impact analysis</a></li> 
 </ul>
 </td>
 </tr>
@@ -341,11 +342,12 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
 <li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
-<li><a href="widget-catalog.md#sprint-burndown-widget" data-raw-source="[Sprint burndown](widget-catalog.md#sprint-burndown-widget)">Sprint burndown</a> (Team)</li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown</a> (Analytics, Team)</li>
+<li><a href="configure-sprint-burndown.md">Sprint burndown (Legacy)</a> (Team)</li>
 <li><a href="widget-catalog.md#sprint-capacity-widget" data-raw-source="[Sprint capacity](widget-catalog.md#sprint-capacity-widget)">Sprint capacity</a> (Team)</li>
 <li><a href="widget-catalog.md#sprint-overview-widget" data-raw-source="[Sprint overview](widget-catalog.md#sprint-overview-widget)">Sprint overview</a> (Team)</li>
-<li><a href="team-velocity.md" data-raw-source="[Velocity](team-velocity.md)">Velocity</a> (Analytics, Team)</li>
-<li><a href="widget-catalog.md#work-links-widget" data-raw-source="[Work links](widget-catalog.md#work-links-widget)">Work links</a></li>
+<li><a href="team-velocity.md">Velocity</a> (Analytics, Team)</li>
+<li><a href="widget-catalog.md#work-links-widget">Work links</a></li>
 </ul>
 
 </td>
@@ -400,7 +402,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <ul>
 <li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a></li>
 <li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
-<li><a href="widget-catalog.md#cfd-widget" data-raw-source="[Cumulative flow diagram](widget-catalog.md#cfd-widget)">Cumulative flow diagram</a></li>
+<li>Cumulative flow diagram</li>
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
 <li><a href="widget-catalog.md#query-tile-widget" data-raw-source="[Query tile](widget-catalog.md#query-tile-widget)">Query tile</a></li>
@@ -421,13 +423,13 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <ul>
 <li><a href="widget-catalog.md#build-history-widget" data-raw-source="[Chart for build history](widget-catalog.md#build-history-widget)">Chart for build history</a></li>
 <li><a href="widget-catalog.md#deployment-status-widget" data-raw-source="[Deployment status](widget-catalog.md#deployment-status-widget)">Deployment status</a></li>
-<li><a href="widget-catalog.md#release-definition-widget" data-raw-source="[Release pipeline overview](widget-catalog.md#release-definition-widget)">Release pipeline overview</a></li>
+<li>Release pipeline overview</li>
 <li><a href="widget-catalog.md#requirements-quality-widget" data-raw-source="[Requirements quality](widget-catalog.md#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <strong>Test</strong>
 <li><a href="widget-catalog.md#chart-test-plan-widget" data-raw-source="[Chart for test plans](widget-catalog.md#chart-test-plan-widget)">Chart for test plans</a></li>
 <li><a href="widget-catalog.md#test-results-widget" data-raw-source="[Test results trend](widget-catalog.md#test-results-widget)">Test results trend</a></li>
-<li><a href="widget-catalog.md#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](widget-catalog.md#test-trend-results-advanced)">Test results trend (Advanced)</a></li>
+<li>Test results trend (Advanced)</li>
 </ul>
 </td>
 <td width="32%">
@@ -437,7 +439,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
 <li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> (Team)</li>
 <li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> (Team)</li>
-<li><a href="widget-catalog.md#team-room-widget" data-raw-source="[Team room](widget-catalog.md#team-room-widget)">Team room</a> (Team)</li>
+<li>Team room (Team)</li>
 <li><a href="widget-catalog.md#visual-studio-widget" data-raw-source="[Visual Studio Shortcuts](widget-catalog.md#visual-studio-widget)">Visual Studio Shortcuts</a></li>
 <li><a href="widget-catalog.md#how-to-widget" data-raw-source="[Welcome](widget-catalog.md#how-to-widget)">Welcome</a></li>
 </ul>
@@ -514,7 +516,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <td width="33%"> 
 <strong>Work</strong>
 <ul>
-<li><a href="widget-catalog.md#assigned-to-me-widget" data-raw-source="[Assigned to me](widget-catalog.md#assigned-to-me-widget)">Assigned to me</a> (User)</li>
+<li>Assigned to me (User)</li>
 <li><a href="widget-catalog.md#chart-wit-widget" data-raw-source="[Chart for work items](widget-catalog.md#chart-wit-widget)">Chart for work items</a></li>
 <li><a href="widget-catalog.md#new-work-item-widget" data-raw-source="[New Work item](widget-catalog.md#new-work-item-widget)">New Work item</a> (Team)</li>
 <li><a href="widget-catalog.md#query-results-widget" data-raw-source="[Query results](widget-catalog.md#query-results-widget)">Query results</a></li>
@@ -539,7 +541,7 @@ Widgets provide a quick way to quickly add charts to dashboards. Many widgets ar
 <td width="34%">
 <strong>Other</strong>
 <ul>
-<li><a href="widget-catalog.md#embedded-webpage-widget" data-raw-source="[Embedded web page](widget-catalog.md#embedded-webpage-widget)">Embedded web page</a></li>
+<li>Embedded web page</li>
 <li><a href="widget-catalog.md#markdown-widget" data-raw-source="[Markdown](widget-catalog.md#markdown-widget)">Markdown</a></li>
 <li><a href="widget-catalog.md#other-links-widget" data-raw-source="[Other links](widget-catalog.md#other-links-widget)">Other links</a> (Team)</li>
 <li><a href="widget-catalog.md#team-members-widget" data-raw-source="[Team members](widget-catalog.md#team-members-widget)">Team members</a> (Team)</li>
