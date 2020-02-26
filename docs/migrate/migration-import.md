@@ -408,14 +408,14 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 
 |    Service                                                 |    IP                                                                                                                         |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|    Regional Identity Service - Central United States       |    23.99.230.232, 104.43.253.175, 40.122.66.150, 40.122.117.178, 23.99.212.58, 23.99.214.58, 20.37.139.247, 20.37.138.167, 20.37.138.122                                   |
-|    Regional Identity Service - West Europe                 |    52.232.119.33, 104.46.44.17, 40.114.142.95, 51.144.180.30, 51.145.130.146, 40.113.97.58, 52.232.113.92, 40.74.51.167       |
-|    Regional Identity Service - Australia East              |    13.70.121.123, 52.187.228.246                                                                                              |
-|    Regional Identity Service - Brazil South                |    N\A                                                                                                                        |
-|    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31, 40.81.75.134                                                                                             |
-|    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98, 40.82.185.245                                                                                                |
-|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159, 40.81.28.194   
-|    Regional Identity Service - UK South                    |    51.105.8.98                                                                                               |
+|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.158.0                                   |
+|    Regional Identity Service - West Europe                 |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0       |
+|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0                                    |
+|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0                    |
+|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0                                                                         |
+|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0                                                                                               |
+|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0
+|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0                                                             |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
