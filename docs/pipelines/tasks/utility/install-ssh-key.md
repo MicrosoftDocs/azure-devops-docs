@@ -54,10 +54,19 @@ You now have all necessary values for the "Install SSH Key" task:
 
 ## Usage and best practices
 Installing an SSH key in the [hosted pools](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops) will allow you to connect in later steps of your pipeline to a remote system where the matching public key is already in place (say a Git repository or a VM in Azure).  
-We don't suggest passing in your public key as plain text to the task configuration, instead [set a secret variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) in your pipeline and call it in your pipeline definition as `$(myvar)`. For the secret part of your key you'll have to use the [Secure File library](https://docs.microsoft.com/azure/devops/pipelines/library/secure-files?view=azure-devops) within Azure Pipelines.
+We don't suggest passing in your public key as plain text to the task configuration, instead [set a secret variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) in your pipeline for the contents of your `mykey.pub` file and call it in your pipeline definition as `$(myPubKey)`. For the secret part of your key you'll have to use the [Secure File library](https://docs.microsoft.com/azure/devops/pipelines/library/secure-files?view=azure-devops) within Azure Pipelines.  
 
+Use the following as an example of a well configured Install SSH Key task:
 
-
+```yaml
+steps:
+- task: InstallSSHKey@0
+  displayName: 'Install an SSH key'
+  inputs:
+    knownHostsEntry: 'SHA256:1Hyr55tsxGifESBMc0s+2NtutnR/4+LOkVwrOGrIp8U johndoe@contoso'
+    sshPublicKey: '$(myPubKey)'
+    sshKeySecureFile: 'id_rsa'
+```
 
 ## Open source
 
