@@ -245,14 +245,14 @@ This section provides troubleshooting tips for common issues that a user might e
 
 Build failed with the following error: `An internal failure occurred while running MSBuild`
 
-#### Possible causes
+### Possible causes
 
 * Change in the MSBuild version.
 * Issues with a third-party extension.
 * New updates to Visual Studio that can cause missing assemblies on the build agent. 
 * Moved or deleted some of the necessary NuGet packages.
 
-#### Troubleshooting suggestions
+### Troubleshooting suggestions
 
 ##### Run the pipeline with diagnostics to retrieve the different types of logs
 
