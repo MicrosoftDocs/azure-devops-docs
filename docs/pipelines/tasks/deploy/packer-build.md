@@ -2,7 +2,6 @@
 title: Build Machine Image task
 description: Build a machine image using Packer to use for Azure Virtual machine scale set deployment
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 845fd4f4-642d-4694-8514-047948a5a556
 ms.author: ronai
 author: RoopeshNair

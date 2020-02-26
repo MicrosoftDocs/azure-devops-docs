@@ -3,7 +3,6 @@ title: Publish packages to PyPI
 ms.custom: seodec18
 description: Publish Python packages to PyPI or Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: azure-devops

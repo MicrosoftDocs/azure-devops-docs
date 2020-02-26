@@ -2,7 +2,6 @@
 title: Jenkins Download Artifacts task
 description: Download artifacts produced by a Jenkins job
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 86c37a92-59a7-444b-93c7-220fcf91e29c
 ms.custom: seodec18
 ms.author: ronai

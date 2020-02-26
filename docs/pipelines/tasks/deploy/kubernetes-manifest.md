@@ -2,7 +2,6 @@
 title: Kubernetes manifest task
 description: Bake and deploy manifests to Kubernetes clusters
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal

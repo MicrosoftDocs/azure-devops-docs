@@ -2,7 +2,6 @@
 title: Sign up for Azure Pipelines
 ms.custom: seodec18
 description: Learn how to sign up for Azure Pipelines.
-ms.technology: devops-cicd
 ms.topic: overview
 ms.author: chcomley
 author: chcomley

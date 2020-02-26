@@ -2,7 +2,6 @@
 title: Go Tool Installer task
 description: Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 334727F4-9495-4F9D-A391-FC621D671474
 ms.custom: seodec18
 ms.author: atulmal

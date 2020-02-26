@@ -2,7 +2,6 @@
 title: WinRM SQL Server DB Deployment task
 description: Deploy to SQL Server Database using DACPAC or SQL scripts
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 4B506F7F-720F-47BB-BF21-029BAC6A690D
 ms.custom: seodec18
 ms.author: ronai

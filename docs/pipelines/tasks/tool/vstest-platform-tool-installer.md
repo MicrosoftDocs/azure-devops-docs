@@ -2,7 +2,6 @@
 title: Visual Studio Test Platform Installer task
 description: Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
 ms.custom: seodec18
 ms.author: pbora

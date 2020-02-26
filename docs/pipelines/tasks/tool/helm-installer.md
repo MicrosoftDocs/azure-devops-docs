@@ -3,7 +3,6 @@ title: Helm installer task
 titleSuffix: Azure Pipelines & TFS
 description: Install helm on an agent machine
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: ed0fe761-60c2-4bbe-b027-819569b56a3d
 ms.manager: atulmal
 ms.author: atulmal

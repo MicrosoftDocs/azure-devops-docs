@@ -3,7 +3,6 @@ title: Process parameters
 ms.custom: seodec18
 description: You can link all important fields for tasks used across the build definition as process parameters
 ms.topic: conceptual
-ms.technology: devops-cicd
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
 ms.date: 9/21/2018
 monikerRange: '>= tfs-2017'

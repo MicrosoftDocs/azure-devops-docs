@@ -126,7 +126,7 @@
       "author": {
         "pipelines/**": "steved0x",
         "pipelines/agents/**": "steved0x",
-        "pipelines/apps/**": "jukullam",
+        "pipelines/apps/**": "juliakm",
         "pipelines/archive/**": "steved0x",
         "pipelines/artifacts/**": "ramiMSFT",
         "pipelines/build/**": "steved0x",

@@ -1,7 +1,6 @@
 ﻿---
 title: MySQL Database Deployment On Machine Group task
 description: The task is used to deploy for MySQL Database.
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.author: ronai

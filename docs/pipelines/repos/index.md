@@ -2,10 +2,7 @@
 title: Build source repositories
 description: Build source repositories using Azure Pipelines
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
-ms.author: sdanie
-author: steved0x
 ms.date: 06/28/2019
 monikerRange: '>= tfs-2015'
 ---

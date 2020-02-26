@@ -3,7 +3,6 @@ title: Android signing build and release task
 ms.custom: seodec18
 description: Android signing build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 16CF200D-EC24-4485-BCF5-C9195FE278F1
 ms.author: vijayma
 author: vijayma

@@ -2,7 +2,6 @@
 title: Chef task
 description: Deploy to Chef environments by editing environment attributes
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: B719DB6C-40A2-4F43-9AFF-827825BAECAE
 ms.manager: dastahel
 ms.custom: seodec18

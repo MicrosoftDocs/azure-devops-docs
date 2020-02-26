@@ -1,5 +1,6 @@
 ---
 ms.technology: devops-collab
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: include

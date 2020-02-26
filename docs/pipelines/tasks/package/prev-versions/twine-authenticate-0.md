@@ -3,7 +3,6 @@ title: Python Twine Upload Authenticate
 ms.custom: seodec18
 description: Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. 
 ms.topic: reference
-ms.technology: devops-cicd
 ms.author: dastahel
 author: davidstaheli
 ms.date: 10/31/2018

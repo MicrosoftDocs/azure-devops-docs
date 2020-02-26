@@ -2,7 +2,6 @@
 title: Install Apple Provisioning Profile task
 description: Install an Apple provisioning profile required to build on a macOS agent in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 0f9f66ca-250e-40fd-9678-309bcd439d5e
 ms.custom: seodec18
 ms.author: vijayma

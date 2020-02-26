@@ -1,7 +1,6 @@
 ---
 title: Build and test Ruby apps
 description: Automatically build and test Ruby apps with Azure Pipelines, Azure DevOps
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
 ms.author: vijayma

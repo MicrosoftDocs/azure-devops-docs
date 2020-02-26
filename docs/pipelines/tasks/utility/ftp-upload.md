@@ -2,7 +2,6 @@
 title: FTP Upload task
 description: Upload files to a remote machine using the File Transfer Protocol (FTP), or securely with FTPS on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 83301736-4DC7-4581-9AFD-4678BA0D3659
 ms.custom: seodec18
 ms.author: vijayma

@@ -3,7 +3,6 @@ title: Migrate from Jenkins to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: conceptual
-ms.technology: devops-cicd
 ms.date: 02/07/2019
 monikerRange: azure-devops
 ---

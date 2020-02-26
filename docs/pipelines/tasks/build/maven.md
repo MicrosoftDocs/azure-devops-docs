@@ -3,7 +3,6 @@ title: Maven build and release task
 ms.custom: seodec18
 description: Maven build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: A5B82F26-1053-47E4-B264-6E01B37C215F
 ms.author: vijayma
 author: vijayma

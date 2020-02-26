@@ -2,7 +2,6 @@
 title: Azure Monitor Alerts task
 description: Configure alerts on available metrics for an Azure resource
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 1d876d40-9aa7-11e7-905d-f541cc882994
 ms.custom: seodec18
 ms.author: ronai

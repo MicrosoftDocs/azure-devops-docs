@@ -5,7 +5,6 @@ ms.custom: seodec18
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.technology: devops-cicd
 ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---

@@ -2,10 +2,7 @@
 title: Build C++ Windows apps
 ms.custom: seodec18
 description: Automatically build your C++ Windows app with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.technology: devops-cicd
 ms.assetid: 49886DF3-3689-48B3-8F1C-CA99DAFD1E49
-ms.author: jukullam
-author: juliakm
 ms.date: 1/24/2020
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
