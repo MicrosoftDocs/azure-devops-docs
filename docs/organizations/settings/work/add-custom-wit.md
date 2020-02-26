@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add custom work item type to inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom work item type for an Inheritance process model and apply it to a project.  
@@ -11,7 +11,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/11/2019
+ms.date: 02/24/2020
 ---
 
 # Add a custom work item type (Inheritance process)     
@@ -41,17 +41,18 @@ To learn more about what you can customize, see [About process customization and
 [!INCLUDE [temp](../includes/create-inherited-process.md)] 
 
 <a id="add-wit">  </a>
+
 ## Add a work item type
 
 1. From the **Work Item Types** page, choose the ![ ](../../../media/icons/blue-add-icon.png) **New work item type**.
 
-	<img src="media/process/cpwit-add-new-wit.png" alt="Process, Inherited process, Work Item Types, Add new work item type" style="border: 2px solid #C3C3C3;" />
+	![Process, Inherited process, Work Item Types, Add new work item type](media/process/cpwit-add-new-wit.png)
  
 1. Name the WIT and optionally specify a description, icon and color. The icon and color you specify appear throughout the web portal, including on the work item form and when associated work items appear on a backlog, boards, query results, and more. 
 
 	<img src="media/process/cwit-create-wit-ticket.png" alt="Create new work item type dialog" style="border: 1px solid #C3C3C3;" /> 
 
-	Click **Create** to save. 
+	Choose **Create** to save. 
 
 	Each new WIT comes predefined with a Details page with the Description field, and Discussion, Development, and Related Work groups. Also added, but not shown nor editable, are the standard elements included with the header of the form as shown in the following image, as well as the history, links, and attachment pages. To learn more, see [About work items](../../../boards/work-items/about-work-items.md).
  
@@ -92,15 +93,27 @@ To learn more about what you can customize, see [About process customization and
 
 We recommend that you create a test project and apply your customized  inherited process to it to verify the changes you've made. 
 
-1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.   
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
+	::: moniker-end
 
 1. The Create new project page opens. Fill out the form. 
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project.png) 
+	::: moniker-end
 
 2. Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
