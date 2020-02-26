@@ -3,9 +3,9 @@ title: Where is Package Management? | Azure DevOps
 description: Discover Azure Artifacts - the new home of Package Management in Azure DevOps.
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 05/10/2019
 monikerRange: 'azure-devops'
 ---
@@ -20,16 +20,17 @@ Recently, Azure DevOps Services (previously Visual Studio Team Services) underwe
 
 Before the UI update, your Package Management home was in the **Packages** hub of the **Build and Release** hub group. You would navigate to it like so:
 
-![Go to Azure Artifacts](_shared/_img/goto-feed-hub.png)
+![Go to Azure Artifacts](media/goto-feed-hub.png)
 
 > If you're still using the previous navigation, or TFS, this is still how you would access your packages. 
 
 The new update has introduced a new, top-level area that is the home of Package Management in Azure DevOps Services. This area is known as **Azure Artifacts** and can be reached simply by selecting the _Artifacts_ button on the left of the UI:
 
-![Go to Azure Artifacts](_shared/_img/goto-feed-hub-azure-devops-newnav.png)
+![Go to Azure Artifacts](media/goto-feed-hub-azure-devops-newnav.png)
+
+> [!NOTE]
+> If you don't see **Artifacts** or want to turn the service off, see more info in [Change service visibility](../organizations/settings/set-services.md)
 
 ## Azure Artifacts billing model
 
-Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](sign-up-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](sign-up-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?
-
-
+Azure Artifacts bills you on a consumption-basis and licenses are no longer required for Azure DevOps Services customers. For more information, see [Billing and free monthly usage for Azure Artifacts](start-using-azure-artifacts.md#billing-and-free-monthly-usage) and [What about customers who were using Artifacts before May 6, 2019 under the previous per user model](start-using-azure-artifacts.md#q-what-about-customers-who-were-using-artifacts-before-may-6-2019-under-the-previous-per-user-model)?

@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: c26a24cc-5710-425d-8fc4-77e35442e743
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
 # Bug Reactivations Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Bug Reactivations report to determine how effectively the team is fixing bugs. This report shows the cumulative count of Bugs that the team has reactivated and Bugs that the team has since resolved, for the most recent four weeks. The reactivation rate is also referred to as the fault feedback ratio.  
   
@@ -35,7 +36,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The Bug Reactivations report shows an area graph of the number of Bugs that the team has reactivated (**Reactivated and Still Active**) from a resolved or closed state and Bugs that the team has **Resolved**.  
   
-![Bug Reactivations Excel Report](_img/procguid_agileexr.png "ProcGuid_AgileExR")  
+![Bug Reactivations Excel Report](media/procguid_agileexr.png "ProcGuid_AgileExR")  
   
 This report is based on a PivotChart report that shows the most recent four weeks of data that was captured for Bugs and that is stored in the data warehouse.  
   
@@ -86,4 +87,4 @@ For information about healthy and unhealthy versions of the report, see [Reactiv
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)  
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80)  

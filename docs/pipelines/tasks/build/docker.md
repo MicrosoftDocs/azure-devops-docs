@@ -5,9 +5,11 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
-ms.manager: shasb
-ms.author: shasb
+ms.manager: atulmal
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
+ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
 ---
 
@@ -47,7 +49,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>containerRegistry</code><br/>Container registry</td>
-    <td>(Optional) Name of the [Docker registry service connection](../../library/service-endpoints.md#sep-docreg)</td>
+    <td>(Optional) Name of the <a href="../../library/service-endpoints.md#sep-docreg" data-raw-source="[Docker registry service connection](../../library/service-endpoints.md#sep-docreg)">Docker registry service connection</a></td>
   </tr>
   <tr>
     <td><code>repository</code><br/>Repository</td>
@@ -58,7 +60,7 @@ Following are the key benefits of using Docker task as compared to directly usin
     <td>(Optional) Multiline input where each line contains a tag to be used in build, push or buildAndPush commands<br/>Default value: $(Build.BuildId)</td>
   </tr>
   <tr>
-    <td><code>Dockerfile</code><br/>Tags</td>
+    <td><code>Dockerfile</code><br/>Dockerfile</td>
     <td>(Optional) Path to the Dockerfile<br/>Default value: **/Dockerfile</td>
   </tr>
   <tr>
@@ -67,7 +69,7 @@ Following are the key benefits of using Docker task as compared to directly usin
   </tr>
   <tr>
     <td><code>arguments</code><br/>Arguments</td>
-    <td>(Optional) Additional arguments to be passed onto the docker client</td>
+    <td>(Optional) Additional arguments to be passed onto the docker client<br />Be aware that if you use value 'buildandPush' for the command parameter, then the arguments property will be ignored.</td>
   </tr>
 </table>
 
@@ -137,7 +139,7 @@ Following YAML snippet showcases container registry logout using a Docker regist
 ```
 
 ## Other commands and arguments
-The command and argument inputs can be used to run any generic command using docker client binary as shown below - 
+The command and argument inputs can be used to pass additional arguments for build or push commands using docker client binary as shown below - 
 
 ```YAML
 steps:

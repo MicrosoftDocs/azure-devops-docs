@@ -6,15 +6,16 @@ ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: dakale
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
 ms.date: 01/14/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
-# Service Containers
+# Service containers
 
-**Azure Pipelines**
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 If your pipeline requires the support of one or more services, in many cases you'll want to create, connect to, and clean up each
 service on a per-job basis. For instance, a pipeline may run integration tests that require access to
@@ -205,7 +206,7 @@ an absolute path in the container.
 ## Other options
 
 Service containers share the same container resources as container jobs. This means that you can use the same
-[additional options](container-phases.md?tabs=yaml#other-settings).
+[additional options](container-phases.md?tabs=yaml#options).
 
 # [Classic](#tab/classic)
 

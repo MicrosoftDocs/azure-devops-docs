@@ -6,7 +6,7 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Review rate and service limits 
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn which service limits and rate that your public projects are subject to. 
 
@@ -66,4 +66,4 @@ Wikis defined for a project are limited to 1 GB per git repository.
 ## Next steps 
 
 > [!div class="nextstepaction"]
-- [Review work tracking object limits](../settings/work/object-limits.md)
+> - [Review work tracking object limits](../settings/work/object-limits.md)

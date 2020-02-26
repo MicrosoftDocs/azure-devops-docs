@@ -1,12 +1,12 @@
 ---
-title: Data model for the Analytics Service
+title: Data model for Analytics
 titleSuffix: Azure DevOps 
-description: Describes the data entities and relationships provided by the Analytics service for Azure DevOps  
+description: Describes the data entities and relationships provided by Analytics for Azure DevOps  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -14,14 +14,14 @@ monikerRange: '>= azure-devops-2019'
 ms.date: 04/05/2019
 ---
 
-# Data model for the Analytics Service  
+# Data model for Analytics  
 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-The Analytics service data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](http://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
+Analytics data model for Azure DevOps consists of entity sets, whose members (entities) contains properties that can be filtered, aggregated, and summarized. Additionally, they contain [navigation properties](https://www.odata.org/getting-started/basic-tutorial/#relationship) that relate entities to one other, providing access to additional properties for selecting, filtering, and grouping.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 <a id="entities" />
@@ -49,14 +49,13 @@ The Analytics service data model for Azure DevOps consists of entity sets, whose
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 The following EntitySets are supported with the indicated API versions. For the latest version information, see [OData API versioning](odata-api-version.md).
 
 ## Work tracking EntitySets
 
->  [!div class="mx-tdCol2BreakAll"]  
-> 
+> [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v1.0 | v2.0 | v3.0-preview |
 > |-----------|-------------|------|------|--------------|
 > |Areas | The work item Area Paths, with properties for grouping and filtering by area hierarchy | ✔️|✔️|✔️ |
@@ -80,23 +79,20 @@ The following EntitySets are supported with the indicated API versions. For the 
 
 The following EntitySets are only supported with the **v3.0-preview** API version.
 
->  [!div class="mx-tdCol2BreakAll"]  
-> 
+> [!div class="mx-tdCol2BreakAll"]  
 > | EntitySet | Description | v3.0-preview |
 > |-----------|-------------|------|
 > |Branches | Basic information about branches used in tests or pipelines |  ✔️ |
-> |BuildPipelines| Properties for a build pipeline |  ✔️ |
-> |BuildPipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
-> |BuildTaskResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
-> |Builds | Execution information for builds |  ✔️ |
-> |ReleaseEnvironments | Experimental, properties of the release environments |  ✔️ |
-> |ReleasePipelines| Experimental, properties for a release pipeline |  ✔️ |
-> |ReleaseStages |  Experimental, properties for stages defined within a release pipeline |  ✔️ |
-> |Releases | Experimental, execution information for releases  |  ✔️ |
+> |Pipelines| Properties for a pipeline |  ✔️ |
+> |PipelineTasks | Properties for tasks that are used within a pipeline |  ✔️ |
+> |PipelineRunActivityResults | Merged log of all the stages/steps/jobs/tasks within a specific pipeline execution |   ✔️ |
+> |PipelineRuns | Execution information for pipelines |  ✔️ |
 > |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
-> |TestRuns | Execution information for tests run under a build or release pipeline with aggregate TestResult |  ✔️ |
+> |TestRuns | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ |
 > |Tests | Properties for a test | ✔️ |
 > |TestsResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
+
+
 
 
 ## Composite entities
@@ -113,7 +109,7 @@ To generate more complex query results, you can combine entities using relations
 
 Some navigation properties result in a single entity, while others result in a collection of entities. The following diagram shows select entities and their navigation properties. For clarity, some composite entities and relationships have been omitted.
 
-![Analytics Service Data Model](_img/datamodel.png)
+![Analytics Data Model](media/datamodel.png)
 
 ## Relationship keys
 

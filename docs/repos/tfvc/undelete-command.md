@@ -5,7 +5,7 @@ description: Undelete Command
 ms.assetid: f3b7c02e-7799-4632-b786-551f31741401
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -20,15 +20,18 @@ monikerRange: '>= tfs-2015'
 
 The **undelete** command restores items that were previously deleted.
 
->**Note:**  
->  ** **The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
+> [!NOTE]
+> The results of this command are not visible in other workspaces until you perform a check-in operation. For more information, see [Check In Pending Changes](https://msdn.microsoft.com/library/ms181411).
 
 **Required Permissions**
 
 To use the **undelete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than none, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf undelete [/noget] [/lock:(none|checkin|checkout)] 
-    [/recursive] itemspec[;deletionID] [/login:username,[password]]
+```
+tf undelete [/noget] [/lock:(none|checkin|checkout)] 
+[/recursive] itemspec[;deletionID] [/login:username,[password]]
+```
+
 ## Parameters
 
 | **Argument** |                                                                                                                 **Description**                                                                                                                 |
@@ -66,20 +69,28 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example restores 314.cs to the server folder from which 314.cs was deleted and retrieves a read-only copy of the latest version in the current workspace.
 
-    C:\projects>tf undelete c:\math\314.cs
+```
+C:\projects>tf undelete c:\math\314.cs
+```
 
 The following example displays deletion IDs for all items on the server that have been deleted more than one time.
 
-    c:\projects>tf dir $/ /deleted
+```
+c:\projects>tf dir $/ /deleted
+```
 
 -   Sample output:
 
-		$/projects/math/314.cs;X10
-        $/projects/math/314.cs;X11
+    ```
+	$/projects/math/314.cs;X10
+	$/projects/math/314.cs;X11
+    ```
 
 The following example restores the X11 version of 314.cs to the server folder from which the file was deleted and retrieves a read-only copy of the latest version in the current workspace.
 
-    c:\projects>tf undelete 314.cs;X11
+```
+c:\projects>tf undelete 314.cs;X11
+```
 
 ## See Also
 

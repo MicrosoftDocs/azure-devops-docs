@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts BuildArtifactAddedEvent API | Extensions for Azure DevOps Services
+description: Data representation of a build artifact added event.
 ms.assetid: 8be18185-1d65-4a62-6554-c5912f31afa7
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

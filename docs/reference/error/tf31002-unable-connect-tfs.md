@@ -5,7 +5,7 @@ description: Receive the error when you try to connect to Azure DevOps Services 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -13,7 +13,7 @@ ms.date: 04/22/2019
 ---
 # TF31002: Unable to connect
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You might receive this error when you try to connect to Azure DevOps Services or an on-premises Azure DevOps Server from Visual Studio.  
   
@@ -23,7 +23,7 @@ You might receive this error when you try to connect to Azure DevOps Services or
 |-------------|----------------|  
 |You don't have an active account or license.|Check with your administrator that you're a member of the account and have an active, valid license. See [Assign licenses to users](../../organizations/accounts/add-organization-users.md) for details.| 
 |Your Azure DevOps Services organization is connected to the Azure Active Directory.|When your Azure DevOps Services organization is connected to a directory that is associated with an Office 365 or Microsoft Azure subscription, only members in the directory can access the account.<br /><br /> Check with your directory administrator to have them [create an organizational account for you or add your account to the directory as external member](/azure/active-directory/active-directory-create-users).|  
-|You can't switch between different organizational accounts.|If you work with several organizations that connect to different directories, such as accounts created from the Microsoft Azure Portal, the sign-out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](http://visualstudio.microsoft.com/downloads) .<br /><br /> To learn more, see [KB Article ID 2958966, You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-studio-online).|  
+|You can't switch between different organizational accounts.|If you work with several organizations that connect to different directories, such as accounts created from the Microsoft Azure Portal, the sign-out function might not work as expected. For example, you can't switch between different organizational accounts to connect to multiple accounts that are linked to directory tenants.<br /><br /> When this problem occurs, you see a flashing blank sign in dialog box several times. Then, you receive either TF31002 or TF31003 error after you connect to or add a new connection in "Connect to Team Foundation Server" dialog box.<br /><br /> To resolve this problem, apply the most recent [Visual Studio update](https://visualstudio.microsoft.com/downloads) .<br /><br /> To learn more, see [KB Article ID 2958966, You can't switch between different organizational accounts in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-studio-online).|  
 |You want to sign in to Azure DevOps Services from Visual Studio using different credentials.|See [Connect to projects, Sign in with different credentials](../../organizations/projects/connect-to-projects.md).|  
   
 ## When you try to connect to an on-premises Azure DevOps Server from your client computer  
@@ -49,12 +49,12 @@ You might receive this error when you try to connect to Azure DevOps Services or
 |Problem|Resolution|
 |-------------|----------------|
 |The *TFSService* account password has expired or is incorrect.|Many services for Team Foundation Server will stop running when the service account for Team Foundation has expired. For more information, see [Change the service account or password for Team Foundation Server](/azure/devops/server/admin/change-service-account-password).|  
-|The application-tier server for Team Foundation is unavailable.|Verify whether each required service is running. If a required service isn't running, you must restart it. If necessary, set it to start automatically. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).|  
+|The application-tier server for Team Foundation is unavailable.|Verify whether each required service is running. If a required service isn't running, you must restart it. If necessary, set it to start automatically. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).|  
 |The network is unavailable.|Verify whether your network is operational.|  
 |A website identity for Team Foundation is configured incorrectly.|Verify or correct the server binding assignments that are made to websites for Team Foundation. |
 |Access to a website for Team Foundation has been restricted.|Verify or correct restrictions that are made to those websites that are based on IP addresses and domain names. |  
-|The firewall or ports are configured incorrectly.|Verify or correct port binding assignments for websites and port assignments for the firewall. First, you should open the administration console for Team Foundation, display the Application Tier page, and review the URL assignments. If necessary, you can click **Change URL** to modify the URL of a website. Next, you should verify the port assignments for Internet Information Services (IIS) and the ports that are allowed through the firewall. For more information, see [Review Server Status and Settings](/azure/devops/server/admin/stop-start-stuff) and [Verify or Correct Port Assignments](/azure/devops/server/architecture/required-ports).|  
+|The firewall or ports are configured incorrectly.|Verify or correct port binding assignments for websites and port assignments for the firewall. First, you should open the administration console for Team Foundation, display the Application Tier page, and review the URL assignments. If necessary, you can click **Change URL** to modify the URL of a website. Next, you should verify the port assignments for Internet Information Services (IIS) and the ports that are allowed through the firewall. For more information, see [Review Server Status and Settings](/azure/devops/server/admin/stop-start-services-pools) and [Verify or Correct Port Assignments](/azure/devops/server/architecture/required-ports).|  
 |Trust relationships between domains aren't configured correctly.|If a group of users can't access Team Foundation Server, you might have trust issues between domains.|  
 |When users connect to different versions of TFS from Visual Studio, for example, they connect to TFS 2012 and then TFS 2008, they can get the TF31002 error.|This error can occur because the GUIDs for the TFS 2012 collection are the same as TFS 2008. The local client cache gets confused because it tries to maintain the same GUID-based local cache for both the 2008 server and the new Project Collection in 2012.<br /><br /> To fix, run the **TFSConfig ChangeServerID** command. See [TFSConfig ChangeServerID command](/azure/devops/server/command-line/tfsconfig-cmd#changeserverid).|  
   
- If the previous resolutions don't solve the problem, go to the [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](http://go.microsoft.com/fwlink/?LinkId=54490).
+ If the previous resolutions don't solve the problem, go to the [MSDN Forums - Visual Studio Team System &mdash;Team Foundation Server - Administration](https://go.microsoft.com/fwlink/?LinkId=54490).

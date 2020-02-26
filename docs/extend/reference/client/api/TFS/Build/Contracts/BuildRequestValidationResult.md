@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts BuildRequestValidationResult API | Extensions for Azure DevOps Services
+description: Data representation of a build request validation result.
 ms.assetid: 0a87872a-dfd9-25e8-f352-faa3709aa63c
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

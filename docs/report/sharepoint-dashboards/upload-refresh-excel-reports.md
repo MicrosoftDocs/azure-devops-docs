@@ -5,14 +5,16 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: a606b12a-ac2e-4a02-a8b0-56f18c3dcc82
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
+monikerRange: '< tfs-2018'
 ms.date: 03/09/2017
 ---
 
 # Upload and refresh Excel reports in the team project portal
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 After you create a report in Excel that shows data for your team project, you can share that report with other team members. You can add the report to a shared folder or send it in e-mail, or you can upload the report to your team's *project portal*. To keep the report accurate, you might also want to run the report again on a particular schedule, such as every week or at each project milestone.  
   

@@ -7,16 +7,16 @@ ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 
+ms.date: 10/31/2019
 monikerRange: 'azure-devops'
 ---
 
 # Find or change your organization location
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 When you [create an organization](create-organization.md), you can choose the region your organization is hosted in Azure DevOps. You may choose your organization's region based on locality and network latency, or because you have sovereignty requirements for data centers. Your organization's default location is based on the closest [Microsoft Azure region](https://azure.microsoft.com/regions) where Azure DevOps is available.
 
@@ -24,13 +24,17 @@ When you [create an organization](create-organization.md), you can choose the re
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
-3. Select **Overview**. The region is listed under Organization information.
+   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
+3. Select **Overview**. The region is listed below.
 
-   ![Find the region under the organization settings](_img/change-organization-location/organization-settings-region.png)
+   ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
 
 ## Change organization location
 
-To change your organization region, call [Azure DevOps Support](https://azure.microsoft.com/support/devops). Support staff coordinates changing the region with the organization owner.
+To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/), and select the Quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
+
+## Other resources
+
+For information about worldwide data storage, see [Data locations for Azure DevOps](../security/data-location.md).

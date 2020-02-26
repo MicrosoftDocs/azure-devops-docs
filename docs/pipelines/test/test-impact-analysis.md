@@ -4,22 +4,24 @@ description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipel
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
 ms.prod: devops
 ms.technology: devops-cicd
-ms.topic: conceptual 
-ms.custom: "continuous-test, seodec18"
-ms.manager: jillfra
-ms.author: ronai
-author: RoopeshNair
+ms.topic: conceptual
+ms.custom: continuous-test, seodec18
+ms.manager: mijacobs
+ms.author: pbora
+author: pboraMSFT
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
+
 > [!NOTE] 
 > Applies only to TFS 2017 Update 1 and later, and Visual Studio 2015 Update 3 and later.
+
 ::: moniker-end
 
 Continuous Integration (CI) is a key practice in the industry.
@@ -35,7 +37,7 @@ It will automatically select only the subset of tests required to validate the c
 For a given code commit entering the CI/CD pipeline, TIA will select and run only the relevant tests required to validate that commit.
 Therefore, that test run will complete more quickly, if there is a failure you will get to know about it sooner, and because it is all scoped by relevance, analysis will be faster as well.
 
-![Comparison of test times when using TIA](_img/test-impact-analysis/tia-chart.png)
+![Comparison of test times when using TIA](media/test-impact-analysis/tia-chart.png)
 
 Test Impact Analysis has:
 
@@ -49,7 +51,9 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 * **Running tests with code coverage enabled**. In this case, code coverage data will not get collected.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Test Impact Analysis supported scenarios
@@ -86,7 +90,7 @@ TIA is supported through Version 2.* of the [Visual Studio Test](../tasks/test/v
 If your app is a single tier application, all you need to do is to check **Run only impacted tests** in the task UI.
 The Test Impact data collector is automatically configured. No additional steps are required.
 
-![Enable TIA in the VS Test task UI](_img/test-impact-analysis/task-params.png)
+![Enable TIA in the VS Test task UI](media/test-impact-analysis/task-params.png)
 
 If your application interacts with a service in the context of IIS, you must also configure the Test Impact data collector to run in the context of IIS by using a **.runsettings** file.
 Here is a sample that creates this configuration:
@@ -120,9 +124,9 @@ Here is a sample that creates this configuration:
 
 TIA is integrated into existing test reporting at both the summary and details levels, including notification emails.
 
-![Reporting Summary includes TIA integration](_img/test-impact-analysis/tia-reports-1.png)
+![Reporting Summary includes TIA integration](media/test-impact-analysis/tia-reports-1.png)
 
-![Reporting Tests page includes TIA integration](_img/test-impact-analysis/tia-reports-2.png)
+![Reporting Tests page includes TIA integration](media/test-impact-analysis/tia-reports-2.png)
 
 [More information about TIA and Azure Pipelines integration](https://blogs.msdn.microsoft.com/devops/2017/03/02/accelerated-continuous-testing-with-test-impact-analysis-part-1/)
 
@@ -181,4 +185,4 @@ For an example of the XML file format, see [TIA custom dependency mapping](https
 * [TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 * [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

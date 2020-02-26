@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 45434ab2-3363-4ebd-89ce-95f438c64424
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 12/30/2016
 ---
 
 # Requirements Progress Excel Report (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Requirements Excel report to track the rate at which the team is implementing requirements. This report shows the distribution of active, resolved, and closed requirements over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -32,7 +33,7 @@ You can use the Requirements Excel report to track the rate at which the team is
 
  You can use the Requirements report to understand how well the team is completing the requirements that it defined for an iteration or release. This report is based on a PivotChart report that shows the last four weeks of data that was captured for requirements and that is stored in the data warehouse.  
   
- ![Requirements Progress report](_img/procguid_reqprogress.png "ProcGuid_ReqProgress")  
+ ![Requirements Progress report](media/procguid_reqprogress.png "ProcGuid_ReqProgress")  
   
 ### Required activities for tracking tequirements  
 
@@ -67,4 +68,4 @@ For the Requirements report to be useful and accurate, the team must perform the
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

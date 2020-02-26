@@ -2,28 +2,30 @@
 title: Restore organization after it's removed, deleted
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization owner permissions.
+description: Learn how to recover your organization and data up to 90 days after being deleted, performed with organization Owner permissions.
 ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 01/18/2019
+ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
 # Recover your deleted organization in Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-After you delete your organization, it's disabled but available for 30 days. If you change your mind during this time, you can recover your organization. After 30 days, your organization and data are permanently deleted.
+After you delete your organization, it's disabled but available for 28 days. If you change your mind during this time, you can recover your organization. After 28 days, your organization and data are permanently deleted.
 
 ## Prerequisites
 
-* An organization deleted within the last 30 days.
-* Organization owner permissions to restore your organization. [How do I find the organization owner?](faq-delete-restore-organization.md#find-owner)
+* An organization deleted within the last 28 days.
+* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
+
+## Recover organization
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
@@ -31,13 +33,13 @@ After you delete your organization, it's disabled but available for 30 days. If 
 
 2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom, and then select **Restore**.
 
-   ![Restore your deleted organization](_img/_shared/visual-studio-profile-page.png)
+   ![Restore your deleted organization](media/shared/visual-studio-profile-page.png)
 
 3. In the resulting popup, select **Restore** to confirm.
 
    * If your organization URL is still available, you can restore it.
 
-      ![Confirm restoration of your organization](_img/recover-your-organization/confirm-restore-organization.png)
+      ![Confirm restoration of your organization](media/recover-your-organization/confirm-restore-organization.png)
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 

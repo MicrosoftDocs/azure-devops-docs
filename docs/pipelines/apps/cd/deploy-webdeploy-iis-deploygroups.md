@@ -5,7 +5,7 @@ ms.assetid: 979E4504-C88A-4D0A-A912-6E5998D87445
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,12 +15,12 @@ monikerRange: '>= tfs-2018'
 
 # Deploy to a Windows Virtual Machine
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 We'll show you how to set up continuous deployment of your ASP.NET or Node.js app to an IIS web server running on Windows using
 Azure Pipelines. You can use the steps in this quickstart as long as your continuous integration pipeline publishes a web deployment package.
 
-![A typical release pipeline for web applications](azure/_shared/_img/vscode-git-ci-cd-to-azure.png)
+![A typical release pipeline for web applications](azure/media/vscode-git-ci-cd-to-azure.png)
 
 After you commit and push a code change, it is automatically built and then deployed. The results will automatically show up on your site.
 
@@ -30,9 +30,9 @@ You'll need a continuous integration (CI) build pipeline that publishes your web
 
 * [Build ASP.NET 4 apps](../aspnet/build-aspnet-4.md)
 
-* [Build ASP.NET Core apps](../../languages/dotnet-core.md)
+* [Build ASP.NET Core apps](../../ecosystems/dotnet-core.md)
 
-* [Build JavaScript and Node.js apps](../../languages/javascript.md)
+* [Build JavaScript and Node.js apps](../../ecosystems/javascript.md)
 
 ## Prerequisites
 
@@ -42,17 +42,17 @@ The configuration varies depending on the type of app you are deploying.
 
 #### ASP.NET app
 
-[!INCLUDE [prepare-aspnet-windows-vm](../_shared/prepare-aspnet-windows-vm.md)]
+[!INCLUDE [prepare-aspnet-windows-vm](../includes/prepare-aspnet-windows-vm.md)]
 
 #### ASP.NET Core app
 
-[!INCLUDE [prepare-aspnetcore-windows-vm](../_shared/prepare-aspnetcore-windows-vm.md)]
+[!INCLUDE [prepare-aspnetcore-windows-vm](../includes/prepare-aspnetcore-windows-vm.md)]
 
 #### Node.js app
 
 Follow the instructions in [this topic](https://github.com/Azure/iisnode) to install and configure IISnode on IIS servers.
 
-[!INCLUDE [create-deployment-group](../_shared/create-deployment-group.md)]
+[!INCLUDE [create-deployment-group](../includes/create-deployment-group.md)]
 
 ## Define your CD release pipeline
 
@@ -86,7 +86,7 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
 
 You're now ready to create a release, which means to run the release pipeline with the artifacts produced by a specific build. This will result in deploying the build:
 
-[!INCLUDE [simple-create-release](../_shared/simple-create-release.md)]
+[!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
 ## Next steps
 

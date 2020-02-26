@@ -2,9 +2,9 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items:
-  - name: Developer Resources
+  - name: Developer resources
     topicHref: /azure/devops/dev-resources/index
     items:
-    - name: Demo Generator
+    - name: Demo generator
       tocHref: /azure/devops/demo-gen/
       topicHref: /azure/devops/demo-gen/index

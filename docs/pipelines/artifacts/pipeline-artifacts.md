@@ -7,24 +7,25 @@ ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: jillfra
-ms.author: amullans
-author: alexmullans
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline artifacts in Azure Pipelines (preview)
+# Publish and download artifacts
 
 **Azure Pipelines**
 
-> [!NOTE]
-> Pipeline artifacts are the next generation of build artifacts in Azure Pipelines and are the recommended way to work with artifacts.
-> For the current artifacts, see [Build artifacts](build-artifacts.md).
-
 Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that need to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
 
+> [!NOTE]
+> Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
+
 ## Publishing artifacts
+
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 
@@ -51,7 +52,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -64,6 +65,12 @@ steps:
    ```
    $(System.DefaultWorkingDirectory)/bin/WebApp
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact upload --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
 
 ---
 
@@ -79,7 +86,7 @@ Keep in mind:
 
 `.artifactignore` files use the identical file-globbing syntax of `.gitignore` to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
 
-Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to incude only files in the artifact with a `.exe` extension:
+Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to include only files in the artifact with a `.exe` extension:
 
 ```
 **/*
@@ -118,13 +125,19 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
    ```
    WebApp
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+```azurecli
+az pipelines runs artifact download --artifact-name 'WebApp' --path $(System.DefaultWorkingDirectory)/bin/WebApp --run-id '<run id here>'
+```
 
 ---
 
@@ -160,7 +173,7 @@ For example, to download all `*.js` from the artifact `WebApp`:
 steps:
 - download: current
   artifact: WebApp
-  patterns: **/*.js
+  patterns: '**/*.js'
 ```
 
 Files (with the directory structure of the artifact preserved) are downloaded under `$(Pipeline.Workspace)/WebApp`.
@@ -172,7 +185,7 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     artifact: WebApp
-    patterns: **/*.js
+    patterns: '**/*.js'
     path: $(Build.SourcesDirectory)/bin
 ```
 
@@ -180,7 +193,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -197,8 +210,12 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 * Matching patterns:
 
    ```
-   **/*.js
+   '**/*.js'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 
@@ -219,7 +236,7 @@ For example, to download all `.zip` files from all source artifacts:
 ```yaml
 steps:
 - download: current
-  patterns: **/*.zip
+  patterns: '**/*.zip'
 ```
 
 # [YAML (task)](#tab/yaml-task)
@@ -228,18 +245,22 @@ steps:
 steps:
 - task: DownloadPipelineArtifact@2
   inputs:
-    patterns: **/*.zip
+    patterns: '**/*.zip'
 ```
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Matching patterns:
 
    ```
-   **/*.zip
+   '**/*.zip'
    ```
+
+# [Azure CLI](#tab/azure-cli)
+
+No available Azure CLI option for this action.
 
 ---
 
@@ -261,10 +282,16 @@ steps:
 
 Pipeline artifacts are the next generation of build artifacts and are the recommended way to work with artifacts. Artifacts published using the **Publish Build Artifacts** task can continue to be downloaded using **Download Build Artifacts**, but can also be downloaded using the latest **Download Pipeline Artifact** task.
 
-When migrating from from build artifacts to pipeline artifacts:
+When migrating from build artifacts to pipeline artifacts:
 
 1. For build artifacts, it's common to copy files to `$(Build.ArtifactStagingDirectory)` and then use the **Publish Build Artifacts** task to publish this folder. With the **Publish Pipeline Artifact** task, just publish directly from the path containing the files.
 
 2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
 3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
+
+## Q&A
+
+### Can this task publish artifacts to a shared folder or network path?
+
+Not currently, but this feature is planned.

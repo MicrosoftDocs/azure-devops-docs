@@ -3,11 +3,11 @@ title: Use Azure Artifacts as a private PowerShell repository
 description: Use Azure Artifacts within Azure DevOps Services to create your own private PowerShell repository
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: rabououn
+author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 11/19/2018
+ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 Azure Artifacts provides an easy way to share your PowerShell scripts and books across your entire team or company. By storing your PowerShell scripts in a private NuGet repository within Azure Artifacts, you can give members of your team the ability to download or update them quickly using the command line.
 
 > [!NOTE]
-> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../license-azure-artifacts.md).
+> This guide assumes you've already set up Azure Artifacts. You can check out how to license the extension in the [License Azure Artifacts guide](../start-using-azure-artifacts.md).
 
 In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShell repository that your team can download and upload PowerShell modules to. You'll complete the following steps:
 
@@ -41,17 +41,17 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 2. From your home page, open your profile. Go to your security details:
 
-    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/_shared/_img/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/media/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
 
 3. Create a personal access token.
 
-   <img alt="Add a personal access token" src="../../repos/git/_shared/_img/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Add a personal access token" src="../../repos/git/media/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 4.  Name your token. Select a lifespan for your token.
 
 	If you have more than one organization, you can also select the organization where you want to use the token.
 
-    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/_shared/_img/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
 
 5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will authorize for *your specific tasks*.
 
@@ -59,7 +59,7 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 6. When you're done, make sure to *copy the token*, as this value will only be shown once. You'll use this token as your password, you can choose to store this value in whatever manner you prefer, but it should be treated as safely as a password. **You will need this value later in the tutorial**.
 
-> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-persona-access-tokens-to-authenticaate).
+> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
 
 ## Create the feed
 
@@ -226,7 +226,8 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted
     ```
     
-    > **NOTE:** You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
+    > [!NOTE]
+    > You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
     
     If you're still using the older ```visualstudio.com``` URLs, use this command instead:
 

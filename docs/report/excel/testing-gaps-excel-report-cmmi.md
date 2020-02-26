@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: e4ce9627-630f-4c11-bd23-f5348431cd86
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Testing Gaps Excel reports (CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Testing Gaps report to help determine where there are deficiencies in the test plans, test configurations, and test coverage. The Testing Gaps report provides the following five reports based on test results and builds that have been defined and run for a team project.  
   
@@ -45,7 +45,7 @@ Teams who are responsible for testing software can use the Testing Gaps report t
 
  The Requirement Status report indicates how many tests are passing or failing for each requirement. It provides a horizontal bar chart that shows the count of test results for each test case and test configuration combination that the team has defined for each requirement. The report presents the cumulative outcome of tests that were run for all test cases that are linked to requirements. The report displays results that are filtered by the following outcomes: **Passed** (green), **Failed** (red), **Never Run** (blue), or **Blocked** (yellow).  
   
- ![Requirement Test Status Excel report](_img/procg_cmmi_testgaps.png "ProcG_CMMI_TestGaps")  
+ ![Requirement Test Status Excel report](media/procg_cmmi_testgaps.png "ProcG_CMMI_TestGaps")  
   
  The Requirement Status by Config report presents the test results for each requirement, grouped by test configuration.  
   
@@ -112,4 +112,4 @@ For the Testing Gaps reports to be useful and accurate, the team must perform th
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

@@ -5,7 +5,7 @@ description: Appears when a Team Foundation add-in has been disabled in an Offic
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e10dc22d-2d09-40d8-8a90-37f6f54412ee
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -14,11 +14,11 @@ ms.date: 09/28/2018
 
 # TF237002: Cannot open the document because Microsoft Excel 2007 or later, or one of its components is not installed
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Error message TF237002 or TF400593 appears when a Team Foundation add-in has been disabled in an Office client, or Office Primary Interop Assemblies are not installed or were damaged after they were installed.  
 
- The **Team** menu or **Team** ribbon appears when you install Visual Studio. You can install Visual Studio Community or Team Foundation Server Standalone Office Integration 2015 for free [from the Visual Studio download page](http://www.visualstudio.com/downloads/download-visual-studio-vs).  
+ The **Team** menu or **Team** ribbon appears when you install Visual Studio. You can install Visual Studio Community or Team Foundation Server Standalone Office Integration 2015 for free [from the Visual Studio download page](https://www.visualstudio.com/downloads/download-visual-studio-vs).  
   
  If the **Team** menu or **Team** ribbon doesn't appear in your Office client, try re-enabling the Team Foundation add-in. If you continue to have problems, verify that the .NET Programmability Support option is configured correctly. As a final solution, try repairing your Office client.  
   
@@ -37,7 +37,7 @@ See [TFS-Office integration issues](../../boards/backlogs/office/tfs-office-inte
   
      Locate the .NET Programmability Support option under Microsoft Excel or other client in the Office suite.  
   
-     ![Install .NET Programmability Support option](_img/alm_em_netprogsupport.png "ALM_EM_NetProgSupport")  
+     ![Install .NET Programmability Support option](media/alm_em_netprogsupport.png "ALM_EM_NetProgSupport")  
   
 ### To repair your Office client  
   

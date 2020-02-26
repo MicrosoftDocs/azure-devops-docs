@@ -7,18 +7,22 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 10/02/2019
 ---
 
 # Query quick reference 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
+
+For the mechanics of constructing and saving queries, see [Use the query editor to list and manage queries](using-queries.md). If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
+
+For specific examples, choose one of the following articles listed under [Query samples for select fields](#samples).  
 
 ## Query tasks 
 
@@ -29,7 +33,7 @@ Use this index to quickly access information on query editor tasks, operators av
 <ul>
 <li><a href="using-queries.md" data-raw-source="[Add a query](using-queries.md)">Add a query</a></li>
 <li><a href="../../report/dashboards/charts.md" data-raw-source="[Add a query chart](../../report/dashboards/charts.md)">Add a query chart</a></li>
-<li><a href="../../report/dashboards/add-charts-to-dashboard.md#work-item-query" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md#work-item-query)">Add a query to a dashboard</a></li>
+<li><a href="../../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)">Add a query to a dashboard</a></li>
 <li><a href="organize-queries.md" data-raw-source="[Add a query folder](organize-queries.md)">Add a query folder</a></li>
 <li><a href="../backlogs/set-column-options.md" data-raw-source="[Add columns to query results](../backlogs/set-column-options.md)">Add columns to query results</a></li>
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify query items](../backlogs/bulk-modify-work-items.md)">Bulk modify query items</a></li>
@@ -37,14 +41,13 @@ Use this index to quickly access information on query editor tasks, operators av
 <li><a href="view-run-query.md#view-rename-delete" data-raw-source="[Delete a query](view-run-query.md#view-rename-delete)">Delete a query</a></li>
 <li><a href="using-queries.md#directs-link-query" data-raw-source="[Direct-links query](using-queries.md#directs-link-query)">Direct-links query</a></li>
 <li><a href="using-queries.md" data-raw-source="[Edit a query](using-queries.md)">Edit a query</a></li>
-
 </ul>
 </td>
 <td width="33%">
 <ul>
 <li><a href="view-run-query.md#email-query" data-raw-source="[Email a query](view-run-query.md#email-query)">Email a query</a></li>
 <li><a href="using-queries.md#export-query" data-raw-source="[Export a query](using-queries.md#export-query)">Export a query</a></li>
-<li><a href="view-run-query.md#favorite" data-raw-source="[Favorite a query](view-run-query.md#favorite)">Favorite a query</a></li>
+<li><a href="view-run-query.md" data-raw-source="[Favorite a query](view-run-query.md)">Favorite a query</a></li>	
 <li><a href="../backlogs/filter-backlogs.md" data-raw-source="[Filter a query](../backlogs/filter-backlogs.md)">Filter a query</a></li>
 <li><a href="using-queries.md#flat-list-query" data-raw-source="[Flat-list query](using-queries.md#flat-list-query)">Flat-list query</a></li>
 <li><a href="using-queries.md#group-clauses" data-raw-source="[Group a clause](using-queries.md#group-clauses)">Group a clause</a></li>
@@ -94,7 +97,7 @@ The following table indicates the operators and macros available for the differe
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
     <td>A date field in which you can specify a variable, such as <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong> or <strong><xref href="Today-1" data-throw-if-not-resolved="False" data-raw-source="@Today-1"></xref></strong>, or a value, such as 1/1/2012. Enter dates in the Date Pattern you set for your personal profile. (See <a href="../../organizations/settings/set-your-preferences.md" data-raw-source="[Set personal preferences](../../organizations/settings/set-your-preferences.md)">Set personal preferences</a> for details.)<p> For query examples, see <a href="query-by-date-or-current-iteration.md" data-raw-source="[Query by date or@CurrentIteration](query-by-date-or-current-iteration.md)">Query by date or@CurrentIteration</a>. </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, valid with any <strong>DateTime</strong> field</p><p><strong>Additional macros supported on Azure DevOps Services</strong>: <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, valid with any <strong>DateTime</strong> field</p></td> 
+    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever  <p><strong>Macros</strong>: <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>, valid with any <strong>DateTime</strong> field</p><p><strong>Additional macros supported on Azure DevOps 2019 Update 1 and later versions:</strong>:<br/><strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong>, valid with any <strong>DateTime</strong> field</p></td> 
 </tr>
 <tr>
     <td><strong>Double</strong> </td>
@@ -114,11 +117,6 @@ The following table indicates the operators and macros available for the differe
 	<td><p> <strong>HTML</strong> </p></td>
     <td><p>Text strings that support formatted descriptions, such as the <strong>Description</strong> or <strong>Repro Steps</strong> fields. These fields are automatically indexed for full-text search when full-text search is available. Query samples: <a href="titles-ids-descriptions.md" data-raw-source="[Query by titles, IDs, and rich-text fields](titles-ids-descriptions.md)">Query by titles, IDs, and rich-text fields</a>. </td>
 	<td>Contains Words, Does Not Contain Words, Is Empty<sup>3</sup>, Is Not Empty<sup>3</sup></td>
-</tr>
-<tr>
-	<td><p><strong>History</strong> </p></td>
-    <td>Custom formatted field used to track historical information associated with the <strong>History</strong> field.Query samples: <a href="history-and-auditing.md" data-raw-source="[History and auditing](history-and-auditing.md)">History and auditing</a>. </td>
-    <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever</td>
 </tr>
 <tr>
     <td><strong>Identity</strong></td>
@@ -173,6 +171,7 @@ The following table indicates the operators and macros available for the differe
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
 
 
+<a id="samples" />
 
 ## Query samples for select fields 
 
@@ -293,6 +292,8 @@ The following table lists common query fields and their data type for which samp
 
 ## Related articles
 
+- [Query by field value comparisons](query-field-value.md) 
+- [Guidance to create high-performing queries](high-performing-queries.md)
 - [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json)  
 - [Define a managed query](using-queries.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 

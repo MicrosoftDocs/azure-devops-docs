@@ -1,12 +1,12 @@
----
-title: Microsoft Release Management 2015 Server and Client Version - Help Contents
+﻿---
+title: Microsoft Release Management 2015 Server & Client Version
 ms.custom: seodec18
 description: Create managed continuous deployment pipelines in Azure Pipelines or TFS using Release Management 2015 (server and client version)
 ms.assetid: 9ABB2478-BE87-4DAC-8365-3A5138225554
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Release Management 2015 (server and client version)
 
-[!INCLUDE [previous-version-header](_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](includes/previous-version-header.md)]
 
 Improve the process of managing the release of your app.
 Deploy your app to a specific environment for each separate stage.
@@ -37,5 +37,5 @@ Manage the tasks in the process with approvals for each task.
     * [Tools for release actions](previous-version/release-actions/release-action-tools.md)
   - [Configuration variables and system variables](previous-version/config-and-system-variables.md)
 
-[!INCLUDE [wpfver-support-shared](_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](includes/wpfver-support-shared.md)]
 

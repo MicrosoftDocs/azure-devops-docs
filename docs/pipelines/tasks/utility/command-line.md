@@ -5,22 +5,24 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 72C7D4F4-E626-42FF-BCA8-24D58D9A960F
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/15/2019
+ms.date: 02/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Command Line task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build or release pipeline to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Demands
@@ -28,8 +30,10 @@ Use this task in a build or release pipeline to run a program from the command p
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/CmdLineV2.md)]
+
+[!INCLUDE [temp](../includes/yaml/CmdLineV2.md)]
 
 The CmdLine task also has a shortcut syntax in YAML:
 
@@ -42,47 +46,38 @@ The CmdLine task also has a shortcut syntax in YAML:
 ```
 ::: moniker-end
 
+## Running batch and .CMD files
+
+Azure Pipelines puts your inline script contents into a temporary batch file (.cmd) in order to run it.
+When you want to run a batch file from another batch file in Windows CMD, you must use the `call` command, otherwise the first batch file is terminated.
+This will result in Azure Pipelines running your intended script up until the first batch file, then running the batch file, then ending the step.
+Additional lines in the first script wouldn't be run.
+You should always prepend `call` before executing a batch file in an Azure Pipelines script step.
+
+> [!IMPORTANT]
+> You may not realize you're running a batch file.
+> For example, `npm` on Windows, along with any tools that you install using `npm install -g`, are actually batch files.
+> Always use `call npm <command>` to run NPM commands in a Command Line task on Windows.
+
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Script</td>
-<td>Contents of the script you want to run</td>
-</tr>
-<tr>
-<th colspan="2">Optional</th>
-</tr>
-<tr>
-<td>Working directory</td>
-<td>Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).</td>
-</tr>
-<tr>
-<td>Fail on standard error</td>
-<td>If this is <code>true</code>, this task will fail if any errors are written to <code>stderr</code>.</td>
-</tr>
-<tr>
-<td>Environment variables</td>
-<td>A list of additional items to map into the process's environment. For example, secret variables are not automatically mapped. If you have a secret variable called <code>Foo</code>, you can map it in like this:<br/><br/>
-```yaml
+|Argument|Description|
+|--- |--- |
+|`script`<br/>Script|(Required) Contents of the script you want to run <br/>Default value: `echo Write your commands here\n\necho Hello world\n"`|
+|`workingDirectory`<br/>Working directory|(Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md).|
+|`failOnStderr`<br/>Fail on Standard Error|If this is true, this task will fail if any errors are written to stderr|
+|`env`<br/>Environment variables|(Optional) A list of additional items to map into the process's environment. <br/>For example, secret variables are not automatically mapped. If you have a secret variable called **`Foo`**, you can map it in as shown in the following example. |
+
+```YAML
 - script: echo %MYSECRET%
   env:
     MySecret: $(Foo)
 ```
-</td>
-</tr>
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-</table>
+
 
 ## Example
 
-# [YAML](#tab/yaml)
-
+#### [YAML](#tab/yaml/)
 ```yaml
 steps:
 - script: date /t
@@ -98,64 +93,63 @@ steps:
     aVarFromYaml: someValue
 ```
 
-# [Classic](#tab/classic)
-
+#### [Classic](#tab/classic/)
 On the Build tab of a build pipeline, add these tasks:
 
 <table>
    <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**
+      <td>
+<img src="media/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong>
       </td>
 <td>
 <p>Get the date.</p>
 <ul>
-<li>Tool: ```date```</li>
- <li>Arguments: ```/t```</li>
+<li>Tool: <code>date</code></li>
+ <li>Arguments: <code>/t</code></li>
 </ul>
       </td>
 </tr>
-   
-        <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+<tr>
+<td>
+<img src="media/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the operating system version.</p>
 <ul>
-<li>Tool: ```ver```</li>
+<li>Tool: <code>ver</code></li>
  </ul>
 </td>
         </tr>
-
-   
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+      <td>
+<img src="media/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display the environment variables.</p>
 <ul>
-<li>Tool: ```set```</li>
+<li>Tool: <code>set</code></li>
 </ul>
 </td>
         </tr>
-
-   
         <tr>
-      <td>![](_img/command-line.png)<br/>**Utility: Command Line**</td>
-      
+      <td>
+<img src="media/command-line.png" alt=""/>
+<br/><strong>Utility: Command Line</strong></td>
 <td>
 <p>Display all files in all the folders created by the build pipeline.</p>
 <ul>
-<li>Tool: ```dir```</li>
- <li>Arguments: ```/s```</li>
-<li>Advanced, Working folder: ```$(Agent.BuildDirectory)```</li>
+<li>Tool: <code>dir</code></li>
+ <li>Arguments: <code>/s</code></li>
+<li>Advanced, Working folder: <code>$(Agent.BuildDirectory)</code></li>
 </ul>
 </td>
         </tr>
-
 </table>
 
----
 
+
+* * *
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
@@ -166,12 +160,14 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Where can I learn Windows commands?
 
-[An A-Z Index of the Windows CMD  command line](http://ss64.com/nt/)
+[An A-Z Index of the Windows CMD  command line](https://ss64.com/nt/)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+
+[!INCLUDE [temp](../../includes/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

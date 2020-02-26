@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Pull Request Iterations | REST API Reference for Team Foundation Server
 description: Work with Git pull requests programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: EF349F15-C2BD-4338-9DB8-3FF7DECC5801
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

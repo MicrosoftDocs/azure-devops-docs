@@ -6,15 +6,16 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 53c52c0e-da53-4f9c-afc4-6c6260d32ccc
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Engineering
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 The Engineering section of the MSF for CMMI Process Improvement guidance covers the value-added activities for discovering the information that is required to design and build software products. The Engineering grouping of process areas in the CMMI includes Requirements Development, Requirements Management, Technical Solution, Product Integration, Verification, and Validation. All of these are model level 2 or 3 process areas.  
   

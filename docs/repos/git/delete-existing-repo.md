@@ -5,7 +5,7 @@ description: Remove an existing Git repo in an Azure DevOps Services or Team Fou
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -37,19 +37,19 @@ Remove unused Git repos from your project when they are no longer needed.
 
 1. Select **Repos**, **Files**.
 
-   ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](media/repos-navigation/repos-files.png)
 
 2. From the repo drop-down, select **Manage repositories**.
 
-   ![Manage repositories](_img/repo-mgmt/manage-repositories.png)
+   ![Manage repositories](media/repo-mgmt/manage-repositories.png)
 
 3. Select the name of the repository from the **Repositories** list, choose the **...** menu, and then choose **Delete repository**.
 
-   ![Delete repository](_img/repo-mgmt/delete-repository.png)
+   ![Delete repository](media/repo-mgmt/delete-repository.png)
 
 4. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
-   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
+   ![Delete repository confirm](media/repo-mgmt/delete-repository-confirm.png)
 
 ::: moniker-end
 
@@ -57,19 +57,19 @@ Remove unused Git repos from your project when they are no longer needed.
 
 1. Select the settings icon in the web to bring up the project administration page and choose **Version Control**.
 
-   ![Version control settings](_img/repo-mgmt/version-control-settings.png)
+   ![Version control settings](media/repo-mgmt/version-control-settings.png)
 
 2. Select the Git repository to remove from the list shown and select the **...** next to the name. Choose **Delete Repository**.
 
-   ![remove the Azure DevOps Services repo using the ellipses link next to the repo name](_img/repo-mgmt/remove-repo.png)
+   ![remove the Azure DevOps Services repo using the ellipses link next to the repo name](media/repo-mgmt/remove-repo.png)
 
    >[!NOTE]
    >If the **Repositories** pane is not expanded, select **>** to expand it and display the list of repositories.
    >
-   >![Repositories pane](_img/repo-mgmt/expand-repositories-pane.png)
+   >![Repositories pane](media/repo-mgmt/expand-repositories-pane.png)
 
 3. Confirm the deletion of the repository by typing the repo's name and selecting **Delete**.
 
-   ![Delete repository confirm](_img/repo-mgmt/delete-repository-confirm.png)
+   ![Delete repository confirm](media/repo-mgmt/delete-repository-confirm.png)
 
 ::: moniker-end

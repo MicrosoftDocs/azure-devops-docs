@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: a37734d7-8db0-44e5-9e4a-31ddf9261e9e
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '<= azure-devops'
 ms.date: 05/10/2017  
@@ -15,7 +15,7 @@ ms.date: 05/10/2017
 
 # Change the maximum attachment size for work items
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work item attachments to 4 MB. For on-premises deployments, you can use the web service to increase the size of files you attach to up to 2GB. 
   
@@ -31,7 +31,7 @@ By default, Azure DevOps and Team Foundation Server (TFS) limit the size of work
   
 4.  Enter the size in bytes, and then choose **Invoke**.  
   
-     ![SetMaxAttachmentSize, ConfigurationSettingsService](_img/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
+     ![SetMaxAttachmentSize, ConfigurationSettingsService](media/alm_wit_attachsize.png "ALM_WIT_AttachSize")  
   
      The maximum size you can specify is 2 gigabytes (or `2000000000`).  
 
@@ -41,7 +41,7 @@ Increasing the attachment size increases the amount of data in storage and the t
 
 ## Federal Information Processing Standard (FIPS) exception
 
-If you receive an error message similar to the one listed below, you may need to disable the FIPS service in order to avoid the exception. To learn more, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing" security setting effects in Windows XP and in later versions of Windows](https://support.microsoft.com/en-us/help/811833/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashi). 
+If you receive an error message similar to the one listed below, you may need to disable the FIPS service in order to avoid the exception. To learn more, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing" security setting effects in Windows XP and in later versions of Windows](https://support.microsoft.com/help/811833/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashi). 
 
 ```
 Application: csc.exe

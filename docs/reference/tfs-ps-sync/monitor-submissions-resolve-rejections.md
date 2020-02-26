@@ -5,7 +5,7 @@ description: Monitor the status of work items submitted to Project Server for pa
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 13d38542-a0e8-411b-80ac-e8bb2b5c5f61
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Monitor work item submissions and resolve rejections
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> As a team lead, you may want to create several work item queries to monitor the status of work items that were submitted to Microsoft Project Server for participation in data synchronization. You can use the queries that are described in this topic to list blocked or rejected work items and then perform the corrective actions to resolve the blocks and rejections.  
 

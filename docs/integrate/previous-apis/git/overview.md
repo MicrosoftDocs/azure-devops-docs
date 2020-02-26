@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Git | REST API Reference for Team Foundation Server
 description: Work with Git programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 19DFAB3F-274F-41DF-ACD5-93DCEE626121
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -36,8 +36,8 @@ There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/m
 <table class="table table-striped; centered-table">
 <thead class="thead-inverse">
     <tr>
-        &lt;th =&quot;col-md-8&quot;&gt;Areas</th>
-        &lt;th =&quot;col-md-8&quot;&gt;Common Tasks</th>
+        <th class="col-md-8">Areas</th>
+        <th class="col-md-8">Common Tasks</th>
     </tr>
 </thead>
 <tbody>
@@ -133,5 +133,5 @@ In case you're looking for something not found in the **Common tasks** section a
 * [Trees](./trees.md)
 
 >[!NOTE]
->For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](https://visualstudio.microsoft.com/docs/repos/git/overview).
+>For more information on Git, see [Use Git with Visual Studio and Team Foundation Server](../../../repos/git/overview-2013.md).
 

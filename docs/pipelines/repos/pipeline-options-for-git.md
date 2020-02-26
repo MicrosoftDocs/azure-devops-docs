@@ -5,23 +5,23 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 05/15/2019
+ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo), you have the following options.
+While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
 | Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
@@ -64,7 +64,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ## Clean the local repo on the agent
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 ::: moniker-end
 
@@ -82,10 +82,10 @@ This is the branch that you want to be the default when you manually queue this 
 Select one of the following options:
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
- ```
- git clean -ffdx
- git reset --hard HEAD
- ```
+  ```
+  git clean -ffdx
+  git reset --hard HEAD
+  ```
 
 * **Sources and output directory**: Same operation as **Sources** option above, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
 
@@ -101,7 +101,7 @@ Select one of the following options:
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ### TFS 2015 RTM
 
@@ -119,7 +119,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 Select **true** to delete the repository folder.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -127,7 +127,7 @@ Select **true** to delete the repository folder.
 
 ## Label sources
 
-[!INCLUDE [include](_shared/label-sources.md)]
+[!INCLUDE [include](includes/label-sources.md)]
 
 The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
@@ -174,9 +174,14 @@ If your source is in any other type of remote repository, then you cannot use Az
 
 ## Checkout path
 
-By default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+
+If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code will be checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
+
+> [!NOTE]
+> The checkout path can only be specified for YAML pipelines. For more information, see [Checkout](../yaml-schema.md#checkout) in the [YAML schema](../yaml-schema.md).
 
 ::: moniker-end
 
@@ -186,6 +191,10 @@ Please note that the checkout path value cannot be set to go up any directory le
 
 Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
+If you want to use LFS with submodules, be sure to see the [note about using LFS with submodules](#using-git-lfs-with-submodules).
+
+> [!NOTE]
+> For more information about the YAML syntax for checking out submodules, see [Checkout in the YAML schema](../yaml-schema.md#checkout).
 
 The build pipeline will check out your Git submodules as long as they are:
 
@@ -193,9 +202,9 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Authenticated:**  
 
- - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
+  - Contained in the same project, GitHub organization, or Bitbucket Cloud account as the Git repo specified above.
 
- - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
+  - Added by using a URL relative to the main repository. For example, this one would be checked out: ```git submodule add /../../submodule.git mymodule``` This one would not be checked out: ```git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule```
 
 ::: moniker-end
 
@@ -232,12 +241,12 @@ You might have a scenario where a different set of credentials are needed to acc
 This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization or Git service.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
-First, get a personal access token (PAT) and prefix it with "pat:".
-Next, Base64-encode this string to create a basic auth token.
+First, get a personal access token (PAT) and prefix it with `pat:`.
+Next, [base64-encode](https://www.base64encode.org/) this prefixed string to create a basic auth token.
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
 ```
 
 Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
@@ -259,7 +268,15 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2017"
 
-* **Azure Pipelines, TFS 2017.3 and newer:** Select the check box to enable this option.
+In the classic editor, select the check box to enable this option.
+
+In a YAML build, add a checkout step with `lfs` set to `true`:
+
+```yaml
+steps:
+- checkout: self
+  lfs: true
+```
 
 ::: moniker-end
 
@@ -271,7 +288,33 @@ Select if you want to download files from [large file storage (LFS)](../../repos
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install git-lfs on the agent for this option to work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work.
+
+### Using Git LFS with submodules
+
+If a submodule contains LFS files, Git LFS must be configured prior to checking out submodules.
+The Microsoft-hosted macOS and Linux agents come preconfigured this way.
+Windows agents and self-hosted macOS / Linux agents may not.
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+As a workaround, if you're using YAML, you can add the following step before your `checkout`:
+
+```yaml
+steps:
+- script: |
+    git config --global --add filter.lfs.required true
+    git config --global --add filter.lfs.smudge "git-lfs smudge -- %f"
+    git config --global --add filter.lfs.process "git-lfs filter-process"
+    git config --global --add filter.lfs.clean "git-lfs clean -- %f"
+  displayName: Configure LFS for use with submodules
+- checkout: self
+  lfs: true
+  submodules: true
+# ... rest of steps ...
+```
 
 ::: moniker-end
 
@@ -317,7 +360,9 @@ git -c http.<repo URL>.extraheader="AUTHORIZATION: basic $AUTH" clone <repo URL>
 
 ## Don't sync sources (TFS 2017 and newer only)
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
+Non-deployment jobs automatically fetch sources.
+Use this option if you want to skip that behavior.
+This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 
@@ -357,7 +402,8 @@ In these cases this option can help you conserve network and storage resources. 
 
 After you select the check box to enable this option, in the **Depth** box specify the number of commits.
 
-> **Tip:** The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
+> [!TIP]
+> The `Agent.Source.Git.ShallowFetchDepth` variable mentioned below also works and overrides the check box controls. This way you can modify the setting when you queue the build.
 
 ::: moniker-end
 
@@ -385,12 +431,12 @@ When using an Other/external Git repository, CI builds require that the reposito
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/git-protocols.md)]
+[!INCLUDE [temp](includes/git-protocols.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

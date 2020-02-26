@@ -4,10 +4,10 @@ ms.assetid: 391af512-e9bd-3ff1-527d-fe31fe90ab6f
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -18,7 +18,7 @@ Module path: `TFS/VersionControl/Contracts`
 ### Values
 
 * `Succeeded` Indicates that the ref update request was completed successfully.
-* `ForcePushRequired` Indicates that the ref update request could not be completed because part of the graph would be disconnected by this change, and the caller does not have ForcePush permission on the repository.
+* `ForcePushRequired` Indicates that the ref update request could not be completed because part of the graph would be disconnected by this change, and the caller doesn't have ForcePush permission on the repository.
 * `StaleOldObjectId` Indicates that the ref update request could not be completed because the old object ID presented in the request was not the object ID of the ref when the database attempted the update. The most likely scenario is that the caller lost a race to update the ref.
 * `InvalidRefName` Indicates that the ref update request could not be completed because the ref name presented in the request was not valid.
 * `Unprocessed` The request was not processed

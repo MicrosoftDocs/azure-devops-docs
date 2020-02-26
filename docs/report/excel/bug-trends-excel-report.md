@@ -6,14 +6,15 @@ ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: fedaecea-cedb-467b-b8f4-03f63420f7b3
-ms.author: kaelliauthor: KathrynEE
-ms.manager: jillfra
+ms.author: kaelli
+ms.manager: mijacobs
+ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
 # Bug Trends Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Bug Trends report in Office Excel to track the rate at which the team is discovering, resolving, and closing Bugs. This report shows a moving average of Bugs that the team has discovered and resolved over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -27,7 +28,7 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
 
  You can use the Bug Trends report to understand the rate at which the team is finding, fixing, and closing Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. That data is stored in the data warehouse.  
   
- ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")  
+ ![Bug Trends report](media/procguid_bugtrends.png "ProcGuid_BugTrends")  
   
  You should expect the Bug Trends report to vary based on where you are in your product development cycle. Early iterations should exhibit a gradual increase in the rate at which the team discovers bugs.  
   
@@ -60,4 +61,4 @@ You can customize the Bug Trends report by opening the report in Office Excel an
 ## Related articles
 
 - [Excel reports](excel-reports.md)
-- [Design the layout and format of a PivotTable](https://support.office.com/en-us/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 
+- [Design the layout and format of a PivotTable](https://support.office.com/article/design-the-layout-and-format-of-a-pivottable-a9600265-95bf-4900-868e-641133c05a80) 

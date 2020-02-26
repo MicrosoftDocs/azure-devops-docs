@@ -5,7 +5,7 @@ description: Overview of XML elements you can use to modify field settings, such
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 6dd08cfa-d039-4946-8528-b8c40d12c800
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,13 +15,13 @@ ms.date: 05/10/2017
 
 # Add a rule to a work item type  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Depending on a field's data type, you can set various restrictions on what data can be entered into that field. You can specify values for a pick list (drop-down menu), set default values, clear entries, or restrict changes. With conditional rules, you can apply rules to a field based on dependencies between different fields' values. You can also restrict who can modify a field or scope a rule to only apply to a group.
 
 All of these rule elements can be defined within the **FIELD** definition of a work item type (WIT) definition, subject to some [restrictions for System fields](#system). And, with the exception of **HELPTEXT**, you can specify these rules to take affect during a workflow transition or as child elements within a **FIELD** (Global workflow) element.
 
-![Work item tracking XML element field rules](_img/apply-rule-work-item-field/IC757527.png) 
+![Work item tracking XML element field rules](media/apply-rule-work-item-field/IC757527.png) 
 
 You can define any combination of rules to a field, subject to the constraints as described in this topic.
 
@@ -36,7 +36,7 @@ Field rules are one component you have to customize work item tracking. To learn
 For information on modifying fields or adding field rules to a WIT definition file, see [Add or modify a field](../add-modify-field.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 <a id="help-text" /> 
 
@@ -219,8 +219,11 @@ Work item fields do not distinguish between user identities in different domains
 
 -->
 
+
+
 <a id="conditional-rules" />
- 
+
+
 ## Conditional rules
 
 Conditional rules let you specify when a set of rules will be applied to a parent field. You can set conditions based on whether another field is assigned (or not assigned) a specified value or when another field changes (or doesn't change). You can include pick list and assign value rules within a conditional rule element.
@@ -264,29 +267,36 @@ You can make a pick list or assign value rule to apply or not apply to a group o
 
     Use **for** to apply a rule to a group. This example requires any user in the Junior Analysts group to complete the Second Approver field.
 
-        <FIELD name="Second Approver">
+    ```xml
+    <FIELD name="Second Approver">
         <REQUIRED for="Example1\Junior Analysts"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Restrict modification of a field to a group of users:**
 
     Use **not** to exclude a group from a rule. This example defines the Triage Description field as read-only for everyone except those users in the Triage Committee group.
 
-        <FIELD name="Triage Description">
+    ```xml
+    <FIELD name="Triage Description">
         <READONLY not="[Project]\Triage Committee" />
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Make a field required for some users and not for others:**
 
     Use a combination of **for** and **not** to simultaneously apply a rule to some and not for others. This example defines Severity as a required field for users in the Project Members group, but not for those in the Project Admins group.
 
-        <FIELD name="Severity">
+    ```xml
+    <FIELD name="Severity">
         <REQUIRED for="[Project]\Project Members" not="[Global]\Project Admins"/>
-        </FIELD>
+    </FIELD>
+    ```
 
     If a user is in both groups, the "for" statement would be enforced, and the field would be required.
 
 <a id="tokens" /> 
+
 ### Use tokens to reference groups
 
 When you restrict a rule to a group, you must indicate the domain or scope of the group. For some values, you can use tokens.
@@ -317,29 +327,37 @@ Person-name fields can accept values that reference both users and groups. Field
 
     Use [GLOBAL] to reference a collection-scoped TFS group, such as the Project Collection Administrators group or a Windows group you add to a collection. For example:
 
-        <FIELD name="Title">
+    ```xml
+    <FIELD name="Title">
         <READONLY for="[GLOBAL]\Project Collection Valid Users"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Scope to a server instance &mdash;[Team Foundation]:**
 
     Use the [Team Foundation] token to reference a server-scoped TFS group, such as a built-in group or a Windows group you add to a server-level group. For example:
 
-        <FIELD name="Title">
+    ```xml
+    <FIELD name="Title">
         <READONLY for="[Team Foundation]\Team Foundation Valid Users"/>
-        </FIELD>
+    </FIELD>
+    ```
 
 -   **Specify a domain qualified account or group:**
 
     Domain-qualified account name, such as the one shown in the following example, can be used to reference a domain user or group. Note that some rules only support groups and do not support referencing domain users.
 
-        <LISTITEM value="FABRIKAM\Christie Church's Direct Reports"/>
+    ```xml
+    <LISTITEM value="FABRIKAM\Christie Church's Direct Reports"/>
+    ```
 
 All users and groups must be qualified by one of these tokens. For example, the following XML isn't valid because it doesn't qualify the specified group with a valid token.
 
-    <FIELD name="Title">
+```xml
+<FIELD name="Title">
     <READONLY for="Dev Team"/>
-    </FIELD>
+</FIELD>
+```
 
 To learn more about built-in groups, see [Permissions and groups](../../organizations/security/permissions.md) 
 
@@ -360,7 +378,6 @@ System fields have System.*Name* reference names, for example System.Title and S
 
 - [Add or modify a field](../add-modify-field.md)   
 - [All WITD XML elements reference](all-witd-xml-elements-reference.md)
-
 
 
 ### Person-named fields and validation errors
@@ -486,6 +503,7 @@ In the following XML example, SubStatus will be emptied as you type "Approved Ag
 > ```
 
 <!--- 
+
 #### Q: When would I define field rules using global workflow?
 
 **A:** Use global workflow only when you are tasked with maintaining many fields with the same definitions and rules across multiple projects. Similar to global lists, using global workflow can minimize the work required when you have to update field definitions. For more information, see [Customize global workflow](global-workflow-xml-element-reference.md).

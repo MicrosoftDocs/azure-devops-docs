@@ -6,7 +6,7 @@ ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2015'
 # Releases in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="azure-devops"
 > [!NOTE] 
@@ -33,7 +33,7 @@ and actions in the release pipeline, such as the
 [stages](../process/stages.md),
 the tasks for each one, the values of task parameters
 and variables, and the release policies such as triggers, approvers, and release
-queuing options. There can be multiple releases from one released pipeline, and information
+queuing options. There can be multiple releases from one release pipeline, and information
 about each one is stored and displayed in Azure Pipelines for the specified
 [retention period](../policies/retention.md#release).  
 
@@ -49,7 +49,7 @@ to that stage.
 
 The following schematic shows the relationship between release pipelines, releases, and deployments.
 
-![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
+![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
 
 Releases can be created from a release pipeline in several ways:
 
@@ -75,7 +75,7 @@ or immediately start a deployment. For example:
   and not to the production stage.   
 
 * There may be [queuing policies](../process/stages.md#queuing-policies)
-  defined for an stage, which specify which of multiple deployments will occur,
+  defined for a stage, which specify which of multiple deployments will occur,
   or the order in which releases are deployed.
 
 * There may be [pre-deployment approvers or gates](approvals/index.md)
@@ -84,4 +84,4 @@ or immediately start a deployment. For example:
 
 * Approvers may defer the release to a stage until a specified date and time.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

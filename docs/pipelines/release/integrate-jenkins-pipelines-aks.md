@@ -7,7 +7,7 @@ ms.topic: tutorial
 ms.author: mlearned
 author: mlearned
 ms.reviewer: nicolela
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'
@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines provides integration with Jenkins so that you can:
@@ -54,7 +54,7 @@ You will:
 
 * You need a Spring Boot app.  You can fork the sample app found [here](https://github.com/spring-guides/gs-spring-boot-docker.git).
 
-* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr#deploy-azure-container-registry).
+* You need an Azure Container Registry (ACR).  You can follow  steps to deploy an ACR and login to the registry using the Azure CLI via the steps [here](/azure/aks/tutorial-kubernetes-prepare-acr).
 
 * An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
@@ -72,14 +72,14 @@ GitHub](https://github.com/spring-guides/gs-spring-boot-docker.git).  This tutor
 
 1. In Azure Repos, on the **Code** page for your Azure Repos project, select the option to **Import repository**.
 
-1. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
-  ```
-  https://github.com/spring-guides/gs-spring-boot-docker
-  ```
+2. In the **Import a Git repository** dialog box, paste the following URL into the **Clone URL** text box.
+   ```
+   https://github.com/spring-guides/gs-spring-boot-docker
+   ```
 
-1. Click **Import** to copy the sample code into your Git repo.
+3. Click **Import** to copy the sample code into your Git repo.
 
-1. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
+4. Select **Clone** at the top right, and keep the **clone URL** for future steps in this tutorial.
 
 ## Configure the sample app to build and push a Docker image to your ACR
 
@@ -176,8 +176,8 @@ The YAML file contains deployment settings for pulling the docker image from the
 
 You must configure credentials for connecting to Azure Pipelines.  When using credentials to connect to Azure Pipelines, it is a best practice to use a **personal access token (PAT)**.  You also need to create a Jenkins credential to use in your Jenkins build jobs.
 
-  > [!NOTE]
-  Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
+> [!NOTE]
+>   Ensure the PAT you use for the following steps contains the **Release (read, write, execute and manage), Code (read), Build (read and execute) permissions in Azure Pipelines**.
  
 1.  Create a PAT in your Azure Pipelines account. Jenkins requires this information to access your Azure DevOps organization.  Ensure you **store** the token information for upcoming steps in this section.
   Read [How do I create a personal access token for Azure Pipelines and TFS](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to learn how to generate a PAT, or use an existing PAT if you have one.
@@ -231,7 +231,7 @@ You create a Jenkins build job to use the source code stored in your Azure Repos
 1. Choose **Maven project**.  Select **OK**.
 
 1. In the **Source Code Management** tab, select **Git** and enter the **clone URL** you saved earlier for the Azure Repos **Repository URL** and the branch containing your app code. If you are using Team Foundation Server, you can choose the option for **Team Foundation Version Control (TFVC)**.   
-    ![Add a repo to your build](_img/integrate-jenkins-vsts-cicd/jenkins-git.png)
+    ![Add a repo to your build](media/integrate-jenkins-vsts-cicd/jenkins-git.png)
 
 1. Select the **Credentials** drop down and choose the credential you created earlier.  You should successfully authenticate to your Azure Repos repository and not receive errors before continuing.  If you see errors, you likely have an issue with your credentials and Azure DevOps **PAT**.
 
@@ -250,7 +250,7 @@ You create a Jenkins build job to use the source code stored in your Azure Repos
 1. Select the **Post-build Actions** tab.  Choose **Add post-build action**, then select **Trigger release in TFS/Team Services**.
 
 1. Enter a **Collection URL**.  An example is 
-`http://dev.azure.com/{your-organization}/DefaultCollection`
+`https://dev.azure.com/{your-organization}/DefaultCollection`
 
 1. Enter the **project** and choose a **release pipeline** name. Store the **release pipeline** name since it is needed in later steps of this tutorial.
 
@@ -264,7 +264,7 @@ You configure a Jenkins service connection to allow Azure Pipelines to connect t
 
 1. Open the **Services** page in Azure Pipelines, open the **New service connection** list, and choose **Jenkins**.
 
-     ![Add a Jenkins connection](_img/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
+     ![Add a Jenkins connection](media/integrate-jenkins-vsts-cicd/add-jenkins-endpoint.png)
 
 1. Enter a name for the connection.
 
@@ -394,7 +394,7 @@ You can initiate the CI build and the subsequent CD deployment to Azure by compl
 You are now using Jenkins CI builds with an Azure Repos code repository and an Azure Pipelines release pipeline to perform CI/CD to **Azure Container Services (AKS)**.  You can easily track your code changes and deployments via the rich reporting capabilities of Azure Pipelines, and leverage Jenkins to execute CI builds.
 
 ## View the deployed sample app
-Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubectl-cli).
+Once the app is deployed to the AKS cluster, you can query the external IP address using  **kubectl**, the Kubernetes command-line client.  You can learn how to install and connect **kubectl** to your AKS Cluster by following [these steps](/azure/aks/tutorial-kubernetes-deploy-cluster#install-the-kubernetes-cli).
 
 1. Use the following command for querying the external IP address for the deployed app:
 

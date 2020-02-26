@@ -5,7 +5,7 @@ ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Change a process control setting for the data warehouse or Analysis Services cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 
@@ -28,7 +28,7 @@ You can determine the current settings and change a setting by using the Warehou
 
   * SQL Server Reporting Services must be configured for the TFS deployment. If it isn't, see [Add a report server](add-a-report-server.md).  
 
-  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator-tfs).  
+  * You must be a member of the **Team Foundation Administrators** security group, or you must have the server-level **Administer warehouse** permission set to **Allow**. See [Set administrator permissions for Team Foundation Server](/azure/devops/server/admin/add-administrator).  
 
   * The TFS Application Pool must be running for the Warehouse Control Web service to be available.
 

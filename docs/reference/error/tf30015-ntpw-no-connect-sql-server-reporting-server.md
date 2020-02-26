@@ -5,7 +5,7 @@ description: The New Team Project Wizard was unable to connect to {name}.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 97f7dbf0-20f4-4e8d-94d2-403ca581d0a2
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # TF30015: The New Team Project Wizard could not connect to the specified SQL Server Reporting Services server {0}.
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 The New Team Project Wizard was unable to connect to {*name*}, the server that hosts SQL Server Reporting Services. The reason for the failed connection cannot be determined at this time.  

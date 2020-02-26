@@ -5,7 +5,7 @@ description: Examples for expanding pick list items and restricting items using 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 860a4118-f155-4c6b-9d80-d8a72a8b219f
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 05/10/2017
@@ -13,7 +13,7 @@ ms.date: 05/10/2017
 
 # Expand list items and exclude groups from lists
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You can expand and filter lists by using the `expanditems` and `filteritems` attributes. You can apply these attributes to these list type elements: `ALLOWEDVALUES`, `SUGGESTEDVALUES`, and `PROHIBITEDVALUES`.  
   

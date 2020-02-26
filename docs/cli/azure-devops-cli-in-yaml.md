@@ -3,16 +3,19 @@ title: Azure DevOps CLI in Azure Pipeline YAML
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Azure Pipeline YAML
 ms.topic: reference 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Azure DevOps CLI in Azure Pipeline YAML
+
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 
@@ -24,7 +27,6 @@ Include the content below.
 
 ### For Mac OS: azure-pipelines-steps-mac.yml
 
-> [!div class="tabbedCodeSnippets"]
 ```yaml
 steps:
 - script: az extension add -n azure-devops
@@ -35,18 +37,19 @@ steps:
     AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
   displayName: 'Login Azure DevOps Extension'
 
-- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases yes
+- script: az devops configure --defaults organization=$(System.TeamFoundationCollectionUri) project=$(System.TeamProject) --use-git-aliases true
   displayName: 'Set default Azure DevOps organization and project'
 
 - script: |
     az pipelines build list
     git pr list
   displayName: 'Show build list and PRs'
+
 ```
 
 ### For Linux: azure-pipelines-steps-linux.yml
 
-> [!div class="tabbedCodeSnippets"]
+
 ```yaml
 steps:
   # Updating the python version available on the linux agent
@@ -74,7 +77,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |
@@ -83,9 +86,9 @@ steps:
     displayName: 'Show build list and PRs'
 ```
 
-For Windows: azure-pipelines-steps-win.yml
+#### For Windows: azure-pipelines-steps-win.yml
 
-> [!div class="tabbedCodeSnippets"]
+
 ```yaml
 steps:
   # Updating the python version available on the linux agent
@@ -113,7 +116,7 @@ steps:
       AZURE_DEVOPS_CLI_PAT: $(System.AccessToken)
     displayName: 'Login Azure DevOps Extension'
 
-  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases yes
+  - script: az devops configure --defaults organization=https://georgeverghese.visualstudio.com project="Movie Search Web App" --use-git-aliases true
     displayName: 'Set default Azure DevOps organization and project'
 
   - script: |
@@ -126,14 +129,13 @@ steps:
 
 Include the content below.
 
-> [!div class="tabbedCodeSnippets"]
 ```yaml
 jobs:
 # Running Azure DevOps extension commands on a hosted Mac agent
 - job:
   displayName: 'macOS'
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-latest'
   steps:
   - template: azure-pipelines-steps-mac.yml
 
@@ -152,4 +154,4 @@ jobs:
     vmImage: 'vs2017-win2016'
   steps:
   - template: azure-pipelines-steps-win.yml
-
+```

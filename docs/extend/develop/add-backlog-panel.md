@@ -5,35 +5,37 @@ ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
+ms.author: chcomley
+author: chcomley
 ms.date: 08/22/2016
 ---
 
 # Add panels on backlog pages
 
-In this example, we'll add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <!---
-![panel extension on the Azure DevOps Services Portfolio backlog page](../_shared/procedures/_img/backlog-pane/portfolio-backlog-pane.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](../media-procedures/backlog-pane/portfolio-backlog-pane.png)
 -->
 
-![Open panel extension on the Azure DevOps Services Stories backlog page](_img/add-panel-intro-show-mapping-hello-world.png)
+![Open panel extension on the Azure DevOps Services Stories backlog page](media/add-panel-intro-show-mapping-hello-world.png)
 
 The custom panel opens in the same space that the mapping panel opens if it were selected.  
 
-![panel extension on the Azure DevOps Services Portfolio backlog page](_img/add-panel-show-custom-panel.png)
+![panel extension on the Azure DevOps Services Portfolio backlog page](media/add-panel-show-custom-panel.png)
 
 
 There are three types of backlogs that can be targets for panel extensions: Portfolio backlogs, Product backlogs, and Iteration backlogs. For the Agile template, this breakdown is as below. This is representative of Scrum and CMMI as well. For custom templates, please consult your process to see which backlogs are requirement or portfolio category. 
 
 <!---
-![backlog panel contribution point breakdown](../_shared/procedures/_img/backlog-pane/backlogPaneContributionPointBreakdown.png)
+![backlog panel contribution point breakdown](../media-procedures/backlog-pane/backlogPaneContributionPointBreakdown.png)
 -->
 
-![backlog panel contribution point breakdown](_img/add-panel-show-three-types.png)
+![backlog panel contribution point breakdown](media/add-panel-show-three-types.png)
 
 See the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vsts-extension-samples/tree/master/backlogs-panel) on GitHub for the full source of an example extension.
 
@@ -76,7 +78,7 @@ For each contribution in your extension, the manifest defines
 
 | Property           | Description                                                                                                                         
 |--------------------|----------------------------------------------------------------------------------------|                
-| title              | Tooltip text that will appear on the menu item                                        |                   
+| title              | Tooltip text that appears on the menu item                                        |                   
 | name               | What appears in the dropdown for panel selection					                  |                   
 | uri                | Path (relative to the extension's base URI) of the page to surface as the panel     |                   
 | registeredObjectId | Id of the object registered for the panel                                             |    
@@ -85,7 +87,7 @@ For each contribution in your extension, the manifest defines
 Learn about all of the places where you can add an extension in the [contributions reference](../reference/targets/overview.md).
 
 ### Scopes
-Include the[scopes](manifest.md#scopes) that your extension requires.
+Include the [scopes](manifest.md#scopes) that your extension requires.
 In this case, we need `vso.work` to access work items.
 
 

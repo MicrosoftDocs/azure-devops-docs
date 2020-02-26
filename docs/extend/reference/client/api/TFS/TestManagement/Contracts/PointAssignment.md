@@ -1,13 +1,14 @@
 ---
 title: TFS/TestManagement/Contracts PointAssignment API | Extensions for Azure DevOps Services
+description: Data representation of a point assignment.
 ms.assetid: 14606b98-f246-5485-2cf2-3d43d7eb0e1f
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

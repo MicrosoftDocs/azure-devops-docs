@@ -8,16 +8,16 @@ ms.topic: reference
 ms.assetid: ac74cae8-5c9b-43d6-b4ef-c889dcb9440f
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '<= azure-devops-2019'
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 
 
 # Build Summary Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The Build Summary lists builds and provides information about test results, test coverage, code churn, and quality notes for each build. 
@@ -28,7 +28,7 @@ The Build Summary lists builds and provides information about test results, test
  For information about how to access, refresh, or manage reports, see [Reporting Services Reports](reporting-services-reports.md).  
   
 > [!NOTE]
->  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+>  This report requires that the team project collection that contains your team project was provisioned with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
 **You can use this report to answer the following questions**:<br /><br /> -   What is the status of all builds over time?<br />-   Which builds succeeded?<br />-   Which builds have a significant number of changes to the code?<br />-   How much of the code was executed by the tests?<br />-   Which builds are ready to install?  
   
@@ -43,7 +43,7 @@ The Build Summary lists builds and provides information about test results, test
   
  At a glance, you can determine the success or failure of several build definitions for the time period under review, as the following illustration shows.  
   
- ![Example Build Summary report](_img/procguid_reports_buildsummary.png "ProcGuid_Reports_BuildSummary")  
+ ![Example Build Summary report](media/procguid_reports_buildsummary.png "ProcGuid_Reports_BuildSummary")  
   
  The following table describes the information that appears for each quality indicator:  
   
@@ -149,7 +149,7 @@ The Build Summary lists builds and provides information about test results, test
   
   The following illustration shows the available filters:  
   
-  ![Filters for Build Summary report](_img/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
+  ![Filters for Build Summary report](media/procguid_reports_buildsummary_filters.png "ProcGuid_Reports_BuildSummary_Filters")  
   
   You must apply the filters in the sequence that the following procedure specifies. The options that are available with some filters depend on the filters that you previously set.  
   

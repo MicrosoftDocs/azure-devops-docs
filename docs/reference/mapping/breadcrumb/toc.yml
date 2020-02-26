@@ -2,10 +2,6 @@
   tocHref: /azure/devops/
   topicHref: /azure/devops/index
   items: 
-  - name: Process Customization
-    tocHref: /azure/devops/reference/
-    topicHref: /azure/devops/reference/index
-    items:
-    - name: Microsoft Project Mapping File
-      tocHref: /azure/devops/reference/mapping/
-      topicHref: /azure/devops/reference/mapping/index
+  - name: Configure & customize
+    tocHref: /azure/devops/organizations/
+    topicHref: /azure/devops/organizations/index

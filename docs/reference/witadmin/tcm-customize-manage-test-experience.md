@@ -7,7 +7,7 @@ ms.technology: devops-agile
 ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '<= azure-devops-2019'
 ms.date: 03/20/2018
@@ -16,11 +16,14 @@ ms.date: 03/20/2018
 
 # Customize and manage the test experience
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 
 > [!IMPORTANT]  
 >**Feature availability**: You can only exercise the tcm commands against an on-premises TFS.  
+
+> [!IMPORTANT]
+> The **tcm** tool is currently unavailable in Visual Studio 2019.
 
 You can customize three of the features that are supported in Microsoft Test Manager using the `tcm fieldmapping` command. This command allows you to change the bug type used to automatically file bugs in Test Manager, and to customize the drop-down menu or pick lists for resolution states and failure types.  
 
@@ -121,7 +124,7 @@ tcm fieldmapping /import /collection:CollectionURL /teamproject:Project /type:re
 
  [When you analyze failed tests](https://msdn.microsoft.com/library/dd286731), you assign the failure type and resolution state.  
 
- ![Analyse test run page in Microsoft Test Manager](_img/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
+ ![Analyse test run page in Microsoft Test Manager](media/almt_wsa11analysetest.png "ALMT_wsa11analyseTest")  
 
 ##  <a name="failure"></a> Mapping file for failure types  
  The following XML syntax lists the default failure types defined for a project.  

@@ -5,7 +5,7 @@ description: View the branch hierarchy of a project
 ms.assetid: 7ecab78e-f9f5-43d1-982f-b300ee1c4c16
 ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -47,7 +47,7 @@ You can use the **Hierarchy** window to perform the following tasks:
 <tbody>
 <tr>
 <td><p>This procedure can be performed on a branch and not on a folder. For example, in the following illustration you can see which objects are branches and which are folders.</p>
-<p><img src="_img/view-branch-hierarchy-team-project/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
+<p><img src="media/view-branch-hierarchy-team-project/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
 </tbody>
@@ -67,13 +67,13 @@ For example, the following illustration shows the **Hierarchy** window for the D
 
 **Hierarchy window showing DinnerNow Test branch with ancestors and descendants**
 
-![Hierarchy window](_img/view-branch-hierarchy-team-project/IC363705.png)
+![Hierarchy window](media/view-branch-hierarchy-team-project/IC363705.png)
 The options that you can use to modify the view in this window are explained in the following list:
 
-- <strong>A. Show menu **You can select a typical view from the **Show</strong> menu: **All hierarchies**, **Full hierarchy**, **Ancestors and descendants**, **Ancestors**, **Parent and children**, **Children**, or **Customized**.
+- <strong>A. Show menu <strong>You can select a typical view from the **Show</strong> menu: **All hierarchies</strong>, **Full hierarchy**, **Ancestors and descendants**, **Ancestors**, **Parent and children**, **Children**, or **Customized**.
 
-  >**Tip:**
-  >  If you want to see the full hierarchy for every version control path in your project, including those that are outside the scope of the active project in Source Control Explorer, select **All hierarchies**.
+  > [!TIP]
+  > If you want to see the full hierarchy for every version control path in your project, including those that are outside the scope of the active project in Source Control Explorer, select **All hierarchies**.
 
 - **B. Customize branch list button **Click this button to individually select the specific branches that you want to show.
 

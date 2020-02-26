@@ -6,31 +6,37 @@ ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: macoope
-ms.date: 05/06/2019
+ms.manager: mijacobs
+ms.author: jukullam
+ms.date: 01/21/2020
 monikerRange: '>= azure-devops-2019'
+author: juliakm
 ---
 
-# Container jobs
+# Define container jobs (YAML)
 
-**Azure Pipelines**
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 By default, [jobs](phases.md) run on the host machine where the [agent](../agents/agents.md)
 is installed.
 This is convenient and typically well-suited for projects that are just beginning to adopt Azure Pipelines.
-Over time, you may find that you want more control over the stage where your tasks run.
+Over time, you may find that you want more control over the context where your tasks run.
 
-<!-- this appears to be identical to the topic monikerRange, but there are build warnings without it -->
-::: moniker range=">= azure-devops-2019"
-[!INCLUDE [container-vs-host](./_shared/container-vs-host.md)]
-::: moniker-end
+
+> [!NOTE] 
+> The Classic editor doesn't support container jobs at this time.
+
+[!INCLUDE [container-vs-host](./includes/container-vs-host.md)]
 
 Containers offer a lightweight abstraction over the host operating system.
 You can select the exact versions of operating systems, tools, and dependencies that your build requires.
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
+
+::: moniker range="> azure-devops-2019"
+If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
+::: moniker-end
 
 ## Requirements
 
@@ -41,6 +47,7 @@ The Azure Pipelines system requires a few things in Linux-based containers:
 - glibc-based
 - Can run Node.js (which the agent provides)
 - Does not define an `ENTRYPOINT`
+- `USER` has access to `groupadd` and other privileges commands without `sudo`
 
 And on your agent host:
 - Ensure Docker is installed
@@ -61,12 +68,14 @@ Azure Pipelines can also run [Windows Containers](/virtualization/windowscontain
 [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or higher is required.
 Docker must be installed. Be sure your pipelines agent has permission to access the Docker daemon.
 
+The Windows container must support running Node.js.
+A base Windows Nano Server container is missing dependencies required to run Node.
+See [this post](https://blogs.technet.microsoft.com/nanoserver/2016/05/04/node-js-on-nano-server/) for more information about what it takes to run Node on Windows Nano Server.
+
 ### Hosted agents
 
-The `win1803` and `ubuntu-16.04` pools support running containers.
+The `windows-2019` and `ubuntu-16.04` pools support running containers.
 The Hosted macOS pool does not support running containers.
-
-# [YAML](#tab/yaml)
 
 ## Single job
 
@@ -94,9 +103,9 @@ A Windows example:
 
 ```yaml
 pool:
-  vmImage: 'win1803'
+  vmImage: 'windows-2019'
 
-container: mcr.microsoft.com/windows/servercore:1803
+container: mcr.microsoft.com/windows/servercore:ltsc2019
 
 steps:
 - script: set
@@ -104,8 +113,8 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running an 1803
-> build, we also use the `1803` tag for the container.
+> Since this example uses the hosted Windows Container pool, which is running a windows-2019
+> build, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
@@ -132,9 +141,7 @@ steps:
   - script: printenv
 ```
 
-## Other settings
-
-### Endpoints
+## Endpoints
 
 Containers can be hosted on registries other than Docker Hub. To host
 an image on [Azure Container Registry](/azure/container-registry/) or
@@ -162,7 +169,10 @@ steps:
 - script: echo hello
 ```
 
-### Options
+Other container registries may also work.
+Amazon ECR doesn't currently work, as there are additional client tools required to convert AWS credentials into something Docker can use to authenticate.
+
+## Options
 
 If you need to control container startup, you can specify `options`.
 
@@ -175,7 +185,9 @@ steps:
 - script: echo hello
 ```
 
-### Reusable container definition
+Running `docker create --help` will give you the list of supported options.
+
+## Reusable container definition
 
 In the following example, the containers are defined in the resources section.
 Each container is then referenced later, by referring to its assigned alias.
@@ -213,8 +225,52 @@ jobs:
     - script: printenv
 ```
 
-# [Classic](#tab/classic)
+## Non glibc-based containers
 
-Container jobs are not yet supported in the classic editor.
+The Azure Pipelines agent supplies a copy of Node.js, which is required to run tasks and scripts.
+The version of Node.js is compiled against the C runtime we use in our hosted cloud, typically glibc.
+Some variants of Linux use other C runtimes.
+For instance, Alpine Linux uses musl.
 
----
+If you want to use a non-glibc-based container as a job container, you will need to arrange a few things on your own.
+First, you must supply your own copy of Node.js.
+Second, you must add a label to your image telling the agent where to find the Node.js binary.
+Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines depends on:
+bash, sudo, which, and groupadd.
+
+### Bring your own Node.js
+You are responsible for adding a Node LTS binary to your container.
+Node 10 LTS is a safe choice.
+You can start from the `node:10-alpine` image.
+
+### Tell the agent about Node.js
+The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
+If this label exists, it must be the path to the Node.js binary.
+For example, in an image based on `node:10-alpine`, add this line to your Dockerfile:
+```
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+```
+
+### Add requirements
+Azure Pipelines assumes a Bash-based system with common administration packages installed.
+Alpine Linux in particular doesn't come with several of the packages needed.
+Installing `bash`, `sudo`, and `shadow` will cover the basic needs.
+```
+RUN apk add bash sudo shadow
+```
+
+If you depend on any in-box or Marketplace tasks, you'll also need to supply the binaries they require.
+
+### Full example of a Dockerfile
+
+```
+FROM node:10-alpine
+
+RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
+  && apk add bash sudo shadow \
+  && apk del .pipeline-deps
+
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
+
+CMD [ "node" ]
+```

@@ -4,9 +4,9 @@ description: Key concepts for Azure Artifacts within Azure DevOps Services and T
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.date: 2/6/2018
 monikerRange: '>= tfs-2017'
 ---
@@ -27,9 +27,12 @@ If a package is broken, buggy, or shares unintended content (like secrets), the 
 
 The only way to work around the immutability constraint is to create a new feed and publish the desired package version to the new feed.
 
+> [!NOTE]
+> If you delete a feed to recreate it, it will go in feed recycle bin and will be permanently deleted after 30 days. Feed name will free up once the feed is permanently deleted from the feed recycle bin.
+
 ## Recycle Bin
 
-If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](#immutability).  In order to recover the package and have builds start working again, you can recover it from the Recycle Bin.
+If you've deleted/unpublished an npm package, NuGet package, or Maven artifact from Azure DevOps Services, builds that depend on that package will start to fail.  You won't be able to repush that package to the feed because of [immutability](#immutability).  In order to recover the package and have builds start working again, a feed owner can recover it from the Recycle Bin.
 
 Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
