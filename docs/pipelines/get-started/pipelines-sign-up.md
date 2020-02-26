@@ -24,9 +24,9 @@ For more information on Azure Pipelines, see [What is Azure Pipelines](what-is-a
 
 If you have a Microsoft account, follow these steps to sign up for Azure Pipelines. 
 
-1. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and choose **Start free with Pipelines**.
+1. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and choose **Start free**.
 
-   ![Start free with Azure Pipelines](../../media/start-free-with-azure-pipelines.png)
+   ![Start free with Azure Pipelines](media/start-free-azure-pipelines.png)
 
 2. Enter your email address, phone number, or Skype ID for your Microsoft account. If you're a Visual Studio subscriber and you get Azure DevOps as a benefit, use the Microsoft account associated with your subscription. Select **Next**.
    
@@ -49,6 +49,8 @@ If you have a Microsoft account, follow these steps to sign up for Azure Pipelin
 
 Your next step is to [create a project](#create-project). 
 
+<a id="create-project" />
+
 ## Sign up with a GitHub account
 
 If you have a GitHub account, follow these steps to sign up for Azure Pipelines. 
@@ -56,19 +58,19 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 > [!IMPORTANT]
 > If your GitHub email address is associated with an Azure AD-backed organization in Azure DevOps, you can't sign in with your GitHub account, rather you must sign in with your Azure AD account.
 
-1. Choose **Start Pipelines free with GitHub**. If you're already part of an Azure DevOps organization, choose **Sign in to Azure DevOps**.
+1. Choose **Start free with GitHub**. If you're already part of an Azure DevOps organization, choose **Start free**.
 
-   ![Start free with Azure Pipelines](../../media/start-free-with-azure-pipelines.png)
+   ![Start Azure Pipelines with GitHub](media/start-free-github-pipelines.png)
 
 2. Enter your GitHub account credentials, and then select **Sign in**.
 
    ![Enter GitHub credentials](../../media/enter-github-credentials.png)
 
-4. Select **Authorize Microsoft corporation**.
+3. Select **Authorize Microsoft corporation**.
 
    ![Authorize Microsoft](../../media/authorize-Microsoft-corp.png)
 
-5. Choose **Continue**.
+4. Choose **Continue**.
 
    ![Choose Continue to sign up for Azure DevOps](../../media/sign-up-azure-devops.png)
 
@@ -79,6 +81,8 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 For more information about GitHub authentication, see [FAQs](../../organizations/security/faq-github-authentication.md).
 
 Your next step is to [create a project](#create-project). 
+
+<a id="create-project" />
 
 ## Create a project
 
@@ -96,7 +100,9 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board](../../boards/get-started/media/track-issues/issues-board-new-item.png)
 
-	You're now set to start [create your first pipeline](../create-first-pipeline.md), or [invite other users](#invite-others) to collaborate with your project. 
+	You're now set to [create your first pipeline](../create-first-pipeline.md), or [invite other users](#invite-others) to collaborate with your project. 
+
+<a id="invite-others" />
 
 ## Invite team members
 
