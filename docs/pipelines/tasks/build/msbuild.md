@@ -299,4 +299,4 @@ To setup your own self-hosted agent and run the build jobs:
 
 At the bottom of this page, check out the GitHub issues in the `Open` and `Closed` tabs to see if there is a similar issue that has been resolved previously by our team.
 
-You can also search on [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) to see if this issue has been reported. We also welcome your questions, suggestions, and feedback there.
+Some of the MSBuild errors are caused by a change in Visual Studio so you can search on [Visual Studio Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) to see if this issue has been reported. We also welcome your questions, suggestions, and feedback.
