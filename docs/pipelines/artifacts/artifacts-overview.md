@@ -8,9 +8,9 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 11/13/2018
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
 ---
 

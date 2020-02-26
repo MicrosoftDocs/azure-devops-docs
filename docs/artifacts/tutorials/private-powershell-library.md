@@ -4,10 +4,10 @@ description: Use Azure Artifacts within Azure DevOps Services to create your own
 ms.prod: devops
 ms.technology: devops-artifacts
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
+ms.author: rabououn
+author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 11/19/2018
+ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---
 
