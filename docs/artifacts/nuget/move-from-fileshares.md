@@ -2,11 +2,7 @@
 title: Move your packages to the cloud
 description: Leave your file shares behind and bring your packages to Azure DevOps Services or Team Foundation Server
 ms.assetid: E45D2856-222F-444B-9E0C-A04B6FE93494
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'

@@ -2,11 +2,9 @@
 title: Code review and feedback field reference
 titleSuffix: Azure Boards
 description: Definition of fields used to track code review and feedback requests and responses for Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4182c1c5-a768-4f4d-b6cb-862fc57e6ab4
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

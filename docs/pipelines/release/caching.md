@@ -2,7 +2,6 @@
 title: Pipeline caching
 description: Improve pipeline performance by caching files, like dependencies, between runs
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: adandree

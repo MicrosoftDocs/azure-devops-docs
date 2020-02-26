@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts TfvcShelvesetRequestData API | Extensions for Azure DevOps Services
 ms.assetid: c8bda89a-d052-dc14-29a9-e56641438f59
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

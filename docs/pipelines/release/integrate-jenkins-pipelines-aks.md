@@ -1,13 +1,11 @@
 ---
 title: Deploy to Kubernetes on AKS with Jenkins
 description: Set up continuous integration (CI) and continuous deployment (CD) with Kubernetes for your apps using Jenkins, Azure Container Service (AKS), and Azure Pipelines
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.author: mlearned
 author: mlearned
 ms.reviewer: nicolela
-ms.manager: mijacobs
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'

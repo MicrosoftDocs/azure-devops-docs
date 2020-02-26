@@ -1,12 +1,10 @@
 ---
 title: Test Result tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about test results 
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

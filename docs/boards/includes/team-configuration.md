@@ -1,6 +1,5 @@
 ---
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: include
 ms.author: kaelli
 author: KathrynEE

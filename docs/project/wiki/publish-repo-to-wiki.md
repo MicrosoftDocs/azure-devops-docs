@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley

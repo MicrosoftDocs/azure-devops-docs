@@ -2,13 +2,9 @@
 title: Integrate with service hooks | Azure DevOps Services
 description: Perform tasks with other services when events happen in Azure DevOps Services projects
 ms.assetid: c0617128-b67c-4ec4-b1c9-e65e1b3ab82c
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/08/2019
 ---
 

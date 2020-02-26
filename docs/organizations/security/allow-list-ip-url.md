@@ -2,13 +2,11 @@
 title: Add IP addresses and URLs to allow list
 titleSuffix: Azure DevOps
 description: Add IP addresses and URLs to the Allow list for Azure DevOps, troubleshoot network connections 
-ms.prod: devops
 ms.topic: reference
 ms.technology: devops-security
 ms.reviewer: jominana
 ms.author: ChComley
 author: chcomley
-ms.manager: mijacobs
 monikerRange: '>= tfs-2015'
 ms.date: 12/12/2019
 ---

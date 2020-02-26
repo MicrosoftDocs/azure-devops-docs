@@ -3,10 +3,8 @@ title: Default work tracking permissions & access
 titleSuffix: Azure Boards & TFS 
 description: Default permissions and access levels for tracking work tracking in Azure Boards & Team Foundation Server
 ms.technology: devops-security
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 5AD0BF62-C91E-46DD-8C1A-C8D1F8F8D05F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

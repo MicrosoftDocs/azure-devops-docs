@@ -2,12 +2,10 @@
 title: Change your deployment configuration
 titleSuffix: TFS 
 description: Understand additional administrative tasks when you change your settings using Team Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 962eba84-0c28-4c94-8abc-3cdb9f1df53a
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: conceptual
 ms.date: 01/12/2017
 ---

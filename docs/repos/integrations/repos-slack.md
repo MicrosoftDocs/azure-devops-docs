@@ -2,7 +2,6 @@
 title: Azure Repos with Slack
 titleSuffix: Azure Repos
 description: Monitor Azure Repos from Slack
-ms.prod: devops
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: bijuv

@@ -3,9 +3,7 @@ title: Sample work item templates showing usage
 titleSuffix: Azure Boards   
 description: Sample work item templates to pre-populate fields and provide guidance in work item forms 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

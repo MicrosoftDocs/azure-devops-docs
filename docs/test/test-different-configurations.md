@@ -2,10 +2,8 @@
 title: Test different configurations
 description: Manual and exploratory testing - test different configurations with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: 750F033E-A39E-4C85-BF85-012629C33DE6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

@@ -2,10 +2,8 @@
 title: Set project or collection-level permissions 
 titleSuffix: Azure DevOps
 description: How-to guide to set project-level permissions in Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

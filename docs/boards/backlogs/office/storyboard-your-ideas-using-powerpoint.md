@@ -3,9 +3,7 @@ title: Storyboard your ideas with Microsoft PowerPoint
 titleSuffix: TFS 
 description: Turn your ideas and goals into something visual using the Storypoint add-in to PowerPoint for Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 432016A2-61E7-4863-99AB-61E4D74E28E7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

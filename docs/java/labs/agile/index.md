@@ -1,11 +1,9 @@
 ---
 title: Manage your Java project backlog with Azure Boards
 description: Tutorial lab for managing Java projects with Azure DevOps Agile tools
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

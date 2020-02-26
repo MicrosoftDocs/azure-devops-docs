@@ -2,9 +2,7 @@
 title: About SharePoint Integration 
 titleSuffix: TFS
 description: TFS/SharePoint integration - About SharePoint Integration 
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.reviewer: greggboe
 ms.author: kaelli
 ms.date: 09/28/2017

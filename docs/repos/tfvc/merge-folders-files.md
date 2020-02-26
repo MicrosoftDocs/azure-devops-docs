@@ -3,9 +3,7 @@ title: Merge folders and files
 titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -2,7 +2,6 @@
 title: Artifact policy checks
 description: Ensure artifacts adhere to custom policies
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: C7E2BE58-2B01-414D-9A3A-67FA68637B51
 ms.manager: shashban

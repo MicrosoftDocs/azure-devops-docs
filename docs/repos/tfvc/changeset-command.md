@@ -3,9 +3,7 @@ title: Changeset Command
 titleSuffix: Azure Repos
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

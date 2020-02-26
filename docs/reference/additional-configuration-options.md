@@ -3,9 +3,7 @@ title: Additional configuration options
 titleSuffix: TFS 
 description: Options to configure or customize after you upgrade an on-premises Team Foundation Server to access all features  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: F89F5890-31E6-47EF-810F-AB75E1AE7E00
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

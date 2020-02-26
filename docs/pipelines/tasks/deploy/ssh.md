@@ -2,10 +2,8 @@
 title: SSH Deployment task
 description: SSH task for use in the jobs of all of your build and release pipelines in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: dcd2ed8f-5bc6-4fc5-8787-4d9f6fe63f65
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

@@ -5,9 +5,7 @@ description: Turn live updates on or off for a  Kanban board in Azure Boards or 
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

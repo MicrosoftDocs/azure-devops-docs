@@ -3,10 +3,8 @@ title: Gulp build and release task
 ms.custom: seodec18
 description: Gulp build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EC168F1F-4B27-4688-87CE-E4D12E885CC5
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019

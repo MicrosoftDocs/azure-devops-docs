@@ -2,10 +2,8 @@
 title: Find an admin or organization owner 
 titleSuffix: Azure DevOps
 description: Steps for how to look up users who can help you gain access or change your permissions, project collection admin, or project owner 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

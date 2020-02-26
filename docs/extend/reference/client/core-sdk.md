@@ -2,9 +2,7 @@
 title: Core Client SDK | Extensions for Azure DevOps Services
 description: Use the Client SDK to extend Azure DevOps Services.
 ms.assetid: 0ef29724-82e5-4573-b70c-502848edad7a
-ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

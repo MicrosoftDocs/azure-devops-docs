@@ -3,12 +3,10 @@ title: Troubleshoot managing group-based licensing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to remove a group, remove a group rule, and how user access level and project membership is affected.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.assetid: 5288549e-30cb-4ac0-81dd-8ba4890e8448
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/07/2019

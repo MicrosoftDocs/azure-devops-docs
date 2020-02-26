@@ -3,9 +3,7 @@ title: gitconfig files
 titleSuffix: Azure Repos
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -2,10 +2,8 @@
 title: Organization and project scope queries
 titleSuffix: Azure DevOps 
 description: How to guide to query OData Analytics for an organization or at the project-level in Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: kokosins
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

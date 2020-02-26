@@ -2,10 +2,8 @@
 title: Xcode Build build and release task
 ms.custom: seodec18
 description: Xcode Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016

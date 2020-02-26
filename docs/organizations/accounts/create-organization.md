@@ -3,11 +3,9 @@ title: Create a new organization, project collection
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Create your organization with a personal Microsoft account, GitHub account, or work or school account
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/20/2019

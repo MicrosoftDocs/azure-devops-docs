@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitRepositoryPermissions API | Extensions for Azure DevOps Services
 ms.assetid: 5835337b-b733-9dad-eca1-7bf7bb916b81
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

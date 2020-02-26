@@ -3,10 +3,8 @@ title: Microsoft-hosted agents for Azure Pipelines
 ms.custom: seodec18
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 02/25/2020

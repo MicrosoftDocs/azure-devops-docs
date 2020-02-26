@@ -2,11 +2,9 @@
 title: Create a multi-platform pipeline
 ms.custom: seodec18
 description: Build and test on macOS, Linux, and Windows
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4aaa98c7-f363-4fe6-b9dd-158108955e38
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/03/2019

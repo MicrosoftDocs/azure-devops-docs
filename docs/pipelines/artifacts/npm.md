@@ -5,14 +5,10 @@ ms.custom: seodec18
 description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
-author: chasewilson
 ---
 
 # Publish npm packages

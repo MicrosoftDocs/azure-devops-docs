@@ -2,10 +2,8 @@
 title: Authentication Schemas for Service Endpoints | Extensions for Azure DevOps Services
 description: Find the different ways to authenticate with external services using service endpoints in Azure DevOps Services extensions.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

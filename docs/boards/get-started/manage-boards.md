@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Customize your issues board to show fields, add columns, and change card color
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

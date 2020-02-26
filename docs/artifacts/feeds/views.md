@@ -2,11 +2,7 @@
 title: Communicate package quality with release views
 description: Use release views to communicate the quality of a package to your consumers in Azure DevOps Services or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 10/27/2016
 monikerRange: '>= tfs-2017'
