@@ -16,7 +16,7 @@ ms.date: 12/11/2019
 
 # Query by assignment or workflow changes
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Kanban query fields support tracking the status of work as it moves from one column or swimlane to another on the Kanban board.  
 
@@ -28,7 +28,7 @@ Most work items move from a New, Active, or Proposed state to a Done or Closed s
 
 For example, you can find all work items that were closed but then reactivated. By specifying the Changed Date field, you can focus on reactivations that occurred today, yesterday, or in the last week.
 
-![Query Editor filter for reactivated items](_img/query-reactivated-items.png)  
+![Query Editor filter for reactivated items](media/query-reactivated-items.png)  
 
 You can also use the Activated By and Activated Date fields, or other workflow fields.
 
@@ -152,7 +152,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 </table>
 
 <!---
-![Was Ever operator to query for past assignment](_img/example-work-item-queries/IC697729.png)
+![Was Ever operator to query for past assignment](media/example-work-item-queries/IC697729.png)
 -->
 
 <a id="group" /> 
@@ -161,7 +161,7 @@ Use **=** to find current assignments, **Was Ever** to list items based on past 
 
 To filter on items assigned to someone who belongs to a team or security group, use the **In Group** operator.
 
-![Filter based on assignment to a TFS security group](_img/example-work-item-queries/IC675038.png)  
+![Filter based on assignment to a TFS security group](media/example-work-item-queries/IC675038.png)  
 
 You can use the **In Group** or **Not In Group** operators to filter a query based on several values that are members of a group, or that are not members of a group. Examples of groups you can specify include the following items: 
 - teams
@@ -290,7 +290,7 @@ Using the Kanban query fields&mdash;Board Column, Board Column Done, and Board L
 
 For example, you can list items based on the team area path, and if they are in a specific custom Kanban column and swimlane. If you rename a column or swimlane, you'll need to update the query filters to reflect the new name. For more ideas, see this blog post: [New fields bring Kanban goodness to queries, and more](https://blogs.msdn.microsoft.com/devops/2015/10/19/new-fields-bring-kanban-goodness-to-queries-and-more/)  
 
-<img src="_img/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
+<img src="media/query-kanban-fields.png" alt="Query filter on Kanban board fields" style="border: 1px solid #C3C3C3;" />  
 
 > [!NOTE]    
 > Queries are now scoped to the current project by default. Check the **Query across projects** to find work items defined in other projects within the collection.  
@@ -335,7 +335,7 @@ Items in any swimlane that contains &quot;Test&quot;
 
 <a id="kanban-query-results">  </a>
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ::: moniker-end
 
@@ -668,5 +668,5 @@ You can use the following fields to filter your queries or build reports. Some o
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 

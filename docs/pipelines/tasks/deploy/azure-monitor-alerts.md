@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to configure alerts on available me
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureMonitorAlertsV0.md)]
+[!INCLUDE [temp](../includes/yaml/AzureMonitorAlertsV0.md)]
 
 ::: moniker-end
 

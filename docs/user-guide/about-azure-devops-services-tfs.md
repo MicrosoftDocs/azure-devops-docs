@@ -17,7 +17,7 @@ ms.date: 11/13/2019
 
 # Azure DevOps Services vs. Azure DevOps Server
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Azure DevOps Services and Azure DevOps Server were formerly named Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). Both offerings provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 

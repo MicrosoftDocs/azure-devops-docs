@@ -8,14 +8,14 @@ ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
 
 # Integrate with ServiceNow change management
 
-[!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
 Azure Pipelines and ServiceNow bring an integration of Azure Pipelines with
 ServiceNow Change Management to enhance collaboration between development and IT teams.
@@ -47,14 +47,14 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 
 1. Create a new user in ServiceNow and grant it the `x_mioms_azpipeline.pipelinesExecution` role.
 
-   ![Creating a new user in ServiceNow](_img/servicenow-01.png)
+   ![Creating a new user in ServiceNow](media/servicenow-01.png)
 
 ## Set up the Azure DevOps organization
 
 1. Install the [ServiceNow Change Management extension](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-servicenowchangerequestmanagement)
    on your Azure DevOps organization.
 
-   ![Installing the ServiceNow Change Management extension](_img/servicenow-02.png)
+   ![Installing the ServiceNow Change Management extension](media/servicenow-02.png)
 
    Follow the instructions to "Get it Free"
 
@@ -62,17 +62,17 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
    in the Azure DevOps project used for managing your releases.
    Enter the user name and password for the service account created in ServiceNow.
 
-   ![Creating a new ServiceNow service connection](_img/servicenow-03.png)
+   ![Creating a new ServiceNow service connection](media/servicenow-03.png)
 
 ## Configure a release pipeline
 
 1. In your release pipeline, add a pre-deployment gate for ServiceNow Change Management.
  
-   ![Adding a pre-deployment gate for ServiceNow Change Management](_img/servicenow-04.png)
+   ![Adding a pre-deployment gate for ServiceNow Change Management](media/servicenow-04.png)
 
 1. Select the ServiceNow service connection you created earlier and enter the values for the properties of the change request. 
 
-   ![Entering the values for properties of the change request](_img/servicenow-05.png)
+   ![Entering the values for properties of the change request](media/servicenow-05.png)
 
    **Inputs for the gate:**
 
@@ -106,7 +106,7 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 
 1. At the end of your deployment process, add an agentless phase with a task to update the status of the change after deployment.
 
-   ![Adding an agentless phase with a task to update status of the change after the deployment](_img/servicenow-06.png)
+   ![Adding an agentless phase with a task to update status of the change after the deployment](media/servicenow-06.png)
 
    **Inputs for Update change request task:**
 
@@ -122,26 +122,26 @@ of [ServiceNow](https://www.servicenow.com/) to which applications can be instal
 1. After completing the Dev stage, the pipeline creates a new change request in ServiceNow
    for the release and waits for it to reach the desired state. 
 
-   ![Creating a new change request in ServiceNow for the release](_img/servicenow-07.png)
+   ![Creating a new change request in ServiceNow for the release](media/servicenow-07.png)
 
 1. The values defined as gate parameters will be used. You can get the change number that was created from the logs.
 
-   ![Viewing the change parameter in the logs](_img/servicenow-08.png)
+   ![Viewing the change parameter in the logs](media/servicenow-08.png)
 
 1. The ServiceNow change owner will see the release in the queue as a new change. 
 
-   ![Viewing the change release in the queue](_img/servicenow-09.png)
+   ![Viewing the change release in the queue](media/servicenow-09.png)
 
 1. The release that caused the change to be requested can be tracked from the **Azure DevOps Pipeline metadata** section of the change.
 
-   ![Tracking the release that caused the change to be requested](_img/servicenow-10.png)
+   ![Tracking the release that caused the change to be requested](media/servicenow-10.png)
  
 1. The change goes through its normal life cycle: Approval, Scheduled, and more until it is ready for implementation. 
 
 1. When the change is ready for implementation (it is in the Implement state), the release in Azure DevOps proceeds.
    The gates status will be as shown here:
 
-   ![Viewing the gate status](_img/servicenow-11.png)
+   ![Viewing the gate status](media/servicenow-11.png)
 
 1. After the deployment, the change request is closed automatically. 
 
@@ -183,10 +183,10 @@ and [Update change request states](https://docs.servicenow.com/bundle/istanbul-i
 ## See also
 
 * [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [Tutorial: Use approvals and gates to control your deployment](../deploy-using-approvals.md)
 * [Twitter sentiment as a release gate](https://blogs.msdn.microsoft.com/bharry/2017/12/15/twitter-sentiment-as-a-release-gate/)
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

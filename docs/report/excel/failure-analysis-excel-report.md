@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Failure Analysis Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Failure Analysis report to help monitor how many regressions the test team is finding. Regressions are bugs in the software that you are testing that did not appear in previous versions. A team that performs regression testing is specifically focused on finding bugs that have appeared only in a new version of the software. The Failure Analysis report shows how many distinct configurations for each Test Case previously passed and are now failing, for the most recent four weeks.  
   
@@ -35,7 +35,7 @@ You can use the Failure Analysis report to help monitor how many regressions the
 
  The Failure Analysis report provides a stacked area graph that shows the cumulative count of all failed outcome results for Test Cases for all configurations, during the most recent four weeks. Failure types include **New Issue**, **Known Issue**, or **Regression**.  
   
- ![Failure Analysis Excel Report](_img/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")  
+ ![Failure Analysis Excel Report](media/procguid_failureanalysis.png "ProcGuid_FailureAnalysis")  
   
  This report is based on a PivotChart report that shows the most recent four weeks of test result data that is stored in the data warehouse.  
   

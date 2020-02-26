@@ -9,9 +9,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 08/16/2019
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -45,7 +45,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 
 ```
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Team Foundation Server/Team Services** option for the service connection. Fill in the feed URL and a [personal access token](../..//organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
@@ -59,9 +59,9 @@ To publish the files that you assembled previously as a Universal Package, add t
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-![Example Publish Universal Packages build step screenshot](_img/universal-packages/publish.png)
+![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
 To publish to an external Universal Packages feed, you must first create a [service connection](../library/service-endpoints.md) to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New Service Connection**. Select the **Azure Repos/Team Foundation Server** option for the service connection. Fill in the feed URL and a [personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) to connect to the feed.
 
@@ -124,7 +124,7 @@ steps:
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
 | downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
-| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -149,7 +149,7 @@ steps:
 | feedDownloadExternal           | Feed that the package will be downloaded from.        |
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
-| [!INCLUDE [temp](../tasks/_shared/control-options-arguments.md)] | |
+| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
 
 #### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
@@ -162,7 +162,7 @@ To download a Universal Package, add the **Universal Package** task and configur
 - **Version:** Select the version of the package that you want to download.
 
 
-![Example Download Universal Packages build step screenshot](_img/universal-packages/download.png)
+![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
 
 * * *
 

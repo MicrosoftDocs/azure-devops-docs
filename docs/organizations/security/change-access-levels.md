@@ -16,7 +16,7 @@ ms.date: 06/02/2019
 
 # Change access levels
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
 
 Users must be added to a group with the appropriate permissions, to connect and use the functions and features that Azure DevOps Server provides. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
 
@@ -24,7 +24,7 @@ This article applies to managing access levels for project collections defined o
 
 > [!IMPORTANT]  
 > Make sure that you select the correct version of this article for Azure DevOps Services or Azure DevOps Server, renamed from Team Foundation Server (TFS). The version selector is located above the table of contents. <br/>
-> ![Content version selector](/azure/devops/_shared/_img/version-selector.png)
+> ![Content version selector](/azure/devops/media/version-selector.png)
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
@@ -56,10 +56,10 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker range="azure-devops-2019"
 
-1. From the web portal home page for a project collection (for example, ```http://MyServer:8080/tfs/DefaultCollection/```), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/_img/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
+1. From the web portal home page for a project collection (for example, ```http://MyServer:8080/tfs/DefaultCollection/```), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![web portal, Open Access levels dialog](_img/change-access-levels/open-access-levels-2019.png)
+	> ![web portal, Open Access levels dialog](media/change-access-levels/open-access-levels-2019.png)
 
 	If you don't see **Access levels**, you aren't an administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator).
 
@@ -68,33 +68,33 @@ You manage access levels for the collections defined on the application tier. Th
 	For example, here we choose **Basic**, and then **Add** to add a group to Basic access.
  
 	> [!div class="mx-imgBorder"]  
-	> ![Basic access level, add group](_img/change-access-levels/basic-access-2019.png)
+	> ![Basic access level, add group](media/change-access-levels/basic-access-2019.png)
 
 1. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 	> [!div class="mx-imgBorder"]  
-	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+	> ![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 1. Choose **Save changes**. 
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From a user context, open **Server Settings** by choosing the ![ ](../../boards/_img/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
+From a user context, open **Server Settings** by choosing the ![ ](../../boards/media/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
 
 1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
 
-	<img src="_img/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
+	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
 1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.
 
-	<img src="_img/access-levels-2017-stakeholder-access.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
+	<img src="media/access-levels-2017-stakeholder-access.png" alt="TFS 2017, Web portal, Server settings admin context, Access levels, Stakeholder access level, Add user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see **Access levels**, you aren't a TFS administrator and don't have permission. [Here's how to get permissions](/azure/devops/server/admin/add-administrator).
 
 2. Enter the name of the user or group into the text box. You can enter several identities into the text box, separated by commas. The system automatically searches for matches. Choose the matches that meet your choice.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add users and group dialog](_img/project-level-permissions-add-a-user.png)  
+	> ![Add users and group dialog](media/project-level-permissions-add-a-user.png)  
 3. Choose **Save changes**.
 
 ::: moniker-end
@@ -103,11 +103,11 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
 
-	![Open the administration page](_img/ALM_CAL_OpenAdminPage.png)
+	![Open the administration page](media/ALM_CAL_OpenAdminPage.png)
 
 1. From the Access levels page, select the access level you want to manage. For example, here we add a group to Stakeholder access.
 
-	<img src="_img/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
+	<img src="media/change-access-levels-stakeholder-add-user.png" alt="Stakeholder access level, Add Windows user or group" style="border: 1px solid #C3C3C3;" />
 
 	If you don't see **Access levels**, you aren't an administrator and don't have permission. Learn more about [how to get permissions](/azure/devops/server/admin/add-administrator).
 
@@ -125,11 +125,11 @@ You set an access level from its page. Choose **Set as default access level** as
 
 ::: moniker range="azure-devops-2019"
 > [!div class="mx-imgBorder"]  
-> ![Stakeholder access level, set as default](_img/change-access-levels/set-stakeholder-as-default-2019.png)
+> ![Stakeholder access level, set as default](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-<img src="_img/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
+<img src="media/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"

@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+[!INCLUDE [](../includes/availability-symbols.md)]
 
 To debug compiled executables, especially executables compiled from native code languages like C++, you need symbol files that contain debugging information. These files generally have the PDB (program database) extension. 
 

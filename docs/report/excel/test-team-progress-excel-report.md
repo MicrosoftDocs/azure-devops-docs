@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Test Team Progress Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Teams who are responsible for testing software can use the Test Team Progress report to help monitor test activities and report on the progress of the team in authoring and automating tests and performing regression testing. The Test Team Progress report provides the following six reports based on data that was collected for test cases that were defined for the team project and test results:  
   
@@ -47,11 +47,11 @@ To view the report, you must be assigned or belong to a group that has been assi
 
 The team can use the Test Case Authoring Status report to help monitor the progress that they make toward defining and designing test cases. This report shows a burndown chart of how many test cases were in the design and ready states for the most recent six weeks.  
   
-![Test Case Authoring Excel Report](_img/procg_testcaseauthoring.png "ProcG_TestCaseAuthoring")  
+![Test Case Authoring Excel Report](media/procg_testcaseauthoring.png "ProcG_TestCaseAuthoring")  
   
 The team can use the Automation Design Status report to help monitor the progress that they make toward automating test cases. This report shows a burndown chart of how many test cases have moved into an automated state for the most recent six weeks.  
   
-![Automation Design Status Excel Report](_img/procg_autodesign.png "ProcG_AutoDesign")  
+![Automation Design Status Excel Report](media/procg_autodesign.png "ProcG_AutoDesign")  
   
 The following table describes the report filters and fields that are used in the PivotTable reports that generate the Test Case Authoring Status and Automation Design Status reports.  
   
@@ -63,7 +63,7 @@ The following table describes the report filters and fields that are used in the
 
 The Test Plan Progress report provides a stacked area graph of the test results from all test cases. The report groups the test results into their most recently recorded outcome and plots the data for the most recent four weeks. Outcomes include **Never Run**, **Blocked**, **Failed**, or **Passed**.  
   
-![Test Plan Progress report](_img/procg_planprogress.png "ProcG_PlanProgress")  
+![Test Plan Progress report](media/procg_planprogress.png "ProcG_PlanProgress")  
   
 The team can review this report to determine the progress in a sprint or iteration or over time. For example, the team can answer these questions:  
   
@@ -86,7 +86,7 @@ The test team can use the Failure Analysis report to help monitor how many regre
   
  The Failure Analysis report provides a stacked area graph that shows the cumulative count of all failed outcome test results. The report groups the results by failure type for all test cases and test configurations and plots the results for the most recent six weeks. Failure types include **Regression**, **None**, **New Issue**, and **Known Issue**.  
   
- ![Failure Analysis Excel Report](_img/procg_failureanalysis.png "ProcG_FailureAnalysis")  
+ ![Failure Analysis Excel Report](media/procg_failureanalysis.png "ProcG_FailureAnalysis")  
   
  The system examines each test configuration for which the test case was executed and tries to identify the predecessor result for the same configuration for the test case. The failure type that is assigned to the test case/configuration is determined based on the following criteria:  
   

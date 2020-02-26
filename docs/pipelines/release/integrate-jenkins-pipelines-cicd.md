@@ -16,10 +16,10 @@ monikerRange: '>= tfs-2015'
 
 # Continuously deploy from a Jenkins build
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines supports integration with Jenkins so that you can use
@@ -39,7 +39,7 @@ A typical approach is to use Jenkins to build an app from source
 code hosted in a Git repository such as GitHub and then deploy it to
 Azure using Azure Pipelines.
 
-![Schematic of deployment from GitHub and Jenkins to Azure](_img/integrate-jenkins-vsts-cicd/schematic1.png)
+![Schematic of deployment from GitHub and Jenkins to Azure](media/integrate-jenkins-vsts-cicd/schematic1.png)
 
 ## Before you begin
 

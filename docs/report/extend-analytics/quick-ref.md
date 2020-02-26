@@ -15,11 +15,11 @@ ms.date: 10/03/2019
 
 # Extend Analytics with OData (Preview) quick reference
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Using OData, you can directly query Analytics for Azure DevOps from a supported browser and then use the returned JSON data as you desire. Enterprise organizations can generate queries that span multiple projects or the entire organization in Azure DevOps.   
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Use this quick reference to access information and sample queries using OData and Analytics. You can also find additional OData query examples in the articles available from [Overview of sample reports using OData queries](../powerbi/sample-odata-overview.md).
 

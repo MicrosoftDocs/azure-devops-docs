@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Issue Trends Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Issue Trends report to track the rate at which the team is finding and resolving Issues. This report shows the average number of Issues in each state over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -33,7 +33,7 @@ You can use the Issue Trends report to track the rate at which the team is findi
 
  The Issue Trends report calculates a rolling average of the number of Issues that the team has opened, resolved, and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated. More precisely, the report averages the number of Issues in each state for each of the seven days before the date and then the divides the result by seven.  
   
- ![7&#45;Day Issue Trend Excel Report](_img/procguid_7day.png "ProcGuid_7Day")  
+ ![7&#45;Day Issue Trend Excel Report](media/procguid_7day.png "ProcGuid_7Day")  
   
  You can use the Issue Trends report to understand the volume of Issues that the team is identifying and addressing. This report is based on a PivotChart report that shows the last four weeks of data that is captured for Issues and that is stored in the data warehouse.  
   

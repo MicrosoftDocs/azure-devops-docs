@@ -16,7 +16,7 @@ ms.date: 11/19/2018
 
 # Refine your backlog  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
  
 A great backlog conveys customer needs and value. Over the course of the project, your team will add detailed 
 information to each backlog item, break them down into smaller items, prioritize and estimate them, and finally, 

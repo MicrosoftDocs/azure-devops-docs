@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/13/2019
+ms.date: 02/07/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Authenticate access with personal access tokens
 
-[!INCLUDE [version-tfs-2017-through-vsts](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATs.
 
-If you're working on a larger application or project, we recommend you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Be aware that unless your users are using a credential manager, they'll have to enter their credentials each time.
+If you're working on a larger application or project, we recommend you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Unless your users are using a credential manager, they'll have to enter their credentials each time.
 
 Azure DevOps uses enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication. Since PATs are an alternate form of user authentication, using a PAT gives you the same access level. If you create a PAT with a narrower [scope](../../integrate/get-started/authentication/oauth.md#scopes), your access is limited to that scope.
 
 For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
-[!INCLUDE [personal-access-tokens](../../repos/git/_shared/personal-access-tokens.md)]
+[!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
 ## Related articles
 
@@ -45,7 +45,7 @@ A: https:\//dev.azure.com/{yourorganization}
 A: No, but you can extend a PAT or modify its scope.
 
 ### Q: Is there a way to renew a PAT via rest API?
-A: No, we don’t have a rest API to renew a PAT. It has to be done within the user interface (UI).
+A: No, we don’t have a rest API to renew a PAT. You can only renew a PAT within the user interface (UI).
 
 ### Q: Where can I learn more about how to use PATs?
 
@@ -57,13 +57,13 @@ A: Users receive two notifications during the lifetime of a PAT, one at creation
 
 The following notification is sent at PAT creation:
 
-![PAT creation notification](_img/use-personal-access-tokens-to-authenticate/PAT-creation.png)
+![PAT creation notification](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
 The following notification is sent - a PAT is near expiration:
 
-![PAT near expiration notification](_img/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
+![PAT near expiration notification](media/use-personal-access-tokens-to-authenticate/PAT-expiration.png)
 
-### Q: What does "Full Access" mean?
+### Q: What does "full access" mean?
 
 A: The user has all access.
 
@@ -86,7 +86,8 @@ A: See the following sample that gets a list of builds using curl.
 curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
 ```
 <br/>
-If you wish to provide the PAT through an HTTP header, you must first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the format:
+
+If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
 <br/>
 <code>Authorization: Basic BASE64USERNAME:PATSTRING</code> 
 <br/>
@@ -126,6 +127,43 @@ public static async void GetBuilds()
 }
 ```
 <br/>
+
+> [!TIP]
+> When you're using variables, add a "$" at the beginning of the string, like the following example.
+
+```cs
+public static async void GetBuilds()
+{
+    try
+    {
+        var personalaccesstoken = "PATFROMWEB";
+
+        using (HttpClient client = new HttpClient())
+        {
+            client.DefaultRequestHeaders.Accept.Add(
+                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                Convert.ToBase64String(
+                    System.Text.ASCIIEncoding.ASCII.GetBytes(
+                        string.Format("{0}:{1}", "", personalaccesstoken))));
+
+            using (HttpResponseMessage response = client.GetAsync(
+                        $"https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
+            {
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(responseBody);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+    }
+}
+```
+
 When your code is working, it's a good time to switch from basic auth to <a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth](../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
 
 Enabling IIS Basic Authentication invalidates using PATs for TFS. Learn more about [using IIS Basic Authentication with TFS on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).

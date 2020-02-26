@@ -16,7 +16,7 @@ ms.date: 04/05/2019
 
 # Choose the source of data and authoring tool
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 When you create reports that show data from Azure DevOps Server, previously named Team Foundation Server (TFS), you specify one of three sources of data and use one of three authoring tools. The choice of data source and authoring tool are interrelated.
 

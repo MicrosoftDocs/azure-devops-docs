@@ -412,13 +412,13 @@
     },
     {
       "source_path": "docs/notifications/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-personal-notifications",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/install.md",
@@ -432,7 +432,12 @@
     },
     {
       "source_path": "docs/build-release/actions/view-manage-releases.md",
-      "redirect_url": "/azure/devops/pipelines/actions/view-manage-releases",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/actions/view-manage-releases.md",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
@@ -442,22 +447,22 @@
     },
     {
       "source_path": "docs/tfs-server/index.md",
-      "redirect_url": "/tfs/index",
+      "redirect_url": "/azure/devops/server/server/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/install/sql-server/sql-server-requirements.md",
-      "redirect_url": "/tfs/index",
+      "redirect_url": "/azure/devops/server/server/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/architecture/extend-vs-for-alm.md",
-      "redirect_url": "/tfs/index",
+      "redirect_url": "/azure/devops/server/server/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/tfs-server/admin/setup-customize-alerts.md",
-      "redirect_url": "/tfs/index",
+      "redirect_url": "/azure/devops/server/server/index",
       "redirect_document_id": false
     },
     {
@@ -1012,7 +1017,7 @@
     },
     {
       "source_path": "docs/build-release/archive/preview/release-definition-editor.md",
-      "redirect_url": "/azure/devops/pipelines/actions/work-with-release-definitions",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
@@ -1177,7 +1182,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
@@ -1242,7 +1247,7 @@
     },
     {
       "source_path": "docs/setup-admin/get-started.md",
-      "redirect_url": "/azure/devops/organizations/accounts/index",
+      "redirect_url": "/azure/devops/organizations/accounts/organization-management",
       "redirect_document_id": false
     },
     {
@@ -2627,7 +2632,7 @@
     },
     {
       "source_path": "docs/tfs-server/tfs/admin/setup-customize-alerts.md",
-      "redirect_url": "/tfs/index",
+      "redirect_url": "/azure/devops/server/server/index",
       "redirect_document_id": false
     },
     {
@@ -3267,12 +3272,12 @@
     },
     {
       "source_path": "docs/service-hooks/services/manage-personal-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/service-hooks/services/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-team-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -3407,7 +3412,7 @@
     },
     {
       "source_path": "docs/release/author-release-definition/more-release-definition.md",
-      "redirect_url": "/azure/devops/pipelines/actions/work-with-release-definitions",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
@@ -3642,12 +3647,12 @@
     },
     {
       "source_path": "docs/release/managing-releases/create-release.md",
-      "redirect_url": "/azure/devops/pipelines/actions/create-deploy-releases",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/release/managing-releases/track-release.md",
-      "redirect_url": "/azure/devops/pipelines/actions/view-manage-releases",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": false
     },
     {
@@ -4937,7 +4942,7 @@
     },
     {
       "source_path": "docs/work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -5847,7 +5852,7 @@
     },
     {
       "source_path": "docs/ecosystem/sharepoint/index.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/index",
+      "redirect_url": "/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": false
     },
     {
@@ -7751,6 +7756,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/actions/create-deploy-releases.md",
+      "redirect_url": "/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/build-release/apps/cd/howto-webdeploy-iis-deploygroups.md",
       "redirect_url": "/azure/devops/pipelines/apps/cd/howto-webdeploy-iis-deploygroups",
       "redirect_document_id": true
@@ -7789,6 +7799,11 @@
       "source_path": "docs/build-release/actions/define-multistage-release-process.md",
       "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/pipelines/actions/work-with-release-definitions.md",
+      "redirect_url": "/azure/devops/pipelines/release/define-multistage-release-process",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/set-permissions.md",
@@ -7857,7 +7872,7 @@
     },
     {
       "source_path": "docs/settings/index.md",
-      "redirect_url": "/azure/devops/organizations/settings/index",
+      "redirect_url": "/azure/devops/organizations/settings/about-settings#project-administrator-role-and-managing-projects",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7907,7 @@
     },
     {
       "source_path": "docs/collaborate/manage-team-notifications.md",
-      "redirect_url": "/azure/devops/notifications/howto-manage-personal-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
       "redirect_document_id": false
     },
     {
@@ -8407,7 +8422,7 @@
     },
     {
       "source_path": "docs/accounts/index.md",
-      "redirect_url": "/azure/devops/organizations/accounts/index",
+      "redirect_url": "/azure/devops/organizations/accounts/organization-management",
       "redirect_document_id": false
     },
     {
@@ -8442,7 +8457,7 @@
     },
     {
       "source_path": "docs/accounts/remove-direct-assignments.md",
-      "redirect_url": "/azure/devops/organizations/accounts/remove-direct-assignments",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
     },
     {
@@ -8652,8 +8667,8 @@
     },
     {
       "source_path": "docs/billing/index.md",
-      "redirect_url": "/azure/devops/organizations/billing/index",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/organizations/billing/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/billing/overview.md",
@@ -8947,8 +8962,8 @@
     },
     {
       "source_path": "docs/tfvc/index.md",
-      "redirect_url": "/azure/devops/repos/tfvc/index",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/tfvc/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/label-command-team-foundation-version-control.md",
@@ -9717,7 +9732,7 @@
     },
     {
       "source_path": "docs/work/customize/index.md",
-      "redirect_url": "/azure/devops/reference/index",
+      "redirect_url": "/azure/devops/reference/customize-work",
       "redirect_document_id": false
     },
     {
@@ -10102,7 +10117,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -10682,7 +10697,7 @@
     },
     {
       "source_path": "docs/work/backlogs/index.md",
-      "redirect_url": "/azure/devops/boards/backlogs/index",
+      "redirect_url": "/azure/devops/boards/backlogs/backlogs-overview",
       "redirect_document_id": false
     },
     {
@@ -10842,7 +10857,7 @@
     },
     {
       "source_path": "docs/work/kanban/index.md",
-      "redirect_url": "/azure/devops/boards/boards/index",
+      "redirect_url": "/azure/devops/boards/boards/kanban-overview",
       "redirect_document_id": false
     },
     {
@@ -10937,7 +10952,7 @@
     },
     {
       "source_path": "docs/work/track/alerts-and-notifications.md",
-      "redirect_url": "/azure/devops/boards/queries/alerts-and-notifications",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications?view=tfs-2015",
       "redirect_document_id": false
     },
     {
@@ -10962,7 +10977,7 @@
     },
     {
       "source_path": "docs/work/track/index.md",
-      "redirect_url": "/azure/devops/boards/queries/index",
+      "redirect_url": "/azure/devops/boards/queries/example-queries",
       "redirect_document_id": false
     },
     {
@@ -11092,7 +11107,7 @@
     },
     {
       "source_path": "docs/work/scrum/index.md",
-      "redirect_url": "/azure/devops/boards/sprints/index",
+      "redirect_url": "/azure/devops/boards/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
@@ -11147,7 +11162,7 @@
     },
     {
       "source_path": "docs/work/work-items/index.md",
-      "redirect_url": "/azure/devops/boards/work-items/index",
+      "redirect_url": "/azure/devops/boards/work-items/about-work-items",
       "redirect_document_id": false
     },
     {
@@ -11762,7 +11777,7 @@
     },
     {
       "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/mapping/index",
+      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -11782,8 +11797,8 @@
     },
     {
       "source_path": "docs/test/index-tp.md",
-      "redirect_url": "/azure/devops/test-plans/index",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/test/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/marketplace/how-to/change-paid-extension-users.md",
@@ -12159,6 +12174,81 @@
       "source_path": "docs/organizations/accounts/remove-direct-assignments.md",
       "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/howto-manage-personal-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/howto-manage-team-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-team-group-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/howto-manage-team-notifications-settings.md",
+      "redirect_url": "/azure/devops/notifications/manage-team-notifications-settings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/howto-manage-organization-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-organization-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/notifications/howto-use-subscription-logging.md",
+      "redirect_url": "/azure/devops/notifications/use-subscription-logging",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/howto-view-organization-notification-statistics.md",
+      "redirect_url": "/azure/devops/notifications/view-organization-notification-statistics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/howto-integrate-third-party-services.md",
+      "redirect_url": "/azure/devops/notifications/integrate-third-party-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/notifications/howto-exclude-self-from-email.md",
+      "redirect_url": "/azure/devops/notifications/exclude-self-from-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/user-guide/index.yml",
+      "redirect_url": "/azure/devops/get-started/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/tfvc/index.md",
+      "redirect_url": "/azure/devops/repos/tfvc/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/tasks/deploy/azure-policy-check-gate.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/tasks/utility/azure-policy.md",
+      "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/alerts-and-notifications.md",
+      "redirect_url": "/azure/devops/notifications/manage-your-personal-notifications?view=tfs-2015",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/caching/index.md",
+      "redirect_url": "/azure/devops/pipelines/release/caching",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/index-all.md",
+      "redirect_url": "/azure/devops/index",
+      "redirect_document_id": true
     }
   ]
 }

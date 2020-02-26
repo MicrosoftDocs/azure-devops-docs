@@ -14,7 +14,7 @@ ms.date: 12/15/2017
 
 # Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
 
 
 > [!IMPORTANT]  
@@ -26,7 +26,7 @@ To satisfy other business processes, your team may want to track additional work
 
 For example, you may want to track different types of requirements based on their target customer, or different types of bugs based on their source. Here the Fabrikam Fiber team has added the Service App WIT to track work that supports their customer service team.   
 
-![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](_img/ALM_AWB_Intro.png)
+![Add a custom WIT, e.g., Service App, to the Requirement Category to track it like a requirement](media/ALM_AWB_Intro.png)
 
 > [!TIP]  
 > If all you want to do is add bugs to your backlogs and boards, see [Show bugs on backlogs and boards](../organizations/settings/show-bugs-on-backlog.md) to make your team's selection. If you want to add another WIT and portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).</p>
@@ -406,7 +406,7 @@ WITs that you add to the Task Category show up on the sprint backlogs and task b
 
 7. Confirm that you can add the WIT to the task board. Open the task board page, or refresh the page if it's already open.  
 	You should be able to select either Task or Service Task as a linked work item to a user story.  
-	![Task board with Service Task work item type added](_img/ALM_AWB_AddTaskConfirm.png)  
+	![Task board with Service Task work item type added](media/ALM_AWB_AddTaskConfirm.png)  
 
 	On the task board, drag the work item to update its status. You'll notice that you can't drag an item to a column for which the state isn't valid. For example, you can't drag Task to the Blocked state, or a Task into a resolved state. If you want to use these states, then add them to the workflow definition for the corresponding WIT definition. 
 
@@ -468,9 +468,9 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 ## Import and export definition files (On-premises XML) 
 Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 

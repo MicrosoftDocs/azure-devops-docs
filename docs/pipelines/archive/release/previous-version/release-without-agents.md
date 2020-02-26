@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Release your app to environments without deployment agents
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 If you want to use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
@@ -62,12 +62,12 @@ If you haven't already done so,
 and **[add stages](manage-your-release.md#AddStages)** 
 for your release.
 
-* [Pre-requisites for computers](#prereq)
+* [Prerequisites for computers](#prereq)
 * [Set up Microsoft Azure environments](#SetupAzure)
 * [Set up on-premises (standard) environments](#SetupOnPrem)
 
 <a name="prereq"></a>
-### Pre-requisites for computers
+### Prerequisites for computers
 
 Based on the tool that you are using to deploy, check these prerequisites 
 for any computer you plan on using in your environment.
@@ -124,17 +124,17 @@ environment in Release Management.
    be in the same cloud service.
    To add a VM to a specific cloud service, choose **From Gallery** when you create the VM.
 
-   ![Windows Azure portal, Virtual Machines tab](_img/release-without-agents-01.png) 
+   ![Windows Azure portal, Virtual Machines tab](media/release-without-agents-01.png) 
 
 1. For each Azure VM that runs Windows, if the prerequisites 
    listed above for PowerShell and DSC are not yet met, 
    add the Visual Studio Release Management extension to meet 
    the prerequisites.
-   **[Learn how](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
+   **[Learn how](https://devblogs.microsoft.com/devops/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management/)**.
 
 1. Add the details for your Azure subscription to Release Management.
 
-   ![Administration tab; Manage Azure tab; click New](_img/release-without-agents-02.png)
+   ![Administration tab; Manage Azure tab; click New](media/release-without-agents-02.png)
 
    **[Download the settings file](https://manage.windowsazure.com/publishsettings)** 
    from the Azure portal and open it with a text editor, 
@@ -146,23 +146,23 @@ environment in Release Management.
    to get the name of an existing storage account 
    or add a new storage account using the Azure portal.
 
-   ![Enter the details of your Azure subscription and a storage account that you want to use](_img/release-without-agents-03.png)
+   ![Enter the details of your Azure subscription and a storage account that you want to use](media/release-without-agents-03.png)
 
 1. Create a vNext Azure environment for each stage in your release path.
 
-   ![Configure Paths tab; Environments tab; click New and then choose New vNext: Azure from the dropdown list](_img/release-without-agents-04.png)
+   ![Configure Paths tab; Environments tab; click New and then choose New vNext: Azure from the dropdown list](media/release-without-agents-04.png)
 
 1. Link your Azure environment in Release Management to the Azure subscription 
    that you entered.
 
-   ![Configure Paths tab; Environments tab; click Link Azure Environment](_img/release-without-agents-05.png)
+   ![Configure Paths tab; Environments tab; click Link Azure Environment](media/release-without-agents-05.png)
 
    Select the Azure subscription that you want to use with this environment.
    (Sometimes it takes a few minutes to load your subscription.) The Azure 
    cloud services for this subscription are displayed.
    Select a cloud service to link the subscription to the environment.
 
-   ![Select subscription from dropdown list; choose the VM; click Link](_img/release-without-agents-06.png)
+   ![Select subscription from dropdown list; choose the VM; click Link](media/release-without-agents-06.png)
 
    If there are no cloud services for your Azure subscription, you cannot link 
    it to the environment. Go to the Azure portal and create a VM for this subscription.
@@ -171,17 +171,17 @@ environment in Release Management.
 
 1. Link your Azure VMs in the cloud service as servers for the environment.
 
-   ![From the Environments tab, click Link Azure Servers](_img/release-without-agents-07.png)
+   ![From the Environments tab, click Link Azure Servers](media/release-without-agents-07.png)
 
    Select the servers that you want to link.
 
-   ![Select the server to use and click Link](_img/release-without-agents-08.png)
+   ![Select the server to use and click Link](media/release-without-agents-08.png)
 
 1. For each server, you can add configuration variables that can be used by 
    your deployment actions.
    For example, you can add username and password here.
 
-   ![Configure Paths tab; Servers tab; Configuration Variables tab; click Add and add details for variable](_img/release-without-agents-09.png)
+   ![Configure Paths tab; Servers tab; Configuration Variables tab; click Add and add details for variable](media/release-without-agents-09.png)
 
    If you add configuration variables with the same name for actions in your 
    release template, the values in any actions will override the values that you set here.
@@ -211,7 +211,7 @@ Use on-premises environments if you want to deploy using Chef.
 
 1. Create a vNext on-premises environment for each stage.
 
-   ![Configure Paths tab; Environments tab; click New and select New vNext: Standard](_img/release-without-agents-10.png)
+   ![Configure Paths tab; Environments tab; click New and select New vNext: Standard](media/release-without-agents-10.png)
 
 1. Open an on-premises environment to add your servers for the environment.
    You need to supply the DNS name and the WinRM port number.
@@ -224,14 +224,14 @@ Use on-premises environments if you want to deploy using Chef.
    The server name and port must match the node name and port that's registered 
    with the Chef server. For Unix-based machines, use `ssh port` to find the port.
    
-   ![Configure Paths tab; Environments tab; from the Servers section, click Add](_img/release-without-agents-11.png)
+   ![Configure Paths tab; Environments tab; from the Servers section, click Add](media/release-without-agents-11.png)
 
 1. For each server, you can add configuration variables that can be used by your 
    deployment actions. For example, you can add username and password here.
    If you add configuration variables with the same name for actions in your 
    release template, the values in any actions will override the values that you set here.
 
-   ![Configure Paths tab; Servers tab; from the Configuration Variables tab, click Add](_img/release-without-agents-12.png)
+   ![Configure Paths tab; Servers tab; from the Configuration Variables tab, click Add](media/release-without-agents-12.png)
 
 1. View the environments that you created in the **Environments** tab. The type 
    is shown as **Standard**.
@@ -244,12 +244,12 @@ You also need a build definition that builds your app.
 
 1. Create a vNext release path to represent the stages that your release must go through.
 
-   ![Configure Paths tab; vNext Release Paths tab; click New](_img/release-without-agents-13.png)
+   ![Configure Paths tab; vNext Release Paths tab; click New](media/release-without-agents-13.png)
 
    Choose the environment and approvers to use for each stage of your release.
    You can add multiple final approvers for each stage if you want to.
 
-   ![vNext Release Paths tab; click Add in Stages section](_img/release-without-agents-14.png)
+   ![vNext Release Paths tab; click Add in Stages section](media/release-without-agents-14.png)
 
 1. Create a vNext component for each component of your app that you need to 
    deploy separately. For example, 
@@ -258,7 +258,7 @@ You also need a build definition that builds your app.
    Choose the location of the build package for each component to use when 
    your app is deployed.
 
-   ![Configure Apps tab; Components tab; click New to add a component](_img/release-without-agents-15.png)
+   ![Configure Apps tab; Components tab; click New to add a component](media/release-without-agents-15.png)
 
    For Chef deployments, use the **Build externally** option and supply the 
    path to the package. This can be a URL or an FTP path.
@@ -267,16 +267,16 @@ You also need a build definition that builds your app.
 
 1. Create a vNext release template and use the release path that you just added.
 
-   ![Configure Apps tab; vNext Release Templates tab; click New](_img/release-without-agents-16.png)
+   ![Configure Apps tab; vNext Release Templates tab; click New](media/release-without-agents-16.png)
 
    Add all the vNext components that you created to this vNext release template.
    (Right-click **Components** in the toolbox to show the context menu.)
 
-   ![Configure Apps tab; vNext Release Templates tab; right-click Components in the Toolbox and click Add in the context menu](_img/release-without-agents-17.png)
+   ![Configure Apps tab; vNext Release Templates tab; right-click Components in the Toolbox and click Add in the context menu](media/release-without-agents-17.png)
 
    Select the components and add them to your release template.
 
-   ![Components dialog box; select component; click Link to add the component to the vNext Release Template](_img/release-without-agents-18.png)
+   ![Components dialog box; select component; click Link to add the component to the vNext Release Template](media/release-without-agents-18.png)
 
    You can now see the components in the toolbox and you can use these as 
    parameters for your deployment actions.
@@ -285,7 +285,7 @@ You also need a build definition that builds your app.
    and how you want to deploy your app.
    You need to do this for each stage in this vNext release path.
 
-   ![Drag the deployment action from the toolbox to the deployment sequence](_img/release-without-agents-19.png)
+   ![Drag the deployment action from the toolbox to the deployment sequence](media/release-without-agents-19.png)
 
    **For on-premises environments:** Open the **Standard** section in the toolbox.
 
@@ -475,6 +475,6 @@ You also need a build definition that builds your app.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]
