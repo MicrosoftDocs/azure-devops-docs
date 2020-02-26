@@ -14,15 +14,15 @@ monikerRange: '>= tfs-2015'
 
 # Connect Microsoft Test Manager to your project and test plan
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 
 Use Microsoft Test Manager to help you test the application you built. Microsoft Test Manager stores your test plans and results in Azure DevOps or Team Foundation Server (TFS).  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ### Connect Microsoft Test Manager to your project and test plan  
   
@@ -32,23 +32,23 @@ Use Microsoft Test Manager to help you test the application you built. Microsoft
   
 1. Connect to your Azure DevOps or TFS instance and choose your project.  
   
-   ![Enter the name of a Team Foundation server.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect1.png)  
+   ![Enter the name of a Team Foundation server.](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect1.png)  
   
-   ![Expand the server name and choose a project.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect2.png) 
+   ![Expand the server name and choose a project.](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect2.png) 
    
    If you don't see your project, choose **Add server** and enter the URL of your Azure DevOps or TFS server. 
   
 1. Create a new test plan, unless there's already a plan you want to use. Typically, you create a separate test plan for each sprint.  
   
-   ![Add a new test plan.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect4.png)  
+   ![Add a new test plan.](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect4.png)  
   
 1. Select a plan.  
   
-   ![Select an existing plan, or choose Add.](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect3.png)  
+   ![Select an existing plan, or choose Add.](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/almt_connect3.png)  
   
-If you want to connect to a different project or test plan later, choose **Home**. ![Home button in Microsoft Test Manager](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/mtm_homeicon.png)  
+If you want to connect to a different project or test plan later, choose **Home**. ![Home button in Microsoft Test Manager](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/mtm_homeicon.png)  
   
-Signed in with the wrong user name? Choose **Home**&nbsp; ![Home button in Microsoft Test Manager](_img/connect-microsoft-test-manager-to-your-team-project-and-test-plan/mtm_homeicon.png), **Change project**, **Sign out**.  
+Signed in with the wrong user name? Choose **Home**&nbsp; ![Home button in Microsoft Test Manager](media/connect-microsoft-test-manager-to-your-team-project-and-test-plan/mtm_homeicon.png), **Change project**, **Sign out**.  
   
 ## Try this next 
  
@@ -56,4 +56,4 @@ Signed in with the wrong user name? Choose **Home**&nbsp; ![Home button in Micro
   
 [Plan manual tests with Microsoft Test Manager](plan-manual-tests-with-microsoft-test-manager.md)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

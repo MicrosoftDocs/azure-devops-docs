@@ -19,4 +19,4 @@ monikerRange: '>= tfs-2018'
 
 **Azure DevOps Services** | **TFS 2018**
 
-[!INCLUDE [](../_shared/maven/publish.md)]
+[!INCLUDE [](../includes/maven/publish.md)]

@@ -15,10 +15,10 @@ monikerRange: '>= tfs-2015'
 
 # Build Azure Repos Git or TFS Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
@@ -96,7 +96,7 @@ Be aware of the following access restrictions when you're running builds in Azur
 
 ::: moniker-end
 
-## Triggering a pipeline
+## Trigger a pipeline
 
 You can have a pipelines triggered when the following events occur in your repo:
 
@@ -124,6 +124,8 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
+
+For more complex triggers that use `exclude` or `batch`, you must use the full syntax as described in the following sections.
 
 You can specify branches to include and exclude. For example:
 
@@ -219,9 +221,9 @@ trigger:
 
 When you specify paths, you also need to explicitly specify branches or tags to trigger on.
 
-### Opting out of CI builds
+### Opt out of CI builds
 
-#### Disabling the CI trigger
+#### Disable the CI trigger
 
 You can opt out of CI builds entirely by specifying `trigger: none`.
 
@@ -237,7 +239,7 @@ For more information, see [Triggers](../yaml-schema.md#triggers) in the [YAML sc
 
 ::: moniker-end
 
-#### Skipping CI for individual commits
+#### Skip CI for individual commits
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -291,7 +293,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ::: moniker-end
 
@@ -299,11 +301,13 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](../build/_img/triggers/ci-trigger-git-branches.png)
+![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches.png)
 
 ::: moniker-end
 
 * * *
+
+
 ### Pull request validation
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
@@ -327,7 +331,7 @@ To add a build badge to the `readme.md` file at the root of your repository, fol
 
 ::: moniker-end
 
-## Getting the source code
+## Get the source code
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 
@@ -394,7 +398,7 @@ steps:
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -458,6 +462,7 @@ Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
 
 Use a secret variable in your project or build pipeline to store the basic auth token that you generated.
 Use that variable to populate the secret in the above Git command.
+
 > [!NOTE]
 > **Q: Why can't I use a Git credential manager on the agent?** **A:** Storing the submodule credentials in a Git credential manager installed on your private build agent is usually not effective as the credential manager may prompt you to re-enter the credentials whenever the submodule is updated. This isn't desirable during automated builds when user interaction isn't possible.
 
@@ -484,7 +489,7 @@ steps:
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -518,7 +523,7 @@ steps:
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](_img/github/github-options.png)
+ ![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -547,7 +552,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Clean build
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
@@ -595,7 +600,7 @@ This gives the following clean options.
 #### [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
- ![GitHub options](_img/github/github-clean-sources.png)
+ ![GitHub options](media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -610,6 +615,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
 * * *
+
 ### Label sources
 
 You may want to label your source code files to enable your team to easily identify which version of each file is included in the completed build. You also have the option to specify whether the source code should be labeled for all builds or only for successful builds.
@@ -618,17 +624,17 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** or **Variables** from the settings menu.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](_img/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![Git options](_img/github/github-options.png)
+ ![Git options](media/github/github-options.png)
 
 ---
 

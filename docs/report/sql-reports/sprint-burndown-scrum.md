@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 
 # Sprint Burndown (Scrum)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By reviewing a sprint burndown report, you can track how much work remains in a sprint backlog, understand how quickly your team has completed tasks, and predict when your team will achieve the goal or goals of the sprint.  
   
@@ -22,7 +22,7 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
   
  **Requirements**  
   
--   The on-premises Team Foundation Server (TFS) deployment and the team project collection that contains your team project are configured with SQL Server Reporting Services. This report is not available if ![Report](_img/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
+-   The on-premises Team Foundation Server (TFS) deployment and the team project collection that contains your team project are configured with SQL Server Reporting Services. This report is not available if ![Report](media/icon_reportte.png "Icon_reportTE") **Reports** does not appear when you open Team Explorer and expand your team project node.  
   
      If you need to add reporting services to your deployment or reports for a team project, see [Add reports to a team project](../admin/add-reports-to-a-team-project.md).  
   
@@ -43,7 +43,7 @@ By reviewing a sprint burndown report, you can track how much work remains in a 
   
   The following illustration shows an example of a sprint burndown graph.  
   
-  ![Sprint burndown chart](_img/scrum_sprintburndown.png "Scrum_SprintBurndown")  
+  ![Sprint burndown chart](media/scrum_sprintburndown.png "Scrum_SprintBurndown")  
   
   You can filter the report by selecting the **Iteration** or **Area**.  
   

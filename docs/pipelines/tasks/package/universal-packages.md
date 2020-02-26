@@ -15,13 +15,13 @@ monikerRange: '>= tfs-2018'
 
 # Universal Package task
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 Use this task in a build or release pipeline to download, or package and publish Universal packages.
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +29,7 @@ Use this task in a build or release pipeline to download, or package and publish
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/UniversalPackagesV0.md)]
+[!INCLUDE [temp](../includes/yaml/UniversalPackagesV0.md)]
 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `packagePublishDescription`<br/>Description | Description of the contents of this package and/or the changes made in this version of the package. |
 | `verbosity`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `None`, `Trace`, `Debug`, `Information`, `Warning`, `Error`, `Critical` |
 | `publishedPackageVar`<br/>Package Output Variable | Provide a name for the variable that will contain the published package name and version. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ## Examples
 

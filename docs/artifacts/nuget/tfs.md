@@ -30,11 +30,11 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 1. Select **Connect to feed**:
 
-    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+    ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
    
 1. Copy the NuGet package source URL:
 
-    ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
+    ![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url.png)
 
 Then, run the following command (replacing {values} where applicable):
 

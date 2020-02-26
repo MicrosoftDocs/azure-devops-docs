@@ -8,16 +8,16 @@ ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.custom: seodec18
-ms.date: 09/12/2019
+ms.date: 02/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Pipeline triggers
+# Specify events that trigger pipeline builds and releases
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Use triggers to run a pipeline automatically. You can configure four types of triggers:
@@ -30,7 +30,7 @@ Use triggers to run a pipeline automatically. You can configure four types of tr
 <a name="ci"></a>
 ## CI triggers
 
-Continuous integration (CI) triggers cause a pipeline to run whenever a push is made to the specified branches or a specified tag is pushed.
+Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
@@ -59,7 +59,12 @@ trigger:
 
 You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
 See [Wildcards](#wildcards) for information on the wildcard syntax.
-Note: you cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
+
+> [!NOTE]
+> You cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
+
+> [!NOTE]
+> If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
 You can specify branches to include and exclude. For example:
 
@@ -161,7 +166,7 @@ If you don't specify any tag triggers, then by default, tags will not trigger pi
 > If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
 
 > [!NOTE]
-> Triggering on tags is not currently supported for Bitbucket Cloud repos.
+> For Bitbucket Cloud repos, use `branches` syntax to specify tag triggers as described in the previous section. The `tags` syntax is not supported for BitBucket.
 
 ::: moniker-end
 
@@ -248,7 +253,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](_img/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ::: moniker-end
 
@@ -256,7 +261,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](_img/triggers/ci-trigger-git-branches.png)
+![ci trigger git branches](media/triggers/ci-trigger-git-branches.png)
 
 ::: moniker-end
 
@@ -395,7 +400,7 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+> For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 
@@ -408,7 +413,7 @@ YAML pipelines are not yet available on TFS.
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-![Pull request trigger](_img/triggers/github-pr-validation-trigger.png)
+![Pull request trigger](media/triggers/github-pr-validation-trigger.png)
 
 You can specify branches to include and exclude.
 Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
@@ -451,6 +456,9 @@ If your team uses GitHub pull requests, you can manually trigger pipelines using
 
 Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
+> [!NOTE]
+> If you want to build your pipeline by only using scheduled triggers, you must disable [PR](#pr-triggers) and [continuous integration](#ci-triggers) triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pull-request-validation) and must be disabled there.
+
 ```yaml
 schedules:
 - cron: string # cron syntax defining a schedule
@@ -487,6 +495,31 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
+
+### Scheduled runs view
+
+You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
+
+![Scheduled runs menu](media/triggers/scheduled-runs-menu.png)
+
+After you create or update your scheduled triggers, you can verify them using this view.
+
+![Scheduled runs](media/triggers/scheduled-runs.png)
+
+In this example, the scheduled runs for the following schedule are displayed.
+
+```yaml
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+```
+
+The **Scheduled runs** windows displays the times converted to the local time zone set on the computer used to browse to the Azure DevOps portal. In this example the screenshot was taken in the EST time zone.
+
+### Scheduled triggers evaluation
 
 Scheduled triggers are evaluated for a branch when the following events occur.
 
@@ -586,15 +619,10 @@ Intervals       | `*/4` or `1-5/2` | Intervals to match for this field, such as 
 Example | Cron expression
 --------|----------------
 Build every Monday, Wednesday, and Friday at 6:00 PM | `0 18 * * Mon,Wed,Fri`, `0 18 * * 1,3,5`, `0 18 * * Mon,Wed,Fri`, or `0 18 * * 1-5/2`
-Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *`, or `0 0-18/6 * * *`
+Build every 6 hours | `0 0,6,12,18 * * *`, `0 */6 * * *` or `0 0-18/6 * * *`
 Build every 6 hours starting at 9:00 AM | `0 9,15,21 * * *` or `0 9-21/6 * * *`
 
 For more information on supported formats, see [Crontab Expression](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression).
-
-> [!NOTE]
-> Each cron schedule has a maximum of 100 pipeline runs per week. If you need more, 
-> you can split your cron schedule into multiple cron schedules that each result in 
-> 100 or less pipeline runs per week.
 
 <a name="always"></a>
 ### Running even when there are no code changes
@@ -611,7 +639,7 @@ schedules:
 <a name="limits"></a>
 ### Limits on the number of scheduled runs
 
-There are certain limits on how often you can schedule a pipeline to run in a day. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 100 runs per pipeline per day.
+There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 1000 runs per pipeline per week.
 
 ### Migrating from the classic editor
 
@@ -626,11 +654,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
-    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 * Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
-    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -650,14 +678,14 @@ schedules:
 
 In the first schedule, **M-F 3:00 AM (UTC + 5:30) India daily build**, the cron syntax (`mm HH DD MM DW`) is `30 21 * * Sun-Thu`.
 
-* Minutes and Hours - `30 21` - This maps to `21:30 UTC`, or `9:30 PM UTC`. Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Minutes and Hours - `30 21` - This maps to `21:30 UTC` (`9:30 PM UTC`). Since the specified time zone in the classic editor is **UTC + 5:30**, we need to subtract 5 hours and 30 minutes from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun-Thu` - because of the timezone conversion, for our builds to run at 3:00 AM in the UTC + 5:30 India time zone, we need to specify starting them the previous day in UTC time. We could also specify the days of the week as `0-4` or `0,1,2,3,4`.
 
 In the second schedule, **M-F 3:00 AM (UTC - 5) NC daily build**, the cron syntax is `0 8 * * Mon-Fri`.
 
 * Minutes and Hours - `0 8` - This maps to `8:00 AM UTC`. Since the specified time zone in the classic editor is **UTC - 5:00**, we need to add 5 hours from the desired build time of 3:00 AM to arrive at the desired UTC time to specify for the YAML trigger.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `1-5` or `1,2,3,4,5`.
 
 > [!IMPORTANT]
@@ -669,11 +697,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 The equivalent YAML scheduled trigger is:
 
@@ -696,13 +724,13 @@ schedules:
 In the first schedule, **M-F 3:00 AM (UTC) daily build**, the cron syntax is `0 3 * * Mon-Fri`.
 
 * Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Mon-Fri` - because there is no timezone conversion, the days of the week map directly from the classic editor schedule. We could also specify the days of the week as `1,2,3,4,5`.
 
 In the second schedule, **Sunday 3:00 AM (UTC) weekly latest version build**, the cron syntax is `0 3 * * Sun`.
 
 * Minutes and Hours - `0 3` - This maps to `3:00 AM UTC`. Since the specified time zone in the classic editor is **UTC**, we don't need to do any time zone conversions.
-* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month, or on a specific month. 
+* Days and Months are specified as wildcards since this schedule doesn't specify to run only on certain days of the month or on a specific month. 
 * Days of the week - `Sun` - Because our timezone conversions don't span multiple days of the week for our desired schedule, we don't need to do any conversion here. We could also specify the days of the week as `0`.
 * We also specify `always: true` since this build is scheduled to run whether or not the source code has been updated.
 
@@ -738,11 +766,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM (UTC + 5:30 time zone), build branches that meet the `features/india/*` branch filter criteria
 
-    ![Scheduled trigger UTC + 5:30 time zone](_img/triggers/scheduled-trigger-git-india.png)
+    ![Scheduled trigger UTC + 5:30 time zone](media/triggers/scheduled-trigger-git-india.png)
 
 * Every Monday - Friday at 3:00 AM (UTC - 5:00 time zone), build branches that meet the `features/nc/*` branch filter criteria
 
-    ![Scheduled trigger UTC -5:00 time zone](_img/triggers/scheduled-trigger-git-nc.png)
+    ![Scheduled trigger UTC -5:00 time zone](media/triggers/scheduled-trigger-git-nc.png)
 
 ::: moniker-end
 
@@ -750,7 +778,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
+![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones-neweditor.png)
 
 ::: moniker-end
 
@@ -758,7 +786,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger multiple time zones](_img/triggers/scheduled-trigger-git-multiple-time-zones.png)
+![scheduled trigger multiple time zones](media/triggers/scheduled-trigger-git-multiple-time-zones.png)
 
 ::: moniker-end
 
@@ -772,11 +800,11 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * Every Monday - Friday at 3:00 AM UTC, build branches that meet the `master` and `releases/*` branch filter criteria
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-week-day-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-week-day-night.png)
 
 * Every Sunday at 3:00 AM UTC, build the `releases/lastversion` branch, even if the source or pipeline hasn't changed
 
-    ![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-weekly-night.png)
+    ![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-weekly-night.png)
 
 ::: moniker-end
 
@@ -784,7 +812,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.3 through TFS 2018**
 
-![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
+![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies-neweditor.png)
 
 ::: moniker-end
 
@@ -792,7 +820,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 **TFS 2017.1 and older versions**
 
-![scheduled trigger different frequencies](_img/triggers/scheduled-trigger-git-different-frequencies.png)
+![scheduled trigger different frequencies](media/triggers/scheduled-trigger-git-different-frequencies.png)
 
 ::: moniker-end
 
@@ -809,7 +837,7 @@ Otherwise, you can clear this check box and specify the paths in the trigger.
 
 When developers try to check-in, they are prompted to build their changes.
 
-![Gated check-in prompt](_img/triggers/tfvc-gated-check-in-prompt.png)
+![Gated check-in prompt](media/triggers/tfvc-gated-check-in-prompt.png)
 
 The system then creates a shelveset and builds it.
 
@@ -841,7 +869,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-To trigger a pipeline upon the completion of another, specify the latter as a pipeline resource.
+To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema.md#pipeline-resource).
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
@@ -851,7 +879,7 @@ To trigger a pipeline upon the completion of another, specify the latter as a pi
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: security-lib
+  - pipeline: securitylib
     source: security-lib-ci
     trigger: 
       branches:
@@ -866,7 +894,7 @@ Similar to CI triggers, you can specify the branches to include or exclude:
 ```yaml
 resources:
   pipelines:
-  - pipeline: security-lib
+  - pipeline: securitylib
     source: security-lib-ci
     trigger: 
       branches:
@@ -926,7 +954,7 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 1. Select **When appropriate, download artifacts from the triggering build**.
 
-1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, or `Schedule`, and so on).
+1. Even though you specified that you want to download artifacts from the triggering build, you must still select a value for **Build**. The option you choose here determines which build will be the source of the artifacts whenever your triggered build is run because of any other reason than `BuildCompletion` (e.g. `Manual`, `IndividualCI`, `Schedule`, and so on).
 
 1. Specify the **Artifact name** and make sure it matches the name of the artifact published by the triggering build.
 
@@ -1013,14 +1041,14 @@ Pipelines are not associated with a branch. They are associated with the reposit
 
 ### My CI or PR trigger doesn't seem to fire
 
-Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Overriding YAML triggers](../repos/github.md#overriding-yaml-triggers).
+Ensure that your CI or PR trigger isn't being overridden by the pipeline settings. For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/qa-agents.md)]
+[!INCLUDE [temp](../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 

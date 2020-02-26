@@ -16,9 +16,9 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Buy cloud-based load testing for Azure DevOps
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
 In this quickstart, learn how to enable paid load testing in Azure DevOps.
 
@@ -28,7 +28,7 @@ Load tests are measured and billed in virtual user minutes (VUMs) as described i
 
 If you don't have an Azure subscription, [create a subscription](https://azure.microsoft.com/pricing/purchase-options/) before you begin.
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 <a name="buy-load-testing"></a>
 
@@ -40,19 +40,19 @@ If you don't have an Azure subscription, [create a subscription](https://azure.m
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Billing**.
 
-   ![Select Billing from Organization settings](_img/_shared/select-billing-organization-settings.png)
+   ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
 
 4. Select the dropdown menu for Cloud-based load testing, and then select **On**.
 
     You can set a monthly limit on the virtual user minutes that you use by selecting an amount from the **PAID LOAD TESTING LIMIT** drop-down menu. When you're done, choose **Save**.
 
-   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](_img/_shared/paid-load-testing-limit.png)
+   ![Select an amount from the PAID LOAD TESTING LIMIT drop-down menu](media/shared/paid-load-testing-limit.png)
 
 Cloud-based load testing is enabled for your organization.
 
@@ -60,7 +60,7 @@ Cloud-based load testing is enabled for your organization.
 
 You're charged for only the virtual user minutes of cloud-based load testing used above the *free tier* of user minutes per month. The *free tier* includes:
 
-[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+[!INCLUDE [free-tier](../../includes/free-tier.md)]
 
 
 

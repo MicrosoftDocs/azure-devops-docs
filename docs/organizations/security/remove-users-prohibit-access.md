@@ -15,7 +15,7 @@ ms.date: 10/14/2019
 
 # Remove user accounts
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 When a user with access to Azure DevOps leaves a company, an administrator would typically remove them from Azure Active Directory or Active Directory. This automatically voids their user account and remove their ability to access or connect to Azure DevOps.
 
@@ -58,7 +58,7 @@ If your organization is backed by Azure AD, then you can disable or delete the A
 
 For information on removing users from AD or Azure AD, see one of these topics: 
 
-* [Delete users from Azure AD](/azure/active-directory/add-users-azure-active-directory#delete-users-from-azure-ad)
+* [Delete users from Azure AD](/azure/active-directory/add-users-azure-active-directory#delete-a-user)
 * [Delete a User Account from Active Directory](https://technet.microsoft.com/library/cc753730.aspx)
 
 ## Related articles

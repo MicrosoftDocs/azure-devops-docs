@@ -14,7 +14,7 @@ ms.date: 12/30/2016
 
 # Bug Trends Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Bug Trends report in Office Excel to track the rate at which the team is discovering, resolving, and closing Bugs. This report shows a moving average of Bugs that the team has discovered and resolved over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -28,7 +28,7 @@ You can use the Bug Trends report in Office Excel to track the rate at which the
 
  You can use the Bug Trends report to understand the rate at which the team is finding, fixing, and closing Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. That data is stored in the data warehouse.  
   
- ![Bug Trends report](_img/procguid_bugtrends.png "ProcGuid_BugTrends")  
+ ![Bug Trends report](media/procguid_bugtrends.png "ProcGuid_BugTrends")  
   
  You should expect the Bug Trends report to vary based on where you are in your product development cycle. Early iterations should exhibit a gradual increase in the rate at which the team discovers bugs.  
   

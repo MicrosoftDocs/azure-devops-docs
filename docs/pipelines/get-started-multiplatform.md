@@ -21,7 +21,7 @@ This is a step-by-step guide to using Azure Pipelines to build on macOS, Linux, 
 
 ## Prerequisites
 
-[!INCLUDE [include](_shared/prerequisites.md)]
+[!INCLUDE [include](includes/prerequisites.md)]
 
 ## Get the sample code
 
@@ -50,7 +50,7 @@ strategy:
     linux:
       imageName: 'ubuntu-16.04'
     mac:
-      imageName: 'macos-10.13'
+      imageName: 'macos-10.14'
     windows:
       imageName: 'vs2017-win2016'
 
@@ -103,7 +103,7 @@ Now that you've configured your GitHub repo with a pipeline, you're ready to bui
 
 1. Select **GitHub** as the location of your source code.
 
-   ![Select GitHub](_img/get-started-yaml/new-pipeline.png)
+   ![Select GitHub](media/get-started-yaml/new-pipeline.png)
 
 1. For **Repository**, select **Authorize** and then **Authorize with OAuth**. 
 

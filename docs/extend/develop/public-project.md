@@ -13,16 +13,19 @@ author: apawast
 ms.date: 05/14/2018
 ---
 
-> [!NOTE]
-> Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
-
 # Public project support by Azure DevOps Services extensions
 
 Prior to public project support, all Azure DevOps Services projects were private, meaning that only authenticated users with access to the project could see or interact with it. A public project allows non-member users to view the contents of that project in a read-only state. 
 
+
 > A non-member user is either **anonymous** (not authenticated to Azure DevOps Services) or **public** (are authenticated to Azure DevOps Services, but do not belong to the organization).
 
 Non-member users generally see the same views as authenticated users, with non-public functionality such as settings and actions (such as queue build) either hidden or disabled.
+
+
+> [!NOTE]
+> Azure DevOps Services public project support is currently in **Limited Preview**. Contact [vsts-public@microsoft.com](mailto:vsts-public@microsoft.com) if you are interested in developing extensions that support public projects. To learn more about public projects, see [Azure DevOps Services Public Projects Limited Preview](https://blogs.msdn.microsoft.com/devops/2018/04/27/vsts-public-projects-limited-preview/).
+
 
 ## Decide whether to make an extension visible to non-member users
 

@@ -13,7 +13,7 @@ ms.date: 04/11/2019
 
 # Configure features after an upgrade
 
-[!INCLUDE [temp](../_shared/version-tfs-2018-earlier.md)]
+[!INCLUDE [temp](../includes/version-tfs-2018-earlier.md)]
 
 
 After upgrading your Team Foundation Server (TFS), you'll want to use the new features that were installed. Some of these features might require updates to your project. The Configure Features wizard is the easiest way to make this happen. 
@@ -34,13 +34,13 @@ If you have several projects to update, you can [apply updates programmatically]
 
 1. From the web portal home page, open the administration context.  
 
-	![Open the administration page](../project/feedback/_img/ALM_CAL_OpenAdminPage.png)  
+	![Open the administration page](../project/feedback/media/ALM_CAL_OpenAdminPage.png)  
 
 	If you're not a project administrator, [get added as one](../organizations/security/add-users-team-project.md). Only project administrators or TFS administrators can run the wizard.
 
 3. If you see a **Configure Features link**, run the wizard. 
 
-	![Configure features, list of features configured or not configured](_img/ALM_CFW_ConfigFeatures.png)
+	![Configure features, list of features configured or not configured](media/ALM_CFW_ConfigFeatures.png)
 
 	> [!NOTE]  
 	> If Portfolio Backlogs shows as **Not configured**, then the wizard will add the Feature and Epic WIT and categories to the project and modify the process configuration to support portfolio backlogs. However, if it shows as **Previously configured (will be skipped)**, the wizard won't add the Epic WIT and portfolio backlog. To add the Epic portfolio backlog, you'll need to [add it manually](add-portfolio-backlogs.md).
@@ -53,13 +53,13 @@ If you have several projects to update, you can [apply updates programmatically]
 
 4. If you receive a message similar to the one shown below, you can configure your project. If more than one process template is available, accept the recommended version. 
 
-	![Updated project with unconfigured features](_img/ALM_CF_UpdatedUnconfig.png)
+	![Updated project with unconfigured features](media/ALM_CF_UpdatedUnconfig.png)
 
 	If the dialog box doesn't contain a **Configure** option, then you'll need to [apply the updates manually](add-features-manually.md).
 
 5. In most cases, the wizard will configure all the new features and you'll receive a success message.
 
-	![Success message upon configuring features](_img/ALM_CF_SuccessConfig.png)
+	![Success message upon configuring features](media/ALM_CF_SuccessConfig.png)
 
 	Occasionally, the wizard will partially update your project and return error messages that require resolution. Make a note of the errors that you receive and perform [manual updates to resolve each error](https://msdn.microsoft.com/library/hh913787.aspx).  
 
@@ -68,7 +68,7 @@ If you have several projects to update, you can [apply updates programmatically]
  
 When the wizard can't update a project, it returns a message indicating that there are no process templates available to support the update. 
 
- ![Configure features wizard returns error messages](_img/ALM_CF_WizardErrorMsg.png) 
+ ![Configure features wizard returns error messages](media/ALM_CF_WizardErrorMsg.png) 
 
 When this occurs, you'll need to perform some manual updates according to one of the following options:
 
@@ -115,7 +115,7 @@ If you have additional questions, you can post one or search for answers in the 
 
 If the projects were created from the same process template, you should be able to modify the source process template, upload it, and then batch update all projects defined for a project collection. Review the following resources: 
 *	[Update a customized process template to access new features](update-customized-process-template.md)
-*	[How to Configure Features for dozens of projects](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx)
+*	[How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/)
 *	[Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
 ### Resolve warning or error messages related to the update of test management artifacts

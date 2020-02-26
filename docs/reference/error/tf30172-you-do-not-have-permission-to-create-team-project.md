@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 ---
 # TF30172: You do not have permission to create a new project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You receive this error when your run the New Team Project Wizard under the following conditions:  
   

@@ -45,7 +45,7 @@ Create branches using the `branch` command. `Branch` creates a reference in Git 
 When you are working with a branch that someone else shared, Git keeps an upstream tracking relationship to associate the branch on the local repo with the corresponding branch on the remote repo.
 This makes it simple to sync changes with others using [push](pushing.md) and [pull](pulling.md).
 
-![Visual of a branch off master in Git](_img/branch.png)
+![Visual of a branch off master in Git](media/branch.png)
 
 In this image, a new branch is created from the main branch. Work continues on both branches and commits are added to both branches. 
 
@@ -67,7 +67,7 @@ Visual Studio 2015 & 2017
 2. Right-click the parent branch (usually `master`) to base your changes and choose **New Local Branch From...**. 
 3. Supply a branch name in the required field and click **Create Branch**. Visual Studio automatically performs a `checkout` to the newly created branch.
 
-    ![Creating Git Branches in Visual Studio](_img/vsbranch.gif)   
+    ![Creating Git Branches in Visual Studio](media/vsbranch.gif)   
 
 #### [Command Line](#tab/command-line/)
 Use the `branch` command to create the branch and `checkout` to swap to that branch.
@@ -90,7 +90,7 @@ Visual Studio 2015 & 2017
 2. Locate the branch you want to delete. Make sure that you aren't checked out to that branch, as you can't delete the branch you are currently working in.
 3. Right-click the branch name and select **Delete**. If you have unpublished changes, Visual Studio will ask and make sure you want to delete the branch so you don't possibly lose work.
 
-    ![Deleting a branch in Visual Studio](_img/vsbranchdelete.gif)
+    ![Deleting a branch in Visual Studio](media/vsbranchdelete.gif)
 
 You can delete a remote branch using the same method - locate the tree for the remote in Team Explorer's **Branches** view (such as `remotes/origin`), right-click and select **Delete**.
 

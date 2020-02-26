@@ -16,7 +16,7 @@ ms.date: 11/20/2019
 
 # Permissions and access for work tracking
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -31,7 +31,7 @@ As a member of an Azure DevOps project, you can use most of the features to trac
 ::: moniker-end
 
 
-In the tables provided in this article, a ![ ](/azure/devops/_img/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a ![ ](/azure/devops/media/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
 > [!NOTE]   
 > Team administrators can configure settings for their team's tools. Organization owners and members of the Project Administrators group can configure settings for all teams. To be added as an administrator, see [Add team administrators](../settings/add-team-administrator.md) or [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md). 
@@ -43,32 +43,32 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 You can use work items to track anything you need to track. To learn more, see [Understand how work items are used to track issues, tasks, and epics](../../boards/work-items/about-work-items.md).
 
-[!INCLUDE [temp](_shared/boards-work-items.md)]
+[!INCLUDE [temp](includes/boards-work-items.md)]
 
 ## Boards feature access
 
 You use [**Boards**](../../boards/boards/kanban-quickstart.md) to implement Kanban methods. Boards present work items as cards and support quick status updates through drag-and-drop. 
 
-[!INCLUDE [temp](_shared/boards-boards.md)]
+[!INCLUDE [temp](includes/boards-boards.md)]
 
 ## Backlogs features access
 
 [**Backlogs**](../../boards/backlogs/create-your-backlog.md) display work items as lists. A product backlog represents your project plan and a repository of all the information you need to track and share with your team. Portfolio backlogs allow you to group and organize your backlog into a hierarchy.  
 
-[!INCLUDE [temp](_shared/boards-backlogs.md)]
+[!INCLUDE [temp](includes/boards-backlogs.md)]
 
 
 ## Sprints feature access
 
 You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/sprints/assign-work-sprint.md) set of tools provide filtered views of work items that a team has assigned to specific iteration paths or sprints. 
 
-[!INCLUDE [temp](_shared/boards-sprints.md)]
+[!INCLUDE [temp](includes/boards-sprints.md)]
 
 ## Queries and semantic search 
 
 [**Queries**](../../boards/queries/view-run-query.md) are filtered lists of work items based on criteria that you define by using a query editor. [Adhoc searches](../../boards/queries/search-box-queries.md) are powered by a semantic search engine.
 
-[!INCLUDE [temp](_shared/boards-queries.md)]
+[!INCLUDE [temp](includes/boards-queries.md)]
 
 
 ::: moniker range=">= tfs-2017"  
@@ -77,7 +77,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 [Delivery plans](../../boards/plans/review-team-plans.md) display work items as cards against a calendar view. This format can be an effective communication tool with managers, partners, and stakeholders for a team. Users granted **Stakeholder** access for  private projects have no access to delivery plans, while users granted **Stakeholder** access for public projects has the same access as regular Contributors granted **Basic** access. 
 
-[!INCLUDE [temp](_shared/boards-plans.md)]
+[!INCLUDE [temp](includes/boards-plans.md)]
 
 ::: moniker-end
 
@@ -86,7 +86,7 @@ You use sprint tools to implement Scrum methods. The [**Sprints**](../../boards/
 
 Test plans, test suites, test cases and other test artifacts are specific work item types that support manual and exploratory testing. You set [test permissions at the project level](set-project-collection-level-permissions.md) from the admin context Security page.  
 
-[!INCLUDE [temp](_shared/test.md)]
+[!INCLUDE [temp](includes/test.md)]
 
 
 Area permissions for web-based test case management and test execution control access to the following actions.  
@@ -120,11 +120,11 @@ You set project-level information permissions from **Project settings** > **Perm
 <tr>
 <td align="left"><a href="set-project-collection-level-permissions.md" data-raw-source="[View project-level information](set-project-collection-level-permissions.md)">View project-level information</a> 
 </td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -133,9 +133,9 @@ You set project-level information permissions from **Project settings** > **Perm
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 <td align="left"><a href="../../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Area nodes and Iteration nodes: Create, delete, edit child nodes](../../organizations/settings/set-iteration-paths-sprints.md)">Area nodes and Iteration nodes: Create, delete, edit child nodes</a><br/></td>
@@ -143,7 +143,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -152,7 +152,7 @@ You set project-level information permissions from **Project settings** > **Perm
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 
@@ -192,8 +192,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
@@ -202,17 +202,17 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
 
 <td align="left"><a href="../../boards/queries/using-queries.md" data-raw-source="[View shared work item queries](../../boards/queries/using-queries.md)">View shared work item queries</a></p>
 </td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -223,7 +223,7 @@ The following table summarizes a subset of the default permissions assigned to t
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 <tr>
@@ -233,8 +233,8 @@ The following table summarizes a subset of the default permissions assigned to t
 </td>
 <td><p>&nbsp;&nbsp;</p></td>
 <td><p>&nbsp;&nbsp;</p></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="_img/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 
 </tbody>
@@ -268,7 +268,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 
 By default, team members inherit the permissions afforded to members of the project Contributors group. Members of this group can add and modify source code, create and delete test runs, and create and modify work items. They can [collaborate on a Git project](../../repos/git/gitquickstart.md) or collaborate with other team members and [check in work to the team's code base (TFVC)](../../repos/tfvc/check-your-work-team-codebase.md).  
 
-![Default permissions assigned to team contributors](../settings/_img/add-team/default-permissions-assigned-to-team-contributors.png)  
+![Default permissions assigned to team contributors](../settings/media/add-team/default-permissions-assigned-to-team-contributors.png)  
 
 ::: moniker range="tfs-2018 < azure-devops"
 

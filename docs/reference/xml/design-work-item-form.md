@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Design the work item form
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]  
 > This articles applies to project customization for the On-premises XML process model and for the old webform. For the new web form and for the Hosted XML process model, see [WebLayout and Control elements](weblayout-xml-elements.md). For the Inheritance process model, see [Customize a process](../../organizations/settings/work/customize-process.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  
@@ -36,7 +36,7 @@ When you design a work item form, you want to position fields on the form so tha
   For information about how to export, import, and verify work item form changes, see [Change the work item form layout](change-work-item-form-layout.md).    
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 
 <a name="LayoutElements"></a> 
@@ -57,7 +57,7 @@ You use layout elements to segment your work item form into different areas, gro
 
  The following illustration shows a form whose upper area displays eight fields that are arranged roughly into two columns. The lower portion displays two sets of three tabs that are arranged in a two-column layout.  
 
- ![Custom work item form](_img/alm_wit_custom_form.png "ALM_WIT_Custom_Form")  
+ ![Custom work item form](media/alm_wit_custom_form.png "ALM_WIT_Custom_Form")  
 Custom Form with Three Tabs in a Two Column Layout  
 
  **Top of the Form**  
@@ -124,7 +124,7 @@ By using the attributes that are described in the following table, you can label
 
 **Six Tabs Arranged in a Side by Side by Layout**
 
-![Custom form showing two groups of 6 tabs](_img/alm_wit_custom_tabs.png "ALM_WIT_Custom_Tabs")  
+![Custom form showing two groups of 6 tabs](media/alm_wit_custom_tabs.png "ALM_WIT_Custom_Tabs")  
  
 
 The following code lists the syntax that is used to create the layout that is shown in the previous illustration.  
@@ -213,7 +213,7 @@ You can control the spacing and size of the overall form layout by specifying th
 
 **Group of Fields Arranged on a Tab**  
 
-![Group of several fields](_img/alm_wit_custom_group.png "ALM_WIT_Custom_Group")  
+![Group of several fields](media/alm_wit_custom_group.png "ALM_WIT_Custom_Group")  
 
 
 The following code lists the syntax that is used to create the group of fields that is shown in the previous illustration. For more information about how to specify the fields by using the `Control` element, see [Specify work item form controls](specify-work-item-form-controls.md).  
@@ -243,7 +243,7 @@ The following code lists the syntax that is used to create the group of fields t
 You can design an area in a form that has two or more columns. You can specify the column width as fixed or as a percentage of the width of the containing element by using the `FixedWidth` or `PercentWidth` attributes, respectively. These two `Column` attributes are mutually exclusive. To allow a user to resize the column, you can specify a `Splitter` control, as [Use a splitter to support variable column sizing](#UsingSplitter) describes.  
 
 **Three-Column Layout**  
-![3&#45;Column Display](_img/alm_wit_custom_3columns.png "ALM_WIT_Custom_3Columns")  
+![3&#45;Column Display](media/alm_wit_custom_3columns.png "ALM_WIT_Custom_3Columns")  
   
 
 
@@ -286,7 +286,7 @@ The following code produced the previous three-column layout of fields. When you
  You use the **Splitter** element when you want to allow the viewer of the form to dynamically resize the columns. The splitter appears as a dotted line on the form, as shown in the following illustration. You cannot specify any child elements in the **Splitter** element.  
 
 **2-Column Layout with Splitter**  
-![2 Column Layout with Splitter](_img/alm_wit_custom_splitter.png "ALM_WIT_Custom_Splitter")  
+![2 Column Layout with Splitter](media/alm_wit_custom_splitter.png "ALM_WIT_Custom_Splitter")  
 
 
 A **Group** element that contains **Splitter** and **Column** elements must specify exactly three **Column** elements in the following sequence:  

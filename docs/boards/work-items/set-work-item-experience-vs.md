@@ -58,7 +58,7 @@ Each view supports the following tasks:
 1. Choose your **Landing page** option from the menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Tools>Options>Work Items](_img/set-vs-experience/option-vs-options-work-items.png)
+	> ![Open Tools>Options>Work Items](media/set-vs-experience/option-vs-options-work-items.png)
 
 To learn more about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
 

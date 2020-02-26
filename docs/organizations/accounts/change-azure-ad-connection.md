@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Switch to another Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If you need to switch your organization connection from one Azure Active Directory (Azure AD) to another, complete the following steps.
 
@@ -32,22 +32,22 @@ Before you switch your organization directory, make sure the following is true:
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Azure Active Directory**, and then **Switch directory**.
 
-   ![Select Switch directory button](_img/change-azure-ad-connection.md/select-switch-directory.png)
+   ![Select Switch directory button](media/change-azure-ad-connection.md/select-switch-directory.png)
 
 4. Select a directory from the dropdown menu, and then select **Connect**.
 
-   ![Select your Azure AD, and then Connect](_img/_shared/select-directory-connect.png)
+   ![Select your Azure AD, and then Connect](media/shared/select-directory-connect.png)
    If you can't find your directory, contact your Azure AD administrator and request that they add you as a member to the Azure AD.
 
 5. Select **Sign out**.
 
-   ![Connect success dialog - select Sign out](_img/_shared/connect-success-dialog.png)
+   ![Connect success dialog - select Sign out](media/shared/connect-success-dialog.png)
 
     Your organization is now connected to your Azure AD.
 
@@ -55,9 +55,9 @@ Before you switch your organization directory, make sure the following is true:
 
 7. If you have disconnected members, sign back in to Azure DevOps and map them to their Azure AD identities or invite them as guests into the Azure AD. See the [FAQ](faq-azure-access.md#connect-disconnect-or-change-azure-ad) for further information.
 
-   ![Select Resolve to invite unmapped users](_img/_shared/azure-ad-select-resolve-for-disconnected-users.png)
+   ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
-   ![Mapping disconnected users](_img/_shared/resolve-disconnected-users.png)
+   ![Mapping disconnected users](media/shared/resolve-disconnected-users.png)
 
 ## Related articles
 

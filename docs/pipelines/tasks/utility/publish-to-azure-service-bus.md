@@ -27,7 +27,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishToAzureServiceBusV1.md)]
+[!INCLUDE [temp](../includes/yaml/PublishToAzureServiceBusV1.md)]
 
 ::: moniker-end
 

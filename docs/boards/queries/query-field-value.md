@@ -15,7 +15,7 @@ ms.date: 08/16/2019
 
 # Query by field value comparisons   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can create queries based on how one field's value compares to another using the comparison field operators. This is useful to filter work items based on: 
 - Is the person who created the work item the same as or different than the person assigned to it, or who closed it
@@ -80,7 +80,7 @@ The following table provides an index to those fields that support field compari
 <tr>
 <td width="33%"><h3>A</h3>
 <ul>
-<li><a href="titles-ids-descriptions.md>Acceptance Criteria</a> (Scrum)</li>
+<li><a href="titles-ids-descriptions.md">Acceptance Criteria</a> (Scrum)</li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted By</a> </li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted Date</a></li>
 <li><a href="query-by-workflow-changes.md">Activated By</a></li>
@@ -263,4 +263,4 @@ The following table provides an index to those fields that support field compari
 - [Query by picklist value](planning-ranking-priorities.md)  
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]

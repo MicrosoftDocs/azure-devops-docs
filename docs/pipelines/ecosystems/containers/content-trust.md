@@ -6,14 +6,14 @@ ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b66517e3-85de-4847-82f6-b1b0431d2915
 ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 # Docker Content Trust
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Docker Content Trust (DCT) provides the ability to use digital signatures for data sent to and received from remote Docker registries. These signatures allow client-side or runtime verification of the integrity and publisher of specific image tags.
 
@@ -22,7 +22,7 @@ Docker Content Trust (DCT) provides the ability to use digital signatures for da
 
 ## Signing images in Azure Pipelines
 
-### Pre-requisites on development machine
+### Prerequisites on development machine
 
 1. Use Docker trust's built in generator or manually [generate delegation key pair](https://docs.docker.com/engine/security/trust/trust_delegation/#using-docker-trust-to-generate-keys). If the built-in generator is used, the delegation private key is imported into the local Docker trust store. Else, the private key will need to be manually imported into the local Docker trust store
 1. Using the public key generated from the step above, upload the first key to a delegation and [initiate the repository](https://docs.docker.com/engine/security/trust/trust_delegation/#initiating-the-repository)
