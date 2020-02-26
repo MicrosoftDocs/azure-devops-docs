@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 ms.date: 12/02/2019
 ---
 
-# Plan and track dependencies using the Dependency Tracker extension
+# Plan and track dependencies using the Dependency Tracker
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
