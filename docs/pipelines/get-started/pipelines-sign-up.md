@@ -65,7 +65,7 @@ If you have a GitHub account, follow these steps to sign up for Azure Pipelines.
 
    ![Enter GitHub credentials](../../media/enter-github-credentials.png)
 
-3. Select **Authorize Microsoft corporation**.
+3. Select **Authorize Microsoft-corp**.
 
    ![Authorize Microsoft](../../media/authorize-Microsoft-corp.png)
 
