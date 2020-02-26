@@ -6,9 +6,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: adandree
-ms.author: phwilson
-author: chasewilson
-ms.date: 07/05/2019
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/26/2020
 monikerRange: azure-devops
 ---
 
