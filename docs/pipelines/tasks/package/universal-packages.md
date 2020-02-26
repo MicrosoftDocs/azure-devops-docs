@@ -6,10 +6,9 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
-ms.date: 10/18/2019
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/26/2020
 monikerRange: '>= tfs-2018'
 ---
 
