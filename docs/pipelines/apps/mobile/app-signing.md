@@ -114,14 +114,14 @@ Use this method when you do not have enduring access to the build agent, such as
 
 1. Upload your P12 file to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
 1. Go to the **Variables** tab and add a variable named `P12password`. Set its value to the password of your certificate. _Be sure to click the **lock** icon._ This will secure your password and obscure it in logs.
-1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your yaml before the Xcode or Xamarin.iOS task.
+1. Add the [Install Apple Certificate](../../tasks/utility/install-apple-certificate.md) task to your YAML before the Xcode or Xamarin.iOS task:
 
-```yaml
-- task: InstallAppleCertificate@2
-    inputs:
-      certSecureFile: 'my-secure-file.p12' # replace my-secure-file.p12 with the name of your P12 file.
-      certPwd: '$(P12password)'
-```
+   ```yaml
+   - task: InstallAppleCertificate@2
+       inputs:
+         certSecureFile: 'my-secure-file.p12' # replace my-secure-file.p12 with the name of your P12 file.
+         certPwd: '$(P12password)'
+   ```
 
 #### Install the provisioning profile during your build
 
@@ -136,14 +136,16 @@ Use this method when you do not have enduring access to the build agent, such as
 ##### Sample YAML
 
 1. Upload your provisoning profile to the [Secure Files library](../../library/secure-files.md). During upload, your certificate will be encrypted and securely stored.
-1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your yaml before the Xcode or Xamarin.iOS task.
+1. Add the [Install Apple Provisioning Profile](../../tasks/utility/install-apple-provisioning-profile.md) task to your YAML before the Xcode or Xamarin.iOS task:
 
-```yaml
-- task: InstallAppleProvisioningProfile@1
-    inputs:
-      provProfileSecureFile: 'my-provisioning-profile.mobileprovision' # replace my-provisioning-profile.mobileprovision with the name of your provisioning profile file.
-```
-_Note: **Remove profile after build** is defaulted to *true*._
+   ```yaml
+   - task: InstallAppleProvisioningProfile@1
+       inputs:
+         provProfileSecureFile: 'my-provisioning-profile.mobileprovision' # replace my-provisioning-profile.mobileprovision with the name of your provisioning profile file.
+   ```
+
+   > [NOTE]
+   > **Remove profile after build** defaults to *true*.
 
 #### Reference the files in your Xcode task
 
