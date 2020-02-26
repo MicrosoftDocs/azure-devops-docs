@@ -16,7 +16,7 @@ ms.date: 10/31/2019
 
 This page shows how to use a pivot filter control.
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 

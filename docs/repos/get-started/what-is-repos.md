@@ -98,7 +98,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../media/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -116,7 +116,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Set up branch policies" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Set up branch policies" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -152,7 +152,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -188,7 +188,7 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Vote on the changes" src="../git/_img/logos/check.svg" />
+                            <img width="48" height="48" alt="Vote on the changes" src="../git/media/logos/check.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -221,7 +221,7 @@ A clean build of the merged code and approval from multiple reviewers are extra 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Branch policies overview" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Branch policies overview" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">

@@ -8,13 +8,13 @@ ms.assetid: 57D04B69-1068-4A06-80B8-4C0FE7BEEC55
 ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 4/25/2019
+ms.date: 02/24/2020
 monikerRange: 'azure-devops'
 ---
 
 # Azure Web App task
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Use this task to deploy web applications to Azure App service.
 
@@ -95,6 +95,38 @@ Creates a .zip deployment package of the chosen Package or folder and deploys th
 ### RunFromPackage
 
 Creates the same deployment package as Zip Deploy. However, instead of deploying files to the wwwroot folder, the entire package is mounted by the Functions runtime. With this option, files in the wwwroot folder become read-only. For more information, see [Run your Azure Functions from a package file](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package).
+
+## Troubleshooting
+
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
+
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared.md](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
+
+### Web app deployment on Windows is successful but the app is not working
+
+This may be because web.config is not present in your app. You can either add a web.config file to your source or auto-generate one using the Application and Configuration Settings of the task.
+
+* Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
+
+![Generate web.config parameters Dialog](media/azure-rm-web-app-01.png)
+
+* Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
+
+![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+
+* Select your application type from the drop down.
+* Click on OK. This will populate web.config parameters required to generate web.config.
+
+### Web app deployment on App Service Environment (ASE) is not working
+* Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
+* If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
+* If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
+* Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
+* If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

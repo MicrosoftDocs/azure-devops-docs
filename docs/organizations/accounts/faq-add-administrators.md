@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot adding administrators to projects and project collections
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 #### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
 
@@ -43,13 +43,13 @@ A: The following permissions are required:
 - To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
 
 > [!Important]
-> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies-tfs) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
+> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
 
 #### Q: Where can I find information about each individual permission?
 
 A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permissions, complete the following steps:
 
-1. From the team page, select the settings icon ![Settings icon](_img/admin-gear-icon.png) to go to the team administration page.
+1. From the team page, select the settings icon ![Settings icon](media/admin-gear-icon.png) to go to the team administration page.
 
 2. Add the user to the **Project Administrators** group.
 

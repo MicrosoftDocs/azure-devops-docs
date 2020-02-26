@@ -23,7 +23,7 @@ Use this task in a build or release pipeline to run your scripts and make change
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureMysqlDeploymentV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureMysqlDeploymentV1.md)]
 
 ::: moniker-end
 

@@ -18,7 +18,7 @@ ms.date: 08/04/2016
 Class which manages showing dialogs in the parent frame
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/HostDialogService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/HostDialogService.md)]
 
 ## Methods
 

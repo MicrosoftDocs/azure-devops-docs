@@ -16,7 +16,7 @@ ms.date: 01/12/2017
 
 # Restrictions on mapping Project Server fields in TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> When you add fields to participate in data synchronization between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, make sure that you do not map fields that are restricted. You map fields by customizing the field mappings for a project collection. You can map both built-in and custom fields in Project. You can map some of those fields only to the status queue and some fields only to TFS. In general, you should map resource-level information, pjResource\* fields, from Team Foundation Server to Project Server within the **tfsToTarget** element and only task-level information, pjTask\* fields, from Project Server to TFS within the **targetToTfs** element. For more information, see [Field mapping reference](field-mapping-xml-element-reference.md).  
   

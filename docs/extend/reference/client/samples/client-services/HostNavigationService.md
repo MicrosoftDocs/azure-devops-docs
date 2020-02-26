@@ -15,13 +15,4 @@ ms.date: 08/17/2016
 
 # Azure DevOps Services Extension Host Navigation Service Example
 
-```js
-    // Get navigation service
-    VSS.getService(VSS.ServiceIds.Navigation).then(function(navigationService) {
-        // Get current hash value from host url
-        navigationService.getHash().then(function (hash) {
-            console.log("Host hash value: " + hash);                        
-        });
-    });
-```
-See [Host navigation](../../../../develop/host-navigation.md) for additional samples.
+[!INCLUDE [x](../../../../../includes/extend/reference/samples/client-services/HostNavigationService.md)]

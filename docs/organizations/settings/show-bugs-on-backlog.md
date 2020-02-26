@@ -14,7 +14,7 @@ ms.date: 02/20/2019
 
 # Show bugs on backlogs and boards  
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
 
@@ -27,7 +27,7 @@ As your team identifies code defects or bugs, they can add them to the backlog a
 
 When you track bugs as requirements, they'll show up on the product backlog and Kanban board. When you track bugs similar to tasks, they'll show up on the sprint backlogs and task boards. If you want to track additional work item types (WITs) or custom WITs on your backlogs or boards, you can. See [Add other work item types to backlogs or boards](#add-other-wits) later in this topic.
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 ## Set your team's preferences for tracking bugs  
 
@@ -46,15 +46,15 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../_img/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team, vert nav](_img/configure-team/open-board-settings.png)  
+	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
 
 3. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
+	> ![Settings, working with bugs dialog](media/show-bugs-dialog.png)  
 
 4. When you're done with your changes, choose **Save**.  
 
@@ -66,15 +66,15 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../_img/icons/gear-icon.png) gear icon to open the  settings dialog.  
+2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Open board settings for a team](_img/configure-team/open-settings-tfs.png)  
+	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
 
 3. Choose **Working with bugs** and then choose the option that best meets your team's way of working.
 
 	> [!div class="mx-imgBorder"]
-	> ![Settings, working with bugs dialog](_img/show-bugs-dialog.png)  
+	> ![Settings, working with bugs dialog](media/show-bugs-dialog.png)  
 
 4. When done with your changes, choose **Save**.  
 
@@ -88,13 +88,13 @@ Requires TFS 2013.4 or later version.
 
 1. Open your team settings from the **Overview** tab of your team's admin context. Your changes are automatically saved. 
 
-2. Choose the ![gear icon](../../_img/icons/gear-icon.png), (gear icon) to open the administration page.  
+2. Choose the ![gear icon](../../media/icons/gear-icon.png), (gear icon) to open the administration page.  
 
-	![Gear icon provides access to admin pages](../../boards/_img/icons/ALM_OpenAdminContext.png)
+	![Gear icon provides access to admin pages](../../boards/media/icons/ALM_OpenAdminContext.png)
 
 3. From the **Overview** tab, choose the team whose settings you want to configure, and then choose **Settings**. Select the option you want. Your changes are automatically saved.   
 
-	<img src="_img/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
+	<img src="media/team-settings.png" alt="TFS 2015, web portal, team settings admin page, Working with bugs" style="border: 2px solid #C3C3C3;" />  
 
 4. To see the changes, open or refresh the team's [backlog](../../boards/backlogs/create-your-backlog.md) or [Kanban board](../../boards/boards/kanban-basics.md).
 

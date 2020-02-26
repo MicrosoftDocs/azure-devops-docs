@@ -48,7 +48,7 @@ There are three options for receiving events:
 3.Use [Zapier](https://www.zapier.com/) to link a Visual Studio Online service hook to another service that Zapier supports. Look for Visual Studio Online in Zapier’s service list.
 Services hooks can be found as a new hub in project administration.
 
-![Selecting a target service](_img/5_12_01.png)
+![Selecting a target service](media/5_12_01.png)
 
 [Learn more](https://visualstudio.microsoft.com/get-started/integrate/integrating-with-service-hooks-vs)
 
@@ -66,13 +66,13 @@ Give it a try. We can’t wait to see what you come up with.
 
 Since we launched Visual Studio Online, many of our on-premises Team Foundation Server customers who have loved used TFS have wanted to start using Visual Studio Online. One of the things customers have asked us to help them with for that transition is to be able to migrate their work items, test cases, test results, and source code files in version control repositories. Today, we’re happy to announce a free migration utility that we have partnered with OpsHub to create that will help you with a one-way migration of the most commonly requested artifacts in TFS to bring them to your Visual Studio Online account. You can now find it on the [Visual Studio Gallery](https://aka.ms/OpsHubVSOMigrationUtility):
 
-![Service Migration Utility](_img/5_12_02.png)
+![Service Migration Utility](media/5_12_02.png)
 
 The migration utility will take you through a step-by-step process for mapping your team projects in Team Foundation Server on-premises to Visual Studio Online team projects. Team projects using standard process templates from TFS 2010, TFS 2012, and TFS 2013 are supported with this free migration utility, and you do not need to have upgraded the process templates used by the team projects or upgrade to the latest version of TFS 2013 to use the utility. Once you are finished migrating to Visual Studio Online, you’ll be on our latest version, able to take advantage of all of the latest features automatically!
 
 We suggest you test out your migration before having your team come on board. You’ll want to get a sense of how long your migration will take, see whether you run into any issues to be addressed, and give yourself a chance to inspect the test migration after it is finished. You can always [delete the team project](https://blogs.msdn.com/b/buckh/archive/2013/09/13/how-to-delete-a-team-project-from-team-foundation-service.aspx) in Visual Studio Online and run the migration utility as many times as you need to until you are satisfied with your migration plan.
 
-For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://aka.ms/OpsHub). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
+For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://www.opshub.com/integrations/azure-devops-vsts-integration/). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
 
 If you have any additional questions, the OpsHub team will be monitoring for questions marked with the OpsHub and visual-studio-online tags on [StackOverflow](https://stackoverflow.com/questions/tagged/visual-studio-online)!
 

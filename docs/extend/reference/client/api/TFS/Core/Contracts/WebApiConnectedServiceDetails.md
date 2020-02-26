@@ -16,7 +16,7 @@ ms.date: 08/25/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md)
+Extends: [WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md)
 
 ### Members
 
@@ -24,5 +24,5 @@ Extends: [WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnected
 
 * `credentialsXml`: string. Credential info
 
-* `endPoint`: string. Optional uri to connect directly to the service such as https://windows.azure.com
+* `endPoint`: string. Optional uri to connect directly to the service such as https:\//windows.azure.com
 

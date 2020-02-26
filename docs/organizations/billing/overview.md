@@ -10,20 +10,20 @@ ms.topic: overview
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/15/2019
+ms.date: 12/10/2019
 monikerRange: '>= tfs-2015'
 ---
 
 # Billing overview for Azure DevOps
 
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-ts-tfs-2015-2016.md)]
 
 [Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies.
 
 The *free tier* includes:
 
-[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+[!INCLUDE [free-tier](../../includes/free-tier.md)]
 
 ::: moniker range="azure-devops"
 
@@ -57,9 +57,9 @@ The following links take you to the paid services that are offered by Microsoft:
 
 Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
-[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
-To configure costs for Azure DevOps, see the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 

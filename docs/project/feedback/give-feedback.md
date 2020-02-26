@@ -14,7 +14,7 @@ ms.date: 08/31/2017
 
 # Give feedback using Microsoft Feedback Client
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 
 You can respond to a request for feedback using the Microsoft Feedback Client. This tool allows you to launch an application, capture your interaction with it as video and capture your verbal or type-written comments as well. To support traceability, your feedback is stored in the data store for Azure DevOps Services or an on-premises Team Foundation Server (TFS).  
@@ -31,7 +31,7 @@ You can skip this procedure if you already have Microsoft Feedback Client instal
 
 1. Open your email request, and then choose the Install the feedback tool link to install Microsoft Feedback Client.
 
-	![Install the feedback tool](_img/ALM_FB_InstallFBTool.png)
+	![Install the feedback tool](media/ALM_FB_InstallFBTool.png)
 	
 	If you are viewing the email from an internet-based email client, you might need to copy the address behind the link and paste it into the address bar of your browser.
 
@@ -56,7 +56,7 @@ You can skip this procedure if you already have Microsoft Feedback Client instal
  
 The feedback tool opens to the Start page. Launch the application by following the instructions provided. 
 
-![Launch feedback application](_img/ALM_FB_LaunchApplication.png)
+![Launch feedback application](media/ALM_FB_LaunchApplication.png)
 
 1. From the Start page, choose the **Application** link to open, start, or install the application for which you have been requested to provide feedback.
 
@@ -72,7 +72,7 @@ You can record your interactions with the application, record verbal comments, e
 
 On the **Provide** page, one or more items appear for you to provide feedback. For each item, you can get context on what's being asked and then you can give feedback free form through video or audio recordings, text, screenshot, or file attachments. When finished with one item, choose the **Next** button to move to the next item. 
 
-![Provide feedback](_img/ALM_FB_ProvideFeedback.png)
+![Provide feedback](media/ALM_FB_ProvideFeedback.png)
 
 
 1. On the toolbar, choose the number of the ITEM that you want to review. 
@@ -83,7 +83,7 @@ On the **Provide** page, one or more items appear for you to provide feedback. F
 
 ### To start, stop, or delete a screen or voice recording
 
-![Start or Stop Feedback](_img/ALM_FB_StartStopDeleteRecording.png)
+![Start or Stop Feedback](media/ALM_FB_StartStopDeleteRecording.png)
 
 You can change settings defined for the audio device and annotation tool at any time. For more information, see Change the audio device or annotation tool.  
 
@@ -104,7 +104,7 @@ You can add text, capture a screenshot, annotate a screenshot, or attach a file 
 
 By annotating screenshots, you can indicate corrections or improvements by adding text or images to the screenshot that you captured. By default, Microsoft Paint opens automatically when you open a screenshot image that you captured within the feedback tool. You can also configure another annotation tool to open automatically whenever you capture a screenshot. For more information, see [Change the audio device or annotation tool](change-audio-device-annotation-tool.md).
 
-![Add Txt Screenshot or File](_img/ALM_FB_StartStopDeleteRecording.png)
+![Add Txt Screenshot or File](media/ALM_FB_StartStopDeleteRecording.png)
 
 
 1. **To add text**: In the tool's rich-text box, enter the information that you want to include when you submit your feedback.  
@@ -120,7 +120,7 @@ By annotating screenshots, you can indicate corrections or improvements by addin
 	Microsoft Paint, or whichever annotation tool you have configured, opens with the image displayed. To specify corrections or improvements, perform the following steps:  
 
 	a. Draw or enter text onto the image.  
-	b. Choose the ![Save](_img/ALM_FB_SaveIcon.png) **Save** icon, and close the annotation tool.  
+	b. Choose the ![Save](media/ALM_FB_SaveIcon.png) **Save** icon, and close the annotation tool.  
 
 	The image appears within the feedback tool with the changes that you made.  
 
@@ -128,7 +128,7 @@ By annotating screenshots, you can indicate corrections or improvements by addin
 
 ### To rate an item and move to the next item
 
-![Rating stars on Provide page](_img/ALM_FB_RatingstarsonProvidepage.png)  
+![Rating stars on Provide page](media/ALM_FB_RatingstarsonProvidepage.png)  
 
 1. (Optional) Choose one or more stars to indicate your overall rating of the item that you have just reviewed.  
 
@@ -138,7 +138,7 @@ By annotating screenshots, you can indicate corrections or improvements by addin
  
 After you enter your feedback for each item, you can review, make corrections or additions, and then submit your feedback. 
 
-![Review Feedback Submit](_img/ALM_FB_FeedbackSubmit.png)
+![Review Feedback Submit](media/ALM_FB_FeedbackSubmit.png)
 
 1. Choose the **Submit** button, which also stops any recordings that you may have started.  
  

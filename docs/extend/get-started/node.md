@@ -20,7 +20,7 @@ This tutorial guides you through creating your first web extension, which includ
 
 > [!div class="checklist"]
 > * Install the required tools
-> * Ready a local directory for your extension
+> * Read a local directory for your extension
 > * Create an extension manifest file and hub contribution
 > * Package and publish your extension to the Marketplace
 > * Test your extension in an organization
@@ -164,7 +164,7 @@ All extensions, including extensions from Microsoft, live under a publisher. Any
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-   	![Create publisher](_img/create-publisher.png)
+   	![Create publisher](media/create-publisher.png)
 
     >[!NOTE]
     >Remember this ID. You need to set it in the manifest file of your extension.
@@ -203,17 +203,17 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 2. Tap **New Extension** and select **Azure DevOps**:
    	
-	![Upload new extension for Azure DevOps Services or TFS](_img/upload-new-extension.png)
+	![Upload new extension for Azure DevOps Services or TFS](media/upload-new-extension.png)
 
 3. Select the link in the center of the Upload dialog to open a browse dialog. 
 
 4. Locate the .vsix file (created in the packaging step above) and choose **Upload**:
 
-   ![Upload new extension for Azure DevOps Services or TFS](_img/upload-new-extension2.png)
+   ![Upload new extension for Azure DevOps Services or TFS](media/upload-new-extension2.png)
 
 5. After a few seconds your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
-   ![Upload new extension for Azure DevOps Services or TFS](_img/published-extension.png)
+   ![Upload new extension for Azure DevOps Services or TFS](media/published-extension.png)
 
 ## Install your extension
 
@@ -221,11 +221,11 @@ To test an extension, it must be installed to an organization in Azure DevOps Se
 
 1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
 
-   ![Upload new extension for Azure DevOps Services or TFS](_img/share-menu.png)
+   ![Upload new extension for Azure DevOps Services or TFS](media/share-menu.png)
 
 2. Select the **+ Organization** button, enter the name of your organization, and press enter.
 
-   ![Share with account](_img/share-dialog.png)
+   ![Share with account](media/share-dialog.png)
 
 3. Select the **X** to close this panel.
 
@@ -233,14 +233,14 @@ Your extension can now be installed into this organization.
 
 4. Right-click your extension and choose  **View Extension** to open its details page
 
-   ![Details page](_img/details-page.png)
+   ![Details page](media/details-page.png)
 
    >[!NOTE]
    >Because your extension is private, only you (as the publisher of the extension) and any member of the organization it is shared with can see this page.
 
 5. Select **Get it free** to start the installation process. The organization you shared the extension with should be selected:
 
-   ![Install extension panel](_img/install-dialog.png)
+   ![Install extension panel](media/install-dialog.png)
 
 6. Select **Install**.
 
@@ -254,13 +254,13 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
 
 2. Select any of the projects listed to navigate into it:
 
-   ![Install extension panel](_img/account-home2.png)
+   ![Install extension panel](media/account-home2.png)
 
    > If there are no projects in your organization, you are prompted to create one.
 
 3. Navigate to the Code area and then to the hub contributed by your extension (**My Hub**):
 
-   ![My hub](_img/my-hub.png)
+   ![My hub](media/my-hub.png)
    
 ## Debugging your extension
 

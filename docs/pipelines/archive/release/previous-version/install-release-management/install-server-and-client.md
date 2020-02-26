@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2013'
 
 # Install Release Management server and client 
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
-![Installing Release Management on TFS](_img/install-server-client-01.png)
+![Installing Release Management on TFS](media/install-server-client-01.png)
 
 These are the instructions for installing the Release Management 
 **[server](#installserver)** and the **[client](#installclient)**.
@@ -64,7 +64,7 @@ instance that you used before for the database server.
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
-   ![Starting the installation of the server](_img/install-server-client-02.png)
+   ![Starting the installation of the server](media/install-server-client-02.png)
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
@@ -78,7 +78,7 @@ instance that you used before for the database server.
    or specify alternates. For more information, see 
    [Ports required for installation of Team Foundation Server](/azure/devops/server/architecture/required-ports)
    and
-   [Accounts required for installation of Team Foundation Server](/azure/devops/server/requirements#accounts).
+   [Accounts required for installation of Team Foundation Server](/azure/devops/server/requirements).
    Release Management server uses the identity set here for its Application 
    Pools in IIS and the Release Management Monitor Windows service.
 
@@ -86,11 +86,11 @@ instance that you used before for the database server.
    the service, this must be in the form **domain\user**. Do not use the format 
    <strong>user@domain</strong>.</em>
  
-   ![Specifying the identity and server settings](_img/install-server-client-03.png)
+   ![Specifying the identity and server settings](media/install-server-client-03.png)
 
 6. Choose **Apply settings**.
 
-   ![Configuration summary page](_img/install-server-client-04.png)
+   ![Configuration summary page](media/install-server-client-04.png)
 
 7. After the success message appears, close the configuration summary and 
    the server console and then install the Release Management client (as 
@@ -119,7 +119,7 @@ instance that you used before for the database server.
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
-   ![Starting the installation of the client](_img/install-server-client-05.png)
+   ![Starting the installation of the client](media/install-server-client-05.png)
 
 1. Restart your computer, if prompted, and then choose **Launch**.
 
@@ -131,7 +131,7 @@ instance that you used before for the database server.
    client on the same computer that is running Release Management server, you 
    can use **localhost** to connect to the server.
 
-   ![Connecting the client to the server](_img/install-server-client-06.png)
+   ![Connecting the client to the server](media/install-server-client-06.png)
 
    > [!TIP]
    > If you changed any of the default options in your Release
@@ -148,6 +148,6 @@ instance that you used before for the database server.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

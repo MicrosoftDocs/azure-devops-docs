@@ -14,7 +14,7 @@ monikerRange: '<= tfs-2018'
 
 # About SharePoint integration  
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 SharePoint products are a valuable resource to users of Azure DevOps and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage Azure DevOps and TFS teams to use SharePoint and will continue to look for ways to make the integration of Azure DevOps and SharePoint Server and SharePoint online, be better together.
 
@@ -63,7 +63,7 @@ TFS 2010 | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows Shar
 
 NTLM is the recommended authentication provider. Team Foundation Server Extensions for SharePoint Products doesn't support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic authentication to move to claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS supports only NTLM-based claims.
 
-You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/command-line/open-admin-console).
+You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/admin/open-admin-console).
 
 > [!TIP]
 > If you plan to install SharePoint, make sure that the SharePoint version you want to install is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.

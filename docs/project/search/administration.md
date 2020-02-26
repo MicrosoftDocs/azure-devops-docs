@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 11/19/2019
+ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Install and manage Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -99,7 +99,7 @@ Code Search is an opt-in feature, and can be installed later from the Local Gall
 Go to **Local Gallery** (```http://{server}/_gallery```) as an administrator.
 Non-administrative users can also request the extension be added to TFS or Azure DevOps Server. 
 
-For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md#install-azure-devops-server-extensions-from-the-local-gallery) 
+For more information, see [Install an extension](../../marketplace/get-tfs-extensions.md) 
 in the Local gallery documentation.
 
 <a name="config-tfs"></a>
@@ -236,7 +236,7 @@ When selecting a JRE during installation, Azure DevOps Server defaults to Azul Z
 
 To change to the Azul Zulu OpenJDK, follow these steps:
 
-![Java Migration flow](_img/administration/java-migration-flow.png)
+![Java Migration flow](media/administration/java-migration-flow.png)
 
 More details are available [here](https://github.com/microsoft/Code-Search/tree/master/Java%20Migration).
 
@@ -256,7 +256,7 @@ Consider the following points when configuring Search:
 
 * If you don't set the checkbox to install the Code Search extension for all your project collections when 
   configuring Search, your project collection administrator can install it from the Local Gallery. Ensure you
-  navigate to the Local Gallery (`http://{Server}:8080/tfs/_gallery`) from your Azure DevOps Server or TFS portal page. 
+  navigate to the Local Gallery (`http://{Server}/_gallery`) from your Azure DevOps Server or TFS portal page. 
 
 * The search index folder should be on a separate fast hard drive, backed by fast storage such
   as a solid-state drive (SSD) or Storage Area Network (SAN) to maximize search performance.
@@ -331,7 +331,7 @@ follow these steps:
 3. Use the **Search service package** link that's provided in the wizard to access a set of Search installer files 
    on the local machine. Then, copy these files to the remote server.
 
-   ![Separate server installation](_img/administration/separate-server.png)
+   ![Separate server installation](media/administration/separate-server.png)
 
 4. Follow the instructions in the **Readme.txt** file that's located in the set of 
    installer files to install or update the Search service on the remote server.
@@ -358,7 +358,7 @@ or on a separate machine. These are new sets of credentials (not related to any 
 and are used to set up and connect to Search service.
 These new sets of credentials enable basic authentication in search service. 
 
-![Search credentials](_img/administration/tfsU3_search_cred1.png)
+![Search credentials](media/administration/tfsU3_search_cred1.png)
 
 For an upgrade from TFS 2018 Update 1.1 to TFS 2018 Update 3, or search reconfiguration, 
 only the user information is autopopulated and administrators must provide password credentials. 
@@ -438,7 +438,7 @@ You can download all of the scripts into a local folder on the server running th
 using the **Download ZIP** option. The PowerShell scripts require the SQL script files, so ensure 
 the **SqlScripts** folder and its contents is present, along with the PowerShell scripts.
 
-![Download script files for administration](_img/administration/script-filesv2.png)
+![Download script files for administration](media/administration/script-filesv2.png)
 
 > [!NOTE]
 > When executing scripts, ensure you run the appropriate script for your Azure DevOps Server or TFS version:
@@ -550,7 +550,7 @@ You're prompted to enter:
 
 ### Resume indexing
 
-If indexing was paused, execute the script **StartSearchIndexing.ps1**
+If indexing was paused, execute the script **ResumeIndexing.ps1**
 with administrative privileges, to start indexing again. 
 You're prompted to enter:
 
@@ -615,13 +615,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range="azure-devops-2019"
 
-   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -665,13 +665,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range=">= azure-devops-2019"
 
-   ![Checking that the extension is installed](_img/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
 
-   ![Checking that the extension is installed](_img/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -705,4 +705,4 @@ Search for Azure DevOps Server and TFS has the following limitation:
 
 <a name="support"></a>
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

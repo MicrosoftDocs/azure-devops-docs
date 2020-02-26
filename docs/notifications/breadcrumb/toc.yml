@@ -1,7 +1,0 @@
-- name: Azure DevOps
-  tocHref: /azure/devops/
-  topicHref: /azure/devops/index
-  items: 
-  - name: Collaborate
-    tocHref: /azure/devops/notifications/
-    topicHref: /azure/devops/organizations/index

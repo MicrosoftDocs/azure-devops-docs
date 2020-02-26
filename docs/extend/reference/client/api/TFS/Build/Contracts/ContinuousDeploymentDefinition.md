@@ -19,7 +19,7 @@ Module path: `TFS/Build/Contracts`
 
 ### Members
 
-* `connectedService`: [TFS_Core_Contracts.WebApiConnectedServiceRef](../../../TFS/Core/Contracts/WebApiConnectedServiceRef.md). The connected service associated with the continuous deployment
+* `connectedService`: [TFS_Core_Contracts.WebApiConnectedServiceRef](../../../tfs/distributedtask/contracts/webapiconnectedserviceref.md). The connected service associated with the continuous deployment
 
 * `definition`: [ShallowReference](./ShallowReference.md). The definition associated with the continuous deployment
 
@@ -27,7 +27,7 @@ Module path: `TFS/Build/Contracts`
 
 * `hostedServiceName`: string. 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `repositoryId`: string. 
 

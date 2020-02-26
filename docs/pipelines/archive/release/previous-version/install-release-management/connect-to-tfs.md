@@ -15,9 +15,9 @@ monikerRange: '>= tfs-2013'
 
 # Connect Release Management to TFS
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
-![Installing Release Management on TFS](_img/connect-tfs-01.png)
+![Installing Release Management on TFS](media/connect-tfs-01.png)
 
 These are the steps for connecting TFS to Release Management and adding an 
 SMTP server. These are optional procedures. See 
@@ -45,7 +45,7 @@ permissions.
    or domain account. It doesn't need any special Windows or Domain permissions.
    We're creating a local Windows account named RMTFS here.
 
-   ![Selecting an intermediary account for TFS](_img/connect-tfs-02.png)
+   ![Selecting an intermediary account for TFS](media/connect-tfs-02.png)
 
     > [!NOTE]
     > _If you're planning to use an account that already exists in 
@@ -58,26 +58,26 @@ permissions.
    though you can ignore the procedures for SharePoint and Reporting Services.
    Release Management doesn't require access to these features.
 
-   ![Adding the account to the Project Collection Administrators group](_img/connect-tfs-03.png)
+   ![Adding the account to the Project Collection Administrators group](media/connect-tfs-03.png)
 
 1. In TFS, select the account and set the **Make requests on behalf of 
    others** permission to **Allow**.
 
-   ![Allowing requests on behalf of others](_img/connect-tfs-04.png)
+   ![Allowing requests on behalf of others](media/connect-tfs-04.png)
 
 1. In Release Management client, choose **Administration**, **Manage TFS**
    and then **New**.
 
-   ![Opening the TFS management page in Release Management client](_img/connect-tfs-05.png)
+   ![Opening the TFS management page in Release Management client](media/connect-tfs-05.png)
 
 1. Add the URL and project collection for TFS.
 
-   ![Setting the TFS configuration values in Release Management client](_img/connect-tfs-06.png)
+   ![Setting the TFS configuration values in Release Management client](media/connect-tfs-06.png)
 
 1. Enter the name and password of the account that you permissioned in step 2
    and then **Verify** the password for the account.
 
-   ![Setting the connection identity in Release Management client](_img/connect-tfs-07.png)
+   ![Setting the connection identity in Release Management client](media/connect-tfs-07.png)
 
 1. After you save these settings, Release Management is connected to this 
    TFS project collection. You're ready to manage releases with TFS and 
@@ -109,6 +109,6 @@ permissions.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
   
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

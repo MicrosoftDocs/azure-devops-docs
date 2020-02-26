@@ -16,7 +16,7 @@ ms.date: 03/20/2018
 
 # Import and export categories
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]  
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]  
 
 You can import and export categories defined for a project by using the following **witadmin** commands:   
 -   **exportcategories**:  Exports the XML definition of categories defined on a server that runs Team Foundation Server.   
@@ -24,9 +24,9 @@ You can import and export categories defined for a project by using the followin
   
 To learn about the default categories and how they are used, see [Use categories to group work item types](../xml/use-categories-to-group-work-item-types.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]    
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
   
 ## Prerequisites   
   

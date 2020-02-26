@@ -14,14 +14,14 @@ monikerRange: 'azure-devops'
 
 # Build and deploy to a PHP web app
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 A web app is a lightweight way to host a web application. In this step-by-step guide you'll learn how to  create a pipeline that continuously builds and deploys your PHP app. Your team can then automatically build each commit in GitHub, and if you want, automatically deploy the change to an Azure App Service. You can use whichever runtime your prefer: PHP|5.6 or PHP|7.0.
 
 ## Prerequisites
 
-[!INCLUDE [include](../_shared/prerequisites.md)]
-[!INCLUDE [include](../_shared/azure-prerequisites.md)]
+[!INCLUDE [include](../includes/prerequisites.md)]
+[!INCLUDE [include](../includes/azure-prerequisites.md)]
 
 ## Get the code
 
@@ -35,7 +35,7 @@ https://github.com/Azure-Samples/php-docs-hello-world
 
 ## Create an Azure App Service
 
-[!INCLUDE [include](_shared/sign-in-azure-cli.md)]
+[!INCLUDE [include](includes/sign-in-azure-cli.md)]
 
 Create an Azure App Service on Linux.
 
@@ -52,15 +52,15 @@ az webapp create -g myapp-rg -p myapp-service-plan -n my-app-name --runtime "PHP
 
 ## Sign in to Azure Pipelines and connect to Azure
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
-[!INCLUDE [include](_shared/create-service-connection.md)]
+[!INCLUDE [include](includes/create-service-connection.md)]
 
 ## Create the pipeline
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 When the **Configure** tab appears, select **PHP**. Your new pipeline appears.
 
@@ -78,7 +78,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 
 ### Set some variables for your deployment
 
-[!INCLUDE [include](_shared/deployment-variables.md)]
+[!INCLUDE [include](includes/deployment-variables.md)]
 
 ### Deploy to your app service
 
@@ -108,11 +108,11 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
 
 ## Run the pipeline and check out your site
 
-[!INCLUDE [include](_shared/run-pipeline.md)]
+[!INCLUDE [include](includes/run-pipeline.md)]
 
 After the pipeline has run, check out your site!
 
 `https://my-app-name.azurewebsites.net/`
 
-[!INCLUDE [include](_shared/clean-up-resources.md)]
+[!INCLUDE [include](includes/clean-up-resources.md)]
 

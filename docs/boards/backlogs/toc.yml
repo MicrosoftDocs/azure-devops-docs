@@ -24,10 +24,6 @@
     href: filter-backlogs.md
   - name: Copy list
     href: copy-list.md 
-- name: Troubleshooting
-  items:
-  - name: Fix "Ordering backlog items is disabled"
-    href: resolve-backlog-reorder-issues.md
 - name: Reference
   items:
   - name: Product backlog controls

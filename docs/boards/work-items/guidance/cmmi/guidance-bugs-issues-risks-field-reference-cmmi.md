@@ -8,14 +8,13 @@ ms.assetid: 66d150ac-736f-4dde-8a2b-382c50d9e4f4
 ms.topic: reference
 ms.author: kaelli
 ms.manager: mijacobs
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Bugs, issues, and risks field reference (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 The following fields track information about bugs, issues, and risks. These work item types are defined within the process template for the [CMMI process](../cmmi-process.md).  
   

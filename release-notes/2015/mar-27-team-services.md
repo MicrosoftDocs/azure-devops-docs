@@ -21,11 +21,11 @@ After you've carefully configured a [Diagnostic Search](https://azure.microsoft.
 Now you can save it as a named favorite and re-open it later. And if you like, you can share it with your team.
 To save the search page you made, click **Favorites** and give it a name:
 
-![Diagnostic search: save page as favorite](_img/3_27_01.png)
+![Diagnostic search: save page as favorite](media/3_27_01.png)
 
 To get back to the same search, click Favorites **in the Application Insights resource blade:**
 
-![In Application Insights overview blade, choose Favorites](_img/3_27_02.png)
+![In Application Insights overview blade, choose Favorites](media/3_27_02.png)
 
 If you saved the search with an absolute time range, you see the same results every time, for as long as the telemetry is stored. If you saved it with a relative time range, you always get results for that range relative to now – for example, for the last 24h.
 
@@ -33,21 +33,21 @@ If you saved the search with an absolute time range, you see the same results ev
 
 You can temporarily disable Continuous Export. While export is disabled, no telemetry is saved to storage.
 
-![Open a Continuous Export and click Disable](_img/3_27_03.png)
+![Open a Continuous Export and click Disable](media/3_27_03.png)
 
 When you enable it again, export starts from the next telemetry that arrives. Telemetry that arrived while it was disabled is not exported.
 
-![Open the Continuous Export and click Enable](_img/3_27_04.png)
+![Open the Continuous Export and click Enable](media/3_27_04.png)
 
 ## Continuous Export: email notification when export fails
 
 If [Continuous Export](https://azure.microsoft.com/documentation/articles/app-insights-export-telemetry/) can’t send events to the chosen destination, Application Insights sends email notification to Subscription admins, with suggestions for fixing the problem.
 
-![Sample alert email](_img/3_27_05.png)
+![Sample alert email](media/3_27_05.png)
 
 ## Feedback please!
 
-That’s a wrap for Sprint 80. Next update in three weeks. If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://stackoverflow.com/questions/tagged/ms-application-insights), bugs to [Connect](https://connect.microsoft.com/VisualStudio/Feedback/LoadSubmitFeedbackForm?FormID=6076) (select Application Insights), and suggestions to [User Voice](https://visualstudio.uservoice.com/forums/121579-visual-studio/category/77108-application-insights).
+That’s a wrap for Sprint 80. Next update in three weeks. If you want to let us know how we are doing, please submit bugs questions and issues to [Forums](https://stackoverflow.com/questions/tagged/ms-application-insights), bugs to [Connect](https://connect.microsoft.com/VisualStudio/Feedback/LoadSubmitFeedbackForm?FormID=6076) (select Application Insights), and suggestions to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 Thanks,
 

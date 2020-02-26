@@ -15,7 +15,7 @@ ms.date: 10/14/2019
 
 # Manage issues or impediments 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a name="manage-impediments"></a>
 
@@ -26,7 +26,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="> tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
 > 
 > If your project was created using the [Basic](../get-started/plan-track-work.md) process, which tracks work using Epics, Issues, and Tasks, then you track Issues using the product backlog. To learn more, see [Track issues and tasks](../get-started/plan-track-work.md).
 
@@ -36,7 +36,7 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 ::: moniker range="<= tfs-2018"
 
 > [!IMPORTANT]  
-> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process.md), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process.md) process. By default, these work item types don't appear on the product backlog or taskboard. 
+> Issues and Impediments discussed in this article are defined for projects created with the [Agile](../work-items/guidance/agile-process.md), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), or [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) process. By default, these work item types don't appear on the product backlog or taskboard. 
 
 ::: moniker-end
 
@@ -46,9 +46,9 @@ In this article you'll learn:
 > * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
 
 ## When to use issues versus tasks
 
@@ -74,20 +74,20 @@ If you want to add these work item types to a backlog, see [Customize your backl
 
 ::: moniker range=">= azure-devops-2019"  
 
-Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
+Open **Boards>Work Items**, and choose the ![ ](../../media/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add issue, new nav](_img/manage-issues/add-issue-vert.png)   
+> ![Add issue, new nav](media/manage-issues/add-issue-vert.png)   
 
-Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
+Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   
 ::: moniker-end
 
@@ -95,7 +95,7 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
-<img src="_img/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ## Customize issues tracking
 
-[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ::: moniker range="azure-devops"

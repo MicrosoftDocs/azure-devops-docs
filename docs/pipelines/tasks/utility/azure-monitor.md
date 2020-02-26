@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Query Azure Monitor Alerts task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
 
@@ -23,7 +23,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -35,7 +35,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureMonitorV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureMonitorV1.md)]
 
 ::: moniker-end
 

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 02/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Billing FAQs
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 In this article, find answers to frequently asked questions about billing for your organization.
 
-For detailed pricing estimates, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) and the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=azure-devops).
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## User assignment-based billing
 
@@ -28,13 +28,13 @@ For more information about user assignment-based billing, see our [blog post](ht
 
 ### Q: What is user assignment-based billing?
 
-![Assignment-based billing is enabled](_img/_shared/assignment-based-billing-enabled.png)
+![Assignment-based billing is enabled](media/shared/assignment-based-billing-enabled.png)
 
 A: With user assignment-based billing, you only pay for the users you assign an access level. When you remove the users, charges stop. There's no longer an extra step of increase/decreasing the paid count.
 
 In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. So, we don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
 
-[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you’ll find that [assignment errors](../accounts/assign-access-levels-and-extensions-by-group-membership.md#resolve-assignment-errors) are no longer common.
+[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you’ll find that assignment errors are no longer common.
 
 ### Q: How can new users get Basic instead of Stakeholder when added to a Project?
 
@@ -42,19 +42,19 @@ A: When a user is new to the organization and is added to a project, previously 
 
 If you want all new users added to a project to get Basic, change the default access level (**Organization Settings** > **Billing**) to Basic.
 
-![Default access](_img/_shared/default-access-level-basic.png)
+![Default access](media/shared/default-access-level-basic.png)
 
-For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/remove-direct-assignments.md).
+For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-and-extensions-by-group-membership.md#remove-direct-assignments).
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. If you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to potential new users, that you haven’t added manually, you don’t start paying until they sign in and receive an access level.
+A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to potential new users, that you haven’t added manually, you don’t start paying until they sign in and receive an access level.
 
 ### Q: How can I stop paying for users who aren't actively using Azure DevOps?
 
-A: If you have inactive users, stop paying for them by removing them or assigning them a free Stakeholder access level. Sort by **Last Access** to find users who haven’t accessed the organization recently. For users who have never signed in, find out how recently they've been added by exporting the list of users and checking the **Date Created** column.
+A: If you have inactive users, stop paying for them by removing them or assigning them a free Stakeholder access level. Sort by **Last Access** to find users who haven’t accessed the organization recently. For users who have never signed in, find out how recently they were added by exporting the list of users and checking the **Date Created** column.
 
-![Last access](_img/_shared/last-access.png)
+![Last access](media/shared/last-access.png)
 
 ### Q: How can I pay only once per user across multiple organizations?
 
@@ -62,7 +62,7 @@ A: Multi-org billing/licensing is available. For more information, see [multi-or
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
-A: As part of the change to user assignment-based billing, we have also switched from monthly to daily billing. If you give a user paid access for a few weeks, or even a few days, you pay only for the time they're assigned the paid access, rather than a full month. As we switch your organization from monthly to daily billing, your next Azure bill will likely be lower than it has been previously. The next month will be back to normal, once a full month of daily charges has accumulated.
+A: As part of the change to user assignment-based billing, we've also switched from monthly to daily billing. When you give a user paid access for a few weeks, or even a few days, you pay only for the time they're assigned the paid access, rather than a full month. As we switch your organization from monthly to daily billing, your next Azure bill will likely be lower than it has been previously. The next month will be back to normal, once a full month of daily charges has accumulated.
 
 ### Q: How did paid extensions change in the Azure DevOps Marketplace in July 2019?
 
@@ -78,7 +78,7 @@ Multi-org billing allows you to pay once per user, for organizations under the s
 
 ### Q: Does multi-org billing make sense for all customers?
 
-A: No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users is most cost effective. If many users access multiple organizations, then multi-org billing is likely the best option. 
+A: No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-org billing is likely the best option. 
  
 ### Q: How can I turn on multi-org billing?
 
@@ -90,7 +90,7 @@ A: No. Multi-org billing groups the per user charges at an Azure subscription le
  
 ### Q: Can I still see multiple line items for each of my organizations on my detailed Azure bill?
 
-A: Yes. First, all organizations under the same billing Azure subscription are ordered. The ordering is consistent month to month, but it isn't configurable. Second, the five free Basic users are applied to the first organization in the list, and any remaining value is carried over to subsequent organizations. Third, users are billed in the first organization they can access and not again in any subsequent organizations. Finally, based on these rules, if there are any charges for an organization, then there will be a separate line item for that organization on the detailed Azure bill. 
+A: Yes. First, all organizations under the same billing Azure subscription are ordered. The ordering is consistent month to month, but it isn't configurable. Second, the five free Basic users apply to the first organization in the list, and any remaining value is carried over to subsequent organizations. Third, users are billed in the first organization they can access and not again in any subsequent organizations. Finally, based on these rules, if there are any charges for an organization, then there will be a separate line item for that organization on the detailed Azure bill. 
  
 ### Q: Can I tell what access level a user has assigned in a different organization?
 
@@ -103,8 +103,30 @@ A: They're billed for both Basic and Basic + Test Plans, which is a current limi
 ### Q: How can I get a list of all the users I’m paying for under multi-org billing?
 
 A: Export a list of users from **Organization settings > Users**. Then, remove duplicates based on email address. When multi-org billing goes into GA (general availability), we'll have a way to export the list of all users under an Azure subscription. 
- 
+
+### Q: Why are additional free user grants removed when multi-organization billing is enabled?
+
+A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't yet support multi-org billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that was applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), [contact us](mailto:azdevgrant@microsoft.com?subject=Multi-org%20billing%20-%20free%20user%20grant%20request) to request the grant be applied to your Azure subscription instead. 
+
 ## General billing
+
+### Q: How do I pay for Azure DevOps support?
+ 
+Keep in mind that if you’re already using Azure, chances are you already have an [Azure support plan](https://azure.microsoft.com/support/plans/), so you can [create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). Also, you don’t need to pay for [billing support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). You can report a service outage from our [service status page](https://status.dev.azure.com/). 
+ 
+A: If you need technical support with Azure DevOps and don’t have an [Azure support plan](https://azure.microsoft.com/support/plans/) already, complete the following steps:
+ 
+1. Create an Azure subscription.
+  - Consider your [purchase options](https://azure.microsoft.com/pricing/purchase-options/) and decide whether you’ll set up payment direct with Azure, through a partner, or through a Microsoft representative.
+  - The simplest option is to [pay for Azure directly](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/). It's free to create an Azure subscription, you’ll only pay for what you use.
+ 
+2. Pick a support plan.
+  - As part of signing up for an Azure subscription, you can pick a [support plan](https://azure.microsoft.com/support/plans/).
+  - All support plans let you create unlimited support requests for a fixed monthly price.
+  - All paid plans, including the Developer plan, offer technical support for Azure DevOps.
+3. Submit a support ticket.
+  - Now you can [open a request via the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) or [learn how to create a support request](https://docs.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request). 
+
 
 ### Q: Can I buy Azure DevOps by using a purchase order?
 
@@ -114,7 +136,7 @@ A: No. Azure DevOps must be purchased through an Azure subscription. (Think of i
 
 A: Yes. You can use Azure DevOps up to the free tier limits for your organization, listed as follows:
 
-[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+[!INCLUDE [free-tier](../../includes/free-tier.md)]
 
 ### Q: What types of Azure subscriptions can be used to buy Azure DevOps?
 
@@ -129,7 +151,7 @@ The only notable exclusion is that you can't use the [Azure free trial](https://
 A: No, you can't use the monthly Azure credits from [Visual Studio subscriptions](https://visualstudio.microsoft.com/products/subscriber-benefits-vs)
 to pay for Azure DevOps. Before you make purchases by using this type of Azure subscription, you must [remove your spending limit](https://azure.microsoft.com/pricing/spending-limits/).
 
-<img alt="Spending limit" src="_shared/_img/spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Spending limit" src="media/spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 <a name="spending-limit"></a>
 
@@ -137,7 +159,7 @@ to pay for Azure DevOps. Before you make purchases by using this type of Azure s
 > Remove your spending limit indefinitely. This prevents disabling your Azure subscription when your recurring monthly charges are billed the next month.
 > Otherwise, all resources billed to this subscription are suspended, including virtual machines and all other workloads.
 
-<img alt="Remove spending limit indefinitely" src="_shared/_img/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
+<img alt="Remove spending limit indefinitely" src="media/remove-spending-limit.png" style="border: 1px solid #CCCCCC" />
 
 
 ### Q: Am I required to buy other Azure services?
@@ -182,7 +204,7 @@ A: Reductions and cancellations are effective immediately.
 
 ### Q: What happens if I cancel my Azure subscription or my credit card expires?
 
-A: When the Azure subscription used for billing on your organization is not in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service.
+A: When the Azure subscription used for billing on your organization isn't in active status - for example, because you cancel it or the credit card used for billing expires - your organization reverts to the free tier of service.
 
 >[!NOTE]
 >You must keep your Azure subscription in good standing to avoid interruptions in paid services.

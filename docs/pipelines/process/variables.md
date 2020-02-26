@@ -1,5 +1,5 @@
 ---
-title: Variables
+title: Define variables
 ms.custom: seodec18
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: reference
@@ -9,40 +9,40 @@ ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
-ms.date: 10/18/2019
+ms.date: 1/03/2020
 
 monikerRange: '>= tfs-2015'
 ---
 
-# Variables
+# Define variables
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
-As the name suggests, the value of a variable may change from run to run or job to job of your pipeline.
+As the name suggests, the value of a variable might change from run to run or job to job of your pipeline.
 Almost any place where a pipeline requires a text string or a number, you can use a variable instead of hard-coding a value.
-The system will replace the variable with its current value during the pipeline's execution.
+The system replaces the variable with its current value when you run the pipeline.
 
-Some variables are automatically set by the system.
-As a pipeline author or end user, you cannot change the value of such variables.
-* If you use classic build pipelines or use YAML to author your pipeline, then see [build variables](../build/variables.md) for a comprehensive list of system variables.
-* If you use classic release pipelines, then see [release variables](../release/variables.md).
+The system sets some variables automatically.
+As a pipeline author or end user, you can't change the value of such variables.
+If you use classic build pipelines or use YAML to author your pipeline, see [build variables](../build/variables.md) for a comprehensive list of system variables.
+If you use classic release pipelines, see [release variables](../release/variables.md).
 
-In this topic, we discuss user-defined variables. Names of these variables consist of letters, numbers, `.`, and `_` characters.
+This article covers user-defined variables. The names of these variables consist of letters, numbers, `.`, and `_` characters.
 
-A few variable prefixes are reserved by the system and should not be used.
+Don't use variable prefixes that are reserved by the system.
 These are: `endpoint`, `input`, `secret`, and `securefile`.
-Any variable that begins with one of these strings (regardless of capitalization) may not be available to your tasks and scripts.
+Any variable that begins with one of these strings (regardless of capitalization) isn't available to your tasks and scripts.
 
 ## Understand variable syntax
 
-Azure Pipelines supports three different variable syntaxes: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
+Azure Pipelines supports three different ways to dereference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. When the system encounters a macro expression, it will replace the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` cannot be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $(value)`, but `$(key): value` is not.
+Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
 
-Template expression syntax can be used to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time and will be replaced before runtime. Template variables will silently coalesce to empty strings when a replacement value is not found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). This is valid, `${{ variables.key }} : ${{ variables.value }}`.
+You can use template expression syntax to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
 
-Runtime expression syntax can be used for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables will silently coalesce to empty strings when a replacement value is not found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. This is valid, `key: $[variables.value]`, but `$[variables.key]: value` is not.
+You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
@@ -50,14 +50,14 @@ Runtime expression syntax can be used for variables that are expanded at runtime
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
 |runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
-When pipeline variables are turned into environment variables, variable names become uppercase and periods turn into underscores. The variables `$(foo.bar)`, `${{ foo.bar }}`, and `$[foo.bar]` become `$(FOO_BAR)`, `${{ FOO_BAR }}`, and `$[FOO_BAR]`.
+Variables are also injected into the environment. This includes both variables defined at the step level, and variables defined at the job or stage level, with the most locally scoped variable winning. When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable `any.variable` becomes `$ANY_VARIABLE`.
 
 ## Set variables in pipeline
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here is an example that shows how to set two variables - `configuration` and `platform` - and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`.
+In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here's an example that shows how to set two variables, `configuration` and `platform`, and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables can't be used to define a `repository` in a YAML statement. 
 
 ```yaml
 # Set variables once
@@ -82,11 +82,13 @@ steps:
     platform: $(platform)
 ```
 
+### Variable scopes
+
 In the YAML file, you can set a variable at various scopes:
 
-- At the root level, to make it available to all jobs in the pipeline
-- At the stage level, to make it available only to a specific stage
-- At the job level, to make it available only to a specific job
+- At the root level, to make it available to all jobs in the pipeline.
+- At the stage level, to make it available only to a specific stage.
+- At the job level, to make it available only to a specific job.
 
 Variables at the job level override variables at the root and stage level. Variables at the stage level override variables at the root level. 
 
@@ -116,7 +118,29 @@ jobs:
   - bash: echo $GLOBAL_VARIABLE
 ```
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+### Specify variables
+
+In the preceding examples, the `variables` keyword is followed by a list of key-value pairs.
+The keys are the variable names and the values are the variable values.
+There is another syntax, useful when you want to use [variable templates](templates.md) or [variable groups](../library/variable-groups.md).
+In this alternate syntax, the `variables` keyword takes a list of variable specifiers.
+The variable specifiers are `name` for a regular variable, `group` for a variable group, and `template` to include a variable template.
+The following example demonstrates all three.
+
+```yaml
+variables:
+# a regular variable
+- name: myvariable
+  value: myvalue
+# a variable group
+- group: myvariablegroup
+# a reference to a variable template
+- template: myvariabletemplate.yml
+```
+
+### Access variables through the environment
+
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -126,29 +150,164 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 You can set a variable for a build pipeline by following these steps:
 
-- Navigate to **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
-- Locate the **Variables** for this pipeline.
-- Add or update the variable.
-- To mark the variable as secret, select **Keep this value secret**.
-- Save the pipeline.
+1. Go to the **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
+1. Locate the **Variables** for this pipeline.
+1. Add or update the variable.
+1. To mark the variable as secret, select **Keep this value secret**.
+1. Save the pipeline.
 
-Once it is set, you can use the variable as an input to a task or within the scripts in your pipeline.
+After the variable is set, you can use it as an input to a task or within the scripts in your pipeline.
 To use a variable as an input to a task, wrap it in `$()`.
 
-[!INCLUDE [temp](_shared/access-variables-through-env.md)]
+[!INCLUDE [temp](includes/access-variables-through-env.md)]
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range="azure-devops"  
+
+Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
+
+[Create a variable](#create-variable) | [Update a variable](#update-variable) | [Delete a variable](#delete-variable) 
+
+### Prerequisites
+
+- You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](/azure/devops/cli/index).
+- Sign into Azure DevOps using `az login`.
+- For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.
+
+<a id="create-variable" />
+
+### Create a variable
+
+You can create variables in your pipeline with the [az pipelines variable create](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable create --name
+                             [--allow-override {false, true}]
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--secret {false, true}]
+                             [--value]
+``` 
+
+#### Parameters
+
+- **name**: Required. Name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are *false* and *true*.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **secret**: Optional. Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
+- **value**: Required for non secret variable. Value of the variable. For secret variables, if **value** parameter is not provided, it is picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_` or user is prompted to enter it via standard input. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+
+#### Example
+
+The following command creates a variable in **MyFirstProject** named **Configuration** with the value **platform** in the pipeline with ID **12**. It shows the result in table format.
+
+```azurecli
+az pipelines variable create --name Configuration --pipeline-id 12 --value platform --project MyFirstProject --output table
+
+Name        Allow Override    Is Secret    Value
+----------  ----------------  -----------  --------
+Configuration  False             False        platform
+```
+
+<a id="update-variable" />
+
+### Update a variable
+
+You can update variables in your pipeline with the [az pipelines variable update](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-update) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable update --name
+                             [--allow-override {false, true}]
+                             [--new-name]
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--prompt-value {false, true}]
+                             [--secret {false, true}]
+                             [--value]
+``` 
+
+#### Parameters 
+
+- **name**: Required. Original name of the variable.
+- **allow-override**: Optional. Indicates whether the value can be set at queue time. Accepted values are *false* and *true*.
+- **new-name**: Optional. Specify to change the name of the variable.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **prompt-value**: Set to **true** to update the value of a secret variable using environment variable or prompt via standard input. Accepted values are *false* and *true*.
+- **secret**: Indicates whether the variable's value is a secret. Accepted values are *false* and *true*.
+- **value**: Updates the value of the variable. For secret variables, use the **prompt-value** parameter to be prompted to enter it via standard input. For non-interactive consoles, it can be picked from environment variable prefixed with `AZURE_DEVOPS_EXT_PIPELINE_VAR_`. For example, a variable named **MySecret** can be input using the environment variable `AZURE_DEVOPS_EXT_PIPELINE_VAR_MySecret`.
+
+#### Example
+
+The following command updates the **Configuration** variable with the new value **config.debug** in the pipeline with ID **12**. It specifies that the variable is not a **secret** and shows the result in table format.
+
+```azurecli
+az pipelines variable update --name Configuration --pipeline-id 12 --secret false --value config.debug --output table
+
+Name           Allow Override    Is Secret    Value
+-------------  ----------------  -----------  ------------
+Configuration  False             False        config.debug
+```
+
+<a id="delete-variable" />
+
+### Delete a variable
+
+You can delete variables in your pipeline with the [az pipelines variable delete](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable delete --name
+                             [--org]
+                             [--pipeline-id]
+                             [--pipeline-name]
+                             [--project]
+                             [--yes]
+``` 
+
+#### Parameters 
+
+- **name**: Required. Name of the variable you want to delete.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **yes**: Optional. Does not prompt for confirmation.
+
+#### Example
+
+The following command deletes the **Configuration** variable from the pipeline with ID **12** and does not prompt for confirmation.
+
+```azurecli
+az pipelines variable delete --name Configuration --pipeline-id 12 --yes
+
+Deleted variable 'Configuration' successfully.
+```
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-<h2 id="secret-variables">Secrets</h2>
+<h2 id="secret-variables">Set secret variables</h2>
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You should not set secret variables in your YAML file. Instead, you should set them in the pipeline editor using the web interface. These variables are scoped to the pipeline in which you set them.
+Don't set secret variables in your YAML file. Instead, you should set them in the pipeline editor, by using the web interface. These variables are scoped to the pipeline in which you set them.
 
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
 The following example shows how to use a secret variable called `mySecret` from a script.
-Note that unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
+Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
 steps:
@@ -166,7 +325,7 @@ steps:
     MY_MAPPED_ENV_VAR: $(mySecret)
 ```
 
-The output from the above script would look like this:
+The output from the preceding script would look like this:
 
 ```text
 This works: ***
@@ -174,9 +333,47 @@ This does not work:
 This works: ***
 ```
 
-It is recommended that you use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you would not want the log to include a secret that you passed in as an input.
+Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
 
-**Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+### Reference secret variables in variable groups
+
+This example shows how to reference a variable group in your YAML file, and also add variables within the YAML. There are two variables used from the variable group: `user` and `token`. The `token` variable is secret, and is mapped to the environment variable `$env:MY_MAPPED_TOKEN` so that it can be referenced in the YAML. 
+
+This YAML makes a REST call to retrieve a list of releases, and outputs the result. 
+
+```yaml
+variables: 
+- group: 'my-var-group' # variable group
+- name: 'devopsAccount' # new variable defined in YAML
+  value: 'contoso'
+- name: 'projectName' # new variable defined in YAML
+  value: 'contosoads'
+
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+        # Encode the Personal Access Token (PAT)
+        # $env:USER is a normal variable in the variable group
+        # $env:MY_MAPPED_TOKEN is a mapped secret variable
+        $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $env:USER,$env:MY_MAPPED_TOKEN)))
+        
+        # Get a list of releases
+        $uri = "https://vsrm.dev.azure.com/$(devopsAccount)/$(projectName)/_apis/release/releases?api-version=5.1"
+
+        # Invoke the REST call
+        $result = Invoke-RestMethod -Uri $uri -Method Get -ContentType "application/json" -Headers @{Authorization=("Basic {0}" -f $base64AuthInfo)}
+        
+        # Output releases in JSON
+        Write-Host $result.value
+  env:
+    MY_MAPPED_TOKEN: $(token) # Maps the secret variable $(token) from my-var-group
+
+```
+
+> [!IMPORTANT]
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -184,28 +381,34 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-[!INCLUDE [temp](_shared/set-secrets.md)]
+[!INCLUDE [temp](includes/set-secrets.md)]
 
-Imagine you want to use a secret variable called `mySecret` from a script.
-Unlike a normal pipeline variable, there's no environent variable called `MYSECRET`.
-To pass a secret to a script, use the **Environment** section of the scripting task's input variables.
-In the left column, give the variable a name to be used in the environment.
-In the right column, dereference the secret variable like this: `$(mySecret)`.
+Each task that needs to use the secret as an environment variable does remapping. If you want to use a secret variable called `mySecret` from a script, use the `Environment` section of the scripting task's input variables. Set the environment variable name to `MYSECRET`, and set the value to `$(mySecret)`.
 
-**Important:** By default with GitHub repositories, secret variables associated with your pipeline are not made available to pull request builds of forks. See [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+
+> [!IMPORTANT]
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"  
+To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Share variables across pipelines
 
-To share variables across multiple pipelines in your project, you should set them using [variable groups](../library/variable-groups.md) under **Library** using the web interface. For more information, see [variable groups](../library/variable-groups.md).
+To share variables across multiple pipelines in your project, use the web interface. Under **Library**, use [variable groups](../library/variable-groups.md).
 
 ## Use output variables from tasks
 
-Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage.
+Some tasks define output variables, which you can consume in downstream steps and jobs within the same stage. You can access variables across jobs by using [dependencies](expressions.md#dependencies). 
 
 #### [YAML](#tab/yaml/)
 
-For these examples, assume we have a task called `MyTask` which sets an output variable called `MyVar`.
+For these examples, assume we have a task called `MyTask`, which sets an output variable called `MyVar`.
 
 ### Use outputs in the same job
 
@@ -238,17 +441,61 @@ jobs:
 ### Use outputs in the same job
 
 In the **Output variables** section, give the producing task a reference name.
-Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableName>)` to refer to output variables.
+Then, in a downstream step, you can use the form `$(<ReferenceName>.<VariableName>)` to refer to output variables. 
 
 ### Use outputs in a different job
 
 You must use YAML to consume output variables in a different job.
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"  
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
+
 * * *
 
-<h2 id="set-in-script">Set variables in scripts</h2>
+::: moniker range="azure-devops"  
 
-A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. To set a variable from a script, you use a command syntax and print to stdout.
+## List variables
+
+You can list all of the variables in your pipeline with the [az pipelines variable list](/cli/azure/ext/azure-devops/pipelines/variable#ext-azure-devops-az-pipelines-variable-list) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```azurecli 
+az pipelines variable list [--org]
+                           [--pipeline-id]
+                           [--pipeline-name]
+                           [--project]
+``` 
+
+#### Parameters 
+
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **pipeline-id**: Required if **pipeline-name** is not supplied. ID of the pipeline.
+- **pipeline-name**: Required if **pipeline-id** is not supplied, but ignored if **pipeline-id** is supplied. Name of the pipeline.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up by using `git config`.
+
+#### Example
+
+The following command lists all of the variables in the pipeline with ID **12** and shows the result in table format.
+
+```azurecli
+az pipelines variable list --pipeline-id 12 --output table
+
+Name           Allow Override    Is Secret    Value
+-------------  ----------------  -----------  ------------
+MyVariable     False             False        platform
+NextVariable   False             True         platform
+Configuration  False             False        config.debug
+```
+
+::: moniker-end
+
+## Set variables in scripts
+
+A script in your pipeline can define a variable so that it can be consumed by one of the subsequent steps in the pipeline. All variables set by this method are treated as strings. To set a variable from a script, you use a command syntax and print to stdout.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -256,7 +503,7 @@ A script in your pipeline can define a variable so that it can be consumed by on
 ### Set a job-scoped variable from a script
 
 To set a variable from a script, you use the `task.setvariable` logging command.
-This does not update the environment variables, but it does make the new
+This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
 ```yaml
@@ -279,7 +526,7 @@ Subsequent steps will also have the pipeline variable added to their environment
 steps:
 
 # Create a variable
-# Note that this does _not_ update the environment of the current script.
+# Note that this does not update the environment of the current script.
 - bash: |
     echo "##vso[task.setvariable variable=sauce]crushed tomatoes"
 
@@ -293,8 +540,8 @@ steps:
 ### Set a multi-job output variable
 
 If you want to make a variable available to future jobs, you must mark it as
-an output variable using `isOutput=true`. Then you can map it into future
-jobs using `$[]` syntax and including the step name which set the variable.
+an output variable by using `isOutput=true`. Then you can map it into future jobs by using the `$[]` syntax and including the step name which set the variable. Multi-job output variables only work for jobs in the same stage. 
+When you create a multi-job output variable, you should assign the expression to a variable. In this YAML, `$[ dependencies.A.outputs['setvarStep.myOutputVar'] ]` is assigned to the variable `$(myVarFromJobA)`. 
 
 ```yaml
 jobs:
@@ -323,9 +570,11 @@ jobs:
 ```
 
 If you're setting a variable from a [matrix](phases.md?tab=yaml#parallelexec)
-or [slice](phases.md?tab=yaml#slicing), then to reference the variable,
-you have to include the name
-of the job as well as the step when you access it from a downstream job.
+or [slice](phases.md?tab=yaml#slicing), then, to reference the variable when you access it from a downstream job,
+you must include:
+
+- The name of the job.
+- The step.
 
 ```yaml
 jobs:
@@ -387,7 +636,7 @@ jobs:
     name: echovar
 ```
 
-The output variables of a [deployment](deployment-jobs.md) job also need to be prefixed with the job name (in this case, `A`):
+Be sure to prefix the job name to the output variables of a [deployment](deployment-jobs.md) job. In this case, the job name is `A`:
 
 ```yaml
 jobs:
@@ -426,17 +675,17 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 ### Set a job-scoped variable from a script
 
-To set a variable from a script, you use the `task.setvariable` logging command.
-This does not update the environment variables, but it does make the new
+To set a variable from a script, use the `task.setvariable` logging command.
+This doesn't update the environment variables, but it does make the new
 variable available to downstream steps within the same job.
 
-[!INCLUDE [include](_shared/set-variables-in-scripts.md)]
+[!INCLUDE [include](includes/set-variables-in-scripts.md)]
 
-### Using variables as task inputs
+### Use variables as task inputs
 
-In order to use a variable as a task input, the variable must be an output variable and you must give the producing task a reference name.
+In order to use a variable as a task input, you must make the variable an output variable, and you must give the producing task a reference name.
 You can set a task's reference name on the **Output Variables** section of the task editor.
-For instance, a script task whose output variable reference name is `producer` could have the following contents:
+For instance, a script task whose output variable reference name is `producer` might have the following contents:
 
 ```cmd
 mkdir myDir
@@ -447,15 +696,23 @@ The output variable `newworkdir` can be referenced in the input of a downstream 
 
 ### Set a multi-job output variable
 
-You cannot pass a variable from one job to another job of a build pipeline unless you use YAML.
+You can't pass a variable from one job to another job of a build pipeline, unless you use YAML.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"  
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
-## Set variables using expressions
+## Set variables by using expressions
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can set a variable using an expression. We already encountered one case of this to set a variable to the output of another from a previous job.
+You can set a variable by using an expression. We already encountered one case of this to set a variable to the output of another from a previous job.
 
 ```yaml
 - job: B
@@ -464,7 +721,7 @@ You can set a variable using an expression. We already encountered one case of t
     myVarFromJobsA1: $[ dependencies.A.outputs['job1.setvarStep.myOutputVar'] ] # remember to use single quotes
 ```
 
-You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 ```yaml
 jobs:
@@ -475,7 +732,7 @@ jobs:
     - bash: echo $(a)
 ```
 
-For more information about counters and other expressions, see [expressions](expressions.md).
+For more information about counters, dependencies, and other expressions, see [expressions](expressions.md).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -483,11 +740,19 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can use any of the supported expressions for setting a variable. Here is an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+You can use any of the supported expressions for setting a variable. Here's an example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
 - In the variables of a build pipeline, set a variable `a` to this value: `$[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]`
 
 For more information about counters and other expressions, see [expressions](expressions.md).
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"  
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Allow at queue time
@@ -495,8 +760,8 @@ For more information about counters and other expressions, see [expressions](exp
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
-If a variable appears in the `variables` block of a YAML file, it is fixed and cannot be overridden at queue time.
+You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
+If a variable appears in the `variables` block of a YAML file, it's fixed and can't be overridden at queue time.
 To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job.
 You can set a default value in the editor, and that value can be overridden by the person queuing the pipeline.
 
@@ -506,8 +771,16 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-You can choose which variables are allowed to be set at queue time and which are fixed by the pipeline author.
+You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
 To do this, select the variable in the **Variables** tab of the build pipeline, and mark it as **Settable at queue time**.
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="azure-devops"  
+To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 ## Expansion of variables
@@ -515,7 +788,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
+When you set a variable with the same name in multiple scopes, the following precedence applies (highest precedence first).
 
 1. Job level variable set in the YAML file
 1. Stage level variable set in the YAML file
@@ -523,7 +796,7 @@ When you set a variable with the same name in multiple scopes, the following pre
 1. Variable set at queue time
 1. Pipeline variable set in Pipeline settings UI
 
-In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It is also set in a variable group `G` and as a variable in the Pipeline settings UI.
+In the following example, the same variable `a` is set at the pipeline level and job level in YAML file. It's also set in a variable group `G`, and as a variable in the Pipeline settings UI.
 
 ```yaml
 variables:
@@ -546,15 +819,15 @@ stages:
 ```
 
 > [!NOTE]
-> When you set a variable in the YAML file, do not define it in the web editor as 'settable at queue time'. You cannot currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, then do not set it in the YAML file.
+> When you set a variable in the YAML file, don't define it in the web editor as settable at queue time. You can't currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, don't set it in the YAML file.
 
-Variables are expanded once when the run is started, and again, at the beginning of each step. Here is an example to demonstrate this:
+Variables are expanded once when the run is started, and again at the beginning of each step. For example:
 
 ```yaml
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   steps:
     - bash: |
         echo $(a)            # This will be 10
@@ -563,15 +836,15 @@ jobs:
     - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
-There are two steps in the above example, and the expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.
+There are two steps in the preceding example. The expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.
 
-Since variables are expanded at the beginning of a job, you cannot use them in a strategy. In the following example, you cannot use the variable `a` to expand the job matrix since the variable is only available at the beginning of each expanded job.
+Because variables are expanded at the beginning of a job, you can't use them in a strategy. In the following example, you can't use the variable `a` to expand the job matrix, because the variable is only available at the beginning of each expanded job.
 
 ```yaml
 jobs:
 - job: A
   variables:
-  - a: 10
+    a: 10
   strategy:
     matrix:
       x:
@@ -595,8 +868,8 @@ If the variable `a` is an output variable from a previous job, then you can use 
 
 ### Recursive expansion
 
-On the agent, variables referenced using `$( )` syntax will be recursively expanded.
-However, for service-side operations such as setting display names, variables are not expanded recursively.
+On the agent, variables referenced using `$( )` syntax are recursively expanded.
+However, for service-side operations such as setting display names, variables aren't expanded recursively.
 For example:
 
 ```yaml
@@ -615,16 +888,16 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you set a variable with the same name in multiple scopes, the following precedence is used (highest precedence first).
+When you set a variable with the same name in multiple scopes, the following precedence applies (highest precedence first).
 
 1. Variable set at queue time
 1. Variable set in the pipeline
 1. Variable set in the variable group
 
-Variables are expanded once when the run is started, and again, at the beginning of each step. Here is an example to demonstrate this:
+Variables are expanded once when the run is started, and again at the beginning of each step. Here's an example to demonstrate this:
 
 - You set a variable called `a` to 10 in a pipeline.
-- In one of the steps (a bash script step), you run the following script:
+- In one of the steps (a bash script step), run the following script:
 
    ```bash
    echo $(a)            # This will be 10
@@ -632,10 +905,16 @@ Variables are expanded once when the run is started, and again, at the beginning
    echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
    ```
 
-- In the next step (another bash script step), you run the following script:
+- In the next step (another bash script step), run the following script:
 
    ```bash
    echo $(a)            # This will be 20, since the variables are expanded just before the step
    ```
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
+::: moniker range="azure-devops"  
+There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
