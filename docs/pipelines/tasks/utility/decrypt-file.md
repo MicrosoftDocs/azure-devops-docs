@@ -2,7 +2,6 @@
 title: Decrypt File (OpenSSL) task
 description: A thin utility task for file decryption using OpenSSL
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 7C6A6b71-4355-4AFC-A274-480EAB5678E9
 ms.custom: seodec18
 ms.author: vijayma

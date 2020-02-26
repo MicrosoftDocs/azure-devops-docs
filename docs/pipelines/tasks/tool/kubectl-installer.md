@@ -3,7 +3,6 @@ title: Kubectl installer task
 titleSuffix: Azure Pipelines & TFS
 description: Install kubectl on an agent machine
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 2773400c-3701-48b7-b56a-a5b612719687
 ms.author: atulmal
 author: azooinmyluggage

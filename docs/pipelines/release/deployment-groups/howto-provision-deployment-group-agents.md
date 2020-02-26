@@ -3,7 +3,6 @@ title: Provision agents for deployment groups
 ms.custom: seodec18
 description: How to provision agents for deployment groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: DF79C2A3-DE70-4184-B7A3-F01A8E86C87C
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair

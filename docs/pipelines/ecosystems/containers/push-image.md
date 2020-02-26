@@ -1,7 +1,6 @@
 ---
 title: Push an image
 description: Push container images
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 3ce59600-a7f8-4a5a-854c-0ced7fdaaa82
 ms.author: atulmal

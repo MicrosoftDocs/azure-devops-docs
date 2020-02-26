@@ -2,7 +2,6 @@
 title: Azure Function App for Container task
 description: Deploy Azure Functions on Linux using custom images
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: F1EB01AB-EB5F-4D70-8023-87197D65B338
 ms.custom: seodec18
 ms.author: atulmal

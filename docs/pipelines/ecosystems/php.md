@@ -1,7 +1,6 @@
 ---
 title: Build and test PHP apps
 description: Build and test PHP apps with Azure Pipelines, Azure DevOps
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
 ms.author: vijayma

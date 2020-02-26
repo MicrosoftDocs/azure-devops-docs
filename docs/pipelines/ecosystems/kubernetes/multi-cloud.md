@@ -1,7 +1,6 @@
 ---
 title: Multi-cloud Kubernetes deployments
 description: Use Azure Pipelines to deploy to Kubernetes clusters in multiple clouds
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 525536ba-94c7-487b-bcf9-ca7733135e89
 ms.author: atulmal

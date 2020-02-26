@@ -3,10 +3,7 @@ title: Sign Your Mobile App During CI
 ms.custom: seodec18
 description: How to sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
-ms.technology: devops-cicd
 ms.assetid: 1b9de1a8-0749-40af-87e8-857fb86cf0ae
-ms.author: jukullam
-author: juliakm
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2018'

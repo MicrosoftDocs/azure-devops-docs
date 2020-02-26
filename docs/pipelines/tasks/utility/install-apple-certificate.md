@@ -2,7 +2,6 @@
 title: Install Apple Certificate task
 description: Install an Apple certificate required to build on a macOS agent on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: d2eff759-736d-4b7b-8554-7ba0960d49d6
 ms.custom: seodec18
 ms.author: vijayma

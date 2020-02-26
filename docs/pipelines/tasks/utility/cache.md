@@ -2,7 +2,6 @@
 title: Cache task
 description: Improve build performance by caching files, like dependencies, between pipeline runs.
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 9D2AE683-E116-4CEA-B673-CD7BEFB8F415
 ms.custom: seodec18
 ms.author: macoope

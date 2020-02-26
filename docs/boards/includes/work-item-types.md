@@ -1,6 +1,7 @@
 ---
 ms.technology: devops-agile
 ms.topic: include
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/22/2020

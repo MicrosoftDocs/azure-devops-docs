@@ -3,7 +3,6 @@ title: MSBuild build and release task
 ms.custom: seodec18
 description: MSBuild build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: A104BE40-2BFD-4E80-828B-F50944C12107
 ms.author: vijayma
 author: vijayma

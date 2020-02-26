@@ -2,7 +2,6 @@
 title: Download Build Artifacts task
 description: Download Build Artifacts task for use in a build or release pipeline
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.custom: seodec18
 ms.author: ronai

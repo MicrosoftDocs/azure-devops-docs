@@ -3,7 +3,6 @@ title: Understand releases and deployments
 ms.custom: seodec18
 description: DevOps CI CD - Understand releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair

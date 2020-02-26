@@ -3,7 +3,6 @@ title: Predefined variables
 ms.custom: seodec18
 description: A comprehensive list of all available predefined variables
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
 ms.author: jukullam
 author: juliakm

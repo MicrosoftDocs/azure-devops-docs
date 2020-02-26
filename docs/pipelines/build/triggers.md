@@ -2,9 +2,6 @@
 title: Build pipeline triggers
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines
 ms.topic: reference
-ms.technology: devops-cicd
-ms.author: sdanie
-author: steved0x
 ms.custom: seodec18
 ms.date: 02/20/2020
 monikerRange: '>= tfs-2015'

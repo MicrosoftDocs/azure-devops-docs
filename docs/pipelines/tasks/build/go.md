@@ -3,7 +3,6 @@ title: Go task
 ms.custom: seodec18
 description: Get, build, test a go application, or run a custom go command.
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 34B37FDD-BBF7-4EF1-B37C-9652CA7BB355
 ms.author: shasb
 author: shashankbarsin

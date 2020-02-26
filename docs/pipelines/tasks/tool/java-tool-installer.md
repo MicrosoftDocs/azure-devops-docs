@@ -2,7 +2,6 @@
 title: Java Tool Installer task
 description: Change the version of Java in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: C0E0B74F-0931-47C7-AC27-7C5A19456A36
 ms.custom: seodec18
 ms.author: vijayma

@@ -4,9 +4,7 @@ ms.custom: seodec18
 description: Learn about the parallel jobs pricing and availability in Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 8C578915-5C23-4563-957E-7AD1C6FB80FF
-ms.technology: devops-cicd
 ms.author: jukullam
-author: juliakm
 ms.date: 08/14/2019
 monikerRange: '>= tfs-2015 < azure-devops'
 ---

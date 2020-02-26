@@ -2,7 +2,6 @@
 title: Deploy to a Linux VM
 description: Deploy a web application to a web server on a Linux VM with an environment
 ms.assetid: 9EBB0342-7FD2-473C-9809-9BCA2250CBC3
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.custom: seodec18
 ms.author: ushan

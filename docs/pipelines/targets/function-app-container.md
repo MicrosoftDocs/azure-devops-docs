@@ -2,7 +2,6 @@
 title: Deploy a function app to Azure Functions Container
 description: Deploy to Azure Functions containers from Azure Pipelines or TFS
 services: vsts
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: CFFC2B0F-D4A8-4C0B-B485-823CE6C0E63C
 ms.custom: seodec18

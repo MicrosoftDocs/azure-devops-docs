@@ -3,7 +3,6 @@ title: Secure files for Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand secure files for Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 1B115D68-5667-445C-9130-00D658EEFE39
-ms.technology: devops-cicd
 ms.author: vijayma
 ms.date: 12/18/2018
 monikerRange: '>= tfs-2015'

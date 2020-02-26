@@ -2,7 +2,6 @@
 title: Azure Policy task 
 description: Security and compliance assessment with Azure policies
 ms.assetid: 80CE5090-EF14-4640-A833-5C43271FB6EA
-ms.technology: devops-cicd
 ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai

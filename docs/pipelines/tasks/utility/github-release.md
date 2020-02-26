@@ -2,7 +2,6 @@
 title: GitHub Release task
 description: Create, edit, or discard a GitHub release.
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: 7B5A6198-ADF8-4B16-9939-7ADDF85708B2
 ms.custom: seodec18
 ms.author: vijayma
