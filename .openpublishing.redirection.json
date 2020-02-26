@@ -12244,6 +12244,11 @@
       "source_path": "docs/pipelines/caching/index.md",
       "redirect_url": "/azure/devops/pipelines/release/caching",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/index-all.md",
+      "redirect_url": "/azure/devops/index",
+      "redirect_document_id": true
     }
   ]
 }
