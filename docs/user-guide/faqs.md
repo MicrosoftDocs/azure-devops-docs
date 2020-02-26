@@ -6,7 +6,7 @@ description: FAQs to support getting started using the hosted cloud offering and
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.date: 04/16/2019
 monikerRange: '>= tfs-2013'
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # FAQs about signing up and getting started
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Signing up for Azure DevOps is now easier than ever - it's a two-minute process. See the following FAQs, which contain links for getting started.
 
@@ -27,8 +27,6 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
   - [Azure Pipelines](../pipelines/get-started/pipelines-sign-up.md)
   - [Azure Repos](../repos/get-started/sign-up-invite-teammates.md)
   - [Azure Boards](../boards/get-started/sign-up-invite-teammates.md)
-  - [Azure Artifacts](../artifacts/index.md)
-  - [Azure Test Plans](../test-plans/index.md)
 
 ::: moniker-end
 
@@ -55,10 +53,10 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)  
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/../java/download-android-studio-plug-in.md)
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
-- [Visual Studio Code](/../java/vscode-extension.md)
+- [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)  
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
+- [Visual Studio Code](../java/vscode-extension.md)
 
 ::: moniker-end
 

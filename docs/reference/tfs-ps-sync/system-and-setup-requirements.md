@@ -1,11 +1,11 @@
----
-title: System and setup requirements to support TFS-Project Server integration 
+﻿---
+title: System and setup requirements for TFS-Project Server
 titleSuffix: TFS 
 description: Requirements to support Team Foundation Server-Project Server integration 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: adaa1930-a8f9-4bd8-8c91-02bd7b8d9d5d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.date: 01/12/2017
 ---
 # System and setup requirements to support TFS-Project Server integration  
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a>
 You can synchronize data between Visual Studio Team Foundation Server (TFS) and Office Project Server by installing Team Foundation Server Extensions for Project Server. You can install the extensions on Project Server 2010 with SP1 or Project Server 2013. 
@@ -35,7 +35,7 @@ You can synchronize data between Visual Studio Team Foundation Server (TFS) and 
     >  For Project Server 2013, both **Classic Mode** and **Claims Based** authentication are supported.  
   
 -   **For project managers**: Visual Studio 2012 and one of the following versions of Microsoft Project must be installed on the same machine that will be used to manage enterprise project plans that will participate in data synchronization with projects:  
-    -   Project Professional 2007 with SP2 and the update that you can download from the following page on the Microsoft website: [Description of the Office Project 2007 hotfix package (Project-x-none.msp): February 23, 2010](https://support.microsoft.com/en-us/help/2597955/description-of-the-project-2007-hotfix-package-project-x-none-msp-febr)  
+    -   Project Professional 2007 with SP2 and the update that you can download from the following page on the Microsoft website: [Description of the Office Project 2007 hotfix package (Project-x-none.msp): February 23, 2010](https://support.microsoft.com/help/2597955/description-of-the-project-2007-hotfix-package-project-x-none-msp-febr)  
     -   Project Professional 2007 with SP3  
     -   Project Professional 2010  
     -   Project Professional 2013.  
@@ -56,9 +56,9 @@ TFS version | Supported Project Server versions | Supported Project versions
 ------------|---------------------------------- | ---------------------------
 TFS 2018 | Not supported. For details, see [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs). | Not supported. 
 TFS 2017 | Not supported. For details, see [Synchronize TFS with Project Server](/azure/devops/work/tfs-ps-sync/sync-ps-tfs). | Not supported. 
-TFS 2015 | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
-TFS 2013 | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
-TFS 2012 | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](http://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
+TFS 2015 | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](https://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
+TFS 2013 | Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](https://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
+TFS 2012 | Project Server 2007 with SP2<br/>Project Server 2007 with SP3<br/>Project Server 2010 with SP1<br/>Project Server 2013 | Project Professional 2007 with SP2 and [update](https://go.microsoft.com/fwlink/?LinkId=211633)<br/>Project Professional 2007 with SP3<br/>Project Professional 2010<br/>Project Professional 2013
 TFS 2010 | Office Project Server 2007 with SP2<br/>Office Project Server 2010 with [required updates](https://msdn.microsoft.com/library/gg412650%28v=vs.100%29.aspx) | Project Professional 2007 with SP2<br/>Project Professional 2010 with [required updates](https://msdn.microsoft.com/library/gg412650%28v=vs.100%29.aspx) 
 
 ### Additional Project Server installation requirements
@@ -106,7 +106,7 @@ You can also run Project Server on its own SharePoint farm, separate from any fa
   
 5.  **Configure the integration**. As the following illustration shows, you must perform six main steps when you configure the integration of the two server products.  
   
-     ![Provisioning Project Server&#45;Team Foundation Server](_img/pstfs_provisioning.png "PSTFS_Provisioning")  
+     ![Provisioning Project Server&#45;Team Foundation Server](media/pstfs_provisioning.png "PSTFS_Provisioning")  
   
      For more information, see [Configure TFS-Project Server integration](configure-tfs-project-server-integration.md).  
   

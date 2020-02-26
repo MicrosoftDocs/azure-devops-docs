@@ -5,7 +5,7 @@ ms.assetid: 7ff495cf-2d1f-4baa-a052-d176bd507ef4
 ms.prod: devops
 ms.technology: devops-cicd 
 ms.topic: reference
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 # Copy Files Over SSH task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to copy files from a source folder to a target folder on a remote machine over SSH.
 
@@ -24,7 +24,9 @@ source folder to target folder on the remote machine. Supported protocols for fi
 In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
+
 ::: moniker-end
 
 ## Prerequisites
@@ -33,8 +35,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 * The public key must be pre-installed or copied to the remote machine(s).
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/CopyFilesOverSSHV0.md)]
+
+[!INCLUDE [temp](../includes/yaml/CopyFilesOverSSHV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -52,11 +57,11 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 ## See also
 
-* [Install SSH Key task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InstallSSHKey)
+* [Install SSH Key task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/install-ssh-key?view=azure-devops)
 
 * [SSH task](ssh.md)
 
-* Blog post [SSH build task](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/30/ssh-build-task/)
+* Blog post [SSH build task](https://devblogs.microsoft.com/devops/ssh-build-task/)
 
 ## Open source
 
@@ -65,9 +70,9 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-ssh-supported-keys](../_shared/qa-ssh-supported-keys.md)]
+[!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ### Is this task supported for target machines running operating systems other than Linux?
 This task is intended for target machines running Linux.
@@ -75,7 +80,9 @@ This task is intended for target machines running Linux.
 - For copying files to a Windows machine, consider using [Windows Machine File Copy](windows-machine-file-copy.md).
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
+
 ::: moniker-end
 
 <!-- ENDSECTION -->

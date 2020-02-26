@@ -3,9 +3,9 @@ title: Use packages from Maven Central
 description: Use packages from Maven Central in Azure DevOps Services via upstream sources
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 11/13/2017
 monikerRange: '=azure-devops'
@@ -13,7 +13,7 @@ monikerRange: '=azure-devops'
 
 # Use packages from Maven Central
 
-**Azure DevOps Services**
+**Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
 
 If you want to use both private packages you've created **and** public packages from Maven Central, we recommend using upstream sources. 
 
@@ -40,5 +40,5 @@ To use Maven Central as an upstream source, either create a new feed or edit an 
 
 You can see the packages you have saved in your feed by selecting the appropriate Source filter.
 
-![Viewing your cached packages](_img/view-cached-packages.png)
+![Viewing your cached packages](media/view-cached-packages.png)
 

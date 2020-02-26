@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Discussion History (deprecated) | REST API Reference for Team Foundation Server
 description: Work with work item discussion history programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 572C9AF7-91A1-41F9-80A5-905AD9C39464
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

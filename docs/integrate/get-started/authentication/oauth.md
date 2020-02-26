@@ -5,17 +5,20 @@ ms.topic: conceptual
 title: Authorization using OAuth 2.0 | Azure DevOps Services REST APIs
 description: Use OAuth 2.0 authentication to get started with the REST APIs for Azure DevOps Services.
 ms.assetid: 19285121-1805-4421-B7C4-63784C9A7CFA
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 09/11/2019
 ---
 
 # Authorize access to REST APIs with OAuth 2.0
 
+> [!NOTE]
+> The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](PATs.md) to authenticate on behalf of a user.
+
 Authenticate your web app's users to access the REST APIs so that your app doesn't have to keep asking for their usernames and passwords.
-Azure DevOps Services uses the [OAuth 2.0 protocol](http://oauth.net/2/) to authorize your app for a user and generate an access token.
+Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
 Use this token when you call the REST APIs from your app.
 
 First, you'll register your web app and get an app ID from Azure DevOps Services.
@@ -24,7 +27,7 @@ Once they've done that, you'll use that authorization to get an access token for
 When you call Azure DevOps Services APIs on behalf of that user, you'll use that user's access token.
 Access tokens expire, so you'll also need to refresh the access token if it's expired.
 
-![Process to get authorization](./_img/oauth-overview.png)
+![Process to get authorization](./media/oauth-overview.png)
 
 For a C# example of the overall flow, see [vsts-auth-samples](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample)
 
@@ -40,7 +43,7 @@ When Azure DevOps Services presents the authorization approval page to your user
 it will use your company name, and app name and descriptions,
 along with the URLs for your company's web site, your app's website, and your terms of service and privacy statements, like this.
 
-<img alt="Visual Studio Online authorization page with your company and app information" src="./_img/grant-access.png" style="border: 1px solid #CCCCCC" />
+<img alt="Visual Studio Online authorization page with your company and app information" src="./media/grant-access.png" style="border: 1px solid #CCCCCC" />
 
 When you call Azure DevOps Services to ask for a user's authorization, and the user grants it,
 Azure DevOps Services will redirect the user's browser to your authorization callback URL with the authorization code for that authorization.
@@ -49,7 +52,7 @@ If it doesn't, a 400 error page is displayed instead of a page asking the user t
 
 When your register your app, the application settings page is displayed.
 
-<img alt="Application settings for your app" src="./_img/app-settings.png" style="border: 1px solid #CCCCCC" />
+<img alt="Application settings for your app" src="./media/app-settings.png" style="border: 1px solid #CCCCCC" />
 
 You'll call the authorization URL and pass your app ID and authorized scopes
 when you want to have a user authorize your app to access their organization.
@@ -226,7 +229,7 @@ Replace the placeholder values in the sample request body above:
 
 > IMPORTANT: Scopes only enable access to REST APIs and select Git endpoints. SOAP API access is not supported.  
 
-[!INCLUDE [scopes table](../../_shared/scopes.md)]
+[!INCLUDE [scopes table](../../includes/scopes.md)]
 
 When you [register your app](#register-your-app),
 you'll use scopes to indicate which permissions in Azure DevOps Services your app will require.

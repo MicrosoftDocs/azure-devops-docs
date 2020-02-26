@@ -6,15 +6,16 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Plan a project (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 The desired outcome of planning a project is a plan that includes a scope, a schedule, a budget, a risk management plan, and a commitment and approval from all stakeholders. With an agreed-upon project plan, you want to progress with analysis, design, development, testing, and eventually delivery.  
   
@@ -63,7 +64,7 @@ The desired outcome of planning a project is a plan that includes a scope, a sch
   
   You can define the requirement in a work item by specifying a variety of information, as the following illustrations show:  
   
-  ![Requirement work item form](_img/procguid_cmmiform.png "ProcGuid_CMMIform")  
+  ![Requirement work item form](media/procguid_cmmiform.png "ProcGuid_CMMIform")  
   
 ### Some guidelines on prioritization  
  Many detailed schemes exist for prioritization. We will examine some of these when we consider iteration planning. For now, at the project level, we include some guidelines that may be useful to help manage risk and optimize added value.  

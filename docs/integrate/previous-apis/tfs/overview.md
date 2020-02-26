@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Projects and Teams Overview | REST API Reference for Team Foundation Server
 description: Work with teams, projects, and project collections programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 2FFBCD08-28E6-4EB4-86E4-557E416E4380
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -19,7 +19,7 @@ ms.date: 08/04/2016
 
 A VSTS organization has one or more [projects](./projects.md). Each project has one or more [teams](./teams.md) that contribute to that project.
 
-![Project and team resources](./_img/projects-and-teams.png)
+![Project and team resources](./media/projects-and-teams.png)
 
 * [Project Collections](./project-collections.md)
 * [Projects](./projects.md)

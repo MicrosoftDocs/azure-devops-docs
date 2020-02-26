@@ -1,11 +1,11 @@
 ---
 title: Default Analytics views
 titleSuffix: Azure DevOps
-description: Filtered set of data based on the Analytics Service for Azure DevOps which supports creating Power BI reports  
+description: Filtered set of data based on Analytics for Azure DevOps which supports creating Power BI reports  
 ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: angurusw
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,9 +15,11 @@ ms.date: 04/05/2019
 
 # Default Analytics views
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-An Analytics view filters Azure DevOps data derived from the Analytics Service. You use views to quickly load the data of interest in Power BI to generate reports. 
+An Analytics view filters Azure DevOps data derived from Analytics. You use views to quickly load the data of interest in Power BI to generate reports. 
+
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 A default set of Analytics views are provided, as shown below. 
 
@@ -29,14 +31,14 @@ A default set of Analytics views are provided, as shown below.
 ::: moniker-end
 
 > [!div class="mx-imgBorder"] 
-> ![Default Analytics views](./_img/default-views/default-views.png)
+> ![Default Analytics views](./media/default-views/default-views.png)
 
-[!INCLUDE [temp](../_shared/analytics-image-differences.md)] 
+[!INCLUDE [temp](../includes/analytics-image-differences.md)] 
 
 These views are immediately available from Power BI, as shown in the Navigator dialog illustrated below, and are a great way to get started.
 
 > [!div class="mx-imgBorder"] 
-> ![Azure DevOps Power BI Data Connector - Default Analytics views](_img/default-views/navigator-dialog-default-views.png)
+> ![Azure DevOps Power BI Data Connector - Default Analytics views](media/default-views/navigator-dialog-default-views.png)
 
 
 Each default Analytics view provides a combination of options for work item types and historical data. The following tables describe each set of options. 
@@ -67,9 +69,9 @@ Default views automatically include the most common fields for the included work
 For example, the following fields are included when filtered for bugs and user stories. You can look up the description of most of these fields from the [Work item field index](../../boards/work-items/guidance/work-item-field.md).  
 
 > [!div class="mx-imgBorder"]
-> ![Analytics views common fields](_img/editable-views/common-fields.png)
+> ![Analytics views common fields](media/editable-views/common-fields.png)
 
-Two fields that are reported on are only available from the Analytics Service data store, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
+Two fields that are reported on are only available from Analytics data, Cycle Time Days and Lead Time Days. To learn more about how these days are calculated, see [Cumulative flow, lead time, and cycle time guidance, Lead time versus cycle time](../dashboards/cumulative-flow-cycle-lead-time-guidance.md#lead-time-versus-cycle-time).
 
 ## When a default view doesn't meet your needs 
 
@@ -81,6 +83,6 @@ In these cases, you can [create a custom Analytics view](analytics-views-create.
 
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md) 
-- [Data available from the Analytics Service](data-available-in-analytics.md)
+- [Data available from Analytics](data-available-in-analytics.md)
 - [Dataset design for the Power BI Azure DevOps Connector](data-connector-dataset.md)
-- [Grant permissions to access the Analytics service](./analytics-security.md)
+- [Grant permissions to access Analytics](./analytics-security.md)

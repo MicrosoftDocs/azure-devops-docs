@@ -5,7 +5,7 @@ description: Use TFSAdmin ProjectServer command-line tool to configure integrati
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ddac3deb-bb59-4536-9d4a-ecd389ceb265
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 # Map integration components
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 You can synchronize data between Visual Studio Team Foundation Server 2013 and Microsoft Project Server if you first configure several points of integration between them. To configure this integration, you use the **TFSAdmin ProjectServer** command-line tool. To access this tool, open a Command Prompt window where either Visual Studio or Team Explorer is installed and enter:  
   

@@ -5,7 +5,7 @@ ms.topic: reference
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -26,8 +26,11 @@ Use this task in a build or release pipeline to find, download, and cache a spec
 None
 
 ::: moniker range="> tfs-2018"
+
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/NodeToolV0.md)]
+
+[!INCLUDE [temp](../includes/yaml/NodeToolV0.md)]
+
 ::: moniker-end
 
 ## Arguments
@@ -49,6 +52,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

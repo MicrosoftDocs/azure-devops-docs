@@ -1,19 +1,20 @@
----
-title: Customize the field mapping between TFS and Project Server
+﻿---
+title: Customize field mapping between TFS & Project Server
 titleSuffix: TFS
 description: Associate the fields in Team Foundation Server with fields in Project Server 
 ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: e2785458-f618-42b4-ab77-fbe4cb41c493
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 ms.date: 01/12/2017
 ---
 
 # Customize the field mapping between TFS and Project Server
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> 
 To synchronize data between an enterprise project plan and a project, you must associate the work-item fields in Visual Studio Team Foundation Server (TFS) with the fields in Microsoft Project Server. You can add fields and specify how they synchronize by customizing the field mappings. You can map both built-in and custom fields in Project. For example, you can share data that does not relate to schedules (such as cost centers, team names, or health status) if you add the fields that store these types of data to the mappings.  
@@ -25,7 +26,7 @@ To synchronize data between an enterprise project plan and a project, you must a
   
  As the following illustration shows, you customize the mappings in five steps:  
   
- ![Workflow for Customizing PS&#45;TFS Field Mapping](_img/pstfs_fieldmapping_workflow.png "PSTFS_FieldMapping_Workflow")  
+ ![Workflow for Customizing PS&#45;TFS Field Mapping](media/pstfs_fieldmapping_workflow.png "PSTFS_FieldMapping_Workflow")  
 Customizing the Field Mappings Between Team Foundation Server and Project Server  
   
 > [!NOTE]
@@ -33,7 +34,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
   
 > [!NOTE]
->  For a demonstration video, see the following page on the Microsoft website: [Managing Field Mappings for Integration of Team Foundation Server and Project Server](http://go.microsoft.com/fwlink/?LinkId=222613).  
+>  For a demonstration video, see the following page on the Microsoft website: [Managing Field Mappings for Integration of Team Foundation Server and Project Server](https://go.microsoft.com/fwlink/?LinkId=222613).  
   
  **Requirements**  
   
@@ -183,7 +184,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
   
 1. Add two customer enterprise fields to Project Server, and label them as **Area (TFS)** and **Iteration (TFS)**.  
   
-    For more information, see the following page on the Microsoft website: [Creating Lookup Tables and Enterprise Custom Fields](http://go.microsoft.com/fwlink/?LinkId=209696).  
+    For more information, see the following page on the Microsoft website: [Creating Lookup Tables and Enterprise Custom Fields](https://go.microsoft.com/fwlink/?LinkId=209696).  
   
 2. Export the field mappings from the project collection where the projects are defined.  
   
@@ -289,7 +290,7 @@ Customizing the Field Mappings Between Team Foundation Server and Project Server
 ##  <a name="customizetab"></a> Customize the Project Server tab  
  When you associate an enterprise project plan with a project, the Project Server tab is added to the work item form, as the following illustration shows. The tab is added to only those types of work items that you specify to participate in data synchronization. You customize this tab by setting the `displayTfsField` or `displayTfsMirror` attributes to `true` for those fields that you want to have appear on the form.  
   
- ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
+ ![Project Server Tab default fields](media/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
 Project Server tab  
   
 > [!IMPORTANT]

@@ -4,10 +4,10 @@ ms.assetid: e40e7437-896d-6db4-a385-f6fb5fb2e54f
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

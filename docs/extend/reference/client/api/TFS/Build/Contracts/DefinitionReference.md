@@ -5,10 +5,10 @@ ms.assetid: d8b850a1-706e-3229-7fe2-309e61862b54
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 
@@ -22,7 +22,7 @@ Extends: [ShallowReference](./ShallowReference.md)
 
 * `createdDate`: Date. The date the definition was created
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). The project.
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). The project.
 
 * `queueStatus`: [DefinitionQueueStatus](./DefinitionQueueStatus.md). If builds can be queued from this definition
 

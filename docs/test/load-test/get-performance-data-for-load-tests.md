@@ -5,20 +5,20 @@ ms.assetid: 5658166B-CA7F-4C6B-B55D-AE745FB78D5C
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '> tfs-2018'
 ---
 
 # Get app performance data with your load tests
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
 <a name="ApplicationInsights"></a>
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 When you load test your app in the cloud using Azure DevOps, 
 you can compare app performance with virtual user load using 
@@ -48,22 +48,22 @@ is causing performance problems.
    **Run Settings** section and select your active run settings. Open the
    shortcut menu and choose **Get Performance Data from Application Insights**.  
 
-   ![Choosing Get Performance Data from Application Insights](_img/get-performance-data-for-load-tests/get-load-test-insights-01.png)
+   ![Choosing Get Performance Data from Application Insights](media/get-performance-data-for-load-tests/get-load-test-insights-01.png)
 
 1. Select the apps you want to monitor and the performance counters 
    you want to view while your load test runs.
 
-   ![Select the apps to monitor and performance counters](_img/get-performance-data-for-load-tests/get-load-test-insights-02.png)
+   ![Select the apps to monitor and performance counters](media/get-performance-data-for-load-tests/get-load-test-insights-02.png)
 
    The counters you selected are shown in the load test project.
  
-   ![Performance counters shown in the load test project](_img/get-performance-data-for-load-tests/get-load-test-insights-03.png)
+   ![Performance counters shown in the load test project](media/get-performance-data-for-load-tests/get-load-test-insights-03.png)
  
 1. Queue a load test run and view the performance data from 
    Application Insights while your load test runs. The data might 
    take a few minutes to appear.
 
-   ![To view the performance counters when your load test runs, click Application](_img/get-performance-data-for-load-tests/get-load-test-insights-04.png)
+   ![To view the performance counters when your load test runs, click Application](media/get-performance-data-for-load-tests/get-load-test-insights-04.png)
 
    Application counters are correlated with user load so that you can 
    understand which issues might cause performance problems that you find.
@@ -74,7 +74,7 @@ is causing performance problems.
 1. To do a more detailed analysis for any performance issue, or to do a 
    quick root cause analysis, go to Application Insights.
 
-   ![To get more performance details, click Go to Application Insights](_img/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
+   ![To get more performance details, click Go to Application Insights](media/get-performance-data-for-load-tests/LoadTestGoToAppInsights.png)
 
 [Can I define load tests once and then run them against different hosts?](reference-qa.md#inject-url-variables)
 
@@ -87,4 +87,4 @@ is causing performance problems.
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

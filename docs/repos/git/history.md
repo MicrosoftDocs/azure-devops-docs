@@ -5,7 +5,7 @@ description: Overview of Git history
 ms.assetid: 0094b6c0-d841-48e6-bb5d-82596198ef08
 ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -28,7 +28,7 @@ This difference in history is incredibly important and is the main reason users 
 
 Start with a simple history example: a repo with 3 linear commits.
 
-![three commits in a line](_img/history/history-abc.png)
+![three commits in a line](media/history/history-abc.png)
 
 Commit A is the parent of commit B, and commit B is the parent of commit C.
 This history looks very similar to a CVCS.
@@ -44,7 +44,7 @@ To do this, I'll pull the master branch with the following command:
 
 This copies ("pulls") all commits from the `master` branch of the remote repo (called `origin` by default) to the `master` branch of the local repo. The pull operation copied one new commit, and the `master` branch in the local repo is now pointing to this new commit.
 
-![a fourth commit, D, is added to the line](_img/history/history-abcd.png)
+![a fourth commit, D, is added to the line](media/history/history-abcd.png)
 
 ## Understand branch history
 
@@ -57,12 +57,12 @@ The first step is to checkout to a new branch using the following command:
 
 This is a shortcut combining two commands: `git branch cool-new-feature` to create the branch followed by `git checkout cool-new-feature` to begin working in the branch.
 
-![Branch cool-new-feature is added](_img/history/history-abcd-cool-new-feature.png)
+![Branch cool-new-feature is added](media/history/history-abcd-cool-new-feature.png)
 
 Two branches now point to the same commit.
 I'll make a few changes on the `cool-new-feature` branch in two new commits, E and F.
 
-![added two new commits](_img/history/history-abcd-cool-new-feature-e-f.png)
+![added two new commits](media/history/history-abcd-cool-new-feature-e-f.png)
 
 My commits are reachable by the `cool-new-feature` branch since I made them in that branch.
 I'm done with my feature and want to merge it into `master`.
@@ -70,12 +70,12 @@ To do that I'll use the following command:
 
 `git merge cool-feature master`
 
-![after the merge](_img/history/history-abcd-cool-new-feature-e-f-merge.png)
+![after the merge](media/history/history-abcd-cool-new-feature-e-f-merge.png)
 
 The graph structure of history becomes visible when there's a merge.
 Git creates a new commit when I merged my branch into another branch.
 This is a merge commit.
-There aren't any changes included this merge commit since I didn't have conflicts.
+There aren't any changes included in this merge commit since I didn't have conflicts.
 If I had conflicts, the merge commit would include the changes needed to resolve those conflicts.
 
 ## History in the real world
@@ -83,7 +83,7 @@ If I had conflicts, the merge commit would include the changes needed to resolve
 Here is an example of Git history that more closely resembles code in active development on a team.
 There are three people who merge commits from their own branches into the master branch around the same time.
 
-![console log of git graph](_img/history/gitlogconsole.png)
+![console log of git graph](media/history/gitlogconsole.png)
 
 Now that you understand how branches and merges create the shape of the graph, this shouldn't be too scary!
 

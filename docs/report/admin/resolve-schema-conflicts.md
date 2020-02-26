@@ -6,15 +6,16 @@ ms.assetid: BB517672-2A9A-4A5B-8F27-E4409F199C02
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
 ms.date: 11/19/2018
 ---
 
 # Resolve data warehouse schema conflicts
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
 Schema conflicts occur when a set of attributes for reportable fields differs across team project collections. When a schema conflict occurs, fields that are not in conflict are processed as usual but fields that are in conflict are assigned null values until you resolve the conflicts and then process as usual. In addition, the system generates a notification event for each conflict that it detects. By subscribing to the event, you can receive alerts when schema conflicts occur for any team projects that are defined for a collection. You must correct all schema conflicts to unblock the processing of the associated data for the warehouse and to enable the associated reports to display current data. 
 

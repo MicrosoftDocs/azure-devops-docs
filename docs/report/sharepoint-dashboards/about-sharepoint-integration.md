@@ -4,17 +4,17 @@ titleSuffix: TFS
 description: TFS/SharePoint integration - About SharePoint Integration 
 ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
 ms.author: kaelli
 ms.date: 09/28/2017
 ms.topic: overview
-monikerRange: '<= azure-devops-2019'
+monikerRange: '<= tfs-2018'
 ---
 
 # About SharePoint integration  
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 SharePoint products are a valuable resource to users of Azure DevOps and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage Azure DevOps and TFS teams to use SharePoint and will continue to look for ways to make the integration of Azure DevOps and SharePoint Server and SharePoint online, be better together.
 
@@ -63,14 +63,14 @@ TFS 2010 | Office SharePoint Server 2007 (Standard, Enterprise)<br/>Windows Shar
 
 NTLM is the recommended authentication provider. Team Foundation Server Extensions for SharePoint Products doesn't support Basic authentication or anonymous authentication.  In SharePoint Server 2013, Microsoft deprecated Windows classic authentication to move to claims-based authentication. TFS supports both, but for claims-based authentication, the authentication provider must be NTLM. TFS supports only NTLM-based claims.
 
-You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/command-line/open-admin-console).
+You can configure the TFS extension for SharePoint Products on your SharePoint server in the [TFS administration console](/azure/devops/server/admin/open-admin-console).
 
 > [!TIP]
 > If you plan to install SharePoint, make sure that the SharePoint version you want to install is compatible with the server operating system you're using. Support for server operating systems in TFS is more amenable than in SharePoint.
 >
 > Here are your main options:
 > 
-> -	You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
+> - You can use TFS standard or advanced configuration wizards to install SharePoint Foundation 2013 on the same server as Team Foundation Server. The Team Foundation Server extensions for SharePoint Products are installed automatically during Team Foundation Server installation.
 > - You can use the Team Foundation Server extensions for SharePoint Products configuration wizard to install SharePoint Foundation 2013 on a different server from the one running Team Foundation Server.
 > - You can use SharePoint Server. If you use the Enterprise edition of SharePoint Server, you must configure it for dashboard compatibility.
 > - You can use a different version of SharePoint Foundation than the one that ships with TFS.
@@ -89,7 +89,7 @@ If you install SharePoint Products, you must have more robust hardware than what
 For complete SharePoint hardware requirements, see the following articles:
 
 * [Hardware and software requirements for SharePoint 2013 (SharePoint Foundation 2013/SharePoint Server 2013)](https://technet.microsoft.com/library/cc262485.aspx)
-* [Hardware and software requirements (SharePoint Foundation 2010)](http://go.microsoft.com/fwlink/?LinkId=231850)
+* [Hardware and software requirements (SharePoint Foundation 2010)](https://go.microsoft.com/fwlink/?LinkId=231850)
 * [Hardware and software requirements (SharePoint Server 2010)](https://technet.microsoft.com/library/cc262485(v=office.14).aspx)
 
 
@@ -99,16 +99,6 @@ Starting with TFS 2018, we no longer offer the TFS Extension for SharePoint. Add
 
 **If you are upgrading to TFS 2018 from a previous version configured to integrate with SharePoint 2010 or 2013**, you will need to disable the SharePoint integration after upgrade, or your TFS SharePoint sites will fail to load. For more information, read [Disable SharePoint integration after TFS 2018 upgrade](./deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md).
 
-<!-- ## Future plans for Azure DevOps SharePoint integration
-
-Currently, our [dashboards](../dashboards/dashboards.md) will meet most of your reporting requirements, replacing the previous dependency on TFS-SharePoint dashboards.  
-
-In the future, we plan to provide a way to embed a dashboard on a SharePoint site. From SharePoint, you will simply select a dashboard to display, and it will be embedded on the SharePoint site.
-This will occur without laborious configurations. It will just work. It will also support both Azure DevOps Services, TFS , SharePoint Server, SharePoint online.
-
-If you need more than the built-in dashboards can offer, Power BI reports and Excel charts can be embedded on a SharePoint site. This functionality is available today.
-
-We will update this article as we provide additional SharePoint integrations.  -->
 
 ## Referenced topics
 

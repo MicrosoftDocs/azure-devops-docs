@@ -5,20 +5,21 @@ description: TFS SharePoint integration - Update an SSRS Report on a SharePoint 
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 09/28/2017
 ---
 
 # Update SSRS Report after SharePoint is disabled
 
-[!INCLUDE [temp](../_shared/about-sharepoint-deprecation.md)]
+[!INCLUDE [temp](../includes/about-sharepoint-deprecation.md)]
 
 Displaying SSRS Reports on a SharePoint will continue to work, even after disabling SharePoint integration. Displaying SSRS Reports in SharePoint is based on SharePoint and SQL Server Reporting Services technologies. It doesn't require the TFS Extension for SharePoint to operate. 
 
-<img src="_img/update-ssrs-report.png" alt="TFS/SharePoint Integration - Update SSRS Report" style="border: 2px solid #C3C3C3;" />
+<img src="media/update-ssrs-report.png" alt="TFS/SharePoint Integration - Update SSRS Report" style="border: 2px solid #C3C3C3;" />
 
 The TFS site used the standard [SharePoint Page Viewer web part](https://support.office.com/article/Display-a-Web-page-on-a-SharePoint-page-by-adding-the-Page-Viewer-Web-Part-7F61FEEC-9B3D-4805-A960-07636BA59527) with a URL to the SSRS Report.
 
@@ -47,7 +48,8 @@ Follow these steps to replace the URL:
 5. Replace **PROJECTNAME** with the name of your team project
 6. Replace **REPORTNAME** with the name of your report.
 
-    **NOTE**: You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
+    > [!NOTE]
+    > You are building a URL. If any of the above replacements have spaces in the name, you'll need to replace the space with "%20" to ensure it is a well-formed URL. For example "My Team Project" would be "My%20Team%20Project". 
 
 7. Save your changes to the PageViewer web part.
 

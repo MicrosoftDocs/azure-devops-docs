@@ -5,7 +5,7 @@ description: Share code in a Git repo and a new team project
 ms.assetid: 
 ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.date: 09/10/2018
@@ -75,11 +75,11 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 1. From your web browser, open the team project for your organization and select **Repos** > **Files**. If you don't have a team project, [create one now](sign-up-invite-teammates.md). 
 
-   ![Repos files](_img/clone-repo/repos-files.png)
+   ![Repos files](media/clone-repo/repos-files.png)
 
 2. Select **Clone** in the upper-right corner of the **Files** window and copy the clone URL.
 
-   ![Retrieve the clone URL](_img/clone-repo/clone-repo.png)
+   ![Retrieve the clone URL](media/clone-repo/clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
@@ -105,7 +105,7 @@ To work with a Git repo, you clone it to your computer. Cloning a repo creates a
 
 2. Select **Clone** in the upper-right corner of the **Code** page and copy the **Clone URL**.
 
-   ![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
+   ![Retrieve the clone URL](../../user-guide/media/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 
@@ -201,31 +201,31 @@ This example shows the basic steps of creating and completing a pull request.
 
 1. From your web browser, open the team project for your organization and select **Repos** > **Files**. If you kept your browser open after getting the clone URL, you can just switch back to it.
 
-   ![Repos files](_img/clone-repo/repos-files.png)
+   ![Repos files](media/clone-repo/repos-files.png)
 
 2. Select **Create a pull request** in the upper-right corner of the **Files** window. If you don't see a message like **You updated users/jamal/feature1 just now**, refresh your browser.
 
-   ![Create a pull request](_img/updated-file-create-pull-request.png)
+   ![Create a pull request](media/updated-file-create-pull-request.png)
 
 3. New pull requests are configured to merge your branch into the default branch, which in this example is `master`. The title and description are pre-populated with your commit message.
 
-   ![New pull request](_img/create-pull-request.png)
+   ![New pull request](media/create-pull-request.png)
 
    You can [add reviewers](../git/pull-requests.md#add-and-remove-reviewers) and [link work items](../git/pull-requests.md#link-work-items) to your pull request.
 
    You can review the files included in the pull request at the bottom of the **New Pull Request** window.
 
-   ![Files in the pull request](_img/create-pull-request-files.png)
+   ![Files in the pull request](media/create-pull-request-files.png)
 
    Select **Create** to create the pull request.
 
 4. You can view the details of your pull request from the **Overview** tab, and view the changed files, updates, and commits in your pull request from the other tabs. Select **Complete** to begin the process of completing the pull request.
 
-   ![Pull request](_img/pull-request.png)
+   ![Pull request](media/pull-request.png)
 
 5. Select **Complete merge** to complete the pull request and merge your code into the `master` branch.
 
-   ![Complete pull request](_img/complete-pull-request.png)
+   ![Complete pull request](media/complete-pull-request.png)
 
 >[!NOTE]
 >This example shows the basic steps of creating and completing a pull request. To learn more about pull requests, including voting and reviewing, commenting, autocomplete, and more, see [Pull requests overview](../git/pull-requests-overview.md).
@@ -238,7 +238,7 @@ This example shows the basic steps of creating and completing a pull request.
 
 2. Select **Clone** in the upper-right corner of the **Code** page and copy the **Clone URL**.
 
-   ![Retrieve the clone URL](../../user-guide/_img/code-with-git-clone-repo.png)
+   ![Retrieve the clone URL](../../user-guide/media/code-with-git-clone-repo.png)
 
 3. Open the Git command window (Git Bash on Git for Windows) and browse to the folder where you want the code from the repo stored on your computer. Run `git clone` followed by the path copied from the **Clone URL** in the previous section, as shown in the following example.
 

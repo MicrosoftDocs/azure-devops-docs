@@ -14,63 +14,67 @@ In the **Sprint 153 Update** of Azure DevOps, we continue to enhance the Azure B
 
 Check out the [Features](#features) list below for more.
 
+## What’s new in Azure DevOps
+
+> [!VIDEO https://youtube.com/embed/nterH4fTd3M]
+
 ## Features
 
 General: 
 
-[!INCLUDE [sprint-153-update-links](_shared/general/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/general/sprint-153-update-links.md)]
 
 Azure Boards:
 
-[!INCLUDE [sprint-153-update-links](_shared/boards/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/boards/sprint-153-update-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [sprint-153-update-links](_shared/pipelines/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/pipelines/sprint-153-update-links.md)]
 
 Azure Repos:
 
-[!INCLUDE [sprint-153-update-links](_shared/repos/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/repos/sprint-153-update-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [sprint-153-update-links](_shared/artifacts/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/artifacts/sprint-153-update-links.md)]
 
 Wiki:
 
-[!INCLUDE [sprint-153-update-links](_shared/wiki/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/wiki/sprint-153-update-links.md)]
 
 Marketplace:
 
-[!INCLUDE [sprint-153-update-links](_shared/marketplace/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](includes/marketplace/sprint-153-update-links.md)]
 
 ## General
 
-[!INCLUDE [sprint-153-update](_shared/general/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/general/sprint-153-update.md)]
 
 ## Azure Boards
 
-[!INCLUDE [sprint-153-update](_shared/boards/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/boards/sprint-153-update.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [sprint-153-update](_shared/pipelines/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/pipelines/sprint-153-update.md)]
 
 ## Azure Repos
 
-[!INCLUDE [sprint-153-update](_shared/repos/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/repos/sprint-153-update.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [sprint-153-update](_shared/artifacts/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/artifacts/sprint-153-update.md)]
 
 ## Wiki
 
-[!INCLUDE [sprint-153-update](_shared/wiki/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/wiki/sprint-153-update.md)]
 
 ## Marketplace
 
-[!INCLUDE [sprint-153-update](_shared/marketplace/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](includes/marketplace/sprint-153-update.md)]
 
 ## Next steps
 
@@ -80,14 +84,14 @@ Marketplace:
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"]
-> [Go to Azure DevOps](http://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 
 > [!div class="mx-imgBorder"]
-> ![Make a suggestion](../_img/make-a-suggestion.png)
+> ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
 

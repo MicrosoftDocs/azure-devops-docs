@@ -5,20 +5,65 @@ description: Use Microsoft Excel or Project to track work in Azure Boards, Azure
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 10/30/2019
 ---
 
 
-# Work in Microsoft Excel or Project 
+# Azure Boards and Office integration 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document.  
+
+::: moniker range=">= azure-devops-2019"
+
+To support your work tracking efforts, you can use Microsoft Excel. You can decide to either work in an online mode where you are connected to either Azure Boards or Azure DevOps Server, or in an offline mode where you access the local computer and document. 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+To support your work tracking efforts, you can use Microsoft Excel and Microsoft Project. You can decide to either work in an online mode where you are connected to either Azure Boards or Team Foundation Server (TFS), or in an offline mode where you access the local computer and document. 
+
+::: moniker-end
+
+> [!IMPORTANT]  
+> All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
+
+## Prerequisites 
+
+::: moniker range=">= azure-devops-2019" 
+
+- Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2017 <= tfs-2018" 
+
+- Office Excel 2010 or later version, including Microsoft Office Excel 365
+- Office Project 2010 or later version, including Office Project 365
+- Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md) in Azure Boards or TFS. 
+
+::: moniker-end  
+
+::: moniker range=">= tfs-2013 <= tfs-2015" 
+
+- Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
+- Office Project 2007, Office Project 2010, or Office Project 2013
+- Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+- [Permissions to connect to the project](../../../organizations/security/add-users-team-project.md). 
+
+::: moniker-end   
+
+To learn more about compatibility requirements, see [Azure DevOps client compatibility](/azure/devops/server/compatibility). 
+
   
 > [!IMPORTANT]  
 > You may receive the following error if you install Microsoft Office 2010 on the same computer as a previous version of Office.  
@@ -30,14 +75,17 @@ To support your work tracking efforts, you can use Microsoft Excel and Microsoft
 >  You may be able to resolve this error by repairing Office. You can access the Repair option by opening the **Control Panel**, choose **Uninstall or change a program**, open the context menu for Office 2010, and then choose **Change**. See also, [TFS-Office integration issues](tfs-office-integration-issues.md).  
   
 You can start work from Excel, Project, or Team Explorer. Your worksheet or project plan can be tied to a list of work items or a work item query.  
+
+> [!IMPORTANT]  
+> To work from Visual Studio 2019/Team Explorer, you need to [Set the Work Items experience](../../work-items/set-work-item-experience-vs.md) to the legacy option.
   
-To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).   
-  
-![Open Query Results in Excel](_img/excelseq_1.png "ExcelSeq_1")  
+To work in Excel, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md).  
+
+![Open Query Results in Excel](media/excelseq_1.png "ExcelSeq_1")  
   
 To work in Project, see [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
 
-![Exporting Work Items to Project](_img/officeprojseq_1.png "OfficeProjSeq_1")
+![Exporting Work Items to Project](media/officeprojseq_1.png "OfficeProjSeq_1")
 
 
  When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
@@ -51,9 +99,10 @@ One advantage of working in Excel or Project is that you can work offline and ad
   
 
 <a name="WorkingOffline"></a> 
-##  Disconnect  a document file from the network  
+
+##  Disconnect a document file from the network  
   
-To disconnect a an Excel or Project document file from the network:  
+To disconnect an Excel or Project document file from the network:  
   
 1.  Open the document that you want to change while you are offline.  
   
@@ -112,18 +161,18 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
 
-    ![Create a list connection between Excel and the data store](_img/bulk-modify-excel-blank-list.png)
+    ![Create a list connection between Excel and the data store](media/bulk-modify-excel-blank-list.png)
 
     > [!TIP]    
     > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
 
 4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
 
-    ![Connect to server](_img/IC680074.png)
+    ![Connect to server](media/IC680074.png)
 
     If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
 
-    ![Add organization or server](_img/IC658167.png)
+    ![Add organization or server](media/IC658167.png)
 
 5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
 
@@ -183,9 +232,6 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 - [Requirements and compatibility](/azure/devops/server/requirements) 
 
 
-### Can I open a query in Excel or Project from the web portal?  
-
-To open Excel from the web portal, install the [VSTS Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and then open a query that you've created in the web portal. 
 
 <a name="CT_ResolvingPublishErrors"></a>
  

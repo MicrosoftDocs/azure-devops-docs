@@ -6,22 +6,22 @@ ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/17
+ms.date: 10/17/2017
 ---
 
 # Analyze and report on test results using the test perspective 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 <a name="top"></a> By using the Test perspective in the SQL Server Analysis Services cube, you can view just the measures, dimensions, and attributes that pertain to reporting on tests results and test runs. For example, you can use these measures to determine the overall quality of each build, the tests that a particular build affected, and the number of test cases that were run. You can also answer questions about changes to the result outcomes.  
   
 The Test measure group is based on the Test Results relational table, which enables reporting on test results as either a property of the tests or an independent outcome. For more information, see [Test Result tables](test-result-tables.md).  
   
  
-![Test Measure Group](_img/rpt_testmg.png "RPT_TestMG")
+![Test Measure Group](media/rpt_testmg.png "RPT_TestMG")
 
 By using the Test perspective, you can create reports that answer the following questions:
 
@@ -46,13 +46,13 @@ By using the Test perspective, you can create reports that answer the following 
 ##  Example: Progress report for testing user stories  
  By using PivotTable and PivotChart reports in Excel, you can create a status report that shows the test progress on user stories, similar to the report in the following illustration.  
   
- ![User Story Test Status Excel Report](_img/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
+ ![User Story Test Status Excel Report](media/procguid_exruserstore.png "ProcGuid_ExRUserStore")  
   
  The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the [User Story Test Status](../excel/user-story-test-status-excel-report-agile.md) and [Requirement Test Status](../excel/requirement-test-status-excel-report-cmmi.md) in Excel, respectively.  
   
 ### Specify and filter pivot fields  
 
- ![Pivot Fields for User Stories Test Progress](_img/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
+ ![Pivot Fields for User Stories Test Progress](media/pivotfieldsforuserstoriestestprogress.png "PivotFieldsforUserStoriesTestProgress")  
   
  By performing the following steps, you can create a progress report for testing user stories:  
   
@@ -113,7 +113,7 @@ The Test Case, Test Configuration, Test Plan, and Test Suite dimensions correspo
   
  The test case corresponds to a type of work item that the test team uses to define both manual and automated tests that your team can run and manage by using Microsoft Test Manager. A test plan consists of test configurations and test suites. A test configuration defines the software or hardware on which you want to run your tests. A test suite defines a hierarchy within the plan so that you can group test cases together.  
   
- For more information, see [Testing overview](../../test/index.md).  
+ For more information, see [Testing overview](../../test/index.yml).  
   
 |Dimension|Attribute|Description|  
 |---------------|---------------|-----------------|  
@@ -165,7 +165,7 @@ You can link test cases to other work items such as user stories, requirements, 
 ##  <a name="tracking"></a> Required activities  
 To create reports that contain useful data about test efforts and test results, team members should review the information in the following topics:  
   
--   [Continuous testing](../../pipelines/languages/dotnet-core.md#run-your-tests)    
+-   [Continuous testing](../../pipelines/ecosystems/dotnet-core.md#run-your-tests)    
 -   [Using Code Coverage to Determine How Much Code is being Tested](https://msdn.microsoft.com/library/dd537628.aspx)    
   
 ## Related notes

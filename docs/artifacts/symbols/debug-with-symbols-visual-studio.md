@@ -4,9 +4,9 @@ description: Debug with symbols in Visual Studio using the Symbol Server in Azur
 ms.assetid: 318323C4-5B2F-45DE-A834-CCE03C670F8C
 ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: jillfra
-ms.author: elbatk
-author: elbatk
+ms.manager: mijacobs
+ms.author: phwilson
+author: chasewilson
 ms.topic: conceptual
 ms.date: 10/18/2017
 monikerRange: '>= tfs-2017'
@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 # Debug with symbols in Visual Studio
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+[!INCLUDE [](../includes/availability-symbols.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers or package names. To learn more about symbols, read the [concept page](../concepts/symbols.md); to publish symbols, see [this page](/azure/devops/pipelines/artifacts/symbols?toc=/azure/devops/artifacts/toc.json). To use symbols in WinDbg, see [this page](debug-with-symbols-windbg.md).
 
@@ -22,15 +22,15 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 
 To debug with symbols, select and add the Azure DevOps Services symbol server to your Visual Studio environment using the Tools->Options->Debugger->Symbols page.
 
-![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger1.jpg)
+![Add Azure DevOps Services Symbol Server in VS Debugger](media/vsdebugger1.jpg)
 
 In the **Connect to Azure DevOps Services Symbol Server** dialog, select the organization to which the symbols have been published and the corresponding user identity that has access to this organization. 
 
-![Connect to Azure DevOps Services Symbol Server](_img/connectsymbolserver.png)
+![Connect to Azure DevOps Services Symbol Server](media/connectsymbolserver.png)
 
 Click **Connect** in the above dialog. The Azure DevOps Services Symbol Server is now remembered by Visual Studio. When a debugging session begins, Visual Studio will be able to get symbols from Azure DevOps Services.
 
-![Add Azure DevOps Services Symbol Server in VS Debugger](_img/vsdebugger2.png)
+![Add Azure DevOps Services Symbol Server in VS Debugger](media/vsdebugger2.png)
 
 ## Debugging optimized modules
 

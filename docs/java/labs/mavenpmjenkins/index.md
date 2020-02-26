@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -26,9 +26,11 @@ In this exercise, you are going to clone a GitHub repo into Azure DevOps, if you
 
 This exercise assumes you have completed the exercises to create a Team Project, have set up the Docker private Azure DevOps agent, and imported the MyShuttleCalc and MyShuttle2 GitHub repos into your Azure DevOps team project. This exercise also assumes that you have cloned the repos in either [IntelliJ](../intellijgit/index.md) or [Eclipse](../eclipsegit/index.md). This exercise uses a team project named **jdev**, though your team project name may differ.
 
-> **Note**: It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
-> 
-> **Note**: Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
+> [!NOTE]
+> It is not necessary to clone GitHub repos into Azure DevOps. Azure DevOps will work just fine with GitHub (or other Git hosted) repos. However, some linkages from source code to other aspects of the DevOps pipeline (such as work items, builds or releases) work best if the code is in Azure DevOps.
+>
+> [!NOTE]
+> Port 8080 is not open on the Azure VM for security purposes. However, since a local agent is running in Docker on the VM, it will be able to build and interact with Azure DevOps anyway. 
 
 ## Configure Package Management
 
@@ -43,7 +45,7 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
 1. On your VM, open a terminal by clicking on the Terminal Emulator icon in the toolbar.
 
-    ![Click on the terminal icon in the Toolbar](../_img/mavenpmjenkins/click-terminal.png)
+    ![Click on the terminal icon in the Toolbar](../media/mavenpmjenkins/click-terminal.png)
 
 1. Enter the following command:
 
@@ -53,9 +55,10 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
     and press Enter 3 times to use the default id_rsa location as well as an empty pass phrase.
 
-   ![Create an SSH key](../_img/mavenpmjenkins/generate-key.png)
+    ![Create an SSH key](../media/mavenpmjenkins/generate-key.png)
 
-   > **Note**: the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
+    > [!NOTE]
+    > the domain is not important - use any value you want. You can also enter a pass phrase if you want to, though this will cause a prompt each time you use the key.
 
 1. Enter the following command to print out the public key in the terminal:
 
@@ -69,15 +72,16 @@ In this task you will create an SSH key to authenticate to the Azure DevOps repo
 
 1. Click on your profile image in the upper right. In the menu, click Security.
 
-    ![Click on Security under your Profile image](../_img/mavenpmjenkins/click-security.png)
+    ![Click on Security under your Profile image](../media/mavenpmjenkins/click-security.png)
 
 1. Click on "SSH public keys" and click the "Add" button.
 
 1. Enter "jdev" for the Description and then paste into the Key Data the contents of the public key (which should be in your clipboard).
 
-    ![Add a new public key](../_img/mavenpmjenkins/add-ssh-key-to-vsts.png)
+    ![Add a new public key](../media/mavenpmjenkins/add-ssh-key-to-vsts.png)
 
-   > **Note**: Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
+    > [!NOTE]
+    > Once you have your SSH credentials set up, you can use the SSH URL when cloning repositories.
 
 ## Configure the Jenkins Maven installation
 
@@ -91,7 +95,7 @@ In this task you will configure the Maven installation settings for Jenkins.
 
 1. Enter `default` as the name. Uncheck the "Install Automatically" checkbox and enter `/usr/share/maven` for the MAVEN_HOME property.
 
-    ![Configure the Jenkins Maven installation](../_img/mavenpmjenkins/configure-maven.png)
+    ![Configure the Jenkins Maven installation](../media/mavenpmjenkins/configure-maven.png)
 
 1. Click Save.
 
@@ -101,11 +105,11 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 1. Open your Azure DevOps Project in Chrome and click on Repos to open the Code Hub. Select "MyShuttleCalc" from the list of repos.
 
-    ![Navigate to MyShuttleCalc repo](../_img/mavenpmjenkins/navigate-to-repo.png)
+    ![Navigate to MyShuttleCalc repo](../media/mavenpmjenkins/navigate-to-repo.png)
 
-2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH url into the clipboard.
+2. In the upper right, click the "Clone" button. Switch to the SSH tab and copy the SSH URL into the clipboard. **Do not include the `git@` portion of the URL.**
 
-    ![Copy the SSH url](../_img/mavenpmjenkins/ssh-url.png)
+    ![Copy the SSH URL](../media/mavenpmjenkins/ssh-URL.png)
 
 3. Go back to Jenkins in your browser.
 
@@ -113,7 +117,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 5. Enter `MyShuttleCalc` for the item name and click on "Maven Project". Click OK.
 
-6. In the Source Code Management section, select Git. Paste in the SSH url to the MyShuttleCalc repo.
+6. In the Source Code Management section, select Git. If you do not see an option for Git, you may be using an old version of Jenkins. Paste the SSH URL into the MyShuttleCalc repo.
 
 7. Click the "Add" button in the Credentials section and select "Jenkins".
 
@@ -123,19 +127,19 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
 
 10. Open a terminal and cat the `~/.ssh/id_rsa` file (or open it in any editor) and paste the contents into the Key textbox. Enter a passphrase (if you used one - otherwise leave it empty). Enter `vmadmin` as the ID. Click Add.
 
-     ![Enter the SSH key info](../_img/mavenpmjenkins/ssh-key.png)
+     ![Enter the SSH key info](../media/mavenpmjenkins/ssh-key.png)
 
 11. Your Source Code Management should now look like this:
 
-     ![Source Code Management](../_img/mavenpmjenkins/sc-management.png)
+     ![Source Code Management](../media/mavenpmjenkins/sc-management.png)
 
 12. In the Build section, ensure that "Root POM" is `pom.xml`. Set the "Goals and options" to `deploy -Dbuildversion=1.0.${BUILD_NUMBER}`. Click the Advanced button to expand the advanced settings. Change the "Settings file" to "Settings file in filesystem" and set the "File path" to `maven/settings.xml`. These settings instruct Maven to build, test and package the code and then publish the package to the repository defined in the settings.xml file, which you previously modified to include the authentication token.
 
-     ![Build settings](../_img/mavenpmjenkins/build-settings.png)
+     ![Build settings](../media/mavenpmjenkins/build-settings.png)
 
 13. Scroll down to Post-build Actions. Click "Add post-build action" and select "Record JaCoCo coverage report". You can leave all the settings as defaulted. This publishes the JaCoCo results for this job.
 
-     ![JaCoCo post-build action](../_img/mavenpmjenkins/jacoco-post-build.png)
+     ![JaCoCo post-build action](../media/mavenpmjenkins/jacoco-post-build.png)
 
 14. Add a new post-build action - this time select "Archive the artifacts". Set "Files to archive" to `**/MyShuttleCalc*.jar`. This saves the MyShuttleCalc jar file as an artifact from this job.
 
@@ -144,7 +148,7 @@ In this task you will create a Maven job in Jenkins to build MyShuttleCalc and t
     - **Type**: JUnit, **Files to include**: `**/TEST-*.xml`
     - **Type**: JaCoCo, **Files to include**: `**/jacoco/**`
 
-      ![Azure DevOps Results action](../_img/mavenpmjenkins/vsts-post-build.png)
+      ![Azure DevOps Results action](../media/mavenpmjenkins/vsts-post-build.png)
 
 16. Click the Save button.
 
@@ -154,17 +158,17 @@ In this task you will run the build to ensure that it runs successfully.
 
 1. Click "Build Now" in the links on the left to start a build. Alternatively you can schedule the build from the dashboard by clicking the Schedule build button:
 
-    ![Click schedule build](../_img/mavenpmjenkins/click-schedule.png)
+    ![Click schedule build](../media/mavenpmjenkins/click-schedule.png)
 
 1. Click on the build number to open the build. Click on "Console Output" to watch the logs.
 
 1. When the build completes, you can click on "Back to project" to go to the build summary. You should see test and coverage results as well as a link to the jar artifact.
 
-    ![Jenkins build results](../_img/mavenpmjenkins/jenkins-results.png)
+    ![Jenkins build results](../media/mavenpmjenkins/jenkins-results.png)
 
 1. Navigate to the Maven Package feed in Azure DevOps. You should see the latest package with the version number matching 1.0._jenkins-build-number_.
 
-    ![Package in feed](../_img/mavenpmjenkins/package-feed.png)
+    ![Package in feed](../media/mavenpmjenkins/package-feed.png)
 
 ## Integrate Azure DevOps Build and Jenkins
 
@@ -178,7 +182,7 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
 
 1. In the Access Control section, select "Jenkins' own user database" and check "Allow users to sign up". Ensure "Anyone can do anything" is selected user Authorization.
 
-    ![Configure security](../_img/mavenpmjenkins/jenkins-security.png)
+    ![Configure security](../media/mavenpmjenkins/jenkins-security.png)
 
 1. Click "Save".
 
@@ -193,13 +197,13 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     | Name | Value | Notes |
     | --------------- | ---------------------------- | ----------------------------------------------------------- |
     | Connection Name | `Azure VM Jenkins` | The name of this connection |
-    | Server URL | `http://10.0.0.4:8080`  | The internal IP address of the Azure VM on port 8080 (the Jenkins port)
+    | Server URL | `http://MyJenkinsServer:8080`  | The public URL of the Azure VM on port 8080 (the Jenkins port)
     | Username | The username you created in Jenkins | |
     | Password | The password you created in Jenkins | |
 
 1. Click on "Verify connection" to ensure that the connection is valid.
 
-    ![Jenkins endpoint](../_img/mavenpmjenkins/jenkins-endpoint.png)
+    ![Jenkins endpoint](../media/mavenpmjenkins/jenkins-endpoint.png)
 
 1. In Azure DevOps, click on Pipelines -> Builds to open the builds hub.
 
@@ -219,11 +223,11 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     Connect to the MyShuttleCalc repo on the master branch.
 1. Configure the "Queue Jenkins Job: MyShuttleCalc" task as follows:
 
-    ![Queue Jenkins task](../_img/mavenpmjenkins/queue-jenkins.png)
+    ![Queue Jenkins task](../media/mavenpmjenkins/queue-jenkins.png)
 
 1. Configure the "Download artifacts produced by MyShuttleCalc" task as follows:
 
-    ![Download artifacts task](../_img/mavenpmjenkins/download-artifacts.png)
+    ![Download artifacts task](../media/mavenpmjenkins/download-artifacts.png)
 
 1. Insert a "Publish Test Results" task and configure it as follows:
 
@@ -233,7 +237,7 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     | Test results files | `**/TEST-*.xml` | File containing test results
     | Search Folder | `$(Build.ArtifactStagingDirectory)` | Root folder for search operation |
 
-    ![Publish test results task](../_img/mavenpmjenkins/publish-test-results.png)
+    ![Publish test results task](../media/mavenpmjenkins/publish-test-results.png)
 
 1. Insert a "Publish Code Coverage Results" task and configure it as follows:
 
@@ -243,13 +247,13 @@ In this task you will configure a Build Pipeline in Azure DevOps that will trigg
     | Summary File | `$(Build.ArtifactStagingDirectory)/jenkinsResults/MyShuttleCalc/team-results/jacoco/target/site/jacoco/jacoco.xml` | File containing JaCoCo results
     | Report Directory | `$(Build.ArtifactStagingDirectory)/jenkinsResults/MyShuttleCalc/team-results/jacoco/target/site/jacoco` | Folder containing detailed coverage reports |
 
-    ![Publish code coverage results task](../_img/mavenpmjenkins/publish-coverage-results.png)
+    ![Publish code coverage results task](../media/mavenpmjenkins/publish-coverage-results.png)
 
 1. The final list of tasks should look as follows:
 
-    ![Build tasks](../_img/mavenpmjenkins/vsts-tasks.png)
+    ![Build tasks](../media/mavenpmjenkins/vsts-tasks.png)
 
 1. Save and Queue the build.
 1. When the build completes, click on the build number to see the results.
 
-    ![Build results](../_img/mavenpmjenkins/vsts-results.png)
+    ![Build results](../media/mavenpmjenkins/vsts-results.png)

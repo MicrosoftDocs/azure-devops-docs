@@ -1,5 +1,5 @@
----
-title: Switch the Team Explorer Work Items page experience  
+﻿---
+title: Change Work Items page experience
 titleSuffix: Azure Boards and TFS
 description: Change the Work Items page setting from default to legacy in Visual Studio 2019 Team Explorer  
 ms.custom: seodec18  
@@ -7,7 +7,7 @@ ms.custom: work-items
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
@@ -58,7 +58,7 @@ Each view supports the following tasks:
 1. Choose your **Landing page** option from the menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Tools>Options>Work Items](_img/set-vs-experience/option-vs-options-work-items.png)
+	> ![Open Tools>Options>Work Items](media/set-vs-experience/option-vs-options-work-items.png)
 
 To learn more about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
 

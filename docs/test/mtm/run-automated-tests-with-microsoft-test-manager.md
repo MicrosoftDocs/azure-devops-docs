@@ -5,19 +5,19 @@ ms.assetid: F9E8F299-6266-47E3-B896-17D8504E6165
 ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: jillfra
-ms.author: ahomer
-author: alexhomer1
+ms.manager: mijacobs
+ms.author: sdanie
+author: steved0x
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Run automated tests with Microsoft Test Manager
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 ## Set up your test plan to use your build  
  
@@ -140,6 +140,6 @@ To view and update the test results:
 ## See Also  
 
 * [Run automated tests from test plans](../run-automated-tests-from-test-hub.md)
-* [Continuous testing scenarios and capabilities](../../pipelines/index.md)
+* [Continuous testing scenarios and capabilities](../../pipelines/index.yml)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

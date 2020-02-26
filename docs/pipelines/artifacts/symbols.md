@@ -6,21 +6,22 @@ description: Publish symbols to a symbol server for debugging using Azure Pipeli
 ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
-ms.manager: jillfra
-ms.author: amullans
+ms.manager: mijacobs
+ms.author: phwilson
 ms.date: 10/18/2017
 monikerRange: '> tfs-2015'
+author: chasewilson
 ---
 
 # Publish symbols for debugging
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [](../../artifacts/_shared/availability-symbols.md)]
+[!INCLUDE [](../../artifacts/includes/availability-symbols.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols). To consume symbols, see [this page for Visual Studio](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-windbg).
 
@@ -28,12 +29,12 @@ Symbol servers enable debuggers to automatically retrieve the correct symbol fil
 To publish symbols to the symbol server in Azure Artifacts, include the [Index Sources and Publish Symbols](../tasks/build/index-sources-publish-symbols.md) task in your build pipeline. Configure the task as follows:
 ::: moniker range=">= tfs-2018"
 
-* For **Version**, select **2.\***.
+* For **Version**, select **2.\\***.
 
 ::: moniker-end
 ::: moniker range="<= tfs-2017"
 
-* For **Version**, select **1.\***.
+* For **Version**, select **1.\\***.
 
 ::: moniker-end
 
@@ -51,12 +52,12 @@ You can also publish symbols to a file share by using the [Index Sources and Pub
 
 Add the task to your build pipeline and configure it as follows:
 
-* For **Version**, select **2.\***. 
+* For **Version**, select **2.\\***. 
 * For **Symbol Server Type**, select **File share**.
     * When you select **File share** as **Symbol Server Type**, you get the **Compress Symbols** option. This option compresses your symbols to save space. 
 * Use the **Path to symbols folder** argument to specify the root directory that contains the .pdb files to be published.
 * Use the **Search pattern** argument to specify search criteria to find the .pdb files in the folder that you specify in **Path to symbols folder**. You can use a single-folder wildcard (```*```) and recursive wildcards (```**```).
-For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
+  For example, ```**\bin\**\*.pdb``` searches for all .pdb files in all subdirectories named *bin*.
 
 ## Portable PDBs
 
@@ -81,7 +82,7 @@ The mapping information injected into the .pdb files contains variables that can
 
 * A location (SRCSRVTRG) where the debugger can find the retrieved source file.
 
- The mapping information might look something like the following:
+  The mapping information might look something like the following:
 
 ```
 SRCSRV: variables ------------------------------------------

@@ -1,11 +1,11 @@
----
-title: Verify the synchronization process for TFS-Project Server integration
+﻿---
+title: Verify synch process for TFS-Project Server integration
 titleSuffix: TFS 
 description: Verify the synchronization process for the integration of Team Foundation Server & Project Server  
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 767af0db-6c5d-4c1e-b2a3-8b4ffbd8ff6d
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -14,7 +14,7 @@ ms.date: 01/12/2017
 
 
 # Verify the synchronization process for TFS-Project Server integration
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> If you suspect that the data in Visual Studio Team Foundation Server and Microsoft Project Server is not synchronizing as you expect, you can review the following checklist to verify or troubleshoot operations.  
   
@@ -35,9 +35,9 @@ ms.date: 01/12/2017
   -   **Review the synchronization process**. You can manage the integration of the two server products more effectively if you understand how the synchronization engine manages the flow of data between them. The engine synchronizes data in three ways. It captures and updates task-related and resource-related data in both server products while respecting the ownership of data by the project manager in the project plan. For more information, see [Synchronization process overview](synchronization-process-overview.md).  
   
   -   **Check known issues and workarounds**. If an error appears, you can  determine whether you have encountered a known issue and whether a workaround has been identified. For more information, see [Known issues and workarounds](known-issues-and-workarounds.md).  
-  -   Verify that the Team Foundation Background Job Agent is running. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).  
+  -   Verify that the Team Foundation Background Job Agent is running. For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).  
   
-  If you have reviewed these suggestions and you still suspect a problem, visit the following forum on the Microsoft website: [Team Foundation Server and Project Server Integration](http://go.microsoft.com/fwlink/?LinkId=207282).  
+  If you have reviewed these suggestions and you still suspect a problem, visit the following forum on the Microsoft website: [Team Foundation Server and Project Server Integration](https://go.microsoft.com/fwlink/?LinkId=207282).  
   
 ## Related articles  
  [Known issues and workarounds](known-issues-and-workarounds.md)   

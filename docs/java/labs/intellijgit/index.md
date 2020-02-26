@@ -5,7 +5,7 @@ ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -30,37 +30,37 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
 1. Click on the IntelliJ icon in the toolbar to open IntelliJ IDEA.
 
-    ![Click IntelliJ in the Toolbar](../_img/intellijgit/click-intellij.png)
+    ![Click IntelliJ in the Toolbar](../media/intellijgit/click-intellij.png)
 
 2. The first time you run IntelliJ, it will prompt for IntelliJ settings and theme settings. Click on "Do not import settings," then click on "Skip All and Set Defaults" to use the defaults.
 
-    ![Accept the default IntelliJ theme](../_img/intellijgit/intellij-defaults.png)
+    ![Accept the default IntelliJ theme](../media/intellijgit/intellij-defaults.png)
 
 3. When the Welcome dialog appears, click Configure and then select Plugins.
 
-    ![Click on Configure to configure Plugins](../_img/intellijgit/intellij-config-plugins.png)
+    ![Click on Configure to configure Plugins](../media/intellijgit/intellij-config-plugins.png)
 
 4. In the search box type `Azure DevOps Services` and click the "Search in repositories" link in the main window.
 
-    ![Search for the Azure DevOps Services plugin](../_img/intellijgit/intellij-search-vsts.png)
+    ![Search for the Azure DevOps Services plugin](../media/intellijgit/intellij-search-vsts.png)
 
 5. Click install to install the extension. The install button will change to a "Restart" button - click it to restart IntelliJ.
 
-    ![Install the plugin and restart IntelliJ](../_img/intellijgit/intellij-click-install.png)
+    ![Install the plugin and restart IntelliJ](../media/intellijgit/intellij-click-install.png)
 
 6. When IntelliJ restarts, the Welcome dialog will appear again. Click "Check out from Version Control" and select "Azure DevOps Services Git".
 
-    ![Checkout from Azure DevOps Services Git](../_img/intellijgit/intellij-open-from-vsts.png)
+    ![Checkout from Azure DevOps Services Git](../media/intellijgit/intellij-open-from-vsts.png)
 
 7. Click on "Sign in..." to sign in to your organization.
 
-    ![Sign in to Azure DevOps Services](../_img/intellijgit/intellij-vsts-signin.png)
+    ![Sign in to Azure DevOps Services](../media/intellijgit/intellij-vsts-signin.png)
 
 ## Clone MyShuttle2 from Azure DevOps Services with IntelliJ
 
 1. Once you have authenticated, enter "MyShuttle2" into the search bar and select the MyShuttle2 repo from your team project. Click the Clone button to clone the repo to the VM.
 
-    ![Select the Azure DevOps Services repo](../_img/intellijgit/intellij-select-repo.png)
+    ![Select the Azure DevOps Services repo](../media/intellijgit/intellij-select-repo.png)
 
 1. IntelliJ detects a Maven project file (pom.xml) and asks if you want to open it. Click "Yes" to open the project. You can dismiss the Tip of the Day dialog that appears.
 
@@ -70,36 +70,37 @@ This exercise assumes you have completed [the Azure DevOps Services Java project
 
 1. A yellow warning appears in the main editor window prompting you to "Setup SDK". Click on the link.
 
-    ![Setup the JDK for the project](../_img/intellijgit/intellij-setup-sdk.png)
+    ![Setup the JDK for the project](../media/intellijgit/intellij-setup-sdk.png)
 
 1. In the Select Project SDK dialog, click "Configure..."
 
-    ![Click on Configure](../_img/intellijgit/intellij-jdk-configure.png)
+    ![Click on Configure](../media/intellijgit/intellij-jdk-configure.png)
 
 1. In the upper left, click the green "+" icon to add a new SDK.
 
-    ![Add an SDK](../_img/intellijgit/intellij-add-sdk.png)
+    ![Add an SDK](../media/intellijgit/intellij-add-sdk.png)
 
 1. Select `java-8-openjdk-amd64` from the folder list and click OK. Click OK back through the rest of the dialogs.
 
-    ![Select the SDK folder](../_img/intellijgit/intellij-select-sdk.png)
+    ![Select the SDK folder](../media/intellijgit/intellij-select-sdk.png)
 
-    > **Note**: The project will not currently compile, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
+    > [!NOTE]
+    > The project will not currently compile, since it has a dependency on a library (MyShuttleCalc) that it cannot resolve. You will fix this in the Package Management lab.
 
 ## Clone MyShuttleCalc from Azure DevOps Services with IntelliJ
 
 1. While the MyShuttle2 project is open in IntelliJ, in the toolbar at the top of IntelliJ, select File -> New -> Project from Version Control -> Azure DevOps Services Git.
 
-    ![New Azure DevOps Services Git project](../_img/intellijgit/intellij-new-myshuttlecalc-project.png)
+    ![New Azure DevOps Services Git project](../media/intellijgit/intellij-new-myshuttlecalc-project.png)
 
 1. Enter "MyShuttleCalc" into the search bar and select the MyShuttleCalc repo from your team project. Click the Clone button to clone the repo to the VM.
 
-    ![Clone the MyShuttleCalc repo](../_img/intellijgit/intellij-clone-myshuttlecalc.png)
+    ![Clone the MyShuttleCalc repo](../media/intellijgit/intellij-clone-myshuttlecalc.png)
 
 1. IntelliJ will prompt to open the project in the same or a new window. Choose "New Window" to open another instance of IntelliJ with the MyShuttleCalc project.
 
-    ![New window](../_img/intellijgit/intellij-new-window.png)
+    ![New window](../media/intellijgit/intellij-new-window.png)
 
 1. IntelliJ should open in a new instance with the project loaded.
 
-    ![MyShuttleCalc](../_img/intellijgit/intellij-myshuttlecalc.png)
+    ![MyShuttleCalc](../media/intellijgit/intellij-myshuttlecalc.png)

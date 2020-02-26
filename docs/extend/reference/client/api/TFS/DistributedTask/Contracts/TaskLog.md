@@ -1,13 +1,14 @@
 ---
 title: TFS/DistributedTask/Contracts TaskLog API | Extensions for Azure DevOps Services
+description: Data representation of a task log.
 ms.assetid: 56a035fb-2942-ff0f-d92f-9aec63fa62ec
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

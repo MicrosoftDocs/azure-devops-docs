@@ -4,10 +4,10 @@ ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetHelpers WidgetconfigurationSave API | Extensions for Azure DevOps Services
 description: Documentation for the WidgetconfigurationSave helper class.
 ms.assetid: F2FC3C7B-BF8B-459B-8BF3-EA1A805A5ADC
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

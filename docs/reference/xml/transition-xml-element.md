@@ -5,8 +5,9 @@ description: Syntax and usage of the TRANSITION element used to specify a valid 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: bb4ced9a-bebb-4011-8646-4beb94655afa
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.date: 10/27/2017
 ---
 
@@ -14,7 +15,7 @@ ms.date: 10/27/2017
 
 # TRANSITION XML element  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **TRANSITION** element to specify a valid progression or regression from one state to another for a type of work item. The **TRANSITION** element is a required child element of the **TRANSITIONS** element.  
   

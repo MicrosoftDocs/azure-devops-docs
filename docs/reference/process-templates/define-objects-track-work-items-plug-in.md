@@ -1,12 +1,13 @@
----
+﻿---
 title: Define work item types for a process template 
 titleSuffix: Azure DevOps & TFS
 description: Use the plug-in for tracking work items and defining a project's initial objects for tracking work for Team Foundation Server 
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 6d6103d6-2558-460c-b022-9eda2ffe4023
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 09/08/2017
@@ -14,7 +15,7 @@ ms.date: 09/08/2017
 
 # Define objects for tracking work items using the work Item tracking plug-in
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 By using the plug-in for tracking work items, you define a project's initial objects for tracking work. These objects include types of work items, work item queries, categories, link types, and instances of work items. After you create a project, you can modify these objects by using the **witadmin** command-line tool.  
   

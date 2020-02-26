@@ -1,11 +1,11 @@
----
-title: Resolve errors received when configuring features for TFS
+﻿---
+title: Resolve errors received configuring TFS features
 titleSuffix: TFS 
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/19/2017
@@ -32,7 +32,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
   For more information, see [Add administrators, set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!NOTE]  
->  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](http://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](http://go.microsoft.com/fwlink/?LinkId=248071).  
+>  If you encounter problems while performing the following procedures, you might find solutions in one of the TFS forums: [Work Item Tracking](https://go.microsoft.com/fwlink/?LinkId=248070) and [Process Templates](https://go.microsoft.com/fwlink/?LinkId=248071).  
  
   
 ##  <a name="errors"></a> Resolve errors reported by the Configure Features wizard  
@@ -104,7 +104,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 > [!NOTE]  
 > The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your project. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)] 
   
 1. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   

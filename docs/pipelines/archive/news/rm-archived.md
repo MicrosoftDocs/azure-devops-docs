@@ -1,12 +1,12 @@
----
-title: Archived release notes for Microsoft Release Management
+﻿---
+title: Archived release notes for Release Management
 ms.custom: seodec18
 description: Archived release for Azure Pipelines and TFS
 ms.assetid: 1872D1B0-0514-4FD2-9BFB-DF9538BF93DF
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,12 +15,13 @@ monikerRange: '>= tfs-2013'
 
 # Archived release notes for Microsoft Release Management
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
-**NOTE**: Release Management has now been combined with the Build features
-of Azure Pipelines and Team Foundation Server (TFS) in the new 
-**Pipelines** hub. For details of new features and changes, see
-[Team Foundation Build and Release release notes](2017.md).
+> [!NOTE]
+> Release Management has now been combined with the Build features
+> of Azure Pipelines and Team Foundation Server (TFS) in the new 
+> **Pipelines** hub. For details of new features and changes, see
+> [Team Foundation Build and Release release notes](2017.md).
 
 <a name="whatsnew"></a>
 ## What's new?
@@ -28,29 +29,29 @@ of Azure Pipelines and Team Foundation Server (TFS) in the new
 The following changes, categorized by release date, were added to Release Management:
 
 * **Team Foundation Server**
- - [November 16, 2016 Update](#update-nov16)
- - [Mar 3, 2016 Update](#update-mar3-16)
- - [Feb 12, 2016 Update](#update-feb12-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [Mar 3, 2016 Update](#update-mar3-16)
+  - [Feb 12, 2016 Update](#update-feb12-16)
 * **Azure Pipelines**
- - [November 23, 2016 Update](#update-nov23-16)
- - [November 16, 2016 Update](#update-nov16)
- - [October 12, 2016 Update](#update-oct12-16)
- - [September 21, 2016 Update](#update-sep21-16)
- - [September 2, 2016 Update](#update-sep2-16)
- - [July 28, 2016 Update](#update-jul28-16)
- - [June 24, 2016 Update](#update-jun24-16)
- - [May 23, 2016 Update](#update-may23-16)
- - [April 26, 2016 Update](#update-apr26-16)
- - [April 8, 2016 Update](#update-apr8-16)
- - [March 15, 2016 Update](#update-mar15-16)
- - [February 24, 2016 Update](#update-feb24-16)
- - [February 11, 2016 Update](#update-feb11-16)
- - [December 1, 2015 Update](#update-dec1-15)
- - [November 18, 2015 Update](#update-nov18-15)
- - [November 03, 2015 Update](#update-nov3-15)
- - [October 19, 2015 Update](#update-oct19-15)
- - [September 21, 2015 Update](#update-sep21-15)
- - [September 4, 2015 Update](#update-sep4-15)
+  - [November 23, 2016 Update](#update-nov23-16)
+  - [November 16, 2016 Update](#update-nov16)
+  - [October 12, 2016 Update](#update-oct12-16)
+  - [September 21, 2016 Update](#update-sep21-16)
+  - [September 2, 2016 Update](#update-sep2-16)
+  - [July 28, 2016 Update](#update-jul28-16)
+  - [June 24, 2016 Update](#update-jun24-16)
+  - [May 23, 2016 Update](#update-may23-16)
+  - [April 26, 2016 Update](#update-apr26-16)
+  - [April 8, 2016 Update](#update-apr8-16)
+  - [March 15, 2016 Update](#update-mar15-16)
+  - [February 24, 2016 Update](#update-feb24-16)
+  - [February 11, 2016 Update](#update-feb11-16)
+  - [December 1, 2015 Update](#update-dec1-15)
+  - [November 18, 2015 Update](#update-nov18-15)
+  - [November 03, 2015 Update](#update-nov3-15)
+  - [October 19, 2015 Update](#update-oct19-15)
+  - [September 21, 2015 Update](#update-sep21-15)
+  - [September 4, 2015 Update](#update-sep4-15)
 
 <a name="update-nov23-16"></a>
 ### November 23, 2016 Update (Azure Pipelines)
@@ -175,7 +176,7 @@ current project. Now, you can now link build artifacts from another project
 as well. While linking an artifact, the project drop down will list all
 the projects in the account.
 
-![Build artifacts dialog](_img/rm-archived/release-notes-29.png)
+![Build artifacts dialog](media/rm-archived/release-notes-29.png)
 
 <a name="update-nov16"></a>
 ### November 16, 2016 Update (Azure Pipelines, TFS 2017)
@@ -233,7 +234,7 @@ not specified in the template. **Complete** mode deletes
 resources that are not in your template. By default,
 **Incremental** mode is used.
 
-![Azure Resource Group improvements](_img/rm-archived/release-notes-27.png)
+![Azure Resource Group improvements](media/rm-archived/release-notes-27.png)
 
 See [Azure Resource Group Deployment Task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureResourceGroupDeploymentV2).
 
@@ -246,7 +247,7 @@ and Windows. The task supports both Classic and ARM subscriptions.
 It also supports two modes of providing the script:
 as a linked artifact or as an inline script.
 
-![Azure CLI task](_img/rm-archived/release-notes-28.png)
+![Azure CLI task](media/rm-archived/release-notes-28.png)
 
 See [Deploy: Azure CLI](../../tasks/deploy/azure-cli.md).
 
@@ -300,11 +301,11 @@ self-signed certificate or a certificate that cannot be
 verified by a Certificate Authority (CA), this setting
 lets administrators deliberately trust the certificate.
 
-![Specifying an untrusted certificate for a Jenkins connection](_img/rm-archived/release-notes-24.png)
+![Specifying an untrusted certificate for a Jenkins connection](media/rm-archived/release-notes-24.png)
 
 For more information about Jenkins integration
 capabilities, see
-[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 <a name="sep2-manualinter"></a>
 **Deployment manual intervention**
@@ -335,7 +336,7 @@ The **Azure SQL Database Deployment** task has been
 enhanced to run SQL scripts against an Azure SQL Database.
 The scripts can be provided as a file, or inline within the task.
 
-![Using a script with an Azure SQL Database Deployment task](_img/rm-archived/release-notes-25.png)
+![Using a script with an Azure SQL Database Deployment task](media/rm-archived/release-notes-25.png)
 
 <a name="update-jul28-16"></a>
 ### July 28, 2016 Update (Azure Pipelines)
@@ -362,7 +363,7 @@ variables, and abstract the rest of the task information. The new task group
 is automatically added to the task catalogue, ready to add to other release
 and build pipelines.
 
-![Task groups to encapsulate multiple tasks](_img/rm-archived/release-notes-23.png)
+![Task groups to encapsulate multiple tasks](media/rm-archived/release-notes-23.png)
 
 For more details, see [Task groups](../../library/task-groups.md).
 
@@ -388,7 +389,7 @@ Two new features make it easier to deploy applications to Azure:
   and so has access to all resources within the subscription. For more details, see
   [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
- ![Configuring a Service Principal Authentication based Azure service connection](_img/rm-archived/rel103-01.png)
+  ![Configuring a Service Principal Authentication based Azure service connection](media/rm-archived/rel103-01.png)
 
 * **Deployment to national Azure clouds**. Use the new **Environment** setting in an
   Azure Classic service connection to target a specific Azure cloud, including pre-defined
@@ -396,7 +397,7 @@ Two new features make it easier to deploy applications to Azure:
   For more details, see
   [Azure Classic service connection](../../library/service-endpoints.md#sep-azure-classic).
 
- ![Configuring an Azure Classic service connection to target a specific Azure cloud](_img/rm-archived/rel103-02.png)
+  ![Configuring an Azure Classic service connection to target a specific Azure cloud](media/rm-archived/rel103-02.png)
 
 <a name="jul28-softdelete"></a>
 **Soft delete of releases**
@@ -439,7 +440,7 @@ Two new features make it easier to work with artifacts and artifact sources:
   name of the build pipeline, you can edit the source alias to reflect the name of the
   build pipeline.
 
- For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
+  For more details, see [Artifact source alias](../../release/artifacts.md#source-alias).
 
 * A number of variables of the format Build.\* (such as Build.BuildId and Build.BuildNumber)
   are exposed for use in task parameters. When multiple sources are associated with a release,
@@ -481,7 +482,7 @@ If you are using Team Foundation Server 2015 Update 2 or higher, you
 can download and install **[this extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.rm-import-export)**
 from Visual Studio Marketplace to get the same functionality.
 
-![Clone and export commands on release summary page](_img/rm-archived/release-notes-16.png)
+![Clone and export commands on release summary page](media/rm-archived/release-notes-16.png)
 
 <a name="jun24-testresults"></a>
 **Test results displayed in the release summary**
@@ -491,7 +492,7 @@ external service to show environment-specific information. In Azure Pipelines,
 this functionality is used to display a summary of test results when tests
 are run as part of a release environment.
 
-![Test results - if any - displayed in a release summary](_img/rm-archived/release-notes-17.png)
+![Test results - if any - displayed in a release summary](media/rm-archived/release-notes-17.png)
 
 <a name="jun24-tokens"></a>
 **Pass OAuth tokens to scripts**
@@ -502,7 +503,7 @@ you need to pass the OAuth token in the script. A new option when you configure
 an environment allows scripts run as tasks in the environment to access the
 current OAuth token.
 
-![Setting the option to allow access to the OAuth token](_img/rm-archived/release-notes-18.png)
+![Setting the option to allow access to the OAuth token](media/rm-archived/release-notes-18.png)
 
 This is a simple example showing how to get a build pipeline:
 
@@ -525,7 +526,7 @@ fine-grained control over the release and deployment process. The
 value is specified in the **Control Options** parameters for each
 task as a number of minutes. The default is zero (infinite timeout).
 
-![Setting the timeout for a task in a release pipeline](_img/rm-archived/release-notes-19.png)
+![Setting the timeout for a task in a release pipeline](media/rm-archived/release-notes-19.png)
 
 For more details, see [Out-of-the-box tasks](../../process/tasks.md#task-control-options)
 
@@ -539,7 +540,7 @@ if a task with this option set should fail. The
 same behavior is now available in release pipelines. If a task fails,
 the overall release result will show as "Release partially succeeded".
 
-![Release summary shows partially successful releases in orange color](_img/rm-archived/release-notes-20a.png)
+![Release summary shows partially successful releases in orange color](media/rm-archived/release-notes-20a.png)
 
 By default, a partially successful release will not automatically trigger
 a release to a subsequent environment, even if this behavior is specified
@@ -548,7 +549,7 @@ each release environment that instructs Release Management to trigger a
 release to a subsequent environment when the previous release is partially
 successful.
 
-![Setting the option to trigger from a partially successful release](_img/rm-archived/release-notes-20b.png)
+![Setting the option to trigger from a partially successful release](media/rm-archived/release-notes-20b.png)
 
 For more details, see [Environment deployment triggers](../../release/triggers.md#env-triggers)
 
@@ -560,7 +561,7 @@ directly, without passing them through a build pipeline, as described in
 **[this topic](../../release/artifacts.md#tfvcsource)**.
 You can now do the same if your code in stored in a GitHub repository.
 
-![Linking code in a GutHub repository to a release pipeline](_img/rm-archived/release-notes-21.png)
+![Linking code in a GutHub repository to a release pipeline](media/rm-archived/release-notes-21.png)
 
 For more details, see [TFVC, Git, and GitHub sources](../../release/artifacts.md#tfvcsource)
 
@@ -607,7 +608,7 @@ publishing options such as the ability to retain app data, take an app off-line,
 and remove additional files at the destination. More features, such as
 configuration transformations, may appear in forthcoming versions.
 
-![Using the AzureRM Web App Deployment task in a release pipeline](_img/rm-archived/release-notes-22.png)
+![Using the AzureRM Web App Deployment task in a release pipeline](media/rm-archived/release-notes-22.png)
 
 <a name="update-may23-16"></a>
 ### May 23, 2016 Update (Azure Pipelines)
@@ -660,7 +661,7 @@ to help you easily integrate your applications with
 Release Management. The SDK is available as a
 [NuGet package](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Release.Client/).
 Example usage for this SDK can be found
-[here](http://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
+[here](https://blogs.msdn.com/b/chandananjani/archive/2016/04/28/using-releasehttpclient-for-interacting-with-releasemanagement-service.aspx).
 
 <a name="update-apr26-16"></a>
 ### Apr 26, 2016 Update (Azure Pipelines)
@@ -683,7 +684,7 @@ enter most of the inputs in this wizard to set up a definition with a
 single environment. We have also simplified the process of adding more
 environments to a definition, and cloning an environment.
 
-![Simplified wizard to create a release pipeline](_img/rm-archived/release-notes-13.png)
+![Simplified wizard to create a release pipeline](media/rm-archived/release-notes-13.png)
 
 <a name="apr26-history"></a>
 **View the history of a release**
@@ -691,8 +692,9 @@ environments to a definition, and cloning an environment.
 View all the activity on a release in one place; including deployments,
 approvals, configuration edits, and more.
 
-_**NOTE**: This feature is being rolled out over time to all regions;
-therefore, it may not yet be available in your region._
+> [!NOTE]
+> This feature is being rolled out over time to all regions;
+> therefore, it may not yet be available in your region.
 
 <a name="apr26-tfsonprem"></a>
 **TFVC and TF Git as artifact sources**
@@ -709,7 +711,7 @@ Git repositories as artifact sources in a release pipeline.
 At present there is no support for auto-triggering new releases when a
 commit is made into these repositories.
 
-![TFVC and TF Git as artifact sources](_img/rm-archived/release-notes-15.png)
+![TFVC and TF Git as artifact sources](media/rm-archived/release-notes-15.png)
 
 <a name="apr26-timedrelease"></a>
 **Promote releases to an environment at a specific time**
@@ -719,7 +721,7 @@ configure a condition on an environment that selects a successful
 deployment (or just the latest one) from another environment, and deploys
 it at the specified time.
 
-![View the history of a release](_img/rm-archived/release-notes-14.png)
+![View the history of a release](media/rm-archived/release-notes-14.png)
 
 <a name="apr26-restapi"></a>
 **REST APIs for Release Management**
@@ -730,7 +732,7 @@ deploying a release. Most of these APIs also work with the
 on-premises releases of Release Management in TFS 2015 Update 2
 (the differences between TFS and Azure Pipelines versions are indicated
 in the documentation). You'll find some basic examples that use the APIs in
-[this blog post](http://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
+[this blog post](https://blogs.msdn.com/b/chandananjani/archive/2016/04/15/using-releasemanagement-rest-api-s.aspx).
 
 <a name="apr26-import"></a>
 **Import, export, and clone release pipelines**
@@ -791,7 +793,7 @@ that is able to connect to your TFS machine and
 configure this agent in Azure Pipelines. The extension
 does not yet work for deploying XAML builds.
 
-For more information, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/05/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
+For more information, see [this blog post](https://devblogs.microsoft.com/devops/deploy-artifacts-from-onprem-tfs-server-with-release-management-service/).
 
 **Email release summary**
 
@@ -813,7 +815,7 @@ to an environment based on the status of multiple
 environments (_join deployments_). Now you can, as
 this video demonstrates.
 
-For more details, see [Parallel forked and joined deployments](../../release/triggers.md#parallel-forked-and-joined-deployments)
+For more details, see [Parallel forked and joined deployments](../../release/triggers.md)
 
 <a name="update-mar15-16"></a>
 ### Mar 15, 2016 Update (Azure Pipelines)
@@ -826,7 +828,7 @@ within a release pipeline by using the
 scenarios where you do not want to check in and
 publish the script as part of a build artifact.
 
-![Inline Powershell script](_img/rm-archived/release-notes-10.png)
+![Inline Powershell script](media/rm-archived/release-notes-10.png)
 
 **Release management utilities extension**
 
@@ -843,17 +845,17 @@ to satisfy these requirements. The extension adds
 a number of tasks to your task catalog:
 
 * The **Tokenization** task helps in replacing
-special tokens in any configuration file with the
-required environment-specific values at release time.
+  special tokens in any configuration file with the
+  required environment-specific values at release time.
 
- ![Inline Powershell script](_img/rm-archived/release-notes-12.png)
+  ![Inline Powershell script](media/rm-archived/release-notes-12.png)
 
 * The **Rollback** task that checks whether any of
- the previous tasks in the environment have failed,
- and provides that information to your custom
- PowerShell script. Based on information about
- which task has failed, your custom script can run
- appropriate cleanup logic.
+  the previous tasks in the environment have failed,
+  and provides that information to your custom
+  PowerShell script. Based on information about
+  which task has failed, your custom script can run
+  appropriate cleanup logic.
 
 <a name="update-mar3-16"></a>
 ### Mar 3, 2016 Update (Team Foundation Server)
@@ -884,7 +886,7 @@ complete picture of the tests that were run in
 each environment of the release, and helps you
 analyze their trends.
 
-![Tests tab in releases](_img/rm-archived/release-notes-11.png)
+![Tests tab in releases](media/rm-archived/release-notes-11.png)
 
 <a name="feb24vmware"></a>
 **Integration with VMware**
@@ -955,7 +957,7 @@ new release** dialog now provides the capability to
 "turn off" automatic deployment to environments
 when creating a new release.
 
-![Specifying the rule for an automated deployment](_img/rm-archived/release-notes-09.png)
+![Specifying the rule for an automated deployment](media/rm-archived/release-notes-09.png)
 
 A note on security: this feature does not offer full
 flexibility for editing the deployment flow graph
@@ -981,7 +983,7 @@ on those environments. You configure a scheduled
 trigger for creating new releases on the **Triggers**
 tab of a release pipeline.
 
-![Scheduled trigger](_img/rm-archived/release-notes-08.png)
+![Scheduled trigger](media/rm-archived/release-notes-08.png)
 
 <a name="feb24retention"></a>
 **Retention policies for releases**
@@ -998,7 +1000,7 @@ that you create after this version update has been
 deployed. Releases created prior to this change will
 be retained for 365 days.
 
-![Configuring retention policies](_img/rm-archived/release-notes-07.png)
+![Configuring retention policies](media/rm-archived/release-notes-07.png)
 
 At present retention policies for Release Management
 are independent of the retention policies for builds.
@@ -1039,7 +1041,7 @@ QA environments in parallel.
 always be triggered manually.
 * You can skip environments and manually promote the release to a selected environment.
 
-![Configuring environment conditions](_img/rm-archived/release-notes-03.png)
+![Configuring environment conditions](media/rm-archived/release-notes-03.png)
 
 For more details, see [Environment deployment triggers](../../release/triggers.md#env-triggers)
 
@@ -1057,7 +1059,7 @@ have passed QA. Queuing policies allow you to deploy in
 parallel, deploy in sequence, or just deploy the latest one.
 See [Queuing policies](../../process/stages.md#queuing-policies)
 
-![Configuring queuing policies](_img/rm-archived/release-notes-04.png)
+![Configuring queuing policies](media/rm-archived/release-notes-04.png)
 
 <a name="feb11-3"></a>
 **Know before you deploy**
@@ -1077,7 +1079,7 @@ in the future. We have added the capability to schedule
 a deployment; for example, deployment to a production
 environment at a specified time such as midnight.
 
-![Specifying a deferred deployment](_img/rm-archived/release-notes-05.png)
+![Specifying a deferred deployment](media/rm-archived/release-notes-05.png)
 
 <a name="feb11-5"></a>
 **More control over approvals**
@@ -1088,7 +1090,7 @@ whether these approvers can approve in parallel or in
 a specified order.
 See [Approvals and approvers](../../release/approvals/approvals.md).
 
-![Configuring approval policies](_img/rm-archived/release-notes-06.png)
+![Configuring approval policies](media/rm-archived/release-notes-06.png)
 
 <a name="feb11-7"></a>
 **Add your own release summary sections**
@@ -1142,13 +1144,13 @@ Tie the output of the first task to the input list of machines in the second tas
   from the ellipses (...), and select **Agent options**. In the CONFIGURE
   dialog for each environment, select **Hosted** as the default queue.
 
-  ![Selecting the Hosted queue when configuring an environment](_img/rm-archived/release-notes-01.png)
+  ![Selecting the Hosted queue when configuring an environment](media/rm-archived/release-notes-01.png)
 
 * **Branch information in releases**. View information about the code branch
   in the **Releases** status list. This gives a better understanding of what
   your releases contain.
 
-  ![Branch information is shown in release status](_img/rm-archived/release-notes-02.png)
+  ![Branch information is shown in release status](media/rm-archived/release-notes-02.png)
 
 <a name="update-sep21-15"></a>
 ### September 21, 2015 Update (Azure Pipelines)

@@ -1,18 +1,21 @@
----
-title: Azure DevOps CLI Security tokens for permissions management
+﻿---
+title: CLI Security tokens for permissions management
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security tokens for permissions management
 ms.topic: reference 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
-ms.manager: jillfra 
+ms.manager: mijacobs 
 ms.author: geverghe
 author: KathrynEE
+monikerRange: 'azure-devops'
 ms.date: 06/18/2019
 ---
 
 # Security tokens for permissions management
+
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 Tokens are arbitrary strings representing resources in Azure DevOps. Token format differs per resource type, however hierarchy and separator characters are common between all tokens.
 
@@ -79,18 +82,19 @@ If the tokens have variable-length path parts, then a separator character is use
    Token format: 'vstfs:///Classification/Node/Iteration_Identifier/'
 
    Suppose, you have following iterations configured for your team.
-   ProjectIteration1
-    -TeamIteration1
-        -I1ChildIteration1
-        -I1ChildIteration2
-        -I1ChildIteration3
-    -TeamIteration2
-        -I2ChildIteration1
-        -I2ChildIteration2
+   
+   - ProjectIteration1
+   1. TeamIteration1
+        - TeamIteration1ChildIteration1
+        - TeamIteration1ChildIteration2
+        - TeamIteration1ChildIteration3
+   2. TeamIteration2
+        - TeamIteration2ChildIteration1
+        - TeamIteration2ChildIteration2
 
-   If you need to update permissions for ProjectIteration1\TeamIteration1\I1ChildIteration1, security token would like this:
+   If you need to update permissions for ProjectIteration1\TeamIteration1\TeamIteration1ChildIteration1, security token would look like this:
 
-   'vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/I1ChildIteration1_Identifier'
+   'vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier'
 
 ### Namespace name :  BuildAdministration
 
@@ -144,6 +148,6 @@ If the tokens have variable-length path parts, then a separator character is use
 
    You need to append RepositoryID to update repo level permissions
 
-   Token format for project level permissions : 'repoV2/PROJECT_ID/REPO_ID'
+   Token format for repository level permissions : 'repoV2/PROJECT_ID/REPO_ID'
 
    For more information on this namespace and its tokens refer this [blog](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)

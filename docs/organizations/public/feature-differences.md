@@ -6,7 +6,7 @@ ms.technology: devops-public-projects
 ms.prod: devops
 ms.assetid: 
 ms.reviewer:
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # How access to services are limited for non-members of a public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In a public project, most features work the same for members and non-members.
 Today, non-members get read-only access to public projects and members get access based on their access level and permissions. Over time, we give non-members more features, for example commenting on work items.
@@ -34,7 +34,6 @@ A project member has access to features based on the access level assigned. Non-
 * **Test Plans**: **Test Plans** and its associated manual and cloud load testing features are hidden.
 * **Analytics**: **Analytics views** is hidden, and the Analytics OData feed is not supported for non-members.
 * Settings and administrative pages are hidden.
-* Paid extensions are hidden.
 
 > [!NOTE]
 > When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Pipeline** features. Without this feature enabled, Stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../security/provide-stakeholder-pipeline-access.md).
@@ -71,4 +70,4 @@ Clients like Visual Studio and IntelliJ work with the HTTPS clone URL but don't 
 
 The following dashboard widgets won't display any useful information for non-members.
 
-[!INCLUDE [temp](_shared/unavailable-widgets.md)]  
+[!INCLUDE [temp](includes/unavailable-widgets.md)]  

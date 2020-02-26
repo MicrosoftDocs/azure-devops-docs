@@ -6,7 +6,7 @@ description: What is source control or version control in Azure DevOps & Team Fo
 ms.technology: devops-new-user 
 ms.prod: devops
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2013'
 
 # What is source control?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 A source control system, also called a *version control* system, allows developers to collaborate on code and track changes. Source control is an essential tool for multi-developer projects.  
 
@@ -24,7 +24,7 @@ Our systems support two types of source control: Git (distributed) and Team Foun
 
 Manage your repos, branches, and other code development operations from **Azure Repos**.
 
-![Repos, code GitHub](_img/code-git-hub.png)
+![Repos, code GitHub](media/code-git-hub.png)
 
 With Git, each developer has a copy of the source repository on their dev machine. The source repo includes all branch and history information. Each developer works directly with their local repository. Changes are shared between repositories as a separate step.
 
@@ -44,5 +44,5 @@ Start sharing your code or get your code by using source control.
 
 ## Related articles
 
-* [Azure Repos documentation](../repos/index.md)
+* [Azure Repos documentation](../repos/index.yml)
 * [Git repositories documentation](../repos/git/index.md)

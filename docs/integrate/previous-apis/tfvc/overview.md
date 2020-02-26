@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: TFVC Overview | REST API Reference for Team Foundation Server
 description: Use the REST APIs for Team Foundation Server to access TFVC resources like changesets, shelvesets, and TFVC items.
 ms.assetid: F279AADC-016F-4A89-BBFC-EFA9363D3DC0
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -24,7 +24,7 @@ ms.date: 08/04/2016
 [Changesets](./changesets.md) and [shelvesets](./shelvesets.md) represent changes to a set of items.
 Folders can be [branched](./branches.md) and items can be [labelled](./labels.md).
 
-![TFVC resources](./_img/tfvc-resources.png)
+![TFVC resources](./media/tfvc-resources.png)
 
 * [Branches](./branches.md)
 * [Changesets](./changesets.md)

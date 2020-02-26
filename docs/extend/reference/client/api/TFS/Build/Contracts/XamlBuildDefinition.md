@@ -1,13 +1,14 @@
 ---
 title: TFS/Build/Contracts XamlBuildDefinition API | Extensions for Azure DevOps Services
+description: Data representation of a Xaml build definition.
 ms.assetid: f6cbd2c1-a6f0-0bb3-425f-8242bb8385f4
 ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
-author: elbatk
+ms.manager: mijacobs
+author: chcomley
 ms.topic: article
-ms.author: elbatk
+ms.author: chcomley
 ms.date: 08/04/2016
 ---
 

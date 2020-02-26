@@ -1,12 +1,12 @@
----
-title: Add users and groups and control access in Release Management
+﻿---
+title: Add users/groups & control access in Release Management
 ms.custom: seodec18
 description: Add users and groups and control access in Release Management server/client for Visual Studio 2015 and Team Foundation Server 2015
 ms.assetid: AEB78F81-1F59-47DE-AED0-F38C724024FC
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Add users and groups, and control access to Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You must add the user account of anyone who wants to set up, start, or approve
 releases to Release Management. Also, you must add the service accounts that 
@@ -42,7 +42,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
 <a name="add_user"></a>
 ## Add an individual user or service account
- 
+
 1. If you haven't installed the Release Management client, 
    **[do that now](install-release-management/install-server-and-client.md#installclient)**.
 
@@ -51,7 +51,7 @@ If you want to restrict access, then you'll want to follow these steps:
 
 1. Open the New User page from the **Administration** | **Manage Users** tab.
 
-   ![Open the New User page](_img/add-users-01.png)
+   ![Open the New User page](media/add-users-01.png)
 
 1. Choose a user account using the ellipsis (**...**) button, and set the 
    user role.
@@ -73,7 +73,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. Choose the type of group you want to add from the **Administration** | 
    **Manage Groups** tab.
 
-   ![Add a user group](_img/add-users-02.png) 
+   ![Add a user group](media/add-users-02.png) 
 
    The **Manage Groups** tab is available only when you are connected to 
    Release Management Server. You cannot add groups when you are connected
@@ -82,7 +82,7 @@ If you want to restrict access, then you'll want to follow these steps:
 1. On the **Security** tab, select the permissions that you want to enable 
    for this group.
 
-   ![Select the permissions for a group ](_img/add-users-03.png)
+   ![Select the permissions for a group ](media/add-users-03.png)
 
 1. Under **Stages**, keep the default **All Stage Types** or add one or more 
    stages.
@@ -97,8 +97,8 @@ If you want to restrict access, then you'll want to follow these steps:
 
 1. If you create a Release Management group (one not associated with TFS or 
    AD), link existing user accounts to be members of this group.
- 
-   ![Link existing user accounts as members of group ](_img/add-users-04.png)
+
+   ![Link existing user accounts as members of group ](media/add-users-04.png)
 
    Or, you can add a user account by choosing the **Create** button.
 
@@ -112,7 +112,7 @@ If you want to restrict access, then you'll want to follow these steps:
 ## Q&A
 
 ### Q: Who needs to be added as a user to Release Management?
-  
+
 **A**: These users: 
 
 * Any user who needs to create, start or approve a release.
@@ -149,7 +149,7 @@ Release Management client itself:
   all release management operations. Enable all permissions for users in this
   group. If you add users individually, assign them to the Release Manager 
   role.
- 
+
 * **Release architects**: These users will create release paths that define 
   the deployment stages and test the design of these paths. They will also need 
   to test the release paths. Enable the following permissions:
@@ -172,16 +172,18 @@ of the permissions listed in the following table, the corresponding UI element
 will either be hidden or disabled. Release Managers, however, can view and 
 edit all information.
 
-| **Permission** | **UI element** |
-|----------------|----------------|
-| Can Create Release Template | Configure Apps - Release Template tab (hidden) |
-| Can Create Release Path | New button on the Configure Paths - Release Paths tab (hidden) | 
-| Can Manage Environment | Configure Paths - Environments tab (hidden) | 
-| Can Manage Server | Configure Paths - Server tab (hidden) | 
-| Can Manage Inventory | Inventory tab (which provides access to Actions and Tools) (hidden) | 
-| Can Use Custom Tool in Actions and Components | Command and Arguments fields cannot be edited when No Tool is selected | 
-| Edit Values and Target Servers | For Release Templates: If the user does not have this permission set for a stage type, the information of the Deployment Configuration and Configuration Variables tabs are read-only. For Releases: If the user does not have this permission set for a stage type, the information of the Deployment Configuration and Configuration Variables panel is read-only. | 
-| Edit Approvals and Environment | All stage information is read-only | 
+
+|                **Permission**                 |                                                                                                                                                                            **UI element**                                                                                                                                                                            |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Can Create Release Template          |                                                                                                                                                            Configure Apps - Release Template tab (hidden)                                                                                                                                                            |
+|            Can Create Release Path            |                                                                                                                                                    New button on the Configure Paths - Release Paths tab (hidden)                                                                                                                                                    |
+|            Can Manage Environment             |                                                                                                                                                             Configure Paths - Environments tab (hidden)                                                                                                                                                              |
+|               Can Manage Server               |                                                                                                                                                                Configure Paths - Server tab (hidden)                                                                                                                                                                 |
+|             Can Manage Inventory              |                                                                                                                                                 Inventory tab (which provides access to Actions and Tools) (hidden)                                                                                                                                                  |
+| Can Use Custom Tool in Actions and Components |                                                                                                                                                Command and Arguments fields cannot be edited when No Tool is selected                                                                                                                                                |
+|        Edit Values and Target Servers         | For Release Templates: If the user does not have this permission set for a stage type, the information of the Deployment Configuration and Configuration Variables tabs are read-only. For Releases: If the user does not have this permission set for a stage type, the information of the Deployment Configuration and Configuration Variables panel is read-only. |
+|        Edit Approvals and Environment         |                                                                                                                                                                  All stage information is read-only                                                                                                                                                                  |
+
 <p />
 ### Q: What happens when I deactivate a group?
 
@@ -199,6 +201,6 @@ members, you must delete them manually from the Manage Users page.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
 
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
- 
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
+
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

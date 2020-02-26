@@ -5,7 +5,7 @@ description: Add or update a process by importing a process to support customiza
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: AF7ABA0F-D3E8-48CA-9164-ABC966BAAA77
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -31,7 +31,7 @@ When you import an existing process, all projects that use that process are upda
 
 For example, updates made to any of the custom processes listed below automatically update the two projects that use the process.
  
-![Custom processes mapped to projects](_img/ALM_IP_ProcessUse.png)
+![Custom processes mapped to projects](media/ALM_IP_ProcessUse.png)
 
 As you discover additional customizations that you need to make, you can export the existing process, update the process XML definition files, 
 zip the result and re-import the newly updated process. Your changes are applied to all your existing projects that use that process.    
@@ -64,7 +64,7 @@ Migration to Azure DevOps Services is a great time to think about process alignm
 <a id="open-process-wit">  </a>
 ### Open Process in the admin context
 
-[!INCLUDE [temp](../../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../../includes/open-process-admin-context-ts-only.md)]
 
 <a id="import-process">  </a>
 ## Import a process
@@ -79,25 +79,25 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
     > [!NOTE]    
     > If you don't see the **Import process** link, then your organization isn't set up to support the Hosted XML process model. You should work with the [Inheritance process model](../manage-process.md) for your customization needs. The Hosted XML process model is only supported if your account was created through the [Data Import Service](https://aka.ms/TFSDataImport).
 
-    <img src="_img/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
+    <img src="media/import-process-import.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />
 
 3.  Choose the file to upload. Your [custom process must meet specific constraints](customize-process.md) in order to pass validation checks during import.  
 
-	<img src="_img/import-process-dialog.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />	 
+	<img src="media/import-process-dialog.png" alt="Import Process, choose process file to import" style="border: 2px solid #C3C3C3;" />	 
 
 	> [!IMPORTANT]  
 	>You can't update one of the locked processes: Agile, CMMI, and Scrum.  
 
 3.  Upon successful import, you'll see the following message.  
 
-    <img src="_img/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
+    <img src="media/ALM_IP_AddNewProcessSuccess.png" alt="Import process dialog, Process file successfully imported" style="border: 2px solid #C3C3C3;" />
 
     If the process doesn't pass the validation checks performed on import, you'll receive a list of error messages.  
     [Correct each error](resolve-errors.md) and then retry the import. 
 
 4.  You can immediately create a project using the newly imported process. 
 
-	<img src="_img/import-process-new-team-project.png" alt="Create project from imported process" style="border: 2px solid #C3C3C3;" />
+	<img src="media/import-process-new-team-project.png" alt="Create project from imported process" style="border: 2px solid #C3C3C3;" />
 
 <a id="update-process">  </a>
 ## Update an existing process
@@ -111,21 +111,21 @@ Once you've added a process, you can update it by importing a zip file where you
 
 2.  Confirm that you want to update the existing process.  
 
-    <img src="_img/ALM_IP_UpdateProcessConfirm.png" alt="Import process confirmation dialog" style="border: 2px solid #C3C3C3;" />
+    <img src="media/ALM_IP_UpdateProcessConfirm.png" alt="Import process confirmation dialog" style="border: 2px solid #C3C3C3;" />
 
 3.  You'll see the following dialog while the system updates all projects that were created using the updated process.  
 
-    <img src="_img/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
+    <img src="media/ALM_IP_ApplyProcessChanges.png" alt="Apply process changes dialog" style="border: 2px solid #C3C3C3;" />
 
 4.  Upon successful import, you'll see the following message. All projects that were created with the process are updated with the modifications. 
 
-    <img src="_img/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
+    <img src="media/ALM_IP_ImportAndUpdateSuccess.png" alt="Process page, Process template file successfully imported and projects updated" style="border: 2px solid #C3C3C3;" />
 
 5.  If you renamed or deleted fields or work item types, you receive a confirmation message.
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
-    <img src="_img/ALM_IP_InfoMessage.png" alt="Deleted field confirmation dialog" style="border: 2px solid #C3C3C3;" />
+    <img src="media/ALM_IP_InfoMessage.png" alt="Deleted field confirmation dialog" style="border: 2px solid #C3C3C3;" />
 
      
 
@@ -134,7 +134,7 @@ Once you've added a process, you can update it by importing a zip file where you
 
 Set a process as the default to have it preselected for all new projects you plan to create. 
 
-<img src="_img/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" />
+<img src="media/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" />
 
 <a id="export-process">  </a>
 ## Export a process

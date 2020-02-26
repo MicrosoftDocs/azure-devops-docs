@@ -5,14 +5,16 @@ title: Configure UI Controls | Extensions for Azure DevOps Services
 description: How to configure UI controls in your extension for Azure DevOps Services.
 ms.assetid: D013BBD0-CC9E-538F-39BD-9433AFCC7A6D
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: elbatk
-author: elbatk
-ms.date: 08/04/2016
+ms.author: chcomley
+author: chcomley
+ms.date: 10/31/2019
 ---
 
 # Configure UI Controls
+
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 This example shows the steps before you can add a control to the hub that we created in [Add a hub](../add-hub.md).
 
@@ -31,7 +33,7 @@ This example shows the steps before you can add a control to the hub that we cre
 	</head>
 	```
 
-[!INCLUDE [Control](../../_shared/procedures/use-a-control-js.md)]
+[!INCLUDE [Control](../../includes/procedures/use-a-control-js.md)]
 
 ## Try these next
 * [Use the grid control](./grido.md)

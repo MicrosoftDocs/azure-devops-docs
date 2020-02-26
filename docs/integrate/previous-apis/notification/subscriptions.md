@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Notification subscriptions | REST API Reference for Team Foundation Server
 description: REST APIs for Team Foundation Server.
 ms.assetid: 70F8A8F8-474C-4664-A26C-A5DC714E6242
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

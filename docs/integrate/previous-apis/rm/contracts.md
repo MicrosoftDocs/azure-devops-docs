@@ -5,11 +5,11 @@ ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
-ms.date: 06-01-2017
+ms.date: 06/01/2017
 ---
 
 # Release API Contracts

@@ -1,4 +1,4 @@
----
+﻿---
 title: Release actions to deploy an app with Release Management
 ms.custom: seodec18
 description: Learn about the release actions to define the deployment sequence for an app in Azure Pipelines and Team Foundation Server (TFS).
@@ -6,7 +6,7 @@ ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Release actions to deploy an app
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You add release actions to define the deployment sequence for each stage 
 of your release. Each action uses a specific tool to run a command with 
@@ -28,7 +28,7 @@ Drag a release action from the toolbox to add it to your deployment
 sequence. Use any of the predefined release actions listed in the 
 toolbox, or create your own **[custom release actions](#custom)**.
 
-![Configure Apps tab, Release Templates tab ](_img/release-actions-01.png)
+![Configure Apps tab, Release Templates tab ](media/release-actions-01.png)
 
 After adding a release action to the sequence, you can edit the 
 configuration variables as necessary. For details about predefined 
@@ -49,7 +49,7 @@ create a custom release action. You can't edit an existing release action.
 
 1. Copy the action you want to edit, or add a new action.
 
-   ![Copy a release action](_img/release-actions-02.png)
+   ![Copy a release action](media/release-actions-02.png)
 
 1. Select the tool that you want to use based on your requirements for 
    the action. Choose **New** to add your own custom tool if the 
@@ -77,7 +77,7 @@ them. Open the action from the **Inventory** page and choose the
 
 Open the **Inactive** list, open the action, and choose **Activate**.
 
-![Inactive list on Inventory page](_img/release-actions-03.png)
+![Inactive list on Inventory page](media/release-actions-03.png)
 
 ## Q & A
 
@@ -298,6 +298,6 @@ about this tool, go **[here](release-actions/release-action-tools.md)**.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

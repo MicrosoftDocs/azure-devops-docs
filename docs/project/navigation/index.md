@@ -6,7 +6,7 @@ ms.custom: "Navigation, seodec18"
 ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -16,13 +16,13 @@ ms.date: 03/05/2019
 
 # Web portal navigation in Azure DevOps  
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 ::: moniker range="azure-devops"
 
 The web portal for Azure DevOps is organized around a set of services, as well as administrative pages and several task-specific features such as the search box.  The service labels differ depending on whether you work from Azure DevOps Services or Azure DevOps on-premises and it's version. 
 
-[!INCLUDE [temp](../../_shared/version-selector.md)] 
+[!INCLUDE [temp](../../includes/version-selector.md)] 
 
 Each service provides you with one or more pages which support a number of features and functional tasks. Within a page, you may then have a choice of options to select a specific artifact or add an artifact.
 
@@ -79,7 +79,7 @@ Here's what you need to know to get up and running using the web portal.
 ::: moniker range=">= azure-devops-2019"  
 You select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash;from the sidebar and pages within those services. 
 
-![Vertical sidebar](_img/gif-images/vertical-nav.gif)
+![Vertical sidebar](media/gif-images/vertical-nav.gif)
 
 ::: moniker-end
 
@@ -87,7 +87,7 @@ You select services&mdash;such as **Boards**, **Repos**, and **Pipelines**&mdash
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 You select a service&mdash;such as **Code**, **Work**, and **Build and Release**&mdash;from the horizontal bar and pages within those services. 
 
-![Horizontal navigation](_img/gif-images/horizontal-nav.gif)
+![Horizontal navigation](media/gif-images/horizontal-nav.gif)
 
 ::: moniker-end
 
@@ -121,9 +121,9 @@ Limited access is available to an unlimited number of stakeholders for free. For
 <a id="refresh-web-portal">  </a>
 ## Refresh the web portal
 
-If data doesn't appear as expected, the first thing to try is to refresh your web browser. Refreshing your client updates the local cache with changes that were made in another client or the server. To refresh the page or object you're currently viewing, refresh the page or choose the ![Refresh icon](../../_img/icons/refresh.png) **Refresh** icon if available.  
+If data doesn't appear as expected, the first thing to try is to refresh your web browser. Refreshing your client updates the local cache with changes that were made in another client or the server. To refresh the page or object you're currently viewing, refresh the page or choose the ![Refresh icon](../../media/icons/refresh.png) **Refresh** icon if available.  
 
-[!INCLUDE [temp](../../_shared/when-to-refresh-client.md)]
+[!INCLUDE [temp](../../includes/when-to-refresh-client.md)]
 
 
 ## Differences between the web portal and Visual Studio  

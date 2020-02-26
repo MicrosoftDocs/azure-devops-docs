@@ -6,7 +6,7 @@ ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 085a4bc1-e4f3-4105-bf29-add86b2dfd80
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +15,7 @@ ms.date: 01/20/2017
 
 # Iteration activities
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 In MSF for CMMI Process Improvement, you plan a project as a series of iterations. Each iteration is typically four to six weeks long, during which the development team implements a specified set of requirements.  
   

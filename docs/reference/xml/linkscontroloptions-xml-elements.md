@@ -1,11 +1,11 @@
----
+﻿---
 title: LinksControlOptions XML elements reference 
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -31,7 +31,7 @@ The **LinksControlOptions** element is a child element of the **Control** elemen
 - **WorkItemTypeFilters**: Use to restrict the types of work items you can link to from the links control 
 - **Column**: Use to specify the work item fields and link type attributes listed within the links control
 
-<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/_img/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
+<blockquote style="font-size: 13px"><b>Note: </b>The standard <img src="../../boards/media/icons/icon-links-tab-wi.png" alt="Links page icon"/> <a href="../../boards/work-items/work-item-form-controls.md#link-wi" data-raw-source="[Links page](../../boards/work-items/work-item-form-controls.md#link-wi)">Links page</a> provides a non-customizable control that displays all link types. From this control, you may view all links associated with the work item, and link the work item to other work items or external objects.<br/></blockquote>      
 
 ## Summary of what's changed
 
@@ -85,7 +85,7 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 <tr>
 <td>Composite display of link information</td>
 <td>For each listed item, the links control displays the Work Item Type, ID, Title, and Assigned To as a composite field called <em>Link</em> as shown:<br/>
-<img src="_img/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
+<img src="media/linkscontrol-composite-field.png" alt="Composite field" style="border: 1px solid #C3C3C3;" /><br/><p>When the links control width is less than 460 pixels, the field also displays the item&#39;s State and the time of its Latest Update (the creation or latest modification of the item). See <a href="#dynamic-sizing" data-raw-source="[Responsive design and dynamic resizing](#dynamic-sizing)">Responsive design and dynamic resizing</a> for details.
 </td>
 <td>Not supported</td>
 </tr>
@@ -101,17 +101,19 @@ When <code>ListViewOptions GroupLinks=&quot;true&quot;</code>, links are grouped
 
 ### Add links through a scoped links control 
 
-From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/_img/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
+From the scoped links control, you can perform the same actions provided from the standard ![Links page icon](../../boards/media/icons/icon-links-tab-wi.png) Links page&mdash;you simply do them from a menu rather than a tool bar.  
 
 - To open an associated item or object, click the linked item  
-- To delete a link, highlight it and click the ![delete icon](../../boards/_img/icons/delete_icon.png) delete icon   
+- To delete a link, highlight it and click the ![delete icon](../../boards/media/icons/delete_icon.png) delete icon   
 - To link to an existing item, or create and link a new work item, select one of the menu options.  
 
-<img src="_img/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 1px solid #C3C3C3;" />  
 
 
 <a id="dynamic-sizing"></a>
+
 ### Responsive design and dynamic resizing   
+
 By default, the scoped links control displays dynamically (`ViewMode=Dynamic`) based on the form's width and the space allocated to the links control. The links control width expands and shrinks proportionally based on the overall form width.
 - When the links control width is less than 460 pixels, the control displays as a *List*. Only the composite field called *Link* (consisting of Work Item Type, ID, Title, and Changed By fields)   
 - When the links control width equals or exceeds 460 pixels, the control displays information within a *Grid* according to the fields specified within the **Column** elements. The number of columns that appear is space-dependent, starting at a minimum of 4, and increasing by one column for every 100 pixels until the width is sufficient to display all defined columns.  
@@ -123,7 +125,7 @@ You can specify whether the links display as a list, grid, or dynamically by set
 Core system processes&mdash;[Agile, Scrum, CMMI](../../boards/work-items/guidance/choose-process.md)&mdash;have been updated to include the Development and Related Work scoped links control. 
 
 
-<img src="_img/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
+<img src="media/linkscontrol-bug-form-dev-related-links.png" alt="Bug work item form, Agile process, Development and Related links controls" style="border: 1px solid #C3C3C3;" />  
 
 These controls appear on all default work item types, except the following:
 - Code Review Request/Code Review Response
@@ -222,6 +224,7 @@ For example, the syntax below would create a control specifically designed to di
 > ```
 
 <a id="customize">  </a>  
+
 ## Create a scoped links control  
 
 To add or modify a scoped links control, use the information provided in this topic to modify the XML definition file for a specific work item type. Each links control must be added as a **Control** of **type="LinksControl"** within the **WebLayout** section, specifying the appropriate **LinksControlOptions**.
@@ -234,7 +237,7 @@ The following table describes the **LinksControlOptions** element and its child 
 
 > [!div class="tabbedCodeSnippets"]
 > ```XML
-> <LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemFiltersScope="Project" >
+> <LinksControlOptions ViewMode="Static | Dynamic" ZeroDataExperience="Development" ShowCallToAction="true | false"   WorkItemTypeFiltersScope="project | all" >
 >    <ListViewOptions GroupLinks="true | false" />
 >    <LinkFilters>    
 >       <ExternalLinkFilter Type="ExternalLinkName" />
@@ -285,8 +288,8 @@ The following table describes the **LinksControlOptions** element and its child 
 <blockquote><b>Important: </b>For import purposes, use the name <code>Workitem Hyperlink</code> in place of <code>Hyperlink</code> and <code>Source Code File</code> in place of <code>Versioned item</code>. 
 </blockquote>
 
-<p>Specify <code>System.IncludeAllExternalLinks</code> to include all external link types.</p>
-<blockquote><b>Note: </b>When you specify  <code>System.IncludeAllExternalLinks</code>, the system displays all links in alphabetical order by external link type. 
+<p>Specify <code>System.Links.IncludeAll</code> to include all external link types.</p>
+<blockquote><b>Note: </b>When you specify  <code>System.Links.IncludeAll</code>, the system displays all links in alphabetical order by external link type. 
 </blockquote>
 
 </td>
@@ -351,7 +354,7 @@ The following table describes the **LinksControlOptions** element and its child 
 <p>Use to scope the link types and work item types that users can add to a work item and the columns to appear for the list of link relationships in the work item form.</p>
 <pre><code>&lt;LinksControlOptions ViewMode="Dynamic | Grid | List" 
 ZeroDataExperience="Development" ShowCallToAction="true | false"  
-WorkItemFiltersScope="Project" &gt;
+WorkItemTypeFiltersScope="project" &gt;
   . . . 
 &lt;/LinksControlOptions&gt;</code></pre>
 <p>All attributes are optional. Supported attributes include: </p>
@@ -361,7 +364,7 @@ WorkItemFiltersScope="Project" &gt;
 <li><strong>ShowCallToAction</strong>: Can be set to <code>true</code>, normally is <code>false</code>. Determines whether call-to-actions appear below linked artifacts. 
 <blockquote><b>Note: </b>Currently, the only supported call-to-action experience occurs when <code>ZeroDataExperience=&quot;Development&quot;</code>.
 </blockquote></li>
-<li><strong>WorkItemFiltersScope</strong>: Can be set to <code>Project</code>. When set to <code>Project</code>, users can only link to work items within the current project scope. </li>
+<li><strong>WorkItemTypeFiltersScope</strong>: Can be set to <code>project</code> or <code>all</code>. When set to <code>project</code>, users can only link to work items within the current project scope. When set to <code>all</code>, users can link to work items within all projects defined in the collection. </li>
 </ul>
 </td>
 </tr>
@@ -393,8 +396,8 @@ WorkItemFiltersScope="Project" &gt;
 </code></pre>
 <p>Examples of work item link types you can specify include: <code>System.LinkTypes.Dependency</code>, <code>System.LinkTypes.Hierarchy-Forward</code>, <code>System.LinkTypes.Hierarchy-Reverse</code>, and <code>System.LinkTypes.Related</code>. </p>
 <p>For a complete list, see <a href="../../boards/queries/link-type-reference.md#work-link-types" data-raw-source="[Link type reference](../../boards/queries/link-type-reference.md#work-link-types)">Link type reference</a>. In addition, you can specify the reference name for a custom link type. </p>
-<p>Specify <code>System.IncludeAllWorkItemLinks</code> to include all work link types.</p>
-<blockquote>When you specify  <code>System.IncludeAllWorkItemLinks</code>, the system displays all links in alphabetical order by link type. 
+<p>Specify <code>System.Links.IncludeAll</code> to include all work link types.</p>
+<blockquote>When you specify  <code>System.Links.IncludeAll</code>, the system displays all links in alphabetical order by link type. 
 </blockquote>
 </td>
 </tr>

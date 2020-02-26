@@ -6,7 +6,7 @@ ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D
 ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,7 +15,7 @@ ms.date: 11/19/2018
 
 # Rebuild the data warehouse and cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
 
@@ -45,7 +45,7 @@ You must be a member of these security groups or have the corresponding permissi
 
 * Your **View project-level information** permission on the team project must be set to **Allow** to run and view a report. Also, you must be a member of the **Browser** role in SQL Server Reporting Services 
 
-For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator-tfs).
+For more information, see [Add accounts to administer TFS](/azure/devops/server/admin/add-administrator).
 
 In addition to these permissions, you might need to address these requirements on a computer that is running Windows Server 2008 or Windows Vista:
 
@@ -89,9 +89,9 @@ By default, TCP/IP is disabled when you install SQL Server.
     </tr>
     </table>
 
-    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-stuff).
+    For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
-2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements#accounts). 
+2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements). 
 
 3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](https://msdn.microsoft.com/library/bb909712.aspx).  
 
@@ -100,7 +100,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 ## 2. Rebuild the data warehouse and restart services
 
-1. [Open the Team Foundation administration console](/azure/devops/server/admin/config-tfs-resources).
+1. [Open the Team Foundation administration console](/azure/devops/server/admin/admin-quick-ref).
 
 2. Under **Application Tier>Reporting**, choose **Start Rebuild**.  
 
@@ -165,19 +165,19 @@ By default, TCP/IP is disabled when you install SQL Server.
 
 * A detach/attach operation resulted in a misconfiguration of a team project collection. For example, a collection has become attached to two different data-tier servers, which is an unsupported scenario. Correcting the configuration and then rebuilding the data warehouse should resolve the errors.  
 
-* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore-tfs).   
+* You've performed an unsupported backup or restore operation as described in [Back up and restore TFS](/azure/devops/server/admin/backup/back-up-restore).   
 
 #### Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.
 
-![Edit the information to configure reporting](_img/IC665021.png)
+![Edit the information to configure reporting](media/IC665021.png)
 
 #### Q: What happens to data that has been purged or destroyed before a rebuild?
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 
 
 Also, data in the warehouse or cube that originates from third-party sources might also be lost. Even though most third-party tools are capable of republishing data, that capability depends on the individual vendor. Contact your vendor to determine what (if any) data might be lost.
 
-For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](http://blogs.msdn.com/b/adamroot/archive/2009/06/12/working-with-deleted-build-data-in-team-foundation-server-2010-beta-1.aspx).
+For details of what data doesn't get deleted from the database when you delete builds, see [this blog post](https://blogs.msdn.com/b/adamroot/archive/2009/06/12/working-with-deleted-build-data-in-team-foundation-server-2010-beta-1.aspx).
 
 Deleting builds doesn't remove all associated data from the database. To do that, you must destroy the builds. You use the **TFSBuild destroy** [command to destroy builds](https://msdn.microsoft.com/library/ee794689.aspx) and to save space in the data warehouse. 
 

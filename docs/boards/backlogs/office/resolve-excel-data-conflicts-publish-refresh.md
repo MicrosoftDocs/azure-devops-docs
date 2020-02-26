@@ -5,7 +5,7 @@ description: Resolves data conflicts when publishing a work item from Excel or P
 ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -14,7 +14,7 @@ ms.date: 02/22/2017
 
 # Resolve data conflicts (publish and refresh)
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 A data conflict occurs when you try to publish a work item from [Excel](bulk-add-modify-work-items-excel.md) or [Project](create-your-backlog-tasks-using-project.md) and the version of that work item differs from the version in the work item database. The following example shows how two team members can create such a conflict.  
   

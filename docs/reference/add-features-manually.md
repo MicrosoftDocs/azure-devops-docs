@@ -5,7 +5,7 @@ description: Manually update an existing project to access new features after up
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -233,15 +233,12 @@ Bug Behavior
     <li>Add <code>Fixed and verified</code> as a Resolved Reason </li>
     </ul>
     </li>
-
     <li>CMMI Bug:
     <ul>
     <li> Add fields: <code>Size</code>, <code>Discipline</code>, <code>Original Work</code>, <code>Completed Work</code>, and <code>Value Area</code>   </li>
     <li>Add  <code>New</code> state and corresponding workflow transitions</li>
     </ul>
     </li>
-
-
     <li>Scrum Bug:<br/>    <ul>
     <li>Add fields: <code>Activity</code>, <code>Remaining Work</code>, <code>Priority</code>, and <code>Value Area</code></li>
     <li>Add rule to zero out <code>Remaining Work</code> when <code>State=Done</code></li>
@@ -276,11 +273,11 @@ The quickest way to make many of these updates is to copy definition files from 
 
 2.  Open the Process Template Manager from the **Team>Team Project Collection Settings** menu. 
 
-     ![Open Process Template Manager](../boards/work-items/guidance/_img/open-process-template-manager.png)
+     ![Open Process Template Manager](../boards/work-items/guidance/media/open-process-template-manager.png)
 
     You'll see a list of each process template that has been uploaded to the project collection.  
 
-     ![Select process template to work with](../boards/work-items/guidance/_img/process-template-manager.png)
+     ![Select process template to work with](../boards/work-items/guidance/media/process-template-manager.png)
 
     The **Upload**, **Download**, **Make Default**, and **Delete** buttons are disabled when you don't have the necessary permissions to manage process templates. 
 
@@ -296,19 +293,23 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 ## Import a WIT 
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]  
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]  
 
 1. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 
-   ```witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"```
+    ```
+    witadmin importwitd /collection:CollectionURL /p:"ProjectName" /f:"DirectoryPath\WITDefinitionFile.xml"
+    ```
 
-       For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
+    For *CollectionURL* specify the URL of a project collection and for *ProjectName* specify the name of a project defined within the collection. You must specify the URL in the following format: ```http://ServerName:Port/VirtualDirectoryName/CollectionName```.  
 
-       For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
+    For *DirectoryPath*, specify the path to the ```WorkItem Tracking/TypeDefinitions``` folder that holds the process template that you downloaded. The directory path must follow this structure: ```Drive:\TemplateFolder\WorkItem Tracking\TypeDefinitions```.
 
-   For  example,  import the Feedback Request WIT:
+    For  example,  import the Feedback Request WIT:
 
-   ```witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection"/p:MyProject /f:"C:\MyTemplates\WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml"``` 
+    ```
+    witadmin importwitd /collection:"http://MyServer:8080/tfs/DefaultCollection"/p:MyProject /f:"C:\MyTemplates\WorkItem Tracking\TypeDefinitions\FeedbackRequest.xml"
+    ``` 
 
 Here's a checklist of WITs to import to support new features:   
 -   **Portfolio Backlogs**: Epic and Feature

@@ -5,7 +5,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 title: Permissions and security with VSTS | REST API Reference for Team Foundation Server
 description: Permissions reference fpr integrating with VSTS
 ms.assetid: ede350bd-bdf7-4360-90ac-e5be3fe24266
-ms.manager: jillfra
+ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
