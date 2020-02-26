@@ -2,7 +2,6 @@
 title: Release triggers for stages, branches, and pipelines
 description: DevOps CI CD - Understand triggers in Azure Pipelines
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair

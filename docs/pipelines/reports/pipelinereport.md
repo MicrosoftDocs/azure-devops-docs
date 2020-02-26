@@ -2,11 +2,8 @@
 title: Pipeline reports
 description: Get meaningful insights with pipeline reports in the pipeline
 ms.assetid: 678DF283-CE38-4CAF-BA74-D331B357F510
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.author: sdanie
-author: steved0x
 ms.date: 08/21/2019
 monikerRange: '>=azure-devops-2019'
 ---

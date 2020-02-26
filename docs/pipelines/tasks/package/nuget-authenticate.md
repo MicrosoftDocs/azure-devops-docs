@@ -3,7 +3,6 @@ title: NuGet Authenticate
 ms.custom: seodec18
 description: Configure NuGet tools to authenticate with Azure Artifacts and other NuGet repositories
 ms.topic: reference
-ms.technology: devops-cicd
 ms.date: 08/27/2019
 monikerRange: 'azure-devops'
 ---

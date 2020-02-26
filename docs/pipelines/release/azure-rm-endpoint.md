@@ -3,7 +3,6 @@ title: Troubleshoot Azure Resource Manager service connections
 ms.custom: seodec18
 description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair

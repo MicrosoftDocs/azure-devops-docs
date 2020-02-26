@@ -3,7 +3,6 @@ title: CMake build and release task
 ms.custom: seodec18
 description: CMake build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: A0C6CAF5-E953-4705-80C5-896267A910AF
 ms.author: whjenkin
 author: wnjenkin

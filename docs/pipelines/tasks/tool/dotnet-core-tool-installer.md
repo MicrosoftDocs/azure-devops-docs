@@ -1,7 +1,6 @@
 ---
 title: Use .NET Core task
 description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
 ms.author: puagarw

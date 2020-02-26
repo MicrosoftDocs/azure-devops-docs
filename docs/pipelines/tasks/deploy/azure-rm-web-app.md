@@ -1,7 +1,6 @@
 ---
 title: Azure Web App task
 description: The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs.
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: 57D04B69-1068-4A06-80B8-4C0FE7BEEC55
 ms.author: atulmal

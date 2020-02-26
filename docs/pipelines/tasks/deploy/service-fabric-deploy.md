@@ -2,7 +2,6 @@
 title: Service Fabric Application Deployment task 
 description: Service Fabric Application Deployment task
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
-ms.technology: devops-cicd
 ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai

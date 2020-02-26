@@ -3,7 +3,6 @@ title: Understand approvals, gates, and checks
 ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage

@@ -5,10 +5,7 @@ ms.custom: seodec18
 description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.author: rabououn
-author: ramiMSFT
 ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---

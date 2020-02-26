@@ -1,9 +1,7 @@
 ---
 title: Pipeline resources
 description: Permissions and approvals on important resources.
-ms.technology: devops-cicd
 ms.assetid: 9e635504-f56a-4d59-8629-ced0cbb03c77
-ms.author: jukullam
 ms.reviewer: macoope
 ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'

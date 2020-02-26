@@ -2,7 +2,6 @@
 title: Delay task
 description: Pause execution of a build or release pipeline for a fixed delay time 
 ms.assetid: 1EFDAB02-66D7-4B8A-A8BC-43AF2C43F282
-ms.technology: devops-cicd
 ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai

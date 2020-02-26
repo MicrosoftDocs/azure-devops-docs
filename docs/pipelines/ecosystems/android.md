@@ -1,7 +1,6 @@
 ---
 title: Build, test, and deploy Android apps
 description: Automatically build, test, and deploy Android projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
 ms.author: vijayma

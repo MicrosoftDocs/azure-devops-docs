@@ -2,11 +2,8 @@
 title: Environment - Kubernetes resource
 description: Kubernetes resource views within Environment
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: atulmal
-ms.author: jukullam
-author: juliakm
 ms.date: 05/03/2019
 monikerRange: azure-devops
 ---

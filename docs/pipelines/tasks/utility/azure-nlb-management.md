@@ -2,7 +2,6 @@
 title: Azure Network Load Balancer task
 description: Connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: e94f1750-a6a8-11e6-be69-bdf37a7b15d8
 ms.custom: seodec18
 ms.author: ronai

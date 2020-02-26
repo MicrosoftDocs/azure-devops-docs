@@ -3,7 +3,6 @@ title: npm task
 ms.custom: seodec18
 description: How to use npm packages when building code in Azure Pipelines
 ms.topic: reference
-ms.technology: devops-cicd
 ms.assetid: BE298C30-3B6D-4E06-B747-62A8AF6E10A6
 ms.author: vijayma
 author: vijayma

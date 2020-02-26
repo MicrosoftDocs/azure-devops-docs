@@ -1,7 +1,6 @@
 ---
 title: Use the Azure portal to create a pipeline
 description: Use the Azure portal to create a pipeline
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.author: mlearned
 author: mlearned

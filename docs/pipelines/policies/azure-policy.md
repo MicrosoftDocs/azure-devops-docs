@@ -2,7 +2,6 @@
 title: Enforce Azure Policy compliance
 description: Understand how to use Azure Policy in Azure Pipelines
 ms.assetid: 3B51122B-7354-467C-93B8-A20D81AFFADE
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: atulmal

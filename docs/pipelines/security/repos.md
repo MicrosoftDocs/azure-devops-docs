@@ -1,9 +1,7 @@
 ---
 title: Repository protection
 description: Securing repos and forks.
-ms.technology: devops-cicd
 ms.assetid: c1cfe88b-96aa-4804-998c-027a287e5696
-ms.author: jukullam
 ms.reviewer: macoope
 ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'

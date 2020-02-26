@@ -2,7 +2,6 @@
 title: Deploy an ASP.NET Cloud Service app 
 description: Example of deploying an Azure cloud services package in Azure Pipelines or Team Foundation Server
 ms.assetid: 2FFE372F-0F5A-4B8C-9AEE-5D8E4F61F6F5
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: ronai

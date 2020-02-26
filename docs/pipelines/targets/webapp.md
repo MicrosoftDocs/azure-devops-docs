@@ -2,7 +2,6 @@
 title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid:
 ms.custom: seodec18
