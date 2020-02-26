@@ -3,9 +3,7 @@ title: On-premises XML process model
 titleSuffix: TFS 
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

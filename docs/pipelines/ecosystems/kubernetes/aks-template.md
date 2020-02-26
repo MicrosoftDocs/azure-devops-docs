@@ -1,11 +1,9 @@
 ---
 title: Deploy to Azure Kubernetes Service
 description: Build and push images to Azure Container Registry; Deploy to Azure Kubernetes Service
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: cdf9ed1b-6986-43c3-8270-5d7d31c1ddf1
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 09/28/2019

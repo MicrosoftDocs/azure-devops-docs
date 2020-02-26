@@ -3,10 +3,8 @@ title: Add a team, move from one team to several teams
 titleSuffix: Azure DevOps 
 description: Add a team to scale your Agile tools in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

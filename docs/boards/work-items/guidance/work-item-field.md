@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

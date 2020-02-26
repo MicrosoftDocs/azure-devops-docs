@@ -3,10 +3,8 @@ title: Disable the data warehouse and cube
 titleSuffix: TFS
 description: Disable the data warehouse and cube for Team Foundation Server 
 ms.assetid:   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013 <= azure-devops-2019" 

@@ -2,10 +2,8 @@
 title: VSS/WebApi/Contracts ApiResourceVersion API | Extensions for Azure DevOps Services
 description: Represents version information for a REST Api resource
 ms.assetid: 614bd240-8560-63ff-c1cf-f450f8590cd7
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

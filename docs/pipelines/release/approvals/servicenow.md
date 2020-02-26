@@ -3,10 +3,8 @@ title: Control deployments by using ServiceNow
 ms.custom: seodec18
 description: Understand ServiceNow gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
 author: azooinmyluggage
 ms.date: 01/10/2019

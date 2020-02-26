@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 10/17/2019

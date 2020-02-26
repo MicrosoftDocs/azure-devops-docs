@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Use keyboard shortcuts with work item forms and the Work Items hub
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference
 monikerRange: '>= tfs-2013'

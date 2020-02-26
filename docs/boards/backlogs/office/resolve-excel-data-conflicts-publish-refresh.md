@@ -2,10 +2,8 @@
 title: Resolve data conflicts (publish and refresh)
 titleSuffix: Azure Boards
 description: Resolves data conflicts when publishing a work item from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d43d6f68-bcef-42af-857c-50c2ff6ea79b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

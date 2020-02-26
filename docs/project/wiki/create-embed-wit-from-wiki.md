@@ -2,11 +2,9 @@
 title: Create and embed a work item from wiki
 titleSuffix: Azure DevOps  
 description: Learn how to create and embed work items with selected text in wiki content in Azure DevOps.  
-ms.prod: devops
 ms.technology: devops-collab
 ms.custom: wiki
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: anian

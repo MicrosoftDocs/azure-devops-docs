@@ -3,10 +3,8 @@ title: Deployment group jobs in Build and Release
 ms.custom: seodec18
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 5/3/2018

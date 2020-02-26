@@ -2,10 +2,8 @@
 title: Collect more diagnostic data
 description: Manual and exploratory testing - Collect more diagnostic data in manual tests when you want to test web applications
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

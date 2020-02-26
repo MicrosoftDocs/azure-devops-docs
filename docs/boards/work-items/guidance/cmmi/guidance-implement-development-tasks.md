@@ -2,11 +2,9 @@
 title: CMMI process guidance, Implement development tasks
 titleSuffix: Azure Boards
 description:  Implements the development task that involves adding the appropriate new functionality to your software
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e3345668-394d-419a-b813-8fa68b6b1bfc
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

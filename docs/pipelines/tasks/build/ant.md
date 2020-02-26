@@ -3,10 +3,8 @@ title: Ant build and release task
 ms.custom: seodec18
 description: Learn how to build with Apache Ant for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: EDC23F42-D73B-479C-9626-4C9D6E09B57B
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/17/2019

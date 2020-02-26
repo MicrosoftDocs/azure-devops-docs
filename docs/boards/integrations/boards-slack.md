@@ -2,10 +2,8 @@
 title: Azure Boards with Slack
 titleSuffix: Azure Boards
 description: Create work items and monitor work item activity in Azure Boards project from within Slack channels
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.reviewer: karrg
 ms.author: kaelli
 author: RGKarthik

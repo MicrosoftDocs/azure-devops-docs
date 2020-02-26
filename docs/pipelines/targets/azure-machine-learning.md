@@ -3,7 +3,6 @@ title: Azure Machine Learning training and deployment
 titleSuffix: Azure Pipelines
 description: Train machine learning models and deploy to web services from Azure Pipelines. Learn how to create a pipeline that uses the Azure Machine Learning service to train and deploy models.
 services: machine-learning
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: tutorial
 manager: jillfra

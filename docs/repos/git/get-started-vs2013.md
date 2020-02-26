@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

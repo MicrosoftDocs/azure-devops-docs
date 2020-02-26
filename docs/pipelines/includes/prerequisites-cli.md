@@ -1,8 +1,6 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: geverghe
 author: geverghe
 ms.date: 02/13/2020

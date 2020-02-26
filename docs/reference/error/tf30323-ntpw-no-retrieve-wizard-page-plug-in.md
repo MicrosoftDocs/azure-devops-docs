@@ -2,10 +2,8 @@
 title: TF30323-The New Team Project Wizard...
 titleSuffix: Azure DevOps & TFS
 description: Display an error when the New Team Project Wizard could not retrieve the wizard page from the plug-in.
-ms.prod: devops
 ms.technology: devops-agile
 ms.manager: mijacobsc-171a-4e3f-8470-e1a8089b93af
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

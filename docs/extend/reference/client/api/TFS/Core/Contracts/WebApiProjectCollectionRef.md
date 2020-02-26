@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts WebApiProjectCollectionRef API | Extensions for Azure DevOps Services
 description: Data representation of a Web API project collection ref.
 ms.assetid: d6813a21-6950-2785-f9c2-7b863d69863a
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

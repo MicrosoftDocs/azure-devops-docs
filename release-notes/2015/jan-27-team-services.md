@@ -1,7 +1,6 @@
 ---
 title: VS Online Basic license expanded – Jan 27
 description: VSTS release notes for January 27 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 3e7d714e-d58d-4e18-a2c9-0faf6fd3f1d8

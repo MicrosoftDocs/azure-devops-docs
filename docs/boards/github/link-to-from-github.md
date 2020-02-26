@@ -3,9 +3,7 @@ title: Link GitHub commits and PRs to work items
 titleSuffix: Azure Boards 
 description: Add links to GitHub commits and pull requests to or from Azure Boards work items 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:    
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

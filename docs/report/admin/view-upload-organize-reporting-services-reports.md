@@ -2,11 +2,9 @@
 title: View, upload, and organize Reporting Services reports
 titleSuffix: TFS
 description: View, upload, and organize Reporting Services reports to analyze the progress and quality of the project  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 

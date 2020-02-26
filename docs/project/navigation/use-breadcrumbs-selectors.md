@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Navigate to pages and artifacts using breadcrumbs or selectors in the web portal for Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

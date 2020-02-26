@@ -3,10 +3,8 @@ title: Demands
 ms.custom: seodec18
 description: Configure custom demands for your pipeline in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/30/2019
