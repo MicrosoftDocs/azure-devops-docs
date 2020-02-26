@@ -2,10 +2,8 @@
 title: Manage projects using TFS-Project Server integration
 titleSuffix: TFS 
 description: Understand how to manage projects when synchronizing data between Team Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e5cf789c-2edb-4d84-aecd-f4d09fc854da
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

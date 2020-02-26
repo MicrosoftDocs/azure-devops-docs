@@ -1,10 +1,8 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetContracts WidgetSettings API | Extensions for Azure DevOps Services
 description: Documentation for the WidgetSettings contract.
 ms.assetid: FA3CF072-EE45-42D6-92DA-AEA6D27218BA
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -2,10 +2,8 @@
 title: Collect diagnostic data
 description: Manual and exploratory testing - collect diagnostic data while testing web and desktop apps with Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: F536C364-BEFC-48A8-B977-19233941EF6A
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

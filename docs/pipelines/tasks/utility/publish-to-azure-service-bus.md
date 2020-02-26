@@ -2,10 +2,8 @@
 title: Publish To Azure Service Bus task 
 description: Send a message to an Azure Service Bus with a build or release pipeline in Azure Pipelines and TFS
 ms.assetid: 81D73795-0171-434F-AE37-5386F4E71915
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

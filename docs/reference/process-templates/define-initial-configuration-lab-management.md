@@ -2,10 +2,8 @@
 title: Define the initial configuration of Lab Management 
 titleSuffix: TFS
 description: Customize the project's initial security configuration for Lab Management and Team Foundation Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

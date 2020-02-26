@@ -5,7 +5,6 @@ description: Learn how to sign up for Azure Pipelines to begin managing CI/CD to
 ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/26/2020

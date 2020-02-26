@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts SuiteUpdateModel API | Extensions for Azure DevOps Services
 description: Data representation of a suite update model.
 ms.assetid: 03003214-866a-6220-339a-5eb66b597621
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -1,11 +1,9 @@
 ---
 title: Validation of process templates for migration import from https://marketplace.visualstudio.com/items?itemName=ms.feed# to Azure DevOps Services | Azure DevOps
 description: Guidance for fixing common data migration tool process template issues.
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

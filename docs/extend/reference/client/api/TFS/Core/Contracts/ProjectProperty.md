@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts ProjectProperty API | Extensions for Azure DevOps Services
 description: Data representation of a project property.
 ms.assetid: d020e562-5229-c07e-f8a6-769169452734
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

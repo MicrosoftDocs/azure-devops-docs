@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Understand the file conventions of the Git repository wiki in Azure DevOps
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley

@@ -1,11 +1,9 @@
 ---
 title: FAQ for Android Studio with Azure DevOps Services and TFS
 description: Frequently Asked Questions about Android Studio with Azure DevOps Services and TFS
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: reference
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel

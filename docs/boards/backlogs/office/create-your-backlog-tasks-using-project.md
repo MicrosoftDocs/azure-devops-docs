@@ -3,7 +3,6 @@ title: Create your backlog and tasks using Microsoft Project
 titleSuffix: Azure Boards
 description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: mijacobs 
 ms.author: kaelli

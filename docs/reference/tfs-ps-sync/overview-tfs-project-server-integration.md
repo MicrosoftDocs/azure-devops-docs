@@ -2,10 +2,8 @@
 title: Overview of TFS-Project Server integration features 
 titleSuffix: TFS 
 description: Understand how to customize data synchronization between Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/12/2017

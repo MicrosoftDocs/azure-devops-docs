@@ -2,10 +2,8 @@
 title: Customize field mapping between TFS & Project Server
 titleSuffix: TFS
 description: Associate the fields in Team Foundation Server with fields in Project Server 
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: e2785458-f618-42b4-ab77-fbe4cb41c493
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -2,10 +2,8 @@
 title: New test plans page   
 description: New Test Plans page
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: ravishan-msft
 author: ravishan-msft
 ms.date: 02/18/2020

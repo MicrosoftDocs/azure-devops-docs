@@ -3,10 +3,8 @@ title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 02/11/2020

@@ -3,10 +3,8 @@ title: Container Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: jukullam
 ms.date: 01/21/2020
 monikerRange: '>= azure-devops-2019'

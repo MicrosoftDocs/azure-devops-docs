@@ -2,12 +2,8 @@
 title: Publish and then download a Universal Package
 description: Using Universal Packages in Azure DevOps Services
 ms.assetid: f47b858c-138d-426d-894c-a5fe1d5aa08e
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/27/2019
 monikerRange: 'azure-devops'
 ---

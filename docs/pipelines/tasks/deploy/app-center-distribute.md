@@ -2,7 +2,6 @@
 title: App Center Distribute task
 description: Distribute app builds to testers and users through App Center
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel

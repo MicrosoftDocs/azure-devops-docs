@@ -3,10 +3,8 @@ title: Catalog of the built-in tasks for build-release and Azure Pipelines & TFS
 ms.custom: seodec18
 description: Catalog of the built-in tasks on Azure Pipelines and Team Foundation Server
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: D2DE8A26-AF89-4B08-9FCD-30CD58635B0A
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 05/03/2018

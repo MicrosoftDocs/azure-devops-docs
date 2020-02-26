@@ -2,10 +2,8 @@
 title: YAML schema
 ms.custom: seodec18
 description: An overview of all YAML syntax.
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope

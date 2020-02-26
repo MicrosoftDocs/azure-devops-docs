@@ -3,10 +3,8 @@ title: View, change user preferences
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-settings
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

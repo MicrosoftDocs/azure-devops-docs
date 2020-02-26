@@ -3,9 +3,7 @@ title: Add information banner
 titleSuffix: Azure DevOps Services
 description: Add, update, or remove an information banner to your organization
 ms.technology: devops-settings
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

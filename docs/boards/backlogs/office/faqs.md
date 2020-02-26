@@ -2,9 +2,7 @@
 title: FAQs for working in Excel
 titleSuffix: Azure Boards
 description: Find answers to frequently asked questions about working in Microsoft Excel to track work in Azure Boards
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

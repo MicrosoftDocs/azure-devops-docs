@@ -5,9 +5,7 @@ description: View and update work items from your mobile client when using Azure
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.prod: devops
 ms.assetid: 1B91BB7F-1205-4E51-B33C-1349D3117408
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2018'

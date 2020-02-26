@@ -3,10 +3,8 @@ title: View and filter work items
 titleSuffix: Azure DevOps Services Public Project
 description: View and filter work items using the work items page   
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart

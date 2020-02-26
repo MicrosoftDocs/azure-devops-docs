@@ -2,12 +2,8 @@
 title: NuGet Publisher task Version 0.*
 ms.custom: seodec18
 description: Learn all about how you can publish NuGet packages when building code in Azure Pipelines and Team Foundation Server
-ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: E592A505-C253-4190-86D2-E4F679F5FCBE
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/10/2016
 ---
 

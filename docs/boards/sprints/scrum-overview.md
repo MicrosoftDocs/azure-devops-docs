@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Implement Scrum, track work, monitor progress and trends in Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

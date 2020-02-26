@@ -3,11 +3,9 @@ title: Add, invite guest users to your organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to invite an outside or external user to your organization
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/22/2019

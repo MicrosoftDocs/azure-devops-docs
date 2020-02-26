@@ -2,10 +2,8 @@
 title: Charts for Kanban boards | REST API Reference for Team Foundation Server
 description: Work with the charts on Kanban boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: b23c71d1-7c01-4c29-a48d-a64c6f7a5560
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -3,10 +3,8 @@ title: Build pipeline history
 ms.custom: seodec18
 description: Learn about how you can determine what changed, when it happened, and who did it on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: AB81E23E-DD84-4BDB-ACD9-AE03D783A303
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 3/15/2018
