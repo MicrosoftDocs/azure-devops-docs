@@ -1,7 +1,7 @@
 ---
 title: Index to project and team tasks and concepts
 titleSuffix: Azure DevOps
-description: Find project and team tasks quickly 
+description: Find project and team tasks and related concepts 
 ms.technology: devops-settings
 ms.prod: devops
 ms.manager: mijacobs
@@ -9,12 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/20/2020
+ms.date: 02/26/2020
 ---
 
 # Project and team quick reference
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+
+Use this index to quickly access concepts and tasks related to managing projects and teams.  
 
 ## Key concepts
 
@@ -68,7 +70,7 @@ ms.date: 02/20/2020
    :::column span="":::
 - [Permissions](../security/about-permissions.md)  
 - [Process (Inherited)](../settings/work/inheritance-process-model.md)  
-- [Process (On-premises XML)](../settings/work/inheritance-process-model.md)  
+- [Process (On-premises XML)](../../reference/on-premises-xml-process-model.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
 - [Project-level permissions](../security/permissions.md#project-level-permissions)  
@@ -86,7 +88,41 @@ ms.date: 02/20/2020
 ::: moniker-end
 
 
-## Project administrative tasks
+
+::: moniker range="< tfs-2018"
+
+:::row:::
+   :::column span="":::
+- [About projects](about-projects.md)  
+- [About teams](../settings/about-teams-and-settings.md)  
+- [Access levels](../security/access-levels.md)  
+- [Area paths](../settings/about-areas-iterations.md)  
+- [Dashboards](../../report/dashboards/overview.md)  
+- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [Iteration paths](../settings/about-areas-iterations.md)  
+   :::column-end:::
+   :::column span="":::
+- [Permissions](../security/about-permissions.md)  
+- [Process (On-premises XML)](../../reference/on-premises-xml-process-model.md)  
+- [Project resources viewable by members](resources-granted-to-project-members.md)  
+- [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
+   :::column-end:::
+   :::column span="":::
+- [Projects page](../../project/navigation/work-across-projects.md)  
+- [Security groups](../security/about-permissions.md)  
+- [Service hooks](../../service-hooks/overview.md)  
+- [Summary page](project-vision-status.md) 
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+
+## Administrative tasks  
+
+The following tasks typically require permissions granted to a member of the Project Administrators group or a team administrator. 
 
 
 ::: moniker range="azure-devops"
@@ -98,6 +134,7 @@ ms.date: 02/20/2020
 - [Add project dashboard](../../report/dashboards/dashboards.md#add-a-dashboard)  
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
 - [Add/manage service hooks](../../service-hooks/overview.md)  
 - [Connect to a project](connect-to-projects.md)  
@@ -139,6 +176,7 @@ ms.date: 02/20/2020
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
 - [Add team members](../security/add-users-team-project.md)  
+- [Add team administrators](../settings/add-team-administrator.md)  
 - [Add/manage service hooks](../../service-hooks/overview.md)
 - [Change access levels](../security/change-access-levels.md)   
 - [Connect to a project](connect-to-projects.md)  
@@ -174,6 +212,7 @@ ms.date: 02/20/2020
 - [Add project administrators](../security/set-project-collection-level-permissions.md)  
 - [Add project members](../security/add-users-team-project.md)  
 - [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
 - [Add/manage service hooks](../../service-hooks/overview.md)
 - [Change access levels](../security/change-access-levels.md)   
