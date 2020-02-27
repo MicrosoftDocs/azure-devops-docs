@@ -36,4 +36,4 @@ steps:
 
 When the pipeline runs, you can set the `VmImage`. 
 
-![runtime parameters](media/runtime-param-ui.png)   
+![runtime parameters](media/runtime-param-ui.png)
