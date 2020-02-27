@@ -200,20 +200,20 @@ We now have the module and the module manifest. We are ready to package it and s
 
     Add the Azure DevOps Services repo as a source for NuGet:
     ```powershell
-    nuget.exe sources Add -Name "PowershellModules" -Source "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v3/index.json"
+    nuget sources Add -Name "PowershellModules" -Source "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v3/index.json"
     ```
     
     If you're still using the older ```visualstudio.com``` URLs, use this command instead:
     ```powershell
-    nuget.exe sources Add -Name "PowershellModules" -Source "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v3/index.json"
+    nuget sources Add -Name "PowershellModules" -Source "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v3/index.json"
     ```
 
     Push the file to the NuGet feed in Azure Artifacts. You will have to change the name of the `.nupkg` file:
     ```powershell
-    nuget.exe push -Source "PowershellModules" -ApiKey AzureDevOpsServices Get-Hello.nupkg
+    nuget push -Source "PowershellModules" -ApiKey AzureDevOpsServices Get-Hello.nupkg
     ```
 
-After the `nuget.exe push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure Artifacts.
+After the `nuget push` command, PowerShell will ask you for your credentials. The first is a username which is not tied to anything. The second is the password. You can copy and paste your Azure DevOps Services PAT from before. Upon entering your access token, our module is now able to be installed from our feed in Azure Artifacts.
 
 ## Connecting to the feed as a PowerShell repo
 
