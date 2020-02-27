@@ -14,6 +14,7 @@ monikerRange: '>= azure-devops'
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
+Also, decorators run after task names are resolved to task GUIDs, so you cannot use symbolic names for tasks.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -123,3 +124,40 @@ variables:
 steps:
 - script: echo This is the only step. No decorator is added.
 ```
+
+## Task names and GUIDs
+
+Decorators run after tasks have already been turned into GUIDs.
+Consider the following YAML:
+
+```yaml
+steps:
+- checkout: self
+- bash: echo This is the Bash task
+- task: PowerShell@2
+	inputs:
+		targetType: inline
+		script: Write-Host This is the PowerShell task
+```
+
+Each of those steps maps to a task, and each task has a unique GUID.
+The step which maps task names and keywords to task GUIDs runs before decorators are injected.
+If a decorator wants to check for the existence of another task, it must search by task GUID rather than by name or keyword.
+
+For normal tasks (which you specify with the `task` keyword), you can look at the task's `task.json` to determine its GUID.
+For special keywords like `checkout` and `bash` in the example above, you can use the following GUIDs:
+
+| Keyword      | GUID                                   | Task Name |
+|--------------|----------------------------------------|-----------|
+| `checkout`   | `6D15AF64-176C-496D-B583-FD2AE21D4DF4` | n/a, see note below |
+| `bash`       | `6C731C3C-3C68-459A-A5C9-BDE6E6595B5B` | Bash |
+| `script`     | `D9BAFED4-0B18-4F58-968D-86655B4D2CE9` | CmdLine |
+| `powershell` | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
+| `pwsh`       | `E213FF0F-5D5C-4791-802D-52EA3E7BE1F1` | PowerShell |
+| `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
+| `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
+
+> [!INFO]
+> Each of these GUIDs can be found in the `task.json` for the corresponding [in-box task](https://github.com/microsoft/azure-pipelines-tasks).
+> The only exception is `checkout`, which is a native capability of the agent.
+> Its GUID is built into the Azure Pipelines service and agent.
