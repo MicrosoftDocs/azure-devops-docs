@@ -2,10 +2,8 @@
 title: Define groups, teams, and permissions 
 titleSuffix: TFS
 description: Customize the Groups and Permission plug-in to preconfigure groups, teams, and user permissions
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 322a80cc-0396-43d7-8be3-63d5cce058d3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -2,10 +2,8 @@
 title: Install the Analytics extension on Azure DevOps Server
 description: Add Analytics to your Azure DevOps Server deployment by installing the Analytics extension
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops-2019'

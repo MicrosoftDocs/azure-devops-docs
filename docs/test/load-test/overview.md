@@ -2,10 +2,8 @@
 title: Load test overview
 description: Changes to functionality in Visual Studio and cloud load testing in Azure DevOps
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019

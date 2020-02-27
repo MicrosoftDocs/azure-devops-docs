@@ -2,10 +2,8 @@
 title: What is Analytics
 titleSuffix: Azure DevOps
 description: Understand how you can use Analytics data to answer quantitative questions about your projects in Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

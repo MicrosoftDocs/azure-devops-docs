@@ -3,10 +3,7 @@ title: Install RM server/client for Visual Studio
 ms.custom: seodec18
 description: Learn how you can install the Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015 
 ms.assetid: AEED8FFC-D902-4789-8FBA-A6DAD4F6D34B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

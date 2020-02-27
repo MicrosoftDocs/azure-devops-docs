@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildDefinitionReference API | Extensions for Azure DevOps Services
 description: Data representation of a build definition reference.
 ms.assetid: 4641d34c-3762-650c-acfd-d309a5a479fb
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

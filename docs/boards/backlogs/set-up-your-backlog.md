@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Configure and customize your backlog to display the work you want  
 ms.custom: boards-backlogs    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

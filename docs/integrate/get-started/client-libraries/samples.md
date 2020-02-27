@@ -2,10 +2,8 @@
 title: .NET Client Library Samples for Azure DevOps Services
 description: C# samples showing how to integrate with Azure DevOps Services and Team Foundation Server from apps and services on Windows.
 ms.assetid: 9ff78e9c-63f7-45b1-a70d-42aa6a9dbc57
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley

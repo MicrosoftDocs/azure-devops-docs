@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts Deployment API | Extensions for Azure DevOps Services
 description: Represents the data from the build information nodes for type &quot;DeploymentInformation&quot; for xaml builds
 ms.assetid: fd692bd9-12e1-9a7b-aade-7b302cd4eaad
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

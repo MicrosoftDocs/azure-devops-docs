@@ -2,10 +2,8 @@
 title: Card Fields for Kanban Boards | REST API Reference for Team Foundation Server
 description: Work with the fields on the cards in Kanban boards programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C2E9062C-3C18-42BC-A057-794FD2F2BA35
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

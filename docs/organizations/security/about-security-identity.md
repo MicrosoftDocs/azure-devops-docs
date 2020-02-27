@@ -2,11 +2,9 @@
 title: How are security and identity managed?
 titleSuffix: Azure DevOps
 description: Understand how Azure DevOps manages authentication, authorization, security groups and permissions, security roles, access levels, and default perms 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview

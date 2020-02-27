@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IXDMChannel API | Extensions for Azure DevOps Services
 description: Interface for a single XDM channel
 ms.assetid: b0808b49-1647-8473-4190-53444ce711ec
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

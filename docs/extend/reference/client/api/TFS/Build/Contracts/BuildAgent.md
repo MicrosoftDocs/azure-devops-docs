@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildAgent API | Extensions for Azure DevOps Services
 description: Data representation of a build agent.
 ms.assetid: ccaf202f-73e1-583a-a449-9742cbd013fc
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

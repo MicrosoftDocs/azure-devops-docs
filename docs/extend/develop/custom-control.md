@@ -1,11 +1,9 @@
 ---
 title: Add a custom control to the work item form | Extensions for Azure DevOps Services
 description: Describes how to extend the work item form by adding a custom control.
-ms.prod: devops
 ms.contentid: 0956ACA7-B1C4-443F-A79A-A62EDD02FC15
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

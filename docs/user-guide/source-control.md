@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: What is source control or version control in Azure DevOps & Team Foundation Server?  
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 7E769466-2165-4223-96FA-80A687287EFC
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

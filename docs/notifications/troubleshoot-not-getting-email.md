@@ -3,8 +3,6 @@ title: Why am I not receiving notification emails?
 titleSuffix: Azure DevOps
 description: Discover why you aren't receiving emails from your Azure DevOps or TFS notification subscriptions and fix it.
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts ProjectInfo API | Extensions for Azure DevOps Services
 description: Contains information of the project
 ms.assetid: c28201ab-4507-191e-e99d-167d718087c5
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

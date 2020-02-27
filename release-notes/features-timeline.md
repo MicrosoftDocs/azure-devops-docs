@@ -4,9 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/28/2020
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: mijacobs
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---

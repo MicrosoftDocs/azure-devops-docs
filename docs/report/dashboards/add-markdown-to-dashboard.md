@@ -3,10 +3,8 @@ title: Add markdown content to a team dashboard
 titleSuffix: Azure DevOps
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'

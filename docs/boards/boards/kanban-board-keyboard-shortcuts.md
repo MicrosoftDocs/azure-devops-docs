@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use keyboard shortcuts to interact with product, portfolio, and sprint backlogs in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

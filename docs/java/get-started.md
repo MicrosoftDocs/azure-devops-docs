@@ -1,11 +1,9 @@
 ---
 title: Get started with Java DevOps and Azure DevOps Services
 description: Create accounts necessary for getting started with Java DevOps and Azure DevOps Services
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel

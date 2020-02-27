@@ -3,12 +3,7 @@ title: Stages in Azure Pipelines
 ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---

@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts ControllerStatus API | Extensions for Azure DevOps Services
 description: Data representation of a controller status.
 ms.assetid: c7cdacf6-faeb-7044-abba-c6c7b248bcb4
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

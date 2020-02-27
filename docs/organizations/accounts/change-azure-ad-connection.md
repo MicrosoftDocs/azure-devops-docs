@@ -3,18 +3,16 @@ title: Switch to another Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change or switch your organization connection to a different Azure Active Directory
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 10/22/2019
+ms.date: 02/27/2020
 monikerRange: 'azure-devops'
 ---
 
-# Switch to another Azure Active Directory
+# Change your organization connection to another Azure AD
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
@@ -26,7 +24,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 Before you switch your organization directory, make sure the following is true:
 - You're in the Project Collection Administrator group (in Organization settings) for the organization 
-- You're in the source Azure AD and destination Azure AD as a member. For more information, see how you can [convert an Azure AD guest into a member](faq-add-delete-users.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
+- You're a member or a guest in the source Azure AD and in the destination Azure AD
 
 ## Change the Azure AD connection
 

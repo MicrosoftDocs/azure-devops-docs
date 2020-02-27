@@ -3,10 +3,8 @@ title: Install the Azure Boards app for GitHub
 titleSuffix: Azure Boards
 description: Configure the Azure Boards app to connect one or more GitHub repositories to Azure Boards 
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

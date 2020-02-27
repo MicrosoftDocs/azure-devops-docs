@@ -3,10 +3,7 @@ title: Release Management for VS 2015 & TFS 2015
 ms.custom: seodec18
 description: Learn about Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015.
 ms.assetid: 1FBA8A92-BC8C-452A-A5BD-FA6A3D2E2F0B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

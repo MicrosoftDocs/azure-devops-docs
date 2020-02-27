@@ -3,11 +3,9 @@ title: Buy access to Azure DevOps Server
 titleSuffix: Azure DevOps Server
 ms.custom: seodec18
 description: Steps for how to buy monthly access to Azure DevOps Server or Azure Test Plans 
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: B6BED64A-DA53-4AB0-B200-85F86A869D7B
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2019

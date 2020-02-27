@@ -3,12 +3,7 @@ title: Service Containers
 titleSuffix: Azure Pipelines & TFS
 description: Run containerized services alongside pipeline jobs
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 01/14/2019
 monikerRange: azure-devops
 ---

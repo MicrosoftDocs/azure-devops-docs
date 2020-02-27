@@ -1,6 +1,5 @@
 ---
 ms.technology: devops-collab
-ms.prod: devops
 ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley

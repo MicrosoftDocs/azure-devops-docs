@@ -1,7 +1,6 @@
 ---
 title: Extensions, Previews, and more – Nov 18
 description: VSTS release notes for November 18 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: a3dd10a2-5d57-4168-9b5a-0a14e82ac9eb

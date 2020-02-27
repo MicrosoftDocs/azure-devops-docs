@@ -1,10 +1,8 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetContracts IWidget API | Extensions for Azure DevOps Services
 description: Documentation for the IWidget contract.
 ms.assetid: 2F1CB8E2-5027-4134-A96B-E60979DFD11E
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
