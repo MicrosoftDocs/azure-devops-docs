@@ -75,10 +75,10 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Project and process object limits](../settings/work/object-limits.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
-- [Project-level permissions](../security/permissions.md#project-level-permissions)  
-- [Project-level security groups](../security/permissions.md#project-level-groups)  
    :::column-end:::
    :::column span="":::
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
 - [Projects page](../../project/navigation/work-across-projects.md)  
 - [Security groups](../security/about-permissions.md)  
 - [Service hooks](../../service-hooks/overview.md)  
@@ -91,7 +91,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 
 
 
-::: moniker range="< tfs-2018"
+::: moniker range="<= tfs-2018"
 
 :::row:::
    :::column span="":::
@@ -109,10 +109,10 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Project and process object limits](../settings/work/object-limits.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
-- [Project-level permissions](../security/permissions.md#project-level-permissions)  
-- [Project-level security groups](../security/permissions.md#project-level-groups)  
    :::column-end:::
    :::column span="":::
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
 - [Projects page](../../project/navigation/work-across-projects.md)  
 - [Security groups](../security/about-permissions.md)  
 - [Service hooks](../../service-hooks/overview.md)  
@@ -123,9 +123,9 @@ Use this index to quickly access concepts and tasks related to managing projects
 ::: moniker-end
 
 
-## Administrative tasks  
+## User and administrative tasks  
 
-The following tasks typically require permissions granted to a member of the Project Administrators group or a team administrator. 
+Several of the following tasks require permissions granted to a member of the Project Administrators group or a team administrator. 
 
 
 ::: moniker range="azure-devops"
@@ -140,10 +140,10 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
 - [Add/manage service hooks](../../service-hooks/overview.md)  
-- [Connect to a project](connect-to-projects.md)  
-- [Connect to GitHub](../../boards/github/connect-to-github.md)  
    :::column-end:::
    :::column span="":::
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Enable/disable project services](../settings/set-services.md)  
@@ -153,10 +153,10 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
 - [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
-   :::column-end:::
-   :::column span="":::
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
+   :::column-end:::
+   :::column span="":::
 - [Restore project](restore-project.md)  
 - [Change user access levels](../accounts/add-organization-users.md) 
 - [Search across project(s)](../../project/search/overview.md)  
@@ -213,7 +213,7 @@ The following tasks typically require permissions granted to a member of the Pro
 ::: moniker-end
 
 
-::: moniker range="< tfs-2018"
+::: moniker range="<= tfs-2018"
 
 :::row:::
    :::column span="":::
@@ -224,10 +224,10 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Add team administrators](../settings/add-team-administrator.md)  
 - [Add team members](../security/add-users-team-project.md)  
 - [Add/manage service hooks](../../service-hooks/overview.md)
-- [Change access levels](../security/change-access-levels.md)   
-- [Connect to a project](connect-to-projects.md)  
    :::column-end:::
    :::column span="":::
+- [Change access levels](../security/change-access-levels.md)   
+- [Connect to a project](connect-to-projects.md)  
 - [Create project](create-project.md)  
 - [Delete project](delete-project.md)  
 - [Manage notifications](../../notifications/manage-organization-notifications.md)  
