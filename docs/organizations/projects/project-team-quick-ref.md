@@ -18,11 +18,13 @@ ms.date: 02/20/2020
 
 ## Key concepts
 
+::: moniker range="azure-devops"
 
 :::row:::
    :::column span="":::
 - [About projects](about-projects.md)  
 - [About teams](../settings/about-teams-and-settings.md)  
+- [Access levels](../security/access-levels.md)  
 - [Area paths](../settings/about-areas-iterations.md)  
 - [Dashboards](../../report/dashboards/overview.md)  
 - [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
@@ -34,7 +36,6 @@ ms.date: 02/20/2020
 - [Process (Inherited)](../settings/work/inheritance-process-model.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
-- [Project-level permissions](../security/permissions.md#project-level-permissions)  
 - [Project-level permissions](../security/permissions.md#project-level-permissions)  
 - [Project-level security groups](../security/permissions.md#project-level-groups)  
    :::column-end:::
@@ -48,8 +49,47 @@ ms.date: 02/20/2020
    :::column-end:::
 :::row-end:::
 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+:::row:::
+   :::column span="":::
+- [About projects](about-projects.md)  
+- [About teams](../settings/about-teams-and-settings.md)  
+- [Access levels](../security/access-levels.md)  
+- [Area paths](../settings/about-areas-iterations.md)  
+- [Dashboards](../../report/dashboards/overview.md)  
+- [Events, notifications, subscriptions](../../notifications/concepts-events-and-notifications.md)  
+- [GitHub connections](../../boards/github/connect-to-github.md)  
+- [Iteration paths](../settings/about-areas-iterations.md)  
+   :::column-end:::
+   :::column span="":::
+- [Permissions](../security/about-permissions.md)  
+- [Process (Inherited)](../settings/work/inheritance-process-model.md)  
+- [Process (On-premises XML)](../settings/work/inheritance-process-model.md)  
+- [Project resources viewable by members](resources-granted-to-project-members.md)  
+- [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
+- [Project-level permissions](../security/permissions.md#project-level-permissions)  
+- [Project-level security groups](../security/permissions.md#project-level-groups)  
+   :::column-end:::
+   :::column span="":::
+- [Projects page](../../project/navigation/work-across-projects.md)  
+- [Security groups](../security/about-permissions.md)  
+- [Service hooks](../../service-hooks/overview.md)  
+- [Service visibility](../settings/set-services.md)  
+- [Summary page](project-vision-status.md) 
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
 
 ## Project administrative tasks
+
+
+::: moniker range="azure-devops"
 
 :::row:::
    :::column span="":::
@@ -68,10 +108,49 @@ ms.date: 02/20/2020
 - [Delete project](delete-project.md)  
 - [Enable/disable project services](../settings/set-services.md)  
 - [Export list of projects](create-project.md#list-and-connect-to-projects)  
-- [Export list of teams](../settings/add-teams.md&tabs=azure-devops-cli#list-teams)  
+- [Export list of teams](../settings/add-teams.md#list-teams)  
 - [Manage notifications](../../notifications/manage-organization-notifications.md)  
 - [Manage your project](../../user-guide/project-admin-tutorial.md)  
-- [Navigate the Web portal](../../project/navigation.md)  
+- [Navigate the Web portal](../../project/navigation/index.md)  
+- [Remove team](../settings/rename-remove-team.md)  
+   :::column-end:::
+   :::column span="":::
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
+- [Restore project](restore-project.md)  
+- [Change user access levels](../accounts/add-organization-users.md) 
+- [Set area paths](../settings/set-area-paths.md)  
+- [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
+- [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Set project visibility](../public/make-project-public.md)  
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
+
+
+
+::: moniker range="azure-devops-2019"
+
+:::row:::
+   :::column span="":::
+- [Add Git repository](../../repos/git/create-new-repo.md)  
+- [Add project administrators](../security/set-project-collection-level-permissions.md)  
+- [Add project members](../security/add-users-team-project.md)  
+- [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team members](../security/add-users-team-project.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md)
+- [Change access levels](../security/change-access-levels.md)   
+- [Connect to a project](connect-to-projects.md)  
+- [Connect to GitHub](../../boards/github/connect-to-github.md)  
+   :::column-end:::
+   :::column span="":::
+- [Create project](create-project.md)  
+- [Delete project](delete-project.md)  
+- [Enable/disable project services](../settings/set-services.md)  
+- [Manage notifications](../../notifications/manage-organization-notifications.md)  
+- [Manage your project](../../user-guide/project-admin-tutorial.md)  
+- [Navigate the Web portal](../../project/navigation/index.md)  
 - [Remove team](../settings/rename-remove-team.md)  
    :::column-end:::
    :::column span="":::
@@ -81,10 +160,44 @@ ms.date: 02/20/2020
 - [Set area paths](../settings/set-area-paths.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project permissions](../security/set-project-collection-level-permissions.md)  
-- [Set project visibility](../public/make-project-public.md)  
    :::column-end:::
 :::row-end:::
- 
+
+::: moniker-end
+
+
+::: moniker range="< tfs-2018"
+
+:::row:::
+   :::column span="":::
+- [Add Git repository](../../repos/git/create-new-repo.md)  
+- [Add project administrators](../security/set-project-collection-level-permissions.md)  
+- [Add project members](../security/add-users-team-project.md)  
+- [Add security groups](../security/add-ad-aad-built-in-security-groups.md)  
+- [Add team members](../security/add-users-team-project.md)  
+- [Add/manage service hooks](../../service-hooks/overview.md)
+- [Change access levels](../security/change-access-levels.md)   
+- [Connect to a project](connect-to-projects.md)  
+   :::column-end:::
+   :::column span="":::
+- [Create project](create-project.md)  
+- [Delete project](delete-project.md)  
+- [Manage notifications](../../notifications/manage-organization-notifications.md)  
+- [Manage your project](../../user-guide/project-admin-tutorial.md)  
+- [Navigate the Web portal](../../project/navigation/index.md)  
+- [Remove team](../settings/rename-remove-team.md)  
+   :::column-end:::
+   :::column span="":::
+- [Rename project](create-project.md)  
+- [Rename team](../settings/rename-remove-team.md)  
+- [Restore project](restore-project.md)  
+- [Set area paths](../settings/set-area-paths.md)  
+- [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
+- [Set project permissions](../security/set-project-collection-level-permissions.md)  
+   :::column-end:::
+:::row-end:::
+
+::: moniker-end
 
 ## Related articles
 
