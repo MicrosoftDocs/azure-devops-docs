@@ -26,7 +26,6 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Unlist/deprecate packages                     |          |          | &#x2713; | &#x2713; |
 | Delete/unpublish package                      |          |          |          | &#x2713; |
 | Edit feed permissions                         |          |          |          | &#x2713; |
-| [Rename and delete feed](edit-feed.md)        |          |          |          | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
