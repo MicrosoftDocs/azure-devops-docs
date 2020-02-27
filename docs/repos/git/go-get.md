@@ -30,16 +30,16 @@ and Azure Repos returns the appropriate meta tags so that `go get` knows
 the type and location of the repo to retrieve it.
 
 ```
-go get dev.azure.com/<organization>/_git/<repo>
+go get dev.azure.com/<organization>/<project>/_git/<repo>
 ```
 
 You can also import/get a Go package in a subfolder of a repo by appending 
 the subfolder names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/_git/<repo>/subfolder1
+go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1
 
-go get dev.azure.com/<organization>/_git/<repo>/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/_git/<repo>/subfolder1/subfolder2
 ```
 
 ## Go get with private projects
@@ -51,23 +51,22 @@ Access Token (PAT) as described in
 After you create the PAT, add an entry to your `.gitconfig` as shown in the following example.
 
 ```
-[url "https://<user>:<token>@dev.azure.com/<organization>/_git/<repo>"]
-    insteadOf = https://dev.azure.com/<organization>/_git/<repo>
+[url "https://<user>:<token>@dev.azure.com/<organization>/<project>/_git/<repo>"]
+    insteadOf = https://dev.azure.com/<organization>/<project>/_git/<repo>
 ```
 
 After this entry is made into your `.gitconfig`, you can use `go get` 
 in the following format. Note the `.git` that follows the repo name.
 
 ```
-go get dev.azure.com/<organization>/_git/<repo>.git
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git
 ```
 
 You can also import/get a Go package in a subfolder of a repo by appending the subfolder 
 names, as shown in the following examples.
 
 ```
-go get dev.azure.com/<organization>/_git/<repo>.git/subfolder1
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1
 
-go get dev.azure.com/<organization>/_git/<repo>.git/subfolder1/subfolder2
+go get dev.azure.com/<organization>/<project>/_git/<repo>.git/subfolder1/subfolder2
 ```
-
