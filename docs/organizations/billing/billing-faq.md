@@ -8,7 +8,7 @@ ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2020
+ms.date: 02/27/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -187,6 +187,59 @@ If you can't access the Azure Enterprise Portal, find out who your Enterprise Ad
 A: Yes, you can use these prepaid funds for all services that Azure DevOps offers. Make sure to choose an Azure subscription that was created for your EA when you [set up billing for your organization](set-up-billing-for-your-organization-vs.md).
 
 The only exclusion is for extensions offered by partners. These charges appear on your next "overage" invoice. Typically, charges occur monthly, but because of historical rules for some EA customers, an overage invoice might not be issued for several months. Consult a licensing specialist for your EA if you need to know what number of additional purchases, that aren't eligible for Azure Monetary Commitment funds, trigger an overage invoice.
+
+## Understanding your bill
+
+Azure DevOps charges appear with other Azure charges on your [Azure bill](https://docs.microsoft.com/azure/cost-management-billing/understand/review-individual-bill). This section helps you with understanding how to drill into your Azure DevOps specific charges.
+
+Start by completing the following step.
+
+1. Go to [Azure Portal > Subscriptions](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade), and then select **Cost analysis**.
+
+   ![In Azure Portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+
+### Q: How do I see only my Azure DevOps charges?
+
+A: Follow these steps to see only your charges for Azure DevOps.
+
+1. Go to **Azure Portal** > **Subscriptions** > **Cost analysis**, and then filter on **Service name** = **Azure DevOps**.
+
+   ![Filter by service name](media/billing-faq/filter-by-service-name.png)
+
+### Q: How much am I currently spending on Azure DevOps?
+
+A: Azure DevOps charges daily, so the best way to see what you’re currently paying for Azure DevOps is to view by **Daily costs**. 
+
+1. Go to **Azure Portal** > **Subscriptions** > **Cost analysis**, and then view by **Daily costs**.
+
+   ![View by Daily costs](media/billing-faq/view-daily-costs.png)
+
+### Q: What services do I pay for in Azure DevOps?
+
+A: Azure DevOps services include Azure Repos, Azure Boards, Azure Pipelines, Azure Artifacts, and Azure Test Plans. See [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for more details. To see these services on your bill, follow these steps. 
+
+1. Go to **Azure Portal** > **Subscriptions** > **Cost analysis**, and then group by **Meter subcategory**.
+
+   ![Group by Meter subcategory](media/billing-faq/group-by-meter-subcategory.png)
+
+### Q: How can I split Azure DevOps charges by organization?
+
+A: If you have more than one Azure DevOps organization, for example: `dev.azure.com/<organization>`, that is billed to the same Azure subscription, you may want to separate the charges for each organization. 
+
+To make this easier, we automatically add the tag “_organizationname_” and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you won’t see it before that date. See the following two ways you can use this tag to drill in to charges for a given organization.
+
+1. Go to **Azure Portal** > **Subscriptions** > **Cost analysis**
+
+  ![In Azure Portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
+
+  - Filter based on tag, and see only charges for a given organization or
+
+   ![Filter based on tag](media/billing-faq/filter-based-on-tag.png)
+
+  - Group by tag, and see charges stacked by organization
+
+   ![Group by tag, see stacked charges](media/billing-faq/group-by-tag-charges-stacked-by-organization.png)
+
 
 ## How charges are processed
 
