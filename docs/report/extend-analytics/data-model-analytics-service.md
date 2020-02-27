@@ -2,11 +2,9 @@
 title: Data model for Analytics
 titleSuffix: Azure DevOps 
 description: Describes the data entities and relationships provided by Analytics for Azure DevOps  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 032FB76F-DC43-4863-AFC6-F8D67963B177  
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

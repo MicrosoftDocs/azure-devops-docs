@@ -2,8 +2,6 @@
 title: Azure App Service Manage task
 description: Start, Stop, Restart, Slot swap, Swap with Preview, Install site extensions, or Enable Continuous Monitoring for an Azure App Service
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: f045e430-8704-11e6-968f-e717e6411619
 ms.manager: dastahel
 ms.custom: seodec18

@@ -3,9 +3,7 @@ title: Import or update work items from a CSV file
 titleSuffix: Azure Boards
 description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,9 +1,7 @@
 ---
 title: Use Azure Artifacts as a private PowerShell repository
 description: Use Azure Artifacts within Azure DevOps Services to create your own private PowerShell repository
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
 ms.reviewer: amullans

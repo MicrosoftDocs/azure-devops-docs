@@ -1,11 +1,9 @@
 ---
 title: Use Subversion with Azure DevOps Services
 description: Learn how to use Subversion with Azure DevOps Services for Java development
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

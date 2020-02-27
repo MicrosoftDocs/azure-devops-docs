@@ -1,11 +1,7 @@
 ---
 title: Securing Azure Pipelines
 description: Guidelines and recommendations for securing pipelines.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 1ef377e9-e684-4e72-8486-a42d754761ac
-ms.manager: mijacobs
-ms.author: jukullam
 ms.reviewer: macoope
 ms.date: 2/04/2020
 monikerRange: '> azure-devops-2019'

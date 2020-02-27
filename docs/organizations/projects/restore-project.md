@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Restore a recently deleted project in Azure DevOps
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'

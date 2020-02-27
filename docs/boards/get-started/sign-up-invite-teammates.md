@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Quickstart guide to signing up and inviting others to join a team project in Azure Boards
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

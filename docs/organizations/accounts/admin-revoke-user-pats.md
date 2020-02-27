@@ -3,11 +3,9 @@ title: Revoke personal access tokens for users
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Administrators can revoke organization users' personal access tokens (PATs).
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 08/07/2019

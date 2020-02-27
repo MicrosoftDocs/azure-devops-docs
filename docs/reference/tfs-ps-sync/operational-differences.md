@@ -2,10 +2,8 @@
 title: Operational differences in managing projects
 titleSuffix: TFS 
 description: Understand how using the Team Foundation plug-in to Project differs from Project Server-TFS integration  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 786a9a22-0e34-4a70-b589-ae2def789e06
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

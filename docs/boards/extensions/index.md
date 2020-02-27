@@ -4,9 +4,7 @@ description: Learn about Azure Boards extensions
 titleSuffix: Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

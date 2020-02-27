@@ -2,10 +2,8 @@
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to display Feature progress rollup by Story Pointas  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE

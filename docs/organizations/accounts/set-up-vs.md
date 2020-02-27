@@ -3,11 +3,9 @@ title: Set up Visual Studio
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Share code with Git and manage work with Agile tools for continuous integration and continuous delivery.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: abf70640-8fb2-4def-9237-21276a39b5ad
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2018

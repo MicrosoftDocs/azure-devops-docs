@@ -3,10 +3,8 @@ title: Set Git or TFVC repository permissions
 titleSuffix: Azure DevOps
 description: Steps for how to grant or restrict access to a Git or Team Foundation Version Control repository feature or function
 ms.assetid:  
-ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

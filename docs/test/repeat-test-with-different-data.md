@@ -2,10 +2,8 @@
 title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 06/02/2019
