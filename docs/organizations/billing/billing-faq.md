@@ -210,7 +210,7 @@ A: Azure DevOps services include Azure Repos, Azure Boards, Azure Pipelines, Azu
 
 A: If you have more than one Azure DevOps organization, for example: `dev.azure.com/<organization>`, that is billed to the same Azure subscription, you may want to separate the charges for each organization. 
 
-To make this easier, we automatically add the tag “_organizationname_” and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you won’t see it before that date. See the following two ways you can use this tag to drill in to charges for a given organization.
+To make this easier, we automatically add the tag `“_organizationname_”` and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you won’t see it before that date. See the following two ways you can use this tag to drill in to charges for a given organization.
 
 1. Go to **Azure Portal** > **Subscriptions** > **Cost analysis**.
 
