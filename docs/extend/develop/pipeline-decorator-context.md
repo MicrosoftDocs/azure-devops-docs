@@ -14,7 +14,8 @@ monikerRange: '>= azure-devops'
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
-Also, decorators run after task names are resolved to task GUIDs, so you can't use symbolic names for tasks.
+Also, decorators run after task names are resolved to task GUIDs.
+When your decorator wants to reference a task, it should use the GUID rather than the name or keyword.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -136,9 +137,9 @@ steps:
 - checkout: self
 - bash: echo This is the Bash task
 - task: PowerShell@2
-	inputs:
-		targetType: inline
-		script: Write-Host This is the PowerShell task
+  inputs:
+    targetType: inline
+    script: Write-Host This is the PowerShell task
 ```
 
 Each of those steps maps to a task.
@@ -159,7 +160,7 @@ For special keywords like `checkout` and `bash` in the example above, you can us
 | `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
 | `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
 
-> [!INFO]
+> [!TIP]
 > Each of these GUIDs can be found in the `task.json` for the corresponding [in-box task](https://github.com/microsoft/azure-pipelines-tasks).
 > The only exception is `checkout`, which is a native capability of the agent.
 > Its GUID is built into the Azure Pipelines service and agent.
