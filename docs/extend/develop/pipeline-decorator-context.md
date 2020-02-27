@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops'
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
-Also, decorators run after task names are resolved to task GUIDs, so you cannot use symbolic names for tasks.
+Also, decorators run after task names are resolved to task GUIDs, so you can't use symbolic names for tasks.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
@@ -24,12 +24,13 @@ Pipeline resources are available on the `resources` object.
 
 ### Repositories
 
-Currently, there is only one key: `repositories`.
+Currently, there's only one key: `repositories`.
 `repositories` is a map from repo ID to information about the repository.
 
 In a designer build, the primary repo alias is `__designer_repo`.
 In a YAML pipeline, the primary repo is called `self`.
-In a release pipeline, repositories is not available. [Release artifact variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
+In a release pipeline, repositories aren't available.
+[Release artifact variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch) are available.
 
 For example, to print the name of the `self` repo in a YAML pipeline:
 ```
@@ -37,7 +38,7 @@ steps:
 - script: echo ${{ resources.repositories['self'].name }}
 ```
 
-Repositories contain the following properties:
+Repositories contain these properties:
 
 ```javascript
 resources['repositories']['self'] =
@@ -106,8 +107,8 @@ For instance, to conditionally add a task only if it doesn't already exist:
 For instance, if the pipeline had a variable called `myVar`, its value would be available to the decorator as `variables['myVar']`.
 
 For example, to give a decorator an opt-out, we could look for a variable.
-Pipeline authors who wished to opt out of the decorator would set this variable, and the decorator would not be injected.
-If the variable isn't present, then the decorator would be injected as usual.
+Pipeline authors who wish to opt out of the decorator can set this variable, and the decorator won't be injected.
+If the variable isn't present, then the decorator is injected as usual.
 
 #### my-decorator.yml
 ```yaml
@@ -115,7 +116,7 @@ If the variable isn't present, then the decorator would be injected as usual.
   - script: echo Injected the decorator
 ```
 
-Then, in a pipeline in the organization, the author can request that the decorator not be injected.
+Then, in a pipeline in the organization, the author can request the decorator not to inject itself.
 
 #### pipeline-with-opt-out.yml
 ```yaml
@@ -140,8 +141,9 @@ steps:
 		script: Write-Host This is the PowerShell task
 ```
 
-Each of those steps maps to a task, and each task has a unique GUID.
-The step which maps task names and keywords to task GUIDs runs before decorators are injected.
+Each of those steps maps to a task.
+Each task has a unique GUID.
+Task names and keywords map to task GUIDs before decorators run.
 If a decorator wants to check for the existence of another task, it must search by task GUID rather than by name or keyword.
 
 For normal tasks (which you specify with the `task` keyword), you can look at the task's `task.json` to determine its GUID.
