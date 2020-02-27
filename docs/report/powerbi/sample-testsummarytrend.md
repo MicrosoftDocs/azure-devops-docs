@@ -25,7 +25,7 @@ This article shows you how to create a report that shows day wise trend of numbe
 An example is shown in the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testsummarytrend-reports1.png)
+> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/overalltestpassratetrend-reports1.png)
 
 
 [!INCLUDE [temp](includes/sample-required-reading.md)]
@@ -171,17 +171,17 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Choose the expand button
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Choose expand button](media/odatapowerbi-testanalytics/testsummarytrend-expand1.png)
+    > ![Power BI + OData - Choose expand button](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand1.png)
     
 1. Select the checkbox "(Select All Columns)" to expand
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Select all columns](media/odatapowerbi-testanalytics/testsummarytrend-expand2.png)
+    > ![Power BI + OData - Select all columns](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand2.png)
 
 1. The table now contains the expanded entity **CompletedOn.Date**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - Expanded entity](media/odatapowerbi-testanalytics/testsummarytrend-expand3.png)
+    > ![Power BI + OData - Expanded entity](media/odatapowerbi-testanalytics/overalltestpassratetrend-expand3.png)
     
 
 ### Change column type
@@ -189,7 +189,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 1. Change the type of column **PassRate** to **Decimal Number**.
 
     > [!div class="mx-imgBorder"] 
-    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/testsummarytrend-changetype1.png)
+    > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/overalltestpassratetrend-changetype1.png)
 
 
 ### Rename fields and query, then Close & Apply
@@ -199,7 +199,7 @@ When finished, you may choose to rename columns.
 1. Right-click a column header and select **Rename...**
 
 	> [!div class="mx-imgBorder"] 
-	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/testsummarytrend-rename1.png)
+	> ![Power BI Rename Columns](media/odatapowerbi-testanalytics/overalltestpassratetrend-rename1.png)
 
 1. You also may want to rename the query from the default **Query1**, to something more meaningful. 
 
@@ -220,7 +220,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/testsummarytrend-field.png)
+> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/overalltestpassratetrend-field.png)
 
 For a simple report, do the following steps:
 
@@ -235,7 +235,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/testsummarytrend-reports1.png)
+> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/overalltestpassratetrend-reports1.png)
 
 
 ## Additional queries
