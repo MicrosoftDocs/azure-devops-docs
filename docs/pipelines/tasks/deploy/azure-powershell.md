@@ -2,10 +2,8 @@
 title: Azure PowerShell task
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 72A1931B-EFFB-4D2E-8FD8-F8472A07CB62
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

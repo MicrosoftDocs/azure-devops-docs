@@ -1,11 +1,9 @@
 ---
 title: Deployment jobs
 description: Deploy to resources within an environment
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 5/2/2019

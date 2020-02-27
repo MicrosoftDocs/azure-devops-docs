@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key definitions for objects and items used to plan and track work by using Azure Boards
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

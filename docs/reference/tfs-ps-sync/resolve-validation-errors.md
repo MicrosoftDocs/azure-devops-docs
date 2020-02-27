@@ -2,10 +2,8 @@
 title: Resolve validation errors 
 titleSuffix: TFS 
 description: Resolve data validation errors that appear in the Unpublished work items list with the integration of Team Foundation Server & Project Server  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 72c1dd06-a3a1-499c-b2a3-4d7f884033fd
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

@@ -3,11 +3,9 @@ title: Buy cloud-based load testing - Azure DevOps
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18 Services
 description: Purchase and enable cloud-based load testing in Azure DevOps.
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: A93C7909-4F5B-4758-B6CE-8DE127A91FB9
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2019

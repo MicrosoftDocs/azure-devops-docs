@@ -1,8 +1,6 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 02/13/2020
@@ -20,8 +18,8 @@ ms.date: 02/13/2020
 <tr>
 <td>Agent.BuildDirectory</td>
 <td>
-<p>The local path on the agent where all folders for a given build pipeline are created.</p>
-<p>For example: <code>c:\agent_work\1</code></p>
+<p>The local path on the agent where all folders for a given build pipeline are created. This variable has the same value as <code>Pipeline.Workspace</code>.</p>
+<p>For example: <code>/home/vsts/work/1</code></p>
 </td>
 </tr>
 
@@ -181,6 +179,11 @@ For example: <code>c:\agent_work\1\b</code>.
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
 </tr>
+
+<tr>
+<td>Build.ContainerId</td>
+<td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact. 
+<br><br>
 
 <tr>
 <td>Build.DefinitionName</td>
@@ -469,8 +472,8 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Pipeline.Workspace</td>
-<td>Workspace directory for a particular pipeline.<br><br>
-For example, <code>c:\agent_work\1</code>.</td>
+<td>Workspace directory for a particular pipeline. This variable has the same value as <code>Agent.BuildDirectory</code>.<br><br>
+For example, <code>/home/vsts/work/1</code>.</td>
 </tr>
 
 </table>
@@ -619,7 +622,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
-<td>The branch that is being reviewed in a pull request. For example: <code>refs/heads/users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>The branch that is being reviewed in a pull request. For example: <code>users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
 </tr>
 
 <tr>

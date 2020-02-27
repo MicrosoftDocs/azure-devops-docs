@@ -2,7 +2,6 @@
 title: Customize your pipeline
 ms.custom: seodec18
 description: Step-by-step tutorial to customize a pipeline
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141

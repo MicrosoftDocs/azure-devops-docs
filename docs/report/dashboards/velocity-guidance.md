@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Guidance for working with velocity charts generated for an Azure DevOps team or project 
 ms.custom: dashboards
 ms.technology: devops-analytics  
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

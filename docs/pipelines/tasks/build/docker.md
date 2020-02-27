@@ -2,7 +2,6 @@
 title: Docker task
 description: Build and push Docker images to any container registry using Docker registry service connection
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: atulmal

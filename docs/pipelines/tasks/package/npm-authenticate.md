@@ -3,10 +3,8 @@ title: npm Authenticate task (for task runners)
 ms.custom: seodec18
 description: Don't use this task if you're also using the npm task. Provides npm credentials to an `.npmrc` file in your repository for the scope of the build. This enables npm task runners like gulp and Grunt to authenticate with private registries.
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 05/04/2018

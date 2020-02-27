@@ -2,7 +2,6 @@
 title: Download Pipeline Artifacts task
 description: Download Pipeline Artifacts task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: a433f589-fce1-4460-9ee6-44a624aeb1fb
 ms.manager: hdixon

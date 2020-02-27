@@ -1,7 +1,6 @@
 ---
 title: Pull Requests refresh and much, much more – Aug 17
 description: VSTS release notes for August 17 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 7ecf0247-57e9-4439-97cc-730d78905324

@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentJobRequest API | Extensions for Azure DevOps Services
 description: Data representation of a task agent job request.
 ms.assetid: d7b51206-ba6b-5491-75eb-f29f281f1065
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

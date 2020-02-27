@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Understand the tools available to you to support Scrum and working in sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

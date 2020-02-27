@@ -1,13 +1,9 @@
 ---
 title: NuGet Tool Installer task
 description: Find, download, and cache a specified version of NuGet and add it to the PATH
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 740DA69C-E173-46AD-BA6F-0F138285AC39
-ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---

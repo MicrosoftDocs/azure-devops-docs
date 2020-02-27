@@ -1,7 +1,6 @@
 ---
 title: Work item follow, move & change type - April 13
 description: VSTS release notes for April 13 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: f610379d-99b9-4f49-ae17-7dc6d488c566

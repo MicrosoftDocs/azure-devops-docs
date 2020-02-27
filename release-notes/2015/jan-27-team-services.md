@@ -1,7 +1,6 @@
 ---
 title: VS Online Basic license expanded – Jan 27
 description: VSTS release notes for January 27 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 3e7d714e-d58d-4e18-a2c9-0faf6fd3f1d8
@@ -37,7 +36,7 @@ Second, notice that the parent user story now looks more like a card, matching i
 
 ## Editing tiles on the Kanban board
 
-We also turned on the ability to edit the assigned user and effort values for cards on your Kanban boards. This is the first in a series of changes coming that accrue toward a complete add, edit, and reorder experience directly from the board. Last week I outlined the [list of improvements](https://blogs.msdn.com/b/visualstudioalm/archive/2015/01/21/agile-project-management-futures.aspx) like this that are on their way in upcoming sprints.
+We also turned on the ability to edit the assigned user and effort values for cards on your Kanban boards. This is the first in a series of changes coming that accrue toward a complete add, edit, and reorder experience directly from the board. Last week I outlined the [list of improvements](https://devblogs.microsoft.com/devops/agile-project-management-futures/) like this that are on their way in upcoming sprints.
 
 ![Editing Kanban tiles](media/1_27_03.png)
 

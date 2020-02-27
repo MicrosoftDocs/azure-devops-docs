@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

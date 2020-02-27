@@ -2,10 +2,8 @@
 title: Map a project collection to an instance of PWA
 titleSuffix: TFS 
 description: Map a project collection to an instance of Project Web Access or Project Web App to support Team Foundation Server-Project Server integration 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d873f68e-3e88-4daa-9c28-a192dab86765
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

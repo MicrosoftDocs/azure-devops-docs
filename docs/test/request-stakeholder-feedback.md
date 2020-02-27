@@ -2,10 +2,8 @@
 title: Request stakeholder feedback
 description: Request stakeholder feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
 ms.assetid: 6AE1D62D-43EE-4C0B-92CD-F11BC10A9CA8
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

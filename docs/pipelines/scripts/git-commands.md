@@ -3,12 +3,8 @@ title: Run Git commands in a script
 ms.custom: seodec18
 description: Learn how you can run a Git command in a build script for your workflow by using Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B5481254-F39C-4F1C-BE98-44DC0A95F2AD
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 03/22/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -79,10 +75,10 @@ On the **Version Control** tab, select the repository in which you want to run G
 
 Grant permissions needed for the Git commands you want to run. Typically you'll want to grant:
 
-* **Branch creation:**  Allow
+* **Create branch:**  Allow
 * **Contribute:**  Allow
-* **Read:**  Inherited allow
-* **Tag creation:**  Inherited allow
+* **Read:**  Allow
+* **Create tag:**  Allow
 
 When you're done granting the permissions, make sure to click **Save changes**.
 

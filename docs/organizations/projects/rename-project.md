@@ -3,12 +3,10 @@ title: Rename a project - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn how to rename your project, including tasks you need to complete to work with the renamed project.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 23729f9a-9947-4fc1-89b0-07e3b52298ac
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

@@ -3,11 +3,9 @@ title: Access your organization with Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to authenticate users and control access to your organization the same way you can with Microsoft services, like Office 365 and Azure
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: c9aecaaf-9dfb-4877-84b4-60da253e3dc2
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/26/2019

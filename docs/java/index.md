@@ -1,12 +1,10 @@
 ---
 title: Build and deploy Java projects with Azure DevOps Services  
 description: Documentation for building and deploying Java projects with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: overview
 ms.custom: java, seo-java-september2019
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

@@ -1,17 +1,15 @@
-﻿---
+---
 title: Add a custom field to an inherited process
 titleSuffix: Azure DevOps Services
 description: Learn how to add a custom field to the web form of a work item type for an Inheritance process model and apply it to a project. 
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/12/2019
+ms.date: 02/24/2020
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
@@ -90,13 +88,25 @@ We recommend that you create a test project and apply your customized  inherited
 
 1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
+	::: moniker-end
 
 1. The Create new project page opens. Fill out the form. 
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project.png) 
+	::: moniker-end
 
 1.  Open **Work Items**. (1) Check that you have selected the right project, then (2) choose **Work>Work Items**. 
 
@@ -113,7 +123,6 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-bug-form.png) 
 	
-
 
 [!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 

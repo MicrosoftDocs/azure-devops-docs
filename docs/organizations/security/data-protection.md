@@ -1,12 +1,10 @@
 ---
 title: Azure DevOps - Data Protection
 description: Learn how Microsoft protects your projects and data in Azure DevOps. Microsoft is committed to making sure that your projects stay safe and secure, without exception. 
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitPathAction API | Extensions for Azure DevOps Services
 ms.assetid: aa7bbe8c-3694-ef35-654c-b87ef5fc4bec
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

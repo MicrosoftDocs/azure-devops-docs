@@ -2,10 +2,8 @@
 title: Manage extension permissions - Azure DevOps
 description: Grant users or groups permission for managing extensions for Azure DevOps
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/11/2019

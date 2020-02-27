@@ -2,10 +2,8 @@
 title: Add a Build or Release Task | Extensions for Azure DevOps 
 description: Add a custom build or release task in an extension for Azure DevOps
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -516,8 +514,3 @@ For build and release tasks for packaging and publishing Azure DevOps Extensions
 * [Extension Manifest Reference](./manifest.md)
 * [Build/Release Task JSON Schema](./integrate-build-task.md)
 * [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
-
->[!NOTE]
->Check out our **[Node task sample in GitHub](https://github.com/Microsoft/vsts-task-lib/blob/master/node/docs/stepbystep.md)** for a tutorial that
->shows how to create, debug, and test a cross platform task in Node using the TypeScript API.
-

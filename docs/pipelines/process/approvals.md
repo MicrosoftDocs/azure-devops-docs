@@ -2,7 +2,6 @@
 title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban

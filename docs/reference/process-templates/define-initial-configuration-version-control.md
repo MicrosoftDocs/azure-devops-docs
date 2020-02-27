@@ -2,10 +2,8 @@
 title: Define Git or TFVC initial configuration 
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security permissions, check-out policies, and check-in notes for TFVC or Git 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

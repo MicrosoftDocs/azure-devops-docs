@@ -3,11 +3,9 @@ title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Unlink the Azure subscription that your organization uses for billing
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: e447adb1-6208-49f6-a488-515aa4b2fdcf
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'

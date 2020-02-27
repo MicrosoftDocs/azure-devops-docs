@@ -1,17 +1,15 @@
 ---
-title: Restrictions and conventions for naming
+title: Restrictions and conventions for naming objects
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Requirements for labeling objects like organization, project, tags, templates, and more, by length, uniqueness, and special characters 
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: reference
 ms.assetid: F4ED2B52-EDE9-4F2B-B3B5-A3FB504D84B9
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'
-ms.date: 6/21/2019
+ms.date: 02/25/2020
 ---
 
 # Naming restrictions and conventions  
@@ -26,29 +24,32 @@ Common restrictions include not exceeding the character length for a name, not c
 ## Computers, accounts, groups, and collections
 
 <a id="CommonRestrictions">   </a>
+
 ### Common considerations 
 
-The length restrictions in this article are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For details, see [About Unicode and Character Sets](https://msdn.microsoft.com/library/windows/desktop/dd317711.aspx). 
+The length restrictions in this article are measured by the number of Unicode characters permitted. Surrogate characters are composed of two Unicode characters, which count as two characters against the length restriction. For details, see [About Unicode and Character Sets](/windows/win32/intl/about-unicode-and-character-sets). 
 
-As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx).
+As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
 <a id="ComputerNames">   </a>
 
 ### Computer name 
+
 <a id="computer-name">   </a>
 
-When you install TFS, the computer name where you install TFS is associated with the name of the server.  
+The computer name where you install Azure DevOps is associated with the name of the server. 
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:  
-*	[Rename the Computer](https://msdn.microsoft.com/library/dd894434.aspx)  
-*	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](https://msdn.microsoft.com/library/ms143799.aspx)  
-*	[Windows Server Active Directory](https://support.microsoft.com/kb/909264)
+*	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
+*	[Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
 ::: moniker-end
 
 <a id="AccountNames">   </a>
+
 ### User account names
+
 User accounts identify people added to a project or project collection. These user accounts might correspond to an Active Directory, Azure Active Directory, Windows, or other user account types.  
 
 You add existing user accounts. You can't create a user account. To add user accounts to a  project, see [Add users to a project or team](../../organizations/security/add-users-team-project.md) . 
@@ -138,7 +139,7 @@ User accounts that you add must conform to the following restrictions.
 
 Groups enable you to apply certain rights or permissions to a group of users.
 
-On-premises TFS groups can consist of Active Directory group accounts, TFS group accounts, Windows user accounts, Windows group accounts, or any mixture of these types. See [Manage users or groups in TFS](../../organizations/security/permissions.md).  
+On-premises Azure DevOps groups can consist of Active Directory group accounts, Azure DevOps security groups , Windows user accounts, Windows group accounts, or any mixture of these types. See [Add AD/Azure AD users or groups to a built-in security group](../../organizations/security/add-ad-aad-built-in-security-groups.md).  
 
 Groups that you add must conform to the following restrictions.  
 
@@ -258,7 +259,7 @@ If your deployment includes SharePoint Products or SQL Server Reporting Services
 <ul>
 <li>
 Must not contain any Unicode control characters or surrogate characters.</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</li>
+<li>Must not contain the following printable characters: <code>/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</code></li>
 <li>Must not contain an ellipsis (&hellip;) or a double period (..)</li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -272,7 +273,7 @@ Reserved names
 <td>
 <ul>
 <li>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, AUX, Web, or WEB <br/>
-Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
+Learn more about reserved names: <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -320,7 +321,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: <code>/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</code>
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -338,7 +339,7 @@ Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, CO
 </li>
 <li>
 Must not be one of the hidden segments used for IIS request filtering like App_Browsers, App_code, App_Data, App_GlobalResources, App_LocalResources, App_Themes, App_WebResources, bin, or web.config.<br/>
-Learn more about reserved names: <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
+Learn more about reserved names: <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -378,7 +379,7 @@ Processes you define or customize must conform to the following restrictions.
 </td>
 <td>
 <ul>
-<li>Must be unique across TFS.</li>
+<li>Must be unique across Azure DevOps.</li>
 <li>If you upload a template with the same name as an existing template, the existing template is overwritten.</li>
 </ul>
 </td>
@@ -454,6 +455,7 @@ Must not contain any Unicode control characters or surrogate characters
 <a id="TeamNames">   </a>
 
 ### Teams 
+
 Team names identify a group of individuals or groups that collectively work together as a team in a project. Team members use this name to connect to the team or to query against members defined for a team. 
 
 As such, team names must conform to conventions that allow them to be rendered as part of a valid URL. Each team name must be unique within a single project. However, there aren't any restrictions on using the same team name in different projects within a project collection. [Add another team or a hierarchy of teams](../../organizations/settings/add-teams.md) provides more information about working with teams.  
@@ -499,7 +501,7 @@ Special characters
 Must not contain any Unicode control characters or surrogate characters
 </li>
 <li>
-Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
+Must not contain the following printable characters: <code>/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</code>
 </li>
 <li>
 Must not contain an ellipsis (&hellip;) or a double period (..)
@@ -521,7 +523,7 @@ Reserved names
 <ul>
 <li>
 Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX <br/>
-Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.
+Learn more about reserved names: <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -564,7 +566,7 @@ Default maximum size: 4,096 kilobytes
 </li>
 <li>
 <p>Absolute maximum size: 2 gigabytes</p>
-<p><a href="../../reference/xml/change-maximum-attachment-size-work-items.md" data-raw-source="[Change the maximum attachment size for work items](../../reference/xml/change-maximum-attachment-size-work-items.md)">Change the maximum attachment size for work items</a>.</p></li>
+<p><a href="../../reference/xml/change-maximum-attachment-size-work-items.md">Change the maximum attachment size for work items</a>.</p></li>
 </ul>
 </td>
 </tr>
@@ -606,10 +608,10 @@ The names you assign to child nodes to these fields must conform to the followin
 <p>Must not contain Unicode control characters</p>
 </li>
 <li>
-<p>Must not contain any one of the following characters: &#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +  </p>
+Must not contain any one of the following characters: <code>&#92; &#47; $ ? &#42; : &quot; &amp; &gt; &lt; &#35; % | +  </code>
 </li>
 <li>
-Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see <a href="https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx" data-raw-source="[Naming Files, Paths, and Namespaces](https://msdn.microsoft.com/library/windows/desktop/aa365247.aspx)">Naming Files, Paths, and Namespaces</a>.
+Must not contain characters prohibited by the local file system. For more information about Windows character restrictions, see <a href="/windows/win32/fileio/naming-a-file">Naming Files, Paths, and Namespaces</a>.
 </li>
 </ul>
 </td>
@@ -626,7 +628,7 @@ Must not contain characters prohibited by the local file system. For more inform
 <li>
 <p>Must not be a system-reserved name such as PRN, COM1, COM2, COM3, COM4, COM5, COM6, COM7, COM8, COM9, COM10, LPT1, LPT2, LPT3, LPT4, LPT5, LPT6, LPT7, LPT8, LPT9, NUL, CON, or AUX</p>
 
-<p>Learn more about reserved names: <a href="https://msdn.microsoft.com/library/aa365247.aspx" data-raw-source="[File Names, Paths, and Namespaces](https://msdn.microsoft.com/library/aa365247.aspx)">File Names, Paths, and Namespaces</a>.</p>
+<p>Learn more about reserved names: <a href="/windows/win32/fileio/naming-a-file">File Names, Paths, and Namespaces</a>.</p>
 </li>
 </ul>
 </td>
@@ -666,6 +668,8 @@ Must not contain characters prohibited by the local file system. For more inform
 Each work item type (WIT) definition contains one or more work item fields. These fields define the information stored for work items based on the WIT. A work item field name uniquely identifies each work item field.  
 
 Work item field names that you add must conform to the following restrictions.  
+
+
 <table>
 <tr>
 <th width="20%">Restriction type</th>
@@ -673,34 +677,52 @@ Work item field names that you add must conform to the following restrictions.
 </tr>
 <tr>
 <td>
-Length
+<p>Length</p>
 </td>
 <td>
 <ul>
-<li>Must not contain more than 128 Unicode characters</li>
+<li>
+<p>Must not contain more than 128 Unicode characters</p>
+</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>Special characters</td>
+<td>Special characters
+</td>
 <td>
 <ul>
-<li>Must not contain leading or trailing spaces</li>
-<li>Must not contain two or more consecutive spaces</li>
-<li>Must not contain periods (.)</li>
-<li>Must not contain opening or closing square brackets (&#91; &#93;)</li>
+<li>
+Field names must contain at least one alphabetic character 
+</li>
+<li>
+Must not contain any one of the following characters: <code>.,;'`:~\/\*|?"&%$!+=()[]{}<>-</code>
+</li>
+<li>
+Must not contain leading or trailing spaces 
+</li>
+<li>
+Must not contain two or more consecutive spaces 
+</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td>Scope</td>
+<td>
+Scope
+</td>
 <td>
 <ul>
-<li>Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. </li>
+<li>
+Must be unique within the organization or project collection  
+<p>Work item field names are scoped to the project collection. If you rename a field name, you change it for all work items and WITs defined within all projects in the collection. </p>
+</li>
 </ul>
 </td>
 </tr>
 </table>
+  
+
 
 ### Field, link type, and category reference names 
 
@@ -834,6 +856,7 @@ Microsoft.VSTS.TCM.TestSuiteType</p>
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 ### Field help text
 
 You can specify help text for a WIT field by using the ```HELPTEXT``` element. The system displays this text at run time to help users know what to enter into the field. Help text is scoped to a specific WIT in a specific project. [Apply a rule to a work item field](../../reference/xml/apply-rule-work-item-field.md) provides information on adding help text.
@@ -862,6 +885,7 @@ Help text that you add must conform to the following restrictions.
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 ### Global lists 
 
 A global list is a set of list item values that you can use globally across all project collections within an instance of an on-premises TFS. As you define WITs, you may find that some work item fields share the same set of allowed or suggested values. Global lists enable you to define these values one time and share them across multiple WITs and projects. See [Define global lists](../../reference/xml/define-global-lists.md) for details.
@@ -980,6 +1004,7 @@ Tag names must conform to the following restrictions.
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 <a id="TeamBuild">   </a>
 
 ## Team Foundation Build   
@@ -1097,7 +1122,7 @@ Build type names  must conform to the following restrictions.
 
 ### Build quality 
 
-The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](https://msdn.microsoft.com/library/ms181734.aspx) for a list of the default build quality values.
+The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](/previous-versions/ms181734) for a list of the default build quality values.
 
 Build quality names must conform to the following restrictions.  
 
@@ -1134,7 +1159,7 @@ Build quality names must conform to the following restrictions.
  
 Team Foundation version control (TFVC) provides a central repository for files and the commands that are required to manage those files across a team. It also provides customizable check-in policies, branching, merging, shelving, and many other features.
 
-Version control paths must conform to the following restrictions. See also [Optimize your workspace](https://msdn.microsoft.com/library/ms181378.aspx).
+Version control paths must conform to the following restrictions. See also [Optimize your workspace](../../repos/tfvc/optimize-your-workspace.md).
 
 In the web portal and REST API certain operations (Edit, Rename, and Delete) have a more restrictive path length than Visual Studio and TF.exe clients.  This is due to web portal/REST utilizing a randomly generated workspace for concurrency when pending the changes.
 <table>
@@ -1222,7 +1247,7 @@ Uniqueness
 <td>
 <ul>
 <li>Must not contain any Unicode control characters or surrogate characters</li>
-<li>Must not contain the following printable characters: / : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]
+<li>Must not contain the following printable characters: <code>/ : \ ~ &amp; % ; @ &#39; &quot; ? &lt; &gt; | # $ * } { , + = [ ]</code>
 </li>
 <li>Must not start with an underscore (&#95;)</li>
 <li>Must not start or end with a period (.)</li>
@@ -1231,8 +1256,8 @@ Uniqueness
 </tr>
 </table>
 
->[!IMPORTANT]
->Although spaces are permitted in repo names, it is not recommended.
+> [!IMPORTANT]
+> Although you can include spaces within repo names, we don't recommend that you do so.
 
 For more information on naming restrictions for other Git items such as branches and tags, see [git check-ref-format](https://git-scm.com/docs/git-check-ref-format).
 
@@ -1391,11 +1416,13 @@ Workspace names must conform to the following restrictions.
 </table>
 
 <a id="page-title-names"></a>
+
 ## Wiki page title naming conventions
 
 [!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 
-*	[Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
-*	[Customize a process template](../../reference/process-templates/customize-process.md)
+- [Work tracking, process, and project limits](./work/object-limits.md)
+- [Customize work tracking objects to support your team's processes](../../reference/customize-work.md)
+- [Customize a process template](../../reference/process-templates/customize-process.md)

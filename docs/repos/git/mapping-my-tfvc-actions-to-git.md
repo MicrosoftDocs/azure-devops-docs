@@ -2,10 +2,8 @@
 title: Version Control - Map TFVC actions to Git
 titleSuffix: Azure Repos
 description: Learn to map Team Foundation Version Control (TFVC) commands and workflows to Git version control
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 88493ec3-0687-44f6-b7e3-36d72be7aa60
-ms.manager: mijacobs
 ms.author: sdanie
 author: wpschaub
 ms.topic: conceptual
@@ -22,7 +20,7 @@ This article will not delve deep into the [Git commands](https://git-scm.com/boo
 
 ## Start at the beginning by creating a new repo
 
-Each Project can host [TFVC and Git repositories in the same project](https://blogs.msdn.com/b/visualstudioalm/archive/2015/12/03/tfvc-and-git-repositories-in-the-same-team-project.aspx), creating one TFVC, and one or more Git repositories.
+Each Project can host [TFVC and Git repositories in the same project](https://devblogs.microsoft.com/devops/tfvc-and-git-repositories-in-the-same-team-project/), creating one TFVC, and one or more Git repositories.
 
 ![Create a new Git repo in Azure Repos](./media/mapping-my-tfvc-actions-to-git/ActionMap-NewRepo.png)
 

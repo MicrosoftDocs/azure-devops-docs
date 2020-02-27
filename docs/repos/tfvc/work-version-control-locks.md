@@ -3,9 +3,7 @@ title: Work with version control locks
 titleSuffix: Azure Repos
 description: Work with version control locks
 ms.assetid: 097adb8d-9509-48bb-804e-37456ff80ee8
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -3,9 +3,7 @@ title: Get started with Git and Visual Studio 2017
 titleSuffix: Azure Repos
 description: Quickstart with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

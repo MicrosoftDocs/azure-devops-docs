@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Learn how to track dependencies your team has on other teams with the dependency tracker  
 ms.custom: extensions
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.reviewer: mopatel
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +12,7 @@ monikerRange: 'azure-devops'
 ms.date: 12/02/2019
 ---
 
-# Plan and track dependencies using the Dependency Tracker extension
+# Plan and track dependencies using the Dependency Tracker
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 

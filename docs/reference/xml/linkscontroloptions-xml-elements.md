@@ -3,9 +3,7 @@ title: LinksControlOptions XML elements reference
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax to scope the allowed links within a links control element used in the new web form layout 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: FA2BB293-5AC9-4861-B9B1-1033E4E078D4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'

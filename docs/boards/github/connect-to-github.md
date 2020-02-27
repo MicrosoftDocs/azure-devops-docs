@@ -3,10 +3,8 @@ title: Connect a project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards 
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

@@ -3,10 +3,8 @@ title: Filter lists, boards, and directories
 titleSuffix: Azure DevOps 
 description: Filter your view to focus on items of interest 
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

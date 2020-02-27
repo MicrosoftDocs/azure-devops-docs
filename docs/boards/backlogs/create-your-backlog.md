@@ -4,14 +4,12 @@ titleSuffix: Azure Boards
 description: Add backlog items or user stories to plan your project, prioritize, and estimate deliverables in Azure Boards & TFS  
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 03/21/2019
+ms.date: 02/21/2020
 ---
 
 # Create your product backlog 
@@ -20,7 +18,7 @@ ms.date: 03/21/2019
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
 
-After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.
+After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
 
@@ -34,7 +32,7 @@ and more. Because the most important work appears at the top of the list, your t
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
-## Open your backlog from the web portal
+## Open your backlog  
 
 From your web browser, open your product backlog.  
 
@@ -115,7 +113,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 ::: moniker-end
 
 
-## Determine if bugs should appear on your backlog 
+## Track bugs on your backlog 
 
 You can choose how you want to manage bugs. Some teams like to track bugs along with requirements on the backlog. Other teams like to track bugs as tasks performed in support of a requirement. The bugs then appear on their [taskboard](../sprints/task-board.md).
 
@@ -123,7 +121,7 @@ Before deciding, review [Configure and customize, Treat bugs as requirements or 
 
 <a id="convert-ideas" />
 
-## Convert ideas into backlog items or stories
+## Convert ideas into backlog items 
 
 Your backlog shows work that you plan to do or have started to work on. As soon as the state of a work item is set to Done or Completed, the work item no longer shows up on your backlog. You can use the [backlog controls](product-backlog-controls.md) to filter or change your view. 
 
@@ -144,6 +142,9 @@ Users with **Stakeholder** access can only add work items to the end of the back
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/add-new-items-agile.png) 
 
+	> [!NOTE]  
+	> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+
 2. Repeat this step to capture all your ideas as work items.  
 
 ::: moniker-end
@@ -155,6 +156,9 @@ To build your backlog, enter a title and select **Add**. If you don't see the **
 
 ![Add work items to the backlog](media/create-backlog/add-new-items-standard.png) 
 
+> [!NOTE]  
+> If you have Stakeholder access, you can only add work items to the bottom of the backlog. 
+
 Repeat this step until you capture all your main ideas. 
 
 ::: moniker-end
@@ -164,74 +168,142 @@ Repeat this step until you capture all your main ideas.
 >
 > By default, user stories appear on Agile backlogs, issues on Basic backlogs, PBIs and bugs appear on Scrum backlogs, and requirements appear on CMMI backlogs. 
 
+<a id="reorder-backlog">  </a>
 <a id="move-items-priority-order">  </a>
 
-## Move items into priority order
+## Reorder your backlog
 
 After you have some items in your backlog, you can reorder them to create a prioritized list of work. Review and prioritize your backlog frequently to help your team know what's most important to deliver next. 
 
-To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md).
+> [!TIP]  
+> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
 
 To reorder your backlog, drag the work items. Or, if you prefer to use the keyboard, hold down the Alt key and use the up and down arrows.
 
 > [!div class="mx-imgBorder"]
 > ![Reorder work items](media/create-backlog/cyb-order-backlog.png)
 
+> [!NOTE]  
+> To reorder a backlog, you must have Basic or higher level access. For details, see [About access levels](../../organizations/security/access-levels.md). If you have Stakeholder access, you can't reorder backlog items. 
 
-> [!TIP]  
-> You can't sort your backlog on a column. To view a sorted listed, select **Create query**. Save and open the query, and then sort the query results. To learn more about queries, see [Use the query editor to list and manage queries](../queries/using-queries.md).
+Backlogs that participate in portfolio management or that contain nested same-type child items might not allow you to reorder the items. For more information, see these articles:  
+- [Backlogs, portfolios, and Agile project management, Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)
+- [Fix re-ordering and nesting issues](resolve-backlog-reorder-issues.md)
 
 
 <a id="estimates">  </a>
 
 ## Add details and estimates
 
-Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, they need more details. You capture these details within the work item form.
+Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
 
-> [!TIP]  
-> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Basic or Scrum, **Story Points** for Agile, or **Size** for CMMI. 
+To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![attachments icon](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
 
-To open each item, double-click or press Enter. Then add all the information you want to track. Enter as much detail as the team needs to:  
+Enter as much detail as the team needs to:  
 - Understand the scope. 
 - Estimate the work required. 
 - Develop tests. 
-- Ensure that the end product meets acceptance criteria.  
+- Ensure that the end product meets acceptance criteria.
+
+
+[!INCLUDE [temp](../includes/note-user-assigned.md)]
+
+
+#### [Agile process](#tab/agile-process) 
+
+For example, here we assign the story to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
+
+> [!div class="mx-imgBorder"]
+> ![User Story work item form, add details](../get-started/media/plan-track-work/user-story-form-add-details.png)
+
+ Choose **Save & Close** when done. 
+
+
+#### [Basic process](#tab/basic-process) 
+
+For example, here we assign the issue to Raisa Pokrovskaya and we add a discussion note, at-mentioning Raisa. 
+
+> [!div class="mx-imgBorder"]
+> ![Issues work item form, add details ](../get-started/media/track-issues/issue-form-add-details.png)
+
+Choose **Save & Close** when done. 
+
+#### [Scrum process](#tab/scrum-process) 
+
+For example, here we assign the product backlog item to Christie Church and set an Effort level of 8. 
 
 > [!div class="mx-imgBorder"]  
 > ![Product Backlog Item form](media/create-backlog/pbi-form.png) 
 
-<table valign="top" width="100%">
-<tbody valign="top" >
-<tr>
-<th width="20%">Field</th>
-<th width="80%">Usage</th>
-</tr>
-<tr>
-<td><a href="../queries/query-numeric.md" data-raw-source="[Effort](../queries/query-numeric.md)">Effort</a><br/>
-<a href="../queries/query-numeric.md" data-raw-source="[Story Points](../queries/query-numeric.md)">Story Points</a><br/>
-<a href="../queries/query-numeric.md" data-raw-source="[Size](../queries/query-numeric.md)">Size</a></td> 
-<td>
-<a name="estimates"></a>
-Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers. </p>
-<p>The estimates you set for <strong>Effort</strong>, <strong>Size</strong>, or <strong>Story Points</strong> are used to calculate <a href="../../report/dashboards/team-velocity.md" data-raw-source="[velocity](../../report/dashboards/team-velocity.md)">velocity</a> and <a href="../sprints/forecast.md" data-raw-source="[forecast sprints](../sprints/forecast.md)">forecast sprints</a>.</p>
-</td> 
-</tr>
-<tr>
-<td><a href="../queries/query-numeric.md" data-raw-source="[Business Value](../queries/query-numeric.md)">Business Value</a></td> 
-<td>Specify a priority that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.</td> 
-</tr>
-<tr>
-<td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Description](../queries/titles-ids-descriptions.md)">Description</a></td> 
-<td>Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don&#39;t describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.</td> 
-</tr>
-<tr>
-<td><a href="../queries/titles-ids-descriptions.md" data-raw-source="[Acceptance Criteria](../queries/titles-ids-descriptions.md)">Acceptance Criteria</a> </td> 
-<td><p>Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
-<p>Before work begins on a PBI or bug, describe the <a href="best-practices-product-backlog.md#acceptance" data-raw-source="[criteria for customer acceptance](best-practices-product-backlog.md#acceptance)">criteria for customer acceptance</a> as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.</p></td> 
-</tr>
-</tbody>
-</table>
+Choose **Save & Close** when done. 
 
+
+#### [CMMI process](#tab/cmmi-process) 
+
+For example, here we assign the product backlog item to Jamal Hartnett and set Size to 8. 
+
+> [!div class="mx-imgBorder"]  
+> ![Requirements work item form](../work-items/guidance/media/cmmi-requirement-form.png) 
+
+Choose **Save & Close** when done. 
+
+*** 
+
+> [!TIP]  
+> To plan a sprint, at a minimum, estimate the effort involved to implement each backlog item. To capture effort in the work item form, use **Effort** for Basic or Scrum, **Story Points** for Agile, or **Size** for CMMI. 
+
+<a name="estimates"></a>
+
+:::row:::
+   :::column span="":::
+      **Field**
+   :::column-end:::
+   :::column span="3":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Effort](../queries/query-numeric.md), [Story Points](../queries/query-numeric.md), [Size](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      Provide a relative estimate of the amount of work required to complete a PBI. For user stories and requirements, you capture estimates in <strong>Story Points</strong> and <strong>Size</strong>.<br/><p>Most Agile methods recommend that you set estimates for backlog items based on relative size of work. Such methods include powers of 2 (1, 2, 4, 8) and the Fibonacci sequence (1, 2, 3, 5, 8, etc.). Use any numeric unit of measurement your team prefers.  
+      The estimates you set for **Effort**, **Size**, or **Story Points** are used to calculate [velocity](../../report/dashboards/team-velocity.md) and [forecast sprints](../sprints/forecast.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Business Value](../queries/query-numeric.md)
+   :::column-end:::
+   :::column span="3":::
+      Specify a priority that captures the relative value of a PBI compared to other PBIs. The higher the number, the greater the business value.<br />Use this field when you want to capture a priority separate from the changeable backlog stack ranking.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Description](../queries/titles-ids-descriptions.md)
+   :::column-end:::
+   :::column span="3":::
+      Provide enough detail to create shared understanding of scope and support estimation efforts. Focus on the user, what they want to accomplish, and why. Don't describe how to develop the product. Do provide sufficient details so that your team can write tasks and test cases to implement the item.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Acceptance Criteria](../queries/titles-ids-descriptions.md)
+   :::column-end:::
+   :::column span="3":::
+      Define what &quot;Done&quot; means by describing the criteria for the team to use to verify whether the PBI or the bug fix is fully implemented.</p>
+      Before work begins on a PBI or bug, describe the [criteria for customer acceptance](best-practices-product-backlog.md#acceptance) as clearly as possible. Have conversations between the team and customers to determine the acceptance criteria. These criteria help ensure a common understanding within the team to meet customers&#39; expectations. Also, this information provides the basis for acceptance testing.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      [Impact Assessment](../work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md) (CMMI only)
+   :::column-end:::
+   :::column span="3":::
+      Describes the customer impact of not implementing the requirement. You might include details from the Kano model about whether this requirement is in the surprise, required, or obvious categories.
+   :::column-end:::
+:::row-end:::
 
 
 ## Try this next
@@ -246,9 +318,27 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ## Related articles
 
+::: moniker range="azure-devops"
+
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
+- [Refine your backlog](best-practices-product-backlog.md)  
+- [Display rollup progress bars or counts](display-rollup.md)
+- [Product backlog controls](product-backlog-controls.md)
+- [Filter product and portfolio backlogs](filter-backlogs.md)
+- [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
+- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+- [Bulk modify work items](bulk-modify-work-items.md)
+- [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
 - [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
 
+::: moniker-end

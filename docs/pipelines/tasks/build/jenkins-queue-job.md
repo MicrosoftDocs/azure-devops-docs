@@ -3,10 +3,8 @@ title: Jenkins Queue Job build and release task
 ms.custom: seodec18
 description: Queue a job on a Jenkins server build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: B0C3028E-B5DF-436D-B888-A4A8FA2627A0
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/17/2019

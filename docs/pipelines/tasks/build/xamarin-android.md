@@ -3,10 +3,8 @@ title: Xamarin.Android build and release task
 ms.custom: seodec18
 description: Xamarin.Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: F9D118B6-BA56-406C-8223-6934F6BCBEA1
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019

@@ -2,9 +2,7 @@
 title: Azure Boards FAQs 
 description: Answers to frequently asked questions about Azure Boards 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -60,7 +58,7 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 ### Q: Can a work item be assigned to several users or a user group? 
 
-**A:** No. Work items can only be assigned to a single user. 
+**A:** No. Work items can only be assigned to a single user. Also, that user must have been [added to a project or team](../organizations/security/add-users-team-project.md).  
 
 ### Q: What's the recommended method to group work? 
 
@@ -68,6 +66,7 @@ For an introduction to work items, see [About work items](work-items/about-work-
 
 For a discussion of these two usages and the tools they support, see [Configuration and customization of Azure Boards, Area paths, product teams, and portfolio management](configure-customize.md#area-path).
 
+[!INCLUDE [temp](includes/faq-milestone-marker.md)] 
 
 ### Q: How can I best track dependencies?
 
@@ -139,6 +138,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 ## Configuration and customizations  
 
 Configuration and customization of Azure Boards occurs at the project and team level. For an overview of what you can configure and customize to support your business needs, see [Configuration and customization of Azure Boards](configure-customize.md). 
+
+[!INCLUDE [temp](includes/faq-picklists.md)] 
 
 ### Q: Can I add or rename a portfolio backlog?  
 

@@ -1,11 +1,9 @@
 ---
 title: Troubleshoot migration import to Azure DevOps Services
 description: Resolve common DataMigratorTool validation errors 
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: ee8c290d-0b48-4cbd-b7fd-7afb9591c169
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -209,7 +207,7 @@ DECLARE @p6 dbo.typ_GroupMembershipTable
 
 INSERT into @p6 values('S-1-9-1551374245-3746625149-2333054533-2458719197-2313548623-0-0-0-0-3','Microsoft.TeamFoundation.Identity','76050ddf-4fd8-48c4-a1ff-859e44364519',0)
  
-EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-13dd89e5f34f',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5',@updateGroupAudit=0
+EXEC prc_UpdateGroupMembership @partitionId=1,@scopeId='7df650df-0f8b-4596-928d-13dd89e5f34f',@idempotent=1,@incremental=1,@insertInactiveUpdates=0,@updates=@p6,@eventAuthor='9EE20697-5343-43FC-8FC5-3D5D455D21C5'
 ```
 
 Run the completed command against the Azure DevOps Server configuration database. You'll need to repeat this command for each ISVError: 300005 instance reported. You can batch errors with the same scope ID into a single command. Once you've executed the commands, rerun the data migration tool validate again to ensure that the errors have been corrected. If the errors still persist, contact [Azure DevOps Services customer support](https://aka.ms/AzureDevOpsImportSupport). 
