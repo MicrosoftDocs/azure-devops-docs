@@ -12,11 +12,11 @@ ms.date: 02/18/2020
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy CI/CD for Azure DevOps
+# Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this article, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:

@@ -100,7 +100,7 @@ A: They're billed for both Basic and Basic + Test Plans, which is a current limi
  
 ### Q: How can I get a list of all the users I’m paying for under multi-org billing?
 
-A: Export a list of users from **Organization settings > Users**. Then, remove duplicates based on email address. When multi-org billing goes into GA (general availability), we'll have a way to export the list of all users under an Azure subscription. 
+A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on email address. 
 
 ### Q: Why are additional free user grants removed when multi-organization billing is enabled?
 

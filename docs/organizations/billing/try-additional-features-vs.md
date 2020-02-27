@@ -12,11 +12,11 @@ ms.date: 12/10/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Try Azure Test Plans for free
+# Try Azure Test Plans for free
 
 [!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-In this quickstart, learn how to try Azure Test Plans for free for 30 days.
+In this article, learn how to try Azure Test Plans for free for 30 days.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
