@@ -160,6 +160,23 @@ For special keywords like `checkout` and `bash` in the example above, you can us
 | `publish`    | `ECDC45F6-832D-4AD9-B52B-EE49E94659BE` | PublishPipelineArtifact |
 | `download`   | `61F2A582-95AE-4948-B34D-A1B3C4F6A737` | DownloadPipelineArtifact |
 
+After resolving task names and keywords, the above YAML becomes:
+
+```yaml
+steps:
+- task: 6D15AF64-176C-496D-B583-FD2AE21D4DF4@1
+	inputs:
+	  repository: self
+- task: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B@3
+	inputs:
+	  targetType: inline
+	  script: echo This is the Bash task
+- task: E213FF0F-5D5C-4791-802D-52EA3E7BE1F1@2
+  inputs:
+    targetType: inline
+    script: Write-Host This is the PowerShell task
+```
+
 > [!TIP]
 > Each of these GUIDs can be found in the `task.json` for the corresponding [in-box task](https://github.com/microsoft/azure-pipelines-tasks).
 > The only exception is `checkout`, which is a native capability of the agent.
