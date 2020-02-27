@@ -3,9 +3,7 @@ title: TFS-Project Server Integration index
 titleSuffix: TFS 
 description: Index to topics for working with TFS-Project Server synchronization   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: D51EAF72-F73D-4012-97F9-6208232B91B7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

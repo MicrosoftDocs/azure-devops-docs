@@ -3,11 +3,9 @@ title: Add users to Azure Active Directory tenant
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Add users to your Azure Active Directory when Azure AD is connected to your organization
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018

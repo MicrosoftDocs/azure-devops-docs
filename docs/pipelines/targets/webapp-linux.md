@@ -2,10 +2,7 @@
 title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps on Linux from Azure Pipelines 
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: atulmal

@@ -3,9 +3,7 @@ title: Git index.lock file
 titleSuffix: Azure Repos
 description: Learn more about the Git index.lock file in Visual Studio
 ms.assetid: d7f960e7-7132-4ee3-ba27-5bb5fd60e625
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

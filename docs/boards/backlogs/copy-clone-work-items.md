@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial

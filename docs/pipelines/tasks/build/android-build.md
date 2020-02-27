@@ -3,10 +3,7 @@ title: Android build task (deprecated; use Gradle)
 ms.custom: seodec18
 description: Android build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 21C3DC47-7D67-4427-8386-ACE3A6279995
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 08/10/2016

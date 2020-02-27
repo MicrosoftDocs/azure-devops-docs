@@ -3,9 +3,7 @@ title: Code with Git
 titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-new-user
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.date: 09/10/2018

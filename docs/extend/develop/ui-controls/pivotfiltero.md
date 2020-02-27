@@ -2,10 +2,8 @@
 title: Use the Pivot Filter Control | Extensions for Azure DevOps Services
 description: Use the pivot filter control to apply filtering on your list in your app for Azure DevOps Services.
 ms.assetid: 36F80097-4DB7-4C63-8E0E-8C031CF07FCE
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

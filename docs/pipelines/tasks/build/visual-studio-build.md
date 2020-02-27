@@ -3,10 +3,7 @@ title: Visual Studio Build build and release task
 ms.custom: seodec18
 description: Visual Studio Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 11E76804-BA67-4086-9CF1-8CB2887169BA
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019

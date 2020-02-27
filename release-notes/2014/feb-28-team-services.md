@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online updates - Feb 28
 description: VSTS release notes for February 28 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 6b3bfa29-ef59-4d97-85cb-f604e6ba9052

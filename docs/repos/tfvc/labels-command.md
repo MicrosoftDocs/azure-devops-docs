@@ -3,9 +3,7 @@ title: Labels Command
 titleSuffix: Azure Repos
 description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

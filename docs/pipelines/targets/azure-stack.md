@@ -2,10 +2,7 @@
 title: Deploy to Azure Stack
 description: Understand Azure Stack deployment in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 76C2080A-C1D9-44AF-AA76-1953BA4C2837
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

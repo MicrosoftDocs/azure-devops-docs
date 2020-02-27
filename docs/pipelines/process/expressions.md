@@ -3,12 +3,7 @@ title: Expressions
 ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/20/2019
 monikerRange: '>= tfs-2017'
 ---

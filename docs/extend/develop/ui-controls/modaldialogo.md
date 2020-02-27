@@ -2,10 +2,8 @@
 title: Use the Dialog Control | Extensions for Azure DevOps Services
 description: Use the modal dialog control to collect user input or display message in your app for Azure DevOps Services.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

@@ -4,8 +4,6 @@ titleSuffix: Azure DevOps
 description: Configure the Sprint burndown in-context chart or widget that to track team progress in Azure DevOps  
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

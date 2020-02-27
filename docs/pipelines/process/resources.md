@@ -3,13 +3,8 @@ title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 02/11/2020
+ms.date: 02/27/2020
 monikerRange: azure-devops
 ---
 
@@ -58,7 +53,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to all branches
-    tag: string # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
+    tags: [ string ] # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.

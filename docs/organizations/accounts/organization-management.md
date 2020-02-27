@@ -3,11 +3,9 @@ title: About creating and managing organization
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Collaborate with others to develop apps by using our cloud service, plan and track work, integrate with other services, and get more features or extensions.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: fa1dbe39-08b1-4eba-886a-33c1aa1e6a83
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/12/2019

@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 ms.custom: work-items
 description: CMMI process objects used to plan and track work, monitor progress, and trends when connecting to Azure Boards, Azure DevOps, & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 212e3d0f-65f8-47af-b95a-ce9e320e16db
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

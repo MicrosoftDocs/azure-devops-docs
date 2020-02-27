@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Share sprint plan working with Scrum methods 
 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

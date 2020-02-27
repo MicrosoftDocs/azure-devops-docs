@@ -3,12 +3,7 @@ title: Templates
 ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 02/11/2020
 monikerRange: '>= azure-devops-2019'
 ---

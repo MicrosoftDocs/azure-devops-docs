@@ -3,8 +3,6 @@ title: Contacting support for notifications
 titleSuffix: Azure DevOps 
 description: Open a support ticket for notifications in Azure DevOps or Team Foundation Server  
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

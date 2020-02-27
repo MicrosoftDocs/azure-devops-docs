@@ -2,11 +2,7 @@
 title: Set up your client's npmrc
 description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 09/30/2017
 monikerRange: '>= tfs-2017'

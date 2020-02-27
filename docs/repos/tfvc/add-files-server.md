@@ -3,9 +3,7 @@ title: Add files to the server
 titleSuffix: Azure Repos
 description: Add files to the server
 ms.assetid: 9b457eb0-9cdf-438d-935d-ceac7ce2201a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

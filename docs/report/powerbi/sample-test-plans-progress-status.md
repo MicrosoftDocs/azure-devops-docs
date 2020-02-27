@@ -2,10 +2,8 @@
 title: Manual test progress status sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate an overall execution state or progress status of manual tests
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE

@@ -2,10 +2,8 @@
 title: Configuration quick reference
 titleSuffix: TFS 
 description: Install and configure the Team Foundation Server Extensions for the Project Server to support Team Foundation Server-Project Server integration  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 55197d77-ff30-4534-8f59-7cf8cc329806
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

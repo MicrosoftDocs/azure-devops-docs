@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestConfiguration API | Extensions for Azure DevOps Services
 description: Data representation of a test configuration.
 ms.assetid: 9f166ac5-4400-e1c5-419a-d04d5a77822b
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

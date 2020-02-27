@@ -3,9 +3,7 @@ title: Enable and Disable Check-In Policies
 titleSuffix: Azure Repos
 description: Enable and Disable Check-In Policies
 ms.assetid: 629bf67c-22c5-4047-92b8-aa8f7c201cc9
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

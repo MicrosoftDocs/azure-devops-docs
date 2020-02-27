@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts ItemModel API | Extensions for Azure DevOps Services
 ms.assetid: 58f1b233-c31f-b96e-fb15-29a8a6aa5807
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

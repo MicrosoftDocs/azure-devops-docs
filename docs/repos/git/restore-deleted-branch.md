@@ -3,9 +3,7 @@ title: Restore a deleted branch in your Git repo
 titleSuffix: Azure Repos
 description: Use the branches page to restore a deleted Git branch in Azure DevOps Services or Team Foundation Server
 ms.assetid:
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: kangan
 author: kaylangan
 ms.topic: conceptual

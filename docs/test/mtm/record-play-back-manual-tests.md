@@ -2,10 +2,8 @@
 title: Record and play back manual tests
 description: Record and play back manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 6B6E991A-969F-4AB3-8031-9BFF260D9142
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts VersionControlProjectInfo API | Extensions for Azure DevOps Services
 ms.assetid: f0dd9f00-8228-957d-73a7-4cf53c146509
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

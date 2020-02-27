@@ -3,9 +3,7 @@ title: Pull changes to your local Git repo
 titleSuffix: Azure Repos
 description: Using Git Pull, fetch, and merge to get code from others
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
