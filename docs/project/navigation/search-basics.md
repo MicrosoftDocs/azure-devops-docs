@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Find code or work items quickly in Azure DevOps
 ms.assetid: 
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

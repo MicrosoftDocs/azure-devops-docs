@@ -1,12 +1,10 @@
 ---
 title: Analyze and report on build details and build coverage
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

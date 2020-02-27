@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts Schedule API | Extensions for Azure DevOps Services
 description: Data representation of a schedule.
 ms.assetid: f8e08d14-45f8-724e-0510-7aefdef8663e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

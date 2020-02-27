@@ -5,8 +5,6 @@ description: Use the Kanban board, process, and tools to plan and track work in 
 ms.custom: boards-kanban  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

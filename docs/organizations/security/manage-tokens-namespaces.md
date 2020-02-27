@@ -3,7 +3,6 @@ title: Manage tokens & namespaces
 titleSuffix: Azure DevOps Services
 description: Manage security permissions using the Azure DevOps CLI.  
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
 ms.manager: geverghe

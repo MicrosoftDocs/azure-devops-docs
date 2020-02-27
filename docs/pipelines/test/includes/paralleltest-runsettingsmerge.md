@@ -1,11 +1,10 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
+ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 02/19/2020
-ms.manager: mijacobs
 ---
 
 > If you need to update an existing **.runsettings** file containing an entry for **MaxCpuCount**, see the tables in

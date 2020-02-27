@@ -3,11 +3,9 @@ title: Resolve inactive organization owner and project collection administrators
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a new owner to an organization when the current owner is inactive.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/18/2019

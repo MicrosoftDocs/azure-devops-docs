@@ -2,10 +2,8 @@
 title: VSS/Common/Contracts/FormInput InputValue API | Extensions for Azure DevOps Services
 description: Information about a single value for an input
 ms.assetid: 79a8eff0-9bdb-0de1-d4b6-16d4ada30620
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

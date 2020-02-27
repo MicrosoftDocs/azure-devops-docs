@@ -2,10 +2,8 @@
 title: OData API versioning
 titleSuffix: Azure DevOps 
 description: How Analytics for Azure DevOps manages changes to the OData API  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: prprice
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

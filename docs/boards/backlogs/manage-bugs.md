@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Manage technical debt and triage bugs using Agile tools in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

@@ -3,9 +3,7 @@ title: Authenticate with your Git repos
 titleSuffix: Azure Repos
 description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely sign in to your Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual

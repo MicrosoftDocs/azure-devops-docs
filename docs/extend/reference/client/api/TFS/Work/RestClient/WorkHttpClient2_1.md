@@ -1,10 +1,8 @@
 ---
 title: TFS/Work/RestClient WorkHttpClient2_1 API | Extensions for Azure DevOps Services
 ms.assetid: b59a8628-1fca-36f2-f88f-e6801bcda3f2
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

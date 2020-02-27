@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IContributedTab API | Extensions for Azure DevOps Services
 description: Data representation of iContributed tab.
 ms.assetid: 18284bee-cdea-00d5-9d1f-21fa6189fd62
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

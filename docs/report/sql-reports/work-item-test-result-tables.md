@@ -1,12 +1,10 @@
 ---
 title: Work Item Test Result tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Test Result tables to query for data about work items that are linked to test results.
 ms.assetid: 33dbfef7-c17b-4884-9a33-cfc61a1d7cd6
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

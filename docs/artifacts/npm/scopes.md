@@ -2,11 +2,7 @@
 title: Use npm scopes for private packages
 description: Use npm scopes for private packages in Azure DevOps Services
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'

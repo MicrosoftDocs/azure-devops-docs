@@ -1,13 +1,10 @@
 ﻿---
 title: Get started with Maven packages
 description: Quickly start hosting Maven artifacts in Azure DevOps Services or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
 ms.manager: jenp
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: dastahel
 ms.date: 11/14/2019
 monikerRange: '>= tfs-2018'

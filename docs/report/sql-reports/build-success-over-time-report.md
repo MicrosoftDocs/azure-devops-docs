@@ -1,14 +1,12 @@
 ---
 title: Build Success Over Time Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Displays the status of the last build for each build category run for each day - Team Foundation Server  
 ms.assetid: 1791d80f-91f6-4e4a-a544-a3289a8a39ac
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/2017
 ---

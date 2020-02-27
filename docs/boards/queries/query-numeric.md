@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Track work by creating queries based on effort, story points, schedules, or time tracking fields in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 78fe418f-fbd8-4ae2-97d7-c754c14dd3cd
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
