@@ -56,7 +56,7 @@ In this example, we are setting authentication for publishing to a private Azure
   
 # Use command line script to 'twine upload', use -r to pass the repository name and --config-file to pass the environment variable set by the authenticate task.
 - script: |
-   python -m twine upload -r "myTestProject/myTestFeed" --config-file $(PYPIRC_PATH) dist/*.whl
+   python -m twine upload -r myTestFeed --config-file $(PYPIRC_PATH) dist/*.whl
 ```
 
 The 'artifactFeed' input will contain the project and the feed name if the feed is project scoped. If the feed is organization scoped, only the feed name must be provided. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
