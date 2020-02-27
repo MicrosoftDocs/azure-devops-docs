@@ -42,6 +42,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Project-level security groups](../security/permissions.md#project-level-groups)  
    :::column-end:::
    :::column span="":::
+- [Project and process object limits](../settings/work/object-limits.md)  
 - [Projects page](../../project/navigation/work-across-projects.md)  
 - [Public vs private projects](../public/about-public-projects.md)  
 - [Security groups](../security/about-permissions.md)  
@@ -71,6 +72,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 - [Permissions](../security/about-permissions.md)  
 - [Process (Inherited)](../settings/work/inheritance-process-model.md)  
 - [Process (On-premises XML)](../../reference/on-premises-xml-process-model.md)  
+- [Project and process object limits](../settings/work/object-limits.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
 - [Project-level permissions](../security/permissions.md#project-level-permissions)  
@@ -104,6 +106,7 @@ Use this index to quickly access concepts and tasks related to managing projects
    :::column span="":::
 - [Permissions](../security/about-permissions.md)  
 - [Process (On-premises XML)](../../reference/on-premises-xml-process-model.md)  
+- [Project and process object limits](../settings/work/object-limits.md)  
 - [Project resources viewable by members](resources-granted-to-project-members.md)  
 - [Project Wiki](../../project/wiki/provisioned-vs-published-wiki.md)  
 - [Project-level permissions](../security/permissions.md#project-level-permissions)  
@@ -156,10 +159,13 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
 - [Change user access levels](../accounts/add-organization-users.md) 
+- [Search across project(s)](../../project/search/overview.md)  
 - [Set area paths](../settings/set-area-paths.md)  
+- [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project permissions](../security/set-project-collection-level-permissions.md)  
 - [Set project visibility](../public/make-project-public.md)  
+- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::
 
@@ -195,9 +201,12 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
+- [Search across project(s)](../../project/search/overview.md)  
 - [Set area paths](../settings/set-area-paths.md)  
+- [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::
 
@@ -230,9 +239,12 @@ The following tasks typically require permissions granted to a member of the Pro
 - [Rename project](create-project.md)  
 - [Rename team](../settings/rename-remove-team.md)  
 - [Restore project](restore-project.md)  
+- [Search across project(s)](../../project/search/overview.md)  
 - [Set area paths](../settings/set-area-paths.md)  
+- [Set favorites](../../project/navigation/set-favorites.md)  
 - [Set iteration paths](../settings/set-iteration-paths-sprints.md)  
 - [Set project permissions](../security/set-project-collection-level-permissions.md)  
+- [Switch project, repository, team](../../project/navigation/go-to-project-repo.md)  
    :::column-end:::
 :::row-end:::
 
