@@ -80,7 +80,7 @@ A: No. Each organization gets five free Basic users. Those users apply to the bi
  
 ### Q: How can I turn on multi-org billing?
 
-A: Multi-org billing is an option that you can enable for your billing subscription. Go here: **Azure DevOps** > **Organization settings** > **Billing** > **Configure user billing**.
+A: To turn on multi-org billing, see [how to pay for a user once across multiple organizations](buy-basic-access-add-users.md#pay-for-a-user-once-across-multiple-organizations).
  
 ### Q: Can I use different Azure subscriptions for billing, but still pay only once per user?
 
