@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: View frequently asked questions (FAQs), like creating a project and how to resolve various errors.
 ms.assetid: 90e03b82-a6e8-47af-ad8c-5b134f4e3134
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/19/2017

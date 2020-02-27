@@ -3,10 +3,8 @@ title: Switch project, repository, or team
 titleSuffix: Azure DevOps
 description: Open another project or repository for Azure DevOps
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

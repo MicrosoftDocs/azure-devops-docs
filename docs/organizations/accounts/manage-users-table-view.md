@@ -2,11 +2,9 @@
 title: Manage users and access levels
 titleSuffix: Azure DevOps Services
 description: Add users and assign access levels on the Users page in Azure DevOps
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/18/2019

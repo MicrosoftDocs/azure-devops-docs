@@ -4,9 +4,7 @@ author: gloridelmorales
 ms.author: glmorale
 ms.date: 01/28/2020
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
-ms.manager: mijacobs
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
 hide_comments: true
 ---
@@ -3321,7 +3319,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx" data-raw-source="[22 Jul 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/22/reporting-on-work-items-with-power-bi.aspx)">22 Jul 2015</a></td>
+            <td rowspan="1"><a href="https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/" data-raw-source="[22 Jul 2015](https://devblogs.microsoft.com/devops/reporting-on-work-items-with-power-bi/)">22 Jul 2015</a></td>
             <td>Power BI reporting on Work Item data</td>
             <td></td><td>Future</td>
         </tr>
@@ -3468,7 +3466,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx" data-raw-source="[17 Apr 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/04/17/general-availability-of-codelens-in-visual-studio-online.aspx)">17 Apr 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/" data-raw-source="[17 Apr 2015](https://devblogs.microsoft.com/devops/general-availability-of-codelens-in-visual-studio-online/)">17 Apr 2015</a></td>
             <td>CodeLens General Availability on Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3546,7 +3544,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td><a href="https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx" data-raw-source="[13 Feb 2015](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/13/announcing-limited-preview-for-visual-studio-online-code-search.aspx)">13 Feb 2015</a></td>
+            <td><a href="https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/" data-raw-source="[13 Feb 2015](https://devblogs.microsoft.com/devops/announcing-limited-preview-for-visual-studio-online-code-search/)">13 Feb 2015</a></td>
             <td>Limited preview for Code Search</td>
             <td></td><td>N/A</td>
         </tr>

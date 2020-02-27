@@ -2,10 +2,8 @@
 title: Publish Build Artifacts task
 description: Publish build artifacts to Azure Pipelines, Team Foundation Server (TFS), or to a file share
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma

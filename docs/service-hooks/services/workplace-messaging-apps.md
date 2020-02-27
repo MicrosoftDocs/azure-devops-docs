@@ -1,5 +1,4 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Workplace Messaging Apps with Azure DevOps Services

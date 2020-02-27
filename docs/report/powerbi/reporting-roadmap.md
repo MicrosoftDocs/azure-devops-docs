@@ -2,10 +2,8 @@
 title: Reporting roadmap
 titleSuffix: Azure DevOps 
 description: Reporting roadmap for Azure DevOps and Team Foundation Server (TFS) 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,10 +1,8 @@
 ---
 title: Troubleshoot builds and releases
 description: Learn how to troubleshoot builds and releases in Azure Pipelines and Team Foundation Server.
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
-ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18

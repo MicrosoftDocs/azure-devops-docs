@@ -1,11 +1,9 @@
 ﻿---
 title: Get the Eclipse Plug-in
 description: Information and download links for Team Explorer Everywhere for Eclipse
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel

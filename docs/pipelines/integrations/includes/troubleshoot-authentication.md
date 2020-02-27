@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-collab
 title: Azure Pipelines with Slack
 ms.manager: bijuv

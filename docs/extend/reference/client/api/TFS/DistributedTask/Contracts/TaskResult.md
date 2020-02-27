@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskResult API | Extensions for Azure DevOps Services
 description: Data representation of task result.
 ms.assetid: 2b234182-ec49-d8ec-e74d-3ba873263c08
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

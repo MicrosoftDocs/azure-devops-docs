@@ -3,9 +3,7 @@ title: Branch Command
 titleSuffix: Azure Repos
 description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

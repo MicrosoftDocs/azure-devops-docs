@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IHostDialogService API | Extensions for Azure DevOps Services
 description: Service which manages showing dialogs in the parent frame
 ms.assetid: 8f15dcd0-c8e1-ba70-5a9b-daa6f4c97f38
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

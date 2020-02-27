@@ -2,10 +2,8 @@
 title: Run Apache JMeter load tests
 description: Using JMeter to performance test your application in the cloud using the features of Azure DevOps and TFS
 ms.assetid: 3B2A725F-4E7B-4652-BFD1-FC7C9A248B7B
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

@@ -2,11 +2,9 @@
 title: Request feedback 
 titleSuffix: Azure DevOps Services & TFS 
 description: Ask reviewers to provide videos, screenshots, type-written comments, and ratings on your application developed using Azure DevOps Services & Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: b8fc1618-6501-41dd-86a6-78290bb84dcd  
-ms.manager: mijacobs
 ms.author: kaelli
 monikerRange: '>= tfs-2013'
 ms.date: 01/15/2019

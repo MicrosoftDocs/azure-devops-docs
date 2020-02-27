@@ -1,10 +1,8 @@
 ---
 title: FAQs about getting extensions for Azure DevOps
 description: Frequently asked questions about getting and paying for extensions for Azure DevOps
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/25/2019

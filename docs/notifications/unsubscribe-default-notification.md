@@ -2,13 +2,11 @@
 title: View subscribed notifications
 titleSuffix: Azure DevOps
 description: View your notifications and unsubscribe from a default or built-in notification in Azure DevOps or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/30/2019
+ms.date: 02/20/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 If you want to stop receiving select email notifications, you can do so by unsubscribing from them. For a description of each default subscription, see [Default notifications](oob-built-in-notifications.md)  
 
-You start by opening your personal notification settings. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
+Start by opening your personal notification settings from your home page. Select the user settings icon ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**. If you don't have a project yet, create one in [Azure DevOps](../organizations/accounts/set-up-vs.md).
 
 ::: moniker range=">= azure-devops-2019"
 

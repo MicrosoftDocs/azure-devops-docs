@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Add and set dates for sprints, releases, or iterations to implement Scrum in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1DB81E71-36D7-43A5-9C9A-38AA1777715A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

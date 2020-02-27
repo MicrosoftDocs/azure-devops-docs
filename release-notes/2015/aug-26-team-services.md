@@ -1,7 +1,6 @@
 ---
 title: Sprint planning improvements and SonarQube analysis build tasks – Aug 26
 description: VSTS release notes for August 26 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: a08691ea-e68d-4846-a306-adb0e30b28b4
@@ -32,7 +31,7 @@ The burndown chart now has a line showing available capacity during a sprint, in
 
 ## SonarQube analysis build tasks
 
-Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/build-tasks-for-sonarqube-analysis.aspx).
+Finally, you can now execute a SonarQube analysis in conjunction with MSBuild. Before your build steps that execute the actual MsBuild, insert a **SonarQube for MSBuild - Begin Analysis** task to specify the SonarQube project parameters, the connection to the SonarQube server, and (until SonarQube 5.2 ships) the connection to the SonarQube database. After the build and any test tasks, simply append a **SonarQube for MSBuild - End Analysis** task to complete the analysis and send the data off to SonarQube. You can learn more about SonarQube analysis in this [blog post](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/).
 
 ![SonarQube build analysis settings](media/8_26_04.png)
 

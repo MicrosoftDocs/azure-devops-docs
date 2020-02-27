@@ -1,12 +1,10 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -142,9 +140,9 @@ To learn how to add users to a group or set a specific permission that you can m
 <ul>
 <li>
 <li><a href="/azure/devops/server/admin/add-administrator">Add users to Team Foundation Administrators group</a></li>
-<a href="set-project-collection-level-permissions.md>Add users to an administrator role</a></li>
+<a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
-<li><a href="../settings/add-team-administrator.md>Make a user a team admin</a></li>
+<li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
 </ul>
 <h4>Wiki</h4>
 <ul>

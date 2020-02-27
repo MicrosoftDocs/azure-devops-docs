@@ -1,11 +1,9 @@
 ---
 title: Start Using Azure Artifacts. 
 description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/03/2019

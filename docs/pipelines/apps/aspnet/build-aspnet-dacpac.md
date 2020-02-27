@@ -4,9 +4,7 @@ title: Build your SQL server database
 ms.topic: conceptual
 ms.custom: seodec18
 description: Define a continuous integration (CI) build for your SQL server database in Azure Pipelines or Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/02/2017

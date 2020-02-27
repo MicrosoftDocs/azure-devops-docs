@@ -2,11 +2,9 @@
 title: Troubleshoot permissions and access via Azure AD
 ms.custom: seodec18
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, how to add users, or how to connect to, disconnect from, or switch your directory.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/12/2019
@@ -124,7 +122,7 @@ A: No, querying on Azure AD groups is unsupported.
 
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
-A: No, but you might be interested in our [process customization plans](https://blogs.msdn.com/b/visualstudioalm/archive/2015/07/27/visual-studio-online-process-customization-update.aspx).
+A: No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
 
 <a name="remove-user-azure-ad-group"></a>
 

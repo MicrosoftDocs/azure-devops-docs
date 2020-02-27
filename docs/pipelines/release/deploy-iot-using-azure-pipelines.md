@@ -2,10 +2,8 @@
 title: IoT DevOps using Azure Pipelines
 description: Set up continuous deployment (CD) of an IoT app to IoT Hub in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 04/25/2019

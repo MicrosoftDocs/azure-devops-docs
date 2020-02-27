@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestPlanCloneRequest API | Extensions for Azure DevOps Services
 description: Data representation of a test plan clone request.
 ms.assetid: 2ae8a6a9-10ff-5817-c674-768373f8da03
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

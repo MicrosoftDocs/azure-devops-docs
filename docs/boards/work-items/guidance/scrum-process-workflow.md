@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: How to guide for using the Scrum process  work item types and workflow to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 34c866ea-a130-4371-bfc4-a3d9f87dccca
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -138,8 +136,6 @@ When teams estimate work using hours or days, they define tasks and the **Remain
     <td width="18%"><p><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </p></td>
     <td><p>Indicate how many hours or days of work remain to complete a task. As work progresses, update this field. It&#39;s used to calculate capacity charts, the sprint burndown chart, and the <a href="../../../report/sql-reports/sprint-burndown-scrum.md" data-raw-source="[Sprint Burndown (Scrum)](../../../report/sql-reports/sprint-burndown-scrum.md)">Sprint Burndown (Scrum)</a> report.<br />If you divide a task into subtasks, specify Remaining Work for the subtasks only. You can specify work in any unit of measurement your team chooses.</p></td>
 </tr>
-
-
 <tr>
     <td><p><a href="../../queries/query-numeric.md" data-raw-source="[Activity](../../queries/query-numeric.md)">Activity</a> </p></td>
     <td><p>Select the type of activity this task represents when your team estimates sprint capacity by activity.</p></td></tr>

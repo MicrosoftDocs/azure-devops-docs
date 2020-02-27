@@ -4,9 +4,7 @@ title: Build your Azure Cloud Service
 ms.topic: conceptual
 ms.custom: seodec18
 description: Define a continuous integration (CI) build for your Azure Cloud Service in Azure Pipelines or Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/02/2017

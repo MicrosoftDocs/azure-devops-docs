@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

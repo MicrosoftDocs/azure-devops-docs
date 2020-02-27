@@ -1,11 +1,7 @@
 ---
 title: Keep your OSS packages safe with upstream sources | Azure Artifacts
 description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: amullans
 ms.date: 12/04/2018
 monikerRange: '>= tfs-2017'

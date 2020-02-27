@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online Updates - May 20
 description: VSTS release notes for May 20 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 764a35d1-3785-45ef-b339-8c2714b4f836

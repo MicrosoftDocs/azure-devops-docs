@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Learn how you can migrate or integrate work tracking from other software applications to Azure Boards 
 ms.custom: extensions
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

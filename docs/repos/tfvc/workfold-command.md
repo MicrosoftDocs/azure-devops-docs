@@ -3,9 +3,7 @@ title: Workfold Command
 titleSuffix: Azure Repos
 description: Workfold Command
 ms.assetid: f4d18139-bd2e-4621-be4e-a761ca537280
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

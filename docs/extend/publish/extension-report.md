@@ -1,5 +1,4 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Publish Extension Report | Azure DevOps
 description: An overview of reports that are available for an extension. 

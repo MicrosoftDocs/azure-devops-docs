@@ -3,10 +3,8 @@ title: Understand what you get with Azure Boards
 titleSuffix: Azure Boards
 description: Main features and functions supported by Azure Boards available from Azure DevOps Services and Team Foundation Server (TFS) 
 ms.custom: boards-get-started
-ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -41,9 +39,7 @@ Each work item represents an object stored in the work item data store. Each wor
 
 ## Track work on interactive backlogs and boards
 
-
 Quickly add and update the status of work using the Kanban board. You can also assign work to team members and tag with labels to support queries and filtering. Share information through descriptions, attachments, or links to network shared content. Prioritize work through drag-and-drop.  
-
 
 
 #### [Agile process](#tab/agile-process) 

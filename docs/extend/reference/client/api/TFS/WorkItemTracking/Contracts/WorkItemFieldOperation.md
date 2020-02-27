@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts WorkItemFieldOperation API | Extensions for Azure DevOps Services
 ms.assetid: 10f99bc7-3c22-6251-c875-82be73e2bb16
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

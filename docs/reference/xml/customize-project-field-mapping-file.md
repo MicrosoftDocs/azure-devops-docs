@@ -2,12 +2,9 @@
 title: Customize the Microsoft Project field mapping file
 titleSuffix: TFS
 description: Change how specific fields are published from Project to Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b10f8b41-b790-4793-bfe7-a64f935b20fc
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 monikerRange: '<= tfs-2018'
 ms.date: 05/06/2019
 ---

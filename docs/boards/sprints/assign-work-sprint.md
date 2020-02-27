@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Assign work to a sprint or iteration working with Scrum methods in Azure Boards or Team Foundation Server (TFS)
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

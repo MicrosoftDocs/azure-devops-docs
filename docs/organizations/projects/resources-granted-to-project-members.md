@@ -3,12 +3,10 @@ title: Resources granted to project members
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Learn about security and data access considerations and resources granted when you add members to a project or organization 
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2013'

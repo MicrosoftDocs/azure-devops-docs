@@ -2,11 +2,9 @@
 title: Rebuild the client cache
 titleSuffix: TFS  
 description: Update the data cache on client computers after certain maintenance operations.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

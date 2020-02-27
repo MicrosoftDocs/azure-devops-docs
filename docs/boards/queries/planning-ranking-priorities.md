@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Create queries based on planning, ranking, priority, and picklist fields in Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

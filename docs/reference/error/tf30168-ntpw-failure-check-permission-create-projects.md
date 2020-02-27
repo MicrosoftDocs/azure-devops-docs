@@ -2,10 +2,8 @@
 title: TF30168-The New Team Project Wizard failure...  
 titleSuffix: Azure DevOps & TFS
 description: Occurs when the New Team Project Wizard starts and then checks to see whether your user account has permission set to create a project.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 5ec922a9-9b7a-4ccc-b1c5-5f8432e0c385
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

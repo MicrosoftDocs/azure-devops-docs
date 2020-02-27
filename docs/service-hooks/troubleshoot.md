@@ -1,14 +1,10 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Troubleshoot your service hooks integrations | Azure DevOps Services
 description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/08/2019
 ---
 

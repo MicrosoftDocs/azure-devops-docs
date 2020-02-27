@@ -2,10 +2,8 @@
 title: Azure Database for Mysql Deployment task
 description: Run your scripts and make changes to your Azure DB for Mysql. 
 ms.topic: reference
-ms.prod: devops
 ms.technology: devops-cicd
 ms.assetid: BD1BED02-F04E-11E7-8C3F-9A214CF093AE
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

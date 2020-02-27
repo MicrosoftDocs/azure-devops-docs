@@ -3,14 +3,12 @@ title: Change app access policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change application access policies for your organization, so you don't have to enter user credentials multiple times
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2019
+ms.date: 02/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -31,7 +29,7 @@ You can change your application access policies for your organization in Azure D
 * [Personal access tokens](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
    * Accessing specific resources or activities, like builds or work items
-   * Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
+   * Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
    * Accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md)
 
 By default, your organization allows access for all authentication methods.
