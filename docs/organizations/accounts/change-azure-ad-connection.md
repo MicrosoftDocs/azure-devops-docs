@@ -24,7 +24,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 Before you switch your organization directory, make sure the following is true:
 - You're in the Project Collection Administrator group (in Organization settings) for the organization 
-- You're a member or a guest in the source Azure AD and in the destination Azure AD.
+- You're a member or a guest in the source Azure AD and in the destination Azure AD
 
 ## Change the Azure AD connection
 
