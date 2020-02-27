@@ -32,6 +32,7 @@ The task works with two service connection types: **Azure Resource Manager** and
 <tr><td><code>azureSubscriptionEndpoint</code><br/>Azure subscription</td><td>(Required) Name of the Azure Service Connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>Resource group</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>Kubernetes cluster</td><td>(Required) Name of the AKS cluster.</td></tr>
+<tr><td><code>useClusterAdmin</code><br/>Use cluster admin credentials</td><td>(Optional) Use cluster administrator credentials instead of default cluster user credentials. This will ignore role based access control.</td></tr>
 <tr><td><code>namespace</code><br/>Namespace</td><td>(Optional) The namespace on which the kubectl commands are to be run. If unspecified, the default namespace is used.</td></tr>
 </table>
 
@@ -43,6 +44,7 @@ variables:
     azureContainerRegistry: contoso.azurecr.io
     azureResourceGroup: Contoso
     kubernetesCluster: Contoso
+    useClusterAdmin: false
 
 steps:
 - task: Kubernetes@1
@@ -52,6 +54,7 @@ steps:
     azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
     azureResourceGroup: $(azureResourceGroup)
     kubernetesCluster: $(kubernetesCluster)
+    useClusterAdmin: $(useClusterAdmin)
 ```
 
 ### Kubernetes Service Connection
