@@ -4,7 +4,7 @@ description: Deploy, configure, update your Kubernetes cluster in Azure Containe
 ms.topic: reference
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.author: atulmal
-ms.date: 02/12/2019
+ms.date: 28/02/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -219,6 +219,12 @@ This YAML example demonstrates the **upgrade** command:
 ```
 
 ::: moniker-end
+
+## Troubleshooting
+
+### HelmDeploy task throws error 'unknown flag: --wait' while running 'helm init --wait --client-only' on Helm 3.0.2 version.
+
+There are some breaking changes between Helm 2 and Helm 3. One of them includes removal of tiller, and hence `helm init` command is no longer supported. Remove command: init when you use Helm 3.0+ versions.
 
 ## Open source
 
