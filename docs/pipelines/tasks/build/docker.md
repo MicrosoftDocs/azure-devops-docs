@@ -168,7 +168,7 @@ Docker task configured with buildAndPush command ignores the arguments passed si
 
 You can create a Docker registry service connection using your Azure SPN credentials. Choose the Others from Registry type and provide the details as follows:
 
-```tex
+```
 Docker Registry:    Your container registry URL (eg. https://myacr.azurecr.io)
 Docker ID:          Service principal client ID
 Password:           Service principal key
