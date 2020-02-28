@@ -16,12 +16,13 @@ Runtime parameters let you have more control over what values can be passed to a
 
 You can specify runtime parameters in templates and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values.
 
-### Passing parameters
+The 
+
+## Passing parameters
 
 Parameters must contain a name and data type. This pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
 
 ```yaml
-# File: azure-pipeline.yml
 parameters:
 - name: image
   displayName: Pool Image
@@ -50,3 +51,64 @@ When the pipeline runs, you can select the `image`.
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
+
+## Use conditionals with parameters
+
+You can also use parameters as part of conditional logic. This pipeline only runs a step when the boolean parameter `test` is true. 
+
+```yaml
+parameters:
+- name: image
+  displayName: Pool Image
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+- name: test
+  displayName: Run Tests?
+  type: boolean
+  default: false
+
+trigger: none
+
+jobs:
+- job: build
+  displayName: Build and Test
+  pool: 
+    vmImage: ${{ parameters.image }}
+  steps:
+  - script: echo building $(Build.BuildNumber)
+  - ${{ if eq(parameters.test, true) }}:
+    - script: echo "Running all the tests"
+```
+
+### Use parameters to set what configuration is used
+
+```yaml
+parameters:
+- name: configs
+  type: string
+  default: 'x86,x64'
+
+jobs:
+- ${{ if contains(parameters.configs, 'x86') }}:
+  - job: x86
+    steps:
+    - script: echo Building x86...
+- ${{ if contains(parameters.configs, 'x64') }}:
+  - job: x64
+    steps:
+    - script: echo Building x64...
+- ${{ if contains(parameters.configs, 'arm') }}:
+  - job: arm
+    steps:
+    - script: echo Building arm...
+```
+
+## Parameter data types
+
+[!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
