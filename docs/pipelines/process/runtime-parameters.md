@@ -45,14 +45,18 @@ jobs:
     - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you can select the `image`. 
+When the pipeline runs, you select the Pool Image. If you do not make a selection, the default option, `ubuntu-latest` gets used. 
 
 > [!div class="mx-imgBorder"]
 > ![runtime parameters](media/runtime-param-ui.png)
 
 ## Use conditionals with parameters
 
-You can also use parameters as part of conditional logic. This pipeline only runs a step when the boolean parameter `test` is true. 
+You can also use parameters as part of conditional logic. With conditionals, part of a YAML will only run if it meets the `if` criteria. 
+
+### Use parameters to determine what steps run
+
+This pipeline only runs a step when the boolean parameter `test` is true. 
 
 ```yaml
 parameters:
@@ -113,7 +117,7 @@ jobs:
 
 ### Selectively exclude a stage
 
-You can also use parameters to set which stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true. 
+You can also use parameters to set whether a stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true. 
 
 ```yaml
 parameters:
