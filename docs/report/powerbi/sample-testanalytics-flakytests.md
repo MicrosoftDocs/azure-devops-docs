@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops'
 ms.date: 01/30/2020
 ---
 
-# Flaky tests
+# Flaky tests sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
