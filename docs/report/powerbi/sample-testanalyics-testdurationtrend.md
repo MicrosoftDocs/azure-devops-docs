@@ -14,7 +14,7 @@ monikerRange: '>= azure-devops'
 ms.date: 01/30/2020
 ---
 
-# Failed tests
+# Test duration trend sample report
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
