@@ -98,19 +98,19 @@
       - name: Task duration trend
         href: sample-pipelines-task-duration-trend.md
       - name: Test summary
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalytics-testsummary.md
       - name: Test summary trend
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testsummarytrend.md
       - name: Failed tests
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalytics-failedtests.md
       - name: Flaky tests
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalytics-flakytests.md
       - name: Test duration
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalytics-testduration.md
       - name: Test duration trend
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalyics-testdurationtrend.md
       - name: Pass rate trend of test
-        href: sample-pipelines-task-duration-trend.md
+        href: sample-testanalytics-passratetrendoftest.md
     - name: Test Plans sample reports
       items:
       - name: Progress status
