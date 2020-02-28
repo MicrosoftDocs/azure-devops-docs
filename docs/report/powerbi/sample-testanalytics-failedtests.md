@@ -249,7 +249,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/failedtests-reports1.png)
+> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/failedtests-report1.png)
 
 
 ## Additional queries
