@@ -2,7 +2,7 @@
 ms.topic: include
 ---
 
-### Preview fully parsed YAML document without running the pipeline
+### Preview fully parsed YAML document without committing or running the pipeline
 
 We've added a **preview but don't run** mode for YAML pipelines. Now, you can try out a YAML pipeline without committing it to a repo or running it. Given an existing pipeline and an optional new YAML payload, this new API will give you back the full YAML pipeline. In future updates, this API will be used in a new editor feature. 
 
