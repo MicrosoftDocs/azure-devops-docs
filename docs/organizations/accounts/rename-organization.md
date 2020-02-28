@@ -8,7 +8,7 @@ ms.assetid: a69f3789-19e9-40c5-ade3-4e11435d452d
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 11/22/2019
+ms.date: 02/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -47,7 +47,7 @@ To change your organization URL, you need at least Basic access and organization
 
 Your organization is renamed.
 
-## Q: If I change the organization name, can I switch back? Is the toggle two way?
+## Q: If I change the organization URL, can I switch back?
 
 A: The organization URL setting is two-way toggle. You can turn on the new domain name URL. You can also turn off the new URL - then, you go back to using old URL format.  
 
