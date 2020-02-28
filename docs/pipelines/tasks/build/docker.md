@@ -6,7 +6,7 @@ ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 28/02/2020
+ms.date: 02/28/2020
 ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
 ---
@@ -19,9 +19,9 @@ Use this task in a build or release pipeline to build and push Docker images to 
 
 Following are the key benefits of using Docker task as compared to directly using docker client binary in script - 
 
-- **Integration with Docker registry service connection** - The task makes it easy to use a Docker registry service connection for connecting to any container registry. Once logged in, the user can author follow-up tasks to execute any tasks/scripts by leveraging the login already done by the Docker task. For example, you can use the Docker task to sign in to any Azure Container Registry and then use a subsequent task/script to build and push an image to this registry. 
+- **Integration with Docker registry service connection** - The task makes it easy to use a Docker registry service connection for connecting to any container registry. Once logged in, the user can author follow up tasks to execute any tasks/scripts by leveraging the login already done by the Docker task. For example, you can use the Docker task to sign in to any Azure Container Registry and then use a subsequent task/script to build and push an image to this registry. 
 
-- **Metadata added as labels** - The task adds traceability related metadata to the image in the form of the following labels -  
+- **Metadata added as labels** - The task adds traceability-related metadata to the image in the form of the following labels -  
   - com.azure.dev.image.build.repository.uri
   - com.azure.dev.image.build.repository.name
   - com.azure.dev.image.build.sourcebranchname
@@ -72,7 +72,7 @@ Following are the key benefits of using Docker task as compared to directly usin
 </table>
 
 ## Login
-Following YAML snippet showcases container registry log in using a Docker registry service connection - 
+Following YAML snippet showcases container registry login using a Docker registry service connection - 
 
 ```YAML
 - task: Docker@2
@@ -160,7 +160,7 @@ steps:
 
 ## Troubleshooting
 
-### Why does Docker task ignore arguments passed to buildAndPush command ?
+### Why does Docker task ignore arguments passed to buildAndPush command?
 
 Docker task configured with buildAndPush command ignores the arguments passed since they become ambiguous to the build and push commands that are run internally. You can split your command into separate build and push steps and pass the suitable arguments. See this [stackoverflow post](https://stackoverflow.com/questions/60287354/i-am-using-azure-devops-to-build-and-push-my-docker-image-how-can-i-pass-argume) for example.
 
