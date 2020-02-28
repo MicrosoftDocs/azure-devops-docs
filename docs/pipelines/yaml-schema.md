@@ -948,7 +948,7 @@ steps:
 
 You can use parameters in templates and pipelines. 
 
-# [Schema](#tab/schema)
+### [Schema](#tab/parameter-schema)
 
 The type and name fields are required when defining parameters. See all [parameter data types](process/runtime-parameters.md#parameter-data-types).
 
@@ -962,7 +962,7 @@ parameters:
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
-# [YAML Example](#tab/yaml-example)
+### [YAML Example](#tab/yaml-example)
 
 ```yaml
 # File: azure-pipelines.yml
@@ -990,7 +990,7 @@ jobs:
     - script: echo The image parameter is ${{ parameters.image }}```
 ```
 
-# [Template Example](#tab/template-example)
+### [Template Example](#tab/template-example)
 
 You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
