@@ -258,7 +258,7 @@ You can use the following additional queries to create different but similar rep
 
 ### Flaky tests for Release workflow, rather than Build workflow
 
-You may want to view the failed tests of a pipeline for **Release** workflow, instead of Build workflow.
+You may want to view the flaky tests of a pipeline for **Release** workflow, instead of Build workflow.
 
 #### [Power BI query](#tab/powerbi/)
 
