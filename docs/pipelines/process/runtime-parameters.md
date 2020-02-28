@@ -48,4 +48,5 @@ jobs:
 
 When the pipeline runs, you can select the `image`. 
 
-![runtime parameters](media/runtime-param-ui.png){ width=60% }
+> [!div class="mx-imgBorder"]
+> ![runtime parameters](media/runtime-param-ui.png)
