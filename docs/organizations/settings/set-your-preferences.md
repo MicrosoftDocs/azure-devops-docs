@@ -25,7 +25,7 @@ From your profile page, you can change your picture or other account preferences
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 > [!NOTE]
-> User interface themes aren't compatible with Microsoft Internet Explorer (IE). If you're using IE, this option won't appear.
+> User interface themes aren't compatible with Microsoft Internet Explorer (IE). If you're using IE, the option to change your user interface theme isn't available.
 
 ## Change profile settings  
 
