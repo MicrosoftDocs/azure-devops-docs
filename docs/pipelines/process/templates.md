@@ -16,7 +16,7 @@ If a template is used to include content, it functions like an include directive
 
 ## Parameters
 
-You can specify parameters and their data types in a template and pass those parameters to a pipeline. The `parameters` section defines what parameters are available. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the pipeline.
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). 
 
 ### Passing parameters
 
@@ -42,6 +42,25 @@ extends:
     template: simple-param.yml
     parameters:
         yesNo: false # set to a non-boolean value to have the build fail
+```
+
+#### Parameters to select a template at runtime
+
+You can call different templates from a pipeline YAML depending on a condition. In this example, the `experimental.yml` YAML will run when the parameter `experimentalTemplate` is true. 
+
+```yml
+#azure-pipeline.yml
+parameters:
+- name: experimentalTemplate
+  displayName: 'Use experimental build process?'
+  type: boolean
+  default: false
+
+steps:
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
 ```
 
 ### Parameter data types
