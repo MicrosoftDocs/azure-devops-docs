@@ -97,6 +97,7 @@
         "reference/mapping/**": "<= azure-devops-2019"
       },
       "ms.author": {
+        "artifacts/**": "rabououn",
         "pipelines/**": "sdanie",
         "pipelines/agents/**": "sdanie",
         "pipelines/apps/**": "jukullam",
@@ -124,6 +125,7 @@
 
       },
       "author": {
+        "artifacts/**": "ramiMSFT",
         "pipelines/**": "steved0x",
         "pipelines/agents/**": "steved0x",
         "pipelines/apps/**": "juliakm",
