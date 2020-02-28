@@ -193,7 +193,7 @@ After closing the Advanced Editor and while remaining in the Power Query Editor,
 
 The query doesn't return all the columns in the format in which you can directly consume them in Power BI reports. Therefore, you can change the column type as shown.
 
-1. Change the type of column **TotalCount**, **PassedCount*, **FailedCount**, **NotExecutedCount**, **NotImpactedCount** and **FlakyCount** to **Whole Number**.
+1. Change the type of column **TotalCount**, **PassedCount**, **FailedCount**, **NotExecutedCount**, **NotImpactedCount** and **FlakyCount** to **Whole Number**.
 
     > [!div class="mx-imgBorder"] 
     > ![Power BI + OData - change column type](media/odatapowerbi-testanalytics/failedtests-changetype1.png)
