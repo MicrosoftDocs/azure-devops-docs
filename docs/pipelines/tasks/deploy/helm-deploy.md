@@ -4,7 +4,7 @@ description: Deploy, configure, update your Kubernetes cluster in Azure Containe
 ms.topic: reference
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
 ms.author: atulmal
-ms.date: 28/02/2020
+ms.date: 02/28/2020
 monikerRange: '> tfs-2018'
 ---
 
