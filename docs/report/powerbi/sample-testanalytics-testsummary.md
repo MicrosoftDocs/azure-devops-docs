@@ -113,12 +113,6 @@ The following table describes each part of the query.
 <tr><td><code>)</code></td>
 <td>Close filter()</td>
 <tr>
-<tr><td><code>/groupby(</code></td>
-<td>Start groupby()</td>
-<tr>
-<tr><td><code>(CompletedOn/Date),</code></td>
-<td>Group by the date of completion of test run</td>
-<tr>
 <tr><td><code>aggregate(</code></td>
 <td>Start aggregate. For all the test runs matching the above filter criteria:</td>
 <tr>
@@ -128,26 +122,17 @@ The following table describes each part of the query.
 <tr><td><code>ResultPassCount with sum as ResultPassCount,</code></td>
 <td>Count the total number of passed test runs as ResultPassCount</td>
 <tr>
+<tr><td><code>ResultFailCount with sum as ResultFailCount</code></td>
+<td>Count the total number of failed test runs as ResultFailCount</td>
+<tr>
 <tr><td><code>ResultNotExecutedCount with sum as ResultNotExecutedCount,</code></td>
 <td>Count the total number of not executed test runs as ResultNotExecutedCount</td>
 <tr>
 <tr><td><code>ResultNotImpactedCount with sum as ResultNotImpactedCount</code></td>
 <td>Count the total number of not impacted test runs as ResultNotImpactedCount</td>
 <tr>
-<tr><td><code>ResultFailCount with sum as ResultFailCount</code></td>
-<td>Count the total number of failed test runs as ResultFailCount</td>
-<tr>
-<tr><td><code>))</code></td>
-<td>Close aggregate() and groupby()</td>
-<tr>
-<tr><td><code>/compute(</code></td>
-<td>Start compute()</td>
-<tr>
-<tr><td><code>iif(ResultCount gt ResultNotExecutedCount, ((ResultPassCount add ResultNotImpactedCount) div cast(ResultCount sub ResultNotExecutedCount, Edm.Decimal)) mul 100, 0) as PassRate</code></td>
-<td>For all the days, calculate Pass rate</td>
-<tr>
 <tr><td><code>)</code></td>
-<td>Close compute()</td>
+<td>Close aggregate()</td>
 <tr>
 </tbody>
 </table>
@@ -183,7 +168,7 @@ Power BI shows you the fields you can report on.
 > The example below assumes that no one renamed any columns. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/testsummary-fields1.png.png)
+> ![Sample - Test Summary - Fields](media/odatapowerbi-testanalytics/testsummary-fields1.png)
 
 For a simple report, do the following steps:
 
