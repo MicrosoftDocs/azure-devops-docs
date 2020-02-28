@@ -14,13 +14,11 @@ Runtime parameters let you have more control over what values can be passed to a
 - Control parameter types, ranges allowed, and defaults
 - Dynamically select jobs and stages with template expressions
 
-You can specify runtime parameters in templates and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values.
+You can specify runtime parameters in templates and in the pipeline. Parameters have data types such as number and string, and they can be restricted to a subset of values. The `parameters` section in a YAML defines what parameters are available. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Parameters must contain a name and data type. 
 
-The 
+## Use parameters in pipelines
 
-## Passing parameters
-
-Parameters must contain a name and data type. This pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
+Set runtime parameters at the beginning of a YAML. This example pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
 
 ```yaml
 parameters:
@@ -88,11 +86,15 @@ jobs:
 
 ### Use parameters to set what configuration is used
 
+You can also use parameters to set which job runs. In this example, a different job runs depending on the value of `config`. 
+
 ```yaml
 parameters:
 - name: configs
   type: string
   default: 'x86,x64'
+
+trigger: none
 
 jobs:
 - ${{ if contains(parameters.configs, 'x86') }}:
@@ -109,6 +111,54 @@ jobs:
     - script: echo Building arm...
 ```
 
+### Selectively exclude a stage
+
+You can also use parameters to set which stage runs. In this example, the Performance Test stage runs if the parameter `runPerfTests` is true. 
+
+```yaml
+parameters:
+- name: runPerfTests
+  type: boolean
+  default: false
+
+trigger: none
+
+stages:
+- stage: Build
+  displayName: Build
+  jobs:
+  - job: Build
+    steps:
+      - script: echo running Build
+
+
+- stage: UnitTest
+  displayName: Unit Test
+  dependsOn: Build
+  jobs:
+  - job: UnitTest
+    steps:
+      - script: echo running UnitTest
+
+
+- ${{ if eq(parameters.runPerfTests, true) }}:
+  - stage: PerfTest
+    displayName: Performance Test
+    dependsOn: Build
+    jobs:
+    - job: PerfTest
+      steps:
+        - script: echo running PerfTest
+
+
+- stage: Deploy
+  displayName: Deploy
+  dependsOn: UnitTest
+  jobs:
+  - job: Deploy
+    steps:
+      - script: echo running UnitTest
+```
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
