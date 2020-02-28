@@ -8,18 +8,18 @@ ms.assetid: 02cb8774-6d1d-4f15-8818-b56541033b1f
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/10/2019
+ms.date: 02/27/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Manage paid access for users
+# Manage paid access for users
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 > [!NOTE]
 > We’ve recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.
 
-In this quickstart, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
+In this article, learn how to manage paid access to [Azure Boards](https://azure.microsoft.com/services/devops/boards/), [Azure Repos](https://azure.microsoft.com/services/devops/repos/) and [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/).
 
 Visual Studio subscribers get access included with their subscription, and their subscription is detected when they sign in to Azure DevOps for the first time.
 
@@ -91,7 +91,25 @@ To find out if you have users who are no longer using Azure DevOps, do the follo
 
 ## Pay for a user once across multiple organizations
 
-If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each Basic or Basic + Test Plan user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md#multi-org-billing).
+If you have more than one Azure DevOps organization, you can turn on multi-org billing and pay for each **Basic** or **Basic + Test Plan** user once, for all organizations under the same billing Azure subscription. For more details, see the [multi-org billing FAQ](billing-faq.md#multi-org-billing). Complete the following steps.
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Billing**.
+
+   ![Select Billing from Organization settings](media/shared/select-billing-organization-settings.png)
+
+4. Select **Configure user billing**.
+   
+   ![Select Configure user billing](media/buy-more-basic-access/select-configure-user-billing.png)
+
+5. Select **Multi-organization**, and then select **Save**.
+
+   ![Select Multi-organization](media/buy-more-basic-access/select-multi-organization-billing.png)
 
 ## Next steps
 
