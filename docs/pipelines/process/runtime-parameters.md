@@ -18,22 +18,34 @@ You can specify runtime parameters in templates and in the pipeline. Parameters 
 
 ### Passing parameters
 
-Parameters must contain a name and data type. This pipeline accepts the boolean value of yes or no and then outputs the value. The `trigger` is set to none so that you can select the value of the variable when running your pipeline. 
+Parameters must contain a name and data type. This pipeline accepts the value of `image` and then outputs the value in the job. The `trigger` is set to none so that you can select the value of `image` when you manually trigger your pipeline to run. 
 
 ```yaml
 # File: azure-pipeline.yml
 parameters:
-- name: test # name of the parameter; required
-  displayName: Test?
-  type: boolean # data type of the parameter; required
-  default: false
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
 
 trigger: none
 
-steps:
-    - script: echo ${{ parameters.yesNo }}
+jobs:
+- job: build
+  displayName: build
+  pool: 
+    vmImage: ${{ parameters.image }}
+  steps:
+    - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
-When the pipeline runs, you can set the `VmImage`. 
+When the pipeline runs, you can select the `image`. 
 
 ![runtime parameters](media/runtime-param-ui.png)
