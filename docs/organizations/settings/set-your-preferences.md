@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/20/2019
+ms.date: 02/28/2020
 ---
 
 # Set user preferences
@@ -23,6 +23,9 @@ From your profile page, you can change your picture or other account preferences
 - Change your preferred email
 - Change your directory
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
+
+> [!NOTE]
+> User interface themes aren't compatible with Microsoft Internet Explorer (IE). If you're using IE, this option won't appear.
 
 ## Change profile settings  
 
