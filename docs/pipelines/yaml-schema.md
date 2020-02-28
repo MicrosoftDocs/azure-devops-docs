@@ -966,7 +966,7 @@ And in the extended template:
 ```yaml
 parameters: { string: any }   # expected parameters
 ```
-See all [parameter data types](process/templates.md#parameter-data-types). 
+See all [parameter data types](process/runtime-parameters.md#parameter-data-types).
 
 # [Example](#tab/example)
 

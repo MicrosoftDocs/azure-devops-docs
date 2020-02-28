@@ -46,21 +46,7 @@ extends:
 
 ### Parameter data types
 
-| Data type | Notes |
-|-----------|-------|
-| `string` | string
-| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
-| `boolean` | `true` or `false`
-| `object` | any YAML structure
-| `step` | a single step
-| `stepList` | sequence of steps
-| `job` | a single job
-| `jobList` | sequence of jobs
-| `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment jobs
-| `stage` | a single stage
-| `stageList` | sequence of stages
-
+[!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
 ## Extend from a template
 
