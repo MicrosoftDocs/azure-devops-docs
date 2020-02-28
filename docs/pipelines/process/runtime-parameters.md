@@ -48,4 +48,4 @@ jobs:
 
 When the pipeline runs, you can select the `image`. 
 
-![runtime parameters](media/runtime-param-ui.png)
+![runtime parameters](media/runtime-param-ui.png){ width=60% }
