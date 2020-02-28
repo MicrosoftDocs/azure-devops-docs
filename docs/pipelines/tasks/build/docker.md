@@ -6,7 +6,7 @@ ms.assetid: E28912F1-0114-4464-802A-A3A35437FD16
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 02/12/2019
+ms.date: 28/02/2020
 ms.custom: fasttrack-edit
 monikerRange: '>= tfs-2018'
 ---
@@ -157,6 +157,22 @@ steps:
 
 > [!NOTE]
 > The arguments input is evaluated for all commands except buildAndPush. As buildAndPush is a convenience command (build followed by push), arguments input is ignored for this command.
+
+## Troubleshooting
+
+### Why does Docker task ignore arguments passed to buildAndPush command ?
+
+Docker task configured with buildAndPush command ignores the arguments passed since they become ambiguous to the build and push commands that are run internally. You can split your command into separate build and push steps and pass the suitable arguments. See this [stackoverflow post](https://stackoverflow.com/questions/60287354/i-am-using-azure-devops-to-build-and-push-my-docker-image-how-can-i-pass-argume) for example.
+
+### DockerV2 only supports Docker registry service connection and not support ARM service connection. How can I use an existing Azure service principal (SPN) for authentication in Docker task?
+
+You can create a Docker registry service connection using your Azure SPN credentials. Choose the Others from Registry type and provide the details as follows:
+
+```tex
+Docker Registry:    Your container registry URL (eg. https://myacr.azurecr.io)
+Docker ID:          Service principal client ID
+Password:           Service principal key
+```
 
 ## Open source
 
