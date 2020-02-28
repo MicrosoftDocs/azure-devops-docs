@@ -2,6 +2,7 @@
 
 A: You can use:
 
+* Visual Studio 2019
 * Visual Studio 2017
 * Visual Studio 2015
 * Visual Studio 2013
