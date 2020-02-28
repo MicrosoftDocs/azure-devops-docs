@@ -18,7 +18,7 @@ ms.date: 01/30/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
-This article shows you how to create a report that shows day wise trend of number of total failed tests and  pass rate of a given test of a pipeline.
+This article shows you how to create a report that shows day wise trend of number of times a test passed and failed, along with its pass rate of any given test of a pipeline.
 
 [!INCLUDE [temp](includes/preview-note.md)]
 
@@ -248,7 +248,7 @@ For a simple report, do the following steps:
 Your report should look like this. 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/passratetrendoftest-reports.png)
+> ![Sample - Test Summary - Report](media/odatapowerbi-testanalytics/passratetrendoftest-report.png)
 
 
 
