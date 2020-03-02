@@ -9,20 +9,23 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 12/20/2019
+ms.date: 03/02/2020
 ---
 
 # Set user preferences
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
-From your profile page, you can change your picture or other account preferences. In this article, learn how to complete the following tasks:
+From your profile page, you can change your information and  account preferences. In this article, learn how to complete the following tasks:
 
 - Change your picture
 - Change your display name
 - Change your preferred email
 - Change your directory
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
+
+> [!IMPORTANT]
+> You can't change themes in Azure DevOps if you're using Internet Explorer (IE).
 
 ## Change profile settings  
 
@@ -61,7 +64,11 @@ From your profile page, you can change your picture or other account preferences
 
    ![Select your profile menu, and then My profile](media/select-profile-my-profile-2019.png) 
 
-2. From the **General** tab, you can change your profile picture, change your display name, contact information, and whether or not borders appear on work item forms for fields.
+2. From the **General** tab, you can change the following information:
+   - profile picture
+   - display name
+   - contact information
+   - whether borders appear for fields on work item forms
 
 	![General user settings](media/general-user-settings-2019.png)
 
@@ -91,7 +98,12 @@ From your profile page, you can change your picture or other account preferences
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Edit ](../../media/settings/edit-profile-about-dialog.png)
 
-4. From the **Preferences** page, you can change your preferred language, date and time pattern, time zone, UI theme, and whether or not borders appear on work item forms for fields.
+4. From the **Preferences** page, you can change the following information:
+    - preferred language
+    - date and time pattern
+    - time zone
+    - UI theme
+    - whether borders appear for fields on work item forms
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
