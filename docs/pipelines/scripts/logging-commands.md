@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 12/04/2019
+ms.date: 03/02/2020
 ---
 
 # Logging commands
@@ -220,7 +220,8 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 #### Properties
 
 * `variable` = variable name (Required)
-* `issecret` = `true` (Optional)
+* `issecret` = boolean (Optional, defaults to false)
+* `isoutput` = boolean (Optional, defaults to false)
    
 #### Examples
 
@@ -231,6 +232,7 @@ Set the variables:
 ```bash
 echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
 echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
 ```
 
 Read the variables:
@@ -239,6 +241,7 @@ Read the variables:
 echo "Non-secrets automatically mapped in, sauce is $SAUCE"
 echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
 echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+echo "Future jobs can also see $OUTPUTSAUCE"
 ```
 
 # [PowerShell](#tab/powershell)
@@ -248,6 +251,7 @@ Set the variables:
 ```ps
 Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
 Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
 ```
 
 Read the variables:
@@ -256,6 +260,7 @@ Read the variables:
 Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
 Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
 Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
 ```
 
 ---
@@ -266,6 +271,7 @@ Console output:
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 ```
 
 ### SetEndpoint: Modify a service connection field
