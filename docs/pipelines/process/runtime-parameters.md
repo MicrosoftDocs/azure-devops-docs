@@ -1,5 +1,5 @@
 ---
-title: Runtime and type-safe parameters
+title: Use runtime and type-safe parameters
 ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
