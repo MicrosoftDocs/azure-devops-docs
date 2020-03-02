@@ -10,7 +10,7 @@ You can use the following keyboard shortcuts from the web portal.
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/includes/media/keyboard-shortcuts/global-shortcuts.png" alt="Global shortcuts"/></td>
+<td><img src="/azure/devops/includes/keyboard-shortcuts/media/global-shortcuts.png" alt="Global shortcuts"/></td>
 <td>
 <br/>
 <br/>
