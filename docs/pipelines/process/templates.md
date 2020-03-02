@@ -16,7 +16,7 @@ If a template is used to include content, it functions like an include directive
 
 ## Parameters
 
-You can specify parameters and their data types in a template and pass those parameters to a pipeline. The `parameters` section defines what parameters are available. Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the pipeline.
+You can specify parameters and their data types in a template and pass those parameters to a pipeline. You can also [use parameters outside of templates](runtime-parameters.md). 
 
 ### Passing parameters
 
@@ -44,23 +44,28 @@ extends:
         yesNo: false # set to a non-boolean value to have the build fail
 ```
 
+#### Parameters to select a template at runtime
+
+You can call different templates from a pipeline YAML depending on a condition. In this example, the `experimental.yml` YAML will run when the parameter `experimentalTemplate` is true. 
+
+```yml
+#azure-pipeline.yml
+parameters:
+- name: experimentalTemplate
+  displayName: 'Use experimental build process?'
+  type: boolean
+  default: false
+
+steps:
+- ${{ if eq(parameters.experimentalTemplate, true) }}:
+  - template: experimental.yml
+- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+  - template: stable.yml
+```
+
 ### Parameter data types
 
-| Data type | Notes |
-|-----------|-------|
-| `string` | string
-| `number` | may be restricted to `values:`, otherwise any number-like string is accepted
-| `boolean` | `true` or `false`
-| `object` | any YAML structure
-| `step` | a single step
-| `stepList` | sequence of steps
-| `job` | a single job
-| `jobList` | sequence of jobs
-| `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment jobs
-| `stage` | a single stage
-| `stageList` | sequence of stages
-
+[!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
 
 ## Extend from a template
 
@@ -449,8 +454,8 @@ Only the template files are used.
 Once the templates are fully expanded, the final pipeline runs as if it were defined entirely in the source repo.
 This means that you can't use scripts from the template repo in your pipeline.
 
-If you want to use a particular, fixed version of the template, be sure to pin to a ref.
-Refs are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
+If you want to use a particular, fixed version of the template, be sure to pin to a `ref`.
+The `refs` are either branches (`refs/heads/<name>`) or tags (`refs/tags/<name>`).
 If you want to pin a specific commit, first create a tag pointing to that commit, then pin to that tag.
 
 ## Template expressions
