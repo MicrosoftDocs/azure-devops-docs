@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/includes/keyboard-shortcuts/media/kanban-board-shortcuts.png" alt="Work items page shortcuts"/></td>
+<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Work items page shortcuts"/></td>
 <td>
 <strong>Kanban Board</strong><br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
