@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 02/18/2020
+ms.date: 03/02/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
@@ -72,7 +72,8 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
     - Filtering
     - Order tests cases
     - See linked items: test suites and plans
-    - Column options & sorting on columns	
+    - Column options & sorting on columns
+    - See linked items: requirements and bugs
 - Execute Tab:
     - Execute test points against a web or desktop application 
     - Bulk execution or mark outcome
@@ -89,8 +90,6 @@ For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microso
 
 - Test suites tree:
 	- Show all test cases and points from child suites	
-- Define tab	
-	- See linked items: requirements and bugs
 - General:
 	- Enable [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops)
 
