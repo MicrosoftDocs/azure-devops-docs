@@ -13,7 +13,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/includes/keyboard-shortcuts/media/wiki-manage.png" alt="&quot;Manage wiki keyboard shortcuts"/></td>
+<td><img src="/azure/devops/media/keyboard-shortcuts/wiki-manage.png" alt="&quot;Manage wiki keyboard shortcuts"/></td>
 <td>
 <strong>Wiki (manage)</strong><br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page<br/>
@@ -26,7 +26,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 </td>
 </tr>
 <tr>
-<td><img src="/azure/devops/includes/keyboard-shortcuts/media/wiki-edit.png" alt="&quot;Edit wiki page keyboard shortcuts"/></td>
+<td><img src="/azure/devops/media/keyboard-shortcuts/wiki-edit.png" alt="&quot;Edit wiki page keyboard shortcuts"/></td>
 <td>
 <strong>Wiki edit</strong><br/><br/>
 
