@@ -25,7 +25,7 @@ From your profile page, you can change your information and  account preferences
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 > [!IMPORTANT]
-> You can't change themes in Azure DevOps if you're using Internet Explorer (IE).
+> You can't change your user interface theme in Azure DevOps if you're using Internet Explorer (IE).
 
 ## Change profile settings  
 
