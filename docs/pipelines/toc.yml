@@ -99,6 +99,8 @@
       displayName: secrets, expressions, queue time, expansion
     - name: Use predefined variables
       href: build/variables.md
+    - name: Use runtime parameters
+      href: process/runtime-parameters.md
     - name: Use classic RM variables
       href: release/variables.md
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
