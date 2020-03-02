@@ -12,7 +12,7 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
+<td><img src="/azure/devops/includes/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
 </td>
 <td>
 <br/>
@@ -40,7 +40,7 @@ You can use the following keyboard shortcuts when working from a **Work**>**Back
 <tbody valign="top">
 <tr>
 <td>
-<img src="/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
+<img src="/azure/devops/includes/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png" alt="Work Backlogs page shortcuts"/>
 </td>
 <td>
 <br/><strong>Backlogs</strong><br/><br/>

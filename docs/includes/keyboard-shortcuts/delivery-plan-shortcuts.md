@@ -12,7 +12,7 @@ You can use the following keyboard shortcuts when [interacting with a delivery p
 > The following shortcuts are available from the web portal for TFS 2017.2 and later versions. Type **?** to access  Global and service-specific shortcuts.
 ::: moniker-end
 
-<img src="/azure/devops/media/keyboard-shortcuts/delivery-plans.png" alt="Delivery plan keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
+<img src="/azure/devops/includes/media/keyboard-shortcuts/delivery-plans.png" alt="Delivery plan keyboard shortcuts" style="border: 1px solid #C3C3C3;" />  
 
 
 <table width="100%">

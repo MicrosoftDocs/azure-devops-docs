@@ -12,7 +12,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 <table width="70%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/work-item-form.png" alt="Work item form keyboard shortcuts"/></td>
+<td><img src="/azure/devops/includes/media/keyboard-shortcuts/work-item-form.png" alt="Work item form keyboard shortcuts"/></td>
 <td>
 <strong>Work Item Form</strong><br/> 
 <strong>Alt+i</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>
