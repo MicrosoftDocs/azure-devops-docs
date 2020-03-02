@@ -1,5 +1,5 @@
 ---
-title: Web portal Team Explorer keyboard shortcuts 
+title: Keyboard shortcuts for web portal and Team Explorer
 titleSuffix: Azure DevOps
 description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
 ms.custom: Navigation
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.date: 01/18/2017
+ms.date: 03/02/2020 
 monikerRange: '>= tfs-2013'
 ---
 
@@ -25,25 +25,66 @@ For specific guidance on navigating within the web portal, see [Web portal navig
 
 You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
 
-<table width="70%">
-<tbody valign="top">
-<tr>
-<td width="50%">
-<p><strong>Navigate</strong></p> 
+:::row:::
+   :::column span="3":::
+      **Navigate**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Ctrl+Alt,a**  
+      **Ctrl+Alt,h**  
+      **Ctrl+Alt,s**  
+      **Ctrl+Alt**,![Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
+      **Ctrl+Alt**![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)  
+   :::column-end:::
+   :::column span="2":::
+      Move focus to !admin link[](../../boards/media/icons/gear_icon.png) admin link  
+      Move focus to ![help](../../boards/media/icons/help.png) help link  
+      Move focus to search box   
+      Move focus to next section  
+      Move focus to previous section  
+   :::column-end:::
+:::row-end:::
 
-<strong>Ctrl+Alt,a</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to <img src="../../boards/media/icons/gear_icon.png" alt="admin link"/> admin link<br/><strong>Ctrl+Alt,h</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to <img src="../../boards/media/icons/help.png" alt="help link"/> help link<br/><strong>Ctrl+Alt,s</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to search box<br/><br/>
-<strong>Ctrl+Alt,</strong><img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to next section<br/><strong>Ctrl+Alt,</strong><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;Move focus to previous section<br/>
-</td>
-<td width="50%">
 
-<p><strong>Navigate within lists</strong></p>
-<strong>Tab</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus<br/><img src="../../boards/media/icons/Arrow_Next.png" alt="Left/right arrow"/> <img src="/azure/devops/boards/media/icons/Arrow_Previous.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/><img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Ctrl+Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to top of list<br/><strong>Ctrl+End</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to bottom of list<br/>
-<strong>Ctrl+</strong><img src="../../boards/media/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/media/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;Move item up/down within list<br/><strong>Shift</strong><img src="../../boards/media/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/media/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight consecutive items<br/><strong>Menu</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open context menu<br/><strong>Esc</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dismiss context menu<br/> 
-<img src="../../boards/media/icons/Arrow_Next.png" alt="Left/right arrow"/> <img src="../../boards/media/icons/Arrow_Previous.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus left/right<br/><img src="../../boards/media/icons/Arrow_Up.png" alt="Up/Down arrow"/> <img src="../../boards/media/icons/Arrow_Down.png" alt=" "/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus up/down<br/><strong>Enter</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose selected menu item<br/>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="3":::
+      **Navigate within lists**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      **Tab**  
+      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)
+      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)   
+      **Ctrl+Home**  
+      **Ctrl+End** 
+      **Ctrl+** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png) 
+      **Shift** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)
+      **Menu**  
+      **Esc** 
+      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)
+      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)
+      **Enter** 
+   :::column-end:::
+   :::column span="2":::
+       Move focus  
+       Move focus left/right  
+       Move focus up/down 
+       Move focus to top of list  
+       Move focus to bottom of list  
+       Move item up/down within list 
+       Highlight consecutive items
+       Open context menu  
+       Dismiss context menu  
+       Move focus left/right  
+       Move focus up/down  
+       Choose selected menu item  
+   :::column-end:::
+:::row-end:::
+
+
 
 ::: moniker range=">= tfs-2015"
 
