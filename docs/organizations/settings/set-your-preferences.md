@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/28/2020
+ms.date: 03/02/2020
 ---
 
 # Set user preferences
@@ -25,7 +25,7 @@ From your profile page, you can change your picture or other account preferences
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
 
 > [!NOTE]
-> User interface themes aren't compatible with Microsoft Internet Explorer (IE). If you're using IE, the option to change your user interface theme isn't available.
+> You can't change themes in Azure DevOps if you're using Internet Explorer (IE).
 
 ## Change profile settings  
 
