@@ -27,13 +27,13 @@ You can use the following keyboard shortcuts when [interacting with a work item 
       ![Work item form keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/work-item-form-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/> 
-      **Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>  
-      **Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to discussion<br/>  
-      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>  
-      **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title<br/>  
-      **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)<br/>  
-      **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)<br/>  
+      <br/><br/><br/> 
+      **Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me   
+      **Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to discussion   
+      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes   
+      **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title   
+      **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)   
+      **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)   
    :::column-end:::
 :::row-end:::
  
@@ -46,13 +46,13 @@ You can use the following keyboard shortcuts when [interacting with a work item 
       ![Work item form keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/work-item-form.png)  
    :::column-end:::
    :::column span="2":::
-      <br/> 
-      **Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me<br/><br/>  
-      **Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to discussion<br/>  
-      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes<br/>  
-      **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title<br/>  
-      **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)<br/>  
-      **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)<br/>  
+      <br/><br/><br/> 
+      **Alt+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assign work item to me   
+      **Ctrl+Shift+d**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to discussion   
+      **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes   
+      **Shift+Alt+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy work item title   
+      **Ctrl+Shift+,**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to left tab (page)   
+      **Ctrl+Shift+.**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move to right tab (page)   
    :::column-end:::
 :::row-end:::
  

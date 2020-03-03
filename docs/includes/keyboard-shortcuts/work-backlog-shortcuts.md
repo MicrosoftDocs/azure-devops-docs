@@ -18,16 +18,14 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
       ![Boards>Backlogs page shortcuts](/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      **Backlogs**<br/><br/>
-      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
-      <br/>
-      &nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog<br/>
-      &nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration<br/>
-      &nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration<br/>
-<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ins**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child<br/>
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>  
+      <br/><br/>
+      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top  
+      &nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog  
+      &nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration  
+      &nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ins**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f+i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results    
    :::column-end:::
 :::row-end:::
 
@@ -41,15 +39,13 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
       ![Boards>Backlogs page shortcuts](/azure/devops/media/keyboard-shortcuts/work-backlogs-shortcuts-S136.png)  
    :::column-end:::
    :::column span="2":::
-      **Backlogs**<br/><br/>
-      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top<br/>
-      <br/>
-      &nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog<br/>
-      &nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration<br/>
-      &nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration<br/>
-<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ins**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child<br/>
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>  
+      <br/><br/>
+      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;Move item to top  
+      &nbsp;&nbsp;&nbsp;**m,b**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to backlog  
+      &nbsp;&nbsp;&nbsp;**m,i**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to current iteration  
+      &nbsp;&nbsp;&nbsp;**m,n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to next iteration  
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Ins**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add child  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<b   
    :::column-end:::
 :::row-end:::
 

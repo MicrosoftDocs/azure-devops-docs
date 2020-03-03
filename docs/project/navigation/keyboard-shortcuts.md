@@ -26,12 +26,8 @@ For specific guidance on navigating within the web portal, see [Web portal navig
 You can use these keyboard shortcuts when working in the web portal for Azure DevOps.  
 
 :::row:::
-   :::column span="3":::
-      **Navigate**
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="1":::
+      **Navigate**<br/>
       **Ctrl+Alt,a**  
       **Ctrl+Alt,h**  
       **Ctrl+Alt,s**  
@@ -39,7 +35,7 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
       **Ctrl+Alt**,![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)  
    :::column-end:::
    :::column span="2":::
-      Move focus to !admin link[](../../boards/media/icons/gear_icon.png) admin link  
+      Move focus to ![admin link](../../boards/media/icons/gear_icon.png) admin link  
       Move focus to ![help](../../boards/media/icons/help.png) help link  
       Move focus to search box   
       Move focus to next section  
@@ -49,12 +45,8 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 
 
 :::row:::
-   :::column span="3":::
-      **Navigate within lists**
-   :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="1":::
+      **Navigate within lists**<br/>
       **Tab**  
       ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)  
       ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
@@ -156,8 +148,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
-
-::: moniker-end
 
 ::: moniker range=">= tfs-2017"
 
