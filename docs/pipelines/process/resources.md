@@ -384,6 +384,19 @@ resources.container.<Alias>.location
 ```
 Note: location variable is only applicable for `ACR` type of container resources.
 
+## Troubleshooting authorization for a YAML pipeline
+
+Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
+
+* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for e.g., test resources.
+
+* When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
+
+* When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
+
+    > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+
+
 ## Traceability
 We provide full traceability for any resource consumed at a pipeline or deployment-job level.
 
@@ -400,3 +413,4 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, you can see a list of resources that are consumed in the environments view. This view includes resources consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
+
