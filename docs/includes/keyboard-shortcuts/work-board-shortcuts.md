@@ -24,7 +24,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="1":::
@@ -35,15 +35,15 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
       **Enter**<br/>
       **Ctrl+Shift+f**<br/>
       <br/>
-      **Ctrl+**&uarr;<br/>
-      **Ctrl+**&darr;<br/>
-      **Ctrl+**&larr;<br/>
-      **Ctrl+**&rarr;<br/>
+      **Ctrl+&uarr;**<br/>
+      **Ctrl+&darr;**<br/>
+      **Ctrl+&larr;**<br/>
+      **Ctrl+&rarr;**<br/>
       <br/>
       **Ctrl+Home**<br/>
       **Ctrl+End**<br/>
-      **Ctrl+Shift+**&uarr;<br/>
-      **Ctrl+Shift+**&darr;<br/>
+      **Ctrl+Shift+&uarr;**<br/>
+      **Ctrl+Shift+&darr;**<br/>
       <br/>
       **F2**<br/>
       **e**<br/>
@@ -88,7 +88,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png)  
    :::column-end:::
    :::column span="1":::
@@ -99,15 +99,15 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
       **Enter**<br/>
       **Ctrl+Shift+f**<br/>
       <br/>
-      **Ctrl+**&uarr;<br/>
-      **Ctrl+**&darr;<br/>
-      **Ctrl+**&larr;<br/>
-      **Ctrl+**&rarr;<br/>
+      **Ctrl+&uarr;**<br/>
+      **Ctrl+&darr;**<br/>
+      **Ctrl+&larr;**<br/>
+      **Ctrl+&rarr;**<br/>
       <br/>
       **Ctrl+Home**<br/>
       **Ctrl+End**<br/>
-      **Ctrl+Shift+**&uarr;<br/>
-      **Ctrl+Shift+**&darr;<br/>
+      **Ctrl+Shift+&uarr;**<br/>
+      **Ctrl+Shift+&darr;**<br/>
       <br/>
       **F2**<br/>
       **e**<br/>

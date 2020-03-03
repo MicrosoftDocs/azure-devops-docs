@@ -31,7 +31,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
       ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)
    :::column-end:::
    :::column span="2":::
-      <br/><br/> 
+      <br/>
       **Repos-Git**<br/><br/> 
       &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
       &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open explorer <br/>
@@ -62,14 +62,11 @@ You can use the following keyboard shortcuts when working from a page under **Co
       **Repos-TFVC**<br/> 
       &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/><br/> 
-      <br/> 
-      <br/> 
       **Code**<br/> 
       &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files <br/>
       &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets <br/>
       &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelveshets<br/>
       <br/><br/>
-      <br/><br/> 
       **Files** <br/>
       &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
       &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
