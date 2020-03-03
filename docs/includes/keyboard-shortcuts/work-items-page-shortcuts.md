@@ -55,18 +55,17 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
-      **Code**<br/> 
+      <br/><br/> 
       **l**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[backlog](/azure/devops/boards/backlogs/create-your-backlog)">backlog</a><br/>
       **b**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/boards/kanban-quickstart" data-raw-source="[board](/azure/devops/boards/boards/kanban-quickstart)">board</a><br/>
       **i**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[current iteration](/azure/devops/boards/sprints/assign-work-sprint)">current iteration</a><br/>
       **t**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](/azure/devops/boards/sprints/task-board)">task board</a><br/>
       **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
-      <br/><br/>
-      **Work items**
+      <br/><br/><br/><br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
       **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
-      **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete<br/>
+      **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete 
    :::column-end:::
 :::row-end:::
  

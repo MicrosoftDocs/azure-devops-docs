@@ -24,8 +24,6 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 ::: moniker-end
 
-
-
 ::: moniker range="azure-devops"
 
 :::row:::
@@ -33,27 +31,22 @@ You can use the following keyboard shortcuts when working from a page under **Co
       ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/> 
-      **Repos - Git**<br/>  
-      <br/>  
-      &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode   
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files   
-      &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open History   
-      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open Branches   
-      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests   
-      **c,p**&nbsp;&nbsp;&nbsp;Create pull request   
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository  
+      **Repos - Git**<br/> 
+      &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
+      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open explorer <br/>
+      &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open history <br/>
+      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open branches (Git)<br/>
+      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests (Git)<br/>
+      **c,p**&nbsp;&nbsp;&nbsp;Create pull request (Git)<br/>
+      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/><br/>
-      **Files**  
-      <br/> 
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents  
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history  
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path  
-      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch   
+      **Files** <br/>
+      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
+      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
    :::column-end:::
 :::row-end:::
- 
-
 
 :::row:::
    :::column span="2":::
@@ -61,22 +54,22 @@ You can use the following keyboard shortcuts when working from a page under **Co
    :::column-end:::
    :::column span="2":::
       <br/> 
-      **Repos - TFVC**   
+      **Repos - TFVC**<br/>   
       <br/> 
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository   
+      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository<br/>   
       <br/> 
       <br/> 
       **Code**  
       <br/> 
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files  
-      &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets (TFVC)  
-      &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets (TFVC)  
+      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files<br/>  
+      &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets<br/>   
+      &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets<br/>   
       <br/><br/>
       **Files**   
       <br/> 
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents  
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history  
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path  
+      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>  
+      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>  
+      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>  
    :::column-end:::
 :::row-end:::
 
