@@ -36,7 +36,7 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
       **Ctrl+Alt,h**  
       **Ctrl+Alt,s**  
       **Ctrl+Alt**,![Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
-      **Ctrl+Alt**![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)  
+      **Ctrl+Alt**,![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)  
    :::column-end:::
    :::column span="2":::
       Move focus to !admin link[](../../boards/media/icons/gear_icon.png) admin link  
@@ -56,26 +56,26 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 :::row:::
    :::column span="1":::
       **Tab**  
-      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)
-      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)   
+      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)  
+      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
       **Ctrl+Home**  
-      **Ctrl+End** 
-      **Ctrl+** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png) 
-      **Shift** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)
+      **Ctrl+End**  
+      **Ctrl+** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
+      **Shift** ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
       **Menu**  
-      **Esc** 
-      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)
-      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)
-      **Enter** 
+      **Esc**  
+      ![Left arrow](../../boards/media/icons/Arrow_Next.png) ![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)  
+      ![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)  
+      **Enter**   
    :::column-end:::
    :::column span="2":::
        Move focus  
        Move focus left/right  
-       Move focus up/down 
+       Move focus up/down  
        Move focus to top of list  
        Move focus to bottom of list  
-       Move item up/down within list 
-       Highlight consecutive items
+       Move item up/down within list  
+       Highlight consecutive items  
        Open context menu  
        Dismiss context menu  
        Move focus left/right  
