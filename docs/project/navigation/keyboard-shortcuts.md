@@ -136,7 +136,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
-::: moniker-end
 
 ## Backlogs 
 
@@ -168,8 +167,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
-
-
 ::: moniker range=">= tfs-2015"
 
 ## Test Plans, Parameters, and Runs  
@@ -180,7 +177,9 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 
 ::: moniker range=">= tfs-2018"  
+
 ## Wiki  
+
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"
@@ -189,6 +188,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"  
+
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]
 
 ::: moniker-end
