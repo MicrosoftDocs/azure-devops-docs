@@ -125,11 +125,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
-
-## Backlogs 
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
-
 ::: moniker range=">= tfs-2015"
 
 ## Boards 
@@ -137,6 +132,13 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
+
+
+## Backlogs 
+
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
+
+
 
 ::: moniker range=">= tfs-2015"  
 
