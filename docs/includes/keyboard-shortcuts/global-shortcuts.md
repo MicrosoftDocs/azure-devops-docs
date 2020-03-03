@@ -48,7 +48,7 @@ You can use the following keyboard shortcuts from the web portal.
       **g,h**&nbsp;&nbsp;&nbsp;Go to [**Projects home**](/azure/devops/project/navigation/go-to-project-repo)  
       **g,w**&nbsp;&nbsp;&nbsp;Go to [**Boards** or **Work**](/azure/devops/boards/get-started/what-is-azure-boards)  
       **g,c**&nbsp;&nbsp;&nbsp;Go to  [**Repos** or **Code**](/azure/devops/repos/git/overview)  
-      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](/azure/devops/pipelines/overview) 
+      **g,b**&nbsp;&nbsp;&nbsp;Go to [**Pipelines** or **Build and release**](/azure/devops/pipelines/overview)  
       **g,t**&nbsp;&nbsp;&nbsp;Go to [**Test Plans** or **Test**](/azure/devops/test/index)  
       **g,s**&nbsp;&nbsp;&nbsp;Go to [**Project Settings**](/azure/devops/organizations/settings/about-settings)  
       **f,n**&nbsp;&nbsp;&nbsp;Focus next section<br/>

@@ -31,7 +31,8 @@ You can use the following keyboard shortcuts when working from a page under **Co
       ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      **Repos - Git**<br/> 
+      <br/> 
+      **Repos - Git**<br/><br/> 
       &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
       &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open explorer <br/>
       &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open history <br/>
@@ -40,7 +41,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
       **c,p**&nbsp;&nbsp;&nbsp;Create pull request (Git)<br/>
       &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/><br/>
-      **Files** <br/>
+      **Files** <br/><br/>
       &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
       &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
       &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
@@ -56,17 +57,17 @@ You can use the following keyboard shortcuts when working from a page under **Co
       <br/> 
       **Repos - TFVC**<br/>   
       <br/> 
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository<br/>   
+      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/> 
       <br/> 
       **Code**  
-      <br/> 
+      <br/><br/>  
       &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files<br/>  
       &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets<br/>   
       &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets<br/>   
       <br/><br/>
       **Files**   
-      <br/> 
+      <br/><br/>  
       &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>  
       &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>  
       &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>  
