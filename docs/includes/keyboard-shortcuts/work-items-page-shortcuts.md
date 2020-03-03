@@ -23,10 +23,11 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
+      <br/> 
       **Work**<br/> 
       **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)  
       **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)  
@@ -34,7 +35,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](/azure/devops/boards/sprints/assign-work-sprint)  
       **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)    
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
-      <br/><br/><br/><br/> 
+      <br/><br/>
       **Work items**
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
       **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
@@ -50,7 +51,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
@@ -61,7 +62,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       **t**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](/azure/devops/boards/sprints/task-board)">task board</a><br/>
       **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
-      <br/><br/><br/><br/> 
+      <br/><br/>
       **Work items**
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
       **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  

@@ -29,19 +29,41 @@ You can use the following keyboard shortcuts when working from a page under **Co
 ::: moniker range="azure-devops"
 
 :::row:::
-   :::column span="1":::
-      ![Repos shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)  
+   :::column span="2":::
+      ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      **Code**<br/> 
+      <br/> 
+      **Repos - Git**<br/> 
       &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
       &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files <br/>
       &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open History <br/>
-      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open Branches (Git)<br/>
-      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests (Git)<br/>
-      **c,p**&nbsp;&nbsp;&nbsp;Create pull request (Git)<br/>
+      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open Branches <br/>
+      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests <br/>
+      **c,p**&nbsp;&nbsp;&nbsp;Create pull request <br/>
+      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
+      <br/><br/>
+      **Files** <br/>
+      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
+      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch <br/>
+   :::column-end:::
+:::row-end:::
+ 
+
+
+:::row:::
+   :::column span="2":::
+      ![Repos - TFVC shortcuts](/azure/devops/media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
+   :::column-end:::
+   :::column span="2":::
+      <br/> 
+      **Repos - TFVC**<br/> 
       &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/> 
+      **Code**<br/> 
+      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files <br/>
       &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets (TFVC)<br/> 
       &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets (TFVC)<br/>
       <br/><br/>
@@ -49,10 +71,9 @@ You can use the following keyboard shortcuts when working from a page under **Co
       &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
       &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
       &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch (Git)<br/>
    :::column-end:::
 :::row-end:::
- 
+
 ::: moniker-end
 
 
