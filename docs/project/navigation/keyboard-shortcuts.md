@@ -91,8 +91,6 @@ Type **?** to access the Global and page-specific shortcuts.
 
 ::: moniker-end
 
-
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
 ::: moniker range=">= tfs-2015"
