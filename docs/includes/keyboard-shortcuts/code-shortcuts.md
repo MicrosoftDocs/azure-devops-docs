@@ -33,19 +33,19 @@ You can use the following keyboard shortcuts when working from a page under **Co
    :::column span="2":::
       <br/>
       **Repos-Git**<br/><br/> 
-      &nbsp;&nbsp;**z**&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open explorer <br/>
-      &nbsp;&nbsp;**h**&nbsp;&nbsp;&nbsp;Open history <br/>
-      &nbsp;&nbsp;**b**&nbsp;&nbsp;&nbsp;Open branches <br/>
-      &nbsp;&nbsp;**q**&nbsp;&nbsp;&nbsp;Open pull requests <br/>
+      **z**&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
+      **e**&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
+      **h**&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
+      **b**&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
+      **q**&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
       **c,p**&nbsp;&nbsp;&nbsp;Create pull request <br/>
-      &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
+      **r**&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/><br/>
       **Files** <br/><br/>
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-      &nbsp;&nbsp;**w**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
+      **1**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+      **2**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+      **t**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
+      **w**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
    :::column-end:::
 :::row-end:::
 
