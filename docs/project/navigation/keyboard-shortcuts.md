@@ -113,7 +113,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
 
-
 ::: moniker range=">= azure-devops-2019"
 
 ## Work Items 
