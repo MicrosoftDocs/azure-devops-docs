@@ -22,8 +22,8 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker range="azure-devops"
 
-
-|![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)|<br/>**n**<br/>**c**<br/>**Home**<br/>**Enter**<br/>**Ctrl+Shift+f**<br/><br/>**Ctrl+&uarr;**<br/>**Ctrl+&darr;**<br/>**Ctrl+&larr;**<br/>**Ctrl+&rarr;**<br/><br/>**Ctrl+Home**<br/>**Ctrl+End**<br/>**Ctrl+Shift+&uarr;**<br/>**Ctrl+Shift+&darr;**<br/><br/>**F2**<br/>**e**<br/>**o**<br/>**u**<br/><br/>**Shift+Pageup**<br/>**Shift+Pagedown**<br/>|<br/>Add new item <br/>Add new child item<br/>Select first item <br/>Open item<br/>Filter results<br/><br/>Move item up<br/>Move item down<br/>Move item left<br/>Move item right<br/><br/>Move item to top of column<br/>Move item to bottom of column<br/>Move item to swimlane above<br/>Move item to swimlane below <br/><br/>Rename item<br/>Show/hide empty fields<br/>Expand all swimlanes<br/>Collapse all swimlanes<br/><br/>Select first/next swimlane above<br/>Select last/next swimlane below|
+> [!div class="mx-tdBreakAll"]  
+> |![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)|<br/>**n**<br/>**c**<br/>**Home**<br/>**Enter**<br/>**Ctrl+Shift+f**<br/><br/>**Ctrl+&uarr;**<br/>**Ctrl+&darr;**<br/>**Ctrl+&larr;**<br/>**Ctrl+&rarr;**<br/><br/>**Ctrl+Home**<br/>**Ctrl+End**<br/>**Ctrl+Shift+&uarr;**<br/>**Ctrl+Shift+&darr;**<br/><br/>**F2**<br/>**e**<br/>**o**<br/>**u**<br/><br/>**Shift+Pageup**<br/>**Shift+Pagedown**| <br/>Add new item <br/>Add new child item<br/>Select first item <br/>Open item<br/>Filter results<br/><br/>Move item up<br/>Move item down<br/>Move item left<br/>Move item right<br/><br/>Move item to top of column<br/>Move item to bottom of column<br/>Move item to swimlane above<br/>Move item to swimlane below <br/><br/>Rename item<br/>Show/hide empty fields<br/>Expand all swimlanes<br/>Collapse all swimlanes<br/><br/>Select first/next swimlane above<br/>Select last/next swimlane below |
 
 <!---
 
