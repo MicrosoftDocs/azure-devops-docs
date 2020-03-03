@@ -64,7 +64,7 @@ The task supports authentication based on Azure Active Directory. Authentication
 
 ## YAML snippet
 
-[!INCLUDE [temp](../includes/yaml/AzureFileCopyV4.md)]
+[!INCLUDE [temp](../includes/yaml/azure-file-copy-v4.md)]
 
 ::: moniker-end
 
