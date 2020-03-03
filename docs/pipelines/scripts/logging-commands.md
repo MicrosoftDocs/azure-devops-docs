@@ -222,6 +222,7 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 * `variable` = variable name (Required)
 * `issecret` = boolean (Optional, defaults to false)
 * `isoutput` = boolean (Optional, defaults to false)
+* `isreadonly` = boolean (Optional, defaults to false)
    
 #### Examples
 
