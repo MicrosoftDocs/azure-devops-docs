@@ -27,7 +27,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/>
+      <br/><br/><br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
       **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
@@ -62,14 +62,12 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
-      ***Kanban Board**<br/><br/>
+      <br/><br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
       **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
       **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/>
-      <br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
-      <br/>
       **Ctrl+**<img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
       **Ctrl+**<img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
       **Ctrl+**<img src="/azure/devops/boards/media/icons/Arrow_Next.png" alt="Left arrow"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
@@ -78,12 +76,10 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
       **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
       **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;Move item to swimlane above<br/>
       **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;Move item to swimlane below <br/>
-      <br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
-      <br/> 
       **Shift+Pageup**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first/next swimlane above<br/>
       **Shift+Pagedown**&nbsp;&nbsp;&nbsp;Select last/next swimlane below<br/>
    :::column-end:::

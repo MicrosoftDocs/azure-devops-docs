@@ -27,6 +27,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
       ![Manage wiki keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-manage-cloud.png)  
    :::column-end:::
    :::column span="2":::
+      <br/><br/><br/>
       &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new page  
       &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit page  
       &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create new sub-page  
@@ -38,6 +39,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
 :::row-end:::
 :::row:::
    :::column span="2":::
+      <br/><br/><br/><br/>
       ![Edit wiki page keyboard shortcuts](/azure/devops/media/keyboard-shortcuts/wiki-edit-cloud.png)  
    :::column-end:::
    :::column span="2":::
@@ -46,7 +48,7 @@ You can use the following keyboard shortcuts when [managing or editing Wiki page
       **Ctrl+k**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insert hyperlink  
       **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy text  
       **Ctrl+v**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste copied text  
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format tables  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Format tables <br/><br/> 
       **Ctrl+s**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save changes  
       **Ctrl+Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Close  
       **Esc**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close 

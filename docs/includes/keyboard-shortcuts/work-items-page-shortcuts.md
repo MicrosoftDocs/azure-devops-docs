@@ -27,16 +27,14 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/> 
-      <br/> 
-      **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)  
-      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)  
-      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)  
-      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](/azure/devops/boards/sprints/assign-work-sprint)  
-      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)    
+      <br/><br/><br/> 
+      **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)<br/>  
+      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)<br/>  
+      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)<br/>  
+      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](/azure/devops/boards/sprints/assign-work-sprint)<br/>  
+      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)<br/>    
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
       <br/><br/>
-      **Work items**
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
       **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
       **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete<br/>
