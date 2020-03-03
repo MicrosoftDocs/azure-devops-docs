@@ -5,31 +5,71 @@ ms.topic: include
 
 <a id="work-items-page-shortcuts"></a>
 
-You can use the following keyboard shortcuts when working from the **Repos>Work Items** or **Work>Work Items** page. 
+::: moniker range=">= azure-devops-2019"
+
+You can use the following keyboard shortcuts when working from the **Boards>Work Items** or **Work>Work Items** page. 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 > [!NOTE]  
-> The following shortcuts are available from the web portal for Azure DevOps Services. 
+> The following shortcuts are available from the web portal for Azure DevOps Server 2019 and later versions. 
 
-<table width="70%">
-<tbody valign="top">
-<tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/work-items-shortcuts.png" alt="Work items page shortcuts"/></td>
-<td>
-<p><strong>Work</strong></p>
-<br/>
-<strong>l</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[backlog](/azure/devops/boards/backlogs/create-your-backlog)">backlog</a><br/>
-<strong>b</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/boards/kanban-quickstart" data-raw-source="[board](/azure/devops/boards/boards/kanban-quickstart)">board</a><br/>
-<strong>i</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[current iteration](/azure/devops/boards/sprints/assign-work-sprint)">current iteration</a><br/>
-<strong>t</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](/azure/devops/boards/sprints/task-board)">task board</a><br/>
-<strong>q</strong>&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
-<strong>z</strong>&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
-<br/><br/><br/><br/> 
-<p><strong>Work items</strong></p>
-<strong>Ctrl+Shift+f</strong>&nbsp;&nbsp;&nbsp;Filter results<br/>
-<strong>Ctrl+c</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>
-<strong>Delete</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete<br/>
+::: moniker-end
 
-</td>
-</tr>
-</tbody>
-</table>
+
+::: moniker range="azure-devops"
+
+
+:::row:::
+   :::column span="1":::
+      ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts-cloud.png)  
+   :::column-end:::
+   :::column span="2":::
+      **Work**<br/> 
+      **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)  
+      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)  
+      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)  
+      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open [sprint](/azure/devops/boards/sprints/assign-work-sprint)  
+      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open [queries](/azure/devops/boards/queries/using-queries)    
+      **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
+      <br/><br/><br/><br/> 
+      **Work items**
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
+      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
+      **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete<br/>
+   :::column-end:::
+:::row-end:::
+ 
+::: moniker-end
+
+
+
+::: moniker range="azure-devops-2019"
+
+
+:::row:::
+   :::column span="1":::
+      ![Work items page shortcuts](/azure/devops/media/keyboard-shortcuts/work-items-shortcuts.png)  
+   :::column-end:::
+   :::column span="2":::
+      **Code**<br/> 
+      **l**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/backlogs/create-your-backlog" data-raw-source="[backlog](/azure/devops/boards/backlogs/create-your-backlog)">backlog</a><br/>
+      **b**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/boards/kanban-quickstart" data-raw-source="[board](/azure/devops/boards/boards/kanban-quickstart)">board</a><br/>
+      **i**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/assign-work-sprint" data-raw-source="[current iteration](/azure/devops/boards/sprints/assign-work-sprint)">current iteration</a><br/>
+      **t**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/sprints/task-board" data-raw-source="[task board](/azure/devops/boards/sprints/task-board)">task board</a><br/>
+      **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
+      **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
+      <br/><br/><br/><br/> 
+      **Work items**
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
+      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
+      **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete<br/>
+   :::column-end:::
+:::row-end:::
+ 
+::: moniker-end
+
+
+ 

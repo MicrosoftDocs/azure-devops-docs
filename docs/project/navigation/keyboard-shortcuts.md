@@ -99,21 +99,36 @@ Type **?** to access the Global and page-specific shortcuts.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015"
+
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
+::: moniker range=">= tfs-2015"
+
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
-
-## Code  
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
+
+## Repos  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 <=tfs-2018"
+
+## Code  
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
+
+
+::: moniker range=">= azure-devops-2019"
 
 ## Work Items 
+
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
