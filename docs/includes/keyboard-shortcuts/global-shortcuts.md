@@ -11,7 +11,7 @@ ms.topic: include
 You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
@@ -41,7 +41,7 @@ You can use the following keyboard shortcuts from the web portal.
 You can use the following keyboard shortcuts from the web portal.
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Global shortcuts](/azure/devops/media/keyboard-shortcuts/global-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
