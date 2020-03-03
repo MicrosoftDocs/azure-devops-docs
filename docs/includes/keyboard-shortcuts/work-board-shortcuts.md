@@ -28,26 +28,26 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
    :::column-end:::
    :::column span="2":::
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
+      **n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
+      **c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
       **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
       **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
       <br/>
-      **Ctrl+**![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-      **Ctrl+**![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-      **Ctrl+**![left arrow](/azure/devops/boards/media/icons/Arrow_Next.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-      **Ctrl+**![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>
+      **Ctrl+**&uarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
+      **Ctrl+**&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
+      **Ctrl+**&larr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
+      **Ctrl+**&rarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>
       <br/>
       **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
       **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-      **Ctrl+Shift+**![up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)&nbsp;&nbsp;Move item to swimlane above<br/>
-      **Ctrl+Shift+**![down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)&nbsp;&nbsp;Move item to swimlane below <br/>
+      **Ctrl+Shift+**&uarr;&nbsp;&nbsp;Move item to swimlane above<br/>
+      **Ctrl+Shift+**&darr;&nbsp;&nbsp;Move item to swimlane below <br/>
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
+      **F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
+      **e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
+      **o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
+      **u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
       <br/>
       **Shift+Pageup**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first/next swimlane above<br/>
       **Shift+Pagedown**&nbsp;&nbsp;&nbsp;Select last/next swimlane below<br/>
@@ -67,26 +67,26 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
    :::column-end:::
    :::column span="2":::
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
+      **n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
+      **c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
       **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
       **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/>
-      <br/>
       **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
-      **Ctrl+**![Up arrow](/azure/devops/boards/media/icons/Arrow_Up.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-      **Ctrl+**![Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-      **Ctrl+**![Left arrow](/azure/devops/boards/media/icons/Arrow_Next.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-      **Ctrl+**![right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/> 
+      <br/>
+      **Ctrl+**&uarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
+      **Ctrl+**&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
+      **Ctrl+**&larr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
+      **Ctrl+**&rarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>
       <br/>
       **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
       **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
       **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;Move item to swimlane above<br/>
       **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;Move item to swimlane below <br/>
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;**u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
+      **F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
+      **e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
+      **o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
+      **u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
       <br/>
       **Shift+Pageup**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first/next swimlane above<br/>
       **Shift+Pagedown**&nbsp;&nbsp;&nbsp;Select last/next swimlane below<br/>
