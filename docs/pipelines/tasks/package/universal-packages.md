@@ -40,7 +40,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `feedsToUse`<br/>Feed location | You can select a feed from either this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
 | `externalFeedCredentials`<br/>Credentials for feeds outside this organization (collection) | Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization (collection), leave this blank; the build’s credentials are used automatically. |
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed. You must have Azure Artifacts installed and licensed to select a feed here. |
-| `vstsFeedPackage`<br/>Package name | Name of desired package to download. |
+| `vstsFeedPackage`<br/>Package name | Name of package to download. |
 | `vstsPackageVersion`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
 | `feedDownloadExternal`<br/>Feed | Specifies the name of an external feed from which to download. |
 | `packageDownloadExternal`<br/>Package name | Specifies the package name to download. |
@@ -53,7 +53,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `vstsFeedPackagePublish`<br/>Package name | Select a package ID to publish or type a new package ID, if you've never published a version of this package before. Package names must be lower case and can only use letters, numbers, and dashes(-). |
 | `feedPublishExternal`<br/>Feed | External feed name to publish to. |
 | `packagePublishExternal`<br/>Package name | Package name. |
-| `versionOption`<br/>Version | Select a version increment strategy, or select Custom to input your package version manually. For new packages, the first version is 1.0.0 if you select \"Next major\". The first version is 0.1.0 if you select \"Next minor\". The first version is 0.0.1 if you select \"Next patch\". See the [Semantic Versioning spec](https://semver.org/) for more information.<br/>Options: `major`, `minor`, `patch`, `custom` |
+| `versionOption`<br/>Version | Select a version increment strategy, or select Custom to input your package version manually. For new packages, the first version is 1.0.0 if you select \"Next major\". The first version is 0.1.0 if you select \"Next minor\". The first version is 0.0.1 if you select \"Next patch\". For more information, see the [Semantic Versioning spec](https://semver.org/).<br/>Options: `major`, `minor`, `patch`, `custom` |
 | `versionPublish`<br/>Custom version | Select the custom package version. |
 | `packagePublishDescription`<br/>Description | Description of the contents of this package and the changes made in this version of the package. |
 | `verbosity`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `None`, `Trace`, `Debug`, `Information`, `Warning`, `Error`, `Critical` |
@@ -66,7 +66,7 @@ The simplest way to get started with the Universal Package task is to use the Pi
 
 Universal Packages are a useful way to both encapsulate and version a web app.  Packaging a web app into a Universal Package enables quick rollbacks to a specific version of your site and eliminates the need to build the site in the deployment pipeline.
 
-This example pipeline demonstrates how to fetch a tool from a feed within your project using Universal Package task to download the tool, perform a build, and again uses the Universal Package task to publish the entire compiled GatsbyJS PWA to a feed as a versioned Universal Package.
+This example pipeline demonstrates how to fetch a tool from a feed within your project. The Universal Package task is used to download the tool, run a build, and again uses the Universal Package task to publish the entire compiled GatsbyJS PWA to a feed as a versioned Universal Package.
 
 
 ![Sample Project](./media/sample-npm-project-with-universal.png)
@@ -132,10 +132,9 @@ steps:
     packagePublishDescription: 'A test package'
 ```
 
-## Conclusion
-This example demonstrated how to use the Pipelines task builder to quickly generate the YAML for the Universal Package task which can then be placed into your `azure-pipelines.yml` file.  The Universal Package task builder supports all of the advanced configurations that can be created with **Univeral Package** task's [arguments](#Arguments). It is the simplest way to generate valid configurations.
+This example demonstrated how to use the Pipelines task builder to quickly generate the YAML for the Universal Package task, which can then be placed into your `azure-pipelines.yml` file. The Universal Package task builder supports all of the advanced configurations that can be created with **Universal Package** task's [arguments](#Arguments).
 
 
-## Open source
+## Open-source on GitHub
 
 These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
