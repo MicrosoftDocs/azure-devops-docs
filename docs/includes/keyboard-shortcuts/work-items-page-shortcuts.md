@@ -28,7 +28,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
    :::column-end:::
    :::column span="2":::
       <br/> 
-      **Work**<br/> 
+      <br/> 
       **w**&nbsp;&nbsp;&nbsp;&nbsp;Open [work items](/azure/devops/boards/work-items/view-add-work-items)  
       **l**&nbsp;&nbsp;&nbsp;&nbsp;Open [backlog](/azure/devops/boards/backlogs/create-your-backlog)  
       **b**&nbsp;&nbsp;&nbsp;&nbsp;Open [board](/azure/devops/boards/boards/kanban-quickstart)  
