@@ -146,9 +146,15 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Boards 
 
+::: moniker-end
+
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
 
+::: moniker range=">= tfs-2015"  
+
 ## Queries 
+
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -158,9 +164,11 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
+::: moniker-end
+
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
-::: moniker-end
+
 
 ::: moniker range=">= tfs-2015"
 
