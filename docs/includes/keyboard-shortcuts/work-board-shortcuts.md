@@ -22,12 +22,13 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker range="azure-devops"
 
+
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="1":::
-      <br/>
+      <br/><br/>
       **n**<br/>
       **c**<br/>
       **Home**<br/>
@@ -82,16 +83,14 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 
 ::: moniker-end
-
-
 
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
+
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png)  
    :::column-end:::
-
    :::column span="1":::
       <br/>
       **n**<br/>
@@ -148,73 +147,4 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker-end
 
-
-<!---
-
-:::row:::
-   :::column span="2":::
-      ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png)  
-   :::column-end:::
-   :::column span="2":::
-      <br/>
-      **n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
-      **c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
-      **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
-      **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/>
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
-      <br/>
-      **Ctrl+**&uarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-      **Ctrl+**&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-      **Ctrl+**&larr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-      **Ctrl+**&rarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>
-      <br/>
-      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
-      **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-      **Ctrl+Shift+**&uarr;&nbsp;&nbsp;Move item to swimlane above<br/>
-      **Ctrl+Shift+**&darr;&nbsp;&nbsp;Move item to swimlane below <br/>
-      <br/>
-      **F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
-      **e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
-      **o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
-      **u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
-      <br/>
-      **Shift+Pageup**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first/next swimlane above<br/>
-      **Shift+Pagedown**&nbsp;&nbsp;&nbsp;Select last/next swimlane below<br/>
-   :::column-end:::
-:::row-end:::
-
-
-:::row:::
-   :::column span="2":::
-      ![Kanban board shortcuts](/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts.png)  
-   :::column-end:::
-   :::column span="2":::
-      <br/>
-      **n**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
-      **c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/>
-      **Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
-      **Enter**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open item<br/>
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;&nbsp;Filter results<br/>
-      <br/>
-      **Ctrl+**&uarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item up<br/>
-      **Ctrl+**&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item down<br/>
-      **Ctrl+**&larr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item left<br/>
-      **Ctrl+**&rarr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item right<br/>
-      <br/>
-      **Ctrl+Home**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to top of column<br/>
-      **Ctrl+End**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move item to bottom of column<br/>
-      **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Up.png" alt="Up arrow"/>&nbsp;&nbsp;Move item to swimlane above<br/>
-      **Ctrl+Shift+**<img src="/azure/devops/boards/media/icons/Arrow_Down.png" alt="Down arrow"/>&nbsp;&nbsp;Move item to swimlane below <br/>
-      <br/>
-      **F2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rename item<br/>
-      **e**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show/hide empty fields<br/>
-      **o**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expand all swimlanes<br/>
-      **u**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Collapse all swimlanes<br/>
-      <br/>
-      **Shift+Pageup**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first/next swimlane above<br/>
-      **Shift+Pagedown**&nbsp;&nbsp;&nbsp;Select last/next swimlane below<br/>
-   :::column-end:::
-:::row-end:::
-
-
--->
+ 
