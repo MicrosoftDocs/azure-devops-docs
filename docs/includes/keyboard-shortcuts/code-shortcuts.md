@@ -53,29 +53,26 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 
 :::row:::
-   :::column span="2":::
+   :::column span="1":::
       ![Repos-TFVC shortcuts](/azure/devops/media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
-      <br/> 
-      **Repos-TFVC**<br/>   
-      <br/> 
+      **Repos-TFVC**<br/> 
       &nbsp;&nbsp;**r**&nbsp;&nbsp;&nbsp;Select repository <br/>
       <br/> 
       <br/> 
-      **Code**  
-      <br/><br/>  
-      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files<br/>  
-      &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets<br/>   
-      &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelvesets<br/>   
+      **Code**<br/> 
+      &nbsp;&nbsp;**e**&nbsp;&nbsp;&nbsp;Open Files <br/>
+      &nbsp;&nbsp;**c**&nbsp;&nbsp;&nbsp;Open changesets <br/>
+      &nbsp;&nbsp;**v**&nbsp;&nbsp;&nbsp;Open shelveshets<br/>
       <br/><br/>
-      **Files**   
-      <br/><br/>  
-      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>  
-      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>  
-      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>  
+      **Files** <br/>
+      &nbsp;&nbsp;**1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+      &nbsp;&nbsp;**2**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+      &nbsp;&nbsp;**t**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
    :::column-end:::
 :::row-end:::
+
 
 ::: moniker-end
 
