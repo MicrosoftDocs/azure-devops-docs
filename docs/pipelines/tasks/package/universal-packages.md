@@ -110,14 +110,14 @@ The last step in this sample pipeline uses the Universal Package task to upload 
 
 ![Add a Universal Package task to publish](./media/universal-package-upload.png) 
 
-1. Set the **Command** to `Publish`.  
-2. Set **Path to file(s) to publish** to the directory containing your GatsbyJS project's `package.json`.  
-3. Choose a destination feed, a package name, and set your versioning strategy.
+2. Set the **Command** to `Publish`.  
+3. Set **Path to file(s) to publish** to the directory containing your GatsbyJS project's `package.json`.  
+4. Choose a destination feed, a package name, and set your versioning strategy.
 
 ![Configure the Universal Package task to publish](./media/universal-package-publish.png)
 
-4. After completing the required fields, click **View YAML**. 
-5. Copy the resulting YAML into you your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
+5. After completing the required fields, click **View YAML**. 
+6. Copy the resulting YAML into you your `azure-pipelines.yml` file as before. The YAML for this sample project displays below.
 
 ```YAML
 # Download Universal Package
