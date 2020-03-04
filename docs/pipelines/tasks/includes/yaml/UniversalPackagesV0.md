@@ -3,6 +3,8 @@ ms.topic: include
 author: arob98
 ms.author: angrobe
 ms.date: 03/01/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ```YAML
