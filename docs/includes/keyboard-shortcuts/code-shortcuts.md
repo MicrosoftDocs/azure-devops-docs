@@ -29,53 +29,27 @@ You can use the following keyboard shortcuts when working from a page under **Co
 <table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud" alt="Repos - Git shortcuts"/></td>
+<td><img src="/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png" alt="Repos - Git shortcuts"/></td>
 <td>
-**Repos-Git**<br/><br/> 
-**z**&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
-**e**&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
-**h**&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
-**b**&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
-**q**&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
-**c,p**&nbsp;&nbsp;&nbsp;Create pull request <br/>
-**r**&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
+<strong>Repos-Git</strong><br/><br/> 
+<strong>z</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
+<strong>e</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
+<strong>h</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
+<strong>b</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
+<strong>q</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
+<strong>c,p</strong>&nbsp;&nbsp;&nbsp;Create pull request <br/>
+<strong>r</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
 <br/><br/>
-**Files** <br/><br/>
-**1**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-**2**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-**t**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-**w**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
+<strong>Files</strong><br/><br/>
+<strong>1</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+<strong>2</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+<strong>t</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
+<strong>w</strong>&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
 </td>
 </tr>
 </tbody>
 </table>
 
-
-:::row:::
-   :::column span="1":::
-      ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)
-   :::column-end:::
-   :::column span="2":::
-      <br/>
-      **Repos-Git**<br/><br/> 
-      **z**&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
-      **e**&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
-      **h**&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
-      **b**&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
-      **q**&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
-      **c,p**&nbsp;&nbsp;&nbsp;Create pull request <br/>
-      **r**&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
-      <br/><br/>
-      **Files** <br/><br/>
-      **1**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
-      **2**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
-      **t**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
-      **w**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
-   :::column-end:::
-:::row-end:::
-
-
-<br/>
 
 
 :::row:::

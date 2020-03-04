@@ -121,7 +121,11 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
+::: moniker range=">= tfs-2017"
+
 ## Work item form shortcuts
+
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
