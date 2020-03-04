@@ -26,6 +26,8 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 ::: moniker range="azure-devops"
 
+### Git repositories 
+
 <table>
 <tbody valign="top">
 <tr>
@@ -50,7 +52,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 </tbody>
 </table>
 
-
+### TFVC repositories 
 
 :::row:::
    :::column span="2":::
