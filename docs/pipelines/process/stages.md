@@ -158,7 +158,8 @@ for a stage in a release pipeline. You can:
 
 ::: moniker range="azure-devops"
 
-When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file.
+When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
+
 
 The syntax for defining multiple stages and their dependencies is:
 
