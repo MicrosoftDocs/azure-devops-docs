@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 02/12/2020
+---
+
 ```YAML
 # cURL upload files
 # Use cURL's supported protocols to upload files

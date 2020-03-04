@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 06/27/2019
+---
+
 ```YAML
 # Publish Test Results
 # Publish test results to Azure Pipelines

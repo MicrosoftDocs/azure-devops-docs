@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Service Fabric Compose deploy
 # Deploy a Docker Compose application to an Azure Service Fabric cluster

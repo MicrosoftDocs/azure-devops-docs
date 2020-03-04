@@ -1,3 +1,8 @@
+---
+ms.topic: include
+ms.date: 08/06/2019
+---
+
 ```YAML
 # Provides credentials for Azure Artifacts feeds and external Maven repositories.
 - task: MavenAuthenticate@0

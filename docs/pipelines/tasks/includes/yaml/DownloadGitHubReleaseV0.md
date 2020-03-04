@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: ashokirla
+ms.author: ashkir
+ms.date: 02/03/2020
+---
+
 ```YAML
 # Download GitHub Release
 # Downloads a GitHub Release from a repository

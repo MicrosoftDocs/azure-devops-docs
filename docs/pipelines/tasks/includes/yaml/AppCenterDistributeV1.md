@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 10/07/2019
+---
+
 ```YAML
 # App Center distribute
 # Distribute app builds to testers and users via Visual Studio App Center

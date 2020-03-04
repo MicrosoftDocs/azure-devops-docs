@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Azure VM scale set deployment
 # Deploy a virtual machine scale set image

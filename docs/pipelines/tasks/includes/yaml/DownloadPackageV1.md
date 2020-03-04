@@ -1,3 +1,8 @@
+---
+ms.topic: include
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Download package
 # Download a package from a package management feed in Azure Artifacts

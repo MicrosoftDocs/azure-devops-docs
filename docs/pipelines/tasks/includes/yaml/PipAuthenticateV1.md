@@ -1,3 +1,8 @@
+---
+ms.topic: include
+ms.date: 08/02/2019
+---
+
 ```YAML
 # Python pip authenticate V1
 # Authentication task for the pip client used for installing Python distributions

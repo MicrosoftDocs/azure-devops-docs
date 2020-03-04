@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Download secure file
 # Download a secure file to the agent machine

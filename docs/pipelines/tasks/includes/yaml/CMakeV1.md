@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: wnjenkin
+ms.author: whjenkin
+ms.date: 12/17/2019
+---
+
 ```YAML
 # CMake
 # Build with the CMake cross-platform build system

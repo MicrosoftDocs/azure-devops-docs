@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Build machine image
 # Build a machine image using Packer, which may be used for Azure Virtual machine scale set deployment

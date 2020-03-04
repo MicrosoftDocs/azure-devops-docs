@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Cloud-based Apache JMeter load test
 # Run an Apache JMeter load test in the cloud

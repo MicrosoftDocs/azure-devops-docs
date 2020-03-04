@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 7/25/2019
+---
+
 ```YAML
 # Service Fabric application deployment
 # Deploy an Azure Service Fabric application to a cluster

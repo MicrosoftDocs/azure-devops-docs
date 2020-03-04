@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 02/21/2019
+---
+
 ```YAML
 # File transform
 # Replace tokens with variable values in XML or JSON configuration files

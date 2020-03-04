@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # PowerShell on target machines
 # Execute PowerShell scripts on remote machines using PSSession and Invoke-Command for remoting

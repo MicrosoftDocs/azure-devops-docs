@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: ashokirla
+ms.author: ashkir
+ms.date: 02/03/2020
+---
+
 ```YAML
 # GitHub Release
 # Create, edit, or delete a GitHub release

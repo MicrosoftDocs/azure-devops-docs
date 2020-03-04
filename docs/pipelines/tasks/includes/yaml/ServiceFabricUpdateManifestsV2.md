@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 08/20/2019
+---
+
 ```YAML
 # Update Service Fabric manifests
 # Automatically update portions of application and service manifests in a packaged Azure Service Fabric application

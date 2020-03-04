@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 02/24/2020
+---
+
 ```YAML
 # MSBuild
 # Build with MSBuild

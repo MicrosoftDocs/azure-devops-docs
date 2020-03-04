@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vtbassmatt
+ms.author: macoope
+ms.date: 02/11/2020
+---
+
 ```YAML
 # Bash
 # Run a Bash script on macOS, Linux, or Windows
