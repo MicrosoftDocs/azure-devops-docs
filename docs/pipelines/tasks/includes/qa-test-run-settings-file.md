@@ -1,5 +1,8 @@
 ---
 ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 12/07/2018
 ---
 
 #### Where can I get more information about the Run Settings file?
