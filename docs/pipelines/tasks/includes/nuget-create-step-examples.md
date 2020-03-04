@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 08/10/2016
 ---
 
 You want to package and publish some projects in a C# class library to your Azure Artifacts feed.

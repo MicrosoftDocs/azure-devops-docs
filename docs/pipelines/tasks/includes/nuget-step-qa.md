@@ -1,5 +1,6 @@
 ---
 ms.topic: include
+ms.date: 09/10/2019
 ---
 
 ### Why should I check in a NuGet.Config?

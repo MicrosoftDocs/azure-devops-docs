@@ -1,5 +1,8 @@
 ---
 ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/23/2019
 ---
 
 ### Should I use the Visual Studio Build task or the MSBuild task?
