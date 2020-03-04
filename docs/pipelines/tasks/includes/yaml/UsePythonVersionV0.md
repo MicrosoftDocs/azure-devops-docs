@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vtbassmatt
+ms.author: macoope
+ms.date: 04/25/2019
+---
+
 ```YAML
 # Use Python version
 # Use the specified version of Python from the tool cache, optionally adding it to the PATH

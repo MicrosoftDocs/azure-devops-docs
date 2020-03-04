@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Publish code coverage results
 # Publish Cobertura or JaCoCo code coverage results from a build

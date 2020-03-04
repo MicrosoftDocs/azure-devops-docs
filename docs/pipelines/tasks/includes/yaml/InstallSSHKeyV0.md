@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 02/02/2019
+---
+
 ```YAML
 # Install SSH key
 # Install an SSH key prior to a build or deployment

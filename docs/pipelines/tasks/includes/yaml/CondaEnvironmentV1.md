@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 11/16/2018
+---
+
 ```YAML
 # Conda environment
 # This task is deprecated. Use `conda` directly in script to work with Anaconda environments.

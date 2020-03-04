@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: PBoraMSFT
+ms.author: pbora
+ms.date: 12/17/2019
+---
+
 ```YAML
 # Index sources and publish symbols
 # Index your source code and publish symbols to a file share or Azure Artifacts symbol server

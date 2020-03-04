@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vtbassmatt
+ms.author: macoope
+ms.date: 02/11/2020
+---
+
 ```YAML
 # Copy files
 # Copy files from a source folder to a target folder using patterns matching file paths (not folder paths)

@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Cloud-based load test
 # Run a load test in the cloud with Azure Pipelines

@@ -1,3 +1,8 @@
+---
+ms.topic: include
+ms.date: 08/27/2019
+---
+
 ```YAML
 # Authenticate nuget.exe, dotnet, and MSBuild with Azure Artifacts and optionally other repositories
 - task: NuGetAuthenticate@0

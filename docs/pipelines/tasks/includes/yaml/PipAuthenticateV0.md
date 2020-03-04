@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: davidstaheli
+ms.author: dastahel
+ms.date: 10/31/2018
+---
+
 ```YAML
 # Python pip authenticate
 # Authentication task for the pip client used for installing Python distributions

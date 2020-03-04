@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: vtbassmatt
+ms.author: macoope
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Python script
 # Run a Python file or inline script

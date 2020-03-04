@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: Additi
+ms.author: admahesh
+ms.date: 10/01/2019
+---
+
 ```YAML
 steps:
 - task: ContainerStructureTest@0

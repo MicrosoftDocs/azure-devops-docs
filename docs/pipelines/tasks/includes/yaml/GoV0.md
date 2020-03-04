@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: shashankbarsin
+ms.author: shasb
+ms.date: 12/17/2019
+---
+
 ```YAML
 # Go
 # Get, build, or test a Go application, or run a custom Go command

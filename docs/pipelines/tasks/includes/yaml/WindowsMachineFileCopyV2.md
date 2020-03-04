@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Windows machine file copy
 # Copy files to remote Windows machines

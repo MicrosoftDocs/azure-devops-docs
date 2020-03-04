@@ -1,3 +1,10 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+---
+
 ```YAML
 # Azure Cloud Service deployment
 # Deploy an Azure Cloud Service
