@@ -37,6 +37,9 @@ To talk to Azure Artifact feeds, you'll need a token on your local machine that 
    * On Windows, the file path is usually `"%USERPROFILE%/.m2/settings.xml"`.
    
    * If the file doesn't exist, create one now.
+   
+      * If you are creating a new `settings.xml` in Windows by doing `right-click > New > Text Document`;   
+      Make sure you have [**File Name Extensions** checked](https://support.winzip.com/hc/en-us/articles/115011457948-How-to-configure-Windows-to-show-file-extensions-and-hidden-files) because your `settings.xml` will actually be `settings.xml.txt`. That way, you can just delete the `.txt` to get your true `settings.xml` formatted file. 
 
 4. If you haven't installed Maven on your machine, you can select **Get the tools** to download and install it.
 
