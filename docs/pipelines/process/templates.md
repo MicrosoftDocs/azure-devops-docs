@@ -356,9 +356,11 @@ jobs:
   pool: ${{ parameters.pool }}
 ```
 
-### Variable reuse
+## Variable reuse
 
-Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. 
+Variables can be defined in one YAML and included in another template. This could be useful if you want to store all of your variables in one file. If you are including variables in a pipeline with a template, then you can only define variables in your included template. You can use steps and more complex logic when you are [extending from a template](#extend-from-a-template). In this example, the variable `favoriteVeggie` is included in `azure-pipelines.yml`.
+
+Use [parameters](#passing-parameters) instead of variables when you want to restrict type. 
 
 ```yaml
 # File: vars.yml
