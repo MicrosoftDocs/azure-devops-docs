@@ -24,9 +24,9 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 <table width="60%">
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png" alt="Work items page shortcuts"/></td>
+<td><img src="/azure/devops/media/keyboard-shortcuts/kanban-board-shortcuts-cloud.png" alt="Kanban board shortcuts"/></td>
 <td>
-<strong>Kanban Board</strong><br/><br/>
+<br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>c</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/><br/>
 <strong>Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>
@@ -61,12 +61,12 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
 
-<table width="60%">
+<table>
 <tbody valign="top">
 <tr>
-<td><img src="/azure/devops/includes/media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Work items page shortcuts"/></td>
+<td><img src="/azure/devops/includes/media/keyboard-shortcuts/kanban-board-shortcuts.png" alt="Kanban board shortcuts"/></td>
 <td>
-<strong>Kanban Board</strong><br/><br/>
+<br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>n</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new item <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<strong>c</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add new child item<br/><br/>
 <strong>Home</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select first item <br/>

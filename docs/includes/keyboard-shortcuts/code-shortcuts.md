@@ -26,6 +26,31 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 ::: moniker range="azure-devops"
 
+<table>
+<tbody valign="top">
+<tr>
+<td><img src="/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud" alt="Repos - Git shortcuts"/></td>
+<td>
+**Repos-Git**<br/><br/> 
+**z**&#160;&#160;&nbsp;&nbsp;&nbsp;Toggle full-screen mode <br/>
+**e**&#160;&#160;&nbsp;&nbsp;&nbsp;Open explorer <br/>
+**h**&#160;&#160;&nbsp;&nbsp;&nbsp;Open history <br/>
+**b**&#160;&#160;&nbsp;&nbsp;&nbsp;Open branches <br/>
+**q**&#160;&#160;&nbsp;&nbsp;&nbsp;Open pull requests <br/>
+**c,p**&nbsp;&nbsp;&nbsp;Create pull request <br/>
+**r**&#160;&#160;&nbsp;&nbsp;&nbsp;Select repository <br/>
+<br/><br/>
+**Files** <br/><br/>
+**1**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open contents<br/>
+**2**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open history<br/>
+**t**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move focus to directory path<br/>
+**w**&#160;&#160;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select branch<br/>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 :::row:::
    :::column span="1":::
       ![Repos - Git shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts-cloud.png)
