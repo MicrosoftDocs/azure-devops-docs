@@ -3,6 +3,8 @@ ms.topic: include
 author: pboraMSFT
 ms.author: pbora
 ms.date: 12/02/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ```YAML

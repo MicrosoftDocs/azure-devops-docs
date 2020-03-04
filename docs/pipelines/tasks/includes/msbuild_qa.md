@@ -3,6 +3,8 @@ ms.topic: include
 author: vijayma
 ms.author: vijayma
 ms.date: 12/23/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ### Should I use the Visual Studio Build task or the MSBuild task?

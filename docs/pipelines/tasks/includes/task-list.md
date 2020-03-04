@@ -1,6 +1,10 @@
 ---
 ms.topic: include
 ms.date: 05/03/2018
+author: steved0x
+ms.author: sdanie
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ## Build
