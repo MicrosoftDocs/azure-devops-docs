@@ -61,8 +61,8 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
       **q**&nbsp;&nbsp;&nbsp;&nbsp;Open <a href="/azure/devops/boards/queries/using-queries" data-raw-source="[queries](/azure/devops/boards/queries/using-queries)">queries</a><br/>
       **z**&nbsp;&nbsp;&nbsp;&nbsp;Toggle full screen<br/>
       <br/><br/><br/><br/>
-      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>  
-      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>  
+      **Ctrl+Shift+f**&nbsp;&nbsp;&nbsp;Filter results<br/>
+      **Ctrl+c**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copy to clipboard<br/>
       **Delete**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete 
    :::column-end:::
 :::row-end:::

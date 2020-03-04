@@ -121,7 +121,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
-::: moniker range=">= tfs-2017"
+::: moniker range=">= azure-devops-2019"
 
 ## Work item form shortcuts
 

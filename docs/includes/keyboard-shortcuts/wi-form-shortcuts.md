@@ -80,9 +80,7 @@ You can use the following keyboard shortcuts when working in a web browser on on
 
 ::: moniker range=">= tfs-2017 <= azure-devops-2019"  
 
-
 ## Rich text field shortcuts
-
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 

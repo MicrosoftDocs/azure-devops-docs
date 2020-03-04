@@ -53,7 +53,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Repos-TFVC shortcuts](/azure/devops/media/keyboard-shortcuts/code-tfvc-shortcuts-cloud.png)  
    :::column-end:::
    :::column span="2":::
@@ -81,7 +81,7 @@ You can use the following keyboard shortcuts when working from a page under **Co
 ::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
 :::row:::
-   :::column span="1":::
+   :::column span="2":::
       ![Repos or Code shortcuts](/azure/devops/media/keyboard-shortcuts/code-shortcuts.png)  
    :::column-end:::
    :::column span="2":::
