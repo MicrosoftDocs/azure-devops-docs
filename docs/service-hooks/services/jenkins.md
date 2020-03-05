@@ -21,7 +21,7 @@ Git repository or when you check in code to Team Foundation version control.
 
 1. If you haven't already, set up a [Jenkins](https://jenkins-ci.org/) server.
 
-2. If you're setting up Jenkins on-premises, [enable HTTPS](https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins).
+2. If you're setting up Jenkins on-premises, [enable HTTPS](https://jenkins.io/doc/book/installing/#configuring-http).
 
 ## Set up a Jenkins build
 
@@ -50,11 +50,11 @@ to connect Azure DevOps Services to Jenkins.
 
 1. Go to your project Service Hooks page: 
 
-	`https://{orgName}/{project_name}/_settings/serviceHooks`
+    `https://{orgName}/{project_name}/_settings/serviceHooks`
 
-	![Project administration page](./media/add-devops-service-hook.png)
+    ![Project administration page](./media/add-devops-service-hook.png)
 
-	Select **Create Subscription**.
+    Select **Create Subscription**.
 
 1. Add Jenkins.
 
@@ -82,9 +82,9 @@ to connect Azure DevOps Services to Jenkins.
 
     `https://dev.azure.com/{orgName}/{project_name}/_apps/hub/ms.vss-servicehooks-web.manageServiceHooks-project`
 
-	![Project administration page](./media/add-service-hook.png)
+    ![Project administration page](./media/add-service-hook.png)
 
-	Select **Create Subscription**.
+    Select **Create Subscription**.
 
 1. Add Jenkins.
 
