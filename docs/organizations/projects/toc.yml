@@ -1,5 +1,7 @@
 - name: About projects
   href: about-projects.md
+- name: Project & team quick reference
+  href: project-team-quick-reference.md
 - name: What do I get with a project?
   href: /azure/devops/user-guide/services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Resources granted to members
