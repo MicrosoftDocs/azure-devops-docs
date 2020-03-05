@@ -3,7 +3,7 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 03/05/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -174,6 +174,10 @@ extends:
   parameters:
     userpool: private-pool-1
 ```
+
+### Set required templates with approvals
+
+You can set the required template check on a resources to require that when you use a resource a template gets used.   
 
 ### Additional steps
 
