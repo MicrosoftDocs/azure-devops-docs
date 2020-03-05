@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/17/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Gradle
 # Build using a Gradle wrapper script
