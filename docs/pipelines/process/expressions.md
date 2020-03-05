@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 12/20/2019
+ms.date: 03/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -106,6 +106,8 @@ Depending on the execution context, different variables are available.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
 - If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
+
+Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
 
 ## Functions
 
@@ -450,9 +452,9 @@ As an example, consider an array of objects named `foo`. We want to get an array
 
 ```json
 [
-	{ "id": 1, "a": "avalue1"},
-	{ "id": 2, "a": "avalue2"},
-	{ "id": 3, "a": "avalue3"}
+    { "id": 1, "a": "avalue1"},
+    { "id": 2, "a": "avalue2"},
+    { "id": 3, "a": "avalue3"}
 ]
 ```
 
