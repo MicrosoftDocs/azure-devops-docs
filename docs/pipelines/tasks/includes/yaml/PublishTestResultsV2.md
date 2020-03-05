@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: pboraMSFT
+ms.author: pbora
+ms.date: 06/27/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Publish Test Results
 # Publish test results to Azure Pipelines
