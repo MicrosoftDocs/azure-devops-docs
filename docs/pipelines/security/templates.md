@@ -175,9 +175,9 @@ extends:
     userpool: private-pool-1
 ```
 
-### Set required templates with approvals
+### Set required templates
 
-You can set the [required template check](../process/approvals.md) on a resource to require that a specific template gets used. The required template check can be used when extending from a template. 
+To require that a specific template gets used, you can set the [required template check](../process/approvals.md) on a resource. The required template check can be used when extending from a template. 
 
 You can check on the status of a check when viewing a pipeline job. When the template is not called from your pipeline, the check will fail and the run will stop. You will see that your check failed. 
 
@@ -190,7 +190,47 @@ When the required template gets called, you will see that your check passed.
    > ![approval check passes](../process/media/approval-pass.png)
 
 
+Here the template `params.yml` is required with an approval on the resource. To trigger the pipeline to fail, comment out the reference to `params.yml`. 
 
+```yaml
+# params.yml
+parameters:
+- name: yesNo 
+  type: boolean
+  default: false
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+
+steps:
+- script: echo ${{ parameters.yesNo }}
+- script: echo ${{ parameters.image }}
+```
+
+```yaml
+# azure-pipeline.yml
+
+resources:
+ containers:
+     - container: my-container
+       endpoint: my-service-connection
+       image: mycontainerimages
+
+extends:
+    template: params.yml
+    parameters:
+        yesNo: true
+        image: 'windows-latest'
+
+```
 
 ### Additional steps
 
