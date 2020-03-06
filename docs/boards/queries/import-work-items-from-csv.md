@@ -115,6 +115,32 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Save Image](media/import-csv/import-update-error-1.png)
 
+::: moniker-end 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Export list as CSV 
+
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Export a query as CSV](../work-items/media/email/export.png)   
+
+::: moniker-end 
+
+::: moniker range="azure-devops"
 
 ## Q & A
 
@@ -163,28 +189,6 @@ The work items results always lists the data errors found for individual work it
 
 ::: moniker-end 
 
-
-::: moniker range=">= azure-devops-2019"
-
-## Export list as CSV 
-
-From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]   
-> Requires Azure DevOps Server 2019 Update 1 or later version. 
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-> [!div class="mx-imgBorder"]  
-> ![Export a query as CSV](../work-items/media/email/export.png)   
-
-::: moniker-end 
 
 
 ## Related articles
