@@ -151,8 +151,11 @@ Or to avoid downloading any of the artifacts at all:
 ---
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
-### pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables:
+### Pipeline resource variables
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. 
+
+
+## [Variables](#tab/vars)
 
 ```yaml
 resources.pipeline.<Alias>.projectName
@@ -169,6 +172,29 @@ resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
 
+## [Example](#tab/example)
+```yml
+resources:
+  pipelines:
+  - pipeline: myresourcevars  # identifier for the pipeline resource
+    source: mypipeline # source pipeline definition name
+    trigger: true 
+
+steps:
+  - script: |
+        echo $(resources.pipeline.myresourcevars.pipelineID)
+        echo $(resources.pipeline.myresourcevars.runName)
+        echo $(resources.pipeline.myresourcevars.runID)
+        echo $(resources.pipeline.myresourcevars.runURI)
+        echo $(resources.pipeline.myresourcevars.sourceBranch)
+        echo $(resources.pipeline.myresourcevars.sourceCommit)
+        echo $(resources.pipeline.myresourcevars.sourceProvider)
+        echo $(resources.pipeline.myresourcevars.requestedFor)
+        echo $(resources.pipeline.myresourcevars.requestedForID)
+
+```
+
+---
 ## Resources: `builds`
 
 If you have any external CI build system that produces artifacts, you can consume artifacts with a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI etc.
