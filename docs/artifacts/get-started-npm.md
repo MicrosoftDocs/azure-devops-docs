@@ -131,11 +131,11 @@ We recommend that you use two .npmrc files:
 
    3. Select **npm**.
 
-   4. Select **Get the tools** in the top right corner
+   4. Select **Get the tools** in the top-right corner
 
-   5. Follow steps **1** and **2** to download Node.js, npm and the artifacts credential provider.
+   5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
-   6. Select **Windows** if you are on a Windows Machine, or **Other** if you are on MacOs or Linux.
+   6. Select **Windows** if you are on a Windows Machine, or **Other** if you are on macOS or Linux.
    
    7. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
