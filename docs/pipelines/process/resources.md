@@ -155,10 +155,8 @@ Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/
 In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. 
 
 
-## [Variables](#tab/vars)
-
+## [Schema](#tab/schema)
 ```yaml
-resources.pipeline.<Alias>.projectName
 resources.pipeline.<Alias>.projectID
 resources.pipeline.<Alias>.pipelineName
 resources.pipeline.<Alias>.pipelineID
@@ -173,7 +171,7 @@ resources.pipeline.<Alias>.requestedForID
 ```
 
 ## [Example](#tab/example)
-```yml
+```yaml
 resources:
   pipelines:
   - pipeline: myresourcevars  # identifier for the pipeline resource
@@ -193,8 +191,8 @@ steps:
         echo $(resources.pipeline.myresourcevars.requestedForID)
 
 ```
-
 ---
+
 ## Resources: `builds`
 
 If you have any external CI build system that produces artifacts, you can consume artifacts with a `builds` resource. A `builds` resource can be any external CI systems like Jenkins, TeamCity, CircleCI etc.
@@ -372,7 +370,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
     type: string # type of the registry like ACR, GCR etc. 
     azureSubscription: string # Azure subscription (ARM service connection) for container registry;
     resourceGroup: string # resource group for your ACR
-    registry: string: # registry for container images
+    registry: string # registry for container images
     repository: string # name of the container image repository in ACR
     trigger: # Triggers are not enabled by default and need to be set explicitly
       tags:
@@ -397,7 +395,9 @@ resources:
 ```
 ---
 #### Container resource variables
-Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks.
+Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks. 
+
+## [Schema](#tab/schema)
 
 ```yaml
 resources.container.<Alias>.type
@@ -409,6 +409,36 @@ resources.container.<Alias>.URI
 resources.container.<Alias>.location
 ```
 Note: location variable is only applicable for `ACR` type of container resources.
+
+## [Example](#tab/example)
+
+In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](https://docs.microsoft.com/azure/container-registry/container-registry-concepts). 
+
+```yaml
+resources:
+ containers:
+     - container: mycontainer # name of the container (Alias) 
+       type: ACR # type of registry
+       azureSubscription: arm-connection # name of the ARM service connection
+       resourceGroup: rg-storage-eastus # Azure resource group with the container
+       registry: mycontainerregistry # Azure container registry name
+       repository: hello-world # name of the of container image collection
+       trigger:
+          tags:
+           - latest # tag for the container image to use
+
+steps:
+  - script: echo |
+      echo $(resources.container.mycontainer.type)
+      echo $(resources.container.mycontainer.registry)
+      echo $(resources.container.mycontainer.repository)
+      echo $(resources.container.mycontainer.tag)
+      echo $(resources.container.mycontainer.digest)
+      echo $(resources.container.mycontainer.URI)
+      echo $(resources.container.mycontainer.location)
+
+```
+---
 
 ## Troubleshooting authorization for a YAML pipeline
 
