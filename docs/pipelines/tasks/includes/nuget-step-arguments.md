@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.date: 08/10/2016
+author: steved0x
+ms.author: sdanie
+ms.prod: devops
+ms.technology: vs-devops-package
 ---
 
 <tr>
