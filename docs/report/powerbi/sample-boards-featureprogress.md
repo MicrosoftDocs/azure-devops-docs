@@ -84,10 +84,12 @@ The following table describes each part of the query.
 
 :::row:::
    :::column span="":::
-      Query part  
+      **Query part**  
+      ----------------
    :::column-end:::
    :::column span="2":::
-      Description
+      **Description**
+      ----------------
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -180,28 +182,7 @@ The following table describes each part of the query.
       Close Descendants().
    :::column-end:::
 :::row-end:::
-
-<!---
-
-
-<table width="90%">
-<tbody valign="top">
-<tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
-<tr><td><code>$filter=WorkItemType eq 'Feature'</code></td><td>Return Features.</td><tr>
-<tr><td><code>and State ne 'Cut'</code></td><td>Omit Features marked as Cut.</td><tr>
-<tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and Descendants/any()</code></td><td>Include all Features with atleast one Child WIT. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.</td><tr>
-<tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
-<tr><td><code>&$expand=Descendants(</code></td><td>Expand Descendants.</td><tr>
-<tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>
-<tr><td><code>/groupby((StateCategory), </code></td><td>Group the rollup by StateCategory. For more information on State Categories, see <a href="../../boards/work-items/workflow-and-state-categories.md">How workflow states and state categories are used in Backlogs and Boards.</td><tr>
-<tr><td><code>aggregate(StoryPoints with sum as TotalStoryPoints))</code></td><td>Aggregate sum of Story Points.</td><tr>
-<tr><td><code>)</code></td><td>Close Descendants().</td><tr>
-
-</tbody>
-</table>
-
--->
+ 
 
 ## Power BI transforms
 
