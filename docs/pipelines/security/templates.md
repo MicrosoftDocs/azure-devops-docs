@@ -181,11 +181,13 @@ You can set the [required template check](../process/approvals.md) on a resource
 
 You can check on the status of a check when viewing a pipeline job. When the template is not called from your pipeline, the check will fail and the run will stop. You will see that your check failed. 
 
-:::image type="content" source="../process/media/approval-fail.png" alt-text="approval check failed":::
+   > [!div class="mx-imgBorder"]
+   > ![approval check fails](media/approval-fail.png)
 
 When the required template gets called, you will see that your check passed. 
 
-:::image type="content" source="../process/media/approval-pass.png" alt-text="approval check passes":::
+   > [!div class="mx-imgBorder"]
+   > ![approval check passes](media/media/approval-pass.png)
 
 
 
