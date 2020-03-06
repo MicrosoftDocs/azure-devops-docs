@@ -48,7 +48,9 @@ When you run a pipeline, the execution of that run pauses before entering a stag
 
 ## Approvals for template resources
 
-With the required template approval, you can require that any pipeline using a service connection uses a specific YAML file. To define a required template approval:
+With the required template approval, you can require that any pipeline using a service connection uses a specific YAML template. When the approval is in place, a pipeline with a set approval will fail if the template is not referenced in the pipeline's YAML file. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
+
+To define a required template approval:
 
 1. In your Azure DevOps project, go to the [service connection](../library/service-endpoints.md) that you want to restrict. 
 
