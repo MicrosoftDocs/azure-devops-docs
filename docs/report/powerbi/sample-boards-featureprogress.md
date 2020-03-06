@@ -85,10 +85,16 @@ The following table describes each part of the query.
 :::row:::
    :::column span="":::
       **Query part**  
-      ----------------
    :::column-end:::
    :::column span="2":::
       **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------
+   :::column-end:::
+   :::column span="2":::
       ----------------
    :::column-end:::
 :::row-end:::
