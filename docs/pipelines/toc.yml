@@ -346,7 +346,8 @@
     href: packages/jenkins.md
 - name: Manage pipeline infrastructure
   items: 
-  - name: About pipeline infrastructure 
+  #- name: About pipeline infrastructure
+  - name: Add resources 
     href: process/resources.md
   - name: Set retention policies
     href: policies/retention.md
