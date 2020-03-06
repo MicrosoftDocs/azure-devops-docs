@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd 
 ---
 
 ### What key formats are supported for the SSH tasks?
