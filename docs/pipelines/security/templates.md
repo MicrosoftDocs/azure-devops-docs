@@ -187,7 +187,7 @@ You can check on the status of a check when viewing a pipeline job. When the tem
 When the required template gets called, you will see that your check passed. 
 
    > [!div class="mx-imgBorder"]
-   > ![approval check passes](../process/media/media/approval-pass.png)
+   > ![approval check passes](../process/media/approval-pass.png)
 
 
 
