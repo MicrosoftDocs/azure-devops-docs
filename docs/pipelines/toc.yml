@@ -238,6 +238,8 @@
       href: library/connect-to-azure.md
     - name: Azure SQL database
       href: targets/azure-sqldb.md
+    - name: Azure App Service
+      href: targets/deploy-to-azure-vscode.md  
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Function App on Container
