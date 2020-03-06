@@ -35,7 +35,7 @@ This tutorial walks you through setting up a CI/CD pipeline for deploying Node.j
 Create a Node.js application that can be deployed to the Cloud. This tutorial uses an application generator to quickly scaffold the application from a terminal.
 
 > [!TIP]
-> If you have already completed the [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) tutorial, you can skip ahead to Setup CI/CD Pipeline and deploy the Web App.
+> If you have already completed the [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) tutorial, you can skip ahead to [Setup CI/CD Pipeline](#setup-cicd-pipeline).
 > 
 
 ### Install the Express Generator 
@@ -79,7 +79,7 @@ At this point, we should test that our application runs. The generated Express a
 
 1. Follow [this link](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line) to push this project to GitHub using the command line. 
 
-1. Open your application folder in VS Code and get ready to deploy it to Azure.
+1. Open your application folder in VS Code and get ready to deploy to Azure.
 
 ## Setup CI/CD Pipeline
 
@@ -120,6 +120,9 @@ To use this service, you need to install the extension on VS Code. You can brows
 1. The guided workflow will generate a starter YAML file defining the build and deploy process. Commit & push the YAML file to proceed with the deployment.
 
     ![commit YAML](media/deploy-to-azure/commitandpush.png)
+
+    > [!TIP]
+    > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your GitHub repo to see the actions in progress.
 
