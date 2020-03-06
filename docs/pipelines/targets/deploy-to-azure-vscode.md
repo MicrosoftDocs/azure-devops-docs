@@ -40,7 +40,7 @@ Create a Node.js application that can be deployed to the Cloud. This tutorial us
 
 ### Install the Express Generator 
 
-[Express](https://www.expressjs.com/) is an popular framework for building and running Node.js applications. You can scaffold (create) a new Express application using the [Express Generator](https://expressjs.com/en/starter/generator.html) tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
+[Express](https://www.expressjs.com/) is a popular framework for building and running Node.js applications. You can scaffold (create) a new Express application using the [Express Generator](https://expressjs.com/en/starter/generator.html) tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
 
 > [!TIP]
 > To test that you've got `npm` correctly installed on your computer, type npm --help from a terminal and you should see the usage documentation.
@@ -97,7 +97,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
     ![extension installed](media/deploy-to-azure/extension-installed.png)
 
-1. To setup a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
+1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
     ![configure CI/CD](media/deploy-to-azure/configure.png)
 
