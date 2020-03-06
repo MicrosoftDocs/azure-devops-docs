@@ -418,7 +418,7 @@ In this example, there is an [Azure Resource Manager service connection](../libr
 resources:
  containers:
      - container: mycontainer # name of the container (Alias) 
-       type: ACR # type of service connection
+       type: ACR # type of registry
        azureSubscription: arm-connection # name of the ARM service connection
        resourceGroup: rg-storage-eastus # Azure resource group with the container
        registry: mycontainerregistry # Azure container registry name
