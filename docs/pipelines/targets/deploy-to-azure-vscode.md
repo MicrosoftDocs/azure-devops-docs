@@ -32,7 +32,7 @@ This tutorial walks you through setting up a CI/CD pipeline for deploying Node.j
 
 ## Create Node.js application
 
-Create a simple Node.js application that can be deployed to the Cloud. This tutorial uses an application generator to quickly scaffold the application from a terminal.
+Create a Node.js application that can be deployed to the Cloud. This tutorial uses an application generator to quickly scaffold the application from a terminal.
 
 > [!TIP]
 > If you have already completed the [Node.js](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial) tutorial, you can skip ahead to Setup CI/CD Pipeline and deploy the Web App.
@@ -40,7 +40,7 @@ Create a simple Node.js application that can be deployed to the Cloud. This tuto
 
 ### Install the Express Generator 
 
-[Express](https://www.expressjs.com/) is an extremely popular framework for building and running Node.js applications. You can scaffold (create) a new Express application using the [Express Generator](https://expressjs.com/en/starter/generator.html) tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
+[Express](https://www.expressjs.com/) is an popular framework for building and running Node.js applications. You can scaffold (create) a new Express application using the [Express Generator](https://expressjs.com/en/starter/generator.html) tool. The Express Generator is shipped as an npm module and installed by using the npm command-line tool `npm`.
 
 > [!TIP]
 > To test that you've got `npm` correctly installed on your computer, type npm --help from a terminal and you should see the usage documentation.
@@ -67,7 +67,7 @@ cd myExpressApp
 npm install
 ```
 
-At this point, we should test that our application runs. The generated Express application has a `package.json` file which includes a start script to run `node ./bin/www`. This will start the Node.js application running.
+At this point, we should test that our application runs. The generated Express application has a `package.json` file, that includes a start script to run `node ./bin/www`. This will start the Node.js application running.
 
 ### Run the application
 
@@ -89,6 +89,40 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 1. Bring up the **Extensions** view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the **View: Extensions** command `(Ctrl+Shift+X)`.
 
-1. 
+1. Search for **Deploy to Azure** extension and install.
 
+    ![deploy to azure](media/deploy-to-azure/deploy-to-azure.png)
 
+1. After the installation is finished, you will find the extension in enabled extension space.
+
+    ![extension installed](media/deploy-to-azure/extension-installed.png)
+
+1. To setup a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
+
+    ![configure CI/CD](media/deploy-to-azure/configure.png)
+
+1. Select a pipeline template you want to create from the list. Since we're targeting `Node.js`, select `Node.js with npm to App Service.`
+
+    ![pipeline template selection](media/deploy-to-azure/pipeline-template-selection.png)
+
+1. Select the target Azure Subscription to deploy your application.
+
+    ![Azure subscription](media/deploy-to-azure/azure-subscription.png)
+
+1. Select the target Azure resource to deploy your application.
+
+    ![target app](media/deploy-to-azure/target-app.png)
+
+1. Enter GitHub personal access token (PAT), required to populate secrets that are used in GitHub workflows. Set the scope to `repo` and `admin:repo_hook`.
+
+    ![pat scope](media/deploy-to-azure/gitHubPatScope.png)
+
+1. The guided workflow will generate a starter YAML file defining the build and deploy process. Commit & push the YAML file to proceed with the deployment.
+
+    ![commit YAML](media/deploy-to-azure/commitandpush.png)
+
+1. Navigate to your GitHub repo to see the actions in progress.
+
+    ![actions](media/deploy-to-azure/action-inprogress.png)
+
+1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
