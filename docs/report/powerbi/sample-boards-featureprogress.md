@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
-ms.date: 08/07/2019
+ms.date: 03/06/2020
 ---
 
 # Feature progress rollup sample report
@@ -39,9 +39,8 @@ let
         &"$filter=WorkItemType eq 'Feature' "
             &"and State ne 'Cut' "
             &"and startswith(Area/AreaPath,'{areapath}') "
-            &"and Descendants/any() "
-        &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
-        &"&$expand=Descendants( "
+            &"&$select=WorkItemId,Title,WorkItemType,State,AreaSK "
+            &"&$expand=Descendants( "
             &"$apply=filter(WorkItemType eq 'User Story') "
                 &"/groupby((StateCategory), "
                 &"aggregate(StoryPoints with sum as TotalStoryPoints)) "
@@ -82,6 +81,109 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
 
 The following table describes each part of the query.
 
+
+:::row:::
+   :::column span="":::
+      Query part  
+   :::column-end:::
+   :::column span="2":::
+      Description
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `$filter=WorkItemType eq 'Feature'`
+   :::column-end:::
+   :::column span="2":::
+      Return Features.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and State ne 'Cut'`
+   :::column-end:::
+   :::column span="2":::
+      Omit Features marked as Cut.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and startswith(Area/AreaPath,'{areapath}')`  
+   :::column-end:::
+   :::column span="2":::
+      Work items under a specific Area Path. Replacing with Area/AreaPath eq '{areapath}' returns items at a specific Area Path.  
+      To filter by Team Name, use the filter statement `Teams/any(x:x/TeamName eq '{teamname})'`.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `and Descendants/any()`
+   :::column-end:::
+   :::column span="2":::
+      Filters out any work item that has at least one or "any" descendant. Includes all Features with at least one Child WIT. To get all work items with their descendants, even if they don't have any, run a query without the `Descendants/any()` filter. To omit Features that don't have child User Stories, replace with `any(d:d/WorkItemType eq 'User Story')`.  
+      For all work items **with and without descendants**:  
+      `$filter=endswith(Area/AreaPath,'suffix')
+      &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
+      &$expand=Descendants($select=WorkItemId)`  
+      <br/>
+      For all workitems with **at least one descendant**:
+      `$filter=endswith(Area/AreaPath, 'suffix')and Descendants/any()
+      &$select=WorkItemId,Title,WorkItemType,State,Area, Descendants
+      &$expand=Descendants($select=WorkItemId)`
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `&$select=WorkItemId, Title, WorkItemType, State`  
+   :::column-end:::
+   :::column span="2":::
+      Select fields to return.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `&$expand=Descendants(`  
+   :::column-end:::
+   :::column span="2":::
+      Expand Descendants.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `$apply=filter(WorkItemType eq 'User Story')`  
+   :::column-end:::
+   :::column span="2":::
+      Filters the descendants. Only include User Stories (omits Tasks and Bugs).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `/groupby((StateCategory),`  
+   :::column-end:::
+   :::column span="2":::
+      Group the rollup by StateCategory. For more information on State Categories, see [How workflow states and state categories are used in Backlogs and Boards](../../boards/work-items/workflow-and-state-categories.md).
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `aggregate(StoryPoints with sum as TotalStoryPoints))`  
+   :::column-end:::
+   :::column span="2":::
+      Aggregate sum of Story Points.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `)`  
+   :::column-end:::
+   :::column span="2":::
+      Close Descendants().
+   :::column-end:::
+:::row-end:::
+
+<!---
+
+
 <table width="90%">
 <tbody valign="top">
 <tr><td width="25%"><b>Query part</b></td><td><b>Description</b></td><tr>
@@ -99,6 +201,7 @@ The following table describes each part of the query.
 </tbody>
 </table>
 
+-->
 
 ## Power BI transforms
 
