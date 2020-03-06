@@ -177,7 +177,18 @@ extends:
 
 ### Set required templates with approvals
 
-You can set the required template check on a resources to require that when you use a resource a template gets used.   
+You can set the [required template check](../process/approvals.md) on a resource to require that a specific template gets used. The required template check can be used when extending from a template. 
+
+You can check on the status of a check when viewing a pipeline job. When the template is not called from your pipeline, the check will fail and the run will stop. You will see that your check failed. 
+
+:::image type="content" source="../process/media/approval-fail.png" alt-text="approval check failed":::
+
+When the required template gets called, you will see that your check passed. 
+
+:::image type="content" source="../process/media/approval-pass.png" alt-text="approval check passes":::
+
+
+
 
 ### Additional steps
 
