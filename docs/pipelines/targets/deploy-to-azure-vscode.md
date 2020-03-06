@@ -93,7 +93,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
     ![deploy to azure](media/deploy-to-azure/deploy-to-azure.png)
 
-1. After the installation is finished, you will find the extension in enabled extension space.
+1. After the installation is complete, the extension will be located in enabled extension space.
 
     ![extension installed](media/deploy-to-azure/extension-installed.png)
 
