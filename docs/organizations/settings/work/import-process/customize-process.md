@@ -76,9 +76,10 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 
 ### Export and import a process  
 
-1. From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
+1. From the **Processes** tab, click &hellip; to open the context menu for the Hosted XML process that you want to export. You can only export Hosted XML processes.      
 
-   <img src="media/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Process page, Export Hosted XML process menu option ](media/export-process.png)
 
    Save the zip file and extract all files.
 
