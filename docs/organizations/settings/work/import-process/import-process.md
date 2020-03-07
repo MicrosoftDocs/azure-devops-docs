@@ -137,7 +137,7 @@ Once you've added a process, you can update it by importing a zip file where you
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
-	![Deleted field confirmation dialog(media/ALM_IP_InfoMessage.png)  
+	![Deleted field confirmation dialog](media/ALM_IP_InfoMessage.png)  
 
 
 <a id="default-process">  </a>
