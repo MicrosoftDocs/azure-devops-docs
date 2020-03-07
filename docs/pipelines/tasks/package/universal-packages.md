@@ -42,7 +42,7 @@ Use this task in a build or release pipeline to download, or package and publish
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed. You must have Azure Artifacts installed and licensed to select a feed here. |
 | `vstsFeedPackage`<br/>Package name | Name of package to download. |
 | `vstsPackageVersion`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
-| `feedDownloadExternal`<br/>Feed | Specifies the name of an external feed from which to download. |
+| `feedDownloadExternal`<br/>Feed | Specifies the name or ID of an external feed from which to download. |
 | `packageDownloadExternal`<br/>Package name | Specifies the package name to download. |
 | `versionDownloadExternal`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression, such as `*`, to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
 | `publishDirectory`<br/>Path to files to publish | Specifies the path to list of files to be published. |
