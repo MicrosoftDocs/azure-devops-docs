@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestOutcome API | Extensions for Azure DevOps Services
 description: Data representation of a test outcome.
 ms.assetid: a2a15ae6-687e-a316-0278-64f117011a86
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

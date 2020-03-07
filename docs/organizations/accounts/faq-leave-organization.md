@@ -2,11 +2,9 @@
 title: Troubleshoot leaving an organization
 titleSuffix: Azure DevOps Services
 description: Learn the answers to frequently asked questions (FAQs), like how to remove yourself from an organization when the owner is unavailable. 
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 01/10/2020

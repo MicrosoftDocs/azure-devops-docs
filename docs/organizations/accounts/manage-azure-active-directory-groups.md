@@ -3,11 +3,9 @@ title: Manage access with Azure Active Directory groups
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to control who can access Azure DevOps with Azure Active Directory groups
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/06/2019

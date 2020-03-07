@@ -3,9 +3,7 @@ title: New features enabled with upgrade
 titleSuffix: TFS
 description: Features that you can enable through the Configure Features Wizard after you've upgraded the application tier server for Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1A7B7A18-457F-4AFF-9151-FCF13B850907  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

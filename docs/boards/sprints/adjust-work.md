@@ -4,9 +4,7 @@ titleSuffix: Azure Boards and TFS
 description: Change work items assigned to a sprint or iteration working with Scrum methods 
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

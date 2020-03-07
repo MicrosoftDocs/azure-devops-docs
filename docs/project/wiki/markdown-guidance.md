@@ -2,10 +2,8 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach

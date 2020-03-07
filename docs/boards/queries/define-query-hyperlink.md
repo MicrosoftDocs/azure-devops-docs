@@ -3,11 +3,9 @@ title: Define query as a hyperlink
 titleSuffix: Azure Boards
 description: Construct a URL for a query in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.article:   
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,13 +1,8 @@
 ---
 title: Build and deploy to a Java web app on Linux
 description: Continuous integration and deployment (CI/CD) to a Java web app on Linux
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 49253EA0-9CD6-4082-A303-95F78C7599C2
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 02/24/2020
 monikerRange: 'azure-devops'
 ---

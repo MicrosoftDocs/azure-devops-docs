@@ -3,9 +3,7 @@ title: Permission Command
 titleSuffix: Azure Repos
 description: Permission Command
 ms.assetid: 7a0b5521-ee07-44eb-9b8f-f145d918ebeb
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

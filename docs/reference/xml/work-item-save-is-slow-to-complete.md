@@ -2,10 +2,8 @@
 title: Work item save is slow to complete
 titleSuffix: TFS
 description: Occurs when you save a work item.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 367d2f3d-8dcd-4311-a411-7ba93217aabf
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/20/2017

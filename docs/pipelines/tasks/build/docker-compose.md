@@ -2,10 +2,7 @@
 title: Docker Compose task
 description: Build, push or run multi-container Docker applications. Task can be used with Docker or Azure Container registry.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6975E2D1-96D3-4AFC-8A41-498B5D34EA19
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 02/06/2020

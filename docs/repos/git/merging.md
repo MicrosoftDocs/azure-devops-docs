@@ -3,9 +3,7 @@ title: Resolve Git merge conflicts
 titleSuffix: Azure Repos
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

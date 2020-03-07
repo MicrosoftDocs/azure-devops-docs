@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Customize cards on the Kanban or Sprint/Scrum/taskboards in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

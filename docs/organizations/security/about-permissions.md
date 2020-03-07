@@ -2,12 +2,10 @@
 title: How are permissions and groups defined?
 titleSuffix: Azure DevOps
 description: Understand how permissions are managed in Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

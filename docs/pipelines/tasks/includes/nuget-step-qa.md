@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.date: 09/10/2019
+author: steved0x
+ms.author: sdanie
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ---
 
 ### Why should I check in a NuGet.Config?

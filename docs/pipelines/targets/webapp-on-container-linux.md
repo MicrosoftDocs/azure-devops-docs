@@ -2,10 +2,7 @@
 title: Deploy an Azure Web App Container
 description: Deploy to Azure Web App Container from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: atulmal

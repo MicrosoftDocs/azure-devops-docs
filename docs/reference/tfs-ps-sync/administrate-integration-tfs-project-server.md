@@ -2,10 +2,8 @@
 title: Administrate the integration of TFS and Project Server
 titleSuffix: TFS 
 description: Manage the configuration of Team Foundation Server & Project Server to support data synchronization 
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 529c5a49-31d7-4080-b3b5-1bcc95c8a102
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

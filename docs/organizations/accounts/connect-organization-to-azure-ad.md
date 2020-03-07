@@ -3,11 +3,9 @@ title: Connect organization to Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to connect your organization to your Azure Active Directory
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 10/17/2019

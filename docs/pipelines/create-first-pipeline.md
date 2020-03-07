@@ -2,11 +2,8 @@
 title: Create your first pipeline
 ms.custom: seodec18
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 02/14/2020

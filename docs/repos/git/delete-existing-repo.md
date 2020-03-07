@@ -3,9 +3,7 @@ title: Delete a Git repo from your project
 titleSuffix: Azure Repos
 description: Remove an existing Git repo in an Azure DevOps Services or Team Foundation Server project
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Result Retention Settings | REST API Reference for Team Foundation Server
 description: Work with test result retention settings programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 8A82A554-48F3-4A0B-A119-8C76A7E966DD
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -2,11 +2,9 @@
 title: Manage link types
 titleSuffix: TFS  
 description: Customize the link types to track related work, dependencies, and changes made over time - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: bf160228-16db-45f2-9f4f-3cda82c62a88
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

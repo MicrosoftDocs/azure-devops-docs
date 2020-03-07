@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Understand the objects and items used to track work in Azure Boards & TFS
 ms.technology: devops-agile
 ms.custom: seodec18
-ms.prod: devops
 ms.assetid:  
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

@@ -3,9 +3,7 @@ title: Use the Get command to download TFVC files/folders
 titleSuffix: Azure Repos
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

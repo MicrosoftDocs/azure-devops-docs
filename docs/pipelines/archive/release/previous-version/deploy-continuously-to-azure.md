@@ -3,10 +3,7 @@ title: Deploy continually to Azure with Release Management
 ms.custom: seodec18
 description: Release your app continuously to Microsoft Azure environments with Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

@@ -3,12 +3,7 @@ title: Conditions
 ms.custom: seodec18
 description: Learn about how you can write custom conditions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: C79149CC-6E0D-4A39-B8D1-EB36C8D3AB89
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 1/16/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -120,7 +115,7 @@ and(always(), eq(variables['Build.Reason'], 'Schedule'))
 
 ### Use a template parameter as part of a condition
 
-Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is false.
+Parameter expansion happens before conditions are considered, so you can embed parameters inside conditions. The script in this YAML file will run because `parameters.doThing` is true.
 
 ```yaml
 parameters:
@@ -128,7 +123,7 @@ parameters:
 
 steps:
 - script: echo I did a thing
-  condition: and(succeeded(), eq('${{ parameters.doThing }}', false))
+  condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
 ```
 
 ### Use the output variable from a job in a condition in a subsequent job

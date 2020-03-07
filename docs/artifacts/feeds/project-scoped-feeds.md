@@ -1,11 +1,7 @@
 ---
 title: Project scoped feeds
 description: Project scoped feeds in Azure Artifacts in Azure DevOps Services or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 10/28/2019
 monikerRange: '>= tfs-2017'

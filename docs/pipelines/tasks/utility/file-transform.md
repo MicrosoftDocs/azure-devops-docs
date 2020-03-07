@@ -2,10 +2,7 @@
 title: File Transform task
 description: Apply configuration file transformations and variable substitution to a target package or folder
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7B6A6B5C-8AA1-410A-AE1F-08D59AF00E7B
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

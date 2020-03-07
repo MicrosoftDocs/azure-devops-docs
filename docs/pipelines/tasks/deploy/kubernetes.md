@@ -3,13 +3,10 @@ title: Kubectl task
 titleSuffix: Azure Pipelines & TFS
 description: Deploy, configure, or update a Kubernetes cluster in Azure Container Service by running kubectl commands.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: CBC316A2-586F-4DEF-BE79-488A1F503564
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/28/2019
+ms.date: 02/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -263,6 +260,12 @@ You can use pipeline variables to pass literal values when creating ConfigMap, a
 </table>
 
 ::: moniker-end
+
+## Troubleshooting
+
+### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
+
+You can grant hosted agents access through your firewall by whitelisting the IP addresses for the hosted agents. For more details, see [Agent IP ranges](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops#agent-ip-ranges)
 
 ## Open source
 

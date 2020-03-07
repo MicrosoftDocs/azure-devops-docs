@@ -2,12 +2,10 @@
 title: Change request field reference (CMMI)
 titleSuffix: Azure Boards
 description: Track change requests for CMMI work items, provide description and reference name  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 1b95abfa-a1cb-4ebd-aff2-843cf6eec333
 ms.topic: reference
 ms.author: kaelli
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---

@@ -2,11 +2,6 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 02/12/2020
 monikerRange: "> azure-devops-2019"
 ---

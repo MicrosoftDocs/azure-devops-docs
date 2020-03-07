@@ -5,8 +5,6 @@ description: Learn about security roles and where they are used to manage permis
 ms.technology: devops-security
 ms.assetid: 
 toc: show
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

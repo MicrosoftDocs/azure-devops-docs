@@ -2,10 +2,7 @@
 title: Build GitHub repositories
 description: Using a GitHub repository with Azure Pipelines
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 10/21/2019
@@ -151,13 +148,13 @@ By installing the GitHub App in your GitHub account or organization, your pipeli
 
 To use the GitHub App, install it in your GitHub organization or user account for some or all repositories. Installation requires you to be a GitHub organization owner or repository admin.
 
-After installation, the GitHub App will become Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s GitHub identity which may lose access to the repository.
+After installation, the GitHub App will become Azure Pipelines' default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as "Azure Pipelines" instead of a user's GitHub identity which may lose access to the repository.
 
 The GitHub App can be installed and uninstalled from the app's [homepage](https://github.com/apps/azure-pipelines).
 
 If you install the GitHub App for all repositories in a GitHub organization, you don't need to worry about Azure Pipelines sending mass emails or automatically setting up pipelines on your behalf. As an alternative to installing the app for all repositories, repository admins can install it one at a time for individual repositories. This requires more work for admins, but has no advantage nor disadvantage.
 
-After installation, the GitHub App will be Azure Pipelines’ default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as “Azure Pipelines” instead of a user’s GitHub identity, which may lose access to the repository.
+After installation, the GitHub App will be Azure Pipelines' default method of authentication to GitHub (instead of OAuth) when pipelines are created for the repositories. This is recommended so that pipelines run as "Azure Pipelines" instead of a user's GitHub identity, which may lose access to the repository.
 
 >[!NOTE]
 >Once the GitHub App is installed, pipelines can be created for the organization's repositories in different Azure DevOps organizations and projects. However, if you create pipelines for a single repository in multiple Azure DevOps organizations, only the first organization's pipelines can be automatically triggered by GitHub commits or pull requests. Manual or scheduled builds are still possible in secondary Azure DevOps organizations.
@@ -634,7 +631,7 @@ Repository collaborators can comment on a pull request to manually run a pipelin
 
 You may not want to automatically build pull requests from unknown users until their changes can be reviewed. You can configure Azure Pipelines to build GitHub pull requests only when authorized by your team.
 
-To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators’ pull request comments** and save the pipeline. Now, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>` as described above.
+To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline's settings. Then, under **Pull request validation**, enable **Only trigger builds for collaborators' pull request comments** and save the pipeline. Now, the pull request validation build will not be triggered automatically. Only repository owners and collaborators with 'Write' permission can trigger the build by commenting on the pull request with `/AzurePipelines run` or `/AzurePipelines run <pipeline-name>` as described above.
 
 #### Troubleshoot pull request comment triggers
 
@@ -731,7 +728,7 @@ The build pipeline will check out your Git submodules as long as they are:
 
   - Added by using a URL relative to the main repository. 
     - For example, this one would be checked out: `git submodule add ../../submodule.git mymodule` 
-	- This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
+    - This one would not be checked out: `git submodule add https://dev.azure.com/fabrikamfiber/_git/ConsoleApp mymodule`
 
 
 #### Authenticated submodules
@@ -1007,7 +1004,7 @@ Depending on the authentication type and ownership of the repository, specific p
 - Navigate [here](https://github.com/apps/azure-pipelines) and install the app in the GitHub organization of your repository.
 - During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contains the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
 - In the next page that appears, you do not need to proceed creating a new pipeline.
-- Edit your pipeline by visiting the Builds page (e.g., https://dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
+- Edit your pipeline by visiting the Builds page (e.g., https:\//dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
 - Select the "Get sources" step in the pipeline.
 - On the green bar with text "Authorized using connection", click "Change" and select the GitHub App connection with the same name as the GitHub organization in which you installed the app.
 - On the toolbar, select "Save and queue" and then "Save and queue". Click the link to the build that was queued to make sure it succeeds.
