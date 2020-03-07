@@ -5,14 +5,8 @@ ms.custom: seodec18
 description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: rabououn
-author: ramiMSFT
 ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
----
 
 # Artifacts in Azure Pipelines
 

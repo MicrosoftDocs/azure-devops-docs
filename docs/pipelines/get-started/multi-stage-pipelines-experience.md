@@ -3,9 +3,6 @@ title: Multi-stage pipelines user experience
 ms.custom: seodec18
 description: Learn how to navigate using the multi-stage pipelines user interface
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/09/2019

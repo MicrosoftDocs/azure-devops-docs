@@ -3,9 +3,7 @@ title: Link types reference
 titleSuffix: Azure Boards
 description: Reference guide to all link types defined for Azure DevOps and Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

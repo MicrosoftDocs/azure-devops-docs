@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Begin planning your organizational structure, including projects, teams, repos, version control
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW

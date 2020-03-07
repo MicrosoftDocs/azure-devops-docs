@@ -4,9 +4,7 @@ titleSuffix: Azure Boards & TFS
 description: Default permissions and access levels to support work-tracking tasks in Azure DevOps Services and Team Foundation Server
 ms.custom: boards-get-started
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -3,9 +3,7 @@ title: Rename or move files and folders | Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Rename or move files and folders using Team Foundation Version Control (TFVC) commands
 ms.assetid: 90839209-cb51-4c00-ae19-08e7343093ea
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

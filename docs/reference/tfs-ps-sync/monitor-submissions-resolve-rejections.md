@@ -2,10 +2,8 @@
 title: Monitor work item submissions and resolve rejections
 titleSuffix: TFS
 description: Monitor the status of work items submitted to Project Server for participation in data synchronization with Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 13d38542-a0e8-411b-80ac-e8bb2b5c5f61
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

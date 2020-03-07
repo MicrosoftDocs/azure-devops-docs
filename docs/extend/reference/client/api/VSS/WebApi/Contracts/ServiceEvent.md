@@ -2,10 +2,8 @@
 title: VSS/WebApi/Contracts ServiceEvent API | Extensions for Azure DevOps Services
 description: Data representation of a service event.
 ms.assetid: 8bae4734-8da6-c9c0-d93e-babeb0900aa1
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

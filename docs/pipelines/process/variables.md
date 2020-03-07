@@ -3,13 +3,8 @@ title: Define variables
 ms.custom: seodec18
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 1/03/2020
+ms.date: 02/27/2020
 
 monikerRange: '>= tfs-2015'
 ---

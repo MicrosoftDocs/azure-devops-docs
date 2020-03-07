@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestPoint API | Extensions for Azure DevOps Services
 description: Data representation of a test point.
 ms.assetid: 71ca5336-a130-7a63-0174-db148efb0730
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

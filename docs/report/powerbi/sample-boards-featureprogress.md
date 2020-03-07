@@ -2,10 +2,8 @@
 title: Feature Progress rollup sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to display Feature progress rollup by Story Pointas  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 ms.custom: powerbisample
 author: KathrynEE
@@ -90,7 +88,7 @@ The following table describes each part of the query.
 <tr><td><code>$filter=WorkItemType eq 'Feature'</code></td><td>Return Features.</td><tr>
 <tr><td><code>and State ne 'Cut'</code></td><td>Omit Features marked as Cut.</td><tr>
 <tr><td><code>and startswith(Area/AreaPath,'{areapath}')</code></td><td>Work items under a specific Area Path. Replacing with <code>Area/AreaPath eq '{areapath}'</code> returns items at a specific Area Path.<br>To filter by Team Name, use the filter statement <code>Teams/any(x:x/TeamName eq '{teamname})'</code>.</td><tr>
-<tr><td><code>and Descendants/any()</code></td><td>Include all Features, even those with no User Stories. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.</td><tr>
+<tr><td><code>and Descendants/any()</code></td><td>Include all Features with atleast one Child WIT. Replace with "any(d:d/WorkItemType eq 'User Story')" to omit Features that don't have child User Stories.</td><tr>
 <tr><td><code>&$select=WorkItemId, Title, WorkItemType, State</code></td><td>Select fields to return.</td><tr>
 <tr><td><code>&$expand=Descendants(</code></td><td>Expand Descendants.</td><tr>
 <tr><td><code>$apply=filter(WorkItemType eq 'User Story')</code></td><td>Filters the descendants. Only include User Stories (omits Tasks and Bugs).</td><tr>

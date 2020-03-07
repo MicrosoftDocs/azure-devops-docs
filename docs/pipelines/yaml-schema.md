@@ -2,10 +2,7 @@
 title: YAML schema
 ms.custom: seodec18
 description: An overview of all YAML syntax.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
@@ -663,7 +660,7 @@ Azure Pipelines supports four kinds of templates:
 - [Variable](#variable-templates)
 
 You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
-- [Parameter](#parameter-templates)
+- [Parameter](#parameters)
 
 ::: moniker-end
 
@@ -947,13 +944,14 @@ steps:
 
 ---
 
-### Parameter templates
+## Parameters
 
-You can use templates to define how parameters can be used. 
+You can use parameters in templates and pipelines. 
 
-# [Schema](#tab/schema)
+### [Schema](#tab/parameter-schema)
 
-In the main pipeline:
+The type and name fields are required when defining parameters. See all [parameter data types](process/runtime-parameters.md#parameter-data-types).
+
 
 ```yaml
 parameters:
@@ -964,16 +962,37 @@ parameters:
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
-And in the extended template:
+### [YAML Example](#tab/yaml-example)
 
 ```yaml
-parameters: { string: any }   # expected parameters
+# File: azure-pipelines.yml
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+
+trigger: none
+
+jobs:
+- job: build
+  displayName: build
+  pool: 
+    vmImage: ${{ parameters.image }}
+  steps:
+    - script: echo The image parameter is ${{ parameters.image }}```
 ```
-See all [parameter data types](process/templates.md#parameter-data-types). 
 
-# [Example](#tab/example)
+### [Template Example](#tab/template-example)
 
-In this example, the pipeline using the template supplies the values to fill into the template.
+You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
@@ -998,6 +1017,8 @@ extends:
 ```
 
 See [templates](process/templates.md) for more about working with templates.
+
+---
 
 ::: moniker-end
 

@@ -2,10 +2,8 @@
 title: Test Case Management Reporting FAQs   
 description: FAQs for Test Case Management Reporting for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019

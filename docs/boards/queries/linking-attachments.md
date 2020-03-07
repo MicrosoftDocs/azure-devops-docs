@@ -3,9 +3,7 @@ title: Query by link of attachment count
 titleSuffix: Azure Boards
 description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

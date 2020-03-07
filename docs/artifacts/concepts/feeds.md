@@ -2,12 +2,8 @@
 title: What are feeds? | Azure Artifacts
 description: Feeds manage and set permissions for packages in Azure DevOps Services or Team Foundation Server
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 10/28/2019
 monikerRange: '>= tfs-2017'
 ---

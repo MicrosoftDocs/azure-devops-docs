@@ -2,10 +2,8 @@
 title: Visual Studio Marketplace overview | Azure DevOps
 description: Overview of Visual Studio, Visual Studio Code, and Azure DevOps extensions offered through the Visual Studio Marketplace
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/26/2019

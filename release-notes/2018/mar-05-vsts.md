@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 description: In the Sprint 131 Update of Visual Studio Team Services (VSTS), there are a few features that have received a large amount of feedback and activity on UserVoice, including Work Items hub.

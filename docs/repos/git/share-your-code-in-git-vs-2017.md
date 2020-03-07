@@ -3,10 +3,8 @@ title: Share your code with Git using Visual Studio 2017
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2017
 ms.assetid: d34e594b-49c8-456f-87b4-fac75ef0d5c2
-ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

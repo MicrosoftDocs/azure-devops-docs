@@ -3,12 +3,7 @@ title: Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -316,7 +311,7 @@ Server jobs are not supported in this version of TFS.
 
 <h2 id="dependencies">Dependencies</h2>
 
-When you define multiple jobs in a single stage, you can specify dependencies between them.
+When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies.
 
 > [!NOTE]
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).

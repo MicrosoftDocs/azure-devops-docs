@@ -2,10 +2,7 @@
 title: Deploy a function app to Azure Functions windows
 description: Deploy to Azure Functions windows from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
 ms.custom: seodec18
 ms.author: puagarw

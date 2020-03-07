@@ -2,10 +2,7 @@
 title: Deploy an Azure VM using an RM template
 description: Provision Azure virtual machines (VMs) using ARM templates by using Azure Pipelines or Team Foundation Server (TFS) 
 ms.assetid: E6CF9C79-4A2A-45EF-8278-EA6AFA81CBAD
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

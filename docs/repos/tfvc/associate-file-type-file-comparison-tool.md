@@ -3,9 +3,7 @@ title: Associate a file type with a file-comparison tool
 titleSuffix: Azure Repos
 description: Associate a file type with a file-comparison tool
 ms.assetid: 3cda923d-7bd8-4ff7-a071-03d8cf60d509
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

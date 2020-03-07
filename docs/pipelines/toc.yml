@@ -99,6 +99,8 @@
       displayName: secrets, expressions, queue time, expansion
     - name: Use predefined variables
       href: build/variables.md
+    - name: Use runtime parameters
+      href: process/runtime-parameters.md
     - name: Use classic RM variables
       href: release/variables.md
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
@@ -344,7 +346,8 @@
     href: packages/jenkins.md
 - name: Manage pipeline infrastructure
   items: 
-  - name: About pipeline infrastructure 
+  #- name: About pipeline infrastructure
+  - name: Add resources 
     href: process/resources.md
   - name: Set retention policies
     href: policies/retention.md
@@ -379,6 +382,9 @@
       href: agents/v2-windows.md
     - name: Windows agents (TFS 2015)
       href: agents/v1-windows.md
+    - name: Scale set agents
+      href: agents/vmss.md
+      displayName: byos, elastic agents, VMSS, autoscale
     - name: Run an agent behind a web proxy
       href: agents/proxy.md
     - name: Run an agent in Docker

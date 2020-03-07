@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use keyboard shortcuts in the web portal product, portfolio, and sprint backlogs 
 ms.custom: seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

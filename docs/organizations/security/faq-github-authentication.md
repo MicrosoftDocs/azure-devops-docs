@@ -1,11 +1,9 @@
 ---
 title: Troubleshoot authenticating and inviting GitHub users
 description: Troubleshoot authenticating with a GitHub identity, as well as inviting other GitHub users to Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2019

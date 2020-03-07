@@ -1,7 +1,6 @@
 ---
 title: Stakeholder licensing – Aug 27
 description: VSTS release notes for August 27 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 7cabae70-f736-4013-a69a-9df0a2c2b59b
