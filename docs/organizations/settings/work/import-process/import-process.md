@@ -86,7 +86,7 @@ Name your process something other than Scrum, Agile, or CMMI. These system proce
 	> [!div class="mx-imgBorder"]  
 	> ![Import Process dialog, choose process file to import](media/import-process-dialog.png)
 
-	Check the **Replace existing template** if you are updating an existing template. The import process overwrites any template that has the same name as the one you import and requires you check this box to confirm you want it replaced.
+	Check the **Replace existing template** if you are updating an existing template. The import process overwrites any template that has the same name as the one you import and requires that you check this box to confirm you want it replaced.
 
 	> [!IMPORTANT]  
 	> You can't update one of the locked processes: Agile, CMMI, and Scrum.  
@@ -137,9 +137,8 @@ Once you've added a process, you can update it by importing a zip file where you
     Go ahead and check the box and proceed with the import. To learn more about each message, click the forward link provided. 
     [Information messages](resolve-errors.md#info-only) don't require any action on your part.  
 
-    <img src="media/ALM_IP_InfoMessage.png" alt="Deleted field confirmation dialog" style="border: 2px solid #C3C3C3;" />
+	![Deleted field confirmation dialog(media/ALM_IP_InfoMessage.png)  
 
-     
 
 <a id="default-process">  </a>
 
@@ -147,8 +146,8 @@ Once you've added a process, you can update it by importing a zip file where you
 
 Set a process as the default to have it preselected for all new projects you plan to create.  
 
-	> [!div class="mx-imgBorder"]  
-	> ![Process page, hosted XML process, set as default process menu option](media/set-default-process.png) 
+> [!div class="mx-imgBorder"]  
+> ![Process page, hosted XML process, set as default process menu option](media/set-default-process.png) 
 
 <a id="export-process">  </a>
 
