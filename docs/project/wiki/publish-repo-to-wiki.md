@@ -61,7 +61,7 @@ Begin by connecting to your project using a [supported web browser](/azure/devop
 Choose **Overview>Wiki**.
 
 > [!div class="mx-imgBorder"]  
-> ![![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
+> ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
 If you need to switch your team project, choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
