@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ms.date: 03/06/2020
 ---
 
-# Process and projects    
+# Import and export a Hosted XML process  
 
 **Azure DevOps Services (Hosted XML)**
 
@@ -61,7 +61,6 @@ Migration to Azure DevOps Services is a great time to think about process alignm
 6.  Using the imported process(es), create projects on Azure DevOps Services for each you want to migrate. 
 
 <a id="open-process-wit">  </a>
-### Open Process in the admin context
 
 [!INCLUDE [temp](../../includes/open-process-admin-context-ts-only.md)]
 
@@ -146,13 +145,10 @@ Once you've added a process, you can update it by importing a zip file where you
 
 ## Set the default process
 
-Set a process as the default to have it preselected for all new projects you plan to create. 
-
+Set a process as the default to have it preselected for all new projects you plan to create.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process page, hosted XML process, set as default process menu option](media/set-default-process.png) 
-
-<img src="media/import-process-set-default.png" alt="Process page, Set default process" style="border: 2px solid #C3C3C3;" />
 
 <a id="export-process">  </a>
 
@@ -161,5 +157,12 @@ Set a process as the default to have it preselected for all new projects you pla
 Export a process when you want to update it or use it as the basis for creating another process. 
 
 The system exports a zip file containing an XML representation of the process.  This can be modified and later imported.  
+
+## Related articles
+
+- [Customize a Hosted XML process](customize-process.md)
+- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited)
+- [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
+- [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
 
 

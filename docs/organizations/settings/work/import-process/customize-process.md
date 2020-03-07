@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ms.date: 10/16/2019
 ---
 
-# Customize a process when using Hosted XML
+# Customize a Hosted XML process  
 
 **Azure DevOps Services (Hosted XML)**
 
@@ -73,7 +73,6 @@ to make sure it conforms to the [constraints placed on templates for import](#ru
 <a id="open-process-wit">  </a>
 
 [!INCLUDE [temp](../../includes/open-process-admin-context-ts-only.md)]
-
 
 ### Export and import a process  
 
@@ -326,3 +325,10 @@ For the Hosted XML process model, the following limits are placed on global list
 The ```FORM``` element and its child elements must conform to the syntax and rules described in [FORM XML element reference](../../../../reference/xml/all-form-xml-elements-reference.md).   
 The ```Control``` element can't specify a custom control. Custom controls aren't supported.  
 
+
+## Related articles
+
+- [Import and export a Hosted XML process](import-process.md)
+- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited)
+- [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
+- [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
