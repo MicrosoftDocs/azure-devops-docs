@@ -329,6 +329,6 @@ The ```Control``` element can't specify a custom control. Custom controls aren't
 ## Related articles
 
 - [Import and export a Hosted XML process](import-process.md)
-- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited)
+- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
 - [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
 - [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
