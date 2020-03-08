@@ -163,6 +163,13 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
 
+	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration. 
+
+	- **Planned:** Number of work items defined at the start of the sprint  
+	- **Completed:** Number of work items completed within the sprint start and end dates  
+	- **Completed Late:** Number of work items completed after the end of the sprint date  
+	- **Incomplete:** Number of work items which as yet aren't  completed.  
+
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
 1. To add the report to a dashboard, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.

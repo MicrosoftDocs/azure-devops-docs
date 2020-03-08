@@ -81,6 +81,14 @@ One of the main choices teams have is choosing the work item types they use to t
 :::row-end:::
 :::row:::
    :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="2":::
+      ----------------------------
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
       Tasks only
    :::column-end:::
    :::column span="2":::
