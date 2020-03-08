@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customize a process to import using Hosted XML
 titleSuffix: Azure DevOps Services
 description: Customize a Hosted XML process to support custom fields, work item types, global lists, and process configuration  
@@ -10,7 +10,7 @@ monikerRange: 'azure-devops'
 ms.date: 10/16/2019
 ---
 
-# Customize a process when using Hosted XML
+# Customize a Hosted XML process  
 
 **Azure DevOps Services (Hosted XML)**
 
@@ -65,21 +65,21 @@ A process is a zip file containing a set of interdependent files used to define 
 For a summary of differences between what's supported in Azure DevOps Services versus an on-premises TFS, see [Process template customizations differences](differences.md).  
 
 ## How to customize a process
+
 It's easiest to customize a process by starting with a well-defined process rather than building one from scratch.   
 While you can update an existing process you've used with an on-premises TFS, you'll need 
 to make sure it conforms to the [constraints placed on templates for import](#rule-summary).
 
 <a id="open-process-wit">  </a>
-### Open Process in the admin context
 
 [!INCLUDE [temp](../../includes/open-process-admin-context-ts-only.md)]
 
-
 ### Export and import a process  
 
-1. From the Process tab, click the  open the &hellip; context menu for the process that you want to export.      
+1. From the **Processes** tab, click &hellip; to open the context menu for the Hosted XML process that you want to export. You can only export Hosted XML processes.      
 
-   <img src="media/customize-process-export-template.png" alt="Account settings admin context, Export a process" style="border: 2px solid #C3C3C3;" /> 
+	> [!div class="mx-imgBorder"]  
+	> ![Process page, Export Hosted XML process menu option ](media/export-process.png)
 
    Save the zip file and extract all files.
 
@@ -297,7 +297,9 @@ The following example isn't valid as it specifies the ```ALLOWEDVALUES``` elemen
     </FIELD>
 ```
 <a id="work-item-workflow"></a>
+
 ### Workflow
+
 The  ```WORKFLOW``` element and its child elements must conform to the syntax and rules described in [WORKFLOW XML element reference](../../../../reference/xml/all-workflow-xml-elements-reference.md). In addition, it must meet the following conditions:   
 *   Limit definition of workflow states to 16 for each WIT 
 *   Must define all workflow states that are mapped to a metastate in the ProcessConfiguration definition file        
@@ -308,6 +310,7 @@ For a description of state category and mappings, see [Workflow states and state
 
 
 <a id="wit-global-list-definitions"></a>
+
 ### Global lists
 
 For the Hosted XML process model, the following limits are placed on global list import: 
@@ -317,7 +320,16 @@ For the Hosted XML process model, the following limits are placed on global list
 
 
 <a id="work-item-form-layout"></a>
+
 ### Form layout 
+
 The ```FORM``` element and its child elements must conform to the syntax and rules described in [FORM XML element reference](../../../../reference/xml/all-form-xml-elements-reference.md).   
 The ```Control``` element can't specify a custom control. Custom controls aren't supported.  
 
+
+## Related articles
+
+- [Import and export a Hosted XML process](import-process.md)
+- [Change a project from Hosted XML to an inherited process](../change-process-from-hosted-to-inherited.md)
+- [Clone a Hosted XML process to an Inheritance process](../upgrade-hosted-to-inherited.md)
+- [Supported operations when moving from Hosted XML to an inherited process](../upgrade-support-hosted-to-inherited.md)
