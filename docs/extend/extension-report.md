@@ -13,7 +13,7 @@ ms.date: 11/12/2019
 # Extension reporting hub
 
 Now that your extension is available in the [Visual Studio Marketplace](/azure/devops/extend/extension-report) you can use the **Reports** feature to track and analyze how the extension is performing and take required actions. 
-To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension orselect**Reports** link on the extension details page.
+To visit the extension hub, browse to your [publisher page](https://aka.ms/vsmarketplace-manage) and select the extension or select the **Reports** link on the extension details page.
 
 ## Acquisition 
 
@@ -53,7 +53,7 @@ All data elements available in the reports page are also available for download 
 
 For paid extension, you can use the <strong>Contact</strong> action to reach out to your users for transactional communication. this functionality is available only for publishers with contributor + access on the extension. 
 
-Marketplace brokers the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who have opt-ed in for communication are sent the email. 
+Marketplace brokers the first communication with the user as our privacy policy doesn't allow direct sharing of customer email addresses. Only users who have opted in for communication are sent the email. 
 Last contacted date for an organization is as also updated after sending a communication. 
 
 **Important** Follow the below guidance on transactional and promotional communication. A publisher found to do promotional communication or spamming users is *added to a deny list* and can't use the **Contact** feature for any of their extensions. 
