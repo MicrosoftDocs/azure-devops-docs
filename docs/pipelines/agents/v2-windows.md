@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 03/09/2019
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
