@@ -3,7 +3,7 @@ title: Keep your OSS packages safe with upstream sources | Azure Artifacts
 description: Use upstream sources in Azure Artifacts to keep your OSS packages safe from failing dependencies.
 ms.technology: devops-artifacts
 ms.reviewer: amullans
-ms.date: 12/04/2018
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -180,7 +180,7 @@ npm install --force
 Clear your local package cache:
 
 ```
-nuget locals --clear all
+nuget locals -clear all
 ```
 
 Then, download and install packages from the upstream sources:
