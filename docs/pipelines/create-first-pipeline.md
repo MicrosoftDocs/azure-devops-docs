@@ -174,7 +174,15 @@ If your new pipeline can be created by copying another pipeline, follow the inst
 3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
 * * *
+## Export and Import a pipeline
+You can also create new pipeline by exporting an existing pipeline and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
 
+
+
+
+
+
+* * *
 [!INCLUDE [include](includes/get-status-badge.md)]
 
 [!INCLUDE [include](includes/create-first-pipeline-next-steps.md)]
