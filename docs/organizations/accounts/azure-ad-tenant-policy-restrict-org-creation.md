@@ -1,14 +1,14 @@
 ---
 title: Restrict new organization creation, Azure Active Directory tenant policy
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
-description: Learn how to restrict users from creating new organizations via Azure Active Directory
+ms.custom: 
+description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Azure Active Directory tenant policy.
 ms.technology: devops-accounts
 ms.assetid: 
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 11/15/2019
+ms.date: 03/05/2020
 monikerRange: 'azure-devops'
 ---
 
