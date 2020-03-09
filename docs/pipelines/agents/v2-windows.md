@@ -257,6 +257,7 @@ After configuring the agent:
 ```
 
 This will run through a diagnostic suite that may help you troubleshoot the problem.
+The diagnostics feature is available starting with agent version 2.165.0.
 
 ## Help on other options
 
