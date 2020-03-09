@@ -452,6 +452,9 @@ Resources must be authorized before they can be used. A resource owner controls 
 
     > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
 
+## Set approval checks for resources
+
+You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#approvals-for-template-resources), you can require that any pipeline using a resource or environment also uses a specific YAML template. This can be useful for security. You can make sure that your resource only gets used under specific conditions with a template. Learn more about how to [enhance pipeline security](../security/templates.md#set-required-templates) with templates and resources. 
 
 ## Traceability
 We provide full traceability for any resource consumed at a pipeline or deployment-job level.
