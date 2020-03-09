@@ -454,7 +454,7 @@ Resources must be authorized before they can be used. A resource owner controls 
 
 ## Set approval checks for resources
 
-You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#approvals-for-template-resources), you can require that any pipeline using a resource or environment also uses a specific YAML template. 
+You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#required-template-approval), you can require that any pipeline using a resource or environment also uses a specific YAML template. 
 Setting a required template approval enhances security. You can make sure that your resource only gets used under specific conditions with a template. Learn more about how to [enhance pipeline security](../security/templates.md#set-required-templates) with templates and resources. 
 
 ## Traceability
