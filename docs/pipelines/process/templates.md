@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: reference
-ms.date: 02/11/2020
+ms.date: 03/09/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
