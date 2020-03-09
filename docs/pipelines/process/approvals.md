@@ -46,7 +46,7 @@ Using the advanced options, you can configure if a subset of approvals is enough
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals are not complete within the **Timeout** specified for the approval, the stage is marked failed.
 
-## Approvals for template resources
+## Required template approval
 
 With the required template approval, you can require that any pipelines use a specific YAML template. When the approval is in place, a pipeline with a set approval will fail if the template is not referenced in the pipeline's YAML file. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
 
