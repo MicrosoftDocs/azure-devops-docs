@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to deploy a macOS agent to build and deploy your iOS application for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3D487E4E-D940-4DA9-BDE1-1F60E74DD6F1
-ms.date: 01/09/2020
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
