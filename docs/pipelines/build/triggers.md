@@ -965,7 +965,7 @@ When specifying a branch or tag, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
 
 
-* f you start your pattern with `*` in a YAML pipeline, you must wrap the pattern in quotes, like `"*-releases"`.
+* If you start your pattern with `*` in a YAML pipeline, you must wrap the pattern in quotes, like `"*-releases"`.
 * For branches and tags:
   * A wildcard may appear anywhere in the pattern.
 * For paths:
