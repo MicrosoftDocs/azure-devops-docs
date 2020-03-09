@@ -69,7 +69,9 @@ steps:
 
 ## Extend from a template
 
-You can use templates to define how parameters can be used. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
+You can use templates to define how parameters can be used. The file `start.yml` defines the parameter `buildSteps`, which is then used in the pipeline `azure-pipelines.yml`. 
+In `start.yml`, if a `buildStep` gets passed with a script step, then it is rejected and the pipeline build fails. 
+When extending from a template, you can increase security by adding a [required template approval](../security/templates.md#set-required-templates). 
 
 ```yaml
 # File: start.yml
