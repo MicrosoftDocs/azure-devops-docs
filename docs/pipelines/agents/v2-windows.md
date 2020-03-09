@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 01/31/2019
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -246,6 +246,18 @@ You must pass `--unattended` and the answers to all questions.
 [!INCLUDE [unattend](./includes/v2/unattended-config.md)]
 
 `.\config --help` always lists the latest required and optional responses.
+
+## Diagnostics
+
+If you're having trouble with your self-hosted agent, you can try running diagnostics.
+After configuring the agent:
+
+```ps
+.\run --diagnostics
+```
+
+This will run through a diagnostic suite that may help you troubleshoot the problem.
+The diagnostics feature is available starting with agent version 2.165.0.
 
 ## Help on other options
 
