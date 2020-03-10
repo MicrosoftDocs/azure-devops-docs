@@ -334,6 +334,8 @@ A: Yes, but deleting a user from the directory removes the user's access to all 
 
 A: You're probably a *guest* in the Azure AD that backs your Azure DevOps organization, rather than a *member*. By default, Azure AD guests can't search the Azure AD in the manner required by Azure DevOps. Learn how to [convert an Azure AD guest into a member](#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 
+<a name="q-how-can-i-convert-an-azure-ad-guest-into-a-member"></a>
+
 ### Q: How can I convert an Azure AD guest into a member?
 
 A: Select from the following two options:
