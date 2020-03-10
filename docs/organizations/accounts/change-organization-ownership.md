@@ -24,7 +24,8 @@ For organizations connected to Azure Active Directory (Azure AD),  if your organ
 
 ## Prerequisites
 
-To change the organization Owner, you must have [*Project Collection Administrator* or *organization Owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
+You must be a [Project Collection Administrator or an organization Owner](../accounts/faq-user-and-permissions-management.md#find-owner).
+
 If no one in the organization has these permissions, contact
 [Azure DevOps Support](https://azure.microsoft.com/support/devops).
 
@@ -41,21 +42,20 @@ Make sure the new owner has completed the following tasks:
 
 1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-	![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
+    ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
 
 1. Select **Overview**, and then **Change owner**.  
 
-	![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
+    ![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
 
 1. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-	![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
+    ![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
 
    Your organization has a new owner.
 
 ## Related articles
 
-- [Need help?](faq-change-organization-ownership.md)
 - [Assign a new owner to your orphaned organization](resolve-orphaned-organization.md)
 - [Change organization location](change-organization-location.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)

@@ -38,11 +38,11 @@ you can [request extensions](request-extensions.md) instead.
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*	You must have [Project Collection Administrator or organization Owner permissions](#find-owner). 
+*    You must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-user-and-permissions-management.md#find-owner). 
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
-*	If you get an "already installed or requested" error check with your Project Collection Administrator 
+*    If you get an "already installed or requested" error check with your Project Collection Administrator 
 or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
@@ -76,7 +76,7 @@ with [**Edit collection-level information** permissions](../organizations/securi
 
 * If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 
-	<!-- image placeholder -->
+    <!-- image placeholder -->
 
 <a name="no-team-project collection"></a>
 

@@ -2,13 +2,13 @@
 title: Troubleshoot setting up Visual Studio
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Having problems installing Visual Studio, signing in, creating an organization, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs). 
+description: Having problems installing Visual Studio, signing in, or handling an expired subscription? Learn answers to these frequently asked questions (FAQs). 
 ms.technology: devops-accounts
 ms.assetid: 985fcb48-0d9e-44ef-811d-7178df1cb09b
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/28/2020
+ms.date: 03/10/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-## Visual Studio
+## Visual Studio FAQs
 
 <a name="why-sign-in"></a>
 
@@ -32,9 +32,9 @@ when you sign in to Visual Studio on any computer.
 Sign in to Visual Studio during the 30-day 
 trial period for these benefits:
 
-*	Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires, 
+*    Visual Studio Enterprise: Extend your trial for 90 days. When your trial expires, 
 learn [how to unlock Visual Studio](https://msdn.microsoft.com/library/dn950037.aspx).
-*	Visual Studio Express or Community: Continue to use this edition for free.
+*    Visual Studio Express or Community: Continue to use this edition for free.
 
 When you create your profile, 
 you can also create an organization.
@@ -46,8 +46,7 @@ Learn more about
 
 #### Q: Why can't I sign in?
 
-A: To create a profile and save your settings, 
-you'll need to sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
+A: Sign in with a [personal Microsoft account](https://www.microsoft.com/account) 
 or a [work or school account](https://azure.microsoft.com/documentation/articles/sign-up-organization/) 
 that's managed by Azure Active Directory.
 
@@ -69,48 +68,14 @@ try [Subscription Support](https://visualstudio.microsoft.com/support/subscripti
 
 A: Learn more about:
 
-*	[Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
-*	[Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
-*	[Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
+*    [Installing Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx).
+*    [Signing in to Visual Studio](https://msdn.microsoft.com/library/dn457348.aspx).
+*    [Managing multiple user organizations](https://msdn.microsoft.com/library/dn872465.aspx).
 
 Or contact [Visual Studio Support](https://visualstudio.microsoft.com/support/support-overview-vs). 
 
-## Azure DevOps Services
+## Related articles
 
-<a name="WhatIsVSO"></a>
-
-#### Q: How can I create an organization later?
-
-A: Learn how to [sign up for Azure DevOps](create-organization.md).
-
-<a name="browser-problems"></a>
-
-[!INCLUDE [browser-problems](../../includes/qa-browser-problems.md)]
-
-[!INCLUDE [find-organization-name](../../includes/qa-find-organization-name.md)]
-
-[!INCLUDE [recover-password](../../includes/qa-recover-password.md)]
-
-<a name="change-location"></a>
-
-#### Q: Can I change my organization location?
-
-A: Yes. For a better experience, 
-you can change your organization's location during sign-up
-so that your organization is closest to most users.
-
-![Change organization location](media/set-up-vs/change-location.png)
-
-Your organization's default location is selected based on the closest 
-[Microsoft Azure region](https://azure.microsoft.com/regions) 
-where Azure DevOps is available.
-
-[!INCLUDE [secure-protect-data](../../includes/qa-secure-protect-data.md)]
-
-[!INCLUDE [team-services-sla](../../includes/qa-vsts-sla.md)]
-
-[!INCLUDE [change-organization-name-owner](../../includes/qa-change-organization-name-owner.md)]
-
-[!INCLUDE [delete-organization](../../includes/qa-delete-organization.md)]
-
-[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
+- [Access with Azure AD FAQs](faq-azure-access.md)
+- Configure and customize organization FAQs
+- User and permissions management FAQs
