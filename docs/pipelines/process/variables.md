@@ -133,6 +133,8 @@ variables:
 - template: myvariabletemplate.yml
 ```
 
+Learn more about [variable reuse with templates](templates.md#variable-reuse). 
+
 ### Access variables through the environment
 
 [!INCLUDE [temp](includes/access-variables-through-env.md)]
