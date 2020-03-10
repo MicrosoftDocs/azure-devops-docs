@@ -25,9 +25,17 @@ you can [request extensions](request-extensions.md) instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../includes/qa-find-organization-owner.md)]
+### Q: How do I find the organization Owner?
 
-[!INCLUDE [find-project-collection-administrator](../includes/qa-find-project-collection-administrator.md)]
+If you have at least Basic access, you can find the current owner in your organization settings.
+
+1.    Go to your **Organization settings**.
+
+    ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+
+2.    Find the current owner.
+
+    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
 <a name="no-organizations"></a>
 

@@ -34,9 +34,33 @@ A: To access and manage users at the organization level, you must be a member of
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../includes/qa-find-project-collection-administrator.md)]
+### Q: How do I find the organization Owner?
 
-[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
+If you have at least Basic access, you can find the current owner in your organization settings.
+
+1.    Go to your **Organization settings**.
+
+    ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+
+2.    Find the current owner.
+
+    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
+
+#### Q: How do I find a Project Collection Administrator?
+
+A: If you have at least Basic access, you can find your [Project Collection Administrator](/azure/devops/organizations/security/set-project-collection-level-permissions) in your organization's security settings.
+
+::: moniker range=">= azure-devops-2019"
+
+See [Show members of the Project Collection Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-collection-administrators-group).
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"  
+
+See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
+
+::: moniker-end
 
 <a name="users-delay"></a>
 
@@ -171,9 +195,7 @@ A: To remove yourself from an organization, do the following steps:
 
     ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
 
-
-
-# Troubleshoot managing group-based licensing
+## Manage group-based licensing
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
@@ -282,10 +304,6 @@ If you're an Azure AD administrator, you can add users to the directory. If you'
 
 A: Loss of access might happen for [different reasons](faq-user-and-permissions-management.md#stopped-features).  
 
-<a name="ConnectedDirectory"></a>
-
-[!INCLUDE [does-organization-use-azuread](../../includes/qa-does-organization-use-azuread.md)]
-
 <a name="RemovePeople"></a>
 
 ### Q: How do I remove users from my organization?
@@ -348,11 +366,7 @@ If you're an Azure AD guest, do one of the following:
 
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
-<a name="find-pca-owner"></a>
 
-[!INCLUDE [find-project-collection-administrator](../../includes/qa-find-project-collection-administrator.md)]
-
-[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
 
 <a name="get-support"></a>
 

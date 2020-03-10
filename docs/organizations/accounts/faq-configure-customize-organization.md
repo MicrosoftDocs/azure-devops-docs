@@ -12,7 +12,7 @@ ms.date: 03/10/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# Configure and customize organization FAQs
+# FAQs - Configure and customize organization
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
@@ -20,7 +20,6 @@ monikerRange: '>= tfs-2013'
 Include questions and link to FAQ
 find project coll admin
 find org owner
-
 
 ::: moniker range="azure-devops"
 
@@ -42,13 +41,17 @@ A: This might happen for one of the following reasons:
 
 A: An Azure DevOps Administrator can claim ownership of organizations where the current owner and any members of the Project Collection Administrators group are inactive in the backing Azure AD tenant. For more information, see [Resolve inactive organization owner](resolve-orphaned-organization.md).
 
-#### Q: Can I reverse an organization Owner change?
-
-A: Yes, if you're a Project Collection Administrator.
+### Q: Can I change my organization owner?
+ 
+A: Yes. If you have at least Basic access, you can do this in your organization settings. Learn how to [change the organization owner](/azure/devops/organizations/accounts/change-organization-ownership-vs).
 
 #### Q: Can I change the organization name (URL), too?
 
 A: Only the organization Owner can change the URL. If you're the organization Owner, learn how to [change the organization URL](rename-vsts-organization.md).
+
+#### Q: Can I reverse an organization Owner change?
+
+A: Yes, if you're a Project Collection Administrator.
 
 #### Q: How many organization Owners can I have?
 
@@ -81,15 +84,29 @@ Organization owners also have permissions to perform the following tasks:
 
 Project collection administrators can manage user access and change the organization Owner, but they can't rename the organization URL.
 
-<a name="ChooseOrgAcctMSAcct"></a>
+#### Q: Why don't I see the organizations that I own after I sign in to my Visual Studio profile on visualstudio.com?
 
-[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
+A: Your list of organizations are associated with the identity that you use to sign in to Azure DevOps.
 
-[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
+If you're asked to choose between your personal Microsoft account or your work or school account when you sign in, you might have selected the wrong identity.
 
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
+Try to sign out completely from Azure DevOps, then sign in again and select your other identity.
 
-[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
+Closing your browser doesn't always sign you out completely. Here's how you can sign out completely:
+
+1. Close all browsers, including browsers that aren't running Azure DevOps.
+
+2. Open a private or incognito browsing session. 
+
+3. Go to this URL: `https://aka.ms/vssignout`.
+
+   You see the message "Sign out in progress." After you sign out, you're redirected to the Visual Studio page @visualstudio.microsoft.com. 
+
+   > [!Tip]
+   > If the sign-out page takes more than a minute to sign you out, close the browser and continue.
+
+4. Sign in to Azure DevOps again. Select your other identity.
+
 
 <a name="get-support"></a>
 
@@ -162,19 +179,23 @@ A: Just sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.c
 
 [!INCLUDE [another-team-project](../../includes/qa-another-team-project.md)]
 
-[!INCLUDE [delete-team-project](../../includes/qa-delete-team-project.md)]
+#### Q: Can I delete a project that I created?
 
-[!INCLUDE [find-organization-name](../../includes/qa-find-organization-name.md)]
+A: Yes, you can [delete a project](/azure/devops/organizations/projects/delete-project) that you don't use anymore.
+
+### Q: Where can I find my organization name (URL)?
+
+A: [Sign in to your Visual Studio profile](https://go.microsoft.com/fwlink/?LinkId=309329) to find your organization list.
 
 [!INCLUDE [recover-password](../../includes/qa-recover-password.md)]
 
-[!INCLUDE [change-organization-name-owner](../../includes/qa-change-organization-name-owner.md)]
+### Q: Can I delete an organization that I don't need anymore? 
 
-[!INCLUDE [delete-organization](../../includes/qa-delete-organization.md)]
+A: Yes. See [Delete or recover your organization](/azure/devops/organizations/accounts/delete-your-organization).
 
 <a name="SignInOrganizationDifferences"></a>
 
-#### Q: What's the difference between using a Microsoft account and a work account or school account to sign up?
+### Q: What's the difference between using a Microsoft account and a work account or school account to sign up?
 
 A: Your choice of account type affects how you control access and authenticate users for your organization.
 
@@ -194,7 +215,7 @@ To [add users to the directory](/azure/active-directory/active-directory-create-
 
 <a name="ChangeDirectory"></a>
 
-#### Q: Can I change the directory after signup?
+### Q: Can I change the directory after signup?
 
 A: Yes, see [Disconnect your organization from Azure Active Directory](disconnect-organization-from-azure-ad.md) and  [Connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 
@@ -214,38 +235,16 @@ A: Yes, see [Disconnect your organization from Azure Active Directory](disconnec
 
 <a name="get-support"></a>
 
-[!INCLUDE [visual-studio-subscription-support](../../includes/qa-visual-studio-subscription-support.md)]
+#### Q: I'm having problems with my Visual Studio subscription. How can I get help?
 
-[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
+A: Try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs). 
 
+## Delete or restore your organization
 
-# Troubleshoot deleting or restoring your organization
-
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
-
-<a name="find-owner"></a>
-
-[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
-
-[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
-
-#### Q: How do I delete my organization?
+### Q: How do I delete my organization?
 
 A: See [Delete your organization](delete-your-organization.md), which includes prerequisites and helpful tips.
 
-#### Q: How do I restore my organization?
+### Q: How do I restore my organization?
 
 A: See [Recover your organization](recover-your-vsts-organization.md).
-
-<a name="ChooseOrgAcctMSAcct"></a>
-
-[!INCLUDE [choose-msa-azuread-account](../../includes/qa-choose-msa-azuread-account.md)]
-
-[!INCLUDE [choose-msa-azuread-account2](../../includes/qa-choose-msa-azuread-account2.md)]
-
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
-
-<a name="get-support"></a>
-
-[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
-
