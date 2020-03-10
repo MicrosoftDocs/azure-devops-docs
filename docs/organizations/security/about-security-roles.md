@@ -14,7 +14,7 @@ ms.date: 03/09/2020
 
 # About security roles
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 <a id="security-roles" />
 
