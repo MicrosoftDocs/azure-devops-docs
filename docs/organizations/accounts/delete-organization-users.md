@@ -31,8 +31,6 @@ If users no longer require access to a project or your organization, you can rem
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
-
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
     ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
@@ -65,8 +63,6 @@ If users no longer require access to a project or your organization, you can rem
 #### [Current page](#tab/current-page)
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
-
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
@@ -141,6 +137,5 @@ To remove users from a project, remove them from the **Teams** groups they belon
 - [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
 - [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users in the Users page](faq-user-and-permissions-management.md)
-- [Troubleshoot adding members to projects](faq-add-team-members.md)
+- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)
