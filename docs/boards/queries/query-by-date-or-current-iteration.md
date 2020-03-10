@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 03/10/2020  
 ---
 
 # Query by date or current iteration
@@ -288,7 +288,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ::: moniker-end
 
 <a id="date_fields">  </a>
+
 ## Date and Iteration Path fields
+
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
@@ -300,15 +302,13 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Activated Date <sup>1</sup>  </p>
+    <p>Activated Date <sup>1, 2</sup>  </p>
   </td>
   <td>
     <p>The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.  </p>
 	<p>Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
   </td>
-  <td>
-    <p>All</p>
-  </td>
+  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
 </tr>
 <tr>
   <td>
@@ -324,8 +324,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Closed Date <sup>1</sup> </p>
-
+   <p>Closed Date <sup>2</sup> </p>
   </td>
   <td>
     <p>The date and time when a work item was closed.</p>
@@ -359,17 +358,16 @@ To use this macro, the specified team must have [selected a set of sprints](../.
     <p>Issue (Agile)</p>
   </td>
 </tr>
-
 <tr>
   <td>
-    <p>Finish Date <sup>2</sup> </p>
+    <p>Finish Date <sup>3</sup> </p>
   </td>
   <td>
     <p>The date and time when the schedule indicates that the task will be completed. </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime</p>
   </td>
   <td>
-    <p>Task, Bug</p>
+  <td>Requirement, Task, Test Plan, User Story </td>
   </td>
 </tr>
 <tr>
@@ -381,26 +379,26 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Resolved Date <sup>1</sup> </p>
+    <p>Resolved Date <sup>1, 2</sup> </p>
   </td>
   <td>
     <p>The date and time when the work item was moved into a Resolved state. </p>
 	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
   </td>
   <td>
-    <p>Bug (Agile, CMMI)</p>
+  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
   </td>
 </tr>
 <tr>
   <td>
-    <p>Start Date <sup>2</sup> </p>
+    <p>Start Date <sup>3</sup> </p>
   </td>
   <td>
     <p>The date and time when the schedule indicates that the task will start.  </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime</p>
   </td>
   <td>
-    <p>Task, Bug</p>
+  <td>Epic, Feature, Requirement, Task, Test Plan, User Story </td>
   </td>
 </tr>
 <tr>
@@ -424,7 +422,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <p>Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime</p>
   </td>
   <td>
-    <p>Feature</p>
+    <p>Epic, Feature</p>
   </td>
 </tr>
 </tbody>
@@ -432,6 +430,8 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 #### Notes:
  
+1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md#date-identity).
+
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```xml
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
@@ -445,7 +445,8 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <a id="current_sprint_restrict"> </a> 
 
 ## Client restrictions on the use of the @CurrentIteration macros 
-You can use the <strong>@CurrentIteration</strong> in a query from the following clients:  
+
+You can use the <strong>@CurrentIteration</strong> in a query from the following clients:
 
 - Web portal that connects to Azure Boards 
 - Web portal that connects to an on-premises Azure DevOps 2015 or later version 
@@ -459,8 +460,10 @@ An error occurs if you open a query that contains the <strong>@CurrentIteration<
 
 
 ## Related articles
+
 To query for items based on text entered in the History field, see [History and auditing](history-and-auditing.md). 
 
+- [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Query quick reference](query-index-quick-ref.md)
 - [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
