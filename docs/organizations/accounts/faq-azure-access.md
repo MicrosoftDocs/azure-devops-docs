@@ -47,11 +47,19 @@ A. Yes, but before you switch, make sure that Azure AD meets your needs for shar
 Learn more about the differences in how you
 [control access with Microsoft accounts or with Azure AD, and how to switch when you're ready](access-with-azure-ad.md).
 
-[!INCLUDE [find-organization-owner](../../includes/qa-find-organization-owner.md)]
-
-[!INCLUDE [why-no-owned-organizations](../../includes/qa-why-no-owned-organizations.md)]
-
 [!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
+
+#### Q: What happens if my Azure subscription is disabled?
+
+A: If you're the organization owner or 
+[Azure subscription Account Administrator](/azure/billing/billing-add-change-azure-subscription-administrator), 
+check your subscription status in the [Account Center](https://account.windowsazure.com/), 
+then try to [fix your subscription](/azure/billing-subscription-become-disable). 
+This will restore your paid settings. 
+Or you can link your organization to another Azure subscription by 
+[unlinking your organization from the disabled subscription](/azure/devops/billing/change-azure-subscription). 
+While your subscription is disabled, your organization goes back to the free 
+monthly limits until your subscription is fixed.
 
 ## Azure AD groups
 
@@ -123,12 +131,6 @@ A: No, querying on Azure AD groups is unsupported.
 ### Q: Can I use Azure AD groups to set up field rules in my work item templates?
 
 A: No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
-
-<a name="remove-user-azure-ad-group"></a>
-
-<a name="ChooseOrgAcctMSAcct"></a>
-
-[!INCLUDE [why-cant-sign-in-msa-azuread-account](../../includes/qa-why-cant-sign-in-msa-azuread-account.md)]
 
 <a name="faq-users"></a>
 
@@ -213,7 +215,7 @@ A: Yes. If you can't find your Azure AD created from Office 365, see
 
 A: This might happen due to any of the following circumstances:
 
-* You don't have [organization Owner permissions](faq-change-app-access.md#find-owner) to manage directory connections.
+* You don't have [organization Owner permissions](../security/lookup-organization-owner-admin.md) to manage directory connections.
 
 * Talk to your Azure AD organization administrator and ask them to make you a member of the organization. It's possible that you're not  part of the organization.
 
@@ -225,7 +227,9 @@ A: Your organization was connected to a directory when the organization Owner cr
 
 <a name="switch-directory"></a>
 
-[!INCLUDE [qa-switch-directory-azure-ad](../../includes/qa-switch-directory-azure-ad.md)]
+### Q: Can I switch to a different directory?
+
+A: Yes. For more information, see [Switch to another Azure AD](../organizations/accounts/change-azure-ad-connection.md). 
 
 <a name="AlternateCredentials"></a>
 
@@ -309,7 +313,6 @@ A: The tenant cache needs to be cleared if you're using a GCM version prior to v
 
 [!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
 
-
 ## Azure Active Directory users and permissions
 
 <a name="AddUserDirectory"></a>
@@ -386,10 +389,6 @@ While not the norm, we have seen it take several hours or even days before this 
 A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
 If you're a directory administrator, you can [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). If you're not an administrator, work with your directory administrator to add users. Learn more about [how to control access by using a directory](access-with-azure-ad.md).
-
-<a name="ConnectedDirectory"></a>
-
-[!INCLUDE [does-organization-use-azuread](../../includes/qa-does-organization-use-azuread.md)]
 
 <a name="DeleteFromDirectory"></a>
 
