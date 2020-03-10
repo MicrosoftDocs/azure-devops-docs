@@ -16,7 +16,7 @@ After writing an Azure DevOps Services extension, the next step is to package it
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that helps users discover and learn about your extension, 
->visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops)
+>visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops).
 
 ## Publishing Requirements
 
