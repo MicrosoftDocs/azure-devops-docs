@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 02/14/2020
+ms.date: 03/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -191,7 +191,7 @@ You can create new pipeline by exporting an existing one and then importing it. 
 
 3. When prompted, save the JSON file to your local machine. The browser will save the file in the download directory as per your browser settings.
 
-4. To import a pipeline, [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the **Pipelines** page in your project.
+4. To import a pipeline, [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipelines landing page](get-started/multi-stage-pipelines-experience.md#pipelines-landing-page) in your project.
 
 5. Choose **...** and select **Import**.
 
