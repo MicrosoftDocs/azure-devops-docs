@@ -25,7 +25,7 @@ In this article, learn to set up billing for your organization. Do so before mak
 ## Prerequisites
 
 * If you don't have an Azure subscription, [create one](https://azure.microsoft.com/pricing/purchase-options/).
-* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-user-and-permissions-management.md#find-owner).
+* To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../accounts/../security/lookup-organization-owner-admin.md).
 
 > [!NOTE]
 > The Azure Free Trial isn't supported.

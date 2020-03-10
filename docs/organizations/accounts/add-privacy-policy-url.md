@@ -21,7 +21,7 @@ In this article, learn how to add your privacy policy URL to your organization i
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](faq-user-and-permissions-management.md#find-owner) to add a privacy policy URL.
+You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md) to add a privacy policy URL.
 
 ## Add your privacy policy URL in Azure DevOps
 
