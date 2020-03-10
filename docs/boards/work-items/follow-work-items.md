@@ -92,7 +92,7 @@ By default, you are **Subscribed** to receive a notification when any change is 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]   
-> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
+> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises Azure DevOps, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
 
 ::: moniker-end
 

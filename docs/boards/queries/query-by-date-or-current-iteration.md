@@ -448,7 +448,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 You can use the <strong>@CurrentIteration</strong> in a query from the following clients:  
 
 - Web portal that connects to Azure Boards 
-- Web portal that connects to an on-premises TFS 2015 or later version 
+- Web portal that connects to an on-premises Azure DevOps 2015 or later version 
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
 - Using the REST API
 
