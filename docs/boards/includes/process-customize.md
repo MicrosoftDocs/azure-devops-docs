@@ -27,6 +27,6 @@ ms.topic: include
 > Shared Parameters, TFS 2013.2 and later versions; 
 > and Test Plan and Test Suite, TFS 2013.3 and later versions.   
 >
-> Additional artifacts, such as SQL Server reports and SharePoint dashboards, are only available when you connect to a project from an on-premises TFS. Other resource requirements apply. 
+> Additional artifacts, such as SQL Server reports and SharePoint dashboards, are only available when you connect to a project from an on-premises Azure DevOps. Other resource requirements apply. 
 
 ::: moniker-end
