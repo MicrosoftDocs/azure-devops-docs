@@ -723,7 +723,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
    ::: moniker range="azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
+   > ![Build a summary PowerShell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
 
    ::: moniker-end
 
