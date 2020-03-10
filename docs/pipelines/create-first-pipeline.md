@@ -174,11 +174,9 @@ If your new pipeline can be created by copying another pipeline, follow the inst
 3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
 * * *
+
+
 ## Export and Import a pipeline
-You can also create new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
-
-#### [YAML](#tab/yaml/)
-
 You can also create new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
 
 #### [YAML](#tab/yaml/)
@@ -199,9 +197,29 @@ You can also create new pipeline by exporting an existing one and then importing
 
 6. You will now be prompted to select a JSON file to import its contents. Click on browse and select the JSON file that was previously exported.
 
-    ![Pipeline details](get-started/media/import-pipeline-dialogue.png)
+    ![upload JSON](get-started/media/import-pipeline-dialogue.png)
 
 7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+
+#### [Classic](#tab/classic/)
+You can also create new build or release definitions by exporting an existing one and then importing it. This is especially useful in cases where the new definition has to be created in a separate project.
+
+1. Navigate to the pipeline details page for your pipeline. 
+
+2. Choose **...** and select **Export**.
+
+    ![Export pipeline menu](get-started/media/classic-export-definition.png)
+
+3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per browser settings.
+
+4. To import the pipeline, navigate to **Builds** or **Releases** page in your project. Choose **+New** and select corresponding import pipeline option.
+
+    ![Import pipeline menu](get-started/media/classic-import-pipeline.png)
+
+5. You will now be prompted to select a JSON file to import its contents. Click on browse and select the JSON file that was previously exported.
+
+7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+
 
 * * *
 [!INCLUDE [include](includes/get-status-badge.md)]
