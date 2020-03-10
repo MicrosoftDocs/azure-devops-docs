@@ -3,7 +3,7 @@ title: Build pipeline triggers
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines
 ms.topic: reference
 ms.custom: seodec18
-ms.date: 02/20/2020
+ms.date: 03/09/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -963,12 +963,14 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 When specifying a branch or tag, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
-For branches and tags, a wildcard may appear anywhere in the pattern.
 
-For paths, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
 
-> [!IMPORTANT]
-> You may **not** include `*` in the middle of a path filter, and you may not use `?`.
+* If you start your pattern with `*` in a YAML pipeline, you must wrap the pattern in quotes, like `"*-releases"`.
+* For branches and tags:
+  * A wildcard may appear anywhere in the pattern.
+* For paths:
+  * You may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
+  * You may **not** include `*` in the middle of a path filter, and you may not use `?`.
 
 ```yaml
 trigger:
