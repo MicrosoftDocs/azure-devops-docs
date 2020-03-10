@@ -23,7 +23,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
 ## Prerequisites
 
 - Ensure you're a Project Collection Administrator or [owner of the organization](../security/lookup-organization-owner-admin.md) to perform the connection.
-- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-add-delete-users.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
+- Ensure that you exist in Azure AD as a *member*. For more information, see [how you can convert an Azure AD *guest* into a *member*](faq-user-and-permissions-management.md#q-how-can-i-convert-an-azure-ad-guest-into-a-member).
 - Inform users of the upcoming change.
    There's no downtime during this change, but users are affected. Let them know before you begin that there's a short series of steps to complete. As your company transitions from Microsoft account (MSA) to Azure AD identities, your users' benefits continue with their new identity, as long as their emails match.
 - Delete unwanted users from your organization. For example, you can remove a user who left the company and is no longer an employee.
@@ -39,7 +39,7 @@ For more information about using Azure AD with Azure DevOps, see the [conceptual
         ![Open organization settings, users](../../media/settings/open-organization-settings-users-vert.png)
 
     4. Compare your Azure DevOps email list with your Azure AD email list. Create an Azure AD email address entry for every user who is in the Azure DevOps organization and NOT in the Azure AD. For any user that you don't create an Azure AD email address, be prepared to invite these users as guests to the Azure AD in future steps.
-	
+    
 > [!NOTE]
 > Ensure you're using Azure AD Public. Support for Azure AD Government is currently limited.
 

@@ -55,8 +55,8 @@
     items:
     - name: Create organization
       href: /azure/devops/organizations/accounts/faq-create-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization Ownership
-      href: /azure/devops/organizations/accounts/faq-change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Configure and customize organization
+      href: /azure/devops/organizations/accounts/faq-configure-customize-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Delete and restore organization
       href: /azure/devops/organizations/accounts/faq-delete-restore-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Teams
