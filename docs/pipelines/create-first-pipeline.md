@@ -185,7 +185,8 @@ You can also create new pipeline by exporting an existing one and then importing
 
 2. Choose **...** and select **Export**.
 
-    ![Pipeline details](get-started/media/select-export-pipeline.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pipeline details](get-started/media/select-export-pipeline.png)
 
 3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per browser settings.
 
@@ -193,11 +194,13 @@ You can also create new pipeline by exporting an existing one and then importing
 
 5. Choose **...** and select **Import**.
 
-    ![Pipeline details](get-started/media/select-import-pipeline.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pipeline details](get-started/media/select-import-pipeline.png)
 
 6. You will now be prompted to select a JSON file to import its contents. Click on browse and select the JSON file that was previously exported.
 
-    ![upload JSON](get-started/media/import-pipeline-dialogue.png)
+    > [!div class="mx-imgBorder"]
+    > ![upload JSON](get-started/media/import-pipeline-dialogue.png)
 
 7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
 
@@ -208,13 +211,15 @@ You can also create new build or release definitions by exporting an existing on
 
 2. Choose **...** and select **Export**.
 
-    ![Export pipeline menu](get-started/media/classic-export-definition.png)
+    > [!div class="mx-imgBorder"]
+    > ![Export pipeline menu](get-started/media/classic-export-definition.png)
 
 3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per browser settings.
 
 4. To import the pipeline, navigate to **Builds** or **Releases** page in your project. Choose **+New** and select corresponding import pipeline option.
 
-    ![Import pipeline menu](get-started/media/classic-import-pipeline.png)
+    > [!div class="mx-imgBorder"]
+    > ![Import pipeline menu](get-started/media/classic-import-pipeline.png)
 
 5. You will now be prompted to select a JSON file to import its contents. Click on browse and select the JSON file that was previously exported.
 
