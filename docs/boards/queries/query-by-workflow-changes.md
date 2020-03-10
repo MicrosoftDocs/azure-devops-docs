@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 12/11/2019
+ms.date: 03/10/2020  
 ---
 
 # Query by assignment or workflow changes
@@ -308,7 +308,6 @@ For example, you can list items based on the team area path, and if they are in 
 <code>Work Item Type = User Story</code>
 <code>And <em> Board Column </em> = <em> Code</code>
 <code>And </em> Board Column Done <em> = </em> False</code>
-
   </td>
 </tr>
 <tr>
@@ -369,7 +368,7 @@ For more information about field attributes, see [Work item fields and attribute
 
 <tr>
   <td>Activated Date <sup> 1,3</sup></td>
-  <td>The date and time when the work item transitioned from New to Active or was re-activated after it was closed, completed, or done. 
+  <td>The date and time when the work item transitioned from New to an In Progress category state or was re-activated after it was closed, completed, or done. The Activated Date is always empty when it is in the New state or just created. 
 <p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
   <td>DateTime</td>
   <td>All</td>
@@ -495,6 +494,7 @@ For more information about field attributes, see [Work item fields and attribute
 #### Notes
 
 <a id="sync">  </a>
+
 1. See [Date and Identity fields](#date-identity).
 
 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
@@ -771,13 +771,15 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 </FIELD>
 ```
 
-
+::: moniker-end
 
 ## Related articles
 
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
+- [Query permissions](set-query-permissions.md)
+
 
 [!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
