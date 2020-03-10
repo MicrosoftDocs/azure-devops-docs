@@ -175,12 +175,33 @@ If your new pipeline can be created by copying another pipeline, follow the inst
 
 * * *
 ## Export and Import a pipeline
-You can also create new pipeline by exporting an existing pipeline and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
+You can also create new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
 
+#### [YAML](#tab/yaml/)
 
+You can also create new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
 
+#### [YAML](#tab/yaml/)
 
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) of the pipeline that you want to export.
 
+2. Choose **...** and select **Export**.
+
+    ![Pipeline details](get-started/media/select-export-pipeline.png)
+
+3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per browser settings.
+
+4. To import a pipeline, [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the **Pipelines** page in your project.
+
+5. Choose **...** and select **Import**.
+
+    ![Pipeline details](get-started/media/select-import-pipeline.png)
+
+6. You will now be prompted to select a JSON file to import its contents. Click on browse and select the JSON file that was previously exported.
+
+    ![Pipeline details](get-started/media/import-pipeline-dialogue.png)
+
+7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
 
 * * *
 [!INCLUDE [include](includes/get-status-badge.md)]
