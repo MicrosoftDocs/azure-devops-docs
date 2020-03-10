@@ -368,7 +368,7 @@ For more information about field attributes, see [Work item fields and attribute
 </tr>
 
 <tr>
-  <td>Activated Date <sup>1,3</sup></td>
+  <td>Activated Date <sup> 1,3</sup></td>
   <td>The date and time when the work item transitioned from New to Active or was re-activated after it was closed, completed, or done. 
 <p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
   <td>DateTime</td>
@@ -387,7 +387,7 @@ For more information about field attributes, see [Work item fields and attribute
   <td>The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
 <p>Reference name=System.BoardColumn</p></td>
   <td>String</td>
-  <td>Requirement Category<sup>5</sup> </td>
+  <td>Requirement Category<sup> 5</sup> </td>
 </tr>
 <tr>
   <td>Board Column Done </td>
@@ -395,7 +395,7 @@ For more information about field attributes, see [Work item fields and attribute
     <p>The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when <a href="../boards/split-columns.md" data-raw-source="[split-columns](../boards/split-columns.md)">split-columns</a> has been enabled for a Kanban board column. </p>
 <p>Reference name=System.BoardColumnDone</p></td>
   <td>Boolean</td>
-  <td>Requirement Category<sup>5</sup> </td>
+  <td>Requirement Category<sup> 5</sup> </td>
 </tr>
 <tr>
   <td>
@@ -404,10 +404,10 @@ For more information about field attributes, see [Work item fields and attribute
   <td><p>The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.</p>
 <p>Reference name=System.BoardLane</p></td>
   <td>String</td>
-  <td>Requirement Category<sup>5</sup>  </td>
+  <td>Requirement Category<sup> 5</sup>  </td>
 </tr> 
 <tr>
-  <td>Closed By<sup>1, 2,&nbsp;3</sup>  </td>
+  <td>Closed By<sup> 1, 2,&nbsp;3</sup>  </td>
   <td>The name of the team member who set the state to closed, completed, or done.
 <p>Reference name=System.ClosedBy</p></td>
   <td>String</td>
@@ -422,7 +422,7 @@ For more information about field attributes, see [Work item fields and attribute
 </tr>
 
 <tr>
-  <td>Created By<sup>2,&nbsp;3</sup> </td>
+  <td>Created By<sup> 2,&nbsp;3</sup> </td>
   <td><p>The name of the team member who created the work item.</p>
 <p>Reference name=Microsoft.VSTS.Common.CreatedBy</p></td>
   <td>String (Identity)</td>
@@ -436,7 +436,7 @@ For more information about field attributes, see [Work item fields and attribute
   <td>All</td>
 </tr>
 <tr>
-  <td>Reason <sup>3,&nbsp;4</sup> </td>
+  <td>Reason <sup> 3,&nbsp;4</sup> </td>
   <td>The reason why the work item is in the current state.
 <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see [Change the workflow for a work item type (On-premises XML process model only)](../../reference/xml/change-workflow-wit.md).</p>
 <p>Reference name=System.Reason</p></td>
@@ -444,21 +444,21 @@ For more information about field attributes, see [Work item fields and attribute
   <td>All (except Test Case and Shared Steps)</td>
 </tr>
 <tr>
-  <td>Resolved By <sup>1,&nbsp;2,&nbsp;3</sup>  </td>
+  <td>Resolved By <sup> 1,&nbsp;2,&nbsp;3</sup>  </td>
   <td><p>The date and time when a team member resolved a work item.</p>
 <p>Reference name=Microsoft.VSTS.Common.ResolvedBy</p></td>
   <td>String (Identity)</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Resolved Date <sup>1, 3</sup>  </td>
+  <td>Resolved Date <sup> 1, 3</sup>  </td>
   <td>The date and time when a team member resolved a work item.
 <p>Reference name=Microsoft.VSTS.Common.ResolvedDate</p></td>
   <td>DateTime</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Resolved Reason  <sup>3</sup>  </td>
+  <td>Resolved Reason <sup> 3</sup>  </td>
   <td>The reason why a work item was resolved. For example, the user story is code complete or a bug is fixed.
 <p>This field is read-only and only valid for Agile and CMMI work item types.</p>
 <p>Reference name=Microsoft.VSTS.Common.ResolvedReason</p></td>
@@ -475,7 +475,7 @@ For more information about field attributes, see [Work item fields and attribute
   </td>
 </tr>
 <tr>
-  <td>State <sup>3, 4</sup>  </td>
+  <td>State <sup> 3, 4</sup>  </td>
   <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md">Customize the workflow for a process</a>. To add or modify States or the workflow, see <a href="../../reference/xml/change-workflow-wit.md">Change the workflow for a work item type</a>.</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
@@ -527,28 +527,28 @@ You can use the following fields to filter your queries or build reports. Some o
 </thead>
 <tbody valign="top">
 <tr>
-  <td>Activated By <sup>1,&nbsp;2,&nbsp;3</sup> </td>
+  <td>Activated By <sup> 1,&nbsp;2</sup> </td>
   <td>The name of the team member who changed the status of a work item from New to Active or re-activated a work item after it had been closed, completed, or done. 
 <p>Reference name=Microsoft.VSTS.Common.ActivatedBy</p></td>
   <td>String (Identity)</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Activated Date <sup>2,&nbsp;3</sup></td>
+  <td>Activated Date <sup> 2</sup></td>
   <td>The date and time when the work item was changed from New to Active or re-activated after it had been closed, completed, or done. 
 <p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
   <td>DateTime</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Assigned To <sup>1,&nbsp;2,&nbsp;3,&nbsp;4</sup> </td>
+  <td>Assigned To <sup> 1,&nbsp;2,&nbsp;3</sup> </td>
   <td>The name of the team member who currently owns the work item. For more information, see <a href="#sync">Note 1 on synchronization and person-name fields</a>. 
 <p>Reference name=System.AssignedTo</p></td>
   <td>String (Identity)</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Closed By <sup>1,&nbsp;2&nbsp;3</sup>  </td>
+  <td>Closed By <sup> 1,&nbsp;2</sup>  </td>
   <td><p>The name of the team member who set the state to closed, completed, or done. </p>
 <p>Reference name=System.ClosedBy</p></td>
   <td>String</td>
@@ -562,7 +562,7 @@ You can use the following fields to filter your queries or build reports. Some o
   <td>All</td>
 </tr>
 <tr>
-  <td>Created By <sup>1,&nbsp;2&nbsp;3</sup>   </td>
+  <td>Created By <sup> 1,&nbsp;2</sup>   </td>
   <td><p>The name of the team member who created the work item.</p>
 <p>Reference name=Microsoft.VSTS.Common.CreatedBy</p></td>
   <td>String (Identity)</td>
@@ -576,7 +576,7 @@ You can use the following fields to filter your queries or build reports. Some o
   <td>All</td>
 </tr>
 <tr>
-  <td>Reason <sup>2,&nbsp;3&nbsp;4</sup> </td>
+  <td>Reason <sup> 2,&nbsp;3</sup> </td>
   <td>The reason why the work item is in the current state.
 <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see Change the workflow for a work item type.</p>
 <p>Reference name=System.Reason</p></td>
@@ -584,21 +584,21 @@ You can use the following fields to filter your queries or build reports. Some o
   <td>All (except Test Case and Shared Steps)</td>
 </tr>
 <tr>
-  <td>Resolved By <sup>1,&nbsp;2&nbsp;3</sup>  </td>
+  <td>Resolved By <sup> 1,&nbsp;2</sup>  </td>
   <td><p>The date and time when the work item was moved into a resolved or done state.</p>
 <p>Reference name=Microsoft.VSTS.Common.ResolvedBy</p></td>
   <td>String (Identity)</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Resolved Date&nbsp;1<sup>3</sup>  </td>
+  <td>Resolved Date<sup> 2</sup>  </td>
   <td>The date and time when the work item was moved into a resolved or done state.
 <p>Reference name=Microsoft.VSTS.Common.ResolvedDate</p></td>
   <td>DateTime</td>
   <td>All</td>
 </tr>
 <tr>
-  <td>Resolved Reason <sup>3</sup>  </td>
+  <td>Resolved Reason <sup> 2</sup>  </td>
   <td>The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed.
 <p>This field is read-only and only valid for Agile and CMMI work item types.</p>
 <p>Reference name=Microsoft.VSTS.Common.ResolvedReason</p></td>
@@ -615,7 +615,7 @@ You can use the following fields to filter your queries or build reports. Some o
   </td>
 </tr>
 <tr>
-  <td>State <sup>3, 4</sup>  </td>
+  <td>State <sup> 2, 3</sup>  </td>
   <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md)">Customize the workflow for a process</a>. To add or modify States or the workflow for an on-premises server, see <a href="../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)">Change the workflow for a work item type</a>.</p>
 <p>Reference name=System.State</p></td>
   <td>String</td>
@@ -652,11 +652,11 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ### Date and Identity fields 
 
-Several date and identity fields are set when a user changes the State or when a transition occurs from one State to another.  
+Several date and identity fields are set based on workflow states or transitions. Some fields, such as Created By and Created Date, are set by the system when a work item is added. Other fields, such as Closed Date and Closed By, are set through the workflow definition of the work item type. Additionally, customized work item types may have additional rules defined that impact the date and identity field assignments.   
 
 #### State changes
 
-For example, the Resolved Date, Resolved By, Closed Date, Closed By, Activated Date, and Activated By fields are set to `EMPTY` when a State value is set to New. 
+For example, the Resolved Date, Resolved By, Closed Date, Closed By, Activated Date, and Activated By fields are set to `EMPTY` when a State value is set to New. The State value assignments are evaluated first, and then the transition assignments are evaluated next. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -720,7 +720,7 @@ For example, the Resolved Date, Resolved By, Closed Date, Closed By, Activated D
       </STATES>
 ```
 
-#### Activated By and Activated Date transition assignments
+#### Activated By and Activated Date transition assignments 
 
 When the following transitions occur for a Bug work item: 
 
@@ -738,16 +738,16 @@ then the following assignments are made to the Activated By and Activated Date f
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
-       <FIELDS>
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
-              <COPY from="currentuser" />
-              <VALIDUSER />
-              <REQUIRED />
-            </FIELD>
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
-              <SERVERDEFAULT from="clock" />
-            </FIELD>
-          </FIELDS>
+<FIELDS>
+   <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+       <COPY from="currentuser" />
+           <VALIDUSER />
+           <REQUIRED />
+    </FIELD>
+    <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+        <SERVERDEFAULT from="clock" />
+   </FIELD>
+</FIELDS>
 ```
 
 And when the following transitions occur for the Bug work item: 
@@ -761,22 +761,21 @@ And when the following transitions occur for the Bug work item:
 
 Then the Activated By and Activated Date fields are set to `READONLY`.
 
-
-
 > [!div class="tabbedCodeSnippets"]
 ```XML
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
-              <READONLY />
-            </FIELD>
-            <FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
-              <READONLY />
-            </FIELD>
+<FIELD refname="Microsoft.VSTS.Common.ActivatedDate">
+   <READONLY />
+</FIELD>
+<FIELD refname="Microsoft.VSTS.Common.ActivatedBy">
+   <READONLY />
+</FIELD>
 ```
 
 
 
 ## Related articles
 
+- [Query by date or current iteration](query-by-date-or-current-iteration.md)
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
 
