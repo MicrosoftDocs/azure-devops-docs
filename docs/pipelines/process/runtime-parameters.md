@@ -9,6 +9,9 @@ monikerRange: '>= azure-devops-2019'
 
 # Runtime parameters
 
+> [!IMPORTANT]
+> This new feature is rolling out now and may not be available in your organization. 
+
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime
 - Control parameter types, ranges allowed, and defaults

@@ -61,10 +61,11 @@ For more information, see [Add administrators, set permissions at the project-le
    witadmin changefield /collection:CollectionURL /n:System.RelatedLinkCount /name:"Related Link Count"  
    ```  
 
-    Use this format for *CollectionURL*: <strong>http://ServerName:Port/VirtualDirectoryName/CollectionName</strong>, for example: **<http:\//srvalm:8080/tfs/DefaultCollection>**.  
+    Use this format for *CollectionURL*: `http://ServerName:Port/VirtualDirectoryName/CollectionName`, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
 
 
 ## 2. (Agile only) Rename the Scenario work item type  
+
  To minimize the amount of customizations you need to make, and to comply with future updates to the Agile process template, you should rename the Scenario work item type to User Story.  
 
 > [!NOTE]   
@@ -93,6 +94,7 @@ For more information, see [Add administrators, set permissions at the project-le
 > You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](https://go.microsoft.com/fwlink/?LinkId=272181).   
 
 ## 4. Import link types  
+
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  
 
  Perform this task for each project collection defined on your upgraded application-tier server.  
@@ -133,6 +135,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
 
 ## 6. Import work item types  
+
  Import the following work item types based on the process template you are working with.  
 
 - **Agile**: Bug, Task, User Story, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response  

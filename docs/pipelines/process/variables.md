@@ -85,6 +85,8 @@ In the YAML file, you can set a variable at various scopes:
 - At the stage level, to make it available only to a specific stage.
 - At the job level, to make it available only to a specific job.
 
+When a variable is defined at the top of a YAML, it will be available to all jobs and stages in the pipeline and is a global variable. Global variables defined in a YAML are not visible in the pipeline settings UI. 
+
 Variables at the job level override variables at the root and stage level. Variables at the stage level override variables at the root level. 
 
 ```yaml
