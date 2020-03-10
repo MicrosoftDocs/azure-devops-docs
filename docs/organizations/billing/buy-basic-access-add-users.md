@@ -30,7 +30,7 @@ Visual Studio subscribers get access included with their subscription, and their
 Ensure the following is true:
 
 * [Billing is set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You have [Project Collection Administrator or organization Owner permissions](../accounts/faq-user-and-permissions-management.md#find-owner)
+* You have [Project Collection Administrator or organization Owner permissions](../accounts/../security/lookup-organization-owner-admin.md)
 
 <a name="buy-access-vs-marketplace"></a>
 

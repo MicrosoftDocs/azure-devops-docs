@@ -30,7 +30,7 @@ Azure Active Directory users and permissions
 
 ### Q: Why can't I manage users?
 
-A: To access and manage users at the organization level, you must be a member of the Project Collection Administrators group or the [organization Owner](../accounts/faq-user-and-permissions-management.md#find-owner). To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
+A: To access and manage users at the organization level, you must be a member of the Project Collection Administrators group or the [organization Owner](../accounts/../security/lookup-organization-owner-admin.md). To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
 
 <a name="find-owner"></a>
 

@@ -38,7 +38,7 @@ you can [request extensions](request-extensions.md) instead.
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*    You must have [Project Collection Administrator or organization Owner permissions](../accounts/faq-user-and-permissions-management.md#find-owner). 
+*    You must have [Project Collection Administrator or organization Owner permissions](../accounts/../security/lookup-organization-owner-admin.md). 
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>

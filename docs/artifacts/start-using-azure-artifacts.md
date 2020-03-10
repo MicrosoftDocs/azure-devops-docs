@@ -28,7 +28,7 @@ This article guides you through the sign-up process for Azure Artifacts. Azure A
 Ensure that the following statements are true:
 
 - [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
-- You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/faq-user-and-permissions-management.md#find-owner)
+- You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/../security/lookup-organization-owner-admin.md)
 
 ::: moniker-end
 
