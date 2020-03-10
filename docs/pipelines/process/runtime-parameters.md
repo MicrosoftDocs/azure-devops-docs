@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: You can use runtime parameters in pipelines or as part of a template 
 ms.topic: conceptual
 ms.date: 02/27/2020
-monikerRange: '>= azure-devops-2019'
+monikerRange: '>= azure-devops'
 ---
+
+# Runtime parameters
 
 > [!IMPORTANT]
 > This new feature is rolling out now and may not be available in your organization. 
-
-# Runtime parameters
 
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime
