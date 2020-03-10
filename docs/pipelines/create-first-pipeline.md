@@ -178,7 +178,7 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 ## Export and Import a pipeline
 
-You can create new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
+You can create a new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
 
 #### [YAML](#tab/yaml/)
 
