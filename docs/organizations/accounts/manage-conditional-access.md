@@ -68,7 +68,7 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 

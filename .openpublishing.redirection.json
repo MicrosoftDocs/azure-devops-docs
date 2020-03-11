@@ -12253,42 +12253,42 @@
     {
       "source_path": "docs/organizations/accounts/faq-add-delete-users.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-change-organization-ownership.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-configure-customize-organization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-delete-restore-organization.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-configure-customize-organization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-create-organization.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-configure-customize-organization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-add-administrators.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-manage-group-based-licensing.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-leave-organization.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-user-and-permissions-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-change-app-access-policies.md",
       "redirect_url": "/azure/devops/organizations/accounts/faq-configure-customize-organization",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
