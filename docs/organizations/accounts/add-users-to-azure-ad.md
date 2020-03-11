@@ -44,7 +44,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    ![Directory after adding users](media/manage-work-access/azureaddmembers3.png)
 
-   For more information about how to set up users, see this [FAQ](faq-user-and-permissions-management).
+   For more information about how to set up users, see this [FAQ](faq-user-and-permissions-management.md).
 
 3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
 
