@@ -3,7 +3,7 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: macoope
-ms.date: 03/05/2020
+ms.date: 03/11/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -179,12 +179,12 @@ extends:
 
 To require that a specific template gets used, you can set the [required template check](../process/approvals.md) for a resource or environment. The required template check can be used when extending from a template. 
 
-You can check on the status of a check when viewing a pipeline job. When the template is not called from your pipeline, the check will fail and the run will stop. You will see that your check failed. 
+You can check on the status of a check when viewing a pipeline job. When a pipeline doesn't extend from the require template, the check will fail and the run will stop. You will see that your check failed. 
 
    > [!div class="mx-imgBorder"]
    > ![approval check fails](../process/media/approval-fail.png)
 
-When the required template gets called, you will see that your check passed. 
+When the required template is used, you'll see that your check passed.
 
    > [!div class="mx-imgBorder"]
    > ![approval check passes](../process/media/approval-pass.png)

@@ -6,7 +6,7 @@ ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 03/05/2020
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -46,9 +46,9 @@ Using the advanced options, you can configure if a subset of approvals is enough
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals are not complete within the **Timeout** specified for the approval, the stage is marked failed.
 
-## Required template approval
+## Required template
 
-With the required template approval, you can require that any pipelines use a specific YAML template. When the approval is in place, a pipeline with a set approval will fail if the template is not referenced in the pipeline's YAML file. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
+With the required template approval, you can require that any pipelines use a specific YAML template. When this check is in place, a pipeline will fail if it doesn't extend from the referenced template. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
 
 To define a required template approval:
 
@@ -61,7 +61,7 @@ To define a required template approval:
 4. Enter details on how to get to your required template file. 
     * **Repository type**: The location of your repository (GitHub, Azure, or Bitbucket).
     * **Repository**: The name of your repository that contains your template. 
-    * **Ref**: The path to your repository branch. 
+    * **Ref**: The branch or tag of the required template. 
     * **Path to required template**: The name of your template. 
 
 

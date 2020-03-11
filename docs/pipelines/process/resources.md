@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 02/27/2020
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -454,7 +454,7 @@ Resources must be authorized before they can be used. A resource owner controls 
 
 ## Set approval checks for resources
 
-You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#required-template-approval), you can require that any pipeline using a resource or environment also uses a specific YAML template. 
+You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#required-template-approval), you can require that any pipeline using a resource or environment also extends from a specific YAML template. 
 Setting a required template approval enhances security. You can make sure that your resource only gets used under specific conditions with a template. Learn more about how to [enhance pipeline security](../security/templates.md#set-required-templates) with templates and resources. 
 
 ## Traceability
