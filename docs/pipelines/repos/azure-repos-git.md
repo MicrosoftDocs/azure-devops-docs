@@ -33,6 +33,11 @@ If your Azure Repos Git repository is open source, you can make your Azure DevOp
 
 If your project is public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
 
+> [!TIP]
+> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
+> into multiple jobs. For more information on jobs, see 
+> [Specify jobs in your pipeline](../process/phases.md).
+
 For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
 
 ### Azure DevOps private project
