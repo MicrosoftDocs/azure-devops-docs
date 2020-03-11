@@ -45,9 +45,12 @@ using Microsoft.VisualStudio.Services.Common;
 /// </summary>
 public static void SampleREST()
 {
-    // Create a connection object, which we will use to get httpclient objects.  This is more robust
-    // then newing up httpclient objects directly.  Be sure to send in the full collection uri.
-    // For example:  http://myserver:8080/tfs/defaultcollection
+    // Connection object could be created once per application and we will use it to get httpclient objects. 
+    // Httpclients have been reused between callers and threads.
+    // Their lifetime have been managed by connection (we don't have to dispose them).
+    // This is more robust then newing up httpclient objects directly.  
+    
+    // Be sure to send in the full collection uri, i.e. http://myserver:8080/tfs/defaultcollection
     // We are using default VssCredentials which uses NTLM against a Team Foundation Server.  See additional provided
     // examples for creating credentials for other types of authentication.
     VssConnection connection = new VssConnection(new Uri(collectionUri), new VssCredentials());
