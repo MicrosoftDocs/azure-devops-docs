@@ -28,7 +28,7 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure Devops CLI.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
 
 #### [Browser](#tab/browser)
 
