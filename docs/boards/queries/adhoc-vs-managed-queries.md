@@ -61,7 +61,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker range="tfs-2013"  
 
-![Editor View of a Flat List Query - On-premises TFS](media/5.png)  
+![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
 
 ::: moniker-end
 
