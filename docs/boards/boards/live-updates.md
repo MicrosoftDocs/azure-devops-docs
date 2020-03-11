@@ -39,13 +39,16 @@ Choose the ![ ](../media/icons/view-options-icon.png) view options icon and move
 
 From the Kanban board, choose the ![ ](../media/icons/live-updates-icon.png) **Live updates** icon.  
 
-![Kanban board, live updates icon](/azure/devops/boards/media/kanban-live-updates.png)  
+![Kanban board, live updates icon](../media/kanban-live-updates.png)  
+
+::: moniker-end
+
 
 As one team member updates the status of a work item, other team members will see those updates in real time as they occur.  
 
 ![Live update](media/kanban-live-updates.gif)  
 
-::: moniker-end
+
 
 [!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
