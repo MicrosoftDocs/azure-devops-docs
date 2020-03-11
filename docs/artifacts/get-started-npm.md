@@ -131,7 +131,7 @@ We recommend that you use two .npmrc files:
 
    3. Select **npm**.
 
-   4. Select **Get the tools** in the top-right corner
+   4. Select **Get the tools** in the upper-right corner
 
    5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
