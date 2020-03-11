@@ -47,7 +47,7 @@ public static void SampleREST()
 {
     // Connection object could be created once per application and we will use it to get httpclient objects. 
     // Httpclients have been reused between callers and threads.
-    // Their lifetime have been managed by connection (we don't have to dispose them).
+    // Their lifetime has been managed by connection (we don't have to dispose them).
     // This is more robust then newing up httpclient objects directly.  
     
     // Be sure to send in the full collection uri, i.e. http://myserver:8080/tfs/defaultcollection
