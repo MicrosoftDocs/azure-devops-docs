@@ -31,7 +31,6 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iteration Path</strong> can use the operators and macros listed in the following table.
 
-
 ::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
@@ -45,7 +44,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"><sup>1</sup></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
+    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"><sup>1</sup></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> integer.</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
@@ -234,7 +233,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 > [!NOTE]
-> For the <strong>@CurrentIteration</strong> macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the <strong>@CurrentIteration</strong> macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -366,9 +365,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
     <p>The date and time when the schedule indicates that the task will be completed. </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime</p>
   </td>
-  <td>
   <td>Requirement, Task, Test Plan, User Story </td>
-  </td>
 </tr>
 <tr>
   <td>Iteration Path</td>
@@ -385,9 +382,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
     <p>The date and time when the work item was moved into a Resolved state. </p>
 	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
   </td>
-  <td>
   <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
-  </td>
 </tr>
 <tr>
   <td>
@@ -397,9 +392,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
     <p>The date and time when the schedule indicates that the task will start.  </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime</p>
   </td>
-  <td>
   <td>Epic, Feature, Requirement, Task, Test Plan, User Story </td>
-  </td>
 </tr>
 <tr>
   <td>

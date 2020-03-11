@@ -1,4 +1,4 @@
-﻿---
+---
 title: Learn key concepts & terms to support Agile tools
 titleSuffix: Azure Boards
 description: Understand the objects and items used to track work in Azure Boards & TFS
@@ -66,7 +66,7 @@ Specifies the set of work item types that you don't want users to create manuall
 -   [Shared Steps and Shared Parameter](../../test/create-test-cases.md)    
 -   [Test Plan and Test Suite](../../test/create-a-test-plan.md)  
   
-You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from github to quickly determine which WITs belong to the Hidden Types Category. 
+You can use [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub to quickly determine which WITs belong to the Hidden Types Category. 
 
 ## Hosted XML process model  
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. This process model is only available for select accounts hosted on the Azure Boards cloud platform.  To learn more, see [Hosted process model](../../organizations/settings/work/hosted-xml-process-model.md).
@@ -96,12 +96,15 @@ Specifies an enumerated set of values that appear within a drop-down menu in a w
 [!INCLUDE [temp](../../includes/glossary-terms/process.md)]  
 
 ## Process configuration
+
 Specifies the default configuration and functional capabilities that your teams can access using the Agile tools. These web portal tools include the product backlog, sprint backlogs, Kanban board, and taskboard. (Only supported for Hosted XML and On-premises XML process models)  
 
 ## Process model  
+
 The work tracking customization method supported by your organization or collection. One of three process models are supported, Inheritance and Hosted XML for Azure Boards and On-premises XML for on-premises Azure DevOps. Learn more: [Customize your work tracking experience](../../reference/customize-work.md) 
 
 ## Process template
+
 Specifies an inter-related set of files that contain the XML definitions for tracking work and defining the initial configuration of other functional areas. The system provides three default process templates&mdash;[Agile](guidance/agile-process.md), [Scrum](guidance/scrum-process.md), or [CMMI](guidance/cmmi-process.md). You can create a project and then customize it, or customize a process template that you then use to create a project. (Only supported for Hosted XML and On-premises XML process models) 
 
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
