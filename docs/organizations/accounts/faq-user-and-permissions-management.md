@@ -23,7 +23,6 @@ In this article, learn the answers to the following frequently asked questions (
 - [Change app access policies](#change-app-access-policies)
 - [Leave your organization](#leave-organization)
 - [Group-based licensing](#group-based-licensing)
-- [Add administrators to projects and project collections](#add-administrators-to-projects)
 - [Add members to projects](#add-members-to-projects)
 
 <a name="general-permissions"></a>
@@ -255,45 +254,6 @@ Expected: I get Basic + Test Plans because what the group rule gives me is great
 I have a Visual Studio Test Pro subscription and I'm in a group rule that gives me Basic + Test Plans – what happens?
 
 Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
-
-<a name="add-administrators-to-projects"></a>
-
-## Add administrators to projects and project collections FAQs
-
-### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
-
-A: It varies. For most organizations that use Azure DevOps, Project Collection Administrators manage the collections that members of the **Team Foundation Administrators** group create. Members of the **Project Collection Administrators** group don't create the collections themselves. Project collection administrators also do many operations required to maintain the collection. Operations include creating team projects, adding users to groups, modifying the settings for the collection, and so on.
-
-### Q: What are the optimal permissions to administer a project collection across all of its components and dependencies?
-
-A: Project collection administrators must be members of the following groups or have the following permissions:
-
-- Team Foundation Server: A member of the **Project Collection Administrators** group, or have the appropriate [collection-level permissions](../../organizations/security/permissions.md#collection) set to **Allow**.
-
-- SharePoint Products: If the collection is configured with a site collection resource, then a member of the **Site Collection Administrators** group.
-
-- Reporting Services: If the collection is configured with reporting resources, then a member of the **Team Foundation Content Manager** group.
-
-### Q: I'm an admin, but I don't have permission to add a Project Collection Administrator. What do I need?
-
-A: The following permissions are required:
-
-- You must be a **Project Collection Administrator**, or your **View Server-Level Information** and **Edit Server-Level Information** permissions must be set to **Allow**.
-
-- To add permissions for SharePoint Products, you must be a member of the **Site Collection Administrators** or **Farm Administrators** groups for SharePoint Products.
-
-- To add permissions for Reporting Services, you must be a member of the **Content Managers** or **Team Foundation Content Managers** groups for Reporting Services.
-
-> [!Important]
-> To perform administrative tasks like creating project collections, your user requires administrative permissions. The service account that the Team Foundation Background Job Agent uses must have certain permissions granted to it. For more information, see [Service accounts and dependencies in Team Foundation Server](/azure/devops/server/admin/service-accounts-dependencies) and [Team Foundation Background Job Agent](/azure/devops/server/architecture/background-job-agent).
-
-### Q: Where can I find information about each individual permission?
-
-A: You can find detailed information about individual permissions and their relationship to default security groups in the [Permission and groups reference](../../organizations/security/permissions.md). To give a user project administration permission, complete the following steps:
-
-1. From the team page, select the settings icon ![Settings icon](media/admin-gear-icon.png) to go to the team administration page.
-
-2. Add the user to the **Project Administrators** group.
 
 <a name="add-members-to-projects"></a>
 
