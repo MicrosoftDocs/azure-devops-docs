@@ -6,7 +6,7 @@ description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
 ms.author: jukullam
-ms.date: 08/13/2019
+ms.date: 03/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -61,6 +61,11 @@ We provide a *free tier* of service by default in every organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
 - Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
+ 
+> [!TIP]
+> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
+> into multiple jobs. For more information on jobs, see 
+> [Specify jobs in your pipeline](../process/phases.md).
 
 When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 
