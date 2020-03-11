@@ -177,7 +177,7 @@ extends:
 
 ### Set required templates
 
-To require that a specific template gets used, you can set the [required template check](../process/approvals.md) for a resource or environment. The required template check can be used when extending from a template. 
+To require that a specific template gets used, you can set the [required template check](../process/approvals.md#required-template) for a resource or environment. The required template check can be used when extending from a template. 
 
 You can check on the status of a check when viewing a pipeline job. When a pipeline doesn't extend from the require template, the check will fail and the run will stop. You will see that your check failed. 
 
