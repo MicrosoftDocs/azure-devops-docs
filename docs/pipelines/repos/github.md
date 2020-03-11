@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 10/21/2019
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -23,7 +23,7 @@ Azure Pipelines is free for GitHub repositories, with multiple free offerings av
 
 If your GitHub repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
 
-If both your GitHub repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each. If you need more, you can contact us to have the limits increased.
+If both your GitHub repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
 
 For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
 
