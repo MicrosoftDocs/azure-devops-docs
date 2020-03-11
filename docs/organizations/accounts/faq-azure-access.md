@@ -23,9 +23,18 @@ In this article, learn the answers to the following frequently asked questions (
 - [Azure AD groups](#azure-ad-groups)
 - [Add users to directory](#add-users-to-directory)
 - [Remove users or groups](#remove-users-or-groups)
-- [Connect to, disconnect from, or switch connection with Azure AD](#connect-disconnect-or-change-azure-ad)
+- [Connect to, disconnect from, or switch connection with Azure AD](#faq-connect)
+
+<a name="general"></a>
 
 ## General access with Azure AD FAQs
+
+### Q:  Why don't I see my organization in the Azure portal?
+
+A:  In both applications, you must have
+[Azure Service Administrator or Co-administrator](/azure/billing-add-change-azure-subscription-administrator) 
+permissions for the Azure subscription that's linked to your organization in Azure DevOps.
+Also, in the [Azure portal](https://portal.azure.com), you must have Project Collection Administrator or organization Owner permissions.
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
 
@@ -72,6 +81,8 @@ Or you can link your organization to another Azure subscription by
 [unlinking your organization from the disabled subscription](/azure/devops/billing/change-azure-subscription). 
 While your subscription is disabled, your organization goes back to the free 
 monthly limits until your subscription is fixed.
+
+<a name="azure-ad-users-and-permissions"></a>
 
 ## Azure AD users and permissions FAQs
 
@@ -155,6 +166,8 @@ The user making the UserType change must have the following items:
 9. Execute `Get-AzureADuser -SearchString "<display_name>"` again to verify the UserType has changed. You can also verify in the Azure Active Directory section of the Azure portal.
 While not the norm, we've seen it takes several hours or even days before this change is reflected inside Azure DevOps. If it doesn't fix your Azure DevOps issue immediately, give it some time and keep trying.
 
+<a name="azure-ad-groups"></a>
+
 ## Azure AD groups FAQs
 
 ### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
@@ -226,7 +239,7 @@ A: No, querying on Azure AD groups isn't supported.
 
 A: No, but you might be interested in our [process customization plans](https://devblogs.microsoft.com/devops/visual-studio-online-process-customization-update/).
 
-<a name="faq-users"></a>
+<a name="add-users-to-directory"></a>
 
 ## Add users to directory FAQs
 
@@ -265,6 +278,8 @@ Before you start, make sure you have at least Basic access, not Stakeholder.
 
 Complete the [prerequisites for adding external users](add-external-user.md#prerequisites), turning External guest access to **On**.
 
+<a name="remove-users-or-groups"></a>
+
 ## Remove users or groups FAQs
 
 ### Q: How do I remove an Azure AD group from Azure DevOps?
@@ -284,6 +299,7 @@ To block all access for users, remove them from Azure AD groups in your organiza
 ### Q: If an Azure AD user is removed, will all their related PATs be revoked as well?
 
 A: Users who are disabled or removed from your directory, can no longer access your organization by any mechanism, including via PATs or SSH.
+
 <a name="faq-connect"></a>
 
 ## Connect to, disconnect from, or change Azure AD connection FAQs
