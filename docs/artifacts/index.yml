@@ -35,7 +35,7 @@ landingContent:
         links:
           - text: Move your packages to the cloud
             url: ./nuget/move-from-fileshares.md
-          - text: Communicate package quality with release views
+          - text: Communicate package quality with pre-release and release views
             url: ./feeds/views.md
           - text: Set permissions and grant access
             url: ./feeds/feed-permissions.md
