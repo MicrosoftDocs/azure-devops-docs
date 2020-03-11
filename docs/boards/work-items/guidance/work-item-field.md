@@ -291,6 +291,6 @@ The following articles describe fields that are used in common by several WITs, 
 - [Create managed queries](../../queries/example-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
 
 
