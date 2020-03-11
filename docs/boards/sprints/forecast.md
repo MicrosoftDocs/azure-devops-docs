@@ -110,7 +110,7 @@ To forecast your product backlog, perform the following actions.
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-4. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
+4. Enter your team's predicted velocity. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Set Forecast velocity](media/forecast/set-forecast-velocity.png)
