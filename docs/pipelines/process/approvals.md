@@ -32,7 +32,7 @@ You can manually control when a stage should run using approval checks. This is 
 ### Approvals for environments
 To define an approval on an environment:
 
-1. In your Azure DevOps project, go to the environment that needs to be protected. (Learn more about [creating an environment](environments.md#creation)).
+1. In your Azure DevOps project, go to the environment that needs to be protected. (Learn more about [creating an environment](environments.md#creation).)
 
 2. Navigate to **Approvals and Checks** for the environment.
 
