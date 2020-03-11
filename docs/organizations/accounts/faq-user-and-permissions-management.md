@@ -20,11 +20,13 @@ In this article, learn the answers to the following frequently asked questions (
 - [General permissions](#general-permissions)
 - [Visual Studio subscriptions](#visual-studio-subscriptions)
 - [User access](#user-access)
-- [Change app access policies](#change-app-access-policies-for-your-organization)
-- [Leave your organization](#leave-your-organization-faqs)
-- [Group-based licensing](#group-based-licensing-faqs)
-- [Add administrators to projects and project collections](#add-administrators-to-projects-and-project-collections-faqs)
+- [Change app access policies](#change-app-access-policies)
+- [Leave your organization](#leave-organization)
+- [Group-based licensing](#group-based-licensing)
+- [Add administrators to projects and project collections](#add-administrators-to-projects)
 - [Add members to projects](#add-members-to-projects)
+
+<a name="general-permissions"></a>
 
 ## General permissions FAQs
 
@@ -65,6 +67,8 @@ See [Show members of the Project Collection Administrators group](/azure/devops/
 See [Show members of the Project Administrators group](/azure/devops/organizations/security/lookup-organization-owner-admin#show-members-of-the-project-administrators-group).
 
 ::: moniker-end
+
+<a name="visual-studio-subscriptions"></a>
 
 ## Visual Studio subscriptions FAQs
 
@@ -127,6 +131,8 @@ Follow these instructions to identify if you have Professional users, buy a mont
 
 If you don't complete these steps by September 30, 2019, and your users get downgraded to Basic or Stakeholder access, you may restore their Professional access at any time by following the previous instructions.
 
+<a name="user-access"></a>
+
 ## User access FAQs
 
 ### Q: What does "Last Access" mean in the All Users view?
@@ -177,6 +183,8 @@ A: A user can lose access for the following reasons (although the user can conti
 
     Otherwise, on the first day of the calendar month, users who haven't signed in to your organization for the longest time lose access first. If your organization has users who don't need access anymore, [remove them from your organization](delete-organization-users.md).
 
+<a name="change-app-access-policies"></a>
+
 ## Change app access policies for your organization FAQs
 
 <a name="Oauth"></a>
@@ -193,6 +201,8 @@ A:  No, you can still use that method in all the other organizations that you ow
 
 A:  Yes, those apps continue to work.
 
+<a name="leave-organization"></a>
+
 ## Leave your organization FAQs
 
 ### Q: How do I remove myself from an organization when the owner isn't available to remove me?
@@ -207,6 +217,8 @@ A: To remove yourself from an organization, do the following steps:
 3. Confirm that you want to **Leave** the organization.
 
     ![confirm-removal-from-organization.png](media/faq/confirm-removal-from-organization.png)
+
+<a name="group-based-licensing"></a>
 
 ## Group-based licensing FAQs
 
@@ -244,6 +256,8 @@ I have a Visual Studio Test Pro subscription and I'm in a group rule that gives 
 
 Expected: I get detected as a Visual Studio Test Pro subscriber, because the access is the same as the group rule, and I'm already paying for the Visual Studio Test Pro, so I wouldn't want to pay again.
 
+<a name="add-administrators-to-projects"></a>
+
 ## Add administrators to projects and project collections FAQs
 
 ### Q: When do I need to add someone to the Project Collection Administrator role in Azure DevOps?
@@ -280,6 +294,8 @@ A: You can find detailed information about individual permissions and their rela
 1. From the team page, select the settings icon ![Settings icon](media/admin-gear-icon.png) to go to the team administration page.
 
 2. Add the user to the **Project Administrators** group.
+
+<a name="add-members-to-projects"></a>
 
 ## Add members to projects FAQs
 

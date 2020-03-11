@@ -84,6 +84,8 @@ If you connected your organization to Azure Active Directory but you belong to m
 
 ![Change your directory](/azure/devops/media/change-details-standard2-with-directory.png)
 
+<a name="create-organization-faqs"></a>
+
 ## Create an organization FAQs
 
 For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md). 
@@ -185,6 +187,8 @@ A: You can find it here: [Azure DevOps SLA](https://azure.microsoft.com/support/
 A: You can try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs) or for more information, see [Set up Visual Studio FAQs](faq-set-up-vs.md). 
 
 ::: moniker range="azure-devops"
+
+<a name="configure-organization-faqs"></a>
 
 ## Configure an organization FAQs
 
