@@ -42,7 +42,7 @@ You must be a Project Collection Administrator or organization Administrator to 
 
 ## Related articles
 
-- [Need help?](faq-change-app-access.md#get-support)
+- [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
 - [Manage Conditional Access](manage-conditional-access.md)
 - [Change application access policies](change-application-access-policies.md).

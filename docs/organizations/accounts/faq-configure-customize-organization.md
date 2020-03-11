@@ -180,8 +180,6 @@ A: Yes, your code and your intellectual property are yours. Please review our [t
 
 A: You can find it here: [Azure DevOps SLA](https://azure.microsoft.com/support/legal/sla/visual-studio-team-services/v1_2/).
 
-<a name="get-support"></a>
-
 ### Q: I'm having problems with my Visual Studio subscription. How can I get help?
 
 A: You can try [Subscription Support](https://visualstudio.microsoft.com/support/subscription-support-vs) or for more information, see [Set up Visual Studio FAQs](faq-set-up-vs.md). 
@@ -284,6 +282,10 @@ A: See [Delete your organization](delete-your-organization.md), which includes p
 ### Q: How do I restore my organization?
 
 A: See [Recover your organization](recover-your-vsts-organization.md).
+
+<a name="get-support"></a>
+
+[!INCLUDE [get-team-services-support](../../includes/qa-get-vsts-support.md)]
 
 ## Related articles
 
