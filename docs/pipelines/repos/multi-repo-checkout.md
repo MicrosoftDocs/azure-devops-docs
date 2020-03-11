@@ -67,7 +67,7 @@ steps:
 - script: dir $(Build.SourcesDirectory)
 ```
 
-If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. In this example, the repository name (not the `repository` value which is used to reference the repository in the `checkout` step) is used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
+If the `self` repository is named `CurrentRepo`, the `script` command produces the following output: `CurrentRepo  MyAzureReposGitRepo  MyBitBucketRepo  MyGitHubRepo`. In this example, the names of the repositories are used for the folders, because no `path` is specified in the checkout step. For more information on repository folder names and locations, see the following [Checkout path](#checkout-path) section.
 
 ### Repository declared using inline syntax
 
@@ -90,6 +90,10 @@ Unless a `path` is specified in the `checkout` step, source code is placed in a 
 
 - **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
 - **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of`s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+  
+  > [!NOTE]
+  > If no `path` is specified in the `checkout` step, the name of the repository is used for the folder,
+  > not the `repository` value which is used to reference the repository in the `checkout` step.
 
 If a `path` is specified for a `checkout` step, that path is used, relative to `(Agent.BuildDirectory)`.
 
