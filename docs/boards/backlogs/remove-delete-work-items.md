@@ -438,7 +438,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	![Confirm delete dialog](media/move-change-delete/delete-work-items-dialog-tfs.png)
 
 	> [!NOTE]    
-	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
+	> The Delete work items confirmation dialog for on-premises Azure DevOps may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 ::: moniker-end
 
