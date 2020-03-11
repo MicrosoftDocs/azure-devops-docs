@@ -323,7 +323,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 <a id="tfs-portal-copy-url" />
 
-**From the web portal for an on-premises TFS**, open the work item and then from the context menu for the browser, choose the copy link option. 
+**From the web portal for an on-premises Azure DevOps**, open the work item and then from the context menu for the browser, choose the copy link option. 
 
 ![Copy hyperlink for a work item from web portal for TFS item](../queries/media/share-plans-copy-URL-wi-tfs.png) 
 

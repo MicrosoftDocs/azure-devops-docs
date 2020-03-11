@@ -247,7 +247,7 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 Choose the **Attachments** tab icon to attach a file to the work item. 
 
-<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
 
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../media/icons/open-icon.png) the open icon to open the attachment or ![ ](../media/icons/download-icon.png) download icon to save a copy.  
 
@@ -260,7 +260,7 @@ Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attac
 #### [Visual Studio](#tab/visual-studio/)
 Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
-<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
