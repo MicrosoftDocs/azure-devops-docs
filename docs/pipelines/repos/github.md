@@ -27,6 +27,11 @@ If both your GitHub repository and your pipeline are public, you can run up to 1
 
 For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
 
+> [!TIP]
+> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
+> into multiple jobs. For more information on jobs, see 
+> [Specify jobs in your pipeline](../process/phases.md).
+
 ### Private GitHub repository or Azure Pipelines in a private project
 
 If either your GitHub repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs either through [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines) (recommended) or [GitHub Marketplace](https://github.com/marketplace/azure-pipelines). Pricing is the same in both marketplaces. Unless you prefer using an existing GitHub billing account, it's recommended that purchases be made in the Azure DevOps Marketplace to simplify associating purchases with different Azure DevOps organizations. Purchasing jobs for private projects or private repositories removes any monthly time limit and allows jobs to have a maximum timeout of 360 minutes (6 hours) each.
