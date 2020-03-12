@@ -1,5 +1,5 @@
 ---
-title: Communicate package quality with pre-release and release views
+title: Communicate package quality with prerelease and release views
 description: Use prerelease and release views to communicate the quality of a package to your consumers in Azure DevOps Services or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
@@ -30,8 +30,10 @@ To promote a package-version:
 1. Select the **Promote** button
 1. Select the view to promote to and select **Promote**
 
-![Promote button next to the package ID](media/release-views-promote.png)
-![Promote scrollbar](media/release-views-promote-choice.png)
+> [!div class="mx-imgBorder"]
+> ![Promote button next to the package ID](media/release-views-promote.png)
+> [!div class="mx-imgBorder"]
+> ![Promote scrollbar](media/release-views-promote-choice.png)
 
 You can also promote using REST APIs. 
 
@@ -53,8 +55,7 @@ In the feed settings view:
 - Make your changes (Add view, Edit, or Delete)
 - Select **Ok**
 
-![Managing views](media/feed-settings-views.png)
+> [!div class="mx-imgBorder"]
+> ![Managing views](media/feed-settings-views.png)
 
-## Views for other scenarios
-
-In time, we expect to provide views for a wider range of scenarios. If you have a scenario you'd like to suggest, please visit the [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+[!INCLUDE [feedback](../../includes/help-support-shared.md)]
