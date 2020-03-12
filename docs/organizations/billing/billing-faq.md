@@ -234,7 +234,7 @@ A: No, you can't move the organization resource that appears in the Azure portal
 ### Q: Can I move between resource groups? 
 A: No, the organization resource is created in its own resource group with a predefined naming convention. If you need to know what Azure DevOps organization is in the resource group, try creating an organization name tag and making it a column in the Resource Groups view. 
 
-1. Create a tag called **Organization name**. 
+1. Create a tag called *Organization name*. 
 2. Tag each **Resource group** with the name of the organization that it contains. 
 3. Select **Manager view** > **Edit columns**. 
 4. Change the selection from **Properties** to **Tags** 
