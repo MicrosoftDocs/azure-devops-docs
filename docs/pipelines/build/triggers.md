@@ -909,8 +909,6 @@ resources:
     trigger: 
       branches:
         include: master
-      stages: 
-      - QA
 ```
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
