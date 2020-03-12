@@ -57,7 +57,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 ## Prerequisites
 
 * [Billing must be set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You need [Project Collection Administrator or organization Owner permissions](../accounts/../security/lookup-organization-owner-admin.md)
+* You need [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 ## Increase quantity of CI/CD
 

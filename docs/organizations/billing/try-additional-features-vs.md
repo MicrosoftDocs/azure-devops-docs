@@ -22,7 +22,7 @@ In this article, learn how to try Azure Test Plans for free for 30 days.
 
 ## Prerequisites
 
-You must have [Project Collection Administrator or organization Owner permissions](../accounts/../security/lookup-organization-owner-admin.md).
+You must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md).
 
 ## Try Azure Test Plans 
 
