@@ -35,7 +35,7 @@ A: You can [recover your Microsoft account password](https://account.live.com/Re
 
 ### Q: Why can't I manage users?
 
-A: You must be a Project Collection Administrator or [organization Owner](../accounts/../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
+A: You must be a Project Collection Administrator or [organization Owner](../security/lookup-organization-owner-admin.md) to manage users at the organization level. To get added, see [Set permissions at the project- or collection-level](/azure/devops/organizations/security/set-project-collection-level-permissions)
 
 <a name="find-owner"></a>
 

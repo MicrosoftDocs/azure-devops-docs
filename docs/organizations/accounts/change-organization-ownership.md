@@ -24,7 +24,7 @@ For organizations connected to Azure Active Directory (Azure AD),  if your organ
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](../accounts/../security/lookup-organization-owner-admin.md).
+You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md).
 
 If no one in the organization has these permissions, contact
 [Azure DevOps Support](https://azure.microsoft.com/support/devops).
