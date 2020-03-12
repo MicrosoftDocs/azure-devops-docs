@@ -13,7 +13,7 @@ ms.date: 04/19/2017
 This deployment, we introduce the git graph. We’ve also updated many build and release tasks and extensions, as well as made improvements to the Marketplace.
 
 ## Delivery timeline markers
-Have you been looking for a way to highlight key dates on your [Delivery Plan](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/23/new-feature-delivery-plans-for-visual-studio-team-services/)? Now you can with plan markers. Plan markers let you visualize key dates for teams directly on your deliver plan. Markers have an associated color and label. The label shows up when you click the marker dot.
+Have you been looking for a way to highlight key dates on your [Delivery Plan](https://devblogs.microsoft.com/devops/new-feature-delivery-plans-for-visual-studio-team-services//)? Now you can with plan markers. Plan markers let you visualize key dates for teams directly on your deliver plan. Markers have an associated color and label. The label shows up when you click the marker dot.
 
 ![delivery timeline](media/04_19_01.png)
 

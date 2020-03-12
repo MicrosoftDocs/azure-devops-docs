@@ -17,7 +17,7 @@ We are excited to announce the preview of Delivery Plans! Delivery Plans help yo
 
 ![delivery plans](media/01_25_15.png)
 
-For more information, see our [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/23/new-feature-delivery-plans-for-visual-studio-team-services/).
+For more information, see our [blog post](https://devblogs.microsoft.com/devops/new-feature-delivery-plans-for-visual-studio-team-services//).
 
 ## Mobile work item form preview
 We’re releasing a preview of our mobile-friendly work item form for Visual Studio Team Services! This mobile work item form brings an optimized look and feel that’s both modern and useful. 
