@@ -54,7 +54,7 @@ Use this article to learn:
 Here's what you need to have in place before you attempt to forecast your team's backlog.   
 
 **Required:** 
-*	[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+*	[Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Sprints should be of the same duration. 
 	- Select enough future sprints to forecast your entire product backlog.
 *	[Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
@@ -110,7 +110,7 @@ To forecast your product backlog, perform the following actions.
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-4. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
+4. Enter your team's predicted velocity. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Set Forecast velocity](media/forecast/set-forecast-velocity.png)
@@ -267,7 +267,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 ## Related articles
 
 *	[Team velocity](../../report/dashboards/team-velocity.md)  
-*	[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+*	[Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 *	Use the [taskboard](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
 
