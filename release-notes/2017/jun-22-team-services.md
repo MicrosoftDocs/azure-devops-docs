@@ -119,7 +119,7 @@ Now you can grant granular permissions to users of the repo to manage tags. You 
 
 ![tags security](media/06_22_18.png)
 
-Read more about git tags at the [Microsoft DevOps blog](https://blogs.msdn.microsoft.com/visualstudioalm/2017/06/14/view-tags-for-git-repositories/).
+Read more about git tags at the [Microsoft DevOps blog](https://devblogs.microsoft.com/devops/view-tags-for-git-repositories/).
 
 ## Export and import build definitions
 
