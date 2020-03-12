@@ -53,7 +53,8 @@ In the feed settings view:
 - Make your changes (Add view, Edit, or Delete)
 - Select **Ok**
 
-![Managing views](media/feed-settings-views.png)
+> [!div class="mx-imgBorder"]
+> ![Managing views](media/feed-settings-views.png)
 
 ## Views for other scenarios
 
