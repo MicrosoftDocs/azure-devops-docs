@@ -2687,7 +2687,7 @@ Versions in the “Server” column are linked to the appropriate download locat
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=831912" data-raw-source="[2017](https://go.microsoft.com/fwlink/?LinkId=831912)">2017</a></td>
         </tr>
         <tr>
-            <td rowspan="1"><a href="https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/" data-raw-source="[6 Jun 2016](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/06/visual-studio-team-services-is-in-brazil/)">6 Jun 2016</a></td>
+            <td rowspan="1"><a href="https://devblogs.microsoft.com/devops/visual-studio-team-services-is-in-brazil/" data-raw-source="[6 Jun 2016](https://devblogs.microsoft.com/devops/visual-studio-team-services-is-in-brazil/)">6 Jun 2016</a></td>
             <td>Brazil region for Visual Studio Team Services</td>
             <td></td><td>N/A</td>
         </tr>
