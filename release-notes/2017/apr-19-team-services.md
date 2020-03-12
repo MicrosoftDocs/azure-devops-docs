@@ -74,7 +74,7 @@ The __Copy Files Over SSH__ build/release task now supports tildes(~) in the des
 The SSH build/release task now supports running scripts with Windows line endings on remote Linux or macOS machines.
 
 ## Deploy to Azure Government Cloud
-Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/azure/devops/build-release/concepts/library/service-endpoints#sep-azure-rm) to target national clouds.
+Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/azure/devops/build-release/concepts/library/service-endpoints#sep-azure-classic) to target national clouds.
 
 With this, you can now use Release Management to deploy any application to Azure resources hosted in government clouds, using the same deployment tasks.
 
