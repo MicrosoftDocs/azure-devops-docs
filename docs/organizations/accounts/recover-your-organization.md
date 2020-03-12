@@ -20,14 +20,14 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 ## Prerequisites
 
-* An organization deleted within the last 28 days.
-* Organization Owner permissions to restore your organization. [How do I find the organization Owner?](faq-delete-restore-organization.md#find-owner)
+* An organization deleted within the last 28 days.[
+* Organization Owner permissions to restore your organization. ](../security/lookup-organization-owner-admin.md)How do I find the organization Owner?
 
 ## Recover organization
 
 1. Sign in to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view).
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-delete-restore-organization.md#ChooseOrgAcctMSAcct)
+   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2. On your profile page, go to the *Organizations Pending Deletion* section at the bottom, and then select **Restore**.
 
@@ -41,7 +41,6 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
    * If your organization URL isn't available, provide a new URL, and then select **Restore**.
 
-
 4. After you restore your organization, do the following:
 
    * If billing was set up for your organization, you have to set it up again. [Relink your organization](../billing/set-up-billing-for-your-organization-vs.md) to an Azure subscription.
@@ -49,5 +48,6 @@ After you delete your organization, it's disabled but available for 28 days. If 
 
 ## Related articles
 
-* [Need help?](faq-delete-restore-organization.md#get-support)
+* [Need help?](faq-configure-customize-organization.md#get-support)
 * [Delete your organization from Azure DevOps](delete-your-organization.md)
+
