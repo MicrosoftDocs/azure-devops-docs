@@ -27,7 +27,7 @@ In this article, learn the answers to the following frequently asked questions (
 
 <a name="general"></a>
 
-## General access with Azure AD FAQs
+## General access with Azure AD
 
 ### Q:  Why don't I see my organization in the Azure portal?
 
@@ -84,7 +84,7 @@ monthly limits until your subscription is fixed.
 
 <a name="azure-ad-users-and-permissions"></a>
 
-## Azure AD users and permissions FAQs
+## Azure AD users and permissions
 
 If you don't find an answer to your question here, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
@@ -168,7 +168,7 @@ While not the norm, we've seen it takes several hours or even days before this c
 
 <a name="azure-ad-groups"></a>
 
-## Azure AD groups FAQs
+## Azure AD groups
 
 ### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
 
@@ -241,7 +241,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 <a name="add-users-to-directory"></a>
 
-## Add users to directory FAQs
+## Add users to directory
 
 [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
@@ -280,7 +280,7 @@ Complete the [prerequisites for adding external users](add-external-user.md#prer
 
 <a name="remove-users-or-groups"></a>
 
-## Remove users or groups FAQs
+## Remove users or groups
 
 ### Q: How do I remove an Azure AD group from Azure DevOps?
 
@@ -302,7 +302,7 @@ A: Users who are disabled or removed from your directory, can no longer access y
 
 <a name="faq-connect"></a>
 
-## Connect to, disconnect from, or change Azure AD connection FAQs
+## Connect to, disconnect from, or change Azure AD connection
 
 - [Connect your organization to Azure AD](connect-organization-to-aad.md)
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)

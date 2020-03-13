@@ -24,7 +24,7 @@ In this article, learn the answers to frequently asked questions (FAQs) about cr
 
 For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
-## General organization FAQs
+## General organization
 
 <a name="free-users"></a>
 
@@ -86,7 +86,7 @@ If you connected your organization to Azure Active Directory but you belong to m
 
 <a name="create-organization-faqs"></a>
 
-## Create an organization FAQs
+## Create an organization
 
 For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md). 
 
@@ -188,7 +188,7 @@ A: You can try [Subscription Support](https://visualstudio.microsoft.com/support
 
 <a name="configure-organization-faqs"></a>
 
-## Configure an organization FAQs
+## Configure an organization
 
 <a name="NoNewOwner"></a>
 
@@ -273,7 +273,7 @@ Closing your browser doesn't always sign you out completely. Here's how you can 
 
 ::: moniker-end
 
-## Delete or restore your organization FAQs
+## Delete or restore your organization
 
 ### Q: How do I delete my organization?
 
