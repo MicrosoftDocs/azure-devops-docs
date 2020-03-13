@@ -26,7 +26,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To view pull requests in a specific repository in a project, [got to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
+1. To view pull requests in a specific repository in a project, [goto that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
    ![View your pull requests](media/repos-navigation/repos-pull-requests.png)
 
