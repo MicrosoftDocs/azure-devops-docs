@@ -27,7 +27,7 @@ In this article, learn the answers to the following frequently asked questions (
 
 <a name="general-permissions"></a>
 
-## General permissions FAQs
+## General permissions
 
 ### Q: What happens if I forget my password?
 
@@ -69,7 +69,7 @@ See [Show members of the Project Administrators group](/azure/devops/organizatio
 
 <a name="visual-studio-subscriptions"></a>
 
-## Visual Studio subscriptions FAQs
+## Visual Studio subscriptions
 
 <a name="MSDNSubscriber"></a>
 
@@ -132,7 +132,7 @@ If you don't complete these steps by September 30, 2019, and your users get down
 
 <a name="user-access"></a>
 
-## User access FAQs
+## User access
 
 ### Q: What does "Last Access" mean in the All Users view?
 
@@ -184,7 +184,7 @@ A: A user can lose access for the following reasons (although the user can conti
 
 <a name="change-app-access-policies"></a>
 
-## Change app access policies for your organization FAQs
+## Change app access policies for your organization
 
 <a name="Oauth"></a>
 
@@ -202,7 +202,7 @@ A:  Yes, those apps continue to work.
 
 <a name="leave-organization"></a>
 
-## Leave your organization FAQs
+## Leave your organization
 
 ### Q: How do I remove myself from an organization when the owner isn't available to remove me?
 
@@ -219,7 +219,7 @@ A: To remove yourself from an organization, do the following steps:
 
 <a name="group-based-licensing"></a>
 
-## Group-based licensing FAQs
+## Group-based licensing
 
 ### Q: Will my users lose their access level and project membership if I remove a group rule?
 
@@ -257,7 +257,7 @@ Expected: I get detected as a Visual Studio Test Pro subscriber, because the acc
 
 <a name="add-members-to-projects"></a>
 
-## Add members to projects FAQs
+## Add members to projects
 
 <a name="cant-add-users"></a>
 
