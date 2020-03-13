@@ -56,7 +56,7 @@ A: If you have inactive users, stop paying for them by removing them or assignin
 
 ### Q: How can I pay only once per user across multiple organizations?
 
-A: Multi-org billing/licensing is available. For more information, see [multi-org billing](#multi-org-billing).
+A: Multi-organization billing/licensing is available. For more information, see [multi-organization billing](#multi-org-billing).
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
@@ -70,21 +70,21 @@ A: Microsoft ended support for purchasing third party paid Azure DevOps extensio
 
 A: Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
 
-## Multi-org billing
+## Multi-organization billing
 
-Multi-org billing allows you to pay once per user, for organizations under the same Azure billing subscription.
+Multi-organization billing allows you to pay once per user, for organizations under the same Azure billing subscription.
 
-### Q: Does multi-org billing make sense for all customers?
+### Q: Does multi-organization billing make sense for all customers?
 
-A: No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-org billing is likely the best option. 
+A: No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing is likely the best option. 
  
-### Q: How can I turn on multi-org billing?
+### Q: How can I turn on multi-organization billing?
 
-A: To turn on multi-org billing, see [how to pay for a user once across multiple organizations](buy-basic-access-add-users.md#pay-for-a-user-once-across-multiple-organizations).
+A: To turn on multi-organization billing, see [how to pay for a user once across multiple organizations](buy-basic-access-add-users.md#pay-for-a-user-once-across-multiple-organizations).
  
 ### Q: Can I use different Azure subscriptions for billing, but still pay only once per user?
 
-A: No. Multi-org billing groups the per user charges at an Azure subscription level, so only organizations that share a common Azure subscription will be billed together. 
+A: No. Multi-organization billing groups the per user charges at an Azure subscription level, so only organizations that share a common Azure subscription will be billed together. 
  
 ### Q: Can I still see multiple line items for each of my organizations on my detailed Azure bill?
 
@@ -96,15 +96,15 @@ A: No. User assignments are applied in each organization independently. An admin
  
 ### Q: What if a user is assigned Basic in one organization and Basic + Test Plans in another?
 
-A: They're billed for both Basic and Basic + Test Plans, which is a current limitation of multi-org billing. We recommend assigning users with group rules and setting up the same group rules in each organization to ensure consistent access level assignment. 
+A: They're billed for both Basic and Basic + Test Plans, which is a current limitation of multi-organization billing. We recommend assigning users with group rules and setting up the same group rules in each organization to ensure consistent access level assignment. 
  
-### Q: How can I get a list of all the users I'm paying for under multi-org billing?
+### Q: How can I get a list of all the users I'm paying for under multi-organization billing?
 
 A: Export a list of users from **Organization settings > Users** for each organization. Then, remove duplicates based on email address. 
 
 ### Q: Why are additional free user grants removed when multi-organization billing is enabled?
 
-A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-org billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), [contact us](mailto:azdevgrant@microsoft.com?subject=Multi-org%20billing%20-%20free%20user%20grant%20request) to request the grant be applied to your Azure subscription instead.
+A: The most common reason customers have received extra free user license grants in the past is because Azure DevOps didn't support multi-organization billing. For that reason, when you enable multi-organization billing, additional free grants are removed. If you have a free grant that applied to one or more of your organizations for a different reason, for example the [Microsoft Enterprise DevOps Accelerator Offer](https://info.microsoft.com/microsoft-enterprise-devops-accelerator-offer.html), [contact us](mailto:azdevgrant@microsoft.com?subject=Multi-org%20billing%20-%20free%20user%20grant%20request) to request the grant be applied to your Azure subscription instead.
 
 ## General billing
 
@@ -183,7 +183,7 @@ Complete the following step to view by cost analysis.
 
 A: Follow these steps to see only your charges for Azure DevOps.
 
-1. Go to **Azure portal** > **Subscriptions** > **Cost analysis**.
+1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
 2. Filter on **Service name** = **Azure DevOps**.
 
    ![Filter by service name](media/billing-faq/filter-by-service-name.png)
@@ -192,7 +192,7 @@ A: Follow these steps to see only your charges for Azure DevOps.
 
 A: Azure DevOps charges daily, so the best way to see what you're currently paying for Azure DevOps is to view by daily costs. 
 
-1. Go to **Azure portal** > **Subscriptions** > **Cost analysis**.
+1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
 2. View by **Daily costs**.
 
    ![View by Daily costs](media/billing-faq/view-daily-costs.png)
@@ -201,8 +201,8 @@ A: Azure DevOps charges daily, so the best way to see what you're currently payi
 
 A: Azure DevOps includes Azure Repos, Azure Boards, Azure Pipelines, Azure Artifacts, and Azure Test Plans. For more information, see [Azure DevOps pricing](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for more details. To see these services on your bill, follow these steps. 
 
-1. Go to **Azure portal** > **Subscriptions** > **Cost analysis**.
-2.  Group by **Meter subcategory**.
+1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
+2. Group by **Meter subcategory**.
 
    ![Group by Meter subcategory](media/billing-faq/group-by-meter-subcategory.png)
 
@@ -212,7 +212,7 @@ A: If you have more than one Azure DevOps organization that's billed to the same
 
 To make this split easier, we automatically add the tag `"_organizationname_"` and the name of your Azure DevOps organization associated with the charges. We started emitting this tag in Feb 2020, so you won't see it before that date. See the following two ways you can use this tag to drill in to charges for a given organization.
 
-1. Go to **Azure portal** > **Subscriptions** > **Cost analysis**.
+1. In the Azure portal, select **Subscriptions** > **Cost analysis**.
 
    ![In Azure portal, select Subscriptions, and then Cost analysis](media/billing-faq/cost-management-cost-analysis.png) 
 
@@ -229,7 +229,7 @@ To make this split easier, we automatically add the tag `"_organizationname_"` a
 Your Azure DevOps organization appears as a resource in the Azure portal, but it's created and managed outside of the portal. There are some limitations to this integration and workarounds, as follows. 
  
 ### Q: Can I move between subscriptions? 
-A: No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But, you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. 
+A: No, you can't move the organization resource that appears in the Azure portal between Azure subscriptions via the Azure portal. But you can move it between subscriptions by [changing the subscription](change-azure-subscription.md) your organization uses for billing. 
 
 ### Q: Can I move between resource groups? 
 A: No, the organization resource is created in its own resource group with a predefined naming convention. If you need to know what Azure DevOps organization is in the resource group, try creating an organization name tag and making it a column in the Resource Groups view. 
@@ -237,12 +237,12 @@ A: No, the organization resource is created in its own resource group with a pre
 1. Create a tag called *Organization name*. 
 2. Tag each **Resource group** with the name of the organization that it contains. 
 3. Select **Manager view** > **Edit columns**. 
-4. Change the selection from **Properties** to **Tags** 
+4. Change the selection from **Properties** to **Tags**. 
 5. Select the **Organization name** column. 
 6. Move it to **Selected columns**, and then select **Apply**. 
 
 ### Q: Why is the location of my organization resource incorrect? 
-A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then s[set up billing](set-up-billing-for-your-organization-vs.md) again.  
+A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
 
 ### Q: Why is the name of my organization resource incorrect? 
 A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
