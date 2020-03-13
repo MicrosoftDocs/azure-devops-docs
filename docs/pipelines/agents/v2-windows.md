@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.date: 03/09/2020
+ms.date: 03/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -202,13 +202,14 @@ To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to r
 
 ### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
 
  ```ps
  .\run.cmd --once
  ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ### Run as a service
 
