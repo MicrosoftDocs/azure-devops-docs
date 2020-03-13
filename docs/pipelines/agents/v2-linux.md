@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 03/09/2020
+ms.date: 03/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -229,13 +229,14 @@ If you didn't choose a different pool, your agent will be in the **Default** poo
 
 ### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
 
  ```bash
 ./run.sh --once
 ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ## Run as a systemd service
 

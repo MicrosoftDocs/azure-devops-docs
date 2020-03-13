@@ -3,7 +3,7 @@ title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 01/09/2020
+ms.date: 03/013/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -178,6 +178,9 @@ Now that you have created an image, you can spin up a container.
     ```
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
 
 ## Linux
 
@@ -360,6 +363,9 @@ Now that you have created an image, you can spin up a container.
     ```
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
 
 ## Environment variables
 
