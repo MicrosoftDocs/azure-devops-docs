@@ -22,7 +22,7 @@
     href: change-azure-subscription.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Buy access to Azure DevOps Server or Azure Test Plans
     href: buy-access-tfs-test-hub.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Billing FAQ
+  - name: Billing FAQs
     href: billing-faq.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Cloud Solution Providers
     items:
