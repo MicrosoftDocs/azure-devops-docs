@@ -20,9 +20,11 @@ In this article, learn the answers to frequently asked questions (FAQs) about cr
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
 - [Configure an organization](#configure-organization-faqs)
-- [Delete or restore an organization](#delete-or-restore-your-organization-faqs)
+- [Delete or restore an organization](#delete-restore-your-organization-faqs)
 
 For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
+
+<a name="general-organization-faqs"></a>
 
 ## General organization
 
@@ -272,6 +274,8 @@ Closing your browser doesn't always sign you out completely. Here's how you can 
 4. Sign in to Azure DevOps again. Select your other identity.
 
 ::: moniker-end
+
+<a name="delete-restore-organization-faqs"></a>
 
 ## Delete or restore your organization
 
