@@ -255,8 +255,7 @@ A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-reso
 3. Select **Assign tags**. 
 
 ### Q: What happens if I delete my organization resource? 
-A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free).  
-To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
+A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
 
 ## How charges are processed
 
