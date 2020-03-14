@@ -1,16 +1,16 @@
 ---
-title: Deploy to Azure App Service using extension
+title: Deploy to Azure App Service using Visual Studio Code
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: F8AB2F49-FC90-4436-8E47-1F707D76C038
 ms.topic: conceptual
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 03/06/2020
+ms.date: 03/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy to Azure App Service using extension
+# Deploy to Azure App Service using Visual Studio Code
 
 This tutorial walks you through setting up a CI/CD pipeline for deploying Node.js application to Azure App Service using [Deploy to Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy) extension.
 
@@ -83,7 +83,7 @@ At this point, we should test that our application runs. The generated Express a
 
 ## Setup CI/CD Pipeline
 
-Now you can deploy to Azure WebApps using VS code. This VS Code extension helps you set up continuous build and deployment for Azure WebApps without leaving VS Code.
+Now you can deploy to Azure App Services, Azure Function App and AKS using VS code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
 
 To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
 
@@ -101,6 +101,9 @@ To use this service, you need to install the extension on VS Code. You can brows
 
     ![configure CI/CD](media/deploy-to-azure/configure.png)
 
+    > [!NOTE]
+    > If the code is not opened in the workspace, it will ask for folder location. Similarly, if the code in the workspace has more than one folder, it will ask for folder.
+
 1. Select a pipeline template you want to create from the list. Since we're targeting `Node.js`, select `Node.js with npm to App Service.`
 
     ![pipeline template selection](media/deploy-to-azure/pipeline-template-selection.png)
@@ -117,7 +120,10 @@ To use this service, you need to install the extension on VS Code. You can brows
 
     ![pat scope](media/deploy-to-azure/gitHubPatScope.png)
 
-1. The guided workflow will generate a starter YAML file defining the build and deploy process. Commit & push the YAML file to proceed with the deployment.
+    > [!TIP]
+    >If the code is in Azure Repos, you need different permissions.
+
+1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
     ![commit YAML](media/deploy-to-azure/commitandpush.png)
 
