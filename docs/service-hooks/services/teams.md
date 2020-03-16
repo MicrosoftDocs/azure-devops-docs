@@ -12,7 +12,7 @@ ms.date: 03/16/2020
 
 >[!NOTE]
 > If you use Azure DevOps Services, we recommend you use  
-[Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration, [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration) and [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+[Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration), [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration) and [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
 
  
 See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
