@@ -423,7 +423,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 #### Notes:
  
-1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md#date-identity).
+1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md).
 
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```xml
