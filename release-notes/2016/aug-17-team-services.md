@@ -103,7 +103,7 @@ The SSH task provides a way to run commands and scripts on remote machines via s
 
 ### Create archives from builds and releases
 
-A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/).
+A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/](https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/).
 
 ### Copy files over SSH from builds and releases
 
