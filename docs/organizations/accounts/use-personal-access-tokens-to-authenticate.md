@@ -38,7 +38,7 @@ Use PATs for non-Microsoft tools integrated with Azure DevOps but that don't sup
 
 ### Q: What is my Azure DevOps Services URL?
 
-A: https://dev.azure.com/{your organization}
+A: https://dev.azure.com/ {your organization}
 
 ### Q: Is there a way to renew a PAT via REST API?
 A: No, we don't have a REST API to renew a PAT. You can only renew a PAT within the user interface (UI).
