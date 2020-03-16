@@ -8,7 +8,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 03/16/2020
 ---
 
-# Create a service hook for Azure DevOps Services and Team Foundation Server (TFS) with Microsoft Teams
+# Create a service hook for Team Foundation Server (TFS) with Microsoft Teams
 
 >[!NOTE]
 > If you use Azure DevOps Services, we recommend you use  
