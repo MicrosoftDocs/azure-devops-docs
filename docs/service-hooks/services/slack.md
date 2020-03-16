@@ -5,10 +5,10 @@ title: Create a service hook with Slack
 description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 03/15/2019
 ---
 
-# Create a service hook for Azure DevOps Services and TFS with Slack
+# Create a service hook for Azure DevOps Server (TFS) with Slack
 
 >[!NOTE]
 >If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Slack.
@@ -18,8 +18,9 @@ Users can create work items using a slash command, or use message actions to con
 Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
 >### Azure Pipelines app for Slack
 >[Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration) helps to easily monitor the events in your pipelines. Users can set up and manage 
-subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. 
-Users can also approve release deployments from their channels. 
+subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
+>### Azure Pipelines app for Teams
+>[Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels.
 
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps Services organization,
 like completed builds, code changes, pull requests, releases, work items changes, and more.
