@@ -71,7 +71,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-   <img alt="General channel with a real pull request notification" src="./media/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+![notifications](./media/slack/notifications.png)
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-   <img alt="General channel with a real pull request notification" src="./media/slack/completed-build-in-slack.png" style="border: 1px solid #CCCCCC; width:70%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+![notifications](./media/slack/notifications.png)
 
 ::: moniker-end
 
