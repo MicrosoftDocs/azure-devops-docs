@@ -27,7 +27,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 ## Create a custom app in Slack
 
-1. Refer to the [documentation](https://api.slack.com/messaging/webhooks) in Slack to understand the process of creating an incoming webhook.
+1. Refer to the [documentation](https://api.slack.com/messaging/webhooks) in Slack to understand the process of using webhooks to push information to a Slack channel.
 
 2. Create a new [Slack app](https://api.slack.com/apps/new)
 
