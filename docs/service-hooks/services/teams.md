@@ -1,6 +1,6 @@
 ﻿---
 title: Create a service hook Microsoft Teams
-titleSuffix: Azure DevOps Services, TFS 2017
+titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -11,8 +11,8 @@ ms.date: 05/14/2019
 # Create a service hook for Azure DevOps Services and Team Foundation Server (TFS) with Microsoft Teams
 
 >[!NOTE]
-> If you are only interested in integrating Microsoft Teams with Azure Pipelines, we recommend you use our 
-[Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration).
+> If you are use Azure DevOps Services, we recommend you use  
+[Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration, [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration) and [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
 
 
 <b>Azure DevOps Services | TFS 2017.2</b> 
