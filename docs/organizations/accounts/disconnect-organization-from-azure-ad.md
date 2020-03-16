@@ -56,7 +56,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see the [FAQ](faq-azure-access.md#faq-connect).
+For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](faq-azure-access.md#faq-connect).
 
 ## Related articles
 

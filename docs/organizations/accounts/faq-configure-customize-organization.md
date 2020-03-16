@@ -12,7 +12,7 @@ ms.date: 03/11/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# FAQs - Create and configure organization
+# Create and configure organization FAQs
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
