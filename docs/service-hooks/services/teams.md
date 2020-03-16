@@ -30,6 +30,8 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 
 >[!NOTE]  
 >Project administrator permissions are required to create service hook subscriptions. 
+>Events for YAML pipelines are not supported. 
+
 
 ### From Teams
 
