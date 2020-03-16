@@ -6,6 +6,8 @@
   - name: 2020
     expanded: true
     items:
+    - name: March 16
+      href: 2020/sprint-166-update.md
     - name: February 17
       href: 2020/sprint-165-update.md
     - name: January 28
@@ -377,6 +379,8 @@
       href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
   items:
+    - name: March 16
+      href: 2020/pipelines/sprint-166-update.md
     - name: February 17
       href: 2020/pipelines/sprint-165-update.md
     - name: January 27
@@ -455,6 +459,8 @@
       href: 2019/artifacts/sprint-146-update.md
 - name: General
   items:
+    - name: March 16
+      href: 2020/general/sprint-166-update.md
     - name: February 17
       href: 2020/general/sprint-165-update.md
     - name: January 28
