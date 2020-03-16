@@ -19,22 +19,22 @@ The following integrations help users to receive notifications in response to ev
 ## Azure DevOps Services
 Along with receiving notifications, below integrations also help users to complete workflows on Azure DevOps, such as allowing users to approve release deployments and creating work items from their channels. You can use these apps only with a project hosted on Azure DevOps Services.
 
-    ### Microsoft Teams
+   ### Microsoft Teams
 
-    * [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
+   * [Azure Boards app for Microsoft Teams](https://aka.ms/AzureBoardsTeamsIntegration)
 
-    * [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
+   * [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration)
 
-    * [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+   * [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
 
 
-    ### Slack
+   ### Slack
 
-    * [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
+   * [Azure Boards app for Slack](https://aka.ms/AzureBoardsSlackIntegration)
 
-    * [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
+   * [Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration)
   
-    * [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
+   * [Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration)
 
 
 
