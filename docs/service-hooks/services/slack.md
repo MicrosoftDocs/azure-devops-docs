@@ -29,8 +29,17 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 1. Refer to the [documentation](https://api.slack.com/messaging/webhooks) in Slack to understand the process of creating an incoming webhook.
 
-2. [Create a new Slack app](https://api.slack.com/apps/new)
+2. Create a new [Slack app](https://api.slack.com/apps/new)
+
 ![Create slack app](./media/slack/create-slack-app.png)
+
+3. Toggle active incoming webhooks
+
+![incoming webhook](./media/slack/incoming-webhook.png)
+
+![toggle webhook](./media/slack/toggle-webhook.png)
+
+
 
 
 1. From any page on your team's Slack (```https://[team].slack.com/...```), click your account name in the left window pane
