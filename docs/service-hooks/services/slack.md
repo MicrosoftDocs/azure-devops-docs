@@ -22,10 +22,16 @@ subscriptions for completed builds, releases, pending approvals and more from th
 >### Azure Repos app for Teams
 >[Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels.
 
-Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps Services organization,
+Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps organization,
 like completed builds, code changes, pull requests, releases, work items changes, and more.
 
 ## Create the Slack integration
+
+1. Refer to the [documentation](https://api.slack.com/messaging/webhooks) in Slack to understand the process of creating an incoming webhook.
+
+2. [Create a new Slack app](https://api.slack.com/apps/new)
+[Create slack app](./media/slack/create-new-slack-app.png)
+
 
 1. From any page on your team's Slack (```https://[team].slack.com/...```), click your account name in the left window pane
 to open up the menu, and find **Apps and integrations**:
