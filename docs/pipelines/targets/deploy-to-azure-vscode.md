@@ -87,6 +87,15 @@ Now you can deploy to Azure App Services, Azure Function App and AKS using VS co
 
 To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
 
+### Combination of workflows
+
+
+|**Source Control**|**Build Service Provider**|
+|---------|---------|
+|Azure Repos| Azure pipelines|
+|GitHub| Azure pipelines|
+|GitHub| GitHub Actions|
+
 # [GitHub](#tab/github)
 
 1. Bring up the **Extensions** view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the **View: Extensions** command `(Ctrl+Shift+X)`.
