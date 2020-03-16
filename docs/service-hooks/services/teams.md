@@ -11,8 +11,13 @@ ms.date: 03/16/2020
 # Create a service hook for Team Foundation Server (TFS) with Microsoft Teams
 
 >[!NOTE]
-> If you use Azure DevOps Services, we recommend you use  
-[Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration), [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration) and [Azure Repos app for Microsoft Teams](https://aka.ms/AzureReposTeamsIntegration)
+>If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
+>### Azure Boards app for Teams
+>[Azure Boards app for Teams](https://aka.ms/AzureBoardsTeamsIntegration) helps to easily create and monitor work items from your Teams channels.Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
+>### Azure Pipelines app for Teams
+>[Azure Pipelines app for Teams](https://aka.ms/AzurePipelinesTeamsIntegration) helps to easily monitor the events in your pipelines. Users can set up and manage subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
+>### Azure Repos app for Teams
+>[Azure Repos app for Teams](https://aka.ms/AzureReposTeamsIntegration) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels. 
 
  
 See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
