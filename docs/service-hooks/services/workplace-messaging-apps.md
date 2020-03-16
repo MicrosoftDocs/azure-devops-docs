@@ -42,7 +42,7 @@ Along with receiving notifications, below integrations also help users to comple
 
 ### Microsoft Teams
 
-* [Azure DevOps Server](https://google.com)
+* [Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/teams?view=azure-devops)
 
 
 ### Slack
