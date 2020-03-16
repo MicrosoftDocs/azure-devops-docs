@@ -19,7 +19,7 @@ Users can also set up and manage subscriptions to get notifications in their cha
 >### Azure Pipelines app for Slack
 >[Azure Pipelines app for Slack](https://aka.ms/AzurePipelinesSlackIntegration) helps to easily monitor the events in your pipelines. Users can set up and manage 
 subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
->### Azure Repos app for Teams
+>### Azure Repos app for Slack
 >[Azure Repos app for Slack](https://aka.ms/AzureReposSlackIntegration) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels.
 
 Post messages to [Slack](https://slack.com/) in response to events in your Azure DevOps organization,
