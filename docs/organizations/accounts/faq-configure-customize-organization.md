@@ -20,7 +20,7 @@ In this article, learn the answers to frequently asked questions (FAQs) about cr
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
 - [Configure an organization](#configure-organization-faqs)
-- [Delete or restore an organization](#delete-restore-your-organization-faqs)
+- [Delete or restore an organization](#delete-restore-organization-faqs)
 
 For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
