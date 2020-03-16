@@ -39,6 +39,7 @@ Along with receiving notifications, below integrations also help users to comple
 
 
 ## Azure DevOps Server (TFS)
+For projects hosted on Azure DevOps Server, below integrations can be used to get notifications for events in Azure DevOps.
 
 ### Microsoft Teams
 
