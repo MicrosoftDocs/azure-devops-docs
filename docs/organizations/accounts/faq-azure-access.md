@@ -7,7 +7,7 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/11/2020
+ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn the answers to the following frequently asked questions (FAQs) about access via Azure AD. FAQs are grouped by the following subjects:
+In this article, learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Azure Active Directory (AD). FAQs are grouped by the following subjects:
 - [General](#general)
 - [Azure AD users and permissions](#azure-ad-users-and-permissions)
 - [Azure AD groups](#azure-ad-groups)
