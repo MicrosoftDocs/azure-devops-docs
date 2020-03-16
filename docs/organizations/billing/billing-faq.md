@@ -2,7 +2,7 @@
 title: Frequent questions about billing management
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Find answers to frequently asked questions (FAQs) about billing for your organization
+description: Find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.topic: conceptual
@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-In this article, find answers to frequently asked questions about billing for your organization.
+In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
