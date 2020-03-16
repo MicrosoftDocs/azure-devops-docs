@@ -405,4 +405,8 @@ YAML is not supported in this version of TFS.
 
 For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
 
+## Related articles
+
+- [Release triggers](/devops/pipelines/release/triggers.md)
+
 * * *
