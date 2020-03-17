@@ -48,6 +48,6 @@ For projects hosted on Azure DevOps Server, below integrations can be used to ge
 
 ### Slack
 
-* [Custom app for Slack](https://google.com)
+* [Custom app for Slack](https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/slack?view=azure-devops)
 
 
