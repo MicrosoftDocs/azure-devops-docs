@@ -173,22 +173,29 @@ If you use both variables and variable groups, you'll have to use `name`/`value`
 
 ```yaml
 variables:
-- group: my-variable-group
-- name: my-bare-variable
-  value: 'value of my-bare-variable'
+  - group: my-variable-group
+  - name: my-bare-variable
+    value: 'value of my-bare-variable'
 ```
 
 To reference a variable group, you can use macro syntax or a runtime expression. In this example, the group `my-variable-group` has a variable named `myhello`.
 
 ```yaml
 variables:
-- group: my-variable-group
+  - group: my-variable-group
 
 steps:
-
  - script: echo $(myhello) # uses macro syntax
  - script: echo $[variables.myhello] # uses runtime expression
 
+```
+
+You can reference multiple variable groups in the same pipeline. 
+
+```yaml
+variables:
+  - group: my-first-variable-group
+  - group: my-second-variable-group
 ```
 
 You can also reference a variable group in a template. In the template `variables.yml`, the group `my-variable-group` is referenced. The variable group includes a variable named `myhello`. 
