@@ -602,7 +602,7 @@ YAML is not supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-When you set a variable with the same name in multiple scopes, the following precedence is used. A variable set at queue time will always have precedence over a variable in the pipeline or variable group. 
+When you set a variable with the same name in multiple scopes, the following precedence is used. A variable set at queue time will override a variable in the pipeline or variable group. 
 
 1. Variable set in the variable group
 2. Variable set in the pipeline
