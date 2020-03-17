@@ -33,7 +33,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 ![Create slack app](./media/slack/create-slack-app.png)
 
-3. Activate incoming webhook and add a new webhook to desired workspace
+3. Activate incoming webhook and add a new webhook to the desired workspace
 
 ![incoming webhook](./media/slack/incoming-webhook.png)
 
