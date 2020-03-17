@@ -8,7 +8,7 @@ ms.assetid: 62d94b8a-256a-4347-905a-3393f5d8a13f
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/12/2020
+ms.date: 03/16/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -56,7 +56,7 @@ A: If you have inactive users, stop paying for them by removing them or assignin
 
 ### Q: How can I pay only once per user across multiple organizations?
 
-A: Multi-organization billing/licensing is available. For more information, see [multi-org billing](#multi-org-billing).
+A: Multi-organization billing/licensing is available. For more information, see [multi-organization billing](#multi-organization-billing).
 
 ### Q: What's the difference between daily pro-rated charges instead of monthly committed purchases?
 
@@ -70,14 +70,18 @@ A: Microsoft ended support for purchasing third party paid Azure DevOps extensio
 
 A: Since June 1, 2019, on-premises Azure Artifacts, for example, Package Management, is included with the Basic license. For Azure DevOps Server 2019, purchase a Basic license and assign it to the user. For TFS 2017 and 2018, no additional purchase is required, but you still need to [assign users the Package Management extension license](../../artifacts/start-using-azure-artifacts.md) to use the feature.
 
-## Multi-org billing
-
+## Multi-organization billing
+        
 Multi-organization billing allows you to pay once per user, for organizations under the same Azure billing subscription.
-
+        
 ### Q: Does multi-organization billing make sense for all customers?
 
 A: No. Each organization gets five free Basic users. Those users apply to the billing subscription, not the organization. When most users access only one organization, then five free users are most cost effective. If many users access multiple organizations, then multi-organization billing is likely the best option. 
- 
+
+### Q: Do I have to turn on multi-organization billing for each of my organizations?
+
+A: No. Multi-organization billing applies to the Azure subscription. It needs to only be set once and can be set from any organization that uses that Azure subscription for billing.
+
 ### Q: How can I turn on multi-organization billing?
 
 A: To turn on multi-organization billing, see [how to pay for a user once across multiple organizations](buy-basic-access-add-users.md#pay-for-a-user-once-across-multiple-organizations).
