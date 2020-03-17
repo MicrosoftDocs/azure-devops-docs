@@ -43,7 +43,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 ![create-webhook](./media/slack/create-webhook.png)
 
-5. Copy the webhook and navigate to Azure DevOps portal
+5. Copy the webhook URL and navigate to Azure DevOps portal
 
 ![copy webhook](./media/slack/copy-webhook.png)
 
