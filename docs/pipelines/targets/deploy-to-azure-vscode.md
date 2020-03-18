@@ -99,11 +99,14 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 ### Combination of workflows
 
-|Workflows|
-|---------|
-|[GitHub + GitHub Actions](#github--github-actions)|
-|[GitHub + Azure Pipelines](#github--azure-pipelines)|
-|[Azure Repos + Azure Pipelines](#azure-repos--azure-pipelines)|
+|Source Control|Build Service Provider|
+|---------|---|
+|GitHub|GitHub Actions|
+|GitHub|Azure Pipelines|
+|Azure Repos|Azure Pipelines|
+
+> [!TIP]
+> We support GitHub Actions and Azure Pipelines for GitHub & Azure Repos correspondingly. We also allow you to create Azure Pipelines if you come with GitHub.
 
 ### GitHub + GitHub Actions
 
