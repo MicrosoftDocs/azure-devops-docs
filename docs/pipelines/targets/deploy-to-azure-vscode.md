@@ -105,8 +105,6 @@ To use this service, you need to install the extension on VS Code. You can brows
 |[GitHub + Azure pipelines](#github--azure-pipelines)|
 |[Azure Repos + Azure pipelines](#azure-repos--azure-pipelines)|
 
-# [GitHub](#tab/github)
-
 ### GitHub + GitHub Actions
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
@@ -196,8 +194,6 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
 
-# [Azure Repos](#tab/az-repos)
-
 ### Azure Repos + Azure pipelines
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
@@ -231,5 +227,3 @@ To use this service, you need to install the extension on VS Code. You can brows
     ![actions](media/deploy-to-azure/azpipelines-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
-
-* * *
