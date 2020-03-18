@@ -144,7 +144,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
     ![actions](media/deploy-to-azure/action-inprogress.png)
 
-1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
+1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
 ### GitHub + Azure pipelines
 
@@ -206,7 +206,7 @@ When you open the settings editor, you can search and discover settings you are 
 
     ![actions](media/deploy-to-azure/pipeline-inprogress.png)
 
-1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
+1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
 ### Azure Repos + Azure pipelines
 
@@ -240,4 +240,4 @@ When you open the settings editor, you can search and discover settings you are 
 
     ![actions](media/deploy-to-azure/azpipelines-in-progress.png)
 
-1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
+1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
