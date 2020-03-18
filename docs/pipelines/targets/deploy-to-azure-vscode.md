@@ -20,7 +20,7 @@ This tutorial walks you through setting up a CI/CD pipeline for deploying Node.j
 
 - You need [Visual Studio Code](https://code.visualstudio.com/)  installed along with the [Node.js and npm the Node.js package manager](https://nodejs.org/download) and the below extensions:
 
-- You need[Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
+- You need [Azure Account extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) and [Deploy to Azure extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-deploy-azure.azure-deploy)
 
 - A GitHub account, where you can create a repository. If you don't have one, you can [create one for free](https://github.com/).
 
@@ -99,7 +99,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 ### Combination of workflows
 
-|**Workflows**|
+|Workflows|
 |---------|
 |[GitHub + GitHub Actions](#github--github-actions)|
 |[GitHub + Azure pipelines](#github--azure-pipelines)|
