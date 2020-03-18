@@ -148,6 +148,20 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 ### GitHub + Azure pipelines
 
+> [!IMPORTANT]
+> To setup CI/CD in Azure Pipelines for Github Repository, you need to enable `Use Azure Pipelines for GitHub` in the extension.
+> 
+> To open your user and workspace settings, use the following VS Code menu command:
+> 
+> - On Windows/Linux - **File > Preferences > Settings**
+> - On macOS - **Code > Preferences > Settings**
+> 
+> You can also open the Settings editor from the Command Palette (`Ctrl+Shift+P`) with Preferences: Open Settings or use the keyboard shortcut (`Ctrl+,`).
+> 
+> When you open the settings editor, you can search and discover settings you are looking for. Search for the name `deployToAzure.UseAzurePipelinesForGithub` and enable as shown below.
+> 
+> ![configure CI/CD](media/deploy-to-azure/vscode-settings.png)
+
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
     ![configure CI/CD](media/deploy-to-azure/configure.png)
