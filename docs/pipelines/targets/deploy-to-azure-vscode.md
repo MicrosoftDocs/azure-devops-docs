@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 03/14/2020
+ms.date: 03/18/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -81,24 +81,7 @@ At this point, we should test that our application runs. The generated Express a
 
 1. Open your application folder in VS Code and get ready to deploy to Azure.
 
-## Setup CI/CD Pipeline
-
-Now you can deploy to Azure App Services, Azure Function App and AKS using VS code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
-
-To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
-
-### Combination of workflows
-
-
-|**Source Control**|**Build Service Provider**|
-|---------|---------|
-|Azure Repos| Azure pipelines|
-|GitHub| Azure pipelines|
-|GitHub| GitHub Actions|
-
-# [GitHub](#tab/github)
-
-## GitHub + GitHub Actions
+## Install the extension
 
 1. Bring up the **Extensions** view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the **View: Extensions** command `(Ctrl+Shift+X)`.
 
@@ -109,6 +92,24 @@ To use this service, you need to install the extension on VS Code. You can brows
 1. After the installation is complete, the extension will be located in enabled extension space.
 
     ![extension installed](media/deploy-to-azure/extension-installed.png)
+
+## Setup CI/CD Pipeline
+
+Now you can deploy to Azure App Services, Azure Function App and AKS using VS code. This VS Code extension helps you set up continuous build and deployment for Azure App Services without leaving VS Code.
+
+To use this service, you need to install the extension on VS Code. You can browse and install extensions from within VS Code. 
+
+### Combination of workflows
+
+|**Workflows**|
+|---------|
+|[GitHub + GitHub Actions](#github--github-actions)|
+|[GitHub + Azure pipelines](#github--azure-pipelines)|
+|[Azure Repos + Azure pipelines](#azure-repos--azure-pipelines)|
+
+# [GitHub](#tab/github)
+
+## GitHub + GitHub Actions
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
@@ -172,21 +173,28 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 1. Enter GitHub personal access token (PAT), required to populate secrets that are used in GitHub workflows. Set the scope to `repo` and `admin:repo_hook`.
 
+    ![pat scope](media/deploy-to-azure/githubpat.png)
+
     ![pat scope](media/deploy-to-azure/gitHubPatScope.png)
 
-    > [!TIP]
-    >If the code is in Azure Repos, you need different permissions.
+1. Select an Azure DevOps organization.
+
+    ![org](media/deploy-to-azure/azure-devops-org.png)
+
+1. Select an Azure DevOps project.
+
+    ![project](media/deploy-to-azure/azure-devops-project.png)
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/commitandpush.png)
+    ![commit YAML](media/deploy-to-azure/az-starter-yml.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
-1. Navigate to your GitHub repo to see the actions in progress.
+1. Navigate to your Azure DevOps project to see the pipeline in progress.
 
-    ![actions](media/deploy-to-azure/action-inprogress.png)
+    ![actions](media/deploy-to-azure/pipeline-inprogress.png)
 
 1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
 
@@ -232,7 +240,5 @@ To use this service, you need to install the extension on VS Code. You can brows
     ![actions](media/deploy-to-azure/action-inprogress.png)
 
 1. Navigate to your site running in Azure using the Web App URL http://{web_app_name}.azurewebsites.net, and verify its contents.
-
-## Azure Repos + GitHub Actions
 
 * * *
