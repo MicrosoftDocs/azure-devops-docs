@@ -251,8 +251,8 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
 
-> [!TIP]
-> Certain versions of PowerShell requires closing and starting a new session after executing  `Register-PSRepository` cmdlet otherwise it will trigger `Unable to resolve package source` warning. 
+    > [!TIP]
+    > Certain versions of PowerShell requires closing and starting a new session after executing  `Register-PSRepository` cmdlet otherwise it will trigger `Unable to resolve package source` warning. 
 
 4. We can confirm we have a repository by running:
 
