@@ -3,7 +3,7 @@ title: Build pipeline triggers
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines
 ms.topic: reference
 ms.custom: seodec18
-ms.date: 03/09/2020
+ms.date: 03/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -897,18 +897,6 @@ resources:
         - releases/*
         exclude:
         - master
-```
-
-If you don't want to wait until all stages of a run are completed, you can trigger the second pipeline upon on the completion of a specific stage:
-
-```yaml
-resources:
-  pipelines:
-  - pipeline: SmartHotel
-    source: SmartHotel-CI 
-    trigger: 
-      branches:
-        include: master
 ```
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
