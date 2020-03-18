@@ -102,8 +102,8 @@ To use this service, you need to install the extension on VS Code. You can brows
 |Workflows|
 |---------|
 |[GitHub + GitHub Actions](#github--github-actions)|
-|[GitHub + Azure pipelines](#github--azure-pipelines)|
-|[Azure Repos + Azure pipelines](#azure-repos--azure-pipelines)|
+|[GitHub + Azure Pipelines](#github--azure-pipelines)|
+|[Azure Repos + Azure Pipelines](#azure-repos--azure-pipelines)|
 
 ### GitHub + GitHub Actions
 
@@ -146,7 +146,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
-### GitHub + Azure pipelines
+### GitHub + Azure Pipelines
 
 > [!IMPORTANT]
 > To setup CI/CD in Azure Pipelines for Github Repository, you need to enable `Use Azure Pipelines for GitHub` in the extension.
@@ -208,7 +208,7 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
-### Azure Repos + Azure pipelines
+### Azure Repos + Azure Pipelines
 
 1. To set up a pipeline, choose `Deploy to Azure: Configure CI/CD Pipeline` from the command palette (Ctrl/Cmd + Shift + P) or right-click on the file explorer.
 
