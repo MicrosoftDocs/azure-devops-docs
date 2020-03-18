@@ -212,7 +212,7 @@ We now have the module and the module manifest. We are ready to package it and s
     ```
 
 > [!div class="mx-imgBorder"]
-> ![uploaded package](../../repos/git/media/uploaded-package.PNG)
+> ![uploaded package](../../repos/git/media/get-hello-package.png)
 
 Our module is now available to be installed from our feed in Azure Artifacts.
 
