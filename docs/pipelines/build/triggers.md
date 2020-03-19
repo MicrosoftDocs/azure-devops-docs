@@ -882,10 +882,10 @@ resources:
       - master
 ```
 
-`pipeline` is the name of the pipeline resource, and is used when referring to the pipeline
-resource from other parts of the pipeline. `source` is the name of the pipeline. To view and 
-configure your pipeline's name setting, edit your YAML pipeline, choose **Triggers** from the 
-settings menu, and navigate to the **YAML** pane.
+In this example, `pipeline` is the name of the pipeline resource, used when referring to the pipeline
+resource from other parts of the pipeline, and `source` is the name of the pipeline. The pipeline name is 
+displayed in the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To view and configure your pipeline's name 
+setting, edit your YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
 
 ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
