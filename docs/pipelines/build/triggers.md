@@ -461,7 +461,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
 In the following example, two schedules are defined.
@@ -484,7 +484,7 @@ schedules:
   always: true
 ```
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
 
@@ -622,7 +622,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 <a name="always"></a>
 ### Running even when there are no code changes
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
+By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
 ```yaml
 schedules:
