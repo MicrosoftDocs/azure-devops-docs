@@ -124,21 +124,21 @@ We support GitHub Actions and Azure Pipelines for GitHub & Azure Repos correspon
 
 1. Enter GitHub personal access token (PAT), required to populate secrets that are used in GitHub workflows. Set the scope to `repo` and `admin:repo_hook`.
 
-    ![pat scope](media/deploy-to-azure/gitHubPatScope.png)
+    ![pat scope](media/deploy-to-azure/github-pat-scope.png)
 
     > [!TIP]
     >If the code is in Azure Repos, you need different permissions.
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/commitandpush.png)
+    ![commit YAML](media/deploy-to-azure/commit-push.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your GitHub repo to see the actions in progress.
 
-    ![actions](media/deploy-to-azure/action-inprogress.png)
+    ![actions](media/deploy-to-azure/action-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
@@ -179,9 +179,9 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. Enter GitHub personal access token (PAT), required to populate secrets that are used in GitHub workflows. Set the scope to `repo` and `admin:repo_hook`.
 
-    ![pat scope](media/deploy-to-azure/githubpat.png)
+    ![pat scope](media/deploy-to-azure/github-pat.png)
 
-    ![pat scope](media/deploy-to-azure/gitHubPatScope.png)
+    ![pat scope](media/deploy-to-azure/github-pat-scope.png)
 
 1. Select an Azure DevOps organization.
 
@@ -193,14 +193,14 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/az-starter-yml.png)
+    ![commit YAML](media/deploy-to-azure/azure-starter-yml.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your Azure DevOps project to see the pipeline in progress.
 
-    ![actions](media/deploy-to-azure/pipeline-inprogress.png)
+    ![actions](media/deploy-to-azure/pipeline-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
 
@@ -227,13 +227,16 @@ When you open the settings editor, you can search and discover settings you are 
 
 1. The configuration of GitHub workflow or Azure Pipeline happens based on the extension setting. The guided workflow will generate a starter YAML file defining the build and deploy process. **Commit & push** the YAML file to proceed with the deployment.
 
-    ![commit YAML](media/deploy-to-azure/pipelines-commit-and-push.png)
+    ![commit YAML](media/deploy-to-azure/pipelines-commit-push.png)
 
     > [!TIP]
     > You can customize the pipeline using all the features offered by [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) and [GitHub Actions](https://github.com/features/actions/).
 
 1. Navigate to your Azure DevOps project to see the pipeline in progress.
 
-    ![actions](media/deploy-to-azure/azpipelines-in-progress.png)
+    ![actions](media/deploy-to-azure/azure-pipelines-in-progress.png)
 
 1. Navigate to your site running in Azure using the Web App URL `http://{web_app_name}.azurewebsites.net`, and verify its contents.
+
+## Next steps
+
