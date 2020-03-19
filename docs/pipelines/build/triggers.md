@@ -882,8 +882,8 @@ resources:
       - master
 ```
 
-In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such s pipeline resource variables), 
-and `source: security-lib-ci` specifies the name of the pipeline. You can retrieve your pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To view and configure your pipeline's name 
+In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables), 
+and `source: security-lib-ci` specifies the name of the pipeline. You can retrieve your pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure your pipeline's name 
 setting, edit your YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
 
 ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
@@ -891,9 +891,9 @@ setting, edit your YAML pipeline, choose **Triggers** from the settings menu, an
 > [!NOTE] 
 > If your triggering pipeline is in another Azure DevOps project, you must specify the
 > project name using `project: OtherProjectName`. If your triggering pipeline is in another
-> Azure DevOps organization, you must create a 
+> Azure DevOps organization, you must also create a 
 > [service connection](../library/service-endpoints.md) to that project and reference it 
-> in your pipeline resource. For more information see [pipeline resource](../process/resources.md#resources-pipelines).
+> in your pipeline resource. For more information, see [pipeline resource](../process/resources.md#resources-pipelines).
 
 In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
