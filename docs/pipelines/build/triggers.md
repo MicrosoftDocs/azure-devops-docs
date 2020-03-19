@@ -882,16 +882,15 @@ resources:
       - master
 ```
 
-In this example, `pipeline` is the name of the pipeline resource, used when referring to the pipeline
-resource from other parts of the pipeline, and `source` is the name of the pipeline. The pipeline name is 
-displayed in the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To view and configure your pipeline's name 
+In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such s pipeline resource variables), 
+and `source: security-lib-ci` specifies the name of the pipeline. You can retrieve your pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To view and configure your pipeline's name 
 setting, edit your YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
 
 ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 > [!NOTE] 
 > If your triggering pipeline is in another Azure DevOps project, you must specify the
-> project name using `project: OtherProjectName`. IF your triggering pipeline is in another
+> project name using `project: OtherProjectName`. If your triggering pipeline is in another
 > Azure DevOps organization, you must create a 
 > [service connection](../library/service-endpoints.md) to that project and reference it 
 > in your pipeline resource. For more information see [pipeline resource](../process/resources.md#resources-pipelines).
@@ -910,7 +909,7 @@ resources:
         include: 
         - releases/*
         exclude:
-        - releases/not-this-branch
+        - releases/old*
 ```
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
