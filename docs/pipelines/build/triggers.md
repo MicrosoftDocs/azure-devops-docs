@@ -896,8 +896,6 @@ settings menu, and navigate to the **YAML** pane.
 > [service connection](../library/service-endpoints.md) to that project and reference it 
 > in your pipeline resource. For more information see [pipeline resource](../process/resources.md#resources-pipelines).
 
-
-
 In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
 Similar to CI triggers, you can specify the branches to include or exclude:
