@@ -240,3 +240,7 @@ When you open the settings editor, you can search and discover settings you are 
 
 ## Next steps
 
+Try the workflow with a Docker file in a repo.
+
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]
+
