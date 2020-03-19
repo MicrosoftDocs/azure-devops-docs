@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: puagarw
 author: pulkitaggarwl
-ms.date: 03/18/2020
+ms.date: 03/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -99,14 +99,7 @@ To use this service, you need to install the extension on VS Code. You can brows
 
 ### Combination of workflows
 
-|Source Control|Build Service Provider|
-|---------|---|
-|GitHub|GitHub Actions|
-|GitHub|Azure Pipelines|
-|Azure Repos|Azure Pipelines|
-
-> [!TIP]
-> We support GitHub Actions and Azure Pipelines for GitHub & Azure Repos correspondingly. We also allow you to create Azure Pipelines if you come with GitHub.
+We support GitHub Actions and Azure Pipelines for GitHub & Azure Repos correspondingly. We also allow you to create Azure Pipelines if you still manage the code in GitHub.
 
 ### GitHub + GitHub Actions
 
