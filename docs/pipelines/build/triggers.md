@@ -875,7 +875,7 @@ To trigger a pipeline upon the completion of another, specify the triggering pip
 resources:
   pipelines:
   - pipeline: securitylib   # Name of the pipeline resource
-    source: security-lib-ci # Name of the pipeline
+    source: security-lib-ci # Name of the triggering pipeline
     trigger: 
       branches:
       - releases/*
@@ -883,14 +883,14 @@ resources:
 ```
 
 In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables), 
-and `source: security-lib-ci` specifies the name of the pipeline. You can retrieve your pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure your pipeline's name 
-setting, edit your YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
+and `source: security-lib-ci` specifies the name of the triggering pipeline. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name 
+setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
 
 ![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 > [!NOTE] 
-> If your triggering pipeline is in another Azure DevOps project, you must specify the
-> project name using `project: OtherProjectName`. If your triggering pipeline is in another
+> If the triggering pipeline is in another Azure DevOps project, you must specify the
+> project name using `project: OtherProjectName`. If the triggering pipeline is in another
 > Azure DevOps organization, you must also create a 
 > [service connection](../library/service-endpoints.md) to that project and reference it 
 > in your pipeline resource. For more information, see [pipeline resource](../process/resources.md#resources-pipelines).
