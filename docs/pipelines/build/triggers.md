@@ -864,7 +864,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema.md#pipeline-resource).
+To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](../process/resources.md#resources-pipelines).
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
@@ -874,13 +874,29 @@ To trigger a pipeline upon the completion of another, specify the latter as a [p
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: securitylib
-    source: security-lib-ci
+  - pipeline: securitylib   # Name of the pipeline resource
+    source: security-lib-ci # Name of the pipeline
     trigger: 
       branches:
       - releases/*
       - master
 ```
+
+`pipeline` is the name of the pipeline resource, and is used when referring to the pipeline
+resource from other parts of the pipeline. `source` is the name of the pipeline. To view and 
+configure your pipeline's name setting, edit your YAML pipeline, choose **Triggers** from the 
+settings menu, and navigate to the **YAML** pane.
+
+![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+> [!NOTE] 
+> If your triggering pipeline is in another Azure DevOps project, you must specify the
+> project name using `project: OtherProjectName`. IF your triggering pipeline is in another
+> Azure DevOps organization, you must create a 
+> [service connection](../library/service-endpoints.md) to that project and reference it 
+> in your pipeline resource. For more information see [pipeline resource](../process/resources.md#resources-pipelines).
+
+
 
 In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
@@ -896,7 +912,7 @@ resources:
         include: 
         - releases/*
         exclude:
-        - master
+        - releases/not-this-branch
 ```
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
