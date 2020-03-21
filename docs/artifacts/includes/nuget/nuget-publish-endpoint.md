@@ -18,7 +18,7 @@ ms.date: 03/20/2020
 
 1. Select **NuGet.exe** under the **NuGet** header
 
-1. If you installed NuGet, and have at least one edition of Visual Studio on your machine, you can **move to the next step** otherwise:
+1. If you installed NuGet, and have at least one edition of Visual Studio on your machine, you can **move to the next step** otherwise: <p></p>
 
     1. Select **Get the tools** in the top right corner
     1. Download the latest NuGet version if you haven't yet
