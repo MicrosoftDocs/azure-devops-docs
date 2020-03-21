@@ -6,7 +6,7 @@ ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 03/20/2020
+ms.date: 03/21/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -40,7 +40,7 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
 4.    Select **Get it free**.
 
-> ![Get extension](media/get-vsts-extensions/get-extension.png)
+      ![Get extension](media/get-vsts-extensions/get-extension.png)
 
 5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
