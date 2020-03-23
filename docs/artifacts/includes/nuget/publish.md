@@ -17,7 +17,7 @@ To be able to publish your package using the NuGet CLI, you will need the follow
 
 1. SourceName: the name of your feed created in step (1) of this article
 1. SourceURL: the feed URl (step 6). You can find this in the `Project setup` section, under `value`. Navigate to Azure DevOps portal -> Artifact -> Your feed name -> Connect to feed -> Project setup
-1. UserName and Pat: Your personal access token (Pat) and userName. see [Authenticate access with personal access tokens](..\..\..\organizations\accounts\use-personal-access-tokens-to-authenticate.md) for help setting up your credentials.
+1. UserName and Pat: Your personal access token (Pat) and userName. see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) for help setting up your credentials.
 
 ### Install and publish a sample NuGet package  
 
