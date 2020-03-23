@@ -40,7 +40,7 @@ If you don't have a package but want to try this out, you can install a NuGet sa
 
 ### Create and publish your own NuGet package
 
-To create your own NuGet package, follow the steps to [Create NuGet packages](https://docs.microsoft.com/nuget/create-packages/creating-a-package)
+To create your own NuGet package, follow the steps to [Create NuGet packages](/nuget/create-packages/creating-a-package)
 
 * Publish your package to your feed:
 
