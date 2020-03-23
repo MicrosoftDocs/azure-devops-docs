@@ -35,7 +35,7 @@ ms.date: 03/20/2020
 > [!NOTE]
 >
 > * The NuGet push command requires an API key. You can use any non-empty string for this variable. In our example, we used the string `key`.
-> * For more information on using credential providers with NuGet, see [Creating a nuget credential provider](https://docs.microsoft.com/en-us/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
+> * For more information on using credential providers with NuGet, see [Creating a nuget credential provider](https://docs.microsoft.com/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
 > * For more information on using personal access token, see [Authenticate access with personal access tokens](..\..\..\organizations\accounts\use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end
