@@ -94,7 +94,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |
-|7zip    | Recommended | No | No |
+|7-Zip    | Recommended | No | No |
 
 The above executables need to be in a folder listed in the PATH environment variable.
 Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
