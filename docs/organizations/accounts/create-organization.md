@@ -32,7 +32,7 @@ In this quickstart, learn how to create an organization. An organization is used
 2. Complete the following steps if you want to use only Microsoft accounts with your organization.
 
      Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
-     [What are other differences?](faq-create-organization.md#SignInOrganizationDifferences)
+     [What are other differences?](faq-configure-customize-organization.md#SignInOrganizationDifferences)
 
      - If you don't have a Microsoft account, you can create one when you sign up for Azure DevOps.
 

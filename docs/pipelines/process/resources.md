@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 02/27/2020
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -53,7 +53,6 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to all branches
-    tags: [ string ] # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
@@ -152,7 +151,7 @@ Or to avoid downloading any of the artifacts at all:
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### Pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. 
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
 
 ## [Schema](#tab/schema)
@@ -452,6 +451,10 @@ Resources must be authorized before they can be used. A resource owner controls 
 
     > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
 
+## Set approval checks for resources
+
+You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#required-template), you can require that any pipeline using a resource or environment also extends from a specific YAML template. 
+Setting a required template approval enhances security. You can make sure that your resource only gets used under specific conditions with a template. Learn more about how to [enhance pipeline security](../security/templates.md#set-required-templates) with templates and resources. 
 
 ## Traceability
 We provide full traceability for any resource consumed at a pipeline or deployment-job level.

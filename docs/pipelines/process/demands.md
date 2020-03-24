@@ -42,8 +42,8 @@ Or if you need to add multiple demands, add one per line.
 pool:
   name: Default
   demands:
-    - SpecialSoftware # Check if SpecialSoftware capability exists
-    - Agent.OS -equals Linux # Check if Agent.OS == Linux
+  - SpecialSoftware # Check if SpecialSoftware capability exists
+  - Agent.OS -equals Linux # Check if Agent.OS == Linux
 ```
 
 For multiple demands:

@@ -42,7 +42,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2.  Go to **Organization settings**.
 
@@ -66,7 +66,7 @@ and differences in how you [control organization access with Microsoft accounts 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-	[Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2.  Go to **Organization settings**.
 
