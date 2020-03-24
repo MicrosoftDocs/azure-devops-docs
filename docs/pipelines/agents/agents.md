@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 03/11/2020
+ms.date: 03/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -75,6 +75,21 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 ::: moniker-end
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
+
+::: moniker range="> azure-devops-2019"
+
+## Azure virtual machine scale set agents
+
+> [!NOTE]
+> This feature is currently in private preview. It will soon be available in public preview.
+
+Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+
+You specify a VM image, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+
+For more information, see [Azure virtual machine scale set agents](vmss.md).
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
