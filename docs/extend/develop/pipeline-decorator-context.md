@@ -170,7 +170,7 @@ steps:
 - task: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B@3
   inputs:
     targetType: inline
-	script: echo This is the Bash task
+    script: echo This is the Bash task
 - task: E213FF0F-5D5C-4791-802D-52EA3E7BE1F1@2
   inputs:
     targetType: inline
