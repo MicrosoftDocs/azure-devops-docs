@@ -414,16 +414,16 @@ In this example, there is an [Azure Resource Manager service connection](../libr
 
 ```yaml
 resources:
- containers:
- - container: mycontainer # name of the container (Alias) 
-   type: ACR # type of registry
-   azureSubscription: arm-connection # name of the ARM service connection
-   resourceGroup: rg-storage-eastus # Azure resource group with the container
-   registry: mycontainerregistry # Azure container registry name
-   repository: hello-world # name of the of container image collection
-   trigger:
-     tags:
-     - latest # tag for the container image to use
+  containers:
+  - container: mycontainer # name of the container (Alias) 
+    type: ACR # type of registry
+    azureSubscription: arm-connection # name of the ARM service connection
+    resourceGroup: rg-storage-eastus # Azure resource group with the container
+    registry: mycontainerregistry # Azure container registry name
+    repository: hello-world # name of the of container image collection
+    trigger:
+      tags:
+      - latest # tag for the container image to use
 
 steps:
 - script: echo |
