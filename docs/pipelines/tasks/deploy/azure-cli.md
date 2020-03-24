@@ -109,8 +109,8 @@ Following is an example of a YAML snippet which lists the version of Azure CLI a
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
-        az --version
-        az account show
+      az --version
+      az account show
 ```
 
 ::: moniker-end

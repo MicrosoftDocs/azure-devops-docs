@@ -166,7 +166,7 @@ variables:
   minor: $[counter(variables['major'], 100)]
 
 steps:
-    - bash: echo $(minor)
+- bash: echo $(minor)
 ```
 
 The value of `minor` in the above example in the first run of the pipeline will be 100. In the second run it will be 101, provided the value of `major` is still 1.
@@ -183,7 +183,7 @@ jobs:
   variables:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
-    - bash: echo $(a)
+  - bash: echo $(a)
 ``` 
 
 Here is an example of having a counter that maintains a separate value for PRs and CI runs.

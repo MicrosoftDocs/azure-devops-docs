@@ -172,13 +172,13 @@ For more guidance, follow the steps mentioned in [Build your Node.js app with gu
 1. Edit your pipeline and include a [deployment job](../process/deployment-jobs.md) by referencing the environment and the VM resources you created earlier:
     ```YAML
     jobs:  
-      - deployment: VMDeploy
-        displayName: web
-        environment:
-          name:  <environment name>
-          resourceType: VirtualMachine
-          tags: web1
-        strategy:
+    - deployment: VMDeploy
+      displayName: web
+      environment:
+        name:  <environment name>
+        resourceType: VirtualMachine
+        tags: web1
+      strategy:
     ```
 2. You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined for each virtual machine in the environment.
 [Here](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#deployment-job) is the complete YAML schema for Deployment job.

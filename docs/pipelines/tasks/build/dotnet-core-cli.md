@@ -105,9 +105,9 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
   inputs:
     command: 'build'
     projects: |
-     src/proj1/proj1.csproj 
-     src/proj2/proj2.csproj 
-     src/other/other.sln    # Pass a solution instead of a csproj.
+      src/proj1/proj1.csproj 
+      src/proj2/proj2.csproj 
+      src/other/other.sln    # Pass a solution instead of a csproj.
 ```
 
 ## Push
