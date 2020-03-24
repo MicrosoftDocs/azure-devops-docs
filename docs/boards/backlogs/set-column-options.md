@@ -53,12 +53,29 @@ Specifically, you can perform the following actions from the following list view
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
 
+
+::: moniker range="azure-devops"
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
+::: moniker-end 
+
+
+::: moniker range="<= tfs-2018"
+You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project.
+::: moniker-end
+
+
 ## About persistence 
 
-Once you set the column options for a specific view they will persist until you change them. The following notes apply to specific views. 
+Once you set the column options for a specific view, your settings  persist until you change them. The following notes apply to specific views. 
 
 ::: moniker range=">= azure-devops-2019"
-- Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog. 
+- Column options you set for a backlog apply only to the active team and backlog. Options you set for the product backlog differ from the options you set for a portfolio backlog. 
 - Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
 - Column options you set for a query persist when you save the query. 
 - Column options you set for one of the supported Work items views persists for a specific view only, such as **Assigned to me**, **Following**, **Mentioned**, and so on.  
@@ -68,13 +85,13 @@ Once you set the column options for a specific view they will persist until you 
 ::: moniker range="<= tfs-2018"
 - Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog. 
 - Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
-- Column options you set for a query persist when you save the query. 
+- Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings. 
 ::: moniker-end
 
 
 ## Open Column options
 
-Start by opening the **Column Options** dialog. Each user can set their own column options which persist for each product or portfolio backlog across the user's sessions.    
+Start by opening the **Column Options** dialog. If you don't see the option, choose the &hellip; and choose from the options provided.   
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -107,28 +124,12 @@ In the Column options dialog, choose **Add a column** to add a field that isn't 
 ![Column options dialog](media/set-column-options-s125.png)  
 ::: moniker-end
 
-::: moniker range="azure-devops"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. You can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
-
-::: moniker-end 
-
-::: moniker range="azure-devops-2019"
-
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
-::: moniker-end 
-
-
-::: moniker range="tfs-2018"
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
-::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 
 Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../media/icons/Arrow_Up.png)/![down arrow](../media/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
 ![Column options dialog, TFS](media/b-vs-b-column-options.png)
-
-You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
 
 ::: moniker-end
 
@@ -155,7 +156,7 @@ You can sort query results and Work items views. From the Column options dialog,
 
 You can change the column order, column size, or sort options by using the following keyboard commands:
 - To change the column order, choose the field and drag it to a new location
-- To re-size a column, choose the column divider to the right of the field and drag to a new location  
+- To resize a column, choose the column divider to the right of the field and drag to a new location  
 - For query results:
 	- Add the field as a column in order to sort by that field 
 	- To sort by a column, hold down the shift key and click on the field
@@ -164,7 +165,7 @@ You can change the column order, column size, or sort options by using the follo
 
 ::: moniker range=">= tfs-2015"
 
-For additional keyboard shortcuts, enter **Shift-?** to display available commands based on the page you're on. 
+For additional keyboard shortcuts, enter **?** to display available shortcuts based on the page you're on. 
 ::: moniker-end
 
 ## Related articles
