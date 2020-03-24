@@ -148,5 +148,7 @@ For custom work item types you can specify the System.State. For default work it
 
 ## Related articles
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
