@@ -59,7 +59,7 @@ NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which au
 
 Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Add a feed to NuGet 2
 NuGet 2 uses Personal Access Tokens to access feeds.
@@ -78,6 +78,18 @@ To use a 2.x client, first get the v3 feed URL:
    > [!div class="mx-imgBorder"] 
    >![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url-azure-devops-newnav.png)
    > 
+
+Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
+
+[!INCLUDE [generate-pat](../includes/generate-pat.md)]
+
+Run 
+
+```Command
+nuget sources add -name {your feed name} -source {your feed URL} -username {anything} -password {your PAT}
+```
+
+Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
 ::: moniker-end
 
@@ -98,7 +110,6 @@ To use a 2.x client, first get the v3 feed URL:
 
    ![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url.png)
 
-   ::: moniker-end
    
 Then, at the end of the URL, replace `/v3/index.json` with `/v2`. 
 
@@ -111,3 +122,5 @@ nuget sources add -name {your feed name} -source {your feed URL} -username {anyt
 ```
 
 Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
+
+   ::: moniker-end
