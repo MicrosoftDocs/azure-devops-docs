@@ -89,9 +89,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -103,8 +103,8 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -116,9 +116,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
-     !ConsoleApplication1\**\ClassLibrary*\**
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+      !ConsoleApplication1\**\ClassLibrary*\**
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -199,8 +199,8 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: |
-     **/*
-     !.git/**/*
+      **/*
+      !.git/**/*
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 

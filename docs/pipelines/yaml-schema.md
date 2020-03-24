@@ -991,7 +991,7 @@ jobs:
   pool: 
     vmImage: ${{ parameters.image }}
   steps:
-    - script: echo The image parameter is ${{ parameters.image }}```
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
 
 ### [Template Example](#tab/template-example)

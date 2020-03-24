@@ -142,7 +142,7 @@ steps:
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
-   testResultsFiles: "**/TEST-*.xml"
+    testResultsFiles: "**/TEST-*.xml"
   condition: succeededOrFailed()
 ```
 
@@ -254,13 +254,13 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-  # Node install
-  - task: NodeTool@0
-    displayName: Node install
-    inputs:
-      versionSpec: '6.x' # The version we're installing
-  # Write the installed version to the command line
-  - script: which node
+# Node install
+- task: NodeTool@0
+  displayName: Node install
+  inputs:
+    versionSpec: '6.x' # The version we're installing
+# Write the installed version to the command line
+- script: which node
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.

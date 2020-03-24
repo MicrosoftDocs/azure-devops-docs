@@ -49,7 +49,7 @@ jobs:
   pool: 
     vmImage: ${{ parameters.image }}
   steps:
-    - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
+  - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
 ```
 
 When the pipeline runs, you select the Pool Image. If you do not make a selection, the default option, `ubuntu-latest` gets used. 
@@ -140,7 +140,7 @@ stages:
   jobs:
   - job: Build
     steps:
-      - script: echo running Build
+    - script: echo running Build
 
 
 - stage: UnitTest
@@ -149,7 +149,7 @@ stages:
   jobs:
   - job: UnitTest
     steps:
-      - script: echo running UnitTest
+    - script: echo running UnitTest
 
 
 - ${{ if eq(parameters.runPerfTests, true) }}:
@@ -159,7 +159,7 @@ stages:
     jobs:
     - job: PerfTest
       steps:
-        - script: echo running PerfTest
+      - script: echo running PerfTest
 
 
 - stage: Deploy
@@ -168,7 +168,7 @@ stages:
   jobs:
   - job: Deploy
     steps:
-      - script: echo running UnitTest
+    - script: echo running UnitTest
 ```
 ## Parameter data types
 
