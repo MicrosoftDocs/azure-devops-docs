@@ -24,7 +24,7 @@ In the example, you will learn how to add the Azure DevOps extension to Azure CL
 
 Include the content below.
 
-### For Mac OS: azure-pipelines-steps-mac.yml
+### For macOS: azure-pipelines-steps-mac.yml
 
 ```yaml
 steps:
