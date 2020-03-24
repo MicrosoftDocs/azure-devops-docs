@@ -50,7 +50,7 @@ For project scoped feeds that are in a different project than where the pipeline
 
 # Use command line tool to 'pip install'.
 - script: |
-     pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 ### Download python distributions from Azure Artifacts feeds consulting official python registry first
