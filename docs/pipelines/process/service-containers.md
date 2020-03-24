@@ -142,9 +142,9 @@ container: my_container
 services:
   postgres: $[ variables['postgresService'] ]
 steps:
-  - script: |
-      apt install -y postgresql-client
-      psql --host=postgres --username=postgres --command="SELECT 1;"
+- script: |
+    apt install -y postgresql-client
+    psql --host=postgres --username=postgres --command="SELECT 1;"
 ```
 
 ## Ports

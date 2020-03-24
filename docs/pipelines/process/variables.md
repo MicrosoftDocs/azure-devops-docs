@@ -736,7 +736,7 @@ jobs:
   variables:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
-    - bash: echo $(a)
+  - bash: echo $(a)
 ```
 
 For more information about counters, dependencies, and other expressions, see [expressions](expressions.md).
@@ -813,8 +813,8 @@ stages:
 - stage: one
   displayName: one
   variables:
-   - name: a
-     value: 'stage yaml'
+  - name: a
+    value: 'stage yaml'
 
   jobs:
   - job: A
@@ -822,7 +822,7 @@ stages:
     - name: a
       value: 'job yaml'
     steps:
-      - bash: echo $(a)        # This will be 'job yaml'
+    - bash: echo $(a)        # This will be 'job yaml'
 ```
 
 > [!NOTE]
@@ -836,11 +836,11 @@ jobs:
   variables:
     a: 10
   steps:
-    - bash: |
-        echo $(a)            # This will be 10
-        echo '##vso[task.setvariable variable=a]20'
-        echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
-    - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
+  - bash: |
+      echo $(a)            # This will be 10
+      echo '##vso[task.setvariable variable=a]20'
+      echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
+  - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
 There are two steps in the preceding example. The expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.

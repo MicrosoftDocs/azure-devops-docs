@@ -165,12 +165,12 @@ After resolving task names and keywords, the above YAML becomes:
 ```yaml
 steps:
 - task: 6D15AF64-176C-496D-B583-FD2AE21D4DF4@1
-	inputs:
-	  repository: self
+  inputs:
+    repository: self
 - task: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B@3
-	inputs:
-	  targetType: inline
-	  script: echo This is the Bash task
+  inputs:
+    targetType: inline
+	script: echo This is the Bash task
 - task: E213FF0F-5D5C-4791-802D-52EA3E7BE1F1@2
   inputs:
     targetType: inline
