@@ -37,6 +37,7 @@ In this article, learn how to perform these tasks:
 > * Enable or disable a process
 > * Set a process as the default to use when adding projects  
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
