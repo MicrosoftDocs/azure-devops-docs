@@ -27,9 +27,7 @@ Variables are different from [runtime parameters](runtime-parameters.md), which 
 
 When you define a variable, you can use [different syntaxes (macro, template expression, or runtime)](#understand-variable-syntax) and what syntax you use will determine where in the pipeline your variable will render. 
 
-In a YAML, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAMLs and need to be passed to scripts in your YAML with `env:`. 
-
-You can use `env:` when you define a [container resource](../yaml-schema.md#resources) or [task](../yaml-schema.md#task) and when you use the [script, bash, pwsh or powershell keywords](../yaml-schema.md#script). A variable passed with `env:` becomes an environment variable for your pipeline. 
+In a YAML, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAMLs and need to be passed to your YAML with `env:` or a variable at the root level of your YAML.
 
 You can [use a variable group](../library/variable-groups.md) to make variables available across multiple pipelines.  
 
@@ -331,11 +329,13 @@ Deleted variable 'Configuration' successfully.
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-Don't set secret variables in your YAML file. Instead, you should set them in the pipeline editor, by using the web interface. These variables are scoped to the pipeline in which you set them.
+Don't set secret variables in your YAML file. Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
+
+Instead, you should set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline in which you set them. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
 
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-The following example shows how to use a secret variable called `mySecret` from a script.
+The following example shows how to use a secret variable called `mySecret` in a PowerShell script.
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
@@ -361,8 +361,22 @@ This works: ***
 This does not work:
 This works: ***
 ```
+This example shows how to use a secret variable called `$(go_vers)` in a Go task. 
 
-Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
+```yaml
+variables:
+  MAPPED_VERSION: $(go_vers)
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: GoTool@0
+  displayName: 'Use Go $(MAPPED_VERSION)'
+  inputs:
+    version: $(MAPPED_VERSION)
+```
+
 
 ### Reference secret variables in variable groups
 
