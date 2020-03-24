@@ -18,7 +18,7 @@ ms.date: 06/18/2019
 
 If you prefer to use YAML to provide your release pipeline configuration, you can use the following example to understand how YAML can be used to install Azure CLI and add the Azure DevOps extension.
 
-In the example, you will learn how to add the Azure DevOps extension to Azure CLI and run the build and PR list commands on Linux, Mac OS and Windows hosted agents.
+In the example, you will learn how to add the Azure DevOps extension to Azure CLI and run the build and PR list commands on Linux, macOS and Windows hosted agents.
 
 ## Create the azure-pipelines-steps.yml file 
 
