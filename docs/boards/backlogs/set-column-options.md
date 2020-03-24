@@ -23,7 +23,7 @@ Specifically, you can perform the following actions from the following list view
 
 ::: moniker range="azure-devops"
 
-| Action                        | Backlog | Sprint backlog | Queries | Work Items | 
+| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) | 
 | :---------------------------- | :-----: | :------------: | :-----: | :--------: |   
 | Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
 | Add or remove a rollup column | Yes     | No             | No      | No         |  
@@ -33,7 +33,7 @@ Specifically, you can perform the following actions from the following list view
 
 ::: moniker range="azure-devops-2019"
 
-| Action                        | Backlog | Sprint backlog | Queries | Work Items | 
+| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) | 
 | :---------------------------- | :-----: | :------------: | :-----: | :--------: |  
 | Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
 | Sort on a column              | No      | No             | Yes     | Yes        |  
@@ -41,9 +41,9 @@ Specifically, you can perform the following actions from the following list view
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
-| Action                        | Backlog | Sprint backlog | Queries |  
+| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | 
 | :---------------------------- | :-----: | :------------: | :-----: |    
 | Add or remove a column field  | Yes     | Yes            | Yes     |  
 | Sort on a column              | No      | No             | Yes     |  
