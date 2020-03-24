@@ -30,7 +30,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    * [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
    * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
-   * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
+   * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization Owner, if you're not already in the directory.
 
@@ -44,7 +44,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    ![Directory after adding users](media/manage-work-access/azureaddmembers3.png)
 
-   For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
+   For more information about how to set up users, see [FAQs](faq-user-and-permissions-management.md).
 
 3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
 
@@ -53,3 +53,4 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 - [Add users to your organization](add-organization-users.md)
 - [Add users to your team](add-team-members.md)
 - [Add external users](add-external-user.md)
+    

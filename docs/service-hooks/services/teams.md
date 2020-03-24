@@ -142,6 +142,6 @@ create two additional subscriptions.
 
 A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. This means even if the sign-in email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants and therefore cannot be linked.
 
-To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams (see [Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#connect-disconnect-or-change-azure-ad).
+To resolve this you can create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#q-why-is-my-organization-already-connected-to-a-directory-can-i-change-that-directory).
 
 <!-- ENDSECTION -->

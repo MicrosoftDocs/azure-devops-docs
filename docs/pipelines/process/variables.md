@@ -14,9 +14,16 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
-As the name suggests, the value of a variable might change from run to run or job to job of your pipeline.
-Almost any place where a pipeline requires a text string or a number, you can use a variable instead of hard-coding a value.
-The system replaces the variable with its current value when you run the pipeline.
+
+As the name suggests, variables are mutable. The value of a variable might change from run to run or job to job of your pipeline.
+Almost any place where a pipeline requires a string, you can use a variable instead of hard-coding a value. Variables are always stored as strings.
+
+::: moniker range="azure-devops"
+Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
+::: moniker-end
+
+
+The system replaces the variable with its current value when you run the pipeline. 
 
 The system sets some variables automatically.
 As a pipeline author or end user, you can't change the value of such variables.
@@ -28,6 +35,7 @@ This article covers user-defined variables. The names of these variables consist
 Don't use variable prefixes that are reserved by the system.
 These are: `endpoint`, `input`, `secret`, and `securefile`.
 Any variable that begins with one of these strings (regardless of capitalization) isn't available to your tasks and scripts.
+
 
 ## Understand variable syntax
 

@@ -145,7 +145,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
@@ -385,7 +385,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Make requests on behalf of others (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 

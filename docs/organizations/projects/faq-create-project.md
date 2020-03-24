@@ -69,7 +69,7 @@ Contact the TFS system administrator and request that they verify the server con
 
 ::: moniker-end
 
-## Q & A  
+## FAQs 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 ### Q: How do I add my custom process template to the list?

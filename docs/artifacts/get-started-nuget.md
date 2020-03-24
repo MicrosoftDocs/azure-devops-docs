@@ -4,7 +4,7 @@ description: Quickly start hosting NuGet packages in Azure DevOps Services or Te
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 01/24/2018
+ms.date: 03/06/2020
 monikerRange: '>= tfs-2017'
 ---
 

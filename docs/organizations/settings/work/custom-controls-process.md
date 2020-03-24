@@ -146,6 +146,8 @@ You can use these REST APIs to work with extensions:
 
 ## Related articles 
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 - [Add a custom field to a work item type](customize-process-field.md)  
 - [Customize a work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)
