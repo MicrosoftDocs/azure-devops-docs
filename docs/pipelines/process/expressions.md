@@ -345,7 +345,7 @@ You can use the following status check functions as expressions in conditions, b
 
 You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
 
-For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md#conditional-insertion). 
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md). 
 
 ### Conditionally assign a variable
 ```yml
