@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 06/28/2019
+ms.date: 03/24/2020
 ---
 
 # Change column options 
@@ -17,10 +17,60 @@ ms.date: 06/28/2019
 
 <a id="column-options">  </a>
 
-From each backlog page or query, you can add or remove columns. Or, you can drag a column to a new position. Your settings persist for each page you customize and are only valid for your views.    
+Each column corresponds to a work item field. You can add and remove columns from work item lists to show the fields of interest to you. Or, you can drag a column to a new position. Your settings persist for each page you customize and are only valid for your views. 
+
+Specifically, you can perform the following actions from the following list views: 
+
+::: moniker range="azure-devops"
+
+| Action                        | Backlog | Sprint backlog | Queries | Work Items | 
+| :---------------------------- | :-----: | :------------: | :-----: | :--------: |   
+| Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
+| Add or remove a rollup column | Yes     | No             | No      | No         |  
+| Sort on a column              | No      | No             | Yes     | Yes        |  
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+| Action                        | Backlog | Sprint backlog | Queries | Work Items | 
+| :---------------------------- | :-----: | :------------: | :-----: | :--------: |  
+| Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
+| Sort on a column              | No      | No             | Yes     | Yes        |  
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+| Action                        | Backlog | Sprint backlog | Queries |  
+| :---------------------------- | :-----: | :------------: | :-----: |    
+| Add or remove a column field  | Yes     | Yes            | Yes     |  
+| Sort on a column              | No      | No             | Yes     |  
+
+::: moniker-end
 
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
+
+## About persistence 
+
+Once you set the column options for a specific view they will persist until you change them. The following notes apply to specific views. 
+
+::: moniker range=">= azure-devops-2019"
+- Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog. 
+- Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
+- Column options you set for a query persist when you save the query. 
+- Column options you set for one of the supported Work items views persists for a specific view only, such as **Assigned to me**, **Following**, **Mentioned**, and so on.  
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+- Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog. 
+- Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
+- Column options you set for a query persist when you save the query. 
+::: moniker-end
+
 
 ## Open Column options
 
@@ -76,7 +126,7 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 
 Find the field you want to add from the **Available columns** set and choose **>** (greater-than character) to move it into the **Selected columns** list. You can then change the order of the columns with the ![up arrow](../media/icons/Arrow_Up.png)/![down arrow](../media/icons/Arrow_Down.png) up and down arrows. To remove a field, select it and then choose the **<** (less-than character).  
  
-<img src="media/b-vs-b-column-options.png" alt="Column options dialog, TFS" style="border: 1px solid #C3C3C3;" /> 
+![Column options dialog, TFS](media/b-vs-b-column-options.png)
 
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). Note that all fields defined within the project collection or organization are available for selection, even those that aren't used for your particular project.
 
@@ -86,15 +136,26 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 
 ## Add or remove rollup columns
 
-Rollup columns can display progress bars or the sum of numeric fields of child items. To learn more, see [Display rollup progress or totals](display-rollup.md). 
+Rollup columns can display progress bars or the sum of numeric fields of child items. You can add them to any product or portfolio backlog. To learn more, see [Display rollup progress or totals](display-rollup.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+
+## Sort on a column 
+
+You can sort query results and Work items views. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
+
+> [!div class="mx-imgBorder"]  
+> ![Column options, Sorting page dialog](media/columns/sort-dialog.png) 
 
 ::: moniker-end
 
 ## Use keyboard shortcuts to change the column order, column width, or sort options
 
 You can change the column order, column size, or sort options by using the following keyboard commands:
-- To change the column order, click on the field and drag it to a new location
-- To re-size a column, click the column divider to the right of the field and drag to a new location  
+- To change the column order, choose the field and drag it to a new location
+- To re-size a column, choose the column divider to the right of the field and drag to a new location  
 - For query results:
 	- Add the field as a column in order to sort by that field 
 	- To sort by a column, hold down the shift key and click on the field
@@ -102,6 +163,7 @@ You can change the column order, column size, or sort options by using the follo
 	- To sort by multiple columns, shift-click on each column in the order you want to sort   
 
 ::: moniker range=">= tfs-2015"
+
 For additional keyboard shortcuts, enter **Shift-?** to display available commands based on the page you're on. 
 ::: moniker-end
 
