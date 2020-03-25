@@ -87,7 +87,7 @@ Azure virtual machine scale set agents, hereafter referred to as scale set agent
 
 You specify a VM image, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
 
-For more information, see [Azure virtual machine scale set agents](vmss.md).
+For more information, see [Azure virtual machine scale set agents](scale-set-agents.md).
 
 ::: moniker-end
 
