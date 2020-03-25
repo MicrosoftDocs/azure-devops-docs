@@ -80,7 +80,7 @@ In the following example, a new resource group and virtual machine scale set are
 
     ```azurecli
     az vmss create \
-    --resource-group vmssagents2 \
+    --resource-group vmssagents \
     --name vmssagentsVM \
     --image UbuntuLTS \
     --upgrade-policy-mode automatic \
@@ -91,17 +91,17 @@ In the following example, a new resource group and virtual machine scale set are
 
 ### Create the agent pool
 
-Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select **Add pool** to create a new agent pool.
+1. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select **Add pool** to create a new agent pool.
 
-:::image type="content" source="media/scale-set-agents-create-agent-pool.png" alt-text="Create agent pool." :::
+    :::image type="content" source="media/scale-set-agents/create-agent-pool.png" alt-text="Create agent pool." :::
 
-> [!NOTE]
-> You cannot create a scale set pool in your organization settings. You must create it in your project settings. When you want to delete a scale set pool, you must delete it in your organization settings, and not in your project settings.
+    > [!IMPORTANT]
+    > You must create your scale set pool in **Project settings** and not **Organization settings**. Conversely, when you want to delete a scale set pool, you must delete it in **Organization settings**, and not in **Project settings**.
 
-Select **Azure virtual machine scale set** for the pool type. Select the Azure subscription and then the scale set that you created before. You can configure the following settings on this agent pool:
+2. Select **Azure virtual machine scale set** for the pool type. Select the Azure subscription and then the scale set that you created before. You can configure the following settings on this agent pool:
 
-- **Maximum number of VMs in the scale set:** Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
-- **Number of agents to keep on standby:** Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
+    - **Maximum number of VMs in the scale set:** Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
+    - **Number of agents to keep on standby:** Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
 
 ## Use scale set agent pool
 
