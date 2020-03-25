@@ -57,7 +57,7 @@ NuGet 4.8.2 and later supports the Azure Artifacts Credential Provider, which au
 
    ::: moniker-end
 
-Then, run any [nuget command](/nuget/tools/nuget-exe-cli-reference).
+Then, run any [NuGet command](/nuget/tools/nuget-exe-cli-reference).
 
 ::: moniker range="azure-devops"
 
