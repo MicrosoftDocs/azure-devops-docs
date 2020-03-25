@@ -283,6 +283,8 @@ Deleting a field deletes all data associated with that field, including historic
 
 ## Related articles  
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    

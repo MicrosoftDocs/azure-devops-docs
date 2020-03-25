@@ -649,7 +649,7 @@ variables:
 ## Template references
 
 > [!NOTE]
-> Be sure to see the full [template expression syntax](process/templates.md#template-expressions), which is all forms of `${{ }}`.
+> Be sure to see the full [template expression syntax](process/templates.md), which is all forms of `${{ }}`.
 
 ::: moniker range="> azure-devops-2019"
 
@@ -991,7 +991,7 @@ jobs:
   pool: 
     vmImage: ${{ parameters.image }}
   steps:
-    - script: echo The image parameter is ${{ parameters.image }}```
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
 
 ### [Template Example](#tab/template-example)
@@ -1165,7 +1165,7 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1437,7 +1437,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
 > [!IMPORTANT]
@@ -1467,7 +1467,7 @@ schedules:
 
 In the preceding example, two schedules are defined.
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last run.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
 It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.

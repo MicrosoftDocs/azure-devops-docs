@@ -48,13 +48,13 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 Create a new pipeline by referencing the environment and VM resources in a pipeline YAML. The environment will be created if it does not already exist.
 ```YAML
 jobs:  
-  - deployment: VMDeploy
-    displayName: web
-    environment:
-      name:  VMenv
-      resourceType: VirtualMachine
-      tags: web1
-    strategy:
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name:  VMenv
+    resourceType: VirtualMachine
+    tags: web1
+  strategy:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.

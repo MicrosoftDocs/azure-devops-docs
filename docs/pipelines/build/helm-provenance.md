@@ -73,10 +73,10 @@ In Azure DevOps, save the **privatekey.gpg** file in the library **secure files*
 ## Example
 
 ```YAML
-  queue:
+pool:
   name: Hosted Ubuntu 1604
 
-  variables:
+variables:
   # The below variable should be secure
   HelmKeyPassphrase: contoso@123
   keyName: contoso contoso@microsoft.com
@@ -84,37 +84,36 @@ In Azure DevOps, save the **privatekey.gpg** file in the library **secure files*
   azureResourceGroup: contoso
   kubernetesCluster: contoso
 
-  steps:
-  - task: DownloadSecureFile@1
-    displayName: Download Secure file
-    inputs:
-      secureFile: privatekey.gpg
-    name: privateKeyRing
+steps:
+- task: DownloadSecureFile@1
+  displayName: Download Secure file
+  inputs:
+    secureFile: privatekey.gpg
+  name: privateKeyRing
 
-  - task: HelmInstaller@0
-    displayName: Install Helm 2.12.0
-    inputs:
-      helmVersion: 2.12.0
+- task: HelmInstaller@0
+  displayName: Install Helm 2.12.0
+  inputs:
+    helmVersion: 2.12.0
 
-  - task: HelmDeploy@0
-    displayName: helm init
-    inputs:
-      azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-      azureResourceGroup: $(azureResourceGroup)
-      kubernetesCluster: $(kubernetesCluster)
-      command: init
-      arguments: --client-only
+- task: HelmDeploy@0
+  displayName: helm init
+  inputs:
+    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    azureResourceGroup: $(azureResourceGroup)
+    kubernetesCluster: $(kubernetesCluster)
+    command: init
+    arguments: --client-only
 
-  - task: HelmDeploy@0
-    displayName: helm package
-    inputs:
-      azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-      azureResourceGroup: $(azureResourceGroup)
-      kubernetesCluster: $(kubernetesCluster)
-      command: package
-      chartPath: Application/charts/sampleapp
-      arguments: --sign --key "$(keyName)" --keyring $(privateKeyRing.secureFilePath)
-
-    env:
-      HelmKeyPassphrase: $(HelmKeyPassphrase)
+- task: HelmDeploy@0
+  displayName: helm package
+  inputs:
+    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    azureResourceGroup: $(azureResourceGroup)
+    kubernetesCluster: $(kubernetesCluster)
+    command: package
+    chartPath: Application/charts/sampleapp
+    arguments: --sign --key "$(keyName)" --keyring $(privateKeyRing.secureFilePath)
+  env:
+    HelmKeyPassphrase: $(HelmKeyPassphrase)
 ```
