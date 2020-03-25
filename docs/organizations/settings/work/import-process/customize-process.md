@@ -21,7 +21,7 @@ ms.date: 10/16/2019
 
 Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 
-A process is a zip file containing a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps Services. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks.
+A process is a zip file that contains a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps Services. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks.
 
 <table>
 <tbody>
@@ -72,7 +72,7 @@ If you update an existing process you've used with on-premises Team Foundation S
 
 ### Export and import a process
 
-1. From the **Processes** tab, click the ellipsis (...) to open the context menu for the Hosted XML process that you want to export. You can export only Hosted XML processes.
+1. From the **Processes** tab, select the ellipsis (...) to open the shortcut menu for the Hosted XML process that you want to export. You can export only Hosted XML processes.
 
     > [!div class="mx-imgBorder"]
     > ![Process page > Export Hosted XML process menu option ](media/export-process.png)
@@ -99,7 +99,7 @@ If you update an existing process you've used with on-premises Team Foundation S
 
 ## Supported customizations
 
-You can apply the following customizations to your process 
+You can apply the following customizations to your process: 
 
 * [Add, remove, or modify a WIT](../../../../reference/add-modify-wit.md).
 * [Add or modify a field](../../../../reference/add-modify-wit.md).
@@ -108,7 +108,7 @@ You can apply the following customizations to your process
 * [Modify process configuration](../../../../reference/xml/process-configuration-xml-element.md).
 * [Add global lists](../../../../reference/xml/define-global-lists.md).
 
-Refer to the following [restrictions](#restrictions) section for a list of limitations that the system imposes.
+The following section lists limitations that the system imposes.
 
 <a id="restrictions"></a>
 <a id="rule-summary"></a>
@@ -141,7 +141,7 @@ Your ProcessTemplate.xml file must conform to the syntax and rules described in 
 * Limits the number of defined WITs to 64.
 * Contains only one Categories.xml definition file.
 * Contains only one ProcessConfiguration.xml definition file.
-* Friendly names are unique across all fields and WIT definitions.
+* Uses unique friendly names across all fields and WIT definitions.
 
 Also, your process must pass the following validation checks:
 
@@ -287,7 +287,7 @@ To limit the account names that are valid within an identity field, specify the 
     </FIELD>
 ```
 
-Before importing the process, make sure you've created the group in the projects that the process updates.
+Before you import the process, make sure you've created the group in the projects that the process updates.
 
 ##### Incorrect example
 
