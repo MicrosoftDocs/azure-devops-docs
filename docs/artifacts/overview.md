@@ -22,7 +22,7 @@ Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server
 
 ## Azure Artifacts overview
 
-Azure Artifacts introduces the concept of multiple *feeds* that you can use to organize and control access to your packages. If you're familiar with using packages from [NuGet.org](https://www.nuget.org) or [npmjs](https://www.npmjs.com), you can think of those places each as a single feed. 
+Azure Artifacts introduces the concept of multiple *feeds* that you can use to organize and control access to your packages. A feed is a container for packages. You consume and publish packages through a particular feed. If you're familiar with using packages from [NuGet.org](https://www.nuget.org) or [npmjs](https://www.npmjs.com), you can think of those places each as a single feed. 
 
 A note on terminology: you might also have heard feeds called package *repositories* or package *sources*, especially if you're an npm or Maven user.
 
