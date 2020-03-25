@@ -96,12 +96,20 @@ In the following example, a new resource group and virtual machine scale set are
     :::image type="content" source="media/scale-set-agents/create-agent-pool.png" alt-text="Create agent pool." :::
 
     > [!IMPORTANT]
-    > You must create your scale set pool in **Project settings** and not **Organization settings**. Conversely, when you want to delete a scale set pool, you must delete it in **Organization settings**, and not in **Project settings**.
+    > You must create your scale set pool in **Project settings** and not **Organization settings**. Conversely, when you want to delete a scale set pool, you must delete it from **Organization settings**, and not **Project settings**.
 
-2. Select **Azure virtual machine scale set** for the pool type. Select the Azure subscription and then the scale set that you created before. You can configure the following settings on this agent pool:
+2. Select **Azure virtual machine scale set** for the pool type. Select the **Azure subscription** that contains the scale set, choose **Authorize**, and choose the desired virtual machine scale set from that subscription. If you have an existing [service connection](../library/service-endpoints.md) you can choose that from the list instead of the subscription.
+
+3. Choose the desired virtual machine scale set from that subscription.
+
+4. Specify a name for your agent pool.
+
+5. Configure the following options:
 
     - **Maximum number of VMs in the scale set:** Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby:** Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
+
+6. When your settings are configured, choose Create to create the agent pool.
 
 ## Use scale set agent pool
 
