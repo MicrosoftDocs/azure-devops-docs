@@ -1825,7 +1825,7 @@ Permissions for team and project dashboards can be set individually. The default
 ### Project dashboard permissions
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](/report/dashboards/media/set-permissions/add-user-project-permissions.png)  
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/add-user-project-permissions.png)  
 
 By default, the creator of the project dashboard is the dashboard owner and granted all permissions for that dashboard. 
 
@@ -1847,7 +1847,7 @@ Permissions for team dashboards can be set individually. The default permissions
 ### Team dashboard default permissions
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](/report/dashboards/media/set-permissions/project-setting-permissions-s167.png) 
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
 
 By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
 
@@ -1871,7 +1871,7 @@ By default, team administrators are granted all permissions for their team dashb
 ::: moniker range=">= tfs-2017"
 
 > [!div class="mx-imgBorder"]  
-> ![Project dashboard permissions dialog](/report/dashboards/media/set-permissions/project-setting-permissions-s167.png) 
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
 
 Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
 
