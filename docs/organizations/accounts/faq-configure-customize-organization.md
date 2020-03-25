@@ -12,7 +12,7 @@ ms.date: 03/11/2020
 monikerRange: '>= tfs-2013'
 ---
 
-# FAQs - Create and configure organization
+# Create and configure organization FAQs
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
@@ -20,11 +20,13 @@ In this article, learn the answers to frequently asked questions (FAQs) about cr
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
 - [Configure an organization](#configure-organization-faqs)
-- [Delete or restore an organization](#delete-or-restore-your-organization-faqs)
+- [Delete or restore an organization](#delete-restore-organization-faqs)
 
 For more information about user and permissions management, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
-## General organization FAQs
+<a name="general-organization-faqs"></a>
+
+## General organization
 
 <a name="free-users"></a>
 
@@ -86,7 +88,7 @@ If you connected your organization to Azure Active Directory but you belong to m
 
 <a name="create-organization-faqs"></a>
 
-## Create an organization FAQs
+## Create an organization
 
 For more information, see [Plan your Azure DevOps organization structure](../../user-guide/plan-your-azure-devops-org-structure.md). 
 
@@ -188,7 +190,7 @@ A: You can try [Subscription Support](https://visualstudio.microsoft.com/support
 
 <a name="configure-organization-faqs"></a>
 
-## Configure an organization FAQs
+## Configure an organization
 
 <a name="NoNewOwner"></a>
 
@@ -273,7 +275,9 @@ Closing your browser doesn't always sign you out completely. Here's how you can 
 
 ::: moniker-end
 
-## Delete or restore your organization FAQs
+<a name="delete-restore-organization-faqs"></a>
+
+## Delete or restore your organization
 
 ### Q: How do I delete my organization?
 

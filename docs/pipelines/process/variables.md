@@ -14,9 +14,16 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 Variables give you a convenient way to get key bits of data into various parts of the pipeline.
-As the name suggests, the value of a variable might change from run to run or job to job of your pipeline.
-Almost any place where a pipeline requires a text string or a number, you can use a variable instead of hard-coding a value.
-The system replaces the variable with its current value when you run the pipeline.
+
+As the name suggests, variables are mutable. The value of a variable might change from run to run or job to job of your pipeline.
+Almost any place where a pipeline requires a string, you can use a variable instead of hard-coding a value. Variables are always stored as strings.
+
+::: moniker range="azure-devops"
+Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
+::: moniker-end
+
+
+The system replaces the variable with its current value when you run the pipeline. 
 
 The system sets some variables automatically.
 As a pipeline author or end user, you can't change the value of such variables.
@@ -29,13 +36,14 @@ Don't use variable prefixes that are reserved by the system.
 These are: `endpoint`, `input`, `secret`, and `securefile`.
 Any variable that begins with one of these strings (regardless of capitalization) isn't available to your tasks and scripts.
 
+
 ## Understand variable syntax
 
 Azure Pipelines supports three different ways to dereference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
 Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
 
-You can use template expression syntax to expand both [template parameters](../process/templates.md#template-expressions) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
+You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
 
 You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
 
@@ -135,7 +143,7 @@ variables:
 - template: myvariabletemplate.yml
 ```
 
-Learn more about [variable reuse with templates](templates.md#variable-reuse). 
+Learn more about [variable reuse with templates](templates.md). 
 
 ### Access variables through the environment
 
@@ -728,7 +736,7 @@ jobs:
   variables:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
-    - bash: echo $(a)
+  - bash: echo $(a)
 ```
 
 For more information about counters, dependencies, and other expressions, see [expressions](expressions.md).
@@ -805,8 +813,8 @@ stages:
 - stage: one
   displayName: one
   variables:
-   - name: a
-     value: 'stage yaml'
+  - name: a
+    value: 'stage yaml'
 
   jobs:
   - job: A
@@ -814,7 +822,7 @@ stages:
     - name: a
       value: 'job yaml'
     steps:
-      - bash: echo $(a)        # This will be 'job yaml'
+    - bash: echo $(a)        # This will be 'job yaml'
 ```
 
 > [!NOTE]
@@ -828,11 +836,11 @@ jobs:
   variables:
     a: 10
   steps:
-    - bash: |
-        echo $(a)            # This will be 10
-        echo '##vso[task.setvariable variable=a]20'
-        echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
-    - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
+  - bash: |
+      echo $(a)            # This will be 10
+      echo '##vso[task.setvariable variable=a]20'
+      echo $(a)            # This will also be 10, since the expansion of $(a) happens before the step
+  - bash: echo $(a)        # This will be 20, since the variables are expanded just before the step
 ```
 
 There are two steps in the preceding example. The expansion of `$(a)` happens once at the beginning of the job, and once at the beginning of each of the two steps.

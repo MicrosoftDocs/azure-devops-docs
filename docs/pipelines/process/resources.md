@@ -151,7 +151,7 @@ Or to avoid downloading any of the artifacts at all:
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### Pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. 
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
 
 ## [Schema](#tab/schema)
@@ -178,17 +178,16 @@ resources:
     trigger: true 
 
 steps:
-  - script: |
-        echo $(resources.pipeline.myresourcevars.pipelineID)
-        echo $(resources.pipeline.myresourcevars.runName)
-        echo $(resources.pipeline.myresourcevars.runID)
-        echo $(resources.pipeline.myresourcevars.runURI)
-        echo $(resources.pipeline.myresourcevars.sourceBranch)
-        echo $(resources.pipeline.myresourcevars.sourceCommit)
-        echo $(resources.pipeline.myresourcevars.sourceProvider)
-        echo $(resources.pipeline.myresourcevars.requestedFor)
-        echo $(resources.pipeline.myresourcevars.requestedForID)
-
+- script: |
+    echo $(resources.pipeline.myresourcevars.pipelineID)
+    echo $(resources.pipeline.myresourcevars.runName)
+    echo $(resources.pipeline.myresourcevars.runID)
+    echo $(resources.pipeline.myresourcevars.runURI)
+    echo $(resources.pipeline.myresourcevars.sourceBranch)
+    echo $(resources.pipeline.myresourcevars.sourceCommit)
+    echo $(resources.pipeline.myresourcevars.sourceProvider)
+    echo $(resources.pipeline.myresourcevars.requestedFor)
+    echo $(resources.pipeline.myresourcevars.requestedForID)
 ```
 ---
 
@@ -415,26 +414,26 @@ In this example, there is an [Azure Resource Manager service connection](../libr
 
 ```yaml
 resources:
- containers:
-     - container: mycontainer # name of the container (Alias) 
-       type: ACR # type of registry
-       azureSubscription: arm-connection # name of the ARM service connection
-       resourceGroup: rg-storage-eastus # Azure resource group with the container
-       registry: mycontainerregistry # Azure container registry name
-       repository: hello-world # name of the of container image collection
-       trigger:
-          tags:
-           - latest # tag for the container image to use
+  containers:
+  - container: mycontainer # name of the container (Alias) 
+    type: ACR # type of registry
+    azureSubscription: arm-connection # name of the ARM service connection
+    resourceGroup: rg-storage-eastus # Azure resource group with the container
+    registry: mycontainerregistry # Azure container registry name
+    repository: hello-world # name of the of container image collection
+    trigger:
+      tags:
+      - latest # tag for the container image to use
 
 steps:
-  - script: echo |
-      echo $(resources.container.mycontainer.type)
-      echo $(resources.container.mycontainer.registry)
-      echo $(resources.container.mycontainer.repository)
-      echo $(resources.container.mycontainer.tag)
-      echo $(resources.container.mycontainer.digest)
-      echo $(resources.container.mycontainer.URI)
-      echo $(resources.container.mycontainer.location)
+- script: echo |
+    echo $(resources.container.mycontainer.type)
+    echo $(resources.container.mycontainer.registry)
+    echo $(resources.container.mycontainer.repository)
+    echo $(resources.container.mycontainer.tag)
+    echo $(resources.container.mycontainer.digest)
+    echo $(resources.container.mycontainer.URI)
+    echo $(resources.container.mycontainer.location)
 
 ```
 ---

@@ -8,7 +8,7 @@ ms.assetid: d980d58e-4240-47c7-977c-baaa7028a1d8
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/07/2020
+ms.date: 03/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,11 +18,11 @@ monikerRange: '>= tfs-2017'
 
 Personal access tokens (PATs) are alternate passwords that you can use to authenticate into Azure DevOps. In this article, learn how to create or revoke PATs.
 
-If you're working on a larger application or project, we recommend you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Unless your users are using a credential manager, they'll have to enter their credentials each time.
+We recommend that you review our [authentication guidance](../../integrate/get-started/authentication/authentication-guidance.md) to help you choose the correct authentication mechanism. For smaller projects that require a less robust solution, personal access tokens are a simple alternative. Unless your users are using a credential manager, they have to enter their credentials each time.
 
 Azure DevOps uses enterprise-grade authentication to help protect and secure your data. Clients like Visual Studio and Eclipse (with the Team Explorer Everywhere plug-in) also support Microsoft account and Azure AD authentication. Since PATs are an alternate form of user authentication, using a PAT gives you the same access level. If you create a PAT with a narrower [scope](../../integrate/get-started/authentication/oauth.md#scopes), your access is limited to that scope.
 
-For non-Microsoft tools that integrate into Azure DevOps but don't support Microsoft account or Azure AD authentication, you must use PATs. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
+Use PATs for non-Microsoft tools integrated with Azure DevOps but that don't support Microsoft account or Azure AD authentication. Examples include Git, NuGet, or Xcode. To set up PATs for non-Microsoft tools, use [Git credential managers](../../repos/git/set-up-credential-managers.md) or create them manually.
 
 [!INCLUDE [personal-access-tokens](../../repos/git/includes/personal-access-tokens.md)]
 
@@ -34,20 +34,28 @@ For non-Microsoft tools that integrate into Azure DevOps but don't support Micro
 
 ## Frequently asked questions (FAQs) 
 
+::: moniker range="azure-devops"
+
 ### Q: What is my Azure DevOps Services URL?
 
-A: https:\//dev.azure.com/{yourorganization}
+A: https://dev.azure.com/ {your organization}
 
-### Q: Can I regenerate a PAT?
+### Q: Is there a way to renew a PAT via REST API?
+A: No, we don't have a REST API to renew a PAT. You can only renew a PAT within the user interface (UI).
 
-A: No, but you can extend a PAT or modify its scope.
+### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-### Q: Is there a way to renew a PAT via rest API?
-A: No, we don’t have a rest API to renew a PAT. You can only renew a PAT within the user interface (UI).
+A: No. You can use basic auth with most of them, but [organizations and profiles](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
+
+::: moniker-end
 
 ### Q: Where can I learn more about how to use PATs?
 
 A: For examples of how to use PATs, see [Git credential managers](../../repos/git/set-up-credential-managers.md), [REST APIs](../../integrate/get-started/rest/basics.md), [NuGet on a Mac](../../artifacts/nuget/consume.md#mac-os), and [Reporting clients](../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client).
+
+### Q: Can I regenerate a PAT?
+
+A: No, but you can extend a PAT or modify its scope.
 
 ### Q: What notifications will I get about my PAT?
 
@@ -55,7 +63,7 @@ A: Users receive two notifications during the lifetime of a PAT, one at creation
 
 The following notification is sent at PAT creation:
 
-![PAT creation notification](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
+![PAT creation](media/use-personal-access-tokens-to-authenticate/PAT-creation.png)
 
 The following notification is sent - a PAT is near expiration:
 
@@ -69,9 +77,9 @@ A: The user has all access.
 
 A: An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
-- When you connect to an Azure DevOps Services Git repo through git.exe. it creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
-- When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks :: Azure App Service :: Deploy web app."
-- When you or an admin sets up web load testing as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
+- When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
+- When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
 
 If you still believe that a PAT exists in error, we suggest that you [revoke the PAT](admin-revoke-user-pats.md#revoke-pats). Next, change your password. As an Azure Active Directory user, check with your administrator to see if your organization was used from an unknown source or location.
@@ -164,9 +172,7 @@ public static async void GetBuilds()
 
 When your code is working, it's a good time to switch from basic auth to <a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth](../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
 
-Enabling IIS Basic Authentication invalidates using PATs for TFS. Learn more about [using IIS Basic Authentication with TFS on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).
+If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../integrate/get-started/authentication/iis-basic-auth.md).
 
-### Q: Can I use basic auth with all of Azure DevOps REST APIs?
 
-A: No. You can use basic auth with most of them, but [organizations and profiles](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1) only support [OAuth](../../integrate/get-started/authentication/oauth.md).
 
