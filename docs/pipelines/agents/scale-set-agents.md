@@ -57,35 +57,35 @@ In the following example, a new resource group and virtual machine scale set are
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
 2. Run the following command to verify your default Azure subscription.
 
-  ```azurecli
-  az account list -o table
-  ```
+    ```azurecli
+    az account list -o table
+    ```
 
   If your desired subscription isn't listed at the default, select your desired subscription. 
 
-  ```azurecli
-  az account set -s af56db7f-5953-4018-8ca8-e20dbfa0d7c2
-  ```
+    ```azurecli
+    az account set -s af56db7f-5953-4018-8ca8-e20dbfa0d7c2
+    ```
 
 3. Create a resource group for your virtual machine scale set.
 
-  ```azurecli
-  az group create \
+    ```azurecli
+    az group create \
     --location westus \
-   --name vmssagents
-  ```
+    --name vmssagents
+    ```
 
 4. Create a virtual machine scale set in your resource group. In this example the UbuntuLTS VM image is specified. 
 
-  ```azurecli
-  az vmss create \
+    ```azurecli
+    az vmss create \
     --resource-group vmssagents \
     --name vmssagentsVM \
     --image UbuntuLTS \
     --upgrade-policy-mode automatic \
     --admin-username azureuser \
     --generate-ssh-keys
-  ```
+    ```
 
 ### Create the agent pool
 
