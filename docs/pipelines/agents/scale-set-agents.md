@@ -41,27 +41,28 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 > You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
 
 
-## Create scale set agent pool
+## Create a virtual machine scale set agent pool
 
-Use [Azure portal](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-portal), [Azure CLI](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-cli), or [Azure PowerShell](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-powershell) to create a scale set in your Azure subscription.
+Use [Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal), [Azure CLI](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-cli), or [Azure PowerShell](/azure/virtual-machine-scale-sets/quick-create-powershell) to create a scale set in your Azure subscription.
 
 - Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines.
-- Use **ScaleSet VMs** for the [orchestration mode](https://docs.microsoft.com/azure/virtual-machine-scale-sets/orchestration-modes) of the scale set. **Virtual machines** orchestration mode is not supported.
+- Use **ScaleSet VMs** for the [orchestration mode](/azure/virtual-machine-scale-sets/orchestration-modes) of the scale set. **Virtual machines** orchestration mode is not supported.
 - Azure Pipelines disables autoscaling and takes over the addition and deletion of VMs based on pipeline jobs and settings that you specify on agent pool. Any **scaling** settings that you specify in the Azure portal - e.g., initial instance count, scaling policy, minimum and maximum number of VMs, or scaling thresholds - won't be used. 
 
 
 ### Create a virtual machine scale set
 
-In the following example, a new resource group and virtual machine scale set are created using the UbuntuLTS VM image.
+In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
+
 2. Run the following command to verify your default Azure subscription.
 
     ```azurecli
     az account list -o table
     ```
 
-  If your desired subscription isn't listed at the default, select your desired subscription. 
+    If your desired subscription isn't listed at the default, select your desired subscription. 
 
     ```azurecli
     az account set -s af56db7f-5953-4018-8ca8-e20dbfa0d7c2
@@ -79,20 +80,23 @@ In the following example, a new resource group and virtual machine scale set are
 
     ```azurecli
     az vmss create \
-    --resource-group vmssagents \
+    --resource-group vmssagents2 \
     --name vmssagentsVM \
     --image UbuntuLTS \
     --upgrade-policy-mode automatic \
+    --orchestration-mode ScaleSetVM
     --admin-username azureuser \
     --generate-ssh-keys
     ```
 
 ### Create the agent pool
 
-Navigate to your Azure DevOps project settings, and select **Agent pools** under **Pipelines** to create a new agent pool.
+Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select **Add pool** to create a new agent pool.
 
->[!NOTE]
->You cannot create a scale set pool in your organization settings. You must create it in your project settings. When you want to delete a scale set pool, you must delete it in your organization settings, and not in your project settings.
+:::image type="content" source="media/scale-set-agents-create-agent-pool.png" alt-text="Create agent pool." :::
+
+> [!NOTE]
+> You cannot create a scale set pool in your organization settings. You must create it in your project settings. When you want to delete a scale set pool, you must delete it in your organization settings, and not in your project settings.
 
 Select **Azure virtual machine scale set** for the pool type. Select the Azure subscription and then the scale set that you created before. You can configure the following settings on this agent pool:
 
