@@ -113,7 +113,8 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+
+::: moniker range="azure-devops"
 
 1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
 
@@ -122,7 +123,29 @@ By default, all team members have permissions to create and edit dashboards for 
 
 1. Change **Allow** or **Deny** to grant or restrict a permission. 
  
-	Here we lock down the permissions for members of the Fabrikam team to edit the Analytics dashboard. 
+	Here we restrict team members from editing the Analytics dashboard. Only Fabrikam team administrators are able to edit the Analytics dashboard. 
+
+ 	> [!div class="mx-imgBorder"]  
+	> ![Permissions for Analytics dashboard dialog](media/set-permissions/team-analytics-dashboard-permissions.png)
+
+	> [!NOTE]   
+	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time. You can only change the default settings made for the team.  
+
+2. Close the dialog. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
+
+1. Change **Allow** or **Deny** to grant or restrict a permission. 
+ 
+	Here we restrict team members from editing the Analytics dashboard. Only Fabrikam team administrators are able to edit the Analytics dashboard. 
 
  	> [!div class="mx-imgBorder"]  
 	> ![Permissions for Analytics dashboard dialog](media/set-permissions/dashboard-permission-dialog.png)
@@ -131,7 +154,7 @@ By default, all team members have permissions to create and edit dashboards for 
 	> ![Permissions for Analytics dashboard dialog](media/set-permissions/team-analytics-dashboard-permissions.png)
 
 	> [!NOTE]   
-	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time.  
+	> The dashboard permissions dialog doesn't support granting permissions to other users or groups at this time. You can only change the default settings made for the team.    
 
 2. Choose **Save changes** and then **Close**. 
 
@@ -216,6 +239,5 @@ By default, all team members have permissions to edit dashboards defined for the
 
 - [Add, rename, and delete dashboards](dashboards.md)
 - [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)
-- [Add users to a project or specific team](../../organizations/security/add-users-team-project.md)
-- [Add a team administrator](../../organizations/settings/add-team-administrator.md)
+- [Add a team administrator](../../organizations/settings/add-team-administrator.md) 
  
