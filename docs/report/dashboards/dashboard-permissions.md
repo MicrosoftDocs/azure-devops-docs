@@ -1,7 +1,7 @@
 ---
 title: Set dashboard permissions for team members
 titleSuffix: Azure DevOps
-description: How to set permissions to create, edi, or delete dashboards 
+description: How to set permissions to create, edit, or delete dashboards 
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.topic: conceptual
@@ -207,7 +207,7 @@ By default, all team members have permissions to edit dashboards defined for the
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboard security option](media/set-permissions/open-project-dashboard-security.png)
 
-	By default, the creater or owner of the dashboard has all permissions granted to edit, delete, and manage dashboard permissions. 
+	By default, the creator or owner of the dashboard has all permissions granted to edit, delete, and manage dashboard permissions. 
 
 1. To add another user or group, search for their identity and then choose the permission settings that you want.  
 
