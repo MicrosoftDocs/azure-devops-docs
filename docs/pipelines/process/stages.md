@@ -403,10 +403,7 @@ YAML is not supported in this version of TFS.
 
 #### [Classic](#tab/classic/)
 
-For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
+You can add manual approvals at the start or end of each stage in the pipeline. See [Release approvals and gates overview](../release/approvals/index.md) for more information.
 
-## Related articles
-
-- [Release triggers](/devops/pipelines/release/triggers.md)
 
 * * *
