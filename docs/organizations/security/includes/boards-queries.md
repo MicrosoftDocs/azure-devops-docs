@@ -30,7 +30,7 @@ ms.topic: include
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Create and save managed Shared queries<br/><em>(Stakeholders can&#39;t save Shared queries even if granted permissions)</em>
+<td align="left">Contribute, delete, an manage permissions of Shared queries<br/><em>(Stakeholders can't save Shared queries even if granted permissions)</em>
 </td>
 <td> </td>
 <td> </td>
