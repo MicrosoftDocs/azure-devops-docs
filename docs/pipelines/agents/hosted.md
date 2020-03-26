@@ -111,7 +111,7 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 To summarize:
 
-1. Identify the [region for your organization](https://aka.ms/azure-devops-org-location) in **Organization settings**.
+1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
 2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
 3. Identify the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, see the following note about capacity fallback geographies.
 
