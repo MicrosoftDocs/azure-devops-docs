@@ -109,7 +109,7 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
-To summarize:
+### To identify the possible IP ranges for your Microsoft-hosted agents
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
 2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
