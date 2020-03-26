@@ -1,7 +1,6 @@
 ---
 title: Organize and view queries, create query folders 
 titleSuffix: Azure Boards  
-ms.global_help.title: Organize queries
 description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries 
 ms.technology: devops-agile
