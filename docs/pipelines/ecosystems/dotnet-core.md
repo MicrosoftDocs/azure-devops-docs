@@ -165,15 +165,15 @@ They also don't typically include prerelease versions. If you need these kinds o
 If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x, add this snippet:
 
 ```yaml
- steps:
-    - task: UseDotNet@2
-      inputs:
-        version: '3.0.x'
+steps:
+- task: UseDotNet@2
+  inputs:
+    version: '3.0.x'
 
-    - task: UseDotNet@2
-      inputs:
-        version: '2.2.x'
-        packageType: runtime
+- task: UseDotNet@2
+  inputs:
+    version: '2.2.x'
+    packageType: runtime
 ```
 
 If you are installing on a Windows agent, it will already have a .NET Core runtime on it. To install a newer SDK, set `performMultiLevelLookup` to `true` in this snippet: 

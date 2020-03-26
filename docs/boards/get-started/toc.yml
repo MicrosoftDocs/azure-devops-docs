@@ -19,6 +19,9 @@
   - name: "Why use Azure Boards?"
     displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
     href: why-use-azure-boards.md
+  - name: Quick guide to default permissions and access
+    href: permissions-access-boards.md
+    displayname: security
   - name: "Area & iteration paths"
     href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "About teams & Agile tools"
