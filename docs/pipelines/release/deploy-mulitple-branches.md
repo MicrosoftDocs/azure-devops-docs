@@ -28,7 +28,7 @@ You'll need:
   "Dev" in the name of one, and "Prod" in the name of the other so that you
   can easily identify them. 
 
-##Set up a release pipeline
+## Set up a release pipeline
 
 1. In **Azure Pipelines**, open the **Releases** tab. Create a New release Pipeline. Add the build artifact     that was published in your build pipeline.
 
