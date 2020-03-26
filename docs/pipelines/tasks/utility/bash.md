@@ -50,21 +50,21 @@ The Bash task also has a shortcut syntax in YAML:
 
 ```YAML
 steps:
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
 
 This is equivalent to:
 
 ```YAML
 steps:
-  - script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
 
 The Bash task will find the first Bash implementation on your system.

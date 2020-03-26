@@ -93,15 +93,15 @@ jobs:
   pool:
     name: Default
   steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        connectionType: 'AzureRM'
-        azureSubscription: your-subscription-name
-        appType: webAppLinux
-        webAppName: 'MyApp'
-        deployToSlotOrASE: false
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        takeAppOfflineFlag: true
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      connectionType: 'AzureRM'
+      azureSubscription: your-subscription-name
+      appType: webAppLinux
+      webAppName: 'MyApp'
+      deployToSlotOrASE: false
+      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      takeAppOfflineFlag: true
 ...
 ```
 
