@@ -18,7 +18,7 @@ Artifact filters can be with After release triggers to deploy from multiple bran
 
 You'll need:
 
-* A build pipeline builds mutiple branches and publishes an artifact
+* A build pipeline builds multiple branches and publishes an artifact
 
   - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git.md)
  
