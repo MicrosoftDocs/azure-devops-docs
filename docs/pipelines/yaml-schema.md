@@ -1258,7 +1258,7 @@ Full syntax:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1276,7 +1276,7 @@ trigger:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
