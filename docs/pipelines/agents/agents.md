@@ -492,7 +492,7 @@ Your pipelines won't run until they can target a compatible agent.
 
     ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
 
-4. Upgrading typically only takes a few moments, and you can monitor the status of your agents on the **Agents** tab.
+4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
