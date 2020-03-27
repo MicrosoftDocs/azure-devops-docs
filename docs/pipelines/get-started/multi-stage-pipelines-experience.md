@@ -123,7 +123,22 @@ You can configure pipelines security on a project level from the context menu on
 
 To support security of your pipeline operations, you can add users to a built-in security group, set individual permissions for a user or group, or add users to pre-defined roles. You can manage security for for Azure Pipelines in the web portal, either from the user or admin context. For more information on configuring pipelines security, see [Pipeline permissions and security roles](../policies/permissions.md).
 
+## Next steps
 
+Learn more about configuring pipelines in the language of your choice:
+
+* [.NET Core](../ecosystems/dotnet-core.md)
+* [Go](../ecosystems/go.md)
+* [Java](../ecosystems/java.md)
+* [Node.js](../ecosystems/javascript.md)
+* [Python](../ecosystems/python.md)
+* [Containers](../ecosystems/containers/build-image.md)
+
+To run your pipeline in a container, see [Container jobs](../process/container-phases.md).
+
+Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
+
+To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
 
 
 
