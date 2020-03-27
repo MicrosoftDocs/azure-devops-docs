@@ -132,9 +132,7 @@ Learn more about configuring pipelines in the language of your choice:
 * [Java](../ecosystems/java.md)
 * [Node.js](../ecosystems/javascript.md)
 * [Python](../ecosystems/python.md)
-* [Containers](../ecosystems/containers/build-image.md)
-
-To run your pipeline in a container, see [Container jobs](../process/container-phases.md).
+* [Containers](../ecosystems/containers/build-image.md) and [Container jobs](../process/container-phases.md)
 
 Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
 
