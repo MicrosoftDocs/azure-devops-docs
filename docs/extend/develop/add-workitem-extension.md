@@ -2,10 +2,8 @@
 title: Extend the work item form | Extensions for Azure DevOps Services
 description: Describes how to extend work item tracking, including adding an action, an observer, a group or a page to the work item form.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -27,13 +25,13 @@ If you're just getting started and haven't created an extension, refer to the [C
 
 See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 <a name="addagroup"></a>
 
 ## Add a group
 
-![toolbar item in work item form](./_img/add-workitem-extension-group.png)
+![toolbar item in work item form](./media/add-workitem-extension-group.png)
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -120,14 +118,14 @@ This sample shows how to register an object that is called when various events h
     });
 ```     
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="addapage"></a>
 ## Add a page
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
 
-![toolbar item in work item form](./_img/add-workitem-extension-page.png)
+![toolbar item in work item form](./media/add-workitem-extension-page.png)
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -159,7 +157,7 @@ To add a page to the work item form, add a contribution to your extension manife
 
 See the JavaScript sample in the form group section. The name of the registered object should match the `id` of the contribution.
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="showcontributions"></a>
 
@@ -170,7 +168,7 @@ In Azure DevOps Services, by default the group extensions appear in the end of t
 <a name="addmenuaction"></a>
 ## Add menu action
 
-![toolbar item in work item form](./_img/add-workitem-extension-toolbar.png)
+![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 
@@ -233,7 +231,7 @@ To add an observer to the work item which listens to the work item events, add t
 |--------------|-----------------------|
 | uri          | URI to a page that hosts the scripts listening to events |
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 ### HTML/JavaScript sample
 

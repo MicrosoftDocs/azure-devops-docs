@@ -3,9 +3,7 @@ title: Shelvesets Command
 titleSuffix: Azure Repos
 description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -24,7 +22,10 @@ Displays information about a set of shelved changes.
 
 To use the **shelvesets** command, you must the have **Read** permission and the **Check out** permission set to **Allow** for the items in the shelvesets. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
+```
+tf shelvesets [/owner:ownername] [/format:(brief|detailed)] [/collection:TeamProjectCollectionUrl]] [/login:username,[password]] shelvesetname
+```
+
 ## Parameters<table>
 
 |**Argument**|**Description**|
@@ -54,15 +55,21 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The following example displays information about the BuddyTest\_23 shelveset for the Team Foundation Server to which the current directory maps.
 
-    c:\projects>tf shelvesets BuddyTest_23
+```
+c:\projects>tf shelvesets BuddyTest_23
+```
 
 The following example lists the shelvesets owned by "John."
 
-    c:\projects>tf shelvesets /owner:John
+```
+c:\projects>tf shelvesets /owner:John
+```
 
 The following example displays information about the shelvesets on the Team Foundation Server to which the current directory maps.
 
-    c:\projects>tf shelvesets /owner:*
+```
+c:\projects>tf shelvesets /owner:*
+```
 
 ## See Also
 

@@ -2,10 +2,8 @@
 title: Test private and intranet apps
 description: Test private and intranet apps using cloud-based load testing with Azure DevOps and TFS
 ms.assetid: FAC1FE8F-3509-4950-A956-DFAAD4CB35DF
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,9 +12,9 @@ monikerRange: 'azure-devops'
 
 # Test private and intranet apps using cloud-based load testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 The Cloud-based Load Testing (CLT) service can be used for performance and scale load testing
 of an app by generating load from Azure. This type of load generation can only access and
@@ -33,7 +31,7 @@ to load test an app which is not publicly accessible, perhaps to:
 Consider the following decision tree that shows six possible scenarios.
 This topic discusses only scenarios **3** and **4**.
 
-![Decision tree that shows six possible scenarios](_img/clt-behind-firewall/clip_image001.png)
+![Decision tree that shows six possible scenarios](media/clt-behind-firewall/clip_image001.png)
 
 1. **The default case; CLT auto-provisions agents**. This is the default scenario for load testing
    using CLT when the app has a publicly-available endpoint. The load testing service automatically
@@ -80,7 +78,7 @@ Azure also allows you to spread the load testing across different geographical l
 The following schematic shows the simple topology where load agents reside in a user's VNet and therefore have line-of-sight
 to the app.
 
-![Simple topology where load agents reside in a user's VNet](_img/clt-behind-firewall/clip_image002.png)
+![Simple topology where load agents reside in a user's VNet](media/clt-behind-firewall/clip_image002.png)
 
 Use [this ARM template](https://github.com/Azure/azure-quickstart-templates/tree/master/201-vsts-cloudloadtest-rig-existing-vnet)
 on GitHub to provision machines easily and quickly. 
@@ -89,7 +87,7 @@ Alternatively, providing you have an existing VNet, you can
 [automatically provision load agents](https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw.githubusercontent.com%2fAzure%2fazure-quickstart-templates%2fmaster%2f201-vsts-cloudloadtest-rig-existing-vnet%2fazuredeploy.json)
 into it. This link loads the template in the Azure portal and shows the following page.
 
-![Automatically provisioning load agents](_img/clt-behind-firewall/clip_image003.png)
+![Automatically provisioning load agents](media/clt-behind-firewall/clip_image003.png)
 
 You must then fill in the parameters and choose the subscription, resource group, and location to suit your scenario.
 VNet identification requires the resource group name.
@@ -138,7 +136,7 @@ You can queue a load test run using the Azure DevOps portal or Visual Studio Ent
 Open the **Load test** page **Settings** page and select **Use self-provisioned agents**. 
 Then select the test rig you have configured with the ARM template, and optionally the number of agents to use.
 
-![Selecting the test rig and optionally the number of agents to use](_img/clt-behind-firewall/vsts.png)
+![Selecting the test rig and optionally the number of agents to use](media/clt-behind-firewall/vsts.png)
 
 ### Using Visual Studio Enterprise IDE
 
@@ -149,18 +147,18 @@ Add the following context parameters to your Visual Studio Load Test file:
 * Context parameter name: **StaticAgentsGroupName**
 * Context parameter value: **[name of your agent group]**
 
-![Adding context parameters to your Visual Studio Load Test file](_img/clt-behind-firewall/contextparam.png)
+![Adding context parameters to your Visual Studio Load Test file](media/clt-behind-firewall/contextparam.png)
 
 You can specify the number of machines to be used for a load test run by setting the **Agent core count**
 property present in the **Run Settings**. Every core is treated as a single machine. For example, shown below,
 five machines will be used for the run.
 
-![Specifying the number of machines to be used for a load test run](_img/clt-behind-firewall/clip_image005.png)
+![Specifying the number of machines to be used for a load test run](media/clt-behind-firewall/clip_image005.png)
 
 Load test runs performed on your own load agent machines are not charged.
 You can confirm this by looking at the status messages for the run.
 
-![The status messages for the run](_img/clt-behind-firewall/clip_image006.png)
+![The status messages for the run](media/clt-behind-firewall/clip_image006.png)
 
 > Check the FAQs at the end of this topic for more details.
 
@@ -169,7 +167,7 @@ You can confirm this by looking at the status messages for the run.
 You can use [this PowerShell script](https://elsprodch2su1.blob.core.windows.net/ets-containerfor-loadagentresources/bootstrap/ManageVSTSCloudLoadAgent.ps1)
 to manage self-provisioned agents. Download the script and unblock the file before use.
 
-![PowerShell script to manage self-provisioned agents](_img/clt-behind-firewall/properties.png)
+![PowerShell script to manage self-provisioned agents](media/clt-behind-firewall/properties.png)
 
 **Script parameters**
 
@@ -269,4 +267,4 @@ allow the URL `https://<subscription name>.vsclt.visualstudio.com`.
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

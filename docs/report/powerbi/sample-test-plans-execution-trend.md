@@ -2,10 +2,8 @@
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate an execution trend of manual tests
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -16,12 +14,16 @@ ms.date: 12/09/2019
 
 # Manual test execution trend sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
-This article shows you how to get the execution state of one or more Test Plans in Power BI. The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
+This article shows you how to get the execution state of one or more Test Plans in Power BI. 
+
+[!INCLUDE [temp](includes/preview-note.md)]
+ 
+The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
+> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
 
 The report displays a trend chart that summarizes the number and outcome states of Test Plans executed over a specified period of time.  
 
@@ -30,7 +32,6 @@ The report displays a trend chart that summarizes the number and outcome states 
 - **NotApplicable**: Number of test cases 
 - **Blocked**:  Number of test cases blocked from running.  
 - **NotExecuted**: Number of test cases defined but not executed.  
-
 
 ## Questions the report answers
 
@@ -44,7 +45,7 @@ This report helps you track the team's progress with respect to planned testing 
 
 A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Prerequisites
@@ -60,9 +61,9 @@ For the report to generate useful data, the team must perform the following acti
 
 ## Sample queries
 
-#### [Power BI Query](#tab/powerbi/)
+#### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -84,9 +85,9 @@ in
     Source 
 ```
 
-#### [OData Query](#tab/odata/)
+#### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPointHistorySnapshot? 
@@ -139,7 +140,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-test-plans-finish-query.md)]
+[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
 
 
 ## Create the report
@@ -151,9 +152,9 @@ Power BI shows you the fields you can report on.
 
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Fields](_img/odatapowerbi-executiontrend-fields.png)
+> ![Sample - Execution Trend - Fields](media/odatapowerbi-executiontrend-fields.png)
 
-To create the report, perform the following steps:
+To create the report, do the following steps:
 
 1. Create a Power BI visualization **Stacked Area Chart**.
 1. Drag and drop **DateSK** in **Axis**.
@@ -162,11 +163,11 @@ To create the report, perform the following steps:
 Your report should look similar to the following image.
 
 > [!div class="mx-imgBorder"] 
-> ![Sample - Execution Trend - Report](_img/odatapowerbi-executiontrend.png)
+> ![Sample - Execution Trend - Report](media/odatapowerbi-executiontrend.png)
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

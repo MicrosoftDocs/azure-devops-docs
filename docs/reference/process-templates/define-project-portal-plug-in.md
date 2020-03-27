@@ -2,10 +2,8 @@
 title: Define project portal plug-in for process template
 titleSuffix: TFS
 description: Define the initial document libraries, library structure, and documents of a project's SharePoint portal for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -213,7 +211,7 @@ The following example shows how to reference the English version of the Agile pr
 ### Process guidance content and support files  
 Process guidance is content that documents the processes to be followed by team members who work on a software project. Work items, reports, and queries can all change during the lifecycle of a project, and they can be different between projects. Process guidance content provides details about a project, such as information about how to complete work item fields, examples of healthy and unhealthy reports, and descriptions of the queries. Process guidance also provides details about the process to follow on a project, such as roles to assume and activities to complete.  
   
-To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
+To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML 

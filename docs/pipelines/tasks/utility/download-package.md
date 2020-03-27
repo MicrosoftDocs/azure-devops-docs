@@ -2,13 +2,8 @@
 title: Download Package task
 description: Download a package from a Package Management feed in Azure Artifacts or TFS.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
-ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -24,7 +19,7 @@ Requires the Package Management extension.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadPackageV1.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadPackageV1.md)]
 
 ::: moniker-end
 

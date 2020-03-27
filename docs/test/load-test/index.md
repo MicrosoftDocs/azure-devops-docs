@@ -2,10 +2,8 @@
 title: Load Testing index and overview
 description: Load Testing with Visual Studio and Azure DevOps
 ms.assetid: C5C81ACE-0BBA-4D32-9CC9-28CF5C5865A6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,9 +12,9 @@ monikerRange: '> tfs-2018'
 
 # Load Testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Load test your app with hundreds of thousands of users using Azure DevOps Test Plans.
 
@@ -26,8 +24,8 @@ Load test from your preferred UI, and compare the results.
 
 | | |
 | --- | --- |
-| ![icon](_img/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](_img/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
-| ![icon](_img/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](_img/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
+| ![icon](media/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](media/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
+| ![icon](media/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](media/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
 | | |
 
 ## Videos

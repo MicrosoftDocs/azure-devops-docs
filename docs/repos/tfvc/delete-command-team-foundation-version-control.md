@@ -3,9 +3,7 @@ title: Delete Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Delete Command (Team Foundation Version Control)
 ms.assetid: c4cf7a59-26c8-490c-a065-279888019c36
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -27,7 +25,10 @@ Removes files and folders from the Team Foundation version control server and de
 
 To use the **delete** command, you must have the **Check out** permission set to **Allow**. If you include the **/lock** option with a value other than *none*, you must have the **Lock** permission set to **Allow**. Additionally, you must own the workspace or have the global **Administer workspaces** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[password]] itemspec
+```
+tf delete [/lock:(none|checkin|checkout)] [/recursive] [/login:username,[password]] itemspec
+```
+
 ## Parameters
 
 <table><thead>
@@ -68,7 +69,9 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example deletes 314.cs on disk in the specified local workspace folder and then, when you check in the change, removes 314.c from the version control system non-permanently.
 
-    c:\projects>tf delete 314.cs
+```
+c:\projects>tf delete 314.cs
+```
 
 ## See Also
 

@@ -3,10 +3,8 @@ title: Migration checklist
 titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -16,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Private-to-public migration checklist
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
@@ -40,7 +38,7 @@ In Azure DevOps, you can link objects that exist in different projects defined i
 
 The link types used to construct these links, as illustrated in the following image, are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
-![Cross project link types](../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png) 
+![Cross project link types](../../boards/queries/media/link-tracking-artifact-to-artifact-link-types.png) 
 
 Five kinds of cross-project links expose content from the private project.
 

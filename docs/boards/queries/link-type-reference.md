@@ -3,9 +3,7 @@ title: Link types reference
 titleSuffix: Azure Boards
 description: Reference guide to all link types defined for Azure DevOps and Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +14,7 @@ ms.date: 05/06/2019
 
 # Link type reference 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="link-type-guidance"></a>
 
@@ -71,7 +69,7 @@ Work link types are system-defined, process-defined, or user-defined (custom). T
 
 Each work link type defines the link labels, topology type, and restrictions that are used when links between work items are constructed. For example, the parent-child link type defines two labels (Parent and Child), supports a hierarchical or tree topology, and prevents circular references from being created between work items. 
 
-![Work item link types, conceptual image](_img/link-type-reference/linkscontrol-work-item-link-types.png)
+![Work item link types, conceptual image](media/link-type-reference/linkscontrol-work-item-link-types.png)
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
@@ -95,8 +93,8 @@ The following table describes the work item link types you can specify to scope 
 <th width="63%">Usage</th>
 </tr>
 <tr>
-<td><strong>Affects-Affected by</strong><br/>(CMMI only)<br/><br/><img src="_img/link-work-items-support-traceability/affects-cmmi.png" alt="Affects link type image"/> 
-<img src="_img/link-work-items-support-traceability/affected-by-cmmi.png" alt="Affected by link type image"/> 
+<td><strong>Affects-Affected by</strong><br/>(CMMI only)<br/><br/><img src="media/link-work-items-support-traceability/affects-cmmi.png" alt="Affects link type image"/> 
+<img src="media/link-work-items-support-traceability/affected-by-cmmi.png" alt="Affected by link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.Common.Affects-Forward<br/>
 Microsoft.VSTS.Common.Affects-Reverse</p>
@@ -114,8 +112,8 @@ Restrictions and recommendations:
 </tr>
 <tr>
 <td><strong>Child-Parent</strong><br/>
-<img src="_img/link-work-items-support-traceability/child-tree-forward.png" alt="Child link type image"/><br/>
-<img src="_img/link-work-items-support-traceability/parent-tree-reverse.png" alt="Parent link type image"/> 
+<img src="media/link-work-items-support-traceability/child-tree-forward.png" alt="Child link type image"/><br/>
+<img src="media/link-work-items-support-traceability/parent-tree-reverse.png" alt="Parent link type image"/> 
 </td>
 <td><p>System.LinkTypes.Hierarchy-Forward<br/>
 System.LinkTypes.Hierarchy-Reverse</p>
@@ -129,8 +127,8 @@ Use this directional link to create one-to-many relationships between a single p
 </tr>
 <tr>
 <td><strong>Duplicate-Duplicate of</strong> <sup>1</sup><br/> 
-<img src="_img/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
-<img src="_img/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/duplicate-tree-forward.png" alt="Duplicate link type image"/> 
+<img src="media/link-work-items-support-traceability/duplicate-of-tree-reverse.png" alt="Duplicate of link type image"/> 
 </td>
 <td><p>System.LinkTypes.Duplicate-Forward<br/>
 System.LinkTypes.Duplicate-Reverse</p>
@@ -144,8 +142,8 @@ Link category: System-defined</p>
 </tr>
 <tr>
 <td><strong>Referenced By-References</strong><br/>
-<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
+<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.TestCase.<br/>SharedParameterReferencedBy</p>
 <p>Topology type: Dependency<br/>
@@ -157,7 +155,7 @@ Link category: Process-defined</p></td>
 </tr>
 <tr>
 <td><strong>Related</strong><br/>
-<img src="_img/link-work-items-support-traceability/related-network.png" alt="Related link type image"/> 
+<img src="media/link-work-items-support-traceability/related-network.png" alt="Related link type image"/> 
 </td>
 <td><p>System.LinkTypes.Related</p>
 <p>Topology type: Network<br/>
@@ -167,8 +165,8 @@ Link category: System-defined</p></td>
 </tr>
 <tr>
 <td><strong>Successor-Predecessor</strong><br/>
-<img src="_img/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
-<img src="_img/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Duplicate of link type image"/> 
+<img src="media/link-work-items-support-traceability/successor-dependency-forward.png" alt="Duplicate link type image"/> 
+<img src="media/link-work-items-support-traceability/predecessor-dependency-reverse.png" alt="Duplicate of link type image"/> 
 </td>
 <td><p>System.LinkTypes.Dependency</p>
 <p>Topology type: Dependency<br/>
@@ -181,21 +179,21 @@ You can create predecessor-successor links between work items that are defined i
 </tr>
 <tr>
 <td><strong>Tested by-Tests</strong><br/> 
-<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
+<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.Common.TestedBy-Forward<br/>
 Microsoft.VSTS.Common.TestedBy-Reverse</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises TFS, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a></p>
+<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a></p>
 </td>
 </tr>
 <tr>
 <td><strong>Test Case-Shared Steps</strong><br/>
-<img src="_img/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
-<img src="_img/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
+<img src="media/link-work-items-support-traceability/tested-by-dependency-forward.png" alt="Tested by link type image"/> 
+<img src="media/link-work-items-support-traceability/tests-dependency-reverse.png" alt="Tests link type image"/> 
 </td>
 <td><p>Microsoft.VSTS.TestCase.<br/>SharedStepReferencedBy</p>
 <p>Topology type: Dependency<br/>
@@ -218,7 +216,7 @@ Link category: Process-defined</p></td>
 There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Count*](linking-attachments.md#hyper-link-count)&mdash; added to a work item. A hyperlink can link a work item to any URL. 
 
 > [!div class="mx-imgBorder"]  
-> ![Hyperlink, conceptual image](_img/link-type-reference/hyperlink.png) 
+> ![Hyperlink, conceptual image](media/link-type-reference/hyperlink.png) 
 
 <table width="100%"> 
 <tbody valign="top">
@@ -247,7 +245,7 @@ There is one link type that tracks the number of hyperlinks&mdash;[*Hyperlink Co
 External link types are system-defined link types. They support linking work items to other objects as shown in the following image. A work item's [*External Link Count*](linking-attachments.md#external-link-count) corresponds to the sum of all links defined with a external link type. 
 
 > [!div class="mx-imgBorder"]  
-> ![External link types, conceptual image](_img/link-type-reference/linkscontrol-external-link-types.png) 
+> ![External link types, conceptual image](media/link-type-reference/linkscontrol-external-link-types.png) 
 
 ::: moniker range="azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
@@ -383,14 +381,14 @@ GitHub link types are system-defined link types. They support linking work items
 ::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![GitHub link types, conceptual image](_img/link-type-reference/linkscontrol-github-link-types.png) 
+> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types.png) 
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-imgBorder"]  
-> ![GitHub link types, conceptual image](_img/link-type-reference/linkscontrol-github-link-types-onprem.png) 
+> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types-onprem.png) 
 
 ::: moniker-end
 
@@ -486,8 +484,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 <th width="63%">Usage</th>
 </tr>
 <tr>
-<td><strong>Consumes From-Produced For</strong><br/>(Dependency topology)<br/><br/><img src="_img/link-work-items-support-traceability/affected-by-cmmi.png" alt="Consumes From topology image"/>
-<img src="_img/link-work-items-support-traceability/affects-cmmi.png" alt="Produced For topology image"/><br/></td>
+<td><strong>Consumes From-Produced For</strong><br/>(Dependency topology)<br/><br/><img src="media/link-work-items-support-traceability/affected-by-cmmi.png" alt="Consumes From topology image"/>
+<img src="media/link-work-items-support-traceability/affects-cmmi.png" alt="Produced For topology image"/><br/></td>
 <td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
 Microsoft.VSTS.Common.ConsumesFrom.Reverse</p>
 <p>Topology type: Dependency<br/>
@@ -499,7 +497,7 @@ Link category: System-defined</p>
 </tr>
 <tr>
 <td><strong>Remote Related</strong><br/>
-<img src="_img/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
+<img src="media/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
 </td>
 <td><p>System.LinkTypes.Remote.Related</p>
 <p>Topology type: Network<br/>

@@ -3,11 +3,9 @@ title: Add users to Azure Active Directory tenant
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Add users to your Azure Active Directory when Azure AD is connected to your organization
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 22ed079f-0321-4c8b-ab06-a289450fb557
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
@@ -18,7 +16,7 @@ monikerRange: 'azure-devops'
 
 # Add organization users to your Azure Active Directory
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 <a name="SetUpCurrentUsers"></a>
 
@@ -32,7 +30,7 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    * [Add users in the Azure portal](/azure/active-directory/active-directory-create-users)
    * [Add users in the Azure portal](/azure/active-directory/active-directory-users-create-azure-portal)
-   * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-azure-access.md#ChooseOrgAcctMSAcct)
+   * [Why am I asked to choose between a "work or school account" and a "personal account"?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
 
 2. Add the sign-in addresses for all of your organization users to your directory. Include yourself as the organization Owner, if you're not already in the directory.
 
@@ -44,9 +42,9 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 
    Here's what the Fabrikam directory might look like in the Azure portal after Jamal adds users from his organization:
 
-   ![Directory after adding users](_img/manage-work-access/azureaddmembers3.png)
+   ![Directory after adding users](media/manage-work-access/azureaddmembers3.png)
 
-   For more information about how to set up users, see this [FAQ](faq-azure-access.md#faq-users).
+   For more information about how to set up users, see [FAQs](faq-user-and-permissions-management.md).
 
 3. After adding your organization users to your directory, [connect your organization to your directory](connect-organization-to-aad.md).
 
@@ -55,3 +53,4 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 - [Add users to your organization](add-organization-users.md)
 - [Add users to your team](add-team-members.md)
 - [Add external users](add-external-user.md)
+    

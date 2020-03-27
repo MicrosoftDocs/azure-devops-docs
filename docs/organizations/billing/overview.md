@@ -3,11 +3,9 @@ title: Overview of billing articles
 titleSuffix: Azure DevOps 
 ms.custom: seodec18
 description: Understand billing management tasks, including how to set up billing, make purchases, and change the Azure subscription for billing.
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: d5bd13e2-aa7c-4191-aefd-bd9f05663e7b
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/10/2019
@@ -17,13 +15,13 @@ monikerRange: '>= tfs-2015'
 # Billing overview for Azure DevOps
 
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-ts-tfs-2015-2016.md)]
 
 [Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies.
 
 The *free tier* includes:
 
-[!INCLUDE [free-tier](../../_shared/free-tier.md)]
+[!INCLUDE [free-tier](../../includes/free-tier.md)]
 
 ::: moniker range="azure-devops"
 
@@ -57,15 +55,15 @@ The following links take you to the paid services that are offered by Microsoft:
 
 Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
-[!INCLUDE [loadtest-deprecated-include](../../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
 
-[!INCLUDE [pricing-calculator-tip](../../_shared/pricing-calculator-tip.md)]
+[!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 
 ## Prerequisites
 
 Ensure the following is true for the user who's [setting up billing](set-up-billing-for-your-organization-vs.md) for the first time:
 
-* User has [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* User has [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 * User has [an Azure subscription that you can use to purchase](add-backup-billing-managers.md)
 
 To make subsequent changes to the amount of paid resources, you only need to have [access to the Azure subscription](add-backup-billing-managers.md).

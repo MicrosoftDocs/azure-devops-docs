@@ -3,22 +3,17 @@ title: Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Jobs
+# Specify jobs in your pipeline
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 <a name='agent-phase'></a>
@@ -50,7 +45,7 @@ You can organize your release pipeline into jobs. Every release pipeline has at 
 
 ::: moniker-end
 
-## Specifying jobs
+## Define a single job
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -316,7 +311,7 @@ Server jobs are not supported in this version of TFS.
 
 <h2 id="dependencies">Dependencies</h2>
 
-When you define multiple jobs in a single stage, you can specify dependencies between them.
+When you define multiple jobs in a single stage, you can specify dependencies between them. Pipelines must contain at least one job with no dependencies.
 
 > [!NOTE]
 > Each agent can run only one job at a time. To run multiple jobs in parallel you must configure multiple agents. You also need sufficient [parallel jobs](../licensing/concurrent-jobs.md).
@@ -357,7 +352,7 @@ jobs:
   - script: echo hello from Windows
 - job: macOS
   pool:
-    vmImage: 'macOS-10.13'
+    vmImage: 'macOS-10.14'
   steps:
   - script: echo hello from macOS
 - job: Linux
@@ -427,7 +422,7 @@ For example, the pipeline shown below divides the overall release
 execution into separate execution jobs by using two agent jobs
 and a [server job](#server-jobs).
 
-![Configuring a manual intervention step](_img/phases-02.png)
+![Configuring a manual intervention step](media/phases-02.png)
 
 In the example above:
 
@@ -549,7 +544,7 @@ To avoid taking up resources when your job is hung or waiting too long, it's a g
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
-* For 60 minutes on Microsoft-hosted agents with a private project or private repository
+* For 60 minutes on Microsoft-hosted agents with a private project or private repository (unless [additional capacity](/azure/devops/pipelines/agents/hosted#capabilities-and-limitations) is paid for)
 
 The timeout period begins when the job starts running. It does not include the
 time the job is queued or is waiting for an agent.
@@ -589,7 +584,7 @@ You can also set the timeout for each task individually - see [task control opti
 
 <a name="parallelexec"></a>
 
-## Multi-configuration
+## Multi-job configuration
 
 From a single job you author, you can run multiple jobs on multiple agents in parallel. Some examples include:
 
@@ -696,6 +691,7 @@ a maximum of four agents at any one time:
 With multi-configuration you can run multiple jobs, each with a different value for one or more variables (multipliers). If you want to run the same job on multiple agents, then you can use **multi-agent** option of parallelism. The test slicing example above can be accomplished through multi-agent option.
 
 * * *
+
 ## Slicing
 
 An agent job can be used to run a suite of tests in parallel. For example, you can run a large suite of 1000 tests on a single agent. Or, you can use two agents and run 500 tests on each one in parallel.
@@ -811,7 +807,7 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
-- [GitHub](../repos/github.md#getting-the-source-code)
+- [GitHub](../repos/github.md#get-the-source-code)
 - [Azure Repos Git](../repos/azure-repos-git.md)
 - [TFVC](../repos/tfvc.md)
 
@@ -906,7 +902,7 @@ YAML is not yet supported in TFS.
 Select the **Allow scripts to access OAuth token** option in the control options for the job.
 
 * * *
-## Related topics
+## Related articles
 
 * [Deployment group jobs](deployment-group-phases.md)
 * [Conditions](conditions.md)

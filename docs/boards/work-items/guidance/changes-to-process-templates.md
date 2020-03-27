@@ -3,10 +3,8 @@ title: Changes made to process templates
 titleSuffix: Azure Boards  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 04/11/2019
 
 # Changes made to process templates  
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To support the addition of new features, changes are introduced periodically to the core system processes or process template&mdash;[Agile](agile-process.md), [Scrum](scrum-process.md), or [CMMI](cmmi-process.md). A process&mdash;used by the Inheritance process model&mdash;determines the building blocks used to track work. A process template&mdash;used by the Hosted XML and On-premises XML process models&mdash;specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas. For an overview of process models and customization options, see [Customize your work tracking experience](../../../reference/customize-work.md).
 
@@ -46,7 +44,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 </td>
 <td>
 <p>Added the <strong>WebLayout</strong> section within the <strong>FORM</strong> section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the <strong>SystemControls</strong> section and the new <strong>LinksControlOptions</strong> for managing link relationships.  To learn more, see <a href="../../../reference/process/new-work-item-experience.md" data-raw-source="[New work item experience](../../../reference/process/new-work-item-experience.md)">New work item experience</a>, <a href="../../../reference/xml/weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](../../../reference/xml/weblayout-xml-elements.md)">WebLayout and Control elements</a>, and <a href="../../../reference/xml/linkscontroloptions-xml-elements.md" data-raw-source="[LinksControlOptions XML elements (Web form)](../../../reference/xml/linkscontroloptions-xml-elements.md)">LinksControlOptions XML elements (Web form)</a>.</p>
-<p><strong>Note</strong>: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
+<p><strong>Note</strong>: When you upgrade an on-premises Azure DevOps to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
 </td>
 </tr>
 <tr>
@@ -204,7 +202,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <li>MSF Scrum 6.1: Bug, Task, Requirement</li>
 </ul>
 
-<img src="_img/tfs-vso-state-diagram-product-backlog-item.png" alt="State diagram for Product Backlog Item"/><br/>
+<img src="media/tfs-vso-state-diagram-product-backlog-item.png" alt="State diagram for Product Backlog Item"/><br/>
 <p>To apply the changes to your existing projects, you need to replace the <strong>WORKFLOW</strong> sections defined for each of the updated work item types with the new definitions. You can do this by modifying the work item type definition. See <a href="../../../reference/xml/change-workflow-wit.md" data-raw-source="[Design the Workflow](../../../reference/xml/change-workflow-wit.md)">Design the Workflow</a> and <a href="../../../reference/witadmin/witadmin-import-export-manage-wits.md" data-raw-source="[Import, export, and manage Work Item Types](../../../reference/witadmin/witadmin-import-export-manage-wits.md
 )">Import, export, and manage Work Item Types</a> .</p>
 </td>
@@ -286,7 +284,7 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 

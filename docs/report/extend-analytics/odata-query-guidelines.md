@@ -2,11 +2,9 @@
 title: Query guidelines for Analytics with OData
 titleSuffix: Azure DevOps
 description: Guidance to support extension developers on how to write good OData queries that access Analytics for Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 73E9A63D-B84A-4EA0-9B90-B9BD8BF9646D
 ms.reviewer: stansw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,11 +14,11 @@ ms.date: 04/05/2019
 
 # Query guidelines for Analytics with OData
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Extension developers can benefit by following the guidelines provided in this article for designing efficient OData queries against Analytics for Azure DevOps. Following these guidelines will help ensure that the queries have good performance in terms of execution time and resource consumption. Queries that don't adhere to these guidelines might result in poor performance, with long report wait times, queries that exceed allowed resource consumption, or service blockages. 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 Guidelines are organized as simple recommendations prefixed with the terms **DO**, **CONSIDER**, **AVOID** and **DO NOT**. Restrictive rules enforced by Analytics contain the **[BLOCKED]** prefix. With these guidelines, you should understand the trade-offs between different solutions. Under certain circumstances, you may have data requirements that force you to violate one or more guidelines. Such cases should be rare. We recommend that you have a clear and compelling reason for such decisions.
 
@@ -31,7 +29,7 @@ Guidelines are organized as simple recommendations prefixed with the terms **DO*
 > ```OData
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
-> [!INCLUDE [temp](../_shared/api-versioning.md)]
+> [!INCLUDE [temp](../includes/api-versioning.md)]
 
 
 

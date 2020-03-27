@@ -1,14 +1,9 @@
 ---
-ms.prod: devops
 title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
-ms.technology: devops-cicd
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 07/09/2019
+ms.date: 03/13/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -143,6 +138,9 @@ Next, we'll create the Dockerfile.
         --work "$(if (Test-Path Env:AZP_WORK) { ${Env:AZP_WORK} } else { '_work' })" `
         --replace
       
+      # remove the administrative token before accepting work
+      Remove-Item $Env:AZP_TOKEN_FILE
+
       Write-Host "4. Running Azure Pipelines agent..." -ForegroundColor Cyan
       
       .\run.cmd
@@ -180,6 +178,9 @@ Now that you have created an image, you can spin up a container.
     ```
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-windows.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
 
 ## Linux
 
@@ -328,6 +329,9 @@ Next, we'll create the Dockerfile.
       --work "${AZP_WORK:-_work}" \
       --replace \
       --acceptTeeEula & wait $!
+    
+    # remove the administrative token before accepting work
+    rm $AZP_TOKEN_FILE
 
     print_header "4. Running Azure Pipelines agent..."
 
@@ -359,6 +363,9 @@ Now that you have created an image, you can spin up a container.
     ```
 
 You can optionally control the pool and agent work directory using additional [environment variables](#environment-variables).
+
+If you want a fresh agent container for every pipeline run, you should pass the [`--once` flag](v2-linux.md#run-once) to the `run` command.
+You must also use some kind of container orchestration system like Kubernetes or [Azure Container Instances](https://azure.microsoft.com/services/container-instances/) to start new copies of the container when the work completes.
 
 ## Environment variables
 

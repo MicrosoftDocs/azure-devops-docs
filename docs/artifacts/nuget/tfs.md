@@ -2,11 +2,7 @@
 title: Use NuGet or dotnet with Team Foundation Server feeds
 description: Authenticating to feeds with NuGet in Azure DevOps Services
 ms.assetid: 1BB88A4E-C40E-48CD-B44A-25C90B935E5B
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017 < azure-devops'
@@ -30,11 +26,11 @@ You can use [consume packages with Visual Studio](consume.md), [publish with nug
 
 1. Select **Connect to feed**:
 
-    ![Connect to feed button in the upper-right of the page](../_shared/_img/connect-to-feed.png)
+    ![Connect to feed button in the upper-right of the page](../media/connect-to-feed.png)
    
 1. Copy the NuGet package source URL:
 
-    ![NuGet Package source URL in the Connect to feed dialog](../_shared/_img/nuget-consume-url.png)
+    ![NuGet Package source URL in the Connect to feed dialog](../media/nuget-consume-url.png)
 
 Then, run the following command (replacing {values} where applicable):
 

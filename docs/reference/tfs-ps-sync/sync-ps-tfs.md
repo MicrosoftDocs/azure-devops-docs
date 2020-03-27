@@ -6,7 +6,6 @@ ms.technology: devops-agile
 ms.prod: devops 
 ms.assetid: 0CDB65B6-FA2D-41D1-8E1E-41E38F235762  
 toc: show
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -22,7 +21,7 @@ ms.date: 12/10/2019
 
 If you're using an earlier version of Team Foundation Server and native integration is installed and configured, native integration won't work after you upgrade to TFS 2017 or a later version.
 
-For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://go.microsoft.com/fwlink/?LinkID=823693).
+For more information about why we no longer support this integration, read the blog post [Microsoft discontinuing Project Server/TFS Integration. Partner to provide solution](https://devblogs.microsoft.com/devops/microsoft-discontinuing-project-server-tfs-integration/).
 
 ## Synchronization support for TFS 2017 and Project Server
 
@@ -31,7 +30,7 @@ If you use TFS 2017 and want to integrate with Microsoft Project Server, you can
 <br/>
 <a id="Project-Connect-from-Tivitie" />
 
-![Tivitie](_img/tivitie-Blue2.png)
+![Tivitie](media/tivitie-Blue2.png)
 
 ## [Project Connect from Tivitie](http://www.tivitie.com/projectconnect)
 
@@ -44,7 +43,7 @@ Keep your agile teams working in Azure DevOps Services and TFS, the tool they ar
 <br/>
 <a id="ConnectALL" />
 
-![ConnectAll](_img/connectall.png)
+![ConnectAll](media/connectall.png)
 
 ## [ConnectALL](https://www.connectall.com/)
 
@@ -57,7 +56,7 @@ Teams from software development and delivery, IT, and business units across larg
 <br/>
 <a id="Tasktop" />
 
-![Tasktop](_img/tfs-ps-sync-tas-logo.png)
+![Tasktop](media/tfs-ps-sync-tas-logo.png)
 
 ## [Tasktop](https://www.tasktop.com/product-overview)
  

@@ -2,13 +2,11 @@
 title: Build Status Excel Report  
 description: Helps track the progress of builds by showing the number of builds that failed or succeeded - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: ada4926d-5e2b-4a17-b651-60684e4d72cd
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 monikerRange: '<= tfs-2017'
 ms.date: 12/30/2016
 ---
@@ -16,7 +14,7 @@ ms.date: 12/30/2016
 
 # Build Status Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 
 The Build Status report helps the team track the progress of their builds by showing the number of builds that failed or succeeded for the most recent four weeks.  
@@ -44,7 +42,7 @@ To modify or customize the report, you must be a member of the **TfsWarehouseDat
 
 The team can review the Build Status report to help determine the trend of build health over time and whether any builds need attention today. As the following illustration shows, the report provides a stacked column of the number of builds that were run with an outcome of failed, passed, or unknown during the most recent two weeks.  
   
- ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
+ ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")  
   
  The chart is based on a PivotTable from data that is stored in the Analysis Services database.  
   

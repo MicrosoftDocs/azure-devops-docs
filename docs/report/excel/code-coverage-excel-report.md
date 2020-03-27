@@ -2,19 +2,17 @@
 title: Code Coverage Excel Report 
 description: Understand how to use this report to help determine how close parts of the code are to release quality - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: bf316d3c-5d74-42d4-90f1-bb411b0bf13d
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
-ms.manager: mijacobs
 ---
 
 # Code Coverage Excel Report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 With the Code Coverage report, you can monitor how much code the team is testing over time. Team members can use this report to help determine how close parts of the code are to release quality. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
@@ -30,7 +28,7 @@ With the Code Coverage report, you can monitor how much code the team is testing
 ##  <a name="Data"></a> Data in the Report  
  The team can review the Code Coverage report to determine whether tests cover the code sufficiently and how the coverage changed over time. As the following illustration shows, the report provides a line graph of the build verification test (BVT) code coverage and other coverage over the most recent four weeks.  
   
- ![Code Coverage Report](_img/procguid_codecoverage.png "ProcGuid_CodeCoverage")  
+ ![Code Coverage Report](media/procguid_codecoverage.png "ProcGuid_CodeCoverage")  
   
  This report is based on a PivotChart report that shows the most recent four weeks of data that was captured for code changes and that is stored in the data warehouse.  
   

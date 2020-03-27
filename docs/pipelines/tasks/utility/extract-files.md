@@ -2,10 +2,7 @@
 title: Extract Files task
 description: Extract files from archives to a target folder using minimatch patterns on Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: fe025768-2cb4-4939-b22f-8f69155bf310
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Extract Files task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to extract files from archives to a target folder using match patterns.
 A range of standard archive formats is supported, including .zip, .jar, .war, .ear, .tar, .7z, and more.
@@ -28,7 +25,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ExtractFilesV1.md)]
+[!INCLUDE [temp](../includes/yaml/ExtractFilesV1.md)]
 
 ::: moniker-end
 
@@ -82,15 +79,15 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](../_shared/qa-minimatch.md)]
+[!INCLUDE [include](../includes/qa-minimatch.md)]
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

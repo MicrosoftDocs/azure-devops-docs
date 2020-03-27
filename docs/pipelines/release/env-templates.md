@@ -3,10 +3,7 @@ title: Use stage templates in deployments
 ms.custom: seodec18
 description: DevOps CI CD - Understand stage templates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Stage templates in Azure Pipelines
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When you start a new release pipeline, or when you add a stage to
@@ -55,10 +52,10 @@ Then you can re-create the template for use in that location.
 
 You can delete an existing custom template from the list of templates that is displayed when you add a new stage to our pipeline.
 
-![Delete custom template](_img/delete-custom-template.png)
+![Delete custom template](media/delete-custom-template.png)
 
 ### How do I update a custom stage template?
 
 To update an stage template, delete the existing template in a release pipeline and then save the stage as a template with the same name.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

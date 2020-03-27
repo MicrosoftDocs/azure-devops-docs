@@ -1,19 +1,17 @@
 ---
 title: Azure DevOps - Data Protection
 description: Learn how Microsoft protects your projects and data in Azure DevOps. Microsoft is committed to making sure that your projects stay safe and secure, without exception. 
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
 
 # Data protection overview
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 Azure DevOps Services is a cloud-hosted application for your development projects, from planning through deployment. Based on the capabilities of Team Foundation Server, with additional cloud services, Azure DevOps manages your source code, work items, builds, tests, and much more. Azure DevOps uses Azure's Platform as a Service infrastructure and many of Azure's services, including Azure SQL databases, to deliver a reliable, globally available service for your development projects. Because important data is at stake, this white paper discusses the steps that Microsoft takes to keep your projects safe, available, secure, and private. In addition, it describes the role you play in keeping your projects safe and secure.
 
@@ -52,7 +50,7 @@ security management policy.
 
 ## Built on Azure
 
-![Azure DevOps high-level architecture diagram ](_img/data-protection/Figure1_VSOArchitecture.png)
+![Azure DevOps high-level architecture diagram ](media/data-protection/Figure1_VSOArchitecture.png)
 
 Azure DevOps Services is hosted entirely in Azure data centers and uses many of the core Azure services including Compute, Storage, Networking, SQL Database, Identity and Access Management Services, and Service Bus. This lets us focus on the unique aspects of running Azure DevOps while taking advantage of the state-of-the-art capabilities, protection, and industry certifications available from the Azure platform.
 
@@ -105,7 +103,7 @@ While we strive for the service to be available 100% of the time, sometimes thin
 
 Azure DevOps live-site management processes are crafted to ensure a deep focus on service health and customer experience. Our processes minimize our time to detect, respond to, and mitigate impacting issues. Ownership for Live site is shared across all engineering disciplines, so there are continual improvements evolving out of direct experience. This means that monitoring, diagnostics, resiliency, and quality assurance processes are improved over time. Live-site management in Azure DevOps is broken into three distinct tracks, shown as follows:
 
-![Azure DevOps Services live-site management process](_img/data-protection/Figure2_VSOSiteManagementProcess.png)
+![Azure DevOps Services live-site management process](media/data-protection/Figure2_VSOSiteManagementProcess.png)
 
 The operations team also monitors the availability metrics for individual organizations. These metrics provide insights into specific conditions that might affect only some of our customers. Investigations into this data can often result in targeted improvements to address customer-specific issues. In some cases, we will even contact the customer directly to understand their experience and work with them to improve the service from their vantage point.
 

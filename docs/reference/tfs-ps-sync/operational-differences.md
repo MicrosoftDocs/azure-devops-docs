@@ -2,10 +2,8 @@
 title: Operational differences in managing projects
 titleSuffix: TFS 
 description: Understand how using the Team Foundation plug-in to Project differs from Project Server-TFS integration  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 786a9a22-0e34-4a70-b589-ae2def789e06
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +12,7 @@ ms.date: 01/12/2017
 
 # Operational differences in managing projects using TFS and Project
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> You can schedule projects by using the features that are available in Microsoft Project or Microsoft Project Professional, while maintaining the data and tracking work in Visual Studio Team Foundation Server (TFS). If you have Project Server deployed, you can best manage your enterprise project plans by installing Team Foundation Server Extensions for Project Server.  
   
@@ -36,15 +34,15 @@ ms.date: 01/12/2017
   
 |Feature|Team Foundation plug-in to Microsoft Project|TFS and Project Server Integration|  
 |-------------|--------------------------------------|----------------------------------------|  
-|Directly connect to TFS, and change work items and their dependencies.|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")||  
-|Initiate project planning, schedule work, and manage project calendars.|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|Manage and synchronize dependency links.|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")||  
-|View project status, schedule, and resource allocation.|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|Work with subprojects, standard projects, and enterprise projects.|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|Control the level of collaboration and synchronization.||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|View and leverage enterprise resource pools.||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|View resource allocation   across multiple enterprise project plans.||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
-|Leverage portfolio optimization, demand management, and reporting (features available only with Project Server)||![Advanced access](_img/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|Directly connect to TFS, and change work items and their dependencies.|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")||  
+|Initiate project planning, schedule work, and manage project calendars.|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|Manage and synchronize dependency links.|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")||  
+|View project status, schedule, and resource allocation.|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|Work with subprojects, standard projects, and enterprise projects.|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|Control the level of collaboration and synchronization.||![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|View and leverage enterprise resource pools.||![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|View resource allocation   across multiple enterprise project plans.||![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
+|Leverage portfolio optimization, demand management, and reporting (features available only with Project Server)||![Advanced access](media/aml_proj_greenfield_whitecheckmark.png "AML_Proj_GreenField_WhiteCheckmark")|  
   
 ##  <a name="OperationalDifferences"></a> 
 

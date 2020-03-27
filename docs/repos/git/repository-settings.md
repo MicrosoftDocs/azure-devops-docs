@@ -3,9 +3,7 @@ title: Repository settings
 titleSuffix: Azure Repos
 description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -42,11 +40,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
+   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
 
 2. Select **Options** to view and configure your repository settings.
 
-   ![The options UI](_img/repository-settings/repository-settings-server-2019.png)
+   ![The options UI](media/repository-settings/repository-settings-server-2019.png)
 
 ::: moniker-end
 
@@ -54,11 +52,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose **Project settings**, **Repositories**, and select your repository.
 
-   ![Project settings for your repository](_img/repository-settings/project-repository-settings.png)
+   ![Project settings for your repository](media/repository-settings/project-repository-settings.png)
 
 2. Select **Options** and **Policies** to view and configure your repository settings.
 
-   ![The options UI](_img/repository-settings/repository-settings.png)
+   ![The options UI](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -66,11 +64,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
-   ![The options UI](_img/repository-settings/repository-settings.png)
+   ![The options UI](media/repository-settings/repository-settings.png)
 
 ::: moniker-end
 
@@ -78,11 +76,11 @@ You may also want to learn about client-side [Git preferences](git-config.md).
 
 1. From your web browser, open the project for your organization in Azure DevOps and choose the gear icon, **Version Control**, and select your repository.
 
-   ![Project settings for your repository](_img/repository-settings/project-repository-settings-prev-nav.png)
+   ![Project settings for your repository](media/repository-settings/project-repository-settings-prev-nav.png)
 
 2. Select **options** to view and configure your repository settings.
 
-   ![The options UI](_img/repository-settings/repository-settings-tfs2018.2.png)
+   ![The options UI](media/repository-settings/repository-settings-tfs2018.2.png)
 
 ::: moniker-end
 
@@ -311,7 +309,7 @@ az repos policy file-size update --id 2 --maximum-git-blob-size 20971520
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 

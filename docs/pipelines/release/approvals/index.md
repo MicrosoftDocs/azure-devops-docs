@@ -1,24 +1,21 @@
 ---
-title: Understand approvals and gates
+title: Understand approvals, gates, and checks
 ms.custom: seodec18
 description: Understand deployment approvals and gates in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 08/24/2018
 monikerRange: '>= tfs-2015'
 ---
 
 # Release approvals and gates overview
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 A release pipeline specifies the end-to-end release pipeline for an app to be deployed across a range of stages.
@@ -35,7 +32,7 @@ deployment pipeline and prompt users to carry out manual tasks, then resume or r
 
 The following diagram shows how these features are combined in a stage of a release pipeline.
 
-![Schematic view of approvals and gates in a stage](_img/approvals-gates.png)
+![Schematic view of approvals and gates in a stage](media/approvals-gates.png)
 
 By using approvals, gates, and manual intervention you can take full control of your releases
 to meet a wide range of deployment requirements. Typical scenarios where approvals, gates, and manual intervention
@@ -59,7 +56,7 @@ You can combine all three techniques within a release pipeline to fully achieve 
 In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
 though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
 
-## Related topics
+## Related articles
 
 * [Approvals](approvals.md)
 * [Gates](gates.md)
@@ -69,9 +66,9 @@ though Service Management methodologies such as ITIL. For more information, see 
 * [Triggers](../triggers.md)
 * [Release pipelines and releases](../releases.md)
 
-## See also
+## Additional resources
 
 * [Video: Deploy quicker and safer with gates in Azure Pipelines](https://channel9.msdn.com/Events/Connect/2017/T181)
-* [Configure your release pipelines for safe deployments](https://blogs.msdn.microsoft.com/visualstudioalm/2017/04/24/configuring-your-release-pipelines-for-safe-deployments/)
+* [Configure your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

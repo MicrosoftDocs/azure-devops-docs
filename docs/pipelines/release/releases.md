@@ -3,10 +3,7 @@ title: Understand releases and deployments
 ms.custom: seodec18
 description: DevOps CI CD - Understand releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 2FF35C3B-FBF9-407F-8467-2D336973E63C
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -16,10 +13,10 @@ monikerRange: '>= tfs-2015'
 # Releases in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="azure-devops"
 > [!NOTE] 
@@ -49,7 +46,7 @@ to that stage.
 
 The following schematic shows the relationship between release pipelines, releases, and deployments.
 
-![Relationship between release pipelines, releases, and deployments](_img/release-deploy.png)
+![Relationship between release pipelines, releases, and deployments](media/release-deploy.png)
 
 Releases can be created from a release pipeline in several ways:
 
@@ -84,4 +81,4 @@ or immediately start a deployment. For example:
 
 * Approvers may defer the release to a stage until a specified date and time.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

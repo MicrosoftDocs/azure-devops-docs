@@ -3,22 +3,20 @@ title: Change app access policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change application access policies for your organization, so you don't have to enter user credentials multiple times
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2019
+ms.date: 02/20/2020
 monikerRange: 'azure-devops'
 ---
 
 # Change application access policies for your organization
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 You can change your application access policies for your organization in Azure DevOps. Azure DevOps offers the capability for other apps to integrate with its services and resources in your organization. To access your organization without asking for user credentials multiple times, apps can use the following authentication methods:
 
@@ -31,7 +29,7 @@ You can change your application access policies for your organization in Azure D
 * [Personal access tokens](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
    * Accessing specific resources or activities, like builds or work items
-   * Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
+   * Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
    * Accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md)
 
 By default, your organization allows access for all authentication methods.
@@ -42,25 +40,25 @@ When you deny access to an authentication method, no app can use that method to 
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
 To continue, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](faq-change-app-access.md#find-owner)
+[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
 ## Change application access policies
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Choose ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. In the Policies tab, review your application connection settings. Change these settings, based on your security policies.
 
-   ![Under Application Connections, change each setting as necessary, save your changes](_img/change-application-access-policies/application-connection-policy-settings.png)
+   ![Under Application Connections, change each setting as necessary, save your changes](media/change-application-access-policies/application-connection-policy-settings.png)
 
    > [!Note]
    > Anonymous access is used to access both private and public repos. Learn more at [Make your project public](../public/make-project-public.md).
 
 ## Related articles
 
-- [Need help?](faq-change-app-access.md#get-support)
+- [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
 - [Manage Conditional Access](manage-conditional-access.md)

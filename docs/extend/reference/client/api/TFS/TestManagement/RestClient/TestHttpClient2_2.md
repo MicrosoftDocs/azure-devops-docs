@@ -2,10 +2,8 @@
 title: TFS/TestManagement/RestClient TestHttpClient2_2 API | Extensions for Azure DevOps Services
 description: Data representation of a test http client 2_2.
 ms.assetid: f94cc434-0936-ae2b-eddc-54eb9c5d21ea
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -18,7 +16,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [disclaimer](../../../_data/disclaimer.md)]
 
-[!INCLUDE [rest-api-docs-rollout](../../../../../../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../../../../../../includes/rest-api-docs-rollout.md)]
 
 Module path: `TFS/TestManagement/RestClient`
 

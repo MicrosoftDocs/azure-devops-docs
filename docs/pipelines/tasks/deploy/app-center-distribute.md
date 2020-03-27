@@ -2,8 +2,6 @@
 title: App Center Distribute task
 description: Distribute app builds to testers and users through App Center
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B832BEC5-8C27-4FEF-9FB8-6BEC8524AD8A
 ms.manager: dastahel
 ms.custom: seodec18
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # App Center Distribute task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
@@ -24,7 +22,7 @@ Use this task in a build or release pipeline to distribute app builds to testers
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -32,7 +30,7 @@ Use this task in a build or release pipeline to distribute app builds to testers
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AppCenterDistributeV3.md)]
+[!INCLUDE [temp](../includes/yaml/AppCenterDistributeV3.md)]
 
 ::: moniker-end
 
@@ -77,42 +75,42 @@ pool:
   vmImage: 'macOS-latest'
 steps:
 
-  - script: sudo npm install -g appcenter-cli
-  - script: appcenter login --token {YOUR_TOKEN}
+- script: sudo npm install -g appcenter-cli
+- script: appcenter login --token {YOUR_TOKEN}
 
-  - task: Gradle@2
-    inputs:
-      workingDirectory: ''
-      gradleWrapperFile: 'gradlew'
-      gradleOptions: '-Xmx3072m'
-      publishJUnitResults: false
-      testResultsFiles: '**/TEST-*.xml'
-      tasks: build
+- task: Gradle@2
+  inputs:
+    workingDirectory: ''
+    gradleWrapperFile: 'gradlew'
+    gradleOptions: '-Xmx3072m'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: build
 
-  - task: CopyFiles@2
-    inputs:
-      contents: '**/*.apk'
-      targetFolder: '$(build.artifactStagingDirectory)'
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.apk'
+    targetFolder: '$(build.artifactStagingDirectory)'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathToPublish: '$(build.artifactStagingDirectory)'
-      artifactName: 'outputs'
-      artifactType: 'container'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(build.artifactStagingDirectory)'
+    artifactName: 'outputs'
+    artifactType: 'container'
 
-  # Run tests using the App Center CLI
-  - script: appcenter test run espresso --app "{APP_CENTER_SLUG}" --devices "{DEVICE}" --app-path {APP_FILE} --test-series "master" --locale "en_US" --build-dir {PAT_ESPRESSO} --debug
+# Run tests using the App Center CLI
+- script: appcenter test run espresso --app "{APP_CENTER_SLUG}" --devices "{DEVICE}" --app-path {APP_FILE} --test-series "master" --locale "en_US" --build-dir {PAT_ESPRESSO} --debug
 
-  # Distribute the app
-  - task: AppCenterDistribute@3
-    inputs:
-      serverEndpoint: 'AppCenter'
-      appSlug: '$(APP_CENTER_SLUG)'
-      appFile: '$(APP_FILE)' # Relative path from the repo root to the APK or IPA file you want to publish
-      symbolsOption: 'Android'
-      releaseNotesOption: 'input'
-      releaseNotesInput: 'Here are the release notes for this version.'
-      destinationType: 'groups'
+# Distribute the app
+- task: AppCenterDistribute@3
+  inputs:
+    serverEndpoint: 'AppCenter'
+    appSlug: '$(APP_CENTER_SLUG)'
+    appFile: '$(APP_FILE)' # Relative path from the repo root to the APK or IPA file you want to publish
+    symbolsOption: 'Android'
+    releaseNotesOption: 'input'
+    releaseNotesInput: 'Here are the release notes for this version.'
+    destinationType: 'groups'
 ```
 
 ## Open source

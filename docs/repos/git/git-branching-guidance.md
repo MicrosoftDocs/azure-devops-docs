@@ -3,9 +3,7 @@ title: Git branching guidance
 titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -39,7 +37,7 @@ Develop your features and fix bugs in feature branches based off your master bra
 Feature branches isolate work in progress from the completed work in the master branch.
 Git branches are inexpensive to create and maintain. Even small fixes and changes should have their own feature branch.
 
-![image of basic branching workflow](_img/branching-guidance/featurebranching.png)
+![image of basic branching workflow](media/branching-guidance/featurebranching.png)
 
 Creating feature branches for all your changes makes reviewing history simple. Look at the commits made in the branch and look at the pull request that merged the branch.
 
@@ -117,7 +115,7 @@ Give this branch a clear name associating it with the release, for example *rele
 
 Create branches to fix bugs from the release branch and merge them back into the release branch in a pull request.  
 
-![image of release branch workflows](_img/branching-guidance/releasebranching_release.png)
+![image of release branch workflows](media/branching-guidance/releasebranching_release.png)
 
 ### Port changes back to the master branch
 
@@ -132,7 +130,7 @@ Update the master branch with a change made in the release branch with these ste
 1. Cherry-pick the changes from the release branch to your new feature branch.
 1. Merge the feature branch back into the master branch in a second pull request.
 
-![image of release branch workflows](_img/branching-guidance/releasebranching_master.png)
+![image of release branch workflows](media/branching-guidance/releasebranching_master.png)
 
 This release branch workflow keeps the pillars of the basic workflow intact: feature branches, pull requests, and a strong master branch that always has the latest version of the code.
 

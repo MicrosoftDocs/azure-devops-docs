@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Create your first Extension with Visual Studio | Extensions for Azure DevOps Services
 description: Use Visual Studio with ASP.NET to create your first extension for Azure DevOps Services.
 ms.assetid: 387f13db-bb06-4f8e-baf8-3f0ea05903e5
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -23,7 +21,7 @@ or it can be a complex and powerful custom UI experience that light up within th
 Get started now by creating your own hub that displays the results a query,
 and an action on the queries context menu to launch your hub.
 
-![hub](../_shared/procedures/_img/create-action/my-work-items.png)
+![hub](../media-procedures/create-action/my-work-items.png)
 
 
 **In this page:**
@@ -42,19 +40,19 @@ and an action on the queries context menu to launch your hub.
 Use a hub to surface your web app in an iframe in Azure DevOps Services.
 The one we're creating here show ups in the project's **Work** hub group.
 
-![Location of a new hub in Azure DevOps Services](../_shared/procedures/_img/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
 
 <a id="app"></a>
 ### Create the web app
 
 Start by creating the web app with the page that is your hub.
 
-[!INCLUDE [Webapp](../_shared/procedures/create-hub-app-asp4.md)]
+[!INCLUDE [Webapp](../includes/procedures/create-hub-app-asp4.md)]
 
 1. If you like, you can add a square image in the ```images``` folder that identifies your extension.
 We'll display it when someone installs your extension.
 
-	![installed extension](../_shared/procedures/_img/sample-extension-card.png)
+	![installed extension](../media-procedures/sample-extension-card.png)
 
 	You don't need to do this, though for your extension to work.
 
@@ -63,9 +61,9 @@ We'll display it when someone installs your extension.
 
 The extension manifest tells Azure DevOps Services about your extension.
 
-[!INCLUDE [Extension_manifest](../_shared/procedures/create-base-manifest.md)]
+[!INCLUDE [Extension_manifest](../includes/procedures/create-base-manifest.md)]
 
-[!INCLUDE [Contribution_manifest](../_shared/procedures/create-hub-manifest.md)]
+[!INCLUDE [Contribution_manifest](../includes/procedures/create-hub-manifest.md)]
 
 <a id="package"></a>
 ### Package and publish your extension
@@ -75,7 +73,7 @@ The extension manifest tells Azure DevOps Services about your extension.
 <a id="install"></a>
 ### Install your extension
 
-[!INCLUDE [Install](../_shared/procedures/install.md)]
+[!INCLUDE [Install](../includes/procedures/install.md)]
 
 
 
@@ -83,20 +81,20 @@ The extension manifest tells Azure DevOps Services about your extension.
 
 1. Enable https for your web app.
 
-	![Properties dialog with SSL enabled](../_shared/procedures/_img/create-hub-app-asp4/enable-ssl.png)
+	![Properties dialog with SSL enabled](../media-procedures/create-hub-app-asp4/enable-ssl.png)
 
 1. Start your app in Visual Studio so that Azure DevOps Services can access it.
 
 1. Go to your hub in the **Work** hub group.
 
-	![Hello hub in the Home hub group](./_img/hello-hub.png)
+	![Hello hub in the Home hub group](./media/hello-hub.png)
 
 <a id="control"></a>
 ### Add a grid control
 
 Now add a grid control to display some data in ```hello-world.html```.
 
-[!INCLUDE [Control](../_shared/procedures/use-a-control-js.md)]
+[!INCLUDE [Control](../includes/procedures/use-a-control-js.md)]
 
 <a id="rest"></a>
 ### Call a REST API
@@ -183,7 +181,7 @@ with a callback that loads the grid control with the results.
 
 1. Refresh the page to see the data from your REST API call displayed in the grid.
 
-	![API results displayed in the grid](../_shared/procedures/_img/call-rest-api/query-results.png)
+	![API results displayed in the grid](../media-procedures/call-rest-api/query-results.png)
 
 <a id="action"></a>
 ## Add an action
@@ -194,7 +192,7 @@ that launches the Hello hub and send it a query to run.
 
 See the [contributions reference](../reference/targets/overview.md) to see other places where you can contribute actions.
 
-[!INCLUDE [Action](../_shared/procedures/create-action-js.md)]
+[!INCLUDE [Action](../includes/procedures/create-action-js.md)]
 
 1. Update the ```execute:``` block to open your Hello hub.
 
@@ -278,11 +276,11 @@ See the [contributions reference](../reference/targets/overview.md) to see other
 
 1. Run the action again from a query (not a folder) to see the results of that query in the Hello hub.
 
-	![Query results in the hello hub](../_shared/procedures/_img/create-action/my-work-items.png)
+	![Query results in the hello hub](../media-procedures/create-action/my-work-items.png)
 
 	Now when you use your action, the results of the selected query is displayed in your hub.
 
 <a id="deploy"></a>
 ## Deploy your extension to Microsoft Azure
 
-[!INCLUDE [Action](../_shared/procedures/publish-azure.md)]
+[!INCLUDE [Action](../includes/procedures/publish-azure.md)]

@@ -2,10 +2,7 @@
 title: Deploy to Azure SQL Database
 description: Deploy to an Azure SQL database from Azure Pipelines or TFS
 ms.assetid: B4255EC0-1A25-48FB-B57D-EC7FDB7124D9
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Azure SQL database deployment
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your database updates to Azure SQL database after every successful build.
 

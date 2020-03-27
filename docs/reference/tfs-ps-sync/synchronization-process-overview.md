@@ -2,10 +2,8 @@
 title: TFS-Project Server synchronization process overview 
 titleSuffix: TFS 
 description: Understand how the synchronization engine manages the flow of data between Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a34c054a-1361-43ce-962e-bf29ce04ffb2
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/05/2017
@@ -14,7 +12,7 @@ ms.topic: overview
 
 # Synchronization process overview for TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 You can manage the integration of Visual Studio Team Foundation Server 2013 and Microsoft Project Server more effectively if you understand how the synchronization engine manages the flow of data between the two server products. The synchronization engine supports the independent workflows of project managers who work in Project Professional and team leads and team members who work in Team Foundation. Deliverables and tasks can evolve independently in each area.  
 
@@ -24,7 +22,7 @@ You can manage the integration of Visual Studio Team Foundation Server 2013 and 
   
  As the following illustration shows, data synchronization consists of seven main steps.  
   
- ![PS&#45;TFS Synchronization process](_img/pstfs_syncprocess.png "PSTFS_SyncProcess")  
+ ![PS&#45;TFS Synchronization process](media/pstfs_syncprocess.png "PSTFS_SyncProcess")  
 Synchronization Process for Team Foundation Server and Project Server Integration  
   
  The synchronization engine consists of a single job service that runs on a regular schedule and not when each work item is updated. The synchronization job performs the following three processes in the order indicated:  
@@ -34,15 +32,15 @@ Synchronization Process for Team Foundation Server and Project Server Integratio
 <tbody valign="top">
 <tr>
 <td><strong>Publish synchronization</strong>:</td>
-<td><img src="_img/procguid_1.png" alt="Step 1" title="ProcGuid_1"/> A project manager defines or updates tasks or deliverables and sets the <strong>Publish to Team Project</strong> value to <strong>Yes</strong> for each task that they want to synchronize.<br /><br /> <img src="_img/procguid_2.png" alt="Step 2" title="ProcGuid_2"/> The project manager publishes the enterprise project plan by using Microsoft Project Professional. Changes are automatically saved to the database for Project Server.<br /><br /> <img src="_img/procguid_3.png" alt="Step 3" title="ProcGuid_3"/> The synchronization engine pulls data from Project Server and determines what data to update based on the data that is configured for synchronization. Only those objects, tasks, and work items that are configured for synchronization are updated.<br /><br /> <img src="_img/procguid_4.png" alt="Step 4" title="ProcGuid_4"/> The synchronization engine either creates or updates work items in Team Foundation and defines a link that binds the task in Project to the work item in Team Foundation.</td>
+<td><img src="media/procguid_1.png" alt="Step 1" title="ProcGuid_1"/> A project manager defines or updates tasks or deliverables and sets the <strong>Publish to Team Project</strong> value to <strong>Yes</strong> for each task that they want to synchronize.<br /><br /> <img src="media/procguid_2.png" alt="Step 2" title="ProcGuid_2"/> The project manager publishes the enterprise project plan by using Microsoft Project Professional. Changes are automatically saved to the database for Project Server.<br /><br /> <img src="media/procguid_3.png" alt="Step 3" title="ProcGuid_3"/> The synchronization engine pulls data from Project Server and determines what data to update based on the data that is configured for synchronization. Only those objects, tasks, and work items that are configured for synchronization are updated.<br /><br /> <img src="media/procguid_4.png" alt="Step 4" title="ProcGuid_4"/> The synchronization engine either creates or updates work items in Team Foundation and defines a link that binds the task in Project to the work item in Team Foundation.</td>
 </tr>
 <tr>
 <td><strong>Status synchronization</strong>::</td>
-<td><img src="_img/procguid_5.png" alt="Step 5" title="ProcGuid_5"/> A team lead or team member either modifies a work item in Team Foundation that is linked to a task in an enterprise project or creates a work item and sets the <strong>Submit to Project Server</strong> value to <strong>Yes</strong>. The synchronization engine queries the changes that are made for mapped projects and sends requests to the approval queue or queues in Project Web Access or Project Web App (PWA).</td>
+<td><img src="media/procguid_5.png" alt="Step 5" title="ProcGuid_5"/> A team lead or team member either modifies a work item in Team Foundation that is linked to a task in an enterprise project or creates a work item and sets the <strong>Submit to Project Server</strong> value to <strong>Yes</strong>. The synchronization engine queries the changes that are made for mapped projects and sends requests to the approval queue or queues in Project Web Access or Project Web App (PWA).</td>
 </tr>
 <tr>
 <td><strong>Approval synchronization</strong>:</td>
-<td><img src="_img/procguid_6.png" alt="Step 6" title="ProcGuid_6"/> Each project manager reviews their approval queue and either approves or rejects each status update request.<br /><br /> After updates are approved, the project manager must publish the project plan before the updates will appear in Project Server. <strong>Important:</strong>  When the synchronization engine submits multiple levels of work items to Project Server, the first level must be approved and published to Project Server before the next level can be submitted. For example, you can submit a batch of new work items that includes three levels of child items. In that case, the project manager must publish the project plan four times for all work items to be synchronized with Project Server. <br /><br /> <img src="_img/procguid_7.png" alt="Step 7" title="ProcGuid_7"/> The event handler for approvals in Project Server transmits the approval decisions to the synchronization engine, which then updates the work items in Team Foundation Server based on the approval status.</td>
+<td><img src="media/procguid_6.png" alt="Step 6" title="ProcGuid_6"/> Each project manager reviews their approval queue and either approves or rejects each status update request.<br /><br /> After updates are approved, the project manager must publish the project plan before the updates will appear in Project Server. <strong>Important:</strong>  When the synchronization engine submits multiple levels of work items to Project Server, the first level must be approved and published to Project Server before the next level can be submitted. For example, you can submit a batch of new work items that includes three levels of child items. In that case, the project manager must publish the project plan four times for all work items to be synchronized with Project Server. <br /><br /> <img src="media/procguid_7.png" alt="Step 7" title="ProcGuid_7"/> The event handler for approvals in Project Server transmits the approval decisions to the synchronization engine, which then updates the work items in Team Foundation Server based on the approval status.</td>
 </tr>
 </tbody>
 </table>

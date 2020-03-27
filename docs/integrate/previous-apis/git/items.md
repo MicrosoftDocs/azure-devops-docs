@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Items | REST API Reference for Team Foundation Server
 description: Work with Git items (files and folders) programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: B9F8F05A-1852-49CE-8B3E-75A30D41487A
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -22,7 +20,7 @@ Items are the files, folders, and submodules in a repository.
 Files are [blobs](./blobs.md) in the API and folders are [trees](./trees.md).
 If the repository contains [submodules](https://git-scm.com/docs/git-submodule), they will appear as [commits](./commits.md).
 
-![Items are blobs and trees](./_img/git-items.png)
+![Items are blobs and trees](./media/git-items.png)
 
 There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/ItemsSample.cs) available for this endpoint.
 

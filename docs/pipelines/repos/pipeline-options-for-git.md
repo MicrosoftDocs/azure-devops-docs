@@ -2,12 +2,7 @@
 title: Options for Git repositories
 description: Options that are available when using a Git repository with Azure Pipelines
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.custom: seodec18
 ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
@@ -15,13 +10,13 @@ monikerRange: '>= tfs-2015'
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-While editing a pipeline that uses a Git repo (in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo), you have the following options.
+While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
 
 | Feature | Azure Pipelines | TFS 2017.2 and higher | TFS 2017 RTM | TFS 2015.4 | TFS 2015 RTM |
 |---------|------|------|----------|------------|--------------|------------|--------------|
@@ -64,7 +59,7 @@ This is the branch that you want to be the default when you manually queue this 
 
 ## Clean the local repo on the agent
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 ::: moniker-end
 
@@ -101,7 +96,7 @@ Select one of the following options:
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -111,7 +106,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ### TFS 2015 RTM
 
@@ -119,7 +114,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 Select **true** to delete the repository folder.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -127,7 +122,7 @@ Select **true** to delete the repository folder.
 
 ## Label sources
 
-[!INCLUDE [include](_shared/label-sources.md)]
+[!INCLUDE [include](includes/label-sources.md)]
 
 The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
@@ -431,12 +426,12 @@ When using an Other/external Git repository, CI builds require that the reposito
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/git-protocols.md)]
+[!INCLUDE [temp](includes/git-protocols.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

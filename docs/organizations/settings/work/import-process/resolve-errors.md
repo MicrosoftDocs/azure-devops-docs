@@ -3,9 +3,7 @@ title: Resolve validation errors
 titleSuffix: Azure DevOps Services  
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -27,7 +25,7 @@ ms.date: 03/20/2018
 During process import, the process is validated to ensure the system works as expected for the custom process. 
 You'll receive a list of error messages if the process fails validation.  
 
-![Process successfully imported](_img/ALM_IP_ValidationErrors_list_775.png)  
+![Process successfully imported](media/ALM_IP_ValidationErrors_list_775.png)  
 
 If you've received a validation error when you tried [import process](import-process.md), you'll need to resolve the error before retrying the import. 
 Each error has a link to learn more about the specific validation failure and guidance on how to correct it.
@@ -1087,7 +1085,7 @@ The Scrum process specifies the following `TypeField` elements. If any of these 
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
     <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-    <TypeField refname=" Microsoft.VSTS.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.VSTS.Common.BacklogPriority" type="Order" />
     <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
     <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
     <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />

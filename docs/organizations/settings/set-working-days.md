@@ -3,9 +3,7 @@ title: Set working days off
 titleSuffix: Azure DevOps
 description: Choose the days your team works for capacity planning purposes and when using sprint/scrum methods in  Azure Boards & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 02771DE7-1AF7-46B1-AE4A-219351C570DC
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,12 +13,12 @@ ms.date: 11/04/2019
 
 # Set working days  
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page.  
 
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
   
 <a id="team-services-work-days" />  
@@ -34,15 +32,15 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 #### [Preview page](#tab/preview-page) 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-preview.png)  
+![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-preview.png)  
 
 #### [Current page](#tab/current-page) 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](_img/capacity-planning-open-team-settings-new-nav.png)  
+![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)  
 
 ::: moniker-end
 
@@ -50,9 +48,9 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 ::: moniker range=">= tfs-2017 < azure-devops" 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../_img/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
-![Capacity page, Settings, Working days](../../boards/plans/_img/capacity-planning-open-team-settings-tfs-15.png)  
+![Capacity page, Settings, Working days](../../boards/plans/media/capacity-planning-open-team-settings-tfs-15.png)  
 
 ::: moniker-end
 
@@ -62,7 +60,7 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 Open your team settings from the **Overview** tab of your team's admin context. Check or uncheck one or more days. Your changes are automatically saved. 
 
-![Team settings page for default working days](../../boards/plans/_img/ALM_DS_WorkingDaysOff.png)  
+![Team settings page for default working days](../../boards/plans/media/ALM_DS_WorkingDaysOff.png)  
 
 ::: moniker-end
 

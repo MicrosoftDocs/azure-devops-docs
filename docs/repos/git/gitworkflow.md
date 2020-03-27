@@ -3,7 +3,6 @@ title: Azure Repos Git tutorial
 titleSuffix: Azure Repos
 description: Learn Git with the Azure DevOps Services/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.author: sdanie
 author: apawast
@@ -34,7 +33,7 @@ These steps are:
 
 ---
 
-![The Git feature branch workflow](_img/gitworkflow.png)
+![The Git feature branch workflow](media/gitworkflow.png)
 
 Git has a version of this workflow using terminology and commands unique to Git. Throughout this tutorial you'll learn about repositories, branches, commits, and pull requests. 
 These terms might sound familiar if you've used a version control system like Team Foundation Version Control or Subversion, but they behave differently in Git.

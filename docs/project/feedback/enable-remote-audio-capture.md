@@ -2,19 +2,17 @@
 title: Enable remote audio capture
 titleSuffix: Azure DevOps Services & TFS
 description: Configures audio redirection settings on a remote machine that is running Microsoft Feedback Client, Test Runner, or Exploratory Testing window 
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 ms.assetid: 98e82b7a-768a-4fee-8259-0d8a578c0026
 ms.author: kaelli
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.date: 02/22/2017 
 ---
 
 # Enable remote audio capture
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 To record audio, you must have an audio recording device configured on your computer, or on a remote machine if you access Microsoft Feedback Client, Test Runner, or Exploratory Testing from a remote device.  
   
@@ -49,7 +47,7 @@ To record audio as part of a feedback or testing session on a remote machine tha
   
     The **Remote Desktop Connection** dialog box opens.  
 
-	![Enable remote audio](_img/alm_rm_remoteaudio.png "ALM_RM_RemoteAudio")  
+	![Enable remote audio](media/alm_rm_remoteaudio.png "ALM_RM_RemoteAudio")  
 
 3.  In the **Computer** list, choose or enter the name of the computer to which you want to connect, and, in the **User name** box, enter your user name.  
   

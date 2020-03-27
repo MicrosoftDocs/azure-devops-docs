@@ -3,10 +3,8 @@ title: What settings are supported?
 titleSuffix: Azure DevOps
 description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +15,7 @@ ms.date: 10/28/2019
 
 # About settings at the user, team, project, or organization-level 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 
@@ -71,7 +69,7 @@ Individual contributors can set their user preferences, enable features that are
 <li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[Authorize access to REST APIs with OAuth 2.0](../../integrate/get-started/authentication/oauth.md)">Authorize access to REST APIs with OAuth 2.0</a></li>
 <li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md)">Use SSH key authentication</a></li>
 </ul></td>
-<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md#alternate-credentials)">Authentication overview</a>.</td>
+<td>For an overview of supported authentication methods, see <a href="../../repos/git/auth-overview.md" data-raw-source="[Authentication overview](../../repos/git/auth-overview.md)">Authentication overview</a>.</td>
 </tr>
 <tr>
 <td><strong>Favorites</strong></td>
@@ -162,7 +160,7 @@ See also [Get started as an administrator](../../user-guide/project-admin-tutori
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
-> ![Project settings, new nav](_img/about/project-settings-new-nav.png) 
+> ![Project settings, new nav](media/about/project-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -172,7 +170,7 @@ From the administrative **Project settings** pages, you can configure settings a
 **Project-level settings**  
 From the administrative **Project settings** pages, you can configure settings available from the tabs shown in the following image.
 
-![Project settings, conceptual](_img/about/project-settings-prev-nav.png)  
+![Project settings, conceptual](media/about/project-settings-prev-nav.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
@@ -315,7 +313,7 @@ Members of the [Project Collection Administrators group](../security/set-project
 From the administrative **Organization settings** pages, you can configure settings available from the tabs shown in the following image.
 
 > [!div class="mx-imgBorder"]  
-> ![Organization settings, new nav](_img/about/collection-settings-new-nav.png) 
+> ![Organization settings, new nav](media/about/collection-settings-new-nav.png) 
 
 ::: moniker-end
 
@@ -328,7 +326,7 @@ From the administrative pages for a collection, you can configure the settings s
 > [!NOTE]  
 > Project collection settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
 
-![Collection settings, TFS, conceptual](_img/about/collection-settings-tfs-nav.png) 
+![Collection settings, TFS, conceptual](media/about/collection-settings-tfs-nav.png) 
 
 ::: moniker-end
 

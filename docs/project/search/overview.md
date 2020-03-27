@@ -2,10 +2,8 @@
 title: Search across all your code, wiki, packages and work items
 description: Quickly Search with Azure DevOps and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Search across all your code, wiki, packages and work items
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 Azure DevOps stores a tremendous amount of information; 
 work items for planning and tracking your work, wiki for sharing information, version control to track code file changes, 
@@ -34,13 +32,13 @@ enable you to search across all the projects, teams and repositories to which yo
 
 ::: moniker range=">= azure-devops-2019"  
 
-![Search boxes in Azure DevOps](_img/_shared/title-bar-search-box-select-type-tfs.png)
+![Search boxes in Azure DevOps](media/shared/title-bar-search-box-select-type-tfs.png)
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"  
 
-![Search boxes in TFS 2018 and earlier](_img/_shared/title-bar-search-box-select-type.png)
+![Search boxes in TFS 2018 and earlier](media/shared/title-bar-search-box-select-type.png)
 
 ::: moniker-end
 

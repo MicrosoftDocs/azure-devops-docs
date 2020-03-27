@@ -3,9 +3,7 @@ title: Query by link of attachment count
 titleSuffix: Azure Boards
 description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -16,7 +14,7 @@ ms.date: 10/02/2019
 
 # Query by link or attachment count  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
 
@@ -134,7 +132,7 @@ You can filter for work items by the link type, link count, or attachment count.
 
 Add a query and select **Tree of work items** to begin your query. You should see something similar to the following: 
 
-![Query editor, new tree of work items query](_img/query-link-attach-all-items-tree-query.png)  
+![Query editor, new tree of work items query](media/query-link-attach-all-items-tree-query.png)  
 
 > [!NOTE]    
 > You can't construct a query that shows a hierarchical view of Test Plans, Test Suites, and Test Cases. These items aren't linked together using parent-child link types. You can [view the hierarchy through the Test>Test Plans page](../../test/create-a-test-plan.md). 
@@ -184,7 +182,7 @@ Change Filter options to <strong>Match linked work items first</strong><br/>Add 
 
 The following example shows a dependent linked query that returns items with dependencies on work managed by other teams and other projects. Use this query to see all dependent work items that link to active Product Backlog Items or Bugs that have not been removed, closed, or completed. Only those dependent work items that are under a product area other than the **Phone Save\\Phone Customers** are returned.
 
-![Work Items and Dependent Links Query](_img/example-work-item-queries/IC588290.png)   
+![Work Items and Dependent Links Query](media/example-work-item-queries/IC588290.png)   
 
 **Why this works:**
 
@@ -200,7 +198,7 @@ The following example shows a dependent linked query that returns items with dep
 
 The following image shows the query results that are returned.
 
-![Direct links query results](_img/example-work-item-queries/IC588291.png)  
+![Direct links query results](media/example-work-item-queries/IC588291.png)  
 
 <a id="orphan-stories" />
 
@@ -209,7 +207,7 @@ The following image shows the query results that are returned.
 If you typically organize your user stories under features, you can quickly find those user stories that are orphan by opening the product backlog, enable Parents On view option,  and scroll down to the section that lists Unparented Stories (Agile) or Unparented Backlog items (Scrum)
 
 > [!div class="mx-imgBorder"]  
-> ![List orphan stories or backlog items](_img/link-attachments/list-orphan-stories.png) 
+> ![List orphan stories or backlog items](media/link-attachments/list-orphan-stories.png) 
 
 <a id="table-field"/>
 
@@ -289,7 +287,7 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 <tr>
 <td><a id="remote-link-count"/>
 <p>Remote Link Count</p></td>
-<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md#remote-link" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md#remote-link)">Add link to work items, Link to a remote work item</a>.</p>
+<td><p>Available for Azure DevOps Services only. The number of links from a work item to work items defined in another organization. Organizations must be managed by the same Azure Active Directory. Supported link types include Consumes From, Produced For, and Remote Related. To learn more, see <a href="../backlogs/add-link.md" data-raw-source="[Add link to work items, Link to a remote work item](../backlogs/add-link.md)">Add link to work items, Link to a remote work item</a>.</p>
 <p>Reference Name=System.RemoteLinkCount, Data type=Integer</p></td>
 <td><p>All</p></td>
 </tr>

@@ -3,13 +3,8 @@ title: Expressions
 ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 10/27/2019
+ms.date: 03/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +13,7 @@ monikerRange: '>= tfs-2017'
 **Azure Pipelines | TFS 2018 | TFS 2017.3** 
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Expressions can be used in many places where you need to specify a string, boolean, or number value when authoring a pipeline.
@@ -82,6 +77,15 @@ Must be single-quoted. For example: `'this is a string'`.
 To express a literal single-quote, escape it with a single quote.
 For example: `'It''s OK if they''re using contractions.'`.
 
+You can use a pipe character (`|`) for multiline strings. 
+
+```yaml
+myKey: |
+  one
+  two
+  three
+```
+
 ### Version
 A version number with up to four segments.
 Must start with a number and contain two or three period (`.`) characters.
@@ -102,6 +106,8 @@ Depending on the execution context, different variables are available.
 - If you create pipelines using YAML, then [pipeline variables](../build/variables.md) are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
 - If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
+
+Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
 
 ## Functions
 
@@ -160,7 +166,7 @@ variables:
   minor: $[counter(variables['major'], 100)]
 
 steps:
-    - bash: echo $(minor)
+- bash: echo $(minor)
 ```
 
 The value of `minor` in the above example in the first run of the pipeline will be 100. In the second run it will be 101, provided the value of `major` is still 1.
@@ -177,7 +183,7 @@ jobs:
   variables:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
-    - bash: echo $(a)
+  - bash: echo $(a)
 ``` 
 
 Here is an example of having a counter that maintains a separate value for PRs and CI runs.
@@ -208,9 +214,11 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 ::: moniker range=">= azure-devops-2019"
 
 ### format
-* Evaluates the trailing parameters and inserts them into the leading parameter string.
+* Evaluates the trailing parameters and inserts them into the leading parameter string
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
+* Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
@@ -333,6 +341,41 @@ You can use the following status check functions as expressions in conditions, b
 
   > This is like `always()`, except it will evaluate `False` when the pipeline is canceled.
 
+## Conditional insertion
+
+You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
+
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md). 
+
+### Conditionally assign a variable
+```yml
+variables:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}: # only works if you have a master branch
+    stageName: prod
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo ${{variables.stageName}}
+```
+
+### Conditionally set a task input
+```yml
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'prod'
+    ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+      artifact: 'dev'
+    publishLocation: 'pipeline'
+```
+
 ## Dependencies
 
 For jobs which depend on other jobs, expressions may also use context about previous jobs in the dependency graph.
@@ -403,15 +446,15 @@ jobs:
 
 ## Filtered arrays
 
-When operating on a collection of items you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
+When operating on a collection of items, you can use the `*` syntax to apply a filtered array. A filtered array returns all objects/elements regardless their names.
 
 As an example, consider an array of objects named `foo`. We want to get an array of the values of the `id` property in each object in our array.
 
 ```json
 [
-	{ "id": 1, "a": "avalue1"},
-	{ "id": 2, "a": "avalue2"},
-	{ "id": 3, "a": "avalue3"}
+    { "id": 1, "a": "avalue1"},
+    { "id": 2, "a": "avalue2"},
+    { "id": 3, "a": "avalue3"}
 ]
 ```
 

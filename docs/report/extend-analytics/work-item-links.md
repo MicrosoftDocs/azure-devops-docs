@@ -2,11 +2,9 @@
 title: Query for linked work items 
 titleSuffix: Azure DevOps 
 description: How to guidance for creating a query for linked work items using Analytics for Azure DevOps   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: BF30FE4E-0370-4C9B-A660-51207D816F8B
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 11/2/2018
 
 # Query for linked work items 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Querying work items across links is much like using typical navigation properties. Links themselves are entities though, so there is some additional complexity.
 
@@ -27,7 +25,7 @@ In this article you'll learn:
 > * How to construct a query to return hierarchically (parent-child) linked work items
 > * How to construct a query to return non-hierarchically (related, direct) linked work items 
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 
@@ -39,7 +37,7 @@ In this article you'll learn:
 > https://{servername}:{port}/tfs/{OrganizationName}/{ProjectName}/_odata/{version}/
 > ```
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 
 

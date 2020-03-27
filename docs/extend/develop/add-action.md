@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Add an Action | Extensions for Azure DevOps Services
 description: Add an action for your extension that extends Azure DevOps Services.
 ms.assetid: 7b117bbf-f188-41ce-8ff6-3723ebccea81
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -16,7 +14,7 @@ ms.date: 08/22/2016
 
 In this example, we add an action to the query context menu in the work item queries hub.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Prerequisites for this article
 

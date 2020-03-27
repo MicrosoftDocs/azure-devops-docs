@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use the web portal to support Kanban, plan and track work, and monitor progress in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -17,7 +15,7 @@ ms.date: 10/14/2019
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 
@@ -41,7 +39,7 @@ Boards present work items as cards and support quick status updates through drag
 
 To get started, you'll want to follow the steps outlined below. 
 
-[![Configure Kanban board](../backlogs/_img/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/_img/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/_img/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
+[![Configure Kanban board](../backlogs/media/overview/gs-planning-configure-kanban.png)](kanban-basics.md)[![Update the Kanban board](../backlogs/media/overview/gs-planning-track-kanban.png)](../get-started/plan-track-work.md)[![Monitor progress](../backlogs/media/overview/gs-planning-monitor-kanban.png)](../../report/dashboards/cumulative-flow.md)
 
 > [!NOTE]  
 > A Kanban board is provisioned with the addition of each project and each team. You can only create or add Kanban boards to a project by adding another team. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
@@ -54,17 +52,17 @@ Each board supports many Kanban practices such as defining columns and swimlanes
 
 ::: moniker range=">= azure-devops-2019"
 
-![Kanban board, Agile template](../work-items/_img/about-agile/view-boards-agile.png)   
+![Kanban board, Agile template](../work-items/media/about-agile/view-boards-agile.png)   
 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
-![Kanban board, Agile template](_img/kanban-basics-intro.png)     
+![Kanban board, Agile template](media/kanban-basics-intro.png)     
 ::: moniker-end  
  
 ::: moniker range=">= tfs-2013 <= tfs-2015"    
 > [!div class="mx-imgBorder"]  
-> ![TFS 2015, Kanban board, Agile template](_img/overview/kanban-basics-intro-tfs.png)       
+> ![TFS 2015, Kanban board, Agile template](media/overview/kanban-basics-intro-tfs.png)       
 ::: moniker-end   
 
 ## Configure and customize your Kanban board
@@ -137,7 +135,7 @@ The Cumulative Flow Diagram (CFD) is an in-context report available for both pro
 ::: moniker range="azure-devops"
 
 > [!div class="mx-imgBorder"]  
-> ![Open CFD Analytics](../../report/dashboards/_img/cfd/analytics-cfd-azure-devops.png)
+> ![Open CFD Analytics](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
 The Average work in progress value excludes completed work items. Use the interactive controls to choose the time frame, swimlanes, and workflow states or Kanban board columns. 
 
@@ -145,7 +143,7 @@ The Average work in progress value excludes completed work items. Use the intera
 
 ::: moniker range="<= azure-devops-2019"
 
-<img src="_img/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
+<img src="media/ALM_KB_CumulativeFlow.png" alt="Kanban board, cumulative flow diagram" style="border: 1px solid #C3C3C3;" />   
 
 The CFD shows the count of items in each Kanban column for the past 30 weeks or less. From this chart you can gain an idea of the amount of work in progress and lead time. Work in progress counts unfinished requirements. Lead time indicates the amount of time it takes to complete a requirement from the time it was first proposed.  
 
@@ -161,7 +159,7 @@ To learn more, see the following articles:
 
 ## Display of leaf node work items  
 
-[!INCLUDE [temp](../_shared/display-leaf-nodes.md)]
+[!INCLUDE [temp](../includes/display-leaf-nodes.md)]
 
 <a id="limits-multi-team" />
 
@@ -170,7 +168,7 @@ To learn more, see the following articles:
 While the management teams you configure can use the Kanban board to monitor feature progress by turning on the Features backlog, there are limitations inherent within these views. Even if the management team and the feature teams configure their Feature [Kanban board columns](add-columns.md) with identical workflow mapping, updating the Features on one team's Kanban board won't be reflected on another team's Kanban board. 
 Only when the work item state changes does the card column reflect the same on all boards.
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 
 ## Permissions and access

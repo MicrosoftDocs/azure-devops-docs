@@ -2,10 +2,8 @@
 title: Map Microsoft Project fields to TFS fields
 titleSuffix: TFS
 description: Customize how work item fields map to Project fields for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= tfs-2018'
@@ -14,12 +12,12 @@ ms.date: 01/28/2019
 
 # Map Microsoft Project fields to TFS fields
 
-[!INCLUDE [temp](../../_shared/version-tfs-2018-earlier.md)]  
+[!INCLUDE [temp](../../includes/version-tfs-2018-earlier.md)]  
 
 You can customize the way in which work item fields that are stored in Team Foundation are mapped to fields that are defined for Microsoft Project. You can change the way specific fields are published and designate the default link type to use when you create hierarchical or tree links and dependency links.  
   
 
-[!INCLUDE [temp](_shared/project-integration-deprecated.md)]
+[!INCLUDE [temp](includes/project-integration-deprecated.md)]
 
 Unlike Microsoft Excel, Project uses a limited set of columns, which include predefined columns, such as Task Name, and custom fields. When a user publishes or refreshes work item data in a Project file, the field map determines which fields in the work item database match the columns in Project.  
 

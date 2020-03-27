@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildDeployment API | Extensions for Azure DevOps Services
 description: Data representation of a build deployment.
 ms.assetid: 1effa397-e5db-0297-1c4e-5c47afcb02a5
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

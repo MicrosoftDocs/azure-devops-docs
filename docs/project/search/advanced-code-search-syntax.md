@@ -3,10 +3,8 @@ title: Use advanced code search options
 titleSuffix: Azure Repos
 description: Advanced options for using Code Search across all your projects in Azure DevOps
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -15,7 +13,7 @@ ms.date: 10/10/2019
 
 # How To: Use Code Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 By using Code Search you can do the following tasks:
 
@@ -75,7 +73,7 @@ Search to index in the **Options** tab of the **Repositories** section in the
 
 ::: moniker range="azure-devops-2019"
 
-![Configure Git branches to include in search](_img/advanced-work-item-search-syntax/configure-branches.png)
+![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
 
 ::: moniker-end
 
@@ -133,7 +131,7 @@ You can use more than one `?` wildcard to match more than one character.
 
 ------------------
 
-![Warning](_img/_shared/Warning-hightop.png) **No results found for ...**  
+![Warning](media/shared/Warning-hightop.png) **No results found for ...**  
 If there is a very large number of hits when using a wildcard search, such 
 as when using a very simple wildcard search string, you may see a message that no 
 matching files were found. In this case, narrow your search to reduce the number
@@ -305,8 +303,8 @@ Some more examples of search strings are:
 
 Open the search results in a new browser tab from either search box by
 pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](_img/_shared/start-search-icon.png) icon.
+![start search icon](media/shared/start-search-icon.png) icon.
 In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

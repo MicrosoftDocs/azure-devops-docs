@@ -1,10 +1,8 @@
 ---
 title: TF30032-The New Team Project Wizard can't connect to TFS
 description: Occurs when the New Team Project Wizard is unable to connect to the application-tier {name} when creating a project.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 889f7f5e-9610-47f4-b6a0-592325b75151
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -14,7 +12,7 @@ ms.date: 01/20/2017
 # TF30032: The New Team Project Wizard common structure component could not connect to the Team Foundation Server {0}. 
 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when the New Team Project Wizard is unable to connect to the application-tier {*name*} when creating a project. An active connection cannot be made because of one of the following conditions:  
   

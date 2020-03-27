@@ -2,10 +2,8 @@
 title: Share information using the project portal 
 titleSuffix: TFS
 description: Use the SharePoint project portal to share information with your team 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 74f0e0bc-6528-4757-b906-b53aa869507b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 09/09/2017
@@ -15,7 +13,7 @@ ms.topic: conceptual
 
 # Share information using the project portal
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Teams use project portals to share information and support how their team works. If you install TFS with a configuration that includes SharePoint Products and you created a project portal when you created your team project, your team project is configured with a SharePoint site for the project portal.  
   
@@ -30,8 +28,8 @@ Teams use project portals to share information and support how their team works.
    <td><strong>TFVC</strong></td>
    </tr>
    <tr>
-   <td><img src="_img/alm_te_githome.png" alt="Team Explorer Home page with Git as source control" title="ALM_TE_GitHome"/></td>
-   <td><img src="_img/tracking_teamproject.png" alt="Team Explorer Home page w&#47; TFVC as source control" title="Tracking_TeamProject"/></td>
+   <td><img src="media/alm_te_githome.png" alt="Team Explorer Home page with Git as source control" title="ALM_TE_GitHome"/></td>
+   <td><img src="media/tracking_teamproject.png" alt="Team Explorer Home page w&#47; TFVC as source control" title="Tracking_TeamProject"/></td>
    </tr>
    </tbody>
    </table> 
@@ -40,7 +38,7 @@ Teams use project portals to share information and support how their team works.
   
 2. Show the project portal.  
   
-    ![Show Project Portal link on Documents page](_img/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
+    ![Show Project Portal link on Documents page](media/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
     From the web portal, choose the **Go to project portal** from the home page or a dashboard which contains the [Other links widget](../widget-catalog.md). 
   
@@ -64,11 +62,11 @@ Teams use project portals to share information and support how their team works.
   
 ### Q: How do I access process guidance?
   
- **A:** If your team project is configured with a SharePoint site for its project portal, you can access process guidance from the work item forms in Team Explorer.  Choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon or press F1.  These links access information contained in the Documents **Support** folder.  
+ **A:** If your team project is configured with a SharePoint site for its project portal, you can access process guidance from the work item forms in Team Explorer.  Choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon or press F1.  These links access information contained in the Documents **Support** folder.  
   
  From the web portal, you can access process guidance from the home page or a dashboard  
   
- When you choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon that appears in the work item forms in Team Explorer, a web browser opens and the page that's defined in the process guidance support file for the corresponding work item type is displayed.  If you have not configured your team project with a project portal, or you haven't uploaded the process guidance support files to the project portal, then this link will be inactive.  
+ When you choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon that appears in the work item forms in Team Explorer, a web browser opens and the page that's defined in the process guidance support file for the corresponding work item type is displayed.  If you have not configured your team project with a project portal, or you haven't uploaded the process guidance support files to the project portal, then this link will be inactive.  
   
  You can [redirect process guidance](configure-or-redirect-process-guidance.md) to your custom content.  
 

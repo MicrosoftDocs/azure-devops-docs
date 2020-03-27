@@ -1,7 +1,6 @@
 ---
 title: Import Git repos and view work item attachments – Sept 21
 description: VSTS release notes for September 21 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 4fcf0a54-198f-419f-8c50-0155af0dd574
@@ -22,11 +21,11 @@ Continuing to improve the work item attachment experience, you can now view atta
 
 Our layout admin page for work item types has been improved so that group and page contributions can be managed at a work item type level. You can now hide group and page contributions from particular work items and control their positioning in the new form to optimize your process.
 
-![wit layout admin](_img/9_21_01.png)
+![wit layout admin](media/9_21_01.png)
 
 Another improvement in this area is the ability to add custom controls to your work item form. Developers can target this contribution and you will be able to add and configure them for your different work item types. 
 
-![custom controls](_img/9_21_02.png)
+![custom controls](media/9_21_02.png)
 
 ## Disable work item types
 
@@ -41,19 +40,19 @@ Customers can now import a Git repository from GitHub, Bitbucket, GitLab, or oth
 ### Import into a new repository
 From the repository selector drop-down, click **Import repository**. 
 
-![import new repo](_img/9_21_09.png)
+![import new repo](media/9_21_09.png)
 
 If the source repository is a publicly available repository, then simply provide the clone URL of the source repository and you are good to go.
 
 However, if the source repository is a private repository and can be accessed using basic authentication (username-password, personal access token, etc.), then check the “Requires authorization” check-box to provide the corresponding credentials.
 
-![import private repo](_img/9_21_10.png)
+![import private repo](media/9_21_10.png)
 
 ### Import into an existing empty repository
 
 On the **Files page**, click the **Import repository** button and provide the clone URL. You will need to provide credentials if the source repository is private and requires authentication. 
 
-![import existing repo](_img/9_21_11.png)
+![import existing repo](media/9_21_11.png)
 
 ## Markdown preview button
 
@@ -69,19 +68,19 @@ While creating a new Git repository, customers can now add and associate a .giti
 
 The dialog allows users to select one of the many available .gitignore templates. 
 
-![gitignore](_img/9_21_04.png)
+![gitignore](media/9_21_04.png)
 
 ## Verify bugs from work item
 
 You can now verify a bug by re-running the tests which identified the bug. You can invoke the **Verify** option from the bug work item form context menu to launch the relevant test case in the web runner. Perform your validation using the web runner and update the bug work item directly within the web runner.
 
-![verify bugs](_img/9_21_05.png)
+![verify bugs](media/9_21_05.png)
 
 ## Xcode task xcpretty formatting
 
 You can now format your xcodebuild output with [xcpretty](https://github.com/supermarin/xcpretty). You can also publish JUnit test results to Team Services with xcodebuild. Previously, [xctool](https://github.com/facebook/xctool) had to be used as the build tool to publish test results. Now, to enable xcpretty, check **Use xcpretty** and uncheck **Use xctool** in the **Advanced** section of the Xcode task.
 
-![xcpretty](_img/9_21_03.png)
+![xcpretty](media/9_21_03.png)
 
 ## Publish Jenkins test and code coverage results 
 
@@ -91,19 +90,19 @@ The **Jenkins Queue Job** build and release task can now retrieve test and code 
 
 When you enable the **Run SonarQube Analysis** option in the Maven or Gradle build tasks, you get a link on the SonarQube project. You can request a full analysis to see the quality gates details, and choose to break the build if they are not met.
 
-![maven and gradle](_img/9_21_06.png)
+![maven and gradle](media/9_21_06.png)
 
 ## FindBugs and CheckStyle in Maven build tasks
 
 You can now request FindBugs and CheckStyle standalone static analysis in the Maven build task (in addition to the PMD analysis). The results of the static analysis appear in the build summary, and resulting files are available from the Artifact tab of the build result.
 
-![FindBugs](_img/9_21_07.png)
+![FindBugs](media/9_21_07.png)
 
 ## Deployment status widget
 
 A build can be deployed and tested in different release environments across multiple release definitions. In such a scenario, the **Deployment status** widget shows you a consolidated status of the deployment and test pass rate across multiple environments for a recent set of builds from a build definition.
 
-![Deployment widget](_img/9_21_08.png)
+![Deployment widget](media/9_21_08.png)
 
 If you have ideas on things you’d like to see, head over to [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html) to add your idea or vote for an existing one.
 

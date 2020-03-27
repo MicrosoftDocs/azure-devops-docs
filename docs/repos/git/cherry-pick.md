@@ -3,9 +3,7 @@ title: Copy changes to a branch with cherry-pick
 titleSuffix: Azure Repos
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -39,7 +37,7 @@ In this tutorial you learn how to:
 3. Right-click the commit you want to cherry-pick and select **Cherry-pick**.    
 
     Visual Studio copies the changes made in that commit into a new one on your current branch.
-    ![Cherry pick from inside Visual Studio](_img/vscherrypick.gif)
+    ![Cherry pick from inside Visual Studio](media/vscherrypick.gif)
 
 Repeat this process for each commit you need to bring over to your current branch.
 

@@ -3,9 +3,7 @@ title: Merge folders and files
 titleSuffix: Azure Repos
 description: Merge folders and files
 ms.assetid: b23efc53-f715-4eef-9631-64455663cfcc
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -45,7 +43,7 @@ To perform these procedures, you must have the following permissions set:
 <tbody>
 <tr>
 <td><p>The release of Visual Studio Team Foundation Server 2010 began a distinction between branches and folders. For example, in the following illustration you can see how branches and folders are displayed with different icons.</p>
-<p><img src="_img/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
+<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>While you can still branch and merge among folders, the best practice for your team to follow is to branch and merge only among branches. For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
 </tbody>
@@ -72,7 +70,7 @@ You can use the **Tracking Changeset** window to view information such as, where
 <tbody>
 <tr>
 <td><p>This procedure can be performed only for changesets that affect a branch. For example, in the following illustration you can view how branches and folders are displayed with different icons.</p>
-<p><img src="_img/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
+<p><img src="media/merge-folders-files/IC268252.png" title="A branch and a folder" alt="A branch and a folder" /></p>
 <p>For more information, see <a href="branch-folders-files.md">Branch folders and files</a>.</p></td>
 </tr>
 </tbody>
@@ -106,7 +104,7 @@ Julie gets back to her desk and finds the latest source, but she does not see th
 
 Tracking Changeset Window: Merge to Parent Branch
 
-![Tracking Changeset window: merge to parent branch](_img/merge-folders-files/IC269735.png)
+![Tracking Changeset window: merge to parent branch](media/merge-folders-files/IC269735.png)
 
 From the **Tracking Changeset** window, Julie can see that Chris checked in the method with changeset 50, and merged it to the **Dev** branch with changeset 51. But Julie cannot get the new code until changeset 50 is merged into the **FeatureTeamB** branch. So she drags the **Dev** branch onto the **FeatureTeamB** branch to launch the **Source Control Merge Wizard**, which she then uses to complete the merge.
 

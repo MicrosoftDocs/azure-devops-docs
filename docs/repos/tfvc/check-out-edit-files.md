@@ -3,9 +3,7 @@ title: Check out and edit files
 titleSuffix: Azure Repos
 description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -53,7 +51,7 @@ You must be one of the **Contributors** for your project. See [Team Foundation S
 
 3. Choose **Check Out**.
 
-In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked-Out Status Icon](_img/check-out-edit-files/IC51402.gif) appears next to the items that you have checked out. In Team Explorer, a pending **edit** change to the file is displayed on the Pending Changes page. In Source Control Explorer, a pending **edit** change is visible to you and to members of your team.
+In Solution Explorer and in Source Control Explorer, a check mark ![TFSC Checked-Out Status Icon](media/check-out-edit-files/IC51402.gif) appears next to the items that you have checked out. In Team Explorer, a pending **edit** change to the file is displayed on the Pending Changes page. In Source Control Explorer, a pending **edit** change is visible to you and to members of your team.
 
 ## Work from the command prompt
 

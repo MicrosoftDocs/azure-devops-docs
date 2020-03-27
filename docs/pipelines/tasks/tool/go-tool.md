@@ -2,13 +2,10 @@
 title: Go Tool Installer task
 description: Finds or downloads a specific version of the Go tool into the tools cache and adds it to the PATH
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 334727F4-9495-4F9D-A391-FC621D671474
-ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -24,7 +21,7 @@ tools cache and add it to the PATH. Use the task to change the version of Go Lan
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/GoToolV0.md)]
+[!INCLUDE [temp](../includes/yaml/GoToolV0.md)]
 
 ::: moniker-end
 

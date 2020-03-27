@@ -2,11 +2,8 @@
 title: Package and sign Helm charts
 titleSuffix: Azure Pipelines & TFS
 description: Learn how to define a continuous integration (CI) build for your GitHub repository using Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 0B8D8335-A15A-4F8E-A731-767BC6C6A4B3
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 4/29/2019
@@ -15,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Package and sign Helm charts
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 In this step-by-step guide you'll learn how to package and sign Helm charts in a pipeline.
 
@@ -29,11 +26,11 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
    gpg --full-generate-key
    ```
    
-   ![Generate Key](_img/helm-provenance/generate-key.png)
+   ![Generate Key](media/helm-provenance/generate-key.png)
 
 3. You'll be prompted for the passphrase. Give the value and click ok.
 
-   ![Passphrase](_img/helm-provenance/passphrase.png)
+   ![Passphrase](media/helm-provenance/passphrase.png)
 
 4. After creating the key, you can see the list of keys which contains both private and public using the following command.
 
@@ -43,7 +40,7 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
      gpg --list-secret-keys
      ```
 
-     ![Private Keys](_img/helm-provenance/privatekeys.png)
+     ![Private Keys](media/helm-provenance/privatekeys.png)
 
      - To see the list of public keys
 
@@ -51,7 +48,7 @@ In this step-by-step guide you'll learn how to package and sign Helm charts in a
        gpg --list-keys
        ```
 
-       ![Public Keys](_img/helm-provenance/publickeys.png)
+       ![Public Keys](media/helm-provenance/publickeys.png)
 
 5. Store the private and public keys in 2 different files with the extension **gpg** as shown below.
 
@@ -76,10 +73,10 @@ In Azure DevOps, save the **privatekey.gpg** file in the library **secure files*
 ## Example
 
 ```YAML
-  queue:
+pool:
   name: Hosted Ubuntu 1604
 
-  variables:
+variables:
   # The below variable should be secure
   HelmKeyPassphrase: contoso@123
   keyName: contoso contoso@microsoft.com
@@ -87,37 +84,36 @@ In Azure DevOps, save the **privatekey.gpg** file in the library **secure files*
   azureResourceGroup: contoso
   kubernetesCluster: contoso
 
-  steps:
-  - task: DownloadSecureFile@1
-    displayName: Download Secure file
-    inputs:
-      secureFile: privatekey.gpg
-    name: privateKeyRing
+steps:
+- task: DownloadSecureFile@1
+  displayName: Download Secure file
+  inputs:
+    secureFile: privatekey.gpg
+  name: privateKeyRing
 
-  - task: HelmInstaller@0
-    displayName: Install Helm 2.12.0
-    inputs:
-      helmVersion: 2.12.0
+- task: HelmInstaller@0
+  displayName: Install Helm 2.12.0
+  inputs:
+    helmVersion: 2.12.0
 
-  - task: HelmDeploy@0
-    displayName: helm init
-    inputs:
-      azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-      azureResourceGroup: $(azureResourceGroup)
-      kubernetesCluster: $(kubernetesCluster)
-      command: init
-      arguments: --client-only
+- task: HelmDeploy@0
+  displayName: helm init
+  inputs:
+    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    azureResourceGroup: $(azureResourceGroup)
+    kubernetesCluster: $(kubernetesCluster)
+    command: init
+    arguments: --client-only
 
-  - task: HelmDeploy@0
-    displayName: helm package
-    inputs:
-      azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
-      azureResourceGroup: $(azureResourceGroup)
-      kubernetesCluster: $(kubernetesCluster)
-      command: package
-      chartPath: Application/charts/sampleapp
-      arguments: --sign --key "$(keyName)" --keyring $(privateKeyRing.secureFilePath)
-
-    env:
-      HelmKeyPassphrase: $(HelmKeyPassphrase)
+- task: HelmDeploy@0
+  displayName: helm package
+  inputs:
+    azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
+    azureResourceGroup: $(azureResourceGroup)
+    kubernetesCluster: $(kubernetesCluster)
+    command: package
+    chartPath: Application/charts/sampleapp
+    arguments: --sign --key "$(keyName)" --keyring $(privateKeyRing.secureFilePath)
+  env:
+    HelmKeyPassphrase: $(HelmKeyPassphrase)
 ```

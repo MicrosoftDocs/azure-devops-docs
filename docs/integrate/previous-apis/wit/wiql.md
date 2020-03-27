@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Query Language | REST API Reference for Team Foundation Server
 description: Work with the work item query language programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: C98285FE-3882-4F35-9E19-9A6E109EED66
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -679,7 +677,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/WorkItems?ids=300,299,298,17
 
 
 ### A one-hop query
-![Results of the one-hop query](./_img/wit-onehop.png)
+![Results of the one-hop query](./media/wit-onehop.png)
 
 ##### 1. Get results of a one-hop work item query.
 
@@ -832,7 +830,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/WorkItems?ids=297,299,300&fi
 
 
 ### A tree query
-![Results of the tree query](./_img/wit-tree.png)
+![Results of the tree query](./media/wit-tree.png)
 
 ##### 1. Get results of a tree work item query.
 

@@ -2,10 +2,8 @@
 title: Configure TFS-Project Server integration 
 titleSuffix: TFS 
 description: Configure integration between Team Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 809f7eb3-f336-4f7d-b7a8-2b67366f3915
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/12/2017
@@ -13,13 +11,13 @@ ms.date: 01/12/2017
 
 # Configure TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must first configure several points of integration between them.  
   
  As the following illustration shows, you integrate these products in six steps.  
   
- ![Provisioning Project Server&#45;Team Foundation Server](_img/pstfs_provisioning.png "PSTFS_Provisioning")  
+ ![Provisioning Project Server&#45;Team Foundation Server](media/pstfs_provisioning.png "PSTFS_Provisioning")  
 Configuring the Integration of Team Foundation Server and Project Server  
   
 > [!NOTE]
@@ -70,7 +68,7 @@ Configuring the Integration of Team Foundation Server and Project Server
   
  As the first step in configuring integration, you must register each instance of PWA that supports the project plans with the application-tier server that hosts the project collection that hosts the project. You should register all instances of PWA that are used by enterprise projects that must synchronize their data with TFS. As the following illustration shows, you can register multiple instances of PWA to the same server that is running TFS.  
   
- ![Register PWAs to Team Foundation Server](_img/pstfs_registerpwas.png "PSTFS_RegisterPWAs")  
+ ![Register PWAs to Team Foundation Server](media/pstfs_registerpwas.png "PSTFS_RegisterPWAs")  
   
 #### To register an instance of PWA  
   
@@ -157,7 +155,7 @@ Configuring the Integration of Team Foundation Server and Project Server
 ##  <a name="EnterpriseProject"></a> Associate an enterprise project with a project  
  As the third step in configuring integration, you must map each enterprise project to the project that contains data that you want to synchronize. As the following illustration shows, you can associate multiple enterprise projects with the same project.  
   
- ![Associate enterprise projects with a project](_img/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
+ ![Associate enterprise projects with a project](media/pstfs_associateeptotp.png "PSTFS_AssociateEPtoTP")  
   
 #### To associate an enterprise project plan with a project  
   

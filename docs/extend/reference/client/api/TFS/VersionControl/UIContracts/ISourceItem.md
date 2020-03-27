@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/UIContracts ISourceItem API | Extensions for Azure DevOps Services
 ms.assetid: 244d4831-fbb0-41d0-e5fd-623670965e38
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

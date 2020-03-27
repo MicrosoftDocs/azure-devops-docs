@@ -3,10 +3,8 @@ title: Upload reports to a team project
 titleSuffix: TFS
 description: Manually upload SQL Server reports to a team project hosted on an on-premises Team Foundation Server  
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,14 +13,14 @@ ms.date: 11/19/2018
 
 # Upload reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the second task in the four-task sequence to add reports to your team project. You can use the procedures in this article to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 
-[![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)
-[![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
-[![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
-[![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+[![Add a report server](media/step-1-add-a-report-server.png)](add-a-report-server.md)
+[![Upload reports](media/step-2-upload-reports.png)](upload-reports.md)
+[![Grant permissions](media/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
+[![Review team activities](media/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 > [!IMPORTANT]
 >**Feature availability**: You can only add a report server to an on-premises TFS. If you're using Azure DevOps, adding a report server isn't a supported option, instead, you can use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json).
@@ -35,7 +33,7 @@ After you've added a report server, you'll want to add reports to your team proj
 
 If the Reports page in Team Explorer appears empty, then you'll want to upload reports.  
 
-![Upload reports when Reports page is empty](_img/IC665028.png)  
+![Upload reports when Reports page is empty](media/IC665028.png)  
 
 If the Reports page doesn't appear at all, then you'll want to [add a report server](add-a-report-server.md).  
 
@@ -81,7 +79,7 @@ You use the **tfpt** command line tool that TFS Power Tools provides.
 
 2. From Team Explorer, download the latest process template that is compatible with the one used to create your team project.  
 
-	![Download process template](../../boards/work-items/guidance/_img/process-template-manager.png)  
+	![Download process template](../../boards/work-items/guidance/media/process-template-manager.png)  
 
 	To determine the type of process template that was used to create your team project, review the work item types that appear in the **New Work Item** menu for Team Explorer and then compare them with the work item types shown in [Process template correlation with an existing team project](../../boards/work-items/guidance/manage-process-templates.md#wit_correlation). If your work item types differ from those shown listed, then a custom process template might have been used.
 
@@ -112,13 +110,13 @@ On a 64-bit edition of Windows, replace **%programfiles%** with **%programfiles(
 	
      To overwrite reports that were previously uploaded, specify the **/force** option.
 
-5. Open the report site from the ![Report](_img/IC588226.png) **Reports** page in Team Explorer. You might need to ![Refresh query](../../boards/_img/icons/te-refresh-query-icon.png) refresh the page to see the newly uploaded reports.  
+5. Open the report site from the ![Report](media/IC588226.png) **Reports** page in Team Explorer. You might need to ![Refresh query](../../boards/media/icons/te-refresh-query-icon.png) refresh the page to see the newly uploaded reports.  
 	
-	![Open the team project report site](_img/te-go-to-reports-site.png)  
+	![Open the team project report site](media/te-go-to-reports-site.png)  
 	
 	And, here's a view of uploaded reports for a Scrum project in Report Manager.  
 
-	![Open a Scrum report in Report Manager](_img/IC665035.png)  
+	![Open a Scrum report in Report Manager](media/IC665035.png)  
 
 	Depending upon the amount of data that has been collected for your team project, it can take several minutes to several hours for the data warehouse and cube to build. Once they do, however, you can view progress for your team project since TFS was first deployed. 
 

@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Find code or work items quickly in Azure DevOps
 ms.assetid: 
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -18,7 +16,7 @@ ms.date: 02/08/2019
 
 # Search across your code base, work items, or wiki
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range=">= tfs-2018"  
 With the search box, you can quickly find a code file, work item, or wiki page. 
@@ -36,10 +34,10 @@ Code search requires installation of the [Code Search extension](https://marketp
 
 ::: moniker range=">= azure-devops-2019"
   
-To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
+To start your search, choose **Repos>Files** or other page under **Code**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
 
 > [!div class="mx-imgBorder"]
-> ![Code Search box](../../organizations/public/_img/search/code-search-vert.png) 
+> ![Code Search box](../../organizations/public/media/search/code-search-vert.png) 
 ::: moniker-end  
 
 
@@ -47,10 +45,10 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
 
 1. In the search box, check that the text displays _Search code_. If it doesn't, use the selector to select it.
 
-   ![Switching between searching for code and work items](../search/_img/code-search-get-started/title-bar-search-box-empty-outlined.png)
+   ![Switching between searching for code and work items](../search/media/code-search-get-started/title-bar-search-box-empty-outlined.png)
 
 2. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search.
 
 ::: moniker-end
 
@@ -61,14 +59,14 @@ To start your search, choose **Repos>Files** or other page under **Code**, enter
    instances of the search string highlighted. If you see a list of work items, ensure that **Code** is selected in the top left.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Code search results example](_img/search/code-search-example.png) 
+	> ![Code search results example](media/search/code-search-example.png) 
 
 1. Try assembling more complex search strings using the operators and functions listed in the handy 
    drop-down list. Select the filter function or code type you want to include in your search string from the
    list, and type the criteria value.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Code search bar](_img/search/code-search-filters.png)     
+	> ![Code search bar](media/search/code-search-filters.png)     
 
    * You can find all instances of "ToDo" comments in your code simply by selecting `comment:` and typing `todo`. 
 
@@ -93,14 +91,14 @@ To learn more, see [Search code](../search/code-search.md).
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/_img/_shared/start-search-icon.png) start search icon. 
+1. Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../search/media/shared/start-search-icon.png) start search icon. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Work Item Search box](_img/search/work-item-search-vert.png)    
+	> ![Work Item Search box](media/search/work-item-search-vert.png)    
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
@@ -110,7 +108,7 @@ To learn more, see [Search code](../search/code-search.md).
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -120,14 +118,14 @@ To learn more, see [Search code](../search/code-search.md).
 
 1. In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it.
 
-   ![The Work Item Search textbox in the title bar](../search/_img/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
+   ![The Work Item Search textbox in the title bar](../search/media/work-item-search-get-started/title-bar-search-box-empty-outlined.png)   
 
 1. Enter a search string in the text box, and press _Enter_ (or choose the 
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](../search/media/shared/start-search-icon.png) icon) to start your search. 
 
 1. Search results are displayed in a snippet view where the matches found are shown in bold.
 
-   ![Search results](../search/_img/work-item-search-get-started/results-matching.png)
+   ![Search results](../search/media/work-item-search-get-started/results-matching.png)
 
    This is a full text search that uses simple search strings for words or phrases.
    Work item search matches derived forms of your search terms; for example, a search for
@@ -137,7 +135,7 @@ To learn more, see [Search code](../search/code-search.md).
   
    Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../search/_img/_shared/start-search-icon.png) icon.
+   ![start search icon](../search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -151,7 +149,7 @@ To learn more, see [Search code](../search/code-search.md).
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from the title bar](_img/search/search-work-vert.png)    
+	> ![Search from the title bar](media/search/search-work-vert.png)    
 
    The quick filters you can use are:
 
@@ -162,7 +160,7 @@ To learn more, see [Search code](../search/code-search.md).
  
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](../search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](../search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
@@ -184,7 +182,7 @@ To learn more, see [Search code](../search/code-search.md).
    to search for all items assigned to that user.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Search from the title bar](_img/search/work-item-search-filters.png)    
+	> ![Search from the title bar](media/search/work-item-search-filters.png)    
 
    The quick filters you can use are:
 
@@ -195,7 +193,7 @@ To learn more, see [Search code](../search/code-search.md).
  
 1. Start typing the name of a field in your work items; for example, type `ta`.
 
-   ![Quick filters as you type](..//search/_img/work-item-search-get-started/dyna-dropdown.png)    
+   ![Quick filters as you type](..//search/media/work-item-search-get-started/dyna-dropdown.png)    
 
    The dropdown list shows work item field name suggestions 
    that match user input thereby helping the user to complete the search faster. For example, a search such as 
@@ -232,12 +230,12 @@ With wiki search, you can search within a project wiki or across all wikis creat
 Choose **Overview>Wiki** and type your keyword or phrase into the search box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option](../wiki/_img/search/search-wiki-vert.png)   
+> ![Wiki search option](../wiki/media/search/search-wiki-vert.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
+> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
 
 ::: moniker-end  
 
@@ -247,12 +245,12 @@ The search feature quickly returns wiki pages by title or page content. English 
 Open **Wiki** and type your keyword or phrase into the search box. 
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search option, previous navigation](../wiki/_img/search/search-wiki-horz.png)   
+> ![Wiki search option, previous navigation](../wiki/media/search/search-wiki-horz.png)   
 
 The search feature quickly returns wiki pages by title or page content. English language stemming support helps you find the most relevant wiki pages. For example, when you enter *request* in the search box, wiki search will return page results containing related words such as *requesting, requested, requests,* and so on.
 
 > [!div class="mx-imgBorder"]  
-> ![Wiki search results](../wiki/_img/search/wiki-search-example-vert.png)   
+> ![Wiki search results](../wiki/media/search/wiki-search-example-vert.png)   
 
 ::: moniker-end
 

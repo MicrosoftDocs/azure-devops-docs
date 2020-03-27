@@ -2,19 +2,16 @@
 title: Bugs by Assignment Excel Report  
 description: Shows the distribution of active Bugs, grouped by priority, to team members - Team Foundation Server  
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: c7851b4c-33a2-4536-85d3-ec73c8e2a8b6
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.date: 12/30/2016
 ---
 
 # Bugs by Assignment Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 The Bugs by Assignment report shows the distribution of active Bugs, grouped by priority, to team members. For information about how to access this chart, see [Excel reports](excel-reports.md).  
   
@@ -27,7 +24,7 @@ The Bugs by Assignment report shows the distribution of active Bugs, grouped by 
 
 You can use the Bugs by Assignment report to understand the distribution of Bugs to team members and determine whether to reassign some Bugs. This report is based on a PivotChart report that shows the last four weeks of data captured for Bugs. This data is stored in the data warehouse.  
   
-![Bugs by Assignment chart](_img/procguid_byassignment.png "ProcGuid_ByAssignment")  
+![Bugs by Assignment chart](media/procguid_byassignment.png "ProcGuid_ByAssignment")  
   
 You can review the Bugs by Assignment report to determine the allocation of bugs to each team member. Specifically, you can find answers to the following questions:  
   

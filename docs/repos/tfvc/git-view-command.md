@@ -3,9 +3,7 @@ title: Git view command
 titleSuffix: Azure Repos
 description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -22,13 +20,15 @@ Retrieves a file from a Git repository to a temporary location on your computer 
 
 **Requirements:** See [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf git view /collection:TeamProjectCollectionUrl
-                /teamproject:TeamProjectIdentifier
-                /repository:RepositoryIdentifier
-                (/blobId:blobId | /path:path [/commitId:commitId])
-                [/output:localfile]
-                [/console]
-                [/login:username,[password]]
+```
+tf git view /collection:TeamProjectCollectionUrl
+            /teamproject:TeamProjectIdentifier
+            /repository:RepositoryIdentifier
+            (/blobId:blobId | /path:path [/commitId:commitId])
+            [/output:localfile]
+            [/console]
+            [/login:username,[password]]
+```
 
 ## Parameters
 

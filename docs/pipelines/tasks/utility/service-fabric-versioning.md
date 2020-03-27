@@ -2,10 +2,7 @@
 title: Update Service Fabric Manifests task
 description: Update the Service Fabric App versions in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 3034CEF8-215C-408E-AD0F-C41D3D9C2F72
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Update Service Fabric Manifests task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="= tfs-2017"
 
@@ -38,7 +35,7 @@ None
 
 ::: moniker range="> tfs-2018"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricUpdateManifestsV2.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricUpdateManifestsV2.md)]
 ::: moniker-end
 
 ## Arguments
@@ -116,7 +113,7 @@ None
 </td>
 </tr>
 
-[!INCLUDE [control-options-arguments](../_shared/control-options-arguments.md)]
+[!INCLUDE [control-options-arguments](../includes/control-options-arguments.md)]
 </table>
 
 Also see: [Service Fabric Application Deployment task](../deploy/service-fabric-deploy.md)
@@ -164,10 +161,10 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

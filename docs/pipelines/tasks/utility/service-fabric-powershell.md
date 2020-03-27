@@ -2,10 +2,7 @@
 title: Service Fabric PowerShell Utility task
 description: Service Fabric PowerShell task for use in build or release pipelines in Azure Pipelines and Team Foundation Server 
 ms.assetid: EE9455CD-5E1A-42C8-AC6D-8CF44878F090
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -33,7 +30,7 @@ deploy to a Service Fabric cluster.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricPowerShellV1.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricPowerShellV1.md)]
 
 ::: moniker-end
 
@@ -57,6 +54,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

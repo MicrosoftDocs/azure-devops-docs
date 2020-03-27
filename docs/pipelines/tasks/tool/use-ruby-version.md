@@ -1,8 +1,6 @@
 ---
 title: Use Ruby Version task
 description: Select a version of Ruby to run on an agent and optionally add it to PATH
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 0b9f5626-08ec-45a3-8a39-aff5b3394398
 ms.manager: madhurig
 ms.custom: seodec18
@@ -33,7 +31,7 @@ This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Avail
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/UseRubyVersionV0.md)]
+[!INCLUDE [temp](../includes/yaml/UseRubyVersionV0.md)]
 
 ::: moniker-end
 
@@ -57,7 +55,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 For an explanation of tool installers and examples, see [Tool installers](../../process/tasks.md#tool-installers).
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How can I configure a self-hosted agent to use this task?
 

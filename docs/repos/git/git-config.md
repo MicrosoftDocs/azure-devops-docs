@@ -3,9 +3,7 @@ title: gitconfig files
 titleSuffix: Azure Repos
 description: How gitconfig files work and are used in Visual Studio
 ms.assetid:
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -32,15 +30,15 @@ This article shows you how to configure and view Git settings and preferences in
 
 1. To configure Git settings in Visual Studio, choose **Settings** from Team Explorer.
 
-    ![Go to Team Explorer Settings](_img/git-config/menu-settings.png)
+    ![Go to Team Explorer Settings](media/git-config/menu-settings.png)
 
 2. Choose **Global Settings** or **Repository Settings** to view and configure global-level or repository-level settings.
 
-    ![Git settings](_img/git-config/git-global-local-settings.png)
+    ![Git settings](media/git-config/git-global-local-settings.png)
 
 3. Visual Studio allows you to configure several common Git settings, as described in the following sections of this article. After configuring your desired settings, select **Update** to save the updated settings.
 
-    ![Update settings](_img/git-config/update-git-settings.png)
+    ![Update settings](media/git-config/update-git-settings.png)
 
 
 ## Git settings
@@ -67,11 +65,11 @@ The name and email that you provide will be used as the committer information fo
 
 2. Provide your user name and email, then choose **Update** to save. 
 
-    ![Global settings username and email](_img/git-config/global-settings-username-email.png)
+    ![Global settings username and email](media/git-config/global-settings-username-email.png)
 
     Note that for **Repository Settings**, you'll first need to check **Override global user name and email settings**.
 
-    ![Repository settings username and email](_img/git-config/repository-settings-username-email.png)
+    ![Repository settings username and email](media/git-config/repository-settings-username-email.png)
 
 #### [Command Line](#tab/command-line/)
 To set your user name, open a command prompt, navigate to the repository, and run:
@@ -103,7 +101,7 @@ We recommend setting this option to **True** at the global level. Valid settings
 Requires Visual Studio 2017 Update 5 and later.
 1. In Team Explorer, go to **Settings**. Go to **Global Settings** and set **Prune remote branches during fetch** to **True** (recommended). Select **Update** to save.
 
-    ![Go to Team Explorer Settings](_img/git-config/fetch-prune.png)
+    ![Go to Team Explorer Settings](media/git-config/fetch-prune.png)
 
 #### [Command Line](#tab/command-line/)
 To prune branches on every `fetch`, open a command prompt, and run:
@@ -130,7 +128,7 @@ Requires Visual Studio 2017 Update 5 and later.
 
 2. Set **Rebase local branch when pulling** to the desired setting, and select **Update** to save.
 
-    ![Go to Team Explorer Settings](_img/git-config/pull-rebase.png)
+    ![Go to Team Explorer Settings](media/git-config/pull-rebase.png)
 
 Note that it is not possible to configure `pull.rebase` to **Interactive** in Visual Studio. Visual Studio does not have interactive rebase support.
 To configure `pull.rebase` to use interactive mode, use the command line.
@@ -159,7 +157,7 @@ Requires Visual Studio 2017 Update 7 and later.
 
 2. Set **Cryptographic network provider** to the desired value, and select **Update** to save.
 
-![Cryptographic network provider](_img/git-config/cryptographic-network-provider.png)
+![Cryptographic network provider](media/git-config/cryptographic-network-provider.png)
 
 #### [Command Line](#tab/command-line/)
 To configure http.sslBackend, open a command prompt, and run:
@@ -172,14 +170,14 @@ git config --global http.sslBackend [openssl|schannel]
 
 The **Ignore & attributes files** section is available at repository scope and allows you to view and edit the [gitignore](https://git-scm.com/docs/gitignore) and [gitattributes](https://git-scm.com/docs/gitattributes) files for your repository.
 
-![Ignore & attributes files](_img/git-config/ignore-and-attributes-files.png)
+![Ignore & attributes files](media/git-config/ignore-and-attributes-files.png)
 
 
 
 ### Diff & merge Tools
 Git will show diffs and merge conflicts in your preferred tools. The settings in this section correspond to the `git config` [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) and [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) settings. You can configure Git to use Visual Studio as your merge or diff tool in **Global Settings** and **Repository Settings** by selecting **Use Visual Studio**. To configure other diff and merge tools, use `git config` with the [diff.tool](https://git-scm.com/docs/git-config#git-config-difftool) or [merge.tool](https://git-scm.com/docs/git-config#git-config-mergetool) switch.
 
-![Go to Team Explorer Settings](_img/git-config/diff-merge-tools.png)
+![Go to Team Explorer Settings](media/git-config/diff-merge-tools.png)
 
 
 
@@ -188,13 +186,13 @@ Git will show diffs and merge conflicts in your preferred tools. The settings in
 
 The **Remotes** section allows you to configure the remotes for this repository. This setting corresponds to the [git remote](https://git-scm.com/docs/git-remote) command and is available at the repository scope.
 
-![Remotes](_img/git-config/remotes.png)
+![Remotes](media/git-config/remotes.png)
 
 ### Other
 
 The **Other** section allows you to view the Git configuration settings for this repository, with the exception of settings that are displayed and managed in the Visual Studio Git settings pane.
 
-![Other](_img/git-config/other.png)
+![Other](media/git-config/other.png)
 
 To view all of your Git configuration settings, you can open and view the configuration files themselves, or you can run `git config --list` to display the settings.
 
@@ -214,13 +212,13 @@ The following settings manage Git-related preferences in Visual Studio, and are 
 
 **Default repository location** configures the default folder in which repositories are cloned.
 
-![Default repository location](_img/git-config/default-repository-location.png)
+![Default repository location](media/git-config/default-repository-location.png)
 
 ### Enable download of author images from 3rd party source
 
 Enable download of author images from 3rd party source is a Visual Studio specific setting at global scope. When checked, author images are downloaded from the [Gravatar image service](https://en.gravatar.com/), if available, and displayed in the commit and history views.
 
-![Enable download of author images from 3rd party source](_img/git-config/enable-download-of-author-images-from-3rd-party-source.png)
+![Enable download of author images from 3rd party source](media/git-config/enable-download-of-author-images-from-3rd-party-source.png)
 
 >[!IMPORTANT]
 >In order to provide author images in the Commit and History views, the tool creates an MD5 hash for the author email addresses stored in the active repository. This hash is then sent to Gravatar to find a matching hash value for users that have previously signed up for the service. If a match is found, the user image will be retrieved from the service and displayed in Visual Studio. Users that have not configured the service will return a randomly generated image. Note, email addresses are not recorded by Microsoft, nor are they ever shared with Gravatar or any other third party.
@@ -229,7 +227,7 @@ Enable download of author images from 3rd party source is a Visual Studio specif
 
 When **Commit changes after merge by default** is enabled, Git automatically creates a new commit when a branch is merged with the current branch.
 
-![Commit changes after merge by default](_img/git-config/commit-changes-after-merge-by-default.png)
+![Commit changes after merge by default](media/git-config/commit-changes-after-merge-by-default.png)
 
 - When checked, `git merge` commands issued by Visual Studio are run with the `--commit` option.
 - When unchecked, `git merge` commands issued by Visual Studio are run with the `--no-commit --no-ff` options.
@@ -242,7 +240,7 @@ Requires Visual Studio 2017 and later.
 
 When enabled, this setting allows you to `push --force` from within Visual Studio. By default **Enable push --force** is disabled.
 
-![Enable push --force](_img/git-config/enable-push-force.png)
+![Enable push --force](media/git-config/enable-push-force.png)
 
 >[!WARNING]
 >Use `push --force` with caution as it can overwrite changes that have been pushed to the branch since your last pull. For more information, see [push --force](https://git-scm.com/docs/git-push#git-push---force).

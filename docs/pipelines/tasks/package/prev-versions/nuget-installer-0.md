@@ -2,12 +2,8 @@
 title: NuGet Installer task Version 0.*
 ms.custom: seodec18
 description: Learn all about how you can use NuGet packages when building code in Azure Pipelines and Team Foundation Server
-ms.prod: devops
 ms.technology: vs-devops-package
 ms.assetid: 43289B55-AB44-415C-BD44-DC6C8BC0479E
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/10/2016
 ---
 
@@ -56,9 +52,9 @@ Additional arguments passed to <a href="https://docs.nuget.org/consume/command-l
 </tr>
 <tr><th style="text-align: center" colspan="2">Advanced</th></tr>
 
-[!INCLUDE [temp](../../_shared/nuget-step-arguments.md)]
+[!INCLUDE [temp](../../includes/nuget-step-arguments.md)]
 
-[!INCLUDE [temp](../../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../../includes/control-options-arguments.md)]
 
 </table>
 
@@ -83,7 +79,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 <tr>
 <td>
 
-<img src="../_img/nuget-installer.png" alt="Package: NuGet Installer"/>
+<img src="../media/nuget-installer.png" alt="Package: NuGet Installer"/>
 
 <br/><strong>Package: NuGet Installer</strong></td>
 <td>
@@ -97,7 +93,7 @@ You're building a Visual Studio solution that depends on a NuGet feed.
 <tr>
 <td>
 
-<img src="../../build/_img/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="../../build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/></strong>Build: Visual Studio Build<strong></td>
 <td>

@@ -3,8 +3,6 @@ title: Azure Machine Learning training and deployment
 titleSuffix: Azure Pipelines
 description: Train machine learning models and deploy to web services from Azure Pipelines. Learn how to create a pipeline that uses the Azure Machine Learning service to train and deploy models.
 services: machine-learning
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
@@ -16,7 +14,7 @@ monikerRange: azure-devops
 
 # Train and deploy machine learning models
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 You can use a pipeline to automatically train and deploy machine learning models with the Azure Machine Learning service.
 Here you'll learn how to build a machine learning model, and then deploy the model as a web service. 
@@ -30,7 +28,7 @@ Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-l
 
 ## Get the code
 
-[!INCLUDE [include](../ecosystems/_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../ecosystems/includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-azureml
@@ -40,9 +38,9 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](../ecosystems/_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../ecosystems/_shared/create-project.md)]
+[!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 ## Create the pipeline
 
@@ -50,7 +48,7 @@ You can use 1 of the following approach to create a new pipeline.
 
 #### [YAML](#tab/yaml/)
 
-[!INCLUDE [include](../ecosystems/_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
@@ -73,7 +71,7 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 1. Select **Use the classic editor** to create a pipeline without YAML.
 
-   ![classic-editor](../_shared/_img/classic-editor.png)
+   ![classic-editor](../media/classic-editor.png)
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 

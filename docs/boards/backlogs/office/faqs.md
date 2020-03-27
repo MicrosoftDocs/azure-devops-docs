@@ -2,9 +2,7 @@
 title: FAQs for working in Excel
 titleSuffix: Azure Boards
 description: Find answers to frequently asked questions about working in Microsoft Excel to track work in Azure Boards
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,11 +13,11 @@ ms.date: 11/22/2019
 
 # FAQs: Work in Excel connected to Azure Boards 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
-[!INCLUDE [temp](../../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../../includes/version-selector-minimize.md)]
 
 ## Connect and versioning support
 
@@ -33,7 +31,7 @@ If you are having connection issues, make sure you meet the prerequisites as lis
 
 **A:**  You must get the Azure DevOps Office Integration add-in available from the [Downloads page, Other Tools and Frameworks](https://visualstudio.microsoft.com/downloads/#other-family). This add-in typically installs when you install any version of Visual Studio or Team Explorer. Also, you need to use Microsoft Excel 2010 or later version, including Microsoft Office Excel 365. 
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
@@ -46,7 +44,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 **A:** Yes. To open Excel from the web portal, install the [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel) Marketplace extension. Otherwise, you can open [Excel](bulk-add-modify-work-items-excel.md) and then open a query that you've created in the web portal or from Team Explorer. 
 
 > [!div class="mx-imgBorder"]  
-> ![Azure DevOps Open in Excel extension](_img/excel/open-in-excel.png)
+> ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
 ::: moniker range="azure-devops" 
 
@@ -123,7 +121,7 @@ To bulk edit links of other types, you can use the following clients:
 **A:** No. You can't use Excel to export and import test case steps or other test artifacts. Instead, use the [grid view to bulk edit test cases supported via the web portal](../../../test/reference-qa.md#q-is-there-a-way-to-quickly-add-multiple-test-cases-at-the-same-time).  
 
 > [!div class="mx-imgBorder"]  
-> ![Test grid view](/azure/devops/test/_img/create-test-cases/newtestcasesusinggrid.png)
+> ![Test grid view](/azure/devops/test/media/create-test-cases/newtestcasesusinggrid.png)
 
 ## Publish and refresh 
 
@@ -135,7 +133,7 @@ If you start your worksheet from an existing query, you'll see all the column fi
 
 
 > [!div class="mx-imgBorder"]  
-> ![Choose columns dialog](_img/excel/choose-columns.png)
+> ![Choose columns dialog](media/excel/choose-columns.png)
 
 
 
@@ -176,7 +174,7 @@ To bulk add or modify work items in a different project, open a new Excel workbo
 
 **A:** Yes. You can use many Excel features, such as cut, paste, automatic fill, format, sort (flat list only), filter, and add formulas.  You can cut and paste rows to resequence items within a list and change link relationships among work items.
 
-To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](_img/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
+To drag a work item, select the work item or contiguous set of work items that you want to move, open the context menu and choose **Select**, **Table Row**, point to the border of the selection, and&mdash;when the pointer becomes a move pointer ![Move Pointer](media/bulk-modify-excel-pointer-icon.png)&mdash;drag the row to another location.
 
 > [!TIP]  
 > When you refresh the work item list, not all formats may be retained. For example, date formats are set by the server data store. Changes you make to a date format field are overwritten with the date format used by the server.  

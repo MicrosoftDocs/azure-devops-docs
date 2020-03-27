@@ -2,10 +2,8 @@
 title: Verify synch process for TFS-Project Server integration
 titleSuffix: TFS 
 description: Verify the synchronization process for the integration of Team Foundation Server & Project Server  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 767af0db-6c5d-4c1e-b2a3-8b4ffbd8ff6d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -14,7 +12,7 @@ ms.date: 01/12/2017
 
 
 # Verify the synchronization process for TFS-Project Server integration
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> If you suspect that the data in Visual Studio Team Foundation Server and Microsoft Project Server is not synchronizing as you expect, you can review the following checklist to verify or troubleshoot operations.  
   

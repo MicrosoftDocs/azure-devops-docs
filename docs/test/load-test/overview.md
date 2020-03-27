@@ -2,10 +2,8 @@
 title: Load test overview
 description: Changes to functionality in Visual Studio and cloud load testing in Azure DevOps
 ms.assetid: EE700B72-6DE1-4561-BE43-50AB0842FD1F
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019
@@ -14,11 +12,11 @@ monikerRange: '> tfs-2018'
 
 # Changes to load test functionality in Visual Studio and cloud load testing in Azure DevOps
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
 Web performance and load test functionality in Visual Studio is deprecated.
 Visual Studio 2019 will be the last version of Visual Studio containing web performance and load test features
-[(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#test-tools).
+[(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
 Cloud load testing (CLT) functionality in Azure DevOps is deprecated.
 The changes to cloud load testing functionality in Azure DevOps include all entry points for the load testing service:

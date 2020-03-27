@@ -2,10 +2,8 @@
 title: Add a report server | Team Foundation Server
 description: Step 1 of 4 steps to add or refresh reports added to a team project hosted on an on-premises TFS 
 ms.assetid: 1BB64B5F-708B-4E6E-9E88-4DCAEE58A231
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -14,14 +12,14 @@ ms.date: 11/19/2018
 
 # Add a report server
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the first task in the four-task sequence to add reports to a team project. If you have already installed SQL Reporting Services and Analysis Server, then go to step 2 to upload reports.
 
-[![Add a report server](_img/step-1-add-a-report-server.png)](add-a-report-server.md)
-[![Upload reports](_img/step-2-upload-reports.png)](upload-reports.md)
-[![Grant permissions](_img/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
-[![Review team activities](_img/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
+[![Add a report server](media/step-1-add-a-report-server.png)](add-a-report-server.md)
+[![Upload reports](media/step-2-upload-reports.png)](upload-reports.md)
+[![Grant permissions](media/step-3-grant-permissions.png)](grant-permissions-to-reports.md) 
+[![Review team activities](media/step-4-review-team-activities.png)](review-team-activities-for-useful-reports.md)
 
 
 > [!IMPORTANT]
@@ -51,7 +49,7 @@ On-premises installations of TFS can include reports to help you manage your sof
 
 **A:** Look in the administration console for Team Foundation Server. If you see a reporting node and it shows that reporting is configured and enabled, it's already there.  
 
-![If this node isn't present, you don't have reports](_img/tfs-admin-console-reporting.png)  
+![If this node isn't present, you don't have reports](media/tfs-admin-console-reporting.png)  
 
 Jump to the bottom of this article to confirm that reports are available for the team project collection, and then move on to [Upload reports to a team project](upload-reports.md).
 
@@ -74,7 +72,7 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 1.	Open the SQL Server Installation Center to add features to an existing installation.  
 
-	![Add, remove, and manage SQL Server features](_img/sql-install-center.png)
+	![Add, remove, and manage SQL Server features](media/sql-install-center.png)
 
 	You might have to restart your computer during this process, particularly if you've just finished upgrading from SQL Server Express.  
 
@@ -83,18 +81,18 @@ After you confirm that you have an edition of SQL Server that supports reporting
 	  > [!TIP]
     > If you upgraded from SQL Server Express, you'll have a named instance called SQLEXPRESS.  
 
-	![Add features to an existing instance](_img/installation-type.png)  
+	![Add features to an existing instance](media/installation-type.png)  
 
 3.	In **Feature Selection**, add these features:
 	*	Analysis Services
 	*	Reporting Services - Native
 	*	Management Tools - Complete (not pictured)
 
-	![Add features to your instance](_img/feature-selection.png)
+	![Add features to your instance](media/feature-selection.png)
 
 4.	Accept the defaults for service accounts in **Server Configuration**, unless your deployment has specific service account needs. Make sure all services are set to start automatically.  
 
-	![Make sure services are set to automatic](_img/service-accounts.png)  
+	![Make sure services are set to automatic](media/service-accounts.png)  
 
 5.	Add your user account in **Analysis Services Configuration**.  
 
@@ -102,7 +100,7 @@ After you confirm that you have an edition of SQL Server that supports reporting
 
 	If you're adding features after upgrading from SQL Server Express, Install Only might be the only option available.  
 
-	![Install and configure if option is available](_img/reporting-services-config.png)  
+	![Install and configure if option is available](media/reporting-services-config.png)  
 
 7. Finish the wizard, including any server restarts that might be required.
 
@@ -112,24 +110,24 @@ If you had to choose **Install Only** when you added reporting, you'll need to o
 
 1.	Open Reporting Services Configuration Manager and connect to your report server.  
 
-	![Make sure you include the instance name, if any](_img/open-reporting-services-configuration-manager.png)  
+	![Make sure you include the instance name, if any](media/open-reporting-services-configuration-manager.png)  
 
 2.	Once you've connected, make sure the service is started, then go to the **Web Service URL** page and apply all the defaults.  
 
 3.	Now you'll need to create a database for reporting. On the **Report Server Database** page, the **Change Database** option will open the Report Server Database Configuration Wizard assist you in creating that database.  
 
- 	![TFS needs this database for reporting](_img/change-database.png)  
+ 	![TFS needs this database for reporting](media/change-database.png)  
 
 4.	When you specify the database server connection, include the instance name as well as the server name, separated by a slash (\).  
 
-	![Include the instance name, if any](_img/report-database-server.png)  
+	![Include the instance name, if any](media/report-database-server.png)  
 	If you aren't using a named instance, you can just provide the server name.  
 
 5.	Accept the default values on the rest of the pages of the wizard and wait for it to finish. This can take a few minutes.  
 
 6.	Accept all the defaults on the **Report Manager URL** page.  
 
-	![The fields are prepopulated; choose apply](_img/report-manager-url.png)  
+	![The fields are prepopulated; choose apply](media/report-manager-url.png)  
 
 You've now fully configured reporting on the SQL Server instance that supports TFS. It's time to add the reporting features to TFS!  
 
@@ -143,18 +141,18 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 1.	Open the administration console for TFS and go to the **Reporting** node to start the configuration process.   
 
-	![Edit the information to configure reporting](_img/tfs-admin-reporting.png)  
+	![Edit the information to configure reporting](media/tfs-admin-reporting.png)  
 
 2.	Select the **Use Reporting** check box. On the **Warehouse** tab, provide the name of the report server and instance for the warehouse database. Use the default name for the database (TFS_Warehouse), and test the connection.  
 
-	![Use the default name for the database](_img/reporting-warehouse.png)  
+	![Use the default name for the database](media/reporting-warehouse.png)  
 
     > [!TIP]
     > Because you're configuring reporting for the first time, the databases don't exist yet. They will be created when you finish the configuration process.
 
 3. Provide the same server and instance information for **Analysis Services**, but use the default name for the analysis database (TFS_Analysis). Provide an account name and password for a data sources account, a special account you've created just for this purpose as described in [Service accounts and dependencies in TFS](/azure/devops/server/admin/service-accounts-dependencies). 
 
-	![You'll need to add the reader account information](_img/analysis-services.png)  
+	![You'll need to add the reader account information](media/analysis-services.png)  
 
     > [!TIP]
     > Test the connection before continuing.  
@@ -163,21 +161,21 @@ You'll need to add reporting in two places: to TFS itself, and then to your team
 
 	Use **Populate URLs** to automatically populate the next two boxes. Add the same data sources account information you provided on the previous tab.  
 
-	![Provide the server, instance, and account info](_img/reports-server.png)  
+	![Provide the server, instance, and account info](media/reports-server.png)  
 	Once you finish, databases will be created, and the warehouse will start building.  
 
-	![Status information for configured services](_img/config-report-status.png)  
+	![Status information for configured services](media/config-report-status.png)  
 
 5.	Now add the report server to the team project collection. Edit the information in **Reports Folder**.  
 
-	![Edit the folder location to start configuring](_img/team-project-collections.png)  
+	![Edit the folder location to start configuring](media/team-project-collections.png)  
 
     > [!TIP]
     > If you don't see the **Reports Folder** tab, you might need to refresh or restart the administration console.  
  
 6.	Unless you have reasons otherwise, use the example provided, and make sure you include the collection name.  
 
-	![Include the collection name in the path](_img/default-folder-location.png)
+	![Include the collection name in the path](media/default-folder-location.png)
 
 Now that you've added reporting to the server and to the team project collection, you're ready to start adding reports to your projects.
 

@@ -3,9 +3,7 @@ title: Share your code in TFVC using Xcode
 titleSuffix: Azure Repos
 description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart
@@ -85,8 +83,8 @@ Share your Xcode projects using a TFVC repository by using the Git-tf command li
 
     Use git tf help to learn about the Git-tf commands.
 
-    ![git tf help](./_img/share-your-code-in-tfvc-xcode/git-tf-help.png)
-    ![git tf help checkin](./_img/share-your-code-in-tfvc-xcode/git-tf-help-checkin.png)
+    ![git tf help](./media/share-your-code-in-tfvc-xcode/git-tf-help.png)
+    ![git tf help checkin](./media/share-your-code-in-tfvc-xcode/git-tf-help-checkin.png)
 
 
 

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Stats | REST API Reference for Team Foundation Server
 description: Work with Git branch statistics programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: E735BC54-D5AE-448F-8447-14CEB3261628
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -24,7 +22,7 @@ Branch statistics indicate how far behind and ahead a branch is from the default
 Branch A is "ahead" of branch B if branch A contains commits not in branch B's history.
 In the picture below, `feature1` is 2 commits ahead of and 3 commits behind `master`.
 
-![Two branches illustrating ahead/behind](./_img/ahead-behind.png)
+![Two branches illustrating ahead/behind](./media/ahead-behind.png)
 
 There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/BranchStatsSample.cs) available for this endpoint.
 

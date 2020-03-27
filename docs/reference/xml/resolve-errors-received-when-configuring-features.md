@@ -2,10 +2,8 @@
 title: Resolve errors received configuring TFS features
 titleSuffix: TFS 
 description: Occurs when definitions in the project conflict with definitions in the process templates uploaded to your project collection.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/19/2017
@@ -104,7 +102,7 @@ You may be able to resolve errors and warnings that the [Configure Features](../
 > [!NOTE]  
 > The Configure Features wizard cannot add the **Storyboard** links control tab if the `TabGroup` element is missing from the work item `FORM` section. The following procedure adds just the **Storyboard** tab. If you want to add the standard set of tabs for your backlog WIT, see the type definition in the latest version of the process template for your project. See [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)] 
   
 1. Export the type definition file for the backlog item by substituting your data for the arguments shown:  
   

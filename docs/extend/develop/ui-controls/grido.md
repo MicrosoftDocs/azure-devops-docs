@@ -2,10 +2,8 @@
 title: Use the Grid Control | Extensions for Azure DevOps Services
 description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for Azure DevOps Services.
 ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ This page shows different samples about the grid control.
 
 **Go to [API Reference](../../reference/client/controls/grid.md) for more details.**
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 

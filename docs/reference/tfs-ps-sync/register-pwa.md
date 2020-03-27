@@ -2,10 +2,8 @@
 title: Register an instance of PWA  to TFS 
 titleSuffix: TFS 
 description: Register the instance of Project Web Access or Project Web App (PWA) to support Team Foundation Server-Project Server integration 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4093f721-e8ed-439b-9882-00fbb2ea430f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -13,7 +11,7 @@ ms.date: 01/12/2017
 ---
 
 # Register an instance of PWA  to TFS
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Before you can synchronize data between Visual Studio Team Foundation Server 2013 and Microsoft Project Server, you must configure several points of integration between them. First, you must register the instance of Project Web Access or Project Web App (PWA) that supports an enterprise project plan with the application-tier server that hosts the project collection that contains a project. You can manage the registration of these instances of PWA by using the following options of the **TfsAdmin ProjectServer** command-line tool:  
   

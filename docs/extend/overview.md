@@ -1,11 +1,9 @@
 ﻿---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Developing extensions for Azure DevOps Services and TFS
 description: Overview of creating extensions for Azure DevOps Services
 ms.assetid: bd7bd829-e80e-4234-849f-d4b273605a22
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -28,7 +26,7 @@ where they can be kept privately for you and your team or shared with the millio
 ## What makes up an extension?
 
 <div align="center" style="padding-top:15px">
-<img alt="Components of an extension" src="./_img/extension-components.png" style="padding-bottom:20px">
+<img alt="Components of an extension" src="./media/extension-components.png" style="padding-bottom:20px">
 </div>
 
 - A [JSON manifest file](./develop/manifest.md) contains basic info about the extension.
@@ -51,7 +49,7 @@ There are dozens of places where you can add to the Azure DevOps Services user i
 ## Build an extension for your delivery pipeline
 You can develop an Azure DevOps Services extension for your continuous delivery pipeline as described in the following video.
 
-<a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="_img/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
+<a href="https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3" target="_blank"><img src="media/develop-extension-video.png" alt="Develop Extensions" width="200" /></a>
 
 
 ## Extension building checklist

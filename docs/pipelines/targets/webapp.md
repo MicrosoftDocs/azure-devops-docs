@@ -2,23 +2,20 @@
 title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 4/4/2019
+ms.date: 02/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy an Azure Web App
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your web app to an Azure App Service web app after every successful build.
 
@@ -286,6 +283,8 @@ jobs:
   steps:
   # publish an artifact called drop
   - task: PublishBuildArtifacts@1
+    inputs:
+      artifactName: drop
 
   # deploy to Azure Web App staging
   - task: AzureWebApp@1
@@ -434,4 +433,4 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
-[!INCLUDE [include](_shared/webapp/deploy-options.md)]
+[!INCLUDE [include](includes/webapp/deploy-options.md)]

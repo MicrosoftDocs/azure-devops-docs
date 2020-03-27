@@ -1,16 +1,11 @@
 ---
-title: Publish packages to PyPI
+title: Publish packages to Azure Artifacts
 ms.custom: seodec18
-description: Publish Python packages to PyPI or Azure Artifacts feeds via builds with Azure Pipelines
+description: Publish Python packages to Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
 ms.date: 10/31/2018
 monikerRange: azure-devops
-author: chasewilson
 ---
 
 # Publish Python packages in Azure Pipelines
@@ -43,7 +38,7 @@ First, you'll need to run `pip install twine` to ensure the build agent has `twi
 Check out the [script YAML task reference](../yaml-schema.md#script) for the schema for this command.
 
 #### [Classic](#tab/classic/)
-![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
+![icon](../tasks/utility/media/powershell.png) **Utility: Powershell**
 
 * Type
 
@@ -77,7 +72,7 @@ To authenticate with `twine`, add the following snippet to your _azure-pipelines
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/package/_img/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
+![icon](../tasks/package/media/python-twine-authenticate.png) **Package: Python Twine Upload Authenticate**
 
 * My feeds 
 
@@ -103,7 +98,7 @@ Check out the [script YAML task reference](../yaml-schema.md#script) for the sch
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/powershell.png) **Utility: Powershell**
+![icon](../tasks/utility/media/powershell.png) **Utility: Powershell**
 
 * Type:
 

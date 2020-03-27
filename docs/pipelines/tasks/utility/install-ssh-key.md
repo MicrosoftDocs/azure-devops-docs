@@ -2,10 +2,7 @@
 title: Install SSH Key task
 description: Install an SSH key prior to a build or release
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 5c9af2eb-5fc5-42dc-9b91-dc234a8c4400
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -23,7 +20,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/InstallSSHKeyV0.md)]
+[!INCLUDE [temp](../includes/yaml/InstallSSHKeyV0.md)]
 
 ::: moniker-end
 
@@ -35,7 +32,7 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 <tr><td>SSH Passphrase</td><td>(Optional) The passphrase for the SSH key, if any.</td></tr>
 <tr><td>SSH Key (Secure File)</td><td>(Required) Select the SSH key that was uploaded to <code>Secure Files</code> to install on the agent.</td></tr>
 
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
+[!INCLUDE [temp](../includes/control-options-arguments.md)]
 
 </table>
 

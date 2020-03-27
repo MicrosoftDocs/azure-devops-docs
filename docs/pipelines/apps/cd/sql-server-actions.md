@@ -2,10 +2,7 @@
 title: Execute SQL server actions
 description: Use the SQL DACPAC task to perform SQL server actions in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 3736CADE-5710-420C-B192-C3A03BFD9B0B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Perform SQL server actions in Azure Pipelines or TFS
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 Azure Pipelines and TFS include a SQL task named [SQL Azure Dacpac Deployment](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 that helps you publish to SQL server.
@@ -223,4 +220,4 @@ sqlpackage.exe /Action:Script /?
 * [Deploy your database to Azure SQL Database](../../targets/azure-sqldb.md)
 * [SQL Azure Dacpac Deployment task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/SqlAzureDacpacDeploymentV1)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

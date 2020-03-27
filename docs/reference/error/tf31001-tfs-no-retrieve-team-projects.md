@@ -2,10 +2,8 @@
 title: TF31001-Team Foundation cannot retrieve...
 titleSuffix: Azure DevOps & TFS
 description: Occurs when Team Explorer can't display the list of projects defined on a Team Foundation Server. 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a8f6ad82-e1e0-4659-8e97-c88ece4c23f5
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -14,7 +12,7 @@ ms.date: 01/20/2017
 
 # TF31001: Team Foundation cannot retrieve the list of projects from Team Foundation Server {0}
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 This error occurs when Team Explorer can't display the list of projects defined in the collection. The specific error message that TFS returns should help you determine the cause of the problem.  
   

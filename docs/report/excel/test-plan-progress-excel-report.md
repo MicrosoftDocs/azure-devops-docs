@@ -2,11 +2,9 @@
 title: Test Plan Progress Excel Report  
 description: Use the Test Plan Progress report to monitor test activities and report on the team's overall test progress.
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 5fa325e8-ca16-47f5-a8af-bdfdcbcfc243
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/30/2016
@@ -14,7 +12,7 @@ ms.date: 12/30/2016
 
 # Test Plan Progress Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Test Plan Progress report to monitor test activities and report on the team's overall test progress. This report shows a burndown chart of the test results for all tests the team has defined for the team project for the most recent four weeks.  
   
@@ -44,7 +42,7 @@ You can use the Test Plan Progress report to monitor test activities and report 
 
  The team can review the Test Plan Progress report to help determine how much testing the team has completed and whether it is likely to finish test activities on time. As the following illustration shows, the report provides a stacked area graph of the results of all tests, grouped into their most recently recorded outcome within the most recent four weeks. Outcomes include **Never Run**, **Blocked**, **Failed**, or **Passed**.  
   
- ![Test Plan Progress Excel Report](_img/procguid_agiletest.png "ProcGuid_AgileTest")  
+ ![Test Plan Progress Excel Report](media/procguid_agiletest.png "ProcGuid_AgileTest")  
   
  The chart is based on a PivotTable report from data that is stored in the data warehouse. The data is derived from the results that are generated when members of the team run tests by using Microsoft Test Manager. For more information, see [Run your tests](../../test/run-manual-tests.md).  
   

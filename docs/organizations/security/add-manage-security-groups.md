@@ -3,10 +3,8 @@ title: Add & manage security groups
 titleSuffix: Azure DevOps Services
 description: Add and manage security groups in an organization using the Azure DevOps CLI.  
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.reviewer: geverghe 
 ms.author: kaelli
 author: KathrynEE
@@ -16,7 +14,7 @@ ms.date: 11/22/2019
 
 # Add and manage security groups
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]  
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
 
 Security groups assign a set of permissions to members of the group. For example, members of a Contributors group or Project Administrators group are assigned the permissions that are allowed for those groups. To learn more, see [Permissions and groups](permissions.md).
 

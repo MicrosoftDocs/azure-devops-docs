@@ -3,22 +3,17 @@ title: Deployment group jobs in Build and Release
 ms.custom: seodec18
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
 
 # Deployment group jobs
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 [Deployment groups](../release/deployment-groups/index.md) make it easy to define groups of target servers for deployment. Tasks that you define in a deployment group job run on some or all of the target servers, depending on the arguments you specify for the tasks and the job itself.

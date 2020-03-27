@@ -3,10 +3,8 @@ title: Rebuild the data warehouse and cube
 titleSuffix: TFS
 description: Rebuild the data warehouse and cube after performing maintenance operations on a Team Foundation Server 
 ms.assetid: 23CD5F6B-468D-47B5-8A03-96547B526C2D  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Rebuild the data warehouse and cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Whenever you move, restore, rename, or fail over the data-tier server for Team Foundation Server (TFS), you should rebuild the data warehouse and cube to access high-level reports. Also, if you move, attach, detach, or delete a team project collection, you should rebuild the warehouse and cube.  
 
@@ -91,7 +89,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 
     For more information, see [Stop and start services, application pools, and websites](/azure/devops/server/admin/stop-start-services-pools).
 
-2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements#accounts). 
+2. Log on to the server that hosts Reporting Services, and stop the SQL Server Reporting Services (*TFSINSTANCE*) service.  Use the [report reader account](/azure/devops/server/requirements). 
 
 3. Make sure that TCP/IP has been enabled for SQL Server on the data-tier server. For more information, see [Enable the TCP/IP Protocol for a Database Instance](https://msdn.microsoft.com/library/bb909712.aspx).  
 
@@ -170,7 +168,7 @@ By default, TCP/IP is disabled when you install SQL Server.
 #### Q: How do I modify the reporting configuration?
 **A:** To modify the reporting configuration for team project collections, use the **Edit** function that is provided on the Reporting page of the administration console for Team Foundation.
 
-![Edit the information to configure reporting](_img/IC665021.png)
+![Edit the information to configure reporting](media/IC665021.png)
 
 #### Q: What happens to data that has been purged or destroyed before a rebuild?
 **A:** Data associated with builds or work items that have been permanently deleted from the database will be permanently removed from the data warehouse when you rebuild it. 

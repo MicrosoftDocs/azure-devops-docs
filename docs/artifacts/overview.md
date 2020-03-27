@@ -2,19 +2,15 @@
 title: Azure Artifacts in Azure DevOps
 description: Overview of Azure Artifacts for hosting and sharing NuGet packages and npm modules with Azure DevOps Services or Azure DevOps Server
 ms.assetid: 7F863543-2AFF-4726-A86A-4CF81DE98DCE
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: overview
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 01/31/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # What is Azure Artifacts? 
 
-[!INCLUDE [temp](../_shared/version-tfs-2017-through-vsts.md)]  
+[!INCLUDE [temp](../includes/version-tfs-2017-through-vsts.md)]  
 
 With Azure Artifacts you can create and share Maven, npm, and NuGet package feeds from public and private sources with teams of any size. You can 
 add fully integrated package management to your continuous integration/continuous delivery (CI/CD) pipelines with a single click.  

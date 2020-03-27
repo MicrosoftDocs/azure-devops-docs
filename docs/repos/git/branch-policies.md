@@ -3,9 +3,7 @@ title: Protect your Git branches with policies
 titleSuffix: Azure Repos
 description: Branch policies provide teams with the means to protect their important branches.
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -24,19 +22,19 @@ Policies enforce your team's code quality and change management standards.
 
 1. Select **Repos** > **Branches** to open the **Branches** page in the web portal.
 
-   ![Open up the Branches page on the web](_img/branches/branches_nav-new-nav.png)
+   ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
 1. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
-   ![Branches page](_img/branches/branches-page.png)
+   ![Branches page](media/branches/branches-page.png)
 
 1. Select the **...** button. Select **Branch policies** from the context menu.
 
-   ![Open the branch policies from the context menu](_img/branches/branches_context_menu_policy.png)
+   ![Open the branch policies from the context menu](media/branches/branches_context_menu_policy.png)
 
 1. Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
 
-   ![Policies tab](_img/branch-policies/save-policy-changes.png)  
+   ![Policies tab](media/branch-policies/save-policy-changes.png)  
 
 <a name="require_reviewers"></a>
 
@@ -47,7 +45,7 @@ To require teams to review their changes before completing a pull request, selec
 
 The basic policy requires that a certain number of reviewers approve the code with no rejections.
 
-![Check the Require Code Reviews box](_img/branch-policies/require-minimum-number-of-pr-reviews.png)  
+![Check the Require Code Reviews box](media/branch-policies/require-minimum-number-of-pr-reviews.png)  
 
 - If **Requestors can approve their own changes** isn't selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
 - If any reviewer rejects the changes, the pull request can't finish unless you select **Allow completion even if some reviewers vote to wait or reject**.
@@ -69,7 +67,7 @@ When the required number of reviewers approve the pull request, it can finish.
 Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).
 Linking work items provides additional context for your changes and ensures that updates go through your work item tracking process.
 
-![Require linked work items in your pull requests](_img/branch-policies/work_item_linking.png)
+![Require linked work items in your pull requests](media/branch-policies/work_item_linking.png)
 
 ::: moniker range=">= tfs-2017" 
 
@@ -77,7 +75,7 @@ Linking work items provides additional context for your changes and ensures that
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
-![Check for comment resolution](_img/branch-policies/comment-resolution.png)
+![Check for comment resolution](media/branch-policies/comment-resolution.png)
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
@@ -86,7 +84,7 @@ For more information on working with pull request comments, see [Pull requests -
 Maintain a consistent branch history by enforcing a merge strategy when a pull request finishes.
 Select **Enforce a merge strategy** and pick an option to require that pull requests merge using that strategy.
 
-![Set merge requirements](_img/branch-policies/merge_requirements.png)
+![Set merge requirements](media/branch-policies/merge_requirements.png)
 
 - **No fast-forward merge** - This option merges the commit history of the source branch when the pull request closes and creates a merge commit in the target branch.
 - **Squash merge** - Complete all pull requests with a squash merge, creating a single commit in the target branch with the changes from the source branch. [Learn more about squash merging](merging-with-squash.md) and how it affects your branch history.
@@ -108,11 +106,11 @@ If a build validation policy is enabled, a new build is queued when either a new
 >[!IMPORTANT]
 >Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
 
-![Add build policy](_img/branch-policies/add-build-policy.png)
+![Add build policy](media/branch-policies/add-build-policy.png)
 
 Choose **Add build policy** and configure your options in **Add build policy**.
 
-![Build policy settings](_img/branch-policies/build-policy-settings.png)
+![Build policy settings](media/branch-policies/build-policy-settings.png)
 
 1. Select the **Build definition**.
 1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
@@ -136,7 +134,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 External services can use the PR [Status API](https://go.microsoft.com/fwlink/?linkid=854107) to post detailed status to your PRs. The branch policy for additional services brings the ability for those third-party services to participate in the PR workflow and establish policy requirements.
 
-![Require external services to approve](_img/branch-policies/require-approval-from-additional-services.png)
+![Require external services to approve](media/branch-policies/require-approval-from-additional-services.png)
 
 For instructions on configuring this policy, see [Configure a branch policy for an external service](pr-status-policy.md).
 
@@ -146,18 +144,18 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 Select reviewers for specific directories and files in your repo.
 
-![Enter the path and required reviewers](_img/branch-policies/RequireSpecificReviewers.png)
+![Enter the path and required reviewers](media/branch-policies/RequireSpecificReviewers.png)
 
 These reviewers are automatically added to pull requests that change files along those paths. You can also specify an **Activity feed message**.
 
-![Add automatic reviewers](_img/branch-policies/automatically-include-reviewers-for-pull-requests.png)
+![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests.png)
 
 If you select **Required**, then the pull request can't be completed until:
 
 - Every user added as a reviewer for the path approves the changes.
 - At least one person in every group added to the path approves the changes.
 
-![Required reviewers are automatically added](_img/branch-policies/RequiredReviewerAdded.png)
+![Required reviewers are automatically added](media/branch-policies/RequiredReviewerAdded.png)
 
 Select **Optional** if you want to add reviewers automatically, but not require their approval to complete the pull request.
 
@@ -165,7 +163,7 @@ You can select **Requestors can approve their own changes**.
 
 When the required reviewers approve the code, you can complete the pull request.
 
-![Pull request status shows that reviewers have approved](_img/branch-policies/RequiredReviewerApproved.png)
+![Pull request status shows that reviewers have approved](media/branch-policies/RequiredReviewerApproved.png)
 
 ::: moniker range=">= tfs-2015" 
 
@@ -186,7 +184,7 @@ When the required reviewers approve the code, you can complete the pull request.
 
 In some cases, you need to bypass policy requirements. Bypassing lets you push changes to the branch directly or complete a pull request even if branch policies aren't satisfied. You can grant a permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along with other [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).  
 
-![Exempt from policy enforcement permission](_img/branch-policies/PolicyExemptPermission.png)
+![Exempt from policy enforcement permission](media/branch-policies/PolicyExemptPermission.png)
 
 >[!IMPORTANT]
 > Use caution when granting these permissions, especially

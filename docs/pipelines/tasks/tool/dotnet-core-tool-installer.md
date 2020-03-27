@@ -1,11 +1,8 @@
 ---
 title: Use .NET Core task
 description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
-ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/21/2019
@@ -27,7 +24,7 @@ One other reason to use tool installer is if you want to decouple your pipeline 
 
 - Support for installing multiple versions side by side.
 
-- Support for patterns in version to fetch latest in minor/major version. Foe example, you can now specify 2.2.x to get the latest patch.
+- Support for patterns in version to fetch latest in minor/major version. For example, you can now specify 2.2.x to get the latest patch.
 
 - Perfrom Multi-level lookup. This input is only applicable to Windows based agents. It configures the .Net Core's host process behavior for looking for a suitable shared framework on the machine. For more information, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 

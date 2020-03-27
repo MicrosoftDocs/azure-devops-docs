@@ -3,9 +3,7 @@ title: Ignore files in your Git repo
 titleSuffix: Azure Repos
 description: Use gitignore, git update-index, and repo management to ignore and exclude files from Git version control  
 ms.assetid: 60982d10-67f1-416f-94ec-eba8d655f601
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -71,7 +69,7 @@ Git starts ignoring these files as soon as you update *.gitignore*. If others on
 
 You can edit your *.gitignore* file for your repo by going to the **Settings** view in Team Explorer, then selecting **Repository Settings**. Select **Edit** for your *.gitignore*.
 
-![Find and open your .gitignore file for your repo in Visual Studio](_img/vs_ignore.png)
+![Find and open your .gitignore file for your repo in Visual Studio](media/vs_ignore.png)
 
 # [Command Line](#tab/command-line)
 

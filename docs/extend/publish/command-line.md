@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Publishing and Packaging an Extension from the Command Line | Extensions for Azure DevOps Services
 description: How to package and publish your Azure DevOps Services Extension from the command line.
 ms.assetid: 7adcb1a2-1894-4751-8bed-7c04d084b5cf
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -25,17 +23,17 @@ Also, if you have not done so, you need to set up a Publisher in the Gallery.
 
 ### Acquire the TFS Cross Platform Command Line Interface
 
-[!INCLUDE [Control](../_shared/procedures/acquire-tfx-cli.md)]
+[!INCLUDE [Control](../includes/procedures/acquire-tfx-cli.md)]
 
 ### Acquire a personal access token
 
-[!INCLUDE [Control](../_shared/procedures/acquire-pat.md)]
+[!INCLUDE [Control](../includes/procedures/acquire-pat.md)]
 
 ### Create a publisher
 
 If you haven't already created a publisher, you can do so using the command line tool.
 
-[!INCLUDE [Control](../_shared/procedures/command-line-create-publisher.md)]
+[!INCLUDE [Control](../includes/procedures/command-line-create-publisher.md)]
 
 ## Publish from the command line
 

@@ -3,7 +3,6 @@ title: Manage Security permissions with Azure DevOps CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security permissions 
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
 ms.manager: mijacobs 
@@ -15,7 +14,7 @@ ms.date: 06/18/2019
 
 # Manage security permissions  
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 Security permissions for a User or Security group can be managed by running following group of commands:
 

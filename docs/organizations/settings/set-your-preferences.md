@@ -3,28 +3,29 @@ title: View, change user preferences
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Change picture, set preferred email, or other user preferences from your profile defined for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-settings
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/20/2019
+ms.date: 03/02/2020
 ---
 
 # Set user preferences
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
-From your profile page, you can change your picture or other account preferences. In this article, learn how to complete the following tasks:
+From your profile page, you can change your information and  account preferences. In this article, learn how to complete the following tasks:
 
 - Change your picture
 - Change your display name
 - Change your preferred email
 - Change your directory
 - Change your locale settings - Locale settings include language, date and time pattern, time zone, and user interface theme.
+
+> [!IMPORTANT]
+> You can't change your user interface theme in Azure DevOps if you're using Internet Explorer (IE).
 
 ## Change profile settings  
 
@@ -35,68 +36,49 @@ From your profile page, you can change your picture or other account preferences
 
 #### [Preview page](#tab/preview-page) 
 
-1. From your home page, open your user settings, and then select **Profile**.
+1. From your home page, select the user settings icon ![user-settings-gear.png](../../media/icons/user-settings-gear.png), and then select **Profile**.
 
-   ![Open Azure DevOps profile](_img/open-profile-user-settings-preview.png)
+   ![Open Azure DevOps profile](../../media/open-user-settings-profile-preview.png)
 
 2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
 
-   ![Edit the About page](_img/edit-about-page-preview.png)
-
-3. From your profile menu, select the ... next to Azure DevOps profile, and then select **Switch directory**. 
-
-   ![Switch your Azure Active Directory](_img/switch-directory-azure-ad.png)
-
-   Select a different directory, and then select **Switch**.
-
-   ![Select a different directory, and then select Switch](_img/select-directory-and-switch.png)
-
-4. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
-
-   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences-preview.png)
-
+   ![Edit the About page](media/edit-about-page-preview.png)
 
 #### [Current page](#tab/current-page) 
 
 1. To change your user preferences, open your profile menu, and then select **User settings**.
 
-   ![Open profile user settings](_img/open-profile-user-settings.png)
+   ![Open profile user settings](media/open-profile-user-settings.png)
 
-2. From the **About** page, you can change your profile picture, change your display name, contact information, and country. Select **Save**.
+2. You can change your profile picture, display name, contact information, and country. Select **Save**.
 
-   ![Edit the About page](_img/edit-about-page.png)
-
-3. From the Azure Active Directory tab, select **Switch directory**. 
-
-   ![Switch your Azure Active Directory](../accounts/_img/change-azure-ad-connection.md/select-switch-directory.png)
-
-   Select a different directory, and then select **Switch**.
-
-   ![Select a different directory, and then select Switch](_img/select-directory-and-switch.png)
-
-4. From the **Time and Locale** page, you can change your preferred language, date and time pattern, and time zone. Select **Save**.
-
-   ![Set time and locale preferences](_img/set-time-and-locale-user-preferences.png)
+   ![Edit the About page](media/edit-about-page.png)
 
 ::: moniker-end
+
+* * *
 
 ::: moniker range="azure-devops-2019"  
 
 1. To change your user preferences, open your profile menu, and then select **My profile**.
 
-   ![Select your profile menu, and then My profile](_img/select-profile-my-profile-2019.png) 
+   ![Select your profile menu, and then My profile](media/select-profile-my-profile-2019.png) 
 
-2. From the **General** tab, you can change your profile picture, change your display name, contact information, and whether or not borders appear on work item forms for fields.
+2. From the **General** tab, you can change the following information:
+   - profile picture
+   - display name
+   - contact information
+   - whether borders appear for fields on work item forms
 
-	![General user settings](_img/general-user-settings-2019.png)
+	![General user settings](media/general-user-settings-2019.png)
 
 3. From the **Locale** tab, you can change your preferred language, date and time pattern, and time zone. 
 
-   ![Change locale](_img/locale-user-settings-2019.png)
+   ![Change locale](media/locale-user-settings-2019.png)
 
 4. To change your UI theme, go back to your profile menu and select **Theme**. Choose between **Dark** and **Light**.
 
-   ![Change the theme to dark or light](_img/change-theme-2019.png)
+   ![Change the theme to dark or light](media/change-theme-2019.png)
 
 ::: moniker-end
 
@@ -104,26 +86,29 @@ From your profile page, you can change your picture or other account preferences
 
 1. To change your user preferences, open your profile menu.
 
-	![Open Profile menu](../../_shared/_img/settings/open-profile-tfs-2017.png)
+	![Open Profile menu](../../media/settings/open-profile-tfs-2017.png)
 
 2. Choose **Edit profile**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/profile-jamal-h.png)
+	> ![Choose Edit ](../../media/settings/profile-jamal-h.png)
 
 3. From the **About** page, you can change your profile picture, change your display name, contact information, and country. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-about-dialog.png)
+	> ![Choose Edit ](../../media/settings/edit-profile-about-dialog.png)
 
-4. From the **Preferences** page, you can change your preferred language, date and time pattern, time zone, UI theme, and whether or not borders appear on work item forms for fields.
+4. From the **Preferences** page, you can change the following information:
+    - preferred language
+    - date and time pattern
+    - time zone
+    - UI theme
+    - whether borders appear for fields on work item forms
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Edit ](../../_shared/_img/settings/edit-profile-preferences-dialog.png)
+	> ![Choose Edit ](../../media/settings/edit-profile-preferences-dialog.png)
 
 ::: moniker-end
-
-* * *
 
 ## Related articles
 

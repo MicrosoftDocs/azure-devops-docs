@@ -1,11 +1,9 @@
 ---
 title: Configure a private Docker build agent for your Java project with Azure DevOps Services 
 description: Tutorial lab for configuring Java build agents for Docker with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -37,7 +35,7 @@ In this task you will generate a PAT for yourself. You will use this PAT to conn
 
 3. In the upper right, click on your profile image and Click Security.
 
-    ![Click on Security](../_img/dockerbuildagent/click-security.png)
+    ![Click on Security](../media/dockerbuildagent/click-security.png)
 
 4. On the Personal access tokens page, click the "Add" button. Enter "java" (or whatever you want) for the Description. Scroll to the bottom of the page and click "Create token".
 
@@ -45,7 +43,7 @@ In this task you will generate a PAT for yourself. You will use this PAT to conn
 
 6. Click on the Visual Studio Code icon in the toolbar to open Visual Studio Code.
 
-    ![Open VS Code](../_img/dockerbuildagent/vs-code.png)
+    ![Open VS Code](../media/dockerbuildagent/vs-code.png)
 
 7. Press Ctrl-N (or use File->New File) to create a new file. Paste in your PAT. Save this file (File->Save or Ctrl-S) to `/home/vmadmin/pat.txt`.
 
@@ -55,7 +53,7 @@ In this task you will start an Azure DevOps Services build agent container using
 
 1. On your VM, open a terminal by clicking on the Terminal Emulator icon in the toolbar.
 
-    ![Click on the terminal icon in the Toolbar](../_img/dockerbuildagent/click-terminal.png)
+    ![Click on the terminal icon in the Toolbar](../media/dockerbuildagent/click-terminal.png)
 
 2. Enter the following command:
 
@@ -69,7 +67,7 @@ In this task you will start an Azure DevOps Services build agent container using
 
      You should see a message indicating "Listening for Jobs":
 
-     ![The agent container running](../_img/dockerbuildagent/agent-container-running.png)
+     ![The agent container running](../media/dockerbuildagent/agent-container-running.png)
 
      > [!NOTE]
      > This starts a docker container (called Azure DevOps Servicesagent) that has an Azure DevOps Services agent running inside it. The agent is connected to your organization and has also mounted the VM Docker socket so that the container can perform Docker operations (like building containers). It is created from a Dockerfile (listed below) that installs PhantomJS for running headless Selenium tests and configures Docker certs and environment variables. You can move this terminal to the side since the container is running interactively, so the prompt you are seeing is actually inside the container. Open a new terminal by clicking on the Terminal Emulator icon in the toolbar.

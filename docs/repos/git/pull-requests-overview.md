@@ -2,10 +2,8 @@
 title: Pull requests
 titleSuffix: Azure Repos  
 description: Learn about pull requests in Azure DevOps Services & TFS  
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -63,7 +61,7 @@ Diffusing skills and knowledge makes your team stronger and more resilient.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../media/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -105,7 +103,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Provide reviewer guidance with pull request templates" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Provide reviewer guidance with pull request templates" src="../../media/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -142,7 +140,7 @@ Take these suggestions and create new work items and feature branches separate f
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Vote on the changes" src="_img/logos/check.svg" />
+                            <img width="48" height="48" alt="Vote on the changes" src="media/logos/check.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -172,7 +170,7 @@ A clean build of the merged code and approval from multiple reviewers are some e
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Branch policies overview" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Branch policies overview" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">

@@ -2,10 +2,7 @@
 title: Query Work Items task 
 description: Ensure the number of matching items returned by a work item query is within the configured threshold
 ms.assetid: F24517BD-FEA2-4EFF-8030-EF441B9C7F67
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Query Work Items task
 
-[!INCLUDE [version-tfs-2017-rtm](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
 Use this task in a build or release pipeline to ensure the number of matching items returned by a work item query is within the configured thresholds.
 
@@ -23,7 +20,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -35,7 +32,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/QueryWorkItemsV0.md)]
+[!INCLUDE [temp](../includes/yaml/QueryWorkItemsV0.md)]
 
 ::: moniker-end
 

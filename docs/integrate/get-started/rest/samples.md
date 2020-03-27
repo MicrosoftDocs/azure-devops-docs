@@ -2,10 +2,8 @@
 title: REST API samples for Azure DevOps and TFS
 description: REST API samples for Azure DevOps Services and Team Foundation Server.
 ms.assetid: 9E17A266-051F-403F-A285-7F21D9CC52F0
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -47,7 +45,7 @@ ListOfProjectsResponse.Projects viewModel = null;
 //use the httpclient
 using (var client = new HttpClient())
 {
-    client.BaseAddress = new Uri("https://dev.azure.com/{OrgName}");  //url of your organization
+    client.BaseAddress = new Uri($"https://dev.azure.com/{OrgName}");  //url of your organization
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", credentials); 

@@ -2,10 +2,7 @@
 title: Xamarin Test Cloud task
 description: This task is deprecated. Use the App Center Test task instead. 
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 8e5b1533-631e-4095-9c58-9f62411b6e64
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -16,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Xamarin Test Cloud task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 This task was used in a build or release pipeline to test mobile apps with Xamarin Test Cloud using Xamarin.UITest
 
@@ -32,7 +29,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/XamarinTestCloudV1.md)]
+[!INCLUDE [temp](../includes/yaml/XamarinTestCloudV1.md)]
 
 ::: moniker-end
 
@@ -70,13 +67,13 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 [Adding Xamarin.UITest to a Solution](https://developer.xamarin.com/guides/testcloud/uitest/adding-uitest/)
 
-[!INCLUDE [temp](../_shared/qa-minimatch.md)]
+[!INCLUDE [temp](../includes/qa-minimatch.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

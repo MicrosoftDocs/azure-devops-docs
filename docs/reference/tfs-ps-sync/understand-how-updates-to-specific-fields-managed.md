@@ -2,10 +2,8 @@
 title: Understand how updates to specific fields are managed 
 titleSuffix: TFS 
 description: Understand how updates to specific fields are managed betweenTeam Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67f9887f-f023-4e3e-8873-fb3f1854438f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -13,7 +11,7 @@ ms.date: 01/12/2017
 ---
 
 # Understand how updates to specific fields are managed
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You should review this topic if one or more fields are not synchronizing as you expect between Visual Studio Team Foundation Server and Microsoft Project Server. The data type of the affected field or fields, the `OnConflict` field mapping attribute, and task hierarchy affect how the synchronization engine updates specific fields. Tasks will not update correctly if the project manager rejects one or more submission updates or if the project plan was not published. If the plan was not published, nested child work items cannot flow into the approval queue.  
   
@@ -25,14 +23,14 @@ ms.date: 01/12/2017
 > [!IMPORTANT]
 >  When a work item or task has been scheduled to participate in synchronization, you cannot remove it from synchronization except by deleting the task from the project plan. You cannot modify the **Publish to Team Project** value that is assigned to a task, and you cannot change the **Submit to Project Server** field in Team Foundation. Also, you cannot change a task to a different type of work item after it has been published to or submitted from Team Foundation Server.  
   
- ![Updates to Mapped and Mirror Fields](_img/tfs-ps_fieldupdates.png "TFS-PS_FieldUpdates")  
+ ![Updates to Mapped and Mirror Fields](media/tfs-ps_fieldupdates.png "TFS-PS_FieldUpdates")  
   
 |Step|Synchronization   process|Field updates|  
 |----------|-------------------------------|-------------------|  
-|![Step 1](_img/procguid_1.png "ProcGuid_1")|**Team Foundation synchronization**: The synchronization engine automatically detects additions and changes that were published to Project Server and pulls those updates into Team Foundation Server.|Only fields that are mapped from Project Server to Team Foundation Server (`targetToTfs` mapping) are updated in this step. The synchronization engine always updates the mirror field but updates the reference field only when the `OnConflict` attribute is set to `PSWin`. However, when a task is published to Project Server for the first time, both the reference field and the mirror field are set, regardless of the value to which the `OnConflict` attribute was assigned. Mirror fields are read-only.<br /><br /> By default, the `OnConflict` attribute is unspecified for the Remaining Work and Completed Work fields, which allows the mapped fields to differ between Team Foundation Server and Project Server. For more information, see [Updates to Fields that Contain Hours](#updates_hours) later in this topic.|  
-|![Step 2](_img/procguid_2.png "ProcGuid_2")|**Status synchronization**: As team members add or modify work items that are set to Submit to Project Server, the synchronization engine automatically submits updates to the status queue.|Only fields that are mapped for submission to the status queue (`tfsToTarget` mapping) are submitted.<br /><br /> Changes to start and end dates are submitted only when the work item is submitted for the first time. Because fields in Team Foundation map to resource fields in Project, updates are made to resource fields such as Resource Remaining Work and Resource Completed Work.|  
-|![Step 3](_img/procguid_3.png "ProcGuid_3")|**Approval synchronization**: When an update is approved, it appears within the enterprise project plan. Notification of approval or rejection is written to the work item history in Team Foundation.|The Team Foundation Add-in for Project Professional ensures correct synchronization of the values for the pjTask* fields and pjResource\* fields. Therefore, you must use Project Professional from a client computer on which Visual Studio 2013 or Team Explorer 2013 has been installed to edit your enterprise project plans that are mapped to a project.|  
-|![Step 4](_img/procguid_4.png "ProcGuid_4")|**Publish synchronization**: When the project manager publishes the project plan, the updates are written to Project Server.|Changes to all tasks in the project plan are updated in Project Server.|  
+|![Step 1](media/procguid_1.png "ProcGuid_1")|**Team Foundation synchronization**: The synchronization engine automatically detects additions and changes that were published to Project Server and pulls those updates into Team Foundation Server.|Only fields that are mapped from Project Server to Team Foundation Server (`targetToTfs` mapping) are updated in this step. The synchronization engine always updates the mirror field but updates the reference field only when the `OnConflict` attribute is set to `PSWin`. However, when a task is published to Project Server for the first time, both the reference field and the mirror field are set, regardless of the value to which the `OnConflict` attribute was assigned. Mirror fields are read-only.<br /><br /> By default, the `OnConflict` attribute is unspecified for the Remaining Work and Completed Work fields, which allows the mapped fields to differ between Team Foundation Server and Project Server. For more information, see [Updates to Fields that Contain Hours](#updates_hours) later in this topic.|  
+|![Step 2](media/procguid_2.png "ProcGuid_2")|**Status synchronization**: As team members add or modify work items that are set to Submit to Project Server, the synchronization engine automatically submits updates to the status queue.|Only fields that are mapped for submission to the status queue (`tfsToTarget` mapping) are submitted.<br /><br /> Changes to start and end dates are submitted only when the work item is submitted for the first time. Because fields in Team Foundation map to resource fields in Project, updates are made to resource fields such as Resource Remaining Work and Resource Completed Work.|  
+|![Step 3](media/procguid_3.png "ProcGuid_3")|**Approval synchronization**: When an update is approved, it appears within the enterprise project plan. Notification of approval or rejection is written to the work item history in Team Foundation.|The Team Foundation Add-in for Project Professional ensures correct synchronization of the values for the pjTask* fields and pjResource\* fields. Therefore, you must use Project Professional from a client computer on which Visual Studio 2013 or Team Explorer 2013 has been installed to edit your enterprise project plans that are mapped to a project.|  
+|![Step 4](media/procguid_4.png "ProcGuid_4")|**Publish synchronization**: When the project manager publishes the project plan, the updates are written to Project Server.|Changes to all tasks in the project plan are updated in Project Server.|  
   
  For more information, see the following topics:  
   
@@ -72,7 +70,7 @@ ms.date: 01/12/2017
   
   Whenever a project manager sets a baseline, the value of the **Original Estimate** field in Team Foundation is set or updated, as the following illustration shows. By default, this field is mapped to the `OnConflict="PSWin"` attribute.  
   
-  ![Work estimates](_img/tfs-ps_te_detailedplan_originalestimate.png "TFS-PS_TE_DetailedPlan_OriginalEstimate")  
+  ![Work estimates](media/tfs-ps_te_detailedplan_originalestimate.png "TFS-PS_TE_DetailedPlan_OriginalEstimate")  
   
 > [!NOTE]
 >  Because the Visual Studio Scrum process template does not use the Completed Work and Original Estimate fields, you must add these fields to the types of work items that you want to participate in data synchronization. Also, you must modify the task type definition to remove the `<EMPTY />` workflow statements.  For more information, see [Required Changes to Make When Mapping to a Team Project That Was Created From the Scrum Process Template](customize-field-mapping-tfs-project-server.md#scrummodifications).  
@@ -93,9 +91,9 @@ ms.date: 01/12/2017
 ##  <a name="updates_nested_tasks"></a> Summary Tasks, Task Hierarchy, and Submissions of Work Items that Are Nested at Multiple Levels  
  By design, the synchronization engine does not update Project fields for linked tasks that have subtasks in the enterprise project plan. The synchronization process skips updates of these tasks because the project plan calculates the work for them. Changes to the title and other non-work fields are also not updated for these tasks. This behavior is a known limitation of the integration of the two server products.  
   
- When a project manager publishes a detailed set of tasks that include requirements and linked tasks to Team Foundation Server, the synchronization engine locks the task hierarchy. Team members cannot modify the task hierarchy in Team Foundation, but they can reassign tasks to team members in the project. As the following illustration shows, tasks are listed under their requirements, and the hierarchical links between parent and children tasks are locked (![Locked link icon](_img/icon_lockedlink.png "Icon_lockedLink")). The locked links indicate that the requirements and child tasks have been added to a project from Project Server. Only the project manager from the project plan can modify the task hierarchy.  
+ When a project manager publishes a detailed set of tasks that include requirements and linked tasks to Team Foundation Server, the synchronization engine locks the task hierarchy. Team members cannot modify the task hierarchy in Team Foundation, but they can reassign tasks to team members in the project. As the following illustration shows, tasks are listed under their requirements, and the hierarchical links between parent and children tasks are locked (![Locked link icon](media/icon_lockedlink.png "Icon_lockedLink")). The locked links indicate that the requirements and child tasks have been added to a project from Project Server. Only the project manager from the project plan can modify the task hierarchy.  
   
- ![Work breakdown schedule in Team Explorer](_img/tfs-ps_te_detailedplan_workbreakdown.png "TFS-PS_TE_DetailedPlan_WorkBreakdown")  
+ ![Work breakdown schedule in Team Explorer](media/tfs-ps_te_detailedplan_workbreakdown.png "TFS-PS_TE_DetailedPlan_WorkBreakdown")  
   
  When a team submits multiple levels of work items from Team Foundation to Project Server, the first level must be approved and published to Project Server before the next level can be submitted. If a team submits a batch of new work items that includes three levels of child items, for example, the project manager must publish the project plan four times for all work items to be synchronized with Project Server. As the project manager approves each level of work items and publishes them to Project Server, the hierarchical link relationships are locked in Team Foundation until the entire link hierarchy is locked. Team members cannot modify the hierarchy for these mapped work items.  
   

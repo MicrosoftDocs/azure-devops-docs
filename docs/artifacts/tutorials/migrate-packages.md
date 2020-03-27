@@ -1,11 +1,7 @@
 ---
 title: Migrate your packages to Azure Artifacts
 description: Use a PowerShell Module to easily migrate your packages to an Azure Artifacts Feed
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: elbatk 
 ms.date: 07/18/2019
 monikerRange: 'azure-devops'
@@ -47,9 +43,9 @@ To migrate your packages, you will need the index URL to your source, and destin
 
 You can easily copy the destination URL from the **Connect to feed** dialog box.
 
-<img alt="Go to Artifacts Home, Select Connect to Feed" src="../_shared/_img/connect-to-feed-azure-devops-newnav.png" style="border: 1px solid #CCCCCC" />
+<img alt="Go to Artifacts Home, Select Connect to Feed" src="../media/connect-to-feed-azure-devops-newnav.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Copy the index URL" src="../_img/nuget-index-url.png" style="border: 1px solid #CCCCCC" />
+<img alt="Copy the index URL" src="../media/nuget-index-url.png" style="border: 1px solid #CCCCCC" />
 
 ### Get Index URL from MyGet
 

@@ -2,12 +2,8 @@
 title: Use packages from nuget.org
 description: Use packages from npmjs.com in Azure DevOps Services and Team Foundation Server via upstream sources or scopes
 ms.assetid: 301f954f-a35a-4fe2-b7fd-c78e534d9b16
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 01/20/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -66,19 +62,19 @@ You can see the packages you have saved in your feed by selecting the appropriat
 
 ::: moniker range=">= azure-devops-2019"
 
-![Viewing your cached packages](_img/view-cached-packages-newnav.png)
+![Viewing your cached packages](media/view-cached-packages-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Viewing your cached packages](_img/view-cached-packages.png)
+![Viewing your cached packages](media/view-cached-packages.png)
 
 ::: moniker-end
 
 ::: moniker range=">=tfs-2017 < azure-devops"
 
-![Viewing your cached packages](_img/view-cached-packages.png)
+![Viewing your cached packages](media/view-cached-packages.png)
 
 ::: moniker-end
 

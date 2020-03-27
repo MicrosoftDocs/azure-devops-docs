@@ -1,12 +1,10 @@
 ---
 title: Create and manage Reporting Services reports
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server 
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 # Create and manage Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json ).  
   
@@ -43,11 +41,11 @@ If you added SQL Server Reporting Services at installation, then your on-premise
   
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md). The warehouse contains data about builds, source code, test results and code coverage, and work items such as tasks and bugs. Data in the warehouse is collected from the operational stores and organized in a set of tables, views, and table-valued functions from which you can design reports. You can explore relationships between the integrated data sets by directly querying and creating reports from data that is stored in the relational warehouse database.  
   
-   ![Team Foundation Warehouse](_img/teamproj_warehouse.png "TeamProj_Warehouse")  
+   ![Team Foundation Warehouse](media/teamproj_warehouse.png "TeamProj_Warehouse")  
   
 - [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md). The Team System cube  provides all metrics that are defined for all measure groups. By using the Analysis Services cube for TFS, you can generate reports of aggregated information about the data that is stored in team project collections. You can easily use this data to create PivotTable and PivotChart reports in Microsoft Excel.  
   
-   ![Analysis Services Data Cube Measure Groups](_img/rpt_measuregroups.png "RPT_MeasureGroups")  
+   ![Analysis Services Data Cube Measure Groups](media/rpt_measuregroups.png "RPT_MeasureGroups")  
   
 - [Reportable fields reference](../../reference/xml/reportable-fields-reference.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). All data captured for work items is written to the WIT data store, but only select data is written to the Analysis Services data warehouse. The reportable attribute assigned to each work item field determines whether data is written to only the relational warehouse database or to both the relational warehouse and the OLAP cube. Reportable fields have their reportable attribute set to detail, dimension, or measure.  
   

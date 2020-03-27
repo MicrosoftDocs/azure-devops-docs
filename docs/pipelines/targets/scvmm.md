@@ -2,10 +2,7 @@
 title: Deploy with SCVMM
 description: Provision and manage your virtual machines in System Center Virtual Machine Manager (SCVMM)
 ms.assetid: A14C4E98-EF76-400C-A728-292E1D75ECFD
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2018'
 
 # Deploy with System Center Virtual Machine Manager
 
-[!INCLUDE [version-tfs-2018](../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
 You can automatically provision new virtual machines in System Center Virtual Machine Manager (SCVMM) and deploy to those virtual machines after every successful build.
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ## SCVMM connection
 

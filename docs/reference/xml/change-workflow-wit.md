@@ -2,19 +2,17 @@
 title: Change the workflow for a work item type
 titleSuffix: Azure DevOps & TFS 
 description: Add States, Transitions, Reasons, or Actions to customize the workflow for a WIT in Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ca8dff64-7ece-46cf-b985-2751480dff32
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: conceptual
 ms.date: 03/31/2017
 ---
 
 # Change the workflow for a work item type
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can change the workflow for a work item type (WIT) to support your business and team processes. WITs support tracking all types of work&mdash;requirements, tasks, code defects&mdash;to support software development.  
 
@@ -22,7 +20,7 @@ The workflow determines the logical progression and regression of work that team
 
 **Workflow for Product Backlog Item (Scrum process template)**  
 
-![Product backlog item workflow, Scrum process](_img/scrum_pbistate.png "Scrum_PBIstate")  
+![Product backlog item workflow, Scrum process](media/scrum_pbistate.png "Scrum_PBIstate")  
 
 
 > [!NOTE]  
@@ -31,7 +29,7 @@ The workflow determines the logical progression and regression of work that team
 > For information about build pipeline workflows, see [Get started with CI/CD](../../pipelines/get-started-designer.md).
 
 
-[!INCLUDE [temp](../../_shared/update-xml-wit.md)] 
+[!INCLUDE [temp](../../includes/update-xml-wit.md)] 
 
 
 To customize the workflow, follow these two steps:   
@@ -83,7 +81,7 @@ This example doesn't list all the elements for `DEFAULTREASON`, `REASON`, `ACTIO
 
 **Example Workflow State Diagram &mdash; Agile Bug WIT**
 
-![Bug workflow states, Agile process template](_img/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
+![Bug workflow states, Agile process template](media/procguide_bugworkflow.png "ProcGuide_BugWorkflow") 
 
 ```xml
 <WORKFLOW>

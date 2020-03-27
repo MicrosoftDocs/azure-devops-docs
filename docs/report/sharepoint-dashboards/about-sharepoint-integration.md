@@ -2,9 +2,7 @@
 title: About SharePoint Integration 
 titleSuffix: TFS
 description: TFS/SharePoint integration - About SharePoint Integration 
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.reviewer: greggboe
 ms.author: kaelli
 ms.date: 09/28/2017
@@ -14,7 +12,7 @@ monikerRange: '<= tfs-2018'
 
 # About SharePoint integration  
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 SharePoint products are a valuable resource to users of Azure DevOps and Team Foundation Server (TFS). With a SharePoint site, teams can easily store and share Office documents. SharePoint sites can be configured to show all kinds of information. We expect and encourage Azure DevOps and TFS teams to use SharePoint and will continue to look for ways to make the integration of Azure DevOps and SharePoint Server and SharePoint online, be better together.
 

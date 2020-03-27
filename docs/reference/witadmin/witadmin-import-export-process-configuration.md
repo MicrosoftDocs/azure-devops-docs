@@ -2,10 +2,8 @@
 title: Import or export process configuration  
 titleSuffix: TFS
 description: Modify the display of the Agile planning tool pages that you view through the web portal for Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 95fd448f-d702-4399-b9c2-d61cdce33c02
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +14,7 @@ ms.date: 03/20/2018
 
 # Import and export process configuration
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 You customize the process configuration to modify the display of the web portal Agile tools. A few additional tools require that you map workflow states to metastate mappings.  
 
@@ -27,9 +25,9 @@ To manage the process configuration for a project, use the **witadmin** command 
 -   **exportprocessconfig**:  Exports the process configuration definition to an XML file or the Command Prompt window.    
 -   **importprocessconfig**:  Imports the process configuration definition XML file.  
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]
+[!INCLUDE [temp](../../includes/process-editor.md)]
 
 
 ## Prerequisites  
@@ -76,7 +74,7 @@ The following values apply in each example:
 
 You can add fields for any quick add panel. For example, the following example adds **Business Value** to the product backlog panel.  
 
-![Backlog panel with Business Value field added](_img/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
+![Backlog panel with Business Value field added](media/alm_upg_addpanel.png "ALM_UPG_AddPanel")  
 
 The panel only displays fields that are included in the `FIELDS` section of the WIT definition for the WIT selected. For example, if you select the bug WIT, then only Title displays, as Business Value isn't defined for bugs. To add another WIT to the panel, you add it to the Requirements Category. See [Add a work item type to a backlog and board](../add-wits-to-backlogs-and-boards.md).  
 
@@ -224,7 +222,7 @@ Other changes might require you to perform some manual operations when updating 
 
     Update the metastate mappings if you receive an **Application detected an unexpected fault** error when you connect to your project.  
 
-    ![Application fault error message after TFS upgrade](_img/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
+    ![Application fault error message after TFS upgrade](media/alm_upg_testcenterfaulterror.png "ALM_UPG_TestCenterFaultError")  
 
 ### How do I resolve process configuration errors?  
 

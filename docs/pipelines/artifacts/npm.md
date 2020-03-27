@@ -5,22 +5,17 @@ ms.custom: seodec18
 description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
 ms.date: 06/12/2018
 monikerRange: '>= tfs-2017'
-author: chasewilson
 ---
 
 # Publish npm packages
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 You can publish npm packages produced by your build to:
@@ -30,7 +25,7 @@ You can publish npm packages produced by your build to:
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
 
 ```yaml
 - task: Npm@1
@@ -65,9 +60,9 @@ To publish an npm package to a Package Management feed, add the **npm** task. Th
 - **working folder**: Select the folder that contains your `.npmrc` and `package.json`; leave blank if those files are at the root of the repo
 - **npm command**: `publish`
 
-![Azure Pipelines npm publish task configuration](_img/npm/team-build-npm-publish.png)
+![Azure Pipelines npm publish task configuration](media/npm/team-build-npm-publish.png)
 
-[!INCLUDE [package management permissions](_shared/package-management-permissions-for-web-build.md)]
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
 To publish to an external npm registry, you must first create a service connection to point to that registry. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
 

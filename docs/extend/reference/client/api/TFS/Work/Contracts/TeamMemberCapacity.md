@@ -2,10 +2,8 @@
 title: TFS/Work/Contracts TeamMemberCapacity API | Extensions for Azure DevOps Services
 description: Represents capacity for a specific team member
 ms.assetid: aa768dd8-d65f-ba8b-7770-857396e07015
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

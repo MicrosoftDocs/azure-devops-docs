@@ -2,10 +2,8 @@
 title: FIELD (Definition) element reference 
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of the FIELD element used to specify data fields within a work item type 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 67560004-04d6-411c-97fb-07f66303ef11
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/16/2017
@@ -13,7 +11,7 @@ ms.date: 06/16/2017
 
 # FIELD (Definition) element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You use the **FIELD** (Definition) element to define a work item field and specify the rules and conditions that apply to it. The attributes that you assign to a field determines its data type and whether it is available for inclusion in reports.  
   

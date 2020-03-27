@@ -1,10 +1,8 @@
-﻿---
+---
 title: Set up Active Directory / Azure AD
 description: Manage large groups of users using Active Directory (AD) for Azure DevOps Server or Azure Active Directory (Azure AD) for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -15,13 +13,13 @@ ms.date: 10/14/2019
 
 # Set up Active Directory or Azure Active Directory
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The method we recommend for managing a large set of user accounts is to use Azure Active Directory (Azure AD) for Azure DevOps Services and Active Directory (AD) for Azure DevOps Server or Team Foundation Server (TFS). By managing your user base using AD/Azure AD, you simplify the maintenance of managing permissions across your organization.
 
 If you only have to manage a small set of users, then you can skip this step. However, if you foresee that your organization may grow, you may want to set up AD or Azure AD. Also, if you plan on paying for extra services, you'll need to set up Azure AD for use with Azure DevOps to support billing.
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range="azure-devops"
 Use this topic to access articles that show you how to:
@@ -34,7 +32,7 @@ Use this topic to access articles that show you how to:
 
 Use this topic to access articles that show you how to:
 > [!div class="checklist"]
-> * Set up Active Directory for use with TFS
+> * Set up Active Directory for use with on-premises Azure DevOps Server
 
 ::: moniker-end
 
@@ -57,25 +55,17 @@ Use this topic to access articles that show you how to:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops-2019"
+
 ## Set up Active Directory for use with Azure DevOps Server
 
-Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
+Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
 * [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+* [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-## Set up Active Directory for use with an on-premises TFS
-
-Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
-
-* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
-
-::: moniker-end
 
 ## Next steps
 

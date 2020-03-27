@@ -2,8 +2,6 @@
 title: PyPI Publisher task (Deprecated)
 ms.custom: seodec18
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
 ms.author: macoope
@@ -47,7 +45,7 @@ A generic service connection for a PyPI index.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
+[!INCLUDE [temp](../includes/yaml/PyPIPublisherV0.md)]
 
 ::: moniker-end
 
@@ -66,6 +64,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

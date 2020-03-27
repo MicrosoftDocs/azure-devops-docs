@@ -1,23 +1,18 @@
-﻿---
+---
 title: Build and Release Tasks
 ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Tasks
+# Task types & usage
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 A **task** is the building block for defining automation in a
 pipeline.
@@ -143,11 +138,11 @@ In this YAML, `PublishTestResults@2` will run even if the previous step fails be
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: ''3.7'
+    versionSpec: '3.7'
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
-   testResultsFiles: "**/TEST-*.xml"
+    testResultsFiles: "**/TEST-*.xml"
   condition: succeededOrFailed()
 ```
 
@@ -157,7 +152,7 @@ steps:
 
 ### Conditions
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 ### Step target
@@ -217,7 +212,7 @@ Select this option if you want subsequent tasks in the same job to possibly run 
 
 Select the condition for running this task:
 
-[!INCLUDE [include](_shared/task-run-built-in-conditions.md)]
+[!INCLUDE [include](includes/task-run-built-in-conditions.md)]
 * [Custom conditions](conditions.md) which are composed of [expressions](expressions.md)
 
 > [!NOTE]
@@ -259,13 +254,13 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-  # Node install
-  - task: NodeTool@0
-    displayName: Node install
-    inputs:
-      versionSpec: '6.x' # The version we're installing
-  # Write the installed version to the command line
-  - script: which node
+# Node install
+- task: NodeTool@0
+  displayName: Node install
+  inputs:
+    versionSpec: '6.x' # The version we're installing
+# Write the installed version to the command line
+- script: which node
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.
@@ -299,7 +294,7 @@ NodeVersionSpec
 
 Add these tasks:
 
-![icon](../tasks/tool/_img/node.png) Tool: Node.js Installer
+![icon](../tasks/tool/media/node.png) Tool: Node.js Installer
 
 * Version Spec: 
 
@@ -307,7 +302,7 @@ Add these tasks:
   $(NodeVersionSpec)
   ```
 
-![icon](../tasks/utility/_img/command-line.png) Utility: Command Line
+![icon](../tasks/utility/media/command-line.png) Utility: Command Line
 
 * Script (if you're running on a Windows agent)
   ```
@@ -337,10 +332,10 @@ Click **Save & queue**. Observe how two builds are run. The [Node.js Tool Instal
 
 For a list of our tool installer tasks, see [Tool installer tasks](../tasks/index.md#tool).
 
-## Related topics
+## Related articles
 
-* [Task jobs](phases.md)
+* [Jobs](phases.md)
 * [Task groups](../library/task-groups.md)
 * [Built-in task catalog](../tasks/index.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

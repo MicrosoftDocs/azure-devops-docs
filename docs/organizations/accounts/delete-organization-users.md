@@ -3,11 +3,9 @@ title: Delete or remove users from team or project
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/21/2019
@@ -16,7 +14,7 @@ monikerRange: 'azure-devops'
 
 # Remove users from Azure DevOps  
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If users no longer require access to a project or your organization, you can remove their access to the project or your organization.  
 
@@ -33,27 +31,25 @@ If users no longer require access to a project or your organization, you can rem
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings > Users](../../_shared/_img/open-organization-settings-users-preview.png)
+    ![Organization settings > Users](../../media/open-organization-settings-users-preview.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-preview.png)
+   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-preview.png)
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user-preview.png)
+   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
 7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
@@ -68,27 +64,25 @@ If users no longer require access to a project or your organization, you can rem
 
 1. Sign in to your organization: ```https://dev.azure.com/{yourorganization}```.
 
-   [Why am I asked to choose between my work or school account and my personal account?](faq-create-organization.md#ChooseOrgAcctMSAcct)
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
-
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**.
 
-    ![Organization settings, users](../../_shared/_img/settings/open-organization-settings-users-vert.png)
+    ![Organization settings, users](../../media/settings/open-organization-settings-users-vert.png)
 
 4. Open the context menu **...**  for the user to be removed. Select **Remove from organization**.
 
-   ![Remove a user from your organization](_img/delete-user/remove-user-from-organization-new.png)
+   ![Remove a user from your organization](media/delete-user/remove-user-from-organization-new.png)
 
 5. Choose **Remove** in the confirmation dialog.
 
-   ![Confirm removing an existing user](_img/delete-user/confirm-remove-existing-user.png)
+   ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user.png)
 
 6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
-   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-add-delete-users.md#users-delay)
+   [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
 7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
 
@@ -136,13 +130,12 @@ az devops user remove --user contoso@contoso.com --org https://dev.azure.com/con
 
 To remove users from a project, remove them from the **Teams** groups they belong to or the **Contributors** group for the project. See [Add users to a project or specific team](../../organizations/security/add-users-team-project.md). You can remove a user from the **Members** page of a team group or security group.
 
-![Remove a user from a security group, new navigation](_img/delete-user/remove-user-vert.png)
+![Remove a user from a security group, new navigation](media/delete-user/remove-user-vert.png)
 
 ## Related articles
 
 - [Set permissions at the project level or project collection level](../../organizations/security/set-project-collection-level-permissions.md). 
 - [Change individual permissions and grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
 - [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-- [Troubleshoot adding and deleting organization users in the Users page](faq-add-delete-users.md)
-- [Troubleshoot adding members to projects](faq-add-team-members.md)
+- [Troubleshoot adding and deleting organization users](faq-user-and-permissions-management.md)
 - [Export a list of users and their access levels](../security/export-users-audit-log.md)

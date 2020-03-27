@@ -2,10 +2,8 @@
 title: TF30172-You do not have permission ... 
 titleSuffix: Azure DevOps & TFS
 description: Display the error when you run the New Team Project Wizard.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 86cab4b8-7988-4cb7-b553-2cbb3ac70b29
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting
@@ -13,7 +11,7 @@ ms.date: 01/20/2017
 ---
 # TF30172: You do not have permission to create a new project
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You receive this error when your run the New Team Project Wizard under the following conditions:  
   

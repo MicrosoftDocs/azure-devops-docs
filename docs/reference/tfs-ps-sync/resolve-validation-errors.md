@@ -2,10 +2,8 @@
 title: Resolve validation errors 
 titleSuffix: TFS 
 description: Resolve data validation errors that appear in the Unpublished work items list with the integration of Team Foundation Server & Project Server  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 72c1dd06-a3a1-499c-b2a3-4d7f884033fd
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
@@ -15,7 +13,7 @@ ms.date: 01/12/2017
 
 # Resolve validation errors for data synchronization 
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 When you publish an enterprise project plan that is mapped to a project, the Team Foundation add-in for Microsoft Project Professional performs several data validation checks. A data validation error occurs if you define or modify the values for a task that is set to publish to Team Foundation Server (TFS) and one or more values violate a rule that is defined for the type of work item that is associated with the task.  
   
@@ -47,7 +45,7 @@ When you publish an enterprise project plan that is mapped to a project, the Tea
   
 1.  Choose the row that contains the **Invalid Work Item Type** issue, choose **Choose Values**, and then specify the type of work item that you want to associate with the task.  
   
-     ![Choose a valid work item type](_img/ps-tfs_proj_validresolut.png "PS-TFS_Proj_ValidResolut")  
+     ![Choose a valid work item type](media/ps-tfs_proj_validresolut.png "PS-TFS_Proj_ValidResolut")  
   
     > [!NOTE]
     >  The add-in for Project Server Integration validates the task field assignments against the work item type rules when they are published.  

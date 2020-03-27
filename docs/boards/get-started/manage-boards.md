@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Customize your issues board to show fields, add columns, and change card color
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,7 +15,7 @@ ms.date: 07/17/2019
 
 # Configure settings and manage your Azure Boards project
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
 
@@ -69,7 +67,7 @@ If you support several products or feature areas, you can assign issues and task
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |![Default iterations, Basic process](../../organizations/settings/_img/areas/areas-iterations-iterations-intro-ts-2016.png) | ![A set of sample area paths](../../organizations/settings/_img/areas/areas-iterations-areas-intro-ts-2016.png)  | 
+> |![Default iterations, Basic process](../../organizations/settings/media/areas/areas-iterations-iterations-intro-ts-2016.png) | ![A set of sample area paths](../../organizations/settings/media/areas/areas-iterations-areas-intro-ts-2016.png)  | 
 
 <a id="customize" />
 
@@ -109,7 +107,7 @@ A number of notifications are predefined for each project. Notifications are bas
 If users believe they're getting too many notifications, they can [opt out of a subscription](../../notifications/howto-manage-personal-notifications.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Personal notifications](../../user-guide/_img/services/personal-notifications.png) 
+> ![Personal notifications](../../user-guide/media/services/personal-notifications.png) 
 
 
 ::: moniker range=">= tfs-2015"
@@ -131,7 +129,7 @@ To simplify the web portal user interface, you can disable select services. If y
 This example shows that **Test Plans** has been disabled:
 
 > [!div class="mx-imgBorder"]  
-> ![Disable a service](../../user-guide/_img/services/set-service-visibility.png)   
+> ![Disable a service](../../user-guide/media/services/set-service-visibility.png)   
 
 ::: moniker-end
 
