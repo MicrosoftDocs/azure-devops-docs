@@ -9,8 +9,8 @@ To use all the features described in this article, you must have one of the foll
 - [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
 - [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
 
-Or, install [Test Manager extension for Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
-available from Visual Studio Marketplace.
+Or, have the [Basic + Test Plans](../../organizations/security/access-levels.md)
+access levels.
 
 See [Manual testing permissions and access](../manual-test-permissions.md).
 ******
