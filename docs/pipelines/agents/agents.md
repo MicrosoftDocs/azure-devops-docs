@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 11/20/2019
+ms.date: 03/27/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -474,6 +474,23 @@ If you run a self-hosted agent interactively, or if there is a newer _major_ ver
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
 
+### To update self-hosted agents
+
+1. Navigate to **Project settings**, **Agent pools**.
+
+    ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
+
+2. Select your agent pool and choose **Update all agents**.
+
+    ![Update all agents](media/agents/update-all-agents.png)
+
+    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+
+    You can also update agents individually by choosing **Update agent** from the **...** menu.
+
+    ![Update agent](media/agents/update-agent.png)
+
+3. 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
