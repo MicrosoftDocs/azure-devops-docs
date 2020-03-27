@@ -1575,10 +1575,10 @@ If you specify an environment or one of its resources but don't need to specify 
 ```yaml
 environment: environmentName.resourceName
 strategy:                 # deployment strategy
-    runOnce:              # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+  runOnce:              # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 # [Example](#tab/example)
