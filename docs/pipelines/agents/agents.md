@@ -467,7 +467,7 @@ We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
 Microsoft-hosted agents are always kept up-to-date.
-If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically by Azure Pipelines.
+If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
 If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
@@ -490,7 +490,6 @@ Your pipelines won't run until they can target a compatible agent.
 
     ![Update agent](media/agents/update-agent.png)
 
-3. 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
