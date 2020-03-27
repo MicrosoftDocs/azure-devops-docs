@@ -484,11 +484,15 @@ Your pipelines won't run until they can target a compatible agent.
 
     ![Update all agents](media/agents/update-all-agents.png)
 
-    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
-
     You can also update agents individually by choosing **Update agent** from the **...** menu.
 
     ![Update agent](media/agents/update-agent.png)
+
+3. Select **Update** to confirm the update.
+
+    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+
+4. Upgrading typically only takes a few moments, and you can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
