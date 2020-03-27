@@ -2,10 +2,8 @@
 title: Policy Overview | REST API Reference for Team Foundation Server
 description: Work with policies programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: c7fc7c92-075e-4bfc-8b66-9a9a5f28bdbd
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -23,7 +21,7 @@ ms.date: 08/04/2016
 If you haven’t already, look at the information on getting started with these APIs and our documentation on [branch policies](https://go.microsoft.com/fwlink/?LinkID=615252). Use these APIs to define policies for your projects. 
 [Configurations](./configurations.md) associate a [type](./types.md), such as "Required reviewers", with specific [settings](./settings.md), such as  "For pull requests with files named *.dll targeting the master branch in the Fabrikam Git repository, add the Source-Controlled Binaries Team as a required reviewer". 
 
-![policy resources](./_img/policy-resources.png)
+![policy resources](./media/policy-resources.png)
 
 * [Types](./types.md)
 * [Configurations](configurations.md)

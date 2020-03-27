@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 10/02/2019
 
 # Query quick reference 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
 
@@ -33,7 +31,7 @@ For specific examples, choose one of the following articles listed under [Query 
 <ul>
 <li><a href="using-queries.md" data-raw-source="[Add a query](using-queries.md)">Add a query</a></li>
 <li><a href="../../report/dashboards/charts.md" data-raw-source="[Add a query chart](../../report/dashboards/charts.md)">Add a query chart</a></li>
-<li><a href="../../report/dashboards/add-charts-to-dashboard.md#work-item-query" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md#work-item-query)">Add a query to a dashboard</a></li>
+<li><a href="../../report/dashboards/add-charts-to-dashboard.md" data-raw-source="[Add a query to a dashboard](../../report/dashboards/add-charts-to-dashboard.md)">Add a query to a dashboard</a></li>
 <li><a href="organize-queries.md" data-raw-source="[Add a query folder](organize-queries.md)">Add a query folder</a></li>
 <li><a href="../backlogs/set-column-options.md" data-raw-source="[Add columns to query results](../backlogs/set-column-options.md)">Add columns to query results</a></li>
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify query items](../backlogs/bulk-modify-work-items.md)">Bulk modify query items</a></li>
@@ -47,7 +45,7 @@ For specific examples, choose one of the following articles listed under [Query 
 <ul>
 <li><a href="view-run-query.md#email-query" data-raw-source="[Email a query](view-run-query.md#email-query)">Email a query</a></li>
 <li><a href="using-queries.md#export-query" data-raw-source="[Export a query](using-queries.md#export-query)">Export a query</a></li>
-<li><a href="view-run-query.md#favorite" data-raw-source="[Favorite a query](view-run-query.md#favorite)">Favorite a query</a></li>
+<li><a href="view-run-query.md" data-raw-source="[Favorite a query](view-run-query.md)">Favorite a query</a></li>	
 <li><a href="../backlogs/filter-backlogs.md" data-raw-source="[Filter a query](../backlogs/filter-backlogs.md)">Filter a query</a></li>
 <li><a href="using-queries.md#flat-list-query" data-raw-source="[Flat-list query](using-queries.md#flat-list-query)">Flat-list query</a></li>
 <li><a href="using-queries.md#group-clauses" data-raw-source="[Group a clause](using-queries.md#group-clauses)">Group a clause</a></li>

@@ -1,13 +1,10 @@
 ---
 title: Deploy Jenkins CI builds
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
-ms.manager: mijacobs
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019
@@ -16,10 +13,10 @@ monikerRange: '>= tfs-2015'
 
 # Continuously deploy from a Jenkins build
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines supports integration with Jenkins so that you can use
@@ -39,7 +36,7 @@ A typical approach is to use Jenkins to build an app from source
 code hosted in a Git repository such as GitHub and then deploy it to
 Azure using Azure Pipelines.
 
-![Schematic of deployment from GitHub and Jenkins to Azure](_img/integrate-jenkins-vsts-cicd/schematic1.png)
+![Schematic of deployment from GitHub and Jenkins to Azure](media/integrate-jenkins-vsts-cicd/schematic1.png)
 
 ## Before you begin
 
@@ -96,15 +93,15 @@ jobs:
   pool:
     name: Default
   steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        connectionType: 'AzureRM'
-        azureSubscription: your-subscription-name
-        appType: webAppLinux
-        webAppName: 'MyApp'
-        deployToSlotOrASE: false
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        takeAppOfflineFlag: true
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      connectionType: 'AzureRM'
+      azureSubscription: your-subscription-name
+      appType: webAppLinux
+      webAppName: 'MyApp'
+      deployToSlotOrASE: false
+      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      takeAppOfflineFlag: true
 ...
 ```
 

@@ -3,10 +3,8 @@ title: Create Excel reports from a work item query
 description: View progress by creating status and trend Excel charts from a flat list query when connecting to a team project on Team Foundation Server    
 ms.assetid: EBBA2C3A-A9F4-4808-B746-5DC0F039EA53  
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Create Excel reports from a work item query  
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
@@ -40,7 +38,7 @@ One of the quickest ways to generate a custom report in Excel is to start with a
 
 Here's an example of a status report generated from a flat-list query.  
 
-![Excel State pie chart report](_img/IC733832.png)   
+![Excel State pie chart report](media/IC733832.png)   
 
 
 #### Requirements 
@@ -67,11 +65,11 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 
 2. Create a report in Excel From the query results view.
 
-   ![Create Report in Microsoft Excel](_img/IC730317.png)
+   ![Create Report in Microsoft Excel](media/IC730317.png)
 
 3. Select the check boxes of the reports that you want to generate.
 
-   ![Expanded nodes, New Work Item Report dialog box](_img/IC730318.png)
+   ![Expanded nodes, New Work Item Report dialog box](media/IC730318.png)
 
    Wait until Excel finishes generating the reports. This step might take several minutes, depending on the number of reports and quantity of data.
 
@@ -86,7 +84,7 @@ Use this procedure when you work from the Team Explorer plug-in for Visual Studi
 Use this procedure when you work from the web portal or the Team Explorer plug-in for Visual Studio. 
 
 1. Open an Office Excel workbook and choose **New Report**.  
-   ![New Report (Team menu selection)](_img/IC733833.png)  
+   ![New Report (Team menu selection)](media/IC733833.png)  
 
    If you don't see the Team menu, you'll need to install Team Explorer to get the Team Foundation add-in to Excel. See **Requirements** listed earlier in this article.   
 

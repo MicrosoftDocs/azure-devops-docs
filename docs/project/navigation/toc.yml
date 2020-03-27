@@ -1,5 +1,5 @@
 - name: Web portal navigation 
-  href: index.md?toc=/azure/devops/project/navigation/toc.json&bc=/azure/devops/project/navigation/breadcrumb/toc.json 
+  href: index.md
 - name: Open a service, page, or setting 
   href: go-to-service-page.md   
 - name: Add an artifact or team artifacts

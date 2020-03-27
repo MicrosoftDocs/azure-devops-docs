@@ -2,10 +2,7 @@
 title: Publish Code Coverage Results task
 description: Publish Cobertura or JaCoCo code coverage results from an Azure Pipelines or TFS build
 ms.assetid: 18F19A70-E9FF-4697-A3E9-CA3B34FCB15D
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Publish Code Coverage Results task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a build pipeline to publish code coverage results produced when
 running tests to Azure Pipelines or TFS in order to obtain coverage reporting.
@@ -38,7 +35,7 @@ in the pipeline.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishCodeCoverageResultsV1.md)]
+[!INCLUDE [temp](../includes/yaml/PublishCodeCoverageResultsV1.md)]
 
 The **codeCoverageTool** and **summaryFileLocation** parameters are mandatory. 
 
@@ -82,5 +79,5 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 
 If you use multiple publish code coverage tasks in the pipeline, the summary and report is shown for the last task. Any previously uploaded data is ignored.
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]
 

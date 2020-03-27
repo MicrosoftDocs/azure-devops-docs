@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Use keyboard shortcuts with work item forms and the Work Items hub
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference
 monikerRange: '>= tfs-2013'
@@ -18,7 +16,7 @@ ms.date: 11/19/2018
 # Keyboard shortcuts for work item forms 
   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 With keyboard shortcuts, you can quickly navigate within a web page or the web work item form. 
 
@@ -27,13 +25,13 @@ With keyboard shortcuts, you can quickly navigate within a web page or the web w
 
 ## Boards>Work Items 
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/work-items-page-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
 ::: moniker-end  
 
 ## Work item form shortcuts
 
-[!INCLUDE [temp](../../_shared/keyboard-shortcuts/wi-form-shortcuts.md)] 
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)] 
 
 
 ## Related articles

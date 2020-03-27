@@ -2,11 +2,7 @@
 title: Share your Azure DevOps Services packages with badges
 description: Share your NuGet, npm, or Maven packages from Azure DevOps Services with badges
 ms.assetid: 60a3f33a-d8bc-436a-a676-c1bd4b3066e7
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 02/16/2018
 monikerRange: '>= tfs-2018'
@@ -19,7 +15,7 @@ monikerRange: '>= tfs-2018'
 You can share your packages anywhere you can share an image with badges. You can put a badge directly into your project's home page in Azure DevOps Services or in any Markdown/README file so readers can easily discover and consume your package.
 
 Example NuGet package badge:  
-![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](_shared/_img/package-badge.png)
+![Azure DevOps Services Package sharing badge for NuGet, npm, or Maven](media/package-badge.png)
 
 > [!NOTE]
 > Package badges can only be created and shared for released versions of packages; the criteria for what is considered a released version depends on the protocol type. Prereleased versions will not be displayed in badges, instead the badge will show the latest release version.
@@ -34,13 +30,13 @@ To start sharing your Azure DevOps Services-hosted packages with badges you'll f
 
    ::: moniker range=">= azure-devops-2019"
 
-   ![Edit an Azure DevOps Services feed in Azure Artifacts](_shared/_img/edit-feed-full-newnav.png)
+   ![Edit an Azure DevOps Services feed in Azure Artifacts](media/edit-feed-full-newnav.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Edit an Azure DevOps Services feed in Package](_shared/_img/edit-feed-full.png)
+   ![Edit an Azure DevOps Services feed in Package](media/edit-feed-full.png)
 
    ::: moniker-end
 
@@ -50,13 +46,13 @@ This will enable the **Create badge** button for every package in that feed.
 
 ::: moniker range=">= azure-devops-2019"
 
-![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](_img/pm-create-badge-newnav.png)
+![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](media/pm-create-badge-newnav.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](_img/pm-create-badge.png)
+![Create badge for NuGet, npm, or Maven packages in Azure DevOps Services](media/pm-create-badge.png)
 
 ::: moniker-end
 

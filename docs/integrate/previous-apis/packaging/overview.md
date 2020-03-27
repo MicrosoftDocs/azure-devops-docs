@@ -2,9 +2,7 @@
 title: Overview | REST API Reference for VSTS
 description: Work with feeds and packages programmatically using the REST APIs for VSTS .
 ms.assetid: 71d1eb9d-fd02-4ecd-8194-547ed07b8a44
-ms.manager: mijacobs
 ms.date: 09/29/2016
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
@@ -26,7 +24,7 @@ You can create [feeds](./feeds.md) and store [packages](./packages.md) in those 
 Feeds have [permissions](./permissions.md) which control who can read from, push to, and manage feeds.
 
 
-![Packaging resources](./_img/packaging-resources.png)
+![Packaging resources](./media/packaging-resources.png)
 
 You can also access [NuGet specific operations](./nuget.md) such as delete and delist.
 

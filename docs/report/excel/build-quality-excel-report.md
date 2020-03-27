@@ -2,19 +2,17 @@
 title: Build Quality Excel Report 
 description: Help monitor the success or failure rate of test activity with each build - Team Foundation Server 
 titleSuffix: TFS
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 ms.assetid: 60e637b9-4599-4fe5-bff1-e6adade81d9c
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 monikerRange: '<= tfs-2017'
 ms.date: 12/30/2016
 ---
 # Build Quality Excel report
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 > [!IMPORTANT]  
 > This report is only applicable for XAML builds, which are deprecated for TFS 2018 and later versions. If your build process isn't based on XAML builds, this report and the TFS Warehouse for builds won't yield any meaningful data.  
@@ -45,11 +43,11 @@ Teams who are responsible for testing software can use the Build Quality report 
 
  **Build verification testing**  
 
- ![Build Quality Excel Report](_img/procg_buildqualitybvt.png "ProcG_BuildQualityBVT")  
+ ![Build Quality Excel Report](media/procg_buildqualitybvt.png "ProcG_BuildQualityBVT")  
 
  **Test activity per build**  
 
- ![Test Activity PerBuild Excel Report](_img/procg_testactperbuild.png "ProcG_TestActPerBuild")  
+ ![Test Activity PerBuild Excel Report](media/procg_testactperbuild.png "ProcG_TestActPerBuild")  
 
  The following table describes the report filters and fields that are used in the PivotTables that generate the Build Quality reports.  
 

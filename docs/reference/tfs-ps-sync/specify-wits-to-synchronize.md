@@ -2,10 +2,8 @@
 title: Specify the work item types to synchronize 
 titleSuffix: TFS 
 description: Specify the types of work items that you want to participate in synchronization between Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: fc034114-fce1-48ca-a4e9-df41081a4bbb
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -13,7 +11,7 @@ ms.date: 01/12/2017
 ---
 
 # Specify the work item types to synchronize
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> To support synchronization of data between an enterprise project plan and a project, you must specify the types of work items that you want to participate in synchronization. You can define the types when you associate a project plan to a project, and you can add or remove types later.  
   

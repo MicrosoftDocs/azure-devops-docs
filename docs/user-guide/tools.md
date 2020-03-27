@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -17,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Tools and clients that connect to Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In this article, learn about the tools and clients that connect to Azure DevOps.
 
@@ -69,7 +67,7 @@ Team Explorer, a plug-in to all Visual Studio versions, connects Visual Studio t
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git |Home page with TFVC |
 > |-------------|----------|
-> |<img src="../organizations/projects/_img/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/_img/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
+> |<img src="../organizations/projects/media/te-home-page-git-repo.png" title="Team Explorer home page with GiZit as source control" alt="Team Explorer home page with Git as source control" /> | <img src="../organizations/projects/media/te-home-page-tfvc-repo.png" title="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" alt="Team Explorer home page with Team Foundation Version Control (TFVC) as source control" /> |
 
 ## Office integration tools
 
@@ -95,7 +93,7 @@ You can integrate the following Microsoft Office tools with Azure DevOps.
 
 > [!TIP]
 > Check to make sure the Azure DevOps Office Integration component is selected in the Visual Studio Installer, per the following example.
-> ![Check Azure DevOps Office Integration](_img/check-azure-devops-office-integration-code-tools.png)
+> ![Check Azure DevOps Office Integration](media/check-azure-devops-office-integration-code-tools.png)
 
 ::: moniker-end
 

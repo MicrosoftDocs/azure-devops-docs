@@ -1,11 +1,9 @@
 ---
 title: Progress dashboard (Agile and CMMI) | TFS
 description: Dashboard designed to monitor team progress, burndown, and issues toward-Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: abd1932d-47d3-4e5c-82a8-1b2d6fc4af89
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '< tfs-2018'
@@ -14,7 +12,7 @@ ms.date: 03/09/2017
 
 # Progress dashboard (Agile and CMMI)
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 You can use the Progress dashboard to track team progress toward completing an iteration. This dashboard displays four reports that help you monitor progress, burndown, and issues.  
 
@@ -36,28 +34,28 @@ You can use the Progress dashboard to track team progress toward completing an i
   
  **Agile process template version**  
   
- ![Burndown Dashboard](_img/procguide_dashboard_teamprogress.png "ProcGuide_Dashboard_TeamProgress")  
+ ![Burndown Dashboard](media/procguide_dashboard_teamprogress.png "ProcGuide_Dashboard_TeamProgress")  
   
  **CMMI process template version**  
   
- ![Burndown dashboard](_img/procguid_dashboardburndown.png "ProcGuid_DashboardBurndown")  
+ ![Burndown dashboard](media/procguid_dashboardburndown.png "ProcGuid_DashboardBurndown")  
   
 > [!NOTE]  
->  Burndown, progress, and trend charts, reports ![Step 1](_img/procguid_1.png "ProcGuid_1") through ![Step 4](_img/procguid_4.png "ProcGuid_4"), do not appear when the server that hosts Analysis Services for the team project is not available.  
+>  Burndown, progress, and trend charts, reports ![Step 1](media/procguid_1.png "ProcGuid_1") through ![Step 4](media/procguid_4.png "ProcGuid_4"), do not appear when the server that hosts Analysis Services for the team project is not available.  
   
  For more information about how to interpret, update, or customize the charts that appear in the Progress dashboard, see the topics that are listed in the following table.  
   
 |Web Part|Data displayed|  
 |--------------|--------------------|  
-|![Step 1](_img/procguid_1.png "ProcGuid_1")|[Burndown](../excel/burndown-excel-report.md)<br /><br /> A visual representation of the cumulative count of all hours that the team spent on all tasks for the past four weeks.<br /><br /> ![Burndown chart](_img/procguid_agileburn.png "ProcGuid_AgileBurn")<br /><br /> The **Ideal Trend** line calculates a slope or trajectory for when work will be completed based on the amount of work remaining and the end date of the report. The line is drawn from the remaining work on the start date to intersect the x-axis on the end date.|  
-|![Step 2](_img/procguid_2.png "ProcGuid_2")|[Task Progress](../excel/task-progress-excel-report.md)<br /><br /> A visual representation of the cumulative count of all active and closed tasks for the past four weeks.<br /><br /> ![Task Progress Excel Report](_img/procguid_exceltask.png "ProcGuid_ExcelTask")|  
-|![Step 3](_img/procguid_3.png "ProcGuid_3")|[User Story Progress](../excel/user-story-progress-excel-report-agile.md)<br /><br /> [Requirements Progress](../excel/requirements-progress-excel-report-cmmi.md)<br /><br /> A visual representation of the cumulative count of all user stories (Agile) or requirements (CMMI), grouped by their state, for the past four weeks.<br /><br /> ![Example User Stories report](_img/procguid_excelreport.png "ProcGuid_ExcelReport")|  
-|![Step 4](_img/procguid_4.png "ProcGuid_4")|[Issue Trends](../excel/issue-trends-excel-report.md)<br /><br /> Line chart that shows the rolling average of the number of Issues that the team has opened and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![7&#45;Day Issue Trend Excel Report](_img/procguid_7day.png "ProcGuid_7Day")|  
-|![Step 5](_img/procguid_6.png "ProcGuid_6")|[Issues Workbook](workbooks.md)<br /><br /> Query results list of active issues.|  
-|![Step 6](_img/procguid_6a.png "ProcGuid_6a")|List of upcoming events. The list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](_img/sharepoint_dashboard.png "SharePoint_Dashboard")|  
-|![Step 7](_img/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number.<br /><br /> ![Project Work Items Web part](_img/twsa_dashprojectwi.png "TWSA_DashProjectWI")|  
-|![Step 8](_img/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a specific build by choosing it.<br /><br /> ![Recent Builds Web part](_img/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> See also [Run, monitor, and manage](../../pipelines/overview.md).|  
-|![9](_img/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it.<br /><br /> ![Recent Checkins Web part](_img/twsa_dashcheckins.png "TWSA_DashCheckins")<br /><br /> See also [Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md).|  
+|![Step 1](media/procguid_1.png "ProcGuid_1")|[Burndown](../excel/burndown-excel-report.md)<br /><br /> A visual representation of the cumulative count of all hours that the team spent on all tasks for the past four weeks.<br /><br /> ![Burndown chart](media/procguid_agileburn.png "ProcGuid_AgileBurn")<br /><br /> The **Ideal Trend** line calculates a slope or trajectory for when work will be completed based on the amount of work remaining and the end date of the report. The line is drawn from the remaining work on the start date to intersect the x-axis on the end date.|  
+|![Step 2](media/procguid_2.png "ProcGuid_2")|[Task Progress](../excel/task-progress-excel-report.md)<br /><br /> A visual representation of the cumulative count of all active and closed tasks for the past four weeks.<br /><br /> ![Task Progress Excel Report](media/procguid_exceltask.png "ProcGuid_ExcelTask")|  
+|![Step 3](media/procguid_3.png "ProcGuid_3")|[User Story Progress](../excel/user-story-progress-excel-report-agile.md)<br /><br /> [Requirements Progress](../excel/requirements-progress-excel-report-cmmi.md)<br /><br /> A visual representation of the cumulative count of all user stories (Agile) or requirements (CMMI), grouped by their state, for the past four weeks.<br /><br /> ![Example User Stories report](media/procguid_excelreport.png "ProcGuid_ExcelReport")|  
+|![Step 4](media/procguid_4.png "ProcGuid_4")|[Issue Trends](../excel/issue-trends-excel-report.md)<br /><br /> Line chart that shows the rolling average of the number of Issues that the team has opened and closed for the past four weeks. The rolling average is based on the seven days before the date for which it is calculated.<br /><br /> ![7&#45;Day Issue Trend Excel Report](media/procguid_7day.png "ProcGuid_7Day")|  
+|![Step 5](media/procguid_6.png "ProcGuid_6")|[Issues Workbook](workbooks.md)<br /><br /> Query results list of active issues.|  
+|![Step 6](media/procguid_6a.png "ProcGuid_6a")|List of upcoming events. The list is derived from a SharePoint Web Part.<br /><br /> ![Import Events Web part](media/sharepoint_dashboard.png "SharePoint_Dashboard")|  
+|![Step 7](media/procguid_7.png "ProcGuid_7")|Count of active, resolved, and closed work items. You can open the list of work items by choosing each number.<br /><br /> ![Project Work Items Web part](media/twsa_dashprojectwi.png "TWSA_DashProjectWI")|  
+|![Step 8](media/procguid_8.png "ProcGuid_8")|List of recent builds and their status. You can view more details about a specific build by choosing it.<br /><br /> ![Recent Builds Web part](media/twsa_dashbuilds.png "TWSA_DashBuilds")<br /><br /> See also [Run, monitor, and manage](../../pipelines/overview.md).|  
+|![9](media/procguid_9.png "ProcGuid_9")|List of the most recent check-ins. You can view more details about a specific check-in by choosing it.<br /><br /> ![Recent Checkins Web part](media/twsa_dashcheckins.png "TWSA_DashCheckins")<br /><br /> See also [Manage pending changes](../../repos/tfvc/develop-code-manage-pending-changes.md).|  
   
 ##  <a name="RequiredActivities"></a> Required activities for tracking progress  
  For the reports that appear in the Progress dashboard to be useful and accurate, the team must perform the following activities:  
@@ -80,7 +78,7 @@ You can use the Progress dashboard to track team progress toward completing an i
  To track an iteration by using the Progress dashboard, you must modify the Task Burndown report in Office Excel to reflect the start date for your iteration. By default, the start date is five days before the current date.  
   
 > [!NOTE]
->  The progress and trend reports, ![Step 2](_img/procguid_2.png "ProcGuid_2") through ![Step 4](_img/procguid_4.png "ProcGuid_4"), display data for the previous four weeks. You can change the time interval for these reports by modifying the corresponding report in Office Excel.  
+>  The progress and trend reports, ![Step 2](media/procguid_2.png "ProcGuid_2") through ![Step 4](media/procguid_4.png "ProcGuid_4"), display data for the previous four weeks. You can change the time interval for these reports by modifying the corresponding report in Office Excel.  
   
 ##### To modify the Task Burndown report to correspond to a specific iteration  
   
@@ -88,15 +86,15 @@ You can use the Progress dashboard to track team progress toward completing an i
   
 2.  Check out the Burndown file.  
   
-3.  On the Reports worksheet, choose the ![Down arrow](_img/wit_downarrow.gif "WIT_DownArrow") down arrow in the cell to the right of Work Item.Iteration Hierarchy, expand the selections, and then select the check box of the iteration that you want to track.  
+3.  On the Reports worksheet, choose the ![Down arrow](media/wit_downarrow.gif "WIT_DownArrow") down arrow in the cell to the right of Work Item.Iteration Hierarchy, expand the selections, and then select the check box of the iteration that you want to track.  
   
-4.  (Optional) Click the ![Down arrow](_img/wit_downarrow.gif "WIT_DownArrow") down arrow in the cell to the right of Work Item.Area Hierarchy, expand the selections, and then select the check box of the product area that you want to track.  
+4.  (Optional) Click the ![Down arrow](media/wit_downarrow.gif "WIT_DownArrow") down arrow in the cell to the right of Work Item.Area Hierarchy, expand the selections, and then select the check box of the product area that you want to track.  
   
 5.  In the cell under **Date**, specify the start date of the time interval in either mm/dd or mm/dd/yyyy format.  
   
-6.  Click the cell that contains the start date that you just specified, and then drag the fill handle![A small square in the cell's lower&#45;right corner.](_img/icon_fillhandle.gif "Icon_FillHandle") across the cells that you want to fill.  
+6.  Click the cell that contains the start date that you just specified, and then drag the fill handle![A small square in the cell's lower&#45;right corner.](media/icon_fillhandle.gif "Icon_FillHandle") across the cells that you want to fill.  
   
-7.  (Optional) Use the **Auto Fill Options** button ![Auto Fill Options button image](_img/icon_autofilloptions.gif "Icon_AutoFillOptions") to specify how to fill the selection.  
+7.  (Optional) Use the **Auto Fill Options** button ![Auto Fill Options button image](media/icon_autofilloptions.gif "Icon_AutoFillOptions") to specify how to fill the selection.  
   
      For example, you can specify **Fill Series** or **Fill Weekdays**.  
   

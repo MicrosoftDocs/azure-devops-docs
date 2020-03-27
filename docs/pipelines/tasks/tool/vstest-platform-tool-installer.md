@@ -2,10 +2,7 @@
 title: Visual Studio Test Platform Installer task
 description: Acquires the test platform from nuget.org or the tools cache and can allow you to run tests and collect diagnostic data
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 2C65196A-54FD-4A02-9BE8-D9D1837B7111
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -30,7 +27,7 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/VsTestPlatformToolInstallerV1.md)]
+[!INCLUDE [temp](../includes/yaml/VsTestPlatformToolInstallerV1.md)]
 
 ::: moniker-end
 
@@ -50,11 +47,11 @@ in a build or release pipeline can run without needing a full Visual Studio inst
 
 * The **Visual Studio Test Platform Installer** task must appear before the **Visual Studio Test** task in the build or release pipeline.
 
-  ![Order of tasks](_img/tpinstaller1.png)
+  ![Order of tasks](media/tpinstaller1.png)
 
 * The **Test platform version** option in the **Visual Studio Test** task must be set to **Installed by Tools Installer**. 
 
-  ![Task setting](_img/tpinstaller2.png)
+  ![Task setting](media/tpinstaller2.png)
 
 See [Run automated tests from test plans](../../../test/run-automated-tests-from-test-hub.md)
 

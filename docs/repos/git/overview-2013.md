@@ -3,9 +3,7 @@ title: Use Visual Studio and Team Foundation Server with Git
 titleSuffix: Azure Repos
 description: Use Visual Studio and Team Foundation Server with Git
 ms.assetid: 0017E2D7-ECD9-44B9-9AF0-8279136E6B9B
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -20,7 +18,7 @@ monikerRange: 'tfs-2013'
 <table>
 <tr>
 <td>
-<img src="_img/IC673340.png" alt="Changes page in Team Explorer"/>
+<img src="media/IC673340.png" alt="Changes page in Team Explorer"/>
 </td>
 <td>
 <p>You can begin using <a href="http://www.git-scm.com/" data-raw-source="[Git](https://www.git-scm.com/)">Git</a> distributed version control before you write your first line of code with virtually no cost or risk. You get many benefits, including being able to revert to a known good state whenever you get in trouble. When you need to switch contexts, you can quickly create a private local branch. Later, you can either publish the branch or dispose of it.</p>

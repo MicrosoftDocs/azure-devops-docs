@@ -2,10 +2,8 @@
 title: Localization and globalization of WITD child elements 
 titleSuffix: TFS
 description: Understand how to change some parts of the work item type definition so that they appear in your native language - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 85408917-99ad-4153-8377-661801c85b14
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/20/2017
@@ -14,7 +12,7 @@ ms.date: 01/20/2017
 
 # Localization and globalization of WITD child elements
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 You can change some parts of the work item type definition so that they appear in your native language.  
   

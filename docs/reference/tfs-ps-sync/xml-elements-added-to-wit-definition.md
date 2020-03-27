@@ -2,10 +2,8 @@
 title: XML elements added to work item type definition
 titleSuffix: TFS
 description: Show the XML elements added to the definition for the work item type when using Team Foundation Server & Project Server integration
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 7f58b123-18df-4382-895e-01f7c9e366f8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -14,11 +12,11 @@ ms.date: 01/12/2017
 
 
 # XML elements added to the definition for the work item type
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="top"></a> You can manually update the definition of a work item type to support synchronization between Visual Studio Team Foundation Server and Microsoft Project Server. On occasion, a problem can occur when you map a work item type and Team Foundation Server does not add the required XML elements to the type definition. This problem can occur when the work item type does not include a `TabGroup` element, or changes to the type prohibit the addition of the necessary elements. In these situations, you can, as this topic describes, manually add the necessary elements to the type definition. These elements specify the fields and form controls that support the addition of the **Project Server** tab to the work item form, as the following illustration shows. For more information, see [Project Server fields that support data synchronization](project-server-fields-added-to-tfs.md).  
   
- ![Project Server Tab default fields](_img/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
+ ![Project Server Tab default fields](media/pstfs_projectservertab.png "PSTFS_ProjectServerTab")  
   
 <a name="manually_update"></a>   
 ##  To manually update a type definition to display project server fields  

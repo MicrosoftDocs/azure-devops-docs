@@ -3,9 +3,7 @@ title: Download (get) files from the Server
 titleSuffix: Azure Repos
 description: Download (get) files from the Server
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -91,8 +89,8 @@ In special cases (for example, to fix a regression bug), you might need to get a
 
 ## Tips
 
--   ![Tip](_img/download-get-files-from-server/IC572374.png) When you get files and folders from the server, the system also deletes any checked-in files from your local workspace that have been deleted from the server. Files that have been renamed or moved on the server are changed in your workspace to match the changes on the server.
+-   ![Tip](media/download-get-files-from-server/IC572374.png) When you get files and folders from the server, the system also deletes any checked-in files from your local workspace that have been deleted from the server. Files that have been renamed or moved on the server are changed in your workspace to match the changes on the server.
 
--   ![Tip](_img/download-get-files-from-server/IC572374.png) In Source Control Explorer you can verify whether you have the latest version of a file in the **Latest** column. You can see specific version information about an item by opening its shortcut menu and choosing **Properties**.
+-   ![Tip](media/download-get-files-from-server/IC572374.png) In Source Control Explorer you can verify whether you have the latest version of a file in the **Latest** column. You can see specific version information about an item by opening its shortcut menu and choosing **Properties**.
 
--   ![Tip](_img/download-get-files-from-server/IC572374.png) If you are using a [server workspace](decide-between-using-local-server-workspace.md), and you have accidentally deleted some files that you want to restore, you must use the [tf get /all](get-command.md) command to restore the deleted files.
+-   ![Tip](media/download-get-files-from-server/IC572374.png) If you are using a [server workspace](decide-between-using-local-server-workspace.md), and you have accidentally deleted some files that you want to restore, you must use the [tf get /all](get-command.md) command to restore the deleted files.

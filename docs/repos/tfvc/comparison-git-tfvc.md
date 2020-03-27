@@ -3,9 +3,7 @@ title: Git and TFVC version control
 titleSuffix: Azure Repos
 description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -110,7 +108,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>File storage</td>
 <td>You can check in large binary files. You might also want to use <a href="https://go.microsoft.com/fwlink/?LinkId=246165" data-raw-source="[NuGet](https://go.microsoft.com/fwlink/?LinkId=246165)">NuGet</a> in combination or as an alternative.</td>
-<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
+<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
 </tr>
 <tr>
 <td>History</td>
@@ -132,7 +130,7 @@ Need more help to make a choice? These charts might help.
 </tr>
 <tr>
 <td>Scale</td>
-<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace" data-raw-source="[local workspaces](decide-between-using-local-server-workspace.md#why-should-i-use-a-local-workspace)">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
+<td>You can work on small or very large scale projects using <a href="decide-between-using-local-server-workspace.md#local">local workspaces</a>. Supports massive scale (millions of files per branch and large binary files) projects using <a href="decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace" data-raw-source="[server workspaces](decide-between-using-local-server-workspace.md#when-might-i-need-to-use-a-server-workspace)">server workspaces</a>.</td>
 <td>You can quickly begin small projects. You can scale up to very large projects, but you have to plan ahead to modularize your codebase. You can create multiple repositories in a project.
 </td>
 </tr>

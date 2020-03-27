@@ -2,10 +2,8 @@
 title: Process template and plug-in files 
 titleSuffix: Azure DevOps & TFS
 description: Describes each process template and plug-in file and what is supported when you create a project via Visual Studio or the web portal  
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +13,7 @@ ms.date: 10/19/2017
 
 # Process template and plug-in files
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You customize the initial configuration of projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all projects that are created from the process template.  
 
@@ -29,10 +27,10 @@ Depending on whether you work from the Azure DevOps Services or TFS, you can cre
 
 | Client | Azure DevOps Services | TFS 2018 and TFS 2017 |  TFS 2015 and earlier versions |  
 |--------|---------------|-----------------|-----------------|  
-|Web portal | ![supported](../../_img/icons/checkmark.png)| ![supported](../../_img/icons/checkmark.png) | ![not supported](../../_img/icons/delete_icon.png)  |
-|Visual Studio/Team Explorer | ![not supported](../../_img/icons/delete_icon.png) | ![supported](../../_img/icons/checkmark.png) |![supported](../../_img/icons/checkmark.png)|  
+|Web portal | ![supported](../../media/icons/checkmark.png)| ![supported](../../media/icons/checkmark.png) | ![not supported](../../media/icons/delete_icon.png)  |
+|Visual Studio/Team Explorer | ![not supported](../../media/icons/delete_icon.png) | ![supported](../../media/icons/checkmark.png) |![supported](../../media/icons/checkmark.png)|  
 
-(![supported](../../_img/icons/checkmark.png)- Supported; ![not supported](../../_img/icons/delete_icon.png) - Not supported)  
+(![supported](../../media/icons/checkmark.png)- Supported; ![not supported](../../media/icons/delete_icon.png) - Not supported)  
 
 When you create a project from the web portal, the following plug-in files are ignored. 
 
@@ -58,7 +56,7 @@ Each plug-in file configures a specific functional area by defining one or more 
 
 The following table describes each plug-in file and whether or not it is supported when creating a project from Visual Studio/Team Explorer or the web portal.The order in which the plug-ins are called is determined by the root process template file. Except for the Classification plug-in, plug-ins can also be deleted from the process template.  
 
-(![supported](../../_img/icons/checkmark.png)- Supported; ![not supported](../../_img/icons/delete_icon.png) - Not supported)
+(![supported](../../media/icons/checkmark.png)- Supported; ![not supported](../../media/icons/delete_icon.png) - Not supported)
 
 <!---
 > [!IMPORTANT]  
@@ -80,8 +78,8 @@ The following table describes each plug-in file and whether or not it is support
 <tr>
 <td>Build<br/>
       <a href="define-initial-configuration-build.md" data-raw-source="[Build.xml](define-initial-configuration-build.md)">Build.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/delete_icon.png" alt="not supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/delete_icon.png" alt="not supported"/></td>
 <td>Defines the initial security permissions used by Team Foundation Build and uploads build template files.
 <blockquote>
 For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only default permissions are defined. 
@@ -92,8 +90,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <tr>
 <td>Classifications <br/>
       <a href="define-classification-plug-in.md" data-raw-source="[Classification.xml](define-classification-plug-in.md)">Classification.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
 <td>Configures the initial area and iteration or sprint paths. Also uploads the <a href="../xml/map-microsoft-project-fields-to-tf-fields.md" data-raw-source="[Microsoft Project Mapping (FileMapping.xml) file](../xml/map-microsoft-project-fields-to-tf-fields.md)">Microsoft Project Mapping (FileMapping.xml) file</a> that defines how work tracking fields map to Office Project fields.</td>
 </tr>
 
@@ -101,8 +99,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <tr>
 <td>Groups and Permissions<br/>
       <a href="define-groups-teams-permissions-plug-in.md" data-raw-source="[GroupsandPermissions.xml](define-groups-teams-permissions-plug-in.md)">GroupsandPermissions.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
 <td>Defines the initial security groups, teams, team members, and their permissions.</td>
 </tr>
 
@@ -110,8 +108,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <tr>
 <td>Lab Management<br/>
       <a href="define-initial-configuration-lab-management.md" data-raw-source="[Lab.xml](define-initial-configuration-lab-management.md)">Lab.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/delete_icon.png" alt="not supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/delete_icon.png" alt="not supported"/></td>
 <td>Defines the initial security permissions that are assigned to identities for Visual Studio Lab Management. 
 
 <blockquote>
@@ -126,8 +124,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <tr>
 <td>Reports<br/>
       <a href="add-reports-to-the-process-template.md" data-raw-source="[ReportsTasks.xml](add-reports-to-the-process-template.md)">ReportsTasks.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/delete_icon.png" alt="not supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/delete_icon.png" alt="not supported"/></td>
 <td>Creates the Report Manager site for the project and uploads the Reporting Services reports. Only supported for on-premises TFS. 
 <blockquote>
  For TFS 2017.3 and later versions, you can only create projects through the web portal which ignores this plug-in. To add reports after creating a project, see <a href="../../report/admin/add-reports-to-a-team-project.md" data-raw-source="[Add reports to a project](../../report/admin/add-reports-to-a-team-project.md)">Add reports to a project</a>.
@@ -141,8 +139,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <a name="XMLFiles"></a> 
 Test Management<br/>
       <a href="define-initial-configuration-test-manager.md" data-raw-source="[TestManagement.xml](define-initial-configuration-test-manager.md)">TestManagement.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
 <td>Defines the initial test variables, configurations, settings, and resolution states of a project. This plug-in also uploads the information contained in the following files: 
 <ul>
 <li><strong>localrun.testsettings</strong>: Defines the default test settings for a local test run.</li>
@@ -160,8 +158,8 @@ Test Management<br/>
 <tr>
 <td>Version Control<br/>
       <a href="define-initial-configuration-version-control.md" data-raw-source="[VersionControl.xml](define-initial-configuration-version-control.md)">VersionControl.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/delete_icon.png" alt="not supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/delete_icon.png" alt="not supported"/></td>
 <td>Defines the initial security permissions for Git and Team Foundation version control (TFVC), and for TFVC, check-in notes and whether exclusive check-out is required. 
 <blockquote>
 For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ignored and only the default settings and permissions are defined. After you create a project, you can manage <a href="../../repos/tfvc/add-check-policies.md" data-raw-source="[TFVC check-in policies](../../repos/tfvc/add-check-policies.md)">TFVC check-in policies</a> or <a href="../../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[permissions](../../organizations/security/set-git-tfvc-repository-permissions.md)">permissions</a> from the web portal.
@@ -174,8 +172,8 @@ For Azure DevOps Services and TFS 2017.3 and later versions, this plug-in is ign
 <td><a name="ProcGuidance"></a>
 Windows SharePoint Services<br/>
       <a href="define-project-portal-plug-in.md" data-raw-source="[WssTasks.xml](define-project-portal-plug-in.md)">WssTasks.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/delete_icon.png" alt="not supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/delete_icon.png" alt="not supported"/></td>
 <td>
 
 <p>Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS. 
@@ -186,7 +184,7 @@ TFS 2018 and later versions no longer support native integration with SharePoint
 
 <p>This plug-in also uploads the information contained in the following files and folders:</p> 
 <ul>
-<li><strong>Process Guidance</strong>: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the <img src="_img/processguidance_wi_icon.png" alt="Open process guidance for work item" title="ProcessGuidance_WI_Icon"/> help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
+<li><strong>Process Guidance</strong>: Uploads a set of .htm files which contain a URL that opens process guidance topics when a user clicks the <img src="media/processguidance_wi_icon.png" alt="Open process guidance for work item" title="ProcessGuidance_WI_Icon"/> help icon from the client version of a work item form. These files can be customized to point to other resources for process guidance. </li> 
 <li><strong>Samples and Templates</strong>: Uploads one or more Excel workbooks (.xlsx files) to support bug triage and track issues. </li> 
 <li><strong>Shared Documents</strong>: Uploads one or more sample document and template files as a starting point for creating work products.</li><br/></ul>
 
@@ -200,8 +198,8 @@ Process template files do not include dashboards or Microsoft Excel reports. The
 <td><a name="WIT"></a> 
 Work Item Tracking <br/>
       <a href="define-objects-track-work-items-plug-in.md" data-raw-source="[WorkItems.xml](define-objects-track-work-items-plug-in.md)">WorkItems.xml</a></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
-<td><img src="../../_img/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
+<td><img src="../../media/icons/checkmark.png" alt="supported"/></td>
 <td>Defines the initial work item types, queries, and work item instances of a project. Team members use work items to track work. A <em>work item type</em> defines the fields, workflow, and form used to track work. To customize any of these objects after you create a project, see <a href="../customize-work.md" data-raw-source="[Customize your work tracking experience](../customize-work.md)">Customize your work tracking experience</a>. 
 
 <p>This plug-in also uploads the information contained in the following files and folders: </p> 

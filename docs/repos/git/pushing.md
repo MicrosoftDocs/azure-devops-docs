@@ -3,9 +3,7 @@ title: Sync your changes to a remote Git repo
 titleSuffix: Azure Repos
 description: Using Git Push to share code with Git.
 ms.assetid: 6c388abd-1b63-4957-9814-9ec5f104fa5b
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -39,15 +37,15 @@ In this tutorial you learn how to:
 #### [Visual Studio](#tab/visual-studio/)
 1. In Team Explorer, select **Home** and then choose **Sync** to open **Synchronization**.
 
-   ![Synchronization](_img/gitquickstart-vs2017/sync.png)
+   ![Synchronization](media/gitquickstart-vs2017/sync.png)
 
    You can also go to **Synchronization** from the **Changes** view by choosing **Sync** immediately after making a commit.
 
-   ![Synchronization](_img/gitquickstart-vs2017/commit-created-locally.png)
+   ![Synchronization](media/gitquickstart-vs2017/commit-created-locally.png)
 
 1. Select **Push** to share your commit with the remote repository.
 
-   ![Push](_img/gitquickstart-vs2017/push-to-origin.png)
+   ![Push](media/gitquickstart-vs2017/push-to-origin.png)
 
    During your first push to the repository, you'll see the following message in place of the outgoing commits list: `The current branch does not track a remote branch. Push your changes to a new branch on the origin remote and set the upstream branch.` Select **Push** to push your changes to a new branch on the remote repository and set the upstream branch. The next time you push changes you'll see the list of commits.
 

@@ -3,10 +3,7 @@ title: Release artifacts and artifact sources
 ms.custom: seodec18
 description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 11/29/2018
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Release artifacts and artifact sources
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -52,7 +49,7 @@ A single release pipeline can be linked to
 In this case, when you create a release, you specify individual versions for each of
 these sources.
 
-![Artifacts in a pipeline and release](_img/artifacts-01.png)
+![Artifacts in a pipeline and release](media/artifacts-01.png)
 
 Artifacts are central to a number of features in
 Azure Pipelines. Some of the features that depend
@@ -127,12 +124,12 @@ you can change this behavior by selecting one of the options to use the latest b
 branch by specifying the tags, a specific version, or allow the user to specify the version when the
 release is created from the pipeline.
 
-![Adding an artifact](_img/artifacts-02.png)
+![Adding an artifact](media/artifacts-02.png)
 
 If you link more than one set of artifacts, you can specify which is the primary
 (default).
 
-![Selecting a default version option](_img/artifacts-02a.png)
+![Selecting a default version option](media/artifacts-02a.png)
 
 The following sections describe how to work with the different types of artifact
 sources.
@@ -285,7 +282,7 @@ projects when linking to a build, but you can type
 this into the link dialog field.
 
 For more information about Jenkins integration capabilities, see
-[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://blogs.msdn.microsoft.com/visualstudioalm/2016/08/18/tfs-integration-jenkins-jobs-pipelines-artifacts/).
+[Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
 ----
 
@@ -317,8 +314,6 @@ The following features are available when using Azure Container Registry, Docker
 
 <h3 id="artifactsource">Azure Artifacts</h3>
 
-To use packages from Azure Artifacts in your deployment, you must first [assign licenses for the Azure Artifacts](../../artifacts/start-using-azure-artifacts.md). For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
-
 Scenarios where you may want to consume these artifacts are:
 
 1.  You have your application build (such as TFS, Azure Pipelines, TeamCity, Jenkins) published as a package to Azure Artifacts and you want to consume the artifact in a release.
@@ -348,6 +343,8 @@ When obtaining Maven artifacts and the artifact is a snapshot build, multiple ve
 Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
 ```
 ----
+
+For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
 <a name="externaltfs"></a>
 
@@ -512,7 +509,7 @@ pipeline when the tasks in that job do not
 require all or any of the artifacts, or if you implement custom code
 in a task to download the artifacts you require.
 
-![Selecting the artifacts to download](_img/select-artifacts.png)
+![Selecting the artifacts to download](media/select-artifacts.png)
 
 ::: moniker-end
 
@@ -572,4 +569,4 @@ information about each of these. For a list of all pre-defined artifact variable
 * [Release pipelines](index.md)
 * [Stages](../process/stages.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

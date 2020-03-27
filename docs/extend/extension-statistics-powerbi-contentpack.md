@@ -5,7 +5,6 @@ monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
 ms.date: 06/12/2017
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
 ms.assetid: 435be0b3-ec45-41dd-a804-03b9342fa7cc
@@ -29,32 +28,32 @@ The content pack contains a complete analytic data model (tables, relationships 
 
 4. Select **Get** under **Services** on the Get Data page.
 
-	![get-data-final.png](_img/get-data-final.png)
+	![get-data-final.png](media/get-data-final.png)
 
 5. Search for Marketplace and select the Visual Studio Marketplace Extension Statistics and select **Get it now**.
 
-	![connector](_img/search.png)
-	![connector](_img/content-pack-details.png)
+	![connector](media/search.png)
+	![connector](media/content-pack-details.png)
 
 6. Enter the Marketplace publisher id for the publisher you want data for and select **Next**.
 
-	![Enter the publisher id used in Marketplace](_img/addpublisherid.png)  
+	![Enter the publisher id used in Marketplace](media/addpublisherid.png)  
 	
 	**Important**: Ensure you are logged in power BI using the same credentials you use on the Marketplace and you have access to the Publisher Id. 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Select **Sign In** to continue.
 
-    ![Login with oAuth2](_img/connect-to-vs-team-services-auth.png)  
+    ![Login with oAuth2](media/connect-to-vs-team-services-auth.png)  
 
 	**Important**: You won't be able to connect if your organization administrator disabled third party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
-	![Third-party oAuth enabled](_img/Screen5.png)  
+	![Third-party oAuth enabled](media/Screen5.png)  
 
 	Contact your organization administrator to determine if it needs to be enabled. 
 
 8. Successful authorization displays the following authorization dialog which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select**Accept**.
 
-	![VS Azure DevOps Services Authorization page](_img/Screen6.png)  
+	![VS Azure DevOps Services Authorization page](media/Screen6.png)  
 
 9. Once Power BI is authorized, data begins to load and you're presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded. 
 

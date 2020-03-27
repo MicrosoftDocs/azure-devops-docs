@@ -2,10 +2,7 @@
 title: Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # Run Functional Tests task
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -47,7 +44,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
+[!INCLUDE [temp](../includes/yaml/RunDistributedTestsV1.md)]
 
 ::: moniker-end
 
@@ -140,9 +137,9 @@ These scenarios are supported for:
 
 ### More information
 
-* [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://blogs.msdn.microsoft.com/visualstudioalm/2017/05/05/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
+* [Using the Visual Studio Agent Deployment task on machines not connected to the internet](https://devblogs.microsoft.com/devops/using-visual-studio-agent-deployment-task-on-machines-not-connected-to-the-internet/)
 * [Run continuous tests with your builds](../../ecosystems/dotnet-core.md#run-your-tests)
-* [Testing in Continuous Integration and Continuous Deployment Workflows](https://blogs.msdn.microsoft.com/visualstudioalm/2015/05/29/testing-in-continuous-integration-and-continuous-deployment-workflows/)
+* [Testing in Continuous Integration and Continuous Deployment Workflows](https://devblogs.microsoft.com/devops/testing-in-continuous-integration-and-continuous-deployment-workflows/)
 
 ### Related tasks
 
@@ -159,17 +156,17 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]
+[!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]
 
-[!INCLUDE [qa-test-run-settings-file](../_shared/qa-test-run-settings-file.md)]
+[!INCLUDE [qa-test-run-settings-file](../includes/qa-test-run-settings-file.md)]
 
-[!INCLUDE [qa-test-customize-code-coverage](../_shared/qa-test-customize-code-coverage.md)]
+[!INCLUDE [qa-test-customize-code-coverage](../includes/qa-test-customize-code-coverage.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
@@ -177,4 +174,4 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ::: moniker-end
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces HubsContext API | Extensions for Azure DevOps Services
 description: Context information containing the relevant hubs and hub groups for a given context
 ms.assetid: 8b581cec-a84c-e3f4-b618-7eab3ae14ad1
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

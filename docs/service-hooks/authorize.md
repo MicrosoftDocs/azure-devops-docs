@@ -1,14 +1,10 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Authorize Other Services | Azure DevOps Services
 description: Authorize other services to work with Azure DevOps Services
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/08/2019
 ---
 
@@ -40,11 +36,11 @@ so the service requests authorization.
 
 2. If you're not already signed in, Azure DevOps Services will prompt you for your credentials.
 
-   <img alt="Azure DevOps Services sign in page" src="./_img/authorize/vso-sign-in.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Azure DevOps Services sign in page" src="./media/authorize/vso-sign-in.png" style="border: 1px solid #CCCCCC" />
 
 3. After you've signed in, you get the authorization approval page.
 
-   <img alt="Azure DevOps Services authorization page" src="./_img/authorize/vso-authorize.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Azure DevOps Services authorization page" src="./media/authorize/vso-authorize.png" style="border: 1px solid #CCCCCC" />
 
    At this point in time, services can only request full access to all of the resources that are available to you through the REST APIs, so don't be surprised that the authorization request isn't more specific.
 
@@ -68,6 +64,6 @@ To see the services that you've authorized to access your account,
 go to [https://app.vssps.visualstudio.com/Profile/View](https://app.vssps.visualstudio.com/Profile/View)
 and follow the **Manage authorizations** link.
 
-<img alt="List of authorized services" src="./_img/authorize/authorizations.png" style="border: 1px solid #CCCCCC" />
+<img alt="List of authorized services" src="./media/authorize/authorizations.png" style="border: 1px solid #CCCCCC" />
 
 You can revoke any authorizations here and the service can no longer access your account on your behalf.

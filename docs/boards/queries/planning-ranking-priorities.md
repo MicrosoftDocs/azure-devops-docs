@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Create queries based on planning, ranking, priority, and picklist fields in Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: ca05800c-905a-407f-bea8-a7ee32b65973
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Query by picklist value
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You use planning, ranking, and priority fields to specify which work the team should complete first.  By ranking and prioritizing work items, all team members gain an understanding of the relative importance of the work that they must accomplish.  
 
@@ -160,7 +158,7 @@ The following table describes the fields that you can use to plan and prioritize
 
 #### Notes:  
 
-1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md#edit-picklist-inherited) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
+1.  To change the menu selection, see [Add and manage fields (Inherited process)](../../organizations/settings/work/customize-process-field.md) or [Add or modify a field, customize a picklist (On-premises XML process)](../../reference/add-modify-field.md).  
 1. The sequence of items on a product backlog page is determined according to where you have added or dragged the items. As you drag items, a background process updates either the Backlog Priority (Scrum) or Stack Rank (Agile, Basic, CMMI) field. These fields determine the order in which backlog items appear on a backlog page. They are assigned to `type="Order"` in the ProcessConfiguration file.  
 
 

@@ -3,20 +3,17 @@ title: Demands
 ms.custom: seodec18
 description: Configure custom demands for your pipeline in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 07/30/2019
 monikerRange: '>= tfs-2015'
 ---
 
-# Demands
+# Specify demands
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Use demands to make sure that the capabilities your pipeline needs are present on the agents that run it. Demands are asserted automatically by tasks or manually by you.
@@ -45,8 +42,8 @@ Or if you need to add multiple demands, add one per line.
 pool:
   name: Default
   demands:
-    - SpecialSoftware # Check if SpecialSoftware capability exists
-    - Agent.OS -equals Linux # Check if Agent.OS == Linux
+  - SpecialSoftware # Check if SpecialSoftware capability exists
+  - Agent.OS -equals Linux # Check if Agent.OS == Linux
 ```
 
 For multiple demands:
@@ -76,11 +73,11 @@ Register each agent that has the capability.
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](../agents/_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](../agents/includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab for the agent:
  
-   [!INCLUDE [agent-capabilities](../agents/_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](../agents/includes/agent-capabilities-tab.md)]
 
 1. Add something like the following entry:
 

@@ -3,10 +3,7 @@ title: Connect to Microsoft Azure
 ms.custom: seodec18
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/18/2018
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
@@ -39,7 +36,7 @@ We recommend this simple approach if:
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Specify the following parameters.
 
@@ -83,11 +80,11 @@ or a [VM with a managed service identity](#use-msi).
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Switch from the simplified version of the dialog to the full version using the link in the dialog.
 
-   ![Opening the full version of the service  dialog](_img/rm-endpoint-link.png)
+   ![Opening the full version of the service  dialog](media/rm-endpoint-link.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
@@ -121,7 +118,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
@@ -141,11 +138,11 @@ such as Key Vault, instead of persisting credentials in Azure DevOps for the con
 
 1. Choose **+ New service connection** and select **Azure Resource Manager**.
 
-   ![Choosing a service connection type](_img/new-service-endpoint-2.png)
+   ![Choosing a service connection type](media/new-service-endpoint-2.png)
 
 1. Select the **Managed Identity Authentication** option.
 
-   ![Opening the managed service identity settings](_img/rm-endpoint-msi.png)
+   ![Opening the managed service identity settings](media/rm-endpoint-msi.png)
 
 1. Enter a user-friendly **Connection name** to use when referring to this service connection.
 
@@ -188,4 +185,4 @@ For information about connecting to Azure Stack, see:
 * [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
 * [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

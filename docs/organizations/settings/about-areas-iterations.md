@@ -3,9 +3,7 @@ title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
 description: Understand how areas and iterations are used in Azure DevOps
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # About area and iteration paths (aka sprints) 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -27,7 +25,7 @@ The areas and iterations you see depend on the process you used to create your p
 > [!div class="mx-tdBreakAll"] 
 > |Iterations| Areas |
 > |-------------|----------| 
-> |<img src="_img/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="_img/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
+> |<img src="media/areas/areas-iterations-iterations-intro-ts-2016.png" alt="Default iterations, Scrum process" style="border: 1px solid #C3C3C3;" /> | <img src="media/areas/areas-iterations-areas-intro-ts-2016.png" alt="A set of sample area paths" style="border: 1px solid #C3C3C3;" /> | 
 
 
 
@@ -107,14 +105,14 @@ Add iterations to support these requirements:
 
 In the following example, Beta 1, Beta 2, Release 1.0, and Release 2.0 are defined for the MyApplication project.  
 
-<img src="_img/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-Before.png" alt="Flat iteration hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 As you create the backlog of product features and tasks, you can start to assign them to the milestones by which you expect the team to finish the features and tasks.
 As your needs change, you can add events under each major milestone that reflect how your team schedules and manages its work.  
 
 As the following example shows, the Beta 1 iteration now contains three child nodes, one for each sprint in the Beta 1 time period.  
 
-<img src="_img/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
+<img src="media/areas/ALM_CW_IterationHierarchy-After.png" alt="Hierarchical Iteration Hierarchy" style="border: 1px solid #C3C3C3;" />  
 
 Iterations do not enforce any rules. For example, you can assign a task to an iteration but not close or complete it during that iteration. At the end of an iteration, you should find all work items that remain active or have not been closed for that iteration and take appropriate action. You can, for example, move them to a different iteration or return them to the backlog.
 

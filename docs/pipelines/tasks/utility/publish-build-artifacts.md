@@ -2,10 +2,7 @@
 title: Publish Build Artifacts task
 description: Publish build artifacts to Azure Pipelines, Team Foundation Server (TFS), or to a file share
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 01533845-5D63-4DAC-97DF-D55F1E4DCF53
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -30,7 +27,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishBuildArtifactsV1.md)]
+[!INCLUDE [temp](../includes/yaml/PublishBuildArtifactsV1.md)]
 
 ::: moniker-end
 
@@ -45,9 +42,9 @@ None
 | `Parallel`<br/>Parallel copy (**Azure Pipelines**, **TFS 2018**, or newer) | Select whether to copy files in parallel using multiple threads for greater potential throughput. If this setting is not enabled, a single thread will be used. |
 | `ParallelCount`<br/>Parallel count (**Azure Pipelines**, **TFS 2018**, or newer) | Enter the degree of parallelism (the number of threads) used to perform the copy. The value must be at least 1 and not greater than 128. Choose a value based on CPU capabilities of the build agent. Typically, 8 is a good starting value. |
 | `FileCopyOptions`<br/>File copy options | Pass additional options to the Robocopy command. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
-[!INCLUDE [example](../_shared/copyfiles-publishbuildartifacts-usage.md)]
+[!INCLUDE [example](../includes/copyfiles-publishbuildartifacts-usage.md)]
 
 ## Open source
 
@@ -57,6 +54,6 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/build-step-common-qa.md)]
+[!INCLUDE [temp](../includes/build-step-common-qa.md)]
 
 <!-- ENDSECTION -->

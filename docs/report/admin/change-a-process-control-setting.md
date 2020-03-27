@@ -2,10 +2,8 @@
 title: Change a process control setting | Team Foundation Server 
 description: Change a process control setting for the data warehouse or analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
 ms.assetid: 48F5B9C9-66B4-4211-8622-5F93CDA9A19A  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -14,7 +12,7 @@ ms.date: 11/19/2018
 
 # Change a process control setting for the data warehouse or Analysis Services cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)] 
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)] 
 
 You can change the refresh frequency and time-out values that control the processing of the data warehouse. You change a process control setting only if you want to tune it for your specific deployment.
 

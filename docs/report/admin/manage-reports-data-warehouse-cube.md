@@ -2,10 +2,8 @@
 title: Manage data warehouse and analysis services cube | TFS 
 description: Manage SQL Server Reporting Services reports, data warehouse, and analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
 ms.assetid: 3D57E047-4922-4B4B-8736-A68B2895E846  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -14,13 +12,13 @@ ms.date: 11/19/2018
 
 # Manage the data warehouse and analysis services cube 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse and SQL Server Analysis Services cube. If you didn't add these services previously and want to add them now, see [Add reports to a team project](add-reports-to-a-team-project.md).
 
 The reporting warehouse is a traditional data warehouse that consists of a relational database and an Analysis Services database. 
 
-![Data Warehouse Architecture](_img/IC777266.png)
+![Data Warehouse Architecture](media/IC777266.png)
 
 All reportable data from all team projects that are defined in all project collections for a TFS deployment is written to a single relational database (Tfs_Warehouse). Data from that warehouse is then processed and written to the Analysis Services cube (Tfs_Analysis). Collecting data into a single data warehouse supports reporting across team projects and project collections. To learn more, see [Components of the TFS data warehouse](https://msdn.microsoft.com/library/ms244687.aspx). 
 

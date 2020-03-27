@@ -2,10 +2,8 @@
 title: Administrate the integration of TFS and Project Server
 titleSuffix: TFS 
 description: Manage the configuration of Team Foundation Server & Project Server to support data synchronization 
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 529c5a49-31d7-4080-b3b5-1bcc95c8a102
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +12,7 @@ ms.date: 01/12/2017
 
 # Administrate the integration of TFS and Project Server
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> 
 As an administrator for the integration of Visual Studio Team Foundation Server (TFS) and Microsoft Project Server, you must configure the integration of the two server products. When you configure this integration, you define what components participate in data synchronization and what data flows from projects to enterprise project plans. The initial configuration requires that you install software, grant permissions, register instances of Project Web Access or Project Web App (PWA), and map Project Server components to Team Foundation components. You might also need to customize the types of work items and how fields are mapped to participate in data synchronization. After you configure the integration, you might need to monitor and troubleshoot it.  

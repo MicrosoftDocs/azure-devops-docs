@@ -2,8 +2,6 @@
 title: Customize your pipeline
 ms.custom: seodec18
 description: Step-by-step tutorial to customize a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
@@ -15,7 +13,7 @@ monikerRange: ">= azure-devops-2019"
 
 # Customize your pipeline
 
-[!INCLUDE [version-server-2019-rtm](_shared/version-server-2019-rtm.md)]
+[!INCLUDE [version-server-2019-rtm](includes/version-server-2019-rtm.md)]
 
 This is a step-by-step guide on common ways to customize your pipeline.
 
@@ -38,16 +36,16 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
       vmImage: 'Ubuntu-16.04'
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx3072m'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-          jdkArchitectureOption: 'x64'
-          publishJUnitResults: false
-          testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'package'
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: false
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
    ```
 
    > [!Note]
@@ -77,7 +75,7 @@ You can build your project on [Microsoft-hosted agents](../pipelines/agents/host
 
     ```yaml
     pool:
-      vmImage: "macos-10.13"
+      vmImage: "macos-latest"
     ```
     
 * Select **Save** and then confirm the changes to see your pipeline run on a different platform.
@@ -122,7 +120,7 @@ You can build and test your project on multiple platforms. One way to do it is w
         linux:
           imageName: "ubuntu-16.04"
         mac:
-          imageName: "macos-10.13"
+          imageName: "macos-10.14"
         windows:
           imageName: "vs2017-win2016"
       maxParallel: 3
@@ -185,16 +183,16 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: "pom.xml"
-          mavenOptions: "-Xmx3072m"
-          javaHomeOption: "JDKVersion"
-          jdkVersionOption: $(jdk_version)
-          jdkArchitectureOption: "x64"
-          publishJUnitResults: true
-          testResultsFiles: "**/TEST-*.xml"
-          goals: "package"
+    - task: Maven@3
+      inputs:
+        mavenPomFile: "pom.xml"
+        mavenOptions: "-Xmx3072m"
+        javaHomeOption: "JDKVersion"
+        jdkVersionOption: $(jdk_version)
+        jdkArchitectureOption: "x64"
+        publishJUnitResults: true
+        testResultsFiles: "**/TEST-*.xml"
+        goals: "package"
     ```
 
 * Select **Save** and then confirm the changes to see your build run three jobs on three different platforms and SDKs.
@@ -230,11 +228,11 @@ There are pipeline settings that you wouldn't want to manage in your YAML file. 
 Sometimes you'll want to prevent new runs from starting on your pipeline. 
 
 * By default, the processing of new run requests is **Enabled**. This setting allows standard processing of all trigger types, including manual runs.
-* **Paused** pipelines allow run requests to be processed, but those requests queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
+* **Paused** pipelines allow run requests to be processed, but those requests are queued without actually starting. When new request processing is enabled, run processing resumes starting with the first request in the queue.
 * **Disabled** pipelines prevent users from starting new runs. All triggers are also disabled while this setting is applied. 
 
 ### Other settings
-* **YAML file path.** If you ever need to direct your pipeline to use a different YAMl file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
+* **YAML file path.** If you ever need to direct your pipeline to use a different YAML file, you can specify the path to that file. This setting can also be useful if you need to move/rename your YAML file.
 * **Automatically link work items included in this run.** The changes associated with a given pipeline run may have work items associated with them. Select this option to link those work items to the run. When this option is selected, you'll need to specify a specific branch. Work items will only be associated with runs of that branch. 
 * To get notifications when your runs fail, see how to [Manage notifications for a team](../notifications/howto-manage-team-notifications.md)
 

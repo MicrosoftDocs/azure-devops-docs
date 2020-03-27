@@ -2,11 +2,9 @@
 title: Components of the SQL Server data warehouse 
 titleSuffix: TFS
 description: Understand the components of the Team Foundation Server data warehouse 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 5aafaefc-84c1-4f8d-a716-753f5b74caa0
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/26/2017
@@ -15,11 +13,11 @@ ms.date: 10/26/2017
 
 # Components of the data warehouse for Azure DevOps Server
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Azure DevOps Server or Team Foundation reporting warehouse is a traditional data warehouse consisting of a relational database organized in an approximate star schema and a SQL Server Analysis Services cube built on top of the relational database. The following diagram shows the high-level architecture of the Team Foundation data warehouse and the relationships between the operational stores, the data warehouse, and the team reports.  
   
- ![Data Warehouse Architecture](_img/tfs_datawarearch_r.png)  
+ ![Data Warehouse Architecture](media/tfs_datawarearch_r.png)  
   
 
 For additional information on the databases and connectivity, see [SQL Server databases for Azure DevOps Server](/azure/devops/server/architecture/sql-server-databases).

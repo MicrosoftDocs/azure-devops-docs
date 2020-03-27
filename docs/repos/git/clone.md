@@ -3,9 +3,7 @@ title: Clone an existing Git repo
 titleSuffix: Azure Repos
 description: Create a local clone of an existing repo using Visual Studio or command prompt
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -49,11 +47,11 @@ If you're using Azure Repos, Azure DevOps Server 2019, or Team Foundation Server
 
 1. From your web browser, open the team project for your Azure DevOps organization and choose **Repos**, then **Files**.
 
-   ![Repos files](../get-started/_img/clone-repo/repos-files.png)
+   ![Repos files](../get-started/media/clone-repo/repos-files.png)
 
 1. Select **Clone** in the upper right.
 
-   ![Get a clone a URL from Azure Repos](./_img/get_clone_url.gif)
+   ![Get a clone a URL from Azure Repos](./media/get_clone_url.gif)
 
 If you need to clone a GitHub repo, you'll need to get the clone URL. Use the **Clone or download** button while viewing the repo on the web in GitHub.
 
@@ -72,17 +70,17 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
 
 1. In Team Explorer, open the **Connect** page by selecting the **Connect** button. Choose **Manage Connections** then **Connect to Project**.
 
-   ![Cloning Azure Repos Git repositories in Visual Studio](_img/gitquickstart-vs2017/manage-connections.png)
+   ![Cloning Azure Repos Git repositories in Visual Studio](media/gitquickstart-vs2017/manage-connections.png)
 
 1. In **Connect to a Project**, select the repo you want to clone from the list and select **Clone**.
 
-   ![Cloning a Git Repository from a connected Azure DevOps organization](_img/gitquickstart-vs2017/vs2017-connect-dialog.png)
+   ![Cloning a Git Repository from a connected Azure DevOps organization](media/gitquickstart-vs2017/vs2017-connect-dialog.png)
 
    If you don't see your repo listed, filter the list to find it.
    You may need to add an Azure DevOps Server where the repo is hosted.
    Select the **Add Azure DevOps Server** link.
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your PC and select **Clone**.
 
@@ -95,17 +93,17 @@ If you aren't using Azure Repos, you can still clone your repo in Team Explorer 
 1. Select a folder where you want your cloned repo.
 1. Select **Clone** to clone the repo.
 
-   ![Clone your repo from other providers using Visual Studio](_img/clone_other_providers.png)
+   ![Clone your repo from other providers using Visual Studio](media/clone_other_providers.png)
 
 ### Open a solution in Visual Studio from a cloned repo
 
 1. Right-click on a repository in the Team Explorer **Connect** view and select **Open**.
 
-   ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs.png)
+   ![Open a solution from a cloned repo in Team Explorer](media/open-solution-cloned-repo-vs.png)
 
 In the **Home** view in Team Explorer, double-click your project solution file in the **Solutions** area. The solution opens in **Solution Explorer**.
 
-   ![Open a solution from a cloned repo in Team Explorer](_img/open-solution-cloned-repo-vs-sln.png)
+   ![Open a solution from a cloned repo in Team Explorer](media/open-solution-cloned-repo-vs-sln.png)
 
 #### [Command Line](#tab/command-line/)
 ### Prerequisites

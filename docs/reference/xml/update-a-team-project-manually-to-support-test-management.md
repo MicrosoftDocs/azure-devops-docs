@@ -2,10 +2,8 @@
 title: Update a project manually to support test management 
 titleSuffix: TFS
 description: Update a project manually to support test management.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017
@@ -29,7 +27,7 @@ When you upgrade your existing on-premises deployment to Team Foundation Server 
   
    Data migration depends on a successful import of WIT definitions and updates. If the first activity fails, the second one will not occur. In the event that either activity is unsuccessful, the wizard logs one or more warnings or errors.  
   
-   ![TFS Upgrade Wizard showing Test Management error](_img/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
+   ![TFS Upgrade Wizard showing Test Management error](media/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
   
    When this occurs, you'll need to manually update your project. You won't be able to access existing test plans and test suites until you perform the manual updates.  
   
@@ -45,7 +43,7 @@ The following steps provide support for the test experience available with TFS 2
   
    1. [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-   [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)] 
   
    1. Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
   

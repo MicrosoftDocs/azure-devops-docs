@@ -3,11 +3,9 @@ title: Add new users to your organization or project
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: How to add users to an organization or project
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/04/2019
@@ -16,9 +14,9 @@ monikerRange: 'azure-devops'
 
 # Add users to your organization or project
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](/organization-management.md).
+This article describes how to add and manage user access through Direct assignment for Azure DevOps Services. For an overview of adding users and related concepts, see [About organization management in Azure DevOps](organization-management.md).
 
 The following types of users can join your organization for free:
 
@@ -50,18 +48,18 @@ To give other users access to your organization, add their email addresses.
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-2. Select ![gear icon](../../_img/icons/gear-icon.png) **Organization settings**.
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/_img/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Users**, and then select **Add users**.
    
-   ![Select the Users tab, and then select Add users](../../_shared/_img/add-new-users.png)
+   ![Select the Users tab, and then select Add users](../../media/add-new-users.png)
 
 4. Enter information into the form.
 
    > [!div class="mx-imgBorder"]  
-   >![Web portal, organization admin context, Add new users dialog box](_img/add-organization-users-from-user-hub/add-new-users-dialog.png)
+   >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
 
    - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
    - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
@@ -76,15 +74,15 @@ To give other users access to your organization, add their email addresses.
 <!---
 Go to Users:
 
-![go to users](_img/_shared/users-hub-updated.png)
+![go to users](media/shared/users-hub-updated.png)
 
 Choose **Add new users** below "Manage users".
 
-![Choose the Add Users button](_img/user-hub/add-users-button-718.png)
+![Choose the Add Users button](media/user-hub/add-users-button-718.png)
 
 Then fill in the "Add new users" dialog:
 
-![Add users by inviting them to the organization](_img/user-hub/add-users.png)
+![Add users by inviting them to the organization](media/user-hub/add-users.png)
 
 Next steps: [Manage users in table view](manage-users-table-view.md)
 -->

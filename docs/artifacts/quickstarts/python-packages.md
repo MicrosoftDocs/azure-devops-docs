@@ -1,12 +1,8 @@
 ---
 title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 10/03/2019
 monikerRange: '=azure-devops'
 ---
@@ -37,7 +33,7 @@ This quickstart guides you through using Azure Artifacts to consume and publish 
    
 4. Select **Create**.
 
-   ![New feed dialog box](../_shared/_img/new-feed-dialog.png)
+   ![New feed dialog box](../media/new-feed-dialog.png)
 
 To edit your feed settings, select the gear icon at upper right on the feed page, and then select **Feed settings**. 
 
@@ -84,7 +80,7 @@ The Python Credential Provider is a manual interaction. If you want to set up au
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../_shared/_img/connect-to-feed-azure-devops-newnav.png)
+   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
    > 
 
 2. Choose either **pip** or **twine** under the Python header. 

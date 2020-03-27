@@ -2,12 +2,9 @@
 title: Docker Installer task
 description: Install the Docker CLI on an agent machine
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 1394E182-B515-4CC0-890B-9A2378DBEA68
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 02/12/2019
 monikerRange: '> tfs-2018'
 ---

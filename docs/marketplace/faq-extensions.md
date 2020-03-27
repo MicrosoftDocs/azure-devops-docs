@@ -1,10 +1,8 @@
 ---
 title: FAQs about getting extensions for Azure DevOps
 description: Frequently asked questions about getting and paying for extensions for Azure DevOps
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/25/2019
@@ -14,9 +12,9 @@ ms.topic: conceptual
 
 # FAQs - getting extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
-In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-visual-studio-marketplace).
+In this article, find frequently asked questions and answers about getting extensions for Azure DevOps. Included are FAQs about installing, requesting, assigning, and accessing extensions. You can also find [links to get support](#q-how-do-i-get-support-for-the-marketplace).
 
 ::: moniker range="azure-devops"
 
@@ -27,24 +25,32 @@ you can [request extensions](request-extensions.md) instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../_shared/qa-find-organization-owner.md)]
+### Q: How do I find the organization Owner?
 
-[!INCLUDE [find-project-collection-administrator](../_shared/qa-find-project-collection-administrator.md)]
+If you have at least Basic access, you can find the current owner in your organization settings.
+
+1.    Go to your **Organization settings**.
+
+    ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+
+2.    Find the current owner.
+
+    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
 <a name="no-organizations"></a>
 
-[!INCLUDE [no-organizations](../organizations/billing/_shared/qa-no-organizations.md)]
+[!INCLUDE [no-organizations](../organizations/billing/includes/qa-no-organizations.md)]
 
 ### Q: Why can't I install extensions for Azure DevOps?
 
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*	You must have [Project Collection Administrator or organization Owner permissions](#find-owner). 
+*    You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md). 
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
-*	If you get an "already installed or requested" error check with your Project Collection Administrator 
+*    If you get an "already installed or requested" error check with your Project Collection Administrator 
 or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
@@ -61,7 +67,7 @@ A: Check these [articles about Azure billing and subscriptions](https://azure.mi
 the [Azure Billing and Subscription FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/), 
 or try [Azure Support](https://azure.microsoft.com/support/options/).
 
-[!INCLUDE [what-happened-preview-extensions](../_shared/qa-what-happened-preview-extensions.md)]
+[!INCLUDE [what-happened-preview-extensions](../includes/qa-what-happened-preview-extensions.md)]
 
 <!-- ENDSECTION --> 
 
@@ -78,7 +84,7 @@ with [**Edit collection-level information** permissions](../organizations/securi
 
 * If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 
-	<!-- image placeholder -->
+    <!-- image placeholder -->
 
 <a name="no-team-project collection"></a>
 
@@ -130,13 +136,13 @@ for the Team Foundation Server where you want to upload extensions.
 
 <a name="extension-access"></a>
 
-[!INCLUDE [no-access-extension-features](../_shared/qa-no-access-extension-features.md)]
+[!INCLUDE [no-access-extension-features](../includes/qa-no-access-extension-features.md)]
 
 <!-- ENDSECTION --> 
 
 <a name="get-support"></a>
 
-[!INCLUDE [marketplace-support](_shared/qa-marketplace-support.md)]
+[!INCLUDE [marketplace-support](includes/qa-marketplace-support.md)]
 
 ::: moniker-end
 

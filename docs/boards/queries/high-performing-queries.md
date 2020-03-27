@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Guidelines for creating high-performing work item queries in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.date: 09/26/2019
 
 # Guidance to create high-performing queries  
  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 While you can easily create a work item query, creating a high performing query requires a deeper understanding. Query performance can not only impact your individual productivity, but also dashboard performance and resource rate limits.  
 
@@ -41,7 +39,7 @@ Use [work item tags](add-tags-to-work-items.md) to categorize your work items in
 Unlike matching or partial matching on a custom field, query with a `Tags Contains` predicate won't scan the entire work items tables. 
 
 > [!div class="mx-imgBorder"]  
-> ![Filter on tags](_img/high-perf/tag-contains-web.png)  
+> ![Filter on tags](media/high-perf/tag-contains-web.png)  
 
 
 ## Use `Contains words` for string matches
@@ -76,7 +74,7 @@ Queries perform better when fewer `Or` operators are used. Too many `Or` operato
 
 Saved queries have a higher chance of performing better due to internal optimizations. Always save your query when you plan to reuse it.  Even when you execute the query by WIQL through a REST API, saving the WIQL through the web portal will make your REST API calls less prone to performance regressions in the future. 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
 ## Related articles
 

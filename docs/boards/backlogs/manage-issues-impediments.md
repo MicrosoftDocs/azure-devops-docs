@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -15,7 +13,7 @@ ms.date: 10/14/2019
 
 # Manage issues or impediments 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a name="manage-impediments"></a>
 
@@ -46,9 +44,9 @@ In this article you'll learn:
 > * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
 
 ## When to use issues versus tasks
 
@@ -74,20 +72,20 @@ If you want to add these work item types to a backlog, see [Customize your backl
 
 ::: moniker range=">= azure-devops-2019"  
 
-Open **Boards>Work Items**, and choose the ![ ](../../_img/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
+Open **Boards>Work Items**, and choose the ![ ](../../media/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
 
 > [!div class="mx-imgBorder"]  
-> ![Add issue, new nav](_img/manage-issues/add-issue-vert.png)   
+> ![Add issue, new nav](media/manage-issues/add-issue-vert.png)   
 
-Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
+Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../_img/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
 
-<img src="_img/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   
 ::: moniker-end
 
@@ -95,7 +93,7 @@ From **Work**, choose **Impediment** from the **New Work Item** list of options.
 
 From the Queries page, choose Impediment from the **New** drop down menu.
 
-<img src="_img/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
+<img src="media/ALM_CB_CreateImpediments.png" alt="TFS 2015, TFS 2013 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
 
 ::: moniker-end
 
@@ -104,7 +102,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ## Customize issues tracking
 
-[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ::: moniker range="azure-devops"

@@ -2,11 +2,9 @@
 title: CMMI process guidance, Manage change 
 titleSuffix: Azure Boards
 description: Use the change request work items to track and control all changes to the product and supporting systems - Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9c6fde5a-fdbd-4ac4-bd29-8049ff316351
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 01/20/2017
 
 # Manage change
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 You can use change request work items to track and control all changes to the product and supporting systems. All change requests are initiated as the result of a deviation from the baseline, which consists of the original requirements that were identified for the project. For example, if a meeting with a user uncovers new requirements, a change request should be created to propose updating the requirements baseline. For more information about CMMI see [Background to CMMI](guidance-background-to-cmmi.md).  
   
@@ -24,7 +22,7 @@ You can use change request work items to track and control all changes to the pr
   
  The change request and resultant new work items must contain details of all new work that is required and all existing work that is to be removed, modified, or obviated. You can create a change request from the home page of the web portal or from the Work page in Team Explorer as described in [Get started using work items](../../../work-items/view-add-work-items.md). You can specify the change that you are requesting in the Title field, the team member who owns the change, and other information about the request.  
   
- ![Change Request Work Item Form](_img/procguid_cmmi_form.png "ProcGuid_CMMI_form")  
+ ![Change Request Work Item Form](media/procguid_cmmi_form.png "ProcGuid_CMMI_form")  
   
  For more information about how to complete the work item, see [CMMI work items and workflow](../cmmi-process-workflow.md).  
   
@@ -40,6 +38,6 @@ You can use change request work items to track and control all changes to the pr
  If a change request is accepted, change the State from Proposed (the default for new change requests) to Active.  
   
 ##  <a name="Monitoring"></a> Monitor change requests  
- While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../queries/alerts-and-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
+ While a change request is active, you can monitor it by viewing the Open Change Requests With Requirements query. Also, you can [create an email alert](../../../../notifications/manage-your-personal-notifications.md) for when a Change Request is created. Change requests should be processed in a reasonable amount of time.  
   
  If a change request does not receive the attention that it requires, escalate the matter by creating an issue work item. Link the new issue to the change request, and escalate the issue to get the change request impact assessment on track.

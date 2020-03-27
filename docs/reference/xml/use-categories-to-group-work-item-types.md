@@ -2,10 +2,8 @@
 title: Use categories to group work item types 
 titleSuffix: TFS
 description: Generate flexible reports, and support increased integration across projects using categories 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 2fc6c411-89a9-4af5-8dd3-b2d4c2ecf540
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/04/2017
@@ -13,7 +11,7 @@ ms.date: 04/04/2017
 
 # Use categories to group work item types
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 By using categories, you can generate flexible reports, and support increased integration across projects. You can more easily manage multiple work item types (WITs) as a group as well as WITs that are named differently. Also, you can use the **In Group** query operator to filter a list of work items based on the category to which they belong.  
 

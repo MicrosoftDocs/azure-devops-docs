@@ -2,10 +2,8 @@
 title: Assign permissions for TFS-Project Server integration
 titleSuffix: TFS 
 description: Assign permissions to support configuration and working with Team Foundation Server & Project Server  data synchronization
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +12,7 @@ ms.date: 03/16/2017
 
 # Assign permissions to support TFS-Project Server integration
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> Assigning permissions is the first step in configuring Team Foundation Server and Project Server to support data synchronization. You must grant permissions to several accounts&mdash;administrators, service accounts, and team members. You must also make sure that specific service accounts have access as a Shared Services Provider (SSP) for the server that hosts SharePoint Products for Project Server.  
 
@@ -91,11 +89,11 @@ ms.date: 03/16/2017
 
         -   **For Project Server 2013**: Expand SharePoint web services and expand each GUID until you find the one that contains project PSI service. In Advanced settings, identify the Application Pool, which is a GUID pool name.  
 
-             ![Find GUID of PSI app pools](_img/alm_iis_findapppoolguid.png "ALM_IIS_FindAppPoolGUID")  
+             ![Find GUID of PSI app pools](media/alm_iis_findapppoolguid.png "ALM_IIS_FindAppPoolGUID")  
 
              Under IIS, AppPools, find the account used to run this GUID application pool.  
 
-             ![Find service accounts of PSI app pools](_img/alm_iis_findapppoolguid_2.png "ALM_IIS_FindAppPoolGUID_2")  
+             ![Find service accounts of PSI app pools](media/alm_iis_findapppoolguid_2.png "ALM_IIS_FindAppPoolGUID_2")  
 
 ### User accounts  
  Identify the following user accounts or groups:  
@@ -117,14 +115,14 @@ ms.date: 03/16/2017
 
 |Task|Set for these configuration:|  
 |----------|----------------------------------|  
-|[2-1. Grant Global permissions to the TFS Service account](#global)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
-|[2-2. Grant Category permissions to the TFS Service account](#category)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
-|[2-3. Add accounts to a PWA security group](#pwa):<br /><br /> -   TFS Service account<br />-   Service account(s) for the Project Server web application pool<br />-   User accounts that configure the integration<br />-   Accounts of users of Project Professional: **Project Manager**  or **Portfolio Managers**<br />-   User accounts assigned as resources in the project plan: **Team Members**|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
-|[2-4. Add accounts to a PWA security group (SharePoint mode)](#pwa_sp)<br /><br /> -   TFS Service account<br />-   Service account(s) for the Project Server web application pool<br />-   Service account for the Project Server Event Handler, add  to Administrators for PWA<br />-   User accounts that configure the integration<br />-   Accounts of users of Project Professional: **Project Manager**  or **Portfolio Managers**<br />-   User accounts assigned as resources in the project plan: **Team Members**|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
-|[2-5. Add user accounts to the Active Directory Enterprise Resource Pool](#pool)|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
+|[2-1. Grant Global permissions to the TFS Service account](#global)|![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
+|[2-2. Grant Category permissions to the TFS Service account](#category)|![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
+|[2-3. Add accounts to a PWA security group](#pwa):<br /><br /> -   TFS Service account<br />-   Service account(s) for the Project Server web application pool<br />-   User accounts that configure the integration<br />-   Accounts of users of Project Professional: **Project Manager**  or **Portfolio Managers**<br />-   User accounts assigned as resources in the project plan: **Team Members**|![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
+|[2-4. Add accounts to a PWA security group (SharePoint mode)](#pwa_sp)<br /><br /> -   TFS Service account<br />-   Service account(s) for the Project Server web application pool<br />-   Service account for the Project Server Event Handler, add  to Administrators for PWA<br />-   User accounts that configure the integration<br />-   Accounts of users of Project Professional: **Project Manager**  or **Portfolio Managers**<br />-   User accounts assigned as resources in the project plan: **Team Members**|![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
+|[2-5. Add user accounts to the Active Directory Enterprise Resource Pool](#pool)|![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
 
 ###  <a name="global"></a> 2-1 Grant Global permissions  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
 
 1.  From the PWA Settings page, open Manage Users, and then New User.  
 
@@ -149,7 +147,7 @@ ms.date: 03/16/2017
 4.  Save your changes.  
 
 ###  <a name="category"></a> 2-2 Grant Category permissions  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
 
 1. From the home page for PWA, in the Quick Launch area, choose **Server Settings**.  
 
@@ -159,7 +157,7 @@ ms.date: 03/16/2017
 
 4. Under **Available Users**, choose the name of the service account for Team Foundation Server, and then choose **Add**.  
 
-    ![Create TFS Service account category](_img/alm_pwa_tfsserviceaccntcategory.png "ALM_PWA_TFSServiceAccntCategory")  
+    ![Create TFS Service account category](media/alm_pwa_tfsserviceaccntcategory.png "ALM_PWA_TFSServiceAccntCategory")  
 
 5. Under Projects, choose **All current and future projects in Project Server database**, and then click **Save**.  
 
@@ -169,10 +167,10 @@ ms.date: 03/16/2017
 
    - Resource:  View Enterprise Resource Data  
 
-     ![Category permissions for TFS service account](_img/alm_tfsps_pwa_categorypermissions.png "ALM_TFSPS_PWA_CategoryPermissions")  
+     ![Category permissions for TFS service account](media/alm_tfsps_pwa_categorypermissions.png "ALM_TFSPS_PWA_CategoryPermissions")  
 
 ###  <a name="pwa"></a> 2-3 Add accounts to a PWA security group  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
 
 1. From the PWA Settings page, open Manage Users, New User, and then type the required information in each field:  
 
@@ -192,7 +190,7 @@ ms.date: 03/16/2017
 
 3. If you have customized Category permissions, verify that team members have the following Security Categories: **Create New Task or Assignment**, **Create Object Links**, **Open Project**, **View Project Site**, and **View Project Schedule in Project Web App**(Project Server 2010).  
 
-    ![Security categories, My Projects for team members](_img/alm_pwa_addcategoriesteammembers.png "ALM_PWA_AddCategoriesTeamMembers")  
+    ![Security categories, My Projects for team members](media/alm_pwa_addcategoriesteammembers.png "ALM_PWA_AddCategoriesTeamMembers")  
 
     For Project Server 2013, Permission mode, select:  Open Project,  View Project Site, and View Project Schedule in Project Web App.  
 
@@ -203,21 +201,21 @@ ms.date: 03/16/2017
    For more information, see [Add a user account in Project Server 2010](https://go.microsoft.com/fwlink/?LinkId=207279) or [Plan user access in Project Server 2013](https://go.microsoft.com/fwlink/?LinkId=262117)..  
 
 ###  <a name="pwa_sp"></a> 2-4 Add accounts to a PWA security group (SharePoint mode)  
- **Required for:** ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
 1.  From the PWA home page, open **Site settings** from the gear icon.  
 
-     ![Open site settings for PWA &#40;PS 2013&#41;](_img/alm_tfsps_pwasitesettings.png "ALM_TFSPS_PWASiteSettings")  
+     ![Open site settings for PWA &#40;PS 2013&#41;](media/alm_tfsps_pwasitesettings.png "ALM_TFSPS_PWASiteSettings")  
 
 2.  Open Site Collection Administrators and add the TFS service account.  
 
 3.  Open **People and groups**.  
 
-     ![Open People and Groups for PWA  &#40;PS 2013&#41;](_img/alm_tfsps_pwapeopleandgroups.png "ALM_TFSPS_PWAPeopleAndGroups")  
+     ![Open People and Groups for PWA  &#40;PS 2013&#41;](media/alm_tfsps_pwapeopleandgroups.png "ALM_TFSPS_PWAPeopleAndGroups")  
 
 4.  Choose the group to which you want to add accounts.  
 
-     ![Choose the group in PWA to add accounts &#40;PS 2013&#41;](_img/alm_tfsps_pwapandg_team.png "ALM_TFSPS_PWAPAndG_Team")  
+     ![Choose the group in PWA to add accounts &#40;PS 2013&#41;](media/alm_tfsps_pwapandg_team.png "ALM_TFSPS_PWAPAndG_Team")  
 
     1.  **Team Members for Project Web App**: accounts assigned as resources in the project plan or to the Assigned To field for a work item. Or, add the Active Directory group used to manage these resources.  
 
@@ -234,65 +232,65 @@ ms.date: 03/16/2017
 
 6.  Type the name of each account or Active Directory group to add to the selected group.  
 
-     ![Add accounts to a group for PWA &#40;PS 2013&#41;](_img/alm_tfsps_pwa_addaccount.png "ALM_TFSPS_PWA_AddAccount")  
+     ![Add accounts to a group for PWA &#40;PS 2013&#41;](media/alm_tfsps_pwa_addaccount.png "ALM_TFSPS_PWA_AddAccount")  
 
 7.  Choose **Share**.  
 
 ###  <a name="pool"></a> 2-5 Add user accounts to the Active Directory Enterprise Resource Pool  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
 1.  From the PWA settings page, under Operational policies, choose Active Directory resource pool synchronization.  
 
-     ![Open Active Directory Resource Pool Sync](_img/alm_pwa_setactivedirectresouce.png "ALM_PWA_SetActiveDirectResouce")  
+     ![Open Active Directory Resource Pool Sync](media/alm_pwa_setactivedirectresouce.png "ALM_PWA_SetActiveDirectResouce")  
 
 2.  Add the Active Directory group of TFS team members to the enterprise resource pool.  
 
-     ![Active Directory Enterprise Resource Pool](_img/alm_pwa_activatesyncgroup.png "ALM_PWA_ActivateSyncGroup")  
+     ![Active Directory Enterprise Resource Pool](media/alm_pwa_activatesyncgroup.png "ALM_PWA_ActivateSyncGroup")  
 
 ##  <a name="grant_sharepoint_permissions"></a> 3. Grant SharePoint Server permissions  
  Grant the specified permissions using SharePoint Central Administration. Or, you can use Windows PowerShell.  
 
 |Task|Set for these configurations:|  
 |----------|-----------------------------------|  
-|[3-1. Grant Full Control Connect permissions to start the Project Server Service Application](#full_control)<br /><br /> -   TFS service account<br />-   Service account for the Project Server Event Handler|![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
-|[3-2. Add TFS service account to the Site Collection Administrators for the SharePoint site](#site_collection)|![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
+|[3-1. Grant Full Control Connect permissions to start the Project Server Service Application](#full_control)<br /><br /> -   TFS service account<br />-   Service account for the Project Server Event Handler|![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")|  
+|[3-2. Add TFS service account to the Site Collection Administrators for the SharePoint site](#site_collection)|![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")|  
 
 ###  <a name="full_control"></a> 3-1 Grant Full Control Connect permissions to start the Project Server Service Application  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") and ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode")  
 
 1. On to the SharePoint server for Project Server, open **SharePoint Central Administration**, and under **Application Management**, choose **Manage service applications**.  
 
-    ![Choose Manage service applications](_img/alm_sp_manageserviceapps.png "ALM_SP_ManageServiceApps")  
+    ![Choose Manage service applications](media/alm_sp_manageserviceapps.png "ALM_SP_ManageServiceApps")  
 
 2. Highlight the row for **Project Server Service Application** by clicking within the row but not the name of the application. In the ribbon, choose **Permissions**.  
 
-    ![Select permissions](_img/alm_alm_sp_msa_selectpermissions.png "ALM_ALM_SP_MSA_SelectPermissions")  
+    ![Select permissions](media/alm_alm_sp_msa_selectpermissions.png "ALM_ALM_SP_MSA_SelectPermissions")  
 
 3. Type the name of the service account for TFS, and then choose **Add**.  
 
 4. Make sure that the name of the newly added service account is highlighted, and then select the **Full Control** check box. Choose **OK**.  
 
-    ![Connection permissions full control](_img/alm_sp_msa_fullcontrol.png "ALM_SP_MSA_FullControl")  
+    ![Connection permissions full control](media/alm_sp_msa_fullcontrol.png "ALM_SP_MSA_FullControl")  
 
 5. Repeat steps 3 and 4, this time add the service account for Service account for the Project Server Event Handler.  If there is more than one service account, make sure you add it.  
 
    For more information, see [Restrict or enable access to a service application](https://technet.microsoft.com/library/ff463596.aspx).  
 
 ###  <a name="site_collection"></a> 3-2. Add TFS service account to the Site Collection Administrators group  
- **Required for:** ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
 1.  On to the SharePoint server for Project Server, open  **SharePoint 2013 Central Administration**, and choose **Site settings** from the gear icon.  
 
-     ![Open SharePoint Site Settings for PS 2013](_img/alm_tfsps_sitesettings.png "ALM_TFSPS_SiteSettings")  
+     ![Open SharePoint Site Settings for PS 2013](media/alm_tfsps_sitesettings.png "ALM_TFSPS_SiteSettings")  
 
 2.  Choose **Site collection administrators**.  
 
-     ![Open Site Collection Administrators for PS 2013](_img/alm_tfsps_sitecollectionadmin.png "ALM_TFSPS_SiteCollectionAdmin")  
+     ![Open Site Collection Administrators for PS 2013](media/alm_tfsps_sitecollectionadmin.png "ALM_TFSPS_SiteCollectionAdmin")  
 
 3.  Type the name of the TFS service account, and choose OK when done.  
 
 ##  <a name="grant_db_permissions"></a> 4. Grant Project Server database permissions  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
  Grant permissions to both the service account for TFS and the service account for the Project Server web application pool to update the database or databases for each PWA instance. This step is required for all deployments, both Project Server 2010 and Project Server 2013.  
 
@@ -319,7 +317,7 @@ ms.date: 03/16/2017
 
     For SQL Server 2012: Choose **Search** to add an account.  
 
-    ![Add user &#40;SQL Server 2012&#41;](_img/alm_alm_sql_2012_adduser.png "ALM_ALM_SQL_2012_AddUser")  
+    ![Add user &#40;SQL Server 2012&#41;](media/alm_alm_sql_2012_adduser.png "ALM_ALM_SQL_2012_AddUser")  
 
 6. Grant these permissions based on the database you've selected:  
 
@@ -329,46 +327,46 @@ ms.date: 03/16/2017
 
    - For Project Server 2013: **ProjectWebAppAlter any Schema**, **Create Table**, **Delete** , **Execute**, **Insert**, **Select**, and **Update**.  
 
-     ![Check permissions](_img/alm_sql_grantpermissions.png "ALM_SQL_GrantPermissions")  
+     ![Check permissions](media/alm_sql_grantpermissions.png "ALM_SQL_GrantPermissions")  
 
 7. Repeat steps 5 through 6, this time add the service account of the Project Server web application pool. This is required for all deployments.  
 
 8. Repeat steps 4 through 7 for each instance of PWA that will participate in data synchronization with TFS.  
 
 ##  <a name="add_tfadmingroup"></a> 5. Add user accounts to Team Foundation Administrators group  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
 1.  On the application-tier server, [Open the Team Foundation Administration Console](/azure/devops/server/admin/open-admin-console), and open **Group Membership**.  
 
-     ![Application tier, choose Group Membership](_img/alm_tac_groupmembership.png "ALM_TAC_GroupMembership")  
+     ![Application tier, choose Group Membership](media/alm_tac_groupmembership.png "ALM_TAC_GroupMembership")  
 
 2.  Open **Team Foundation Administrators**.  
 
 3.  Choose Windows User or Group and then choose Add.  
 
-     ![Add Windows account](_img/alm_tac_addwindowsaccount.png "ALM_TAC_AddWindowsAccount")  
+     ![Add Windows account](media/alm_tac_addwindowsaccount.png "ALM_TAC_AddWindowsAccount")  
 
 4.  Enter the name of the accounts of users who configure the integration by running the **TfsAdmin ProjectServer RegisterPWA/UnRegisterPWA** commands.  
 
-     ![Check name](_img/alm_tac_checkname.png "ALM_TAC_CheckName")  
+     ![Check name](media/alm_tac_checkname.png "ALM_TAC_CheckName")  
 
 ##  <a name="twa_apsi"></a> 6. Grant Administer Project Server integration permissions  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
  Accounts of users who configure the TFS-Project Server integration require Administer Project Server Integration permission set to allow. Set this for each project collection that you map to a PWA.  
 
  From the Security page for the project collection, either open the permissions for a user account or a Windows account that you've added to TFS for administering project server integration. Set the permissions for Administer Project Server Integration to Allow.  
 
- ![Set Administer Project Server Integration perm](_img/alm_tfsps_twa_setadminpsinteg.png "ALM_TFSPS_TWA_SetAdminPSInteg")  
+ ![Set Administer Project Server Integration perm](media/alm_tfsps_twa_setadminpsinteg.png "ALM_TFSPS_TWA_SetAdminPSInteg")  
 
 ##  <a name="add_twa"></a> 7. Add accounts to Team Foundation groups  
- **Required for:** ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
+ **Required for:** ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode"), ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode"), and ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode")  
 
  Accounts of users who work in Project Professional or TFS require permissions to view or contribute to TFS.  
 
  From the TFS web portal administration Security page for the project, you can add accounts to either the project collection or each project. Add accounts or the Active Directory groups to the appropriate roles.  
 
- ![Choose the project group and add members](_img/addausertoateamprojectgroup.png "Addausertoateamprojectgroup")  
+ ![Choose the project group and add members](media/addausertoateamprojectgroup.png "Addausertoateamprojectgroup")  
 
  Verify that user accounts or groups have been added to the following TFS groups for each project that will participate in data synchronization:  
 
@@ -384,28 +382,28 @@ ms.date: 03/16/2017
 
 |                                                Account                                                 |                                                          Permissions                                                          |                                      Project Server 2010                                      |                           Project Server 2013 (Permission mode)                            |                         Project Server 2013 (SharePoint mode)                          |              Application               |
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------|
-|                                        Service Account for TFS                                         |                                    [Global](#global) and [Category](#category) permissions                                    | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |                  PWA                   |
-|                                                                                                        |                                       [Administrators for Project Web App group](#pwa)                                        | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        |                                   [Site Collection Administrators group](#site_collection)                                    |                                                                                               |                                                                                            | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |   SharePoint Central Administration    |
-|                                                                                                        |                 [Connect permissions to the Project Server Service Application (Full Control)](#full_control)                 |                                                                                               | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |   SharePoint Central Administration    |
-|                                                                                                        |                              [PWA_Reporting and PWA_Publishing databases](#grant_db_permissions)                              | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") |                                                                                            |                                                                                        |      SQL Server Management Studio      |
-|                                                                                                        |                                        [ProjectWebApp database](#grant_db_permissions)                                        |                                                                                               | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |      SQL Server Management Studio      |
-|                  Service account for the Project Server web application pool (Note 1)                  |                                             [Administrators for PWA group](#pwa)                                              | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        |                              [PWA_Reporting and PWA_Publishing databases](#grant_db_permissions)                              | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") |                                                                                            |                                                                                        |      SQL Server Management Studio      |
-|                                                                                                        |                                        [ProjectWebApp database](#grant_db_permissions)                                        |                                                                                               | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |      SQL Server Management Studio      |
-|                           vice account for the Project Server Event Handler                            |                 [Connect permissions to the Project Server Service Application (Full Control)](#full_control)                 | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |   SharePoint Central Administration    |
-|                                                                                                        |                                             [Administrators for PWA group](#pwa)                                              |                                                                                               | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-| User accounts who will configure the integration and run the **TFSProjectServer registerPWA** command  |                                             [Administrators for PWA group](#pwa)                                              | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        |                                   [Site Collection Administrators group](#site_collection)                                    |                                                                                               |                                                                                            | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |   SharePoint Central Administration    |
-|                                                                                                        |                                   [Team Foundation Administrators group](#add_tfadmingroup)                                   | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") | Team Foundation Administration Console |
-|                                                                                                        |                                      [Administer Project Server integration](#twa_apsi)                                       | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
-| User accounts who will map components to support TFS-Project Server integration, but not register PWAs |                                      [Administer Project Server integration](#twa_apsi)                                       | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
-|                                       rs of Project Professional                                       |                                      [Project Manager group for each PWA instance](#pwa)                                      | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        |                                                 [TFS Readers group](#add_twa)                                                 |                                                                                               | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
-|              Users assigned as project resources or have TFS work items assigned to them               |                                          [Team Members for the PWA App group](#pwa)                                           | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        | [Plan groups, categories, and RBS in Project Server 2013 (Note 2)](https://msdn.microsoft.com/library/cc197354.aspx) (Note 2) | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |                  PWA                   |
-|                                                                                                        |                    [Enterprise project pool and to the project resource pool for the project plan](#pool)                     | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
-|                                                                                                        |                                              [TFS Contributors group](#add_twa)                                               | ![Project Server 2010 Classic Mode](_img/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](_img/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](_img/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
+|                                        Service Account for TFS                                         |                                    [Global](#global) and [Category](#category) permissions                                    | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |                  PWA                   |
+|                                                                                                        |                                       [Administrators for Project Web App group](#pwa)                                        | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        |                                   [Site Collection Administrators group](#site_collection)                                    |                                                                                               |                                                                                            | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |   SharePoint Central Administration    |
+|                                                                                                        |                 [Connect permissions to the Project Server Service Application (Full Control)](#full_control)                 |                                                                                               | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |   SharePoint Central Administration    |
+|                                                                                                        |                              [PWA_Reporting and PWA_Publishing databases](#grant_db_permissions)                              | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") |                                                                                            |                                                                                        |      SQL Server Management Studio      |
+|                                                                                                        |                                        [ProjectWebApp database](#grant_db_permissions)                                        |                                                                                               | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |      SQL Server Management Studio      |
+|                  Service account for the Project Server web application pool (Note 1)                  |                                             [Administrators for PWA group](#pwa)                                              | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        |                              [PWA_Reporting and PWA_Publishing databases](#grant_db_permissions)                              | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") |                                                                                            |                                                                                        |      SQL Server Management Studio      |
+|                                                                                                        |                                        [ProjectWebApp database](#grant_db_permissions)                                        |                                                                                               | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |      SQL Server Management Studio      |
+|                           vice account for the Project Server Event Handler                            |                 [Connect permissions to the Project Server Service Application (Full Control)](#full_control)                 | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |   SharePoint Central Administration    |
+|                                                                                                        |                                             [Administrators for PWA group](#pwa)                                              |                                                                                               | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+| User accounts who will configure the integration and run the **TFSProjectServer registerPWA** command  |                                             [Administrators for PWA group](#pwa)                                              | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        |                                   [Site Collection Administrators group](#site_collection)                                    |                                                                                               |                                                                                            | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |   SharePoint Central Administration    |
+|                                                                                                        |                                   [Team Foundation Administrators group](#add_tfadmingroup)                                   | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") | Team Foundation Administration Console |
+|                                                                                                        |                                      [Administer Project Server integration](#twa_apsi)                                       | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
+| User accounts who will map components to support TFS-Project Server integration, but not register PWAs |                                      [Administer Project Server integration](#twa_apsi)                                       | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
+|                                       rs of Project Professional                                       |                                      [Project Manager group for each PWA instance](#pwa)                                      | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        |                                                 [TFS Readers group](#add_twa)                                                 |                                                                                               | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
+|              Users assigned as project resources or have TFS work items assigned to them               |                                          [Team Members for the PWA App group](#pwa)                                           | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        | [Plan groups, categories, and RBS in Project Server 2013 (Note 2)](https://msdn.microsoft.com/library/cc197354.aspx) (Note 2) | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") |                                                                                        |                  PWA                   |
+|                                                                                                        |                    [Enterprise project pool and to the project resource pool for the project plan](#pool)                     | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |                  PWA                   |
+|                                                                                                        |                                              [TFS Contributors group](#add_twa)                                               | ![Project Server 2010 Classic Mode](media/alm_tfs-ps_classicmode.png "ALM_TFS-PS_ClassicMode") | ![Project Server 2013 Permission Mode](media/alm_tfs-ps_permmode.png "ALM_TFS-PS_PermMode") | ![Project Server 2013 SharePoint Mode](media/alm_tfs-ps_spmode.png "ALM_TFS-PS_SPMode") |             TFS web portal             |
 
  **Notes:**  
 
@@ -421,7 +419,7 @@ ms.date: 03/16/2017
 
  Verify that Classic Mode Authentication is selected.  
 
- ![PWA 2010 Authentication](_img/alm_tfsps_pwa_2010_authentication.png "ALM_TFSPS_PWA_2010_Authentication")  
+ ![PWA 2010 Authentication](media/alm_tfsps_pwa_2010_authentication.png "ALM_TFSPS_PWA_2010_Authentication")  
 
  If it isn't, you'll need to [create a new PWA instance that uses Windows-Classic authentication](https://technet.microsoft.com/library/gg276326.aspx).  
 
@@ -429,15 +427,15 @@ ms.date: 03/16/2017
 ###  Q: How do I determine the Permission mode in SharePoint 2013?  
  **A:** From the PWA home page, use the gear icon to open **PWA settings**.  
 
- ![PWA page, select PWA settings](_img/alm_tfsps_pwa_pwasettings.png "ALM_TFSPS_PWA_PWASettings")  
+ ![PWA page, select PWA settings](media/alm_tfsps_pwa_pwasettings.png "ALM_TFSPS_PWA_PWASettings")  
 
  If SharePoint Permissions mode is set, you'll see this page:  
 
- ![PWA Settings when SharePoint Permission mode](_img/alm_tfsps_pwa_sp_settings.png "ALM_TFSPS_PWA_SP_Settings")  
+ ![PWA Settings when SharePoint Permission mode](media/alm_tfsps_pwa_sp_settings.png "ALM_TFSPS_PWA_SP_Settings")  
 
  If Project Permissions mode is set, you'll see this page, which includes a section titled **Security**. You'll also see additional links:  
 
- ![PWA Settings when Project Permission mode](_img/alm_tfsps_pwa_pm_settings.png "ALM_TFSPS_PWA_PM_Settings")  
+ ![PWA Settings when Project Permission mode](media/alm_tfsps_pwa_pm_settings.png "ALM_TFSPS_PWA_PM_Settings")  
 
 ### Q: How do I switch permission modes in Project Server 2013?  
  **A:** By default, PWA apps are created using SharePoint permission mode.  

@@ -3,9 +3,7 @@ title: Update your branch history with rebase
 titleSuffix: Azure Repos
 description: Rewriting History using Git rebase
 ms.assetid: 7f6312b8-6c98-4f44-9b6e-eecbeafbbaea
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial
@@ -62,7 +60,7 @@ with others. This avoids trouble with rewriting history while still letting you 
 In Team Explorer, go to the **Branches** view. Click  **Rebase**. You'll see a prompt to rebase the changes from your current branch, and then a drop-down to specify which branch
 the changes in the current branch should be replayed on top of. If there is a conflict, resolve it just like you resolve [merge conflicts](merging.md) in Visual Studio.
 
-![Rebasing with Git in Visual Studio](_shared/_img/vs-rebasing.gif)
+![Rebasing with Git in Visual Studio](media/vs-rebasing.gif)
 
 # [Command Line](#tab/command-line)
 

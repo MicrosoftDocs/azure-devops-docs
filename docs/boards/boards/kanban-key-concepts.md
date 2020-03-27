@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Kanban in Azure Boards and Team Foundation Server (TFS) 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 07/22/2019
 
 # Kanban key concepts
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also: 
 - [Agile glossary](../work-items/agile-glossary.md) 
@@ -24,7 +22,7 @@ This article provides a short dictionary of terms and available tools used in tr
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/agile-tools.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
 
 ## Blocker
 
@@ -34,7 +32,7 @@ An issue that prevents work from progressing. You can highlight work that is blo
 
 A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their impact and provides a mechanism for controlling work flowing through the process. Learn more: [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).
 
-[!INCLUDE [temp](../../_shared/glossary-terms/bugs.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/bugs.md)] 
 
 ::: moniker range=">= tfs-2015" 
  
@@ -55,7 +53,7 @@ The in-context CFD report shows the count of items in each Kanban column for the
 Cycle time is the time calculated for a work item from first entering an *In Progress* category state to entering a *Completed* [state category](#state-category). Learn more: [Cumulative flow, lead time, and cycle time guidance](../../report/dashboards/cumulative-flow-cycle-lead-time-guidance.md). 
 
 > [!div class="mx-imgBorder"]  
-> ![Lead time and cycle time](/azure/devops/report/dashboards/_img/cycle-lead-time-concept-intro.png)  
+> ![Lead time and cycle time](/azure/devops/report/dashboards/media/cycle-lead-time-concept-intro.png)  
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -67,9 +65,9 @@ You can gain valuable metrics and visualize the cycle time for a team and a conf
 
 Criteria that a team specifies for each stage of work to share and standardize on what constitutes work being done at that stage. Learn more: [Kanban best practices, working software and the Definition of Done](best-practices-kanban.md#dod). 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/kanban-board.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/kanban-board.md)] 
 
-[!INCLUDE [temp](../_shared/note-kanban-boards-teams.md)]
+[!INCLUDE [temp](../includes/note-kanban-boards-teams.md)]
 
 ## Kanban columns 
 
@@ -93,13 +91,13 @@ Live updates is a Kanban board view option which when enabled automatically refr
 
 ::: moniker-end   
 
-[!INCLUDE [temp](../../_shared/glossary-terms/issues.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/issues.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/product-backlog-item.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/product-backlog-item.md)] 
 
-[!INCLUDE [temp](../../_shared/glossary-terms/portfolio-backlog.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/portfolio-backlog.md)] 
 
 <!---
 ## Scrumban 
@@ -113,7 +111,7 @@ Live updates is a Kanban board view option which when enabled automatically refr
 A swimlane is a configurable row on a Kanban board, usually used to support different service class levels of work. Learn more: [Expedite work with swimlanes](expedite-work.md). 
 
 > [!div class="mx-imgBorder"]
-> ![Kanban board, Drag items into a swimlane](_img/expedite/swimlanes-move-item.png)  
+> ![Kanban board, Drag items into a swimlane](media/expedite/swimlanes-move-item.png)  
 
 ::: moniker-end  
 
@@ -123,7 +121,7 @@ A swimlane is a configurable row on a Kanban board, usually used to support diff
 
 Split columns lets your team implement a pull mechanism within the workflow process. Without split columns, teams push work forward, to signal that they've completed their stage of work. However, pushing it to the next stage doesn't necessarily mean that a team member immediately starts work on that item. With split columns, your team knows exactly how many items sit idle, waiting for work to begin. Learn more: [Split columns](split-columns.md). 
 
-![Kanban board, Split columns](_img/kanban-board-split-columns-example-chart.png)
+![Kanban board, Split columns](media/kanban-board-split-columns-example-chart.png)
 
 ::: moniker-end  
 
@@ -139,7 +137,7 @@ A task is a type of work item used to track work required to complete a user sto
 
 Task switching, also referred to as *context switching* or *multitasking*, is when a team member shifts their attention among different tasks. Limiting task switching can allow a person to work more efficiently by minimizing the amount of time required to redirect cognitive function to a new activity.
 
-[!INCLUDE [temp](../../_shared/glossary-terms/user-story.md)] 
+[!INCLUDE [temp](../../includes/glossary-terms/user-story.md)] 
 
 ## WIP limit
 
@@ -159,7 +157,7 @@ Workflow states are defined for each work item type to support tracking the stat
 
 The State and Reason fields differ depending on the work item type and process selected for the project. 
 
-[!INCLUDE [temp](../_shared/four-process-workflow.md)] 
+[!INCLUDE [temp](../includes/four-process-workflow.md)] 
 
 ::: moniker range="azure-devops"
 

@@ -1,11 +1,9 @@
 ---
 title: Create a Java project release pipeline for deployment with Azure DevOps Services
 description: Tutorial lab for creating a Java project release pipeline for Azure Container deployment with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 10/26/2018
@@ -36,15 +34,15 @@ In this task you will install an Azure DevOps Services extension from the [Azure
 
 1. Click on the shopping bag icon on the upper right and select "Browse Marketplace".
 
-    ![Navigate to the marketplace](../_img/releasemanagement/browse-marketplace.png)
+    ![Navigate to the marketplace](../media/releasemanagement/browse-marketplace.png)
 
 1. In the search toolbar, type "replacement" and press enter. You should see "Colin's ALM Corner Build & Release Tools" in the results.
 
-    ![Search for replacement](../_img/releasemanagement/search-replacement.png)
+    ![Search for replacement](../media/releasemanagement/search-replacement.png)
 
 1. Click on "Colin's ALM Corner Build & Release Tools". Then click on the Install button.
 
-    ![Install the extension](../_img/releasemanagement/install-extension.png)
+    ![Install the extension](../media/releasemanagement/install-extension.png)
 
 2. In the dialog that appears, ensure that your organization is selected and click Continue. Once your permissions have been verified, click the Confirm button.
 
@@ -60,37 +58,37 @@ In this task you will create a release pipeline with a single stage called Azure
 
 1. Under the "Build and Releases" hub, click on "Releases" and click the button in the page to create a new release pipeline.
 
-    ![Go to the Releases tab](../_img/releasemanagement/goto-releases.png)
+    ![Go to the Releases tab](../media/releasemanagement/goto-releases.png)
 
 1. In the template flyout (on the right side), select an empty process as the template for the release pipeline.
 
-    ![Select empty process](../_img/releasemanagement/select-emptyprocess.png)
+    ![Select empty process](../media/releasemanagement/select-emptyprocess.png)
 
 1. Click on Stage1 to open the properties flyout. Change the name to "AzureVM".
 
-    ![Rename Stage1](../_img/releasemanagement/rename-env1.png)
+    ![Rename Stage1](../media/releasemanagement/rename-env1.png)
 
 1. In the "Artifacts" component of the release pipeline, click on the "Add artifact" button to add a build pipeline as an artifact source to the release pipeline.
 
-    ![Add artifact](../_img/releasemanagement/add-artifact.png)
+    ![Add artifact](../media/releasemanagement/add-artifact.png)
 
 1. In the Artifacts flyout, choose the MyShuttle2 build pipeline as the artifact, keep the default version as latest and the default value of the source alias. Then press the "Add" button.
 
-    ![Add MyShuttle2 artifact](../_img/releasemanagement/add-myshuttle2artifact.png)
+    ![Add MyShuttle2 artifact](../media/releasemanagement/add-myshuttle2artifact.png)
 
 1. Click in the name of the release pipeline and rename it.
 
-    ![Rename release pipeline](../_img/releasemanagement/edit-definitionname.png)
+    ![Rename release pipeline](../media/releasemanagement/edit-definitionname.png)
 
 1. Click on the trigger icon on the Build Artifact. In the property flyout, ensure that the Continuous Deployment trigger is enabled. Set the branch filter to master so that only builds from the master branch trigger the deployment automatically.
 
-    ![Continuous Deployment trigger](../_img/releasemanagement/release-trigger.png)
+    ![Continuous Deployment trigger](../media/releasemanagement/release-trigger.png)
 
 1. Click the link labelled "1 job(s), 0 task(s)" in the AzureVM stage card to open the jobs/tasks editor for the stage.
 
 1. Click on the "Agent Job" row and change the Queue to "default" so that your self-hosted agent executes the release tasks for this job of the release.
 
-    ![Edit the job settings](../_img/releasemanagement/edit-phase-settings.png)
+    ![Edit the job settings](../media/releasemanagement/edit-phase-settings.png)
 
 1. Click the "+" icon on the job to add a new task. Type "replace" in the search box. Add a "Replace Tokens" task.
 
@@ -101,7 +99,7 @@ In this task you will create a release pipeline with a single stage called Azure
     | Source Path | `$(System.DefaultWorkingDirectory)/MyShuttle2/drop` | The path in which to search for tokenized files |
     | Target File Pattern | `*.release.*` | The file pattern to use to find tokenized files in the Source Path |
 
-    ![Replace Tokens task](../_img/releasemanagement/replace-tokens.png)
+    ![Replace Tokens task](../media/releasemanagement/replace-tokens.png)
 
     > [!NOTE]
     > There are 2 tokenized files that the release will take advantage of, both of which live in the root of the MyShuttle2 repo. The build process published these files so that they are available as outputs of the build, ready for use in the Release process. `docker-compose.release.yml` contains tokens for the host port, container image names and tags.  `testng.release.xml` contains tokens for the baseUrl to test. These tokenized files make it possible to "Build Once, Deploy Many Times" since they separate the stage configuration and the binaries from the build. The Replace Tokens task inject release variables (which you will define shortly) into the tokens in the files.
@@ -119,7 +117,7 @@ In this task you will create a release pipeline with a single stage called Azure
     | Action | Run service images | Sets the action to perform (in this case an `up` command) |
     | Build Images | Unchecked | Use the images that were built in the build process |
 
-    ![Run Services task](../_img/releasemanagement/run-services.png)
+    ![Run Services task](../media/releasemanagement/run-services.png)
 
     > [!NOTE]
     > This task will start the 2 container apps in the docker engine of the host VM.
@@ -134,7 +132,7 @@ In this task you will create a release pipeline with a single stage called Azure
     | Arguments | `-cp myshuttledev-tests.jar:test-jars/* org.testng.TestNG ../testng.release.xml` | Arguments for the java command to invoke the integration tests |
     | Advanced/Working folder | `$(System.DefaultWorkingDirectory)/MyShuttle2/drop/target` | Run the command in the correct folder |
 
-    ![Run Java task](../_img/releasemanagement/run-java.png)
+    ![Run Java task](../media/releasemanagement/run-java.png)
 
     > [!NOTE]
     > This command invokes Java to run testNG tests. The run uses the `testng.release.xml` file which at this point in the release contains the correct `baseUrl` for the tests. If the tests fail, the release will fail.
@@ -148,14 +146,14 @@ In this task you will create a release pipeline with a single stage called Azure
     | Test results files | `**/TEST-*.xml` | Invoke java |
     | Control Options/Continue on error | Checked | Uploads the results even if the tests from the previous step fail. |
 
-    ![Publish Test Results task](../_img/releasemanagement/publish-testresults.png)
+    ![Publish Test Results task](../media/releasemanagement/publish-testresults.png)
 
     > [!NOTE]
     > This command grabs the JUnit test results file from the test run and publishes them to the release so that the test results are available in the Release summary.
 
 1. You should have 4 tasks in this order:
 
-    ![Tasks for the Release](../_img/releasemanagement/tasks-view.png)
+    ![Tasks for the Release](../media/releasemanagement/tasks-view.png)
 
 1. Click on the Variables tab. Enter the following variables and scopes:
 
@@ -167,7 +165,7 @@ In this task you will create a release pipeline with a single stage called Azure
     | HostPort | 8081 | AzureVM | The port to expose the web app to on the host |
     | Tag | $(Build.BuildNumber) | Release | The tag to use for the container images - tied to the build number. |
 
-    ![Variables for the release](../_img/releasemanagement/release-vars.png)
+    ![Variables for the release](../media/releasemanagement/release-vars.png)
 
     > [!NOTE]
     > You will need to use your azure container registry (e.g. `cdjavadev.azurecr.io`) in the image variables. Instead of using the `:latest` tag for the images, we explicitly use the build number, which was used to tag the images during the build. This allows us to "roll-forward" to previous tags for the images if we want to revert a release. The scope setting allows us to make variables that live at a release level (Release) or are stage-specific (like AzureVM). If you clone the stage to repeat this release in additional stages, you can just specify new values for the variables for those stages.
@@ -176,23 +174,23 @@ In this task you will create a release pipeline with a single stage called Azure
 
 1. Click the "+ Release" button and then click Create Release.
 
-    ![Create a new Release](../_img/releasemanagement/create-release.png)
+    ![Create a new Release](../media/releasemanagement/create-release.png)
 
 1. Click the queue button on the Create a new release dialog to start the release.
 
-    ![Click the release number](../_img/releasemanagement/click-release.png)
+    ![Click the release number](../media/releasemanagement/click-release.png)
 
 1. Click on Logs to view the logs from the release.
 
-    ![Click Logs](../_img/releasemanagement/click-logs.png)
+    ![Click Logs](../media/releasemanagement/click-logs.png)
 
 1. When the release completes, click on the Tests tab and then change the filter to see that the tests all succeeded.
 
-    ![View test results](../_img/releasemanagement/test-results.png)
+    ![View test results](../media/releasemanagement/test-results.png)
 
 1. In Chrome, browse to `http://localhost:8081/myshuttledev/` to see the site running.
 
-    ![The site is running](../_img/releasemanagement/site-running.png)
+    ![The site is running](../media/releasemanagement/site-running.png)
 
     > [!NOTE]
     > You can log in by entering username `fred` and password `fredpassword`.

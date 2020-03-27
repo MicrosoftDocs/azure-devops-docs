@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 10/03/2019
 
 # Work item field index  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -293,6 +291,6 @@ The following articles describe fields that are used in common by several WITs, 
 - [Create managed queries](../../queries/example-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
 
 

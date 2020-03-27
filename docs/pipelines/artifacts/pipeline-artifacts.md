@@ -5,16 +5,11 @@ ms.custom: seodec18
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 6/18/2019
 monikerRange: 'azure-devops'
 ---
 
-# Pipeline artifacts in Azure Pipelines
+# Publish and download artifacts
 
 **Azure Pipelines**
 
@@ -24,6 +19,8 @@ Pipeline artifacts provide a way to share files between stages in a pipeline or 
 > Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
 
 ## Publishing artifacts
+
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 To publish (upload) an artifact for the current run of a CI/CD or classic pipeline:
 
@@ -50,7 +47,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
+![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
 
 * Artifact name:
 
@@ -123,7 +120,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -191,7 +188,7 @@ In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Artifact name:
 
@@ -248,7 +245,7 @@ steps:
 
 # [Classic](#tab/classic)
 
-![icon](../tasks/utility/_img/download-pipeline-artifact.png) **Download Pipeline Artifact**
+![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
 
 * Matching patterns:
 

@@ -1,28 +1,25 @@
-﻿---
+---
 title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 06/11/2019
+ms.date: 02/17/2020
 ---
 
 # Define features and epics  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]
 
 
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
 Perhaps you like to start with a big picture and break it down into smaller deliverables. 
 Or, you've got an existing backlog and now need to organize it.   
-
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
 Use your backlogs to plan your project and to:  
 *   Manage a portfolio of features that are supported by different development and management teams  
@@ -30,15 +27,17 @@ Use your backlogs to plan your project and to:
 *   Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
 Use this article to learn how to: 
->[!div class="checklist"]      
+> [!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
 
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
 
-[!INCLUDE [temp](../_shared/prerequisites.md)]
+[!INCLUDE [temp](../includes/work-item-types.md)] 
+
+[!INCLUDE [temp](../includes/prerequisites.md)]
 
 ## What comprises a feature or epic?  
 
@@ -75,25 +74,25 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-backlogs-backlog-s155-co.png)
+	> ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-backlogs-backlog-s155-co.png)
 
     To select another backlog, open the selector and then choose a different team or select the **View Backlog directory** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose another team](../sprints/_img/assign-items-sprint/backlog-team-selector-s155.png) 
+	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../_img/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../_img/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/_img/assign-items-sprint//select-product-backlog-agile-s155.png) 
+	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Column Options](../sprints/_img/assign-items-sprint/open-column-options-s155.png) 
+	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
 ::: moniker-end
 
@@ -101,22 +100,22 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
-    ![Open Work, Backlogs, for a team](../sprints/_img/assign-items-sprint/open-work-backlogs-agile.png)
+    ![Open Work, Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To choose another team, open the selector and select a different team or choose the ![home-icon](../../_img/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
+    To choose another team, open the selector and select a different team or choose the ![home-icon](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-agile.png) 
+    > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 1. Choose the portfolio backlog that you want, **Features** or **Epics**. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose product backlog level, Backlog items, Stories, or Requirements](_img/features-epics/choose-features-epics-agile.png) 
+    > ![Choose product backlog level, Backlog items, Stories, or Requirements](media/features-epics/choose-features-epics-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../_img/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Open Column Options](../sprints/_img/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
+    > ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
 ::: moniker-end
 
@@ -125,16 +124,16 @@ For example, when you choose **Epics**, you'll see a list of all Epics in your t
 1. From your web browser, open your team's backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the portfolio backlog of interest, which is **Features**  or **Epics**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Open the Boards>Backlogs>Features](_img/features-epics/open-features-epics.png) 
+    > ![Open the Boards>Backlogs>Features](media/features-epics/open-features-epics.png) 
 
     To choose another team, open the project/team selector and select a different team or choose the **Browse** option. 
 
     > [!div class="mx-imgBorder"]  
-    > ![Choose another team](../sprints/_img/assign-items-sprint/team-selector-backlogs-standard.png) 
+    > ![Choose another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png) 
 
 1. Choose **Epics** to see a list of all epics defined in your team's active area paths.  
 
-   ![Hierarchical view of backlogs](_img/org-backlog-epics-ts-new-nav.png) 
+   ![Hierarchical view of backlogs](media/org-backlog-epics-ts-new-nav.png) 
 
 ::: moniker-end
 
@@ -152,17 +151,17 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To add a feature, choose the ![plus-icon](../../_img/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
+1. To add a feature, choose the ![plus-icon](../../media/icons/blue-add-icon.png)**New Work Item**, enter a title and then press the Enter key or choose **Add to top**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Add a product backlog item](_img/features-epics/add-new-items-agile.png) 
+    > ![Add a product backlog item](media/features-epics/add-new-items-agile.png) 
 
 2. Repeat this step to capture all your ideas as work items.  
 
     Here, we've added six features.  
 
     > [!div class="mx-imgBorder"]
-    > ![Add a feature](_img/features-epics/features-backlog-agile.png) 
+    > ![Add a feature](media/features-epics/features-backlog-agile.png) 
 
     You can add epics in the same way. Simply open the **Epics** backlog from the backlogs selector.  
 
@@ -174,13 +173,13 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 1. To add a feature, enter a title and choose **Add**. If you don't see the **Add** link, choose **New** to open the quick add panel. 
 
     > [!div class="mx-imgBorder"]
-    > ![Add a feature](_img/features-epics/add-feature-standard.png) 
+    > ![Add a feature](media/features-epics/add-feature-standard.png) 
 
 2. Repeat this step until you've captured all your main ideas. 
 
    Here, we've added six features.  
 
-   ![Features backlog](_img/org-backlog-features-ts-new-nav.png) 
+   ![Features backlog](media/org-backlog-features-ts-new-nav.png) 
 
 ::: moniker-end
 
@@ -188,10 +187,10 @@ Just as you can [add items to your product backlog](create-your-backlog.md), you
 
 Open each item (double-click, or press Enter to open the selected item) and add all the info you want to track. Enter as much detail as the team needs to understand the scope, estimate the work required, develop tests, and ensure that the end product meets acceptance criteria.
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]  
 
 > [!div class="mx-imgBorder"]  
-> ![Feature work item form, Agile process, Add details to a feature](_img/features-epics/feature-work-item-form.png)
+> ![Feature work item form, Agile process, Add details to a feature](media/features-epics/feature-work-item-form.png)
 
 <table>
 <tbody valign="top">
@@ -254,14 +253,14 @@ You can add features to epics, and backlog items to features.
 
 ::: moniker range=">= azure-devops-2019"
 
-To add a work item, choose the ![plus-icon](../../_img/icons/blue-add-icon.png) and choose from the options provided.
+To add a work item, choose the ![plus-icon](../../media/icons/blue-add-icon.png) and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
 > [!div class="mx-imgBorder"]
-> ![Add a product backlog item as a child to a feature](_img/features-epics/add-child-item-to-feature.png) 
+> ![Add a product backlog item as a child to a feature](media/features-epics/add-child-item-to-feature.png) 
 
-Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you can add a child item. The work item always corresponds to the hierarchy of work item types that are defined for your project.
+Whenever you see the plus ![plus-icon](../../media/icons/blue-add-icon.png), you can add a child item. The work item always corresponds to the hierarchy of work item types that are defined for your project.
 
 
 ::: moniker-end
@@ -269,13 +268,13 @@ Whenever you see the plus ![plus-icon](../../_img/icons/blue-add-icon.png), you 
 
 ::: moniker range="<= tfs-2018"
 
-To add a work item, choose the ![plus icon](../_img/icons/green_plus_icon.png) and choose from the options provided.
+To add a work item, choose the ![plus icon](../media/icons/green_plus_icon.png) and choose from the options provided.
 
 Here we add a product backlog item as a child to the Customer Web - Phase 1 feature. 
 
-![Add a child item to a backlog work item](_img/org-backlog-features-add-child-ts.png)
+![Add a child item to a backlog work item](media/org-backlog-features-add-child-ts.png)
 
-Whenever you see the plus ![plus icon](../_img/icons/green_plus_icon.png), you can add a child item. 
+Whenever you see the plus ![plus icon](../media/icons/green_plus_icon.png), you can add a child item. 
 The work item always corresponds to the hierarchy of work item types that are defined for your project.   
 
 ::: moniker-end
@@ -283,7 +282,7 @@ The work item always corresponds to the hierarchy of work item types that are de
 
 For Scrum projects, your hierarchy is as shown: 
 
-![Hierarchical view of backlogs](_img/ALM_OB_Scrum_WIT_Hier_C.png) 
+![Hierarchical view of backlogs](media/ALM_OB_Scrum_WIT_Hier_C.png) 
 
 Because [teams can also set bugs as tasks](../../organizations/settings/show-bugs-on-backlog.md), bugs can be added as children of PBIs. 
 
@@ -292,11 +291,16 @@ The work item types you'll see depends on the [process you selected to create yo
 If you want bugs to show up on your backlog and you're not seeing them, [enable them for your team](../../organizations/settings/show-bugs-on-backlog.md). 
 
 
-[!INCLUDE [temp](../_shared/add-portfolio-backlogs.md)]
+[!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 
+[!INCLUDE [temp](../includes/display-rollup-section.md)]
 
-[!INCLUDE [temp](../_shared/display-rollup-section.md)]
+
+## Q & A
+
+[!INCLUDE [temp](../includes/faq-copy-clone.md)]
+
 
 ## Try this next  
 

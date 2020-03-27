@@ -3,10 +3,7 @@ title: Trigger a release in Release Management
 ms.custom: seodec18
 description: Trigger a release from a build in Release Management server/client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: A6079FE1-80FC-4C98-8F4A-832AB99CC5D3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Trigger a release from a build in Release Management
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Start a release automatically when you build your app using Team Foundation 
 Build (TFBuild). You can choose which stage of your release pipeline to start 
@@ -42,7 +39,7 @@ Also, if you haven't yet set up your build system,
    **[connect to the project](https://msdn.microsoft.com/library/ms181475%28v%3Dvs.140%29.aspx)** 
    that you want to work in (Keyboard: Ctrl + 0, C).
 
-1. On the ![Builds icon](_img/trigger-release-09.png)&nbsp;**Builds** page 
+1. On the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page 
    (Keyboard: Ctrl + 0, B), create or edit a build definition.
 
 1. On the **Process** tab of the build definition, choose the configuration 
@@ -51,7 +48,7 @@ Also, if you haven't yet set up your build system,
    to trigger for the release, or leave this field blank if you want to start 
    with the first stage.
 
-   ![Release build arguments](_img/trigger-release-01.png)
+   ![Release build arguments](media/trigger-release-01.png)
 
    If the **Release** section doesn't appear:
 
@@ -81,7 +78,7 @@ Also, if you haven't yet set up your build system,
    to trigger a build and select the check box to enable the build pipeline to 
    trigger a release.
 
-   ![Properties page for a release template ](_img/trigger-release-02.png)
+   ![Properties page for a release template ](media/trigger-release-02.png)
 
    If the **Build Definition** selection doesn't appear, then you need to add 
    your TFS connection to the Release Management client. (Add the connection 
@@ -99,15 +96,15 @@ Also, if you haven't yet set up your build system,
  
 **A**: See these blog posts:
 
-* [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/10/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3.aspx) 
+* [Trigger Release from build with Release Management for Visual Studio 2013 Update 3](https://devblogs.microsoft.com/devops/trigger-release-from-build-with-release-management-for-visual-studio-2013-update-3/) 
 
-* [Deploy Azure Cloud Service using Release Management](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/09/deploying-azure-cloud-service-using-release-management.aspx) 
+* [Deploy Azure Cloud Service using Release Management](https://devblogs.microsoft.com/devops/deploying-azure-cloud-service-using-release-management/) 
 
-* [Announcing DevOps style deployments using Visual Studio 2015 and Azure](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure.aspx) 
+* [Announcing DevOps style deployments using Visual Studio 2015 and Azure](https://devblogs.microsoft.com/devops/announcing-devops-style-deployments-using-visual-studio-2015-preview-and-azure/) 
 
-* [Using Release Management service to manage releases](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/11/using-release-management-vso-service-to-manage-releases.aspx) 
+* [Using Release Management service to manage releases](https://devblogs.microsoft.com/devops/using-release-management-vso-service-to-manage-releases/) 
 
-* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://blogs.msdn.com/b/visualstudioalm/archive/2014/07/08/how-to-trigger-deployments-to-chef-managed-environment-from-release-management.aspx) 
+* [How to trigger deployments to Chef managed environments from Release Management 2013 with Update 3 RC](https://devblogs.microsoft.com/devops/how-to-trigger-deployments-to-chef-managed-environments-from-release-management-2013-with-update-3-rc/) 
 
 <a name="add_template"></a>
 ### Q: I use the default template. Which build pipeline template should I use for Release Management and how do I add it to TFS?
@@ -123,9 +120,7 @@ with the corresponding release management process template.
    you want to work in (Keyboard: Ctrl + 0, C).
 
 1. In the folder **\Program Files (x86)\ Microsoft Visual Studio 12.0\ReleaseManagement\bin**
-   locate the template that you need. Or download the template to this 
-   folder from the zip file that is attached to 
-   **[this blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
+   locate the template that you need. 
 
    * TFS 2013 and 2015
      - **TFVC**: ReleaseTfvcTemplate.12.xaml.
@@ -139,7 +134,7 @@ with the corresponding release management process template.
    * **TFVC**: Add files to the server
    * **Git**: Manage files on your dev machine
 
-1. From the ![Builds icon](_img/trigger-release-09.png)&nbsp;**Builds** page, 
+1. From the ![Builds icon](media/trigger-release-09.png)&nbsp;**Builds** page, 
    (Keyboard Ctrl + 0, B), create or edit a build definition.
 
 1. From the **Process** tab, choose **New** to select the template to use for 
@@ -150,9 +145,7 @@ with the corresponding release management process template.
 ### Q: I use a custom build pipeline template. How do I add the workflow logic to trigger a release?
 
 **A**: Add sections to your custom build pipeline template to provide the 
-workflow logic. Download the snippets file with these sections 
-**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2013/12/09/how-to-modify-the-build-process-template-to-use-the-option-trigger-release-from-build.aspx)**.
-Use the snippets to add these arguments to your build pipeline template: 
+workflow logic. Add these arguments to your build pipeline template: 
 **ConfigurationsToRelease**, **ReleaseBuild**, **ReleaseTargetStage**, 
 **DropBuild**.
 
@@ -163,20 +156,20 @@ check it in. If you use Git, commit and push the build pipeline template.
 ### Q: I use the upgrade template. Which build pipeline template should I use for Release Management?
 
 **A**: Learn what you need to do 
-**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/01/31/how-to-modify-the-upgradetemplate-xaml-to-enable-releasing-from-a-build.aspx)**.
+**[here](https://devblogs.microsoft.com/devops/how-to-modify-the-upgradetemplate-xaml-to-enable-releasing-from-a-build/)**.
 
 ### Q: Can I deploy components of my application to different machines?
 
 **A**: Yes, create components through the Release Management client and add 
 them to your release template. You can then add these components to your build.
 
-![Add component to release template](_img/trigger-release-05.png)
+![Add component to release template](media/trigger-release-05.png)
 
 When the **Components** window is displayed, double-click the component that you 
 want to add. Each component that you add must be configured as 
 **Builds with application** or **Builds externally**.
 
-![Components page, Source tab](_img/trigger-release-06.png)
+![Components page, Source tab](media/trigger-release-06.png)
 
 A backslash (**\\**) in the **Build Drop Location** indicates that the build is located at 
 the root of the drop folder.
@@ -188,7 +181,7 @@ the root of the drop folder.
 deploying this component. Go **[here](release-actions/release-action-tools.md)** 
 to learn more about each tool.
 
-![Component page, Deployment tab](_img/trigger-release-07.png)
+![Component page, Deployment tab](media/trigger-release-07.png)
 
 To use a custom tool, first add the tool through the **Inventory** 
 page, and then select it from the **Deployment** tab. Also make sure that 
@@ -251,7 +244,7 @@ Keep your local files and tokenized files synchronized.
 **A**: For each component you define, you can specify the file extension 
 filter on the **Configuration Variables** tab.
 
-![Component, Configuration Variables tab](_img/trigger-release-08.png)
+![Component, Configuration Variables tab](media/trigger-release-08.png)
                 
 The deployment agent you specified for the component uses pattern matching to 
 scan the set of files that need tokens replaced with variables. Separate two 
@@ -266,6 +259,6 @@ or more file extensions using a semi-colon (**;**).
 * [Release with deployment agents](release-with-agents.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

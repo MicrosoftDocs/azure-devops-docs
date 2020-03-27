@@ -2,11 +2,9 @@
 title: Import and export global workflow using witadmin
 titleSuffix: TFS  
 description: Manage the global workflow to minimize the work required by defining and updating the work item fields and global lists that multiple projects and types of work items share - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: ac1a2973-6c8f-439d-bb7d-e141aaadc124
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,14 +13,14 @@ ms.date: 03/20/2018
 
 # Import and export global workflow
 
-[!INCLUDE [temp](../../_shared/customization-witadmin-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-witadmin-plus-version-header.md)]
 
 By using global workflow, you can minimize the work required to define and update work item fields and global lists that multiple projects and types of work items share. With global workflow, you can define and update fields and global lists. You can manage the global workflow for a project collection or a project by using the following commands in the **witadmin** command-line tool:  
   
 -   **exportglobalworkflow**:  Exports the global workflow to an XML file or the Command Prompt window.   
 -   **importglobalworkflow**:  Imports global workflow from an XML file.  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
 
   
  **Requirements**  

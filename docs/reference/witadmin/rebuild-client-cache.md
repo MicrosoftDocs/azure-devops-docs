@@ -2,11 +2,9 @@
 title: Rebuild the client cache
 titleSuffix: TFS  
 description: Update the data cache on client computers after certain maintenance operations.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: e110852a-ab93-4259-957e-47c2076c20bb
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 03/20/2018
 
 # Rebuild the client cache
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 
 > [!NOTE]    
@@ -28,7 +26,7 @@ To prevent workspace errors from occurring during version control or build opera
 > [!IMPORTANT]
 > To avoid server performance issues, you should not run this command during normal operating hours.  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]  
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]  
   
  **Requirements**  
   

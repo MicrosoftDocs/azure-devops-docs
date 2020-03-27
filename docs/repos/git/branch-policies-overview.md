@@ -2,10 +2,8 @@
 title: Branch policies
 titleSuffix: Azure Repos    
 description: Learn about branch policies in Azure DevOps Services & TFS  
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -49,7 +47,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Adopt a branching strategy" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Adopt a branching strategy" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -103,7 +101,7 @@ A strategy that extends these concepts and avoids contradictions will result in 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Require branch folders" src="_img/logos/folder.png" />
+                            <img width="48" height="48" alt="Require branch folders" src="media/logos/folder.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +144,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Branches tutorial" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Branches tutorial" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -164,7 +162,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="How to create a branch" src="_img/logos/add.png" />
+                            <img width="48" height="48" alt="How to create a branch" src="media/logos/add.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -182,7 +180,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="How to delete a branch" src="_img/logos/delete.png" />
+                            <img width="48" height="48" alt="How to delete a branch" src="media/logos/delete.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -200,7 +198,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Restore a deleted branch" src="_img/logos/restore.png" />
+                            <img width="48" height="48" alt="Restore a deleted branch" src="media/logos/restore.png" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -218,7 +216,7 @@ Learn how to perform common tasks when working with branches.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="How to lock branches" src="_img/logos/lock-branches.png" />
+                            <img width="48" height="48" alt="How to lock branches" src="media/logos/lock-branches.png" />
                         </div>
                     </div>
                     <div class="cardText">

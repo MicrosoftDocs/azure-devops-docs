@@ -1,10 +1,8 @@
 ---
 title: VSS/Common/Contracts/FormInput InputValuesQuery API | Extensions for Azure DevOps Services
 ms.assetid: e4e82be8-3abb-2a19-f2d9-3ef5118b4439
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

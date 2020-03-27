@@ -1,14 +1,10 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Troubleshoot your service hooks integrations | Azure DevOps Services
 description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/08/2019
 ---
 
@@ -28,12 +24,12 @@ as well as detailed request/response data
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 
 
-   <img alt="View the activity" src="./_img/troubleshoot/devops-service-hooks.png" />
+   <img alt="View the activity" src="./media/troubleshoot/devops-service-hooks.png" />
    
 2. To view detailed activity for a subscription, including full request, response,
 and event payload data, select a subscription in the table and click **History**.
 
-   <img alt="View detailed activity for a subscription" src="./_img/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 
@@ -42,12 +38,12 @@ and event payload data, select a subscription in the table and click **History**
 1. To view the activity and status of your subscriptions,
 go to the Service Hooks page. 
 
-   <img alt="View the activity" src="./_img/troubleshoot/service-hooks.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View the activity" src="./media/troubleshoot/service-hooks.png" style="border: 1px solid #CCCCCC" />
 
 2. To view detailed activity for a subscription, including full request, response,
 and event payload data, select a subscription in the table and click **History**.
 
-   <img alt="View detailed activity for a subscription" src="./_img/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
+   <img alt="View detailed activity for a subscription" src="./media/troubleshoot/detailed-activity.png" style="border: 1px solid #CCCCCC" />
 
 ::: moniker-end
 

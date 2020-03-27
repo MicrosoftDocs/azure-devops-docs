@@ -1,11 +1,9 @@
 ﻿---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Developing extensions for vertical web navigation
 description: Guidance for developing extensions to be used with vertical web navigation
 ms.assetid: 3fa22433-150b-428c-8e10-3ffb4d832c20
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast
@@ -16,7 +14,7 @@ ms.date: 10/02/2019
 
 Vertical navigation brings with it changes that impact some extensions. This includes support for extension icons along with changes to team context.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Team context
 
@@ -107,7 +105,7 @@ To set an icon for your hub:
 
 1. Set the `iconAsset` property of the hub contribution to the fully-qualified asset identifier, which follows the pattern: `{publisher-id}.{extension-id}/{asset-path}`.
 
-2. Add an entry for this asset in the `_shareData` contribution property.
+2. Add an entry for this asset in the `includesata` contribution property.
 
 3. Package the asset with your extension by listing it in the `files` property at the root of your manifest.
 
@@ -128,7 +126,7 @@ For example:
             "properties": {
                 "name": "My Hub",
                 "iconAsset": "my-publisher.my-extension/images/fabrikam-logo.png",
-                "_sharedData": {
+                "includesData": {
                     "assets": [
                         "my-publisher.my-extension/images/fabrikam-logo.png"
                     ]

@@ -1,11 +1,9 @@
 ﻿---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Tutorials catalog for developing extensions in Azure DevOps
 description: Follow tutorials to create an extension in Azure DevOps Services
 ms.assetid: 75df3138-f16d-4127-89f7-5462ce6874bd
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -21,7 +19,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../get-started/node.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-    <img alt="Visual Studio Code icon" src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+    <img alt="Visual Studio Code icon" src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -47,7 +45,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-hub.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px" >
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -72,7 +70,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-build-task.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -98,7 +96,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-workitem-extension.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -124,7 +122,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-action.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -150,7 +148,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-backlog-tabs.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -176,7 +174,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/service-endpoints.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -202,7 +200,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-service-hook.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -229,7 +227,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/add-dashboard-widget.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">
@@ -255,7 +253,7 @@ Below you'll find tutorials that cover different types of extensions so that you
 <a href="../develop/call-rest-api.md" style="text-decoration:none;color:#000000">
 <div name="row" style="padding-top:20px">
 <div style="vertical-align:top;display:inline-block;float:left;width:10%">
-<img src="./_img/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
+<img src="./media/visual-studio-code-icon.png" style="display:block;padding-bottom:20px;width:80%;margin-left:auto;margin-right:auto">
 </div>
 <div style="vertical-align:top;display:inline-block;float:left;width:25%">
 <div style="vertical-align:top;display:block;margin-left:auto;margin-right:;width:90%">

@@ -1,7 +1,6 @@
 ---
 title: Project Welcome pages – Aug 18
 description: VSTS release notes for August 18 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 1d640b87-d9b8-412c-a03c-340d9735d181
@@ -20,14 +19,14 @@ This sprint, we’re releasing Project Welcome pages. Welcome pages enable you t
 
 We are using GitHub Flavored Markdown (GFM) as implemented in the [Marked](https://github.com/chjj/marked) library by Chris Jeffrey. It’s really easy to write and quite flexible. If you want to learn more about how to use project welcome pages, check out [Martin’s blog post](https://aka.ms/ProjectHomepage) for more details.
 
-![Project welcome page](_img/8_18_01.png)
+![Project welcome page](media/8_18_01.png)
   
   
 ## Tagging support in the Test Hub
 
 We’ve now enabled support for tags on test cases in the Test Hub. You can see the tags in the test list and easily filter down to the test cases you are most interested in. It’s another nice usability improvement for test case management.
 
-![Tags applied to a test case](_img/8_18_02.png)
+![Tags applied to a test case](media/8_18_02.png)
   
 ## Lots of little things
 

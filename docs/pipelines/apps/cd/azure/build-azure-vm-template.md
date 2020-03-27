@@ -2,10 +2,7 @@
 title: Build a VM using RM templates
 description: How to build an Azure Virtual Machine using ARM templates in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: 10C708EC-0D2A-4EF8-9381-4CF8B1EBA755
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Build an Azure virtual machine using an Azure RM template
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 In just a few steps, you can provision Azure virtual machines (VMs)
@@ -76,17 +73,17 @@ For more details on each step, see [Continuous integration with Azure Resource M
 
 After you've run the build, you're ready to create a release pipeline to provision your virtual machine:
 
-![icon](../../../tasks/deploy/_img/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
+![icon](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
 ## Q & A
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]
 

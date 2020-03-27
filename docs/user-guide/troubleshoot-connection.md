@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot connecting to a project
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 
@@ -41,7 +39,7 @@ Two types of identities can sign in: Microsoft accounts and Azure Active Directo
 > 401 - Not Authorized
 > 
 > [!div class="mx-imgBorder"]
-> ![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
+> ![Troubleshoot Azure DevOps connection 401 error 1](media/troubleshoot-connection/401_notauthorized.png)
 
 The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
 
@@ -57,7 +55,7 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 > 401 - Work or school, or Personal account
 > 
 > [!div class="mx-imgBorder"]
-> ![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
+> ![troubleshoot Azure DevOps connection 401 error 2](media/troubleshoot-connection/401_AAD.png)
 
  A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
 
@@ -77,7 +75,7 @@ Your personal Microsoft account doesn't have access, but your Azure AD account d
 > 401 - Work or school, or Personal account
 > 
 > [!div class="mx-imgBorder"]
-> ![troubleshoot Azure DevOps connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
+> ![troubleshoot Azure DevOps connection 401 error 3](media/troubleshoot-connection/401_MSA.png)
 
 ### Mitigation
 

@@ -2,12 +2,8 @@
 title: What are feeds? | Azure Artifacts
 description: Feeds manage and set permissions for packages in Azure DevOps Services or Team Foundation Server
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 10/28/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -46,7 +42,7 @@ If you accidentally delete a feed, Azure Artifacts gives you the opportunity to 
 
 You can view your your feeds pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
 
-![Go to Azure Artifacts](_img/deleted-feeds-dropdown.png)
+![Go to Azure Artifacts](media/deleted-feeds-dropdown.png)
 
 1. In the feed pending deletion, click **Feed Settings**
 

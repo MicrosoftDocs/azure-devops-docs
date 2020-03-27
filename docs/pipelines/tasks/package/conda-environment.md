@@ -2,8 +2,6 @@
 title: Conda Environment task
 ms.custom: seodec18
 description: How to create and activate a Conda environment when building code in Azure Pipelines and TFS
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: D97AA092-1F19-4729-B98F-E27615003C1E
 ms.manager: madhurig
 ms.author: vijayma
@@ -51,7 +49,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/CondaEnvironmentV1.md)]
+[!INCLUDE [temp](../includes/yaml/CondaEnvironmentV1.md)]
 
 ::: moniker-end
 
@@ -79,7 +77,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <a name="agent-config"></a>
 

@@ -1,11 +1,9 @@
 ---
 title: Move Git repositories between Team Projects
 description: Explore how to move git repositories between Team Projects with full-fidelity history
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-code-git
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
-ms.manager: mijacobs
 ms.date: 04/27/2018
 ms.author: sdanie
 author: wpschaub
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Explore how to move git repositories between Team Projects with full-fidelity history
 
-![Git logo](./_img/move-git-repos-between-team-projects/git.png)
+![Git logo](./media/move-git-repos-between-team-projects/git.png)
 
 If you're planning to consolidate multiple Team Projects into one, you're probably wondering:
 * What to do with all the repositories? 
@@ -27,7 +25,7 @@ In this article you will learn how to move your Git repositories to another team
 
 As shown, you need to move the MigrationDemo repo, from the FabrikamOld to the new Fabrikam team project.
 
-> ![Move Repo Scenario](./_img/move-git-repos-between-team-projects/MoveRepo-Visual.png)
+> ![Move Repo Scenario](./media/move-git-repos-between-team-projects/MoveRepo-Visual.png)
 
 ## How do I move?
 
@@ -42,15 +40,15 @@ Using the Import Repository feature, you can import a Git repository to your tea
 
 From the code explorer, click on the repo name.  Choose **New Repository** from the list, select Git as the type, and give it a name.
 
-![Create New Repo](./_img/move-git-repos-between-team-projects/MoveRepo-NewRepo.png)
+![Create New Repo](./media/move-git-repos-between-team-projects/MoveRepo-NewRepo.png)
  
 Once the repo is created, you are presented with step-by-step instructions to quickly get started. Copy the `Clone URL` to your clipboard.
 
-![New Repo Information](./_img/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
+![New Repo Information](./media/move-git-repos-between-team-projects/MoveRepo-NewRepoInfo.png)
 
 > Important - Clear the **Automatically create links for work items mentioned in a commit comment** if you are importing from a different project collection or a foreign git repository. Azure DevOps will otherwise associate the commits to existing work items of unrelated team projects in the team project collection.
 
-![New Repo Options and Links Warning](./_img/move-git-repos-between-team-projects/MoveRepo-Warning.png)
+![New Repo Options and Links Warning](./media/move-git-repos-between-team-projects/MoveRepo-Warning.png)
 
 #### Mirror the repository
 
@@ -60,13 +58,13 @@ Switch to a Developer Command Prompt and path to your local (source) repository 
 
 As shown, the `clone --mirror` is redundant in this case, as the remote repository is bare. It is used here as a safe and easy way to set up the remote.
 
-![Git Clone Command Done](./_img/move-git-repos-between-team-projects/MoveRepo-Mirror-Done.png)
+![Git Clone Command Done](./media/move-git-repos-between-team-projects/MoveRepo-Mirror-Done.png)
 
 #### Push the repo 
 
 Run the `git push` command to push the local changes to the remote (target) repo.
 
-![Git Push Command Done](./_img/move-git-repos-between-team-projects/MoveRepo-Push-Done.png)
+![Git Push Command Done](./media/move-git-repos-between-team-projects/MoveRepo-Push-Done.png)
 
 The `--mirror` option is used with both the clone and push command. The option ensures that all branches and other attributes are replicated in the new repo.
 
@@ -74,7 +72,7 @@ The `--mirror` option is used with both the clone and push command. The option e
 
  Switch to the Azure DevOps web portal and validate the new repository and the history in the **CODE** hub.
 
-![Repo Validation in CODE Explorer](./_img/move-git-repos-between-team-projects/MoveRepo-Validate.png)
+![Repo Validation in CODE Explorer](./media/move-git-repos-between-team-projects/MoveRepo-Validate.png)
 
 Verify that all your branches were moved over to the new repo.
 

@@ -1,100 +1,155 @@
 ---
 title: Navigating the notifications UI
 titleSuffix: Azure DevOps 
-description: Navigate and explore the notifications pages in Azure DevOps Services and Team Foundation Server (TFS)  
+description: Navigate and explore the notifications pages in Azure DevOps and Team Foundation Server (TFS)  
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 02/14/2019 
+ms.date: 12/30/2019 
 monikerRange: '>= tfs-2017'
 ---
 
-# Navigating the notifications UI
+# Access notification settings
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
-
-> [!NOTE]  
-> This topic applies to Azure DevOps Services, TFS 2017 Update 1, and later versions. If you work from an on-premises TFS 2017 or earlier versions, see [Set alerts, get notified when changes occur](../work/track/alerts-and-notifications.md). For on-premises TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to see the Notifications option from their organization menu and to receive notifications.
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 Learn about navigating the notifications user interface.
 
-## The notifications pages
+> [!NOTE]  
+> This article applies to Azure DevOps, TFS 2017 Update 1 and later versions. For information on TFS 2017 and earlier versions, see [Manage personal notifications](manage-your-personal-notifications.md) and select the TFS 2015 content version. 
 
-There are the following notifications pages:
+## Notifications settings
+
+You can set notifications at the following four levels:
 
 * Personal
 * Team
 * Project
 * Organization or collection (organization for the cloud and project collection for on-premises)
 
-Permissions to manage notifications at each page default are  as follows:
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
-* Organization administrators can manage notifications
-* Organization and team administrators can manage team notifications
+
+## Prerequisites
+
 * Each user can manage their personal notifications
+* To manage team notifications, you must be added as a [team administrator](../organizations/settings/add-team-administrator.md) or be a member of a [Project Administrator Group or Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
+* To manage project-level notifications, you must be a member of the  [Project Administrator Group or Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md)
+* To manage organization notifications, you must be a member of the [Project Collection Administrators group](../organizations/security/set-project-collection-level-permissions.md). 
 
-## Navigating to the organization-level notifications page
+For additional permission settings regarding notifications, see [Permissions and groups, Notifications or alerts](../organizations/security/permissions.md#notifications-or-alerts).
 
-Select **Organization settings**, and then **Notifications**.
 
-Personal:
+<a id="open-person-level" />
+
+## Open your personal notifications 
+
+Enter the following URL to reach your personal notifications page, replacing {organization} with your organization's name. 
+
+::: moniker range=" azure-devops"
+
+```URL
+https://dev.azure.com/{organization}/usersSettings/notifications
 ```
+
+![Navigate to personal notifications page](media/personal-notifications-preview.png)  
+
+![View personal notifications page](media/personal-notifications-page.png)
+
+::: moniker-end
+
+::: moniker range=" azure-devops-2019"
+
+```URL
 https://dev.azure.com/{organization}/_notifications
 ```
 
-Team:
-```
-https://dev.azure.com/{organization}/{project}/{team}/_admin/_notifications
+> [!div class="mx-imgBorder"] 
+>![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
+
+> [!div class="mx-imgBorder"] 
+>![View personal notifications page](media/view-personal-notification-hub-newnav.png)
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+```URL
+https://dev.azure.com/{organization}/_notifications
 ```
 
-Project:
+> [!div class="mx-imgBorder"] 
+>![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
+
+::: moniker-end
+
+
+
+## Open team or project level notifications
+
+Enter the following URL to reach a team or project-level notifications page, replacing {organization} and {project} with your organization's and project's name. 
+
+::: moniker range=">= tfs-2018" 
+
+```URL
+https://dev.azure.com/{organization}/{project}/_settings/notifications
 ```
+
+> [!div class="mx-imgBorder"]  
+>![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
+
+::: moniker-end
+
+::: moniker range="< tfs-2018"  
+
+```URL
 https://dev.azure.com/{organization}/{project}/_admin/_notifications
 ```
 
-Organization:
+> [!div class="mx-imgBorder"] 
+>![Navigate to team notifications page](media/nav-team-notifications-hub.png)
+
+> [!div class="mx-imgBorder"] 
+>![View team level notifications page](media/view-team-notification-hub.png)
+
+   ::: moniker-end
+
+<a id="open-org-level" />
+
+
+## Open organization-level notifications
+
+Enter the following URL to reach the organization-level notifications page, replacing {organization} with your organization's name. 
+
+::: moniker range=">= azure-devops-2019" 
+
+```URL
+https://dev.azure.com/{organization}/_settings/notifications
 ```
+
+![Navigate to organization notifications page](media/nav-organization-notifications-hub-newnav.png) 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018" 
+
+```URL
 https://dev.azure.com/{organization}/_admin/_notifications
 ```
 
-   ::: moniker range=">= azure-devops-2019"  
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub-newnav.png)  
-   ::: moniker-end  
+> [!div class="mx-imgBorder"] 
+>![Navigate to organization notifications page](media/nav-organization-notifications-hub.png)  
 
-   ::: moniker range="<= tfs-2018"  
-   ![Navigate to organization notifications page](_img/nav-organization-notifications-hub.png)  
+> [!div class="mx-imgBorder"] 
+>![View organization level notifications page](media/view-organization-notification-hub.png)  
 
-   ![View organization level notifications page](_img/view-organization-notification-hub.png)  
+::: moniker-end
 
-   ::: moniker-end
+## Related articles
 
-## Navigating to the team level notifications page
-
-Select **Project settings**, and then **Notifications**.
-
-   ::: moniker range=">= tfs-2018"  
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub-newnav.png)  
-   ::: moniker-end  
-   ::: moniker range="<= tfs-2018"  
-
-   ![Navigate to team notifications page](_img/nav-team-notifications-hub.png)
-
-   ![View team level notifications page](_img/view-team-notification-hub.png)
-   ::: moniker-end
-
-## Navigating to the personal notifications page
-
-Select the Notifications page under your profile.  
-
-   ::: moniker range=">= azure-devops-2019"  
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub-newnav.png)  
-
-   ![View personal notifications page](_img/view-personal-notification-hub-newnav.png)  
-   ::: moniker-end  
-   ::: moniker range="<= tfs-2018"  
-   ![Navigate to personal notifications page](_img/nav-personal-notifications-hub.png)  
-   ::: moniker-end  
+- [Manage personal notification settings](manage-your-personal-notifications.md)
+- [Follow a specific work item](../boards/work-items/follow-work-items.md)  
+- [Manage notifications for a team](manage-team-notifications.md)  
+- [Change your preferred email address](change-email-address.md)

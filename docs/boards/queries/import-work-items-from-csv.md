@@ -3,24 +3,34 @@ title: Import or update work items from a CSV file
 titleSuffix: Azure Boards
 description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: "azure-devops"
-ms.date: 12/02/2019
+monikerRange: ">= azure-devops-2019"
+ms.date: 03/06/2020
 ---
 
 # Bulk import or update work items using CSV files
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
-Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+::: moniker range="azure-devops"
 
+Learn how to import new work items or update existing items from a CSV file. Import and export of work items is now native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)]
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+Learn how to export work items from a CSV file. While you can continue to use Excel for bulk import and updates, you can now use the export features available from  Queries. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+::: moniker-end 
+
+> [!NOTE]   
+> The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is only available with Azure DevOps Services. 
+
+::: moniker range="azure-devops"
 
 ## Import new work items
 
@@ -43,29 +53,29 @@ All work items you import are created in a new state. This rule means that you c
 3. From the web portal for your project, open **Boards>Queries** and choose the **Import Work Items** option.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Boards>Queries, Import Work Items](_img/import-csv/open-queries-import.png)
+	> ![Boards>Queries, Import Work Items](media/import-csv/open-queries-import.png)
 
 4. Select your CSV file and then choose **Import**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Button Image](_img/import-csv/import-2.png)
+	> ![Import Work Items Button Image](media/import-csv/import-2.png)
 
 5. The import process loads the imported work items into the queries view in an **unsaved** state. Verify the results are what you want. Choose **Save Items** to save the work items.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Save imported work items](_img/import-csv/import-3.png)
+	> ![Save imported work items](media/import-csv/import-3.png)
 
 6. The system highlights those work items with data issues. You need to resolve the data issues before you can save the work items. In this example, an invalid value has been entered into the Priority field. Fix the data by opening the work item directly. Alternatively, use [bulk edit](../backlogs/bulk-modify-work-items.md) to fix several work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](_img/import-csv/import-error-1.png)
+	> ![Import Work Items Save Image](media/import-csv/import-error-1.png)
 
 ## Update existing work items
 
 1. To update work items, create a query that contains all the columns you want to export and possibly edit. Save your query and select **Export to CSV** to save the data.csv file to your local machine.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Export work items, CSV](_img/import-csv/import-update-1.png)
+	> ![Export work items, CSV](media/import-csv/import-update-1.png)
 
    The exported file should look similar to the following syntax:
 
@@ -98,12 +108,39 @@ All work items you import are created in a new state. This rule means that you c
 4. The results list with work items that contain value changes appear highlighted in bold. Choose **Save Items** to apply the changes.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](_img/import-csv/import-update-2.png)
+	> ![Import Work Items Save Image](media/import-csv/import-update-2.png)
 
 5. Work items with data issues are highlighted in red and need to be resolved before you can save them. In this example, an invalid value appears in the Assigned To field. Fix the data by opening the work item directly. Alternatively, you can use bulk edit if you have many work items with the same issue.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Import Work Items Save Image](_img/import-csv/import-update-error-1.png)
+	> ![Import Work Items Save Image](media/import-csv/import-update-error-1.png)
+
+::: moniker-end 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Export list as CSV 
+
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Export a query as CSV](../work-items/media/email/export.png)   
+
+::: moniker-end 
+
+::: moniker range="azure-devops"
 
 ## Q & A
 
@@ -138,16 +175,21 @@ ID,Work Item Type,Title 1,Title 2,Assigned To,State,Priority,Tags
 Here is a better visual in Excel
 
 > [!div class="mx-imgBorder"]  
-> ![Excel view image](_img/import-csv/import-csv-directlinks-1.png)
+> ![Excel view image](media/import-csv/import-csv-directlinks-1.png)
 
 ### How do I know if my imported file has errors?
 
 Any problems with the formatting of your CSV file appear in the Results page of the import view. You can't import the work items until the formatting and syntax is correct.
 
 > [!div class="mx-imgBorder"]  
-> ![CSV Error image](_img/import-csv/import-csv-error-1.png)
+> ![CSV Error image](media/import-csv/import-csv-error-1.png)
 
 The work items results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
+
+
+::: moniker-end 
+
+
 
 ## Related articles
 

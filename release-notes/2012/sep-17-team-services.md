@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Sep 17
 description: VSTS release notes for September 27 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 8b7d5798-e6f4-4757-b743-0e9ea276fa1c
@@ -18,19 +17,19 @@ Another three weeks and another set of updates to the Team Foundation Service. T
 
 We made an update to our sprint planning page to make assigning work easier. Previously, you were required to open each work item and manually update the Assigned To field or Activity field. This worked, but was a bit cumbersome when trying to load balance work across the team. Now, assigning work is as simple as dragging and dropping a task on a team member or activity type. In the screenshot below you can see that I’m dragging the “Build the find logic” task to Brian…
 
-![Assigning a to do item by dragging it onto a team member in the capacity pane](_img/9_17_01.png)
+![Assigning a to do item by dragging it onto a team member in the capacity pane](media/9_17_01.png)
 
 And in the next screen, you can see that the task is now assigned to Brian and the capacity bars have been updated.
 
-![To do item assigned](_img/9_17_02.png)
+![To do item assigned](media/9_17_02.png)
 
 ## Expand & collapse the left panel
 
 Another useful update in this sprint is ability to collapse the left panel on individual pages. Clicking the small chevron on the left panel will collapse the panel and give you back a bit of screen real estate. For convenience, the panel remembers its state from screen to screen.
 
-![Backlog page with the left panel expanded](_img/9_17_03.png)
+![Backlog page with the left panel expanded](media/9_17_03.png)
 
-![Backlog page with the left panel collapsed](_img/9_17_04.png)
+![Backlog page with the left panel collapsed](media/9_17_04.png)
 
 ## Continued UX updates
 

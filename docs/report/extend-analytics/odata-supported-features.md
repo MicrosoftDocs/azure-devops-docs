@@ -2,11 +2,9 @@
 title: Supported OData features   
 titleSuffix: Azure DevOps 
 description: Current level of support for OData specification in Analytics
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 8D81FEFD-F432-4E10-A415-9167B5FE9A57 
 ms.reviewer: kokosins
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -17,11 +15,11 @@ ms.date: 04/05/2019
 
 # Supported OData features and clauses 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 this article provides a summary of the OData features and functions supported or not supported by Analytics for Azure DevOps.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 <a id="clauses" />
 

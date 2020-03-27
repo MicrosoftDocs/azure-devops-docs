@@ -3,10 +3,7 @@ ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Generate a pipeline to deploy an ASP.NET app
 ms.custom: seodec18
 description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET app from Azure Pipelines or Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/02/2017
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)
@@ -59,21 +56,21 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    the "**+**" icon, selecting **Web App** from the **Web + Mobile** category,
    and providing a name and a resource group.
    
-   ![Creating a new Azure Web App](_img/continuous-app-service/new-web-app.png)
+   ![Creating a new Azure Web App](media/continuous-app-service/new-web-app.png)
 
 1. In your app's menu blade, choose **Continuous Delivery (Preview)** and then choose **Configure**.
 
-   ![Opening Azure Continuous Delivery configuration](_img/continuous-app-service/01.png)
+   ![Opening Azure Continuous Delivery configuration](media/continuous-app-service/01.png)
 
 1. Select **Choose repository** and select the type of repository where you stored your app's source code.
    You have a choice of **Azure Pipelines**, **GitHub** or **External Git**
    (a Git type repository not hosted in Azure Pipelines or GitHub).
 
-   ![Specifying the type of source code repository](_img/continuous-app-service/02.png)
+   ![Specifying the type of source code repository](media/continuous-app-service/02.png)
  
 1. Select the project, repository, and branch to deploy from. When you're done, choose **OK**.
 
-   ![Specifying details of the source repository and branch](_img/continuous-app-service/03.png)
+   ![Specifying details of the source repository and branch](media/continuous-app-service/03.png)
  
    If you chose to use GitHub, complete the authorization steps.
    If you chose to use an external Git repository, enter the repository name, branch, and (if required) your credentials.
@@ -86,7 +83,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    and packages the app for deployment. At present, ASP.NET, ASP.NET Core, PHP, Python, and Node.js
    are supported. When you're done, choose **OK**.
 
-   ![Specifying the app framework type](_img/continuous-app-service/04.png)
+   ![Specifying the app framework type](media/continuous-app-service/04.png)
  
 1. Select **Set up load test** and decide if you want to run a load test on your app
    before deploying the latest changes to production. The default is **NO**.
@@ -95,7 +92,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    Azure App Service instance, or create a new one in a new App Service plan.
    When you're done, choose **OK**.
  
-   ![Specifying whether and how to run a load test before deployment](_img/continuous-app-service/05.png)
+   ![Specifying whether and how to run a load test before deployment](media/continuous-app-service/05.png)
 
    >The new Azure App Service instance is created at the lowest
    pricing tier possible. For example, if your current App Service
@@ -108,7 +105,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    If you want to set this up, choose **YES** then specify whether you want to
    use an existing Azure App Service slot, or create a new one. When you're done, choose **OK**.
 
-   ![Specifying whether and how to configure production deployment](_img/continuous-app-service/06.png)
+   ![Specifying whether and how to configure production deployment](media/continuous-app-service/06.png)
 
    See [this topic](https://azure.microsoft.com/documentation/articles/web-sites-staged-publishing/)
    for information about Azure App Service staging environments.
@@ -117,7 +114,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 1. Choose **OK** to create and execute the Continuous Delivery workflow.
 
-   ![Completing the Continuous Delivery configuration](_img/continuous-app-service/07.png)
+   ![Completing the Continuous Delivery configuration](media/continuous-app-service/07.png)
 
    The following sequence of events occurs:
  
@@ -140,13 +137,13 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
 
 1. After all these actions have completed, the Azure portal shows the results in the **Activity Log**.
 
-   ![Viewing the Continuous Delivery log](_img/continuous-app-service/08.png)
+   ![Viewing the Continuous Delivery log](media/continuous-app-service/08.png)
 
 1. In the "Successfully set up Continuous Delivery..." item, choose the **Build pipeline**
    link to open the project containing your app in Azure Pipelines, and see the summary for the build pipeline.
    Choose **Edit** to see the tasks that have been added and configured.
 
-   ![Viewing the newly created build pipeline](_img/continuous-app-service/09.png)
+   ![Viewing the newly created build pipeline](media/continuous-app-service/09.png)
 
    Different tasks are added to the build pipeline depending on the app framework you selected.
    For example, a **Visual Studio Build** task is added for ASP.NET apps, while a 
@@ -156,7 +153,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    link to open the project containing your app in Azure Pipelines, and see the list of releases for this pipeline.
    Choose **Edit** to see the tasks that have been added and configured.
 
-   ![Viewing the Test stage in the newly created release pipeline](_img/continuous-app-service/10.png)
+   ![Viewing the Test stage in the newly created release pipeline](media/continuous-app-service/10.png)
 
    The release pipeline that is created depends on whether you chose to include a load test
    and/or a staging deployment. If you chose either or both, your release pipeline will have
@@ -169,7 +166,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    slot and then an **Azure App Service Manage** task performs a slot swap between staging
    and production slots.
 
-   ![Viewing the Production environment in the newly created release pipeline](_img/continuous-app-service/11.png)
+   ![Viewing the Production environment in the newly created release pipeline](media/continuous-app-service/11.png)
 
    If you opted out of both load test and a staging deployment, your release pipeline
    will have a single environment with just one **Azure App Service Deploy** task 
@@ -188,7 +185,7 @@ or [Create a repo (GitHub)](https://help.github.com/articles/create-a-repo).
    configuration in the Azure portal and turns off the build triggers in Azure Pipelines
    for this configuration.
 
-   ![Stopping a deployment](_img/continuous-app-service/12.png)
+   ![Stopping a deployment](media/continuous-app-service/12.png)
 
    >To ensure the build and release history is preserved, the build and release definitions
    are not deleted from Azure Pipelines when you disconnect.
@@ -253,9 +250,9 @@ may encounter the following known issues:
 1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

@@ -3,12 +3,10 @@ title: Troubleshooting renaming a project - Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: View frequently asked questions (FAQs) about renaming a project, including what else gets renamed.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: befe4a1c-90da-425d-a377-436fe73c21c6
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/07/2018
@@ -17,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot renaming a project
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ### Q: What permission do I need to rename a project?
 
@@ -68,6 +66,6 @@ If you use Visual Studio 2010 and you have queries save to disk, you can't open 
 This issue is encountered when Build Controller 2013 is used with TFS 2015. To fix the issue, open the existing build pipeline, select the process tab under it, select the ellipses next to the Lab Process settings to
 open the Lab Workflow Parameters wizard, and then select **Finish**. The issue is permanently resolved by using the TFS 2015 Build Controller that ships with TFS 2015.
 
-![Process Tab](_img/rename-project/lab-build-process.png)
+![Process Tab](media/rename-project/lab-build-process.png)
 
 ::: moniker-end

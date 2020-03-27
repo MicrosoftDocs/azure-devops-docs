@@ -3,9 +3,7 @@ title: Resolve Command
 titleSuffix: Azure Repos
 description: Resolve Command
 ms.assetid: de5698a0-4e04-45b9-9dbe-3f78706919b3
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference
@@ -24,9 +22,12 @@ Lets you resolve conflicts between changed items in your workspace and the lates
 
 To use the **resolve** command, you must be either the workspace owner or have the global **Administer workspaces** permission set to **Allow**. You must also have the **Read** and **Check out** permissions for the items involved in a resolve operation set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf resolve [itemspec] 
-    [/auto:(AutoMerge|TakeTheirs|KeepYours|OverwriteLocal|DeleteConflict|KeepYoursRenameTheirs)] 
-    [/preview] [(/overridetype:overridetype | /converttotype:converttype] [/recursive] [/newname:path] [/noprompt] [/login:username, [password]]
+```
+tf resolve [itemspec] 
+[/auto:(AutoMerge|TakeTheirs|KeepYours|OverwriteLocal|DeleteConflict|KeepYoursRenameTheirs)] 
+[/preview] [(/overridetype:overridetype | /converttotype:converttype] [/recursive] [/newname:path] [/noprompt] [/login:username, [password]]
+```
+
 ## Parameters
 
 <table>
@@ -150,11 +151,15 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example invokes the **Resolve Conflicts** dialog box so that you can tell Team Foundation Server how to deal with pending changes that conflict with the server version.
 
-    tf resolve
+```
+tf resolve
+```
 
 The following example attempts to resolve all conflicts by automatically merging the changes.
 
-    tf resolve /auto:automerge
+```
+tf resolve /auto:automerge
+```
 
 ## See Also
 

@@ -3,9 +3,7 @@ title: Update a process template
 titleSuffix: TFS  
 description: Update a process template to support customizing work tracking for Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +13,7 @@ ms.date: 02/26/2018
 
 # Update a customized process template to access new features
 
-[!INCLUDE [temp](../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
 >This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). Projects defined on Azure DevOps Services [update automatically with each service upgrade](/azure/devops/release-notes/index). To update a project that uses the Hosted XML process, see [Import process](../organizations/settings/work/import-process/import-process.md).
@@ -25,13 +23,13 @@ When the Configure Features wizard can't update your project, it's because your 
 
 * **Option A**: Add features to your customized process template, and then run the Configure Features wizard 
 
-    Do steps: ![Step 1](../boards/_img/icons/ProcGuid_1.png), ![Step 2](../boards/_img/icons/ProcGuid_2.png), ![Step 4](../boards/_img/icons/ProcGuid_4.png), and ![Step 5](../boards/_img/icons/ProcGuid_5.png)
+    Do steps: ![Step 1](../boards/media/icons/ProcGuid_1.png), ![Step 2](../boards/media/icons/ProcGuid_2.png), ![Step 4](../boards/media/icons/ProcGuid_4.png), and ![Step 5](../boards/media/icons/ProcGuid_5.png)
 
     Choose this option when you have made extensive customizations to your process template. 
 
 * **Option B**: Apply your customizations to the latest process template, and then run the Configure Features wizard
 
-    Do steps: ![Step 1](../boards/_img/icons/ProcGuid_1.png), ![Step 3](../boards/_img/icons/ProcGuid_3.png), ![Step 4](../boards/_img/icons/ProcGuid_4.png), and ![Step 5](../boards/_img/icons/ProcGuid_5.png)
+    Do steps: ![Step 1](../boards/media/icons/ProcGuid_1.png), ![Step 3](../boards/media/icons/ProcGuid_3.png), ![Step 4](../boards/media/icons/ProcGuid_4.png), and ![Step 5](../boards/media/icons/ProcGuid_5.png)
 
     Choose this option when you have made very few customizations to your process template. 
 
@@ -39,7 +37,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
     Choose this option when you've made customizations to your project that aren't present in any of your process templates.
 
-* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://blogs.msdn.com/b/visualstudioalm/archive/2012/05/31/how-to-configure-features-for-dozens-of-team-projects.aspx) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
+* **Option D**: Programmatically update many projects. First, choose **Option A** or **Option B** to update your customized process template. Then, batch update all projects defined for a project collection using the following information and resources: [How to Configure Features for dozens of projects](https://devblogs.microsoft.com/devops/how-to-configure-features-for-dozens-of-team-projects/) and [Features4tfs CodePlex solution](https://features4tfs.codeplex.com/).
 
     Choose this option when you have dozens of projects that were created from the same process template.
 
@@ -47,7 +45,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
 ## 1. Download the latest process template
 
-![Step 1](../boards/_img/icons/ProcGuid_1.png) You will copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
+![Step 1](../boards/media/icons/ProcGuid_1.png) You will copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
 
 1. If you're updating a process template based on a version earlier than MSF 6.0 or Visual Studio Scrum 2.0, first apply the updates provided in the [2012 version of this topic](https://msdn.microsoft.com/library/ms194972%28v=vs.110%29.aspx).
 
@@ -65,7 +63,7 @@ When the Configure Features wizard can't update your project, it's because your 
 
 ## 2. Add features to your customized process template (Option A)
 
-![Step 2](../boards/_img/icons/ProcGuid_2.png) Update your customized process template by adding or updating the WITs, Categories, and ProcessConfiguration as described in [Add features using a manual update process](add-features-manually.md). Instead of using **witadmin** to export and import definition files, simply make the changes directly to your process template files.
+![Step 2](../boards/media/icons/ProcGuid_2.png) Update your customized process template by adding or updating the WITs, Categories, and ProcessConfiguration as described in [Add features using a manual update process](add-features-manually.md). Instead of using **witadmin** to export and import definition files, simply make the changes directly to your process template files.
 
 Copy or add files from the folder of the latest version of process template that you download to the corresponding folder containing your customized process template definitions. 
 
@@ -100,7 +98,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 3. Apply your customizations to the process template (Option B)
 
-![Step 3](../boards/_img/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your project or process template to the latest process template that most closely matches the template used to create your project. 
+![Step 3](../boards/media/icons/ProcGuid_3.png) With this option, you apply customizations you've made to your project or process template to the latest process template that most closely matches the template used to create your project. 
 
 
 1. Apply the customizations that you've made to the new process template folder:
@@ -314,7 +312,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 4. Rename and upload the process template to TFS
 
-![Step 4](../boards/_img/icons/ProcGuid_4.png) For the Configure Features wizard to select the latest version of a process template, you must update the version statement to differentiate your updated process template ```version``` from previous versions. 
+![Step 4](../boards/media/icons/ProcGuid_4.png) For the Configure Features wizard to select the latest version of a process template, you must update the version statement to differentiate your updated process template ```version``` from previous versions. 
 
 1. Open the **ProcessTemplate** plug-in file located in the top folder. 
 
@@ -374,7 +372,7 @@ Perform the following steps for each WIT that you add to your process template. 
 
 ## 5. Run the Configure Features wizard
 
-![Step 5](../boards/_img/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing projects](configure-features-after-upgrade.md). 
+![Step 5](../boards/media/icons/ProcGuid_5.png) When you've verified that the process template supports your customizations, run the [Configure Features wizard  to update your existing projects](configure-features-after-upgrade.md). 
 
 1. Verify the features you want work as expected by exercising them as described in the following topics: 
    <table>

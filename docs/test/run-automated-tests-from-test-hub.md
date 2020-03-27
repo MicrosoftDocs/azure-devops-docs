@@ -2,10 +2,8 @@
 title: Run automated tests from test plans
 description: Run automated tests on-demand against Team Foundation builds from test plans in the Test Manager with a build or release pipeline
 ms.assetid: 2886C58B-0F4B-4C0C-A248-3980CA629FD8 
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/30/2019
@@ -14,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Run automated tests from test plans
 
-[!INCLUDE [version-header-tfs17](_shared/version-header-tfs17.md)] 
+[!INCLUDE [version-header-tfs17](includes/version-header-tfs17.md)] 
 
-Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]:
+Automate test cases in your test plans and run them directly from [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]:
 
 * Provides a user-friendly process for testers who may not be well
   versed with running tests in Build or Release workflows.
@@ -50,32 +48,32 @@ You must also be a Project Contributor, or have the following permissions:
 * Edit release environment
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ## Set up your environment
 
-1. In the **Test plans** page of [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], choose your test plan,
+1. In the **Test plans** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)], choose your test plan,
    open the shortcut menu, and choose **Test plan settings**.
 
-   ![Choosing Test plan settings](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
+   ![Choosing Test plan settings](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-101.png)
 
 2. In the Test plan settings dialog, select the build pipeline that generates builds which
    contain the test binaries. You can then select a specific build number to test, or let the
    system automatically use the latest build when tests are run.
 
-   ![Selecting the build and build number](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102.png)
+   ![Selecting the build and build number](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102.png)
 
 3. You will need a release pipeline that was created from the 
    **Run automated tests from Test Manager** template to run tests from test plans
-   in [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
+   in [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)]. If you have an existing release pipeline that was created
    using this template, select it and then select the existing stage in the
    release pipeline where the tests will be executed.
    Otherwise, choose the **Create new** link in the
    dialog to create a new release pipeline containing a single stage
    with the **Visual Studio Test** task already added.
 
-   ![Selecting a release pipeline or creating a new one](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
+   ![Selecting a release pipeline or creating a new one](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-102a.png)
 
    [How do I pass parameters to my test code from a build or release pipeline?](#pass-params)
 
@@ -92,16 +90,16 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
      The version number is shown in the drop-down list at the top left
      of the task settings panel. 
 
-     ![Checking the task version number setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-03.png) 
+     ![Checking the task version number setting](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-03.png) 
 
    * Verify that **Select tests using** is set to **Test run**.
      [What does this setting mean?](#faq-ondemandruns) 
 
-     ![Checking the test selection method setting](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
+     ![Checking the test selection method setting](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-02.png) 
 
    * For the **Test platform version** setting, select **Installed by Tools Installer**. 
 
-     ![Setting the installer option](_img/run-automated-tests-from-test-hub/set-installer.png) 
+     ![Setting the installer option](media/run-automated-tests-from-test-hub/set-installer.png) 
 
    * If you have UI tests that run on **physical browsers** or **thick clients**,
      ensure that the agent is set to run as an interactive process with
@@ -127,7 +125,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
      run settings file, and is overridden to set it to a staging URL
      using the **Override test run parameters** setting.
 
-     ![Specifying the properties for the Visual Studio Test task](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
+     ![Specifying the properties for the Visual Studio Test task](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-06.png)
 
      For information about the option settings of the Visual Studio Test task, see [Visual Studio Test task](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/Tasks/VsTestV2/README.md).
 
@@ -136,7 +134,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    tests. If your tests require special machines from the agent pool,
    you can add demands that will select these at runtime.
 
-   ![Specifying the properties for the Agent job](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
+   ![Specifying the properties for the Agent job](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-04.png)
 
    You may be able to minimize test times by distributing tests across multiple
    agents by setting **Parallelism** to **Multiple executions** and specifying the number of agents.
@@ -151,7 +149,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    that the build pipeline containing the test binaries is linked
    to this release pipeline as an artifact source.  
 
-   ![Verifying the linked build artifacts](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-106.png)
+   ![Verifying the linked build artifacts](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-106.png)
  
 9. Save the release pipeline.
 
@@ -160,17 +158,17 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
     settings. In the Test plan settings dialog, select the release pipeline
     and stage you just saved.
 
-    ![Selecting the release pipeline and stage](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
+    ![Selecting the release pipeline and stage](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-107.png)
 
 ## Run the automated tests
 
-1. In [!INCLUDE [test-hub-include](_shared/test-hub-include.md)], open the test plan and select a test suite that contains the
+1. In [!INCLUDE [test-hub-include](includes/test-hub-include.md)], open the test plan and select a test suite that contains the
    automated tests.
 
 2. Select the test(s) you want to run, open the **Run** menu,
    and choose **Run test**. 
 
-   ![Selecting Run test](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-108.png)
+   ![Selecting Run test](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-108.png)
 
    The test binaries for these tests must be available
    in the build artifacts generated by your build pipeline.
@@ -183,7 +181,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    pipeline, creates a test run, and then triggers the creation
    of a release to the selected stage.
 
-   ![Starting the test execution](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-109.png)
+   ![Starting the test execution](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-109.png)
 
 4. Choose **View test run** to view the test progress and analyze
    the failed tests. Test results have the relevant information
@@ -191,10 +189,10 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    console logs, and attachments. 
  
 5. After test execution is complete, the **Runs** page of the
-   [!INCLUDE [test-hub-include-nolink](_shared/test-hub-include-nolink.md)] shows the test results. The **Run summary** page
+   [!INCLUDE [test-hub-include-nolink](includes/test-hub-include-nolink.md)] shows the test results. The **Run summary** page
    shows an overview of the run.
 
-   ![Viewing the test run summary](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)
+   ![Viewing the test run summary](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-110.png)
  
    There is a link to the **Release** used to run the tests, which
    makes it easy to find the release that ran the tests if you need
@@ -209,13 +207,13 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
    test run. Select a test to see debugging information for failed
    tests such as the error message, stack trace, console logs, and attachments. 
 
-   ![Viewing the test results details](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-111.png)
+   ![Viewing the test results details](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-111.png)
 
 7. Open the **Test Plans** page and select the test plan to see the status
    of your tests if tests are updated after test execution is complete.
    Select a test to see the recent test results.
 
-   ![Viewing the test plan](_img/run-automated-tests-from-test-hub/run-auto-tests-from-hub-112.png)
+   ![Viewing the test plan](media/run-automated-tests-from-test-hub/run-auto-tests-from-hub-112.png)
 
 ## FAQ
 
@@ -228,7 +226,7 @@ You must be a Project Contributor, or have the following permissions:
 * Edit release stage
 * Manage deployment
 
-For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md#set-permissions-for-release-pipelines) and
+For more information, see [Set permissions for release pipelines](../pipelines/policies/set-permissions.md) and
 [Release permissions](../pipelines/policies/permissions.md#release-permissions).
 
 ### Q: Can I override the build or stage set at the test plan level for a specific instance of test run?
@@ -237,7 +235,7 @@ For more information, see [Set permissions for release pipelines](../pipelines/p
 Open the shortcut menu for the test suite in the left column and choose
 **Run with options**.
 
-![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-08.png)
+![Configuring the Run with options dialog](media/run-auto-tests-from-hub-08.png)
 
 Enter the following values in the Run with options dialog and then choose **OK**:
 
@@ -249,7 +247,7 @@ Enter the following values in the Run with options dialog and then choose **OK**
  
 * **Release Stage**: Select the name of the stage configured in your release pipeline.<p />
 
-![Configuring the Run with options dialog](_img/run-auto-tests-from-hub-09a.png)
+![Configuring the Run with options dialog](media/run-auto-tests-from-hub-09a.png)
 
 ### Q: Why use release stages to run tests? 
 
@@ -370,7 +368,7 @@ file to pass values as parameters to your test code. For example, in a release t
 you can pass the appropriate app URL to each the test tasks in each one. The runsettings file and matching parameters
 must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstest.md). 
 
-![Pass parameters to test code from a build or release pipeline](_img/pass-params-to-test-code.png)
+![Pass parameters to test code from a build or release pipeline](media/pass-params-to-test-code.png)
 
 <a name="faq-errors"></a>
 ### Q: What are the typical error scenarios or issues I should look out for if my tests don't run?
@@ -410,4 +408,4 @@ must be specified in the [Visual Studio Test task](../pipelines/tasks/test/vstes
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Continuous testing scenarios and capabilities](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

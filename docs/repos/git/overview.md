@@ -3,9 +3,7 @@ title: Git documentation home
 titleSuffix: Azure Repos 
 description: Overview of Git version control in Azure DevOps Services and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -27,7 +25,7 @@ New to Git? [Learn more](/azure/devops/learn/git/learn-git-with-team-services) a
 
 <div class="row">
 <div class="col-sm-6 col-md-6">
-<img src="_img/overview/get-started-favorite-ide.png" alt="Use your favorite IDE with Azure Repos and Git"/>
+<img src="media/overview/get-started-favorite-ide.png" alt="Use your favorite IDE with Azure Repos and Git"/>
 </div>
 <div class="col-sm-6 col-md-6">
 
@@ -59,7 +57,7 @@ and <a href="/azure/devops/java/download-intellij-plug-in" data-raw-source="[Int
 Every task is presented step-by-step in Visual Studio or from the command line.</p>
 </div>
 <div class="col-sm-6 col-md-6">
-<img src="_img/gitworkflow.png" alt="Azure Repos Git tutorial workflow"/>
+<img src="media/gitworkflow.png" alt="Azure Repos Git tutorial workflow"/>
 
 </div>
 </div>   
@@ -69,7 +67,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-<img src="_img/overview/IC839946.png" alt="Connect to Azure DevOps Services from anywhere"/><br/>
+<img src="media/overview/IC839946.png" alt="Connect to Azure DevOps Services from anywhere"/><br/>
 </div>
 
 <div class="col-sm-6 col-md-6"> 
@@ -104,7 +102,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 </div>
 <div class="col-sm-6 col-md-6">
 
-![Manage your code and repos from the web](_img/overview/git-repos.png)
+![Manage your code and repos from the web](media/overview/git-repos.png)
 
 </div>
 </div>
@@ -114,7 +112,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
 <div class="row">
 <div class="col-sm-6 col-md-6">
 
-![Review code with pull requests in Azure DevOps Services and TFS](_img/overview/pull-request.png)
+![Review code with pull requests in Azure DevOps Services and TFS](media/overview/pull-request.png)
 
 </div>
 <div class="col-sm-6 col-md-6"> 
@@ -147,7 +145,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Link work items to pull requests" src="../../_img/index/i_tasks.svg" />
+                            <img width="48" height="48" alt="Link work items to pull requests" src="../../media/index/i_tasks.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -165,7 +163,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Set up branch policies" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Set up branch policies" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -201,7 +199,7 @@ Every task is presented step-by-step in Visual Studio or from the command line.<
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../_img/index/i_branch-policies.svg" />
+                            <img width="48" height="48" alt="Git branch and pull request workflows" src="../../media/index/i_branch-policies.svg" />
                         </div>
                     </div>
                     <div class="cardText">

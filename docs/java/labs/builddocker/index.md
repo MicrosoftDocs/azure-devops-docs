@@ -1,11 +1,9 @@
 ---
 title: Build Docker images for your Java project with Azure DevOps Services 
 description: Tutorial lab for building and publishing Java Docker images with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018
@@ -35,15 +33,15 @@ This exercise assumes you have completed the exercises to [create a Team Project
 
 1. Click the + icon in the upper left of the menu, type "azure container registry" and press Enter.
 
-    ![New Azure Container Registry](../_img/builddocker/new-registry.png)
+    ![New Azure Container Registry](../media/builddocker/new-registry.png)
 
 1. Click on "Azure Container Registry" and then click the Create button from the Azure Container Registry item blade.
 
-    ![Click Create](../_img/builddocker/start-acr-wizard.png)
+    ![Click Create](../media/builddocker/start-acr-wizard.png)
 
 1. Enter a name, create or use an existing resource group, and choose a location. Enable the Admin user option, and enable managed registry. This allows you to not have to manage a storage account for the images (similar to managed disks with VMs). Select the Basic pricing tier. Click Create when you are done.
 
-    ![Settings for the Registry](../_img/builddocker/new-reg-settings.png)
+    ![Settings for the Registry](../media/builddocker/new-reg-settings.png)
 
 1. After a few moments, your registry will be created.
 
@@ -53,7 +51,7 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
 
 1. In Chrome, navigate to your organization and project. Click on the Build & Release Hub, click on Packages, and select the Maven feed. Click on "Connect to Feed". Click on the copy button in the section labeled `Add this feed to your project pom.xml inside the <repositories> tag`.
 
-    ![Get the package repository settings from Azure DevOps Services](../_img/builddocker/maven-packagefeed-settings.png)
+    ![Get the package repository settings from Azure DevOps Services](../media/builddocker/maven-packagefeed-settings.png)
 
 2. Open the MyShuttle2 project.
 
@@ -83,27 +81,27 @@ In this task you will update the pom.xml file for the MyShuttle2 application so 
 
 1. You may have to reload the Maven project to update the plugins and dependencies. You can do this by clicking `View->Tool Windows->Maven` and then clicking the reload button (the top-left icon in the Maven project view).
 
-    ![Refresh Maven](../_img/builddocker/reload-maven.png)
+    ![Refresh Maven](../media/builddocker/reload-maven.png)
 
 1. From the top toolbar of IntelliJ, click Build->Build Project and make sure there are no errors.
 
 1. Click VCS->Commit. Add a commit message "Updating feed settings". Click the drop-down on the Commit button and select Commit and Push. Click Push on the prompt.
 
-    ![Commit the changes to the pom.xml file](../_img/builddocker/commit-changes.png)
+    ![Commit the changes to the pom.xml file](../media/builddocker/commit-changes.png)
 
 ### Eclipse
 
 1. You may have to reload the Maven project to update the plugins and dependencies. You can do this by right-clicking on the `myshuttle` working set/project, then selecting Maven -> Update Project. Then, keep the checkbox for `myshuttle` checked and press the OK button.
 
-    ![Refresh Maven](../_img/builddocker/eclipse-update-project.png)
+    ![Refresh Maven](../media/builddocker/eclipse-update-project.png)
 
 1. Right-click on the `myshuttle` working set/project, then select Run As -> Maven build.
 
-    ![Build Maven](../_img/builddocker/eclipse-maven-build.png)
+    ![Build Maven](../media/builddocker/eclipse-maven-build.png)
 
     In the configuration window, type in "compile" as the Maven Goal then press the Run button.
 
-    ![Build Maven](../_img/builddocker/eclipse-maven-configuration.png)
+    ![Build Maven](../media/builddocker/eclipse-maven-configuration.png)
 
     >Note: Ensure that you have already copied the settings.xml file from MyShuttleCalc to the .m2 folder before you run this. Otherwise, you can specify the settings.xml file in MyShuttle2 by clicking on the "File System..." button to the right of the User settings field in the configuration window to reference a settings file other than in the default .m2 folder.
 
@@ -121,7 +119,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
 
 1. Click on Builds to go the Builds view. Click on "+ New" to create a new build pipeline.
 
-    ![Create a new build pipeline](../_img/builddocker/new-build-def.png)
+    ![Create a new build pipeline](../media/builddocker/new-build-def.png)
 
 1. Type "maven" into the search box. Select the Maven template and click Apply.
 
@@ -129,7 +127,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
 
 1. On the Get Sources step, ensure that the repo is `MyShuttle2`, and the branch is `master`. Toggle the Advanced Settings toggle and change `Tag Sources` to "On Success".
 
-    ![Get Sources settings](../_img/builddocker/get-sources-settings.png)
+    ![Get Sources settings](../media/builddocker/get-sources-settings.png)
 
 1. Click on the `Maven pom.xml` step and edit the following values:
 
@@ -139,7 +137,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     | Server URL | `http://10.0.0.4:8080`  | Selects JaCoCo as the coverage tool |
     | Source Files Directory | `src/main` | Sets the source files directory for JaCoCo |
 
-    ![Maven task settings](../_img/builddocker/vsts-maven.png)
+    ![Maven task settings](../media/builddocker/vsts-maven.png)
 
 1. Click on the "Copy Files" task. Set the Contents property to:
 
@@ -149,7 +147,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     *.release.*
     ```
 
-    ![Copy Files task settings](../_img/builddocker/vsts-copyfiles.png)
+    ![Copy Files task settings](../media/builddocker/vsts-copyfiles.png)
 
     The Publish Build Artifacts task publishes everything in the artifact staging directory. The Copy Files task copies the following artifacts into this directory so that they are available for Release (which you will create in a later lab):
 
@@ -161,7 +159,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
 
 1. Under the list of tasks, click "Add Task". Type "docker" into the search box and then click the Apply button next to the Docker Compose task.
 
-    ![Add a Docker Compose task](../_img/builddocker/add-docker-compose.png)
+    ![Add a Docker Compose task](../media/builddocker/add-docker-compose.png)
 
 1. If it is not positioned after the Publish Artifact task, then drag the Docker Compose task under it so that it is the last step in the build.
 
@@ -175,7 +173,7 @@ In this task you will create an Azure Pipelines build pipeline that will create 
     | Additional Image Tags | `$(Build.BuildNumber)` | Sets a unique tag for each instance of the build |
     | Include Latest Tag | Check (set to true) | Adds the `latest` tag to the images produced by this build |
 
-    ![Build Service Images Docker Compose task](../_img/builddocker/docker-compose-build-task.png)
+    ![Build Service Images Docker Compose task](../media/builddocker/docker-compose-build-task.png)
 
 1. Right-click the Docker Compose task and click Clone to create a copy of the task.
 
@@ -183,11 +181,11 @@ In this task you will create an Azure Pipelines build pipeline that will create 
 
 1. Update the action to "Push services".
 
-    ![Push Service Images Docker Compose task](../_img/builddocker/docker-compose-push-task.png)
+    ![Push Service Images Docker Compose task](../media/builddocker/docker-compose-push-task.png)
 
 1. Click on Triggers. Enable the Continuous Integration trigger. Set the branch filter to * to trigger off commits to any branch.
 
-    ![Enable the CI trigger](../_img/builddocker/build-trigger.png)
+    ![Enable the CI trigger](../media/builddocker/build-trigger.png)
 
 1. On the options page, set the queue to `default` so that your dockerized agent is the agent to run this build.
 
@@ -195,12 +193,12 @@ In this task you will create an Azure Pipelines build pipeline that will create 
 
 1. You should see a successful build. Click on the build number to navigate to the summary page.
 
-    ![Successful build](../_img/builddocker/build-success.png)
+    ![Successful build](../media/builddocker/build-success.png)
 
 1. Click on the Artifacts link just below the build histogram to open the artifacts. Click Explore next to the `drop` artifact. Your drop should look like this:
 
-    ![Drop contents](../_img/builddocker/drop-contents.png)
+    ![Drop contents](../media/builddocker/drop-contents.png)
 
 1. Navigate back to the Azure Portal and find your Azure Container Registry. Click on Repositories. You should see a `db` and a `web` repository. If you click on one of the repos, you will see a latest tag as well as tags for each build number.
 
-    ![Azure Container repos with published container images](../_img/builddocker/container-reg-repos.png)
+    ![Azure Container repos with published container images](../media/builddocker/container-reg-repos.png)

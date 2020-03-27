@@ -2,9 +2,7 @@
 title: REST Clients | Extensions for Azure DevOps Services
 description: Libraries for calling Azure DevOps Services REST APIs.
 ms.assetid: 7cf04c04-4e20-442f-a108-293294a591ad
-ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -17,7 +15,7 @@ ms.date: 10/18/2019
 
 A REST client simplifies calling [Azure DevOps Services REST APIs](/rest/api/vsts/) from your client-side (JavaScript/TypeScript) extension code.
 
-[!INCLUDE [rest-api-docs-rollout](../../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../../includes/rest-api-docs-rollout.md)]
 
 ### Get started
 

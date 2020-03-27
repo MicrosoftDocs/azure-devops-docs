@@ -3,10 +3,8 @@ title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps  
 description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 04/05/2019
 
 # Track progress by creating status and trend query-based charts 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
 
@@ -29,7 +27,7 @@ You can quickly view the status of work in progress by charting the results of a
 For example, the following image illustrates two different charts created from the same flat-list query. The pie chart groups the 19 bugs by state, and the bar chart groups the bugs by assignment and their current status.
 
 > [!div class="mx-imgBorder"]  
-> ![Active bug charts added to dashboards](_img/overview/active-bug-charts-on-dashboards-2019.png)   
+> ![Active bug charts added to dashboards](media/overview/active-bug-charts-on-dashboards-2019.png)   
 
 ::: moniker-end
 
@@ -37,7 +35,7 @@ For example, the following image illustrates two different charts created from t
 
 For example, the following image illustrates four different charts created from the same flat-list query. The pie chart groups the 146 active bugs by priority, and the bar chart groups the bugs by team and their triage status. The last two chart show two different trend views of the active bugs over the last two weeks.  
   
-![A view of 4 charts for a flat-list query](_img/charts-active-bugs.png)
+![A view of 4 charts for a flat-list query](media/charts-active-bugs.png)
 
 ::: moniker-end
 
@@ -91,21 +89,21 @@ To learn more about default groups, see [About permissions and groups](../../org
 
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](_img/charts/new-chart-new-qe.png)   
+   > ![Charts, New chart button](media/charts/new-chart-new-qe.png)   
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   <img src="_img/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
+   <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
    ::: moniker-end  
 
 2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
-   > ![Charts, New chart button](_img/charts/config-pie-chart-priority-qe.png)  
+   > ![Charts, New chart button](media/charts/config-pie-chart-priority-qe.png)  
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
-   <img src="_img/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
+   <img src="media/charts-pie-chart-active-bugs-by-priority.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Configure a Pie chart" />  
    ::: moniker-end  
 
    If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregration** options depend on the fields used in the query or those selected from the **Column Options**.  
@@ -122,7 +120,7 @@ To learn more about default groups, see [About permissions and groups](../../org
    ::: moniker range=">= azure-devops-2019"  
    To change a color, simply choose a color from the Series set of color pickers.   
    > [!div class="mx-imgBorder"]  
-   > ![Charts, color series picker](_img/charts/color-series-picker.png)  
+   > ![Charts, color series picker](media/charts/color-series-picker.png)  
    ::: moniker-end  
 
    ::: moniker range="<= tfs-2018"  
@@ -138,11 +136,11 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Stacked bar chart n](_img/charts/config-stacked-bar-chart-team-qe.png)   
+> ![Configure chart dialog, Stacked bar chart n](media/charts/config-stacked-bar-chart-team-qe.png)   
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-<img src="_img/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
+<img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end  
 
 ### Trend chart  
@@ -151,11 +149,11 @@ Trend charts let you view progress over time. You can select a rolling period ra
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Stacked bar chart](_img/charts/config-2-week-trend-chart-bugs.png)   
+> ![Configure chart dialog, Stacked bar chart](media/charts/config-2-week-trend-chart-bugs.png)   
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-<img src="_img/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" />
+<img src="media/charts-active-bugs-area-trend-2-weeks.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked area trend chart" />
 ::: moniker-end  
 
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
@@ -167,32 +165,32 @@ Choose the **Sum** operator for **Remaining Work** to view a burndown chart of t
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Configure chart dialog, Remaining work for past 4 weeks](_img/charts/config-remaining-work-trend-chart.png)   
+> ![Configure chart dialog, Remaining work for past 4 weeks](media/charts/config-remaining-work-trend-chart.png)   
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-<img src="_img/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
+<img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
 
 ## Add a chart to a team dashboard 
 
 To add a chart to your team's home page, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
-Choose the ![ ](../../_img/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
+Choose the ![ ](../../media/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
-> ![Chart context menu, Add to dashboard option](_img/charts/add-chart-to-dashboard-qe.png)   
+> ![Chart context menu, Add to dashboard option](media/charts/add-chart-to-dashboard-qe.png)   
 
 In the dialog that opens, select the team dashboard to add the chart to. 
 
 > [!div class="mx-imgBorder"]  
-> ![Select a dashboard dialog](_img/charts/select-dashboard-dialog.png)  
+> ![Select a dashboard dialog](media/charts/select-dashboard-dialog.png)  
 
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
-![Chart context menu, add to a team dashboard](_img/pin-chart-to-a-dashboard.png)
+![Chart context menu, add to a team dashboard](media/pin-chart-to-a-dashboard.png)
 ::: moniker-end  
 
 To add other types of charts, such as test results and build summary charts, see [Add widgets and chart to a dashboard](add-widget-to-dashboard.md). 
@@ -214,18 +212,18 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 ::: moniker range=">= azure-devops-2019"
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
-2. To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or get permissions to edit dashboards. 
 
 3. Choose the **Chart for work items** widget and then choose **Add**. 
 
-	<img src="_img/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
 
-4. Choose the widget's ![ ](../../_img/icons/dashboard-configure.png) gear icon to open the Configuration dialog. 
+4. Choose the widget's ![ ](../../media/icons/dashboard-configure.png) gear icon to open the Configuration dialog. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Configuration dialog for chart work items widget](_img/charts/configure-chart-widget.png)   
+	> ![Configuration dialog for chart work items widget](media/charts/configure-chart-widget.png)   
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 
@@ -236,7 +234,7 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
 
-	![Chart of work items widget, configure dialog](_img/charts/pivot-chart-from-query.png)  
+	![Chart of work items widget, configure dialog](media/charts/pivot-chart-from-query.png)  
 
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
@@ -252,17 +250,17 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
-2. To add widgets to the dashboard, choose ![ ](_img/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
 
 3. Choose the **Chart for work items** widget and then choose **Add**. 
 
-	<img src="_img/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
 
-4. Choose the widget's ![ ](_img/icons/gear-icon.png) gear icon to open the configuration dialog. 
+4. Choose the widget's ![ ](media/icons/gear-icon.png) gear icon to open the configuration dialog. 
 
-	<img src="_img/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 2px solid #C3C3C3;" /> 
+	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 2px solid #C3C3C3;" /> 
 
 5. Give the chart a title, select the flat list query on which the chart is based, and choose the chart type.   
 
@@ -273,11 +271,11 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 6. After you save your changes, you'll see the new chart has been added to the dashboard. 
 
-	![Chart of work items widget, configure dialog](_img/charts-chart-wit-widget-configured.png)  
+	![Chart of work items widget, configure dialog](media/charts-chart-wit-widget-configured.png)  
 
 7. Drag the tile anywhere on the dashboard to put it where you want it. 
 
-8. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](_img/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
+8. When you're finished with your changes, choose ![Exit edit-dashboard-mode icon](media/exit-edit-dashboard-mode-icon.png) to exit dashboard editing.  
 
 ::: moniker-end
 
@@ -301,7 +299,7 @@ Also, from the web portal, you can view the following charts:
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 
-[!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 
 ### Fields that show up in the chart editor
 
@@ -321,7 +319,7 @@ Charts display in browsers that support Scalable Vector Graphics (SVG). This inc
 
 When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
 
-![Other category groups data beyond 7 set series](_img/tfs-vso-remaining-category-consolidation-chart.png)  
+![Other category groups data beyond 7 set series](media/tfs-vso-remaining-category-consolidation-chart.png)  
 
 
 ::: moniker range=">= azure-devops-2019"

@@ -2,10 +2,8 @@
 title: Card Styling Rules for Kanban Boards | REST API Reference for Team Foundation Server
 description: Work with Kanban board Card Styling Rules programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B1E4A7C6-E04C-42B9-8A55-0B18E00970EA
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -525,7 +523,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%2
 | #E7E7E7 | #EBDDF2 | #E2EBFE | #DFFDFF | #DCEEC6 | #FFEBD7 | #FFF8D7 | #E4E2D6 | #F7CBCB
 | #FFFFFF | #F5EEF8 | #EDF2FE | #EAFF0F | #EFFFDC | #FFF2E5 | #FFFAE5 | #F1EDE2 | #FFDFE0
 
-![Recommended fill colors](./_img/fill.png)
+![Recommended fill colors](./media/fill.png)
 
 ### Recommended tag colors
 
@@ -544,7 +542,7 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%2
 | Purple | #FF00FF | White |#FFFFFF
 | Default | #D9E6F1 | Black | #000000
 
-![Recommended tag colors](./_img/tagColor.png)
+![Recommended tag colors](./media/tagColor.png)
 
 ### Recommended title colors
 
@@ -563,4 +561,4 @@ PATCH https://mytfsserver/DefaultCollection/Fabrikam/_apis/work/boards/Backlog%2
 | White | #FFFFFF
 | Black | #000000
 
-![Recommended title colors](./_img/titleColor.png)
+![Recommended title colors](./media/titleColor.png)

@@ -1,11 +1,9 @@
 ---
 title: Manage ratings and reviews for your published extension | Extensions for Azure DevOps Services
 description: Guidelines for responding to and requesting to void reviews for a published extension in the Visual Studio Marketplace.
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: f814d685-c0e0-48dc-adb6-ad8571a9fb73
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -17,11 +15,11 @@ ms.date: 10/24/2017
 As a publisher, you can respond to reviews that customers leave for your extensions in the Visual Studio Marketplace. If you have owner, creator, or 
 contributor permissions as the publisher, you can find and select **Reply** next to a review.
 
-<img alt="To respond to a review,selectReply" src="../../marketplace/_img/rating-and-review/review-reply1.png" align="middle"/><br>
+<img alt="To respond to a review,selectReply" src="../../marketplace/media/rating-and-review/review-reply1.png" align="middle"/><br>
 
 Your response shows up under the review. 
 
-<img alt="Reply details" src="../../marketplace/_img/rating-and-review/review-reply2.png" align="middle"/><br>
+<img alt="Reply details" src="../../marketplace/media/rating-and-review/review-reply2.png" align="middle"/><br>
 
 You can leave only one response. Please avoid using reviews as a support forum. If you need more details, please provide a support alias for the reviewer to 
 contact. You can then resolve their problems externally and then update your reply with a resolution.

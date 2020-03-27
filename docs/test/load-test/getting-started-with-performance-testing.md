@@ -2,10 +2,8 @@
 title: Load test in the cloud with Visual Studio
 description: Performance test your app with cloud-based load tests using the features of Visual Studio, Azure DevOps, and TFS
 ms.assetid: 50d0dafd-ae7c-4028-9e4a-687f062e0179
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -15,9 +13,9 @@ monikerRange: '> tfs-2018'
 # Load test your app in the cloud using Visual Studio and Azure DevOps
 <a name="cloudloadtest"></a>
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 Check your app or web site's performance before you launch it or deploy updates to production by using load testing.
 Find problems before your customers do. Start running 
@@ -58,7 +56,7 @@ or [run load tests locally with Visual Studio](/visualstudio/test/quickstart-cre
 1. Open the **SampleWebTest.webtest** file. 
    Replace the URL with the URL of your app's web page.
 
-   ![Open SampleWebTest.webtest. In Properties window, replace URL with your web page address](_img/getting-started-with-performance-testing/LoadTest_ReplaceURL.png)
+   ![Open SampleWebTest.webtest. In Properties window, replace URL with your web page address](media/getting-started-with-performance-testing/LoadTest_ReplaceURL.png)
 
 <a name="ConnectVSOnline"></a>
 ## Connect to Azure DevOps
@@ -68,52 +66,52 @@ connect Visual Studio to Azure DevOps.
 
 1. In Team Explorer, connect to Azure DevOps by first choosing the "connect" icon.
 
-   ![Connect to Azure DevOps](_img/getting-started-with-performance-testing/LoadTestConnect1.png)
+   ![Connect to Azure DevOps](media/getting-started-with-performance-testing/LoadTestConnect1.png)
 
 1. Connect to one of your projects by opening the server name in the list and double-clicking on the project name.
  
-   ![Select Projects](_img/getting-started-with-performance-testing/LoadTestConnect2.png)
+   ![Select Projects](media/getting-started-with-performance-testing/LoadTestConnect2.png)
 
    - If you haven't connected to Azure DevOps before, add it to the server list.
      Start by choosing the **Manage servers** link to open the connection dialog.
 
-     ![Click Servers to add your Azure DevOps subscription](_img/getting-started-with-performance-testing/LoadTestConnect3.png)
+     ![Click Servers to add your Azure DevOps subscription](media/getting-started-with-performance-testing/LoadTestConnect3.png)
 
    - Enter your Azure DevOps server URL.
 
-     ![Enter your subscription name](_img/getting-started-with-performance-testing/LoadTestConnect4.png)
+     ![Enter your subscription name](media/getting-started-with-performance-testing/LoadTestConnect4.png)
 
    - If you're prompted to sign in to Azure DevOps, do that now.
 
 1. Select your Azure DevOps subscription from the list, 
    then choose your project. Now you can connect.
     
-   ![Choose your project](_img/getting-started-with-performance-testing/LoadTestConnect6.png)
+   ![Choose your project](media/getting-started-with-performance-testing/LoadTestConnect6.png)
 
 <a name="article14"></a>
 ## Run and analyze your load test
 
 1. In Solution Explorer, open the load test that you want to run.
 
-   ![Solution Explorer: double-click your load test](_img/getting-started-with-performance-testing/OpenLoadTest.png)
+   ![Solution Explorer: double-click your load test](media/getting-started-with-performance-testing/OpenLoadTest.png)
 
 1. To run your test closer to where your users are,
    select a location closer to your users. 
 
-   ![Edit load test to set location](_img/CLT_LoadTestSetLocation.png)
+   ![Edit load test to set location](media/CLT_LoadTestSetLocation.png)
 
-   ![Select location](_img/getting-started-with-performance-testing/CLT_LoadTestPickLocation.png)
+   ![Select location](media/getting-started-with-performance-testing/CLT_LoadTestPickLocation.png)
 
 1. Now run your load test. This will run in the cloud 
    using Azure DevOps.
 
-   ![On the load test toolbar, click Run](_img/getting-started-with-performance-testing/LoadTestRun.png)
+   ![On the load test toolbar, click Run](media/getting-started-with-performance-testing/LoadTestRun.png)
 
    Your test appears in the queue and waits for its turn to run. 
    When Azure DevOps is ready to run your test, the test status 
    changes to "Acquiring resources".
 
-   ![Your load test appears in the queue](_img/getting-started-with-performance-testing/LoadTestQueued.png)
+   ![Your load test appears in the queue](media/getting-started-with-performance-testing/LoadTestQueued.png)
 
    A large test run might take up to 10 minutes while 
    Azure DevOps sets up virtual machines and agents for you.
@@ -122,13 +120,13 @@ connect Visual Studio to Azure DevOps.
    Look at the details to review errors, warnings, or other information 
    about your test.
 
-   ![Running your load test show the performance](_img/LoadTestInProgress.png)
+   ![Running your load test show the performance](media/LoadTestInProgress.png)
 
 1. When the test is done, download the report to view the results.
 
-   ![Click Download to save the report](_img/getting-started-with-performance-testing/LoadTestDownloadReport.png)
+   ![Click Download to save the report](media/getting-started-with-performance-testing/LoadTestDownloadReport.png)
 
-   ![Click View Report to view results](_img/getting-started-with-performance-testing/LoadTestViewReport.png)
+   ![Click View Report to view results](media/getting-started-with-performance-testing/LoadTestViewReport.png)
 
    The results include performance counter data, threshold violations, and error information.
 
@@ -136,7 +134,7 @@ connect Visual Studio to Azure DevOps.
    app's performance fails to meet your requirements by examining the 
    step load pattern for virtual users.
 
-   ![View load test run details](_img/getting-started-with-performance-testing/LoadTestDetail.png)
+   ![View load test run details](media/getting-started-with-performance-testing/LoadTestDetail.png)
 
 1. Fix any performance issues that you find in your app's code, 
    then rerun the test. 

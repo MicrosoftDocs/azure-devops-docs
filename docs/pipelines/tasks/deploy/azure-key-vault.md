@@ -2,10 +2,7 @@
 title: Azure Key Vault task
 description: Azure Key Vault task for use in the jobs of all of your build and release pipelines in Azure Pipelines and TFS
 ms.assetid: 591A3606-F693-4DDD-9E9D-9F11BDD48C51
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -26,7 +23,7 @@ The task is Node-based, and works with agents on Linux, macOS, and Windows.
 
 ## Prerequisites
 
-The task has the following pre-requisites:
+The task has the following Prerequisites:
 
 * An Azure subscription linked to Azure Pipelines or Team Foundation Server using the [Azure Resource Manager service connection](../../library/connect-to-azure.md).
 
@@ -66,7 +63,7 @@ When you want to access secrets:
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/AzureKeyVaultV1.md)]
+[!INCLUDE [temp](../includes/yaml/AzureKeyVaultV1.md)]
 
 ::: moniker-end
 
@@ -118,7 +115,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->
 

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and TFS with Datadog
 description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -14,7 +12,7 @@ ms.date: 10/31/2019
 
 # Create a service hook for Azure DevOps Services and TFS with Datadog
 
-[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
 Create events and metrics in Datadog in response to events from Azure DevOps Services. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Accepts all Azure DevOps event types.
 
@@ -30,20 +28,20 @@ Create events and metrics in Datadog in response to events from Azure DevOps Ser
 
 2. Select **Create subscription**.
 
-   ![Select Create subscription from the Service hooks page](../_img/service-hooks-page-select-create-subscription.png)
+   ![Select Create subscription from the Service hooks page](../media/service-hooks-page-select-create-subscription.png)
 
 3. Select the Datadog service.
 
-   ![Select Datadog](../_img/select-datadog.png)
+   ![Select Datadog](../media/select-datadog.png)
 
     Configure the triggering event.
 
-   ![Datadog API Key](../_img/datadog-api-key.png)
+   ![Datadog API Key](../media/datadog-api-key.png)
 
 4. Paste (ctrl+v) your Datadog API Key into the required field.
 5. Indicate whether your Datadog account is US or EU.
 
-   ![Indicate whether your Datadog account is US or EU](../_img/datadog-US-or-EU.png)
+   ![Indicate whether your Datadog account is US or EU](../media/datadog-US-or-EU.png)
 
 7.	Test the service hook subscription and finish the wizard.
 8.	Repeat steps 2-5 for each event type you want to send to Datadog. Datadog accepts and encourages users to send all event types.

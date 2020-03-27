@@ -1,11 +1,9 @@
 ---
 title: Troubleshoot authenticating and inviting GitHub users
 description: Troubleshoot authenticating with a GitHub identity, as well as inviting other GitHub users to Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/23/2019
@@ -14,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Troubleshoot authenticating & inviting GitHub users
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
 If you are having issues either connecting to Azure DevOps using your GitHub identity, or inviting other GitHub users, see the following frequently asked questions and answers.
 
@@ -26,7 +24,7 @@ A: No. Ask your users to sign out, and then from a fresh browser session, sign b
 
 A: Once the setting is changed, sign out of Azure DevOps, and then from a fresh browser session, sign back in to the organization `dev.azure.com/{organizationName}` or `organizationName.visualstudio.com` with your GitHub credentials. You're now recognized as a GitHub user and the GitHub invitation experience is available to you.
 
-![Invite GitHub users policy](../../_shared/_img/invite-github-users-policy.png)
+![Invite GitHub users policy](../../media/invite-github-users-policy.png)
 
 ### Q: I signed in with my GitHub credentials, but why can't I invite GitHub users?
 

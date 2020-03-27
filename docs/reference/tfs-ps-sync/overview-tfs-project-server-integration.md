@@ -2,10 +2,8 @@
 title: Overview of TFS-Project Server integration features 
 titleSuffix: TFS 
 description: Understand how to customize data synchronization between Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4ee48675-b05f-49fc-847f-bfd47398c598
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/12/2017
@@ -14,7 +12,7 @@ ms.topic: overview
 
 # Overview of TFS-Project Server integration features  
 
-[!INCLUDE [temp](../../_shared/tfs-ps-sync-header.md)]
+[!INCLUDE [temp](../../includes/tfs-ps-sync-header.md)]
 
 <a name="Top"></a> How is data synchronized between Visual Studio Team Foundation Server (TFS) and Microsoft Project Server? What are the differences in how TFS integrates with Project Server 2010 and Project Server 2013? This topic addresses these questions.  
   

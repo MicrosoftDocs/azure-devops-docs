@@ -2,10 +2,7 @@
 title: Python Script task
 description: Run a Python script in a build or release pipeline
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6392F95F-7E76-4A18-B3C7-7F078D2F7700
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -23,7 +20,7 @@ Use this task in a build or release pipeline to run a Python script.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PythonScriptV0.md)]
+[!INCLUDE [temp](../includes/yaml/PythonScriptV0.md)]
 
 ::: moniker-end
 

@@ -3,9 +3,7 @@ title: Fork your repository
 titleSuffix: Azure Repos
 description: Learn to isolate code using forks in Azure DevOps Services & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
@@ -67,7 +65,7 @@ This will isolate their changes from yours until you've had a chance to vet the 
 
 3. Choose **Fork** to create the fork.
 
-![Create new fork](_img/forks/create-new-fork.png)
+![Create new fork](media/forks/create-new-fork.png)
 
 >[!NOTE]
 > You must have the [Create Repository](../../organizations/security/permissions.md#git-repository-object-level) permission in your chosen project to create a fork.
@@ -89,23 +87,23 @@ To add your upstream repository in Visual Studio, follow these steps:
 
 1. Open the **Settings** page.
 
-   ![Team Explorer home](_img/forks/vs-te-home-settings.png)
+   ![Team Explorer home](media/forks/vs-te-home-settings.png)
 
 2. Choose **Repository Settings**.
 
-    ![Team Explorer settings](_img/forks/vs-te-settings.png)
+    ![Team Explorer settings](media/forks/vs-te-settings.png)
 
 3. Under **Remotes**, choose **Add**.
 
-    ![Repository settings](_img/forks/vs-te-reposettings.png)
+    ![Repository settings](media/forks/vs-te-reposettings.png)
 
 4. Add a new remote called `upstream`, using the Git clone URL of the repo you forked.
 
-    ![Dialog: add new remote](_img/forks/vs-te-new-remote.png)
+    ![Dialog: add new remote](media/forks/vs-te-new-remote.png)
 
 5. Select **Save** and the new remote is added and displayed in the repository settings.
 
-    ![New remote added](_img/forks/vs-te-upstream-added.png)
+    ![New remote added](media/forks/vs-te-upstream-added.png)
 
 # [Command Line](#tab/command-line)
 
@@ -139,7 +137,7 @@ Open a pull request from your fork to the upstream.
 All the policies, required reviewers, and builds will be applied in the upstream repo.
 Once all policies are satisfied, the PR can be completed and the changes become a permanent part of the upstream repo.
 
-![Pull request](_img/forks/cross-repo-pr.png)
+![Pull request](media/forks/cross-repo-pr.png)
 
 >[!IMPORTANT]
 >Anyone with the [Read](../../organizations/security/permissions.md#git-repository-object-level) permission can open a PR to upstream.
@@ -160,15 +158,15 @@ In Visual Studio, you can use the **Synchronization** page to fetch and rebase.
 
 2. Fetch from `upstream`.
 
-    ![Team Explorer sync](_img/forks/vs-te-sync.png)
+    ![Team Explorer sync](media/forks/vs-te-sync.png)
 
 3. Open the **Branches** page in Team Explorer. Make sure `master` is checked out.
 
-    ![Check out master branch](_img/forks/vs-te-master-checked-out.png)
+    ![Check out master branch](media/forks/vs-te-master-checked-out.png)
 
 4. Rebase `master` onto `upstream/master`.
 
-    ![Rebase](_img/forks/vs-te-rebase.png)
+    ![Rebase](media/forks/vs-te-rebase.png)
 
 Now you're all set to start your next feature on a new topic branch.
 

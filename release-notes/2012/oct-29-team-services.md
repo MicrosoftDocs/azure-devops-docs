@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 29
 description: VSTS release notes for October 29 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 0d3e5cc9-4814-40a6-b551-f32c85e94aae
@@ -26,15 +25,15 @@ So how do you use it?
 
 In the Visual Studio 2012 Update 1 RC client (you must have the new client) customers will have this additional option for storing build drops when using the hosted build service. The option is called "Copy build output to server".
 
-![Setting build drop location](_img/10_29_01.png)
+![Setting build drop location](media/10_29_01.png)
 
 For the first version of this feature we store your build output in a zip file on the server and give you a link to download that zip.
 
-![Download drop](_img/10_29_02.png)
+![Download drop](media/10_29_02.png)
 
 You will have the ability to view your build diagnostic logs in TFS Web Access or download your logs as a zip. Being able to view the detailed diagnostics log is a handy new feature that you can use for easier build debugging regardless of where you are dropping the build outputs. Beyond just viewing the log, you easily jump from one error to the next.
 
-![Diagnostic logs](_img/10_29_03.png)
+![Diagnostic logs](media/10_29_03.png)
 
 ## Continued UX updates
 

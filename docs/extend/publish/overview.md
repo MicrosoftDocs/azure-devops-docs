@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Package, publish, & unpublish extensions | Azure DevOps Services
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,15 +16,15 @@ After writing an Azure DevOps Services extension, the next step is to package it
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that helps users discover and learn about your extension, 
->visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops)
+>visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops).
 
 ## Publishing Requirements
 
-[!INCLUDE [](./_shared/before-publishing.md)]
+[!INCLUDE [](./includes/before-publishing.md)]
 
 ## Create a publisher
 
-[!INCLUDE [](./_shared/create-publisher.md)]
+[!INCLUDE [](./includes/create-publisher.md)]
 
 <a id="package" />
 
@@ -63,7 +61,7 @@ Check the size of the vsix after it is packaged. If greater than 50 MB then it n
 <a id="upload"></a>
 ## Publish
 
-[!INCLUDE [Package_extension](../_shared/procedures/publish.md)]
+[!INCLUDE [Package_extension](../includes/procedures/publish.md)]
 
 ## Share
 
@@ -76,7 +74,7 @@ To share an extension so it can be installed:
 1. Select the ellipses of an extension item to bring up the menu
 2. Select the **Share** button
 
-   ![Share Extensions](../_img/share-extension.png)
+   ![Share Extensions](../media/share-extension.png)
 
 3. Specify the name of the organization to make this extension visible to
    - For example, to make an extension visible to the **dev.azure.com/fabrikam-fiber-inc** organization, specify `fabrikam-fiber-inc`.
@@ -90,11 +88,11 @@ To install an extension that has been shared:
 
 1. From your organization home page, select the Marketplace icon in the top right corner and choose "Manage Extensions":
 
-   ![Manage Extensions](_img/manage-extensions.png)
+   ![Manage Extensions](media/manage-extensions.png)
 
 2. Find the extension under the **Shared with this organization** category:
 
-   ![Shared with me](_img/extensions-tab-shared.png)
+   ![Shared with me](media/extensions-tab-shared.png)
 
 3. Select the card to open the item in the Marketplace
 4. From the item's details page,select the **Install** button
@@ -102,7 +100,7 @@ To install an extension that has been shared:
   
 ## Update
 
-[!INCLUDE [Update_extension](../_shared/procedures/update.md)]
+[!INCLUDE [Update_extension](../includes/procedures/update.md)]
 
 ## Make your extension public (visible to everyone)
 

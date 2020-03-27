@@ -1,20 +1,17 @@
 ---
 title: Multi-cloud Kubernetes deployments
 description: Use Azure Pipelines to deploy to Kubernetes clusters in multiple clouds
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 525536ba-94c7-487b-bcf9-ca7733135e89
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Multi-cloud Kubernetes deployments
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 With Kubernetes having a standard interface and running the same way on all cloud providers, Azure Pipelines can be used for deploying to Azure Kubernetes Service (AKS), Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), or clusters from any other cloud providers. This document contains information on how to connect to each of these clusters, and how to perform parallel deployments to multiple clouds. 
 
 ## Setup environment and Kubernetes resources

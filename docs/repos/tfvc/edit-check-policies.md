@@ -3,9 +3,7 @@ title: Edit Check-In Policies
 titleSuffix: Azure Repos
 description: Edit Check-In Policies
 ms.assetid: 3bc445f1-d354-4991-9381-f10739b5d0fe
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

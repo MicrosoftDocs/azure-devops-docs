@@ -1,25 +1,22 @@
 ---
 title: Deploy to Kubernetes
 description: Use Azure Pipelines to deploy to Kubernetes clusters
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 710a03c9-d8ba-4013-bf8f-e672efc7abe4
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 # Deploy to Kubernetes
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Azure Pipelines can be used to deploy to Kubernetes clusters offered by multiple cloud providers. This document contains the concepts associated with setting up deployments for any Kubernetes cluster.
 
 While it is possible to use script for loading kubeconfig files onto the agent from a remote location or secure files and then use kubectl for performing the deployments, the KubernetesManifest task and Kubernetes service connection can be used to do this in a simpler and more secure way. 
 
-## Kubernetes Manifest task
+## KubernetesManifest task
 
 [KubernetesManifest task](../../tasks/deploy/kubernetes-manifest.md) has the added benefits of being able to check for object stability before marking a task as success/failure, perform artifact substitution, add pipeline traceability-related annotations onto deployed objects, simplify creation and referencing of imagePullSecrets, bake manifests using Helm or kustomization.yaml or Docker compose files, and aid in deployment strategy rollouts.
 
@@ -86,6 +83,7 @@ Note that to allow image pull from private registries, prior to the `deploy` act
 > -  While YAML based pipeline currently supports triggers on a single Git repository, if triggers are required for manifest files stored in another Git repository or if triggers are required for Azure Container Registry or Docker Hub, usage of release pipelines instead of a YAML based pipeline is recommended for doing the Kubernetes deployments.
 
 ## Alternatives
+
 Instead of using the KubernetesManifest task for deployment, one can also use the following alternatives:
 - [Kubectl task](../../tasks/deploy/kubernetes.md)
 - kubectl invocation on script. For example: ```script: kubectl apply -f manifest.yml```

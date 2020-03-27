@@ -2,10 +2,8 @@
 title: Configure process guidance
 titleSuffix: TFS
 description: How to customize links to process guidance-Team Foundation Server  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 03/09/2017
@@ -15,7 +13,7 @@ ms.topic: tutorial
 
 # Configure or redirect process guidance
 
-[!INCLUDE [temp](../_shared/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../../boards/work-items/guidance/agile-process.md), [Scrum](../../boards/work-items/guidance/scrum-process.md), and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
   
@@ -48,11 +46,11 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 2.  Open Portal Settings.  
   
-     ![Open Portal Settings page from Team Explorer](_img/alm_pg_portalsettings.png "ALM_PG_PortalSettings")  
+     ![Open Portal Settings page from Team Explorer](media/alm_pg_portalsettings.png "ALM_PG_PortalSettings")  
   
 3.  Choose the Process Guidance tab. When the **Enable the link to process guidance** check box is not selected, process guidance is not enabled.  
   
-     ![Process guidance not enabled](_img/procguid_process_guidance.png "ProcGuid_Process_Guidance")  
+     ![Process guidance not enabled](media/procguid_process_guidance.png "ProcGuid_Process_Guidance")  
   
      When process guidance is not enabled, F1 help links within work item forms will not open help content.  
   
@@ -65,7 +63,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 3.  Enable the link to process guidance and then enter the URL for the website you've prepared for your team project portal.  
   
-     ![Specify Web site for process guidance](_img/alm_pg_processguid_website.png "ALM_PG_ProcessGuid_WebSite")  
+     ![Specify Web site for process guidance](media/alm_pg_processguid_website.png "ALM_PG_ProcessGuid_WebSite")  
   
 4.  To redirect F1 help links to point to content on your website, [upload](#upload) and then [modify the support files](#redirect).  
   
@@ -80,7 +78,7 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 4.  Enter the URL for the SharePoint document library that contains the process guidance support files or content.  
   
-     ![Specify URL to SharePoint document library](_img/alm_pg_processguid_sp.png "ALM_PG_ProcessGuid_SP")  
+     ![Specify URL to SharePoint document library](media/alm_pg_processguid_sp.png "ALM_PG_ProcessGuid_SP")  
   
 ##  <a name="upload"></a> Upload files that support linking to process guidance  
   
@@ -98,7 +96,7 @@ Your team can use process guidance to capture how they coordinate work on a team
 ##  <a name="redirect"></a> Modify support files that redirect process guidance to your custom guidance  
  You can redirect users to customized content by modifying the redirect links contained within the process guidance support and report files.  
   
- The ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon is designed to look for an `.aspx`, `.htm`, or `.html` file. These files can either contain the content or provide a URL that redirects to it.  
+ The ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon is designed to look for an `.aspx`, `.htm`, or `.html` file. These files can either contain the content or provide a URL that redirects to it.  
   
  These files must be uploaded to a folder labeled `Supporting Files`, within the SharePoint document library configured for process guidance for the team project.  
   
@@ -152,11 +150,11 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 <a name="access_pg"></a> 
 ###  How do I access process guidance from work items or reports?  
- **A: For work items**: From Team Explorer, press F1 or choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon from an open work item.  
+ **A: For work items**: From Team Explorer, press F1 or choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon from an open work item.  
   
- The ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon appears only on the work item forms opened from Team Explorer and only when your team project has process guidance enabled and configured.  
+ The ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon appears only on the work item forms opened from Team Explorer and only when your team project has process guidance enabled and configured.  
   
- When you choose the ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon that appears in the work item forms in Team Explorer, a web browser opens and the page that's defined in the process guidance support file for the corresponding work item type is displayed.  If you have not configured your team project with a project portal, or you haven't uploaded the process guidance support files to the project portal, then this link will be inactive.  
+ When you choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon that appears in the work item forms in Team Explorer, a web browser opens and the page that's defined in the process guidance support file for the corresponding work item type is displayed.  If you have not configured your team project with a project portal, or you haven't uploaded the process guidance support files to the project portal, then this link will be inactive.  
   
  **For reports**: From an open report in Report Manager, choose the **How to Use this Report** link at the bottom of a report.  
   

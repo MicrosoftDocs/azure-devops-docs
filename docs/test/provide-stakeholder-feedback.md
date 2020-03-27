@@ -2,10 +2,8 @@
 title: Give feedback with Test & Feedback extension
 description: Provide feedback in Azure DevOps or TFS using the Exploratory Testing browser extension
 ms.assetid: 41CCD562-C071-4C33-A178-71DDAE83912E
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Provide feedback using the Test &amp; Feedback extension
  
-[!INCLUDE [feedback-header-text](_shared/feedback-header-text.md)] 
+[!INCLUDE [feedback-header-text](includes/feedback-header-text.md)] 
 
 <a name="provide"></a>
 Stakeholders and other users can respond to feedback requests using the 
@@ -38,27 +36,27 @@ to assist test teams by providing feedback.
 1. Open the feedback request email and choose the 
    **Provide feedback** link. 
  
-   ![Choosing the Provide feedback link in the request email](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-04.png)
+   ![Choosing the Provide feedback link in the request email](media/provide-stakeholder-feedback/provide-stakeholder-feedback-04.png)
 
 1. The Azure DevOps or TFS landing page opens to confirm
    that the extension has been automatically configured with 
-   the feedback request. Choose the ![launch extension](_img/_shared/exp-test-icon.png)
+   the feedback request. Choose the ![launch extension](media/shared/exp-test-icon.png)
    icon in the toolbar to launch the extension.
 
-   ![Confirmation that the extension has been automatically configured](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-05.png)
+   ![Confirmation that the extension has been automatically configured](media/provide-stakeholder-feedback/provide-stakeholder-feedback-05.png)
 
    If you are a **Stakeholder**, you see the **Feedback requests** page. 
    Read the instructions (if any) in the feedback form to 
    understand how to give the feedback and what the requestor 
    requires. 
 
-   ![The feedback form containing the instructions](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-06.png)
+   ![The feedback form containing the instructions](media/provide-stakeholder-feedback/provide-stakeholder-feedback-06.png)
 
    If you are a **Basic** user, you see the **Explore work item** traceability
    page showing details of the user story on which feedback was requested,
    and the user acceptance criteria (if any).  
 
-   ![The traceability page showing the user story and user acceptance criteria](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-18.png)
+   ![The traceability page showing the user story and user acceptance criteria](media/provide-stakeholder-feedback/provide-stakeholder-feedback-18.png)
 
 1. Read any instructions in the email and this page
    to understand how to give the feedback, and on what feature.
@@ -68,7 +66,7 @@ to assist test teams by providing feedback.
    and begin your feedback. For example, choose 
    **Capture screenshot** to take a screenshot.
  
-   ![Capturing a screenshot](_img/_shared/provide-stakeholder-feedback-07.png)
+   ![Capturing a screenshot](media/shared/provide-stakeholder-feedback-07.png)
 
    You can use all the capabilities of the extension
    such as capturing screenshots, notes, and screen recordings.
@@ -84,18 +82,18 @@ to assist test teams by providing feedback.
      submit your feedback. The process is the same as described in 
      [this topic](connected-mode-exploratory-testing.md#create-bugs).
 
-     ![Submitting your feedback](_img/_shared/provide-stakeholder-feedback-08.png)
+     ![Submitting your feedback](media/shared/provide-stakeholder-feedback-08.png)
 
      <a name="non-stakeholder-feedback"></a>
    * If you are a **Basic** user, create a bug or a task. 
 
-     ![Create a bug or a task from the captured information](_img/connected-mode-exploratory-testing/create-bugs-02.png)
+     ![Create a bug or a task from the captured information](media/connected-mode-exploratory-testing/create-bugs-02.png)
  
 1. All your feedback captured is shown in the response form, bug, or task. 
    Type a suitable title and, optionally, select a star rating for 
    the feature you've been testing. 
 
-   ![Entering a title and star rating](_img/_shared/provide-stakeholder-feedback-09.png)
+   ![Entering a title and star rating](media/shared/provide-stakeholder-feedback-09.png)
 
 1. Save your feedback. This create a work item in Azure DevOps
    or TFS containing all your feedback.
@@ -108,45 +106,45 @@ to assist test teams by providing feedback.
    * When you are done providing feedback, go to the **Feedback
      requests** page and choose **Feedback requests**.
 
-     ![Opening the pending feedback requests page](_img/_shared/provide-stakeholder-feedback-10.png)
+     ![Opening the pending feedback requests page](media/shared/provide-stakeholder-feedback-10.png)
 
    * In the pending feedback requests page, mark the feedback request as **Completed**.
  
-     ![Completing your feedback session](_img/_shared/provide-stakeholder-feedback-11.png)
+     ![Completing your feedback session](media/shared/provide-stakeholder-feedback-11.png)
 
 1. Choose the **Stop** icon to end your feedback session. 
      
-   ![Ending your feedback session](_img/_shared/provide-stakeholder-feedback-12.png)
+   ![Ending your feedback session](media/shared/provide-stakeholder-feedback-12.png)
 
 <a name="direct"></a>
 ## Provide feedback directly from the Test &amp; Feedback extension
 
 1. Open the Test &amp; Feedback extension in your browser using the
-   ![launch exploratory testing](_img/_shared/exp-test-icon.png)
+   ![launch exploratory testing](media/shared/exp-test-icon.png)
    icon in the toolbar. 
 
 1. In the **Connection settings** page, choose **Connected** mode.
  
-   ![Choosing Connected mode](_img/_shared/connectedmode-01.png)
+   ![Choosing Connected mode](media/shared/connectedmode-01.png)
  
 1. Connect to the server and the project or team that is requesting feedback.
  
-   ![Entering connection details](_img/_shared/connectedmode-02.png)
+   ![Entering connection details](media/shared/connectedmode-02.png)
   
 1. Open the **Feedback requests** page to see all your feedback requests
    from the project or team you connected to. 
 
-   ![Viewing the list of feedback requests](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-15.png)
+   ![Viewing the list of feedback requests](media/provide-stakeholder-feedback/provide-stakeholder-feedback-15.png)
  
 1. Select the feedback request you want to respond to and choose 
    **View feedback**. 
 
-   ![Selecting a feedback request to view](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-16.png)
+   ![Selecting a feedback request to view](media/provide-stakeholder-feedback/provide-stakeholder-feedback-16.png)
 
 1. Read the instructions in the feedback request details page, then
    choose **Provide feedback**.
 
-   ![Starting to provide feedback for a request](_img/provide-stakeholder-feedback/provide-stakeholder-feedback-17.png)
+   ![Starting to provide feedback for a request](media/provide-stakeholder-feedback/provide-stakeholder-feedback-17.png)
  
 1. Capture and submit your feedback as [shown above](#capture-feedback).
 
@@ -158,4 +156,4 @@ to assist test teams by providing feedback.
 * [Exploratory test and submit feedback directly from your browser](perform-exploratory-tests.md)
 * [Overview of manual and exploratory testing](index.yml)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

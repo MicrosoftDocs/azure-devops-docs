@@ -1,12 +1,10 @@
 ---
 title: Analyze and report on build details and build coverage
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Team Foundation Server
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 # Analyze and report on build details and build coverage using the Build perspective
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By using the Build perspective, you can view just the measures, dimensions, and attributes in the SQL Server Analysis Services cube for Visual Studio Team Foundation Server that pertain to the build process. For example, you can use these measures to determine how many builds are failing and how much of the code changed within a build.  
 
@@ -26,7 +24,7 @@ By using the Build perspective, you can view just the measures, dimensions, and 
  The Build perspective is based on the relational tables that enable reporting on builds as either a property of the build, code coverage, or a changeset in version control. For more information, see [Build Details tables](table-reference-build-details.md), [Build Project tables](table-reference-build-project.md), [Build Coverage tables](table-reference-build-coverage.md), and [Build Changeset tables](table-reference-build-changeset.md).  
   
  
-![Build Measure Group](_img/rpt_cubemg.png "RPT_CubeMG")
+![Build Measure Group](media/rpt_cubemg.png "RPT_CubeMG")
 
 By using the Build perspective, you can create reports that answer the following questions:
 
@@ -47,13 +45,13 @@ By using the Build perspective, you can create reports that answer the following
 ##  Example: Build status report  
 By using PivotChart reports in Excel, you can display the build status over time, similar to the data in the following illustration.  
   
- ![Build Status report](_img/procguid_agileexcel.png "ProcGuid_AgileExcel")  
+ ![Build Status report](media/procguid_agileexcel.png "ProcGuid_AgileExcel")  
   
  The [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) process templates include the Build Status report in Excel. For more information, see [Build Status](../excel/build-status-excel-report.md).  
   
 ### Pivot field selection and filters  
 
- ![Pivot Fields for Build Summary Status report](_img/alm_rpt_pivot_build.png "ALM_RPT_Pivot_Build")  
+ ![Pivot Fields for Build Summary Status report](media/alm_rpt_pivot_build.png "ALM_RPT_Pivot_Build")  
   
  You can create the summary report for build status by performing the following steps:  
   
