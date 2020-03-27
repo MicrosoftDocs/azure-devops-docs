@@ -90,12 +90,6 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (previously referred to as package management), up to 2GB free</td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -166,6 +160,19 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)"> testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -181,19 +188,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a>; when the <a href="provide-stakeholder-pipeline-access.md" data-raw-source="[**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md)"><strong>Free access to Pipelines Preview</strong> feature is enabled</a>, Stakeholders gain access to all <strong>Azure Pipelines</strong> features.</td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -257,13 +251,6 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -334,6 +321,19 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -349,19 +349,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -444,13 +431,6 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-
 
 <tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
@@ -523,6 +503,19 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -538,19 +531,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -655,16 +635,23 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Management</strong><br/>Includes adding and executing <a href="../../test/create-a-test-plan.md" data-raw-source="[test plans and test suites](../../test/create-a-test-plan.md)">test plans and test suites</a> and <a href="../../test/create-test-cases.md" data-raw-source="[manual test cases](../../test/create-test-cases.md)">manual test cases</a>, and deleting <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[test artifacts](../../boards/backlogs/delete-test-artifacts.md)">test artifacts</a> </td>
-<td> </td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
