@@ -4,6 +4,13 @@ titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
 ms.technology: devops-code-tfvc
+f1_keywords:
+- vs.tfc.sourcecontrol.DialogOpenFromScc
+- vs.tfc.sourcecontrol.ToolWindowPendingCheckins
+- vs.tfc.sourcecontrol.DialogConfirmUndoEdit
+- vs.tfs.teamexplorer.MyWorkPageMain
+- vs.tfc.sourcecontrol.DialogPromoteCandidates
+- vs.tfc.sourcecontrol.DialogUndoPendingChanges
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual
