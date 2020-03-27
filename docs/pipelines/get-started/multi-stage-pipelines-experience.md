@@ -138,7 +138,7 @@ To run your pipeline in a container, see [Container jobs](../process/container-p
 
 Learn more about building [Azure Repos](../repos/azure-repos-git.md) and [GitHub](../repos/github.md) repositories.
 
-To learn what else you can do in YAML pipelines, see [YAML schema reference](../yaml-schema.md).
+To learn what else you can do in YAML pipelines, see [Customize your pipeline](../customize-pipeline.md), and for a complete reference see [YAML schema reference](../yaml-schema.md).
 
 
 
