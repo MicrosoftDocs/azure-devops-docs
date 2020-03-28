@@ -31,7 +31,7 @@ For a C# example of the overall flow, see [vsts-auth-samples](https://github.com
 
 ## Register your app
 
-Go to (https://app.vsaex.visualstudio.com/app/register) to register your app.
+Go to `https://app.vsaex.visualstudio.com/app/register` to register your app.
 
 Make sure you select the [scopes](#scopes) that your application needs,
 and then use the exact same scopes when you [authorize your app](#authorize-your-app).
@@ -56,7 +56,7 @@ You'll call the authorization URL and pass your app ID and authorized scopes
 when you want to have a user authorize your app to access their organization.
 You'll call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
-The settings for each app that you register are available from your profile (https://app.vssps.visualstudio.com/profile/view).
+The settings for each app that you register are available from your profile `https://app.vssps.visualstudio.com/profile/view`.
 
 ## Authorize your app
 
@@ -152,10 +152,10 @@ public string GenerateRequestPostData(string appSecret, string authCode, string 
 ### Response
 ```json
 {
-	"access_token": { access token for the user },
-	"token_type": { type of token },
-	"expires_in": { time in seconds that the token remains valid },
-	"refresh_token": { refresh token to use to acquire a new access token }
+    "access_token": { access token for the user },
+    "token_type": { type of token },
+    "expires_in": { time in seconds that the token remains valid },
+    "refresh_token": { refresh token to use to acquire a new access token }
 }
 ```
 <br>
@@ -212,10 +212,10 @@ Replace the placeholder values in the sample request body above:
 ### Response
 ```json
 {
-	"access_token": { access token for this user },
-	"token_type": { type of token },
-	"expires_in": { time in seconds that the token remains valid },
-	"refresh_token": { new refresh token to use when the token has timed out }
+    "access_token": { access token for this user },
+    "token_type": { type of token },
+    "expires_in": { time in seconds that the token remains valid },
+    "refresh_token": { new refresh token to use when the token has timed out }
 }
 ```
 <br>
