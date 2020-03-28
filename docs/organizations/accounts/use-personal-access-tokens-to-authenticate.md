@@ -77,7 +77,7 @@ A: The user has all access.
 
 A: An administrator or a tool might have created a PAT on your behalf. See the following examples:
 
-- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: https://MyOrganization.visualstudio.com/ on MyMachine."
+- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
 - When you or an admin sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
 - When you or an admin sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
 - When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
