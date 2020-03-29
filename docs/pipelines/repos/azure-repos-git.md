@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 07/02/2019
+ms.date: 03/29/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,312 +18,192 @@ monikerRange: '>= tfs-2015'
 
 Azure Pipelines can automatically build and validate every pull request and commit to your Azure Repos Git repository.
 
-If you're new to Azure Pipelines, follow the steps in [Create your first pipeline](../create-first-pipeline.md) to get your first pipeline working with an Azure Repos Git repository, and then come back to this article to learn more about configuring and customizing the integration between Azure Repos and Azure Pipelines.
-
-::: moniker range="azure-devops"
-
-Azure Pipelines is free for Azure Repos Git repositories, with multiple free offerings available depending on whether your Azure DevOps project is public or private.
-
-### Azure DevOps public project
-
-If your Azure Repos Git repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users submit pull requests, they can view the status of builds that automatically validate those pull requests.
-
-> [!NOTE]
-> Azure Repos Git repositories do not support forks by users who do not have explicit access to the project.
-
-If your project is public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-> [!TIP]
-> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
-> into multiple jobs. For more information on jobs, see 
-> [Specify jobs in your pipeline](../process/phases.md).
-
-For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
-
-### Azure DevOps private project
-
-If your project is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines). Purchasing jobs for private projects removes any monthly time limit and allows jobs to have a maximum timeout of 360 minutes (6 hours) each.
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-Azure Pipelines is free if your project is privately hosted in TFS. You can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs through the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines). Purchasing jobs for private projects or private repositories removes any monthly time limit and allows jobs to have a maximum timeout of 360 minutes (6 hours) each.
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
-
-Azure Pipelines is free if your project is privately hosted in Azure DevOps Server. You can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-::: moniker-end
-
-To adjust the timeout of jobs, see [Timeouts](../process/phases.md#timeouts).
-
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
-
 ## Choose a repository to build
 
-While creating a pipeline, to choose the repository to build, first select the project to which the repository belongs. Then, select the repository.
-
-## Authorize access to your repositories
-
-Azure Pipelines must be granted access to your repositories to display them, trigger their builds, and fetch their code during builds.
-
-For the main repository that you configured when creating the pipeline - if the repository that you wish to build is in the same project as your pipeline, you're all set. Your builds will automatically have access to the repository. If the repository is in a different project than your pipeline, you must have read access to the project and repository (otherwise you won't be able to see the repository during pipeline creation to select it).
-
-To clone additional repositories as part of your pipeline:
-
-* If the repo is in the same project as your pipeline, use the following command:
-
-  `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
-
-* If the repo is not in the same project as your pipeline:
-
-    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
-    2. Base64-encode this string to create a basic auth token.
-    3. Use the following command to clone that repo
-       `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
-
-::: moniker range="azure-devops"
-
-### Access restrictions
-
-Be aware of the following access restrictions when you're running builds in Azure Pipelines public projects:
-
-* **Cross-project access:** All builds in an Azure DevOps public project run with an access token restricted to the project. Builds in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
-* **Azure Artifacts packages:** If your builds need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
-
-::: moniker-end
-
-## Trigger a pipeline
-
-You can have a pipelines triggered when the following events occur in your repo:
-
-* A change is pushed to your repo ([CI Trigger](#ci-triggers))
-* A pull request is created or updated ([Branch policy for pull request validation](#pull-request-validation))
-
-### CI triggers
-
-Continuous integration (CI) triggers cause a build to run whenever a push is made to the specified branches or a specified tag is pushed.
-
-#### [YAML](#tab/yaml/)
-::: moniker range=">= azure-devops-2019"
-
-YAML builds are configured by default with a CI trigger on all branches.
-
-### Branches
-
-You can control which branches get CI triggers with a simple syntax:
-
-```yaml
-trigger:
-- master
-- releases/*
-```
-
-You can specify the full name of the branch (for example, `master`) or a wildcard (for example, `releases/*`).
-See [Wildcards](../build/triggers.md#wildcards) for information on the wildcard syntax.
-
-For more complex triggers that use `exclude` or `batch`, you must use the full syntax as described in the following sections.
-
-You can specify branches to include and exclude. For example:
-
-```yaml
-# specific branch build
-trigger:
-  branches:
-    include:
-    - master
-    - releases/*
-    exclude:
-    - releases/old*
-```
-
-In addition to specifying branch names in the `branches` lists, you can also configure triggers based on tags by using the following format:
-
-```yaml
-trigger:
-  branches:
-    include:
-      refs/tags/{tagname}
-    exclude:
-      refs/tags/{othertagname}
-```
-
-If you don't specify any triggers, the default is as if you wrote:
-
-```yaml
-trigger:
-  branches:
-    include:
-    - '*'  # must quote since "*" is a YAML reserved character; we want a string
-```
-
->[!IMPORTANT]
->When you specify a trigger, it replaces the default implicit trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline. Includes are processed first, and then excludes are removed from that list. If you specify an exclude but don't specify any includes, nothing will trigger.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
-### Tags
-
-In addition to specifying tags in the `branches` lists as covered in the previous section, you can directly specify tags to include or exclude:
-
-```yaml
-# specific branch build
-trigger:
-  tags:
-    include:
-    - v2.*
-    exclude:
-    - v2.0
-```
-
-If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
-
-::: moniker-end
+# [YAML](#tab/yaml/)
 
 ::: moniker range=">= azure-devops-2019"
 
-### Batching CI builds
-
-If you have a lot of team members uploading changes often, you may want to reduce the number of builds you're running.
-If you set `batch` to `true`, when a build is running, the system waits until the build is completed, then queues another build of all changes that have not yet been built.
-
-```yaml
-# specific branch build with batching
-trigger:
-  batch: true
-  branches:
-    include:
-    - master
-```
-
-### Paths
-
-You can specify file paths to include or exclude.
-
-```yaml
-# specific path build
-trigger:
-  branches:
-    include:
-    - master
-    - releases/*
-  paths:
-    include:
-    - docs/*
-    exclude:
-    - docs/README.md
-```
-
-When you specify paths, you also need to explicitly specify branches or tags to trigger on.
-
-### Opt out of CI builds
-
-#### Disable the CI trigger
-
-You can opt out of CI builds entirely by specifying `trigger: none`.
-
-```yaml
-# A pipeline with no CI trigger
-trigger: none
-```
-
->[!IMPORTANT]
->When you push a change to a branch, the YAML file in that branch is evaluated to determine if a CI build should be run.
-
-For more information, see [Triggers](../yaml-schema.md#triggers) in the [YAML schema](../yaml-schema.md).
+You create a new pipeline by first selecting a repository and then a YAML file in that repository. The repository in which the YAML file is present is called `self` repository. By default, this is the repository that your pipeline builds. 
 
 ::: moniker-end
 
-#### Skip CI for individual commits
+::: moniker range="azure-devops-2019"
 
-::: moniker range="<= azure-devops-2019"
-
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
-
-::: moniker-end
-
-::: moniker range="> azure-devops-2019"
-
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
-
-- `[skip ci]` or `[ci skip]`
-- `skip-checks: true` or `skip-checks:true`
-- `[skip azurepipelines]` or `[azurepipelines skip]`
-- `[skip azpipelines]` or `[azpipelines skip]`
-- `[skip azp]` or `[azp skip]`
-- `***NO_CI***`
+You can configure your pipeline to check out a different repository or multiple repositories. To learn how to do this, see [multi-repo checkout](multi-repo-checkout.md).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2019"
-YAML builds are not yet available on TFS.
-::: moniker-end
 
-#### [Classic](#tab/classic/)
-Select this trigger if you want the build to run whenever someone checks in code.
-
-### Batch changes
-
-Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
-
-### Git filters
-
-If your repository is Git then you can specify the branches where you want to trigger builds. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
-
-#### Path filters
-
-You can also specify path filters to reduce the set of files that you want to trigger a build.
-
-> **Tips:**
->  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
->  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
->  * The order of path filters doesn't matter.
-
-#### Example
-
-For example, you want your build to be triggered by changes in master and most, but not all, of your feature branches. You also don't want builds to be triggered by changes to files in the tools folder.
-
-::: moniker range=">= tfs-2017"
-
-**Azure Pipelines, TFS 2017.3 and newer**
-
-![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches-neweditor.png)
+YAML pipelines are not available in TFS.
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2017"
+# [Classic](#tab/classic/)
 
-**TFS 2017.1 and older versions**
+While creating a pipeline, to choose the repository to build, first select the project to which the repository belongs. Then, select the repository.
 
-![ci trigger git branches](../build/media/triggers/ci-trigger-git-branches.png)
+To clone additional repositories as part of your pipeline:
+
+* If the repo is in the same project as your pipeline, or if the access token (explained below) has access to the repository in a different project, use the following command:
+
+  `git clone -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" <clone URL>`
+
+* If the access token (explained below) does not have access to the repository:
+
+    1. Get a [personal access token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with `Code (read)` scope, and prefix it with `pat:`
+    2. Base64-encode this string to create a basic auth token.
+    3. Add a script in your pipeline with the following command to clone that repo
+       `git clone -c http.extraheader="AUTHORIZATION: basic <BASIC_AUTH_TOKEN>" <clone URL>`
+
+---
+
+Azure Pipelines must be granted access to your repositories to trigger their builds and fetch their code during builds. Access to the repository is governed by permissions of job access tokens. A **job access token** is a security token that is dynamically generated by Azure Pipelines for each job at run time. The token's permissions are derived from (a) job authorization scope and (b) the permissions you set on project or collection build service account.
+
+### Job authorization scope
+
+You can set the job authorization scope to be **collection** or **project**. By setting the scope to **collection**, you choose to let pipelines access all repositories in the collection or organization. By setting the scope to **project**, you choose to restrict access to only those repositories that are in the same project as the pipeline.
+
+# [YAML](#tab/yaml/)
+
+::: moniker range="azure-devops"
+
+Job authorization scope can be set for the entire Azure DevOps organization or for a specific project. 
+
+To set job authorization scope for the organization:
+
+- Navigate to your organization settings page in the Azure DevOps user interface.
+- Select **Settings** under **Pipelines**.
+- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+To set job authorization scope for a specific project:
+
+- Navigate to your project settings page in the Azure DevOps user interface.
+- Select **Settings** under **Pipelines**.
+- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+>[!NOTE]
+>If the scope is set to **project** at the organization level, you cannot change the scope in each project.
+
+>[!IMPORTANT]
+If the scope is not restricted at either the organization level or project level, then every job in your YAML pipeline gets a collection scoped job access token. In other words, your pipeline has access to any repository in any project of your organization. If an adversary is able to gain access to a single pipeline in a single project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
 
 ::: moniker-end
 
-* * *
+::: moniker range="<= azure-devops-2019"
 
+If you use Azure DevOps Server 2019, then all YAML jobs run with the job authorization scope set to **collection**. In other words, these jobs have access to all repositories in your project collection. You cannot change this in Azure DevOps server 2019.
 
-### Pull request validation
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
+# [Classic](#tab/classic/)
+
+::: moniker range="azure-devops"
+
+Job authorization scope can be set for the entire Azure DevOps organization, for a specific project, or for a specific pipeline. 
+
+To set job authorization scope for the organization:
+
+- Navigate to your organization settings page in the Azure DevOps user interface.
+- Select **Settings** under **Pipelines**.
+- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+To set job authorization scope for a specific project:
+
+- Navigate to your project settings page in the Azure DevOps user interface.
+- Select **Settings** under **Pipelines**.
+- Turn on the toggle **Limit job authorization scope to current project** to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+>[!NOTE]
+>If the scope is set to **project** at the organization level, you cannot change the scope in each project.
+
+To set job authorization scope for a specific pipeline:
+
+- Navigate to the pipeline in the **Pipelines** page.
+- Select **Edit** to edit the pipeline.
+- In the **Options** tab, select **Project collection** or **Current project** for **Build job authorization scope**.
+- Save the build pipeline.
+
+>[!NOTE]
+>If the scope if restricted to **project** in the organization or project level settings, then the pipeline-level job authorization scope is ignored. The project or organization level setting prevails.
+
+>[!IMPORTANT]
+If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+Job authorization scope can be set for each pipeline. To set this scope:
+
+- Navigate to the pipeline in the **Pipelines** page.
+- Select **Edit** to edit the pipeline.
+- In the **Options** tab, select **Project collection** or **Current project** for **Build job authorization scope**.
+- Save the build pipeline.
+
+::: moniker-end
+
+---
+
+>[!NOTE]
+> If your pipeline is in a **pubic project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
+
+### Build service account
+
+You may want to change the permissions of build access token in scenarios such as the following:
+
+- You want your pipeline to access a feed that is in a different project.
+- You want your pipeline to be restricted from changing code in the repository.
+- You want your pipeline to be restricted from creating work items.
+
+To update the permissions of build access token:
+
+- First, determine the job authorization scope for your pipeline. See the section above to understand job authorization scope. If the job authorization scope is **collection**, then the corresponding build service account to manage permissions on is **Project Collection Build Service (<your collection name>)**. If the job authorization scope is **project**, then the build service account to manage permissions on is **<Your project name> Build Service (<your collection name>)**.
+
+- To restrict or grant additional access to **Project Collection Build Service (<your collection name>)**:
+  - Select **Manage security** in the overflow menu on **Pipelines** page.
+  - Under **Users**, select **Project Collection Build Service (<your collection name>)**.
+  - Make any changes to the pipelines-related permissions for this account.
+  - Navigate to organization settings for your Azure DevOps organization (or collection settings for your project collection).
+  - Select **Permissions** under **Security**.
+  - Under the **Users** tab, look for **Project Collection Build Service (<your collection name>)**.
+  - Make any changes to the non-pipelines-related permissions for this account.
+  - Since **Project Collection Build Service (<your collection name>)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
+
+- To restrict or grant additional access to **<Your project name> Build Service (<your collection name>)**:
+  - The build service account on which you can manage permissions will only be created after you run the pipeline once. Make sure that you already ran the pipeline once.
+  - Select **Manage security** in the overflow menu on **Pipelines** page.
+  - Under **Users**, select **<Your project name> Build Service (<your collection name>)**.
+  - Make any changes to the pipelines-related permissions for this account.
+  - Navigate to organization settings for your Azure DevOps organization (or collection settings for your project collection).
+  - Select **Permissions** under **Security**.
+  - Under the **Users** tab, look for **<Your project name> build service (<your collection name>)**.
+  - Make any changes to the non-pipelines-related permissions for this account.
+  - Since **<Your project name> Build Service (<your collection name>)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
+
+## CI triggers
+
+[!INCLUDE [ci-triggers](includes/ci-triggers.md)]
+
+## Pull request validation
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
 >[!NOTE]
 >To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
 
-::: moniker range=">= tfs-2018"
+::: moniker range=">tfs-2018"
 
-## Validate contributions from forks
+### Validate contributions from forks
 
 Building pull requests from Azure Repos forks is no different from building pull requests within the same repository or project. You can create forks only within the same organization that your project is part of.
 
 ::: moniker-end
 
-::: moniker range=">tfs-2018 || azure-devops"
+::: moniker range=">tfs-2018"
 
 ## Add a build badge
 
@@ -341,17 +221,17 @@ The Windows agent comes with its own copy of Git.
 If you prefer to supply your own Git rather than use the included copy, set `System.PreferGitFromPath` to `true`.
 This setting is always true on non-Windows agents.
 
-::: moniker range="> azure-devops-2019"
-
 ### Checkout path
+
+# [YAML](#tab/yaml)
+
+::: moniker range="azure-devops-2019"
 
 If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
 
 If you are using multiple `checkout` steps and checking out multiple repositories, and not explicitly specifying the folder using `path`, each repository is placed in a subfolder of `s` named after the repository. For example if you check out two repositories named `tools` and `code`, the source code will be checked out into `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
 
 Please note that the checkout path value cannot be set to go up any directory levels above `$(Agent.BuildDirectory)`, so `path\..\anotherpath` will result in a valid checkout path (i.e. `C:\agent\_work\1\anotherpath`), but a value like `..\invalidpath` will not (i.e. `C:\agent\_work\invalidpath`).
-
-# [YAML](#tab/yaml)
 
 You can configure the `path` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline.
 
@@ -366,22 +246,33 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
-# [Classic](#tab/classic)
+::: moniker-end
 
-This setting is not configurable in the classic editor.
+::: moniker range="azure-devops-2019"
 
----
+Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
 
 ::: moniker-end
 
-### Submodules
+::: moniker range="< azure-devops-2019"
 
-Select if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
-You can either choose to get the immediate submodules or all submodules nested to any depth of recursion.
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
+# [Classic](#tab/classic)
+
+This setting is not configurable in the classic editor. Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
+
+---
+
+### Submodules
 
 # [YAML](#tab/yaml)
 
-You can configure the `submodules` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline.
+::: moniker range="azure-devops"
+
+You can configure the `submodules` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ```yaml
 steps:
@@ -394,11 +285,25 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+This feature is not available in Azure DevOps Server 2019.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
 # [Classic](#tab/classic)
 
-You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline.
+You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
- ![GitHub options](media/github/github-options.png)
+![GitHub options](media/github/github-options.png)
 
 ---
 
@@ -406,48 +311,24 @@ The build pipeline will check out your Git submodules as long as they are:
 
 * **Unauthenticated:**  A public, unauthenticated repo with no credentials required to clone or fetch.
 
-* **Authenticated:**  
+* **Authenticated:** 
 
-  - Contained in the same project as the Azure Repos Git repo specified above.
+  - Contained in the same project as the Azure Repos Git repo specified above.  The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
 
   - Added by using a URL relative to the main repository. For example
-    - This one would be checked out: 
+    - This one would be checked out:
      `git submodule add ../../../FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber` 
 
-      In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject)
+      In this example the submodule refers to a repo (FabrikamFiber) in the same Azure DevOps organization, but in a different project (FabrikamFiberProject).  The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules. This requires that the job access token has access to the repository in the second project. If you restricted the job access token as explained in the section above, then you won't be able to do this.
 
     - This one would not be checked out:
      `git submodule add https://fabrikam-fiber@dev.azure.com/fabrikam-fiber/FabrikamFiberProject/_git/FabrikamFiber FabrikamFiber`
-
-
-#### Authenticated submodules
-
-> [!NOTE]
-> Make sure that you have registered your submodules using HTTPS and not using SSH.
-
-The same credentials that are used by the agent to get the sources from the main repository are also used to get the sources for submodules.
-
-# [YAML](#tab/yaml)
-
-YAML builds run with project scope, so by default submodules are accessed using the Project Build Service account. There is no way to configure a YAML build to run with project collection scope.
-
-# [Classic](#tab/classic)
-
-If your main repository and submodules are in an Azure Repos Git repository in your Azure DevOps project, then you can select the account used to access the sources. On the **Options** tab, on the **Build job authorization scope** menu, select either:
-
-* **Project collection** to use the Project Collection Build service account
-
-* **Current project** to use the Project Build Service account
-
-Make sure that whichever account you use has access to both the main repository as well as the submodules.
-
----
 
 #### Alternative to using the Checkout submodules option
 
 In some cases you can't use the **Checkout submodules** option.
 You might have a scenario where a different set of credentials are needed to access the submodules.
-This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization.
+This can happen, for example, if your main repository and submodule repositories aren't stored in the same Azure DevOps organization, or if your job access token does not have access to the repository in a different project.
 
 If you can't use the **Checkout submodules** option, then you can instead use a custom script step to fetch submodules.
 First, get a personal access token (PAT) and prefix it with `pat:`.
@@ -468,9 +349,11 @@ Use that variable to populate the secret in the above Git command.
 
 ### Shallow fetch
 
-Select if you want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
+You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
 # [YAML](#tab/yaml)
+
+::: moniker range="azure-devops"
 
 You can configure the `fetchDepth` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline.
 
@@ -485,18 +368,32 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+This feature is not available in Azure DevOps Server 2019.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
 # [Classic](#tab/classic)
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](media/github/github-options.png)
+![GitHub options](media/github/github-options.png)
 
 ---
 
 In these cases this option can help you conserve network and storage resources. It might also save time. The reason it doesn't always save time is because in some situations the server might need to spend time calculating the commits to download for the depth you specify.
 
 > [!NOTE]
-> When the build is queued, the branch to build is resolved to a commit ID. Then, the agent
+> When the pipeline is started, the branch to build is resolved to a commit ID. Then, the agent
 > fetches the branch and checks out the desired commit. There is a small window between when a branch
 > is resolved to a commit ID and when the agent performs the checkout. If the branch updates rapidly
 > and you set a very small value for shallow fetch, the commit may not exist when the agent attempts
@@ -504,7 +401,9 @@ In these cases this option can help you conserve network and storage resources. 
 
 ### Don't sync sources
 
-Use this option if you want to skip fetching new commits. This option can be useful in cases when you want to:
+::: moniker range=">= azure-devops-2019"
+
+You may want to skip fetching new commits. This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
 
@@ -519,36 +418,24 @@ steps:
 - checkout: none  # Don't sync sources
 ```
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
 # [Classic](#tab/classic)
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![GitHub options](media/github/github-options.png)
+![GitHub options](media/github/github-options.png)
 
 ---
 
-If you want to disable downloading sources, from the **Get sources** task, select **Don't sync sources**.
-
 > [!NOTE]
 > When you use this option, the agent also skips running Git commands that clean the repo.
-
-### Multiple repos
-
-By default, your pipeline is associated with one repo from Azure Repos.
-This is the repo that can trigger builds on commits and pull requests.
-
-You may want to include sources from a second repo in your pipeline.
-You can do this by writing a script.
-
-```
-git clone https://github.com/Microsoft/TypeScript.git
-```
-
-If the repo is not public, you will need to pass authentication to the Git command.
-
-> [!NOTE]
-> Secret variables are not automatically made available to scripts as environment variables.
-> See [Secret variables](../process/variables.md#secret-variables) on how to map them in.
 
 ### Clean build
 
@@ -557,7 +444,10 @@ If the repo is not public, you will need to pass authentication to the Git comma
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
 
-#### [YAML](#tab/yaml/)
+# [YAML](#tab/yaml/)
+
+::: moniker range="azure-devops"
+
 You can configure the `clean` setting in the [Checkout](../yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -597,10 +487,24 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-#### [Classic](#tab/classic/)
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+This feature is not available in Azure DevOps Server 2019.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available in TFS.
+
+::: moniker-end
+
+# [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
- ![GitHub options](media/github/github-clean-sources.png)
+![GitHub options](media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -614,7 +518,7 @@ Select the **Clean** setting from the properties of the **Get sources** task in 
 
 * **All build directories**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-* * *
+---
 
 ### Label sources
 
@@ -622,13 +526,23 @@ You may want to label your source code files to enable your team to easily ident
 
 # [YAML](#tab/yaml)
 
-You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** or **Variables** from the settings menu.
+::: moniker range=">=azure-devops-2019"
+
+You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** from the YAML editor menu.
 
 ![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
 ![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+YAML pipelines are not available in TFS.
+
+::: moniker-end
 
 # [Classic](#tab/classic)
 
@@ -651,5 +565,22 @@ The build pipeline labels your sources with a [Git tag](https://git-scm.com/book
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
 After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
+
+::: moniker range="azure-devops"
+
+## Pricing
+
+Azure Pipelines is free for Azure Repos Git repositories, with multiple free offerings available depending on whether your Azure DevOps project is public or private.
+
+If your Azure Repos Git repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users submit pull requests, they can view the status of builds that automatically validate those pull requests.
+
+> [!NOTE]
+> Azure Repos Git repositories do not support forks by users who do not have explicit access to the project.
+
+If your project is public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each. If your project is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. For more information, see [parallel jobs](../licensing/concurrent-jobs.md).
+
+For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
+
+::: moniker-end
 
 
