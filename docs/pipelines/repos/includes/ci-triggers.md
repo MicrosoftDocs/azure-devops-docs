@@ -28,12 +28,12 @@ You can specify the full name of the branch (for example, `master`) or a wildcar
 See [Wildcards](#wildcards) for information on the wildcard syntax.
 
 > [!NOTE]
-> You cannot use [variables](../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
+> You cannot use [variables](../../process/variables.md) in triggers, as variables are evaluated at runtime (after the trigger has fired).
 
 > [!NOTE]
-> If you use [templates](../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
+> If you use [templates](../../process/templates.md) to author YAML files, then you can only specify triggers in the main YAML file for the pipeline. You cannot specify triggers in the template files.
 
-For more complex triggers that use `exclude` or `batch`, you must use the full syntax as described in the following sections.
+For more complex triggers that use `exclude` or `batch`, you must use the full syntax as shown in the following example.
 
 ```yaml
 # specific branch build
@@ -112,6 +112,9 @@ trigger:
 ```
 
 When you specify paths, you also need to explicitly specify branches to trigger on. 
+
+> [!NOTE]
+> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ::: moniker-end
 
