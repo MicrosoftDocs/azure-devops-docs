@@ -186,7 +186,64 @@ To update the permissions of build access token:
 
 ## CI triggers
 
-[!INCLUDE [ci-triggers](includes/ci-triggers.md)]
+Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
+
+# [YAML](#tab/yaml/)
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
+::: moniker-end
+
+::: moniker range="azure-devops"
+[!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+[!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+YAML pipelines are not available in TFS.
+::: moniker-end
+
+# [Classic](#tab/classic/)
+[!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
+
+::: moniker range=">= tfs-2017"
+**Azure Pipelines, TFS 2017.3 and newer**
+
+![ci trigger git branches](media/ci-trigger-git-branches-neweditor.png)
+::: moniker-end
+
+::: moniker range="<= tfs-2017"
+**TFS 2017.1 and older versions**
+
+![ci trigger git branches](media/ci-trigger-git-branches.png)
+::: moniker-end
+
+---
+
+### Skipping CI for individual commits
+
+::: moniker range="<= azure-devops-2019"
+
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
+
+::: moniker-end
+
+[!INCLUDE [ci-triggers](includes/ci-triggers5.md)]
 
 ## PR triggers
 
