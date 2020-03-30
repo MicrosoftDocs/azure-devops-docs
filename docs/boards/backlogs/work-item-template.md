@@ -106,7 +106,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
+If you connect to an on-premises Azure DevOps and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
 
 1. From the web portal Queries page, open a new work item. 
 

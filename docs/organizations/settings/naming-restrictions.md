@@ -41,8 +41,8 @@ As with other operating system files, ASCII control characters (ASCII 1-31) and 
 
 The computer name where you install Azure DevOps is associated with the name of the server. 
 Both the operating system and Active Directory impose certain restrictions on computer names as described in these articles:  
-*	[Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
-*	[Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
+*    [Rename a Computer that Hosts a Stand-Alone Instance of SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)  
+*    [Windows Server Active Directory](https://support.microsoft.com/en-us/help/909264/naming-conventions-in-active-directory-for-computers-domains-sites-and)
 
 ::: moniker-end
 
@@ -1122,7 +1122,7 @@ Build type names  must conform to the following restrictions.
 
 ### Build quality 
 
-The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](/previous-versions/ms181734) for a list of the default build quality values.
+The build quality lets you attach a quality level or completion state to a completed build. Team Foundation Build also lets you create new values for the [build quality type](../../pipelines/get-started-designer.md). See [Rate the quality of a completed build](/previous-versions/ms181734(v%3dvs.140)) for a list of the default build quality values.
 
 Build quality names must conform to the following restrictions.  
 

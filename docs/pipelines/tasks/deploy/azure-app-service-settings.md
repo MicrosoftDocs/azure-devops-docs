@@ -23,7 +23,7 @@ The task works for ASP.NET, ASP.NET Core, PHP, Java, Python, Go and Node.js base
 <tr><td><code>azureSubscription</code><br/>Azure subscription</td><td>(Required) Name of the <a href="../../library/connect-to-azure.md" data-raw-source="[Azure Resource Manager service connection](../../library/connect-to-azure.md)">Azure Resource Manager service connection</a></td></tr>
 <tr><td><code>appName</code><br/>App name</td><td>(Required) Name of an existing App Service</td>
 <tr><td><code>resourceGroupName</code><br/>Resource group</td><td>(Required if deployToSlotOrASE is true) Name of the resource group</td>
-<tr><td><code>slotName</code><br/>Slot</td><td>(Required if settings were to e be applied to Slot) Name of the slot<br/>Default value: production</td>
+<tr><td><code>slotName</code><br/>Slot</td><td>(Required if settings were to be applied to Slot) Name of the slot<br/>Default value: production</td>
 <tr><td><code>appSettings</code><br/>App settings</td><td>(Optional) Application settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. <br/></td>
 <tr><td><code>generalSettings</code><br/>General settings</td><td>(Optional) General settings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes. <br/></td>
 <tr><td><code>connectionStrings</code><br/>Connection settings</td><td>(Optional) Connection strings to be entered using JSON syntax. Values containing spaces should be enclosed in double quotes.<br/></td>
@@ -61,12 +61,12 @@ steps:
       [
         {
           "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-          "value": $(Key),
+          "value": "$(Key)",
           "slotSetting": false
         },
         {
           "name": "MYSQL_DATABASE_NAME",
-          "value": $(DB_Name), 
+          "value": "$(DB_Name)", 
           "slotSetting": false
         }
       ]
@@ -74,20 +74,20 @@ steps:
       [
         {
           "name": "WEBAPP_NAME",
-          "value": $(WebApp_Name),
+          "value": "$(WebApp_Name)",
           "slotSetting": false
         },
         {
           "name": "WEBAPP_PLAN_NAME",
-          "value": $(WebApp_PlanName),
+          "value": "$(WebApp_PlanName)",
           "slotSetting": false
         }
       ]
-  connectionStrings: |
+    connectionStrings: |
       [
         {
           "name": "MysqlCredentials",
-          "value": $(MySQl_ConnectionString),
+          "value": "$(MySQl_ConnectionString)",
           "type": "MySql",
           "slotSetting": false
         }

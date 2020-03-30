@@ -29,8 +29,8 @@ After you install the [Analytics Marketplace extension](/azure/devops/report/das
 From your web portal, expand **Overview** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/open-analytics/open-analytics-views-vert.png)   
+> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/open_analytics.png)   
 
-If you don't see the team or team project you want, choose the ![ ](/azure/devops/boards/media/icons/project-icon.png) Azure DevOps logo to [browse all projects](/azure/devops/project/navigation/work-across-projects).  
+If you don't see the team or team project you want, choose the ![ ](/azure/devops/report/powerbi/media/azure_devops.png) Azure DevOps logo to [browse all projects](/azure/devops/project/navigation/work-across-projects).  
 
 ::: moniker-end

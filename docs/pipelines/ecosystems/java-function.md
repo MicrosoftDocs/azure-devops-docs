@@ -92,7 +92,7 @@ After the pipeline has run, select the vertical ellipses in the upper-right corn
     azureSubscription: $(serviceConnectionToAzure)
     appType: functionApp
     appName: $(appName)
-    package: $(build.artifactstagingdirectory)/$(appName)
+    package: $(build.artifactstagingdirectory)
 ```
 
 ## Run the pipeline and check out your site

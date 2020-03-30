@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to use resources with YAML definitions.
 ms.topic: reference
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
-ms.date: 02/27/2020
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -53,7 +53,6 @@ resources:        # types: pipelines | builds | repositories | containers | pack
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
     branch: string  # branch to pick the artifact, optional; defaults to all branches
-    tags: [ string ] # picks the artifacts on from the pipeline with given tag, optional; defaults to no tags
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
       branches:  # branch conditions to filter the events, optional; Defaults to all branches.
         include: [ string ]  # branches to consider the trigger events, optional; Defaults to all branches.
@@ -151,11 +150,12 @@ Or to avoid downloading any of the artifacts at all:
 ---
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
-### pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables:
+### Pipeline resource variables
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
+
+## [Schema](#tab/schema)
 ```yaml
-resources.pipeline.<Alias>.projectName
 resources.pipeline.<Alias>.projectID
 resources.pipeline.<Alias>.pipelineName
 resources.pipeline.<Alias>.pipelineID
@@ -168,6 +168,28 @@ resources.pipeline.<Alias>.sourceProvider
 resources.pipeline.<Alias>.requestedFor
 resources.pipeline.<Alias>.requestedForID
 ```
+
+## [Example](#tab/example)
+```yaml
+resources:
+  pipelines:
+  - pipeline: myresourcevars  # identifier for the pipeline resource
+    source: mypipeline # source pipeline definition name
+    trigger: true 
+
+steps:
+- script: |
+    echo $(resources.pipeline.myresourcevars.pipelineID)
+    echo $(resources.pipeline.myresourcevars.runName)
+    echo $(resources.pipeline.myresourcevars.runID)
+    echo $(resources.pipeline.myresourcevars.runURI)
+    echo $(resources.pipeline.myresourcevars.sourceBranch)
+    echo $(resources.pipeline.myresourcevars.sourceCommit)
+    echo $(resources.pipeline.myresourcevars.sourceProvider)
+    echo $(resources.pipeline.myresourcevars.requestedFor)
+    echo $(resources.pipeline.myresourcevars.requestedForID)
+```
+---
 
 ## Resources: `builds`
 
@@ -346,7 +368,7 @@ resources:          # types: pipelines | repositories | containers | builds | pa
     type: string # type of the registry like ACR, GCR etc. 
     azureSubscription: string # Azure subscription (ARM service connection) for container registry;
     resourceGroup: string # resource group for your ACR
-    registry: string: # registry for container images
+    registry: string # registry for container images
     repository: string # name of the container image repository in ACR
     trigger: # Triggers are not enabled by default and need to be set explicitly
       tags:
@@ -371,7 +393,9 @@ resources:
 ```
 ---
 #### Container resource variables
-Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks.
+Once you define a container as resource, container image metadata is passed to the pipeline in the form of variables. Information like image, registry, and connection details are made accessible across all the jobs to be used in your container deploy tasks. 
+
+## [Schema](#tab/schema)
 
 ```yaml
 resources.container.<Alias>.type
@@ -383,6 +407,53 @@ resources.container.<Alias>.URI
 resources.container.<Alias>.location
 ```
 Note: location variable is only applicable for `ACR` type of container resources.
+
+## [Example](#tab/example)
+
+In this example, there is an [Azure Resource Manager service connection](../library/service-endpoints.md#common-service-connection-types) named `arm-connection`. Learn more about [Azure container registries, repositories, and images](https://docs.microsoft.com/azure/container-registry/container-registry-concepts). 
+
+```yaml
+resources:
+  containers:
+  - container: mycontainer # name of the container (Alias) 
+    type: ACR # type of registry
+    azureSubscription: arm-connection # name of the ARM service connection
+    resourceGroup: rg-storage-eastus # Azure resource group with the container
+    registry: mycontainerregistry # Azure container registry name
+    repository: hello-world # name of the of container image collection
+    trigger:
+      tags:
+      - latest # tag for the container image to use
+
+steps:
+- script: echo |
+    echo $(resources.container.mycontainer.type)
+    echo $(resources.container.mycontainer.registry)
+    echo $(resources.container.mycontainer.repository)
+    echo $(resources.container.mycontainer.tag)
+    echo $(resources.container.mycontainer.digest)
+    echo $(resources.container.mycontainer.URI)
+    echo $(resources.container.mycontainer.location)
+
+```
+---
+
+## Troubleshooting authorization for a YAML pipeline
+
+Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
+
+* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for e.g., test resources.
+
+* When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
+
+* When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
+
+    > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+
+## Set approval checks for resources
+
+You can manually control when a resource runs with approval checks and templates. With the [required template approval check](approvals.md#required-template), you can require that any pipeline using a resource or environment also extends from a specific YAML template. 
+Setting a required template approval enhances security. You can make sure that your resource only gets used under specific conditions with a template. Learn more about how to [enhance pipeline security](../security/templates.md#set-required-templates) with templates and resources. 
 
 ## Traceability
 We provide full traceability for any resource consumed at a pipeline or deployment-job level.
@@ -400,3 +471,4 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, you can see a list of resources that are consumed in the environments view. This view includes resources consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
+

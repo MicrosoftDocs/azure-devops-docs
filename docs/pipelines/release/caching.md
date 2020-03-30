@@ -94,7 +94,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |
-|7zip    | Recommended | No | No |
+|7-Zip    | Recommended | No | No |
 
 The above executables need to be in a folder listed in the PATH environment variable.
 Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
@@ -194,8 +194,8 @@ steps:
   inputs:
     key: 'gems | "$(Agent.OS)" | my.gemspec'
     restoreKeys: | 
-       gems | "$(Agent.OS)"
-       gems
+      gems | "$(Agent.OS)"
+      gems
     path: $(BUNDLE_PATH)
   displayName: Cache gems
 
@@ -275,8 +275,8 @@ steps:
   inputs:
     key: 'maven | "$(Agent.OS)" | **/pom.xml'
     restoreKeys: |
-       maven | "$(Agent.OS)"
-       maven
+      maven | "$(Agent.OS)"
+      maven
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
@@ -367,16 +367,16 @@ variables:
   COMPOSER_CACHE_DIR: $(Pipeline.Workspace)/.composer
 
 steps:
-  - task: Cache@2
-    inputs:
-      key: 'composer | "$(Agent.OS)" | composer.lock'
-      restoreKeys: |
-        composer | "$(Agent.OS)"
-        composer
-      path: $(COMPOSER_CACHE_DIR)
-    displayName: Cache composer
+- task: Cache@2
+  inputs:
+    key: 'composer | "$(Agent.OS)" | composer.lock'
+    restoreKeys: |
+      composer | "$(Agent.OS)"
+      composer
+    path: $(COMPOSER_CACHE_DIR)
+  displayName: Cache composer
 
-  - script: composer install
+- script: composer install
 ```
 
 ## Known issues and feedback

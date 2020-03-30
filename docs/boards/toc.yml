@@ -28,7 +28,7 @@
 - name: Permissions & access
   items:
   - name: Default permissions & access (Security)
-    href: get-started/permissions-access-boards.md
+    href: /azure/devops/organizations/security/permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set work tracking and plan permissions 
     href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Grant or restrict permissions to select tasks

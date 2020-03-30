@@ -36,10 +36,10 @@ This YAML example shows how Azure Resource Manager is used to refer to the Kuber
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
-    azureResourceGroup: Contoso
-    kubernetesCluster: Contoso
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
+  azureResourceGroup: Contoso
+  kubernetesCluster: Contoso
 
 steps:
 - task: Kubernetes@1

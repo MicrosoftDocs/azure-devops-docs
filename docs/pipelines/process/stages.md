@@ -158,7 +158,8 @@ for a stage in a release pipeline. You can:
 
 ::: moniker range="azure-devops"
 
-When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file.
+When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
+
 
 The syntax for defining multiple stages and their dependencies is:
 
@@ -402,6 +403,7 @@ YAML is not supported in this version of TFS.
 
 #### [Classic](#tab/classic/)
 
-For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
+You can add manual approvals at the start or end of each stage in the pipeline. See [Release approvals and gates overview](../release/approvals/index.md) for more information.
+
 
 * * *

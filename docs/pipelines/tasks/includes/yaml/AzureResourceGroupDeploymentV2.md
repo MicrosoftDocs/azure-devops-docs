@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 02/10/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Azure resource group deployment
 # Deploy an Azure Resource Manager (ARM) template to a resource group and manage virtual machines
