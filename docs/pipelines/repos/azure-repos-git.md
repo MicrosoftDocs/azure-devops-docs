@@ -87,7 +87,7 @@ To set job authorization scope for a specific project:
 >If the scope is set to **project** at the organization level, you cannot change the scope in each project.
 
 >[!IMPORTANT]
-If the scope is not restricted at either the organization level or project level, then every job in your YAML pipeline gets a collection scoped job access token. In other words, your pipeline has access to any repository in any project of your organization. If an adversary is able to gain access to a single pipeline in a single project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
+> If the scope is not restricted at either the organization level or project level, then every job in your YAML pipeline gets a collection scoped job access token. In other words, your pipeline has access to any repository in any project of your organization. If an adversary is able to gain access to a single pipeline in a single project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
 
 ::: moniker-end
 
@@ -131,7 +131,7 @@ To set job authorization scope for a specific pipeline:
 >If the scope if restricted to **project** in the organization or project level settings, then the pipeline-level job authorization scope is ignored. The project or organization level setting prevails.
 
 >[!IMPORTANT]
-If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
+>If the scopes are not restricted at either the organization level or project level, then you are allowing the pipeline authors to determine the access they need to repositories. If an adversary is able to create or edit a pipeline in one project, he or she will be able to gain access to any repository in your organization. This is why, it is recommended that you restrict the scope at the highest level (organization settings) in order to contain the attack to a single project.
 
 ::: moniker-end
 
@@ -161,28 +161,28 @@ You may want to change the permissions of build access token in scenarios such a
 
 To update the permissions of build access token:
 
-- First, determine the job authorization scope for your pipeline. See the section above to understand job authorization scope. If the job authorization scope is **collection**, then the corresponding build service account to manage permissions on is **Project Collection Build Service (<your collection name>)**. If the job authorization scope is **project**, then the build service account to manage permissions on is **<Your project name> Build Service (<your collection name>)**.
+- First, determine the job authorization scope for your pipeline. See the section above to understand job authorization scope. If the job authorization scope is **collection**, then the corresponding build service account to manage permissions on is **Project Collection Build Service (your-collection-name)**. If the job authorization scope is **project**, then the build service account to manage permissions on is **Your-project-name Build Service (your-collection-name)**.
 
-- To restrict or grant additional access to **Project Collection Build Service (<your collection name>)**:
+- To restrict or grant additional access to **Project Collection Build Service (your-collection-name)**:
   - Select **Manage security** in the overflow menu on **Pipelines** page.
-  - Under **Users**, select **Project Collection Build Service (<your collection name>)**.
+  - Under **Users**, select **Project Collection Build Service (your-collection-name)**.
   - Make any changes to the pipelines-related permissions for this account.
   - Navigate to organization settings for your Azure DevOps organization (or collection settings for your project collection).
   - Select **Permissions** under **Security**.
-  - Under the **Users** tab, look for **Project Collection Build Service (<your collection name>)**.
+  - Under the **Users** tab, look for **Project Collection Build Service (your-collection-name)**.
   - Make any changes to the non-pipelines-related permissions for this account.
-  - Since **Project Collection Build Service (<your collection name>)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
+  - Since **Project Collection Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
 
-- To restrict or grant additional access to **<Your project name> Build Service (<your collection name>)**:
+- To restrict or grant additional access to **Your-project-name Build Service (your-collection-name)**:
   - The build service account on which you can manage permissions will only be created after you run the pipeline once. Make sure that you already ran the pipeline once.
   - Select **Manage security** in the overflow menu on **Pipelines** page.
-  - Under **Users**, select **<Your project name> Build Service (<your collection name>)**.
+  - Under **Users**, select **Your-project-name Build Service (your-collection-name)**.
   - Make any changes to the pipelines-related permissions for this account.
   - Navigate to organization settings for your Azure DevOps organization (or collection settings for your project collection).
   - Select **Permissions** under **Security**.
-  - Under the **Users** tab, look for **<Your project name> build service (<your collection name>)**.
+  - Under the **Users** tab, look for **Your-project-name build service (your-collection-name)**.
   - Make any changes to the non-pipelines-related permissions for this account.
-  - Since **<Your project name> Build Service (<your collection name>)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
+  - Since **Your-project-name Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
 
 ## CI triggers
 
