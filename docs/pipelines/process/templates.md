@@ -42,7 +42,7 @@ parameters:
   default: false
 
 steps:
-    - script: echo ${{ parameters.yesNo }}
+- script: echo ${{ parameters.yesNo }}
 ```
 
 ```yaml
@@ -51,9 +51,9 @@ trigger:
 - master
 
 extends:
-    template: simple-param.yml
-    parameters:
-        yesNo: false # set to a non-boolean value to have the build fail
+  template: simple-param.yml
+  parameters:
+      yesNo: false # set to a non-boolean value to have the build fail
 ```
 
 #### Parameters to select a template at runtime
@@ -242,7 +242,7 @@ stages:
   jobs:
   - job: printhello
     steps:
-      - script: 'echo Hello world'
+    - script: 'echo Hello world'
 ```
 
 ```yaml
@@ -256,11 +256,11 @@ pool:
 stages:
 - stage: Install
   jobs: 
-    - job: npminstall
-      steps:
-      - task: Npm@1
-        inputs:
-          command: 'install'
+  - job: npminstall
+    steps:
+    - task: Npm@1
+      inputs:
+        command: 'install'
 - template: templates/stages1.yml
 - template: templates/stages2.yml
 ```

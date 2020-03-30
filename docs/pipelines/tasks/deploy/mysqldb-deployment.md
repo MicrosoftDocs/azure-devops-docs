@@ -47,8 +47,8 @@ steps:
   inputs:
     TaskNameSelector: InlineSqlTask
     SqlInline: |
-     CREATE DATABASE IF NOT EXISTS alm;
-     use alm;
+      CREATE DATABASE IF NOT EXISTS alm;
+      use alm;
     ServerName: localhost
     SqlUsername: root
     SqlPassword: P2ssw0rd

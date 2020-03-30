@@ -11,7 +11,7 @@ You can turn on multi-organization billing from Organization **Settings -> Billi
 > [!div class="mx-imgBorder"]
 > ![Badge](../../media/166_01.png)
 
-To decide if multi-org billing is the right choice for you, read the [multi-org billing FAQ](https://docs.microsoft.com/azure/devops/organizations/billing/billing-faq?view=azure-devops#multi-org-billing).
+To decide if multi-org billing is the right choice for you, read the [multi-org billing FAQ](https://docs.microsoft.com/azure/devops/organizations/billing/billing-faq?view=azure-devops#multi-organization-billing).
 
 ### Assign a new owner to your orphaned organization
 

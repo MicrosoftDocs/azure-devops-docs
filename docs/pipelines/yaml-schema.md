@@ -649,7 +649,7 @@ variables:
 ## Template references
 
 > [!NOTE]
-> Be sure to see the full [template expression syntax](process/templates.md#template-expressions), which is all forms of `${{ }}`.
+> Be sure to see the full [template expression syntax](process/templates.md), which is all forms of `${{ }}`.
 
 ::: moniker range="> azure-devops-2019"
 
@@ -991,7 +991,7 @@ jobs:
   pool: 
     vmImage: ${{ parameters.image }}
   steps:
-    - script: echo The image parameter is ${{ parameters.image }}```
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
 
 ### [Template Example](#tab/template-example)
@@ -1165,7 +1165,7 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
