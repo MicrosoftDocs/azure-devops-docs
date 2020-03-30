@@ -78,10 +78,10 @@ We'll start with a basic example and work up to the full task.
 ------
 ```yaml
 steps:
-  - task: CmdLine@2
-    displayName: 'Run my script (injected from decorator)'
-    inputs:
-      script: dir
+- task: CmdLine@2
+  displayName: 'Run my script (injected from decorator)'
+  inputs:
+    script: dir
 ```
 
 ## Installing the decorator
@@ -94,7 +94,7 @@ Once the extension has been shared with your organization, [search for the exten
 
 > [!IMPORTANT]
 > Pipeline decorators are in preview.
-> You must [enable the feature at the organization level](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users)
+> You must [enable the feature at the organization level](../../project/navigation/preview-features.md#enable-features-at-the-organization-level-for-all-users).
 > Otherwise, pipeline decorators don't run.
 
 Save the file, then [build and install the extension](../get-started/node.md).

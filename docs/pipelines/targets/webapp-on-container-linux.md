@@ -126,10 +126,10 @@ You must supply an Azure service connection to the `AzureWebAppContainer` task. 
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
-    containerRegistry: <Name of the Azure container registry>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
+  containerRegistry: <Name of the Azure container registry>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureWebAppContainer@1

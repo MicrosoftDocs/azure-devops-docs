@@ -3,7 +3,7 @@ title: Build pipeline triggers
 description: Learn about how you can specify CI, scheduled, gated, and other triggers for your build on Azure Pipelines
 ms.topic: reference
 ms.custom: seodec18
-ms.date: 02/20/2020
+ms.date: 03/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -461,7 +461,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
 In the following example, two schedules are defined.
@@ -484,7 +484,7 @@ schedules:
   always: true
 ```
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day, but only if the code has changed since the last successful scheduled run, for `master` and all `releases/*` branches, except those under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays, whether the code has changed or not since the last run, for all `releases/*` branches.
 
@@ -622,7 +622,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 <a name="always"></a>
 ### Running even when there are no code changes
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
+By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
 ```yaml
 schedules:
@@ -864,7 +864,7 @@ In situations like these, add a pipeline trigger to run your pipeline upon the s
 
 # [YAML](#tab/yaml)
 
-To trigger a pipeline upon the completion of another, specify the latter as a [pipeline resource](../yaml-schema.md#pipeline-resource).
+To trigger a pipeline upon the completion of another, specify the triggering pipeline as a [pipeline resource](../process/resources.md#resources-pipelines).
 
 > [!NOTE]
 > Previously, you may have navigated to the classic editor for your YAML pipeline and configured **build completion triggers** in the UI. While that model still works, it is no longer recommended. The recommended approach is to specify **pipeline triggers** directly within the YAML file. Build completion triggers as defined in the classic editor have various drawbacks, which have now been addressed in pipeline triggers. For instance, there is no way to trigger a pipeline on the same branch as that of the triggering pipeline using build completion triggers.
@@ -874,13 +874,26 @@ To trigger a pipeline upon the completion of another, specify the latter as a [p
 # this is being defined in app-ci pipeline
 resources:
   pipelines:
-  - pipeline: securitylib
-    source: security-lib-ci
+  - pipeline: securitylib   # Name of the pipeline resource
+    source: security-lib-ci # Name of the triggering pipeline
     trigger: 
       branches:
       - releases/*
       - master
 ```
+
+In this example, `pipeline: securitylib` specifies the name of the pipeline resource (used when referring to the pipeline resource from other parts of the pipeline, such as pipeline resource variables), 
+and `source: security-lib-ci` specifies the name of the triggering pipeline. You can retrieve a pipeline's name from the Azure DevOps portal in several places, such as the [Pipelines landing page](../get-started/multi-stage-pipelines-experience.md#pipelines-landing-page). To configure the pipeline name 
+setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and navigate to the **YAML** pane.
+
+![Pipeline settings](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+> [!NOTE] 
+> If the triggering pipeline is in another Azure DevOps project, you must specify the
+> project name using `project: OtherProjectName`. If the triggering pipeline is in another
+> Azure DevOps organization, you must also create a 
+> [service connection](../library/service-endpoints.md) to that project and reference it 
+> in your pipeline resource. For more information, see [pipeline resource](../process/resources.md#resources-pipelines).
 
 In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 
@@ -896,21 +909,7 @@ resources:
         include: 
         - releases/*
         exclude:
-        - master
-```
-
-If you don't want to wait until all stages of a run are completed, you can trigger the second pipeline upon on the completion of a specific stage:
-
-```yaml
-resources:
-  pipelines:
-  - pipeline: SmartHotel
-    source: SmartHotel-CI 
-    trigger: 
-      branches:
-        include: master
-      stages: 
-      - QA
+        - releases/old*
 ```
 
 If the triggering pipeline and the triggered pipeline use the same repository, then both the pipelines will run using the same commit when one triggers the other. This is helpful if your first pipeline builds the code, and the second pipeline tests it. However, if the two pipelines use different repositories, then the triggered pipeline will use the latest version of the code from its default branch.
@@ -963,12 +962,14 @@ In many cases, you'll want to download artifacts from the triggering build. To d
 
 When specifying a branch or tag, you may use an exact name or a wildcard.
 Wildcards patterns allow `*` to match zero or more characters and `?` to match a single character.
-For branches and tags, a wildcard may appear anywhere in the pattern.
 
-For paths, you may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
 
-> [!IMPORTANT]
-> You may **not** include `*` in the middle of a path filter, and you may not use `?`.
+* If you start your pattern with `*` in a YAML pipeline, you must wrap the pattern in quotes, like `"*-releases"`.
+* For branches and tags:
+  * A wildcard may appear anywhere in the pattern.
+* For paths:
+  * You may include `*` as the final character, but it doesn't do anything differently from specifying the directory name by itself.
+  * You may **not** include `*` in the middle of a path filter, and you may not use `?`.
 
 ```yaml
 trigger:

@@ -133,7 +133,7 @@ strategy:
 container: $[ variables['containerImage'] ]
 
 steps:
-  - script: printenv
+- script: printenv
 ```
 
 ## Endpoints
@@ -217,7 +217,7 @@ jobs:
   container: $[ variables['containerResource'] ]
 
   steps:
-    - script: printenv
+  - script: printenv
 ```
 
 ## Non glibc-based containers

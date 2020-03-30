@@ -140,9 +140,9 @@ You must supply an Azure service connection to the `AzureWebApp` task. Add the f
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureWebApp@1

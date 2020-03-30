@@ -1,3 +1,9 @@
+---
+ms.technology: devops-security
+ms.author: kaelli
+author: KathrynEE
+ms.topic: include
+---
 
 <table>
 <tr valign="bottom">
