@@ -100,8 +100,6 @@
       href: test/debug-in-browser.md
   - name: Reporting
     items:
-    - name: Extension reporting
-      href: extension-report.md
     - name: Extension statistics PowerBI content pack
       href: extension-statistics-powerbi-contentpack.md
 - name: Reference
@@ -179,5 +177,5 @@
       href: reference/client/controls/splitter.md
     - name: WaitControl
       href: reference/client/controls/waitcontrol.md
-    - name: How to get help
-      href: support/help.md
+
+
