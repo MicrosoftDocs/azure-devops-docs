@@ -11,8 +11,6 @@ ms.date: 03/29/2020
 
 To add a build badge to the `readme.md` file at the root of your repository, follow the steps in [Get the status badge](../../create-first-pipeline.md#get-the-status-badge).
 
-::: moniker-end
-
 ## Get the source code
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
@@ -25,9 +23,7 @@ This setting is always true on non-Windows agents.
 
 ### Checkout path
 
-# [YAML](#tab/yaml/))
-
-::: moniker range="azure-devops-2019"
+# [YAML](#tab/yaml/)
 
 If you are checking out a single repository, by default, your source code will be checked out into a directory called `s`. For YAML pipelines, you can change this by specifying `checkout` with a `path`. The specified path is relative to `$(Agent.BuildDirectory)`. For example: if the checkout path value is `mycustompath` and `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
 
@@ -48,20 +44,6 @@ steps:
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
-
 # [Classic](#tab/classic/)
 
 This setting is not configurable in the classic editor. Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
@@ -71,8 +53,6 @@ This setting is not configurable in the classic editor. Your source code will be
 ### Submodules
 
 # [YAML](#tab/yaml/)
-
-::: moniker range="azure-devops"
 
 You can configure the `submodules` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
@@ -86,20 +66,6 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-This feature is not available in Azure DevOps Server 2019.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
@@ -155,8 +121,6 @@ You may want to limit how far back in history to download. Effectively this resu
 
 # [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
-
 You can configure the `fetchDepth` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
 
 ```yaml
@@ -169,20 +133,6 @@ steps:
   path: string  # path to check out source code, relative to the agent's build directory (e.g. \_work\1)
   persistCredentials: boolean  # set to 'true' to leave the OAuth token in the Git config after the initial fetch
 ```
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-This feature is not available in Azure DevOps Server 2019.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
@@ -203,8 +153,6 @@ In these cases this option can help you conserve network and storage resources. 
 
 ### Don't sync sources
 
-::: moniker range=">= azure-devops-2019"
-
 You may want to skip fetching new commits. This option can be useful in cases when you want to:
 
 * Git init, config, and fetch using your own custom options.
@@ -219,14 +167,6 @@ You can configure the **Don't sync sources** setting in the [Checkout](../../yam
 steps:
 - checkout: none  # Don't sync sources
 ```
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
@@ -247,8 +187,6 @@ Select the **Don't sync sources** setting from the properties of the **Get sourc
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
 
 # [YAML](#tab/yaml/)
-
-::: moniker range="azure-devops"
 
 You can configure the `clean` setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline.
 
@@ -280,7 +218,6 @@ jobs:
     clean: outputs | resources | all # what to clean up before the job runs
 ```
 
-
 This gives the following clean options.
 
 * **outputs**: Same operation as the clean setting described in the previous the checkout task, plus: Deletes and recreates `$(Build.BinariesDirectory)`. Note that the `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
@@ -289,21 +226,8 @@ This gives the following clean options.
 
 * **all**: Deletes and recreates `$(Agent.BuildDirectory)`. This results in initializing a new, local Git repository for every build.
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-This feature is not available in Azure DevOps Server 2019.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
-
 # [Classic](#tab/classic/)
+
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
 ![GitHub options](../media/github/github-clean-sources.png)
@@ -328,8 +252,6 @@ You may want to label your source code files to enable your team to easily ident
 
 # [YAML](#tab/yaml)
 
-::: moniker range=">=azure-devops-2019"
-
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** from the YAML editor menu.
 
 ![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
@@ -338,19 +260,11 @@ From the classic editor, choose **YAML**, choose the **Get sources** task, and t
 
 ![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-
-YAML pipelines are not available in TFS.
-
-::: moniker-end
-
 # [Classic](#tab/classic)
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![Git options](../media/github/github-options.png)
+![Git options](../media/github/github-options.png)
 
 ---
 

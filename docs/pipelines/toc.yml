@@ -59,16 +59,14 @@
       href: release/deploy-using-approvals.md
     - name: Use approvals for release deployment control
       href: release/approvals/approvals.md
-  - name: Repositories & triggers
+  - name: Repositories
     items:
-    - name: Specify pipeline triggers  
-      href: build/triggers.md
-      displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
     - name: Supported repositories 
       href: repos/index.md
       displayName: supported repository types
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
+      displayName: ci, pr, triggers, branch policy, access token, authorization scope, build service account, public project, private project, clean, label sources, tag sources, checkout path, submodules, shallow fetch
     - name: GitHub
       href: repos/github.md
       displayName: public project, private project, github organization, repository permissions, github app, trigger, ci trigger, push trigger, pr trigger, comment trigger, checkout path, submodules, shallow fetch, sync sources, status badge, github checks
