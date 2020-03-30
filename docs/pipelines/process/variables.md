@@ -13,9 +13,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. Almost any place where a pipeline requires a string, you can use a variable instead of hard-coding a value. 
-
-All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline. 
+Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
 
@@ -27,7 +25,9 @@ Variables are different from [runtime parameters](runtime-parameters.md), which 
 
 When you define a variable, you can use [different syntaxes (macro, template expression, or runtime)](#understand-variable-syntax) and what syntax you use will determine where in the pipeline your variable will render. 
 
-In a YAML, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAMLs and need to be passed to your YAML with `env:` or a variable at the root level of your YAML.
+In YAML pipelines, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML pipeline in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAML pipelines and need to be passed to your YAML file with `env:` or a variable at the root level.
+
+User-defined variables can be set as read-only. 
 
 You can [use a variable group](../library/variable-groups.md) to make variables available across multiple pipelines.  
 
@@ -35,17 +35,20 @@ You can use [templates](templates.md) to define variables that are used in multi
 
 ## System variables
 
-In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. If you use classic release pipelines, see [release variables](../release/variables.md).
+In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you are using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
+If you are using classic release pipelines, see [release variables](../release/variables.md).
 
 System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable. 
 
+System variables are read-only. 
+
 ## Environment variables
 
-Environment variables are specific to the operating system your agent is running. They are injected into a pipeline in platform-specific ways. The format corresponds to how environment variables get formatted for your specific scripting platform. 
+Environment variables are specific to the operating system you are using. They are injected into a pipeline in platform-specific ways. The format corresponds to how environment variables get formatted for your specific scripting platform. 
 
- On UNIX systems (OS X and Linux), environment variables have the format `$NAME`. On Windows, the format is `%NAME%` for batch and `$env:NAME` in PowerShell.
+ On UNIX systems (MacOS and Linux), environment variables have the format `$NAME`. On Windows, the format is `%NAME%` for batch and `$env:NAME` in PowerShell.
 
-User-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable `any.variable` becomes `$ANY_VARIABLE`.
+System and user-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name `any.variable` becomes the variable name `$ANY_VARIABLE`.
 
 ## Variable characters
 
@@ -71,7 +74,7 @@ You can use runtime expression syntax for variables that are expanded at runtime
 
 If you are defining a variable for a template or that has a static value, use a template expression.
 
-If you are setting a variable that will be populated at runtime, use a macro expression. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. In that case, you should use a runtime expression. 
+If you are setting a variable that will be populated at runtime, use a macro expression. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have a conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
 
 ## Set variables in pipeline
 
