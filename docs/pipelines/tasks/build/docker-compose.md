@@ -32,8 +32,8 @@ This YAML example specifies the inputs for Azure Container Registry:
 
 ```YAML
 variables:
-    azureContainerRegistry: Contoso.azurecr.io
-    azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: Contoso.azurecr.io
+  azureSubscriptionEndpoint: Contoso
 steps:
 - task: DockerCompose@0
   displayName: Container registry login

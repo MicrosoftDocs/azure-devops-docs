@@ -134,15 +134,15 @@ You can make a variable available to future jobs and specify it in a condition. 
 jobs:
 - job: Foo
   steps:
-    - script: |
-        echo "This is job Foo."
-        echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
-      name: DetermineResult
+  - script: |
+      echo "This is job Foo."
+      echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
+    name: DetermineResult
 - job: Bar
   dependsOn: Foo
   condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check if true
   steps:
-    - script: echo "Job Foo ran and doThing is true."
+  - script: echo "Job Foo ran and doThing is true."
 ```
 
 ## Q & A

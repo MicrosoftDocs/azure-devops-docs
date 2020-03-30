@@ -86,7 +86,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -145,7 +145,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
@@ -325,7 +325,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -385,7 +385,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Make requests on behalf of others (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
@@ -545,7 +545,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete builds (Object)</a></li>
 <li><a href="../settings/work/customize-process-field.md" data-raw-source="[Delete field from account](../settings/work/customize-process-field.md)">Delete field from account</a></li>

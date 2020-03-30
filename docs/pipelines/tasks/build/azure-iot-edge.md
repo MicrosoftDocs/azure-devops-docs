@@ -63,8 +63,8 @@ The following YAML example pushes module images:
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
 
 steps:    
 - task: AzureIoTEdge@2

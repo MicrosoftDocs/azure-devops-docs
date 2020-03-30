@@ -253,7 +253,7 @@ Then we have the task to upload the artifacts.
 - We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
-    jobs:
+  jobs:
   - deployment: DeploymentJob
     pool:
       vmImage: $(vmImageName)

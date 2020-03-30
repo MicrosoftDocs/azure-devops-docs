@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 03/23/2020
 ---
 
 
@@ -26,10 +26,13 @@ By default, only project administrators can create and edit queries and folders 
 By creating folders under Shared Queries, you can grant permissions to users for each folder. For example, if you have several teams contributing to a project, then you might want to create a folder under Shared Queries for each team to manage their own set of shared queries.  
 
 ## Prerequisites
-- You must be a member of the Project Collection Administrators or Project Administrators groups to create or edit a shared query or manage permissions.
-- Or to create a query or folder under a shared query folder, you must have the  **Contribute** permission set explicitly to **Allow** to  
-- Or to change permissions of a query or query folder, you must have the  **Manage Permissions** permission set explicitly to **Allow**. 
+- To create or edit a shared query or manage permissions, you must be a member of the Project Collection Administrators or Project Administrators groups with Basic or higher access level 
+- Or, to create a query or folder under a shared query folder, you must have the **Contribute** permission set explicitly to **Allow** to and be granted Basic or higher access level 
+- Or, to change permissions of a query or query folder, you must have the **Manage Permissions** permission set explicitly to **Allow** and be granted Basic or higher access level. 
 
+Users with Stakeholder access can't create or save queries in a Shared folder.  
+
+To learn more about access levels, see [About access levels](../../organizations/security/access-levels.md). 
 
 > [!TIP]    
 > Consider creating a query folder for each team and give the team administrators or the team group query permissions to manage their folder. 

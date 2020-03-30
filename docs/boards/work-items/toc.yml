@@ -43,6 +43,9 @@
     href: work-item-template-examples.md
 - name: How-to Guides
   items:
+  - name: Change column options
+    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    displayName: sort, persistence
   - name: "Use @mentions in discussions" 
     href: ../../notifications/at-mentions.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "Use #ID to link to work items"
@@ -61,8 +64,6 @@
     displayName: export, cvs 
   - name: Delete test artifacts
     href: ../backlogs/delete-test-artifacts.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Change column options
-    href: ../backlogs/set-column-options.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set the Work Items experience (Visual Studio)
     href: set-work-item-experience-vs.md
   - name: View deployment stages on work item form

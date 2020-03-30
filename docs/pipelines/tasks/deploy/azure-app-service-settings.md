@@ -83,7 +83,7 @@ steps:
           "slotSetting": false
         }
       ]
-  connectionStrings: |
+    connectionStrings: |
       [
         {
           "name": "MysqlCredentials",
