@@ -27,9 +27,9 @@ This tutorial guides you through creating your first web extension, which includ
 
 ## Prerequisites
 
-To develop and test your extension you need:
+To develop and test your extension, you need:
 
-1. An organization where you have permission to install extensions to (i.e. you are the owner). 
+1. An organization where you have permission to install extensions to (that is, you are the owner). 
 
    > If you don't have a personal organization, you can [create an organization for free](https://app.vsaex.visualstudio.com/profile/account).
 
@@ -46,7 +46,7 @@ An extension is composed of a set of files, including a required manifest file, 
    md my-first-extension
    ```
 
-2. From this directory initialize a new NPM package manifest:
+2. From this directory, initialize a new NPM package manifest:
    ```
    npm init -y
    ```
@@ -63,89 +63,89 @@ An extension is composed of a set of files, including a required manifest file, 
 4. Create an extension manifest file named `vss-extension.json` at the root of your extension directory with the following content:
 
     ```json
-	{
-		"manifestVersion": 1,
-		"id": "my-first-extension",
-		"publisher": "",
-		"version": "1.0.0",
-		"name": "My First Extension",
-		"description": "A sample Visual Studio Services extension",
-		"public": false,
-		"categories": ["Azure Repos"],
-		"targets": [
-			{
-				"id": "Microsoft.VisualStudio.Services"
-			}
-		],
-		"contributions": [
-			{
-				"id": "my-hub",
-				"type": "ms.vss-web.hub",
-				"targets": [
-					"ms.vss-code-web.code-hub-group"
-				],
-				"properties": {
-					"name": "My Hub",
-					"uri": "my-hub.html"
-				}
-			}
-		],
-		"files": [
-			{
-				"path": "my-hub.html",
-				"addressable": true
-			},
-			{
-				"path": "node_modules/vss-web-extension-sdk/lib",
-				"addressable": true,
-				"packagePath": "lib"
-			}
-		]
-	}
+    {
+        "manifestVersion": 1,
+        "id": "my-first-extension",
+        "publisher": "",
+        "version": "1.0.0",
+        "name": "My First Extension",
+        "description": "A sample Visual Studio Services extension",
+        "public": false,
+        "categories": ["Azure Repos"],
+        "targets": [
+            {
+                "id": "Microsoft.VisualStudio.Services"
+            }
+        ],
+        "contributions": [
+            {
+                "id": "my-hub",
+                "type": "ms.vss-web.hub",
+                "targets": [
+                    "ms.vss-code-web.code-hub-group"
+                ],
+                "properties": {
+                    "name": "My Hub",
+                    "uri": "my-hub.html"
+                }
+            }
+        ],
+        "files": [
+            {
+                "path": "my-hub.html",
+                "addressable": true
+            },
+            {
+                "path": "node_modules/vss-web-extension-sdk/lib",
+                "addressable": true,
+                "packagePath": "lib"
+            }
+        ]
+    }
     ```
 
-	>[!NOTE]
+    >[!NOTE]
     >The `public` property controls whether the extension is visible to everyone on the Visual Studio Marketplace. During development you should keep your extensions private.
 
 5. Create a file named `my-hub.html` at the root of your extension directory with the following content:
 
-	```html
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-    	<script src="lib/VSS.SDK.min.js"></script>
-    	<style>
-        	body {
-            	background-color: rgb(0, 67, 117);
-            	color: white;
-            	margin: 10px;    
-            	font-family: "Segoe UI VSS (Regular)","-apple-system",BlinkMacSystemFont,"Segoe UI",sans-serif;
-        	}
-    	</style>
-    	<script type="text/javascript">
-        	VSS.init();
-        	VSS.ready(function() {
-            	document.getElementById("name").innerText = VSS.getWebContext().user.name;
-        	});
-    	</script>
-	</head>
-	<body>        
-    	<h1>Hello, <span id="name"></span></h1>
-	</body>
-	</html>
+    ```html
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <script src="lib/VSS.SDK.min.js"></script>
+        <style>
+            body {
+                background-color: rgb(0, 67, 117);
+                color: white;
+                margin: 10px;    
+                font-family: "Segoe UI VSS (Regular)","-apple-system",BlinkMacSystemFont,"Segoe UI",sans-serif;
+            }
+        </style>
+        <script type="text/javascript">
+            VSS.init();
+            VSS.ready(function() {
+                document.getElementById("name").innerText = VSS.getWebContext().user.name;
+            });
+        </script>
+    </head>
+    <body>        
+        <h1>Hello, <span id="name"></span></h1>
+    </body>
+    </html>
     ```
 
-	This is the content for the view (also known as a hub) contributed into the Azure DevOps Services web experience.
+    This is the content for the view (also known as a hub) contributed into the Azure DevOps Services web experience.
 
 6. At this point your extension directory should look like this:
 
     ```
-	|-- my-hub.html
-	|-- node_modules
-		|-- @types
-		|-- vss-web-extension-sdk
-	|-- package.json
-	|-- vss-extension.json
+    |-- my-hub.html
+    |-- node_modules
+        |-- @types
+        |-- vss-web-extension-sdk
+    |-- package.json
+    |-- vss-extension.json
     ```
 
 You're now ready to package, publish, and test your extension.
@@ -162,23 +162,23 @@ All extensions, including extensions from Microsoft, live under a publisher. Any
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-   	![Create publisher](media/create-publisher.png)
+       ![Create publisher](media/create-publisher.png)
 
     >[!NOTE]
     >Remember this ID. You need to set it in the manifest file of your extension.
 
-You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll need to return here after you have packaged your extension.
+You're now ready to package your extension and publish (upload) it to the Marketplace. Keep this browser window open as you'll need to return here after you package your extension.
 
 #### Package your extension
 
 1. Open your extension manifest file (`vss-extension.json`) and set the value of the `publisher` field to the ID of your publisher. For example:
     ```json
-	{
-		...
-		"id": "my-first-extension",
-		"publisher": "AnnetteNielsen",
-		...
-	}
+    {
+        ...
+        "id": "my-first-extension",
+        "publisher": "AnnetteNielsen",
+        ...
+    }
     ```     
 
 2. From a command prompt, run the TFX tool's packaging command from your extension directory:
@@ -186,7 +186,7 @@ You're now ready to package your extension and publish (upload) it to the Market
    tfx extension create
    ```
 
-3. Once this completes you see a message indicating your extension has been successfully packaged:
+3. Once this completes, you see a message indicating your extension has been successfully packaged:
    ```
    === Completed operation: create extension ===
    - VSIX: C:\my-first-extension\AnnetteNielsen.my-first-extension-1.0.0.vsix
@@ -197,11 +197,11 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 #### Upload your extension
 
-1. From the [management portal](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
+1. From the management portal,](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
 
 2. Tap **New Extension** and select **Azure DevOps**:
-   	
-	![Upload new extension for Azure DevOps Services or TFS](media/upload-new-extension.png)
+       
+    ![Upload new extension for Azure DevOps Services or TFS](media/upload-new-extension.png)
 
 3. Select the link in the center of the Upload dialog to open a browse dialog. 
 
@@ -209,7 +209,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
    ![Upload new extension for Azure DevOps Services or TFS](media/upload-new-extension2.png)
 
-5. After a few seconds your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
+5. After a few seconds, your extension appears in the list of published extensions. Don't worry, the extension is only visible to you.
 
    ![Upload new extension for Azure DevOps Services or TFS](media/published-extension.png)
 
@@ -217,7 +217,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 To test an extension, it must be installed to an organization in Azure DevOps Services. Installing requires being the owner of the organization (or having the necessary permissions). Because your extension is private, it must first be shared with the organization you want to install it to.
 
-1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare** .
+1. From the management portal, select your extension from the list, right-click, and choose **Share/Unshare**.
 
    ![Upload new extension for Azure DevOps Services or TFS](media/share-menu.png)
 
@@ -262,26 +262,23 @@ Your extension contributed a view named "My Hub" to the project-level Code area.
    
 ## Debugging your extension
 
-In order to debug the extension using Visual Studio or Browser Developer Tools and speed up the development without re-deploying extension each time you change source code, you need change manifest adding `baseUri` property:
+In order to debug the extension using Visual Studio or Browser Developer Tools and speed up the development without redeploying extension each time you change source code, you need change manifest adding `baseUri` property:
 ```json
 {
-	...
-	"baseUri": "https://localhost:44300",
-	...
+    ...
+    "baseUri": "https://localhost:44300",
+    ...
 }
 ```     
 
-This tells Azure DevOps Services to load the extension from your local web server instance (e.g. IISExpress in Visual Studio).
-After changing manifest you need to deploy and install this debugging extension only once.
+This action tells Azure DevOps Services to load the extension from your local web server instance (for example, IISExpress in Visual Studio).
+After you change the manifest, deploy and install this debugging extension only once.
 
 > [!NOTE]
 > You have to run local web server in SSL mode, because Azure DevOps Services demands that web page is served from a secure source otherwise you obtain an error in browser console during the extension IFRAME loading.
 
 
 ## Next steps
-
-> [!div class="nextstepaction"]
-> [See more tutorials](tutorials.md)
 
 > [!div class="nextstepaction"]
 > [Explore the samples](https://github.com/Microsoft/vsts-extension-samples/)
