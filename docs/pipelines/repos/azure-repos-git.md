@@ -188,7 +188,7 @@ To update the permissions of build access token:
 
 [!INCLUDE [ci-triggers](includes/ci-triggers.md)]
 
-## Pull request validation
+## PR triggers
 
 Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
