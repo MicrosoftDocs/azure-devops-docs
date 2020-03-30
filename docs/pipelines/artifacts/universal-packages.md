@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/26/2020
+ms.date: 03/30/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -116,7 +116,8 @@ steps:
     vstsPackageVersion: 1.0.0
     downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
-> Note: When using Azure Artifacts with the Azure DevOps extension 0.14.0 and up, you must provide the project id in the vstsFeed path. For example:
+> [!NOTE]
+> When using Azure Artifacts with the Azure DevOps extension 0.14.0 and up, you must provide the project id in the vstsFeed path. use the following snippet for guidance: 
 
 ```yaml
 steps:
