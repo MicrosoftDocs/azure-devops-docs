@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 description: Visual Studio Team Services (VSTS) release notes for Sprint 123 Update on September 15, 2017 with multi-phase builds and new Queries experience.

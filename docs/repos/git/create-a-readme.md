@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Tips, advice, and suggestions on how to create a great readme file for your Git repo.
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

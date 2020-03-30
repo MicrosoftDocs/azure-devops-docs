@@ -2,8 +2,6 @@
 title: Download GitHub Release task
 description: Download assets from your GitHub release as part of your pipeline
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.manager: gopinach
 ms.author: ashkir
 author: ashokirla

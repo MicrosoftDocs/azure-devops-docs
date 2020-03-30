@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -58,6 +56,7 @@ Learn how to perform these tasks:
 > * Verify the customizations you made  
 > * Change the process used by a project 
  
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 

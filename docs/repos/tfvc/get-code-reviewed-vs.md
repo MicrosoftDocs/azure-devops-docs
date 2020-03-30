@@ -4,9 +4,7 @@ titleSuffix: Azure Repos
 description: Get a code review from your team using Visual Studio
 ms.assetid: 115cc8ee-e3b3-4bb4-a50f-604a75d52a8e
 toc: show
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: tutorial

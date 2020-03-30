@@ -3,13 +3,8 @@ title: Microsoft-hosted agents for Azure Pipelines
 ms.custom: seodec18
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 02/25/2020
+ms.date: 03/26/2020
 monikerRange: azure-devops
 ---
 
@@ -86,7 +81,7 @@ Microsoft-hosted agents:
 * Provide a free tier:
   * Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month. [Contact us](https://azure.microsoft.com/support/devops/) to get your free tier limits increased.
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
-* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/windows/sizes-general#dsv2-series)
+* Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
 * (Linux only) Run steps in a cgroup that offers 6 GB of physical memory and 13 GB of total memory
 
@@ -114,8 +109,14 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
+### To identify the possible IP ranges for your Microsoft-hosted agents
+
+1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
+2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
+3. Identify the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >

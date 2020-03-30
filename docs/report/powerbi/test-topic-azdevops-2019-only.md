@@ -3,10 +3,8 @@ title: azure-devops-2019  test topic
 titleSuffix: Azure DevOps 
 description: azure-devops-2019   
 robots: NOINDEX, NOFOLLOW
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

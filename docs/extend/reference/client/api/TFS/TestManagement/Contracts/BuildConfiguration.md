@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts BuildConfiguration API | Extensions for Azure DevOps Services
 description: Data representation of a build configuration.
 ms.assetid: 71466953-0d08-4566-9948-1fa1cdbeafcf
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

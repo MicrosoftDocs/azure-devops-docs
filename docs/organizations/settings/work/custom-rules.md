@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
@@ -149,6 +147,8 @@ For custom work item types you can specify the System.State. For default work it
 
 
 ## Related articles
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)

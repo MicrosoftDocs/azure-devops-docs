@@ -1,11 +1,9 @@
 ---
 title: Start Using Azure Artifacts. 
 description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/03/2019
@@ -30,7 +28,7 @@ This article guides you through the sign-up process for Azure Artifacts. Azure A
 Ensure that the following statements are true:
 
 - [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
-- You have [Project Collection Administrator or organization Owner permissions](../organizations/accounts/faq-add-delete-users.md#find-owner)
+- You have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md)
 
 ::: moniker-end
 
@@ -69,7 +67,7 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 
 ## Billing and free monthly usage
 
-Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn’t billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
+Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## View storage used
 
@@ -137,6 +135,6 @@ A: If you remove your Azure Subscription from your Azure DevOps organization, yo
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers from before May 6, 2019 aren't charged for Artifacts storage until May 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on May 6, 2020, you’re charged under the new storage model.
+A: Customers from before May 6, 2019 aren't charged for Artifacts storage until May 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on May 6, 2020, you're charged under the new storage model.
 
 ::: moniker-end

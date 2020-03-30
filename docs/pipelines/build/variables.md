@@ -3,10 +3,7 @@ title: Predefined variables
 ms.custom: seodec18
 description: A comprehensive list of all available predefined variables
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 3A1C529F-DF6B-470A-9047-2758644C3D95
-ms.manager: mijacobs
 ms.author: jukullam
 author: juliakm
 ms.date: 01/30/2020
@@ -55,7 +52,7 @@ variable. You can do this at the step or task level:
 
 ```yaml
 steps:
- - bash: echo This script could use $SYSTEM_ACCESSTOKEN
+  - bash: echo This script could use $SYSTEM_ACCESSTOKEN
     env:
       SYSTEM_ACCESSTOKEN: $(System.AccessToken)
   - powershell: Write-Host "This is a script that could use $env:SYSTEM_ACCESSTOKEN"

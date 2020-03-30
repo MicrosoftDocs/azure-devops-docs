@@ -3,11 +3,9 @@ title: Disconnect organization from Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/14/2019
@@ -58,7 +56,7 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting, disconnecting, or changing your Azure AD, see the [FAQ](faq-azure-access.md#connect-disconnect-or-change-azure-ad).
+For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](faq-azure-access.md#faq-connect).
 
 ## Related articles
 

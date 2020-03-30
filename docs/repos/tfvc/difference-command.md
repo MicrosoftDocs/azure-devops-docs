@@ -3,9 +3,7 @@ title: Difference Command
 titleSuffix: Azure Repos
 description: Difference Command
 ms.assetid: d7bf3b53-b0b8-4b57-a9ce-5a475b715e1d
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

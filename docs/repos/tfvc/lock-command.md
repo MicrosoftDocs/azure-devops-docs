@@ -3,9 +3,7 @@ title: Use Lock Command to lock/unlock a TFVC file/folder
 titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

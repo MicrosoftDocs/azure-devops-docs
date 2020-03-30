@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TeamProjectReference API | Extensions for Azure DevOps Services
 description: Represents a shallow reference to a TeamProject.
 ms.assetid: 6218ff01-01ba-8494-488f-4c2678a1713c
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

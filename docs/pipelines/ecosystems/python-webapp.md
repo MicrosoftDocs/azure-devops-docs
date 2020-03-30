@@ -1,8 +1,6 @@
 ---
 title: Build and deploy Python web apps
 description: Use CI/CD with Azure Pipelines to automatically build, test, and deploy Python web apps to Azure App Service on Linux
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.assetid: 6f79a177-702f-4fb4-b714-bfdd0ecf1d84
 ms.manager: barbkess
@@ -255,7 +253,7 @@ Then we have the task to upload the artifacts.
 - We then use the [AzureWebApp](../tasks/deploy/azure-rm-web-app.md) task to deploy the *.zip* file to the App Service you identified by the `azureServiceConnectionId` and `webAppName` variables at the beginning of the pipeline file. Paste the following code at the end of the file:
 
     ```yaml
-    jobs:
+  jobs:
   - deployment: DeploymentJob
     pool:
       vmImage: $(vmImageName)

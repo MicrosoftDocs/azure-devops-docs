@@ -3,10 +3,7 @@ title: Variable groups for Azure Pipelines and TFS
 ms.custom: seodec18
 description: Share common variables across pipelines using variable groups
 ms.assetid: A8AA9882-D3FD-4A8A-B22A-3A137CEDB3D7
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/05/2019
@@ -30,7 +27,7 @@ that might need to be [passed into a YAML pipeline](variable-groups.md?tabs=yaml
 ## Create a variable group
 
 #### [YAML](#tab/yaml/)
-Variable groups can’t be created in YAML, but they can be used as described in [Use a variable group](#use-a-variable-group).
+Variable groups can't be created in YAML, but they can be used as described in [Use a variable group](#use-a-variable-group).
 
 #### [Classic](#tab/classic/)
 1. Open the **Library** tab to see a list of existing variable groups for your project.
@@ -181,8 +178,48 @@ variables:
   value: 'value of my-bare-variable'
 ```
 
-Next you must authorize the variable group (this is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
-to your repository could extract the contents of secrets in the variable group).
+To reference a variable group, you can use macro syntax or a runtime expression. In this example, the group `my-variable-group` has a variable named `myhello`.
+
+```yaml
+variables:
+- group: my-variable-group
+
+steps:
+- script: echo $(myhello) # uses macro syntax
+- script: echo $[variables.myhello] # uses runtime expression
+```
+
+You can reference multiple variable groups in the same pipeline. 
+
+```yaml
+variables:
+- group: my-first-variable-group
+- group: my-second-variable-group
+```
+
+You can also reference a variable group in a template. In the template `variables.yml`, the group `my-variable-group` is referenced. The variable group includes a variable named `myhello`. 
+
+```yaml
+# variables.yml
+variables:
+- group: my-variable-group
+```
+In this pipeline, the variable `$(myhello)` from the variable group `my-variable-group` included in `variables.yml` is referenced.
+
+```yaml
+# azure-pipeline.yml
+stages:
+- stage: MyStage
+  variables:
+  - template: variables.yml
+  jobs:
+  - job: Test
+    steps:
+    - script: echo $(myhello)
+```
+
+To work with variable groups, you must authorize the group. This is a security feature: if you only had to name the variable group in YAML, then anyone who can push code
+to your repository could extract the contents of secrets in the variable group.
 To do this, or if you encounter a resource authorization error in your build,
 use one of the following techniques:
 

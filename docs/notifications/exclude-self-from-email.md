@@ -3,8 +3,6 @@ title: Prevent notification emails to yourself from events
 titleSuffix: Azure DevOps 
 description: Learn how to exclude the initiator of an event in Azure DevOps Services from receiving notification emails
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

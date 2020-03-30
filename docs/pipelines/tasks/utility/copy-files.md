@@ -2,10 +2,7 @@
 title: Copy Files task
 description: Copy files between folders with match patterns when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: BB8401FB-652A-406B-8920-4BD8977BFE68
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
@@ -92,9 +89,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -106,8 +103,8 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -119,9 +116,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
-     !ConsoleApplication1\**\ClassLibrary*\**
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+      !ConsoleApplication1\**\ClassLibrary*\**
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -202,8 +199,8 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: |
-     **/*
-     !.git/**/*
+      **/*
+      !.git/**/*
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 

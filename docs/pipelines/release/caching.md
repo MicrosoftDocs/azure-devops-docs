@@ -2,12 +2,8 @@
 title: Pipeline caching
 description: Improve pipeline performance by caching files, like dependencies, between runs
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.manager: adandree
-ms.author: rabououn
-author: ramiMSFT
 ms.date: 02/26/2020
 monikerRange: azure-devops
 ---
@@ -98,7 +94,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |
-|7zip    | Recommended | No | No |
+|7-Zip    | Recommended | No | No |
 
 The above executables need to be in a folder listed in the PATH environment variable.
 Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
@@ -198,8 +194,8 @@ steps:
   inputs:
     key: 'gems | "$(Agent.OS)" | my.gemspec'
     restoreKeys: | 
-       gems | "$(Agent.OS)"
-       gems
+      gems | "$(Agent.OS)"
+      gems
     path: $(BUNDLE_PATH)
   displayName: Cache gems
 
@@ -279,8 +275,8 @@ steps:
   inputs:
     key: 'maven | "$(Agent.OS)" | **/pom.xml'
     restoreKeys: |
-       maven | "$(Agent.OS)"
-       maven
+      maven | "$(Agent.OS)"
+      maven
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
@@ -302,8 +298,8 @@ steps:
   inputs:
     key: 'nuget | "$(Agent.OS)" | packages.lock.json'
     restoreKeys: |
-       nuget | "$(Agent.OS)"
-       nuget
+      nuget | "$(Agent.OS)"
+      nuget
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
@@ -327,8 +323,8 @@ steps:
   inputs:
     key: 'npm | "$(Agent.OS)" | package-lock.json'
     restoreKeys: |
-       npm | "$(Agent.OS)"
-       npm
+      npm | "$(Agent.OS)"
+      npm
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -355,12 +351,35 @@ steps:
   inputs:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-       yarn | "$(Agent.OS)"
-       yarn
+      yarn | "$(Agent.OS)"
+      yarn
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
 - script: yarn --frozen-lockfile
+```
+
+## PHP/Composer
+
+For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
+
+### Example
+
+```yaml
+variables:
+  COMPOSER_CACHE_DIR: $(Pipeline.Workspace)/.composer
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'composer | "$(Agent.OS)" | composer.lock'
+    restoreKeys: |
+      composer | "$(Agent.OS)"
+      composer
+    path: $(COMPOSER_CACHE_DIR)
+  displayName: Cache composer
+
+- script: composer install
 ```
 
 ## Known issues and feedback

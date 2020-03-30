@@ -2,10 +2,8 @@
 title: Use the Combo Control | Extensions for Azure DevOps Services
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 03575E92-8FA7-7DC6-5699-2E5811A332CA
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

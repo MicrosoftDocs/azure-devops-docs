@@ -1,13 +1,8 @@
 ---
 title: Build and test Go projects 
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: azooinmyluggage
 ms.custom: seodec18
 ms.date: 01/28/2020

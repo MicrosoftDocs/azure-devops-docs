@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestRunSubstate API | Extensions for Azure DevOps Services
 description: Data representation of a test run sub state.
 ms.assetid: 554efae7-3a4f-46e4-28a6-84aa75bfbb5c
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -1,11 +1,9 @@
 ---
 title: DevOps with Azure DevOps Services for Java - Hands-on-Labs
 description: DevOps with Azure DevOps Services for Java - Hands-on-Labs
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel 
 author: davidstaheli
 ms.date: 01/25/2018

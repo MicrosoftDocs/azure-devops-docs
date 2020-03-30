@@ -4,11 +4,6 @@ ms.custom: seodec18
 description: Understand Build and Release tasks in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: conceptual
 ms.assetid: 3293E200-6B8C-479D-9EA0-B3E82CE1450F
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 12/06/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -147,7 +142,7 @@ steps:
     architecture: 'x64'
 - task: PublishTestResults@2
   inputs:
-   testResultsFiles: "**/TEST-*.xml"
+    testResultsFiles: "**/TEST-*.xml"
   condition: succeededOrFailed()
 ```
 
@@ -259,13 +254,13 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-  # Node install
-  - task: NodeTool@0
-    displayName: Node install
-    inputs:
-      versionSpec: '6.x' # The version we're installing
-  # Write the installed version to the command line
-  - script: which node
+# Node install
+- task: NodeTool@0
+  displayName: Node install
+  inputs:
+    versionSpec: '6.x' # The version we're installing
+# Write the installed version to the command line
+- script: which node
 ```
 
 [Create a new build pipeline](../create-first-pipeline.md) and run it. Observe how the build is run.

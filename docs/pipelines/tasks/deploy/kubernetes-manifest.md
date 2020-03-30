@@ -2,13 +2,11 @@
 title: Kubernetes manifest task
 description: Bake and deploy manifests to Kubernetes clusters
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 31e3875c-c9ef-4c11-8b86-4b4defe84329
 ms.manager: atulmal
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 11/06/2019
+ms.date: 02/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -605,6 +603,12 @@ steps:
     kubernetesServiceConnection: someK8sSC
     namespace: default
 ```
+
+## Troubleshooting
+
+### My Kubernetes cluster is behind a firewall and I am using hosted agents. How can I deploy to this cluster?
+
+You can grant hosted agents access through your firewall by whitelisting the IP addresses for the hosted agents. For more details, see [Agent IP ranges](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops#agent-ip-ranges)
 
 ## Open source
 

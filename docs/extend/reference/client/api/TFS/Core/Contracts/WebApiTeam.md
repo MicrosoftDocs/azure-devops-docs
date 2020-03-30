@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts WebApiTeam API | Extensions for Azure DevOps Services
 description: Data representation of a Web API team.
 ms.assetid: b46dbdab-7d19-8a5b-cc5c-196fa50a55e1
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
