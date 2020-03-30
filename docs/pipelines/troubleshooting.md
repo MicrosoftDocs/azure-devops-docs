@@ -49,7 +49,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ### Overridden YAML trigger setting
 
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#override-yaml-triggers).
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, check that setting.
 
 ### Using pull request triggers with Azure Repos
 

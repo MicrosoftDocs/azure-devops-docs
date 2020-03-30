@@ -25,7 +25,7 @@ This setting is always true on non-Windows agents.
 
 ### Checkout path
 
-# [YAML](#tab/yaml)
+# [YAML](#tab/yaml/))
 
 ::: moniker range="azure-devops-2019"
 
@@ -62,7 +62,7 @@ YAML pipelines are not available in TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
+# [Classic](#tab/classic/)
 
 This setting is not configurable in the classic editor. Your source code will be checked out into a directory called `s`, which is relative to `$(Agent.BuildDirectory)`. For example: if `$(Agent.BuildDirectory)` is `C:\agent\_work\1`, then the source code will be checked out into `C:\agent\_work\1\mycustompath`.
 
@@ -70,7 +70,7 @@ This setting is not configurable in the classic editor. Your source code will be
 
 ### Submodules
 
-# [YAML](#tab/yaml)
+# [YAML](#tab/yaml/)
 
 ::: moniker range="azure-devops"
 
@@ -101,11 +101,11 @@ YAML pipelines are not available in TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
+# [Classic](#tab/classic/)
 
 You can configure the **Submodules** setting from the properties of the **Get sources** task in your pipeline if you want to download files from [submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-![GitHub options](media/github/github-options.png)
+![GitHub options](../media/github/github-options.png)
 
 ---
 
@@ -153,7 +153,7 @@ Use that variable to populate the secret in the above Git command.
 
 You may want to limit how far back in history to download. Effectively this results in `git fetch --depth=n`. If your repository is large, this option might make your build pipeline more efficient. Your repository might be large if it has been in use for a long time and has sizeable history. It also might be large if you added and later deleted large files.
 
-# [YAML](#tab/yaml)
+# [YAML](#tab/yaml/)
 
 ::: moniker range="azure-devops"
 
@@ -184,11 +184,11 @@ YAML pipelines are not available in TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
+# [Classic](#tab/classic/)
 
 You can configure the **Shallow fetch** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](media/github/github-options.png)
+![GitHub options](../media/github/github-options.png)
 
 ---
 
@@ -211,7 +211,7 @@ You may want to skip fetching new commits. This option can be useful in cases wh
 
 * Use a build pipeline to just run automation (for example some scripts) that do not depend on code in version control.
 
-# [YAML](#tab/yaml)
+# [YAML](#tab/yaml/)
 
 You can configure the **Don't sync sources** setting in the [Checkout](../../yaml-schema.md#checkout) step of your pipeline, by setting `checkout: none`.
 
@@ -228,11 +228,11 @@ YAML pipelines are not available in TFS.
 
 ::: moniker-end
 
-# [Classic](#tab/classic)
+# [Classic](#tab/classic/)
 
 Select the **Don't sync sources** setting from the properties of the **Get sources** task in your pipeline.
 
-![GitHub options](media/github/github-options.png)
+![GitHub options](../media/github/github-options.png)
 
 ---
 
@@ -241,7 +241,7 @@ Select the **Don't sync sources** setting from the properties of the **Get sourc
 
 ### Clean build
 
-[!INCLUDE [include](includes/build-clean-intro.md)]
+[!INCLUDE [include](build-clean-intro.md)]
 
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../../agents/hosted.md) because you'll get a new agent every time.
@@ -306,7 +306,7 @@ YAML pipelines are not available in TFS.
 # [Classic](#tab/classic/)
 Select the **Clean** setting from the properties of the **Get sources** task in your pipeline and select one of the following options.
 
-![GitHub options](media/github/github-clean-sources.png)
+![GitHub options](../media/github/github-clean-sources.png)
 
 * **Sources**: The build pipeline performs an undo of any changes in `$(Build.SourcesDirectory)`. More specifically, the following Git commands are executed prior to fetching the source.
   ```
@@ -332,11 +332,11 @@ You may want to label your source code files to enable your team to easily ident
 
 You can't currently configure this setting in YAML but you can in the classic editor. When editing a YAML pipeline, you can access the classic editor by choosing either **Triggers** from the YAML editor menu.
 
-![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 From the classic editor, choose **YAML**, choose the **Get sources** task, and then configure the desired properties there.
 
-![Git options](media/pipelines-options-for-git/yaml-pipeline-git-options.png)
+![Git options](../media/pipelines-options-for-git/yaml-pipeline-git-options.png)
 
 ::: moniker-end
 
@@ -350,7 +350,7 @@ YAML pipelines are not available in TFS.
 
 You can configure the **Tag sources** setting from the properties of the **Get sources** task in your pipeline.
 
- ![Git options](media/github/github-options.png)
+ ![Git options](../media/github/github-options.png)
 
 ---
 
@@ -367,5 +367,3 @@ The build pipeline labels your sources with a [Git tag](https://git-scm.com/book
 Some build variables might yield a value that is not a valid label. For example, variables such as `$(Build.RequestedFor)` and `$(Build.DefinitionName)` can contain white space. If the value contains white space, the tag is not created.
 
 After the sources are tagged by your build pipeline, an artifact with the Git ref `refs/tags/{tag}` is automatically added to the completed build. This gives your team additional traceability and a more user-friendly way to navigate from the build to the code that was built.
-
-::: moniker range="azure-devops"

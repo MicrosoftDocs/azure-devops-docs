@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 03/39/2020
+ms.date: 03/29/2020
 monikerRange: azure-devops
 ---
 
@@ -125,7 +125,7 @@ Azure Pipelines must be granted access to your repositories to trigger their bui
 
 There are 3 authentication types for granting Azure Pipelines access to your GitHub repositories while creating a pipeline.
 
-| Authentication type            | Builds run using              | Works with [GitHub Checks](https://developer.github.com/v3/checks/) |
+| Authentication type            | Pipelines run using              | Works with [GitHub Checks](https://developer.github.com/v3/checks/) |
 |--------------------------------|-------------------------------|-----|
 | 1. [GitHub App](#github-app-authentication) | The Azure Pipelines identity  | Yes |
 | 2. [OAuth](#oauth-authentication)           | Your personal GitHub identity | No  |
@@ -280,6 +280,7 @@ pr:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
@@ -288,6 +289,8 @@ pr:
 > To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
 
 ::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
 
 >[!IMPORTANT]
 >When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline.
@@ -368,7 +371,6 @@ For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAM
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-> For more information, see [Override YAML triggers](../repos/github.md#override-yaml-triggers).
 
 ::: moniker-end
 
@@ -380,7 +382,7 @@ YAML pipelines are not yet available on TFS.
 
 Select the **Pull request validation** trigger and check the **Enable pull request validation** check box to enable builds on pull requests.
 
-![Pull request trigger](media/triggers/github-pr-validation-trigger.png)
+![Pull request trigger](media/github-pr-validation-trigger.png)
 
 You can specify branches to include and exclude.
 Select a branch name from the drop-down menu and select **Include** or **Exclude** as appropriate.
@@ -507,9 +509,9 @@ Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.m
 
 Depending on the authentication type and ownership of the repository, specific permissions are required.
 
-- If you're using the GitHub App, see [Where to install the GitHub App](#where-to-install-the-github-app).
-- If you're using OAuth, see [Repository permissions for OAuth authentication](#repository-permissions-for-oauth-authentication).
-- If you're using PATs, see [Repository permissions for Personal access token (PAT) authentication](#repository-permissions-for-personal-access-token-pat-authentication).
+- If you're using the GitHub App, see [GitHub App authentication](#github-app-authentication).
+- If you're using OAuth, see [OAuth authentication](#oauth-authentication).
+- If you're using PATs, see [Personal access token (PAT) authentication](#personal-access-token-pat-authentication).
 
 ### I understand that the GitHub app is the recommended integration with Azure Pipelines. How do I switch my classic build pipeline to use GitHub app instead of OAuth?
 

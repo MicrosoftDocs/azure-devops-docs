@@ -114,7 +114,7 @@ trigger:
 When you specify paths, you also need to explicitly specify branches to trigger on. 
 
 > [!NOTE]
-> You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
+> You cannot use [variables](../../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
 ::: moniker-end
 
@@ -175,7 +175,7 @@ Select **Enable continuous integration** on the **Triggers** tab to enable this 
 
 Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
 
-> You can batch changes when your code is in Git in the project or on GitHub. This option is not available if your code is in a remote Git repo or in Subversion.
+> You can batch changes and build them together.
 
 ### Branch filters
 
@@ -199,7 +199,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **Azure Pipelines, TFS 2017.3 and newer**
 
-![ci trigger git branches](media/triggers/ci-trigger-git-branches-neweditor.png)
+![ci trigger git branches](../media/triggers/ci-trigger-git-branches-neweditor.png)
 
 ::: moniker-end
 
@@ -207,7 +207,7 @@ For example, you want your build to be triggered by changes in master and most, 
 
 **TFS 2017.1 and older versions**
 
-![ci trigger git branches](media/triggers/ci-trigger-git-branches.png)
+![ci trigger git branches](../media/triggers/ci-trigger-git-branches.png)
 
 ::: moniker-end
 
@@ -217,13 +217,13 @@ For example, you want your build to be triggered by changes in master and most, 
 
 ::: moniker range="<= azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI. This is supported for commits to Azure Repos Git and GitHub.
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `***NO_CI***` in the commit message of the HEAD commit and Azure Pipelines will skip running CI.
 
 ::: moniker-end
 
 ::: moniker range="> azure-devops-2019"
 
-You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below. This is supported for commits to Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
 
 - `[skip ci]` or `[ci skip]`
 - `skip-checks: true` or `skip-checks:true`
