@@ -2,11 +2,9 @@
 title: Use @mentions in work items and pull requests 
 titleSuffix: Azure DevOps 
 description: Alert team members using the @mention control in work items and pull requests 
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

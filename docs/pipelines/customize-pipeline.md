@@ -2,8 +2,6 @@
 title: Customize your pipeline
 ms.custom: seodec18
 description: Step-by-step tutorial to customize a pipeline
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: b3a9043e-aa64-4824-9999-afb2be72f141
 ms.manager: jepling
@@ -38,16 +36,16 @@ A pipeline is defined using a YAML file in your repo. Usually, this file is name
       vmImage: 'Ubuntu-16.04'
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: 'pom.xml'
-          mavenOptions: '-Xmx3072m'
-          javaHomeOption: 'JDKVersion'
-          jdkVersionOption: '1.8'
-          jdkArchitectureOption: 'x64'
-          publishJUnitResults: false
-          testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'package'
+    - task: Maven@3
+      inputs:
+        mavenPomFile: 'pom.xml'
+        mavenOptions: '-Xmx3072m'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.8'
+        jdkArchitectureOption: 'x64'
+        publishJUnitResults: false
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        goals: 'package'
    ```
 
    > [!Note]
@@ -185,16 +183,16 @@ To build a project using different versions of that language, you can use a `mat
       vmImage: $(imageName)
 
     steps:
-      - task: Maven@3
-        inputs:
-          mavenPomFile: "pom.xml"
-          mavenOptions: "-Xmx3072m"
-          javaHomeOption: "JDKVersion"
-          jdkVersionOption: $(jdk_version)
-          jdkArchitectureOption: "x64"
-          publishJUnitResults: true
-          testResultsFiles: "**/TEST-*.xml"
-          goals: "package"
+    - task: Maven@3
+      inputs:
+        mavenPomFile: "pom.xml"
+        mavenOptions: "-Xmx3072m"
+        javaHomeOption: "JDKVersion"
+        jdkVersionOption: $(jdk_version)
+        jdkArchitectureOption: "x64"
+        publishJUnitResults: true
+        testResultsFiles: "**/TEST-*.xml"
+        goals: "package"
     ```
 
 * Select **Save** and then confirm the changes to see your build run three jobs on three different platforms and SDKs.

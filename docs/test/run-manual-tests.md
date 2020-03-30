@@ -2,10 +2,8 @@
 title: Run manual tests
 description: Test tools - Run manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: 616919f3-7339-4813-9dcf-82ead3476b1a
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

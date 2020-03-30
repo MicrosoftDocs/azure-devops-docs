@@ -3,22 +3,20 @@ title: Buy CI/CD Azure Pipelines
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to pay for more parallel jobs in Azure Pipelines
-ms.prod: devops
 ms.technology: devops-billing
 ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/18/2020
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Buy CI/CD for Azure DevOps
+# Buy CI/CD for Azure DevOps
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this quickstart, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
+In this article, learn how to buy self-hosted or Microsoft-hosted CI/CD and change your paid Azure Pipelines capacity.
 
 With Azure Pipelines, you can run builds and deploy releases by using the Microsoft-hosted agents, your own machines, or both.
 We offer a *free tier* for each. The *free tier* includes:
@@ -59,7 +57,7 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 ## Prerequisites
 
 * [Billing must be set up for your organization](set-up-billing-for-your-organization-vs.md)
-* You need [Project Collection Administrator or organization Owner permissions](../accounts/faq-add-delete-users.md#find-owner)
+* You need [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md)
 
 ## Increase quantity of CI/CD
 

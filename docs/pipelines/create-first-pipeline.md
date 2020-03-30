@@ -2,14 +2,11 @@
 title: Create your first pipeline
 ms.custom: seodec18
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 02/14/2020
+ms.date: 03/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -154,7 +151,7 @@ Learn more about [working with JavaScript](ecosystems/javascript.md) in your pip
 
 ## Clone a pipeline
 
-If your new pipeline can be created by copying another pipeline, follow the instructions in this section.
+If your new pipeline can be created by copying another pipeline in the same project, follow the instructions in this section. If your pipeline is in another project, you can use [import/export](#export-and-import-a-pipeline) to copy the pipeline.
 
 #### [YAML](#tab/yaml/)
 
@@ -175,6 +172,61 @@ If your new pipeline can be created by copying another pipeline, follow the inst
     ![Clone pipeline menu](media/get-started-designer/clone-pipeline.png)
 
 3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
+
+* * *
+
+
+## Export and Import a pipeline
+
+You can create a new pipeline by exporting an existing one and then importing it. This is especially useful in cases where the new pipeline has to be created in a separate project.
+
+#### [YAML](#tab/yaml/)
+
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) of the pipeline that you want to export.
+
+2. Choose **...** and select **Export**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Pipeline details](get-started/media/select-export-pipeline.png)
+
+3. When prompted, save the JSON file to your local machine. The browser will save the file in the download directory as per your browser settings.
+
+4. To import a pipeline, [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipelines landing page](get-started/multi-stage-pipelines-experience.md#pipelines-landing-page) in your project.
+
+5. Choose **...** and select **Import**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Pipeline details](get-started/media/select-import-pipeline.png)
+
+6. You will now be prompted to select a JSON file to import its contents. Browse to and select the JSON file that you previously exported.
+
+    > [!div class="mx-imgBorder"]
+    > ![upload JSON](get-started/media/import-pipeline-dialogue.png)
+
+7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+
+#### [Classic](#tab/classic/)
+
+You can also create new build or release definitions by exporting an existing one and then importing it. This is especially useful in cases where the new definition has to be created in a separate project.
+
+1. Navigate to the pipeline details page for your pipeline. 
+
+2. Choose **...** and select **Export**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Export pipeline menu](get-started/media/classic-export-definition.png)
+
+3. When prompted, save the JSON file in your local machine. The browser will save the file in the download directory as per your browser settings.
+
+4. To import the pipeline, navigate to the **Builds** or **Releases** page in your project. Choose **+New** and select the corresponding import pipeline option.
+
+    > [!div class="mx-imgBorder"]
+    > ![Import pipeline menu](get-started/media/classic-import-pipeline.png)
+
+5. You will now be prompted to select a JSON file to import its contents. Browse to and select the JSON file that you previously exported.
+
+7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+
 
 * * *
 
@@ -671,7 +723,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
    ::: moniker range="azure-devops-2019"
 
    > [!div class="mx-imgBorder"] 
-   > ![build summary powershell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
+   > ![Build a summary PowerShell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
 
    ::: moniker-end
 

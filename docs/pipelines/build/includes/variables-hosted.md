@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: jukullam
@@ -335,6 +334,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <li>TFVC repo branch: <code>$/teamproject/main</code></li>
 <li>TFVC repo gated check-in: <code>Gated_2016-06-06_05.20.51.4369;username@live.com</code></li>
 <li>TFVC repo shelveset build: <code>myshelveset;username@live.com</code></li>
+<li>When your pipeline is triggered by a tag: <code>refs/tags/your-tag-name</code></li>
 </ul>
 When you use this variable in your build number format, the forward slash characters (<code>/</code>) are replaced with underscore characters <code>&#095;</code>).
 <br><br>

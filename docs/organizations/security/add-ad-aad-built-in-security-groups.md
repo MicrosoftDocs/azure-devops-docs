@@ -2,10 +2,8 @@
 title: Add AD/Azure AD groups to security groups 
 titleSuffix: Azure DevOps
 description: Manage large groups of users by adding AD/Azure AD groups to built-in security groups 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

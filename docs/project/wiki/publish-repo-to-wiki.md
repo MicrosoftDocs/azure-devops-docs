@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
@@ -63,7 +61,7 @@ Begin by connecting to your project using a [supported web browser](/azure/devop
 Choose **Overview>Wiki**.
 
 > [!div class="mx-imgBorder"]  
-> ![![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
+> ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
 If you need to switch your team project, choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 

@@ -1,12 +1,10 @@
 ---
 title: Analyze and report on test results
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View the measures, dimensions, and attributes that pertain to reporting on tests results and test runs 
 ms.assetid: 85cbf27b-d908-4fa1-8f72-d9a584922a45
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

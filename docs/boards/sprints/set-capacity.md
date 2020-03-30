@@ -3,10 +3,8 @@ title: Set sprint capacity
 titleSuffix: Azure Boards 
 description: Set team capacity for a sprint or iteration working with Scrum methods
 ms.technology: devops-agile
-ms.prod: devops
 ms.custom: boards-sprints
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

@@ -5,11 +5,6 @@ ms.custom: seodec18
 description: Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 34874DFA-2364-4C1D-A092-B8F67C499AB0
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: rabououn
-author: ramiMSFT
 ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -257,6 +252,8 @@ YAML is not supported in TFS.
 * **Artifact name** argument: Just enter a name that's meaningful to you.
 
 * Use forward slashes in file path arguments so that they work for all agents. Backslashes don't work for macOS and Linux agents.
+
+* Build artifacts are stored on a Windows filesystem, which causes all UNIX permissions to be lost, including the execution bit. You might need to restore the correct UNIX permissions after downloading your artifacts from Azure Pipelines or TFS.
 
 * On Azure Pipelines and some versions of TFS, two different [variables](../build/variables.md) point to the staging directory: `Build.ArtifactStagingDirectory` and `Build.StagingDirectory`. These are interchangeable.
 

@@ -3,9 +3,7 @@ title: Use branches to isolate risk in Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use branches to isolate risk in Team Foundation Version Control
 ms.assetid: d74122a4-6a3d-45fb-82b7-3c1494ed4afd
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

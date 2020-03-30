@@ -3,10 +3,7 @@ title: Service connections in Azure Pipelines & TFS
 ms.custom: seodec18
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/17/2020

@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 monikerRange: ">= tfs-2013"
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

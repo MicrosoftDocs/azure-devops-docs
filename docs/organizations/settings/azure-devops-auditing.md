@@ -3,10 +3,8 @@ title: Access, export, filter audit logs for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started accessing, reviewing, exporting, and filtering audit logs for Azure DevOps.  
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 9F1D0A0F-02D5-4E06-A5EC-C220472A0F66
-ms.manager: mijacobs
 ms.author: chcomley
 author: roferg
 ms.topic: quickstart

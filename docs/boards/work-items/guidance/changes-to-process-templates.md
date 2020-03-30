@@ -3,10 +3,8 @@ title: Changes made to process templates
 titleSuffix: Azure Boards  
 description: Summary of changes made to Agile, Scrum, and CMMI process templates to support updating existing projects after a TFS upgrade  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1541C32C-FD7A-4415-A282-06DF14D1F688 
 ms.topic: reference 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -46,7 +44,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 </td>
 <td>
 <p>Added the <strong>WebLayout</strong> section within the <strong>FORM</strong> section of all work item type (WIT) definitions. This section supports the new work item tracking experience in the web portal. It includes the <strong>SystemControls</strong> section and the new <strong>LinksControlOptions</strong> for managing link relationships.  To learn more, see <a href="../../../reference/process/new-work-item-experience.md" data-raw-source="[New work item experience](../../../reference/process/new-work-item-experience.md)">New work item experience</a>, <a href="../../../reference/xml/weblayout-xml-elements.md" data-raw-source="[WebLayout and Control elements](../../../reference/xml/weblayout-xml-elements.md)">WebLayout and Control elements</a>, and <a href="../../../reference/xml/linkscontroloptions-xml-elements.md" data-raw-source="[LinksControlOptions XML elements (Web form)](../../../reference/xml/linkscontroloptions-xml-elements.md)">LinksControlOptions XML elements (Web form)</a>.</p>
-<p><strong>Note</strong>: When you upgrade an on-premises TFS to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
+<p><strong>Note</strong>: When you upgrade an on-premises Azure DevOps to TFS 2017, the new web form is automatically available when you add projects to a collection. For existing projects, an admin is required to <a href="../../../reference/manage-new-form-rollout.md" data-raw-source="[enable the new form](../../../reference/manage-new-form-rollout.md)">enable the new form</a>. The reason the new form isn&#39;t automatically enabled for existing projects is to prevent overwriting customizations made to existing WIT definitions.</p>
 </td>
 </tr>
 <tr>
@@ -286,7 +284,7 @@ Removed the Sprint type definition and All Sprints query, whose functionality ha
 
 ## Related upgrade notes
 
-To update your existing projects hosted on an on-premises TFS to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
+To update your existing projects hosted on an on-premises Azure DevOps to access new features, [run the Configure Features wizard](../../../reference/configure-features-after-upgrade.md). In the event that you're upgrading from a much earlier version of TFS or you've customized your project, you'll need to make some manual updates.  
 
 See the following resources as they relate to updating your project:  
 

@@ -1,7 +1,6 @@
 ---
 title: Project Welcome pages – Aug 18
 description: VSTS release notes for August 18 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 1d640b87-d9b8-412c-a03c-340d9735d181

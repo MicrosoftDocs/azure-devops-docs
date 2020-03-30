@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 07/05/2017
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # npm
 # Install and publish npm packages, or run an npm command. Supports npmjs.com and authenticated registries like Azure Artifacts.

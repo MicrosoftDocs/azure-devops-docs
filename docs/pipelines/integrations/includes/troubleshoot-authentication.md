@@ -1,9 +1,9 @@
 ---
 ms.topic: include
-ms.prod: devops
 ms.technology: devops-collab
 title: Azure Pipelines with Slack
 ms.manager: bijuv
+ms.manager: mijacobs
 ms.author: atinb
 author: atinb
 ms.date: 02/13/2020

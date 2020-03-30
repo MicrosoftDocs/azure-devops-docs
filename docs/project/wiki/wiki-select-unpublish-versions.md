@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley

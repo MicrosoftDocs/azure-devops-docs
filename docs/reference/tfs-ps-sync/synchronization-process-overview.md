@@ -2,10 +2,8 @@
 title: TFS-Project Server synchronization process overview 
 titleSuffix: TFS 
 description: Understand how the synchronization engine manages the flow of data between Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a34c054a-1361-43ce-962e-bf29ce04ffb2
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/05/2017

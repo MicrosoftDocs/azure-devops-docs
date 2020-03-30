@@ -2,20 +2,21 @@
 title: Import migrate process from on-premises to Azure DevOps
 titleSuffix: Azure DevOps
 description: How to guide for preparing an on-premises collection to importing it to the cloud
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: 829179bc-1f98-49e5-af9f-c224269f7910
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/16/2019
+ms.date: 02/26/2020
 ---
 
 # Validate and import processes
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
+
+This article walks you through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run. If you encounter errors during the process review the [troubleshooting guidance](migration-troubleshooting.md).
+
 
 > [!Note]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)
@@ -26,7 +27,7 @@ ms.date: 12/16/2019
 >
 > With the release of Azure DevOps Server 2019 the TFS Database Import Service has been rebranded to become data migration tool for Azure DevOps. This includes TfsMigrator becoming the data migration tool or migrator for short. This service still works exactly the same as the old Import Service. If you're on an older version of on-premises with TFS as the branding you can still use this feature to migrate to Azure DevOps as long as you upgrade to one of the supported versions. 
 
-This page walks through how to perform all of the necessary preparation work required to get an import to Azure DevOps Services ready to run.  If you encounter errors during the process be sure to review the [troubleshooting](migration-troubleshooting.md).
+
 
 <a id="validate-collection" />
 
@@ -410,14 +411,14 @@ Next you will need to grant access to the Regional Identity Service. You only ne
 
 |    Service                                                 |    IP                                                                                                                         |
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-|    Regional Identity Service - Central United States       |    23.99.230.232, 104.43.253.175, 40.122.66.150, 40.122.117.178, 23.99.212.58, 23.99.214.58, 20.37.139.247, 20.37.138.167, 20.37.138.122                                   |
-|    Regional Identity Service - West Europe                 |    52.232.119.33, 104.46.44.17, 40.114.142.95, 51.144.180.30, 51.145.130.146, 40.113.97.58, 52.232.113.92, 40.74.51.167       |
-|    Regional Identity Service - Australia East              |    13.70.121.123, 52.187.228.246                                                                                              |
-|    Regional Identity Service - Brazil South                |    N\A                                                                                                                        |
-|    Regional Identity Service - India South                 |    104.211.226.91, 104.211.207.31, 40.81.75.134                                                                                             |
-|    Regional Identity Service - Canada Central              |    13.88.230.114, 40.85.244.98, 40.82.185.245                                                                                                |
-|    Regional Identity Service - East Asia (Hong Kong)       |    23.98.36.60, 40.83.79.159, 40.81.28.194   
-|    Regional Identity Service - UK South                    |    51.105.8.98                                                                                               |
+|    Regional Identity Service - Central United States       |    13.89.236.72, 52.165.41.252, 52.173.25.16, 13.86.38.60, 20.45.1.175, 13.86.36.181, 52.158.209.56, 20.37.158.0                                   |
+|    Regional Identity Service - West Europe                 |    52.166.54.85, 13.95.233.212, 52.236.145.119, 52.142.235.223, 52.236.147.103, 23.97.221.25, 52.233.181.148, 52.149.110.153, 51.144.61.32, 52.236.147.236, 40.74.28.0       |
+|    Regional Identity Service - Australia East              |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114, 20.37.194.0                                    |
+|    Regional Identity Service - Brazil South                |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175, 191.235.226.0                    |
+|    Regional Identity Service - India South                 |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252, 20.41.194.0                                                                         |
+|    Regional Identity Service - Canada Central              |    52.237.19.6, 40.82.190.38, 52.228.82.0                                                                                               |
+|    Regional Identity Service - East Asia (Hong Kong)       |    52.175.28.40, 40.81.25.218, 13.94.26.58, 20.189.107.0
+|    Regional Identity Service - UK South                    |    40.81.159.67, 51.104.26.0                                                             |
 
 Next you will need to grant access to the data migration tool for Azure DevOps itself. You only need to grant an exception for the data migration tool instance in the region that you're importing into.  
 
@@ -565,7 +566,7 @@ CREATE USER fabrikam FOR LOGIN fabrikam WITH DEFAULT_SCHEMA=[dbo]
 EXEC sp_addrolemember @rolename='TFSEXECROLE', @membername='fabrikam'
 ```
 > [!NOTE]   
-> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#SSMSProcedure) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
+> Be sure to enable [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15#change-authentication-mode-with-ssms) in SQL Server Management Studio on the VM.  If you do not enable SQL Server and Windows Authentication mode, the import will fail.    
 
 #### Configure the import specification file to target the VM
 

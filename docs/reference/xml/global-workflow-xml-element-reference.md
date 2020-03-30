@@ -2,10 +2,8 @@
 title: Global Workflow XML element reference 
 titleSuffix: TFS
 description: Syntax and usage of the global workflow elements to define data fields and global lists to be shared across several projects  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 9e96bf19-6ba8-4686-91e3-b4aa2a57f6ac
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

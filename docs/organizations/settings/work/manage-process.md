@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Add custom fields, work item types, and more by creating and applying an inherited process to a project  
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6EB45080-22E2-43AD-92F9-77D03D5C136F  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -39,6 +37,7 @@ In this article, learn how to perform these tasks:
 > * Enable or disable a process
 > * Set a process as the default to use when adding projects  
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 

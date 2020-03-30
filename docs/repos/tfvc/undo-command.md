@@ -3,9 +3,7 @@ title: Undo command
 titleSuffix: Azure Repos
 description: Undo command
 ms.assetid: e10ca7c5-98d5-4c51-99fa-74b4eb7ceb49
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: reference

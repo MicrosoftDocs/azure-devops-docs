@@ -2,10 +2,8 @@
 title: Make Agile team progress visible to PM Office
 titleSuffix: TFS
 description: View work progress and resource usage using Team Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 865f7e20-cc67-4279-b625-a27ac3f1e88f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

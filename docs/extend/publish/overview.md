@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Package, publish, & unpublish extensions | Azure DevOps Services
 description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ After writing an Azure DevOps Services extension, the next step is to package it
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that helps users discover and learn about your extension, 
->visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops)
+>visit the [Extension Manifest Reference](../develop/manifest.md#discoveryprops).
 
 ## Publishing Requirements
 
