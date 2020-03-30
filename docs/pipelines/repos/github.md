@@ -235,7 +235,36 @@ After authorizing Azure Pipelines to use a PAT, to later delete it and prevent f
 
 ## CI triggers
 
-[!INCLUDE [ci-triggers](includes/ci-triggers.md)]
+Continuous integration (CI) triggers cause a pipeline to run whenever you push an update to the specified branches or you push  specified tags.
+
+# [YAML](#tab/yaml/)
+
+[!INCLUDE [ci-triggers](includes/ci-triggers1.md)]
+
+[!INCLUDE [ci-triggers](includes/ci-triggers2.md)]
+
+[!INCLUDE [ci-triggers](includes/ci-triggers3.md)]
+
+# [Classic](#tab/classic/)
+
+[!INCLUDE [ci-triggers](includes/ci-triggers4.md)]
+
+![ci trigger git branches](media/ci-trigger-git-branches-neweditor.png)
+
+---
+
+### Skipping CI for individual commits
+
+You can also tell Azure Pipelines to skip running a pipeline that a commit would normally trigger. Just include `[skip ci]` in the commit message or description of the HEAD commit and Azure Pipelines will skip running CI. You can also use any of the variations below.
+
+- `[skip ci]` or `[ci skip]`
+- `skip-checks: true` or `skip-checks:true`
+- `[skip azurepipelines]` or `[azurepipelines skip]`
+- `[skip azpipelines]` or `[azpipelines skip]`
+- `[skip azp]` or `[azp skip]`
+- `***NO_CI***`
+
+[!INCLUDE [ci-triggers](includes/ci-triggers5.md)]
 
 ## PR triggers
 
