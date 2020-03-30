@@ -6,10 +6,7 @@ description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: rabououn
-author: ramiMSFT
-ms.date: 03/30/2020
+ms.date: 02/26/2020
 monikerRange: 'azure-devops'
 ---
 
