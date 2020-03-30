@@ -42,7 +42,7 @@ The content pack contains a complete analytic data model (tables, relationships 
 > [!IMPORTANT]
 > Ensure you are logged in Power BI using the same credentials you use on the Marketplace and you have access to the Publisher ID. 
 
-1. The next step specifies the authentication method. Only oAuth2 is supported. Select **Sign In** to continue.
+7. The next step specifies the authentication method. Only oAuth2 is supported. Select **Sign In** to continue.
 
     ![Sign in with oAuth2](media/connect-to-vs-team-services-auth.png)  
 
@@ -53,11 +53,11 @@ The content pack contains a complete analytic data model (tables, relationships 
 
     Contact your organization administrator to determine if it needs to be enabled. 
 
-1. Successful authorization displays the following authorization dialog, which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select**Accept**.
+8. Successful authorization displays the following authorization dialog, which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select**Accept**.
 
     ![VS Azure DevOps Services Authorization page](media/Screen6.png)  
 
-2. Once Power BI is authorized, data begins to load and you're presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded. 
+9. Once Power BI is authorized, data begins to load and you're presented with a loading screen until the data is complete. Depending on how much data there is, it may take a few minutes to complete the data load. All extension data associated with this publisher is downloaded. 
 
 
 ## Available data and reports 
