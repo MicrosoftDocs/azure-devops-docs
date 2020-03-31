@@ -19,15 +19,16 @@ Select this check box if you have many team members uploading changes often and 
 
 You can specify the branches where you want to trigger builds. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-#### Path filters in Azure Pipelines and Team Foundation Services (TFS)
+#### Path filters
 
 If your Git repo is in Azure Repos or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
 > **Tips:**
+>  * Paths are always specified relative to the root of the repository.
 >  * If you don't set path filters, then the root folder of the repo is implicitly included by default.
->  * When you add an explicit path filter, the implicit include of the root folder is removed. So make sure to explicitly include all folders that your build needs.
 >  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
 >  * The order of path filters doesn't matter.
+>  * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
 
 #### Example
 

@@ -243,3 +243,11 @@ If your BitBucket repository is open source, you can make your Azure DevOps proj
 If either your BitBucket repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs.
 
 Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
+
+## Q & A
+
+[!INCLUDE [qa](includes/qa1.md)]
+
+[!INCLUDE [qa](includes/qa2.md)]
+
+[!INCLUDE [qa](includes/qa3.md)]

@@ -530,10 +530,6 @@ Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.m
 
 ## Q & A
 
-<!-- BEGINSECTION class="md-qanda" -->
-
-<a name="missing-repo"></a>
-
 ### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?
 
 Depending on the authentication type and ownership of the repository, specific permissions are required.
@@ -542,29 +538,50 @@ Depending on the authentication type and ownership of the repository, specific p
 - If you're using OAuth, see [OAuth authentication](#oauth-authentication).
 - If you're using PATs, see [Personal access token (PAT) authentication](#personal-access-token-pat-authentication).
 
+[!INCLUDE [qa](includes/qa1.md)]
+
+[!INCLUDE [qa](includes/qa2.md)]
+
+[!INCLUDE [qa](includes/qa3.md)]
+
+### How do I know the type of GitHub connection I'm using for my pipeline?
+
+- Open the editor for the pipeline.
+- Select **Triggers** to open the classic editor for the pipeline. Then, select **YAML** tab and then the **Get sources** step.
+- You'll notice a banner **Authorized using connection:** indicating the service connection that was used to integrate the pipeline with GitHub.
+- The name of the service connection is a hyperlink. Select it to navigate to the service connection properties.
+- The properties of the service connection will indicate the type of connection being used:
+  - **azure pipelines app** indicates GitHub app connection
+  - **oauth** indicates OAuth connection
+  - **personalaccesstoken** indicates PAT authentication
+
 ### I understand that the GitHub app is the recommended integration with Azure Pipelines. How do I switch my classic build pipeline to use GitHub app instead of OAuth?
 
 - Navigate [here](https://github.com/apps/azure-pipelines) and install the app in the GitHub organization of your repository.
-- During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contains the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
+- During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contain the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
 - In the next page that appears, you do not need to proceed creating a new pipeline.
-- Edit your pipeline by visiting the Builds page (e.g., https:\//dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
+- Edit your pipeline by visiting the Pipelines page (e.g., https:\//dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
 - Select the "Get sources" step in the pipeline.
 - On the green bar with text "Authorized using connection", click "Change" and select the GitHub App connection with the same name as the GitHub organization in which you installed the app.
-- On the toolbar, select "Save and queue" and then "Save and queue". Click the link to the build that was queued to make sure it succeeds.
+- On the toolbar, select "Save and queue" and then "Save and queue". Click the link to the pipeline run that was queued to make sure it succeeds.
 - Create (or close and reopen) a pull request in your GitHub repository to verify that a build is successfully queued in its "Checks" section.
 
 ### I am using the GitHub app. However, my pipeline is not being triggered when I push an update to the repository. How do I diagnose this problem?
 
 - Verify that the mapping between the GitHub org and Azure DevOps org has been set up correctly using the app. Open a pull request in your GitHub repository, and make the comment `/azp where`. This reports back the Azure DevOps organization that the repository is mapped to. If nothing is reported back, then the app hasn't been installed or mapped correctly to an Azure DevOps organization.
+
 - If your app has not been set up with the correct mapping, verify that you installed the GitHub app for your repository. Go to `https://github.com/<org_name>/<repo_name>/settings/installations` to check whether the app is installed for your repo.
-- Verify that you have a service connection for the GitHub app in your Azure DevOps org. Go to Project Settings, then to the Service connections page. Look for a GitHub service connection with the same name as your GitHub org. Under the information section it should say "Connecting to service using token".
+
+- Verify that you have a service connection for the GitHub app in your Azure DevOps org. Go to Project Settings, then to the Service connections page. Look for a GitHub service connection with the same name as your GitHub org. Under the information section it should say "using azure pipelines app".
+
 - Verify that your pipeline is using the GitHub app service connection. Edit the pipeline and select the Get sources step if you have a classic pipeline. If you have a YAML pipeline, select the Triggers option to go to the classic editor, and then review the Get sources step. Verify that you are using the same GitHub app's service connection from the previous step.
+
 - Do you have another pipeline in a different Azure DevOps organization for the same repository? We currently have the limitation that we can only map a GitHub repo to a single DevOps org. Only the pipelines in the first Azure DevOps org can be automatically triggered.
 
 ### I am using OAuth for integrating Azure Pipelines with GitHub. My pipeline is not being triggered when I push an update to the repository. How do I diagnose this problem?
 
 - Verify that you have a valid OAuth service connection in your Azure DevOps org. Go to Project Settings, then to the Service connections page. Look for the GitHub service connection that you use to connect Azure Pipelines to GitHub. Click on 'Verify Connection' and ensure that it is functional.
-- Verify that your pipeline is using the correct service connection. Edit the pipeline and select the Get sources step if you have a classic pipeline. If you have a YAML pipeline, select the Triggers option to go to the classic editor, and then review the Get sources step. Verify that you are using the same service connection from the previous step.
-- GitHub records any webhook payloads sent in the last hour, and the response it received when it was sent out. In GitHub, navigate to the settings for your repository, then to Webhooks, and verify that the payload that corresponds to the user's commit exists and was sent successfully to Azure DevOps.
 
-<!-- ENDSECTION -->
+- Verify that your pipeline is using the correct service connection. Edit the pipeline and select the Get sources step if you have a classic pipeline. If you have a YAML pipeline, select the Triggers option to go to the classic editor, and then review the Get sources step. Verify that you are using the same service connection from the previous step.
+
+- GitHub records any webhook payloads sent in the last hour, and the response it received when it was sent out. In GitHub, navigate to the settings for your repository, then to Webhooks, and verify that the payload that corresponds to the user's commit exists and was sent successfully to Azure DevOps.
