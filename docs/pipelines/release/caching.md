@@ -52,7 +52,7 @@ The `Cache` task has two required inputs: `key` and `path`.
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
 * **File patterns**: comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
-  * `**/package-lock.json`: all package-lock.json files under the sources directory
+  * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
 The contents of any file identified by a file path or file pattern is hashed to produce a dynamic cache key. This is useful when your project has file(s) that uniquely identify what is being cached. For example, files like `package-lock.json`, `yarn.lock`, `Gemfile.lock`, or `Pipfile.lock` are commonly referenced in a cache key since they all represent a unique set of dependencies.
@@ -285,7 +285,7 @@ steps:
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have a `packages.lock.json` file, you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
 
 ### Example
 
@@ -296,10 +296,9 @@ variables:
 steps:
 - task: Cache@2
   inputs:
-    key: 'nuget | "$(Agent.OS)" | packages.lock.json'
+    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**'
     restoreKeys: |
-      nuget | "$(Agent.OS)"
-      nuget
+       nuget | "$(Agent.OS)"
     path: $(NUGET_PACKAGES)
   displayName: Cache NuGet packages
 ```
@@ -323,8 +322,7 @@ steps:
   inputs:
     key: 'npm | "$(Agent.OS)" | package-lock.json'
     restoreKeys: |
-      npm | "$(Agent.OS)"
-      npm
+       npm | "$(Agent.OS)"
     path: $(npm_config_cache)
   displayName: Cache npm
 
@@ -351,8 +349,7 @@ steps:
   inputs:
     key: 'yarn | "$(Agent.OS)" | yarn.lock'
     restoreKeys: |
-      yarn | "$(Agent.OS)"
-      yarn
+       yarn | "$(Agent.OS)"
     path: $(YARN_CACHE_FOLDER)
   displayName: Cache Yarn packages
 
