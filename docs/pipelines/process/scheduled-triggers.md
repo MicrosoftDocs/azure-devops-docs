@@ -10,6 +10,10 @@ monikerRange: '>= tfs-2015'
 
 # Configure schedules for pipelines
 
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
+::: moniker-end
+
 You can configure a pipeline to run on a schedule.
 
 #### [YAML](#tab/yaml/)
@@ -67,6 +71,15 @@ The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays
 > [!NOTE]
 > The time zone for cron schedules is UTC, so in these examples, the midnight build and the noon build are at midnight and noon in UTC.
 
+> [!NOTE]
+> When you specify a scheduled trigger, only branches that you explicitly configure for inclusion are scheduled. Inclusions are processed first, and then exclusions are removed from that list. If you specify an exclusion but no inclusions, no branches are built.
+
+> [!NOTE]
+> You cannot use pipeline variables when specifying schedules.
+
+> [!NOTE]
+> If you use templates in your YAML file, then the schedules must be specified in the main YAML file and not in the template files.
+
 ## Scheduled runs view
 
 You can view a preview of upcoming scheduled builds by choosing **Scheduled runs** from the context menu on the [pipeline details page](../get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline. 
@@ -104,7 +117,7 @@ After one of these events occurs in a branch, any scheduled runs for that branch
 > Scheduled runs for a branch are added only if the branch matches the branch filters for the 
 > scheduled triggers in the YAML file **in that particular branch**.
 
-## Example of scheduled triggers for multiple branches
+### Example of scheduled triggers for multiple branches
 
 For example, a pipeline is created with the following schedule, and this version of the YAML file is checked into the `master` branch. This schedule builds the `master` branch on a daily basis.
 
@@ -198,7 +211,7 @@ For more information on supported formats, see [Crontab Expression](https://gith
 <a name="always"></a>
 ## Running even when there are no code changes
 
-By default, your pipeline does not run as scheduled if there have been no code changes since the last _successful scheduled run_. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
+By default, your pipeline does not run as scheduled if there have been no code changes since the last successful scheduled run. For instance, consider that you have scheduled a pipeline to run every night at 9:00pm. During the weekdays, you push various changes to your code. The pipeline runs as per schedule. During the weekends, you do not make any changes to your code. If there have been no code changes since the scheduled run on Friday, then the pipeline does not run as scheduled during the weekend. To force a pipeline to run even when there are no code changes, you can use the `always` keyword.
 
 ```yaml
 schedules:
@@ -210,7 +223,7 @@ schedules:
 <a name="limits"></a>
 ## Limits on the number of scheduled runs
 
-There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. While we may change this limit from time to time or from organization to organization, this limit is usually around 1000 runs per pipeline per week.
+There are certain limits on how often you can schedule a pipeline to run. These limits have been put in place to prevent misuse of Azure Pipelines resources - particularly the Microsoft-hosted agents. This limit is around 1000 runs per pipeline per week.
 
 ## Migrating from the classic editor
 
@@ -405,7 +418,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
-### Schedules work for one branch but not the other.
+### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
 Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say features/X, then make sure that the YAML file in that branch has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in features/X branch should have the following in this example: 
  
@@ -416,5 +429,15 @@ schedules:
     include: 
     - features/X  
 ```
+
+### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
+
+* If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
+
+* There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
+
+* Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
+
+* Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
 
 ::: moniker-end

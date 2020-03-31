@@ -3,13 +3,13 @@ title: Triggers in Azure Pipelines
 description: Learn about how you can specify CI, scheduled, gated, and other triggers in Azure Pipelines
 ms.topic: reference
 ms.custom: seodec18
+ms.author: vijayma
+author: vijayma
 ms.date: 03/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Specify events that trigger pipelines
-
-[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
@@ -25,11 +25,17 @@ Continuous integration (CI) triggers vary based on the type of respository you b
 
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md#ci-triggers)
 - [CI triggers in GitHub](../repos/github.md#ci-triggers)
+- [CI triggers in BitBucket Cloud](../repos/bitbucket.md#ci-triggers)
+- [CI triggers in TFVC](../repos/tfvc.md#ci-triggers)
 
 <a name="pr-triggers"></a>
 Pull request validation (PR) triggers also vary based on the type of repository.
+
 - [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers)
 - [PR triggers in GitHub](../repos/github.md#pr-triggers)
+- [PR triggers in BitBucket Cloud](../repos/bitbucket.md#pr-triggers)
+
+[Gated check-in](../repos/tfvc.md#gated) is supported for TFVC repositories.
 
 [Comment triggers](../repos/github.md#comment-triggers) are supported only for GitHub repositories.
 
