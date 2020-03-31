@@ -197,7 +197,7 @@ You're now ready to package your extension and publish (upload) it to the Market
 
 #### Upload your extension
 
-1. From the management portal,](https://aka.ms/vsmarketplace-manage) select your publisher from the drop-down at the top of the page.
+1. From the [management portal](https://aka.ms/vsmarketplace-manage), select your publisher from the drop-down at the top of the page.
 
 2. Tap **New Extension** and select **Azure DevOps**:
        
