@@ -152,6 +152,7 @@ To update the permissions of job access token:
   - Make any changes to the non-pipelines-related permissions for this account.
   - Since **Your-project-name Build Service (your-collection-name)** is a user in your organization or collection, you can add this account explicitly to any resource - for e.g., to a feed in Azure Artifacts.
 
+<a name="q-a"></a>
 ## Q & A
 
 ### How do I determine the job authorization scope of my YAML pipeline?
