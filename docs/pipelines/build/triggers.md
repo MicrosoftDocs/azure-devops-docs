@@ -26,6 +26,7 @@ Continuous integration (CI) triggers vary based on the type of respository you b
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md#ci-triggers)
 - [CI triggers in GitHub](../repos/github.md#ci-triggers)
 
+<a name="pr-triggers"></a>
 Pull request validation (PR) triggers also vary based on the type of repository.
 - [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers)
 - [PR triggers in GitHub](../repos/github.md#pr-triggers)
