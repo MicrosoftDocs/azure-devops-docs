@@ -364,20 +364,26 @@ This works: ***
 This does not work:
 This works: ***
 ```
-This example shows how to use a secret variable called `$(go_vers)` in a Go task. 
+This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdPass)` in an Azure file copy task. 
 
 ```yaml
 variables:
-  MAPPED_VERSION: $(go_vers)
+  VMS_USER: $(vmsUser)
+  VMS_PASS: $(vmsAdPass)
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: GoTool@0
-  displayName: 'Use Go $(MAPPED_VERSION)'
+- task: AzureFileCopy@4
   inputs:
-    version: $(MAPPED_VERSION)
+    SourcePath: 'my/path'
+    azureSubscription: 'my-subscription'
+    Destination: 'AzureVMs'
+    storage: 'my-storage'
+    resourceGroup: 'my-rg'
+    vmsAdminUserName: $(VMS_USER)
+    vmsAdminPassword: $(VMS_PASS)
 ```
 
 
