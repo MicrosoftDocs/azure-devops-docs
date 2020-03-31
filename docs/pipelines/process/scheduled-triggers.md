@@ -5,7 +5,7 @@ ms.topic: reference
 ms.author: vijayma
 author: vijayma
 ms.date: 03/29/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '>= tfs-2015'
 ---
 
 # Configure schedules for pipelines
@@ -28,7 +28,7 @@ You can configure a pipeline to run on a schedule.
 Scheduled triggers cause a pipeline to run on a schedule defined using [cron syntax](#supported-cron-syntax).
 
 > [!NOTE]
-> If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pull-request-validation) and must be disabled there.
+> If you want to run your pipeline by only using scheduled triggers, you must disable PR and continuous integration triggers by specifying `pr: none` and `trigger: none` in your YAML file. If you're using Azure Repos Git, PR builds are configured using [branch policy](../repos/azure-repos-git.md#pr-triggers) and must be disabled there.
 
 ```yaml
 schedules:

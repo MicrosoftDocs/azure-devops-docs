@@ -95,8 +95,6 @@ or when updates are made to such a pull request.
 
 ### Branches
 
-::: moniker range=">= azure-devops-2019"
-
 You can specify the target branches when validating your pull requests.
 For example, to validate pull requests that
 target `master` and `releases/*`, you can use the following `pr` trigger. 
@@ -129,14 +127,6 @@ pr:
     include:
     - '*'  # must quote since "*" is a YAML reserved character; we want a string
 ```
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> New pipelines automatically override YAML PR triggers with a setting in the UI.
-> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
-
-::: moniker-end
 
 >[!IMPORTANT]
 >When you specify a `pr` trigger, it replaces the default implicit `pr` trigger, and only pushes to branches that are explicitly configured to be included will trigger a pipeline.
@@ -175,18 +165,6 @@ pr:
 > [!NOTE]
 > You cannot use [variables](../process/variables.md) in paths, as variables are evaluated at runtime (after the trigger has fired).
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> New pipelines automatically override YAML PR triggers with a setting in the UI.
-> To opt into YAML-based control, you need to disable this setting on the **Triggers** tab in the UI.
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
 ### Multiple PR updates
 
 You can specify whether additional updates to a PR should cancel in-progress validation runs for the same PR. The default is `true`.
@@ -209,20 +187,10 @@ You can opt out of pull request validation entirely by specifying `pr: none`.
 pr: none
 ```
 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 > [!NOTE]
 > If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
-
-::: moniker-end
-
-::: moniker range="< azure-devops-2019"
-YAML pipelines are not yet available on TFS.
-::: moniker-end
 
 # [Classic](#tab/classic/)
 
