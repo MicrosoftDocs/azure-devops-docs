@@ -2,7 +2,7 @@
 title: Configure pipeline triggers
 description: Configure pipeline triggers
 ms.topic: reference
-ms.date: 03/39/2020
+ms.date: 03/29/2020
 monikerRange: ">=azure-devops-2019"
 ---
 

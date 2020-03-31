@@ -46,19 +46,6 @@
     - name: Specify demands 
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
-  - name: Approvals, checks, & gates
-    items:
-    - name: Release approval and gates overview 
-      href: release/approvals/index.md
-    - name: Define approvals & checks
-      href: process/approvals.md
-      displayName: approvals, checks
-    - name: Define a gate
-      href: release/approvals/gates.md
-    - name: Use approvals and gates
-      href: release/deploy-using-approvals.md
-    - name: Use approvals for release deployment control
-      href: release/approvals/approvals.md
   - name: Repositories
     items:
     - name: Supported repositories 
@@ -66,17 +53,27 @@
       displayName: supported repository types
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
-      displayName: ci, pr, triggers, branch policy, access token, authorization scope, build service account, public project, private project, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+      displayName: ci, pr, pull request, triggers, self, branch policy, access token, authorization scope, build service account, public project, private project, clean, label sources, tag sources, checkout path, submodules, shallow fetch, exit code 128
     - name: GitHub
       href: repos/github.md
-      displayName: public project, private project, github organization, repository permissions, github app, trigger, ci trigger, push trigger, pr trigger, comment trigger, checkout path, submodules, shallow fetch, sync sources, status badge, github checks
+      displayName: ci, pr, pull request, triggers, self, github app, oauth, pat, open source, public project, private project, fork, checks, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+    - name: BitBucket Cloud
+      href: repos/bitbucket.md
+      displayName: ci, pr, pull request, self, triggers, oauth, public project, private project, clean, label sources, tag sources, checkout path, submodules, shallow fetch
     - name: TFVC
       href: repos/tfvc.md
-    - name: Pipeline options for Git
-      href: repos/pipeline-options-for-git.md
-      displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
     - name: Multi-repo checkout
       href: repos/multi-repo-checkout.md
+  - name: Triggers
+    items:
+    - name: Types of triggers
+      href: build/triggers.md
+    - name: Scheduled triggers
+      href: process/scheduled-triggers.md
+    - name: Pipeline completion triggers
+      href: process/pipeline-triggers.md
+    - name: Release triggers (classic)
+      href: release/triggers.md
   - name: Tasks & templates
     items:
     - name: Task types & usage 
@@ -109,6 +106,19 @@
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
+  - name: Approvals, checks, & gates
+    items:
+    - name: Release approval and gates overview 
+      href: release/approvals/index.md
+    - name: Define approvals & checks
+      href: process/approvals.md
+      displayName: approvals, checks
+    - name: Define a gate
+      href: release/approvals/gates.md
+    - name: Use approvals and gates
+      href: release/deploy-using-approvals.md
+    - name: Use approvals for release deployment control
+      href: release/approvals/approvals.md
   - name: Pipeline reports
     items:
     - name: View pipeline reports

@@ -7,6 +7,12 @@ author: vijayma
 ms.date: 03/29/2020
 ---
 
+### Using the trigger type in conditions
+
+It is a common scenario to run different steps, jobs, or stages in your pipeline depending on the type of trigger that started the run. You can do this using the system variable `Build.Reason`. For example, add the following condition to your step, job, or stage to exclude it from PR validations.
+
+`condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))`
+
 ### Behavior of triggers when new branches are created
 
 It is common to configure multiple pipelines for the same repository. For instance, you may have one pipeline to build the docs for your app and another to build the source code. You may configure CI triggers with appropriate branch filters and path filters in each of these pipelines. For instance, you may want one pipeline to trigger when you push an update to the `docs` folder, and another one to trigger when you push an update to your application code. In these cases, you need to understand how the pipelines are triggered when a new branch is created.
