@@ -53,7 +53,7 @@ YAML pipelines can have their `trigger` and `pr` trigger settings overridden in 
 
 ### Using pull request triggers with Azure Repos
 
-If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pr-triggers).
 
 ### Branch filters in CI and PR triggers
 

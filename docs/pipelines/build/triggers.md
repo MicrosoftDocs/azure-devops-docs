@@ -17,8 +17,10 @@ monikerRange: '>= tfs-2015'
 
 Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Select the appropriate one from the list below based on the type of your pipeline.
 
+<a name="ci"></a>
 ## Classic build pipelines and YAML pipelines
 
+<a name="ci-triggers"></a>
 Continuous integration (CI) triggers vary based on the type of respository you build in your pipeline.
 
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md#ci-triggers)
