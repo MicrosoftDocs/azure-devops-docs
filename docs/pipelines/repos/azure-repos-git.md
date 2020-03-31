@@ -156,6 +156,7 @@ For more information on public projects, see [Create a public project](../../org
 
 ::: moniker-end
 
+<a name="q-a"></a>
 ## Q & A
 
 ### I see the following permission error in the log file during checkout step. How do I fix it?
