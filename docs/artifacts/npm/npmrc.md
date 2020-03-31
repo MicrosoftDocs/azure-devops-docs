@@ -80,7 +80,8 @@ This enables you to share project's **_.npmrc_** with the whole team while keepi
 
 You should have a project specific **_.npmrc_** containing only your feed's registry information that you discovered from the "Connect to Feed" dialog.  There should be no credentials in this file and the file itself is usually adjacent to your project's **_package.json_**.
 
-> **IMPORTANT:** There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
+> [!IMPORTANT]
+> There can only be a single "registry=" line in your **_.npmrc_**.  Multiple registries are possible with [upstream sources](../concepts/upstream-sources.md), or by using [scopes](..//npm/scopes.md) (not recommended).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -160,7 +161,7 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 1. Select **Save & queue**, and then select **Save**.
 
 > [!TIP]
-> If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
+> If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so, go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
 
 > [!div class="mx-imgBorder"]
 > ![tip screenshot](../media/fix-error-tip.png)
