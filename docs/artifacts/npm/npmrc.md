@@ -162,8 +162,8 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
 > [!TIP]
 > If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
 
-[!div class="mx-imgBorder"]
-![tip screenshot](../media/fix-error-tip.png)
+> [!div class="mx-imgBorder"]
+> ![tip screenshot](../media/fix-error-tip.png)
 
 
 ::: moniker-end
