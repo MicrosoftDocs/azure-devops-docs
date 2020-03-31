@@ -589,7 +589,17 @@ variables:
 
 You can repeat `name`/`value` pairs and `group`.
 
-You can also include variables from templates.
+Variables can also be set as read only to [enhance security](security/inputs.md#variables). 
+
+```yaml
+variables:
+- name: myReadOnlyVar
+  value: myValue
+  readonly: true
+```
+
+
+You can also include [variables from templates](process/templates.md#variable-reuse).
 
 #### [Example](#tab/example/)
 
