@@ -499,6 +499,21 @@ You will need to add exceptions for all three services that make up Azure Artifa
 |    Azure Artifacts Blob - Canada Central         |    52.237.16.145, 52.237.16.145, 52.233.38.115, 40.82.187.186     |
 |    Azure Artifacts Blob - East Asia (Hong Kong)  |    13.94.26.58      |
 |    Azure Artifacts Blob - UK South               |    51.143.174.59, 40.81.152.41              |
+
+**Test Plans**
+
+You will need to add exceptions for Test Plans IPs in the region you're migrating into only.
+
+|    Service                                     |    IP                                                                             |
+|------------------------------------------------|-----------------------------------------------------------------------------------|
+|    Test Plans - United States                  | 52.253.227.131, 40.91.89.233, 20.41.47.199, 40.91.117.40, 40.91.126.113, 20.37.141.154 |
+|    Test Plans - West Europe                    | 40.119.145.57                                                                     |
+|    Test Plans - Australia East                 | 20.40.177.101                                                                     |
+|    Test Plans - Brazil South                   | 20.40.118.62                                                                      |
+|    Test Plans - India South                    | 40.81.72.10                                                                       |
+|    Test Plans - Canada Central                 | 40.82.184.28                                                                      |
+|    Test Plans - East Asia (Hong Kong)          | 52.184.81.26                                                                      |
+|    Test Plans - UK South                       | 40.81.159.9                                                                       |
  
 **Analytics IPs (Azure DevOps Server 2019 or later only)**
 
@@ -514,7 +529,6 @@ You only need to add an exception for the analytics IPs in your target import re
 |    Analytics service - Canada Central          | 40.82.185.214                                                                     |
 |    Analytics service - East Asia (Hong Kong)   | 40.81.25.239                                                                      |
 |    Analytics service - UK South                | 40.81.159.247                                                                     |
-
 
 #### Configure IP firewall exceptions
 
