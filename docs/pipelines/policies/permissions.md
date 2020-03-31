@@ -97,7 +97,7 @@ The following permissions are defined for pipelines. All of these can be set at 
 > | **Destroy builds** | Can delete builds from the **Deleted** tab. |
 > | **Edit build pipeline** | Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. |
 > | **Edit build quality** | Can add tags to a build. |
-> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../build/triggers.md#gated). This does not apply to PR builds. |
+> | **Override check-in validation by build** | Applies to [TFVC gated check-in builds](../repos/tfvc.md#gated). This does not apply to PR builds. |
 > | **Retain indefinitely** | Can toggle the retain indefinitely flag on a build. |
 > | **Stop builds** | Can stop builds queued by other team members or by the system.  |
 > | **View build pipeline** | Can view build pipeline(s). |

@@ -24,9 +24,6 @@
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
   items:
-  - name: Pipeline run sequence
-    href: process/runs.md
-    displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
   - name: Key concepts
     href: get-started/key-pipelines-concepts.md
   - name: Jobs & stages 
@@ -46,39 +43,39 @@
     - name: Specify demands 
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
-  - name: Approvals, checks, & gates
+  - name: Repositories
     items:
-    - name: Release approval and gates overview 
-      href: release/approvals/index.md
-    - name: Define approvals & checks
-      href: process/approvals.md
-      displayName: approvals, checks
-    - name: Define a gate
-      href: release/approvals/gates.md
-    - name: Use approvals and gates
-      href: release/deploy-using-approvals.md
-    - name: Use approvals for release deployment control
-      href: release/approvals/approvals.md
-  - name: Repositories & triggers
-    items:
-    - name: Specify pipeline triggers  
-      href: build/triggers.md
-      displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
     - name: Supported repositories 
       href: repos/index.md
-      displayName: supported repository types
+      displayName: supported repository types, version control, azure repos git, tfvc, github, bitbucket, subversion, ghe, 
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, branch policy, access token, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch, exit code 128
     - name: GitHub
       href: repos/github.md
-      displayName: public project, private project, github organization, repository permissions, github app, trigger, ci trigger, push trigger, pr trigger, comment trigger, checkout path, submodules, shallow fetch, sync sources, status badge, github checks
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, github app, oauth, pat, open source, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, clone, fetch, get sources, checks, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+    - name: BitBucket Cloud
+      href: repos/bitbucket.md
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, triggers, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
     - name: TFVC
       href: repos/tfvc.md
-    - name: Pipeline options for Git
-      href: repos/pipeline-options-for-git.md
-      displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
+      displayName: tfvc, version control, workspace, ci, gated, checkin, mappings, scroch, triggers, path filter, clean
     - name: Multi-repo checkout
       href: repos/multi-repo-checkout.md
+  - name: Triggers
+    items:
+    - name: Types of triggers
+      href: build/triggers.md
+      displayName: ci, pr, pull request, triggers, azure repos git, github, bitbucket, tfvc, release triggers, scheduled, pipeline triggers, build completion triggers, comment triggers, CD triggers, stage triggers, YAML triggers
+    - name: Scheduled triggers
+      href: process/scheduled-triggers.md
+      displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
+    - name: Pipeline completion triggers
+      href: process/pipeline-triggers.md
+      displayName: build completion, completion trigger, pipeline resource
+    - name: Release triggers (classic)
+      href: release/triggers.md
+      displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
   - name: Tasks & templates
     items:
     - name: Task types & usage 
@@ -111,6 +108,27 @@
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
+  - name: Approvals, checks, & gates
+    items:
+    - name: Release approval and gates overview 
+      href: release/approvals/index.md
+    - name: Define approvals & checks
+      href: process/approvals.md
+      displayName: approvals, checks
+    - name: Define a gate
+      href: release/approvals/gates.md
+    - name: Use approvals and gates
+      href: release/deploy-using-approvals.md
+    - name: Use approvals for release deployment control
+      href: release/approvals/approvals.md
+  - name: Pipeline runs
+    items:
+    - name: Pipeline run sequence
+      href: process/runs.md
+      displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
+    - name: Job access tokens
+      href: process/access-tokens.md
+      displayName: job access token, identity, build service account, project build service account, collection build service account, access token, build service
   - name: Pipeline reports
     items:
     - name: View pipeline reports

@@ -1024,7 +1024,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Gated check-in (TFVC, Azure DevOps Services) </b></p>
-<p>Use <a href="../pipelines/build/triggers.md#gated" data-raw-source="[gated check-in](../pipelines/build/triggers.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use <a href="../pipelines/repos/tfvc.md#gated" data-raw-source="[gated check-in](../pipelines/repos/tfvc.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
