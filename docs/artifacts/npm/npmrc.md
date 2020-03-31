@@ -4,13 +4,15 @@ description: Authenticating to feeds with npm in Azure DevOps Services
 ms.assetid: A5364E3A-3918-4318-AAE0-430EA91AD5F1
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 09/30/2017
+ms.date: 03/31/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Set up your client's npmrc
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+
+Azure Artifacts is an extension to Azure DevOps Services and Azure DevOps Server that makes it easy to discover, install, and publish different types of packages. Check out [Start using Azure Artifacts](../start-using-azure-artifacts.md) for more details.
 
 All Azure Artifacts feeds require authentication, so you'll need to store credentials for the feed before you can install or publish packages. npm uses [.npmrc configuration files](https://docs.npmjs.com/files/npmrc) to store feed URLs and credentials.
 
@@ -44,9 +46,9 @@ Azure DevOps Services recommends using two **_.npmrc_** files:
 
    3. Select **npm**.
 
-   4. Select **Get the tools** in the top right corner
+   4. Select **Get the tools** in the top-right corner
 
-   5. Follow steps **1** and **2** to download Node.js, npm and the artifacts credential provider.
+   5. Follow steps **1** and **2** to download Node.js, npm, and the artifacts credential provider.
 
    6. Follow the instructions in the **Project setup**, **Restore packages**, and **Publish packages** sections to publish.npm-azure
 
@@ -156,6 +158,13 @@ To set up **npm** authentication in a build task _without_ a task runner, follow
      When you choose this option, the task will create a temporary **_.npmrc_** with credentials for the registry you've selected and it will override the project's **_.npmrc_**. This is useful when you want to publish to a specific feed. 
    
 1. Select **Save & queue**, and then select **Save**.
+
+> [!TIP]
+> If your NPM Install build task is failing with Error 403, then make sure you set your build service as a contributor. To do so go to Azure Artifacts -> Select your feed -> Settings -> Permissions -> set your build service role to contributor.
+
+[!div class="mx-imgBorder"]
+![tip screenshot](../media/fix-error-tip.png)
+
 
 ::: moniker-end
 
@@ -282,7 +291,7 @@ If you receive an error like:
 
 then it's likely that the npm modules folder is not in your path. 
 
-To fix this, re-run Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
+To fix this issue, re-run Node.js setup and ensure the `Add to PATH` option and its child options are selected for installation.
 
 ![Add to PATH install option in Node.js setup](./media/node-setup.png)
 
