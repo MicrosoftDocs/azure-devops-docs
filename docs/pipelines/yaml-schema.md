@@ -1059,7 +1059,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
+You can also enable [pipeline-completion triggers](process/pipeline-triggers.md).
 
 # [Schema](#tab/schema)
 
@@ -1244,7 +1244,6 @@ The `git` type refers to Azure Repos Git repos.
 A push trigger specifies which branches cause a continuous integration build to run.
 If you specify no push trigger, pushes to any branch trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers) and how to specify them.
-Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 #### [Schema](#tab/schema/)
 
@@ -1428,7 +1427,7 @@ pr:
 ::: moniker range="<= azure-devops-2019"
 
 YAML scheduled triggers are unavailable in either this version of Azure DevOps Server or Visual Studio Team Foundation Server.
-You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+You can use [scheduled triggers in the classic editor](process/scheduled-triggers.md?tabs=classic).
 
 ::: moniker-end
 
@@ -1436,7 +1435,7 @@ You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=cl
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
-Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers) and how to specify them.
+Learn more about [scheduled triggers](process/scheduled-triggers.md?tabs=yaml) and how to specify them.
 
 # [Schema](#tab/schema)
 
