@@ -20,6 +20,9 @@ hide_comments: true
 
 ****
 
+> [!Important]
+> In light of the COVID-19 global health pandemic, and in recognition of the critical role hosted services like Azure DevOps can play in key workloads for our customers, we are pausing our normal sprintly deployments to better focus on stability and reliability. Deployments will be limited for now to critical updates needed to fix bugs or address stability, reliability, or security issues. See the [Optimizing for stability during the global health pandemic blog post](https://devblogs.microsoft.com/devops/optimizing-for-stability-during-the-global-health-pandemic/) for more information.
+
 ## Features under development
 
 This feature list is a peek into our roadmap. It identifies some of the significant features we are currently working on and a rough timeframe for when you can expect to see them. It is not comprehensive but is intended to provide some visibility into key investments. Each feature is linked to the public roadmap project where you can learn more about a particular item. These features and dates are the current plans at this time and are subject to change. The "Timeframe" column reflects when the feature will be available on Azure DevOps Services, the "Area" column reflects the area of the product the feature aligns with most, and the "Server" column reflects when it will be available in Azure DevOps Server on-premises, if applicable.
