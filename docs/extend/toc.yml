@@ -100,7 +100,7 @@
       href: test/debug-in-browser.md
   - name: Reporting
     items:
-    - name: Extension statistics PowerBI content pack
+    - name: Extension statistics Power BI content pack
       href: extension-statistics-powerbi-contentpack.md
 - name: Reference
   items:

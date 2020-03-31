@@ -39,19 +39,19 @@ The content pack contains a complete analytic data model (tables, relationships 
 
     ![Enter the publisher ID used in Marketplace](media/addpublisherid.png)  
     
-> [!IMPORTANT]
-> Ensure you are logged in Power BI using the same credentials you use on the Marketplace and you have access to the Publisher ID. 
+ > [!IMPORTANT]
+ > Ensure you are logged in Power BI using the same credentials you use on the Marketplace and you have access to the Publisher ID. 
 
 7. The next step specifies the authentication method. Only oAuth2 is supported. Select **Sign In** to continue.
 
     ![Sign in with oAuth2](media/connect-to-vs-team-services-auth.png)  
 
-> [!IMPORTANT]
-> You won't be able to connect if your organization administrator disabled third-party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
+ > [!IMPORTANT]
+ > You won't be able to connect if your organization administrator disabled third-party application access via OAuth. When enabled, it appears as follows on the Administration > Control panel > Settings page:  
 
-    ![Third-party oAuth enabled](media/Screen5.png)  
+![Third-party oAuth enabled](media/Screen5.png)  
 
-    Contact your organization administrator to determine if it needs to be enabled. 
+Contact your organization administrator to determine if it needs to be enabled. 
 
 8. Successful authorization displays the following authorization dialog, which allows Power BI to retrieve data from your organization. Scroll down to the bottom and select**Accept**.
 
