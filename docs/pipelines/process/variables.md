@@ -27,7 +27,7 @@ When you define a variable, you can use [different syntaxes (macro, template exp
 
 In YAML pipelines, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML pipeline in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAML pipelines and need to be passed to your YAML file with `env:` or a variable at the root level.
 
-User-defined variables can be set as read-only. 
+User-defined variables can be [set as read-only](../security/inputs.md). 
 
 You can [use a variable group](../library/variable-groups.md) to make variables available across multiple pipelines.  
 
