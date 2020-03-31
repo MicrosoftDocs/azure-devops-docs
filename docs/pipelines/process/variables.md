@@ -364,12 +364,12 @@ This works: ***
 This does not work:
 This works: ***
 ```
-This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdPass)` in an Azure file copy task. 
+This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
 
 ```yaml
 variables:
   VMS_USER: $(vmsUser)
-  VMS_PASS: $(vmsAdPass)
+  VMS_PASS: $(vmsAdminPass)
 
 pool:
   vmImage: 'ubuntu-latest'
