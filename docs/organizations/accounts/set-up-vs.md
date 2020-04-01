@@ -50,14 +50,12 @@ if you don't have the version you want already.
     includes the Visual Studio IDE, get the version 
     that's available with your subscription.
 
-2. Start Visual Studio, 
-and then sign in to create your profile. 
+2. Start Visual Studio, and then sign in to create your profile. 
 
     This profile saves your settings and roams with you 
     when you sign in to Visual Studio on any computer. 
     [Why else should I sign in?](faq-set-up-vs.md#why-sign-in)
-    If you're a Visual Studio subscriber, 
-    use the sign in address for your subscription. 
+    If you're a Visual Studio subscriber, use the sign in address for your subscription. 
 
     ![Sign in to Visual Studio](media/set-up-vs/sign-in-visual-studio.png)
 
@@ -70,12 +68,11 @@ and then enter your password.
 
     ![Create your profile](media/set-up-vs/profile-organization-details.png)
 
-5. Give your organization a name, 
-and confirm its location. 
+5. Give your organization a name, and confirm its location. 
 
     ![Name your organization, confirm its location](media/set-up-vs/profile-organization-details2.png)
 
-    [How can I create an organization later](faq-configure-customize-organization.md#create-an-organization-faqs) or [change its location?](change-organization-location.md)
+    [How can I create an organization later](faq-configure-customize-organization.md#create-organization-faqs) or [change its location?](change-organization-location.md)
 
 6. Create your first project to store your code, 
 work items, backlog, builds, tests, and other assets. 
