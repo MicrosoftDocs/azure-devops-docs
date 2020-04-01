@@ -47,7 +47,7 @@ jobs:
   strategy: [ deployment strategy ] # see deployment strategy schema
 ```
 
-### Deployment strategies
+## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
 
@@ -59,7 +59,7 @@ When you're deploying application updates, it's important that the technique you
 
 We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
 
-#### Descriptions of life cycle hooks
+### Descriptions of life cycle hooks
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
@@ -339,3 +339,47 @@ jobs:
           steps: 
           - script: echo checks passed, notify... 
 ```
+## Use pipeline decorators to inject steps automatically
+
+[Pipeline decorators](https://docs.microsoft.com/azure/devops/extend/develop/add-pipeline-decorator) can be used in deployment jobs to auto-inject any custom step (e.g. vulnerability scanner) to every [life cycle hook](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+
+In addition, deployment jobs can be run as a [container job](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases) along with [services side-car](https://docs.microsoft.com/azure/devops/pipelines/process/service-containers) if defined.
+
+## Support for output variables 
+ 
+Define output variables in a deployment job's [lifecycle hooks](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops#descriptions-of-life-cycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
+
+While executing deployment strategies, you can access output variables across jobs using the following syntax.
+
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]`  
+- For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
+- For **rolling** strategy : `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
+
+```yaml
+// Set an output variable in a lifecycle hook of a deployment job executing canary strategy
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:                  
+    canary:      
+      increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+ // Map the variable from the job
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+Learn more on how to [set a multi-job output variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#set-a-multi-job-output-variable)
