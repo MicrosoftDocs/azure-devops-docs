@@ -17,15 +17,15 @@ ms.date: 04/01/2020
 > [!NOTE]
 > The following guidance is intended for Azure DevOps Services users, since OAuth 2.0 is not supported on Team Foundation Server or Azure DevOps Server. [Client Libraries](../../concepts/dotnet-client-libraries.md) are a series of packages built specifically for extending TFS functionality. For on-premises users, we recommend using [Client Libraries](../../concepts/dotnet-client-libraries.md), Windows Auth, or [Personal Access Tokens (PATs)](PATs.md) to authenticate on behalf of a user.
 
-Authenticate your web app's users to access the REST APIs so that your app doesn't have to keep asking for their usernames and passwords.
+Authenticate your web app users for REST API access, so your app doesn't continue to ask for usernames and passwords.
 Azure DevOps Services uses the [OAuth 2.0 protocol](https://oauth.net/2/) to authorize your app for a user and generate an access token.
 Use this token when you call the REST APIs from your app.
 
-First, you'll register your web app and get an app ID from Azure DevOps Services.
-Using that app ID, you'll send your users to Azure DevOps Services to authorize your app to access their organizations there.
-Once they've done that, you'll use that authorization to get an access token for that user.
-When you call Azure DevOps Services APIs for that user, you use that user's access token.
-Access tokens expire, so you'll also need to refresh the access token if it's expired.
+First, register your web app and get an app ID from Azure DevOps Services.
+Using that app ID, send your users to Azure DevOps Services to authorize your app to access their organizations.
+Next, use that authorization to get an access token for that user.
+When you call Azure DevOps Services APIs for that user, use that user's access token.
+Access tokens expire, so refresh the access token if it's expired.
 
 ![Process to get authorization](./media/oauth-overview.png)
 
@@ -269,4 +269,10 @@ A: Check that you set the content type to application/x-www-form-urlencoded in y
 A: No. OAuth is only supported in the REST APIs at this point.
 
 <!-- ENDSECTION --> 
+
+## Related articles
+
+- [Choosing the right authentication method](authentication-guidance.md)
+- [Default permissions and access for Azure DevOps](../../../organizations/security/permissions-access.md)
+
 
