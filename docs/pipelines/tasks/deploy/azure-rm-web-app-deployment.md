@@ -209,7 +209,7 @@ For windows based agents.
 <table><thead><tr><th>App Service type</th><th>Package type</th><th>Deployment Method</th></tr></thead>
 <tr><td>WebApp on Linux or Function App on Linux</td><td>Folder/Zip/jar <br/>War</td><td>Zip Deploy<br/>War Deploy</td></tr>
 <tr><td>WebApp for Containers (Linux) or Function App for Containers (Linux)</td><td>Update the App settings</td><td>NA</td></tr>
-<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/> Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/>if postDeploymentScript == true Zip Deploy <br/> else, Run From Package</td></tr>
+<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/><br/><br/>   Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/><br/> if postDeploymentScript == true, Zip Deploy <br/> else, Run From Package</td></tr>
 </table>
 
 On non-Windows agents (for any App Service type), the task relies on
