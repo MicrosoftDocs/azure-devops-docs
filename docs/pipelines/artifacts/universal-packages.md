@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publish & download Universal Packages
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
@@ -111,6 +111,21 @@ steps:
     vstsPackageVersion: 1.0.0
     downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
 ```
+
+> [!NOTE]
+> When using Azure Artifacts with the Azure DevOps extension 0.14.0 and later, you must provide the project ID in the `vstsFeed` path. Use the following snippet for guidance: 
+>
+> ```yaml
+> steps:
+> - task: UniversalPackages@0
+>   displayName: 'Universal download'
+>   inputs:
+>     command: download
+>     vstsFeed: '<insert project id>/fabrikamFeed'
+>     vstsFeedPackage: 'fabrikam-package'
+>     vstsPackageVersion: 1.0.0
+>     downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
+> ```
 
 
 | Argument                       | Description                                                         |

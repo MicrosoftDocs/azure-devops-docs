@@ -400,11 +400,11 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 Following YAML snippet showcases JSON variable substitution.
 
 ```YAML
-- variables:
-    Data.DebugMode: disabled
-    Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
-    Data.DBAccess.Users.0: Admin-3
-    Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
+variables:
+  Data.DebugMode: disabled
+  Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
+  Data.DBAccess.Users.0: Admin-3
+  Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
 - stage: Deploy
   jobs:
