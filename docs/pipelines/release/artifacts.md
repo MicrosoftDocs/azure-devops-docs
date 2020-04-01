@@ -113,8 +113,8 @@ artifacts. For example, you might use continuous
 integration systems such as Azure Pipelines, Jenkins, or
 TeamCity to produce artifacts. You might also use version control systems such as Git or
 TFVC to store your artifacts. Or you can use
-repositories such as Package Management in Visual Studio Team
-Services or a NuGet repository to store your artifacts.
+repositories such as Azure Artifacts
+or a NuGet repository to store your artifacts.
 You can configure Azure Pipelines to deploy
 artifacts from all these sources.
 
