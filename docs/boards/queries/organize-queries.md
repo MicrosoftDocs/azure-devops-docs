@@ -1,7 +1,6 @@
-﻿---
+---
 title: Organize and view queries, create query folders 
 titleSuffix: Azure Boards  
-ms.global_help.title: Organize queries
 description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries 
 ms.technology: devops-agile
@@ -32,6 +31,9 @@ Organize your personal or shared queries by adding a query folder. You can then 
 
 
 ## Add a query folder, move items into a folder 
+
+> [!TIP]   
+> You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
 
 ::: moniker range=">= azure-devops-2019"
 
