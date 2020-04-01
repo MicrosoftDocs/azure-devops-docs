@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 04/01/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -52,13 +52,10 @@ The example below demonstrates how that might look.
     <!-- remove any machine-wide sources with <clear/> -->
     <clear />
     <!-- add an Azure Artifacts feed -->
-    <add key="MyGreatFeed" value="https://fabrikam.pkgs.visualstudio.com/DefaultCollection/_packaging/MyGreatFeed/nuget/v3/index.json" />
+    <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/microsoftLearnModule/_packaging/FabrikamFiber/nuget/v3/index.json" />
     <!-- also get packages from the NuGet Gallery -->
-    <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
   </packageSources>
-  <activePackageSource>
-    <add key="All" value="(Aggregate source)" />
-  </activePackageSource>
 </configuration>
 ```
 
