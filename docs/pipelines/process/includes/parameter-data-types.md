@@ -18,9 +18,9 @@ ms.date: 02/28/2020
 | `job` | a single job
 | `jobList` | sequence of [jobs](../../yaml-schema.md#job)
 | `deployment` | a single deployment job
-| `deploymentList` | sequence of deployment [jobs](../../yaml-schema.md#deployment-job)
+| `deploymentList` | sequence of deployment [jobs](../../yaml-schema.md)
 | `stage` | a single stage
-| `stageList` | sequence of [stages](../../yaml-schema.md#stage)
+| `stageList` | sequence of [stages](../../yaml-schema.md)
 
 The step, stepList, job, jobList, deployment, deploymentList, stage, and stageList data types all use standard YAML schema format. This example includes string, number, boolean, object, step, and stepList. 
 
