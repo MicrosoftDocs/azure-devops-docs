@@ -3,7 +3,7 @@
 - name: Differences between Server and Service
   href: ../import-process/differences.md
 - name: Differences between Hosted XML and Inherited
-  href: ../inheritance-vs-hosted-xml.md
+  href: ../inheritance-versus-hosted-xml.md
 - name: How-to guides
   items:
   - name: Customize a Hosted XML process

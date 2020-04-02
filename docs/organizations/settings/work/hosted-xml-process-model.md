@@ -141,7 +141,7 @@ Use the following sequences when you manage customizations using the Hosted XML 
 - [Customize a Hosted XML process](./import-process/customize-process.md)  
 - [Import a process](./import-process/import-process.md)  
 - [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md) 
-- [Differences between Inheritance and Hosted XML](./inheritance-vs-hosted-xml.md) 
+- [Differences between Inheritance and Hosted XML](./inheritance-versus-hosted-xml.md) 
 - [Work tracking object limits](object-limits.md)
 - [REST APIS: Processes](/rest/api/vsts/processes/processes)
 
