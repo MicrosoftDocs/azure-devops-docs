@@ -40,3 +40,9 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 | Disable process                      | Supported                                                                                                      | Supported                     |
 | REST API                             | Supported                                                                                                      | Not supported                 |
 | Work item extensions                 | Supported                                                                                                      | Supported                     |
+
+## Related articles
+
+- [About process customization and inherited processes](./inheritance-process-model.md)
+- [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
+- [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)

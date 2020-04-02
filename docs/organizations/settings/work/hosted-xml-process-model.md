@@ -1,25 +1,23 @@
 ---
-title: Hosted XML process model 
+title: Hosted XML process model
 titleSuffix: Azure DevOps Services
-description: How to customize work tracking features using the Hosted XML process model 
+description: How to customize work tracking features using the Hosted XML process model
 ms.technology: devops-agile
-ms.assetid: 
+ms.assetid:
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: "azure-devops"
 ms.date: 10/24/2019
 ---
 
-
-# Hosted XML process model  
+# Hosted XML process model
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
-<a id="hosted-xml-process-model">  </a>
+<a id="hosted-xml-process-model"> </a>
 
-
-> [!NOTE]   
-> **Feature availability**:  The Hosted XML process model is only supported for organizations that have been migrated to Azure DevOps Services using the TFS Database Import Service (which is no longer available).  
+> [!NOTE]  
+> **Feature availability**: The Hosted XML process model is only supported for organizations that have been migrated to Azure DevOps Services using the TFS Database Import Service (which is no longer available).
 
 The Hosted XML process model provides support for customizing work tracking objects and Agile tools for a project by modifying and importing a process template. Updates made to the process template are applied to projects that were created using that process.
 
@@ -27,8 +25,7 @@ The Hosted XML process model provides support for customizing work tracking obje
 
 ## Supported customizations
 
-You can perform the following tasks with the Hosted XML process model. 
-
+You can perform the following tasks with the Hosted XML process model.
 
 <table width="80%">
 <tbody valign="top">
@@ -110,9 +107,10 @@ You can perform the following tasks with the Hosted XML process model.
 
 ## Add release deployment support to a work item type
 
-The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/work-items/work-item-deployments-control.md). 
+The release deployments control shows release information for only those work items that have been associated to a commit that is part of a build being released. To add the release deployments control to a work item type, you need to add the following syntax to a work item type XML definition. To learn more about this control, see [Link work items to deployments](../../../boards/work-items/work-item-deployments-control.md).
 
 > [!div class="tabbedCodeSnippets"]
+
 ```XML
 <Group Label="Deployment">
     <Control Type="DeploymentsControl" Name="Deployments" />
@@ -126,24 +124,19 @@ This syntax has been been added to the following work item type definitions of t
 > |-----|-----|-----|-----|  
 > |- Bug<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Task<br/>- Test Case<br/>- User Story|- Issue<br/>- Task<br/>- Test Case|- Bug<br/>- Epic<br/>- Feature<br/> - Impediment<br/> - Product Backlog Item<br/>- Task<br/>- Test Case|- Bug<br/>- Change Request<br/>- Epic<br/>- Feature<br/>- Issue<br/>- Requirement<br/>- Review<br/>- Risk<br/>- Task|
 
-
 <a id="hosted-xml-sequence"></a>
- 
+
 ## Customization sequence
 
-Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.  
+Use the following sequences when you manage customizations using the Hosted XML process model. This sequence requires you to update your project by updating the process template that it uses. We recommend that you maintain your process templates in a repository for version control.
 
-[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)  
-
-
+[![Export process](media/cust-wit-form-export-process.png)](import-process/import-process.md#export-process)[![Edit XML definition file(s)](media/cust-wit-form-edit-def-file.png)](../../../reference/xml/weblayout-xml-elements.md)[![Import process](media/cust-wit-form-import-process.png)](import-process/import-process.md)![Refresh and verify changes](media/cust-wit-form-refresh-verify.png)
 
 ## Related articles
-- [Customize a Hosted XML process](./import-process/customize-process.md)  
-- [Import a process](./import-process/import-process.md)  
-- [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md)  
+
+- [Customize a Hosted XML process](./import-process/customize-process.md)
+- [Import a process](./import-process/import-process.md)
+- [Change a project from Hosted XML to Inheritance](change-process-from-hosted-to-inherited.md)
+- [Differences between Inheritance and Hosted XML](./inheritance-vs-hosted-xml.md)
 - [Work tracking object limits](object-limits.md)
 - [REST APIS: Processes](/rest/api/vsts/processes/processes)
-
-
-
-
