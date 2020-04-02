@@ -14,7 +14,7 @@ ms.date: 4/01/2020
 
 # Differences between Inheritance and Hosted XML
 
-[!INCLUDE [temp](../../../boards/includes/version-azure-devops.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 If you are currently on Hosted XML and looking to move your process to Inherited, here is a comparison chart of the differences you can expect between the two customization models.
 
