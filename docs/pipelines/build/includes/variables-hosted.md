@@ -230,6 +230,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <li><code>CheckInShelveset</code>: <strong>Gated check-in</strong> trigger.</li>
 <li><code>PullRequest</code>: The build was triggered by a Git branch policy that requires a build.</li>
 <li><code>BuildCompletion</code>: The build was <a href="/azure/devops/pipelines/build/triggers#BuildCompletion" data-raw-source="[triggered by another build](../../process/pipeline-triggers.md)">triggered by another build</a></li>
+<li><code>ResourceTrigger</code>: The build was <a href="/azure/devops/pipelines/process/resources#resources-pipelines" data-raw-source="[triggered by a resource trigger](../../process/resource.md)">triggered by another build</a></li>
 </ul>
 See <a href="/azure/devops/pipelines/build/triggers" data-raw-source="[Build pipeline triggers](../triggers.md)">Build pipeline triggers</a>, <a href="/azure/devops/repos/git/branch-policies" data-raw-source="[Improve code quality with branch policies](../../../repos/git/branch-policies.md)">Improve code quality with branch policies</a>.
 </td>
