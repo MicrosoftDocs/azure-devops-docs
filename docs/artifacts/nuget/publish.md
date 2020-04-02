@@ -10,10 +10,10 @@ monikerRange: '>= tfs-2017'
 
 # Publish a NuGet package from the command line
 
-**Azure DevOps Services** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services** | **Team Foundation Server 2018** | **Team Foundation Server 2017**
 
 [!INCLUDE [](../includes/nuget/publish.md)]
 
 ## Working with upstream sources
-To learn about how to set up your upstream sources, see [Configure upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). For more information on how to use the available upstream sources, check out [Upstream sources](../concepts/upstream-sources.md) concept article.
+To learn about how to set up your upstream sources, see [Configure upstream sources for Azure DevOps](../how-to/set-up-upstream-sources.md). For more information on how to use the available upstream sources, see the [Upstream sources](../concepts/upstream-sources.md) conceptual article.
 
