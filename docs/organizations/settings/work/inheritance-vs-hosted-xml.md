@@ -14,7 +14,7 @@ ms.date: 4/01/2020
 
 # Differences between Inheritance and Hosted XML
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 If you are currently on Hosted XML and looking to move your process to Inherited, here is a comparison chart of the differences you can expect between the two customization models.
 
@@ -40,3 +40,9 @@ If you are currently on Hosted XML and looking to move your process to Inherited
 | Disable process                      | Supported                                                                                                      | Supported                     |
 | REST API                             | Supported                                                                                                      | Not supported                 |
 | Work item extensions                 | Supported                                                                                                      | Supported                     |
+
+## Related articles
+
+- [About process customization and inherited processes](./inheritance-process-model.md)
+- [Clone a Hosted process to an inheritance process](./upgrade-hosted-to-inherited.md)
+- [Change a projects from Hosted XML to an inherited process](./change-process-from-hosted-to-inherited.md)
