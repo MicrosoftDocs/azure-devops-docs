@@ -77,3 +77,4 @@ When you connect to Azure DevOps Services, you can use the following tools subje
 
 - [Work tracking object limits](../object-limits.md)   
 - [Customize work tracking](../../../../reference/customize-work.md) 
+- [Differences between Inheritance and Hosted XML](../inheritance-vs-hosted-xml.md)
