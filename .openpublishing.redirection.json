@@ -12314,6 +12314,11 @@
       "source_path": "docs/extend/support/help.md",
       "redirect_url": "/azure/devops/marketplace-extensibility",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/invite-outside-users.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-external-user",
+      "redirect_document_id": false
     }
   ]
 }
