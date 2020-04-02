@@ -90,14 +90,14 @@ If you don't use Azure Active Directory (Azure AD), as described in the next sec
 
 - Add users to your organization from the **Organization Settings>Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
 
-	At this level, you specify the access level and the project(s) the user is added to. For details, see [Add users to your organization or project](add-organization-users.md).
+    At this level, you specify the access level and the project(s) the user is added to. For details, see [Add users to your organization or project](add-organization-users.md).
 
 - Add users to one or more teams from the **Project>Summary** page or to a specific team from the **Project Settings>Teams>Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
   
-	Unless users are granted an access level directly, or are granted an access level through a group rule, they’ll be assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization Settings>Users** page. 
+    Unless users are granted an access level directly, or are granted an access level through a group rule, they'll be assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization Settings>Users** page. 
 
 For details, see the following articles: 
 
@@ -215,5 +215,5 @@ buy more services, and purchase extensions for your organization.
 - [Default permissions and access](../security/permissions-access.md) 
 - [Set permissions at the project- or collection-level](../security/set-project-collection-level-permissions.md) 
 - [Add a user as a team administrator](../settings/add-team-administrator.md)
-- [Use Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
+- [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
 - [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
