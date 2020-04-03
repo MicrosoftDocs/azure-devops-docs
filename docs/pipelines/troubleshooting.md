@@ -53,7 +53,7 @@ YAML pipelines can have their `trigger` and `pr` trigger settings overridden in 
 
 ![Pipeline settings UI.](repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
-Check the **Override the YAML trigger from here** setting for the types of trigger available for your repo (**Continuous integration** and **Pull request validation**).
+Check the **Override the YAML trigger from here** setting for the types of trigger (**Continuous integration** or **Pull request validation**) available for your repo.
 
 ![Override YAML trigger from here.](repos/media/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
 
