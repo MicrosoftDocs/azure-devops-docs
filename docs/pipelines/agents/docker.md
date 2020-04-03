@@ -208,7 +208,7 @@ Next, we'll create the Dockerfile.
 4. Save the following content to `~/dockeragent/Dockerfile`:
 
     ```docker
-    FROM ubuntu:16.04
+    FROM ubuntu:18.04
 
     # To make it easier for build and release pipelines to run apt-get,
     # configure apt to not require confirmation (assume the -y argument by default)
@@ -222,8 +222,8 @@ Next, we'll create the Dockerfile.
             jq \
             git \
             iputils-ping \
-            libcurl3 \
-            libicu55 \
+            libcurl4 \
+            libicu60 \
             libunwind8 \
             netcat
 
