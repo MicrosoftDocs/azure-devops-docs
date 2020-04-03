@@ -188,12 +188,13 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 
 <tr>
 <td>Build.ContainerId</td>
-<td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact. 
+<td>The ID of the container for your artifact. When you upload an artifact in your pipeline, it is added to a container that is specific for that particular artifact.</td>
+<td>No</td>
 <br><br>
 
 <tr>
 <td>Build.DefinitionName</td>
-<td>The name of the build pipeline.
+<td>The name of the build pipeline.</td>
 <br><br>
 
 
@@ -336,7 +337,7 @@ Note: This value can contain whitespace or other invalid label characters. In th
 <tr>
 <td>Build.RequestedForEmail</td>
 <td>See &quot;<a href="#identity_values" data-raw-source="[How are the identity variables set?](#identity_values)">How are the identity variables set?</a>&quot;.</td>
-<td>No</td>
+<td>Yes</td>
 </tr>
 
 <tr>
