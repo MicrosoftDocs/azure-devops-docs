@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: pbora
 author: PBoraMSFT
-ms.date: 12/17/2019
+ms.date: 04/03/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -142,15 +142,17 @@ None
         <td><code>SymbolsArtifactName</code><br/>Artifact name</td>
         <td>(Optional) Specify the artifact name to use for the Symbols artifact.  The default is Symbols_$(BuildConfiguration). <br/>Default value: Symbols_$(BuildConfiguration)</td>
     </tr>
-
-[!INCLUDE [temp](../includes/control-options-arguments.md)]
-
 </table>
 
+For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+
+> [!IMPORTANT]
+> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../../build/ci-build-git.md#Use-retention-policies-to-clean-up-your-completed-builds).
+> For information about debugging your app, see [Use indexed symbols to debug your app](../../artifacts/symbols.md#Use-indexed-symbols-to-debug-your-app), [Debug with symbols in Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md), [Debug with symbols in WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md).
 
 ## Q & A
 <!-- BEGINSECTION class="md-qanda" -->
