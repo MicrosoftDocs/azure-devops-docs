@@ -285,7 +285,7 @@ resources:
 
 ### Type
 
-Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
+Pipelines support the following values for the repository type: `git`, `github`, `githubenterprise`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: git`, the `name` value refers to another repository in the same project.
