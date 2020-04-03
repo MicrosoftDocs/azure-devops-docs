@@ -12322,7 +12322,7 @@
     },
     {
       "source_path": "docs/pipelines/agents/vmss.md",
-      "redirect_url": "/azure/devops/pipeines/agents/scale-set-agents",
+      "redirect_url": "/azure/devops/pipelines/agents/scale-set-agents",
       "redirect_document_id": true
     }
   ]
