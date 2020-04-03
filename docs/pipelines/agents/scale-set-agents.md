@@ -18,7 +18,7 @@ monikerRange: azure-devops
 
 Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
-## Scale set agents compared with Microsoft-hosted and sef-hosted agents
+## Scale set agents comparison
 
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
@@ -123,7 +123,7 @@ In the following example, a new resource group and virtual machine scale set are
 
 ## Use scale set agent pool
 
-Once created, Azure Pipelines autoscales the agent machines. Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
+Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines. Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
 
 
 > [!IMPORTANT]
