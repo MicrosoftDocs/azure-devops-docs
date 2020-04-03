@@ -9,7 +9,7 @@ ms.date: 03/29/2020
 
 ### My CI or PR runs have been working fine. But, they stopped working suddenly. Updates to the code no longer start new runs.
 
-* If you use YAML pipelines, ensure that your CI or PR trigger isn't being overridden by pipeline settings in the UI. Open the editor for the pipeline and select **Triggers**. Verify that the triggers are not overridden.
+* If you use YAML pipelines, ensure that your CI or PR trigger isn't being [overridden by pipeline settings in the UI](../../troubleshooting.md#overridden-yaml-trigger-setting). Open the editor for the pipeline and select **Triggers**. Verify that the triggers are not overridden.
 
 * Ensure that your pipeline is not paused or disabled. If you have a YAML pipeline, then open the editor for the pipeline, and then select **Settings** to check. If you have a classic build pipeline, then open the editor for the pipeline, and then select **Options**.
 

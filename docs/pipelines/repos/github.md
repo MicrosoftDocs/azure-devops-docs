@@ -370,7 +370,7 @@ pr: none
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 > [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not overridden YAML PR triggers in the UI.
+> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting.md#overridden-yaml-trigger-setting).
 
 # [Classic](#tab/classic/)
 
