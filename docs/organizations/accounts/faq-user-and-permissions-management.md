@@ -275,7 +275,7 @@ If you need more Visual Studio subscriptions, learn [how to buy subscriptions](.
 
 A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access.
 
-If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [how to control organization access with Azure AD](access-with-azure-ad.md).
+If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [about controlling organization access with Azure AD](access-with-azure-ad.md).
 
 ### Q: Why did some users lose access to certain features?
 
