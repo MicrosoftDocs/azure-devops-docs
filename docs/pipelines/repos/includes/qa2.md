@@ -9,7 +9,7 @@ ms.date: 03/29/2020
 
 ### I just added CI or PR trigger to my YAML file, but updates to the code did not start a new run of the pipeline.
 
-* Ensure that your CI or PR trigger isn't being overridden by pipeline settings in the UI. Open the editor for the pipeline and select **Triggers**. Verify that the triggers are not overridden.
+* Ensure that your CI or PR trigger isn't being [overridden by pipeline settings in the UI](../../troubleshooting.md#overridden-yaml-trigger-setting). Open the editor for the pipeline and select **Triggers**. Verify that the triggers are not overridden.
 
 * Ensure that your pipeline is not paused or disabled. Open the editor for the pipeline, and then select **Settings** to check.
 
