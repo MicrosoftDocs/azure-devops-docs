@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 03/27/2020
+ms.date: 04/03/2020
 monikerRange: azure-devops
 ---
 
@@ -109,16 +109,27 @@ In the following example, a new resource group and virtual machine scale set are
     - **Maximum number of VMs in the scale set:** Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby:** Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
 
-6. When your settings are configured, choose Create to create the agent pool.
+    :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
+
+    > [!IMPORTANT]
+    > During the preview, scale set agents have the following limitations:
+    > - Selecting **Automatically tear down virtual machines after every use** has no effect. Azure Pipelines cannot automatically tear down virtual machines after every use. If your job runs on a VM that has previously run jobs, pipeline run artifacts and source may be present, unless you specify clean options in your job.
+    > - You may not select **Preserve machines with failed runs for diagnostics**.
+    > - You must not specify **0** for **Number of agents to keep on standby**. You must have at least one, or else your jobs may not run if there is no current running agent.
+
+6. When your settings are configured, choose **Create** to create the agent pool.
 
 ## Use scale set agent pool
 
 Once created, Azure Pipelines autoscales the agent machines. Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
 
-Caution must be exercised when making changes directly to the scale set in Azure portal:
 
-- You may not change many of the the scale set configuration settings in Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
-- You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
+> [!IMPORTANT]
+> Caution must be exercised when making changes directly to the scale set in Azure portal.
+> - You may not change many of the the scale set configuration settings in Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
+> - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
+
+### Limitations during the preview
 
 During the private preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
