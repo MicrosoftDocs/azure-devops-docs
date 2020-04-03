@@ -33,7 +33,7 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 
 	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
 
-3. Sign in: Run `az login` to sign in.
+3. Sign in: Run `az login` to sign in. Please note that we support only interactive or log in using user name and password with `az login`. We do not support use of service principals with `az login`. You would need to use a PAT token in this case. Refer [Log in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md) for more information on this.  
 
 4. Configure defaults: Although you can provide the organization and project for each command, we recommend you set these as defaults in configuration for seamless commanding.
 
