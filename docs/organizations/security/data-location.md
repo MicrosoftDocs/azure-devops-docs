@@ -48,7 +48,7 @@ Azure DevOps stores information that's global in nature, such as user identities
 
 ## Transferring your data
 
-Except as noted below, Microsoft doesn't transfer customer data outside of your selected region. 
+Except as noted below, Microsoft doesn't transfer customer data outside of your selected geography. 
 
 If needed, you can transfer your data using preview, beta, or other pre-release services. These services typically store your data in the United States, but may store it globally.
 
