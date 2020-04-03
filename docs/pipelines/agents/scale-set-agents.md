@@ -18,6 +18,8 @@ monikerRange: azure-devops
 
 Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
+## Scale set agents compared with Microsoft-hosted and sef-hosted agents
+
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
 - You need more memory, more processor, more storage, or more IO than what we offer in native Microsoft-hosted agents.
@@ -46,7 +48,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 Use [Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal), [Azure CLI](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-cli), or [Azure PowerShell](/azure/virtual-machine-scale-sets/quick-create-powershell) to create a scale set in your Azure subscription.
 
 - Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines.
-- Use **ScaleSet VMs** for the [orchestration mode](/azure/virtual-machine-scale-sets/orchestration-modes) of the scale set. **Virtual machines** orchestration mode is not supported.
+- Use **ScaleSet VMs** (this is the default) for the [orchestration mode](/azure/virtual-machine-scale-sets/orchestration-modes) of the scale set. **Virtual machines** orchestration mode is not supported.
 - Azure Pipelines disables autoscaling and takes over the addition and deletion of VMs based on pipeline jobs and settings that you specify on agent pool. Any **scaling** settings that you specify in the Azure portal - e.g., initial instance count, scaling policy, minimum and maximum number of VMs, or scaling thresholds - won't be used. 
 
 
@@ -106,8 +108,8 @@ In the following example, a new resource group and virtual machine scale set are
 
 5. Configure the following options:
 
-    - **Maximum number of VMs in the scale set:** Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
-    - **Number of agents to keep on standby:** Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
+    - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
+    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
@@ -125,8 +127,8 @@ Once created, Azure Pipelines autoscales the agent machines. Using a scale set a
 
 
 > [!IMPORTANT]
-> Caution must be exercised when making changes directly to the scale set in Azure portal.
-> - You may not change many of the the scale set configuration settings in Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
+> Caution must be exercised when making changes directly to the scale set in the Azure portal.
+> - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
 > - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
 ### Limitations during the preview
