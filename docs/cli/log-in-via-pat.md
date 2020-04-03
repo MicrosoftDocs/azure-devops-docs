@@ -28,7 +28,7 @@ Token:
 ```
 
 > [!NOTE]   
-> If you have already signed in with `az login`, then you don't have to provide a token as `az devops` commands now support sign in through `az login`.
+> If you have already signed in with `az login` interactively or using user name and password, then you don't have to provide a token as `az devops` commands now support sign in through `az login`. Please note that we do not support service pincipal log in via `az login` and you would need to use a PAT token in this case. 
 
 
 Once successfully signed in, this would also set your default organization to Contoso, provided there is no default organization configured.
