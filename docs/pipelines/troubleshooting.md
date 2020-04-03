@@ -5,7 +5,7 @@ ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 02/12/2020
+ms.date: 04/03/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -534,11 +534,14 @@ To increase the max timeout for a job, you can opt for any of the following.
 * Buy a Microsoft hosted agent which will give you 360 minutes for all jobs, irrespective of the repository used
 * Use a self-hosted agent to rule out any timeout issues due to the agent
 
-Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts).
+Learn more about job [timeout](process/phases.md#timeouts).
+
+> [!NOTE]
+> If your Microsoft-hosted agent jobs are timing out, ensure that you haven't specified a pipeline timeout that is less than the max timeout for a job. To check, see [Timeouts](process/phases.md#timeouts).
 
 ### Service Connection related issues
 
-To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](release/azure-rm-endpoint.md)
 
 ### Parallel jobs not running
 
@@ -548,15 +551,15 @@ There might be some scenarios where even after purchasing Microsoft-hosted paral
 * [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
 * [All available agents are in use](#all-available-agents-are-in-use)
 
-The following scenarios won’t consume a parallel job:
+The following scenarios won't consume a parallel job:
 * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
 Learn more:
-[How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
-[Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline),
-[Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
-[Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
+[How a parallel job is consumed by a pipeline](licensing/concurrent-jobs.md#how-a-parallel-job-is-consumed-by-a-pipeline),
+[Approvals within a pipeline](release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
+[Server jobs](process/phases.md#server-jobs),
+[Deployment groups](release/deployment-groups/index.md)
 
 #### You don't have enough concurrency
  
