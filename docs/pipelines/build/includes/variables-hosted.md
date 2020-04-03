@@ -548,7 +548,7 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 ## System variables
 
 <table>
-<tr><th>Variable</th><th>Description</th></tr>
+<tr><th>Variable</th><th>Description</th><th>Available in templates?</th></tr>
 
 <tr>
 <td>System.AccessToken</td>
@@ -557,16 +557,19 @@ These variables are scoped to a specific [Deployment job](../../process/deployme
 <a href="/azure/devops/pipelines/build/variables#systemaccesstoken" data-raw-source="[Use System.AccessToken from YAML scripts](../variables.md#systemaccesstoken)">Use System.AccessToken from YAML scripts</a>.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.CollectionId</td>
 <td>The GUID of the TFS collection or Azure DevOps organization</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.CollectionUri</td>
 <td>A string Team Foundation Server collection URI.</td>
+<td>Yes</td>
 </tr>
 
 
@@ -577,36 +580,43 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 [!INCLUDE [include](../includes/variables-build-sources-directory.md)]
 
 </td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.DefinitionId</td>
 <td>The ID of the build pipeline.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.HostType</td>
-<td>Set to <code>build</code> if the pipeline is a build. For a release, the values are <code>deployment</code> for a Deployment group job, <code>gates</code> during evaluation of gates, and <code>release</code> for other (Agent and Agentless) jobs.
+<td>Set to <code>build</code> if the pipeline is a build. For a release, the values are <code>deployment</code> for a Deployment group job, <code>gates</code> during evaluation of gates, and <code>release</code> for other (Agent and Agentless) jobs.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.JobAttempt</td>
 <td>Set to 1 the first time this job is attempted, and increments every time the job is retried.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.JobDisplayName</td>
 <td>The human-readable name given to a job.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.JobId</td>
 <td>A unique identifier for a single attempt of a single job.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.JobName</td>
 <td>The name of the job, typically used for expressing dependencies and accessing output variables.</td>
+<td>No</td>
 </tr>
 
 <tr>
@@ -614,62 +624,74 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Set to 1 the first time this phase is attempted, and increments every time the job is retried.<br>
 <br>
 <b>Note:</b> "Phase" is a mostly-redundant concept which represents the design-time for a job (whereas job was the runtime version of a phase). We've mostly removed the concept of "phase" from Azure Pipelines. Matrix and multi-config jobs are the only place where "phase" is still distinct from "job". One phase can instantiate multiple jobs which differ only in their inputs.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PhaseDisplayName</td>
 <td>The human-readable name given to a phase.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PhaseName</td>
 <td>A string-based identifier for a job, typically used for expressing dependencies and accessing output variables.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.StageAttempt</td>
 <td>Set to 1 the first time this stage is attempted, and increments every time the job is retried.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.StageDisplayName</td>
 <td>The human-readable name given to a stage.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.StageName</td>
 <td>A string-based identifier for a stage, typically used for expressing dependencies and accessing output variables.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.IsFork</td>
 <td>If the pull request is from a fork of the repository, this variable is set to <code>True</code>.
 Otherwise, it is set to <code>False</code>.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.PullRequestId</td>
 <td>The ID of the pull request that caused this build. For example: <code>17</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.PullRequestNumber</td>
 <td>The number of the pull request that caused this build. This variable is populated for pull requests from GitHub which have a different pull request ID and pull request number.</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceBranch</td>
 <td>The branch that is being reviewed in a pull request. For example: <code>users/raisa/new-feature</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.)</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.SourceRepositoryURI</td>
 <td>The URL to the repo that contains the pull request. For example: <code>https://dev.azure.com/ouraccount/_git/OurProject</code>. (This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Azure Repos Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Azure Repos Git PR affected by a branch policy</a>. It is not initialized for GitHub PRs.)</td>
+<td>No</td>
 </tr>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
 <td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>.</td>
+<td>No</td>
 </tr>
 
 <tr>
@@ -677,16 +699,19 @@ Otherwise, it is set to <code>False</code>.</td>
 <td>The URI of the team foundation collection. For example: <code>https://dev.azure.com/fabrikamfiber/</code>
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.TeamProject</td>
 <td>The name of the project that contains this build.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
 <td>System.TeamProjectId</td>
 <td>The ID of the project that this build belongs to.</td>
+<td>Yes</td>
 </tr>
 
 <tr>
@@ -694,5 +719,7 @@ This variable is agent-scoped, and can be used as an environment variable in a s
 <td>Set to <code>True</code> if the script is being run by a build task.
 <br/><br/>
 This variable is agent-scoped, and can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.</td>
+<td>No</td>
 </tr>
+
 </table>
