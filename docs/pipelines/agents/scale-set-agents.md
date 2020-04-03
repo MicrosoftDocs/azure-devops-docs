@@ -18,8 +18,6 @@ monikerRange: azure-devops
 
 Azure virtual machine scale set agents, hereafter referred to as scale set agents, are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run. 
 
-## Scale set agents comparison
-
 If you like Microsoft-hosted agents but are limited by what they offer, you should consider scale set agents. Here are some examples:
 
 - You need more memory, more processor, more storage, or more IO than what we offer in native Microsoft-hosted agents.
