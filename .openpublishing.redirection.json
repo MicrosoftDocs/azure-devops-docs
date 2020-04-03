@@ -12319,6 +12319,11 @@
       "source_path": "docs/organizations/accounts/invite-outside-users.md",
       "redirect_url": "/azure/devops/organizations/accounts/add-external-user",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/pipelines/agents/vmss.md",
+      "redirect_url": "/azure/devops/pipeines/agents/scale-set-agents",
+      "redirect_document_id": true
     }
   ]
 }
