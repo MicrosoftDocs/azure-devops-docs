@@ -71,7 +71,7 @@ YAML scheduled triggers are set using UTC time zone. If your scheduled triggers 
 
 If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
 
-For more information, see [Scheduled triggers](build/triggers.md).
+For more information, see [Scheduled triggers](process/scheduled-triggers.md).
 
 ## My pipeline tries to start but never gets an agent
 
