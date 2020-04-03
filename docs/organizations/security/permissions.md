@@ -3086,9 +3086,9 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 ## Related articles
 
 - [About permissions](about-permissions.md)  
+- [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
 - [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
 - [Change groups and permissions with TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd)
-
