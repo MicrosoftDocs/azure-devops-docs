@@ -53,7 +53,7 @@ landingContent:
         links:
           - text: About organizations
             url: ../organizations/accounts/organization-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-          - text: Access your organization with Azure Active Directory
+          - text: About accessing your organization with Azure Active Directory
             url: ../organizations/accounts/access-with-azure-ad.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
       - linkListType: quickstart
         links:

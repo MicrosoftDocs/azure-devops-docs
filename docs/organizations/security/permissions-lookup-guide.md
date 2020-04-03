@@ -671,7 +671,7 @@ Values in parenthesis indicate what level the permission is managed:
 
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Create and modify areas and iterations
 - Edit check-in policies
 - Edit shared work item queries
@@ -686,7 +686,7 @@ for all team projects defined in the account or collection:
 
 The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an account or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Add and administer teams and all team-related features
 - Create and modify areas and iterations
 - Edit check-in policies

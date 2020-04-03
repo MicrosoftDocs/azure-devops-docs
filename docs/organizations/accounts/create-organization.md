@@ -12,7 +12,7 @@ ms.date: 05/20/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Create an organization or project collection
+# Create an organization or project collection
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
