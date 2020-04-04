@@ -28,7 +28,7 @@ Azure DevOps data is available in the following eight geographies across the wor
 - United Kingdom
 - United States
 
-We default your organization to your closest region. However, you can choose a different region. Later on, if you change your mind, our CSS team can help you migrate your organization to a different region. 
+We default your organization to your closest geography. However, you can choose a different geography. Later on, if you change your mind, our CSS team can help you migrate your organization to a different geography. 
 
 ## Customer data
 
@@ -59,7 +59,7 @@ Microsoft will tranfer you data if it needs to do any of the following actions:
 >- comply with legal requirements
 
 > [!NOTE]
-> Microsoft doesn't control or limit the regions from which you or your users may access your data.
+> Microsoft doesn't control or limit the geographies from which you or your users may access your data.
 
 > [!NOTE]
 > Because there's only one region in Brazil, customer data is replicated to south-central United States for disaster recovery and load balancing purposes. For more information, see the [Azure data center map](https://azuredatacentermap.azurewebsites.net/).
