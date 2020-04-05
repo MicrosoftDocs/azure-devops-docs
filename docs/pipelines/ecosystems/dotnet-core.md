@@ -266,6 +266,7 @@ To restore packages from a custom feed, use the **.NET Core** task:
 # do this before your build tasks
 steps:
 - task: DotNetCoreCLI@2
+  displayName: Restore
   inputs:
     command: restore
     projects: '**/*.csproj'
