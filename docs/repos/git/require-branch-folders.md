@@ -29,7 +29,7 @@ Decide on the folder structure you want to allow.
 As an example, we'll set our repository to enforce the following rules:
 
 * Only `master` can exist at the repository root.
-* All users will be allowed to create branches under the `feature/` and `user/` folders.
+* All users will be allowed to create branches under the `feature/` and `users/` folders.
 * Administrators will be able to create branches under the `release/` folder.
 
 >[!NOTE]
