@@ -109,7 +109,7 @@ TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 ```
 
 > [!IMPORTANT]
-> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../build/ci-build-git.md#Use-retention-policies-to-clean-up-your-completed-builds).
+> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds).
 > For more information about debugging your app, see [Debug with symbols in Visual Studio](../../artifacts/symbols/debug-with-symbols-visual-studio.md), and [Debug with symbols in WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
 
 ## Q&A
