@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

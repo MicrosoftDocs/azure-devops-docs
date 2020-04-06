@@ -2,10 +2,8 @@
 title: Administer code, wiki, and work item search
 description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Services, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/05/2019

@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Review Scrum progress during and at the end of a sprint when working in Azure DevOps and Team Foundation Server 
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.prod: devops
 ms.topic: conceptual
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

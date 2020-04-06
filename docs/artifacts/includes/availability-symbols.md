@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 > [!NOTE]

@@ -2,10 +2,8 @@
 title: Assign permissions for TFS-Project Server integration
 titleSuffix: TFS 
 description: Assign permissions to support configuration and working with Team Foundation Server & Project Server  data synchronization
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: d71eb502-00d0-4904-ac79-23195a707dc9
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

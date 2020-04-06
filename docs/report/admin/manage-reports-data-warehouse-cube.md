@@ -2,10 +2,8 @@
 title: Manage data warehouse and analysis services cube | TFS 
 description: Manage SQL Server Reporting Services reports, data warehouse, and analysis services cube when connecting to an on-premises Team Foundation Server (TFS)  
 ms.assetid: 3D57E047-4922-4B4B-8736-A68B2895E846  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 

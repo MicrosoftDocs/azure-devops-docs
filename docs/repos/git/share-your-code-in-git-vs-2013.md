@@ -3,10 +3,8 @@ title: Share your code with Git using Visual Studio 2013
 titleSuffix: Azure Repos
 description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
-ms.prod: devops
 ms.technology: devops-code-git 
 toc: show
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart

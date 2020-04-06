@@ -1,11 +1,8 @@
 ---
 title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.manager: mijacobs
 ms.author: macoope
 ms.reviewer: vtbassmatt
 ms.date: 11/04/2019
@@ -241,7 +238,7 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 - script: |
     pip install pytest
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
 ```
 ::: moniker range="azure-devops"

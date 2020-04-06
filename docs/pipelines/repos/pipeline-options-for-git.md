@@ -2,12 +2,7 @@
 title: Options for Git repositories
 description: Options that are available when using a Git repository with Azure Pipelines
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.custom: seodec18
 ms.date: 11/5/2019
 monikerRange: '>= tfs-2015'
@@ -336,7 +331,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-[Your pipeline will already have access to other repos in its project](./azure-repos-git.md#authorize-access-to-your-repositories).
+Your pipeline will already have access to other repos in its project.
 If you need to clone a repo from another project that is not public, you will need to authenticate as a user who has access to that project.
 
 > [!NOTE]

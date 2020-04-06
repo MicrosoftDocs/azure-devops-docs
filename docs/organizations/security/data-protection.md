@@ -1,12 +1,10 @@
 ---
 title: Azure DevOps - Data Protection
 description: Learn how Microsoft protects your projects and data in Azure DevOps. Microsoft is committed to making sure that your projects stay safe and secure, without exception. 
-ms.prod: devops
 ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.date: 09/13/2019
 monikerRange: 'azure-devops'
 ---
@@ -77,7 +75,7 @@ To protect data in the case of hardware or service failures, Microsoft Azure sto
 > [!NOTE]
 > Note the following regarding data redundancy and fail over:
 > * There is an inherent delta measured in minutes when we replicate your data between the primary and secondary region
-> * Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we’ll opt to not fail over so that customer data is not lost
+> * Fail over to the secondary region is a decision that we must make centrally as it impacts all customers on the affected scale unit. Except in extreme circumstances, we'll opt to not fail over so that customer data is not lost
 > * Azure DevOps offers a 99.9% uptime SLA guarantee and will refund portion of the monthly charges if we miss the SLA in a specific month
 > * Because there is only one region in Brazil, customer data in Brazil is replicated to South Central US for disaster recovery purposes
 
@@ -89,7 +87,7 @@ In addition, we perform a "soft delete" for organization deletion operations. Th
 
 ### Practice is critical
 
-Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. As mentioned, we have the capability of restoring your organization’s data to any point in time over the last 28 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
+Having multiple, redundant backups of your data is good but without practice, restoring can be unpredictable. It's been said that "backups never fail, it's the restores that do". While technically incorrect, the sentiment is right. The good news is that we regularly practice restoring various data sets from backup. The geo-redundant storage that we get from Azure is tested regularly. In addition, from time to time we restore from backups to recover from human error, such as when a customer has inadvertently deleted a project in Azure DevOps. As mentioned, we have the capability of restoring your organization's data to any point in time over the last 28 days. While our turnaround time sometimes takes more than day, we have always been able to restore the customer's data given enough time. Since there are many permutations of disaster and data corruption scenarios, we continue to plan and execute new tests on a regular basis to ensure our systems and associated process are up to the challenge.
 
 ## Service availability
 
@@ -160,9 +158,9 @@ you and Azure DevOps, we encrypt via HTTPS / SSL.
 
 In addition, data we store on your behalf in Azure DevOps is encrypted as follows:
 
-• For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by performing real-time encryption of the database, associated backups, and transaction log files at rest.
+* For data stored in Azure SQL databases, Azure DevOps adopted [Transparent Data Encryption (TDE)](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-azure-sql?view=sql-server-2017) to protect against the threat of malicious activity by performing real-time encryption of the database, associated backups, and transaction log files at rest.
 
-• Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
+* Azure Blob Storage connections are encrypted to protect your data in transit. To protect data at rest stored in our Azure Blob Storage, we have adopted [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption).
 
 To learn more about how we encrypt your data, please visit the following [blog post](https://blogs.msdn.microsoft.com/devops/2017/09/05/visual-studio-team-services-encryption-at-rest/).
 
@@ -262,8 +260,7 @@ Another action you can take to improve the security of your end users' credentia
 | 2-factor authentication enrollment | User | Organization
 | Device-based conditional access | No | Organization
 
-You can learn more about how to
-[configure this support for your organization](../accounts/access-with-azure-ad.md).
+Learn more about [configuring this support for your organization](../accounts/access-with-azure-ad.md).
 
 ### Require two-factor authentication
 

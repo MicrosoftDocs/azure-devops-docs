@@ -1,10 +1,8 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: TFS/Dashboards/WidgetContracts EventArgs API | Extensions for Azure DevOps Services
 description: Documentation for the EventArgs contract.
 ms.assetid: 5EFE9556-443A-4E6E-B372-330FC754A589
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

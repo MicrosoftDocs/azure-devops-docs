@@ -7,9 +7,7 @@ f1_keywords:
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -302,7 +300,12 @@ Use the following three controls to manage your views in the web portal.
 > | ![Filter](../media/icons/filter-icon.png) | [Turn filtering On/Off](#filter)  | 
 > | ![full screen icon](../media/icons/full-screen-icon.png) / ![exit full screen icon](../media/icons/exit-full-screen-icon.png)     | Enter or exit full screen mode      |
 
+## Q & A 
+
+[!INCLUDE [temp](../includes/faq-view-all-work-items.md)] 
+
 ## Related articles
+
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
 - [Enable preview features](../../project/navigation/preview-features.md)

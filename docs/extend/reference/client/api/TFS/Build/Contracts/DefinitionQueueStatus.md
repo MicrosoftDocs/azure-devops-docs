@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts DefinitionQueueStatus API | Extensions for Azure DevOps Services
 description: Data representation of a definition queue status.
 ms.assetid: 7586dd3e-2742-6bb2-3764-d6ebab7c99e8
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

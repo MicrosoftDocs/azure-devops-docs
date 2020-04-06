@@ -2,15 +2,12 @@
 title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 4/4/2019
+ms.date: 02/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -286,6 +283,8 @@ jobs:
   steps:
   # publish an artifact called drop
   - task: PublishBuildArtifacts@1
+    inputs:
+      artifactName: drop
 
   # deploy to Azure Web App staging
   - task: AzureWebApp@1

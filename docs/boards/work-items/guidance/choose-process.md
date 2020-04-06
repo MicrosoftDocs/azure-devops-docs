@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Choose a process or process template, work with project artifacts in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 702EE9E5-7AEA-49B6-9DB0-B12A882979C8
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -22,8 +20,13 @@ Anytime you create a project, you must choose a process or process template base
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 
 - A **process template** defines the building blocks of the work item tracking system as well as other sub-systems you access through Azure Boards or an on-premises Azure DevOps Server or Team Foundation Server (TFS). It supports Hosted XML and On-premises XML process models which support customization of projects through the modification and import of XML definition files. 
 
+[!INCLUDE [temp](../../includes/note-configure-customize.md)]
+
 For details on creating a project using the process of your choice, see [Create a project](../../../organizations/projects/create-project.md). To learn more about process models, see [Customize your work tracking experience](../../../reference/customize-work.md). 
 
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
+
+The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -31,11 +34,6 @@ For details on creating a project using the process of your choice, see [Create 
 > To view and manage Inherited process models, see [Manage processes](/azure/devops/organizations/settings/work/manage-process).
 
 ::: moniker-end
-
-[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
-
-
-The work tracking objects contained within the default processes and process templates&mdash;Basic, Agile, CMMI, and Scrum&mdash;are the same and are summarized below. The Basic process is available from Azure DevOps Server 2019.1 and later versions. For simplicity, they are referred to as a "process."
 
 
 <a id="template_intro"></a>
@@ -51,10 +49,9 @@ Scrum is the next most light-weight. Agile supports many Agile method terms, and
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
-> [!NOTE]   
-> The Basic process is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions.  
+[!INCLUDE [temp](../../includes/note-basic-process.md)]
 
 ::: moniker-end
 

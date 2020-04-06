@@ -10,7 +10,7 @@
     href: get-started/pipelines-sign-up.md
   - name: Create your first pipeline
     href: create-first-pipeline.md
-    displayName: status badge, get started, first pipeline, import from github
+    displayName: status badge, get started, first pipeline, import from github, clone pipeline
   - name: Create your first pipeline from the CLI
     href: create-first-pipeline-cli.md
 # - name: Publish build results 
@@ -24,9 +24,6 @@
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
   items:
-  - name: Pipeline run sequence
-    href: process/runs.md
-    displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
   - name: Key concepts
     href: get-started/key-pipelines-concepts.md
   - name: Jobs & stages 
@@ -46,39 +43,39 @@
     - name: Specify demands 
       href: process/demands.md
       displayName: task demands, manually entered demands, capabilities
-  - name: Approvals, checks, & gates
+  - name: Repositories
     items:
-    - name: Release approval and gates overview 
-      href: release/approvals/index.md
-    - name: Define approvals & checks
-      href: process/approvals.md
-      displayName: approvals, checks
-    - name: Define a gate
-      href: release/approvals/gates.md
-    - name: Use approvals and gates
-      href: release/deploy-using-approvals.md
-    - name: Use approvals for release deployment control
-      href: release/approvals/approvals.md
-  - name: Repositories & triggers
-    items:
-    - name: Specify pipeline triggers  
-      href: build/triggers.md
-      displayName: scheduled, scheduled triggers, pr, pr triggers, ci, ci triggers, build completion triggers
     - name: Supported repositories 
       href: repos/index.md
-      displayName: supported repository types
+      displayName: supported repository types, version control, azure repos git, tfvc, github, bitbucket, subversion, ghe, 
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, branch policy, access token, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch, exit code 128
     - name: GitHub
       href: repos/github.md
-      displayName: public project, private project, github organization, repository permissions, github app, trigger, ci trigger, push trigger, pr trigger, comment trigger, checkout path, submodules, shallow fetch, sync sources, status badge, github checks
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, github app, oauth, pat, open source, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, clone, fetch, get sources, checks, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+    - name: BitBucket Cloud
+      href: repos/bitbucket.md
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, triggers, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
     - name: TFVC
       href: repos/tfvc.md
-    - name: Pipeline options for Git
-      href: repos/pipeline-options-for-git.md
-      displayName: branch, clean, label sources, tag sources, checkout path, checkout submodules, checkout files from LFS, clone a second repo, sync sources, shallow fetch
+      displayName: tfvc, version control, workspace, ci, gated, checkin, mappings, scroch, triggers, path filter, clean
     - name: Multi-repo checkout
       href: repos/multi-repo-checkout.md
+  - name: Triggers
+    items:
+    - name: Types of triggers
+      href: build/triggers.md
+      displayName: ci, pr, pull request, triggers, azure repos git, github, bitbucket, tfvc, release triggers, scheduled, pipeline triggers, build completion triggers, comment triggers, CD triggers, stage triggers, YAML triggers
+    - name: Scheduled triggers
+      href: process/scheduled-triggers.md
+      displayName: schedule, cron, daily, weekly, monthly, nightly, scheduled runs, crontab
+    - name: Pipeline completion triggers
+      href: process/pipeline-triggers.md
+      displayName: build completion, completion trigger, pipeline resource
+    - name: Release triggers (classic)
+      href: release/triggers.md
+      displayName: release trigger, CD trigger, stage trigger, environment trigger, deploy PR, scheduled trigger, schedule
   - name: Tasks & templates
     items:
     - name: Task types & usage 
@@ -99,6 +96,8 @@
       displayName: secrets, expressions, queue time, expansion
     - name: Use predefined variables
       href: build/variables.md
+    - name: Use runtime parameters
+      href: process/runtime-parameters.md
     - name: Use classic RM variables
       href: release/variables.md
       displayName: identity, system, build, agent, deployment job, System.AccessToken, System.Debug
@@ -109,6 +108,27 @@
       href: library/secure-files.md
     - name: Manage service connections
       href: library/service-endpoints.md
+  - name: Approvals, checks, & gates
+    items:
+    - name: Release approval and gates overview 
+      href: release/approvals/index.md
+    - name: Define approvals & checks
+      href: process/approvals.md
+      displayName: approvals, checks
+    - name: Define a gate
+      href: release/approvals/gates.md
+    - name: Use approvals and gates
+      href: release/deploy-using-approvals.md
+    - name: Use approvals for release deployment control
+      href: release/approvals/approvals.md
+  - name: Pipeline runs
+    items:
+    - name: Pipeline run sequence
+      href: process/runs.md
+      displayName: process the pipeline, process pipeline, request an agent, request agent, pool requests, step, timeouts, disconnects
+    - name: Job access tokens
+      href: process/access-tokens.md
+      displayName: job access token, identity, build service account, project build service account, collection build service account, access token, build service
   - name: Pipeline reports
     items:
     - name: View pipeline reports
@@ -181,7 +201,7 @@
   - name: Run Git commands
     href: scripts/git-commands.md
   - name: Reduce build time using caching (Preview)
-    href: caching/index.md
+    href: release/caching.md
   - name: Configure build run numbers
     href: process/run-number.md
     displayName: build number, run number, tokens, variables, 
@@ -236,6 +256,8 @@
       href: library/connect-to-azure.md
     - name: Azure SQL database
       href: targets/azure-sqldb.md
+    - name: Azure App Service
+      href: targets/deploy-to-azure-vscode.md  
     - name: Azure Stack
       href: targets/azure-stack.md
     - name: Function App on Container
@@ -252,6 +274,8 @@
       href: targets/webapp.md
 - name: Deploy apps (Classic) 
   items:
+  - name: Deploy from multiple branches
+    href: release/deploy-mulitple-branches.md    
   - name: Deploy pull request builds
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
@@ -344,7 +368,8 @@
     href: packages/jenkins.md
 - name: Manage pipeline infrastructure
   items: 
-  - name: About pipeline infrastructure 
+  #- name: About pipeline infrastructure
+  - name: Add resources 
     href: process/resources.md
   - name: Set retention policies
     href: policies/retention.md
@@ -379,13 +404,16 @@
       href: agents/v2-windows.md
     - name: Windows agents (TFS 2015)
       href: agents/v1-windows.md
+    - name: Scale set agents
+      href: agents/vmss.md
+      displayName: byos, elastic agents, VMSS, autoscale
     - name: Run an agent behind a web proxy
       href: agents/proxy.md
     - name: Run an agent in Docker
       href: agents/docker.md
     - name: Use a self-signed certificate
       href: agents/certificate.md
-  - name: Use deployment groups (Classic)
+  - name: Use deployment groups
     items: 
 #    - name: About deployment groups & deployment group jobs
 #      href: release/deployment-groups/index.md
@@ -730,8 +758,28 @@
     href: process/artifact-policy.md
 - name: Case studies & best practices
   items:
+  - name: Pipelines security walkthrough
+    items:
+    - name: Overview
+      href: security/overview.md
+    - name: Approach to securing YAML pipelines
+      href: security/approach.md
+    - name: Repository protection
+      href: security/repos.md
+    - name: Pipeline resources
+      href: security/resources.md
+    - name: Project structure
+      href: security/projects.md
+    - name: Security through templates
+      href: security/templates.md
+    - name: Variables and parameters
+      href: security/inputs.md
+    - name: Shared infrastructure
+      href: security/infrastructure.md
+    - name: Other security considerations
+      href: security/misc.md
   - name: Add continuous security validation 
-    href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json  
+    href: ../migrate/security-validation-cicd-pipeline.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
   - name: Build & deploy automation 
     href: ../migrate/build-deployment-best-practices.md?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json 
   - name: Progressively expose releases using deployment rings 

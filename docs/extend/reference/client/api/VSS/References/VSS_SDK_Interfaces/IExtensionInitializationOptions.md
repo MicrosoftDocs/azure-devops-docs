@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IExtensionInitializationOptions API | Extensions for Azure DevOps Services
 description: Options for the extension&#x27;s initialization method
 ms.assetid: 0fa9821c-ca82-1bb3-9801-d859845925fd
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

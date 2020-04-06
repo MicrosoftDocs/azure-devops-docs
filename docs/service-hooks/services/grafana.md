@@ -1,5 +1,4 @@
 ﻿---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook for Grafana

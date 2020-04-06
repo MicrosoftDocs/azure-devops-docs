@@ -3,9 +3,7 @@ title: Clone a Git repository in a public project
 titleSuffix: Azure DevOps Services Public Project
 description: Create a local copy of a repo using Visual Studio or command line clone 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x 
 ms.topic: conceptual

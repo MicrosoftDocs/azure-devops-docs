@@ -2,10 +2,8 @@
 title: Remove users from AD/Azure AD security groups 
 titleSuffix: Azure DevOps
 description: Manage changes to an organization when users leave a project or company by removing their user account from AD/Azure AD security groups  
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

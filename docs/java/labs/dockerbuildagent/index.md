@@ -1,11 +1,9 @@
 ---
 title: Configure a private Docker build agent for your Java project with Azure DevOps Services 
 description: Tutorial lab for configuring Java build agents for Docker with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

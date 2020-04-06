@@ -1,7 +1,6 @@
 ---
 title: Git & TFVC updates plus improved test traceability … – June 20
 description: VSTS release notes for June 17 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: fa3df506-57bb-4910-9dca-4bf1b567b97e
@@ -94,13 +93,13 @@ It’s a recommended practice to use Release Environments to deploy applications
 
 ## Release – Support Java PMD analysis in Maven build task
 
-You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box).
+You can now request a PMD analysis in the Maven build task and see the number of issues in the build summary. The Artefact tab of the build summary contains the results of the PMD static analysis. Multiple pom files are supported. For the moment, this only works with the Linux agent. More information is available at this [blog post](https://devblogs.microsoft.com/devops/the-maven-build-task-now-supports-pmd-analysis-out-of-the-box/).
 
 ![Running a PMD analysis in the Maven build task](media/6_17_10.png)
 
 ## Build – SonarQube with a Gradle build task
 
-You can now trigger a SonarQube analysis in the Gradle build task by checking **Run SonarQube Analysis**, and providing the endpoint, the SonarQube project name, the project key and the version. More information is available at this [blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/06/15/the-gradle-build-task-now-supports-sonarqube-analysis). 
+You can now trigger a SonarQube analysis in the Gradle build task by checking **Run SonarQube Analysis**, and providing the endpoint, the SonarQube project name, the project key and the version. More information is available at this [blog post](https://devblogs.microsoft.com/devops/the-gradle-build-task-now-supports-sonarqube-analysis/). 
 
 ![SonarQube analysis in the Gradle build task](media/6_17_11.png)
 

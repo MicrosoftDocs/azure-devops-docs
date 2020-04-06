@@ -2,11 +2,9 @@
 title: Use @mentions in work items and pull requests 
 titleSuffix: Azure DevOps 
 description: Alert team members using the @mention control in work items and pull requests 
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -80,6 +78,11 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 ![Email sent to at-mention user organization](media/mail-to-at-mention-user.png)
 
 Use the <strong>@mention</strong> control in pull request discussions, commit comments, changeset comments, and shelveset comments.
+
+> [!NOTE]
+> Do not copy/paste <strong>@mention</strong> users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
+
+::: moniker-end
 
 ## Related articles
 

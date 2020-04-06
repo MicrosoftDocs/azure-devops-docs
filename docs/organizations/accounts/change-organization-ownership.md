@@ -3,14 +3,12 @@ title: Change the owner of an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to assign a different user as the owner for your organization. Also learn what permissions are required to make updates.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/20/2019
+ms.date: 01/24/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -20,11 +18,14 @@ monikerRange: 'azure-devops'
 
 As roles and responsibilities change, you can change the owner for your organization. In this article, learn how to update the organization owner in Azure DevOps.
 
+For organizations connected to Azure Active Directory (Azure AD),  if your organization Owner and any other Project Collection Administrators are no longer active, you can [transfer ownership to another user](resolve-orphaned-organization.md).  
+
 <a name="ChangeOwner"></a>
 
 ## Prerequisites
 
-To change the organization Owner, you must have [*Project Collection Administrator* or *organization Owner* permissions](faq-change-organization-ownership.md#find-owner-pca).
+You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md).
+
 If no one in the organization has these permissions, contact
 [Azure DevOps Support](https://azure.microsoft.com/support/devops).
 
@@ -39,16 +40,24 @@ Make sure the new owner has completed the following tasks:
 
 1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`).
 
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+1. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
+    ![Select "Organization settings"](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Overview**, and then **Change owner**.  
+1. Select **Overview**, and then **Change owner**.  
 
-   ![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
+    ![Select Overview, and then Change owner](media/change-organization-ownership/change-organization-owner.png)
 
-4. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
+1. Select a user from the dropdown menu, or search for a user by entering the user's name, and then select **Change**.
 
-   ![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
+    ![Enter and save a new organization Owner](media/change-organization-ownership/save-new-organization-owner.png)
 
    Your organization has a new owner.
+
+## Related articles
+
+- [Assign a new owner to your orphaned organization](resolve-orphaned-organization.md)
+- [Change organization location](change-organization-location.md)
+- [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
+
+ 

@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps Services
 ms.custom: seodec18  
 description: Quickstart guide to signing up and inviting others to join a project in Azure DevOps
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/15/2019

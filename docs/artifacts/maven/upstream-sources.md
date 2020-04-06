@@ -1,11 +1,7 @@
 ---
 title: Use packages from Maven Central
 description: Use packages from Maven Central in Azure DevOps Services via upstream sources
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 11/13/2017
 monikerRange: '=azure-devops'

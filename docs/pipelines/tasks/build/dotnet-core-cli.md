@@ -3,10 +3,7 @@ title: .NET Core CLI task
 ms.custom: seodec18
 description: Build, test, package, or publish a dotnet application, or run a custom dotnet command. For package commands, supports NuGet.org and authenticated feeds like Package Management and MyGet.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 5541a522-603c-47ad-91fc-a4b1d163081b
-ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/30/2019
@@ -108,9 +105,9 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
   inputs:
     command: 'build'
     projects: |
-     src/proj1/proj1.csproj 
-     src/proj2/proj2.csproj 
-     src/other/other.sln    # Pass a solution instead of a csproj.
+      src/proj1/proj1.csproj 
+      src/proj2/proj2.csproj 
+      src/other/other.sln    # Pass a solution instead of a csproj.
 ```
 
 ## Push
@@ -129,7 +126,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 ### Push NuGet packages to external feed
 
 ```YAML
-# Push all NuGet packages from a build to internal organization Feed
+# Push all NuGet packages from a build to external Feed
 - task: DotNetCoreCLI@2
   inputs:
     command: 'push'
@@ -204,10 +201,10 @@ However, for situations where a team of developers works on a large range of pro
 
 ### File structure for output files is different from previous builds
 
-Azure DevOps hosted agents are configured with .Net Core 3.0, 2.1 and 2.2.
-CLI for .Net Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
+Azure DevOps hosted agents are configured with .NET Core 3.0, 2.1 and 2.2.
+CLI for .NET Core 3.0 has a different behavior while publishing projects using output folder argument. When publishing projects with the output folder argument (-o), the output folder is created in the root directory and not in the project file’s directory. Hence while publishing more than one projects, all the files are published to the same directory, which causes an issue.
 
-To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .Net Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
+To resolve this issue, use the *Add project name to publish path* parameter (modifyOutputPath in YAML) in the .NET Core CLI task. This creates a sub folder with project file’s name, inside the output folder. Hence all your projects will be published under different sub-folder’s inside the main output folder.
 
 ```YAML
 steps:

@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
 ms.custom: seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 7130A14B-C760-4622-B97A-8DA27A1B3D02  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

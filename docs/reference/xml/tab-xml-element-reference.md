@@ -2,10 +2,8 @@
 title: Tab XML element reference 
 titleSuffix: TFS
 description: Uses to cluster a group of fields or to support one or more special controls.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fe932d65-20d4-46ab-aca0-f4a8423929b4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 02/14/2017

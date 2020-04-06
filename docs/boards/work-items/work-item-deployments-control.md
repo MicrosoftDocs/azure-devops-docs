@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Link your work item to releases to visualize which deployments include your work items
 ms.custom: boards-work-items  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'

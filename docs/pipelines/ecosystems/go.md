@@ -1,16 +1,11 @@
 ---
 title: Build and test Go projects 
 description: Build and test Go projects with Azure Pipelines & Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: a72557df-6df4-4fb6-b437-be0730624e3c
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: azooinmyluggage
 ms.custom: seodec18
-ms.date: 12/31/2019
+ms.date: 01/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -197,9 +192,10 @@ Use `dep ensure` if your project uses dep to download dependencies imported in y
 Use `go build` to build your Go project. Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-- script: go build -v .
-  workingDirectory: '$(modulePath)'
-  displayName: 'Build'
+- task: Go@0
+  inputs:
+    command: 'build'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
 ```
 
 ## Test
@@ -207,9 +203,11 @@ Use `go build` to build your Go project. Add the following snippet to your `azur
 Use `go test` to test your go module and its subdirectories (`./...`). Add the following snippet to your `azure-pipelines.yml` file:
 
 ```yaml
-- script: go test -v ./...
-  workingDirectory: '$(modulePath)'
-  displayName: 'Run tests'
+- task: Go@0
+  inputs:
+    command: 'test'
+    arguments: '-v'
+    workingDirectory: '$(modulePath)'
 ```
 
 ## Build an image and push to container registry

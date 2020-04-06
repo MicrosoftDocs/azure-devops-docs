@@ -1,6 +1,12 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
+
 
 1. On the **Files** tab of the **Code** hub, click **Set up build**.
 

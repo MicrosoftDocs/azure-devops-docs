@@ -1,7 +1,6 @@
 ---
 title: Card colors and personal access tokens – Jul 7
 description: VSTS release notes for July 7 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 66780d76-a567-492d-b0ef-eccf20b89633

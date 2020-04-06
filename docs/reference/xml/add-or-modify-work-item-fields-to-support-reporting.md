@@ -2,12 +2,10 @@
 title: Change reporting attributes 
 titleSuffix: TFS
 description: Customize which fields appear in the relational warehouse or cube to support reporting for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 8b963584-88fd-423a-8f88-61cadf9e1373
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= azure-devops-2019'
 ms.date: 02/10/2017

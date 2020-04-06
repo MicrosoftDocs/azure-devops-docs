@@ -3,10 +3,8 @@ title: Share information using READMEs or Wikis in Azure DevOps
 titleSuffix: Azure DevOps
 description: Share information using READMEs or Wikis in Azure DevOps  
 ms.technology: devops-collab
-ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 08/01/2019

@@ -2,14 +2,11 @@
 title: Delete Files task
 description: Delete files from the agent working directory when building code in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: C71CD55E-3028-4526-A9C3-779ECE31CCD1
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 12/13/2019
+ms.date: 02/12/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -33,43 +30,11 @@ None
 
 ## Arguments
 
-<table>
-<thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
-</thead>
-<tr>
-<td>Source Folder</td>
-<td>
-<p>Folder that contains the files you want to delete. If you leave it empty, the deletions are done from the root folder of the repo (same as if you had specified <code>$(Build.SourcesDirectory)</code>).</p>
-<p>If your build produces artifacts outside of the sources directory, specify <code>$(Agent.BuildDirectory)</code> to delete files from the build agent working directory.</p>
-</td>
-</tr>
-<tr>
-<td>Contents</td>
-<td>
-<p>Specify minimatch pattern filters (one on each line) that you want to apply to the list of files to be deleted. For example:
-</p>
-<ul>
-<li><code>**/*</code> deletes all files and folders in the root folder.</li>
-<li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li>
-<li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with <em>temp</em>.</li>
-<li><code>**/temp/*</code> deletes all files in any sub-folder named <em>temp</em>.</li>
-<li><code>**/temp*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li>
-<li><code>!(*.vsix)</code> deletes all files in the root folder that do not have a <em>.vsix</em> extension.</li>
-</ul>
-</td>
-</tr>
-
-
-<tr>
-<th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
-</tr>
-
-</table>
-
+|Argument|Description|
+|--- |--- |
+|`SourceFolder`<br/>Source Folder|(Optional) Folder that contains the files you want to delete. If you leave it empty, the deletions are done from the root folder of the repo (same as if you had specified [**$(Build.SourcesDirectory)**](../../build/variables.md)). <br/>If your build produces artifacts outside of the sources directory, specify **`$(Agent.BuildDirectory)`** to delete files from the build agent working directory.|
+|`Contents`<br/>Contents|(Required) File/folder paths to delete. Supports multiple lines of minimatch patterns; each one is processed before moving onto the next line. [More Information](../file-matching-patterns.md). <br/> For example:<ul><li><code>**/*</code> deletes all files and folders in the root folder.</li><li><code>temp</code> deletes the <em>temp</em> folder in the root folder.</li><li><code>temp*</code> deletes any file or folder in the root folder with a name that begins with <em>temp</em>.</li><li><code>\*\*/temp/*</code> deletes all files in any sub-folder named <em>temp</em>.</li><li><code>\*\*/temp*</code> deletes any file or folder with a name that begins with <em>temp</em>.</li><li><code>!(*.vsix)</code> deletes all files in the root folder that do not have a <em>.vsix</em> extension.</li></ul>|
+|`RemoveSourceFolder`<br/>Remove SourceFolder|(Optional) Attempt to remove the source folder as well <br/>Default value: `false`|
 ## Examples
 
 ### Delete several patterns
@@ -85,6 +50,19 @@ steps:
       some/file
       test*
       **/bin/*
+```
+
+### Delete all but one subdirectory
+
+This example will delete `some/one` and `some/four` but will leave `some/two` and `some/three`.
+
+```yaml
+steps:
+- task: DeleteFiles@1
+  displayName: 'Remove unneeded files'
+  inputs:
+    contents: |
+      some/!({two,three})
 ```
 
 ## Open source

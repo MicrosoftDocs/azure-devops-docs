@@ -3,10 +3,8 @@ title: Grant or restrict access to select features
 titleSuffix: Azure DevOps
 description: How to set permissions to grant or restrict access to select build, version control, or work tracking functions  
 ms.assetid: ee4c4a8f-0478-4ade-8b12-4e5ffd0054c7
-ms.prod: devops
 ms.topic: Conceptual
 ms.technology: devops-security
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -66,32 +64,27 @@ To delegate tasks to other members within your organization, consider creating a
 <td width="45%"><strong>Permissions to set to Allow</strong>
 </td>
 </tr>
-
 <tr>
 <td>Development lead (Git)</td>
 <td> Manage branch policies</td>
 <td>Edit policies, Force push, and Manage permissions<br/>See <a href="../../repos/git/branch-permissions.md" data-raw-source="[Set branch permissions](../../repos/git/branch-permissions.md)">Set branch permissions</a>.</td>
 </tr>
-
 <tr>
 <td>Development lead (TFVC)</td>
 <td>Manage repository and branches</td>
 <td>Administer labels, Manage branch, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
-
 <tr>
 <td>Software architect (Git)</td>
 <td>Manage repositories</td>
 <td>Create repositories, Force push, and Manage permissions<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
-
 <tr>
 <td>Team administrators</td>
 <td>Add area paths for their team<br/>Add shared queries for their team</td>
 <td>Create child nodes, Delete this node, Edit this node<br/>See <a href="set-permissions-access-work-tracking.md#set-permissions-area-path" data-raw-source="[Create child nodes, modify work items under an area path](set-permissions-access-work-tracking.md#set-permissions-area-path)">Create child nodes, modify work items under an area path</a><br/>
 Contribute, Delete, Manage permissions (for a query folder), See <a href="../../boards/queries/set-query-permissions.md" data-raw-source="[Set query permissions](../../boards/queries/set-query-permissions.md)">Set query permissions</a>.</td>
 </tr>
-
 <tr>
 <td>Contributors</td>
 <td>Add shared queries under a query folder, Contribute to dashboards</td>
@@ -99,33 +92,27 @@ Contribute, Delete, Manage permissions (for a query folder), See <a href="../../
 View, Edit, and Manage dashboards, See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.
 </td>
 </tr>
-
 <tr>
 <td>Project or product manager</td>
 <td>Add area paths, iteration paths, and shared queries<br/>
 Delete and restore work items, Move work items out of this project, Permanently delete work items</td>
 <td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
-
-
 <tr>
 <td>Process template manager (<a href="../settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../settings/work/inheritance-process-model.md)">Inheritance process model</a>)</td>
 <td>Work tracking customization </td>
 <td>Administer process permissions, Create new projects, Create process, Delete field from account, Delete process, Delete project, Edit process<br/>See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
-
 <tr>
 <td>Process template manager (<a href="../settings/work/hosted-xml-process-model.md" data-raw-source="[Hosted XML process model](../settings/work/hosted-xml-process-model.md)">Hosted XML process model</a>)</td>
 <td>Work tracking customization </td>
 <td>Edit collection-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
-
 <tr>
 <td>Project management (<a href="../../reference/on-premises-xml-process-model.md" data-raw-source="[On-premises XML process model](../../reference/on-premises-xml-process-model.md)">On-premises XML process model</a>)</td>
 <td>Work tracking customization </td>
 <td>Edit project-level information, See <a href="set-project-collection-level-permissions.md" data-raw-source="[Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md)">Add administrators, set permissions at the project-level or project collection-level</a>.</td>
 </tr>
-
 <tr>
 <td>Permissions manager</td>
 <td>Manage permissions for a project, account, or collection </td>
@@ -138,7 +125,6 @@ For an account or collection, Edit instance-level (or collection-level) informat
 <li><a href="../../project/wiki/manage-readme-wiki-permissions.md" data-raw-source="[Manage Wiki permissions](../../project/wiki/manage-readme-wiki-permissions.md)">Manage Wiki permissions</a>.</li>
 </td>
 </tr>
-
 </table>
 
 ## Restrict access to view or modify objects  
@@ -152,43 +138,32 @@ Azure DevOps is designed to enable all valid users to view all objects defined i
 <td width="75%"><strong>Permissions to set to Deny</strong>
 </td>
 </tr>
-
 <tr>
 <td>View or contribute to a repository</td>
 <td>View, Contribute<br/>See <a href="set-git-tfvc-repository-permissions.md" data-raw-source="[Set repository permissions for Git or TFVC](set-git-tfvc-repository-permissions.md)">Set repository permissions for Git or TFVC</a>.</td>
 </tr>
-
 <tr>
 <td>View, create, or modify work items within an area path</td>
 <td>Edit work items in this node, View work items in this node<br/>See <a href="set-permissions-access-work-tracking.md" data-raw-source="[Set permissions and access for work tracking, Modify work items under an area path](set-permissions-access-work-tracking.md)">Set permissions and access for work tracking, Modify work items under an area path</a>.</td>
 </tr>
-
 <tr>
 <td>View or update select build and release pipelines</td>
 <td>Edit build pipeline, View build pipeline<br/>
 Edit release pipeline, View release pipeline<br/>
 You set these permissions at the object level. See <a href="../../pipelines/policies/set-permissions.md" data-raw-source="[Set build and release permissions](../../pipelines/policies/set-permissions.md)">Set build and release permissions</a>.</td>
 </tr>
-
 <tr>
 <td>Edit a dashboard</td>
 <td>View dashboards<br/>
 See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="[Set dashboard permissions](../../report/dashboards/dashboard-permissions.md)">Set dashboard permissions</a>.</td>
 </tr>
-
 </table>
 
 <a id="restrict-modifications-wits" />
 
 ## Restrict modification of work items based on a user or group  
 
-::: moniker range="azure-devops-2019"
-
-### Inheritance process model
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
@@ -201,11 +176,13 @@ For example, the following condition indicates that the State field, for the Ini
 > ![Custom rule](media/grant-restrict/restrict-creating-work-items-inheritance.png)   
 
 You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-### Online XML process model
+> [!NOTE]
+> The ability to restrict modification of work items based on a user or group is only supported with the On-premises XML process model at this time for on-premises Azure DevOps. 
 
 ::: moniker-end
 

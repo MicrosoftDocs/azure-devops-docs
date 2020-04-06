@@ -2,10 +2,8 @@
 title: Pipeline task duration sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline task duration Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE

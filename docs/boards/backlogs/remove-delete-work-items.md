@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: How to remove, delete, change type, or move work items to another project in Azure Boards or TFS 
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 306929CA-DB58-45E3-AD45-B774901789D3  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -376,6 +374,10 @@ To cause removed items to not show up in queries, you must add a clause that fil
 
 Deleted work items won't appear in your backlogs, boards, or queries. Deleted items are moved to a Recycle bin from which you can recover them if needed. To delete a test case, test plan, or test suite, or other test-related work item types, see [Delete test artifacts](delete-test-artifacts.md). 
 
+> [!NOTE]   
+> To permanently delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**. 
+
+
 #### [Browser](#tab/browser/)
 
 ::: moniker range=">= azure-devops-2019"
@@ -436,10 +438,16 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 	![Confirm delete dialog](media/move-change-delete/delete-work-items-dialog-tfs.png)
 
 	> [!NOTE]    
-	> The Delete work items confirmation dialog for on-premises TFS may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
+	> The Delete work items confirmation dialog for on-premises Azure DevOps may indicate there are auto-delete settings (disabled). There are no settings you can enable or disable. There is only a background process which permanently deletes work items that have been set to delete.   
 
 ::: moniker-end
 
+::: moniker range="tfs-2013"  
+
+> [!NOTE]  
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi**command. 
+
+::: moniker-end
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 ::: moniker range="= azure-devops"

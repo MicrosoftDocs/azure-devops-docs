@@ -3,9 +3,7 @@ title: Permissions and role lookup guide
 titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -88,7 +86,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -123,7 +121,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit project-level information (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release state (Object)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>Edit shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">Edit shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit shared Analytics views (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit task group (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">Edit this node (Area Path, Object)</a></li>
@@ -147,7 +145,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
@@ -236,7 +234,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../pipelines/policies/permissions.md">View releases (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View instance-level information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View project-level information (Project)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>View shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">View shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View system synchronization information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View test runs (Project)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
@@ -289,7 +287,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
-<li><a href="permissions.md#view-audit-log-permission">Audit log</a></li>
 
 
 
@@ -328,7 +325,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -364,7 +361,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit project-level information (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit release state (Object)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>Edit shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">Edit shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Edit shared Analytics views (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Edit task group (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">Edit this node (Area Path, Object)</a></li>
@@ -388,7 +385,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Make requests on behalf of others (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
@@ -480,7 +477,7 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-project-collection-level-permissions.md#collection-level">View instance-level information (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">View instance level information (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View project-level information (Project)</a></li>
-<li><a href="../../report/powerbi/analytics-security.md>View shared Analytics views (Object)</a></li>
+<li><a href="../../report/powerbi/analytics-security.md">View shared Analytics views (Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View system synchronization information (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">View test runs (Project)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
@@ -548,7 +545,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete builds (Object)</a></li>
 <li><a href="../settings/work/customize-process-field.md" data-raw-source="[Delete field from account](../settings/work/customize-process-field.md)">Delete field from account</a></li>
@@ -674,7 +671,7 @@ Values in parenthesis indicate what level the permission is managed:
 
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Create and modify areas and iterations
 - Edit check-in policies
 - Edit shared work item queries
@@ -689,7 +686,7 @@ for all team projects defined in the account or collection:
 
 The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an account or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Add and administer teams and all team-related features
 - Create and modify areas and iterations
 - Edit check-in policies

@@ -2,13 +2,8 @@
 title: NuGet restore, pack, and publish task
 ms.custom: seodec18
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 09/10/2019
 monikerRange: '>= tfs-2018'
 ---
@@ -19,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
+Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
 ::: moniker range="<= tfs-2018"
 
@@ -101,12 +96,33 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
 
 ```YAML
-# Restore project
+# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    feedsToUse: Select
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
     restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from an organization scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-organization-scoped-feed'
+    restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from feed(s) set in nuget.config
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
 ```
 
 ### Package
@@ -139,7 +155,7 @@ Push/Publish a package to a feed defined in your NuGet.config.
     nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
 ```
 
-Push/Publish a package to a feed you define in the task
+Push/Publish a package to a feed in the same organization you define in the task
 
 ```YAML
 # Push a project
@@ -147,6 +163,7 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
     publishVstsFeed: 'myTestFeed'
 ```
 

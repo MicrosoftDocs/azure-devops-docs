@@ -2,11 +2,9 @@
 title: CMMI process guidance, Plan a project  
 titleSuffix: Azure Boards
 description: Understand the desired outcome of planning a project  
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 26f38202-a173-4d10-9d56-03c9ff69546d
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
