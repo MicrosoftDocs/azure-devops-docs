@@ -50,7 +50,8 @@ A: We recommend using Azure DevOps Services Client Libraries over REST APIs when
 
 A: Yes, you can use ADAL to create client-side applications for an MSA backed account using ADAL with some limitations. Instead of configuring ADAL with a `Client ID` or `Reply URL` from Azure portal, MSA users can use the `Client ID: "872cd9fa-d31f-45e0-9eab-6e460a02d1f1"` and `Reply URL: "urn:ietf:wg:oauth:2.0:oob"` as replacement values to get a valid ADAL access token without needing an Azure Active Directory. 
 
->Note: This approach will only work for client side applications. For JS web apps, ADAL JS will not work without an Azure AD tenant.
+> [!NOTE] 
+> This approach only works for client side applications. For JS web apps, ADAL JS doesn't work without an Azure AD tenant.
 
 ### Q: Is this guidance only for Azure DevOps Services or is it also relevant for on-premises TFS users?
 
