@@ -33,7 +33,7 @@ Token:
 
 Once successfully signed in, this command would also set your default organization to Contoso, provided there is no default organization configured.
 
-For automation scenarios, you might want to gain access in a non-interactive manner. You can achieve this by using one of the following methods:
+To gain access in a non-interactive manner for automation scenarios, you can use environment variables or fetch a PAT from a file. 
 
 ## Use environment variables 
 
