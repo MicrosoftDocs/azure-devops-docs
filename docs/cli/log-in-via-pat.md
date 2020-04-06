@@ -19,7 +19,7 @@ ms.date: 06/18/2019
 
 You can sign in using an Azure DevOps Personal Access Token. See the [create personal access token guide](https://docs.microsoft.com/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=vsts#create-personal-access-tokens-to-authenticate-access) to create one.
 
-You will be prompted to enter PAT once the `az devops login` command is run.
+You will be prompted to enter PAT after you run the `az devops login` command.
 
 
 ```bash
@@ -69,4 +69,3 @@ Now run any command without having to sign in explicitly. Each command will try 
 ```bash
 cat my_pat_token.txt | az devops login --organization https://dev.azure.com/contoso/
 ```
-
