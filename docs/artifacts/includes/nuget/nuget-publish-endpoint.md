@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 03/20/2020
+ms.date: 04/06/2020
 ---
 
 ::: moniker range=">= azure-devops-2019"
@@ -37,6 +37,14 @@ ms.date: 03/20/2020
 > * The NuGet push command requires an API key. You can use any non-empty string for this variable. In our example, we used the string `key`.
 > * For more information on using credential providers with NuGet, see [Creating a NuGet credential provider](/nuget/reference/extensibility/nuget-exe-credential-providers#creating-a-nugetexe-credential-provider).
 > * For more information on using personal access tokens, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
+
+## Publish a NuGet package by using the NuGet CLI
+
+To publish your package by using the NuGet CLI, you need the following variables:
+
+- **SourceName**: The name of your feed created in step 1 of this article.
+- **SourceURL**: The feed URL (step 6). You can find it in the **Project setup** section, under `value`. In the Azure DevOps portal, go to **Artifact** > **Your feed name** > **Connect to feed** > **Project setup**.
+- **UserName** and **PAT**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ::: moniker-end
 
