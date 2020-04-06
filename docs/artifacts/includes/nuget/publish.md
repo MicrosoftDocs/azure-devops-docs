@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 03/20/2020
+ms.date: 04/06/2020
 ---
 
 Publish NuGet packages to a feed in Azure Artifacts to share them with your team and your organization.
@@ -11,14 +11,6 @@ Publish NuGet packages to a feed in Azure Artifacts to share them with your team
 First, get the tools and your feed URL:
 
 [!INCLUDE [](nuget-publish-endpoint.md)]
-
-## Publish a NuGet package by using the NuGet CLI
-
-To publish your package by using the NuGet CLI, you need the following variables:
-
-- **SourceName**: The name of your feed created in step 1 of this article.
-- **SourceURL**: The feed URL (step 6). You can find it in the **Project setup** section, under `value`. In the Azure DevOps portal, go to **Artifact** > **Your feed name** > **Connect to feed** > **Project setup**.
-- **UserName** and **Pat**: Your username and personal access token. For help with setting up your credentials, see [Authenticate access with personal access tokens](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
 
 ### Install and publish a sample NuGet package  
 
