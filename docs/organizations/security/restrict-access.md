@@ -169,9 +169,6 @@ For the [Inheritance process model](../../organizations/settings/work/inheritanc
 
 For example, the Priority field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a User Story, they are unable to change the value on the Priority field.
 
-> [!div class="mx-imgBorder"]  
-> ![Custom rule](media/grant-restrict/restrict-creating-work-items-inheritance.png)   
-
 You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
 
 ::: moniker-end
