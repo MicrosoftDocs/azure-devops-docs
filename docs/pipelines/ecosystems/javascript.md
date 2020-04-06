@@ -1,12 +1,7 @@
 ---
 title: Build and deploy JavaScript and Node.js apps
 description: Automatically build JavaScript and Node.js apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019
@@ -559,9 +554,14 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
+- task: CopyFiles@2
+  inputs:
+    Contents: '**' ## update to match what you want to copy
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
 - task: PublishBuildArtifacts@1
   inputs: 
-    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
+    pathtoPublish: $(Build.ArtifactStagingDirectory) # dist or build files
 ```
 
 ::: moniker-end

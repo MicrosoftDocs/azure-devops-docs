@@ -2,10 +2,8 @@
 title: Manage association of enterprise projects to projects
 titleSuffix: TFS 
 description: Understand how to map enterprise projects using Team Foundation Server & Project Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b759773e-1c79-4e2e-abdf-522e1a34fdfb
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/14/2020
 ---
 
 You can modify these build and release pipelines to meet the needs of your team. To learn more see one of these tutorials:

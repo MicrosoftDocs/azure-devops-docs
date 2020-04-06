@@ -1,12 +1,10 @@
-﻿---
+---
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
 description: Add workflow states to a work item type for an inherited process for a project
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -123,6 +121,8 @@ You can hide an inherited state that your team doesn't use in its workflow proce
  
 
 ## Related articles   
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add or modify a work item type](customize-process-wit.md)
 - [Add and manage fields](customize-process-field.md)  

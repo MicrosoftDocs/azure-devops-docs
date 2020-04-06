@@ -2,10 +2,8 @@
 title: Add Continuous Security Validation to your CICD Pipeline
 description: Explore how to add continuous security validation to your CI/CD pipeline
 ms.assetid: D46740A0-BEF0-421E-9B64-08287777458D
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE

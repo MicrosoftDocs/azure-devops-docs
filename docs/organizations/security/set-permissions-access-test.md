@@ -3,9 +3,7 @@ title: Set permissions and access for manual testing
 titleSuffix: Azure DevOps
 description: How to grant or restrict access to manual test tasks for Azure DevOps & TFS
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

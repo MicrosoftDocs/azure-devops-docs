@@ -2,10 +2,8 @@
 title: Run automated tests with MTM
 description: Manual and exploratory testing - Run automated tests with Microsoft Test Manager
 ms.assetid: F9E8F299-6266-47E3-B896-17D8504E6165
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

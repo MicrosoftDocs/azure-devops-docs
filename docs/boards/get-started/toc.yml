@@ -6,7 +6,7 @@
   displayName: issues, user stories, tasks, epics, features, Kanban, board, workflow 
   href: plan-track-work.md 
 - name: Customize your boards
-  displayName: cards, columns, field, swimlanes, settings, backlog levels, 
+  displayName: cards, columns, field, swimlanes, settings, backlog levels,
   href: customize-boards.md 
 - name: Track work as a Stakeholder
   href: /azure/devops/organizations/security/get-started-stakeholder?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
@@ -19,6 +19,9 @@
   - name: "Why use Azure Boards?"
     displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
     href: why-use-azure-boards.md
+  - name: Quick guide to default permissions and access
+    href: permissions-access-boards.md
+    displayname: security
   - name: "Area & iteration paths"
     href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "About teams & Agile tools"
@@ -30,8 +33,6 @@
   items:
   - name: Basic fields reference
     href: ../work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
-  - name: Default permissions & access (Security)
-    href: permissions-access-boards.md
   - name: Client support for work tracking
     href: /azure/devops/user-guide/tools?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 

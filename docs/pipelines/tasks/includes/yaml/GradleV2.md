@@ -1,10 +1,19 @@
+---
+ms.topic: include
+author: vijayma
+ms.author: vijayma
+ms.date: 12/17/2019
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Gradle
 # Build using a Gradle wrapper script
 - task: Gradle@2
   inputs:
     #gradleWrapperFile: 'gradlew' 
-    #workingDirectory: # Optional
+    #cwd: # Optional
     #options: # Optional
     #tasks: 'build' # A list of tasks separated by spaces, such as 'build test'
     #publishJUnitResults: true 

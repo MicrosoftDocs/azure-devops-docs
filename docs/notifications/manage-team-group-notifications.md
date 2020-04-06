@@ -3,9 +3,7 @@ title: Manage notifications for a team or group
 titleSuffix: Azure DevOps
 description: Get notified when changes occur to source code, git, work items, and builds in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 6edc44d0-2729-46f5-8108-c8a5160a6a7a
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley

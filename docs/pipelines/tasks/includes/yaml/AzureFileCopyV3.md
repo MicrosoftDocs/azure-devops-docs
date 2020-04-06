@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd
+---
+
 ```YAML
 # Azure file copy
 # Copy files to Azure Blob Storage or virtual machines
@@ -24,4 +33,21 @@
     #outputStorageUri: # Optional
     #outputStorageContainerSasToken: # Optional
     #sasTokenTimeOutInMinutes: # Optional
+```
+
+```YAML
+# Example: Upload files from Pipeline staging directory to blob storage.
+- task: AzureFileCopy@2
+  displayName: 'Example Step Name
+  inputs:
+    sourcePath: '$(Build.ArtifactStagingDirectory)/BlobsToUpload'
+    additionalArgumentsForBlobCopy: |
+      '/Y' # Supresses all AZCopy Confirmations. Used here to allow overwrites
+      '/Pattern:*' # Pattern of files to copy.
+      '/S' # Recursive Copy
+    azureSubscription: 'Subscription Name'
+    destination: AzureBlob
+    storage: storageaccountname
+    containerName: storagecontainername
+    blobPrefix: targetdirectoryincontainer
 ```

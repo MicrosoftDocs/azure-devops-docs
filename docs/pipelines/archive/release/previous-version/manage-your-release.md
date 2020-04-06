@@ -3,10 +3,7 @@ title: Manage your release with RM for VS and TFS
 ms.custom: seodec18
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -240,7 +237,7 @@ you can remap these tag sequences to a different tag if you want.
 **[vNext release path](release-without-agents.md)**, 
 you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
-**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
+**[here](https://devblogs.microsoft.com/devops/work-items-tracking-using-release-management/)**.
 
 ![Configure Apps tab; vNext Release Templates tab; Change Summary tab](media/manage-release-16.png)
 

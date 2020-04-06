@@ -1,3 +1,12 @@
+---
+ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 ```yaml
 # at the top of your YAML file 
 # set some variables that you'll need when you deploy

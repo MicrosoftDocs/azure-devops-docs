@@ -1,5 +1,7 @@
 - name: About projects
   href: about-projects.md
+- name: Project & team quick reference
+  href: project-team-quick-reference.md
 - name: What do I get with a project?
   href: /azure/devops/user-guide/services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Resources granted to members
@@ -19,9 +21,9 @@
   - name: Restore a project
     href: restore-project.md
   - name: Change service visibility
-    href: /azure/devops/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/settings/set-services?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set project visibility
-    href: /azure/devops/public/make-project-public?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/organizations/public/make-project-public?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Save project data
     href: save-project-data.md
   - name: Connect a project

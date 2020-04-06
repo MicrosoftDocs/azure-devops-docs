@@ -2,10 +2,8 @@
 title: Example of an Analytics Widget
 titleSuffix: Azure DevOps 
 description: Describes the data entities and relationships provided by Analytics for Azure DevOps   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 37253E50-28D5-4AA9-B0E1-9D09D951739F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample

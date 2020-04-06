@@ -1,13 +1,10 @@
 ---
 title: Deploy Jenkins CI builds
 description: Set up continuous integration (CI) and continuous deployment (CD) for your apps using Jenkins and Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.author: ronai
 author: mlearned
 ms.reviewer: vijayma
-ms.manager: mijacobs
 ms.assetid: CE485C57-C26A-4B9D-9D75-2FDDFB3361D6
 ms.custom: "mvc, seodec18"
 ms.date: 01/15/2019
@@ -96,15 +93,15 @@ jobs:
   pool:
     name: Default
   steps:
-    - task: AzureRmWebAppDeployment@4
-      inputs:
-        connectionType: 'AzureRM'
-        azureSubscription: your-subscription-name
-        appType: webAppLinux
-        webAppName: 'MyApp'
-        deployToSlotOrASE: false
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-        takeAppOfflineFlag: true
+  - task: AzureRmWebAppDeployment@4
+    inputs:
+      connectionType: 'AzureRM'
+      azureSubscription: your-subscription-name
+      appType: webAppLinux
+      webAppName: 'MyApp'
+      deployToSlotOrASE: false
+      packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+      takeAppOfflineFlag: true
 ...
 ```
 

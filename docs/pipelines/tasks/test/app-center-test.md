@@ -2,10 +2,7 @@
 title: App Center Test task
 description: Test app packages with Visual Studio App Center.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: AD5CD22A-BE4E-48BB-ADCE-181A32432DA5
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT

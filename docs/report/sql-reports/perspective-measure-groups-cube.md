@@ -1,12 +1,10 @@
 ---
 title: Perspectives and measure groups
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Generate reports of aggregated information about the data stored in team project collections
 ms.assetid: 9ab451df-ce11-4fc9-9aac-bedd154ba0d4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

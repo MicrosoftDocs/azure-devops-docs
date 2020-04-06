@@ -1,11 +1,9 @@
 ---
 title: Create a Java project release pipeline for deployment with Azure DevOps Services
 description: Tutorial lab for creating a Java project release pipeline for Azure Container deployment with Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 10/26/2018

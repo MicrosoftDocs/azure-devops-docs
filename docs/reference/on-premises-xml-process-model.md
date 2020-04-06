@@ -3,9 +3,7 @@ title: On-premises XML process model
 titleSuffix: TFS 
 description: Guide to configuring and customizing work tracking features for TFS and the on-premises process model  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -22,6 +20,7 @@ The On-premises XML process model provides support for customizing work tracking
 
 You customize your work tracking experience to support your business and reporting needs. The most common customizations include adding a custom field, modifying a work item form, or adding a custom work item type. 
 
+[!INCLUDE [temp](../boards/includes/note-configure-customize.md)]
 
 ::: moniker range="azure-devops-2019"  
 

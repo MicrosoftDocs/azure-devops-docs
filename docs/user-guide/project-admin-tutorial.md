@@ -4,9 +4,7 @@ titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -126,7 +124,7 @@ If you support several products, you can assign work items by feature area by de
 
 ## Customize work-tracking processes
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
   
 All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
@@ -223,15 +221,16 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ::: moniker range="azure-devops"  
 
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="< azure-devops"  
 
-- [Manage projects](../organizations/projects/index.md)
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)

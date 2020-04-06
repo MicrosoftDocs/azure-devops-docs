@@ -2,10 +2,8 @@
 title: Resolve data validation errors
 titleSuffix: Azure Boards
 description: Address rule errors that occur when publishing a list from Excel or Project to Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 4c72c12f-bd10-48a5-b71c-7c296feec71e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

@@ -1,11 +1,9 @@
-﻿---
+---
 title: Use work item templates to update stories, & more
 titleSuffix: Azure Boards   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -108,7 +106,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-If you connect to an on-premises TFS and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
+If you connect to an on-premises Azure DevOps and primarily create work items working in the web portal, you can create a hyperlink that captures the default values you specify for a template. Choose the hyperlink, and it opens the template in the web portal. 
 
 1. From the web portal Queries page, open a new work item. 
 
@@ -182,7 +180,7 @@ The main method for adding a work item using a template is to open the template 
 
     Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
-1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
+1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget).  
 
 2. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 

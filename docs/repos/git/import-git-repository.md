@@ -3,9 +3,7 @@ title: Import a Git repo into your project
 titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: quickstart
@@ -190,9 +188,9 @@ LFS objects can be moved using the following steps:
 To move over the LFS files (you will need both Git.exe and LFS client in the same box and access to both source repository and destination repository)
 - Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
 - Add the source repository as remote (say ‘source’)
-- Perform “git lfs fetch source –all”  (this will bring over all LFS files from source to your local repository)
+- Perform `git lfs fetch source --all`  (this will bring over all LFS files from source to your local repository)
 - Assuming the destination VSTS repository is your ‘target’ remote 
-- Perform “git lfs push target –all”
+- Perform `git lfs push target --all`
 
 ::: moniker-end
 

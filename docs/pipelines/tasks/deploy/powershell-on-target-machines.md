@@ -2,10 +2,7 @@
 title: PowerShell on Target Machines task
 description: PowerShell on Target Machines build task
 ms.assetid: 7E6E54ED-4605-471A-B1E6-9D00C10CA66E
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

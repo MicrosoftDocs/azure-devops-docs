@@ -2,7 +2,6 @@
 title: Use the .artifactignore file
 description: Decide what files are uploaded when you publish Universal Packages and Pipeline Artifacts with the .artifactignore file.
 ms.assetid: bbaf8799-d08b-4f1a-9546-4b3b8da40a0b
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: reference
 ms.manager: hdixon

@@ -2,10 +2,8 @@
 title: Pipeline outcome summary sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline outcome summary Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -362,6 +360,8 @@ You may want to view the pipeline outcome summary for all project pipelines in a
 - Expand Pipeline into Pipeline.PipelineName
 - Select Power BI Visualization **Slicer** and add the field Pipeline.PipelineName to the slicer's **Field**
 - Select the pipeline from the slicer for which you need to see the outcome summary.
+
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report for detailed steps. 
 
 
 #### [Power BI query](#tab/powerbi/)

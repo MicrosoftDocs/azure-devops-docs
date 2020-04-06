@@ -3,10 +3,7 @@ title: Install Release Management server & client
 ms.custom: seodec18
 description: Learn how you can install the Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015.
 ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

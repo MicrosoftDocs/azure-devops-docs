@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 ### What other kinds of apps can I build?
@@ -15,7 +20,7 @@ ms.topic: include
 
 * Git: [Improve code quality with branch policies](../../repos/git/branch-policies.md) with an option to require that code builds before it can be merged to a branch.  For GitHub repositories, similar policies are available in GitHub's repository settings under _Branches_.
 
-* TFVC: [Use gated check-in](../build/triggers.md#gated).
+* TFVC: [Use gated check-in](../repos/tfvc.md#gated).
 
 
 ### How do I modify other parts of my build pipeline?

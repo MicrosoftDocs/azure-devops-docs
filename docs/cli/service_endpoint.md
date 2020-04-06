@@ -3,7 +3,6 @@ title: Create Service Endpoint using Azure DevOps CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create Service Endpoint
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
 ms.manager: mijacobs 

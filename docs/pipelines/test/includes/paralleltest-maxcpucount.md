@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: pbora
+author: pboraMSFT
+ms.date: 02/19/2020
 ---
 
 When parallel test execution is enabled, the value of **MaxCpuCount** is set to 0 (zero) to use all the available free cores.

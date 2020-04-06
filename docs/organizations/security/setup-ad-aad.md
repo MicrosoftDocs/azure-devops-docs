@@ -1,10 +1,8 @@
-﻿---
+---
 title: Set up Active Directory / Azure AD
 description: Manage large groups of users using Active Directory (AD) for Azure DevOps Server or Azure Active Directory (Azure AD) for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -34,7 +32,7 @@ Use this topic to access articles that show you how to:
 
 Use this topic to access articles that show you how to:
 > [!div class="checklist"]
-> * Set up Active Directory for use with TFS
+> * Set up Active Directory for use with on-premises Azure DevOps Server
 
 ::: moniker-end
 
@@ -45,7 +43,7 @@ Use this topic to access articles that show you how to:
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 
-* [Access Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
+* [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
@@ -57,25 +55,17 @@ Use this topic to access articles that show you how to:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops-2019"
+
 ## Set up Active Directory for use with Azure DevOps Server
 
-Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
+Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing Azure DevOps Server.
 
 * [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
+* [Active Directory Domain Services Getting Started](/windows-server/identity/ad-ds/ad-ds-getting-started)
 
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
-## Set up Active Directory for use with an on-premises TFS
-
-Use these resources to learn about installing Active Directory. Typically, you should install Active Directory prior to installing TFS.
-
-* [Install Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
-* [Step-By-Step: Setting up Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
-
-::: moniker-end
 
 ## Next steps
 

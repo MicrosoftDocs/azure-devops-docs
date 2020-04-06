@@ -1,7 +1,6 @@
 ---
 title: Work item follow, move & change type - April 13
 description: VSTS release notes for April 13 2016
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: f610379d-99b9-4f49-ae17-7dc6d488c566
@@ -114,7 +113,7 @@ It’s never been easier to add somebody to your team.
 
 ## Collection in the domain
 
-Your Team Services account URL just got 18 characters shorter. We’ve removed “/DefaultCollection” from the path. While it’s small, but welcome change. It’s the beginning of a larger journey to how we structure accounts. [Learn more here](https://blogs.msdn.microsoft.com/visualstudioalm/2016/04/09/merging-the-concepts-of-account-and-collection/).
+Your Team Services account URL just got 18 characters shorter. We’ve removed “/DefaultCollection” from the path. While it’s small, but welcome change. It’s the beginning of a larger journey to how we structure accounts. [Learn more here](https://devblogs.microsoft.com/devops/merging-the-concepts-of-account-and-collection/).
 
 Note that existing accounts will still give out the longer URL for Git Clones in the Code hub. This is because to use the new shorter URL in VS, you will need to reconnect Team Explorer using the shorter URL. Today you either need to use the long or the short URL for an account in VS, you can’t intermingle. Once we have enough clients updated such that they just work seamlessly with either type, we’ll change the default Git Clone URL to the shorter one as well.
 

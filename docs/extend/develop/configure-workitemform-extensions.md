@@ -1,11 +1,9 @@
 ---
 title: Configure work item form extensions in TFS | Extensions for Azure DevOps Services
 description: Describes how to add and configure work item form extensions in TFS.
-ms.prod: devops
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

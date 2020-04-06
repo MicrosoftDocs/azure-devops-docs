@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Index to those fields used in the Basic process for Azure Boards
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:  
 ms.topic: reference  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'

@@ -2,10 +2,8 @@
 title: View synchronization engine error messages
 titleSuffix: TFS 
 description: View synchronization engine error messages when using Team Foundation Server & Project Server integration
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: cd4e04e2-7a15-4a2c-8833-301f1292cdba
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

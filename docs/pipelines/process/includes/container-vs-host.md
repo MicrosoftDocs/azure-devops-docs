@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
 ---
 
 On Linux and Windows agents, jobs may be run [on the host](../phases.md) or [in a container](../container-phases.md).

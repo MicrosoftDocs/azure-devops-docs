@@ -1,14 +1,9 @@
 ---
 title: Environment
-description: Collection of deployment targets useful for traceability and recoding deployment history
+description: Collection of deployment targets useful for traceability and recording deployment history
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 05/03/2019
+ms.date: 02/10/2020
 monikerRange: azure-devops
 ---
 
@@ -16,14 +11,14 @@ monikerRange: azure-devops
 
 [!INCLUDE [include](../includes/version-team-services.md)]
 
-Environment represents a collection of resources such as namespaces within Kubernetes clusters, Azure Web Apps, virtual machines, databases, which can be targeted by deployments from a pipeline. Typical examples of environments include *Dev, Test, QA, Staging and Production.*
+An environment is a collection of resources that can be targeted by deployments from a pipeline. Environments can include Kubernetes clusters, Azure web apps, virtual machines, databases. Typical examples of environment names are Dev, Test, QA, Staging, and Production.
 
 The advantages of using environments include the following.
 
 - **Deployment history** - Pipeline name and run details are recorded for deployments to an environment and its resources. In the context of multiple pipelines targeting the same environment or resource, [deployment history](#deployment-history) of an environment is useful to identify the source of changes.
-- **Traceability of commits and work items** - View jobs within the pipeline run that targeted an environment and the corresponding [commits and work items](#deployment-history) that were newly deployed to the environment. This allows one to track whether a code change (commit) or feature/bug-fix (work items) reached an environment.
-- **Diagnose resource health** - The resource health related information shown in resource views allows one to validate whether the application is functioning at its desired state or whether it has regressed post deployments.
-- **Permissions** - User permissions and pipeline permissions can be used to secure environments by specifying which users and pipelines are allowed to target an environment.
+- **Traceability of commits and work items** - View jobs within the pipeline run that target an environment. You can also view the [commits and work items](#deployment-history) that were newly deployed to the environment. Traceability also allows one to track whether a code change (commit) or feature/bug-fix (work items) reached an environment.
+- **Diagnose resource health** - Validate whether the application is functioning at its desired state.
+- **Permissions** - Secure environments by specifying which users and pipelines are allowed to target an environment.
 
 ## Resources
 
@@ -40,10 +35,10 @@ While environment at its core is a grouping of resources, the resources themselv
    > [!div class="mx-imgBorder"]
    > ![Environments](media/environments-nav.png)
 
-3. After keying in the name of an environment (required) and the description (optional), one can choose to either create an environment with no resources or create an environment with a Kubernetes resource. Note that resources can be added to an existing environment later as well.
+3. After adding the name of an environment (required) and the description (optional), you can create an environment. Resources can be added to an existing environment later as well.
 
 > [!TIP]
-> It is possible to create an empty environment and reference the same from deployment jobs to record the deployment history against the environment.
+> It is possible to create an empty environment and reference it from deployment jobs. This will let you record the deployment history against the environment.
 
 > [!NOTE]
 > You can use a Pipeline to create, and deploy to environments as well. To learn more, see the [how to guide](../ecosystems/kubernetes/aks-template.md)
@@ -77,7 +72,7 @@ A [deployment job](deployment-jobs.md) is a collection of steps to be run sequen
 
 ## Target a specific resource within an environment from deployment job
 
-It is possible to scope down the target of deployment to a particular resource within the environment as shown below. This allows for recording deployment history on a specific resource within the environment as opposed to recoding the history on all resources in the environment. Also, the steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job as shown in the following example. 
+You can scope the target of deployment to a particular resource within the environment. This allows you to record deployment history on a specific resource within the environment. The steps of the deployment job **automatically inherit** the service connection details from resource targeted by the deployment job. 
 
 ```YAML
 environment: 'smarthotel-dev.bookings'
@@ -107,7 +102,7 @@ All  environments targeted by deployment jobs of a specific run of a pipeline ca
 
 ## Approvals
 
-You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control if and when a stage in a pipeline can consume a resource. As an owner of a resource, such as an environment, you can define checks that must be satisfied before a stage consuming that resource can start. 
+You can manually control when a stage should run using approval checks. You can use approval checks to control deployments to production environments. Checks are a mechanism available to the *resource owner* to control when a stage in a pipeline consumes resource. As the owner of a resource, such as an environment, you can [define approvals and checks](approvals.md) that must be satisfied before a stage consuming that resource starts. 
 
 Currently, manual approval checks are supported on environments. 
 For more information, see [Approvals](approvals.md).
@@ -118,13 +113,13 @@ For more information, see [Approvals](approvals.md).
 
 The deployment history view within environments provides the following advantages.
 
-1. View jobs from all pipelines that are targeting a specific environment. Consider the scenario where two microservices, each having its own pipeline, are deploying to the same environment. In that case, the deployment history listing helps identify all pipelines that are impacting this environment and also helps visualize the sequence of deployments by each of these pipelines.
+1. View jobs from all pipelines that are targeting a specific environment. Consider the scenario where two microservices, each having its own pipeline, are deploying to the same environment. In that case, the deployment history listing helps identify all pipelines that are impacting this environment and also helps visualize the sequence of deployments by each pipeline.
 
    > [!div class="mx-imgBorder"]
    > ![Deployment history](media/environments-deployment-history.png)
 
 
-2. Drilldown into the job details reveals the listing of commits and work items that were newly deployed to the environment.
+2. Drill down into the job details reveals the listing of commits and work items that were newly deployed to the environment.
 
    > [!div class="mx-imgBorder"]
    > ![Commits under deployment history](media/environments-deployment-history-commits.png)
@@ -132,26 +127,26 @@ The deployment history view within environments provides the following advantage
 ## Security
 
 ### User permissions
-You can control who can create, view, use and manage the environments with user permissions. You have four roles i.e. Creator (scope: all environments), Reader, User and Administrator roles to manage each of these actions. In the specific environment's **user permissions** panel, you can set the permissions which are inherited and you can override the roles for each environment. 
+You can control who can create, view, use, and manage the environments with user permissions. There are four roles - Creator (scope: all environments), Reader, User, and Administrator. In the specific environment's **user permissions** panel, you can set the permissions that are inherited and you can override the roles for each environment. 
 
--  Navigate to the specific **environment** that you would like to authorize. 
--  Click on overflow menu button located at the top right part of the page next to "Add resource" and choose **Security** to view the settings.
+-  Navigate to the specific **Environment** that you would like to authorize. 
+-  Click on overflow menu button located at the top-right part of the page next to "Add resource" and choose **Security** to view the settings.
 -  In the **User permissions** blade, click on **+Add** to add a **User or group** and select a suitable **Role**. 
 
 | Role on an environment | Purpose |
 |------------------------------------|---------|
-| Creator | Global role, available from enviroments hub security option. Members of this role can create the environment in the project. Contributors are added as members by default. Not applicable for environments auto created from YAML pipeline.|
+| Creator | Global role, available from environments hub security option. Members of this role can create the environment in the project. Contributors are added as members by default. Not applicable for environments auto created from YAML pipeline.|
 | Reader | Members of this role can view the environment. |
 | User | Members of this role can use the environment when authoring yaml pipelines. |
-| Administrator | In addition to using the environment, members of this role can manage membership of all other roles for the environment in the project. Creators are added as members by default. |
+| Administrator | In addition to using the environment, members of this role can manage membership of all other roles for the environment. Creators are added as members by default. |
 
 > [!NOTE]
-> - In case of auto created environments from YAML, contributors and project administrators will be granted **Administrator** role. Typically used in provisioning Dev/Test environments.
-> - In case the environment is created from UI, only the creator will be granted the **Administrator** role. Hence it is reccommended to create protected environments such as production from UI.
+> - If you create an environment within a YAML, contributors and project administrators will be granted **Administrator** role. This is typically used in provisioning Dev/Test environments.
+> - If you create an environment through the UI, only the creator will be granted the **Administrator** role. You should use the UI to create protected environments like for a production environment.
 
 ### Pipeline permissions
 
-Pipeline permissions can be used to authorize either all or specific pipelines for deploying to the environment of concern.
+Pipeline permissions can be used to authorize all or selected pipelines for deployment to the environment.
 
-- To remove **Open access** on the environment/resource to all the pipelines in the project, click on **Restrict permission** button in the **Pipeline permissions** blade.
-- To allow specific pipelines to deploy to the environment or a specific resource, click on **+** button and choose from the list of pipelines.
+- To remove **Open access** on the environment or resource, click the **Restrict permission** in **Pipeline permissions**.
+- To allow specific pipelines to deploy to an environment or a specific resource, click **+** and choose from the list of pipelines.

@@ -3,9 +3,7 @@ title: Version Control - Branching strategies with TFVC
 titleSuffix: Azure Repos
 description: Learn about branching strategies for Team Foundation Version Control (TFVC) and how to select an effective strategy
 ms.assetid: C9659CD5-CC5D-4522-9DB7-B887F361819F
-ms.prod: devops
 ms.technology: devops-code-tfvc 
-ms.manager: mijacobs
 ms.date: 04/25/2018
 ms.author: sdanie
 author: wpschaub

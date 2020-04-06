@@ -3,9 +3,7 @@ title: Import repositories from TFVC to Git
 titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folderImport your repositories from TFVC to Git repositories within the same account.
 ms.assetid: cf1a4dc8-7143-4b0e-8a43-1680533fb3cb
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: atinb
 author: apawast
 ms.topic: conceptual

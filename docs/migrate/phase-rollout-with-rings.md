@@ -2,10 +2,8 @@
 title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE
@@ -107,7 +105,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
+> Review [CI/CD Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
 
 ## Dealing with monitoring and noise
 

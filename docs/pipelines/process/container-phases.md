@@ -3,14 +3,9 @@ title: Container Jobs in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Run pipeline jobs inside of a container
 ms.assetid: 8d35f78a-f386-4699-9280-7bd933de9e7b
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
 ms.date: 01/21/2020
 monikerRange: '>= azure-devops-2019'
-author: juliakm
 ---
 
 # Define container jobs (YAML)
@@ -113,8 +108,8 @@ steps:
 
 > [!Note]
 > Windows requires that the kernel version of the host and container match.
-> Since this example uses the hosted Windows Container pool, which is running an 1803
-> build, we also use the `1803` tag for the container.
+> Since this example uses the hosted Windows Container pool, which is running a windows-2019
+> build, we will use the `2019` tag for the container.
 
 ## Multiple jobs
 
@@ -138,7 +133,7 @@ strategy:
 container: $[ variables['containerImage'] ]
 
 steps:
-  - script: printenv
+- script: printenv
 ```
 
 ## Endpoints
@@ -222,7 +217,7 @@ jobs:
   container: $[ variables['containerResource'] ]
 
   steps:
-    - script: printenv
+  - script: printenv
 ```
 
 ## Non glibc-based containers

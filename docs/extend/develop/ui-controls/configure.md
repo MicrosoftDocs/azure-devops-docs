@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Configure UI Controls | Extensions for Azure DevOps Services
 description: How to configure UI controls in your extension for Azure DevOps Services.
 ms.assetid: D013BBD0-CC9E-538F-39BD-9433AFCC7A6D
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley

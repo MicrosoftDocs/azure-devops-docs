@@ -3,9 +3,7 @@ title: Delivery plan keyboard shortcuts
 titleSuffix: Azure Boards
 description: Use keyboard shortcuts to interact with delivery plans in Azure Boards, Azure DevOps, & Team Foundation Server     
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -5,8 +5,6 @@ description: Learn how to configure CI/CD for the app and platform of your choic
 layout: LandingPage
 hide_bc: true
 ms.topic: landing-page
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: mijacobs 
 ms.author: sdanie

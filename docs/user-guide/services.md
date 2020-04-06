@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the services provided by in Azure DevOps Services and Team Foundation Server 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley

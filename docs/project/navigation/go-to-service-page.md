@@ -3,10 +3,8 @@ title: Navigate to an application or functional area
 titleSuffix: Azure DevOps 
 description: Access the application area or change your view
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

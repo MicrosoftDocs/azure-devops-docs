@@ -2,10 +2,8 @@
 title: Run URL-based cloud load tests
 description: Get app performance data when you load test using the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 65E96414-756B-4BD9-92C3-4DDB4C7A6B57
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

@@ -3,9 +3,7 @@ title: New work item web form
 titleSuffix: TFS 
 description: The new web form and work item tracking experience supports more integrated and collaborative experiences
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: B4CE99F5-BF4C-4B93-89DC-20C5BD9FB54E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017 <= azure-devops-2019'

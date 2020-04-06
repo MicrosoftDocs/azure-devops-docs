@@ -2,7 +2,6 @@
 title: Delivery Timeline | REST API Reference for Team Foundation Server
 description: Work with delivery timeline plans programmatically using the REST APIs for Team Foundation Server. 
 ms.contentid: D7B8FEC4-75F9-432E-8140-091C535C514B
-ms.prod: devops
 ---
 
 # Delivery timeline
