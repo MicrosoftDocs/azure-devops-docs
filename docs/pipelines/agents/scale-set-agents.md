@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/03/2020
+ms.date: 04/06/2020
 monikerRange: azure-devops
 ---
 
@@ -46,8 +46,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 Use [Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal), [Azure CLI](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-cli), or [Azure PowerShell](/azure/virtual-machine-scale-sets/quick-create-powershell) to create a scale set in your Azure subscription.
 
 - Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines.
-- Use **ScaleSet VMs** (this is the default) for the [orchestration mode](/azure/virtual-machine-scale-sets/orchestration-modes) of the scale set. **Virtual machines** orchestration mode is not supported.
-- Azure Pipelines disables autoscaling and takes over the addition and deletion of VMs based on pipeline jobs and settings that you specify on agent pool. Any **scaling** settings that you specify in the Azure portal - e.g., initial instance count, scaling policy, minimum and maximum number of VMs, or scaling thresholds - won't be used. 
+
 
 
 ### Create a virtual machine scale set
@@ -62,10 +61,10 @@ In the following example, a new resource group and virtual machine scale set are
     az account list -o table
     ```
 
-    If your desired subscription isn't listed at the default, select your desired subscription. 
+    If your desired subscription isn't listed as the default, select your desired subscription. 
 
     ```azurecli
-    az account set -s af56db7f-5953-4018-8ca8-e20dbfa0d7c2
+    az account set -s <your subscription ID>
     ```
 
 3. Create a resource group for your virtual machine scale set.
@@ -80,14 +79,44 @@ In the following example, a new resource group and virtual machine scale set are
 
     ```azurecli
     az vmss create \
+    --name vmssagentspool \
     --resource-group vmssagents \
-    --name vmssagentsVM \
     --image UbuntuLTS \
-    --upgrade-policy-mode automatic \
-    --orchestration-mode ScaleSetVM
-    --admin-username azureuser \
-    --generate-ssh-keys
+    --vm-sku Standard_D2_v3 \
+    --storage-sku StandardSSD_LRS \
+    --authentication-type SSH \
+    --instance-count 0 \
+    --disable-overprovision \
+    --upgrade-policy-mode manual \
+    --load-balancer ""
     ```
+
+    Because Azure Pipelines manages the scale set, the following settings are required:
+
+    * `--disable-overprovision`
+    * `--upgrade-policy-mode manual`
+    * `--load-balancer ""`
+    * `--instance-count 0` - this setting is not required but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
+
+5. After creating your scale set, navigate to your scale set in the Azure Portal and verify the following settings:
+
+    * **Upgrade policy - Manual**
+
+        :::image type="content" source="media/scale-set-agents/upgrade-policy.png" alt-text="Verify upgrade policy." :::
+
+        You can also verify this setting by running the following command in cloud shell.
+
+        ```azurecli
+        az vmss show --resource-group vmssagents --name vmssagentspool --output table
+
+        Name            ResourceGroup    Location    Zones    Capacity    Overprovision    UpgradePolicy
+        --------------  ---------------  ----------  -------  ----------  ---------------  ---------------
+        vmssagentspool  vmssagents       westus               0           False            Manual
+        ```
+
+    * **Scaling - Manual scale**
+
+        :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
 
 ### Create the agent pool
 
