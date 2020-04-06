@@ -3,11 +3,6 @@ title: Maven Authenticate task (for task runners)
 ms.custom: seodec18
 description: Provides credentials for Azure Artifacts feeds and external Maven repositories.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/06/2019
 monikerRange: 'azure-devops'
 ---
@@ -15,9 +10,6 @@ monikerRange: 'azure-devops'
 # Package: Maven Authenticate
 
 Provides credentials for Azure Artifacts feeds and external Maven repositories in the current user's settings.xml file.
-
-> [!NOTE]
-> The Maven Authenticate task in Azure Pipelines is currently in public preview.
 
 ## YAML snippet
 
@@ -69,10 +61,11 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
 
 #### pom.xml 
 
+Project scoped feed
 ```XML
  <repository>
    <id>MyFeedInOrg1</id>
-   <url>https://pkgs.dev.azure.com/OrganzationName/_packaging/MyFeed1/Maven/v1</url>
+   <url>https://pkgs.dev.azure.com/OrganzationName/ProjectName/_packaging/MyProjectScopedFeed1/Maven/v1</url>
    <releases>
      <enabled>true</enabled>
    </releases>
@@ -82,6 +75,21 @@ You should set the repositories in your project's `pom.xml` to have the same `<i
  </repository>
 ```
 
+Organization scoped feed
+```XML
+ <repository>
+   <id>MyFeedInOrg1</id>
+   <url>https://pkgs.dev.azure.com/OrganzationName/_packaging/MyOrgScopedFeed1/Maven/v1</url>
+   <releases>
+     <enabled>true</enabled>
+   </releases>
+   <snapshots>
+     <enabled>true</enabled>
+   </snapshots>
+ </repository>
+```
+
+The Artifacts feed URL may or may not contain the project. An URL for a project scoped feed must contain the project and a URL for a organization scoped feed must not contain the project. [Learn more](../../../artifacts/feeds/project-scoped-feeds.md).
 
 ### Authenticate Maven feeds outside your organization.
 

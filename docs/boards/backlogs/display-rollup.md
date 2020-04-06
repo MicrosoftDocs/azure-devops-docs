@@ -3,9 +3,7 @@ title: Display rollup columns that show progress, counts, or totals
 titleSuffix: Azure Boards
 description: Add or remove the display of rollup columns that show progress or totals of hierarchical items 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -19,8 +17,6 @@ ms.date: 09/18/2019
 <a id="column-options">  </a>
 
 Rollup columns allow you to view progress bars or totals of numeric fields or descendant items within a hierarchy. Descendant items correspond to all child items within the hierarchy. You can add one or more rollup columns to a product or portfolio backlog. For information on linking work items in a hierarchy, see [Linking, traceability, and managing dependencies, Parent-child work item links](../queries/link-work-items-support-traceability.md#parent-child-work-item-links).
-
-[!INCLUDE [temp](../../includes/feature-rollout.md)]
 
 For example, here we show **Progress by Work Items** which displays progress bars for ascendant work items based on the percentage of descendant items that have been closed. Descendant items for Epics includes all child Features and their child or grand-child work items. Descendant items for Features includes all child User Stories and their child work items.
 

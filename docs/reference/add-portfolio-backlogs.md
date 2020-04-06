@@ -3,9 +3,7 @@ title: Add portfolio backlogs
 titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

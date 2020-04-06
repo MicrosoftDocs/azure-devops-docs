@@ -1,12 +1,11 @@
 ---
 title: Install Maven artifacts from your feed using the Maven client
 description: Successfully install Maven artifacts from Azure DevOps Services or Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.assetid: 0f66e727-e76a-4a72-be12-3fa1775b9e2c
 ms.manager: jenp
-ms.author: phwilson
-author: chasewilson
+ms.author: rabououn
+author: ramiMSFT
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.date: 01/31/2018

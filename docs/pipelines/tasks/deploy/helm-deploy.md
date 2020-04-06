@@ -2,12 +2,9 @@
 title: Package and Deploy Helm Charts task
 description: Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
-ms.manager: mijacobs
 ms.author: atulmal
-ms.date: 02/12/2019
+ms.date: 02/28/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -56,10 +53,10 @@ This is used with one of the helm [commands](#commands) and the appropriate valu
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
-    azureResourceGroup: Contoso
-    kubernetesCluster: Contoso
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
+  azureResourceGroup: Contoso
+  kubernetesCluster: Contoso
 
 - task: HelmDeploy@0
   displayName: Helm deploy
@@ -222,6 +219,16 @@ This YAML example demonstrates the **upgrade** command:
 ```
 
 ::: moniker-end
+
+## Troubleshooting
+
+### HelmDeploy task throws error 'unknown flag: --wait' while running 'helm init --wait --client-only' on Helm 3.0.2 version.
+
+There are some breaking changes between Helm 2 and Helm 3. One of them includes removal of tiller, and hence `helm init` command is no longer supported. Remove command: init when you use Helm 3.0+ versions.
+
+### When using Helm 3, if System.debug is set to true and Helm upgrade is the command being used, the pipeline fails even though the upgrade was successful.
+
+This is a known issue with Helm 3, as it writes some logs to stderr. Helm Deploy Task is marked as failed if there are logs to stderr or exit code is non-zero. Set the task input failOnStderr: false to ignore the logs printed to stderr.
 
 ## Open source
 

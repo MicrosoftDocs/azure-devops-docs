@@ -3,10 +3,8 @@ title: Upload reports to a team project
 titleSuffix: TFS
 description: Manually upload SQL Server reports to a team project hosted on an on-premises Team Foundation Server  
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 

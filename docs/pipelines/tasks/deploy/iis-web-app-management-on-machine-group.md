@@ -2,10 +2,7 @@
 title: IIS Web App Manage task
 description: Create or update a Website, Web App, Virtual Directory, or Application Pool
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 1b2aec60-dc49-11e6-9b76-63056e018cac
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

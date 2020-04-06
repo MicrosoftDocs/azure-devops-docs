@@ -2,10 +2,8 @@
 title: Specify work item form controls 
 titleSuffix: TFS
 description: Provides a quick reference to the Control element, its child elements, and attributes.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: eb87afdf-66f4-4607-94c9-3909fd208079
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013 <= tfs-2015'

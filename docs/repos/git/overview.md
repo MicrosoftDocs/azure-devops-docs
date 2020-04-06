@@ -3,9 +3,7 @@ title: Git documentation home
 titleSuffix: Azure Repos 
 description: Overview of Git version control in Azure DevOps Services and Team Foundation Server
 ms.assetid: 9e1079da-49a2-4035-addb-238a8023c9b1
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview

@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Understand how to structure your project to support collaboration on building software solutions.
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/20/2019

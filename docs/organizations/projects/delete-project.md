@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Delete or remove a project from Azure DevOps or Team Foundation Server
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'

@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces TfsMailSettings API | Extensions for Azure DevOps Services
 description: Data representation of TFS mail settings.
 ms.assetid: 05a6823b-cbdc-82fe-af94-4fa0b84a9706
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

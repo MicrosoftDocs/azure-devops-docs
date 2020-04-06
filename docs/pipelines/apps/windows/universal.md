@@ -2,12 +2,7 @@
 title: Build your Universal Windows Platform app
 ms.custom: seodec18
 description: Define a CI pipeline that builds your Universal Windows Platform (UWP) solution on Team Foundation Server and Visual Azure Pipelines.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: E3E15C22-3211-4FCC-A10C-5717EA8B116E
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/20/2017
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
@@ -109,7 +104,7 @@ https://github.com/Microsoft/UWPQuickStart
 You can now update the build pipeline to generate production builds.
 
  * [Signing UWP package](/windows/uwp/packaging/create-certificate-package-signing)
- * [Associate package with the store](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package)
+ * [Associate package with the store](/windows/msix/package/packaging-uwp-apps#configure-your-project)
  
 ## Related topics
 

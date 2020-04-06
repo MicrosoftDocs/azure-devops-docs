@@ -2,10 +2,8 @@
 title: Markdown syntax for files, widgets, and wikis
 titleSuffix: Azure DevOps 
 description: Learn how to share information, add tables & mathematical notation using Markdown within pull requests, README files, dashboards, and wikis  
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 43D2156E-2E20-42B8-B816-43E95CB479C5  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -706,6 +704,7 @@ To escape emojis, enclose them using the \` character.
 <p style="margin-bottom:2px;"><code>-</code>, minus sign (hyphen)</p>
 <p style="margin-bottom:2px;"><code>.</code>, period </p>
 <p style="margin-bottom:2px;"><code>!</code>, exclamation mark</p>
+<p style="margin-bottom:2px;"><code>*</code>, asterisk</p>
 </td>
 <td>
 <p>Some examples on inserting special characters:</p>
@@ -716,6 +715,7 @@ To escape emojis, enclose them using the \` character.
 <p>Enter <code>&#92;(</code> to get ( </p> 
 <p>Enter <code>&#92;.</code> to get . </p>
 <p>Enter <code>&#92;!</code> to get ! </p>
+<p>Enter <code>&#92;*</code> to get * </p>
 
 </td>
 </tr>

@@ -1,3 +1,12 @@
+---
+ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 <a name="get-the-status-badge"></a>
 ## Add a status badge to your repository
 
@@ -24,13 +33,13 @@ Now with the badge Markdown in your clipboard, take the following steps in GitHu
 
 4. Notice that the status badge appears in the description of your repository.
 
-To configure the **Allow anonymous access to badges** setting:
+To configure anonymous access to badges:
 
 1. Navigate to **Project Settings**
 
 2. Open the **Settings** tab under **Pipelines**
  
-3. Select the **Allow anonymous access to badges** checkbox under **General**
+3. Toggle the **Disable anonymous access to badges** slider under **General**
 
 > [!NOTE]
 > Even in a private project, anonymous badge access is enabled by default. With anonymous badge access enabled, users outside your organization might be able to query information such as project names, branch names, job names, and build status through the badge status API.

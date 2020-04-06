@@ -3,9 +3,7 @@ title: Bulk modify work items using Microsoft Excel
 titleSuffix: Azure Boards  
 description: Use Excel to bulk add or modify work items-such as backlog items, tasks, bugs, or issues-in Azure Boards or Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -270,7 +268,7 @@ Here's how a three-level nested tree of items appears in Excel:
 
 Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
 
-[!INCLUDE [temp](../../includes/work-item-types-hierarchy.md)]
+[!INCLUDE [temp](../../includes/work-item-types.md)]
 
 To import a hierarchical list, perform the following steps: 
 

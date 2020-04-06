@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model 
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -124,11 +122,13 @@ Here, we've added the *Ticket* WIT which is tracked along with tasks.
 
 ## Related articles  
 
-- [Add a custom work item type](add-custom-wit.md)
-- [Customize a project using an inherited process](customize-process.md) 
-- [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)    
-- [Create your backlog](../../../boards/backlogs/create-your-backlog.md)
-- [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Add a custom work item type](add-custom-wit.md)  
+- [Customize a project using an inherited process](customize-process.md)  
+- [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)  
+- [Create your backlog](../../../boards/backlogs/create-your-backlog.md)  
+- [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)  
 
 
 

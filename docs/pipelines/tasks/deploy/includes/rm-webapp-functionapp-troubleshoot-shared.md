@@ -1,8 +1,10 @@
 ---
 author: ninallam
-ms.service: devops
+ms.prod: devops
+ms.technology: devops-cicd-tasks
 ms.topic: include
 ms.date: 12/10/2019
+ms.manager: mijacobs
 ms.author: ninallam
 ---
 

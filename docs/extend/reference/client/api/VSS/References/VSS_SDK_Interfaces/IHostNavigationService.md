@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IHostNavigationService API | Extensions for Azure DevOps Services
 description: Service which allows interaction with the browser location and navigation of the host frame
 ms.assetid: 10705042-bb97-0b97-7985-f1a00f81ea40
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

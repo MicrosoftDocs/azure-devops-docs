@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Key concepts and glossary of terms for Sprints and Scrum tools in Azure Boards and Team Foundation Server (TFS)  
 ms.custom: boards-sprints
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

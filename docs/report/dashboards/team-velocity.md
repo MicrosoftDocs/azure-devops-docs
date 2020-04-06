@@ -4,11 +4,9 @@ titleSuffix: Azure DevOps Services
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
 ms.custom: dashboards   
 ms.technology: devops-analytics  
-ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 
@@ -164,6 +162,13 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
+
+	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration. 
+
+	- **Planned:** Number of work items defined at the start of the sprint  
+	- **Completed:** Number of work items completed within the sprint start and end dates  
+	- **Completed Late:** Number of work items completed after the end of the sprint date  
+	- **Incomplete:** Number of work items which as yet aren't  completed.  
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 

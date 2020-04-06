@@ -1,14 +1,11 @@
 ---
 title: Troubleshoot builds and releases
 description: Learn how to troubleshoot builds and releases in Azure Pipelines and Team Foundation Server.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
-ms.manager: mijacobs
 ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: seodec18
-ms.date: 12/06/2019
+ms.date: 04/03/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -52,11 +49,17 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 ### Overridden YAML trigger setting
 
-YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline designer. If your `trigger` or `pr` triggers don't seem to be firing, [check that setting](repos/github.md#override-yaml-triggers).
+YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline settings UI. If your `trigger` or `pr` triggers don't seem to be firing, check that setting. While editing your pipeline, choose **...** and then **Triggers**.
+
+![Pipeline settings UI.](repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+
+Check the **Override the YAML trigger from here** setting for the types of trigger (**Continuous integration** or **Pull request validation**) available for your repo.
+
+![Override YAML trigger from here.](repos/media/pipelines-options-for-git/yaml-pipeline-override-trigger.png)
 
 ### Using pull request triggers with Azure Repos
 
-If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pull-request-validation).
+If your `pr` trigger isn't firing, and you are using Azure Repos, it is because `pr` triggers aren't supported for Azure Repos. In Azure Repos Git, branch policies are used to implement pull request build validation. For more information, see [Branch policy for pull request validation](repos/azure-repos-git.md#pr-triggers).
 
 ### Branch filters in CI and PR triggers
 
@@ -66,9 +69,9 @@ When you define a YAML PR or CI trigger, only branches explicitly configured to 
 
 YAML scheduled triggers are set using UTC time zone. If your scheduled triggers don't seem to be firing at the right time, confirm the conversions between UTC and your local time zone, taking into account the day setting as well.
 
-If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline setting UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
+If your YAML pipeline has both YAML scheduled triggers and UI defined scheduled triggers, only the UI defined scheduled triggers are run. To run the YAML defined scheduled triggers in your YAML pipeline, you must remove the scheduled triggers defined in the pipeline settings UI. Once all UI scheduled triggers are removed, a push must be made in order for the YAML scheduled triggers to start running.
 
-For more information, see [Scheduled triggers](build/triggers.md).
+For more information, see [Scheduled triggers](process/scheduled-triggers.md).
 
 ## My pipeline tries to start but never gets an agent
 
@@ -537,25 +540,65 @@ To increase the max timeout for a job, you can opt for any of the following.
 * Buy a Microsoft hosted agent which will give you 360 minutes for all jobs, irrespective of the repository used
 * Use a self-hosted agent to rule out any timeout issues due to the agent
 
-Learn more about job timeout [here](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#timeouts).
+Learn more about job [timeout](process/phases.md#timeouts).
+
+> [!NOTE]
+> If your Microsoft-hosted agent jobs are timing out, ensure that you haven't specified a pipeline timeout that is less than the max timeout for a job. To check, see [Timeouts](process/phases.md#timeouts).
 
 ### Service Connection related issues
 
-To troubleshoot issues related to service connections, see [Service Connection troubleshooting](/azure/devops/pipelines/release/azure-rm-endpoint?view=azure-devops)
+To troubleshoot issues related to service connections, see [Service Connection troubleshooting](release/azure-rm-endpoint.md)
 
 ### Parallel jobs not running
 
-There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, the releases still sit in queue and run one after the other.
+There might be some scenarios where even after purchasing Microsoft-hosted parallel jobs, your runs still sit in the queue and run one after the other. If your jobs aren't running, check the following items.
 
-Below are scenarios that won’t consume a parallel job:
+* [You don't have enough concurrency](#you-dont-have-enough-concurrency)
+* [Your job may be waiting for approval](#your-job-may-be-waiting-for-approval)
+* [All available agents are in use](#all-available-agents-are-in-use)
+
+The following scenarios won't consume a parallel job:
 * If you use release pipelines or multi-stage YAML pipelines, then a run consumes a parallel job only when it's being actively deployed to a stage. While the release is waiting for an approval or a manual intervention, it does not consume a parallel job.
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
 Learn more:
-[How a parallel job is consumed by a pipeline](/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops#how-a-parallel-job-is-consumed-by-a-pipeline),
-[Approvals within a pipeline](/azure/devops/pipelines/release/define-multistage-release-process?view=azure-devops#add-approvals-within-a-release-pipeline),
-[Server jobs](/azure/devops/pipelines/process/phases?view=azure-devops&tabs=classic#server-jobs),
-[Deployment groups](/azure/devops/pipelines/release/deployment-groups/index?view=azure-devops)
+[How a parallel job is consumed by a pipeline](licensing/concurrent-jobs.md#how-a-parallel-job-is-consumed-by-a-pipeline),
+[Approvals within a pipeline](release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
+[Server jobs](process/phases.md#server-jobs),
+[Deployment groups](release/deployment-groups/index.md)
+
+#### You don't have enough concurrency
+ 
+To check how much concurrency you have:
+
+1. To check your limits, navigate to **Project settings**, **Parallel jobs**.
+
+    ![Concurrent pipeline limits](media/troubleshooting/concurrent-pipeline-limits.png)
+
+    You can also reach this page by navigating to `https://dev.azure.com/{org}/_settings/buildqueue?_a=concurrentJobs`, or choosing **manage parallel jobs** from the logs.
+
+    ![Manage parallel jobs](media/troubleshooting/manage-parallel-jobs.png)  
+        
+2. Determine which pool you want to check concurrency on (Microsoft hosted or self hosted pools), and choose **View in-progress jobs**.
+
+3. You'll see text that says **Currently running X/X jobs**. If both numbers are the same then jobs will wait until currently running jobs complete.
+
+    ![View in-progress jobs](media/troubleshooting/view-in-progress-jobs.png)
+ 
+#### Your job may be waiting for approval
+ 
+Your pipeline may not move to the next stage because it is waiting on approval. For more information, see [Define approvals and checks](process/approvals.md).
+ 
+#### All available agents are in use 
+ 
+Jobs may wait if all your agents are currently busy. To check your agents:
+1. Navigate to `https://dev.azure.com/{org}/_settings/agentpools`
+2. Select the agent pool to check, in this example **FabrikamPool**, and choose **Agents**.
+
+    ![Agent status](media/troubleshooting/agents-online.png)
+
+    This page shows all the agents currently online/offline and in use. You can also add additional agents to the pool from this page. 
+
 
 ## I need more help. I found a bug. I've got a suggestion. Where do I go?
 

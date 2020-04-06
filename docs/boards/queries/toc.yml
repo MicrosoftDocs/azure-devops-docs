@@ -64,6 +64,7 @@
     href: define-query-hyperlink.md 
   - name: Bulk import or update work items (CSV)
     href: import-work-items-from-csv.md 
+    displayname: import, export, csv
 - name: Reference
   items:
   - name: "Query fields, operators & macros"

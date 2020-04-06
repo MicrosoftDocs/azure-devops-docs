@@ -2,10 +2,8 @@
 title: Work in Microsoft Excel or Project
 titleSuffix: Azure Boards
 description: Use Microsoft Excel or Project to track work in Azure Boards, Azure DevOps, & Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: fbd7b5e1-e4c4-4976-9596-236e980fdb3b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -154,7 +152,7 @@ To follow these procedures, you must be a member of the **Readers** group or hav
 
 1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/azure/devops/server/compatibility)
 
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises TFS. 
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises Azure DevOps. 
 
 	> [!NOTE]  
 	> The only way to get the Team Foundation add-in to Excel is by installing Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   

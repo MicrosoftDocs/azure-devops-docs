@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use ad hoc or built-in search/managed queries to find work items in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -63,7 +61,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker range="tfs-2013"  
 
-![Editor View of a Flat List Query - On-premises TFS](media/5.png)  
+![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
 
 ::: moniker-end
 

@@ -2,7 +2,6 @@
 title: Delivery timeline markers, commit graph, better build & release – Apr 19
 description: VSTS release notes for Apr 19 2017
 ms.ContentId: 36adccf7-a9b9-4009-8cc3-7f9bdbb42a56
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney
@@ -14,7 +13,7 @@ ms.date: 04/19/2017
 This deployment, we introduce the git graph. We’ve also updated many build and release tasks and extensions, as well as made improvements to the Marketplace.
 
 ## Delivery timeline markers
-Have you been looking for a way to highlight key dates on your [Delivery Plan](https://blogs.msdn.microsoft.com/visualstudioalm/2017/01/23/new-feature-delivery-plans-for-visual-studio-team-services/)? Now you can with plan markers. Plan markers let you visualize key dates for teams directly on your deliver plan. Markers have an associated color and label. The label shows up when you click the marker dot.
+Have you been looking for a way to highlight key dates on your [Delivery Plan](https://devblogs.microsoft.com/devops/new-feature-delivery-plans-for-visual-studio-team-services//)? Now you can with plan markers. Plan markers let you visualize key dates for teams directly on your deliver plan. Markers have an associated color and label. The label shows up when you click the marker dot.
 
 ![delivery timeline](media/04_19_01.png)
 
@@ -75,7 +74,7 @@ The __Copy Files Over SSH__ build/release task now supports tildes(~) in the des
 The SSH build/release task now supports running scripts with Windows line endings on remote Linux or macOS machines.
 
 ## Deploy to Azure Government Cloud
-Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/azure/devops/build-release/concepts/library/service-endpoints#sep-azure-rm) to target national clouds.
+Customers with Azure subscriptions in Government clouds can now configure [Azure Resource Manager service endpoint](/azure/devops/build-release/concepts/library/service-endpoints#sep-azure-classic) to target national clouds.
 
 With this, you can now use Release Management to deploy any application to Azure resources hosted in government clouds, using the same deployment tasks.
 

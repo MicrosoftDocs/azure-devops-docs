@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts WorkspaceTemplate API | Extensions for Azure DevOps Services
 description: Data representation of a workspace template.
 ms.assetid: 2994e66e-dd45-3a64-1996-5c1e40800a2f
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

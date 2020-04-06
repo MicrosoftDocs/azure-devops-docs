@@ -1,11 +1,9 @@
 ---
 title: Relational warehouse database tables | TFS
 description: Create reports and query for Team Foundation Server (TFS) data 
-ms.prod: devops
 ms.technology: devops-analytics 
 ms.topic: reference
 ms.assetid: 0f398cef-add1-4112-85e8-016108de10b3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017

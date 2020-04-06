@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: B2E9B082-15BE-448C-96D8-3EF048A15560
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -325,7 +323,7 @@ To print the details of a work item, open a query in Visual Studio that contains
 
 <a id="tfs-portal-copy-url" />
 
-**From the web portal for an on-premises TFS**, open the work item and then from the context menu for the browser, choose the copy link option. 
+**From the web portal for an on-premises Azure DevOps**, open the work item and then from the context menu for the browser, choose the copy link option. 
 
 ![Copy hyperlink for a work item from web portal for TFS item](../queries/media/share-plans-copy-URL-wi-tfs.png) 
 

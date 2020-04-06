@@ -3,9 +3,7 @@ title: Use Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
@@ -60,7 +58,7 @@ Learn the basics of working in TFVC with the following tutorial which shows a da
 
 * [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md)
 * [Visual Studio: Review Code](get-code-reviewed-vs.md)
-* 
+
 ## What do you want to do?
 
 - [Set up your dev machine and get started](set-up-team-foundation-version-control-your-dev-machine.md)    

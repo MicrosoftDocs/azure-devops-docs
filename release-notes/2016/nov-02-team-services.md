@@ -2,7 +2,6 @@
 title: Teams integration, package & release management regions – Nov 2
 description: VSTS release notes for Nov 2 2016
 ms.ContentId: 171e69be-42f9-48f1-af6d-c08ed0093f92
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney

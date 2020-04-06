@@ -1,15 +1,10 @@
 ---
-ms.prod: devops
 title: Azure Pipelines Agents
 ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
-ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 01/31/2020
+ms.date: 03/27/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -472,12 +467,32 @@ We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
 Microsoft-hosted agents are always kept up-to-date.
-If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically by Azure Pipelines.
+If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
 If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
+
+### To update self-hosted agents
+
+1. Navigate to **Project settings**, **Agent pools**.
+
+    ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
+
+2. Select your agent pool and choose **Update all agents**.
+
+    ![Update all agents](media/agents/update-all-agents.png)
+
+    You can also update agents individually by choosing **Update agent** from the **...** menu.
+
+    ![Update agent](media/agents/update-agent.png)
+
+3. Select **Update** to confirm the update.
+
+    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+
+4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 

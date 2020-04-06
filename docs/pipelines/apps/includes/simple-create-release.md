@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/14/2020
 ---
 
 1. Choose **+ Release** and select **Create a release**.

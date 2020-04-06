@@ -2,11 +2,9 @@
 title: Import and export categories
 titleSuffix: TFS  
 description: Import and export categories defined for a project in Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: da37f5a5-1a52-457c-b0fc-c91fee134788
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'

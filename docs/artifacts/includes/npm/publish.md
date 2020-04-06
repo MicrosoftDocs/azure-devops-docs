@@ -1,5 +1,9 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 Publish npm packages to a feed in Azure Artifacts to share them with your team and your organization.

@@ -1,10 +1,8 @@
 ---
 title: FAQs about getting extensions for Azure DevOps
 description: Frequently asked questions about getting and paying for extensions for Azure DevOps
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/25/2019
@@ -27,9 +25,17 @@ you can [request extensions](request-extensions.md) instead.
 
 <a name="find-owner"></a>
 
-[!INCLUDE [find-organization-owner](../includes/qa-find-organization-owner.md)]
+### Q: How do I find the organization Owner?
 
-[!INCLUDE [find-project-collection-administrator](../includes/qa-find-project-collection-administrator.md)]
+If you have at least Basic access, you can find the current owner in your organization settings.
+
+1.    Go to your **Organization settings**.
+
+    ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+
+2.    Find the current owner.
+
+    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
 <a name="no-organizations"></a>
 
@@ -40,11 +46,11 @@ you can [request extensions](request-extensions.md) instead.
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*	You must have [Project Collection Administrator or organization Owner permissions](#find-owner). 
+*    You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md). 
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
-*	If you get an "already installed or requested" error check with your Project Collection Administrator 
+*    If you get an "already installed or requested" error check with your Project Collection Administrator 
 or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
@@ -78,7 +84,7 @@ with [**Edit collection-level information** permissions](../organizations/securi
 
 * If you get an error that your extension is already installed or requested, check with your Project Collection Administrator and ask them to assign the extension to you.
 
-	<!-- image placeholder -->
+    <!-- image placeholder -->
 
 <a name="no-team-project collection"></a>
 

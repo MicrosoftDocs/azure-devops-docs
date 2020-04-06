@@ -1,16 +1,11 @@
 ---
-title: Publish packages to PyPI
+title: Publish packages to Azure Artifacts
 ms.custom: seodec18
-description: Publish Python packages to PyPI or Azure Artifacts feeds via builds with Azure Pipelines
+description: Publish Python packages to Azure Artifacts feeds via builds with Azure Pipelines
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
 ms.date: 10/31/2018
 monikerRange: azure-devops
-author: chasewilson
 ---
 
 # Publish Python packages in Azure Pipelines

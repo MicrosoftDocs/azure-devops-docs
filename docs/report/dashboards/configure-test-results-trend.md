@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Monitor test trends and gain insights about  pipeline test efforts using  Analytics Test Results Trend (Advanced) widget
 ms.custom: dashboards   
 ms.technology: devops-analytics  
-ms.prod: devops
 ms.assetid: 
 ms.topic: tutorial
 ms.reviewer: divais

@@ -2,11 +2,9 @@
 title: Use ID to link work items & pull requests
 titleSuffix: Azure DevOps
 description: Link to work items in discussions and pull requests 
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual

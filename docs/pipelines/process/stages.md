@@ -3,12 +3,7 @@ title: Stages in Azure Pipelines
 ms.custom: seodec18
 description: Understand stages in Azure Pipelines
 ms.assetid: FAAD6503-F8CE-4F5D-8C1E-83AF6E903568
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 05/03/2019
 monikerRange: '>= tfs-2015'
 ---
@@ -163,7 +158,8 @@ for a stage in a release pipeline. You can:
 
 ::: moniker range="azure-devops"
 
-When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file.
+When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
+
 
 The syntax for defining multiple stages and their dependencies is:
 
@@ -245,6 +241,11 @@ You control the dependencies by setting the triggers on each stage of the releas
 <h2 id="conditions">Conditions</h2>
 
 You can specify the conditions under which each stage runs. By default, a stage runs if it does not depend on any other stage, or if all of the stages that it depends on have completed and succeeded. You can customize this behavior by forcing a stage to run even if a previous stage fails or by specifying a custom condition.
+
+> [!NOTE]
+>
+> Conditions for failed ('JOBNAME/STAGENAME') and succeeded ('JOBNAME/STAGENAME') as shown in the following example work only for [YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/stages?view=azure-devops&tabs=yaml).
+
 
 #### [YAML](#tab/yaml/)
 
@@ -402,6 +403,7 @@ YAML is not supported in this version of TFS.
 
 #### [Classic](#tab/classic/)
 
-For information on approvals in classic pipelines, see [Release approvals and gates overview](../release/approvals/index.md).
+You can add manual approvals at the start or end of each stage in the pipeline. See [Release approvals and gates overview](../release/approvals/index.md) for more information.
+
 
 * * *

@@ -2,10 +2,8 @@
 title: TF31002-Unable to connect  
 titleSuffix: Azure DevOps & TFS 
 description: Receive the error when you try to connect to Azure DevOps Services or an on-premises Azure DevOps Server.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: b5566a0b-55f8-4c76-aea2-6d1581a2c90d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: Troubleshooting

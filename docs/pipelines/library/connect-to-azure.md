@@ -3,10 +3,7 @@ title: Connect to Microsoft Azure
 ms.custom: seodec18
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/18/2018
@@ -121,7 +118,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).

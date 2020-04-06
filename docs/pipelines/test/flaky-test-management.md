@@ -2,11 +2,8 @@
 title: Manage flaky tests
 description: Improve productivity with flaky test management system
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: mijacobs
 ms.reviewer: divais
 ms.author: kaelli
 author: KathrynEE

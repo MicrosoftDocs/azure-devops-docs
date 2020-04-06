@@ -2,10 +2,7 @@
 title: Deploy a Docker container app
 description: Set up continuous deployment (CD) of a Docker-enabled app to an Azure Web App in Azure Pipelines or Team Foundation Server (TFS)
 ms.assetid: 78815F3C-4347-4C8B-AB4B-F36FC0D41531
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

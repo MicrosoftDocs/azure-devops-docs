@@ -3,12 +3,7 @@ title: Deployment group jobs in Build and Release
 ms.custom: seodec18
 description: Understand deployment group jobs in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 05956924-242A-43D6-AA29-C93149C0265B
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 5/3/2018
 monikerRange: '>= tfs-2018'
 ---
@@ -29,7 +24,34 @@ You can select specific sets of servers from a deployment group to receive the d
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Deployment group jobs are not yet supported in YAML.
+> Deployment group jobs are not yet supported in YAML. You can use [Virtual machine resources in Environments](environments-virtual-machines.md) to do a rolling deployment to VMs in YAML pipelines. 
+
+Rolling deployments can be configured by specifying the keyword `rolling:` under `strategy:` node of a [deployment job](deployment-jobs.md). 
+
+```YAML
+strategy:
+  rolling:
+    maxParallel: [ number or percentage as x% ]
+    preDeploy:        
+      steps:
+      - script: [ script | bash | pwsh | powershell | checkout | task | templateReference ]
+    deploy:          
+      steps:
+      ...
+    routeTraffic:         
+      steps:
+      ...        
+    postRouteTraffic:          
+      steps:
+      ...
+    on:
+      failure:         
+        steps:
+        ...
+      success:          
+        steps:
+        ...
+```
 
 ::: moniker-end
 

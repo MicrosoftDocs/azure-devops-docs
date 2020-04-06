@@ -1,5 +1,9 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 * Open a PowerShell prompt and `cd` to the root directory of your app's code.

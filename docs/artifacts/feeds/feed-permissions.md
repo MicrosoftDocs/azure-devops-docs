@@ -2,11 +2,7 @@
 title: Secure and share packages using feed permissions
 description: Secure and share packages using feed permissions in Azure Artifacts in Azure DevOps Services or Team Foundation Server
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
-ms.prod: devops
 ms.technology: devops-artifacts
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.topic: conceptual
 ms.date: 11/30/2017
 monikerRange: '>= tfs-2017'
@@ -30,7 +26,6 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Unlist/deprecate packages                     |          |          | &#x2713; | &#x2713; |
 | Delete/unpublish package                      |          |          |          | &#x2713; |
 | Edit feed permissions                         |          |          |          | &#x2713; |
-| [Rename and delete feed](edit-feed.md)        |          |          |          | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 

@@ -2,7 +2,6 @@
 title: Azure Pipelines - Microsoft Build Announcements
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 ---

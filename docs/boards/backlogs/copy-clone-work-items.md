@@ -1,26 +1,37 @@
-﻿---
+---
 title: Copy or clone stories, issues, or other work items
 titleSuffix: Azure Boards  
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 02/17/2020
 ---
 
 # Copy or clone work items  
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
+::: moniker range=">= azure-devops-2019"
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
 
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. 
+
+::: moniker-end
+
 The second copy function is to copy a multi-selected list of work items to the clipboard, referred to as copy as HTML or copy to clipboard. 
+
+> [!TIP]    
+> You can't copy or clone linked work items at this time. To learn more, see the [Q & A section](#faq-copy-clone) later in this article. 
+
 
 Use this article to learn how to:  
 
@@ -104,7 +115,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 ::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"
@@ -177,6 +188,12 @@ In Visual Studio, right-click the work item tab to copy the URL. The URL opens t
 ![Copy full path hyperlink for a work item from Visual Studio](media/add-work-items-copy-url-for-a-work-item.png)
 
 * * *
+
+## Q & A
+
+[!INCLUDE [temp](../includes/faq-copy-clone.md)]
+
+
 ## Related topics
 
 - [Bulk modify work items](bulk-modify-work-items.md)   

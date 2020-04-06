@@ -2,10 +2,7 @@
 title: Azure PowerShell task
 description: Run a PowerShell script within an Azure environment
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 72A1931B-EFFB-4D2E-8FD8-F8472A07CB62
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -68,7 +65,7 @@ Azure PowerShell task uses Azure/AzureRM/Az PowerShell Module to interact with A
 <table><thead><tr><th>Task Version</th><th>Available versions of PowerShell Modules</th></tr></thead>
 <tr><td>2.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
 <tr><td>3.* </td><td>Choose one from any of the 2 lists:<br>Azure: 2.1.0, 3.8.0, 4.2.1, 5.1.1<br>AzureRM: 2.1.0, 3.8.0, 4.2.1, 5.1.1, 6.7.0</td></tr>
-<tr><td>4.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
+<tr><td>4.*</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0, 3.5.0</td></tr>
 <tr><td>5.* (preview)</td><td>Az Module: 1.0.0, 1.6.0, 2.3.2, 2.6.0, 3.1.0</td></tr>
 </table>
 

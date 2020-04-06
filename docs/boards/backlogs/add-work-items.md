@@ -1,12 +1,10 @@
-﻿---
+---
 title: Add, update, & follow stories, issues, bugs, & other work items
 titleSuffix: Azure Boards 
 description: Add work items to plan and manage a software project using Agile tools, Scrum, or Kanban when connected to a project in Azure Boards or TFS  
 ms.custom: seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9474A25E-A9D8-433D-8370-C94624B4ACD6  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -45,7 +43,7 @@ Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs
 > Depending on the process chosen when the project was created&mdash;[Agile](../work-items/guidance/agile-process.md), [Basic](../get-started/plan-track-work.md), [Scrum](../work-items/guidance/scrum-process.md),
 or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;the types of work items you can create will differ. For example, backlog items may be called user stories (Agile), issues (Basic) product backlog items (Scrum), or requirements (CMMI). All four are similar: they describe the customer value to deliver and the work to be performed.
 >
-> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). Note that the Basic process requires Azure DevOps Server 2019.1 or later version.
+> For an overview of all default processes, see [Choose a process](../work-items/guidance/choose-process.md). The Basic process requires Azure DevOps Server 2019.1 or later version.
 
 Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 

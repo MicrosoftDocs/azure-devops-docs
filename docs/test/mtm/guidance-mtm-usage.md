@@ -2,10 +2,8 @@
 title: Guidance on MTM usage
 description: Manual and exploratory testing - Guidance on Microsoft Test Manager usage when you want to test web applications
 ms.assetid: 3ED737AC-6310-472D-8C54-4FF4FEFE66C9
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 04/24/2019

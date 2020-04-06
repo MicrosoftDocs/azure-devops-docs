@@ -3,10 +3,8 @@ title: Set Git or TFVC repository permissions
 titleSuffix: Azure DevOps
 description: Steps for how to grant or restrict access to a Git or Team Foundation Version Control repository feature or function
 ms.assetid:  
-ms.prod: devops
 ms.technology: devops-security
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -66,11 +64,46 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 <a id="git-repository">  </a>
 
+[!INCLUDE [temp](../../includes/ability-to-find-user-once-added.md)]
+
 ## Set Git repository permissions
 
 You can set the permissions for all Git repositories for a project, or for a single repository. 
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
+
+1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
+
+2. Open the **Repos>Repositories** page. 
+
+	To set the permissions for all Git repositories, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
+
+	For example, here we choose (1) **Project settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
+
+	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
+
+	[![Project Settings>Code>Repositories>Git repositories>Security](media/git-tfvc-perm/open-git-repo.png)](media/git-tfvc-perm/open-git-repo-wide.png#lightbox) 
+
+	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
+
+3.  To set permissions for a specific user or group, choose the ![ ](../../media/icons/add-icon.png) add icon and select or search for the identity you want. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add user or group](media/git-tfvc-perm//add-user-group.png)  
+
+	Then make the changes to the permission set. 
+
+	> [!NOTE]  
+	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md#project-level)
+
+	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+ 
+	The changes are made automatically, no need to save your changes.  
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -78,7 +111,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
 
-	*To see the full image, click to expand*.
+	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
 
 	[![Project Settings>Code>Repositories>Git repositories>Security](media/git-tfvc-perm/open-repository-security-vert-reduced.png)](media/git-tfvc-perm/open-repository-security-vert.png#lightbox) 
 
@@ -90,6 +123,7 @@ You can set the permissions for all Git repositories for a project, or for a sin
 4. When done, choose **Save changes**. 
 
 ::: moniker-end
+
 
 ::: moniker range="<= tfs-2018"
 
@@ -121,14 +155,40 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 ## Set TFVC repository permissions
 
+::: moniker range="azure-devops"
 
-::: moniker range=">= azure-devops-2019"
+1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
+
+	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Build Administrators** group, and then (5) the permission for **Administer labels**.
+
+	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
+
+	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
+
+3.  To set permissions for a specific user or group, choose the ![ ](../../media/icons/add-icon.png) add icon and select or search for the identity you want. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add user or group](media/git-tfvc-perm//add-user-group.png)  
+
+	Then make the changes to the permission set. 
+
+	> [!NOTE]  
+	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md#project-level)
+
+	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
+ 
+	The changes are made automatically, no need to save your changes.  
+
+::: moniker-end    
+
+
+::: moniker range="azure-devops-2019"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
 	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Contributors** group, and then (5) the permission for **Manage branch**.
 
-	*To see the full image, click to expand*.
+	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
 
 	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repository-security-vert-reduced.png)](media/git-tfvc-perm/open-tfvc-repository-security-vert.png#lightbox) 
 
@@ -138,7 +198,6 @@ You can set the permissions for all Git repositories for a project, or for a sin
 1. Save your changes.  
 
 ::: moniker-end    
-
 
 ::: moniker range="<= tfs-2018"
 

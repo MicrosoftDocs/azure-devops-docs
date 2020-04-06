@@ -2,10 +2,8 @@
 title: Install extensions for on-premises servers
 description: Find and install extensions for Team Foundation Server (TFS) and Azure DevOps Server from the Visual Studio Marketplace
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 0ff7d264-68b7-4f4a-a666-b57175b5fdb8 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/25/2019
