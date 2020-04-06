@@ -200,7 +200,7 @@
     href: scripts/powershell.md
   - name: Run Git commands
     href: scripts/git-commands.md
-  - name: Reduce build time using caching (Preview)
+  - name: Reduce build time using caching
     href: release/caching.md
   - name: Configure build run numbers
     href: process/run-number.md
