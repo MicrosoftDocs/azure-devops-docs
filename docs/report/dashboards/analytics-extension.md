@@ -2,10 +2,8 @@
 title: Install the Analytics extension on Azure DevOps Server
 description: Add Analytics to your Azure DevOps Server deployment by installing the Analytics extension
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops-2019'
@@ -50,7 +48,7 @@ If you have upgraded to Azure DevOps Server 2019.1, you can enable Analytics for
 	> [!div class="mx-imgBorder"]  
 	> ![Enable Analytics](media/enable-analytics/enable-analytics.png) 
 
-	Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model(../extend-analytics/data-model-analytics-service.md).
+	Once enabled, Analytics staging jobs begin to populate the Analytics data tables. This process could take some time depending on the size of your collection. To learn more about the data tables, see [Analytics data model](../extend-analytics/data-model-analytics-service.md).
 
 ## Pause or disable Analytics
 

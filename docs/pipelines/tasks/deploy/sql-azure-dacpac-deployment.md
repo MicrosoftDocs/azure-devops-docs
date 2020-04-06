@@ -2,10 +2,7 @@
 title: Azure SQL Database Deployment task
 description: Deploy Azure SQL DB using DACPAC or run scripts using SQLCMD
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: CE85A08B-A538-4D2B-8589-1D37A9AB970F
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair

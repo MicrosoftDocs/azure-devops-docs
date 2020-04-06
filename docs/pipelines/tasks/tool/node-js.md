@@ -2,10 +2,7 @@
 title: Node.js Tool Installer task
 description: Find, download, and cache a specified version of Node.js and add it to the PATH
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 546DE4F0-79B7-43F0-AD1F-BCD20FEB2B37
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma

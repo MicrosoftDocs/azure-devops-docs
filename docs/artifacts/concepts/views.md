@@ -2,12 +2,8 @@
 title: Views on Azure DevOps Services feeds
 description: Release views enable continuous integration and delivery of NuGet, npm, and Maven packages in Azure Artifacts for Azure DevOps Services and Team Foundation Server
 ms.assetid: 28527A09-8025-4615-A746-9D213CF8202C
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 09/01/2017
 monikerRange: '>= tfs-2017'
 ---

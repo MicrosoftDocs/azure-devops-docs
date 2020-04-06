@@ -1,11 +1,9 @@
 ---
 title: Get the IntelliJ IDEA Azure DevOps Services plug-in
 description: Information and download links for the IntelliJ IDEA Azure DevOps Services plug-in
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel
@@ -26,7 +24,7 @@ The plugin can be installed from IntelliJ by browsing the Plugin Repository.
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `IntelliJ IDEA` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-1. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
+1. Click the `Browse repositories...` button and search for "Azure DevOps". 
 1. Click the `Install plugin` button and restart IntelliJ IDEA. 
 
 

@@ -3,9 +3,7 @@ title: Portfolio management
 titleSuffix: Azure Boards
 description: Work with a hierarchical team structure to manage product and portfolio backlogs and  to track progress across teams
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: F6FF6E6B-C9AA-4681-9205-D48C8F29D94B  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -27,6 +25,7 @@ In this article you'll learn:
 > * How to assign work from a common backlog
 > * How to set up a hierarchical set of teams and backlogs
 
+[!INCLUDE [configure-customize](../includes/note-configure-customize.md)]
 
 By setting up a team structure like the one shown, you provide each feature team with their distinct backlog to plan, prioritize, and track their work. And, portfolio or product owners can  create their vision, roadmap, and goals for each release, monitor progress across their portfolio of projects, and manage risks and dependencies.  
 
@@ -203,11 +202,32 @@ If you need more than three backlog levels, you can add more. To learn how, see 
 
 ## Track dependencies across teams 
 
-The simplest way to track dependencies across teams is to link work items using the **Related** link type. You can then create queries that find work items containing these relationships. 
+The simplest way to track dependencies across teams is to link work items using the **Related** link type. You can then create queries that find work items containing these relationships. See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more. 
 
-See [Manage dependencies, link work items to support traceability](../queries/link-work-items-support-traceability.md) to learn more.
+To track dependencies across organizations, see [Plan and track dependencies using the Dependency Tracker](../extensions/dependency-tracker.md).   
+
+
+::: moniker range=">= tfs-2017"
+
+## Portfolio feature progress
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+To view feature progress based on linked requirements, you can add a rollup column or view the Feature Timeline. To learn more, see [Display rollup](../backlogs/display-rollup.md) and [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+
+To view feature progress based on linked requirements, you can view the Feature Timeline. To learn more, see [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md). 
+
+::: moniker-end
+
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Configure a hierarchy of teams](configure-hierarchical-teams.md)
 

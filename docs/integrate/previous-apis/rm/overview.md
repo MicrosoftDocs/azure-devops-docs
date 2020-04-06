@@ -2,10 +2,8 @@
 title: Release Management Overview | Visual Studio Online REST API Reference
 description: Work with Visual Studio Online builds programmatically using the REST APIs.
 ms.assetid: a5af63ab-36dd-4370-b962-ffbd6c1c4f58
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

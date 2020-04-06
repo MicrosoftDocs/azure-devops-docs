@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a custom control for work item type when working in Azure DevOps Services
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 7FC3CF0F-1E2B-4AAE-876C-5E358E7B2B72
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -147,6 +145,8 @@ You can use these REST APIs to work with extensions:
 
 
 ## Related articles 
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add a custom field to a work item type](customize-process-field.md)  
 - [Customize a work item type](customize-process-wit.md)

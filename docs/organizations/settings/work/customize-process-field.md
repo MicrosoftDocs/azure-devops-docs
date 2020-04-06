@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -284,6 +282,8 @@ Deleting a field deletes all data associated with that field, including historic
  
 
 ## Related articles  
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)

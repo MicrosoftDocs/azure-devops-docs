@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/19/2020
 ---
 
 Select the artifact trigger and make sure the **Continuous deployment trigger** is enabled.

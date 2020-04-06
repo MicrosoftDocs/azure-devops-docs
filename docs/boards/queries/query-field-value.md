@@ -4,8 +4,6 @@ titleSuffix: Azure Boards
 description: Create a query by filtering on field values compared to other field values in Azure Boards, Azure DevOps, & TFS
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -80,7 +78,7 @@ The following table provides an index to those fields that support field compari
 <tr>
 <td width="33%"><h3>A</h3>
 <ul>
-<li><a href="titles-ids-descriptions.md>Acceptance Criteria</a> (Scrum)</li>
+<li><a href="titles-ids-descriptions.md">Acceptance Criteria</a> (Scrum)</li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted By</a> </li>
 <li><a href="../work-items/guidance/guidance-code-review-feedback-field-reference.md">Accepted Date</a></li>
 <li><a href="query-by-workflow-changes.md">Activated By</a></li>

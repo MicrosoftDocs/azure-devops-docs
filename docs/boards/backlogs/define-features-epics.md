@@ -1,17 +1,15 @@
-﻿---
+---
 title: Define features and epics, organize backlog items
 titleSuffix: Azure Boards
 description: Define features and epics to organize your product and portfolio backlogs  
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9B517FEE-14FA-41FA-87CD-99D33168D01E  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2015'
-ms.date: 06/11/2019
+ms.date: 02/17/2020
 ---
 
 # Define features and epics  
@@ -22,7 +20,6 @@ ms.date: 06/11/2019
 While many teams can work with a flat list of items, sometimes it helps to group related items into a hierarchical structure. 
 Perhaps you like to start with a big picture and break it down into smaller deliverables. 
 Or, you've got an existing backlog and now need to organize it.   
-
 No matter your starting point, you can use portfolio backlogs to bring more order to your backlog. 
 Use your backlogs to plan your project and to:  
 *   Manage a portfolio of features that are supported by different development and management teams  
@@ -30,13 +27,15 @@ Use your backlogs to plan your project and to:
 *   Minimize size variability of your deliverables by breaking down a large feature into smaller backlog items     
 
 Use this article to learn how to: 
->[!div class="checklist"]      
+> [!div class="checklist"]      
 > * Determine what is a good feature or epic
 > * View a backlog or portfolio backlog  
 > * Add features and epics  
 > * Add child items   
 
-With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).     
+With portfolio backlogs you can quickly add and group items into a hierarchy, drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views. Portfolio backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](backlogs-boards-plans.md). To learn how to track progress across teams, see [Visibility across teams](../plans/visibility-across-teams.md).    
+
+[!INCLUDE [temp](../includes/work-item-types.md)] 
 
 [!INCLUDE [temp](../includes/prerequisites.md)]
 
@@ -295,8 +294,13 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 [!INCLUDE [temp](../includes/add-portfolio-backlogs.md)]
 
 
-
 [!INCLUDE [temp](../includes/display-rollup-section.md)]
+
+
+## Q & A
+
+[!INCLUDE [temp](../includes/faq-copy-clone.md)]
+
 
 ## Try this next  
 

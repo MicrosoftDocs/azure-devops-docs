@@ -2,10 +2,8 @@
 title: Aggregated view for test suites sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate aggregated view for test suites
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE

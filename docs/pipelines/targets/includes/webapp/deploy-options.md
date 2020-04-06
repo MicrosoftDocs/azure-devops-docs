@@ -1,3 +1,12 @@
+---
+ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 ## Deploy to an Azure Government cloud or to Azure Stack
 
 Create a suitable service connection:

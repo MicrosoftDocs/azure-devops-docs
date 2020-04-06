@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: vtbassmatt
+ms.author: macoope
+ms.date: 02/13/2020
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # Command line
 # Run a command line script using Bash on Linux and macOS and cmd.exe on Windows

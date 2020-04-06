@@ -2,12 +2,8 @@
 title: Environment - Virtual machine resource
 description: Virtual machine resource support within Environment
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
-ms.author: jukullam
-author: juliakm
 ms.date: 01/24/2020
 monikerRange: azure-devops
 ---
@@ -52,13 +48,13 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 Create a new pipeline by referencing the environment and VM resources in a pipeline YAML. The environment will be created if it does not already exist.
 ```YAML
 jobs:  
-  - deployment: VMDeploy
-    displayName: web
-    environment:
-      name:  VMenv
-      resourceType: VirtualMachine
-      tags: web1
-    strategy:
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name:  VMenv
+    resourceType: VirtualMachine
+    tags: web1
+  strategy:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.
@@ -78,6 +74,12 @@ The **Deployments** tab provides complete traceability of commits and work items
 > [!div class="mx-imgBorder"]
 > ![VMjobs_view](media/vm-jobsview.png)
   
+## Remove a VM from an Environment
+To unconfigure virtual machines that are previously added to an environment, run this command from an administrator PowerShell command prompt on each of the machines in the same folder path where the script to register to the environment has been previously run:
+
+```
+./configure.sh remove
+```
 ## Known limitations
 When you retry a stage, it will rerun the deployment on all VMs and not just failed targets. 
 

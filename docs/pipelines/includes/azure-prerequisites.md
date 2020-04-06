@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
 * An Azure account. If you don't have one, you can [create one for free](https://azure.microsoft.com/free/).
 
   > [!TIP]

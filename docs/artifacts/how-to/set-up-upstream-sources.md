@@ -1,12 +1,8 @@
 ﻿---
 title: Set up upstream sources for packages
 description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 01/24/2018
 monikerRange: '>= tfs-2017'
 ---

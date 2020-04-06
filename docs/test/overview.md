@@ -2,10 +2,8 @@
 title: Exploratory and manual testing overview
 description: Test tools - Drive quality and collaboration throughout the development process with manual and exploratory testing capabilities
 ms.assetid: E9D8D614-A09A-4327-81B6-39F880D685E6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 09/26/2019

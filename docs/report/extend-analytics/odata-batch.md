@@ -2,9 +2,7 @@
 title: OData batch support 
 titleSuffix: Azure DevOps 
 description: Guidelines for extension developers who want to learn how to write good OData queries 
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.reviewer: prprice
 ms.author: kaelli
 author: KathrynEE

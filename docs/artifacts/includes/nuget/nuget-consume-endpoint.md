@@ -1,5 +1,9 @@
 ---
 ms.topic: include
+ms.technology: devops-cicd
+ms.author: rabououn
+author: ramiMSFT
+ms.date: 02/19/2020
 ---
 
 ::: moniker range=">= azure-devops-2019"

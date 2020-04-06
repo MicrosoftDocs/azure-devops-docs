@@ -3,10 +3,8 @@ title: View or run a query
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -30,7 +28,7 @@ To find work items assigned to you or your team, run a query. A number of work i
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure Devops CLI.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
 
 #### [Browser](#tab/browser)
 
@@ -249,7 +247,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
 

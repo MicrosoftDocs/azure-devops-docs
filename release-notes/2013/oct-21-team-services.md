@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Oct 21
 description: VSTS release notes for October 21 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 79a305c6-4033-453a-89e8-f957f0f19ad1

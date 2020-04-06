@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitQueryCommitsCriteria API | Extensions for Azure DevOps Services
 ms.assetid: b8294551-ee0a-0b1d-835c-4cf54075f4ca
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

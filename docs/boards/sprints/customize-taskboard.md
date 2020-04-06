@@ -4,14 +4,12 @@ titleSuffix: Azure Boards
 description: Customize cards on a Sprint Taskboard in Azure Boards or Azure DevOps 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 951A73EA-7411-4A2A-B3F0-ACBBC7EFC68F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 08/03/2019
+ms.date: 02/17/2020
 ---
 
 
@@ -19,6 +17,7 @@ ms.date: 08/03/2019
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ::: moniker range="azure-devops"
 

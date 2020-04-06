@@ -2,10 +2,8 @@
 title: Map a project plan that was bound to a project
 titleSuffix: TFS 
 description: Specify work items that you want to synchronize using Team Foundation Server & Project Server
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: df29e319-c1f7-4c90-bc27-42975158a0a1
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

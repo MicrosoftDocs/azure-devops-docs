@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Nov 19
 description: VSTS release notes for November 19 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: df593025-ff5b-4410-88bb-b350ea9f19f1

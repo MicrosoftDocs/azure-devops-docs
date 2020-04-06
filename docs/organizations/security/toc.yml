@@ -36,6 +36,8 @@
     href: access-levels.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Active Directory groups 
     href: /azure/devops/server/admin/setup-ad-groups?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Security key concepts
+    href: security-glossary.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: How-to guides
   items:
   - name: Add users to Azure DevOps Services
@@ -46,8 +48,10 @@
     href: export-users-audit-log.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json   
   - name: Set permissions for an object or role
     items: 
-    - name: Set dashboard permissions
-      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Set work tracking and plan permissions 
+      href: set-permissions-access-work-tracking.md
+    - name: Set permissions and access for testing
+      href: set-permissions-access-test.md
     - name: Set Git branch permissions
       href: ../../repos/git/branch-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set pipeline permissions
@@ -56,10 +60,10 @@
       href: provide-stakeholder-pipeline-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set package feed permissions
       href: ../../artifacts/feeds/feed-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    - name: Set dashboard permissions
+      href: ../../report/dashboards/dashboard-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set Wiki permissions
       href: ../../project/wiki/manage-readme-wiki-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-    - name: Set work tracking and plan permissions 
-      href: set-permissions-access-work-tracking.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set feedback permissions
       href: ../../project/feedback/give-permissions-feedback.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Set permissions to manage extensions
@@ -78,20 +82,20 @@
     href: ../accounts/admin-revoke-user-pats.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: Add and delete users
-    href: ../accounts/faq-add-delete-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: User and permissions management
+    href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add team members
-    href: ../accounts/faq-add-team-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md#add-members-to-projects?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Authenticate & invite with GitHub
     href: faq-github-authentication.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Access with Azure AD
     href: ../accounts/faq-azure-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Change app access
-    href: ../accounts/faq-change-app-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md#change-app-access-policies?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add administrators
-    href: ../accounts/faq-add-administrators.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Manage group-based licensing
-    href: ../accounts/faq-manage-group-based-licensing.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md#group-based-licensing?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Resolve connection issues
     href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
@@ -125,7 +129,6 @@
       href: credential-storage.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json 
   - name: TFSSecurity command
     href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Security glossary 
-    href: security-glossary.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+
 
 

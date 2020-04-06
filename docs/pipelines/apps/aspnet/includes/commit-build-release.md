@@ -1,3 +1,12 @@
+---
+ms.topic: include
+ms.technology: devops-cicd
+ms.manager: mijacobs
+ms.author: jukullam
+author: juliakm
+ms.date: 02/13/2020
+---
+
 <h2 id="check-in">Commit a change and see it automatically go live</h2>
 
 Now you get to see the magic of a release pipeline at work! You'll make a change in Visual Studio, commit it or check it in to the source repository, and then let the build and release pipelines take care of the rest.

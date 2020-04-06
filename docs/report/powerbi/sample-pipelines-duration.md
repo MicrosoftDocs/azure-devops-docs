@@ -2,10 +2,8 @@
 title: Pipeline duration sample Power BI report 
 titleSuffix: Azure DevOps
 description: How-to guide to generate a pipeline duration Power BI report  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
@@ -298,6 +296,8 @@ You may want to view the duration for all the pipelines of the project in a sing
 
 - Expand Pipeline into  Pipeline.PipelineName.
 - Add the field **PIpeline.PipelineName** to **Axis**.
+
+Refer [Outcome summary for all pipelines](sample-pipelines-allpipelines.md) sample report which has detailed similar steps as required here.
 
 #### [Power BI query](#tab/powerbi/)
 
