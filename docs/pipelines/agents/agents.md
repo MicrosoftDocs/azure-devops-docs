@@ -415,7 +415,7 @@ To use this method of authentication, you must configure your TFS server as foll
 
 1. Sign in to the machine where you are running TFS.
 
-1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
