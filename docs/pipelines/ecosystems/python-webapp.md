@@ -235,7 +235,7 @@ Then we have script-based task that creates a virtual environment and installs d
        archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
        replaceExistingArchive: true
        verbose: # (no value); this input is optional
-   - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+   - publish: $(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip
      displayName: 'Upload package'
      artifact: drop
    ```
