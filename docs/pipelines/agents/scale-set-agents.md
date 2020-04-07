@@ -43,7 +43,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create a virtual machine scale set agent pool
 
-In preparation for creating scale set agents, you must first create a virtual machine scale set in Azure Portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
+In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure Portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
@@ -90,7 +90,7 @@ In the following example, a new resource group and virtual machine scale set are
     * `--disable-overprovision`
     * `--upgrade-policy-mode manual`
     * `--load-balancer ""`
-    * `--instance-count 0` - this setting is not required but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
+    * `--instance-count 0` - this setting is not required, but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
 
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
@@ -105,7 +105,7 @@ In the following example, a new resource group and virtual machine scale set are
 
         :::image type="content" source="media/scale-set-agents/upgrade-policy.png" alt-text="Verify upgrade policy." :::
 
-        You can also verify this setting by running the following command in cloud shell.
+        You can also verify this setting by running the following Azure CLI command.
 
         ```azurecli
         az vmss show --resource-group vmssagents --name vmssagentspool --output table
