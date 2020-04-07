@@ -43,7 +43,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create a virtual machine scale set agent pool
 
-In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure Portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
+In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
@@ -99,7 +99,7 @@ In the following example, a new resource group and virtual machine scale set are
     
     Select any VM SKU and storage SKU.
 
-5. After creating your scale set, navigate to your scale set in the Azure Portal and verify the following settings:
+5. After creating your scale set, navigate to your scale set in the Azure portal and verify the following settings:
 
     * **Upgrade policy - Manual**
 
