@@ -134,8 +134,8 @@ In the following example, a new resource group and virtual machine scale set are
 5. Configure the following options:
 
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
-    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
-    - **Automatically tear down virtual machines after every use** - If you select this option you will get a new VM instance for each job. Note that even when choosing this option, you may still get a new VM instance for some jobs depending on whether there is a VM instance available when you run a pipeline.
+    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipeline will start a VM only when it has a job.
+    - **Automatically tear down virtual machines after every use** - If you select this option you will get a new VM instance for each job. Note that even when choosing this option, you may still get a new VM instance for some jobs depending on whether there is a running VM instance available on standby when you run a pipeline.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
