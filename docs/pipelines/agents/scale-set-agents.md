@@ -163,7 +163,7 @@ Once the scale set agent pool is created, Azure Pipelines automatically scales t
 
 ### Limitations during the preview
 
-During the private preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
+During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
 - Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
