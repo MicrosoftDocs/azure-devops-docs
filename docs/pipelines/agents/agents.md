@@ -76,7 +76,7 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
 
-::: moniker range="> azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Azure virtual machine scale set agents
 
