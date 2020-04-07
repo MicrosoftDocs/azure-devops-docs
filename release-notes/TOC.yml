@@ -6,6 +6,8 @@
   - name: 2020
     expanded: true
     items:
+    - name: April 13
+      href: 2020/sprint-167-update.md
     - name: March 16
       href: 2020/sprint-166-update.md
     - name: February 17
@@ -433,6 +435,8 @@
       href: 2019/testplans/sprint-154-update.md
 - name: Azure Artifacts
   items:
+    - name: April 13
+      href: 2020/artifacts/sprint-167-update.md
     - name: November 4
       href: 2019/artifacts/sprint-160-update.md
     - name: September 3
