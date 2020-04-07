@@ -1,10 +1,10 @@
 ---
-title: Azure DevOps Release Notes - [placeholder] 167 
+title: Azure DevOps Release Notes - [placeholder] 167
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 4/13/2020
-description: [place holder]
+description: [placeholder]
 ---
 
 # Title
@@ -14,12 +14,12 @@ Check out the [Features](#features) list below for details.
 ## Features
 
 ### Artifacts
-
 [!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
 
 ### Artifacts
-
 [!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
+
+
 
 ## Next steps
 
@@ -41,5 +41,5 @@ We would love to hear what you think about these features. Use the help menu to 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
   
 Thanks,
-Aaron Hallberg
+Aaron
   
