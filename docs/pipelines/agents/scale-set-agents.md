@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/06/2020
+ms.date: 04/07/2020
 monikerRange: azure-devops
 ---
 
@@ -135,14 +135,13 @@ In the following example, a new resource group and virtual machine scale set are
 
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs.
+    - **Automatically tear down virtual machines after every use** - If you select this option you will get a new VM instance for each job. Note that even when choosing this option, you may still get a new VM instance for some jobs depending on whether there is a VM instance available when you run a pipeline.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
     > [!IMPORTANT]
     > During the preview, scale set agents have the following limitations:
-    > - Selecting **Automatically tear down virtual machines after every use** has no effect. Azure Pipelines cannot automatically tear down virtual machines after every use. If your job runs on a VM that has previously run jobs, pipeline run artifacts and source may be present, unless you specify clean options in your job.
     > - You may not select **Preserve machines with failed runs for diagnostics**.
-    > - You must not specify **0** for **Number of agents to keep on standby**. You must have at least one, or else your jobs may not run if there is no current running agent.
 
 6. When your settings are configured, choose **Create** to create the agent pool.
 
@@ -160,8 +159,6 @@ Once the scale set agent pool is created, Azure Pipelines automatically scales t
 
 During the private preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
-- You must specify at least one agent to be always present in the scale set. 
-- Azure Pipelines cannot automatically tear down virtual machines after every use.
 - Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
 
