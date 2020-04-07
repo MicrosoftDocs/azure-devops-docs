@@ -43,13 +43,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create a virtual machine scale set agent pool
 
-Use [Azure portal](/azure/virtual-machine-scale-sets/quick-create-portal), [Azure CLI](https://docs.microsoft.com/azure/virtual-machine-scale-sets/quick-create-cli), or [Azure PowerShell](/azure/virtual-machine-scale-sets/quick-create-powershell) to create a scale set in your Azure subscription.
-
-- Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines.
-
-
-
-### Create a virtual machine scale set
+In preparation for creating scale set agents, you must first create a virtual machine scale set in Azure Portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
@@ -97,6 +91,10 @@ In the following example, a new resource group and virtual machine scale set are
     * `--upgrade-policy-mode manual`
     * `--load-balancer ""`
     * `--instance-count 0` - this setting is not required but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
+
+    Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image.
+    
+    Select any VM SKU and storage SKU.
 
 5. After creating your scale set, navigate to your scale set in the Azure Portal and verify the following settings:
 
