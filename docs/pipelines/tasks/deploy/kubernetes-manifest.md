@@ -352,13 +352,13 @@ steps:
   </tr>
   <tr>
     <td><b>overrideFiles</b><br/>Override files</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     Multiline input that accepts the path to the override files. The files are used when manifest files from Helm charts are baked.</td>
   </tr>
   <tr>
     <td><b>overrides</b><br/>Override values</td>
-    <td>(Optional, and relevant only if <b>action</b> is set to <b>bake</b> and <b>renderType</b> is set to <b>helm2</b>)<br/>
+    <td>(Optional, and relevant only if <b>renderType</b> is set to <b>helm2</b>)<br/>
     <br/>
     Additional override values that are used via the command-line switch <b>--set</b> when manifest files using Helm are baked.<br/>
     <br/>
