@@ -93,9 +93,9 @@ In the following example, a new resource group and virtual machine scale set are
     * `--instance-count 0` - this setting is not required but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
 
     > [!IMPORTANT]
-    >  If you run this script using Azure CLI on Windows, you must enclose the *""* in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
+    >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
-    Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image.
+    Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image.
     
     Select any VM SKU and storage SKU.
 
@@ -140,8 +140,8 @@ In the following example, a new resource group and virtual machine scale set are
 5. Configure the following options:
 
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
-    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipeline will start a VM only when it has a job.
-    - **Automatically tear down virtual machines after every use** - If you select this option you will get a new VM instance for each job. Note that even when choosing this option, you may still get a new VM instance for some jobs depending on whether there is a running VM instance available on standby when you run a pipeline.
+    - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
+    - **Automatically tear down virtual machines after every use** - If you select this option, a new VM instance is used for every job.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
