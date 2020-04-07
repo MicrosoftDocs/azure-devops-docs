@@ -361,7 +361,8 @@
     href: packages/jenkins.md
 - name: Create & use resources
   items: 
-  #- name: About resources
+  - name: About resources
+    href: process/about-resources.md
   - name: Add resources to a pipeline
     href: process/resources.md
   - name: Add & use variable groups 
