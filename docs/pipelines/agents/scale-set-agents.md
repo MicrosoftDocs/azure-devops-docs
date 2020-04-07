@@ -89,8 +89,11 @@ In the following example, a new resource group and virtual machine scale set are
 
     * `--disable-overprovision`
     * `--upgrade-policy-mode manual`
-    * `--load-balancer ""` - If you run this script on Azure CLI on Windows, you must enclose the *""* with single quotes: **'""'** - `--load-balancer '""'`
+    * `--load-balancer ""`
     * `--instance-count 0` - this setting is not required but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
+
+    > [!IMPORTANT]
+    >  If you run this script using Azure CLI on Windows, you must enclose the *""* in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
     Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines will automatically install the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image.
     
