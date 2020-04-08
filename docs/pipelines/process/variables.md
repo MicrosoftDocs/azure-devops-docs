@@ -872,6 +872,29 @@ stages:
     steps:
     - bash: echo $(a)        # This will be 'job yaml'
 ```
+When you set a variable with the same name in the same scope, the last set value will take precedence.
+
+```yaml
+stages:
+- stage: one
+  displayName: Stage One
+  variables: 
+    - name: a
+      value: alpha
+    - name: a
+      value: beta
+  jobs: 
+  - job: I
+    displayName: Job I
+    variables:
+      - name: b
+        value: uno
+      - name: b
+        value: dos
+    steps: 
+    - script: echo $(a) #outputs beta
+    - script: echo $(b) #outputs dos
+```
 
 > [!NOTE]
 > When you set a variable in the YAML file, don't define it in the web editor as settable at queue time. You can't currently change variables that are set in the YAML file at queue time. If you need a variable to be settable at queue time, don't set it in the YAML file.
