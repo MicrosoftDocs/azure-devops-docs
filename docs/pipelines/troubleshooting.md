@@ -248,7 +248,7 @@ Both logs show how the agent capabilities were detected and set.
 
 Inside the diagnostic logs you will find environment.txt and capabilities.txt.
 
-The environment.txt file has various information about the environment within which your build ran. This includes information like what Tasks are run, whether or not the firewall is enabled, Powershell version info, and some other items. We continually add to this data to make it more useful.
+The environment.txt file has various information about the environment within which your build ran. This includes information like what Tasks are run, whether or not the firewall is enabled, PowerShell version info, and some other items. We continually add to this data to make it more useful.
 
 The capabilities file provides a clean way to see all capabilities installed on the build machine
 that ran your build.
@@ -406,7 +406,7 @@ A process hang may indicate that a process is waiting for input.
 
 Running the agent from the command line of an interactive logged on session may help to identify whether a process is prompting with a dialog for input.
 
-Running the agent as a service may help to eliminate programs from prompting for input. For example in .Net, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When running as a Windows service, the value is false.
+Running the agent as a service may help to eliminate programs from prompting for input. For example in .NET, programs may rely on the System.Environment.UserInteractive Boolean to determine whether to prompt. When running as a Windows service, the value is false.
 
 #### Process dump
 
