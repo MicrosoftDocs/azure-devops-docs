@@ -66,13 +66,13 @@ This is the branch that you want to be the default when you manually queue this 
 ::: moniker range="azure-devops"
 > [!NOTE]
 > Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time. 
-> When using self-hosted agents, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so not cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
+> When using self-hosted agents, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2015 < azure-devops"
 
 > [!NOTE]
-> When using self-hosted agents, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so not cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can use [Build artifacts](../artifacts/build-artifacts.md) to share outputs of a pipeline run, stage, or job with subsequent runs, stages, or jobs.
+> When using self-hosted agents, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can use [Build artifacts](../artifacts/build-artifacts.md) to share outputs of a pipeline run, stage, or job with subsequent runs, stages, or jobs.
 
 ::: moniker-end
 
