@@ -2,13 +2,10 @@
 title: MenuBar Control | Extensions for Azure DevOps Services
 description: Used to display a toolbar in your app for Azure DevOps Services.
 ms.assetid: 62A19D22-D6BD-4BC2-8A36-D8E894087449
-ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

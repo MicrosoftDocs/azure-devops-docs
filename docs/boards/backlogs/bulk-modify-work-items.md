@@ -3,9 +3,7 @@ title: Edit multiple user stories, & other work items
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
 ms.custom: "boards-backlogs, seodec18" 
-ms.prod: devops
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -183,7 +181,7 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
+3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end
@@ -248,7 +246,7 @@ All of the following actions can be performed by team members that belong to the
 **Notes:**  
 1. You can't perform certain functions on work items whose WITs belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses. 
 2. You can choose to copy or clone a single work item from a query results list or from the [Actions menu of the work item form](remove-delete-work-items.md). You can only perform a clone or copy action for a single work item. Choose Copy work item when you want to create a copy of a work item and change its work item type. Choose Clone when you want to create another instance of the work item without changes to its work item type. 
-3. For on-premises TFS, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
+3. For on-premises Azure DevOps, you must have an [SMTP server configured for your deployment](/azure/devops/server/admin/setup-customize-alerts). 
 
 
 ::: moniker-end

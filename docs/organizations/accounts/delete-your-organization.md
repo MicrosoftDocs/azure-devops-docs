@@ -3,11 +3,9 @@ title: Delete or remove an organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to delete your organization, and what happens to users when you do.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 09/13/2019
@@ -61,6 +59,6 @@ permissions. [How do I find the Project Collection Administrators?](../security/
 
 5. To review your organizations, go to your [Visual Studio profile](https://app.vsaex.visualstudio.com/profile/view), where you can see your deleted organization.
 
-   [Need help?](faq-delete-restore-organization.md#get-support)
+   [Need help?](faq-configure-customize-organization.md#get-support)
 
 

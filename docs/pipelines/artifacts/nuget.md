@@ -5,14 +5,9 @@ ms.custom: seodec18
 description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-ms.date: 06/12/2018
+ms.date: 04/07/2020
 monikerRange: '>= tfs-2017'
-author: chasewilson
 ---
 
 # Publish to NuGet feeds
@@ -80,7 +75,7 @@ In NuGet, a particular package is identified by its name and version number. A r
 
 When you fix a bug, you increment the patch (`1.0.0` to `1.0.1`). When you release a new backward-compatible feature, you increment the minor version and reset the patch version to 0 (`1.4.17` to `1.5.0`). When you make a backward-incompatible change, you increment the major version and reset the minor and patch versions to 0 (`2.6.5` to `3.0.0`).
 
-In addition to `Major.Minor.Patch`, Semantic Versioning provides for a prerelease label. Prerelease labels are a hyphen (`-`) followed by whatever letters and numbers you want. Version `1.0.0-alpha`, `1.0.0-beta`, and `1.0.0-foo12345` are all prerelease versions of `1.0.0`. Even better, Semantic Versioning specifies that when you sort by version number, those prerelease versions fit exactly where you’d expect: `0.99.999` < `1.0.0-alpha` < `1.0.0` < `1.0.1-beta`.
+In addition to `Major.Minor.Patch`, Semantic Versioning provides for a prerelease label. Prerelease labels are a hyphen (`-`) followed by whatever letters and numbers you want. Version `1.0.0-alpha`, `1.0.0-beta`, and `1.0.0-foo12345` are all prerelease versions of `1.0.0`. Even better, Semantic Versioning specifies that when you sort by version number, those prerelease versions fit exactly where you'd expect: `0.99.999` < `1.0.0-alpha` < `1.0.0` < `1.0.1-beta`.
 
 When you create a package in continuous integration (CI), you can use Semantic Versioning with prerelease labels. You can use the **NuGet** task for this purpose. It supports the following formats:
 
@@ -126,7 +121,7 @@ In the **NuGet** task, select **Pack options** and select one of the values for 
 * * *
 Although Semantic Versioning with prerelease labels is a good solution for packages produced in CI builds, including a prerelease label is not ideal when you want to release a package to your users. The challenge is that after packages are produced, they're [immutable](/azure/devops/artifacts/feeds/immutability). They can't be updated or replaced. 
 
-When you’re producing a package in a build, you can’t know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
+When you're producing a package in a build, you can't know whether it will be the version that you aim to release to your users or just a step along the way toward that release. Although none of the following solutions are ideal, you can use one of these depending on your preference:
 
 * After you validate a package and decide to release it, produce another package without the prerelease label and publish it. The drawback of this approach is that you have to validate the new package again, and it might uncover new issues.
 
@@ -149,9 +144,11 @@ steps:
   displayName: 'NuGet push'
   inputs:
     command: push
-    publishVstsFeed: '<feedName>'
+    publishVstsFeed: '<projectName>/<feed>'
     allowPackageConflicts: true
 ```
+> [!NOTE]
+> Artifact feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishVstsFeed` parameter: `publishVstsFeed: '<projectName>/<feed>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-feeds-vs-organization-scoped-feeds) to learn about the difference between the two types.
 
 To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Service connections**, and then creating a **New service connection**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
 

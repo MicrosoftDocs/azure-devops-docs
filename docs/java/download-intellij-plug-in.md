@@ -1,11 +1,9 @@
 ---
 title: Get the IntelliJ IDEA Azure DevOps Services plug-in
 description: Information and download links for the IntelliJ IDEA Azure DevOps Services plug-in
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: dastahel

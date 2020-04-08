@@ -3,11 +3,9 @@ title: Change app access policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to change application access policies for your organization, so you don't have to enter user credentials multiple times
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/20/2020
@@ -42,7 +40,7 @@ When you deny access to an authentication method, no app can use that method to 
 > you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
 To continue, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
-[How do I find the organization Owner?](faq-change-app-access.md#find-owner)
+[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
 ## Change application access policies
 
@@ -61,6 +59,6 @@ To continue, you need at least Basic access and organization Owner or Project Co
 
 ## Related articles
 
-- [Need help?](faq-change-app-access.md#get-support)
+- [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
 - [Manage Conditional Access](manage-conditional-access.md)

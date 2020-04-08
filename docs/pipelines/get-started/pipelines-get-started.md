@@ -2,10 +2,7 @@
 title: Use Azure Pipelines
 ms.custom: seodec18
 description: Learn the basics about Azure Pipelines and how to use it to automatically build and release code.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 11/15/2019
@@ -115,7 +112,7 @@ Certain pipeline features are only available when using YAML or when defining bu
 | [Deployment group jobs](../process/deployment-group-phases.md)|No | No | Yes | Specifies a job to release to a deployment group. | 
 | [Deployment jobs](../process/deployment-group-phases.md) | Yes | No |  No | Defines the deployment steps. Requires Multi-stage pipelines experience. | 
 | [Environment](../process/environments.md) | Yes | No | No | Represents a collection of resources targeted for deployment. Available with Azure Pipelines only.|
-| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Azure Pipelines only. |
+| [Gates](../release/approvals/gates.md) | No | No | Yes | Supports automatic collection and evaluation of external health signals prior to completing a release stage. Available with Classic Release only. |
 | [Jobs](key-pipelines-concepts.md) | Yes | Yes | Yes | Defines the execution sequence of a set of steps.|
 | [Service connections](../library/service-endpoints.md) | Yes | Yes | Yes | Enables a connection to a remote service that is required to execute tasks in a job.   |
 | [Service containers](../process/service-containers.md) | Yes |No | No  |Enables you to manage the lifecycle of a containerized service.   |

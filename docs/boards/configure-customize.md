@@ -3,10 +3,8 @@ title: Understand options and choices for configuring and customizing work track
 titleSuffix: Azure Boards
 description: Learn about choices to customize or configure Azure Boards and the impact on tools available
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -79,6 +77,14 @@ One of the main choices teams have is choosing the work item types they use to t
    :::column-end:::
    :::column span="2":::
       **Tasks and tools supported**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ----------------------------
+   :::column-end:::
+   :::column span="2":::
+      ----------------------------
    :::column-end:::
 :::row-end:::
 :::row:::

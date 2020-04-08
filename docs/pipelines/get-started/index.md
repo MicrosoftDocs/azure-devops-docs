@@ -2,10 +2,7 @@
 title: Learn how to build and deploy your apps
 titleSuffix: Azure Pipelines
 description: Use Azure Pipelines to build and deploy your apps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.topic: overview

@@ -2,23 +2,21 @@
 title: Install extensions
 description: Learn how to install extensions and assign extensions for Azure DevOps
 ms.topic: quickstart
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2019
+ms.date: 03/21/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Quickstart: Install extensions
+# Install extensions
 
 [!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Add new features and capabilities to your organization by installing extensions.
 
-In this quickstart, learn how to [install extensions](#install-extension).
+In this article, learn how to [install extensions](#install-extension) for Azure DevOps.
 
 To learn about building your own Azure DevOps extensions, see [developing](https://aka.ms/vsoextensions) and [publishing](https://aka.ms/vsmarketplace-publish) extensions.
 
@@ -38,11 +36,11 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
    ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 
-3.	Find the extension that you want to install.
+3.    Find the extension that you want to install.
 
-4.	Select **Get** or **Get it free**.
+4.    Select **Get it free**.
 
-    ![Get extension](media/get-vsts-extensions/get-extension.png)
+      ![Get extension](media/get-vsts-extensions/get-extension.png)
 
 5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
 

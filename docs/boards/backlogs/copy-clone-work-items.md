@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Copy or clone user stories, issues, bugs, tasks, or other work items in Azure DevOps or TFS 
 ms.custom: seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 743A3914-CD86-403D-AA4F-42CDBBB69F95  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
@@ -117,7 +115,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
 ::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"

@@ -3,11 +3,6 @@ title: Azure Pipelines New User Guide - Key concepts
 ms.custom: seodec18
 description: Learn how Azure Pipelines works with your code and tools to automate build and deployment, and the key concepts behind it.
 ms.topic: overview
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
 ms.date: 01/15/2020
 monikerRange: 'azure-devops'
 ---
@@ -68,7 +63,7 @@ A pipeline defines the continuous integration and deployment process for your ap
 
 ## Run
 
-A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests.
+A run represents one execution of a pipeline. It collects the logs associated with running the steps and the results of running tests. During a run, Azure Pipelines will first process the pipeline and then hand off the run to one or more agents. Each agent will run jobs. Learn more about the [pipeline run sequence](../process/runs.md).  
 
 ## Script
 

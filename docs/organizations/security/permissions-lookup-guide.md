@@ -3,9 +3,7 @@ title: Permissions and role lookup guide
 titleSuffix: Azure DevOps
 description: Index to permissions defined for Azure DevOps
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -88,7 +86,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -147,7 +145,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
@@ -327,7 +325,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -387,7 +385,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>M-N</h3>
 <ul>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Make requests on behalf of others (Collection)</a></li>
+<li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
 <li><a href="permissions.md#server-permissions">Make requests on behalf of others (Server)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
@@ -547,7 +545,7 @@ Values in parenthesis indicate what level the permission is managed:
 </ul>
 <h3>D</h3>
 <ul>
-<li><a href="../../report/dashboards/dashboards.md" data-raw-source="[Dashboards, manage (Team)](../../report/dashboards/dashboards.md)">Dashboards, manage (Team)</a></li>
+<li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete builds (Object)</a></li>
 <li><a href="../settings/work/customize-process-field.md" data-raw-source="[Delete field from account](../settings/work/customize-process-field.md)">Delete field from account</a></li>
@@ -673,7 +671,7 @@ Values in parenthesis indicate what level the permission is managed:
 
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Create and modify areas and iterations
 - Edit check-in policies
 - Edit shared work item queries
@@ -688,7 +686,7 @@ for all team projects defined in the account or collection:
 
 The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an account or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
-				
+                
 - Add and administer teams and all team-related features
 - Create and modify areas and iterations
 - Edit check-in policies

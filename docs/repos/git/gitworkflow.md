@@ -3,7 +3,6 @@ title: Azure Repos Git tutorial
 titleSuffix: Azure Repos
 description: Learn Git with the Azure DevOps Services/TFS Git tutorial.
 ms.assetid: 0270b0fa-461b-4079-9703-cdcf53bdf39f
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.author: sdanie
 author: apawast

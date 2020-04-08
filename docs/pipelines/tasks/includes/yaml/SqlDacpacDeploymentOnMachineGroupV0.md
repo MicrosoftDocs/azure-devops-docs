@@ -1,3 +1,12 @@
+---
+ms.topic: include
+author: RoopeshNair
+ms.author: ronai
+ms.date: 12/07/2018
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # SQL Server database deploy
 # Deploy a SQL Server database using DACPAC or SQL scripts

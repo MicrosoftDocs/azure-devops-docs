@@ -3,24 +3,34 @@ title: Import or update work items from a CSV file
 titleSuffix: Azure Boards
 description: Bulk import or update work items from a CSV formatted file 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: ">= azure-devops-2019"
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ---
 
 # Bulk import or update work items using CSV files
 
 [!INCLUDE [temp](../includes/version-vsts-plus-azdevserver-2019.md)]
 
-Learn how to import new work items or update existing items from a CSV file. Import is now directly native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+::: moniker range="azure-devops"
+
+Learn how to import new work items or update existing items from a CSV file. Import and export of work items is now native to the Azure Boards product. While you can continue to use Excel for bulk import and updates, the Excel is no longer required. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+
+Learn how to export work items from a CSV file. While you can continue to use Excel for bulk import and updates, you can now use the export features available from  Queries. To learn more about using Excel, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).
+
+::: moniker-end 
 
 > [!NOTE]   
-> This feature is available with Azure DevOps Services, [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609), and later versions. 
+> The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is only available with Azure DevOps Services. 
+
+::: moniker range="azure-devops"
 
 ## Import new work items
 
@@ -105,6 +115,33 @@ All work items you import are created in a new state. This rule means that you c
 	> [!div class="mx-imgBorder"]  
 	> ![Import Work Items Save Image](media/import-csv/import-update-error-1.png)
 
+::: moniker-end 
+
+
+::: moniker range=">= azure-devops-2019"
+
+## Export list as CSV 
+
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!NOTE]   
+> Requires Azure DevOps Server 2019 Update 1 or later version. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+> [!div class="mx-imgBorder"]  
+> ![Export a query as CSV](../work-items/media/email/export.png)   
+
+::: moniker-end 
+
+::: moniker range="azure-devops"
+
 ## Q & A
 
 ### Can I import new items and update existing items in the same CSV file?
@@ -148,6 +185,11 @@ Any problems with the formatting of your CSV file appear in the Results page of 
 > ![CSV Error image](media/import-csv/import-csv-error-1.png)
 
 The work items results always lists the data errors found for individual work items. Fix each error either from the web portal, or in the CSV file and import again.
+
+
+::: moniker-end 
+
+
 
 ## Related articles
 

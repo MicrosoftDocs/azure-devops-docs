@@ -3,9 +3,7 @@ title: Manually add features after an upgrade
 titleSuffix: TFS
 description: Manually update an existing project to access new features after upgrading Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

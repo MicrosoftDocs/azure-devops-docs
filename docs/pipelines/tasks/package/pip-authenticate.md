@@ -3,11 +3,6 @@ title: Python Pip Authenticate
 ms.custom: seodec18
 description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 08/02/2019
 monikerRange: 'azure-devops'
 ---
@@ -55,7 +50,7 @@ For project scoped feeds that are in a different project than where the pipeline
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+    pip install HelloTestPackage
 ```
 
 ### Download python distributions from Azure Artifacts feeds consulting official python registry first
@@ -76,7 +71,7 @@ For project scoped feeds that are in a different project than where the pipeline
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+     pip install HelloTestPackage
 ```
 
 ### Download python distributions from other private python servers
@@ -92,7 +87,7 @@ In this example, we are setting authentication for downloading from a external p
 
 # Use command line tool to 'pip install'.
 - script: |
-   pip install HelloTestPackage
+     pip install HelloTestPackage
 ```
 
 <a name="versions" />

@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskOrchestrationPlan API | Extensions for Azure DevOps Services
 description: Data representation of a task orchestration plan.
 ms.assetid: b4dcc009-74d6-d4a1-5894-d75d7def3c9b
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

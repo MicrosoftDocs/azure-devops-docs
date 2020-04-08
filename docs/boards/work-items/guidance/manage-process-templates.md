@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Upload, download, delete, or make default a process template for a project collection 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -90,7 +88,7 @@ You can upload, download, and delete process templates for a project collection.
 
 # [Visual Studio 2017](#tab/visual-studio-2017)
 
-1. From Visual Studio 2017, connect to an on-premises TFS collection. 
+1. From Visual Studio 2017, connect to an on-premises Azure DevOps collection. 
 
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
@@ -318,7 +316,7 @@ Periodically, updates are made to the process templates to support new features.
 
 ### Update a process template to enable new features 
 
-When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
+When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
 
 ::: moniker-end
 

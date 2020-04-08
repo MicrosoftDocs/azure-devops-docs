@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -39,7 +37,7 @@ When defining work items or running queries, the following operational limits ap
 | Query length | 32,000 characters |
 
 
-If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ::: moniker-end
 

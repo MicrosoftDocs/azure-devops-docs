@@ -1,11 +1,9 @@
 ---
 title: Build a package for Maven with Jenkins and Azure DevOps Services
 description: Tutorial lab for building a package for Maven with Jenkins and Azure DevOps
-ms.prod: devops
 ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: java
-ms.manager: mijacobs
 ms.author: dastahel
 author: davidstaheli
 ms.date: 01/22/2018

@@ -3,9 +3,7 @@ title: Edit or manage Delivery Plan permissions
 titleSuffix: Azure Boards
 description: Edit or change permissions for a delivery plan    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

@@ -3,13 +3,8 @@ title: Expressions
 ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.manager: mijacobs
-ms.author: jukullam
-author: juliakm
-ms.date: 12/20/2019
+ms.date: 03/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -112,6 +107,8 @@ Depending on the execution context, different variables are available.
 - If you create build pipelines using classic editor, then [build variables](../build/variables.md) are available.
 - If you create release pipelines using classic editor, then [release variables](../release/variables.md) are available.
 
+Variables are always strings. If you want to use typed values, then you should use [parameters](runtime-parameters.md) instead.
+
 ## Functions
 
 The following built-in functions can be used in expressions.
@@ -169,7 +166,7 @@ variables:
   minor: $[counter(variables['major'], 100)]
 
 steps:
-    - bash: echo $(minor)
+- bash: echo $(minor)
 ```
 
 The value of `minor` in the above example in the first run of the pipeline will be 100. In the second run it will be 101, provided the value of `major` is still 1.
@@ -186,7 +183,7 @@ jobs:
   variables:
     a: $[counter(format('{0:yyyyMMdd}', pipeline.startTime), 100)]
   steps:
-    - bash: echo $(a)
+  - bash: echo $(a)
 ``` 
 
 Here is an example of having a counter that maintains a separate value for PRs and CI runs.
@@ -348,7 +345,7 @@ You can use the following status check functions as expressions in conditions, b
 
 You can use an `if` clause to conditionally assign the value or a variable or set inputs for tasks. Conditionals only work when using template syntax. 
 
-For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md#conditional-insertion). 
+For templates, you can use conditional insertion when adding a sequence or mapping. Learn more about [conditional insertion in templates](templates.md). 
 
 ### Conditionally assign a variable
 ```yml
@@ -455,9 +452,9 @@ As an example, consider an array of objects named `foo`. We want to get an array
 
 ```json
 [
-	{ "id": 1, "a": "avalue1"},
-	{ "id": 2, "a": "avalue2"},
-	{ "id": 3, "a": "avalue3"}
+    { "id": 1, "a": "avalue1"},
+    { "id": 2, "a": "avalue2"},
+    { "id": 3, "a": "avalue3"}
 ]
 ```
 

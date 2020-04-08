@@ -2,10 +2,8 @@
 title: Manual test Tester by Outcome matrix sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a tester by outcome matrix report
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE

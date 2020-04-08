@@ -1,11 +1,8 @@
 ---
 title: Deployment strategies for Kubernetes deployments
 description: Setting up deployment strategies using KubernetesManifest task
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: bba1eae2-6494-4ad4-991b-53b755c4c86e
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 08/28/2019

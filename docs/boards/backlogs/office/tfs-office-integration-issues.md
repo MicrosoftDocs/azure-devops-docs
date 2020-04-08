@@ -3,9 +3,7 @@ title: Azure DevOps Office integration issues
 titleSuffix: Azure Boards
 description: Resolve common integration issues that occur with TFS Office integration, resolve TF86001 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 819EA180-2BAC-46DB-A17E-A5179E6BEADC
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

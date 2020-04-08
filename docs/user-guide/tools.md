@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -196,7 +194,7 @@ With HockeyApp, you can develop, distribute, and beta test your mobile apps. Hoc
 - Open-source SDKs to let you know what code is running in your apps
 - Integration with your existing build system and work item management solution
 
-To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app-insights-overview).
+To learn more, see [Microsoft Azure - HockeyApp](https://azure.microsoft.com/updates/hockeyapp-available-for-purchase-through-azure/).
 
 ## Command-line tools
 

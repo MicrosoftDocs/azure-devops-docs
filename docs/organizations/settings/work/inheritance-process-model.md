@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
@@ -28,6 +26,9 @@ To customize the work tracking system, you *customize* an inherited process thro
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
 <a id="what-you-can-customize">  </a>
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
 
 [!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]

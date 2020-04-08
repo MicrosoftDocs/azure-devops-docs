@@ -3,9 +3,7 @@ title: WebLayout XML elements reference
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage of all elements used in the new web form layout for Team Foundation Server
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 67ed8539-61b8-42c7-9d0f-95b124cf5ed8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference

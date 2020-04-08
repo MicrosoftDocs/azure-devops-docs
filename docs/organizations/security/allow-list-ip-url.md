@@ -2,13 +2,11 @@
 title: Add IP addresses and URLs to allow list
 titleSuffix: Azure DevOps
 description: Add IP addresses and URLs to the Allow list for Azure DevOps, troubleshoot network connections 
-ms.prod: devops
 ms.topic: reference
 ms.technology: devops-security
 ms.reviewer: jominana
 ms.author: ChComley
 author: chcomley
-ms.manager: mijacobs
 monikerRange: '>= tfs-2015'
 ms.date: 12/12/2019
 ---
@@ -86,7 +84,7 @@ We recommend you open port 443 to all traffic on these IP addresses and domains.
 
 ## IP addresses and range restrictions
 
-Ensure the following IP addresses are allowed, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from a user’s machine to Azure DevOps. The list doesn't include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections. 
+Ensure the following IP addresses are allowed, so your organization works with any existing firewall or IP restrictions. The endpoint data, in the following chart lists requirements for connectivity from a user's machine to Azure DevOps. The list doesn't include network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections. 
 
 |**IP V4 ranges** |**IP V6 ranges**  |
 |---------|---------|
@@ -135,7 +133,7 @@ If you use Microsoft-hosted agent to run your jobs and you need the information 
 
 ## Private Build Agents
 
-If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQ](../../pipelines/agents/v2-windows.md). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
+If you're running a firewall and your code is in Azure Repos, see [Self-hosted Windows agents FAQs](../../pipelines/agents/v2-windows.md). This article has information about which URLs and IP addresses your private agent needs to communicate with. 
 
 ## Hosted Windows and Linux Agents
 

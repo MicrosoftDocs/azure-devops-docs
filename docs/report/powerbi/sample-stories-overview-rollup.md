@@ -2,10 +2,8 @@
 title: Requirements tracking, Stories overview rollup report 
 titleSuffix: Azure DevOps
 description: Power BI query to generate a report that tracks work progress and status of tests and bugs
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE

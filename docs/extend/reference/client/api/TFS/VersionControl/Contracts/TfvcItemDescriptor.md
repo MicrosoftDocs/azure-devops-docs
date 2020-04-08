@@ -2,10 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcItemDescriptor API | Extensions for Azure DevOps Services
 description: Item path and Version descriptor properties
 ms.assetid: 4b5d97aa-b26d-0096-0496-5700f847dc28
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

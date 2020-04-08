@@ -3,13 +3,8 @@ title: Microsoft-hosted agents for Azure Pipelines
 ms.custom: seodec18
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 02/25/2020
+ms.date: 03/26/2020
 monikerRange: azure-devops
 ---
 
@@ -114,8 +109,14 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
+### To identify the possible IP ranges for your Microsoft-hosted agents
+
+1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
+2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
+3. Identify the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+
 >[!NOTE]
->Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, additional IP ranges must be included for regions in the capacity fallback geography.
+>Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
 >
 >If your organization is in the **Brazil South** region, your capacity fallback geography is **United States**.
 >

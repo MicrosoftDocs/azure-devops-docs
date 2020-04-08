@@ -2,10 +2,8 @@
 title: Add findings to existing bugs
 description: Manual and exploratory testing - add findings to  existing bugs existing bugs when using the Test &amp; Feedback extension
 ms.assetid: 0C61F157-452E-4DE5-8998-8DDBD9D44969
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018

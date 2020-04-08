@@ -2,13 +2,11 @@
 title: Pipeline deployment approvals
 description: Use approvals to determine when a deployment stage can run
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 10/21/2019
+ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
 
@@ -31,9 +29,10 @@ Approvals and other checks are not defined in the yaml file. Users modifying the
 
 You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments.
 
+### Approvals for environments
 To define an approval on an environment:
 
-1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. (Learn more about [creating an environment](environments.md#creation)).
+1. In your Azure DevOps project, go to the environment that needs to be protected. (Learn more about [creating an environment](environments.md#creation).)
 
 2. Navigate to **Approvals and Checks** for the environment.
 
@@ -46,6 +45,31 @@ You can add multiple approvers to an environment. These approvers can be individ
 Using the advanced options, you can configure if a subset of approvals is enough or if you need all the specified users to complete the approval. You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals are not complete within the **Timeout** specified for the approval, the stage is marked failed.
+
+## Required template
+
+With the required template approval, you can require that any pipelines use a specific YAML template. When this check is in place, a pipeline will fail if it doesn't extend from the referenced template. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
+
+To define a required template approval:
+
+1. In your Azure DevOps project, go to the [service connection](../library/service-endpoints.md) that you want to restrict. 
+
+2. Open **Approvals and Checks** in the menu next to **Edit**. 
+
+3. In the **Add your first check** menu, select  **Required template**. 
+
+4. Enter details on how to get to your required template file. 
+    * **Repository type**: The location of your repository (GitHub, Azure, or Bitbucket).
+    * **Repository**: The name of your repository that contains your template. 
+    * **Ref**: The branch or tag of the required template. 
+    * **Path to required template**: The name of your template. 
+
+
+You can have multiple required templates for the same service connection. In this example, the required template is `required.yml`.
+
+   > [!div class="mx-imgBorder"]
+   > ![required template](media/required-template.png)
+
 
 ## Evaluate artifact
 

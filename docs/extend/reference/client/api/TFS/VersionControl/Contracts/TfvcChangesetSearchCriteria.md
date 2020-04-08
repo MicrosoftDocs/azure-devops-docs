@@ -2,10 +2,8 @@
 title: TFS/VersionControl/Contracts TfvcChangesetSearchCriteria API | Extensions for Azure DevOps Services
 description: Criteria used in a search for change lists
 ms.assetid: 495ac3c4-9db7-b9ec-1265-2f1ca2bd21bf
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

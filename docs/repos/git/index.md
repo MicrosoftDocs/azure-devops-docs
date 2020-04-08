@@ -2,10 +2,8 @@
 title: Git index to content
 titleSuffix: Azure Repos   
 description: Guide to getting started with Git documentation  
-ms.prod: devops
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: overview
