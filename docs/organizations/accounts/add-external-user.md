@@ -65,7 +65,7 @@ In this article, learn how to invite external users to your organization. If you
 
     :::image type="content" source="../public/media/invite-users/add-new-users-dialog.png" alt-text="Add new users dialog":::
 
-5. Advise the external user to locate the email that they received from Azure DevOps and select the URL link. This final step adds the user to your organization. The invitation looks similar to the following email.
+5. Advise the external user to locate the email that they received from AzureDevOps@microsoft.com with the subject, "You have been invited to an Azure DevOps project" and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
 
     :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="External user's invitation email":::
 
