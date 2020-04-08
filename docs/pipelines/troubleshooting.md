@@ -562,7 +562,7 @@ The following scenarios won't consume a parallel job:
 * When you run a server job or deploy to a deployment group using release pipelines, you don't consume any parallel jobs.
 
 Learn more:
-[How a parallel job is consumed by a pipeline](licensing/concurrent-jobs.md#how-a-parallel-job-is-consumed-by-a-pipeline),
+[How a parallel job is consumed by a pipeline](licensing/concurrent-jobs.md),
 [Approvals within a pipeline](release/define-multistage-release-process.md#add-approvals-within-a-release-pipeline),
 [Server jobs](process/phases.md#server-jobs),
 [Deployment groups](release/deployment-groups/index.md)
