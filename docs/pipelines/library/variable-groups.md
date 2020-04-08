@@ -190,6 +190,7 @@ steps:
 ```
 
 You can reference multiple variable groups in the same pipeline. 
+If multiple variable groups include the same variable, the variable group included last in your YAML file will set the variable's value. 
 
 ```yaml
 variables:
