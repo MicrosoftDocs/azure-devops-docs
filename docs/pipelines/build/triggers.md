@@ -49,6 +49,6 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Scheduled release triggers](../release/triggers.md#scheduled-triggers) allow you to run a release pipeline according to a schedule.
 
-[Pull request release triggers](../release/triggers.md#prsettrigger) are used to deploy a pull request directly using classic releases.
+[Pull request release triggers](../release/triggers.md) are used to deploy a pull request directly using classic releases.
 
 [Stage triggers in classic release](../release/triggers.md#env-triggers) are used to configure how each stage in a classic release is triggered.

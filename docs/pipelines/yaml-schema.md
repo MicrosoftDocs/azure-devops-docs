@@ -598,8 +598,11 @@ variables:
   readonly: true
 ```
 
+::: moniker range="azure-devops"
 
 You can also include [variables from templates](process/templates.md#variable-reuse).
+
+::: moniker-end
 
 #### [Example](#tab/example/)
 
