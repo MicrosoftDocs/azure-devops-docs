@@ -2,12 +2,8 @@
 title: Environment - Virtual machine resource
 description: Virtual machine resource support within Environment
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
-ms.author: jukullam
-author: juliakm
 ms.date: 01/24/2020
 monikerRange: azure-devops
 ---
@@ -52,13 +48,13 @@ The tags you assign allow you to limit deployment to specific virtual machines w
 Create a new pipeline by referencing the environment and VM resources in a pipeline YAML. The environment will be created if it does not already exist.
 ```YAML
 jobs:  
-  - deployment: VMDeploy
-    displayName: web
-    environment:
-      name:  VMenv
-      resourceType: VirtualMachine
-      tags: web1
-    strategy:
+- deployment: VMDeploy
+  displayName: web
+  environment:
+    name:  VMenv
+    resourceType: VirtualMachine
+    tags: web1
+  strategy:
 ```
 
 You can select specific sets of virtual machines from the environment to receive the deployment by specifying the **tags** that you have defined.

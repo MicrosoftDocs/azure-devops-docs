@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IMessageDialogResult API | Extensions for Azure DevOps Services
 description: Result returned when a MessageDialog is closed.
 ms.assetid: 5e5c6348-b097-e5e5-d001-577a353911fd
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

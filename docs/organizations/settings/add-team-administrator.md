@@ -3,10 +3,8 @@ title: Add or remove a team administrator
 titleSuffix: Azure DevOps
 description: Add a user to the team administrator role in Azure DevOps  
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 843D5E56-D24E-4DEA-9915-19B1F76E9A56
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart

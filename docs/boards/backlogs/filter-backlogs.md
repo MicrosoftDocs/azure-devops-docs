@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Filter a backlog or query based on keywords, tags, or other fields   
 ms.custom: "boards-backlogs, seodec18" 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

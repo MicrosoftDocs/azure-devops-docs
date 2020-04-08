@@ -3,7 +3,6 @@ title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create a release pipeline
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
 ms.technology: devops-ref
 ms.manager: mijacobs 

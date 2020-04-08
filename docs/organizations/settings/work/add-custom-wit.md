@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps Services
 description: Learn how to add a custom work item type for an Inheritance process model and apply it to a project.  
 ms-custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: DBF41880-62A4-43A9-9A31-8DB701EB888E
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -143,6 +141,8 @@ We recommend that you create a test project and apply your customized  inherited
 > [Customize the workflow](customize-process-workflow.md)
 
 ## Related articles 
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)

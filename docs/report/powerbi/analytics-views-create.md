@@ -2,10 +2,8 @@
 title: Create an Analytics view 
 titleSuffix: Azure DevOps
 description: Steps to add a custom Analytics view to for easy generation of Power BI reports for Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

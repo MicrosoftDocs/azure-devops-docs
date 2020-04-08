@@ -3,10 +3,7 @@ title: Release artifacts and artifact sources
 ms.custom: seodec18
 description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 11/29/2018
@@ -116,8 +113,8 @@ artifacts. For example, you might use continuous
 integration systems such as Azure Pipelines, Jenkins, or
 TeamCity to produce artifacts. You might also use version control systems such as Git or
 TFVC to store your artifacts. Or you can use
-repositories such as Package Management in Visual Studio Team
-Services or a NuGet repository to store your artifacts.
+repositories such as Azure Artifacts
+or a NuGet repository to store your artifacts.
 You can configure Azure Pipelines to deploy
 artifacts from all these sources.
 

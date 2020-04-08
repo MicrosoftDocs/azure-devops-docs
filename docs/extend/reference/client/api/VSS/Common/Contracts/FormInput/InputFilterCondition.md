@@ -2,10 +2,8 @@
 title: VSS/Common/Contracts/FormInput InputFilterCondition API | Extensions for Azure DevOps Services
 description: An expression which can be applied to filter a list of subscription inputs
 ms.assetid: 100e189f-71b9-6cf6-a2eb-066c90596283
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

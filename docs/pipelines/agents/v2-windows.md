@@ -3,13 +3,8 @@ title: Deploy an Azure Pipelines agent on Windows
 ms.custom: seodec18
 description: Learn how to use Windows agents to build and deploy your Windows and Azure code for Azure Pipelines and TFS.
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 20409B8F-A3A9-49A0-A418-1840BD7ADA8E
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 01/31/2019
+ms.date: 03/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -207,13 +202,14 @@ To restart the agent, press Ctrl+C to stop the agent and then run `run.cmd` to r
 
 ### Run once
 
-For agents configured to run interactively, you can choose to have the agent accept only one job. To run in this configuration:
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
 
  ```ps
  .\run.cmd --once
  ```
 
-Agents in this mode will accept only one job and then spin down gracefully (useful for running on a service like Azure Container Instances).
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
 
 ### Run as a service
 
@@ -251,6 +247,18 @@ You must pass `--unattended` and the answers to all questions.
 [!INCLUDE [unattend](./includes/v2/unattended-config.md)]
 
 `.\config --help` always lists the latest required and optional responses.
+
+## Diagnostics
+
+If you're having trouble with your self-hosted agent, you can try running diagnostics.
+After configuring the agent:
+
+```ps
+.\run --diagnostics
+```
+
+This will run through a diagnostic suite that may help you troubleshoot the problem.
+The diagnostics feature is available starting with agent version 2.165.0.
 
 ## Help on other options
 

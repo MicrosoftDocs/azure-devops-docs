@@ -1,12 +1,10 @@
 ---
 title: Set SharePoint permissions for TFS
 description: How-to guide to set add users to SharePoint integrated with Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-security
 ms.topic: conceptual
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/02/2017
@@ -53,6 +51,6 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/media/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](media/people-and-groups.png)
 
 

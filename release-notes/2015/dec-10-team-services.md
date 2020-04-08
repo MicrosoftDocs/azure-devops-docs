@@ -1,7 +1,6 @@
 ---
 title: Custom work item fields and more – Dec 10
 description: VSTS release notes for December 10 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 85a01555-f03d-4f49-8d8e-173db66cb79c

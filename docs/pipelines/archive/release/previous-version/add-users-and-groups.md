@@ -3,10 +3,7 @@ title: Add users/groups & control access in Release Management
 ms.custom: seodec18
 description: Add users and groups and control access in Release Management server/client for Visual Studio 2015 and Team Foundation Server 2015
 ms.assetid: AEB78F81-1F59-47DE-AED0-F38C724024FC
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

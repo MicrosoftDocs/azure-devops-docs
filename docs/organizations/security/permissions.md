@@ -1,16 +1,14 @@
 ---
 title: What are all the default permissions and groups? 
 titleSuffix: Azure DevOps
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: 169E817F-B297-4461-B359-27C78D4A8A7D
 toc: show
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/18/2019 
+ms.date: 03/24/2020  
 ---
 
 
@@ -50,8 +48,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -103,8 +101,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -1774,7 +1772,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
 
 <a name="analytics-views-permissions"></a>
 
-## Analytics views (object-level)     
+## Analytics views (object-level)  
 
 With shared Analytics views, you can grant specific permissions to view, edit, or delete a view that you create.  You manage the security of Analytics views from the [web portal](../../report/powerbi/analytics-security.md). 
 
@@ -1810,6 +1808,77 @@ The following permissions are defined for each shared Analytics view. All valid 
     </tr>
 </tbody>
 </table>
+
+::: moniker-end
+
+<a name="dasboard-permissions"></a>
+
+::: moniker range=">= tfs-2017"
+
+## Dashboards (object-level)  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+Permissions for team and project dashboards can be set individually. The default permissions for a team can be set for a project. You manage the security of dashboards from the web portal.
+
+### Project dashboard permissions
+
+> [!div class="mx-imgBorder"]  
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/add-user-project-permissions.png)  
+
+By default, the creator of the project dashboard is the dashboard owner and granted all permissions for that dashboard. 
+
+|Permission | Description |
+|-----------| ----------- |
+|Delete dashboard | Can delete the project dashboard. |
+|Edit dashboard |  Can add widgets to and change the layout of the project dashboard. |
+|Manage Permissions | Can manage permissions for the project dashboard. |
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
+Permissions for team dashboards can be set individually. The default permissions for a team can be set for a project. You manage the security of dashboards from the web portal.
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+### Team dashboard default permissions
+
+> [!div class="mx-imgBorder"]  
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/project-setting-permissions.png) 
+
+By default, team administrators are granted all permissions for their team dashboards, including managing default and individual dashboard permissions. 
+
+|Permission | Description |
+|-----------| ----------- |
+|Create dashboards | Can create a team dashboard. |
+|Edit dashboards |  Can add widgets to and change the layout of a team dashboard. |
+|Delete dashboards | Can delete a team dashboard. |
+
+### Individual team dashboard permissions
+
+::: moniker-end
+
+::: moniker range="tfs-2017"
+
+> [!NOTE] 
+> Requires TFS 2017.1 or later version.  
+
+::: moniker-end 
+
+::: moniker range=">= tfs-2017"
+
+> [!div class="mx-imgBorder"]  
+> ![Project dashboard permissions dialog](../../report/dashboards/media/set-permissions/team-analytics-dashboard-permissions.png) 
+
+Team administrators can change the permissions for individual team dashboards by changing the following two permissions.  
+
+|Permission | Description |
+|-----------| ----------- |
+|Delete dashboard | Can delete the specific team dashboard. |
+|Edit dashboard |  Can add widgets to and change the layout of the specific team dashboard. |
 
 ::: moniker-end
 
@@ -1868,11 +1937,11 @@ The following permissions are defined in Build. All of these can be set at both 
         <td>Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. </td>
     </tr>
     <tr>
-	<a id="edit-build-pipeline-permission" />
+    <a id="edit-build-pipeline-permission" />
         <td id="edit-build-definition-permission">Edit build pipeline</br>Edit build definition</td>
         <td>
             <strong>Edit build pipeline</strong> Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. <br/>
-			 <strong>Edit build definition</strong> Can create and modify build definitions for this project.
+             <strong>Edit build definition</strong> Can create and modify build definitions for this project.
             <blockquote>
                 <p>
                     You turn Inheritance Off for a build definition

@@ -3,11 +3,9 @@ title: Disconnect organization from Azure AD
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Learn how to stop using your organization's Azure AD and sign in with a Microsoft account by disconnecting your organization from your directory
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 3eb744cf-854d-4cbd-b725-c2e070bd922b
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 05/14/2019
@@ -21,7 +19,7 @@ monikerRange: 'azure-devops'
 
 To stop using your organization's Azure Active Directory (Azure AD) and return to signing in with Microsoft accounts, disconnect your organization from your directory.
 
-For more information about using Azure AD with Azure DevOps, see the [Conceptual overview](access-with-azure-ad.md).
+For more information about using Azure AD with Azure DevOps, see the [conceptual overview](access-with-azure-ad.md).
 
 ## Prerequisites
 
@@ -58,10 +56,10 @@ Learn about how to [Manage Azure administrators](https://azure.microsoft.com/doc
 
 Your organization is disconnected from Azure AD. Only users with Microsoft accounts can sign in.
 
-For answers to frequently asked questions about connecting, disconnecting, or changing your Azure AD, see the [FAQ](faq-azure-access.md#connect-disconnect-or-change-azure-ad).
+For answers to frequently asked questions about connecting to, disconnecting from, or switching your Azure AD, see [FAQs](faq-azure-access.md#faq-connect).
 
 ## Related articles
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [About access with Azure AD](access-with-azure-ad.md)
 * [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)

@@ -5,9 +5,7 @@ description: Use the Kanban board to plan and track work in Azure Boards and Tea
 ms.custom: boards-kanban 
 ms.topic: quickstart
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'

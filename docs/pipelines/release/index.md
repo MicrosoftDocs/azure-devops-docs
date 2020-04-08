@@ -3,10 +3,7 @@ title: Release pipelines
 ms.custom: seodec18
 description: What are release pipelines in Azure Pipelines and Team Foundation Server (TFS)?
 ms.assetid: 126C3E1C-9DB3-4E46-918D-FF5600BF8FC9
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 02/06/2020

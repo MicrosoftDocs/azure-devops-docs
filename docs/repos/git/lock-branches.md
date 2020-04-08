@@ -3,9 +3,7 @@ title: Lock a branch in your Git repo
 titleSuffix: Azure Repos
 description: Use the branches page to lock a branch in Azure DevOps Services or TFS, preventing pushes to the branch.
 ms.assetid: 9eecbacc-e3f2-44cb-887e-6c886001d2b6
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
 ms.author: sdanie
 author: apawast
 ms.topic: conceptual

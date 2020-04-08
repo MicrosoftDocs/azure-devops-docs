@@ -2,10 +2,8 @@
 title: Widgets | REST API Reference for Team Foundation Server 
 description: Work with widgets programmatically using the REST APIs for Visual Studio Online.
 ms.assetid: 8dbe828d-e90b-40c8-bd7b-2becaf7f7752
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

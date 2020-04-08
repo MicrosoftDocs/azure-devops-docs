@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Manage code in GitHub and link to GitHub commits, pull requests, and issues in Azure Boards
 ms.custom: boards-get-started 
 ms.custom: seodec18
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: landing-page
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'

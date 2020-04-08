@@ -2,10 +2,7 @@
 title: Deploy an Azure Web App Container
 description: Deploy to Azure Web App Container from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid:
 ms.custom: seodec18
 ms.author: atulmal
@@ -129,10 +126,10 @@ You must supply an Azure service connection to the `AzureWebAppContainer` task. 
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Web App>
-    containerRegistry: <Name of the Azure container registry>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Web App>
+  containerRegistry: <Name of the Azure container registry>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureWebAppContainer@1

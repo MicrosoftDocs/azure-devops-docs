@@ -2,14 +2,11 @@
 title: PowerShell task
 description: Execute PowerShell scripts in Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 0D682DFA-9BC7-47A7-B0D3-C59DE1D431B5
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/18/2020
+ms.date: 03/05/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -59,9 +56,7 @@ The Powershell task also has two shortcuts in YAML:
 
 Both of these resolve to the `PowerShell@2` task.
 `powershell` runs Windows PowerShell and will only work on a Windows agent.
-`pwsh` runs PowerShell Core, which must be available on the agent or container.
-
-This task will select the version of PowerShell or PowerShell Core that's available on the agent.
+`pwsh` runs PowerShell Core, which must be installed on the agent or container.
 
 ::: moniker-end
 

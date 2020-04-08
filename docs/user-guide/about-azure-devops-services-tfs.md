@@ -7,7 +7,6 @@ description: Understand the fundamental differences between Azure DevOps Service
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
@@ -116,7 +115,7 @@ credentials, depending on your organization setup. You can also set up Azure AD 
 We recommend that you configure your organizations to use Azure AD rather than
 Microsoft accounts. This method provides a better experience in many scenarios and more options for enhanced security.
 
-Learn more: [Access Azure DevOps Services with Azure Active Directory](../organizations/accounts/access-with-azure-ad.md).
+Learn more: [About accessing Azure DevOps Services with Azure AD](../organizations/accounts/access-with-azure-ad.md).
 
 With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is transparent and you never see any kind of sign in experience.
 

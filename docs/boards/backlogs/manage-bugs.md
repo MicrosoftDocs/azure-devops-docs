@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Manage technical debt and triage bugs using Agile tools in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -138,7 +136,7 @@ When defining a bug, use these fields to capture both the initial issue and ongo
 <td>
 <p>When Test Manager creates bugs, it automatically populates <strong>System Info</strong> and <strong>Found in Build</strong> with information about the software environment and build where the bug occurred. To learn more about defining the software environments, see <a href="../../test/test-different-configurations.md" data-raw-source="[Test different configurations](../../test/test-different-configurations.md)">Test different configurations</a>.</p>
 <p>When you resolve the bug, use <strong>Integrated in Build</strong> to indicate the name of the build that incorporates the code that fixes the bug. </p>
-<p>For on-premises TFS, to access a drop-down menu of all builds that have been run, you can update the <code>FIELD</code> definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see <a href="../queries/build-test-integration.md" data-raw-source="[Query based on build and test integration fields](../queries/build-test-integration.md)">Query based on build and test integration fields</a>.</p>
+<p>For on-premises Azure DevOps, to access a drop-down menu of all builds that have been run, you can update the <code>FIELD</code> definitions for Found in Build and Integrated in Build to reference a global list. The global list is automatically updated with each build that is run. To learn more, see <a href="../queries/build-test-integration.md" data-raw-source="[Query based on build and test integration fields](../queries/build-test-integration.md)">Query based on build and test integration fields</a>.</p>
 <p>For information about how to define build names, see <a href="../../pipelines/build/options.md" data-raw-source="[build number format options](../../pipelines/build/options.md)">build number format options</a>. </p>
 </td>
 </tr>
@@ -369,7 +367,7 @@ To learn how to add SQL Server reports for a project, see [Add reports to a proj
 
 SonarQube provides a way of automatically measuring some technical debt. SonarQube finds important violations of best coding practices. You implement Sonar to ensure that developers follow important code metrics like appropriate class and method size or low cyclomatic complexity (a quantitative measure of the number of linearly independent paths through a program's source code).  
 
-By integrating your on-premises TFS with a SonarQube server, you can get the following data:  
+By integrating your on-premises Azure DevOps with a SonarQube server, you can get the following data:  
 - Results of .NET and JavaScript code analysis  
 - Code clone analysis  
 - Code coverage data from tests  

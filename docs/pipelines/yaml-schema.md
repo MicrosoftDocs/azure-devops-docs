@@ -2,10 +2,7 @@
 title: YAML schema
 ms.custom: seodec18
 description: An overview of all YAML syntax.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
@@ -438,6 +435,10 @@ Only two jobs run simultaneously.
 
 * * *
 
+> [!NOTE]
+> The `matrix` syntax doesn't support automatic job scaling but you can implement similar
+> functionality using the `each` keyword. For an example, see [nedrebo/parameterized-azure-jobs](https://github.com/nedrebo/parameterized-azure-jobs).
+
 #### Parallel
 
 This strategy specifies how many duplicates of a job should run.
@@ -588,7 +589,20 @@ variables:
 
 You can repeat `name`/`value` pairs and `group`.
 
-You can also include variables from templates.
+Variables can also be set as read only to [enhance security](security/inputs.md#variables). 
+
+```yaml
+variables:
+- name: myReadOnlyVar
+  value: myValue
+  readonly: true
+```
+
+::: moniker range="azure-devops"
+
+You can also include [variables from templates](process/templates.md#variable-reuse).
+
+::: moniker-end
 
 #### [Example](#tab/example/)
 
@@ -648,7 +662,7 @@ variables:
 ## Template references
 
 > [!NOTE]
-> Be sure to see the full [template expression syntax](process/templates.md#template-expressions), which is all forms of `${{ }}`.
+> Be sure to see the full [template expression syntax](process/templates.md), which is all forms of `${{ }}`.
 
 ::: moniker range="> azure-devops-2019"
 
@@ -663,7 +677,7 @@ Azure Pipelines supports four kinds of templates:
 - [Variable](#variable-templates)
 
 You can also use templates to control what is allowed in a pipeline and to define how parameters can be used.
-- [Parameter](#parameter-templates)
+- [Parameter](#parameters)
 
 ::: moniker-end
 
@@ -947,13 +961,14 @@ steps:
 
 ---
 
-### Parameter templates
+## Parameters
 
-You can use templates to define how parameters can be used. 
+You can use parameters in templates and pipelines. 
 
-# [Schema](#tab/schema)
+### [Schema](#tab/parameter-schema)
 
-In the main pipeline:
+The type and name fields are required when defining parameters. See all [parameter data types](process/runtime-parameters.md#parameter-data-types).
+
 
 ```yaml
 parameters:
@@ -964,16 +979,37 @@ parameters:
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
-And in the extended template:
+### [YAML Example](#tab/yaml-example)
 
 ```yaml
-parameters: { string: any }   # expected parameters
+# File: azure-pipelines.yml
+parameters:
+- name: image
+  displayName: Pool Image
+  type: string
+  default: ubuntu-latest
+  values:
+  - windows-latest
+  - vs2017-win2016
+  - ubuntu-latest
+  - ubuntu-16.04
+  - macOS-latest
+  - macOS-10.14
+
+trigger: none
+
+jobs:
+- job: build
+  displayName: build
+  pool: 
+    vmImage: ${{ parameters.image }}
+  steps:
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
-See all [parameter data types](process/templates.md#parameter-data-types). 
 
-# [Example](#tab/example)
+### [Template Example](#tab/template-example)
 
-In this example, the pipeline using the template supplies the values to fill into the template.
+You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
@@ -998,6 +1034,8 @@ extends:
 ```
 
 See [templates](process/templates.md) for more about working with templates.
+
+---
 
 ::: moniker-end
 
@@ -1024,7 +1062,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
+You can also enable [pipeline-completion triggers](process/pipeline-triggers.md).
 
 # [Schema](#tab/schema)
 
@@ -1140,7 +1178,7 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1209,7 +1247,6 @@ The `git` type refers to Azure Repos Git repos.
 A push trigger specifies which branches cause a continuous integration build to run.
 If you specify no push trigger, pushes to any branch trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers) and how to specify them.
-Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 #### [Schema](#tab/schema/)
 
@@ -1233,7 +1270,7 @@ Full syntax:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1251,7 +1288,7 @@ trigger:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1393,7 +1430,7 @@ pr:
 ::: moniker range="<= azure-devops-2019"
 
 YAML scheduled triggers are unavailable in either this version of Azure DevOps Server or Visual Studio Team Foundation Server.
-You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+You can use [scheduled triggers in the classic editor](process/scheduled-triggers.md?tabs=classic).
 
 ::: moniker-end
 
@@ -1401,7 +1438,7 @@ You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=cl
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
-Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers) and how to specify them.
+Learn more about [scheduled triggers](process/scheduled-triggers.md?tabs=yaml) and how to specify them.
 
 # [Schema](#tab/schema)
 
@@ -1412,7 +1449,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
 > [!IMPORTANT]
@@ -1442,7 +1479,7 @@ schedules:
 
 In the preceding example, two schedules are defined.
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last run.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
 It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
@@ -1550,10 +1587,10 @@ If you specify an environment or one of its resources but don't need to specify 
 ```yaml
 environment: environmentName.resourceName
 strategy:                 # deployment strategy
-    runOnce:              # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+  runOnce:              # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 # [Example](#tab/example)

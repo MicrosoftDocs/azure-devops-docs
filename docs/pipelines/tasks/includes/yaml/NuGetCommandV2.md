@@ -1,3 +1,12 @@
+---
+ms.topic: include
+ms.date: 09/10/2019
+author: steved0x
+ms.author: sdanie
+ms.prod: devops
+ms.technology: devops-cicd-tasks
+---
+
 ```YAML
 # NuGet
 # Restore, pack, or push NuGet packages, or run a NuGet command. Supports NuGet.org and authenticated feeds like Azure Artifacts and MyGet. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.

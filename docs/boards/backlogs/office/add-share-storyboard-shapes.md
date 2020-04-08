@@ -2,12 +2,10 @@
 title: Add and share storyboard shapes
 titleSuffix: TFS
 description: Add and share storyboard shapes with members of your team  using the  Storypoint add-in to Microsoft PowerPoint
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: c8f3136e-a560-4ea5-83fd-602f89c74155
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: conceptual
 monikerRange: '<= tfs-2018'
 ms.date: 09/06/2019

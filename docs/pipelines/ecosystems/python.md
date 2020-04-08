@@ -1,11 +1,8 @@
 ---
 title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.manager: mijacobs
 ms.author: macoope
 ms.reviewer: vtbassmatt
 ms.date: 11/04/2019

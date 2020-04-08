@@ -3,9 +3,7 @@ title: Get started with Stakeholder access
 titleSuffix: Azure DevOps 
 description: Add & update work items, view work tracking progress with Stakeholder access
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial

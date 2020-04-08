@@ -1,11 +1,7 @@
 ---
 title: Recommendations to secure variables and parameters in a pipeline
 description: Find out how to safely accept input from pipeline users.
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ada3e166-c606-48b3-8e5e-7d83b1c1c962
-ms.manager: mijacobs
-ms.author: jukullam
 ms.reviewer: macoope
 ms.date: 02/04/2020
 monikerRange: '> azure-devops-2019'

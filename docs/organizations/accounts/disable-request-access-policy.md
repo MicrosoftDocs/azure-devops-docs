@@ -3,11 +3,9 @@ title: Disable Request Access policy
 titleSuffix: Azure DevOps Services
 ms.custom: 
 description: Learn how to stop your users from requesting access to your organization or project within your organization.
-ms.prod: devops
 ms.technology: devops-accounts
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 02/21/2020
@@ -44,7 +42,7 @@ You must be a Project Collection Administrator or organization Administrator to 
 
 ## Related articles
 
-- [Need help?](faq-change-app-access.md#get-support)
+- [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
 - [Manage Conditional Access](manage-conditional-access.md)
 - [Change application access policies](change-application-access-policies.md).

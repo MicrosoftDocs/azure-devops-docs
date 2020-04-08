@@ -2,14 +2,11 @@
 title: Bash task
 description: Run a Bash script on macOS, Linux, or Windows
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/11/2020
+ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -53,22 +50,25 @@ The Bash task also has a shortcut syntax in YAML:
 
 ```YAML
 steps:
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
 
 This is equivalent to:
 
 ```YAML
 steps:
-  - script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
+
+The Bash task will find the first Bash implementation on your system.
+Running `which bash` on Linux/macOS or `where bash` on Windows will give you an idea of which one it'll select.
 
 ## Open source
 

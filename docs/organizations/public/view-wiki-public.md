@@ -3,10 +3,8 @@ title: View and filter project wiki pages
 titleSuffix: Azure DevOps Services Public Project
 description: View public project wikis 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
