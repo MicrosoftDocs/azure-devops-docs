@@ -372,9 +372,9 @@
     href: library/secure-files.md
   - name: Manage service connections
     href: library/service-endpoints.md
-  - name: Manage agents & agent pools
-    items: 
-- name: About agents & agent pools
+- name: Manage agents & agent pools
+  items: 
+  - name: About agents & agent pools
     href: agents/agents.md
     displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
   - name: Add & manage agent pools
