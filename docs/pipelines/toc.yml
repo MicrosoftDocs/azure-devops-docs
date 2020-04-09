@@ -391,7 +391,7 @@
     - name: Windows agents (TFS 2015)
       href: agents/v1-windows.md
     - name: Scale set agents
-      href: agents/vmss.md
+      href: agents/scale-set-agents.md
       displayName: byos, elastic agents, VMSS, autoscale
     - name: Run an agent behind a web proxy
       href: agents/proxy.md
