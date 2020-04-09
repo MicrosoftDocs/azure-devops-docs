@@ -21,5 +21,3 @@ Resources include:
 - [artifacts](../artifacts/artifacts-overview.md)
 - [pipelines](resources.md#resources-pipelines)
 - [containers](resources.md#resources-containers)
-- test plans
-- work items
