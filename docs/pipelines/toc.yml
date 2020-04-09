@@ -374,35 +374,35 @@
     href: library/service-endpoints.md
   - name: Manage agents & agent pools
     items: 
-    - name: About agents & agent pools
-      href: agents/agents.md
-      displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
-    - name: Add & manage agent pools
-      href: agents/pools-queues.md
-      displayName: queue, default, hosted, maintenance
-    - name: Microsoft-hosted agents
-      href: agents/hosted.md
-    - name: Self-hosted Linux agents
-      href: agents/v2-linux.md
-    - name: Self-hosted macOS agents
-      href: agents/v2-osx.md
-    - name: Self-hosted Windows agents
-      href: agents/v2-windows.md
-    - name: Windows agents (TFS 2015)
-      href: agents/v1-windows.md
-    - name: Scale set agents
-      href: agents/scale-set-agents.md
-      displayName: byos, elastic agents, VMSS, autoscale
-    - name: Run an agent behind a web proxy
-      href: agents/proxy.md
-    - name: Run an agent in Docker
-      href: agents/docker.md
-    - name: Use a self-signed certificate
-      href: agents/certificate.md
+- name: About agents & agent pools
+    href: agents/agents.md
+    displayName: self-hosted, microsoft-hosted, parallel, capabilities, user capabilities, system capabilities, demands, pools, communication
+  - name: Add & manage agent pools
+    href: agents/pools-queues.md
+    displayName: queue, default, hosted, maintenance
+  - name: Microsoft-hosted agents
+    href: agents/hosted.md
+  - name: Self-hosted Linux agents
+    href: agents/v2-linux.md
+  - name: Self-hosted macOS agents
+    href: agents/v2-osx.md
+  - name: Self-hosted Windows agents
+    href: agents/v2-windows.md
+  - name: Windows agents (TFS 2015)
+    href: agents/v1-windows.md
+  - name: Scale set agents
+    href: agents/scale-set-agents.md
+    displayName: byos, elastic agents, VMSS, autoscale
+  - name: Run an agent behind a web proxy
+    href: agents/proxy.md
+  - name: Run an agent in Docker
+    href: agents/docker.md
+  - name: Use a self-signed certificate
+    href: agents/certificate.md
   - name: Create & use deployment groups
     items: 
-#    - name: About deployment groups & deployment group jobs
-#      href: release/deployment-groups/index.md
+  #    - name: About deployment groups & deployment group jobs
+  #      href: release/deployment-groups/index.md
     - name: Provision deployment groups 
       href: release/deployment-groups/index.md
     - name: Provision agents for deployment groups
