@@ -1,13 +1,14 @@
 ---
-title: Azure DevOps Release Notes - [placeholder] 167
+title: Azure DevOps Release Notes - Increase productivity & reduce latency
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 4/13/2020
-description: [placeholder]
+description: In the **sprint 167** of Azure DevOps, we are bring new ways to increase productivity with changes made to Repos and Artifacts
 ---
 
-# Title
+# Increase productivity & reduce latency
+With this update, we are including new ways to prioritize work through pull request queries in Repos and bringing speed when downloading your Artifacts.
 
 Check out the [Features](#features) list below for details.
 
@@ -16,9 +17,21 @@ Check out the [Features](#features) list below for details.
 ### Artifacts
 [!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
 
+### Pipelines
+[!INCLUDE [sprint-167-update-links](includes/pipelines/sprint-167-update-links.md)]
+
+### Repos
+[!INCLUDE [sprint-167-update-links](includes/repos/sprint-167-update-links.md)]
+
+
 ### Artifacts
 [!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
 
+### Pipelines
+[!INCLUDE [sprint-167-update](includes/pipelines/sprint-167-update.md)]
+
+### Repos
+[!INCLUDE [sprint-167-update](includes/repos/sprint-167-update.md)]
 
 
 ## Next steps
