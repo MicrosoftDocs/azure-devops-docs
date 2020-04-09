@@ -342,6 +342,11 @@ The following example shows how to use a secret variable called `mySecret` in a 
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
+variables:
+ # Neither on global nor on job-level - mapped global/job variables are not exposed to env either
+ GLOBAL_MYSECRET:  $(mySecret)
+ GLOBAL_MY_MAPPED_ENV_VAR: "someValue"
+ 
 steps:
 
 - powershell: |
@@ -350,9 +355,16 @@ steps:
 
     # Using the env var directly:
     Write-Host "This does not work: $env:MYSECRET"
+  
+    # Using the env var through the variables mapping wont work either:
+    Write-Host "Global does not work either: $env:GLOBAL_MYSECRET"
 
     # Using the mapped env var:
+    Write-Host "This works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
+    
+    # Using the mapped env var:
     Write-Host "This works: $env:MY_MAPPED_ENV_VAR"    # Recommended
+        
   env:
     MY_MAPPED_ENV_VAR: $(mySecret)
 ```
@@ -362,6 +374,8 @@ The output from the preceding script would look like this:
 ```text
 This works: ***
 This does not work:
+Global does not work either:
+This works: someValue
 This works: ***
 ```
 This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
