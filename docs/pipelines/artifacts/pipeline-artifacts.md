@@ -5,7 +5,7 @@ ms.custom: seodec18
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.date: 6/18/2019
+ms.date: 04/09/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -41,9 +41,12 @@ steps:
 steps:
 - task: PublishPipelineArtifact@1
   inputs:
-    path: $(System.DefaultWorkingDirectory)/bin/WebApp
-    artifact: WebApp
+    targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
+    artifactName: WebApp
 ```
+
+* **targetPath**: the path to the folder or file you want to publish.
+* **artifactName**: the name of the artifact that you want to create.
 
 # [Classic](#tab/classic)
 
