@@ -38,7 +38,7 @@ This task requires a [GitHub service connection](../../library/service-endpoints
 <tr><td>Target</td><td>(Required) This is the commit SHA for which the GitHub release will be created. E.g. <code>48b11d8d6e92a22e3e9563a3f643699c16fd6e27</code>. You can also use variables here.</td></tr>
 <tr><td>Tag source</td><td>(Required) Configure the tag to be used for release creation. The &#39;Git tag&#39; option automatically takes the tag which is associated with this commit. Use the &#39;User specified tag&#39; option in case you want to manually provide a tag.</td></tr>
 <tr><td>Tag</td><td>(Required) Specify the tag for which you want to create, edit, or discard a release. You can also use variables here. E.g. <code>$(tagName)</code>.</td></tr>
-<tr><td>Release title</td><td>(Optional) Specify the title of the GitHub release. If left empty, the tag will be used as the release title.</td></tr>
+<tr><td>Title</td><td>(Optional) Specify the title of the GitHub release. If left empty, the tag will be used as the release title.</td></tr>
 <tr><td>Release notes source</td><td>(Optional) Specify the description of the GitHub release. Use the &#39;Release notes file&#39; option to use the contents of a file as release notes. Use the &#39;Inline release notes&#39; option to manually enter the release notes.</td></tr>
 <tr><td>Release notes file path</td><td>(Optional) Select the file which contains the release notes.</td></tr>
 <tr><td>Release notes</td><td>(Optional) Type your release notes here. Markdown is supported.</td></tr>
