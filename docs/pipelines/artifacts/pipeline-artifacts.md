@@ -48,6 +48,9 @@ steps:
 * **targetPath**: the path to the folder or file you want to publish.
 * **artifactName**: the name of the artifact that you want to create.
 
+> [!TIP]
+> For more information on `PublishPipelineArtifact@1`, see [Publish Pipeline Artifacts task](../tasks/utility/publish-pipeline-artifact.md).
+
 # [Classic](#tab/classic)
 
 ![icon](../tasks/utility/media/publish-pipeline-artifact.png) **Publish Pipeline Artifact**
