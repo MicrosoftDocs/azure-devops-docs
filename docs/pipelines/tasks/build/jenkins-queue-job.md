@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to queue a job on a Jenkins server.
+Use this task to queue a job on a Jenkins server.
 
 ::: moniker range="<= tfs-2018"
 

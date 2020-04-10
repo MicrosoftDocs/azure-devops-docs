@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to send a message to an Azure Service Bus using a service connection and without using an agent.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to send a message to an Azure Service Bus using a service connection and without using an agent.
 
 ## Demands
 
@@ -46,7 +46,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Do I need an agent?
 
-You do not need an agent to run this task. This task Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
+You do not need an agent to run this task. This task can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
 ### Where should a task signal completion?
 

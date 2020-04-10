@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
-Use this task in a build or release pipeline to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
+Use this task to deploy, configure, or update a Kubernetes cluster by running kubectl commands.
 
 ::: moniker range="> tfs-2018"
 

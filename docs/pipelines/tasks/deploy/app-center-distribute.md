@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to distribute app builds to testers and users through App Center.
+Use this task to distribute app builds to testers and users through App Center.
 - [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 - For details about using this task, see the App Center documentation article [Deploy Azure DevOps Builds with App Center](/appcenter/distribution/vsts-deploy).
 

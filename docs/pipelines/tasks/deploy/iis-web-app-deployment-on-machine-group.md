@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy a website or web app using WebDeploy.
+Use this task to deploy a website or web app using WebDeploy.
 
 ::: moniker range="> tfs-2018"
 
