@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
+Use this task to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
 
 > [!IMPORTANT]
 > This task is supported only on Windows environment

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to delete files or folders from the agent working directory.
+Use this task to delete files or folders from the agent working directory.
 
 ## Demands
 

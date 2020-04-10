@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to SQL Server Database using a DACPAC or SQL script.
+Use this task to deploy to SQL Server Database using a DACPAC or SQL script.
 
 ::: moniker range="> tfs-2018"
 

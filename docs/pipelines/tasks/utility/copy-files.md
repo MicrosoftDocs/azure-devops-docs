@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
+Use this task to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
 
