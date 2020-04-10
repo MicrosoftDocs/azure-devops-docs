@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
 ms.technology: devops-new-user
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.date: 09/10/2018
 ms.topic: quickstart
