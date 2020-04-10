@@ -10,7 +10,7 @@ project-scoped feed.</li><li>Create, delete or modify a feed view.</li><li>Set o
 given feed.</li><li><span style="color:black;">Permissions changes</span></li></ul></div>
 
     
-### NPM performance improvements
+### npm performance improvements
 
 <div><p><span style="color:black;">We have made changes to our core
 design to improve the way we store and deliver NPM packages in Azure Artifacts

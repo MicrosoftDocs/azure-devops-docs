@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Approval notification
 
-<div>When you add approval on an environment or a service connection, all multi-stage pipelines that use the resource automatically wait for the approval at the start of the stage. The designated approvers need to complete the approval before the pipeline can continue.&nbsp;</div><div>With this update, the approvers are sent an email notification for pending approval. Users and team owners can opt-out/configure custom subscriptions from <a href="https://docs.microsoft.com/azure/devops/notifications/navigating-the-ui?view=azure-devops">notification settings</a>.</div><div>
+<div>When you an add approval on an environment or a service connection, all multi-stage pipelines that use the resource automatically wait for the approval at the start of the stage. The designated approvers need to complete the approval before the pipeline can continue.&nbsp;</div><div>With this update, the approvers are sent an email notification for the pending approval. Users and team owners can opt-out/configure custom subscriptions from <a href="https://docs.microsoft.com/azure/devops/notifications/navigating-the-ui?view=azure-devops">notification settings</a>.</div><div>
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../media/167_0.png)

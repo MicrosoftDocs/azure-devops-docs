@@ -4,11 +4,11 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 4/13/2020
-description: In the **sprint 167** of Azure DevOps, we are bring new ways to increase productivity with changes made to Repos and Artifacts
+description: In **Sprint 167**, we are including enhancements to pull request actionability, pipeline security and compliance, and npm API performance.
 ---
 
 # Increase productivity & reduce latency
-With this update, we are including new ways to prioritize work through pull request queries in Repos and bringing speed when downloading your Artifacts.
+With this update, we are including enhancements to pull request actionability, pipeline security & compliance, and npm API performance.
 
 Check out the [Features](#features) list below for details.
 
