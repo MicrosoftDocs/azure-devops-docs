@@ -3,7 +3,7 @@ title: Collaborate on code
 titleSuffix: Azure Repos
 description: What do you get with Azure Repos  
 ms.technology: devops-new-user
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.date: 09/19/2018
 ms.topic: overview

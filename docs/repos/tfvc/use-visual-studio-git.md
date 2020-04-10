@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use Visual Studio with Git
 ms.assetid: 32f46ecd-1b03-4ef0-a9c4-8a120da2b03f
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
