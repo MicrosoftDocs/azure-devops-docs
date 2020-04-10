@@ -8,7 +8,6 @@ logs. These events can be accessed from Organization Settings -&gt; Auditing.
 The following events are available for feeds:</p><ul style="margin-bottom:0in;"><li>Create, delete, or modify an organization or
 project-scoped feed.</li><li>Create, delete or modify a feed view.</li><li>Set or delete a package retention policy on any
 given feed.</li><li><span style="color:black;">Permissions changes</span></li></ul></div>
-
     
 ### NPM performance improvements
 
@@ -16,11 +15,10 @@ given feed.</li><li><span style="color:black;">Permissions changes</span></li></
 design to improve the way we store and deliver NPM packages in Azure Artifacts
 feeds. This has helped us achieve up to 10-fold reduction in latency for some
 of the highest used APIs for NPM.</span></p></div>
-
     
 ### Accessibility improvements
 
 <div><p>We have deployed fixes to a number of accessibility issues
-on our feeds page. </p><ul style="margin-bottom:0in;"><li>Create feed experience</li><li>Global feed settings experience</li><li>Connect to feed experience</li></ul><br></div>
+on our feeds page. </p><ul style="margin-bottom:0in;"><li>Create feed experience</li><li>Global feed settings experience</li><li>Connect to feed experience</li></ul></div>
 
     
