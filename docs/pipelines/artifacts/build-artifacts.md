@@ -37,7 +37,7 @@ Artifacts can be published at any stage of pipeline. You can use two methods for
     artifactName: drop
 ```
 
-* **pathToPublish**: the folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported.
+* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
 * **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
@@ -86,7 +86,7 @@ YAML is not supported in TFS.
     artifactName: drop2
 ```
 
-* **pathToPublish**: the folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported.
+* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
 * **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
@@ -157,7 +157,7 @@ The completed build delivers two sets of artifacts.
 * **sourceFolder**: the folder that contains the files you want to copy. If you leave this value empty, copying will be done from the root folder of your repo (`$(Build.SourcesDirectory)`).
 * **contents**: location(s) of the file(s) that will be copied to the destination folder.
 * **targetFolder**: destination folder. 
-* **pathToPublish**: the folder or file path to publish. This can be a fully-qualified path or a path relative to the root of the repository. Wildcards are not supported.
+* **pathToPublish**: the folder or file path to publish. It can be an absolute or a relative path, and wildcards are not supported.
 * **artifactName**: the name of the artifact that you want to create.
 
 ::: moniker-end
@@ -263,7 +263,7 @@ YAML is not supported in TFS.
 * * *
 
 > [!NOTE]
-> If you are using a `deployment` task you can use `$(Agent.BuildDirectory)` variable to reference your build artifacts. See [Agent variables](../build/variables.md#agent-variables) for more information on how to use predefined variables.
+> In case you are using a `deployment` task, you can then reference your build artifacts by using `$(Agent.BuildDirectory)` variable. See [Agent variables](../build/variables.md#agent-variables) for more information on how to use predefined variables.
 
 ## Tips
 
