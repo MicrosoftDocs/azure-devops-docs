@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 01/07/2019
