@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to copy application files and other artifacts such as
+Use this task to copy application files and other artifacts such as
 PowerShell scripts and PowerShell-DSC modules that are required to 
 install the application on Windows Machines. It uses RoboCopy, the 
 command-line utility built for fast copying of data.

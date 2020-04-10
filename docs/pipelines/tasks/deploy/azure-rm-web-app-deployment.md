@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
+Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
 and uses several different [underlying deployment technologies](#deploy-methods).
 

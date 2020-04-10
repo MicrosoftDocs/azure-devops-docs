@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2018'
 
 # Docker task
 
-Use this task in a build or release pipeline to build and push Docker images to any container registry using Docker registry service connection.
+Use this task to build and push Docker images to any container registry using Docker registry service connection.
 
 ## Overview
 

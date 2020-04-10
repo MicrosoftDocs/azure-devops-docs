@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Build**
 
-Use this task in a build or release pipeline to find, download, and cache a specified version of [NuGet](https://nuget.org/) and add it to the PATH.
+Use this task to find, download, and cache a specified version of [NuGet](https://nuget.org/) and add it to the PATH.
 
 ## Demands
 

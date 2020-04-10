@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
 
-Use this task in a build or release pipeline to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
+Use this task to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
 
 ## Demands
 
