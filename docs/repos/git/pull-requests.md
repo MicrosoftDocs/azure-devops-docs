@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description:  Conduct a code review in a Git with Azure Repos or Azure DevOps Server, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019

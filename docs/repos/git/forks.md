@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn to isolate code using forks in Azure DevOps Services & TFS
 ms.assetid: d212c1ec-19b9-4d5a-bb7f-2a909f151180
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018

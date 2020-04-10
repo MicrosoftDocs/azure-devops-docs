@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Checkout (or Edit) command
 ms.assetid: 377fec8a-bdc5-4e3c-ac8c-79ee85eef4ce
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

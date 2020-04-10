@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 09/10/2018

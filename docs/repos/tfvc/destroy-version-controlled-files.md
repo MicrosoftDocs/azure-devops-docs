@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Destroy Version Controlled Files
 ms.assetid: 9be4d796-b448-4084-a102-a0e95e7b0053
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
