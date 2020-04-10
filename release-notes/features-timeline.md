@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 03/16/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -19,9 +19,6 @@ hide_comments: true
 | <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
 ****
-
-> [!Important]
-> In light of the COVID-19 global health pandemic, and in recognition of the critical role hosted services like Azure DevOps can play in key workloads for our customers, we are pausing our normal sprintly deployments to better focus on stability and reliability. Deployments will be limited for now to critical updates needed to fix bugs or address stability, reliability, or security issues. See the [Optimizing for stability during the global health pandemic blog post](https://devblogs.microsoft.com/devops/optimizing-for-stability-during-the-global-health-pandemic/) for more information.
 
 ## Features under development
 
