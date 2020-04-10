@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to generate an .ipa file from Xcode build output.
+Use this task to generate an .ipa file from Xcode build output.
 
 ## Deprecated
 **The Xcode Package iOS task has been deprecated.

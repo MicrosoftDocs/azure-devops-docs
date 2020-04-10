@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
+Use this task to run CocoaPods [pod install](https://guides.cocoapods.org/using/pod-install-vs-update.html).
 
 [CocoaPods](https://cocoapods.org/) is the dependency manager for Swift and Objective-C Cocoa projects. This task optionally runs `pod repo update` and then runs `pod install`.
 

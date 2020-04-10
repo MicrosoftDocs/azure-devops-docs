@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
-Use this task in a build or release pipeline to run Apache JMeter load tests in the cloud.
+Use this task to run Apache JMeter load tests in the cloud.
 
 ## Demands
 

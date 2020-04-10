@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run gulp tasks using the Node.js streaming task-based build system.
+Use this task to run gulp tasks using the Node.js streaming task-based build system.
 
 ## Demands
 

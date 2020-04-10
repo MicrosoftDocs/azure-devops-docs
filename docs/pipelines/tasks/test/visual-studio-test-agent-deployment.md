@@ -30,7 +30,7 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-Use this task in a build or release pipeline to deploy and configure the test agent to run tests on a set of machines.
+Use this task to deploy and configure the test agent to run tests on a set of machines.
 The test agent deployed by this task can collect data or run distributed tests using the [Visual Studio Test](vstest.md) task.
 
 ### Demands and prerequisites

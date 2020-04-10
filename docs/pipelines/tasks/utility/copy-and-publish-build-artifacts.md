@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 **TFS 2015**
 
-Use this task in a build or release pipeline to copy build artifacts to a staging folder and then publish them to the server or a file share.
+Use this task to copy build artifacts to a staging folder and then publish them to the server or a file share.
 Files are copied to the `$(Build.ArtifactStagingDirectory)` staging folder and then published.
 
 ::: moniker range="> tfs-2015"

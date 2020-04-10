@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
+Use this task to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
 
 ::: moniker range="> tfs-2018"
