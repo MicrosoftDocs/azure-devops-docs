@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2018'
 Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
 
 > [!NOTE]
-> Moving forward, the [NuGet Authenticate](https://github.com/MicrosoftDocs/azure-devops-docs-pr/blob/master/docs/pipelines/tasks/package/nuget-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
+> Moving forward, the [NuGet Authenticate](nuget-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
 
 ::: moniker range="<= tfs-2018"
 
