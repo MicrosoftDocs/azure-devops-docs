@@ -108,7 +108,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td>
         </tr>
         <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>NPM performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
