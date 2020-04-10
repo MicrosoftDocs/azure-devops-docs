@@ -16,6 +16,9 @@ monikerRange: '>= tfs-2015'
 
 Use this task to install and publish npm packages.
 
+> [!NOTE]
+> Moving forward, the [npm Authenticate](npm-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
+
 ::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
