@@ -112,7 +112,8 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
         <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
         <tr><td>NPM performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr<><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>   
+        <tr<><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>  
+    </tr> 
     <tr>
         <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
             <td>Pay for users once across multiple organizations</td><td>General</td><td>N/A</td>
