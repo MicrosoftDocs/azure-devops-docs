@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy, start, stop, and delete Azure Resource Groups.
+Use this task to deploy, start, stop, and delete Azure Resource Groups.
 
 ::: moniker range="> tfs-2018"
 

@@ -19,7 +19,7 @@ monikerRange: '>= tfs-2015'
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-Use this task in a build or release pipeline to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
