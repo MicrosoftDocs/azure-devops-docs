@@ -104,6 +104,16 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
         <tr>
+            <td rowspan="7"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td>
+        </tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>NPM performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr>
             <td rowspan="3"><a href="2020/sprint-167-update.md" data-raw-source="[13 April 2020](2020/sprint-167-update.md)">13 April 2020</a></td>
             <td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td>
         </tr>
