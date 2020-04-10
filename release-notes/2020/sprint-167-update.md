@@ -24,13 +24,13 @@ Check out the [Features](#features) list below for details.
 [!INCLUDE [sprint-167-update-links](includes/repos/sprint-167-update-links.md)]
 
 
-### Artifacts
+## Artifacts
 [!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
 
-### Pipelines
+## Pipelines
 [!INCLUDE [sprint-167-update](includes/pipelines/sprint-167-update.md)]
 
-### Repos
+## Repos
 [!INCLUDE [sprint-167-update](includes/repos/sprint-167-update.md)]
 
 
