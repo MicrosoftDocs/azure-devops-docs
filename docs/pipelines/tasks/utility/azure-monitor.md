@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a release pipeline to observe the configured Azure monitor rules for active alerts.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to observe the configured Azure monitor rules for active alerts.
 
 Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a release pipeline.
 
