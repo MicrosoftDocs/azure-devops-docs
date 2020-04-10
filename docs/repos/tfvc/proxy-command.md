@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Proxy Command
 ms.assetid: c36b124d-f1cf-4e6f-a053-3b7d501a234c
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
