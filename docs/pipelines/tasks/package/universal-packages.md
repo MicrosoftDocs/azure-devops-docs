@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to download, or package and publish Universal Packages.
+Use this task to download, or package and publish Universal Packages.
 
 ::: moniker range="<= tfs-2018"
 

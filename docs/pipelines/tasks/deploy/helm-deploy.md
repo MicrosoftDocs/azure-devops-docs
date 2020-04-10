@@ -12,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
+Use this task to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
 Helm is a tool that streamlines deploying and managing Kubernetes apps using a packaging format called
 [charts](https://github.com/helm/helm/blob/master/docs/charts.md).
 You can define, version, share, install, and upgrade even the most complex Kubernetes app by using Helm. 

@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
+Use this task to build a machine image using Packer. This image can be used for Azure Virtual machine scale set deployment.
 
 ::: moniker range="> tfs-2018"
 
