@@ -1,7 +1,7 @@
 ---
 title: Configure schedules to run pipelines
 description: Configure schedules to run pipelines
-ms.topic: reference
+ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
 ms.date: 03/29/2020

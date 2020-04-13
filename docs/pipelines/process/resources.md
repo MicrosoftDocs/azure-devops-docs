@@ -2,7 +2,7 @@
 title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 03/11/2020
 monikerRange: azure-devops
