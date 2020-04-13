@@ -321,6 +321,8 @@
   href: https://docs.microsoft.com/azure/devops/server/release-notes/azuredevops2019?view=azure-devops
 - name: Azure Boards
   items:
+    - name: April 13
+      href: 2020/boards/sprint-167-update.md
     - name: October 14
       href: 2019/boards/sprint-159-update.md
     - name: September 23
