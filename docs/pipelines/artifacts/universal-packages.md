@@ -47,7 +47,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 | vstsFeedPackagePublish                                            | The package name.                                                                 |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
-> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
 
@@ -105,7 +105,7 @@ In the **Universal Packages** snippet that you added previously, add the `versio
 | versionPublish                                                    | The custom package version                                                        |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
-> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 # [Classic](#tab/classic)
 
@@ -139,7 +139,7 @@ steps:
 | vstsPackageVersion             | Version of the package to be downloaded. |
 | downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
 
-> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -165,7 +165,7 @@ steps:
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
 
-> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 #### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
