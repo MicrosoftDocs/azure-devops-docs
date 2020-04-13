@@ -28,7 +28,7 @@ The plugin can be installed from Android Studio by browsing the Plugin Repositor
     - Linux: from the `File` menu, select `Settings...` then `Plugins`
     - Mac: from the `Android Studio` menu, select `Preferences...` then `Plugins`
     - Windows: from the `File` menu, select `Settings...` then `Plugins`
-2. Click the `Browse repositories...` button and search for "Visual Studio Team Services". 
+2. Click the `Browse repositories...` button and search for "Azure DevOps". 
 3. Click the `Install plugin` button and restart Android Studio. 
 
    You can also download the plugin to disk from the [Android Studio Plugin Repository](https://plugins.jetbrains.com/plugin/7981?pr=androidstudio) and install the downloaded JAR file.
