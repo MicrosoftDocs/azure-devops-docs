@@ -82,16 +82,16 @@ You can add and assign an access level to users one-by-one, which is referred to
 
 If you don't use Azure AD, as described in the next section, to manage your user base, then you can add them through the following ways to collaborate on your project. 
 
-- Add users to your organization from the **Organization Settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
+- Add users to your organization from the **Organization settings > Users** page. Only organization owners or members of the Project Collection Administration group can add users at this level.
 
     Specify the access level and the project(s) the user is added to. For more information, see [Add users to your organization or project](add-organization-users.md).
 
-- Add users to one or more teams from the **Project > Summary** page or to a specific team from the **Project Settings > Teams > Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. 
+- Add users to one or more teams from the **Project > Summary** page or to a specific team from the **Project settings > Teams > Team** page. Members of the Project Collection Administration or Project Administration groups, or a team administrator can add users to teams. 
 
     > [!div class="mx-imgBorder"]  
     > ![Web portal, Project Overview page, Invite new users dialog box](media/org-manage/invite-members-dialog.png)
   
-    Unless users are granted an access level directly or through a group rule, they're assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization Settings > Users** page. 
+    Unless users are granted an access level directly or through a group rule, they're assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization settings > Users** page. 
 
 For details, see the following articles: 
 
@@ -112,7 +112,7 @@ The process of adding users to projects when you're managing them through Azure 
 2. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
 3. [Add organization users to your Azure AD](add-users-to-azure-ad.md).  
 4. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
-5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels(assign-access-levels-and-extensions-by-group-membership.md).    
+5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-and-extensions-by-group-membership.md).    
 
 You can also add users through the steps outlined in the previous section about [direct assignment](#add-users).
 
@@ -197,7 +197,6 @@ You can then pay for more users with Basic access, buy more services, and purcha
 </tr>
 </tbody>
 </table>
-
 
 
 ## Related articles
