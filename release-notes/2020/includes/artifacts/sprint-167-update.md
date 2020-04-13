@@ -23,7 +23,7 @@ We have made changes to our core design to improve the way we store and deliver 
 ### Accessibility improvements
 
 We have deployed fixes to address accessibility issues
-on our feeds page.
+on our feeds page. The fixes include the following: 
 
 - Create feed experience
 - Global feed settings experience
