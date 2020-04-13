@@ -187,58 +187,84 @@ These are steps to create a scale set with a custom OS disk size and custom soft
 
 If you just want to create a scaleset with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc) to create the scaleset.  Otherwise follow these steps to customize your VM image.
 
-1.  Create a VM with capacity for 200GiB OS drive starting with your base image:
-    a.  If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
-        
-        `az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb 200  --admin-username myUserName --admin-password myPassword`
-    
-    b.  If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
+1.  Create a VM with capacity for 200GiB OS drive starting with your base image.
 
-        `az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb 200 --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>`
+    - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+    
+        ```azurecli  
+        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb 200  --admin-username myUserName --admin-password myPassword
+        ```
+
+    - If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
+
+        ```azurecli
+        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb 200 --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
+        ```
 
         Shutdown the VM
-        `az vm shutdown --resource-group <myResourceGroup> --name <MyVM>`
+        ```azurecli
+        az vm shutdown --resource-group <myResourceGroup> --name <MyVM>
+        ```
 
         Deallocate the VM
-        `az vm deallocate --resource-group <myResourceGroup> --name <MyVM>`
+        ```azurecli
+        az vm deallocate --resource-group <myResourceGroup> --name <MyVM>
+        ```
     
         Convert to a managed disk
-        `az vm convert --resource-group <myResourceGroup> --name <MyVM>`
+        ```azurecli
+        az vm convert --resource-group <myResourceGroup> --name <MyVM>
     
         Restart the VM
-        `az vm start --resource-group <myResourceGroup> --name <MyVM>`
+        ```azurecli
+        az vm start --resource-group <myResourceGroup> --name <MyVM>
+        ```
     
 2. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   a.  [Windows] Extend the OS disk size to fill the disk size you declared above.
-       Open DiskPart tool as administrator and run these DiskPart commands:
-          list volume  (to see the volumes)
-          select volume 2 (depends on which volume is the OS drive)
-          extend size 72000 (to extend the drive by 72 GiB, from 128GiB to 200GiB)
-          
-   b.  Install any additional software on the VM
-
-   c.  Reboot the VM when finished with customizations
+   - [Windows] Extend the OS disk size to fill the disk size you declared above.
    
-   d.  Generalize the VM.  
-       [Windows] From an admin console window: C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown
-       [Linux] sudo waagent -deprovision+user -force
+        Open DiskPart tool as administrator and run these DiskPart commands:
+        - `list volume`  (to see the volumes)
+        - `select volume 2` (depends on which volume is the OS drive)
+        - `extend size 72000` (to extend the drive by 72 GiB, from 128GiB to 200GiB)
+          
+   - Install any additional software on the VM
 
-    >[!IMPORTANT]
-    >Wait for the VM to finish generalization and shutdown the VM! Do not proceed until the VM has stopped. Allow 60 minutes.
+   - Reboot the VM when finished with customizations
+   
+   - Generalize the VM.  
+       
+        - [Windows] From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
+        - [Linux] `sudo waagent -deprovision+user -force`
+
+        > [!IMPORTANT]
+        > Wait for the VM to finish generalization and shutdown the VM! Do not proceed until the VM has stopped. Allow 60 minutes.
    
 3. Deallocate the VM
-    `az vm deallocate --resource-group <myResourceGroup> --name <MyVM>`
+
+    ```azurecli
+    az vm deallocate --resource-group <myResourceGroup> --name <MyVM>
+    ```
      
 4. Mark the VM as Generalized
-     `az vm generalize --resource-group <myResourceGroup> --name <MyVM>`
+
+    ```azurecli
+    az vm generalize --resource-group <myResourceGroup> --name <MyVM>
+    ```
 
 5. Create a VM Image based on the generalized image
-     `az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>`
+
+    ```azurecli
+    az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>
+    ```
 
 6. Create the scaleset based on the custom VM image
-     `az vmss create --resource-group <myResourceGroup> --name <myScaleSet> --image <MyImage> --admin-username <myUsername> --admin-password <myPassword> --instance-count 2 --disable-overprovision --upgrade-policy-mode manual --load-balancer '""'`
+
+    ```azurecli
+    az vmss create --resource-group <myResourceGroup> --name <myScaleSet> --image <MyImage> --admin-username <myUsername> --admin-password <myPassword> --instance-count 2 --disable-overprovision --upgrade-policy-mode manual --load-balancer '""'
+    ```
      
 7. Verify that both VMs created in the scaleset come online, have different names, and reach the Succeeded state
 
