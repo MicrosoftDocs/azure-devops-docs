@@ -1,7 +1,7 @@
 ---
 title: Triggers in Azure Pipelines
 description: Learn about how you can specify CI, scheduled, gated, and other triggers in Azure Pipelines
-ms.topic: reference
+ms.topic: conceptual
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
