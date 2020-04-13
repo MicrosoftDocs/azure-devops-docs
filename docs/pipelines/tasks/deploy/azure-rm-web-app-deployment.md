@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
+Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -209,7 +209,7 @@ For windows based agents.
 <table><thead><tr><th>App Service type</th><th>Package type</th><th>Deployment Method</th></tr></thead>
 <tr><td>WebApp on Linux or Function App on Linux</td><td>Folder/Zip/jar <br/>War</td><td>Zip Deploy<br/>War Deploy</td></tr>
 <tr><td>WebApp for Containers (Linux) or Function App for Containers (Linux)</td><td>Update the App settings</td><td>NA</td></tr>
-<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/> Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/>if postDeploymentScript == true Zip Deploy <br/> else, Run From Package</td></tr>
+<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/><br/><br/>   Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/><br/> if postDeploymentScript == true, Zip Deploy <br/> else, Run From Package</td></tr>
 </table>
 
 On non-Windows agents (for any App Service type), the task relies on
@@ -311,7 +311,7 @@ If you are using web deploy to deploy your app, in some error scenarios Web Depl
 ### Web app deployment on App Service Environment (ASE) is not working
 * Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
 * If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
-* If you are using TFS/Azure DevOps server deployed in a Virtual Network, the agent can be completely isolated.
+* If you are using TFS/Azure DevOps Server deployed in a Virtual Network, the agent can be completely isolated.
 * Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
 * If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.
 

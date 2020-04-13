@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Use this task in a build or release pipeline to build with MSBuild and set the Visual Studio version property.
+Use this task to build with MSBuild and set the Visual Studio version property.
 
 ## Demands
 

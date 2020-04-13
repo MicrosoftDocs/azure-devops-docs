@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure DevOps Services | TFS 2018 Update 2**
 
-Use this task in a build or release pipeline to acquire the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
+Use this task to acquire the [Microsoft test platform](https://www.nuget.org/packages/Microsoft.TestPlatform/)
 from nuget.org or a specified feed, and add it to the tools cache. The installer task satisfies the 'vstest'
 demand and a subsequent [Visual Studio Test task](../test/vstest.md)
 in a build or release pipeline can run without needing a full Visual Studio install on the agent machine. 

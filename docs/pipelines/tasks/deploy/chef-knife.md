@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run scripts with Knife commands on your Chef workstation.
+Use this task to run scripts with Knife commands on your Chef workstation.
 
 ::: moniker range="> tfs-2018"
 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
-Use this task in a build or release pipeline to run a load test in the cloud, to understand, test, and validate your app's performance. 
+Use this task to run a load test in the cloud, to understand, test, and validate your app's performance. 
 The task uses the Cloud-based Load Test Service based in
 Microsoft Azure and can be used to test your app's 
 performance by generating load on it.
