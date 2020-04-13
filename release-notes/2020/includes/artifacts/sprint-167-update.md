@@ -4,7 +4,7 @@ ms.topic: include
 ### Auditing events are now available
 
 Azure Artifacts feeds events are now available in the audit
-logs. These logs can be accessed from Organization Settings -&gt; Auditing.
+logs. These logs can be accessed from **Organization Settings -&gt; Auditing**.
 The following events are now available for feeds:
 
 - Create, delete, or modify an organization or
