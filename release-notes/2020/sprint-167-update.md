@@ -17,6 +17,9 @@ Check out the [Features](#features) list below for details.
 ### Artifacts
 [!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
 
+### Boards
+[!INCLUDE [sprint-167-update-links](includes/boards/sprint-167-update-links.md)]
+
 ### Pipelines
 [!INCLUDE [sprint-167-update-links](includes/pipelines/sprint-167-update-links.md)]
 
@@ -26,6 +29,9 @@ Check out the [Features](#features) list below for details.
 
 ## Artifacts
 [!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
+
+## Boards
+[!INCLUDE [sprint-167-update](includes/boards/sprint-167-update.md)]
 
 ## Pipelines
 [!INCLUDE [sprint-167-update](includes/pipelines/sprint-167-update.md)]
