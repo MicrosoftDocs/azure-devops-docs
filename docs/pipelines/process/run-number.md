@@ -2,7 +2,7 @@
 title: Run (build) number
 ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
