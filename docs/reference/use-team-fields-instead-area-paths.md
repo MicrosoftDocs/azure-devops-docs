@@ -76,6 +76,7 @@ When you customize your project to support team fields, the Team field tab appea
 
 
 <a id="addteamfield">  </a>  
+
 ### 2. Add a custom team field to work item types
 
 Add a custom team field to all work item types (WITs) that are included in the Feature Category, Requirement Category, and Task Category. And, if you've upgraded to TFS 2013.3 or later version, add the custom team field to all WITs included in the Test Plan Category.
@@ -167,8 +168,8 @@ Add a custom team field to all work item types (WITs) that are included in the F
       <Field refname="MyCompany.Team " />
       </Fields>
     </AddPanel> 
-  . . .
-  ```
+	. . .
+	```  
 
 4. Import the definition file.
 
@@ -241,7 +242,7 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 2. [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
    > [!IMPORTANT]  
-   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+   > Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
 3. Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
