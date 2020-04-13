@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
 ms.author: pbora
 author: PBoraMSFT
-ms.date: 04/03/2020
+ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -147,7 +147,7 @@ None
 For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
 
 > [!IMPORTANT]
-> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds).
+> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by [manually deleting the run](../../get-started/multi-stage-pipelines-experience.md#Pipelines-landing-page).
 > For information about debugging your app, see [Use indexed symbols to debug your app](../../artifacts/symbols.md#use-indexed-symbols-to-debug-your-app), [Debug with symbols in Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md), [Debug with symbols in WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md).
 
 ## Open source
