@@ -101,15 +101,16 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
         <tr>
-            <td rowspan="7"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
-            <td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td>
+            <td rowspan="8"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td>
         </tr>
-        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
         <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
             <td>Pay for users once across multiple organizations</td><td>General</td><td>N/A</td>

@@ -14,30 +14,29 @@ Check out the [Features](#features) list below for details.
 
 ## Features
 
-### Artifacts
-[!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
-
-### Boards
+### Azure Boards
 [!INCLUDE [sprint-167-update-links](includes/boards/sprint-167-update-links.md)]
 
-### Pipelines
+### Azure Pipelines
 [!INCLUDE [sprint-167-update-links](includes/pipelines/sprint-167-update-links.md)]
 
-### Repos
+### Azure Repos
 [!INCLUDE [sprint-167-update-links](includes/repos/sprint-167-update-links.md)]
 
+### Azure Artifacts
+[!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
 
-## Artifacts
-[!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
-
-## Boards
+## Azure Boards
 [!INCLUDE [sprint-167-update](includes/boards/sprint-167-update.md)]
 
-## Pipelines
+## Azure Repos
+[!INCLUDE [sprint-167-update](includes/repos/sprint-167-update.md)]
+
+## Azure Pipelines
 [!INCLUDE [sprint-167-update](includes/pipelines/sprint-167-update.md)]
 
-## Repos
-[!INCLUDE [sprint-167-update](includes/repos/sprint-167-update.md)]
+## Azure Artifacts
+[!INCLUDE [sprint-167-update](includes/artifacts/sprint-167-update.md)]
 
 
 ## Next steps
