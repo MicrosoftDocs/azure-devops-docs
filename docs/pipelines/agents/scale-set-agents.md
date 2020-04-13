@@ -43,6 +43,8 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create a virtual machine scale set agent pool
 
+### Create the scale set
+
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
@@ -79,7 +81,7 @@ In the following example, a new resource group and virtual machine scale set are
     --vm-sku Standard_D2_v3 \
     --storage-sku StandardSSD_LRS \
     --authentication-type SSH \
-    --instance-count 0 \
+    --instance-count 2 \
     --disable-overprovision \
     --upgrade-policy-mode manual \
     --load-balancer ""
@@ -90,7 +92,7 @@ In the following example, a new resource group and virtual machine scale set are
     * `--disable-overprovision`
     * `--upgrade-policy-mode manual`
     * `--load-balancer ""`
-    * `--instance-count 0` - this setting is not required, but since Azure Pipelines manages the VM count it is recommended to set it to `0` during creation
+    * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
@@ -98,6 +100,9 @@ In the following example, a new resource group and virtual machine scale set are
     Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image.
     
     Select any VM SKU and storage SKU.
+
+    > [!NOTE]
+    > Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
 
 5. After creating your scale set, navigate to your scale set in the Azure portal and verify the following settings:
 
@@ -153,7 +158,12 @@ In the following example, a new resource group and virtual machine scale set are
 
 ## Use scale set agent pool
 
-Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines. Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
+Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines. 
+
+> [!NOTE]
+>  It can take up to an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will monitor these operations for errors, and will react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take up to an hour.
+
+Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
 
 
 > [!IMPORTANT]
@@ -168,3 +178,71 @@ During the preview, scale set agent pools have some limitations that you need to
 - Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
 
+## Q & A
+
+### How do I create a scale set with custom software and custom disk size?
+
+These are steps to create a scale set with a custom OS disk size and custom software.
+
+If you just want to create a scaleset with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc) to create the scaleset.  Otherwise follow these steps to customize your VM image.
+
+1.  Create a VM with capacity for 200GiB OS drive starting with your base image:
+    a.  If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
+        
+        `az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb 200  --admin-username myUserName --admin-password myPassword`
+    
+    b.  If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
+
+        `az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb 200 --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>`
+
+        Shutdown the VM
+        `az vm shutdown --resource-group <myResourceGroup> --name <MyVM>`
+
+        Deallocate the VM
+        `az vm deallocate --resource-group <myResourceGroup> --name <MyVM>`
+    
+        Convert to a managed disk
+        `az vm convert --resource-group <myResourceGroup> --name <MyVM>`
+    
+        Restart the VM
+        `az vm start --resource-group <myResourceGroup> --name <MyVM>`
+    
+2. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
+   You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
+
+   a.  [Windows] Extend the OS disk size to fill the disk size you declared above.
+       Open DiskPart tool as administrator and run these DiskPart commands:
+          list volume  (to see the volumes)
+          select volume 2 (depends on which volume is the OS drive)
+          extend size 72000 (to extend the drive by 72 GiB, from 128GiB to 200GiB)
+          
+   b.  Install any additional software on the VM
+
+   c.  Reboot the VM when finished with customizations
+   
+   d.  Generalize the VM.  
+       [Windows] From an admin console window: C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown
+       [Linux] sudo waagent -deprovision+user -force
+
+    >[!IMPORTANT]
+    >Wait for the VM to finish generalization and shutdown the VM! Do not proceed until the VM has stopped. Allow 60 minutes.
+   
+3. Deallocate the VM
+    `az vm deallocate --resource-group <myResourceGroup> --name <MyVM>`
+     
+4. Mark the VM as Generalized
+     `az vm generalize --resource-group <myResourceGroup> --name <MyVM>`
+
+5. Create a VM Image based on the generalized image
+     `az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>`
+
+6. Create the scaleset based on the custom VM image
+     `az vmss create --resource-group <myResourceGroup> --name <myScaleSet> --image <MyImage> --admin-username <myUsername> --admin-password <myPassword> --instance-count 2 --disable-overprovision --upgrade-policy-mode manual --load-balancer '""'`
+     
+7. Verify that both VMs created in the scaleset come online, have different names, and reach the Succeeded state
+
+You are now ready to create an agent pool using this scale set.
+
+### Where can I find the inages used for Microsoft-hosted pools?
+
+Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
