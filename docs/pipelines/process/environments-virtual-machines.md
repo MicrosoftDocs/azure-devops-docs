@@ -18,19 +18,19 @@ Virtual machines can be added as resources within environments and can be target
 You can define environments in **Environments** under **Pipelines**.
 1. Click **Create Environment**.  
 2. Specify a **Name** (required) for the environment and a **Description**.
-3.	Choose **Virtual Machines** as a  **Resource** to be added to the environment and click **Next**.
-4.	Choose Windows or Linux for the **Operating System**.
+3.    Choose **Virtual Machines** as a  **Resource** to be added to the environment and click **Next**.
+4.    Choose Windows or Linux for the **Operating System**.
 5.  Copy the  registration script. 
-6.	Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
+6.    Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
     > [!NOTE]
     > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
     > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
-7.	Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
+7.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
     > [!div class="mx-imgBorder"]
     > ![VMcreation](media/vm-creation.png)
 
-8.	To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual Machines**. This script remains the same for all the VMs added to the environment. 
-9.	Each machine interacts with Azure Pipelines to coordinate deployment of your app.
+8.    To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual Machines**. This script remains the same for all the VMs added to the environment. 
+9.    Each machine interacts with Azure Pipelines to coordinate deployment of your app.
     > [!div class="mx-imgBorder"]
     > ![VMresource_view](media/vm-resourceview.png)
 
@@ -75,11 +75,12 @@ The **Deployments** tab provides complete traceability of commits and work items
 > ![VMjobs_view](media/vm-jobsview.png)
   
 ## Remove a VM from an Environment
-To unconfigure virtual machines that are previously added to an environment, run this command from an administrator PowerShell command prompt on each of the machines in the same folder path where the script to register to the environment has been previously run:
+To unconfigure virtual machines that are previously added to an environment, run this command from an administrator PowerShell command prompt on each of the machines, in the same folder path where the script to register to the environment has been previously run:
 
 ```
-./configure.sh remove
+./configure.cmd remove
 ```
+
 ## Known limitations
 When you retry a stage, it will rerun the deployment on all VMs and not just failed targets. 
 
