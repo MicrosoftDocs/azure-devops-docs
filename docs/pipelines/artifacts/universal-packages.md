@@ -46,7 +46,8 @@ To publish a Universal Package to your feed, add the following snippet to your a
 | vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
 | vstsFeedPackagePublish                                            | The package name.                                                                 |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] |                                                                                   |
+
+> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
 
@@ -103,7 +104,8 @@ In the **Universal Packages** snippet that you added previously, add the `versio
 | versionOption                                                     | Select a version increment strategy. Options: `major`, `minor`, `patch`, `custom` |
 | versionPublish                                                    | The custom package version                                                        |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] |                                                                                   |
+
+> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
 
 # [Classic](#tab/classic)
 
@@ -136,7 +138,8 @@ steps:
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
 | downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
+
+> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -161,7 +164,8 @@ steps:
 | feedDownloadExternal           | Feed that the package will be downloaded from.        |
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
+
+> See [Task control options](../tasks/includes/control-options-arguments.md) to learn about the available control options for your task.
 
 #### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
