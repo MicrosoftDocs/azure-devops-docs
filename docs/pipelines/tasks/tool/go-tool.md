@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to find or download a specific version of the Go tool into the
+Use this task to find or download a specific version of the Go tool into the
 tools cache and add it to the PATH. Use the task to change the version of Go Lang used in subsequent tasks.
 
 ::: moniker range="> tfs-2018"

@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a shell or batch 
+Use this task to run a shell or batch 
 script containing Azure CLI commands against an Azure subscription.
 
 This task is used to run Azure CLI commands on 

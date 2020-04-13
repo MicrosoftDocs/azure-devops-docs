@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to decrypt files using OpenSSL.
+Use this task to decrypt files using OpenSSL.
 
 ::: moniker range="> tfs-2018"
 

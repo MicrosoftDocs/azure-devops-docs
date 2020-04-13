@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: overview
 ms.date: 08/29/2017

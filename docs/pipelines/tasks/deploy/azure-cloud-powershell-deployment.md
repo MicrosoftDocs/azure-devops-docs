@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy an Azure Cloud Service.
+Use this task to deploy an Azure Cloud Service.
 
 ::: moniker range="> tfs-2018"
 

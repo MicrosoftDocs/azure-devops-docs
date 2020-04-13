@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in Git using Eclipse
 ms.assetid: a00b91da-9f74-44f2-8c48-04bfd50a74c3
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 05/13/2019

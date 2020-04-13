@@ -19,7 +19,7 @@ Visual Studio 2019 will be the last version of Visual Studio containing web perf
 [(more details)](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
 Cloud load testing (CLT) functionality in Azure DevOps is deprecated.
-The changes to cloud load testing functionality in Azure DevOps include all entry points for the load testing service:
+The changes to cloud load testing functionality in Azure DevOps affect the following products for the load testing service:
 
 1. [Web-based experience for load testing in Azure DevOps](get-started-simple-cloud-load-test.md) (URL-based, HAR file, Apache JMeter and Visual Studio web test).
 

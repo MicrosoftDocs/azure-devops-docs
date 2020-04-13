@@ -275,7 +275,7 @@ If you need more Visual Studio subscriptions, learn [how to buy subscriptions](.
 
 A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access.
 
-If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [how to control organization access with Azure AD](access-with-azure-ad.md).
+If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [about controlling organization access with Azure AD](access-with-azure-ad.md).
 
 ### Q: Why did some users lose access to certain features?
 
@@ -305,30 +305,33 @@ If you're an Azure AD guest, do one of the following steps:
 * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
 
 1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
+    ```
+    PS Install-Module -Name AzureAD
+    ```
 2. Open PowerShell and run the following cmdlets.
 
     a. Connect to Azure AD:
 
     ```
-    C:\Users\rajr> Connect-AzureAD
+    PS Connect-AzureAD
     ```
 
     b. Find the **objectId** of the user:
 
     ```
-    C:\Users\rajr> Get-AzureADUser
+    PS Get-AzureADuser -SearchString "YourUPN"
     ```
 
     c. Check the **usertype** attribute for this user to see if they're a guest or member:
 
     ```
-    C:\Users\rajr> Get-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66
+    PS Get-AzureADUser -objectId This is the result of the previous command
     ```
 
     d. Change the **usertype** from **member** to **guest**:
 
     ```
-    C:\Users\rajr> Set-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66 -UserType Member
+    PS Set-AzureADUser -objectId c<replacethe object ID for the result of the command to search> -UserType Member
     ```
 
 <a name="users-delay"></a>

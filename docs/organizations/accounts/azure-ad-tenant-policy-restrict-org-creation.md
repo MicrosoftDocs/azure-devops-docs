@@ -79,4 +79,4 @@ The error message is customized.
 ## Related articles
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [About access with Azure AD](access-with-azure-ad.md)

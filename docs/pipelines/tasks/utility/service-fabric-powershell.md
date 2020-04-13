@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a PowerShell script within the context of an Azure Service Fabric cluster connection.
+Use this task to run a PowerShell script within the context of an Azure Service Fabric cluster connection.
 Runs any PowerShell command or script in a PowerShell session that has a Service Fabric cluster connection initialized.
 
 ## Prerequisites

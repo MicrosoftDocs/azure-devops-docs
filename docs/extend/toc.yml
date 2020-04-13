@@ -18,12 +18,14 @@
     href: reference/targets/overview.md
   - name: Contribution model
     href: develop/contributions-overview.md
-- name: How-to Guides
+- name: How-to guides
   items:
   - name: Develop
     items:
     - name: Add a hub
       href: develop/add-hub.md
+    - name: Add a hub group
+      href: develop/add-hub-group.md
     - name: Add a menu action
       href: develop/add-action.md
     - name: Add a dashboard widget
@@ -100,9 +102,7 @@
       href: test/debug-in-browser.md
   - name: Reporting
     items:
-    - name: Extension reporting
-      href: extension-report.md
-    - name: Extension statistics PowerBI content pack
+    - name: Extension statistics Power BI content pack
       href: extension-statistics-powerbi-contentpack.md
 - name: Reference
   items:
@@ -179,5 +179,5 @@
       href: reference/client/controls/splitter.md
     - name: WaitControl
       href: reference/client/controls/waitcontrol.md
-    - name: How to get help
-      href: support/help.md
+
+

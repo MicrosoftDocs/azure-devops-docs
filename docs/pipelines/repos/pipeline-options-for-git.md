@@ -4,7 +4,7 @@ description: Options that are available when using a Git repository with Azure P
 ms.topic: reference
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
 ms.custom: seodec18
-ms.date: 11/5/2019
+ms.date: 04/08/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -65,7 +65,15 @@ This is the branch that you want to be the default when you manually queue this 
 
 ::: moniker range="azure-devops"
 > [!NOTE]
-> Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
+> Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time. 
+> When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+> [!NOTE]
+> When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can use [Build artifacts](../artifacts/build-artifacts.md) to share outputs of a pipeline run, stage, or job with subsequent runs, stages, or jobs.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -331,7 +339,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-[Your pipeline will already have access to other repos in its project](./azure-repos-git.md#authorize-access-to-your-repositories).
+Your pipeline will already have access to other repos in its project.
 If you need to clone a repo from another project that is not public, you will need to authenticate as a user who has access to that project.
 
 > [!NOTE]
