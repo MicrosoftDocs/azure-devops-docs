@@ -55,7 +55,7 @@ You add the app to your Teams channel in Microsoft Teams.
 
 To use the app, you must first link your Azure Boards project to your Teams channel. 
 
-1. Once the app has been installed in your team, connect and authenticate yourself to Azure Boards. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenant. 
+1. Once the app has been installed in your team, connect and authenticate yourself to Azure Boards. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenants. 
 
 	![Pic: signin](./media/integrations-teams/signin1.png)
 	
