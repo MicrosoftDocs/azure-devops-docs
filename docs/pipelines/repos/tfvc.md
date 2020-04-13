@@ -3,7 +3,7 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 03/06/2019
+ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -101,7 +101,28 @@ The build pipeline labels your sources with a [TFVC label](../../repos/tfvc/use-
 
 ## CI triggers
 
+Select **Enable continuous integration** on the **Triggers** tab to enable this trigger if you want the build to run whenever someone checks in code.
+
+:::image type="content" source="media/tfvc-ci-trigger.png" alt-text="CI trigger." :::
+
 Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings.
+
+### Batch changes
+
+Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
+
+> You can batch changes and build them together.
+
+### Path filters
+
+You can also specify path filters to reduce the set of files that you want to trigger a build.
+
+> **Tips:**
+>  * Paths are always specified relative to the root of the repository.
+>  * If you don't set path filters, then the root folder of the workspace is implicitly included by default.
+>  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
+>  * The order of path filters doesn't matter.
+>  * Paths are case-sensitive. Be sure to use the same case as the real folders.
 
 <h2 id="gated">Gated check-in</h2>
 
