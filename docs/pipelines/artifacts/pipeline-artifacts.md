@@ -5,7 +5,7 @@ ms.custom: seodec18
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.date: 04/09/2020
+ms.date: 04/14/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -124,6 +124,8 @@ steps:
     artifact: WebApp
 ```
 
+* **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
+
 # [Classic](#tab/classic)
 
 ![icon](../tasks/utility/media/download-pipeline-artifact.png) **Download Pipeline Artifact**
@@ -190,6 +192,10 @@ steps:
     path: $(Build.SourcesDirectory)/bin
 ```
 
+* **artifact**: The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded.
+* **patterns**: One or more file matching patterns that limit which files get downloaded.
+* **path**: The destination directory. It accepts both relative and absolute path.
+
 In this example, all `*.js` files in the `WebApp` artifact are downloaded to `$(Build.SourcesDirectory)/bin`.
 
 # [Classic](#tab/classic)
@@ -248,6 +254,8 @@ steps:
   inputs:
     patterns: '**/*.zip'
 ```
+
+* **patterns**: One or more file matching patterns that limit which files get downloaded.
 
 # [Classic](#tab/classic)
 
