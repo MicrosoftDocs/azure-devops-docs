@@ -105,8 +105,6 @@ Select **Enable continuous integration** on the **Triggers** tab to enable this 
 
 :::image type="content" source="media/tfvc-ci-trigger.png" alt-text="CI trigger." :::
 
-Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings.
-
 ### Batch changes
 
 Select this check box if you have many team members uploading changes often and you want to reduce the number of builds you are running. If you select this option, when a build is running, the system waits until the build is completed and then queues another build of all changes that have not yet been built.
@@ -115,7 +113,7 @@ Select this check box if you have many team members uploading changes often and 
 
 ### Path filters
 
-You can also specify path filters to reduce the set of files that you want to trigger a build.
+Select the version control paths you want to include and exclude. In most cases, you should make sure that these filters are consistent with your TFVC mappings. You can use path filters to reduce the set of files that you want to trigger a build.
 
 > **Tips:**
 >  * Paths are always specified relative to the root of the workspace.
