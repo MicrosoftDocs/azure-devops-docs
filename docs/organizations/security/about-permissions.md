@@ -177,7 +177,8 @@ You use the [web portal administration context](../../organizations/security/add
 ::: moniker range="azure-devops"
 
 |   Permission level   |  Web portal security pages | az devops CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
-|-------------------|:-----------------------------------:|:----------------:|:----------------:| | [Add users to an organization](../accounts/add-organization-users.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
+|-------------------|:-----------------------------------:|:----------------:|:----------------:|  
+| [Add users to an organization](../accounts/add-organization-users.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
 | [Add and manage security groups](add-manage-security-groups.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
 | [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md) |  |  ![check mark](../../media/check.png) |  |  
 | [Organization-level](permissions.md#collection)  | ![check mark](../../media/check.png) |   |  |  
