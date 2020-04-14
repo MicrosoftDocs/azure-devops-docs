@@ -3,7 +3,7 @@ title: Build TFVC repositories
 description: Using a TFVC repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: d88333c9-e964-4f91-9532-5d014edb8277
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -122,7 +122,6 @@ You can also specify path filters to reduce the set of files that you want to tr
 >  * If you don't set path filters, then the root folder of the workspace is implicitly included by default.
 >  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
 >  * The order of path filters doesn't matter.
->  * Paths are case-sensitive. Be sure to use the same case as the real folders.
 
 <h2 id="gated">Gated check-in</h2>
 
