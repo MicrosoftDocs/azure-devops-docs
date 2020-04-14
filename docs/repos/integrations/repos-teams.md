@@ -33,7 +33,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group. 
+- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Adminstrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Adminstrator](../../organizations/settings/add-team-administrator.md). 
 To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
@@ -53,7 +53,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 ## Connect the Azure Repos app to your repositories
 
-1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command.
+1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenants. 
    
    > [!div class="mx-imgBorder"]
    > ![Sign in prompt image ](./media/integrations-teams/SignIn.png)

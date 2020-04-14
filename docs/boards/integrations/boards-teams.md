@@ -34,7 +34,7 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
+- To create subscriptions in a Teams channel for work item events, you must be a member of the Azure Boards Project Administrators group or Team Adminstrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Adminstrator](../../organizations/settings/add-team-administrator?view=azure-devops&tabs=preview-page). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
@@ -55,7 +55,7 @@ You add the app to your Teams channel in Microsoft Teams.
 
 To use the app, you must first link your Azure Boards project to your Teams channel. 
 
-1. Once the app has been installed in your team, connect and authenticate yourself to Azure Boards. 
+1. Once the app has been installed in your team, connect and authenticate yourself to Azure Boards. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenants. 
 
 	![Pic: signin](./media/integrations-teams/signin1.png)
 	
