@@ -343,9 +343,8 @@ Note that unlike a normal pipeline variable, there's no environment variable cal
 
 ```yaml
 variables:
- # Neither on global nor on job-level - mapped global/job variables are not exposed to env either
- GLOBAL_MYSECRET:  $(mySecret)
- GLOBAL_MY_MAPPED_ENV_VAR: "someValue"
+ GLOBAL_MYSECRET: $(mySecret) # this will not work because the variable needs to be mapped as env
+ GLOBAL_MY_MAPPED_ENV_VAR: foo # this will not work because the variable needs to be mapped as env
  
 steps:
 
@@ -356,17 +355,17 @@ steps:
     # Using the env var directly:
     Write-Host "This does not work: $env:MYSECRET"
   
-    # Using the env var through the variables mapping wont work either:
-    Write-Host "Global does not work either: $env:GLOBAL_MYSECRET"
+    # Using the env var through the variables mapping will not work:
+    Write-Host "This does not work either: $env:GLOBAL_MYSECRET"
 
-    # Using the mapped env var:
+    # Using the global var mapped in the pipeline. It is not a secret var:
     Write-Host "This works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
     
     # Using the mapped env var:
     Write-Host "This works: $env:MY_MAPPED_ENV_VAR"    # Recommended
         
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    MY_MAPPED_ENV_VAR: $(mySecret) # right way to map to an env variable
 ```
 
 The output from the preceding script would look like this:
