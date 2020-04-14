@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 03/16/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -19,9 +19,6 @@ hide_comments: true
 | <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
 ****
-
-> [!Important]
-> In light of the COVID-19 global health pandemic, and in recognition of the critical role hosted services like Azure DevOps can play in key workloads for our customers, we are pausing our normal sprintly deployments to better focus on stability and reliability. Deployments will be limited for now to critical updates needed to fix bugs or address stability, reliability, or security issues. See the [Optimizing for stability during the global health pandemic blog post](https://devblogs.microsoft.com/devops/optimizing-for-stability-during-the-global-health-pandemic/) for more information.
 
 ## Features under development
 
@@ -103,6 +100,17 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="8"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td>
+        </tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
             <td>Pay for users once across multiple organizations</td><td>General</td><td>N/A</td>
