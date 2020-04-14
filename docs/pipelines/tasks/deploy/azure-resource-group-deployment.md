@@ -70,20 +70,20 @@ Timeout issues could be coming from two places:
 1. Azure Pipelines Agent
 2. Portal Deployment
 
+You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the console. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
+
 ### Azure Pipelines Agent
 
 If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this doc for more details: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
 
 ### Portal Deployment
 
-You can identify if the timeout is from portal, by following the portal deployment link that is in the console.
-
 Check out this doc on how to identify if the error came from Azure Portal: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal
 
 In case of portal deployment, try setting "timeoutInMinutes" in the ARM template to "0". If not specified, the value assumed is 60 minutes. 0 makes sure the deployment will run for as long as it can to succeed.
 
 
-This could also be happening because of transient issues that is happening in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service
+This could also be happening because of transient issues in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service
 
 
 ## Open source
