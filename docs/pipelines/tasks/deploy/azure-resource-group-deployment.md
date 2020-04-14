@@ -53,6 +53,39 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 |`deploymentOutputs`<br/>Deployment outputs|(Optional) Provide a name for the variable for the output variable which will contain the outputs section of the current deployment object in string format. You can use the **ConvertFrom-Json** PowerShell cmdlet to parse the JSON object and access the individual output values.|
 |`addSpnToEnvironment`<br/>Access service principal details in override parameters| Adds service principal ID and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: **$servicePrincipalId** and **$servicePrincipalKey** in your override parameters like **-key $servicePrincipalKey**|
 
+## FAQs
+
+## Error: Internal Server Error
+
+These issues are mostly transient in nature. There are multiple reasons why it could be happening:
+1. One of the Azure service you're trying to deploy is down in that region
+2. Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
+
+However, we've seen some instances where this is due to an error in the ARM template, such as:
+* Azure service you're trying to deploy doesn't support the region you've chosen for the resource.
+
+## Error: Timeout
+
+Timeout issues could be coming from two places:
+1. Azure Pipelines Agent
+2. Portal Deployment
+
+### Azure Pipelines Agent
+
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this doc for more details: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
+
+### Portal Deployment
+
+You can identify if the timeout is from portal, by following the portal deployment link that is in the console.
+
+Check out this doc on how to identify if the error came from Azure Portal: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal
+
+In case of portal deployment, try setting "timeoutInMinutes" in the ARM template to "0". If not specified, the value assumed is 60 minutes. 0 makes sure the deployment will run for as long as it can to succeed.
+
+
+This could also be happening because of transient issues that is happening in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service
+
+
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
