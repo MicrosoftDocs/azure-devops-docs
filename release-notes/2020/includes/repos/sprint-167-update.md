@@ -14,7 +14,7 @@ We have added more filters to the pull request details page so you review them f
 - File types: Show all files (default), and Show only the files that have been commented on.
 
 > [!div class="mx-imgBorder"]
-> ![img](../../media/167_Repos_1_0.png)
+> ![img](../../media/167-repos-1-0.png)
 
 > [!div class="mx-imgBorder"]
-> ![img](../../media/167_Repos_1_1.png)
+> ![img](../../media/167-repos-1-1.png)
