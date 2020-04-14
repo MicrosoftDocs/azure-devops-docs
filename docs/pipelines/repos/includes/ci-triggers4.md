@@ -19,7 +19,7 @@ Select this check box if you have many team members uploading changes often and 
 
 You can specify the branches where you want to trigger builds. If you want to use wildcard characters, then type the branch specification (for example, `features/modules/*`) and then press Enter.
 
-#### Path filters
+### Path filters
 
 If your Git repo is in Azure Repos or TFS, you can also specify path filters to reduce the set of files that you want to trigger a build.
 
