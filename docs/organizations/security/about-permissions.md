@@ -176,9 +176,9 @@ You use the [web portal administration context](../../organizations/security/add
 
 ::: moniker range="azure-devops"
 
-|   Permission level   |  Web portal security pages | az devops security CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
-|-------------------|:-----------------------------------:|:----------------:|:----------------:|  
-| [Add and manage security groups](add-manage-security-groups.md)    | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
+|   Permission level   |  Web portal security pages | az devops CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
+|-------------------|:-----------------------------------:|:----------------:|:----------------:| | [Add users to an organization](../accounts/add-organization-users.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
+| [Add and manage security groups](add-manage-security-groups.md)  | ![check mark](../../media/check.png) |  ![check mark](../../media/check.png) |  |    
 | [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md) |  |  ![check mark](../../media/check.png) |  |  
 | [Organization-level](permissions.md#collection)  | ![check mark](../../media/check.png) |   |  |  
 | [Project and test level](permissions.md#project_test) | ![check mark](../../media/check.png) |   |  |  
@@ -260,7 +260,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops"  
 - [Permissions and groups reference](permissions.md)  
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
+- [Add users to an organization](../accounts/add-team-members.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 - [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   
@@ -270,7 +270,6 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="< azure-devops"  
 - [Permissions and groups reference](permissions.md)  
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
