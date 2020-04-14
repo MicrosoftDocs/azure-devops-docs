@@ -1,4 +1,4 @@
-﻿---
+---
 title: Work item fields, attributes and how to list them
 titleSuffix: Azure Boards
 description: Understand how fields are defined and modified 
@@ -81,6 +81,7 @@ You can view the data type of fields defined for your organization by [opening t
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). 
 
 > [!div class="mx-imgBorder"]  
@@ -91,6 +92,7 @@ If the On-premises XML process model is used, you can look up the data type thro
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018" 
+
 You can look up the data type through the [Work item field index](guidance/work-item-field.md). Or, you can open the Work Item Field Explorer to review the fields defined and their attribute assignments, or use the **witadmin listfields** command to list the field attributes.  For details, see [Work Item Field Explorer](#wi-explorer) and [List field attributes](#list-attributes) later in this article.
 
 ::: moniker-end
@@ -341,7 +343,7 @@ The following table describes each attribute.
 
 <a id="reportable-attributes" />
   
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops"  
 
 ## Reportable attributes
 
@@ -537,7 +539,7 @@ To access the Work Item Field Explorer, you must install the Process Editor (req
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2015"
+::: moniker range="<= tfs-2015"  
 
 To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio) by installing the [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
@@ -557,9 +559,9 @@ You can change how work tracking fields map to fields in Project, and you can ch
 
 To add fields to a process, you add them to one or more work item types. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019"  
 
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
@@ -567,39 +569,46 @@ You can add or modify the fields contained within a WIT or add a custom WIT. To 
 
 You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md).  
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="< azure-devops-2019"
+::: moniker range="< azure-devops-2019"  
 
 To add fields to a project, you add them to one or more work item types. See [Add or modify a field to track work](../../reference/add-modify-field.md).  
 
 You can change the field name, the index, and the report attributes for any field except system fields by using the **witadmin** command-line tool. For more information, see [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md).  
+
 ::: moniker-end  
 
 
 ## Related articles  
 
 ::: moniker range="azure-devops"  
+
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
 - [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md)
+
 ::: moniker-end  
 
 
 ::: moniker range="azure-devops-2019"  
+
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
 - [Choose the process model for your project collection](/azure/devops/reference/customize-work?view=azure-devops-2019#choose-process-model)
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
+
 ::: moniker-end  
 
 
 ::: moniker range="<= tfs-2018"  
+
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 
 - [Add or modify a field to track work](../../reference/add-modify-field.md)
 - [Manage work item fields-witadmin](../../reference/witadmin/manage-work-item-fields.md)
+
 ::: moniker-end  
 
 
