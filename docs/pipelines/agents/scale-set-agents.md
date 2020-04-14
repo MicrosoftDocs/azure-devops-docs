@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/07/2020
+ms.date: 04/14/2020
 monikerRange: azure-devops
 ---
 
@@ -181,6 +181,9 @@ During the preview, scale set agent pools have some limitations that you need to
 <a name="q-a"></a>
 ## Q & A
 
+* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
+* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+
 ### How do I create a scale set with custom software and custom disk size?
 
 These are steps to create a scale set with a custom OS disk size and custom software.
@@ -270,6 +273,6 @@ If you just want to create a scaleset with the default 128GiB OS disk using a pu
 
 You are now ready to create an agent pool using this scale set.
 
-### Where can I find the inages used for Microsoft-hosted pools?
+### Where can I find the images used for Microsoft-hosted agents?
 
 Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
