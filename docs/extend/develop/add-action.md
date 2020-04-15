@@ -52,7 +52,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | text               | Text that appears on the menu item.                                                                         |                  
 | title              | Tooltip text that appears on the menu item.                                                                 |                   
 | icon               | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri.                     |                   
-| groupId            | Determines where this menu item appears in relation to the others. [How to discover menu group identifiers](../test/discover-menu-group-ids.md). |
+| groupId            | Determines where this menu item appears in relation to the others. |
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 

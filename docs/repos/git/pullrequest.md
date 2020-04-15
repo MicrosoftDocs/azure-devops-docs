@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Reviewing and Publishing Code using Git Pull Requests
 ms.assetid: 731eeda5-133f-46d5-ab60-b27a5280210d
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018

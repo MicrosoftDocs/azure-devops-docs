@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
  
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to run Grunt tasks using the JavaScript Task Runner.
+Use this task to run Grunt tasks using the JavaScript Task Runner.
 
 ## Demands
 

@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a Python script.
+Use this task to run a Python script.
 
 ::: moniker range="> tfs-2018"
 

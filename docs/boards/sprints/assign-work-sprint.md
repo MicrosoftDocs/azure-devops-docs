@@ -66,13 +66,14 @@ some or all of the items based on these estimates.
 
 ## Open your team's product backlog
 
-From your web browser, open your product backlog. 
-
 > [!NOTE]  
 > Your sprint backlogs are one of three classes of backlogs available to you. For an overview of the features supported on each backlog and the two types of boards, see [Backlogs, boards, and plans](../backlogs/backlogs-boards-plans.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json). 
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
+::: moniker range="azure-devops"  
+
+From your web browser, open your product backlog. 
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -97,9 +98,9 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
-::: moniker-end
+::: moniker-end  
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019"  
 
 1. From your web browser, open your product backlog. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
@@ -141,7 +142,7 @@ From your web browser, open your product backlog.
 
 1. (Optional) To choose which columns should display and in what order, choose **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md).
 
-::: moniker-end
+::: moniker-end  
 
 
 <a id="drag-drop" />

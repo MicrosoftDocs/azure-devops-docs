@@ -20,7 +20,7 @@ You'll need:
 
 * A build pipeline builds multiple branches and publishes an artifact
 
-  - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git.md)
+  - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
  
 * Two separate targets where you will deploy the app. These could be virtual machines,
   web servers, on-premises physical deployment groups, or other types of deployment target.

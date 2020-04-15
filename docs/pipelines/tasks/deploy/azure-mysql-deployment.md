@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run your scripts and make changes to your Azure DB for Mysql. Note that this is an early preview version.
+Use this task to run your scripts and make changes to your Azure DB for Mysql. Note that this is an early preview version.
 
 ::: moniker range="> tfs-2018"
 

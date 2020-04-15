@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use Source Control Explorer to manage files under version control
 ms.assetid: 2781688e-ac66-4ea5-acd3-f045ba757f13
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 12/05/2016

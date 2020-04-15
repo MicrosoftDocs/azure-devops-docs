@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to select a version of Ruby to run on an agent, and optionally add it to PATH.
+Use this task to select a version of Ruby to run on an agent, and optionally add it to PATH.
 
 ## Demands
 

@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 03/16/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -48,7 +48,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1505234" data-raw-source="[Runtime parameters and pipeline variables](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1505234)">Runtime parameters and pipeline variables</a></td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174" data-raw-source="[Elastic self-hosted agent pools](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174)">Elastic self-hosted agent pools</a></td><td>Pipelines</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1512182" data-raw-source="[Enhanced pipeline duration report](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1512182)">Enhanced pipeline duration report</a></td><td>Reporting</td><td>TBD</td></tr>
-        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/16380044" data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>Reporting</td><td>TBD</td></tr>
+        <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004" data-raw-source="[Copy Dashboard](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1638004)">Copy Dashboard</a></td><td>Reporting</td><td>TBD</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1649330" data-raw-source="[Close the feature gap in build expiration for manually triggered build policy in PR](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1649330)">Close the feature gap in build expiration for manually triggered build policy in PR</a></td><td>Repos</td><td>2020</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614171" data-raw-source="[Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614171)">Upgrade Pull Request details pages to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>2020</td></tr>
         <tr><td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614172" data-raw-source="[Upgrade Commit details page to a more modern, fast, mobile-friendly UI](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1614172)">Upgrade Commit details page to a more modern, fast, mobile-friendly UI</a></td><td>Repos</td><td>2020</td></tr>
@@ -100,6 +100,17 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td rowspan="8"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td>
+        </tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
             <td>Pay for users once across multiple organizations</td><td>General</td><td>N/A</td>

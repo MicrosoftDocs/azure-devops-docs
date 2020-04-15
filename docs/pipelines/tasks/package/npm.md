@@ -14,7 +14,10 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to install and publish npm packages.
+Use this task to install and publish npm packages.
+
+> [!NOTE]
+> Moving forward, the [npm Authenticate](npm-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
 
 ::: moniker range="<= tfs-2018"
 

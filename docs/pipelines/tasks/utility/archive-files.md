@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to create an archive file from a source folder.
+Use this task to create an archive file from a source folder.
 A range of standard archive formats are supported including .zip, .jar, .war, .ear, .tar, .7z, and more.
 
 ## Demands
