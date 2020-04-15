@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/14/2020
+ms.date: 04/15/2020
 monikerRange: azure-devops
 ---
 
@@ -188,7 +188,7 @@ During the preview, scale set agent pools have some limitations that you need to
 
 These are steps to create a scale set with a custom OS disk size and custom software.
 
-If you just want to create a scaleset with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc) to create the scaleset.  Otherwise follow these steps to customize your VM image.
+If you just want to create a scale set with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
 
 1.  Create a VM with capacity for 200GiB OS drive starting with your base image.
 
@@ -217,7 +217,8 @@ If you just want to create a scaleset with the default 128GiB OS disk using a pu
         Convert to a managed disk
         ```azurecli
         az vm convert --resource-group <myResourceGroup> --name <MyVM>
-    
+        ```
+
         Restart the VM
         ```azurecli
         az vm start --resource-group <myResourceGroup> --name <MyVM>
@@ -263,13 +264,13 @@ If you just want to create a scaleset with the default 128GiB OS disk using a pu
     az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>
     ```
 
-6. Create the scaleset based on the custom VM image
+6. Create the scale set based on the custom VM image
 
     ```azurecli
     az vmss create --resource-group <myResourceGroup> --name <myScaleSet> --image <MyImage> --admin-username <myUsername> --admin-password <myPassword> --instance-count 2 --disable-overprovision --upgrade-policy-mode manual --load-balancer '""'
     ```
      
-7. Verify that both VMs created in the scaleset come online, have different names, and reach the Succeeded state
+7. Verify that both VMs created in the scale set come online, have different names, and reach the Succeeded state
 
 You are now ready to create an agent pool using this scale set.
 
