@@ -100,9 +100,9 @@ The project portal is a site associated with a team project for the purposes of 
   
    4. If you haven't installed a version of Visual Studio, [install one of them now](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs). You can download Team Explorer for free. Team Explorer must be installed on the same machine where you run the **tfpt** command line tool.  
   
-   5. If you aren't an administrator for the team project, [get added now](../../organizations/security/set-project-collection-level-permissions.md).  
+   5. If you aren't an administrator for the team project, [get added now](../organizations/security/set-project-collection-level-permissions.md).  
   
-   6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](../../organizations/security/set-sharepoint-permissions.md).  
+   6. If you haven't been granted Full Control for the SharePoint site, [get that permission now](../organizations/security/set-sharepoint-permissions.md).  
   
 3. Open a Command Prompt in administrative mode and change to the directory where you installed the power tools.  
   
