@@ -7,17 +7,22 @@ ms.assetid: 644ee4b7-3653-4943-9809-3d14d4d79c48
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 04/15/2020
 ---
 
 # Configure or redirect process guidance  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
 
 Your team can use process guidance to capture how they coordinate work on a team project, how to use work item types (WITs), and how to work with reports throughout the project life cycle. For generic guidance, see [Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), and [CMMI](../boards/work-items/guidance/cmmi-process.md) process template artifacts. You can customize your own process guidance and redirect the F1 help links from select artifacts to point to your custom guidance.  
-  
- If your team project was created using the Basic configuration or is hosted on Azure DevOps Services, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
+
+> [!IMPORTANT]  
+> Configuring the project portal and process guidance features have been deprecated. You can only set them from Visual Studio 2017 or earlier versions and when connected to TFS 2017 or earlier versions. SharePoint integration with Azure DevOps (formerly named Team Foundation Server) was deprecated with the release of TFS 2018. 
+> 
+> For TFS 2018 and later versions, you can use the built-in wiki feature to share information, guidance, and documents. To learn more, see [About Wikis, READMEs, and Markdown](./wiki/about-readme-wiki.md). 
+
+If your team project was created using the Basic configuration or is hosted on Azure DevOps Services, neither your project portal nor process guidance is enabled. This means that the links that redirect F1 help within a work item form aren't available.  
   
  To configure a project portal, see [Configure or add a project portal](configure-or-add-a-project-portal.md). If you want to configure process guidance, choose from one of the following options based on your deployment configuration and team requirements:  
   
@@ -26,10 +31,9 @@ Your team can use process guidance to capture how they coordinate work on a team
   
 -   [Specify a website that hosts your custom process guidance](#simple).  
   
-     Choose this option if you want to use a website that doesn't require SharePoint integration or your team project is hosted on Azure DevOps Services. Note that with this option, F1 help links within work item forms will not be redirected to your custom process guidance.  
+     Choose this option if you want to use a website that doesn't require SharePoint integration. Note that with this option, F1 help links within work item forms will not be redirected to your custom process guidance.  
   
 -   [Specify a SharePoint document library that contains your process guidance](#sp).  
-  
      Choose this option if you have already configured TFS to integrate with a SharePoint Web application, and you want F1 help links within work item forms to open to process guidance content. Also, choose this option when you want to share process guidance across several team projects within an organization.  
   
 -   [Upload process guidance support files from a process template](#upload)  
@@ -39,7 +43,11 @@ Your team can use process guidance to capture how they coordinate work on a team
 -   [Modify support files that redirect process guidance to your custom guidance](#redirect)  
   
      Choose this option when you have a SharePoint site configured as your project portal and you want to modify the support files to redirect process guidance links to your custom process guidance.  
-  
+
+## Prerequisites
+
+- To configure process guidance, you must be a member of the Project Collection Administrators group. 
+
 <a name="guid_enabled"></a> 
 
 ## Determine if process guidance is enabled for your team project portal  
