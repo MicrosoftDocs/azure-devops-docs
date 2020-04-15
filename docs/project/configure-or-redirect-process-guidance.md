@@ -178,6 +178,7 @@ Some process guidance links will work only if process guidance has been enabled 
 <a name="access_pg"></a> 
 
 ###  How do I access process guidance from work items or reports?  
+
  **A: For work items**: From Team Explorer, press F1 or choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon from an open work item.  
   
  The ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon appears only on the work item forms opened from Team Explorer and only when your team project has process guidance enabled and configured.  
@@ -195,3 +196,9 @@ Some process guidance links will work only if process guidance has been enabled 
  **A:** Yes. To specify text or a hyperlink within a work item form, see [LabelText and Text](../reference/xml/labeltext-and-text-xml-elements-reference.md).  
   
  To embed a webpage or html content within a work item form, see [WebpageControlOptions](../reference/xml/webpagecontroloptions-xml-elements-reference.md).
+
+## Related articles
+
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)

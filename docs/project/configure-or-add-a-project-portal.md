@@ -164,7 +164,7 @@ Configure this option when you aren't using SharePoint Products.
   
     ![Show Project Portal link on Documents page](media/alm_pg_showprojectportal.png "ALM_PG_ShowProjectPortal")  
   
-8. From your project portal, [add team member accounts to the Contributors group](/azure/devops/organizations/security/set-sharepoint-permissions) for the SharePoint site.  
+8. From your project portal, [add team member accounts to the Contributors group](../organizations/security/set-sharepoint-permissions.md) for the SharePoint site.  
   
 ## Related notes 
 
@@ -172,3 +172,12 @@ The artifacts you'll have access to depend on the process template created with 
 
 ::: moniker-end
 
+::: moniker range="> tfs-2017"
+
+## Related articles
+
+- [Choose a process](../boards/work-items/guidance/choose-process.md)
+- [About SharePoint integration](../report/sharepoint-dashboards/about-sharepoint-integration.md)
+- [Discontinue SharePoint integration: TFS 2017 and earlier versions](../report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md)
+
+::: moniker-end
