@@ -2,7 +2,7 @@
 title: Define variables
 ms.custom: seodec18
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.date: 02/27/2020
 
@@ -13,33 +13,50 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
-Variables give you a convenient way to get key bits of data into various parts of the pipeline.
+Variables give you a convenient way to get key bits of data into various parts of the pipeline. The most common use of variables is to define a value that you can then use in your pipeline. All variables are stored as strings and are mutable. The value of a variable can change from run to run or job to job of your pipeline.
 
-As the name suggests, variables are mutable. The value of a variable might change from run to run or job to job of your pipeline.
-Almost any place where a pipeline requires a string, you can use a variable instead of hard-coding a value. Variables are always stored as strings.
+When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
 
 ::: moniker range="azure-devops"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
 ::: moniker-end
 
+## User-defined variables
 
-The system replaces the variable with its current value when you run the pipeline. 
+When you define a variable, you can use [different syntaxes (macro, template expression, or runtime)](#understand-variable-syntax) and what syntax you use will determine where in the pipeline your variable will render. 
 
-The system sets some variables automatically.
-As a pipeline author or end user, you can't change the value of such variables.
-If you use classic build pipelines or use YAML to author your pipeline, see [build variables](../build/variables.md) for a comprehensive list of system variables.
-If you use classic release pipelines, see [release variables](../release/variables.md).
+In YAML pipelines, you can set variables at the root, stage, and job level. You can also specify variables outside of a YAML pipeline in the UI. When you set a variable in the UI, that variable can be encrypted and set as secret. <a href="#secret-variables">Secret variables</a> are not automatically decrypted in YAML pipelines and need to be passed to your YAML file with `env:` or a variable at the root level.
 
-This article covers user-defined variables. The names of these variables consist of letters, numbers, `.`, and `_` characters.
+User-defined variables can be [set as read-only](../security/inputs.md). 
 
-Don't use variable prefixes that are reserved by the system.
-These are: `endpoint`, `input`, `secret`, and `securefile`.
-Any variable that begins with one of these strings (regardless of capitalization) isn't available to your tasks and scripts.
+You can [use a variable group](../library/variable-groups.md) to make variables available across multiple pipelines.  
 
+You can use [templates](templates.md) to define variables that are used in multiple pipelines in one file. 
+
+## System variables
+
+In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you are using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
+If you are using classic release pipelines, see [release variables](../release/variables.md).
+
+System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable. 
+
+System variables are read-only. 
+
+## Environment variables
+
+Environment variables are specific to the operating system you are using. They are injected into a pipeline in platform-specific ways. The format corresponds to how environment variables get formatted for your specific scripting platform. 
+
+ On UNIX systems (MacOS and Linux), environment variables have the format `$NAME`. On Windows, the format is `%NAME%` for batch and `$env:NAME` in PowerShell.
+
+System and user-defined variables also get injected as environment variables for your platform.  When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable name `any.variable` becomes the variable name `$ANY_VARIABLE`.
+
+## Variable characters
+
+User-defined variables can consist of letters, numbers, `.`, and `_` characters. Don't use variable prefixes that are reserved by the system. These are: `endpoint`, `input`, `secret`, and `securefile`. Any variable that begins with one of these strings (regardless of capitalization) will not be available to your tasks and scripts.
 
 ## Understand variable syntax
 
-Azure Pipelines supports three different ways to dereference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
+Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
 Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
 
@@ -53,14 +70,20 @@ You can use runtime expression syntax for variables that are expanded at runtime
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
 |runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
-Variables are also injected into the environment. This includes both variables defined at the step level, and variables defined at the job or stage level, with the most locally scoped variable winning. When variables are turned into environment variables, variable names become uppercase, and periods turn into underscores. For example, the variable `any.variable` becomes `$ANY_VARIABLE`.
+### What syntax should I use?
+
+If you are defining a variable for a template or that has a static value, use a template expression.
+
+If you are setting a variable that will be populated at runtime, use a macro expression. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have a conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
 
 ## Set variables in pipeline
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. Here's an example that shows how to set two variables, `configuration` and `platform`, and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables can't be used to define a `repository` in a YAML statement. 
+In the most common case, you set the variables and use them within the YAML file. This allows you to track changes to the variable in your version control system. You can also define variables in the pipeline settings UI (see the Classic tab) and reference them in your YAML. 
+
+Here's an example that shows how to set two variables, `configuration` and `platform`, and use them later in steps. To use a variable in a YAML statement, wrap it in `$()`. Variables can't be used to define a `repository` in a YAML statement. 
 
 ```yaml
 # Set variables once
@@ -309,14 +332,20 @@ Deleted variable 'Configuration' successfully.
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-Don't set secret variables in your YAML file. Instead, you should set them in the pipeline editor, by using the web interface. These variables are scoped to the pipeline in which you set them.
+Don't set secret variables in your YAML file. Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
+
+Instead, you should set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline in which you set them. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
 
 [!INCLUDE [temp](includes/set-secrets.md)]
 
-The following example shows how to use a secret variable called `mySecret` from a script.
+The following example shows how to use a secret variable called `mySecret` in a PowerShell script.
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
+variables:
+ GLOBAL_MYSECRET: $(mySecret) # this will not work because the variable needs to be mapped as env
+ GLOBAL_MY_MAPPED_ENV_VAR: foo # this will not work because the variable needs to be mapped as env
+ 
 steps:
 
 - powershell: |
@@ -325,11 +354,18 @@ steps:
 
     # Using the env var directly:
     Write-Host "This does not work: $env:MYSECRET"
+  
+    # Using the env var through the variables mapping will not work:
+    Write-Host "This does not work either: $env:GLOBAL_MYSECRET"
 
+    # Using the global var mapped in the pipeline. It is not a secret var:
+    Write-Host "This works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
+    
     # Using the mapped env var:
     Write-Host "This works: $env:MY_MAPPED_ENV_VAR"    # Recommended
+        
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    MY_MAPPED_ENV_VAR: $(mySecret) # right way to map to an env variable
 ```
 
 The output from the preceding script would look like this:
@@ -337,10 +373,32 @@ The output from the preceding script would look like this:
 ```text
 This works: ***
 This does not work:
+Global does not work either:
+This works: someValue
 This works: ***
 ```
+This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
 
-Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
+```yaml
+variables:
+  VMS_USER: $(vmsUser)
+  VMS_PASS: $(vmsAdminPass)
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: 'my/path'
+    azureSubscription: 'my-subscription'
+    Destination: 'AzureVMs'
+    storage: 'my-storage'
+    resourceGroup: 'my-rg'
+    vmsAdminUserName: $(VMS_USER)
+    vmsAdminPassword: $(VMS_PASS)
+```
+
 
 ### Reference secret variables in variable groups
 
@@ -769,8 +827,11 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 
 You can choose which variables are allowed to be set at queue time, and which are fixed by the pipeline author.
 If a variable appears in the `variables` block of a YAML file, it's fixed and can't be overridden at queue time.
-To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job.
-You can set a default value in the editor, and that value can be overridden by the person queuing the pipeline.
+
+To allow a variable to be set at queue time, make sure it doesn't appear in the `variables` block of a pipeline or job. 
+
+You can also set a default value in the editor, and that value can be overridden by the person queuing the pipeline. To do this, select the variable in the **Variables** tab of the pipeline, and check **Let users override this value when running this pipeline**.
+
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -823,6 +884,29 @@ stages:
       value: 'job yaml'
     steps:
     - bash: echo $(a)        # This will be 'job yaml'
+```
+When you set a variable with the same name in the same scope, the last set value will take precedence.
+
+```yaml
+stages:
+- stage: one
+  displayName: Stage One
+  variables: 
+    - name: a
+      value: alpha
+    - name: a
+      value: beta
+  jobs: 
+  - job: I
+    displayName: Job I
+    variables:
+      - name: b
+        value: uno
+      - name: b
+        value: dos
+    steps: 
+    - script: echo $(a) #outputs beta
+    - script: echo $(b) #outputs dos
 ```
 
 > [!NOTE]

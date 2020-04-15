@@ -17,7 +17,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to copy files to 
+Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
 
 ::: moniker range="<= tfs-2018"

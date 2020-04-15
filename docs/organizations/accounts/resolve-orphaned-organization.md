@@ -8,7 +8,7 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/18/2019
+ms.date: 04/08/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-An Azure DevOps orphaned organization occurs when the organization Owner and all Project Collection Administrators are inactive in Azure Active Directory (Azure AD) or have left the company. This causes the organization to be without an administrator and no way of transferring administrator rights to another user. 
+An orphaned organization occurs when the organization Owner and all Project Collection Administrators are inactive in Azure Active Directory (Azure AD) or have left the company. This scenario causes the organization to have no administrator and no way of transferring administrator rights to another user. 
 
 For organizations connected to Azure Active Directory (Azure AD), if your organization Owner and all other Project Collection Administrators are inactive in Azure AD, you can transfer ownership to another user.
 
@@ -51,7 +51,7 @@ When your Azure AD tenant hasn't assigned an Azure DevOps Administrator, complet
 
 Complete the following steps when your Azure DevOps Administrator in Azure AD is a member of the target Azure DevOps organization.
 
-1.    As the Azure DevOps Administrator, sign in to your organization (```https://dev.azure.com/{yourorganization}```) . 
+1.    As the Azure DevOps Administrator, sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
 
 2. Select **Organization Settings**, and then **Overview**.
 
@@ -72,7 +72,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 1.    Sign in to your organization (```https://dev.azure.com/{yourorganization}```) using the credentials granted to the Azure DevOps Administrator role in Azure AD. 
     An error page appears with a button for claiming ownership.
  
-    ![Azure AD Administrator not member of organization](media/change-organization-ownership/error-message-administrator-not-member-of-organization.png)
+      ![Azure AD Administrator not member of organization](media/change-organization-ownership/error-message-administrator-not-member-of-organization.png)
 
 2. Select **Claim Ownership**. Provide a short justification, and then select **Claim Ownership** once again. All Azure DevOps Administrators in your Azure AD receive a notification of the ownership transfer, including your provided justification.
 

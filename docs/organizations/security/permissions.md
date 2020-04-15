@@ -48,8 +48,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="set-git-tfvc-repository-permissions.md">TFVC</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Build and release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -101,8 +101,8 @@ To learn how to add users to a group or set a specific permission that you can m
 <li><a href="../../pipelines/policies/set-permissions.md">Build pipelines</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Release pipelines</a></li>
 <li><a href="../../pipelines/release/approvals/index.md">Approvals and approvers</a></li>
-<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>	
-<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>	
+<li><a href="../../pipelines/policies/set-permissions.md">Task groups</a></li>    
+<li><a href="../../pipelines/policies/set-permissions.md">Variable groups</a></li>    
 <li><a href="../../pipelines/policies/set-permissions.md">Role-based resources</a></li>
 </ul>
 </td>
@@ -1937,11 +1937,11 @@ The following permissions are defined in Build. All of these can be set at both 
         <td>Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. </td>
     </tr>
     <tr>
-	<a id="edit-build-pipeline-permission" />
+    <a id="edit-build-pipeline-permission" />
         <td id="edit-build-definition-permission">Edit build pipeline</br>Edit build definition</td>
         <td>
             <strong>Edit build pipeline</strong> Can save any changes to a build pipeline, including configuration variables, triggers, repositories, and retention policy. Available with Azure DevOps Services, Azure DevOps Server 2019 1.1, and later versions. Replaces Edit build definition. <br/>
-			 <strong>Edit build definition</strong> Can create and modify build definitions for this project.
+             <strong>Edit build definition</strong> Can create and modify build definitions for this project.
             <blockquote>
                 <p>
                     You turn Inheritance Off for a build definition

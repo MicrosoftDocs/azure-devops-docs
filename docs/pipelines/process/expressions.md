@@ -316,6 +316,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 You can use the following status check functions as expressions in conditions, but not in variable definitions.
 
 <h3 id="always">always</h3>
+
 * Always evaluates to <code>True</code> (even when canceled). Note: A critical failure may still prevent a task from running. For example, if getting sources failed.
 
 ### canceled

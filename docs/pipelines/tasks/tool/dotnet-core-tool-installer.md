@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to acquire a specific version of .NET Core from the Internet or the tools cache
+Use this task to acquire a specific version of .NET Core from the Internet or the tools cache
 and add it to the PATH. 
 
 You can also use this task to change the version of .NET Core used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).

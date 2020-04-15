@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 # Download Pipeline Artifacts task
 
-Use this task in a build or release pipeline to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
+Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 ::: moniker range="azure-devops"
 

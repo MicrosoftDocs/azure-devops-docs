@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to download artifacts produced by a Jenkins job.
+Use this task to download artifacts produced by a Jenkins job.
 
 ::: moniker range="<= tfs-2018"
 

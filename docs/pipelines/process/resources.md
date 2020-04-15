@@ -2,7 +2,7 @@
 title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 03/11/2020
 monikerRange: azure-devops
@@ -285,7 +285,7 @@ resources:
 
 ### Type
 
-Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
+Pipelines support the following values for the repository type: `git`, `github`, `githubenterprise`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: git`, the `name` value refers to another repository in the same project.
@@ -295,7 +295,11 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub repos require a [GitHub service connection](../library/service-endpoints.md) for authorization.
+  GitHub repos require a [GitHub service connection](../library/service-endpoints.md#sep-github) for authorization.
+
+- If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
+  An example is `name: Microsoft/vscode`.
+  GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#sep-githubent) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.

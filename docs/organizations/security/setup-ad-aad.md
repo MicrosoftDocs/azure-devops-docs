@@ -43,7 +43,7 @@ Use this topic to access articles that show you how to:
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 
-* [Access Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
+* [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
