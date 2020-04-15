@@ -339,11 +339,10 @@ The following table describes each attribute.
 2. The **isPicklist** and **isPicklistSuggested** attributes are only assigned to custom fields defined for an inherited process. The Inherited process model is only supported for Azure DevOps Services and Azure DevOps Server 2019. 
 3. All reporting attributes are valid only for on-premises deployments whose projects have been configured to support SQL Server Reporting and SQL Server Analysis Services. 
 
+::: moniker range="< azure-devops"
 
+<a id="reportable-attributes"> </a>
 
-<a id="reportable-attributes" />
-  
-::: moniker range="< azure-devops"  
 
 ## Reportable attributes
 
