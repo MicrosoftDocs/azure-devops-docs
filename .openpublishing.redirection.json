@@ -12543,6 +12543,21 @@
       "source_path": "docs/pipelines/agents/vmss.md",
       "redirect_url": "/azure/devops/pipelines/agents/scale-set-agents",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/configure-or-add-a-project-portal.md",
+      "redirect_url": "/azure/devops/project/configure-or-add-a-project-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/configure-or-redirect-process-guidance.md",
+      "redirect_url": "/azure/devops/project/configure-or-redirect-process-guidance",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/create-status-and-trend-excel-reports.md",
+      "redirect_url": "/azure/devops/report/create-status-and-trend-excel-reports",
+      "redirect_document_id": true
     }
   ]
 }

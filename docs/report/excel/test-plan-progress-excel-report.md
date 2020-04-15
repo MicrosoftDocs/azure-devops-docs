@@ -29,7 +29,7 @@ You can use the Test Plan Progress report to monitor test activities and report 
   
 ## Prerequisites  
   
--   You can view the Test Plan Progress from the Test or Quality dashboards. You can access these dashboards only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+-   You can view the Test Plan Progress from the Test or Quality dashboards. You can access these dashboards only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 -   To view the report, you must be assigned or belong to a group that has been assigned the **Read** permissions in SharePoint Products for the team project. See [Add users to team projects](../../organizations/security/add-users-team-project.md).  
   

@@ -34,7 +34,7 @@ Teams use project portals to share information and support how their team works.
    </tbody>
    </table> 
     
-    If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](configure-or-add-a-project-portal.md).  
+    If you don't see the documents icon, your team project is not configured with a SharePoint site. To learn how to configure a SharePoint site for your team project, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
   
 2. Show the project portal.  
   
@@ -68,25 +68,25 @@ Teams use project portals to share information and support how their team works.
   
  When you choose the ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") process guidance icon that appears in the work item forms in Team Explorer, a web browser opens and the page that's defined in the process guidance support file for the corresponding work item type is displayed.  If you have not configured your team project with a project portal, or you haven't uploaded the process guidance support files to the project portal, then this link will be inactive.  
   
- You can [redirect process guidance](configure-or-redirect-process-guidance.md) to your custom content.  
+ You can [redirect process guidance](../../project/configure-or-redirect-process-guidance.md) to your custom content.  
 
 
 <a name="addportal"></a> 
 
 ###  Q: How do I add a project portal to my team project? How do I enable process guidance?
 
-**A:** If you want to specify an existing website as your team project's portal or support process guidance, see [Configure a project portal](configure-or-add-a-project-portal.md).  
+**A:** If you want to specify an existing website as your team project's portal or support process guidance, see [Configure a project portal](../../project/configure-or-add-a-project-portal.md).  
   
 	> [!IMPORTANT]  
 	>  If you add another type of website, the links to open the project portal from the web portal and Team Explorer don't appear. Also, the **Documents** page doesn't appear in Team Explorer.  
   
-**A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](configure-or-add-a-project-portal.md).  
+**A:** If you have a SharePoint site already configured with Team Foundation Server Extensions for SharePoint, see [Configure a project portal](../../project/configure-or-add-a-project-portal.md).  
 
 If you need to install a SharePoint product first, see [Manually install SharePoint products for Team Foundation Server](/azure/devops/server/install/sharepoint/install-sharepoint).  
   
 ### Q: Can I customize the process guidance?  
 
- **A:** Yes. See [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  
+ **A:** Yes. See [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 ### Q: Do you want more information about SharePoint site features?  
 

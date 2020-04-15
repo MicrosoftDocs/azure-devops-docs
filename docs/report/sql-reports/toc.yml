@@ -3,7 +3,7 @@
 - name: Quickstarts
   items:
   - name: Create Excel reports from a work item query
-    href: ../excel/create-status-and-trend-excel-reports.md
+    href: ../create-status-and-trend-excel-reports.md
   - name: Grant permissions to view or create reports
     href: ../admin/grant-permissions-to-reports.md
 - name: Concepts
