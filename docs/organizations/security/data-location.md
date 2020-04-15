@@ -53,7 +53,7 @@ Except as noted below, Microsoft doesn't transfer customer data outside of your 
 If needed, you can transfer your data using preview, beta, or other pre-release services. These services typically store your data in the United States, but may store it globally.
 
 > [!NOTE]
-Microsoft will tranfer you data if it needs to do any of the following actions:
+Microsoft will transfer your data if it needs to do any of the following actions:
 >- provide customer support
 >- troubleshoot the service
 >- comply with legal requirements

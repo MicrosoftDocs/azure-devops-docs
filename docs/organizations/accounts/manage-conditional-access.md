@@ -8,7 +8,7 @@ ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 11/26/2019
+ms.date: 04/13/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -32,19 +32,19 @@ Azure DevOps enforces the policy for usage of personal access tokens (PATs), alt
 
    * For Web flows, CAP is honored 100%
    * For third-party client flow, like using a PAT with git.exe, we only support IP fencing policies - we don't support MFA policies. See the following examples:
-        * Policy 1 - Block all access from outside of IP range X, Y, and Z.
-            * If accessing Azure DevOps via the web, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
-            * If accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
-        * Policy 2 - Require MFA when outside of IP range X, Y, and Z.
-            * If accessing Azure DevOps via the web, the user is allowed from IP X,Y,and Z. The user is prompted for MFA if outside of that list.
-            * If accessing Azure DevOps via alt-auth, the user is allowed from IP X,Y, and Z. If outside of that list, the user is blocked.
+        * Policy 1 - Block all access from outside of IP range x, y, and z.
+            * If accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+            * If accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+        * Policy 2 - Require MFA when outside of IP range x, y, and z.
+            * If accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. The user is prompted for MFA if outside of that list.
+            * If accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
 
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
 
 For more information, see the REST API reference article, section [API & TFS version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
 
-## Enable Conditional Access for Azure DevOps
+## Enable Conditional Access policy
 
 To enforce Conditional Access on your organization, enable the policy in Azure DevOps. This policy is set to *off* by default and only applies to alternate credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.
 
@@ -74,7 +74,7 @@ To enforce Conditional Access on your organization, enable the policy in Azure D
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
-3. Select **Policy** and from the **dropdown** next to Enable Azure Active Directory Conditional Access Policy Validation select **On**.
+3. Select **Policies** and then from the dropdown next to Enable Azure Active Directory Conditional Access Policy Validation, select **On**.
 
    ![Select policy, and then turn On](media/shared/enable-conditional-access-policy.png)
 

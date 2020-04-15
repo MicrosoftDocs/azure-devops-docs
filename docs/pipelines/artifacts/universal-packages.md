@@ -6,7 +6,7 @@ description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 02/26/2020
+ms.date: 04/13/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -34,11 +34,20 @@ To publish a Universal Package to your feed, add the following snippet to your a
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
-    vstsFeedPublish: '<Feed name>'
+    vstsFeedPublish: '<projectName>/<feedName>'
     vstsFeedPackagePublish: '<Package name>'
     packagePublishDescription: '<Package description>'
 
 ```
+
+| Argument                                                          | Description                                                                       |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| publishDirectory                                                  | Location of the files to be published.                                            |
+| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
+| vstsFeedPackagePublish                                            | The package name.                                                                 |
+| packagePublishDescription                                         | Description of the content of the package.                                        |
+
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
 
@@ -80,12 +89,23 @@ In the **Universal Packages** snippet that you added previously, add the `versio
   inputs:
     command: publish
     publishDirectory: '$(Build.ArtifactStagingDirectory)'
-    vstsFeedPublish: '<Feed GUID>'
+    vstsFeedPublish: '<projectName>/<feedName>'
     vstsFeedPackagePublish: '<Package name>'
     versionOption: custom
-    versionPublish: <Package version>
+    versionPublish: '<Package version>'
     packagePublishDescription: '<Package description>'
 ```
+
+| Argument                                                          | Description                                                                       |
+|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| publishDirectory                                                  | Location of the files to be published.                                            |
+| vstsFeedPublish                                                   | The project and feed name to publish to.                                          |
+| vstsFeedPackagePublish                                            | The package name.                                                                 |
+| versionOption                                                     | Select a version increment strategy. Options: `major`, `minor`, `patch`, `custom` |
+| versionPublish                                                    | The custom package version                                                        |
+| packagePublishDescription                                         | Description of the content of the package.                                        |
+
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 # [Classic](#tab/classic)
 
@@ -106,35 +126,20 @@ steps:
   displayName: 'Universal download'
   inputs:
     command: download
-    vstsFeed: 'fabrikamFeed'
-    vstsFeedPackage: 'fabrikam-package'
+    vstsFeed: '<projectName>/<feedName>'
+    vstsFeedPackage: '<packageName>'
     vstsPackageVersion: 1.0.0
-    downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
+    downloadDirectory: '$(Build.SourcesDirectory)\someFolder'
 ```
-
-> [!NOTE]
-> When using Azure Artifacts with the Azure DevOps extension 0.14.0 and later, you must provide the project ID in the `vstsFeed` path. Use the following snippet for guidance: 
->
-> ```yaml
-> steps:
-> - task: UniversalPackages@0
->   displayName: 'Universal download'
->   inputs:
->     command: download
->     vstsFeed: '<insert project id>/fabrikamFeed'
->     vstsFeedPackage: 'fabrikam-package'
->     vstsPackageVersion: 1.0.0
->     downloadDirectory: '$(Build.SourcesDirectory)\anotherfolder'
-> ```
-
 
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
-| vstsFeed                       | Feed that the package will be downloaded from.     |
+| vstsFeed                       | The project and feed name that the package will be downloaded from.     |
 | vstsFeedPackage                | Name of the package to be downloaded.    |
 | vstsPackageVersion             | Version of the package to be downloaded. |
 | downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
+
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 To download a Universal Package from an external source, use the following snippet:
 
@@ -159,7 +164,8 @@ steps:
 | feedDownloadExternal           | Feed that the package will be downloaded from.        |
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
-| [!INCLUDE [temp](../tasks/includes/control-options-arguments.md)] | |
+
+> See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 #### [Classic](#tab/classic/)
 To download a Universal Package, add the **Universal Package** task and configure these options:
