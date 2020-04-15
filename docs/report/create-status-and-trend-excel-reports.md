@@ -13,7 +13,7 @@ ms.date: 11/19/2018
 
 # Create Excel reports from a work item query  
 
-[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
+[!INCLUDE [temp](./includes/tfs-report-platform-version.md)]
 
 One of the quickest ways to generate a custom report in Excel is to start with a flat list query. You can generate both status and trend charts. Also, once you've build a report, you can manipulate the data further by adding or filtering fields using the PivotTable. 
 
@@ -22,7 +22,7 @@ One of the quickest ways to generate a custom report in Excel is to start with a
 > [!NOTE]  
 >This feature is available with Azure DevOps Server 2019 configured with SQL Server Analysis Services. 
 > 
->If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
+>If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ::: moniker-end
 
@@ -31,7 +31,7 @@ One of the quickest ways to generate a custom report in Excel is to start with a
 > [!NOTE]  
 > This feature is available with an on-premises Team Foundation Server (TFS) configured with SQL Server Analysis Services. 
 > 
->If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
+>If you want to export work items to Excel, see [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
 
 ::: moniker-end
 
@@ -44,10 +44,10 @@ Here's an example of a status report generated from a flat-list query.
 #### Requirements 
 You can generate these reports only when you work with an on-premises TFS that has been configured with reporting services. 
 
-* Your deployment needs to be integrated with reporting services. If your on-premises TFS application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](../admin/add-reports-to-a-team-project.md). 
+* Your deployment needs to be integrated with reporting services. If your on-premises TFS application-tier server hasn't been configured to support reporting services, you can add that functionality by following the steps provided here: [Add reports to a team project](./admin/add-reports-to-a-team-project.md). 
 
 
-* You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](../admin/grant-permissions-to-reports.md).
+* You must be a member of the **TfsWarehouseDataReader** security roles. To get added, see [Grant permissions to view or create reports in TFS](./admin/grant-permissions-to-reports.md).
 
 * A version of Excel that is compatible with Office 2007, Office 2010, or Office 2013. If you don't have Excel, [install it now](https://office.microsoft.com/excel/). 
 
@@ -59,7 +59,7 @@ You can generate these reports only when you work with an on-premises TFS that h
  
 Use this procedure when you work from the Team Explorer plug-in for Visual Studio. 
 
-1. Create or open a [flat-list query](../../boards/queries/using-queries.md#flat-list-query) that contains the work items that you want to include in the report.
+1. Create or open a [flat-list query](../boards/queries/using-queries.md#flat-list-query) that contains the work items that you want to include in the report.
 
    Choose the fields you want to base reports on and include them in the filter criteria or as a column option. For non-reportable fields, see [Q: Which fields are non-reportable](#which_fields_are_non_reportable)?
 
@@ -90,21 +90,21 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 2. Connect to the team project and choose the query.   
 
-   If the server you need isn't listed, [add it now](../../organizations/projects/connect-to-projects.md).  
+   If the server you need isn't listed, [add it now](../organizations/projects/connect-to-projects.md).  
 
 3. Choose the reports to generate (steps 3 and 4 from the previous procedure).  
 
 ## Q & A
+
 <!-- BEGINSECTION class="md-qanda" -->
-
-
 
 ### Q: Can I export a query to Excel? 
 
-**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
+**A:** If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../boards/backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [Azure DevOps Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page.
 
 
 <a id="which_fields_are_non_reportable"></a>
+
 ### Q: Which fields can't I use to generate a report?
  
    **A:** Even though you can include non-reportable fields in your query field criteria or as a column option, they won't be used to generate a report. 
@@ -115,15 +115,11 @@ Use this procedure when you work from the web portal or the Team Explorer plug-i
 
 ### Q: Can I create reports if I'm working in Azure DevOps?
  
-   **A:** You can't create Excel reports; however, you can create [query-based charts](../charts.md) or use the [Analytics Service](../powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
+   **A:** You can't create Excel reports; however, you can create [query-based charts](./dashboards/charts.md) or use the [Analytics Service](./powerbi/what-is-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json). 
 
 ### Q: How do I refresh the report to show the most recent data?
 
-   **A:** At any time, you can choose Refresh on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](https://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
-
-### Q: Can I upload these reports to a project portal?
-
-   **A:** Yes. See [Manage documents and document libraries](../sharepoint-dashboards/manage-documents-and-document-libraries.md).
+   **A:** At any time, you can choose **Refresh** on the Data tab to update the data for the PivotTables in your workbook. To learn more, see [Update (refresh) data in a PivotTable](https://office.microsoft.com/excel-help/update-refresh-data-in-a-pivottable-HA102840043.aspx?CTT=1).
 
 <!-- ENDSECTION -->
 

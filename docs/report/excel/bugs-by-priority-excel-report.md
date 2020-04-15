@@ -18,7 +18,7 @@ ms.date: 12/30/2016
 The Bugs by Priority report in Office Excel shows the distribution of active Bugs, grouped by priority. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Bugs by Priority report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+>  You can view the Bugs by Priority report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 <a name="Data"></a> 
 

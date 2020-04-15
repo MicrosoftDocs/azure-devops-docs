@@ -17,7 +17,7 @@ ms.date: 12/30/2016
 You can use the Requirements Excel report to track the rate at which the team is implementing requirements. This report shows the distribution of active, resolved, and closed requirements over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Requirements report from the Burndown dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+>  You can view the Requirements report from the Burndown dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 ## Prerequisites  
   

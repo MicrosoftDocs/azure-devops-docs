@@ -16,7 +16,7 @@ ms.date: 12/30/2016
 You can use the Bug Trends report in Office Excel to track the rate at which the team is discovering, resolving, and closing Bugs. This report shows a moving average of Bugs that the team has discovered and resolved over time. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Bugs Trends report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+>  You can view the Bugs Trends report from the Bugs dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 
 <a name="Data"></a>  

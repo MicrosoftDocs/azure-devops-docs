@@ -23,7 +23,7 @@ Teams can quickly find important information about their team projects by using 
   
  **Requirements**  
   
--   To view dashboards, your team project must have a [project portal enabled and be associated with a SharePoint site](configure-or-add-a-project-portal.md). To view the project portal, you must also be a member of the **Visitors** or **Members** group for the portal.   
+-   To view dashboards, your team project must have a [project portal enabled and be associated with a SharePoint site](../../project/configure-or-add-a-project-portal.md). To view the project portal, you must also be a member of the **Visitors** or **Members** group for the portal.   
 -   PivotChart reports and Excel Web Access Web Parts that appear in dashboards require that your team project is provisioned with SQL Server Analysis Services.    
 -   To update or refresh [Excel reports](../excel/excel-reports.md) that appear in the dashboard, you must belong to a group that is granted access to the Single Sign-on enterprise application definition, or you must belong to the **TfsWarehouseDataReaders** security role in  SQL Server Analysis Services.    
 -   To view the dashboard, you must be assigned or belong to a group that has been assigned **Read** permissions in SharePoint Products for the team project. See [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md).  
