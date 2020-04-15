@@ -17,7 +17,7 @@ ms.date: 12/30/2016
 You can use the Burndown report to help determine how much progress the team has made in completing work for an iteration or other interval of time. The report shows how many hours of work the team has completed and how many hours remain. For information about how to access this report, see [Excel reports](excel-reports.md).  
   
 > [!NOTE]
->  You can view the Burndown report from the Progress dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../sharepoint-dashboards/configure-or-redirect-process-guidance.md).  
+>  You can view the Burndown report from the Progress dashboard. You can access this dashboard only if your team project portal has been enabled and is provisioned to use Microsoft Office SharePoint Server 2007. For more information, see [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 ## Prerequisites
   

@@ -39,6 +39,10 @@
     href: work-items/guidance/choose-process.md
   - name: Manage process templates
     href: work-items/guidance/manage-process-templates.md
+  - name: Configure or add a project portal
+    href: ../project/configure-or-add-a-project-portal.md 
+  - name: Configure or redirect process guidance
+    href: ../project/configure-or-redirect-process-guidance.md 
   - name: Agile process guidance
     href: work-items/guidance/agile-process.md
   - name: Agile workflow

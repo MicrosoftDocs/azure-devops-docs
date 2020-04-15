@@ -1,23 +1,23 @@
 ---
 title: Configure or add a project portal 
 titleSuffix: TFS
-description: How the SharePoint project portal provides access to shared documents, dashboards, and support files-Team Foundation Server  
+description: How to configure a project portal for Azure DevOps 
 ms.technology: devops-analytics
 ms.assetid: 63eae10a-b4d6-4ef5-93fd-270d20a8a2cf
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/09/2017
-monikerRange: '>= tfs-2013'
 ms.topic: tutorial
+monikerRange: '>= tfs-2013'
+ms.date: 04/15/2020
 ---
 
 # Configure or add a project portal
 
-[!INCLUDE [temp](../includes/tfs-sharepoint-version.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
+The project portal is a site associated with a team project for the purposes of sharing information. Project portals that are created when the team project is created are associated with a SharePoint site. These [portals](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) provide access to shared documents, dashboards, and support files that contain redirect links to MSDN process guidance topics.  
   
- If your team project was created using the Basic configuration or is hosted on Azure DevOps, you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](share-information-using-the-project-portal.md) independently of each other.  
+ If your team project was created using the Basic configuration or is hosted on Azure DevOps, you won't have access to a project portal. If you want to configure a portal, you can. Also, you can configure the portal and [process guidance](configure-or-redirect-process-guidance.md) independently of each other.  
   
  Choose one of the following options based on your deployment configuration and team requirements:  
   
@@ -36,11 +36,15 @@ The project portal is a site associated with a team project for the purposes of 
 -   [Add a SharePoint server and upload portal contents from the process template](#addsp)  
   
      Choose this option to prepare a SharePoint Web application, and add all portal artifacts and process guidance for a team project that was created using the Basic configuration.  
-  
-##  <a name="portal_enabled"></a> Determine if your team project portal is enabled  
+
+ <a name="portal_enabled"></a> 
+
+
+## Determine if your team project portal is enabled  
+
  If you cannot access Excel reports or dashboards, you might want to verify whether a portal has been enabled for your team project.  
   
-1.  From Visual Studio or Team Explorer, [connect to your team project](../../organizations/projects/connect-to-projects.md).  
+1.  From Visual Studio>Team Explorer, [connect to your team project](../organizations/projects/connect-to-projects.md).  
   
 2.  Open Portal Settings.  
   
@@ -49,8 +53,12 @@ The project portal is a site associated with a team project for the purposes of 
      If the **Enable team project portal** check box is not selected, your team project portal is not enabled.  
   
      ![Project Portal Settings dialog box](media/procguid_projectportalsettings.png "ProcGuid_ProjectPortalSettings")  
-  
-##  <a name="simple"></a> Configure a Web site for your portal  
+
+<a name="simple"></a> 
+
+
+##  Configure a Web site for your portal  
+
  Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
@@ -61,7 +69,10 @@ The project portal is a site associated with a team project for the purposes of 
   
      ![Specify URL  for project portal Web site](media/alm_pg_portalwebsite.png "ALM_PG_PortalWebSite")  
   
-##  <a name="validtfs"></a> Configure a prepared SharePoint site for your portal  
+<a name="validtfs"></a> 
+
+## Configure a prepared SharePoint site for your portal  
+
  Choose this option when you have a SharePoint Web application that has been integrated to work with TFS. To learn how to do this, see [SharePoint Products requirements for Team Foundation Server](/azure/devops/server/requirements#sharepoint).  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
@@ -73,8 +84,10 @@ The project portal is a site associated with a team project for the purposes of 
 4.  Enter the URL for the SharePoint site you've prepared for your team project portal.  
   
      ![Verify portal configuration](media/alm_pg_portalenabled.png "ALM_PG_PortalEnabled")  
-  
-##  <a name="addsp"></a> Add SharePoint site integration and upload portal contents from a process template  
+
+<a name="addsp"></a> 
+
+## Add SharePoint site integration and upload portal contents from a process template  
  Choose this option to gain access to Excel reports, dashboards, and process guidance support.  To add the portal to the team project, use the **tfpt** command line tool that TFS Power Tools provides.  
 
 1. [Add SharePoint products to your deployment](/azure/devops/server/admin/add-sharepoint-to-tfs).  
@@ -137,7 +150,6 @@ The project portal is a site associated with a team project for the purposes of 
 ## Related notes 
 
 The artifacts you'll have access to depend on the process template created with your team project. For an overview of the artifacts available with the default process templates, see [Choose a process](../..//boards/work-items/guidance/choose-process.md).  
-  
-- [SharePoint Online Tutorial](https://office.microsoft.com/sharepoint-server-help/sharepoint-pages-i-an-introduction-RZ101837217.aspx?CTT=1)
+
 
 

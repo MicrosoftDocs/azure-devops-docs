@@ -27,7 +27,7 @@ You can share documents and files that you want to make available to all team me
   
  **Requirements**  
   
--   Your team project has a project portal enabled and is associated with a SharePoint site. The **Documents** page appears in Team Explorer only when these conditions are met. See [Configure or redirect process guidance](configure-or-redirect-process-guidance.md).  
+-   Your team project has a project portal enabled and is associated with a SharePoint site. The **Documents** page appears in Team Explorer only when these conditions are met. See [Configure or redirect process guidance](../../project/configure-or-redirect-process-guidance.md).  
   
 -   You must be a member of the **Team Foundation Valid Users** security group. If the necessary security permissions are set explicitly, your **View project-level information** permission on the team project must be set to **Allow**.  
   
