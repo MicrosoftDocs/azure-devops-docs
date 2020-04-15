@@ -74,6 +74,17 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 
 ::: moniker-end
 
+> [!NOTE]
+> On macOS you need to clear the special attribute on the download archive in order to prevent Gatekeeper protection displaying for each assembly in the tar file when `./config.sh` is run. The following command clears the extended attribute on the file.
+
+```bash
+xattr -c vsts-agent-osx-x64-V.v.v.tar.gz  ## replace V.v.v with the version in the filename downloaded.
+
+# then unpack the gzip tar file normally:
+
+tar xvfz vsts-agent-osx-x64-V.v.v.tar.gz
+```
+
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
 
 ::: moniker range="azure-devops"
