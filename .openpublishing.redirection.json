@@ -12509,6 +12509,7 @@
       "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/xml-elements-added-to-wit-definition",
       "redirect_document_id": false
     },
+    {               
       "source_path": "docs/extend/concepts/extend-best-practices.md",
       "redirect_url": "/azure/devops/marketplace-extensibility",
       "redirect_document_id": false
