@@ -59,15 +59,15 @@ The project portal is a site associated with a team project for the purposes of 
 
 ##  Configure a Web site for your portal  
 
- Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
+Configure this option when you aren't using SharePoint Products or when your team project is hosted on Azure DevOps Services.  
   
 1.  If you aren't a member of the Team Project Administrators group, [get added now](/azure/devops/organizations/security/set-project-collection-level-permissions).  
   
 2.  Open Portal Settings.  
   
 3.  Select the **Enable team project portal** check box and then enter the URL for the Web site you've prepared for your team project portal.  
-  
-     ![Specify URL  for project portal Web site](media/alm_pg_portalwebsite.png "ALM_PG_PortalWebSite")  
+
+	![Specify URL for project portal Web site](media/alm_pg_portalwebsite.png)  
   
 <a name="validtfs"></a> 
 
