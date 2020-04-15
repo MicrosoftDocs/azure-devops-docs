@@ -29,12 +29,11 @@ To learn more about the new cross-platform build/release system, see [Team Found
 To create extensions for Azure DevOps, you need the following prerequisite software and tools:
 
 - An **organization** in Azure DevOps, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-- **A text editor**. For many of the tutorials, we used `Visual Studio Code`, which can be downloaded [here](https://code.visualstudio.com/)
+- **A text editor**. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
 - The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
 
   But note that the production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
-- **Visual Studio Code** for intellisense and debugging support, which can be downloaded [here](https://code.visualstudio.com/)
     <a name="cli" />
 - **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
