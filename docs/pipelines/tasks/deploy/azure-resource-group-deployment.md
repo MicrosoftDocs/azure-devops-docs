@@ -53,12 +53,12 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 |`deploymentOutputs`<br/>Deployment outputs|(Optional) Provide a name for the variable for the output variable which will contain the outputs section of the current deployment object in string format. You can use the **ConvertFrom-Json** PowerShell cmdlet to parse the JSON object and access the individual output values.|
 |`addSpnToEnvironment`<br/>Access service principal details in override parameters| Adds service principal ID and key of the Azure endpoint you chose to the script's execution environment. You can use these variables: **$servicePrincipalId** and **$servicePrincipalKey** in your override parameters like **-key $servicePrincipalKey**|
 
-## FAQs
+## Troubleshooting
 
 ## Error: Internal Server Error
 
 These issues are mostly transient in nature. There are multiple reasons why it could be happening:
-1. One of the Azure service you're trying to deploy is down in that region
+1. One of the Azure service you're trying to deploy is undergoing maintainance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
 2. Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
 
 However, we've seen some instances where this is due to an error in the ARM template, such as:
@@ -70,7 +70,7 @@ Timeout issues could be coming from two places:
 1. Azure Pipelines Agent
 2. Portal Deployment
 
-You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the console. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
+You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the task logs. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
 
 ### Azure Pipelines Agent
 
