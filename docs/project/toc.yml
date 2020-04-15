@@ -8,6 +8,12 @@
   href: ./search/toc.yml  
 - name: Feedback
   href: feedback/toc.yml 
+- name: Project portal & process guidance
+  items:
+  - name: Configure or add a project portal
+    href: configure-or-add-a-project-portal.md 
+  - name: Configure or redirect process guidance
+    href: configure-or-redirect-process-guidance.md 
 - name: REST API Reference
   items:
   - name: Projects

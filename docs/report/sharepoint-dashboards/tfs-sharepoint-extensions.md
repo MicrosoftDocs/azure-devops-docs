@@ -21,7 +21,7 @@ Without these extensions, you cannot add a SharePoint Web application to Team Fo
 Additionally, your users in your collection will not have a Documents folder available for their team projects in Team Explorer, and they will not be able to automatically use document libraries for process guidance for the project.
 
 > [!NOTE] 
-> You can manually configure individual team projects to use SharePoint site resources even if no SharePoint Web applications are configured for TFS. For more information, see [Configure or add a project portal](configure-or-add-a-project-portal.md).
+> You can manually configure individual team projects to use SharePoint site resources even if no SharePoint Web applications are configured for TFS. For more information, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).
 
 ## Activating dashboard features 
 

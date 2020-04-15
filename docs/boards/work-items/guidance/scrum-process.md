@@ -101,7 +101,7 @@ If you need to add reporting services or update reports to the latest versions, 
 
 You can access the [Release](../../../report/sharepoint-dashboards/release-scrum.md) dashboard displayed through the SharePoint project portal. This dashboard displays project data, support investigation tasks, and help teams to perform common tasks quickly. 
 
-To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).
+To access this dashboard, your project must have a [project portal configured and the project portal must point to a SharePoint site](../../../project/configure-or-add-a-project-portal.md).
 
 ::: moniker-end
 
