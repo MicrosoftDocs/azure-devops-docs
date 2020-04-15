@@ -4,7 +4,7 @@ description: Automatically build ASP.NET apps in Azure Pipelines, Azure DevOps, 
 ms.topic: quickstart
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
-ms.date: 01/24/2019
+ms.date: 04/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -28,9 +28,33 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 
 ::: moniker-end
 
-## Example
+## Create your first pipeline
 
-This example shows how to build an ASP.NET project. To start, [import](../../../repos/git/import-git-repository.md) (into Azure Repos or TFS) or fork (into GitHub) this repo using the following clone URL:
+::: moniker range="azure-devops"
+
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+::: moniker-end
+
+### Get the code
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Import this repo into your Git repo in Azure DevOps Server 2019:
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+Import this repo into your Git repo in TFS:
+
+::: moniker-end
 
 ```
 https://github.com/Microsoft/devops-project-samples.git
@@ -43,6 +67,17 @@ https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/we
 ```
 
 The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
+
+::: moniker range="azure-devops"
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](includes/create-project.md)]
+
+::: moniker-end
+
 
 ::: moniker range="< azure-devops"
 > [!NOTE]
@@ -71,7 +106,6 @@ You can also use a [self-hosted agent](../../agents/agents.md#install) to run yo
 Your builds run on a [self-hosted agent](../../agents/agents.md#install).
 Make sure that you have the necessary version of the Visual Studio installed on the agent.
 
-::: moniker-end
 
 ## Build multiple configurations
 
@@ -90,3 +124,4 @@ It is often required to build your app in multiple configurations. The following
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+::: moniker-end
