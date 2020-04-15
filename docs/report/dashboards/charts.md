@@ -344,7 +344,7 @@ Analytics is in preview and provides a number of [additional widgets based on An
 
 ### Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../excel/create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. 
+Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. 
 
 ::: moniker-end
 

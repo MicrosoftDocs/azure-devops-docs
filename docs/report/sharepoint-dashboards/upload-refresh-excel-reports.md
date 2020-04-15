@@ -27,5 +27,5 @@ After you create a report in Excel that shows data for your team project, you ca
  To maintain history for a report, you can save a copy of it every time that you refresh the data. If you need your reports to be refreshed automatically, you might consider using SQL Server Reporting Services to create your report instead. For more information, see [Choose the source of data and authoring tool](../choose-source-data-authoring-tool.md).  
   
 ## Related notes
--  [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)   
+-  [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)   
 -  [Perspectives and measure groups provided in the Analysis Services cube](../sql-reports/perspective-measure-groups-cube.md)
