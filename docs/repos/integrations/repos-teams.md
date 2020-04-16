@@ -197,7 +197,7 @@ This command will delete all the subscriptions related to any repository in the 
 
 ## Command reference
 
-The following table lists all the Azure repos commands you can use in your Teams channel.
+The following table lists all the `azure repos` commands you can use in your Teams channel.
 
 |Command	| Functionality |
 | -------------------- |----------------|
