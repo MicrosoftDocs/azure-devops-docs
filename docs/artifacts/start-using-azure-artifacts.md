@@ -69,9 +69,12 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 
 Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
-## View storage used
+> [!NOTE]
+> Organizations created before May 6th, 2019 will now receive free storage until July 6th, 2020. This date is pushed back from the previously communicated May 9th, 2020. 
 
-See and manage what your overall storage use is for Azure Artifacts.
+## View Billed Storage
+
+See your storage bill for Azure Artifacts.
  
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
@@ -83,9 +86,18 @@ See and manage what your overall storage use is for Azure Artifacts.
  
    ![Select Billing from Organization settings](../organizations/billing/media/shared/select-billing-organization-settings.png)
  
-4. Find Artifacts and review your current usage.
+4. Find Artifacts and review your current billed usage from Azure Artifacts.
 
    ![View storage for Azure Artifacts](media/azure-artifacts-view-storage-used.png)
+   
+## View Used Storage 
+
+Navigate and understand your used Azure Artifacts storage. 
+
+1. In the same ![gear icon](../media/icons/gear-icon.png) **Organization settings** tab, select **Storage** under the Artifacts tab. 
+
+2. Review a breakdown of the different types of storage your organization is currently using. See the FAQs below for information on what artifacts count towards your storage total. 
+
 
 ## Pay for Artifacts
 
@@ -104,13 +116,13 @@ Each organization gets Azure Artifacts for free, up until they hit 2 GB of stora
 
 ## FAQs
 
-### Q: Which artifacts count toward my storage total?
+### Q: Which artifacts count toward my total billed storage?
 
-A: Currently, the following get counted toward your storage total:
-* All npm, NuGet, Python, Maven, and universal packages (including those packages stored from upstream sources)
+A: Currently, the following get counted in your Azure Artifacts billed cost: 
+* All packages (npm, NuGet, Python, Maven, and universal packages), including those packages stored from upstream sources
 * All symbols
 
-You get Pipeline Artifacts, Build Artifacts, and Pipeline Caching with Azure Pipelines, and currently they don't count toward your storage total. 
+You are not billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. 
 
 ### Q: Why do I see 0 GB of storage, even though I'm storing artifacts?
 
@@ -118,9 +130,9 @@ A: Currently, the billing page only shows integers of storage (0 GB, 1 GB, 2 GB,
 
 ### Q: How can I control how long artifacts are stored?
 
-A: Azure Artifacts retention is controlled by feed retention policy settings. Symbols also contribute to Azure Artifacts storage usage. Symbols retention is controlled by build retention policy.
+A: Retention for stored packages can be set via the feed retention policy. See how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
 
-For more information on how to set the feed retention policy, see how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
+Symbols retention is set via pipeline and/or build retention. See more information [here](docs/pipelines/policies/retention.md). 
 
 ### Q: How long does it take for deleted artifacts to affect the amount of used storage?
 
