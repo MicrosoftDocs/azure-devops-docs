@@ -409,7 +409,7 @@
       href: release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Add a deployment group job to a release pipeline
       href: process/deployment-group-phases.md
-- name: Configure settings
+- name: Configure security & settings
   items: 
 #    - name: About security options and requirements (New)
 #      href: policies/permissions.md
