@@ -1,5 +1,5 @@
 ---
-title: About resources
+title: About pipeline resources
 ms.custom: seodec18
 description: What are resources?
 ms.topic: reference
