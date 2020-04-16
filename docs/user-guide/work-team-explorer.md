@@ -22,7 +22,7 @@ You use Team Explorer to coordinate your code efforts with other team members to
 > You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](../java/download-eclipse-plug-in.md)
+> - [Team Explorer Everywhere](https://docs.microsoft.com/en-us/previous-versions/azure/devops/java/download-eclipse-plug-in)
 > - [Azure DevOps Plugin for Android Studio](../java/download-android-studio-plug-in.md)  
 > - [Azure DevOps Plugin for IntelliJ](../java/download-intellij-plug-in.md)
 > - [Visual Studio Code](../java/vscode-extension.md)  
