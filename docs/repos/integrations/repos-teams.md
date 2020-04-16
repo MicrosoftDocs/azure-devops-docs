@@ -5,8 +5,8 @@ description: Monitor Azure Repos from Microsoft Teams
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: gopinach
-ms.author: karrg
-author: RGKarthik
+ms.author: divais
+author: Divya
 monikerRange: 'azure-devops'
 ms.date: 10/21/2019
 ---
@@ -53,7 +53,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 ## Connect the Azure Repos app to your repositories
 
-1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenants. 
+1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
    
    > [!div class="mx-imgBorder"]
    > ![Sign in prompt image ](./media/integrations-teams/SignIn.png)
