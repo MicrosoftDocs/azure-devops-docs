@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.topic: conceptual
-ms.date: 04/01/2020
+ms.date: 04/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -57,6 +57,20 @@ The example below demonstrates how that might look.
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
   </packageSources>
 </configuration>
+```
+
+> [!NOTE]
+> To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
+
+```YAML
+- task: DotNetCoreCLI@2
+  displayName: dotnet restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: '<projectName>/<feedName>'
+    includeNuGetOrg: true
 ```
 
 ## Restoring packages from feeds in a different organization
