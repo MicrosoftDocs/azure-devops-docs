@@ -21,7 +21,7 @@ You can specify [parameters in templates](templates.md) and in the pipeline. Par
 
 Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
 
-Parameters must contain a name and data type. 
+Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. 
 
 ## Use parameters in pipelines
 
