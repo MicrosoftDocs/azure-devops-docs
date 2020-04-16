@@ -32,7 +32,7 @@ Visit the App store in Microsoft Teams and search for the Azure Pipelines app. U
 
 ## Connect the Azure Pipelines app to your pipelines
 
-Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands.
+Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
 
 > [!div class="mx-imgBorder"]
 > ![Sign in prompt image ](media/integrations-teams/sign-in-teams.png)
@@ -129,7 +129,7 @@ The app supports all of the checks and approval scenarios present in the Azure P
 
 ## Search and share pipeline information using compose extension
 
-To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline id or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
+To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline ID or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
 > ![URL unfurling](./media/integrations-teams/compose-extension.png)
