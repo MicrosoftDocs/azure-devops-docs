@@ -32,7 +32,7 @@ Visit the App store in Microsoft Teams and search for the Azure Pipelines app. U
 
 ## Connect the Azure Pipelines app to your pipelines
 
-Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands. Use the **Sign in with different email** link if your Microsoft Teams and Azure Boards are in different tenants. 
+Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
 
 > [!div class="mx-imgBorder"]
 > ![Sign in prompt image ](media/integrations-teams/sign-in-teams.png)
