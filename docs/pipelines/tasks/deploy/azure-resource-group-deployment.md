@@ -85,6 +85,12 @@ In case of portal deployment, try setting "timeoutInMinutes" in the ARM template
 
 This could also be happening because of transient issues in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service
 
+## Error: Azure Resource Manager (ARM) template failed validation
+
+This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid. 
+
+In addition, refer to this doc regarding structure and syntax of ARM Templates: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax
+
 
 ## Open source
 
