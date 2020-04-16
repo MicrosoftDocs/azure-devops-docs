@@ -6,12 +6,32 @@
   href: create-organization.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Concepts
   items:
-  - name: Plan your org structure
+  - name: Plan your organization structure
     href: /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Project member resources
     href: resources-granted-to-project-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: How-to guides
   items:
+  - name: Organization settings
+    items:
+    - name: Add privacy policy URL
+      href: /azure/devops/organizations/accounts/add-privacy-policy-url?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Change time zone
+      href: /azure/devops/organizations/accounts/change-time-zone?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Change organization location
+      href: /azure/devops/organizations/accounts/change-organization-location?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Change organization Owner
+      href: /azure/devops/organizations/accounts/change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Restrict organization creation
+      href: /azure/devops/organizations/accounts/azure-ad-tenant-policy-restrict-org-creation?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Resolve orphaned organization
+      href: /azure/devops/organizations/accounts/resolve-orphaned-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Rename organization
+      href: /azure/devops/organizations/accounts/rename-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Delete organization
+      href: /azure/devops/organizations/accounts/delete-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Recover organization
+      href: /azure/devops/organizations/accounts/recover-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Manage access
     items:
     - name: Add users to your organization
