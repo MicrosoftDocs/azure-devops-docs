@@ -153,7 +153,7 @@ The following steps demonstrate how to customize subscriptions.
 
 ## Search and share pull request information using compose extension
 
-To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by id or  name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
+To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by ID or name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
 > ![Compose extension](./media/integrations-teams/teams-repos-compose-extension.png)
