@@ -35,7 +35,7 @@ Read this article to learn how to:
 ## Prerequisites
 
 - To create a work item, you must be a contributor to the Azure Boards project. If you don't have a project yet, you can sign up and create a project. For details, see [Start using Azure Boards](../get-started/index.md). 
-- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Adminstrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Adminstrator](../../organizations/settings/add-team-administrator.md). 
+- To create subscriptions in a Slack channel for work item events, you must be a member of the Azure Boards Project Administrators group  or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 - To receive notifications, the **Third party application access via OAuth** setting must be enabled for the organization. See [Change application access policies for your organization](../../organizations/accounts/change-application-access-policies.md)
 
 > [!NOTE]
@@ -58,7 +58,7 @@ To use the app, you must first link your Azure Boards project to your Slack chan
 
 1. Once the app has been installed in your Slack workspace, connect and authenticate yourself to Azure Boards. 
 
-	![Pic: signin](./media/integrations-slack/signin.png)
+	![screenshot of sign-in](./media/integrations-slack/signin.png)
 
 1. After signing in, use the following slash command inside a Slack channel to link to the Azure Boards project which you specify with the URL :
 
@@ -82,9 +82,9 @@ subscriptions just after linking a project.
 1. Select the desired area path, event that you are interested in, and leverage the associated 
 filters to customize your Slack channel. To easily set up subscriptions, your recently accessed area paths are shown in the area path dropdown.
 
-	![Pic: signin](./media/integrations-slack/add-subscriptions.png)
+   ![screenshot of sign-in](./media/integrations-slack/add-subscriptions.png)
 
-	In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
+   In case your team's area path doesn't appear in the Area path dropdown menu, follow the instructions mentioned in the next section, [Add area paths](#add-area-paths). Area paths added using the `/azboards addAreapath` command and area paths for which subscriptions are created in the Slack channel always appear in the Area path dropdown along with recently accessed area paths.
 
 
 ## Add area paths
