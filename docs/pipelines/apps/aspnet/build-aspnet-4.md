@@ -40,7 +40,7 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo.md)]
 
 ::: moniker-end
 
@@ -72,9 +72,9 @@ The sample app is a Visual Studio solution that has two projects: An ASP.NET Web
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](includes/create-project.md)]
+[!INCLUDE [include](../../ecosystems/includes/create-project.md)]
 
 ::: moniker-end
 
