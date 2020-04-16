@@ -12558,6 +12558,126 @@
       "source_path": "docs/report/excel/create-status-and-trend-excel-reports.md",
       "redirect_url": "/azure/devops/report/create-status-and-trend-excel-reports",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/java/android-studio-faq.md",
+      "redirect_url": "/previous-versions/azure/devops/java/android-studio-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/download-android-studio-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/java/download-android-studio-plug-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/download-eclipse-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/java/download-eclipse-plug-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/download-intellij-plug-in.md",
+      "redirect_url": "/previous-versions/azure/devops/java/download-intellij-plug-in",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/eclipse-faq.md",
+      "redirect_url": "/previous-versions/azure/devops/java/eclipse-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/get-started.md",
+      "redirect_url": "/previous-versions/azure/devops/java/get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/intellij-faq.md",
+      "redirect_url": "/previous-versions/azure/devops/java/intellij-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/sonarqube.md",
+      "redirect_url": "/previous-versions/azure/devops/java/sonarqube",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/standalone-tools.md",
+      "redirect_url": "/previous-versions/azure/devops/java/standalone-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/subversion.md",
+      "redirect_url": "/previous-versions/azure/devops/java/subversion",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/vscode-extension.md",
+      "redirect_url": "/previous-versions/azure/devops/java/vscode-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/agile/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/agile/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/builddocker/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/builddocker/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/dockerbuildagent/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/dockerbuildagent/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/e2eeclipse/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/e2eeclipse/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/e2eintellij/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/e2eintellij/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/eclipsegit/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/eclipsegit/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/intellijgit/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/intellijgit/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/mavenpmjenkins/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/mavenpmjenkins/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/mavenpmvsts/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/mavenpmvsts/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/releasemanagement/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/releasemanagement/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/java/labs/settingvstsproject/index.md",
+      "redirect_url": "/previous-versions/azure/devops/java/labs/settingvstsproject/index",
+      "redirect_document_id": false
     }
   ]
 }
