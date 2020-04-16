@@ -162,7 +162,7 @@ All extensions, including extensions from Microsoft, live under a publisher. Any
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-    ![Create publisher](media/create-publisher.png)
+    :::image type="content" source="media/create-publisher.png" alt-text="Create publisher." :::
 
     >[!NOTE]
     >Remember this ID. You need to set it in the manifest file of your extension.
