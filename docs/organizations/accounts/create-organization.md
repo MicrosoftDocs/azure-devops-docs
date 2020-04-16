@@ -2,13 +2,13 @@
 title: Create a new organization, project collection
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Create your organization with a personal Microsoft account, GitHub account, or work or school account
+description: Create an organization in Azure DevOps Services or create a project collection on-premises with a personal Microsoft account, GitHub account, or work or school account.
 ms.technology: devops-accounts
 ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 05/20/2019
+ms.date: 04/16/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2013'
 
 ::: moniker range="= azure-devops"
 
-In this quickstart, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
+In this article, learn how to create an organization. An organization is used to connect groups of related projects, helping to scale up an enterprise. You can use a personal Microsoft account, GitHub account, or a work or school account. Use your work or school account to *automatically connect* your organization to your Azure Active Directory (Azure AD).
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ In this quickstart, learn how to create an organization. An organization is used
 
 ## Create a project collection
 
-A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to them. 
+A project collection is a container of projects. By grouping projects together, you can manage projects more efficiently and assign the same resources to those projects. 
 
 For more information about how to create a project collection, see [create a project collection](https://docs.microsoft.com/azure/devops/server/admin/manage-project-collections?view=azure-devops#create-a-project-collection).
 
@@ -69,3 +69,9 @@ For more information about how to create a project collection, see [create a pro
 > [!div class="nextstepaction"]
 > [Create a project](../projects/create-project.md)
 
+## Related articles
+
+- [Rename your organization](rename-organization.md)
+- [Change organization time-zone](change-organization-location.md)
+- [Change organization owner](change-organization-ownership.md)
+- [Delete your organization](delete-your-organization.md)
