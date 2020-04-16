@@ -5,8 +5,8 @@ description: Monitor Azure Repos from Microsoft Teams
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.manager: gopinach
-ms.author: karrg
-author: RGKarthik
+ms.author: divais
+author: Divya
 monikerRange: 'azure-devops'
 ms.date: 10/21/2019
 ---
@@ -33,7 +33,7 @@ Read this article to learn how to:
 
 ## Prerequisites
 
-- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group. 
+- To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
 - To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization. See [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
@@ -53,7 +53,7 @@ displays as shown in the following image. Use the `@azure repos` handle to start
 
 ## Connect the Azure Repos app to your repositories
 
-1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command.
+1. Once the app has been installed in your team, authenticate yourself to Azure Repos using the `@azure repos signin` command. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
    
    > [!div class="mx-imgBorder"]
    > ![Sign in prompt image ](./media/integrations-teams/SignIn.png)
@@ -153,7 +153,7 @@ The following steps demonstrate how to customize subscriptions.
 
 ## Search and share pull request information using compose extension
 
-To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by id or  name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
+To help users search and share information about pull requests, Azure Repos app for Microsoft Teams supports compose extension. You can now search for pull requests by ID or name. For compose extension to work, users will have to sign into Azure Repos project that they are interested in either by running `@azure repos signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
 > ![Compose extension](./media/integrations-teams/teams-repos-compose-extension.png)
@@ -197,7 +197,7 @@ This command will delete all the subscriptions related to any repository in the 
 
 ## Command reference
 
-The following table lists all the Azure repos commands you can use in your Teams channel.
+The following table lists all the `azure repos` commands you can use in your Teams channel.
 
 |Command	| Functionality |
 | -------------------- |----------------|
