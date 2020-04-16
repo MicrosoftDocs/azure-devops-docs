@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a Windows .bat or .cmd script.
+Use this task to run a Windows .bat or .cmd script.
 Optionally, allow it to permanently modify environment variables.
 
 > [!NOTE]

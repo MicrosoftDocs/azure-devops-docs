@@ -2,7 +2,7 @@
 title: Define variables
 ms.custom: seodec18
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
 ms.date: 02/27/2020
 
@@ -342,6 +342,10 @@ The following example shows how to use a secret variable called `mySecret` in a 
 Note that unlike a normal pipeline variable, there's no environment variable called `MYSECRET`.
 
 ```yaml
+variables:
+ GLOBAL_MYSECRET: $(mySecret) # this will not work because the variable needs to be mapped as env
+ GLOBAL_MY_MAPPED_ENV_VAR: foo # this will not work because the variable needs to be mapped as env
+ 
 steps:
 
 - powershell: |
@@ -350,11 +354,18 @@ steps:
 
     # Using the env var directly:
     Write-Host "This does not work: $env:MYSECRET"
+  
+    # Using the env var through the variables mapping will not work:
+    Write-Host "This does not work either: $env:GLOBAL_MYSECRET"
 
+    # Using the global var mapped in the pipeline. It is not a secret var:
+    Write-Host "This works: $env:GLOBAL_MY_MAPPED_ENV_VAR" 
+    
     # Using the mapped env var:
     Write-Host "This works: $env:MY_MAPPED_ENV_VAR"    # Recommended
+        
   env:
-    MY_MAPPED_ENV_VAR: $(mySecret)
+    MY_MAPPED_ENV_VAR: $(mySecret) # right way to map to an env variable
 ```
 
 The output from the preceding script would look like this:
@@ -362,6 +373,8 @@ The output from the preceding script would look like this:
 ```text
 This works: ***
 This does not work:
+Global does not work either:
+This works: someValue
 This works: ***
 ```
 This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 

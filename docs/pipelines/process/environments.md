@@ -1,7 +1,7 @@
 ---
 title: Environment
 description: Collection of deployment targets useful for traceability and recording deployment history
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 4abec444-5d74-4959-832d-20fd0acee81d
 ms.date: 02/10/2020
 monikerRange: azure-devops

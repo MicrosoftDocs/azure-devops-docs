@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a Bash script on macOS, Linux, or Windows. 
+Use this task to run a Bash script on macOS, Linux, or Windows. 
 
 ::: moniker range="> tfs-2018"
 

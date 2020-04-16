@@ -115,7 +115,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 
@@ -188,7 +188,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 
 </ul>
 </td>
@@ -317,7 +317,7 @@ From the **Settings** page, you can configure administrative features for either
 <li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../organizations/security/set-git-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
-<li><a href="../report/sharepoint-dashboards/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
+<li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
 <li><a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[Project Alerts](../notifications/howto-manage-team-notifications.md)">Project Alerts</a></li>
 </ul>
 </td>
