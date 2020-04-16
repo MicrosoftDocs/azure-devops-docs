@@ -7,7 +7,7 @@ author: arob98
 manager: angrobe
 ms.author: angrobe
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.date: 03/01/2020
+ms.date: 04/16/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -38,7 +38,7 @@ Use this task to download, or package and publish Universal Packages.
 | `command`<br/>Command | The NuGet command to run.<br/>Options: `download`, `publish` |
 | `downloadDirectory`<br/>Destination directory | Folder path where the package's contents download. |
 | `feedsToUse`<br/>Feed location | You can select a feed from either this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
-| `externalFeedCredentials`<br/>Credentials for feeds outside this organization (collection) | Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization (collection), leave this blank; the build’s credentials are used automatically. |
+| `externalFeedCredentials`<br/>Credentials for feeds outside this organization (collection) | Credentials to use for external registries located in the selected NuGet.config. For feeds in this organization (collection), leave this blank; the build's credentials are used automatically. |
 | `vstsFeed`<br/>Use packages from this Azure Artifacts/TFS feed | Include the selected feed. You must have Azure Artifacts installed and licensed to select a feed here. |
 | `vstsFeedPackage`<br/>Package name | Name of package to download. |
 | `vstsPackageVersion`<br/>Package version | Select the package version or use a variable containing the version to download. This entry can also be a wildcard expression such as `*` to get the highest version, `1.*` to get the highest version with major version 1, or `1.2.*` to get the highest patch release with major version 1 and minor version 2. |
@@ -48,8 +48,8 @@ Use this task to download, or package and publish Universal Packages.
 | `publishDirectory`<br/>Path to files to publish | Specifies the path to list of files to be published. |
 | `feedsToUsePublish`<br/>Feed location | You can select a feed from either this collection or any other collection in Azure Artifacts.<br/>Options: `internal`, `external` |
 | `publishFeedCredentials`<br/>organization/collection connection | Credentials to use for external feeds. |
-| `vstsFeedPublish`<br/>Destination Feed | Specifies the name or ID of the feed to publish to. |
-| `publishPackageMetadata`<br/>Publish pipeline metadata | Associate this build and release pipeline’s metadata (run #, source code information) with the package. |
+| `vstsFeedPublish`<br/>Destination Feed | Specifies the project and feed's name/GUID to publish to. |
+| `publishPackageMetadata`<br/>Publish pipeline metadata | Associate this build and release pipeline's metadata (run #, source code information) with the package. |
 | `vstsFeedPackagePublish`<br/>Package name | Select a package ID to publish or type a new package ID, if you've never published a version of this package before. Package names must be lower case and can only use letters, numbers, and dashes(-). |
 | `feedPublishExternal`<br/>Feed | External feed name to publish to. |
 | `packagePublishExternal`<br/>Package name | Package name. |
@@ -134,6 +134,8 @@ steps:
 
 This example demonstrated how to use the Pipelines task builder to quickly generate the YAML for the Universal Package task, which can then be placed into your `azure-pipelines.yml` file. The Universal Package task builder supports all of the advanced configurations that can be created with **Universal Package** task's arguments.
 
+> [!NOTE]
+> All feeds created through the classic user interface are project-scoped feeds. For the `vstsFeedPublish` parameter, you can also use the project and feed's names instead of their GUIDs like the following: `'<projectName>/<feedName>'`. See [Publish your Universal packages](../../artifacts/universal-packages.md) for more details.
 
 ## Open-source on GitHub
 
