@@ -1,14 +1,14 @@
 ---
-title: Delete or remove users from team or project
+title: Delete, remove users from team, project, organization
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project
+description: Steps for how to delete or remove organization users from Azure DevOps and remove users from a team or project.
 ms.technology: devops-accounts
 ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 11/21/2019
+ms.date: 04/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-If users no longer require access to a project or your organization, you can remove their access to the project or your organization.  
+If users no longer require access to a team, project, or your organization, you can remove their access to the team, project, or organization.  
 
 ## Prerequisites  
 
@@ -51,14 +51,14 @@ If users no longer require access to a project or your organization, you can rem
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 > [!NOTE]
-> - Azure Active Directory (AD)-backed organizations. After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> - Managed service account (MSA)-backed organizations. After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Current page](#tab/current-page)
 
@@ -84,14 +84,14 @@ If users no longer require access to a project or your organization, you can rem
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, and you don't want to pay for those users, you must also [reduce the users](../billing/buy-basic-access-add-users.md). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users). Then you're not charged in your next Azure billing cycle.
 
-   To reduce or cancel users for the next month, you must make updates before the last day of the current month.
+   To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
 
 > [!NOTE]
-> - Azure Active Directory (AD)-backed organizations. After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
-> - Managed service account (MSA)-backed organizations. After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
+> - Azure Active Directory (Azure AD)-backed organizations: After you remove a user from Azure AD, you can't assign artifacts to that user anymore. Examples are work items and pull requests. However, we preserve the history of artifacts that were already assigned to the user.
+> - Managed service account (MSA)-backed organizations: After you remove a user from your MSA-backed organization, the user remains within the tenant and can be re-added at any time.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -113,7 +113,7 @@ az devops user add --user
 
 - **user**: The email address or ID of the user. 
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **yes**: Do not prompt for confirmation.
+- **yes**: Don't prompt for confirmation.
 
 #### Example
 
