@@ -1,4 +1,4 @@
-﻿---
+---
 title: Backlogs for portfolios, priority, & multi-team ownership
 titleSuffix: Azure Boards 
 description: Plan, track, and organize user stories, features, and bugs using backlogs and multiple teams 
@@ -23,9 +23,10 @@ With **Backlogs**, you can quickly plan your project by adding user stories or r
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 With **Backlogs**, you can quickly plan your project by adding user stories or requirements to your product backlog. 
+
 ::: moniker-end
 
-If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. If you want to add another product backlog, you do that by adding a team. For details, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json).
+If you're a project administrator just getting started, review the [Configure settings and manage your Azure Boards project](../get-started/manage-boards.md) to learn more about defining area and iteration paths and customizing your work item types. Backlogs are automatically created when you create a project or add a team. Each team has access to their own product, portfolio, and sprint backlogs as described in [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings#each-team-gets-their-own-set-of-tools). 
 
 ## Use backlogs
 
