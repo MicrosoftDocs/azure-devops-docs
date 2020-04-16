@@ -4,7 +4,7 @@ description: Automatically build ASP.NET apps in Azure Pipelines, Azure DevOps, 
 ms.topic: quickstart
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
-ms.date: 01/24/2019
+ms.date: 04/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker-end
 
-This guidance explains how to build .NET Framework projects. For guidance on .NET Core projects, see [this topic](../../ecosystems/dotnet-core.md).
+Learn how to build .NET Framework projects. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
 
 ::: moniker range="tfs-2017"
 
@@ -28,9 +28,33 @@ This guidance explains how to build .NET Framework projects. For guidance on .NE
 
 ::: moniker-end
 
-## Example
+## Create your first pipeline
 
-This example shows how to build an ASP.NET project. To start, [import](../../../repos/git/import-git-repository.md) (into Azure Repos or TFS) or fork (into GitHub) this repo using the following clone URL:
+::: moniker range="azure-devops"
+
+> Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
+
+::: moniker-end
+
+### Get the code
+
+::: moniker range="azure-devops"
+
+[!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+Import this repo into your Git repo in Azure DevOps Server 2019:
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+Import this repo into your Git repo in TFS:
+
+::: moniker-end
 
 ```
 https://github.com/Microsoft/devops-project-samples.git
@@ -42,7 +66,22 @@ The sample repo includes several different projects, and the sample application 
 https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
 ```
 
-The sample app is a Visual Studio solution that has two projects: An ASP.NET Web Application project that targets .NET Framework 4.5, and a Unit Test project.
+Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
+
+The sample app is a Visual Studio solution that has two projects: 
+* An ASP.NET Web Application project that targets .NET Framework 4.5
+* A Unit Test project
+
+::: moniker range="azure-devops"
+
+### Sign in to Azure Pipelines
+
+[!INCLUDE [include](../../ecosystems/includes/sign-in-azure-pipelines.md)]
+
+[!INCLUDE [include](../../ecosystems/includes/create-project.md)]
+
+::: moniker-end
+
 
 ::: moniker range="< azure-devops"
 > [!NOTE]
@@ -58,9 +97,8 @@ The sample app is a Visual Studio solution that has two projects: An ASP.NET Web
 ::: moniker range="azure-devops"
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
-Use the **Hosted VS2017** agent pool to build on Visual Studio 2017 or Visual Studio 15.* versions. Use the **Hosted** agent pool to build using the tools in Visual Studio 2013 or Visual Studio 2015.
-
-To change the agent pool on which to build, select **Tasks**, then select the **Process** node, and finally select the **Agent pool** that you want to use.
+* Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
+* Use `vs2017-win2016` for Windows Server 2016 with Visual Studio 2017
 
 You can also use a [self-hosted agent](../../agents/agents.md#install) to run your builds. This is particularly helpful if you have a large repository and you want to avoid downloading the source code to a fresh machine for every build.
 
@@ -71,8 +109,6 @@ You can also use a [self-hosted agent](../../agents/agents.md#install) to run yo
 Your builds run on a [self-hosted agent](../../agents/agents.md#install).
 Make sure that you have the necessary version of the Visual Studio installed on the agent.
 
-::: moniker-end
-
 ## Build multiple configurations
 
 It is often required to build your app in multiple configurations. The following steps extend the example above to build the app on four configurations: [Debug, x86], [Debug, x64], [Release, x86], [Release, x64].
@@ -80,13 +116,12 @@ It is often required to build your app in multiple configurations. The following
 1. Click the **Variables** tab and modify these variables:
 
    * `BuildConfiguration` = `debug, release`
-
    * `BuildPlatform` = `x86, x64`
 
 2. Select **Tasks** and click on the **agent job** to change the options for the job:
 
    * Select **Multi-configuration**.
-
    * Specify **Multipliers:** `BuildConfiguration, BuildPlatform`
 
 3. Select **Parallel** if you have multiple build agents and want to build your configuration/platform pairings in parallel.
+::: moniker-end
