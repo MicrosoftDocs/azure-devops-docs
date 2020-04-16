@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Folder comparison filters
 ms.assetid: a074c178-1b40-44dd-9e0f-8e9c7f565bfc
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/26/2018

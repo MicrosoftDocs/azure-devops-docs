@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Lock or unlock files or folder under TFVC version control using the Lock Command
 ms.assetid: 5b62627b-fdb3-4832-a387-811dcc2808e3
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

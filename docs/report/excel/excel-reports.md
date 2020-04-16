@@ -33,7 +33,7 @@ Here are examples of two of the Excel reports.
 
 ![Bug trends example report](media/ALM_PG_Excel_BugTrends.png)   ![Build status example report](media/ALM_PG_Excel_BuildStatus.png)
 
-Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](create-status-and-trend-excel-reports.md) or by connecting to the Analysis Services cube. 
+Default Excel reports require that your team project is configured with SharePoint Products and SQL Server Analysis Services. If these reports aren't available to you, you can [create ad-hoc reports in Excel from a work item query](../create-status-and-trend-excel-reports.md) or by connecting to the Analysis Services cube. 
 
 <table>
 <tbody valign="top">
@@ -159,7 +159,7 @@ Default Excel reports require that your team project is configured with SharePoi
 
 - To access an Excel report, your team project must have been provisioned with a project portal.  
 
-   Excel reports are stored on the server that hosts SharePoint Products for your team project. If a project portal has not been enabled for your team project, you cannot access the workbook. For more information, see [Configure or add a project portal](../sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+   Excel reports are stored on the server that hosts SharePoint Products for your team project. If a project portal has not been enabled for your team project, you cannot access the workbook. For more information, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
 
 - To open a report in Excel that connects to the operational data store for Team Foundation, you must have the Team Foundation Office Integration add-in installed on your client computer. This add-in is installed when you install any version of Visual Studio or Team Explorer.  
 

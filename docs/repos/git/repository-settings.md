@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Repository settings
 ms.assetid: 9336ed18-c239-4394-aa4c-64b6d01130f9
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/19/2019

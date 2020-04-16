@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to configure alerts on available metrics for an Azure resource.
+Use this task to configure alerts on available metrics for an Azure resource.
 
 ::: moniker range="> tfs-2018"
 

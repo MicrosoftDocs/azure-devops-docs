@@ -2,20 +2,18 @@
   href: about-sharepoint-integration.md
 - name: Discontinue the TFS 2017 (and earlier) SharePoint integration
   href: ./deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md 
+- name: Features removed when disabling SharePoint integration
+  href: ./deprecation/features-removed-when-disabling-sharepoint-integration.md  
+- name: Upload and refresh Excel reports
+  href: upload-refresh-excel-reports.md 
+- name: Team Foundation Server Extensions for SharePoint Products
+  href: tfs-sharepoint-extensions.md 
 - name: Quickstarts
   items:
   - name: Share information using the SharePoint portal
     href: ../../report/sharepoint-dashboards/share-information-using-the-project-portal.md 
   - name: Manage documents and document libraries
     href: ../../report/sharepoint-dashboards/manage-documents-and-document-libraries.md 
-- name: Concepts
-  items:
-  - name: Features removed when disabling SharePoint integration
-    href: ./deprecation/features-removed-when-disabling-sharepoint-integration.md
-  - name: Upload and refresh Excel reports
-    href: upload-refresh-excel-reports.md 
-  - name: Team Foundation Server Extensions for SharePoint Products
-    href: tfs-sharepoint-extensions.md 
 - name: How-to guides
   items:
   - name: "TFS 2018 & later versions"
@@ -41,18 +39,18 @@
         href: /azure/devops/server/install/sharepoint/verify-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
       - name: Move SharePoint to new hardware
         href: /azure/devops/server/install/sharepoint/move-sharepoint-new-hardware?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-  - name: Set SharePoint permissions
-    href: ../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
-  - name: Manage SharePoint integration
-    items:
-    - name: Add SharePoint products to TFS
-      href: /azure/devops/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
-    - name: Modify or remove access between SharePoint web app and TFS
-      href: /azure/devops/server/admin/modify-remove-access-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
-    - name: Configure SharePoint Server 2010 or 2007 for dashboards
-      href: /azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
-  - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
-    href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
+    - name: Set SharePoint permissions
+      href: ../../organizations/security/set-sharepoint-permissions.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
+    - name: Manage SharePoint integration
+      items:
+      - name: Add SharePoint products to TFS
+        href: /azure/devops/server/admin/add-sharepoint-to-tfs?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json 
+      - name: Modify or remove access between SharePoint web app and TFS
+        href: /azure/devops/server/admin/modify-remove-access-sharepoint?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
+      - name: Configure SharePoint Server 2010 or 2007 for dashboards
+        href: /azure/devops/server/admin/config-ent-sharepoint0710-dashboards?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json  
+    - name: Upgrade from SharePoint 2013 with TFS integration to SharePoint 2016
+      href: ./deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md 
 - name: Troubleshooting
   items:
   - name: "Resolve conflicts & errors"
@@ -139,9 +137,3 @@
       href: ../../report/excel/excel-reports-cmmi.md  
   - name: Issues & Triage Excel workbooks
     href: ../guidance/workbooks.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
-- name: Resources
-  items:
-  - name: Microsoft Teams
-    href: ../../service-hooks/services/teams.md
-  - name: OneDrive for Business sync client
-    href: https://support.office.com/article/Get-started-with-the-new-OneDrive-sync-client-in-Windows-615391c4-2bd3-4aae-a42a-858262e42a49

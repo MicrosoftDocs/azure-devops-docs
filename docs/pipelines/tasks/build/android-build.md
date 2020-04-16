@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to build an Android app using Gradle and optionally start the emulator for unit tests.
+Use this task to build an Android app using Gradle and optionally start the emulator for unit tests.
 
 ## Deprecated
 **The Android Build task has been deprecated. Use the [Gradle](gradle.md) task instead.**

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 03/26/2018
