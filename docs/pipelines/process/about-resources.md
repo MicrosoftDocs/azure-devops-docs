@@ -7,7 +7,7 @@ ms.date: 04/07/2020
 monikerRange: azure-devops
 ---
 
-# About resources
+# About pipeline resources
 
 A resource is anything used by a pipeline that lives outside the pipeline. [Resources](resources.md) are defined at one place and can be consumed anywhere in your pipeline. Resources can be [protected or open](../security/resources.md). 
 
