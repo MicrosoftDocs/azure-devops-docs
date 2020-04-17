@@ -5,7 +5,7 @@ description: Learn how to navigate using the multi-stage pipelines user interfac
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-ms.date: 03/27/2020
+ms.date: 04/17/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -95,11 +95,18 @@ If the pipeline is running, you can cancel it by choosing **Cancel**. If the run
 
 ![Cancel pipeline run](media/cancel-pipeline-run.png)
 
-### Download logs
+<a name="download-logs"></a>
+### Pipeline run context menu
 
-From the context menu you can download logs, add tags, edit the pipeline, and configure [retention](../policies/retention.md) for the run.
+From the context menu you can download logs, add tags, edit the pipeline, delete the run, and configure [retention](../policies/retention.md) for the run.
 
 ![Pipeline run summary context menu](media/pipeline-run-summary-context-menu.png)
+
+> [!NOTE]
+> You can't delete a run if retention policies are conf
+
+
+TF900561: The following build cannot be deleted because it is marked as Retain Indefinitely: 20200327.1. Remove the Retain Indefinitely flag to allow deletion of this build.
 
 ### Jobs and stages
 
