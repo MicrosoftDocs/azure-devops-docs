@@ -221,7 +221,7 @@ extends:
 
 #### [PowerShell](#tab/powershell)
 
-You can loop through parameters in a PowerShell task and set each parameter as an environment parameter. 
+You can loop through parameters in a PowerShell task and set each parameter as an environment variable. 
 
 ```yaml
 # start.yaml
