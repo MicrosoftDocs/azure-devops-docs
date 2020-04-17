@@ -38,16 +38,86 @@ Use this task in a pipeline to install an SSH key prior to a build or release st
 
 ## Example setup using GitHub
 
-1. Create an SSH key using `ssh-keygen` - a program that is provided with the SSH package on Linux and macOS and comes with Git for Windows. When you run `ssh-keygen`, you will be prompted to provide an SSH passphrase and two files will be created: a public key and a private key (e.g. `mykey.pub` and `mykey`).
-1. Upload the `mykey.pub` (public) SSH key to GitHub (see GitHub's [documentation](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/) for help).
-1. On a local computer, add the private SSH key by running `ssh-add ~/.ssh/mykey`, replacing `~/.ssh/mykey` with the path to your private key file.
-1. Clone the repository to the local computer (`git clone git@github.com:myOrganizationName/myRepositoryName.git`).
-1. While cloning the repository, you will be asked whether to trust GitHub. Accepting will add the SSH key to your `known_hosts` file.
-1. Open your `known_hosts` file (`~/.ssh/known_hosts` or `C:\Users\<username>\.ssh\known_hosts`) and copy the line that was added.
+Prerequisites GitBash for Windows
 
-You now have all necessary values for the "Install SSH Key" task:
-- 'Known Hosts Entry' - Enter the line copied in step 6
-- 'SSH Key (Secure File)', 'SSH Public Key', and 'SSH Passphrase' - Enter these values that were created in step 1
+This section will explain how to use a private GitHub repository from with Azure DevOps Pipelines with YAML. When you have repositories you don't want to expose to the open source community, it is very common to have them being "private". However a CI/CD tool like Azure DevOps needs access to this repositories for you to manage them inside the tool. To do this you might need an SSH key to authenticate access to GitHub. Here are the steps you need to follow to do this:
+
+1. Generate a key pair used to authenticate access from GitHub to Azure DevOps. To do this, run the following command in Bash:
+
+```
+ssh-keygen -t rsa
+```
+
+   - The CLI will ask you for a name to give the SSH key pairs, please type a name you like, for this example we used "myKey"
+
+     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-01.png)
+     
+   - The CLI will ask for a passphrase, this is used to encrypt your private key. You can use it if you like. (Using a passphrase is more secure than not using one)
+   
+     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-02.png)
+   
+   - Your SSH key pairs are created. Below is the success message you will see in the CLI.
+   
+     ![Image of GitBash](https://github.com/ManuelGalindo/images/blob/master/ssh-task-03.png)
+     
+   - You can check your newly create key pair in File Explorer.
+   
+     ![Image of Windows File Explorer](https://github.com/ManuelGalindo/images/blob/master/ssh-task-04.png)
+     
+2. Now the public key generated needs to be added to the GitHub repository. (The public key is the one with ".pub" ending). To do this, you need to go the following URL in your browser:
+
+```
+https://github.com/{YourOrganizationName}/{YourRepositoryName}/settings/keys
+```   
+
+   - In here you need to click in "Add deploy key"
+   
+   - Fill the information needed in the following textboxes:
+   
+     ![Image of GitHub Keys](https://github.com/ManuelGalindo/images/blob/master/ssh-task-05.png)
+     
+   - Once this is done, click "Add key".
+   
+ 3. Now we need to upload our private key to Azure DevOps, we do this following these steps:
+ 
+   - Inside Azure DevOps on the left side pane click on Pipeline and then select "Library".
+   
+     ![Image of AzureDevOpsMenu](https://github.com/ManuelGalindo/images/blob/master/ssh-task-06.png)
+     
+   - Select "Secure Files" and click on "+ Secure File".
+   
+     ![Image of AzureDevOps ScureFiles](https://github.com/ManuelGalindo/images/blob/master/ssh-task-07.png)
+     
+   - Now upload the key by clicking on "Browse…" and selecting your Private key.
+     
+     ![Image of AzureDevOps PrivateKey](https://github.com/ManuelGalindo/images/blob/master/ssh-task-08.png)
+     
+   - You have now added your Private Key to Azure DevOps Secure Files.
+   
+  4. Next is recovering you "Known Hosts Entry", which you can obtain the following way:
+  
+   - In Git Bash type the following command: 
+   
+   ```
+   ssh-keyscan github.com
+   ```
+   
+   - Your "Known Hosts Entry" is the one not starting in '#' from the result given in Git Bash as shown below:
+   
+    ![Image of AzureDevOps PrivateKey](https://github.com/ManuelGalindo/images/blob/master/ssh-task-09.png)
+    
+  5. The last step is creating a YAML Pipeline. Inside the YAML definition, add the following task:
+  
+  ```
+  - task: InstallSSHKey@0
+   inputs:
+     knownHostsEntry: #{Enter your Known Hosts Entry Here}
+     sshPublicKey: #{Enter your Public key Here}
+     sshKeySecureFile: #{Enter the name of your key in "Secure Files" Here}
+  ```
+  
+   - Now the SSH keys are installed, we now proceed with the following script to connect using SSH and not HTTPS by default:
+   
 
 ## Open source
 
