@@ -178,7 +178,7 @@ You can also loop through your string, number, and boolean parameters.
 
 #### [Script](#tab/script)
 
-In this example, we loop through parameters and print out each parameter name and value. 
+In this example, you loop through parameters and print out each parameter name and value. 
 
 ```yaml
 # start.yaml
@@ -221,7 +221,7 @@ extends:
 
 #### [PowerShell](#tab/powershell)
 
-In this example, we loop through parameters in a PowerShell task and set each parameter as an environment parameter. 
+You can loop through parameters in a PowerShell task and set each parameter as an environment parameter. 
 
 ```yaml
 # start.yaml
