@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 10/03/2019
+ms.date: 04/16/2020
 ---
 
 
@@ -41,6 +41,29 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project).  
 * To view or set capacity, you must be granted **Basic** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). Users with **Stakeholder** access can't view or set capacity.
 
+<a id="customize-activity-list">  </a> 
+
+## About the Activity or Discipline pick-list items
+
+::: moniker range="azure-devops"
+
+The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the [Activity or Discipline](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields in all projects within the organization. 
+
+To change the **Activity** or **Discipline** menu selections, see [Add and manage fields](../../organizations/settings/work/customize-process-field.md). 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the [Activity or Discipline](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields in all projects within the project collection. Or, if your project has been customized, with the field assigned to [`type="Activity" within the ProcessConfiguration file`](../../reference/xml/process-configuration-xml-element.md#assign-agile-tool-fields). 
+
+To change the **Activity** or **Discipline** menu selections, see [Add or modify a field, customize a picklist](../../reference/add-modify-field.md). 
+
+::: moniker-end
+
+## Capacity per day entries 
+ 
+Most teams specify capacity in terms of hours. However, you can also specify it in days or any other units your team chooses. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit your team uses to estimate and track their time. For example, the entries they'll make to the [Original Estimate or Remaining Work](../queries/query-numeric.md#fields-used-to-estimate-and-track-work) fields.  
 
 ## Open a Sprint backlog for a team 
 
@@ -94,38 +117,31 @@ If you haven't set up sprints yet for your team, go [here to do that now](define
 
 ## Set capacity for the team and team members 
 
-From the **Capacity** page, you can add team members, enter the team time off, and set capacity and days off for each team member. If your team tracks capacity by activity, then also select the <strong>Activity</strong> for each team member.  
+From the **Capacity** page, you can add team members, enter the team time off, and set capacity and days off for each team member.  
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you don't see your team members listed, add them. Choose the ![ ](../../media/icons/actions-icon.png) action icon and select <strong>Add all team members</strong>. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the ![ ](../../media/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/add-team-members.png) 
 
 	> [!NOTE]  
-	> The <strong>Add all team members</strong> action will retrieve a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing <strong>Add user</strong>.
+	> The **Add all team members** action retrieved a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing **Add user**.
 
-1. If you need to add other contributors to your project, choose the ![ ](../../media/icons/blue-add-icon.png) <strong>Add user</strong>.  
+1. If you need to add other contributors to your project, choose the ![ ](../../media/icons/blue-add-icon.png) **Add user**.  
 
-2. Next, set any time off that the team will take. Choose the <strong>0 days</strong> link as shown.  
+2. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/team-members-added-set-team-days-off.png) 
 
-	In the Days off for the entire team dialog, select the start and end days during the sprint that the team will take off. 
+	In the **Days off for** dialog, select the start and end days during the sprint that the team member or team will take off. 
 
 	> [!NOTE]
 	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. You only have to indicate planned days off for the team. You set weekend days or other recurring days off under your team's [Settings, Working days](../../organizations/settings/set-working-days.md) page. 
 
-3. Now, set the **Activity** and **Capacity** per day for each team member. 
-
-	> [!NOTE]
-	> To change the **Activity** menu selection: see [Add and manage fields](../../organizations/settings/work/customize-process-field.md) for cloud services or an Inherited process, and [Add or modify a field, customize a picklist](../../reference/add-modify-field.md) for On-premises XML process. 
-	> 
-	>The values displayed for **Activity** (Agile, Basic, or Scrum) or **Discipline** (CMMI) reflect a union of all values defined for the field in all projects within the organization or project collection. Therefore, to restrict the values that appear for Capacity on the sprint backlog pages, you must make the values match in all the projects for the field assigned to `type="Activity" within the ProcessConfiguration file`. For Azure DevOps Services projects, that is **Activity** for Agile, Basic, or Scrum, and **Discipline** for CMMI. 
-
-	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../../organizations/settings/set-working-days.md) under team settings.
+3. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
 
 	For example, Christie Church's capacity is 6 hours/day for design work. 
 
@@ -133,7 +149,6 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	> ![Set team capacity, vertical nav](media/capacity/set-team-capacity-agile.png)
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
@@ -143,9 +158,8 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	> ![Add team members](media/capacity/add-team-members-standard.png)  
 
 2. If you need to add other contributors to your project, choose the ![ ](../media/icons/add-light-icon.png) **Add user** icon.  
-   ::: moniker-end  
 
-3. Set any time off that the team will take. Choose the **0 days** link as shown.
+3. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/set-team-days-off-standard.png) 
@@ -155,19 +169,12 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	> [!NOTE]
 	> Your sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, [Working days](../../organizations/settings/set-working-days.md) page.  
 
-4. Now, set the **Activity** and **Capacity** per day for each team member. 
-
-	Most teams specify capacity in terms of hours, however, you can also specify it in days. For example, .5 days would correspond to 4 hours for a typical 8 hour day. Choose the same unit you will use to estimate the time a task will take to complete. You only have to indicate planned days off. You [manage weekend days or other recurring days off](../../organizations/settings/set-working-days.md) under team settings.
+4. Now, set the **Activity/Discipline** and **Capacity** per day for each team member. If you track capacity simply by team member, you can leave the Activity or Discipline selection unassigned. 
 
 	For example, Christie Church's capacity is 6 hours/day for design work. 
-	::: moniker range=">= tfs-2017"  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Set team capacity, standard, TFS 2017 and later versions](media/capacity/capacity-planning-set-capacity-tfs-15.png)
-
-	::: moniker-end  
-
-	::: moniker range=">= tfs-2013 <= tfs-2015"  
 
 	#### TFS 2015.1  
 	![TFS 2015.1, Set Capacity](media/capacity/capacity-planning-set-capacity-tfs-2015.1.png)
@@ -176,35 +183,16 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 	![TFS 2015, Set Capacity](media/capacity/set-sprint1-capacity.png)"   
 
-	::: moniker-end  
-
-	<a id="customize-activity-list">  </a> 
-
-	::: moniker range="azure-devops-2019"  
-
-	> [!NOTE]    
-	> If you the On-premises XML process model to customize work tracking, you can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile, or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  If you use the Inheritance process model, customization of the picklist isn't supported at this time. 
-
-	::: moniker-end
-
-	::: moniker range="<= tfs-2018"  
-
-	> [!NOTE]    
-	> You can add to or modify the items listed for the [Activity](../queries/query-numeric.md) (Agile or Scrum) or [Discipline](../queries/query-numeric.md) (CMMI) fields by [customizing its picklist](../../reference/add-modify-field.md). The set of values listed corresponds to the combined set of all values defined for the field across all projects in the collection.  
-
-	::: moniker-end
+::: moniker-end  
 
 
 ::: moniker range=">= tfs-2015"
+
 <a id="copy-capacity">  </a>
 
 ## Copy capacity planning from the previous sprint 
 
 By copying the capacity from the previous sprint, you save time. With the basics defined, all you have to do is adjust the capacity based on individual and team days off and capacity allocation per activity.  
-
-::: moniker-end
-
-::: moniker range="tfs-2015"
 
 > [!NOTE]    
 > This feature is available from TFS 2015.1 and later versions.
@@ -219,7 +207,6 @@ Notice that only the capacity per day and activity are copied over. Individual a
 > ![Copy capacity, vertical nav](media/capacity/copy-capacity-from-previous-sprint-vert.png)
 
 ::: moniker-end
-
 
 ::: moniker range="<= tfs-2018"
 

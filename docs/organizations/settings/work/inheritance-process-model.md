@@ -33,6 +33,8 @@ Below you'll find an index to those tasks you can perform to customize an inheri
 
 [!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
 
+
+
 ## System versus inherited processes 
 
 You'll see two types of processes:

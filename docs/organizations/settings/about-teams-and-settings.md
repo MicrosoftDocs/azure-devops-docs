@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/25/2019
+ms.date: 04/16/2020
 ---
 
 # About teams and Agile tools
@@ -18,6 +18,8 @@ ms.date: 10/25/2019
 <a id="teams"></a>
 
 Adding a team is the #1 way in which Agile tools support a growing organization. Once your team grows beyond its optimum size&mdash;typically anywhere from 6 to 9 members&mdash;you might consider moving from a one team structure to a two team structure. For enterprises adopting Agile tools, setting up a hierarchical team structure provides several advantages to portfolio and program managers to track progress across several teams.  
+
+This article describes how to structure teams and how they are used. For the step-by-step procedure to add a team, go to [Add another team](add-teams.md).
 
 [!INCLUDE [temp](../../boards/includes/note-configure-customize.md)]
 

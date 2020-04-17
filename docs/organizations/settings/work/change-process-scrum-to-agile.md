@@ -10,7 +10,7 @@ ms.author: kaelli
 author: kaelli
 ms.reviewer: kaelli
 monikerRange: "azure-devops"
-ms.date: 06/28/2019
+ms.date: 04/17/2020
 ---
 
 # Change a project process from Scrum to Agile
@@ -82,7 +82,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/scrum-to-agile/step-2-retry.png)
 
-   Close the wizard dialog and add the missing work item types now.
+   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-wit.md).
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
