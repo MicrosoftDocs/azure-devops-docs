@@ -170,6 +170,117 @@ stages:
     steps:
     - script: echo running UnitTest
 ```
+
+### Loop through parameters
+
+
+You can also loop through your string, number, and boolean parameters. 
+
+#### [Script](#tab/script)
+
+In this example, we loop through parameters and print out the parameter name and value. 
+
+```yaml
+# start.yaml
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+- ${{ each parameter in parameters }}:
+  - script: echo ${{ parameter.Key }} # Outputs 'test_parameter'
+  - script: echo ${{ parameter.Value }} # Outputs 'test_value'
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+#### [PowerShell](#tab/powershell)
+
+In this example, we loop through parameters in a PowerShell task and set each parameter as an environment parameter. 
+
+```yaml
+# start.yaml
+
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+  - task: PowerShell@2
+    env:
+      ${{ each parameter in parameters }}:
+        ${{ parameter.Key }}: ${{ parameter.Value }}
+    inputs:
+      filePath: test_script.ps1
+      pwsh: true
+
+
+
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+```powershell
+# test_script.ps1
+
+Write-Host "Hello, World!"
+Write-Host $env:myStringName
+
+```
+
+---
+
+
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]
