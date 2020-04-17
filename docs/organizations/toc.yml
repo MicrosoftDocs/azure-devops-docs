@@ -35,7 +35,7 @@
       href: /azure/devops/organizations/accounts/add-privacy-policy-url?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
       href: /azure/devops/organizations/accounts/change-time-zone?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization location
+    - name: Change organization region
       href: /azure/devops/organizations/accounts/change-organization-location?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Owner
       href: /azure/devops/organizations/accounts/change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
