@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.assetid: d3a31878-a869-45a9-9bca-f46cc2682596
 ms.author: chcomley
 author: chcomley
-ms.date: 04/16/2020
+ms.date: 04/17/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -84,7 +84,7 @@ If users no longer require access to a team, project, or your organization, you 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
-7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users). Then you're not charged in your next Azure billing cycle.
+7. If you deleted paid users who had Basic or higher features, also [reduce the users in Organization settings](../billing/buy-basic-access-add-users.md#reduce-charges-for-users-who-no-longer-need-access). Then you're not charged in your next Azure billing cycle.
 
    To reduce or cancel users for the next month, make updates before the last day of the current month.
    Your bill won't show the changes until the next month because paid users are monthly purchases.
