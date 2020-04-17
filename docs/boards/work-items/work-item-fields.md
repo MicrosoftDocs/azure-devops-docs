@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 02/04/2019
+ms.date: 04/16/2020
 ---
 
 # Work item fields and attributes
@@ -144,7 +144,7 @@ The following table describes each attribute.
 <tr>
 	<td> </td>
 	<td>Id</td>
-	<td>boolean</td>
+	<td>Integer</td>
 	<td>Specifies the internal ID of the field. </td>
 	<td>No</td>
 </tr>
