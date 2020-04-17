@@ -105,7 +105,7 @@ Each organization gets Azure Artifacts for free, up until they hit 2 GB of stora
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
-2. Repeat steps #2 and #3 from [View storage used](#view-storage-used).
+2. Repeat steps #2 and #3 from [View billed storage](#view-billed-storage).
  
 3. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You're only charged for the storage you use, up to the limit. 
 
@@ -132,7 +132,7 @@ A: Currently, the billing page only shows integers of storage (0 GB, 1 GB, 2 GB,
 
 A: Retention for stored packages can be set via the feed retention policy. See how to [automatically delete old package versions with retention policies](how-to/delete-and-recover-packages.md#automatically-delete-old-package-versions-with-retention-policies).
 
-Symbols retention is set via pipeline and/or build retention. See more information [here](docs/pipelines/policies/retention.md). 
+Symbols retention is set via pipeline and/or build retention. See [retention policies](../pipelines/policies/retention.md) for more details. 
 
 ### Q: How long does it take for deleted artifacts to affect the amount of used storage?
 
