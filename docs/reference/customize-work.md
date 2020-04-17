@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 11/19/2018
+ms.date: 04/17/2020
 ---
 
 # Customize your work tracking experience 
@@ -111,14 +111,20 @@ The following table summarizes the differences between the three supported proce
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Advanced customizations supported (custom link types, team fields, global workflow)</td>
+<td align="left">Advanced customizations supported (custom link types, team fields, global workflow, test management, and select process configuration) (see note 3)</td>
 <td> </td>
 <td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool</td>
+<td align="left">Initial configuration of permissions and security groups (see note 3)</td>
+<td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left">Update Microsoft field mappings using the <a href="xml/upload-or-download-the-microsoft-project-mapping-file.md" data-raw-source="[**TFSFieldMapping**](xml/upload-or-download-the-microsoft-project-mapping-file.md)"><strong>TFSFieldMapping</strong></a> command-line tool (see note 4)</td>
+<td> </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -130,7 +136,7 @@ The following table summarizes the differences between the three supported proce
 </tr>
 <tr>
 <td align="left">Use the <strong>witadmin</strong> command-line tools to list information about projects</td>
-<td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
+<td>  </td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="../media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -153,6 +159,12 @@ The following table summarizes the differences between the three supported proce
 
 1. A process determines the building blocks used to track work. A process template specifies an interdependent-related set of XML definition files that provide the building blocks and initial configuration for tracking work and other functional areas.     
 2. Hosted XML customization supports adding and updating global lists with a process update (subject to limits on maximum size of each list). To learn more, see [Work tracking object limits](../organizations/settings/work/object-limits.md).  
+3. The Inherited process model doesn't support customization of the following features available with customization of process templates. Instead, you customize these areas within the web portal interface on a project-by-project basis. Or, you can use REST APIs or the Azure DevOps CLI command tool.   
+	- Configure areas and iterations  
+	- Work item queries  
+	- Security groups and permissions   
+	- Permissions and access to functional areas such as version control and build  
+4. Support for Office Project integration with Azure DevOps is deprecated starting with Azure DevOps Server 2019. The TFSFieldMapping command is not supported for Azure DevOps Server 2019 nor for Azure DevOps Services. Starting with Visual Studio 2019, the Team Foundation plug-in for Office no longer supports Office Project.
 
 <a id="choose-process-model" />
 
