@@ -178,7 +178,7 @@ You can also loop through your string, number, and boolean parameters.
 
 #### [Script](#tab/script)
 
-In this example, we loop through parameters and print out the parameter name and value. 
+In this example, we loop through parameters and print out each parameter name and value. 
 
 ```yaml
 # start.yaml
@@ -207,8 +207,8 @@ parameters:
 
 steps: 
 - ${{ each parameter in parameters }}:
-  - script: echo ${{ parameter.Key }} # Outputs 'test_parameter'
-  - script: echo ${{ parameter.Value }} # Outputs 'test_value'
+  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Value }}
 ```
 
 ```yaml
