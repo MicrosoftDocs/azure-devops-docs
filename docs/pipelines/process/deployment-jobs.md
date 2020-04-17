@@ -24,6 +24,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently only support the *runOnce*, *rolling*, and the *canary* strategies. 
 
+
 ## Schema
 
 Here's the full syntax to specify a deployment job: 
@@ -58,6 +59,8 @@ When you're deploying application updates, it's important that the technique you
 * In case of failure, run steps to restore to the last known good version. 
 
 We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+
+Deployment jobs use the `$(Pipeline.Workspace)` system variable.
 
 ### Descriptions of life cycle hooks
 
