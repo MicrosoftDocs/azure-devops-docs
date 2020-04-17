@@ -86,4 +86,4 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
 - [Change organization owner](change-organization-ownership.md)
 - [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-- [Delete your organization from Azure DevOps](delete-your-organization.md)
+- [Delete your organization](delete-your-organization.md)
