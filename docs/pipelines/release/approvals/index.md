@@ -6,7 +6,7 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 08/24/2018
+ms.date: 04/18/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -48,7 +48,7 @@ are useful include the following.
 | You want to ensure there are no incidents from the monitoring or incident management system for the app after it's been deployed, before promoting the release. | [Post-deployment gates](gates.md) |
 | After deployment, you want to wait for a specified time before prompting some users for a manual sign out.  | [Post-deployment gates](gates.md) and [post-deployment approvals](approvals.md) |
 | During the deployment pipeline, a user must manually follow specific instructions and then resume the deployment. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
-| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-maninter) | 
+| During the deployment pipeline, you want to prompt the user to enter a value for a parameter used by the deployment tasks, or allow the user to edit the details of this release. | [Manual Intervention](../deploy-using-approvals.md#configure-a-manual-intervention) | 
 | During the deployment pipeline, you want to wait for monitoring or information portals to detect any active incidents, before continuing with other deployment jobs.  | Planned | 
 
 You can combine all three techniques within a release pipeline to fully achieve your own deployment requirements.
