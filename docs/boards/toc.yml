@@ -9,8 +9,10 @@
   href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
   href: get-started/toc.yml
-- name: Boards basics 
+- name: Basic concepts & guidance 
   items:
+  - name: Choose a process
+    href: work-items/guidance/choose-process.md
   - name: About work items
     href: work-items/about-work-items.md
   - name: Basic fields reference
@@ -26,8 +28,6 @@
     displayname: security
   - name: Process guidance
     items:
-    - name: Choose a process
-      href: work-items/guidance/choose-process.md
     - name: Manage process templates
       href: work-items/guidance/manage-process-templates.md
     - name: Configure or add a project portal
@@ -86,9 +86,7 @@
     items:
     - name: Agile glossary
       href: ./work-items/agile-glossary.md
-    - name: Key concepts
       displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
-      href: ./get-started/key-concepts.md 
     - name: Kanban concepts
       href: ./boards/kanban-key-concepts.md
     - name: Scrum concepts

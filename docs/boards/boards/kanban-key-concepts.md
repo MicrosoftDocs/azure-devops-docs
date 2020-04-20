@@ -22,8 +22,6 @@ This article provides a short dictionary of terms and available tools used in tr
 - [Project management and navigation glossary](../../project/navigation/glossary.md)  
 
 
-[!INCLUDE [temp](../../includes/glossary-terms/agile-tools.md)] 
-
 ## Blocker
 
 An issue that prevents work from progressing. You can highlight work that is blocked by using tags and changing the card color. Learn more: [Customize cards, Define style rules to highlight cards](customize-cards.md#define-style-rules-to-highlight-cards).
@@ -31,8 +29,6 @@ An issue that prevents work from progressing. You can highlight work that is blo
 ## Bottleneck
 
 A constraint in the system that limits the flow of work. Identifying bottlenecks makes it easier to reduce their impact and provides a mechanism for controlling work flowing through the process. Learn more: [Split columns, Identify bottlenecks](split-columns.md#id-bottlenecks).
-
-[!INCLUDE [temp](../../includes/glossary-terms/bugs.md)] 
 
 ::: moniker range=">= tfs-2015" 
  
@@ -90,8 +86,6 @@ You can gain valuable metrics and visualize the lead time for a team and a confi
 Live updates is a Kanban board view option which when enabled automatically refreshes the Kanban board as other team members move or reorder cards. Learn more: [Enable live updates](live-updates.md).   
 
 ::: moniker-end   
-
-[!INCLUDE [temp](../../includes/glossary-terms/issues.md)] 
 
 [!INCLUDE [temp](../../includes/glossary-terms/product-backlog.md)] 
 
