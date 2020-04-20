@@ -4,7 +4,7 @@
   href: get-started/what-is-azure-boards.md
 - name: "Why use Azure Boards?"
   displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
-  href: why-use-azure-boards.md
+  href: get-started/why-use-azure-boards.md
 - name: "About teams & Agile tools"
   href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
@@ -12,7 +12,7 @@
 - name: Boards basics 
   items:
   - name: About work items
-    href: about-work-items.md
+    href: work-items/about-work-items.md
   - name: Basic fields reference
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
@@ -167,9 +167,9 @@
 - name: Reference
   items:
   - name: Linking & traceability
-    href: ../queries/link-work-items-support-traceability.md
+    href: ./queries/link-work-items-support-traceability.md
   - name: "Workflow states & categories"
-    href: workflow-and-state-categories.md
+    href: ./work-items/workflow-and-state-categories.md
   - name: Link types 
     href: queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
   - name: "Query fields, operators & macros"
@@ -197,13 +197,13 @@
     - name: Work items 
       href: work-items/work-item-form-keyboard-shortcuts.md
     - name: Kanban board keyboard shortcuts
-      href: kanban-board-keyboard-shortcuts.md
+      href: boards/kanban-board-keyboard-shortcuts.md
     - name: Backlog keyboard shortcuts
-      href: backlogs-keyboard-shortcuts.md
+      href: backlogs/backlogs-keyboard-shortcuts.md
     - name: Query keyboard shortcuts
-      href: queries-keyboard-shortcuts.md
+      href: queries/queries-keyboard-shortcuts.md
     - name: Delivery plan keyboard shortcuts
-      href: delivery-plan-keyboard-shortcuts.md
+      href: plans/delivery-plan-keyboard-shortcuts.md
   - name: Work tracking limits
     href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Client support for work tracking
