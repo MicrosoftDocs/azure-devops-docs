@@ -24,7 +24,7 @@ Here are definitions of key concepts and artifacts used in Azure Boards. For mor
 
 ## Agile methods
 
-The goal of Agile engineering best processes is to rapidly deliver high-quality software. Agile uses a business approach that aligns development with customer needs and company goals. Frequent inspection and adaptation are necessary. Teamwork, self-organization, and accountability are critical to project success.  
+The goal of Agile engineering best processes is to rapidly deliver high-quality software. Agile methods use a business approach that aligns development with customer needs and company goals. Frequent inspection and adaptation are necessary. Teamwork, self-organization, and accountability are critical to project success.  
 
 ## Agile tools
 
