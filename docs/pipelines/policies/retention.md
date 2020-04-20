@@ -188,7 +188,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ### Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. If any retention policies currently apply to the run, they must be removed before the run can be deleted.
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. If any retention policies currently apply to the run, they must be removed before the run can be deleted.
 
 ::: moniker-end
 
