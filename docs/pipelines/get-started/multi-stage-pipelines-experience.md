@@ -103,7 +103,7 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 ![Pipeline run summary context menu](media/pipeline-run-summary-context-menu.png)
 
 > [!NOTE]
-> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then you can delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
+> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
 
 
 ### Jobs and stages
