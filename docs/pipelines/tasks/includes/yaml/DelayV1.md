@@ -5,7 +5,7 @@ jobs:
 - job: RunsOnServer
   pool: Server
   steps:
-    - task: Delay@1
-      inputs:
-        #delayForMinutes: '0' 
+  - task: Delay@1
+    inputs:
+      #delayForMinutes: '0' 
 ```
