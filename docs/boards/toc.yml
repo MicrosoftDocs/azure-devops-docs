@@ -71,7 +71,7 @@
       - name: Engineering
         href: work-items/guidance/cmmi/guidance-engineering.md
       - name: Develop requirements
-       href: work-items/guidance/cmmi/guidance-develop-requirements.md
+        href: work-items/guidance/cmmi/guidance-develop-requirements.md
       - name: Arrange requirements into a product plan
         href: work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md
       - name: Create a solution architecture

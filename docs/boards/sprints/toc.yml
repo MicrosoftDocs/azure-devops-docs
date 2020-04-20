@@ -4,6 +4,9 @@
   href: scrum-sprint-planning-tools.md
 - name: Schedule sprints
   href: define-sprints.md 
+- name: Forecast
+  displayname: velocity, sprints, iterations  
+  href: forecast.md
 - name: Plan and work a sprint 
   items:
   - name: 1. Assign backlog items to a sprint
@@ -25,7 +28,7 @@
     displayname: cards, fields, styles, columns 
     href: customize-taskboard.md
   - name: Change column options
-    href: set-column-options.md
+    href: ../backlogs/set-column-options.md
   - name: Set working days
     href: /azure/devops/organizations/settings/set-working-days?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Best practices, monitoring, & reports
