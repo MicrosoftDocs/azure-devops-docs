@@ -8,7 +8,7 @@
   href: organize-backlog.md
 - name: Forecast
   displayname: velocity, sprints, iterations  
-  href: forecast.md
+  href: ../sprints/forecast.md
 - name: Customize your backlogs
   items:
   - name: Product backlog controls
