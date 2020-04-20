@@ -104,8 +104,6 @@
     href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set up your backlogs and boards
     href: backlogs/set-up-your-backlog.md 
-  - name: Configure team tools
-    href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Permissions & access
     items:
     - name: Default permissions & access (Security)

@@ -12,6 +12,8 @@
     href: /azure/devops/organizations/settings/add-team-administrator?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Add users to a project or team 
     href: /azure/devops/organizations/security/add-users-team-project?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Configure team tools
+    href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Add and manage plans
   items:
   - name: Review team delivery plans
