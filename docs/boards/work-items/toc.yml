@@ -9,7 +9,7 @@
   href: ../backlogs/manage-issues-impediments.md
 - name: Link work items
   href: ../backlogs/add-link.md?
-- name: User your personalized page 
+- name: Use your personalized page 
   items:
   - name: "View & add work items"
     displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
