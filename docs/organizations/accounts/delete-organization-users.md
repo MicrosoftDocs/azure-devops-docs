@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-If users no longer require access to a team, project, or your organization, you can remove their access to the team, project, or organization.  
+If users no longer require access to a team, project, or your organization, you can remove their access.
 
 ## Prerequisites  
 
