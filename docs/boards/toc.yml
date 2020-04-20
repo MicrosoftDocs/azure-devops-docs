@@ -2,125 +2,134 @@
   href: index.yml
 - name: "What is Azure Boards?"
   href: get-started/what-is-azure-boards.md
-- name: "Backlogs, boards, & plans"
-  href: backlogs/backlogs-boards-plans.md
-- name: Best tool for the job
-  href: work-items/best-tool-add-update-link-work-items.md
-- name: Configure & customize
-  href: configure-customize.md
-  displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, 
+- name: "Why use Azure Boards?"
+  displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
+  href: why-use-azure-boards.md
+- name: "About teams & Agile tools"
+  href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
   href: get-started/toc.yml
-- name: Azure Boards & GitHub
+- name: Boards basics 
+  items:
+  - name: About work items
+    href: about-work-items.md
+  - name: Basic fields reference
+    href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
+  - name: "Backlogs, boards, & plans"
+    href: backlogs/backlogs-boards-plans.md
+  - name: "Area & iteration paths"
+    href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Best tool for the job
+    href: work-items/best-tool-add-update-link-work-items.md
+  - name: Quick guide to default permissions and access
+    href: ./get-started/permissions-access-boards.md
+    displayname: security
+  - name: Process guidance
+    items:
+    - name: Choose a process
+      href: work-items/guidance/choose-process.md
+    - name: Manage process templates
+      href: work-items/guidance/manage-process-templates.md
+    - name: Configure or add a project portal
+      href: ../project/configure-or-add-a-project-portal.md 
+    - name: Configure or redirect process guidance
+      href: ../project/configure-or-redirect-process-guidance.md 
+    - name: Agile process guidance
+      href: work-items/guidance/agile-process.md
+    - name: Agile workflow
+      href: work-items/guidance/agile-process-workflow.md
+    - name: Scrum process guidance
+      href: work-items/guidance/scrum-process.md
+    - name: Scrum workflow
+      href: work-items/guidance/scrum-process-workflow.md
+    - name: CMMI process  
+      items:
+      - name: CMMI process guidance
+        href: work-items/guidance/cmmi-process.md
+      - name: CMMI workflow
+        href: work-items/guidance/cmmi-process-workflow.md
+      - name: CMMI background
+        href: work-items/guidance/cmmi/guidance-background-to-cmmi.md
+      - name: Project management
+        href: work-items/guidance/cmmi/guidance-project-management.md
+      - name: Project activities
+        href: work-items/guidance/cmmi/guidance-project-activities.md
+      - name: Project inception
+        href: work-items/guidance/cmmi/guidance-project-inception.md
+      - name: Plan a project
+        href: work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md
+      - name: Manage change
+        href: work-items/guidance/cmmi/guidance-manage-change.md
+      - name: Manage risk
+        href: work-items/guidance/cmmi/guidance-manage-risks.md
+      - name: Iteration activities
+        href: work-items/guidance/cmmi/guidance-iteration-activities.md?
+      - name: Plan an iteration
+        href: work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md
+      - name: Manage issues
+        href: work-items/guidance/cmmi/guidance-manage-issues-cmmi.md
+      - name: Engineering
+        href: work-items/guidance/cmmi/guidance-engineering.md
+      - name: Develop requirements
+       href: work-items/guidance/cmmi/guidance-develop-requirements.md
+      - name: Arrange requirements into a product plan
+        href: work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md
+      - name: Create a solution architecture
+        href: work-items/guidance/cmmi/guidance-create-solution-architecture.md
+      - name: Implement development tasks
+        href: work-items/guidance/cmmi/guidance-implement-development-tasks.md
+      - name: Build a product
+        href: work-items/guidance/cmmi/guidance-build-product.md
+      - name: Track bugs
+        href: work-items/guidance/cmmi/track-bugs.md
+  - name: Key concepts
+    items:
+    - name: Agile glossary
+      href: ./work-items/agile-glossary.md
+    - name: Key concepts
+      displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
+      href: ./get-started/key-concepts.md 
+    - name: Kanban concepts
+      href: ./boards/kanban-key-concepts.md
+    - name: Scrum concepts
+      href: ./sprints/scrum-key-concepts.md
+- name: Configure & customize
+  items:
+  - name: Configure & customize
+    href: configure-customize.md
+    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, 
+  - name: Define area paths & assign to a team 
+    href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Define iteration (sprints) & configure team iterations 
+    href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Set up your backlogs and boards
+    href: backlogs/set-up-your-backlog.md 
+  - name: Configure team tools
+    href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Permissions & access
+    items:
+    - name: Default permissions & access (Security)
+      href: /azure/devops/organizations/security/permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Set work tracking and plan permissions 
+      href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Grant or restrict permissions to select tasks
+      href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Connect Azure Boards & GitHub
   href: github/toc.yml 
-- name: Work items
+- name: Define and view work items
   href: work-items/toc.yml 
-- name: Boards
+- name: Implement Kanban (Boards)
   href: boards/toc.yml 
-- name: Backlogs
+- name: Define & manage backlogs (Backlogs)
   href: backlogs/toc.yml 
-- name: Sprints
+- name: Implement Scrum (Sprints)
   href: sprints/toc.yml 
-- name: Queries
+- name: Query and search 
   href: queries/toc.yml 
-- name: Plans & Agile at Scale
+- name: Define & manage plans, Agile at Scale 
   href: plans/toc.yml
-- name: Permissions & access
-  items:
-  - name: Default permissions & access (Security)
-    href: /azure/devops/organizations/security/permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Set work tracking and plan permissions 
-    href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Grant or restrict permissions to select tasks
-    href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: Process guidance
-  items:
-  - name: Choose a process
-    href: work-items/guidance/choose-process.md
-  - name: Manage process templates
-    href: work-items/guidance/manage-process-templates.md
-  - name: Configure or add a project portal
-    href: ../project/configure-or-add-a-project-portal.md 
-  - name: Configure or redirect process guidance
-    href: ../project/configure-or-redirect-process-guidance.md 
-  - name: Agile process guidance
-    href: work-items/guidance/agile-process.md
-  - name: Agile workflow
-    href: work-items/guidance/agile-process-workflow.md
-  - name: Scrum process guidance
-    href: work-items/guidance/scrum-process.md
-  - name: Scrum workflow
-    href: work-items/guidance/scrum-process-workflow.md
-  - name: CMMI process  
-    items:
-    - name: CMMI process guidance
-      href: work-items/guidance/cmmi-process.md
-    - name: CMMI workflow
-      href: work-items/guidance/cmmi-process-workflow.md
-    - name: CMMI background
-      href: work-items/guidance/cmmi/guidance-background-to-cmmi.md
-    - name: Project management
-      href: work-items/guidance/cmmi/guidance-project-management.md
-    - name: Project activities
-      href: work-items/guidance/cmmi/guidance-project-activities.md
-    - name: Project inception
-      href: work-items/guidance/cmmi/guidance-project-inception.md
-    - name: Plan a project
-      href: work-items/guidance/cmmi/guidance-plan-a-project-cmmi.md
-    - name: Manage change
-      href: work-items/guidance/cmmi/guidance-manage-change.md
-    - name: Manage risk
-      href: work-items/guidance/cmmi/guidance-manage-risks.md
-    - name: Iteration activities
-      href: work-items/guidance/cmmi/guidance-iteration-activities.md?
-    - name: Plan an iteration
-      href: work-items/guidance/cmmi/guidance-plan-an-iteration-cmmi.md
-    - name: Manage issues
-      href: work-items/guidance/cmmi/guidance-manage-issues-cmmi.md
-    - name: Engineering
-      href: work-items/guidance/cmmi/guidance-engineering.md
-    - name: Develop requirements
-      href: work-items/guidance/cmmi/guidance-develop-requirements.md
-    - name: Arrange requirements into a product plan
-      href: work-items/guidance/cmmi/arrange-requirements-into-a-product-plan.md
-    - name: Create a solution architecture
-      href: work-items/guidance/cmmi/guidance-create-solution-architecture.md
-    - name: Implement development tasks
-      href: work-items/guidance/cmmi/guidance-implement-development-tasks.md
-    - name: Build a product
-      href: work-items/guidance/cmmi/guidance-build-product.md
-    - name: Track bugs
-      href: work-items/guidance/cmmi/track-bugs.md
-- name: Add and manage teams
-  items:
-  - name: About teams & Agile tools
-    href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: When to add a team or project
-    href: /azure/devops/organizations/projects/about-projects?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Quickstarts
-    items:
-    - name: Define area paths & assign to a team 
-      href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Define iteration (sprints) & configure team iterations 
-      href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Add a team
-      href: /azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Add a team administrator
-      href: /azure/devops/organizations/settings/add-team-administrator?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Add users to a project or team 
-      href: /azure/devops/organizations/security/add-users-team-project?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: How-to Guides
-    items:    
-    - name: Configure team tools
-      href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Select backlog levels
-      href: /azure/devops/organizations/settings/select-backlog-navigation-levels?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Show bugs on backlogs & boards
-      href: /azure/devops/organizations/settings/show-bugs-on-backlog?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Set working days
-      href: /azure/devops/organizations/settings/set-working-days?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Set team favorites
-      href: /azure/devops/project/navigation/set-favorites?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+- name: Integrations & extensions
+  href: extensions/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project
@@ -149,26 +158,24 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
-- name: Integrations & extensions
-  href: extensions/toc.yml
 - name: Troubleshooting
   items:
   - name: FAQs 
     href: faqs.md 
-  - name: Set up your backlogs and boards
-    href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
 - name: Reference
   items:
-  - name: Work item form controls
-    href: work-items/work-item-form-controls.md
-  - name: Keyboard shortcuts 
-    href: work-items/work-item-form-keyboard-shortcuts.md
+  - name: Linking & traceability
+    href: ../queries/link-work-items-support-traceability.md
+  - name: "Workflow states & categories"
+    href: workflow-and-state-categories.md
   - name: Link types 
     href: queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
-  - name: Define a work item URL
-    href: work-items/work-item-url-hyperlink.md
+  - name: "Query fields, operators & macros"
+    href: queries/query-operators-variables.md
+  - name: WIQL syntax
+    href: queries/wiql-syntax.md
   - name: Field reference
     items:
     - name: Work item field index
@@ -185,8 +192,22 @@
       href: work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md
     - name: Review meeting fields
       href: work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
+  - name: Keyboard shortcuts
+    items:
+    - name: Work items 
+      href: work-items/work-item-form-keyboard-shortcuts.md
+    - name: Kanban board keyboard shortcuts
+      href: kanban-board-keyboard-shortcuts.md
+    - name: Backlog keyboard shortcuts
+      href: backlogs-keyboard-shortcuts.md
+    - name: Query keyboard shortcuts
+      href: queries-keyboard-shortcuts.md
+    - name: Delivery plan keyboard shortcuts
+      href: delivery-plan-keyboard-shortcuts.md
   - name: Work tracking limits
     href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Client support for work tracking
+    href: /azure/devops/user-guide/tools?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: REST API Reference
   items:
   - name: Work Items
