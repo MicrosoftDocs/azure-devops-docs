@@ -5,7 +5,7 @@ description: Learn how to navigate using the multi-stage pipelines user interfac
 ms.topic: reference
 ms.author: sdanie
 author: steved0x
-ms.date: 04/17/2020
+ms.date: 04/20/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -103,10 +103,8 @@ From the context menu you can download logs, add tags, edit the pipeline, delete
 ![Pipeline run summary context menu](media/pipeline-run-summary-context-menu.png)
 
 > [!NOTE]
-> You can't delete a run if retention policies are conf
+> You can't delete a run if the run is retained. If you don't see **Delete**, choose **Stop retaining run**, and then you can delete the run. If you see both **Delete** and **View retention releases**, one or more configured retention policies still apply to your run. Choose **View retention releases**, delete the policies (only the policies for the selected run are removed), and then delete the run.
 
-
-TF900561: The following build cannot be deleted because it is marked as Retain Indefinitely: 20200327.1. Remove the Retain Indefinitely flag to allow deletion of this build.
 
 ### Jobs and stages
 
