@@ -38,6 +38,8 @@
   items:
   - name: Kanban best practices
     href: best-practices-kanban.md
+  - name: Kanban concepts
+    href: kanban-key-concepts.md
   - name: View/configure CFD
     href: ../../report/dashboards/cumulative-flow.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Configure Lead/Cycle time widget
