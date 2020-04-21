@@ -116,16 +116,14 @@
   href: work-items/toc.yml 
 - name: Implement Kanban (Boards)
   href: boards/toc.yml 
-- name: Define & manage backlogs (Backlogs)
+- name: Define backlogs (Backlogs)
   href: backlogs/toc.yml 
 - name: Implement Scrum (Sprints)
   href: sprints/toc.yml 
-- name: Query and search 
+- name: Query and search (Queries)
   href: queries/toc.yml 
-- name: Define & manage plans, Agile at Scale 
+- name: View team plans, Agile at Scale (Plans)
   href: plans/toc.yml
-- name: Integrations & extensions
-  href: extensions/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
   - name: Work in Excel or Project
@@ -154,10 +152,14 @@
       href: backlogs/office/resolve-excel-data-validation-errors.md
     - name: Resolve invalid links in an Excel tree list
       href: backlogs/office/resolve-excel-invalid-links-tree-list.md
+- name: Integrations & extensions
+  href: extensions/toc.yml
 - name: Troubleshooting
   items:
   - name: FAQs 
     href: faqs.md 
+  - name: Set up your backlogs and boards
+    href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
 - name: Reference
@@ -168,6 +170,8 @@
     href: ./work-items/workflow-and-state-categories.md
   - name: Link types 
     href: queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
+  - name: "Rollup of work and other fields"
+    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: "Query fields, operators & macros"
     href: queries/query-operators-variables.md
   - name: WIQL syntax
@@ -189,17 +193,7 @@
     - name: Review meeting fields
       href: work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
   - name: Keyboard shortcuts
-    items:
-    - name: Work items 
-      href: work-items/work-item-form-keyboard-shortcuts.md
-    - name: Kanban board keyboard shortcuts
-      href: boards/kanban-board-keyboard-shortcuts.md
-    - name: Backlog keyboard shortcuts
-      href: backlogs/backlogs-keyboard-shortcuts.md
-    - name: Query keyboard shortcuts
-      href: queries/queries-keyboard-shortcuts.md
-    - name: Delivery plan keyboard shortcuts
-      href: plans/delivery-plan-keyboard-shortcuts.md
+    href: /azure/devops/project/navigation/keyboard-shortcuts?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Work tracking limits
     href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
   - name: Client support for work tracking
@@ -234,8 +228,6 @@
     href: /azure/devops/agile/what-is-scrum
 - name: Resources
   items:
-  - name: "Rollup of work and other fields"
-    href: ../reference/xml/support-rollup-of-work-and-other-fields.md
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
