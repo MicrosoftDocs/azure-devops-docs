@@ -1,23 +1,20 @@
 ﻿---
 title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Services, TFS 2017
-description: Use Microsoft Teams with your Azure DevOps organization
+description: Use Microsoft Teams with your Azure DevOps Services or TFS organization
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.date: 04/21/2020
 ---
 
-# Create a service hook for Azure DevOps Services and Team Foundation Server (TFS) with Microsoft Teams
+# Create a service hook with Microsoft Teams
 
 >[!NOTE]
 > If you're only interested in integrating Microsoft Teams with Azure Pipelines, we recommend you use our 
 [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration).
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
-
-> [!IMPORTANT]
-> This article applies to Azure DevOps Services and to TFS **2017.2** and later versions.  
 
 In this article, learn how to configure a service hook to connect with Microsoft Teams. The functionality is the same across Azure DevOps Services and Team Foundation Server. But, the configuration process is different for creating a service hook with Microsoft Teams. You can see activity about your Azure DevOps Services or Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 
@@ -27,13 +24,15 @@ In this article, learn how to configure a service hook to connect with Microsoft
 * Builds
 * Release deployments and approvals
 
-You can also bring your Azure DevOps Services Kanban board directly into Microsoft Teams as a tab. 
+You can also bring your Azure DevOps Services Kanban board directly into Microsoft Teams as a tab.
+
+> [!IMPORTANT]
+> This article applies to Azure DevOps Services and to TFS **2017.2** and later versions.  
 
 ## Prerequisites
 
 - You must be a member of the Project Administrators or [Project Collection Administrators group](../../organizations/security/lookup-organization-owner-admin.md) to configure the connector.
-- [Third-party application access via OAuth for the 
-organization](/azure/devops/organizations/accounts/change-application-access-policies#change-application-access-policies) must be enabled. 
+- Third-party application access via OAuth must be enabled for the organization. 
 
   To enable this setting, navigate to **Organization settings** > **Security** > **Policies**, and then set the **Third-party application access via OAuth for the organization** setting to **On**.
 
@@ -133,7 +132,7 @@ Bring in your teams kanban board or favorite dashboard directly into Microsoft T
    <br>
    <img alt="Select Kanban board or Dashboard tab configuration" src="./media/teams/Teams Kanban board 6.png" style="width:80%;" />
 
-## Q & A
+## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="m-qanda" -->
 
@@ -143,7 +142,7 @@ A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
 create two additional subscriptions.
 
-### Q: I don't see my organization when trying to connect Microsoft Teams 
+### Q: Why don't I see my organization when trying to connect Microsoft Teams?
 
 A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
 
