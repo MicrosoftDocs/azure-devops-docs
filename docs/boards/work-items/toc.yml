@@ -37,7 +37,7 @@
     href: ../backlogs/connect-work-items-to-git-dev-ops.md
   - name: View deployment stages on work item form
     href: work-item-deployments-control.md
-- name: Bulk modify, delete, import, or export 
+- name: Modify, delete, import, or export 
   items:
   - name: Bulk modify (web)
     href: ../backlogs/bulk-modify-work-items.md
@@ -47,7 +47,7 @@
     href: ../queries/import-work-items-from-csv.md 
     displayname: import, export, csv
   - name: Move or change work item type
-    href: ../backlogs/remove-delete-work-items.md
+    href: ../backlogs/move-change-type.md
   - name: Remove or delete work items
     href: ../backlogs/remove-delete-work-items.md
   - name: Delete test artifacts
