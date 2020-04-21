@@ -14,12 +14,12 @@ ms.date: 04/21/2020
 > If you're only interested in integrating Microsoft Teams with Azure Pipelines, we recommend you use our 
 [Azure Pipelines app for Microsoft Teams](https://aka.ms/AzurePipelinesTeamsIntegration).
 
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
-<b>Azure DevOps Services | TFS 2017.2</b> 
+> [!IMPORTANT]
+> This article applies to Azure DevOps Services and to TFS **2017.2** and later versions.  
 
-This article applies to Azure DevOps Services and to TFS 2017.2 and later versions.  
- 
-See activity about your Azure DevOps Services or Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
+In this article, learn how to configure a service hook to connect with Microsoft Teams. The functionality is the same across Azure DevOps Services and Team Foundation Server. But, the configuration process is different for creating a service hook with Microsoft Teams. You can see activity about your Azure DevOps Services or Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 
 * Work item updates
 * Pull requests
@@ -27,13 +27,11 @@ See activity about your Azure DevOps Services or Team Foundation Server (2017.2 
 * Builds
 * Release deployments and approvals
 
-Also bring your Azure DevOps Services Kanban board directly into Microsoft Teams as a tab. 
-
-The functionality is the same across Azure DevOps Services and Team Foundation Server. But, the configuration process is different for creating a service hook with Microsoft Teams. Check out the following sections for details. 
+You can also bring your Azure DevOps Services Kanban board directly into Microsoft Teams as a tab. 
 
 ## Prerequisites
 
-- You must be a member of the Project Administrators or Project Collection Administrators group to configure the connector.
+- You must be a member of the Project Administrators or [Project Collection Administrators group](../../organizations/security/lookup-organization-owner-admin.md) to configure the connector.
 - [Third-party application access via OAuth for the 
 organization](/azure/devops/organizations/accounts/change-application-access-policies#change-application-access-policies) must be enabled. 
 
