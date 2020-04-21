@@ -6,7 +6,7 @@ ms.topic: reference
 ms.assetid: ad884ca2-732e-4b85-b2d3-ed71bcbd2788
 ms.author: vijayma
 author: vijayma
-ms.date: 05/04/2018
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -26,11 +26,10 @@ Use this task to provide npm credentials to an `.npmrc` file in your repository 
 
 ## Arguments
 
-| Argument                                                                                           | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `workingFile`<br/>.npmrc file to authenticate   | Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder, for example &quot;/packages/mypackage.npmrc&quot;. |
-| `customEndpoint`<br/>Credentials for registries outside this organization/collection | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-npm">npm service connection</a> names for registries outside this organization/collection. The specified .npmrc file must contain registry entries corresponding to the service connections. If you only need registries in this organization/collection, leave this blank; the build’s credentials are used automatically. |
-| [!INCLUDE [temp](../includes/control-options-arguments-md.md)] | |
+|Argument| Description |
+| -------|------------ |
+| `workingFile`<br/>.npmrc file to authenticate | Path to the .npmrc file that specifies the registries you want to work with. Select the file, not the folder. <br/>For example \/packages/mypackage.npmrc"|
+| `customEndpoint`<br/>Credentials for registries outside this organization/collection | (Optional) Comma-separated list of [npm service connection](../../library/service-endpoints.md)names for registries outside this organization/collection. The specified `.npmrc` file must contain registry entries corresponding to the service connections. If you only need registries in this organization/collection, leave this blank. The build’s credentials are used automatically.|
 
 
 ## Examples
