@@ -106,7 +106,7 @@ trigger:
     - docs/README.md
 ```
 
-When you specify paths, you also need to explicitly specify branches to trigger on. 
+When you specify paths, you must explicitly specify branches to trigger on. You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the branch filter.
 
 > **Tips:**
 >  * Paths are always specified relative to the root of the repository.
