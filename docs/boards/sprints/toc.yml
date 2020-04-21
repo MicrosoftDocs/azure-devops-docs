@@ -35,6 +35,8 @@
   items:
   - name: Scrum best practices
     href: best-practices-scrum.md
+  - name: Scrum concepts
+    href: scrum-key-concepts.md
   - name: View/configure sprint burndown
     href: ../../report/dashboards/configure-sprint-burndown.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
     displayname: charts, in-context charts, in context 
