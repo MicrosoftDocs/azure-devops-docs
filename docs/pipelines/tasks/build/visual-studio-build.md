@@ -50,7 +50,7 @@ msbuild, visualstudio
       <td>
          <p>(Required) If you want to build a single solution, click the <strong>...</strong> button and select the solution.</p>
          <p>If you want to build multiple solutions, specify search criteria. You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**.sln` searches for all <em>.sln</em> files in all subdirectories.</p>
-         <p>Make the sure the solutions you specify are downloaded by this build pipeline. On the Repository tab:</p>
+         <p>Make sure the solutions you specify are downloaded by this build pipeline. On the Repository tab:</p>
          <ul>
             <li>
                If you use TFVC, make sure that the solution is a child of one of the mappings on the Repository tab.
