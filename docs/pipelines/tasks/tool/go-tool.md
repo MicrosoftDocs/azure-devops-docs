@@ -29,7 +29,7 @@ tools cache and add it to the PATH. Use the task to change the version of Go Lan
 
 |Argument|Description|
 |--- |--- |
-|`version`<br/>Version|(Required) Go tool version to download and install. **Example:** 1.9.3 <br/>Defalt value: `1.10`|
+|`version`<br/>Version|(Required) Go tool version to download and install. **Example:** 1.9.3 <br/>Default value: `1.10`|
 |`goPath`<br/>GOPATH|(Optional) Value for the GOPATH environment variable.|
 |`goBin`<br/>GOBIN|(Optional) Value for the GOBIN environment variable.|
 
