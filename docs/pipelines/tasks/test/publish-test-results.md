@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 06/27/2019
+ms.date: 04/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -85,17 +85,15 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 | Argument | Description |
 | -------- | ----------- |
-| **Test result formats** | Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) |
-| **Test results files** | Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
-| **Search folder** | Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
-| **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly.  |
-| **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
-| **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
-| **Fully Qualified Name** | This is the reference of the namespace, test method, and test class used to publish the test result. The format of FQN is namespace.testclass.methodname. It is not supported in the UI but is available via API.  |
-| **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |
-| **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
-| **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
+|`testResultsFiles` <br/>Test results files| (Required) Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). <br/>For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. <br/>Default value: `**/TEST-*.xml`|
+|`searchFolder`<br/>Search folder| (Optional) Folder to search for the test result files. <br/>Default value: `$(System.DefaultWorkingDirectory)`|
+|`mergeTestResults`<br/>Merge test results| When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly. <br/>Default value: `false`|
+|`failTaskOnFailedTests`<br/>Fail if there are test failures| (Optional) When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. <br/>Default value: `false`|
+|`testRunTitle`<br/>Test run title| (Optional) Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
+|`platform`<br/>Build Platform| (Optional) Build platform against which the test run should be reported. <br/> For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. <br/>Argument alias: `buildPlatform`|
+|`configuration`<br/>Build Configuration| Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. <br/>Argument alias: `buildConfiguration`|
+|`publishRunAttachments`<br/>Upload test results files| (Optional) When selected, the task will upload all the test result files as attachments to the test run. <br/>Default value: `true`|
 
 <a name="resultmapping"></a>
 
