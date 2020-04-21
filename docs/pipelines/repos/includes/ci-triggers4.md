@@ -29,6 +29,7 @@ If your Git repo is in Azure Repos or TFS, you can also specify path filters to 
 >  * If you exclude a path, you cannot also include it unless you qualify it to a deeper folder. For example if you exclude _/tools_ then you could include _/tools/trigger-runs-on-these_
 >  * The order of path filters doesn't matter.
 >  * Paths in Git are case-sensitive. Be sure to use the same case as the real folders.
+>  * You can't trigger a pipeline with only a path filter; you must also have a branch filter, and the changed files that match the path filter must be from a branch that matches the path filter.
 
 #### Example
 
