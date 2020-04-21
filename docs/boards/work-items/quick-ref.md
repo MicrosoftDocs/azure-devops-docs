@@ -44,7 +44,7 @@ Use this index to quickly access concepts related to work items and information 
 <li><a href="../backlogs/backlogs-boards-plans.md" data-raw-source="[Delivery plans](../backlogs/backlogs-boards-plans.md)">Delivery plans</a></li>
 <li><a href="../../organizations/settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)">Inheritance process model</a></li>
 <li><a href="../../organizations/settings/about-areas-iterations.md" data-raw-source="[Iteration Paths](../../organizations/settings/about-areas-iterations.md)">Iteration Paths</a></li>
-<li><a href="work-item-form-keyboard-shortcuts.md" data-raw-source="[Keyboard shortcuts](work-item-form-keyboard-shortcuts.md)">Keyboard shortcuts</a></li>
+<li><a href="../../project/navigation/keyboard-shortcuts.md">Keyboard shortcuts</a></li>
 </ul>
 </td>
 <td width="33%">
