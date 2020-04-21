@@ -102,6 +102,16 @@
     href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Set up your backlogs and boards
     href: backlogs/set-up-your-backlog.md 
+  - name: Add and manage teams
+    items:
+    - name: Add a team
+      href: /azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Add a team administrator
+      href: /azure/devops/organizations/settings/add-team-administrator?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Add users to a project or team 
+      href: /azure/devops/organizations/security/add-users-team-project?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+    - name: Configure team tools
+      href: /azure/devops/organizations/settings/manage-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Permissions & access
     items:
     - name: Default permissions & access (Security)
@@ -122,7 +132,7 @@
   href: sprints/toc.yml 
 - name: Query and search (Queries)
   href: queries/toc.yml 
-- name: View team plans, Agile at Scale (Plans)
+- name: View delivery plans (Plans)
   href: plans/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
