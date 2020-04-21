@@ -3,7 +3,7 @@ title: Maven Authenticate task (for task runners)
 ms.custom: seodec18
 description: Provides credentials for Azure Artifacts feeds and external Maven repositories.
 ms.topic: reference
-ms.date: 08/06/2019
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,11 +17,10 @@ Provides credentials for Azure Artifacts feeds and external Maven repositories i
 
 ## Arguments
 
-| Argument                                                                                           | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `artifactsFeeds`<br/>My feeds (select below)                                                        | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
-| `mavenServiceConnections`<br/>Feeds from external organizations                           | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank. |
-| [!INCLUDE [temp](../includes/control-options-arguments.md)] |
+| Argument | Description |
+| ---------| ----------- |
+| `artifactsFeeds`<br/>My feeds (select below) | (Optional) Comma-separated list of Azure Artifacts feed names to authenticate with Maven. If you only need authentication for external maven repositories, leave this field blank. |
+| `mavenServiceConnections`<br/>Feeds from external organizations | (Optional) Comma-separated list of <a href="~/pipelines/library/service-endpoints.md#sep-maven" data-raw-source="[Maven service connection](~/pipelines/library/service-endpoints.md#sep-maven)">Maven service connection</a> names from external organizations to authenticate with Maven. If you only needs authentication for Azure Artifacts feeds, leave this field blank.|
 
 ## Examples
 
