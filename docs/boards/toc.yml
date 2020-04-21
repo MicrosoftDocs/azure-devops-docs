@@ -182,10 +182,6 @@
     href: queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
   - name: "Rollup of work and other fields"
     href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: "Query fields, operators & macros"
-    href: queries/query-operators-variables.md
-  - name: WIQL syntax
-    href: queries/wiql-syntax.md
   - name: Field reference
     items:
     - name: Work item field index
