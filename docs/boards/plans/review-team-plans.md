@@ -195,7 +195,7 @@ You can interact with the plan in the following ways:
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
 - Click the ![Settings gear icon](../media/icons/team-settings-gear-icon.png) settings gear to edit the plan and [change the fields displayed on the cards](#card-settings).   
 
-For a list of all keyboard shortcuts, see [Keyboard shortcuts to interact with delivery plans](delivery-plan-keyboard-shortcuts.md).  
+For a list of all keyboard shortcuts, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).  
 
 <!--- QUESTION: What determines the order of team rows? --> 
 
@@ -243,7 +243,7 @@ For additional resources for working with multiple teams, see these additional t
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
-- [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)  
 
 
 <a id="plans-rest-api">  </a>

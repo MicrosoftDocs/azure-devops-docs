@@ -103,5 +103,5 @@ The filter criteria ignores the following characters when the field value starts
 
 - [Tags](../queries/add-tags-to-work-items.md) 
 - [Set column options](set-column-options.md)  
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
