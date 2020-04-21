@@ -8,7 +8,7 @@ ms.assetid: cc4fd0d6-b24f-48ec-8b90-8e5f18e18d65
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -31,8 +31,9 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Change organization region
 
-To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/), and select the Quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
+To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/), and then select the quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
 
-## Other resources
+## Related articles
 
-For information about worldwide data storage, see [Data locations for Azure DevOps](../security/data-location.md).
+- [Worldwide data regions for Azure DevOps](../security/data-location.md).
+
