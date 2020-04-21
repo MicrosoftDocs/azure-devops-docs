@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: dastahel
 author: davidstaheli
 ms.reviewer: lukillgo
-ms.date: 12/07/2018
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -39,8 +39,8 @@ This task will fail if no Ruby versions are found in Agent.ToolsDirectory. Avail
 
 | Argument | Description |
 |----------|-------------|
-| Version spec | Version range or exact version of a Ruby version to use. |
-| Add to PATH | Whether to prepend the retrieved Ruby version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. |
+|`versionSpec`<br/> Version spec | (Required) Version range or exact version of a Ruby version to use. <br/>Default value: `>= 2.4`|
+|`addToPath`<br/> Add to PATH | (Optional) Whether to prepend the retrieved Ruby version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable.<br/>Default value: `true` |
 
 If the task completes successfully, the task's output variable will contain the directory of the Ruby installation.
 
