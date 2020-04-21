@@ -7,7 +7,7 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -38,7 +38,7 @@ Also, in the [Azure portal](https://portal.azure.com), you must have Project Col
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
 
-A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps.
+A: Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
