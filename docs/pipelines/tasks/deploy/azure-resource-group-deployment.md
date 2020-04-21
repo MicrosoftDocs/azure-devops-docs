@@ -74,11 +74,11 @@ You can identify if the timeout is from portal, by checking for the portal deplo
 
 ### Azure Pipelines Agent
 
-If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this doc for more details: https://docs.microsoft.com/en-us/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this doc for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
 
 ### Portal Deployment
 
-Check out this doc on how to identify if the error came from Azure Portal: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal
+Check out this doc on how to identify if the error came from Azure Portal: https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal
 
 In case of portal deployment, try setting "timeoutInMinutes" in the ARM template to "0". If not specified, the value assumed is 60 minutes. 0 makes sure the deployment will run for as long as it can to succeed.
 
@@ -89,7 +89,7 @@ This could also be happening because of transient issues in the system. Keep an 
 
 This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid. 
 
-In addition, refer to this doc regarding structure and syntax of ARM Templates: https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax
+In addition, refer to this doc regarding structure and syntax of ARM Templates: https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax
 
 
 ## Open source
