@@ -1,6 +1,6 @@
 ﻿---
 title: Troubleshoot access via Azure AD
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
@@ -184,9 +184,17 @@ or the group management tools that your organization supports.
 
 ### Q: How do I tell the difference between an Azure DevOps group and an Azure AD group?
 
-A: On the group's identity information, check the group's source.
+A: The Azure DevOps UI indicates membership scope using brackets `[]`. For example, consider this permissions settings page:
 
-![Screenshot of group identity information](media/manage-azure-ad-groups/checkidentitysourceaad.png)
+![Permissions Settings with various scopes](media/manage-azure-ad-groups/permissions-scope-example.png)
+
+| Scope Name | Defintion |
+|:--|:--|
+| `[fabrikam-fiber]` | Membership is defined in Organization Settings |
+| `[Project Name]` | Membership is defined in Project Settings |
+| `[TEAM FOUNDATION]` | Membership is defined _directly_ in Azure AD | 
+
+Note: if you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
 
 ### Q: Why doesn't Users show all Azure AD group members?
 
