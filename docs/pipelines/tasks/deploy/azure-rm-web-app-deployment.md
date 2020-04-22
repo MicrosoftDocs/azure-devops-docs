@@ -7,7 +7,7 @@ ms.manager: dastahel
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/24/2020
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -289,11 +289,11 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
+    ![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+    ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
