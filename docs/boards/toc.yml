@@ -225,7 +225,7 @@
   - name: Process customization 
     href: ../reference/index.md
   - name: Client support 
-    href: ../user-guide/tools
+    href: ../user-guide/tools.md
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 
