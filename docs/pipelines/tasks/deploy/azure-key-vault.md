@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -71,9 +71,9 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-| **Azure Subscription** | Required. Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-| **Key Vault** | Required. Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-| **Secrets filter** | Required. A comma-separated list of secret names to be downloaded. Use the default value `*` to download all the secrets from the vault. |
+|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
 
 > [!NOTE]
 > Values are retrieved as strings. For example, if there is a secret named **connectionString**,
