@@ -1,21 +1,21 @@
 ---
-title: Keyboard shortcuts for web portal and Team Explorer
+title: Keyboard shortcuts  
 titleSuffix: Azure Boards
-description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
+description: Keyboard shortcuts for the web portal for Azure Boards and Team Explorer
 ms.custom: Navigation
-ms.technology: devops-collab
+ms.technology: devops-agile
 ms.topic: reference
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
 ms.date: 04/22/2020 
-monikerRange: '>= tfs-2013'
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]    
 
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
@@ -55,64 +55,49 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 
 
 
-::: moniker range=">= tfs-2015"
 
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
-::: moniker-end
+
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
 > The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
 
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
-::: moniker range=">= tfs-2015"
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 
 ## Work Items 
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Work item form shortcuts
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
-::: moniker range=">= tfs-2015"
+::: moniker-end
 
 ## Boards 
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
-
 
 ## Backlogs 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
-
-
-::: moniker range=">= tfs-2015"  
-
 ## Queries 
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -120,11 +105,11 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
-::: moniker-end
+
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
-::: moniker range=">= tfs-2015"
+::: moniker-end
 
 ## Team Explorer navigational shortcuts
 
@@ -166,7 +151,7 @@ You can use query results shortcuts whenever you have a list of work items, such
 - [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Web portal navigation](../../navigation/index.md) 
+- [Web portal navigation](../../project/navigation/index.md) 
 
 ### Install Team Explorer  
 
