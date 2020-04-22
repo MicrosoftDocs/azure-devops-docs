@@ -37,7 +37,7 @@ tf configure [PathOfTeamProject] [/collection:TeamProjectCollectionUrl][/login:u
 |**Argument**|**Description**|
 |---|---|
 |*PathOfTeamProject*|Path of the project whose configuration settings an administrator can view, change, or both.|
-|*TeamProjectCollectionUrl*|The URL of the project collection that contains the project that you specified (for example, `http://myserver:8080/tfs/DefaultCollection`).|
+|*TeamProjectCollectionUrl*|The URL of the project collection that contains the project that you specified (for example, http://myserver:8080/tfs/DefaultCollection).|
 |*username*|Provides a value to the **/login** option. You can specify a username value as either *DOMAIN\UserName* or *UserName.*|
 
 |**Option**|**Description**|
