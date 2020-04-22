@@ -28,6 +28,8 @@ Then, read [Plan and track work](plan-track-work.md) to start adding and trackin
 
 If you are tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for additional configurations and resources that you may want to make. 
 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
 ## Related articles
 
 - [Why use Azure Boards?](why-use-azure-boards.md)

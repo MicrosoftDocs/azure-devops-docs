@@ -111,7 +111,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify work items (web)](../backlogs/bulk-modify-work-items.md)">Bulk modify work items (web)</a></li>
 <br/>
 <li><a href="../backlogs/work-item-template.md#capture-a-work-item-as-a-template" data-raw-source="[Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)">Capture work item as a template</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
+<li><a href="../backlogs/move-change-type.md#change-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
 <li><a href="../backlogs/copy-clone-work-items.md" data-raw-source="[Copy or clone a work item](../backlogs/copy-clone-work-items.md)">Copy or clone a work item</a></li>
 <li><a href="work-item-form-controls.md#copy-the-url" data-raw-source="[Copy work item URL](work-item-form-controls.md#copy-the-url)">Copy work item URL</a></li>
 <li><a href="../backlogs/copy-list.md" data-raw-source="[Copy list of work items](../backlogs/copy-list.md)">Copy list of work items</a></li>
@@ -141,12 +141,12 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../queries/using-queries.md" data-raw-source="[List work items](../queries/using-queries.md)">List work items</a></li>
 <li><a href="../../project/wiki/wiki-markdown-guidance.md" data-raw-source="[List work items in a wiki](../../project/wiki/wiki-markdown-guidance.md)">List work items in a wiki</a></li>
 <br/>
-<li><a href="../backlogs/manage-bugs.md" data-raw-source="[Manage bugs](../backlogs/manage-bugs.md)">Manage bugs</a></li>
-<li><a href="../backlogs/manage-issues-impediments.md" data-raw-source="[Manage issues or impediments](../backlogs/manage-issues-impediments.md)">Manage issues or impediments</a></li>
+<li><a href="../backlogs/manage-bugs.md">Manage bugs</a></li>
+<li><a href="../backlogs/manage-issues-impediments.md">Manage issues or impediments</a></li>
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-<li><a href="../backlogs/move-change-type.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/move-change-type.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
+<li><a href="../backlogs/move-change-type.md#move">Move work items to another project</a></li>
 </ul>
 </td>
 <td width="34%">
@@ -211,7 +211,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify work items (web)](../backlogs/bulk-modify-work-items.md)">Bulk modify work items (web)</a></li>
 <br/>
 <li><a href="../backlogs/work-item-template.md#capture-a-work-item-as-a-template" data-raw-source="[Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)">Capture work item as a template</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
+<li><a href="../backlogs/move-change-type.md#change-type">Change work item type</a></li>
 <li><a href="../backlogs/copy-clone-work-items.md" data-raw-source="[Copy or clone a work item](../backlogs/copy-clone-work-items.md)">Copy or clone a work item</a></li>
 <li><a href="work-item-form-controls.md#copy-the-url" data-raw-source="[Copy work item URL](work-item-form-controls.md#copy-the-url)">Copy work item URL</a></li>
 <li><a href="../backlogs/copy-list.md" data-raw-source="[Copy list of work items](../backlogs/copy-list.md)">Copy list of work items</a></li>
