@@ -29,10 +29,10 @@ Use this task to deploy an Azure Cloud Service.
 |Argument|Description|
 |--- |--- |
 |`ConnectedServiceName`<br/>Azure subscription (Classic)|(Required) Azure Classic subscription to target for deployment. <br/>Argument alias: `azureClassicSubscription`|
-|`EnableAdvancedStorageOptions` <br/>Enable ARM storage support| (Required) Select to enable ARM storage support for this task|
+|`EnableAdvancedStorageOptions` <br/>Enable Azure Resource Manager storage support| (Required) Select to enable Azure Resource Manager storage support for this task|
 |`StorageAccount`<br/>Storage account (Classic)|(Required) Storage account must exist prior to deployment.|
-|`ARMConnectedServiceName` <br/>Azure subscription (ARM)| (Required) Azure Resource Manager subscription|
-|`ARMStorageAccount` <br/>Storage account (ARM)| (Required) Choose a pre-existing ARM storage account|
+|`ARMConnectedServiceName` <br/>Azure subscription (Azure Resource Manager)| (Required) Azure Resource Manager subscription|
+|`ARMStorageAccount` <br/>Storage account (Azure Resource Manager)| (Required) Choose a pre-existing Azure Resource Manager storage account|
 |`ServiceName`<br/>Service name|(Required) Select or enter an existing cloud service name.|
 |`ServiceLocation`<br/>Service location|(Required) Select a region for new service deployment.Possible options are East US, East US 2, Central US, South Central US, West US, North Europe, West Europe and others.|
 |`CsPkg`<br/>CsPkg|(Required) Path of CsPkg under the default artifact directory.|
