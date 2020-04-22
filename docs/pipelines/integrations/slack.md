@@ -4,8 +4,8 @@ ms.topic: conceptual
 title: Azure Pipelines with Slack
 description: Connect and monitor your pipelines in Azure Pipelines to Slack by subscribing to notifications right from Slack 
 ms.manager: bijuv
-ms.author: atinb
-author: atinb
+ms.author: divais
+author: divais
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -85,6 +85,8 @@ To manage the subscriptions for a channel, use the following command:
 `/azpipelines subscriptions`
 
 This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
+
+Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-slack/subscriptions-list.png)
