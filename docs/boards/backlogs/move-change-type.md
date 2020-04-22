@@ -17,6 +17,10 @@ ms.date: 04/21/2020
 
 Often times you find that someone created a work item of the wrong work item type (WIT) or within an incorrect project. You can correct these issues for individual work items or bulk modify several work items. You can also remove work items added to your backlog or taskboard that aren't relevant anymore.  
 
+> [!TIP]
+> For TFS 2018 and earlier versions, you can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
+
+
 In this article you'll learn:  
 
 > [!div class="checklist"]    
@@ -24,30 +28,9 @@ In this article you'll learn:
 > * How to move one or more work items to another project     
 
 
-You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
-
-::: moniker range="azure-devops"
-
-You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
-
-Also, you can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. 
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2015"
-
 > [!TIP]  
 > From the web portal, you can [multi-select several work items](bulk-modify-work-items.md) from a backlog or query results page and perform a bulk update using the associated feature.  To change, move, delete, or restore several work items at the same time, see [Bulk modify work items](bulk-modify-work-items.md). 
 
-::: moniker-end
 
 ## Prerequisites  
 
@@ -80,6 +63,21 @@ Also, you can't change the work item type if the project is defined on a collect
 
 To learn more, see [Set permissions and access for work tracking](../../organizations/security/set-permissions-access-work-tracking.md) or [Set permissions at the project-level or project collection-level](../../organizations/security/set-project-collection-level-permissions.md). 
 
+::: moniker range="azure-devops"
+
+> [!IMPORTANT]  
+> You can't change type or move work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+> [!IMPORTANT]  
+> You can't change type, move work items, or delete/restore work items whose work item types support test management or that belong to the [Hidden Types Category](../work-items/agile-glossary.md#hidden-types). This includes all work items that track tests&mdash;such as test cases, shared steps, and shared parameters&mdash;code review requests and responses, and feedback requests and responses.
+> 
+> Also, you can't change the work item type if the project is defined on a collection that uses the On-premises XML process model. 
+
+::: moniker-end
 
 <a id="change-type"> </a>  
 
@@ -144,6 +142,7 @@ You can only move work items from one project to another project within the orga
 
 ## Related articles   
 
+- [Remove or delete work items](remove-delete-work-items.md)  
 - [Best tool to add, update, and link work items](../work-items/best-tool-add-update-link-work-items.md)  
 - [View and add work items using the Work Items page](../work-items/view-add-work-items.md)  
 
