@@ -6697,7 +6697,7 @@
     {
       "source_path": "docs/build-release/index.md",
       "redirect_url": "/azure/devops/pipelines/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/overview.md",
@@ -11972,7 +11972,7 @@
     {
       "source_path": "docs/test-plans/index.md",
       "redirect_url": "/azure/devops/test/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/get-started/index.md",
