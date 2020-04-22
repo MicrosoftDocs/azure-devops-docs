@@ -4,8 +4,8 @@ ms.topic: conceptual
 title: Azure Pipelines with Microsoft Teams
 description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel by subscribing to notifications 
 ms.manager: bijuv
-ms.author: atinb
-author: atinb
+ms.author: divais
+author: divais
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -86,6 +86,8 @@ To manage the subscriptions for a channel, use the following command:
 `@azure pipelines subscriptions`
 
 This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
+
+Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-teams/subscriptions-list-teams.png)
