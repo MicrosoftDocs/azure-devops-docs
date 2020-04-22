@@ -49,7 +49,7 @@ tf destroy [/keephistory] <itemspec1>[;<versionspec>][<itemspec2>...<itemspecN>]
     <td><p>Provides a value to the <strong>/login</strong> option. You can specify a username value as either <em>DOMAIN</em>&lt;em&gt;UserName</em> or <em>UserName.</em></p></td></tr>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains files that you want to destroy (for example, `http://myserver:8080/tfs/DefaultCollection`).</p></td></tr></tbody>
+    <td><p>The URL of the project collection that contains files that you want to destroy (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr></tbody>
 </table>
 
 <table><thead>

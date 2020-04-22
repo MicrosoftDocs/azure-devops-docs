@@ -65,7 +65,7 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, `http://myserver:8080/tfs/DefaultCollection`).</p></td>
+<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>username</em></p></td>

@@ -38,7 +38,7 @@ tf view [/collection:TeamProjectCollectionUrl] [/console] [/recursive] [/output:
 <tbody>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, `http://myserver:8080/tfs/DefaultCollection`).</p></td>
+<td><p>The URL of the project collection that contains a specific version of a file about which you want to retrieve information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>shelvesetname [:owner]</em></p></td>
