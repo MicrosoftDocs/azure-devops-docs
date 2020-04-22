@@ -14,16 +14,9 @@ ms.date: 04/21/2020
 
 # Remove or delete work items 
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 You can remove work items added to your backlog or taskboard that aren't relevant anymore. Simply change the State to Remove, or delete the work item. You can perform operations on individual work items or bulk modify several work items. 
-
-::: moniker range="<= tfs-2018"
-
-> [!TIP]
-> You can't change the work item type for an existing work item, but you can [copy the work item and specify a new type](copy-clone-work-items.md#copy-clone). Also, if you have several work items with type changes you want to make, you can [export them using Excel](office/bulk-add-modify-work-items-excel.md), and then re-add them as a new type. 
-::: moniker-end
-
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
@@ -51,10 +44,9 @@ In this article you'll learn:
 
 You only have access to those actions that are supported on your platform and for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-
 You can access the following actions for which you have permissions. If you are a member of the Contributors group (anyone who has been added as a team member) or Project Administrators groups, you have access to the following features. For a simplified view of permissions assigned to built-in groups, see [Permissions and access](../../organizations/security/permissions-access.md). 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 <table>
 <tbody valign="top">
@@ -172,22 +164,9 @@ You can access the following actions for which you have permissions. If you are 
 > [!NOTE]  
 > Users with **Stakeholder** access for a public project have full access to all work tracking features just like users with **Basic** access. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
-
 ::: moniker-end
 
-
-::: moniker range="azure-devops-2019"
-
-* You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
-* You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
-* To modify work items, you must have your **View work items in this node** and **Edit work items in this node** permissions set to **Allow**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking). 
-* To delete or remove work items, you must be granted **Stakeholder** access or higher.  For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-* To delete work items, you must be a member of the **Project Administrators** group or have the **Delete work items in this project** permission set to **Allow**. By default, the Contributors group has **Delete and restore work items** set to **Allow**.
-
-::: moniker-end 
-
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -225,7 +204,7 @@ To cause removed items to not show up in queries, you must add a clause that fil
 ::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]  
-> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609). For earlier on-premises deployments, choose Agile, Scrum, or CMMI process. 
+> The <em>Removed</em> state isn't supported with the Basic process. It is only supported with the Agile, Scrum, and CMMI process work item types. The Basic process is available when you add a project to Azure DevOps Services or [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609).  
 
 ::: moniker-end
 
@@ -394,6 +373,10 @@ You restore deleted work items from the web portal Recycle bin.
 > [!NOTE]  
 > The <strong>Delete</strong> and <strong>Recycle bin</strong> features require TFS 2015.2 or later version. 
 
+::: moniker-end  
+
+::: moniker range=">= tfs-2015 <= tfs-2018"  
+
 1. Choose <strong>Work>Backlogs</strong> or <strong>Work>Queries</strong> and then choose the <strong>Recycle bin</strong>.  
  
 	![Open Recycle bin](media/move-change-delete/open-recycle-bin.png)
@@ -423,9 +406,9 @@ You restore deleted work items from the web portal Recycle bin.
 To permanently delete work items from the web portal, you must be a member of the Project Administrators group or be [granted explicit permissions to delete or restore work items](../../organizations/security/set-permissions-access-work-tracking.md#move-delete-permissions).
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range=">= tfs-2018"
 
-Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards.
+Deleting work items from the command line is deprecated for TFS 2018.2 and later versions, and not supported for Azure Boards cloud service.
 
 ::: moniker-end
 
@@ -437,6 +420,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end  
 
 ::: moniker range="tfs-2018"  
+
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2018. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2018\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  
@@ -456,6 +440,7 @@ Use the ```witadmin destroywi``` command to permanently remove work items from t
 ::: moniker-end
 
 ::: moniker range="tfs-2017"  
+
 1. Open a Command Prompt window where the latest version of Visual Studio is installed and change the directory to where the **witadmin.exe** tool has been installed. For example, you would change to the following directory for TFS 2017. (For other versions, see [Remove work items permanently (witadmin destroywi)](../../reference/witadmin/remove-work-items-permanently.md)).  
 
 	`%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer`  

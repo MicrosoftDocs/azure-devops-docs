@@ -146,7 +146,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
+<li><a href="../backlogs/move-change-type.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/move-change-type.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
 </ul>
 </td>
 <td width="34%">
@@ -245,7 +245,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
+<li><a href="../backlogs/move-change-type.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/move-change-type.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
 </ul>
 </td>
 <td width="34%">
