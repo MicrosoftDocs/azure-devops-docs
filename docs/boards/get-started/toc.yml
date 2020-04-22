@@ -14,3 +14,5 @@
   displayName: add users, areas, iterations, sprints, project, wiki, notifications, extensions
   href: manage-boards.md
   displayName: cards, columns, field, swimlanes, settings
+- name: Keyboard shortcuts
+  href: keyboard-shortcuts.md

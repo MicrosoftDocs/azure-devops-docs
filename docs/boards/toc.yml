@@ -9,13 +9,13 @@
   href: /azure/devops/organizations/settings/about-teams-and-settings?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
 - name: Get started
   href: get-started/toc.yml
-- name: Basic concepts & guidance 
+- name: Basic concepts 
   items:
   - name: Choose a process
     href: work-items/guidance/choose-process.md
   - name: About work items
     href: work-items/about-work-items.md
-  - name: Basic fields reference
+  - name: System fields  
     href: ./work-items/guidance/basic-field-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json  
   - name: "Backlogs, boards, & plans"
     href: backlogs/backlogs-boards-plans.md
@@ -82,15 +82,17 @@
         href: work-items/guidance/cmmi/guidance-build-product.md
       - name: Track bugs
         href: work-items/guidance/cmmi/track-bugs.md
-  - name: Key concepts
-    items:
-    - name: Agile glossary
-      href: ./work-items/agile-glossary.md
-      displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
-    - name: Kanban concepts
-      href: ./boards/kanban-key-concepts.md
-    - name: Scrum concepts
-      href: ./sprints/scrum-key-concepts.md
+  - name: Agile glossary
+    href: ./work-items/agile-glossary.md
+    displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
+  - name: "Workflow states & categories"
+    href: ./work-items/workflow-and-state-categories.md
+  - name: Linking & traceability
+    href: ./queries/link-work-items-support-traceability.md
+  - name: Link types 
+    href: ./queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
+  - name: Work tracking limits
+    href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Configure & customize
   items:
   - name: Configure & customize
@@ -120,19 +122,19 @@
       href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Grant or restrict permissions to select tasks
       href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-- name: Connect Azure Boards & GitHub
+- name: Azure Boards & GitHub
   href: github/toc.yml 
-- name: Define and view work items
+- name: Work items
   href: work-items/toc.yml 
-- name: Implement Kanban (Boards)
+- name: Boards & Kanban
   href: boards/toc.yml 
-- name: Define backlogs (Backlogs)
+- name: Backlogs
   href: backlogs/toc.yml 
-- name: Implement Scrum (Sprints)
+- name: Sprints & Scrum
   href: sprints/toc.yml 
-- name: Query and search (Queries)
+- name: Queries & search 
   href: queries/toc.yml 
-- name: View delivery plans (Plans)
+- name: Plans & portfolios
   href: plans/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
@@ -172,38 +174,22 @@
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
-- name: Reference
+- name: Field reference
   items:
-  - name: Linking & traceability
-    href: ./queries/link-work-items-support-traceability.md
-  - name: "Workflow states & categories"
-    href: ./work-items/workflow-and-state-categories.md
-  - name: Link types 
-    href: queries/link-type-reference.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json toc.json  
-  - name: "Rollup of work and other fields"
-    href: ../reference/xml/support-rollup-of-work-and-other-fields.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Field reference
-    items:
-    - name: Work item field index
-      href: work-items/guidance/work-item-field.md
-    - name: Work item fields
-      href: work-items/work-item-fields.md
-    - name: "Code review & feedback fields"
-      href: work-items/guidance/guidance-code-review-feedback-field-reference.md
-    - name: "Bugs, issues, & risks fields"
-      href: work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
-    - name: Change request fields
-      href: work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md
-    - name: Requirements fields
-      href: work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md
-    - name: Review meeting fields
-      href: work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
-  - name: Keyboard shortcuts
-    href: /azure/devops/project/navigation/keyboard-shortcuts?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Work tracking limits
-    href: /azure/devops/organizations/settings/work/object-limits?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
-  - name: Client support for work tracking
-    href: /azure/devops/user-guide/tools?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+  - name: Work item field index
+    href: work-items/guidance/work-item-field.md
+  - name: Work item fields
+    href: work-items/work-item-fields.md
+  - name: "Code review & feedback fields"
+    href: work-items/guidance/guidance-code-review-feedback-field-reference.md
+  - name: "Bugs, issues, & risks fields"
+    href: work-items/guidance/cmmi/guidance-bugs-issues-risks-field-reference-cmmi.md
+  - name: Change request fields
+    href: work-items/guidance/cmmi/guidance-change-request-field-reference-cmmi.md
+  - name: Requirements fields
+    href: work-items/guidance/cmmi/guidance-requirements-field-reference-cmmi.md
+  - name: Review meeting fields
+    href: work-items/guidance/cmmi/guidance-review-meeting-field-reference-cmmi.md
 - name: REST API Reference
   items:
   - name: Work Items
@@ -238,6 +224,8 @@
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
     href: ../reference/index.md
+  - name: Client support 
+    href: ../user-guide/tools
   - name: Azure DevOps CLI
     href: /cli/azure/ext/azure-devops/boards
 
