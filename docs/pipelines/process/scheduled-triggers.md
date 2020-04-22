@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 03/29/2020
+ms.date: 04/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
