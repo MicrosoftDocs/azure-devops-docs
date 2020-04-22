@@ -188,13 +188,14 @@ A: The Azure DevOps UI indicates membership scope using brackets `[]`. For examp
 
 ![Permissions Settings with various scopes](media/manage-azure-ad-groups/permissions-scope-example.png)
 
-| Scope Name | Defintion |
+| Scope name | Definition |
 |:--|:--|
 | `[fabrikam-fiber]` | Membership is defined in Organization Settings |
 | `[Project Name]` | Membership is defined in Project Settings |
 | `[TEAM FOUNDATION]` | Membership is defined _directly_ in Azure AD | 
 
-Note: if you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
+> [!Note]
+> If you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
 
 ### Q: Why doesn't Users show all Azure AD group members?
 
