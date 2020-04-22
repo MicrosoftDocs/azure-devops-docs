@@ -33,7 +33,7 @@ tf undo [/workspace:workspacename[;workspaceowner]]
 <tr><th><p>Parameter</p></th><th><p>Description</p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/collection</strong> : <em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>Specifies the URL of the project collection that contains the items. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p><p>If you do not use the <strong>/workspace</strong> option, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td></tr>
+    <td><p>Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.</p><p>If you do not use the <strong>/workspace</strong> option, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td></tr>
 <tr>
 	<td><p><em>itemspec</em></p></td>
 	<td><p>Specifies the scope of the items. You can specify more than one <em>itemspec</em> argument. For syntax, see <a href="use-team-foundation-version-control-commands.md">Use Team Foundation version control commands</a>.</p></td></tr>
