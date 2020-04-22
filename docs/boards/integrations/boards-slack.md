@@ -89,7 +89,7 @@ filters to customize your Slack channel. To easily set up subscriptions, your re
 
 ## Add area paths
 
-You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. 
+You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. This is important mainly for the teams with more than 100 area paths.
 
 - Use the following command to add area paths from your project to the Slack channel.
 
@@ -149,6 +149,8 @@ access to the discussion that led to the creation of the work item.
 	```
 
 	This command lists all the current subscriptions for the channel and allows you to add new subscriptions and remove existing ones. As part of adding subscriptions, you can also customize what you get notified on by using various filters.
+
+Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Pic: View subscriptions](./media/integrations-slack/view-subscriptions.png)
