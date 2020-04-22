@@ -31,12 +31,12 @@ Use this task to run a PowerShell script within an Azure environment. The Azure 
 |`ConnectedServiceNameARM`<br/>Azure Subscription|(Required) name of an Azure Resource Manager service connection for authentication. <br/>Argument alias: `azureSubscription`|
 |`ScriptType`<br/>Script Type|(Optional) Type of the script: filePath or inlineScript <br/>Default value: `FilePath`|
 |`ScriptPath`<br/>Script Path|(Optional) Path of the script. Should be fully qualified path or relative to the default working directory.|
-|`Inline`<br/>Inline Script|(Optional) Enter the script to execute. <br/>Default value: <br/># You can write your azure powershell scripts inline here.<br/> # You can also pass predefined and custom variables to this script using arguments|
+|`Inline`<br/>Inline Script|(Optional) Enter the script to execute. <br/>Default value: <br/># You can write your Azure PowerShell scripts inline here.<br/> # You can also pass predefined and custom variables to this script using arguments|
 |`ScriptArguments`<br/>Script Arguments|(Optional) Additional parameters to pass to PowerShell.  Can be either ordinal or named parameters. Not applicable for inline script option.|
 |`errorActionPreference`<br/>ErrorActionPreference|(Optional) Select the value of the ErrorActionPreference variable for executing the script. <br/>Default value: `stop`|
 |`FailOnStandardError`<br/>Fail on Standard Error|(Optional) If this is true, this task will fail if any errors are written to the error pipeline, or if any data is written to the Standard Error stream. <br/>Default value: `false`|
-|`TargetAzurePs`<br/>Azure PowerShell Version|(Required) In case of Microsoft-hosted agents, the supported Azure PowerShell version. To pick the latest version available on the agent, select `Latest installed version.` <br/>For self-hosted agents you can specify preferred version of Azure PowerShell using "Specify version" <br/>Default value: `OtherVersion` <br/>Argument alias: `azurePowerShellVersion`|
-|`CustomTargetAzurePs`<br/>preferredAzurePowerShellVersion|(Required when TargetAzurePs = OtherVersion) <br/>Preferred Azure PowerShell Version needs to be a proper semantic version eg. 1.2.3. Regex like 2.\*,2.3.\* is not supported. <br/>Argument alias: `preferredAzurePowerShellVersion`|
+|`TargetAzurePs`<br/>Azure PowerShell Version|(Required) In case of Microsoft-hosted agents, the supported Azure PowerShell version. To pick the latest version available on the agent, select `Latest installed version.` <br/>For self-hosted agents, you can specify preferred version of Azure PowerShell using "Specify version" <br/>Default value: `OtherVersion` <br/>Argument alias: `azurePowerShellVersion`|
+|`CustomTargetAzurePs`<br/>preferredAzurePowerShellVersion|(Required when TargetAzurePs = OtherVersion) <br/>Preferred Azure PowerShell Version needs to be a proper semantic version for example, 1.2.3. Regex like 2.\*,2.3.\* is not supported. <br/>Argument alias: `preferredAzurePowerShellVersion`|
 
 ## Samples
 
@@ -47,7 +47,7 @@ Use this task to run a PowerShell script within an Azure environment. The Azure 
 
 This typically occurs when the service connection used in the pipeline has insufficient permissions to run the script. Locally, the script runs with your credentials and would succeed as you may have the required access.
 
-To resolve this issue, ensure the service principle/ authentication credentials have the required permissions. For more details, see 
+To resolve this issue, ensure the service principle/ authentication credentials have the required permissions. For more information, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
 
 ### Error: Could not find the modules: '<module name>' with Version: '<version>'. If the module was recently installed, retry after restarting the Azure Pipelines task agent
