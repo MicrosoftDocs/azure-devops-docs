@@ -89,7 +89,7 @@ In case the desired area path doesn't appear in the Area path dropdown menu, fol
 
 ## Add area paths
 
-You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. 
+You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. This is key mainly  for teams with more than 100 area paths in their project. 
 
 - Use the following command to add area paths from your project to the Teams channel.
 
@@ -140,6 +140,8 @@ This command lists all the current subscriptions for the channel and allows you 
 
 > [!div class="mx-imgBorder"]  
 > ![View subscriptions](./media/integrations-teams/view-subscriptions.png)
+
+Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators. 
 
 ## Search and share work items using compose extension
 
