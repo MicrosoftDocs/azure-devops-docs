@@ -49,7 +49,7 @@ tf workspace [/collection:TeamProjectCollectionUrl] [/comment: ("comment"|@comme
 |         *comment*          |                                                                          Provides a value to the **/comment** option.                                                                           |
 |   <em>@commentfile</em>    |                                                                 Specifies the path of a file where the comment should be read.                                                                  |
 |         *username*         |                                    Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                    |
-| *TeamProjectCollectionUrl* | The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, <http://myserver:8080/tfs/DefaultCollection>). |
+| *TeamProjectCollectionUrl* | The URL of the project collection that contains the workspace about which you want to create, edit, delete, or display information (for example, http://myserver:8080/tfs/DefaultCollection). |
 |        *ownername*         |                                                                          Provides a value to the **/newowner** option.                                                                          |
 
 |**Option**|**Description**|
