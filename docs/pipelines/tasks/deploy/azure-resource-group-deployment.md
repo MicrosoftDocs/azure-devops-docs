@@ -55,41 +55,39 @@ Use this task to deploy, start, stop, and delete Azure Resource Groups.
 
 ## Troubleshooting
 
-## Error: Internal Server Error
+### Error: Internal Server Error
 
 These issues are mostly transient in nature. There are multiple reasons why it could be happening:
-1. One of the Azure service you're trying to deploy is undergoing maintainance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
-2. Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
+- One of the Azure service you're trying to deploy is undergoing maintainance in the region you're trying to deploy to. Keep an eye out on https://status.azure.com/ to check downtimes of Azure Services.
+- Azure Pipelines service itself is going through maintenance. Keep an eye out on https://status.dev.azure.com/ for downtimes.
 
-However, we've seen some instances where this is due to an error in the ARM template, such as:
-* Azure service you're trying to deploy doesn't support the region you've chosen for the resource.
+However, we've seen some instances where this is due to an error in the ARM template, such as the Azure service you're trying to deploy doesn't support the region you've chosen for the resource.
 
-## Error: Timeout
+### Error: Timeout
 
 Timeout issues could be coming from two places:
-1. Azure Pipelines Agent
-2. Portal Deployment
+- Azure Pipelines Agent
+- Portal Deployment
 
 You can identify if the timeout is from portal, by checking for the portal deployment link that'll be in the task logs. If there's no link, this is likely due to Azure Pipelines agent. If there's a link, follow the link to see if there's a timeout that has happened in the portal deployment.
 
-### Azure Pipelines Agent
+#### Azure Pipelines Agent
 
-If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this doc for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml
+If the issue is coming from Azure Pipelines agent, you can increase the timeout by setting timeoutInMinutes as key in the YAML to 0. Check out this article for more details: https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml.
 
-### Portal Deployment
+#### Portal Deployment
 
-Check out this doc on how to identify if the error came from Azure Portal: https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal
+Check out this doc on how to identify if the error came from the Azure portal: https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-history?tabs=azure-portal.
 
 In case of portal deployment, try setting "timeoutInMinutes" in the ARM template to "0". If not specified, the value assumed is 60 minutes. 0 makes sure the deployment will run for as long as it can to succeed.
 
+This could also be happening because of transient issues in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service.
 
-This could also be happening because of transient issues in the system. Keep an eye on  https://status.dev.azure.com/ to check if there's a downtime in Azure Pipelines service
-
-## Error: Azure Resource Manager (ARM) template failed validation
+### Error: Azure Resource Manager (ARM) template failed validation
 
 This issue happens mostly because of an invalid parameter in the ARM Template, such as an unsupported SKU or Region. If the validation has failed, please check the error message. It should point you to the resource and parameter that is invalid. 
 
-In addition, refer to this doc regarding structure and syntax of ARM Templates: https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax
+In addition, refer to this article regarding structure and syntax of ARM Templates: https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax.
 
 
 ## Open source
