@@ -54,7 +54,7 @@ tf permission [/allow:(* |perm1[,perm2,...]]
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item for which you want to modify permissions (for example, `http://myserver:8080/tfs/DefaultCollection`).</p></td>
 </tr>
 <tr>
 <td><p><em>Itemspec</em></p></td>

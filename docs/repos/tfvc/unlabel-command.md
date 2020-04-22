@@ -38,7 +38,7 @@ tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,
 <tbody>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, `http://myserver:8080/tfs/DefaultCollection`).</p></td>
 </tr>
 <tr>
 <td><p><i>labelname</i></p></td>
