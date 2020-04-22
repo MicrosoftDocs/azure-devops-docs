@@ -43,6 +43,7 @@ Use this task to start, stop, restart, slot swap, Swap with Preview, install sit
 |`OutputVariable`<br/>Output variable|(Optional) Provide the variable name for the local installation path for the selected extension.This field is now deprecated and would be removed. Use LocalPathsForInstalledExtensions variable from Output Variables section in subsequent tasks.|
 |`AppInsightsResourceGroupName`<br/>Resource Group name for Application Insights|(Required) Enter or Select resource group where your application insights resource is available|
 |`ApplicationInsightsResourceName`<br/>Application Insights resource name|(Required) Select Application Insights resource where continuous monitoring data will be recorded. If your application insights resource is not listed here and you want to create a new resource, click on [+New] button. Once the resource is created on Azure Portal, come back here and click on refresh button.|
+|`ApplicationInsightsWebTestName`<br/>Application Insights web test name| (Optional) Enter Application Insights Web Test name to be created or updated. If not provided, the default test name will be used.|
 
 ## What happens during a swap
 
