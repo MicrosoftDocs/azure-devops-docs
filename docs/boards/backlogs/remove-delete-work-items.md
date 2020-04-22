@@ -24,7 +24,7 @@ In this article you'll learn:
 
 ::: moniker range=">= tfs-2017"
 
->[!div class="checklist"]         
+> [!div class="checklist"]         
 > * How to remove work items from the backlog by changing the State to Removed 
 > * How to delete work items  
 > * How to restore or permanently delete work items (web portal)    
@@ -285,7 +285,7 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 ::: moniker range="tfs-2013"  
 
 > [!NOTE]  
-> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi**command. 
+> The **Delete and Recycle bin** features are available from TFS 2015.2 and later versions. The Delete option isn't available for TFS 2013. You can only delete work items from the **witadmin destroywi** command. 
 
 ::: moniker-end
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
