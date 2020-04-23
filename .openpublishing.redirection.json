@@ -12708,6 +12708,13 @@
       "source_path": "docs/boards/get-started/key-concepts.md",
       "redirect_url": "/azure/devops/boards/work-items/agile-glossary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
+      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_document_id": false
     }
   ]
 }
+
+

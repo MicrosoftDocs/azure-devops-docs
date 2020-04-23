@@ -1,7 +1,5 @@
 - name: About Sprints and Scrum
   href: scrum-overview.md
-- name: Scrum and sprint planning tools
-  href: scrum-sprint-planning-tools.md
 - name: Schedule sprints
   href: define-sprints.md 
 - name: Forecast

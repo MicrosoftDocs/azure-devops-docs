@@ -1,6 +1,6 @@
 - name: Quick reference
   href: quick-ref.md
-- name: View & add work items (Work Items)
+- name: View & add work items
   displayName: Visual Studio 2019, filter, sort, column options, Discussion, copy to clipboard, email, open as query
   href: view-add-work-items.md 
 - name: "Add & update a work item"    
