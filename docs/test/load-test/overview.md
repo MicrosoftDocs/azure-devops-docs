@@ -87,9 +87,11 @@ The following table outlines how the concepts in Visual Studio load test map to 
 
 Many commercial services such as [Blazemeter](https://www.blazemeter.com/) support running Apache JMeter tests.
  
-If you use code based tests for load testing and .NET is your platform of choice then tools such as
+If you use code-based tests for load testing and .NET is your platform of choice then tools such as
 [Neoload](https://www.neotys.com/neoload/overview), [Micro Focus Silk Performer](https://www.microfocus.com/products/silk-portfolio/silk-performer/),
 and [Micro Focus Load Runner](https://www.microfocus.com/products/loadrunner-load-testing/overview) are options to consider.
+
+Other open-source alternatives that support code-based tests are [Artillery](https://artillery.io/), [Gatling](https://gatling.io/), [k6](https://k6.io/), and [Locust](https://locust.io/).
 
 In addition, extensions from several load test vendors such as [SOASTA](https://marketplace.visualstudio.com/items?itemName=SOASTA.SOASTA-Extension)
 (now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=apicasystem.apica-loadtest), and
