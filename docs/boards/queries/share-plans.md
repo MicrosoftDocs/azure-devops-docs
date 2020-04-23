@@ -99,7 +99,7 @@ For the **Discussion** section, the tool bar comes with a few extra icons&mdash;
 
 **Keyboard shortcuts**  
 
-You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts for work item forms](../work-items/work-item-form-keyboard-shortcuts.md).
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 > [!TIP]    
 > Enter **Shift-?** to view additional Keyboard shortcuts for the work item form. 
