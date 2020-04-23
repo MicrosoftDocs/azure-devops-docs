@@ -61,7 +61,7 @@ For example, here we filter the backlog to only show items that include 'Web' in
 
 > [!TIP]
 > Type **Ctrl** + **Shift** + **f** to move your cursor to the filter box. To move the focus up or down within a column, use the **Tab** key.
-> For more tips, see [Kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
+> For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 If you want to filter for a specific work item ID, you must choose to show IDs on the cards.
 
