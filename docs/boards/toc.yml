@@ -28,12 +28,6 @@
     displayname: security
   - name: Process guidance
     items:
-    - name: Manage process templates
-      href: work-items/guidance/manage-process-templates.md
-    - name: Configure or add a project portal
-      href: ../project/configure-or-add-a-project-portal.md 
-    - name: Configure or redirect process guidance
-      href: ../project/configure-or-redirect-process-guidance.md 
     - name: Agile process guidance
       href: work-items/guidance/agile-process.md
     - name: Agile workflow
@@ -82,10 +76,18 @@
         href: work-items/guidance/cmmi/guidance-build-product.md
       - name: Track bugs
         href: work-items/guidance/cmmi/track-bugs.md
+  - name: Process templates & portals
+    items:
+    - name: Manage process templates
+      href: work-items/guidance/manage-process-templates.md
+    - name: Configure a project portal
+      href: ../project/configure-or-add-a-project-portal.md 
+    - name: Configure process guidance
+      href: ../project/configure-or-redirect-process-guidance.md 
   - name: Agile glossary
     href: ./work-items/agile-glossary.md
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
-  - name: "Workflow states & categories"
+  - name: Workflow states & categories
     href: ./work-items/workflow-and-state-categories.md
   - name: Linking & traceability
     href: ./queries/link-work-items-support-traceability.md
