@@ -53,9 +53,9 @@ and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## Check prerequisites
 
-If you are using a windows self-hosted agent, ensure your machine has the following prerequisite:
+If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
 
-- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
 
 <a name="demands"></a>
 
