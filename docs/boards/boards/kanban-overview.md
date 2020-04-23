@@ -120,7 +120,7 @@ In addition to these team configurations, you can [customize a project](#customi
 
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 ::: moniker-end
 

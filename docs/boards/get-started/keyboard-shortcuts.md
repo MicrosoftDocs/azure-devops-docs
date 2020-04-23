@@ -1,9 +1,9 @@
 ---
-title: Keyboard shortcuts for web portal and Team Explorer
-titleSuffix: Azure DevOps
-description: Keyboard shortcuts for the web portal for Azure DevOps and Team Explorer
+title: Keyboard shortcuts  
+titleSuffix: Azure Boards
+description: Keyboard shortcuts for the web portal for Azure Boards and Team Explorer
 ms.custom: Navigation
-ms.technology: devops-collab
+ms.technology: devops-agile
 ms.topic: reference
 ms.assetid:  
 ms.author: kaelli
@@ -13,13 +13,12 @@ monikerRange: '>= tfs-2015'
 ---
 
 
-# Keyboard shortcuts for Azure DevOps and Team Explorer
+# Keyboard shortcuts for Azure Boards and Team Explorer
 
-[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]    
-
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]    
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
-For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
+For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).
 
 ## Web portal
 
@@ -54,41 +53,22 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 :::row-end:::
 
 
-
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
 
-
-::: moniker range="tfs-2015"
 > [!NOTE]  
 > The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
-
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
-::: moniker range=">= azure-devops-2019"
-
-## Repos  
-
-::: moniker-end
-
-::: moniker range=">= tfs-2015 <=tfs-2018"
-
-## Code  
-
-::: moniker-end
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/code-shortcuts.md)]
 
 ::: moniker range=">= azure-devops-2019"
+
 
 ## Work Items 
-
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
 
@@ -97,7 +77,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker range=">= azure-devops-2019"
 
 ## Work item form shortcuts
-
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
@@ -119,28 +98,7 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)] 
-
-::: moniker-end 
-
-## Test Plans, Parameters, and Runs  
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/test-shortcuts.md)]
-
-::: moniker range=">= tfs-2018"  
-
-## Wiki  
-
-::: moniker-end  
-
-::: moniker range="tfs-2018"
-> [!NOTE]  
-> Keyboard shortcuts to manage Wiki pages are supported on TFS 2018.2 or later versions. To download TFS 2018.2, see [Team Foundation Server 2018 Update 2 Release Notes](/visualstudio/releasenotes/tfs2018-update2). 
-::: moniker-end
-
-::: moniker range=">= tfs-2018"  
-
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
 ::: moniker-end
 
@@ -180,12 +138,11 @@ You can use query results shortcuts whenever you have a list of work items, such
 
 ## Related articles 
 
-
 - [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/ff458183(v=vs.140))  
 - [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
-- [Web portal navigation](..//navigation/index.md) 
+- [Web portal navigation](../../project/navigation/index.md) 
 
 ### Install Team Explorer  
 
