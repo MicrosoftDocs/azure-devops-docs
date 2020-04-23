@@ -4,12 +4,11 @@ description: The Azure App Service Deploy task is used to update Azure App Servi
 ms.topic: reference
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.manager: dastahel
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
 ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
-ms.custom: fasttrack-edit
 ---
 
 # Azure App Service Deploy task
