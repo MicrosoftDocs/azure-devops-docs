@@ -201,12 +201,12 @@ These are steps to create a scale set with a custom OS disk size and custom soft
 
 If you just want to create a scale set with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
 
-1.  Create a VM with capacity for <myDiskSizeGb> OS drive starting with your base image.
+1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128GiB to <myDiskSizeGb>.
 
     - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
     
         ```azurecli  
-        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb 200  --admin-username myUserName --admin-password myPassword
+        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword
         ```
 
     - If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
