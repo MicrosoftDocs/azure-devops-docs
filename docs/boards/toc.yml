@@ -76,14 +76,6 @@
         href: work-items/guidance/cmmi/guidance-build-product.md
       - name: Track bugs
         href: work-items/guidance/cmmi/track-bugs.md
-  - name: Process templates & portals
-    items:
-    - name: Manage process templates
-      href: work-items/guidance/manage-process-templates.md
-    - name: Configure a project portal
-      href: ../project/configure-or-add-a-project-portal.md 
-    - name: Configure process guidance
-      href: ../project/configure-or-redirect-process-guidance.md 
   - name: Agile glossary
     href: ./work-items/agile-glossary.md
     displayName: agile, field, favorites, follow, inheritance, process model, issue, Kanban, link, pick list, plans, queries, remote linking, sprints, taskboard, teams, widgets  
@@ -124,6 +116,14 @@
       href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Grant or restrict permissions to select tasks
       href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
+  - name: Process templates & portals
+    items:
+    - name: Manage process templates
+      href: work-items/guidance/manage-process-templates.md
+    - name: Configure a project portal
+      href: ../project/configure-or-add-a-project-portal.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
+    - name: Configure process guidance
+      href: ../project/configure-or-redirect-process-guidance.md?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json 
 - name: Azure Boards & GitHub
   href: github/toc.yml 
 - name: Work items
