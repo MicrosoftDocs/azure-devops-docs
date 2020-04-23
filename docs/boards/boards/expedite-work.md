@@ -24,7 +24,7 @@ For example, you can create three swimlanes&mdash;Expedite, Standard, and Parked
 ![Kanban board showing three swimlanes](media/ALM_EW_IntroChart_3C.png) 
 
 > [!TIP]
-> Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../media/icons/Arrow_Up.png)![ ](../media/icons/Arrow_Down.png) up/down arrows. For more tips, see [kanban board keyboard shortcuts](kanban-board-keyboard-shortcuts.md).
+> Type **o** to expand all swimlanes and **u** to collapse all swimlanes. To move the focus up or down, enter the ![Up/Down arrow](../media/icons/Arrow_Up.png)![ ](../media/icons/Arrow_Down.png) up/down arrows. For more tips, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 [!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
