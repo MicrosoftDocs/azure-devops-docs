@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/27/2020
+ms.date: 04/23/2020
 ---
 
 # Permissions lookup guide for Azure DevOps
@@ -670,32 +670,31 @@ Values in parenthesis indicate what level the permission is managed:
 ## Edit project-level information
 
 The **Edit project-level information** permission is set through the [Security admin page for a project](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
-for all team projects defined in the account or collection:
-                
-- Create and modify areas and iterations
-- Edit check-in policies
-- Edit shared work item queries
-- Edit project level permission ACL</li>
-- Manage process templates
-- Customize a project
-- Create and modify global lists
-- Edit event subscriptions or alerts for teams or project events.
+for all projects defined in the organization or collection:
+
+::: moniker range="azure-devops"
+
+- Add and administer teams and all team-related features
+- Edit project-level permissions for users and groups in the project
+- Add or remove project-level security groups  
+- Edit project level permission ACLs
+- Edit event subscriptions or alerts for teams or the project 
+
+::: moniker-end
+
 
 
 ## Edit instance-level or collection-level information
 
-The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an account or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
+The **Edit instance-level information** (formerly **Edit collection level information**) permission is set through the [Security admin page for an organization or collection](set-project-collection-level-permissions.md). It includes the ability to perform the following tasks 
 for all team projects defined in the account or collection:
                 
 - Add and administer teams and all team-related features
-- Create and modify areas and iterations
-- Edit check-in policies
-- Edit shared work item queries
+- Edit collection-level permissions for users and groups in the collection
+- Add or remove collection-level security groups from the collection
+- Implicitly allows the user to modify version control permissions 
 - Edit project level and collection level permission ACLs
-- Manage process templates
-- Customize a project or process
-- Create and modify global lists
-- Edit event subscriptions or alerts for teams, team projects, or collection level events.
+- Edit event subscriptions or alerts for teams, projects, or collection level events.
 
 
 ## Related notes
