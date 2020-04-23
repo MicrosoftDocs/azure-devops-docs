@@ -171,16 +171,16 @@ Once the scale set agent pool is created, Azure Pipelines automatically scales t
 
 Azure Pipelines samples the state of the agents in the pool and virtual machines in the scaleset every 5 minutes.  The decision to scale up or down is based on the number idle agents at that time. The exception is if desired idle agents on standby is set to 0, then scaling up the first time is done when a queued request is detected.
 
-The goal is to reach the desired number of idle agents on standby eventually. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued inthe morning and scale down as the load subsides in the evening. 
+The goal is to reach the desired number of idle agents on standby eventually. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. 
 
 > [!NOTE]
 >  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
 
-Scaling up is done in increments of 25% of the maximum pool size.  Scale up to maximum requires four scale-up operations. Allow 20 minutes for machines to be created for each step..  Scaling down is performed when idle machines exceed the desired number of agents on standby for one hour.
+Scaling up is done in increments of 25% of the maximum pool size.  Scale up to maximum requires four scale-up operations. Allow 20 minutes for machines to be created for each step.  Scaling down is performed when idle machines exceed the desired number of agents on standby for one hour.
 
-To achieve maximum stability, scaleset actions are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines in the scaleset, Azure Pipelines will first scale up the pool and then once that operation is completed the unhealthy machines will be deleted.
+To achieve maximum stability, scaleset operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
 
-Due to the sampling size of 5 minutes, it is possible that all agents will be running pipelines for a short period of time and no scaling up will occur.
+Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 ### Limitations during the preview
 
