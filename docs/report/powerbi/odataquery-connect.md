@@ -58,6 +58,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Wor
     &$orderby=CreatedDate desc
     &$top=10
 ``` 
+To query across projects, omit `/{project}` entirely. 
 
 For more information about how to write OData queries against Analytics, see [OData query quick reference](../extend-analytics/quick-ref.md). 
 

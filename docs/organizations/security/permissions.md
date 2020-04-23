@@ -8,8 +8,9 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/24/2020  
----
+ms.date: 04/23/2020
+--- 
+
 
 
 # Permissions, users, and groups in Azure DevOps
@@ -972,14 +973,11 @@ You manage collection-level permissions through the [web portal admin context](.
                 </p>
                 <ul>
                     <li>Add and administer teams and all team-related features</li>
-                    <li>Create and modify areas and iterations</li>
-                    <li>Edit check-in policies</li>
-                    <li>Edit shared work item queries</li>
+                    <li>Edit collection-level permissions for users and groups in the collection</li>
+                    <li>Add or remove collection-level security groups from the collection</li>
+                    <li>Implicitly allows the user to modify version control permissions </li>
                     <li>Edit project level and collection level permission ACLs</li>
-                    <li>Manage process templates</li>
-                    <li>Customize a project or process</li>
-                    <li>Create and modify global lists</li>
-                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
+                    <li>Edit <a href="#alerts"event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
                 <p>
                     When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
@@ -1382,14 +1380,11 @@ You manage project-level permissions from the [web portal admin context](set-pro
                     to perform these tasks for the project:
                 </p>
                 <ul>
-                    <li>Create and modify areas and iterations</li>
-                    <li>Edit check-in policies</li>
-                    <li>Edit shared work item queries</li>
+                    <li>Add and administer teams and all team-related features</li>
+                    <li>Edit project-level permissions for users and groups in the project</li>
+                    <li>Add or remove project-level security groups</li>
                     <li>Edit project level permission ACLs</li>
-                    <li>Manage process templates</li>
-                    <li>Customize a project</li>
-                    <li>Create and modify global lists</li>
-                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project level events.</li>
+                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
                 </ul>
             </blockquote>
         </td>
