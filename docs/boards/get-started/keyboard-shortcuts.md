@@ -16,7 +16,6 @@ monikerRange: '>= tfs-2015'
 # Keyboard shortcuts for Azure Boards and Team Explorer
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]    
-
 You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](../../project/navigation/index.md).
@@ -54,20 +53,14 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 :::row-end:::
 
 
-
-
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
 
-
-::: moniker range="tfs-2015"
 > [!NOTE]  
 > The following shortcuts are available for TFS 2015.2 and later versions. Type **?** to access the Global and page-specific shortcuts.   
 
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
-
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
 
@@ -104,8 +97,6 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 ::: moniker range=">= tfs-2017"
 
 ## Plans
-
-
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
 
