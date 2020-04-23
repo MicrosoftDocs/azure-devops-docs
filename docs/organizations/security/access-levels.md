@@ -9,7 +9,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2019
+ms.date: 04/23/2020
 ---
 
 
@@ -691,12 +691,14 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
+- View Delivery Plans (a Marketplace extension) 
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 #### For Public projects:
 
 - View Delivery Plans (a Marketplace extension)    
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
@@ -708,6 +710,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views   
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 ::: moniker-end
