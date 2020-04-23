@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 04/22/2020
 ---
 
 # Customize the workflow (Inheritance process)  
@@ -17,6 +17,10 @@ ms.date: 04/22/2019
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
+
+> [!NOTE]   
+> You can add and remove workflow States. However, you can't add or modify workflow Reasons. 
+
 
 Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
 
@@ -54,10 +58,8 @@ States you add appear in the picklist for the States field shown in work item fo
 
 2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
-	<img src="media/process/cpw-new-state-triaged.png" alt="State dialog box" style="border: 1px solid #C3C3C3;" />  
-
-	> [!NOTE]   
-	> You can't change the order of states. States are listed in the order you add them within the **States** page, and they're listed alphabetically within the drop down list of a work item form).  
+	> [!div class="mx-imgBorder"]
+	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
 	
 1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
 
