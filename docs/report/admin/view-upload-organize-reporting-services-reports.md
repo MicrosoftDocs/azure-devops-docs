@@ -17,6 +17,9 @@ ms.date: 04/22/2020
 [!INCLUDE [temp](../includes/tfs-report-platform-version-2017.md)]
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
+
+> [!NOTE]  
+> This article applies to TFS-2017 and earlier versions. Starting with TFS-2018, the integration of SQL Reporting Services and Team Explorer was deprecated. 
   
  The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page in Team Explorer provides a tree view of the reports defined for your team project. To open a report, choose it and press Enter.  
   
