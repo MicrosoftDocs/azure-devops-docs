@@ -27,7 +27,8 @@ Tests can be distributed on multiple agents using version 2 of this task. For mo
 
 ## Check prerequisites
 
-If you are using windows self hosted agent, Make sure your machine has these prerequisites:
+If you are using a windows selfihosted agent, esure your machine has the following prerequisite:
+
 - [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or higher
 
 ## Demands 
