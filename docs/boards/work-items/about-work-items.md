@@ -275,6 +275,6 @@ To add users to a project, see [Add users to a project or team](../../organizati
 - [Web portal navigation](../../project/navigation/index.md) 
 - [Backlogs, portfolios, and Agile project management](../backlogs/backlogs-overview.md) 
 - [About Kanban and Agile project management](../boards/kanban-overview.md) 
-- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Agile, Scrum, and CMMI processes](./guidance/choose-process.md)  
 - [Work item field index](./guidance/work-item-field.md)  

@@ -184,7 +184,7 @@ You can storyboard your ideas using PowerPoint to bring your ideas to life with 
 ## Related articles
 
 - [Perform a semantic or ad hoc work item search](../queries/search-box-queries.md)
-- [Keyboard shortcuts for work item forms and the Work Items page](work-item-form-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Customize your work tracking experience](../../reference/customize-work.md)
 - [Bulk add or modify work items using Excel](../backlogs/office/bulk-add-modify-work-items-excel.md)
 

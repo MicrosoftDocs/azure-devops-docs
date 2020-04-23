@@ -327,7 +327,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 ::: moniker-end
 
@@ -339,6 +339,6 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
 - [Backlog priority or stack rank order](backlogs-overview.md#stack-rank)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 ::: moniker-end
