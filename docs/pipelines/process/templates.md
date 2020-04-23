@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 03/11/2020
+ms.date: 04/23/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -97,19 +97,17 @@ stages:
   jobs:
   - job: secure_buildjob
     steps:
-
     - script: echo This happens before code 
       displayName: 'Base: Pre-build'
-
     - script: echo Building
       displayName: 'Base: Build'
 
     - ${{ each step in parameters.buildSteps }}:
       - ${{ each pair in step }}:
-          ${{ if ne(pair.key, 'script') }}:
+          ${{ if ne(pair.value, 'CmdLine@2') }}:
             ${{ pair.key }}: ${{ pair.value }}       
-          ${{ if eq(pair.key, 'script') }}: # checks for buildStep with script
-            'Rejecting Script: ${{ pair.value }}': error # rejects buildStep when script is found         
+          ${{ if eq(pair.value, 'CmdLine@2') }}: 
+            '${{ pair.value }}': error         
 
     - script: echo This happens after code
       displayName: 'Base: Signing'
@@ -125,11 +123,13 @@ extends:
   parameters:
     buildSteps:  
       - bash: echo Test #Passes
-        displayName: Test - Will Pass
+        displayName: succeed
       - bash: echo "Test"
-        displayName: Test 2 - Will Pass
-      - script: echo "Script Test" # Comment out to successfully pass
+        displayName: succeed
+      - task: CmdLine@2
         displayName: Test 3 - Will Fail
+        inputs:
+          script: echo "Script Test"
 ```
 
 ## Insert a template
