@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/15/2020
+ms.date: 04/23/2020
 monikerRange: azure-devops
 ---
 
@@ -166,10 +166,11 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 > - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
 > - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
-## How Azure Pipelines manages the scaleset
+## How Azure Pipelines manages the scale set
+
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scaleset every 5 minutes.  The decision to scale up or down is based on the number idle agents at that time. The exception is if desired idle agents on standby is set to 0, then scaling up the first time is done when a queued request is detected.
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes.  The decision to scale up or down is based on the number idle agents at that time. The exception is if desired idle agents on standby is set to 0, then scaling up the first time is done when a queued request is detected.
 
 The goal is to reach the desired number of idle agents on standby eventually. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. 
 
@@ -178,22 +179,23 @@ The goal is to reach the desired number of idle agents on standby eventually. Po
 
 Scaling up is done in increments of 25% of the maximum pool size.  Scale up to maximum requires four scale-up operations. Allow 20 minutes for machines to be created for each step.  Scaling down is performed when idle machines exceed the desired number of agents on standby for one hour.
 
-To achieve maximum stability, scaleset operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
+To achieve maximum stability, scale set operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
 
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
-### Limitations during the preview
+<a name="q-a"></a>
+## Q & A
+
+* [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
+* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
+* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+
+### Are there any limitations during the preview?
 
 During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
 - Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
-
-<a name="q-a"></a>
-## Q & A
-
-* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
-* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 
 ### How do I create a scale set with custom software and custom disk size?
 
