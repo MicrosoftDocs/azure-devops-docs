@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 Use this task to deploy to Azure SQL DB using a DACPAC or run scripts using SQLCMD.
 
 > [!IMPORTANT]
-> This task is supported only on Windows environment
+> This task is supported only on Windows environment, and if you are willing to use AAD integrated authentication you will need to create a Private Agent, AAD integrated authentication is not supported for Hosted Agents
 
 ::: moniker range="> tfs-2018"
 
