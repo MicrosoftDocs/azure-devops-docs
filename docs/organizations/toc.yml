@@ -58,7 +58,7 @@
     - name: User and permissions management
       href: /azure/devops/organizations/accounts/faq-user-and-permissions-management?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Azure AD access
-      href: /azure/deveops/organizations/accounts/faq-azure-access?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: /azure/devops/organizations/accounts/faq-azure-access?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set up Visual Studio
       href: /azure/devops/organizations/accounts/faq-set-up-vs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Teams
