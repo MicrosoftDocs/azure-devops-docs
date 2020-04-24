@@ -104,7 +104,7 @@ The first four variables are predefined. `My.Variable` is defined by you on the 
 You can also use [Expressions](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops) to dynamically change the build version number depending on certain conditions. For example, if the build is triggered from a pull request, then we can use that in the number format, otherwise fall back to the builds source branch name, or even date format if this variable is also not available:
 
 ```yaml
-name: ${{ coalesce( variables['System.PullRequest.PullRequestNumber'], '$(Build.SourceBranchName)', '$(Date:yyyyMMdd)') }}$(Rev:.r)
+name: ${{ coalesce( '$(System.PullRequest.PullRequestNumber)', '$(System.PullRequest.SourceBranch)', '$(Date:yyyyMMdd)') }}$(Rev:.r)
 ```
 
 ## Q & A
