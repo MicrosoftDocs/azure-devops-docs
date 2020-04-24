@@ -74,7 +74,8 @@ See [Q: Why can't I add any more members to my project?](faq-user-and-permission
 
 ## Next steps
 
-* [Connect to a project](../projects/connect-to-projects.md)
+> [!div class="nextstepaction"]
+> [Connect to a project](../projects/connect-to-projects.md) 
 
 ## Related articles
 
