@@ -86,7 +86,8 @@ To manage the subscriptions for a channel, use the following command:
 
 This command will list all the current subscriptions for the channel and allow you to add new subscriptions.
 
-Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-slack/subscriptions-list.png)
