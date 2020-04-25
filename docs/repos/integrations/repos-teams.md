@@ -118,7 +118,8 @@ To view, add, and remove subscriptions for a channel, use the `subscriptions` co
 The `subscription` command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
 
-Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![View subscriptions](./media/integrations-teams/Subscriptions.png)
