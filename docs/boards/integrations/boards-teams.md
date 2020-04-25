@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: karrg
-author: RGKarthik
+author: Divais
 monikerRange: 'azure-devops'
 ms.date: 10/24/2019
 ---
@@ -141,7 +141,8 @@ This command lists all the current subscriptions for the channel and allows you 
 > [!div class="mx-imgBorder"]  
 > ![View subscriptions](./media/integrations-teams/view-subscriptions.png)
 
-Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators. 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 ## Search and share work items using compose extension
 
