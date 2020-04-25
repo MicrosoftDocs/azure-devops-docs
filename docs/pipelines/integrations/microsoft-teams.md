@@ -87,7 +87,8 @@ To manage the subscriptions for a channel, use the following command:
 
 This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
 
-Note: Team administrators will not be able to remove or modify the subscriptions created by Project administrators.
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-teams/subscriptions-list-teams.png)
