@@ -979,6 +979,10 @@ parameters:
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
+### Types
+
+[!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
+
 ### [YAML Example](#tab/yaml-example)
 
 ```yaml
