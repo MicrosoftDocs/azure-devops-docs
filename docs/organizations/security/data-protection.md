@@ -5,7 +5,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.date: 04/07/2020
+ms.date: 04/27/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -69,7 +69,7 @@ Azure DevOps Services leverages many of the Azure storage features to ensure dat
 
 ### Data redundancy
 
-To protect data in the case of hardware or service failures, Microsoft Azure storage geo-replicates customer data between two locations within the same region that are hundreds of miles apart; for instance, between North and West Europe or between North and South United States (except Brazil). For Azure blobs, customer data is replicated three times within a single region and is replicated asynchronously to a second region that's hundreds of miles away. As such, Azure always maintains the equivalent of six copies of your data. This enables us to failover to a separate region if there's a major outage or disaster while also providing local redundancy for hardware failures within a region. For Azure SQL database storage, daily backups are maintained offsite if there's a regional disaster.
+To protect data in the case of hardware or service failures, Microsoft Azure storage geo-replicates customer data between two regions in the same geography; for instance, between North and West Europe or between North and South United States (except Brazil). For Azure blobs, customer data is replicated three times within a single region and is replicated asynchronously to a second region in the same geography. As such, Azure always maintains the equivalent of six copies of your data. This enables us to failover to a separate region if there's a major outage or disaster while also providing local redundancy for hardware failures within a region. For Azure SQL database storage, daily backups are maintained offsite if there's a regional disaster.
 
 > [!NOTE]
 > Note the following regarding data redundancy and fail over:
