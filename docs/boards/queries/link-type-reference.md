@@ -541,7 +541,7 @@ az boards work-item relation list-type [--org]
 
 #### Example
 
-The following command lists the work item link types in table format that are defined for the fabrikam organization. For additional formats, see [Output formats for Azure CLI commands](../../cli/azure/format-output-azure-cli.md).  
+The following command lists the work item link types in table format that are defined for the fabrikam organization. For additional formats, see [Output formats for Azure CLI commands](/cli/azure/format-output-azure-cli).  
 
 ```CLI
 az boards work-item relation list-type --org fabrikam --output table
