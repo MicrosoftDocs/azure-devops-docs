@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 05/06/2019
+ms.date: 04/27/2020
 ---
 
 
@@ -520,6 +520,254 @@ You can create custom link types; export and import definitions of link types; a
 - [Manage link types (witadmin)](../../reference/witadmin/manage-link-types.md) 
 
 ::: moniker-end
+
+
+
+## List link types
+
+
+::: moniker range="azure-devops" 
+
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
+
+```CLI
+az boards work-item relation list-type [--only-show-errors]
+                                       [--org]
+```
+
+#### Optional parameters
+
+- **only-show-errors**: Area the work item is assigned to (for example, *Demos*).
+
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
+- **reason**: Reason for the state of the work item.
+
+#### Example
+
+The following command lists the work item link types in table format that are defined for the fabrikam organization.  
+
+```CLI
+az boards work-item relation list-type --org fabrikam --output table
+Name                  ReferenceName                                                Enabled    Usage
+--------------------  -----------------------------------------------------------  ---------  ------------
+Produces For          System.LinkTypes.Remote.Dependency-Forward                   True       workItemLink
+Consumes From         System.LinkTypes.Remote.Dependency-Reverse                   True       workItemLink
+Duplicate             System.LinkTypes.Duplicate-Forward                           True       workItemLink
+Duplicate Of          System.LinkTypes.Duplicate-Reverse                           True       workItemLink
+Referenced By         Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Forward  True       workItemLink
+References            Microsoft.VSTS.TestCase.SharedParameterReferencedBy-Reverse  True       workItemLink
+Tested By             Microsoft.VSTS.Common.TestedBy-Forward                       True       workItemLink
+Tests                 Microsoft.VSTS.Common.TestedBy-Reverse                       True       workItemLink
+Test Case             Microsoft.VSTS.TestCase.SharedStepReferencedBy-Forward       True       workItemLink
+Shared Steps          Microsoft.VSTS.TestCase.SharedStepReferencedBy-Reverse       True       workItemLink
+Successor             System.LinkTypes.Dependency-Forward                          True       workItemLink
+Predecessor           System.LinkTypes.Dependency-Reverse                          True       workItemLink
+Child                 System.LinkTypes.Hierarchy-Forward                           True       workItemLink
+Parent                System.LinkTypes.Hierarchy-Reverse                           True       workItemLink
+Related               System.LinkTypes.Related                                     True       workItemLink
+Remote Related        System.LinkTypes.Remote.Related                              True       workItemLink
+Attached File         AttachedFile                                                 True       resourceLink
+Hyperlink             Hyperlink                                                    True       resourceLink
+Artifact Link         ArtifactLink                                                 True       resourceLink
+```
+
+The json format provides additional information about the attributes defined for the link types. For example, the information for the link types Produces For and Consumes From are listed as follows. 
+
+```CLI
+  {
+    "attributes": {
+      "acyclic": true,
+      "directional": true,
+      "editable": false,
+      "enabled": true,
+      "isForward": true,
+      "oppositeEndReferenceName": "System.LinkTypes.Remote.Dependency-Reverse",
+      "remote": true,
+      "singleTarget": true,
+      "topology": "dependency",
+      "usage": "workItemLink"
+    },
+    "name": "Produces For",
+    "referenceName": "System.LinkTypes.Remote.Dependency-Forward",
+    "url": "https://dev.azure.com/mseng/_apis/wit/workItemRelationTypes/System.LinkTypes.Remote.Dependency-Forward"
+  },
+  {
+    "attributes": {
+      "acyclic": true,
+      "directional": true,
+      "editable": false,
+      "enabled": true,
+      "isForward": false,
+      "oppositeEndReferenceName": "System.LinkTypes.Remote.Dependency-Forward",
+      "remote": true,
+      "singleTarget": true,
+      "topology": "dependency",
+      "usage": "workItemLink"
+    },
+    "name": "Consumes From",
+    "referenceName": "System.LinkTypes.Remote.Dependency-Reverse",
+    "url": "https://dev.azure.com/mseng/_apis/wit/workItemRelationTypes/System.LinkTypes.Remote.Dependency-Reverse"
+  },
+
+```
+
+::: moniker-end
+
+::: moniker range="< azure-devops" 
+
+You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. 
+
+Here we list the link types for the fabrikam-sever default collection: 
+
+```CLI
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer>witadmin listlinktypes /collection:http://fabrikam-server/DefaultCollection
+
+Reference Name: Microsoft.VSTS.TestCase.SharedParameterReferencedBy
+Names: Referenced By, References
+Topology: Dependency
+Is Active: True
+
+Reference Name: Microsoft.VSTS.Common.TestedBy
+Names: Tested By, Tests
+Topology: Dependency
+Is Active: True
+
+Reference Name: Microsoft.VSTS.TestCase.SharedStepReferencedBy
+Names: Test Case, Shared Steps
+Topology: Dependency
+Is Active: True
+
+Reference Name: System.LinkTypes.Duplicate
+Names: Duplicate, Duplicate Of
+Topology: Tree
+Is Active: True
+
+Reference Name: System.LinkTypes.Dependency
+Names: Successor, Predecessor
+Topology: Dependency
+Is Active: True
+
+Reference Name: System.LinkTypes.Hierarchy
+Names: Child, Parent
+Topology: Tree
+Is Active: True
+
+Reference Name: System.LinkTypes.Related
+Name: Related
+Topology: Network
+Is Active: True
+
+```
+
+::: moniker-end
+
+### Link type attributes
+
+The following table provides descriptions for each of the link type attributes. 
+
+
+:::row:::
+   :::column span="":::
+      **Attribute**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Name, `name`
+   :::column-end:::
+   :::column span="2":::
+      Specifies the friendly name assigned to the link type(s). Directional links are defined in pairs so include a forward and reverse name. 
+   :::column-end:::
+:::row:::
+   :::column span="":::
+      Reference name, `referenceName`
+   :::column-end:::
+   :::column span="2":::
+      Specifies the name assigned to the link type or link type pair.  
+   :::column-end:::
+:::row:::
+   :::column span="":::
+      `acyclic`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type allows or (`true`) or restricts (`false`) circular relationships. For example, tree type links restrict circular relationships. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `directional`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type is directional (`true`) or not (`false`).  Directional link types are defined in pairs with a forward and reverse component. For more information, see [LinkTypes elements reference](../../reference/xml/link-type-element-reference.md). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `editable`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type is editable (`true`) or not (`false`). You can only add and edit custom link types for on-premises deployments using [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command line tool. System link types always have `editable=false`.  
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `enabled`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type is active (`true`) or not (`false`). You can only disable link types for on-premises deployments using [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command line tool. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `isForward`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type specifies the forward link  (`true`) or not (`False`) within a link type pair.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `oppositeEndReferenceName`
+   :::column-end:::
+   :::column span="2":::
+      Specifies the reference name of the link type that defines the link in the opposite direction of a link type pair. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `remote`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type supports linking to a remore work item  (`true`) or not (`False`). Link types with `remote=false` require that the target work item resides in the same organization or collection as the origin work item.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `singleTarget`
+   :::column-end:::
+   :::column span="2":::
+      Indicates whether the link type allows for more than one target (`false`) or is restricted to a single target (`true`).  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `topology`
+   :::column-end:::
+   :::column span="2":::
+      Specifies the topology type&mdash; dependency`, `network`, and `tree`. For descriptions, see [Link type topologies and restrictions](../../reference/xml/link-type-element-reference.md#topology). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      `usage`
+   :::column-end:::
+   :::column span="2":::
+      Specifies the usage type&mdash;resourceLink or `workItemLink`. The workItemLink` value indicates a link type that links two work items. The `resourceLink` value indicates a link type used to link a work item to a resource, such as a URL or attachment.  
+   :::column-end:::
+:::row-end:::
 
 
 ## Related articles
