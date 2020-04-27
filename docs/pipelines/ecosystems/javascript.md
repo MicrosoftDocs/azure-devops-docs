@@ -789,7 +789,7 @@ The final example publishes the module to an Azure DevOps Services package manag
      publishFeed: https://my.npmregistry.com
 ```
 
-For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md).
+For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md) and [How can I version my npm packages as part of the build process?](#how-can-i-version-my-npm-packages-as-part-of-the-build-process).
 
 ### Deploy a web app
 
@@ -814,7 +814,7 @@ Use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.
 
 ### Publish to an npm registry
 
-To create and publish an npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md) and [How can I version my npm packages as part of the build process?](#how-can-i-version-my-npm-packages-as-part-of-the-build-process).
+To create and publish an npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md).
 
 ### Deploy a web app
 
