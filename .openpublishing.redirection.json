@@ -1,7 +1,7 @@
 {
   "redirections": [{
       "source_path": "docs/integrate/ide/extensions/overview.md",
-      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-exten/sions",
       "redirect_document_id": false
     },
     {
@@ -12030,8 +12030,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/report/power-bi/index.md",
-      "redirect_url": "/azure/devops/report/power-bi/overview",
+      "source_path": "docs/report/powerbi/index.md",
+      "redirect_url": "/azure/devops/report/powerbi/overview",
       "redirect_document_id": false
     },
     {
