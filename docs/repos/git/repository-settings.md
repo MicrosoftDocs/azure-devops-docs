@@ -93,11 +93,11 @@ You can use Azure CLI to configure [Case enforcement](#case-enforcement) and [Ma
 [Create case enforcement policy](#create-case-enforcement-policy) | [Update case enforcement policy](#update-case-enforcement-policy) | [Create file size policy](#create-file-size-policy) | [Update file size policy](#update-file-size-policy)
 
 > [!NOTE]
-> If this is your first time using [az repos](/cli/azure/repos?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
+> If this is your first time using [`az repos`](/cli/azure/repos?view=azure-cli-latest) commands, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
 ### Create case enforcement policy
 
-Use [az repos case-enforcement create](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-create) to manage [Case enforcement](#case-enforcement) policy.
+Use [`az repos case-enforcement create`](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-create) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement create --blocking {false, true}
@@ -114,8 +114,8 @@ az repos policy case-enforcement create --blocking {false, true}
 - **enabled**: (Required) Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
@@ -146,7 +146,7 @@ az repos policy case-enforcement create --blocking true --enabled true --reposit
 
 ### Update case enforcement policy
 
-Use [az repos case-enforcement update](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
+Use [`az repos case-enforcement update`](/cli/azure/repos/policy/case-enforcement?view=azure-cli-latest#az-repos-policy-case-enforcement-update) to manage [Case enforcement](#case-enforcement) policy.
 
 ```azurecli
 az repos policy case-enforcement update --id
@@ -164,13 +164,13 @@ az repos policy case-enforcement update --id
 - **blocking**: Whether the policy should be blocking or not. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 - **repository-id**: (Required) ID of the repository on which to apply the policy.
 
 #### Example
 
-The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using [`az repos policy list`](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the case enforcement policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos policy list --output table
@@ -189,7 +189,7 @@ ID    Name               Is Blocking    Is Enabled    Repository Id             
 
 ### Create file size policy
 
-Use [az repos policy file-size create](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage  [Maximum file size](#maximum-file-size) policy.
+Use [`az repos policy file-size create`](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-create) to manage  [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size create --blocking {false, true}
@@ -210,12 +210,12 @@ az repos policy file-size create --blocking {false, true}
 - **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
 #### Example
 
-The following example retrieves the IDs of the existing repositories using [az repos list](/cli/azure/repos?view=azure-cli-latest#az-repos-list) and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing repositories using [`az repos list`](/cli/azure/repos?view=azure-cli-latest#az-repos-list) and then creates a 1 GB blocking maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos list --output table
@@ -242,7 +242,7 @@ az repos policy file-size create --blocking true --enabled true --maximum-git-bl
 
 ### Update file size policy
 
-Use [az repos policy file-size update](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-delete) to manage [Maximum file size](#maximum-file-size) policy.
+Use [`az repos policy file-size update`](/cli/azure/repos/policy/file-size?view=azure-cli-latest#az-repos-policy-file-size-delete) to manage [Maximum file size](#maximum-file-size) policy.
 
 ```azurecli
 az repos policy file-size update --id
@@ -263,14 +263,14 @@ az repos policy file-size update --id
 - **detect**: Automatically detect organization. Accepted values: **false**, **true**
 - **enabled**: Whether the policy is enabled or not. Accepted values: **false**, **true**
 - **maximum-git-blob-size**: Maximum git blob size in bytes. For example, to specify a 10byte limit, `--maximum-git-blob-size 10.`
-- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using az devops configure -d organization=ORG_URL. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
-- **project** or **-p**: Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
+- **org** or **organization**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up via git config. Example: `https://dev.azure.com/MyOrganizationName/`.
+- **project** or **-p**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 - **repository-id**: (Required) ID of the repository on which to apply the policy.
 - **use-uncompressed-size**: (Required) Whether to use uncompressed size. Accepted values: **false**, **true**
 
 #### Example
 
-The following example retrieves the IDs of the existing policies using [az repos policy list](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
+The following example retrieves the IDs of the existing policies using [`az repos policy list`](/cli/azure/repos/policy?view=azure-cli-latest#az-repos-policy-list) and then updates the maximum size of the maximum file size policy in the `FabrikamFiber` repository. This example uses the following default configuration: `az devops configure --defaults organization=https://dev.azure.com/fabrikam-tailspin project=FabrikamFiber`
 
 ```azurecli
 az repos policy list --output table
