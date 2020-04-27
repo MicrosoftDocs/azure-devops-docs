@@ -59,7 +59,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <td rowspan="15"><strong>Future</strong></td>
 <td><a href="https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826" data-raw-source="[Export Permissions Log by Resource](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616826)">Export Permissions Log by Resource</a></td><td>Admin</td><td>Future</td>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670229 data-raw-source="[Billing dashboard V3 ](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670229)">Billing dashboard V3 </a></td><td>Artifacts</td><td>Future</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227 data-raw-source="[Support for Nuget icon licenses](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227)">Support for Nuget icon licenses</a></td><td>Artifacts</td><td>Future</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227 data-raw-source="[Support for NuGet icon licenses](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670227)">Support for NuGet icon licenses</a></td><td>Artifacts</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307 data-raw-source="[Package promote task in Azure Pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609307)">Package promote task in Azure Pipelines</a></td><td>Artifacts</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609290 data-raw-source="[Adding custom upstream sources](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1609290)">Adding custom upstream sources</a></td><td>Artifacts</td><td>Future</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670230 data-raw-source="[Add disabled upstream notifications](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1670230)">Add disabled upstream notifications</a></td><td>Artifacts</td><td>Future</td></tr>
@@ -316,7 +316,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>kustomize and kompose as bake options in KubernetesManifest task</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Support for cluster admin credentials in HelmDeploy task</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>In-product support for flaky test management</td><td>Pipelines</td><td>2020</td></tr>
-        <tr><td>Improvements to the Deployment Center for WebApp in the Azure Portal</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Improvements to the Deployment Center for WebApp in the Azure portal</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Enhancements to DevOps Project for virtual machine</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Terraform integration with Azure Pipelines</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Integration with Google Analytics</td><td>Pipelines</td><td>2020</td></tr>
@@ -521,9 +521,9 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Avoid triggering multiple CI builds for pull requests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Change build numbers, upload, and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New option in &#39;Publish Test Results&#39; task to fail build on failed tests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Updates to the Azure Portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Use the Azure Portal to set up and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Setup builds and release pipelines for Functions in Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Updates to the Azure portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use the Azure portal to set up and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Setup builds and release pipelines for Functions in Azure portal</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Package usage stats</td><td>Artifacts</td><td>2019.1</td></tr>
         <tr><td>Monospaced font for Wiki markdown editor</td><td>Wiki</td><td>2019.1</td></tr>
         <tr><td>Bold Wiki page titles</td><td>Wiki</td><td>Future</td></tr>
@@ -650,7 +650,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Browse dependencies in npm packages</td><td>Package</td><td><em>2019</em></td></tr>
         <tr><td>View VSTS dashboards within Microsoft Teams</td><td>Reporting</td><td>N/A</td></tr>
         <tr><td>Investigate build history through a new build dashboard widget</td><td>Reporting</td><td><em>2019</em></td></tr>
-        <tr><td>Manage billing for your organization directly through the Azure Portal</td><td>Admin</td><td>N/A</td></tr>
+        <tr><td>Manage billing for your organization directly through the Azure portal</td><td>Admin</td><td>N/A</td></tr>
         <tr>
             <td rowspan="14"><a href="2018/jul-10-vsts.md" data-raw-source="[10 July 2018](2018/jul-10-vsts.md)">10 July 2018</a></td>
             <td>Create pull requests without a default team as reviewer</td><td></td><td><em>2019</em></td>
@@ -3552,7 +3552,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015](https://www.microsoft.com/download/details.aspx?id=48260)">2015</a></td>
         </tr>
         <tr>
-            <td>Application Insights in the Azure Preview Portal</td>
+            <td>Application Insights in the Azure portal (Preview)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -3756,7 +3756,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Viewing existing projects in the Azure Preview Portal</td>
+            <td>Viewing existing projects in the Azure portal (Preview)</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
