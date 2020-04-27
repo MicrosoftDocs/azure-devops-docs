@@ -45,6 +45,8 @@ https://github.com/MicrosoftDocs/pipelines-javascript
 
 #### [See an example](#tab/example)
 
+This YAML file creates a package for npm release and produces an artifact named `npm`. 
+
 ```yaml
 trigger:
 - none
