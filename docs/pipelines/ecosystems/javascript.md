@@ -5,7 +5,7 @@ ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
 ms.custom: seodec18, seo-javascript-september2019
-ms.date: 01/28/2020
+ms.date: 04/27/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -35,13 +35,59 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 ::: moniker range="azure-devops"
 
-### Get the code
+### Get the code(#tab/code)
 
 Fork this repo in GitHub:
 
 ```
 https://github.com/MicrosoftDocs/pipelines-javascript
 ```
+
+#### [See an example](#tab/example)
+
+```yaml
+trigger:
+- none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
+
+- script: |
+    npm pack
+  displayName: 'Package for npm release'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '*.tgz' 
+    targetFolder: $(Build.ArtifactStagingDirectory)/npm
+  displayName: 'Copy npm package'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: 'package.json' 
+    targetFolder: $(Build.ArtifactStagingDirectory)/npm
+  displayName: 'Copy package.json'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    artifactName: npm
+  displayName: 'Publish npm artifact'
+```
+--- 
 
 ### Sign in to Azure Pipelines
 
@@ -159,7 +205,7 @@ Update the following snippet in your `azure-pipelines.yml` file to select the ap
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'vs2017-win2016'
+  vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'vs2017-win2016'
 ```
 
 Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process.
@@ -178,7 +224,7 @@ If you need a version of Node.js and npm that is not already installed on the Mi
 ```yaml
 - task: NodeTool@0 
   inputs:
-    versionSpec: '8.x' # replace this value with the version that you need for your project
+    versionSpec: '12.x' # replace this value with the version that you need for your project
 ```
 
 ::: moniker-end
@@ -205,13 +251,13 @@ You can build and test your app on multiple versions of Node.
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    node_8_x:
-      node_version: 8.x
-    node_9_x:
-      node_version: 9.x
+    node_12_x:
+      node_version: 12.x
+    node_13_x:
+      node_version: 13.x
 
 steps:
 - task: NodeTool@0 
@@ -840,7 +886,7 @@ variables:
     MAP_NPMTOKEN: $(NPMTOKEN) # Mapping secret var
 
 trigger:
-- master
+- none
 
 pool:
   vmImage: 'ubuntu-latest'
