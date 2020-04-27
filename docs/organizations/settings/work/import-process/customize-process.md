@@ -260,18 +260,15 @@ The following fields are considered identity fields only if an identity rule is 
 
 ##### Rules that cause a string field to be considered an identity field
 
-A string field is recognized as an identity field when you specify one of the following rule elements within its **FIELD** definition:
+A string field is recognized as an identity field when you specify **VALIDUSER** with one of the following rule elements within its **FIELD** definition:
 
 * **ALLOWEDVALUES**
 * **PROHIBITEDVALUES**
-* **VALIDUSER**
 
 ##### Rule restrictions on identity fields
 
 For the current release of process import, don't specify any of the following rules within a **FIELD** definition.
 
-* **ALLOWEDVALUES**
-* **PROHIBITEDVALUES**
 * **SUGGESTEDVALUES**
 * Rules that contain nonidentity values.
 
