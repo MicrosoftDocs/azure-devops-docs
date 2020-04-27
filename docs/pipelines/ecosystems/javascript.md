@@ -35,7 +35,7 @@ Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or
 
 ::: moniker range="azure-devops"
 
-### Get the code(#tab/code)
+### [Get the code](#tab/code)
 
 Fork this repo in GitHub:
 
