@@ -886,11 +886,11 @@ steps:
     $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=4.1-preview"
     Write-Host "URL: $url"
     $pipeline = Invoke-RestMethod -Uri $url -Headers @{
-      Authorization = "Bearer $env:TOKEN"
+      Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
     }
     Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
   env:
-    TOKEN: $(system.accesstoken)
+    SYSTEM_ACCESSTOKEN: $(system.accesstoken)
 ```
 
 ::: moniker-end
@@ -899,7 +899,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-Select the **Allow scripts to access OAuth token** option in the control options for the job.
+Select the **Allow scripts to access OAuth token** option in the control options for the job. The token will be available as the environment variable `SYSTEM_ACCESSTOKEN`.
 
 * * *
 ## Related articles
