@@ -296,7 +296,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Azure Boards app for Slack</td><td>Boards</td><td>N/A</td></tr>
         <tr><td>Customize taskboard columns</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Toggle to show or hide completed child work items on the backlog</td><td>Boards</td><td>2020</td></tr>
-        <tr><td>Search for boards, backlogs, queries and sprint from the instant search box</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Search for boards, backlogs, queries, and sprint from the instant search box</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Most recent tags displayed when tagging a work item</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Improved code search filtering options</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Share your packages publicly with public feeds (preview)</td><td>Artifacts</td><td>2020</td></tr>
@@ -463,7 +463,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td>Azure DevOps CLI extension</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>Navigate to Azure Boards work items directly from GitHub pull request mentions</td><td>Boards</td><td>2019.1</td></tr>
-        <tr><td>Deploy your local Git web apps for Windows, Linux and Containers to Azure</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Deploy your local Git web apps for Windows, Linux, and Containers to Azure</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New Azure subscription option in Kubernetes service connection</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Notifications on failure of a release creation request</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Azure Pipelines app for Slack</td><td>Pipelines</td><td>N/A</td></tr>
@@ -509,7 +509,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Display status for each pipeline job in GitHub Checks</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Default authorization for YAML resources in GitHub</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Service containers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Work items linked to GitHub commits in Release Summary</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Work items linked to GitHub commit in Release Summary</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New Azure App Service tasks optimized for YAML</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Azure AD authentication support for Azure SQL task</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Grafana annotations service hook</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -519,10 +519,10 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Java long-term support (LTS) on Microsoft hosted agents</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>YAML support for Bitbucket Cloud pipelines</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Avoid triggering multiple CI builds for pull requests</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Change build numbers, upload and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Change build numbers, upload, and download artifacts in forked repository builds</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>New option in &#39;Publish Test Results&#39; task to fail build on failed tests</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Updates to the Azure Portal for creating an Azure DevOps project</td><td>Pipelines</td><td>Future</td></tr>
-        <tr><td>Use the Azure Portal to setup and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
+        <tr><td>Use the Azure Portal to set up and deploy to a CosmosDB database</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Setup builds and release pipelines for Functions in Azure Portal</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Package usage stats</td><td>Artifacts</td><td>2019.1</td></tr>
         <tr><td>Monospaced font for Wiki markdown editor</td><td>Wiki</td><td>2019.1</td></tr>
@@ -535,9 +535,9 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td>Link GitHub commits and pull requests to Azure Boards work items</td><td>Boards</td><td>2019</td>
         </tr>
         <tr><td>Acquire Azure Boards as a service</td><td>Boards</td><td>N/A</td></tr>
-        <tr><td>Rerun expired build for auto-complete pull requests</td><td>Repos</td><td>2019.1</td></tr>
+        <tr><td>Rerun expired build for autocomplete pull requests</td><td>Repos</td><td>2019.1</td></tr>
         <tr><td>Manage GitHub releases using pipelines</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>VS Code extension for YAML based pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>VS Code extension for YAML-based pipelines</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Web editor with IntelliSense for YAML pipelines</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>ServiceNow Change Management integration</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Links to specific lines in a build log</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -555,7 +555,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Improved branch picker</td><td>Repos</td><td>2019</td></tr>
         <tr><td>Draft pull requests</td><td>Repos</td><td>2019.1</td></tr>
         <tr><td>Trigger YAML pipelines with tags</td><td>Pipelines</td><td>2019.1</td></tr>
-        <tr><td>Setting to auto cancel an existing pipeline when a pull requests is updated</td><td>Pipelines</td><td>2019.1</td></tr>
+        <tr><td>Setting to auto cancel an existing pipeline when a pull request is updated</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Declare container resources inline</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Changes to default permissions for new projects</td><td>Pipelines</td><td>2019.1</td></tr>
         <tr><td>Deploy to failed targets in a Deployment Group</td><td>Pipelines</td><td>2019.1</td></tr>
@@ -601,7 +601,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Support AAD users in MSA accounts</td><td>Administration</td><td>N/A</td></tr>
         <tr>
             <td rowspan="10"><a href="2018/sprint-140-update.md" data-raw-source="[20 September 2018](2018/sprint-140-update.md)">20 September 2018</a></td>
-            <td>Control specific build dependencies using container jobs</td><td>Pipelines</td><td>Future</td>
+            <td>Control-specific build dependencies using container jobs</td><td>Pipelines</td><td>Future</td>
         </tr>
         <tr><td>Enable code coverage in .NET Core task</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Leverage restructured Process REST APIs</td><td>Boards</td><td><em>2019</em></td></tr>
@@ -617,7 +617,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td>Azure DevOps Services</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>Add Azure Pipelines from the GitHub Marketplace</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Build open source projects with Azure Pipelines for free</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Build open-source projects with Azure Pipelines for free</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Configure builds using YAML</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Create YAML build pipelines using the new wizard</td><td>Pipelines</td><td>Future</td></tr>
         <tr><td>Manage build pipelines using the new Builds page</td><td>Pipelines</td><td><em>2019</em></td></tr>
@@ -772,7 +772,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Leverage your existing subscription using an Azure AD-based alternate email account</td><td></td><td>N/A</td></tr>
         <tr>
             <td rowspan="20"><a href="2018/feb-14-vsts.md" data-raw-source="[14 Feb 2018](2018/feb-14-vsts.md)">14 Feb 2018</a></td>
-            <td>Recover a recently-deleted repository via API</td><td></td>
+            <td>Recover a recently deleted repository via API</td><td></td>
             <td><em>2018.2</em></td>
         </tr>
         <tr><td>Discuss work items in Microsoft Teams using the VSTS messaging extension</td><td></td><td>N/A</td></tr>
@@ -800,9 +800,9 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td><em>2019</em></td>
         </tr>
         <tr><td>Integrate Power BI with VSTS Analytics using new views</td><td></td><td><em>2019</em></td></tr>
-        <tr><td>View pull request merge commit</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Views pull request merge commit</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Help reviewers using pull request labels</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>View remaining policy criteria for pull request auto-complete</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>View remaining policy criteria for pull request autocomplete</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Discuss math in pull requests</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Control who can contribute to pull requests</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Integrate using the pull request status API and branch policy</td><td></td><td><em>2018.2</em></td></tr>
@@ -828,7 +828,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Blame now has history</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>SSH URLs are changing</td><td></td><td>N/A</td></tr>
         <tr><td>Generate YAML templates from existing build definitions</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Enhancements to multi-phase builds</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Enhancements to multi-phase build</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Hide empty contributed sections in build results page</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Skip scheduled builds if nothing has changed in the repo</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Run UI tests and install software on Hosted VS2017 agents</td><td></td><td>N/A</td></tr>
@@ -838,7 +838,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Release triggers branch enhancements</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Filter large test results</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Identify flaky tests</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Pass parameters to your test run using .testsettings file</td><td></td><td><em>2018.2</em></td></tr>
+        <tr><td>Pass parameters to your test run using. testsettings file</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Access information pertinent to test cases in your automated tests when running in the CI/CD pipeline</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Automated tests that use TestCase as a data source can now be run using the VSTest task</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Improved Marketplace experience</td><td></td><td>N/A</td></tr>
@@ -883,7 +883,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Jenkins multi-branch pipeline support and link jobs organized in folders</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Jenkins work items in release for JIRA and VSTS Work Items</td><td></td><td>N/A</td></tr>
         <tr><td>Save packages from NuGet.org in your feed</td><td></td><td><em>2018.2</em></td></tr>
-        <tr><td>Maven support now generally available</td><td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td></tr>
+        <tr><td>Maven supports now generally available</td><td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td></tr>
         <tr><td>Easier feed creation and editing</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Previous package versions are now a full-page list</td><td></td><td><em>2018.2</em></td></tr>
         <tr><td>Promote, unlist, and deprecate multiple packages</td><td></td><td><em>2018.2</em></td></tr>
@@ -945,7 +945,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td rowspan="13"><a href="2017/oct-06-vsts.md" data-raw-source="[06 Oct 2017](2017/oct-06-vsts.md)">06 Oct 2017</a></td>
-            <td>New experience for code and work items search</td>
+            <td>New experience for code and work items searches</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
@@ -1155,7 +1155,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Pause build definitions</td>
+            <td>Pauses build definitions</td>
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
@@ -1292,7 +1292,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
-            <td>Release status badge in Code hub</td>
+            <td>Release status badge-in Code hub</td>
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
@@ -1327,7 +1327,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
-            <td>Re-order favorite groups</td>
+            <td>Reorder favorite groups</td>
             <td></td><td><em>2018.2</em></td>
         </tr>
         <tr>
@@ -1412,7 +1412,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
-            <td>Constraints on SVG images, screenshots and badges</td>
+            <td>Constraints on SVG images, screenshots, and badges</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -1441,7 +1441,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
-            <td>Filter pull request tree by file name</td>
+            <td>Filters pull request tree by file name</td>
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
@@ -1485,7 +1485,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
-            <td>Package build task updates</td>
+            <td>Packages build task updates</td>
             <td></td><td><a href="https://aka.ms/relnotes-tfs2018" data-raw-source="[2018](https://aka.ms/relnotes-tfs2018)">2018</a></td>
         </tr>
         <tr>
@@ -1586,7 +1586,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Azure AD sign in address rename</td>
+            <td>Azure AD sign in address renames</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -1599,7 +1599,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Built-in tasks for building and deploying container based applications</td>
+            <td>Built-in tasks for building and deploying container-based applications</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -1651,7 +1651,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Share pull requests with teams</td>
+            <td>Shares pull requests with teams</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -1700,7 +1700,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>2017.2</td>
         </tr>
         <tr>
-            <td>Git commit comments use the new discussion control</td>
+            <td>Git commits comments use the new discussion control</td>
             <td></td><td>2017.2</td>
         </tr>
         <tr>
@@ -2154,7 +2154,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td>N/A</td>
         </tr>
         <tr>
-            <td>Link build artifacts from another team project</td>
+            <td>Links build artifacts from another team project</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -2188,7 +2188,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td>Rollback build definitions</td>
+            <td>Rollbacks build definitions</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -2212,7 +2212,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
-            <td>Azure Web App Service manage task</td>
+            <td>Azure Web App Services manage task</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=839593" data-raw-source="[2017.1](https://go.microsoft.com/fwlink/?LinkId=839593)">2017.1</a></td>
         </tr>
         <tr>
@@ -3079,7 +3079,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
-            <td>Auto-refresh dashboards</td>
+            <td>Autorefresh dashboards</td>
             <td></td><td><a href="https://go.microsoft.com/fwlink/?LinkId=615439" data-raw-source="[2015.2](https://go.microsoft.com/fwlink/?LinkId=615439)">2015.2</a></td>
         </tr>
         <tr>
@@ -3239,7 +3239,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
-            <td>Reorder and re-parent tasks from the Kanban board</td>
+            <td>Reorder and reparent tasks from the Kanban board</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=48260" data-raw-source="[2015.1](https://www.microsoft.com/download/details.aspx?id=48260)">2015.1</a></td>
         </tr>
         <tr>
@@ -3473,7 +3473,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td><a href="2015/apr-22-team-services.md" data-raw-source="[22 Apr 2015](2015/apr-22-team-services.md)">22 Apr 2015</a></td>
             <td>Application Insights: <br />
                 Synthetic data filtering <br />
-                New usage experience for ASP.NET, Java and other applications <br />
+                New usage experience for ASP.NET, Java, and other applications <br />
                 Daily Active User calculations</td>
             <td></td><td>N/A</td>
         </tr>
@@ -3501,7 +3501,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr>
             <td><a href="2015/mar-27-team-services.md" data-raw-source="[27 Mar 2015](2015/mar-27-team-services.md)">27 Mar 2015</a></td>
-            <td>Application Insights: Save search page, pause export and export on alert fail</td>
+            <td>Application Insights: Save search page, pause export, and export on alert fail</td>
             <td></td><td>N/A</td>
         </tr>
         <tr>
@@ -4075,7 +4075,7 @@ Versions in the "Server" column are linked to the appropriate download location.
             <td></td><td><a href="https://go.microsoft.com/fwlink/p/?LinkId=306566" data-raw-source="[2013](https://go.microsoft.com/fwlink/p/?LinkId=306566)">2013</a></td>
         </tr>
         <tr>
-            <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause and resume tests in Test Runner</td>
+            <td>TCM improvements – view test step attachments when running tests, add attachments when running tests, pause, and resume tests in Test Runner</td>
             <td></td><td><a href="https://www.microsoft.com/download/details.aspx?id=36392" data-raw-source="[2012.2](https://www.microsoft.com/download/details.aspx?id=36392)">2012.2</a></td>
         </tr>
         <tr>
