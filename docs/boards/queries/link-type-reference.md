@@ -528,7 +528,7 @@ You can create custom link types; export and import definitions of link types; a
 
 ::: moniker range="azure-devops" 
 
-You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
+You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
 
 ```CLI
 az boards work-item relation list-type [--org]
@@ -568,7 +568,7 @@ Hyperlink             Hyperlink                                                 
 Artifact Link         ArtifactLink                                                 True       resourceLink
 ```
 
-The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types Produces For and Consumes From are listed as follows. 
+The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types *Produces For* and *Consumes From* are listed as follows. 
 
 ```CLI
   {
@@ -660,7 +660,7 @@ Is Active: True
 
 ### Link type attributes
 
-The following table provides descriptions for each of the link type attributes returned by **witadmin**, the REST API, or **azure boards** CLI.  
+The following table provides descriptions for each of the link type attributes returned by **azure boards** CLI or the REST API.  
 
 
 :::row:::
@@ -712,10 +712,10 @@ The following table provides descriptions for each of the link type attributes r
 :::row-end:::
 :::row:::
    :::column span="":::
-      `enabled`
+      Is Active, `enabled`
    :::column-end:::
    :::column span="2":::
-      Indicates whether the link type is active (`true`) or not (`false`). You can only disable link types for on-premises deployments using [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command line tool. 
+      Indicates whether the link type is active (`true`) or not (`false`). You can only custom link types for on-premises deployments using the [**witadmin** Manage link type](../../reference/witadmin/manage-link-types.md) command line tool. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -766,7 +766,14 @@ The following table provides descriptions for each of the link type attributes r
       Specifies the usage type&mdash;resourceLink or `workItemLink`. The workItemLink` value indicates a link type that links two work items. The `resourceLink` value indicates a link type used to link a work item to a resource, such as a URL or attachment.  
    :::column-end:::
 :::row-end:::
-
+:::row:::
+   :::column span="":::
+      `url`
+   :::column-end:::
+   :::column span="2":::
+      Lists the attributes of the link type in json format.  
+   :::column-end:::
+:::row-end:::
 
 ## Related articles
 
