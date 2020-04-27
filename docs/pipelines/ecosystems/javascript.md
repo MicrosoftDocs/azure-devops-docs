@@ -1,6 +1,6 @@
 ---
 title: Build and deploy JavaScript and Node.js apps
-description: Automatically build JavaScript and Node.js apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
+description: Automatically build JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: quickstart
@@ -194,7 +194,7 @@ pool: Default
 
 ::: moniker-end
 
-Read through the rest of this topic to learn some of the common ways to customize your JavaScript build process.
+Learn some of the common ways to customize your JavaScript build process.
 
 ## Build environment
 
@@ -382,7 +382,7 @@ This can take a significant amount of time. To mitigate this, you can use Azure 
 
 ::: moniker range="azure-devops"
 
-Use a simple script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure it on self-hosted agents like any other tool.
+Use a script stage to invoke [Yarn](https://yarnpkg.com) to restore dependencies.  Yarn is available preinstalled on some [Microsoft-hosted agents](../agents/hosted.md). You can install and configure it on self-hosted agents like any other tool.
 
 ```yaml
 - script: yarn install
@@ -428,7 +428,7 @@ Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compi
 
 Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results to VSTS easily by using the built-in [Publish Test Results](../tasks/test/publish-test-results.md) task.
 
-If your test framework doesn't support JUnit output out of the box, you'll need to add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those into the task definition.
+If your test framework doesn't support JUnit output, you'll need to add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those into the task definition.
 
 The following table lists the most commonly used test runners and the reporters that can be used to produce XML results:
 
@@ -481,6 +481,7 @@ If your test scripts run a code coverage tool such as [Istanbul](https://istanbu
 ::: moniker range="< azure-devops"
 
 Use the [Publish Test Results](../tasks/test/publish-test-results.md) and [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) tasks in your pipeline to publish test results along with code coverage results by using Istanbul.
+
 Set the Control Options for the Publish Test Results task to run the task even if a previous task has failed, unless the deployment was canceled.
 
 ::: moniker-end
@@ -508,7 +509,7 @@ The first example calls `webpack`. To have this work, make sure that `webpack` i
 - script: webpack
 ```
 
-The next example uses the [npm](../tasks/package/npm.md) task to call `npm run build` to call the `build` script object defined in the project package.json. Using script objects in your project moves the logic for the build into the source code and out of the of the pipeline.  
+The next example uses the [npm](../tasks/package/npm.md) task to call `npm run build` to call the `build` script object defined in the project package.json. Using script objects in your project moves the logic for the build into the source code and out of the pipeline.  
 
 ```yaml
 - script: npm run build
@@ -559,7 +560,7 @@ Add the following tasks to your pipeline:
 
 ::: moniker-end
 
-For tests in your pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs Karma), you need to use a headless browser instead of a standard browser. In the Angular starter app, an easy way to do this is to:
+For tests in your pipeline that require a browser to run (such as the **ng test** command in the starter app, which runs Karma), you need to use a headless browser instead of a standard browser. In the Angular starter app:
 
 1. Change the  `browsers` entry in your *karma.conf.js* project file from `browsers: ['Chrome']` to `browsers: ['ChromeHeadless']`.
 
@@ -729,7 +730,7 @@ The simplest way to create a pipeline if your app uses Grunt is to use the **Nod
 
 ## Package and deliver your code
 
-After you have built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish an npm or Maven package,
+After you have built and tested your app, you can upload the build output to Azure Pipelines, create and publish an npm or Maven package,
 or package the build output into a .zip file to be deployed to a web application.
 
 ::: moniker range="azure-devops"
@@ -860,7 +861,7 @@ steps:
     VERSION_PATH="$(nvm_version_path ${NODE_VERSION})"
     echo "##vso[task.prependPath]$VERSION_PATH"
 ```
-Then `node` and other command line tools will work for the rest of the pipeline job.
+Then `node` and other command-line tools will work for the rest of the pipeline job.
 In each step where you need to use the `nvm` command, you'll need to start the script with:
 ```yaml
 - script: |
@@ -870,7 +871,7 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 
 ## Q&A
 
-### Where can I learn more about Azure Artifacts and the TFS Package Management service?
+### Where can I learn more about Azure Artifacts and the Package Management service?
 
 [Package Management in Azure Artifacts and TFS](../../artifacts/index.yml)
 
@@ -880,7 +881,7 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 
 ### How can I version my npm packages as part of the build process?
 
-One option is to use a combination of version control and [npm version](https://docs.npmjs.com/cli/version). At the end of a pipeline run, you can update your repo with the new version. In this YAML, there is a GitHub repo and the package gets deployed to npmjs. Please note that your build will fail if there is a mismatch between your package version on npmjs and your `package.json` file. 
+One option is to use a combination of version control and [npm version](https://docs.npmjs.com/cli/version). At the end of a pipeline run, you can update your repo with the new version. In this YAML, there is a GitHub repo and the package gets deployed to npmjs. Note that your build will fail if there is a mismatch between your package version on npmjs and your `package.json` file. 
 
 
 ```yaml
