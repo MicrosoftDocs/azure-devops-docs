@@ -64,8 +64,3 @@ We would love to hear what you think about these features. Use the help menu to 
 > ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
-  
-Thanks,
-
-Aaron Hallberg
-  
