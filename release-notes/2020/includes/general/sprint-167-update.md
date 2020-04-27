@@ -9,7 +9,7 @@ In addition to project administrators, Team admins can now create subscription f
 
 ### Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams
 
-Azure Boards, Repos and Pipelines messaging app now supports connecting to a different tenant in Microsoft Teams. So your Azure DevOps and Microsoft Teams don't have to be in same AAD anymore. Use **Sign in with different email** link if your Microsoft Teams and Azure Pipelines are in different tenants.
+Azure Boards, Repos and Pipelines messaging app now supports connecting to a different tenant in Microsoft Teams. So your Azure DevOps and Microsoft Teams don't have to be in same Azure AD anymore. Use **Sign in with different email** link if your Microsoft Teams and Azure Pipelines are in different tenants.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../media/167-signin.png)
