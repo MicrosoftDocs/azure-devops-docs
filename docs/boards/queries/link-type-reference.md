@@ -531,21 +531,17 @@ You can create custom link types; export and import definitions of link types; a
 You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
 
 ```CLI
-az boards work-item relation list-type [--only-show-errors]
-                                       [--org]
+az boards work-item relation list-type [--org]
 ```
 
 #### Optional parameters
 
-- **only-show-errors**: Area the work item is assigned to (for example, *Demos*).
-
 - **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **project**: Name or ID of the project. You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up using `git config`.
-- **reason**: Reason for the state of the work item.
+
 
 #### Example
 
-The following command lists the work item link types in table format that are defined for the fabrikam organization.  
+The following command lists the work item link types in table format that are defined for the fabrikam organization. For additional formats, see [Output formats for Azure CLI commands](../../cli/azure/format-output-azure-cli.md).  
 
 ```CLI
 az boards work-item relation list-type --org fabrikam --output table
@@ -572,7 +568,7 @@ Hyperlink             Hyperlink                                                 
 Artifact Link         ArtifactLink                                                 True       resourceLink
 ```
 
-The json format provides additional information about the attributes defined for the link types. For example, the information for the link types Produces For and Consumes From are listed as follows. 
+The default json format provides additional information about the attributes defined for the link types. For example, the information for the link types Produces For and Consumes From are listed as follows. 
 
 ```CLI
   {
@@ -664,7 +660,7 @@ Is Active: True
 
 ### Link type attributes
 
-The following table provides descriptions for each of the link type attributes. 
+The following table provides descriptions for each of the link type attributes returned by **witadmin**, the REST API, or **azure boards** CLI.  
 
 
 :::row:::
@@ -677,11 +673,12 @@ The following table provides descriptions for each of the link type attributes.
 :::row-end:::
 :::row:::
    :::column span="":::
-      Name, `name`
+      Names, `name`
    :::column-end:::
    :::column span="2":::
-      Specifies the friendly name assigned to the link type(s). Directional links are defined in pairs so include a forward and reverse name. 
+      Specifies the friendly name assigned to the link type(s). Directional links are defined in pairs, therefore  include a forward and reverse name. 
    :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="":::
       Reference name, `referenceName`
@@ -689,6 +686,7 @@ The following table provides descriptions for each of the link type attributes.
    :::column span="2":::
       Specifies the name assigned to the link type or link type pair.  
    :::column-end:::
+:::row-end:::
 :::row:::
    :::column span="":::
       `acyclic`
