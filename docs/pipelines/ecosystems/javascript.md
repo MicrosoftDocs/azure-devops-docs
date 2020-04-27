@@ -765,7 +765,7 @@ Use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.
 
 ### Publish to an npm registry
 
-To create and publish an npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md).
+To create and publish an npm package, use the [npm task](../tasks/package/npm.md). For more information about versioning and publishing npm packages, see [Publish npm packages](../artifacts/npm.md) and [How can I version my npm packages as part of the build process?](#how-can-i-version-my-npm-packages-as-part-of-the-build-process).
 
 ### Deploy a web app
 
@@ -829,3 +829,82 @@ In each step where you need to use the `nvm` command, you'll need to start the s
 ### Where can I learn more about tasks?
 
 [Build, release, and test tasks](../tasks/index.md)
+
+### How can I version my npm packages as part of the build process?
+
+One option is to use a combination of version control and [npm version](https://docs.npmjs.com/cli/version). At the end of a pipeline run, you can update your repo with the new version. In this YAML, there is a GitHub repo and the package gets deployed to npmjs. Please note that your build will fail if there is a mismatch between your package version on npmjs and your `package.json` file. 
+
+
+```yaml
+variables:
+    MAP_NPMTOKEN: $(NPMTOKEN) # Mapping secret var
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps: # Checking out connected repo
+- checkout: self
+  persistCredentials: true
+  clean: true
+    
+- task: npmAuthenticate@0
+  inputs:
+    workingFile: .npmrc
+    customEndpoint: 'my-npm-connection'
+    
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- script: |
+    npm pack
+  displayName: 'Package for release'
+
+- bash: | # Grab the package version
+    v=`node -p "const p = require('./package.json'); p.version;"`
+    echo "##vso[task.setvariable variable=packageVersion]$v"
+
+- task: CopyFiles@2
+  inputs:
+      contents: '*.tgz'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+  displayName: 'Copy archives to artifacts staging directory'
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: 'package.json' 
+    targetFolder: $(Build.ArtifactStagingDirectory)/npm
+  displayName: 'Copy package.json'
+
+- task: PublishBuildArtifacts@1 
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/npm'
+    artifactName: npm
+  displayName: 'Publish npm artifact'
+
+- script: |  # Config can be set in .npmrc
+    npm config set //registry.npmjs.org/:_authToken=$(MAP_NPMTOKEN) 
+    npm config set scope "@myscope"
+    # npm config list
+    # npm --version
+    npm version patch --force
+    npm publish --access public
+
+- task: CmdLine@2 # Push changes to GitHub (substitute your repo)
+  inputs:
+    script: |
+      git config --global user.email "username@contoso.com"
+      git config --global user.name "Azure Pipeline"
+      git add package.json
+      git commit -a -m "Test Commit from Azure DevOps"
+      git push -u origin HEAD:master
+```
