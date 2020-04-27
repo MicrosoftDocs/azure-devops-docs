@@ -29,6 +29,10 @@ When you [create an organization](create-organization.md), you can choose the re
 
    ![Find the region under the organization settings](media/change-organization-location/organization-settings-region.png)
 
+## Prerequisites
+
+You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md) to add a privacy policy URL.
+
 ## Change organization region
 
 To change your organization region, use [Azure DevOps Virtual Support Agent](https://azuredevopsvirtualagent.azurewebsites.net/), and then select the quick action, **Change Organization Region**. If you don't see a direct link, select from the **Chat Menu**.
