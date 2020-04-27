@@ -1,0 +1,53 @@
+---
+title:  Azure DevOps Release Notes - Support for Deployment Strategies in Azure Portal 
+author: sid-ah
+ms.author: simerzou
+ms.technology: devops-release-notes
+ms.date: 4/27/2020
+description: With this **Sprint 168**, we are diversifying the strategies for your deployment, and we are bringing new ways to integrate Azure DevOps with Slack and Microsoft Teams.
+---
+
+# Support for Deployment Strategies in Azure Portal 
+With this sprint, we are diversifying the strategies for your deployment, and we are bringing new ways to integrate Azure DevOps with Slack and Microsoft Teams.
+
+Check out the [Features](#features) list below for details.
+
+## Features
+
+### General
+[!INCLUDE [sprint-168-update-links](includes/general/sprint-168-update-links.md)]
+
+### Repos
+[!INCLUDE [sprint-168-update-links](includes/repos/sprint-168-update-links.md)]
+
+### Pipelines
+[!INCLUDE [sprint-168-update-links](includes/pipelines/sprint-168-update-links.md)]
+
+## General
+[!INCLUDE [sprint-168-update](includes/general/sprint-168-update.md)]
+
+## Repos
+[!INCLUDE [sprint-168-update](includes/repos/sprint-168-update.md)]
+
+## Pipelines
+[!INCLUDE [sprint-168-update](includes/pipelines/sprint-168-update.md)]
+
+## Next steps
+
+> [!NOTE]
+> These features will roll out over the next two to three weeks.
+
+Head over to Azure DevOps and take a look.
+
+> [!div class="nextstepaction"]
+> [Go to Azure DevOps](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+
+## Feedback
+
+We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
+
+> [!div class="mx-imgBorder"]
+> ![Make a suggestion](../media/make-a-suggestion.png)
+
+You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).  
+  
