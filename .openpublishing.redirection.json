@@ -1,7 +1,7 @@
 {
   "redirections": [{
       "source_path": "docs/integrate/ide/extensions/overview.md",
-      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-exten/sions",
       "redirect_document_id": false
     },
     {
@@ -12030,8 +12030,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/report/power-bi/index.md",
-      "redirect_url": "/azure/devops/report/power-bi/overview",
+      "source_path": "docs/report/powerbi/index.md",
+      "redirect_url": "/azure/devops/report/powerbi/overview",
       "redirect_document_id": false
     },
     {
@@ -12678,6 +12678,43 @@
       "source_path": "docs/java/labs/settingvstsproject/index.md",
       "redirect_url": "/previous-versions/azure/devops/java/labs/settingvstsproject/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-board-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/plans/delivery-plan-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/queries-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-form-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/key-concepts.md",
+      "redirect_url": "/azure/devops/boards/work-items/agile-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
+      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_document_id": false
     }
   ]
 }
+
+

@@ -12,14 +12,14 @@ ms.date: 10/16/2019
 
 # Customize a Hosted XML process
 
-## Azure DevOps Services (Hosted XML)
+**Azure DevOps Services (Hosted XML)**
+
+Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 
 > [!IMPORTANT]
 > With the Hosted XML process model, you customize work tracking by updating select XML definition files of a process template. This feature is available only when data is migrated to Azure DevOps Services by use of [Team Foundation Server Database Import Service](https://aka.ms/TFSDataImport).
 >
 >To learn more about customization and process models, see [Customize work tracking](../../../../reference/customize-work.md).
-
-Azure DevOps Services supports adding and updating processes through an administrative experience that is a web-based [import process](import-process.md). After you add a process, you can create one or more projects from it. You can update the process at any time by importing it again. The changes made to the process template are then applied to all projects that use the process.
 
 A process is a zip file that contains a set of interdependent files. These files define the building blocks of the work-item tracking system and other subsystems in Azure DevOps Services. Some building blocks update existing projects, while others apply only to new projects. See the following table for the full list of building blocks.
 
@@ -260,18 +260,15 @@ The following fields are considered identity fields only if an identity rule is 
 
 ##### Rules that cause a string field to be considered an identity field
 
-A string field is recognized as an identity field when you specify one of the following rule elements within its **FIELD** definition:
+A string field is recognized as an identity field when you specify **VALIDUSER** with one of the following rule elements within its **FIELD** definition:
 
 * **ALLOWEDVALUES**
 * **PROHIBITEDVALUES**
-* **VALIDUSER**
 
 ##### Rule restrictions on identity fields
 
 For the current release of process import, don't specify any of the following rules within a **FIELD** definition.
 
-* **ALLOWEDVALUES**
-* **PROHIBITEDVALUES**
 * **SUGGESTEDVALUES**
 * Rules that contain nonidentity values.
 

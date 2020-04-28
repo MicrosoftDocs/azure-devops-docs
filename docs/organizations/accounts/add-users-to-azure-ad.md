@@ -53,4 +53,5 @@ For more information, see the [conceptual overview](access-with-azure-ad.md) for
 - [Add users to your organization](add-organization-users.md)
 - [Add users to your team](add-team-members.md)
 - [Add external users](add-external-user.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
     
