@@ -6,5 +6,5 @@ ms.date: 4/13/2020
 ms.topic: include
 ---
 
-- [Users can add PR attachments from the create pull request page](#users-can-add-pr-attachments-from-the-create-pull-request-page) 
-- [TFVC Files hub converted to new design system](#tfvc-files-hub-converted-to-new-design-system)
+- [Add attachments while creating a pull request](#add-attachments-while-creating-a-pull-request) 
+- [New web platform conversion - TFVC Hubs](#new-web-platform-conversion---tfvc-hubs)

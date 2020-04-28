@@ -7,6 +7,6 @@ ms.topic: include
 ---
 - [Depend on job output variable from another stage](#depend-on-job-output-variable-from-another-stage)
 - [Limit what repos the build service identity can access](#limit-what-repos-the-build-service-identity-can-access)
-- [Repository variables in YAML template expressions, and multi repo agent scenarios](#repository-variables-in-yaml-template-expressions,-and-multi-repo-agent-scenarios)
+- [Getting details at runtime about multiple repositories](#getting-details-at-runtime-about-multiple-repositories)
 - [Multi stage pipelines GA](#multi-stage-pipelines-ga)
-- [Support for Deployment Strategies in Azure Portal ](#support-for-deployment-strategies-in-azure-portal-)
+- [Configure Deployment Strategies from Azure Portal](#configure-deployment-strategies-from-azure-portal)
