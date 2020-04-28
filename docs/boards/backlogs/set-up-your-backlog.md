@@ -68,14 +68,17 @@ As shown in the following image, (1) choose the team, (2) **Work**, (3)**Backlog
 ::: moniker-end
 
 To look up your team's Area Path(s) and Iteration Paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
-[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
+<a id="sprint" />
 
 ## Default sprint backlog and Taskboard work items
 
-Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with one additional one: the Iteration Path you select.  
+Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with one additional filter: the Iteration Path you select.  
 
-To select an Iteration Path, your team must have selected it from your team settings. 
+You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+
+Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
 
 
 ## Checklist for work items, backlogs, and boards 
