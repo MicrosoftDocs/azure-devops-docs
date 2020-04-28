@@ -12,6 +12,10 @@ You can now add an attachment to a pull request when creating it. To add an atta
 
 ### New web platform conversion - Team Foundation Version Control Hubs
 
-We have updated the Team Foundation Version Control hubs to a more modern experience. The pages are now faster and more mobile-friendly! Web experience:
-![img](../../media/168-repos-0-0.png)<br>Mobile experience: 
+We have updated the Team Foundation Version Control hubs to a more modern experience. The pages are now faster and more mobile-friendly! **Web experience**:
+
+![img](../../media/168-repos-0-0.png)
+
+**Mobile experience**: 
+
 ![img](../../media/168-repos-0-1.png)
