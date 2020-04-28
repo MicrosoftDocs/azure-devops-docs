@@ -205,13 +205,17 @@ Much like steps, jobs can be reused with templates.
 ```yaml
 # File: templates/jobs.yml
 jobs:
-- job: Build
+- job: Ubuntu
+  pool:
+    vmImage: 'ubuntu-latest'
   steps:
-  - script: npm install
+  - bash: echo "Hello Ubuntu"
 
-- job: Test
+- job: Windows
+  pool:
+    vmImage: 'windows-latest'
   steps:
-  - script: npm test
+  - bash: echo "Hello Windows"
 ```
 
 ```yaml
@@ -238,11 +242,11 @@ stages:
 ```yaml
 # File: templates/stages2.yml
 stages:
-- stage: Print
+- stage: Build
   jobs:
-  - job: printhello
+  - job: build
     steps:
-    - script: 'echo Hello world'
+    - script: npm run build
 ```
 
 ```yaml
