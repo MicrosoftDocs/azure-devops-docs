@@ -29,7 +29,7 @@ highlightedContent:
     # Card
     - title: Create your first pipeline
       itemType: how-to-guide
-      url: ./pipelines/get-started/pipelines-get-started.md
+      url: ./pipelines/create-first-pipeline.md
     # Card
     - title: Get started for free
       itemType: how-to-guide
@@ -78,7 +78,9 @@ productDirectory:
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
       links:
         - url: ./pipelines/get-started/what-is-azure-pipelines.md
-          text: What is Azure Pipelines?
+        - text: What is Azure Pipelines?
+        - url: ./pipelines/get-started/pipelines-get-started.md
+          text: Use Azure Pipelines?
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
         - url: ./pipelines/yaml-schema.md
