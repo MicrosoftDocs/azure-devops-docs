@@ -1,14 +1,14 @@
 ---
-title:  Azure DevOps Release Notes - Support for Deployment Strategies in Azure Portal 
+title:  Azure DevOps Release Notes - Configure Deployment Strategies from Azure Portal
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 4/27/2020
-description: With this **Sprint 168**, we are diversifying the strategies for your deployment, and we are bringing new ways to integrate Azure DevOps with Slack and Microsoft Teams.
+description: With this **sprint 168** , we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new security features to organizations.
 ---
 
-# Support for Deployment Strategies in Azure Portal 
-With this sprint, we are diversifying the strategies for your deployment, and we are bringing new ways to integrate Azure DevOps with Slack and Microsoft Teams.
+# Configure Deployment Strategies from Azure Portal
+With this sprint, we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new features security to organizations.
 
 Check out the [Features](#features) list below for details.
 
