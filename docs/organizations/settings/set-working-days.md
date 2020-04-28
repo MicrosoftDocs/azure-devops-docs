@@ -73,5 +73,5 @@ To set non-working days, modify the **ProcessConfiguration** file. For details, 
 
 ## Related articles
 - [About Sprints, Scrum and project management](../../boards/sprints/scrum-overview.md) 
-- [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md)
+- [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md)
 - [Manage teams and configure team tools](manage-teams.md) 

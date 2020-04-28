@@ -188,7 +188,7 @@ From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon 
 
 ## Add iterations and set iteration dates
 
-You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
+You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md).  
 
 ::: moniker range="azure-devops"
 

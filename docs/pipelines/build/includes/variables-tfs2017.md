@@ -232,8 +232,8 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Uri</td>
 <td>The URL for the repository. For example:
 <ul>
-<li>Git: <code><a href="https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts" data-raw-source="https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts">https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts</a></code>
-<li>TFVC: <code><a href="https://fabrikamfiber/tfs/DefaultCollection/" data-raw-source="https://fabrikamfiber/tfs/DefaultCollection/">https://fabrikamfiber/tfs/DefaultCollection/</a></code>
+<li>Git: <code>https://fabrikamfiber/tfs/DefaultCollection/Scripts/_git/Scripts</code>
+<li>TFVC: <code>https://fabrikamfiber/tfs/DefaultCollection/</code>
 </ul>
 This variable is agent-scoped. It can be used as an environment variable in a script and as a parameter in a build task, but not as part of the build number or as a version control tag.
 </td>
