@@ -187,7 +187,7 @@ Microsoft.VSTS.Common.TestedBy-Reverse</p>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a></p>
+<p>Link test cases to work items, such as bugs, user stories, requirements, and product backlog items. Use to track test cases that test user stories (Agile), product backlog items (Scrum), or requirements (CMMI). Can also link to other work item types such as bugs, issues, or tasks. For on-premises Azure DevOps, there are several SQL reports that depend on these links. See <a href="../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress" data-raw-source="[Review team activities to support useful reports](../../report/admin/review-team-activities-for-useful-reports.md#monitor-progress)">Review team activities to support useful reports</a>.</p>
 </td>
 </tr>
 <tr>
@@ -199,7 +199,7 @@ Link category: Process-defined</p></td>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps.To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
+<p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -368,7 +368,7 @@ The following table describes the external link types you can choose when adding
       Release pipeline
    :::column-end:::
    :::column span="":::
-      Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status). 
+      Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status) 
    :::column-end:::
 :::row-end:::
 :::row:::
