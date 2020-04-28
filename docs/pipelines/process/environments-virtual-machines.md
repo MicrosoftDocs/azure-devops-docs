@@ -78,7 +78,7 @@ The **Deployments** tab provides complete traceability of commits and work items
 To unconfigure virtual machines that are previously added to an environment, run this command from an administrator PowerShell command prompt on each of the machines, in the same folder path where the script to register to the environment has been previously run:
 
 ```
-./configure.cmd remove
+./config.cmd remove
 ```
 
 ## Known limitations
