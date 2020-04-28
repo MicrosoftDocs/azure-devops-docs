@@ -720,7 +720,7 @@ The great news is that your team is now ready to begin the process of running an
 > Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
 > [!NOTE]
-> Azure Administrators can forbid users from creating new Azure DevOps Organizations. If the [Restrict organization creation](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md) policy is set, then your import will fail to complete. Before you begin, verify that this is not set or that there is an exception for the user performing the migration.
+> Azure Administrators can forbid users from creating new Azure DevOps organizations. If the [Restrict organization creation](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md) policy is set, then your import will fail to complete. Before you begin, verify that this is not set or that there is an exception for the user performing the migration.
 
 ### Considerations for rollback plans
 
