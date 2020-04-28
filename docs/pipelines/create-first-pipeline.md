@@ -182,7 +182,7 @@ You can create a new pipeline by exporting an existing one and then importing it
 
 #### [YAML](#tab/yaml/)
 
-1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) of the pipeline that you want to export.
+1. Simply copy the contents of the pipeline YAML file and reuse it in other projects. However, if you have an older build pipeline that was created using the visual designer: [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) of the pipeline that you want to export.
 
 2. Choose **...** and select **Export**.
 
