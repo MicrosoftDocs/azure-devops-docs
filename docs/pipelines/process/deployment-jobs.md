@@ -354,12 +354,12 @@ Define output variables in a deployment job's [lifecycle hooks](https://docs.mic
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]`  
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy : `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
 ```yaml
-// Set an output variable in a lifecycle hook of a deployment job executing canary strategy
+# Set an output variable in a lifecycle hook of a deployment job executing canary strategy
 - deployment: A
   pool:
     vmImage: 'ubuntu-16.04'
@@ -374,13 +374,42 @@ While executing deployment strategies, you can access output variables across jo
         - script: echo $(setvarStep.myOutputVar)
           name: echovar
 
- // Map the variable from the job
+# Map the variable from the job
 - job: B
   dependsOn: A
   pool:
     vmImage: 'ubuntu-16.04'
   variables:
     myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+
+For a `runOnce` job you specify the name of the job instead of the lifecycle hook.
+
+```yaml
+# Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:                  
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
   steps:
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
