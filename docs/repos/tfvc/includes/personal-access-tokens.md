@@ -28,7 +28,7 @@ ms.topic: include
    
 6. When you're done, make sure to *copy the token*. You'll use this token as your password.
 
-    <img alt="Use token as the password for your git tools or apps" src="./media/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    ![Use a token as the password for your Git tools or apps](../../tfvc/media/create-personal-access-token.png)
 
     > [!NOTE]
     > Remember that this token is your identity and acts as you when it's used. 
