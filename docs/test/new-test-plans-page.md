@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 03/27/2020
+ms.date: 04/27/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
