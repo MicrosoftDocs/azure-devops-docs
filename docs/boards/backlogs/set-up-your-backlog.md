@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 04/28/2020
 ---
 
 # Set up your Backlogs and Boards  
@@ -69,6 +69,9 @@ As shown in the following image, (1) choose the team, (2) **Work**, (3)**Backlog
 
 To look up your team's Area Path(s) and Iteration Paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
 [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+
+
+## Default sprint backlog and Taskboard work items
 
 ## Checklist for work items, backlogs, and boards 
 
