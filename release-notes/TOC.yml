@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: April 27
+          href: 2020/sprint-168-update.md
         - name: April 13
           href: 2020/sprint-167-update.md
         - name: March 16
