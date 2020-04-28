@@ -287,5 +287,5 @@ From the product backlog you can multi-select several work items and choose **Ch
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Product backlog controls](product-backlog-controls.md)
 - [Filter product and portfolio backlogs](filter-backlogs.md)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 

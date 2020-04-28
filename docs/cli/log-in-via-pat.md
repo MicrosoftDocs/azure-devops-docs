@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sign in with a Personal Access Token (PAT), Azure DevOps CLI 
 titleSuffix: Azure DevOps 
 description: Use a Personal Access Token (PAT) with Azure DevOps CLI 
@@ -28,8 +28,7 @@ Token:
 ```
 
 > [!NOTE]   
-> If you have already signed in with `az login` interactively or using user name and password, then you don't have to provide a token as `az devops` commands now support sign in through `az login`. Please note that we do not support service pincipal log in via `az login` and you would need to use a PAT token in this case. 
-
+> If you have already signed in with `az login` interactively or using user name and password, then you don't have to provide a token as `az devops` commands now support sign in through `az login`. However, service principal log in via `az login` isn't supported, in which case a PAT token is required.  
 
 Once successfully signed in, this command would also set your default organization to Contoso, provided there is no default organization configured.
 

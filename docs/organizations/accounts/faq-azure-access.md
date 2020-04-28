@@ -7,7 +7,7 @@ ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -38,7 +38,7 @@ Also, in the [Azure portal](https://portal.azure.com), you must have Project Col
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
 
-A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps.
+A: Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
@@ -316,10 +316,12 @@ A: Users who are disabled or removed from your directory, can no longer access y
 - [Connect your organization to Azure AD](connect-organization-to-aad.md)
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)
 - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 ### Q: How can I manage multiple organizations that are backed by Azure AD?
 
-A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Manage multiple organizations backed by Azure AD](connect-organization-to-azure-ad.md#manage-multiple-organizations-backed-by-azure-ad).
+A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md).
 
 <a name="connect-o365-azure-ad"></a>
 

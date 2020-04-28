@@ -112,7 +112,7 @@ In that case, we recommend creating an entirely separate organization to host yo
 
 ### Move work items to a private project
 
-If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/remove-delete-work-items.md#move) into a separate, private project.
+If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/move-change-type.md#move) into a separate, private project.
 Cross-project links continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 
