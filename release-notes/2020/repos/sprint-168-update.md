@@ -16,7 +16,3 @@ ms.date: 04/27/2020
 [!INCLUDE [sprint-168-update](../includes/repos/sprint-168-update.md)]
 
 [!INCLUDE [nextsteps](../includes/nextsteps.md)]
-
-Thanks,
-
-[!INCLUDE [sprint-168](../includes/signer/sprint-168.md)]

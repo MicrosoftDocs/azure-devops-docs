@@ -5,5 +5,5 @@ ms.technology: devops-release-notes
 ms.date: 4/13/2020
 ms.topic: include
 ---
-- [[Teams][Slack] ADO Apps - Allow Team admins to create subscriptions](#[teams][slack]-ado-apps---allow-team-admins-to-create-subscriptions)
-- [[Repos] Support for PR Commented event](#[repos]-support-for-pr-commented-event)
+- [Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & slack](#azure-devops-now-allows-team-admin(s)-to-create-subscriptions-from-ms-teams-&-slack)
+- [MS Teams & Slack notification for pull request commented events](#ms-teams-&-slack-notification-for-pull-request-commented-events)
