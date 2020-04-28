@@ -6,12 +6,14 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 03/27/2020
+ms.date: 04/27/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
 
 [!INCLUDE [version-header-devops-services](includes/version-header-devops-services.md)]
+
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring or execution. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
