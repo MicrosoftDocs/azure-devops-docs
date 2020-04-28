@@ -32,8 +32,6 @@ landingContent:
         links:
           - text: Sign up for free
             url: ./get-started/pipelines-sign-up.md
-          - text: Define a pipeline
-            url: ./get-started/pipelines-get-started.md
           - text: Create your first pipeline
             url: create-first-pipeline.md
           - text: Customize your pipeline
