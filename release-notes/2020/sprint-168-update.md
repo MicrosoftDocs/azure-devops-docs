@@ -17,19 +17,19 @@ Check out the [Features](#features) list below for details.
 ### General
 [!INCLUDE [sprint-168-update-links](includes/general/sprint-168-update-links.md)]
 
-### Repos
+### Azure Repos
 [!INCLUDE [sprint-168-update-links](includes/repos/sprint-168-update-links.md)]
 
-### Pipelines
+### Azure Pipelines
 [!INCLUDE [sprint-168-update-links](includes/pipelines/sprint-168-update-links.md)]
 
 ## General
 [!INCLUDE [sprint-168-update](includes/general/sprint-168-update.md)]
 
-## Repos
+## Azure Repos
 [!INCLUDE [sprint-168-update](includes/repos/sprint-168-update.md)]
 
-## Pipelines
+## Azure Pipelines
 [!INCLUDE [sprint-168-update](includes/pipelines/sprint-168-update.md)]
 
 ## Next steps
