@@ -10,7 +10,7 @@ ms.topic: include
 In addition to Project administrators, Azure DevOps now allows Team admin(s) to create subscriptions for Azure Boards, Azure Repos, and Azure Pipelines directly from Slack and MS Teams.
 
 
-### MS Teams & Slack notification for pull request commented events
+### MS Teams & Slack notifications for Repos events
 
 You are now able to get notified about your PR activities such as comments directly from MS Teams and Slack. 
 
