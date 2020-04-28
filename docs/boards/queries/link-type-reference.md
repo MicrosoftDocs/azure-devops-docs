@@ -259,113 +259,245 @@ The following table describes the external link types you can choose when adding
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-elements.md). 
 ::: moniker-end   
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="15%">Link name</th>
-<th width="12%">Tool supported</th>
-<th width="12%">Artifact type</th>
-<th width="60%">Usage</th>
-</tr>
-<tr>
-<td>Branch</td>
-<td>Git</td>
-<td>Branch</td>
-<td>Used to link a work item to a branch.</td>
-</tr>
-<tr>
-<td>Pipelines/Build</td>
-<td>Build</td>
-<td>Build</td>
-<td>Used to link a work item to a build.</td>
-</tr>
-<tr>
-<td>Changeset (or Fixed in Changeset)</td>
-<td>VersionControl</td>
-<td>Changeset</td>
-<td>Used to link a work item to a changeset. </td>
-</tr>
-<tr>
-<td>Commit (or Fixed in Commit)</td>
-<td>Git</td>
-<td>Commit</td>
-<td>Used to link a work item to a commit.</td>
-</tr>
-<tr>
-<td>Found in build</td>
-<td>Pipelines/Build</td>
-<td>Build</td>
-<td>Used to link a work item to a build.</td>
-</tr>
-<tr>
-<td>Integrated in build</td>
-<td>Build</td>
-<td>Build pipeline</td>
-<td>Used to link a work item to a build.</td>
-</tr>
-<tr>
-<td>Integrated in release environment</td>
-<td>Release</td>
-<td>Release pipeline</td>
-<td>Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see <a href="../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status">Release pipelines, How do I integrate and report release status?</a>. 
-</td>
-</tr>
-<tr>
-<td>Model Link</td>
-<td>ArchitectureTools</td>
-<td>ModelLink</td>
-<td>(Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. </td>
-</tr>
-<tr>
-<td>Pull Request</td>
-<td>Git</td>
-<td>PullRequestId</td>
-<td>Used to link a work item to a pull request. </td>
-</tr>
-<tr>
-<td>Result attachment   </td>
-<td>Test Management</td>
-<td>TcmResultAttachment</td>
-<td>Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. </td>
-</tr>
-<tr>
-<td>Source Code File</td>
-<td>VersionControl </td>
-<td>LatestItemVersion</td>
-<td>Used to link a work item to a file under Team Foundation version control (TFVC).   </td>
-</tr>
-<tr>
-<td>Storyboard</td>
-<td>Requirements</td>
-<td>Storyboard</td>
-<td>Used to link a work item to a PowerPoint file on a network. See <a href="../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard" data-raw-source="[Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard)">Storyboard your ideas using PowerPoint</a> for details.  </td>
-</tr>
-<tr>
-<td>Tag</td>
-<td>Git</td>
-<td>Tag</td>
-<td>Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See <a href="../../repos/git/command-prompt.md" data-raw-source="[Work from the Git command prompt](../../repos/git/command-prompt.md)">Work from the Git command prompt</a> for more information. </td>
-</tr>
-<tr>
-<td>Test Result </td>
-<td>Test Management</td>
-<td>TcmResult</td>
-<td>Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.    </td>
-</tr>
-<tr>
-<td>Versioned item</td>
-<td>VersionControl </td>
-<td>LatestItemVersion</td>
-<td>Used to link a work item to a file or changeset defined within a TFVC repository. Note that <strong>Source Code File</strong> is the name of this link type in the <a href="/rest/api/azure/devops/wit/artifact%20link%20types/list" data-raw-source="[Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list)">Artifact Link Types API</a>.   </td>
-</tr>
-<tr>
-<td>Wiki</td>
-<td>Wiki</td>
-<td>Wiki</td>
-<td>Used to link a work item to a wiki page. Supported for TFS 2018.2 and later versions.</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="":::
+      **Link name**
+   :::column-end:::
+   :::column span="":::
+      **Tool supported**
+   :::column-end:::
+   :::column span="":::
+      **Artifact type**
+   :::column-end:::
+   :::column span="":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Branch
+   :::column-end:::
+   :::column span="":::
+      Git
+   :::column-end:::
+   :::column span="":::
+      Branch
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a branch.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Pipelines/Build
+   :::column-end:::
+   :::column span="":::
+      Build
+   :::column-end:::
+   :::column span="":::
+      Build
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a build.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Changeset (or Fixed in Changeset)
+   :::column-end:::
+   :::column span="":::
+      VersionControl
+   :::column-end:::
+   :::column span="":::
+      Changeset
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a changeset. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Commit (or Fixed in Commit)
+   :::column-end:::
+   :::column span="":::
+      Git
+   :::column-end:::
+   :::column span="":::
+      Commit
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a commit.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Found in build
+   :::column-end:::
+   :::column span="":::
+      Pipelines/Build
+   :::column-end:::
+   :::column span="":::
+      Build
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a build.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Integrated in build
+   :::column-end:::
+   :::column span="":::
+      Build
+   :::column-end:::
+   :::column span="":::
+      Build pipeline
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a build.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Integrated in release environment
+   :::column-end:::
+   :::column span="":::
+      Release
+   :::column-end:::
+   :::column span="":::
+      Release pipeline
+   :::column-end:::
+   :::column span="":::
+      Used to link a release to a work item. The system creates a link of this type when a user enables the <strong>Report deployment status to Work</strong> option for a release definition. To learn how to set this option, see [Release pipelines, How do I integrate and report release status?](../../pipelines/release/index.md#how-do-i-integrate-and-report-release-status). 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Model Link
+   :::column-end:::
+   :::column span="":::
+      >ArchitectureTools
+   :::column-end:::
+   :::column span="":::
+      ModelLink
+   :::column-end:::
+   :::column span="":::
+      (Not supported within the web portal) Used to link a work item to a diagram&mdash;such as an Activity, Component, Layer, Use Case, or other diagram&mdash;stored within the system. You can link diagrams to work items only from the Visual Studio client. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Pull Request
+   :::column-end:::
+   :::column span="":::
+      Git
+   :::column-end:::
+   :::column span="":::
+      PullRequestId
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a pull request. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Result attachment  
+   :::column-end:::
+   :::column span="":::
+      Test Management
+   :::column-end:::
+   :::column span="":::
+      TcmResultAttachment
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to an attachment associated with a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Source Code File<
+   :::column-end:::
+   :::column span="":::
+      VersionControl 
+   :::column-end:::
+   :::column span="":::
+      LatestItemVersion
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a file under Team Foundation version control (TFVC).   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Storyboard
+   :::column-end:::
+   :::column span="":::
+      Requirements
+   :::column-end:::
+   :::column span="":::
+      Storyboard
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a PowerPoint file on a network. For details, see [Storyboard your ideas using PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md#link-storyboard).  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Tag
+   :::column-end:::
+   :::column span="":::
+      Git
+   :::column-end:::
+   :::column span="":::
+      Tag
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a tag that&#39;s been defined for a git commit or git repository. See <a href="../../repos/git/command-prompt.md" data-raw-source="[Work from the Git command prompt](../../repos/git/command-prompt.md)">Work from the Git command prompt</a> for more information.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Test Result
+   :::column-end:::
+   :::column span="":::
+      Test Management
+   :::column-end:::
+   :::column span="":::
+      TcmResult
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a test result. These links appear when you associate a work item with a test result from <strong>Test</strong> or Microsoft Test Manager.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Versioned item
+   :::column-end:::
+   :::column span="":::
+      VersionControl 
+   :::column-end:::
+   :::column span="":::
+      LatestItemVersion
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a file or changeset defined within a TFVC repository. Note that **Source Code File** is the name of this link type in the [Artifact Link Types API](/rest/api/azure/devops/wit/artifact%20link%20types/list).   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Wiki
+   :::column-end:::
+   :::column span="":::
+      Wiki
+   :::column-end:::
+   :::column span="":::
+      Wiki
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a wiki page. Supported for TFS 2018.2 and later versions.
+   :::column-end:::
+:::row-end:::
+
 
 
 <a id="github-link-types">  </a>
@@ -413,55 +545,90 @@ The following table describes the GitHub link types you can choose when adding a
 
 ::: moniker range="azure-devops"
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="25%">Link name</th>
-<th width="35%">Artifact type</th>
-<th width="40%">Usage</th>
-</tr>
-<tr>
-<td>GitHub Commit </td>
-<td>GitHub repository commit </td>
-<td>Used to link a work item to a GitHub commit.</td>
-</tr>
-<tr>
-<td>GitHub Issue</td>
-<td>GitHub repository issue</td>
-<td>Used to link a work item to a GitHub issue. </td>
-</tr>
-<tr>
-<td>GitHub Pull Request</td>
-<td>GitHub repository pull request</td>
-<td>Used to link a work item to a GitHub pull request. </td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="":::
+      **Link name**
+   :::column-end:::
+   :::column span="":::
+      **Artifact type**
+   :::column-end:::
+   :::column span="":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      GitHub Commit
+   :::column-end:::
+   :::column span="":::
+      GitHub repository commit
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a GitHub commit.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      GitHub Issue
+   :::column-end:::
+   :::column span="":::
+      GitHub repository issue
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a GitHub issue.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      GitHub Pull Request
+   :::column-end:::
+   :::column span="":::
+      GitHub repository pull request
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a GitHub pull request.
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 
 
 ::: moniker range="azure-devops-2019"
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="25%">Link name</th>
-<th width="35%">Artifact type</th>
-<th width="40%">Usage</th>
-</tr>
-<tr>
-<td>GitHub Commit </td>
-<td>GitHub repository commit </td>
-<td>Used to link a work item to a GitHub commit.</td>
-</tr>
-<tr>
-<td>GitHub Pull Request</td>
-<td>GitHub repository pull request</td>
-<td>Used to link a work item to a GitHub pull request. </td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="":::
+      **Link name**
+   :::column-end:::
+   :::column span="":::
+      **Artifact type**
+   :::column-end:::
+   :::column span="":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      GitHub Commit
+   :::column-end:::
+   :::column span="":::
+      GitHub repository commit
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a GitHub commit.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      GitHub Pull Request
+   :::column-end:::
+   :::column span="":::
+      GitHub repository pull request
+   :::column-end:::
+   :::column span="":::
+      Used to link a work item to a GitHub pull request.
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 
@@ -476,37 +643,49 @@ Remote work link types are system-defined link types that support linking work i
 
 A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) corresponds to the sum of all links defined with a remote work link type. 
 
-<table width="100%"> 
-<tbody valign="top">
-<tr>
-<th width="20%">Name</th>
-<th width="17%">Reference name</th>
-<th width="63%">Usage</th>
-</tr>
-<tr>
-<td><strong>Consumes From-Produced For</strong><br/>(Dependency topology)<br/><br/><img src="media/link-work-items-support-traceability/affected-by-cmmi.png" alt="Consumes From topology image"/>
-<img src="media/link-work-items-support-traceability/affects-cmmi.png" alt="Produced For topology image"/><br/></td>
-<td><p>Microsoft.VSTS.Common.ProducedFor.Forward<br/>
-Microsoft.VSTS.Common.ConsumesFrom.Reverse</p>
-<p>Topology type: Dependency<br/>
-Link category: System-defined</p>
-</td>
-<td>
-<p>Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.</p>
- </td>
-</tr>
-<tr>
-<td><strong>Remote Related</strong><br/>
-<img src="media/link-work-items-support-traceability/related-network.png" alt="Remote Related topology image"/> 
-</td>
-<td><p>System.LinkTypes.Remote.Related</p>
-<p>Topology type: Network<br/>
-Link category: System-defined</p>
-</td>
-<td>Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.<br/></td>
-</tr>
-</tbody>
-</table>
+
+:::row:::
+   :::column span="":::
+      **Name**
+   :::column-end:::
+   :::column span="":::
+      **Reference name**
+   :::column-end:::
+   :::column span="":::
+      **Usage**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Consumes From-Produced For**  
+      (Dependency topology)
+      ![Consumes From topology conceptual image](media/link-work-items-support-traceability/affected-by-cmmi.png)
+      ![Produced For topology conceptual image](media/link-work-items-support-traceability/affects-cmmi.png)
+   :::column-end:::
+   :::column span="":::
+      Microsoft.VSTS.Common.ProducedFor.Forward  
+      Microsoft.VSTS.Common.ConsumesFrom.Reverse  
+      Topology type: Dependency  
+      Link category: System-defined  
+   :::column-end:::
+   :::column span="":::
+      Use this directional link to create links between work items that have dependencies and are defined in different organizations. Organizations must be managed by the same Azure Active Directory. Typically used to track change requests made to requirements.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      **Remote Related**  
+      ![Remote Related topology image](media/link-work-items-support-traceability/related-network.png)
+   :::column-end:::
+   :::column span="":::
+      System.LinkTypes.Remote.Related  
+      Topology type: Network  
+      Link category: System-defined  
+   :::column-end:::
+   :::column span="":::
+      Use this non-directional link to create links between work items defined in different organizations. Organizations must be managed by the same Azure Active Directory.
+   :::column-end:::
+:::row-end:::
 
 
 ::: moniker-end  
