@@ -78,13 +78,13 @@ productDirectory:
       imageSrc: ./media/index/DevOpsIconPipelines96.svg
       links:
         - url: ./pipelines/get-started/what-is-azure-pipelines.md
-        - text: What is Azure Pipelines?
+          text: What is Azure Pipelines?
         - url: ./pipelines/get-started/pipelines-get-started.md
-          text: Use Azure Pipelines?
+          text: Use Azure Pipelines
         - url: ./pipelines/create-first-pipeline.md
           text: Create your first pipeline
         - url: ./pipelines/yaml-schema.md
-          text: YAML Schema
+          text: YAML Schema  
     # Card
     - title: Azure Test Plans
       imageSrc: media/index/DevOpsIconTestPlans96.svg
