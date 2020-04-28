@@ -116,7 +116,7 @@ If you have added work items and they don't appear in your sprint backlog, check
 - The Area Path must match one of those assigned to the team
 - The Iteration Path must match the iteration of the sprint that you've selected. 
 
-For details on assigning iteration paths to teams, see [Define Iteration Paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+For details on assigning iteration paths to teams, see [Define Iteration Paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
  
 If you have added task work items, but they don't appear as a child of a product backlog item, you can parent them from the sprint backlog.  
 
