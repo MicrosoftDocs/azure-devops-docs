@@ -8,7 +8,7 @@ ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2020
+ms.date: 04/28/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -22,6 +22,10 @@ On this list, you can find the following information:
 - organization names
 - organization URLs
 - organization owners
+
+## Prerequisites
+
+You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md).
 
 ## Get list of organizations
 
