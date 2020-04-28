@@ -16,7 +16,7 @@ Output variables are still produced by steps inside of jobs. Instead of referrin
 
 Azure Pipelines can now scope down its repository access to just the repos required for a YAML-based pipeline. This means that if the pipelines's access token were to leak, it would only be able to see the repo(s) used in the pipeline. Previously, the access token was good for any Azure Repos repository in the project, or potentially the entire collection.
 
-This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all repositories needed by the build (even those you clone using a script) must be included in the <a href="https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema#repository-resource">repository resources</a> of the pipeline.
+This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all repositories needed by the build (even those you clone using a script) must be included in the [repository resources](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema#repository-resource) of the pipeline.
 
     
 ### Getting details at runtime about multiple repositories
@@ -30,13 +30,15 @@ Multi-stage pipelines UI is now generally available. The corresponding preview f
 
 You can navigate to the new experience by selecting **Pipelines** -&gt; **Pipelines** under the left navigation menu in Azure DevOps. This experience is the entry point for both classic build pipelines as well as YAML pipelines. It is mobile-friendly and brings various improvements to how you manage your pipelines.&nbsp;You can drill down and view pipeline details, run details, pipeline analytics, job details, logs, and more.
 
-To learn more about the multi-stage pipelines user experience, see the documentation <a href="https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops" style="cursor:pointer;text-decoration:underline;outline:0px;">here</a>.</p><div style="margin:16px 0px 0px;color:rgb(23, 23, 23);font-family:&quot;Segoe UI&quot;, SegoeUI, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Helvetica, Tahoma, Arial, sans-serif;font-size:16px;">![img](../../media/168-pipelines-2-0.png)<br></div><br></div>
+To learn more about the multi-stage pipelines user experience, see the documentation [here](https://docs.microsoft.com/azure/devops/pipelines/get-started/multi-stage-pipelines-experience?view=azure-devops).
+
+![img](../../media/168-pipelines-2-0.png)
 
     
 ### Configure Deployment Strategies from Azure Portal
 
 With this capability, we have made it easier for you to configure pipelines that use deployment strategy of your choice, e.g. Rolling, Canary or Blue-Green. Using these out-of-box strategies, you can roll out updates in a safe manner and mitigate associated deployment risks. To access this, click on the 'Continuous Delivery' setting in an Azure Virtual Machine. In the configuration pane, you will be prompted to select details about the Azure DevOps project where the pipeline will be created, the deployment group, build pipeline that publishes the package to be deployed and the deployment strategy of your choice. Going ahead will configure a fully functional pipeline that deploys the selected package to this Virtual Machine. 
 
-For more details check out our documentation on <a href="https://aka.ms/AA7jlh8">configuring Deployment Strategies </a>
+For more details check out our documentation on [configuring Deployment Strategies](https://aka.ms/AA7jlh8). 
 
 ![img](../../media/168-pipelines-4-0.png)  
