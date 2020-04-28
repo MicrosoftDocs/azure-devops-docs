@@ -16,7 +16,7 @@ Output variables are still produced by steps inside of jobs. Instead of referrin
     
 ### Limit build service repos scope access
 
-Azure Pipelines can now scope down its repository access to just the repos required for a **YAML-based pipeline**. This means that if the pipelines's access token were to leak, it would only be able to see the repo(s) used in the pipeline. Previously, the access token was good for any Azure Repos repository in the project, or potentially the entire collection.
+Building upon [improving pipeline security by restricting the scope of access tokens](https://docs.microsoft.com/en-us/azure/devops/release-notes/2019/sprint-160-update#improve-pipeline-security-by-restricting-the-scope-of-access-tokens) Azure Pipelines can now scope down its repository access to just the repos required for a **YAML-based pipeline**. This means that if the pipelines's access token were to leak, it would only be able to see the repo(s) used in the pipeline. Previously, the access token was good for any Azure Repos repository in the project, or potentially the entire collection.
 
 This feature will be on by default for new projects and organizations. For existing organizations, you must enable it in <b>Organization Settings</b> &gt; <b>Pipelines</b> &gt; <b>Settings</b>. When using this feature, all repositories needed by the build (even those you clone using a script) must be included in the [repository resources](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema%2cparameter-schema#repository-resource) of the pipeline.
 
