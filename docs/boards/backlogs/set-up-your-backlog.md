@@ -73,6 +73,11 @@ To look up your team's Area Path(s) and Iteration Paths, see [Define area paths 
 
 ## Default sprint backlog and Taskboard work items
 
+Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with one additional one: the Iteration Path you select.  
+
+To select an Iteration Path, your team must have selected it from your team settings. 
+
+
 ## Checklist for work items, backlogs, and boards 
 
 If you don't see the work items you expect on your [product Backlog](create-your-backlog.md) or [Kanban Board](../boards/kanban-quickstart.md), perform the following checks: 
