@@ -97,7 +97,7 @@ Each backlog is associated with a team. Team configuration settings determine th
 - Defines how bugs will be treated, as requirements or as tasks. 
 
 For details, see the following articles: 
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
 - [Select backlog levels](../../organizations/settings/select-backlog-navigation-levels.md)
 - [Show bugs on backlogs or boards](../../organizations/settings/show-bugs-on-backlog.md)
@@ -145,7 +145,7 @@ If your backlog is missing items, you might check if the **In Progress** view ha
 
 ## Organize your backlog, mapping and reparenting backlog items 
 
-When you have a number of initiatives your teams are working on, you often times want to group the work according to these initiatives. By defining features and epics, you can group your work into a three-tiered hierarchy consisting of epics, features, and backlog items. 
+When you have a number of initiatives your teams are working on, you may want to group the work according to these initiatives. By defining features and epics, you can group your work into a three-tiered hierarchy consisting of epics, features, and backlog items. 
 
 For example, here the Customer Service team has organized several backlog items under two features and one epic. 
 
