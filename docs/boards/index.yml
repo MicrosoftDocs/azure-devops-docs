@@ -124,7 +124,7 @@ landingContent:
         links:
           - text: Set area paths
             url: ../organizations/settings/set-area-paths.md
-          - text: Set iteration paths (aka sprints)
+          - text: Set iteration (sprint) paths
             url: ../organizations/settings/set-iteration-paths-sprints.md
       - linkListType: how-to-guide
         links:
