@@ -5,7 +5,7 @@ ms.technology: devops-release-notes
 ms.date: 4/13/2020
 ms.topic: include
 ---
-### Run conditional job depending on variables from prior stage
+### Limit what repos the build service identity can access
 
 Output variables may now be used across stages in a YAML-based pipeline. This helps you pass useful information, such as a go/no-go decision or the ID of a generated output, from one stage to the next. The result (status) of a previous stage and its jobs is also available.
 
