@@ -105,6 +105,11 @@ The `conda create` command will create an environment with the arguments you pas
   displayName: Create Anaconda environment
 ```
 
+> [!NOTE]
+> To add specific conda channels, you need to add an extra line for conda config:
+> `conda config --add channels conda-forge`
+
+
 ---
 
 ### From YAML
@@ -166,7 +171,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 ```yaml
 - bash: |
     source activate myEnvironment
-    pytest --junitxml=junit/unit-test.xml
+    python -m pytest --junitxml=junit/unit-test.xml
   displayName: pytest
 
 - task: PublishTestResults@2
