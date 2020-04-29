@@ -4,7 +4,7 @@ ms.topic: include
 
 ## Prerequisites
 
-Prior to customizing a process, we recommend that you review [Configure and customize Azure Boards](/azure/devops/boards/configure-customize). This article provides guidance on how to customize Azure Boards to meet your business needs. For a description of the different backlogs and boards, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](/azure/devops/boards/backlogs/backlogs-boards-plans).
+Prior to customizing a process, we recommend that you review [Configure and customize Azure Boards](/azure/devops/boards/configure-customize), which provides guidance on how to customize Azure Boards to meet your business needs. For a description of the different backlogs and boards, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](/azure/devops/boards/backlogs/backlogs-boards-plans).
 
 ::: moniker range="azure-devops"
 
