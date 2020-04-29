@@ -8,7 +8,7 @@ description: With this **sprint 168** , we are enabling users to choose their de
 ---
 
 # Configure Deployment Strategies from Azure Portal
-With this sprint, we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new features security to organizations.
+With this sprint, we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new security features to organizations.
 
 Check out the [Features](#features) list below for details.
 
