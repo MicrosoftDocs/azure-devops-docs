@@ -541,7 +541,7 @@ steps:
     echo "This is the major run number: $MAJOR_RUN"
     
     MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
-    echo "This is the major run number: $MINOR_RUN"
+    echo "This is the minor run number: $MINOR_RUN"
     
     # create pipeline variables
     echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
