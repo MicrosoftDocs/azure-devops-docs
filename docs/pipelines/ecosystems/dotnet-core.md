@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 Use a pipeline to automatically build and test your .NET Core projects. After those steps are done, you can then deploy or publish your project.
 
-For help with .NET Framework projects, see [.NET Core](../apps/aspnet/build-aspnet-4.md).
+For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
 
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
