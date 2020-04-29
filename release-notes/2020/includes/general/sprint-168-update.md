@@ -12,6 +12,6 @@ In addition to Project administrators, Azure DevOps now allows Team admin(s) to 
 
 ### MS Teams & Slack notifications for Repos events
 
-You are now able to get notified about your PR activities such as comments directly from MS Teams and Slack. 
+As enhancement to our MS Teams and Slack integration you now can choose to subscribe to one or more events on a pull request such as comments, code push, updates, and attempt merges.
 
 ![img](../../media/168-general-0-0.png)
