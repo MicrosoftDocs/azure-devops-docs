@@ -92,7 +92,20 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
-        <tr>
+    <tr>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4/27/2020](2020/sprint-168-update.md)">4/27/2020</a></td>
+        <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
+        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Configure Deployment Strategies from Azure Portal</td><td>Pipelines</td><td>N/A</td>
+    </tr>    
+       <tr>
             <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
         </tr>
