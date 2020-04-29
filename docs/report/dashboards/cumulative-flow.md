@@ -86,7 +86,7 @@ The CFD shows the count of items in each Kanban column for the selected time per
 
 ::: moniker range=">= azure-devops-2019" 
 > [!NOTE]  
-> The in-context report always uses the blue-green color theme. However, the [Analytics-based Cumulative flow diagram widget](widget-catalog.md#cfd-widget) provides support for choosing different color themes. 
+> The in-context report always uses the blue-green color theme. However, the [Analytics-based Cumulative flow diagram widget](#cfd-widget) provides support for choosing different color themes. 
 
 ::: moniker-end
 
@@ -268,6 +268,8 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range=">= azure-devops-2019" 
 
+<a id="cfd-widget" />
+
 ## Add the Cumulative Flow Diagram widget to your dashboard   
 
 ::: moniker-end
@@ -287,7 +289,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.  
+1. If you haven't yet [enabled or installed Analytics](analytics-extension.md), do that now.  
 1. If you haven't yet configured your Kanban board, do that now. Define the [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md) that support your workflow processes.  
 1. If you want fixed scope CFD charts, make sure that you've [defined the sprint iterations](../../boards/sprints/define-sprints.md) for those sprints of interest.  
 1. To add a CFD chart to your team dashboard, see [Add a widget to a dashboard](../add-widget-to-dashboard.md). Add the Cumulative Flow Diagram widget.  
