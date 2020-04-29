@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 04/28/2020
 ---
 
 
@@ -58,7 +58,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -79,7 +79,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -104,9 +104,26 @@ Add as many tasks as needed to capture the work required to complete each item. 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose another sprint](media/add-tasks/choose-sprint-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
+
+## Add existing work items to a sprint
+
+If you haven't yet assigned work items to a sprint, see [1. Assign backlog items to a sprint](assign-work-sprint.md).
+
+If you have added work items and they don't appear in your sprint backlog, check their area and iteration paths. 
+- The Area Path must match one of those assigned to the team
+- The Iteration Path must match the iteration of the sprint that you've selected. 
+
+For details on assigning iteration paths to teams, see [Define Iteration Paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+ 
+If you have added task work items, but they don't appear as a child of a product backlog item, you can parent them from the sprint backlog.  
+
+Unparented tasks assigned to the selected sprint appear at the top of the backlog under the Unparented group. Drag and drop the task on top of the work item you want to parent it to. 
+
+> [!div class="mx-imgBorder"]
+> ![Sprint backlog page, parent a task](media/add-tasks/reparent-task.png)
 
 
 <a id="define-tasks" />
@@ -138,14 +155,14 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 > ![Add task from the taskboard](media/add-tasks/add-task-board-agile.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Taskboard by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).   
+> You can quickly add tasks through the **Taskboard** by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).   
 
 ::: moniker-end
 
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-You can add tasks from the sprint **Backlog** or **Board** (aka taskboard). 
+You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
 From the **Backlog** view, choose the ![ ](../../media/icons/blue-add-icon.png) plus icon to add a new task.  
 
@@ -154,13 +171,13 @@ From the **Backlog** view, choose the ![ ](../../media/icons/blue-add-icon.png) 
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Board**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
+Another option, is to open **Taskboard**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the taskboard](media/add-tasks/add-task-board-standard.png)
 
 > [!TIP]    
-> You can quickly add tasks through the Board by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).  
+> You can quickly add tasks by just specifying the title of the work item. To show fields on the card, see [Customize a sprint Taskboard](customize-taskboard.md).  
 
 ::: moniker-end
 
@@ -247,4 +264,10 @@ Tasks without links to parent backlog items or user stories appear at the top of
 > [!div class="nextstepaction"]
 > [3. Set sprint capacity](set-capacity.md) 
 
+
+## Related articles
+
+- [1. Assign backlog items to a sprint](assign-work-sprint.md)  
+- [Setup your Backlogs & Boards](../backlogs/set-up-your-backlog.md)  
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)   
 
