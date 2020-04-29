@@ -109,7 +109,7 @@ The `conda create` command will create an environment with the arguments you pas
 ```
 
 > [!NOTE]
-> To add specific conda channels you will need to add an extra line for conda config:
+> To add specific conda channels, you need to add an extra line for conda config:
 > `conda config --add channels conda-forge`
 
 
