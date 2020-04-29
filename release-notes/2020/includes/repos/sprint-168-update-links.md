@@ -7,4 +7,4 @@ ms.topic: include
 ---
 
 - [Add attachments while creating a pull request](#add-attachments-while-creating-a-pull-request) 
-- [New web platform conversion - TFVC Hubs](#new-web-platform-conversion---team-foundation-version-control-hubs)
+- [New web platform conversion - Team Foundation Version Control Hubs](#new-web-platform-conversion---team-foundation-version-control-hubs)
