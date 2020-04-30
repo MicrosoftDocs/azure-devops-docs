@@ -16,7 +16,7 @@ ms.date: 07/28/2019
 
 # Configure dashboards to display SAFe Metrics 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
  
 
 ## Configure feature team dashboards

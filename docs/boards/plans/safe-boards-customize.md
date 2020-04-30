@@ -15,7 +15,7 @@ ms.date: 05/01/2020
 
 # Add extensions to support additional SAFe practices   
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
  
 
 
