@@ -85,11 +85,11 @@ To create a pipeline in the classic editor, use our template so that you automat
    |---------|---------|
    |resourceGroupName     | Name of an existing resource group|
    |workspaceName     | Name of the workspace (will be created if it does not already exist) |
-   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/.azureml/sklearn.runconfig)|
+   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
    |modelAssetPath     | The cloud path where the experiment run stores the model file. This should be equivalent to the path which will be used as the working directory when loading individual models in the score.py file. This could either be the root folder of all model files or the full path of the model file itself depending on how score.py loads it|
    |modelName     | Name of model to register. This should be the same as used by the score.py when loading models|
    |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
-   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/inferenceConfig.yml)|
+   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
    |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
    |aksComputeName     | Name of the existing AKS|
 

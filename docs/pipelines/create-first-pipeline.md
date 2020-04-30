@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 03/10/2020
+ms.date: 04/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -173,6 +173,9 @@ If your new pipeline can be created by copying another pipeline in the same proj
 
 3. Your pipeline is cloned with **-clone** appended to the name. Choose **Save** or **Save & queue** to save the cloned pipeline.
 
+> [!NOTE]
+> The **Clone** entry is only present on the context menu if your pipeline was created in the classic editor.
+
 * * *
 
 
@@ -182,28 +185,15 @@ You can create a new pipeline by exporting an existing one and then importing it
 
 #### [YAML](#tab/yaml/)
 
-1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) of the pipeline that you want to export.
+In a YAML pipeline, exporting and importing is the same process as cloning. You can simply copy the pipeline YAML from the editor and paste it into the YAML editor for your new pipeline.
 
-2. Choose **...** and select **Export**.
+1. [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipeline details](get-started/multi-stage-pipelines-experience.md#view-pipeline-details) for your pipeline, and choose **Edit**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Pipeline details](get-started/media/select-export-pipeline.png)
+    ![Pipeline details](get-started/media/pipeline-overview.png)
 
-3. When prompted, save the JSON file to your local machine. The browser will save the file in the download directory as per your browser settings.
+2. Copy the pipeline YAML from the editor, and paste it into the YAML editor for your new pipeline.
 
-4. To import a pipeline, [Navigate](get-started/multi-stage-pipelines-experience.md#navigating-pipelines) to the [pipelines landing page](get-started/multi-stage-pipelines-experience.md#pipelines-landing-page) in your project.
-
-5. Choose **...** and select **Import**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Pipeline details](get-started/media/select-import-pipeline.png)
-
-6. You will now be prompted to select a JSON file to import its contents. Browse to and select the JSON file that you previously exported.
-
-    > [!div class="mx-imgBorder"]
-    > ![upload JSON](get-started/media/import-pipeline-dialogue.png)
-
-7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
+3. To customize your newly copied pipeline, see [Customize your pipeline](customize-pipeline.md).
 
 #### [Classic](#tab/classic/)
 
@@ -227,6 +217,8 @@ You can also create new build or release definitions by exporting an existing on
 
 7. After import is complete, you will be shown the new pipeline that is created. Note that exporting a pipeline strips any project specific data like agent pools, service connections etc. You will have to once again provide these details. 
 
+> [!NOTE]
+> The **Export** item is only present on the context menu if your pipeline was created in the classic editor.
 
 * * *
 

@@ -5,7 +5,7 @@ ms.topic: article
 ms.technology: devops-security
 ms.author: mlearned
 author: mlearned
-ms.date: 04/27/2020
+ms.date: 04/28/2020
 monikerRange: 'azure-devops'
 ---
 

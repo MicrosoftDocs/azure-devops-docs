@@ -34,7 +34,7 @@
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
-      tocHref: /azure/devops/boards/backlogs/office/
+      tocHref: /azure/devops/boards/backlogs/office/track-work
       topicHref: /azure/devops/boards/backlogs/office/track-work
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/

@@ -39,7 +39,7 @@ In this example, the Voice team sets the <strong>Area Path</strong>=`Fabrikam Fi
 > [!div class="mx-imgBorder"]  
 > ![Capture template dialog](media/template/area-path.png) 
 
-To learn more about area paths, see [About area and iteration paths (aka sprints)](../../organizations/settings/about-areas-iterations.md). 
+To learn more about area paths, see [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md). 
 
 
 <a id="rich-text"> </a> 

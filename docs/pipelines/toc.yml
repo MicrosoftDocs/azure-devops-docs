@@ -135,13 +135,23 @@
   - name: Ecosystem support
     href: ecosystems/index.md
     displayName: language, platform
-  - name: ASP.NET
-    href: apps/aspnet/build-aspnet-4.md
-  - name: C/C++
-    href: apps/windows/cpp.md
   - name: .NET Core
     href: ecosystems/dotnet-core.md
     displayName: dotnet, DotNetCoreInstaller, csproj, DotNetCoreCLI, msbuild
+  - name: .NET Framework
+    href: apps/aspnet/build-aspnet-4.md
+  - name: JavaScript and Node.js apps
+    href: ecosystems/javascript.md
+    displayName: node, node.js, nodetool, npm, yarn, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
+  - name: Python
+    href: ecosystems/python.md
+    displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
+  - name: Python to web app
+    href: ecosystems/python-webapp.md
+  - name: Anaconda 
+    href: ecosystems/anaconda.md
+  - name: C/C++
+    href: apps/windows/cpp.md
   - name: Java 
     items:
     - name: Java apps
@@ -153,16 +163,6 @@
       href: /azure/java/microprofile/cicd-microprofile?toc=/azure/devops/pipelines/toc.json&bc=/azure/devops/pipelines/breadcrumb/toc.json
     - name: Java to Azure Function
       href: ecosystems/java-function.md
-  - name: JavaScript and Node.js apps
-    href: ecosystems/javascript.md
-    displayName: node, node.js, nodetool, npm, yarn, babel, typescript, tsc, mocha, jasmine, jest, karma, ava, junit, cobertura, protractor, phantomjs, webpack, angular, react, vue, gulp, grunt
-  - name: Python
-    href: ecosystems/python.md
-    displayName: anaconda, PyPI, pip , setuptools, wheel, conda, flake8, pytest, junit, cobertura, tox, twine
-  - name: Python to web app
-    href: ecosystems/python-webapp.md
-  - name: Anaconda 
-    href: ecosystems/anaconda.md
   - name: Android
     href: ecosystems/android.md
   - name: Go
