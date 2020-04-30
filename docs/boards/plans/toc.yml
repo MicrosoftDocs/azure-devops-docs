@@ -9,7 +9,15 @@
 - name: Edit plan permissions 
   href: edit-delivery-plan-permissions.md
 - name: Scaled Agile Framework
-  href: scaled-agile-framework.md
+  items:
+  - name: Scaled Agile Framework
+    href: scaled-agile-framework.md
+  - name: SAFe&reg; concepts & Azure Boards
+    href: safe-concepts.md
+  - name: Plan and track epics, release trains, & multiple backlogs 
+    href: safe-plan-track-boards.md
+  - name: Configure Azure Boards to support SAFe&reg;
+    href: safe-configure-boards.md
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture
