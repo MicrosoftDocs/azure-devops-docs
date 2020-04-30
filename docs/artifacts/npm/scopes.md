@@ -15,12 +15,14 @@ monikerRange: '>= tfs-2017'
 [Scopes](https://docs.npmjs.com/misc/scope) are built into npm and are a way of grouping packages together.
 In Azure DevOps Services and in npmjs.com, you can publish and use both scoped and unscoped packages. 
 
-Scopes are also the npm client's only native affordance to use multiple registries/feeds.
-They allow you to separate your private packages from npmjs.com packages by prefixing your packages with a `@scope`:
-e.g. `@fabrikam/fiber-core` and configuring your .npmrc file to only use a Azure Artifacts feed for that `@scope`. 
+A scope allows you to create a package with the same name as a package created by another user or Org without conflict.
+They allow the user to separate public and private packages by prefixing their packages with a scope `@fabrikam` and configuring the `.npmrc` file to only use an Azure Artifacts feed for that scope.
+
+> [!NOTE]
+> In order to use scopes you must be using npm version 2 or greater. Run `npm install npm@latest -g` on the command line to upgrade to the latest version.  
 
 ## Set up
-To use a Azure Artifacts feed with a scope, follow the instructions below, but append your scope to both lines in the project .npmrc file.
+To use an Azure Artifacts feed with a scope, follow the instructions below, but append your scope to both lines in the project `.npmrc` file.
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
