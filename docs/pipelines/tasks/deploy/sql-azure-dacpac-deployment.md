@@ -31,7 +31,7 @@ Use this task to deploy to Azure SQL DB using a DACPAC or run scripts using SQLC
 
 |Argument|Description|
 |--- |--- |
-|`ConnectedServiceNameSelector`<br/>Azure Connection Type|(Optional) Argument alias: **azureConnectionType** <br/>Default value: `ConnectedServiceNameARM`|
+|`ConnectedServiceNameSelector`<br/>Azure Connection Type|(Optional) Argument alias: `azureConnectionType` <br/>Default value: `ConnectedServiceNameARM`|
 |`ConnectedServiceName`<br/>Azure Classic Subscription|(Required) Target Azure Classic subscription for deploying SQL files <br/>Argument alias: `azureClassicSubscription`|
 |`ConnectedServiceNameARM`<br/>Azure Subscription|(Required) Target Azure Resource Manager subscription for deploying SQL files <br/>Argument alias: `azureSubscription`|
 |`AuthenticationType`<br/>Authentication Type|(Required) Type of database authentication, can be SQL Server Authentication, Active Directory - Integrated, Active Directory - Password, or Connection String. Integrated authentication means that the agent will access the database using its current Active Directory account context. <br/>Default value: `server`|
