@@ -4,7 +4,7 @@ description: Automatically build .NET Core apps with Azure Pipelines, Azure DevO
 ms.topic: quickstart
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
-ms.date: 10/17/2019
+ms.date: 04/29/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -153,29 +153,30 @@ steps:
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
-Update the following snippet in your `azure-pipelines.yml` file to select the appropriate image.
+Ubuntu 18.06 is set here in the YAML file.  
 
 ```yaml
 pool:
-  vmImage: 'ubuntu-16.04' # examples of other options: 'macOS-10.14', 'vs2017-win2016'
+  vmImage: 'ubuntu-18.04' # examples of other options: 'macOS-10.15', 'windows-2019'
 ```
 
 See [Microsoft-hosted agents](../agents/hosted.md) for a complete list of images and [Pool](/azure/devops/pipelines/yaml-schema#pool) for further examples.
 
 The Microsoft-hosted agents don't include some of the older versions of the .NET Core SDK. 
-They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the **.NET Core Tool Installer** task to the beginning of your process.
+They also don't typically include prerelease versions. If you need these kinds of SDKs on Microsoft-hosted agents, add the [UseDotNet@2](../tasks/tool/dotnet-core-tool-installer.md) task to your YAML file.
 
-If you need a version of the .NET Core SDK that isn't already installed on the Microsoft-hosted agent, add an extra step to your `azure-pipelines.yml` file. To install the 3.0.x SDK for building and 2.2.x for running tests that target .NET Core 2.2.x, add this snippet:
+To install the preview version of the 5.0.x SDK for building and 3.0.x for running tests that target .NET Core 3.0.x, add this snippet:
 
 ```yaml
 steps:
 - task: UseDotNet@2
   inputs:
-    version: '3.0.x'
+    version: '5.0.x'
+    includePreviewVersions: true # Required for preview versions
 
 - task: UseDotNet@2
   inputs:
-    version: '2.2.x'
+    version: '3.0.x'
     packageType: runtime
 ```
 
@@ -186,13 +187,14 @@ steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
-    version: 3.0.x
+    version: 5.0.x
     performMultiLevelLookup: true
+    includePreviewVersions: true # Required for preview versions
 ```
 
 > [!TIP]
 >
-> As an alternative, you can set up a [self-hosted agent](../agents/agents.md#install) and save the cost of running the tool installer.
+> As an alternative, you can set up a [self-hosted agent](../agents/agents.md#install) and save the cost of running the tool installer. See [Linux](../agents/v2-linux.md), [MacOS](../agents/v2-osx.md), or [Windows](../agents/v2-windows.md). 
 > You can also use self-hosted agents to save additional time if you have a large repository or you run incremental builds. A self-hosted agent can also help you in using the preview or private SDKs thats are not officially supported by Azure DevOps or you have available on your corporate or on-premises environments only. 
 
 ::: moniker-end
