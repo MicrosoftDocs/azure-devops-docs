@@ -44,7 +44,10 @@ SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards 
 
 <!--- To be provided --> 
 
-## SAFe&reg; backlogs map to team and portfolio backlogs
+## Team, program, and portfolio backlogs
+
+SAFe&reg; backlogs map to team, program, and portfolio backlogs
+
 
 Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
 
@@ -92,9 +95,9 @@ Because epics can span several release trains, the Portfolio team isn't associat
 ::: moniker-end
  
 
-## SAFe&reg; value streams and budgets map to tags and the Value Area field 
+## SAFe&reg; value streams, budgets, and enablers map to tags and the Value Area field 
  
-You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, and associated budgets.
+You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, enablers, and associated budgets.
 
 
 
@@ -138,6 +141,9 @@ For a more robust mapping of work to architecture or business features, you can 
 ## SAFe&reg; roadmap can be viewed via Delivery Plans and Feature Timeline extensions 
 
 <!--- To be provided --> 
+### Near term PI roadmap
+
+### Solution Train roadmap 
 
 
 ## SAFe metrics can be viewed via Azure Boards dashboards, widgets, and Analytics 
