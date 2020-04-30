@@ -4,11 +4,11 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 4/27/2020
-description: With this **sprint 168** , we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new security features to organizations.
+description: With this **sprint 168**, we are enabling users to choose their deployment strategies directly from within the Azure portal, and we are rolling out several improvements to the Pipelines and Repos user experience."
 ---
 
 # Configure Deployment Strategies from Azure Portal
-With this sprint, we are enabling users to choose their deployment strategies from the Azure portal, and we are bringing new security features to organizations.
+With this sprint, we are enabling users to choose their deployment strategies directly from within the Azure portal, and we are rolling out several improvements to the Pipelines and Repos user experience."\
 
 
 ## Features
