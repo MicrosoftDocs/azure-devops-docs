@@ -116,7 +116,7 @@
 - name: Resources
   items:
   - name: Azure DevOps Blog, Test
-    href: https://blogs.msdn.microsoft.com/visualstudioalm/tag/testing/
+    href: /archive/blogs/anutthara/books-on-software-testing-with-visual-studio-alm-2010
   - name: Plug-ins for Visual Studio
     href: https://go.microsoft.com/fwlink/?LinkID=246630
   - name: Create custom code & plug-ins
