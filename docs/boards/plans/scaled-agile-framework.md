@@ -54,6 +54,23 @@ The following image illustrates how you can configure Azure Boards to support a 
 ![Agiletool  structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
 
+## SAFe
+
+Essential SAFe
+
+Portfolio 
+
+Large Solution SAFe
+
+
+Scale SAFe
+
+
+Full SAFe 
+
+
+
+
 ## Implementation 
 
 The following articles provide details on how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure and customize Azure Boards to support SAFe.  
@@ -67,6 +84,244 @@ The following articles provide details on how SAFe concepts map to your Agile to
 How to customize Azure Boards to support SAFe® practices
 How to configure team dashboards to view SAFe® metrics
 -->
+
+## Quick reference mapping
+
+
+
+:::row:::
+   :::column span="":::
+      SAFe term or artifact
+   :::column-end:::
+   :::column span="":::
+      Azure Boards term or artifact 
+   :::column-end:::
+   :::column span="2":::
+      Notes
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Agile teams
+   :::column-end:::
+   :::column span="":::
+      Team
+   :::column-end:::
+   :::column span="2":::
+      You define a hierarchy of teams to meet the needs of feature or development teams, program and portfolio teams, or solution train teams. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Capabilities
+   :::column-end:::
+   :::column span="":::
+      Work item 
+   :::column-end:::
+   :::column span="2":::
+      You define, plan, and track Capabilities similar to Epics, Features, and Stories. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Enablers
+   :::column-end:::
+   :::column span="":::
+      Work item 
+   :::column-end:::
+   :::column span="2":::
+      You define, plan, and track Enablers similar to Epics, Features, and Stories, You capture within various team backlogs. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Epics
+   :::column-end:::
+   :::column span="":::
+      Epic
+   :::column-end:::
+   :::column span="2":::
+      You define an Epic using the Epic work item type. Epics are at the top of the work item hierarchy of Epics, Features, and Stories.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Features
+   :::column-end:::
+   :::column span="":::
+      Feature
+   :::column-end:::
+   :::column span="2":::
+      You define a Feature using the Feature work item type. Features are a container for a number of Stories and are represented in their own portfolio backlog.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Innovation and Planning (IP) Iteration 
+   :::column-end:::
+   :::column span="":::
+      Iteration Path
+   :::column-end:::
+   :::column span="":::
+      You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Iteration 
+   :::column-end:::
+   :::column span="":::
+      Iteration Path
+   :::column-end:::
+   :::column span="2":::
+      You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Milestones
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+   :::column span="2":::
+      TBD 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Portfolio Backlog
+   :::column-end:::
+   :::column span="":::
+      Portfolio backlog 
+   :::column-end:::
+   :::column span="2":::
+      A portfolio backlog lists the epics associated with a portfolio with the option to expand and display the child Features and Stories.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Portfolio Kanban
+   :::column-end:::
+   :::column span="":::
+      Epic Board 
+   :::column-end:::
+   :::column span="2":::
+      The Epics board displays Epics as cards that supports viisualizing and managing the flow of Epics and Features from concept to completion. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Program Backlog
+   :::column-end:::
+   :::column span="":::
+      Feature backlog 
+   :::column-end:::
+   :::column span="2":::
+      A Feature backlog lists the Features associated with a progream with the option to expand and display the child Stories.  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Program Kanban
+   :::column-end:::
+   :::column span="":::
+      Features Board 
+   :::column-end:::
+   :::column span="2":::
+      The Feautres board displays Features as cards that supports viisualizing and managing the flow of Features and Stories from concept to completion.
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Program Increment (PI) 
+   :::column-end:::
+   :::column span="":::
+      Iteration Path
+   :::column-end:::
+   :::column span="2":::
+      Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks long. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Roadmap
+   :::column-end:::
+   :::column span="":::
+      Delivery Plans, Feature Timeline 
+   :::column-end:::
+   :::column span="2":::
+      TBD 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Shared Services
+   :::column-end:::
+   :::column span="":::
+      TBD 
+   :::column-end:::
+   :::column span="2":::
+      TBD 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Solution
+   :::column-end:::
+   :::column span="":::
+      TBD 
+   :::column-end:::
+   :::column span="2":::
+      TBD 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Stories
+   :::column-end:::
+   :::column span="":::
+      User Story
+   :::column-end:::
+   :::column span="2":::
+      User Stories capture the desired functionality to be delivered and are typically sized so as to be completed with a single iteration.    
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Team Backlog
+   :::column-end:::
+   :::column span="":::
+      Stories backlog 
+   :::column-end:::
+   :::column span="2":::
+      The Stories backlog lists the User Stories assigned to the area path associated with the team.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Value Streams
+   :::column-end:::
+   :::column span="":::
+      TBD 
+   :::column-end:::
+   :::column span="2":::
+      TBD
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Weighted Shortest Job First (WSJF)
+   :::column-end:::
+   :::column span="":::
+      TBD
+   :::column-end:::
+   :::column span="2":::
+      TBD   
+   :::column-end:::
+:::row-end:::
+
+
 
 ## Try this next
 

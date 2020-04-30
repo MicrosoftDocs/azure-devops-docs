@@ -22,6 +22,13 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ![Agile tool structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
+>[!div class="checklist"]      
+> * SAFe deliverables 
+> * SAFe roles and a team hierarchical structure
+> * Product, program, and portfolioi backlogs and boards
+> * Timeboxes, release trains, and sprints 
+> * Events and milestones 
+
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
 ::: moniker range=">= azure-devops-2019"
@@ -38,10 +45,17 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
-## SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+## Role mapping
+
+Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
+
 
 SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
 
+SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+
+
+What are the Azure Board tools they use, when, how
 <!--- To be provided --> 
 
 ## Team, program, and portfolio backlogs
