@@ -12,11 +12,11 @@
   items:
   - name: Scaled Agile Framework
     href: scaled-agile-framework.md
-  - name: SAFe&reg; concepts & Azure Boards
+  - name: SAFe&#174; concepts & Azure Boards
     href: safe-concepts.md
   - name: Plan and track epics, release trains, & multiple backlogs 
     href: safe-plan-track-boards.md
-  - name: Configure Azure Boards to support SAFe&reg;
+  - name: Configure Azure Boards to support SAFe&#174;
     href: safe-configure-boards.md
 - name: Best practices, monitoring, & reports
   items:
