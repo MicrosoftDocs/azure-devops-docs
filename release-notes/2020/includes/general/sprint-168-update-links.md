@@ -2,7 +2,7 @@
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 4/13/2020
+ms.date: 4/30/2020
 ms.topic: include
 ---
 - [Azure DevOps now allows team admins to subscribe to events from MS Teams & Slack](#azure-devops-now-allows-team-admins-to-subscribe-to-events-from-ms-teams--slack)
