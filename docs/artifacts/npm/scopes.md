@@ -4,7 +4,7 @@ description: Use npm scopes for private packages in Azure DevOps Services
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 04/30/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -27,6 +27,10 @@ To use a Azure Artifacts feed with a scope, follow the instructions below, but a
  Then, replace:
 - `registry=<your feed URL>` with
 - `@fabrikam:registry=<your feed URL>`
+
+> [!NOTE]
+> Make sure you add the scope and package names to your `package.json` file: `{ "name": "@fabrikam/package-name" }`.
+
 
 ## Upstreams or scopes?
 Scopes add an additional restriction when naming your packages: each package name must start with `@<scope>`. If you're ok with this limitation, and don't intend to ever publish your private packages to npmjs.com, scopes are an alternative to [upstream sources](upstream-sources.md).
