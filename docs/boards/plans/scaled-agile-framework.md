@@ -58,10 +58,10 @@ The following image illustrates how you can configure Azure Boards to support a 
 
 The following articles provide details on how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure and customize Azure Boards to support SAFe.  
 
-> [!div class="checklist"]   
-> - [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md) 
-> - [How to plan and track SAFe® projects using Azure Boards](safe-plan-track-boards.md) 
-> - [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
+>[!div class="checklist"]   
+> * [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md) 
+> * [How to plan and track SAFe® projects using Azure Boards](safe-plan-track-boards.md) 
+> * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
 
 <!---
 How to customize Azure Boards to support SAFe® practices
