@@ -14,7 +14,7 @@ ms.date: 05/01/2020
 
 # Plan and track epics, release trains, and multiple backlogs to support SAFe&reg; practices 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
