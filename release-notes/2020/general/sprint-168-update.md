@@ -4,7 +4,7 @@ description: See the Sprint 168 feature updates for General, including next step
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 04/27/2020
+ms.date: 04/30/2020
 ---
 
 # General - Sprint 168 Update

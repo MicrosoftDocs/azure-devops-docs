@@ -2,7 +2,7 @@
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 4/13/2020
+ms.date: 4/30/2020
 ms.topic: include
 ---
 ### Jobs can access output variables from previous stages

@@ -4,7 +4,7 @@ description: See the Sprint 168 feature updates for Azure Pipelines, including n
 author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
-ms.date: 04/27/2020
+ms.date: 04/30/2020
 ---
 
 # Azure Pipelines - Sprint 168 Update
