@@ -20,4 +20,4 @@ We have updated the Team Foundation Version Control hubs to a more modern experi
 
 **Mobile experience**: 
 
-![img](../../media/168-repos-0-1.png)s
+![img](../../media/168-repos-0-1.png)
