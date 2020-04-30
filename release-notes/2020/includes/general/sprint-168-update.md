@@ -5,9 +5,9 @@ ms.technology: devops-release-notes
 ms.date: 4/13/2020
 ms.topic: include
 ---
-### Azure DevOps now allows team admins to create subscriptions from MS Teams & Slack
+### Azure DevOps now allows team admins to subscribe to events from MS Teams & Slack
 
-In addition to Project administrators, Azure DevOps now allows Team admin(s) to create subscriptions for Azure Boards, Azure Repos, and Azure Pipelines directly from Slack and MS Teams.
+In addition to Project administrators, Azure DevOps now allows Team admins to subscribe to events for Azure Boards, Azure Repos, and Azure Pipelines directly from Slack and MS Teams.
 
 
 ### MS Teams & Slack notifications for Repos events
