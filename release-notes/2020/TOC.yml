@@ -6,7 +6,7 @@
     - name: 2020
       expanded: true
       items:
-        - name: April 27
+        - name: April 30
           href: 2020/sprint-168-update.md
         - name: April 13
           href: 2020/sprint-167-update.md
@@ -195,7 +195,7 @@
               href: 2015/may-15-team-services.md
             - name: May 11
               href: 2015/may-11-team-services.md
-            - name: April 27
+            - name: April 30
               href: 2015/apr-27-team-services.md
             - name: April 24
               href: 2015/apr-24-team-services.md
@@ -353,7 +353,7 @@
       href: 2019/boards/sprint-146-update.md
 - name: Azure Repos
   items:
-    - name: April 27
+    - name: April 30
       href: 2020/repos/sprint-168-update.md
     - name: April 13
       href: 2020/repos/sprint-167-update.md
@@ -389,7 +389,7 @@
       href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
   items:
-    - name: April 27
+    - name: April 30
       href: 2020/pipelines/sprint-168-update.md
     - name: April 13
       href: 2020/pipelines/sprint-167-update.md
@@ -475,7 +475,7 @@
       href: 2019/artifacts/sprint-146-update.md
 - name: General
   items:
-    - name: April 27
+    - name: April 30
       href: 2020/general/sprint-168-update.md
     - name: April 13
       href: 2020/general/sprint-167-update.md
