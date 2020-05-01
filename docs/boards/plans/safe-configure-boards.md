@@ -17,6 +17,19 @@ ms.date: 05/01/2020
 
 In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
+In this article you'll learn how to: 
+>[!div class="checklist"]      
+> * Define Area Paths to support a hiearchical set of teams 
+> * Configure Iteration Paths to support Program Increments, Sprints, and Innovation and Planning (IP) Iteration 
+> * Add and configure a hiearchical set of teams
+
+> * Define delivery plans to support portfolio and program roadmaps 
+> * 
+> * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
+
+
+## Hierarchy 
+
 ![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
 
 Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
@@ -28,7 +41,9 @@ In order to go from one project with one default team, area, and set of iteratio
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 
-## Create areas to support your team hierarchy
+## Define Area Paths 
+
+ to support your team hierarchy
 
 1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../media/icons/gear_icon.png) to open the administration page for the default team.  
 2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
@@ -206,14 +221,6 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ## Show progress rollup 
 
-
-::: moniker range="tfs-2013" 
-
-## Required customization
-
-If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
-
-::: moniker-end 
 
 ## Related articles
 
