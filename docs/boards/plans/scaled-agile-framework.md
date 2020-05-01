@@ -75,7 +75,7 @@ Full SAFe
 
 The following articles provide details on how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure and customize Azure Boards to support SAFe.  
 
->[!div class="checklist"]   
+>[!div class="checklist"]      
 > * [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md) 
 > * [How to plan and track SAFe® projects using Azure Boards](safe-plan-track-boards.md) 
 > * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
@@ -91,13 +91,13 @@ How to configure team dashboards to view SAFe® metrics
 
 :::row:::
    :::column span="":::
-      SAFe term or artifact
+      **SAFe term or artifact**
    :::column-end:::
    :::column span="":::
-      Azure Boards term or artifact 
+      **Azure Boards term or artifact** 
    :::column-end:::
    :::column span="2":::
-      Notes
+      **Notes**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -162,7 +162,7 @@ How to configure team dashboards to view SAFe® metrics
    :::column span="":::
       Iteration Path
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
    :::column-end:::
 :::row-end:::

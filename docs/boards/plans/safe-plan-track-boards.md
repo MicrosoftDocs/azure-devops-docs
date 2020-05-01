@@ -18,14 +18,20 @@ ms.date: 05/01/2020
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
-## Map features to epics and stories to features
+
+## Define epics, features, and stories
+
+
+## Map features to epics, and stories to features
 
 The program team can map features to epics using the mapping pane. Feature teams can use the same experience to map their stories to features.
  
 
 ![Map features to epics](media/safe-map-features-to-epics.png)  
 
-## Portfolio team's view of progress
+## View plan and progress 
+
+### Portfolio team's view 
 
 To track the progress of epics that span Releases, the Portfolio team's backlog shows epics. Each epic can be expanded to show the features and user stories that support it.
 

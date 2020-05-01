@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.prod: devops
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 05/01/2020
 ---
@@ -22,7 +22,7 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ![Agile tool structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
->[!div class="checklist"]      
+>[!div class="checklist"]      
 > * SAFe deliverables 
 > * SAFe roles and a team hierarchical structure
 > * Product, program, and portfolioi backlogs and boards
@@ -45,6 +45,9 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
+
+<a id="roles" />
+
 ## Role mapping
 
 Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
@@ -58,7 +61,9 @@ SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards 
 What are the Azure Board tools they use, when, how
 <!--- To be provided --> 
 
-## Team, program, and portfolio backlogs
+<a id="backlogs-boards" />
+
+## Portfolio, program, and feature team backlogs and boards
 
 SAFe&reg; backlogs map to team, program, and portfolio backlogs
 
@@ -77,7 +82,9 @@ Out of the box, the Agile process supports user story, feature, and epic backlog
 
 ::: moniker-end
 
-## SAFe&reg; releases, iterations, and sprints map to iterations
+<a id="program-increments" />
+
+## Program Increments, releases, and sprints  
 
 SAFe Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 
@@ -108,12 +115,11 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ::: moniker-end
  
+<a id="value-streams" />
 
-## SAFe&reg; value streams, budgets, and enablers map to tags and the Value Area field 
+## Value streams and budgets 
  
-You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, enablers, and associated budgets.
-
-
+You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, enablers, and associated budgets. 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -152,15 +158,28 @@ For a more robust mapping of work to architecture or business features, you can 
 ::: moniker-end
 
 
+<a id="roadmap" />
+
 ## SAFe&reg; roadmap can be viewed via Delivery Plans and Feature Timeline extensions 
 
 <!--- To be provided --> 
+
 ### Near term PI roadmap
 
 ### Solution Train roadmap 
 
 
-## SAFe metrics can be viewed via Azure Boards dashboards, widgets, and Analytics 
+## Metrics  
+
+### Feature Progress Report
+
+### CFD
+
+### Velocity
+
+### Iteration Metrics  
+
+ 
 
 <!--- To be provided --> 
 
