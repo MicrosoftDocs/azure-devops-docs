@@ -7,4 +7,4 @@ ms.topic: include
 ---
 
 - [Add attachments while creating a pull request](#add-attachments-while-creating-a-pull-request) 
-- [New web platform conversion – Repository settings ](#new-web-platform-conversion-–-repository-settings)
+- [New web platform conversion – Repository settings ](#new-web-platform-conversion--repository-settings)
