@@ -157,6 +157,28 @@ No. If you cancel a job while it's in the queue, then the entire job is canceled
 
 If you defined the pipelines using a YAML file, then this is supported. This scenario is not yet supported for release pipelines.
 
+### How can I trigger a job if a previous job succeeded with issues? 
+
+You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
+
+```yml
+
+jobs:
+- job: A
+  displayName: Job A
+  continueOnError: true # next job starts even if this one fails
+  steps:
+  - script: echo Job A ran
+  - script: exit 1
+
+- job: B
+  dependsOn: A
+  condition: eq(dependencies.A.result,'SucceededWithIssues') # targets the result of the previous job 
+  displayName: Job B
+  steps:
+  - script: echo Job B ran
+```
+
 <!-- ENDSECTION -->
 
 
