@@ -149,7 +149,8 @@
         "pipelines/security/**": "juliakm",
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
-        "pipelines/test/**": "steved0x"
+        "pipelines/test/**": "steved0x",
+        "service-hooks/**": "aaronhallberg"
 
       },
       "ms.technology": {
