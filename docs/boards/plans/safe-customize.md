@@ -17,18 +17,16 @@ ms.date: 05/01/2020
 
 Most of the customizations outlined in this article are optional. 
 
-HOwever, you may want to consider the following customizations based on your business needs 
+However, you may want to consider the following customizations based on your business needs 
 
 
-In this article you'll learn about select process customizations you can make to support SAFe.  
+In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe practices.  
 >[!div class="checklist"]      
-> * Define Area Paths to support a hiearchical set of teams 
-> * Configure Iteration Paths to support Program Increments, Sprints, and Innovation and Planning (IP) Iteration 
-> * Add and configure a hiearchical set of teams
-
-> * Define delivery plans to support portfolio and program roadmaps 
-> * 
-> * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
+> * Add custom work item types  
+> * Add portfolio backlogs 
+> * Customize the workflow 
+> * Add custom rules
+> * Add custom fields 
 
 
 :::row:::
