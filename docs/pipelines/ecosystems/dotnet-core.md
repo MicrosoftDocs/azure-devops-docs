@@ -209,7 +209,7 @@ Make sure that you have the necessary version of the .NET Core SDK and runtime i
 
 ## Restore dependencies
 
-NuGet is a popular way to depend on code that you don't build. You can download NuGet packages by running 
+NuGet is a popular way to depend on code that you don't build. You can download NuGet packages and project-specific tools that are specified in the project file by running 
 the `dotnet restore` command either through the 
 [.NET Core](../tasks/build/dotnet-core-cli.md) task or directly in a script in your pipeline.
 
@@ -217,6 +217,32 @@ the `dotnet restore` command either through the
 
 You can download NuGet packages from Azure Artifacts, NuGet.org, or some other external or internal NuGet repository.
 The **.NET Core** task is especially useful to restore packages from authenticated NuGet feeds.
+
+This pipeline uses an artifact feed for `dotnet restore` in the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md). 
+
+```yaml
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-vsts-feed' # A series of numbers and letters
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    arguments: '--configuration $(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration)'
+```
 
 ::: moniker-end
 
@@ -265,7 +291,7 @@ you get the benefit of using the package cache.
 
 ::: moniker range="azure-devops"  
 
-To restore packages from a custom feed, use the **.NET Core** task:
+To restore packages from an external custom feed, use the **.NET Core** task:
 
 ```yaml
 # do this before your build tasks
