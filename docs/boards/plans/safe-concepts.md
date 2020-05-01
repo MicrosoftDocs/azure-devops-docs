@@ -29,6 +29,12 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 > * Timeboxes, release trains, and sprints 
 > * Events and milestones 
 
+
+
+<a id="teams" />
+
+## Agile teams, program and portfolio teams 
+
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
 ::: moniker range=">= azure-devops-2019"
@@ -43,7 +49,26 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 ::: moniker-end
 
-To support SAFe teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
+To support SAFe® teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
+
+
+
+
+<a id="wiki" />
+
+## Portfolio Vision, Strategic Themes
+
+Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it is easy to track who made changes and recover past versions.   
+
+Use your project wiki to support sharing the following SAFe® artifacts: 
+
+- Portfolio Vision
+- Strategic Themes 
+
+::: moniker range="<= tfs-2018"
+> [!NOTE]  
+> The Project Wiki is available with TFS 2018 and later versions. 
+::: moniker-end
 
 
 <a id="roles" />
@@ -61,15 +86,34 @@ SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards 
 What are the Azure Board tools they use, when, how
 <!--- To be provided --> 
 
+<a id="work-items" />
+
+## Epics, features, stories, capabilities, and enablers
+
+All work and deliverables are captured in work items. Each work item is associated with a specific work item type with a predefined workflow. Each Azure Boards process provides support for specific  work item types which you can use to track any of the SAFe deliverables. 
+
+The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
+
+[!INCLUDE [temp](../includes/work-item-types.md)]
+
+The items in your backlog may be called *User Stories* (Agile) *Issues* (Basic), *Product backlog items* (Scrum), or *Requirements* (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
+
+You can use Features and User Stories to track Capabilities and Enablers. Or, you if you have specific tracking and reporting needs, you can add custom work item types to track these types of deliverables. For more information, see [Customize Azure Boards, Add custom work item types](safe-customize.md).  
+
+Work items provide support for the following tasks: 
+- Add information, update status, and assign to a project member or sprint
+- Link work items, attach files
+- Add comments and view a discussion thread
+
+Product and portfolio backlogs enable teams to quickly add and prioritize their Epics, Features, and User Stories.   
+
 <a id="backlogs-boards" />
 
 ## Portfolio, program, and feature team backlogs and boards
 
-SAFe&reg; backlogs map to team, program, and portfolio backlogs
-
+SAFe® backlogs map to team, program, and portfolio backlogs. 
 
 Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
-
 ::: moniker range=">= azure-devops-2019"
 
 ![Hierarchical backlog: epics, features, and stories](media/safe/epic-feature-story-mapping.png)
@@ -82,7 +126,7 @@ Out of the box, the Agile process supports user story, feature, and epic backlog
 
 ::: moniker-end
 
-<a id="program-increments" />
+<a id="iterations" />
 
 ## Program Increments, releases, and sprints  
 
@@ -115,7 +159,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 ::: moniker-end
  
-<a id="value-streams" />
+<a id="tags" />
 
 ## Value streams and budgets 
  
@@ -179,9 +223,24 @@ For a more robust mapping of work to architecture or business features, you can 
 
 ### Iteration Metrics  
 
+<a id="retrospectives" />
+
+## Retrospectives and reviews
+
+To support teams performing retrospectives and reviews, we recommend using the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives). 
+
+This extension allows teams to create their own retrospecive boards and capture the following tasks: 
+- Collect feedback on project milestones
+- Organize and prioritize that feedback
+- Create and track actionable tasks to help each team in their improvement processes.
  
 
-<!--- To be provided --> 
+::: moniker range="<= tfs-2018"
+
+> [!NOTE]  
+> The [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives) is supported on TFS 2018 and later versions. 
+
+::: moniker-end
 
 ## Try this next
 

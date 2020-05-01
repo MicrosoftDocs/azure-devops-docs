@@ -10,7 +10,7 @@
   href: edit-delivery-plan-permissions.md
 - name: Scaled Agile Framework
   items:
-  - name: Scaled Agile Framework
+  - name: Scaled Agile Framework®
     href: scaled-agile-framework.md
   - name: SAFe® concepts & Azure Boards
     href: safe-concepts.md
@@ -18,6 +18,8 @@
     href: safe-plan-track-boards.md
   - name: Configure Azure Boards to support SAFe®
     href: safe-configure-boards.md
+  - name: Customize Azure Boards 
+    href: safe-customize.md
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture
