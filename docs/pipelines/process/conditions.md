@@ -159,6 +159,8 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 
 ### How can I trigger a job if a previous job succeeded with issues? 
 
+You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
+
 ```yml
 
 jobs:
