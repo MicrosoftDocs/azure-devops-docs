@@ -22,13 +22,12 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ![Agile tool structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
->[!div class="checklist"]      
+>[!div class="checklist"]  
 > * SAFe deliverables 
 > * SAFe roles and a team hierarchical structure
-> * Product, program, and portfolioi backlogs and boards
+> * Product, program, and portfolio backlogs and boards
 > * Timeboxes, release trains, and sprints 
 > * Events and milestones 
-
 
 
 <a id="teams" />
@@ -52,39 +51,6 @@ Because your Agile tools support a hierarchical team structure, each team has it
 To support SAFe® teams, you reconfigure the default team as the Portfolio team to manage your epics. You then create sub-teams for program-level work and team-level work. Work can be tracked across teams and throughout each of the levels.
 
 
-
-
-<a id="wiki" />
-
-## Portfolio Vision, Strategic Themes
-
-Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it is easy to track who made changes and recover past versions.   
-
-Use your project wiki to support sharing the following SAFe® artifacts: 
-
-- Portfolio Vision
-- Strategic Themes 
-
-::: moniker range="<= tfs-2018"
-> [!NOTE]  
-> The Project Wiki is available with TFS 2018 and later versions. 
-::: moniker-end
-
-
-<a id="roles" />
-
-## Role mapping
-
-Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
-
-
-SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
-
-SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
-
-
-What are the Azure Board tools they use, when, how
-<!--- To be provided --> 
 
 <a id="work-items" />
 
@@ -213,15 +179,41 @@ For a more robust mapping of work to architecture or business features, you can 
 ### Solution Train roadmap 
 
 
-## Metrics  
 
-### Feature Progress Report
+<a id="wiki" />
 
-### CFD
+## Portfolio Vision, Strategic Themes
 
-### Velocity
+Information can be widely shared with an organization using the Azure DevOps project wiki. The wiki is a similar to a git repository that supports adding and editing pages using markdown and a WYSIWYG editor. It versions each page so that it is easy to track who made changes and recover past versions.   
 
-### Iteration Metrics  
+Use your project wiki to support sharing the following SAFe® artifacts: 
+
+- Portfolio Vision
+- Strategic Themes 
+
+::: moniker range="<= tfs-2018"
+> [!NOTE]  
+> The Project Wiki is available with TFS 2018 and later versions. 
+::: moniker-end
+
+
+<a id="roles" />
+
+## Role mapping
+
+Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
+
+
+SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+
+SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+
+
+What are the Azure Board tools they use, when, how
+<!--- To be provided --> 
+
+
+
 
 <a id="retrospectives" />
 

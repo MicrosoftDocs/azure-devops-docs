@@ -69,10 +69,21 @@ In this article you'll learn about select process customizations you can make an
 
 
 
+## Track bugs as requirements or tasks? 
+
+
+
 ## Custom portfolio backlogs 
 
 
 ## Custom workflow
+
+You may want to customize the workflow so that it matches your workflow process. By doing this early, you set up teams to ... 
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board columns to visualize flow and limit WIP](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Team-Kanban_F01_WP.png)  
+
+
 
 ## Custom fields and customized fields
 Customize pick lists
@@ -89,6 +100,20 @@ Customize pick lists
 If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templates with PowerShell: blog post by Gordon Beeming](http://31og.com/post/upgradepublish-tfs-2013-process-templates-with-powershell). This post provides a PowerShell script which you can use to apply the customizations documented in the TFS 2013 version of this article.   
 
 ::: moniker-end 
+
+
+
+<a id="project-scale" />
+
+## When to add another project 
+ 
+
+- [About projects and scaling your organization](../../organizations/projects/about-projects.md)
+
+- [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
+
+
+
 
 
 <a id="wsjf" />

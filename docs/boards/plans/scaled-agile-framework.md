@@ -14,7 +14,7 @@ ms.date: 05/01/2020
 
 
 
-# Implement Scaled Agile Framework&reg; to support epics, release trains, and multiple backlogs  
+# Implement Scaled Agile Framework&reg; 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
@@ -57,18 +57,10 @@ The following image illustrates how you can configure Azure Boards to support a 
 ## SAFe
 
 Essential SAFe
-
 Portfolio 
-
 Large Solution SAFe
-
-
 Scale SAFe
-
-
 Full SAFe 
-
-
 
 
 ## Implementation 
@@ -259,7 +251,7 @@ How to configure team dashboards to view SAFe® metrics
       Program Increment (PI) 
    :::column-end:::
    :::column span="":::
-      [Iteration Path](safe-capture.md#iterations)
+      [Iteration Path](safe-concepts.md#iterations)
    :::column-end:::
    :::column span="2":::
       Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks long. 
