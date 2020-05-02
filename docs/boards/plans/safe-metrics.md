@@ -14,7 +14,7 @@ ms.date: 05/01/2020
 
 # Metrics and reports
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe metrics.
 

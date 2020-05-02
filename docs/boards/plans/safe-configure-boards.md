@@ -15,6 +15,8 @@ ms.date: 05/01/2020
 
 # Configure Azure Boards to support SAFe&reg;  
 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+
 In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
 In this article you'll learn how to: 
