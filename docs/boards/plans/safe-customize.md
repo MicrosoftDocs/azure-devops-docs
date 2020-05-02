@@ -15,6 +15,8 @@ ms.date: 05/01/2020
 
 # Customize Azure Boards to support SAFe&reg;  
 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+
 Most of the customizations outlined in this article are optional. 
 
 The main reason to customize your process is to support monitoring or reporting additional metrics. 
