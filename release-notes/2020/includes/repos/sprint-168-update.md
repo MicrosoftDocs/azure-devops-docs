@@ -20,14 +20,14 @@ With this new experience, navigation for projects with a substantial number of r
 
 ![img](../../media/168-repos-0-3.png)
 
-If you click into a repository, you can view policies and permissions set at the repository level. Within the policies tab, you can view a list of every branch that policy is set on and click on the branch to see the policies all while never leaving the Repository settings page.  
+If you click into a repository, you can view policies and permissions set at the repository level. Within the policies tab, you can view a list of every branch that policy is set on. Now, click on the branch to see the policies all while never leaving the Repository settings page.  
 
 ![img](../../media/168-repos-0-4.png)
 
-Now, when policies are inherited from a higher scope than what you are working with, we show you where the policy was inherited from next to each individual policy. You can also navigate to the page where the higher level policy was set by clicking the scope name. 
+Now, when policies are inherited from a higher scope than what you are working with, we show you where the policy was inherited from next to each individual policy. You can also navigate to the page where the higher-level policy was set by clicking the scope name. 
 
 ![img](../../media/168-repos-0-5.png)
 
-The policy page itself has also been upgraded to the new web platform with collapsible sections! To improve the experience of looking for a particular Build Validation, Status Check, or Automatic Reviewer policy, we have added search filters for each sections. 
+The policy page itself has also been upgraded to the new web platform with collapsible sections! To improve the experience of looking for a particular Build Validation, Status Check, or Automatic Reviewer policy, we have added search filters for each section. 
 
 ![img](../../media/168-repos-0-6.png)

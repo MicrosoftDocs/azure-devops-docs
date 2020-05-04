@@ -9,4 +9,4 @@ ms.topic: include
 - [Limit build service repos scope access](#limit-build-service-repos-scope-access)
 - [Getting details at runtime about multiple repositories](#getting-details-at-runtime-about-multiple-repositories)
 - [Multi stage pipelines GA](#multi-stage-pipelines-ga)
-- [Configure Deployment Strategies from Azure Portal](#configure-deployment-strategies-from-azure-portal)
+- [Configure Deployment Strategies from Azure portal](#configure-deployment-strategies-from-azure-portal)
