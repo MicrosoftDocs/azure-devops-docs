@@ -12,7 +12,8 @@ Output variables may now be used across stages in a YAML-based pipeline. This he
 
 Output variables are still produced by steps inside of jobs. Instead of referring to **`dependencies.jobName.outputs['stepName.variableName']`**, stages refer to **`stageDependencies.stageName.jobName.outputs['stepName.variableName']`**. 
 
-> Note: by default, each stage in a pipeline depends on the one just before it in the YAML file. Therefore, each stage can use output variables from the prior stage. You can alter the dependency graph, which will also alter which output variables are available. For instance, if stage 3 needs a variable from stage 1, it will need to declare an explicit dependency on stage 1.
+> [!NOTE]
+> By default, each stage in a pipeline depends on the one just before it in the YAML file. Therefore, each stage can use output variables from the prior stage. You can alter the dependency graph, which will also alter which output variables are available. For instance, if stage 3 needs a variable from stage 1, it will need to declare an explicit dependency on stage 1.
 
     
 ### Limit build service repos scope access
