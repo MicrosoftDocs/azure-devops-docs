@@ -130,7 +130,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [#900](https://github.com/MicrosoftDocs/azure-devops-docs/issues/900) `The JS snippet to discover group identifiers no longer works`
 - [#753](https://github.com/MicrosoftDocs/azure-devops-docs/issues/753) `Reference please`
 
-- [Need details on how to handle execution bit on .sh scripts #8139](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8139)
+- [`Need details on how to handle execution bit on .sh scripts #8139`](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8139)
 - [One needs to be Project collection Administrator to achieve this. #8120](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8120)
 - [My team mates are not able to view +Add New Test Plan & Define tab #8093](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8093)
 - [Enum not listed as a parameter type #8070](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8070)
