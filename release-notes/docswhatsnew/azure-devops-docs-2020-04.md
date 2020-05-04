@@ -48,7 +48,7 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 
 - [Runtime parameters](/azure/devops/pipelines/process/runtime-parameters) - Adding more runtime parameter examples with a loop
 - [Define variables](/azure/devops/pipelines/process/variables) - Clarifications for various variables issues
-- [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git) - Update to use refactored chared content
+- [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git) - Update to use refactored shared content
 - [Build GitHub repositories](/azure/devops/pipelines/repos/github) - Update to used refactored shared content
 
 ## Documentation feedback GitHub issue content updates
@@ -134,7 +134,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [One needs to be Project collection Administrator to achieve this. #8120](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8120)
 - [My team mates are not able to view +Add New Test Plan & Define tab #8093](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8093)
 - [Enum not listed as a parameter type #8070](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8070)
-- [Clarifying example for oauth token yaml #8056](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8056)
+- [`Clarifying example for oauth token yaml #8056`](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8056)
 - ["User and permission management" link in the sidebar results in 404 #8051](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8051)
 - [Command example for removing a VM is incorrect. #8031](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8031)
 - [Path and Branch pipeline trigger combination unclear #8013](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8013)
