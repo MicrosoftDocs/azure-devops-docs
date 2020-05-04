@@ -55,6 +55,10 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-04-01..2020-04-30).
 
+These articles are on the whitelist.
+
+`These are on the blacklist.`
+
 - [Need details on how to handle execution bit on .sh scripts #8139](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8139)
 - [One needs to be Project collection Administrator to achieve this. #8120](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8120)
 - [My team mates are not able to view +Add New Test Plan & Define tab #8093](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8093)
