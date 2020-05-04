@@ -103,7 +103,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Configure Deployment Strategies from Azure Portal</td><td>Pipelines</td><td>N/A</td>
+        <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
     </tr>    
        <tr>
             <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
