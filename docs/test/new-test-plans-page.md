@@ -29,8 +29,8 @@ This new page has been in public preview for past few quarters and is being made
 ## Help me understand the new page
 
 The new Test Plans page has 5 sections:
-1. **Test Plan header**: Use this to locate, favourite, edit, copy or clone a test plan.
-2. **Test Suites tree**: Use this to add, manage, export or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
+1. **Test plan header**: Use this to locate, favourite, edit, copy or clone a test plan.
+2. **Test suites tree**: Use this to add, manage, export or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
 3. **Define tab**: Collate, add and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts which can also be pinned to dashboards.
@@ -43,12 +43,14 @@ Define tab lets you collate, add and manage test cases for a test suite. Whereas
 Hence, test cases are reusable entities. By including them in a test plan or suite, test points are generated. By executing test points, you determine the quality of the product or service being developed.
 
 <a name="testplanheader"></a>
-## Test Plan header
+## Test plan header
 
 ![test plan header page](media/new-test-plans-page/test-plan-header.png)
 
-**Possible Operations** 
-The Test Plan header allows you to:
+**Possible tasks** 
+
+The Test Plan header allows you to perform the following tasks:
+
 - Mark a test plan as favorite 
 - Unmark a favorited test plan
 - Easily navigate among your favorite test plans
@@ -57,33 +59,65 @@ The Test Plan header allows you to:
 - Navigate back to the All/Mine Test Plans page
 
 **Context menu options**
-The context menu on the Test Plan header provides 3 options:
-a. Copy test plan: This is a new option that allows you to quickly copy the current test plan. More details below.
-b. Edit test plan: This option allows you to edit the Test Plan work item form to manage the work item fields
-c. Test plan settings: This option allows you to configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings
 
-**Copy test plan (new capability)**
+The context menu on the Test Plan header provides the following options:
+
+- *Copy test plan*: This is a new option that allows you to quickly copy the current test plan. More details below.
+- *Edit test plan*: This option allows you to edit the Test Plan work item form to manage the work item fields.
+- *Test plan settings*: This option allows you to configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings
+
+***Copy test plan (new capability)***
 
 ![test plans page](media/new-test-plans-page/copy-test-plan.png)
 
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
 
+<a name="testsuitestree"></a>
+## Test suites tree
+
+![test suites tree page](media/new-test-plans-page/test-suites-tree.png)
+
+**Possible tasks** 
+
+The Test suite header allows you to perform the following tasks:
+
+- *Expand/collapse*: This toolbar options allows you to expand or collapse the suite hierarchy tree.
+- *Show test points from child suites*: This toolbar option is only visible when you are in the "Execute" tab. This allows you to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
+- *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
+
+**Context menu options**
+
+The context menu on the Test suites tree provides the following options:
+
+- *Create new suites*: You can create 3 different types of suites as follows: 
+	- Use static suite or folder suite to organize your tests.
+	- Use requirement-based suite to directly link to the requirements/user stories for seamless traceability.
+	- Use query-based to dynamically organize test cases that meet a query criteria.
+	
+- *Assign configurations*: You can assign configurations for the suite (example: Chrome, Firefox, EdgeChromium) and these would then be applicable to all the existing test cases or new test cases that you add later to this suite. 
+
+- *Export as pdf/email*: Export the Test plan properties, test suite properties along with details of the test cases and test points as either "email" or "print to pdf".
+
+- *Open test suite work item*: This option allows you to edit the Test suite work item form to manage the work item fields.
+
+- *Assign testers to run all tests*: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
+
+- *Rename/Delete*: These options allow you to manage the suite name or remove the suite and its content from the test plan.
+
+- *Import test suites*: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
+
+***Import test suites (new capability)***
+
+![test suites tree import page](media/new-test-plans-page/import-test-suites.png)
+
+It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan and test suite from which you want to import the tests. Depending upon the suite selected, then entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
 
 <a name="journey"></a>
 ## Journey
 
 **With the New Test Plans page, you can perform the following tasks:**
 
-- Test suites tree:
-    - Create and manage suites (static, requirement or query based)
-    - Import (i.e. copy) suite from another test plan
-    - Drag and drop test cases across suites
-    - Show all test cases and points from child suites	
-    - Assign configurations
-    - Order suites
-    - Export
-    - User acceptance testing
 - Define tab:
     - Create and add new test cases
     - Grid to add, edit and manage test cases
