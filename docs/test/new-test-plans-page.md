@@ -58,6 +58,7 @@ The Test Plan header allows you to perform the following tasks:
 - View the quick summary of the Test Progress report with a link to navigate to the report
 - Navigate back to the All/Mine Test Plans page
 
+
 **Context menu options**
 
 The context menu on the Test Plan header provides the following options:
@@ -66,12 +67,14 @@ The context menu on the Test Plan header provides the following options:
 - *Edit test plan*: This option allows you to edit the Test Plan work item form to manage the work item fields.
 - *Test plan settings*: This option allows you to configure the Test Run settings (to associate build or release pipelines) and the Test Outcome settings
 
+
 ***Copy test plan (new capability)***
 
 ![test plans page](media/new-test-plans-page/copy-test-plan.png)
 
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
+
 
 <a name="testsuitestree"></a>
 ## Test suites tree
@@ -85,6 +88,7 @@ The Test suite header allows you to perform the following tasks:
 - *Expand/collapse*: This toolbar options allows you to expand or collapse the suite hierarchy tree.
 - *Show test points from child suites*: This toolbar option is only visible when you are in the "Execute" tab. This allows you to view all the test points for the given suite and its children in one view for easier management of test points without having to navigate to individual suites one at a time. 
 - *Order suites*: You can drag/drop suites to either reorder the hierarchy of suites or move them from one suite hierarchy to another within the test plan. 
+
 
 **Context menu options**
 
@@ -107,11 +111,43 @@ The context menu on the Test suites tree provides the following options:
 
 - *Import test suites*: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
 
+
 ***Import test suites (new capability)***
 
 ![test suites tree import page](media/new-test-plans-page/import-test-suites.png)
 
 It is now easier to reuse the suites you have created already and import them into the current suite/plan. You can select the project, test plan and test suite from which you want to import the tests. Depending upon the suite selected, then entire hierarchy of that suite and corresponding test cases are imported into the current plan. Note that the test cases are added as a reference and not a clone/copy. 
+
+
+<a name="definetab"></a>
+## Define tab
+
+![define tab page](media/new-test-plans-page/define-tab-toolbar.png)
+
+**Possible tasks** 
+
+The Define tab allows you to perform the following tasks:
+
+- *Add New test case using work item form*: This option allows you to create a new test case using the work item form. The test case created will automatically be added to the suite. 
+- *Add New test case using grid*: This option allows you to create one or more test cases using the test cases grid view. The test cases created will automatically be added to the suite. 
+- *Add Existing test cases using a query*: This option allows you to add existing test cases to the suite by specifying a query. 
+- *Order test cases by drag/drop*: You can reorder test cases by dragging/dropping of one or more test cases within a given suite. The order of test cases only applies to manual test cases and not to automated tests.
+- *Move test cases from one suite to another*: Using drag/drop, you can move test cases from one test suite to another. 
+- *Export / Import as CSV*: Using this option, you can export the existing test cases to Excel CSV file, make changes to the CSV file and then import the file back into the suite. This has been one of the most requested feature and we are happy to share that we are opening this for beta testing. See [here for more options.](https://pkuma-msft.github.io/azure-test-plans/articles/testcase-import-export-csv.html)
+- *Show grid*: You can use the grid mode for viewing/editing test cases along with test steps.
+- *Full screen view*: You can view the contents of the entire Define tab in a full screen mode using this option. 
+- *Filtering*: Using the filter bar, you can filter the list of test cases using the fields of "test case title", "assigned to" and "state". You can also sort the list by clicking on the column headers.
+- *Column options*: You can manage the list of columns visible in the Define tab using "Column options".
+
+
+**Context menu options**
+
+The context menu on the Test case node within the Define tab provides the following options:
+
+- *Open/edit test case work item form*: This option allows you to edit a Test case using the work item form wherein you edit the work item fields including test steps.
+- *Edit test cases in grid*: This option allows you to edit multiple test cases tbd
+
+
 
 <a name="journey"></a>
 ## Journey
