@@ -12,12 +12,22 @@ ms.date: 05/01/2020
 ---
 
 
-# Plan and track epics, release trains, and multiple backlogs to support SAFe&reg; practices 
+# Plan and track SAFe&reg; programs and portfolios  
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
+This article walks you through some of the basic tools you'll use to plan and track your SAFe&reg; programs and portfolios. Specifically, you'll learn how to quickly perform these tasks:
+
+>[!div class="checklist"]      
+> - Define epics, features, and stories  
+> - Group or map stories to features, and features to epics
+> - Assign value streams  
+> - Plan a sprint 
+> - Review feature team progress
+> - Review program features
+> - Review portfolio epics 
 
 ## Define epics, features, and stories
 
@@ -29,7 +39,9 @@ The program team can map features to epics using the mapping pane. Feature teams
 
 ![Map features to epics](media/safe-map-features-to-epics.png)  
 
-## View plan and progress 
+## View plan and progress  
+
+
 
 ### Portfolio team's view 
 
@@ -103,10 +115,6 @@ For everything else, it is very much business as usual for individual feature te
 
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.
   
-## Try this next
-
-> [!div class="nextstepaction"]
-> [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md) 
 
 ## Related articles
 

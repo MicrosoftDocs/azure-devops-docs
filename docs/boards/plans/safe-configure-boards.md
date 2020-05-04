@@ -17,20 +17,22 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
+Configuration of Azure Boards to support your SAFe programs and portfolios requires performing the following tasks: 
+
+>[!div class="checklist"]      
+> - Define your feature, program, and portfolio teams  
+> - Configure your hierarchy of Area Paths to support your teams  
+> - Define your Iteration Paths to support your release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
+> - Configure each team's area paths, iteration paths, and team members 
+
+You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
+
+Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
+
+## Define your teams 
+
 In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
-In this article you'll learn how to: 
->[!div class="checklist"]      
-> * Define Area Paths to support a hiearchical set of teams 
-> * Configure Iteration Paths to support Program Increments, Sprints, and Innovation and Planning (IP) Iteration 
-> * Add and configure a hiearchical set of teams
-
-> * Define delivery plans to support portfolio and program roadmaps 
-> * 
-> * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
-
-
-## Hierarchy 
 
 ![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
 
@@ -41,9 +43,9 @@ In this way, all teams can manage their own workload and priorities while clearl
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
 In order to go from one project with one default team, area, and set of iterations, we'll first configure an area path structure to support the hierarchy of teams we want. Then we'll make sure that the iteration paths support the release structure we want and the program and feature teams to use. Finally, we'll create, configure, and populate the membership of teams.  
 
-You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 
-## Define Area Paths 
+
+## Configure Area Paths 
 
  to support your team hierarchy
 
@@ -58,7 +60,8 @@ You'll need to be a [member of the Project Administrators group](../../organizat
 
 	![Areas page, 9 area paths defined](media/safe-team-area-paths-added.png)  
 
-## Create iterations to support your release trains and sprints
+## Define Iteration Paths  
+
 To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
 
 If you already have iterations for your default team, you can rename them. You'll want to create an iteration structure that supports your entire team structure, not just one team.  
@@ -71,7 +74,8 @@ If you already have iterations for your default team, you can rename them. You'l
 	![Iterations page, create IP Sprint iteration](media/safe-view-of-iterations.png)
 
 
-## Create and configure your teams
+## Configure your teams
+
 In this section, we'll show how to configure a hierarchical team structure which maps to the hierarchical area paths we created previously.
 This structure maps the following SAFe teams to your Agile tools' teams:  
 - Portfolio team -> default top-level team, the Fabrikam team  
@@ -81,6 +85,9 @@ This structure maps the following SAFe teams to your Agile tools' teams:
   If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
+
+### Track bugs as requirements or tasks? 
+
 
 
 ### Create and configure each Program team
@@ -221,7 +228,17 @@ The same principles apply to user stories in progress. You can map them to featu
 ![User Story work item form](media/safe-user-story-new-form.png)  
 
 
-## Show progress rollup 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Customize Azure Boards to support SAFe&reg; ](safe-customize.md)
+
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Customize Azure Boards to support SAFe&reg; ](safe-customize.md)
 
 
 ## Related articles

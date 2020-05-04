@@ -23,8 +23,8 @@ The main reason to customize your process is to support monitoring or reporting 
 
 However, you may want to consider the following customizations based on your business needs 
 
-
 In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe practices.  
+
 >[!div class="checklist"]      
 > * Add custom work item types  
 > * Add portfolio backlogs 
@@ -32,7 +32,13 @@ In this article you'll learn about select process customizations you can make an
 > * Add custom rules
 > * Add custom fields 
 
+>[!div class="checklist"]      
+> - Define your feature, program, and portfolio teams  
+> - Configure your hierarchy of Area Paths to support your teams  
+> - Define your Iteration Paths to support your release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
+> - Configure each team's area paths, iteration paths, and team members 
 
+<!--- 
 :::row:::
    :::column span="":::
       **Configure or customize**
@@ -66,13 +72,9 @@ In this article you'll learn about select process customizations you can make an
    :::column-end:::
 :::row-end:::
 
+-->
 
 ## Custom work item types
-
-
-
-## Track bugs as requirements or tasks? 
-
 
 
 ## Custom portfolio backlogs 
@@ -83,12 +85,35 @@ In this article you'll learn about select process customizations you can make an
 You may want to customize the workflow so that it matches your workflow process. By doing this early, you set up teams to ... 
 
 > [!div class="mx-imgBorder"]  
-> ![Kanban board columns to visualize flow and limit WIP](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Team-Kanban_F01_WP.png)  
+> ![Kanban board columns to visualize flow and limit WIP](../boards/media/alm_kb_board2.png)  
 
 
+## Customize fields  
 
-## Custom fields and customized fields
 Customize pick lists
+
+
+
+<a id="wsjf" />
+
+### WSJF (Weighted Shortest Job First)
+
+We recommend using the [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) to compute and store WSJF for your SAFe® deliverables. 
+ 
+SAFe® defines WSJF (Weighted Shortest Job First) as a calculation of cost of delay versus job size. This value can help teams prioritize their portfolio backlogs with the items contributing the highest ROI.
+
+![WSJF = (Business Value + Time Criticality - Risk Reduction | Opportunity Enablement Value)/Job Size](media/safe/wsjf.png) 
+
+Four values are used to calculate WSJF:
+
+- Business Value
+- Time Criticality
+- Risk Reduction | Opportunity Enablement Value
+- Job Size
+
+![Work item form automatically updates with changes to field values](media/safe/AutoCalcWSJF.gif) 
+
+For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
 
 
 ## Custom rules
@@ -118,26 +143,6 @@ If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templ
 
 
 
-<a id="wsjf" />
-
-## WSJF (Weighted Shortest Job First)
-
-We recommend using the [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) to compute and store WSJF for your SAFe® deliverables. 
- 
-SAFe® defines WSJF (Weighted Shortest Job First) as a calculation of cost of delay versus job size. This value can help teams prioritize their portfolio backlogs with the items contributing the highest ROI.
-
-![WSJF = (Business Value + Time Criticality - Risk Reduction | Opportunity Enablement Value)/Job Size](media/safe/wsjf.png) 
-
-Four values are used to calculate WSJF:
-
-- Business Value
-- Time Criticality
-- Risk Reduction | Opportunity Enablement Value
-- Job Size
-
-![Work item form automatically updates with changes to field values](media/safe/AutoCalcWSJF.gif) 
-
-For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
 
 ## Related articles
 

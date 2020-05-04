@@ -14,14 +14,14 @@
     href: scaled-agile-framework.md
   - name: SAFe® concepts & Azure Boards
     href: safe-concepts.md
-  - name: Use Azure Boards to manage SAFe projects 
-    href: safe-plan-track-boards.md
-  - name: Configure Azure Boards to support SAFe®
-    href: safe-configure-boards.md
-  - name: SAFe® metrics
+  - name: Azure reports and SAFe® metrics
     href: safe-metrics.md
+  - name: Configure Azure Boards to support SAFe®
+    href: safe-configure-boards.md 
   - name: Customize Azure Boards to support SAFe® 
-    href: safe-customize.md
+    href: safe-customize.md 
+  - name: Use Azure Boards to manage SAFe® projects 
+    href: safe-plan-track-boards.md 
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture
