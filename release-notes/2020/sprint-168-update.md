@@ -8,7 +8,7 @@ description: With this **sprint 168**, we are enabling users to choose their dep
 ---
 
 # Configure Deployment Strategies from Azure Portal
-With this sprint, we are enabling users to choose their deployment strategies directly from within the Azure portal, and we are rolling out several improvements to the Pipelines and Repos user experience."
+With this sprint, we are enabling users to choose their deployment strategies directly from within the Azure portal, and we are rolling out several improvements to the Pipelines and Repos user experience.
 
 
 ## Features
