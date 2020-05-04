@@ -12,27 +12,32 @@ ms.date: 05/01/2020
 ---
 
 
-# SAFe&reg; concepts map to Azure Boards artifacts 
+# How SAFe&reg; concepts map to Azure Boards artifacts 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <!--- Intro To be provided --> 
 
-Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
+If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as Azure Boards supports Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
 
-![Agile tool structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
+This article illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
 
 >[!div class="checklist"]  
-> * SAFe deliverables 
-> * SAFe roles and a team hierarchical structure
-> * Product, program, and portfolio backlogs and boards
-> * Timeboxes, release trains, and sprints 
-> * Events and milestones 
+> * SAFe&reg; roles and a team hierarchical structure
+> * SAFe&reg; deliverables 
+> * SAFe&reg; product, program, and portfolio views
+> * SAFe&reg; timeboxes, release trains, and sprints 
+> * SAFe&reg; events and milestones 
 
+The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
+
+![Agiletool  structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
+
+Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
 <a id="teams" />
-
-## Agile teams, program and portfolio teams 
+ 
+## SAFe&reg; roles and Agile teams, program and portfolio teams 
 
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
@@ -237,7 +242,8 @@ This extension allows teams to create their own retrospecive boards and capture 
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [How to plan and track SAFe® projects using Azure Boards](safe-plan-track-boards.md)
+> [Azure reports and SAFe® metrics](safe-metrics.md)
+
 
 
 ## Related articles

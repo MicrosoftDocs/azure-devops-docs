@@ -12,16 +12,11 @@ ms.date: 05/01/2020
 ---
 
 
-# Metrics and reports
+# Azure reports and SAFe® metrics 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe metrics.
-
-
-## Reporting tools
-
-Azure Boards provides the following tools to support teams in deriving metrics and monitoring and reporting progress. 
+Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving metrics and monitoring and reporting progress. 
 
 - In-context reports 
 - Managed query charts such as pie, bar, stacked bar, trend, and pivot
@@ -32,7 +27,15 @@ Azure Boards provides the following tools to support teams in deriving metrics a
 
 For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md).  An additional backlog tool is Forecast which teams can use in their iteration planning. 
 
-Supported SAFe metrics  
+In this article, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe metrics 
+
+>[!div class="checklist"]      
+> - Progress reports
+> - Cumulative Flod Diagram 
+> - Lead time and cycle time charts
+> - Velocity 
+> - Forecast 
+
 
 ## Progress reports 
 
@@ -59,7 +62,7 @@ Each Azure Boards backlog and board provide configurable CFD views. So each team
 The following image shows an example CFD chart for User Stories with all Kanban columns displayed. 
 
 > [!div class="mx-imgBorder"]  
-> ![CFD chart](../../report/dashboards/media/cfd/analytics-cfd-intro.png)
+> ![CFD chart](../../report/dashboards/media/cfd/analytics-cfd-azure-devops.png)
 
 Teams can use their CFD to identify bottlenecks and monitor the batch size of work in their various Kanban states. 
 
@@ -111,4 +114,10 @@ By assigning Story Points to each User Story, a team can determine how much work
 ## Iteration goals, managing dependencies, and other ... 
 
 Use Team dashboards to capture Iteration Goals. 
+
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Configure Azure Boards to support SAFe®](safe-configure-boards.md)
 

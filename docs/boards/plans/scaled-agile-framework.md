@@ -45,13 +45,6 @@ SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.]
 
 
 
-## Azure Boards, Agile tools and SAFe support 
-
-If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as Azure Boards supports Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
-
-The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
-
-![Agiletool  structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
 
 
 ## SAFe
