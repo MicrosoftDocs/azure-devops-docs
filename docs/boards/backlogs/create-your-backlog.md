@@ -7,6 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
 author: KathrynEE
+ms.custom: contentperfq4
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 02/21/2020
