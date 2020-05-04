@@ -95,7 +95,7 @@ Team velocity is often used as an input to support iteration or sprint planning.
 Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the example below, the chart also provides the average velocity calculated for the number of iterations shown. 
 
 > [!div class="mx-imgBorder"]  
-> ![Velocity](/media/safe/velocity-story-points.png)  
+> ![Velocity](media/safe/velocity-story-points.png)  
 
 This average can be used to forecast work by plugging it into the forecast tool. 
 
