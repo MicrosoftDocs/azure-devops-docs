@@ -9,7 +9,8 @@ ms.topic: include
 
 1. Select the sign-up link for [Azure DevOps](https://azure.microsoft.com/services/devops/), **Start free with GitHub**. If you're already part of an Azure DevOps organization, select **Sign in to Azure DevOps**.
 
-   ![Sign up for Azure DevOps](/azure/devops/media/azure-devops-start-free.png)
+   ![Sign up for Azure DevOps](./media/azure-devops-start-free.png)
+
 
 2. Select **Sign in with GitHub**.
 
