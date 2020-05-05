@@ -142,7 +142,7 @@ jobs:
     steps:
     - script: echo I did a thing
     condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
-    ```
+```
 
 ```yaml
 # azure-pipeline.yml
