@@ -28,7 +28,7 @@ This new page has been in public preview for past few quarters and has been made
 
 ***Help me understand the new page***
 
-![test plans sneak peek](media/new-test-plans-page/new-test-plans-page.png)
+![test plan overview page](media/new-test-plans-page/test-plan-overview.png)
 
 
 The new Test Plans page has total of 6 sections of which the first 4 are new, while the Charts & Extensibility sections are the existing functionality. 
