@@ -98,17 +98,11 @@ The context menu on the Test suites tree provides the following options:
 	- Use static suite or folder suite to organize your tests.
 	- Use requirement-based suite to directly link to the requirements/user stories for seamless traceability.
 	- Use query-based to dynamically organize test cases that meet a query criteria.
-	
 - *Assign configurations*: You can assign configurations for the suite (example: Chrome, Firefox, EdgeChromium) and these would then be applicable to all the existing test cases or new test cases that you add later to this suite. 
-
 - *Export as pdf/email*: Export the Test plan properties, test suite properties along with details of the test cases and test points as either "email" or "print to pdf".
-
 - *Open test suite work item*: This option allows you to edit the Test suite work item form to manage the work item fields.
-
 - *Assign testers to run all tests*: This option is very useful for User Acceptance testing (UAT) scenarios where the same test needs to be run/executed by multiple testers, generally belonging to different departments. 
-
 - *Rename/Delete*: These options allow you to manage the suite name or remove the suite and its content from the test plan.
-
 - *Import test suites*: Use this option to import test cases present in other suites from same or other test plans and even across projects. More details below.
 
 
