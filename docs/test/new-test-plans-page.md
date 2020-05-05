@@ -28,11 +28,11 @@ This new page has been in public preview for past few quarters and has been made
 
 ***Help me understand the new page***
 
-![test plans sneek peek](media/new-test-plans-page/new-test-plans-page.png)
+![test plans sneak peek](media/new-test-plans-page/new-test-plans-page.png)
 
 
 The new Test Plans page has total of 6 sections of which the first 4 are new, while the Charts & Extensibility sections are the existing functionality. 
-1. **Test plan header**: Use this to locate, favourite, edit, copy or clone a test plan.
+1. **Test plan header**: Use this to locate, favorite, edit, copy or clone a test plan.
 2. **Test suites tree**: Use this to add, manage, export or order test suites. Leverage this to also assign configurations and perform user acceptance testing.
 3. **Define tab**: Collate, add and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
