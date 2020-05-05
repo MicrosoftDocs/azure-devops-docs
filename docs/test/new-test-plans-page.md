@@ -28,7 +28,7 @@ This new page has been in public preview for past few quarters and has been made
 
 ***Help me understand the new page***
 
-![test plans sneak peek](media/new-test-plans-page/new-test-plans-page.png)
+![test plan overview page](media/new-test-plans-page/test-plan-overview.png)
 
 
 The new Test Plans page has total of 6 sections of which the first 4 are new, while the Charts & Extensibility sections are the existing functionality. 
@@ -70,7 +70,7 @@ The context menu on the Test Plan header provides the following options:
 
 ***Copy test plan (new capability)***
 
-![test plans page](media/new-test-plans-page/copy-test-plan.png)
+![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
 
 We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
