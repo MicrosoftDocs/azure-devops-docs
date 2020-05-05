@@ -36,7 +36,7 @@ In this sprint, we have added role-based access for service connections. Previou
 
 As part of this work, we have introduced Reader, User, Creator and Administrator roles. You can set these roles at service connections hub level in your project and these are inherited to the individual connections. And in each service connection you have the option to turn inheritance on/off and override the roles in the scope of the service connection.
 
-![img](../../media/169-pipelines-0-0.png
+![img](../../media/169-pipelines-0-0.png)
 
 Learn more about service connections security [here](https://aka.ms/SCLearnMore).
 
