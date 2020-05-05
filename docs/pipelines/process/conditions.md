@@ -119,14 +119,16 @@ When you declare a parameter in the same pipeline that you have a condition, par
 
 ```yaml
 parameters:
-  doThing: true
+- name: doThing
+  default: true
+  type: boolean
 
 steps:
 - script: echo I did a thing
   condition: and(succeeded(), eq('${{ parameters.doThing }}', true))
 ```
 
- When you pass a parameter to a template, the parameter will not have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAMLs, the pipeline value from the template will get used in your condition. 
+ However, when you pass a parameter to a template, the parameter will not have a value when the condition gets evaluated. As a result, if you set the parameter value in both the template and the pipeline YAMLs, the pipeline value from the template will get used in your condition. 
 
 ```yaml
 # parameters.yml
