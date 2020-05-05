@@ -32,11 +32,7 @@ In this article you'll learn about select process customizations you can make an
 > * Add custom rules
 > * Add custom fields 
 
->[!div class="checklist"]      
-> - Define your feature, program, and portfolio teams  
-> - Configure your hierarchy of Area Paths to support your teams  
-> - Define your Iteration Paths to support your release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
-> - Configure each team's area paths, iteration paths, and team members 
+
 
 <!--- 
 :::row:::
