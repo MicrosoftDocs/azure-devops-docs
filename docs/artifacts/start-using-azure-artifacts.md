@@ -70,7 +70,7 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level isn't billed to your subscription. Above this limit, we charge you for your actual usage. The usage limit allows you to control the maximum volume of storage that you're billed for. Once the maximum usage limit is reached, you can no longer upload artifacts. For more information on usage tiers, see the [Azure Artifacts pricing page](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 > [!NOTE]
-> Organizations created before May 6, 2019 will remain on the per-user billing model, and will be switched over to storage-based charging on July 6, 2020. This date is pushed back from the previously communicated May 9, 2020.”  
+> Organizations created before May 6, 2019 will remain on the per-user billing model, and will be switched over to storage-based charging on July 6, 2020. This date is pushed back from the previously communicated May 9, 2020.  
 
 ## View Billed Storage
 
@@ -147,6 +147,6 @@ A: If you remove your Azure Subscription from your Azure DevOps organization, yo
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers from before May 6, 2019 aren't charged for Artifacts storage until May 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on May 6, 2020, you're charged under the new storage model.
+A: Customers from before May 6, 2019 aren't charged for Artifacts storage until July 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on July 6, 2020, you're charged under the new storage model.
 
 ::: moniker-end
