@@ -40,13 +40,13 @@ As part of this work, we have introduced Reader, User, Creator and Administrator
 
 Learn more about service connections security [here](https://aka.ms/SCLearnMore).
 
-### Associated CD pipelines info in CI pipelines
+### Showing associated CD pipelines info in CI pipelines
 
 As part of this sprint we have added support to show details about the CD YAML pipelines where the CI pipelines are referred to as 'pipeline' resources. In your CI pipeline run view, you will now see a new tab 'Associated pipelines' where you can find all the pipeline runs that consume your pipeline and artifacts from it.
 
 ![img](../../media/169-pipelines-5-0.png)
 
-### Cross project sharing of service connections is now public
+### Cross-project sharing of service connections is now public
 
 In this sprint, we are enabling support for service connection sharing across projects. For the past 3 months, this feature is in private preview and we have enabled it for many customers who have provided valuable feedback.
 

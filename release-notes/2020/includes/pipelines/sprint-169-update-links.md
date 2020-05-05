@@ -6,9 +6,9 @@ ms.date: 5/11/2020
 ms.topic: include
 ---
 
-- [YAML CD GA release notes](#yaml-cd-ga-release-notes)
-- [Service connections new UX GA](#service-connections-new-ux-ga)
-- [Role based security for Service connections](#role-based-security-for-service-connections)
-- [Showing associated CD pipeline info in CI pipeline](#showing-associated-cd-pipeline-info-in-ci-pipeline)
-- [Service connections cross project sharing ](#service-connections-cross-project-sharing-)
-- [Version picker in create run dialogue for pipeline resource](#version-picker-in-create-run-dialogue-for-pipeline-resource)
+- [Pipelines YAML CD features now generally available](#pipelines-yaml-cd-features-now-generally-available)
+- [Service connections new UI as default experience](#service-connections-new-ui-as-default-experience)
+- [RBAC for Service Connections](#rbac-for-service-connections)
+- [Showing associated CD pipeline info in CI pipeline](#Showing-associated-cd-pipelines-info-in-ci-pipelines)
+- [Cross-project sharing of service connections is now public](#cross-project-sharing-of-service-connections-is-now-public)
+- [Pipeline resource version picker in create run dialogue](#pipeline-resource-version-picker-in-create-run-dialogue)
