@@ -20,8 +20,8 @@ Complete the following steps to change application connection, security, and use
 
 3. Select **Policies**,  and then next to your policy, move the toggle to *on* or *off*.
 
-   :::image type="content" source="media/change-policies-preview.png" alt-text="Select policy, and then turn On or Off":::](media/change-policies-current-view.png)
-
+   ![Select policy, and then turn On or Off](media/change-policies-preview.png)
+   
 #### [Current page](#tab/current-page)
 
 
@@ -35,7 +35,7 @@ Complete the following steps to change application connection, security, and use
 
 3. Select **Policies** and then from the dropdown next to the policy, select **On** or **Off**.
 
-   :::image type="content" source="media/change-policies-current-view.png" alt-text="Select policy, and then from the dropdown, select On or Off":::
+   ![Select policy, and then from the dropdown, turn On or Off](media/change-policies-current-view.png)
    
 * * *
 
