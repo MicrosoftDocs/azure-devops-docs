@@ -97,7 +97,7 @@ trigger:
 
 If you want to disable the trigger or override the trigger settings in the YAML files you can do so on the definition.
 
-See the [YAML build triggers](https://github.com/Microsoft/vsts-agent/blob/master/docs/preview/yamlgettingstarted-triggers.md) documentation for more information.
+See the [YAML build triggers](/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema) documentation for more information.
 
 > [!div class="mx-imgBorder"]
 > ![ci triggers from yaml](media/133_04.png)

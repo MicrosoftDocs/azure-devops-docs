@@ -7,6 +7,7 @@ ms.technology: devops-agile
 ms.assetid: 04df6b31-ef6c-4285-81a6-96768f03ecf4
 ms.author: kaelli
 author: KathrynEE
+ms.custom: contentperfq4
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
 ms.date: 02/21/2020
@@ -16,7 +17,9 @@ ms.date: 02/21/2020
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements.  
+Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. 
+
+[!INCLUDE [temp](../includes/note-request-feedback.md)] 
 
 After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
 

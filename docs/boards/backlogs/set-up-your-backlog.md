@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 04/28/2020
 ---
 
 # Set up your Backlogs and Boards  
@@ -68,7 +68,18 @@ As shown in the following image, (1) choose the team, (2) **Work**, (3)**Backlog
 ::: moniker-end
 
 To look up your team's Area Path(s) and Iteration Paths, see [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and 
-[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+[Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+
+<a id="sprint" />
+
+## Default sprint backlog and Taskboard work items
+
+Your sprint backlog and Taskboard apply the filters associated with your team's default backlog and board work items along with one additional filter: the Iteration Path you select.  
+
+You can only select Iteration Paths that have been [preselected by your team](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+
+Your sprint backlog displays only those work items assigned to the selected sprint. Child tasks assigned to other sprints aren't displayed.  
+
 
 ## Checklist for work items, backlogs, and boards 
 
@@ -191,7 +202,7 @@ For example, here  we've chosen to track bugs along with tasks, and we enable Is
 
 ## Hide or show backlog levels 
 
-Your team can also choose to hide or show one or more backlog level. Often times feature teams manage backlog items, while management teams manage features and epics. In this situation, you can enable or disable a backlog level. 
+Your team can also choose to hide or show one or more backlog level. Feature teams often manage backlog items, while management teams manage features and epics. In this situation, you can enable or disable a backlog level. 
 
 > [!div class="mx-imgBorder"]
 > ![Backlog navigation levels](media/setup-backlog/backlog-levels.png)
