@@ -1,35 +1,42 @@
 ---
-title: Manage Conditional Access policies
+title: Manage security policies, Conditional Access
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to protect your organization credentials and keep your data safe with multi-factor authentication, security group membership, and more.
+description: Learn how to secure your org and enable conditional access with Azure AD, enterprise access to projects, and allow public projects.
 ms.technology: devops-accounts
 ms.assetid: 2e3b01ab-b5f5-4e4d-9509-7095246f6fe7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/13/2020
+ms.date: 05/06/2020
 monikerRange: 'azure-devops'
 ---
 
-# Manage Conditional Access to Azure DevOps
+# Manage security policies for your organization
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-Secure resources for organizations in Azure DevOps that are backed by an Azure Active Directory (Azure AD) tenant, with Conditional Access. Conditional Access policies (CAPs), like multi-factor authentication, help protect against the risk of compromised credentials and keep your organization data safe. There's also a policy where only devices connected to a corporate network can gain access. Implement requirements and actions for devices in a device management system. A device management system is security software that's used by IT departments to manage devices running various operating systems (OSs), from various locations and networks.
+In this article, learn how to manage your organization security policies in Azure DevOps. You can enable or disable the following security policies.
 
-You can require the following conditions, for example:
-- Security group membership
-- Location and network identity
-- Specific OS
-- Enabled device in a management system
+- **Allow public projects** - Allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. Anonymous access is used to access both private and public repositories. Learn more at [Make your project public](../public/make-project-public.md) and [Enable anonymous access to projects for your organization](../public/create-public-project.md#enable-anonymous-access-to-projects-for-your-organization).
+- **Enterprise access to projects** - All projects that are shared with your Enterprise  become private projects. Those projects are no longer be viewable by all users in your Enterprise.
+- **Enable Azure Active Directory (Azure AD) Conditional Access Policy (CAP) validation** - this policy is set to *off* by default and only applies to alternate credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.
 
-Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.
+   You can require the following conditions, for example:
+    - Security group membership
+    - Location and network identity
+    - Specific operating system
+    - Enabled device in a management system
 
-Azure DevOps enforces the policy for usage of personal access tokens (PATs), alternate authentication, OAuth, and SSH keys. See the following details of how and what we enforce.
+   Depending on which conditions the user satisfies, you can require multi-factor authentication, further checks, or block access.
 
+   For more information, see the REST API reference article, section [API version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+
+Azure DevOps enforces the usage of [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs), [OAuth, and SSH keys](change-application-access-policies.md), and user policies. See the following details of how and what we enforce.
+
+   * [Restrict Azure AD users from creating new organizations](azure-ad-tenant-policy-restrict-org-creation.md)
    * For Web flows, CAP is honored 100%
    * For third-party client flow, like using a PAT with git.exe, we only support IP fencing policies - we don't support MFA policies. See the following examples:
         * Policy 1 - Block all access from outside of IP range x, y, and z.
@@ -42,47 +49,26 @@ Azure DevOps enforces the policy for usage of personal access tokens (PATs), alt
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
 
-For more information, see the REST API reference article, section [API & TFS version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
+## Prerequisites
 
-## Enable Conditional Access policy
+To change a security policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
+[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
-To enforce Conditional Access on your organization, enable the policy in Azure DevOps. This policy is set to *off* by default and only applies to alternate credentials. This policy doesn't apply for CAPs set in Azure AD, no matter the settings in Azure DevOps.
-
-> [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Policies** and from the **dropdown** next to "Enable Azure Active Directory Conditional Access Policy Validation" select **On**.
-
-   ![Select Policies, and then turn On](media/shared/enable-conditional-access-policy-preview.png)
-
-#### [Current page](#tab/current-page)
-
-
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-
-    [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
-
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
-
-   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
-
-3. Select **Policies** and then from the dropdown next to Enable Azure Active Directory Conditional Access Policy Validation, select **On**.
-
-   ![Select policy, and then turn On](media/shared/enable-conditional-access-policy.png)
-
-* * *
+[!INCLUDE [manage-policies](../../includes/manage-policies.md)]
 
 ## Related articles
 
 * [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
 * [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+* 
+
+<!---
+Removed the following, as I don't feel it belongs in this article, but want to save:
+
+Secure resources for organizations in Azure DevOps that are backed by an Azure Active Directory (Azure AD) tenant, with Conditional Access. Conditional Access policies (CAPs), like multi-factor authentication, help protect against the risk of compromised credentials and keep your organization data safe. There's also a policy where only devices connected to a corporate network can gain access, called Enterprise access to projects. Implement requirements and actions for devices in a device management system. A device management system is security software that's used by IT departments to manage devices running various operating systems (OSs), from various locations and networks.
 
 
+
+
+
+-->
