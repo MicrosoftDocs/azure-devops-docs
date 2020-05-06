@@ -6,6 +6,7 @@ ms.technology: devops-agile
 ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE
+ms.custom: contentperfq4
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
 ms.date: 12/03/2019  
@@ -18,11 +19,7 @@ ms.date: 12/03/2019
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links.
 
-::: moniker range="azure-devops"
-> [!NOTE]  
-> If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
-
-::: moniker-end
+[!INCLUDE [temp](../../includes/note-request-feedback.md)]  
 
 In this article you'll learn how to perform the following tasks:  
 
@@ -46,6 +43,11 @@ In this article you'll learn how to perform the following tasks:
 
 For answers to specific questions about the integration of Microsoft Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).
 
+::: moniker range="azure-devops"
+> [!NOTE]  
+> If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
+
+::: moniker-end
 
 ## Prerequisites 
 

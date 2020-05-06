@@ -1046,7 +1046,7 @@ pipelines\tasks\build\media
 <p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
 <p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/" data-raw-source="[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -1922,7 +1922,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="https://docs.microsoft.com/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](https://docs.microsoft.com/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
 <p>Get the information you need to analyze and respond to crashes by getting <a href="https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
