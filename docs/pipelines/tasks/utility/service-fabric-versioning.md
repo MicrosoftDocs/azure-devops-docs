@@ -27,6 +27,8 @@ This task appends a version suffix to all service and app versions,
 specified in the manifest files, in an Azure Service Fabric app package.
 
 > [!NOTE]
+> This task requires Windows PowerShell.
+>
 > This task is not yet available in **release** pipelines.
 
 ## Demands
