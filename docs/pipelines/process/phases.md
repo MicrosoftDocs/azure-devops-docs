@@ -407,7 +407,7 @@ YAML builds are not yet available on TFS.
 To add a new job, select '...' on the pipeline channel in the **Tasks** tab of the pipeline. The conditions and order of execution for a job are displayed when you select the job in the editor.
 
 ::: moniker range="> tfs-2018"
-When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not supported in release pipelines. Multiple jobs in a release pipeline run in sequence.
+When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not supported in release pipelines. Multiple jobs in a release pipeline run in sequence. 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
