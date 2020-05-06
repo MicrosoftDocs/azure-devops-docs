@@ -147,26 +147,26 @@ namespace WeeklyFileIPRanges
 
         static void Main(string[] args)
         {
-            // United States geography has the following regions
-            // Central US, East US 2, East US, North Central US, South Central US, 
-            // West US 2, West Central US, West US
-            List<string> regions = new List<string>
+            // United States geography has the following regions:
+            // Central US, East US 2, East US, North Central US, 
+            // South Central US, West Central US, West US, West US 2
+            List<string> USGeographyRegions = new List<string>
             {
-                "westus",
-                "westus2",
                 "centralus",
                 "eastus",
                 "eastus2",
                 "northcentralus",
                 "southcentralus",
-                "westcentralus"
+                "westcentralus",
+                "westus",
+                "westus2"
             };
 
             // Load the weekly file
             JObject weeklyFile = JObject.Parse(File.ReadAllText(weeklyFilePath));
             JArray values = (JArray)weeklyFile["values"];
 
-            foreach (string region in regions)
+            foreach (string region in USGeographyRegions)
             {
                 string azureCloudRegion = $"AzureCloud.{region}";
                 Console.WriteLine(azureCloudRegion);
