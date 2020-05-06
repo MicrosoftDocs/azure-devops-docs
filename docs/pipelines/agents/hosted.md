@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
-ms.date: 03/26/2020
+ms.date: 05/06/2020
 monikerRange: azure-devops
 ---
 
@@ -103,7 +103,7 @@ layout of the hosted agents is subject to change without warning.
 
 ## Agent IP ranges
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in te weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
@@ -113,7 +113,8 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
 2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
-3. Identify the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file from the `Region` class [source code](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs).
+4. Retrieve the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
 
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
@@ -123,6 +124,36 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 >If your organization is in the **West Europe** region, the capacity fallback geography is **France**.
 >
 >Our Mac IP ranges are not included in the Azure IPs above, though we are investigating options to publish these in the future.
+
+#### Example
+
+In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. In this example the IP addresses are written to the console. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included.
+
+```csharp
+// United States geography has the following regions
+// Central US, East US 2, East US, North Central US, South Central US, 
+// West US 2, West Central US, West US
+string regions = "westus,westus2,centralus,eastus,eastus2,northcentralus,southcentralus,westcentralus";
+
+// Load the weekly file
+JObject weeklyFile = JObject.Parse(File.ReadAllText(weeklyFilePath));
+JArray values = (JArray)weeklyFile["values"];
+
+foreach(string region in regions.Split(','))
+{
+    string azureCloudRegion = $"AzureCloud.{region}";
+    Console.WriteLine(azureCloudRegion);
+    var ipList =
+        from v in values
+        where (string)v["name"] == azureCloudRegion
+        select v["properties"]["addressPrefixes"];
+
+    foreach (var ip in ipList.Children())
+    {
+        Console.WriteLine(ip);
+    }
+}
+```
 
 ### Can I use service tags instead?
 
