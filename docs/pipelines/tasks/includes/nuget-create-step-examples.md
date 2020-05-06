@@ -65,7 +65,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/pipelines/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -81,7 +81,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -96,7 +96,7 @@ See [Create a feed](../../../artifacts/feeds/create-feed.md).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
@@ -127,7 +127,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
+<img src="/azure/devops/pipelines/tasks/build/media/visual-studio-build.png" alt="Build: Visual Studio Build"/>
 
 <br/><strong>Build: Visual Studio Build</strong></td>
 <td>
@@ -143,7 +143,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-packager.png" alt="Package: NuGet Packager"/>
 
 <br/></strong>Package: NuGet Packager<strong></td>
 <td>
@@ -158,7 +158,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <tr>
 <td>
 
-<img src="/azure/devops/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
+<img src="/azure/devops/pipelines/tasks/package/media/nuget-publisher.png" alt="Package: NuGet Publisher"/>
 
 <br/><strong>Package: NuGet Publisher</strong></td>
 <td>
