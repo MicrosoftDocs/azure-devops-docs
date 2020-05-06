@@ -205,7 +205,7 @@
   - name: Queries
     href: /rest/api/azure/devops/wit/queries
   - name: Plans
-    href: /rest/api/vsts/boards/plans 
+    href: /rest/api/azure/devops/work/plans
   - name: Wiql
     href: /rest/api/vsts/wit/wiql 
 - name: Azure DevOps Learn
