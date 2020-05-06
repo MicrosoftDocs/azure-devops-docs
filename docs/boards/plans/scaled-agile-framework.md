@@ -20,16 +20,21 @@ ms.date: 05/01/2020
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework&reg; (SAFe&reg;). 
 
-If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations) from Inbar Oren, the Lean Samurai, are a good way to orient yourself.  
+If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
 ## The Scaled Agile Framework
 
 The SAFe big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
-
 ::: moniker range=">= azure-devops-2019" 
+### Version 4.0 
 
-![SAFe architectural overview &copy; D. Leffing..](media/safe-concepts-poster-v4.0.png) 
+![SAFe architectural overview version 4.6 &copy; D. Leffing..](media/safe-concepts-poster-v4.0.png) 
+
+
+### Version 5.0
+
+![SAFe architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0.png) 
 
 ::: moniker-end
 
@@ -39,44 +44,86 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 ::: moniker-end
 
-Reproduced with permission from &#169; 2011-2016  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
 
+safe-overview-v5.0
+
+
+## SAFe 5.0 
+
+![SAFe overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
+
+Business Agility 
+Enterprise Solution Delivery
+Agile Product Delivery 
+
+### Essential SAFe
+
+Components of Essential SAFe that Azure Boards supports: 
+- Stories, Features, Enablers 
+- Team backlogs
+- Program backlogs
+- Scrum
+- Kanban
+- Iterations: Incremental timeboxes, sprint cadences
+- Agile Release Train 
+- PI Objectives, Team Goals 
+- Solution context 
+
+![Essential SAFe poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
+
+
+### Portfolio 
+
+Components of Portfolio SAFe that Azure Boards supports:  
+- Epics
+- Portfolio Vision
+- Strategic Themes
+- Portfolio backlogs
+- Lean budgets
+- Value Streams
+- KPIs 
 
 
 
-## SAFe
+![Portfolio SAFe poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
 
-Essential SAFe
-Portfolio 
-Large Solution SAFe
-Scale SAFe
-Full SAFe 
+
+### Large Solution SAFe
+
+- Solution backlog
+- Capability 
+- Solution Train 
+
+![Large Solution SAFe poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
+
+
+### Full SAFe 
+
+![Full SAFe poster architectural overview &copy; D. Leffing..](media/safe/full-safe-poster.png) 
 
 
 ## Implementation 
 
-The following articles provide details on how SAFe concepts map to your Agile tools, how to plan and track SAFe projects using your Agile tools, and how to configure and customize Azure Boards to support SAFe.  
+The following articles provide details on how SAFe® concepts map to your Agile tools and how to implement SAFe® using Azure Boards.  
 
 >[!div class="checklist"]  
-> * [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md) 
-> * [How to plan and track SAFe® projects using Azure Boards](safe-plan-track-boards.md) 
-> * [How to configure Azure Boards to support SAFe® practices](safe-configure-boards.md)
-
-<!---
-How to customize Azure Boards to support SAFe® practices
-How to configure team dashboards to view SAFe® metrics
--->
+> * [How SAFe® concepts map to Azure Boards artifacts](safe-concepts.md)  
+> * [Azure reports and SAFe® metrics](safe-metrics.md)  
+> * [Configure Azure Boards to support SAFe®](safe-configure-boards.md )  
+> * [Customize Azure Boards to support SAFe®](safe-customize.md)   
+> * [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
 
 ## Quick reference mapping
 
-
+The following table maps SAFe terms or artifacts to the equivalent Azure Boards term or artifact. Choose the link to learn about implementation details. 
 
 :::row:::
    :::column span="":::
-      **SAFe term or artifact**
+      **SAFe® term or artifact**
    :::column-end:::
    :::column span="3":::
       **Azure Boards term or artifact** 
@@ -88,6 +135,14 @@ How to configure team dashboards to view SAFe® metrics
    :::column-end:::
    :::column span="3":::
       [**Teams**](safe-concepts.md#teams). You define a hierarchy of teams to meet the needs of feature or development teams, program and portfolio teams, or solution train teams. 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Agile Release Train (ART)
+   :::column-end:::
+   :::column span="3":::
+      TBD
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -142,191 +197,145 @@ How to configure team dashboards to view SAFe® metrics
    :::column span="":::
       Iteration 
    :::column-end:::
-   :::column span="":::
-      [Iteration Path](safe-concepts.md#iterations)
-   :::column-end:::
-   :::column span="2":::
-      You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
+   :::column span="3":::
+      [**Iteration Path**](safe-concepts.md#iterations). You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Milestones
    :::column-end:::
-   :::column span="":::
-      TBD
-   :::column-end:::
-   :::column span="2":::
-      TBD 
+   :::column span="3":::
+      TBD.  TBD 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Portfolio Backlog
    :::column-end:::
-   :::column span="":::
-      [Portfolio backlog](safe-concepts.md#backlogs-boards)  
-   :::column-end:::
-   :::column span="2":::
-      A portfolio backlog lists the epics associated with a portfolio with the option to expand and display the child Features and Stories.  
+   :::column span="3":::
+      [**Portfolio backlog**](safe-concepts.md#backlogs-boards). A portfolio backlog lists the epics associated with a portfolio with the option to expand and display the child Features and Stories.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Portfolio Kanban
    :::column-end:::
-   :::column span="":::
-      [Epic Board](safe-concepts.md#backlogs-boards)  
-   :::column-end:::
-   :::column span="2":::
-      The Epics board displays Epics as cards that supports viisualizing and managing the flow of Epics and Features from concept to completion. 
+   :::column span="3":::
+      [**Epic Board**](safe-concepts.md#backlogs-boards). The Epics board displays Epics as cards that supports viisualizing and managing the flow of Epics and Features from concept to completion. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Portfolio Vision 
    :::column-end:::
-   :::column span="":::
-      [Wiki](safe-concepts.md#wiki)  
-   :::column-end:::
-   :::column span="2":::
-      Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams will collaborate to produce portfolio and program deliverables.    
+   :::column span="3":::
+      [**Wiki**](safe-concepts.md#wiki). Use the project wiki to share broadly within the organization information related to strategy, solutions, and how teams will collaborate to produce portfolio and program deliverables.    
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Program Backlog
    :::column-end:::
-   :::column span="":::
-      [Feature backlog](safe-concepts.md#backlogs-boards)  
-   :::column-end:::
-   :::column span="2":::
-      A Feature backlog lists the Features associated with a progream with the option to expand and display the child Stories.  
+   :::column span="3":::
+      [**Feature backlog**](safe-concepts.md#backlogs-boards). A Feature backlog lists the Features associated with a progream with the option to expand and display the child Stories.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Program Kanban
    :::column-end:::
-   :::column span="":::
-      [Features Board](safe-concepts.md#backlogs-boards)  
-   :::column-end:::
-   :::column span="2":::
-      The Features board displays Features as cards that supports viisualizing and managing the flow of Features and Stories from concept to completion.
+   :::column span="3":::
+      [**Features Board**](safe-concepts.md#backlogs-boards). The Features board displays Features as cards that supports viisualizing and managing the flow of Features and Stories from concept to completion.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Program Increment (PI) 
    :::column-end:::
-   :::column span="":::
-      [Iteration Path](safe-concepts.md#iterations)
-   :::column-end:::
-   :::column span="2":::
-      Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks long. 
+   :::column span="3":::
+      [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks long. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Retrospectives and reviews 
    :::column-end:::
-   :::column span="":::
-      [Retrospectives](safe-concepts.md#retrospectives) 
-   :::column-end:::
-   :::column span="2":::
-      Each team can add a board to capture, prioritize, and create action items to support their improvement processes. 
+   :::column span="3":::
+      [Retrospectives](safe-concepts.md#retrospectives). Each team can add a board to capture, prioritize, and create action items to support their improvement processes. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Roadmap
    :::column-end:::
-   :::column span="":::
-      [Delivery Plans, Feature Timeline](safe-concepts.md#roadmap) 
-   :::column-end:::
-   :::column span="2":::
-      TBD 
+   :::column span="3":::
+      [**Delivery Plans, Feature Timeline**](safe-concepts.md#roadmap). Azure Boards provides configurable views to review roadmaps and team deliverables.
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Shared Services
    :::column-end:::
-   :::column span="":::
-      TBD 
-   :::column-end:::
-   :::column span="2":::
-      TBD 
+   :::column span="3":::
+      TBD. TBD 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Solution
    :::column-end:::
-   :::column span="":::
-      TBD 
-   :::column-end:::
-   :::column span="2":::
-      TBD 
+   :::column span="3":::
+      TBD. TBD 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Strategic Themes 
    :::column-end:::
-   :::column span="":::
-      [Wiki](safe-concepts.md#wiki)  
-   :::column-end:::
-   :::column span="2":::
-      Strategic Themes, similar to Portfolio Vision, can be captured in a project wiki.  
+   :::column span="3":::
+      [**Wiki**](safe-concepts.md#wiki). Strategic Themes, similar to Portfolio Vision, can be captured in a project wiki.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Stories
    :::column-end:::
-   :::column span="":::
-      [User Story work item](safe-concepts.md#work-items) 
-   :::column-end:::
-   :::column span="2":::
-      User Stories capture the desired functionality to be delivered and are typically sized so as to be completed with a single iteration.    
+   :::column span="3":::
+      [**User Story work item**](safe-concepts.md#work-items). User Stories capture the desired functionality to be delivered and are typically sized so as to be completed with a single iteration.    
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Team Backlog
    :::column-end:::
-   :::column span="":::
-      [Stories backlog](safe-concepts.md#backlogs-boards)  
-   :::column-end:::
-   :::column span="2":::
-      The Stories backlog lists the User Stories assigned to the area path associated with the team.   
+   :::column span="3":::
+      [**Stories backlog**](safe-concepts.md#backlogs-boards). The Stories backlog lists the User Stories assigned to the area path associated with the team.   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Value Streams
    :::column-end:::
-   :::column span="":::
-      [Tags, Value Area](safe-concepts.md#tags) 
-   :::column-end:::
-   :::column span="2":::
-      You can use tags or the Value Area field to track work associated with a specific budget or value stream. 
+   :::column span="3":::
+      [**Tags, Value Area**](safe-concepts.md#tags). You can use tags or the Value Area field to track work associated with a specific budget or value stream. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Weighted Shortest Job First (WSJF)
    :::column-end:::
-   :::column span="":::
-      [WSJF extension field](safe-customize.md#wsjf)
-   :::column-end:::
-   :::column span="2":::
-      You can add the WSJF calculated field to work items to  compute and store WSJF. 
+   :::column span="3":::
+      [**WSJF extension field**](safe-customize.md#wsjf). You can add the WSJF calculated field to work items to compute and store WSJF. 
    :::column-end:::
 :::row-end:::
 
 
+<!--- 
+Plan, Do, Check Adjust 
+Filtering Kanban boards to view Team deliverables 
+
+--> 
 
 ## Try this next
 
@@ -343,7 +352,7 @@ Resources mentioned earlier in this article and a few more are provided here for
 - SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
-- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai (also viewable from the [Scaled Agile Framework Foundations](http://scaledagileframework.com/foundations/)).
+- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
 - [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
@@ -362,3 +371,30 @@ This article has been updated from the previous white paper developed in collabo
 - Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM Ranger), Richard Hundhausen (independent consultant, ALM Ranger) and Bill Heys (independent consultant, ALM Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM Ranger).  
 
 
+<!---
+Questions for review team: 
+Solutions and SOlution trains? 
+Shared Services 
+Milestones 
+Customer Centric - Set up a public portal for Customers to submit Requests 
+
+Iteration Paths support:
+- Program Increments
+- Release Trains
+- Innovation Program 
+- Continuous delivery in iterations 
+- multiple planning horizons 
+- 
+alignment
+
+Visualize flow everywhere 
+
+Continuous Learning Culture
+
+Many cultural elements 
+
+Maybe a matrix of 
+
+Organize around value 
+
+--> 

@@ -20,7 +20,7 @@
     href: safe-configure-boards.md 
   - name: Customize Azure Boards to support SAFe® 
     href: safe-customize.md 
-  - name: Use Azure Boards to manage SAFe® projects 
+  - name: Plan and track SAFe® programs and portfolios  
     href: safe-plan-track-boards.md 
 - name: Best practices, monitoring, & reports
   items:
