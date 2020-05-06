@@ -5,6 +5,7 @@ description: Key definitions for objects and items used to authenticate and mana
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual 
+ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
