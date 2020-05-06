@@ -167,7 +167,7 @@ If you haven't already, [register with NuGet.org](https://www.nuget.org/).
 <li>Path/Pattern to nupkg: <code>***.nupkg</code></li>
 <li>Feed type: External NuGet Feed</li>
 <li>
-<p>NuGet Server Endpoint: <img src="/azure/devops/tasks/media/endpoint-manage.png" alt="endpoint manage"/></p>
+<p>NuGet Server Endpoint:</p>
 <ol>
 <li>Click &quot;New service connection&quot;, and then click Generic.</li>
 <li><p>On the Add New Generic Connection dialog box:</p>
