@@ -83,7 +83,7 @@ Microsoft-hosted agents:
   * Private project: One free parallel job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month. You can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 * Run on Microsoft Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series)
 * Run as an administrator on Windows and a passwordless sudo user on Linux
-* (Linux only) Run steps in a cgroup that offers 6 GB of physical memory and 13 GB of total memory
+* (Linux only) Run steps in a `cgroup` that offers 6 GB of physical memory and 13 GB of total memory
 
 Microsoft-hosted agents do not offer:
 
@@ -103,7 +103,7 @@ layout of the hosted agents is subject to change without warning.
 
 ## Agent IP ranges
 
-In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in te weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
+In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday (US Pacific time) with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
 Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
@@ -113,8 +113,10 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 1. Identify the [region for your organization](../../organizations/accounts/change-organization-location.md) in **Organization settings**.
 2. Identify the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) for your organization's region.
-3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file from the `Region` class [source code](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs).
-4. Retrieve the IP addresses for all regions in your geography using the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
+3. Map the names of the regions in your geography to the format used in the weekly file, following the format of `AzureCloud.<region>`, such as `AzureCloud.westus`. You can map the names of the regions from the [Azure Geography](https://azure.microsoft.com/global-infrastructure/geographies/) list to the format used in the weekly file by reviewing the [source code for the Region class](https://github.com/Azure/azure-libraries-for-net/blob/master/src/ResourceManagement/ResourceManager/Region.cs) from the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net).
+  > [!NOTE]
+  > At this time there is no API in the [Azure Management Libraries for .NET](https://github.com/Azure/azure-libraries-for-net) to list the regions for a geography, so it must be done manually as shown in the following example.
+1. Retrieve the IP addresses for all regions in your geography from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519). If your region is **Brazil South** or **West Europe**, you must include additional IP ranges based on your fallback geography, as described in the following note.
 
 >[!NOTE]
 >Due to capacity restrictions, some organizations in the **Brazil South** or **West Europe** regions may occasionally see their hosted agents located outside their expected geography. In these cases, in addition to including the IP ranges as described in the previous section, additional IP ranges must be included for the regions in the capacity fallback geography.
@@ -127,30 +129,57 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 #### Example
 
-In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. In this example the IP addresses are written to the console. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included.
+In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included. In this example the IP addresses are written to the console. 
 
 ```csharp
-// United States geography has the following regions
-// Central US, East US 2, East US, North Central US, South Central US, 
-// West US 2, West Central US, West US
-string regions = "westus,westus2,centralus,eastus,eastus2,northcentralus,southcentralus,westcentralus";
+using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
-// Load the weekly file
-JObject weeklyFile = JObject.Parse(File.ReadAllText(weeklyFilePath));
-JArray values = (JArray)weeklyFile["values"];
-
-foreach(string region in regions.Split(','))
+namespace WeeklyFileIPRanges
 {
-    string azureCloudRegion = $"AzureCloud.{region}";
-    Console.WriteLine(azureCloudRegion);
-    var ipList =
-        from v in values
-        where (string)v["name"] == azureCloudRegion
-        select v["properties"]["addressPrefixes"];
-
-    foreach (var ip in ipList.Children())
+    class Program
     {
-        Console.WriteLine(ip);
+        const string weeklyFilePath = @"C:\CSIWorking\TechReviewTools\WeeklyFileIPRanges\ServiceTags_Public_20200504.json";
+
+        static void Main(string[] args)
+        {
+            // United States geography has the following regions
+            // Central US, East US 2, East US, North Central US, South Central US, 
+            // West US 2, West Central US, West US
+            List<string> regions = new List<string>
+            {
+                "westus",
+                "westus2",
+                "centralus",
+                "eastus",
+                "eastus2",
+                "northcentralus",
+                "southcentralus",
+                "westcentralus"
+            };
+
+            // Load the weekly file
+            JObject weeklyFile = JObject.Parse(File.ReadAllText(weeklyFilePath));
+            JArray values = (JArray)weeklyFile["values"];
+
+            foreach (string region in regions)
+            {
+                string azureCloudRegion = $"AzureCloud.{region}";
+                Console.WriteLine(azureCloudRegion);
+                var ipList =
+                    from v in values
+                    where (string)v["name"] == azureCloudRegion
+                    select v["properties"]["addressPrefixes"];
+
+                foreach (var ip in ipList.Children())
+                {
+                    Console.WriteLine(ip);
+                }
+            }
+        }
     }
 }
 ```
