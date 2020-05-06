@@ -89,4 +89,7 @@ See [this simple cmdline application](https://github.com/Microsoft/azure-pipelin
  
 In addition, a C# helper library is available to enable live logging and managing task status for agentless tasks. [Learn more](https://blogs.msdn.microsoft.com/aseemb/2017/12/18/async-http-agentless-task/) 
  
- 
+
+### Can I use the response body as the input for another task?
+
+No, as this task is an agentless task and uses TFS's internal HttpRequest, which doesn't return the content of the HTTP request.
