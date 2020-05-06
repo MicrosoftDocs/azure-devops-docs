@@ -60,7 +60,7 @@ To change a security policy, you need at least Basic access and organization Own
 
 * [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
 * [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
-* 
+* [Change application connection policies](change-application-access-policies.md)
 
 <!---
 Removed the following, as I don't feel it belongs in this article, but want to save:
