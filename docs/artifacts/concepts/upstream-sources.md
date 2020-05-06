@@ -129,7 +129,11 @@ If you must push a package-version that already exists on one of your upstream s
 
 When you configure an upstream source and begin to query it through your feed, the feed will keep a cache of the metadata that you queried (most often, the package you asked for and its available versions) for 24 hours. There is a 3-6 hour delay between when a package is pushed to an upstream source and when it is available for download by your feed. This depends on job timing and package data propagation.
 
-If a feed has failing upstream sources, the metadata no longer gets refreshed for packages that belong to the same protocol as the failing upstream source. You can see the health of the upstream source in the [upstream settings](link), and if the upstream source is failing, by clicking open the dialog you can see the reason for the failure and instructions on how to solve the failure.
+<a name="upstream-health-status"></a>
+
+### Upstream health
+
+If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. You can see the health status of the upstream source by navigating to feed settings > upstream settings in the Artifacts UI. If there are any failing upstream sources, the Artifacts UI shows a warning message to notify that issues have been detected and manual action may be needed. Upstream setting page will show which one of the upstream sources is failing and by clicking the failing source, users can find the reason for the failure and instructions on how to solve it.
 
 <a name="offline-upstreams"></a>
 
