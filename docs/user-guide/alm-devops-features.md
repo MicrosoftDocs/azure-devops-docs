@@ -1922,7 +1922,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="https://docs.microsoft.com/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](https://docs.microsoft.com/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
 <p>Get the information you need to analyze and respond to crashes by getting <a href="https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
