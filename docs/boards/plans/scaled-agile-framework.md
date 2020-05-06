@@ -78,88 +78,64 @@ How to configure team dashboards to view SAFe® metrics
    :::column span="":::
       **SAFe term or artifact**
    :::column-end:::
-   :::column span="":::
+   :::column span="3":::
       **Azure Boards term or artifact** 
-   :::column-end:::
-   :::column span="2":::
-      **Notes**
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Agile teams
    :::column-end:::
-   :::column span="":::
-      [Teams](safe-concepts.md#teams)
-   :::column-end:::
-   :::column span="2":::
-      You define a hierarchy of teams to meet the needs of feature or development teams, program and portfolio teams, or solution train teams. 
+   :::column span="3":::
+      [**Teams**](safe-concepts.md#teams). You define a hierarchy of teams to meet the needs of feature or development teams, program and portfolio teams, or solution train teams. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Budgets
    :::column-end:::
-   :::column span="":::
-      [Tags, Value Area](safe-concepts.md#tags) 
-   :::column-end:::
-   :::column span="2":::
-      You can use tags or the *Value Area* field to track work associated with a specific budget or value stream. 
+   :::column span="3":::
+      [**Tags, Value Area**](safe-concepts.md#tags). You can use tags or the *Value Area* field to track work associated with a specific budget or value stream. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Capabilities
    :::column-end:::
-   :::column span="":::
-      [Work item](safe-concepts.md#work-items)  
-   :::column-end:::
-   :::column span="2":::
-      You define, plan, and track Capabilities similar to Epics, Features, and Stories. You capture them in work items and within various team backlogs. 
+   :::column span="3":::
+      [**Work item**](safe-concepts.md#work-items). You define, plan, and track Capabilities similar to Epics, Features, and Stories. You capture them in work items and within various team backlogs. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Enablers
    :::column-end:::
-   :::column span="":::
-      [Work item](safe-concepts.md#work-items)  
-   :::column-end:::
-   :::column span="2":::
-      You define, plan, and track Enablers similar to Epics, Features, and Stories. You capture them in work items and within various team backlogs. 
+   :::column span="3":::
+      [**Work item**](safe-concepts.md#work-items). You define, plan, and track Enablers similar to Epics, Features, and Stories. You capture them in work items and within various team backlogs. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Epics
    :::column-end:::
-   :::column span="":::
-      [Epic work item](safe-concepts.md#work-items)  
-   :::column-end:::
-   :::column span="2":::
-      You define an Epic using the Epic work item type. Epics are at the top of the work item hierarchy of Epics, Features, and Stories.   
+   :::column span="3":::
+      [**Epic work item**](safe-concepts.md#work-items). You define an Epic using the Epic work item type. Epics are at the top of the work item hierarchy of Epics, Features, and Stories.   
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Features
    :::column-end:::
-   :::column span="":::
-      [Feature work item](safe-concepts.md#work-items) 
-   :::column-end:::
-   :::column span="2":::
-      You define a Feature using the Feature work item type. Features are a container for a number of Stories and are represented in their own portfolio backlog.  
+   :::column span="3":::
+      [**Feature work item**](safe-concepts.md#work-items). You define a Feature using the Feature work item type. Features are a container for a number of Stories and are represented in their own portfolio backlog.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
       Innovation and Planning (IP) Iteration 
    :::column-end:::
-   :::column span="":::
-      [Iteration Path](safe-concepts.md#iterations)
-   :::column-end:::
-   :::column span="2":::
-      You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with.   
+   :::column span="3":::
+      [**Iteration Path**](safe-concepts.md#iterations). You define Iteration Paths for a project and set their start and end dates. Each team subscribes to the iterations they work with. 
    :::column-end:::
 :::row-end:::
 :::row:::
