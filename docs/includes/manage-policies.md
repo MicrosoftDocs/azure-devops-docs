@@ -8,7 +8,7 @@ ms.topic: include
 Complete the following steps to change application connection, security, and user policies for your organization in Azure DevOps. 
 
 > [!NOTE]   
-> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the New user hub, see [Enable preview features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
