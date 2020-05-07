@@ -23,17 +23,17 @@ If you're interested in using SAFe, you can configure projects created with the 
 This article illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
 
 >[!div class="checklist"]  
-> * SAFe&reg; roles and a team hierarchical structure  
-> * SAFe&reg; Agile, program, and portfolio teams  
-> * SAFe&reg; deliverables such as epics, features, and stories  
-> * SAFe&reg; Product, program, and portfolio views  
-> * SAFe&reg; Release trains, sprints, and other timeboxes  
-> * SAFe&reg; Iteration goals and objectives 
-> * SAFe&reg; Value streams and budgets  
-> * SAFe&reg; Portfolio Vision and Strategic Themes
-> * SAFe&reg; Roadmaps
-> * SAFe&reg; Milestones and events
-> * SAFe&reg; Retrospectives and reviews
+> * SAFe® roles and a team hierarchical structure  
+> * SAFe® Agile, program, and portfolio teams  
+> * SAFe® deliverables such as epics, features, and stories  
+> * SAFe® Product, program, and portfolio views  
+> * SAFe® Release trains, sprints, and other timeboxes  
+> * SAFe® Iteration goals and objectives 
+> * SAFe® Value streams and budgets  
+> * SAFe® Portfolio Vision and Strategic Themes
+> * SAFe® Roadmaps
+> * SAFe® Milestones and events
+> * SAFe® Retrospectives and reviews
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 

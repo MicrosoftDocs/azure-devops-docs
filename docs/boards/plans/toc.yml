@@ -16,11 +16,11 @@
     href: safe-concepts.md
   - name: SAFe® metrics & Azure reports
     href: safe-metrics.md
-  - name: Configure Azure Boards to support SAFe®
+  - name: Configure Azure Boards
     href: safe-configure-boards.md 
-  - name: Customize Azure Boards to support SAFe® 
+  - name: Customize Azure Boards
     href: safe-customize.md 
-  - name: Plan and track SAFe® programs and portfolios  
+  - name: Manage SAFe® programs and portfolios  
     href: safe-plan-track-boards.md 
 - name: Best practices, monitoring, & reports
   items:

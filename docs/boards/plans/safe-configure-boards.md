@@ -17,18 +17,21 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Configuration of Azure Boards to support your SAFe programs and portfolios requires performing the following tasks: 
+This article walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
-> - Define your feature, program, and portfolio teams  
-> - Configure your hierarchy of Area Paths to support your teams  
-> - Define your Iteration Paths to support your release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
-> - Configure each team's area paths, iteration paths, and team members 
+> - Define Agile feature, program, and portfolio teams  
+> - Configure a hierarchy of Area Paths to support your teams  
+> - Define Iteration Paths to support SAFe® release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
+> - Configure each team to support SAFe® 
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. 
 
 Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
+
+> [!TIP]   
+> If you plan to add custom work item types or custom portfolio backlogs, you may want to make those customizations first and then define and configure your teams. 
 
 ## Team hierarchy 
 
@@ -42,7 +45,7 @@ In this article, we'll go from having one project, named "Fabrikam" and one team
 We'll then configure the area path to the following hierarchy and configuring each team's area path. This configuration supports each team's backlog view and rollup of views within the hierarchy.  
 
 > [!div class="mx-imgBorder"]  
-> ![Area path and team configuration](media/safe-configure/team-area-path-mapping.png)
+> ![Area path and team configuration](media/safe-configure/area-path-structure-corrected.png)
 > 
 ::: moniker-end
 
@@ -186,6 +189,9 @@ To support your team hierarchy, you'll now configure the area paths created in t
 
 3. When finished, your area path structure should appear similar to that shown in the following image.  
 
+	> [!IMPORTANT]  
+	> This structure shows that area paths are owned by Agile feature teams, program teams, and the portfolio team. We'll correct this structure later in this article when we configure each team to be the sole owner of its area path.   
+
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
 
@@ -280,125 +286,143 @@ These are the recommended settings to make based on the team level.
 
 :::row:::
    :::column span="":::
-      Team level
+     ** Configure**
    :::column-end:::
    :::column span="":::
-      General
+      **Agile feature team**
    :::column-end:::
    :::column span="":::
-      Iterations
+      **Program team**
    :::column-end:::
+   :::column span="":::
+      **Profile team**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Backlog navigation levels
+   :::column-end:::
+   :::column span="":::
+      Features, Stories  
+   :::column-end:::
+   :::column span="":::
+      Features, Stories  
+   :::column-end:::
+   :::column span="":::
+      Epics
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Default Iteration
+   :::column-end:::
+   :::column span=""::: 
+      @CurrentIteration 
+   :::column-end:::
+   :::column span=""::: 
+      @CurrentIteration 
+   :::column-end:::
+   :::column span="":::
+      @CurrentIteration  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Backlog Iteration
+   :::column-end:::
+   :::column span=""::: 
+      Fabrikam\PI 1 
+   :::column-end:::
+   :::column span=""::: 
+      Fabrikam 
+   :::column-end:::
+   :::column span="":::
+      Fabrikam 
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+      Selected iterations 
+   :::column-end:::
+   :::column span="":::
+      Sprint 1 thru SPrint 4, IP Sprint
+   :::column-end:::
+   :::column span="":::
+      PI 1, PI 2, PI 3
+   :::column-end:::
+   :::column span="":::
+      None
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="":::
       Areas
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="":::
-      Agile Feature teams 
+      Include sub-areas
    :::column-end:::
    :::column span="":::
-      Uncheck Epics  
-      Choose Bugs are managed with requirements
-   :::column-end:::
-   :::column span="":::
-      Default Iteration=@CurrentIteration  
-      Backlog iteration=Fabrikam\PI 1  
-      Select iterations: Sprint 1 thru SPrint 4, IP Sprint
-   :::column-end:::
-   :::column span="":::
-      Exclude sub-areas  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Program teams 
-   :::column-end:::
-   :::column span="":::
-      Uncheck Epics  
-      Choose Bugs are not managed on backlogs or boards
-   :::column-end:::
-   :::column span="":::
-      Default Iteration=@CurrentIteration  
-      Backlog iteration=Fabrikam  
-      Select iterations: PI 1, PI 2, PI 3
+      Exclude sub-areas
    :::column-end:::
    :::column span="":::
       Exclude sub-areas
    :::column-end:::
 :::row-end:::
-:::row:::
-   :::column span="":::
-      Portfolio teams 
-   :::column-end:::
-   :::column span="":::
-      Uncheck Features and Stories  
-      Choose Bugs are not managed on backlogs or boards
-   :::column-end:::
-   :::column span="":::
-      Backlog iteration=Fabrikam  
-      Default Iteration=Fabrikam  
-      Select iterations: none
-   :::column-end:::
-   :::column span="":::
-      Exclude sub-areas
-   :::column-end:::
-:::row-end:::
-
-
 
 1. From the **Project Settings** page, choose **Team configuration**.  
 
 	Choose the team you want to configure from the Team selector. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, choose Iterations and areas link](media/configure-safe/team-configuration.png)
+	> ![Team profile, choose Iterations and areas link](media/safe-configure/team-configuration.png)
 
 1. On the **General** page, uncheck backlogs you don't want to be active. 
 
 	For example, for the Portfolio team, only check the **Epics** checkbox. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Backlog navigation levels, Epics only](media/configure-safe/backlog-navigation-levels-epics-only.png)
+	> ![Team configuration, General, Backlog navigation levels, Epics only](media/safe-configure/backlog-navigation-levels-epics-only.png)
 
 	For program and Agile feature teams, uncheck the **Epics** checkbox. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Backlog navigation levels, Features and Stories](media/configure-safe/backlog-navigation-levels.png)
+	> ![Team configuration, General, Backlog navigation levels, Features and Stories](media/safe-configure/backlog-navigation-levels.png)
 
 1. For program and portfolio teams, choose the **Working with bugs** radio button as shown. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Working with bugs, don't track](media/configure-safe/working-with-bugs-none.png)
+	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-none.png)
 
 	And, for Agile feature teams, choose the  **Working with bugs** option to track bugs along with requirements.  
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, General, Working with bugs, don't track](media/configure-safe/working-with-bugs-requirements.png)
+	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
 
 1. Choose the **Iterations** tab to configure the team's iterations. 
 
 	For Agile feature teams, configure the settings as shown. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Iterations, select sprints](media/configure-safe/iterations-feature-teams.png)
+	> ![Team configuration, Iterations, select sprints](media/safe-configure/iterations-feature-teams.png)
 
 	For program teams, choose only the PI iterations. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Iterations, select PIs](media/configure-safe/iterations-program-teams.png)
+	> ![Team configuration, Iterations, select PIs](media/safe-configure/iterations-program-teams.png)
 
 1. For program and profile teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
 
 	Open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Exclude sub areas**.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Areas, Exclude sub areas](media/configure-safe/exclude-sub-areas.png) 
+	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png) 
 
 1. To verify the Area Path structure, choose Project configuration and Areas. The Area Path and team structure should now appear as shown, where each team owns their Area Path and doesn't share it with any other team. 
 
 
 	> [!div class="mx-imgBorder"]
-	> ![Project configuration, Areas](media/configure-safe/area-path-structure-corrected.png) 
+	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
 
 
 ::: moniker-end
@@ -489,74 +513,6 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 	![Overview page, Portfolio team members](media/safe-overview-portfolio-team-members.png)
 
 ::: moniker-end
-
-## Update the Area Path for existing work items
-
-For any existing work items to show up on a team's backlog, you must update the Area path of each work item to the team's default area path. You can use the bulk edit feature from your web browser or you can use Excel.  
-
-1. Create a query that contains the work items you want to edit, select the ones you want to edit, and then open the context menu from any one of the selected items.  
-
-	![Query results context menu](media/safe-bulk-modify-area-paths.png)   
-
-2. Select the area path that corresponds to the team's default area path.  
-
-	![Edit work items](media/safe-bulk-modify-area-paths-edit-dialog.png)   
-
-3.  Bulk save all work items that you modified.
-
-	![Bulk save edited work items](media/safe-bulk-modify-area-paths-bulk-save.png)  
-
-	For more info on bulk modifying work items, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md).
-
-## Add epics and map epics to features
-
-You add epics in the same way you add user stories and features. From the Portfolio team's backlog page for epics, add an epic backlog item.
-
-![Epic backlog, add an epic using quick add panel](media/safe-add-epics.png)   
-
-Add as many epics as you need. Drag them to reorder them and have them listed in their order of importance.
-
-![Epic backlog, reorder items](media/safe-reorder-epics.png)   
-
-The default Business Value for epics is Business, but you can change this to Architectural by opening the form.  
-
-![Epic work item form](media/safe-epic-form.png)  
-
-You can also add tags to your epics, to help you track the investment themes each epic supports.  
-
-![Epic work item form, add tags](media/safe-add-tags-to-epic.png)
-
-Now view your epics on the Kanban board. To get this view, you need to [customize the Kanban columns to rename and add intermediate workflow states](../boards/add-columns.md). For a description of these states&mdash;Funnel, Review, Analysis, Portfolio Backlog, and Implementing (not shown)&mdash;see [Business Epic Kanban Abstract](http://scaledagileframework.com/business-epic-kanban/).
-
-![Epic kanban board with custom columns](media/safe-kanban-custom-columns.png)
-
-However, this is not very interesting yet. Nothing is in progress, and you can't drill down to see which features support your epics. You'll want to map existing features to the epics you just created, and map user stories to those features, if they're not already mapped.  
-
-## Map multiple items if you've an existing backlog 
-
-Mapping work items is easy using the mapping pane. First, turn on the mapping pane from the features or stories backlog page. Here, we choose the Fiber Suite team and turn on both the mapping pane and the view to see the hierarchy of features mapped to epics.
-
-![Map features to epics](media/safe-map-features-to-epics.png)
-
-Note that if you've already changed the area path of all your features to the appropriate program-level team, the features list will be empty, because the Portfolio team does not own any features! In that case, switch to one of the program teams.  
-
-Drag items from the backlog onto the item you want to associate as a parent. Keep in mind that you can only map features to epics. Similarly, you can only map the third level of backlog item (whether that is user story, backlog item, or requirement) to features. 
-
-Repeat this process at each backlog level until you've created the hierarchy you want. 
-
-![Epics-to-stories view](media/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
-
-What about features already in progress? They definitely won't appear on the Portfolio team's backlog. They are the responsibility of the program teams, so they appear on that team's backlog. (This is actually a function of the area path set for the work item; a work item will only appear on a team's backlog if you assign it to the area path you created for that team.) You can map them from there.  
-
-You can also [bulk edit work items and manage their hierarchy in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
-
-Since an important aspect of SAFe is to map work to business or architecture goals, you'll want to make sure to set the Value Area=Architectural for any feature mapped to an architecture epic. (Because the default choice is Business, you don't have to change the field for any item that supports a business epic.) You can also add tags to track the investment.  
-
-The same principles apply to user stories in progress. You can map them to features, change the requirement type to Architecture for work that you do to support architectural epics, and add tags for tracking themes.  
-
-![User Story work item form](media/safe-user-story-new-form.png)  
-
-
 
 ## Related articles
 
