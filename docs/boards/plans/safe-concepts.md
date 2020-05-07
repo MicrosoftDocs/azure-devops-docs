@@ -45,7 +45,7 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 <a id="roles" />
 
-## SAFe® roles
+## SAFe® roles  
 
 Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
 
