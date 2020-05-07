@@ -1,7 +1,7 @@
 ---
 title: .NET Framework
 description: Build ASP.NET apps with .NET Framework in Azure Pipelines
-ms.topic: quickstart
+ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
 ms.date: 04/15/2020
