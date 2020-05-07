@@ -152,7 +152,7 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings > Work > Project configuration**.
 
