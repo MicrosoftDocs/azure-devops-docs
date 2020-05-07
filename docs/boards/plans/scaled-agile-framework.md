@@ -52,7 +52,7 @@ SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.]
 safe-overview-v5.0
 
 
-## SAFe 5.0 
+## SAFe&reg; 5.0 
 
 ![SAFe overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
 
@@ -60,48 +60,48 @@ Business Agility
 Enterprise Solution Delivery
 Agile Product Delivery 
 
-### Essential SAFe
+### Essential SAFe&reg;
 
-Components of Essential SAFe that Azure Boards supports: 
-- Stories, Features, Enablers 
-- Team backlogs
-- Program backlogs
-- Scrum
-- Kanban
-- Iterations: Incremental timeboxes, sprint cadences
-- Agile Release Train 
-- PI Objectives, Team Goals 
-- Solution context 
+Essential SAFe&reg; requires support for the following artifacts and practices. All of these are supported by Azure Boards.  
+ 
+- **Stories, Features**, and **Enablers**: Implemented as work items which capture information and status of work to track 
+- **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs which filter work items assigned to a team and support prioritizing and grouping of work.  
+- **Scrum** and **Kanban**: These practices are fully supporting using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
+- **Iterations**, **Innovation and Planning (IP) Iteration**, **Program Increments (PI)**, **Milestones**, and **Release Trains**: Implemented via a flat-list or a hierarchical configuration of Iteration Paths. 
+- **Agile Release Train**: Implemented by a set of Agile teams and Program teams configured to support specific team and program views. 
+- **PI Objectives**, **Team Goals**: Teams can use the built-in project wiki to share their objectives and goals. 
+- **Solution context**: TBD. 
 
 ![Essential SAFe poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
 
 
 ### Portfolio 
 
-Components of Portfolio SAFe that Azure Boards supports:  
-- Epics
-- Portfolio Vision
-- Strategic Themes
-- Portfolio backlogs
-- Lean budgets
-- Value Streams
-- KPIs 
-
-
+Components of Portfolio SAFe&reg; that Azure Boards supports includes the following:
+  
+- **Epics**: Map to the Epic work item type and allow tracking, grouping, and rollup of child items. 
+- **Portfolio backlogs**: Implemented as a portfolio backlog that supports filtering of work based on review of business needs.  .   
+- **Portfolio Vision** and **Strategic Themes**: Business owners and portfolio managers can use the built-in project wiki to share their vision, objectives and goals. 
+- **Lean budgets**: TBD. 
+- **Value Streams**: TBD. 
+- **KPIs**: TBD. 
 
 ![Portfolio SAFe poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
 
 
 ### Large Solution SAFe
 
+With large solutions, SAFe&reg; identifies these additional artifacts for tracking solutions and capabilities. 
 - Solution backlog
-- Capability 
+- Capabilities 
 - Solution Train 
 
 ![Large Solution SAFe poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
 
 
 ### Full SAFe 
+
+Full SAFe&reg; 
 
 ![Full SAFe poster architectural overview &copy; D. Leffing..](media/safe/full-safe-poster.png) 
 
@@ -139,10 +139,10 @@ The following table maps SAFe terms or artifacts to the equivalent Azure Boards 
 :::row-end:::
 :::row:::
    :::column span="":::
-      Agile Release Train (ART)
+      Agile Release Train (ART) 
    :::column-end:::
    :::column span="3":::
-      TBD
+       [**Teams**](safe-concepts.md#teams). Agile teams manage the work of deliverables for a set of features. Each Agile team has a set of Agile tools to support the flow of work and review progress and deliverables. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -206,7 +206,7 @@ The following table maps SAFe terms or artifacts to the equivalent Azure Boards 
       Milestones
    :::column-end:::
    :::column span="3":::
-      TBD.  TBD 
+      [**Milesones and key events**](safe-concepts.md#milestones). Milestones can be configured as a one day event or a work item which acts as a successor to a number of work item deliverables.  (Sanity check on this) 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -262,7 +262,7 @@ The following table maps SAFe terms or artifacts to the equivalent Azure Boards 
       Retrospectives and reviews 
    :::column-end:::
    :::column span="3":::
-      [Retrospectives](safe-concepts.md#retrospectives). Each team can add a board to capture, prioritize, and create action items to support their improvement processes. 
+      [**Retrospectives**](safe-concepts.md#retrospectives). Each team can add a board to capture, prioritize, and create action items to support their improvement processes. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -287,6 +287,14 @@ The following table maps SAFe terms or artifacts to the equivalent Azure Boards 
    :::column-end:::
    :::column span="3":::
       TBD. TBD 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Solution Backlog
+   :::column-end:::
+   :::column span="3":::
+      [**Portfolio backlog**](safe-concepts.md#backlogs-boards). TBD. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -373,7 +381,7 @@ This article has been updated from the previous white paper developed in collabo
 
 <!---
 Questions for review team: 
-Solutions and SOlution trains? 
+Solutions and Solution trains? 
 Shared Services 
 Milestones 
 Customer Centric - Set up a public portal for Customers to submit Requests 
@@ -398,3 +406,8 @@ Maybe a matrix of
 Organize around value 
 
 --> 
+
+
+## Related articles
+
+- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)

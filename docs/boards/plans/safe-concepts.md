@@ -218,7 +218,9 @@ What are the Azure Board tools they use, when, how
 <!--- To be provided --> 
 
 
+<a id="milestones" />
 
+## Milestones and key events 
 
 <a id="retrospectives" />
 

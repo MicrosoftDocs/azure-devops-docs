@@ -42,6 +42,7 @@ In this article, we illustrate some of the out-of-the-box charts and widgets tha
 ### Feature and Epic progress reports  
 
 Need to develop a report using Analytics view and Power BI. Want something to approximate the following: 
+**Replace with an Azure DevOps report**
 
 > [!div class="mx-imgBorder"]  
 > ![SAFe Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
@@ -111,9 +112,14 @@ By assigning Story Points to each User Story, a team can determine how much work
 
 <a id="misc-artifacts" />
 
-## Iteration goals, managing dependencies, and other ... 
+## Iteration goals and objectives 
 
-Use Team dashboards to capture Iteration Goals. 
+Use the Project wiki or Team dashboards to capture Iteration goals. and objectives. 
+Use the Kanban board - Definition of Done - to align team members around updating the status of work.  
+
+## Manage dependencies
+
+Best ways to manage dependencies, what flows into what? 
 
 
 ## Try this next
