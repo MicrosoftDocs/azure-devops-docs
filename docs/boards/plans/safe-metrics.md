@@ -33,8 +33,8 @@ In this article, we illustrate some of the out-of-the-box charts and widgets tha
 > - Progress reports
 > - Cumulative Flod Diagram 
 > - Lead time and cycle time charts
-> - Velocity 
-> - Forecast 
+> - Iteration planning, team velocity, and forecast
+
 
 
 ## Progress reports 
@@ -94,7 +94,7 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 Team velocity is often used as an input to support iteration or sprint planning.  
 
-## Team velocity  
+### Team velocity  
 
 Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the example below, the chart also provides the average velocity calculated for the number of iterations shown. 
 
@@ -103,23 +103,13 @@ Each team has access to their velocity through the in-context velocity report. T
 
 This average can be used to forecast work by plugging it into the forecast tool. 
 
-## Forecast tool 
+### Forecast tool 
 
 By assigning Story Points to each User Story, a team can determine how much work they can complete using the Forecast tool. For details on its usage, see [Forecast your product backlog](../sprints/forecast.md).
 
 > [!div class="mx-imgBorder"]  
 > ![Forecast tool](../sprints/media/forecast-s125.png)
 
-<a id="misc-artifacts" />
-
-## Iteration goals and objectives 
-
-Use the Project wiki or Team dashboards to capture Iteration goals. and objectives. 
-Use the Kanban board - Definition of Done - to align team members around updating the status of work.  
-
-## Manage dependencies
-
-Best ways to manage dependencies, what flows into what? 
 
 
 ## Try this next

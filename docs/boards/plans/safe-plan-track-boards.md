@@ -116,6 +116,11 @@ For everything else, it is very much business as usual for individual feature te
 However, now their progress on individual stories is visible to their program and portfolio management teams. The management view reflects what they do.
   
 
+## Manage dependencies
+
+Best ways to manage dependencies, what flows into what? 
+
+
 ## Related articles
 
 <!--- To be provided --> 

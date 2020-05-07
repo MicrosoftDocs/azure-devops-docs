@@ -51,6 +51,7 @@ We'll then configure the area path to the following hierarchy and configuring ea
 In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
 
 ![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
+
 ::: moniker-end
 
 
@@ -80,7 +81,7 @@ Add each team, one by one
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Open Project settings, and then Teams](../../organizations/settings/media/shared/open-project-settings-teams-preview.png)
+	> ![Open Project settings, and then Teams](media/safe-configure/open-project-settings-teams.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
 
@@ -89,23 +90,17 @@ Add each team, one by one
 	> [!div class="mx-imgBorder"]
 	> ![Create a subteam with its own area path](media/safe-configure/add-team.png)
 
-3. Repeat step 2 for each team you need to add. 
+	Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
-> [!TIP]   
-> If you have a large number of teams, you may want to use the [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) command line tool. Or, you can also use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
-
+	> [!TIP]   
+	> If you have a large number of teams, you may want to use the [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) command line tool. Or, you can also use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
 ::: moniker-end
-
-
 ::: moniker range="azure-devops-2019"
-
-> [!TIP]   
-> If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
-
+	> [!TIP]   
+	> If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -178,7 +173,7 @@ To support your team hierarchy, you'll now configure the area paths created in t
 	> [!div class="mx-imgBorder"]
 	> ![Flat list of area paths](media/safe-configure/choose-edit-area-path.png)
 
-3. Change the **Location** to *Fiber Suite*, it's parent program area path.  
+3. Change the **Location** to *Fiber Suite*, it's parent program area path. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Flat list of area paths](media/safe-configure/edit-area-dialog.png)
@@ -187,8 +182,23 @@ To support your team hierarchy, you'll now configure the area paths created in t
 
 3. Repeat steps 2 and 3 for the remaining feature team area paths. 
 
+	If you have defined two or more portfolio teams, you'll need to change the move each program team's area path under their corresponding portfolio team's area path. 
+
+3. When finished, your area path structure should appear similar to that shown in the following image.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
+
 ::: moniker-end
 
+::: moniker range="azure-devops"
+	> [!TIP]   
+	> If you have a large number of area paths to add, you may want to use the [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+	> [!TIP]   
+	> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -216,8 +226,33 @@ If you already have iterations for your default team, you can rename them. You'l
 
 1. From the **Project Settings** page, choose **Project configuration** and then **Iterations**.  
 
+1. Under the default iteration, which shares the same name as the project, create a child iteration that will represent your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration will be broken down further into sprints.
+
+	> [!div class="mx-imgBorder"]
+	> ![Hierarchical area path](media/safe-configure/define-pi1-iteration.png) 
+
+2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your feature teams' cadences.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Iterations page, create IP Sprint iteration](media/safe-configure/define-sprint1-iteration.png)
+
+3. Continue to add as many iterations as needed to meet the timebox cadence structure for all your teams. 
+
+	When finished, you should have a structure similar to the following image. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Iterations page, list of iterations](media/safe-configure/list-iterations.png)
+
 ::: moniker-end
 
+::: moniker range="azure-devops"
+	> [!TIP]   
+	> If you have a large number of iteration paths to add, you may want to use the [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
+::: moniker-end
+::: moniker range="azure-devops-2019"
+	> [!TIP]   
+	> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
+::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -419,12 +454,11 @@ The same principles apply to user stories in progress. You can map them to featu
 > [Customize Azure Boards to support SAFe&reg; ](safe-customize.md)
 
 
-## Try this next
-
-> [!div class="nextstepaction"]
-> [Customize Azure Boards to support SAFe&reg; ](safe-customize.md)
-
 
 ## Related articles
 
-<!--- To be provided --> 
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)  

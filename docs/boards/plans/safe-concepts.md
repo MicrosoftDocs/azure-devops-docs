@@ -23,11 +23,17 @@ If you're interested in using SAFe, you can configure projects created with the 
 This article illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
 
 >[!div class="checklist"]  
-> * SAFe&reg; roles and a team hierarchical structure
-> * SAFe&reg; deliverables 
-> * SAFe&reg; product, program, and portfolio views
-> * SAFe&reg; timeboxes, release trains, and sprints 
-> * SAFe&reg; events and milestones 
+> * SAFe&reg; roles and a team hierarchical structure  
+> * SAFe&reg; Agile, program, and portfolio teams  
+> * SAFe&reg; deliverables such as epics, features, and stories  
+> * SAFe&reg; Product, program, and portfolio views  
+> * SAFe&reg; Release trains, sprints, and other timeboxes  
+> * SAFe&reg; Iteration goals and objectives 
+> * SAFe&reg; Value streams and budgets  
+> * SAFe&reg; Portfolio Vision and Strategic Themes
+> * SAFe&reg; Roadmaps
+> * SAFe&reg; Milestones and events
+> * SAFe&reg; Retrospectives and reviews
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 
@@ -35,9 +41,28 @@ The following image illustrates how you can configure Azure Boards to support a 
 
 Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
+
+
+<a id="roles" />
+
+## SAFe® roles
+
+Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
+
+
+SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+
+SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
+
+
+What are the Azure Board tools they use, when, how
+<!--- To be provided --> 
+
+
+
 <a id="teams" />
  
-## SAFe&reg; roles and Agile teams, program and portfolio teams 
+## Agile teams, program and portfolio teams 
 
 Because your Agile tools support a hierarchical team structure, each team has its own view of their work which rolls up to the next level within the team hierarchy.  
 
@@ -129,6 +154,14 @@ Because epics can span several release trains, the Portfolio team isn't associat
 ![Teams track deliverables using iterations](media/safe-teams-track-deliverables.png)   
 
 ::: moniker-end
+
+
+<a id="misc-artifacts" />
+
+## Iteration goals and objectives 
+
+Use the Project wiki or Team dashboards to capture Iteration goals. and objectives. 
+Use the Kanban board - Definition of Done - to align team members around updating the status of work.  
  
 <a id="tags" />
 
@@ -173,17 +206,6 @@ For a more robust mapping of work to architecture or business features, you can 
 ::: moniker-end
 
 
-<a id="roadmap" />
-
-## SAFe&reg; roadmap can be viewed via Delivery Plans and Feature Timeline extensions 
-
-<!--- To be provided --> 
-
-### Near term PI roadmap
-
-### Solution Train roadmap 
-
-
 
 <a id="wiki" />
 
@@ -202,20 +224,18 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 ::: moniker-end
 
 
-<a id="roles" />
 
-## Role mapping
+<a id="roadmap" />
 
-Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
+## SAFe&reg; Roadmaps  
 
+SAFe&reg; roadmaps can be viewed via Delivery Plans and Feature Timeline extensions 
 
-SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
-
-SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
-
-
-What are the Azure Board tools they use, when, how
 <!--- To be provided --> 
+
+### Near term PI roadmap
+
+### Solution Train roadmap 
 
 
 <a id="milestones" />
@@ -250,4 +270,6 @@ This extension allows teams to create their own retrospecive boards and capture 
 
 ## Related articles
 
-<!--- To be provided --> 
+- [Agile culture](agile-culture.md)  
+- [Practices that scale](practices-that-scale.md)  
+- [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
