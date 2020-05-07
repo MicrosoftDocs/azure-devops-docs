@@ -39,7 +39,7 @@ An unauthenticated user of a project. The user is visiting a project and has not
 
 ## Audit log
 
-Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. To learn more, see [Access, export, and filter audit logs](../settings/azure-devops-auditing.md).
+Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. To learn more, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
 
 ::: moniker-end
 
