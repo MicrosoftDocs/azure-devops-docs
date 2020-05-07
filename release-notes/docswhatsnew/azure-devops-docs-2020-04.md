@@ -71,7 +71,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Environment Resource Type "appService" #7971](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7971)
 - [System.PullRequest.SourceBranch example should have refs/heads/ prefix #7970](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7970)
 - [Broken image #7928](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7928)
-- [documentation: '**/ deletes all files and folders in the root folder.' should be '**/*' #7921](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7921)
+- [documentation: `**/ deletes all files and folders in the root folder.` should be `**/*` #7921](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7921)
 - [Cannot access mseng ADO org link #7902](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7902)
 - [Azure Pipeline Task Inovke Azure Function Misleading #7896](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7896)
 - [Options for TFVC CI triggers are not mentioned #7890](https://github.com/MicrosoftDocs/azure-devops-docs/issues/7890)
