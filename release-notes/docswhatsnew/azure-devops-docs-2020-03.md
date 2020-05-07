@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for March 2020"
 description: "What's new in Azure DevOps docs for March 2020."
-ms.date: 05/01/2020
+ms.date: 05/07/2020
 author: steved0x
 ms.author: sdanie
 ---
@@ -48,7 +48,7 @@ Welcome to what's new in Azure DevOps docs for March 2020. This article lists so
 ### Updated articles
 
 - [Template types & usage](/azure/devops/pipelines/process/templates) - Adding monikers to template article
-- [Universal Package task](/azure/devops/pipelines/tasks/package/universal-packages) - Fixes Github issue 6793
+- [Universal Package task](/azure/devops/pipelines/tasks/package/universal-packages) - Fixes GitHub issue 6793
 
 ## Report
 

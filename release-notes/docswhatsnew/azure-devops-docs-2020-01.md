@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for January 2020"
 description: "What's new in Azure DevOps docs for January 2020."
-ms.date: 05/01/2020
+ms.date: 05/07/2020
 author: steved0x
 ms.author: sdanie
 ---
@@ -60,8 +60,8 @@ Welcome to what's new in Azure DevOps docs for January 2020. This article lists 
 - [Jenkins Queue Job task](/azure/devops/pipelines/tasks/build/jenkins-queue-job) - jenkins-queue-job task doc update
 - [Maven task](/azure/devops/pipelines/tasks/build/maven) - Maven task doc update
 - [Visual Studio Build task](/azure/devops/pipelines/tasks/build/visual-studio-build) - vsbuild task doc update
-- [Xamarin.Android task](/azure/devops/pipelines/tasks/build/xamarin-android) - xamarin.android task doc update
-- [Xcode task](/azure/devops/pipelines/tasks/build/xcode) - xcode task doc update
+- [Xamarin.Android task](/azure/devops/pipelines/tasks/build/xamarin-android) - Xamarin.Android task doc update
+- [Xcode task](/azure/devops/pipelines/tasks/build/xcode) - Xcode task doc update
 - [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest) - Edit pass: Kubernetes manifest
 - [YAML schema reference](/azure/devops/pipelines/yaml-schema) - edit pass: Yaml schema
 
