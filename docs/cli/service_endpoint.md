@@ -41,6 +41,9 @@ In interactive mode this command will ask for service principal password/secret 
 ```bash
 export AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
 ```
+```powershell
+$env:AZURE_DEVOPS_EXT_AZURE_RM_SERVICE_PRINCIPAL_KEY=<your_secret_here>
+```
 
 ### Using client certificate
 
