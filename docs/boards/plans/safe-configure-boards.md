@@ -26,6 +26,7 @@ Configuration of Azure Boards to support your SAFe programs and portfolios requi
 > - Configure each team's area paths, iteration paths, and team members 
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
+If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. 
 
 Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
 
@@ -93,14 +94,13 @@ Add each team, one by one
 	Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
 ::: moniker-end
-
 ::: moniker range="azure-devops"
-	> [!TIP]   
-	> If you have a large number of teams, you may want to use the [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) command line tool. Or, you can also use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
+> [!TIP]   
+> If you have a large number of teams, you may want to use the [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) command line tool. Or, you can also use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-	> [!TIP]   
-	> If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
+> [!TIP]   
+> If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -192,12 +192,12 @@ To support your team hierarchy, you'll now configure the area paths created in t
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-	> [!TIP]   
-	> If you have a large number of area paths to add, you may want to use the [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
+> [!TIP]   
+> If you have a large number of area paths to add, you may want to use the [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-	> [!TIP]   
-	> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
+> [!TIP]   
+> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -246,12 +246,12 @@ If you already have iterations for your default team, you can rename them. You'l
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-	> [!TIP]   
-	> If you have a large number of iteration paths to add, you may want to use the [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
+> [!TIP]   
+> If you have a large number of iteration paths to add, you may want to use the [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
 ::: moniker-end
 ::: moniker range="azure-devops-2019"
-	> [!TIP]   
-	> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
+> [!TIP]   
+> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -270,23 +270,136 @@ If you already have iterations for your default team, you can rename them. You'l
 "
 ## Configure your teams 
 
-3. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+Now that your teams, Area Paths, and Iteration Paths are defined, the next step is to configure each team. You'll want to configure the following settings for each team. 
+- Active backlogs
+- Working with bugs  
+- Set default Iteration Path
+- Select team Iteration Paths 
+
+These are the recommended settings to make based on the team level.
+
+:::row:::
+   :::column span="":::
+      Team level
+   :::column-end:::
+   :::column span="":::
+      General
+   :::column-end:::
+   :::column span="":::
+      Iterations
+   :::column-end:::
+   :::column span="":::
+      Areas
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Agile Feature teams 
+   :::column-end:::
+   :::column span="":::
+      Uncheck Epics  
+      Choose Bugs are managed with requirements
+   :::column-end:::
+   :::column span="":::
+      Default Iteration=@CurrentIteration  
+      Backlog iteration=Fabrikam\PI 1  
+      Select iterations: Sprint 1 thru SPrint 4, IP Sprint
+   :::column-end:::
+   :::column span="":::
+      Exclude sub-areas  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Program teams 
+   :::column-end:::
+   :::column span="":::
+      Uncheck Epics  
+      Choose Bugs are not managed on backlogs or boards
+   :::column-end:::
+   :::column span="":::
+      Default Iteration=@CurrentIteration  
+      Backlog iteration=Fabrikam  
+      Select iterations: PI 1, PI 2, PI 3
+   :::column-end:::
+   :::column span="":::
+      Exclude sub-areas
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Portfolio teams 
+   :::column-end:::
+   :::column span="":::
+      Uncheck Features and Stories  
+      Choose Bugs are not managed on backlogs or boards
+   :::column-end:::
+   :::column span="":::
+      Backlog iteration=Fabrikam  
+      Default Iteration=Fabrikam  
+      Select iterations: none
+   :::column-end:::
+   :::column span="":::
+      Exclude sub-areas
+   :::column-end:::
+:::row-end:::
+
+
+
+1. From the **Project Settings** page, choose **Team configuration**.  
+
+	Choose the team you want to configure from the Team selector. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, choose Iterations and areas link](../../organizations/settings/media/add-team/team-profile-choose-iterations-and-areas.png)
+	> ![Team profile, choose Iterations and areas link](media/configure-safe/team-configuration.png)
 
-	> [!IMPORTANT]  
-	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](../../organizations/settings/set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
+1. On the **General** page, uncheck backlogs you don't want to be active. 
 
-	From the team profile, you can do these additional tasks:  
-   - [Add team administrators](../../organizations/settings/add-team-administrator.md)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+	For example, for the Portfolio team, only check the **Epics** checkbox. 
 
-To configure other team features, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, General, Backlog navigation levels, Epics only](media/configure-safe/backlog-navigation-levels-epics-only.png)
+
+	For program and Agile feature teams, uncheck the **Epics** checkbox. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, General, Backlog navigation levels, Features and Stories](media/configure-safe/backlog-navigation-levels.png)
+
+1. For program and portfolio teams, choose the **Working with bugs** radio button as shown. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, General, Working with bugs, don't track](media/configure-safe/working-with-bugs-none.png)
+
+	And, for Agile feature teams, choose the  **Working with bugs** option to track bugs along with requirements.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, General, Working with bugs, don't track](media/configure-safe/working-with-bugs-requirements.png)
+
+1. Choose the **Iterations** tab to configure the team's iterations. 
+
+	For Agile feature teams, configure the settings as shown. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, Iterations, select sprints](media/configure-safe/iterations-feature-teams.png)
+
+	For program teams, choose only the PI iterations. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, Iterations, select PIs](media/configure-safe/iterations-program-teams.png)
+
+1. For program and profile teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
+
+	Open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Exclude sub areas**.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Team configuration, Areas, Exclude sub areas](media/configure-safe/exclude-sub-areas.png) 
+
+1. To verify the Area Path structure, choose Project configuration and Areas. The Area Path and team structure should now appear as shown, where each team owns their Area Path and doesn't share it with any other team. 
 
 
-### Track bugs as requirements or tasks? 
+	> [!div class="mx-imgBorder"]
+	> ![Project configuration, Areas](media/configure-safe/area-path-structure-corrected.png) 
+
 
 ::: moniker-end
 
@@ -303,10 +416,7 @@ This structure maps the following SAFe teams to your Agile tools' teams:
   If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. 
-
-### Track bugs as requirements or tasks? 
-
-
+ 
 
 ### Create and configure each Program team
 
@@ -448,13 +558,6 @@ The same principles apply to user stories in progress. You can map them to featu
 
 
 
-## Try this next
-
-> [!div class="nextstepaction"]
-> [Customize Azure Boards to support SAFe&reg; ](safe-customize.md)
-
-
-
 ## Related articles
 
 - [Add teams](../../organizations/settings/add-teams.md)
@@ -462,3 +565,18 @@ The same principles apply to user stories in progress. You can map them to featu
 - [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)  
+
+
+<!---
+
+
+	From the team profile, you can do these additional tasks:  
+   - [Add team administrators](../../organizations/settings/add-team-administrator.md)
+   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+
+To configure other team features, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+
+
+
+-->
