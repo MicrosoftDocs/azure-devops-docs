@@ -216,7 +216,7 @@ No. After you set up a required branch policy, you can't directly push changes t
 
 #### What is auto-complete?
 
-When you  make a pull request into a branch with branch policies configured, it enables the **Set auto-complete** button for the pull request. Use this option to [automatically complete](pull-requests.md#complete-the-pull-request) if you don't expect any problems with your changes. Your pull request finished once it meets all policies.
+When you  make a pull request into a branch with branch policies configured, it enables the **Set auto-complete** button for the pull request. Use this option to [automatically complete](pull-requests.md#complete-the-pull-request) if you don't expect any problems with your changes. Your pull request finished once it meets all optional and required policies.
 
 <a name="how_works"></a>
 
