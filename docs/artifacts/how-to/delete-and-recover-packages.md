@@ -4,7 +4,7 @@ description: Recover deleted packages and set up policies to automatically delet
 ms.technology: devops-artifacts
 ms.assetid: 10f5e81f-2518-41b9-92b6-e00c905b59b3
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 05/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -165,6 +165,9 @@ Over time, the number of versions for each package being hosted in Azure Artifac
 With retention policies, you can set the **maximum number of versions** to retain per package, once that number is hit the oldest version of the package will be deleted. You can also set the number of **days to keep recently downloaded packages**. Packages will only be deleted by retention policies if they have not been downloaded within the number of days set.
 
 If you'd like to retain a package version indefinitely, you can promote it to a [view](../concepts/views.md). Versions that are promoted to views are exempt from retention policies, and are retained *in addition to* those retained by the maximum number of versions retention policy. Retention policies will not delete any version that has been promoted to a view.
+
+> [!NOTE]
+> Package demotion is not currently supported. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html). See [Get started with feed views](../feeds/views.md#get-started-with-feed-views) for more information.
 
 To configure retention policies:
 

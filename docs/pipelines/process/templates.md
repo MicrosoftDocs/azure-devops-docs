@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 04/23/2020
+ms.date: 05/05/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -489,6 +489,10 @@ You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
 in an expression.
 
+> [!NOTE]
+> Expressions are only expanded for `stages`, `jobs`, and `steps`.
+> You cannot, for example, use an expression inside a `resource` or `trigger`.
+
 For example, you define a template:
 
 ```yaml
@@ -825,7 +829,7 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
-- No more than 50 separate YAML files may be included (directly or indirectly)
+- No more than 100 separate YAML files may be included (directly or indirectly)
 - No more than 10 megabytes of total YAML content can be included
 - No more than 2000 characters per template expression are allowed
 ::: moniker-end
@@ -1321,4 +1325,13 @@ jobs:
 ### Escaping
 
 If you need to escape a value that literally contains `${{`, then wrap the value in an expression string. For example `${{ 'my${{value' }}` or `${{ 'my${{value with a '' single quote too' }}`
+
+## Limits
+
+Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
+To help prevent runaway growth, Azure Pipelines imposes the following limits:
+- No more than 50 separate YAML files may be included (directly or indirectly)
+- No more than 10 megabytes of total YAML content can be included
+- No more than 2000 characters per template expression are allowed
+
 ::: moniker-end

@@ -2,7 +2,7 @@
 title: Using work items to track user stories, & more
 titleSuffix: Azure Boards and TFS
 description: Understand how to use work items to plan, track, & collaborate with others when developing software apps in Azure Boards & TFS 
-ms.custom: work-items, seodec18
+ms.custom: work-items, seodec18, contentperfq4
 ms.technology: devops-agile
 ms.assetid:  
 ms.author: kaelli
@@ -17,6 +17,8 @@ ms.date: 01/10/2020
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. Work items are similar to GitHub issues, but offer different types to track different types of information.
+
+[!INCLUDE [temp](../includes/note-request-feedback.md)]
 
 If you're just getting started, read the information provided in this article. To jump right in and start tracking work on a Kanban board, see [Plan and track work](../get-started/plan-track-work.md). For a quick reference to various work item tasks and key concepts, see [Work item quick reference](quick-ref.md).
 
