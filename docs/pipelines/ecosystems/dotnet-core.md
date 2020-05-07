@@ -1,7 +1,7 @@
 ---
 title: Build, test, and deploy .NET Core apps
 description: Automatically build .NET Core apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.topic: quickstart
+ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 10/17/2019
