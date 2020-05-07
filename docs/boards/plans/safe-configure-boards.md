@@ -106,7 +106,9 @@ Add each team, one by one
 > [!TIP]   
 > If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
 
-ok, than
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
 
 ### Create and configure each Program team
 
@@ -229,25 +231,24 @@ If you already have iterations for your default team, you can rename them. You'l
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019
+::: moniker range=">= azure-devops-2019"  
 "
 ## Configure your teams 
 
-3. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](set-area-paths.md) and [Define iteration paths (also known as sprints) and configure team iterations](set-iteration-paths-sprints.md). 
+3. Select the team to configure it. To select the set of sprints and area paths the team plans to use, choose **Iterations and areas** See [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md) and [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 	> [!div class="mx-imgBorder"]
-	> ![Team profile, choose Iterations and areas link](media/add-team/team-profile-choose-iterations-and-areas.png)
+	> ![Team profile, choose Iterations and areas link](../../organizations/settings/media/add-team/team-profile-choose-iterations-and-areas.png)
 
 	> [!IMPORTANT]  
-	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
+	> Team tools aren't available until the team's default area path is set. If you haven't created one or more Area Paths for the team to use, then [do that now](../../organizations/settings/set-area-paths.md). Area Paths must be created for the project first, then assigned to the team. 
 
 	From the team profile, you can do these additional tasks:  
-   - [Add team administrators](add-team-administrator.md)
-   - [Add team members](#add-team-members)
+   - [Add team administrators](../../organizations/settings/add-team-administrator.md)
    - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
    - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
 
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+To configure other team features, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
 
 
 ### Track bugs as requirements or tasks? 
@@ -342,6 +343,7 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 
 	![Overview page, Portfolio team members](media/safe-overview-portfolio-team-members.png)
 
+::: moniker-end
 
 ## Update the Area Path for existing work items
 
