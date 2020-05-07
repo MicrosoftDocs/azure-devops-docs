@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for February 2020"
 description: "What's new in Azure DevOps docs for February 2020."
-ms.date: 05/01/2020
+ms.date: 05/07/2020
 author: steved0x
 ms.author: sdanie
 ---
