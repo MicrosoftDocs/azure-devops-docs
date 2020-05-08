@@ -1,10 +1,10 @@
 ---
 title: Define variables
-ms.custom: seodec18
+ms.custom: seodec18, contentperfq4
 description: Variables are name-value pairs defined by you for use in a pipeline. You can use variables as inputs to tasks and in your scripts.
 ms.topic: conceptual
 ms.assetid: 4751564b-aa99-41a0-97e9-3ef0c0fce32a
-ms.date: 02/27/2020
+ms.date: 05/05/2020
 
 monikerRange: '>= tfs-2015'
 ---
@@ -59,6 +59,10 @@ User-defined variables can consist of letters, numbers, `.`, and `_` characters.
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
 Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
+
+> [!NOTE]
+> Variables are only expanded for `stages`, `jobs`, and `steps`.
+> You cannot, for example, use macro syntax inside a `resource` or `trigger`.
 
 You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
 
