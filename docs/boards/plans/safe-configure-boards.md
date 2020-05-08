@@ -13,17 +13,17 @@ ms.date: 05/01/2020
 ---
 
 
-# Configure Azure Boards to support SAFe&reg;  
+# Configure Azure Boards to support SAFe®
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 This article walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
-> - Define Agile feature, program, and portfolio teams  
-> - Configure a hierarchy of Area Paths to support your teams  
-> - Define Iteration Paths to support SAFe® release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
-> - Configure each team to support SAFe® 
+> * Define Agile feature, program, and portfolio teams  
+> * Configure a hierarchy of Area Paths to support your teams  
+> * Define Iteration Paths to support SAFe® release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
+> * Configure each team to support SAFe® 
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
 If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. 
@@ -31,7 +31,7 @@ If you're new to Azure Boards, we recommend that you review [About teams and Agi
 Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
 
 > [!TIP]   
-> If you plan to add custom work item types or custom portfolio backlogs, you may want to make those customizations first and then define and configure your teams. 
+> If you plan to add custom work item types, portfolio backlogs, or workflows; you may want to make those customizations first and then define and configure your teams. 
 
 ## Team hierarchy 
 
@@ -46,7 +46,10 @@ We'll then configure the area path to the following hierarchy and configuring ea
 
 > [!div class="mx-imgBorder"]  
 > ![Area path and team configuration](media/safe-configure/area-path-structure-corrected.png)
-> 
+
+> [!TIP]    
+> If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#programmatic-tools) provided later in this article. 
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018" 
@@ -57,7 +60,6 @@ In this article, we'll go from having one project, named "Fabrikam" and one team
 ![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
 
 ::: moniker-end
-
 
 Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
 
@@ -77,7 +79,7 @@ To start, we'll simply add each team, creating a default area path for each. Lat
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
-Add each team, one by one
+Add each team, one by one.
 
 > [!NOTE]   
 > The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -87,24 +89,26 @@ Add each team, one by one
 	> [!div class="mx-imgBorder"]
 	> ![Open Project settings, and then Teams](media/safe-configure/open-project-settings-teams.png)
 
-2. Choose **New team**. Give the team a name, and optionally a description. 
+1. Choose **New team**. 
 
-	Here we add the App team. Choose the team administrator and ensure the **Create an area path with the name of the team** checkbox is checked. Optionally add team members.  
+	> [!div class="mx-imgBorder"]
+	> ![Create a subteam with its own area path](media/safe-configure/new-team.png)
+
+1. Give the team a name, and optionally a description. 
+
+	Here we add the *App* team. Choose the team administrator and ensure the **Create an area path with the name of the team** checkbox is checked. Optionally add team members.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Create a subteam with its own area path](media/safe-configure/add-team.png)
 
-	Optional. If you have two or more Portfolio teams, create a team for each of them.   
+	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. This allows them to configure the team tools to support their business needs. 
+
+1. Repeat steps 2 and 3 to define all teams.  
+
+1. Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
 ::: moniker-end
-::: moniker range="azure-devops"
-> [!TIP]   
-> If you have a large number of teams, you may want to use the [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) command line tool. Or, you can also use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
-::: moniker-end
-::: moniker range="azure-devops-2019"
-> [!TIP]   
-> If you have a large number of teams, you may want to use the [Teams (REST API)](/rest/api/azure/devops/core/teams). 
-::: moniker-end
+
 
 ::: moniker range="<= tfs-2018"
 
@@ -197,14 +201,6 @@ To support your team hierarchy, you'll now configure the area paths created in t
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-> [!TIP]   
-> If you have a large number of area paths to add, you may want to use the [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
-::: moniker-end
-::: moniker range="azure-devops-2019"
-> [!TIP]   
-> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
-::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -251,14 +247,6 @@ If you already have iterations for your default team, you can rename them. You'l
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-> [!TIP]   
-> If you have a large number of iteration paths to add, you may want to use the [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) command line tool. Or, you can also use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes).  
-::: moniker-end
-::: moniker range="azure-devops-2019"
-> [!TIP]   
-> If you have a large number of iteration paths to add, you may want to use the [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes). 
-::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
@@ -284,9 +272,10 @@ Now that your teams, Area Paths, and Iteration Paths are defined, the next step 
 
 These are the recommended settings to make based on the team level.
 
+***
 :::row:::
    :::column span="":::
-     ** Configure**
+     **Configure**
    :::column-end:::
    :::column span="":::
       **Agile feature team**
@@ -295,7 +284,7 @@ These are the recommended settings to make based on the team level.
       **Program team**
    :::column-end:::
    :::column span="":::
-      **Profile team**
+      **Portfolio team**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -310,6 +299,20 @@ These are the recommended settings to make based on the team level.
    :::column-end:::
    :::column span="":::
       Epics
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Working with bugs
+   :::column-end:::
+   :::column span=""::: 
+      Bugs are managed with requirements
+   :::column-end:::
+   :::column span=""::: 
+      Bugs are not managed on backlogs and boards
+   :::column-end:::
+   :::column span="":::
+      Bugs are not managed on backlogs and boards 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -340,13 +343,12 @@ These are the recommended settings to make based on the team level.
       Fabrikam 
    :::column-end:::
 :::row-end:::
-
 :::row:::
    :::column span="":::
       Selected iterations 
    :::column-end:::
    :::column span="":::
-      Sprint 1 thru SPrint 4, IP Sprint
+      Sprint 1 thru Sprint 4, IP Sprint
    :::column-end:::
    :::column span="":::
       PI 1, PI 2, PI 3
@@ -369,6 +371,8 @@ These are the recommended settings to make based on the team level.
       Exclude sub-areas
    :::column-end:::
 :::row-end:::
+
+***
 
 1. From the **Project Settings** page, choose **Team configuration**.  
 
@@ -411,15 +415,16 @@ These are the recommended settings to make based on the team level.
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, Iterations, select PIs](media/safe-configure/iterations-program-teams.png)
 
-1. For program and profile teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
+1. For program and portfolio teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
 
 	Open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Exclude sub areas**.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png) 
 
-1. To verify the Area Path structure, choose Project configuration and Areas. The Area Path and team structure should now appear as shown, where each team owns their Area Path and doesn't share it with any other team. 
+1. Repeat steps 2 through 5 as needed for each team you need to configure. 
 
+1. After you've completed step 5 for all teams, verify the Area Path-Team structure. Choose **Project configuration** and **Areas**. The Area Path and team structure should now appear as shown, where each team owns their Area Path and doesn't share it with any other team. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
@@ -513,6 +518,40 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 	![Overview page, Portfolio team members](media/safe-overview-portfolio-team-members.png)
 
 ::: moniker-end
+
+<a id=programmatic-tools" /> 
+
+::: moniker range="azure-devops"
+
+## Command line and programmatic tools
+
+You can use Azure DevOps command line tools to add or update the following artifacts:
+
+- **Teams**: [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) 
+- **Area Paths**: [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area)
+- **Iteration Paths**: [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+## Programmatic tools
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+You can use Azure DevOps REST APIs to add or update the following artifacts:
+
+- **Teams**: [Teams (REST API)](/rest/api/azure/devops/core/teams)  
+- **Area Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- **Iteration Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) 
+
+::: moniker-end
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Customize Azure Boards to support SAFe®](safe-customize.md)  
+
 
 ## Related articles
 

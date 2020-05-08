@@ -1,7 +1,7 @@
 ---
-title: Scaled Agile Framework
+title: Scaled Agile Framework®
 titleSuffix: Azure Boards
-description: How to implement the Scaled Agile Framework to support epics, release trains, and multiple backlogs in Azure Boards, Azure DevOps, & Team Foundation Server 
+description: How to implement the Scaled Agile Framework® to support epics, release trains, and multiple backlogs in Azure Boards 
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid: C8E9CFD2-F08A-4FB8-AC53-B9B6B49A22A3
@@ -20,19 +20,14 @@ ms.date: 05/01/2020
 
 As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework&reg; (SAFe&reg;). 
 
-If you're familiar with Scrum but not familiar with SAFe, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
+If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
-## The Scaled Agile Framework
+## The Scaled Agile Framework®
 
-The SAFe big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
+The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
 ::: moniker range=">= azure-devops-2019" 
-### Version 4.0 
-
-![SAFe architectural overview version 4.6 &copy; D. Leffing..](media/safe-concepts-poster-v4.0.png) 
-
-
-### Version 5.0
+### Version 5.0 
 
 ![SAFe architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0.png) 
 
@@ -42,28 +37,34 @@ The SAFe big picture addresses how a portfolio vision is met by a hierarchy of t
 
 ![SAFe architectural overview &copy; D. Leffing..](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 
+### SAFe® 5.0 
+
+![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
+
+Business Agility 
+Enterprise Solution Delivery
+Agile Product Delivery 
+
 ::: moniker-end
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
+### SAFe® 5.0 Business Agility 
 
-safe-overview-v5.0
+![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
 
+Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer centric. 
 
-## SAFe&reg; 5.0 
+## Essential SAFe®
 
-![SAFe overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
+Essential SAFe&reg; requires support for the artifacts and practices illustrated in the following poster. 
 
-Business Agility 
-Enterprise Solution Delivery
-Agile Product Delivery 
-
-### Essential SAFe&reg;
-
-Essential SAFe&reg; requires support for the following artifacts and practices. All of these are supported by Azure Boards.  
+![Essential SAFe poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
  
+All of these artifacts and practices are supported by Azure Boards. 
+
 - **Stories, Features**, and **Enablers**: Implemented as work items which capture information and status of work to track 
 - **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs which filter work items assigned to a team and support prioritizing and grouping of work.  
 - **Scrum** and **Kanban**: These practices are fully supporting using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
@@ -72,13 +73,15 @@ Essential SAFe&reg; requires support for the following artifacts and practices. 
 - **PI Objectives**, **Team Goals**: Teams can use the built-in project wiki to share their objectives and goals. 
 - **Solution context**: TBD. 
 
-![Essential SAFe poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
 
+## Portfolio SAFe®
 
-### Portfolio 
+Portfolio SAFe® adds support for managing portfolios through epics, enablers, and value streams.  
 
-Components of Portfolio SAFe&reg; that Azure Boards supports includes the following:
-  
+![Portfolio SAFe poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
+
+Azure Boards provides supports for portfolio components includes the following:
+
 - **Epics**: Map to the Epic work item type and allow tracking, grouping, and rollup of child items. 
 - **Portfolio backlogs**: Implemented as a portfolio backlog that supports filtering of work based on review of business needs.  .   
 - **Portfolio Vision** and **Strategic Themes**: Business owners and portfolio managers can use the built-in project wiki to share their vision, objectives and goals. 
@@ -86,10 +89,7 @@ Components of Portfolio SAFe&reg; that Azure Boards supports includes the follow
 - **Value Streams**: TBD. 
 - **KPIs**: TBD. 
 
-![Portfolio SAFe poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
-
-
-### Large Solution SAFe
+## Large Solution SAFe®
 
 With large solutions, SAFe&reg; identifies these additional artifacts for tracking solutions and capabilities. 
 - Solution backlog
@@ -99,14 +99,14 @@ With large solutions, SAFe&reg; identifies these additional artifacts for tracki
 ![Large Solution SAFe poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
 
 
-### Full SAFe 
+### Full SAFe® 
 
-Full SAFe&reg; 
+Full SAFe® includes the three levels of Essential SAFe®, Large Solution SAFe®, and Portfolio SAFe®. 
 
 ![Full SAFe poster architectural overview &copy; D. Leffing..](media/safe/full-safe-poster.png) 
 
 
-## Implementation 
+## Azure Boards implementation of SAFe®
 
 The following articles provide details on how SAFe® concepts map to your Agile tools and how to implement SAFe® using Azure Boards.  
 
