@@ -1,16 +1,16 @@
 ---
-title: Release variables and debugging
+title: Release and artifacts variables
 ms.custom: seodec18
 description: Understand release variables in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 05/08/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Release variables and debugging
+# Release and artifacts variables
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
