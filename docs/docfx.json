@@ -121,7 +121,8 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "sdanie"
+        "pipelines/test/**": "sdanie",
+        "service-hooks/**": "aaronha"
 
       },
       "author": {
