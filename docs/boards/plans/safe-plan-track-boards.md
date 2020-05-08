@@ -29,8 +29,63 @@ This article walks you through some of the basic tools you'll use to plan and tr
 > - Review program features
 > - Review portfolio epics 
 
-## Define epics, features, and stories
+> [!TIP]    
+> If you have a number of Epics, Features, or Stories already defined, you can bulk import them using a CSV file or through Excel. Also, you can use these tools to update a number of fields to existing work items. To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
+
+## Define the Portfolio 
+
+Portfolio teams can perform the following tasks as indicated. 
+
+### Document Portfolio Vision and Strategic Themes  
+
+Capture and share the Portfolio Vision and Strategic Themes using the project wiki. Consider defining and sharing the following information: 
+- How to use tags or custom fields to specify value streams 
+-  
+
+### Define and prioritize Epics
+
+1. Open the Fabrikam team's Epics portfolio backlog and choose **New Work Item**. 
+	Enter the title of the Epic and choose **Add at selection**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Portfolio backlog, Add Epics](media/safe-plan-track/add-epic.png)
+
+2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
+
+	When finished, you should have a list of Epics as shown: 
+
+	> [!div class="mx-imgBorder"]
+	> ![Portfolio backlog, List Epics](media/safe-plan-track/define-portfolio.png)
+
+3. As needed, you can drag and drop Epics within the list to reflect their priority. 
+
+
+## Define Programs 
+
+In a similar fashion to portfolio teams, program teams work from their Features backlog and define the features that support the Epics they are tasked with delivering. 
+
+Each program manager defines and prioritizes their features. Here, we show the Fiber Suite team add Features. 
+
+1. Open the Fiber Suite team's Features backlog and choose **New Work Item**. 
+
+	Enter the title of the Feature and choose **Add at selection**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Feature backlog, Add Features](media/safe-plan-track/add-feature.png)
+
+2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
+
+	When finished, you should have a list of Features as shown: 
+
+	> [!div class="mx-imgBorder"]
+	> ![Feature backlog, List Features](media/safe-plan-track/define-features.png)
+
+3. As needed, you can drag and drop Features within the list to reflect their priority. 
+
+4. In this next step you'll map each Feature to it's parent Epic. 
+
+	turn-on-mapping
 
 ## Map features to epics, and stories to features
 
@@ -189,6 +244,13 @@ The same principles apply to user stories in progress. You can map them to featu
 ## Manage dependencies
 
 Best ways to manage dependencies, what flows into what? 
+
+
+<a id="bulk-update" />
+
+## Bulk add or update work items 
+
+To be completed 
 
 
 ## Related articles
