@@ -17,11 +17,7 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-Most of the customizations outlined in this article are optional. 
-
-The main reason to customize your process is to support monitoring or reporting additional metrics. 
-
-However, you may want to consider the following customizations based on your business needs 
+The main reason to customize your process is to support monitoring or reporting additional metrics. Most of the customizations outlined in this article are optional. 
 
 In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe practices.  
 
@@ -31,8 +27,6 @@ In this article you'll learn about select process customizations you can make an
 > * Customize the workflow 
 > * Add custom rules
 > * Add custom fields 
-
-
 
 <!--- 
 :::row:::
@@ -86,8 +80,10 @@ You may want to customize the workflow so that it matches your workflow process.
 
 ## Customize fields  
 
-Customize pick lists
+Customize pick lists - Value Area 
+Custom field - Milestone // Releases 
 
+Customer Centric - fields to capture customer requests 
 
 
 <a id="wsjf" />
@@ -107,14 +103,18 @@ Four values are used to calculate WSJF:
 - Risk Reduction | Opportunity Enablement Value
 - Job Size
 
-![Work item form automatically updates with changes to field values](media/safe/AutoCalcWSJF.gif) 
+
+![Work item form automatically updates with changes to field values](media/safe/AutoCalcWSJF.gif)  
 
 For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
 
 
 ## Custom rules
 
+Typically you add rules to work item types for the following reasons: 
 
+- You want to make a field required 
+- 
 
 ::: moniker range="tfs-2013"
 
@@ -136,7 +136,10 @@ If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templ
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
 
 
+## Try this next
 
+> [!div class="nextstepaction"]
+> [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
 
 
 

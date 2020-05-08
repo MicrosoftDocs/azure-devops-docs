@@ -30,10 +30,10 @@ This article illustrates how the following SAFe artifacts map to specific Azure 
 > * SAFe® Release trains, sprints, and other timeboxes  
 > * SAFe® Iteration goals and objectives 
 > * SAFe® Value streams and budgets  
-> * SAFe® Portfolio Vision and Strategic Themes
-> * SAFe® Roadmaps
-> * SAFe® Milestones and events
-> * SAFe® Retrospectives and reviews
+> * SAFe® Portfolio Vision and Strategic Themes  
+> * SAFe® Roadmaps  
+> * SAFe® Milestones and events  
+> * SAFe® Retrospectives and reviews  
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 
@@ -227,7 +227,7 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 
 <a id="roadmap" />
 
-## SAFe&reg; Roadmaps  
+## Roadmaps  
 
 SAFe&reg; roadmaps can be viewed via Delivery Plans and Feature Timeline extensions 
 
