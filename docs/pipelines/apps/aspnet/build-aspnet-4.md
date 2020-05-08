@@ -1,6 +1,6 @@
 ---
 title: .NET Framework
-description: Build ASP.NET apps with .NET Framework in Azure Pipelines
+description: Use .NET Framework to build ASP.NET apps in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
