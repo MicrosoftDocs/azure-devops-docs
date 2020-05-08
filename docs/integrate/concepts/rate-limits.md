@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 6CBE3B3E-ABFF-4F66-8168-DB5D772E9DDB  
 ms.author: kaelli
 author: roferg
-ms.date: 09/07/2017
+ms.date: 05/08/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -124,3 +124,59 @@ Commands consuming a high number of TSTUs (in the hundreds, for example) will be
 are coming from. Common problems to look for are custom tools or build service accounts that might be making a large amount of calls in a short time window. To avoid these types of issues,
 tools may need to be rewritten or build processes updated to reduce the type and number of calls made. For example, a tool might be pulling a large version control repository from scratch
 on a regular basis, when it could pull incrementally instead. 
+
+## API client recommendations
+
+When requests are about to be delayed, are delayed, or are blocked, Azure DevOps returns response headers to help API clients react.
+While not fully standardized, these headers are [broadly in line with other popular services](https://stackoverflow.com/questions/16022624/examples-of-http-api-rate-limiting-http-response-headers).
+
+The following table lists the headers available and what they mean.
+With the exception of `X-RateLimit-Delay`, all of these headers will be sent before requests start getting delayed.
+This gives clients the opportunity to proactively slow down their rate of requests.
+
+<table>
+  <tr>
+    <th>Header name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>Retry-After</code></td>
+    <td>The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4)-specified header sent to tell you how long to wait before sending your next request in order to fall under the detection threshold.
+    Given in seconds.</td>
+  </tr>
+  <tr>
+    <td><code>X-RateLimit-Resource</code></td>
+    <td>A custom header indicating the service and type of threshold which was reached.
+    Threshold types and service names may vary over time and without warning.
+    We recommend displaying this string to a human, but not relying on it for computation.</td>
+  </tr>
+  <tr>
+    <td><code>X-RateLimit-Delay</code></td>
+    <td>How long the request was delayed.
+    Given in seconds with millisecond resolution (i.e. up to 3 decimal places).</td>
+  </tr>
+  <tr>
+    <td><code>X-RateLimit-Limit</code></td>
+    <td>Total amount of TSTUs allowed before delays are imposed.</td>
+  </tr>
+  <tr>
+    <td><code>X-RateLimit-Remaining</code></td>
+    <td>Amount of TSTUs remaining before being delayed.
+    If requests are already being delayed or blocked, this will be 0.</td>
+  </tr>
+  <tr>
+    <td><code>X-RateLimit-Reset</code></td>
+    <td>Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs.
+    Specified in Unix epoch time.</td>
+  </tr>
+</table>
+
+### Recommendations
+
+We recommend that you at least respond to the `Retry-After` header.
+If you detect a `Retry-After` header in any response, wait until that amount of time has passed before sending another request.
+This will help your client application experience fewer enforced delays.
+
+If possible, we further recommend that you monitor `X-RateLimit-Remaining` and `X-RateLimit-Limit` headers.
+This will allow you to approximate how quickly you're approaching the delay threshold.
+Your client can intelligently react by spreading out its requests over time.
