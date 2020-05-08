@@ -125,7 +125,7 @@ are coming from. Common problems to look for are custom tools or build service a
 tools may need to be rewritten or build processes updated to reduce the type and number of calls made. For example, a tool might be pulling a large version control repository from scratch
 on a regular basis, when it could pull incrementally instead. 
 
-## API client recommendations
+## API client experience
 
 When requests are about to be delayed, are delayed, or are blocked, Azure DevOps returns response headers to help API clients react.
 While not fully standardized, these headers are [broadly in line with other popular services](https://stackoverflow.com/questions/16022624/examples-of-http-api-rate-limiting-http-response-headers).
@@ -141,7 +141,7 @@ This gives clients the opportunity to proactively slow down their rate of reques
   </tr>
   <tr>
     <td><code>Retry-After</code></td>
-    <td>The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4)-specified header sent to tell you how long to wait before sending your next request in order to fall under the detection threshold.
+    <td>The <a href="https://tools.ietf.org/html/rfc6585#section-4">RFC 6585</a>-specified header sent to tell you how long to wait before sending your next request in order to fall under the detection threshold.
     Given in seconds.</td>
   </tr>
   <tr>
