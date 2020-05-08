@@ -22,7 +22,7 @@ This article walks you through the steps for converting a new project with a sin
 >[!div class="checklist"]      
 > * Define Agile feature, program, and portfolio teams  
 > * Configure a hierarchy of Area Paths to support your teams  
-> * Define Iteration Paths to support SAFe® release trains, Program Increments, sprints, and Innovation and Planning (IP) Iterations 
+> * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
 > * Configure each team to support SAFe® 
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
