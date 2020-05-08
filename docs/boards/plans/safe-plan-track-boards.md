@@ -39,9 +39,10 @@ Portfolio teams can perform the following tasks as indicated.
 
 ### Document Portfolio Vision and Strategic Themes  
 
-Capture and share the Portfolio Vision and Strategic Themes using the project wiki. Consider defining and sharing the following information: 
+Capture and share the Portfolio Vision and Strategic Themes using the project wiki. Consider defining and sharing the following information:  
+
 - How to use tags or custom fields to specify value streams 
--  
+
 
 ### Define and prioritize Epics
 
@@ -60,6 +61,14 @@ Capture and share the Portfolio Vision and Strategic Themes using the project wi
 
 3. As needed, you can drag and drop Epics within the list to reflect their priority. 
 
+4. Define details. Choose each work item title to open the form. Add information to the Description, assign to an owner, add tags, and choose the Value Area. 
+
+	Here we assign the first epic to Jamal, add a Description, and specify Business for the Value Area. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Portfolio backlog, List Epics](media/safe-plan-track/epic-form.png)
+
+	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ## Define Programs 
 
@@ -67,31 +76,129 @@ In a similar fashion to portfolio teams, program teams work from their Features 
 
 Each program manager defines and prioritizes their features. Here, we show the Fiber Suite team add Features. 
 
+###  Define Features
+
 1. Open the Fiber Suite team's Features backlog and choose **New Work Item**. 
 
 	Enter the title of the Feature and choose **Add at selection**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Feature backlog, Add Features](media/safe-plan-track/add-feature.png)
+	> ![Features backlog, Add Features](media/safe-plan-track/add-feature.png)
 
 2.	Continue adding Epics as needed by continuing to type in their titles. You can add details later. 
 
-	When finished, you should have a list of Features as shown: 
+	When finished, you should have a list of Features as shown. THe Node Name indicates the last node in the area path specified for the work item. By adding Features from the team's Feature Backlog, the Area Path is automatically assigned the team's Default Area Path. For the Fiber Suite, that is Fabrikam\Fiber Suite. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Feature backlog, List Features](media/safe-plan-track/define-features.png)
+	> ![Features backlog, List Features](media/safe-plan-track/define-features.png)
 
 3. As needed, you can drag and drop Features within the list to reflect their priority. 
 
-4. In this next step you'll map each Feature to it's parent Epic. 
+4. Define feature details. Choose each work item title to open the form. Add information to the Description, assign to an owner, add tags, and choose the Value Area. 
 
-	turn-on-mapping
+### Map Features to Epics 
 
+In this next step you'll map each Feature to it's parent Epic. The Mapping tool quickly create parent-child links between Epics and Features. 
+
+1. From the Features backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping.png)
+
+2.	Choose the Fabrikam Team's backlog of Epics.   
+
+	> [!div class="mx-imgBorder"]
+	> ![Features backlog, Choose Portfolio Epics backlog](media/safe-plan-track/choose-portfoli-team.png)
+
+1. One by one, drag each Feature onto it's parent Epic. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Features backlog, Drag and drop feature onto epic](media/safe-plan-track/map-feature-to-epic.png)
+
+1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+
+	Your list should look something like that shown in the following image. The  ![ ](../../media/icons/info.png) info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Features backlog, with Parents enabled](media/safe-plan-track/list-epics-features.png)
+
+
+## Define Agile feature team deliverables 
+
+In a similar manner to portfolio and program teams, each Agile feature team add Stories to their backlog to support the Features assigned to them. 
+
+###  Define Stories
+
+1. Open the App team's Stories backlog and choose **New Work Item**. 
+
+	Enter the title of the User Story and choose **Add at selection**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Stories backlog, Add User Story](media/safe-plan-track/add-feature.png)
+
+2.	Continue adding User Stories as needed by continuing to type in their titles. You can add details later. 
+
+	When finished, you should have a list of Stories as shown: 
+
+	> [!div class="mx-imgBorder"]
+	> ![Stories backlog, List Stories](media/safe-plan-track/define-stories.png)
+
+3. As needed, you can drag and drop User Stories within the list to reflect their priority. 
+
+4. Define story details. Choose each work item title to open the form. Add information to the Description and Acceptance Criteria, assign to an owner, add tags, specify the Story Points, and choose the Value area. 
+
+	> [!div class="mx-imgBorder"]
+	> ![User story work item form](media/safe-plan-track/user-story-form.png)
+
+	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
+
+### Map Stories to Features 
+
+Just as you earlier mapped each Feature to it's parent Epic, now you'll map each User Story to it's parent Feature. The Mapping tool quickly create parent-child links between Features and User Stories. 
+
+1. From the Stories backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
+
+2.	Choose the Fiber Suite's backlog of Features. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Stories backlog, Choose Fiber Suite team Features backlog](media/safe-plan-track/choose-fiber-suite-features.png)
+
+1. One by one, drag each User Story onto it's parent Feature. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Stories backlog, Drag and drop user story onto feature](media/safe-plan-track/map-story-to-feature.png)
+
+1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+
+	Your list should look something like that shown in the following image. The ![ ](../../media/icons/info.png) info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
+
+
+## Review Progress 
+
+<!--- To be provided --> 
+
+## Review Roadmaps   
+
+<!--- 
+
+### View Progress Rollup
+
+
+### View Delivery Plans  
+
+--> 
+
+<!---
 ## Map features to epics, and stories to features
 
 The program team can map features to epics using the mapping pane. Feature teams can use the same experience to map their stories to features.
  
-
 ![Map features to epics](media/safe-map-features-to-epics.png)  
 
 ## View plan and progress  
@@ -102,29 +209,14 @@ The program team can map features to epics using the mapping pane. Feature teams
 
 To track the progress of epics that span Releases, the Portfolio team's backlog shows epics. Each epic can be expanded to show the features and user stories that support it.
 
-
 ![Hierarchy of epics, features, and stories](media/safe-portfolio-progress-view-epics-to-stories-any-team.png)  
 
 The Portfolio team can also view the progress of epics on their Kanban board.
 
 ![Epic Kanban board](media/safe-epics-kanan-board.png)  
 
- 
 > [!TIP]  
 > You can also [customize the card color based on various criteria](../../boards/boards/customize-cards.md#style-rule), such as the Value Area=Architectural, by applying styling rules.  
-
-
-### View Progress Rollup
-
-<!--- To be provided --> 
-
-### View Feature Timeline
-
-<!--- To be provided --> 
-
-### View Delivery Plans  
-
-<!--- To be provided --> 
 
 ## Program teams' progress view 
 
@@ -132,21 +224,12 @@ Program teams, primarily concerned with Release Trains, can see the features in 
 
 ![Program team backlog of features and stories](media/safe-fiber-suite-features-to-stories.png)  
 
-Just like the Portfolio team, they can also toggle their view to see which epics their features support, or the user stories that support their features, or both.  
-
+Just like the Portfolio team, they can also toggle their view to see which epics their features support, or the user stories that support their features, or both. 
 Another view available to program teams shows query-based graphs of release train progress, backlog items, or active tasks during a shipping sprint. A customizable home page view is available to each team.
 
 ![Team dashboard](media/safe-team-dashboard.png)  
 
 Since so much of a program team's work revolves around PIs and Release Trains, a custom report showing the scheduled shipping dates and what is projected to be on any given train might be useful. In addition, you can take advantage of the [rich reporting options and built-in reports](../../report/dashboards/overview.md).
-
-### View Feature Timeline
-
-<!--- To be provided --> 
-
-### View Delivery Plans  
-
-<!--- To be provided --> 
 
 ## Feature teams' view of progress
 
@@ -237,7 +320,7 @@ The same principles apply to user stories in progress. You can map them to featu
 
 ![User Story work item form](media/safe-user-story-new-form.png)  
 
-
+--> 
 
 
 
