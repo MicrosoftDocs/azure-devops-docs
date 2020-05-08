@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for February 2020"
 description: "What's new in Azure DevOps docs for February 2020."
-ms.date: 05/07/2020
+ms.date: 05/08/2020
 author: steved0x
 ms.author: sdanie
 ---
@@ -86,7 +86,7 @@ Welcome to what's new in Azure DevOps docs for February 2020. This article lists
   - Add Sample report for all pipelines scenario
   - Resolve syncing conflicts from repo_sync_working_branch to master
 
-## Documentation feedback GitHub issue content updates
+## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-02-01..2020-02-29).
 
