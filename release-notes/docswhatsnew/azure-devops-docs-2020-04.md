@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for April 2020"
 description: "What's new in Azure DevOps docs for April 2020."
-ms.date: 05/07/2020
+ms.date: 05/08/2020
 author: steved0x
 ms.author: sdanie
 ---
@@ -51,7 +51,7 @@ Welcome to what's new in Azure DevOps docs for April 2020. This article lists so
 - [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git) - Update to use refactored shared content
 - [Build GitHub repositories](/azure/devops/pipelines/repos/github) - Update to used refactored shared content
 
-## Documentation feedback GitHub issue content updates
+## GitHub issue content updates
 
 Thank you for your feedback on our documentation. This month we made updates to our content to address [the following GitHub issues](https://github.com/MicrosoftDocs/azure-devops-docs/issues?q=linked%3Apr+type%3Aissue+state%3Aclosed+closed%3A2020-04-01..2020-04-30).
 
