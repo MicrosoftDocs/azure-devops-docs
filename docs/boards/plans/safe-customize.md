@@ -114,7 +114,15 @@ For details on adding and managing the extension, see the [WSJF extension overvi
 Typically you add rules to work item types for the following reasons: 
 
 - You want to make a field required 
-- 
+
+
+
+## Restrict or grant access to select features 
+
+Tags? 
+
+
+
 
 ::: moniker range="tfs-2013"
 
@@ -130,7 +138,6 @@ If you're working with TFS 2013, see the [Upgrade/Publish TFS 2013 Process Templ
 
 ## When to add another project 
  
-
 - [About projects and scaling your organization](../../organizations/projects/about-projects.md)
 
 - [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
