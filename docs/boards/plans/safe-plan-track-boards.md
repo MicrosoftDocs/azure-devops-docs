@@ -33,16 +33,22 @@ This article walks you through some of the basic tools you'll use to plan and tr
 > If you have a number of Epics, Features, or Stories already defined, you can bulk import them using a CSV file or through Excel. Also, you can use these tools to update a number of fields to existing work items. To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 
-## Define the Portfolio 
+## Define Portfolios and Epics 
 
 Portfolio teams can perform the following tasks as indicated. 
 
 ### Document Portfolio Vision and Strategic Themes  
 
-Capture and share the Portfolio Vision and Strategic Themes using the project wiki. Consider defining and sharing the following information:  
+We recommend you use the project wiki to capture and share the Portfolio Vision, Strategic Themes and other information relevant to your programs. Consider defining and sharing the following information:  
 
 - How to use tags or custom fields to specify value streams 
+- Taxonomy terms as described in [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
+- How release trains and sprints are used 
+- Key milestones and events  
+- Customer centric programs 
 
+Information can be easily shared and updated by any member of the team. 
+To learn more about using the project wiki, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
 
 ### Define and prioritize Epics
 
@@ -70,7 +76,13 @@ Capture and share the Portfolio Vision and Strategic Themes using the project wi
 
 	To perform bulk updates to several work items, see [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
-## Define Programs 
+> [!NOTE]   
+> Since an important aspect of SAFe® is to map work to business or architecture goals, you'll want to make sure to set the **Value Area**=*Architectural* for any feature mapped to an architecture epic. Because the default choice is *Business*, you don't have to change the field for any item that supports a business epic. You can also add tags to track the investment.  
+> 
+> The same principles apply to user stories in progress. You can map them to features, change the requirement type to Architecture for work that you do to support architectural epics, and add tags for tracking themes.  
+
+
+## Define Programs and Features
 
 In a similar fashion to portfolio teams, program teams work from their Features backlog and define the features that support the Epics they are tasked with delivering. 
 
@@ -108,7 +120,7 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 2.	Choose the Fabrikam Team's backlog of Epics.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Features backlog, Choose Portfolio Epics backlog](media/safe-plan-track/choose-portfoli-team.png)
+	> ![Features backlog, Choose Portfolio Epics backlog](media/safe-plan-track/choose-portfolio-team.png)
 
 1. One by one, drag each Feature onto it's parent Epic. 
 
@@ -134,7 +146,7 @@ In a similar manner to portfolio and program teams, each Agile feature team add 
 	Enter the title of the User Story and choose **Add at selection**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Stories backlog, Add User Story](media/safe-plan-track/add-feature.png)
+	> ![Stories backlog, Add User Story](media/safe-plan-track/add-user-story.png)
 
 2.	Continue adding User Stories as needed by continuing to type in their titles. You can add details later. 
 
@@ -179,20 +191,48 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
 
 
-## Review Progress 
+## View Kanban boards, update status  
 
-<!--- To be provided --> 
+Each team's Kanban board provides a visual interactive space for the team to plan and update status. With it, your team can track the critical information they need by seeing which work items are in progress, where the bottlenecks are, who work is assigned to, and more.
 
-## Review Roadmaps   
+For an overview of Kanban board tools and usage, see [About Boards and Kanban](../boards/kanban-overview.md). Each team can customize the boards columns, card fields, card styles, and more. To learn more, see [Customize your boards](../get-started/customize-boards.md)
 
-<!--- 
+### Open a Kanban Board  
 
-### View Progress Rollup
+You open the Kanban board from any backlog by choosing the **View as Board** link. 
+
+> [!div class="mx-imgBorder"]
+> ![Epic board](media/safe-plan-track/view-epics-kanban.png)
+
+### Portfolio Kanban board  
+
+Child items of Epics are listed within each card. You can expand and collapse the list of child items. 
+
+> [!div class="mx-imgBorder"]
+> ![Epics Kanban board](media/safe-plan-track/epics-kanban-board.png)
+ 
+### Program team Kanban board 
+
+> [!div class="mx-imgBorder"]
+> ![Fiber Suite Kanban board](media/safe-plan-track/features-kanban-board.png)
+
+### Agile Feature team's Kanban boards 
+
+> [!div class="mx-imgBorder"]
+> ![Feature team Kanban board](media/safe-plan-track/user-story-kanban-board.png)
+
+## Plan a release train  
+
+Fiber Suite 
 
 
-### View Delivery Plans  
+## Plan a sprint 
 
---> 
+App team 
+
+
+
+
 
 <!---
 ## Map features to epics, and stories to features
@@ -200,9 +240,6 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 The program team can map features to epics using the mapping pane. Feature teams can use the same experience to map their stories to features.
  
 ![Map features to epics](media/safe-map-features-to-epics.png)  
-
-## View plan and progress  
-
 
 
 ### Portfolio team's view 
@@ -322,18 +359,46 @@ The same principles apply to user stories in progress. You can map them to featu
 
 --> 
 
-
-
 ## Manage dependencies
 
 Best ways to manage dependencies, what flows into what? 
 
 
+
+<a id="work-item-tips" />
+
+## Work items tips 
+
+ - Can only assign a work item to one project member 
+
 <a id="bulk-update" />
 
 ## Bulk add or update work items 
 
-To be completed 
+Common fields you may want to bulk update include: 
+- Area Path
+- Assigned to
+- Iteration Path
+- Tags (Add or Remove) 
+- Value Area 
+
+You can bulk update and change the work item type from the web portal. Or, if needed, you can remove of delete work items. See the following articles:
+
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md)  
+- [Move or change work item type](../backlogs/move-change-type.md)  
+- [Remove or delete work items](../backlogs/remove-delete-work-items.md)   
+
+Also, you can bulk add or update work items with the following tools: 
+
+- [Bulk add or modify work items (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Bulk import or update work items (CSV)](../queries/import-work-items-from-csv.md)  
+- 
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Review progress, delivery plans, and roadmaps](safe-review-roadmaps-progress.md) 
+
 
 
 ## Related articles

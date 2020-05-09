@@ -22,6 +22,8 @@
     href: safe-customize.md 
   - name: Manage SAFe® programs and portfolios  
     href: safe-plan-track-boards.md 
+  - name: View roadmaps and monitor progress 
+    href: safe-review-roadmaps-progress.md 
 - name: Best practices, monitoring, & reports
   items:
   - name: Agile culture
