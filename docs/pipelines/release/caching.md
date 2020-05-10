@@ -405,7 +405,7 @@ steps:
     restoreKeys: | 
       python | "$(Agent.OS)"
       python
-    path: $(PIP_PATH_CACHE)
+    path: $(PIP_CACHE_DIR)
   displayName: Cache pip packages
 
 - script: pip install -r requirements.txt
@@ -428,7 +428,7 @@ steps:
     restoreKeys: | 
       python | "$(Agent.OS)"
       python
-    path: $(PIPENV_PATH_CACHE)
+    path: $(PIPENV_CACHE_DIR)
   displayName: Cache pipenv packages
 
 - script: pipenv install
