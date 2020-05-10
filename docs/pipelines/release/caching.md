@@ -388,6 +388,52 @@ steps:
 - script: composer install
 ```
 
+## Python/pip
+
+For Python projects using pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you are using Poetry, replace `requirements.txt` in the `key` field with `poetry.lock`.
+
+### Example
+
+```yaml
+variables:
+  PIP_CACHE_DIR: $(Pipeline.Workspace)/.pip
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | requirements.txt'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIP_PATH_CACHE)
+  displayName: Cache pip packages
+
+- script: pip install -r requirements.txt
+```
+
+## Python/Pipenv
+
+For Python projects using Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
+
+### Example
+
+```yaml
+variables:
+  PIPENV_CACHE_DIR: $(Pipeline.Workspace)/.pipenv
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'python | "$(Agent.OS)" | Pipfile.lock'
+    restoreKeys: | 
+      python | "$(Agent.OS)"
+      python
+    path: $(PIPENV_PATH_CACHE)
+  displayName: Cache pipenv packages
+
+- script: pipenv install
+```
+
 ## Known issues and feedback
 
 If you experience problems enabling caching for your project, first check the list of [pipeline caching issues](https://github.com/microsoft/azure-pipelines-tasks/labels/Area%3A%20PipelineCaching) in the microsoft/azure-pipelines-tasks repo. If you don't see your issue listed, [create a new issue](https://github.com/microsoft/azure-pipelines-tasks/issues/new?labels=Area%3A%20PipelineCaching).
