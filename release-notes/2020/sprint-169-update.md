@@ -4,12 +4,11 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 05/11/2020
-description: With this **sprint 168**, We are bringing new user experience and enhancements to YAML Pipelines for a more fluid workflows as well as some added security features.
+description: With this **sprint 169**, we are excited to announce the general availability of Azure Pipelines YAML CD features.
 ---
 
 # Enhancements to YAML Pipelines
-With this sprint, we are bringing new user experience and enhancements to YAML Pipelines for a more fluid workflows as well as some added security features. 
-
+With this sprint, we are excited to announce the general availability of Azure Pipelines YAML CD features.
 
 ## Features
 
