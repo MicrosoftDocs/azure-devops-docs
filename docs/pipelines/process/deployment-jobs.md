@@ -354,7 +354,7 @@ Define output variables in a deployment job's [lifecycle hooks](https://docs.mic
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>.<step-name>.<variable-name>']]`  
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy : `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 

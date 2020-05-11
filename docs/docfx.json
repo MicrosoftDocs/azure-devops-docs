@@ -121,7 +121,8 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "sdanie"
+        "pipelines/test/**": "sdanie",
+        "service-hooks/**": "aaronha"
 
       },
       "author": {
@@ -149,7 +150,8 @@
         "pipelines/security/**": "juliakm",
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
-        "pipelines/test/**": "steved0x"
+        "pipelines/test/**": "steved0x",
+        "service-hooks/**": "aaronhallberg"
 
       },
       "ms.technology": {
