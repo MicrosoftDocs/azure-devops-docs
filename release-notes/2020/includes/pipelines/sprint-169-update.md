@@ -18,7 +18,7 @@ We’re excited to announce the general availability of the Azure Pipelines YAML
 - [Refreshed UX for service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
 - [Resources in YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema)
 
-If you’re ready to start building, check out the [documentation](https://go.microsoft.com/fwlink/?linkid=2091040")&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd/)&nbsp;for building a multi-stage CI/CD pipelines.
+If you’re ready to start building, check out the [documentation](https://go.microsoft.com/fwlink/?linkid=2091040")&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd/)&nbsp;for building multi-stage CI/CD pipelines.
 
 ### Service connections new UI as default experience
 
@@ -30,7 +30,7 @@ New service connections UI is built on modern design standards and it comes with
 
 Learn more about service connections [here](https://aka.ms/SCLearnMore).
 
-### Role based access for service connections
+### Role-based access for service connections
 
 In this sprint, we have added role-based access for service connections. Previously, service connection security could only be managed through pre-defined Azure DevOps groups such as Endpoint administrators and Endpoint Creators.
 
@@ -58,6 +58,6 @@ Learn more about service connections sharing [here](https://aka.ms/SCLearnMore).
 
 ### Pipeline resource version picker in the create run dialogue
 
-In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you refer to a CI pipeline as a resource in your pipeline, in the create run dialogue as part of your resources, you can see the list of pipeline resources and you can pick the version of the pipeline run from which you can that you want to consume your artifacts from.
+In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you consume a [pipeline as a resource](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema#resources-pipelines) in another pipeline, you can now pick the version of that pipeline when creating a run.
 
 ![img](../../media/169-pipelines-2-0.png)
