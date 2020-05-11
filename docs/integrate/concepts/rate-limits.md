@@ -152,42 +152,14 @@ The following table lists the headers available and what they mean.
 With the exception of `X-RateLimit-Delay`, all of these headers will be sent before requests start getting delayed.
 This design gives clients the opportunity to proactively slow down their rate of requests.
 
-<table>
-  <tr>
-    <th>Header name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><code>Retry-After</code></td>
-    <td>The <a href="https://tools.ietf.org/html/rfc6585#section-4">RFC 6585</a>-specified header sent to tell you how long to wait before sending your next request in order to fall under the detection threshold.
-    Units: seconds.</td>
-  </tr>
-  <tr>
-    <td><code>X-RateLimit-Resource</code></td>
-    <td>A custom header indicating the service and type of threshold which was reached.
-    Threshold types and service names may vary over time and without warning.
-    We recommend displaying this string to a human, but not relying on it for computation.</td>
-  </tr>
-  <tr>
-    <td><code>X-RateLimit-Delay</code></td>
-    <td>How long the request was delayed.
-    Units: seconds with up to 3 decimal places (milliseconds).</td>
-  </tr>
-  <tr>
-    <td><code>X-RateLimit-Limit</code></td>
-    <td>Total number of TSTUs allowed before delays are imposed.</td>
-  </tr>
-  <tr>
-    <td><code>X-RateLimit-Remaining</code></td>
-    <td>Number of TSTUs remaining before being delayed.
-    If requests are already being delayed or blocked, will be 0.</td>
-  </tr>
-  <tr>
-    <td><code>X-RateLimit-Reset</code></td>
-    <td>Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs.
-    Expressed in Unix epoch time.</td>
-  </tr>
-</table>
+| Header name | Description |
+|-------------|-------------|
+| `Retry-After` | The [RFC 6585](https://tools.ietf.org/html/rfc6585#section-4")-specified header sent to tell you how long to wait before sending your next request in order to fall under the detection threshold. Units: seconds. |
+| `X-RateLimit-Resource` | A custom header indicating the service and type of threshold which was reached. Threshold types and service names may vary over time and without warning. We recommend displaying this string to a human, but not relying on it for computation. |
+| `X-RateLimit-Delay` | How long the request was delayed. Units: seconds with up to 3 decimal places (milliseconds). |
+| `X-RateLimit-Limit` | Total number of TSTUs allowed before delays are imposed. |
+| `X-RateLimit-Remaining` | Number of TSTUs remaining before being delayed. If requests are already being delayed or blocked, will be 0. |
+| `X-RateLimit-Reset` | Time at which, if all resource consumption stopped immediately, tracked usage would return to 0 TSTUs. Expressed in Unix epoch time. |
 
 ### Recommendations
 
