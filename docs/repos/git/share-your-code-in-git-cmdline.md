@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.author: apawast
 author: apawast
 ms.topic: quickstart
-ms.date: 09/10/2018
+ms.date: 05/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -93,6 +93,8 @@ Create a local Git repo for your code. If your code is already in a local Git re
 
 ## Create your Git repo in Azure Repos
 
+::: moniker range="azure-devops"
+
 1. Create a new Git repo in Azure Repos for your code. 
 
    ```
@@ -137,6 +139,15 @@ Create a local Git repo for your code. If your code is already in a local Git re
     git remote add origin https://dev.azure.com/fabrikops2/Fabrikam/_git/FabrikamApp
     ```
 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
+Azure CLI is available in Azure DevOps Services. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+If you're not using Azure DevOps Services, you can still work with Git using the command line, but you must create your Azure Repos Git repository another way, suc as [Create a repo using the web portal](create-new-repo.md#create-a-repo-using-the-web-portal).
+
+::: moniker-end
 
 ## Push your code 
 
