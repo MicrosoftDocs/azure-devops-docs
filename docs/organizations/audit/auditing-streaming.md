@@ -55,9 +55,9 @@ You see current auditing streams, Where you can create or disable a stream. You 
 
 3. Select the stream target that you want to configure, and then select from the following instructions to set up your stream target type.
 
-   - [Splunk](#create-a-splunk-stream)
-   - [Event Grid](#create-an-event-grid-stream)
-   - [Azure Monitor Log](#create-an-azure-monitor-log-stream)
+   - [Splunk](#set-up-a-splunk-stream)
+   - [Event Grid](#set-up-an-event-grid-stream)
+   - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream)
 
 > [!NOTE]
 > At this time, you can only have 2 streams for each target type.
@@ -112,8 +112,8 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
  image
 -->
 
-5. Set up your Azure Monitor log stream by proceeding through the same initial steps to [create a new stream](#configure-a-stream).
-6. For target options, select **Azure Monitor Logs**. 
+1. Set up your Azure Monitor log stream by proceeding through the same initial steps to [create a stream](#create-a-stream).
+2. For target options, select **Azure Monitor Logs**. 
 
 <!---
  image
