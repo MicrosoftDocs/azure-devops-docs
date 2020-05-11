@@ -8,7 +8,7 @@ description: With this **sprint 168**, We are bringing new user experience and e
 ---
 
 # Enhancements to YAML Pipelines
-With this sprint, We are bringing new user experience and enhancements to YAML Pipelines for a more fluid workflows as well as some added security features. 
+With this sprint, we are bringing new user experience and enhancements to YAML Pipelines for a more fluid workflows as well as some added security features. 
 
 
 ## Features

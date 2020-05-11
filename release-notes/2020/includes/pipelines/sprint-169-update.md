@@ -22,19 +22,19 @@ If you’re ready to start building, check out the [documentation](https://go.mi
 
 ### Service connections new UI as default experience
 
-In this sprint, we are making service connections as the default experience and the old service connections UI will no longer be useable. For the past 6 months, we have provided a new UI to service connections as a preview feature. We added various features and improved the experience based on feedback we received from the customers
+In this sprint, we are making the new service connections UI the default experience and the old service connections UI will no longer be available. For the past six months, we have provided a new UI to service connections as a preview feature. Based on feedback we received from the customers, we added various features and are now ready to make it the mainstream experience for all users.
 
-New service connections UI is built on modern design standards it comes with various critical features for multi-stage YAML CD pipelines like Approvals, Authorizations, and cross-project sharing. Moreover, we have also added a ton of usability improvements.
+New service connections UI is built on modern design standards and it comes with various critical features to support multi-stage YAML CD pipelines such as approvals, authorizations, and cross-project sharing.
 
 ![img](../../media/169-pipelines-3-0.png)
 
 Learn more about service connections [here](https://aka.ms/SCLearnMore).
 
-### RBAC for Service Connections
+### Role based access for service connections
 
-In this sprint, we have added role-based access for service connections. Previously, service connection security can be managed only through pre-defined ADO groups (Endpoint administrators and Endpoint Creators).
+In this sprint, we have added role-based access for service connections. Previously, service connection security could only be managed through pre-defined Azure DevOps groups such as Endpoint administrators and Endpoint Creators.
 
-As part of this work, we have introduced Reader, User, Creator and Administrator roles. You can set these roles at service connections hub level in your project and these are inherited to the individual connections. And in each service connection you have the option to turn inheritance on/off and override the roles in the scope of the service connection.
+As part of this work, we have introduced the new roles of Reader, User, Creator and Administrator. You can set these roles via the service connections page in your project and these are inherited by the individual connections. And in each service connection you have the option to turn inheritance on or off and override the roles in the scope of the service connection.
 
 ![img](../../media/169-pipelines-0-0.png)
 
@@ -42,13 +42,13 @@ Learn more about service connections security [here](https://aka.ms/SCLearnMore)
 
 ### Showing associated CD pipelines info in CI pipelines
 
-As part of this sprint we have added support to show details about the CD YAML pipelines where the CI pipelines are referred to as 'pipeline' resources. In your CI pipeline run view, you will now see a new tab 'Associated pipelines' where you can find all the pipeline runs that consume your pipeline and artifacts from it.
+Also in this sprint we have added support to the CD YAML pipelines details where the CI pipelines are referred to as pipeline resources. In your CI pipeline run view, you will now see a new 'Associated pipelines' tab where you can find all the pipeline runs that consume your pipeline and artifacts from it.
 
 ![img](../../media/169-pipelines-5-0.png)
 
 ### Cross-project sharing of service connections is now public
 
-In this sprint, we are enabling support for service connection sharing across projects. For the past 3 months, this feature is in private preview and we have enabled it for many customers who have provided valuable feedback.
+In this sprint we are enabling support for service connection sharing across projects. For the past three months, this feature has been in private preview and many customers have provided valuable feedback on the feature.
 
 Thank you for your support. You can now share your service connections with your projects safely and securely.
 
@@ -56,8 +56,8 @@ Thank you for your support. You can now share your service connections with your
 
 Learn more about service connections sharing [here](https://aka.ms/SCLearnMore).
 
-### Pipeline resource version picker in create run dialogue
+### Pipeline resource version picker in the create run dialogue
 
-In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in create run dialogue. If you refer to a CI pipeline as a resource in your pipeline, in the create run dialogue as part of resources, you can see the pipeline resource and you can pick the version of the pipeline run from which you can consume your artifacts.
+In this sprint, as part of multi-stage CD YAML pipelines, we have added the ability to manually pick up pipeline resource versions in the create run dialogue. If you refer to a CI pipeline as a resource in your pipeline, in the create run dialogue as part of your resources, you can see the list of pipeline resources and you can pick the version of the pipeline run from which you can that you want to consume your artifacts from.
 
 ![img](../../media/169-pipelines-2-0.png)
