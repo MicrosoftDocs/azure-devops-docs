@@ -1,11 +1,11 @@
 ---
 title: Build and deploy JavaScript and Node.js apps
-description: Automatically build JavaScript and Node.js apps with Azure Pipelines
+description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
-ms.topic: quickstart
+ms.topic: conceptual
 ms.custom: seodec18, seo-javascript-september2019, contentperfq4
-ms.date: 04/27/2020
+ms.date: 05/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -13,7 +13,15 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets.
+Use a pipeline to build and test JavaScript and Node.js apps, and then deploy or publish to targets. Learn how to:
+
+* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+* Use the [npm task](../tasks/package/npm.md) or a [script](../scripts/cross-platform-scripting.md) to download packages for your build. 
+* Implement [JavaScript frameworks](#javascript-frameworks): Angular, React, or Vue. 
+* Run unit tests and publish them with the [publish test results task](../tasks/test/publish-test-results.md). 
+* Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
+* Publish [npm packages](../artifacts/npm.md) with Azure artifacts. 
+* Create a .zip file archive that is ready for publishing to a web app with the [Archive Files task](../tasks/utility/archive-files.md) and [deploy to Azure](../targets/webapp.md).
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
@@ -210,7 +218,9 @@ pool:
   vmImage: 'ubuntu-latest' # examples of other options: 'macOS-10.15', 'vs2017-win2016'
 ```
 
-Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process.
+Tools that you commonly use to build, test, and run JavaScript apps - like npm, Node, Yarn, and Gulp - are pre-installed on [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines. For the exact version of Node.js and npm that is preinstalled, refer to [Microsoft-hosted agents](../agents/hosted.md#software). To install a specific version of these tools on Microsoft-hosted agents, add the **Node Tool Installer** task to the beginning of your process. 
+
+You can also use a [self-hosted](../agents/agents.md) agent.
 
 ::: moniker-end
 
@@ -218,7 +228,7 @@ Tools that you commonly use to build, test, and run JavaScript apps - like npm, 
 
 ::: moniker range="azure-devops"
 
-If you need a version of Node.js and npm that is not already installed on the Microsoft-hosted agent, add the following snippet to your `azure-pipelines.yml` file.
+If you need a version of Node.js and npm that is not already installed on the Microsoft-hosted agent, use the [Node tool installer task](../tasks/tool/node-js.md). Add the following snippet to your `azure-pipelines.yml` file.
 
 > [!NOTE]
 > The hosted agents are regularly updated, and setting up this task will result in spending significant time updating to a newer minor version every time the pipeline is run. Use this task only when you need a specific Node version in your pipeline.
@@ -247,7 +257,7 @@ To update just the npm tool, run the `npm i -g npm@version-number` command in yo
 
 ### Use multiple node versions
 
-You can build and test your app on multiple versions of Node.
+You can build and test your app on multiple versions of Node by using a strategy and the [Node tool installer task](../tasks/tool/node-js.md).
 
 ::: moniker range="azure-devops"
 
@@ -283,8 +293,19 @@ See [multi-configuration execution](../process/phases.md#parallelexec).
 
 If you have defined tools needed for your build as development dependencies in your project's `package.json` or `package-lock.json` file, install these tools along with the rest of your project dependencies through npm. This will install the exact version of the tools defined in the project, isolated from other versions that exist on the build agent.
 
+You can use a [script](../scripts/cross-platform-scripting.md) or the [npm task](../tasks/package/npm.md). 
+
+#### Using a script to install with package.json
 ```yaml
 - script: npm install --only=dev
+```
+
+#### Using the npm task to install with package.json
+
+```yaml
+- task: Npm@1
+  inputs:
+  command: 'install'
 ```
 
 Run tools installed this way by using npm's `npx` package runner, which will first look for tools installed this way in its path resolution. The following example calls the `mocha` test runner but will look for the version installed as a dev dependency before using a globally installed (through `npm install -g`) version.
@@ -357,7 +378,7 @@ To pass registry credentials to npm commands via task runners such as Gulp, add 
 
 ::: moniker range="< azure-devops"
 
-Use the [npm](../tasks/package/npm.md) or [npm Authenticate](../tasks/package/npm-authenticate.md) task in your pipeline to download and install packages.
+Use the [npm](../tasks/package/npm.md) or [npm authenticate](../tasks/package/npm-authenticate.md) task in your pipeline to download and install packages.
 
 ::: moniker-end
 
@@ -373,7 +394,8 @@ account.
 
 ::: moniker range="azure-devops"
 
-If you're using Microsoft-hosted agents, you get a new machine every time you run a build - which means restoring the dependencies every time.
+If you're using [Microsoft-hosted agents](../agents/hosted.md), you get a new machine every time you run a build - which means restoring the dependencies every time.
+
 This can take a significant amount of time. To mitigate this, you can use Azure Artifacts or a self-hosted agent. You'll then get the benefit of using the package cache.
 
 ::: moniker-end
@@ -426,7 +448,7 @@ Use the [npm](../tasks/package/npm.md) task in your pipeline if you have a compi
 
 ::: moniker range="azure-devops"
 
-Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results to VSTS easily by using the built-in [Publish Test Results](../tasks/test/publish-test-results.md) task.
+Configure your pipelines to run your JavaScript tests so that they produce results formatted in the JUnit XML format. You can then publish the results using the built-in [publish test results](../tasks/test/publish-test-results.md) task.
 
 If your test framework doesn't support JUnit output, you'll need to add support through a partner reporting module, such as [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter). You can either update your test script to use the JUnit reporter, or if the reporter supports command-line options, pass those into the task definition.
 
@@ -440,16 +462,18 @@ The following table lists the most commonly used test runners and the reporters 
 | karma | [karma-junit-reporter](https://www.npmjs.com/package/karma-junit-reporter) |
 | Ava | [tap-xunit](https://github.com/aghassemi/tap-xunit) |
 
-This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly by using a script task. This produces the JUnit XML output at the default location of `./test-results.xml`. 
+This example uses the [mocha-junit-reporter](https://www.npmjs.com/package/mocha-junit-reporter) and invokes `mocha test` directly by using a script. This produces the JUnit XML output at the default location of `./test-results.xml`. 
 
 ```yaml
 - script: mocha test --reporter mocha-junit-reporter
 ```
 
-If you have defined a `test` script in your project's package.json file, you can invoke it by using `npm test` just as you would from the command line.
+If you have defined a `test` script in your project's package.json file, you can invoke it by using `npm test`.
 
 ```yaml
 - script: npm test
+
+
 ```
 
 ### Publish test results
@@ -581,7 +605,7 @@ All the dependencies for your React and Vue apps are captured in your *package.j
 
 ::: moniker-end
 
-The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release.
+The build files are in a new folder, `dist` (for Vue) or `build` (for React). This snippet builds an artifact, `www`, that is ready for release. It uses the [Node Installer](../tasks/tool/node-js.md), [Copy File](../tasks/utility/copy-files.md)s, and [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) tasks. 
 
 ::: moniker range="azure-devops"
 
@@ -737,7 +761,7 @@ or package the build output into a .zip file to be deployed to a web application
 
 ### Publish files to Azure Pipelines
 
-To simply upload the entire working directory of files, add the following to your `azure-pipelines.yml` file.
+To simply upload the entire working directory of files, use the [Publish Build Artifacts](../tasks/utility/publish-build-artifacts.md) task and add the following to your `azure-pipelines.yml` file.
 
 ```yaml
 - task: PublishBuildArtifacts@1
@@ -745,7 +769,7 @@ To simply upload the entire working directory of files, add the following to you
     PathtoPublish: '$(System.DefaultWorkingDirectory)'
 ```
 
-To upload a subset of files, first copy the necessary files from the working directory to a staging directory, and then use the **PublishBuildArtifacts** task.
+To upload a subset of files, first copy the necessary files from the working directory to a staging directory with the [Copy Files](../tasks/utility/copy-files.md) task, and then use the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md).
 
 ```yaml
 - task: CopyFiles@2
@@ -761,7 +785,7 @@ To upload a subset of files, first copy the necessary files from the working dir
 
 ### Publish a module to a npm registry
 
-If your project's output is an `npm` module for use by other projects and not a web application, use the `npm` task to publish the module to a local registry or to the public npm registry. You must provide a unique name/version combination each time you publish, so keep this in mind when configuring publishing steps as part of a release or development pipeline. 
+If your project's output is an `npm` module for use by other projects and not a web application, use the [npm](../tasks/package/npm.md) task to publish the module to a local registry or to the public npm registry. You must provide a unique name/version combination each time you publish, so keep this in mind when configuring publishing steps as part of a release or development pipeline. 
 
 The first example assumes that you manage version information (such as through an [npm version](https://docs.npmjs.com/cli/version)) through changes to your `package.json` file in version control. This example uses the script task to publish to the public registry.
 
@@ -793,7 +817,7 @@ For more information about versioning and publishing npm packages, see [Publish 
 
 ### Deploy a web app
 
-To create a .zip file archive that is ready for publishing to a web app, add the following snippet:
+To create a .zip file archive that is ready for publishing to a web app, use the [Archive Files](../tasks/utility/archive-files.md) task:
 
 ```yaml
 - task: ArchiveFiles@2
