@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Get started with Git from the command line
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 
