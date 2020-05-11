@@ -9,10 +9,10 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/07/2020
+ms.date: 05/11/2020
 ---
 
-# Create an auditing streaming
+# Create auditing streaming
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
