@@ -8,7 +8,7 @@ ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 05/11/2020
-monikerRange: '>= tfs-2015'
+monikerRange: 'azure-devops'
 ---
 
 # Get started with Git from the command line
@@ -24,9 +24,6 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 * An organization in Azure DevOps. If you don't have an organization, you can [sign up](../../organizations/accounts/create-organization.md) for one for free. Each organization includes free, unlimited private Git repositories.
 
 ## Download and install Azure CLI and add Azure DevOps extension
-
-::: moniker range="azure-devops"
-
 1. [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli). You must have at least `v2.0.49`, which you can verify with `az --version` command.
 
 2. Add the Azure DevOps Extension `az extension add --name azure-devops`
@@ -41,16 +38,6 @@ The instructions below use the default bash shell used on Linux and macOS, but t
 4. For seamless commanding, set the organization and project as defaults in configuration.
  
     `az devops configure --defaults organization=https://dev.azure.com/contoso project=contoso`
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-Azure CLI is available in Azure DevOps Services. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-If you're not using Azure DevOps Services, you can still work with Git using the command line, but you must create your Azure Repos Git repository another way, suc as [Create a repo using the web portal](create-new-repo.md#create-a-repo-using-the-web-portal).
-
-::: moniker-end
     
 ## Download and install Git
 
@@ -106,8 +93,6 @@ Create a local Git repo for your code. If your code is already in a local Git re
 
 ## Create your Git repo in Azure Repos
 
-::: moniker range="azure-devops"
-
 1. Create a new Git repo in Azure Repos for your code. 
 
    ```
@@ -152,15 +137,6 @@ Create a local Git repo for your code. If your code is already in a local Git re
     git remote add origin https://dev.azure.com/fabrikops2/Fabrikam/_git/FabrikamApp
     ```
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-
-Azure CLI is available in Azure DevOps Services. For more information, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-If you're not using Azure DevOps Services, you can still work with Git using the command line, but you must create your Azure Repos Git repository another way, suc as [Create a repo using the web portal](create-new-repo.md#create-a-repo-using-the-web-portal).
-
-::: moniker-end
 
 ## Push your code 
 
