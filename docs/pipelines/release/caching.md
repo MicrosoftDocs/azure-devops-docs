@@ -37,23 +37,23 @@ When a cache step is encountered during a run, the task will restore the cache b
 
 The `Cache` task has two required inputs: `key` and `path`. 
 
-* **Path input**
+#### Path input
 
 `path` should be set to the directory to populate the cache from (on save) and to store files in (on restore). It can be absolute or relative. Relative paths are resolved against `$(System.DefaultWorkingDirectory)`.
 
-* **Key input**
+#### Key input
 
 `key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
-**Strings**: <br>
+* **Strings**: <br>
 fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
-**File paths**: <br>
+* **File paths**: <br>
 path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
-**File patterns**: <br>
+* **File patterns**: <br>
 comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
@@ -62,7 +62,7 @@ The contents of any file identified by a file path or file pattern is hashed to 
 
 Relative file paths or file patterns are resolved against `$(System.DefaultWorkingDirectory)`.
 
-#### Example
+**Example**:
 
 Here is an example showing how to cache dependencies installed by Yarn:
 
