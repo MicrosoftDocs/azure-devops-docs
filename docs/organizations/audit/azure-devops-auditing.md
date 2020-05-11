@@ -9,7 +9,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/07/2020
+ms.date: 05/11/2020
 ---
 
 # Access, export, and filter audit logs
@@ -44,8 +44,10 @@ By default, Project Collection Administrators are the only group that have acces
 #### [Preview page](#tab/preview-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+ 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
 3. Select **Auditing**.
 
    ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)

@@ -22,57 +22,47 @@ ms.date: 05/11/2020
 In this article, learn how to create an [auditing](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific audit events, creating views on audit data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps. <!--- keeps it for how long? -->
 
 Auditing streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and sent to your stream targets. Currently, the following stream targets are available for configuration:
-- Splunk – Connect to on-premises or cloud-based Splunk.
-- Azure Monitor Log - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlog). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
-- Azure Event Grid – For scenarios where you want your auditing logs to be sent locations streaming doesn’t support natively in Azure or outside of it, you can setup an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
+- [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
+- [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlog). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
+- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent locations streaming doesn’t support natively in Azure or outside of it, you can setup an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
 
 ## Prerequisites
 
 By default, Project Collection Administrators (PCAs) are the only group that have access to the auditing feature. 
 
-You must be a PCA, which has the following permissions, by default:
+You must be a PCA, which has the following permissions, by default, or you must have *View audit log* permission.
 
 - Manage audit streams
 - View audit log
   
-<!---
- image
--->
+  :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set auditing permissions to Allow":::
 
-These permissions can be given to any other users or groups you wish to have manage your organization's streams. There's also a Delete audit streams permission.
+These permissions can be given to any other users or groups you wish to have manage your organization's streams. There's also a *Delete audit streams* permission.
 Once the proper entities have access to manage streams, you can do so by selecting the **Streams** tab on the auditing page. 
 
-<!---
- image
--->
+   :::image type="content" source="media/auditing-streaming/auditing-streams-access.png" alt-text="Select the Streams tab for auditing streams":::
 
-You see currently created streams. You can create or disable a stream. You can also get insights into the status of your stream(s). 
+You see current auditing streams, Where you can create or disable a stream. You can also get insights into the status of your stream(s). 
 
-<!---
- image
--->
+   :::image type="content" source="media/auditing-streaming/stream-view.png" alt-text="See current auditing streams":::
 
 ## Create a stream
 
 1. Go to the **Streams** tab in Azure DevOps.
-2. Select **New Stream**.
+2. Select **New stream**.
 
-<!---
- image
--->
+   :::image type="content" source="media/auditing-streaming/create-new-auditing-stream.png" alt-text="Select New stream to create your new auditing stream":::
 
-2. Select the stream target that you want to configure, and then select from the following instructions to set up your stream target type.
+3. Select the stream target that you want to configure, and then select from the following instructions to set up your stream target type.
 
-   - [Splunk stream](#create-a-splunk-stream)
-   - [Event Grid stream](#create-an-event-grid-stream)
-   - [Azure Monitor Log stream](#create-an-azure-monitor-log-stream)
+   - [Splunk](#create-a-splunk-stream)
+   - [Event Grid](#create-an-event-grid-stream)
+   - [Azure Monitor Log](#create-an-azure-monitor-log-stream)
 
 > [!NOTE]
 > At this time, you can only have 2 streams for each target type.
 
-<!---
- image
--->
+   :::image type="content" source="media/auditing-streaming/create-stream-dialog.png" alt-text="Create your stream dialog pop out":::
 
 ### Set up a Splunk stream
 
@@ -85,15 +75,13 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
    After selecting Splunk as your target, you see the following options.
 
-<!---
- image
--->
+   
 
 2. Your Splunk URL is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. So, if your Splunk URL was “https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088" then enter https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088. 
 3. Place the event collector token you created in the token field. 
 4. Select **Set up** and your stream's configured. 
    
-    Events begin to arrive on Splunk within 5 minutes. 
+Events begin to arrive on Splunk within 5 minutes. 
 
 ### Set up an Event Grid stream
 
