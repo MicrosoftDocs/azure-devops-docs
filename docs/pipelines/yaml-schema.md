@@ -2105,7 +2105,7 @@ Syntax highlighting is available for the pipeline schema via a Visual Studio Cod
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
 The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
 
-You can also obtain a schema that's specific to your organization (i.e. contains installed custom tasks) from [DevOps REST API's yamlschema endpoint](https://docs.microsoft.com/en-us/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+You can also obtain a schema that's specific to your organization (i.e. contains installed custom tasks) from [DevOps REST API's yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
 
 <!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
