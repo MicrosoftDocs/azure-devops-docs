@@ -1,7 +1,7 @@
 ---
 title: .NET Framework
-description: Build ASP.NET apps with .NET Framework in Azure Pipelines
-ms.topic: quickstart
+description: Use .NET Framework to build ASP.NET apps in Azure Pipelines
+ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
 ms.date: 04/15/2020
@@ -18,7 +18,11 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker-end
 
-Learn how to build .NET Framework projects. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
+> [!NOTE]
+> For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
+> 
+
+Learn how to build .NET Framework projects. 
 
 ::: moniker range="tfs-2017"
 
