@@ -386,7 +386,7 @@ While executing deployment strategies, you can access output variables across jo
     name: echovar
 ```
 
-For a `runOnce` job you specify the name of the job instead of the lifecycle hook.
+For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
 
 ```yaml
 # Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy
@@ -414,4 +414,5 @@ For a `runOnce` job you specify the name of the job instead of the lifecycle hoo
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
 ```
-Learn more on how to [set a multi-job output variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#set-a-multi-job-output-variable)
+
+Learn more about how to [set a multi-job output variable](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#set-a-multi-job-output-variable)
