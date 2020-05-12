@@ -8,7 +8,7 @@ ms.assetid: 435fb3a4-1766-4172-928d-80c09cfb1410
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 03/03/2020
+ms.date: 05/12/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -42,7 +42,8 @@ You must have [Project Collection Administrator or organization Owner permission
 5. Select **Start free trial**.
 
     ![Start 30-day Test Plans trial, select Start free trial](media/try-additional-features/start-thirty-day-test-plans-trial.png)
-6. Assign users **Basic** or **Basic + Test Plans**, so they can access Test Plans during the trial. Assigning **Basic + Test Plans** requires that you [set up billing](set-up-billing-for-your-organization-vs.md) first. But, charges for those users don't start until the trial expires.
+
+6. OPTIONAL: Assign users **Basic** or **Basic + Test Plans**, and they can access Test Plans during the trial. Assigning **Basic + Test Plans** requires that you [set up billing](set-up-billing-for-your-organization-vs.md) first. But, charges for those users don't start until the trial expires.
 
 ## Next steps
 
