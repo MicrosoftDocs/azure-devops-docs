@@ -39,13 +39,6 @@ You must be a PCA, which has the following permissions, by default, or you must 
   :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set auditing permissions to Allow":::
 
 These permissions can be given to any other users or groups you wish to have manage your organization's streams. There's also a *Delete audit streams* permission.
-Once the proper entities have access to manage streams, you can do so by selecting the **Streams** tab on the auditing page. 
-
-   :::image type="content" source="media/auditing-streaming/auditing-streams-access.png" alt-text="Select the Streams tab for auditing streams":::
-
-You see current auditing streams, Where you can create or disable a stream. You can also get insights into the status of your stream(s). 
-
-   :::image type="content" source="media/auditing-streaming/stream-view.png" alt-text="See current auditing streams":::
 
 ## Create a stream
 
@@ -80,15 +73,16 @@ You see current auditing streams, Where you can create or disable a stream. You 
 Streams send data to Splunk via the HTTP Event Collector endpoint. 
 
 1. Enable this feature in Splunk. For more information, see this [Splunk documentation](https://aka.ms/adostreamingsplunkdocumentation). 
-   Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both of these pieces of information to create a Splunk stream.
+   
+   Once it's enabled, you should have an HTTP Event Collector token and the URL to your Splunk instance. You need both the token and URL to create a Splunk stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-splunk.png" alt-text="Enter topic endpoint and access key that you noted earlier":::
 
 > [!NOTE]
 > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
 
-2. Your Splunk URL is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. So, if your Splunk URL was “https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088" then enter https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088. 
-3. Place the event collector token you created in the token field. 
+2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. So, if your Splunk URL was “https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088," enter https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088. 
+3. Enter the event collector token you created into the token field. 
 4. Select **Set up** and your stream's configured. 
    
 Events begin to arrive on Splunk within 5 minutes. 
@@ -130,9 +124,9 @@ Details about your stream target can change over time. To reflect these changes 
 
    :::image type="content" source="media/auditing-streaming/edit-audit-stream.png" alt-text="Select Edit stream":::
 
-Parameters available for editing differ per stream type. 
-
 2. Select **Save**.  
+
+Parameters available for editing differ per stream type. 
 
 ## Disable a stream
  
@@ -152,13 +146,13 @@ You can re-enable a stream in which the stream gets caught up on any audit event
 
 To delete a stream, make sure you have the Delete Audit Streams permission. 
 
+> [!IMPORTANT]
+> Once you delete a stream you can’t get it back.
+
 1. Hover over the stream you want to delete and select the vertical three dots on the far right. 
 2. Select **Delete stream**.
 
    :::image type="content" source="media/auditing-streaming/delete-audit-stream.png" alt-text="Select Delete stream and it's removed":::  
-
-> [!IMPORTANT]
-> Once you delete a stream you can’t get it back.
 
 3. Select **Confirm**.
 
