@@ -121,7 +121,7 @@ It is now easier to reuse the suites you have created already and import them in
 
 Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans]((https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
+> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
 
 
 **Tasks** 
