@@ -7,11 +7,11 @@ metadata:
   title: Azure Repos Documentation
   description: Collaborate on code development using free Git public and private repositories, pull requests, and code review. 
   ms.prod: devops 
-  ms.technology: devops-code-git
+  ms.technology: azure-repos
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 05/12/2020
+  ms.date: 09/30/2019 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -19,7 +19,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About Azure Repos Git
+  - title: About Azure Repos
     linkLists:
       - linkListType: video
         links:
@@ -31,6 +31,8 @@ landingContent:
         links:
           - text: What is Azure Repos?
             url: ./get-started/what-is-repos.md
+          - text: Compare Git and TFVC
+            url: ./tfvc/comparison-git-tfvc.md
   - title: Get started with Git or GitHub
     linkLists:
       - linkListType: tutorial
@@ -53,6 +55,28 @@ landingContent:
         links:
           - text: Git command reference
             url: ./git/command-prompt.md
+  - title: Get started with TFVC
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Share your code using Visual Studio
+            url: ./tfvc/share-your-code-in-tfvc-vs.md
+      - linkListType: how-to-guide
+        links:
+          - text: Suspend work and manage shelvesets
+            url: ./tfvc/suspend-your-work-manage-your-shelvesets.md
+          - text: Use Source Control Explorer to manage files
+            url: ./tfvc/use-source-control-explorer-manage-files-under-version-control.md
+          - text: Get code reviewed
+            url: ./tfvc/get-code-reviewed-vs.md
+          - text: Create work spaces
+            url: ./tfvc/create-work-workspaces.md
+          - text: Branch folders and files
+            url: ./tfvc/branch-folders-files.md
+      - linkListType: reference
+        links:
+          - text: TFVC command reference
+            url: ./tfvc/use-team-foundation-version-control-commands.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
@@ -63,6 +87,8 @@ landingContent:
             url: ./git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Manage repository permissions
             url: ../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add TFVC check-in policies
+            url: ./tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Reference
     linkLists:
       - linkListType: reference
@@ -71,4 +97,6 @@ landingContent:
             url: /cli/azure/ext/azure-devops/repos
           - text: Git REST API
             url: /rest/api/azure/devops/git/
+          - text: TFVC REST API
+            url: /rest/api/azure/devops/tfvc/
 
