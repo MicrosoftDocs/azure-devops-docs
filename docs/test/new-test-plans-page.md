@@ -183,7 +183,7 @@ Hence, test cases are reusable entities. By including them in a test plan or sui
 
 One of the primary benefits of the new page is for users who mainly do test execution/tracking (need to have only 'Basic' access level), they are not overwhelmed by the complexity of suite management (define tab is hidden for such users). 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans]((https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
+> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
 
 
 **Tasks** 
