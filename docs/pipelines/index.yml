@@ -59,7 +59,7 @@ landingContent:
           - text: PHP  
             url: ./ecosystems/python-webapp.md
           - text: "See more >"
-            url: ./ecosystems/ecosystems.md
+            url: ./ecosystems/index.md
   - title: Key concepts
     linkLists:
       - linkListType: concept
