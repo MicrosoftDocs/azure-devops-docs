@@ -49,7 +49,7 @@ landingContent:
             url: ./set-up-credential-managers.md
           - text: Use SSH key authentication
             url: ./use-ssh-keys-to-authenticate.md
-  - title: Concepts
+  - title: Key concepts
     linkLists:
       - linkListType: concept
         links:
