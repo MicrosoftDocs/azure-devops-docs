@@ -133,7 +133,7 @@
 - name: Ecosystems & integration
   items:
   - name: Ecosystem support
-    href: ecosystems/ecosystems.md
+    href: ecosystems/index.md
     displayName: language, platform
   - name: .NET Core
     href: ecosystems/dotnet-core.md
