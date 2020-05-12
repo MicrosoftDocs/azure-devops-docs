@@ -1,5 +1,5 @@
 - name: Git Repositories
-  href: index.yml?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json 
+  href: index.yml
 - name: Overview
   items:
   - name: Learn about pull requests
