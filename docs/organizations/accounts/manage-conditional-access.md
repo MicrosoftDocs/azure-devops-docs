@@ -34,17 +34,13 @@ In this article, learn how to manage your organization security policies in Azur
 
    For more information, see the REST API reference article, section [API version mapping](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-server-rest-5.0).
 
-Azure DevOps enforces the usage of [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs), [OAuth, and SSH keys](change-application-access-policies.md), and user policies. See the following details of how and what we enforce.
-
-   * [Restrict Azure AD users from creating new organizations](azure-ad-tenant-policy-restrict-org-creation.md)
-   * For Web flows, CAP is honored 100%
-   * For third-party client flow, like using a PAT with git.exe, we only support IP fencing policies - we don't support MFA policies. See the following examples:
-        * Policy 1 - Block all access from outside of IP range x, y, and z.
-            * If accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
-            * If accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
-        * Policy 2 - Require MFA when outside of IP range x, y, and z.
-            * If accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. The user is prompted for MFA if outside of that list.
-            * If accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+Azure DevOps enforces the usage of [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs), [OAuth, and SSH keys](change-application-access-policies.md), and user policies. You can [restrict Azure AD users from creating new organizations](azure-ad-tenant-policy-restrict-org-creation.md), and for Web flows, CAP is honored 100%. For third-party client flow, like using a PAT with git.exe, we support IP fencing policies - we don't support MFA policies. See the following examples:
+- Policy 1 - Block all access from outside of IP range x, y, and z.
+    * Accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+    * Accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
+- Policy 2 - Require MFA when outside of IP range x, y, and z.
+    * Accessing Azure DevOps via the web, the user's allowed from IP x, y, and z. The user is prompted for MFA if outside of that list.
+    * Accessing Azure DevOps via alt-auth, the user's allowed from IP x, y, and z. If outside of that list, the user's blocked.
 
 > [!NOTE]
 > Some third-party extensions may require additional configuration changes.
@@ -58,8 +54,8 @@ To change a security policy, you need at least Basic access and organization Own
 
 ## Related articles
 
-* [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access).
-* [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps).
+* [What is Conditional Access in Azure Active Directory?](/azure/active-directory/active-directory-conditional-access)
+* [Detailed instructions and requirements for Conditional Access](/azure/active-directory/active-directory-conditional-access-azuread-connected-apps)
 * [Change application connection policies](change-application-access-policies.md)
 
 <!---
