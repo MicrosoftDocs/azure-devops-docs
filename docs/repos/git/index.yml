@@ -36,31 +36,43 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Commit, share, and sync your code
-            url: ../git/gitquickstart.md
+            url: ./gitquickstart.md
           - text: Clone a repository
-            url: ../git/clone.md
+            url: ./clone.md
           - text: Update code with fetch and pull
-            url: ../git/pulling.md
+            url: ./pulling.md
       - linkListType: how-to-guide
         links:
           - text: Improve code quality with branch policies
-            url: ../git/branch-policies.md
+            url: ./branch-policies.md
           - text: Set up credential manager
-            url: ../git/set-up-credential-managers.md
+            url: ./set-up-credential-managers.md
           - text: Use SSH key authentication
-            url: ../git/use-ssh-keys-to-authenticate.md
-      - linkListType: reference
+            url: ./use-ssh-keys-to-authenticate.md
+  - title: Concepts
+    linkLists:
+      - linkListType: concept
         links:
-          - text: Git command reference
-            url: ../git/command-prompt.md
+          - text: Authentication
+            url: ./auth-overview.md
+          - text: History in Git
+            url: ./history.md
+          - text: Branch organization
+            url: ./git-branching-guidance.md
+          - text: Pull requests
+            url: ./pull-requests-overview.md
+          - text: Forks
+            url: ./forks-overview.md
+          - text: Branch policies
+            url: ./branch-policies-overview.md
   - title: Configure resources
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Create & manage Git repositories
-            url: ../git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Manage Git branch policies
-            url: ../git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+            url: ./branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Manage repository permissions
             url: ../../organizations/security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Reference
@@ -71,4 +83,6 @@ landingContent:
             url: /cli/azure/ext/azure-devops/repos
           - text: Git REST API
             url: /rest/api/azure/devops/git/
+          - text: Git command reference
+            url: ./command-prompt.md
 
