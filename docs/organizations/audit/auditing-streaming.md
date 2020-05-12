@@ -19,9 +19,10 @@ ms.date: 05/12/2020
 > [!Note]
 > Auditing streaming is currently in a Public Preview.
 
-In this article, learn how to create an [auditing](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific audit events, creating views on audit data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps. <!--- keeps it for how long? -->
+In this article, learn how to create an [auditing](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific audit events, creating views on audit data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
 
 Auditing streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
+
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
 - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlog). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
 - [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent locations streaming doesn’t support natively in Azure or outside of it, you can setup an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
@@ -48,12 +49,22 @@ You see current auditing streams, Where you can create or disable a stream. You 
 
 ## Create a stream
 
-1. Go to the **Streams** tab on the Azure DevOps Auditing page.
-2. Select **New stream**.
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+ 
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Auditing**.
+
+   ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
+
+   If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
+
+4. Go to the **Streams** tab, and then select **New stream**. 
 
    :::image type="content" source="media/auditing-streaming/create-new-auditing-stream.png" alt-text="Select New stream to create your new auditing stream":::
 
-3. Select the stream target that you want to configure, and then select from the following instructions to set up your stream target type.
+5. Select the stream target that you want to configure, and then select from the following instructions to set up your stream target type.
 
    - [Splunk](#set-up-a-splunk-stream)
    - [Event Grid](#set-up-an-event-grid-stream)
@@ -75,9 +86,6 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 
 > [!NOTE]
 > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
-   After selecting Splunk as your target, you see the following options.
-
-   
 
 2. Your Splunk URL is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. So, if your Splunk URL was “https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088" then enter https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088. 
 3. Place the event collector token you created in the token field. 
@@ -93,8 +101,6 @@ Events begin to arrive on Splunk within 5 minutes.
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
 
 3. Enter the topic endpoint and one of the access keys.  
-
-  
 
 Once you have your Event Grid stream configured you can set up subscriptions on the Event Grid to send the data almost anywhere in Azure. 
 
@@ -116,12 +122,24 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 
 The stream is enabled and new events begin to flow within minutes. 
 
+## Edit a stream
+
+Details about your stream target can change over time. To reflect these changes in your streams you can edit them. To edit a stream, make sure you have the “Manage audit streams” permission.
+
+1. Next to the stream that you want to edit, select the vertical three dots on the far right, and then select **Edit stream**. 
+
+   :::image type="content" source="media/auditing-streaming/edit-audit-stream.png" alt-text="Select Edit stream":::
+
+Parameters available for editing differ per stream type. 
+
+2. Select **Save**.  
+
 ## Disable a stream
  
 1. Next to the stream that you want to disable, move the **Enabled** toggle from *On* to *Off*.  
    You can get details on the failure from the status and by selecting **Edit stream**.
 
-   :::image type="content" source="media/auditing-streaming/edit-audit-stream.png" alt-text="Select Edit stream":::
+   :::image type="content" source="media/auditing-streaming/disable-stream-move-toggle-off.png" alt-text="Move toggle to Off to disable stream":::
 
 2. Select **Save**.
 
@@ -129,8 +147,6 @@ You can re-enable a stream in which the stream gets caught up on any audit event
 
 > [!NOTE]
 > If a stream is off for more than 7 days, events older than 7 days aren't included in the catch up. 
-
-Parameters available for editing differ per stream type. 
 
 ## Delete a stream
 
@@ -141,8 +157,8 @@ To delete a stream, make sure you have the Delete Audit Streams permission.
 
    :::image type="content" source="media/auditing-streaming/delete-audit-stream.png" alt-text="Select Delete stream and it's removed":::  
 
-   > [!IMPORTANT]
-   > Once you delete a stream you can’t get it back.
+> [!IMPORTANT]
+> Once you delete a stream you can’t get it back.
 
 3. Select **Confirm**.
 
