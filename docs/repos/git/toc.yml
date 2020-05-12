@@ -1,8 +1,7 @@
 - name: Git Repositories
+  url: index.yml
 - name: Overview
   items:
-  - name: Learn about Git
-    href: index.yml
   - name: Learn about pull requests
     href: pull-requests-overview.md
   - name: Learn about branch policies
