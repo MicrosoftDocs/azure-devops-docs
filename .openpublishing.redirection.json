@@ -12718,6 +12718,11 @@
       "source_path": "docs/deploy-azure/index.md",
       "redirect_url": "/azure/devops-project",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/overview.md",
+      "redirect_url": "/azure/devops/repos/git/index",
+      "redirect_document_id": false
     }
   ]
 }
