@@ -6,7 +6,8 @@ ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/29/2018
+ms.date: 05/08/2020
+ms.custom: contentperfq4
 monikerRange: '>= tfs-2015'
 ---
 
@@ -130,6 +131,15 @@ If you link more than one set of artifacts, you can specify which is the primary
 (default).
 
 ![Selecting a default version option](media/artifacts-02a.png)
+
+> [!IMPORTANT]
+> The Artifacts `Default version` drop down list items depends on the `repository type` of the linked build definition.
+
+* The following options are supported by all the repository types: `Specify at the time of release creation`, `Specific version`, and `Latest`.
+
+* `Latest from a specific branch with tags` and `Latest from the build pipeline default branch with tags` options are supported by the following repository types: `TfsGit`, `GitHub`, `Bitbucket`, and `GitHubEnterprise`.
+
+* `Latest from the build pipeline default branch with tags` is not supported by `XAML` build definitions.
 
 The following sections describe how to work with the different types of artifact
 sources.
