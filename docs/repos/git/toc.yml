@@ -1,9 +1,7 @@
 - name: Git Repositories
-  href: index.md?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json 
+  href: index.yml?toc=/azure/devops/repos/git/toc.json&bc=/azure/devops/repos/git/breadcrumb/toc.json 
 - name: Overview
   items:
-  - name: Learn about Git
-    href: overview.md
   - name: Learn about pull requests
     href: pull-requests-overview.md
   - name: Learn about branch policies
