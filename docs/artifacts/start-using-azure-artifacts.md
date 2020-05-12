@@ -1,5 +1,5 @@
 ---
-title: Start Using Azure Artifacts. 
+title: Start Using Azure Artifacts 
 description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
 ms.technology: devops-artifacts
 ms.topic: quickstart
@@ -10,7 +10,7 @@ ms.date: 09/03/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Sign up for Azure Artifacts
+# Start using Azure Artifacts
 
 **Azure DevOps** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
 
