@@ -1,0 +1,4 @@
+- name: Access, export, filter audit logs
+  href: azure-devops-auditing.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Create auditing streaming
+  href: auditing-streaming.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
