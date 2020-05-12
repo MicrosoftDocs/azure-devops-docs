@@ -12713,6 +12713,11 @@
       "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
       "redirect_url": "/azure/devops/sprints/scrum-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/deploy-azure/index.md",
+      "redirect_url": "/azure/devops-project",
+      "redirect_document_id": false
     }
   ]
 }
