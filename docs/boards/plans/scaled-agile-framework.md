@@ -112,10 +112,10 @@ The following articles provide details on how SAFe® concepts map to your Agile 
 
 >[!div class="checklist"]  
 > * [How SAFe® concepts map to Azure Boards artifacts](safe-concepts.md)  
-> * [Azure reports and SAFe® metrics](safe-metrics.md)  
 > * [Configure Azure Boards to support SAFe®](safe-configure-boards.md )  
 > * [Customize Azure Boards to support SAFe®](safe-customize.md)   
 > * [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
+> * [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)  
 
 ## Quick reference mapping
 
