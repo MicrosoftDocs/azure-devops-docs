@@ -18,19 +18,18 @@ You can use ARM templates within Azure Pipelines with the [Azure Resource Group 
 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- An active Azure DevOps account. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 
 
 ### Sign in to Azure Pipelines
 
-[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../../../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](includes/create-project.md)]
-
+[!INCLUDE [include](../../../../includes/create-project.md)]
 
 ## Get the code
 
-[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../../../ecosystems/includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/Azure/azure-quickstart-templates/tree/master/lamp-app/
@@ -38,13 +37,13 @@ https://github.com/Azure/azure-quickstart-templates/tree/master/lamp-app/
 
 ## Create your pipeline
 
-[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../../../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 ## Deploy your template
 
 Follow these steps to deploy your ARM template.
 
-1. Add and configure the Copy Files task. We will use the `101-webapp-linux-managed-mysql` project. Start your YAML file and add the Copy Files task.
+1. Add and configure the Copy Files task. You will use the `101-webapp-linux-managed-mysql` project. Start off by adding the Copy Files task.
   ``` yaml
   - task: CopyFiles@2
     inputs:
@@ -53,7 +52,7 @@ Follow these steps to deploy your ARM template.
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
   ``` 
 
-2. As part of our ARM template, you will create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
+2. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
     * Click *Variables*. 
     * Add the three variables. When you create `administratorLoginPassword`, select **Keep this value secret**. 
         
@@ -71,7 +70,7 @@ variables:
   ARM_PASS: $(adminPass)
 ```
 
-4. Add and configure the **Azure Resource Group Deployment** task to your YAML file. We will use the artifact you build with the Copy Files task and the variables you added to your pipeline. Set these values when configuring your task. 
+4. Add and configure the **Azure Resource Group Deployment** task to your YAML file. You will use the artifact you build with the Copy Files task and the variables you added to your pipeline. Set these values when configuring your task. 
 
    - **Deployment scope (deploymentScope)**: `Resource Group`
    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. You may need to authorize the connection as part of this process. 
