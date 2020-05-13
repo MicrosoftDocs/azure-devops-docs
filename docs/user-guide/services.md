@@ -104,7 +104,7 @@ From Azure Repos for Git, you can do the following tasks:
 - Review, create, approve, comment on, and complete pull requests  
 - Add and manage Git tags
 
-To learn more, see the overviews for [Git](../repos/git/overview.md) or [TFVC](../repos/tfvc/overview.md).
+To learn more, see the overviews for [Git](../repos/git/index.yml) or [TFVC](../repos/tfvc/overview.md).
 
 ## Plan and track work
 

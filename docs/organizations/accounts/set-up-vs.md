@@ -83,7 +83,7 @@ and choose the version control to manage your code.
 
     Not sure which to choose? Learn which 
     [process](../../boards/work-items/guidance/choose-process.md) 
-    and version control ([Git](../../repos/git/overview.md) 
+    and version control ([Git](../../repos/git/index.yml) 
     or [Team Foundation Version Control](../../repos/tfvc/overview.md))
     work best for you.
 
