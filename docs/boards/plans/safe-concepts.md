@@ -49,7 +49,7 @@ Examples provided below illustrate how to configure a three-level team hierarchy
 
 ## SAFe® roles  
 
-Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners 
+SAFe® roles&mdash;such as Scrum Master, Product Owner, Release Train Engineer, Product Manager, Functional Manager, Business Owner, Epic Owners&mdash; use Azure Board tools to support the planning and tracking of their particular projects and programs. 
 
 
 SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards team structure 
@@ -58,6 +58,8 @@ SAFe&reg; roles of Product Owner, Business Owners, Dev Team map to Azure Boards 
 
 
 What are the Azure Board tools they use, when, how
+
+
 <!--- To be provided --> 
 
 
