@@ -21,10 +21,6 @@ Before you begin, you need:
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
 
 
-### Sign in to Azure Pipelines
-
-[!INCLUDE [include](../../../ecosystems/includes/sign-in-azure-pipelines.md)]
-
 [!INCLUDE [include](../../../../includes/create-project.md)]
 
 ## Get the code
@@ -32,27 +28,38 @@ Before you begin, you need:
 [!INCLUDE [include](../../../ecosystems/includes/get-code-before-sample-repo.md)]
 
 ```
-https://github.com/Azure/azure-quickstart-templates/tree/master/lamp-app/
+https://github.com/Azure/azure-quickstart-templates/
 ```
 
-## Create your pipeline
+## Create your pipeline and deploy your template
 
-[!INCLUDE [include](../../../ecosystems/includes/create-pipeline-before-template-selected.md)]
+1. Sign in to your Azure DevOps organization and navigate to your project.
 
-## Deploy your template
+1. Go to **Pipelines**, and then select **New Pipeline**.
 
-Follow these steps to deploy your ARM template.
+1. Select **GitHub** as the location of your source code. 
 
-1. Add and configure the Copy Files task. You will use the `101-webapp-linux-managed-mysql` project. Start off by adding the Copy Files task.
-  ``` yaml
-  - task: CopyFiles@2
-    inputs:
-      SourceFolder: '101-webapp-linux-managed-mysql'
-      Contents: '**'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)'
-  ``` 
+  > [!NOTE]
+  > You may be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-2. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
+1. When the list of repositories appears, select `yourname/azure-quickstart-templates/`.
+
+  > [!NOTE]
+  > You may be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+
+1. When the Configure tab appears, select `Starter pipeline`.
+
+1. Replace the content of your pipeline with this code:
+
+```yaml
+   trigger:
+   - none
+
+   pool:
+   vmImage: 'ubuntu-latest'
+   ```
+
+1. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
     * Click *Variables*. 
     * Add the three variables. When you create `administratorLoginPassword`, select **Keep this value secret**. 
         
@@ -63,14 +70,30 @@ Follow these steps to deploy your ARM template.
    |adminPass     |    `Fqdn:5362!`     |    Yes     |
 
 
-3. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
+1. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
 
-```yaml
-variables:
+[!code-yml[](code/arm-variables.yml?highlight=1,2)]
+
+1. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
+  ``` yaml
+  variables:
   ARM_PASS: $(adminPass)
-```
 
-4. Add and configure the **Azure Resource Group Deployment** task to your YAML file. You will use the artifact you build with the Copy Files task and the variables you added to your pipeline. Set these values when configuring your task. 
+   trigger:
+   - none
+
+   pool:
+   vmImage: 'ubuntu-latest'
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: '101-webapp-linux-managed-mysql'
+      Contents: '**'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+  ``` 
+
+
+1. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
 
    - **Deployment scope (deploymentScope)**: `Resource Group`
    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. You may need to authorize the connection as part of this process. 
@@ -117,6 +140,24 @@ steps:
 ```
 
 
-5. Go to your new site. In the example, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+5. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
+
+ You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. 
+
+ ```yaml
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: '<your-resource-manager-connection>'
+    subscriptionId: '<your-subscription-id>'
+    action: 'Delete'
+    resourceGroupName: 'ARMPipelinesLAMP-rg'
+    location: '<your-closest-location>'
+    templateLocation: 'Linked artifact'
+    csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
+    csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
+    overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
+    deploymentMode: 'Incremental'
+ ```
