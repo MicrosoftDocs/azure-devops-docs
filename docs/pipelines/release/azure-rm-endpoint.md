@@ -35,10 +35,10 @@ list of your subscriptions.
 
 When you choose **OK**, the system:
 
-1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription
-1. Creates an application in Azure AD on behalf of the user
-1. After the application has been successfully created, assigns the application as a contributor to the selected subscription
-1. Creates an Azure Resource Manager service connection using this application's details
+1. Connects to the Azure Active Directory (Azure AD) tenant for to the selected subscription.
+1. Creates an application in Azure AD on behalf of the user.
+1. After the application has been successfully created, assigns the application as a contributor to the selected subscription, or select a resource group to which you want to restrict users' access (users will be able to access only the resources defined within that group).
+1. Creates an Azure Resource Manager service connection using this application's details.
 
 <a name="troubleshoot"></a>
 ## How to troubleshoot errors that may occur while creating a connection?
