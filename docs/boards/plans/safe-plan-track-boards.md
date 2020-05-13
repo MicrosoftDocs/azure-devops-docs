@@ -14,7 +14,7 @@ ms.date: 05/01/2020
 
 # Plan and track SAFe&reg; programs and portfolios  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
@@ -32,6 +32,7 @@ This article walks you through some of the basic tools you'll use to plan and tr
 > [!TIP]    
 > If you have a number of Epics, Features, or Stories already defined, you can bulk import them using a CSV file or through Excel. Also, you can use these tools to update a number of fields to existing work items. To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
 
 ## Define Portfolios and Epics 
 

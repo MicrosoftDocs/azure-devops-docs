@@ -15,9 +15,9 @@ ms.date: 05/01/2020
 
 # Configure Azure Boards to support SAFe®
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-This article walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
+This tutorial walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
 > * Define Agile feature, program, and portfolio teams  
@@ -25,7 +25,10 @@ This article walks you through the steps for converting a new project with a sin
 > * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
 > * Configure each team to support SAFe® 
 
-You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.    
+You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.   
+
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
+ 
 If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. 
 
 Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 

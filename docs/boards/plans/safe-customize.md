@@ -15,7 +15,7 @@ ms.date: 05/01/2020
 
 # Customize Azure Boards to support SAFe&reg;  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 The main reason to customize your process is to support monitoring or reporting additional metrics. Most of the customizations outlined in this article are optional. 
 
@@ -28,45 +28,13 @@ In this article you'll learn about select process customizations you can make an
 > * Add custom rules
 > * Add custom fields 
 
-<!--- 
-:::row:::
-   :::column span="":::
-      **Configure or customize**
-   :::column-end:::
-   :::column span="2":::
-      **Notes**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Custom work item types
-   :::column-end:::
-   :::column span="2":::
-      Notes
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Custom workflow
-   :::column-end:::
-   :::column span="2":::
-      Notes
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Custom field
-   :::column-end:::
-   :::column span="2":::
-      Notes
-   :::column-end:::
-:::row-end:::
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
 
--->
 
 ## Custom work item types
 
 
+<a id="custom-backlog" />
 ## Custom portfolio backlogs 
 
 

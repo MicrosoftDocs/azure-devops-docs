@@ -16,7 +16,7 @@ ms.date: 07/28/2019
 
 # View SAFe® progress, roadmaps, and metrics
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 With team's configured and working backlogs, you're ready to start viewing and monitoring progress. 
 
@@ -34,7 +34,7 @@ Azure Boards provides a number of in-context charts, dashboard widgets, and work
 
 For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md).  An additional backlog tool is Forecast which teams can use in their iteration planning. 
 
-In this article, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe metrics 
+In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe metrics 
 
 >[!div class="checklist"]      
 > - Progress reports
@@ -43,11 +43,7 @@ In this article, we illustrate some of the out-of-the-box charts and widgets tha
 > - Iteration planning, team velocity, and forecast
 > 
 
-In this article, you'll learn how to perform the following tasks: 
-
->[!div class="checklist"]      
-> * Review rollup progress    
-> * Review 
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
 
 
 ## View progress rollup 
