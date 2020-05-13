@@ -147,17 +147,13 @@ steps:
  You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. 
 
  ```yaml
-- task: AzureResourceManagerTemplateDeployment@3
+ - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: '<your-resource-manager-connection>'
     subscriptionId: '<your-subscription-id>'
-    action: 'Delete'
+    action: 'DeleteRG'
     resourceGroupName: 'ARMPipelinesLAMP-rg'
-    location: '<your-closest-location>'
-    templateLocation: 'Linked artifact'
-    csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
-    csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
-    overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
-    deploymentMode: 'Incremental'
+    location: ''<your-closest-location>'
  ```
+ 
