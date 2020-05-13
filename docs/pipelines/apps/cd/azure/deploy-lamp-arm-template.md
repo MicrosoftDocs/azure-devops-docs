@@ -1,6 +1,6 @@
 ---
-title: Deploy an ARM template to Azure
-description: Deploy a LAMP app on Ubuntu using an Azure Resource Manager (ARM) Template Deployment Task
+title: Use an ARM template to deploy a Linux and MySQL web app to Azure
+description: Deploy a webapp with the Azure Resource Manager (ARM) Template Deployment Task
 ms.topic: conceptual
 ms.author: jukullam
 author: JuliaKM
@@ -8,9 +8,9 @@ ms.date: 05/07/2020
 monikerRange: '=azure-devops'
 ---
 
-# Use an ARM template to deploy a LAMP app
+# Use an ARM template to deploy an app
 
-Get started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a LAMP app. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
+Get started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a web app on Linux with Azure database for MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
 You can use ARM templates within Azure Pipelines with the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
 
