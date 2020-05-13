@@ -35,21 +35,21 @@ https://github.com/Azure/azure-quickstart-templates/
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-1. Go to **Pipelines**, and then select **New Pipeline**.
+2. Go to **Pipelines**, and then select **New Pipeline**.
 
-1. Select **GitHub** as the location of your source code. 
+3. Select **GitHub** as the location of your source code. 
 
   > [!NOTE]
   > You may be redirected to GitHub to sign in. If so, enter your GitHub credentials.
 
-1. When the list of repositories appears, select `yourname/azure-quickstart-templates/`.
+4. When the list of repositories appears, select `yourname/azure-quickstart-templates/`.
 
   > [!NOTE]
   > You may be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 
-1. When the Configure tab appears, select `Starter pipeline`.
+5. When the Configure tab appears, select `Starter pipeline`.
 
-1. Replace the content of your pipeline with this code:
+6. Replace the content of your pipeline with this code:
 
 ```yaml
    trigger:
@@ -59,8 +59,8 @@ https://github.com/Azure/azure-quickstart-templates/
    vmImage: 'ubuntu-latest'
    ```
 
-1. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
-    * Click *Variables*. 
+7. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
+    * Click **Variables**. 
     * Add the three variables. When you create `administratorLoginPassword`, select **Keep this value secret**. 
         
    |Variable  |Value  |Secret?  |
@@ -70,9 +70,9 @@ https://github.com/Azure/azure-quickstart-templates/
    |adminPass     |    `Fqdn:5362!`     |    Yes     |
 
 
-1. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
+8. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
 
-:::code language="yaml" source="code/arm-variables.md" range="1-9" highlight="1-2":::
+:::code language="yaml" source="code/arm-variables.md" range="1-9" highlight="2-3":::
 
 1. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
   ``` yaml
@@ -93,7 +93,7 @@ https://github.com/Azure/azure-quickstart-templates/
   ``` 
 
 
-1. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
+9. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
 
    - **Deployment scope (deploymentScope)**: `Resource Group`
    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. You may need to authorize the connection as part of this process. 
@@ -139,8 +139,7 @@ steps:
     deploymentMode: 'Incremental'
 ```
 
-
-5. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+10. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
 
