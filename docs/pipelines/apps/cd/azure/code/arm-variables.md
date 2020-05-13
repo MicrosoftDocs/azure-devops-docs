@@ -1,4 +1,3 @@
-### YamlMime:ManagedReference
 variables:
   ARM_PASS: $(adminPass)
 
