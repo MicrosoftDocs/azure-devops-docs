@@ -42,7 +42,7 @@ For a description of each security group and permission level, see [Permissions 
 
 ### Git
 
-You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/overview.md).
+You can use Git repositories to host and collaborate on your source code. For an overview of code features and functions, see [Git](../../repos/git/index.yml).
 
 [!INCLUDE [temp](includes/code-git.md)]
 
