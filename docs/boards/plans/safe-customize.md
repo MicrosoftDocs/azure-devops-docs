@@ -28,19 +28,26 @@ In this article you'll learn about select process customizations you can make an
 > * Add custom rules
 > * Add custom fields 
 
+Prior to customizing your project, we recommend you read the [Configure and customize Azure Boards](../configure-customize.md). It provides detailed information on administrating a project for several teams and supporting various business objectives.  
+
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
+## Customize work item types 
 
-## Custom work item types
+You can add 
+
+## Add custom work item types
 
 
 <a id="custom-backlog" />
+
+
 ## Custom portfolio backlogs 
 
 
-## Custom workflow
+## Customize the workflow
 
-You may want to customize the workflow so that it matches your workflow process. By doing this early, you set up teams to ... 
+You may want to customize the workflow for User Stories, Features, and Epics so that it matches your workflow process. By doing this early, you minimize the Kanban board configuration teams must do. 
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board columns to visualize flow and limit WIP](../boards/media/alm_kb_board2.png)  
