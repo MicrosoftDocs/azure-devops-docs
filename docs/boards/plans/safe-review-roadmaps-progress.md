@@ -1,16 +1,14 @@
 ---
-title: Configure Azure DevOps dashboards to support SAFe® metrics
+title:View SAFe® progress, roadmaps, and metrics
 titleSuffix: Azure Boards
-description: Configure dashboards to support SAFe® metrics
+description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps 
 ms.technology: devops-agile
 ms.prod: devops
-ms.assetid:  
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/28/2019
+ms.date: 05/01/2020
 ---
 
 
@@ -23,8 +21,9 @@ With team's configured and working backlogs, you're ready to start viewing and m
 <!--- Ceremonies, events, milestones, planning and review -->
 
 
-Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving metrics and monitoring and reporting progress. 
+Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
 
+- Rollup columns on backlogs 
 - In-context reports 
 - Managed query charts such as pie, bar, stacked bar, trend, and pivot
 - Dashboard widgets 
@@ -32,7 +31,7 @@ Azure Boards provides a number of in-context charts, dashboard widgets, and work
 - Analytic Views to support Power BI reports 
 - OData queries to use with Power BI reports 
 
-For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md).  An additional backlog tool is Forecast which teams can use in their iteration planning. 
+For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). An additional backlog tool is Forecast which teams can use in their iteration planning. 
 
 In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe metrics 
 
@@ -41,7 +40,6 @@ In this tutorial, we illustrate some of the out-of-the-box charts and widgets th
 > - Cumulative Flod Diagram 
 > - Lead time and cycle time charts
 > - Iteration planning, team velocity, and forecast
-> 
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
@@ -58,27 +56,19 @@ Other rollup options include progress by specific work item types, progress by s
 
 ## View team velocity 
 
-## Review Progress 
-
-<!--- To be provided --> 
-
-## Review Roadmaps   
-
-
-## View Delivery Plans  
-
-
-## Progress reports 
-
-### Feature and Epic progress reports  
-
-Need to develop a report using Analytics view and Power BI. Want something to approximate the following: 
-**Replace with an Azure DevOps report**
+Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the example below, the chart also provides the average velocity calculated for the number of iterations shown. 
 
 > [!div class="mx-imgBorder"]  
-> ![SAFe Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
+> ![Velocity](media/safe/velocity-story-points.png)  
 
+This average can be used to forecast work by plugging it into the forecast tool. 
 
+## Forecast tool 
+
+By assigning Story Points to each User Story, a team can determine how much work they can complete using the Forecast tool. For details on its usage, see [Forecast your product backlog](../sprints/forecast.md).
+
+> [!div class="mx-imgBorder"]  
+> ![Forecast tool](../sprints/media/forecast-s125.png)
 
 ## View Cumulative Flow Diagram (CFD) 
 
@@ -114,25 +104,55 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 > [!div class="mx-imgBorder"]  
 > ![Example Cycle TIme Widget](../../report/dashboards/media/cycle-time-planning.png) 
 
-## Team velocity  
 
-Team velocity is often used as an input to support iteration or sprint planning.  
-Each team has access to their velocity through the in-context velocity report. These reports show a bar chart count of planned, completed, completed late, and incomplete work items for the last six or more iterations. As shown in the example below, the chart also provides the average velocity calculated for the number of iterations shown. 
+## View and update roadmaps    
 
-> [!div class="mx-imgBorder"]  
-> ![Velocity](media/safe/velocity-story-points.png)  
+You can review roadmaps of SAFe® deliverables using the Delivery Plans, Feature Time, and Epic Roadmap tools. Delivery Plans are fully configurable to show the teams and work item types of interest.  
 
-This average can be used to forecast work by plugging it into the forecast tool. 
+### Review feature team Delivery Plans  
 
-## Forecast tool 
-
-By assigning Story Points to each User Story, a team can determine how much work they can complete using the Forecast tool. For details on its usage, see [Forecast your product backlog](../sprints/forecast.md).
+Program teams can review roadmaps of the deliverables of their Agile Release Teams. As an example, the following image shows a snapshot of the Fiber Suite teams story deliverables. 
 
 > [!div class="mx-imgBorder"]  
-> ![Forecast tool](../sprints/media/forecast-s125.png)
+> ![Plans, Fiber Suite teams deliverables](media/safe-metrics/plan-fiber-suite-stories.png) 
 
+You can expand each feature team to see details. Story deliverables are assigned to the PI 1 sprints. Delivery Plans are fully interactive, allowing you to drag and drop work items to update their sprint assignments, or open work items to update fields, add comments, and other information. 
+
+> [!div class="mx-imgBorder"]  
+> ![Plans, Fiber Suite App team deliverables](media/safe-metrics/plan-fiber-suite-stories-expand-app-team.png) 
+
+### Review portfolio features deliverable 
+
+Portfolio teams can review the features under development by their program teams. For example, features under development by the Fiber Suite team are shown in the following delivery plan view. Note that the features under development show up under the Program Increment timeboxes.  
+ 
+> [!div class="mx-imgBorder"]  
+> ![Plans, Portfolio feature deliverables](media/safe-metrics/plan-portfolio-fiber-suite.png) 
+
+
+### Review feature timeline roadmaps 
+
+The feature timeline tool provides another view into progress of deliverables. Here we show the Fabrikam Team's Epics as shown in the Feature Timeline tool. Progress bars are configurable based on completed stories or effort.  
+
+> [!div class="mx-imgBorder"]  
+> ![Feature Timeline, Portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png) 
+
+
+
+### Feature and Epic progress reports  
+
+Need to develop a report using Analytics view and Power BI. Want something to approximate the following: 
+
+**Replace with an Azure DevOps report**
+
+> [!div class="mx-imgBorder"]  
+> ![SAFe Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
 
 
 ## Related articles
+
+- [Review team Delivery Plans](review-team-plans.md)
+- [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md)
+
+
 
 <!--- To be provided --> 
