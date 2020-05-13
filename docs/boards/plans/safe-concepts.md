@@ -264,7 +264,7 @@ This extension allows teams to create their own retrospecive boards and capture 
 ## Try this next
 
 > [!div class="nextstepaction"]
-> [Azure reports and SAFe® metrics](safe-metrics.md)
+> [Configure Azure Boards to support SAFe®](safe-configure-boards.md)
 
 
 

@@ -14,8 +14,6 @@
     href: scaled-agile-framework.md
   - name: SAFe® concepts & Azure Boards
     href: safe-concepts.md
-  - name: SAFe® metrics & Azure reports
-    href: safe-metrics.md
   - name: Configure Azure Boards
     href: safe-configure-boards.md 
   - name: Customize Azure Boards

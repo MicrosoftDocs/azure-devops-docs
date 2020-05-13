@@ -519,7 +519,7 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 
 ::: moniker-end
 
-<a id=programmatic-tools" /> 
+<a id="programmatic-tools" /> 
 
 ::: moniker range="azure-devops"
 
