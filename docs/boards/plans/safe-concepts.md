@@ -14,13 +14,13 @@ ms.date: 05/01/2020
 
 # How SAFe&reg; concepts map to Azure Boards artifacts 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 <!--- Intro To be provided --> 
 
 If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as Azure Boards supports Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
 
-This article illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
+This tutorial illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
 
 >[!div class="checklist"]  
 > * SAFe® roles and a team hierarchical structure  
@@ -34,6 +34,8 @@ This article illustrates how the following SAFe artifacts map to specific Azure 
 > * SAFe® Roadmaps  
 > * SAFe® Milestones and events  
 > * SAFe® Retrospectives and reviews  
+
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 
@@ -167,7 +169,7 @@ Use the Kanban board - Definition of Done - to align team members around updatin
 
 ## Value streams and budgets 
  
-You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, enablers, and associated budgets. 
+You can use tags for a quick and easy way to map epics to their Value Streams, strategic themes, enablers, and associated budgets. You can add custom fields to capture budget estimates for Features which can then roll up to Epics. 
 
 ::: moniker range=">= azure-devops-2019"
 
