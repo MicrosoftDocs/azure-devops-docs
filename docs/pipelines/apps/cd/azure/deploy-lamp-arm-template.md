@@ -144,7 +144,7 @@ steps:
 
 ## Clean up resources
 
- You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. 
+ You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
  ```yaml
  - task: AzureResourceManagerTemplateDeployment@3
@@ -156,4 +156,3 @@ steps:
     resourceGroupName: 'ARMPipelinesLAMP-rg'
     location: ''<your-closest-location>'
  ```
- 
