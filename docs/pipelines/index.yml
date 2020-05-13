@@ -12,7 +12,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 05/08/2020 
+  ms.date: 05/13/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -170,7 +170,7 @@ landingContent:
             url: yaml-schema.md
           - text: Variable groups
             url: ./library/variable-groups.md
-          - text: Release and artifacts variables
+          - text: Classic release and artifacts variables
             url: ./release/variables.md
           - text: Tasks
             url: ./tasks/index.md
