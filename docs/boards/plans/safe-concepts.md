@@ -154,22 +154,14 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 
 To learn more about the project wiki, see the [Related articles, information sharing](#related-articles) section. 
 
-<a id="roadmap" />
-
-## Roadmaps  
-
-SAFe&reg; roadmaps can be viewed via Delivery Plans and Feature Timeline extensions 
-
-<!--- To be provided --> 
-
-### Near term PI roadmap
-
-### Solution Train roadmap 
-
 
 <a id="milestones" />
 
-## Milestones and key events 
+## Milestones and key events  
+
+TO BE COMPLETED. 
+
+You can add milestones and key events to your Azure Boards projects through custom fields, or by entering them as an Iteration Path. 
 
 <a id="retrospectives" />
 
@@ -194,6 +186,8 @@ This extension allows teams to create their own retrospecive boards and capture 
 
 ## Related articles
 
+- [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)
+
 ### Culture and scale
 
 - [Agile culture](agile-culture.md)  
@@ -201,10 +195,11 @@ This extension allows teams to create their own retrospecive boards and capture 
 - [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
 ### Information sharing 
-	- [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
-	- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
-	- [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
-	- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
+
+- [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
+- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
+- [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
+- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
 
 
 <!---
