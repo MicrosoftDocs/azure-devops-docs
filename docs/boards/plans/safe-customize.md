@@ -17,7 +17,7 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, or supporting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
+The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
 
 Specifically, you'll learn how Azure Boards supports SAFe® practices by enabling you to perform the following customizations. 
 
@@ -125,14 +125,13 @@ You add a custom field to support tracking data requirements that aren't met wit
 
 For details on adding a customize a field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 
-### Tags versus a field 
+### Field versus tags usage  
 
-You can capture a value stream using tags or a field. Tags represent a more informal and adhoc method for categorizing work. A specific field, particularly one with preset items, is more formal. When determining how you want to use tags and fields, consider the following: 
+You can capture a value stream using a field or tags. Tags represent a more informal and adhoc method for categorizing work. A specific field, particularly one with preset items, is more formal. When determining how you want to use tags and fields, consider the following: 
 
-- Anyone can add new tags as long as they have the correct permissions. 
-- You can't require tags be added to a work item, however you can make a field required through custom rules. 
-- Tags can quickly  
-- 
+- You can make a field required through custom rules, however, you can't require tags be added to a work item. 
+- You can filter backlogs, boards, and queries based on fields or tags. 
+- The number of tags created can quickly grow as anyone can add new tags as long as they have the correct permissions. 
 
 
 <a id="wsjf" />
