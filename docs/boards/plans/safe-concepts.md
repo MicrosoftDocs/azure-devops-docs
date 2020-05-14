@@ -81,7 +81,7 @@ Product and portfolio backlogs enable teams to quickly add and prioritize their 
 
 <a id="backlogs-boards" />
 
-## Portfolio, program, and feature team backlogs and boards
+## Team backlogs and boards
 
 SAFe® backlogs map to team, program, and portfolio backlogs. 
 
@@ -95,7 +95,7 @@ You can customize your backlog and boards, even adding portfolio backlogs, as de
 
 <a id="iterations" />
 
-## Program Increments, releases, and sprints  
+## PIs, releases, and sprints  
 
 SAFe® Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 

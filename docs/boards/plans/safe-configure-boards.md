@@ -1,7 +1,7 @@
 ---
-title: Configure Azure Boards to support SAFe®
+title: Configure Azure Boards to support SAFeÂ®
 titleSuffix: Azure Boards
-description: Configure Azure Boards to support epics, release trains, and multiple backlogs to support SAFe® practices
+description: Configure Azure Boards to support epics, release trains, and multiple backlogs to support SAFeÂ® practices
 ms.technology: devops-agile
 ms.prod: devops
 ms.assetid:  
@@ -13,17 +13,17 @@ ms.date: 05/01/2020
 ---
 
 
-# Configure Azure Boards to support SAFe®
+# Configure Azure Boards to support SAFeÂ®
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-This tutorial walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
+This tutorial walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFeÂ® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFeÂ® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
 > * Define Agile feature, program, and portfolio teams  
 > * Configure a hierarchy of Area Paths to support your teams  
-> * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
-> * Configure each team to support SAFe® 
+> * Define Iteration Paths to support SAFeÂ® release trains, PIs, sprints, and IPs  
+> * Configure each team to support SAFeÂ®
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.   
 
@@ -75,7 +75,7 @@ In order to go from one project with one default team, area, and set of iteratio
 
 ## Define your teams 
 
-To start, we'll simply add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
+To start, we'll simply add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFeÂ® teams to Azure Boards teams:  
 - Portfolio team -> default top-level team, the Fabrikam team (already defined) 
 - Program teams -> secondary-level teams, Fiber Suite and Service Suite  
 - Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
@@ -435,12 +435,70 @@ These are the recommended settings to make based on the team level.
 
 ::: moniker-end
 
+
+<a id="programmatic-tools" /> 
+
+::: moniker range="azure-devops"
+
+## Command line and programmatic tools
+
+You can use Azure DevOps command line tools to add or update the following artifacts:
+
+- **Teams**: [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) 
+- **Area Paths**: [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area)
+- **Iteration Paths**: [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+## Programmatic tools
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
+
+You can use Azure DevOps REST APIs to add or update the following artifacts:
+
+- **Teams**: [Teams (REST API)](/rest/api/azure/devops/core/teams)  
+- **Area Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
+- **Iteration Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) 
+
+::: moniker-end
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Customize Azure Boards to support SAFeÂ®](safe-customize.md)  
+
+
+## Related articles
+
+- [Add teams](../../organizations/settings/add-teams.md)
+- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
+- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
+- [Teams (REST API)](/rest/api/azure/devops/core/teams)  
+
+
+<!---
+
+
+	From the team profile, you can do these additional tasks:  
+   - [Add team administrators](../../organizations/settings/add-team-administrator.md)
+   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
+   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
+
+To configure other team features, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
+
+
+
 ::: moniker range="<= tfs-2018"
 
 ## Configure your teams
 
 In this section, we'll show how to configure a hierarchical team structure which maps to the hierarchical area paths we created previously.
-This structure maps the following SAFe® teams to your Agile tools' teams:  
+This structure maps the following SAFeÂ® teams to your Agile tools' teams:  
 - Portfolio team -> default top-level team, the Fabrikam team  
 - Program teams -> secondary-level teams, Fiber Suite and Service Suite  
 - Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
@@ -521,60 +579,4 @@ Now that your sub-team structure is configured, we reconfigure the default team 
 	![Overview page, Portfolio team members](media/safe-overview-portfolio-team-members.png)
 
 ::: moniker-end
-
-<a id="programmatic-tools" /> 
-
-::: moniker range="azure-devops"
-
-## Command line and programmatic tools
-
-You can use Azure DevOps command line tools to add or update the following artifacts:
-
-- **Teams**: [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) 
-- **Area Paths**: [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area)
-- **Iteration Paths**: [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-## Programmatic tools
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
-You can use Azure DevOps REST APIs to add or update the following artifacts:
-
-- **Teams**: [Teams (REST API)](/rest/api/azure/devops/core/teams)  
-- **Area Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
-- **Iteration Paths**: [Classification nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes) 
-
-::: moniker-end
-
-## Try this next
-
-> [!div class="nextstepaction"]
-> [Customize Azure Boards to support SAFe®](safe-customize.md)  
-
-
-## Related articles
-
-- [Add teams](../../organizations/settings/add-teams.md)
-- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
-- [Azure DevOps CLI](/cli/azure/ext/azure-devops/)  
-- [Teams (REST API)](/rest/api/azure/devops/core/teams)  
-
-
-<!---
-
-
-	From the team profile, you can do these additional tasks:  
-   - [Add team administrators](../../organizations/settings/add-team-administrator.md)
-   - [Navigate to team notifications](../../notifications/howto-manage-team-notifications.md)
-   - [Navigate to and set default team dashboard permissions](../../report/dashboards/dashboard-permissions.md)
-
-To configure other team features, see [Manage teams and configure team tools](../../organizations/settings/manage-teams.md).
-
-
-
 -->
