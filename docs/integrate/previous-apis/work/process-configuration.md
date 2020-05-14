@@ -10,11 +10,11 @@ author: chcomley
 ms.date: 08/17/2016
 ---
 
-[!INCLUDE [latest](./_data/see-latest.md)]
-
 # Process Configuration
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
+[!INCLUDE [latest](./_data/see-latest.md)]
 
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
