@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="azure-devops"
 
-Classic release and artifacts variables are a very convenient way to exchange and transport data throughout your pipeline. Each variable is stored as a string and its value can change between runs of your pipeline.
+Classic release and artifacts variables are a convenient way to exchange and transport data throughout your pipeline. Each variable is stored as a string and its value can change between runs of your pipeline.
 
 Variables are different from [Runtime parameters](../process/runtime-parameters.md) which are only available at template parsing time.
 
@@ -141,7 +141,7 @@ it implies that the variable is not populated for that artifact type.
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.RequestedFor | The name of the account that requested the build.<br /><br />Azure Pipelines example: `Mateo Escobedo` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.Type | The type of artifact source, such as Build.<br /><br />Azure Pipelines example: `Build`<br />Jenkins example: `Jenkins`<br />TeamCity example: `TeamCity`<br />TFVC example: `TFVC`<br />Git example: `Git`<br />GitHub example: `GitHub` |
 | Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranch | The full path and name of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `refs/heads/master` |
-| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranchName | The name only of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure pipelines example: `master` |
+| Release.Artifacts.{[alias](artifacts.md#source-alias)}.PullRequest.TargetBranchName | The name only of the branch that is the target of a pull request. This variable is initialized only if the release is triggered by a pull request flow.<br /><br />Azure Pipelines example: `master` |
 
 See also [Artifact source alias](artifacts.md#source-alias)
 
@@ -177,7 +177,7 @@ you would use `$(Release.Artifacts.ASPNET4.CI.DefinitionName)`.
 ![Using artifact variables in arguments to a PowerShell Script task](media/variables-01.png)
 
 To use a default variable in your script, you must first replace the `.` in the default variable names with `_`.
-For example, to print the value of artifact variable `Release.Artifacts.{Artifact alias}.DefinitionName` for the artifact source whose alias is **ASPNET4.CI** in a Powershell script,
+For example, to print the value of artifact variable `Release.Artifacts.{Artifact alias}.DefinitionName` for the artifact source whose alias is **ASPNET4.CI** in a PowerShell script,
 you would use `$env:RELEASE_ARTIFACTS_ASPNET4_CI_DEFINITIONNAME`.
 
 ![Using artifact variables in an inline PowerShell script](media/variables-02.png)
@@ -218,7 +218,8 @@ release stage, in debug mode. This can help you resolve issues and failures.
   containing a variable named `System.Debug` with the value `true`
   and link this variable group to a release pipeline.
 
->If you get an error related to an Azure RM service connection,
+> [!TIP]
+> If you get an error related to an Azure RM service connection,
 see [How to: Troubleshoot Azure Resource Manager service connections](azure-rm-endpoint.md).
 
 ## Custom variables
@@ -273,7 +274,7 @@ value of that variable into a parameter of a task as `$(adminUserName)`.
 [!INCLUDE [variable-collision](../includes/variable-collision.md)]
 
 You can use custom variables to prompt for values during the execution of a release.
-For more details, see [Approvals](approvals/index.md#scenarios).
+For more information, see [Approvals](approvals/index.md#scenarios).
  
 [!INCLUDE [set-variables-in-scripts](../includes/set-variables-in-scripts.md)]
 
