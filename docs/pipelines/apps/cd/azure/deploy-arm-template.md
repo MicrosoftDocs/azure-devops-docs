@@ -72,24 +72,35 @@ https://github.com/Azure/azure-quickstart-templates/
 
 8. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
 
-:::code language="yaml" source="code/arm-variables.md" range="1-9" highlight="2-3":::
-
-9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
-  ``` yaml
-  variables:
+```yaml
+variables:
   ARM_PASS: $(adminPass)
 
-   trigger:
-   - none
+trigger:
+  - none
 
-   pool:
-   vmImage: 'ubuntu-latest'
+pool:
+  vmImage: 'ubuntu-latest'
 
-  - task: CopyFiles@2
-    inputs:
-      SourceFolder: '101-webapp-linux-managed-mysql'
-      Contents: '**'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+```
+
+9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
+
+``` yaml
+variables:
+ARM_PASS: $(adminPass)
+
+  trigger:
+  - none
+
+  pool:
+  vmImage: 'ubuntu-latest'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '101-webapp-linux-managed-mysql'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
   ``` 
 
 
