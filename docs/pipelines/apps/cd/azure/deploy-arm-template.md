@@ -1,6 +1,6 @@
 ---
 title: Use an ARM template to deploy a Linux and MySQL web app to Azure
-description: Deploy a webapp with the Azure Resource Manager (ARM) Template Deployment Task
+description: Deploy a webapp with the Azure Resource Manager (ARM) Template Deployment task
 ms.topic: conceptual
 ms.author: jukullam
 author: JuliaKM
@@ -8,11 +8,11 @@ ms.date: 05/07/2020
 monikerRange: '=azure-devops'
 ---
 
-# Use an ARM template to deploy an app
+# Use an Azure Resource Manager (ARM) template to deploy an app
 
-Get started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a web app on Linux with Azure database for MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
+Get started with [ARM templates](/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
-You can use ARM templates within Azure Pipelines with the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
+In this article, you will learn how to use the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ https://github.com/Azure/azure-quickstart-templates/
    ```
 
 7. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
-    * Click **Variables**. 
+    * Select **Variables**. 
     * Add the three variables. When you create `administratorLoginPassword`, select **Keep this value secret**. 
         
    |Variable  |Value  |Secret?  |
@@ -74,7 +74,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 :::code language="yaml" source="code/arm-variables.md" range="1-9" highlight="2-3":::
 
-1. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
+9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
   ``` yaml
   variables:
   ARM_PASS: $(adminPass)
@@ -93,19 +93,19 @@ https://github.com/Azure/azure-quickstart-templates/
   ``` 
 
 
-9. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
+10. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
 
-   - **Deployment scope (deploymentScope)**: `Resource Group`
-   - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. You may need to authorize the connection as part of this process. 
-   - **Subscription (subscriptionId)**: Select your subscription. 
-   - **Action (action)**: Set to `Create or update resource group`. 
-   - **Resource group**: The name for the new resource group. Set to`ARMPipelinesLAMP-rg`. 
-   - **Location(location)**: Location for deploying the resource group. Set to your closest location.
-   - **Template location (templateLocation)**: Set to `Linked artifact`. 
-   - **Template (cmsFile)**: Path to the ARM template. Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`.
-   - **Template parameters (cmsParametersFile)**:  The path to the parameters file for your ARM template. Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`.
-   - **Override template parameters (overrideParameters)**: A place to override the parameter values from the template parameters file. Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier.
-   - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`. 
+   - **Deployment scope (deploymentScope)**: Set the deployment scope to `Resource Group`. You can target your deployment to a management group, an Azure subscription, or a resource group. 
+   - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To a configure new service connection, select the Azure subscription from the list and select **Authorize**.
+   - **Subscription (subscriptionId)**: Select the subscription where the deployment should go.
+   - **Action (action)**: Set to `Create or update resource group` to creates a new resource group or to update an existing one. 
+   - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.
+   - **Location(location)**: Location for deploying the resource group. Set to your closest location. If the resource group already exists in your subscription, this value will be ignored.
+   - **Template location (templateLocation)**: Set to `Linked artifact`. This is location of your template and the parameters files.
+   - **Template (cmsFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
+   - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
+   - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
+   - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
    
 ```yaml
 variables:
@@ -139,7 +139,7 @@ steps:
     deploymentMode: 'Incremental'
 ```
 
-10. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+11. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
 
