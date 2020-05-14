@@ -41,7 +41,7 @@ For an overview of how Azure Boards implements Scrum and Kanban, see [About Spri
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 
-![Agile tool  tructure to support SAFe®](media/safe-objects-map-to-vso-objects.png)  
+![Agile tool structure to support SAFe®](media/safe-objects-map-to-vso-objects.png)  
 
 Examples provided below illustrate how a three-level team hierarchy is configured using hierarchical area paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, you can apply these changes to any project hosted on Azure Boards.
 
@@ -50,7 +50,7 @@ Examples provided below illustrate how a three-level team hierarchy is configure
  
 ## Agile teams, program and portfolio teams 
 
-Azure Boards supports each team to have its own view their work. By configuring a hierarchical team structure, each team can focus on their work, and have their work roll up to the next level within the team hiearchy.   
+Azure Boards supports each team to have its own view their work. By configuring a hierarchical team structure, each team can focus on their work, and have their work roll up to the next level within the team hierarchy.   
 
 ![SAFe® roles map to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
 
@@ -169,7 +169,7 @@ You can add milestones and key events to your Azure Boards projects through cust
 
 To support teams performing retrospectives and reviews, we recommend using the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives). 
 
-This extension allows teams to create their own retrospecive boards and capture the following tasks: 
+This extension allows teams to create their own retrospective boards and capture the following tasks: 
 - Collect feedback on project milestones
 - Organize and prioritize that feedback
 - Create and track actionable tasks to help each team in their improvement processes.

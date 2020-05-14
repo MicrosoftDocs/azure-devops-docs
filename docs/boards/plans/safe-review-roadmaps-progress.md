@@ -37,7 +37,7 @@ In this tutorial, we illustrate some of the out-of-the-box charts and widgets th
 
 >[!div class="checklist"]      
 > - Progress reports
-> - Cumulative Flod Diagram 
+> - Cumulative Flow Diagram 
 > - Lead time and cycle time charts
 > - Iteration planning, team velocity, and forecast
 
@@ -147,6 +147,11 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 > [!div class="mx-imgBorder"]  
 > ![SAFe® Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Sign up for Azure Boards for free](../get-started/sign-up-invite-teammates.md) 
 
 
 ## Related articles
