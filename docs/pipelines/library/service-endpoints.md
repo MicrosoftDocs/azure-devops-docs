@@ -6,7 +6,7 @@ ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/17/2020
+ms.date: 05/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -31,7 +31,7 @@ and use this service connection name in an Azure Web Site Deployment task in a r
 
 You define and manage service connections from the Admin settings of your project:
 
-* Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
+* Azure DevOps: `https://dev.azure.com/{organization}/{project}/adminservices`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
 Service connections are created at project scope. A service connection created in one project is not visible in another project.
