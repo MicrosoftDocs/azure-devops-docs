@@ -74,7 +74,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a service connection and must be declared as a repository resource.
+> GitHub and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
 
 ```yaml
 steps:
@@ -86,10 +86,10 @@ steps:
 
 ## Checkout path
 
-Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
 
-- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
-- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+- **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
   
   > [!NOTE]
   > If no `path` is specified in the `checkout` step, the name of the repository is used for the folder,
