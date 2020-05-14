@@ -33,7 +33,6 @@ By default, Project Collection Administrators (PCAs) are the only group that hav
 
 You must have the following permissions:
 
-- PCA
 - Manage audit streams
 - View audit log
   
@@ -114,7 +113,7 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
 6. For target options, select **Azure Monitor Logs**. 
 
-7. Enter the workspace ID and primary key, and then select **Set up**. 
+7. Enter the workspace ID and primary key, and then select **Set up**. The primary key is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the key regularly, which you can do by getting a new key from Azure Monitor Log and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-monitor-logs.png" alt-text="Enter workspace ID and primary key to create":::
 
