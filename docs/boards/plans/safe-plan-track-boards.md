@@ -12,13 +12,13 @@ ms.date: 05/01/2020
 ---
 
 
-# Plan and track SAFe&reg; programs and portfolios  
+# Plan and track SAFe® programs and portfolios  
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 Once you've configured your Agile tools to support SAFe, trace relationships can be created from stories all the way up to epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
-This article walks you through some of the basic tools you'll use to plan and track your SAFe&reg; programs and portfolios. Specifically, you'll learn how to quickly perform these tasks:
+This article walks you through some of the basic tools you'll use to plan and track your SAFe® programs and portfolios. Specifically, you'll learn how to quickly perform these tasks:
 
 >[!div class="checklist"]      
 > - Define epics, features, and stories  
@@ -352,7 +352,7 @@ What about features already in progress? They definitely won't appear on the Por
 
 You can also [bulk edit work items and manage their hierarchy in Microsoft Excel](../backlogs/office/bulk-add-modify-work-items-excel.md).  
 
-Since an important aspect of SAFe is to map work to business or architecture goals, you'll want to make sure to set the Value Area=Architectural for any feature mapped to an architecture epic. (Because the default choice is Business, you don't have to change the field for any item that supports a business epic.) You can also add tags to track the investment.  
+Since an important aspect of SAFe® is to map work to business or architecture goals, you'll want to make sure to set the Value Area=Architectural for any feature mapped to an architecture epic. (Because the default choice is Business, you don't have to change the field for any item that supports a business epic.) You can also add tags to track the investment.  
 
 The same principles apply to user stories in progress. You can map them to features, change the requirement type to Architecture for work that you do to support architectural epics, and add tags for tracking themes.  
 

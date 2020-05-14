@@ -33,18 +33,18 @@ This article introduces the components of Azure Boards that support SAFe®:
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
-## The Scaled Agile Framework®
+## The Scaled Agile FrameworkÃ‚®
 
 The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
 
 ### Version 5.0 
 
-![SAFe architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
+![SAFe® architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
-SAFe and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
+SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
 ### SAFe® 5.0 Business Agility 
 
@@ -57,7 +57,7 @@ Many SAFe® practices include growing a culture that supports agility, alignment
 
 Essential SAFe&reg; requires support for the artifacts and practices illustrated in the following poster. 
 
-![Essential SAFe poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
+![Essential SAFe® poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
  
 All of these artifacts and practices are supported by Azure Boards. 
 
@@ -73,7 +73,7 @@ All of these artifacts and practices are supported by Azure Boards.
 
 Portfolio SAFe® adds support for managing portfolios through epics, enablers, and value streams.  
 
-![Portfolio SAFe poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
+![Portfolio SAFe® poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
 
 Azure Boards provides supports for portfolio components includes the following:
 
@@ -88,7 +88,7 @@ Azure Boards provides supports for portfolio components includes the following:
 
 Large Solutions SAFe® includes support for a Solution Backlog, Solution Trains, and Capabilities.   
 
-![Large Solution SAFe poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
+![Large Solution SAFe® poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
 
 You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support additional solution requirements.       
 
@@ -97,12 +97,12 @@ You can implement large solutions in much the same way as you implement Portfoli
 
 Full SAFe® includes the three levels of Essential SAFe®, Large Solution SAFe®, and Portfolio SAFe®. 
 
-![Full SAFe poster architectural overview &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
+![Full SAFe® poster architectural overview &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
 
 
-## Quick reference mapping
+## How SAFe® artifacts map to Azure Boards  
 
-The following table maps SAFe terms or artifacts to the equivalent Azure Boards term or artifact. Choose the link to learn about implementation details. 
+The following table maps SAFe® terms or artifacts to the equivalent Azure Boards term or artifact. Choose the link to learn about implementation details. 
 
 :::row:::
    :::column span="":::
@@ -323,14 +323,14 @@ The following table maps SAFe terms or artifacts to the equivalent Azure Boards 
 
 
 
-## Azure Boards implementation of SAFe®
+## Azure Boards implementation of SAFeÃ‚®
 
 Each of the following articles within this suite of tutorials provide details on how you can configure, customize, and use Azure Boards to implement your SAFe® programs and projects.   
 
 >[!div class="checklist"]  
 > * [How SAFe® concepts map to Azure Boards artifacts](safe-concepts.md)  
-> * [Configure Azure Boards to support SAFe®](safe-configure-boards.md )  
-> * [Customize Azure Boards to support SAFe®](safe-customize.md)   
+> * [Configure Azure Boards to support SAFeÃ‚®](safe-configure-boards.md )  
+> * [Customize Azure Boards to support SAFeÃ‚®](safe-customize.md)   
 > * [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
 > * [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)  
 
@@ -353,11 +353,11 @@ Each of the following articles within this suite of tutorials provide details on
 ## Resources
 
 Resources mentioned earlier in this article and a few more are provided here for convenient reference.  
-- SAFe enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
+- SAFe® enabled processes: Link to a download of the three Agile tool processes: [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
 
-- [Scaled Agile Framework](http://scaledagileframework.com/): SAFe resource site.  
-- [SAFe in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
-- [Scaling Agile and SAFe Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
+- [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
+- [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
+- [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.  
 - Agile Portfolio Management: Using TFS to support backlogs across multiple teams : white paper that shows how to configure TFS to support multiple teams and multiple backlogs.  
 - [Support rollup of work and other fields](../../reference/xml/support-rollup-of-work-and-other-fields.md): Describes how to configure TFS to support rollup, the summed values of select fields for all child work items of a parent. Because TFS supports multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values.  
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
@@ -381,7 +381,7 @@ This article has been updated from the previous white paper developed in collabo
 <!---
 ::: moniker range="<= tfs-2018" 
 
-![SAFe architectural overview &copy; D. Leffing..](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
+![SAFe® architectural overview &copy; D. Leffing..](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 
 ### SAFe® 5.0 
 
