@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 03/11/2020
+ms.date: 05/14/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -33,9 +33,9 @@ The following combinations of `checkout` steps are supported.
 
 ### Repository declared using a repository resource
 
-You must use a repository resource if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](../yaml-schema.md#repository-resource).
+In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github) and [BitBucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which checkout out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
