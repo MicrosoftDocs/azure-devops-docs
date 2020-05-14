@@ -34,6 +34,8 @@ Specifically, you'll learn how Azure Boards supports SAFe® practices by enablin
 
 ## About customization and the inherited process
 
+TO BE COMPLETED. 
+
 <!--- Azure Boards supports a graphical user interface for customizing an Inherited process.  --> 
 
 <a id="customize-wits" />
@@ -44,11 +46,12 @@ Each work item type defines the fields that capture and store information. You c
 
 - [Add a custom field](#add-custom-field) to support tracking budget costs, value streams, or customer-centric information  
 - [Customize existing fields](#customize-fields), such as modifying the picklist or changing a field label  
-- [Change the workflow](#custom-workflow) to reflect your team's Kanban workflow process 
-- [Add custom rules](#custom-rules) to make select fields required or specify actions to take under select conditions  
+- [Add custom rules](#custom-rules) to make select fields required or specify actions to take under select conditions 
+- [Change the workflow](#custom-workflow) to reflect your team's Kanban workflow process  
 - [Add a custom control or extension](#custom-control) to support custom functions such as a calculated field. 
 
-For details on customizing a work item type, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md). 
+
+For details on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md).
 
 <a id="add-custom-field" /> 
 
@@ -125,7 +128,7 @@ You add a custom field to support tracking data requirements that aren't met wit
 :::row-end:::
  
 
-For details on adding a customize a field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
+For details on adding a custom field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 
 ### Field versus tags usage  
 
@@ -166,13 +169,30 @@ For details on adding and managing the extension, see the [WSJF extension overvi
 
 ## Customize existing fields  
 
-Customize pick lists - Value Area 
-Custom field - Milestone // Releases 
+You customize existing fields to support one or more of the following actions: 
+- Relabel the name of the field.
+- Change where the field appears on the work item form or remove it from the form. 
+- Add or change a picklist (drop-down menu). For example, the *Value Area* provides two options, *Business* and *Architectural*. You can add to this picklist of values. 
+- Change the default assignment made to a field. 
+- Make a field required.
+- [Add a rule to a field](#custom-rules) as described in the next section. 
 
-Customer Centric - fields to capture customer requests 
-
-For an index of existing fields, see [Work item field index](../work-items/guidance/work-item-field.md). For details on customizing a field, see [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md). 
+For an index of existing fields, see [Work item field index](../work-items/guidance/work-item-field.md). For details on customizing a field, see [Add and manage fields for an inherited process](../../organizations/settings/work/customize-process-field.md).  
  
+
+<a id="custom-rules" /> 
+
+## Add rules to a field  
+
+Field rules provide support for a number of business use cases. Rules specify an action to take based on a selected condition. For example you can make a field required based on the value assigned to another field. You can add several rules to a field. 
+
+The following image shows the supported conditions and actions you can select from. 
+
+![Supported field conditions and actions](../../organizations/settings/work/media/rules/when-condition-2.png)  
+
+For details on setting field rules, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
+
+
 
 <a id="custom-workflow" /> 
 
@@ -193,23 +213,14 @@ Review with your team's what workflow states will most support their Agile pract
 - [Definition of Done](../boards/definition-of-done.md)  
 
 
-<a id="custom-rules" /> 
-
-## Custom rules
-
-Typically you add rules to work item types for the following reasons: 
-
-- You want to make a field required 
-Restrict or grant access to select features
-
-
-
 <a id="custom-control" /> 
 
 
 ## Custom controls 
 
+With custom controls, you can add rich functionality to a work item form. A custom control is an extension that's been added to the [Marketplace Extensions for Azure DevOps](https://marketplace.visualstudio.com/).  
 
+One example of a custom control is the [WSJF control](#wsjf) described earlier in this article. You can add controls from the Marketplace or create your own. 
 
 
 - [WorkBoard OKRs](https://marketplace.visualstudio.com/items?itemName=wobo-okrs.workboard-ado-extension) Integrates WorkBoard helps organizations align, localize and measure Objectives and Key Results (OKRs) across the business. With this integration, teams can view and update their OKRs from within Azure DevOps. 
@@ -231,33 +242,36 @@ To keep things simple, however, it's always best to minimize the amount of custo
 
 
 <a id="custom-backlog" />
+<a id="add-custom-backlog" />
 
 ## Customize your backlogs  
 
-Each team's backlog and board is designed to support specific work item types, as follows:   
+Each team's backlog and board is designed to support specific work item types. For the Agile process, the work item types are as listed. 
 - **Agile Release Teams**: User Stories and, optionally, Bugs
 - **Program Teams**: Features
 - **Portfolio Teams**: Epics
 
-As needed, however, you can add other work item types, existing or custom, to these backlogs. Each team can subscribe to the set of backlogs that they need to track. 
+However, you can add other work item types, existing or custom, to these backlogs. Each team can subscribe to the set of backlogs that they need to track. 
 
-<a id="add-custom-backlog" />
+Also, you can add up to three additional portfolio backlogs as shown in the following illustration. Portfolio backlogs are designed to be hierarchical. For SAFe, you may want to add a Solution Backlog that appears as a parent to the Epic backlog. 
 
-## Add a custom portfolio backlogs  
-
-to support a Solution Backlog
-
-## Restrict or grant access to select features 
+> [!div class="mx-imgBorder"]  
+> ![Additional portfolio backlogs](../../organizations/settings/work/media/process/portfolio-backlogs-modified.png)  
 
 
+For details on customizing backlogs, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
-<a id="project-scale" />
 
-## When to add another project 
- 
-- [About projects and scaling your organization](../../organizations/projects/about-projects.md)
+## Add functionality 
 
-- [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
+You add the following Marketplace extensions to get access to a number of rich features that support SAFe. 
+
+- [Delivery Plans](../plans/review-team-plans.md)
+- [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+- [Dependency Tracker](dependency-tracker.md)
+- [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
+- [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
+
 
 
 ## Try this next
@@ -269,13 +283,23 @@ to support a Solution Backlog
 
 ## Related articles
 
-<!--- To be provided --> 
-
-
 Prior to customizing your project, we recommend you read the [Configure and customize Azure Boards](../configure-customize.md). It provides detailed information on administrating a project for several teams and supporting various business objectives.  
+
+See also: 
+
+- [Grant or restrict access](../../organizations/security/restrict-access.md) 
+- [Develop a web extension for Azure DevOps Services](../../extend/get-started/node.md)
+- [About projects and scaling your organization](../../organizations/projects/about-projects.md)
+- [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md)
 
 
 <!--- 
+
+
+<a id="project-scale" />
+
+## When to add another project 
+ 
 
 ## Required customization
 
