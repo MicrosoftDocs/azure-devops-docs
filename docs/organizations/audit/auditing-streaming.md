@@ -25,7 +25,7 @@ Auditing streams represent a pipeline that flows audit events from your Azure De
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
 - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlogs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
-- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent to particular locations, streaming outside of Azure isn't supported. However, you can set up an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
+- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent somewhere else, whether inside or outside of Azure, you can set up an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ Streams send data to Splunk via the HTTP Event Collector endpoint.
 > When you're creating a new Event Collector token in Splunk, don't check “Enable indexer acknowledgement”. If it's checked, then no events flow into Splunk. You can edit the token in Splunk to remove that setting. 
 
 2. Enter your Splunk URL, which is the pointer to your Splunk instance. Ensure that you include “input-” at the start of your Splunk URL. So, if your Splunk URL was “https://prd-p-2k3mp2xhznbs.cloud.splunk.com:8088," enter https://input-prd-p-2v3mp2xhznbs.cloud.splunk.com:8088. 
-3. Enter the event collector token you created into the token field. 
+3. Enter the event collector token you created into the token field. The token is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the token regularly, which you can do by getting a new token from Splunk and editing the stream.
 
    :::image type="content" source="media/auditing-streaming/create-stream-splunk.png" alt-text="Enter topic endpoint and access key that you noted earlier":::
 
@@ -96,7 +96,7 @@ Events begin to arrive on Splunk within 5 minutes.
 
    :::image type="content" source="media/auditing-streaming/azure-event-grid.png" alt-text="Azure Event Grid information":::
 
-3. Enter the topic endpoint and one of the access keys.  
+3. Enter the topic endpoint and one of the access keys. The access key is stored securely within Azure DevOps and never displayed again in the UI. We recommend rotating the access key regularly, which you can do by getting a new key from Azure Event Grid and editing the stream
 
    :::image type="content" source="media/auditing-streaming/create-stream-azure-event-grid.png" alt-text="Enter workspace ID and primary key to create":::
 
@@ -107,7 +107,7 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 1. Create a [Log Analytics workspace](https://aka.ms/adostreamingcreateloganalytics).
 2. Open the workspace and select **Advanced settings**.
 3. Select **Connected Sources** > **Windows Server**. 
-4. Take note of the workspace ID and primary key.
+4. Make note of the workspace ID and primary key.
 
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
 
@@ -135,13 +135,13 @@ Parameters available for editing differ per stream type.
 ## Disable a stream
  
 1. Next to the stream that you want to disable, move the **Enabled** toggle from *On* to *Off*.  
-   When streams encounter a failure, they may become disabled. You can get details on the failure from the status shown next to the stream, or by selecting **Edit stream** You can also disable a stream manually, and then re-enable it later. 
+   When streams encounter a failure, they may become disabled. You can get details on the failure from the status shown next to the stream, or by selecting **Edit stream**. You can also disable a stream manually, and then re-enable it later. 
 
    :::image type="content" source="media/auditing-streaming/disable-stream-move-toggle-off.png" alt-text="Move toggle to Off to disable stream":::
 
 2. Select **Save**.
 
-You can re-enable a disabled stream. It will catch up on any audit events that were missed for up to the previous seven days for up to the last seven days. That way you don’t miss out on any events from the duration that the stream was disabled. 
+You can re-enable a disabled stream. It will catch up on any audit events that were missed for up to the previous seven days. That way you don’t miss out on any events from the duration that the stream was disabled. 
 
 > [!NOTE]
 > If a stream is disabled for more than 7 days, events older than 7 days aren't included in the catch up. 
