@@ -19,8 +19,13 @@ monikerRange: '>= tfs-2015'
 ::: moniker-end
 
 ::: moniker range="azure-devops"
+
+Classic release and artifacts variables are a very convenient way to exchange and transport data throughout your pipeline. Each variable is stored as a string and its value can change between runs of your pipeline.
+
+Variables are different from [Runtime parameters](../process/runtime-parameters.md) which are only available at template parsing time.
+
 > [!NOTE] 
-> This topic covers classic release pipelines. To understand variables in YAML pipelines, see [variables](../process/variables.md).
+> This is a reference article that covers the classic release and artifacts variables. To understand variables in YAML pipelines, see [user-defined variables](../process/variables.md).
 ::: moniker-end
 
 As you compose the tasks for deploying your application into each stage in your DevOps CI/CD processes, variables will help you to:
@@ -38,6 +43,7 @@ being run. For example, your script may need access to the location
 of the build to download it, or to the working directory on the
 agent to create temporary files. These are **default variables**.
 
+> [!TIP]
 > You can view the [current values of all variables](#view-vars) for a release,
 and use a default variable to [run a release in debug mode](#debug-mode).
 
