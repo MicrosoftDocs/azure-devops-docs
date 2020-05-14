@@ -12723,6 +12723,11 @@
       "source_path": "docs/repos/git/overview.md",
       "redirect_url": "/azure/devops/repos/git/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-users-table-view.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
+      "redirect_document_id": false
     }
   ]
 }

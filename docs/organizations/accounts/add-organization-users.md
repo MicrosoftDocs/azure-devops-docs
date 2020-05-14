@@ -70,7 +70,7 @@ To give other users access to your organization, add their email addresses.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
+[Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
 
 <a id="add-user" /> 
