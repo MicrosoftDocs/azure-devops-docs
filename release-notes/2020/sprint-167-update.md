@@ -14,6 +14,10 @@ Check out the [Features](#features) list below for details.
 
 ## Features
 
+### General:
+
+[!INCLUDE [sprint-166-update-links](includes/general/sprint-167-update-links.md)]
+
 ### Azure Boards
 [!INCLUDE [sprint-167-update-links](includes/boards/sprint-167-update-links.md)]
 
@@ -26,6 +30,8 @@ Check out the [Features](#features) list below for details.
 ### Azure Artifacts
 [!INCLUDE [sprint-167-update-links](includes/artifacts/sprint-167-update-links.md)]
 
+## General
+[!INCLUDE [sprint-166-update](includes/general/sprint-167-update.md)]
 
 ## Azure Boards
 [!INCLUDE [sprint-167-update](includes/boards/sprint-167-update.md)]
@@ -58,8 +64,3 @@ We would love to hear what you think about these features. Use the help menu to 
 > ![Make a suggestion](../media/make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
-  
-Thanks,
-
-Aaron Hallberg
-  

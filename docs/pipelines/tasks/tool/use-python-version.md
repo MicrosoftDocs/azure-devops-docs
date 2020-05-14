@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: dastahel
-ms.date: 04/25/2019
+ms.date: 04/21/2020
 monikerRange: azure-devops
 ---
 
@@ -40,11 +40,11 @@ This task will fail if no Python versions are found in Agent.ToolsDirectory. Ava
 
 ## Arguments
 
-| Argument | Description | Default |
-|----------|-------------|---------|
-| Version spec | Version range or exact version of a Python version to use. | 3.x |
-| Add to PATH | Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable. | true |
-| Advanced - Architecture | The target architecture (x86, x64) of the Python interpreter. x86 is supported only on Windows. | x64 |
+| Argument | Description |
+|----------|-------------|
+|`versionSpec`<br/> Version spec | (Required) Version range or exact version of a Python version to use. <br/>Default value: `3.x` |
+|`addToPath`<br/> Add to PATH | (Required) Whether to prepend the retrieved Python version to the PATH environment variable to make it available in subsequent tasks or scripts without using the output variable.<br/>Default value: `true` |
+|`architecture`<br/> Architecture | (Required) The target architecture (x86, x64) of the Python interpreter. x86 is supported only on Windows.<br/>Default value: `x64` |
 
 ::: moniker range="> azure-devops-2019"
 

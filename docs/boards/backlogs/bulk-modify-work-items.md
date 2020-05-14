@@ -97,8 +97,8 @@ All of the following actions can be performed by team members that belong to the
 <li><a href="copy-clone-work-items.md#copy-clone" data-raw-source="[Clone or copy a single item](copy-clone-work-items.md#copy-clone)">Clone or copy a single item</a> <sup>2</sup></li>
 <li><a href="copy-clone-work-items.md#html" data-raw-source="[Copy as HTML/Copy to clipboard](copy-clone-work-items.md#html)">Copy as HTML/Copy to clipboard</a></li>
 <li><a href="../queries/share-plans.md" data-raw-source="[Email selected item(s)](../queries/share-plans.md)">Email selected item(s)</a></li>
-<li><a href="remove-delete-work-items.md#change-type" data-raw-source="[Change work item type](remove-delete-work-items.md#change-type)">Change work item type</a><sup>1</sup></li>
-<li><a href="remove-delete-work-items.md#move" data-raw-source="[Move items to another project](remove-delete-work-items.md#move)">Move items to another project</a><sup>1, 3</sup></li>
+<li><a href="move-change-type.md#change-type" data-raw-source="[Change work item type](move-change-type.md#change-type)">Change work item type</a><sup>1</sup></li>
+<li><a href="move-change-type.md#move" data-raw-source="[Move items to another project](move-change-type.md#move)">Move items to another project</a><sup>1, 3</sup></li>
 </ul>
 </td>
 </tr>

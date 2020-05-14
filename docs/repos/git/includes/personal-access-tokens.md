@@ -94,7 +94,7 @@ ms.topic: include
 
 6. When you're done, make sure to *copy the token*. You'll use this token as your password. Select **Close**.
 
-   <img alt="Use a token as the password for your Git tools or apps" src="/azure/devops/repos/git/media/create-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+   ![Use a token as the password for your Git tools or apps](../../tfvc/media/create-personal-access-token.png)
 
 ::: moniker-end
 
@@ -112,7 +112,7 @@ See the following examples of using your PAT.
 
 or
  
-- git clone https://anything:{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+- git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
 

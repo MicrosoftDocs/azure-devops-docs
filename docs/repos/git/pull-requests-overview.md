@@ -267,7 +267,7 @@ Pull requests and branch policies enable teams to enforce many best practices re
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img width="48" height="48" alt="Use Azure Functions to create custom branch policies" src="https://docs.microsoft.com/media/index/azurefunctions.svg" />
+                            <img width="48" height="48" alt="Use Azure Functions to create custom branch policies" src="" />
                         </div>
                     </div>
                     <div class="cardText">
