@@ -26,6 +26,9 @@ The following types of users can join your organization for free:
 
 [Need more users with Basic features?](../billing/buy-basic-access-add-users.md)
 
+> [!NOTE]
+> For information about inviting external users, see [Add external user](add-external-user.md).
+
 ## Prerequisites
 
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
@@ -132,6 +135,36 @@ You can see all security groups in a project using the [az devops security group
 > When user no longer need access to your organization, [delete them](delete-organization-users.md) from your organization.
 
 To learn more, read [about access levels](../security/access-levels.md).
+
+## Add users to projects or teams
+
+When you add members to projects without setting up billing, they automatically get [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/), until you run out of seats available. If you add members to projects with billing already set up, they get [Basic access](https://visualstudio.microsoft.com/team-services/compare-features/) only if your [default access level](../security/access-levels.md) is Basic. Otherwise, project members get assigned Stakeholder permissions.
+
+[Visual Studio subscribers](https://visualstudio.microsoft.com/products/subscriber-benefits-vs), get Basic access. Additional features, such as [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/), can be assigned to users by access level, Basic + Test Plans.
+
+> [!NOTE]
+> To manually assign access levels, [add members to your organization](#add-users-to-your-organization). To control access to resources, see [Change individual permissions, and grant access to specific functions](../../organizations/security/change-individual-permissions.md) or see [Grant or restrict access to selected features and functions](../../organizations/security/restrict-access.md).
+
+1. Sign in to your organization (`https://dev.azure.com/{yourorganization}`) as *Project Administrator*, *Project Collection Administrator*, or *organization Owner*.
+
+   [Why am I asked to choose between my work or school account and my personal account?](faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+
+2. Open your project, and then select **Project settings > Teams**. Then, select your project.
+
+   ![The Projects page](media/shared/open-project-settings.png)
+
+3. Select **Add** to invite members to your project.
+
+   ![On your project home page, select Invite a friend](media/add-team-members/add-member-to-project.png)
+
+4. Add users or groups, and then choose **Save**.
+
+    ![Project members list](media/add-team-members/add-user-or-group-to-project.png)
+
+   Enter the email addresses of the new users, separated by semicolons, or enter the display names of existing users. Add them one at a time or all at once.
+
+> [!TIP]
+> For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project) and [Add users to a team](../security/add-users-team-project.md#add-users-to-a-team).
 
 ## Manage users
 
@@ -261,6 +294,30 @@ ID                                    Display Name         Email                
 ```
 
 * * *
+
+## FAQs for adding users
+
+### *Which email addresses can I add?*
+
+* If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
+
+* Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
+
+* If your organization is connected to your directory, all users must be directory members. They must sign in to Azure DevOps with work or school accounts that are managed by your directory. If they aren't members, they need to be [added to the directory](add-external-user.md).
+
+![Add members' sign-in addresses or display names](media/add-team-members/add-user-or-group-to-project.png)
+
+After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
+
+### *What if they don't get or lose the invitation email?*
+
+* **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
+
+* **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
+
+### *Why can't I add any more members?*
+
+See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.md#q-why-cant-i-add-any-more-members-to-my-project). 
 
 #### How is *access* different from *permissions*?
 

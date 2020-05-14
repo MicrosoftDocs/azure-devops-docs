@@ -36,9 +36,6 @@
     items:
     - name: Add and manage users
       href: add-organization-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-    - name: Add members to a team or project
-      href: add-team-members.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-    - name: Manage Conditional Access
       href: manage-conditional-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
     - name: Change app access policies
       href: change-application-access-policies.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json

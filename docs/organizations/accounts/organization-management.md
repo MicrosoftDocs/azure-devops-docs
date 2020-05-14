@@ -93,10 +93,11 @@ If you don't use Azure AD, as described in the next section, to manage your user
   
     Unless users are granted an access level directly or through a group rule, they're assigned the best available access level. If there are no more free Basic slots available, then the user is added as a Stakeholder. The access level can be changed later through the **Organization settings > Users** page. 
 
-For details, see the following articles: 
+For more information, see the following articles: 
 
-- [Add users to your organization or project](add-organization-users.md)
-- [Add members to teams or projects](add-team-members.md) 
+- [Add users to your organization](add-organization-users.md)
+- [Add users to a team](../security/add-users-team-project.md#add-users-to-a-team)
+- [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project) 
 
 <a id="access-azure-ad" />
 
