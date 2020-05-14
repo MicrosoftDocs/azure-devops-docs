@@ -9,7 +9,7 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 05/12/2020
+ms.date: 05/14/2020
 ---
 
 # Create auditing streaming
@@ -24,15 +24,16 @@ In this article, learn how to create an [auditing](azure-devops-auditing.md) str
 Auditing streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
-- [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlog). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
-- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent locations streaming doesn’t support natively in Azure or outside of it, you can setup an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
+- [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlogs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
+- [Azure Event Grid](#set-up-an-event-grid-stream) – For scenarios where you want your auditing logs to be sent to particular locations, streaming outside of Azure isn't supported. However, you can set up an [Azure Event Grid](https://aka.ms/adostreamingeventgrid) connection. 
 
 ## Prerequisites
 
 By default, Project Collection Administrators (PCAs) are the only group that have access to the auditing feature. 
 
-You must be a PCA, which has the following permissions, by default, or you must have *View audit log* permission.
+You must have the following permissions:
 
+- PCA
 - Manage audit streams
 - View audit log
   
@@ -110,7 +111,7 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
 
-5. Set up your Azure Monitor log stream by proceeding through the same initial steps to [create a stream](#create-a-stream).
+5. Set up your Azure Monitor log stream by proceeding through the same initial steps to create a stream.
 6. For target options, select **Azure Monitor Logs**. 
 
 7. Enter the workspace ID and primary key, and then select **Set up**. 
@@ -134,16 +135,16 @@ Parameters available for editing differ per stream type.
 ## Disable a stream
  
 1. Next to the stream that you want to disable, move the **Enabled** toggle from *On* to *Off*.  
-   You can get details on the failure from the status and by selecting **Edit stream**.
+   When streams encounter a failure, they may become disabled. You can get details on the failure from the status shown next to the stream, or by selecting **Edit stream** You can also disable a stream manually, and then re-enable it later. 
 
    :::image type="content" source="media/auditing-streaming/disable-stream-move-toggle-off.png" alt-text="Move toggle to Off to disable stream":::
 
 2. Select **Save**.
 
-You can re-enable a stream in which the stream gets caught up on any audit events that have been missed - for up to the last seven days. That way you don’t miss out on any events from the duration that the stream was disabled. 
+You can re-enable a disabled stream. It will catch up on any audit events that were missed for up to the previous seven days for up to the last seven days. That way you don’t miss out on any events from the duration that the stream was disabled. 
 
 > [!NOTE]
-> If a stream is off for more than 7 days, events older than 7 days aren't included in the catch up. 
+> If a stream is disabled for more than 7 days, events older than 7 days aren't included in the catch up. 
 
 ## Delete a stream
 
