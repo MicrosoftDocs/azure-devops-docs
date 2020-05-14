@@ -2,7 +2,7 @@
 title: Add users and manage access
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: How to add users to an organization or project
+description: Learn how to add users to an organization, project, or team, and manage their access level (like Stakeholder), direct assignments, invitations, and more.
 ms.topic: conceptual
 ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
@@ -28,19 +28,17 @@ The following types of users can join your organization for free:
 
 ## Prerequisites
 
-You must have Project Collection Administrator or organization Owner permissions in Azure DevOps. For more information, see [Set permissions at the project level or project collection level](../security/set-project-collection-level-permissions.md?toc=/azure/devops/organizations/accounts/toc.json&bc=/azure/devops/organizations/accounts/breadcrumb/toc.json).
+[!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Add users to your organization
 
-Administrators can now add users to an organization, grant access to appropriate tooling extensions and service access level,
-and add users to groups all in one view. You can add up to 50 users at once. You can add more than 50 users by repeatedly
-using this Users view. When you add users, each user receives a notification email with a
+Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
+and add users to groups - all in one view. You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
 link to the organization page.
 
  > [!NOTE]
  > If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Azure AD
  > user to Azure DevOps.
-
 
 #### [Browser](#tab/browser)
 
@@ -56,7 +54,7 @@ To give other users access to your organization, add their email addresses.
    
    ![Select the Users tab, and then select Add users](../../media/add-new-users.png)
 
-4. Enter information into the form.
+4. Enter the following information.
 
    > [!div class="mx-imgBorder"]  
    >![Web portal, organization admin context, Add new users dialog box](media/add-organization-users-from-user-hub/add-new-users-dialog.png)
@@ -67,25 +65,8 @@ To give other users access to your organization, add their email addresses.
    - **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
 
 	> [!NOTE]  
-	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
+	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
-
-
-<!---
-Go to Users:
-
-![go to users](media/shared/users-hub-updated.png)
-
-Choose **Add new users** below "Manage users".
-
-![Choose the Add Users button](media/user-hub/add-users-button-718.png)
-
-Then fill in the "Add new users" dialog:
-
-![Add users by inviting them to the organization](media/user-hub/add-users.png)
-
-Next steps: [Manage users in table view](manage-users-table-view.md)
--->
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -145,52 +126,15 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
 
-## Related articles
-
-* [Connect to a project](../../organizations/projects/connect-to-projects.md)
-* [Change individual permissions, grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
-* [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
-* [Delete users from Azure DevOps](delete-organization-users.md)
-* [Export a list of users and their access levels](../security/export-users-audit-log.md)
-
-
-
----
-title: Manage users and access levels
-titleSuffix: Azure DevOps Services
-description: Add users and assign access levels on the Users page in Azure DevOps
-ms.technology: devops-accounts
-ms.assetid: 9f142821-1772-413f-a0e0-9b47b11a410f
-ms.topic: conceptual
-ms.author: chcomley
-author: chcomley
-ms.date: 12/18/2019
-monikerRange: 'azure-devops'
----
-# Manage users and their access in Azure DevOps
-
-[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
-
-Learn how to add users to your organization and specify the level of features they can use, such as Basic or Stakeholder.
-
-The following types of users can join your organization for free:
-
-* Five users who get [Basic features](https://azure.microsoft.com/services/devops/compare-features/), such as version control and tools for Agile, Java, and build and release management.
-* Unlimited users who get [Stakeholder features](https://visualstudio.microsoft.com/team-services/compare-features/), such as working with your backlog, work items, and queries.
-* Unlimited [Visual Studio subscribers](https://visualstudio.microsoft.com/team-services/compare-features/) who also get Basic features.
-
-Need [more users with Basic features or Visual Studio subscriptions](../billing/buy-basic-access-add-users.md)?
-
 > [!NOTE]
-> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn [how to add members to projects](add-team-members.md).
+> You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn how to [add members to projects](#add-...........).
 >
-> When people don't need access to your organization anymore, [delete them](delete-organization-users.md) from your organization.
+> When user no longer need access to your organization, [delete them](delete-organization-users.md) from your organization.
 
 To learn more, read [about access levels](../security/access-levels.md).
 
-[!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
-
 ## Manage users
+
 From your web browser you can view and edit certain user information. From the Azure DevOps CLI command, you can see details about a specific user and update their access level.
 
 The Users view shows key information per user in a table. In this view, you can do the following tasks:
@@ -198,7 +142,7 @@ The Users view shows key information per user in a table. In this view, you can 
 * See and modify assigned service extensions and access levels.
 * Multi-select users and bulk edit their extensions and access.
 * Filter by searching for partial user names, access level, or extension names.
-* See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits.
+* See the last access date for each user. This can help you choose users to remove access from or lower access to stay within your license limits. For more information, see Manage access with Azure AD.
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -325,7 +269,7 @@ Access levels control which features are available to users. Permissions control
 ## Related articles
 
 * [Connect to a project](../../organizations/projects/connect-to-projects.md)
-* [Change individual permissions or grant select access to specific functions](../../organizations/security/change-individual-permissions.md)
+* [Invite external users](add-external-user.md)
 * [Grant or restrict access to select features and functions](../../organizations/security/restrict-access.md)
 * [Delete users from Azure DevOps](delete-organization-users.md)
 * [Export a list of users and their access levels](../security/export-users-audit-log.md)
