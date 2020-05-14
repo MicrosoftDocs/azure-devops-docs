@@ -230,7 +230,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli,2)
+#### [Manage users - Azure DevOps CLI](#tab/azure-devops-cli)
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
