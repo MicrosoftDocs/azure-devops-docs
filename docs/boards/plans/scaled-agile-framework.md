@@ -253,7 +253,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Roadmap
    :::column-end:::
    :::column span="3":::
-      [**Delivery Plans, Feature Timeline**](safe-concepts.md#roadmap). Azure Boards provides configurable views to review roadmaps and team deliverables.
+      [**Delivery Plans, Feature Timeline**](safe-review-roadmaps-progress.md#roadmaps). Azure Boards provides configurable views to review roadmaps and team deliverables.
    :::column-end:::
 :::row-end:::
 :::row:::
