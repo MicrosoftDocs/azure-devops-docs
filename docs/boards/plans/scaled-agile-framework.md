@@ -33,7 +33,7 @@ This article introduces the components of Azure Boards that support SAFe®:
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
-## The Scaled Agile FrameworkÃ‚®
+## The Scaled Agile Framework®
 
 The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
 
@@ -323,14 +323,14 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
 
 
 
-## Azure Boards implementation of SAFeÃ‚®
+## Azure Boards implementation of SAFe® 
 
 Each of the following articles within this suite of tutorials provide details on how you can configure, customize, and use Azure Boards to implement your SAFe® programs and projects.   
 
 >[!div class="checklist"]  
 > * [How SAFe® concepts map to Azure Boards artifacts](safe-concepts.md)  
-> * [Configure Azure Boards to support SAFeÃ‚®](safe-configure-boards.md )  
-> * [Customize Azure Boards to support SAFeÃ‚®](safe-customize.md)   
+> * [Configure Azure Boards to support SAFe®](safe-configure-boards.md )  
+> * [Customize Azure Boards to support SAFe®](safe-customize.md)   
 > * [Plan and track SAFe® programs and portfolios](safe-plan-track-boards.md) 
 > * [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)  
 

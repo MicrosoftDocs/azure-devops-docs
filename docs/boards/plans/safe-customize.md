@@ -36,6 +36,8 @@ Specifically, you'll learn how Azure Boards supports SAFe® practices by enablin
 
 <!--- Azure Boards supports a graphical user interface for customizing an Inherited process.  --> 
 
+<a id="customize-wits" />
+
 ## Customize work item types 
 
 Each work item type defines the fields that capture and store information. You can customize existing work item types in the following ways to support specific SAFe® tracking requirements.  
