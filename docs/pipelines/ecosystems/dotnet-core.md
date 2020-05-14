@@ -1,7 +1,7 @@
 ---
 title: Build, test, and deploy .NET Core apps
-description: Automatically build .NET Core apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.topic: quickstart
+description: Use .NET Core to build apps with Azure Pipelines, Azure DevOps, & Team Foundation Server
+ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 05/06/2020
@@ -13,13 +13,19 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-Use a pipeline to automatically build and test your .NET Core projects. After those steps are done, you can then deploy or publish your project.
+Use a pipeline to automatically build and test your .NET Core projects. After those steps are done, you can then deploy or publish your project. Learn how to:
+
+* Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
+* Restore dependencies, build your project, and test with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) or a [script](../scripts/cross-platform-scripting.md).
+* Use the [publish code coverage task](../tasks/test/publish-code-coverage-results.md) to publish code coverage results.
+* Package and deliver your code with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) and the [publish build artifacts task](../tasks/utility/publish-build-artifacts.md).
+* Publish to a [NuGet feed](../artifacts/nuget.md).
+* Deploy your [web app to Azure](../targets/webapp.md).
 
 
 > [!NOTE]
->
-> This article focuses on building .NET Core projects with Azure Pipelines. For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
-
+> For help with .NET Framework projects, see [Build ASP.NET apps with .NET Framework](../apps/aspnet/build-aspnet-4.md).
+> 
 
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 
