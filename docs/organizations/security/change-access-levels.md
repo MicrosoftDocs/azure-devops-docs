@@ -54,7 +54,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker range="azure-devops-2019"
 
-1. From the web portal home page for a project collection (for example, ```http://MyServer:8080/tfs/DefaultCollection/```), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
+1. From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Open Access levels dialog](media/change-access-levels/open-access-levels-2019.png)
@@ -79,7 +79,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 From a user context, open **Server Settings** by choosing the ![ ](../../boards/media/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
 
-1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open **Server settings**.
+1. From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
 
 	<img src="media/access-levels-2017-open-admin-context.png" alt="TFS 2017, Web portal, open the Server settings admin context" style="border: 1px solid #C3C3C3;" />  
 
@@ -99,7 +99,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
-1. From the web portal home page for a project (for example, ```http://MyServer:8080/tfs/DefaultCollection/MyProject/```), open administration settings.
+1. From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open administration settings.
 
 	![Open the administration page](media/ALM_CAL_OpenAdminPage.png)
 

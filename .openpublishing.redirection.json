@@ -1,7 +1,7 @@
 {
   "redirections": [{
       "source_path": "docs/integrate/ide/extensions/overview.md",
-      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-extensions",
+      "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-exten/sions",
       "redirect_document_id": false
     },
     {
@@ -182,7 +182,7 @@
     {
       "source_path": "docs/package/index.md",
       "redirect_url": "/azure/devops/artifacts/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/install.md",
@@ -6697,7 +6697,7 @@
     {
       "source_path": "docs/build-release/index.md",
       "redirect_url": "/azure/devops/pipelines/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/overview.md",
@@ -11972,12 +11972,12 @@
     {
       "source_path": "docs/test-plans/index.md",
       "redirect_url": "/azure/devops/test/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/get-started/index.md",
       "redirect_url": "/azure/devops/artifacts/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/billing/buy-basic-plus-test-plans.md",
@@ -12030,8 +12030,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/report/power-bi/index.md",
-      "redirect_url": "/azure/devops/report/power-bi/overview",
+      "source_path": "docs/report/powerbi/index.md",
+      "redirect_url": "/azure/devops/report/powerbi/overview",
       "redirect_document_id": false
     },
     {
@@ -12247,7 +12247,7 @@
     {
       "source_path": "docs/index-all.md",
       "redirect_url": "/azure/devops/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/faq-add-delete-users.md",
@@ -12678,6 +12678,53 @@
       "source_path": "docs/java/labs/settingvstsproject/index.md",
       "redirect_url": "/previous-versions/azure/devops/java/labs/settingvstsproject/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/backlogs/backlogs-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/boards/kanban-board-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/plans/delivery-plan-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/queries/queries-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/work-items/work-item-form-keyboard-shortcuts.md",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/get-started/key-concepts.md",
+      "redirect_url": "/azure/devops/boards/work-items/agile-glossary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
+      "redirect_url": "/azure/devops/sprints/scrum-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/deploy-azure/index.md",
+      "redirect_url": "/azure/devops-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/overview.md",
+      "redirect_url": "/azure/devops/repos/git/index",
+      "redirect_document_id": false
     }
   ]
 }
+
+

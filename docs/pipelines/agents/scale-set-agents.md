@@ -5,7 +5,7 @@ ms.topic: reference
 ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
-ms.date: 04/15/2020
+ms.date: 04/23/2020
 monikerRange: azure-devops
 ---
 
@@ -158,11 +158,6 @@ In the following example, a new resource group and virtual machine scale set are
 
 ## Use scale set agent pool
 
-Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines. 
-
-> [!NOTE]
->  It can take up to an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will monitor these operations for errors, and will react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take up to an hour.
-
 Using a scale set agent pool is similar to any other agent pool. You can use it in classic build, release, or YAML pipelines. User permissions, pipeline permissions, approvals, and other checks work the same way as in any other agent pool. For more information, see [Agent pools](pools-queues.md).
 
 
@@ -171,18 +166,36 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 > - You may not change many of the the scale set configuration settings in the Azure portal. Azure Pipelines updates the configuration of the scale set. Any manual changes you make to the scale set may interfere with the operation of Azure Pipelines. 
 > - You may not rename or delete a scale set without first deleting the scale set pool in Azure Pipelines.
 
-### Limitations during the preview
+## How Azure Pipelines manages the scale set
+
+Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
+
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes.  The decision to scale up or down is based on the number idle agents at that time. The exception is if desired idle agents on standby is set to 0, then scaling up the first time is done when a queued request is detected.
+
+The goal is to reach the desired number of idle agents on standby eventually. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. 
+
+> [!NOTE]
+>  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
+
+Scaling up is done in increments of 25% of the maximum pool size.  Scale up to maximum requires four scale-up operations. Allow 20 minutes for machines to be created for each step.  Scaling down is performed when idle machines exceed the desired number of agents on standby for one hour.
+
+To achieve maximum stability, scale set operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
+
+Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
+
+<a name="q-a"></a>
+## Q & A
+
+* [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
+* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
+* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+
+### Are there any limitations during the preview?
 
 During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
 - Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
-
-<a name="q-a"></a>
-## Q & A
-
-* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
-* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 
 ### How do I create a scale set with custom software and custom disk size?
 
@@ -190,18 +203,18 @@ These are steps to create a scale set with a custom OS disk size and custom soft
 
 If you just want to create a scale set with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
 
-1.  Create a VM with capacity for 200GiB OS drive starting with your base image.
+1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128GiB to <myDiskSizeGb>.
 
     - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
     
         ```azurecli  
-        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb 200  --admin-username myUserName --admin-password myPassword
+        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myBaseImage> --os-disk-size-gb <myDiskSize>  --admin-username myUserName --admin-password myPassword
         ```
 
     - If starting with a generalized VHD, first create the VM with an unmanaged disk of the desired size and then convert to a managed disk:
 
         ```azurecli
-        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb 200 --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
+        az vm create --resource-group <myResourceGroup> --name <MyVM> --image <myVhdUrl> --os-type windows --os-disk-size-gb <myDiskSizeGb> --use-unmanaged-disk --admin-username <myUserName> --admin-password <myPassword> --storage-account <myVhdStorageAccount>
         ```
 
         Shutdown the VM
@@ -227,7 +240,7 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
 2. Remote Desktop (or SSH) to the VM's public IP address to customize the image.
    You may need to open ports in the firewall to unblock the RDP (3389) or SSH (22) ports.
 
-   - [Windows] Extend the OS disk size to fill the disk size you declared above.
+   - [Windows] If <MyDiskSizeGb> is greater than 128Gb, extend the OS disk size to fill the disk size you declared above.
    
         Open DiskPart tool as administrator and run these DiskPart commands:
         - `list volume`  (to see the volumes)

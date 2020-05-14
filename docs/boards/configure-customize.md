@@ -13,7 +13,7 @@ ms.date: 01/24/2020
 
 
 
-# Configuration and customization of Azure Boards 
+# Configure and customize Azure Boards 
 
 [!INCLUDE [temp](includes/version-vsts-only.md)]
 

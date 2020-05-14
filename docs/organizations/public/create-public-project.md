@@ -11,11 +11,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: Create a public project in your organization
+# Create a public project in your organization
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, learn how to create or add a public project to your organizationA public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
+In this article, learn how to create or add a public project to your organization. A public project is similar to any other project that you add to your organization. Every project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions.
 
 A public project allows non-members of a project and users who aren't signed in read-only, limited access to the project's artifacts and services. For details, see [Default roles & access for public projects](default-roles-access-public.md).
 

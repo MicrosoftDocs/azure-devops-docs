@@ -56,7 +56,7 @@ You will:
 * An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
-  see [Create a Jenkins master on an Azure Virtual Machine](/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
+  see [Create a Jenkins master on an Azure Virtual Machine](/azure/developer/jenkins/configure-on-linux-vm).  Also, the following Jenkins plugins must be installed:
     * **VS Team Services Continuous Deployment** plugin.  You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
     * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).

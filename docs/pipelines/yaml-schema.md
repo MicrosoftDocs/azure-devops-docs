@@ -480,6 +480,8 @@ jobs:
   pool:                # see the following "Pool" schema
     name: string
     demands: string | [ string ]
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
@@ -978,6 +980,10 @@ parameters:
   values: [ string ]    # allowed list of values (for some data types)
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
+
+### Types
+
+[!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
 
 ### [YAML Example](#tab/yaml-example)
 
@@ -1573,7 +1579,7 @@ environment:                # create environment and/or record deployments
   name: string              # name of the environment to run this job on.
   resourceName: string      # name of the resource in the environment to record the deployments against
   resourceId: number        # resource identifier
-  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
+  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes
   tags: string | [ string ] # tag names to filter the resources in the environment
 strategy:                 # deployment strategy
   runOnce:                # default strategy

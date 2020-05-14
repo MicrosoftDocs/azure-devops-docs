@@ -116,8 +116,8 @@ You can quickly add and prioritize your product and portfolio backlogs, which li
 **Additional supported tasks**:  
 ::: moniker range=">= azure-devops-2019" 
 - [Bulk modifying work items](../backlogs/bulk-modify-work-items.md)  
-	- [Change work item type](../backlogs/remove-delete-work-items.md#change-type)  
-	- [Move work item to a different project](../backlogs/remove-delete-work-items.md#move)  
+	- [Change work item type](../backlogs/move-change-type.md#change-type)  
+	- [Move work item to a different project](../backlogs/move-change-type.md#move)  
 	- [Assign work items, change the iteration](../backlogs/bulk-modify-work-items.md#assign-to)  
 	- [Add or remove tags](../queries/add-tags-to-work-items.md#bulk-add-or-remove-tags)
 	- [Delete work items](../backlogs/remove-delete-work-items.md#delete)  

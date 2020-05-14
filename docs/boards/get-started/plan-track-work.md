@@ -336,7 +336,7 @@ Choose **Save & Close** when done.
       [Iteration](/azure/devops/organizations/settings/set-area-paths)
    :::column-end:::
    :::column span="3":::
-      Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
+      Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md).
    :::column-end:::
 :::row-end:::
 :::row:::

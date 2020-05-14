@@ -1046,7 +1046,7 @@ pipelines\tasks\build\media
 <p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
 <p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/" data-raw-source="[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -1892,7 +1892,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by <a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/)">adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows</a>. </p>
 
 <p><b>Simplified distribution </b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](https://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
+<p><a href="https://docs.microsoft.com/appcenter/distribution/" data-raw-source="[Manage distribution of development and production versions of your apps](https://docs.microsoft.com/appcenter/distribution/)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Azure DevOps Services and TFS</b></p>
@@ -1918,19 +1918,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Invite or recruit testers</b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](https://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
+<p><a href="https://docs.microsoft.com/appcenter/dashboard/" data-raw-source="[Invite beta testers and distribute your beta versions](https://docs.microsoft.com/appcenter/dashboard/)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="https://docs.microsoft.com/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](https://docs.microsoft.com/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
-<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](https://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
+<p>Get the information you need to analyze and respond to crashes by getting <a href="https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
  </p>
 
 
 <p><b>Webhooks</b></p>
-<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
+<p>Use webhooks to <a href="https://docs.microsoft.com/appcenter/dashboard/webhooks/" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://docs.microsoft.com/appcenter/dashboard/webhooks/)">receive notifications about new versions, crash groups, and feedback</a>. </p>
 
 
 </td>
@@ -1986,7 +1986,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Provide team guidance through <a href="../project/wiki/markdown-guidance.md" data-raw-source="[Welcome](../project/wiki/markdown-guidance.md)">Welcome</a> (Markdown format) pages and add team <a href="../report/dashboards/dashboards.md" data-raw-source="[dashboards](../report/dashboards/dashboards.md)">dashboards</a> to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed <a href="../repos/git/index.md" data-raw-source="[Git repositories](../repos/git/index.md)">Git repositories</a> or <a href="../repos/tfvc/index.md" data-raw-source="[Team Foundation version control](../repos/tfvc/index.md)">Team Foundation version control</a>.  to </p>
+<p>Manage source code using distributed <a href="../repos/git/index.yml" data-raw-source="[Git repositories](../repos/git/index.yml)">Git repositories</a> or <a href="../repos/tfvc/index.md" data-raw-source="[Team Foundation version control](../repos/tfvc/index.md)">Team Foundation version control</a>.  to </p>
 
 <p><b>Work</b></p>
 <p>Plan and track work by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[creating a product backlog](../boards/backlogs/create-your-backlog.md)">creating a product backlog</a>, and managing work using <a href="../boards/boards/kanban-basics.md" data-raw-source="[Kanban](../boards/boards/kanban-basics.md)">Kanban</a> or <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[Scrum](../boards/sprints/assign-work-sprint.md)">Scrum</a> processes. Find work items you want to review or update by <a href="../boards/queries/using-queries.md" data-raw-source="[creating queries](../boards/queries/using-queries.md)">creating queries</a>, or visualize progress by <a href="../report/dashboards/charts.md" data-raw-source="[creating query-based charts](../report/dashboards/charts.md)">creating query-based charts</a>  </p>

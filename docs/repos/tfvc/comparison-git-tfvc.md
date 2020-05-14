@@ -34,7 +34,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 >[!NOTE]
 >Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
  
-To learn more, see [Git and Azure Repos](../../repos/git/overview.md).
+To learn more, see [Git and Azure Repos](../../repos/git/index.yml).
 
 ### TFVC (centralized)
  

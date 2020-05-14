@@ -8,7 +8,7 @@ ms.assetid: b81adafa-adac-4e80-baa6-140fb58fbeff
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/08/2020
+ms.date: 04/23/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -84,6 +84,7 @@ Complete the following steps when your Azure DevOps Administrator in Azure AD is
 
 ## Related articles
 
+- [Resolve orphaned organization](resolve-orphaned-organization.md)
 - [Change organization owner](change-organization-ownership.md)
 - [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-- [Delete your organization from Azure DevOps](delete-your-organization.md)
+- [Delete your organization](delete-your-organization.md)

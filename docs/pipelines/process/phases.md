@@ -407,7 +407,7 @@ YAML builds are not yet available on TFS.
 To add a new job, select '...' on the pipeline channel in the **Tasks** tab of the pipeline. The conditions and order of execution for a job are displayed when you select the job in the editor.
 
 ::: moniker range="> tfs-2018"
-When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not yet supported in release pipelines. Multiple jobs in a release pipeline run in sequence.
+When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not supported in release pipelines. Multiple jobs in a release pipeline run in sequence. 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -886,11 +886,11 @@ steps:
     $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=4.1-preview"
     Write-Host "URL: $url"
     $pipeline = Invoke-RestMethod -Uri $url -Headers @{
-      Authorization = "Bearer $env:TOKEN"
+      Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
     }
     Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
   env:
-    TOKEN: $(system.accesstoken)
+    SYSTEM_ACCESSTOKEN: $(system.accesstoken)
 ```
 
 ::: moniker-end
@@ -899,7 +899,7 @@ YAML is not yet supported in TFS.
 ::: moniker-end
 
 #### [Classic](#tab/classic/)
-Select the **Allow scripts to access OAuth token** option in the control options for the job.
+Select the **Allow scripts to access OAuth token** option in the control options for the job. The token will be available as the environment variable `SYSTEM_ACCESSTOKEN`.
 
 * * *
 ## Related articles

@@ -52,7 +52,7 @@ The following steps provide support for the test experience available with TFS 2
       witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestSuite.xml"  
       ```  
   
-       An example of *CollectionURL* is http://MyServer:8080/tfs/DefaultCollection.  
+       An example of *CollectionURL* is `http://MyServer:8080/tfs/DefaultCollection`.  
   
        The *DirectoryPath* must follow this structure: *Drive:TemplateFolder*WorkItem TrackingTypeDefinitions. For example:  
   
