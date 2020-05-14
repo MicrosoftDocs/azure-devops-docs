@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-Use a pipeline to automatically build and test your .NET Core projects. After those steps are done, you can then deploy or publish your project. Learn how to:
+Use a pipeline to automatically build and test your .NET Core projects. Learn how to:
 
 * Set up your build environment with [Microsoft-hosted](../agents/hosted.md) or [self-hosted](../agents/agents.md) agents.
 * Restore dependencies, build your project, and test with the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) or a [script](../scripts/cross-platform-scripting.md).

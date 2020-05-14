@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2017'
 
 > [!NOTE]
 >
-> This article focuses on building .NET Framework projects with Azure Pipelines. Learn how to build .NET Framework projects. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
+> This article focuses on building .NET Framework projects with Azure Pipelines. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
 
 
 ::: moniker range="tfs-2017"
