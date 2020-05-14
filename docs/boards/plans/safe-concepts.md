@@ -18,9 +18,9 @@ ms.date: 05/01/2020
 
 <!--- Intro To be provided --> 
 
-If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe criteria. Moreover, just as Azure Boards supports Scrum and Agile practices, it can support SAFe and large numbers of teams to work together on epics that span releases. 
+If you're interested in using SAFe, you can configure projects created with the [Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md) processes to track SAFe® criteria. Moreover, just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on epics that span releases. 
 
-This tutorial illustrates how the following SAFe artifacts map to specific Azure Boards artifacts. 
+This tutorial illustrates how the following SAFe® artifacts map to specific Azure Boards artifacts. 
 
 >[!div class="checklist"]  
 > * SAFe® roles and a team hierarchical structure  
@@ -39,7 +39,7 @@ This tutorial illustrates how the following SAFe artifacts map to specific Azure
 
 The following image illustrates how you can configure Azure Boards to support a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project and process hosted on Azure Boards.
 
-![Agiletool  structure to support SAFe](media/safe-objects-map-to-vso-objects.png)  
+![Agile tool  tructure to support SAFe®](media/safe-objects-map-to-vso-objects.png)  
 
 Examples provided below illustrate how to configure a three-level team hierarchy and map teams to their respective area and iteration paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, the changes can be applied to any project hosted on Azure Boards or an on-premises TFS.
 
@@ -72,13 +72,13 @@ Because your Agile tools support a hierarchical team structure, each team has it
 
 ::: moniker range=">= azure-devops-2019"
 
-![SAFe roles map to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
+![SAFe® roles map to a hierarchy of teams](media/safe/portfolio-programs-teams-area-paths-mapping.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![SAFe roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
+![SAFe® roles map to a hierarchy of teams](media/safe-roles-to-vso-roles.png)  
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ To support SAFe® teams, you reconfigure the default team as the Portfolio team 
 
 ## Epics, features, stories, capabilities, and enablers
 
-All work and deliverables are captured in work items. Each work item is associated with a specific work item type with a predefined workflow. Each Azure Boards process provides support for specific  work item types which you can use to track any of the SAFe deliverables. 
+All work and deliverables are captured in work items. Each work item is associated with a specific work item type with a predefined workflow. Each Azure Boards process provides support for specific  work item types which you can use to track any of the SAFe® deliverables. 
 
 The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
 
@@ -130,17 +130,17 @@ Out of the box, the Agile process supports user story, feature, and epic backlog
 
 ## Program Increments, releases, and sprints  
 
-SAFe Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
+SAFe® Release Trains, Releases, Iterations, Program Increments (PIs), and Sprints map easily to your iteration paths. By sharing iterations across the team hierarchy, you manage the releases in a cohesive manner. 
 
 ::: moniker range=">= azure-devops-2019"
 
-![SAFe release trains map to iterations](media/safe/iteration-mapping.png)  
+![SAFe® release trains map to iterations](media/safe/iteration-mapping.png)  
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![SAFe release trains map to iterations](media/safe-release-trains-map.png)  
+![SAFe® release trains map to iterations](media/safe-release-trains-map.png)  
 
 ::: moniker-end
 

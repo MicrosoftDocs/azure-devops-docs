@@ -38,7 +38,7 @@ Specifically, you'll learn how Azure Boards supports SAFe® practices by enablin
 
 ## Customize work item types 
 
-Each work item type defines the fields that capture and store information. You can customize existing work item types in the following ways to support specific SAFe tracking requirements.  
+Each work item type defines the fields that capture and store information. You can customize existing work item types in the following ways to support specific SAFe® tracking requirements.  
 
 - [Add a custom field](#add-custom-field) to support tracking budget costs, value streams, or customer-centric information  
 - [Customize existing fields](#customize-fields), such as modifying the picklist or changing a field label  
@@ -54,72 +54,74 @@ For details on customizing a work item type, see [Add and manage fields for an i
 
 You add a custom field to support tracking data requirements that aren't met with the existing set of fields. Some fields to consider adding to one or more work item types include those listed in the following table. 
 
+
 :::row:::
-   :::column span="":::
-      **Field name**
-   :::column-end:::
-   :::column span="":::
-      **Work Item Types**
-   :::column-end:::
-   :::column span="2":::
-      **Notes**
-   :::column-end:::
+   :::column span="":::
+      **Field name**
+   :::column-end:::
+   :::column span="":::
+      **Work Item Types**
+   :::column-end:::
+   :::column span="2":::
+      **Notes**
+   :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-      Budget cost
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic
-   :::column-end:::
-   :::column span="2":::
-      Use to capture estimated costs. Can use rollup to capture the total estimated cost of an Epic's Features.  
-   :::column-end:::
+   :::column span="":::
+      Budget cost
+   :::column-end:::
+   :::column span="":::
+      Feature, Epic
+   :::column-end:::
+   :::column span="2":::
+      Use to capture estimated costs. Can use rollup to capture the total estimated cost of an Epic's Features.
+   :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-      Milestone
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic, User Story
-   :::column-end:::
-   :::column span="2":::
-      Use to specify a picklist of Milestone of Events which a story, feature, or epic should meet.  
-   :::column-end:::
+   :::column span="":::
+      Category or Group
+   :::column-end:::
+   :::column span="":::
+      Feature, Epic, User Story
+   :::column-end:::
+   :::column span="2":::
+      Use to specify a picklist to indicate the work item is cataloged as one of the following SAFe® categories: *Feature*, *Capability*, *Enabler*, or *Solution*.  
+   :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-      Category or Group
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic, User Story
-   :::column-end:::
-   :::column span="2":::
-      Use to specify a picklist to indicate the work item is cataloged as one of the following SAFe® categories: *Feature*, *Capability*, *Enabler*, or *Solution*.  
-   :::column-end:::
+   :::column span="":::
+      Milestone
+   :::column-end:::
+   :::column span="":::
+      Feature, Epic, User Story
+   :::column-end:::
+   :::column span="2":::
+      Use to specify a picklist of Milestone of Events which a story, feature, or epic should meet.
+   :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-      Value Stream
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic, User Story
-   :::column-end:::
-   :::column span="2":::
-      Use to specify a picklist to support a taxonomy of value streams you want to associate with work.   
-   :::column-end:::
+   :::column span="":::
+      Value Stream
+   :::column-end:::
+   :::column span="":::
+      Feature, Epic, User Story
+   :::column-end:::
+   :::column span="2":::
+      Use to specify a picklist to support a taxonomy of value streams you want to associate with work. 
+   :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
-      WSFJ 
-   :::column-end:::
-   :::column span="":::
-      Feature, Epic 
-   :::column-end:::
-   :::column span="2":::
-      Use to add the [Weighted Shortest Job First](#wsjf) field calculated from the Effort, Business Value, Time Criticality.  
-   :::column-end:::
+   :::column span="":::
+      WSFJ 
+   :::column-end:::
+   :::column span="":::
+      Feature, Epic 
+   :::column-end:::
+   :::column span="2":::
+      Use to add the [Weighted Shortest Job First](#wsjf) field calculated from the Effort, Business Value, Time Criticality. 
+   :::column-end:::
 :::row-end:::
+ 
 
 For details on adding a customize a field, see [Add a custom field to a work item type](../../organizations/settings/work/add-custom-field.md). 
 

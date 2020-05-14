@@ -1,7 +1,7 @@
 ---
-title:View SAFeÂ® progress, roadmaps, and metrics
+title:View SAFe® progress, roadmaps, and metrics
 titleSuffix: Azure Boards
-description: Review SAFeÂ® metrics, progress, roadmaps, and KPIs supported by Azure DevOps 
+description: Review SAFe® metrics, progress, roadmaps, and KPIs supported by Azure DevOps 
 ms.technology: devops-agile
 ms.prod: devops
 ms.author: kaelli
@@ -12,7 +12,7 @@ ms.date: 05/01/2020
 ---
 
 
-# View SAFeÂ® progress, roadmaps, and metrics
+# View SAFe® progress, roadmaps, and metrics
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
@@ -21,7 +21,7 @@ With team's configured and working backlogs, you're ready to start viewing and m
 <!--- Ceremonies, events, milestones, planning and review -->
 
 
-Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFeÂ® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFeÂ® metrics and monitoring and reporting progress. 
+Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
 
 - Rollup columns on backlogs 
 - In-context reports 
@@ -33,7 +33,7 @@ Azure Boards provides a number of in-context charts, dashboard widgets, and work
 
 For an overview of these tools, see [About dashboards, charts, reports, & widgets](../../report/dashboards/overview.md). An additional backlog tool is Forecast which teams can use in their iteration planning. 
 
-In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe metrics 
+In this tutorial, we illustrate some of the out-of-the-box charts and widgets that you'll have instant access to monitor some of these key SAFe® metrics 
 
 >[!div class="checklist"]      
 > - Progress reports
@@ -72,7 +72,7 @@ By assigning Story Points to each User Story, a team can determine how much work
 
 ## View Cumulative Flow Diagram (CFD) 
 
-Each Azure Boards backlog and board provide configurable CFD views. So each team at every level of SAFe implementation can monitor progress using these built-in charts. 
+Each Azure Boards backlog and board provide configurable CFD views. So each team at every level of SAFe® implementation can monitor progress using these built-in charts. 
 
 The following image shows an example CFD chart for User Stories with all Kanban columns displayed. 
 
@@ -107,7 +107,7 @@ Both Lead Time and Cycle Time widgets display as scatter-plot control charts. Th
 
 ## View and update roadmaps    
 
-You can review roadmaps of SAFeÂ® deliverables using the Delivery Plans, Feature Time, and Epic Roadmap tools. Delivery Plans are fully configurable to show the teams and work item types of interest.  
+You can review roadmaps of SAFe® deliverables using the Delivery Plans, Feature Time, and Epic Roadmap tools. Delivery Plans are fully configurable to show the teams and work item types of interest.  
 
 ### Review feature team Delivery Plans  
 
@@ -145,7 +145,7 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 **Replace with an Azure DevOps report**
 
 > [!div class="mx-imgBorder"]  
-> ![SAFe Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
+> ![SAFe® Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
 
 
 ## Related articles
