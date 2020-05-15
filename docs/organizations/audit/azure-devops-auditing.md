@@ -9,17 +9,17 @@ ms.author: chcomley
 author: roferg
 ms.topic: quickstart
 monikerRange: 'azure-devops'
-ms.date: 01/22/2020
+ms.date: 05/11/2020
 ---
 
-# Quickstart: Access, export, and filter audit logs
+# Access, export, and filter audit logs
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
 > Auditing is currently in a Public Preview.
 
-In this quickstart, learn how to access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
+In this article, learn how to access, export, and filter audit logs. Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact. 
 
 Audit events can be the following occurrences:
 - permissions changes
@@ -44,8 +44,10 @@ By default, Project Collection Administrators are the only group that have acces
 #### [Preview page](#tab/preview-page) 
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
-2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+ 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
 3. Select **Auditing**.
 
    ![Auditing](media/azure-devops-auditing/AccessAuditLogRedBox-preview.png)
@@ -167,7 +169,7 @@ When you filter through audit events, it’s best to use the *area* and *categor
 
 ### Filtering tips
 
-Once you've downloaded a copy of your auditing events, you can see the additional information with each event. See the following useful tips for how to filter through events beyond using only the categories and areas fields. 
+With a downloaded a copy of your auditing events, you can see the additional information with each event. See the following useful tips for how to filter through events beyond using only the categories and areas fields. 
 
 **ID & correlation ID**
 
@@ -182,4 +184,6 @@ The following limitations exist for what can be audited.
 * Azure AD group membership changes – In the future, auditing will include changes to Azure DevOps groups, such as adding or removing a group or user. However, if you manage membership via Azure AD groups, additions and removals of users from those Azure AD groups aren't audited by Azure DevOps. Review the Azure AD audit logs to see when a user or group was added or removed from an Azure AD group. 
 * Signing in – We don't track sign in events for Azure DevOps. View the Azure AD audit logs to review sign in events to your Azure AD. 
 
+## Related articles
+- [Auditing streaming](auditing-streaming.md)
 

@@ -58,8 +58,8 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 5. Select **Save and run**, after which you're prompted for a commit message as Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select **Save and run** again to see the pipeline in action.
 
    > [!TIP]
-   > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub
-   > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample
+   > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub.
+   > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample.
    > Instead of using the recommended Docker task, it is also possible to invoke docker commands directly using a [command line task](../../tasks/utility/command-line.md)(script)
 
 ## Windows container images
