@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 2/18/2020
+ms.date: 05/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1290,7 +1290,7 @@ trigger:
 
 ::: moniker range="> azure-devops-2019"
 
-If specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
+If you specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
 
 ::: moniker-end
 
@@ -1404,7 +1404,7 @@ pr:
 
 ::: moniker range="> azure-devops-2019"
 
-If specify an `exclude` clause without an `include` clause for `branches` or `paths`, it is equivalent to specifying `*` in the `include` clause.
+If you specify an `exclude` clause without an `include` clause for `branches` or `paths`, it is equivalent to specifying `*` in the `include` clause.
 
 ::: moniker-end
 
