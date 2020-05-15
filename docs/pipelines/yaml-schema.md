@@ -1288,11 +1288,7 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
-::: moniker range="> azure-devops-2019"
-
 If you specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
-
-::: moniker-end
 
 ::: moniker-end
 
