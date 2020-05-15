@@ -235,6 +235,56 @@ App team
 
 
 
+
+<a id="work-item-tips" />
+
+## Work items tips 
+
+ - Can only assign a work item to one project member 
+ - Can only assign to a single Iteration Path
+ - Can only assign to a single Area Path 
+
+<a id="bulk-update" />
+
+## Bulk add or update work items 
+
+Common fields you may want to bulk update include: 
+- Area Path
+- Assigned to
+- Iteration Path
+- Tags (Add or Remove) 
+- Value Area 
+
+You can bulk update and change the work item type from the web portal. Or, if needed, you can remove of delete work items. See the following articles:
+
+- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md)  
+- [Move or change work item type](../backlogs/move-change-type.md)  
+- [Remove or delete work items](../backlogs/remove-delete-work-items.md)   
+
+Also, you can bulk add or update work items with the following tools: 
+
+- [Bulk add or modify work items (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Bulk import or update work items (CSV)](../queries/import-work-items-from-csv.md)  
+
+
+## Try this next
+
+> [!div class="nextstepaction"]
+> [Review progress, delivery plans, and roadmaps](safe-review-roadmaps-progress.md) 
+
+
+
+## Related articles
+
+<!--- To be provided --> 
+- [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.
+
+<!---
+Filtering tips
+
+--> 
+
+
 <!---
 ## Map features to epics, and stories to features
 
@@ -359,55 +409,5 @@ The same principles apply to user stories in progress. You can map them to featu
 ![User Story work item form](media/safe-user-story-new-form.png)  
 
 --> 
+ 
 
-## Manage dependencies
-
-Best ways to manage dependencies, what flows into what? 
-
-
-
-<a id="work-item-tips" />
-
-## Work items tips 
-
- - Can only assign a work item to one project member 
-
-<a id="bulk-update" />
-
-## Bulk add or update work items 
-
-Common fields you may want to bulk update include: 
-- Area Path
-- Assigned to
-- Iteration Path
-- Tags (Add or Remove) 
-- Value Area 
-
-You can bulk update and change the work item type from the web portal. Or, if needed, you can remove of delete work items. See the following articles:
-
-- [Bulk modify (web)](../backlogs/bulk-modify-work-items.md)  
-- [Move or change work item type](../backlogs/move-change-type.md)  
-- [Remove or delete work items](../backlogs/remove-delete-work-items.md)   
-
-Also, you can bulk add or update work items with the following tools: 
-
-- [Bulk add or modify work items (Excel)](../backlogs/office/bulk-add-modify-work-items-excel.md)
-- [Bulk import or update work items (CSV)](../queries/import-work-items-from-csv.md)  
-
-
-## Try this next
-
-> [!div class="nextstepaction"]
-> [Review progress, delivery plans, and roadmaps](safe-review-roadmaps-progress.md) 
-
-
-
-## Related articles
-
-<!--- To be provided --> 
-
-
-<!---
-Filtering tips
-
---> 
