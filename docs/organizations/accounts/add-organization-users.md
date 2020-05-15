@@ -8,7 +8,7 @@ ms.technology: devops-accounts
 ms.assetid: 19ac647f-04c1-4ddd-9953-b3ecfa0f1457
 ms.author: chcomley
 author: chcomley
-ms.date: 12/04/2019
+ms.date: 05/15/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -36,14 +36,19 @@ The following types of users can join your organization for free:
 ## Add users to your organization
 
 Administrators can add users to an organization, grant access to appropriate tooling extensions and service access levels,
-and add users to groups - all in one view. You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
-link to the organization page.
+and add users to groups - all in one view.
 
- > [!NOTE]
- > If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Azure AD
+> [!NOTE]
+> If you have an Azure Active Directory (Azure AD)-backed organization, and you need to add users who are external to Azure AD, first [add external users](add-external-user.md). On the **Tell us about this user page**, under **Type of user**, be sure to choose **User with an existing Microsoft account**. After you complete those steps, use the following steps to add the Azure AD
  > user to Azure DevOps.
+ 
+You can add up to 50 users in a single transaction. When you add users, each user receives a notification email with a
+link to the organization page.
+ 
+> [!NOTE]   
+> To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Browser](#tab/browser)
+#### [Preview page](#tab/preview-page) 
 
 To give other users access to your organization, add their email addresses.
 
@@ -71,10 +76,30 @@ To give other users access to your organization, add their email addresses.
 	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
 5. Select **Add** to complete your invitation.
 
+#### [Current page](#tab/current-page)
+
+1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
+
+2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
+
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+
+3. Select **Users**, and then select **Add new users**.
+
+4. Enter the following information.
+
+  - **Users:** Enter the email addresses (Microsoft accounts) or GitHub usernames for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted. For more information about GitHub authentication, see [FAQs](../security/faq-github-authentication.md).
+   - **Access level:** Leave the access level as **Basic** for users who will contribute to the code base. To learn more, see [About access levels](/azure/devops/organizations/security/access-levels).  
+   - **Add to projects:** Select the project you want to add them to.  
+   - **Azure DevOps Groups:** Leave as **Project Contributors**, the default security group for users who will contribute to your project. To learn more, see [Default permissions and access assignments](/azure/devops/organizations/security/permissions-access).  
+
+   > [!NOTE]  
+   > Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to sign up for a [Microsoft account](https://signup.live.com/) or a [GitHub account](https://github.com/join).  
+5. Select **Add** to complete your invitation.
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
-
 
 <a id="add-user" /> 
 
@@ -107,7 +132,6 @@ The following table provides a mapping of the access level selected through the 
  > [!NOTE]   
  > The `earlyAdopter` AccountLicenseType is an internal value used solely by Microsoft.  
 
-
 #### Example
 
 The following command adds the user with the email address contoso@contoso.com to your organization. It grants stakeholder level access to the user and shows the result in table format.
@@ -128,6 +152,8 @@ az devops security group membership --group-id vssgp.Uy0xLTktMTU1MTM3NDI0NS0xMTM
 ```
 
 You can see all security groups in a project using the [az devops security group list](/cli/azure/ext/azure-devops/devops/security/group#ext-azure-devops-az-devops-security-group-list) command.
+
+* * *
 
 > [!NOTE]
 > You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn how to [add members to projects](../security/add-users-team-project.md#add-users-to-a-project).
@@ -230,7 +256,7 @@ The Users view shows key information per user in a table. In this view, you can 
 
 5. **Save** your changes.
 
-#### [Manage users - Azure DevOps CLI](#tab/azure-devops-cli)
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
 [Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](delete-organization-users.md#remove-user) |[Update a user](#update-user) | [Show users](#show-users)
 
