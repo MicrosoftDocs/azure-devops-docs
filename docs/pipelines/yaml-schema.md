@@ -1767,7 +1767,7 @@ steps:
 
 ```yaml
 steps:
-- pwsh: echo Hello $(name)
+- pwsh: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
@@ -1807,7 +1807,7 @@ steps:
 
 ```yaml
 steps:
-- powershell: echo Hello $(name)
+- powershell: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
