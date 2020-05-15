@@ -291,7 +291,7 @@ You add the following Marketplace extensions to get access to a number of rich f
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
-- [Dependency Tracker](dependency-tracker.md)
+- [Dependency Tracker](../extensions/dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
 
 
