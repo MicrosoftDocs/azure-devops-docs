@@ -4,6 +4,7 @@ description: Read an overview of the basic patterns for using the REST APIs for 
 ms.assetid: bdddaf58-6849-4134-a295-2887dafeeea3
 ms.technology: devops-ecosystem
 ms.topic: conceptual
+ms.custom: has-adal-ref
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
