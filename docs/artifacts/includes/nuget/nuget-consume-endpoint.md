@@ -3,12 +3,12 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 05/15/2020
 ---
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your feed ([or create a feed if you haven't](../../feeds/create-feed.md)). 
+1. Go to your feed, or [Create a feed](../../feeds/create-feed.md)) if you haven't. 
 
 2. Select **Connect to feed**:
 
