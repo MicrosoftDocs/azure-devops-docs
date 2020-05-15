@@ -480,6 +480,8 @@ jobs:
   pool:                # see the following "Pool" schema
     name: string
     demands: string | [ string ]
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
@@ -1765,7 +1767,7 @@ steps:
 
 ```yaml
 steps:
-- pwsh: echo Hello $(name)
+- pwsh: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
@@ -1805,7 +1807,7 @@ steps:
 
 ```yaml
 steps:
-- powershell: echo Hello $(name)
+- powershell: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)

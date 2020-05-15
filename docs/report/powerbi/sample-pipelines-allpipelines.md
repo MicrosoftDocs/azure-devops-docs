@@ -44,6 +44,7 @@ let
    Source = OData.Feed ("https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?"
                &"$apply=filter( "
 	       &"CompletedDate ge {startdate} "
+	       &")"
                 &"/groupby( "
         &"(Pipeline/PipelineName), "
         &"aggregate( "
@@ -66,6 +67,7 @@ in
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/PipelineRuns?%20
 $apply=filter(
 	CompletedDate ge {startdate}
+	)
 /groupby(
 (Pipeline/PipelineName), 
 aggregate(

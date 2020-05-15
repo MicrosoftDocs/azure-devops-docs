@@ -15,7 +15,7 @@
     href: create-first-pipeline-cli.md
 # - name: Publish build results 
 #   href: get-started/pipelines-get-started.md
-  - name: Customize with scripts & tasks
+  - name: Customize your pipeline
     href: customize-pipeline.md
     displayName: azure-pipelines.yml, change build platform, add steps, multiple platforms, multiple versions, customize triggers
   - name: Multi-stage pipelines user experience

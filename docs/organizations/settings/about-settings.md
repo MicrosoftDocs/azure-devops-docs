@@ -270,7 +270,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <li><a href="../../repos/git/branch-policies.md" data-raw-source="[Manage branch policies](../../repos/git/branch-policies.md)">Manage branch policies</a></li>
 <li><a href="../../repos/tfvc/add-check-policies.md" data-raw-source="[Add TFVC Check-In Policies](../../repos/tfvc/add-check-policies.md)">Add TFVC Check-In Policies</a></li>
 </ul></td>
-<td>You can manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a> or one <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC) repository</a>. </td>
+<td>You can manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or one <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC) repository</a>. </td>
 </tr>
 <tr>
 <td><a id="test-center" /><strong>Test</strong> </td>

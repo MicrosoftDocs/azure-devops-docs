@@ -5,6 +5,7 @@ ms.assetid: 5C49CA02-A8C1-4B8D-AE52-B955FAFC7B06
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ms.topic: article
+ms.custom: has-adal-ref
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016

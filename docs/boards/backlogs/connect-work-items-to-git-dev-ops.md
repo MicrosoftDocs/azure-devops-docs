@@ -165,7 +165,7 @@ Learn more about tracking work with work items and developing with Git from thes
 ::: moniker range="azure-devops"
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md) 
+- [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
 - [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
@@ -175,7 +175,7 @@ Learn more about tracking work with work items and developing with Git from thes
 ::: moniker range="<= azure-devops-2019"
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md)  
+- [Git overview](../../repos/git/index.yml)  
 - [TFVC overview](../../repos/tfvc/overview.md)  
 - [Create your backlog](create-your-backlog.md)   
 

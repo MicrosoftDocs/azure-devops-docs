@@ -273,7 +273,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 
 > [!NOTE]
 > For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
-> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -458,7 +458,7 @@ To query for items based on text entered in the History field, see [History and 
 
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Query quick reference](query-index-quick-ref.md)
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 

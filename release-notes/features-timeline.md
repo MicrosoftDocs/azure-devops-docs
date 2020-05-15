@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: gloridelmorales
 ms.author: glmorale
-ms.date: 04/13/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -46,7 +46,7 @@ This feature list is a peek into our roadmap. It identifies some of the signific
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1615463 data-raw-source="[General availability of multi-stage pipelines UX](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1615463)">General availability of multi-stage pipelines UX</a></td><td>Pipelines</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702525 data-raw-source="[Finer-grained control over containers in pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702525)">Finer-grained control over containers in pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454026 data-raw-source="[Multi-repository support for YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1454026)">Multi-repository support for YAML pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
-<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174 data-raw-source="[Elastic self-hosted agent pools (VMSS)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174)">Elastic self-hosted agent pools (VMSS)</a></td><td>Pipelines</td><td>TBD</td></tr>
+<tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174 data-raw-source="[Elastic self-hosted agent pools (virtual machine scale set)](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1221174)">Elastic self-hosted agent pools (virtual machine scale set)</a></td><td>Pipelines</td><td>TBD</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702526 data-raw-source="[Require approval for repository resources in pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1702526)">Require approval for repository resources in pipelines</a></td><td>Pipelines</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663893 data-raw-source="[Manual validation in YAML pipelines](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1663893)">Manual validation in YAML pipelines</a></td><td>Release</td><td>2020</td></tr>
 <tr><td><a href=https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285 data-raw-source="[Persona-based new Test Plans page](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1616285)">Persona-based new Test Plans page</a></td><td>Test Plans</td><td>Future</td></tr>
@@ -92,7 +92,20 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
     </thead>
     <tbody>
-        <tr>
+    <tr>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4/27/2020](2020/sprint-168-update.md)">4/27/2020</a></td>
+        <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
+        </tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>N/A</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
+        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
+    </tr>    
+       <tr>
             <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
         </tr>
