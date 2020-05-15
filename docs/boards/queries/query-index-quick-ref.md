@@ -1,7 +1,7 @@
 ---
 title: Look up definitions and sample queries 
 titleSuffix: Azure Boards
-description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server 
+description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps
 ms.custom: boards-queries
 ms.technology: devops-agile
 ms.assetid:  
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/02/2019
+ms.date: 05/15/2020
 ---
 
 # Query quick reference 
@@ -167,7 +167,7 @@ The following table indicates the operators and macros available for the differe
 8. The <strong>@TeamAreas</strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 9. The <strong>@CurrentIteration</strong> macro is supported for TFS 2015 and later versions, and only when run from the web portal. 
 11. The **@CurrentIteration +/- n** macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions, and only when run from the web portal. 
-
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
 <a id="samples" />
 
