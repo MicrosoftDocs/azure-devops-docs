@@ -45,13 +45,16 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 `key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
-* **Strings**: fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
+* **Strings**: <br>
+fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
-* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
+* **File paths**: <br>
+path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
-* **File patterns**: comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+* **File patterns**: <br>
+comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -59,7 +62,7 @@ The contents of any file identified by a file path or file pattern is hashed to 
 
 Relative file paths or file patterns are resolved against `$(System.DefaultWorkingDirectory)`.
 
-#### Example
+**Example**:
 
 Here is an example showing how to cache dependencies installed by Yarn:
 
@@ -99,7 +102,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 The above executables need to be in a folder listed in the PATH environment variable.
 Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
 
-#### Example
+**Example**:
 
 Here is an example on how to use restore keys by Yarn:
 
@@ -186,7 +189,7 @@ steps:
 
 For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -209,7 +212,7 @@ steps:
 
 [ccache](https://ccache.dev/) is a compiler cache for C/C++. To use ccache in your pipeline make sure `ccache` is installed, and optionally added to your `PATH` (see [ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -238,7 +241,7 @@ https://ccache.dev/manual/latest.html#_configuration_settings) for more options,
 
 Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -266,7 +269,7 @@ steps:
 
 Maven has a local repository where it stores downloads and built artifacts. To enable, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -299,7 +302,7 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -323,7 +326,7 @@ There are different ways to enable caching in a Node.js project, but the recomme
 
 Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it is recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -350,7 +353,7 @@ If your project does not have a `package-lock.json` file, reference the `package
 
 Like with npm, there are different ways to cache packages installed with Yarn. The recommended way is to cache Yarn's [shared cache folder](https://yarnpkg.com/lang/en/docs/cli/cache/). This directory is managed by Yarn and contains a cached version of all downloaded packages. During install, Yarn checks this directory first (by default) for modules, which can reduce or eliminate network calls to public or private registries.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -372,7 +375,7 @@ steps:
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
