@@ -79,7 +79,7 @@ Work items provide support for the following tasks:
 - Link work items, attach files, add tags 
 - Add comments and view a discussion thread
 
-Product and portfolio backlogs enable teams to quickly add and prioritize their User Stories, Features, and Epics. For more information about work items and work item types, see [Track work with user stories, issues, bugs, features, and epics](work-items/about-work-items).  
+Product and portfolio backlogs enable teams to quickly add and prioritize their User Stories, Features, and Epics. For more information about work items and work item types, see [Track work with user stories, issues, bugs, features, and epics](../work-items/about-work-items.md).  
 
 <a id="backlogs-boards" />
 
@@ -175,7 +175,7 @@ With custom fields and tags, you can quickly filter backlogs, boards, and querie
 
 <a id="shared-services" />
 
-# Shared services team structure
+## Shared services team structure
 
 Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
 
