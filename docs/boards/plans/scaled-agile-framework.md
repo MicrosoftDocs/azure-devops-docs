@@ -264,7 +264,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Shared Services
    :::column-end:::
    :::column span="3":::
-      [Shared services team structure](safe-concepts.md#shared-services): Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
+      [**Shared services team structure**](safe-concepts.md#shared-services): Resources that are shared across teams can be represented through their own Agile feature team. Each can manage their backlog while having their work also appear in the backlogs of the teams they support.  
    :::column-end:::
 :::row-end:::
 :::row:::

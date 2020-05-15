@@ -19,7 +19,7 @@ ms.date: 05/01/2020
 
 The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
 
-Specifically, you'll learn how Azure Boards supports SAFe® practices by enabling you to perform the following customizations. 
+Specifically, you'll learn how Azure Boards supports SAFe® practices through the following operations. 
 
 >[!div class="checklist"]      
 > - Customize work item types or add custom work item types 
@@ -34,9 +34,9 @@ Specifically, you'll learn how Azure Boards supports SAFe® practices by enablin
 
 ## About customization and the inherited process
 
-TO BE COMPLETED. 
-
-<!--- Azure Boards supports a graphical user interface for customizing an Inherited process.  --> 
+Azure Boards provides a graphical user interface to support customization of your projects. This feature is called the Inherited process. All projects that use an inherited process are automatically updated when customizations are made to that process.  
+For an overview of all the customizations you can make to an  inherited process, see [About process customization and inherited processes](../../organizations/settings/work/inheritance-process-model.md). 
+ 
 
 <a id="customize-wits" />
 
@@ -188,7 +188,30 @@ Field rules provide support for a number of business use cases. Rules specify an
 
 The following image shows the supported conditions and actions you can select from. 
 
-![Supported field conditions and actions](../../organizations/settings/work/media/rules/when-condition-2.png)  
+
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+
+> [!NOTE]  
+> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2019"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+
+::: moniker-end
+ 
 
 For details on setting field rules, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
@@ -262,7 +285,7 @@ Also, you can add up to three additional portfolio backlogs as shown in the foll
 For details on customizing backlogs, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 
 
-## Add functionality 
+## Add even more functionality 
 
 You add the following Marketplace extensions to get access to a number of rich features that support SAFe. 
 
@@ -270,8 +293,6 @@ You add the following Marketplace extensions to get access to a number of rich f
 - [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
 - [Dependency Tracker](dependency-tracker.md)
 - [Retrospectives](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives)
-- [Estimate](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.estimate&ssr=false#overview)
-
 
 
 ## Try this next
