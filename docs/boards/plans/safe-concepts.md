@@ -18,7 +18,7 @@ ms.date: 05/01/2020
 
 <!--- Intro To be provided --> 
 
-If you're interested in using SAFe, you can configure projects created with the default system processes&mdash;[Scrum](../work-items/guidance/scrum-process.md), [Agile](../work-items/guidance/agile-process.md), or [CMMI](../work-items/guidance/cmmi-process.md)&mdash;to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on epics that span releases. 
+If you're interested in using SAFe, you can configure your Azure Boards project to track SAFe® deliverables. Just as Azure Boards supports Scrum and Agile practices, it can support SAFe® and large numbers of teams to work together on Epics that span releases. 
 
 This tutorial illustrates how the following SAFe® artifacts map to specific Azure Boards artifacts. 
 
@@ -46,7 +46,7 @@ The following image illustrates how you can configure Azure Boards to support a 
 Examples provided below illustrate how a three-level team hierarchy is configured using hierarchical area paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, you can apply these changes to any project hosted on Azure Boards.
 
 
-<a id="teams" />
+<a id="teams" /> 
  
 ## Agile teams, program and portfolio teams 
 
@@ -60,7 +60,7 @@ To support SAFe® teams, you reconfigure the default team as the Portfolio team 
 
 <a id="work-items" />
 
-## Epics, features, stories, capabilities, and enablers
+## Stories, Features, Epics, Enablers, and Capabilities  
 
 All work and deliverables are captured in work items. Each work item is associated with a specific work item type with a predefined workflow. Each Azure Boards process provides support for specific  work item types which you can use to track any of the SAFe® deliverables. 
 
@@ -70,22 +70,22 @@ The work item types available to you are based on the [process used when your pr
 
 The items in your backlog may be called *User Stories* (Agile) *Issues* (Basic), *Product backlog items* (Scrum), or *Requirements* (CMMI). All four are similar: they describe the customer value to be delivered and the work to be performed.   
 
-You can use Features and User Stories to track Capabilities and Enablers. Or, you if you have specific tracking and reporting needs, you can add custom work item types to track these types of deliverables. For more information, see [Customize Azure Boards, Add custom work item types](safe-customize.md#customize-wits).  
+You can track Enablers using User Stories or Features, and Capabilities using Features or Epics. Or, you if you have specific tracking and reporting needs, you can add custom work item types to track these types of deliverables. For more information, see [Customize Azure Boards, Add custom work item types](safe-customize.md#customize-wits).  
 
 Work items provide support for the following tasks: 
-- Add information, update status, and assign to a project member or sprint
-- Link work items, attach files
+- Add description and acceptance criteria
+- Assign to a team or area path and to a project member
+- Update status and assign to an iteration or sprint
+- Link work items, attach files, add tags 
 - Add comments and view a discussion thread
 
-Product and portfolio backlogs enable teams to quickly add and prioritize their Epics, Features, and User Stories.   
+Product and portfolio backlogs enable teams to quickly add and prioritize their User Stories, Features, and Epics. For more information about work items and work item types, see [Track work with user stories, issues, bugs, features, and epics](work-items/about-work-items).  
 
 <a id="backlogs-boards" />
 
 ## Team backlogs and boards
 
-SAFe® backlogs map to team, program, and portfolio backlogs. 
-
-Out of the box, the Agile process supports user story, feature, and epic backlog levels. The hierarchical backlog structure shows work done to support features and user stories in the progress of an epic.  
+SAFe® backlogs map to team, program, and portfolio backlogs. Out of the box, the Agile process supports User Story, Feature, and Epic backlog levels. The hierarchical backlog structure shows work done to support Features and User Stories in the progress of an Epic.  
 
 ![Hierarchical backlog: epics, features, and stories](media/safe/epic-feature-story-mapping.png)
 
@@ -123,8 +123,6 @@ You can use tags for a quick and easy way to map Features and Epics to their Val
 
 ![Tags can track value streams or associated budgets](media/safe/epic-value-area-tags.png)  
 
-
-
 With tags that you add to work items, you can:
 
 - Filter any backlog or Kanban board
@@ -134,6 +132,11 @@ With tags that you add to work items, you can:
 For a more robust mapping of work to architecture or business features, you can specify the Value Area for each Epic, Feature, or Story.  
 
 ![Value Area tracks Business or Architectural work](media/safe/value-area-mapping.png)  
+
+With rollup, you can get Budget Estimates for Epics from a rollup of the estimates defined to their child Features, as shown in the following image. 
+
+> [!div class="mx-imgBorder"]
+> ![Budget estimate rollup](media/safe/budget-estimate-rollup.png)
 
 To add custom fields, see [Customize Azure Boards, Add a custom field](safe-customize.md#add-custom-field). 
 
@@ -159,15 +162,38 @@ To learn more about the project wiki, see the [Related articles, information sha
 
 ## Milestones and key events  
 
-TO BE COMPLETED. 
+The end of each Program Increment, Sprint, Release Train, or Innovation and Planning (IP) Iteration represent natural SAFe® milestones. Many milestones are associated with specific ceremonies or practices, such as conducting retrospectives or demonstrating working software. 
 
-You can add milestones and key events to your Azure Boards projects through custom fields, or by entering them as an Iteration Path. 
+In Azure Boards, you can track other types of milestones or key events in the following ways. 
+
+- Custom field, such as Milestone or Release field with predefined picklist 
+- As a tag added to work items 
+- As a work item that specifies a target date 
+- As a one-day Iteration Path 
+
+With custom fields and tags, you can quickly filter backlogs, boards, and queries based on a specific milestone. 
+
+<a id="shared-services" />
+
+# Shared services team structure
+
+Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
+
+Here we show how area paths are assigned to the UX Design team, and then selective sub-area paths to other Agile feature teams. Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
+
+> [!div class="mx-imgBorder"]
+> ![Budget estimate rollup](media/safe/shared-services-team-structure.png)
+
 
 <a id="retrospectives" />
 
 ## Retrospectives and reviews
 
 To support teams performing retrospectives and reviews, we recommend using the [Retrospectives extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.team-retrospectives). 
+
+> [!div class="mx-imgBorder"]
+> ![Retrospective board](media/safe/retrospective-board.png)
+
 
 This extension allows teams to create their own retrospective boards and capture the following tasks: 
 - Collect feedback on project milestones
@@ -186,6 +212,9 @@ This extension allows teams to create their own retrospective boards and capture
 
 ## Related articles
 
+- [Agile process](../work-items/guidance/agile-process.md)
+- [Scrum process](../work-items/guidance/scrum-process.md)
+- [CMMI](../work-items/guidance/cmmi-process.md) 
 - [View SAFe® progress, roadmaps, and metrics](safe-review-roadmaps-progress.md)
 
 ### Culture and scale

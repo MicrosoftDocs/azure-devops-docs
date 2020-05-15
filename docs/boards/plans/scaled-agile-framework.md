@@ -18,11 +18,11 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-As enterprises are benefiting from individual agile teams, the question now is how do we scale these practices across teams and gain a portfolio view of the progress of agile teams throughout the enterprise? To address these needs, many businesses are using the Scaled Agile Framework&reg; (SAFe&reg;). 
+With many enterprises benefiting from individual agile teams, the need to scale those practices as the organization grows has come into greater focus. The need for enterprises to view progress of many agile teams and across a portfolio has grown. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
 If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
-This article introduces the components of Azure Boards that support SAFe®: 
+Azure Boards supports SAFe® practices through its autonomous teams, backlogs, boards, reports, and metrics. This article introduces you to how Azure Boards artifacts supports SAFe practices and artifacts.  
 >[!div class="checklist"]  
 > * The Scaled Agile Framework®
 > * Essential SAFe®
@@ -35,23 +35,24 @@ This article introduces the components of Azure Boards that support SAFe®:
 
 ## The Scaled Agile Framework®
 
-The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down epics into features and stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Also, the portfolio backlog can track how deliverables map to value streams and associated budgets.  
+The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of teams, all concerned with specific objectives. This framework breaks down Epics into Features and Stories, which teams work on in Sprints and deliver through Program Increments (PIs) and Release Trains. Additionally, the portfolio backlog can track deliverables that map to value streams and associated budgets.  
 
-
-### Version 5.0 
+### SAFe® architectural overview version 5.0 
 
 ![SAFe® architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
-
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
 ### SAFe® 5.0 Business Agility 
 
-Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer centric.
+Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer centric. 
 
 ![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
 
+Some of the ways Azure Boards supports business agility and agile culture are discussed in the following articles: 
+- [Agile culture](agile-culture.md)
+- [Practices that scale](practices-that-scale.md)
 
 ## Essential SAFe®
 
@@ -68,6 +69,8 @@ All of these artifacts and practices are supported by Azure Boards.
 - **Agile Release Train**: Implemented by a set of Agile teams and Program teams configured to support specific team and program views. 
 - **PI Objectives**, **Team Goals**, and  **Solution context**: Teams can use the built-in project wiki to share objectives, goals, customer information, and solution requirements.   
 
+For an overview of how Azure Boards implements Scrum and Kanban, see [About Sprints, Scrum and project management](../sprints/scrum-overview.md) and [About Boards and Kanban](../boards/kanban-overview.md).
+
 
 ## Portfolio SAFe®
 
@@ -81,7 +84,7 @@ Azure Boards provides supports for portfolio components includes the following:
 - **Portfolio backlogs**: Implemented as a portfolio backlog that supports filtering of work based on review of business needs.  
 - **Portfolio Vision** and **Strategic Themes**: Business owners and portfolio managers can use the built-in project wiki to share their vision, objectives and goals. 
 - **Value Streams**: Value streams can be tracked using tags or custom fields. 
-- **Lean budgets**: Budget information can be captured in custom fields and rolled up to gain visibility to the epic level. 
+- **Lean budgets**: Budget information can be captured in custom fields and rolled up to gain visibility to the Feature and Epic levels. 
 - **KPIs**: Several reports and dashboard widgets provide out-of-the box metrics. Power BI and the Analytics service provide support to create custom reports quickly. 
 
 ## Large Solution SAFe®
@@ -125,7 +128,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Agile Release Train (ART) 
    :::column-end:::
    :::column span="3":::
-       [**Teams**](safe-concepts.md#teams). Agile teams manage the work of deliverables for a set of features. Each Agile team has a set of Agile tools to support the flow of work and review progress and deliverables. 
+       [**Teams**](safe-concepts.md#teams). Agile teams manage the work of deliverables for a set of Features. Each Agile team has a [set of Agile tools](../../organizations/settings/about-teams-and-settings.md) to support the flow of work and review progress and deliverables. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,7 +144,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Capabilities
    :::column-end:::
    :::column span="3":::
-      [**Work item**](safe-concepts.md#work-items). You define, plan, and track Capabilities similar to Epics, Features, and Stories. You capture them in work items and within various team backlogs. 
+      [**Work item**](safe-concepts.md#work-items). You define, plan, and track Capabilities similar to Epics and Features. You capture them in work items and within various team backlogs. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -189,7 +192,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Milestones
    :::column-end:::
    :::column span="3":::
-      [**Milesones and key events**](safe-concepts.md#milestones). Milestones can be configured as a one day event or a work item which acts as a successor to a number of work item deliverables.  (Sanity check on this) 
+      [**Milesones and key events**](safe-concepts.md#milestones). Milestones occur at the end of each iteration. Custom fields and tags can also be used to associate work with milestones and key events.   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -197,7 +200,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Portfolio Backlog
    :::column-end:::
    :::column span="3":::
-      [**Portfolio backlog**](safe-concepts.md#backlogs-boards). A portfolio backlog lists the epics associated with a portfolio with the option to expand and display the child Features and Stories.  
+      [**Portfolio backlog**](safe-concepts.md#backlogs-boards). A portfolio backlog lists the Epics associated with a portfolio with the option to expand and display the child Features and Stories.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -237,7 +240,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Program Increment (PI) 
    :::column-end:::
    :::column span="3":::
-      [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks long. 
+      [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks or longer.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -253,7 +256,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Roadmap
    :::column-end:::
    :::column span="3":::
-      [**Delivery Plans, Feature Timeline**](safe-review-roadmaps-progress.md#roadmaps). Azure Boards provides configurable views to review roadmaps and team deliverables.
+      [**Delivery Plans, Feature Timeline**](safe-review-roadmaps-progress.md#roadmaps). Azure Boards provides configurable and interactive views to review roadmaps and team deliverables.
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -261,15 +264,15 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Shared Services
    :::column-end:::
    :::column span="3":::
-      TBD. TBD 
+      [Shared services team structure](safe-concepts.md#shared-services): Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Solution
+      Solutions
    :::column-end:::
    :::column span="3":::
-      TBD. TBD 
+      [**Solutions**](safe-customize.md#custom-wit): Solutions can be represented through a custom Solution work item type. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -277,7 +280,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Solution Backlog
    :::column-end:::
    :::column span="3":::
-      [**Custom portfolio backlog**](safe-customize.md#custom-backlog). You can define a custom work item type and portfolio backlog to capture special business requirements of large solutions, or use Epics and Epic portfolio backlogs to capture solutions. 
+      [**Solution portfolio backlog**](safe-customize.md#custom-backlog). You can define a custom work item type and portfolio backlog to capture special business requirements of large solutions, or use Epics and Epic portfolio backlogs to capture solutions. 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -341,24 +344,22 @@ Each of the following articles within this suite of tutorials provide details on
 > [How SAFe&reg; concepts map to Azure Boards artifacts](safe-concepts.md)
 
 
-
-
-
 ## Related articles
 
 - [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
-
-
-
-## Resources
-
-Resources mentioned earlier in this article and a few more are provided here for convenient reference.  
-- SAFe® enabled processes: [Agile](../work-items/guidance/agile-process.md),[Scrum](../work-items/guidance/scrum-process.md), and [CMMI](../work-items/guidance/cmmi-process.md).  
+- [Agile culture](agile-culture.md)
+- [Practices that scale](practices-that-scale.md)
+- [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
+- [About Boards and Kanban](../boards/kanban-overview.md)  
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
 - [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
+
+
+<!---
 - [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
 - [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
-- [Track your work when assigned to two or more teams](../sprints/set-capacity.md#track-capacity-per-team): Shows how a developer or tester can track work when they support more than one feature team.  
+ 
+-->
 
 ### About the authors
 
