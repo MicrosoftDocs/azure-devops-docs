@@ -1288,6 +1288,12 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+::: moniker range="> azure-devops-2019"
+
+If specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
+::: moniker-end
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
@@ -1303,12 +1309,14 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
-::: moniker-end
-
 > [!IMPORTANT]
 > When you specify a trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
+
+
 
 #### [Example](#tab/example/)
 
@@ -1394,10 +1402,20 @@ pr:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+::: moniker range="> azure-devops-2019"
+
+If specify an `exclude` clause without an `include` clause for `branches` or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 > [!IMPORTANT]
 > When you specify a pull request trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
 
 # [Example](#tab/example)
 
