@@ -12723,6 +12723,11 @@
       "source_path": "docs/repos/git/overview.md",
       "redirect_url": "/azure/devops/repos/git/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/azure-devops-auditing.md",
+      "redirect_url": "/azure/devops/organizations/settings/azure-devops-auditing",
+      "redirect_document_id": false
     }
   ]
 }
