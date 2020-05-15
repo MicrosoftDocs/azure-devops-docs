@@ -16,6 +16,8 @@ ms.date: 08/17/2016
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 
+[!INCLUDE [latest](./_data/see-latest.md)]
+
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
