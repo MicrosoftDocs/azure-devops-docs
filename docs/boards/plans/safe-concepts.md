@@ -45,10 +45,10 @@ The following image illustrates how you can configure Azure Boards to support a 
 
 Examples provided below illustrate how a three-level team hierarchy is configured using hierarchical area paths. The examples build from the [Agile process](../work-items/guidance/agile-process.md), However, you can apply these changes to any project hosted on Azure Boards.
 
+<a id="teams" />    
 
-<a id="teams" /> 
- 
-## Agile teams, program and portfolio teams 
+
+## Agile feature, program, and portfolio teams 
 
 Azure Boards supports each team to have its own view their work. By configuring a hierarchical team structure, each team can focus on their work, and have their work roll up to the next level within the team hierarchy.   
 

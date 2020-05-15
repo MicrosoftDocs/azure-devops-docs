@@ -17,13 +17,13 @@ ms.date: 05/01/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-This tutorial walks you through the steps for converting a new project with a single team defined to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
+This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
 > * Define Agile feature, program, and portfolio teams  
 > * Configure a hierarchy of Area Paths to support your teams  
 > * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
-> * Configure each team to support SAFe®
+> * Configure each team to support SAFe® 
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.   
 
@@ -38,9 +38,7 @@ Once you've performed these core configurations, you can then consider customizi
 
 ## Team hierarchy 
 
-::: moniker range=">= azure-devops-2019"
-
-In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following set of nine teams. 
+In this article, we'll go from having one project and one team, both named "Fabrikam", to the following set of nine teams. 
 
 > [!div class="mx-imgBorder"]  
 > ![Teams, list](media/safe-configure/teams-list.png)
@@ -53,25 +51,11 @@ We'll then configure the area path to the following hierarchy and configuring ea
 > [!TIP]    
 > If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#programmatic-tools) provided later in this article. 
 
-::: moniker-end
-
-::: moniker range="<= tfs-2018" 
-
-
-In this article, we'll go from having one project, named "Fabrikam" and one team, which shares the name of the project, to the following structure of three levels and nine teams. The area path hierarchy and configuring each team's area path supports each team's backlog view and rollup of views within the hierarchy.  
-
-![Hierarchical areas support 3 levels of 9 teams](media/safe-config-teams.png) 
-
-::: moniker-end
-
-Each project has a default team. You can configure additional teams for program-level and feature team-level work. And, you can also redefine the default team as the portfolio team that manages epics.  
 
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
-In order to go from one project with one default team, area, and set of iterations, we'll first configure an area path structure to support the hierarchy of teams we want. Then we'll make sure that the iteration paths support the release structure we want and the program and feature teams to use. Finally, we'll create, configure, and populate the membership of teams.  
-
-::: moniker range="azure-devops"
+In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hiearchical structure. Next, will define the iteration paths to support the release structure we want and the program and feature teams to use. Lastly, we'll configure each team and populate the membership of teams.  
 
 ## Define your teams 
 
@@ -110,66 +94,12 @@ Add each team, one by one.
 
 1. Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-
-### Create and configure each Program team
-
-1. From the Overview page for the project, create a new team. Make sure that you clear the checkbox for Create an area path with the name of the team.  
-
-	![Create team](media/safe-create-team.png)  
-
-2. Choose the team from the list, go to the Areas page, and select the check box next to the area path that you previously created for that team.  
-
-	![Areas page, Program team, set default areas](media/safe-map-team-to-area.png)  
-
-3. Use the context menu to exclude sub-areas. By excluding sub-areas, the team's backlog only includes those items whose Area Path matches the team's default area path.
-
-	![Areas page for Program team, Exclude sub-areas](media/safe-exclude-sub-areas-for-fabrikam-fiber-suite.png)  
-
-4. Next, configure the iterations that will be active for the program team. In this example, we have configured three PIs, each with five two-week sprints. Four of the sprints are regular sprints and the last sprint is an Innovation and Planning (IP) sprint.  
-	![Iterations page, Program team](media/safe-map-team-iterations.png)  
-  
-	Because the Fiber Suite program team is concerned with Release Trains, we choose PI 1, 2, and 3, but we don't choose the individual sprints.
-
-6. Once you've selected which iterations are active for the team, add users to the new team. Ideally, you would add the scrum masters for each feature team, product owners, as well as the Release Train Engineers (RTEs) to the program teams, such as Fiber Suite.  
-
-	![Add team members](media/safe-add-team-members.png)  
-
-6. If you've more than one team at the program level, repeat steps 1 through 4 for each program team. 
-
-### Create and configure each Feature team
-
-Next, we'll create some feature teams to get work done at the third level of the team hierarchy. Each feature team will contribute sprint work that rolls up into the PI. The number of teams you create will depend on the size of your organization.
-
-1. Create a new team from the administration page for the original team, and name the team. Just like before, make sure you clear the check box next to **Create an area path with the name of the team**.
-
-	![Create another team](media/safe-create-another-team.png)  
-
-2. Just as before, choose the team from the list, go to the Areas page, and select the check box next to the area path that you previously created for that team.  
-
-	![Set default area path for Migrate feature team](media/safe-configure-migrate-team-area-path.png)  
-
-3. Configure iterations for the team, using the PIs and sprints you created earlier. Unlike the program teams, this time select the individual sprints as the working iterations for the feature team.  
-
-	![Migrate team iterations](media/safe-configure-migrate-team-iterations.png)  
-
-4. Lastly, add the accounts for the developers, testers, and the scrum master for the team. Your Agile tools support assigning a scrum master to multiple teams. The scrum master can track work across multiple teams.  
-
-	![Migrate team members](media/safe-add-migrate-team-members.png) 
-
-5. Repeat steps 1 through 4 for each feature team in your organization. Make sure that the default area path you configure for the team is sub-area path under its corresponding program-level area path. This ensures rollup from feature teams to program teams.
-
-
-::: moniker-end
 
 ## Configure Area Paths 
 
 To support your team hierarchy, you'll now configure the area paths created in the first step of defining teams into a hierarchy. 
 
-::: moniker range=">=azure-devops-2019"
+
 
 1. From the **Project Settings** page, choose **Project configuration** and then **Areas**. You should see a flat list of Area Paths. 
 
@@ -202,32 +132,12 @@ To support your team hierarchy, you'll now configure the area paths created in t
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
 
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-
-1.  Connect to the project you want to configure to support SAFe, and use the gear icon ![Settings icon](../media/icons/gear_icon.png) to open the administration page for the default team.  
-2.  On the **Areas** page, create a child under the top-level area path and name it to correspond to one of the program teams you'll create.
-
-	![Create child area](media/safe-add-area-path.png)  
-
-3.  Next, create a second area at the same child level, and name it after the second program team.  
-
-4.  Under each program area, create a child area for each feature team that will support their respective program team. You should end up with a 3-level area path hierarchy.
-
-	![Areas page, 9 area paths defined](media/safe-team-area-paths-added.png)  
-::: moniker-end
-
 
 ## Define Iteration Paths  
 
 To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
 
 If you already have iterations for your default team, you can rename them. You'll want to create an iteration structure that supports your entire team structure, not just one team.  
-
-
-::: moniker range=">=azure-devops-2019"
 
 1. From the **Project Settings** page, choose **Project configuration** and then **Iterations**.  
 
@@ -248,23 +158,7 @@ If you already have iterations for your default team, you can rename them. You'l
 	> [!div class="mx-imgBorder"]
 	> ![Iterations page, list of iterations](media/safe-configure/list-iterations.png)
 
-::: moniker-end
 
-
-::: moniker range="<= tfs-2018"
-
-1. Under the default iteration, which shares the same name as the project, create a child iteration that will represent your first program increment (PI). Optionally, add a start and end date for the PI, but keep in mind that the iteration will be broken down further into sprints.
-
-	![Create iterations](media/safe-create-iterations.png)
-
-2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your feature teams' cadences.  
-
-	![Iterations page, create IP Sprint iteration](media/safe-view-of-iterations.png)
-
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"  
-"
 ## Configure your teams 
 
 Now that your teams, Area Paths, and Iteration Paths are defined, the next step is to configure each team. You'll want to configure the following settings for each team. 
@@ -431,9 +325,6 @@ These are the recommended settings to make based on the team level.
 
 	> [!div class="mx-imgBorder"]
 	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
-
-
-::: moniker-end
 
 
 <a id="programmatic-tools" /> 
