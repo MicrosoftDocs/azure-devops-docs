@@ -12733,6 +12733,11 @@
       "source_path": "docs/organizations/accounts/add-team-members.md",
       "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/azure-devops-auditing.md",
+      "redirect_url": "/azure/devops/organizations/accounts/azure-devops-auditing",
+      "redirect_document_id": false
     }
   ]
 }
