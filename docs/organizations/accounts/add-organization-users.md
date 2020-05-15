@@ -29,8 +29,6 @@ The following types of users can join your organization for free:
 > [!NOTE]
 > For information about inviting external users, see [Add external user](add-external-user.md).
 
-## Prerequisites
-
 [!INCLUDE [prerequisites-add-users-org](../../includes/prerequisites-add-users-org.md)]
 
 ## Add users to your organization
@@ -155,12 +153,12 @@ You can see all security groups in a project using the [az devops security group
 
 * * *
 
+For more information about user access, read [about access levels](../security/access-levels.md).
+
 > [!NOTE]
 > You can add people to projects instead of to your organization. Users are automatically assigned [Basic features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if your organization has seats available, or [Stakeholder features](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) if not. Learn how to [add members to projects](../security/add-users-team-project.md#add-users-to-a-project).
 >
 > When user no longer need access to your organization, [delete them](delete-organization-users.md) from your organization.
-
-To learn more, read [about access levels](../security/access-levels.md).
 
 ## Add users to projects or teams
 
@@ -323,8 +321,9 @@ ID                                    Display Name         Email                
 
 ## FAQs for adding users
 
-### *Which email addresses can I add?*
+#### Q: Which email addresses can I add?
 
+A: 
 * If your organization is connected to Azure Active Directory, you can add only email addresses that are internal to the directory.
 
 * Add email addresses of users who have ["personal" Microsoft accounts](https://www.microsoft.com/account) unless you [use your organization's directory](faq-azure-access.md) to authenticate users and control access through [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis).
@@ -335,19 +334,20 @@ ID                                    Display Name         Email                
 
 After you add members to your project, each member gets an invitation email that links to your organization. They can use this link to sign in to your organization and find your project. First-time members might be asked for extra details when they sign in to personalize their experience.
 
-### *What if they don't get or lose the invitation email?*
+#### Q: What if they don't get or lose the invitation email?
 
+A:
 * **Organizations connected to Azure AD**: If you're [inviting users from outside your Azure AD](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), they must use the email. Removing users from the organization removes both their access and their license. However, any artifacts that were assigned to them remain unchanged. You can always invite users back into the organization if they exist in the Azure AD tenant. After they're removed from Azure AD, you can't assign any artifacts (work items, pull requests, and so forth) to them. We preserve the history of artifacts that have already been assigned to the users.
 
 * **Organizations with Microsoft accounts**: You can send a link to the project page, which the email contains, to the new team members. Removing users from the organization removes both their access and their licenses. You can no longer assign any artifacts (work items, pull requests, and so forth) to these users. However, any artifacts that were assigned to them remain unchanged.
 
-### *Why can't I add any more members?*
+### Q: Why can't I add any more members?
 
-See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.md#q-why-cant-i-add-any-more-members-to-my-project). 
+A: See [Q: Why can't I add any more members to my project?](faq-user-and-permissions-management.md#q-why-cant-i-add-any-more-members-to-my-project). 
 
-#### How is *access* different from *permissions*?
+#### Q: How is *access* different from *permissions?
 
-Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
+A: Access levels control which features are available to users. Permissions control a user's access to organization resources. To learn more, see [Default permissions and access](../../organizations/security/permissions-access.md).
 
 ## Related articles
 
