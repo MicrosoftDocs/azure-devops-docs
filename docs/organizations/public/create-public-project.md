@@ -64,7 +64,7 @@ Before you can create a public project, you must enable anonymous access for you
 	> ![Project creation confirmation dialog, new nav](../projects/media/create-project/project-creation-complete-new-nav.png)
 
 	Select one of the following tasks to get started:  
-	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). Note, if this is your first project, then you must first [invite users to your organization](../accounts/add-team-members.md).
+	- **Invite** to begin [adding others to your project](../security/add-users-team-project.md). If this is your first project, then you must first [add users to your organization](../accounts/add-organization-users.md).
 	- **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 	- **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or initialize a README file for your project summary page.
 	- **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
