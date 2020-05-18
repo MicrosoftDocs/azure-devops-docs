@@ -25,6 +25,6 @@
       tocHref: /azure/devops/reference/
       topicHref: /azure/devops/reference/customize-work
     - name: Process
-      tocHref: /azure/devops/boards/work-items/guidance/
+      tocHref: /azure/devops/boards/
       topicHref: /azure/devops/boards/work-items/guidance/choose-process
 
