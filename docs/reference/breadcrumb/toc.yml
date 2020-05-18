@@ -15,3 +15,6 @@
     - name: Process templates
       tocHref: /azure/devops/reference/process-templates/
       topicHref: /azure/devops/reference/process-templates/index
+    - name: witadmin Reference
+      tocHref: /azure/devops/reference/witadmin/
+      topicHref: /azure/devops/reference/witadmin/witadmin-customize-and-manage-objects-for-tracking-work
