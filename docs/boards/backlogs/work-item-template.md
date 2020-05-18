@@ -65,7 +65,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 2. Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
     > [!div class="mx-imgBorder"]  
-    > ![Capture work item field definitions as a template, vsts](media/templates/wi-templates-capture-bug-vsts-s136.png) 
+    > ![Capture work item field definitions as a template, latest version](media/templates/wi-templates-capture-bug-vsts-s136.png) 
 
     Name the template, select the team for which you want to save it under, and optionally define or clear fields. Save the template when finished. 
 
