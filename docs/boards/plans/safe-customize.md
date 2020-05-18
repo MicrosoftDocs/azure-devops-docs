@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/01/2020
+ms.date: 05/18/2020
 ---
 
 
@@ -135,6 +135,7 @@ For details on adding a custom field, see [Add a custom field to a work item typ
 You can capture a value stream using a field or tags. Tags represent a more informal and adhoc method for categorizing work. A specific field, particularly one with preset items, is more formal. When determining how you want to use tags and fields, consider the following: 
 
 - You can make a field required through custom rules, however, you can't require tags be added to a work item. 
+- You can create query charts based on custom fields, however, you can't specify a tag for use in query charts. 
 - You can filter backlogs, boards, and queries based on fields or tags. 
 - The number of tags created can quickly grow as anyone can add new tags as long as they have the correct permissions. 
 
