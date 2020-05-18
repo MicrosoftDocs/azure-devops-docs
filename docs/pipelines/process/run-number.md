@@ -23,7 +23,7 @@ You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
 
 ```yaml
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 steps:
 - script: echo hello world
 ```
@@ -72,7 +72,7 @@ The following table shows how each token is resolved based on the previous examp
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
-| `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
+| `$(Build.DefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
 | `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
