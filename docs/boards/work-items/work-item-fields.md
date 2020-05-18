@@ -143,7 +143,7 @@ The following table describes each attribute.
 </tr>
 <tr>
 	<td> </td>
-	<td>Id</td>
+	<td>ID</td>
 	<td>Integer</td>
 	<td>Specifies the internal ID of the field. </td>
 	<td>No</td>

@@ -378,7 +378,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
 
-See also [Azure Boards extensions developed by Microsoft](../extensions/?view=azure-devops).
+See also [Azure Boards extensions developed by Microsoft](../extensions.md).
 
 ## Related articles 
 
