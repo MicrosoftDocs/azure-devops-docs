@@ -130,7 +130,7 @@ The following people have contributed to Azure DevOps docs in March 2020. Thank 
 - [bergmeister](https://github.com/bergmeister) - Christoph Bergmeister [MVP] (1)
 - [c0g1t8](https://github.com/c0g1t8) - Gary Chan (1)
 - [hangar18rip](https://github.com/hangar18rip) - Olivier (1)
-- [JinwookKim](https://github.com/JinwookKim) - Jinwook Kim (1)
+- [JinwookKim](https://github.com/JINWOOKKIM-cmd) - Jinwook Kim (1)
 - [ksmis-gh](https://github.com/ksmis-gh) - Kshiteesh (1)
 - [leotsarev](https://github.com/leotsarev) - Leonid Tsarev (1)
 - [ppejovic](https://github.com/ppejovic) - Pero P. (1)
