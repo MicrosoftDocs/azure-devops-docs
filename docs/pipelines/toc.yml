@@ -434,6 +434,8 @@
       href: release/approvals/servicenow.md
     - name: Integrate with Jenkins (Classic)
       href: release/integrate-jenkins-pipelines-cicd.md
+    - name: Automate infrastructure deployment with Terraform
+      href: release/automate-terraform.md
 - name: Migrate
   items:
   - name: Migrate from Jenkins
