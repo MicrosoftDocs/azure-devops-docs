@@ -1,7 +1,7 @@
-﻿---
+---
 title: What is the best tool to add, update, or link user stories, bugs, issues, and other work items? 
 titleSuffix: Azure Boards
-description: Learn which tool is best use to add or update one or more user stories, bugs, issues, and other work items in Azure Boards & TFS 
+description: Learn which tool is best to add or update user stories, bugs, issues, and other work items 
 ms.custom: work-items, seodec18
 ms.technology: devops-agile
 ms.assetid: 
@@ -378,16 +378,7 @@ Testing tools used several work item types&mdash;such as test plans, test suites
 
 A number of additional tools become available when you install one of the [Extensions for Azure DevOps, Boards category](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Boards&sortBy=Downloads). 
 
-### [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power)
-
-Provides you access to these additional tools through the Team Explorer plug-in for Visual Studio. Additional requirements may apply.
-
--   Process Template Editor
--   Additional check-in policies for Team Foundation Version Control
--   Team Explorer enhancements including Team Members
--   Team Foundation Power Tool Command Line
--   Test Attachment Cleaner
--   Work Item Templates
+See also [Azure Boards extensions developed by Microsoft](../extensions/?view=azure-devops).
 
 ## Related articles 
 

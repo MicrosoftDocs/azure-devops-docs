@@ -33,22 +33,7 @@ Adding to your gallery of storyboard shapes can boost your ability to [storyboar
   
 2.  Export your shapes to a storyboard shapes file (.sbsx) and share it with other team members who use PowerPoint Storyboarding.  
      ![Export your custom shapes](media/alm_sb_shp_export.png "ALM_SB_SHP_Export")  
- 
-<!--- 
-## You can share your shapes with the Visual Studio community, too  
- Sell or share your custom storyboard shapes through the Visual Studio gallery.  
-  
-1.  Open the [Visual Studio Extensions Upload](https://visualstudiogallery.msdn.microsoft.com/site/upload) page.  
-  
-     ![Agree to contribution terms and contribute](media/alm_sb_shp_contribute.png "ALM_SB_SHP_Contribute")  
-  
-2.  Specify the storyboard shapes extension type.  
-  
-     ![Upload a storyboard shapes file](media/alm_sb_shp_upload.png "ALM_SB_SHP_Upload")  
-  
-3.  Complete the next two steps and add your contribution.  
 
- In addition, you can author storyboard shapes with custom resize logic using the Storyboard Shapes Authoring Tool. To get this tool, download [Visual Studio Team Foundation Server Power Tools](https://go.microsoft.com/fwlink/?LinkId=248625).  
--->  
 ## Related articles  
+
 - [Storyboard your ideas using PowerPoint Storyboarding](storyboard-your-ideas-using-powerpoint.md).
