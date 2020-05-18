@@ -163,7 +163,7 @@ landingContent:
           - text: Set build and release retention policies
             url: ./policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Automate infrastructure deployments with Terraform
-            url: ./releases/automate-terraform.md
+            url: ./release/automate-terraform.md
   - title: Reference guidance
     linkLists:
       - linkListType: reference
