@@ -246,7 +246,7 @@ additionalContent:
               url: ./organizations/settings/index.md
             - text: Notifications
               url: ./notifications/index.md
-        # Card
+          # Card
         - title: Security, access, and billing
           links:
             - text: Permissions and groups
