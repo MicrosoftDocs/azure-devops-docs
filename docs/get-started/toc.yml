@@ -44,6 +44,8 @@
     href: /azure/devops/marketplace-extensibility/index
   - name: Search your Wiki
     href: https://blogs.msdn.microsoft.com/devops/2017/12/01/announcing-public-preview-of-wiki-search/
+  - name: Auditing
+    href: /azure/devops/organizations/audit/azure-devops-auditing.md
   - name: Code search video
     href: https://sec.ch9.ms/ch9/d0f4/782cd441-3b03-4323-a3a7-8ab168cdd0f4/CodeSearch_high.mp4
 - name: Journey articles

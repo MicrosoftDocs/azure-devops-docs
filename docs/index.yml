@@ -246,6 +246,8 @@ additionalContent:
               url: ./organizations/settings/index.md
             - text: Notifications
               url: ./notifications/index.md
+            - text: Auditing
+              url: ./audit/azure-devops-auditing.md
         # Card
         - title: Security, access, and billing
           links:
