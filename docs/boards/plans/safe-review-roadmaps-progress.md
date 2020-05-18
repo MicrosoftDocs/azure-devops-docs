@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/01/2020
+ms.date: 05/18/2020
 ---
 
 
@@ -138,8 +138,9 @@ The feature timeline tool provides another view into progress of deliverables. H
 > ![Feature Timeline, Portfolio feature deliverables](media/safe-metrics/feature-timeline-fabrikam-team.png) 
 
 
+<!---
 
-### Feature and Epic progress reports  
+## Feature and Epic progress reports  
 
 Need to develop a report using Analytics view and Power BI. Want something to approximate the following: 
 
@@ -147,6 +148,8 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 
 > [!div class="mx-imgBorder"]  
 > ![SAFe® Epic Progress Report](https://www.scaledagileframework.com/wp-content/uploads/2018/04/Applied-Enterprise-Workflow_F06-WP.png)
+
+--> 
 
 ## Try this next
 
@@ -160,5 +163,3 @@ Need to develop a report using Analytics view and Power BI. Want something to ap
 - [View portfolio progress with the Feature Timeline](../extensions/feature-timeline.md)
 
 
-
-<!--- To be provided --> 
