@@ -141,7 +141,7 @@ Now that the application has been built, it's time to release it. However, no de
 
     ![Configuring the Azure CLI task](media/automate-terraform/configure-cd-azure-cli.png)
 
-    This task executes a series of Azure CLI commands to set up some basic inrastructure required to use Terraform.
+    This task executes a series of Azure CLI commands to set up some basic infrastructure required to use Terraform.
 
     ```azurecli-interactive
 	# this will create Azure resource group
@@ -155,7 +155,7 @@ Now that the application has been built, it's time to release it. However, no de
 
     ```
 
-    By default, Terraform stores state locally in a file named **terraform.tfstate**. When working with Terraform in a team, use of a local file makes Terraform usage complicated. With remote state, Terraform writes the state data to a remote data store. Here the pipeline uses an Azure CLI task to create an Azure storage account and storage container to store the Terraform state. For more information on Terraform remote state, see Terraform's docs for working with [Remote State](https://www.terraform.io/docs/state/remote.html).
+    By default, Terraform stores state locally in a file named **terraform.tfstate**. When working with Terraform in a team, use of a local file makes Terraform implementation complicated. With remote state, Terraform writes the state data to a remote data store. Here the pipeline uses an Azure CLI task to create an Azure storage account and storage container to store the Terraform state. For more information on Terraform remote state, see Terraform's docs for working with [Remote State](https://www.terraform.io/docs/state/remote.html).
 
 1. Select the **Azure PowerShell** task and configure it to use the **Azure Resource Manager** connection type and use the service connection created earlier. 
 
@@ -171,7 +171,7 @@ Now that the application has been built, it's time to release it. However, no de
 	Write-Host "##vso[task.setvariable variable=storagekey]$key"
 	```
 
-1. Select the **Replace tokens** task. If you recall the **webapp.tf** file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task replaces those tokens with variable values relevant to the deployment, including those from the pipeline's **Variables**. You may review those on the **Variables** if you like, but return to **Tasks** afterwards.
+1. Select the **Replace tokens** task. If you recall the **webapp.tf** file reviewed earlier, there were several resources that were unknown at the time and marked with token placeholders, such as **__terraformstorageaccount__**. This task replaces those tokens with variable values relevant to the deployment, including those from the pipeline's **Variables**. You may review those under **Variables** if you like, but return to **Tasks** afterwards.
 
     ![Configuring the CD agent](media/automate-terraform/cd-variables.png)
 
@@ -187,7 +187,7 @@ Now that the application has been built, it's time to release it. However, no de
 
     ![Configuring the Terraform init task](media/automate-terraform/configure-cd-terraform-init.png)
 
-1. Select the **Terraform plan** task. This task runs the **terraform plan** command. This command is used to create an execution plan by determining what actions are necessary to achieve the desired state specified in the configuration files. This is just a dry run and shows which actions will be made. For more information, see Terraform's documentation for the [plan command](https://www.terraform.io/docs/commands/plan.html).
+1. Select the **Terraform plan** task. This task runs the **terraform plan** command. This command is used to create an execution plan by determining what actions are necessary to achieve the desired state specified in the configuration files. This is just a dry run and shows which actions will be performed. For more information, see Terraform's documentation for the [plan command](https://www.terraform.io/docs/commands/plan.html).
 
     Select the **Azure subscription** created earlier.
 
