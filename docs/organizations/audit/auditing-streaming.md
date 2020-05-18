@@ -1,5 +1,5 @@
 ---
-title: Create audit stream for Azure DevOps
+title: Create audit streaming for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started sending your audit data to other locations for further processing for Azure DevOps, by creating and enabling a stream.  
 ms.technology: devops-audit
@@ -12,16 +12,16 @@ monikerRange: 'azure-devops'
 ms.date: 05/14/2020
 ---
 
-# Create auditing streaming
+# Create audit streaming
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 > [!Note]
-> Auditing streaming is currently in a Public Preview.
+> Audit streaming is currently in a Public Preview.
 
-In this article, learn how to create an [auditing](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific audit events, creating views on audit data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
+In this article, learn how to create an [audit](azure-devops-auditing.md) stream, which sends data to other locations for further processing. Sending auditing data to other Security Incident and Event Management (SIEM) tools opens possibilities, such as alerting on specific auditing events, creating views on auditing data, and performing anomaly detection. It also allows you to store more than the 90-days worth of auditing data, which Azure DevOps keeps.
 
-Auditing streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
+Audit streams represent a pipeline that flows audit events from your Azure DevOps organization to a stream target. Every 5 minutes, new audit events are bundled and streamed to your targets. Currently, the following stream targets are available for configuration:
 
 - [Splunk](#set-up-a-splunk-stream) – Connect to on-premises or cloud-based Splunk.
 - [Azure Monitor Log](#set-up-an-azure-monitor-log-stream) - Send auditing logs to [Azure Monitor Logs](https://aka.ms/adostreammonitorlogs). Logs stored in Azure Monitor Logs can be queried and have alerts configured. You can also connect [Azure Sentinel](https://aka.ms/adostreamingazuresentinel) to your workspace. 
@@ -36,7 +36,7 @@ You must have the following permissions:
 - Manage audit streams
 - View audit log
   
-  :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set auditing permissions to Allow":::
+  :::image type="content" source="media/auditing-streaming/auditing-permissions.png" alt-text="Set audit permissions to Allow":::
 
 These permissions can be given to any other users or groups you wish to have manage your organization's streams. There's also a *Delete audit streams* permission.
 
@@ -51,7 +51,7 @@ These permissions can be given to any other users or groups you wish to have man
 
    ![Select Auditing in Organization settings](media/auditing-streaming/select-auditing-organization-settings.png)
 
-   If you don't see Auditing in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
+   If you don't see *Auditing* in Organization settings, then you don't have access to view audit events. Outside of the Project Collection Administrators group, you can give permissions to other users and groups, so they can view auditing.
 
 4. Go to the **Streams** tab, and then select **New stream**. 
 
