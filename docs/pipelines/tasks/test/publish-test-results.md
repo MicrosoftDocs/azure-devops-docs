@@ -334,7 +334,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
