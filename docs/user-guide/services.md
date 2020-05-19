@@ -9,7 +9,7 @@ ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2019
+ms.date: 05/19/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -161,7 +161,8 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Azure Pipelines page](media/builds-pipelines-page.png)
+> [!div class="mx-imgBorder"] 
+> ![Azure Pipelines landing page](media/pipelines-landing-page.png)
 
 ::: moniker-end
 
