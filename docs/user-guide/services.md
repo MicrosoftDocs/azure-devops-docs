@@ -161,7 +161,8 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Azure Pipelines page](media/builds-pipelines-page.png)
+> [!div class="mx-imgBorder"] 
+> ![Azure Pipelines landing page](media/pipelines-landing-page.png)
 
 ::: moniker-end
 
