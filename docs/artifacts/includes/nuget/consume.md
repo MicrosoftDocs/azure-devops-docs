@@ -3,7 +3,7 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 05/15/2020
+ms.date: 02/19/2020
 ---
 
 To consume NuGet packages from a feed, add the feed's NuGet endpoint as a package source in Visual Studio.
@@ -24,8 +24,7 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 4. At the bottom of the dialog box, enter the feed's name and the URL that you got in the last step.
 5. Select **Update**.
 6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
-> [!div class="mx-imgBorder"]
->![Add new NuGet source](../../media/vs-addsource.png)
+   ![Add new NuGet source](../../media/vs-addsource.png)
 7. Select **OK**.
 8. [Go to the steps for consuming packages](#consume-packages).
 
@@ -40,8 +39,8 @@ To consume NuGet packages from a feed, add the feed's NuGet endpoint as a packag
 5. Select **OK**.
 6. If you enabled the [nuget.org upstream source](../../nuget/upstream-sources.md), clear the check box for the **nuget.org** package source.
 7. Select **OK** again.
-> [!div class="mx-imgBorder"]
->![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../../media/vs-mac-settings.png)
+
+   ![Visual Studio for Mac preferences window with Azure DevOps Services feed added](../../media/vs-mac-settings.png)
 
 <a name="consume-packages"></a>
 
@@ -54,8 +53,7 @@ You can now discover and use packages in this feed. To add a package reference t
 3. Select **Manage NuGet Packages**.
 4. In the **Package source** drop-down list, select your feed.
 5. Look for your package in the list.
-> [!div class="mx-imgBorder"]
->![Select feed source](../../media/select-pkg-src.png)
+   ![Select feed source](../../media/select-pkg-src.png)
 
 If you're using [upstream sources](../../nuget/upstream-sources.md), package versions in the upstream source that haven't yet been saved into your feed (by using them at least once) won't appear in the NuGet Package Manager search. To install these packages:
 
@@ -68,6 +66,8 @@ If you're using [upstream sources](../../nuget/upstream-sources.md), package ver
 ## Use symbols to debug
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files for packages without knowing product names, build numbers, or package names. If [symbols have been published](/azure/devops/pipelines/artifacts/symbols) for your packages, [connect Visual Studio to the symbol server in Azure Artifacts](../../symbols/debug-with-symbols-visual-studio.md) to use symbols as you debug your packages.
+
+<!-- TODO can we make this an FAQ bit at the end, so it's out of the way? -->
 
 ## Using Visual Studio 2013 or earlier
 
