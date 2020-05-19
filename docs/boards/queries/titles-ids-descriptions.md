@@ -152,7 +152,7 @@ The following table describes common fields used to filter queries. The **ID** f
 Description <sup>1, 2</sup>
   </td>
   <td>
-    <p>Use this field to provide indepth information about a work item.</p>
+    <p>Use this field to provide in-depth information about a work item.</p>
     <p>Reference name=System.Description, Data type=HTML</p>
   </td>
 <td>All</td>
