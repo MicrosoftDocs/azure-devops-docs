@@ -269,3 +269,14 @@ LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/local/bin/node"
 
 CMD [ "node" ]
 ```
+
+### Multiple jobs with agent pools on a single hosted agent
+
+The container job uses the underlying host agent docker config.json for image registry authorization which logs out at the end of the docker registry container initialization, thus subsequent registry image pulls authorization may be denied “unauthorized authentication”. Since the docker config.json file registered in the system for authentication has already been logged out by one of the other container jobs running in parallel. 
+
+The solution is to set docker environment variable “DOCKER_CONFIG” that is specific to each agent pool service running on the hosted agent. export the “DOCKER_CONFIG” in each agent pool’s runsvc.sh script as below:
+
+```
+#inserting anything to setup env when running as a service
+export DOCKER_CONFIG=./.docker
+```
