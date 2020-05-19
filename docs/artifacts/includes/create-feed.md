@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 02/19/2020
+ms.date: 05/15/2020
 ---
 
 A feed is a container for packages.
@@ -33,7 +33,7 @@ You consume and publish packages through a particular feed.
 
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
    > [!NOTE]   
-   > There are some important things to consider when publishing packages that involve upstream sources. Check out the documentation on [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more information.
+   > There are some important factors to consider when publishing packages that involve upstream sources. See [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more details.
 
    > [!div class="mx-imgBorder"] 
    >![New feed dialog box](../media/new-feed-dialog.png)
@@ -60,7 +60,7 @@ You consume and publish packages through a particular feed.
 
    Most of the default settings work great for most feed users. Making your feed organization visible means you can share a single source of packages across your entire team. Enabling upstream sources to public sources makes it easy to use your favorite OSS packages. Enabling upstream sources can also give you more protection against outages and corrupted or compromised packages.
    > [!NOTE]   
-   > There are some important things to consider when publishing packages that involve upstream sources. Check out the documentation on [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more information.
+   > There are some important factors to consider when publishing packages that involve upstream sources. See [overriding a package from an upstream source](../concepts/upstream-sources.md#overriding-a-package-from-an-upstream-source) for more details.
 
    ![New feed dialog box](../media/new-feed-dialog.png)
 
