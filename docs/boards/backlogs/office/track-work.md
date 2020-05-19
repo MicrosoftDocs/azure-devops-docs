@@ -233,9 +233,14 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 
 2. Connect to your Azure DevOps project that contains the work items you want to add to or update. For more information, see [Connect to a project](../../../organizations/projects/connect-to-projects.md).
 
-3.  
+3.  Right-click the query you want to open and choose. 
 
+	> [!div class="mx-imgBorder"]  
+	> ![Team Explorer, Work Items, Query, context menu](media/connect/open-from-visual-studio-query.png)
 
+	Excel opens with the work items listed in the query you selected. 
+
+*** 
 
 ### Connect from a worksheet or project plan
 
