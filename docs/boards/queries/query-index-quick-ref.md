@@ -170,7 +170,8 @@ The following table indicates the operators and macros available for the differe
 
 
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)] 
+> [!NOTE]  
+> The following macros are only supported from the web portal: **@CurrentIteration**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.  
 
 
 
