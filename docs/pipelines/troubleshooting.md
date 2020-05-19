@@ -4,8 +4,9 @@ description: Learn how to troubleshoot builds and releases in Azure Pipelines an
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: seodec18
-ms.date: 04/03/2020
+ms.custom: "seodec18, contentperfQ4"
+ms.topic: reference
+ms.date: 05/19/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
