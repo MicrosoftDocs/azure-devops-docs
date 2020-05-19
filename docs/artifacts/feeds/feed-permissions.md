@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 05/19/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -50,16 +50,16 @@ Select **Permissions**.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops-2019"
 
 ![Editing a feed's permissions](media/editfeeddialog1.png)
-
-::: moniker-end
 
 In the edit feed dialog:
 
 - Choose to make each person or team an Owner, Contributor, Collaborator, or Reader.
 - When you're done, select **Save**.
+
+::: moniker-end
 
 <a name="common-identities"></a>
 
