@@ -66,7 +66,7 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 ::: moniker range="<= azure-devops-2019"
 
-When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clauses match the details of your commit and that the `exclude` clauses don't exclude them.
+When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
 
 > [!IMPORTANT]
 > When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
@@ -75,7 +75,7 @@ When you define a YAML PR or CI trigger, you can specify both `include` and `exc
 
 ::: moniker range="> azure-devops-2019"
 
-When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clauses match the details of your commit and that the `exclude` clauses don't exclude them. For more information, see [Triggers](yaml-schema.md#triggers).
+When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [Triggers](yaml-schema.md#triggers).
 
 > [!NOTE]
 > If you specify an `exclude` clause without an `include` clause, it is equivalent to specifying `*` in the `include` clause.
