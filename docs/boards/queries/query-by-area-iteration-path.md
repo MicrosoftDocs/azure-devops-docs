@@ -19,9 +19,11 @@ ms.date: 11/19/2018
 
 The Area Path and Iteration Path are two fields that appear on the work tracking form for all work item types. You define them for a project&mdash;[area paths](../../organizations/settings/set-area-paths.md) and [iteration paths](../../organizations/settings/set-iteration-paths-sprints.md)&mdash;and then select the ones you want to associate with a team. 
 
-To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).
+To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]  
+
 
 ## Supported operators and macros 
 
