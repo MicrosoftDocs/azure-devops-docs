@@ -88,6 +88,189 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 
  When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
 
+
+<a id="excel-project">  </a>
+
+## Connect Azure DevOps project to Office client 
+
+To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
+
+
+#### [Open query in Excel (web portal)](#tab/open-excel) 
+
+This connection method requires that you have installed [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel).  
+
+1. From your web browser, (1) check that you have selected the right project, (2) choose **Boards>Queries**, and then (3) choose **All**. 
+ 
+	> [!div class="mx-imgBorder"]  
+	> ![Open Boards>Queries, vertical nav](/azure/devops/boards/queries/media/view-run-queries/open-queries-vert.png) 
+
+2. Choose the query you want to open in Excel. 
+
+3. From the Results page, choose the ![ ](../media/icons/actions-icon.png) actions icon
+
+	> [!div class="mx-imgBorder"]  
+	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 
+
+
+#### [Connect from client to Azure Boards](#tab/open-excel-cloud) 
+
+To connect from your Office client to an Azure DevOps Services project, perform the following steps.  
+
+1.  Start with a blank worksheet. 
+
+1.  If you're client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
+
+1.  If you don't see the **Team** ribbon (or the **Team** menu if you use Office 2007), see [TFS-Office integration issues](tfs-office-integration-issues.md). 
+
+1. Choose the **Team** tab, place your cursor in Cell A1, and then choose **New List**.  
+
+	![New List](media/excel/team-ribbon.png)
+
+1.	The Connect to Azure Devops Server dialog opens. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
+
+	If you are signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
+
+	If you're not signed-in or you're working from an older version of an Office client, and you haven't connected to any servers previously, you need to add them now. 
+
+1. Add a server to connect to. 
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the URL of your Azure Boards organization, and (4) check that the preview matches the URL that you entered. Then choose **OK**. 
+
+	![Connect to Azure DevOps Server dialog](media/connect/4-steps-connect-to-cloud.png)
+
+	If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
+4.  With the server selected, choose the project you want to connect to, and then choose **Connect**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Connect to Azure DevOps dialog, choose project ](media/connect/choose-project.png)
+
+	Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.  
+
+5. From the New List dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
+
+	::: moniker range=">= tfs-2017"
+    ![Select input list](media/excel/2019-input-list-dialog.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
+    ![Select input list](media/bulk-modify-excel-new-input-list.png)
+	::: moniker-end
+
+	> [!TIP]    
+	> You can use multiple worksheets within an Excel workbook to work with different input or query lists. However, you can only connect to one project per workbook.
+
+
+#### [Connect client to Azure DevOps on-premises](#tab/open-excel-on-prem) 
+
+To connect from your Office client to an Azure DevOps Server project, perform the following steps.  
+
+
+1.  Start with a blank worksheet. 
+
+1.  If you're client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
+
+1.  If you don't see the **Team** ribbon (or the **Team** menu if you use Office 2007), see [TFS-Office integration issues](tfs-office-integration-issues.md). 
+
+1. Choose the **Team** tab, place your cursor in Cell A1, and then choose **New List**.  
+
+	![New List](media/excel/team-ribbon.png)
+
+1.	The Connect to Azure Devops Server dialog opens. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
+
+	If you are signed-in to your Office client with your Azure DevOps user account, then the set of servers, both cloud and on-premises, you have access to is automatically populated in the drop-down menu. 
+
+	If you're not signed-in or you're working from an older version of an Office client, and you haven't connected to any servers previously, you need to add them now. 
+
+1. Add a server to connect to. 
+
+	(1) Choose **Servers...**, (2) choose **Add...**, (3) enter the name of your Azure DevOps Server instance. As needed, change the Port number if your deployment uses a non-default port number. The Preview entry should display the correct URL for your deployment. (4) Choose **OK**.  
+
+    ![Connect to Team Foundation Server dialog](media/connect/4-steps-connect-to-on-prem.png)
+
+	Choose **Close** to close the Add/Remove servers dialog. From the Select an Azure DevOps Server dialog, make sure the server you added is selected, and then choose **Connect**. 
+
+	If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md#add-team-members).  
+4.  With the server selected, choose the project you want to connect to, and then choose **Connect**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Connect to Azure DevOps dialog, choose project ](media/connect/choose-project.png)
+
+	Make sure your Azure DevOps user account appears at the bottom of the dialog. If it isn't, choose **Switch User** and sign in to the correct account.  
+
+5. From the New List dialog, choose **Input list**. Or, if you want to work with a list of work items defined in a query, choose **Query list**.
+
+	::: moniker range=">= tfs-2017"
+    ![Select input list](media/excel/2019-input-list-dialog.png)
+	::: moniker-end
+	::: moniker range="< tfs-2017"
+    ![Select input list](media/bulk-modify-excel-new-input-list.png)
+	::: moniker-end
+
+	> [!TIP]    
+	> You can use multiple worksheets within an Excel workbook to work with different input or query lists. However, you can only connect to one project per workbook.
+
+#### [Open Excel from Visual Studio](#tab/open-excel-vs) 
+
+1. Open Visual Studio and then Team Explorer. 
+
+	> [!NOTE]   
+	> If you're working from Visual Studio 2019, you need to select the  **Tools>Options>Work Items>General** Legacy experience. For more information, see [Set the Work Items experience in Visual Studio 2019](../../work-items/set-work-item-experience-vs.md).  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Options dialog, Work Items, General](media/connect/work-items-legacy-experience.png)
+
+2. Connect to your Azure DevOps project that contains the work items you want to add to or update. For more information, see [Connect to a project](../../../organizations/projects/connect-to-projects.md).
+
+3.  
+
+
+
+### Connect from a worksheet or project plan
+
+To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
+
+1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/azure/devops/server/compatibility)
+
+2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises Azure DevOps. 
+
+	> [!NOTE]  
+	> The only way to get the Team Foundation add-in to Excel is by installing Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   
+
+3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
+
+    ![Create a list connection between Excel and the data store](media/bulk-modify-excel-blank-list.png)
+
+    > [!TIP]    
+    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
+
+4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
+
+    ![Connect to server](media/IC680074.png)
+
+    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
+
+    ![Add organization or server](media/IC658167.png)
+
+5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
+
+    To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
+
+> [!NOTE]  
+> If the project is moved to a different project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
+
+
 ## Work offline and reconnect to Azure Boards and TFS
 
 One advantage of working in Excel or Project is that you can work offline and add or modify work items. The following procedures show you how to disconnect an Excel work item list or a Project plan from Azure Boards and TFS and later reconnect to synchronize the document with the work item database.  
@@ -140,44 +323,6 @@ To reconnect an Excel or Project document file:
 4.  Resolve any data validation errors or conflicts that occur.  
 
 
-<a id="excel-project">  </a>
-
-## Connect from Excel or Project
-
-To add or modify work items by using Excel or Project, you connect your worksheet or project plan to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
- 
-### Connect from a worksheet or project plan
-
-To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
-
-1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/azure/devops/server/compatibility)
-
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises Azure DevOps. 
-
-	> [!NOTE]  
-	> The only way to get the Team Foundation add-in to Excel is by installing Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   
-
-3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
-
-    ![Create a list connection between Excel and the data store](media/bulk-modify-excel-blank-list.png)
-
-    > [!TIP]    
-    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
-
-4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
-
-    ![Connect to server](media/IC680074.png)
-
-    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
-
-    ![Add organization or server](media/IC658167.png)
-
-5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
-
-    To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
-
-> [!NOTE]  
-> If the project is moved to a different project collection in the same instance of TFS, your documents will automatically be reconnected. However, if the project is moved to a different instance of TFS, you must manually reconnect your documents to the new server.
 
 ### Work offline
 
@@ -222,13 +367,6 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 4.  Resolve any data validation errors or conflicts that occur.
 
-## Related articles
-
-- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
-- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
-- [Create your backlog](../../backlogs/create-your-backlog.md)
-- [Requirements and compatibility](/azure/devops/server/requirements) 
-
 
 
 <a name="CT_ResolvingPublishErrors"></a>
@@ -250,4 +388,11 @@ To resolve publishing errors that arise when working in Excel or Project, see th
 	If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
 
- 
+
+## Related articles
+
+- [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
+- [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
+- [Create your backlog](../../backlogs/create-your-backlog.md)
+- [Requirements and compatibility](/azure/devops/server/requirements) 
+
