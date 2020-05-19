@@ -22,7 +22,8 @@ The Area Path and Iteration Path are two fields that appear on the work tracking
 To better understand how to work with area and iteration paths, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md).  
 
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
+> [!NOTE]  
+> The following macros are only supported from the web portal: **@CurrentIteration**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.  
 
 
 ## Supported operators and macros 
