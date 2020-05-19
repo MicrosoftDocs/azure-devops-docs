@@ -171,7 +171,7 @@ The following table indicates the operators and macros available for the differe
 
 
 > [!NOTE]  
-> The following macros are only supported from the web portal: **@CurrentIteration**, **@Follows**, **@MyRecentActivity**, **@RecentMentions**, **@RecentProjectActivity**, **@TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project.  
+> The following macros are only supported from the web portal: **&#64;CurrentIteration**, **&#64;Follows**, **&#64;MyRecentActivity**, **&#64;RecentMentions**, **&#64;RecentProjectActivity**, **&#64;TeamAreas**. Queries that contain these macros won't work when opened in Visual Studio/Team Explorer, Microsoft Excel, or Microsoft Project. 
 
 
 
