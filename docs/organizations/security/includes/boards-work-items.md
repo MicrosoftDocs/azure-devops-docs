@@ -39,7 +39,7 @@ ms.topic: include
 <td align="left">Move work item to another project</td>
 <td> </td>
 <td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
