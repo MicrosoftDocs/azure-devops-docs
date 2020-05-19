@@ -170,7 +170,7 @@ The following table indicates the operators and macros available for the differe
 
 
 
-[!INCLUDE [temp](../includes/note-macro-web-portal.md)]  
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)] 
 
 
 
