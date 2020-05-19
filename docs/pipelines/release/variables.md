@@ -117,14 +117,15 @@ To view the full list, see [View the current values of all variables](#view-vars
 | Agent.WorkFolder | The working directory for this agent, where subfolders are created for every build or release. Same as Agent.RootDirectory and System.WorkFolder.<br/><br />Example: `C:\agent\_work` |
 | Agent.DeploymentGroupId | The ID of the deployment group the agent is registered with. This is available only in deployment group jobs. Not available in TFS 2018 Update 1.<br/><br />Example: `1` |
 
-<h2 id="artifact-variables">Default variables - General Artifact</h2>
+<a id="artifact-variables"></a>
+## Default variables - General Artifact
 
 For each artifact that is referenced in a release, you can use the following artifact variables.
 Not all variables are meaningful for each artifact type. The table below lists the default artifact
 variables and provides examples of the values that they have depending on the artifact type. If an example is empty,
 it implies that the variable is not populated for that artifact type.
 
-> Replace **{alias}** placeholder with the value you specified for the [artifact alias](artifacts.md#source-alias), or with the default value generated for the release pipeline.
+Replace the `{alias}` placeholder with the value you specified for the [artifact alias](artifacts.md#source-alias) or with the default value generated for the release pipeline.
 
 | Variable name | Description |
 |---------------|-------------|
@@ -255,7 +256,8 @@ Using custom variables at project, release pipeline, and stage scope helps you t
 * Store sensitive values in a way that they cannot be seen
   or changed by users of the release pipelines. Designate a  configuration property to be a secure (secret) variable by selecting the ![padlock](media/padlock-icon.png) (padlock) icon next to the variable.
 
-  >The values of hidden (secret) variables are stored securely on
+  > [!IMPORTANT]
+  > The values of the hidden (secret) variables are securely stored on
   the server and cannot be viewed by users after they are saved.
   During a deployment, the Azure Pipelines release service
   decrypts these values when referenced by the tasks and passes them
