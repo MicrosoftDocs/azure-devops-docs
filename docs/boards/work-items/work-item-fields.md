@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 04/16/2020
+ms.date: 05/18/2020
 ---
 
 # Work item fields and attributes
@@ -143,7 +143,7 @@ The following table describes each attribute.
 </tr>
 <tr>
 	<td> </td>
-	<td>Id</td>
+	<td>ID</td>
 	<td>Integer</td>
 	<td>Specifies the internal ID of the field. </td>
 	<td>No</td>
@@ -531,18 +531,12 @@ You can look up the assignments of field attributes using the Work Item Field Ex
 
 ![Work item field explorer](media/fields/work-item-field-explorer.png)
 
-::: moniker range=">= tfs-2017" 
 
-To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio). [Install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../../reference/process/new-work-item-experience.md). 
+To access the Work Item Field Explorer, you must install the Process Editor Tool. Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
 
-::: moniker-end
+[!INCLUDE [temp](../../includes/process-editor-tool.md)]
 
-
-::: moniker range="<= tfs-2015"  
-
-To access the Work Item Field Explorer, you must install the Process Editor (requires that you have installed a version of Visual Studio) by installing the [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
-
-::: moniker-end
+ 
 
 ::: moniker range="<= tfs-2018"  
 
