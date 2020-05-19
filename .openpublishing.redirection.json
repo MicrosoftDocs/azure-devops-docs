@@ -12725,9 +12725,19 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/organizations/settings/azure-devops-auditing.md",
-      "redirect_url": "/azure/devops/organizations/settings/azure-devops-auditing",
+      "source_path": "docs/organizations/accounts/manage-users-table-view.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-team-members.md",
+      "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/azure-devops-auditing.md",
+      "redirect_url": "/azure/devops/organizations/audit/azure-devops-auditing",
+      "redirect_document_id": true
     }
   ]
 }

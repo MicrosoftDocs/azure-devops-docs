@@ -46,6 +46,7 @@ Adding the ability to create deployment pipelines with YAML files and store them
 - [Store Docker images in Azure Container Registry](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/acr-template) 
 - [Build a Docker image with Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/ecosystems/containers/build-image)   
 - [Deploy to Kubernetes with full traceability](https://docs.microsoft.com/azure/devops/pipelines/process/environments-kubernetes)   
+- [Secure your Azure Pipelines](../pipelines/security/overview.md)   
 
 
 ## Run and debug containers with Dev Spaces

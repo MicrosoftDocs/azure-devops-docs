@@ -65,7 +65,7 @@ Welcome to what's new in Azure DevOps docs for February 2020. This article lists
 ### Updated articles
 
 - [Use Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) - Update 2 intro articles
-- [Sign up for Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up.md) - CHCOMLEY - Azure Pipelines acquisition (pipelines-sign-up)
+- [Sign up for Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up) - CHCOMLEY - Azure Pipelines acquisition (pipelines-sign-up)
 - [Add & use variable groups](/azure/devops/pipelines/library/variable-groups)
   - Document CLI commands for managing variable groups
   - Resolve syncing conflicts from repo_sync_working_branch to master

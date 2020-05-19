@@ -246,7 +246,7 @@ No, branch policies aren't case-sensitive at this time.
 
 #### How can I configure multiple users as required reviewers, but only require that one of them approve?
 
-You can [add the users to a group](../../organizations/accounts/add-team-members.md), and then add the group as a reviewer.  Any member of the group can then approve for the group to meet the policy requirement.
+You can [add the users to a group](../../organizations/security/add-users-team-project.md), and then add the group as a reviewer.  Any member of the group can then approve for the group to meet the policy requirement.
 
 #### I have the exempt from policy permission set, why am I still seeing policy failures in the pull request status?
 
