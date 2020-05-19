@@ -25,8 +25,6 @@ The changes to cloud load testing functionality in Azure DevOps affect the follo
 
 1. [Running a load test in the cloud using Visual Studio](getting-started-with-performance-testing.md) (both auto-provisioned agents and self-provisioned agents).
 
-1. [Running performance tests using the Azure portal](app-service-web-app-performance-test.md) (performance test in App Services and Application Insights).
-
 1. Running load tests in a CI/CD pipeline using the load testing tasks ([Cloud-based Load Test](../../pipelines/tasks/test/cloud-based-load-test.md) task,
    [Apache JMeter Test](../../pipelines/tasks/test/run-jmeter-load-test.md) task, and [Cloud-based Web Performance Test](../../pipelines/tasks/test/cloud-based-web-performance-test.md) task). 
 
