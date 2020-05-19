@@ -177,6 +177,11 @@ Later, if you edit the YAML file, and set the value of `major` back to 1, then t
 
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
+> [!NOTE]
+> `pipeline.startTime` is a special variable and is not available outside of expressions. `pipeline.startTime` 
+>  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+
+
 ```yaml
 jobs:
 - job:
