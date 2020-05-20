@@ -379,7 +379,7 @@ steps:
 
 ## Dependencies
 
-For jobs and stages with dependencies, expressions may also use context about previous jobs or stages in the dependency graph. You can use dependencies to:
+Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
 
 * Reference the job status of a previous job
 * Reference the stage status of a previous stage
@@ -415,7 +415,7 @@ Expressed as JSON, it would look like:
 
 ::: moniker range="azure-devops"
 
-You can also check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
+You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
 Job C will run, since all of its dependencies either succeed or are skipped.
 
 ```yaml
