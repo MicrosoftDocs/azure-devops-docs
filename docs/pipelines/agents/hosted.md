@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker range="< azure-devops"
 
-Microsoft-hosted agents are only available with Azure DevOps service. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with TFS or Azure DevOps Server. With these server versions, you must use [self-hosted agents](agents.md).
+Microsoft-hosted agents are only available with Azure DevOps. You cannot use Microsoft-hosted agents or the Azure Pipelines agent pool with TFS or Azure DevOps Server. With these server versions, you must use [self-hosted agents](agents.md).
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 
 
 > [!NOTE]
-> In March, 2020, we've removed the following Azure Pipelines hosted images:
+> In March 2020, we removed the following Azure Pipelines hosted images:
 >
 > - [Windows Server 2012R2 with Visual Studio 2015](https://github.com/microsoft/azure-pipelines-image-generation/blob/d80f81d6c98f8ce2c74b034309bb774ea8d31cfb/images/win/Vs2015-Server2012R2-Readme.md) (`vs2015-win2012r2`)
 > - [macOS X High Sierra 10.13](https://github.com/microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.13-Readme.md) (`macOS-10.13`)
@@ -51,7 +51,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > The Azure Pipelines hosted pool replaces the previous hosted pools that had names that mapped to the corresponding images. Any jobs you had in the previous hosted pools are automatically redirected to the correct image in the new Azure Pipelines hosted pool. In some circumstances, you may still see the old pool names, but behind the scenes the hosted jobs are run using the Azure Pipelines pool. For more information about this update, see the [Single hosted pool](/azure/devops/release-notes/2019/sprint-154-update#single-hosted-pool) release notes from the [July 1 2019 - Sprint 154 release notes](/azure/devops/release-notes/2019/sprint-154-update).
 
 > [!IMPORTANT]
-> To request additional software to be installed on Microsoft-hosted agents, do not create a feedback request on this document. Do not open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/virtual-environments), where we manage the scripts to generate various images.
+> To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/virtual-environments), where we manage the scripts to generate various images.
 
 ## Use Microsoft-hosted agents
 
@@ -79,7 +79,8 @@ jobs:
 ```
 
 > [!NOTE]
-> The specification of a pool can be done at multiple levels in a YAML file - in a stage or in a job. If you notice that your pipeline is not running on the expected image, make sure that you verify the pool specification at all levels.
+> The specification of a pool can be done at multiple levels in a YAML file.
+> If you notice that your pipeline is not running on the expected image, make sure that you verify the pool specification at the pipeline, stage, and job levels.
 
 # [Classic](#tab/classic)
 
