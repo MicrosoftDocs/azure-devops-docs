@@ -29,9 +29,21 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
+::: moniker range=">= azure-devops-2019"
+
+<a name="edit-permissions"></a>
+
+## Adding users/groups permissions to a feed
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops-2019"
+
 <a name="edit-permissions"></a>
 
 ## Editing permissions for a feed
+
+::: moniker-end
 
 [!INCLUDE [edit-feed](../includes/edit-feed.md)]
 
@@ -42,11 +54,17 @@ Select **Permissions**.
 > [!div class="mx-imgBorder"] 
 >![Editing a feed's permissions](media/editfeeddialog-azure-devops-newnav.png)
 
-::: moniker-end
+Select **Add users/groups**.
 
-::: moniker range="<= tfs-2018"
+> [!div class="mx-imgBorder"]
+> ![Adding users or groups](media/add-users-groups.png)
 
-![Editing a feed's permissions](media/editfeeddialog1.png)
+Add `users` and/or `groups` and choose their access role.
+
+> [!div class="mx-imgBorder"]
+> ![Adding users or groups](media/add-users-groups-dialogue.png)
+
+When you're done, select **Save**.
 
 ::: moniker-end
 
