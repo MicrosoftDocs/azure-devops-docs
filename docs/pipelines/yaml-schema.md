@@ -1619,19 +1619,19 @@ You can reduce the deployment target's scope to a particular resource within the
 
 ```yaml
 environment: 'smarthotel-dev.bookings'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: $(imagePullSecret)
-            containers: $(containerRegistry)/$(imageRepository):$(tag)
-            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+strategy:
+  runOnce:
+    deploy:
+      steps:
+      - task: KubernetesManifest@0
+        displayName: Deploy to Kubernetes cluster
+        inputs:
+          action: deploy
+          namespace: $(k8sNamespace)
+          manifests: $(System.ArtifactsDirectory)/manifests/*
+          imagePullSecrets: $(imagePullSecret)
+          containers: $(containerRegistry)/$(imageRepository):$(tag)
+          # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 ---
