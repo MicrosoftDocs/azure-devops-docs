@@ -139,7 +139,7 @@ The following built-in functions can be used in expressions.
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
 * Min parameters: 2. Max parameters: 2
-* If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
+* If the left parameter is an array, convert each item to match the type of the right parameter. If the left parameter is an object, convert the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
 
@@ -498,7 +498,7 @@ stages:
 ```
 
 
-With stage dependencies, you can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency. 
+You can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency. 
 
 ```yaml
 trigger: none
