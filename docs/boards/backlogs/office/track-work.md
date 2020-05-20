@@ -52,47 +52,45 @@ The following table indicates the Office clients that are supported for each Azu
 ---
 
 :::row:::
-   :::column span="":::
-      **Office client**
+   :::column span="2":::
+      **Azure DevOps/Visual Studio version**
    :::column-end:::
    :::column span="":::
-      **Azure DevOps Services**  
-      **Azure DevOps Server 2019**  
-      **Visual Studio 2019**  
-      **Azure DevOps Office Integration 2019**  
+      **Excel**
    :::column-end:::
    :::column span="":::
-      **TFS 2018** 
-      **TFS 2017**  
-      **Visual Studio 2017**  
+      **Project**<sup>1</sup>
    :::column-end:::
    :::column span="":::
-      **TFS 2015** 
-      **TFS 2013** 
-      **Visual Studio 2015**  
+      **PowerPoint Storyboarding**<sup>2</sup>
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Excel
+      Azure DevOps Services  
+      Azure DevOps Server 2019  
+      Visual Studio 2019  
+      Azure DevOps Office Integration 2019 
    :::column-end:::
    :::column span="":::
       ![checkmark](../../media/icons/checkmark.png)  
    :::column-end:::
    :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
-   :::column-end:::
-   :::column span="":::
-      ![checkmark](../../media/icons/checkmark.png)  
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      Project (Note 1)
+        
    :::column-end:::
    :::column span="":::
          
    :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      TFS 2018 
+      TFS 2017  
+      Visual Studio 2017  
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
    :::column span="":::
       ![checkmark](../../media/icons/checkmark.png)  
    :::column-end:::
@@ -102,10 +100,12 @@ The following table indicates the Office clients that are supported for each Azu
 :::row-end:::
 :::row:::
    :::column span="":::
-      PowerPoint Storyboarding  (Note 2)
+      TFS 2015  
+      TFS 2013  
+      Visual Studio 2015  
    :::column-end:::
    :::column span="":::
-       
+      ![checkmark](../../media/icons/checkmark.png)  
    :::column-end:::
    :::column span="":::
       ![checkmark](../../media/icons/checkmark.png)  
@@ -116,7 +116,7 @@ The following table indicates the Office clients that are supported for each Azu
 :::row-end:::
 
 #### Notes: 
-1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplce). 
+1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplace). 
 2.  Support for linking PowerPoint files to work items from within PowerPOint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
  
 
@@ -246,8 +246,8 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 
 ::: moniker-end  
 
-
 <a id="excel-project">  </a>
+<a id="excel">  </a>
 
 ## Connect Azure DevOps project to Excel  
 
@@ -546,7 +546,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 <a id="marketplace" />
 
 
-## Marketplace extensions
+## Marketplace extensions support for Office integration 
 
 TO BE COMPLETED
 
