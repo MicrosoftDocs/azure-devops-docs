@@ -33,45 +33,143 @@ To support your work tracking efforts, you can use Microsoft Excel and Microsoft
 > All Office integration tasks require that you have installed a version of Visual Studio or the free [Azure DevOps Office Integration 2019](https://visualstudio.microsoft.com/downloads/#other-family).
 
 
+In this article you'll learn about the following items: 
+
+> [!div class="checklist"]    
+> * Which Office clients support connection to Azure DevOps
+> * Prerequisites for connecting from an Office client to Azure DevOps
+> * Importance of publishing and refreshing work from an Office client
+> * How to connect Excel to an Azure Boards project 
+> * How to work offline and reconnect to Azure DevOps 
+> * Marketplace extensions that support integration with Office clients 
+## Supported Office clients and Azure DevOps versions 
+
+The following table indicates the Office clients that are supported for each Azure DevOps version starting with Team Foundation Server 2013 (TFS 2013). 
+
+> [!NOTE]  
+> macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or any other Office client isn't supported.  
+
+---
+
+:::row:::
+   :::column span="":::
+      **Office client**
+   :::column-end:::
+   :::column span="":::
+      **Azure DevOps Services**  
+      **Azure DevOps Server 2019**  
+      **Visual Studio 2019**  
+      **Azure DevOps Office Integration 2019**  
+   :::column-end:::
+   :::column span="":::
+      **TFS 2018** 
+      **TFS 2017**  
+      **Visual Studio 2017**  
+   :::column-end:::
+   :::column span="":::
+      **TFS 2015** 
+      **TFS 2013** 
+      **Visual Studio 2015**  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Excel
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Project (Note 1)
+   :::column-end:::
+   :::column span="":::
+         
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      PowerPoint Storyboarding  (Note 2)
+   :::column-end:::
+   :::column span="":::
+       
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="":::
+      ![checkmark](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+
+#### Notes: 
+1.  Support for Project integration and the **TFSFieldMapping** command have been deprecated for Azure DevOps Server 2019 and later versions. You may find support using one of the [Marketplace extensions](#marketplce). 
+2.  Support for linking PowerPoint files to work items from within PowerPOint has been deprecated starting with Visual Studio 2019 and  Azure DevOps Office Integration 2019. You can still link to PowerPoint using the Storyboard link from within a work item. Also, the Visual Studio Gallery for PowerPoint Storyboarding has been deprecated.  
+ 
+
 ## Prerequisites 
+
+Connection from an Office client to an Azure Boards project requires that you have installed the necessary software and have the necessary permissions. 
 
 ::: moniker range="azure-devops" 
 
-Integration of Microsoft Excel with the cloud service for Azure Boards is fully supported. 
+- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
+- Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+	> [!NOTE]   
+	> The only way to get the Azure DevOps Office Integration plug-in is by installing one of the latest editions of Visual Studio or the Azure DevOps Office Integration installer. The plug-in supports connection to Azure Boards and Azure DevOps Server from Excel.  
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).  
 
-- If you don't have an Azure Boards project yet, you can [create one](/azure/devops/boards/get-started/sign-up-invite-teammates).   
-- To connect to an Azure Boards project, you'll need to be a [member of the project](../../../organizations/security/add-users-team-project.md). 
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-- Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-- Installed Visual Studio 2013 or later version and [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+::: moniker-end  
+
+::: moniker range="azure-devops-2019" 
+
+- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
+- Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+	> [!NOTE]   
+	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
 
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 < azure-devops" 
+::: moniker range=">= tfs-2017 <= tfs-2018" 
 
- - If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
-- To connect to an Azure Boards project, you'll need to be a [member of the project](../../../organizations/security/add-users-team-project.md). 
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
-- Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
-- Installed Visual Studio 2013 or later version and [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
+- To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
+- To connect Project to Azure Boards, you must have installed Office Project 2010 or later version, including Office Project 365. 
+- To connect PowerPoint to Azure Boards, you must have installed [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed. 
+- Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+	> [!NOTE]   
+	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
 
 ::: moniker-end  
+
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 
-- To connect to an Azure Boards project, you'll need to be a [member of the project](../../../organizations/security/add-users-team-project.md). 
-- Installed Microsoft Excel 2007, Microsoft Excel 2010, or Microsoft Excel 2013
-- Installed Visual Studio 2013 or Visual Studio 2015 or [Team Foundation Server Standalone Office Integration (free)](https://go.microsoft.com/fwlink/?LinkId=832491&clcid=0x409)
-- To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
-- To view or modify work items, you must have these permissions set to **Allow**: **View work items in this node** and **Edit work items in this node**. By default, the **Contributors** group has this permission set. To learn more, see [Set permissions and access for work tracking](/azure/devops/organizations/security/set-permissions-access-work-tracking).  
+- To connect Excel to Azure Boards, you must have installed Office Excel 2007 or later version. 
+- To connect Project to Azure Boards, you must have installed Office Project 2007 or later version. 
+- To connect PowerPoint to Azure Boards, you must have installed [Office PowerPoint 2010 or later version installed](https://www.microsoftstore.com/store/msusa/en_US/pdp/productID.323024400). If you're interfacing with TFS 2013 or TFS 2015, you must have Office PowerPoint 2007 or later version installed. 
+- Installed Visual Studio 2013 or later version or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads#team-foundation-server-office-integration-2017)
+	> [!NOTE]   
+	> The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. The TFS Office Integration 2017 plug-in supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool.
+- To connect to an Azure Boards project, you need to be a [member of the project](../../../organizations/security/add-users-team-project.md). If you don't have an Azure Boards project yet, you can [create one](/azure/devops/organizations/projects/create-project). 
 
 ::: moniker-end  
-
-> [!NOTE]  
-> macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel isn't supported.   
+ 
 
 To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
@@ -116,9 +214,21 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
 
 ## Publish and refresh work items
 
-When you import work items into Excel or Project, local copies of your work items are created. The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
+::: moniker range="> tfs-2018" 
 
-To keep work items in sync from your local data store and Azure DevOps, publish and refresh often. 
+When you add or update work items from Excel, local copies of your work items are created. To keep data in sync, its important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
+
+When you add or update work items from Excel or Project, local copies of your work items are created. To keep data in sync, its important to refresh your local file when you open it and publish and refresh frequently during a long online session. 
+
+::: moniker-end  
+
+The data in the local document at first matches the data in the database, but you or other team members can change the data about work items and cause the two to differ. To view the most recent changes from the database, refresh the document. This downloads the latest values in the data store to your local document. To write changes from the document to the database, publish the changes. Publishing uploads the changes you made to the work item tracking data store.   
+
+To keep work items in sync from your local data store and Azure Boards, publish and refresh often. 
 
 ### Azure DevOps and Excel
 
@@ -141,14 +251,21 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 
 ## Connect Azure DevOps project to Excel  
 
+::: moniker range="<= tfs-2018" 
+
+> [!NOTE]  
+> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint is similar. 
+
+::: moniker-end  
+
 To add or modify work items by using Excel, you connect your worksheet to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
 
-You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet or project plan can be tied to a list of work items or a work item query.  
+You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet is associated with either a list of work items or a work item query.  
 
 ::: moniker range="<= tfs-2018" 
 
 > [!NOTE]  
-> To connect Azure DevOps project to Office Project, see [Create your backlog and tasks using Microsoft Project](create-your-backlog-tasks-using-project.md).  
+> To connect Azure DevOps project to Office Project, see [Create your backlog and tasks using Microsoft Project](create-your-backlog-tasks-using-project.md). And to connect PowerPoint Storyboarding to Azure Boards to support linking, see [Storyboard your ideas using Microsoft PowerPoint](storyboard-your-ideas-using-powerpoint.md).
 
 ::: moniker-end  
 
@@ -163,7 +280,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 2. Choose the query you want to open in Excel. 
 
-3. From the Results page, choose the ![ ](../../media/icons/actions-icon.png) actions icon
+3. From the **Results** tab, choose the ![ ](../../media/icons/actions-icon.png) actions icon
 
 	> [!div class="mx-imgBorder"]  
 	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 
@@ -426,28 +543,18 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 
 
-<a name="CT_ResolvingPublishErrors"></a>
- 
-## Resolve publishing errors  
+<a id="marketplace" />
 
-To resolve publishing errors that arise when working in Excel or Project, see the following topics:   
-  
-- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
-	A data conflict occurs when one team member changes a field value in either Project or Excel at the same time another team member changes the same field in Team Foundation Server.
 
-- [Resolve data validation errors](resolve-excel-data-validation-errors.md):
-	A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
-  
-- [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
-	An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+## Marketplace extensions
 
-- [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
-	If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
-
+TO BE COMPLETED
 
 
 ## Related articles
 
+- [FAQs: Work in Excel connected to Azure Boards](faqs.md) 
+- [Resolve publishing errors](faqs.md#resolve-publishing-errors) 
 - [Bulk add or modify work items with Excel](bulk-add-modify-work-items-excel.md)  
 - [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md)  
 - [Create your backlog](../../backlogs/create-your-backlog.md)
