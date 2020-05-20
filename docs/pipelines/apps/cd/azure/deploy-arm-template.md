@@ -51,6 +51,8 @@ https://github.com/Azure/azure-quickstart-templates/
 
 6. Replace the content of your pipeline with this code:
 
+:::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="4-8":::
+
 ```yaml
    trigger:
    - none
@@ -72,6 +74,9 @@ https://github.com/Azure/azure-quickstart-templates/
 
 8. Map the secret variable `$(adminPass)` so that it is available in your Azure Resource Group Deployment task. At the top of your YAML file, map `$(adminPass)` to `$(ARM_PASS)`. 
 
+:::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-8" highlight="1-2":::
+
+
 ```yaml
 variables:
   ARM_PASS: $(adminPass)
@@ -85,6 +90,8 @@ pool:
 ```
 
 9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
+
+:::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-15" highlight="10-15":::
 
 ``` yaml
 variables:
@@ -118,6 +125,8 @@ ARM_PASS: $(adminPass)
    - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
    - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
    
+:::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-29" highlight="17-29":::
+
 ```yaml
 variables:
   ARM_PASS: $(adminPass)
@@ -155,6 +164,8 @@ steps:
 ## Clean up resources
 
  You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
+
+:::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
 
  ```yaml
  - task: AzureResourceManagerTemplateDeployment@3
