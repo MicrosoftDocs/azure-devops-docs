@@ -94,24 +94,24 @@ Versions in the "Server" column are linked to the appropriate download location.
     <tbody>
     <tr>
         <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[5/11/2020](2020/sprint-169-update.md)">5/11/2020</a></td>
-        <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>N/A</td>
+        <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>2020</td>
         </tr>
-        <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Role-based access for service connections</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Showing associated CD pipeline info in CI pipeline</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Cross-project sharing of service connections is now public</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Role-based access for service connections</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Showing associated CD pipeline info in CI pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Cross-project sharing of service connections is now public</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>2020</td></tr>
     </tr>  
     <tr>
         <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[5/4/2020](2020/sprint-168-update.md)">5/4/2020</a></td>
         <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>N/A</td></tr>
-        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020.1</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>2020</td></tr>
         <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
-        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
     </tr>    
@@ -121,12 +121,12 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
         <tr><td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td></tr>
-        <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
