@@ -106,8 +106,8 @@ Versions in the "Server" column are linked to the appropriate download location.
         <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[5/4/2020](2020/sprint-168-update.md)">5/4/2020</a></td>
         <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020 or 2020.1</td></tr>
-        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>2020 or 2020.1</td></tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020.1</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>2020.1</td></tr>
         <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>2020</td></tr>
         <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
         <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>2020</td></tr>
@@ -121,8 +121,8 @@ Versions in the "Server" column are linked to the appropriate download location.
         </tr>
         <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
         <tr><td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td></tr>
-        <tr><td>Improved PR actionability</td><td>Repos</td><td>2020 or 2020.1</td></tr>
-        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020 or 2020.1</td></tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020.1</td></tr>
         <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Approval notification</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Accessibility improvements</td><td>Artifacts</td><td>2020</td></tr>
