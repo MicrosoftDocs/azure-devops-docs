@@ -51,9 +51,10 @@ For answers to specific questions about the integration of Microsoft Excel and A
 
 ## Prerequisites 
 
-::: moniker range="azure-devops" 
+> [!NOTE]  
+> macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel isn't supported.   
 
-Integration of Microsoft Excel with the cloud service for Azure Boards is fully supported. 
+::: moniker range="azure-devops" 
 
 - Installed Microsoft Excel 2010 or later version, including Microsoft Office Excel 365
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -89,8 +90,7 @@ Integration of Microsoft Excel with the cloud service for Azure Boards is fully 
 - To add or modify work items, you must be granted **Stakeholder** access or higher. For details, see [About access levels](/azure/devops/organizations/security/access-levels). 
 ::: moniker-end  
 
-> [!NOTE]  
-> macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel isn't supported.   
+
 
 To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 

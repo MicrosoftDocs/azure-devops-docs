@@ -136,14 +136,33 @@ If you start your worksheet from an existing query, you'll see all the column fi
 > ![Choose columns dialog](media/excel/choose-columns.png)
 
 
+<a name="resolve-publishing-errors"></a>
 
 ### Q: How do I resolve publishing issues? 
 
-**A:** To resolve publishing errors, see one of these topics:   
+::: moniker range=">= azure-devops-2019" 
 
-- [Data conflicts](resolve-excel-data-conflicts-publish-refresh.md)  
-- [Data validation errors](resolve-excel-data-validation-errors.md)  
-- [Invalid links](resolve-excel-invalid-links-tree-list.md)  
+**A:** To resolve publishing errors that arise when working in Excel or Project, see one of the following topics:     
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2018" 
+
+**A:** To resolve publishing errors that arise when working in Excel or Project, see one of the following topics:     
+
+::: moniker-end  
+
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
+	A data conflict occurs when one team member changes a field value in either Project or Excel at the same time another team member changes the same field in Azure DevOps.
+
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md):
+	A data validation error occurs if a team member changes a work item in a way that violates the rules for that type of work item.
+  
+- [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
+	An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+
+- [Address inaccuracies published for summary values](../../../report/sql-reports/address-inaccuracies-published-for-summary-values.md): 
+	If you determine that hours are counted twice in reports that contain task hours, you can correct the problem by using the Work Items With Summary Values team query.
 
 ### Can I delete work items from Excel?
 
