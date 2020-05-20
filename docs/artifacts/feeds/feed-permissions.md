@@ -57,12 +57,12 @@ Select **Permissions**.
 Select **Add users/groups**.
 
 > [!div class="mx-imgBorder"]
-> ![Adding users or groups](media/add-users-groups.png)
+>![Adding users or groups](media/add-users-groups.png)
 
 Add `users` and/or `groups` and choose their access role.
 
 > [!div class="mx-imgBorder"]
-> ![Adding users or groups](media/add-users-groups-dialogue.png)
+>![Adding users or groups](media/add-users-groups-dialogue.png)
 
 When you're done, select **Save**.
 
