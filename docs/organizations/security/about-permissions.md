@@ -261,7 +261,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops"  
 - [Permissions and groups reference](permissions.md)  
-- [Add users to an organization](../accounts/add-team-members.md) 
+- [Add users to an organization](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 - [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   

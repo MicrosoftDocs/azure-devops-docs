@@ -106,7 +106,7 @@ When you create a project, specify the following options:
 
    Select one of the following options to get started:
 
-   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
+   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project) and .
    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos** to clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -137,7 +137,7 @@ When you create a project, specify the following options:
 
    Select one of the following options to get started:
 
-   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add members to projects](../accounts/add-team-members.md).
+   - **Invite** to add others to your project. See [Add users to a project or team](../security/add-users-team-project.md). You can only invite users who are already in your organization. For more information, see [Add users to a project](../security/add-users-team-project.md#add-users-to-a-project).
    - **Boards** to add work items. See [View and add work items using the Work Items page](../../boards/work-items/view-add-work-items.md).
    - **Repos** to clone or import a repository, or initialize a *README* file for your project summary page. See [Clone an existing Git repo](../../repos/git/clone.md).
    - **Pipelines** to define a pipeline. See [Azure Pipelines documentation](../../pipelines/index.yml).
@@ -329,7 +329,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     ![ALM\_CTP\_SelectSource](media/IC671600.png)
 
-    Not sure which system to use? To learn more, see [Git and Azure Repos](../../repos/git/overview.md) and [Use Team Foundation Version Control](../../repos/tfvc/overview.md).
+    Not sure which system to use? To learn more, see [Git and Azure Repos](../../repos/git/index.yml) and [Use Team Foundation Version Control](../../repos/tfvc/overview.md).
 
     After you've created your project, you can add repositories. See [Add a repository to your project](#add-a-repository).
 
@@ -567,6 +567,6 @@ From the admin context of the web portal, you can add additional repositories to
 
 ## Related articles
 
-- [Git and Azure Repos](../../repos/git/overview.md)
+- [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.md)
 - [Structure your project](about-projects.md#project-structure)

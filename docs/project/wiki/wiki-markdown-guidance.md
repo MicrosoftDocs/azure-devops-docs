@@ -70,7 +70,7 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 ![Mermaid diagram visual](media/wiki/mermaid-diagram.png)
 
 > [!NOTE]
-> HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
+> Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
 > Current version of Mermaid used is 8.2.6 
 
 ::: moniker-end

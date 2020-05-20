@@ -251,7 +251,7 @@ Analytics views provide you with a great deal of power and flexibility to filter
 
 ## Related articles 
 
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)

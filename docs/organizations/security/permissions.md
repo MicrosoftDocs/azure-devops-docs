@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2020
+ms.date: 05/14/2020
 --- 
 
 
@@ -32,7 +32,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>Users and groups</h4>
 <ul>
 <li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="../accounts/add-team-members.md">Add users to an organization</a></li> 
+<li><a href="../accounts/add-organization-users.md">Add users to an organization</a></li> 
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
 <li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
 </ul>
@@ -2108,8 +2108,8 @@ By default, the project level Readers groups have only Read permissions.
         <td id="git-create-branch-permission">Create branch</td>
         <td>
             Can create and publish branches in the repository. 
-            Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.
-            When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default.
+            Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.<br><br>
+            <blockquote><strong>NOTE</strong>: When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default. This means that users can add new commits to the repo via their branch.</blockquote>
         </td>
     </tr>
     <tr>
@@ -3082,7 +3082,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 - [About permissions](about-permissions.md)  
 - [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  
