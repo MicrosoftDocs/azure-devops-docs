@@ -93,7 +93,17 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4/27/2020](2020/sprint-168-update.md)">4/27/2020</a></td>
+        <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[5/11/2020](2020/sprint-169-update.md)">5/11/2020</a></td>
+        <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>N/A</td>
+        </tr>
+        <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Role-based access for service connections</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Showing associated CD pipeline info in CI pipeline</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Cross-project sharing of service connections is now public</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>N/A</td></tr>
+    </tr>  
+    <tr>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[5/4/2020](2020/sprint-168-update.md)">5/4/2020</a></td>
         <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>N/A</td></tr>
