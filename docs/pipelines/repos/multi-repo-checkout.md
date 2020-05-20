@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 03/11/2020
+ms.date: 05/14/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -33,9 +33,9 @@ The following combinations of `checkout` steps are supported.
 
 ### Repository declared using a repository resource
 
-You must use a repository resource if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources, and then these repositories are checked out along with the current `self` repository that contains the pipeline YAML. For more information on repository resource syntax, see [Repository resource](../yaml-schema.md#repository-resource).
+In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github) and [BitBucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -74,7 +74,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a service connection and must be declared as a repository resource.
+> GitHub and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
 
 ```yaml
 steps:
@@ -86,10 +86,10 @@ steps:
 
 ## Checkout path
 
-Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories.
+Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
 
-- **Single repository**: Your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
-- **Multiple repositories**: Your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
+- **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
   
   > [!NOTE]
   > If no `path` is specified in the `checkout` step, the name of the repository is used for the folder,

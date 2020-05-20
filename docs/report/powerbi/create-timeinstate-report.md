@@ -487,7 +487,7 @@ Additional information is provided in this section for the DAX functions used to
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
 - [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

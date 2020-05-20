@@ -27,6 +27,10 @@ highlightedContent:
       itemType: whats-new 
       url: /azure/devops/release-notes/index
     # Card
+    - title: What's new in Azure DevOps documentation? 
+      itemType: whats-new 
+      url: /azure/devops/release-notes/docswhatsnew/index
+    # Card
     - title: Create your first pipeline
       itemType: how-to-guide
       url: ./pipelines/create-first-pipeline.md
@@ -242,7 +246,7 @@ additionalContent:
               url: ./organizations/settings/index.md
             - text: Notifications
               url: ./notifications/index.md
-        # Card
+          # Card
         - title: Security, access, and billing
           links:
             - text: Permissions and groups

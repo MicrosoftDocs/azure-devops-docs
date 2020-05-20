@@ -12713,6 +12713,31 @@
       "source_path": "docs/boards/sprints/scrum-sprint-planning-tools.md",
       "redirect_url": "/azure/devops/sprints/scrum-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/deploy-azure/index.md",
+      "redirect_url": "/azure/devops-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/repos/git/overview.md",
+      "redirect_url": "/azure/devops/repos/git/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-users-table-view.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-team-members.md",
+      "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/settings/azure-devops-auditing.md",
+      "redirect_url": "/azure/devops/organizations/audit/azure-devops-auditing",
+      "redirect_document_id": true
     }
   ]
 }

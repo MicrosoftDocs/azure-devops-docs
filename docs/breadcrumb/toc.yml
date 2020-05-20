@@ -39,6 +39,9 @@
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/
       topicHref: /azure/devops/boards/extensions/index
+    - name: Azure Boards with Slack
+      tocHref: /azure/devops/boards/integrations/
+      topicHref: /azure/devops/boards/integrations/boards-slack
   - name: Get started
     tocHref: /azure/devops/get-started/
     topicHref: /azure/devops/get-started/index
@@ -102,10 +105,7 @@
     - name: Service hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/overview
-    - name: Additional integrations
-      tocHref: /azure/devops/boards/integrations/
-      topicHref: /azure/devops/boards/integrations/boards-slack
-    - name: Additional integrations
+    - name: Azure Pipelines with Slack
       tocHref: /azure/devops/pipelines/integrations/
       topicHref: /azure/devops/pipelines/integrations/slack
   - name: Developer resources
