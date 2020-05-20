@@ -37,7 +37,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: Can I use Excel on my Mac?
 
-**A:** No. macOS isn't supported. Excel must be installed on the same computer where Visual Studio or Team Explorer are installed. These applications require Windows.
+**A:** No. macOS isn't supported. Even if you've installed Visual Studio for Mac, connection to Azure DevOps from Excel or other Office client isn't supported.  
 
 ### Q: Can I open a query in Excel from the web portal?  
 
