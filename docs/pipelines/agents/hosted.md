@@ -53,7 +53,7 @@ You can see the installed software for each hosted agent by choosing the **Inclu
 > [!IMPORTANT]
 > To request additional software to be installed on Microsoft-hosted agents, don't create a feedback request on this document or open a support ticket. Instead, open an issue on our [repository](https://github.com/actions/virtual-environments), where we manage the scripts to generate various images.
 
-## Use Microsoft-hosted agents
+## Use a Microsoft-hosted agent
 
 # [YAML](#tab/yaml)
 
@@ -109,6 +109,7 @@ All of these machines have about 10GB of free disk space available for your pipe
 > [!IMPORTANT]
 > We do not honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
+<a name="agent-ip-ranges"></a>
 ## Networking
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
@@ -118,7 +119,7 @@ Your hosted agents run in the same [Azure geography](https://azure.microsoft.com
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
 > [!IMPORTANT]
-> You cannot use private connections such as [ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/) or VPN to connect Microsoft-hosted agents to your corporate network. The traffic between Microsoft-hosted agents and your servers will be over public network.
+> You cannot use private connections such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or VPN to connect Microsoft-hosted agents to your corporate network. The traffic between Microsoft-hosted agents and your servers will be over public network.
 
 ### To identify the possible IP ranges for Microsoft-hosted agents
 
@@ -269,7 +270,7 @@ By default, all project contributors in an organization have access to the Micro
 
 If your pipeline has recently become slower, review our [status page](https://status.dev.azure.com/) for any outages. We could be having issues with our service. Or else, review any changes that you made in your application code or pipeline. Your repository size during check-out might have increased, you may be uploading larger artifacts, or you may be running more tests.
 
-If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#specifications-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines than this. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) if this performance is not acceptable.
+If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#capabilities-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines than this. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) if this performance is not acceptable.
 
 ### I need more agents. What can I do?
 
