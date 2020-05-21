@@ -27,7 +27,7 @@ In this tutorial, you learn about:
 
 ## Prerequisites
 
-[!INCLUDE [include](../ecosystems/includes/azure-prerequisites.md)]
+[!INCLUDE [include](../includes/azure-prerequisites.md)]
 
 <a name="creating-azure-key-vault"></a>
 
