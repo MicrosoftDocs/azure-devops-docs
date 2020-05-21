@@ -8,7 +8,7 @@ ms.date: 05/22/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Use Terraform to manage infrastructure deployment
+# Use secrets from Azure Key Vault in Azure Pipelines
 
 [!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
 
@@ -162,7 +162,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
     ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
     > [!NOTE]
-	> This process creates a principal in Azure that you will need to be granted access to the key vault. You will authorize those permissions in a later step.
+	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
 
 1. It's important to note that Azure Pipelines protects your secrets, even when using them in the context of a pipeline. You can easily insert them into configurations or as parameters for other tasks, but they won't be printed to pipeline logs that might be inadvertently shared with others. To illustrate this, add the tasks below to the end of the pipeline. They will print the password secret to a file and then publish the file for review so we can confirm that the secret made it all the way through the chain.
 
@@ -199,11 +199,14 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
     [Azure DevOps account name]-[Azure DevOps project name]-[subscription ID]
     ```
     
-    So if your account is at https://dev.azure.com/Contoso and the team project was called AzureKeyVault, the principal would be named something like:
+    So if your account is at https://dev.azure.com/Contoso and the team project was called **AzureKeyVault**, the principal would be named something like:
 
     ```
     Contoso-AzureKeyVault-[subscription ID]
     ``` 
+
+    > [!NOTE]
+    > You may need to minimize the Azure CLI panel to see the **Select** button on the principal search panel.
 
 1. Complete the process to select the principal and select **Add** to create the access policy.
 
@@ -215,10 +218,10 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select **Save and run** and confirm the **Save and run**.
 
-1. Select the running job to follow it through to completion. It should run very quickly since it's just pulling in a secret from the key vault and writing it to a file.  
+1. Select the running job to follow it through to completion. It should complete pretty quickly since it's just pulling in a secret from the key vault and writing it to a file.  
 
     > [!NOTE]
-    > You may be asked to permit the pipeline to access a resource, which you can allow. You will only be asked to permit it once. 
+    > You may be asked to permit the pipeline to access a resource, which you can allow. You will only be asked to approve it once. 
 
 1. Select the **CmdLine** task to view its output. Note that while the command executed successfully, the actual secret text was redacted from the logs. Fortunately, the file it was printed to was published for review. 
 
