@@ -234,9 +234,9 @@ Finally, stock Alpine doesn't come with other dependencies that Azure Pipelines 
 bash, sudo, which, and groupadd.
 
 ### Bring your own Node.js
-You are responsible for adding a Node LTS binary to your container.
-Node 10 LTS is a safe choice.
-You can start from the `node:10-alpine` image.
+You are responsible for adding a Node binary to your container.
+Node 6 is a safe choice.
+You can start from the `node:6-alpine` image.
 
 ### Tell the agent about Node.js
 The agent will read a container label "com.azure.dev.pipelines.handler.node.path".
