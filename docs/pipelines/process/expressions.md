@@ -177,6 +177,11 @@ Later, if you edit the YAML file, and set the value of `major` back to 1, then t
 
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
+> [!NOTE]
+> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
+>  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+
+
 ```yaml
 jobs:
 - job:
@@ -218,7 +223,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
 * Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
-* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`. In this case `pipeline.startTime` is a special date time object variable.
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
