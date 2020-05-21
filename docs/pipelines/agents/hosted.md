@@ -100,11 +100,11 @@ layout of the hosted agents is subject to change without warning.
 
 ## Hardware
 
-Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series). These virtual machines are co-located in the same geography as your Azure DevOps organization.
+Microsoft-hosted agents that run Windows and Linux images are provisioned on Azure general purpose virtual machines [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series). These virtual machines are colocated in the same geography as your Azure DevOps organization.
 
-Agents that run macOS images are provisioned on Mac pros. These agents always run in US and Europe irrespective of the location of your Azure DevOps organization. If data sovereignity is important to you and if your organization is not in one of these geographies, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
+Agents that run macOS images are provisioned on Mac pros. These agents always run in US and Europe irrespective of the location of your Azure DevOps organization. If data sovereignty is important to you and if your organization is not in one of these geographies, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
 
-All of these machines have 10GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
+All of these machines have 10 GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
 > [!IMPORTANT]
 > We cannot honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
@@ -114,7 +114,7 @@ All of these machines have 10GB of free disk space available for your pipelines 
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
 
-Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions, and while your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
+Your hosted agents run in the same [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) as your organization. Each geography contains one or more regions. While your agent may run in the same region as your organization, it is not guaranteed to do so. To obtain the complete list of possible IP ranges for your agent, you must use the IP ranges from all of the regions that are contained in your geography. For example, if your organization is located in the **United States** geography, you must use the IP ranges for all of the regions in that geography.
 
 To determine your geography, navigate to `https://dev.azure.com/<your_organization>/_settings/organizationOverview`, get your region, and find the associated geography from the [Azure geography](https://azure.microsoft.com/global-infrastructure/geographies/) table. Once you have identified your geography, use the IP ranges from the [weekly file](https://www.microsoft.com/download/details.aspx?id=56519) for all regions in that geography.
 
@@ -141,7 +141,7 @@ To determine your geography, navigate to `https://dev.azure.com/<your_organizati
 
 #### Example
 
-In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included. In this example the IP addresses are written to the console. 
+In the following example, the hosted agent IP address ranges for an organization in the West US region are retrieved from the weekly file. Since the West US region is in the United States geography, the IP addresses for all regions in the United States geography are included. In this example, the IP addresses are written to the console. 
 
 ```csharp
 using Newtonsoft.Json.Linq;
@@ -207,9 +207,9 @@ Microsoft-hosted agents can't be listed by service tags. If you're trying to gra
 Microsoft-hosted agents run on secure Azure platform. However, you must be aware of the following security considerations.
 
 - Although Microsoft-hosted agents run on Azure public network, they are not assigned public IP addresses. So, external entities cannot target Microsoft-hosted agents. 
-- Microsoft-hosted agents are run in individual VMs which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
-- There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. For instance, if you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
-- When a pipeline needs to access your corporate resources behind a firewall, you have to whitelist the IP address range for the Azure geography. This increases your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
+- Microsoft-hosted agents are run in individual VMs, which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
+- There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. If you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
+- When a pipeline needs to access your corporate resources behind a firewall, you have to whitelist the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
 - Hosted images do not conform to [CIS hardening benchmarks](https://www.cisecurity.org/benchmark/azure/). To use CIS-hardened images, you must create either self-hosted agents or scale-set agents.
 
 ## Capabilities and limitations
@@ -232,7 +232,7 @@ Microsoft-hosted agents do not offer:
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
 * The ability to pre-install custom software (other than through [tool installer tasks](../process/tasks.md#tool-installers) in your pipeline).
-* Potential performance advantages that you might get by using self-hosted agents which might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
+* Potential performance advantages that you might get by using self-hosted agents that might start and run builds faster. [Learn more](agents.md#private-agent-performance-advantages)
 * The ability to run [XAML builds](https://msdn.microsoft.com/library/ms181709%28v=vs.120%29.aspx).
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
@@ -261,7 +261,7 @@ You can also use a self-hosted agent that includes the exact versions of softwar
 
 We can't increase the memory, processing power, or disk space for Microsoft-hosted agents, but you can use [self-hosted agents](agents.md#install) or [scale set agents](scale-set-agents.md) hosted on machines with your desired specifications.
 
-### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. How do I fix this?
+### I can't select a Microsoft-hosted agent and I can't queue my build or deployment. What should I do?
 
 Microsoft-hosted agents are only available in Azure Pipelines and not in TFS or Azure DevOps Server.
 
@@ -271,23 +271,23 @@ By default, all project contributors in an organization have access to the Micro
 
 If your pipeline has recently become slower, review our [status page](https://status.dev.azure.com/) for any outages. We could be having issues with our service. Or else, review any changes that you made in your application code or pipeline. Your repository size during check-out might have increased, you may be uploading larger artifacts, or you may be running more tests.
 
-If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#capabilities-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines than this. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) if this performance is not acceptable.
+If you are just setting up a pipeline and are comparing the performance of Microsoft-hosted agents to your local machine or a self-hosted agent, then note the [specifications](#capabilities-and-limitations) of the hardware that we use to run your jobs. We are unable to provide you with bigger or powerful machines. You can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md) if this performance is not acceptable.
 
 ### I need more agents. What can I do?
 
-All Azure DevOps organizations are provided with several free parallel jobs for open source projects, and one free parallel job and limited minutes each month for private projects. If you need additional minutes or parallel jobs for your open source project, contact [support](https://azure.microsoft.com/support/devops/). If you need additional minutes or parallel jobs for your private project, then you can [buy more](../licensing/concurrent-jobs.md).
+All Azure DevOps organizations are provided with several free parallel jobs for open-source projects, and one free parallel job and limited minutes each month for private projects. If you need additional minutes or parallel jobs for your open-source project, contact [support](https://azure.microsoft.com/support/devops/). If you need additional minutes or parallel jobs for your private project, then you can [buy more](../licensing/concurrent-jobs.md).
 
 ### My pipeline succeeds on self-hosted agent, but fails on Microsoft-hosted agents. What should I do?
 
-Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
+Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your self-hosted agent. In some cases, Microsoft-hosted agents may have the tools that you need (for example, Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository]((https://github.com/actions/virtual-environments), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository]((https://github.com/actions/virtual-environments), where we track requests for additional software. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 
 ### My build succeeds on my local machine, but fails on Microsoft-hosted agents. What should I do?
 
-Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
+Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
 - You can create a new issue on the [repository]((https://github.com/actions/virtual-environments), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
@@ -295,7 +295,7 @@ Your self-hosted agent probably has all the right dependencies installed on it, 
 
 ### My pipeline fails with the error: "no space left on device".
 
-Microsoft-hosted agents only have 10GB of disk space available for running your job. This space is consumed when you checkout source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You must restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
+Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
 ### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to whitelist in our firewall?
 
@@ -316,7 +316,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   Mono versions associated with Xamarin SDK versions on the **Hosted macOS** agent can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xamarin).
 
-  Note that this command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
+  This command does not select the Mono version beyond the Xamarin SDK. To manually select a Mono version, see instructions below.
 
   In case you are using a non-default version of Xcode for building your Xamarin.iOS or Xamarin.Mac apps, you should additionally execute this command line:
 
@@ -334,7 +334,7 @@ If you refer to the server by its DNS name, then make sure that your server is p
 
   Xcode versions on the **Hosted macOS** agent pool can be found [here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#xcode).
 
-  Note that this command does not work for Xamarin apps. To manually select a Xcode version for building Xamarin apps, see instructions above.
+  This command does not work for Xamarin apps. To manually select an Xcode version for building Xamarin apps, see instructions above.
 
 #### Mono
 
