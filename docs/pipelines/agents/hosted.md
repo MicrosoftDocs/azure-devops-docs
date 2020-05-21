@@ -110,6 +110,7 @@ All of these machines have 10GB of free disk space available for your pipelines 
 > We cannot honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
 <a name="agent-ip-ranges"></a>
+
 ## Networking
 
 In some setups, you may need to know the range of IP addresses where agents are deployed. For instance, if you need to grant the hosted agents access through a firewall, you may wish to restrict that access by IP address. Because Azure DevOps uses the Azure global network, IP ranges vary over time. We publish a [weekly JSON file](https://www.microsoft.com/download/details.aspx?id=56519) listing IP ranges for Azure datacenters, broken out by region. This file is published every Wednesday with new planned IP ranges. The new IP ranges become effective the following Monday. We recommend that you check back frequently to ensure you keep an up-to-date list. If agent jobs begin to fail, a key first troubleshooting step is to make sure your configuration matches the latest list of IP addresses. The IP address ranges for the hosted agents are listed in the weekly file under `AzureCloud.<region>`, such as `AzureCloud.westus` for the West US region.
@@ -306,6 +307,7 @@ See the section [Agent IP ranges](#agent-ip-ranges)
 If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) whitelisted.
 
 <a name="mac-pick-tools"></a>
+
 ### How can I manually select versions of tools on the Hosted macOS agent?
 
 #### Xamarin
