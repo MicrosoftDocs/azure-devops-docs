@@ -104,10 +104,10 @@ Microsoft-hosted agents that run Windows and Linux images are provisioned on Azu
 
 Agents that run macOS images are provisioned on Mac pros. These agents always run in US and Europe irrespective of the location of your Azure DevOps organization. If data sovereignity is important to you and if your organization is not in one of these geographies, then you should not use macOS images. [Learn more](../../organizations/security/data-location.md).
 
-All of these machines have about 10GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
+All of these machines have 10GB of free disk space available for your pipelines to run. This free space is consumed when your pipeline checks out source code, downloads packages, pulls docker images, or generates intermediate files.
 
 > [!IMPORTANT]
-> We do not honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
+> We cannot honor requests to increase disk space on Microsoft-hosted agents, or to provision more powerful machines. If the specifications of Microsoft-hosted agents do not meet your needs, then you should consider [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
 <a name="agent-ip-ranges"></a>
 ## Networking
@@ -200,14 +200,14 @@ namespace WeeklyFileIPRanges
 
 ### Service tags
 
-Service Tags is not something you can use for Microsoft-hosted agents. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
+Microsoft-hosted agents can't be listed by service tags. If you're trying to grant hosted agents access to your resources, you'll need to follow the IP range allow listing method.
 
 ## Security
 
 Microsoft-hosted agents run on secure Azure platform. However, you must be aware of the following security considerations.
 
-- Although Microsoft-hosted agents run on Azure public network, they are not assigned any IP addresses. So, external entities cannot target Microsoft-hosted agents. 
-- Microsoft-hosted agents are shared across customers. However, they are entirely re-imaged after each run. So, there is no residue from a previous run of a pipeline. And, they are dedicated to one organization for the duration of a run. Each virtual machine runs only a single agent at a time.
+- Although Microsoft-hosted agents run on Azure public network, they are not assigned public IP addresses. So, external entities cannot target Microsoft-hosted agents. 
+- Microsoft-hosted agents are run in individual VMs which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
 - There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. For instance, if you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
 - When a pipeline needs to access your corporate resources behind a firewall, you have to whitelist the IP address range for the Azure geography. This increases your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
 - Hosted images do not conform to [CIS hardening benchmarks](https://www.cisecurity.org/benchmark/azure/). To use CIS-hardened images, you must create either self-hosted agents or scale-set agents.
@@ -227,7 +227,7 @@ Microsoft-hosted agents:
 
 Microsoft-hosted agents do not offer:
 
-* The ability to sign in.
+* The ability to remotely connect.
 * The ability to [drop artifacts to a UNC file share](../artifacts/build-artifacts.md#unc-file-share).
 * The ability to join machines directly to your corporate network.
 * The ability to get bigger or more powerful build machines.
