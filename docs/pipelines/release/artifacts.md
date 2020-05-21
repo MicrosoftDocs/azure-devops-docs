@@ -1,12 +1,12 @@
 ---
 title: Release artifacts and artifact sources
 ms.custom: seodec18
-description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS)
+description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS). This article lists and explains the different artifacts sources and how to consume them. It also explains the artifacts variables and download.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 05/08/2020
+ms.date: 05/21/2020
 ms.custom: contentperfq4
 monikerRange: '>= tfs-2015'
 ---
@@ -157,7 +157,7 @@ sources.
 
 <a name="teambuild"></a>
 
-### Azure Pipelines
+## Artifact sources - Azure Pipelines
 
 You can link a release pipeline to any of
 the build pipelines in Azure Pipelines or TFS project collection.
@@ -191,7 +191,9 @@ The following features are available when using Azure Pipelines sources:
 
 <a name="tfvc"></a>
 
-<h3 id="tfvcsource">TFVC, Git, and GitHub</h3>
+<a id="tfvcsource"></a>
+
+## Artifact sources - TFVC, Git, and GitHub
 
 There are scenarios in which you may want to
 consume artifacts stored in a version control system
@@ -251,7 +253,9 @@ The following features are available when using TFVC, Git, and GitHub sources:
 
 <a name="jenkins"></a>
 
-<h3 id="jenkinssource">Jenkins</h3>
+<a id="jenkinssource"></a>
+
+## Artifact sources - Jenkins
 
 To consume Jenkins artifacts, you must create a
 service connection with credentials to connect to
@@ -298,7 +302,9 @@ For more information about Jenkins integration capabilities, see
 
 <a name="container"></a>
 
-<h3 id="dockersource">Azure Container Registry, Docker, Kubernetes</h3>
+<a id="dockersource"></a>
+
+## Artifact sources - Azure Container Registry, Docker, Kubernetes
 
 When deploying containerized apps, the container image is first pushed to a container registry.
 After the push is complete, the container image can be deployed to the Web App for Containers service or a Docker/Kubernetes cluster.
@@ -322,7 +328,9 @@ The following features are available when using Azure Container Registry, Docker
 
 <a name="artifacts"></a>
 
-<h3 id="artifactsource">Azure Artifacts</h3>
+<a id="artifactsource"></a>
+
+## Artifact sources - Azure Artifacts
 
 Scenarios where you may want to consume these artifacts are:
 
@@ -358,7 +366,9 @@ For more information, see the [Azure Artifacts](../../artifacts/overview.md) ove
 
 <a name="externaltfs"></a>
 
-<h3 id="onpremtfssource">External or on-premises TFS</h3>
+<a id="onpremtfssource"></a>
+
+## Artifact sources - External or on-premises TFS
 
 You can use Azure Pipelines to deploy artifacts
 published by an on-premises TFS server. You don't need to make the TFS
@@ -415,7 +425,9 @@ The following features are available when using external TFS sources:
 
 <a name="teamcity"></a>
 
-<h3 id="teamcitysource">TeamCity</h3>
+<a id="teamcitysource"></a>
+
+## Artifact sources - TeamCity
 
 To integrate with TeamCity, you must first install the
 [TeamCity artifacts for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-teamcity)
@@ -457,7 +469,7 @@ The following features are available when using TeamCity sources:
 
 <a name="Custom artifacts"></a>
 
-### Custom artifacts
+## Artifact sources - Custom artifacts
 
 In addition to built-in artifact sources, Azure DevOps Pipelines supports integrating any custom artifact source with the artifact extensibility model. You can plug in any custom artifact source, and Azure DevOps will provide a first-class user experience and seamless integration.
 
@@ -467,7 +479,7 @@ For more details, see [Azure DevOps artifact extensibility model](https://aka.ms
 
 <a name="others"></a>
 
-### Other sources
+## Artifact sources - Other sources
 
 Your artifacts may be created and exposed by other
 types of sources such as a NuGet repository. While we
