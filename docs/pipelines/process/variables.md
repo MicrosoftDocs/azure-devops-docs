@@ -58,27 +58,40 @@ User-defined variables can consist of letters, numbers, `.`, and `_` characters.
 
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-Most documentation examples use macro syntax (`$(var)`). Variables with macro syntax are processed during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
+### Macro syntax variables
+Most documentation examples use macro syntax (`$(var)`). Macro syntax is designed to interpolate variable values into task inputs and into other variables. 
+
+Variables with macro syntax are processed before a task executes during runtime. Runtime happens [after template expansion](runs.md#process-the-pipeline). When the system encounters a macro expression, it replaces the expression with the contents of the variable. If there's no variable by that name, then the macro expression is left unchanged. For example, if `$(var)` can't be replaced, `$(var)` won't be replaced by anything. 
+
+Macro syntax variables remain unchanged with no value because an empty value like `$()` might mean something to the task you are running and the agent should not assume you want that value replaced.  For example, if you use `$(foo)` to reference variable `foo` in a Bash task, replacing all `$()` expressions in the input to the task could break your Bash scripts.
+
+Macro variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $(value)`. The following isn't valid: `$(key): value`.
 
 > [!NOTE]
 > Variables are only expanded for `stages`, `jobs`, and `steps`.
 > You cannot, for example, use macro syntax inside a `resource` or `trigger`.
 
-You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
+### Template expression syntax 
+You can use template expression syntax to expand both [template parameters](../process/templates.md) and variables (`${{ variables.var }}`). Template variables are processed at compile time, and are replaced before runtime starts. Template expressions are designed for for re-using parts of YAML as templates. 
 
-You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
+ Template variables silently coalesce to empty strings when a replacement value isn't found. Template expressions, unlike macro and runtime expressions, can appear as either keys (left side) or values (right side). The following is valid: `${{ variables.key }} : ${{ variables.value }}`.
+
+### Runtime expression syntax
+You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expressions designed to be used in the conditions of jobs, to support conditional execution of jobs or whole stages.
+
+Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
-|macro|`$(var)`|runtime|value (right side)|prints `$(var)`|
+|macro|`$(var)`|runtime before a task executes|value (right side)|prints `$(var)`|
 |template expression|`${{ variables.var }}`|compile time|key or value (left or right side)|empty string|
 |runtime expression|`$[variables.var]`|runtime|value (right side)|empty string|
 
 ### What syntax should I use?
 
-If you are defining a variable for a template or that has a static value, use a template expression.
+Use macro syntax if you are providing input for a task. If you are working with conditions, use a runtime expression. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
 
-If you are setting a variable that will be populated at runtime, use a macro expression. The exception to this is if you have a pipeline where it will cause a problem for your empty variable to print out. For example, if you have a conditional logic that relies on a variable having a specific value or no value. In that case, you should use a runtime expression. 
+If you are defining a variable in a template, use a template expression.
 
 ## Set variables in pipeline
 
