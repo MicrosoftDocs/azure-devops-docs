@@ -128,7 +128,11 @@ Parent-child links or other tree topology link types support creating a hierarch
 
 To import a hierarchical list, see [Add or import a hierarchical list of work items](#add-work-items-tree) later in this article. 
 
-## Guide to list and query type usage
+### My queries versus Shared queries 
+
+If you're only going to use the workbook.... 
+
+### Guide to list and query type usage
 
 In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links. 
 
@@ -154,54 +158,7 @@ Here is some additional guidance:
 
  
 ::: moniker-end  
- 
 
-
-## Work with different list types 
-
-Select your list structure based on these guidelines.  
-
-<table>
-<thead>
-<tr>
-<th width="60%"><p>Task</p></th>
-<th width="15%"><p>List structure</p></th>
-<th width="15%"><p>List refresh</p></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Create and publish many unrelated work items</p></td>
-<td><p>Flat list</p></td>
-<td><p>Input list</p></td>
-</tr>
-<tr>
-<td><p>Perform bulk edits on many unrelated work items</p></td>
-<td><p>Flat list</p></td>
-<td><p>Query list or input list</p></td>
-</tr>
-<tr>
-<td><p>Perform bulk edits on many work items and their dependent or related work items</p></td>
-<td><p>Tree list</p></td>
-<td><p>Query list</p></td>
-</tr>
-<tr>
-<td><p>Perform top down planning and publish parent-child linked work items</p></td>
-<td><p>Tree list</p></td>
-<td><p>Input list</p></td>
-</tr>
-<tr>
-<td><p>View and modify the hierarchy and parent-child link relationships of many work items</p></td>
-<td><p>Tree list</p></td>
-<td><p>Query list</p></td>
-</tr>
-<tr>
-<td><p>Review reports based on a filtered set of work items that change over time</p></td>
-<td><p>Flat or tree list</p></td>
-<td><p>Query list</p></td>
-</tr>
-</tbody>
-</table>
 
 
 <a id="add-work-items"> </a>  
@@ -261,23 +218,6 @@ Select your list structure based on these guidelines.
 
     If you make changes to the work item, you should then immediately refresh your worksheet to capture those changes.  
 
-<a id="choose-columns"> </a>  
-
-## Choose column fields 
-
-1. To assign values to other fields, choose **Column Options** to add the fields of interest.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Choose Columns dialog](media/excel/choose-columns-with-ribbon.png)
-
-	- To filter the fields based on work item type, select the **Work item type**.
-	- To move or remove a field, choose the field and then click the > or < icons.
-	- To change the field sequence, move the field up or down in the list using the up and down arrows. 
-	- You can add a rich-text field, such as the **Description** field, however you may lose some of the formatting upon publish.  
-
-1. Once the fields appear in the worksheet, assign values and publish your updates. 
-
-1. Save your worksheet. 
 
 <a id="add-work-items-tree"> </a>  
 
@@ -410,6 +350,25 @@ The easiest way to bulk update many work items is to create a query with the wor
 
 
 
+<a id="choose-columns"> </a>  
+
+## Choose column fields 
+
+1. To assign values to other fields, choose **Column Options** to add the fields of interest.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose Columns dialog](media/excel/choose-columns-with-ribbon.png)
+
+	- To filter the fields based on work item type, select the **Work item type**.
+	- To move or remove a field, choose the field and then click the > or < icons.
+	- To change the field sequence, move the field up or down in the list using the up and down arrows. 
+	- You can add a rich-text field, such as the **Description** field, however you may lose some of the formatting upon publish.  
+
+1. Once the fields appear in the worksheet, assign values and publish your updates. When working with identity fields, ones that accept user accounts, see the next section, [Select user accounts](select-user).
+
+1. Save your worksheet. 
+
+
 <a id="select-user"></a>
 
 ## Select user accounts 
@@ -421,11 +380,12 @@ You can use the Select User feature to find user accounts and assign values to p
 
 1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
-2. Choose a person-named field to activate the **Select User** feature in the Team ribbon.  
+2. Choose an identity or person-named field to activate the **Select User** feature in the Team ribbon.  
 
-	![Team ribbon, Select User](media/bulk-add-excel-select-user-team-ribbon.png)  
+	> [!div class="mx-imgBorder"]  
+	> ![Team ribbon, Select User](media/excel/select-user.png)
 
-	A person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Azure Active Directory, Active Directory, or a Workgroup. Such fields are identified as those whose `syncnamechanges` attribute has been set to [synchronize](../../../reference/xml/field-definition-element-reference.md).  
+	An identity or person-named field is a field that contains a user identity. These fields are typically synchronized to a database of user accounts, such as Azure Active Directory, Active Directory, or a Workgroup. 
 
 3. Begin typing the name of the user account and the Assign User dialog will automatically filter the results until you can select the account of interest.  
 
@@ -463,45 +423,51 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	- To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
+
+## Enable Tree commands
+
+If the **Tree group** commands are not available, your worksheet is configured as a flat list, query list. You must first convert the list to either an input list or a list based on a tree query in order to enable the Tree group commands. To learn how, see the next section on [Change from a query to an input list](#reconfigure-list).
+
 <a id="reconfigure-list"></a>
 
-## Change from a query list to a work item list 
+## Change from a query to an input list
 
-If you want to change your flat list to a query list, you can. However, if you're list is a query list, then you first need to reconfigure the list. You'll know that it is a flat list, query list as the Tree group commands are disabled. 
+If you want to change your flat list to a tree list, you can. However, if you're list is a query list, then you first need to reconfigure the list. You'll know that it is a flat list, query list as the **Tree group** commands are disabled. 
 
 > [!div class="mx-imgBorder"]  
 > ![Team ribbon, disabled Tree group commands](media/excel/disabled-tree-group.png)
 
-To convert your list, 
+To convert your query list to an input list, follow these steps. 
+
+1. First, publish whatever changes you have made. 
+
+1. Next, on the **Team** ribbon, choose **Configure**, **List**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team ribbon, Configure, List menu option](media/excel/team-ribbon-configure-list.png)
+
+1. Choose **Refresh work items only** and then **Apply**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Configure List properties dialog](media/excel/configure-list-properties-dialog-refresh-current.png)
+
+    This choice changes the query list to an input list.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Configure List properties dialog](media/excel/configure-list-properties-dialog-refresh-current.png)
+
+	If you need to change from an input list to a query list, then choose the **Refresh from query** option and choose the query you want. 
 
 
+### Add existing work items to your worksheet 
 
-## Enable Tree commands
+If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. 
 
-If the **Tree group** commands are not available, your worksheet is configured as a flat list. You can convert the flat list to a tree list as described in step 2 in [Import a hierarchical list of work items](#add-work-items-tree).
-
-
-
-
+	> [!div class="mx-imgBorder"]  
+	> ![Get work items dialog](media/excel/get-work-items.png)
 
 
-
-
-
-### Convert a tree to a flat list
-
-First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. These actions flatten the tree structure and change the query list to an input list.
-
-
- 
-
-### Convert from an input list to a query
-
-On the **Team** ribbon, choose **Configure**, **List**, and then select the query you want to use. The worksheet will refresh with only those work items returned by the query. Also, if you select a tree query, then the list becomes a tree list.
-
-### Add existing work items to a list
-
-If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
+If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
 ## Create a report 
