@@ -27,7 +27,7 @@ In this tutorial, you learn about:
 
 ## Prerequisites
 
-[!INCLUDE [include](../../../ecosystem/includes/azure-prerequisites.md)]
+[!INCLUDE [include](../ecosystems/includes/azure-prerequisites.md)]
 
 <a name="creating-azure-key-vault"></a>
 
@@ -35,7 +35,7 @@ In this tutorial, you learn about:
 
 This tutorial uses a simple scenario to illustrate the integration between Azure Pipelines and Azure Key Vault. The first step is to create an Azure Key Vault, which can be done via the portal or CLI. This tutorial uses the CLI.
 
-[!INCLUDE [include](../../ecosystem/includes/sign-in-azure-cli.md)]
+[!INCLUDE [include](../ecosystems/includes/sign-in-azure-cli.md)]
 
 
 1. If you have more than one Azure subscription associated with your account, use the command below to specify a default subscription. You can use `az account list` to generate a list of your subscriptions to find the details you need to specify one.
@@ -109,9 +109,9 @@ This tutorial uses a simple scenario to illustrate the integration between Azure
 > 
 > You will need to switch back and forth between Azure and Azure DevOps during this tutorial. It is recommended that you open a new tab to perform the upcoming Azure DevOps tasks.
 
-[!INCLUDE [include](../../ecosystems/includes/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../../ecosystems/includes/create-project.md)]
+[!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 ## Create the pipeline
 
