@@ -62,7 +62,7 @@ Select **Add users/groups**.
 Add `users` and/or `groups` and choose their access role.
 
 > [!div class="mx-imgBorder"]
->![Adding users or groups](media/add-users-groups-dialogue.png)
+>![Adding users or groups dialogue](media/add-users-groups-dialogue.png)
 
 When you're done, select **Save**.
 
@@ -78,6 +78,25 @@ In the edit feed dialog:
 - When you're done, select **Save**.
 
 ::: moniker-end
+
+
+## Understanding feeds and views permissions
+
+Feeds are organizational containers that allow users to group packages and control who can access them by modifying the feed permissions.
+
+A feed view on the other hand is a way to enable users to share some packages while keeping others private. A common scenario for using a feed view is when a team shares a package version that has already been tested and validated but keeps packages that are still under development from being viewed.
+
+By default, there are 3 views in a feed: `@local`, `@prerelease`, and `@release`. The latter two are suggested views that you can rename or delete as desired.
+
+The `@local` view is the default view and it includes all the packages that were published directly to the feed as well as all the packages that were saved from the [upstream sources](../concepts/upstream-sources.md).
+
+> [!IMPORTANT]
+> If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.
+If you want to completely hide your packages, you must restrict both feeds and views permissions.
+
+To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#adding-users/groups-permissions-to-a-feed) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
+
+After restricting your view's visibility, the permissions column should indicate that your view is only available to `feed users`.
 
 <a name="common-identities"></a>
 
