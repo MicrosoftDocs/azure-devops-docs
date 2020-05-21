@@ -112,6 +112,8 @@ landingContent:
             url: ./targets/deploy-to-azure-vscode.md
           - text: Deploy to Azure Kubernetes Service
             url: ./ecosystems/kubernetes/aks-template.md
+          - text: Use secrets from Azure Key Vault
+            url: ./release/azure-key-vault.md
   - title: Set up continuous testing
     linkLists:
       - linkListType: tutorial
