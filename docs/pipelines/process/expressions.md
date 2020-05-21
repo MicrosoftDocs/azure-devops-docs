@@ -387,7 +387,8 @@ Expressions can use the dependencies context to reference previous jobs or stage
 * Reference output variables in the previous stage in a stage
 * Reference output variables in a job in a previous stage in the following stage
 
-The context is called `dependencies` for jobs and stages and works much like variables. If you are referencing a job variable in a previous stage, the context is called `stageDependencies`. 
+The context is called `dependencies` for jobs and stages and works much like variables. 
+Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`. 
 
 Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
 Expressed as JSON, it would look like:
@@ -413,6 +414,26 @@ Expressed as JSON, it would look like:
 }
 ```
 
+The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies. 
+
+```json
+"stageDependencies": {
+    "<JOB_NAME>": {
+      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+      "outputs": {
+        "variable1": "value1",
+        "variable2": "value2",
+      }
+    },
+      "...": {
+    // another job
+  }
+  },
+    "...": {
+    // another stage
+  }
+}
+```
 ::: moniker range="azure-devops"
 
 You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
