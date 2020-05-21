@@ -22,15 +22,13 @@ When you have many work items to add or modify, using Microsoft Excel can save y
 In this article you'll learn how to perform the following tasks:  
 
 > [!div class="checklist"]    
-> * Import or update work items, flat list  
-> * Import or update a hierarchy of parent-child work items, tree list  
+> * Import or update work items, either a flat list or hierarchy tree list 
 > * Publish and refresh your work items  
+> * Add and remove fields from your worksheet 
 > * Convert a flat-list to a tree-list  
 > * Select user accounts  
-> * Add links or attachments to work items  
-> * Open a work item from Excel (opens in web portal)  
-> * Choose column fields to display in your worksheet  
 > * Link work items and add attachments to one or more work items   
+> * Open a work item from Excel (opens in web portal)  
 > * Edit Area and Iteration Paths (opens in web portal)   
 > * Use Excel features  
 > * Configure list properties, change from a query list to a work item list 
@@ -93,7 +91,7 @@ For answers to specific questions about the integration of Excel and Azure DevOp
 
 To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
-## Choose list and query type to support your task.  
+## Choose list type and query type   
 
 When you work in Excel connected to Azure Boards, you're always working with a query type and a list type. Queries correspond to the queries you create using the Query Editor.
 - **Query types**: 
@@ -101,42 +99,63 @@ When you work in Excel connected to Azure Boards, you're always working with a q
 	- **Query title**: Indicates the list of work items is tied to the specified **query**. 
 - **List types**: 
 	- **Flat list**: Simple list of work items that shows a single **Title** column. No link management is supported. 
-	- **Tree list**: Hierarchical list of work items that support creating and updating tree topology links, such as Parent-Child links, between work items. These list include two or more **Title** columns.  
+	- **Tree list**: Hierarchical list of work items that support creating and updating tree topology links, such as Parent-Child links, between work items. These lists include two or more **Title** columns.  
 
- In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links. 
-
-Here is some additional guidance: 
-
-- Use an input list, flat list: To import a list of work items or create new work items, no hierarchy
-- Use an input list, tree list: To perform top down planning and publish parent-child linked work items
-- Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items
-- Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items
+You can add, publish, and refresh work items using any query type and list type. 
 
 ### Query types 
 
 Azure Boards supports three query types. The icon next to each query indicates the query type. The first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. 
 
-	> [!div class="mx-imgBorder"]  
-	> ![Query type icon list](media/excel/query-types.png)
+> [!div class="mx-imgBorder"]  
+> ![Query type icon list](media/excel/query-types.png)
 
 Only the **Tree of work items** queries import as a tree list. Direct links queries are imported as a flat list into Excel as modifying multiple types of links isn't a supported feature in Excel. 
 
-
 <a id="tree-list"></a>
 
-### Hierarchy of linked work items
+### Tree lists
 
 You can bulk add a nested list of work items, such as a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items.
 
-Here's how a three-level nested tree of items appears in Excel:   
+Here's how a three-level nested tree of items appears in Excel. 
 
-![Tree list of work items](media/IC354953.png)
+![Tree list of work items, conceptual image](media/IC354953.png)
 
 Parent-child links or other tree topology link types support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
 
 [!INCLUDE [temp](../../includes/work-item-types.md)]
 
 To import a hierarchical list, see [Add or import a hierarchical list of work items](#add-work-items-tree) later in this article. 
+
+## Guide to list and query type usage
+
+In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links. 
+
+Here is some additional guidance: 
+
+::: moniker range="azure-devops" 
+
+- Use an input list, flat list: To import a list of work items or create new work items, no hierarchy   
+- Use an input list, tree list: To perform top down planning and publish linked work items  
+- Use a query list, tree list: To view and modify the hierarchy of link relationships of many existing work items. 
+
+
+::: moniker-end  
+
+::: moniker range="< azure-devops" 
+
+- Use an input list, flat list: To import a list of work items or create new work items, no hierarchy  
+- Use an input list, tree list: To perform top down planning and publish parent-child linked work items  
+- Use a query list, flat list: To create an Excel report based on the query of work items  
+	> [!NOTE]
+	To create an Excel report, you're project collection must be configured to support Analytics reporting. For more information, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md).
+- Use a query list, tree list: To view and modify the hierarchy and parent-child link relationships of many existing work items. 
+
+ 
+::: moniker-end  
+ 
+
 
 ## Work with different list types 
 
@@ -266,10 +285,15 @@ Select your list structure based on these guidelines.
 
 You can add work items linked using parent-child links, or other tree topology link type, to create a hierarchy of work items. 
 
-1. Starting from [Step 5](#step-5) from the previous procedure, convert your flat list into a tree list. Choose a cell within the flat list and then choose **Add Tree Level**. 
+> [!IMPORTANT]
+> Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, recover immediately by refreshing your worksheet. 
+
+1. Starting from [Step 5](#step-5) from the previous procedure, convert your flat list, input list into a tree list. Choose a cell within the flat list and then choose **Add Tree Level**. 
  
 	> [!div class="mx-imgBorder"]  
 	> ![Empty flat list connected to a project, Add Tree Level](media/excel/convert-flat-to-tree.png)
+
+	If the **Add Tree Level** is disabled, you're working from a query list. To convert your list to a tree list, you must first [reconfigure your list](#reconfigure-list) to an input list. 
 
 1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](../../../reference/xml/link-type-element-reference.md#topology). 
 
@@ -283,19 +307,19 @@ You can add work items linked using parent-child links, or other tree topology l
 
 1. To add more levels to the hierarchy, choose **Add Tree Level** again. For example, if you want to add a hierarchy of Epics, Features, and User Stories, you'll want to have **Title 1**, **Title 2**, and **Title 3** columns.
 
-	If you want to add tasks, add another tree level to have four title columns. 
+	If you want to add tasks, add another tree level to have four title columns. To remove a column, see [Remove a tree level](#remove-tree-level). 
 
 1. Save your Excel file. 
 
 1. Enter the **Work Item Type** and **Titles** for the hierarchy you want to import. The **State** fields automatically fill in with default values once you select the work item type. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Define hierarchical list of work items](media/excel/import-safe-hierarchy-list.png)
+	> ![Excel worksheet, hierarchical list of work items for import](media/excel/import-safe-hierarchy-list.png)
 
 8.  Publish your worksheet.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](media/excel/publish.png)
+	> ![Team Ribbon, Publish link](media/excel/publish-tree-list.png
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled. 
 
@@ -306,16 +330,48 @@ You can add work items linked using parent-child links, or other tree topology l
     For example, here we show the Child and Parent links created for a Feature that was imported. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add work items to Excel](media/excel/view-hierarchical-links.png)
+	> ![Link and Attachments, Link tab dialog](media/excel/view-hierarchical-links.png)
 
-1. To assign values to other fields, open [**Choose Columns**](#choose-columns), add the fields, make the assignments, and publish your changes.   
+1. To enter a row under a work item where you want to add a child, choose the row and then choose **Add Child**
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team ribbon, Tree group, Add child link](media/excel/tree-group-add-child.png) 
+
+1. To assign values to other fields, open [**Choose Columns**](#choose-columns), add the fields, make the assignments, and publish your changes. 
+
+1. To change the hierarchy, cut and paste the row of a work item to place it under the new parent. - Make sure that you select the entire table row. When you publish the change, the old hierarchical links are deleted and the new hierarchical link are created. 
+
+    You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title n**, if it does not, add a tree level.
+
+<a id="remove-tree-level" />
+
+### Remove a tree level
+
+1. First, publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
+
+2. Next, remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;. This should be the highest numbered column in the tree. 
+
+3. **Refresh** your worksheet. The column containing empty values for the Title is removed. 
+
+	You'll receive an error message if you attempt to delete the column. 
+
+### Useful tips when working with a tree list 
+
+- The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
+	- A row between is blank between two work items within the hierarchy 
+	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.
+	- Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row.
+	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
+- To resolve an error, see [Resolve invalid links](resolve-excel-invalid-links-tree-list.md).
+- A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
+
+
 
 <a id="update-work-items "></a>
 
 ## Update work items using a query 
 
 The easiest way to bulk update many work items is to create a query with the work items you want to update, and then open that query in Excel. 
- 
 
 > [!TIP]
 > **Follow these tips to keep your work in sync:**   
@@ -350,12 +406,18 @@ The easiest way to bulk update many work items is to create a query with the wor
 
 1. With the work items imported to Excel, make the modifications you want and publish your changes. 
 
+    If you're working with a tree list, see also the information provided in [Import a hierarchical list of work items](#add-work-items-tree).
+
+
 
 <a id="select-user"></a>
 
 ## Select user accounts 
 
 You can use the Select User feature to find user accounts and assign values to person named fields. Also, this feature provides access to the most recently used (MRU) values. If your team contains several hundreds or thousands of user accounts, you'll want to use this feature.  
+
+> [!TIP]  
+> Without the **Select User** feature, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
 
 1. If you haven't installed or updated to the latest version of [Visual Studio (at least VS 2015.1 or later version](https://visualstudio.microsoft.com/downloads/), do that now. You need the latest update in order to access the Select User feature.  
 
@@ -374,11 +436,6 @@ You can use the Select User feature to find user accounts and assign values to p
 	You'll notice that as you select user names, Excel remembers your recent selections and you can select those user accounts directly from the field.   
 
 	![Assigned to field, Drop-down menu shows most recently used values](media/bulk-add-excel-assign-to-field.png)  
-
-> [!TIP]  
-> Without the **Select User** feature, you must enter user names exactly as they are in the database, or you'll receive data validation errors upon trying to publish.  
-
-
 
 <a id="link-attachments"></a>
 
@@ -406,80 +463,36 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	- To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
-<a id="tree-list"></a>
-
-## Add a hierarchy of linked work items
-
-You can bulk add a nested list of work items, such as a work breakdown structure or a hierarchical set of user stories and customer experiences. For example, you can add a nested list of tasks, subtasks, and bugs, as shown in the following illustration, or linked tasks to product backlog items, as described in the following steps.
-
-Here's how a three-level nested tree of items appears in Excel:   
-
-![Tree list of work items](media/IC354953.png)
-
-Parent-child links support creating a hierarchical backlog structure. The work item types that participate in the hierarchy differ with different processes and are shown in the following images. 
-
-[!INCLUDE [temp](../../includes/work-item-types.md)]
-
-To import a hierarchical list, perform the following steps: 
-
-1.  Follow steps 1 through 6 from the previous procedure.
-
-2.  Convert your flat list to a tree list by adding a tree level.
-
-    ![Convert flat list to tree list](media/bulk-modify-excel-convert-to-tree-composite.png)
-
-    Notice how the list type is now labeled **Tree**, and an additional **Title 2** column has been inserted.
-
-    ![Empty tree list connected to data store](media/bulk-modify-excel-tree-list-type.png)
-
-3.  Enter titles for backlog items under **Title 1** and for tasks, under **Title 2**. Also, select the corresponding work item type for each. Here we specify Task.
-
-    ![Tree list of work items to publish](media/bulk-modify-excel-tree-list-with-tasks.png)
-
-4.  Just as before, publish your worksheet and notice how IDs are assigned to the new work items.
-
-    ![Publish a tree list of work items](media/bulk-modify-excel-published-tree-list.png)
-
-    In the background, parent-child links are created for each task listed under a user story.
-
-
-
-## Useful tips when working with a tree list 
-
-- The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
-	- A row between parent and child work items is blank. 
-	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.
-	- Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row.
-	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
-- To resolve an error, see [Resolve invalid links in an Excel tree list](resolve-excel-invalid-links-tree-list.md).
-- You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title** &lt;number&gt;, if it does not, add a tree level.
-- A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
-- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
-- When you move a work item, make sure that you select the entire table row. 
-
-
-
-
-<a id="select-user"></a>
+<a id="reconfigure-list"></a>
 
 ## Change from a query list to a work item list 
 
+If you want to change your flat list to a query list, you can. However, if you're list is a query list, then you first need to reconfigure the list. You'll know that it is a flat list, query list as the Tree group commands are disabled. 
+
+> [!div class="mx-imgBorder"]  
+> ![Team ribbon, disabled Tree group commands](media/excel/disabled-tree-group.png)
+
+To convert your list, 
 
 
-### Enable the Tree commands
 
-If the Tree group commands are not available, your worksheet is configured as a flat list. You can convert the flat list to a tree list as described in step 2 in [Add backlog items and tasks and their parent-child links using a tree list](#tree-list).
+## Enable Tree commands
+
+If the **Tree group** commands are not available, your worksheet is configured as a flat list. You can convert the flat list to a tree list as described in step 2 in [Import a hierarchical list of work items](#add-work-items-tree).
+
+
+
+
+
+
+
+
 
 ### Convert a tree to a flat list
 
 First, publish whatever changes you have made. Then, on the **Team** ribbon, choose **Configure**, **List**, and then choose **Refresh work items only**. These actions flatten the tree structure and change the query list to an input list.
 
-### Remove a tree level
 
-Remove any content entered under the tree-level **Title** *number* column you want to remove&mdash;the highest numbered column&mdash;and, then **Refresh** your worksheet.
-
-> [!TIP]  
-> Always publish changes that you have made to work items before you remove a tree level. Removing a tree level requires a refresh, which overwrites data in the work item list. You will lose any data you have not published. 
  
 
 ### Convert from an input list to a query
@@ -495,9 +508,11 @@ If you're working with a non-query input list, you can add work items by choosin
 
 New Report link 
 
-https://docs.microsoft.com/en-us/azure/devops/report/create-status-and-trend-excel-reports?view=tfs-2018
+https://docs.microsoft.com/azure/devops/report/create-status-and-trend-excel-reports?view=tfs-2018
 
+## Troubleshoot 
 
+- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
 
 ## Related articles
 
