@@ -93,7 +93,7 @@ Other open-source alternatives that support code-based tests are [Artillery](htt
 
 In addition, extensions from several load test vendors such as [SOASTA](https://marketplace.visualstudio.com/items?itemName=SOASTA.SOASTA-Extension)
 (now Akamai CloudTest), [Apica Loadtest](https://marketplace.visualstudio.com/items?itemName=apicasystem.apica-loadtest), and
-[Load Impact](https://marketplace.visualstudio.com/items?itemName=julienstroheker.loadimpact) are available in the Azure DevOps and Azure Marketplace.
+[k6](https://marketplace.visualstudio.com/items?itemName=k6.k6-load-test) are available in the Azure DevOps and Azure Marketplace.
 
 
 ## Download load tests and results
