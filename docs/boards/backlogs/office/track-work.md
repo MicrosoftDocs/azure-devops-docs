@@ -42,6 +42,8 @@ In this article you'll learn about the following items:
 > * How to connect Excel to an Azure Boards project 
 > * How to work offline and reconnect to Azure DevOps 
 > * Marketplace extensions that support integration with Office clients 
+
+
 ## Supported Office clients and Azure DevOps versions 
 
 The following table indicates the Office clients that are supported for each Azure DevOps version starting with Team Foundation Server 2013 (TFS 2013). 
@@ -66,7 +68,7 @@ The following table indicates the Office clients that are supported for each Azu
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       Azure DevOps Services  
       Azure DevOps Server 2019  
       Visual Studio 2019  
@@ -83,7 +85,7 @@ The following table indicates the Office clients that are supported for each Azu
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       TFS 2018 
       TFS 2017  
       Visual Studio 2017  
@@ -99,7 +101,7 @@ The following table indicates the Office clients that are supported for each Azu
    :::column-end:::
 :::row-end:::
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       TFS 2015  
       TFS 2013  
       Visual Studio 2015  
@@ -546,7 +548,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 <a id="marketplace" />
 
 
-## Marketplace extensions support for Office integration 
+## Marketplace extensions 
 
 TO BE COMPLETED
 
