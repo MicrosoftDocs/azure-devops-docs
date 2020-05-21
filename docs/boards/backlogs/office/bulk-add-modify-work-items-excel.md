@@ -24,15 +24,17 @@ In this article you'll learn how to perform the following tasks:
 > [!div class="checklist"]    
 > * Import or update work items, flat list
 > * Import or update a hierarchy of parent-child work items, tree list 
+> > Publish and refresh your work items 
 > * Convert a flat-list to a tree-list  
 > * Select user accounts 
 > * Add links or attachments to work items 
-> * Open a work item which opens in your web portal 
+> * Open a work item from Excel (opens in web portal) 
 > * Choose column fields to display in your worksheet 
 > * Links and Attachments  
-> * Edit Area and Attachments 
-> * Publish and refresh your work items 
+> * Edit Area and Iteration Paths (opens in web portal)   
+
 > * Use Excel features 
+> * Configure list properties, change from a query list to a work item list 
 
 For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).
 
@@ -94,66 +96,63 @@ For answers to specific questions about the integration of Excel and Azure DevOp
 To learn more about compatibility requirements, see [Compatibility with Azure DevOps](/azure/devops/server/compatibility). 
 
 
-
-
 <a id="add-work-items"> </a>  
 
 ## Add or import a new list of work items
 
 1. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
 
-3.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
+1.  In Excel, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007), see [Azure DevOps Office integration issues](tfs-office-integration-issues.md). 
 
-5. From the **New List** dialog, choose **Input list**.  
+1. Choose **New List** from the Team ribbon. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose New List](media/excel/team-ribbon.png)
+
+1.	From the **New List** dialog, choose **Input list**.  
 
     ![Select input list](media/excel/2019-input-list-dialog.png)
-	::: moniker-end
 
-6.  Your worksheet is now bound to your project as an input list, flat list.  
+1.  <a id="step-5" />Your worksheet is now bound to your project as an input list, flat list.  
 
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Empty flat list connected to a project](media/excel/2019-input-list.png)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-    ![Empty flat list connected to a project](media/bulk-modify-excel-connected-list.png)
-	::: moniker-end
 
 7.  Specify the titles of the work items you want to add and their work item type.
 
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Add work items to Excel](media/excel/2019-specify-titles.png)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-    ![Add work items to Excel](media/bulk-modify-excel-connected-list-user-stories.png)
-	::: moniker-end
 
     Notice how the **State** and **Reason** fields automatically fill in with default values once your select the work item type.
 
 8.  Publish your worksheet.
 
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Add work items to Excel](media/excel/2019-publish.png)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-    ![Publish work items from Excel to the data store](media/bulk-modify-excel-publish.png)
-	::: moniker-end
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
 
     Notice how IDs are now assigned to your work items.
 
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
 	> ![Published work item IDs show in Excel](media/excel/2019-ids-assigned.png)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-    ![Published work item IDs show in Excel](media/bulk-modify-excel-notice-ids.png)
-	::: moniker-end
 
-9.  To assign values to other fields, choose **Column Options** to add the fields of interest.  
+12.  Also, note how you can open a work item in the web portal to add more information. Before you do, make sure you publish any changes you've made.  
+
+	Choose the work item you want to open and then choose **Open in Web Access**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open a work item in the web portal from Excel](media/excel/2019-open-in-web-access.png)
+
+	A web browser opens with the work item opens. 
+
+	If you make changes to the work item, you should then immediately refresh your worksheet to capture those changes.  
+
+<a id="choose-columns"> </a>  
+
+## Choose column fields 
+
+1. To assign values to other fields, choose **Column Options** to add the fields of interest.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Columns dialog](media/excel/choose-columns-with-ribbon.png)
@@ -163,23 +162,52 @@ To learn more about compatibility requirements, see [Compatibility with Azure De
 	- To change the field sequence, move the field up or down in the list using the up and down arrows. 
 	- You can add a rich-text field, such as the **Description** field, however you may lose some of the formatting upon publish.  
 
-	Once the fields appear in the worksheet, assign values and publish your updates. 
+1. Once the fields appear in the worksheet, assign values and publish your updates. 
 
-12.  Also, note how you can open a work item in the web portal to add more information. Before you do, make sure you publish any changes you've made. 
+1. Save your worksheet. 
+
+<a id="add-work-items"> </a>  
+
+## Add or import a hierarchical list of work items 
+
+You can add work items linked using parent-child links, or other tree topology link type, to create a hierarchy of work items. 
+
+1. Starting from [Step 5](#step-5) from the previous procedure, convert your flat list into a tree list. Choose a cell within the flat list and then choose **Add Tree Level**. 
  
-	Choose the work item you want to open and then choose **Open in Web Access**. 
-
-	::: moniker range=">= tfs-2017"
 	> [!div class="mx-imgBorder"]  
-	> ![Open a work item in the web portal from Excel](media/excel/2019-open-in-web-access.png)
-	::: moniker-end
-	::: moniker range="< tfs-2017"
-	![Open a work item in the web portal from Excel](media/bulk-modify-excel-open-web-access.png)
-	::: moniker-end
+	> ![Empty flat list connected to a project, Add Tree Level](media/excel/convert-flat-to-tree.png)
 
-	A web browser opens with the work item opens. 
+1. Choose the link type to use when adding work items to a hierarchy, and then choose **Convert**. The most usual choice is **Parent-Child**. You can only select from tree topology link types. To learn more, see [Link type topologies and restrictions](../../../reference/xml/link-type-element-reference#topology). 
 
-	If you make changes to the work item, you should then immediately refresh your worksheet to capture those changes.  
+	> [!div class="mx-imgBorder"]  
+	> ![Convert to Tree List dialog](media/excel/convert-tree.png)
+
+	Note the List type has changed to **Tree**, and a second **Title** column appears.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Convert to Tree List dialog](media/excel/converted-tree-list-type.png)
+
+1. To add more levels to the hierarchy, choose **Add Tree Level** again. For example, if you want to add a hierarchy of Epics, Features, and User Stories, you'll want to have **Title 1**, **Title 2**, and **Title 3** columns.
+
+	If you want to add tasks, add another tree level to have four title columns. 
+
+1. Save your Excel file. 
+
+1. Choose the columns you want to display in the order you want them. See [Choose columns](#choose-columns).
+
+1. Enter the **Work Item Type** and **Titles** for the hierarchy you want to import. The **State** fields automatically fill in with default values once you select the work item type. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Define hierarchical list of work items](media/excel/import-safe-hierarchy-list.png)
+
+8.  Publish your worksheet.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add work items to Excel](media/excel/publish.png)
+
+    Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled.
+
+    Notice how IDs are now assigned to your work items.
 
 
 <a id="update-work-items "></a>
@@ -197,7 +225,28 @@ The easiest way to bulk update many work items is to create a query with the wor
 >- To prevent loss of data before you publish or refresh, save your workbook periodically.  
 
 
+1. From the web portal or Visual Studio, create the work item query that contains the work items you want to update. For details, see [Create and save managed queries with the query editor](../../queries/using-queries.md). 
 
+3. Open Excel and connect to your Azure Boards project. Use one of the four methods provided in [Connect Azure DevOps project to Excel](track-work.md#excel).
+
+1.  In Excel, start with a blank worksheet. You can add a worksheet to an existing workbook, as long as you are choosing a query from the same project the workbook is bound to. 
+
+1. Choose **New List** from the Team ribbon. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Choose New List](media/excel/team-ribbon.png)
+
+1.	From the **New List** dialog, choose **Query list**, and select the query you want from the drop-down menu.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Select input list, query list](media/excel/input-query-list.png)
+
+	The icon next to each query indicates the query type. The first two query types, **Flat list of work items** and **Work items and direct links** are imported as flat list queries. Only the **Tree of work items** queries import as a tree list. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Query type icon list](media/excel/query-types.png)
+
+1. With the work items imported to Excel, make the modifications you want and publish your changes. 
 
 
 <a id="select-user"></a>
@@ -231,7 +280,6 @@ You can use the Select User feature to find user accounts and assign values to p
 
 <a id="link-attachments"></a>
 
-
 ## Link work items or add attachments  
 
 - To link a work item to other work items, choose the work item and then choose **Links and Attachments**. From the Links tab, choose **Link to** and then choose the **Link Type** and work item(s) you want to link to. Choose **OK** and then **Publish**. 
@@ -243,7 +291,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 	- To link several work items to the same work item(s), multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
-	For more information on linking work items, see [Link user stories, issues, bugs, and other work items](../backlogs/backlogs/add-link.md). 
+	For more information on linking work items, see [Link user stories, issues, bugs, and other work items](../add-link.md). 
 
 - To add attachments, choose the work item, then **Links and Attachments**, and then the **Attachments** tab.  
 
@@ -309,6 +357,13 @@ To import a hierarchical list, perform the following steps:
 - A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
 - If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
 - When you move a work item, make sure that you select the entire table row. 
+
+
+
+
+<a id="select-user"></a>
+
+## Change from a query list to a work item list 
 
 
 ## Work with different list types 
