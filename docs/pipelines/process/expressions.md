@@ -270,13 +270,13 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 ### length
 * Returns the length of an array, either one that comes from the system or that comes from a parameter
 * Min parameters: 1. Max parameters 1
-* Example: `length('fabrikam')`
+* Example: `length('fabrikam')` returns 8
 
 ### lower
-* Converts a string or variable value to all lowercase. 
-* Min parameters: 1. Max parameters 1.
-* Returns the lowercase equivalent of a string.
-* Example: `lower(FOO)` returns `foo`. 
+* Converts a string or variable value to all lowercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the lowercase equivalent of a string
+* Example: `lower(FOO)` returns `foo`
 
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
@@ -328,10 +328,10 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
 
 ### upper
-* Converts a string or variable value to all uppercase. 
-* Min parameters: 1. Max parameters 1.
-* Returns the uppercase equivalent of a string.
-* Example: `upper(bah)` returns `BAH`. 
+* Converts a string or variable value to all uppercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the uppercase equivalent of a string
+* Example: `upper(bah)` returns `BAH`
 
 
 ### xor
