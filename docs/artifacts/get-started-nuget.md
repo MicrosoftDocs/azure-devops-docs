@@ -1,20 +1,20 @@
 ﻿---
 title: Get started with NuGet packages
-description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server. This article guide you through publish and consuming NuGet packages from different sources.
+description: Quickly start hosting NuGet packages in Azure DevOps Services or Team Foundation Server
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: C5112218-DA7E-4016-986D-2D0F70DAFA44
-ms.date: 05/15/2020
+ms.date: 03/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Get started with NuGet packages
+# Get started with NuGet packages in Azure DevOps Services and TFS
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
 ## Before you start
 
-For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official NuGet documentation](/nuget/install-nuget-client-tools).
+For this quickstart, you must have NuGet installed and set up. To learn more about NuGet installation and set up, see the [official documentation](/nuget/install-nuget-client-tools).
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
@@ -31,7 +31,7 @@ This quickstart assumes you've already set up Azure Artifacts. You can check out
 <a name="create-a-feed"></a>
 ## Create a feed
 
-*Already have a feed? Skip to [Publish a package](#publish-a-package).*
+*Already have a feed? [Skip to the next step](#publish-a-package).*
 
 [!INCLUDE [](includes/create-feed.md)]
 
