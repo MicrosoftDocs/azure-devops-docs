@@ -96,7 +96,13 @@ If you want to completely hide your packages, you must restrict both feeds and v
 
 To restrict access to your feed, simply select a user or group from the permission table in your [Feed Settings](#adding-users/groups-permissions-to-a-feed) and select **Delete**. You can restrict access to a view by changing its visibility to **specific people** as shown below.
 
+> [!div class="mx-imgBorder"]
+>![views permissions](media/view-permissions.png)
+
 After restricting your view's visibility, the permissions column should indicate that your view is only available to `feed users`.
+
+> [!div class="mx-imgBorder"]
+>![views permissions](media/view-settings.png)
 
 <a name="common-identities"></a>
 
