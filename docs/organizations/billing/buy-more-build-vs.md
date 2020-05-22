@@ -8,7 +8,7 @@ ms.assetid: 3f42a1b2-1a32-440a-bf43-61006c59c5bf
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 02/18/2020
+ms.date: 05/22/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -28,7 +28,7 @@ We offer a *free tier* for each. The *free tier* includes:
 
 ## Microsoft-hosted CI/CD
 
-Each organization starts out with the *free tier* of Microsoft-hosted CI/CD. This tier provides the ability to run one parallel build or release job, for up to 30 hours per month. Switch to paid Microsoft-hosted CI/CD if you need more than 30 hours per month, or to run multiple jobs simultaneously.
+Each organization begins with the *free tier* of Microsoft-hosted CI/CD. This tier provides the ability to run one parallel build or release job, for up to 30 hours per month. Switch to paid Microsoft-hosted CI/CD if you need more than 30 hours per month, or to run multiple jobs simultaneously.
 
 When you pay per parallel job, there's no monthly time limit for your builds and releases. The maximum runtime for a single job increases from 60 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (virtual machines, databases, storage, and egress) to deliver this service.
 
@@ -112,3 +112,4 @@ To view your current CI/CD capacity details and consumption, complete the follow
 > [!div class="nextstepaction"]
 > [Try Azure Test Plans for free](try-additional-features-vs.md)
 
+## Related articles
