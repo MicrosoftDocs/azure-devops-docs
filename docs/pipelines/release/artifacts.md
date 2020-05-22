@@ -493,6 +493,40 @@ from your source.
 
 ----
 
+<a name="source-alias"></a>
+<h2 id="source-alias">Artifact source alias</h2>
+
+To ensure the uniqueness of every artifact download, each artifact source
+linked to a release pipeline is automatically provided with a specific
+download location known as the _source alias_. This location
+can be accessed through the variable:
+
+`$(System.DefaultWorkingDirectory)\[source alias]`
+
+This uniqueness also ensures that, if you later rename a linked
+artifact source in its original location (for example,
+rename a build pipeline in Azure Pipelines or a project
+in Jenkins), you don't need to edit the task
+properties because the download location defined in
+the agent does not change.
+
+The source alias is, by default, the name of the source
+selected when you linked the artifact source, prefixed with an underscore; depending on the
+type of the artifact source this will be the name of the
+build pipeline, job, project, or repository. You can edit
+the source alias from the artifacts tab of a release pipeline; for example, when you change
+the name of the build pipeline and you want to use a
+source alias that reflects the name of the build pipeline.
+
+<a name="art-primary"></a>
+
+<h2 id="primary-source">Primary source</h2>
+
+When you link multiple artifact sources to a release pipeline, one of them
+is designated as the primary artifact source. The primary artifact source is used
+to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
+be used in [naming releases](index.md#numbering).
+
 <h2 id="download">Artifact download</h2>
 
 When you deploy a release to a stage, the versioned artifacts from
@@ -534,40 +568,6 @@ in a task to download the artifacts you require.
 ![Selecting the artifacts to download](media/select-artifacts.png)
 
 ::: moniker-end
-
-<a name="source-alias"></a>
-<h2 id="source-alias">Artifact source alias</h2>
-
-To ensure the uniqueness of every artifact download, each artifact source
-linked to a release pipeline is automatically provided with a specific
-download location known as the _source alias_. This location
-can be accessed through the variable:
-
-`$(System.DefaultWorkingDirectory)\[source alias]`
-
-This uniqueness also ensures that, if you later rename a linked
-artifact source in its original location (for example,
-rename a build pipeline in Azure Pipelines or a project
-in Jenkins), you don't need to edit the task
-properties because the download location defined in
-the agent does not change.
-
-The source alias is, by default, the name of the source
-selected when you linked the artifact source, prefixed with an underscore; depending on the
-type of the artifact source this will be the name of the
-build pipeline, job, project, or repository. You can edit
-the source alias from the artifacts tab of a release pipeline; for example, when you change
-the name of the build pipeline and you want to use a
-source alias that reflects the name of the build pipeline.
-
-<a name="art-primary"></a>
-
-<h2 id="primary-source">Primary source</h2>
-
-When you link multiple artifact sources to a release pipeline, one of them
-is designated as the primary artifact source. The primary artifact source is used
-to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
-be used in [naming releases](index.md#numbering).
 
 <a name="art-vars"></a>
 
