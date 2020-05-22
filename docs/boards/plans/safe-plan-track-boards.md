@@ -205,6 +205,17 @@ You open the Kanban board from any backlog by choosing the **View as Board** lin
 > [!div class="mx-imgBorder"]
 > ![Epic board](media/safe-plan-track/view-epics-kanban.png)
 
+Each board supports the following tasks: 
+- Add work items and child work items
+- Update status through drag-and-drop
+- Add and specify the labels of each column
+- Configure the display of cards, add tags, fields, and apply rules 
+- Configure swimlanes and set WIP limits 
+- Assign values or update fields displayed on cards 
+- Filter based on keywords and key fields
+
+<a id="portfolio-team-board" />
+
 ### Portfolio Kanban board  
 
 Child items of Epics are listed within each card. You can expand and collapse the list of child items. 
@@ -212,12 +223,16 @@ Child items of Epics are listed within each card. You can expand and collapse th
 > [!div class="mx-imgBorder"]
 > ![Epics Kanban board](media/safe-plan-track/epics-kanban-board.png)
  
+<a id="program-team-board" />
+
 ### Program team Kanban board 
 
 > [!div class="mx-imgBorder"]
 > ![Fiber Suite Kanban board](media/safe-plan-track/features-kanban-board.png)
 
-### Agile Feature team's Kanban boards 
+<a id="agile-team-board" />
+
+### Agile team Kanban board 
 
 > [!div class="mx-imgBorder"]
 > ![Feature team Kanban board](media/safe-plan-track/user-story-kanban-board.png)

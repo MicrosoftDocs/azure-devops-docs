@@ -20,7 +20,7 @@ ms.date: 05/18/2020
 This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
 >[!div class="checklist"]      
-> * Define Agile feature, program, and portfolio teams  
+> * Define Agile, program, and portfolio teams  
 > * Configure a hierarchy of Area Paths to support your teams  
 > * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
 > * Configure each team to support SAFe® 
@@ -43,6 +43,10 @@ In this article, we'll go from having one project and one team, both named "Fabr
 > [!div class="mx-imgBorder"]  
 > ![Teams, list](media/safe-configure/teams-list.png)
 
+> [!NOTE]   
+> Azure Boards doesn't support a hierarchy of teams. However, by configuring the Area Paths as indicated in this article, you effectively create a type of team hierarchy. The hierarchy is defined through the structure of Area Paths.  
+
+
 We'll then configure the area path to the following hierarchy and configuring each team's area path. This configuration supports each team's backlog view and rollup of views within the hierarchy.  
 
 > [!div class="mx-imgBorder"]  
@@ -55,14 +59,14 @@ We'll then configure the area path to the following hierarchy and configuring ea
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
-In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hiearchical structure. Next, will define the iteration paths to support the release structure we want and the program and feature teams to use. Lastly, we'll configure each team and populate the membership of teams.  
+In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hiearchical structure. Next, will define the iteration paths to support the release structure we want and the program and Agile teams to use. Lastly, we'll configure each team and populate the membership of teams.  
 
 ## Define your teams 
 
 To start, we'll simply add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
 - Portfolio team -> default top-level team, the Fabrikam team (already defined) 
 - Program teams -> secondary-level teams, Fiber Suite and Service Suite  
-- Feature teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
+- Agile teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
 
 You'll need to be a [project administrator](../../organizations/security/add-users-team-project.md) to perform these steps. If you need more-detailed guidance, see [Portfolio management](portfolio-management.md).  
 
@@ -100,7 +104,6 @@ Add each team, one by one.
 To support your team hierarchy, you'll now configure the area paths created in the first step of defining teams into a hierarchy. 
 
 
-
 1. From the **Project Settings** page, choose **Project configuration** and then **Areas**. You should see a flat list of Area Paths. 
 
 	> [!div class="mx-imgBorder"]
@@ -127,7 +130,7 @@ To support your team hierarchy, you'll now configure the area paths created in t
 3. When finished, your area path structure should appear similar to that shown in the following image.  
 
 	> [!IMPORTANT]  
-	> This structure shows that area paths are owned by Agile feature teams, program teams, and the portfolio team. We'll correct this structure later in this article when we configure each team to be the sole owner of its area path.   
+	> This structure shows that area paths are owned by Agile teams, program teams, and the portfolio team. We'll correct this structure later in this article when we configure each team to be the sole owner of its area path.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical area path](media/safe-configure/team-area-path-mapping.png)
@@ -136,6 +139,9 @@ To support your team hierarchy, you'll now configure the area paths created in t
 ## Define Iteration Paths  
 
 To track progress towards Releases, create your iteration path structure. Unlike area paths, multiple teams can share the same iteration path structure. Sharing the iteration structure lets multiple teams work in the same sprint cadence towards the same release trains.  
+
+> [!IMPORTANT]  
+> Deleting, renaming, or moving iteration paths causes a loss of associated historical data.   
 
 If you already have iterations for your default team, you can rename them. You'll want to create an iteration structure that supports your entire team structure, not just one team.  
 
@@ -146,7 +152,7 @@ If you already have iterations for your default team, you can rename them. You'l
 	> [!div class="mx-imgBorder"]
 	> ![Hierarchical area path](media/safe-configure/define-pi1-iteration.png) 
 
-2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your feature teams' cadences.  
+2. Next, create a child iteration for each Sprint within the PI. Set dates for these sprints to correspond your Agile teams' cadences.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Iterations page, create IP Sprint iteration](media/safe-configure/define-sprint1-iteration.png)
@@ -285,7 +291,7 @@ These are the recommended settings to make based on the team level.
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, General, Backlog navigation levels, Epics only](media/safe-configure/backlog-navigation-levels-epics-only.png)
 
-	For program and Agile feature teams, uncheck the **Epics** checkbox. 
+	For program and Agile teams, uncheck the **Epics** checkbox. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, General, Backlog navigation levels, Features and Stories](media/safe-configure/backlog-navigation-levels.png)
@@ -295,14 +301,14 @@ These are the recommended settings to make based on the team level.
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-none.png)
 
-	And, for Agile feature teams, choose the  **Working with bugs** option to track bugs along with requirements.  
+	And, for Agile teams, choose the  **Working with bugs** option to track bugs along with requirements.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, General, Working with bugs, don't track](media/safe-configure/working-with-bugs-requirements.png)
 
 1. Choose the **Iterations** tab to configure the team's iterations. 
 
-	For Agile feature teams, configure the settings as shown. 
+	For Agile teams, configure the settings as shown. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, Iterations, select sprints](media/safe-configure/iterations-feature-teams.png)

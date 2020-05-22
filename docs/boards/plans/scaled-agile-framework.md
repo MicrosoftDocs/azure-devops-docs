@@ -208,7 +208,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Portfolio Kanban
    :::column-end:::
    :::column span="3":::
-      [**Epic Board**](safe-concepts.md#backlogs-boards). The Epics board displays Epics as cards that supports viisualizing and managing the flow of Epics and Features from concept to completion. 
+      [**Portfolio Epics board**](safe-plan-track-boards.md#portfolio-team-board). The Portfolio team's board displays the Epics backlog as cards in an interactive, configurable, and filterable Kanban board.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -232,12 +232,12 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Program Kanban
    :::column-end:::
    :::column span="3":::
-      [**Features Board**](safe-concepts.md#backlogs-boards). The Features board displays Features as cards that supports viisualizing and managing the flow of Features and Stories from concept to completion.
+      [**Program Features board**](safe-plan-track-boards.md#program-team-board). The Program board displays the Features backlog as cards in an interactive, configurable, and filterable Kanban board.  
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      Program Increment (PI) 
+      Program Increment (PI) Iteration Path
    :::column-end:::
    :::column span="3":::
       [**Iteration Path**](safe-concepts.md#iterations). Iteration Paths define a timebox for a project with start and end dates. Iteration Paths can be defined from one week to 12 weeks or longer.
@@ -305,6 +305,14 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
    :::column-end:::
    :::column span="3":::
       [**Stories backlog**](safe-concepts.md#backlogs-boards). The Stories backlog lists the User Stories assigned to the area path associated with the team.   
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      Team Kanban
+   :::column-end:::
+   :::column span="3":::
+      [**Stories board**](safe-plan-track-boards.md#agile-team-board). The Stories board displays the Stories backlog as cards in an interactive, configurable, and filterable Kanban board.  
    :::column-end:::
 :::row-end:::
 :::row:::
