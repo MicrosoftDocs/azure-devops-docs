@@ -27,20 +27,15 @@ In this article you'll learn how to perform the following tasks:
 > * Import or update work items, either a flat list or hierarchy tree list 
 > * Publish and refresh your work items  
 > * Add and remove fields from your worksheet 
-> * Convert a flat-list to a tree-list  
+> * Convert a flat-list to a tree-list, change your list type or query  
 > * Select user accounts for identity or person-named fields 
-> * Link work items, find work items to link to, and change link types
+> * Link work items, find work items to link to, and edit links
 > * Add attachments to one or more work items   
+> * Add work items to your worksheet 
 > * Open a work item from Excel to add additional information (opens in web portal)  
 > * Edit Area and Iteration Paths (opens in web portal)   
-> * Change from a query list to a work item list 
 
-For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
-
-::: moniker range="<= tfs-2018" 
-> [!NOTE]   
-> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
-::: moniker-end  
+For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
 
 ::: moniker range="azure-devops"
 
@@ -48,6 +43,12 @@ For answers to specific questions about the integration of Excel and Azure DevOp
 > If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
 
 ::: moniker-end
+
+::: moniker range="<= tfs-2018" 
+> [!NOTE]   
+> You can also bulk add and modify work items using [Microsoft Project](create-your-backlog-tasks-using-project.md).
+::: moniker-end  
+
 
 ## Prerequisites 
 
@@ -142,9 +143,10 @@ Here is some additional guidance:
 
 ::: moniker range="azure-devops" 
 
-- Use an input list, flat list: To import a list of work items or create new work items, no hierarchy   
-- Use an input list, tree list: To perform top down planning and publish linked work items  
-- Use a query list, tree list: To view and modify the hierarchy of link relationships of many existing work items. 
+- Use an **input list, flat list**: To import a list of work items or create new work items, no hierarchy   
+- Use an **input list, tree list**: To perform top down planning and publish hierarchically linked work items  
+- Use a **query list, tree list**: To view and modify the hierarchy of link relationships of many existing work items. 
+- Use a **query list, flat list**: To bulk update a list of work items or create new work items, no hierarchy   
 
 
 ::: moniker-end  
@@ -185,13 +187,15 @@ We recommend you publish and refresh your worksheet often to make sure your loca
 To learn more about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) .
 
 
-###  Sort feature 
+###  Sort work items  
 
-You can sort work item flat lists using Excel sort feature. However, if you're working from a tree list, you don't want to perform any type of sort. Doing so changes the tree structure and therefore the links between work items.  
+You can sort work item flat lists using the [Excel sort feature](https://support.office.com/article/sort-data-in-a-range-or-table-62d0b95d-2a90-4610-a6ae-2e545c4a4654). 
 
-If you want to use Excel to manage the order of your work items as they appear in a team backlog, you can do that (not recommended, but supported) by using the Stack Rank or Backlog Priority field (Agile or Scrum process). You can set values in these fields and that will reorder the work items based on lowest to highest number.  However, the next time the backlog is reordered, these values are subject to change. 
+However, if you're working from a tree list, you don't want to perform any type of sort. Doing so changes the tree structure and therefore the links between work items.  
 
-If you want to maintain a certain order of work items, consider adding a custom field to manage the sort order, and then use that within Excel to sort your flat list of work items. 
+If you want to use Excel to manage the order of your work items as they appear in a [team backlog](../create-your-backlog.md#reorder-your-backlog), you can do that by using the [Stack Rank](../../queries/planning-ranking-priorities.md#fields-table) or [Backlog Priority](../../queries/planning-ranking-priorities.md#fields-table) field (Agile or Scrum process). You can set values in these fields, publish your worksheet, and refresh your backlog. Your backlog items should appear reordered based on lowest to highest number. However, the next time the backlog is reordered from the backlog, the values you entered are subject to change. 
+
+If you want to maintain a certain order of work items, consider adding a custom field to manage the sort order, and then use that within Excel to sort your flat list of work items. This option, however, won't change the order that appears in your backlog. 
  
 
 <a id="add-work-items"> </a>  
@@ -379,6 +383,60 @@ The easiest way to bulk update many work items is to create a query with the wor
 
     If you're working with a tree list, see also the information provided in [Import a hierarchical list of work items](#add-work-items-tree).
 
+
+## Enable Tree commands
+
+If the **Tree group** commands are not available, your worksheet is configured as a flat list, query list. You must first convert the list to either an input list or a list based on a tree query in order to enable the Tree group commands. To learn how, see the next section on [Change from a query to an input list](#reconfigure-list).
+
+<a id="reconfigure-list"></a>
+
+## Change your list type or query
+
+You can change the work items listed in your worksheet. Specifically, you can: 
+- Change your flat list to a tree list
+- Change from a query list to an input list
+- Change from an input list to a query list 
+- Change the query your worksheet references
+
+If you want to change your flat list to a tree list, you can. However, if you're list is a query list, then you first need to reconfigure the list. You'll know that it is a flat list, query list as the **Tree group** commands are disabled. 
+
+> [!div class="mx-imgBorder"]  
+> ![Team ribbon, disabled Tree group commands](media/excel/disabled-tree-group.png)
+
+To convert your query list to an input list, follow these steps. 
+
+1. First, publish whatever changes you have made. 
+
+1. Next, on the **Team** ribbon, choose **Configure**, **List**.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Team ribbon, Configure, List menu option](media/excel/team-ribbon-configure-list.png)
+
+1. Choose **Refresh work items only** and then **Apply**. 
+
+    This choice changes the query list to an input list.  
+
+	> [!div class="mx-imgBorder"]  
+	> ![Configure List properties dialog, Input](media/excel/configure-list-properties-dialog-refresh-current.png)
+
+1. To convert from an input list to a query list, choose **Refresh from query**, select the query, and then **Apply**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Configure List properties dialog, Query](media/excel/configure-list-properties-dialog-refresh-query.png)
+
+
+## Add existing work items to your worksheet 
+
+If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. 
+
+> [!div class="mx-imgBorder"]  
+> ![Get work items dialog](media/excel/get-work-items.png)
+
+This dialog works in the same way as the Choose Link Work Items dialog. See [Find work items to link to](#find-items) described earlier in this article. 
+
+If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
+
+
 <a id="choose-columns"> </a>  
 
 ## Add or remove column fields 
@@ -501,65 +559,24 @@ You can modify the link type of an existing link. Choose the link and
 
 - To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
-## Enable Tree commands
-
-If the **Tree group** commands are not available, your worksheet is configured as a flat list, query list. You must first convert the list to either an input list or a list based on a tree query in order to enable the Tree group commands. To learn how, see the next section on [Change from a query to an input list](#reconfigure-list).
-
-<a id="reconfigure-list"></a>
-
-## Change from a query list to an input list
-
-If you want to change your flat list to a tree list, you can. However, if you're list is a query list, then you first need to reconfigure the list. You'll know that it is a flat list, query list as the **Tree group** commands are disabled. 
-
-> [!div class="mx-imgBorder"]  
-> ![Team ribbon, disabled Tree group commands](media/excel/disabled-tree-group.png)
-
-To convert your query list to an input list, follow these steps. 
-
-1. First, publish whatever changes you have made. 
-
-1. Next, on the **Team** ribbon, choose **Configure**, **List**.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Team ribbon, Configure, List menu option](media/excel/team-ribbon-configure-list.png)
-
-1. Choose **Refresh work items only** and then **Apply**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Configure List properties dialog](media/excel/configure-list-properties-dialog-refresh-current.png)
-
-    This choice changes the query list to an input list.  
-
-	> [!div class="mx-imgBorder"]  
-	> ![Configure List properties dialog](media/excel/configure-list-properties-dialog-refresh-current.png)
-
-	If you need to change from an input list to a query list, then choose the **Refresh from query** option and choose the query you want. 
-
-
-## Add existing work items to your worksheet 
-
-If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. 
-
-> [!div class="mx-imgBorder"]  
-> ![Get work items dialog](media/excel/get-work-items.png)
-
-This dialog works in the same way as the Choose Link Work Items dialog. See [Find work items to link to](#find-items) described earlier in this article. 
-
-If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
 
 
 ## Create a report 
 
-To create an Excel report based on your flat list of work items, choose **New Report**.   
+You can create a report from the web portal for flat-list queries. See [Track progress by creating status and trend query-based charts](../../../report/dashboards/charts.md). 
+
+> [!IMPORTANT]
+> You can only create an Excel report using **New Report** based from an on-premises Azure DevOps Server. Reports can created only from a flat-list query and when your project's project collection is configured to support SQL Server Analytics Server. 
+> 
+The **New Report** feature in Excel, can be used to create an Excel report based on a flat list of work items. 
 
 > [!div class="mx-imgBorder"]  
 > ![Get work items dialog](media/excel/team-ribbon-new-report.png)
 
-> [!IMPORTANT]
-> You can only create an Excel report based from an on-premises Azure DevOps Server. Reports can created only from a flat-list query and when your project's project collection is configured to support SQL Server Analytics Server. To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
+To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
 
 
-## Troubleshoot 
+## Resolve publishing errors  
 
 To resolve publishing errors that arise when working in Excel, see one of the following topics:   
 
