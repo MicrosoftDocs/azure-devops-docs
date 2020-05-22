@@ -91,6 +91,10 @@ SAFe® backlogs map to team, program, and portfolio backlogs. Out of the box, th
 
 You can customize your backlog and boards, even adding portfolio backlogs, as described in [Customize Azure Boards, Customize backlogs](safe-customize.md#custom-backlog).  
 
+The Kanban board view of each backlog is configurable by each team. 
+
+
+
 
 
 <a id="iterations" />
@@ -179,7 +183,7 @@ With custom fields and tags, you can quickly filter backlogs, boards, and querie
 
 Resources that are shared across teams can be represented through their own Agile feature team, such as a UX Design team or a Security Compliance team. They can manage their backlog while having their work also appear in the backlogs of the teams they support. 
 
-Here we show how area paths are assigned to the UX Design team, and then selective sub-area paths to other Agile feature teams. Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
+Here we show how area paths are assigned to the UX Design team, and then selective sub-area paths to other Agile teams. Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
 
 > [!div class="mx-imgBorder"]
 > ![Budget estimate rollup](media/safe/shared-services-team-structure.png)
