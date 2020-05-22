@@ -106,7 +106,9 @@ on the linking of artifacts to a release pipeline are:
   downloaded using Git library functionality. For more details, see
   [Artifact download](#download).
 
-<h2 id="sources">Artifact sources</h2>
+<a id="sources"></a>
+
+## Artifact sources
 
 There are several types of tools you might use in your
 application lifecycle process to produce or store
@@ -153,8 +155,6 @@ sources.
 * [TeamCity](#teamcity)
 * [Other sources](#others)
 
-----
-
 <a name="teambuild"></a>
 
 ## Artifact sources - Azure Pipelines
@@ -187,11 +187,7 @@ The following features are available when using Azure Pipelines sources:
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
-----
-
-<a name="tfvc"></a>
-
-<a id="tfvcsource"></a>
+<a name="tfvc" id="tfvcsource"></a>
 
 ## Artifact sources - TFVC, Git, and GitHub
 
@@ -249,11 +245,7 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Work items and commits | Azure Pipelines cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
-----
-
-<a name="jenkins"></a>
-
-<a id="jenkinssource"></a>
+<a name="jenkins" id="jenkinssource"></a>
 
 ## Artifact sources - Jenkins
 
@@ -298,11 +290,7 @@ this into the link dialog field.
 For more information about Jenkins integration capabilities, see
 [Azure Pipelines Integration with Jenkins Jobs, Pipelines, and Artifacts](https://devblogs.microsoft.com/devops/tfs-integration-jenkins-jobs-pipelines-artifacts/).
 
-----
-
-<a name="container"></a>
-
-<a id="dockersource"></a>
+<a name="container" id="dockersource"></a>
 
 ## Artifact sources - Azure Container Registry, Docker, Kubernetes
 
@@ -324,11 +312,7 @@ The following features are available when using Azure Container Registry, Docker
 
 <p />
 
-----
-
-<a name="artifacts"></a>
-
-<a id="artifactsource"></a>
+<a name="artifacts" id="artifactsource"></a>
 
 ## Artifact sources - Azure Artifacts
 
@@ -352,7 +336,10 @@ The following features are available when using Azure Artifacts sources:
 |   Artifact download    | By default, packages are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 
 <p />
-<h4 id="mavensnapshots">Handling Maven Snapshots</h4>
+
+<a id="mavensnapshots"></a>
+
+### Handling Maven Snapshots
 
 When obtaining Maven artifacts and the artifact is a snapshot build, multiple versions of that snapshot may be downloaded at once (e.g. `myApplication-2.1.0.BUILD-20190920.220048-3.jar`, `myApplication-2.1.0.BUILD-20190820.221046-2.jar`, `myApplication-2.1.0.BUILD-20190820.220331-1.jar`). You will likely need to add additional automation to keep only the latest artifact prior to subsequent deployment steps. This can be accomplished with the following PowerShell snippet:
 
@@ -360,13 +347,10 @@ When obtaining Maven artifacts and the artifact is a snapshot build, multiple ve
 # Remove all copies of the artifact except the one with the lexicographically highest value.
 Get-Item "myApplication*.jar" | Sort-Object -Descending Name | Select-Object -SkipIndex 0 | Remove-Item
 ```
-----
 
 For more information, see the [Azure Artifacts](../../artifacts/overview.md) overview.
 
-<a name="externaltfs"></a>
-
-<a id="onpremtfssource"></a>
+<a name="externaltfs" id="onpremtfssource"></a>
 
 ## Artifact sources - External or on-premises TFS
 
@@ -421,11 +405,7 @@ The following features are available when using external TFS sources:
 > desired build into the appropriate field, or select
 > the **Latest** build.
 
-----
-
-<a name="teamcity"></a>
-
-<a id="teamcitysource"></a>
+<a name="teamcity" id="teamcitysource"></a>
 
 ## Artifact sources - TeamCity
 
@@ -465,8 +445,6 @@ The following features are available when using TeamCity sources:
 > projects when linking to a build, but you can type
 > this into the link dialog field.
 
-----
-
 <a name="Custom artifacts"></a>
 
 ## Artifact sources - Custom artifacts
@@ -474,8 +452,6 @@ The following features are available when using TeamCity sources:
 In addition to built-in artifact sources, Azure DevOps Pipelines supports integrating any custom artifact source with the artifact extensibility model. You can plug in any custom artifact source, and Azure DevOps will provide a first-class user experience and seamless integration.
 
 For more details, see [Azure DevOps artifact extensibility model](https://aka.ms/artifactextensibility).
-
-----
 
 <a name="others"></a>
 
@@ -491,10 +467,9 @@ a release pipeline, and add custom tasks to your
 stages that download the artifacts directly
 from your source.
 
-----
+<a name="source-alias" id="source-alias"></a>
 
-<a name="source-alias"></a>
-<h2 id="source-alias">Artifact source alias</h2>
+## Artifact source alias
 
 To ensure the uniqueness of every artifact download, each artifact source
 linked to a release pipeline is automatically provided with a specific
@@ -518,16 +493,18 @@ the source alias from the artifacts tab of a release pipeline; for example, when
 the name of the build pipeline and you want to use a
 source alias that reflects the name of the build pipeline.
 
-<a name="art-primary"></a>
+<a name="art-primary" id="primary-source"></a>
 
-<h2 id="primary-source">Primary source</h2>
+## Primary source
 
 When you link multiple artifact sources to a release pipeline, one of them
 is designated as the primary artifact source. The primary artifact source is used
 to set a number of pre-defined [variables](variables.md#artifact-variables). It can also
 be used in [naming releases](index.md#numbering).
 
-<h2 id="download">Artifact download</h2>
+<a id="download"></a>
+
+## Artifact download
 
 When you deploy a release to a stage, the versioned artifacts from
 each of the sources are, by default, downloaded to the automation agent
@@ -579,12 +556,12 @@ executing PowerShell scripts in deployment jobs. When there are multiple
 artifact sources linked to a release pipeline, you can access
 information about each of these. For a list of all pre-defined artifact variables, see [variables](variables.md#artifact-variables).
 
-## Contributed links and additional information
+## Additional information
 
 * [Code repo sources in Azure Pipelines](https://www.youtube.com/watch?v=-JDlE_MHl1s)
-* [TeamCity extension for Azure Pipelines](https://www.youtube.com/watch?v=zDZRvc_6UiU)
 * [Jenkins artifacts in Azure Pipelines](https://www.youtube.com/watch?v=ZC4hWYqdP_o)
-* [External TFS artifacts for Azure Pipelines](https://www.youtube.com/watch?v=cR8NzcEmstw)
+* [TeamCity extension for Continuous Integration](https://www.youtube.com/watch?v=zDZRvc_6UiU)
+* [External TFS extension for Release Management](https://www.youtube.com/watch?v=cR8NzcEmstw)
 
 ## Related topics
 
