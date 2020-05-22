@@ -16,23 +16,20 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
-[!INCLUDE [version-selector](../../includes/version-selector.md)]
-
 ::: moniker range="tfs-2013"
 
 > [!IMPORTANT]
-> Creating a project from the web portal isn't supported for TFS 2015 and earlier versions. Use [Team Explorer](#te) to create a project.  
+> Creating a project from the web portal isn't supported for Team Foundation Server (TFS 2015) and earlier versions. Use [Team Explorer](#te) to create a project.  
 
 ::: moniker-end
 
 This article describes how to use Azure DevOps to create a project and establish a repository for source code. You can manage and structure each project to support your business needs. Each project you create provides boundaries to isolate data from other projects. To learn more about projects and when to create one, see [About projects and scaling your organization](about-projects.md).
 
-> [!NOTE]
-> This article is about creating a project in Azure DevOps or a Team Foundation Server. If instead you want to create Azure DevOps Projects, see [Azure DevOps Projects](/azure/devops-project/).
+[!INCLUDE [version-selector](../../includes/version-selector.md)]
+
+If you don't want to create a project in Azure DevOps or TFS, you can create [Azure DevOps Projects](/azure/devops-project/).
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
-
-If you have a project already, see [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md).
 
 ::: moniker range="<= azure-devops-2019"
 > [!NOTE]
@@ -78,8 +75,6 @@ If you have a project already, see [Get Started with Azure Repos and Visual Stud
 ::: moniker-end
 
 ## Create a project
-
-Complete the following steps to create a project.
 
 ::: moniker range="azure-devops"
 
@@ -564,6 +559,7 @@ From the admin context of the web portal, you can add additional repositories to
 
 ## Related articles
 
+- [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
 - [Team Foundation version control](../../repos/tfvc/index.md)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
