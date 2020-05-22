@@ -177,6 +177,11 @@ Later, if you edit the YAML file, and set the value of `major` back to 1, then t
 
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
 
+> [!NOTE]
+> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
+>  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+
+
 ```yaml
 jobs:
 - job:
@@ -218,7 +223,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
 * Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
-* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`. In this case `pipeline.startTime` is a special date time object variable.
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
@@ -331,7 +336,8 @@ You can use the following status check functions as expressions in conditions, b
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
 ### succeededOrFailed
