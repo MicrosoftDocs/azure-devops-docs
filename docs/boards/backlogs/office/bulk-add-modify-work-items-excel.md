@@ -9,7 +9,7 @@ author: KathrynEE
 ms.custom: contentperfq4
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 12/03/2019  
+ms.date: 05/21/2020
 ---
 
 
@@ -22,18 +22,20 @@ When you have many work items to add or modify, using Microsoft Excel can save y
 In this article you'll learn how to perform the following tasks:  
 
 > [!div class="checklist"]    
+> * Choose the type of list or query to support your task 
+> * Use select Excel features when connected to Azure Boards 
 > * Import or update work items, either a flat list or hierarchy tree list 
 > * Publish and refresh your work items  
 > * Add and remove fields from your worksheet 
 > * Convert a flat-list to a tree-list  
 > * Select user accounts  
-> * Link work items and add attachments to one or more work items   
-> * Open a work item from Excel (opens in web portal)  
+> * Link work items and find work items to link to
+> * Add attachments to one or more work items   
+> * Open a work item from Excel to add additional information (opens in web portal)  
 > * Edit Area and Iteration Paths (opens in web portal)   
-> * Use Excel features  
-> * Configure list properties, change from a query list to a work item list 
+> * Change from a query list to a work item list 
 
-For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).
+For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
 
 ::: moniker range="<= tfs-2018" 
 > [!NOTE]   
@@ -186,6 +188,11 @@ To learn more about Excel, see [Basic Excel tasks](https://support.office.com/ar
 ###  Sort feature 
 
 You can sort work item flat lists using Excel sort feature. However, if you're working from a tree list, you don't want to perform any type of sort. Doing so changes the tree structure and therefore the links between work items.  
+
+If you want to use Excel to manage the order of your work items as they appear in a team backlog, you can do that (not recommended, but supported) by using the Stack Rank or Backlog Priority field (Agile or Scrum process). You can set values in these fields and that will reorder the work items based on lowest to highest number.  However, the next time the backlog is reordered, these values are subject to change. 
+
+If you want to maintain a certain order of work items, consider adding a custom field to manage the sort order, and then use that within Excel to sort your flat list of work items. 
+ 
 
 <a id="add-work-items"> </a>  
 
@@ -372,11 +379,13 @@ The easiest way to bulk update many work items is to create a query with the wor
 
     If you're working with a tree list, see also the information provided in [Import a hierarchical list of work items](#add-work-items-tree).
 
-
-
 <a id="choose-columns"> </a>  
 
 ## Add or remove column fields 
+
+If you start your worksheet with a **New List**, you'll see only a set of default field columns. You can add columns using the **Choose Columns** on the Team ribbon.
+
+If you start your worksheet from an existing query, you'll see all the column fields defined for the query. From there, you can add columns using the **Choose Columns**. However, your additions don't modify the underlying query. 
 
 1. To assign values to other fields, choose **Column Options** to add the fields of interest.  
 
@@ -423,7 +432,20 @@ You can use the Select User feature to find user accounts and assign values to p
 
 <a id="link-attachments"></a>
 
-## Link work items 
+## Link work items  
+
+You can perform a number of actions from the Links tab of the Links and Attachments dialog. Specifically, you can: 
+- Review the existing links defined for the selected work item 
+- Add links to one or more work items or select objects 
+- Delete links 
+- Open a linked work item 
+- Edit the link type of an existing link 
+- Add columns to the Link list and sort on that list 
+
+For more information on linking work items, see [Link user stories, issues, bugs, and other work items](../add-link.md). 
+
+
+### View and add links 
 
 1. To link a work item to other work items, choose the work item and then choose **Links and Attachments**. From the Links tab, choose **Link to** and then choose the **Link Type** and work item(s) you want to link to. Choose **OK** and then **Publish**. 
 
@@ -434,13 +456,11 @@ You can use the Select User feature to find user accounts and assign values to p
 
 1. To link several work items to the same work item(s), multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
-For more information on linking work items, see [Link user stories, issues, bugs, and other work items](../add-link.md). 
-
 <a id="find-items"> </a>  
 
 ### Find work items to link to   
 
-From the Add link dialog you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../queries/using-queries.md) that you want to use. 
+From the Add link dialog you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../../queries/using-queries.md) that you want to use. 
 
 1.  From the Add link dialog, choose the **Browse** button (Visual Studio) to open the following dialog. 
 
@@ -462,7 +482,11 @@ From the Add link dialog you can open a secondary dialog to help you choose one 
 1.  In the list of returned work items, select one or more work items.   
 
     - Select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
-    - Choose **Select All** to select all work items in the list. 
+    - Choose **Select All** to select all work items in the list.  
+
+### Change the link type 
+
+You can modify the link type of an existing link. Choose the link and
 
 ## Add attachments
 
@@ -532,12 +556,24 @@ To create an Excel report based on your flat list of work items, choose **New Re
 > ![Get work items dialog](media/excel/team-ribbon-new-report.png)
 
 > [!IMPORTANT]
-> You can only create an Excel report based on a flat-list query and when your project's project collection is configured to support SQL Server Analytics Server. To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
+> You can only create an Excel report based from an on-premises Azure DevOps Server. Reports can created only from a flat-list query and when your project's project collection is configured to support SQL Server Analytics Server. To learn more, see [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md). 
 
 
 ## Troubleshoot 
 
-- If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see [Addressing Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104). 
+To resolve publishing errors that arise when working in Excel, see one of the following topics:   
+
+- [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
+    A data conflict occurs when a field value has been changed in Azure Boards since the last time you published from Excel.  
+
+- [Resolve data validation errors](resolve-excel-data-validation-errors.md):
+    A data validation error occurs if a value is entered for a field that violates the rules for that field and work item type.
+  
+- [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
+    An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
+
+- [Addres Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
+    If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see 
 
 ## Related articles
 
@@ -546,7 +582,6 @@ To create an Excel report based on your flat list of work items, choose **New Re
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.md) 
-- [Resolve publishing errors](faqs.md#resolve-publishing-errors) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
@@ -557,7 +592,6 @@ To create an Excel report based on your flat list of work items, choose **New Re
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.md) 
-- [Resolve publishing errors](faqs.md#resolve-publishing-errors) 
 - [Create Excel reports from a work item query](../../../report/create-status-and-trend-excel-reports.md)
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 

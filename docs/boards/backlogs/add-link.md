@@ -280,7 +280,7 @@ Additional features you can use to quickly link or change links that use the par
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
-- [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Use Excel to edit tree-topology links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 

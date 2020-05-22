@@ -56,11 +56,11 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 
 ### Q: How do I connect an existing Excel workbook to Azure DevOps?  
 
-**A:** See [Azure Boards and Office integration, Connect from Excel or Project](track-work.md#excel-project). 
+**A:** See [Connect Azure Boards to an Office client](track-work.md#excel-project). 
 
 ### Q: How do I share an Excel workbook with others? 
 
-If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Azure Boards and Office integration, Disconnect a document file from the network](track-work.md#WorkingOffline).
+If you want to share an Excel workbook that has work items listed within it, you may want to disconnect the connection to Azure DevOps to prevent accidental publishing of changes by others. You can disconnect the workbook, share it or work offline, and later reconnect the workbook. For details, see [Connect Azure Boards to an Office client, Disconnect a document file from the network](track-work.md#WorkingOffline).
 
 
 ### Q: How do I connect when special protocols are in use on my network?  
@@ -71,17 +71,17 @@ If you want to share an Excel workbook that has work items listed within it, you
 
 ### Q: How do I disable the Team menu? 
 
-**A:** If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/en-sg/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460). 
+**A:** If you want to disable the add-in, see [Add or remove an add-in](https://support.office.com/article/Add-or-remove-add-ins-0af570c4-5cf3-4fa9-9b88-403625a0b460). 
 
 ## Work with linked work items
 
 ### Q: How do I publish to a tree? 
 
-**A:** Follow the instructions provided in [Bulk add or modify work items with Excel, Add linked backlog items and tasks](bulk-add-modify-work-items-excel.md#tree-list) 
+**A:** Follow the instructions provided in [Bulk add or modify work items with Excel, Import work items, tree list](bulk-add-modify-work-items-excel.md#tree-list) 
 
-### Q: Can I bulk-edit link types other than parent-child links? 
+### Q: Can I bulk-edit link types other than tree-topology link types? 
 
-**A:** No. Excel only supports adding and modifying parent-child or hierarchical links.   
+**A:** No. Excel only supports adding and modifying hierarchical links.   
 
 To bulk edit links of other types, you can use the following clients: 
 
@@ -142,7 +142,7 @@ If you start your worksheet from an existing query, you'll see all the column fi
 
 ::: moniker range=">= azure-devops-2019" 
 
-**A:** To resolve publishing errors that arise when working in Excel or Project, see one of the following topics:     
+**A:** To resolve publishing errors that arise when working in Excel, see one of the following topics:     
 
 ::: moniker-end  
 
@@ -167,6 +167,7 @@ If you start your worksheet from an existing query, you'll see all the column fi
 ### Can I delete work items from Excel?
 
 ::: moniker range="azure-devops" 
+
 **A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal or the `az boards work-item delete` command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
 
 ::: moniker-end  
