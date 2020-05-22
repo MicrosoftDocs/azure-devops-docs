@@ -86,7 +86,7 @@ The following table indicates the Office clients that are supported for each Azu
 :::row-end:::
 :::row:::
    :::column span="2":::
-      TFS 2018 
+      TFS 2018  
       TFS 2017  
       Visual Studio 2017  
    :::column-end:::
@@ -105,6 +105,7 @@ The following table indicates the Office clients that are supported for each Azu
       TFS 2015  
       TFS 2013  
       Visual Studio 2015  
+      Visual Studio 2013  
    :::column-end:::
    :::column span="":::
       ![checkmark](../../media/icons/checkmark.png)  
@@ -385,7 +386,7 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 
 	> [!IMPORTANT]  
 	> To work from Visual Studio 2019/Team Explorer, you need to select the  **Tools>Options>Work Items>General** Legacy experience. For more information, see [Set the Work Items experience in Visual Studio 2019](../../work-items/set-work-item-experience-vs.md).  
-
+	>  
 	> [!div class="mx-imgBorder"]  
 	> ![Options dialog, Work Items, General](media/connect/work-items-legacy-experience.png)
 
@@ -463,9 +464,9 @@ To disconnect an Excel or Project document file from the network:
   
 1.  Open the document that you want to change while you are offline.  
   
-2.  Refresh the work item list to retrieve the latest information from the work item database.    
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.    
-    -   If you are using Project, on the **Team** menu, choose **Refresh**.  
+2.  Refresh the work item list to retrieve the latest information from the work item database.  
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.  
+    - If you are using Project, on the **Team** menu, choose **Refresh**.  
  
 3.  If you are using Excel, add to the work item list the columns for all fields that you want to modify.  
   
@@ -486,15 +487,15 @@ To disconnect an Excel or Project document file from the network:
   
 To reconnect an Excel or Project document file:  
   
-1.  Reconnect your computer to the network, or copy the file to a computer that is connected to Azure Boards and TFS.  
+1.  Reconnect your computer to the network, or copy the file to a computer that is connected to Azure Boards.  
   
-2.  If you changed the document while you were offline, follow one of these steps:    
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.    
-    -   If you are using Project, on the **Team** menu, choose **Publish Changes**.  
+2.  If you changed the document while you were offline, follow one of these steps:  
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Publish**.  
+    - If you are using Project, on the **Team** menu, choose **Publish Changes**.  
   
-3.  If you didn't change the document while you were offline, follow one of these steps:    
-    -   If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.    
-    -   If you are using Project, on the **Team** menu, choose **Refresh**.  
+3.  If you didn't change the document while you were offline, follow one of these steps:  
+    - If you are using Excel, on the **Team** ribbon, in the **Work Items** group, choose **Refresh**.    
+    - If you are using Project, on the **Team** menu, choose **Refresh**.  
   
 4.  Resolve any data validation errors or conflicts that occur.  
 
@@ -516,7 +517,7 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 3.  If you are using Excel, add to the work item list the columns for all fields that you want to modify.
 
-    You cannot add columns when the work item list is not connected to TFS.
+    You cannot add columns when the work item list is not connected to Azure Boards.
 
 4.  Save your Excel or Project file. You can now modify the information even if you are offline, disconnected from the project or network. 
 
