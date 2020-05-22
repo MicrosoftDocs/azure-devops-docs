@@ -473,7 +473,7 @@ To disconnect an Excel or Project document file from the network:
   
 4.  Disconnect your computer from the network, or save the work item list file and copy it to another computer.  
   
-     An error message might appear that tells you that the Office program could not establish a connection with TFS.  
+     An error message might appear that tells you that the Office program could not establish a connection with an Azure DevOps server.  
   
 5.  Modify or update the work item list as needed.  
   
@@ -497,8 +497,6 @@ To reconnect an Excel or Project document file:
     -   If you are using Project, on the **Team** menu, choose **Refresh**.  
   
 4.  Resolve any data validation errors or conflicts that occur.  
-
-
 
 ### Work offline
 
@@ -547,10 +545,14 @@ An advantage to using Excel or Project is that you can work offline to add or mo
 
 <a id="marketplace" />
 
-
 ## Marketplace extensions 
 
-TO BE COMPLETED
+The following Marketplace extensions support integration between Azure DevOps and Office products. 
+
+- [Azure DevOps Open in Excel](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel): Opens a selected query in Excel. 
+- [Office 365 Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-o365): Pushes notification of configurable Azure DevOps events to an Office 365 Group. 
+
+For additional extensions that integrate with Microsoft Project, see [Azure Boards migration and integration, Project and portfolio management](../../extensions/migrate-integrate.md#project-and-portfolio-management). 
 
 
 ## Related articles
