@@ -26,12 +26,12 @@ In this article you'll learn how to perform the following tasks:
 > * Use select Excel features when connected to Azure Boards 
 > * Import or update work items, either a flat list or hierarchy tree list 
 > * Publish and refresh your work items  
-> * Add and remove fields from your worksheet 
 > * Convert a flat-list to a tree-list, change your list type or query  
-> * Select user accounts for identity or person-named fields 
-> * Link work items, find work items to link to, and edit links
-> * Add attachments to one or more work items   
 > * Add work items to your worksheet 
+> * Add and remove work item fields from your worksheet 
+> * Select user accounts for identity or person-named fields 
+> * Link work items, find work items to link to, edit links, and more
+> * Add attachments to one or more work items   
 > * Open a work item from Excel to add additional information (opens in web portal)  
 > * Edit Area and Iteration Paths (opens in web portal)   
 
@@ -148,7 +148,6 @@ Here is some additional guidance:
 - Use a **query list, tree list**: To view and modify the hierarchy of link relationships of many existing work items. 
 - Use a **query list, flat list**: To bulk update a list of work items or create new work items, no hierarchy   
 
-
 ::: moniker-end  
 
 ::: moniker range="< azure-devops" 
@@ -163,7 +162,6 @@ Here is some additional guidance:
  
 ::: moniker-end  
 
-
 ## Use Excel features 
 
 You can use most Excel features when working with a list of work items. For example, you can use the following features: 
@@ -174,6 +172,9 @@ You can use most Excel features when working with a list of work items. For exam
 - Sum a column or add other formulas  
 - Fill down cells 
 - Filter 
+- Add multiple worksheets to your workbook 
+
+Each worksheet in Excel can contain a different input list or query. However, all worksheets within the workbook must connect to the same project within an organization or project collection.
 
 The following features work slightly differently when working with a worksheet connected to Azure Boards.  
 
@@ -186,7 +187,6 @@ We recommend you publish and refresh your worksheet often to make sure your loca
 
 To learn more about Excel, see [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) .
 
-
 ###  Sort work items  
 
 You can sort work item flat lists using the [Excel sort feature](https://support.office.com/article/sort-data-in-a-range-or-table-62d0b95d-2a90-4610-a6ae-2e545c4a4654). 
@@ -196,7 +196,36 @@ However, if you're working from a tree list, you don't want to perform any type 
 If you want to use Excel to manage the order of your work items as they appear in a [team backlog](../create-your-backlog.md#reorder-your-backlog), you can do that by using the [Stack Rank](../../queries/planning-ranking-priorities.md#fields-table) or [Backlog Priority](../../queries/planning-ranking-priorities.md#fields-table) field (Agile or Scrum process). You can set values in these fields, publish your worksheet, and refresh your backlog. Your backlog items should appear reordered based on lowest to highest number. However, the next time the backlog is reordered from the backlog, the values you entered are subject to change. 
 
 If you want to maintain a certain order of work items, consider adding a custom field to manage the sort order, and then use that within Excel to sort your flat list of work items. This option, however, won't change the order that appears in your backlog. 
- 
+
+
+### Tasks you can and can't perform from Excel
+
+You can perform the following tasks: 
+
+- Add tags and bulk update work items with tags as described in [Add work item tags to categorize and filter lists and boards](../../queries/add-tags-to-work-items.md).
+	Add the **Tags** field to your worksheet. Add multiple tags separated by a semicolon (;). 
+- You can add simple text to a rich-text field, but if you're bulk updating several work items, you may lose formatting in existing work items. 
+
+You can't perform the following tasks from an Excel worksheet: 
+
+::: moniker range="azure-devops" 
+
+- You can't delete work items 
+- You can't import or update test case steps or other test artifacts 
+- You can't add work items in any other State than the new State 
+- You can't add to a work item discussion thread 
+- You can't link to a remote work item
+
+::: moniker-end  
+
+::: moniker range="< azure-devops" 
+
+- You can't delete work items 
+- You can't import or update test case steps or other test artifacts 
+- You can't add work items in any other State than the new State 
+- You can't add to a work item discussion thread 
+
+::: moniker-end  
 
 <a id="add-work-items"> </a>  
 
@@ -294,7 +323,7 @@ You can add work items linked using parent-child links, or other tree topology l
 8.  Publish your worksheet.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Team Ribbon, Publish link](media/excel/publish-tree-list.png
+	> ![Team Ribbon, Publish link](media/excel/publish-tree-list.png)
 
     Make sure your cursor is in a cell that contains data. Otherwise, the **Publish** button might appear disabled. 
 
@@ -307,14 +336,14 @@ You can add work items linked using parent-child links, or other tree topology l
 	> [!div class="mx-imgBorder"]  
 	> ![Link and Attachments, Link tab dialog](media/excel/view-hierarchical-links.png)
 
-1. To enter a row under a work item where you want to add a child, choose the row and then choose **Add Child**
+1. To enter a row under a work item where you want to add a child, choose the row and then choose **Add Child**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team ribbon, Tree group, Add child link](media/excel/tree-group-add-child.png) 
 
 1. To assign values to other fields, open [**Choose Columns**](#choose-columns), add the fields, make the assignments, and publish your changes. 
 
-1. To change the hierarchy, cut and paste the row of a work item to place it under the new parent. - Make sure that you select the entire table row. When you publish the change, the old hierarchical links are deleted and the new hierarchical link are created. 
+1. To change the hierarchy, cut and paste the row of a work item to place it under the new parent.  Make sure that you select the entire table row. When you publish the change, the old hierarchical links are deleted and the new hierarchical link are created. 
 
     You can use the ![indent item in tree](media/bulk-modify-excel-indent-inline.png) or ![Outdent item in tree](media/bulk-modify-excel-outdent-inline.png) indent/outdent icons to demote or promote a work item within the tree hierarchy. Verify that the column to the left or right of the parent work item's title is a **Title** column. The header at the top of the column should read **Title n**, if it does not, add a tree level.
 
@@ -339,8 +368,6 @@ You can add work items linked using parent-child links, or other tree topology l
 	- The list was sorted. Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, you can recover from this operation by immediately refreshing.
 - To resolve an error, see [Resolve invalid links](resolve-excel-invalid-links-tree-list.md).
 - A parent-child linked work item can only have one parent. You can't add the same work item task to two backlog items. Instead, you need to define distinct work item tasks.
-
-
 
 <a id="update-work-items "></a>
 
@@ -557,7 +584,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 1. From the **Links** tab, choose the ![ ](media/icons/choose-columns.png) **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png.png) 
+	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png) 
 
 1. To reorder the links, choose the field to sort the list on that field. 
 
@@ -578,7 +605,7 @@ The work item opens in your web portal.
 
 You can edit any link listed. You can change the link type and the work items linked to.
   
-1. Choose the link and choose the ![ ](media/icons/edit.png.png) **Edit** icon. 
+1. Choose the link and choose the ![ ](media/icons/edit.png) **Edit** icon. 
 
 1. Change the link type as needed. 
 
@@ -632,7 +659,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
     An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
 
-- [Addres Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
+- [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
     If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see 
 
 ## Related articles
@@ -643,6 +670,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)
 - [FAQs: Work in Excel connected to Azure Boards](faqs.md) 
 - [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md)
+- [View and add work items, az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) 
 - [Basic Excel tasks](https://support.office.com/article/basic-tasks-in-excel-dc775dd1-fa52-430f-9c3c-d998d1735fca) 
 
 ::: moniker-end  
@@ -657,24 +685,4 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ::: moniker-end  
 
-
-
-<!---
-
-::: moniker range=">= azure-devops" 
-
-Also, you can make bulk updates from You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. You can also make changes to work items using the [az boards work-item create](../../work-items/view-add-work-items.md#add-work-item) command.
-
-::: moniker-end  
-
-::: moniker range="azure-devops-2019" 
-You can make changes to work items in Excel, the web portal, Visual Studio/Team Explorer, or Team Explorer Everywhere. 
-::: moniker-end  
-
-::: moniker range="<= tfs-2018" 
-
-You can make changes to work items in Excel, Project, the web portal, or Visual Studio, or Team Explorer Everywhere.
-
-::: moniker-end 
-
--->
+ 
