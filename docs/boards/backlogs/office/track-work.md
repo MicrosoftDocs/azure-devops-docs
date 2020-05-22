@@ -306,7 +306,7 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 
 	![New List](media/excel/team-ribbon.png)
 
-1.	The Connect to Azure Devops Server dialog opens. 
+1.	The Connect to Azure DevOps Server dialog opens. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
@@ -350,7 +350,7 @@ To connect from your Office client to an Azure DevOps Server project, perform th
 
 	![New List](media/excel/team-ribbon.png)
 
-1.	The Connect to Azure Devops Server dialog opens. 
+1.	The Connect to Azure DevOps Server dialog opens. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Ribbon, Choose New List](media/connect/connect-to-azure-devops.png)
