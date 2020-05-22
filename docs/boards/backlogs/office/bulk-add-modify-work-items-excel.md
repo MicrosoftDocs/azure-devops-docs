@@ -577,7 +577,7 @@ From the Add link dialog, choose the **Browse** button (Visual Studio) to open t
 > [!div class="mx-imgBorder"]  
 > ![Choose Link Work Items dialog](media/excel/choose-linked-work-items-dialog.png)
 
-The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To leaqrn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
+The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To learn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 
 ### Add columns to the links list
 
@@ -614,7 +614,7 @@ You can edit any link listed. You can change the link type and the work items li
 
 1. To change the work item linked to, enter the ID of the work item, or choose **Browse** to find the work item(s) to link to. 
 
-	The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To leaqrn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
+	The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To learn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 
 ## Add attachments
 
