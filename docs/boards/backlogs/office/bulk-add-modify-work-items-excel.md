@@ -332,7 +332,7 @@ You can add work items linked using parent-child links, or other tree topology l
 
 ### Useful tips when working with a tree list 
 
-- The plug-in interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
+- Excel interprets the data in the **Title** columns to determine the pattern of links between work items. When you publish changes, any of the following conditions can result in an error, an invalid link, or a tree link to be created between incorrect work items:
 	- A row between is blank between two work items within the hierarchy 
 	- The Title of a work item is in the wrong column. Make sure you enter a title for each child work item.
 	- Within a row, multiple **Title** columns contain data. Enter text in only one of the title columns within each row.
@@ -386,7 +386,7 @@ The easiest way to bulk update many work items is to create a query with the wor
 
 ## Enable Tree commands
 
-If the **Tree group** commands are not available, your worksheet is configured as a flat list, query list. You must first convert the list to either an input list or a list based on a tree query in order to enable the Tree group commands. To learn how, see the next section on [Change from a query to an input list](#reconfigure-list).
+If the **Tree group** commands are not available, your worksheet is configured as a flat list, query list. You must first convert the list to either an input list or a list based on a tree query in order to enable the Tree group commands. To learn how, see the next section on [Change your list type or query](#reconfigure-list).
 
 <a id="reconfigure-list"></a>
 
@@ -425,17 +425,42 @@ To convert your query list to an input list, follow these steps.
 	> ![Configure List properties dialog, Query](media/excel/configure-list-properties-dialog-refresh-query.png)
 
 
+<a id="get-work-items" />
+
+
 ## Add existing work items to your worksheet 
 
-If you're working with a non-query input list, you can add work items by choosing ![Get work items icon](media/bulk-modify-excel-get-work-items-inline.png) from the Team ribbon. 
+If you're working from a query, [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list. The additional work items will appear in your list. 
 
-> [!div class="mx-imgBorder"]  
-> ![Get work items dialog](media/excel/get-work-items.png)
+If you're working with an input list, perform these steps. 
 
-This dialog works in the same way as the Choose Link Work Items dialog. See [Find work items to link to](#find-items) described earlier in this article. 
+1. From the **Team** ribbon, choose **Get Work Items**. 
 
-If you're working from a query, then you need to [modify your query](../../queries/using-queries.md) to contain the work items you want. Then refresh your list.
+	> [!div class="mx-imgBorder"]  
+	> ![Team Ribbon, Get work items](media/excel/team-ribbon-get-work-items.png)
 
+1. Choose the method you want from the three options available. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Get work items dialog](media/excel/get-work-items.png)
+
+    If the work items are defined in another project, then first select the Project. Then, make your selections: 
+
+    -   **Query**. Use this method when you have defined a query that you know contains the set or superset of the work items that you want.   
+    -   **IDs**. Use this method when you know the IDs of the work items that you want to link to. 
+          In the **IDs** box, type the IDs of the work items that you want to find, separated by commas or spaces. 
+    -   **Title contains**. Use this method to find work items that have a common word or phrase in the title field. In the **and type** list, click the type of work item that you want to retrieve.   
+    > [!NOTE]
+    >  To minimize the time required to run the query, narrow the filter criteria of the search.  
+
+1.  Choose **Find**.
+
+     Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column **Title**. 
+
+1.  In the list of returned work items, select the check-box of one or more work items.   
+
+    - Select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
+    - Choose **Select All** to select all work items in the list.  
 
 <a id="choose-columns"> </a>  
 
@@ -492,11 +517,11 @@ You can use the Select User feature to find user accounts and assign values to p
 
 ## Link work items  
 
-You can perform a number of actions from the Links tab of the Links and Attachments dialog. Specifically, you can: 
+You can perform a number of actions from the **Links** tab of the **Links and Attachments** dialog. Specifically, you can: 
 - Review the existing links defined for the selected work item 
 - Add links to one or more work items or select objects 
 - Delete links 
-- Open a linked work item 
+- Open a linked work item (opens in the web portal)  
 - Edit the link type of an existing link 
 - Add columns to the Link list and sort on that list 
 
@@ -520,31 +545,49 @@ For more information on linking work items, see [Link user stories, issues, bugs
 
 From the Add link dialog you can open a secondary dialog to help you choose one or more work items to link to. If you are going to find and list work items to link to by using a saved query, first [define the query](../../queries/using-queries.md) that you want to use. 
 
-1.  From the Add link dialog, choose the **Browse** button (Visual Studio) to open the following dialog. 
+From the Add link dialog, choose the **Browse** button (Visual Studio) to open the following dialog. 
+
+> [!div class="mx-imgBorder"]  
+> ![Choose Link Work Items dialog](media/excel/choose-linked-work-items-dialog.png)
+
+The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To leaqrn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
+
+### Add columns to the links list
+
+1. From the **Links** tab, choose the ![ ](media/icons/choose-columns.png) **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Link Work Items dialog](media/excel/choose-linked-work-items-dialog.png)
+	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png.png) 
 
-    If the work items are defined in another project, then first select the Project. Then, make your selections: 
+1. To reorder the links, choose the field to sort the list on that field. 
 
-    -   **Query**. Use this method when you have defined a query that you know contains the set or superset of the work items that you want.   
-    -   **IDs**. Use this method when you know the IDs of the work items that you want to link to. 
-          In the **IDs** box, type the IDs of the work items that you want to find, separated by commas or spaces. 
-    -   **Title contains**. Use this method to find work items that have a common word or phrase in the title field. In the **and type** list, click the type of work item that you want to retrieve.   
-        > [!NOTE]
-        >  To minimize the time required to run the query, narrow the filter criteria of the search.  
-1.  Choose **Find**.
+	> [!div class="mx-imgBorder"]  
+	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/links-tab-added-columns.png) 
 
-     Only those work items defined for the selected project and specified work item type are listed. To sort on a column field, choose the column **Title**. 
+This dialog works in the same way as the **Get Work Items** dialog. See [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
+### Open a linked work item
 
-1.  In the list of returned work items, select one or more work items.   
+From the **Links** tab, choose the linked work item, right-click to open the context menu, and choose **Open Linked Item**. 
 
-    - Select each work item that should link to the current work item. You can also press the SHIFT key while clicking to select a range of work items, or press the CTRL key while clicking to select multiple work items.  
-    - Choose **Select All** to select all work items in the list.  
+> [!div class="mx-imgBorder"]  
+> ![Links and Attachments dialog, Links tab, Open Linked Work Item](media/excel/links-tab-open-linked-work-item.png)
 
-### Change the link type 
+The work item opens in your web portal.
 
-You can modify the link type of an existing link. Choose the link and
+### Edit the link, change the link type 
+
+You can edit any link listed. You can change the link type and the work items linked to.
+  
+1. Choose the link and choose the ![ ](media/icons/edit.png.png) **Edit** icon. 
+
+1. Change the link type as needed. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Links and Attachments dialog, Links tab, Edit link dialog](media/excel/edit-link-dialog.png)
+
+1. To change the work item linked to, enter the ID of the work item, or choose **Browse** to find the work item(s) to link to. 
+
+	The **Choose Linked Work Items** dialog works in the same way as the **Get Work Items** dialog. To leaqrn more, see [Add existing work items to your worksheet](#get-work-items) described earlier in this article.
 
 ## Add attachments
 
