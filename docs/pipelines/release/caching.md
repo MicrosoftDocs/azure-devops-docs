@@ -300,13 +300,13 @@ If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass
 
 ## .NET/NuGet
 
-If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
+If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(UserProfile)` and caching this directory.
 
 **Example**:
 
 ```yaml
 variables:
-  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+  NUGET_PACKAGES: $(UserProfile)/.nuget/packages
 
 steps:
 - task: Cache@2
@@ -318,7 +318,7 @@ steps:
   displayName: Cache NuGet packages
 ```
 
-See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details.
+See [Package reference in project files](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) for more details on how to enable lock file creation.
 
 ## Node.js/npm
 
