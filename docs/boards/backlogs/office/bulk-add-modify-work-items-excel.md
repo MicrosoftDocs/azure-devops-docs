@@ -28,8 +28,8 @@ In this article you'll learn how to perform the following tasks:
 > * Publish and refresh your work items  
 > * Add and remove fields from your worksheet 
 > * Convert a flat-list to a tree-list  
-> * Select user accounts  
-> * Link work items and find work items to link to
+> * Select user accounts for identity or person-named fields 
+> * Link work items, find work items to link to, and change link types
 > * Add attachments to one or more work items   
 > * Open a work item from Excel to add additional information (opens in web portal)  
 > * Edit Area and Iteration Paths (opens in web portal)   
@@ -130,9 +130,9 @@ Parent-child links or other tree topology link types support creating a hierarch
 
 To import a hierarchical list, see [Add or import a hierarchical list of work items](#add-work-items-tree) later in this article. 
 
-### My queries versus Shared queries 
+### My queries versus shared queries 
 
-You can open any query you've defined in Azure Boards. That includes queries defined under My Queries and Shared Queries. However, if you plan to share the workbook with other team members, then you should only work with a Shared Query. Other team members won't be able to use the workbook or worksheet if it is based on a personal query stored under your My Queries folder. 
+You can open in Excel any query you've defined in Azure Boards. That includes queries defined under My Queries and Shared Queries. However, if you plan to share the workbook with other team members, then you should only work with a Shared Query. Other team members won't be able to use the workbook or worksheet if it is based on a personal query stored under your My Queries folder. 
 
 ### Guide to list and query type usage
 
