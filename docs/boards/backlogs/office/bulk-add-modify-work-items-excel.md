@@ -7,9 +7,9 @@ ms.assetid: 1399B4B1-72AE-4328-AAD8-3AAF0B808761
 ms.author: kaelli
 author: KathrynEE
 ms.custom: contentperfq4
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/21/2020
+ms.date: 05/22/2020
 ---
 
 
