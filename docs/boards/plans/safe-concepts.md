@@ -116,7 +116,7 @@ Because epics can span several release trains, the Portfolio team isn't associat
 
 SAFe® practices include Agile release teams defining their iteration goals and objectives. We recommend using the project wiki or team dashboards to capture team information. The project wiki and team dashboards both support markdown to add and format information. 
 
-To learn more, see the [Related articles, information sharing](#related-articles) section. 
+To learn more, see [Share information](#share-information) later in this article. 
 
 
 <a id="tags" />
@@ -159,7 +159,7 @@ Use your project wiki to support sharing the following SAFe® artifacts:
 - Objectives
 - Customer-centric practices 
 
-To learn more about the project wiki, see the [Related articles, information sharing](#related-articles) section. 
+To learn more about the project wiki, see [Share information](#share-information) later in this article. 
 
 
 <a id="milestones" />
@@ -204,7 +204,19 @@ This extension allows teams to create their own retrospective boards and capture
 - Organize and prioritize that feedback
 - Create and track actionable tasks to help each team in their improvement processes.
  
+<a id="share-information" />
 
+## Share information   
+
+Azure Boards provides a number of ways to share information. 
+
+- Work item forms provide rich-text fields to capture descriptions, acceptance criteria and more. File attachments can be added to work items or links to network file shares. 
+- Project and team dashboards can be used to share information as well as status and progress charts and widgets. To learn more, see [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md). 
+- The Project wiki provides a central repository with versioning control built-in to share information with all project members. Additional wikis can be created as needed. To learn more, see [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md). 
+
+For details on supported Markdown features, see the following articles.  
+- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
+- [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
 
 ## Try this next
 
@@ -227,12 +239,6 @@ This extension allows teams to create their own retrospective boards and capture
 - [Practices that scale](practices-that-scale.md)  
 - [Scale Agile to Large Teams](/azure/devops/learn/agile/scale-agile-large-teams)
 
-### Information sharing 
-
-- [About Wikis, READMEs, and Markdown](../../project/wiki/about-readme-wiki.md)
-- [Syntax guidance for Markdown usage in Wiki](../../project/wiki/wiki-markdown-guidance.md)
-- [Syntax guidance for basic Markdown usage](../../project/wiki/markdown-guidance.md)
-- [Add Markdown to a dashboard](../../report/dashboards/add-markdown-to-dashboard.md)
 
 
 <!---
