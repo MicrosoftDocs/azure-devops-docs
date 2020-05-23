@@ -36,7 +36,22 @@ This article walks you through some of the basic tools you'll use to plan and tr
 
 ## Define Portfolios and Epics 
 
-Portfolio teams can perform the following tasks as indicated. 
+To get started, each team needs to add work items for each deliverable that supports the product vision. Each team can do that by working from their backlog and then mapping their work to create a hierarchy of work. 
+
+Or, they can develop a list of work items and import them using Excel. By specifying each team's area path for each work item, they create the mapped hierarchy. 
+
+The following sections indicate how to work from Excel or through the web portal. 
+
+### Import a top-down plan using Excel  
+
+You can import work items using Excel. As shown in the following image, Epics, Features, and User Stories are defined in a tree-list with their Value Area, Area Path and a few tags defined. The State value is New. 
+
+> [!div class="mx-imgBorder"]
+> ![Portfolio backlog, Add Epics](media/safe-plan-track/excel-import-plan.png) 
+
+Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details and assigning work to team members and to sprints. 
+
+To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
 
 ### Document Portfolio Vision and Strategic Themes  
 

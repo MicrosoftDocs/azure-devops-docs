@@ -53,8 +53,7 @@ We'll then configure the area path to the following hierarchy and configuring ea
 > ![Area path and team configuration](media/safe-configure/area-path-structure-corrected.png)
 
 > [!TIP]    
-> If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#programmatic-tools) provided later in this article. 
-
+> If you have a large number of teams, area paths, and iterations that you need to add, you may want to use command line or programmatic tools. See the [Command line and  programmatic tools](#command-line-and-programmatic-tools) provided later in this article. 
 
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
@@ -111,19 +110,14 @@ To support your team hierarchy, you'll now configure the area paths created in t
 
 2. You'll want to choose each feature team's Area Path under the top Area Path and move it under the Area Path hierarchy to which it belongs. 
 
-	For example, highlight the *App* Area Path, open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Edit**.   
+    You can drag and drop each area path under the parent node where it belongs. For example, here we drag the Migrate node to the Fiber Suite node. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Flat list of area paths](media/safe-configure/choose-edit-area-path.png)
+	> ![Area Paths, drag-and-drop to parent node](media/safe-configure/area-paths-drag-drop.png)
 
-3. Change the **Location** to *Fiber Suite*, it's parent program area path. 
+	Alternatively, you can open the conext menu for the Area Path, choose Edit, and select the node where you want to move it.  
 
-	> [!div class="mx-imgBorder"]
-	> ![Flat list of area paths](media/safe-configure/edit-area-dialog.png)
-	
-	Choose **Save and close** when done. 
-
-3. Repeat steps 2 and 3 for the remaining feature team area paths. 
+3. Repeat step 2 and 3 for the remaining Agile team area paths. 
 
 	If you have defined two or more portfolio teams, you'll need to change the move each program team's area path under their corresponding portfolio team's area path. 
 
@@ -164,6 +158,8 @@ If you already have iterations for your default team, you can rename them. You'l
 	> [!div class="mx-imgBorder"]
 	> ![Iterations page, list of iterations](media/safe-configure/list-iterations.png)
 
+	> [!TIP]
+	> You can drag and drop Iteration Paths to structure your iterations, similar to as shown in Step 2 under Configure Area Paths. Azure Boards always lists the iteration paths in order of their dates under each parent node. 
 
 ## Configure your teams 
 
@@ -334,6 +330,7 @@ These are the recommended settings to make based on the team level.
 
 
 <a id="programmatic-tools" /> 
+<a id="command-line-and-programmatic-tools" /> 
 
 ::: moniker range="azure-devops"
 
@@ -341,9 +338,9 @@ These are the recommended settings to make based on the team level.
 
 You can use Azure DevOps command line tools to add or update the following artifacts:
 
-- **Teams**: [Azure DevOps team create](../../organizations/settings/add-teams.md#add-team-cli) 
-- **Area Paths**: [Azure DevOps area project create](../../organizations/settings/set-area-paths.md#add-area)
-- **Iteration Paths**: [Azure DevOps iteration project create](../../organizations/settings/set-iteration-paths-sprints.md#add-project-iteration) 
+- **Teams**: [Azure DevOps team create](/cli/azure/ext/azure-devops/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
+- **Area Paths**: [Azure DevOps area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create)
+- **Iteration Paths**: [Azure DevOps iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create) 
 
 ::: moniker-end
 
