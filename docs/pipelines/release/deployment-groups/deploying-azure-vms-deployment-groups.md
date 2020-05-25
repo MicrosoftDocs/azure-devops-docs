@@ -1,0 +1,180 @@
+title: Deploying to Azure VMs using Deployment Groups
+description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups
+ms.topic: tutorial
+ms.author: v-edkaim
+author: edkaim
+ms.date: 05/27/2020
+monikerRange: '>= tfs-2018'
+---
+
+# Deploy to Azure VMs using Deployment Groups
+
+[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+
+::: moniker range="<= tfs-2018"
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
+::: moniker-end
+
+In the earlier versions of Azure DevOps, if the application needed to be deployed to multiple servers, Windows PowerShell remoting had to be enabled manually, the required ports opened, and the deployment agent installed on each of the servers. The pipelines had to be managed manually if a roll-out deployment was required.
+
+All the above challenges have been handled seamlessly with the introduction of the [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
+
+A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to all these servers that belong to the deployment group. Multiple pipelines can be created for the roll-out deployments so that the latest version of the application could be provided in a phased manner to the multiple user groups for validating the newly introduced features.
+
+In this tutorial, you learn about:
+
+> [!div class="checklist"]
+> * Provisioning VM infrastructure to Azure using a template
+> * Creating an Azure Pipelines deployment group
+> * Creating and running a CI/CD pipeline to deploy the solution 
+
+## Prerequisites
+
+1. A Microsoft Azure account.
+1. An Azure DevOps account.
+1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77368&Name=deploymentgroups) to provision the tutorial project on your Azure DevOps organization.
+
+## Setting up the Azure deployment environment
+
+The following resources will be provisioned on the Azure using an ARM template:
+
+- Six Virtual Machines (VM) web servers with IIS configured
+- SQL server VM (DB server)
+- Azure Network Load Balancer
+
+1. Click the **Deploy to Azure** button below to initiate the resource provisioning. It takes approximately 10-15 minutes to complete the deployment. Provide all the necessary information and select **Purchase**.
+
+    [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
+
+    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/deploy-azure.png)
+
+1. Once the deployment is successful, the list of all the resources will be displayed on the Azure Portal. Select the DB server VM with **sqlSrv** in its name to view its details.
+
+    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/resource-group.png)
+
+1. Make a note of the **DNS** name. This value will be required later in an exercise. You can use the copy button to copy it to the clipboard.
+
+    ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/sql-dns.png)
+
+## Creating Deployment Groups and Configuring Release
+
+Azure DevOps makes it easier to organize the servers for deploying the applications. A deployment group is a collection of machines with a deployment agent on each of them. Each of the machines interacts with Azure DevOps to coordinate the deployment of the app.
+
+Since there is no configuration change required for the build pipeline, the build will be triggered automatically after the project is provisioned.
+
+1. Navigate to the Azure DevOps project created by the demo generator.
+
+1. From **Pipelines**, select **Deployment groups**.
+
+1. Select **Add a deployment group**.
+
+1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script generated will be displayed.
+
+    The target servers will be available in the deployment group for deploying the application. You can register the target servers using the script provided. In this tutorial, the target servers are automatically registered in the release pipeline. The release definition uses Stages to deploy the application to the target servers. A Stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. A deployment group stage executes tasks on the machines defined in a deployment group.
+
+1. Navigate to **Pipelines | Releases**. Select the release pipeline and select **Edit**.
+
+1. Select the **Tasks** tab to view the deployment tasks in pipeline.
+
+1. The tasks will be grouped under three stages called the **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
+
+1. Select the **Agent phase**. In this stage, the target servers will be associated to the deployment group using the Azure Resource Group Deployment task. Select the **Azure Pipelines** pool and **vs2017-win2016** specification.
+
+    ![Configuring the agent phase](media/deploying-azure-vms-deployment-groups/agent-phase.png)
+
+1. Select the **Azure Resource Group Deployment** task. Configure a service connection to the Azure subscription used earlier to create infrastructure. After authorizing the connection, select the resource group created for this tutorial.
+
+    ![Creating an Azure service connection](media/deploying-azure-vms-deployment-groups/create-azure-connection.png)
+
+1. From the **User settings** dropdown, open **Personal access tokens** in a new tab. Most browsers allow this via right-click context menu or **Ctrl+Click**.
+
+    ![Navigating to personal access tokens](media/deploying-azure-vms-deployment-groups/open-pat.png)
+
+1. In the new tab, select **New Token**.
+
+1. Enter a name and select the **Full access** scope. Select **Create** to create the token. Once created, copy the token and close the tab.
+
+    ![Creating a personal access token](media/deploying-azure-vms-deployment-groups/open-pat.png)
+
+1. Under **Azure Pipelines service connection**, select **New**.
+
+    ![Adding an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/new-azure-pipelines-connection.png)
+
+1. Enter the **Connection URL** to the current instance of Azure DevOps. This will be something like `https://dev.azure.com/[Your account]`. Paste in the **Personal Access Token** created earlier and specify a **Service connection name**. Select **Verify and save**.
+
+    ![Creating an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/create-azure-pipelines-connection.png)
+
+1. Select the current **Team project** and the **Deployment group** created earlier.
+
+    ![Configuring the Azure Pipelines deployment group](media/deploying-azure-vms-deployment-groups/configure-pipeline-deployment-group.png)
+
+1. Select the **Deployment group phase** stage. This stage executes tasks on the machines defined in the deployment group. This stage is linked to the **db** tag. Choose the **Deployment Group** from the drop down.
+
+1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to **web** tag. Choose the **Deployment Group** from the drop down.
+
+1. Select the **Disconnect Azure Network Load Balancer** task. As the target machines are connected to the NLB, this task will disconnect the machines from the NLB prior to the deployment and reconnect them back to the NLB after the deployment. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one). 
+
+1. Select the **IIS Web App Manage** task. This runs on the deployment target machines registered with the deployment group configured for the task/stage. It creates a web app and application pool locally with the name **PartsUnlimited** running under the port **80**
+
+1. Select the **IIS Web App Deploy** task. This runs on the deployment target machines registered with the deployment group configured for the task/stage. It deploys the application to the IIS server using **Web Deploy**.
+
+1. Select the **Connect Azure Network Load Balancer** task. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one).
+
+1. Select on the **Variables** tab and enter the variable values as below.
+
+    | Variable Name | Variable Value  |
+    |--|--|
+    | DatabaseName | PartsUnlimited-Dev |
+    | DBPassword | P2ssw0rd@123 |
+    | DBUserName |sqladmin  |
+    | DefaultConnectionString | Data Source=YOUR_DNS_NAME.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30; |
+    | ServerName | localhost |
+
+    > [!IMPORTANT]
+    > Make sure to replace your SQL server DNS name (which you noted from Azure Portal earlier) in **DefaultConnectionString** variable.
+
+    It will look something like this.
+
+    ![Configuring pipeline variables](media/deploying-azure-vms-deployment-groups/variables.png)
+
+    Your DefaultConnectionString will be like as below after replacing SQL DNS.
+
+    `Data Source=dgsqlw4zktxlvx7ddu.centralindia.cloudapp.azure.com.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
+
+1. Select **Save** and then **Create release** and confirm. Follow the release through to completion.
+
+1. Once the release completes, the deployment will be ready for review.
+
+1. In the Azure Portal, open one of the web VMs in your resource group. You can select any that have `websrv` in the name.
+
+    ![Locating a web VM](media/deploying-azure-vms-deployment-groups/web-vm.png)
+
+1. Open a new browser tab to the **DNS** of the VM.
+
+    ![Locating the web app domain](media/deploying-azure-vms-deployment-groups/web-app-domain.png)
+
+    > [!IMPORTANT]
+    > The [**Azure Load Balancer**](/azure/load-balancer/load-balancer-overview) will distribute incoming traffic among healthy instances of servers defined in a load-balanced set. Hence the **DNS** of all web server instances will be the same.
+
+1. Review the deployed app.
+
+    ![Reviewing the app](media/deploying-azure-vms-deployment-groups/web-app-review.png)
+
+## Summary
+
+Using Azure DevOps and Azure, the web applications can be easily compiled and deployed to multiple target servers using Deployment Groups.
+
+## Clean up resources
+
+This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
+
+1. Delete the Azure DevOps project created by the Azure DevOps Demo Generator.
+
+1. All Azure resources created during this tutorial were assigned to the resource group specified during creation. Deleting that group will delete the resources they contain. This can be done via the CLI or portal.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Provision agents for deployment groups](howto-provision-deployment-group-agents)
+
+
