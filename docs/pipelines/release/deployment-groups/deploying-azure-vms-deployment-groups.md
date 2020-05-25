@@ -1,3 +1,4 @@
+---
 title: Deploying to Azure VMs using Deployment Groups
 description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups
 ms.topic: tutorial
@@ -9,10 +10,10 @@ monikerRange: '>= tfs-2018'
 
 # Deploy to Azure VMs using Deployment Groups
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 In the earlier versions of Azure DevOps, if the application needed to be deployed to multiple servers, Windows PowerShell remoting had to be enabled manually, the required ports opened, and the deployment agent installed on each of the servers. The pipelines had to be managed manually if a roll-out deployment was required.
@@ -175,6 +176,6 @@ This tutorial created an Azure DevOps project and some resources in Azure. If yo
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Provision agents for deployment groups](howto-provision-deployment-group-agents)
+> [Provision agents for deployment groups](howto-provision-deployment-group-agents.md)
 
 
