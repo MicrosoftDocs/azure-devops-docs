@@ -4,7 +4,7 @@ description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups
 ms.topic: tutorial
 ms.author: v-edkaim
 author: edkaim
-ms.date: 05/27/2020
+ms.date: 05/26/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -16,23 +16,25 @@ monikerRange: '>= tfs-2018'
 [!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
-In the earlier versions of Azure DevOps, if the application needed to be deployed to multiple servers, Windows PowerShell remoting had to be enabled manually, the required ports opened, and the deployment agent installed on each of the servers. The pipelines had to be managed manually if a roll-out deployment was required.
+In earlier versions of Azure Pipelines, applications that needed to be deployed to multiple servers required a significant amount of planning and maintenance. Windows PowerShell remoting had to be enabled manually, required ports opened, and deployment agents installed on each of the servers. The pipelines then had to be managed manually if a roll-out deployment was required.
 
-All the above challenges have been handled seamlessly with the introduction of the [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
+All the above challenges have been evolved seamlessly with the introduction of the [Deployment Groups](/vsts/build-release/concepts/definitions/release/deployment-groups/).
 
-A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to all these servers that belong to the deployment group. Multiple pipelines can be created for the roll-out deployments so that the latest version of the application could be provided in a phased manner to the multiple user groups for validating the newly introduced features.
+A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to those servers. Multiple pipelines can be created for the roll-out deployments so that the latest version of an application can be delivered in a phased manner to multiple user groups for validation of newly introduced features.
 
 In this tutorial, you learn about:
 
 > [!div class="checklist"]
 > * Provisioning VM infrastructure to Azure using a template
 > * Creating an Azure Pipelines deployment group
-> * Creating and running a CI/CD pipeline to deploy the solution 
+> * Creating and running a CI/CD pipeline to deploy the solution with a deployment group 
 
 ## Prerequisites
 
 1. A Microsoft Azure account.
+
 1. An Azure DevOps account.
+
 1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77368&Name=deploymentgroups) to provision the tutorial project on your Azure DevOps organization.
 
 ## Setting up the Azure deployment environment
@@ -43,25 +45,28 @@ The following resources will be provisioned on the Azure using an ARM template:
 - SQL server VM (DB server)
 - Azure Network Load Balancer
 
-1. Click the **Deploy to Azure** button below to initiate the resource provisioning. It takes approximately 10-15 minutes to complete the deployment. Provide all the necessary information and select **Purchase**.
+1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**.
 
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/deploy-azure.png)
 
-1. Once the deployment is successful, the list of all the resources will be displayed on the Azure Portal. Select the DB server VM with **sqlSrv** in its name to view its details.
+    > [!NOTE]
+    > It takes approximately 10-15 minutes to complete the deployment.
+
+1. Once the deployment completes, you can review all of the resources generated in the specified resource group using the Azure Portal. Select the DB server VM with **sqlSrv** in its name to view its details.
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/resource-group.png)
 
-1. Make a note of the **DNS** name. This value will be required later in an exercise. You can use the copy button to copy it to the clipboard.
+1. Make a note of the **DNS name**. This value will be required in a later step. You can use the copy button to copy it to the clipboard.
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/sql-dns.png)
 
-## Creating Deployment Groups and Configuring Release
+## Creating and configuring a deployment group
 
-Azure DevOps makes it easier to organize the servers for deploying the applications. A deployment group is a collection of machines with a deployment agent on each of them. Each of the machines interacts with Azure DevOps to coordinate the deployment of the app.
+Azure Pipelines makes it easier to organize servers required for deploying applications. A deployment group is a collection of machines with deployment agents. Each of the machines interacts with Azure Pipelines to coordinate the deployment of the app.
 
-Since there is no configuration change required for the build pipeline, the build will be triggered automatically after the project is provisioned.
+Since there is no configuration change required for the build pipeline, the build will be triggered automatically after the project is provisioned. When you queue a release later on, this build will be used.
 
 1. Navigate to the Azure DevOps project created by the demo generator.
 
@@ -69,9 +74,9 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select **Add a deployment group**.
 
-1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script generated will be displayed.
+1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script generated is displayed.
 
-    The target servers will be available in the deployment group for deploying the application. You can register the target servers using the script provided. In this tutorial, the target servers are automatically registered in the release pipeline. The release definition uses Stages to deploy the application to the target servers. A Stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. A deployment group stage executes tasks on the machines defined in a deployment group.
+    The target servers are available in the deployment group for deploying the application. You can register the target servers using the script provided if working on your own. However, in this tutorial, the target servers are automatically registered as part of the release pipeline. The release definition uses stages to deploy the application to the target servers. A stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. Each deployment group stage executes tasks on the machines defined in the deployment group.
 
 1. Navigate to **Pipelines | Releases**. Select the release pipeline and select **Edit**.
 
@@ -142,6 +147,8 @@ Since there is no configuration change required for the build pipeline, the buil
 
     `Data Source=dgsqlw4zktxlvx7ddu.centralindia.cloudapp.azure.com.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
 
+## Queuing a release and reviewing the deployment 
+
 1. Select **Save** and then **Create release** and confirm. Follow the release through to completion.
 
 1. Once the release completes, the deployment will be ready for review.
@@ -163,7 +170,7 @@ Since there is no configuration change required for the build pipeline, the buil
 
 ## Summary
 
-Using Azure DevOps and Azure, the web applications can be easily compiled and deployed to multiple target servers using Deployment Groups.
+In this tutorial you deployed a web application to a set of Azure VMs using Azure Pipelines and Deployment Groups. While this scenario just covered a handful of machines, you can easily scale the process up to support hundreds, or even thousands, of machines in virtually any configuration.
 
 ## Clean up resources
 
