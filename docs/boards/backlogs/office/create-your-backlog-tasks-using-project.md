@@ -68,7 +68,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    > If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -144,7 +144,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    >The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    >If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -310,7 +310,7 @@ You can manage your project plan using Project and all the features that Project
 - [Create your backlog](../create-your-backlog.md)
 - [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements) 
 
-If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
+If the Team ribbon fails to appear, see [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
 
