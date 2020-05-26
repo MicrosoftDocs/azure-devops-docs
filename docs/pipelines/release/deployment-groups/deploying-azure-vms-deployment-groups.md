@@ -1,6 +1,6 @@
 ---
-title: Deploying to Azure VMs using Deployment Groups
-description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups
+title: Deploying to Azure VMs using Deployment Groups in Azure Pipelines
+description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups in Azure Pipelines
 ms.topic: tutorial
 ms.author: v-edkaim
 author: edkaim
@@ -8,7 +8,7 @@ ms.date: 05/26/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Deploy to Azure VMs using Deployment Groups
+# Deploy to Azure VMs using Deployment Groups in Azure Pipelines
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
@@ -96,7 +96,7 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Enter a name and select the **Full access** scope. Select **Create** to create the token. Once created, copy the token and close the browser tab. This returns you to the Azure Pipeline editor.
 
-    ![Creating a personal access token](media/deploying-azure-vms-deployment-groups/open-pat.png)
+    ![Creating a personal access token](media/deploying-azure-vms-deployment-groups/create-pat.png)
 
 1. Under **Azure Pipelines service connection**, select **New**.
 
