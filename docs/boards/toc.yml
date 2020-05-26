@@ -140,7 +140,7 @@
   href: plans/toc.yml
 - name: Excel, Project, PowerPoint 
   items:
-  - name: Work in Excel or Project
+  - name: Connect to an Office client
     href: backlogs/office/track-work.md
   - name: Bulk add or modify work items (Excel)
     href: backlogs/office/bulk-add-modify-work-items-excel.md
