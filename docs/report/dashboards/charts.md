@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
 ms.author: kaelli
 author: KathrynEE
-ms.topic: conceptual
+ms.topic: tutorial
 monikerRange: '>= tfs-2013'
 ms.date: 04/05/2019
 ---
@@ -16,7 +16,17 @@ ms.date: 04/05/2019
 
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
-You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). You can create several types of charts&mdash;such as pie, column, or trend&mdash;for the same query.  Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate. 
+You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views are supported, such as pie, column, pivot, or trend. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate.  
+
+In this article you'll learn how to perform the following tasks:  
+
+> [!div class="checklist"]    
+> * Construct a flat-list query to support your chart
+> * Create and share your query-based chart 
+> * Create a status pie, column, bar, or pivot chart
+> * Create a trend chart 
+> * Add a chart to a dashboard
+> * Configure a query widget    
 
 > [!NOTE]  
 > For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
@@ -41,7 +51,7 @@ For example, the following image illustrates four different charts created from 
 
 ## Prerequisites
 
-By default, users with **Basic** access or higher can create charts from a flat list query. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
+By default, users with **Basic** access or higher can create charts. Users with **Stakeholder** access can't view or create charts from the **Queries** page, however, they can view charts added to a team dashboard. For details, see [About access levels](/azure/devops/organizations/security/access-levels).
 
 ::: moniker range="azure-devops"
 
@@ -83,9 +93,54 @@ By default, users with **Basic** access or higher can create charts from a flat 
 
 To learn more about default groups, see [About permissions and groups](../../organizations/security/about-permissions.md).
 
+
+## Create a flat-list query  
+
+When creating a query to support creating a chart, follow these guidelines. 
+
+- Always choose the **Flat list of work items** query type as that is required to create a chart. For more information, see [Create and save managed queries](../../boards/queries/using-queries.md#create-a-query)
+- Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
+	- To group by work assignments, include the **Assigned To** in the query or column options   
+	- To group by sprints or iterations, include the **Iteration Path** in the query or column options    
+	- To group by team, include the **Area Path** or **Node Name** in the query or column options  
+	- To group by a custom field, include it in a query clause or column options.
+- If you want to sum up a numeric column, add that field to your query clause or column options. 
+- If you plan to add your query to a dashboard, save your query as a Shared query.
+
+The following options aren't supported in query-based charts. 
+
+- You can filter a query using tags, however you can't use tags to construct your query chart
+
+### Fields that show up in the chart editor
+
+For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
+
+You can't select fields for groupings that aren't supported, such as ID, Title, Tags, date-time fields, Description, Repro Steps, and other HTML and long text fields.  
+
+### Limited display of series 
+
+::: moniker range="> tfs-2018"
+
+When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"?  
+
+![Other category groups data beyond 12 set series](media/charts/other-12-series.png)  
+
+::: moniker-end 
+
+
+::: moniker range="<= tfs-2018"
+
+When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
+
+![Other category groups data beyond 7 set series](media/tfs-vso-remaining-category-consolidation-chart.png)  
+
+::: moniker-end 
+
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
+
 ## Create a query-based chart  
 
-1. From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. Stakeholders can view charts but not create them. 
+1. From **Queries**, open the chart editor for a flat list query. You must belong to the Contributors group to create charts. 
 
    ::: moniker range=">= azure-devops-2019"  
    > [!div class="mx-imgBorder"]  
@@ -95,6 +150,8 @@ To learn more about default groups, see [About permissions and groups](../../org
    ::: moniker range="<= tfs-2018"  
    <img src="media/charts-new-chart.png" alt="Web portal, Queries page, Chart tab, New chart link" style="border: 2px solid #C3C3C3;" />  
    ::: moniker-end  
+
+	If you have Stakeholder access, the **Charts** and **New Chart** links won't appear. 
 
 2. Select the chart type and field for grouping values. When you use pie, bar, and column charts, select a single field to view a count of work items.  
    ::: moniker range=">= azure-devops-2019"  
@@ -108,15 +165,10 @@ To learn more about default groups, see [About permissions and groups](../../org
 
    If you don't see the field you want in the **Group by** drop-down list, [add the field as a column to the query and save the query](../../boards/backlogs/set-column-options.md). Also, the **Aggregration** options depend on the fields used in the query or those selected from the **Column Options**.  
 
-   You can group by any field except date-time and free-form text fields. For example: 
-   - To group by work assignments, include the **Assigned To** in the query or column options   
-   - To group by sprints or iterations, include the **Iteration Path** in the query or column options    
-   - To group by team, include the **Area Path** or **Node Name** in the query or column options  
-   - To group by a custom field, include it in a query clause or column options.
-
    If you receive an error message when you close the chart editor, you need to request [Basic access](../../organizations/security/change-access-levels.md).
 
 3. To sort the results, choose **Value** or **Label** as the sort option and then **Ascending** or **Descending**.  
+
    ::: moniker range=">= azure-devops-2019"  
    To change a color, simply choose a color from the Series set of color pickers.   
    > [!div class="mx-imgBorder"]  
@@ -129,10 +181,32 @@ To learn more about default groups, see [About permissions and groups](../../org
 
 Charts automatically update when you edit the query or refresh the query results.  
 
+<a id="pie-chart" /> 
 
-### Stacked bar chart  
+## Add a pie chart
 
-A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within the hierarchy of area paths. Use this when you want to show data across teams.  
+Use a pie chart to show group percentages with six or fewer categories. Good examples of pie charts are: 
+
+- Active Bugs Status, group by State
+- User Story Status, group by State 
+- User Story Progress, group by Completed, In Progress, or Cut 
+
+For example, the following query filters User Stories based on the State for Cut, In Progress, and Completed since the start of the year. 
+
+> [!div class="mx-imgBorder"]  
+> ![Query Editor, filter User Stories by State](media/charts/pie-chart-query.png) 
+
+The pie chart configuration is as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![Configure chart dialog, Pie chart](media/charts/pie-chart-configured.png)  
+The combined query and chart configuration yield the following pie chart. 
+
+![Charts, pie chart example ](media/charts/pie-chart-user-stories-progress.png)  
+
+## Add a Stacked bar chart  
+
+A stacked bar chart lets you track progress against two field values. Node Name will display the last leaf within an area path. Use this when you want to show data across teams, and each node corresponds to a team.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -143,7 +217,7 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 <img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end  
 
-### Trend chart  
+## Trend chart  
 
 Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections).  
 
@@ -159,7 +233,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
 
 
-### Burndown chart  
+## Burndown chart  
 
 Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks.  
 
@@ -172,9 +246,9 @@ Choose the **Sum** operator for **Remaining Work** to view a burndown chart of t
 <img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
 
-## Add a chart to a team dashboard 
+## Add a chart to a dashboard 
 
-To add a chart to your team's home page, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
+To add a chart to a dashboard, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
 Choose the ![ ](../../media/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
 
@@ -206,11 +280,12 @@ To add other types of charts, such as test results and build summary charts, see
 
 ## Add chart widget to a dashboard   
  
-If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a team dashboard using the *Chart for work items* widget.  
+If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the *Chart for work items* widget.  
 ::: moniker-end  
 
 ::: moniker range=">= azure-devops-2019"
-1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
+
+1. From the web portal, open the [dashboard](dashboards.md) you want to add the chart to.  
 
 2. To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
@@ -299,13 +374,8 @@ Also, from the web portal, you can view the following charts:
 - [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
 - [Widget catalog charts](widget-catalog.md)    
 
-[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]
 
-### Fields that show up in the chart editor
 
-For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
-
-You can't select fields for groupings that aren't supported, such as ID, Title, Tags, date-time fields, Description, Repro Steps, and other HTML and long text fields.  
 
 ### Charts and the display of areas and iterations
 
@@ -315,11 +385,6 @@ Use ```Node Name```, the area path leaf node, to see if that improves your resul
 
 Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts have not been optimized for mobile or touch displays. 
 
-### Why some charts don't show all the field values in the results 
-
-When a chart contains more than seven items within the data series, values in the eight-plus items are consolidated into a set labeled "other"?   
-
-![Other category groups data beyond 7 set series](media/tfs-vso-remaining-category-consolidation-chart.png)  
 
 
 ::: moniker range=">= azure-devops-2019"
