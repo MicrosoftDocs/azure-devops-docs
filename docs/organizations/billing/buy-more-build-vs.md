@@ -28,7 +28,7 @@ We offer a *free tier* for each. The *free tier* includes:
 
 ## Microsoft-hosted CI/CD
 
-Each organization starts out with the *free tier* of Microsoft-hosted CI/CD. This tier provides the ability to run one parallel build or release job, for up to 30 hours per month. Switch to paid Microsoft-hosted CI/CD if you need more than 30 hours per month, or to run multiple jobs simultaneously.
+Each organization begins with the *free tier* of Microsoft-hosted CI/CD. This tier provides the ability to run one parallel build or release job, for up to 30 hours per month. Switch to paid Microsoft-hosted CI/CD if you need more than 30 hours per month, or to run multiple jobs simultaneously.
 
 When you pay per parallel job, there's no monthly time limit for your builds and releases. The maximum runtime for a single job increases from 60 minutes to 6 hours. With Microsoft-hosted CI/CD, the price includes all infrastructure that Microsoft runs (virtual machines, databases, storage, and egress) to deliver this service.
 
@@ -46,7 +46,7 @@ Azure Pipelines also offers you a way to run the agent on machines that you mana
 
 ### Self-hosted public projects
 
-For pipelines in a [public project](../public/about-public-projects.md), you can run up to 10 free parallel jobs with self-hosted agents. If you need more, [contact us](https://azure.microsoft.com/support/devops/).
+For pipelines in a [public project](../public/about-public-projects.md), you can run as many parallel jobs with self-hosted agents as you require.
 
 ### Self-hosted private projects
 
@@ -102,5 +102,4 @@ The *free tier* is one parallel job. You also get one free parallel job for each
 - [Buy cloud-based load testing](buy-load-testing-vs.md)
 - [Buy access to TFS test hub](buy-access-tfs-test-hub.md)
 - [Add user for billing management](add-backup-billing-managers.md)
-
 
