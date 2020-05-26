@@ -635,15 +635,14 @@ You can edit any link listed. You can change the link type and the work items li
 - To add the same attachment(s) to several work items, multi-select them by using **Ctrl-click** for consecutive rows, or **Shift-click** for non-consecutive rows. 
 
 
-
 ## Create a report 
 
-You can create a report from the web portal for flat-list queries. See [Track progress by creating status and trend query-based charts](../../../report/dashboards/charts.md). 
+You can create a report or chart from the web portal for flat-list queries. See [Track progress by creating status and trend query-based charts](../../../report/dashboards/charts.md). 
 
 > [!IMPORTANT]
-> You can only create an Excel report using **New Report** based from an on-premises Azure DevOps Server. Reports can created only from a flat-list query and when your project's project collection is configured to support SQL Server Analytics Server. 
-> 
-The **New Report** feature in Excel, can be used to create an Excel report based on a flat list of work items. 
+> You can only create an Excel report using **New Report** from an on-premises Azure DevOps Server. These reports require that your project's project collection is configured to support SQL Server Analytics Server. 
+ 
+You can create a report using the **New Report** feature based on a flat list of work items. 
 
 > [!div class="mx-imgBorder"]  
 > ![Get work items dialog](media/excel/team-ribbon-new-report.png)
@@ -656,16 +655,16 @@ To learn more, see [Create Excel reports from a work item query](../../../report
 To resolve publishing errors that arise when working in Excel, see one of the following topics:   
 
 - [Resolve data conflicts](resolve-excel-data-conflicts-publish-refresh.md): 
-    A data conflict occurs when a field value has been changed in Azure Boards since the last time you published from Excel.  
+    A data conflict occurs when a field value is changed in Azure Boards since the last time you published from Excel.  
 
 - [Resolve data validation errors](resolve-excel-data-validation-errors.md):
-    A data validation error occurs if a value is entered for a field that violates the rules for that field and work item type.
+    A data validation error occurs if a field value violates the rules for that field and work item type.  
   
 - [Resolve invalid links in a tree hierarchy](resolve-excel-invalid-links-tree-list.md):
     An invalid link occurs if a team member views work items in Excel as a hierarchy or tree list, and moves a work item or sorts the list so that it breaks the dependencies between work items. You can resolve this error by reviewing the error message and repositioning work items to reflect the work item structure.
 
 - [Address Error TF208104: Hierarchical Link Relationship Is Locked](resolve-excel-invalid-links-tree-list.md#tf208104):  
-    If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. For more information, see 
+    If you receive error TF208104, changes you made to the fields are published, but all changes you made to the link hierarchy are not published. At least one of the link relationships defined for the work item is locked by another process, such as Project Server integration. 
 
 ## Related articles
 
