@@ -137,14 +137,14 @@ You can open in Excel any query you've defined in Azure Boards. That includes qu
 
 ### Guide to list and query type usage
 
-In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their parent-child links. 
+In general, you [Use a flat list](../../queries/using-queries.md#flat-list-query) to bulk add or modify several types of work items at once, such as backlog items, tasks, bugs, or issues. [Use a tree list](../../queries/using-queries.md#tree-query) to bulk add or modify work items and their tree-topology links. 
 
 Here is some additional guidance: 
 
 ::: moniker range="azure-devops" 
 
 - Use an **input list, flat list**: To import a list of work items or create new work items, no hierarchy   
-- Use an **input list, tree list**: To perform top down planning and publish hierarchically linked work items  
+- Use an **input list, tree list**: To perform top down planning and import hierarchically linked work items  
 - Use a **query list, tree list**: To view and modify the hierarchy of link relationships of many existing work items. 
 - Use a **query list, flat list**: To bulk update a list of work items or create new work items, no hierarchy   
 
@@ -179,8 +179,10 @@ Each worksheet in Excel can contain a different input list or query. However, al
 The following features work slightly differently when working with a worksheet connected to Azure Boards.  
 
 - Each cell or column of cells corresponds to a work item field. Each field is associated with a data type. Excel won't allow you to enter data into a cell that doesn't meet the data type and requirements for that field.  
-- You can only insert a single row at a time within the worksheet. You can't copy and paste multiple rows into a worksheet. 
-- To move a work item within a hierarchy, cut the entire row and paste it under the work item you want as its parent 
+- You can only insert a single row at a time within the worksheet. 
+- You can copy and paste multiple rows within the worksheet. 
+- To move a work item within a hierarchy, cut the entire row and paste it under the work item you want as its parent. 
+- Use **Outdent** and **Indent** to change the location of a work item within the tree. 
 - Undo (Ctrl Z) may not work. If you do something that you want to revert, you can refresh the worksheet. 
 
 We recommend you publish and refresh your worksheet often to make sure your local work remains in sync with Azure Boards data store.
@@ -205,16 +207,19 @@ You can perform the following tasks:
 - Add tags and bulk update work items with tags as described in [Add work item tags to categorize and filter lists and boards](../../queries/add-tags-to-work-items.md).
 	Add the **Tags** field to your worksheet. Add multiple tags separated by a semicolon (;). 
 - You can add simple text to a rich-text field, but if you're bulk updating several work items, you may lose formatting in existing work items. 
+- You can work offline and then reconnect and publish your changes. For details, see [Connect Azure Boards to an Office client, Work offline and reconnect](track-work.md#work-offline).
 
 You can't perform the following tasks from an Excel worksheet: 
 
 ::: moniker range="azure-devops" 
 
 - You can't delete work items 
+- You can't change the work item type of an existing work item 
 - You can't import or update test case steps or other test artifacts 
 - You can't add work items in any other State than the new State 
 - You can't add to a work item discussion thread 
-- You can't link to a remote work item
+- You can't link to a remote work item 
+- You can't move work items to another project 
 
 ::: moniker-end  
 
@@ -244,7 +249,7 @@ You can't perform the following tasks from an Excel worksheet:
 
     ![Select input list](media/excel/2019-input-list-dialog.png)
 
-1.  <a id="step-5" />Your worksheet is now bound to your project as an input list, flat list.  
+1.  <a id="step-5" />Your worksheet is now bound to your project as an input list (Query[None]), flat list.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Empty flat list connected to a project](media/excel/2019-input-list.png)
@@ -278,19 +283,19 @@ You can't perform the following tasks from an Excel worksheet:
 	> [!div class="mx-imgBorder"]  
 	> ![Open a work item in the web portal from Excel](media/excel/2019-open-in-web-access.png)
 
-    A web browser opens with the work item opens. 
+    A web browser opens and displays the work item. 
 
-    If you make changes to the work item, you should then immediately refresh your worksheet to capture those changes.  
+    If you make changes to the work item, you should then immediately refresh your worksheet to capture the changes.  
 
 
 <a id="add-work-items-tree"> </a>  
 
 ## Import work items, tree list
 
-You can add work items linked using parent-child links, or other tree topology link type, to create a hierarchy of work items. 
+You can add a hierarchy of work items linked using parent-child links or other tree topology link type. 
 
 > [!IMPORTANT]
-> Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships. If you do sort a tree list, recover immediately by refreshing your worksheet. 
+> Don't sort a tree list. Sorting a tree list can change the hierarchical link relationships.  
 
 1. Starting from [Step 5](#step-5) from the previous procedure, convert your flat list, input list into a tree list. Choose a cell within the flat list and then choose **Add Tree Level**. 
  
