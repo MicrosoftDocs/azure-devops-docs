@@ -46,7 +46,7 @@ Azure Pipelines also offers you a way to run the agent on machines that you mana
 
 ### Self-hosted public projects
 
-For pipelines in a [public project](../public/about-public-projects.md), you can run up to 10 free parallel jobs with self-hosted agents. If you need more, [contact us](https://azure.microsoft.com/support/devops/).
+For pipelines in a [public project](../public/about-public-projects.md), you can run as many parallel jobs with self-hosted agents as you require.
 
 ### Self-hosted private projects
 
