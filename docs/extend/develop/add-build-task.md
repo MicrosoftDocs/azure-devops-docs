@@ -12,8 +12,6 @@ ms.date: 05/26/2020
 
 # Add a build or release task
 
-[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
-
 In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 
@@ -22,20 +20,20 @@ These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../..//pipelines/overview.md). 
 
 > [!NOTE]
-> This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, checkout the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
+> This article covers agent tasks in agent-based extensions. For information on server tasks/server-based extensions, check out the [Server Task GitHub Documentation](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/servertaskauthoring.md).
 
 ## Prerequisites
 
 To create extensions for Azure DevOps, you need the following software and tools:
 
-- An **organization** in Azure DevOps, more information can be found [here](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs.aspx)
-- **A text editor**. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
-- The latest version of **node**, which can be downloaded [here](https://nodejs.org/en/download/).
+- An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
+- A text editor. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
+- The latest version of node, which can be downloaded [here](https://nodejs.org/en/download/).
 
   The production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- **Typescript Compiler** 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
+- Typescript Compiler 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript)
     <a name="cli" />
-- **TFS Cross Platform Command Line Interface (tfx-cli)** to package your extensions.
+- TFS Cross Platform Command Line Interface (tfx-cli) to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`
 - A `home` directory for your project.
     - The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
@@ -54,7 +52,7 @@ This walk through was done on Windows with PowerShell. We attempted to make it g
 
 If using a Mac or Linux, replace any instances of ```$env:<var>=<val>``` with ```export <var>=<val>```
 
-## Steps
+## Process 
 Below are the steps to create a build or release task extension and put it on the Marketplace:
 * [Step 1: Create a custom task](#createtask)
 * [Step 2: Unit test the task scripts](#testscripts)
@@ -65,17 +63,17 @@ Below are the steps to create a build or release task extension and put it on th
 
 <a name="createtask" />
 
-## Step 1: Create the custom task
+## Step 1: Create a custom task
 
 Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
 
 ### Create task scaffolding
 
-The first step is to create the folder structure for the task and install the required libraries and dependencies.
+Create the folder structure for the task and install the required libraries and dependencies.
 
 #### Create a directory and package.json file
 
-First, from within your `buildAndReleaseTask` folder, run:
+1. From within your `buildAndReleaseTask` folder, run:
 
 ```
 npm init
