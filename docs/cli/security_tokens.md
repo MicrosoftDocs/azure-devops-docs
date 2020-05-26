@@ -190,3 +190,7 @@ If the tokens have variable-length path parts, then a separator character is use
    Token format for a specific workspace: '/{workspace_name};{owner_id}' 
    
    This security namespace is used only with TFVC. The user ID in the token is the TeamFoundationID of the Workspace's owner/creator.
+
+### Deprecated/Read-only only Namespaces:
+
+   The following namespaces should not be used as they are either deprecated or read-only: CrossProjectWidgetView, DataProvider, Favorites, Graph, IdentityPicker, Job, Location, ProjectAnalysisLanguageMetrics, Proxy, Registry, Security, ServicingOrchestration, SettingEntries, Social, StrongBox, TestManagement, ViewActivityPaneSecurity, WebPlatform, WorkItemsHub, WorkItemTracking, WorkItemTrackingConfiguration
