@@ -295,7 +295,7 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 
 1.  Start with a blank worksheet. 
 
-1.  If you're client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
+1.  If you're client is signed into a user account, make sure that it is your Azure DevOps user account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
@@ -441,7 +441,7 @@ To disconnect an Excel or Project document file from the network:
   
 4.  Disconnect your computer from the network, or save the work item list file and copy it to another computer.  
   
-     An error message might appear that tells you that the Office program could not establish a connection with an Azure DevOps server.  
+     An error message might appear that tells you that the Office program could not establish a connection with an Azure DevOps Server.  
   
 5.  Modify or update the work item list as needed.  
   
