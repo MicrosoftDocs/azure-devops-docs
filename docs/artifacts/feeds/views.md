@@ -39,7 +39,7 @@ To promote a package-version:
 
 You can also promote a package to a view using the REST API. Azure Artifacts currently supports NuGet, Python, npm, Maven (limited operations) and Universal packages.
 
-* **NuGet**
+* **Promote a NuGet package**
 
 Example:
 
@@ -49,7 +49,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/
 
 See [NuGet - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
-* **npm**
+* **Promote an npm package**
 
 Example:
 
@@ -59,7 +59,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/n
 
 See [Npm - Update Package](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
 
-* **Python**
+* **Promote a Python package**
 
 Example:
 
@@ -70,7 +70,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/
 See [Python - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 
-* **Universal**
+* **Promote a Universal package**
 
 Example:
 
