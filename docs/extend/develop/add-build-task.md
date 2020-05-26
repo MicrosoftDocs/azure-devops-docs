@@ -180,7 +180,7 @@ Here is a description of some of the components of the `task.json` file:
 | `author`              | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation" | 
 | `instanceNameFormat`  | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
 | `groups`              | Describes groups that task properties may be logically grouped by in the UI. |
-| `inputs`              | Inputs to be used when your build or release task runs. This task expects an input with the name "sample string" |
+| `inputs`              | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring" |
 | `execution`           | Execution options for this task, including scripts |
 
 >[!NOTE]
