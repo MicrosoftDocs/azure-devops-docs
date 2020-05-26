@@ -47,7 +47,7 @@ Example:
 PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/nuget/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
 ```
 
-See [NuGet - Update Package Version](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+See [NuGet - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 * **npm**
 
@@ -57,7 +57,7 @@ Example:
 PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/npm/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
 ```
 
-See [Npm - Update Package](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
+See [Npm - Update Package](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
 
 * **Python**
 
@@ -67,7 +67,7 @@ Example:
 PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/{feedId}/pypi/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
 ```
 
-See [Python - Update Package Version](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+See [Python - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 
 * **Universal**
@@ -78,7 +78,7 @@ Example:
 PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/upack/packages/{packageName}/versions/{packageVersion}?api-version=5.1-preview.1
 ```
 
-See [Universal - Update Package Version](https://docs.microsoft.com/en-us/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
+See [Universal - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/universal/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 Keep in mind that you cannot publish a package directly to a view (for example, `nuget.exe publish -Source ...feed@view/nuget/...`). Instead, you should publish the package to your feed then promote it to a view. 
 
