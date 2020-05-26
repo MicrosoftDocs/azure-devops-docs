@@ -162,7 +162,7 @@ You can create a counter that is automatically incremented by one in each execut
 ```yaml
 variables:
   major: 1
-  # define b as a counter with the prefix as variable a, and seed as 100.
+  # define minor as a counter with the prefix as variable major, and seed as 100.
   minor: $[counter(variables['major'], 100)]
 
 steps:
