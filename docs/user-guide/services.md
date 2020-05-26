@@ -1,15 +1,15 @@
 ---
-title: Features and services included
+title: Features and services included with Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18
-description: Understand the services provided by in Azure DevOps Services and Team Foundation Server 
+description: Understand the services provided in Azure DevOps Services and Team Foundation Server 
 ms.technology: devops-new-user 
 ms.topic: overview
 ms.assetid: D861983F-CC66-4314-A3C6-E2F30A37923D
 ms.manager: chcomley
 ms.author: chcomley
 author: chcomley
-ms.date: 04/05/2019
+ms.date: 05/19/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -108,7 +108,7 @@ To learn more, see the overviews for [Git](../repos/git/index.yml) or [TFVC](../
 
 ## Plan and track work
 
-Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, perhaps you used one or more tools. For example, Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools. Now, many teams have adopted Agile methods and practices to support planning and development.
+Software development projects require ways to easily share information and track the status of work, tasks, issues, or code defects. In the past, perhaps you used one or more tools. Microsoft Excel, Microsoft Project, a bug tracking system, or a combination of tools, for example. Now, many teams have adopted Agile methods and practices to support planning and development.
 
 Our systems provide several types of work items that you use to track features, requirements, user stories, tasks, bugs, and issues. Each work item is associated with a work item type and a set of fields that can be updated, as progress is made.
 
@@ -161,7 +161,8 @@ The rapid and reliable release of software comes from automating as many process
 
 **Azure Pipelines** provides an integrated set of features to support building and deploying your applications.
 
-![Builds, Azure Pipelines page](media/builds-pipelines-page.png)
+> [!div class="mx-imgBorder"] 
+> ![Azure Pipelines landing page](media/pipelines-landing-page.png)
 
 ::: moniker-end
 
