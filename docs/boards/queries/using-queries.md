@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/16/2019
 ---
 
-# Create and save managed queries with the query editor
+# Create and save managed queries
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
