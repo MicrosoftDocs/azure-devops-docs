@@ -65,7 +65,7 @@ Below are the steps to create a build or release task extension and put it on th
 
 ## Step 1: Create a custom task
 
-Step 1 is all about setting up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
+Set up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
 
 ### Create task scaffolding
 
@@ -73,7 +73,7 @@ Create the folder structure for the task and install the required libraries and 
 
 #### Create a directory and package.json file
 
-1. From within your `buildAndReleaseTask` folder, run:
+From within your `buildAndReleaseTask` folder, run:
 
 ```
 npm init
@@ -110,7 +110,7 @@ echo node_modules > .gitignore
 
 #### Create tsconfig.json compiler options
 
-This file makes sure that our TypeScript files get compiled to JavaScript files.
+This file ensures that our TypeScript files are compiled to JavaScript files.
 
 ```
 tsc --init
@@ -249,7 +249,7 @@ This time the task succeeded since ```samplestring``` was supplied, and it corre
 
 <a name="testscripts" />
 
-## Step 2: Unit testing your task scripts
+## Step 2: Unit test your task scripts
 
 The goal of unit testing is to quickly test the task script, not the external tools it's calling. We want to test all aspects
 of both success and failure paths.
@@ -302,7 +302,7 @@ describe('Sample task tests', function () {
 The success test validates that when the tool has the appropriate inputs, it succeeds with no errors
 or warnings and returns the correct output.
 
-First, we create a file containing our task mock runner. This  file creation simulates running the task and mocks all calls to outside methods.
+Create a file containing our task mock runner. This file creation simulates running the task and mocks all calls to outside methods.
 
 Create a ```success.ts``` file in your test directory with the following contents:
 
@@ -379,7 +379,7 @@ it('it should fail if tool returns 1', function(done: MochaDone) {
 });
 ```
 
-### Running the tests
+### Run the tests
 
 To run the tests, run the following commands:
 
