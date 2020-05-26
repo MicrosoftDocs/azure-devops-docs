@@ -18,7 +18,7 @@ We’re excited to announce the general availability of the Azure Pipelines YAML
 - [Refreshed UX for service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
 - [Resources in YAML pipelines](https://docs.microsoft.com/azure/devops/pipelines/process/resources?view=azure-devops&tabs=schema)
 
-If you’re ready to start building, check out the [documentation](https://go.microsoft.com/fwlink/?linkid=2091040")&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd/)&nbsp;for building multi-stage CI/CD pipelines.
+If you’re ready to start building, check out the [documentation](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema)&nbsp;or [blog](https://devblogs.microsoft.com/devops/announcing-general-availability-of-azure-pipelines-yaml-cd/)&nbsp;for building multi-stage CI/CD pipelines.
 
 ### Service connections new UI as default experience
 
