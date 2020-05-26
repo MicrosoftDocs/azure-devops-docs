@@ -313,4 +313,4 @@ Licensing considerations limit us from distributing Microsoft-hosted images. We 
 
 ### How do I configure scale set agents to run UI tests?
 
-At this time during the preview, we do not have the ability to run the agent as an interactive process. This is planned for the future.
+At this time during the preview, we do not have the ability to run UI tests on the agent. This is planned for the future.
