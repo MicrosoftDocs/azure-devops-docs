@@ -170,14 +170,31 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes.  The decision to scale up or down is based on the number idle agents at that time. The exception is if desired idle agents on standby is set to 0, then scaling up the first time is done when a queued request is detected.
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes.  The decision to scale up or down is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale up operation if either of the following conditions is satisfied:
 
-The goal is to reach the desired number of idle agents on standby eventually. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. 
+- The number of idle agents falls below the number of standby agents you specify
+- There are no idle agents to service pipeline jobs waiting in the queue
+
+If one of these conditions is met, Azure Pipelines grows the number of VMs. Scaling up is done in increments of a certain percentage of the maximum pool size. Allow 20 minutes for machines to be created for each step.
+
+Azure Pipelines scales down the agents when the number of idle agents exceeds the standby count for more than 30 mins.
+
+To put all of this into an example, consider a scale set agent pool that is configured with 2 standby agents and 4 maximum agents. Let us say that you want to tear down the VM after each use. Also, let us assume that there are no VMs to start with in the scale set.
+
+- Since the number of idle agents is 0, and since the number of idle agents is below the standby count of 2, Azure Pipelines scales up and adds two VMs to the scale set. Once these agents come online, there will be 2 idle agents.
+
+- Let us say that 1 pipeline job arrives and is allocated to one of the agents.
+
+- At this time, the number of idle agents is 1, and that is less than the standby count of 2. So, Azure Pipelines scales up and adds 2 more VMs (the increment size used in this example). At this time, the pool has 3 idle agents and 1 busy agent.
+
+- Let us say that the job on the first agent completes. Azure Pipeline takes that agent offline to re-image that machine. After a few minutes, it comes back with a fresh image. At this time, we'll have 4 idle agents.
+
+- If no other jobs arrive for 30 mins, Azure Pipelines determines that there are more idle agents than are necessary. So, it scales down the pool to two agents.
+
+Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
 
 > [!NOTE]
 >  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
-
-Scaling up is done in increments of 25% of the maximum pool size.  Scale up to maximum requires four scale-up operations. Allow 20 minutes for machines to be created for each step.  Scaling down is performed when idle machines exceed the desired number of agents on standby for one hour.
 
 To achieve maximum stability, scale set operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
 
@@ -189,6 +206,7 @@ Due to the sampling size of 5 minutes, it is possible that all agents can be run
 * [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
 * [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+* [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
 
 ### Are there any limitations during the preview?
 
@@ -290,3 +308,7 @@ You are now ready to create an agent pool using this scale set.
 ### Where can I find the images used for Microsoft-hosted agents?
 
 Licensing considerations limit us from distributing Microsoft-hosted images. We are unable to provide these images for you to use in your scale set agents. But, the [scripts](https://github.com/actions/virtual-environments/tree/master/images) that we use to generate these images are open source. You are free to use these scripts and create your own custom images.
+
+### How do I configure scale set agents to run UI tests?
+
+At this time during the preview, we do not have the ability to run UI tests on the agent. This is planned for the future.
