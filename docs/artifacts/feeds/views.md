@@ -23,7 +23,7 @@ There are 3 types of views: `@local`, `@Prerelease` and `@Release`. The latter t
 
 ## Get started with feed views
 
-By default, every feed has two types of views: `Prerelease` and `Release`.
+By default, every feed has three types of views: `local`, `Prerelease`, and `Release` view.
 
 ### Promoting to a prerelease or release view 
 To promote a package-version:
