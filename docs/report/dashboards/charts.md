@@ -183,7 +183,7 @@ Charts automatically update when you edit the query or refresh the query results
 
 <a id="pie-chart" /> 
 
-## Add a pie chart
+## Add a Pie chart
 
 Use a pie chart to show group percentages with six or fewer categories. Good examples of pie charts are: 
 
@@ -217,7 +217,12 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 <img src="media/charts-add-stacked-bar.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog, Stacked bar chart" style="border: 2px solid #C3C3C3;" />
 ::: moniker-end  
 
-## Trend chart  
+
+## Add a Pivot Chart 
+
+
+
+## Add a Trend chart  
 
 Trend charts let you view progress over time. You can select a rolling period ranging from the last week to the last year (earlier versions of TFS may have limited selections).  
 
@@ -233,7 +238,7 @@ Trend charts let you view progress over time. You can select a rolling period ra
 Trend data is extracted from the work tracking data store. Like most data stores, the schema of the relational database is designed and optimized for the online transactional processing of data. As the tool or plug-in performs an activity, it writes the latest information to the operational store. Therefore, data in the operational store is constantly changing and being updated, and all data is current.
 
 
-## Burndown chart  
+## Add a Burndown chart  
 
 Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks.  
 
@@ -246,7 +251,7 @@ Choose the **Sum** operator for **Remaining Work** to view a burndown chart of t
 <img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
 
-## Add a chart to a dashboard 
+## Add chart to a dashboard 
 
 To add a chart to a dashboard, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
