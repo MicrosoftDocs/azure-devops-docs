@@ -39,7 +39,7 @@ In this tutorial, you learn about:
 
 ## Setting up the Azure deployment environment
 
-The following resources will be provisioned on the Azure using an ARM template:
+The following resources are provisioned on the Azure using an ARM template:
 
 - Six Virtual Machines (VM) web servers with IIS configured
 - SQL server VM (DB server)
@@ -52,13 +52,13 @@ The following resources will be provisioned on the Azure using an ARM template:
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/deploy-azure.png)
 
     > [!NOTE]
-    > It takes approximately 10-15 minutes to complete the deployment.
+    > It takes approximately 10-15 minutes to complete the deployment. If you receive any naming conflict errors, try changing the parameter you provide for **Env Prefix Name**.
 
 1. Once the deployment completes, you can review all of the resources generated in the specified resource group using the Azure Portal. Select the DB server VM with **sqlSrv** in its name to view its details.
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/resource-group.png)
 
-1. Make a note of the **DNS name**. This value will be required in a later step. You can use the copy button to copy it to the clipboard.
+1. Make a note of the **DNS name**. This value is required in a later step. You can use the copy button to copy it to the clipboard.
 
     ![Deploy to Azure](media/deploying-azure-vms-deployment-groups/sql-dns.png)
 
@@ -66,7 +66,7 @@ The following resources will be provisioned on the Azure using an ARM template:
 
 Azure Pipelines makes it easier to organize servers required for deploying applications. A deployment group is a collection of machines with deployment agents. Each of the machines interacts with Azure Pipelines to coordinate the deployment of the app.
 
-Since there is no configuration change required for the build pipeline, the build will be triggered automatically after the project is provisioned. When you queue a release later on, this build will be used.
+Since there is no configuration change required for the build pipeline, the build is triggered automatically after the project is provisioned. When you queue a release later on, this build is used.
 
 1. Navigate to the Azure DevOps project created by the demo generator.
 
@@ -74,17 +74,13 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select **Add a deployment group**.
 
-1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script generated is displayed.
-
-    The target servers are available in the deployment group for deploying the application. You can register the target servers using the script provided if working on your own. However, in this tutorial, the target servers are automatically registered as part of the release pipeline. The release definition uses stages to deploy the application to the target servers. A stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. Each deployment group stage executes tasks on the machines defined in the deployment group.
+1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script is generated. You can register the target servers using the script provided if working on your own. However, in this tutorial, the target servers are automatically registered as part of the release pipeline. The release definition uses stages to deploy the application to the target servers. A stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. Each deployment group stage executes tasks on the machines defined in the deployment group.
 
 1. Navigate to **Pipelines | Releases**. Select the release pipeline and select **Edit**.
 
-1. Select the **Tasks** tab to view the deployment tasks in pipeline.
+1. Select the **Tasks** tab to view the deployment tasks in pipeline. The tasks are organized as three stages called **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
 
-1. The tasks will be grouped under three stages called the **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
-
-1. Select the **Agent phase**. In this stage, the target servers will be associated to the deployment group using the Azure Resource Group Deployment task. Select the **Azure Pipelines** pool and **vs2017-win2016** specification.
+1. Select the **Agent phase**. In this stage, the target servers are associated with the deployment group using the Azure Resource Group Deployment task. To run, an agent pool and specification must be defined. Select the **Azure Pipelines** pool and **vs2017-win2016** specification.
 
     ![Configuring the agent phase](media/deploying-azure-vms-deployment-groups/agent-phase.png)
 
@@ -92,13 +88,13 @@ Since there is no configuration change required for the build pipeline, the buil
 
     ![Creating an Azure service connection](media/deploying-azure-vms-deployment-groups/create-azure-connection.png)
 
-1. From the **User settings** dropdown, open **Personal access tokens** in a new tab. Most browsers allow this via right-click context menu or **Ctrl+Click**.
+1. This task will run on the virtual machines hosted in Azure, and will need to be able to connect back to this pipeline in order to complete the deployment group requirements. To secure the connection, they will need a **personal access token (PAT)**. From the **User settings** dropdown, open **Personal access tokens** in a new tab. Most browsers allow this via right-click context menu or **Ctrl+Click**.
 
     ![Navigating to personal access tokens](media/deploying-azure-vms-deployment-groups/open-pat.png)
 
 1. In the new tab, select **New Token**.
 
-1. Enter a name and select the **Full access** scope. Select **Create** to create the token. Once created, copy the token and close the tab.
+1. Enter a name and select the **Full access** scope. Select **Create** to create the token. Once created, copy the token and close the browser tab. This returns you to the Azure Pipeline editor.
 
     ![Creating a personal access token](media/deploying-azure-vms-deployment-groups/open-pat.png)
 
@@ -106,7 +102,7 @@ Since there is no configuration change required for the build pipeline, the buil
 
     ![Adding an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/new-azure-pipelines-connection.png)
 
-1. Enter the **Connection URL** to the current instance of Azure DevOps. This will be something like `https://dev.azure.com/[Your account]`. Paste in the **Personal Access Token** created earlier and specify a **Service connection name**. Select **Verify and save**.
+1. Enter the **Connection URL** to the current instance of Azure DevOps. This is something like `https://dev.azure.com/[Your account]`. Paste in the **Personal Access Token** created earlier and specify a **Service connection name**. Select **Verify and save**.
 
     ![Creating an Azure Pipelines service connection](media/deploying-azure-vms-deployment-groups/create-azure-pipelines-connection.png)
 
@@ -115,6 +111,8 @@ Since there is no configuration change required for the build pipeline, the buil
     ![Configuring the Azure Pipelines deployment group](media/deploying-azure-vms-deployment-groups/configure-pipeline-deployment-group.png)
 
 1. Select the **Deployment group phase** stage. This stage executes tasks on the machines defined in the deployment group. This stage is linked to the **db** tag. Choose the **Deployment Group** from the drop down.
+
+    ![Configuring the deployment group phase](media/deploying-azure-vms-deployment-groups/deployment-group-phase.png)
 
 1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to **web** tag. Choose the **Deployment Group** from the drop down.
 
@@ -126,51 +124,48 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select the **Connect Azure Network Load Balancer** task. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one).
 
-1. Select on the **Variables** tab and enter the variable values as below.
+1. Select the **Variables** tab and enter the variable values as below.
 
     | Variable Name | Variable Value  |
     |--|--|
     | DatabaseName | PartsUnlimited-Dev |
     | DBPassword | P2ssw0rd@123 |
     | DBUserName |sqladmin  |
-    | DefaultConnectionString | Data Source=YOUR_DNS_NAME.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30; |
+    | DefaultConnectionString | Data Source=[YOUR_DNS_NAME];Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30; |
     | ServerName | localhost |
 
     > [!IMPORTANT]
     > Make sure to replace your SQL server DNS name (which you noted from Azure Portal earlier) in **DefaultConnectionString** variable.
 
-    It will look something like this.
+    Your DefaultConnectionString should be similar to this after replacing the SQL DNS:
+
+    `Data Source=cust1sqljo5zndv53idtw.westus2.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
+
+    The final variable list should look something like this:
 
     ![Configuring pipeline variables](media/deploying-azure-vms-deployment-groups/variables.png)
 
-    Your DefaultConnectionString will be like as below after replacing SQL DNS.
-
-    `Data Source=dgsqlw4zktxlvx7ddu.centralindia.cloudapp.azure.com.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
-
 ## Queuing a release and reviewing the deployment 
 
-1. Select **Save** and then **Create release** and confirm. Follow the release through to completion.
+1. Select **Save** and confirm.
 
-1. Once the release completes, the deployment will be ready for review.
+1. Select **Create release** and confirm. Follow the release through to completion. The deployment is then ready for review.
 
 1. In the Azure Portal, open one of the web VMs in your resource group. You can select any that have `websrv` in the name.
 
     ![Locating a web VM](media/deploying-azure-vms-deployment-groups/web-vm.png)
 
-1. Open a new browser tab to the **DNS** of the VM.
+1. Copy the **DNS** of the VM. Note that the [**Azure Load Balancer**](/azure/load-balancer/load-balancer-overview) will distribute incoming traffic among healthy instances of servers defined in a load-balanced set. As a result, the **DNS** of all web server instances is the same.
 
     ![Locating the web app domain](media/deploying-azure-vms-deployment-groups/web-app-domain.png)
 
-    > [!IMPORTANT]
-    > The [**Azure Load Balancer**](/azure/load-balancer/load-balancer-overview) will distribute incoming traffic among healthy instances of servers defined in a load-balanced set. Hence the **DNS** of all web server instances will be the same.
-
-1. Review the deployed app.
+1. Open a new browser tab to the DNS of the VM. Confirm the deployed app is running.
 
     ![Reviewing the app](media/deploying-azure-vms-deployment-groups/web-app-review.png)
 
 ## Summary
 
-In this tutorial you deployed a web application to a set of Azure VMs using Azure Pipelines and Deployment Groups. While this scenario just covered a handful of machines, you can easily scale the process up to support hundreds, or even thousands, of machines in virtually any configuration.
+In this tutorial you deployed a web application to a set of Azure VMs using Azure Pipelines and Deployment Groups. While this scenario just covered a handful of machines, you can easily scale the process up to support hundreds, or even thousands, of machines using virtually any configuration.
 
 ## Clean up resources
 
