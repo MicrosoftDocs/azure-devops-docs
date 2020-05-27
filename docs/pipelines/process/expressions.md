@@ -268,7 +268,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Example: `le(2, 2)` (returns True)
 
 ### length
-* Returns the length of an array, either one that comes from the system or that comes from a parameter
+* Returns the length of a string or an array, either one that comes from the system or that comes from a parameter
 * Min parameters: 1. Max parameters 1
 * Example: `length('fabrikam')` returns 8
 
@@ -276,7 +276,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts a string or variable value to all lowercase characters
 * Min parameters: 1. Max parameters 1
 * Returns the lowercase equivalent of a string
-* Example: `lower(FOO)` returns `foo`
+* Example: `lower('FOO')` returns `foo`
 
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
@@ -331,7 +331,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Converts a string or variable value to all uppercase characters
 * Min parameters: 1. Max parameters 1
 * Returns the uppercase equivalent of a string
-* Example: `upper(bah)` returns `BAH`
+* Example: `upper('bah')` returns `BAH`
 
 
 ### xor
