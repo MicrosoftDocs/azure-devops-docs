@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 04/22/2020
+ms.date: 05/27/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -109,7 +109,7 @@ Scheduled triggers are evaluated for a branch when the following events occur.
 
 * A pipeline is created.
 * A pipeline's YAML file is updated, either from a push, or by editing it in the pipeline editor.
-* A YAML file reference is updated on pipeline (Only for default branch).
+* A pipeline's YAML file path is [updated to reference a different YAML file](../customize-pipeline.md#other-settings). This affects only the default branch. If any other branches subsequently merge the default branch, for example `git pull origin master`, the scheduled triggers from the newly referenced YAML file are evaluated for that branch.
 * A new branch is created. 
 
 After one of these events occurs in a branch, any scheduled runs for that branch are added, if that branch matches the branch filters for the scheduled triggers contained in the YAML file in that branch.
