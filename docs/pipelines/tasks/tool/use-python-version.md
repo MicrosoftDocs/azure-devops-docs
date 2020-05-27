@@ -7,7 +7,7 @@ ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: dastahel
-ms.date: 04/21/2020
+ms.date: 05/26/2020
 monikerRange: azure-devops
 ---
 
@@ -115,5 +115,7 @@ $AGENT_TOOLSDIRECTORY/
 For more details on the tool cache, look [here](https://github.com/Microsoft/vsts-task-tool-lib/blob/master/docs/overview.md#tool-cache).
 
 In order that your scripts may work as they would on Microsoft-hosted agents, we recommend following the symlinking structure from [PEP 394](https://www.python.org/dev/peps/pep-0394/) on Unix-like systems.
+
+Also note that the embeddable ZIP release of Python requires [extra effort to configure for installed modules](https://michlstechblog.info/blog/python-install-python-with-pip-on-windows-by-the-embeddable-zip-file/), including `pip`. If possible, we recommend using the [full installer](https://docs.python.org/3/using/windows.html#installing-without-ui) to get a `pip`-compatible Python installation.
 
 <!-- ENDSECTION -->

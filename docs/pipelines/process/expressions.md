@@ -162,7 +162,7 @@ You can create a counter that is automatically incremented by one in each execut
 ```yaml
 variables:
   major: 1
-  # define b as a counter with the prefix as variable a, and seed as 100.
+  # define minor as a counter with the prefix as variable major, and seed as 100.
   minor: $[counter(variables['major'], 100)]
 
 steps:
@@ -361,7 +361,8 @@ You can use the following status check functions as expressions in conditions, b
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
 ### succeededOrFailed
