@@ -7,5 +7,5 @@ ms.topic: include
 ---
     
 - [Preview of scale set agents](#preview-of-scale-set-agents)
-- [Github packages support in YAML pipelines](#github-packages-support-in-yaml-pipelines)
+- [Support for GitHub packages in YAML pipelines](#support-for-github-packages-in-yaml-pipelines)
 - [Tag filter support for pipeline resources](#tag-filter-support-for-pipeline-resources)
