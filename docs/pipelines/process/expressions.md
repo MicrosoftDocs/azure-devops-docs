@@ -423,7 +423,7 @@ Expressed as JSON, it would look like:
 The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies. 
 
 ```json
-"stageDependencies": {
+"dependencies": {
     "<JOB_NAME>": {
       "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
       "outputs": {
