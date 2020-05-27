@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: May 28
+          href: 2020/sprint-170-update.md
         - name: May 11
           href: 2020/sprint-169-update.md
         - name: May 4
@@ -340,6 +342,8 @@
         href: docswhatsnew/azure-devops-docs-2020-01.md
 - name: Azure Boards
   items:
+    - name: May 28
+      href: 2020/boards/sprint-170-update.md
     - name: April 13
       href: 2020/boards/sprint-167-update.md
     - name: October 14
@@ -406,6 +410,8 @@
       href: 2019/repos/sprint-147-update.md
 - name: Azure Pipelines
   items:
+    - name: May 28
+      href: 2020/pipelines/sprint-170-update.md
     - name: May 11
       href: 2020/pipelines/sprint-169-update.md
     - name: May 4
@@ -466,6 +472,8 @@
       href: 2019/testplans/sprint-154-update.md
 - name: Azure Artifacts
   items:
+    - name: May 28
+      href: 2020/artifacts/sprint-170-update.md
     - name: April 13
       href: 2020/artifacts/sprint-167-update.md
     - name: November 4

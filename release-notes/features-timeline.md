@@ -93,7 +93,18 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-        <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[5/11/2020](2020/sprint-169-update.md)">5/11/2020</a></td>
+    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
+        <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
+        </tr>
+        <tr><td>Improve error handling experience -- required fields on Bug/Task</td><td>Boards</td><td>2020</td></tr>
+        <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Lightweight authentication tasks</td><td>Artifacts</td><td>2020</td></tr>
+    <tr>
+        <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[11 May 2020](2020/sprint-169-update.md)">11 May 2020</a></td>
         <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>2020</td>
         </tr>
         <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>2020</td></tr>
@@ -103,7 +114,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>2020</td></tr>
     </tr>  
     <tr>
-        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[5/4/2020](2020/sprint-168-update.md)">5/4/2020</a></td>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4 May 2020](2020/sprint-168-update.md)">4 May 2020</a></td>
         <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
         </tr>
         <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020.1</td></tr>
@@ -116,7 +127,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
     </tr>    
        <tr>
-            <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[13 April 2020](2020/sprint-167-update.md)">13 April 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
         </tr>
         <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
