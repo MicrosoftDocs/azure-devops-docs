@@ -1,7 +1,7 @@
 ---
 title: Status and trend work item, query-based charts
 titleSuffix: Azure DevOps  
-description: Create status, progress, and trend charts from flat-based queries in Azure DevOps and Team Foundation Server  
+description: Create status, progress, and trend charts from flat-based queries in Azure DevOps  
 ms.custom: dashboards
 ms.technology: devops-analytics
 ms.assetid: EFAD32DB-8B19-4ACC-8F72-87CC5A513798  
@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/05/2019
+ms.date: 05/28/2020
 ---
 
 # Track progress by creating status and trend query-based charts 
 
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
-You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views are supported, such as pie, column, pivot, or trend. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Remaining Work or Original Estimate.  
+You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work.  
 
 In this article you'll learn how to perform the following tasks:  
 
@@ -29,8 +29,7 @@ In this article you'll learn how to perform the following tasks:
 > * Configure a query widget    
 
 > [!NOTE]  
-> For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md).  
-
+> For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -96,26 +95,43 @@ To learn more about default groups, see [About permissions and groups](../../org
 
 ## Create a flat-list query  
 
-When creating a query to support creating a chart, follow these guidelines. 
+When creating a query to support your chart, follow these guidelines. 
 
-- Always choose the **Flat list of work items** query type as that is required to create a chart. For more information, see [Create and save managed queries](../../boards/queries/using-queries.md#create-a-query)
+- Always choose the **Flat list of work items** query type. Other query types aren't supported for charting. For more information, see [Create and save managed queries](../../boards/queries/using-queries.md#create-a-query). 
 - Add those fields to either a query clause or the column options that you want to use within your chart. You can group charts by any field except date-time, free-form text, and tag fields. For example: 
-	- To group by work assignments, include the **Assigned To** in the query or column options   
-	- To group by sprints or iterations, include the **Iteration Path** in the query or column options    
-	- To group by team, include the **Area Path** or **Node Name** in the query or column options  
-	- To group by a custom field, include it in a query clause or column options.
-- If you want to sum up a numeric column, add that field to your query clause or column options. 
+	- To group by Status, include the **State** field 
+	- To group by work assignments, include the **Assigned To** field
+	- To group by sprints or iterations, include the **Iteration Path**    
+	- To group by team, include the **Node Name** field which displays the leaf node of the Area Path 
+	- To group by a custom field, include it.  
+- To sum a numeric column, include the corresponding field in your query clause or column options. 
 - If you plan to add your query to a dashboard, save your query as a Shared query.
 
 The following options aren't supported in query-based charts. 
 
-- You can filter a query using tags, however you can't use tags to construct your query chart
+-  You can't group charts by the following field data types:
+	-  ID
+	-  Date-time
+	-  Plain text, such as Title 
+	-  Rich-text, such as Description, Repro Steps 
+	-  Tags
+-  You can filter a query using tags, however you can't use tags to configure your chart
 
-### Fields that show up in the chart editor
+### Chart availability
 
-For fields to appear in the chart editor, you must add the field to either the query filter criteria or a displayed column. 
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
+- Charts configured for Shared Queries are viewable by all team members, except members with Stakeholder access, and can be added to dashboards   
+- Charts that you create for queries under your My Queries folder are visible only to you   
+- You can copy and email the URL of any chart page to share it with a project member 
+- For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
+- 
+### Display of areas and iterations
 
-You can't select fields for groupings that aren't supported, such as ID, Title, Tags, date-time fields, Description, Repro Steps, and other HTML and long text fields.  
+When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
+
+Use ```Node Name```, the area path leaf node, to see if that improves your results. 
+
+Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Edge, Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
 
 ### Limited display of series 
 
@@ -124,6 +140,8 @@ You can't select fields for groupings that aren't supported, such as ID, Title, 
 When a chart contains more than eight or 12 items within the data series, values in the 9 or 13-plus items are consolidated into a set labeled "other"?  
 
 ![Other category groups data beyond 12 set series](media/charts/other-12-series.png)  
+
+Display of query chart widgets you configure through a dashboard may exceed the query-chart limit. 
 
 ::: moniker-end 
 
@@ -218,9 +236,14 @@ A stacked bar chart lets you track progress against two field values. Node Name 
 ::: moniker-end  
 
 
-## Add a Pivot Chart 
+## Add a Pivot table  
 
+The Pivot table displays a table of configurable rows and columns, with columns showing a count of work items or sum of a numeric field. Choose a Pivot table when you want to compare across areas the work being performed. 
 
+The following image shows an example of active bugs assigned to developers and their current state.  
+
+> [!div class="mx-imgBorder"]  
+> ![Configure Chart dialog, Pivot table} (../../boards/queries/media/numeric/config-pivot-items-developer.png) 
 
 ## Add a Trend chart  
 
@@ -240,16 +263,24 @@ Trend data is extracted from the work tracking data store. Like most data stores
 
 ## Add a Burndown chart  
 
-Choose the **Sum** operator for **Remaining Work** to view a burndown chart of tasks.  
+Burndown charts are useful for determining how quickly work is progressing based on a numeric field value, such as Story Points, Effort, or Remaining Work, or on a count of work items. 
+
+To create a burndown chart, make sure to add the numeric field you want to your query. To view a burndown chart of tasks, choose the **Sum** operator for **Remaining Work**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
 > ![Configure chart dialog, Remaining work for past 4 weeks](media/charts/config-remaining-work-trend-chart.png)   
+
+
+In addition to query-based burndown charts, you can [Configure a Burndown or Burnup widget](configure-burndown-burnup-widgets.md). 
+
+
 ::: moniker-end  
 
 ::: moniker range="<= tfs-2018"  
 <img src="media/create-burndown-trend-sum-chart.png" alt="Web portal, Queries page, Chart tab, Configure Chart dialog,Trend chart for the past 4 weeks" />
 ::: moniker-end  
+
 
 ## Add chart to a dashboard 
 
@@ -283,7 +314,7 @@ To add other types of charts, such as test results and build summary charts, see
 ::: moniker range=">= tfs-2015"
 <a id="add-chart-widget"></a> 
 
-## Add chart widget to a dashboard   
+## Add a query-based chart widget to a dashboard   
  
 If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the *Chart for work items* widget.  
 ::: moniker-end  
@@ -381,14 +412,6 @@ Also, from the web portal, you can view the following charts:
 
 
 
-
-### Charts and the display of areas and iterations
-
-When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
-
-Use ```Node Name```, the area path leaf node, to see if that improves your results. 
-
-Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts have not been optimized for mobile or touch displays. 
 
 
 
