@@ -12999,6 +12999,11 @@
       "source_path": "docs/report/sharepoint-dashboards/workbooks.md",
       "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/workbooks",
       "redirect_document_id": true
+    },
+    }
+      "source_path": "docs/pipelines/apps/index.md",
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/index",
+      "redirect_document_id": true
     }
   ]
 }
