@@ -267,6 +267,17 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Ordinal ignore-case comparison for Strings
 * Example: `le(2, 2)` (returns True)
 
+### length
+* Returns the length of a string or an array, either one that comes from the system or that comes from a parameter
+* Min parameters: 1. Max parameters 1
+* Example: `length('fabrikam')` returns 8
+
+### lower
+* Converts a string or variable value to all lowercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the lowercase equivalent of a string
+* Example: `lower('FOO')` returns `foo`
+
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
 * Min parameters: 2. Max parameters: 2
@@ -302,12 +313,26 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
+### replace
+* Returns a new string in which all instances of a string in the current instance are replaced with another string
+* Min parameters: 3. Max parameters: 3
+* `replace(a, b, c)`: returns a, with all instances of b replaced by c
+* Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
+
+
 ### startsWith
 * Evaluates `true` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
+
+### upper
+* Converts a string or variable value to all uppercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the uppercase equivalent of a string
+* Example: `upper('bah')` returns `BAH`
+
 
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
