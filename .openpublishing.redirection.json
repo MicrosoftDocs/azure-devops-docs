@@ -1,5 +1,6 @@
 {
-  "redirections": [{
+  "redirections": [
+    {
       "source_path": "docs/integrate/ide/extensions/overview.md",
       "redirect_url": "/visualstudio/extensibility/shipping-visual-studio-exten/sions",
       "redirect_document_id": false
@@ -12509,7 +12510,7 @@
       "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/xml-elements-added-to-wit-definition",
       "redirect_document_id": false
     },
-    {               
+    {
       "source_path": "docs/extend/concepts/extend-best-practices.md",
       "redirect_url": "/azure/devops/marketplace-extensibility",
       "redirect_document_id": false
@@ -12743,8 +12744,261 @@
       "source_path": "docs/test/load-test/app-service-web-app-performance-test.md",
       "redirect_url": "/azure/devops/test/load-test/overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/report/excel/bug-progress-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/bug-progress-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/bug-reactivations-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/bug-reactivations-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/bugs-by-assignment-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/bugs-by-assignment-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/bugs-by-priority-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/bugs-by-priority-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/bug-trends-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/bug-trends-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/build-quality-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/build-quality-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/build-status-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/build-status-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/burndown-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/burndown-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/code-churn-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/code-churn-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/code-coverage-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/code-coverage-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/excel-reports.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/excel-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/excel-reports-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/excel-reports-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/failure-analysis-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/failure-analysis-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/issue-trends-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/issue-trends-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/requirements-progress-excel-report-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/requirements-progress-excel-report-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/requirement-test-status-excel-report-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/requirement-test-status-excel-report-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/task-progress-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/task-progress-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-activity-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-activity-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-case-readiness-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-case-readiness-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/testing-gaps-excel-report-agile.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/testing-gaps-excel-report-agile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/testing-gaps-excel-report-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/testing-gaps-excel-report-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-management-reports.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-management-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-plan-progress-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-plan-progress-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-team-productivity-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-team-productivity-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/test-team-progress-excel-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/test-team-progress-excel-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/user-story-progress-excel-report-agile.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/user-story-progress-excel-report-agile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/excel/user-story-test-status-excel-report-agile.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/excel/user-story-test-status-excel-report-agile",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/features-removed-when-disabling-sharepoint-integration.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/features-removed-when-disabling-sharepoint-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/update-excel-chart.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/update-excel-chart",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/update-ssrs-report.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/update-ssrs-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/includes/about-sharepoint-deprecation.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/includes/about-sharepoint-deprecation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/about-sharepoint-integration.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/about-sharepoint-integration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/bugs-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/build-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/build-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/manage-documents-and-document-libraries.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/manage-documents-and-document-libraries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/my-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/my-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/progress-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/progress-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/project-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/project-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/project-portal-dashboards.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/project-portal-dashboards",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/quality-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/quality-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/release-scrum.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/release-scrum",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/share-information-using-the-project-portal.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/share-information-using-the-project-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/test-dashboard-agile-cmmi.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/test-dashboard-agile-cmmi",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/tfs-sharepoint-extensions.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/tfs-sharepoint-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/toc.yml",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/toc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/upload-refresh-excel-reports.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/upload-refresh-excel-reports",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/report/sharepoint-dashboards/workbooks.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/workbooks",
+      "redirect_document_id": true
     }
   ]
 }
-
-
