@@ -28,7 +28,7 @@ In this article, learn how to set up billing for your organization in Azure DevO
 * To set up billing, you must have [Project Collection Administrator or organization Owner permissions](../security/lookup-organization-owner-admin.md) in Azure DevOps.
 
 > [!NOTE]
-> The [Azure Free Trial](https://azure.microsoft.com/en-us/offers/ms-azr-0044p/) isn't supported.
+> The [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/) isn't supported.
 
 ## Set up billing
 
