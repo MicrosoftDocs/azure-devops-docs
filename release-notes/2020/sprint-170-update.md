@@ -21,7 +21,7 @@ With this sprint, Azure Artifacts has made it easier than ever to authenticate t
 
 [!INCLUDE [sprint-170-update-links](includes/pipelines/sprint-170-update-links.md)]
 
-### Artifacts
+### Azue Artifacts
 
 [!INCLUDE [sprint-170-update-links](includes/artifacts/sprint-170-update-links.md)]
 
