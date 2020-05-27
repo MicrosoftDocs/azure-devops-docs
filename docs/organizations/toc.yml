@@ -35,7 +35,7 @@
       href: /azure/devops/organizations/accounts/add-privacy-policy-url?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change time zone
       href: /azure/devops/organizations/accounts/change-time-zone?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-    - name: Change organization location
+    - name: Change organization region
       href: /azure/devops/organizations/accounts/change-organization-location?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Change organization Owner
       href: /azure/devops/organizations/accounts/change-organization-ownership?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -56,11 +56,13 @@
     - name: Configure and customize organization
       href: /azure/devops/organizations/accounts/faq-configure-customize-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: User and permissions management
-      href: /azure/devops/organizations/accounts/faq-user-and-permissions-management.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: /azure/devops/organizations/accounts/faq-user-and-permissions-management?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Azure AD access
-      href: /azure/deveops/organizations/accounts/faq-azure-access?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: /azure/devops/organizations/accounts/faq-azure-access?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set up Visual Studio
       href: /azure/devops/organizations/accounts/faq-set-up-vs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Audit
+  href: audit/toc.yml
 - name: Teams
   href: settings/scale/toc.yml
 - name: Notifications

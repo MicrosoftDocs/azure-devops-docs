@@ -48,6 +48,12 @@ produced when running tests to Azure Pipelines or TFS in order to obtain coverag
 The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
 and [JaCoCo](https://www.eclemma.org/jacoco/).
 
+## Check prerequisites
+
+If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
+
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+
 <a name="demands"></a>
 
 ## Demands
@@ -328,7 +334,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:

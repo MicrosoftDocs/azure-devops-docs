@@ -19,6 +19,6 @@
       tocHref: /azure/devops/organizations/settings/
       topicHref: /azure/devops/organizations/settings/azure-devops-auditing
     - name: Authentication
-      tocHref: /azure/devops/organizations/integrate/
+      tocHref: /azure/devops/integrate/
       topicHref: /azure/devops/integrate/get-started/authentication/authentication-guidance
 

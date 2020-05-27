@@ -30,7 +30,7 @@ First thing you must do is configure the release definition to post deployment i
    > [!div class="mx-imgBorder"]  
    > ![Release Settings](media/deployments-control/release-settings-1.png)
 
-2. Select the "Preview: Report deployment status to Boards" option and configure the stages and deployment types
+2. Select the "Report deployment status to Boards" option and configure the stages and deployment types
 
    > [!div class="mx-imgBorder"]  
    > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)

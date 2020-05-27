@@ -68,13 +68,6 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ::: moniker-end
 
 
-
-
-
-
-
-
-
 ## Customize work item types
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
@@ -96,9 +89,11 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker range=">= azure-devops-2019"
 
-## Query 
+## Query and reporting
 
 - [Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Wiql to OData](https://marketplace.visualstudio.com/items?itemName=ms-eswm.wiql-to-odata) 
+- [Open in Power BI](https://marketplace.visualstudio.com/items?itemName=stansw.vsts-open-in-powerbi) 
 
 ::: moniker-end
 

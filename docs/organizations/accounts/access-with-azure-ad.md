@@ -65,5 +65,6 @@ A: [Restore the user](/azure/active-directory/active-directory-users-restore), r
 * [Add Azure DevOps Services users to Azure AD](add-users-to-azure-ad.md)
 * [Connect your organization to Azure AD](connect-organization-to-aad.md)
 * [Disconnect your organization from Azure AD](disconnect-organization-from-aad.md)
-* [Delete users from Azure DevOps Services connected to Azure AD](delete-users-from-services-aad.md)
+* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 

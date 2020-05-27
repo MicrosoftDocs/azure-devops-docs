@@ -193,7 +193,7 @@ You can connect to your code from the web portal **Code** hub, or using Xcode, E
 
 ### Git
 
-You can use [Git repositories](../../repos/git/overview.md) to host and collaborate on your source code. For an overview of code features and functions.
+You can use [Git repositories](../../repos/git/index.yml) to host and collaborate on your source code. For an overview of code features and functions.
 
 [!INCLUDE [temp](includes/code-git.md)]
 

@@ -6,7 +6,7 @@ ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/23/2018
+ms.date: 04/21/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -37,7 +37,7 @@ If one of your users is having permissions issues and you use default security g
 
 **A 2:** Their permissions haven't propagated yet
 
-It can take from 1 hour to 24 hours for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user is having issues that don't seem to clear up immediately, wait a day to see if they resolve.
+It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user is having issues that don't seem to clear up immediately, wait a day to see if they resolve.
 
 **A 3:** The user does not have the necessary access level
 

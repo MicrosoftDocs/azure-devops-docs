@@ -6,7 +6,7 @@ ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/21/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Use .NET Core task

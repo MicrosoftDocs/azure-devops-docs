@@ -139,7 +139,7 @@ The following built-in functions can be used in expressions.
 ### containsValue
 * Evaluates `True` if the left parameter is an array, and any item equals the right parameter. Also evaluates `True` if the left parameter is an object, and the value of any property equals the right parameter.
 * Min parameters: 2. Max parameters: 2
-* If the left parameter is an array, converts each item to match the type of the right parameter. If the left parameter is an object, converts the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
+* If the left parameter is an array, convert each item to match the type of the right parameter. If the left parameter is an object, convert the value of each property to match the type of the right parameter.  The equality comparison for each specific item evaluates `False` if the conversion fails.
 * Ordinal ignore-case comparison for Strings
 * Short-circuits after the first match
 
@@ -162,7 +162,7 @@ You can create a counter that is automatically incremented by one in each execut
 ```yaml
 variables:
   major: 1
-  # define b as a counter with the prefix as variable a, and seed as 100.
+  # define minor as a counter with the prefix as variable major, and seed as 100.
   minor: $[counter(variables['major'], 100)]
 
 steps:
@@ -176,6 +176,11 @@ If you edit the YAML file, and update the value of the variable `major` to be 2,
 Later, if you edit the YAML file, and set the value of `major` back to 1, then the value of the counter resumes where it left off for that prefix. In this example, it resumes at 102.
 
 Here is another example of setting a variable to act as a counter that starts at 100, gets incremented by 1 for every run, and gets reset to 100 every day.
+
+> [!NOTE]
+> `pipeline.startTime` is not available outside of expressions. `pipeline.startTime` 
+>  formats `system.pipelineStartTime` into a date and time object so that it is available to work with expressions.
+
 
 ```yaml
 jobs:
@@ -218,7 +223,7 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Min parameters: 1. Max parameters: N
 * Example: `format('Hello {0} {1}', 'John', 'Doe')`
 * Uses [.NET custom date and time format specifiers](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) for date formatting (`yyyy`, `yy`, `MM`, `M`, `dd`, `d`, `HH`, `H`, `m`, `mm`, `ss`, `s`, `f`, `ff`, `ffff`, `K`)
-* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`
+* Example: `format('{0:yyyyMMdd}', pipeline.startTime)`. In this case `pipeline.startTime` is a special date time object variable.
 * Escape by doubling braces. For example: `format('literal left brace {{ and literal right brace }}')`
 
 ::: moniker-end
@@ -262,6 +267,17 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Ordinal ignore-case comparison for Strings
 * Example: `le(2, 2)` (returns True)
 
+### length
+* Returns the length of a string or an array, either one that comes from the system or that comes from a parameter
+* Min parameters: 1. Max parameters 1
+* Example: `length('fabrikam')` returns 8
+
+### lower
+* Converts a string or variable value to all lowercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the lowercase equivalent of a string
+* Example: `lower('FOO')` returns `foo`
+
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
 * Min parameters: 2. Max parameters: 2
@@ -297,12 +313,26 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
+### replace
+* Returns a new string in which all instances of a string in the current instance are replaced with another string
+* Min parameters: 3. Max parameters: 3
+* `replace(a, b, c)`: returns a, with all instances of b replaced by c
+* Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
+
+
 ### startsWith
 * Evaluates `true` if left parameter string starts with right parameter
 * Min parameters: 2. Max parameters: 2
 * Casts parameters to String for evaluation
 * Performs ordinal ignore-case comparison
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
+
+### upper
+* Converts a string or variable value to all uppercase characters
+* Min parameters: 1. Max parameters 1
+* Returns the uppercase equivalent of a string
+* Example: `upper('bah')` returns `BAH`
+
 
 ### xor
 * Evaluates `True` if exactly one parameter is `True`
@@ -331,7 +361,8 @@ You can use the following status check functions as expressions in conditions, b
 ### succeeded
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues')`
 * For a job:
-  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded.
+  * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
+  * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
 
 ### succeededOrFailed
@@ -379,46 +410,64 @@ steps:
 
 ## Dependencies
 
-For jobs which depend on other jobs, expressions may also use context about previous jobs in the dependency graph.
-The context is called `dependencies` and works much like variables.
+Expressions can use the dependencies context to reference previous jobs or stages. You can use dependencies to:
 
-Structurally, the `dependencies` object is a map of job names to `results` and `outputs`.
+* Reference the job status of a previous job
+* Reference the stage status of a previous stage
+* Reference output variables in the previous job in the same stage
+* Reference output variables in the previous stage in a stage
+* Reference output variables in a job in a previous stage in the following stage
+
+The context is called `dependencies` for jobs and stages and works much like variables. 
+Inside a job, if you refer to an output variable from a job in another stage, the context is called `stageDependencies`. 
+
+Structurally, the `dependencies` object is a map of job and stage names to `results` and `outputs`.
 Expressed as JSON, it would look like:
 
 ```json
 "dependencies": {
-  "<JOB_NAME>" : {
+  "<STAGE_NAME>" : {
     "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-    "outputs": { // only variables explicitly made outputs will appear here
-      "variable1": "value1",
-      "variable2": "value2"
-    }
-  },
-  "...": {
+    "<JOB_NAME>": {
+      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+      "outputs": {
+        "variable1": "value1",
+        "variable2": "value2",
+      }
+    },
+      "...": {
     // another job
+  }
+  },
+    "...": {
+    // another stage
   }
 }
 ```
 
+The `stageDependencies` object is structured the same way. Within a single stage, the current stage will not appear. In that case, you will directly reference the dependencies. 
+
+```json
+"dependencies": {
+    "<JOB_NAME>": {
+      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
+      "outputs": {
+        "variable1": "value1",
+        "variable2": "value2",
+      }
+    },
+      "...": {
+    // another job
+  }
+  },
+    "...": {
+    // another stage
+  }
+}
+```
 ::: moniker range="azure-devops"
 
-For instance, in a YAML pipeline, you could check output variables:
-
-```yaml
-jobs:
-- job: A
-  steps:
-  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
-    name: printvar
-
-- job: B
-  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
-  dependsOn: A
-  steps:
-  - script: echo hello from B
-```
-
-Or you can check job status. In this example, Job A will always be skipped and Job B will run.
+You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
 Job C will run, since all of its dependencies either succeed or are skipped.
 
 ```yaml
@@ -443,6 +492,96 @@ jobs:
   steps:
   - script: Job C
 ```
+
+Similarly, in this example Stage A will always be skipped and Stage B will run. 
+
+```yaml
+stages:
+- stage: A
+  condition: false
+  jobs:
+  - job: A1
+    steps:
+    - script: echo Job A1
+- stage: B
+  condition: in(dependencies.A.result, 'Succeeded', 'SucceededWithIssues', 'Skipped')
+  jobs:
+  - job: B1
+    steps:
+    - script: echo Job B1
+```
+
+
+You can also use dependencies to reference output variables in the previous job in the same stage. In this example, Job B depends on an output variable from Job A.
+
+```yaml
+jobs:
+- job: A
+  steps:
+  - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+    name: printvar
+
+- job: B
+  condition: and(succeeded(), ne(dependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  dependsOn: A
+  steps:
+  - script: echo hello from B
+```
+
+
+By default, each stage in a pipeline depends on the one just before it in the YAML file. Stages can also use output variables from the prior stage. Here Stage B depends on a variable in Stage A.
+
+```yaml
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+       name: printvar
+
+- stage: B
+  condition: and(succeeded(), ne(stageDependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
+  dependsOn: A
+  jobs:
+  - job: B1
+    steps:
+    - script: echo hello from Stage B
+```
+
+
+You can also reference output variables that are in a job in a previous stage. In this example, there is both a job dependency and a stage dependency. 
+
+```yaml
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+     - script: echo "##vso[task.setvariable variable=skipsubsequent;isOutput=true]false"
+       name: printvar
+     - script: echo "##vso[task.setvariable variable=stageexists;isOutput=true]true"
+       name: stagevar
+
+- stage: B
+  condition: and(succeeded(), ne(dependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
+  dependsOn: A
+  jobs:
+  - job: B1
+    steps:
+    - script: echo hello from Stage B
+  - job: B2
+    condition: ne(stageDependencies.A.A1.outputs['stagevar.stageexists'], 'true')
+    steps:
+     - script: echo hello from Stage B2
+
+```
+
 ::: moniker-end
 
 ## Filtered arrays
@@ -541,7 +680,7 @@ steps:
     echo "This is the major run number: $MAJOR_RUN"
     
     MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
-    echo "This is the major run number: $MINOR_RUN"
+    echo "This is the minor run number: $MINOR_RUN"
     
     # create pipeline variables
     echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
