@@ -93,10 +93,9 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
+    <td rowspan="7"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
         <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
         </tr>
-        <tr><td>Improve error handling experience -- required fields on Bug/Task</td><td>Boards</td><td>2020</td></tr>
         <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>N/A</td></tr>
