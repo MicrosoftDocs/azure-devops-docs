@@ -12,11 +12,11 @@ monikerRange: '>= tfs-2013'
 ms.date: 05/28/2020
 ---
 
-# Track progress by creating status and trend query-based charts 
+# Track progress with status and trend query-based charts 
 
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
-You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work.  
+You can quickly view the status of work in progress by charting the results of a [flat-list query](../../boards/queries/using-queries.md). Different chart views such as pie, column, pivot, or trend are supported. Charts support viewing a count of work items or a sum of values for select numeric fields, such as Story Points, Effort, or Remaining Work. Group work by State, Assigned To, or other system defined or custom field.    
 
 In this article you'll learn how to perform the following tasks:  
 
@@ -27,9 +27,6 @@ In this article you'll learn how to perform the following tasks:
 > * Create a trend chart 
 > * Add a chart to a dashboard
 > * Configure a query widget    
-
-> [!NOTE]  
-> For examples of queries based on numeric fields, see [Query by numeric fields](../../boards/queries/query-numeric.md). For information on creating charts that track test progress and results, see [Track test status](../../test/track-test-status.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -104,14 +101,14 @@ When creating a query to support your chart, follow these guidelines.
 	- To group by sprints or iterations, include the **Iteration Path**    
 	- To group by team, include the **Node Name** field which displays the leaf node of the Area Path 
 	- To group by a custom field, include it.  
-- To sum a numeric column, include the corresponding field in your query clause or column options. 
+- To sum a numeric column, include the corresponding field in your query clause or column options. For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
 - If you plan to add your query to a dashboard, save your query as a Shared query.
 
 The following options aren't supported in query-based charts. 
 
 -  You can't group charts by the following field data types:
 	-  ID
-	-  Date-time
+	-  Date-time, such as Created Date, Changed Date 
 	-  Plain text, such as Title 
 	-  Rich-text, such as Description, Repro Steps 
 	-  Tags
@@ -119,20 +116,27 @@ The following options aren't supported in query-based charts.
 
 ### Chart availability
 
-- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
 - Charts configured for Shared Queries are viewable by all team members, except members with Stakeholder access, and can be added to dashboards   
 - Charts that you create for queries under your My Queries folder are visible only to you   
 - You can copy and email the URL of any chart page to share it with a project member 
-- For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
-- 
+- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)   
+
+
 ### Display of areas and iterations
 
 When you select **Area Path** or **Iteration Path**, only the leaf node appears in the chart. The leaf node is the last node of the full path. For example, ```Phone``` is the leaf node of ```FabrikamFiber/Fabrikam Website/Phone```. If your query contains a mixed level of leaf nodes, your chart might not reflect expected results.  
 
-Use ```Node Name```, the area path leaf node, to see if that improves your results. 
+Choose the **Node Name** field, the area path leaf node, to see if that improves your results. 
 
 Charts display in browsers that support Scalable Vector Graphics (SVG). This includes Edge, Internet Explorer 9 and Internet Explorer 10, Chrome, Firefox and Safari on Mac. Charts aren't optimized for mobile or touch displays.  
 
+### Sort by Value or Label 
+
+Most charts allow you to choose how you want to sort the data. 
+
+- **Value**: Sorts data by the numeric value 
+- **Label**: Sorts by the label selected for grouping the data
+ 
 ### Limited display of series 
 
 ::: moniker range="> tfs-2018"
@@ -243,7 +247,7 @@ The Pivot table displays a table of configurable rows and columns, with columns 
 The following image shows an example of active bugs assigned to developers and their current state.  
 
 > [!div class="mx-imgBorder"]  
-> ![Configure Chart dialog, Pivot table} (../../boards/queries/media/numeric/config-pivot-items-developer.png) 
+> ![Configure Chart dialog, Pivot table](../../boards/queries/media/numeric/config-pivot-items-developer.png) 
 
 ## Add a Trend chart  
 
@@ -314,7 +318,7 @@ To add other types of charts, such as test results and build summary charts, see
 ::: moniker range=">= tfs-2015"
 <a id="add-chart-widget"></a> 
 
-## Add a query-based chart widget to a dashboard   
+## Add a chart widget to a dashboard   
  
 If you've already defined your [flat list query](../../boards/queries/using-queries.md), you can add and configure a chart to a dashboard using the *Chart for work items* widget.  
 ::: moniker-end  
@@ -327,9 +331,9 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or get permissions to edit dashboards. 
 
-3. Choose the **Chart for work items** widget and then choose **Add**. 
+3. Choose the **Chart for work items** widget and then choose **Add**.  
 
-	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
+	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
 
 4. Choose the widget's ![ ](../../media/icons/dashboard-configure.png) gear icon to open the Configuration dialog. 
 
@@ -391,33 +395,9 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 ::: moniker-end
 
 
-## Related articles
-
-Now you know how to create status and trend charts for work items. A few things to keep in mind...
-
-- To create similar charts for tests, see [Track your test results](../../test/track-test-status.md)    
-- Charts you create for queries that are saved under Shared Queries are viewable by all team members and can be added to team dashboards or pinned to a team homepage   
-- Charts that you create for queries under your My Queries folder are visible only to you   
-- You can copy and email the URL of any chart page to share it with a team member 
-- For additional examples of charts created from numeric fields, see [Query by a numeric field](../../boards/queries/query-numeric.md). 
-
-Also, from the web portal, you can view the following charts:  
-
-- [Cumulative flow diagram](cumulative-flow.md)  
-- [Team velocity](team-velocity.md)  
-- [View/configure sprint burndown](configure-sprint-burndown.md)  
-- [Test progress and test results](../../test/track-test-status.md)  
-- [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
-- [Widget catalog charts](widget-catalog.md)    
-
-
-
-
-
-
 ::: moniker range=">= azure-devops-2019"
 
-### Widgets and Analytics data
+## Widgets and Analytics data
 
 ::: moniker-end
 
@@ -429,19 +409,24 @@ Analytics provides a number of [additional widgets based on Analytics data](../d
 
 ::: moniker range="azure-devops-2019"
 
-Analytics is in preview and provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
+Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md). The Analytics service is in preview for Azure DevOps Server 2019. 
  
 ::: moniker-end
 
-::: moniker range="<= tfs-2018"
+::: moniker range="< azure-devops"
 
-### Query-based charts versus Excel-generated PivotCharts  
+## Query-based charts versus Excel-generated PivotCharts  
 
-Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. 
+Query-based charts generate data from the work item tracking data store and therefore displays the most recent data. [Excel PivotCharts](../create-status-and-trend-excel-reports.md) access data published to the Analysis Services cube, which is refreshed every two hours by default. Excel charts require your project's project collection is configured with SQL Server Reporting Services and Analysis Services. 
 
 ::: moniker-end
 
-[add-a-team]: ../../organizations/settings/add-teams.md
-[team-assets]: ../../organizations/settings/manage-teams.md
-[add-team-members]: ../../organizations/settings/add-teams.md#add-team-members
-[add-team-admin]: ../../organizations/settings/add-team-administrator.md
+## Related articles
+
+- [Cumulative flow diagram](cumulative-flow.md)  
+- [Team velocity](team-velocity.md)  
+- [View/configure sprint burndown](configure-sprint-burndown.md)  
+- [Test progress and test results](../../test/track-test-status.md)  
+- [Add widgets and chart to a dashboard](add-widget-to-dashboard.md)
+- [Widget catalog charts](widget-catalog.md)    
+
