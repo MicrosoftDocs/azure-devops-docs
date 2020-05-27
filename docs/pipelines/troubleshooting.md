@@ -4,8 +4,9 @@ description: Learn how to troubleshoot builds and releases in Azure Pipelines an
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
-ms.custom: seodec18
-ms.date: 04/03/2020
+ms.custom: "seodec18, contentperfQ4"
+ms.topic: troubleshooting
+ms.date: 05/19/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -63,7 +64,23 @@ If your `pr` trigger isn't firing, and you are using Azure Repos, it is because 
 
 ### Branch filters in CI and PR triggers
 
-When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
+::: moniker range="<= azure-devops-2019"
+
+When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them.
+
+> [!IMPORTANT]
+> When you define a YAML PR or CI trigger, only branches explicitly configured to be included will trigger a run. Includes are processed first, and then excludes are removed from the list. If you specify an exclude but don't specify any includes, nothing will trigger. For more information, see [Triggers](yaml-schema.md#triggers).
+
+::: moniker-end
+
+::: moniker range="> azure-devops-2019"
+
+When you define a YAML PR or CI trigger, you can specify both `include` and `exclude` clauses for branches, tags, and paths. Ensure that the `include` clause matches the details of your commit and that the `exclude` clause doesn't exclude them. For more information, see [Triggers](yaml-schema.md#triggers).
+
+> [!NOTE]
+> If you specify an `exclude` clause without an `include` clause, it is equivalent to specifying `*` in the `include` clause.
+
+::: moniker-end
 
 ### Scheduled triggers
 

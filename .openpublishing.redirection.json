@@ -12738,6 +12738,11 @@
       "source_path": "docs/organizations/settings/azure-devops-auditing.md",
       "redirect_url": "/azure/devops/organizations/audit/azure-devops-auditing",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/test/load-test/app-service-web-app-performance-test.md",
+      "redirect_url": "/azure/devops/test/load-test/overview",
+      "redirect_document_id": false
     }
   ]
 }

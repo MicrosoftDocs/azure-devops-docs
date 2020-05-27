@@ -149,7 +149,7 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+[Scripting with Windows PowerShell](/powershell/scripting/overview)
 
 [Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 

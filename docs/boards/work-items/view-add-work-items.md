@@ -22,8 +22,6 @@ ms.date: 01/08/2018
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
-[!INCLUDE [temp](../includes/note-request-feedback.md)]
-
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 > [!NOTE]     
