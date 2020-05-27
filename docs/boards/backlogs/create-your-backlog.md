@@ -19,8 +19,6 @@ ms.date: 02/21/2020
 
 Your product backlog corresponds to your project plan, the roadmap for what your team plans to deliver. You create your product backlog by adding user stories, backlog items, or requirements. 
 
-[!INCLUDE [temp](../includes/note-request-feedback.md)] 
-
 After you define it, you have a prioritized list of features and requirements to build. Your backlog also provides a repository of all the information you need to track and share with your team.  
 
 [!INCLUDE [temp](../includes/note-configure-customize.md)]
