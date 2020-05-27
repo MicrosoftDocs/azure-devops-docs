@@ -12986,11 +12986,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/report/sharepoint-dashboards/toc.yml",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/toc",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/report/sharepoint-dashboards/upload-refresh-excel-reports.md",
       "redirect_url": "https://docs.microsoft.com/previous-versions/azure/report/sharepoint-dashboards/upload-refresh-excel-reports",
       "redirect_document_id": true
