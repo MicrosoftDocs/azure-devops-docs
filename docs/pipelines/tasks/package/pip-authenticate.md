@@ -67,7 +67,7 @@ For project scoped feeds that are in a different project than where the pipeline
     # Project scoped feeds must include the project name in addition to the feed name.
     artifactFeeds: project1/myTestFeed1, myTestFeed2
     # Setting this variable to "true" will force pip to get distributions from official python registry first and fallback to feeds mentioned above if distributions are not found there.
-    onlyAddExtraIndex: true
+      onlyAddExtraIndex: true
 
 # Use command line tool to 'pip install'.
 - script: |

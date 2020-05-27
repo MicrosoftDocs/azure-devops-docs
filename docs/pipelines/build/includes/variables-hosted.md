@@ -691,7 +691,7 @@ Otherwise, it is set to <code>False</code>.</td>
 
 <tr>
 <td>System.PullRequest.TargetBranch</td>
-<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code>. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>. This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
+<td>The branch that is the target of a pull request. For example: <code>refs/heads/master</code> when your repository is in Azure Repos and <code>master</code> when your repository is in GitHub. This variable is initialized only if the build ran because of a <a href="/azure/devops/repos/git/branch-policies#build-validation" data-raw-source="[Git PR affected by a branch policy](../../../repos/git/branch-policies#build-validation)">Git PR affected by a branch policy</a>. This variable is only available in a YAML pipeline if the PR is affected by a branch policy.</td>
 <td>No</td>
 </tr>
 
