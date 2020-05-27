@@ -20,7 +20,7 @@ To create a scale set agent pool, you will first create a scale set in your Azur
     
 ### Github packages support in YAML pipelines
 
-We have recently introduced a new resource type called **packages** that adds support for consuming **NuGet** and **npm** packages from GitHub as a resource in YAML pipelines. As part of this resource, you can now specify the package type (NuGet or npm) that you want to consume from GitHub. You can also enable automated pipeline triggers upon the release of a new package version. Today the support is only available for consuming packages from GitHub, but moving forward, we plan to extend the support to consume packages from other package repositories such as [NuGet](https://www.nuget.org), [npm](https://www.npmjs.com), [AzureArtifacts](https://azure.microsoft.com/en-us/services/devops/artifacts) and many more. Refer to the example below for details:
+We have recently introduced a new resource type called **packages** that adds support for consuming **NuGet** and **npm** packages from GitHub as a resource in YAML pipelines. As part of this resource, you can now specify the package type (NuGet or npm) that you want to consume from GitHub. You can also enable automated pipeline triggers upon the release of a new package version. Today the support is only available for consuming packages from GitHub, but moving forward, we plan to extend the support to consume packages from other package repositories such as [NuGet](https://www.nuget.org), [npm](https://www.npmjs.com), [AzureArtifacts](https://azure.microsoft.com/services/devops/artifacts) and many more. Refer to the example below for details:
 
 ```yml
 resources:
