@@ -106,5 +106,5 @@ For specific examples, see one of the following articles:
 
 - [Extend Analytics with OData](../extend-analytics/quick-ref.md)    
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
-- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
+- [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)  

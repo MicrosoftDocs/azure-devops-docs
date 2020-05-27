@@ -6,7 +6,7 @@ ms.assetid: D5989F1C-04D8-43EF-9212-AE70151C461C
 ms.topic: conceptual
 ms.author: shashban
 author: azooinmyluggage
-ms.date: 04/18/2020
+ms.date: 04/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -55,6 +55,21 @@ You can combine all three techniques within a release pipeline to fully achieve 
 
 In addition, you can install an extension that integrates with **ServiceNow** to help you control and manage your deployments
 though Service Management methodologies such as ITIL. For more information, see [Release deployment control using ServiceNow](servicenow.md).
+
+> [!NOTE]
+> The time delay before the pre-deployment gates are executed is capped at 48 hours. If you need to delay the overall launch of your gates instead, it is recommended to use a [delay task](../../tasks/utility/delay.md) in your release pipeline.
+
+```YAML
+# Delay
+# Delay further execution of a workflow by a fixed time
+jobs:
+- job: RunsOnServer
+  pool: Server
+  steps:
+  - task: Delay@1
+    inputs:
+      delayForMinutes: '0'
+```
 
 ## Related articles
 

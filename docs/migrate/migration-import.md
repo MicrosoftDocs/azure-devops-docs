@@ -719,6 +719,9 @@ The great news is that your team is now ready to begin the process of running an
 > [!NOTE]
 > Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
 
+> [!NOTE]
+> Azure Administrators can forbid users from creating new Azure DevOps organizations. If the [Restrict organization creation](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md) policy is set, then your import will fail to complete. Before you begin, verify that this is not set or that there is an exception for the user performing the migration.
+
 ### Considerations for rollback plans
 
 A common concern that teams have for the final production run is to think through what the rollback plan will be if anything goes wrong with import. This is also why we highly recommend doing a dry run to make sure you are able to test the import settings you provide to the data migration tool for Azure DevOps.

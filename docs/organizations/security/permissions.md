@@ -8,8 +8,9 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 03/24/2020  
----
+ms.date: 05/14/2020
+--- 
+
 
 
 # Permissions, users, and groups in Azure DevOps
@@ -31,7 +32,7 @@ To learn how to add users to a group or set a specific permission that you can m
 <h4>Users and groups</h4>
 <ul>
 <li><a href="set-project-collection-level-permissions.md">Add users to an administrator role</a></li>
-<li><a href="../accounts/add-team-members.md">Add users to an organization</a></li> 
+<li><a href="../accounts/add-organization-users.md">Add users to an organization</a></li> 
 <li><a href="add-users-team-project.md">Add users to a project or a team</a></li> 
 <li><a href="../settings/add-team-administrator.md">Make a user a team admin</a></li>
 </ul>
@@ -972,14 +973,11 @@ You manage collection-level permissions through the [web portal admin context](.
                 </p>
                 <ul>
                     <li>Add and administer teams and all team-related features</li>
-                    <li>Create and modify areas and iterations</li>
-                    <li>Edit check-in policies</li>
-                    <li>Edit shared work item queries</li>
+                    <li>Edit collection-level permissions for users and groups in the collection</li>
+                    <li>Add or remove collection-level security groups from the collection</li>
+                    <li>Implicitly allows the user to modify version control permissions </li>
                     <li>Edit project level and collection level permission ACLs</li>
-                    <li>Manage process templates</li>
-                    <li>Customize a project or process</li>
-                    <li>Create and modify global lists</li>
-                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project or collection level events.</li>
+                    <li>Edit <a href="#alerts"event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
                 <p>
                     When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
@@ -1382,14 +1380,11 @@ You manage project-level permissions from the [web portal admin context](set-pro
                     to perform these tasks for the project:
                 </p>
                 <ul>
-                    <li>Create and modify areas and iterations</li>
-                    <li>Edit check-in policies</li>
-                    <li>Edit shared work item queries</li>
+                    <li>Add and administer teams and all team-related features</li>
+                    <li>Edit project-level permissions for users and groups in the project</li>
+                    <li>Add or remove project-level security groups</li>
                     <li>Edit project level permission ACLs</li>
-                    <li>Manage process templates</li>
-                    <li>Customize a project</li>
-                    <li>Create and modify global lists</li>
-                    <li>Edit <a href="#alerts" data-raw-source="[event subscriptions](#alerts)">event subscriptions</a> (email or SOAP) on project level events.</li>
+                    <li>Edit <a href="#alerts">event subscriptions</a> (email or SOAP) for teams or project-level events.</li>
                 </ul>
             </blockquote>
         </td>
@@ -2113,8 +2108,8 @@ By default, the project level Readers groups have only Read permissions.
         <td id="git-create-branch-permission">Create branch</td>
         <td>
             Can create and publish branches in the repository. 
-            Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.
-            When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default.
+            Lack of this permission does not limit users from creating branches in their local repository; it merely prevents them from publishing local branches to the server.<br><br>
+            <blockquote><strong>NOTE</strong>: When a user creates a new branch on the server, they have Contribute, Edit Policies, Force Push, Manage Permissions, and Remove Others&#39; Locks permissions for that branch by default. This means that users can add new commits to the repo via their branch.</blockquote>
         </td>
     </tr>
     <tr>
@@ -3087,7 +3082,7 @@ You can manage alert permissions using [TFSSecurity](/azure/devops/server/comman
 
 - [About permissions](about-permissions.md)  
 - [Service accounts and dependencies](/azure/devops/server/admin/service-accounts-dependencies)
-- [Add users to an organization (Azure DevOps Services)](../accounts/add-team-members.md) 
+- [Add users to an organization (Azure DevOps Services)](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add users to an administrator role](/azure/devops/server/admin/add-administrator)   
 - [Make a user a team admin](../settings/manage-teams.md)  

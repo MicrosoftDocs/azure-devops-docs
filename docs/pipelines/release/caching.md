@@ -4,7 +4,7 @@ description: Improve pipeline performance by caching files, like dependencies, b
 ms.assetid: B81F0BEC-00AD-431A-803E-EDD2C5DF5F97
 ms.topic: conceptual
 ms.manager: adandree
-ms.date: 02/26/2020
+ms.date: 05/11/2020
 monikerRange: azure-devops
 ---
 
@@ -45,13 +45,16 @@ The `Cache` task has two required inputs: `key` and `path`.
 
 `key` should be set to the identifier for the cache you want to restore or save. Keys are composed of a combination of string values, file paths, or file patterns, where each segment is separated by a `|` character.
 
-* **Strings**: fixed value (like the name of the cache or a tool name) or taken from an environment variables (like the current OS or current job name)
+* **Strings**: <br>
+fixed value (like the name of the cache or a tool name) or taken from an environment variable (like the current OS or current job name)
 
-* **File paths**: path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This  could result in the task failing when this "file" does not exist. 
+* **File paths**: <br>
+path to a specific file whose contents will be hashed. This file must exist at the time the task is run. Keep in mind that *any* key segment that "looks like a file path" will be treated like a file path. In particular, this includes segments containing a `.`. This could result in the task failing when this "file" does not exist. 
   > [!TIP]
   > To avoid a path-like string segment from being treated like a file path, wrap it with double quotes, for example: `"my.key" | $(Agent.OS) | key.file`
 
-* **File patterns**: comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
+* **File patterns**: <br>
+comma-separated list of glob-style wildcard pattern that must match at least one file. For example:
   * `**/yarn.lock`: all yarn.lock files under the sources directory
   * `*/asset.json, !bin/**`: all asset.json files located in a directory under the sources directory, except under the bin directory
 
@@ -59,7 +62,7 @@ The contents of any file identified by a file path or file pattern is hashed to 
 
 Relative file paths or file patterns are resolved against `$(System.DefaultWorkingDirectory)`.
 
-#### Example
+**Example**:
 
 Here is an example showing how to cache dependencies installed by Yarn:
 
@@ -80,7 +83,7 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file which uniquely identifies the set of dependencies in the cache.
+In this example, the cache key contains three parts: a static string ("yarn"), the OS the job is running on since this cache is unique per operating system, and the hash of the `yarn.lock` file that uniquely identifies the set of dependencies in the cache.
 
 On the first run after the task is added, the cache step will report a "cache miss" since the cache identified by this key does not exist. After the last step, a cache will be created from the files in `$(Pipeline.Workspace)/.yarn` and uploaded. On the next run, the cache step will report a "cache hit" and the contents of the cache will be downloaded and restored.
 
@@ -99,7 +102,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 The above executables need to be in a folder listed in the PATH environment variable.
 Please note that the hosted agents come with the software included, this is only applicable for self-hosted agents. 
 
-#### Example
+**Example**:
 
 Here is an example on how to use restore keys by Yarn:
 
@@ -125,12 +128,12 @@ This will attempt to search for all keys that either exactly match that key or h
 For example, if the following key `yarn | $(Agent.OS) | old-yarn.lock` was in the cache where the old `yarn.lock` yielded a different hash than `yarn.lock`, the restore key will yield a partial hit.
 If there is a miss on the first restore key, it will then use the next restore key `yarn` which will try to find any key that starts with `yarn`. For prefix hits, the result will yield the most recently created cache key as the result.
 
+> [!NOTE]
+> A pipeline can have one or more caching task(s). There is no limit on the caching storage capacity, and jobs and tasks from the same pipeline can access and share the same cache.
+
 ## Cache isolation and security
 
 To ensure isolation between caches from different pipelines and different branches, every cache belongs to a logical container called a scope. Scopes provide a security boundary that ensures a job from one pipeline cannot access the caches from a different pipeline, and a job building a PR has read access to the caches for the PR's target branch (for the same pipeline), but cannot write (create) caches in the target branch's scope.
-
-> [!TIP]
-> Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
 
 When a cache step is encountered during a run, the cache identified by the key is requested from the server. The server then looks for a cache with this key from the scopes visible to the job, and returns the cache (if available). On cache save (at the end of the job), a cache is written to the scope representing the pipeline and branch. See below for more details.
 
@@ -158,6 +161,9 @@ When a cache step is encountered during a run, the cache identified by the key i
 | Intermediate branch (e.g. `refs/pull/1/merge`) | Yes | Yes |
 | Master branch | Yes | No |
 
+> [!TIP]
+> Because caches are already scoped to a project, pipeline, and branch, there is no need to include any project, pipeline, or branch identifiers in the cache key.
+
 ## Conditioning on cache restoration
 
 In some scenarios, the successful restoration of the cache should cause a different set of steps to be run. For example, a step that installs dependencies can be skipped if the cache was restored. This is possible using the `cacheHitVar` task input. Setting this input to the name of an environment variable will cause the variable to be set to `true` when there is a cache hit, `inexact` on a restore key cache hit, otherwise it will be set to `false`. This variable can then be referenced in a [step condition](../process/conditions.md) or from within a script.
@@ -183,7 +189,7 @@ steps:
 
 For Ruby projects using Bundler, override the `BUNDLE_PATH` environment variable used by Bundler to set the [path Bundler](https://bundler.io/v0.9/bundle_install.html) will look for Gems in.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -206,7 +212,7 @@ steps:
 
 [ccache](https://ccache.dev/) is a compiler cache for C/C++. To use ccache in your pipeline make sure `ccache` is installed, and optionally added to your `PATH` (see [ccache run modes](https://ccache.dev/manual/3.7.1.html#_run_modes)). Set the `CCACHE_DIR` environment variable to a path under `$(Pipeline.Workspace)` and cache this directory.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -235,7 +241,7 @@ https://ccache.dev/manual/latest.html#_configuration_settings) for more options,
 
 Using Gradle's [built-in caching support](https://docs.gradle.org/current/userguide/build_cache.html) can have a significant impact on build time. To enable, set the `GRADLE_USER_HOME` environment variable to a path under `$(Pipeline.Workspace)` and either pass `--build-cache` on the command line or set `org.gradle.caching=true` in your `gradle.properties` file.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -263,7 +269,7 @@ steps:
 
 Maven has a local repository where it stores downloads and built artifacts. To enable, set the `maven.repo.local` option to a path under `$(Pipeline.Workspace)` and cache this folder.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -283,11 +289,20 @@ steps:
 - script: mvn install -B -e
 ```
 
+If you are using a [Maven task](../tasks/build/maven.md), make sure to also pass the `MAVEN_OPTS` variable because it gets overwritten otherwise:
+
+```yaml
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m $(MAVEN_OPTS)'
+```
+
 ## .NET/NuGet
 
 If you use `PackageReferences` to manage NuGet dependencies directly within your project file and have `packages.lock.json` file(s), you can enable caching by setting the `NUGET_PACKAGES` environment variable to a path under `$(Pipeline.Workspace)` and caching this directory.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -311,7 +326,7 @@ There are different ways to enable caching in a Node.js project, but the recomme
 
 Because the default path to npm's shared cache directory is [not the same across all platforms](https://docs.npmjs.com/misc/config#cache), it is recommended to override the `npm_config_cache` environment variable to a path under `$(Pipeline.Workspace)`. This also ensures the cache is accessible from container and non-container jobs.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -338,7 +353,7 @@ If your project does not have a `package-lock.json` file, reference the `package
 
 Like with npm, there are different ways to cache packages installed with Yarn. The recommended way is to cache Yarn's [shared cache folder](https://yarnpkg.com/lang/en/docs/cli/cache/). This directory is managed by Yarn and contains a cached version of all downloaded packages. During install, Yarn checks this directory first (by default) for modules, which can reduce or eliminate network calls to public or private registries.
 
-### Example
+**Example**:
 
 ```yaml
 variables:
@@ -360,7 +375,7 @@ steps:
 
 For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
 
-### Example
+**Example**:
 
 ```yaml
 variables:

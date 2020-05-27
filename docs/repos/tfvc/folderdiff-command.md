@@ -48,7 +48,7 @@ tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:Team
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example,`http://myserver:8080/tfs/DefaultCollection`).</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>

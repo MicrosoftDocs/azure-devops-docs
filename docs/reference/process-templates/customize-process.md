@@ -181,6 +181,7 @@ When you add objects to a process template, you will want to make sure that you 
 |![Step 5](media/procguid_6.png "ProcGuid_6")|**Verify changes to process templates**. Before you put your process template in production mode and use it as the basis for several projects, you should verify that it is well-defined. You perform this task by systematically verifying that each object and artifact works as expected.<br /><br /> If you added a report, make sure that it appears in Team Explorer. If you added a field, make sure that you didn't introduce any schema conflicts.|  
   
 <a name="add_resources"></a> 
+
 ## Related articles 
 
 - [Process template and plug-in files](overview-process-template-files.md)
@@ -193,42 +194,42 @@ Sometimes third parties make available process templates that they've created. Y
 
  
 ### Required permissions 
+
 To download or upload process templates, you must either be a member of the **Project Collection Administrators** group, or your **Manage process template** permission must be set to **Allow**. See [Add accounts to administer project collections](../../organizations/security/set-project-collection-level-permissions.md).  
   
 ### Tools that support customizing a process template 
-You can use any text editor or XML editor to modify XML files. Or, you can use the Process Editor which requires that you have installed a version of Visual Studio):
-- For TFS 2017 and later versions, [install the TFS Process Template editor from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=KarthikBalasubramanianMSFT.TFSProcessTemplateEditor). You can use this version of the Process Editor to modify the old-style work item forms. You can't use it to edit forms associated with the [new web forms](../process/new-work-item-experience.md). 
-- For TFS 2015 and earlier versions, install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). 
 
-Or, you can use the [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub.      
+You can customize a process template using one of the following tools: 
 
-The Process Editor provides a user interface that you can use to customize the following areas:  
+- Any text editor or XML editor to modify XML files.  
+- [TFS Team Project Manager](https://github.com/jelledruyts/TfsTeamProjectManager), an open-source client available from GitHub. 
+- The Process Editor Tool.  
+	Based on the version of Visual Studio you have installed, get the Process Editor Tool from one of the following extensions. 
+
+	[!INCLUDE [temp](../../includes/process-editor-tool.md)]
+
+The Process Editor Tool provides a user interface that you can use to customize the following areas:  
   
 -   **Work item tracking**:    
-    -   Create and edit WIT definitions, including adding fields, changing workflows, and modifying work item forms    
+    -   Create and edit WIT definitions, including adding fields, changing workflows, and modifying old-style (pre-TFS 2017) work item forms    
     -   Add or edit categories for grouping work item types   
     -   Edit the process configuration for Agile planning tools    
     -   Create and edit work item queries, and organize queries into query folders   
     -   Create and edit link types  
-  
 -   **Project classifications and hierarchies**:    
     -   Create and edit product area paths    
     -   Create and edit milestone releases or iteration paths    
     -   Modify the mapping file for Microsoft Project  
-  
 -   **Security groups**: Create and edit TFS groups and their permissions  
-  
 -   **Version control**:  
-  
     -   Edit check-out settings    
     -   Create and edit check-in notes    
     -   Create and edit TFS groups and their permissions  
-  
 -   **Portal and reports**:    
     -   Review files to be uploaded and their folder structure    
     -   Add files to be uploaded.  
 
-You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](https://msdn.microsoft.com/80a9c78f-f495-4f54-99a1-b5e907afa319).  
+You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](/previous-versions/visualstudio/visual-studio-2010/ff678492(v=vs.100)).  
  
 
  

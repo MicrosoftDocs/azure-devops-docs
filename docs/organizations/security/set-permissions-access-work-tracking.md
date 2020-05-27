@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/15/2019
+ms.date: 04/23/2020
 ---
 
 # Set permissions and access for work tracking
@@ -79,48 +79,6 @@ Project collection-level permissions include all permissions you can set at the 
 </tr>
 </tbody>
 </table>
-
-## Edit project-level or collection-level/instance-level information
-
-The **Edit project-level information** and **Edit instance-level information** (also referred to as Edit collection-level information) provide permissions to several work tracking features as summarized below. To add users or set permissions at these levels, see [Add administrators, set permissions at the project-level or project collection-level](set-project-collection-level-permissions.md).
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Edit project-level information</th>
-<th width="65%">Edit instance-level information</th>
-</tr>
-
-<tr>
-<td>
-<ul>
-<li>Add and administer teams and all team-related features</li>
-<li>Create and modify areas and iterations</li>
-<li>Edit shared work item queries</li>
-<li>Edit project level permission ACLs</li>
-<li>Manage process templates</li>
-<li>Customize a project</li>
-<li>Create and modify global lists</li>
-<li>Edit event subscriptions (email or SOAP) on project level events.</li>
-</ul>
-</td>
-<td>
-<ul>
-<li>Add and administer teams and all team-related features</li>
-<li>Create and modify areas and iterations</li>
-<li>Edit check-in policies</li>
-<li>Edit shared work item queries</li>
-<li>Edit project level and collection level permission ACLs</li>
-<li>Manage process templates</li>
-<li>Customize a project or process</li>
-<li>Create and modify global lists</li>
-<li>Edit event subscriptions (email or SOAP) on project or collection level events.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 <a name="set-permissions-area-path" /> 
 

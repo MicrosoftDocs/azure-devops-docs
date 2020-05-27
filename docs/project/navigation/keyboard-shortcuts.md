@@ -8,16 +8,16 @@ ms.topic: reference
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-ms.date: 03/02/2020 
-monikerRange: '>= tfs-2013'
+ms.date: 04/22/2020 
+monikerRange: '>= tfs-2015'
 ---
 
 
 # Keyboard shortcuts for Azure DevOps and Team Explorer
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]    
 
-You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx) from the **Tools/Options/Environment/Keyboard** page.
+You can use the keyboard shortcuts listed in this article when you work within Azure DevOps or Team Explorer. In addition to these shortcuts, you can [assign your own shortcuts in Visual Studio](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio) from the **Tools/Options/Environment/Keyboard** page.
 
 For specific guidance on navigating within the web portal, see [Web portal navigation](index.md).
 
@@ -55,12 +55,10 @@ You can use these keyboard shortcuts when working in the web portal for Azure De
 
 
 
-::: moniker range=">= tfs-2015"
-
 ## Web portal, global shortcuts
 
 Type **?** to access the Global and page-specific shortcuts.   
-::: moniker-end
+
 
 ::: moniker range="tfs-2015"
 > [!NOTE]  
@@ -70,11 +68,8 @@ Type **?** to access the Global and page-specific shortcuts.
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/global-shortcuts.md)]
 
-::: moniker range=">= tfs-2015"
 
 Page-specific shortcuts only work when in a specific page. For example, type **g c** to open the **Code** page, and then type **c p** to create a pull request. These navigation shortcuts work as long as the focus is not on an input control.
-
-::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -94,38 +89,29 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Work Items 
 
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-items-page-shortcuts.md)]
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"
 
 ## Work item form shortcuts
 
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wi-form-shortcuts.md)]
 
-::: moniker range=">= tfs-2015"
+::: moniker-end
 
 ## Boards 
 
-::: moniker-end
-
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-board-shortcuts.md)]
-
 
 ## Backlogs 
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/work-backlog-shortcuts.md)]
 
-
-
-::: moniker range=">= tfs-2015"  
-
 ## Queries 
-
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/queries-shortcuts.md)]
 
@@ -133,18 +119,13 @@ Page-specific shortcuts only work when in a specific page. For example, type **g
 
 ## Plans
 
-::: moniker-end
+[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)] 
 
-[!INCLUDE [temp](../../includes/keyboard-shortcuts/delivery-plan-shortcuts.md)]  
-
-::: moniker range=">= tfs-2015"
+::: moniker-end 
 
 ## Test Plans, Parameters, and Runs  
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/test-shortcuts.md)]
-
-::: moniker-end
-
 
 ::: moniker range=">= tfs-2018"  
 
@@ -199,9 +180,10 @@ You can use query results shortcuts whenever you have a list of work items, such
 
 ## Related articles 
 
-- [Keyboard shortcuts for Microsoft Test Manager](https://msdn.microsoft.com/library/ff458183.aspx)  
-- [Customize Visual Studio keyboard shortcuts](https://msdn.microsoft.com/library/5zwses53.aspx)  
-- [Default keyboard shortcuts for Visual Studio](https://msdn.microsoft.com/library/da5kh0wa.aspx)  
+
+- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/ff458183(v=vs.140))  
+- [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
+- [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
 - [Web portal navigation](..//navigation/index.md) 
 
