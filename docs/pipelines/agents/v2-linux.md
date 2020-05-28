@@ -363,7 +363,7 @@ It's important to avoid situations in which the agent fails or become unusable b
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

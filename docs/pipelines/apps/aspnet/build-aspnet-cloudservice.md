@@ -50,7 +50,7 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 * <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/media/azure-cloud-service-deployment-icon.png"/> An Azure Cloud Service</a>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

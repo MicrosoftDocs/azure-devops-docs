@@ -74,7 +74,7 @@ Hosted Ubuntu and Hosted macOS run 64-bit operating systems and run only 64-bit 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

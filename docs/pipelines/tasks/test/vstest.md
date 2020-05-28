@@ -97,7 +97,7 @@ The vstest demand can be satisfied in two ways:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### How can I run tests that use TestCase as a data source?
 

@@ -389,7 +389,7 @@ You can use the template described above as to facilitate generating other kinds
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

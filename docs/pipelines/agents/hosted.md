@@ -238,7 +238,7 @@ Microsoft-hosted agents do not offer:
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
-## Q & A
+## FAQ
 
 ### How can I see what software is included in an image?
 

@@ -1044,7 +1044,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 ::: moniker range=">= tfs-2017"
 
-## Q & A
+## FAQ
 
 ### Where can I read articles about DevOps and CI/CD?
 

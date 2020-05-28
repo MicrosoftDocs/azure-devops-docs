@@ -407,7 +407,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ::: moniker range="azure-devops"
 
-## Q & A
+## FAQ
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 

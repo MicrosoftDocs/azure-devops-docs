@@ -430,7 +430,7 @@ This setting is always true on non-Windows agents.
 
 When using an Other/external Git repository, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
 

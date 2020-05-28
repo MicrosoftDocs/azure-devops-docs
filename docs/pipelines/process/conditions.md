@@ -178,7 +178,7 @@ jobs:
   - script: echo "Job Foo ran and doThing is Yes."
 ```
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -99,7 +99,7 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
