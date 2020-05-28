@@ -19,7 +19,7 @@ Use this task to copy files from a source folder to a target folder on a remote 
 
 This task allows you to connect to a remote machine using SSH and copy files matching a set of minimatch patterns from specified
 source folder to target folder on the remote machine. Supported protocols for file transfer are SFTP and SCP via SFTP.
-In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
+In addition to Linux, macOS is partially supported (see [FAQ](#is-this-task-supported-for-target-machines-running-operating-systems-other-than-linux)).
 
 ::: moniker range="<= tfs-2018"
 
