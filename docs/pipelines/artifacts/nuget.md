@@ -203,7 +203,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 

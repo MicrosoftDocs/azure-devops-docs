@@ -72,7 +72,7 @@ Requires the Package Management extension.
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
 
-## Q&A
+## FAQ
 
 ### How do I find the id of the feed (or project) I want to download my artifact from
 

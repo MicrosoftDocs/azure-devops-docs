@@ -48,7 +48,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
-## Q&A
+## FAQ
 
 <h3 id="new_solution">How do I create a Docker-enabled ASP.NET Core solution?</h3>
 

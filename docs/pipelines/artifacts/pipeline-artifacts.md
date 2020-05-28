@@ -304,7 +304,7 @@ When migrating from build artifacts to pipeline artifacts:
 
 3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
 
-## Q&A
+## FAQ
 
 ### Can this task publish artifacts to a shared folder or network path?
 
