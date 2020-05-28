@@ -180,7 +180,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
     command: 'test'
 ```
 
-## Q & A
+## FAQ
 
 ### Why is my build, publish, or test step failing to restore packages?
 

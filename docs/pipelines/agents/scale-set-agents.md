@@ -201,7 +201,7 @@ To achieve maximum stability, scale set operations are done sequentially.  For e
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 <a name="q-a"></a>
-## Q & A
+## FAQ
 
 * [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
 * [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)

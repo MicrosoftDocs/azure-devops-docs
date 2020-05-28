@@ -493,7 +493,7 @@ If either your GitHub repository or your pipeline is private, we still provide a
 
 Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
 
-## Q & A
+## FAQ
 
 ### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?
 

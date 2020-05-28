@@ -65,7 +65,7 @@ In addition to Linux, macOS is partially supported (see [Q&A](#is-this-task-supp
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]
