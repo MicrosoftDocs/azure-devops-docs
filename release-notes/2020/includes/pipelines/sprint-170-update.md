@@ -49,7 +49,7 @@ By default, packages are not automatically downloaded in your jobs, hence why we
 
 We have now added 'tags' support for pipeline resources in YAML. You can use tags to control the default version of the CI pipeline resource or when to automatically trigger.
 
-```yaml
+```yml
 resources:
  pipelines:
    - pipeline: MyCIAlias
@@ -64,4 +64,6 @@ resources:
         - Signed
 ```
 
-You can also define the default version of the pipeline resource to be consumed based on tags. Similarly, you can choose to trigger your CD pipeline based on the tags that are set on your CI pipeline. You can also add tags to existing CI pipeline run to trigger your CD pipeline.
+The tags in the source section (i.e. top level tags) are used to resolve the default version for the pipeline resource (CI run) when the CD pipeline run is not triggered by the resource i.e. some other resource or schedule triggered the run. For instance, you have a schedule trigger set for your CD pipeline. However, you want to consume only the latest run of the CI pipeline resource which is tagged as production.
+
+The tags under the trigger section ensure that the CD pipeline is triggered only if the tag condition is met by CI completion event. You can also add tags to existing CI pipeline run to trigger your CD pipeline.
