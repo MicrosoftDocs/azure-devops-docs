@@ -12,10 +12,10 @@ We are previewing a new feature called scale set agents which pairs the convenie
 -	need more memory, more processor, more storage, or more I/O than what we offer in native Microsoft-hosted agents
 -	do not want to whitelist a large number of IP addresses within your corporate firewall to enable Microsoft-hosted agents to communicate with your servers
 -	need more Microsoft-hosted agents than we can provide to meet your large scale needs
--	can't partition Microsoft-hosted parallel jobs to individual projects or teams in your organization
--	don't want to run dedicated agents around the clock but instead want to de-provision agent machines that are not being actively utilized
+-	need to partition Microsoft-hosted parallel jobs to individual projects or teams in your organization
+-	do not want to run dedicated agents around the clock but instead want to de-provision agent machines that are not being actively utilized
 
-To create a scale set agent pool, you will first create a scale set in your Azure subscription, and then create an agent pool in Azure Pipelines to point to that scale set. Azure Pipelines will automatically scale this pool based on the number of pending jobs and the number of idle machines that you wish to maintain at all times. For more information, see scale set agents. As you preview the feature, please include your feedback on the documentation page.
+To create a scale set agent pool, you will first create a scale set in your Azure subscription, and then create an agent pool in Azure Pipelines to point to that scale set. Azure Pipelines will automatically scale this pool based on the number of pending jobs and the number of idle machines that you wish to maintain at all times. For more information, see [scale set agents](https://docs.microsoft.com/azure/devops/pipelines/agents/scale-set-agents?view=azure-devops). As you preview the feature, please include your feedback on the documentation page.
 
 
     
@@ -45,11 +45,11 @@ By default, packages are not automatically downloaded in your jobs, hence why we
   - getPackage: myPackageAlias # Alias of the package resource
 ```
 
-### Tag filter support for pipeline resources
+### Tag filter support for pipeline resources'
 
-We have now enabled support for adding tags to your **yaml pipeline** resources. You can use tags to control what version of the CI pipeline to run, or when to automatically trigger. See the example below:
+We have now added 'tags' support for pipeline resources in YAML. You can use tags to control the default version of the CI pipeline resource or when to automatically trigger.
 
-```yml
+```yaml
 resources:
  pipelines:
    - pipeline: MyCIAlias
@@ -64,4 +64,7 @@ resources:
         - Signed
 ```
 
-You can also define the default version of the pipeline resource to be consumed based on tags. Similarly, you can choose to trigger your CD pipeline based on the tags that are set on your CI pipeline. You can also add tags to existing CI pipeline run to trigger your CD pipeline.
+The tags in the source section (i.e. top level tags) are used to resolve the default version for the pipeline resource (CI run) when the CD pipeline run is not triggered by the resource i.e. some other resource or schedule triggered the run. For instance, you have a schedule trigger set for your CD pipeline however you want to consume only the latest run of the CI pipeline resource which is tagged as production.
+
+The tags in the triggers section ensure the CD pipeline is triggered only if the tag condition is met by CI completion event. You can also add tags to existing CI pipeline run to trigger your CD pipeline.
+
