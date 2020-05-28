@@ -16,12 +16,9 @@ ms.date: 05/28/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-With team's configured and working backlogs, you're ready to start viewing and monitoring progress. 
+With team's configured and working backlogs and boards, you're ready to start viewing and monitoring progress. 
 
-<!--- Ceremonies, events, milestones, planning and review -->
-
-
-Azure Boards provides a number of in-context charts, dashboard widgets, and work tracking charts that allow you to monitor and report on a variety of SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
+Azure Boards provides a number of in-context charts and dashboard widgets that allow you to monitor and report on a variety of SAFe® metrics. Specifically Azure Boards provides access to the following tools to support teams in deriving SAFe® metrics and monitoring and reporting progress. 
 
 - Rollup columns on backlogs 
 - In-context reports 
