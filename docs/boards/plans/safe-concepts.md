@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/18/2020
+ms.date: 05/28/2020
 ---
 
 
@@ -186,7 +186,7 @@ Resources that are shared across teams can be represented through their own Agil
 Here we show how area paths are assigned to the UX Design team, and then selective sub-area paths to other Agile teams. Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
 
 > [!div class="mx-imgBorder"]
-> ![Budget estimate rollup](media/safe/shared-services-team-structure.png)
+> ![Shared services area path and team structure](media/safe/shared-services-team-structure.png)
 
 
 <a id="retrospectives" />

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/18/2020
+ms.date: 05/28/2020
 ---
 
 
@@ -60,6 +60,9 @@ In this way, all teams can manage their own workload and priorities while clearl
 All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
 In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hiearchical structure. Next, will define the iteration paths to support the release structure we want and the program and Agile teams to use. Lastly, we'll configure each team and populate the membership of teams.  
 
+
+<a id="define-teams" />
+
 ## Define your teams 
 
 To start, we'll simply add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
@@ -97,6 +100,7 @@ Add each team, one by one.
 
 1. Optional. If you have two or more Portfolio teams, create a team for each of them.   
 
+<a id="configure-area-paths" /> 
 
 ## Configure Area Paths 
 
@@ -160,6 +164,8 @@ If you already have iterations for your default team, you can rename them. You'l
 
 	> [!TIP]
 	> You can drag and drop Iteration Paths to structure your iterations, similar to as shown in Step 2 under Configure Area Paths. Azure Boards always lists the iteration paths in order of their dates under each parent node. 
+
+<a id="configure-your-teams" /> 
 
 ## Configure your teams 
 
@@ -327,6 +333,38 @@ These are the recommended settings to make based on the team level.
 
 	> [!div class="mx-imgBorder"]
 	> ![Project configuration, Areas](media/safe-configure/area-path-structure-corrected.png) 
+
+
+## Configure teams to support Shared Services 
+
+For teams that support several other teams, such as a UX Design team, configure your teams as described in the following steps. 
+
+1. Add a team for each Shared Services team. Refer to [Define your teams](#define-teams) for details.  
+
+1. Return to the **Project configuration>Area Paths** page and under each shared services area path, add sub-area paths for each Agile team supported by the shared services. For details, see [Configure Area Paths](#configure-area-paths) provided earlier in this article. 
+
+    For example, here we add four sub-area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Shared services sub area paths](media/safe/shared-services-sub-area-paths.png.png)
+
+1. Configure each Shared Services teams as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
+
+1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Add the sub-area path for that team.   
+
+    Here we add the **UX Design\App** sub-area path to the App feature team.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Budget estimate rollup](media/safe-configure/add-area-path-app-team-shared-services.png)
+
+1. Return to the **Project configuration>Area Paths** page and verify that the Area Path structure appears as expected for each Shared Services area path. 
+
+    For the UX Design team, the structure should appear as shown.  
+
+	> [!div class="mx-imgBorder"]
+	> ![Shared services area path and team structure](media/safe/shared-services-team-structure.png)
+
+    Work items that appear on shared area paths appear on the backlogs and boards of the associated teams. 
 
 
 <a id="programmatic-tools" /> 
