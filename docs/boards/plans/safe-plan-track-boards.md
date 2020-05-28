@@ -29,8 +29,6 @@ This article walks you through some of the basic tools you'll use to plan and tr
 > - Review program features
 > - Review portfolio epics 
 
-> [!TIP]    
-> If you have a number of Epics, Features, or Stories already defined, you can bulk import them using a CSV file or through Excel. Also, you can use these tools to update a number of fields to existing work items. To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 [!INCLUDE [temp](../includes/note-safe-articles.md)]
 
@@ -51,7 +49,7 @@ You can import work items using Excel. As shown in the following image, Epics, F
 
 Once you publish the list, work item IDs are assigned. Each team can then start working with their work items, adding details and assigning work to team members and to sprints. 
 
-To learn more, see [Bulk add or modify work items with Excel](../backlogs/office/bulk-add-modify-work-items-excel.md). 
+To learn more about bulk update, see the [Bulk add or update work items](#bulk-update) section provided later in this article. 
 
 ### Document Portfolio Vision and Strategic Themes  
 
