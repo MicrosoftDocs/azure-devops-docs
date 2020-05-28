@@ -12911,11 +12911,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/report/sharepoint-dashboards/includes/about-sharepoint-deprecation.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/includes/about-sharepoint-deprecation",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/report/sharepoint-dashboards/about-sharepoint-integration.md",
       "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": true
