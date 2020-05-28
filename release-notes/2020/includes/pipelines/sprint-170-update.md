@@ -45,7 +45,7 @@ By default, packages are not automatically downloaded in your jobs, hence why we
   - getPackage: myPackageAlias # Alias of the package resource
 ```
 
-### Tag filter support for pipeline resources'
+### Tag filter support for pipeline resources
 
 We have now added 'tags' support for pipeline resources in YAML. You can use tags to control the default version of the CI pipeline resource or when to automatically trigger.
 
