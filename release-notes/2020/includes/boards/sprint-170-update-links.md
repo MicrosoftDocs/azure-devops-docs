@@ -7,3 +7,4 @@ ms.topic: include
 ---
     
 - [Add "Parent Work Item" filter to the task board and sprint backlog](#add-parent-work-item-filter-to-the-task-board-and-sprint-backlog)
+- [Improve error handling experience –– required fields on Bug/Task](#improve-error-handling-experience-required-fields-on-bug/task)
