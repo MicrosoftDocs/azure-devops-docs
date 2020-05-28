@@ -25,16 +25,17 @@ This tutorial walks you through the steps to convert a new project with a single
 > * Define Iteration Paths to support SAFe® release trains, PIs, sprints, and IPs  
 > * Configure each team to support SAFe® 
 
-You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.   
-
-[!INCLUDE [temp](../includes/note-safe-articles.md)]
- 
-If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. 
+You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.  
 
 Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
 
 > [!TIP]   
 > If you plan to add custom work item types, portfolio backlogs, or workflows; you may want to make those customizations first and then define and configure your teams. 
+ 
+If you're new to Azure Boards, we recommend that you review [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md) and [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md) prior to adding and configuring your teams. Also, two excellent articles to review around team structure and Agile culture are [Agile principles in practice](/azure/devops/learn/devops-at-microsoft/agile-principles-in-practice) and [Building productive, customer focused teams](/azure/devops/learn/agile/productive-teams). 
+
+
+[!INCLUDE [temp](../includes/note-safe-articles.md)]
 
 ## Team hierarchy 
 
@@ -239,7 +240,7 @@ These are the recommended settings to make based on the team level.
       Backlog Iteration
    :::column-end:::
    :::column span=""::: 
-      Fabrikam\PI 1 
+      Fabrikam
    :::column-end:::
    :::column span=""::: 
       Fabrikam 
@@ -277,7 +278,15 @@ These are the recommended settings to make based on the team level.
    :::column-end:::
 :::row-end:::
 
+   
+   
+
 ***
+
+
+> [!NOTE]
+> By setting the Default Iteration to **@CurrentIteration**, all work items created from the team's backlog or board are assigned to the current iteration based on the current date. By setting the Backlog Iteration to the root, **Fabrikam**, indicates that only the Area Path acts as a filter for work items to appear on the team backlogs and boards. 
+
 
 1. From the **Project Settings** page, choose **Team configuration**.  
 
@@ -325,7 +334,10 @@ These are the recommended settings to make based on the team level.
 	Open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Exclude sub areas**.   
 
 	> [!div class="mx-imgBorder"]
-	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png) 
+	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png)  
+
+	> [!NOTE]
+	> Because we created each team with the **Create an area path with the name of the team** checked, each team is already preconfigured with their default area path. This Area Path acts as the main filter for work items that appear on each team's backlogs and boards. 
 
 1. Repeat steps 2 through 5 as needed for each team you need to configure. 
 
@@ -346,11 +358,11 @@ For teams that support several other teams, such as a UX Design team, configure 
     For example, here we add four sub-area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Shared services sub area paths](media/safe/shared-services-sub-area-paths.png.png)
+	> ![Shared services sub area paths](media/safe-configure/shared-services-sub-area-paths.png.png)
 
-1. Configure each Shared Services teams as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
+1. Configure each Shared Services team as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
 
-1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Add the sub-area path for that team.   
+1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Choose **Select areas** and add the sub-area path for that team.   
 
     Here we add the **UX Design\App** sub-area path to the App feature team.  
 

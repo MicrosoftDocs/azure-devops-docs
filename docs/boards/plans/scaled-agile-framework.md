@@ -39,7 +39,8 @@ The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of
 
 ### SAFe® architectural overview version 5.0 
 
-![SAFe® architectural overview version 5 &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
+![SAFe® architectural overview version 5 &copy; D. Leffing](media/safe/safe-concepts-poster-v5.0-a.png)  
+
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
@@ -50,6 +51,8 @@ Many SAFe® practices include growing a culture that supports agility, alignment
 
 ![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
 
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
+
 Some of the ways Azure Boards supports business agility and agile culture are discussed in the following articles: 
 - [Agile culture](agile-culture.md)
 - [Practices that scale](practices-that-scale.md)
@@ -59,6 +62,8 @@ Some of the ways Azure Boards supports business agility and agile culture are di
 Essential SAFe&reg; requires support for the artifacts and practices illustrated in the following poster. 
 
 ![Essential SAFe® poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
+
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
  
 All of these artifacts and practices are supported by Azure Boards. 
 
@@ -78,6 +83,8 @@ Portfolio SAFe® adds support for managing portfolios through epics, enablers, a
 
 ![Portfolio SAFe® poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
 
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
+
 Azure Boards provides supports for portfolio components includes the following:
 
 - **Epics**: Map to the Epic work item type and allow tracking, grouping, and rollup of child items. 
@@ -92,6 +99,7 @@ Azure Boards provides supports for portfolio components includes the following:
 Large Solutions SAFe® includes support for a Solution Backlog, Solution Trains, and Capabilities.   
 
 ![Large Solution SAFe® poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support additional solution requirements.       
 
@@ -358,27 +366,33 @@ Each of the following articles within this suite of tutorials provide details on
 - [Agile culture](agile-culture.md)
 - [Practices that scale](practices-that-scale.md)
 - [About Sprints, Scrum and project management](../sprints/scrum-overview.md)
-- [About Boards and Kanban](../boards/kanban-overview.md)  
+- [About Boards and Kanban](../boards/kanban-overview.md) 
 - [Scaled Agile Framework](http://scaledagileframework.com/): SAFe® resource site.  
 - [SAFe® in 7 minutes](http://www.youtube.com/watch?feature=player_embedded&v=RXzurBazN-I): video from Inbar Oren, the Lean Samurai.
-
+- [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
 
 <!---
-- [Scaling Agile and SAFe® Metrics with TFS](http://www.incyclesoftware.com/2014/08/scaling-agile-and-safe-metrics-with-tfs/): Blog post that illustrates a SQL Server report developed by InCycle to illustrate how TFS can be used to support scaled agile or SAFe.    
-- [Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
- 
+[Out of the box Reports (SQL Server Reporting Services)](../../report/sql-reports/reporting-services-reports.md): Summarizes the reports TFS provides to monitor progress and code quality.  
 -->
 
 ### About the authors
 
-This article has been updated from the previous white paper developed in collaboration with the following authors:  
+Many thanks to the following contributors for their review and feedback to the current content. 
+
+- Phillip Eng is a Senior Architect at Microsoft, Digital Pursuit and Guidance. 
+- Hosam Kamel is a technology solution professional for Microsoft and ALM Ranger.
+- Willy-Peter Schaub is a former program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. You can follow him on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).  
+
+
+The articles in this series were updated from a previous white paper developed in collaboration with the following authors:  
+ 
 - Gordon Beeming is a Software Developer at Derivco in the sunny city of Durban, South Africa. He spends most his time hacking away at the keyboard in Visual Studio or with his family relaxing. His blog is at [31og.com](https://lazy-developer.xyz/) and you can follow him on Twitter at [twitter.com/gordonbeeming](http://twitter.com/gordonbeeming).  
 - Brian Blackman is a principal consultant with Microsoft Premier Developer, focusing on affecting ISV partners and Enterprises success in engineering and the marketplace. He has an MBA, and is a CSM, CSP, MCSD (C++), and MCTS and is a Visual Studio ALM Ranger. When he is not Ruck Mastering and contributing to Visual Studio ALM Ranger projects, he spends his time writing code, creating and delivering workshops, and consulting in various concentrations, especially helping organizations in their quest for business agility.  
 - Gregg Boer is a principal program manager at Microsoft. Gregg is the product owner for the Agile management experience provided by Azure DevOps and on-premises TFS.
 - Kathryn Elliott is a senior technical writer at Microsoft.  
 - Susan Ferrell is a senior technical writer and a Visual Studio ALM Ranger.  
 - Willy-Peter Schaub is a former program manager with the Visual Studio ALM Rangers at the Microsoft Canada Development Center. Since the mid-'80s, he has been striving for simplicity and maintainability in software engineering. You can follow him on Twitter at [twitter.com/wpschaub](https://twitter.com/wpschaub).  
-- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM Ranger), Richard Hundhausen (independent consultant, ALM Ranger) and Bill Heys (independent consultant, ALM Ranger), Hosam Kamel (technology solution professional for Microsoft and ALM Ranger).  
+- Special thanks to the following technical experts for reviewing this article: Mike Douglas (independent consultant, ALM Ranger), Richard Hundhausen (independent consultant, ALM Ranger) and Bill Heys (independent consultant, ALM Ranger).  
 
 
 
