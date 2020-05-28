@@ -358,7 +358,7 @@ For teams that support several other teams, such as a UX Design team, configure 
     For example, here we add four sub-area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Shared services sub area paths](media/safe-configure/shared-services-sub-area-paths.png.png)
+	> ![Shared services sub area paths](media/safe-configure/shared-services-sub-area-paths.png)
 
 1. Configure each Shared Services team as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
 
