@@ -893,7 +893,7 @@ In each step where you need to use the `nvm` command, you'll need to start the s
     nvm <command>
 ```
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the Package Management service?
 

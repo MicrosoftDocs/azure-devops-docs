@@ -36,7 +36,7 @@ To create both the build (CI) and release (CD) pipelines for a project, in Visua
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
