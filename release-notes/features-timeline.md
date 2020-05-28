@@ -1,8 +1,8 @@
 ---
 title: Azure DevOps Feature Timeline
-author: gloridelmorales
-ms.author: glmorale
-ms.date: 04/30/2020
+author: sid-ah
+ms.author: simerzou
+ms.date: 05/28/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
