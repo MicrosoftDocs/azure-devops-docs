@@ -8,9 +8,9 @@ ms.date: 05/07/2020
 monikerRange: '=azure-devops'
 ---
 
-# Use an Azure Resource Manager (ARM) template to deploy an app
+# How to deploy an app using Azure Resource Manager (ARM) template
 
-Get started with [ARM templates](/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
+This tutorial will get you started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
 In this article, you will learn how to use the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
 
@@ -35,7 +35,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 1. Sign in to your Azure DevOps organization and navigate to your project.
 
-2. Go to **Pipelines**, and then select **New Pipeline**.
+2. Go to **Pipelines**, and then select **Create Pipeline**.
 
 3. Select **GitHub** as the location of your source code. 
 
@@ -55,7 +55,8 @@ https://github.com/Azure/azure-quickstart-templates/
 
 7. Create three variables:  `siteName`, `administratorLogin`, and `administratorLoginPassword`. `administratorLoginPassword` needs to be a secret variable.
     * Select **Variables**. 
-    * Add the three variables. When you create `administratorLoginPassword`, select **Keep this value secret**. 
+    * Use the `+` sign to add three variables. When you create `administratorLoginPassword`, select **Keep this value secret**.
+    * Click **Save** when you are done.
         
    |Variable  |Value  |Secret?  |
    |---------|---------|---------|
@@ -69,28 +70,32 @@ https://github.com/Azure/azure-quickstart-templates/
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-8" highlight="1-2":::
 
 
-9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. 
+9. Add the Copy Files task to the YAML file. You will use the `101-webapp-linux-managed-mysql` project. See [Build a Web app on Linux with Azure database for MySql](https://github.com/Azure/azure-quickstart-templates/tree/master/101-webapp-linux-managed-mysql) repo for more details. 
 
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-15" highlight="10-15":::
 
-10. Add and configure the **Azure Resource Group Deployment** task. The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when configuring your task. 
+10. Add and configure the **Azure Resource Group Deployment** task. 
+    
+    The task references both the artifact you built with the Copy Files task and your pipeline variables. Set these values when   configuring your task.
 
-   - **Deployment scope (deploymentScope)**: Set the deployment scope to `Resource Group`. You can target your deployment to a management group, an Azure subscription, or a resource group. 
-   - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To a configure new service connection, select the Azure subscription from the list and select **Authorize**.
-   - **Subscription (subscriptionId)**: Select the subscription where the deployment should go.
-   - **Action (action)**: Set to `Create or update resource group` to creates a new resource group or to update an existing one. 
-   - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.
-   - **Location(location)**: Location for deploying the resource group. Set to your closest location. If the resource group already exists in your subscription, this value will be ignored.
-   - **Template location (templateLocation)**: Set to `Linked artifact`. This is location of your template and the parameters files.
-   - **Template (cmsFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
-   - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
-   - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
-   - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
+    - **Deployment scope (deploymentScope)**: Set the deployment scope to `Resource Group`. You can target your deployment to a management group, an Azure subscription, or a resource group. 
+    - **Azure Resource Manager connection (azureResourceManagerConnection)**: Select your Azure Resource Manager service connection. To a configure new service connection, select the Azure subscription from the list and select **Authorize**. See [Connect to Microsoft Azure](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops) for more details
+    - **Subscription (subscriptionId)**: Select the subscription where the deployment should go.
+    - **Action (action)**: Set to `Create or update resource group` to creates a new resource group or to update an existing one. 
+    - **Resource group**: Set to`ARMPipelinesLAMP-rg` to name your new resource group. If this is an existing resource group, it will be updated.
+    - **Location(location)**: Location for deploying the resource group. Set to your closest location (E.g. West US). If the resource group already exists in your subscription, this value will be ignored.
+    - **Template location (templateLocation)**: Set to `Linked artifact`. This is location of your template and the parameters files.
+    - **Template (cmsFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
+    - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
+    - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
+    - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
    
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-29" highlight="17-29":::
 
 
-11. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+11. Click **Save and run** when you are done. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
+
+12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
 
