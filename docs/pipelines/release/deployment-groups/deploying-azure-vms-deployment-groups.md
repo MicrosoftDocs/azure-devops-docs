@@ -45,7 +45,7 @@ The following resources are provisioned on the Azure using an ARM template:
 - SQL server VM (DB server)
 - Azure Network Load Balancer
 
-1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**.
+1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. Note that the **Env Prefix Name** is prefixed to all of the resource names in order to ensure that those resources are generated with globally unique names. If you see a naming conflict error, try changing this parameter.
 
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
