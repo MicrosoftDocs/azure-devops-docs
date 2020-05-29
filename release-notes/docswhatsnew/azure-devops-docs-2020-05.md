@@ -12,52 +12,52 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 
 ### Updated articles
 
-- [Bulk add or modify work items with Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) - Content performance updates to Bulk modify with Excel
-- [Link type reference](../boards/queries/link-type-reference.md) - Update list link types
+- [Bulk add or modify work items with Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) - Content performance updates to Bulk modify with Excel
+- [Link type reference](/azure/devops/boards/queries/link-type-reference) - Update list link types
 
 ## Integrate
 
 ### Updated articles
 
-- [Rate limits](../integrate/concepts/rate-limits.md) - Publish details about rate limit headers
+- [Rate limits](/azure/devops/integrate/concepts/rate-limits) - Publish details about rate limit headers
 
 ## Organizations
 
 ### New articles
 
-- [Create auditing streaming](../organizations/audit/auditing-streaming.md) - Auditing streaming
+- [Create auditing streaming](/azure/devops/organizations/audit/auditing-streaming) - Auditing streaming
 
 ### Updated articles
 
-- [Add users and manage access in Azure DevOps](../organizations/accounts/add-organization-users.md) - Accounts docset improvements cont., merge articles add users
+- [Add users and manage access in Azure DevOps](/azure/devops/organizations/accounts/add-organization-users) - Accounts docset improvements cont., merge articles add users
 
 ## Pipelines
 
 ### New articles
 
-- [How to deploy an app using Azure Resource Manager (ARM) template](../pipelines/apps/cd/azure/deploy-arm-template.md) - ARM Template with Azure Pipelines
+- [How to deploy an app using Azure Resource Manager (ARM) template](/azure/devops/pipelines/apps/cd/azure/deploy-arm-template) - ARM Template with Azure Pipelines
 
 ### Updated articles
 
-- [Microsoft-hosted agents](../pipelines/agents/hosted.md)
+- [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted)
   - Updates to hosted agents topic to address support questions
   - How to retrieve hosted agent IP ranges from the Weekly file example
-- [Build, test, and deploy JavaScript and Node.js apps](../pipelines/ecosystems/javascript.md) - Updating Javascript to fix multiple issues
-- [Expressions](../pipelines/process/expressions.md) - Adding stage dependencies
-- [Release artifacts and artifact sources](../pipelines/release/artifacts.md) - Release artifacts and artifacts sources
-- [Classic release and artifacts variables](../pipelines/release/variables.md) - Release and artifacts variables
+- [Build, test, and deploy JavaScript and Node.js apps](/azure/devops/pipelines/ecosystems/javascript) - Updating Javascript to fix multiple issues
+- [Expressions](/azure/devops/pipelines/process/expressions) - Adding stage dependencies
+- [Release artifacts and artifact sources](/azure/devops/pipelines/release/artifacts) - Release artifacts and artifacts sources
+- [Classic release and artifacts variables](/azure/devops/pipelines/release/variables) - Release and artifacts variables
 
 ## Report
 
 ### Updated articles
 
-- [Track progress with status and trend query-based charts](../report/dashboards/charts.md) - Content performance updates to Create query-based charts
+- [Track progress with status and trend query-based charts](/azure/devops/report/dashboards/charts) - Content performance updates to Create query-based charts
 
 ## Test
 
 ### Updated articles
 
-- [New Test Plans page](../test/new-test-plans-page.md) - Revamp of "New Test Plans Page"
+- [New Test Plans page](/azure/devops/test/new-test-plans-page) - Revamp of "New Test Plans Page"
 
 ## GitHub issue content updates
 
