@@ -18,11 +18,11 @@ ms.date: 05/28/2020
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
-With many enterprises benefiting from individual agile teams, the need to scale those practices as the organization grows has come into greater focus. The need for enterprises to view progress of many agile teams and across a portfolio has grown. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
+With many enterprises benefiting from individual Agile teams, the need to scale Agile practices as the organization grows is of greater interest. The need for enterprises to view progress of many Agile teams and across a portfolio continues to grow. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
 If you're familiar with Scrum but not familiar with SAFe®, [these videos at Scaled Agile](https://www.scaledagileframework.com/videos-and-presentations/) are a good way to orient yourself.  
 
-Azure Boards supports SAFe® practices through its autonomous teams, backlogs, boards, reports, and metrics. This article introduces you to how Azure Boards artifacts supports SAFe practices and artifacts.  
+Azure Boards supports SAFe® practices through its autonomous teams, backlogs, boards, reports, and metrics. This article introduces you to how Azure Boards artifacts support SAFe practices and artifacts.  
 >[!div class="checklist"]  
 > * The Scaled Agile Framework®
 > * Essential SAFe®
@@ -39,7 +39,7 @@ The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of
 
 ### SAFe® architectural overview version 5.0 
 
-![SAFe® architectural overview version 5 &copy; D. Leffing](media/safe/safe-concepts-poster-v5.0-a.png)  
+![SAFe® architectural overview version 5 &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png)  
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
@@ -47,9 +47,9 @@ SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc
 
 ### SAFe® 5.0 Business Agility 
 
-Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer centric. 
+Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer-centric. 
 
-![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
+![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
@@ -61,27 +61,27 @@ Some of the ways Azure Boards supports business agility and agile culture are di
 
 Essential SAFe&reg; requires support for the artifacts and practices illustrated in the following poster. 
 
-![Essential SAFe® poster architectural overview &copy; D. Leffing..](media/safe/essential-poster.png) 
+![Essential SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/essential-poster.png) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
  
 All of these artifacts and practices are supported by Azure Boards. 
 
-- **Stories, Features**, and **Enablers**: Implemented as work items which capture information and status of work. These work items automatically appear on team backlogs and Kanban boards. 
+- **Stories, Features**, and **Enablers**: Implemented as work items that capture information and status of work. These work items automatically appear on team backlogs and Kanban boards. 
 - **Team Backlogs** and **Program Backlogs**: Implemented as team backlogs which filter work items assigned to a team and support prioritizing and grouping of work.  
 - **Scrum** and **Kanban**: These practices are fully supporting using Kanban boards, Sprint backlogs and Taskboards, teams, and sprint cadences. 
 - **Iterations**, **Innovation and Planning (IP) Iteration**, **Program Increments (PI)**, **Milestones**, and **Release Trains**: Implemented via a flat-list or a hierarchical configuration of Iteration Paths. 
 - **Agile Release Train**: Implemented by a set of Agile teams and Program teams configured to support specific team and program views. 
 - **PI Objectives**, **Team Goals**, and  **Solution context**: Teams can use the built-in project wiki to share objectives, goals, customer information, and solution requirements.   
 
-For an overview of how Azure Boards implements Scrum and Kanban, see [About Sprints, Scrum and project management](../sprints/scrum-overview.md) and [About Boards and Kanban](../boards/kanban-overview.md).
+For an overview of how Azure Boards implements Scrum and Kanban, see [About Sprints, Scrum, and project management](../sprints/scrum-overview.md) and [About Boards and Kanban](../boards/kanban-overview.md).
 
 
 ## Portfolio SAFe®
 
 Portfolio SAFe® adds support for managing portfolios through epics, enablers, and value streams.  
 
-![Portfolio SAFe® poster architectural overview &copy; D. Leffing..](media/safe/portfolio-safe-poster.png) 
+![Portfolio SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/portfolio-safe-poster.png) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
@@ -89,7 +89,7 @@ Azure Boards provides supports for portfolio components includes the following:
 
 - **Epics**: Map to the Epic work item type and allow tracking, grouping, and rollup of child items. 
 - **Portfolio backlogs**: Implemented as a portfolio backlog that supports filtering of work based on review of business needs.  
-- **Portfolio Vision** and **Strategic Themes**: Business owners and portfolio managers can use the built-in project wiki to share their vision, objectives and goals. 
+- **Portfolio Vision** and **Strategic Themes**: Business owners and portfolio managers can use the built-in project wiki to share their vision, objectives, and goals. 
 - **Value Streams**: Value streams can be tracked using tags or custom fields. 
 - **Lean budgets**: Budget information can be captured in custom fields and rolled up to gain visibility to the Feature and Epic levels. 
 - **KPIs**: Several reports and dashboard widgets provide out-of-the box metrics. Power BI and the Analytics service provide support to create custom reports quickly. 
@@ -98,7 +98,7 @@ Azure Boards provides supports for portfolio components includes the following:
 
 Large Solutions SAFe® includes support for a Solution Backlog, Solution Trains, and Capabilities.   
 
-![Large Solution SAFe® poster architectural overview &copy; D. Leffing..](media/safe/large-solution-poster.png) 
+![Large Solution SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/large-solution-poster.png) 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support additional solution requirements.       
@@ -108,7 +108,7 @@ You can implement large solutions in much the same way as you implement Portfoli
 
 Full SAFe® includes the three levels of Essential SAFe®, Large Solution SAFe®, and Portfolio SAFe®. 
 
-![Full SAFe® poster architectural overview &copy; D. Leffing..](media/safe/safe-concepts-poster-v5.0-a.png) 
+![Full SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png) 
 
 
 ## How SAFe® artifacts map to Azure Boards  
@@ -232,7 +232,7 @@ The following table maps SAFe® terms or artifacts to the equivalent Azure Board
       Program Backlog
    :::column-end:::
    :::column span="3":::
-      [**Feature backlog**](safe-concepts.md#backlogs-boards). A Feature backlog lists the Features associated with a progream with the option to expand and display the child Stories.  
+      [**Feature backlog**](safe-concepts.md#backlogs-boards). A Feature backlog lists the Features associated with a program with the option to expand and display the child Stories.  
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -401,11 +401,11 @@ The articles in this series were updated from a previous white paper developed i
 <!---
 ::: moniker range="<= tfs-2018" 
 
-![SAFe® architectural overview &copy; D. Leffing..](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
+![SAFe® architectural overview &copy; D. Leffingwell](https://www.scaledagileframework.com/wp-content/uploads/2018/07/46BP-PORTFOLIO.png) 
 
 ### SAFe® 5.0 
 
-![SAFe® overview 5.0 &copy; D. Leffing..](media/safe/safe-overview-v5.0.png) 
+![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png) 
 
 Business Agility 
 Enterprise Solution Delivery

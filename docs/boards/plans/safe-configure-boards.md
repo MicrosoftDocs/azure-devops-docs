@@ -27,7 +27,7 @@ This tutorial walks you through the steps to convert a new project with a single
 
 You'll need to be a [member of the Project Administrators group](../../organizations/security/add-users-team-project.md) to make these configurations.  
 
-Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. This is addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
+Once you've performed these core configurations, you can then consider customizing your project to support specific business needs. Customization options are addressed in [Customize Azure Boards to support SAFe&reg; ](safe-customize.md). 
 
 > [!TIP]   
 > If you plan to add custom work item types, portfolio backlogs, or workflows; you may want to make those customizations first and then define and configure your teams. 
@@ -58,15 +58,15 @@ We'll then configure the area path to the following hierarchy and configuring ea
 
 In this way, all teams can manage their own workload and priorities while clearly understanding how their work supports those epics managed in the portfolio team's backlog. At the same time, the portfolio team can monitor progress of its backlog on their own Kanban board, prioritize the items on their backlog, and view progress across release trains.
 
-All this might sound complicated, but it actually takes very little configuration to set up the teams and get started.
-In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hiearchical structure. Next, will define the iteration paths to support the release structure we want and the program and Agile teams to use. Lastly, we'll configure each team and populate the membership of teams.  
+While the above may sound complicated, it actually takes little configuration to set up the teams and get started.
+In order to go from one project with one default team, we'll first define each team while automatically creating a default area path for that team. Then we'll reconfigure the flat set of area paths to a hierarchical structure. Next, will define the iteration paths to support the release structure we want and the program and Agile teams to use. Lastly, we'll configure each team and populate the membership of teams.  
 
 
 <a id="define-teams" />
 
 ## Define your teams 
 
-To start, we'll simply add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
+To start, we'll add each team, creating a default area path for each. Later in this article, we'll configure those area paths into the necessary hierarchy. This structure maps the following SAFe® teams to Azure Boards teams:  
 - Portfolio team -> default top-level team, the Fabrikam team (already defined) 
 - Program teams -> secondary-level teams, Fiber Suite and Service Suite  
 - Agile teams -> tertiary-level teams defined under Fiber Suite and Service Suite.  
@@ -95,7 +95,7 @@ Add each team, one by one.
 	> [!div class="mx-imgBorder"]
 	> ![Create a subteam with its own area path](media/safe-configure/add-team.png)
 
-	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. This allows them to configure the team tools to support their business needs. 
+	Assign the team's Scrum Master, Program Manager, or Portfolio Manager as the team administrator. As team administrators, they can configure their team's tools to support their Agile practices and business needs. 
 
 1. Repeat steps 2 and 3 to define all teams.  
 
@@ -176,7 +176,7 @@ Now that your teams, Area Paths, and Iteration Paths are defined, the next step 
 - Set default Iteration Path
 - Select team Iteration Paths 
 
-These are the recommended settings to make based on the team level.
+The following table lists the recommended settings to make based on the team level.
 
 ***
 :::row:::
@@ -268,13 +268,13 @@ These are the recommended settings to make based on the team level.
       Areas
    :::column-end:::
    :::column span="":::
-      Include sub-areas
+      Include sub areas
    :::column-end:::
    :::column span="":::
-      Exclude sub-areas
+      Exclude sub areas
    :::column-end:::
    :::column span="":::
-      Exclude sub-areas
+      Exclude sub areas
    :::column-end:::
 :::row-end:::
 
@@ -353,18 +353,18 @@ For teams that support several other teams, such as a UX Design team, configure 
 
 1. Add a team for each Shared Services team. Refer to [Define your teams](#define-teams) for details.  
 
-1. Return to the **Project configuration>Area Paths** page and under each shared services area path, add sub-area paths for each Agile team supported by the shared services. For details, see [Configure Area Paths](#configure-area-paths) provided earlier in this article. 
+1. Return to the **Project configuration>Area Paths** page and under each shared services area path, add sub area paths for each Agile team supported by the shared services. For details, see [Configure Area Paths](#configure-area-paths) provided earlier in this article. 
 
-    For example, here we add four sub-area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
+    For example, here we add four sub area paths under the UX Design area path, one for each Agile team supported by the UX Design team. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Shared services sub area paths](media/safe-configure/shared-services-sub-area-paths.png)
 
 1. Configure each Shared Services team as an Agile feature team as described in [Configure your teams](#configure-your-teams). 
 
-1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Choose **Select areas** and add the sub-area path for that team.   
+1. For each Agile team, open the **Team configuration>Areas** page as shown in Step 5 of [Configure your teams](#configure-your-teams). Choose **Select areas** and add the sub area path for that team.   
 
-    Here we add the **UX Design\App** sub-area path to the App feature team.  
+    Here we add the **UX Design\App** sub area path to the App feature team.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Budget estimate rollup](media/safe-configure/add-area-path-app-team-shared-services.png)
@@ -384,9 +384,9 @@ For teams that support several other teams, such as a UX Design team, configure 
 
 ::: moniker range="azure-devops"
 
-## Command line and programmatic tools
+## Command-line and programmatic tools
 
-You can use Azure DevOps command line tools to add or update the following artifacts:
+You can use Azure DevOps command-line tools to add or update the following artifacts:
 
 - **Teams**: [Azure DevOps team create](/cli/azure/ext/azure-devops/boards/iteration/team#ext-azure-devops-az-boards-iteration-team-add) 
 - **Area Paths**: [Azure DevOps area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create)
