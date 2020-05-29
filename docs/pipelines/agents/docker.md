@@ -3,7 +3,7 @@ title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 05/26/2020
+ms.date: 05/29/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -373,7 +373,7 @@ You must also use some kind of container orchestration system like Kubernetes or
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance |
-| AZP_TOKEN            | Personal Access Token (PAT) granting access to `AZP_URL`    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-personal-access-tokens-to-authenticate-access) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname)          |
 | AZP_POOL             | Agent pool name (default value: `Default`)                  |
 | AZP_WORK             | Work directory (default value: `_work`)                     |
