@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
-> This guidances does not apply to YAML pipelines. For parameters in YAML pipelines, go to [runtime parameters](runtime-parameters.md).
+> This guidances does not apply to YAML pipelines. For parameters in YAML pipelines, see [runtime parameters](runtime-parameters.md).
 > 
 
 You can link all important arguments for tasks used across the build definition as process parameters, which are then shown at one place - the Pipeline view.
