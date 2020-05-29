@@ -178,7 +178,7 @@ This enables you to share the project's .npmrc file with the whole team while ke
 At this point, you should have a project-specific .npmrc file that contains only your feed's registry information that you discovered from the **Connect to feed** dialog box. There should be no credentials in this file. The file is usually adjacent to your project's package.json file.
 
 > [!IMPORTANT]
-> There can be only a single "registry=" line in your .npmrc file.  Multiple registries are possible with [scopes](npm/scopes.md) and the new upstream feature (discussed here).
+> There can be only a single "registry=" line in your .npmrc file.  Multiple registries are possible with [scopes](npm/scopes.md) and [upstream sources](npm/upstream-sources.md).
 
 #### Windows
 
@@ -196,6 +196,9 @@ If you're developing on Linux or Mac, `vsts-npm-auth` is not supported. We recom
 
 [!INCLUDE [](./includes/npm/npmrc.md)]
 
+> [!NOTE]
+> If you have npmjs.com configured as an upstream and the package name/version exists in the public registry, you'll be blocked from publication. We don't support overriding packages that exist in the public registry. See [packages from npmjs.com](npm/upstream-sources.md) for more details.
+
 ## Build your project
 
 At this point, your project should have a package.json file and an .npmrc file adjacent to each other. Run `npm install` from the directory that contains both of these files. npm will discover your feed in the .npmrc file in the current working directory. It will then fetch credentials from your home directory's .npmrc file that you configured in [Create a feed](#create-a-feed).
@@ -208,9 +211,9 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-> The `npm publish` command will work because of the credentials that you acquired in [Set up your .npmrc files](#set-up-your-npmrc-files).
+The `npm publish` command will authenticate to the feed using the .npmrc configuration files that you had to setup in this [previous step](#set-up-your-npmrc-files). See the [npm CLI docs](https://docs.npmjs.com/cli/publish) for more details.
 
-If you have followed all of the steps up to this point, package publishing should simply work.
+If you have followed all of the steps up to this point, your npm package should be available now in your feed.
 
 > [!IMPORTANT]
-> If you have npmjs.com configured as an upstream and the package name/version exists in the public registry, you'll be blocked from publication. We don't support overriding packages that exist in the public registry.
+> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build will fail with potentially an unrelated authentication error.
