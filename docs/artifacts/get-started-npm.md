@@ -125,7 +125,6 @@ We recommend that you use two .npmrc files:
     
       > [!div class="mx-imgBorder"] 
       >![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
-      > 
 
       ::: moniker-end
 
@@ -155,7 +154,6 @@ We recommend that you use two .npmrc files:
 
       > [!div class="mx-imgBorder"] 
       >![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
-      > 
 
       ::: moniker-end
 
