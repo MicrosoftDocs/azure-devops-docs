@@ -9,11 +9,11 @@ ms.date: 05/29/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Use npm to store JavaScript packages
+# npm quickstart to setup, build and publish your JavaScript packages
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-This quickstart will show you how to create your Azure Artifact feed, set up you .npmrc files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
+This quickstart will show you how to create your Azure Artifact feed, set up your `.npmrc` files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
@@ -23,6 +23,7 @@ This quickstart will show you how to create your Azure Artifact feed, set up you
 
 Azure Artifacts is installed by default for TFS 2017 customers. To use Azure Artifacts, you must upgrade to TFS 2017.
 
+> [!NOTE]
 > If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ::: moniker-end
