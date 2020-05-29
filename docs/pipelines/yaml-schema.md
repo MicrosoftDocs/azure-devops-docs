@@ -1244,6 +1244,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+* [Pipeline trigger](/azure/devops/pipelines/process/pipeline-triggers)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
