@@ -1,18 +1,19 @@
 ---
 title: Use npm to store JavaScript packages in Azure DevOps Services
-description: Use npm to store your JavaScript packages in Azure DevOps Services or Team Foundation Server
+description: Use npm to store your JavaScript packages in Azure DevOps Services or Team Foundation Server. This guide will walk you through creating a feed, setting up you .npmrc files, building your project and publish your npm package to your feed.
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 5BFBA0C3-85ED-40C9-AC5F-F686923160D6
-ms.date: 03/06/2020
+ms.custom: contentperfq4
+ms.date: 05/29/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Use npm to store JavaScript packages in Azure DevOps Services or TFS
+# Use npm to store JavaScript packages
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-This quickstart guides you through using npm to store JavaScript packages in Azure DevOps Services or Team Foundation Server (TFS). It covers installation, license assigning, and setup.
+This quickstart will show you how to create your Azure Artifact feed, set up you .npmrc files to store your feed URLs and credentials, build your project and publish your npm package to your feed.
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
@@ -72,12 +73,23 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ## Create a feed
 
-On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Click the **+ New feed** button.
+Feeds are organizational containers that allow users to group packages and control who can access them by modifying the feed permissions.
+
+Feeds are not package type dependent. Azure Artifacts currently supports the storage of all the following package types in a single feed:
+
+* NuGet                      
+* npm                        
+* Maven
+* Python
+* Universal
+
+
+On your first visit to **Azure Artifacts**, you're welcomed with an image that prompts you to create a new feed. Select the **Create feed** button.
 
 In the dialog box:
-* Give the feed a name.
+* **Name**: Give the feed a name.
 * **Visibility**: Choose who can read and contribute (or update) packages in your feed. An organization-visible feed is created with permissions that allow all users in the organization to see and use your feed (recommended). A private feed is created with permissions such that only you have access.
-* **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm (registry.npmjs.org) and NuGet (packages.nuget.org) packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
+* **Upstream sources**: Selecting **Use packages from public sources through this feed** will add both the public npm `registry.npmjs.org` and NuGet `packages.nuget.org` packages as upstreams to your feed. When upstreams are enabled, your client (that is, npm and NuGet) can fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Use packages published to this feed**, your feed is created without connectivity to public registries. You can connect them later if you want.
 * When you're done, select **Create**.
 
 ::: moniker range=">= azure-devops-2019"
