@@ -330,6 +330,8 @@
     - name: 2020
       expanded: true
       items:
+      - name: May
+        href: docswhatsnew/azure-devops-docs-2020-05.md
       - name: April
         href: docswhatsnew/azure-devops-docs-2020-04.md
       - name: March
