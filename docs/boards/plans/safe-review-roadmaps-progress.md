@@ -121,7 +121,7 @@ You can expand each feature team to see details. Story deliverables are assigned
 
 ### Review portfolio features deliverable 
 
-Portfolio teams can review the features under development by their program teams. For example, features under development by the Fiber Suite team are shown in the following delivery plan view. Note that the features under development show up under the Program Increment timeboxes.  
+Portfolio teams can review the Features under development by their program teams. For example, Features under development by the Fiber Suite team are shown in the following delivery plan view. The Features under development show up under the Program Increment timeboxes.  
  
 > [!div class="mx-imgBorder"]  
 > ![Plans, Portfolio feature deliverables](media/safe-metrics/plan-portfolio-fiber-suite.png) 
