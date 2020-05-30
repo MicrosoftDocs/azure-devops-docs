@@ -168,25 +168,28 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
-	For example, here we choose (1) **Project Settings**, (2) **Repositories**, (3) the **TFVC repository**, (4) the **Build Administrators** group, and then (5) the permission for **Administer labels**.
+	For example, here we choose (1) **Project Settings**, (2) **Repositories**, and then the (3) **TFVC repository**
 
-	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
+	![Project Settings>Repositories>TFVC repo}(media/git-tfvc-perm/open-tfvc-repo-settings.png)
 
-	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
+1. Next choose the user or security group you want to change permissions. 
 
-3.  To set permissions for a specific user or group, choose the ![ ](../../media/icons/add-icon.png) add icon and select or search for the identity you want. 
+1.  To set permissions for a specific user or group, enter their name in the identity box and select their identity. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add user or group](media/git-tfvc-perm//add-user-group.png)  
+	> ![Add user or group](media/git-tfvc-perm/add-user-group.png)  
 
 	Then make the changes to the permission set. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Set permissions for a user or group](media/git-tfvc-perm/set-tfvc-permissions.png)  
+
+	The changes are made automatically, no need to save your changes.  
 
 	> [!NOTE]  
 	> To set permissions for a custom security group, you must have defined that group previously. See [Set permissions at the project- or collection-level](set-project-collection-level-permissions.md#project-level)
 
 	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
- 
-	The changes are made automatically, no need to save your changes.  
 
 ::: moniker-end    
 
@@ -210,7 +213,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 ::: moniker range="<= tfs-2018"
 
-1. From the web portal, open the admin context by choosing the ![ ](../../boards/media/icons/gear_icon.png) gear Settings icon and choose **Version Control**.
+1. From the web portal, open the admin context by choosing the ![ ](../../boards/media/icons/gear_icon.png) **Settings** and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 
@@ -231,3 +234,9 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 - [Default TFVC permissions](default-tfvc-permissions.md)  
 - [Default permissions and access](permissions-access.md) 
 - [Permissions and groups reference](permissions.md)  
+
+
+<!---
+	[![Project Settings>Code>Repositories>TFVC repositories>Security](media/git-tfvc-perm/open-tfvc-repo.png)](media/git-tfvc-perm/open-tfvc-repo-wide.png#lightbox) 
+
+-->
