@@ -5,15 +5,17 @@ description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
 ms.date: 05/05/2020
-monikerRange: 'azure-devops || = azure-devops-2019'
+monikerRange: 'azure-devops-2019 || azure-devops'
 ---
 
 # Template types & usage
 
 ::: moniker range="azure-devops"
+
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
 If a template is used to include content, it functions like an include directive in many programming languages. Content from one file is inserted into another file. When a template controls what is allowed in a pipeline, the template defines logic that another file must follow.  
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -832,9 +834,11 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
 - No more than 10 megabytes of total YAML content can be included
 - No more than 2000 characters per template expression are allowed
+
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
+
 ## Parameters
 
 You can pass parameters to templates.
@@ -1333,6 +1337,6 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
 - No more than 10 megabytes of total YAML content can be included
 - No more than 2000 characters per template expression are allowed
-- No more than 1 million separate items (an item is any scalar, sequence, or map)
 
 ::: moniker-end
+
