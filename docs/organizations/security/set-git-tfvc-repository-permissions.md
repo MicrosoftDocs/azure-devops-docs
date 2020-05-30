@@ -74,11 +74,11 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
-2. Open the **Repos>Repositories** page. 
+2. Open **Project settings>Repositories**.  
 
 	To set the permissions for all Git repositories, choose **Git Repositories** and then choose the security group whose permissions you want to manage. 
 
-	For example, here we choose (1) **Project settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Create repository**.
+	For example, here we choose (1) **Project settings**, (2) **Repositories**, (3) **Git repositories**, (4) the **Contributors** group, and then (5) the permission for **Bypass policies when pushing**.
 
 	[!INCLUDE [temp](../../includes/lightbox-image.md)] 
 
@@ -86,10 +86,10 @@ You can set the permissions for all Git repositories for a project, or for a sin
 
 	Otherwise, choose a specific repository and choose the security group whose permissions you want to manage.   
 
-3.  To set permissions for a specific user or group, choose the ![ ](../../media/icons/add-icon.png) add icon and select or search for the identity you want. 
+3.  To set permissions for a specific user or group, enter the name of the user or group into the search filter and select from the identities that appear.  
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add user or group](media/git-tfvc-perm//add-user-group.png)  
+	> ![Add user or group](media/git-tfvc-perm/add-user-group.png)  
 
 	Then make the changes to the permission set. 
 
@@ -99,6 +99,15 @@ You can set the permissions for all Git repositories for a project, or for a sin
 	If you add a user or group, and don't change any permissions for that user or group, then upon refresh of the permissions page, the user or group you added no longer appears.
  
 	The changes are made automatically, no need to save your changes.  
+
+### Enable or disable inheritance for a specific repository
+
+- To enable or disable inheritance for a specific repository, select the repository and then move the **Inheritance** slider to either an on or off position.
+
+	> [!div class="mx-imgBorder"]  
+	> ![Add user or group](media/git-tfvc-perm/disable-inheritance-specific-repo.png)  
+
+To learn about inheritance, see [About permissions and groups, Inheritance and security groups](about-permissions.md#inheritance). 
 
 ::: moniker-end
 
