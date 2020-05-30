@@ -158,7 +158,7 @@ Four values are used to calculate WSJF:
 - Job Size
 
 
-![Work item form automatically updates with changes to field values](media/safe/AutoCalcWSJF.gif)  
+![Work item form automatically updates with changes to field values](media/safe/auto-calc-wsjf.gif)  
 
 For details on adding and managing the extension, see the [WSJF extension overview](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension). 
 
