@@ -88,7 +88,7 @@ Forks are a great way to isolate experimental, risky, or confidential changes fr
 
 After a fork has been created, new files, folders, and branches are not shared between the repositories unless a pull request carries them along. After you're ready to share those changes, it's easy to use [pull requests](../git/pull-requests-overview.md) to push the changes back to the original repository.
 
-- [../git/forks.md](Learn more about forks)
+- [Learn more about forks](../git/forks.md)
 
 ## TFVC
 
@@ -100,4 +100,7 @@ Get started by creating a project, configuring your workspace, and reviewing and
 - [Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
 - [Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
 
-[Learn more about TFVC](../tfvc/index.md)
+## Learm more
+
+- [Learn more about Git](../git/index.yml)
+- [Learn more about TFVC](../tfvc/index.md)
