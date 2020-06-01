@@ -32,7 +32,7 @@
     href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
-  - name: Communicate quality with release views
+  - name: Promote a package to a view
     href: feeds/views.md
   - name: Migrate packages to Azure Artifacts
     href: tutorials/migrate-packages.md
