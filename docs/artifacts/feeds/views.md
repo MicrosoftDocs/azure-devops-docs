@@ -1,5 +1,5 @@
 ---
-title: Use the prerelease and release views to publish a specific package version
+title: Use the prerelease and release views to publish quality packages
 description: Use the prerelease and release views to publish a quality package to your consumers in Azure DevOps Services or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 ---
  
 
-# Use the prerelease and release views to publish a specific package version
+# Use the prerelease and release views to publish quality packages
 
 **Azure DevOps Services**
 
