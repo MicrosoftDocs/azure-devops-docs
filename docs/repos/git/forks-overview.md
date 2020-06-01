@@ -8,7 +8,6 @@ ms.author: apawast
 author: apawast
 ms.topic: overview
 ms.date: 06/01/2020
-layout: LandingPage
 monikerRange: '>= tfs-2018'
 ---
 
