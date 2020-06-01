@@ -7,7 +7,7 @@ ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603
 ms.author: apawast
 author: apawast
 ms.topic: overview
-ms.date: 09/10/2018
+ms.date: 06/01/2020
 layout: LandingPage
 monikerRange: '>= tfs-2018'
 ---
@@ -32,26 +32,4 @@ When working with forks, you typically use the following workflow:
 
 ## Learn more
 
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="forks.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img width="48" height="48" alt="Forks" src="https://docs.microsoft.com/media/common/i_forks.svg" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Learn more about forks</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
- </ul>
-
-
-
+- [Learn more about forks](forks.md)
