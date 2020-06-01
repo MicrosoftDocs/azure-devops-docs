@@ -7,5 +7,5 @@ ms.topic: include
 ---
 
 - [Preview of scale set agents](#preview-of-scale-set-agents)
-- [Ubuntu 20.04 in preview for Azure Pipelines hosted pools](#ubuntu-20.04-in-preview-for-azure-pipelines-hosted-pools)
+- [Ubuntu 20.04 in preview for Azure Pipelines hosted pools](#ubuntu-2004-in-preview-for-azure-pipelines-hosted-pools)
 - [Support for GitHub packages in YAML pipelines](#support-for-github-packages-in-yaml-pipelines)
