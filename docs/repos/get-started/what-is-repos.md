@@ -5,7 +5,7 @@ description: What do you get with Azure Repos
 ms.technology: devops-new-user
 ms.author: apawast
 author: apawast
-ms.date: 09/19/2018
+ms.date: 06/01/2020
 ms.topic: overview
 monikerRange: 'azure-devops'
 ---
