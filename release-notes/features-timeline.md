@@ -2,7 +2,7 @@
 title: Azure DevOps Feature Timeline
 author: sid-ah
 ms.author: simerzou
-ms.date: 05/28/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -92,7 +92,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
+    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">01 June 2020</a></td>
         <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
         </tr>
         <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>

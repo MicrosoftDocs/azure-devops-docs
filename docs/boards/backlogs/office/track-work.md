@@ -295,7 +295,7 @@ To connect from your Office client to an Azure DevOps Services project, perform 
 
 1.  Start with a blank worksheet. 
 
-1.  If you're client is signed into a user account, make sure that it is your Azure DevOps account. If not, choose your account name and sign in as another user.  
+1.  If you're client is signed into a user account, make sure that it is your Azure DevOps user account. If not, choose your account name and sign in as another user.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Team Ribbon, Choose New List](media/connect/sign-in-as-other-user.png)
@@ -413,40 +413,7 @@ If your Azure DevOps project is moved to a different project collection in the s
 ::: moniker-end  
 
 
-<!--- 
-
-### Connect from a worksheet or project plan
-
-To follow these procedures, you must be a member of the **Readers** group or have your **View work items in this node** permission set to **Allow**. 
-
-1.  If you don't have Excel 2007 or a more recent version, [install it](https://products.office.com/excel). For TFS 2017 or TFS 2018, you'll need Project 2010 or a more recent version. For client compatibility, see [Client compatibility](/azure/devops/server/compatibility)
-
-2.  If you haven't installed a version of [Visual Studio (2010 or later)](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration (free)](https://visualstudio.microsoft.com/downloads/?q=Office+Integration), you'll need to install one of these versions to connect to a project defined on Azure DevOps Services or an on-premises Azure DevOps. 
-
-	> [!NOTE]  
-	> The only way to get the Team Foundation add-in to Excel is by installing Visual Studio or [TFS Standalone Office Integration](https://visualstudio.microsoft.com/downloads/?q=Office+Integration).   
-
-3.  Start with a blank worksheet or project plan. If you don't see the **Team** ribbon (or the **Team** menu if you use Excel 2007 or Project 2007), see step 2.
-
-    ![Create a list connection between Excel and the data store](media/bulk-modify-excel-blank-list.png)
-
-    > [!TIP]    
-    > If the **Team** ribbon no longer appears, you might need to [re-enable it](/visualstudio/vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled).
-
-4.  Connect to an Azure DevOps organization or a TFS instance and the project. If you can't connect, [get added as a team member](../../../organizations/security/add-users-team-project.md).
-
-    ![Connect to server](media/IC680074.png)
-
-    If it is your first time connecting from Excel or Project, you might have to add the Azure DevOps organization or TFS server to the list of recognized servers.
-
-    ![Add organization or server](media/IC658167.png)
-
-5.  Your worksheet or project plan is now bound to your project. What this means is that you can add work items to the project from the Office document or add work items to the Office document from the project.
-
-    To learn more, see [Bulk add work items with Excel](bulk-add-modify-work-items-excel.md) or [Create your backlog and tasks using Project](create-your-backlog-tasks-using-project.md).
-
-
---> 
+<a id="work-offline" /> 
 
 ## Work offline and reconnect to Azure Boards 
 
@@ -456,7 +423,7 @@ One advantage of working in Excel or Project is that you can work offline and ad
 >  If the project that contains work items for your Excel or Project document is moved to a different organization or Azure DevOps Server instance, you must reconfigure the server to which the document connects. For more information, see [Connect Azure DevOps project to Excel](#excel-project) provided earlier in this article.  
   
 
-<a name="WorkingOffline"></a> 
+<a name="disconnect"></a> 
 
 ###  Disconnect a document file from the network  
   
@@ -474,7 +441,7 @@ To disconnect an Excel or Project document file from the network:
   
 4.  Disconnect your computer from the network, or save the work item list file and copy it to another computer.  
   
-     An error message might appear that tells you that the Office program could not establish a connection with an Azure DevOps server.  
+     An error message might appear that tells you that the Office program could not establish a connection with an Azure DevOps Server.  
   
 5.  Modify or update the work item list as needed.  
   
@@ -498,6 +465,8 @@ To reconnect an Excel or Project document file:
     - If you are using Project, on the **Team** menu, choose **Refresh**.  
   
 4.  Resolve any data validation errors or conflicts that occur.  
+
+<a id="WorkingOffline" /> 
 
 ### Work offline
 
