@@ -86,4 +86,5 @@ Pull requests and branch policies enable teams to enforce many best practices re
 - [Configure a branch policy for an external service](pr-status-policy.md)
 
 ## Videos 
+
 > [!VIDEO https://www.youtube.com/embed/J_DHkUKxI0E?start=0]
