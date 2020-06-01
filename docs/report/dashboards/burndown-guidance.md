@@ -41,6 +41,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 > [!div class="mx-imgBorder"]  
 > ![Choose another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
 
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 Increases instead of decreases within the blue graph may indicate:
 
