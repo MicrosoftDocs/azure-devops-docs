@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for May 2020"
 description: "What's new in Azure DevOps docs for May 2020."
-ms.date: 05/29/2020
+ms.date: 06/01/2020
 ---
 
 # Azure DevOps docs: What's new for May 2020
