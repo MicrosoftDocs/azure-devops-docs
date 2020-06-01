@@ -50,7 +50,7 @@ Connect your favorite development environment to Azure Repos to access your repo
 
 Review code with your team and make sure that changes build and pass tests before it's merged.
 
-- [Create a pull request](./git/pull-requests-overview.md)
+- [Create a pull request](../git/pull-requests-overview.md)
 - [Link work items to pull requests](../git/pull-requests.md#link-work-items)
 - [Set up branch policies](../git/branch-policies.md#build-validation)
 - [Squash merge pull requests](../git/merging-with-squash.md)
