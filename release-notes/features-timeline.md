@@ -11,14 +11,14 @@ hide_comments: true
 
 # Azure DevOps Feature Timeline
 
-****
+---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a> 
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a> 
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a> 
+| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
 | <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
-****
+---
 
 ## Features under development
 
@@ -76,7 +76,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-
 ## Current features
 
 The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
@@ -93,12 +92,13 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="7"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
+    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">28 May 2020</a></td>
         <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
         </tr>
+        <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>
         <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Ubuntu 20.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>Lightweight authentication tasks</td><td>Artifacts</td><td>2020</td></tr>
@@ -4457,7 +4457,6 @@ Versions in the "Server" column are linked to the appropriate download location.
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"]
-> ![Make a suggestion](media/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"] > ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).
