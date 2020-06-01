@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
-ms.date: 10/28/2019
+ms.date: 06/01/2020
 ---
 
 # Configure and monitor sprint burndown 
@@ -99,6 +99,8 @@ A healthy sprint burndown report looks something like the image shown below. Typ
 The **Total Scope** line indicates the number of work items added after the sprint starts. The **Ideal Trend** line is calculated based on the number of work items, days in the sprint, and number of working days.  
 
 The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint.  
+
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 > [!div class="mx-imgBorder"]  
 > ![Choose another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
@@ -487,6 +489,8 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
     - **Show total scope**: Displays both the historical and projected scope increase.  
     - **Show non working days**: Displays non working days on the burndown. When displayed, non working days are shaded.  
     - **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.  
+
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
 
 ::: moniker-end
 
