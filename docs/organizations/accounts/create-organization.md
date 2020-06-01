@@ -8,7 +8,7 @@ ms.assetid: e2eacd25-e6be-4294-b1da-5529195f30d0
 ms.topic: quickstart
 ms.author: chcomley
 author: chcomley
-ms.date: 04/16/2020
+ms.date: 05/31/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -28,8 +28,8 @@ In this article, learn how to create an organization. An organization is used to
 
 ## Prerequisites
 
-1. Read and understand how to [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
-2. Complete the following steps if you want to use only Microsoft accounts with your organization.
+* Read and understand how to [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
+* Complete the following steps if you want to use only Microsoft accounts with your organization.
 
      Without Azure AD, you're solely responsible for controlling organization access. And all users must sign in with their Microsoft account. 
      [What are other differences?](faq-configure-customize-organization.md#SignInOrganizationDifferences)
@@ -38,7 +38,7 @@ In this article, learn how to create an organization. An organization is used to
 
      - Use your Microsoft account if you don't need to authenticate users for an organization with [Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). All users must sign in to your organization with a Microsoft account.
 
-3. Complete the following steps if you want to authenticate users and control organization access through your Azure AD.
+* Complete the following steps if you want to authenticate users and control organization access through your Azure AD.
 
       - You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
       - To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
@@ -75,3 +75,4 @@ For more information about how to create a project collection, see [create a pro
 - [Change organization time-zone](change-organization-location.md)
 - [Change organization owner](change-organization-ownership.md)
 - [Delete your organization](delete-your-organization.md)
+- [Resolve orphaned organization](resolve-orphaned-organization.md)
