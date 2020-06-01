@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 11/19/2018
+ms.date: 06/01/2020
 ---
 
 # Filter your Kanban board
@@ -209,9 +209,10 @@ Cards are filtered based on the assignments made in the following order and logi
 	```AND```
 5.	**Parent Work Items**: Show all cards that have Parent Work Item 1 ```OR``` Parent Work Item 2.
 
-::: moniker-end
 
 ## Related articles
 
 - [Tags](../queries/add-tags-to-work-items.md)
 - [Customize cards](../../boards/boards/customize-cards.md)
+- [ Filter backlogs or queries based on keywords, tags, or other fields](../backlogs/filter-backlogs.md)  
+

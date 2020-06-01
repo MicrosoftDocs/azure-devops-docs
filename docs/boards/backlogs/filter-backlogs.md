@@ -21,6 +21,8 @@ ms.date: 10/16/2019
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
+The filter function is available from backlogs, sprint backlogs, queries, and the taskboard.  
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Filter based on keywords or fields   
@@ -91,10 +93,13 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 ## Characters ignored by keyword filter criteria
 
 ::: moniker range=">= azure-devops-2019"
+
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="<= tfs-2018"
+
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
 
