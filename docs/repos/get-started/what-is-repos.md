@@ -37,26 +37,20 @@ Git in Azure Repos is standard Git. You can use the clients and tools of your ch
 
 ### Connect your favorite development environment
 
-Connect your favorite development environment to Azure Repos to access your repos and manage your work. 
+<div class="row">
 
-| ![icon](https://docs.microsoft.com/media/common/i_cligeneric.svg) [Command line](../git/share-your-code-in-git-cmdline.md) |
-| ![icon](https://docs.microsoft.com/media/logos/logo_vs-code.svg) [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team) |
-| ![icon](https://docs.microsoft.com/media/logos/logo_visual-studio.svg) [Visual Studio](../git/share-your-code-in-git-vs-2017.md) |
-| ![icon]() []() |
-| ![icon]() []() |
-| ![icon]() []() |
+<div class="col-sm-6 col-md-6">
 
-- [Command line](../git/share-your-code-in-git-cmdline.md)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<p>Connect your favorite development environment to Azure Repos to access your repos and manage your work.</p>
 
+</div>
+</div>
 
-
+<!--- All images are placeholders --> 
+<!-- Converting to icon48 format, this gets cleaner in YAML -->
+<div class="ico48Case halfStack">
+<div class="ico48Link"><a href="../git/share-your-code-in-git-cmdline.md"><img width="48" height="48" alt="Command line" src="https://docs.microsoft.com/media/common/i_cligeneric.svg"><span>Command-line</span></a></div>
+<div class="ico48Link"><a href="https://marketplace.visualstudio.com/items?itemName=ms-vsts.team"><img width="48" height="48" alt="Visual Studio Code" src="https://docs.microsoft.com/media/logos/logo_vs-code.svg"><span>Visual Studio Code</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-vs-2017.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div>
 <div class="ico48Link"><a href="../git/share-your-code-in-git-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div>
 <div class="ico48Link"><a href="/azure/devops/java/download-eclipse-plug-in"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div>
