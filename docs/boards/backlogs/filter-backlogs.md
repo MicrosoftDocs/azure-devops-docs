@@ -1,4 +1,4 @@
-﻿---
+---
 title: Filter backlogs and queries
 titleSuffix: Azure Boards
 description: Filter a backlog or query based on keywords, tags, or other fields   
@@ -31,7 +31,6 @@ To show the filter toolbar, choose the ![ ](../../media/icons/filter-icon.png) f
 
 > [!div class="mx-imgBorder"]  
 > ![Filter by keyword](media/filter/filter-s144.png)  
-
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 

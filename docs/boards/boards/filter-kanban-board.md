@@ -30,7 +30,15 @@ To filter the Kanban board, first customize the board settings so that the cards
 
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).
 
-::: moniker range=">= tfs-2018"
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-services.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018 <= azure-devops-2019"
 
 ![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-ts.png)
 
@@ -88,9 +96,24 @@ The filter criteria ignores the following characters when the field value starts
 
 You can filter by select field values using the Kanban board for your product backlog (Stories, Product Backlog Items, or Requirements) or a portfolio backlog (Features or Epics).
 
-To start filtering, click the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon.
+To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon.
+
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter-services.png)
+
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
 
 ![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter.png)
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
@@ -100,12 +123,29 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 - **Tags**: All tags assigned to work items on the board
 - **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
 
+
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  
 
 For example, here we filter for all items assigned to Jamal and Raisa.
 
-![Kanban board, Filter on assignment field](../boards/media/filter-kb-filters-chosen.png)
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter on assignment field](media/filter/filter-kb-filters-chosen-services.png)
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+![Kanban board, Filter on assignment field](media/filter-kb-filters-chosen.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
 
 Filters remain in place until you explicitly clear them by clicking **Clear filters**. When you refresh your Kanban board or sign in from another browser, filters remain set to your previous values.
 
@@ -114,6 +154,7 @@ Once the board is filtered, you can click the filter icon to hide the drop downs
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
+
 <a id="parent-filter"></a>
 
 ## Filter by specifying parent work items
@@ -125,13 +166,32 @@ You can use this feature only when you've created features or epics and linked t
 > [!NOTE]
 > The **Filter by parent**  feature doesn't support filtering of parent work items of the same work item type. For example, you can't filter the Stories backlog by specifying user stories that are parents of nested user stories.
 
-To start filtering, click the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
+To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filter-icon.png) Kanban board filter icon. Choose one or more values from the multi-select drop-down menu for the Parent Work Item. These values are derived from the [Features](kanban-epics-features-stories.md) you've defined.
 
 Here, we choose two features on which to filter the board.
 
+::: moniker-end
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter on assignment field](media/filter/filter-kb-parent-filters-services.png)
+
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
 ![Kanban board, Filter on parent work items](media/filter-kb-choose-parent-work-items.png)
 
+::: moniker-end
+
+::: moniker range=">= tfs-2017"
+
+
 The final board displays just those stories linked as child work items to the selected features.
+
+::: moniker-end
 
 <a id="filter-logic"></a>
 
