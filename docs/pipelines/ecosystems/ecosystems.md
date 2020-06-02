@@ -24,7 +24,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 :::row:::
    :::column:::
-      :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md)
+      :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: Text here [.NET Core](dotnet-core.md)
    :::column-end:::
    :::column:::
       :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md)
