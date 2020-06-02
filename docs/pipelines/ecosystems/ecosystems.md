@@ -33,6 +33,18 @@ Build and deploy your apps. Find guidance based on your language and platform.
       :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_android.svg"::: [Android](android.md)
    :::column-end:::
 :::row-end:::
+:::row:::
+   :::column:::
+      :::image type="icon" source="../media/index/logo_net.svg"::: [ASP.NET](../apps/aspnet/build-aspnet-4.md)
+   :::column-end:::
+   :::column:::
+      :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"::: [C/C++ with GCC](../apps/c-cpp/gcc.md)
+   :::column-end:::
+   :::column:::
+      :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"::: [C/C++ with VC++](../apps/windows/cpp.md)
+   :::column-end:::
+:::row-end:::
+
 
 |   |   |   |
 | - | - | - |
@@ -48,19 +60,18 @@ Build and deploy your apps. Find guidance based on your language and platform.
 | :::image type="icon" source="../media/index/logo_nodejs.svg"::: [JavaScript and Node.js](javascript.md) | 
   :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_php.svg"::: [PHP](php.md) |
   :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_python.svg"::: [Python](python.md) |
-| :::image type="icon" source=""::: []() | 
-  :::image type="icon" source=""::: []() |
-  :::image type="icon" source=""::: []() |
 
-| :::image type="icon" source=""::: []() | 
-  :::image type="icon" source=""::: []() |
-  :::image type="icon" source=""::: []() |
-| :::image type="icon" source=""::: []() | 
-  :::image type="icon" source=""::: []() |
-  :::image type="icon" source=""::: []() |
-| :::image type="icon" source=""::: []() | 
-  :::image type="icon" source=""::: []() |
-  :::image type="icon" source=""::: []() |
+:::row:::
+   :::column:::
+      
+   :::column-end:::
+   :::column:::
+      
+   :::column-end:::
+   :::column:::
+      
+   :::column-end:::
+:::row-end:::
 
 
 
