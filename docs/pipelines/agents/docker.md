@@ -373,7 +373,7 @@ You must also use some kind of container orchestration system like Kubernetes or
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance |
-| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md#create-personal-access-tokens-to-authenticate-access) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname)          |
 | AZP_POOL             | Agent pool name (default value: `Default`)                  |
 | AZP_WORK             | Work directory (default value: `_work`)                     |

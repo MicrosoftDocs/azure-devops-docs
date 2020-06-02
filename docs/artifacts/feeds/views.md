@@ -1,15 +1,15 @@
 ---
-title: Communicate package quality with prerelease and release views
-description: Use prerelease and release views to communicate the quality of a package to your consumers in Azure DevOps Services or Team Foundation Server
+title: Use the prerelease and release views to publish quality packages
+description: Use the prerelease and release views to publish a quality package to your consumers in Azure DevOps Services or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 05/26/2020
+ms.date: 06/01/2020
 monikerRange: '>= tfs-2017'
 ---
  
 
-# Communicate package quality with prerelease and release views
+# Use the prerelease and release views to publish quality packages
 
 **Azure DevOps Services**
 
@@ -37,9 +37,11 @@ To promote a package-version:
 > [!div class="mx-imgBorder"]
 > ![Promote scrollbar](media/release-views-promote-choice.png)
 
-You can also promote a package to a view using the REST API. Azure Artifacts currently supports NuGet, Python, npm, Maven (limited operations) and Universal packages.
+### Promoting a package using the REST API
 
-* **Promote a NuGet package**
+In addition to using the user interface in Azure Artifacts, you can also promote a package to a view using the REST API. Azure Artifacts currently supports the following package types: NuGet, Python, npm, Maven (limited operations), and Universal packages.
+
+* **Promote a NuGet package**:
 
 Example:
 
@@ -49,7 +51,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/
 
 See [NuGet - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/nuget/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
-* **Promote an npm package**
+* **Promote an npm package**:
 
 Example:
 
@@ -59,7 +61,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/_apis/packaging/feeds/{feedId}/n
 
 See [Npm - Update Package](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/npm/update%20package?view=azure-devops-rest-5.1) for more details.
 
-* **Promote a Python package**
+* **Promote a Python package**:
 
 Example:
 
@@ -70,7 +72,7 @@ PATCH https://pkgs.dev.azure.com/{organization}/{project}/_apis/packaging/feeds/
 See [Python - Update Package Version](https://docs.microsoft.com/rest/api/azure/devops/artifactspackagetypes/python/update%20package%20version?view=azure-devops-rest-5.1) for more details.
 
 
-* **Promote a Universal package**
+* **Promote a Universal package**:
 
 Example:
 
@@ -84,8 +86,6 @@ Keep in mind that you cannot publish a package directly to a view (for example, 
 
 > [!NOTE]
 > Package demotion is not supported currently. If you want this feature to be added to future releases, please feel free to **Suggest a feature** on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
-
-<!-- TODO REST API link -->
 
 ## Managing views
 
