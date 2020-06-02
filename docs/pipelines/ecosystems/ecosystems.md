@@ -22,236 +22,48 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 ## Build your app
 
-:::image type="icon" source="../media/index/logo_aspnetcore.svg":::
+:::row:::
+   :::column:::
+      :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md)
+   :::column-end:::
+   :::column:::
+      :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md)
+   :::column-end:::
+   :::column:::
+      :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_android.svg"::: [Android](android.md)
+   :::column-end:::
+:::row-end:::
 
-:::image type="icon" source="../media/index/logo_anaconda.png":::
-
-:::image type="content" alt-text="Anaconda" source="../media/index/logo_anaconda.png":::
-
+|   |   |   |
 | - | - | - |
-| :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md) | :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md) |:::image type="icon" source="<folderPath>"::: []() |
-| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
-| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
-| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
-| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
+| :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md) | 
+  :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md) |
+  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_android.svg"::: [Android](android.md) |
+| :::image type="icon" source="../media/index/logo_net.svg"::: [ASP.NET](../apps/aspnet/build-aspnet-4.md) | 
+  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"::: [C/C++ with GCC](../apps/c-cpp/gcc.md) |
+  :::image type="icon" source=""https://docs.microsoft.com/media/logos/logo_visual-studio.svg"::: [C/C++ with VC++](../apps/windows/cpp.md) |
+| :::image type="icon" source="../media/index/logo_dockercontainer.svg"::: [Containers](./containers/build-image.md) | 
+  :::image type="icon" source="../media/index/logo_go.svg"::: [Go](go.md) |
+  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_java.svg"::: [Java](java.md) |
+| :::image type="icon" source="../media/index/logo_nodejs.svg"::: [JavaScript and Node.js](javascript.md) | 
+  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_php.svg"::: [PHP](php.md) |
+  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_python.svg"::: [Python](python.md) |
+| :::image type="icon" source=""::: []() | 
+  :::image type="icon" source=""::: []() |
+  :::image type="icon" source=""::: []() |
 
-<ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
-            <li>
-                <a href="dotnet-core.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt=".NET Core" src="../media/index/logo_aspnetcore.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />.NET Core</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="anaconda.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Anaconda" src="../media/index/logo_anaconda.png">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br/>Anaconda</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="android.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Android" src="https://docs.microsoft.com/media/logos/logo_android.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Android</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="../apps/aspnet/build-aspnet-4.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="ASP.NET" src="../media/index/logo_net.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />ASP.NET</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="../apps/c-cpp/gcc.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="C++" src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />C/C++ with GCC</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="../apps/windows/cpp.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Visual Studio logo" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />C/C++ with VC++</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="./containers/build-image.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Docker logo" src="../media/index/logo_dockercontainer.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Containers</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="go.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Go logo" src="../media/index/logo_go.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Go</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="java.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Java logo" src="https://docs.microsoft.com/media/logos/logo_java.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Java</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="javascript.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Node.js logo" src="../media/index/logo_nodejs.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />JavaScript and Node.js</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="php.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="PHP logo" src="https://docs.microsoft.com/media/logos/logo_php.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />PHP</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="python.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Python logo" src="https://docs.microsoft.com/media/logos/logo_python.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Python</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
+| :::image type="icon" source=""::: []() | 
+  :::image type="icon" source=""::: []() |
+  :::image type="icon" source=""::: []() |
+| :::image type="icon" source=""::: []() | 
+  :::image type="icon" source=""::: []() |
+  :::image type="icon" source=""::: []() |
+| :::image type="icon" source=""::: []() | 
+  :::image type="icon" source=""::: []() |
+  :::image type="icon" source=""::: []() |
+
+
+
             <li>
                 <a href="ruby.md">
                     <div class="cardSize">
