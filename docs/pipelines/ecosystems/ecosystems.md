@@ -22,6 +22,12 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 ## Build your app
 
+| :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md) | :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md) |:::image type="icon" source="<folderPath>"::: []() |
+| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
+| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
+| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
+| :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
+
 <ul id="index2" class="cardsFTitle panelContent singlePanelContent cols cols4" style="float: left; display: flex!important;">
             <li>
                 <a href="dotnet-core.md">
