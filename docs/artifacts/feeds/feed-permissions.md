@@ -105,6 +105,9 @@ After restricting your view's visibility, the permissions column should indicate
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-settings.png)
 
+> [!IMPORTANT]
+> A very important concept to keep in mind is that views inherit their permissions from their parent feed. Setting view permissions to `Specific people` without specifying users or groups will cause the view permissions to default back to their parent feed permissions.
+
 <a name="common-identities"></a>
 
 ## Package permissions in Azure Pipelines
