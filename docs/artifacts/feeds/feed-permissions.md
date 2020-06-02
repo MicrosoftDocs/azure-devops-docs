@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 05/19/2020
+ms.date: 06/02/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,6 +24,7 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Save packages from upstream sources           |          | &#x2713; | &#x2713; | &#x2713; |
 | Push packages                                 |          |          | &#x2713; | &#x2713; |
 | Unlist/deprecate packages                     |          |          | &#x2713; | &#x2713; |
+| Promote a package to a view                   |          |          | &#x2713; | &#x2713; |
 | Delete/unpublish package                      |          |          |          | &#x2713; |
 | Edit feed permissions                         |          |          |          | &#x2713; |
 
