@@ -381,6 +381,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/pipelines/ecosystems/index.md",
+      "redirect_url": "/azure/devops/pipelines/ecosystems/ecosystems",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/package/preview/updated-experience.md",
       "redirect_url": "/azure/devops/artifacts/preview/updated-experience",
       "redirect_document_id": true
