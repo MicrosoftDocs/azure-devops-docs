@@ -112,7 +112,7 @@ ms.technology: devops-cicd-tasks
 | ![icon](../package/media/pypi-publisher.png) [PyPI Publisher task (Deprecated)](../package/pypi-publisher.md) - How to upload a package to PyPI when building code | Azure Pipelines |
 | ![icon](../package/media/pip-authenticate.png) [Python Pip Authenticate](../package/pip-authenticate.md) - Sets up authentication with pip so you can perform pip commands in your pipeline. | Azure Pipelines |
 | ![icon](../package/media/twine-authenticate.png) [Python Twine Upload Authenticate](../package/twine-authenticate.md) - Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. | Azure Pipelines |
-| ![icon](../package/media/universal-packages.png) [Universal Package, download and publish task](../package/universal-packages.md) - Learn all about how you can make use of NuGet packages when you are building code | Azure Pipelines, TFS 2018 and newer |
+| ![icon](../package/media/universal-packages.png) [Universal Package, download and publish task](../package/universal-packages.md) - Learn all about how you can make use of Universal packages when you are building code | Azure Pipelines, TFS 2018 and newer |
 
 ## Deploy
 
