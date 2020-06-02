@@ -20,6 +20,7 @@ landingContent:
 # Start card title with a verb
   # Card (optional)
   - title: About TFVC
+    linkLists:
       - linkListType: overview
         links:
           - text: What is TFVC?
