@@ -54,7 +54,17 @@ The filter function displays work items based on any visible/displayed column or
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
 
-::: moniker range=">= tfs-2017"
+filter-kb-text-web-services.png
+
+
+::: moniker range="azure-devops"
+
+> [!div class="mx-imgBorder"]  
+> ![Kanban board, Filter using keyword search](../boards/media/filter/filter-kb-text-web-services.png)
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ![Kanban board, Filter using keyword search](../boards/media/filter/filter-options-web.png)
 
