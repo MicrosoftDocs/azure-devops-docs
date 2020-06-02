@@ -289,7 +289,7 @@ With the service endpoints API, you can access these endpoints along with their 
 </td>
 </tr>
 <tr>
-<td><a href="./tfvc/overview.md" data-raw-source="[Version control](./tfvc/overview.md)">Version control</a></td>
+<td><a href="./tfvc/index.yml" data-raw-source="[Version control](./tfvc/index.yml)">Version control</a></td>
 <td>This API is straight-forward and gives you access to the items and types related to version control within Team Services and TFS.</td>
 <td>
 <ul><li>Get recent changes</li>

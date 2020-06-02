@@ -56,7 +56,7 @@ You can use Git repositories to host and collaborate on your source code. For an
 
 ::: moniker range="<= tfs-2015"
 
-[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 ::: moniker-end
 
