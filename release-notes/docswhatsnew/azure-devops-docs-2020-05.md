@@ -11,6 +11,7 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 ## Boards
 
 ### New articles
+
 - [Implement Scaled Agile Framework®](/azure/devops/boards/plans/scaled-agile-framework)
 - [SAFe® concepts & Azure Boards](/azure/devops/boards/plans/safe-concepts)
 - [Configure Azure Boards](/azure/devops/boards/plans/safe-configure-boards)
@@ -22,6 +23,7 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 
 - [Bulk add or modify work items with Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) - Content performance updates to Bulk modify with Excel
 - [Link type reference](/azure/devops/boards/queries/link-type-reference) - Update list link types
+- [Connect Azure Boards to an Office client](/azure/devops/boards/backlogs/office/track-work) - Content performance updates
 
 ## Integrate
 
