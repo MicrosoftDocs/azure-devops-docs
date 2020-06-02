@@ -8961,11 +8961,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/tfvc/index.md",
-      "redirect_url": "/azure/devops/repos/tfvc/overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/tfvc/label-command-team-foundation-version-control.md",
       "redirect_url": "/azure/devops/repos/tfvc/label-command-team-foundation-version-control",
       "redirect_document_id": true
@@ -12218,11 +12213,6 @@
     {
       "source_path": "docs/user-guide/index.yml",
       "redirect_url": "/azure/devops/get-started/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/repos/tfvc/index.md",
-      "redirect_url": "/azure/devops/repos/tfvc/overview",
       "redirect_document_id": false
     },
     {
