@@ -255,7 +255,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -276,7 +276,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -301,7 +301,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/choose-sprint-standard.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -535,7 +535,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-![Past sprints provide historical record, tfs 2013, 2015](media/burndown/ALM_DS_PastSprints.png)  
+![Past sprints provide historical record](media/burndown/ALM_DS_PastSprints.png)  
 
 ::: moniker-end
 
@@ -587,7 +587,7 @@ In addition to the sprint burndown chart, teams can review the [velocity](team-v
 
 You can learn more about defining, planning, and executing your sprints from these articles: 
 
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Sprint planning](../../boards/sprints/assign-work-sprint.md)  
 - [Add tasks to backlog items](../../boards/sprints/add-tasks.md)
 - [Update and monitor your Taskboard](../../boards/sprints/task-board.md)  

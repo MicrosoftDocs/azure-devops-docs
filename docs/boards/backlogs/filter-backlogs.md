@@ -21,7 +21,7 @@ ms.date: 10/16/2019
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
-The filter function is available from backlogs, sprint backlogs, queries, and the taskboard.  
+The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
 
 ::: moniker range=">= azure-devops-2019"
 
