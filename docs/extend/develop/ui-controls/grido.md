@@ -12,7 +12,7 @@ ms.date: 06/02/2020
 
 # Use the grid control
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../../includes/version-azure-devops.md)]
 
 This article shows different samples about the grid control.
 
