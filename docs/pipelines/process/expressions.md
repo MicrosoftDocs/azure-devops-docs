@@ -258,6 +258,24 @@ Counters are scoped to a pipeline. In other words, its value is incremented for 
 * Each element in the array is converted to a string. Complex objects are converted to empty string.
 * If the right parameter is not an array, the result is the right parameter converted to a string.
 
+In this example, a semicolon gets added between each item in the array. The parameter type is an object. 
+
+```yaml
+parameters:
+- name: myArray
+  type: object
+  default:
+    - FOO
+    - BAR
+    - ZOO
+
+variables:
+   A: ${{ join(';',parameters.myArray) }} 
+
+steps:
+  - script: echo $A # outputs FOO;BAR;ZOO
+```
+
 ::: moniker-end
 
 ### le
