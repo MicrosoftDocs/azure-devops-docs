@@ -207,7 +207,7 @@ You can use [Git repositories](../../repos/git/index.yml) to host and collaborat
 
 ::: moniker range=">= tfs-2013"
 
-[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 

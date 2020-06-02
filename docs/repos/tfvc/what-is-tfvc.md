@@ -1,5 +1,5 @@
 ---
-title: Use Team Foundation Version Control
+title: What is Team Foundation Version Control
 titleSuffix: Azure Repos
 description: Use Team Foundation Version Control
 ms.assetid: 1d629052-c65d-4c5d-81eb-eaa4413fe285
@@ -7,12 +7,12 @@ ms.technology: devops-code-tfvc
 ms.author: apawast
 author: apawast
 ms.topic: overview
-ms.date: 08/29/2017
+ms.date: 06/02/2020
 monikerRange: '>= tfs-2015'
 ---
 
 
-# Use Team Foundation Version Control
+# What is Team Foundation Version Control
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
@@ -47,10 +47,9 @@ TFVC lets you apply [granular permissions](../../organizations/security/permissi
 
 Get started by creating a project, configuring your workspace, and reviewing and sharing your code. You can use any one of these clients or IDEs: 
 
-<!--- All images are Placeholder --> 
-<!-- Converting to icon48 format, this gets cleaner in YAML -->
-<div class="ico48Case halfStack"><div class="ico48Link"><a href="share-your-code-in-tfvc-vs.md"><img width="48" height="48" alt="Visual Studio" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg"><span>Visual Studio</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-xcode.md"><img width="48" height="48" alt="Xcode" src="https://docs.microsoft.com/media/logos/logo_xcode.svg"><span>Xcode</span></a></div><div class="ico48Link"><a href="share-your-code-in-tfvc-eclipse.md"><img width="48" height="48" alt="Eclipse" src="https://docs.microsoft.com/media/logos/logo_eclipse.svg"><span>Eclipse</span></a></div></div>
-
+- [Visual Studio](share-your-code-in-tfvc-vs.md)
+- [Xcode](share-your-code-in-tfvc-xcode.md)
+- [Eclipse](share-your-code-in-tfvc-eclipse.md)
 
 ### Step-by-step tutorials  
 

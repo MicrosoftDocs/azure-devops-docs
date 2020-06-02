@@ -52,7 +52,7 @@ Follow these steps to create and check-in a new Resource Manager template.
    Visual Studio **File | Add | New project** menu.
 
 1. Save the entire solution (not just the project) and 
-   commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
+   commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.yml) or 
    [Azure Repos Git](../../../../repos/git/index.yml) repository.
 
 ## Create the build pipeline
