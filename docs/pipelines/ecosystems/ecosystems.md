@@ -26,6 +26,9 @@ Build and deploy your apps. Find guidance based on your language and platform.
 
 :::image type="icon" source="../media/index/logo_anaconda.png":::
 
+:::image type="content" alt-text="Anaconda" source="../media/index/logo_anaconda.png":::
+
+| - | - | - |
 | :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md) | :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md) |:::image type="icon" source="<folderPath>"::: []() |
 | :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
 | :::image type="icon" source="<folderPath>"::: []() | :::image type="icon" source="<folderPath>"::: []() |:::image type="icon" source="<folderPath>"::: []() |
