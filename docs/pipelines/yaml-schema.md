@@ -1244,7 +1244,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
-* [Pipeline trigger](/azure/devops/pipelines/process/pipeline-triggers)
+* [Pipeline trigger](#pipeline-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1509,6 +1509,10 @@ It does so regardless of whether the code has changed since the last run.
 ---
 
 ::: moniker-end
+
+### Pipeline trigger
+
+Pipeline completion triggers are configured using a [pipeline resource](#pipeline-resource). For more information, see [Pipeline completion triggers](./process/pipeline-triggers.md).
 
 ## Pool
 
