@@ -96,7 +96,7 @@ The task supports authentication based on Azure Active Directory. Authentication
 * [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
 * [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### What are the Azure PowerShell prerequisites for using this task?

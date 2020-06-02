@@ -85,7 +85,7 @@ None
 
 </table>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

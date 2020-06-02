@@ -23,7 +23,7 @@ The contents of the secure files are encrypted and can only be used during the b
 
 There's a size limit of 10 MB for each secure file.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

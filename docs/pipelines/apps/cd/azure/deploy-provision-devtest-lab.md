@@ -241,7 +241,7 @@ release pipeline in Azure Pipelines.
    improvements to the extension, visit the 
    [DevTest Labs feedback forum](https://feedback.azure.com/forums/320373-azure-devtest-labs).  
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

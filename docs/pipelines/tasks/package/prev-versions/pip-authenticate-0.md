@@ -36,5 +36,5 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
