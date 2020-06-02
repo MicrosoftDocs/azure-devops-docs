@@ -1,16 +1,18 @@
 ---
 ms.technology: devops-ecosystem
 title: Working with URLs in extensions | Azure DevOps Services
-description: Best practices for working with URLs in Azure DevOps extensions and integrations
+description: Learn about best practices for working with URLs in Azure DevOps extensions and integrations.
 ms.assetid: 1f27f05e-2c55-4873-ab4a-8c9c0947a7fe
 ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast
-ms.date: 08/31/2018
+ms.date: o6/02/2020
 ---
 
-# Best practices for working with URLs in Azure DevOps extensions and integrations
+# Work with URLs in extensions and integrations
+
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
 With the introduction of Azure DevOps Services, organizational resources and APIs are now accessible via either of the following URLs:
 
@@ -28,11 +30,11 @@ Each organization has a designated **primary** URL that is either the new form o
 | When the organization was created | Default primary URL |
 |--------------------------|---------------------|
 | On or after 9/10/2018     | New                 |        
-| Prior to 9/10/2018        | Legacy              |
+| Before 9/10/2018        | Legacy              |
 
 ### How the primary URL is used
 
-The primary URL is the base URL for all URLs constructed by Azure DevOps in background jobs and other automated scenarios, like:
+The primary URL is the base URL for all URLs constructed by Azure DevOps in background jobs and other automated scenarios. See the following examples.
 
 * URLs provided to Azure Pipelines tasks via environment variables (like `SYSTEM_TEAMFOUNDATIONCOLLECTIONURI`)
 * URLs included in service hooks event payloads (like URLs in `resourceContainers`)
@@ -47,7 +49,7 @@ Write-Host $orgUrl
 
 If this task is executed on an organization where the primary URL is the new URL form, the output is `https://dev.azure.com/{organization}`. The same task executed on an organization where the primary URL is the legacy URL form outputs `https://{organization}.visualstudio.com`.
 
-It is therefore important that Azure Pipeline tasks and services that receive events from service hooks handle both URL forms.
+It's therefore important that Azure Pipeline tasks and services that receive events from service hooks handle both URL forms.
 
 ## URLs returned in REST APIs
 
@@ -85,7 +87,7 @@ To ensure your extension, tool, or integration is resilient to changing organiza
 
 With just the organization's name or ID, you can get its base URL using the global Resource Areas REST API (`https://dev.azure.com/_apis/resourceAreas`). This API doesn't require authentication and provides information about the location (URL) of the organization as well as the base URL for REST APIs, which can live on different domains.
 
-A resource area is a group of related REST API resources and endpoints. Each resource area has a well-known identifier (see the table below). Each resource area has an organization-specific base URL that can be used to form URLs for APIs in that resource area. For example, the base URL for "build" REST APIs for the Fabrikam might be `https://dev.azure.com/Fabrikam`, whereas the base URL for "release management" REST APIs might be `https://vsrm.dev.azure.com/Fabrikam`.
+A resource area is a group of related REST API resources and endpoints. Each resource area has a well-known identifier (see the table below). Each resource area has an organization-specific base URL that can be used to form URLs for APIs in that resource area. For example, the base URL for "build" REST APIs for the Fabrikam might be `https://dev.azure.com/Fabrikam`, but the base URL for "release management" REST APIs might be `https://vsrm.dev.azure.com/Fabrikam`.
 
 > [!NOTE]
 > The Resource Areas REST API returns URLs for the organization based on that organization's designated primary URL.
@@ -98,7 +100,7 @@ There are a few ways to get the base URL for an organization using its name.
 
 #### Request
 
-Replace `{organizationName}` with organization's name, for example "Fabrikam". `79134C72-4A58-4B42-976C-04E7115F32BF` is the ID for the "core" resource area, which is where important resources like "projects" reside.
+Replace `{organizationName}` with organization's name, for example "Fabrikam". `79134C72-4A58-4B42-976C-04E7115F32BF` is the ID for the "core" resource area, which is where important resources like "projects" are.
 
 ```
 GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32BF
@@ -215,7 +217,7 @@ GET https://dev.azure.com/_apis/resourceAreas/79134C72-4A58-4B42-976C-04E7115F32
 
 ## How to get the base URL for a REST API
 
-Starting from an organization's URL, you can use the Resource Areas REST API to look up the correct base URL for any REST API you need to call. This ensures your code is resilient to the location (domain) of a REST API changing in the future and avoids potentially brittle logic.
+Starting from an organization's URL, you can use the Resource Areas REST API to look up the correct base URL for any REST API you need to call. This process ensures your code is resilient to the location (domain) of a REST API changing in the future and avoids potentially brittle logic.
 
 > [!NOTE]
 > If you are using the Microsoft-provided .NET, TypeScript (web), Node.js, or Python client library, URL lookup is handled for you. For example, in .NET when you construct a `VssConnection` and call `GetClient<T>`, the returned client is properly bound to the correct base URL for the REST APIs called by this client.
@@ -280,7 +282,7 @@ This table shows the IDs for common resource areas. See the previous section for
 |4e080c62-fa21-4fbc-8fef-2a10a2b38049|git|
 |4e40f190-2e3f-4d9f-8331-c7788e833080|graph|
 |68ddce18-2501-45f1-a17b-7931a9922690|memberEntitlementManagement|
-|b3be7473-68ea-4a81-bfc7-9530baaa19ad|nuget|
+|b3be7473-68ea-4a81-bfc7-9530baaa19ad|NuGet|
 |4c83cfc1-f33a-477e-a789-29d38ffca52e|npm|
 |45fb9450-a28d-476d-9b0f-fb4aedddff73|package|
 |7ab4e64e-c4d8-4f50-ae73-5ef2e21642a5|packaging|

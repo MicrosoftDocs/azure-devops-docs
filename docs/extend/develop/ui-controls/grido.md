@@ -1,28 +1,29 @@
 ---
-title: Use the Grid Control | Extensions for Azure DevOps Services
-description: Use the grid control to show rows and columns items that can be sorted, resized and moved in your app for Azure DevOps Services.
+title: Use the Grid Control | Extensions for Azure DevOps
+description: Use the grid control to show rows and columns that can be sorted, resized, and moved in your application for Azure DevOps.
 ms.assetid: 9933E798-3D75-A5FD-919E-F38EA313872B
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 06/02/2020
 ---
 
 # Use the grid control
 
-This page shows different samples about the grid control.
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-**Go to [API Reference](../../reference/client/controls/grid.md) for more details.**
+This article shows different samples about the grid control.
 
-[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
+> [!TIP]
+> For more information and examples, see the [Formula Design System](https://developer.microsoft.com/azure-devops/). See also the [API Reference](../../reference/client/controls/grid.md).
 
 <a name="basic"></a>
 
 ## Grid height, grid width, and columns
 
-This sample shows the basic usage of the grid. Note that, `canSortBy` is set to false for "Column 2" which disables sorting for that column.
+This sample shows the basic usage of the grid. `canSortBy` is set to *false* for "Column 2" which disables sorting for that column.
 
 ``` typescript
   import Controls = require("VSS/Controls");
@@ -54,7 +55,7 @@ This sample shows the basic usage of the grid. Note that, `canSortBy` is set to 
 
 ## Update grid source
 
-This sample shows how the grid can be updated after it is initialized using `setDataSource`.
+This sample shows how the grid can be updated after it's initialized using `setDataSource`.
 ``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
@@ -163,7 +164,7 @@ This sample shows the usage of contextMenu for each row in the grid. The item as
 
 ## Open row details
 
-This sample shows how an action can be executed when a row is opened. `openRowDetail` delegate is executed when the row is double clicked or enter key is hit when a row has the focus.
+This sample shows how an action can be executed when a row is opened. `openRowDetail` delegate is executed when the row is double-clicked or enter key is hit when a row has the focus.
 ``` typescript
   import Controls = require("VSS/Controls");
   import Grids = require("VSS/Controls/Grids");
@@ -400,7 +401,7 @@ This sample shows the customization of the grid cells. "Total" column is a calcu
 
 ## Drag & drop within grid
 
-This sample shows dragging grid rows and dropping them to the same grid which basically changes the ordering of grid item.
+This sample shows dragging grid rows and dropping them to the same grid, which basically changes the ordering of grid item.
 
 ``` css
   .row-drag-helper {
