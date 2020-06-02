@@ -2,9 +2,8 @@
 title: Build and deploy apps, any app and platform ecosystems index
 titleSuffix: Azure DevOps Services
 description: Learn how to configure CI/CD for the app and platform of your choice using Azure Pipelines and Team Foundation Server (TFS).  
-layout: LandingPage
 hide_bc: true
-ms.topic: landing-page
+ms.topic: overview
 ms.assetid: 00f4ed452-fbb8-45f9-8f0a-343702aac5b8  
 ms.manager: mijacobs 
 ms.author: sdanie
