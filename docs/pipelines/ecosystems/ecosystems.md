@@ -46,108 +46,11 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row-end:::
 
 
-|   |   |   |
-| - | - | - |
-| :::image type="icon" source="../media/index/logo_aspnetcore.svg"::: [.NET Core](dotnet-core.md) | 
-  :::image type="icon" source="../media/index/logo_anaconda.png"::: [Anaconda](anconda.md) |
-  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_android.svg"::: [Android](android.md) |
-| :::image type="icon" source="../media/index/logo_net.svg"::: [ASP.NET](../apps/aspnet/build-aspnet-4.md) | 
-  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg"::: [C/C++ with GCC](../apps/c-cpp/gcc.md) |
-  :::image type="icon" source=""https://docs.microsoft.com/media/logos/logo_visual-studio.svg"::: [C/C++ with VC++](../apps/windows/cpp.md) |
-| :::image type="icon" source="../media/index/logo_dockercontainer.svg"::: [Containers](./containers/build-image.md) | 
-  :::image type="icon" source="../media/index/logo_go.svg"::: [Go](go.md) |
-  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_java.svg"::: [Java](java.md) |
-| :::image type="icon" source="../media/index/logo_nodejs.svg"::: [JavaScript and Node.js](javascript.md) | 
-  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_php.svg"::: [PHP](php.md) |
-  :::image type="icon" source="https://docs.microsoft.com/media/logos/logo_python.svg"::: [Python](python.md) |
-
-:::row:::
-   :::column:::
-      
-   :::column-end:::
-   :::column:::
-      
-   :::column-end:::
-   :::column:::
-      
-   :::column-end:::
-:::row-end:::
 
 
 
-            <li>
-                <a href="ruby.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Ruby logo" src="https://docs.microsoft.com/media/logos/logo_ruby.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Ruby</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="../apps/windows/universal.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="UWP logo" src="../media/index/logo_uwp.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />UWP</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="xamarin.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Xamarin logo" src="https://docs.microsoft.com/media/logos/logo_xamarin.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Xamarin</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="xcode.md">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img alt="Xcode logo" src="https://docs.microsoft.com/media/logos/logo_xcode.svg">
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <h3><br />Xcode</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-</ul>
+
+
 
 ## Deploy your app
 
