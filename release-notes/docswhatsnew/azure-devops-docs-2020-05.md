@@ -19,6 +19,19 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 - [Manage SAFe® programs and portfolios](/azure/devops/boards/plans/safe-plan-track-boards)
 - [View roadmaps and monitor progress](/devops/boards/plans/safe-review-roadmaps-progress)
 
+  These articles reflect the following additions and updates: 
+  
+  - Updated to support SAFe® 5.0
+  - Updated screenshots to reflect Azure DevOps Services UI 
+  - Quick reference conceptual mapping of SAFe terms and Azure Boards terms
+  - Shared Services configuration 
+  - Enablers and Capabilities
+  - Wiki and sharing information 
+  - Added information around customization and SAFe®
+  - Added a section on importing a top-down plan using Excel
+  - Added information about reports, rollup, and roadmaps 
+
+
 ### Updated articles
 
 - [Bulk add or modify work items with Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) - Content performance updates to Bulk modify with Excel
