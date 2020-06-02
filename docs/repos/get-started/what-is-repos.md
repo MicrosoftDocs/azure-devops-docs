@@ -100,7 +100,7 @@ Get started by creating a project, configuring your workspace, and reviewing and
 - [Xcode](../tfvc/share-your-code-in-tfvc-xcode.md)
 - [Eclipse](../tfvc/share-your-code-in-tfvc-eclipse.md)
 
-## Learm more
+## Learn more
 
 - [Learn more about Git](../git/index.yml)
 - [Learn more about TFVC](../tfvc/index.yml)
