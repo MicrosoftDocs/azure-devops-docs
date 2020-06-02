@@ -270,10 +270,10 @@ parameters:
     - ZOO
 
 variables:
-   A: ${{ join(';',parameters.myArray) }} # outputs FOO;BAR;ZOO
+   A: ${{ join(';',parameters.myArray) }} 
 
 steps:
-  - script: echo $A
+  - script: echo $A # outputs FOO;BAR;ZOO
 ```
 
 ::: moniker-end
