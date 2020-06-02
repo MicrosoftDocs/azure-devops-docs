@@ -7,7 +7,7 @@ ms.topic: conceptual
 monikerRange: 'azure-devops'
 ms.author: apawast
 author: apawast
-ms.date: o6/02/2020
+ms.date: 06/02/2020
 ---
 
 # Work with URLs in extensions and integrations
