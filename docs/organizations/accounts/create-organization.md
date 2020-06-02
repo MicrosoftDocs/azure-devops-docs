@@ -43,6 +43,9 @@ In this article, learn how to create an organization. An organization is used to
    - You need a work or school account that's managed by your Azure AD. If you use Azure or Office 365, you might have one already. If you don't, learn how to [sign up for Azure as an organization](https://azure.microsoft.com/documentation/articles/sign-up-organization/).
    - To use existing on-premises identities, see [use Azure AD Connect for integrating on-premises directories with Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/).
    - All users must be members in that directory to access your organization. To add users from other organizations, use [Azure AD B2B collaboration capabilities](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+   
+> [!NOTE]
+> Organization names must start with a letter or number, followed by letters, numbers or hyphens, and must end with a letter or number.
 
 ::: moniker-end
 
