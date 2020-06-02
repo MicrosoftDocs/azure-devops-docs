@@ -20,7 +20,8 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 - [View roadmaps and monitor progress](/devops/boards/plans/safe-review-roadmaps-progress)
 
   These articles reflect the following additions and updates: 
-  - Updated to support SAFe® 5.0
+  
+  - - Updated to support SAFe® 5.0
   - Updated screenshots to reflect Azure DevOps Services UI 
   - Quick reference conceptual mapping of SAFe terms and Azure Boards terms
   - Shared Services configuration 
