@@ -12216,6 +12216,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/repos/tfvc/overview.md",
+      "redirect_url": "/azure/devops/repos/tfvc/what-is-tfvc",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/pipelines/tasks/deploy/azure-policy-check-gate.md",
       "redirect_url": "/azure/devops/pipelines/tasks/deploy/azure-policy",
       "redirect_document_id": false

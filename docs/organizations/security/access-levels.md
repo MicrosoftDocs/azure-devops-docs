@@ -128,7 +128,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -289,7 +289,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -472,7 +472,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -611,7 +611,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
