@@ -31,6 +31,14 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
   - Added a section on importing a top-down plan using Excel
   - Added information about reports, rollup, and roadmaps 
 
+
+- [Implement Scaled Agile Framework](/azure/devops/boards/plans/scaled-agile-framework)
+- [SAFe concepts & Azure Boards](/azure/devops/boards/plans/safe-concepts)
+- [Configure Azure Boards](/azure/devops/boards/plans/safe-configure-boards)
+- [Customize Azure Boards](/azure/devops/boards/plans/safe-customize)
+- [Manage SAFe programs and portfolios](/azure/devops/boards/plans/safe-plan-track-boards)
+- [View roadmaps and monitor progress](/devops/boards/plans/safe-review-roadmaps-progress)
+
 ### Updated articles
 
 - [Bulk add or modify work items with Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel) - Content performance updates to Bulk modify with Excel
