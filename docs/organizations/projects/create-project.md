@@ -561,5 +561,5 @@ From the admin context of the web portal, you can add additional repositories to
 
 - [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
-- [Team Foundation version control](../../repos/tfvc/index.md)
+- [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)
