@@ -12,7 +12,7 @@ ms.date: 06/02/2020
 
 # Static content hosting
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 Choose to host static content for your extension, like HTML, CSS, and JavaScript files, on your own service, on a third-party hosting service, like Azure or Heroku, or on Azure DevOps Services directly.
 
