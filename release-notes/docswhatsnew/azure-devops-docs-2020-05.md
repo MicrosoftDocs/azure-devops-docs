@@ -1,7 +1,7 @@
 ---
 title: "Azure DevOps docs: What's new for May 2020"
 description: "What's new in Azure DevOps docs for May 2020."
-ms.date: 06/01/2020
+ms.date: 06/02/2020
 ---
 
 # Azure DevOps docs: What's new for May 2020
@@ -9,6 +9,14 @@ ms.date: 06/01/2020
 Welcome to what's new in Azure DevOps docs for May 2020. This article lists some of the major changes to docs during this period.
 
 ## Boards
+
+### New articles
+- [Implement Scaled Agile Framework®](/azure/devops/boards/plans/scaled-agile-framework)
+- [SAFe® concepts & Azure Boards](/azure/devops/boards/plans/safe-concepts)
+- [Configure Azure Boards](/azure/devops/boards/plans/safe-configure-boards)
+- [Customize Azure Boards](/azure/devops/boards/plans/safe-customize)
+- [Manage SAFe® programs and portfolios](/azure/devops/boards/plans/safe-plan-track-boards)
+- [View roadmaps and monitor progress](/devops/boards/plans/safe-review-roadmaps-progress)
 
 ### Updated articles
 
