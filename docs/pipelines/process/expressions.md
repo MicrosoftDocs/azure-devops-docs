@@ -677,7 +677,7 @@ runs C#'s `Version.TryParse`. Must contain Major and Minor component at minimum.
 * To Boolean: `True`
 * To string: Major.Minor or Major.Minor.Build or Major.Minor.Build.Revision.
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

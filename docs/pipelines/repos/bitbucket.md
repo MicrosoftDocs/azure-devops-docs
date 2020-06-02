@@ -212,7 +212,7 @@ If either your BitBucket repository or your pipeline is private, we still provid
 
 Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
 
-## Q & A
+## FAQ
 
 [!INCLUDE [qa](includes/qa1.md)]
 

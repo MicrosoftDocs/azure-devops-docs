@@ -657,7 +657,7 @@ something might break your build. This can happen, for example, if a newer versi
 is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to specify the version 
 of the .NET Core SDK that's used in your build.
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 

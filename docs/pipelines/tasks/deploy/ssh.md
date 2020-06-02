@@ -60,7 +60,7 @@ This task enables you to connect to a remote machine using SSH and run commands 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-ssh-supported-keys](../includes/qa-ssh-supported-keys.md)]

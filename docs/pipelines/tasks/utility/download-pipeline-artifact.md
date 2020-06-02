@@ -97,7 +97,7 @@ Use this task to download pipeline artifacts from earlier stages in this pipelin
     runId: 40
 ```
 
-## Q&A
+## FAQ
 
 ### How can I find the ID of the Pipeline I want to download an artifact from? 
 

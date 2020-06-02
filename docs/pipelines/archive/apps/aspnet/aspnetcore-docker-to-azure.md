@@ -19,11 +19,11 @@ monikerRange: '>= tfs-2015'
 
 ## Creating the release pipeline from Visual Studio
 
-1. Make sure you have a Docker-enabled ASP.NET Core solution. See the [Q&A below](#new_solution) if you don't have one yet.
+1. Make sure you have a Docker-enabled ASP.NET Core solution. See the [FAQ below](#new_solution) if you don't have one yet.
 1. If you haven't already done so, add the project to a source control repository in Azure Repos by clicking first on **Add to Source Control** in the Visual Studio status bar (creating a local repository), then following the instructions in the Team Explorer pane to publish to a remote repository in Azure Repos.
 1. Select the **Tools > Extensions and Updates...** command, then search for and install the "Continuous Delivery Tools for Visual Studio" extension that matches your version of Visual Studio. (Or install from the [Visual Studio Gallery](https://aka.ms/CD4VS).)
 1. In Visual Studio Solution Explorer, right-click the project and select **Configure Continuous Delivery...**.
-1. In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [Q&A below](#create_acs) for information on creating the service.
+1. In the Configure Continuous Delivery dialog, select an Azure subscription that has Azure Container Service running. See the [FAQ below](#create_acs) for information on creating the service.
 1. Click Create and watch the output window for completion of the process, which will include direct links to the project, build pipeline, and release pipeline. A build will also have been started automatically, so you can monitor the progress of the build and deployment in the Azure Pipelines portal.
 
 > [!Note]
@@ -48,7 +48,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [include](../../../apps/aspnet/includes/commit-build-release.md)]
 
-## Q&A
+## FAQ
 
 <h3 id="new_solution">How do I create a Docker-enabled ASP.NET Core solution?</h3>
 

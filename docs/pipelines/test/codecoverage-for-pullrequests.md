@@ -80,7 +80,7 @@ Code coverage status check for pull requests is only a suggestion for developers
 > [!NOTE] 
 > Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior is not specific to code coverage policy.
 
-## Q&A
+## FAQ
 
 ### Which coverage tools and result formats can be used for validating code coverage in pull requests?
 
