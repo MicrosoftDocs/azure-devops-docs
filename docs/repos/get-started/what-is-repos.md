@@ -103,4 +103,4 @@ Get started by creating a project, configuring your workspace, and reviewing and
 ## Learm more
 
 - [Learn more about Git](../git/index.yml)
-- [Learn more about TFVC](../tfvc/index.md)
+- [Learn more about TFVC](../tfvc/index.yml)
