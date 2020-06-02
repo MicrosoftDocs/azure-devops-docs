@@ -1287,7 +1287,7 @@
     },
     {
       "source_path": "docs/setup-admin/team-services/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
+      "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -2327,7 +2327,7 @@
     },
     {
       "source_path": "docs/tfs-server/team-services/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
+      "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -3852,12 +3852,12 @@
     },
     {
       "source_path": "docs/work/office/sync-ps-tfs.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/sync-ps-tfs",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/office/remove-tfs-ps-integration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/remove-tfs-ps-integration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/remove-tfs-ps-integration",
       "redirect_document_id": false
     },
     {
@@ -4112,7 +4112,7 @@
     },
     {
       "source_path": "docs/load-test/app-service-web-app-performance-test.md",
-      "redirect_url": "/azure/devops/test/load-test/app-service-web-app-performance-test",
+      "redirect_url": "/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
@@ -4572,7 +4572,7 @@
     },
     {
       "source_path": "docs/test/performance-testing/app-service-web-app-performance-test.md",
-      "redirect_url": "/azure/devops/test/load-test/app-service-web-app-performance-test",
+      "redirect_url": "/azure/devops/test/load-test/overview",
       "redirect_document_id": false
     },
     {
@@ -4907,17 +4907,17 @@
     },
     {
       "source_path": "docs/ecosystem/sharepoint/about-sharepoint-integration.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/configure-sharepoint-tfs-2017-earlier.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/configure-sharepoint-tfs-2017-earlier",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/disable-tfs-sharepoint-integration-after-tfs-2018-upgrade",
       "redirect_document_id": false
     },
     {
@@ -4937,7 +4937,7 @@
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/discontinue-pre-tfs-2017-sharepoint-integration.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/discontinue-pre-tfs-2017-sharepoint-integration",
       "redirect_document_id": false
     },
     {
@@ -5852,27 +5852,27 @@
     },
     {
       "source_path": "docs/ecosystem/sharepoint/index.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/features-removed-when-disabling-sharepoint-integration.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/features-removed-when-disabling-sharepoint-integration",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/features-removed-when-disabling-sharepoint-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/update-excel-chart.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/update-excel-chart",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/update-excel-chart",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/update-ssrs-report.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/update-ssrs-report",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/update-ssrs-report",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/ecosystem/sharepoint/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/deprecation/upgrade-from-sharepoint2013-to-sharepoint-2106",
       "redirect_document_id": false
     },
     {
@@ -6057,7 +6057,7 @@
     },
     {
       "source_path": "docs/report/guidance/workbooks.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/workbooks",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/workbooks",
       "redirect_document_id": false
     },
     {
@@ -7642,8 +7642,8 @@
     },
     {
       "source_path": "docs/build-release/apps/index.md",
-      "redirect_url": "/azure/devops/pipelines/apps/index",
-      "redirect_document_id": true
+      "redirect_url": "/previous-versions/azure/devops/pipelines/apps/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/apps/cd/azure/aspnet-core-to-acr.md",
@@ -8282,7 +8282,7 @@
     },
     {
       "source_path": "docs/accounts/add-team-members-vs.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-team-members",
+      "redirect_url": "/azure/devops/organizations/security/add-users-team-project",
       "redirect_document_id": false
     },
     {
@@ -8427,7 +8427,7 @@
     },
     {
       "source_path": "docs/accounts/invite-outside-users.md",
-      "redirect_url": "/azure/devops/organizations/accounts/invite-outside-users",
+      "redirect_url": "/azure/devops/organizations/accounts/add-external-user",
       "redirect_document_id": false
     },
     {
@@ -8442,7 +8442,7 @@
     },
     {
       "source_path": "docs/accounts/manage-users-table-view.md",
-      "redirect_url": "/azure/devops/organizations/accounts/manage-users-table-view",
+      "redirect_url": "/azure/devops/organizations/accounts/add-organization-users",
       "redirect_document_id": false
     },
     {
@@ -9012,8 +9012,8 @@
     },
     {
       "source_path": "docs/tfvc/overview.md",
-      "redirect_url": "/azure/devops/repos/tfvc/overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/tfvc/what-is-tfvc",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tfvc/permission-command.md",
@@ -9522,8 +9522,8 @@
     },
     {
       "source_path": "docs/git/overview.md",
-      "redirect_url": "/azure/devops/repos/git/overview",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/repos/git/index",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/git/pull-requests-overview.md",
@@ -10402,222 +10402,222 @@
     },
     {
       "source_path": "docs/work/tfs-ps-sync/administrate-integration-tfs-project-server.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/administrate-integration-tfs-project-server",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/administrate-integration-tfs-project-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/assign-permissions-support-tfs-project-server-integration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/assign-permissions-support-tfs-project-server-integration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/assign-permissions-support-tfs-project-server-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/change-deployment-configuration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/change-deployment-configuration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/change-deployment-configuration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/change-synchronization-retry-or-resubmit-interval.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/change-synchronization-retry-or-resubmit-interval",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/change-synchronization-retry-or-resubmit-interval",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/configuration-quick-reference.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/configuration-quick-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/configuration-quick-reference",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/configure-tfs-project-server-integration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/configure-tfs-project-server-integration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/configure-tfs-project-server-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/customize-field-mapping-tfs-project-server.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/customize-field-mapping-tfs-project-server",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/customize-field-mapping-tfs-project-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/define-work-item-types-available-synchronization.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/define-work-item-types-available-synchronization",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/define-work-item-types-available-synchronization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/field-mapping-xml-element-reference.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/field-mapping-xml-element-reference",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/field-mapping-xml-element-reference",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/index.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/index",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/index",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/known-issues-and-workarounds.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/known-issues-and-workarounds",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/known-issues-and-workarounds",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/make-agile-team-progress-visible-to-the-pmo.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/make-agile-team-progress-visible-to-the-pmo",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/make-agile-team-progress-visible-to-the-pmo",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/manage-associations-enterprise-projects.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/manage-associations-enterprise-projects",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/manage-associations-enterprise-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/manage-field-mappings.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/manage-field-mappings",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/manage-field-mappings",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/manage-mappings-enterprise-project-team-project.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/manage-mappings-enterprise-project-team-project",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/manage-mappings-enterprise-project-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/manage-project-details.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/manage-project-details",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/manage-project-details",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/manage-projects.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/manage-projects",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/manage-projects",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/map-integration-components.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/map-integration-components",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/map-integration-components",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/map-project-plan-previously-bound.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/map-project-plan-previously-bound",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/map-project-plan-previously-bound",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/map-project-server-components.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/map-project-server-components",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/map-project-server-components",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/map-team-project-collection-to-pwa.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/map-team-project-collection-to-pwa",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/map-team-project-collection-to-pwa",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/monitor-submissions-resolve-rejections.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/monitor-submissions-resolve-rejections",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/monitor-submissions-resolve-rejections",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/operational-differences.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/operational-differences",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/operational-differences",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/overview-tfs-project-server-integration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/overview-tfs-project-server-integration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/overview-tfs-project-server-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/project-server-fields-added-to-tfs.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/project-server-fields-added-to-tfs",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/project-server-fields-added-to-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/register-pwa.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/register-pwa",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/register-pwa",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/remove-component-from-synchronization.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/remove-component-from-synchronization",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/remove-component-from-synchronization",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/remove-items-not-synching.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/remove-items-not-synching",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/remove-items-not-synching",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/remove-tfs-ps-integration.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/remove-tfs-ps-integration",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/remove-tfs-ps-integration",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/resolve-validation-errors.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/resolve-validation-errors",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/resolve-validation-errors",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/restrictions-mapping-ps-fields.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/restrictions-mapping-ps-fields",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/restrictions-mapping-ps-fields",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/specify-wits-to-synchronize.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/specify-wits-to-synchronize",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/specify-wits-to-synchronize",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/sync-ps-tfs.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/sync-ps-tfs",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/sync-ps-tfs",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/synchronization-process-overview.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/synchronization-process-overview",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/synchronization-process-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/synchronize-tfs-project-server.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/synchronize-tfs-project-server",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/system-and-setup-requirements.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/system-and-setup-requirements",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/system-and-setup-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/top-down-plan-mapped-team-project.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/top-down-plan-mapped-team-project",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/top-down-plan-mapped-team-project",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/understand-how-updates-to-specific-fields-managed.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/understand-how-updates-to-specific-fields-managed",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/understand-how-updates-to-specific-fields-managed",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/update-version-compatibility-requirements.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/update-version-compatibility-requirements",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/update-version-compatibility-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/upgrade-ps-2010-to-ps-2013.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/upgrade-ps-2010-to-ps-2013",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/upgrade-ps-2010-to-ps-2013",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/verify-synch-process.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/verify-synch-process",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/verify-synch-process",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/view-synch-error-messages.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/view-synch-error-messages",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/view-synch-error-messages",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/work-with-resource-rollup.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/work-with-resource-rollup",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/work-with-resource-rollup",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/work/tfs-ps-sync/xml-elements-added-to-wit-definition.md",
-      "redirect_url": "/azure/devops/reference/tfs-ps-sync/xml-elements-added-to-wit-definition",
+      "redirect_url": "/previous-versions/azure/devops/reference/tfs-ps-sync/xml-elements-added-to-wit-definition",
       "redirect_document_id": false
     },
     {
@@ -10642,7 +10642,7 @@
     },
     {
       "source_path": "docs/work/backlogs/backlogs-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/boards/backlogs/backlogs-keyboard-shortcuts",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
@@ -10867,7 +10867,7 @@
     },
     {
       "source_path": "docs/work/kanban/kanban-board-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/boards/boards/kanban-board-keyboard-shortcuts",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
@@ -10902,7 +10902,7 @@
     },
     {
       "source_path": "docs/work/scale/delivery-plan-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/boards/plans/delivery-plan-keyboard-shortcuts",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
@@ -11002,7 +11002,7 @@
     },
     {
       "source_path": "docs/work/track/queries-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/boards/queries/queries-keyboard-shortcuts",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
@@ -11112,7 +11112,7 @@
     },
     {
       "source_path": "docs/work/scrum/scrum-sprint-planning-tools.md",
-      "redirect_url": "/azure/devops/boards/sprints/scrum-sprint-planning-tools",
+      "redirect_url": "/azure/devops/sprints/scrum-overview",
       "redirect_document_id": false
     },
     {
@@ -11172,7 +11172,7 @@
     },
     {
       "source_path": "docs/work/work-items/work-item-form-keyboard-shortcuts.md",
-      "redirect_url": "/azure/devops/boards/work-items/work-item-form-keyboard-shortcuts",
+      "redirect_url": "/azure/devops/project/navigation/keyboard-shortcuts",
       "redirect_document_id": false
     },
     {
@@ -11672,8 +11672,8 @@
     },
     {
       "source_path": "docs/report/analytics/index.md",
-      "redirect_url": "/azure/devops/report/powerbi/index",
-      "redirect_document_id": true
+      "redirect_url": "/azure/devops/report/powerbi/overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/report/analytics/enable-analytics-velocity.md",
@@ -11812,7 +11812,7 @@
     },
     {
       "source_path": "docs/boards/get-started/key-concepts-agile.md",
-      "redirect_url": "/azure/devops/boards/get-started/key-concepts",
+      "redirect_url": "/azure/devops/boards/work-items/agile-glossary",
       "redirect_document_id": false
     },
     {
@@ -12037,7 +12037,7 @@
     },
     {
       "source_path": "docs/report/sharepoint-dashboards/index.md",
-      "redirect_url": "/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration",
       "redirect_document_id": false
     },
     {
