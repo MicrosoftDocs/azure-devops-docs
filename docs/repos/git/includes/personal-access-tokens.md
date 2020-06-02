@@ -2,12 +2,12 @@
 ms.topic: include
 ---
 
-## Create personal access tokens to authenticate access
+## Create a PAT
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../../project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Enable preview features](../../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -17,7 +17,7 @@ ms.topic: include
 
    ![My profile Team Services](../media/my-profile-team-services-preview.png)
 
-3. Under Security, select Personal access tokens, and then select **+ New Token**.
+3. Under Security, select **Personal access tokens**, and then select **+ New Token**.
 
    ![Select New Token to create](../media/select-new-token.png)
 
@@ -33,7 +33,7 @@ ms.topic: include
 
    ![Select scopes for your PAT](../media/select-pat-scopes-preview.png)
 
-6. When you're done, make sure to copy the token. You'll use this token as your password.
+6. When you're done, make sure to copy the token. For your security, it won't be shown again. Use this token as your password.
 
    ![Copy the token to your clipboard](../media/copy-token-to-clipboard.png)
 
@@ -61,7 +61,7 @@ ms.topic: include
 
    ![Select scopes for your PAT](../media/select-pat-scopes.png)
 
-6. When you're done, make sure to copy the token. You'll use this token as your password.
+6. When you're done, make sure to copy the token. For your security, it won't be shown again. Use this token as your password.
 
    ![Copy the token to your clipboard](../media/copy-token-to-clipboard.png)
 
@@ -92,7 +92,7 @@ ms.topic: include
    For example, to create a token to enable a [build and release agent](/azure/devops/pipelines/agents/agents) to authenticate to TFS, 
    limit your token's scope to **Agent Pools (read, manage)**. 
 
-6. When you're done, make sure to *copy the token*. You'll use this token as your password. Select **Close**.
+6. When you're done, make sure to *copy the token*. For your security, it won't be shown again. Use this token as your password. Select **Close**.
 
    ![Use a token as the password for your Git tools or apps](../../tfvc/media/create-personal-access-token.png)
 
@@ -100,19 +100,38 @@ ms.topic: include
 
 * * *
 
-## Use your personal access token
+ Once your PAT is created, you can use it pretty much anywhere your user credentials are required for authentication. 
 
-Your token is your identity and represents you when it's used. Keep your tokens secret and treat them like your password.
+### Notifications
 
+Users receive two notifications during the lifetime of a PAT - one upon creation and the other seven days before the expiration.
 
-See the following examples of using your PAT.
+After you create a PAT, you receive a notification similar to the following example.
 
-- Username: yourPAT
-- Password: yourPAT
+   :::image type="content" source="../../../organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-creation.png" alt-text="PAT created notification":::
 
-or
+Seven days before your PAT expires, you receive a notification similar to the following example.
+
+   :::image type="content" source="../../../organizations/accounts/media/use-personal-access-tokens-to-authenticate/pat-expiration.png" alt-text="PAT near expiration notification":::
+
+#### Unexpected notification
+
+If you receive an unexpected PAT notification, an administrator or tool might have created a PAT on your behalf. See the following examples.
+
+- When you connect to an Azure DevOps Git repo through git.exe. it creates a token with a display name like "git: `https://MyOrganization.visualstudio.com/` on MyMachine."
+- When you or an administrator sets up an Azure App Service web app deployment, it creates a token with a display name like "Service Hooks: : Azure App Service: : Deploy web app."
+- When you or an administrator sets up web load testing, as part of a pipeline, it creates a token with a display name like "WebAppLoadTestCDIntToken".
+- When a Microsoft Teams Integration Messaging Extension is set up, it creates a token with a display name like "Microsoft Teams Integration".
+
+If you believe that a PAT exists in error, we suggest that you [revoke the PAT](../../../organizations/accounts/admin-revoke-user-pats.md). Then, change your password. As an Azure AD user, check with your administrator to see if your organization was used from an unknown source or location.
+
+## Use a PAT
+
+Your token is your identity and represents you when it's used. Treat and use a PAT like your password. 
+1. Enter your username, which can be anything except empty, and then enter your PAT in the password field. 
+   You can also run the following command to authenticate with a PAT.
  
-- git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+   `git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName`
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
 
@@ -120,14 +139,148 @@ To keep your token more secure, use credential managers so you don't have to ent
 * [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows)
 	(requires [Git for Windows](https://www.git-scm.com/download/win))
 
-## Revoke personal access tokens to remove access
+### Use a PAT in your code
 
-When you don't need your token anymore, revoke it to remove access.
+See the following sample that gets a list of builds using curl.
+<br/>
+```
+curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_apis/build-release/builds
+```
+<br/>
+
+If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
+<br/>
+<code>Authorization: Basic BASE64USERNAME:PATSTRING</code> 
+<br/>
+Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
+<br/>
+
+```cs
+public static async void GetBuilds()
+{
+    try
+    {
+        var personalaccesstoken = "PATFROMWEB";
+
+        using (HttpClient client = new HttpClient())
+        {
+            client.DefaultRequestHeaders.Accept.Add(
+                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                Convert.ToBase64String(
+                    System.Text.ASCIIEncoding.ASCII.GetBytes(
+                        string.Format("{0}:{1}", "", personalaccesstoken))));
+
+            using (HttpResponseMessage response = client.GetAsync(
+                        "https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
+            {
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(responseBody);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+    }
+}
+```
+<br/>
+
+> [!TIP]
+> When you're using variables, add a "$" at the beginning of the string, like in the following example.
+
+```cs
+public static async void GetBuilds()
+{
+    try
+    {
+        var personalaccesstoken = "PATFROMWEB";
+
+        using (HttpClient client = new HttpClient())
+        {
+            client.DefaultRequestHeaders.Accept.Add(
+                new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                Convert.ToBase64String(
+                    System.Text.ASCIIEncoding.ASCII.GetBytes(
+                        string.Format("{0}:{1}", "", personalaccesstoken))));
+
+            using (HttpResponseMessage response = client.GetAsync(
+                        $"https://dev.azure.com/{organization}/{project}/_apis/build/builds?api-version=5.0").Result)
+            {
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(responseBody);
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+    }
+}
+```
+
+When your code is working, it's a good time to switch from basic auth to <a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth](../../integrate/get-started/authentication/oauth.md)">OAuth</a>.
+
+If you enable IIS Basic Authentication for TFS, PATs aren't valid. For more information, see [Using IIS Basic Authentication with TFS on-premises](../../../integrate/get-started/authentication/iis-basic-auth.md).
+
+For more examples of how to use PATs, see [Git credential managers](../set-up-credential-managers.md), [REST APIs](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1#assemble-the-request), [NuGet on a Mac](../../../artifacts/nuget/consume.md#mac-os), [[Reporting clients](../../../report/powerbi/client-authentication-options.md#enter-credentials-within-a-client), or [Get started with Azure DevOps CLI](../../../cli/index.md).
+
+## Modify a PAT
+
+You can regenerate or extend a PAT, as well as modify its [scope](../../../integrate/get-started/authentication/oauth.md#scopes).
 
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../../project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Enable preview features](../../../project/navigation/preview-features.md).
+
+#### [Preview page](#tab/preview-page) 
+
+1. From your home page, open your user settings, and then select **Profile**.
+
+   ![My profile Team Services](../media/my-profile-team-services-preview.png)
+
+2. Under Security, select **Personal access tokens**. Select the token for which you want to modify, and then select **Edit**.
+
+    :::image type="content" source="../media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
+
+3. Edit the token name, organization it applies to, token expiration date, or the scope of access associated with the token, and then select **Save**.
+
+   ![Modify and Save PAT](../media/modify-pat.png)
+
+#### [Current page](#tab/current-page) 
+
+1. From your home page, open your profile. Go to **Security** details.
+
+   ![Go to the organization home page, open your profile, go to Security](../media/my-profile-team-services.png)  
+
+2. Select the token for which you want to modify, and then select **Edit**.
+
+   :::image type="content" source="../media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
+
+3. Edit the token name, organization it applies to, token expiration date, or the scope of access associated with the token, and then select **Save**.
+
+   ![Modify and Save PAT](../media/modify-pat.png)
+
+::: moniker-end
+
+* * *
+
+
+## Revoke a PAT
+
+You can revoke a PAT at any time, for various reasons.
+
+::: moniker range="azure-devops"
+
+> [!NOTE]   
+> To enable the new user interface for the New account manager page, see [Enable preview features](../../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -139,18 +292,23 @@ When you don't need your token anymore, revoke it to remove access.
 
    ![Revoke a token or all tokens](../media/revoke-personal-access-tokens-preview.png)
 
-3. Select Revoke in the confirmation dialog.
+3. Select **Revoke** in the confirmation dialog.
 
    ![Confirm revoke](../media/revoke-token-confirmation-dialog-preview.png)
 
 #### [Current page](#tab/current-page) 
 
-1. From your home page, open your profile. Go to your security details.
+1. From your home page, open your profile. Go to **Security** details.
 
    ![Go to the organization home page, open your profile, go to Security](../media/my-profile-team-services.png)  
 
-2. **Revoke** access.
-   
+2. Select the token for which you want to revoke access, and then select **Revoke**.
+
+   :::image type="content" source="../media/revoke-pat-current-view.png" alt-text="Revoke PAT":::
+
+3. Select **Revoke** in the confirmation dialog.
+
+   ![Confirm revoke](../media/revoke-token-confirmation-dialog-preview.png)
 
 ::: moniker-end
 
