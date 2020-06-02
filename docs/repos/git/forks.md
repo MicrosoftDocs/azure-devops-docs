@@ -47,6 +47,11 @@ Typically only core contributors to your project have direct commit rights into 
 You should ask collaborators from outside this core set of people to work from a fork of the repository. 
 This will isolate their changes from yours until you've had a chance to vet the work.
 
+> [!NOTE]
+> To enable forking at the organization level, go to **Project Settings** > **Repositories**, then select the repository and **Options** next to the **Security** tab to turn on forks.
+>
+> For some versions this might require enabling forking as a Preview Feature, see **User settings** > **Preview Features**, then select `For this organization` from the drop-down, and make sure `Git Forks` is turned on.
+
 ## The forking workflow
 
 1. [Create a fork](#create-fork)
