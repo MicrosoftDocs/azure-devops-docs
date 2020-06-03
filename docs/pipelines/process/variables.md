@@ -60,9 +60,24 @@ Azure Pipelines supports three different ways to reference variables: macro, tem
 
 In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. 
 
-In this example, the $
-```yaml
+In this example, you can see that the template expression outputs the initial value of the variable after it is updated while the macro syntax variable value changes. 
 
+```yaml
+variables:
+- name: one
+  value: initialValue 
+
+steps:
+  - script: |
+      echo ${{ variables.one }} # outputs initialValue
+      echo $(one)
+    displayName: First variable pass
+  - script: echo '##vso[task.setvariable variable=one]secondValue'
+    displayName: Set new variable value
+  - script: |
+      echo ${{ variables.one }} # outputs initialValue
+      echo $(one) # outputs secondValue
+    displayName: Second variable pass
 ```
 
 ### Macro syntax variables
