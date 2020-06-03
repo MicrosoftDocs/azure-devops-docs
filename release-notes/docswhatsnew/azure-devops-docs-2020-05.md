@@ -65,7 +65,7 @@ These articles reflect the following additions and updates:
 - [Microsoft-hosted agents](/azure/devops/pipelines/agents/hosted)
   - Updates to hosted agents topic to address support questions
   - How to retrieve hosted agent IP ranges from the Weekly file example
-- [Build, test, and deploy JavaScript and Node.js apps](/azure/devops/pipelines/ecosystems/javascript) - Updating Javascript to fix multiple issues
+- [Build, test, and deploy JavaScript and Node.js apps](/azure/devops/pipelines/ecosystems/javascript) - Updating npm publish instructions and fixing other issues
 - [Expressions](/azure/devops/pipelines/process/expressions) - Adding stage dependencies
 - [Release artifacts and artifact sources](/azure/devops/pipelines/release/artifacts) - Release artifacts and artifacts sources
 - [Classic release and artifacts variables](/azure/devops/pipelines/release/variables) - Release and artifacts variables
