@@ -39,8 +39,8 @@ To turn a pipeline into a run, Azure Pipelines goes through several steps in thi
 1. First, expand [templates](templates.md) and evaluate [template expressions](templates.md).
 2. Next, evaluate dependencies at the [stage](stages.md) level to pick the first stage(s) to run.
 3. For each stage selected to run, two things happen:
-  a. All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
-  b. Evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
+    * All resources used in all jobs are gathered up and validated for [authorization](approvals.md) to run.
+    * Evaluate [dependencies at the job level](phases.md#dependencies) to pick the first job(s) to run.
 4. For each job selected to run, expand [multi-configs](phases.md#parallelexec) (`strategy: matrix` or `strategy: parallel` in YAML) into multiple runtime jobs.
 5. For each runtime job, evaluate [conditions](conditions.md) to decide whether that job is eligible to run.
 6. [Request an agent](#request-an-agent) for each eligible runtime job.
