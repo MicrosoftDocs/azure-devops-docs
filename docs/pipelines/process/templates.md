@@ -20,7 +20,7 @@ If a template is used to include content, it functions like an include directive
 
 ::: moniker range="azure-devops-2019"
 
-Use templates to define your logic once and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline. You can pass parameters into a template from your parent pipeline.
+Use templates to define your logic once and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline. You can pass parameters into a template from your parent pipeline. 
 
 ::: moniker-end
 
@@ -489,7 +489,7 @@ Wrap your template expression inside this syntax: `${{ }}`.
 Template expressions can expand template parameters, and also variables.
 You can use parameters to influence how a template is expanded.
 The `parameters` object works like the [`variables` object](expressions.md#variables)
-in an expression.
+in an expression. Only predefined variables can be used in template expressions.
 
 > [!NOTE]
 > Expressions are only expanded for `stages`, `jobs`, and `steps`.
@@ -843,7 +843,7 @@ To help prevent runaway growth, Azure Pipelines imposes the following limits:
 
 You can pass parameters to templates.
 The `parameters` section defines what parameters are available in the template and their default values. 
-Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline.
+Templates are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced by the parameters it receives from the enclosing pipeline. As a result, only [predefined variables](../build/variables.md) can be used in parameters. 
 
 To use parameters across multiple pipelines, see how to create a [variable group](../library/variable-groups.md).
 
