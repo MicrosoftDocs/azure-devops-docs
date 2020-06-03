@@ -58,7 +58,7 @@ These articles reflect the following additions and updates:
 
 ### New articles
 
-- [How to deploy an app using Azure Resource Manager (ARM) template](/azure/devops/pipelines/apps/cd/azure/deploy-arm-template) - ARM Template with Azure Pipelines
+- [How to deploy an app using an Azure Resource Manager (ARM) template](/azure/devops/pipelines/apps/cd/azure/deploy-arm-template) - ARM Template with Azure Pipelines
 
 ### Updated articles
 
