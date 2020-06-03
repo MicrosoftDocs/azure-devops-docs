@@ -163,7 +163,7 @@ steps:
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
-Ubuntu 18.06 is set here in the YAML file.  
+Ubuntu 18.04 is set here in the YAML file.  
 
 ```yaml
 pool:
