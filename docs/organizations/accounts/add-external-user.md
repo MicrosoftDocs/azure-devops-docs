@@ -8,7 +8,7 @@ ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/23/2020
+ms.date: 05/29/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -24,7 +24,8 @@ In this article, learn how to invite external users to your organization. If you
 
 * The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
-* The **External guest access** policy must be **On** for the organization that you want to invite external users to. See the following image example.
+* The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
+* Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -77,9 +78,8 @@ The external user gets added to the organization to which they were invited and 
 ## Related articles
 
 * [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
-
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
-
 * [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+* [Restrict invitations to new users](../security/restrict-invitations.md)
 
 
