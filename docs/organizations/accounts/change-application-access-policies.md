@@ -51,4 +51,4 @@ To change an application connection policy, you need at least Basic access and o
 - [Manage security policies, like Conditional Access with Azure AD](manage-conditional-access.md)
 - [Disable Request Access Policy](disable-request-access-policy.md)
 - [Restrict users from creating new organizations with Azure AD policy](azure-ad-tenant-policy-restrict-org-creation.md)
-- [Need help?](faq-configure-customize-organization.md#get-support)
+- [Restrict Team and Project Administrators from inviting new users](../security/restrict-invitations.md)
