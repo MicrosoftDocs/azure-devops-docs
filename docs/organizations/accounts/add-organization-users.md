@@ -12,7 +12,7 @@ ms.date: 05/15/2020
 monikerRange: 'azure-devops'
 ---
 
-# Add users and manage access in Azure DevOps
+# Add users and manage access in Azure DevOps Services
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
