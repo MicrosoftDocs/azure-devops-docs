@@ -8,7 +8,7 @@ ms.date: 05/07/2020
 monikerRange: '=azure-devops'
 ---
 
-# How to deploy an app using Azure Resource Manager (ARM) template
+# How to deploy an app using an Azure Resource Manager (ARM) template
 
 This tutorial will get you started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
