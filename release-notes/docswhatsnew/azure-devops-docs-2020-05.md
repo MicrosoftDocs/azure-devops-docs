@@ -121,7 +121,7 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Minimum Azure CLI requirement confusion #8060](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8060)
 - [How many caches can exist on a single pipeline? #8059](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8059)
 - [Clarifying example for oauth token yaml #8056](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8056)
-- [Pwsh and powershell example use wrong syntax #8032](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8032)
+- [Pwsh and PowerShell example use wrong syntax #8032](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8032)
 - [Command example for removing a VM is incorrect. #8031](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8031)
 - [This document is no longer the "comprehensive list of system variables" it is said to be in other areas of documentation #8014](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8014)
 - [Add a Note Warning of AAD Policy Which can Cause Import Failures #8011](https://github.com/MicrosoftDocs/azure-devops-docs/issues/8011)
@@ -144,8 +144,8 @@ Thank you for your feedback on our documentation. This month we made updates to 
 - [Stage/Job breakup with npm tasks is misleading #6463](https://github.com/MicrosoftDocs/azure-devops-docs/issues/6463)
 - [Present full working azure-pipelines.yml examples #5683](https://github.com/MicrosoftDocs/azure-devops-docs/issues/5683)
 - [`@fabrikam:registry=<your feed URL>` doesn't work #4965](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4965)
-- [Screen shot shows options that are not available on Azure Devops Server 2019 (on prem) or on Azure Devops (hosted) #4479](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4479)
-- [run locally . but doesn't run on Azure Devops Cloud pipeline #4445](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4445)
+- [Screenshot shows options that are not available on Azure DevOps Server 2019 (on prem) or on Azure DevOps (hosted) #4479](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4479)
+- [run locally . but doesn't run on Azure DevOps Cloud pipeline #4445](https://github.com/MicrosoftDocs/azure-devops-docs/issues/4445)
 - [Firewall Rule PowerShell Scripts Will Not Work For ARM Subscriptions #2894](https://github.com/MicrosoftDocs/azure-devops-docs/issues/2894)
 
 ## Community contributors
