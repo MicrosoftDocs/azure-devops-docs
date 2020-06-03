@@ -34,8 +34,6 @@ You define and manage service connections from the Admin settings of your projec
 * Azure DevOps: `https://dev.azure.com/{organization}/{project}/adminservices`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
 
-Service connections are created at project scope. A service connection created in one project is not visible in another project.
-
 <a name="create-new"></a>
 
 ## Create a service connection
@@ -155,7 +153,6 @@ Or you can choose to lock down the service connection and only allow selected YA
 ![Azure Resource Manager pipeline permissions](../release/media/azure-rm-endpoint/pipeline-permissions.png)
 
 ### Project permissions - Cross project sharing of service connections
-Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
 * Only the organization-level administrators from **User permissions** can share the service connection with other projects.
 * The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
@@ -214,29 +211,20 @@ use one of the following techniques:
 
 Azure Pipelines and TFS support a variety of service connection types by default. Some of these are described below:
 
-* [Azure Classic service connection](#sep-azure-classic)
-* [Azure Resource Manager service connection](#sep-azure-resource-manager)
-* [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket Cloud service connection](#sep-bbucket)
-* [Chef service connection](#sep-chef)
-* [Docker Host service connection](#sep-dochost)
-* [Docker Registry service connection](#sep-docreg)
-* [External Git service connection](#sep-extgit)
-* [Generic service connection](#sep-generic)
-* [GitHub service connection](#sep-github)
-* [GitHub Enterprise Server service connection](#sep-githubent)
-* [Jenkins service connection](#sep-jenkins)
-* [Kubernetes service connection](#sep-kuber)
-* [Maven service connection](#sep-maven)
-* [npm service connection](#sep-npm)
-* [NuGet service connection](#sep-nuget)
-* [Python package download service connection](#sep-python-download)
-* [Python package upload service connection](#sep-python-upload)
-* [Service Fabric service connection](#sep-fabric)
-* [SSH service connection](#sep-ssh)
-* [Subversion service connection](#sep-subversion)
-* [Team Foundation Server / Azure Pipelines service connection](#sep-tfsts)
-* [Visual Studio App Center service connection](#sep-vsmobile)
+- [Service connections](#service-connections)
+  - [Create a service connection](#create-a-service-connection)
+  - [Manage a service connection](#manage-a-service-connection)
+  - [Secure a service connection](#secure-a-service-connection)
+    - [User permissions](#user-permissions)
+      - [Project level permissions](#project-level-permissions)
+      - [Organization level permissions](#organization-level-permissions)
+    - [Pipeline permissions](#pipeline-permissions)
+    - [Project permissions - Cross project sharing of service connections](#project-permissions---cross-project-sharing-of-service-connections)
+  - [Use a service connection](#use-a-service-connection)
+- [YAML](#yaml)
+- [Classic](#classic)
+  - [Common service connection types](#common-service-connection-types)
+  - [Extensions for other service connections](#extensions-for-other-service-connections)
 
 After you enter the parameters when creating a service connection, validate the
 connection. The validation link uses a REST call to the external service with
