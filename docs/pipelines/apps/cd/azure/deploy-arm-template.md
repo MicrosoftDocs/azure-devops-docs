@@ -1,5 +1,5 @@
 ---
-title: Quickstart: Use Resource Manager to deploy a Linux web app to Azure
+title: Use Resource Manager to deploy a Linux web app to Azure
 description: Use Resource Manager to deploy a Linux web app to Azure
 ms.topic: quickstart
 ms.author: jukullam
