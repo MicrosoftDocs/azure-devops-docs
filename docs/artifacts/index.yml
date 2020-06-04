@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
 title: Azure Artifacts documentation
-summary: Code once and share packages across your organization. Host your private Nuget, npm, and Maven packages with Azure Artifacts for more reliable, scalable builds.
+summary: Code once and share packages across your organization. Host your private NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds.
 
 metadata:
   title: Azure Artifacts documentation
-  description:  Code once and share packages Nuget, npm, and Maven with Azure Artifacts for more reliable, scalable builds. 
+  description:  Code once and share your packages NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds. 
   ms.prod: devops 
   ms.technology: devops-artifacts
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 10/03/2019 
+  ms.date: 06/04/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -21,7 +21,7 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: overview
+      - linkListType: Azure Artifacts
         links:
           - text: What is Azure Artifacts?
             url: overview.md
@@ -29,8 +29,8 @@ landingContent:
             url: sign-up-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
             url: ./concepts/best-practices.md
-          - text: Consume packages from public sources
-            url: ./concepts/upstream-sources.md
+          - text: Limits on package sizes and counts
+            url: ./reference/limits.md
       - linkListType: tutorial
         links:
           - text: Move your packages to the cloud
