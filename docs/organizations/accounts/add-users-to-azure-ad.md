@@ -12,7 +12,7 @@ ms.date: 06/04/2020
 monikerRange: 'azure-devops'
 ---
 
-# Add & delete organization users in Azure Active Directory
+# Add & delete users in Azure AD
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
