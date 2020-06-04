@@ -17,7 +17,7 @@ Welcome to what's new in Azure DevOps docs for May 2020. This article lists some
 - [Configure Azure Boards](/azure/devops/boards/plans/safe-configure-boards)
 - [Customize Azure Boards](/azure/devops/boards/plans/safe-customize)
 - [Manage SAFe® programs and portfolios](/azure/devops/boards/plans/safe-plan-track-boards)
-- [View roadmaps and monitor progress](/devops/boards/plans/safe-review-roadmaps-progress)
+- [View roadmaps and monitor progress](/azure/devops/boards/plans/safe-review-roadmaps-progress)
 
 These articles reflect the following additions and updates: 
 

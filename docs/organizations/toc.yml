@@ -50,7 +50,9 @@
     - name: Recover organization
       href: /azure/devops/organizations/accounts/recover-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Restrict admins from inviting new users
-      href: /security/restrict-invitations.md
+      href: /security/restrict-invitations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Manage security policies
+      href: /azure/devops/organizations/security/manage-conditional-access.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add and manage banners
     href: /azure/devops/organizations/settings/manage-banners?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Troubleshooting
