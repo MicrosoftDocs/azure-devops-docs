@@ -1,25 +1,27 @@
 ---
-title: Troubleshoot tracing permissions
+title: Trace permissions
 description: Learn how to trace permissions if you're having permissions issues with Azure DevOps
-ms.technology: devops-accounts
+ms.technology: devops-security
 ms.assetid: 12cffcaf-295a-4931-9844-81a12c512158
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-ms.date: 04/21/2020
+ms.date: 06/04/2020
 monikerRange: 'azure-devops'
 ---
 
 
-# Troubleshoot tracing permissions
+# Trace permissions FAQs
 
-**Azure DevOps**
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-### Q: Why doesn't a user have access to something?
+If a user's having permissions issues and you use default security groups or custom groups for permissions, administrators can investigate where those permissions are coming from by using our permissions tracing. Users can receive their effective permissions either directly or via groups. See the following frequently asked questions (FAQs) and answers.
+
+## Q: Why doesn't a user have access to something?
 
 **A 1:** Their permissions are specified by multiple groups
 
-If one of your users is having permissions issues and you use default security groups or custom groups for permissions, administrators can investigate where those permissions are coming from by using our permissions tracing. Users can receive their effective permissions either directly or via groups. By following these steps, administrators can understand where exactly those permissions are coming from and adjust them as needed.
+ By following these steps, administrators can understand where exactly those permissions are coming from and adjust them as needed.
 
 1. Go to the **Security** page for the project that the user is having access problems.
 
@@ -31,17 +33,17 @@ If one of your users is having permissions issues and you use default security g
 
    ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information.png)
 
-4. The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups they're in.
+4. The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions that are provided to the groups they're in.
 
    ![Trace showing inherited permissions](media/trace-permission-group-member-inheritance.png)
 
 **A 2:** Their permissions haven't propagated yet
 
-It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user is having issues that don't seem to clear up immediately, wait a day to see if they resolve.
+It can take up to 1 hour for Azure AD group memberships or permissions changes to propagate throughout Azure DevOps. If a user's having issues that don't resolve immediately, wait a day to see if they resolve.
 
-**A 3:** The user does not have the necessary access level
+**A 3:** The user doesn't have the necessary access level
 
-Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following topics:
+Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following articles:
 
 * For cloud Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
 * For on-premises Azure DevOps: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
