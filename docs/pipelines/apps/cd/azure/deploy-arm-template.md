@@ -13,7 +13,9 @@ ms.custom: subject-armqs
 
 This tutorial will get you started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
 
-[!INCLUDE [About Azure Resource Manager](../../includes/resource-manager-quickstart-introduction.md)]
+ 
+
+[!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
 
 In this article, you will learn how to use the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
 
