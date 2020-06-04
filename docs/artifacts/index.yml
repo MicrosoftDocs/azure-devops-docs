@@ -19,7 +19,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Get started
+  - title: Get Started
     linkLists:
       - linkListType: Azure Artifacts
         links:
@@ -31,14 +31,14 @@ landingContent:
             url: ./concepts/best-practices.md
           - text: Limits on package sizes and counts
             url: ./reference/limits.md
-      - linkListType: tutorial
+      - linkListType: Artifact Feeds
         links:
-          - text: Move your packages to the cloud
-            url: ./nuget/move-from-fileshares.md
-          - text: Communicate package quality with prerelease and release views
-            url: ./feeds/views.md
-          - text: Set permissions and grant access
-            url: ./feeds/feed-permissions.md
+          - text: What are feeds?
+            url: ./concepts/feeds.md
+          - text: What are feed views?
+            url: ./concepts/views.md
+          - text: Understanding upstream sources
+            url: ./concepts/upstream-sources.md
   - title: NuGet
     linkLists:
       - linkListType: quickstart
