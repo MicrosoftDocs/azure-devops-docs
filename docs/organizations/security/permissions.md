@@ -963,24 +963,24 @@ You manage collection-level permissions through the [web portal admin context](.
         </td>
     </tr>
     <tr>
-        <td id="edit-collection-level-information">Edit collection-level information</td>
+        <td id="edit-collection-level-information">Edit instance-level information</td>
         <td>
-            Can add users and groups, and edit collection-level permissions for users and groups.
+            Can add users and groups, and edit organization-level permissions for users and groups.
             <blockquote>
                 <p>
-                    Edit collection-level information includes the ability to perform these tasks
+                    Edit instance-level information includes the ability to perform these tasks
                     for all projects defined in a collection:
                 </p>
                 <ul>
                     <li>Add and administer teams and all team-related features</li>
-                    <li>Edit collection-level permissions for users and groups in the collection</li>
-                    <li>Add or remove collection-level security groups from the collection</li>
+                    <li>Edit instance-level permissions for users and groups in the collection</li>
+                    <li>Add or remove instance-level security groups from the collection</li>
                     <li>Implicitly allows the user to modify version control permissions </li>
-                    <li>Edit project level and collection level permission ACLs</li>
+                    <li>Edit project level and instance-level permission ACLs</li>
                     <li>Edit <a href="#alerts"event subscriptions</a> (email or SOAP) on project or collection level events.</li>
                 </ul>
                 <p>
-                    When you set <strong>Edit collection-level information</strong> to <strong>Allow</strong>,
+                    When you set <strong>Edit instance-level information</strong> to <strong>Allow</strong>,
                     users can add or remove collection-level groups and implicitly
                     allows these users to modify version control permissions.
                     To grant all these permissions at a command prompt,
@@ -989,12 +989,6 @@ You manage collection-level permissions through the [web portal admin context](.
                     in addition to GENERIC_WRITE.
                 </p>
             </blockquote>
-        </td>
-    </tr>
-    <tr>
-        <td><a id="view-audit-log-permission" />View audit log</td>
-        <td>
-            Can view the <a href="/azure/devops/organizations/settings/azure-devops-auditing">audit log</a>. 
         </td>
     </tr>
     <tr>
@@ -1049,7 +1043,7 @@ You manage collection-level permissions through the [web portal admin context](.
         </td>
     </tr>
     <tr>
-        <td id="delete-field">Delete field from account</td>
+        <td id="delete-field">Delete field from organization</td>
         <td>
             Can <a href="../settings/work/customize-process-field.md" data-raw-source="[delete a custom field that was added to a process](../settings/work/customize-process-field.md)">delete a custom field that was added to a process</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. Azure DevOps Services users granted Basic and Stakeholder access are granted this permission by default. 
         </td>
