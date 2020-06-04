@@ -12994,6 +12994,11 @@
       "source_path": "docs/pipelines/apps/index.md",
       "redirect_url": "/previous-versions/azure/devops/pipelines/apps/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/organizations/accounts/delete-users-from-services-azure-ad.md",
+      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
+      "redirect_document_id": false
     }
   ]
 }
