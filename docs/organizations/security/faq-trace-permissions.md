@@ -7,13 +7,12 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 ms.date: 06/04/2020
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ---
-
 
 # Trace permissions FAQs
 
-[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
 If a user's having permissions issues and you use default security groups or custom groups for permissions, administrators can investigate where those permissions are coming from by using our permissions tracing. Users can receive their effective permissions either directly or via groups. See the following frequently asked questions (FAQs) and answers.
 
@@ -49,9 +48,24 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 
    ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information-2019.png)
 
-3. The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
+The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
 
    :::image type="content" source="media/trace-permission-group-member-inheritance-2019.png" alt-text="Trace showing inherited permissions":::
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+1.	Go to the Security page for the project that the user is having access problems.
+2.	Enter their name into the box in the upper left-hand corner.
+   
+   ![Enter user name to view permissions](media/security-page-enter-user-name.png)
+
+3.	You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+
+   :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
+
+The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups they're in.
 
 ::: moniker-end
 
@@ -69,7 +83,7 @@ Access levels enable administrators to provide their users base access to the fe
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="<= azure-devops-2019"
 
 [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
 

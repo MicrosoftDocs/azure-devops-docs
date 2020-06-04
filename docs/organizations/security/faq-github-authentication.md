@@ -12,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Authenticating & inviting GitHub users FAQs
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 If you're having issues either connecting to Azure DevOps using your GitHub identity, or inviting other GitHub users, see the following frequently asked questions (FAQs) and answers.
 
