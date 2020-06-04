@@ -107,6 +107,8 @@ Changes you make to the access level settings take affect immediately. You can a
 
 1. Choose **Save changes**. 
 
+::: moniker-end
+
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From **Access levels**, select the access level you want to manage. For example, here we choose **Stakeholder**, and then **Add** to add a group to Stakeholder access.

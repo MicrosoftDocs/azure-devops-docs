@@ -1116,21 +1116,21 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr><td><h4>Auditing</hr></td><td> </td> 
     </tr>
     <tr>
-        <td id="delete-audit-streams">Delete audit streams</td>
+        <td id="delete-audit-streams-permission">Delete audit streams</td>
         <td>Can delete an audit stream. Audit streams are in preview. </td>
     </tr>
     <tr>
-        <td id="manage-audit-streams">Manage audit streams</td>
+        <td id="manage-audit-streams-permission">Manage audit streams</td>
         <td>Can add an audit stream. Audit streams are in preview. For details, see [Create audit streaming](../audit/audit-streaming.md).</td>
     </tr>
     <tr>
-        <td id="view-audit-log">View audit log</td>
+        <td id="view-audit-log-permission">View audit log</td>
         <td>Can view and export audit logs. Audit logs are in preview. For details, see [Access, export, and filter audit logs](../audit/audit/azure-devops-auditing.md). </td>
     </tr>
     <tr><td><h4>Policies</hr></td><td> </td> 
     </tr>
     <tr>
-        <td id="manage-enterprise-policies">Manage enterprise policies</td>
+        <td id="manage-enterprise-policies-permission">Manage enterprise policies</td>
         <td>Can enable and disable application connection policies as described in [Change application connection policies](../accounts/change-application-access-policies.md).</td>
     </tr>
 </tbody>
