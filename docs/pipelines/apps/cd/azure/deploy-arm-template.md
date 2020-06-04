@@ -1,6 +1,6 @@
 ---
-title: How to deploy a Linux web app using an Resource Manager template
-description: Deploy a webapp with the Resource Manager Template Deployment task
+title: Quickstart: Use Resource Manager to deploy a Linux web app to Azure
+description: Use Resource Manager to deploy a Linux web app to Azure
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
@@ -9,7 +9,7 @@ monikerRange: '=azure-devops'
 ms.custom: subject-armqs
 ---
 
-# Quickstart: How to deploy a Linux web app using an Resource Manager template
+# Quickstart: Use Resource Manager to deploy a Linux web app to Azure
 
 This tutorial will get you started with [Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. Resource Manager templates give you a way to save your configuration in code. Using a Resource Manager template is an example of infrastructure as code and a good DevOps practice.
 
