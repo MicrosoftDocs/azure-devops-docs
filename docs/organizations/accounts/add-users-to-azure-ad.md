@@ -18,13 +18,13 @@ monikerRange: 'azure-devops'
 
 <a name="SetUpCurrentUsers"></a>
 
-Add users to your tenant in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Then, you can sign in to Azure DevOps with the same user name and password that you use with Azure AD. You can also enforce policies for accessing your team's critical resources and key assets.
+In this article, learn how to add users to your tenant in [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/), so you can sign in to Azure DevOps with the same user name and password that you use with Azure AD. You can also enforce policies for accessing your team's critical resources and key assets. Also learn how to remove organization users in Azure AD.
 
 For more information, see the [conceptual overview](access-with-azure-ad.md) for using Azure AD with Azure DevOps.
 
 ## Prerequisites
 
-To add or remove Azure DevOps organization users in Azure AD, the following statements must be true.
+To add or remove organization users in Azure AD, the following statements must be true.
 
 - You're a member of the [Project Collection Administrators group](/azure/devops/organizations/security/set-project-collection-level-permissions) in Azure DevOps. Organization owners are automatically members of this group.
 - You're a global administrator for your organization's Azure AD.
@@ -54,8 +54,6 @@ To add or remove Azure DevOps organization users in Azure AD, the following stat
 
 ## Delete users from your organization connected to Azure AD
 
-[Delete the user from each organization](delete-organization-users.md) where you need to remove them. If you delete the user from Azure AD only, the user might still show up in Azure DevOps, but they can't sign in.
-
 1. [Sign in to the Azure classic portal](https://manage.windowsazure.com/) as the directory administrator in Azure.
 
    > [!NOTE]
@@ -69,6 +67,8 @@ To add or remove Azure DevOps organization users in Azure AD, the following stat
 
 4. [Remove the user](delete-organization-users.md) from your organization. Reassign the user's access levels, if necessary.
 
+> [!NOTE]
+> If you delete the user from Azure AD only, the user might still show up in Azure DevOps, but they can't sign in.
 
 ## Related articles
 
