@@ -228,15 +228,19 @@
       href: test/review-code-coverage-results.md
     - name: Review pull request code coverage
       href: test/codecoverage-for-pullrequests.md 
-- name: Deploy apps to environments 
+- name: Deploy apps 
   items:
-  - name: Define and target environments
-    href: process/environments.md
-    displayName: environments
-  - name: Kubernetes resource
-    href: process/environments-kubernetes.md
-  - name: Virtual machine resource
-    href: process/environments-virtual-machines.md
+  - name: Deploy apps to environments
+    items:
+    - name: Define and target environments
+      href: process/environments.md
+    - name: Define and target environments
+      href: process/environments.md
+      displayName: environments
+    - name: Kubernetes resource
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md
   - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
