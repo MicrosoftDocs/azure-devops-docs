@@ -1117,15 +1117,15 @@ You manage collection-level permissions through the [web portal admin context](.
     </tr>
     <tr>
         <td id="delete-audit-streams-permission">Delete audit streams</td>
-        <td>Can delete an audit stream. Audit streams are in preview. For details, see <a href="../audit/audit-streaming.md">Create audit streaming</a>. </td>
+        <td>Can delete an audit stream. Audit streams are in preview. For details, see <a href="../audit/auditing-streaming.md">Create audit streaming</a>. </td>
     </tr>
     <tr>
         <td id="manage-audit-streams-permission">Manage audit streams</td>
-        <td>Can add an audit stream. Audit streams are in preview. For details, see <a href="../audit/audit-streaming.md">Create audit streaming</a>.</td>
+        <td>Can add an audit stream. Audit streams are in preview. For details, see <a href="../audit/auditing-streaming.md">Create audit streaming</a>.</td>
     </tr>
     <tr>
         <td id="view-audit-log-permission">View audit log</td>
-        <td>Can view and export audit logs. Audit logs are in preview. For details, see <a href="../audit/audit/azure-devops-auditing.md">Access, export, and filter audit logs</a>. </td>
+        <td>Can view and export audit logs. Audit logs are in preview. For details, see <a href="../audit/azure-devops-auditing.md">Access, export, and filter audit logs</a>. </td>
     </tr>
     <tr><td><h4>Policies</hr></td><td> </td> 
     </tr>
