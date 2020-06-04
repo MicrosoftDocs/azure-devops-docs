@@ -39,7 +39,7 @@ The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of
 
 ### SAFe® architectural overview version 5.0 
 
-![SAFe® architectural overview version 5 &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png)  
+[![SAFe® architectural overview version 5 &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png)](https://www.scaledagileframework.com/)  
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
