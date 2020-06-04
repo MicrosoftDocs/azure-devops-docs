@@ -1,16 +1,19 @@
 ---
-title: Use an ARM template to deploy a Linux and MySQL web app to Azure
+title: How to deploy a Linux web app using an ARM template
 description: Deploy a webapp with the Azure Resource Manager (ARM) Template Deployment task
-ms.topic: conceptual
+ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
 ms.date: 05/07/2020
 monikerRange: '=azure-devops'
+ms.custom: subject-armqs
 ---
 
-# How to deploy an app using an Azure Resource Manager (ARM) template
+# Quickstart: How to deploy a Linux web app using an ARM template
 
 This tutorial will get you started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
+
+[!INCLUDE [About Azure Resource Manager](../../includes/resource-manager-quickstart-introduction.md)]
 
 In this article, you will learn how to use the [Azure Resource Group Deployment task](../../../tasks/deploy/azure-resource-group-deployment.md). 
 
@@ -97,8 +100,14 @@ https://github.com/Azure/azure-quickstart-templates/
 
 12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
+## Review deployed resources
+
+
 ## Clean up resources
 
  You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
+
+
+## Next steps
