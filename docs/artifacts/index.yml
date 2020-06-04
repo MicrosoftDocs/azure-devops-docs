@@ -105,5 +105,19 @@ landingContent:
             url: ./quickstarts/universal-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Universal packages
+          - text: Publish to a Universal feed
             url: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+  - title: Symbols
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Symbol files (PDBs)
+            url: ./concepts/symbols.md
+      - linkListType: how-to-guide
+        links:
+          - text: Use symbols in Visual Studio
+            url: ./symbols/debug-with-symbols-visual-studio.md 
+          - text: Use symbols in WinDbg
+            url: ./symbols/debug-with-symbols-windbg.md 
+          - text: Publish symbols for debugging
+            url: ../pipelines/artifacts/symbols.md 
