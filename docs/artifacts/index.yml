@@ -120,4 +120,4 @@ landingContent:
           - text: Use symbols in WinDbg
             url: ./symbols/debug-with-symbols-windbg.md 
           - text: Publish symbols for debugging
-            url: ../pipelines/artifacts/symbols.md 
+            url: ../pipelines/artifacts/symbols.md
