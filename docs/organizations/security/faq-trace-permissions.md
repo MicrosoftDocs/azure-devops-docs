@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 [!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
 
-If a user's having permissions issues and you use default security groups or custom groups for permissions, administrators can investigate where those permissions are coming from by using our permissions tracing. Users can receive their effective permissions either directly or via groups. See the following frequently asked questions (FAQs) and answers.
+If a user's having permissions issues and you use default security groups or custom groups for permissions, administrators can investigate where those permissions are coming from by using our permissions tracing. Users can receive their effective permissions either directly or via groups. See the following frequently asked questions (FAQs) and answers. For more information, see [About permissions](about-permissions.md).
 
 ## Q: Why doesn't a user have access to something?
 
