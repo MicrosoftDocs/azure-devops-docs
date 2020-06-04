@@ -228,21 +228,25 @@
       href: test/review-code-coverage-results.md
     - name: Review pull request code coverage
       href: test/codecoverage-for-pullrequests.md 
-- name: Deploy apps to environments 
+- name: Deploy apps 
   items:
-  - name: Define and target environments
-    href: process/environments.md
-    displayName: environments
-  - name: Kubernetes resource
-    href: process/environments-kubernetes.md
-  - name: Virtual machine resource
-    href: process/environments-virtual-machines.md
+  - name: Deploy apps to environments
+    items:
+    - name: Define and target environments
+      href: process/environments.md
+      displayName: environments
+    - name: Kubernetes resource
+      href: process/environments-kubernetes.md
+    - name: Virtual machine resource
+      href: process/environments-virtual-machines.md
   - name: Deploy apps using VMs 
     items: 
     - name: Linux virtual machines
       href: ecosystems/deploy-linux-vm.md
   - name: Deploy apps to Azure
     items:
+    - name: Use Resource Manager to deploy a Linux web app to Azure
+      href: apps/cd/azure/deploy-arm-template.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Resource Manager

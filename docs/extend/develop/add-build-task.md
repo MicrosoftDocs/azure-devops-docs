@@ -13,7 +13,7 @@ ms.date: 05/26/2020
 # Add a build or release task
 
 In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
-These tasks appear next to Microsoft-provided tasks in the Add Step wizard:
+These tasks appear next to Microsoft-provided tasks in the Add Step wizard.
 
 ![Build task catalog for extensions in Azure DevOps](media/build-task-ext-choose-task.png)
 
@@ -397,9 +397,9 @@ $env:TASK_TEST_TRACE=1
 <a name="extensionmanifest" />
 
 ## Step 3: Create the extension manifest file
-The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images. This example is an extension manifest that contains the build or release task.
+The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
-Copy the .json code below and save it as your `vss-extension.json` file:
+Copy the .json code below and save it as your `vss-extension.json` file in your `home` directory. Don't create this file in the BuildAndReleaseTask folder.
 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
