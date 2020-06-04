@@ -63,12 +63,14 @@ landingContent:
             url: get-started-npm.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and npm packages
+          - text: Publish to an npm feed
             url: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-          - text: Use packages from npmjs.com
-            url: ./npm/upstream-sources.md
           - text: Set up your client's npmrc
             url: ./npm/npmrc.md
+          - text: Use npm scopes
+            url: ./npm/scopes.md
+          - text: Use packages from npmjs.com
+            url: ./npm/upstream-sources.md
   - title: Maven
     linkLists:
       - linkListType: quickstart
