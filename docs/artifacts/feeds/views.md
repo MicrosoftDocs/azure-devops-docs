@@ -1,19 +1,19 @@
 ---
-title: Use the prerelease and release views to publish quality packages
-description: Use the prerelease and release views to publish a quality package to your consumers in Azure DevOps Services or Team Foundation Server
+title: Use the prerelease and release views to publish your packages
+description: Use the prerelease and release views to publish a package in Azure DevOps Services, Azure DevOps Server, or Team Foundation Server
 ms.assetid: EB40D23E-1053-4EBF-9D1D-19CF1BBAF1C6
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/01/2020
+ms.date: 06/04/2020
 monikerRange: '>= tfs-2017'
 ---
  
 
-# Use the prerelease and release views to publish quality packages
+# Use the prerelease and release views to publish your packages
 
 **Azure DevOps Services**
 
-Feeds are organizational containers that allow users to group packages and control who can access them by modifying the feed permissions.
+Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
 
 A feed view on the other hand is a way to enable users to share some packages while keeping others private. Views filter the feed to a subset of packages that meet criteria defined by that view.
 
