@@ -48,8 +48,8 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="../../report/powerbi/analytics-security.md" data-raw-source="[Analytics views (Object)](../../report/powerbi/analytics-security.md)">Analytics views (Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md" data-raw-source="[Area path (Object)](set-permissions-access-work-tracking.md)">Area path (Object)</a></li>
 <li><a href="../../artifacts/feeds/feed-permissions.md" data-raw-source="[Azure Artifacts](../../artifacts/feeds/feed-permissions.md)">Azure Artifacts</a></li>
-<li><a href="permissions.md#view-audit-log-permission">Audit log</a></li>
-
+<li><a href="permissions.md#manage-audit-streams-permission">Audit log</a></li>
+<li><a href="permissions.md#view-audit-log-permission">Audit streams</a></li>
 
 
 </ul>
@@ -87,7 +87,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>D</h3>
 <ul>
 <li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Delete audit streams (Collection)</a></li>
+<li><a href="permissions.md#delete-audit-streams-permission">Delete audit streams (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -147,12 +147,12 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>M-N</h3>
 <ul>
 <li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Manage audit streams (Collection)</a></li>
+<li><a href="permissions.md#manage-audit-streams-permission">Manage audit streams (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Manage deployments (Object)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">Manage enterprise policies (Collection)</a></li>
+<li><a href="permissions.md#manage-enterprise-policies-permission">Manage enterprise policies (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Manage permissions (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Manage project properties (Project)</a></li>
 
@@ -228,8 +228,8 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="permissions.md#work-item-tags">Update tag definition (Project)</a></li> 
 <li><a href="set-project-collection-level-permissions.md#collection-level">Use build resources (Collection)</a></li>
 <li><a href="../../pipelines/policies/set-permissions.md">Variable groups (Object, Role)</a></li>
-<li><a href="set-project-collection-level-permissions.md#project-level">View analytics(Project)</a></li>
-<li><a href="set-project-collection-level-permissions.md#collection-level">View audit log (Collection)</a></li>
+<li><a href="permissions.md#view-analytics-permission">View analytics (Project)</a></li>
+<li><a href="permissions.md#view-audit-log-permission">View audit log (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">View build resources (Collection)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">View builds (Object)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">View release pipeline (Object)</a></li>
@@ -242,7 +242,6 @@ Values in parenthesis indicate what level the permission is managed:
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View work items in this node (Area Path, Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View permissions for this node (Area Path, Object)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#set-permissions-area-path">View permissions for this node (Iteration Path, Object)</a></li>
-
 <li><a href="set-permissions-access-work-tracking.md">Work items (Project)</a></li>
 <li><a href="set-project-collection-level-permissions.md">Workspaces (Collection)</a></li> 
 </ul>
