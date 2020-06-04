@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2020
+ms.date: 06/04/2020
 ---
 
 # Permissions lookup guide for Azure DevOps
@@ -87,6 +87,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>D</h3>
 <ul>
 <li><a href="../../report/dashboards/dashboard-permissions.md">Dashboards, manage (Team)</a></li>
+<li><a href="set-project-collection-level-permissions.md#collection-level">Delete audit streams (Collection)</a></li>
 <li><a href="set-permissions-access-work-tracking.md#work-item-queries">Delete (Query, Object)</a></li>
 <li><a href="set-project-collection-level-permissions.md#project-level">Delete and restore work items (Project)</a></li>
 <li><a href="../../pipelines/policies/permissions.md">Delete build pipeline (Object)</a></li>
@@ -146,6 +147,7 @@ Values in parenthesis indicate what level the permission is managed:
 <h3>M-N</h3>
 <ul>
 <li><a href="permissions.md#make-requests-on-behalf-of-others">Make requests on behalf of others (Collection)</a></li>
+<li><a href="set-project-collection-level-permissions.md#collection-level">Manage audit streams (Collection)</a></li>
 <li><a href="set-project-collection-level-permissions.md#collection-level">Manage build resources (Collection)</a></li>
 
 <li><a href="../../pipelines/policies/permissions.md">Manage build qualities (Object)</a></li>
