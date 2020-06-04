@@ -128,10 +128,24 @@ If you believe that a PAT exists in error, we suggest that you [revoke the PAT](
 ## Use a PAT
 
 Your token is your identity and represents you when it's used. Treat and use a PAT like your password. 
-1. Enter your username, which can be anything except empty, and then enter your PAT in the password field. 
-   You can also run the following command to authenticate with a PAT.
+1. Git interactions require a username, which can be anything except the empty string.
+The PAT is used as the password.
+Additionally, you have to Base64-encode the username & PAT in order to use it with HTTP basic authentication.
+On Linux or macOS, in Bash, you can type:
  
-   `git clone https://{yourPAT}@dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName`
+```bash
+MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
+B64_PAT=$(echo "pat:$MY_PAT" | base64)
+git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+```
+
+On Windows, you can do something similar in PowerShell:
+
+```powershell
+$MyPat = 'yourPAT'
+$B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($MyPat))
+git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
 
