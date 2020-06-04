@@ -174,11 +174,16 @@ Or you can choose to lock down the service connection and only allow selected YA
 
 After the new service connection is created:
 
+<a id="yaml"></a>
+
 # [YAML](#tab/yaml)
 
 Copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
 
   ![If you are using it in YAML](media/yaml-connection-setting.png)
+
+<a id="classic"></a>
+
 # [Classic](#tab/classic)
 
 Select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
@@ -278,6 +283,8 @@ For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 *****
 
 <h3 id="sep-servbus">Azure Service Bus service connection</h3>
+
+
 
 Defines and secures a connection to a Microsoft Azure Service Bus queue.
 
