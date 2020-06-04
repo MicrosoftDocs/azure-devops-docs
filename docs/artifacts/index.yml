@@ -95,7 +95,7 @@ landingContent:
             url: ./quickstarts/python-packages.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and Python packages
+          - text: Publish to a Python feed
             url: ../pipelines/artifacts/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
   - title: Universal Packages
     linkLists:
