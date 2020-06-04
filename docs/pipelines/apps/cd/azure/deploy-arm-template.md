@@ -1,6 +1,6 @@
 ---
-title: How to deploy a Linux web app using an ARM template
-description: Deploy a webapp with the Azure Resource Manager (ARM) Template Deployment task
+title: How to deploy a Linux web app using an Resource Manager template
+description: Deploy a webapp with the Resource Manager Template Deployment task
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
@@ -9,11 +9,9 @@ monikerRange: '=azure-devops'
 ms.custom: subject-armqs
 ---
 
-# Quickstart: How to deploy a Linux web app using an ARM template
+# Quickstart: How to deploy a Linux web app using an Resource Manager template
 
-This tutorial will get you started with [ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by provisioning Azure virtual machines and deploying a Linux web app with MySQL. ARM templates give you a way to save your configuration in code. Using an ARM template is an example of infrastructure as code and a good DevOps practice.
-
- 
+This tutorial will get you started with [Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. Resource Manager templates give you a way to save your configuration in code. Using a Resource Manager template is an example of infrastructure as code and a good DevOps practice.
 
 [!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
 
@@ -91,9 +89,9 @@ https://github.com/Azure/azure-quickstart-templates/
     - **Location(location)**: Location for deploying the resource group. Set to your closest location (E.g. West US). If the resource group already exists in your subscription, this value will be ignored.
     - **Template location (templateLocation)**: Set to `Linked artifact`. This is location of your template and the parameters files.
     - **Template (cmsFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.json`. This is the path to the ARM template. 
-    - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your ARM template.
+    - **Template parameters (cmsParametersFile)**: Set to `$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json`. This is the path to the parameters file for your Resource Manager template.
     - **Override template parameters (overrideParameters)**:  Set to `-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)` to use the variables you created earlier. These values will replace the parameters set in your template parameters file.
-    - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the ARM template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
+    - **Deployment mode (deploymentMode)**: The way resources should be deployed. Set to `Incremental`. Incremental keeps resources that are not in the Resource Manager template and is faster than `Complete`.  `Validate` mode lets you to find problems with the template before deploying. 
    
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-29" highlight="17-29":::
 
@@ -105,7 +103,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
-13. Verify that the resource deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see an App Service, App Service Plan, and Azure Database for MySQL server. 
+13. Verify that the resource deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
 
 :::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure Portal":::
 
@@ -117,9 +115,11 @@ az resource list --resource-group ARMPipelinesLAMP-rg --output table
 
 ## Clean up resources
 
- You can also use an ARM template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
+ You can also use an Resource Manager template to delete resources. Change the `action` value in your **Azure Resource Group Deployment** task to `DeleteRG`. You can also remove the inputs for `templateLocation`, `csmFile`, `csmParametersFile`, `overrideParameters`, and `deploymentMode`.
 
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template-cleanup.yml" range="1-24" highlight="17-24":::
 
 
 ## Next steps
+
+Learn to [create and deploy your first Resource Manager template](https://review.docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template).  
