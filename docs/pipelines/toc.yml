@@ -234,8 +234,6 @@
     items:
     - name: Define and target environments
       href: process/environments.md
-    - name: Define and target environments
-      href: process/environments.md
       displayName: environments
     - name: Kubernetes resource
       href: process/environments-kubernetes.md
@@ -247,6 +245,8 @@
       href: ecosystems/deploy-linux-vm.md
   - name: Deploy apps to Azure
     items:
+    - name: Use Resource Manager to deploy a Linux web app to Azure
+      href: apps/cd/azure/deploy-arm-template.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Resource Manager
