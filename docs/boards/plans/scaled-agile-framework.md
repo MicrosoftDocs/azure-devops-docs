@@ -41,7 +41,7 @@ The SAFe® big picture addresses how a portfolio vision is met by a hierarchy of
 
 [![SAFe® architectural overview version 5 &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png)](https://www.scaledagileframework.com/)  
 
-Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
+Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](https://www.scaledagile.com/). All rights reserved.  
 
 SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc.](http://www.scaledagile.com/) 
 
@@ -49,7 +49,7 @@ SAFe® and Scaled Agile Framework are registered trademarks of [Scaled Agile Inc
 
 Many SAFe® practices include growing a culture that supports agility, alignment, and autonomy, all while being customer-centric. 
 
-![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png) 
+[![SAFe® overview 5.0 &copy; D. Leffingwell](media/safe/safe-overview-v5.0.png)](https://www.scaledagileframework.com/) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
@@ -61,7 +61,7 @@ Some of the ways Azure Boards supports business agility and agile culture are di
 
 Essential SAFe&reg; requires support for the artifacts and practices illustrated in the following poster. 
 
-![Essential SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/essential-poster.png) 
+[![Essential SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/essential-poster.png)](https://www.scaledagileframework.com/) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
  
@@ -81,7 +81,7 @@ For an overview of how Azure Boards implements Scrum and Kanban, see [About Spri
 
 Portfolio SAFe® adds support for managing portfolios through epics, enablers, and value streams.  
 
-![Portfolio SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/portfolio-safe-poster.png) 
+[![Portfolio SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/portfolio-safe-poster.png)](https://www.scaledagileframework.com/) 
 
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
@@ -98,7 +98,7 @@ Azure Boards provides supports for portfolio components includes the following:
 
 Large Solutions SAFe® includes support for a Solution Backlog, Solution Trains, and Capabilities.   
 
-![Large Solution SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/large-solution-poster.png) 
+[![Large Solution SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/large-solution-poster.png)](https://www.scaledagileframework.com/)   
 Reproduced with permission from &#169; 2011-2020  [Scaled Agile Inc.](http://www.scaledagile.com/). All rights reserved.  
 
 You can implement large solutions in much the same way as you implement Portfolio SAFe®. However, you can also add custom work item types and custom backlogs to support additional solution requirements.       
@@ -108,7 +108,7 @@ You can implement large solutions in much the same way as you implement Portfoli
 
 Full SAFe® includes the three levels of Essential SAFe®, Large Solution SAFe®, and Portfolio SAFe®. 
 
-![Full SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png) 
+[![Full SAFe® poster architectural overview &copy; D. Leffingwell](media/safe/safe-concepts-poster-v5.0-a.png)](https://www.scaledagileframework.com/) 
 
 
 ## How SAFe® artifacts map to Azure Boards  
