@@ -47,16 +47,14 @@ landingContent:
             url: get-started-nuget.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Azure Pipelines and NuGet packages
+          - text: Publish to NuGet feeds (YAML/Classic)
             url: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
+          - text: Publish a NuGet package from the command line
+            url: ./nuget/publish.md
+          - text: Consume NuGet packages in Visual Studio
+            url: ./nuget/consume.md
           - text: Use packages from nuget.org
             url: ./nuget/upstream-sources.md
-          - text: Publish a NuGet package
-            url: ./nuget/publish.md
-          - text: Consume NuGet packages
-            url: ./nuget/consume.md
-          - text: Use NuGet with Azure DevOps Services feeds
-            url: ./nuget/nuget-exe.md
   - title: npm
     linkLists:
       - linkListType: quickstart
