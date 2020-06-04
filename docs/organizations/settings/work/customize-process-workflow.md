@@ -8,7 +8,7 @@ ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 04/22/2020
 ---
 
@@ -16,15 +16,26 @@ ms.date: 04/22/2020
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
-Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories. 
+Each work item type is associated with a workflow that supports tracking the status of work as it moves from creation to completion. To support your business and team processes, you can add custom states to most work item types (WITs). For example, you may want to insert a Triaged state for bugs, or a Design state for features or user stories.  
+
+Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
+
+![Bug work item form, header area, added state](media/process/cust-workflow-form-triage-header.png)  
+
+This article addresses the supported workflow customization options and the how to of customizing a workflow. Specifically, you'll learn about:
+
+>[!div class="checklist"]      
+> - Supported workflow customization scenarios 
+> - Impact to team boards when you customize a workflow  
+> - End-to-end workflow customization steps   
+> - How to add or remove a custom workflow state 
+> - How to hide or unhide an inherited workflow state 
+
 
 > [!NOTE]   
 > You can add and remove workflow States. However, you can't add or modify workflow Reasons. 
 
 
-Here, the Bug WIT has been customized to support a Triaged state. The state and reason fields appear on the work item form in the header area.
-
-<img src="media/process/cust-workflow-form-triage-header.png" alt="Bug work item form, header area" style="border: 1px solid #C3C3C3;" /> 
 
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
@@ -121,6 +132,18 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 2. If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
  
+
+## View the State workflow model 
+
+You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Markeplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model. 
+
+For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
+
+> [!div class="mx-imgBorder"]  
+> ![Hide an inherited state](media/customize-workflow/state-model-visualization.png)  
+
+You can zoom in and zoom out of the view. Also, you can move the state nodes around to gain a better view of the state model. 
+
 
 ## Related articles   
 
