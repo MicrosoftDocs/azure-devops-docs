@@ -1,10 +1,10 @@
 ---
 title: Secure and share packages using feed permissions
-description: Secure and share packages using feed permissions in Azure Artifacts in Azure DevOps Services or Team Foundation Server
+description: Secure and share packages using feed permissions in Azure Artifacts for Azure DevOps Services, Azure DevOps Server, or Team Foundation Server
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/02/2020
+ms.date: 06/04/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -83,7 +83,7 @@ In the edit feed dialog:
 
 ## Understanding feeds and views permissions
 
-Feeds are organizational containers that allow users to group packages and control who can access them by modifying the feed permissions.
+Feeds are containers that allow users to group packages and control who can access them by modifying the feed permissions.
 
 A feed view on the other hand is a way to enable users to share some packages while keeping others private. A common scenario for using a feed view is when a team shares a package version that has already been tested and validated but keeps packages that are still under development from being viewed.
 
