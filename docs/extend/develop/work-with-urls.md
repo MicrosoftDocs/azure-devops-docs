@@ -123,7 +123,8 @@ The `locationUrl` reflects the organization's base URL.
 
 The Microsoft-provided .NET client library ([Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/16.139.0-preview)) provides a helper class that calls the Resource Areas REST API for you and returns the base URL for an organization.
 
-> Note: the `VssConnectionHelper` class is available in version `16.139.0-preview` and later version of the client library.
+> [!NOTE]
+> The `VssConnectionHelper` class is available in version `16.139.0-preview` and later version of the client library.
 
 ```cs
 using System;
@@ -233,7 +234,7 @@ If you are not using a Microsoft-provided client library:
     
 3. Use the `locationUrl` field from the JSON response as the base URL for calling other REST APIs for this area. In this example, the base URL for Release Management REST APIs is `https://vsrm.dev.azure.com/Fabrikam`.
 
-> Like the global Resource Areas REST API described earlier, no credentials are required to call the organization-level Resource Areas REST API.
+Like the global Resource Areas REST API described earlier, no credentials are required to call the organization-level Resource Areas REST API.
 
 ### Example: Pipelines task calling an Azure Pipelines releases REST API
 
@@ -299,3 +300,8 @@ This table shows the IDs for common resource areas. See the previous section for
 |5264459e-e5e0-4bd8-b118-0985e68a4ec5|wit|
 |1d4f49f9-02b9-4e26-b826-2cdb6195f2a9|work|
 |85f8c7b6-92fe-4ba6-8b6d-fbb67c809341|worktracking|
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Make your extension or integration public](https://azdevinternal.azureedge.net/)
