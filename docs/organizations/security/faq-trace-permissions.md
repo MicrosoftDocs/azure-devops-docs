@@ -26,13 +26,13 @@ If a user's having permissions issues and you use default security groups or cus
 
 1. Select **Project settings** > **Permissions** > **Users**, and then select the user.
 
-> :::image type="content" source="media/permissions-page-enter-user-name.png" alt-text="Enter user name into filter box":::
+    :::image type="content" source="media/permissions-page-enter-user-name.png" alt-text="Enter user name into filter box":::
 
    You should now have a user-specific view that shows what permissions they have.
 
 2.  To trace why a user does or doesn't have any of the listed permissions, select the information icon next to the permission in question.
 
-> :::image type="content" source="media/select-information-icon.png" alt-text="Select the information icon next to the permission in question":::
+    :::image type="content" source="media/select-information-icon.png" alt-text="Select the information icon next to the permission in question":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
 
@@ -59,11 +59,11 @@ The resulting trace lets you know how they're inheriting the listed permission. 
 1.	Go to the Security page for the project that the user is having access problems.
 2.	Enter their name into the box in the upper left-hand corner.
    
-> ![Enter user name to view permissions](media/security-page-enter-user-name.png)
+    ![Enter user name to view permissions](media/security-page-enter-user-name.png)
 
 3.	You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
 
-> :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
+    :::image type="content" source="media/permissions-list-view-project-level-information.png" alt-text="Select Why to trace the permissions":::
 
 The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those provided to the groups they're in.
 
