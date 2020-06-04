@@ -21,21 +21,39 @@ If a user's having permissions issues and you use default security groups or cus
 
 **A 1:** Their permissions are specified by multiple groups
 
- By following these steps, administrators can understand where exactly those permissions are coming from and adjust them as needed.
+ By following these steps, administrators can understand where exactly those permissions are coming from and adjust them, as needed.
 
-1. Go to the **Security** page for the project that the user is having access problems.
+::: moniker range="azure-devops"
 
-2. Enter their name into the box in the upper left-hand corner.
+1. Select **Project settings** > **Permissions** > **Users**, and then select the user.
 
-   ![Enter user name to view permissions](media/security-page-enter-user-name.png)
+   :::image type="content" source="media/permissions-page-enter-user-name.png" alt-text="Enter user name into filter box":::
 
-3. You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+You should now have a user-specific view that shows what permissions they have.
 
-   ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information.png)
+2.  To trace why a user does or doesn't have any of the listed permissions, select the information icon next to the permission in question.
 
-4. The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting those permissions that are provided to the groups they're in.
+   :::image type="content" source="media/select-information-icon.png" alt-text="Select the information icon next to the permission in question":::
 
-   ![Trace showing inherited permissions](media/trace-permission-group-member-inheritance.png)
+The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+1. Select **Project settings** > **Security**, and then enter the user name into the filter box.
+
+   :::image type="content" source="media/security-page-enter-user-name-2019.png" alt-text="Enter user name into filter box":::
+
+2. You should now have a user-specific view that shows what permissions they have. To trace why a user does or doesn't have any of the listed permissions, hover over the permission and choose **Why**.
+
+   ![Choose Why in permissions list view for project level information](media/permissions-list-view-project-level-information-2019.png)
+
+3. The resulting trace lets you know how they're inheriting the listed permission. You can then adjust the user's permissions by adjusting the permissions that are provided to the groups they're in.
+
+   :::image type="content" source="media/trace-permission-group-member-inheritance-2019.png" alt-text="Trace showing inherited permissions":::
+
+::: moniker-end
 
 **A 2:** Their permissions haven't propagated yet
 
@@ -43,12 +61,22 @@ It can take up to 1 hour for Azure AD group memberships or permissions changes t
 
 **A 3:** The user doesn't have the necessary access level
 
-Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following articles:
+Access levels enable administrators to provide their users base access to the features they need, and only pay for those features. Several features can only be accessed with a Basic access level or higher. To assign access levels or check the access level of a user in your account, see the following article.
 
-* For cloud Azure DevOps: [Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
-* For on-premises Azure DevOps: [Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
+::: moniker range="azure-devops"
+
+[Manage users and access in Azure DevOps](../accounts/add-organization-users.md) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+[Change access levels](/azure/devops/organizations/security/change-access-levels?view=azure-devops)
+
+::: moniker-end
 
 ## Related articles
 
 * [Grant or restrict access to select features and functions](/azure/devops/organizations/security/restrict-access?view=azure-devops)
 * [Change individual permissions](/azure/devops/organizations/security/change-individual-permissions?view=azure-devops)
+
