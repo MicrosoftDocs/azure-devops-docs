@@ -116,8 +116,8 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Use symbols in Visual Studio
-            url: ./symbols/debug-with-symbols-visual-studio.md 
+            url: ./symbols/debug-with-symbols-visual-studio.md
           - text: Use symbols in WinDbg
-            url: ./symbols/debug-with-symbols-windbg.md 
+            url: ./symbols/debug-with-symbols-windbg.md
           - text: Publish symbols for debugging
             url: ../pipelines/artifacts/symbols.md
