@@ -4,7 +4,7 @@ description: Deploy a webapp with the Azure Resource Manager (ARM) Template Depl
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 05/07/2020
+ms.date: 06/04/2020
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs
 ---
@@ -98,10 +98,20 @@ https://github.com/Azure/azure-quickstart-templates/
 
 11. Click **Save and run** when you are done. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
 
-12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Review deployed resources
 
+12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+
+13. Verify that the resource deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see an App Service, App Service Plan, and Azure Database for MySQL server. 
+
+:::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure Portal":::
+
+You can also verify the resources using Azure CLI. 
+
+```azurecli-interactive
+az resource list --resource-group ARMPipelinesLAMP-rg --output table
+```
 
 ## Clean up resources
 
