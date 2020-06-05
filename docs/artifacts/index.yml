@@ -14,6 +14,7 @@ metadata:
   ms.date: 06/04/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+# Schema location: https://static.docs.com/ui/latest/schemas/Landing.schema.json
 
 landingContent:
 # Cards and links should be based on top customer tasks or top subjects
