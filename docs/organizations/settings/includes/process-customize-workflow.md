@@ -2,24 +2,26 @@
 ms.topic: include
 ---
 
-You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](../../../boards/work-items/guidance/choose-process.md#workflow-states), &mdash;you chose from which to create your custom process. 
+You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](/azure/devops/boards/work-items/guidance/choose-process#workflow-states), &mdash;you chose from which to create your custom process. 
 
+---
 
 :::row:::
    :::column span="":::
-      State types
+      **State types**
    :::column-end:::
    :::column span="2":::
-      Supported customizations
+      **Supported customizations**
    :::column-end:::
-:::row-end:::
-:::row:::
+:::row-end:::  
+---  
+:::row:::  
    :::column span="":::
-      ![Inherited process icon](media/process/inherited-icon.png) Inherited states
+      ![Inherited process icon](/azure/devops/organizations/settings/work/media/process/inherited-icon.png) Inherited states
    :::column-end:::
    :::column span="2":::
-      - [Hide or unhide a state](customize-process-workflow.md#hide-state)
-      - [Add rules when changing a workflow state](customize-rules.md) 
+      - [Hide or unhide a state](/azure/devops/organizations/settings/work/customize-process-workflow#hide-state)
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/customize-rules) 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -27,18 +29,20 @@ You can customize the workflow of any work item type (WIT) by hiding inherited s
       Custom states
    :::column-end:::
    :::column span="2":::
-      - [Add a workflow state](customize-process-workflow.md#add-states)
-      - [Edit a workflow state (change color or category)](customize-process-workflow.md#edit-state)
-      - [Remove a workflow state](customize-process-workflow.md#remove-state)
-      - [Add rules when changing a workflow state](customize-rules.md) 
+      - [Add a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#add-states)
+      - [Edit a workflow state (change color or category)](/azure/devops/organizations/settings/work/customize-process-workflow#edit-state)
+      - [Remove a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#remove-state)
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/customize-rules) 
    :::column-end:::
 :::row-end:::
+
+---
 
 #### Workflow states must conform to the following rules: 
 
 - At least one state must be defined for either the *Proposed* or *In Progress* state categories  
 	> [!NOTE]    
-	> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories.  
+	> Before adding a workflow state, review [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories) to learn how workflow states map to state categories.  
 - At a minimum, there must be at least two workflow states defined. 
 
 #### Unsupported workflow customizations   

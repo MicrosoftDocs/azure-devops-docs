@@ -49,6 +49,7 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 
 <a id="states">  </a>
 <a id="add-states"></a>
+
 ## Add a workflow state   
 
 States you add appear in the picklist for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
