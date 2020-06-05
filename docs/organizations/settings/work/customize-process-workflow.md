@@ -41,6 +41,30 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 
 [!INCLUDE [temp](../includes/process-customize-workflow.md)]
 
+
+#### State drop-down menu sequence 
+
+The State drop-down menu lists States within the sequence you order them within each state category.  
+
+The following image illustrates the State sequence defined for User Story and it's corresponding drop-down menu. 
+
+![User story state sequence]()  
+
+> [!div class="mx-imgBorder"]  
+> ![User story state sequence](media/customize-workflow/user-story-state-sequence.png)  ![User story State drop-down menu](media/customize-workflow/user-story-state-drop-down-list.png)  
+
+
+## Impact to teams with workflow changes
+
+Teams may need to update their Kanban board configuration when the following customizations are made: 
+
+- You add a custom State  
+- You change the category of a custom State  
+- You add a custom or inherited work item type to a backlog level ([Customize your backlogs or boards](customize-process-backlogs-boards.md) 
+
+States that you add to the task WIT adds columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added. 
+
+
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
@@ -52,12 +76,7 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 
 ## Add a workflow state   
 
-States you add appear in the picklist for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State, except not to a Removed state. Also, default reasons are defined, such as Moved to state Triaged, Moved out of state Triaged.
-
-> [!NOTE]    
-> States that you add to the task WIT adds columns to the task board. If you [track bugs along with tasks](../show-bugs-on-backlog.md), then states you add to the bug WIT also add columns to the task board. You don't have to add the same states to each of these WITs, however, you may want to do so in order to  update the status in the same way and to minimize the number of columns that get added. 
->
-> If you add a state to a WIT which is associated with a backlog level, each team needs to update their [Kanban board column settings](../../../boards/boards/add-columns.md) in order to view and use the Kanban board.  
+States you add appear in the drop-down menu for the States field shown in work item forms and the query editor. A transition to and from the State you add is created to every other State. Also, default reasons are defined, such as *Moved to state Triaged*, *Moved out of state Triaged*.
 
 1. From the **Work Item Types** page, choose the work item type you want to modify, choose **States**, and then choose **New State**.    
 
@@ -81,6 +100,7 @@ States you add appear in the picklist for the States field shown in work item fo
 1. Remember, when you add a State to a WIT which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
 <a id="edit-state"></a>
+
 ## Edit a state
 
 You can edit the category or the color of a custom state. However, you can't change the name of the custom state. 
@@ -95,10 +115,10 @@ You can edit the category or the color of a custom state. However, you can't cha
 1. If you change the category, teams that use the Kanban board to update their status need to update their [column settings](../../../boards/boards/add-columns.md).    
  
 <a id="remove-state"></a>
-## Hide or remove a state
+## Hide or remove a custom state
 
 When you hide or remove a state:  
-- The state no longer appears in the State picklist for the WIT
+- The state no longer appears in the State drop-down menu for the WIT
 - No changes occur to the work item history     
 - Existing work items maintain their state value, but are in an invalid state. If you want to make a change to the work item, you must first update the state values. You may want to create a query and do a bulk update to move the affected work items into a valid state. If you add the state back to the work item type, the work items revert to a valid state.  
 
