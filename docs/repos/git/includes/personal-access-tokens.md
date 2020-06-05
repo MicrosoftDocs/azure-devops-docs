@@ -136,7 +136,7 @@ On Linux or macOS, in Bash, you can type:
 ```bash
 MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
 B64_PAT=$(echo "pat:$MY_PAT" | base64)
-git -c http.extraHeader="Authorization: Basic ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+git -c http.extraHeader="Authorization: Bearer ${B64_PAT}" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
 On Windows, you can do something similar in PowerShell:
@@ -144,7 +144,7 @@ On Windows, you can do something similar in PowerShell:
 ```powershell
 $MyPat = 'yourPAT'
 $B64Pat = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($MyPat))
-git -c http.extraHeader="Authorization: Basic $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
+git -c http.extraHeader="Authorization: Bearer $B64Pat" clone https://dev.azure.com/yourOrgName/yourProjectName/_git/yourRepoName
 ```
 
 To keep your token more secure, use credential managers so you don't have to enter your credentials every time. We recommend the following credential managers:
@@ -164,7 +164,7 @@ curl -u username[:{personalaccesstoken}] https://dev.azure.com/{organization}/_a
 
 If you wish to provide the PAT through an HTTP header, first convert it to a Base64 string (the following example shows how to convert to Base64 using C#). The resulting string can then be provided as an HTTP header in the following format:
 <br/>
-<code>Authorization: Basic BASE64USERNAME:PATSTRING</code> 
+<code>Authorization: Basic BASE64_USERNAME_PAT_STRING</code> 
 <br/>
 Here it is in C# using the <a href="/previous-versions/visualstudio/hh193681(v=vs.118)" data-raw-source="[HttpClient class](/previous-versions/visualstudio/hh193681(v=vs.118))">HttpClient class</a>.
 <br/>
