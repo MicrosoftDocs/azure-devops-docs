@@ -24,9 +24,17 @@ Before you begin, you need:
 
 [!INCLUDE [include](../../../../includes/create-project.md)]
 
+## Get the code
+
+Fork this repo in GitHub:
+
+```
+https://github.com/Azure/azure-quickstart-templates/
+```
+
 ### Review the template
 
-The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). Fork the repository to your GitHub account. 
+The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). 
 
 :::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json" highlight="112-201":::
 
