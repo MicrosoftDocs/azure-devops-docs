@@ -1,5 +1,5 @@
 ---
-title: Use a Resource Manager template to deploy a Linux web app to Azure
+title: Use an Azure Resource Manager template to deploy a Linux web app to Azure
 description: Use a Resource Manager template to deploy a Linux web app to Azure
 ms.topic: quickstart
 ms.author: jukullam
@@ -9,9 +9,9 @@ monikerRange: '=azure-devops'
 ms.custom: subject-armqs
 ---
 
-# Quickstart: Use a Resource Manager template to deploy a Linux web app to Azure
+# Quickstart: Use an Azure Resource Manager template to deploy a Linux web app to Azure
 
-This tutorial will get you started with [Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. Resource Manager templates give you a way to save your configuration in code. Using a Resource Manager template is an example of infrastructure as code and a good DevOps practice.
+This tutorial will get you started with [Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. Resource Manager templates give you a way to save your configuration in code. Using a Resource Manager template is an example of infrastructure as code and a good DevOps practice.
 
 [!INCLUDE [About Azure Resource Manager](~/../azure-docs/includes/resource-manager-quickstart-introduction.md)]
 
@@ -101,9 +101,9 @@ https://github.com/Azure/azure-quickstart-templates/
 
 ## Review deployed resources
 
-12. Verify that the resources deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
+1. Verify that the resources deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
 
-:::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure Portal":::
+:::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure portal":::
 
 You can also verify the resources using Azure CLI. 
 
@@ -111,7 +111,7 @@ You can also verify the resources using Azure CLI.
 az resource list --resource-group ARMPipelinesLAMP-rg --output table
 ```
 
-13. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
+2. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
 
@@ -122,4 +122,4 @@ az resource list --resource-group ARMPipelinesLAMP-rg --output table
 
 ## Next steps
 
-Learn to [create and deploy your first Resource Manager template](https://review.docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template).  
+Learn to [create and deploy your first Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template).  
