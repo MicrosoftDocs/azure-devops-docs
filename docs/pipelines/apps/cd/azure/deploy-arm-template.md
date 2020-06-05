@@ -24,13 +24,11 @@ Before you begin, you need:
 
 [!INCLUDE [include](../../../../includes/create-project.md)]
 
-## Get the code
+### Review the template
 
-[!INCLUDE [include](../../../ecosystems/includes/get-code-before-sample-repo.md)]
+The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). Fork the repository to your GitHub account. 
 
-```
-https://github.com/Azure/azure-quickstart-templates/
-```
+:::code language="json" source="~/quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json" highlight="112-201":::
 
 ## Create your pipeline and deploy your template
 
@@ -94,7 +92,9 @@ https://github.com/Azure/azure-quickstart-templates/
 :::code language="yml" source="~/../snippets/pipelines/azure/arm-template.yml" range="1-29" highlight="17-29":::
 
 
-11. Click **Save and run** when you are done. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
+### Deploy the template
+
+Click **Save and run** to deploy your template. The pipeline job will be launched and after few minutes, depending on your agent, the job status should indicate `Success`.
 
 
 ## Review deployed resources
