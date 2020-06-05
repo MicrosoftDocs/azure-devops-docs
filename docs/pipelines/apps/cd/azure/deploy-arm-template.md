@@ -109,7 +109,7 @@ Click **Save and run** to deploy your template. The pipeline job will be launche
 
 1. Verify that the resources deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
 
-:::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure portal":::
+:::image type="content" source="media/azure-resources-portal.png" alt-text="Resource Manager template resources in the Azure portal":::
 
 You can also verify the resources using Azure CLI. 
 
