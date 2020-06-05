@@ -1525,7 +1525,7 @@ that have been saved under the Shared area. Applies to Azure DevOps Services and
     </tr>
     <tr>
         <td id="change-process-team-project-permission">Change process of project</td>
-        <td>Can change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019.</td>
+        <td>When combined with the 'Edit project-level information' permission, allows users to change the Inheritance process for a project. To learn more, see <a href="../settings/work/manage-process.md" data-raw-source="[Create and manage inherited processes](../settings/work/manage-process.md)">Create and manage inherited processes</a>. Applies to Azure DevOps Services and Azure DevOps Server 2019.</td>
     </tr>
     <tr>
         <td id="create-tag-definition-permission">Create tag definition</td>
