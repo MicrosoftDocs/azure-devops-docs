@@ -29,16 +29,24 @@ landingContent:
             url: sign-up-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
             url: ./concepts/best-practices.md
+          - text: Artifacts in Azure Pipelines
+            url: ../pipelines/artifacts/artifacts-overview.md
           - text: Limits on package sizes and counts
             url: ./reference/limits.md
-      - linkListType: Artifact Feeds
-        links:
-          - text: What are feeds?
-            url: ./concepts/feeds.md
-          - text: What are feed views?
-            url: ./concepts/views.md
-          - text: Understanding upstream sources
-            url: ./concepts/upstream-sources.md
+  - title: Artifact Feeds
+    linkLists:
+    - linkListType: get-started
+      links:
+        - text: What are feeds?
+          url: ./concepts/feeds.md
+        - text: What are feed views?
+          url: ./concepts/views.md
+        - text: Set feeds and views permissions
+          url: ./feeds/feed-permissions.md
+        - text: Understanding upstream sources
+          url: ./concepts/upstream-sources.md
+        - text: Set up upstream sources
+          url: ./how-to/set-up-upstream-sources.md
   - title: NuGet
     linkLists:
       - linkListType: quickstart
