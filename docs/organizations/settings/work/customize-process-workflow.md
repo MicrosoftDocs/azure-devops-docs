@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 04/22/2020
+ms.date: 06/04/2020
 ---
 
 # Customize the workflow (Inheritance process)  
@@ -30,20 +30,18 @@ This article addresses the supported workflow customization options and the how 
 > - End-to-end workflow customization steps   
 > - How to add or remove a custom workflow state 
 > - How to hide or unhide an inherited workflow state 
+> - How to view a graphic depiction of the state model 
 
-
-> [!NOTE]   
-> You can add and remove workflow States. However, you can't add or modify workflow Reasons. 
-
-
-
+For documentation on the workflow for build and release DevOps tasks, see [Use Azure Pipelines](../../../pipelines/get-started/pipelines-get-started.md).
 
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-> [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states map to state categories. 
+## Supported customizations 
+
+[!INCLUDE [temp](../includes/process-customize-workflow.md)]
+
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
 [!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
