@@ -2,10 +2,23 @@
 ms.topic: include
 ---
 
-You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](/azure/devops/boards/work-items/guidance/choose-process#workflow-states), &mdash;you chose from which to create your custom process. 
+You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](/azure/devops/boards/work-items/guidance/choose-process#workflow-states), &mdash;you chose from which to create your custom process.  
 
+The default workflow state for each WIT is characterized by the following elements: 
+
+- Specifies between two to four workflow States 
+- Allows forward and backward transitions between each state 
+- Specifies default reasons for each state transition 
+
+For example, the Basic process, Issue WIT is characterized by the three States&mdash;**To Do**, **Doing**, and **Done**&mdash;and transitions shown in the following image. 
+  
+
+> [!div class="mx-imgBorder"]  
+> ![Basic Process, Issue work item type, workflow state model](/azure/devops/organizations/settings/work/media/process/basic-process-issue-workflow.png)  
+
+  
+  
 ---
-
 :::row:::
    :::column span="":::
       **State types**
@@ -17,7 +30,7 @@ You can customize the workflow of any work item type (WIT) by hiding inherited s
 ---  
 :::row:::  
    :::column span="":::
-      ![Inherited process icon](/azure/devops/organizations/settings/work/media/process/inherited-icon.png) Inherited states
+      ![Inherited icon](/azure/devops/organizations/settings/work/media/process/inherited-icon.png) Inherited states
    :::column-end:::
    :::column span="2":::
       - [Hide or unhide a state](/azure/devops/organizations/settings/work/customize-process-workflow#hide-state)
