@@ -28,7 +28,7 @@ Before you begin, you need:
 
 The template used in this quickstart is from [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/101-webapp-linux-managed-mysql/). Fork the repository to your GitHub account. 
 
-:::code language="json" source="~/quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json" highlight="112-201":::
+:::code language="json" source="~/../quickstart-templates/101-webapp-linux-managed-mysql/azuredeploy.json" highlight="112-201":::
 
 ## Create your pipeline and deploy your template
 
