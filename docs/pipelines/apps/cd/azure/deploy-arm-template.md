@@ -1,15 +1,15 @@
 ---
-title: Use Resource Manager to deploy a Linux web app to Azure
-description: Use Resource Manager to deploy a Linux web app to Azure
+title: Use a Resource Manager template to deploy a Linux web app to Azure
+description: Use a Resource Manager template to deploy a Linux web app to Azure
 ms.topic: quickstart
 ms.author: jukullam
 author: JuliaKM
-ms.date: 06/04/2020
+ms.date: 06/05/2020
 monikerRange: '=azure-devops'
 ms.custom: subject-armqs
 ---
 
-# Quickstart: Use Resource Manager to deploy a Linux web app to Azure
+# Quickstart: Use a Resource Manager template to deploy a Linux web app to Azure
 
 This tutorial will get you started with [Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/overview) by deploying a Linux web app with MySQL. Resource Manager templates give you a way to save your configuration in code. Using a Resource Manager template is an example of infrastructure as code and a good DevOps practice.
 
@@ -101,9 +101,7 @@ https://github.com/Azure/azure-quickstart-templates/
 
 ## Review deployed resources
 
-12. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
-
-13. Verify that the resource deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
+12. Verify that the resources deployed. Go to the `ARMPipelinesLAMP-rg` resource group in the Azure portal and verify that you see  App Service, App Service Plan, and Azure Database for MySQL server resources. 
 
 :::image type="content" source="media/arm-resources-portal.png" alt-text="ARM resources in the Azure Portal":::
 
@@ -112,6 +110,8 @@ You can also verify the resources using Azure CLI.
 ```azurecli-interactive
 az resource list --resource-group ARMPipelinesLAMP-rg --output table
 ```
+
+13. Go to your new site. If you set `siteName` to `armpipelinetestsite`, the site is located at `https://armpipelinetestsite.azurewebsites.net/`.
 
 ## Clean up resources
 
