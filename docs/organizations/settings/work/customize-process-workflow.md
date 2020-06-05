@@ -42,16 +42,17 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 [!INCLUDE [temp](../includes/process-customize-workflow.md)]
 
 
-#### State drop-down menu sequence 
+### State drop-down menu sequence 
 
 The State drop-down menu lists States within the sequence you order them within each state category.  
 
 The following image illustrates the State sequence defined for User Story and it's corresponding drop-down menu. 
 
-![User story state sequence]()  
 
 > [!div class="mx-imgBorder"]  
-> ![User story state sequence](media/customize-workflow/user-story-state-sequence.png)  ![User story State drop-down menu](media/customize-workflow/user-story-state-drop-down-list.png)  
+> ![User story state sequence](media/customize-workflow/user-story-state-sequence.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![User story State drop-down menu](media/customize-workflow/user-story-state-drop-down-list.png)  
+
+Within each category, you can move custom states up or down. 
 
 
 ## Impact to teams with workflow changes
@@ -89,7 +90,11 @@ States you add appear in the drop-down menu for the States field shown in work i
 
 	> [!div class="mx-imgBorder"]
 	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
-	
+1. (Optional) To change the sequence of the State within the drop-down menu, choose the ![ ](../../../media/icons/actions-icon.png) context menu icon and choose **Move up** or **Move down**. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Move State up](media/customize-workflow/move-state-sequence.png) 
+
 1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
 
 	Here we show the State drop-down menu with Triaged selected. 
@@ -112,9 +117,10 @@ You can edit the category or the color of a custom state. However, you can't cha
 
 1. Modify the category or color, and then choose <strong>Save</strong>. 
 
-1. If you change the category, teams that use the Kanban board to update their status need to update their [column settings](../../../boards/boards/add-columns.md).    
+1. If you change the category, teams that use the Kanban board need to update their [column settings](../../../boards/boards/add-columns.md).    
  
 <a id="remove-state"></a>
+
 ## Hide or remove a custom state
 
 When you hide or remove a state:  
@@ -124,6 +130,7 @@ When you hide or remove a state:
 
 
 <a id="hide-state"></a>
+
 ## Hide or unhide an inherited state 
 
 You can hide an inherited state that your team doesn't use in its workflow process. However, you must have at least one state defined for each category. 
@@ -142,15 +149,15 @@ You can hide an inherited state that your team doesn't use in its workflow proce
  
 
 <a id="remove-state"></a>
+
 ## Remove a custom state 
+
 1. Open the &hellip; context menu for the state you want to remove, and choose <strong>Remove</strong>. You can only remove a custom state.     
 
 1. From the Remove State dialog, click <strong>Remove</strong>.   
 
 	<img src="media/process/workflow-remove-state-warning.png" alt="Remove state warning dialog box" style="border: 1px solid #C3C3C3;" />  
 
-2. If teams use the Kanban board to update their status, each team needs to update their [column settings](../../../boards/boards/add-columns.md).    
- 
 
 ## View the State workflow model 
 

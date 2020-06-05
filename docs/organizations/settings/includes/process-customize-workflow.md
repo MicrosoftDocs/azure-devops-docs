@@ -49,14 +49,14 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 
 ---
 
-#### Workflow states must conform to the following rules: 
+### Workflow states must conform to the following rules  
 
 - At least one state must be defined for either the *Proposed* or *In Progress* state categories  
 	> [!NOTE]    
 	> Before adding a workflow state, review [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories) to learn how workflow states map to state categories.  
 - At a minimum, there must be at least two workflow states defined. 
 
-#### Unsupported workflow customizations   
+### Unsupported workflow customizations   
 
 ::: moniker range="azure-devops"
 
