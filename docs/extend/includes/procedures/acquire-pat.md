@@ -10,12 +10,12 @@
    :::image type="content" source="../../media/create-new-personal-access-token.png" alt-text="Create your new personal access token":::
 
 4. Complete the form:
-   - Name your token.
-   - Select your organization.
-   - Select an expiration time frame for your token. This is required because the Visual Studio Marketplace publishing APIs work outside of the context of an organization.
+   - Name your token
+   - Select **All accessible organizations**, which is the only value that works when publishing via CLI. If you select only one organization, it results in an error, even if the PAT is valid 
+   - Select an expiration time frame for your token. This is required because the Visual Studio Marketplace publishing APIs work outside of the context of an organization
    - Set the scope of access associated with this token. Be sure to select the **Marketplace (publish)** scope. This scope limits the token to only being able 
    to publish extensions to the Marketplace.
-   - Select **Create**.
+   - Select **Create**
  
    :::image type="content" source="../../media/create-pat-final-steps.png" alt-text="..":::
     
