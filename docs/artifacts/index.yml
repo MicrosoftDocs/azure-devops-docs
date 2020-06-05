@@ -19,9 +19,9 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Get Started
+  - title: Azure Artifacts
     linkLists:
-      - linkListType: Azure Artifacts
+      - linkListType: get-started
         links:
           - text: What is Azure Artifacts?
             url: overview.md
