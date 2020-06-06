@@ -33,7 +33,7 @@ Implementing restricted [State] transitions will enable us to
 - prevent unauthorised users from setting an invalid state (accidentally or otherwise)
 - prevent users from maliciously circumventing process (eg. Setting a work item straight to ‘Approved’)
 - ensure all expected users in a User Story are part of the value chain
-- demonstrate, for audit purposes, that we have a tested, reliable and controlled process in place.
+- demonstrate, for audit purposes, that we have a tested, reliable and controlled process in place 
 
 
 Review this article to support defining workflow rules:
@@ -58,7 +58,7 @@ The second group supports restricting state transitions. This group allows you t
       **Condition**
    :::column-end:::
    :::column span="2":::
-      **Actions**
+      **Supported Actions**
    :::column-end:::
 :::row-end:::  
 ---  
@@ -69,6 +69,8 @@ The second group supports restricting state transitions. This group allows you t
       > ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
    :::column-end:::
    :::column span="2":::
+      &nbsp;&nbsp;&nbsp;  
+      &nbsp;&nbsp;&nbsp;  
       > [!div class="mx-imgBorder"]  
       > ![Actions, work item is created](media/customize-workflow/actions-work-item-created.png)
    :::column-end:::
@@ -80,6 +82,7 @@ The second group supports restricting state transitions. This group allows you t
       ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
    :::column-end:::
    :::column span="2":::
+      &nbsp;&nbsp;&nbsp;  
       ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
@@ -87,21 +90,41 @@ The second group supports restricting state transitions. This group allows you t
 :::row:::  
    :::column span="2":::
       **Retrict a transition based on State and user or group membership**
-      ![Condition, user group membership](media/customize-workflow/conditions-work-item-moved.png)
+      ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
    :::column-end:::
    :::column span="2":::
+      &nbsp;&nbsp;&nbsp;  
+      &nbsp;&nbsp;&nbsp;  
       ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 --- 
 
 
+## Set field value or make field read-only or required
 
+&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;  
+
+## Restrict state transition
+
+&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;  
+
+
+## Restrict state transition based on user or group membership 
+
+&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;  
 
 
 
 
 ## Automate state transitions of parent work items 
+
+&nbsp;&nbsp;&nbsp;  
+&nbsp;&nbsp;&nbsp;  
+
 
 https://github.com/microsoft/azure-boards-automate-state-transitions 
 
