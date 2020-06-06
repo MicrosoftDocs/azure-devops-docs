@@ -46,15 +46,15 @@ Review this article to support defining workflow rules:
 
 
 
-## Two categories of workflow rules 
+## Workflow rule groupings
 
-The following table indicates the two groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
+The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
-The second group supports restricting state transitions. This group allows you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states. 
+The second group supports restricting state transitions. This group allows you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
 
 ---
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       **Condition**
    :::column-end:::
    :::column span="2":::
@@ -63,22 +63,36 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::  
 ---  
 :::row:::  
-   :::column span="":::
-      ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
+   :::column span="2":::
+      **Set field value or make read-only/required based on State**
+      > [!div class="mx-imgBorder"]  
+      > ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
    :::column-end:::
    :::column span="2":::
-      - ![Actions, work item is created](media/customize-workflow/actions-work-item-created.png)
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, work item is created](media/customize-workflow/actions-work-item-created.png)
    :::column-end:::
 :::row-end:::
+---  
 :::row:::  
-   :::column span="":::
+   :::column span="2":::
+      **Retrict a transition based on State**
       ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
    :::column-end:::
    :::column span="2":::
-      - ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
-
+---  
+:::row:::  
+   :::column span="2":::
+      **Retrict a transition based on State and user or group membership**
+      ![Condition, user group membership](media/customize-workflow/conditions-work-item-moved.png)
+   :::column-end:::
+   :::column span="2":::
+      ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+   :::column-end:::
+:::row-end:::
 --- 
 
 
