@@ -32,7 +32,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
    :::column-end:::
    :::column span="2":::
       - [Hide or unhide a state](/azure/devops/organizations/settings/work/customize-process-workflow#hide-state)
-      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/customize-rules) 
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/custom-rules) 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -43,7 +43,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
       - [Add a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#add-states)
       - [Edit a workflow state (change color or category)](/azure/devops/organizations/settings/work/customize-process-workflow#edit-state)
       - [Remove a workflow state](/azure/devops/organizations/settings/work/customize-process-workflow#remove-state)
-      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/customize-rules) 
+      - [Add rules when changing a workflow state](/azure/devops/organizations/settings/work/custom-rules) 
    :::column-end:::
 :::row-end:::
 
@@ -51,10 +51,11 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 
 ### Workflow states must conform to the following rules  
 
-- At least one state must be defined for either the *Proposed* or *In Progress* state categories  
+- You must define at least one state for either the *Proposed* or *In Progress* State categories  
 	> [!NOTE]    
 	> Before adding a workflow state, review [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories) to learn how workflow states map to state categories.  
-- At a minimum, there must be at least two workflow states defined. 
+- You must define at least two workflow States  
+- You can define a maximum of 32 workflow States per work item type  
 
 ### Unsupported workflow customizations   
 

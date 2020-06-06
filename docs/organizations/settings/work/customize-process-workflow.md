@@ -2,7 +2,7 @@
 title: Customize the workflow of an inherited process
 titleSuffix: Azure DevOps Services
 description: Add workflow states to a work item type for an inherited process for a project
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: 35971F8F-26EF-4C99-9825-4AC072A6EBE4  
 ms.author: kaelli
