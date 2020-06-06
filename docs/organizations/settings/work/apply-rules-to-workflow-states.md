@@ -63,38 +63,46 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::  
 ---  
 :::row:::  
+   :::column span="4":::
+      **Set field value or make read-only/required based on State**
+   :::column-end:::
+:::row-end:::
+:::row:::  
    :::column span="2":::
       **Set field value or make read-only/required based on State**
       > [!div class="mx-imgBorder"]  
       > ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
    :::column-end:::
    :::column span="2":::
-      &nbsp;&nbsp;&nbsp;  
-      &nbsp;&nbsp;&nbsp;  
       > [!div class="mx-imgBorder"]  
       > ![Actions, work item is created](media/customize-workflow/actions-work-item-created.png)
    :::column-end:::
 :::row-end:::
 ---  
 :::row:::  
-   :::column span="2":::
+   :::column span="4":::
       **Retrict a transition based on State**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
       ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
    :::column-end:::
    :::column span="2":::
-      &nbsp;&nbsp;&nbsp;  
       ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 ---  
 :::row:::  
-   :::column span="2":::
+   :::column span="4":::
       **Retrict a transition based on State and user or group membership**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
       ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
    :::column-end:::
    :::column span="2":::
-      &nbsp;&nbsp;&nbsp;  
-      &nbsp;&nbsp;&nbsp;  
       ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
