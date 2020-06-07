@@ -86,10 +86,12 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::
 :::row:::  
    :::column span="2":::
-      ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
+      > [!div class="mx-imgBorder"]  
+      > ![Condition, work item is moved](media/customize-workflow/condition-work-item-moved.png)
    :::column-end:::
    :::column span="2":::
-      ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 ---  
@@ -100,10 +102,12 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::
 :::row:::  
    :::column span="2":::
-      ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
+      > [!div class="mx-imgBorder"]  
+      > ![Condition, user group membership](media/customize-workflow/conditions-user-group-membership.png)
    :::column-end:::
    :::column span="2":::
-      ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, work item is created](media/customize-workflow/actions-restrict-transition-to-state.png)
    :::column-end:::
 :::row-end:::
 --- 
