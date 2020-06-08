@@ -76,14 +76,16 @@ The check fails if execution of the stage does not start within the **Timeout** 
 ## Invoke Azure function
 
 Azure functions are the serverless computation platform offerred by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
-Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options.
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
    > [!div class="mx-imgBorder"]
    > ![invoke-azure-function](media/checks/azurefunction.png)
 
 The checks fails if the stage has not started execution within the specified **Timeout** period.  
 
-[Learn More](../tasks/utility/azure-function.md)
+> [!NOTE]
+> User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
+
 
 ## Invoke REST API
 
