@@ -128,4 +128,6 @@ az resource list --resource-group ARMPipelinesLAMP-rg --output table
 
 ## Next steps
 
-Learn to [create and deploy your first Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template).  
+> [!div class="nextstepaction"]
+> [Create your first Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-first-template)
+
