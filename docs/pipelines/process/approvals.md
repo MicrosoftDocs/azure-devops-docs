@@ -107,7 +107,7 @@ The evaluation is repeated after **Time between evaluations** setting in control
 
 ## Required template
 
-With the required template approval, you can require that any pipelines use a specific YAML template. When this check is in place, a pipeline will fail if it doesn't extend from the referenced template. You can see whether an approval has passed when you view the jobs associated with a pipeline run. 
+With the required template check, you can enforce pipelines to use a specific YAML template. When this check is in place, a pipeline will fail if it doesn't extend from the referenced template. 
 
 To define a required template approval:
 
