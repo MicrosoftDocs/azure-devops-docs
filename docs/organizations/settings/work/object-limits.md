@@ -128,7 +128,7 @@ The following table lists the maximum number of objects that you can define for 
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
-| Number of processes you can have in an organization |          64 |         64 |
+| Number of processes you can have in an organization |          128|         64 |
 | Work item types defined for a process               |          64 |         64 |
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
