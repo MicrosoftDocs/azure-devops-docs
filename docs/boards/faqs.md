@@ -79,7 +79,7 @@ If you are tracking dependencies across one or more organizations, you may want 
 
 **A:** No. Cloning doesn't copy work item subtasks.  
 
-Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194).
+Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194).
 
 ### Q: Can I create a work item template that creates links to other work items? 
 

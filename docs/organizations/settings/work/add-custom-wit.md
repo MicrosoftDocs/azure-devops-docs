@@ -142,6 +142,8 @@ We recommend that you create a test project and apply your customized  inherited
 
 ## Related articles 
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 - [Customize a project using an inherited process](customize-process.md)
 - [Create and manage inherited processes](manage-process.md)
 - [Customize the workflow states](customize-process-workflow.md). 

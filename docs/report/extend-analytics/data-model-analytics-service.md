@@ -88,7 +88,7 @@ The following EntitySets are only supported with the **v3.0-preview** API versio
 > |TestResultsDaily | A daily snapshot aggregate of TestResult executions, grouped by Test (not TestRun) |  ✔️ |
 > |TestRuns | Execution information for tests run under a pipeline with aggregate TestResult |  ✔️ |
 > |Tests | Properties for a test | ✔️ |
-> |TestsResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
+> |TestResults | Individual execution results for a specific Test associated with a TestRun |  ✔️ |
 
 
 

@@ -244,7 +244,6 @@ has a detailed example of how dynamic parameters can be identified by inspecting
 
 * [FAQs for load testing](reference-qa.md#recordreplay)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Run Apache JMeter load tests with Azure DevOps](get-started-jmeter-test.md)
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)

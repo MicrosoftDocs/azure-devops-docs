@@ -43,14 +43,14 @@ Use this topic to access articles that show you how to:
 
 ## Set up Azure Active Directory for use with Azure DevOps Services
 
-* [Access Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
+* [About accessing Azure DevOps with Azure Active Directory (Azure AD)](../../organizations/accounts/access-with-azure-ad.md)
 
 ## Manage organizational access with Azure AD
 
 * [Add Azure DevOps users to your Azure AD](../../organizations/accounts/add-users-to-azure-ad.md)
 * [Connect Azure DevOps organization to Azure AD](../../organizations/accounts/connect-organization-to-azure-ad.md)
 * [Disconnect Azure DevOps organization from Azure AD](../../organizations/accounts/disconnect-organization-from-azure-ad.md)
-* [Delete users from Azure DevOps connected to Azure AD](../../organizations/accounts/delete-users-from-services-azure-ad.md)
+* [Delete users from Azure DevOps connected to Azure AD](../accounts/add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad)
 * [Troubleshoot access with Azure Active Directory](../../organizations/accounts/faq-azure-access.md?toc=/azure/devops/organizations/security/toc.json&bc=/azure/devops/organizations/security/breadcrumb/toc.json) 
 
 ::: moniker-end

@@ -194,7 +194,7 @@ With HockeyApp, you can develop, distribute, and beta test your mobile apps. Hoc
 - Open-source SDKs to let you know what code is running in your apps
 - Integration with your existing build system and work item management solution
 
-To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app-insights-overview).
+To learn more, see [Microsoft Azure - HockeyApp](https://azure.microsoft.com/updates/hockeyapp-available-for-purchase-through-azure/).
 
 ## Command-line tools
 

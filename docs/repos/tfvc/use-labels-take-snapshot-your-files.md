@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Use labels to take a snapshot of your files
 ms.assetid: 8945006e-3a03-4ae1-b5a1-79be57610321
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

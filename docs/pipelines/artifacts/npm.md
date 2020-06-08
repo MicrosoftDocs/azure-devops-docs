@@ -6,7 +6,7 @@ description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.topic: conceptual
-ms.date: 06/12/2018
+ms.date: 04/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -25,15 +25,20 @@ You can publish npm packages produced by your build to:
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
-[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)] Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, and **feedName** is the feed that you want to publish to:
+[!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
+
+Add the following snippet to your `azure-pipelines.yml` file, where **useFeed** is the codename for using an Azure Artifacts feed, **feedName** is the feed that you want to publish to, and **projectName** is the name of your project:
 
 ```yaml
 - task: Npm@1
   inputs:
     command: publish
     publishRegistry: useFeed
-    publishFeed: feedName
+    publishFeed: projectName/feedName
 ```
+
+> [!NOTE]
+> All new feeds that were created through the classic user interface are project scoped feeds. You must include the project name in the `publishFeed` parameter: `publishFeed: '<projectName>/<feedName>'`. See [Project-scoped feeds vs. Organization-scoped feeds](../../artifacts/concepts/feeds.md#project-scoped-feeds-vs-organization-scoped-feeds) to learn about the difference between the two types.
 
 To publish to an external npm registry, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service connection**. Select the **npm** option for the service connection. Fill in the registry URL and the credentials to connect to the registry.
 
@@ -70,7 +75,7 @@ To publish to an external npm registry, you must first create a service connecti
 > [!NOTE]
 > Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
-## Q&A
+## FAQ
 
 ### Where can I learn about the Azure Pipelines and TFS Package Management service?
 

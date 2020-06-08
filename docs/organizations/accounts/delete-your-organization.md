@@ -8,7 +8,7 @@ ms.assetid: 82433ad3-d665-4a11-95b7-82178f493fb5
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 09/13/2019
+ms.date: 04/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,10 +16,10 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-If you no longer need your organization in Azure DevOps, you can delete it. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
+When you no longer need an organization, you can delete it from Azure DevOps. If you change your mind within 28 days, you can [recover your organization](recover-your-vsts-organization.md).
 After 28 days, your organization and data are permanently deleted.
 
-When you delete your organization, note the following:
+When you delete your organization, note the following occurrences:
 
 * All users lose access to organization services and resources immediately.
 
@@ -61,4 +61,11 @@ permissions. [How do I find the Project Collection Administrators?](../security/
 
    [Need help?](faq-configure-customize-organization.md#get-support)
 
+Your organization is deleted.
+
+## Related articles
+
+- [Recover your deleted organization](recover-your-organization.md)
+- [Resolve an orphaned organization](resolve-orphaned-organization.md)
+- [Create a new organization](create-organization.md)
 

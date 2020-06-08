@@ -101,7 +101,6 @@ Before you start your load testing:
 * [FAQs for load testing](reference-qa.md#jmeter-tests)
 * [Load test with Visual Studio](getting-started-with-performance-testing.md) 
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 * [Tutorial: Run load tests before release](run-performance-tests-app-before-release.md) 
 * [Analyze load test results using the Load Test Analyzer](/visualstudio/test/analyze-load-test-results-using-the-load-test-analyzer)
 

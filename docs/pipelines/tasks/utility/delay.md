@@ -14,7 +14,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to pause execution of the pipeline for a fixed delay time.
+Use this task in an [agentless job](../../process/phases.md#server-jobs) of a release pipeline to pause execution of the pipeline for a fixed delay time.
 
 ## Demands
 
@@ -40,7 +40,7 @@ Also see this task on [GitHub](https://github.com/Microsoft/azure-pipelines-task
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

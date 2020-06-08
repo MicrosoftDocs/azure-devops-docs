@@ -26,9 +26,14 @@ To customize the work tracking system, you *customize* an inherited process thro
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
 <a id="what-you-can-customize">  </a>
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
 
 [!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
+
+
 
 ## System versus inherited processes 
 
@@ -240,7 +245,7 @@ The following picklists are configured for each project and not customizable thr
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
 - [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
 
-Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members.md).   
+Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
 
 
 <a id="rename-field">  </a>

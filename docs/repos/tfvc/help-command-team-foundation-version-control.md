@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Help Command (Team Foundation Version Control)
 ms.assetid: 8cd73edc-8d60-42be-a840-616e6207a1d8
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

@@ -100,7 +100,7 @@ You can use branch policies to enforce successful deployment as a required crite
 - [Supported build source repositories](../repos/index.md)
 
 ## Additional resources 
-- [Azure Repos](../../repos/git/index.md)
+- [Azure Repos](../../repos/git/index.yml)
 - [Branch policies](../../repos/git/branch-policies-overview.md)
 - [Configure branch policy for an external service](../../repos/git/pr-status-policy.md)
 

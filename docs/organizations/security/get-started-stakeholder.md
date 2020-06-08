@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 04/16/2020
 ---
 
 # Get started as a Stakeholder
@@ -35,8 +35,18 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 
 ::: moniker-end  
 
-Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). 
- 
+::: moniker range="azure-devops"
+
+Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to [add you to a project with Stakeholder access](../accounts/add-organization-users.md). 
+
+::: moniker-end  
+
+::: moniker range="< azure-devops"
+
+Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your server administrator to [add you to a security group that has Stakeholder access](change-access-levels.md). 
+
+::: moniker-end  
+
 
 > [!NOTE]   
 > Azure Boards supports several Agile methods such as Kanban and Scrum. Depending on what methods your team uses, you'll want to become familiar with other tools that Azure Boards supports. This article focuses on getting familiar with work items and the Kanban board. For additional information, see [Related articles](#related-articles) at the end of this article.

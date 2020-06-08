@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Use this task in a build or release pipeline to build with MSBuild.
+Use this task to build with MSBuild.
 
 ## Demands
 
@@ -145,7 +145,7 @@ msbuild
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Should I use the Visual Studio Build task or the MSBuild task?

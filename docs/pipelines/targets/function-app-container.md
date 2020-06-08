@@ -92,10 +92,10 @@ You must supply an Azure service connection to the `AzureFunctionAppContainer` t
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the function App>
-    containerRegistry: <Name of the Azure container registry>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the function App>
+  containerRegistry: <Name of the Azure container registry>
 ```    
 
 ::: moniker-end

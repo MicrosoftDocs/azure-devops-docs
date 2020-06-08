@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018

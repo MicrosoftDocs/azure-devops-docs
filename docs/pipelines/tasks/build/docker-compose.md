@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build, push or run multi-container Docker applications.
+Use this task to build, push or run multi-container Docker applications.
 This task can be used with a Docker registry or an Azure Container Registry.
 
 ::: moniker range="> tfs-2018"
@@ -32,8 +32,8 @@ This YAML example specifies the inputs for Azure Container Registry:
 
 ```YAML
 variables:
-    azureContainerRegistry: Contoso.azurecr.io
-    azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: Contoso.azurecr.io
+  azureSubscriptionEndpoint: Contoso
 steps:
 - task: DockerCompose@0
   displayName: Container registry login
@@ -309,7 +309,7 @@ This YAML example runs a docker Compose command:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

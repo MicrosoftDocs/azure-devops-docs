@@ -69,7 +69,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
@@ -91,7 +91,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Choose another sprint](media/add-tasks/select-specific-sprint-agile.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 	> [!div class="mx-imgBorder"]
 	> ![Open taskboard for a sprint](media/taskboard/open-taskboard-standard.png)
 
-	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md).
+	The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration (sprint) paths](../../organizations/settings/set-iteration-paths-sprints.md).
 
 ::: moniker-end
 

@@ -2,13 +2,13 @@
 title: Switch to another Azure Active Directory
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Learn how to change or switch your organization connection to a different Azure Active Directory
+description: Learn how to change or switch your organization connection to a different Azure Active Directory.
 ms.technology: devops-accounts
 ms.assetid: 629a48b6-b2ab-4706-8256-d187c8ed5ce7
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 02/27/2020
+ms.date: 04/23/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -22,7 +22,7 @@ For more information about using Azure AD with Azure DevOps, see the [Conceptual
 
 ## Prerequisites
 
-Before you switch your organization directory, make sure the following is true:
+Before you switch your organization directory, make sure the following statements are true:
 - You're in the Project Collection Administrator group (in Organization settings) for the organization 
 - You're a member or a guest in the source Azure AD and in the destination Azure AD
 
@@ -51,18 +51,57 @@ Before you switch your organization directory, make sure the following is true:
 
 6. Confirm that the process is complete. Sign out, and then open your browser in a private session and sign in to your organization with your Azure AD or work credentials.
 
-7. If you have disconnected members, sign back in to Azure DevOps and map them to their Azure AD identities or invite them as guests into the Azure AD. See the [FAQ](faq-azure-access.md#faq-connect) for further information.
+7. If some members are disconnected, sign back in to Azure DevOps and map them to their Azure AD identities. Or, you can invite them as guests into the Azure AD. For more information, see the [FAQs](faq-azure-access.md#faq-connect).
 
    ![Select Resolve to invite unmapped users](media/shared/azure-ad-select-resolve-for-disconnected-users.png)
 
    ![Mapping disconnected users](media/shared/resolve-disconnected-users.png)
 
+## Inform users of the completed change
+
+When you inform your users of the completed change, include the following tasks for each user in the organization to complete:
+
+- Clear the cache for the [Git Credential Manager](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/blob/master/Docs/Faq.md#q-why-is-gitexe-failing-to-authenticate-after-linkingunlinking-your-visual-studio-team-services-organization-from-azure-active-directory) if you use Visual Studio or the Git command-line tool. Delete the *%LocalAppData%\GitCredentialManager\tenant.cache* file on each client machine. 
+- [Regenerate new personal access tokens](use-personal-access-tokens-to-authenticate.md). Complete the following steps:
+
+    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+
+     ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
+
+    b. Select **Personal access tokens**, and then select **New Token**.
+    
+     ![Select New Token button to create](media/shared/select-personal-access-tokens-new-token.png)
+
+    c. Complete the form, and then select **Create**.
+
+     ![Create new token](media/shared/create-new-personal-access-token.png)
+
+    d. When the token is created, copy it, as it can't be viewed again.
+
+- Request that SSH keys be manually cleared by [Support](https://azure.microsoft.com/support/devops/), and then recreate SSH keys. Complete the following steps.
+
+    a. In Azure DevOps, select your profile icon, and then select **Security** from the resulting dropdown menu.
+
+     ![Select from your profile dropdown menu, Security](media/shared/select-security-profile-menu.png)
+
+    b. Select **SSH public keys**, and then select **Add**.
+
+     ![user-settings-security-ssh.png](media/shared/user-settings-security-ssh.png)
+
+    c. Enter a description and key data, and then select **Save**.
+
+     ![Add info to create SSH key](media/shared/add-ssh-public-key-info.png)
+
+    d. When the token is created, copy it, as it can't be viewed again.
+
+- [Rename your Microsoft account](https://support.microsoft.com/help/11545/microsoft-account-rename-your-personal-account) to a different email that doesn't conflict with your Azure AD identity. Doing so ensures that you won't be prompted to choose between accounts.
+- Adjust your Visual Studio subscription if the UPN used inside your Azure DevOps Services organization has changed. You can have it reassigned to your new UPN, or set that UPN as the alternate account inside the subscription. For more information, see [how to add an alternate account to your subscription](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity#add-an-alternate-account-to-your-subscription).
+
 ## Related articles
 
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 - [Disconnect your organization from Azure AD](disconnect-organization-from-azure-ad.md)
 - [Connect your organization to Azure AD](connect-organization-to-azure-ad.md)
-- [Manage Azure AD groups](manage-azure-active-directory-groups.md)
-- [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-
-
+- [Frequently asked questions (FAQs) about connecting, disconnecting, or changing your Azure AD](faq-azure-access.md#connect-to-disconnect-from-or-change-azure-ad-connection)
 

@@ -1,4 +1,4 @@
-﻿---
+
 title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
@@ -21,17 +21,15 @@ ms.date: 03/16/2020
 
  
 See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
-
 * Work item updates
 * Pull requests
 * Code commits
 * Builds
 * Release deployments and approvals
 
-
 ## Configuring a new connector for TFS
 
-Configuring integration between Team Foundation Server and Teams is a two step process. First setup a connector in Teams, then setup one or more service hook subscriptions in your Team Foundation Server project.
+Configuring integration between Team Foundation Server and Teams is a two-step process. First set up a connector in Teams, then set up one or more service hook subscriptions in your Team Foundation Server project.
 
 >[!NOTE]  
 >Project administrator permissions are required to create service hook subscriptions. 
@@ -52,13 +50,13 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 <br/>
 <img alt="Connectors list" src="./media/teams/Teams Connector config tfs 2.png" style="width:80%;" />
 
-1. Copy the generated web hook URL. You will provide this URL when setting up service hook subscriptions in your TFS project.
+1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your TFS project.
 
 ### From Team Foundation Server
 
 1. From your TFS team project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
 
-   <img alt="Azure DevOps Services Service Hook Settings" src="./media/slack/vsts-service-hooks.png" style="width:70%; height:auto;" />
+   <img alt="Azure DevOps Services, Service Hook Settings" src="./media/slack/vsts-service-hooks.png" style="width:70%; height:auto;" />
 
 1. Click **Create subscription** and select the "Teams" service.
 
@@ -71,7 +69,21 @@ Configuring integration between Team Foundation Server and Teams is a two step p
 
 Activity from your TFS project will start appearing in your Teams channel.
 
-## Q & A
+
+### Configuring Azure DevOps Services Tabs in Microsoft Teams
+
+1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Visual Studio icon and follow the steps to connect to your organization.
+
+   <img alt="Add a new tab to Teams channel" src="./media/teams/Teams Kanban board 3.png" style="width:80%;" />
+
+2. Once you've authenticated and selected your organization, you see a screen where you can select a Kanban board or Dashboard.
+   <br/>
+   <img alt="Teams tab configuration" src="./media/teams/Teams Kanban board 4.png" style="width:80%;" />
+
+   <br>
+   <img alt="Select Kanban board or Dashboard tab configuration" src="./media/teams/Teams Kanban board 6.png" style="width:80%;" />
+
+## Frequently asked questions (FAQs)
 
 <!-- BEGINSECTION class="m-qanda" -->
 
@@ -80,5 +92,11 @@ Activity from your TFS project will start appearing in your Teams channel.
 A: Create a new subscription for each type of event you want.
 For example, if you want to see build failures and new work items in your Teams channel,
 create two additional subscriptions.
+
+### Q: Why don't I see my organization when trying to connect Microsoft Teams?
+
+A: Only organizations in the same Azure Active Directory tenant as your Microsoft Teams account can be connected. Even if your email address is the same for Azure DevOps Services and Microsoft Teams, they may be backed by different tenants, so they can't be linked.
+
+Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#q-why-is-my-organization-already-connected-to-a-directory-can-i-change-that-directory).
 
 <!-- ENDSECTION -->

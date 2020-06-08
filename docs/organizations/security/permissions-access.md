@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 06/02/2019
+ms.date: 03/24/2020
 ---
 
 # Default permissions and access for Azure DevOps
@@ -39,13 +39,19 @@ For a comparison chart of Stakeholder versus Basic access, see the [Feature matr
 
 ## Dashboards, charts, reports, and widgets
 
-You can define and manage dashboards from the web portal, **Dashboard**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
+You can define and manage team and project dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You can set [individual dashboard permissions](../../report/dashboards/dashboard-permissions.md) to grant or restrict the ability to edit or delete dashboards. 
+
 Users granted Stakeholder access to private projects can't view or create query charts. Stakeholder access to public projects can view and create query charts.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+You can define and manage team dashboards from the web portal, **Dashboards**. For an overview of dashboard and chart features, see [Dashboards](../../report/dashboards/overview.md). You set [dashboard permissions at the team level](../../report/dashboards/dashboard-permissions.md) from the team dashboard page. 
 
 ::: moniker-end
 
@@ -187,7 +193,7 @@ You can connect to your code from the web portal **Code** hub, or using Xcode, E
 
 ### Git
 
-You can use [Git repositories](../../repos/git/overview.md) to host and collaborate on your source code. For an overview of code features and functions.
+You can use [Git repositories](../../repos/git/index.yml) to host and collaborate on your source code. For an overview of code features and functions.
 
 [!INCLUDE [temp](includes/code-git.md)]
 
@@ -201,7 +207,7 @@ You can use [Git repositories](../../repos/git/overview.md) to host and collabor
 
 ::: moniker range=">= tfs-2013"
 
-[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 

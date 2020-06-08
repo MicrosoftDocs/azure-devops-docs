@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Displays all or some of the contents of the server for Team Foundation version control using the Dir command
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -60,7 +60,7 @@ You can specify more than one Itemspec argument.
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains one or more files or folders about which you want to display information (for example, <a href="http://myserver:8080/tfs/DefaultCollection/" data-raw-source="http://myserver:8080/tfs/DefaultCollection/">http://myserver:8080/tfs/DefaultCollection/</a>).</p></td>
+<td><p>The URL of the project collection that contains one or more files or folders about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection/).</p></td>
 </tr>
 </tbody>
 </table>

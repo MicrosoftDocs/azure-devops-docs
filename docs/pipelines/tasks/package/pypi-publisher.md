@@ -15,7 +15,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
+Use this task to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.
@@ -61,7 +61,7 @@ A generic service connection for a PyPI index.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

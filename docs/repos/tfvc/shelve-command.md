@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Shelve Command
 ms.assetid: f6b9e3c8-9a5a-4ebb-9823-d3a430ca08de
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -45,7 +45,7 @@ tf shelve /delete shelvesetname[;owner] [/login:username,[password]] [/collectio
 |      *shelvesetname*       |                               Specifies a name by which the shelveset can be retrieved from the Team Foundation server. You can specify an existing combination of *shelvesetname \*and \*owner \*but only if \*\*/replace*\* is also specified.<br /><br />You must provide a value for this parameter.                                |
 |          *owner*           |                                                                                  Identifies the current or intended owner of the shelveset by user name. By default, the current user is assigned ownership of the shelveset if one is not specified.                                                                                   |
 |         *username*         |                                                                                                        Provides a value to the **/login** option. You can specify a username value as either *DOMAIN*\*UserName\* or *UserName*.                                                                                                        |
-| *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, <http://myserver:8080/tfs/DefaultCollection/>).                                                                                        |
+| *TeamProjectCollectionUrl* |                                                                                       The URL of the project collection that contains the files or folders that you want to shelve (for example, `http://myserver:8080/tfs/DefaultCollection/`).                                                                                        |
 
 | **Option** | **Description** |
 |---|---|

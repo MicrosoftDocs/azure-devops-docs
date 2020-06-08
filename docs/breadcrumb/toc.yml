@@ -34,7 +34,7 @@
       tocHref: /azure/devops/boards/plans/
       topicHref: /azure/devops/boards/plans/index
     - name: Excel, Project, PowerPoint
-      tocHref: /azure/devops/boards/backlogs/office/
+      tocHref: /azure/devops/boards/backlogs/office/track-work
       topicHref: /azure/devops/boards/backlogs/office/track-work
     - name: Integrations & extensions
       tocHref: /azure/devops/boards/extensions/
@@ -102,12 +102,6 @@
     - name: Service hooks
       tocHref: /azure/devops/service-hooks/
       topicHref: /azure/devops/service-hooks/overview
-    - name: Additional integrations
-      tocHref: /azure/devops/boards/integrations/
-      topicHref: /azure/devops/boards/integrations/boards-slack
-    - name: Additional integrations
-      tocHref: /azure/devops/pipelines/integrations/
-      topicHref: /azure/devops/pipelines/integrations/slack
   - name: Developer resources
     tocHref: /azure/devops/dev-resources/
     topicHref: /azure/devops/dev-resources/index

@@ -245,7 +245,7 @@ Azure Boards adds a team parameter when you select the <strong>@CurrentIteration
 > ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
-> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it]((../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 
@@ -273,7 +273,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 
 > [!NOTE]
 > For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
-> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -423,7 +423,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 #### Notes:
  
-1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md#date-identity).
+1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md).
 
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```xml
@@ -458,7 +458,7 @@ To query for items based on text entered in the History field, see [History and 
 
 - [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Query quick reference](query-index-quick-ref.md)
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 

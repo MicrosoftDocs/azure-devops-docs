@@ -1,13 +1,13 @@
 ﻿---
 title: Troubleshoot access via Azure AD
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/11/2020
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -17,7 +17,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn the answers to the following frequently asked questions (FAQs) about access via Azure AD. FAQs are grouped by the following subjects:
+In this article, learn the answers to the following frequently asked questions (FAQs) about access to your Azure DevOps organization via Azure Active Directory (AD). FAQs are grouped by the following subjects:
 - [General](#general)
 - [Azure AD users and permissions](#azure-ad-users-and-permissions)
 - [Azure AD groups](#azure-ad-groups)
@@ -27,7 +27,7 @@ In this article, learn the answers to the following frequently asked questions (
 
 <a name="general"></a>
 
-## General access with Azure AD FAQs
+## General access with Azure AD
 
 ### Q:  Why don't I see my organization in the Azure portal?
 
@@ -38,7 +38,7 @@ Also, in the [Azure portal](https://portal.azure.com), you must have Project Col
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
 
-A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps.
+A: Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
@@ -84,7 +84,7 @@ monthly limits until your subscription is fixed.
 
 <a name="azure-ad-users-and-permissions"></a>
 
-## Azure AD users and permissions FAQs
+## Azure AD users and permissions
 
 If you don't find an answer to your question here, see [User and permissions management FAQs](faq-user-and-permissions-management.md).
 
@@ -94,7 +94,7 @@ If you don't find an answer to your question here, see [User and permissions man
 
 A: Your organization authenticates users and controls access through Azure Active Directory (Azure AD). All users must be directory members to get access.
 
-As a directory administrator, you can [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). If you're not an administrator, work with your directory administrator to add users. Learn more about [how to control access by using a directory](access-with-azure-ad.md).
+As a directory administrator, you can [add users to the directory](https://msdn.microsoft.com/library/azure/hh967632.aspx). If you're not an administrator, work with your directory administrator to add users. Learn more about [controlling access to Azure DevOps Services by using a directory](access-with-azure-ad.md).
 
 ### Q: How do I find out whether my organization uses Azure AD to control access?
 
@@ -117,7 +117,7 @@ If your organization is connected to your organization's directory, only users f
 
 ### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad).
 
 ### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 
@@ -168,7 +168,7 @@ While not the norm, we've seen it takes several hours or even days before this c
 
 <a name="azure-ad-groups"></a>
 
-## Azure AD groups FAQs
+## Azure AD groups
 
 ### Q: Why can't I assign Azure DevOps permissions directly to an Azure AD group?
 
@@ -184,9 +184,18 @@ or the group management tools that your organization supports.
 
 ### Q: How do I tell the difference between an Azure DevOps group and an Azure AD group?
 
-A: On the group's identity information, check the group's source.
+A: The Azure DevOps UI indicates membership scope using brackets `[]`. For example, consider this permissions settings page:
 
-![Screenshot of group identity information](media/manage-azure-ad-groups/checkidentitysourceaad.png)
+![Permissions Settings with various scopes](media/manage-azure-ad-groups/permissions-scope-example.png)
+
+| Scope name | Definition |
+|:--|:--|
+| `[fabrikam-fiber]` | Membership is defined in Organization Settings |
+| `[Project Name]` | Membership is defined in Project Settings |
+| `[TEAM FOUNDATION]` | Membership is defined _directly_ in Azure AD | 
+
+> [!Note]
+> If you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
 
 ### Q: Why doesn't Users show all Azure AD group members?
 
@@ -241,7 +250,7 @@ A: No, but you might be interested in our [process customization plans](https://
 
 <a name="add-users-to-directory"></a>
 
-## Add users to directory FAQs
+## Add users to directory
 
 [Add organization users to your Azure Active Directory](add-users-to-azure-ad.md).
 
@@ -280,7 +289,7 @@ Complete the [prerequisites for adding external users](add-external-user.md#prer
 
 <a name="remove-users-or-groups"></a>
 
-## Remove users or groups FAQs
+## Remove users or groups
 
 ### Q: How do I remove an Azure AD group from Azure DevOps?
 
@@ -302,15 +311,17 @@ A: Users who are disabled or removed from your directory, can no longer access y
 
 <a name="faq-connect"></a>
 
-## Connect to, disconnect from, or change Azure AD connection FAQs
+## Connect to, disconnect from, or change Azure AD connection
 
 - [Connect your organization to Azure AD](connect-organization-to-aad.md)
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)
 - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 ### Q: How can I manage multiple organizations that are backed by Azure AD?
 
-A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Manage multiple organizations backed by Azure AD](connect-organization-to-azure-ad.md#manage-multiple-organizations-backed-by-azure-ad).
+A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md).
 
 <a name="connect-o365-azure-ad"></a>
 

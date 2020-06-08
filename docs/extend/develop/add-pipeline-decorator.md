@@ -78,10 +78,10 @@ We'll start with a basic example and work up to the full task.
 ------
 ```yaml
 steps:
-  - task: CmdLine@2
-    displayName: 'Run my script (injected from decorator)'
-    inputs:
-      script: dir
+- task: CmdLine@2
+  displayName: 'Run my script (injected from decorator)'
+  inputs:
+    script: dir
 ```
 
 ## Installing the decorator

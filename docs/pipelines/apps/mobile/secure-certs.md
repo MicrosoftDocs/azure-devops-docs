@@ -218,7 +218,7 @@ Follow these steps:
 
 You are now all set! Any build agent will now be able to securely build your app without any certificate management on the build machine itself.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description:  Conduct a code review in a Git with Azure Repos or Azure DevOps Server, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
@@ -26,7 +26,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To view pull requests in a specific repository in a project, [got to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
+1. To view pull requests in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
    ![View your pull requests](media/repos-navigation/repos-pull-requests.png)
 
@@ -240,7 +240,7 @@ Add reviewers to your pull request:
 
 1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
@@ -258,7 +258,7 @@ Add reviewers to your pull request:
 
 1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 

@@ -56,6 +56,7 @@ Learn how to perform these tasks:
 > * Verify the customizations you made  
 > * Change the process used by a project 
  
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 [!INCLUDE [temp](../includes/process-prerequisites.md)] 
 

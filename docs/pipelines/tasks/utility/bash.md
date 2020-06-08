@@ -6,7 +6,7 @@ ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 02/11/2020
+ms.date: 04/29/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a Bash script on macOS, Linux, or Windows. 
+Use this task to run a Bash script on macOS, Linux, or Windows. 
 
 ::: moniker range="> tfs-2018"
 
@@ -50,22 +50,32 @@ The Bash task also has a shortcut syntax in YAML:
 
 ```YAML
 steps:
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
 
 This is equivalent to:
 
 ```YAML
 steps:
-  - script: echo $MYSECRET
-    env:
-      MYSECRET: $(Foo)
+- script: echo $MYSECRET
+  env:
+    MYSECRET: $(Foo)
 ```
+
+The Bash task will find the first Bash implementation on your system.
+Running `which bash` on Linux/macOS or `where bash` on Windows will give you an idea of which one it'll select.
+
+::: moniker range=">= azure-devops-2019"
+
+Bash scripts checked into the repo should be set executable (`chmod +x`).
+Otherwise, the task will show a warning and `source` the file instead.
+
+::: moniker-end
 
 ## Open source
 

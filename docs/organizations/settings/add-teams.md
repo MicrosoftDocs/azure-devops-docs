@@ -152,7 +152,7 @@ b70aa504-33b4-4d17-a85d-0fbf4829a154  Phone               Feature team deliverin
 cda2b9b0-0335-4a0d-8bd0-67611d64ce9d  Voice               Feature team focused on voice communications
 ```
 
-<a id="add-team" /> 
+<a id="add-team-cli" /> 
 
 ### Add a team 
 

@@ -5,6 +5,7 @@ description: Key definitions for objects and items used to authenticate and mana
 ms.technology: devops-security
 ms.assetid: 
 ms.topic: conceptual 
+ms.custom: has-adal-ref
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -38,7 +39,7 @@ An unauthenticated user of a project. The user is visiting a project and has not
 
 ## Audit log
 
-Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. To learn more, see [Access, export, and filter audit logs](../settings/azure-devops-auditing.md).
+Audit logs contain many changes that occur throughout an Azure DevOps organization. Changes occur when a user or service identity within the organization edits the state of an artifact, including changes to permissions. To learn more, see [Access, export, and filter audit logs](../audit/azure-devops-auditing.md).
 
 ::: moniker-end
 
@@ -78,7 +79,7 @@ Permissions that aren't directly allowed or denied for a user, may be inherited.
 
 Each family of Azure DevOps resources (work items, Git repositories, an so on) is secured using a different namespace. Each security namespace contains zero or more ACLs. Each ACL contains a token, an inherit flag and a set of zero or more ACEs. Each ACE contains an identity descriptor, an allowed permissions bitmask and a denied permissions bitmask. 
 
-For a list of AzureDevOps namespaces, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions). 
+For a list of Azure DevOps namespaces, see [Use TFSSecurity to manage groups and permissions for Azure DevOps](/azure/devops/server/command-line/tfssecurity-cmd#permission-namespaces-and-actions). 
 
 For Azure DevOps Services, you can list the namespaces using **az devops security permission namespace list** command. For details, see [Manage tokens and namespaces](manage-tokens-namespaces.md).
 

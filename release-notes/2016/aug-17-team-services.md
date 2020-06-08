@@ -103,7 +103,7 @@ The SSH task provides a way to run commands and scripts on remote machines via s
 
 ### Create archives from builds and releases
 
-A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/12/archive-files-build-task-for-team-services/).
+A new build task called “Archive Files” allows packaging and compressing files in multiple archive formats such as .zip, .tar, .tar.gz, and .7z. For more information, see [https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/](https://devblogs.microsoft.com/devops/archive-files-build-task-for-team-services/).
 
 ### Copy files over SSH from builds and releases
 
@@ -230,7 +230,7 @@ You can unpublish free extensions, if you no longer want to offer them in the Ma
 
 To unpublish, select the extension on your [Marketplace publisher page](https://aka.ms/vsmarketplace-manage) and choose Unpublish on the menu. Your extension will be unpublished immediately from Marketplace and new users won’t be able to install it. Ratings and reviews for your extension will stay intact. To offer your extension again in Marketplace, choose Publish on the menu.
 
-Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](https://aka.ms/vsmarketplace-contact). We will review the request and manually delete the extension.
+Important: If you must remove your extension due to legal or security problems, contact the [Marketplace team](mailto:vsmarketplace@microsoft.com). We will review the request and manually delete the extension.
 
 ## Administration
 

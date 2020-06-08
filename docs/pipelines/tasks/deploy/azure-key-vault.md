@@ -6,7 +6,7 @@ ms.topic: reference
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 12/07/2018
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: '> tfs-2018'
 
 ### Overview
 
-Use this task in a build or release pipeline to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
+Use this task to download secrets such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords
 from an [Azure Key Vault](/rest/api/keyvault/about-keys--secrets-and-certificates) instance.
 The task can be used to fetch the latest values of all or a subset of secrets from the vault, and set them as variables that can be used in subsequent tasks of a pipeline.
 The task is Node-based, and works with agents on Linux, macOS, and Windows.
@@ -71,9 +71,9 @@ When you want to access secrets:
 
 | Parameter | Description |
 | --------- | ----------- |
-| **Azure Subscription** | Required. Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
-| **Key Vault** | Required. Select the name of the Azure Key Vault from which the secrets will be downloaded. |
-| **Secrets filter** | Required. A comma-separated list of secret names to be downloaded. Use the default value `*` to download all the secrets from the vault. |
+|`ConnectedServiceName`<r/>Azure Subscription| (Required) Select the service connection for the Azure subscription containing the Azure Key Vault instance, or create a new connection. [Learn more](../../library/connect-to-azure.md) |
+|`KeyVaultName`<br/>Key Vault| (Required) Select the name of the Azure Key Vault from which the secrets will be downloaded. |
+|`SecretsFilter`<br/>Secrets filter| (Required) A comma-separated list of secret names to be downloaded. <br/>Default value: `*`|
 
 > [!NOTE]
 > Values are retrieved as strings. For example, if there is a secret named **connectionString**,
@@ -112,7 +112,7 @@ or to suggest new features that you would like to see.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]
