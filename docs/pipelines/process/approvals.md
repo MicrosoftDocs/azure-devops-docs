@@ -90,9 +90,20 @@ The checks fails if the stage has not started execution within the specified **T
 
 ## Invoke REST API
 
+Invoke REST API check enables you to integrate with any of your existing services. Preiodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
+
+The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
+
+> [!NOTE]
+> User defined pipeline variables are not accessbile to the check. You can only access the pre-defined variables and variables from the linked variable group in the request body.
 
 ## Query Azure Monitor Alerts
+Azure Monitor offers visualization, query, routing, alerting, autoscale, and automation on data from the Azure infrastructure and each individual Azure resources. Alerts are a standard means to detect issues with the health of infrastructure or application, and take corrective actions. 
+Canary deployments and staged rollouts are common deployment strategies used to lower risk of regressions to critical applications. After deploying to a stage (set of customers), the application is observed for a period of time. Health of the application after deployment is used to decide whether the update should be made to the next stage or not.
 
+Query Azure Monitor Alerts helps you observe Azure Monitor and ensure no alerts are raised for the application after a deployment. The check succeeds if no alert rules are activated at the time of evaluation. [Learn More](../tasks/utility/azure-monitor.md)
+
+The evaluation is repeated after **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
 
 ## Required template
 
