@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 94977D91-5EC7-471D-9D1A-E100390B8FDD
 ms.manager: shashban
 ms.author: shashban
-author: azooinmyluggage
+author: shashban
 ms.date: 03/11/2020
 monikerRange: azure-devops
 ---
@@ -23,28 +23,45 @@ A stage can consist of many jobs, and each job can consume several resources. Be
 Approvals and other checks are not defined in the yaml file. Users modifying the pipeline yaml file cannot modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
 > [!IMPORTANT]
-> Currently, manual approval and evaluate artifact are the only available checks, and they can be configured on environments, service connections and agent pools only.
+> Checks can be configured on environments, service connections and agent pools only.
 
 ## Approvals
 
 You can manually control when a stage should run using approval checks. This is commonly used to control deployments to production environments.
 
-### Approvals for environments
-To define an approval on an environment:
+1. In your Azure DevOps project, go to the resource (eg environment) that needs to be protected. 
 
-1. In your Azure DevOps project, go to the environment that needs to be protected. (Learn more about [creating an environment](environments.md#creation).)
-
-2. Navigate to **Approvals and Checks** for the environment.
+2. Navigate to **Approvals and Checks** for the resource.
 
    > [!div class="mx-imgBorder"]
    > ![approvals-and-checks on environment](media/checks/approvals-and-checks.png)
 
 3. Select **Create**, provide the approvers and an optional message, and select **Create** again to to complete addition of the manual approval check.
 
-You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward. 
-Using the advanced options, you can configure if a subset of approvals is enough or if you need all the specified users to complete the approval. You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
+You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
+
+Using the advanced options, you can configure minimum number of approvers to complete the approval. A group is considered as one approver. 
+
+You can also restrict the user who requested (initiated or created) the run from completing the approval. This option is commonly used for segregation of roles amongst the users.
 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. Users configured as approvers must review and approve or reject the deployment. If you have multiple runs executing simultaneously, you must approve or reject each of them independently. If all required approvals are not complete within the **Timeout** specified for the approval, the stage is marked failed.
+
+## Branch control
+
+Using the branch control check, you can control the release readiness of the deployments to your resources. You can ensure all the resources linked with the pipeline are built from the **allowed** branches and that they branches have protection enabled. In case multiple resources are linked with the pipeline, source for all the resources is verified. If you have linked another pipeline, then the branch of the specific run being deployed is verified for protection.
+
+To define the branch control check:
+
+1. In your Azure DevOps project, go to the resource (eg environment) that needs to be protected. 
+
+2. Navigate to **Approvals and Checks** for the resource.
+
+3. Choose the **Branch control** check and provide a command separated  list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
+
+[image]
+
+At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
+
 
 ## Required template
 
