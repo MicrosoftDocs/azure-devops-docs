@@ -14,10 +14,10 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-A Privacy Policy is a legal requirement for all websites and apps that collect or use personal data from users. In this article, learn how to add your privacy policy URL to your organization in Azure DevOps for public projects. Your privacy policy URL links to the document that describes how you handle both internal and external guest data privacy. 
+A privacy policy is a legal requirement for all websites and apps that collect or use personal data from users. In this article, learn how to add your privacy policy URL to your organization in Azure DevOps for public projects. Your privacy policy URL links to the document that describes how you handle both internal and external guest data privacy. 
 
 > [!NOTE]
-> If you're interested in viewing or deleting personal data, see [Azure Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). If you're looking for general info about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+> If you're interested in viewing or deleting personal data, see [Azure Data Subject Requests for the General Data Protection Regulation](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure)(GDPR). If you're looking for general info about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ You must be a [Project Collection Administrator or an organization Owner](../sec
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
   
-  ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. In the **Overview** tab, add your privacy policy URL, and then select **Save**.
 
@@ -36,5 +36,9 @@ You must be a [Project Collection Administrator or an organization Owner](../sec
 
 A link is added to your organization's privacy document. Your privacy policy URL displays only in **Organization settings** on the **Overview** page in Azure DevOps.
 
-To learn more about how we manage and protect your data, read our [Data Protection Overview](../../organizations/security/data-protection.md).
-
+## Related articles
+- [Data Protection Overview](../../organizations/security/data-protection.md).
+- [Azure DevOps data location](data-location.md)
+- [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
+- [Azure DevOps support](https://azure.microsoft.com/support/devops/)
+- [Developer Services Agreement](/azure/devops/user-guide/services)
