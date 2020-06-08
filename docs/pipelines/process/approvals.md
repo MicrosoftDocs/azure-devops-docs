@@ -24,7 +24,7 @@ If any of the checks terminally fails (for example, if you reject an approval on
 Approvals and other checks are not defined in the yaml file. Users modifying the pipeline yaml file cannot modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
 
 > [!IMPORTANT]
-> Checks can be configured on environments, service connections and agent pools only.
+> Checks can be configured on environments, service connections and agent pools.
 
 ## Approvals
 
