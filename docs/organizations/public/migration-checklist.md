@@ -33,8 +33,8 @@ When you invite someone to become a member of a project, that person gains acces
 > | Process metadata | All picklist values in all projects in the organization  |
 
 Opening up a project to the public can reveal identities in a number of other ways, as well.
-Builds and releases may show the names of people who triggered them, plus identities embedded in Git commits.
-Git commits and work items contain embedded identity information such as first and last name.
+Builds and releases may show the names of people who triggered them, plus identities (including email addresses) embedded in Git commits.
+Git commits and work items may contain embedded identity information such as first name, last name and email address.
 
 ## Cross-project linked objects
 
