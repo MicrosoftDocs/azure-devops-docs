@@ -12,36 +12,31 @@ ms.date: 06/04/2020
 ---
 
 
-# Apply rules to workflow states  
+# Apply rules to workflow states (Inheritance process)   
+
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
+- Support an approval process 
+- Prevent unauthorized users from setting an invalid state 
+- Set field values based on State 
 - Restrict transition from one state to another
-- Transitions can be restricted to specific users or groups 
-- Restrict reopening closed work items 
-
-Restrict transitions based on user or group 
-
-
-Support an approval process 
-
-
-Implementing restricted [State] transitions will enable us to
-- accurately rely on the state
-- control who does what
-- prevent unauthorised users from setting an invalid state (accidentally or otherwise)
-- prevent users from maliciously circumventing process (eg. Setting a work item straight to ‘Approved’)
-- ensure all expected users in a User Story are part of the value chain
-- demonstrate, for audit purposes, that we have a tested, reliable and controlled process in place 
-
+- Restrict or allow State transitions to specific users or groups 
+- Restrict reopening closed work items  
+- Maintain a controlled workflow process to support auditing requirements 
 
 Review this article to support defining workflow rules:
 
 >[!div class="checklist"]      
 > - Understand the three categories of workflow rules  
-> - Define group 1 rules
+> - Set a field value or make a field read-only or required based on State selection 
 > - Restrict state transitions 
-
+> - Restrict or allow State transitions to specific users or groups 
+> - Restrict reopening closed work items  
+> - Automate state transitions of parent work items  
+ 
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 
 
@@ -138,3 +133,24 @@ The second group supports restricting state transitions. This group allows you t
 
 https://github.com/microsoft/azure-boards-automate-state-transitions 
 
+
+
+## Related articles
+
+
+
+<!--- Mention auditing or process changes 
+
+
+Implementing restricted [State] transitions will enable us to
+- accurately rely on the state
+- control who does what
+- prevent unauthorised users from setting an invalid state (accidentally or otherwise)
+- prevent users from maliciously circumventing process (eg. Setting a work item straight to ‘Approved’)
+- ensure all expected users in a User Story are part of the value chain
+- demonstrate, for audit purposes, that we have a tested, reliable and controlled process in place 
+
+
+
+
+--> 
