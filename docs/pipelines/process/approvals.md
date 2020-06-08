@@ -48,7 +48,7 @@ When you run a pipeline, the execution of that run pauses before entering a stag
 
 ## Branch control
 
-Using the branch control check, you can control the release readiness of the deployments to your resources. You can ensure all the resources linked with the pipeline are built from the **allowed** branches and that they branches have protection enabled. In case multiple resources are linked with the pipeline, source for all the resources is verified. If you have linked another pipeline, then the branch of the specific run being deployed is verified for protection.
+Using the branch control check, you can ensure all the resources linked with the pipeline are built from the **allowed** branches and that they branches have protection enabled. This helps in control the release readiness and quality of deployments. In case multiple resources are linked with the pipeline, source for all the resources is verified. If you have linked another pipeline, then the branch of the specific run being deployed is verified for protection.
 
 To define the branch control check:
 
@@ -58,9 +58,28 @@ To define the branch control check:
 
 3. Choose the **Branch control** check and provide a command separated  list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
 
-[image]
+   > [!div class="mx-imgBorder"]
+   > ![branch-control-check](media/checks/branchcontrol.png)
 
 At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
+
+## Business hours
+
+In case you want all deployments to your environment to happen in a specific time window only, then business hours check is the ideal solution. When you run a pipeline, the execution of the stage that uses the resource waits for business hours. If you have multiple runs executing simultaneously, each of them is independently verified. At the start of the business hours, the check is marked successful for all the runs. 
+
+   > [!div class="mx-imgBorder"]
+   > ![branch-control-check](media/checks/businesshours.png)
+
+If execution of the stage has not started at the end of business hours (held up by to some other check), then the business hours approval is automatically withdrawn and a re-evaluation is scheduled for the next day.
+The check fails if execution of the stage does not start within the **Timeout** period specified for the check, and the stage is marked failed.
+
+## Invoke Azure function
+
+
+## Invoke REST API
+
+
+## Query Azure Monitor Alerts
 
 
 ## Required template
