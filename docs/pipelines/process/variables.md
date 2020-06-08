@@ -58,7 +58,7 @@ User-defined variables can consist of letters, numbers, `.`, and `_` characters.
 
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. 
+In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. When you use a runtime expression, it must take up the entire right side of a definition. 
 
 In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at runtime before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
 
@@ -101,7 +101,7 @@ You can use template expression syntax to expand both [template parameters](../p
 ### Runtime expression syntax
 You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expressions are designed to be used in the conditions of jobs, to support conditional execution of jobs, or whole stages.
 
-Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
+Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`. The runtime expression must take up the entire right side of a key-value pair. For example, `key: $[variables.value]` is valid but `key: $[variables.value] foo` is not. 
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
