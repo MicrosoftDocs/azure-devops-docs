@@ -68,13 +68,22 @@ At run time, the check would validate branches for all linked resources in the r
 In case you want all deployments to your environment to happen in a specific time window only, then business hours check is the ideal solution. When you run a pipeline, the execution of the stage that uses the resource waits for business hours. If you have multiple runs executing simultaneously, each of them is independently verified. At the start of the business hours, the check is marked successful for all the runs. 
 
    > [!div class="mx-imgBorder"]
-   > ![branch-control-check](media/checks/businesshours.png)
+   > ![businesshours-check](media/checks/businesshours.png)
 
 If execution of the stage has not started at the end of business hours (held up by to some other check), then the business hours approval is automatically withdrawn and a re-evaluation is scheduled for the next day.
 The check fails if execution of the stage does not start within the **Timeout** period specified for the check, and the stage is marked failed.
 
 ## Invoke Azure function
 
+Azure functions are the serverless computation platform offerred by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
+Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options.
+
+   > [!div class="mx-imgBorder"]
+   > ![invoke-azure-function](media/checks/azurefunction.png)
+
+The checks fails if the stage has not started execution within the specified **Timeout** period.  
+
+[Learn More](../tasks/utility/azure-function.md)
 
 ## Invoke REST API
 
