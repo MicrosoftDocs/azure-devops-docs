@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Unshelve Command
 ms.assetid: 468ab1f4-f565-41d9-a5ad-1481ad29b176
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

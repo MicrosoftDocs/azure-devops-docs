@@ -3,12 +3,13 @@ ms.topic: include
 ms.technology: devops-cicd
 ms.author: rabououn
 author: ramiMSFT
-ms.date: 03/06/2020
+ms.date: 05/29/2020
 ---
 
 The **Connect to feed** dialog box generates an appropriately formatted token that you can place into your .npmrc file with a lifespan of 90 days.
 
->  If you want to create a token that lasts _longer than 90 days_, skip to the second of the following methods.
+> [!TIP]
+> If you want to create a token that lasts longer than 90 days, skip to the [second method](#tokenpast90).
 
 **90-day token:**
 
@@ -24,7 +25,6 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
    > [!div class="mx-imgBorder"] 
    >![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds-azure-devops-newnav.png)
-   > 
 
 ::: moniker-end
 
@@ -39,6 +39,8 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
     ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds.png)
 
 ::: moniker-end
+
+<a id="tokenpast90"></a>
 
 **Create a token that lasts longer than 90 days:**
 
@@ -58,9 +60,13 @@ The **Connect to feed** dialog box generates an appropriately formatted token th
 
 3. In your $home/.npmrc file, add the following lines. Replace `yourorganization` and `yourfeed`, and add your username (can be anything except empty), PAT, and email.
 
-   ```ini
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=ANYTHING-BUT-EMPTY
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=BASE64-ENCODED-PAT-GOES-HERE
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=YOUREMAIL@EXAMPLE.COM
-   //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:always-auth=true
-   ```
+    ```ini
+    ; begin auth token
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:username=[ANY_VALUE_BUT_NOT_EMPTY_STRING]
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/registry/:email=[NPM REQUIRES EMAIL TO BE SET BUT DOES NOT USE THE VALUE]
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:username=[ANY_VALUE_BUT_NOT_EMPTY_STRING]
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+    //pkgs.dev.azure.com/<yourorganization>/_packaging/<yourfeed>/npm/:email=[NPM REQUIRES EMAIL TO BE SET BUT DOES NOT USE THE VALUE]
+    ; end auth token
+    ```

@@ -27,7 +27,7 @@ In this article, learn the answers to the following frequently asked questions (
 
 <a name="general-permissions"></a>
 
-## General permissions FAQs
+## General permissions
 
 ### Q: What happens if I forget my password?
 
@@ -69,7 +69,7 @@ See [Show members of the Project Administrators group](/azure/devops/organizatio
 
 <a name="visual-studio-subscriptions"></a>
 
-## Visual Studio subscriptions FAQs
+## Visual Studio subscriptions
 
 <a name="MSDNSubscriber"></a>
 
@@ -132,7 +132,7 @@ If you don't complete these steps by September 30, 2019, and your users get down
 
 <a name="user-access"></a>
 
-## User access FAQs
+## User access
 
 ### Q: What does "Last Access" mean in the All Users view?
 
@@ -184,7 +184,7 @@ A: A user can lose access for the following reasons (although the user can conti
 
 <a name="change-app-access-policies"></a>
 
-## Change app access policies for your organization FAQs
+## Change app access policies for your organization
 
 <a name="Oauth"></a>
 
@@ -202,7 +202,7 @@ A:  Yes, those apps continue to work.
 
 <a name="leave-organization"></a>
 
-## Leave your organization FAQs
+## Leave your organization
 
 ### Q: How do I remove myself from an organization when the owner isn't available to remove me?
 
@@ -219,7 +219,7 @@ A: To remove yourself from an organization, do the following steps:
 
 <a name="group-based-licensing"></a>
 
-## Group-based licensing FAQs
+## Group-based licensing
 
 ### Q: Will my users lose their access level and project membership if I remove a group rule?
 
@@ -257,7 +257,7 @@ Expected: I get detected as a Visual Studio Test Pro subscriber, because the acc
 
 <a name="add-members-to-projects"></a>
 
-## Add members to projects FAQs
+## Add members to projects
 
 <a name="cant-add-users"></a>
 
@@ -275,7 +275,7 @@ If you need more Visual Studio subscriptions, learn [how to buy subscriptions](.
 
 A: This problem might happen because users must sign in with Microsoft accounts unless your organization controls access with Azure Active Directory (Azure AD). If your organization is connected to Azure AD, users must be directory members to get access.
 
-If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [how to control organization access with Azure AD](access-with-azure-ad.md).
+If you're an Azure AD Administrator, you can add users to the directory. If you're not an Azure AD Administrator, work with the directory administrator to add them. Learn [about controlling organization access with Azure AD](access-with-azure-ad.md).
 
 ### Q: Why did some users lose access to certain features?
 
@@ -301,34 +301,37 @@ First, check to see if you're an Azure AD guest:
 If you're an Azure AD guest, do one of the following steps:
 
 * Have another Azure DevOps admin, who isn't an Azure AD guest, manage the users in Azure DevOps for you. Members of the Project Collection Administrators group inside Azure DevOps can administer users.
-* Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See **Can Azure AD B2B users be added as members instead of guests?**
+* Have the Azure AD admin remove you from the connected Azure AD and readd you. The admin needs to make you an Azure AD member rather than a guest. See [Can Azure AD B2B users be added as members instead of guests?](https://docs.microsoft.com/azure/active-directory/b2b/user-properties#can-azure-ad-b2b-users-be-added-as-members-instead-of-guests)
 * Change the **User Type** of the Azure AD guest by using Azure AD PowerShell. We don't advise using the following process, but it works and allows the user to query Azure AD from Azure DevOps  thereafter.
 
 1. [Download and install Azure AD PowerShell module](/powershell/module/azuread/?view=azureadps-2.0).
+    ```
+    PS Install-Module -Name AzureAD
+    ```
 2. Open PowerShell and run the following cmdlets.
 
     a. Connect to Azure AD:
 
     ```
-    C:\Users\rajr> Connect-AzureAD
+    PS Connect-AzureAD
     ```
 
     b. Find the **objectId** of the user:
 
     ```
-    C:\Users\rajr> Get-AzureADUser
+    PS Get-AzureADuser -SearchString "YourUPN"
     ```
 
     c. Check the **usertype** attribute for this user to see if they're a guest or member:
 
     ```
-    C:\Users\rajr> Get-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66
+    PS Get-AzureADUser -objectId This is the result of the previous command
     ```
 
     d. Change the **usertype** from **member** to **guest**:
 
     ```
-    C:\Users\rajr> Set-AzureADUser -objectId cd7d47bf-1c6e-4839-b765-13edcd164e66 -UserType Member
+    PS Set-AzureADUser -objectId c<replacethe object ID for the result of the command to search> -UserType Member
     ```
 
 <a name="users-delay"></a>

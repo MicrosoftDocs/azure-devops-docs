@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about building your code or deploying your software using build options on Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: reference
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
-ms.date: 12/03/2019
+ms.date: 03/17/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -91,6 +91,10 @@ The **project-scoped identity** name has the following format:
 By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project** is set in **Project Settings** > **Settings**.
 
 ![Limit job authorization scope](media/options/limit-job-authorization-scope.png)
+
+**Limit job authorization scope to current project** can also be set at the organization level in **Organization Settings**. When **Limit job authorization scope to current project** is set in **Organization Settings**, it is grayed out and can't be set in **Project Settings**.
+
+![Limit job authorization scope disabled](media/options/limit-job-authorization-scope-disabled.png)
 
 ### Managing Permissions
 

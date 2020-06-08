@@ -40,7 +40,7 @@ Each view supports the following tasks:
 <li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)">Open query in Excel</a></li>
 <li><a href="/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project" data-raw-source="[Open query in Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)">Open query in Project</a></li>
 <li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](/azure/devops/boards/queries/share-plans)">Email query results list using Outlook</a></li>
-<li><a href="/azure/devops/report/excel/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](/azure/devops/report/create-status-and-trend-excel-reports)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 </tr>

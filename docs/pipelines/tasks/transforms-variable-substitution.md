@@ -400,11 +400,11 @@ the first of the **Users** values, and **NewWelcomeMessage** at the respective p
 Following YAML snippet showcases JSON variable substitution.
 
 ```YAML
-- variables:
-    Data.DebugMode: disabled
-    Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
-    Data.DBAccess.Users.0: Admin-3
-    Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
+variables:
+  Data.DebugMode: disabled
+  Data.DefaultConnection.ConnectionString: 'Data Source=(prodDB)\MSDB;AttachDbFilename=prod.mdf;'
+  Data.DBAccess.Users.0: Admin-3
+  Data.FeatureFlags.Preview.1.NewWelcomeMessage: AllAccounts
 
 - stage: Deploy
   jobs:
@@ -430,7 +430,7 @@ Following YAML snippet showcases JSON variable substitution.
 * A JSON object may contain an array whose values can be referenced by their index.
   For example, to substitute the first value in the **Users** array shown above,
   use the variable name `DBAccess.Users.0`. To update the value in **NewWelcomeMessage**,
-  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`.
+  use the variable name `FeatureFlags.Preview.1.NewWelcomeMessage`. However, the [file transform task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform) has the ability to transform entire arrays in JSON files. You can also use `DBAccess.Users = ["NewUser1","NewUser2","NewUser3"]`.
 
 * Only **String** substitution is supported for JSON variable substitution.
 

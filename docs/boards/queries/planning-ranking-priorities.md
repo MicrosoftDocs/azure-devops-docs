@@ -65,6 +65,10 @@ Features and stories that address Architectural areas<br/>
 </tbody>
 </table>  
 
+
+<a id="fields-table" />
+
+
 ## Fields used to plan and prioritize work  
 
 The following table describes the fields that you can use to plan and prioritize work. Some fields are only valid for a specific process&mdash;[Basic](../get-started/plan-track-work.md), [Agile](../work-items/guidance/agile-process.md), [Scrum](../work-items/guidance/scrum-process.md), or [Capability Maturity Model Integration (CMMI)](../work-items/guidance/cmmi-process.md).

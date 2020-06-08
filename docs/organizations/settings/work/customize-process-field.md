@@ -107,6 +107,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
+<a id="edit-picklist-inherited" />
 
 ### Add a picklist  
 
@@ -123,7 +124,6 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
 	::: moniker range="azure-devops"
-	<a id="edit-picklist-inherited" />
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
@@ -282,6 +282,8 @@ Deleting a field deletes all data associated with that field, including historic
  
 
 ## Related articles  
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Customize the web layout](customize-process-form.md)

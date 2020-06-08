@@ -24,6 +24,7 @@ Deployment jobs provide the following benefits:
    > [!NOTE] 
    > We currently only support the *runOnce*, *rolling*, and the *canary* strategies. 
 
+
 ## Schema
 
 Here's the full syntax to specify a deployment job: 
@@ -47,7 +48,7 @@ jobs:
   strategy: [ deployment strategy ] # see deployment strategy schema
 ```
 
-### Deployment strategies
+## Deployment strategies
 
 When you're deploying application updates, it's important that the technique you use to deliver the update will: 
 
@@ -57,13 +58,15 @@ When you're deploying application updates, it's important that the technique you
 * Test the updated version after routing traffic.
 * In case of failure, run steps to restore to the last known good version. 
 
-We achieve this by using life cycle hooks that can run steps during deployment. Each of the life cycle hooks resolves into an agent job or a [server job](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the life cycle hooks will inherit the `pool` specified by the `deployment` job. 
+We achieve this by using lifecycle hooks that can run steps during deployment. Each of the lifecycle hooks resolves into an agent job or a [server job](phases.md#server-jobs) (or a container or validation job in the future), depending on the `pool` attribute. By default, the lifecycle hooks will inherit the `pool` specified by the `deployment` job. 
 
-#### Descriptions of life cycle hooks
+Deployment jobs use the `$(Pipeline.Workspace)` system variable.
+
+### Descriptions of lifecycle hooks
 
 `preDeploy`: Used to run steps that initialize resources before application deployment starts. 
 
-`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#download).
+`deploy`: Used to run steps that deploy your application. Download artifact task will be auto injected only in the `deploy` hook for deployment jobs. To stop downloading artifacts, use `- download: none` or choose specific artifacts to download by specifying [Download Pipeline Artifact task](../yaml-schema.md#download).
 
 `routeTraffic`: Used to run steps that serve the traffic to the updated version. 
 
@@ -73,7 +76,7 @@ We achieve this by using life cycle hooks that can run steps during deployment. 
 
 ### RunOnce deployment strategy
 
-`runOnce` is the simplest deployment strategy wherein all the life cycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
+`runOnce` is the simplest deployment strategy wherein all the lifecycle hooks, namely `preDeploy` `deploy`, `routeTraffic`, and `postRouteTraffic`, are executed once. Then,  either `on:` `success` or `on:` `failure` is executed.  
 
 ```YAML
 strategy: 
@@ -187,14 +190,14 @@ strategy:
           steps:
           ...
 ```
-Canary deployment strategy supports the `preDeploy` life cycle hook (executed once) and iterates with the `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks. It then exits with either the `success` or `failure` hook.
+Canary deployment strategy supports the `preDeploy` lifecycle hook (executed once) and iterates with the `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks. It then exits with either the `success` or `failure` hook.
 
  
 The following variables are available in this strategy:
 
 `strategy.name`: Name of the strategy. For example, canary.
 <br>`strategy.action`: The action to be performed on the Kubernetes cluster. For example, deploy, promote, or reject.
-<br>`strategy.increment`: The increment value used in the current interaction. This variable is available only in `deploy`, `routeTraffic`, and `postRouteTraffic` life cycle hooks.
+<br>`strategy.increment`: The increment value used in the current interaction. This variable is available only in `deploy`, `routeTraffic`, and `postRouteTraffic` lifecycle hooks.
 
 
 
@@ -339,3 +342,77 @@ jobs:
           steps: 
           - script: echo checks passed, notify... 
 ```
+## Use pipeline decorators to inject steps automatically
+
+[Pipeline decorators](../../extend/develop/add-pipeline-decorator.md) can be used in deployment jobs to auto-inject any custom step (e.g. vulnerability scanner) to every [lifecycle hook](#descriptions-of-lifecycle-hooks) execution of every deployment job. Since pipeline decorators can be applied to all pipelines in an organization, this can be leveraged as part of enforcing safe deployment practices.
+
+In addition, deployment jobs can be run as a [container job](container-phases.md) along with [services side-car](service-containers.md) if defined.
+
+## Support for output variables 
+ 
+Define output variables in a deployment job's [lifecycle hooks](#descriptions-of-lifecycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
+
+While executing deployment strategies, you can access output variables across jobs using the following syntax.
+
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
+- For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
+- For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
+
+```yaml
+# Set an output variable in a lifecycle hook of a deployment job executing canary strategy
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:                  
+    canary:      
+      increments: [10,20]  # creates multiple jobs, one for each increment. Output variable can be referenced with this.
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['deploy_10.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+
+For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
+
+```yaml
+# Set an output variable in a lifecycle hook of a deployment job executing runOnce strategy
+- deployment: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  environment: staging
+  strategy:                  
+    runOnce:
+      deploy:
+        steps:
+        - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+          name: setvarStep
+        - script: echo $(setvarStep.myOutputVar)
+          name: echovar
+
+# Map the variable from the job
+- job: B
+  dependsOn: A
+  pool:
+    vmImage: 'ubuntu-16.04'
+  variables:
+    myVarFromDeploymentJob: $[ dependencies.A.outputs['A.setvarStep.myOutputVar'] ]
+  steps:
+  - script: "echo $(myVarFromDeploymentJob)"
+    name: echovar
+```
+
+Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)

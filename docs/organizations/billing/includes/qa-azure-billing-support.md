@@ -4,5 +4,5 @@
 A: See the following resources:
 
 - [Azure billing and subscriptions](https://azure.microsoft.com/documentation/articles/?tag=billing)
-- [Azure billing and subscriptions FAQ](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/)
+- [Azure billing and subscriptions FAQs](https://azure.microsoft.com/documentation/articles/billing-subscription-faq/)
 - [Azure support](https://azure.microsoft.com/support/options/)

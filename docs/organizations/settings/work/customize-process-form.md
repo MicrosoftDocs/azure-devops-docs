@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customize the web form to an inherited process
 titleSuffix: Azure DevOps Services  
 description: Customize the web form for a work item type and Inheritance process model for a project  
@@ -138,10 +138,12 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 
 > [!NOTE]    
->Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
+> Deleting a page doesn't delete any data. Once data has been defined for a field, it's maintained in the data store and work item history, even if you remove it from the form. You can always choose to re-add the field by choosing **New field** and selecting **Use an existing field**.    
 
 
 ## Related articles  
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add or modify a custom work item type](customize-process-wit.md)
 - [Add and manage fields](customize-process-field.md) 

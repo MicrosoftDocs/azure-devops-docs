@@ -8,6 +8,7 @@ ms.date: 02/13/2020
 ---
 
 Notice that variables are also made available to scripts through environment variables. The syntax for using these environment variables depends on the scripting language.
+
 The name is upper-cased, and the `.` is replaced with the `_`. This is automatically inserted into the process environment. Here are some examples:
 
 - Batch script: `%VARIABLE_NAME%`

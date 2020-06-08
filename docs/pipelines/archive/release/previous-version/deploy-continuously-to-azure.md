@@ -37,7 +37,7 @@ Before you start, you'll need:
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 
-  **[here](https://go.microsoft.com/fwlink/?LinkId=518666)**.
+  **[here](https://devblogs.microsoft.com/devops/deploying-and-testing-web-applications-using-release-management/)**.
 
 ## Create a release definition
 

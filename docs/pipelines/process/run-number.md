@@ -2,7 +2,7 @@
 title: Run (build) number
 ms.custom: seodec18
 description: Customize pipeline run number in Azure Pipelines, Azure DevOps Server, or Team Foundation Server.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: 7C469647-117D-4867-B094-8BC811C0003E
 ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
@@ -23,7 +23,7 @@ You can give runs much more useful names that are meaningful to your team.
 You can use a combination of tokens, variables, and underscore characters.
 
 ```yaml
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 steps:
 - script: echo hello world
 ```
@@ -72,7 +72,7 @@ The following table shows how each token is resolved based on the previous examp
 
 | Token | Example replacement value |
 | ----- | ------------------------- |
-| `$(BuildDefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
+| `$(Build.DefinitionName)` | CIBuild<br /><br />Note: The pipeline name must not contain invalid or whitespace characters.|
 | `$(BuildID)` | 752<br /><br />$(BuildID) is an internal immutable ID that is also referred to as the Run ID. It is unique across the organization.|
 | `$(DayOfMonth)` | 5 |
 | `$(DayOfYear)` | 217 |
@@ -99,7 +99,7 @@ $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.RequestedFor)_$(Build
 
 The first four variables are predefined. `My.Variable` is defined by you on the [variables tab](variables.md).
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

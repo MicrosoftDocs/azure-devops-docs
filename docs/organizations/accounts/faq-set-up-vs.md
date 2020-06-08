@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 In this article, learn the answers to frequently asked questions (FAQs) about setting up Visual Studio with Azure DevOps.
 
-## Visual Studio FAQs
+## Visual Studio
 
 <a name="why-sign-in"></a>
 

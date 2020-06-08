@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/05/2020
+ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy. This policy restricts users from creating an organization in Azure DevOps and is turned off, by default.
+In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
 
 ## Prerequisites
 
@@ -79,4 +79,7 @@ The error message is customized.
 ## Related articles
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [About access with Azure AD](access-with-azure-ad.md)
+* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Resolve orphaned organization](resolve-orphaned-organization.md)
+

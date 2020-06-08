@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.topic: conceptual
-ms.date: 09/01/2017
+ms.date: 04/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -52,14 +52,25 @@ The example below demonstrates how that might look.
     <!-- remove any machine-wide sources with <clear/> -->
     <clear />
     <!-- add an Azure Artifacts feed -->
-    <add key="MyGreatFeed" value="https://fabrikam.pkgs.visualstudio.com/DefaultCollection/_packaging/MyGreatFeed/nuget/v3/index.json" />
+    <add key="FabrikamFiber" value="https://pkgs.dev.azure.com/microsoftLearnModule/_packaging/FabrikamFiber/nuget/v3/index.json" />
     <!-- also get packages from the NuGet Gallery -->
-    <add key="nuget.org" value="https://www.nuget.org/api/v2/" />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
   </packageSources>
-  <activePackageSource>
-    <add key="All" value="(Aggregate source)" />
-  </activePackageSource>
 </configuration>
+```
+
+> [!NOTE]
+> To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
+
+```YAML
+- task: DotNetCoreCLI@2
+  displayName: dotnet restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+    vstsFeed: '<projectName>/<feedName>'
+    includeNuGetOrg: true
 ```
 
 ## Restoring packages from feeds in a different organization
@@ -76,7 +87,7 @@ If your NuGet.config contains feeds in a different Azure DevOps organization (de
 8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
 9. Save the service connection and the build, then queue a new build
 
-## Q & A
+## FAQ
 
 ### Why can't my build restore packages?
 

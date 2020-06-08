@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 2/18/2020
+ms.date: 05/15/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -480,6 +480,8 @@ jobs:
   pool:                # see the following "Pool" schema
     name: string
     demands: string | [ string ]
+  workspace:
+    clean: outputs | resources | all # what to clean up before the job runs
   dependsOn: string
   condition: string
   continueOnError: boolean                # 'true' if future jobs should run even if this job fails; defaults to 'false'
@@ -589,7 +591,20 @@ variables:
 
 You can repeat `name`/`value` pairs and `group`.
 
-You can also include variables from templates.
+Variables can also be set as read only to [enhance security](security/inputs.md#variables). 
+
+```yaml
+variables:
+- name: myReadOnlyVar
+  value: myValue
+  readonly: true
+```
+
+::: moniker range="azure-devops"
+
+You can also include [variables from templates](process/templates.md#variable-reuse).
+
+::: moniker-end
 
 #### [Example](#tab/example/)
 
@@ -649,7 +664,7 @@ variables:
 ## Template references
 
 > [!NOTE]
-> Be sure to see the full [template expression syntax](process/templates.md#template-expressions), which is all forms of `${{ }}`.
+> Be sure to see the full [template expression syntax](process/templates.md), which is all forms of `${{ }}`.
 
 ::: moniker range="> azure-devops-2019"
 
@@ -966,6 +981,10 @@ parameters:
   secret: bool          # whether to treat this value as a secret; defaults to false
 ```
 
+### Types
+
+[!INCLUDE [parameter-data-types](process/includes/parameter-data-types.md)]
+
 ### [YAML Example](#tab/yaml-example)
 
 ```yaml
@@ -991,7 +1010,7 @@ jobs:
   pool: 
     vmImage: ${{ parameters.image }}
   steps:
-    - script: echo The image parameter is ${{ parameters.image }}```
+  - script: echo The image parameter is ${{ parameters.image }}```
 ```
 
 ### [Template Example](#tab/template-example)
@@ -1049,7 +1068,7 @@ resources:
 ### Pipeline resource
 
 If you have an Azure pipeline that produces artifacts, your pipeline can consume the artifacts by using the `pipeline` keyword to define a pipeline resource.
-You can also enable [pipeline-completion triggers](build/triggers.md#pipeline-triggers).
+You can also enable [pipeline-completion triggers](process/pipeline-triggers.md).
 
 # [Schema](#tab/schema)
 
@@ -1165,7 +1184,7 @@ resources:
 
 ::: moniker range="azure-devops-2019"
 
-If your pipeline has [templates in another repository](process/templates.md#use-other-repositories), you must let the system know about that repository.
+If your pipeline has [templates in another repository](process/templates.md#using-other-repositories), you must let the system know about that repository.
 The `repository` keyword lets you specify an external repository.
 
 ::: moniker-end
@@ -1225,6 +1244,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+* [Pipeline trigger](#pipeline-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1234,7 +1254,6 @@ The `git` type refers to Azure Repos Git repos.
 A push trigger specifies which branches cause a continuous integration build to run.
 If you specify no push trigger, pushes to any branch trigger a build.
 Learn more about [triggers](build/triggers.md?tabs=yaml#ci-triggers) and how to specify them.
-Also, be sure to see the note about [wildcards in triggers](build/triggers.md#wildcards).
 
 #### [Schema](#tab/schema/)
 
@@ -1258,7 +1277,7 @@ Full syntax:
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1270,13 +1289,15 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+If you specify an `exclude` clause without an `include` clause for `branches`, `tags`, or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
 ```yaml
 trigger:
-  batch: boolean # batch changes if true (the default); start a new build for every push if false
+  batch: boolean # batch changes if true; start a new build for every push if false (default)
   branches:
     include: [ string ] # branch names which will trigger a build
     exclude: [ string ] # branch names which will not
@@ -1285,12 +1306,14 @@ trigger:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
-::: moniker-end
-
 > [!IMPORTANT]
 > When you specify a trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
+
+
 
 #### [Example](#tab/example/)
 
@@ -1376,10 +1399,20 @@ pr:
     exclude: [ string ] # file paths which will not trigger a build
 ```
 
+::: moniker range="> azure-devops-2019"
+
+If you specify an `exclude` clause without an `include` clause for `branches` or `paths`, it is equivalent to specifying `*` in the `include` clause.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
 > [!IMPORTANT]
 > When you specify a pull request trigger, only branches that you explicitly configure for inclusion trigger a pipeline.
 > Inclusions are processed first, and then exclusions are removed from that list.
 > If you specify an exclusion but no inclusions, nothing triggers.
+
+::: moniker-end
 
 # [Example](#tab/example)
 
@@ -1418,7 +1451,7 @@ pr:
 ::: moniker range="<= azure-devops-2019"
 
 YAML scheduled triggers are unavailable in either this version of Azure DevOps Server or Visual Studio Team Foundation Server.
-You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=classic#scheduled-triggers).
+You can use [scheduled triggers in the classic editor](process/scheduled-triggers.md?tabs=classic).
 
 ::: moniker-end
 
@@ -1426,7 +1459,7 @@ You can use [scheduled triggers in the classic editor](build/triggers.md?tabs=cl
 
 A scheduled trigger specifies a schedule on which branches are built.
 If you specify no scheduled trigger, no scheduled builds occur.
-Learn more about [scheduled triggers](build/triggers.md?tabs=yaml#scheduled-triggers) and how to specify them.
+Learn more about [scheduled triggers](process/scheduled-triggers.md?tabs=yaml) and how to specify them.
 
 # [Schema](#tab/schema)
 
@@ -1437,7 +1470,7 @@ schedules:
   branches:
     include: [ string ] # which branches the schedule applies to
     exclude: [ string ] # which branches to exclude from the schedule
-  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last run. The default is false.
+  always: boolean # whether to always run the pipeline or only if there have been source code changes since the last successful scheduled run. The default is false.
 ```
 
 > [!IMPORTANT]
@@ -1467,7 +1500,7 @@ schedules:
 
 In the preceding example, two schedules are defined.
 
-The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last run.
+The first schedule, **Daily midnight build**, runs a pipeline at midnight every day only if the code has changed since the last successful scheduled run.
 It runs the pipeline for `master` and all `releases/*` branches, except for those branches under `releases/ancient/*`.
 
 The second schedule, **Weekly Sunday build**, runs a pipeline at noon on Sundays for all `releases/*` branches.
@@ -1476,6 +1509,10 @@ It does so regardless of whether the code has changed since the last run.
 ---
 
 ::: moniker-end
+
+### Pipeline trigger
+
+Pipeline completion triggers are configured using a [pipeline resource](#pipeline-resource). For more information, see [Pipeline completion triggers](./process/pipeline-triggers.md).
 
 ## Pool
 
@@ -1561,7 +1598,7 @@ environment:                # create environment and/or record deployments
   name: string              # name of the environment to run this job on.
   resourceName: string      # name of the resource in the environment to record the deployments against
   resourceId: number        # resource identifier
-  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes, appService
+  resourceType: string      # type of the resource you want to target. Supported types - virtualMachine, Kubernetes
   tags: string | [ string ] # tag names to filter the resources in the environment
 strategy:                 # deployment strategy
   runOnce:                # default strategy
@@ -1575,10 +1612,10 @@ If you specify an environment or one of its resources but don't need to specify 
 ```yaml
 environment: environmentName.resourceName
 strategy:                 # deployment strategy
-    runOnce:              # default strategy
-      deploy:
-        steps:
-        - script: echo Hello world
+  runOnce:              # default strategy
+    deploy:
+      steps:
+      - script: echo Hello world
 ```
 
 # [Example](#tab/example)
@@ -1587,19 +1624,19 @@ You can reduce the deployment target's scope to a particular resource within the
 
 ```yaml
 environment: 'smarthotel-dev.bookings'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: $(imagePullSecret)
-            containers: $(containerRegistry)/$(imageRepository):$(tag)
-            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+strategy:
+  runOnce:
+    deploy:
+      steps:
+      - task: KubernetesManifest@0
+        displayName: Deploy to Kubernetes cluster
+        inputs:
+          action: deploy
+          namespace: $(k8sNamespace)
+          manifests: $(System.ArtifactsDirectory)/manifests/*
+          imagePullSecrets: $(imagePullSecret)
+          containers: $(containerRegistry)/$(imageRepository):$(tag)
+          # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 ---
@@ -1749,7 +1786,7 @@ steps:
 
 ```yaml
 steps:
-- pwsh: echo Hello $(name)
+- pwsh: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)
@@ -1789,7 +1826,7 @@ steps:
 
 ```yaml
 steps:
-- powershell: echo Hello $(name)
+- powershell: Write-Host Hello $(name)
   displayName: Say hello
   name: firstStep
   workingDirectory: $(build.sourcesDirectory)

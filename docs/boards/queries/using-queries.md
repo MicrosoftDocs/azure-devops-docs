@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 10/16/2019
 ---
 
-# Create and save managed queries with the query editor
+# Create and save managed queries
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
@@ -384,7 +384,7 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 

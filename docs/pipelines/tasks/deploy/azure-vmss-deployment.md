@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy a virtual machine scale set image.
+Use this task to deploy a virtual machine scale set image.
 
 ::: moniker range="> tfs-2018"
 

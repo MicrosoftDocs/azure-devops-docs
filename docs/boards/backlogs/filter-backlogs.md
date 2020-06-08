@@ -1,4 +1,4 @@
-﻿---
+---
 title: Filter backlogs and queries
 titleSuffix: Azure Boards
 description: Filter a backlog or query based on keywords, tags, or other fields   
@@ -21,6 +21,8 @@ ms.date: 10/16/2019
  
 If you have many items listed in your product or portfolio backlog&mdash;and you want to focus on a subset of them&mdash;you can filter the set. 
 
+The filter function is available from boards, backlogs, sprint backlogs, queries, and taskboards. For information on filtering Kanban boards, see [Filter your Kanban board](../boards/filter-kanban-board.md). 
+
 ::: moniker range=">= azure-devops-2019"
 
 ## Filter based on keywords or fields   
@@ -31,7 +33,6 @@ To show the filter toolbar, choose the ![ ](../../media/icons/filter-icon.png) f
 
 > [!div class="mx-imgBorder"]  
 > ![Filter by keyword](media/filter/filter-s144.png)  
-
 
 Choose one or more values from the multi-select drop-down menu for each field. The values for these fields are populated as follows:
 
@@ -92,10 +93,13 @@ To learn more about filtering using tags, see [Add tags to work items to categor
 ## Characters ignored by keyword filter criteria
 
 ::: moniker range=">= azure-devops-2019"
+
 The filter criteria ignores the following characters: `,` (comma), `.` (period), `/` (forward slash), and `\` (back slash). 
+
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
+::: moniker range="<= tfs-2018"
+
 The filter criteria ignores the following characters when the field value starts with the character: ```{, (, [, !, @, #, $, %, ^, &, *, ~, `, ', "```.  
 ::: moniker-end
 
@@ -103,5 +107,5 @@ The filter criteria ignores the following characters when the field value starts
 
 - [Tags](../queries/add-tags-to-work-items.md) 
 - [Set column options](set-column-options.md)  
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 

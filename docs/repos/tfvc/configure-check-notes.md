@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Configure Check-In Notes
 ms.assetid: c7829273-4d53-412c-99d6-4944780ebc74
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

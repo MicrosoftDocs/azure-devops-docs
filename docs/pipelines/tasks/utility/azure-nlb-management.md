@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool.
+Use this task to connect or disconnect an Azure virtual machine's network interface to a load balancer's address pool.
 
 ::: moniker range="> tfs-2018"
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customize work item type for inherited process
 titleSuffix: Azure DevOps Services
 description: Customize a process by adding or modifying a work item type for a project 
@@ -117,6 +117,8 @@ To work with WITs programmatically, see [Work Item Types REST API](/rest/api/azu
 
 
 ## Related articles  
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
 - [Add and manage fields](customize-process-field.md)  
 - [Customize the layout](customize-process-form.md)

@@ -39,7 +39,7 @@ If you want a way to easily insert a number of stages into release pipelines
 (perhaps to keep the definitions consistent) and to enable these stages to all be updated
 in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
 
-## Q & A
+## FAQ
 
 ### Can I export templates or share them with other subscriptions, enterprises, or projects?
 

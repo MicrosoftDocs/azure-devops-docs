@@ -157,7 +157,7 @@ This scheme is used when an endpoint type doesn't require to take any input. For
 {
 "id": "endpoint-auth-scheme-none",
 "description": "i18n:Creates an endpoint authentication scheme with no authentication.",
-"type": "ms.vss-endpoint.service-endpoint-auth-scheme",
+"type": "ms.vss-endpoint.service-endpoint-auth-scheme-none",
 "targets": [
     "ms.vss-endpoint.endpoint-auth-schemes"
 ],

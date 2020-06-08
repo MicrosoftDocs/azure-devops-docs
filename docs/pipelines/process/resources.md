@@ -2,7 +2,7 @@
 title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 03/11/2020
 monikerRange: azure-devops
@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
 * CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
-* code repositories (GitHub, Azure Repos, Git)
+* code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
 * package feeds (Azure Artifact feed, Artifactory package etc.)  
 
@@ -151,7 +151,7 @@ Or to avoid downloading any of the artifacts at all:
 Artifacts from the `pipeline` resource are downloaded to `$(PIPELINE.WORKSPACE)/<pipeline-identifier>/<artifact-identifier>` folder.
 
 ### Pipeline resource variables
-In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. 
+In each run, the metadata for a pipeline resource is available to all jobs in the form of below predefined variables. The `<Alias>` is the identifier that you gave for your pipeline resource. Pipeline resources variables are only available at runtime. 
 
 
 ## [Schema](#tab/schema)
@@ -178,17 +178,16 @@ resources:
     trigger: true 
 
 steps:
-  - script: |
-        echo $(resources.pipeline.myresourcevars.pipelineID)
-        echo $(resources.pipeline.myresourcevars.runName)
-        echo $(resources.pipeline.myresourcevars.runID)
-        echo $(resources.pipeline.myresourcevars.runURI)
-        echo $(resources.pipeline.myresourcevars.sourceBranch)
-        echo $(resources.pipeline.myresourcevars.sourceCommit)
-        echo $(resources.pipeline.myresourcevars.sourceProvider)
-        echo $(resources.pipeline.myresourcevars.requestedFor)
-        echo $(resources.pipeline.myresourcevars.requestedForID)
-
+- script: |
+    echo $(resources.pipeline.myresourcevars.pipelineID)
+    echo $(resources.pipeline.myresourcevars.runName)
+    echo $(resources.pipeline.myresourcevars.runID)
+    echo $(resources.pipeline.myresourcevars.runURI)
+    echo $(resources.pipeline.myresourcevars.sourceBranch)
+    echo $(resources.pipeline.myresourcevars.sourceCommit)
+    echo $(resources.pipeline.myresourcevars.sourceProvider)
+    echo $(resources.pipeline.myresourcevars.requestedFor)
+    echo $(resources.pipeline.myresourcevars.requestedForID)
 ```
 ---
 
@@ -286,7 +285,7 @@ resources:
 
 ### Type
 
-Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
+Pipelines support the following values for the repository type: `git`, `github`, `githubenterprise`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: git`, the `name` value refers to another repository in the same project.
@@ -296,7 +295,11 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub repos require a [GitHub service connection](../library/service-endpoints.md) for authorization.
+  GitHub repos require a [GitHub service connection](../library/service-endpoints.md#sep-github) for authorization.
+
+- If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
+  An example is `name: Microsoft/vscode`.
+  GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#sep-githubent) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.
@@ -415,26 +418,26 @@ In this example, there is an [Azure Resource Manager service connection](../libr
 
 ```yaml
 resources:
- containers:
-     - container: mycontainer # name of the container (Alias) 
-       type: ACR # type of registry
-       azureSubscription: arm-connection # name of the ARM service connection
-       resourceGroup: rg-storage-eastus # Azure resource group with the container
-       registry: mycontainerregistry # Azure container registry name
-       repository: hello-world # name of the of container image collection
-       trigger:
-          tags:
-           - latest # tag for the container image to use
+  containers:
+  - container: mycontainer # name of the container (Alias) 
+    type: ACR # type of registry
+    azureSubscription: arm-connection # name of the ARM service connection
+    resourceGroup: rg-storage-eastus # Azure resource group with the container
+    registry: mycontainerregistry # Azure container registry name
+    repository: hello-world # name of the of container image collection
+    trigger:
+      tags:
+      - latest # tag for the container image to use
 
 steps:
-  - script: echo |
-      echo $(resources.container.mycontainer.type)
-      echo $(resources.container.mycontainer.registry)
-      echo $(resources.container.mycontainer.repository)
-      echo $(resources.container.mycontainer.tag)
-      echo $(resources.container.mycontainer.digest)
-      echo $(resources.container.mycontainer.URI)
-      echo $(resources.container.mycontainer.location)
+- script: echo |
+    echo $(resources.container.mycontainer.type)
+    echo $(resources.container.mycontainer.registry)
+    echo $(resources.container.mycontainer.repository)
+    echo $(resources.container.mycontainer.tag)
+    echo $(resources.container.mycontainer.digest)
+    echo $(resources.container.mycontainer.URI)
+    echo $(resources.container.mycontainer.location)
 
 ```
 ---

@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to copy files from a source folder to a target folder using match patterns.
+Use this task to copy files from a source folder to a target folder using match patterns.
 
 ::: moniker range="<= tfs-2018"
 
@@ -89,9 +89,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
-     ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.exe
+      ConsoleApplication1\ConsoleApplication1\bin\**\*.dll
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -103,8 +103,8 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\ConsoleApplication1\bin\**\?(*.exe|*.dll)
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -116,9 +116,9 @@ steps:
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     Contents: |
-     ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
-     !ConsoleApplication1\**\ClassLibrary*\**
-     ConsoleApplication1\readme.txt
+      ConsoleApplication1\**\bin\**\!(*.pdb|*.config)
+      !ConsoleApplication1\**\ClassLibrary*\**
+      ConsoleApplication1\readme.txt
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -199,8 +199,8 @@ steps:
   inputs:
     SourceFolder: '$(Build.SourcesDirectory)'
     Contents: |
-     **/*
-     !.git/**/*
+      **/*
+      !.git/**/*
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 ```
 
@@ -241,7 +241,7 @@ YAML builds are not yet available on TFS.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
