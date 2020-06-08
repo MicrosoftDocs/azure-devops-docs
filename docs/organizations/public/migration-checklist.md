@@ -8,7 +8,7 @@ ms.reviewer:
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 06/06/2020
+ms.date: 06/08/2020
 monikerRange: 'azure-devops'
 ---
 
