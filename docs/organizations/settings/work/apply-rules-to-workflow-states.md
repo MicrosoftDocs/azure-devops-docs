@@ -6,7 +6,7 @@ ms.custom: inherited-process
 ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
 ms.date: 06/04/2020
 ---
@@ -15,7 +15,6 @@ ms.date: 06/04/2020
 # Apply rules to workflow states  
 
 After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
-
 
 - Restrict transition from one state to another
 - Transitions can be restricted to specific users or groups 
@@ -39,7 +38,7 @@ Implementing restricted [State] transitions will enable us to
 Review this article to support defining workflow rules:
 
 >[!div class="checklist"]      
-> - Understand the two categories of workflow rules  
+> - Understand the three categories of workflow rules  
 > - Define group 1 rules
 > - Restrict state transitions 
 
@@ -69,7 +68,6 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::
 :::row:::  
    :::column span="2":::
-      **Set field value or make read-only/required based on State**
       > [!div class="mx-imgBorder"]  
       > ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
    :::column-end:::
