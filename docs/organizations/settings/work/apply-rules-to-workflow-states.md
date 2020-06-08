@@ -40,6 +40,8 @@ Review this article to support defining workflow rules:
 
 ## Workflow rules 
 
+::: moniker range="azure-devops"
+
 The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
 The second group supports restricting state transitions. This group allows you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
@@ -103,17 +105,49 @@ The second group supports restricting state transitions. This group allows you t
 :::row-end:::
 --- 
 
+::: moniker-end
 
-[!INCLUDE [temp](../includes/process-prerequisites.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+Workflow conditions and actions you can set are illustrated in the following images. You can apply standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or make a field read-only or required. For this set of rules you can specify one or two conditions and several actions. 
+
+---
+:::row:::
+   :::column span="2":::
+      **Condition**
+   :::column-end:::
+   :::column span="2":::
+      **Supported Actions**
+   :::column-end:::
+:::row-end:::  
+---  
+:::row:::  
+   :::column span="4":::
+      **Set field value or make read-only/required based on State**
+   :::column-end:::
+:::row-end:::
+:::row:::  
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Conditions, work item is created](media/customize-workflow/conditions-work-item-created.png)
+   :::column-end:::
+   :::column span="2":::
+      > [!div class="mx-imgBorder"]  
+      > ![Actions, work item is created](media/customize-workflow/actions-work-item-created.png)
+   :::column-end:::
+:::row-end:::
+---  
+
+::: moniker-end
+
 
 [!INCLUDE [temp](../includes/automatic-update-project.md)]
 
 
 ## Define a rule  
 
-Prior to defining a rule based on workflow states, make sure you have defined the workflow states that you want. For details, see [Customize a workflow](customize-process-workflow.md). Also, if your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-fields.md).  
+Prior to defining a rule based on workflow states, make sure you have defined the workflow states that you want. For details, see [Customize a workflow](customize-process-workflow.md). Also, if your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-field.md).  
 
 For the basics of defining rules, see [Add a custom rule](custom-rules.md). You must meet the prerequisites defined in that article.  
 
@@ -123,7 +157,7 @@ For the basics of defining rules, see [Add a custom rule](custom-rules.md). You 
 With the first grouping of rules, you can specify one or two conditions and up to 10 actions.  
 
 
-## Restrict state transition
+## Restrict state transitions 
 
 When specifying condition, `A work item state moved from... to ...`, you can specify only that condition. You can specify up to 10 actions.   
 
@@ -148,13 +182,13 @@ And, rules to support the following backward or reverse transitions:
 - *Closed* can only move to *Proposed* (Additional work found)
 - *Cut* can only move to *Proposed*. 
 
-To implement the above restrictions, the following rules are defined: 
+To implement the above restrictions, a custom *Approved By* identity field is added, an *Authorized Approvers* security group is defined, and the following ten rules are defined: 
 
 
 ---
 :::row:::
    :::column span="":::
-      **Rule**
+      **Rule name**
    :::column-end:::
    :::column span="":::
       **Condition**
@@ -166,120 +200,120 @@ To implement the above restrictions, the following rules are defined:
 ---  
 :::row:::
    :::column span="":::
-      *Proposed state 
+      **Proposed state** 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Proposed`
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Research`
-      &nbsp;And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to Research`  
+      And `Restrict the state transition to Cut`
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Research state 
+      **Research state** 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Research`
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Design`
-      &nbsp;And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to Design`  
+      And `Restrict the state transition to Cut`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Design state 
+      **Design state** 
    :::column-end:::
    :::column span="":::
       When `A work item state moved from Design`
    :::column-end:::
    :::column span="2":::
       Then `Restrict the state transition to Approved`
-      &nbsp;And `Restrict the state transition to Cut`
+      And `Restrict the state transition to Cut`
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Approved state 
+      **Approved state** 
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Approved`
+      When `A work item state moved from Approved`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Active`
-      &nbsp;And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to Active`  
+      And `Restrict the state transition to Cut`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Approved state required fields
+      **Approved state required fields**
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Approved to Active`
+      When `A work item state moved from Approved to Active`  
    :::column-end:::
    :::column span="2":::
-      Then `Make required Acceptance Criteria`
-      &nbsp;And `Make required Approved By`
+      Then `Make required Acceptance Criteria`  
+      And `Make required Approved By`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Approved By field restriction"
+      **Authorized Approvers**
    :::column-end:::
    :::column span="":::
-      When `Current user is not a member of Approvers Group`
+      When `Current user is not a member of Authorized Approvers`  
    :::column-end:::
    :::column span="2":::
-      Then `Make read-only Approved By`
+      Then `Make read-only Approved By`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Active state forward
+      **Active state**
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Active`
+      When `A work item state moved from Active`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to In Review`
-      &nbsp;And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to In Review`  
+      And `Restrict the state transition to Cut`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *In Review state forward
+      **In Review state** 
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from In Review`
+      When `A work item state moved from In Review`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Closed`
-      &nbsp;And `Restrict the state transition to Cut`
-      &nbsp;And `Restrict the state transition to Active`
+      Then `Restrict the state transition to Closed`  
+      And `Restrict the state transition to Cut`  
+      And `Restrict the state transition to Active`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Closed state 
+      **Closed state** 
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Closed`
+      When `A work item state moved from Closed`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Proposed`
+      Then `Restrict the state transition to Proposed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
    :::column span="":::
-      *Cut state 
+      **Cut state** 
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Cut`
+      When `A work item state moved from Cut`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Proposed`
+      Then `Restrict the state transition to Proposed`  
    :::column-end:::
 :::row-end::: 
 ---
