@@ -183,10 +183,12 @@ To reference a variable group, you can use macro syntax or a runtime expression.
 ```yaml
 variables:
 - group: my-variable-group
+- name: my-passed-variable
+  value: $[variables.myhello] # uses runtime expression
 
 steps:
 - script: echo $(myhello) # uses macro syntax
-- script: echo $[variables.myhello] # uses runtime expression
+- script: echo $(my-passed-variable) 
 ```
 
 You can reference multiple variable groups in the same pipeline. 
