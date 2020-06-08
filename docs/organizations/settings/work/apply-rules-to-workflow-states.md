@@ -38,9 +38,7 @@ Review this article to support defining workflow rules:
  
 [!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
-
-
-## Workflow rule groupings
+## Workflow rules 
 
 The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
@@ -106,40 +104,206 @@ The second group supports restricting state transitions. This group allows you t
 --- 
 
 
-## Set field value or make field read-only or required
+[!INCLUDE [temp](../includes/process-prerequisites.md)]
 
-&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;  
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
+
+[!INCLUDE [temp](../includes/automatic-update-project.md)]
+
+
+## Define a rule  
+
+Prior to defining a rule based on workflow states, make sure you have defined the workflow states that you want. For details, see [Customize a workflow](customize-process-workflow.md). Also, if your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-fields.md).  
+
+For the basics of defining rules, see [Add a custom rule](custom-rules.md). You must meet the prerequisites defined in that article.  
+
+
+## Set field value or make field read-only or required  
+
+With the first grouping of rules, you can specify one or two conditions and up to 10 actions.  
+
 
 ## Restrict state transition
 
-&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;  
+When specifying condition, `A work item state moved from... to ...`, you can specify only that condition. You can specify up to 10 actions.   
 
+In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
+
+> [!div class="mx-imgBorder"]  
+> ![User Story, workflow states](media/customize-workflow/user-story-states-renamed.png)
+
+Without any restrictions, users can move from one State to any other State, both forward and backward within the sequence. To support a more controlled workflow, the business group decided to institute rules that would support the following forward state transitions;  
+
+- *Proposed* can only move to *Research* and *Cut* 
+- *Research* can only move to *Design* and *Cut* 
+- *Design* can only move to *Approved* and *Cut* 
+- *Approved* can only move to *Active* and *Cut* ; can only move to Active after *Approved By* field has been filled in by an authorized approver and *Acceptance Criteria* is filled in
+- *Active* can only move to *In Review*  
+- *In Review* can only move to *Closed* or *Cut*. 
+
+And, rules to support the following backward or reverse transitions: 
+
+- *Approved* can only move to *Design*, and *Approved By* field is cleared
+- *In Review* can only move to *Active* (Additional work found)
+- *Closed* can only move to *Proposed* (Additional work found)
+- *Cut* can only move to *Proposed*. 
+
+To implement the above restrictions, the following rules are defined: 
+
+
+---
+:::row:::
+   :::column span="":::
+      **Rule**
+   :::column-end:::
+   :::column span="":::
+      **Condition**
+   :::column-end:::
+   :::column span="2":::
+      **Actions**
+   :::column-end:::
+:::row-end:::  
+---  
+:::row:::
+   :::column span="":::
+      *Proposed state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Proposed`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Research`
+      &nbsp;And `Restrict the state transition to Cut`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Research state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Research`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Design`
+      &nbsp;And `Restrict the state transition to Cut`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Design state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Design`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Approved`
+      &nbsp;And `Restrict the state transition to Cut`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Approved state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Approved`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Active`
+      &nbsp;And `Restrict the state transition to Cut`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Approved state required fields
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Approved to Active`
+   :::column-end:::
+   :::column span="2":::
+      Then `Make required Acceptance Criteria`
+      &nbsp;And `Make required Approved By`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Approved By field restriction"
+   :::column-end:::
+   :::column span="":::
+      When `Current user is not a member of Approvers Group`
+   :::column-end:::
+   :::column span="2":::
+      Then `Make read-only Approved By`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Active state forward
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Active`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to In Review`
+      &nbsp;And `Restrict the state transition to Cut`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *In Review state forward
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from In Review`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Closed`
+      &nbsp;And `Restrict the state transition to Cut`
+      &nbsp;And `Restrict the state transition to Active`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Closed state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Closed`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Proposed`
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      *Cut state 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state moved from Cut`
+   :::column-end:::
+   :::column span="2":::
+      Then `Restrict the state transition to Proposed`
+   :::column-end:::
+:::row-end::: 
+---
 
 ## Restrict state transition based on user or group membership 
 
-&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;  
-
-
-
+When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
 
 ## Automate state transitions of parent work items 
 
-&nbsp;&nbsp;&nbsp;  
-&nbsp;&nbsp;&nbsp;  
-
-
-https://github.com/microsoft/azure-boards-automate-state-transitions 
-
+To automate State transitions of parent work items based on the State assignments made to their child work items, you can add a web hook and use the code and configuration provided in the [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project. 
 
 
 ## Related articles
 
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Customize a workflow](customize-process-workflow.md) 
+- [Add a custom rule](custom-rules.md) 
+  
 
 
-<!--- Mention auditing or process changes 
+
+<!---
 
 
 Implementing restricted [State] transitions will enable us to

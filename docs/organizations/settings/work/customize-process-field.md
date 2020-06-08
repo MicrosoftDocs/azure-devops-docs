@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 12/12/2019
 ---
 
-# Add and manage fields for an inherited process   
+# Add and manage fields (Inheritance process)   
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 

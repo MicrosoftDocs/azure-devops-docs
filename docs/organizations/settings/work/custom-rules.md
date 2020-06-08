@@ -70,6 +70,8 @@ As an example, you can make a field required based on the value assigned to the 
 
 ::: moniker-end
 
+If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-workflow-states.md).
+
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
