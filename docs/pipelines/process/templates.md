@@ -134,6 +134,30 @@ extends:
           script: echo "Script Test"
 ```
 
+## Extend from a template with resources
+
+You can also use `extends` to extend a template in your azure pipeline that contains resources. 
+
+```yaml
+# File: azure-pipelines.yml
+trigger:
+- none
+
+extends:
+  template: resource-template.yml
+```
+
+```yaml
+# File: resource-template.yml
+resources:
+  pipelines:
+  - pipeline: my-pipeline 
+    source: sourcePipeline
+
+steps:
+ - script: echo "Testing resource template"
+```
+
 ## Insert a template
 
 You can copy content from one YAML and reuse it in a different YAMLs. This saves you from having to manually include the same logic in multiple places. The `include-npm-steps.yml` file template contains steps that are reused in `azure-pipelines.yml`.  
