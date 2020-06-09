@@ -20,10 +20,9 @@ After you add or modify your workflow states for a work item type, you may want 
 
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
-- Set field values based on State 
+- Make a field required or read-only or other value based on State changes
 - Restrict transition from one state to another
-- Restrict or allow State transitions to specific users or groups 
-- Restrict reopening closed work items  
+- Restrict or allow State transitions to specific users or groups  
 - Maintain a controlled workflow process to support auditing requirements 
 
 Review this article to understand how to define rules that apply when you change a workflow state.  
@@ -35,8 +34,9 @@ Review this article to understand how to define rules that apply when you change
 > - Workflow state and rule limits and best practices 
 > - Set a field value or make a field read-only or required based on State selection 
 > - Restrict state transitions 
-> - Restrict or allow State transitions to specific users or groups 
 > - Automate state transitions of parent work items  
+
+<!--- Restrict or allow State transitions to specific users or groups --> 
 ::: moniker-end
 
 
@@ -219,7 +219,7 @@ Worflow rules are applied when adding or modifying work items through any of the
 Prior to defining a rule based on workflow states, make sure you first define the following elements: 
 - The workflow states that you want as described in [Customize a workflow](customize-process-workflow.md)
 - If your rule requires specification of a custom field, add that field to the work item type as described in [Add and manage fields](customize-process-field.md)
-- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add a group and change its permissions at the organization or collection-level group](../../security/project-collection-level-permissions.md#add-a-group-and-change-its-permissions-at-the-organization-or-collection-level-group). 
+- If your rule requires specification of a security group to grant or restrict changes based on user or group membership, define that security group as described in [Add a group and change its permissions at the organization or collection-level group](../../security/set-project-collection-level-permissions.md#collection-level). 
 
 For the basics of defining rules, see [Add a custom rule](custom-rules.md). You must meet the prerequisites defined in that article.  
 
@@ -239,17 +239,16 @@ In this example, development teams want to ensure that no User Story is worked o
 
 #### Rule requirements 
 
-- Require the *Approved By* field be filled in when the State moves from New to Active 
-- Only allow users who belong to the Authorized Approvers group to fill in the *Approved By* field
-- Clear the *Approved By* field when the State moves to *Cut*  
-- Require the *Acceptance Criteria* is filled in when the State moves to *Active* 
- 
-- When the work item is created or set to New, Approved By is empty 
-- Make Approved By read only for all members who don't belong to the *Team Leads Group*
-- When the work item state changes to Active or Resolved make the Approved By field required 
+To ensure approval prior to active work, the following rules must be defined:  
 
+- Require the *Approved By* field be filled in when the State moves from *New* to *Active*  
+- Restrict users who don't belong to the *Team Leaders Group* to fill in the *Approved By* field  
+- Clear the *Approved By* field when the State moves to *New* or *Removed*   
 
 #### Rule definitions  
+
+The rule requirements translate to the following four rule definitions. 
+
 &nbsp;&nbsp;&nbsp;
 
 ---
@@ -267,13 +266,35 @@ In this example, development teams want to ensure that no User Story is worked o
 ---  
 :::row:::
    :::column span="":::
-      **Approved By cleared** 
+      **Approved By cleared when New** 
    :::column-end:::
    :::column span="":::
       When `A work item state changes to New`
    :::column-end:::
    :::column span="2":::
       Then `Clear the value of Approved By`  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      **Approved By cleared when Removed** 
+   :::column-end:::
+   :::column span="":::
+      When `A work item state changes to Removed`
+   :::column-end:::
+   :::column span="2":::
+      Then `Clear the value of Approved By`  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      **Approved By Read-only** 
+   :::column-end:::
+   :::column span="":::
+      When `Current user is not member of group Team Leaders Group`
+   :::column-end:::
+   :::column span="2":::
+      Then `Make read-only Approved By`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -294,14 +315,18 @@ In this example, development teams want to ensure that no User Story is worked o
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
 
-### Example of restricting state transitions 
+### Example of restricting state transitions and Approved state 
 
 In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![User Story, workflow states](media/customize-workflow/user-story-states-renamed.png)
 
-Without any restrictions, users can move from one State to any other State, both forward and backward within the sequence. To support a more controlled workflow, the business group decided to institute rules that would support the following forward and reverse state transitions on the User Story work item type.   
+Without any restrictions, users can move from one State to any other State, both forward and backward within the sequence. 
+
+#### Rule requirements 
+
+To support a more controlled workflow, the business group decided to institute rules that would support the following forward and reverse state transitions on the User Story work item type.   
 
 - *Proposed* can only move to *Research* and *Cut* 
 - *Research* can only move to *Design* and *Cut* 
@@ -322,6 +347,8 @@ Additionally, the business group wants to apply rules for required fields:
 - Clear the *Approved By* field when the State moves to *Cut*  
 - Require the *Acceptance Criteria* is filled in when the State moves to *Active* 
  
+#### Rule definitions 
+
 To implement the above restrictions, the process administrator adds a custom *Approved By* identity field, an *Authorized Approvers* security group, and the following eleven rules. 
 
 &nbsp;&nbsp;&nbsp;
@@ -496,17 +523,21 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 
 Once the rules are defined for the process and the project updated with the process, refresh your browser and check the operations through the work item form and from the Kanban browser.  
 
-For the rules defined in the previous table, you should see the following State drop-down menus. 
+For the rules defined in the previous table, you should see the following State drop-down menus. Open the Kanban board and check the ability to move from one State to another. 
 
-|:**Proposed**:|:**Research**:|:**Design**:|:**Approved**:|:**Active**:|:**In Review**:|:**Closed**:|:**Cut**:|   
-|----------|----------|--------|--------|--------|--------|--------|--------|   
-|![Proposed menu](media/customize-workflow/proposed-state-transition-menu.png) |![Research menu](media/customize-workflow/research-state-transition-menu.png) |![Design menu](media/customize-workflow/design-state-transition-menu.png) |![Approved menu](media/customize-workflow/approved-state-transition-menu.png) |![Active menu](media/customize-workflow/active-state-transition-menu.png) |![In Review menu](media/customize-workflow/in-review-state-transition-menu.png) |![Closed menu](media/customize-workflow/closed-state-transition-menu.png)
-|![Cut menu](media/customize-workflow/cut-state-transition-menu.png) |
+|**Proposed**|**Research**|**Design**|**Approved**|    
+|:----------:|:----------:|:--------:|:--------:|    
+|![Proposed menu](media/customize-workflow/proposed-state-transition-menu.png) |![Research menu](media/customize-workflow/research-state-transition-menu.png) |![Design menu](media/customize-workflow/design-state-transition-menu.png) |![Approved menu](media/customize-workflow/approved-state-transition-menu.png) |
+|**Active**|**In Review**|**Closed**|**Cut**|   
+|![Active menu](media/customize-workflow/active-state-transition-menu.png) |![In Review menu](media/customize-workflow/in-review-state-transition-menu.png) |![Closed menu](media/customize-workflow/closed-state-transition-menu.png)|![Cut menu](media/customize-workflow/cut-state-transition-menu.png) |
 
+<!--- 
 
 ## Restrict state transition based on user or group membership 
 
 When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
+
+--> 
 
 ## Automate state transitions of parent work items 
 
