@@ -741,8 +741,10 @@
       href: tasks/tool/vstest-platform-tool-installer.md
 - name: Troubleshooting
   items:
-  - name: Troubleshoot build & release
-    href: troubleshooting.md
+  - name: Troubleshoot pipeline runs
+    href: troubleshooting/troubleshooting.md
+  - name: Review logs
+    href: troubleshooting/review-logs.md
   - name: Debug deployment issues
     href: release/variables.md#debug-mode
   - name: Troubleshoot Azure connections
