@@ -816,6 +816,8 @@ When you run a pipeline on a self-hosted agent, by default, none of the sub-dire
 
 ## Artifact download
 
+This example YAML file publishes the artifact `WebSite` and then downloads the artifact to `$(Pipeline.Workspace)`. The Deploy job only runs if the Build job is successful. 
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
