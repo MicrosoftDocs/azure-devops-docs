@@ -18,12 +18,26 @@ ms.date: 06/04/2020
 
 After you add or modify your workflow states for a work item type, you may want to define one or more rules that are applied depending on the workflow state change. Adding rules to workflow states supports the following scenarios: 
 
+
+::: moniker range="azure-devops"
+
 - Support an approval process 
 - Prevent unauthorized users from setting an invalid state 
 - Make a field required or read-only or other value based on State changes
 - Restrict transition from one state to another
 - Restrict or allow State transitions to specific users or groups  
 - Maintain a controlled workflow process to support auditing requirements 
+- Automate closure of parent work items
+::: moniker-end
+
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
+- Support an approval process 
+- Make a field required or read-only or other value based on State changes
+- Automate closure of parent work items
+
+::: moniker-end
 
 Review this article to understand how to define rules that apply when you change a workflow state.  
 
@@ -165,41 +179,13 @@ Workflow conditions and actions you can set are illustrated in the following ima
 
 The following table summarizes the workflow state and rule limits for the Inheritance process. 
   
----  
-:::row:::  
-   :::column span="2":::
-      **Object**
-   :::column-end:::
-   :::column span="1":::
-      **Inheritance limit**
-   :::column-end:::
-:::row-end:::
----  
-:::row:::  
-   :::column span="2":::
-      Work item types defined for a process
-   :::column-end:::
-   :::column span="1":::
-      64
-   :::column-end:::
-:::row-end:::
-:::row:::  
-   :::column span="2":::
-      Workflow states defined for a work item type
-   :::column-end:::
-   :::column span="1":::
-      32
-   :::column-end:::
-:::row-end:::
-:::row:::  
-   :::column span="2":::
-      Rules defined for a work item type
-   :::column-end:::
-   :::column span="1":::
-      1024
-   :::column-end:::
-:::row-end:::
----  
+
+|Object|Inheritance limit|  
+|------|-----------------|  
+| Work item types defined for a process | 64 |
+| Workflow states defined for a work item type | 32 |
+| Rules defined for a work item type | 1024 |
+ 
 
 When defining workflow states and rules, we recommend that you consider the following guidance in order to minimize performance issues.  
 - Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.  
@@ -226,7 +212,7 @@ For the basics of defining rules, see [Add a custom rule](custom-rules.md). You 
 
 ## Set field value or make field read-only or required  
 
-With the first grouping of rules, you can specify one or two conditions and up to 10 actions.  
+With the first grouping of rules, you can specify one or two conditions and up to 10 actions per rule.  
 
 ### Example of ensuring team lead approval prior to active work 
 
@@ -242,7 +228,7 @@ In this example, development teams want to ensure that no User Story is worked o
 To ensure approval prior to active work, the following rules must be defined:  
 
 - Require the *Approved By* field be filled in when the State moves from *New* to *Active*  
-- Restrict users who don't belong to the *Team Leaders Group* to fill in the *Approved By* field  
+- Restrict users who don't belong to the *Team Leads Group* to fill in the *Approved By* field  
 - Clear the *Approved By* field when the State moves to *New* or *Removed*   
 
 #### Rule definitions  
@@ -291,7 +277,7 @@ The rule requirements translate to the following four rule definitions.
       **Approved By Read-only** 
    :::column-end:::
    :::column span="":::
-      When `Current user is not member of group Team Leaders Group`
+      When `Current user is not member of group Team Leads Group`
    :::column-end:::
    :::column span="2":::
       Then `Make read-only Approved By`  
@@ -315,7 +301,7 @@ The rule requirements translate to the following four rule definitions.
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
 
-### Example of restricting state transitions and Approved state 
+### Example of restricting state transitions and an approval process
 
 In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 
 
