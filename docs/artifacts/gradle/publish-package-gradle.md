@@ -91,7 +91,9 @@ vstsMavenAccessToken=<PASTE_YOUR_TOKEN_HERE>
 
 ## Configure build.gradle 
 
-Create a file called **build.gradle** in the root of your cloned (local) repo. Open it with a UTF-8-capable text editor and add the following code:
+1. Create a text file and name it **build.gradle** in the root of your cloned repo. 
+
+1. Open it with a text editor and add the following snippet:
 
 ```groovy
 apply plugin: 'java' 
@@ -114,7 +116,7 @@ publishing {
             credentials { 
                 username "Azure DevOps Services" 
                 //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-                password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+                password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
             } 
         } 
     } 
@@ -127,31 +129,32 @@ repositories {
         credentials { 
             username "Azure DevOps Services" 
             //The Azure DevOps Services build system will use the "SYSTEM_ACCESSTOKEN" to authenticate to Azure DevOps Services feeds 
-            password System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") != null ? System.getenv("Azure DevOps Services_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
+            password System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") != null ? System.getenv("AZURE_ARTIFACTS_ENV_ACCESS_TOKEN") : vstsMavenAccessToken 
         } 
     } 
 } 
 ```
+
 In the above example, you are publishing artifacts and downloading dependent artifacts from the same organization. You can configure
 publishing and downloading to use separate organizations, if you prefer.
 
 > [!NOTE]
 > You can use the Azure Artifacts connect to feed dialog box to copy the `maven` repository section to use in your build.gradle file.
 
-Replace the following fields with your own values:
+1. Replace the following fields with your own values:
 
-- `groupId`: A group ID you associate with your artifact. Give it a team or organization name so consumers can identify the origin easier.
-- `artifactId`: An artifact ID used when publishing your artifact. Again, give it a meaningful name that aptly describes the intent of the APIs in the artifact.
-- `version`: The version of the artifact you're publishing. Update this when you've made changes.
-- `artifact`: The path from the root of the repo to the JAR file that is the artifact to publish. For example, *./target/myJavaClasses.jar*.
+- `groupId`: A group ID you associate with your package. Give it a team or organization name so consumers can identify the origin easier.
+- `artifactId`: your artifact ID number that will be used when publishing your package. Again, give it a meaningful name that specifies the package type and version for example.
+- `version`: Your package version. This number should be incremented for future iterations.
+- `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
 
 
-## Publish your Gradle artifact
+## Publish your Gradle package
 
-From a command prompt, run:
+Run the following command in an elevated command prompt:
 
-```cli
+```CLI
 gradle publish
 ```
 
-Your new artifact name is `groupId:artifactId`.
+Your new package will be named: `groupId:artifactId` and should show up in your Artifacts feed.
