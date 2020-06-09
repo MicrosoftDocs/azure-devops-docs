@@ -22,17 +22,20 @@ You can define environments in **Environments** under **Pipelines**.
 4.    Choose Windows or Linux for the **Operating System**.
 5.  Copy the  registration script. 
 6.    Run the copied script from an administrator PowerShell command prompt on each of the target VMs that you want to register with this environment.
-    > [!NOTE]
-    > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
-    > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
+
+   > [!NOTE]
+   > - The Personal Access Token (PAT) of the logged in user is included in the script.  The PAT expires on the day you generate the script.
+   > - If your VM already has any agent other running on it, provide a unique name for **agent** to register with the environment.
 7.    Once your VM is registered, it will start appearing as an environment resource under the **Resources** tab of the environment.
-    > [!div class="mx-imgBorder"]
-    > ![VMcreation](media/vm-creation.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![VMcreation](media/vm-creation.png)
 
 8.    To add more VMs, copy the script again by clicking **Add resource** and selecting **Virtual Machines**. This script remains the same for all the VMs added to the environment. 
 9.    Each machine interacts with Azure Pipelines to coordinate deployment of your app.
-    > [!div class="mx-imgBorder"]
-    > ![VMresource_view](media/vm-resourceview.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![VMresource_view](media/vm-resourceview.png)
 
 ## Adding and managing tags
 
