@@ -189,6 +189,7 @@ Additionally, the business group wants to apply rules for required fields:
  
 To implement the above restrictions, the process administrator adds a custom *Approved By* identity field, an *Authorized Approvers* security group, and the following eleven rules. 
 
+&nbsp;&nbsp;&nbsp;
 
 ---
 :::row:::
@@ -265,29 +266,6 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 :::row-end:::  
 :::row:::
    :::column span="":::
-      **Approved state required fields**
-   :::column-end:::
-   :::column span="":::
-      When `A work item changes from Approved to Active`  
-   :::column-end:::
-   :::column span="2":::
-      Then `Make required Acceptance Criteria`  
-      And `Make required Approved By`  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
-      **Authorized Approvers**
-   :::column-end:::
-   :::column span="":::
-      When `Current user is not a member of Authorized Approvers`  
-   :::column-end:::
-   :::column span="2":::
-      Then `Make read-only Approved By`  
-   :::column-end:::
-:::row-end:::  
-:::row:::
-   :::column span="":::
       **Active state**
    :::column-end:::
    :::column span="":::
@@ -345,6 +323,29 @@ To implement the above restrictions, the process administrator adds a custom *Ap
 :::row-end::: 
 :::row:::
    :::column span="":::
+      **Approved state required fields**
+   :::column-end:::
+   :::column span="":::
+      When `A work item changes from Approved to Active`  
+   :::column-end:::
+   :::column span="2":::
+      Then `Make required Acceptance Criteria`  
+      And `Make required Approved By`  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
+      **Authorized Approvers**
+   :::column-end:::
+   :::column span="":::
+      When `Current user is not a member of Authorized Approvers`  
+   :::column-end:::
+   :::column span="2":::
+      Then `Make read-only Approved By`  
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="":::
       **Clear Approved By field**
    :::column-end:::
    :::column span="":::
@@ -379,6 +380,8 @@ To automate State transitions of parent work items based on the State assignment
 
 
 <!---
+
+Best Practices. 32 workflow states, 1024 max number of rules per WIT. However, the more rules, ..... 
 
 
 Implementing restricted [State] transitions will enable us to
