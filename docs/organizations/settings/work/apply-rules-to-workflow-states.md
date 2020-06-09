@@ -166,23 +166,28 @@ In keeping with the terminology used by a business group, the following workflow
 > [!div class="mx-imgBorder"]  
 > ![User Story, workflow states](media/customize-workflow/user-story-states-renamed.png)
 
-Without any restrictions, users can move from one State to any other State, both forward and backward within the sequence. To support a more controlled workflow, the business group decided to institute rules that would support the following forward state transitions;  
+Without any restrictions, users can move from one State to any other State, both forward and backward within the sequence. To support a more controlled workflow, the business group decided to institute rules that would support the following forward and reverse state transitions.   
 
 - *Proposed* can only move to *Research* and *Cut* 
 - *Research* can only move to *Design* and *Cut* 
-- *Design* can only move to *Approved* and *Cut* 
-- *Approved* can only move to *Active* and *Cut* ; can only move to Active after *Approved By* field has been filled in by an authorized approver and *Acceptance Criteria* is filled in
+- *Design* can only move to *Research*, *Approved*, and *Cut* 
+- *Approved* can only move to *Design*, *Active*, and *Cut*
 - *Active* can only move to *In Review*  
-- *In Review* can only move to *Closed* or *Cut*. 
-
-And, rules to support the following backward or reverse transitions: 
-
-- *Approved* can only move to *Design*, and *Approved By* field is cleared
-- *In Review* can only move to *Active* (Additional work found)
-- *Closed* can only move to *Proposed* (Additional work found)
+- *In Review* can only move to *Active* (Additional work found), *Closed* or *Cut* 
+- *Closed* can move to *Research*, *Design*, *Active*, *In Review* (Allows for cases where user closed the work item in error)
 - *Cut* can only move to *Proposed*. 
 
-To implement the above restrictions, a custom *Approved By* identity field is added, an *Authorized Approvers* security group is defined, and the following ten rules are defined: 
+> [!NOTE]   
+> When restricting state transitions, consider those cases where a user moves a state in error. You want users to be able to recover gracefully. 
+
+Additionally, the business group wants to apply rules for required fields:  
+
+- Require the *Approved By* field be filled in when the State moves from Approved to Active 
+- Only allow users who belong to the Authorized Approvers group to fill in the *Approved By* field
+- Clear the *Approved By* field when the State moves to *Cut*  
+- Require the *Acceptance Criteria* is filled in when the State moves to *Active* 
+ 
+To implement the above restrictions, the process administrator adds a custom *Approved By* identity field, an *Authorized Approvers* security group, and the following eleven rules. 
 
 
 ---
@@ -206,8 +211,11 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Proposed`
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Research`  
-      And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to Design`  
+      And `Restrict the state transition to Approved`  
+      And `Restrict the state transition to Active`  
+      And `Restrict the state transition to In Review`  
+      And `Restrict the state transition to Closed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -218,8 +226,11 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Research`
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Design`  
-      And `Restrict the state transition to Cut`  
+      Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Approved`  
+      And `Restrict the state transition to Active`  
+      And `Restrict the state transition to In Review`  
+      And `Restrict the state transition to Closed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -230,8 +241,11 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Design`
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Approved`
-      And `Restrict the state transition to Cut`
+      Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Research`  
+      And `Restrict the state transition to Active`  
+      And `Restrict the state transition to In Review`  
+      And `Restrict the state transition to Closed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -242,8 +256,11 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Approved`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Active`  
-      And `Restrict the state transition to Cut`  
+      Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Research`  
+      And `Restrict the state transition to Design`  
+      And `Restrict the state transition to In Review`  
+      And `Restrict the state transition to Closed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -251,7 +268,7 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       **Approved state required fields**
    :::column-end:::
    :::column span="":::
-      When `A work item state moved from Approved to Active`  
+      When `A work item changes from Approved to Active`  
    :::column-end:::
    :::column span="2":::
       Then `Make required Acceptance Criteria`  
@@ -277,8 +294,11 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Active`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to In Review`  
-      And `Restrict the state transition to Cut`  
+      Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Research`  
+      And `Restrict the state transition to Design`  
+      And `Restrict the state transition to Approved`  
+      And `Restrict the state transition to Closed`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -289,9 +309,10 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from In Review`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Closed`  
-      And `Restrict the state transition to Cut`  
-      And `Restrict the state transition to Active`  
+      Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Research`  
+      And `Restrict the state transition to Design`  
+      And `Restrict the state transition to Approved`  
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -303,6 +324,7 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
    :::column-end:::
    :::column span="2":::
       Then `Restrict the state transition to Proposed`  
+      And `Restrict the state transition to Cut`
    :::column-end:::
 :::row-end:::  
 :::row:::
@@ -313,10 +335,29 @@ To implement the above restrictions, a custom *Approved By* identity field is ad
       When `A work item state moved from Cut`  
    :::column-end:::
    :::column span="2":::
-      Then `Restrict the state transition to Proposed`  
+      Then `Restrict the state transition to Research`  
+      And `Restrict the state transition to Design`
+      And `Restrict the state transition to Approved` 
+      And `Restrict the state transition to Active`
+      And `Restrict the state transition to In Review`
+      And `Restrict the state transition to Closed`
    :::column-end:::
 :::row-end::: 
+:::row:::
+   :::column span="":::
+      **Clear Approved By field**
+   :::column-end:::
+   :::column span="":::
+      When `A work item state changes to Cut`  
+   :::column-end:::
+   :::column span="2":::
+      Then `Clear the value of Approved By`  
+   :::column-end:::
+:::row-end:::  
 ---
+
+
+
 
 ## Restrict state transition based on user or group membership 
 
@@ -350,5 +391,6 @@ Implementing restricted [State] transitions will enable us to
 
 
 
+VS1640113: It is not allowed to have multiple rules with the same action type using the same conditions. The rules ['Transition restriction', 'Active state'] have the action type 'ProhibitedValues' using the same conditions. Change the conditions of the rule to fix this error.
 
 --> 
