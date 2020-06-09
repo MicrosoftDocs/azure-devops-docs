@@ -149,7 +149,7 @@ publishing and downloading to use separate organizations, if you prefer.
 - `artifact`: Your `.jar` file path. Example: *./target/myJavaClasses.jar*.
 
 
-## Publish your Gradle package
+## Publish your Maven package with Gradle
 
 Run the following command in an elevated command prompt:
 
