@@ -136,7 +136,7 @@ extends:
 
 ## Extend from a template with resources
 
-You can also use `extends` to extend a template in your azure pipeline that contains resources. 
+You can also use `extends` to extend from a template in your azure pipeline that contains resources. 
 
 ```yaml
 # File: azure-pipelines.yml
