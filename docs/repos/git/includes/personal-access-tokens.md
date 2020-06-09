@@ -81,7 +81,7 @@ ms.topic: include
 
 4. Name your token. Select a lifespan for your token.
 
-   If you're using Azure DevOps Services, and you have more than one organization,
+   If you have more than one organization,
    you can also select the organization where you want to use the token.
 
    ![Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token](~/repos/git/media/setup-personal-access-token.png)
@@ -100,7 +100,7 @@ ms.topic: include
 
 * * *
 
- Once your PAT is created, you can use it pretty much anywhere your user credentials are required for authentication. 
+ Once your PAT is created, you can use it anywhere your user credentials are required for authentication in Azure DevOps. 
 
 ### Notifications
 
@@ -130,8 +130,8 @@ If you believe that a PAT exists in error, we suggest that you [revoke the PAT](
 Your token is your identity and represents you when it's used. Treat and use a PAT like your password. 
 1. Git interactions require a username, which can be anything except the empty string.
 The PAT is used as the password.
-Additionally, you have to Base64-encode the username & PAT in order to use it with HTTP basic authentication.
-On Linux or macOS, in Bash, you can type:
+Additionally, you have to Base64-encode the username and PAT to use it with HTTP basic authentication.
+On Linux or macOS, in Bash, you can enter:
  
 ```bash
 MY_PAT=yourPAT		# replace "yourPAT" with your actual PAT
@@ -247,7 +247,7 @@ For more examples of how to use PATs, see [Git credential managers](~/repos/git/
 
 ## Modify a PAT
 
-You can regenerate or extend a PAT, as well as modify its [scope](~/integrate/get-started/authentication/oauth.md#scopes).
+You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-started/authentication/oauth.md#scopes).
 
 ::: moniker range="azure-devops"
 
@@ -264,7 +264,7 @@ You can regenerate or extend a PAT, as well as modify its [scope](~/integrate/ge
 
     :::image type="content" source="~/repos/git/media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
 
-3. Edit the token name, organization it applies to, token expiration date, or the scope of access associated with the token, and then select **Save**.
+3. Edit the token name, organization it applies to, token expiration, or the scope of access that's associated with the token, and then select **Save**.
 
    ![Modify and Save PAT](~/repos/git/media/modify-pat.png)
 
@@ -278,7 +278,7 @@ You can regenerate or extend a PAT, as well as modify its [scope](~/integrate/ge
 
    :::image type="content" source="~/repos/git/media/select-edit-pat-current-view.png" alt-text="Select Edit to modify PAT":::
 
-3. Edit the token name, organization it applies to, token expiration date, or the scope of access associated with the token, and then select **Save**.
+3. Edit the token name, organization it applies to, token expiration, or the scope of access that's associated with the token, and then select **Save**.
 
    ![Modify and Save PAT](~/repos/git/media/modify-pat.png)
 
