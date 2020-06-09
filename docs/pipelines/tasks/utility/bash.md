@@ -6,7 +6,7 @@ ms.assetid: 6C731C3C-3C68-459A-A5C9-BDE6E6595B5B
 ms.custom: seodec18
 ms.author: macoope
 author: vtbassmatt
-ms.date: 04/29/2020
+ms.date: 06/09/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -40,7 +40,7 @@ The Bash task also has a shortcut syntax in YAML:
 |--- |--- |
 |`targetType`<br/>Type|(Optional) Target script type: File Path or Inline <br/>Default value: `filePath`|
 |`filePath`<br/>Script Path|(Required) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).|
-|`arguments`<br/>Arguments|(Optional) Arguments passed to the Bash script. Arguments passed to the shell script. Either ordinal parameters or named parameters|
+|`arguments`<br/>Arguments|(Optional) Arguments passed to the Bash script.|
 |`script`<br/>Script|(Required, if Type is inline) Contents of the script <br/>Default value: `"# Write your commands here\n\necho 'Hello world'\n"`|
 |`workingDirectory`<br/>Working Directory| (Optional) Specify the working directory in which you want to run the command. If you leave it empty, the working directory is [$(Build.SourcesDirectory)](../../build/variables.md)|
 |`failOnStderr`<br/>Fail on standard error|(Optional) If this is true, this task will fail if any errors are written to stderr. <br/>Default value: `true`|
