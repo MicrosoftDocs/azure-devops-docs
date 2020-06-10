@@ -1,11 +1,11 @@
 
-﻿---
- title: Create a service hook Microsoft Teams
-titleSuffix: Azure DevOps Server
-description: Use Microsoft Teams with your Azure DevOps organization
+---
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
+title: Create a service hook Microsoft Teams
+titleSuffix: Azure DevOps Server
+description: Use Microsoft Teams with your Azure DevOps organization
 ms.date: 03/16/2020
 ---
 
