@@ -70,18 +70,14 @@ Configuring integration between Team Foundation Server and Teams is a two-step p
 Activity from your TFS project will start appearing in your Teams channel.
 
 
-### Configuring Azure DevOps Services Tabs in Microsoft Teams
+## Configuring Azure DevOps Services Tabs in Microsoft Teams
 
-1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Visual Studio icon and follow the steps to connect to your organization.
+1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
-   <img alt="Add a new tab to Teams channel" src="./media/teams/Teams Kanban board 3.png" style="width:80%;" />
+   <img alt="Add a new tab to Teams channel" src="./media/teams/Teams ADO as website.png" style="width:80%;" />
 
-2. Once you've authenticated and selected your organization, you see a screen where you can select a Kanban board or Dashboard.
-   <br/>
-   <img alt="Teams tab configuration" src="./media/teams/Teams Kanban board 4.png" style="width:80%;" />
-
-   <br>
-   <img alt="Select Kanban board or Dashboard tab configuration" src="./media/teams/Teams Kanban board 6.png" style="width:80%;" />
+2. Once you've authenticated you will see your Kanban board or Dashboard.
+   
 
 ## Frequently asked questions (FAQs)
 
