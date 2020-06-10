@@ -55,14 +55,28 @@ In this file, add contribution for our new pipeline decorator.
 }
 ```
 
+### Contribution options
+
 Let's take a look at the properties and what they're used for:
 
 | Property | Description |
 | ------------- |:-------------|
 | `id` | Contribution identifier. Must be unique among contributions in this extension. |
 | `type` | Specifies that this contribution is a pipeline decorator. Must be the string `ms.azure-pipelines.pipeline-decorator`. |
-| `targets` | Decorators can run before your job, after, or both. For executing the decorator before or after jobs in build or yaml pipelines, the targets are `ms.azure-pipelines-agent-job.pre-job-tasks` and `ms.azure-pipelines-agent-job.post-job-tasks`. `ms.azure-release-pipelines-agent-job.pre-job-tasks` and `ms.azure-release-pipelines-agent-job.post-job-tasks` targets inject the decorators in jobs in release pipelines. In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs. |
+| `targets` | Decorators can run before your job, after, or both. See the table below for available options. |
 | `properties` | The only property required is a `template`. The template is a YAML file included in your extension, which defines the steps for your pipeline decorator. It's a relative path from the root of your extension folder. |
+
+### Targets
+
+| Target | Description |
+| ------ |:----------- |
+| `ms.azure-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic build or YAML pipeline. Due to differences in how source code checkout happens, this target will run before checkout in a YAML pipeline but after checkout in a classic build pipeline. |
+| `ms.azure-pipelines-agent-job.post-checkout-tasks` | Run after the last `checkout` task in a classic build or YAML pipeline. |
+| `ms.azure-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic build or YAML pipeline. |
+| `ms.azure-release-pipelines-agent-job.pre-job-tasks` | Run before other tasks in a classic RM pipeline. |
+| `ms.azure-release-pipelines-agent-job.post-job-tasks` | Run after other tasks in a classic RM pipeline. |
+
+In this example, we use `ms.azure-pipelines-agent-job.post-job-tasks` only because we want to run at the end of all build jobs.
 
 This extension contributes a pipeline decorator.
 Next, we'll create a template YAML file to define the decorator's behavior.
