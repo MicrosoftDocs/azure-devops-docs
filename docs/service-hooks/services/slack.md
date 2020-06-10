@@ -1,4 +1,5 @@
-﻿---
+# Create a service hook for Azure DevOps Server (TFS) with Slack
+---
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook with Slack
@@ -6,9 +7,7 @@ description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '>= tfs-2017'
 ms.date: 03/15/2019
----
 
-# Create a service hook for Azure DevOps Server (TFS) with Slack
 
 >[!NOTE]
 >If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Slack.
@@ -30,22 +29,20 @@ like completed builds, code changes, pull requests, releases, work items changes
 1. Refer to the [documentation](https://api.slack.com/messaging/webhooks) in Slack to understand the process of using webhooks to push information to a Slack channel.
 
 2. Create a new [Slack app](https://api.slack.com/apps/new)
-
-![Create slack app](./media/slack/create-slack-app.png)
+	![Create slack app](./media/slack/create-slack-app.png)
 
 3. Activate incoming webhook and add a new webhook to the desired workspace
+	![incoming webhook](./media/slack/incoming-webhook.png)
 
-![incoming webhook](./media/slack/incoming-webhook.png)
-
-![toggle webhook](./media/slack/toggle-webhook.png)
+	![toggle webhook](./media/slack/toggle-webhook.png)
 
 4. Select the channel for which webhook must be created
 
-![create-webhook](./media/slack/create-webhook.png)
+	![create-webhook](./media/slack/create-webhook.png)
 
 5. Copy the webhook URL and navigate to Azure DevOps portal
 
-![copy webhook](./media/slack/copy-webhook.png)
+	![copy webhook](./media/slack/copy-webhook.png)
 
 
 ## Create a service hook subscription in your organization
@@ -71,7 +68,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-![notifications](./media/slack/notifications.png)
+	![notifications](./media/slack/notifications.png)
 
 ::: moniker-end
 
@@ -96,7 +93,7 @@ like completed builds, code changes, pull requests, releases, work items changes
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
-![notifications](./media/slack/notifications.png)
+	![notifications](./media/slack/notifications.png)
 
 ::: moniker-end
 
