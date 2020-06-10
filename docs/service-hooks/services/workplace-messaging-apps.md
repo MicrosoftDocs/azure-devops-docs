@@ -4,8 +4,8 @@ ms.topic: conceptual
 title: Workplace Messaging Apps with Azure DevOps 
 description: Integrate workplace messaging apps like Microsoft Teams and Slack with your Azure DevOps organization
 ms.manager: gopinach
-ms.author: karrg
-author: karrg
+ms.author: divais
+author: divais
 ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
@@ -43,11 +43,11 @@ For projects hosted on Azure DevOps Server, below integrations can be used to ge
 
 ### Microsoft Teams
 
-* [Azure DevOps Server](https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/teams?view=azure-devops)
+* [Azure DevOps Server](https://docs.microsoft.com/azure/devops/service-hooks/services/teams?view=azure-devops)
 
 
 ### Slack
 
-* [Custom app for Slack](https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/slack?view=azure-devops)
+* [Custom app for Slack](https://docs.microsoft.com/azure/devops/service-hooks/services/slack?view=azure-devops)
 
 
