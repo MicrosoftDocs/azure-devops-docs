@@ -1,10 +1,10 @@
 ---
 title: Use npm scopes for private packages
-description: Use npm scopes for private packages in Azure DevOps Services
+description: Use npm scopes for private packages in Azure DevOps Services. This article will guide you through setting up your Azure Artifacts feed with a scope as well as a 90 day or longer access token.
 ms.assetid: c88868bd-8101-48f3-b76d-17c858181fda
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 04/30/2020
+ms.date: 06/11/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,13 +22,18 @@ They allow the user to separate public and private packages by prefixing their p
 > In order to use scopes you must be using npm version 2 or greater. Run `npm install npm@latest -g` on the command line to upgrade to the latest version.  
 
 ## Set up
+Scoped packages allow you to group similar npm packages together. This provides us with several advantages including:
+
+- We don't have to worry about name collisions.
+- No need to change the npm registry in order to install or publish your packages.
+- Each npm organization/user has their own scope, and only the owner or the scope members can publish packages to their scope.
+
 To use an Azure Artifacts feed with a scope, follow the instructions below, but append your scope to both lines in the project `.npmrc` file.
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
- Then, replace:
-- `registry=<your feed URL>` with
-- `@fabrikam:registry=<your feed URL>`
+Then, replace:<p></p>
+`registry=<your feed URL>` with `@fabrikam:registry=<your feed URL>`
 
 > [!NOTE]
 > Make sure you add the scope and package names to your `package.json` file: `{ "name": "@fabrikam/package-name" }`.
