@@ -30,6 +30,13 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 ## Product planning 
 
 
+::: moniker range=">= tfs-2017 <= azure-devops"
+
+> [!NOTE]   
+> **Disclaimer!** Several extensions, such as the Feature Timeline and Epic Roadmap extension and the Dependency Tracker extension, are not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, visit their corresponding extension page. 
+
+::: moniker-end
+
 ::: moniker range="azure-devops"
 
 - [Delivery Plans](../plans/review-team-plans.md)
