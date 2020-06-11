@@ -18,6 +18,9 @@ ms.date: 02/14/2020
 
 The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
 
+> [!NOTE]   
+> **Disclaimer!** The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page. 
+
 Use the Feature Timeline to support the following tasks: 
 
 - Support roadmap planning  
