@@ -13004,6 +13004,11 @@
       "source_path": "docs/organizations/accounts/delete-users-from-services-azure-ad.md",
       "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/manage-conditional-access.md",
+      "redirect_url": "/azure/devops/organizations/accounts/change-application-access-policies",
+      "redirect_document_id": false
     }
   ]
 }
