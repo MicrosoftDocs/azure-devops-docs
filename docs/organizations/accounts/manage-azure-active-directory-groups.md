@@ -88,4 +88,5 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Related articles
 
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-- [Manage conditional access](manage-conditional-access.md)
+- [Manage conditional access](change-application-access-policies.md)
+
