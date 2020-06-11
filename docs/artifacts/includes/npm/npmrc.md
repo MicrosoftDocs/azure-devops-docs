@@ -76,7 +76,7 @@ always-auth=true
 
 3. Select **Generate npm credentials**. Copy the credentials to add them to your user .npmrc file manually:
 
-    ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/connect-to-feed-npm-creds.png)
+    ![Connect to feed from Azure Artifacts Linux/Mac credentials](../../media/tfs2018-connect-to-npm-feed.png)
 
 ::: moniker-end
 
