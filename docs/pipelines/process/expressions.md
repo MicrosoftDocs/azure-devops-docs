@@ -633,7 +633,7 @@ This would return:
 Values in an expression may be converted from one type to another as the expression gets evaluated. 
 When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings. 
 
-For example, in this YAML, the values 'true' and 'false' are converted  to '1' and '0' when the expression is evaluated. 
+For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated. 
 The function `lt()` returns `True` when the left parameter is less than the right parameter. 
 
 ```yaml
@@ -646,8 +646,10 @@ steps:
 - script: echo $
 ```
 
+
 In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings. 
 The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string. 
+
 
 ```yaml
 variables:
