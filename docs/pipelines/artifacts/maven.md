@@ -30,8 +30,8 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
 
 1. Select **Maven**.
 
-> [!div class="mx-imgBorder"]
->![Connect to Maven feed](media/maven/connect-to-maven-feed.png)
+    > [!div class="mx-imgBorder"]
+    >![Connect to Maven feed](media/maven/connect-to-maven-feed.png)
 
 1. Click on "Generate Maven Credentials"
 
@@ -68,8 +68,36 @@ Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 
 1. Select **Maven**.
 
-> [!div class="mx-imgBorder"]
->![Connect to Maven feed azure devops](media/maven/connect-to-maven-feed-devops2019.png)
+    > [!div class="mx-imgBorder"]
+    >![Connect to Maven feed azure devops](media/maven/connect-to-maven-feed-devops2019.png)
 
+1. Set up your project by following these steps:
+
+    1. Add the repo to **both** your pom.xml's `<repositories>` and `<distributionManagement>` sections. Replace the `[ORGANIZATION_NAME]` placeholder with your own organization.
+    
+        ```xml
+        <repository>
+          <id>[ORGANIZATION_NAME]</id>
+          <url>https://pkgs.dev.azure.com/[ORGANIZATION_NAME]/_packaging/[ORGANIZATION_NAME]/maven/v1</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+        ```
+
+    1. Add or edit the settings.xml file in ${user.home}/.m2. Replace the `[ORGANIZATION_NAME]` placeholder with your own organization.
+    
+        ```xml
+        <server>
+          <id>[ORGANIZATION_NAME]</id>
+          <username>[ORGANIZATION_NAME]</username>
+          <password>[PERSONAL_ACCESS_TOKEN]</password>
+        </server>
+        ```
+
+    1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes and paste it into the `<password>` tag.
 
 ::: moniker-end
