@@ -187,5 +187,3 @@ This tutorial created an Azure DevOps project and some resources in Azure. If yo
 
 > [!div class="nextstepaction"]
 > [Provision agents for deployment groups](howto-provision-deployment-group-agents.md)
-
-
