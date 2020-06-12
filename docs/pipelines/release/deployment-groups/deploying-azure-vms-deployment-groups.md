@@ -45,7 +45,7 @@ The following resources are provisioned on the Azure using an ARM template:
 - SQL server VM (DB server)
 - Azure Network Load Balancer
 
-1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**.
+1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial.
 
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
@@ -70,13 +70,15 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Navigate to the Azure DevOps project created by the demo generator.
 
-1. From **Pipelines**, select **Deployment groups**.
+1. From under **Pipelines**, navigate to **Deployment groups**.
+
+    ![Navigating to Deployment groups under Pipelines](media/deploying-azure-vms-deployment-groups/pipelines-deployment-groups.png)
 
 1. Select **Add a deployment group**.
 
 1. Enter the **Deployment group name** of **Release** and select **Create**. A registration script is generated. You can register the target servers using the script provided if working on your own. However, in this tutorial, the target servers are automatically registered as part of the release pipeline. The release definition uses stages to deploy the application to the target servers. A stage is a logical grouping of the tasks that defines the runtime target on which the tasks will execute. Each deployment group stage executes tasks on the machines defined in the deployment group.
 
-1. Navigate to **Pipelines | Releases**. Select the release pipeline and select **Edit**.
+1. From under **Pipelines**, navigate to **Releases**. Select the release pipeline named **Deployment Groups** and select **Edit**.
 
 1. Select the **Tasks** tab to view the deployment tasks in pipeline. The tasks are organized as three stages called **Agent phase**, **Deployment group phase**, and **IIS Deployment phase**.
 
@@ -110,11 +112,11 @@ Since there is no configuration change required for the build pipeline, the buil
 
     ![Configuring the Azure Pipelines deployment group](media/deploying-azure-vms-deployment-groups/configure-pipeline-deployment-group.png)
 
-1. Select the **Deployment group phase** stage. This stage executes tasks on the machines defined in the deployment group. This stage is linked to the **db** tag. Choose the **Deployment Group** from the drop down.
+1. Select the **Deployment group phase** stage. This stage executes tasks on the machines defined in the deployment group. This stage is linked to the **SQL-Svr-DB** tag. Choose the **Deployment Group** from the drop down.
 
     ![Configuring the deployment group phase](media/deploying-azure-vms-deployment-groups/deployment-group-phase.png)
 
-1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to **web** tag. Choose the **Deployment Group** from the drop down.
+1. Select the **IIS Deployment phase** stage. This stage deploys the application to the web servers using the specified tasks. This stage is linked to the **WebSrv** tag. Choose the **Deployment Group** from the drop down.
 
 1. Select the **Disconnect Azure Network Load Balancer** task. As the target machines are connected to the NLB, this task will disconnect the machines from the NLB prior to the deployment and reconnect them back to the NLB after the deployment. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one). 
 
@@ -144,6 +146,9 @@ Since there is no configuration change required for the build pipeline, the buil
     The final variable list should look something like this:
 
     ![Configuring pipeline variables](media/deploying-azure-vms-deployment-groups/variables.png)
+
+    > [!NOTE]
+    > You may receive an error that the `DefaultConnectionString` variable must be saved as a secret. If that happens, select the variable and click the padlock icon that appears next to its value to protect it.
 
 ## Queuing a release and reviewing the deployment 
 
