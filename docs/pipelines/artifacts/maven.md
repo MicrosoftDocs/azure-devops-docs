@@ -100,4 +100,7 @@ Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 
     1. Generate a [Personal Access Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate) with Packaging read & write scopes and paste it into the `<password>` tag.
 
+> [!IMPORTANT]
+> In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenFeedAuthenticate` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.
+
 ::: moniker-end
