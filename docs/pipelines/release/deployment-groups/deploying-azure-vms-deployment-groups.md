@@ -22,6 +22,9 @@ All the above challenges have been evolved seamlessly with the introduction of t
 
 A deployment group installs a deployment agent on each of the target servers in the configured group and instructs the release pipeline to gradually deploy the application to those servers. Multiple pipelines can be created for the roll-out deployments so that the latest version of an application can be delivered in a phased manner to multiple user groups for validation of newly introduced features.
 
+> [!NOTE]
+> Deployment groups are a concept used in Classic pipelines. If you are using YAML pipelines, see [Environments](/azure/devops/pipelines/process/environments?view=azure-devops).
+
 In this tutorial, you learn about:
 
 > [!div class="checklist"]
@@ -45,7 +48,7 @@ The following resources are provisioned on the Azure using an ARM template:
 - SQL server VM (DB server)
 - Azure Network Load Balancer
 
-1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial.
+1. Click the **Deploy to Azure** button below to initiate resource provisioning. Provide all the necessary information and select **Purchase**. You may use any combination of allowed administrative usernames and passwords as they are not used again in this tutorial. Note that the **Env Prefix Name** is prefixed to all of the resource names in order to ensure that those resources are generated with globally unique names. You should try to use something personal or random, but if you see a naming conflict error during validation or creation, try changing this parameter and running again.
 
     [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2Falmvm%2Fmaster%2Flabs%2Fvstsextend%2Fdeploymentgroups%2Farmtemplate%2Fazurewebsqldeploy.json)
 
