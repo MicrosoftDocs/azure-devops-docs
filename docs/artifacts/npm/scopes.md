@@ -32,14 +32,14 @@ To use an Azure Artifacts feed with a scope, follow the instructions below, but 
 
 [!INCLUDE [](../includes/npm/npmrc.md)]
 
-Then, replace:<p></p>
+Then, replace:  
 `registry=<your feed URL>` with `@fabrikam:registry=<your feed URL>`
 
 > [!NOTE]
 > Make sure you add the scope and package names to your `package.json` file: `{ "name": "@fabrikam/package-name" }`.
 
 
-## Upstreams or scopes?
+## Upstream sources or scopes?
 Scopes add an additional restriction when naming your packages: each package name must start with `@<scope>`. If you're ok with this limitation, and don't intend to ever publish your private packages to npmjs.com, scopes are an alternative to [upstream sources](upstream-sources.md).
 
 If you do intend to publish private packages to npmjs.com, we recommend not using scopes unless you intend to publish your packages to npmjs.com with the scope intact; if you remove the scope when transitioning the package from Azure Artifacts to npmjs.com, you'll need to update any package.json references accordingly.
