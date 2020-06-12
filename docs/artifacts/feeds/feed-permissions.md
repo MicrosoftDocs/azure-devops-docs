@@ -1,10 +1,10 @@
 ---
 title: Secure and share packages using feed permissions
-description: Secure and share packages using feed permissions in Azure Artifacts for Azure DevOps Services, Azure DevOps Server, or Team Foundation Server
+description: Secure and share packages using feed permissions in Azure Artifacts for Azure DevOps Services, Azure DevOps Server, or Team Foundation Server. This article will help you understand feeds and views permissions by giving you an overview of the feeds and views permissions and walk you through the process of sharing your packages within your org as well as public users.
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/04/2020
+ms.date: 06/11/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services | TFS 2017**
 
-Packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
+The packages you host in Azure Artifacts are stored in a **feed**. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
 ## Feed permissions overview
 
@@ -114,7 +114,18 @@ After restricting your view's visibility, the permissions column should indicate
 
 To use packages from a feed in Azure Pipelines, the appropriate build identity must have permission to your feed. By default, the **Project Collection Build Service** is a Contributor. If you've changed your builds to run at [project scope](../../pipelines/build/options.md#build-job-authorization-scope), you'll need to add the project-level build identity as a Reader or Contributor, as desired. The project-level build identity is named as follows:
 
-`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo)) 
+`[Project name] Build Service ([Organization name])` (e.g. FabrikamFiber Build Service (codesharing-demo))
+
+you can also use the `Allow project-scoped builds` feature if you would like to automatically set up permissions for your project-scoped build identity.
+
+1. With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access the **Feed settings**.
+
+1. Select **Permissions**.
+
+1. Select the ellipsis on the right and select **Allow project-scoped builds** from the drop down menu.
+
+> [!div class="mx-imgBorder"]
+>![views permissions](media/project-scoped-builds.png)
 
 ## Sharing packages with everyone in your organization
 
