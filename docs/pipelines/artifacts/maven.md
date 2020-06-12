@@ -6,7 +6,7 @@ ms.assetid: fc81d7ee-fa9a-4c04-ac8c-6269d91987d3
 ms.topic: conceptual
 ms.reviewer: dastahel
 ms.custom: seodec18
-ms.date: 02/12/2019
+ms.date: 06/12/2020
 monikerRange: '>= tfs-2018'
 ---
 
@@ -20,7 +20,15 @@ monikerRange: '>= tfs-2018'
 
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
 
-1. Navigate to your Maven feed and click "Connect to Feed". Click on "Maven".
+::: moniker range=">=tfs-2018 > azure-devops-2019"
+
+1. Select **Build and Release**.
+
+1. Select **Packages**.
+
+1. With your feed selected, select **Connect to feed**.
+
+1. Select **Maven**.
 ![Connect to Feed - Maven](media/maven/consume-artifacts-using-maven.png)
 
 1. Click on "Generate Maven Credentials"
@@ -48,3 +56,4 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
 New-Item -Type Directory -Force "${HOME}/.m2"
 Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 ```
+::: moniker-end
