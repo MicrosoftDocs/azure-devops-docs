@@ -57,9 +57,9 @@ fetchImage(uri) = img {
 }
 ```
 
-### Check allow listed registries
+### Check allowed registries
 
-This policy checks if the images are from allow listed registries only.
+This policy checks if the images are from allowed registries only.
 
 ```
 allowlist = {
@@ -68,7 +68,7 @@ allowlist = {
 }
 
 checkregistries[errors] {
-    trace(sprintf("Allow listed registries: %s", [concat(", ", allowlist)]))
+    trace(sprintf("Allowed registries: %s", [concat(", ", allowlist)]))
     resourceUri := values[index].image.resourceUri
     registry := fetchRegistry(resourceUri)
     image := fetchImage(resourceUri)
