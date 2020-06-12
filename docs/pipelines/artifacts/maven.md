@@ -20,6 +20,8 @@ monikerRange: '>= tfs-2018'
 
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
 
+## Set up your feed
+
 ::: moniker range=">=tfs-2018 < azure-devops-2019"
 
 1. Select **Build and Release**.
@@ -54,10 +56,19 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
 
 1. Add tasks to your pipeline to [download the secure file](../tasks/utility/download-secure-file.md) and to copy it to the `(~/.m2)` directory. The latter can be accomplished with the following PowerShell script, where `settingsxml` is the reference name of the "Download secure file" task:
 
-```PowerShell
-New-Item -Type Directory -Force "${HOME}/.m2"
-Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
+    ```PowerShell
+    New-Item -Type Directory -Force "${HOME}/.m2"
+    Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
+    ```
+
+## Publish your package
+
+Run this command to publish your package:
+
 ```
+mvn deploy
+```
+
 ::: moniker-end
 
 ::: moniker range=">=azure-devops-2019"
@@ -69,7 +80,7 @@ Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 1. Select **Maven**.
 
     > [!div class="mx-imgBorder"]
-    >![Connect to Maven feed azure devops](media/maven/connect-to-maven-feed-devops2019.png)
+    >![Connect to Maven feed Azure DevOps](media/maven/connect-to-maven-feed-devops2019.png)
 
 1. Set up your project by following these steps:
 
@@ -102,5 +113,21 @@ Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 
 > [!IMPORTANT]
 > In order to automatically authenticate Maven feeds from Azure Artifacts, you must have the `mavenFeedAuthenticate` argument set to `true` in your Maven task. See [Maven build task](../tasks/build/maven.md) for more information.
+
+## Restore your package
+
+Run this command in your project directory to restore your package.
+
+```
+mvn build
+```
+
+## Publish your package
+
+Run this command in your project directory to publish your package.
+
+```
+mvn deploy
+```
 
 ::: moniker-end
