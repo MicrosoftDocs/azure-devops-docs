@@ -20,7 +20,7 @@ monikerRange: '>= tfs-2018'
 
 This guide covers the basics of using Azure Pipelines to work with Maven artifacts in Azure Artifacts feeds.
 
-::: moniker range=">=tfs-2018 > azure-devops-2019"
+::: moniker range=">=tfs-2018 < azure-devops-2019"
 
 1. Select **Build and Release**.
 
@@ -54,8 +54,22 @@ This guide covers the basics of using Azure Pipelines to work with Maven artifac
 
 1. Add tasks to your pipeline to [download the secure file](../tasks/utility/download-secure-file.md) and to copy it to the `(~/.m2)` directory. The latter can be accomplished with the following PowerShell script, where `settingsxml` is the reference name of the "Download secure file" task:
 
-```powershell
+```PowerShell
 New-Item -Type Directory -Force "${HOME}/.m2"
 Copy-Item -Force "$(settingsxml.secureFilePath)" "${HOME}/.m2/settings.xml"
 ```
+::: moniker-end
+
+::: moniker range=">=azure-devops-2019"
+
+1. Navigate to **Artifacts**.
+
+1. With your feed selected, select **Connect to feed**.
+
+1. Select **Maven**.
+
+> [!div class="mx-imgBorder"]
+>![Connect to Maven feed azure devops](media/maven/connect-to-maven-feed-devops2019.png)
+
+
 ::: moniker-end
