@@ -135,7 +135,7 @@ To define a custom policy evaluation over the artifact(s), follow the below step
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
 
-:::image type="content" source="media/checks/environment.png" alt-text="View environment.":::
+:::image type="content" source="media/checks/environments.png" alt-text="View environment.":::
 
 
 2. Navigate to **Approvals and checks** for the environment.
