@@ -18,7 +18,7 @@ A pipeline is made up of stages. A pipeline author can control whether a stage s
 
  Pipelines rely on resources such as environments, service connections, agent pools, variable groups, and secure files. Checks enable the _resource owner_ to control if and when a stage in any pipeline can consume a resource. As an owner of a resource, you can define checks that must be satisfied before a stage consuming that resource can start. For example, a _manual approval check_ on an [environment](environments.md) would ensure that deployment to that environment only happens after the designated user(s) has reviewed the changes being deployed. 
 
-A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are re-evaluation based on the retry inteval specified in each check. If all checks are not successful till the **timeout** specified, then that stage is not executed.
+A stage can consist of many jobs, and each job can consume several resources. Before the execution of a stage can begin, all checks on all the resources used in that stage must be satisfied. Azure Pipelines pauses the execution of a pipeline prior to each stage, and waits for all pending checks to be completed. Checks are re-evaluation based on the retry interval specified in each check. If all checks are not successful till the **timeout** specified, then that stage is not executed.
 If any of the checks terminally fails (for example, if you reject an approval on one of the resources), then that stage is not executed. 
 
 Approvals and other checks are not defined in the yaml file. Users modifying the pipeline yaml file cannot modify the checks performed before start of a stage. Administrators of resources manage checks using the web interface of Azure Pipelines.
@@ -76,7 +76,7 @@ The check fails if execution of the stage does not start within the **Timeout** 
 
 ## Invoke Azure function
 
-Azure functions are the serverless computation platform offerred by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
+Azure functions are the serverless computation platform offered by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
 Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
    > [!div class="mx-imgBorder"]
@@ -90,7 +90,7 @@ The checks fails if the stage has not started execution within the specified **T
 
 ## Invoke REST API
 
-Invoke REST API check enables you to integrate with any of your existing services. Preiodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
+Invoke REST API check enables you to integrate with any of your existing services. Periodically, make a call to a REST API and continue if it returns a successful response. [Learn More](../tasks/utility/http-rest-api.md)
 
 The evaluation can be repeated periodically using the **Time between evaluations** setting in control options. The checks fails if the stage has not started execution within the specified **Timeout** period.  
 
