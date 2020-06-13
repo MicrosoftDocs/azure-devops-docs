@@ -34,9 +34,8 @@ You can manually control when a stage should run using approval checks. This is 
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-   > [!div class="mx-imgBorder"]
-   > ![approvals-and-checks on environment](media/checks/approvals-and-checks.png)
-
+:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Approvals and Checks on environment.":::
+   
 3. Select **Create**, provide the approvers and an optional message, and select **Create** again to to complete addition of the manual approval check.
 
 You can add multiple approvers to an environment. These approvers can be individual users or groups of users. When a group is specified as an approver, only one of the users in that group needs to approve for the run to move forward.
@@ -59,8 +58,7 @@ To define the branch control check:
 
 3. Choose the **Branch control** check and provide a command separated  list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
 
-   > [!div class="mx-imgBorder"]
-   > ![branch-control-check](media/checks/branchcontrol.png)
+:::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 
 At run time, the check would validate branches for all linked resources in the run against the allowed list. If any one of the branches do not match the criteria, the check fails and the stage is marked failed.   
 
@@ -68,8 +66,7 @@ At run time, the check would validate branches for all linked resources in the r
 
 In case you want all deployments to your environment to happen in a specific time window only, then business hours check is the ideal solution. When you run a pipeline, the execution of the stage that uses the resource waits for business hours. If you have multiple runs executing simultaneously, each of them is independently verified. At the start of the business hours, the check is marked successful for all the runs. 
 
-   > [!div class="mx-imgBorder"]
-   > ![businesshours-check](media/checks/businesshours.png)
+:::image type="content" source="media/checks/business-hours-check.png" alt-text="Configuring business hours check.":::
 
 If execution of the stage has not started at the end of business hours (held up by to some other check), then the business hours approval is automatically withdrawn and a re-evaluation is scheduled for the next day.
 The check fails if execution of the stage does not start within the **Timeout** period specified for the check, and the stage is marked failed.
@@ -79,8 +76,7 @@ The check fails if execution of the stage does not start within the **Timeout** 
 Azure functions are the serverless computation platform offered by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
 Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
-   > [!div class="mx-imgBorder"]
-   > ![invoke-azure-function](media/checks/azurefunction.png)
+:::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
 
 The checks fails if the stage has not started execution within the specified **Timeout** period.  
 
@@ -126,9 +122,7 @@ To define a required template approval:
 
 You can have multiple required templates for the same service connection. In this example, the required template is `required.yml`.
 
-   > [!div class="mx-imgBorder"]
-   > ![required template](media/required-template.png)
-
+:::image type="content" source="media/checks/required-template.png" alt-text="Configuring required template check.":::
 
 ## Evaluate artifact
 
@@ -140,45 +134,38 @@ You can evaluate artifact(s) to be deployed to an environment against custom pol
 To define a custom policy evaluation over the artifact(s), follow the below steps.
 
 1. In your Azure DevOps Services project, navigate to the environment that needs to be protected. Learn more about [creating an environment](environments.md).
-    
-   > [!div class="mx-imgBorder"]
-   > ![environments](media/checks/environments.png)
+
+:::image type="content" source="media/checks/environment.png" alt-text="View environment.":::
+
 
 2. Navigate to **Approvals and checks** for the environment.
 
-   > [!div class="mx-imgBorder"]
-   > ![approvals-and-checks on environment](media/checks/approvals-and-checks.png)
+:::image type="content" source="media/checks/approvals-and-checks.png" alt-text="Add checks to environment.":::
 
 3. Select **Evaluate artifact**.
     
-   > [!div class="mx-imgBorder"]
-   > ![evaluate-artifact](media/checks/evaluate-artifact.png)
-
+:::image type="content" source="media/checks/evaluate-artifact.png" alt-text="Add evaluate artifact check.":::
+   
 4. Paste the policy definition and click **Save**. [See more](artifact-policy.md) about writing policy definitions.
 
-    > [!div class="mx-imgBorder"]
-    > ![policy-definition](media/checks/policy-definition.png)
-
+:::image type="content" source="media/checks/policy-definition.png" alt-text="Add policy definition.":::
+ 
 When you run a pipeline, the execution of that run pauses before entering a stage that uses the environment. The specified policy is evaluated against the available image metadata. The check passes when the policy is successful and fails otherwise. The stage is marked failed if the check fails.
 
 ### [Passed](#tab/check-pass)
 
-> [!div class="mx-imgBorder"]
-> ![checks-passed](media/checks/checks-passed.png)
+:::image type="content" source="media/checks/checks-passed.png" alt-text="Viewing passed checks.":::
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
-> [!div class="mx-imgBorder"]
-> ![checks-passed](media/checks/policy-check-pass-logs.png)
+:::image type="content" source="media/checks/policy-check-pass-logs.png" alt-text="Viewing passed check logs.":::
 
 ### [Failed](#tab/check-failed)
 
-> [!div class="mx-imgBorder"]    
-> ![checks-passed](media/checks/checks-failed.png)
+:::image type="content" source="media/checks/checks-failed.png" alt-text="Viewing failed check logs.":::
 
 You can also see the complete logs of the policy checks from the pipeline view.
 
-> [!div class="mx-imgBorder"]
-> ![checks-passed](media/checks/policy-check-failed-logs.png)
+:::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
 * * *
