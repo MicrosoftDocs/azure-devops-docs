@@ -1,5 +1,3 @@
-
-# Create a service hook for Team Foundation Server (TFS) with Microsoft Teams
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -8,6 +6,9 @@ title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
 ms.date: 03/16/2020
+---
+
+# Create a service hook for Team Foundation Server (TFS) with Microsoft Teams
 
 >[!NOTE]
 >If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.

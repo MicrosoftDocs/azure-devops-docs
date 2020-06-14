@@ -1,4 +1,3 @@
-# Create a service hook for Azure DevOps Server (TFS) with Slack
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
@@ -7,7 +6,9 @@ description: Use Slack with your Azure DevOps Services organization
 ms.assetid: ea948249-1053-4971-99b9-ffa820c03803
 monikerRange: '>= tfs-2017'
 ms.date: 03/15/2019
+---
 
+# Create a service hook for Azure DevOps Server (TFS) with Slack
 
 >[!NOTE]
 >If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Slack.
