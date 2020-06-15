@@ -22,7 +22,8 @@ When this policy is on, users can request access to a resource. A request result
 
 ## Prerequisites
 
-You must be a Project Collection Administrator or organization Administrator to disable the Request Access policy.
+To change a policy, you need at least Basic access and organization Owner or Project Collection Administrator permissions.
+[How do I find the organization Owner?](../security/lookup-organization-owner-admin.md)
 
 ## Disable Request Access policy
 
@@ -44,5 +45,5 @@ You must be a Project Collection Administrator or organization Administrator to 
 
 - [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
-- [Manage Conditional Access](manage-conditional-access.md)
+- [Manage Conditional Access](change-application-access-policies.md)
 - [Change application access policies](change-application-access-policies.md).
