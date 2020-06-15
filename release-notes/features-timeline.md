@@ -92,6 +92,13 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="4"><a href="2020/sprint-171.md" data-raw-source="[18 June 2020](2020/sprint-171.md)">18 June 2020</a></td>
+        <td>Restricted state to state transitions in inherited (phase 1)</td><td>Boards</td><td>TBD</td>
+    </tr>
+    <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Additional agent platform: ARM64</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Control which tasks are allowed in pipelines</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr>
     <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">01 June 2020</a></td>
         <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
         </tr>
