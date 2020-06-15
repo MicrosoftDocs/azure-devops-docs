@@ -402,7 +402,7 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../security/set-project-collection-level-permissions.md" data-raw-source="[Add administrators](../security/set-project-collection-level-permissions.md)">Add administrators</a></li>
 <li><a href="../accounts/manage-azure-active-directory-groups.md" data-raw-source="[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)">Add Azure Active Directory groups</a></li>
 <li><a href="../accounts/connect-organization-to-azure-ad.md" data-raw-source="[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)">Connect to Azure Active Directory</a></li>
-<li><a href="../accounts/manage-conditional-access.md" data-raw-source="[Manage conditional access](../accounts/manage-conditional-access.md)">Manage conditional access</a></li>
+<li><a href="../accounts/change-application-access-policies.md" data-raw-source="[Manage conditional access](../accounts/change-application-access-policies.md)">Manage conditional access</a></li>
 </ul></td>
 <td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>
