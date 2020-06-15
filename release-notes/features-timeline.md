@@ -92,7 +92,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="4"><a href="2020/sprint-171.md" data-raw-source="[18 June 2020](2020/sprint-171.md)">18 June 2020</a></td>
+    <td rowspan="4"><a href="2020/sprint-171.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
         <td>Restricted state to state transitions in inherited (phase 1)</td><td>Boards</td><td>TBD</td>
     </tr>
     <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
