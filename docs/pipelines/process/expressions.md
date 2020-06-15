@@ -553,7 +553,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), ne(stageDependencies.A.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), ne(stageDependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
