@@ -11,7 +11,7 @@ ms.topic: include
 We are previewing a new feature called scale set agents which pairs the convenience and elastic capacity of the Microsoft-hosted agents with the control and flexibility of self-hosted agents. With this preview, we now enable you to manage agents to your specification, completely automated, in your Azure subscription. You may want to consider using scale set agents instead of Microsoft-hosted or self-hosted agents when you:
 
 - need more memory, more processor, more storage, or more I/O than what we offer in native Microsoft-hosted agents
-- do not want to whitelist a large number of IP addresses within your corporate firewall to enable Microsoft-hosted agents to communicate with your servers
+- do not want to allow list a large number of IP addresses within your corporate firewall to enable Microsoft-hosted agents to communicate with your servers
 - need more Microsoft-hosted agents than we can provide to meet your large scale needs
 - need the ability to partition Microsoft-hosted parallel jobs to individual projects or teams in your organization
 - do not want to run dedicated agents around the clock but instead want to de-provision agent machines that are not being actively utilized
