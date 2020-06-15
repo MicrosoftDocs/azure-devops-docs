@@ -6,4 +6,4 @@ ms.date: 06/18/2020
 ms.topic: include
 ---
 
-- [Restricted state to state transitions in inherited (phase 1)](<#restricted-state-to-state-transitions-in-inherited-(phase-1)>)
+- [State transition restriction rules (private preview)](#state-transition-restriction-rules-private-preview)
