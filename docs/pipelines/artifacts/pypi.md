@@ -83,6 +83,7 @@ The example below will enable you to authenticate to a list of Azure Artifacts f
 
 > [!TIP]
 > The authentication credentials written into the `PYPIRC_PATH` environment variable supersede those in your .ini and .conf files.  
+>
 > If you add multiple Python Twine Authenticate tasks at different times in your pipeline steps, each additional build task execution will extend (not override) the existing `PYPIRC_PATH` environment variable.
 
 ## Use a custom twine task to publish
