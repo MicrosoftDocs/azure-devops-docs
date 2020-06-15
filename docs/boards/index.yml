@@ -27,7 +27,6 @@ landingContent:
             url: ./boards/get-started/what-is-azure-boards.md
           - text: Backlogs, boards, taskboards, and delivery plans
             url: ./boards/get-started/what-is-azure-boards.md
-    linkLists:
       - linkListType: video
         links:
           - text: What is Azure Boards?
@@ -108,6 +107,8 @@ landingContent:
             url: ./plans/configure-hierarchical-teams.md
           - text: Visibility across teams
             url: ./plans/visibility-across-teams.md
+          - text: Implement Scaled Agile Framework®
+            url: ./plans/scaled-agile-framework.md
   - title: Troubleshoot
     linkLists:
       - linkListType: how-to-guide
