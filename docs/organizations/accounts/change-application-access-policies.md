@@ -24,7 +24,7 @@ In this article, learn how to manage your security policies and the policies tha
 
 To access your organization without asking for user credentials multiple times, applications use the following authentication methods.
 
-* [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
+* [**OAuth**](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
 
 * [**SSH authentication**](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for using Linux, macOS, and Windows running [Git for Windows](https://www.git-scm.com/download/win), but you can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs) for HTTPS authentication.
  
