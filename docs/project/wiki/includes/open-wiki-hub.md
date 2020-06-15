@@ -43,6 +43,39 @@ Open a wiki named 'myprojectwiki'.
 az devops wiki show --wiki myprojectwiki --open
 ```
 
+## View a wiki page
+
+To get the content of a page via the Azure DevOps CLI, enter the `az devops wiki show` command. 
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page show --path
+                         --wiki
+                         [--include-content]
+                         [--open]
+                         [--project]
+                         [--subscription]
+                         [--version]
+```
+
+### Parameters
+
+- **--path**: Required. Path of the wiki page.
+- **--wiki**: Required. Name or ID of the wiki.
+- **--include-content**: Optional. Include content of the page.
+- **--open**: Optional. Open the wiki page in your web browser.
+- **--project -p**: Optional. Name or ID of the project.
+- **--version -v**: Optional. Version (ETag) of the wiki page.
+
+### Example
+
+Get wiki page content with path 'my wiki' in a wiki named 'myprojectwiki'.
+
+> [!div class="tabbedCodeSnippets"]
+```CLI
+az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hello World"
+```
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"

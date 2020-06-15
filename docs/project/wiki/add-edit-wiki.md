@@ -1,5 +1,5 @@
 ﻿---
-title: Add, edit, reorder and manage wiki pages
+title: Add, edit, reorder, manage wiki pages
 titleSuffix: Azure DevOps  
 description: Learn how to add, edit, reorder, and manage pages for your built-in project wiki in Azure DevOps.  
 ms.technology: devops-collab
@@ -10,16 +10,16 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: quickstart
 monikerRange: '>= tfs-2018'
-ms.date: 10/14/2019 
+ms.date: 06/11/2020 
 ---
 
-# Quickstart: Add and edit wiki pages
+# Add and edit wiki pages
 
 [!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
-When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, you have a new page where you can add a title and content. There is a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
+When the [Wiki Git repository is provisioned](./wiki-create-repo.md) for your team project, there's a new page where you can add a title and content. There's a side-by-side edit and preview experience where you can edit the page and preview the content as you go.
 
-In this quickstart, learn how to do the following tasks:  
+In this article, learn how to do the following tasks:  
 
 > [!div class="checklist"]
 > * Open wiki
@@ -71,43 +71,6 @@ As you edit the page, save it by entering **Ctrl+S**. To save with a custom revi
 <a id="open-wiki">  </a>
 
 [!INCLUDE  [temp](includes/open-wiki-hub.md)]
-
-::: moniker range="= azure-devops"
-
-## View a wiki page
-
-To get the content of a page via the Azure DevOps CLI, enter the `az devops wiki show` command. 
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-az devops wiki page show --path
-                         --wiki
-                         [--include-content]
-                         [--open]
-                         [--project]
-                         [--subscription]
-                         [--version]
-```
-
-### Parameters
-
-- **--path**: Required. Path of the wiki page.
-- **--wiki**: Required. Name or ID of the wiki.
-- **--include-content**: Optional. Include content of the page.
-- **--open**: Optional. Open the wiki page in your web browser.
-- **--project -p**: Optional. Name or ID of the project.
-- **--version -v**: Optional. Version (ETag) of the wiki page.
-
-### Example
-
-Get wiki page content with path 'my wiki' in a wiki named 'myprojectwiki'.
-
-> [!div class="tabbedCodeSnippets"]
-```CLI
-az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hello World"
-```
-
-::: moniker-end
 
 <a id="add-page" />
 
@@ -272,7 +235,7 @@ az devops wiki page delete --path
 - **--comment**: Optional. Comment in the commit message of delete operation.
 - **--project -p**: Optional. Name or ID of the project. You can configure the default project using az devops configure -d project=NAME_OR_ID. Required if not configured as default or picked up via git config.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
-- **--yes -y**: Optional. Do not prompt for confirmation.
+- **--yes -y**: Optional. Don't prompt for confirmation.
 
 [!INCLUDE [note-cli-not-supported](../../includes/note-cli-not-supported.md)]
 
@@ -297,7 +260,7 @@ az devops wiki page delete --path 'my wiki' --wiki 'myprojectwiki'
 
 ## Reorder a wiki page
 
-You can reorder pages within the wiki tree view to have pages appear in the order and hierarchy you want. You can drag-and-drop a page title in the tree view to perform the following operations:
+You can reorder pages within the wiki tree view to have pages appear in the order and hierarchy you want. You can drag-and-drop a page title in the tree view to do the following operations:
 
 * Change the parent-child relationship of a page
 * Change the order of the page within the hierarchy
@@ -315,7 +278,7 @@ For a complete list of keyboard shortcuts, see [Keyboard shortcuts to manage Wik
 
 ## Make a page the wiki home page
 
-By default, the first page you add when you create a wiki is set as the wiki home page. You can change this if another page becomes more relevant. You have to just drag and drop the page to the top of the tree.
+By default, the first page you add when you create a wiki is set as the wiki home page. You can change your wiki homepage, if another page becomes more relevant, by dragging and dropping the page to the top of the tree.
 
 ## Next steps
 
