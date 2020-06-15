@@ -1,6 +1,6 @@
 ---
 title: Create your first pipeline
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: Create your first pipeline in Azure Pipelines, Azure DevOps, & Team Foundation Server
 ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
@@ -1044,7 +1044,7 @@ Go ahead and create a new build pipeline, and this time, use one of the followin
 
 ::: moniker range=">= tfs-2017"
 
-## Q & A
+## FAQ
 
 ### Where can I read articles about DevOps and CI/CD?
 

@@ -112,7 +112,7 @@ or to suggest new features that you would like to see.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

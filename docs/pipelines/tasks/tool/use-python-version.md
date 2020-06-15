@@ -3,7 +3,7 @@ title: Use Python Version task
 description: Select a version of Python to run on an agent and optionally add it to PATH
 ms.assetid: 3E49833C-1C28-4C17-B45A-569F06C00AC3
 ms.manager: madhurig
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 ms.author: macoope
 author: vtbassmatt
 ms.reviewer: dastahel
@@ -23,7 +23,7 @@ None
 
 ## Prerequisites
 
-* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Python installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [Q&A](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
+* A [Microsoft-hosted agent](../../agents/hosted.md#software) with side-by-side versions of Python installed, or a self-hosted agent with Agent.ToolsDirectory configured (see [FAQ](#how-can-i-configure-a-self-hosted-agent-to-use-this-task)).
 
 This task will fail if no Python versions are found in Agent.ToolsDirectory. Available Python versions on Microsoft-hosted agents can be found [here](../../agents/hosted.md#software).
 
@@ -74,7 +74,7 @@ Hosted Ubuntu and Hosted macOS run 64-bit operating systems and run only 64-bit 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn more about tool installers?

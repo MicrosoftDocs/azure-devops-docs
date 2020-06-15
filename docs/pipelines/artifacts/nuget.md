@@ -2,11 +2,11 @@
 title: Publishing to NuGet feeds
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
-description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds
+description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds. This article will show you how to create a NuGet package, setup package versioning, and publish your symbols and packages to your feed.
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: conceptual
-ms.date: 04/07/2020
+ms.date: 06/10/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -127,6 +127,20 @@ When you're producing a package in a build, you can't know whether it will be th
 
 * Publish only packages that you want to release. In this case, you won't use a prerelease label for every build. Instead, you'll reuse the same package version for all packages. Because you do not publish packages from every build, you do not cause a conflict.
 
+> [!NOTE]
+> Please note that `DotNetCore` and `DotNetStandard` packages should be packaged with the `DotNetCoreCLI@2` task to avoid System.InvalidCastExceptions. See the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md) for more details.
+
+```yaml
+task: DotNetCoreCLI@2
+displayName: 'dotnet pack $(buildConfiguration)'
+inputs:
+    command: pack
+    versioningScheme: byPrereleaseNumber
+    majorVersion: '$(Major)'
+    minorVersion: '$(Minor)'
+    patchVersion: '$(Patch)'
+```
+
 <a name="publish-packages"></a>
 ## Publish your packages
 
@@ -203,7 +217,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 When you push packages to a Package Management feed, you can also [publish symbols](/azure/devops/pipelines/artifacts/symbols).
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 

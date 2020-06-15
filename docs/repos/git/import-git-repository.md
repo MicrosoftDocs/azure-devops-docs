@@ -108,7 +108,10 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
-    ``` 
+    ```
+    
+   > [!WARNING]
+   > Using `--mirror` will overwrite all branches in the target repo which includes deleting any branches not in the source repo.
 
 4. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 

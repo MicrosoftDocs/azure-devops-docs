@@ -57,7 +57,7 @@
       href: how-long-to-keep-test-results.md
     - name: Associate tests with test cases
       href: associate-automated-test-with-test-case.md
-    - name: Run tests from test plans (automate)
+    - name: Run automated tests from test plans
       href: run-automated-tests-from-test-hub.md
     - name: Delete test artifacts
       href: ../boards/backlogs/delete-test-artifacts.md?toc=/azure/devops/test/toc.json&bc=/azure/devops/test/breadcrumb/toc.json.md 

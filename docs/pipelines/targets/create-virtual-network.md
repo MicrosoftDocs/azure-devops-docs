@@ -344,7 +344,7 @@ environments. You can create as many environments as you need with just a click 
 * [SCVMM deployment](scvmm.md)
 * [Hyper-V Network Virtualization Overview](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/hyperv-network-virtualization-overview-windows-server)
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

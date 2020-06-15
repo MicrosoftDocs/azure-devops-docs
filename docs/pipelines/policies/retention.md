@@ -279,7 +279,7 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
  
 ::: moniker-end
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

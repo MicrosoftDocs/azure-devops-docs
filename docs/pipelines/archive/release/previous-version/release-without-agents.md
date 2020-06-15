@@ -352,7 +352,7 @@ You also need a build definition that builds your app.
 1. [Start a new release](manage-your-release.md#StartRelease).
 1. [Approve steps in a stage](manage-your-release.md#ApproveSteps).
 
-## Q & A
+## FAQ
 
 ### Q: Are there any DSC actions that are not currently supported by Release Management?
 

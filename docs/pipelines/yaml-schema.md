@@ -1,6 +1,6 @@
 ---
 title: YAML schema
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
@@ -1244,6 +1244,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+* [Pipeline trigger](#pipeline-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1508,6 +1509,10 @@ It does so regardless of whether the code has changed since the last run.
 ---
 
 ::: moniker-end
+
+### Pipeline trigger
+
+Pipeline completion triggers are configured using a [pipeline resource](#pipeline-resource). For more information, see [Pipeline completion triggers](./process/pipeline-triggers.md).
 
 ## Pool
 

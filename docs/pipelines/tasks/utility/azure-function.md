@@ -57,7 +57,7 @@ For more information about using this task, see [Approvals and gates overview](.
 This task is open source on [GitHub](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzureFunctionV1). Feedback and contributions are welcome.
 
 
-## Q&A
+## FAQ
 
 ### Where should a task signal completion when **Callback** is chosen as the completion event?
 

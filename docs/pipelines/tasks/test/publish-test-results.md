@@ -376,7 +376,7 @@ The Publish Test Results task provides support for attachments for both test run
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
-## Frequently Asked Questions
+## FAQ
 
 #### What is the maximum permittable limit of FQN?
 
