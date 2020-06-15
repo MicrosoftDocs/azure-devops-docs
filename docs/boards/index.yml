@@ -24,9 +24,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Azure Boards?
-            url: ./boards/get-started/what-is-azure-boards.md
+            url: ./get-started/what-is-azure-boards.md
           - text: Backlogs, boards, taskboards, and delivery plans
-            url: ./boards/get-started/what-is-azure-boards.md
+            url: ./backlogs/backlogs-boards-plans.md
       - linkListType: video
         links:
           - text: What is Azure Boards?
