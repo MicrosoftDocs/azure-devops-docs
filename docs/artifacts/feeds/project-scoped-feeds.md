@@ -54,3 +54,7 @@ Alternatively, you can use the [Create Feed API](https://docs.microsoft.com/rest
 > [!NOTE]
 > If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md#get-started-with-feed-views) for more information.
 
+> [!IMPORTANT]
+> If a user have permission to a specific view, and even if they don't have permission to the feed, they will still be able to access and download packages through that view.  
+> If you want to completely hide your packages, you must restrict both feeds and views permissions. See [Feeds and views permissions](feed-permissions.md) for more information.
+
