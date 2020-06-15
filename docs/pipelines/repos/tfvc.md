@@ -150,7 +150,7 @@ However, if you **do** want CI builds to run after a gated check-in, select the 
 * Make sure the folders you include in your trigger are also included in your workspace mappings.
 * You can run gated builds on either a [Microsoft-hosted agent](../agents/hosted.md) or a [self-hosted agent](../agents/agents.md).
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -42,7 +42,7 @@ After you've viewed the history, if you want details about a change, select it a
 
 ::: moniker-end
 
-## Q & A 
+## FAQ 
 
 <!-- BEGINSECTION class="md-qanda" -->
 

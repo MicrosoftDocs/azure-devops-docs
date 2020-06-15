@@ -163,7 +163,7 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 1. You start a run in the second project. That run won't start until one of the runs in your first project is completed.
 
-## Q&A
+## FAQ
 
 ### How do I qualify for the free tier of public projects?
 
@@ -284,7 +284,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 
 
-## Q & A
+## FAQ
 
 ### Who can use the system?
 

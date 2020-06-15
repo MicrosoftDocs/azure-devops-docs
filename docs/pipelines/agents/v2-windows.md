@@ -272,7 +272,7 @@ The help provides information on authentication alternatives and unattended conf
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft-hosted agents for Azure Pipelines
-ms.custom: seodec18
+ms.custom: "seodec18, contentperfQ4"
 description: Learn about using the Microsoft-hosted agents provided in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: D17E9C01-8026-41E8-B44A-AB17EDE4AFBD
@@ -210,7 +210,7 @@ Microsoft-hosted agents run on secure Azure platform. However, you must be aware
 - Although Microsoft-hosted agents run on Azure public network, they are not assigned public IP addresses. So, external entities cannot target Microsoft-hosted agents. 
 - Microsoft-hosted agents are run in individual VMs, which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
 - There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. If you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
-- When a pipeline needs to access your corporate resources behind a firewall, you have to whitelist the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
+- When a pipeline needs to access your corporate resources behind a firewall, you have to allow the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
 - Hosted images do not conform to [CIS hardening benchmarks](https://www.cisecurity.org/benchmark/azure/). To use CIS-hardened images, you must create either self-hosted agents or scale-set agents.
 
 ## Capabilities and limitations
@@ -238,7 +238,7 @@ Microsoft-hosted agents do not offer:
 
 If Microsoft-hosted agents don't meet your needs, then you can deploy your own [self-hosted agents](agents.md#install) or use [scale set agents](scale-set-agents.md).
 
-## Q & A
+## FAQ
 
 ### How can I see what software is included in an image?
 
@@ -288,9 +288,9 @@ Your self-hosted agent probably has all the right dependencies installed on it, 
 
 ### My build succeeds on my local machine, but fails on Microsoft-hosted agents. What should I do?
 
-Your self-hosted agent probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
+Your local machine probably has all the right dependencies installed on it, whereas the same dependencies, tools, and software are not installed on Microsoft-hosted agents. First, carefully review the list of software that is installed on Microsoft-hosted agents by following the link to **Included software** in the table above. Then, compare that with the software installed on your local machine. In some cases, Microsoft-hosted agents may have the tools that you need (e.g., Visual Studio), but all of the necessary optional components may not have been installed. If you find differences, then you have two options:
 
-- You can create a new issue on the [repository]((https://github.com/actions/virtual-environments), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
+- You can create a new issue on the [repository](https://github.com/actions/virtual-environments), where we track requests for additional software. This is your best bet for getting new software installed. Contacting support will not help you with setting up new software on Microsoft-hosted agents.
 
 - You can use [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md). With these agents, you are fully in control of the images that are used to run your pipelines.
 
@@ -298,13 +298,13 @@ Your self-hosted agent probably has all the right dependencies installed on it, 
 
 Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
-### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to whitelist in our firewall?
+### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to allow in our firewall?
 
 See the section [Agent IP ranges](#agent-ip-ranges)
 
 ### Our pipeline running on Microsoft-hosted agents is unable to resolve the name of a server on our corporate network. How can we fix this?
 
-If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) whitelisted.
+If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) allowed.
 
 <a name="mac-pick-tools"></a>
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: CLI Security tokens for permissions management
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security tokens for permissions management
@@ -190,3 +190,7 @@ If the tokens have variable-length path parts, then a separator character is use
    Token format for a specific workspace: '/{workspace_name};{owner_id}' 
    
    This security namespace is used only with TFVC. The user ID in the token is the TeamFoundationID of the Workspace's owner/creator.
+
+### Deprecated/read-only namespaces
+
+   The following namespaces are either deprecated or read-only and shouldn't be used: CrossProjectWidgetView, DataProvider, Favorites, Graph, IdentityPicker, Job, Location, ProjectAnalysisLanguageMetrics, Proxy, Registry, Security, ServicingOrchestration, SettingEntries, Social, StrongBox, TestManagement, ViewActivityPaneSecurity, WebPlatform, WorkItemsHub, WorkItemTracking, WorkItemTrackingConfiguration.

@@ -42,7 +42,7 @@ Can be used in only an [agentless job](../../process/phases.md#server-jobs) of a
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishToAzureServiceBusV1). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### Do I need an agent?
 

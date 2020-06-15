@@ -1,7 +1,7 @@
 ---
 title: Create a project
 titleSuffix: Azure DevOps
-ms.custom: seodec18
+ms.custom: seodec18, contentperfq4
 description: Learn how to create a new project where your team can plan, track progress, and collaborate on building software solutions.
 ms.assetid: 21F3C364-34F4-41B0-9EFC-6D4A141D81E0
 ms.technology: devops-accounts
@@ -321,7 +321,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 
     ![ALM\_CTP\_SelectSource](media/IC671600.png)
 
-    Not sure which system to use? To learn more, see [Git and Azure Repos](../../repos/git/index.yml) and [Use Team Foundation Version Control](../../repos/tfvc/overview.md).
+    Not sure which system to use? To learn more, see [Git and Azure Repos](../../repos/git/index.yml) and [Use Team Foundation Version Control](../../repos/tfvc/index.yml).
 
     After you've created your project, you can add repositories. See [Add a repository to your project](#add-a-repository).
 
@@ -561,5 +561,5 @@ From the admin context of the web portal, you can add additional repositories to
 
 - [Get Started with Azure Repos and Visual Studio](../../repos/git/gitquickstart.md)
 - [Git and Azure Repos](../../repos/git/index.yml)
-- [Team Foundation version control](../../repos/tfvc/index.md)
+- [Team Foundation version control](../../repos/tfvc/index.yml)
 - [Get started as an administrator](../../user-guide/project-admin-tutorial.md)

@@ -1,6 +1,6 @@
 ---
 title: Python Twine Upload Authenticate
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: Sets up authentication with twine to Python feeds so you can publish Python packages in your pipeline. 
 ms.topic: reference
 ms.author: dastahel
@@ -37,5 +37,5 @@ Provides `twine` credentials to a `PYPIRC_PATH` environment variable for the sco
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 

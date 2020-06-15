@@ -4,8 +4,8 @@ ms.custom: seodec18
 description: Understand the different Azure DevOps variables within the classic release Pipelines. This reference article covers both custom and default variables.
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
-ms.author: ronai
-author: RoopeshNair
+ms.author: shashban
+author: shashban
 ms.date: 05/13/2020
 monikerRange: '>= tfs-2015'
 ---
@@ -61,6 +61,7 @@ To view the full list, see [View the current values of all variables](#view-vars
 | System.TeamFoundationServerUri | The URL of the service connection in TFS or Azure Pipelines. Use this from your scripts or tasks to call Azure Pipelines REST APIs.<br/><br />Example: `https://fabrikam.vsrm.visualstudio.com/` |
 | System.TeamFoundationCollectionUri | The URL of the Team Foundation collection or Azure Pipelines. Use this from your scripts or tasks to call REST APIs on other services such as Build and Version control.<br/><br />Example: `https://dev.azure.com/fabrikam/` |
 | System.CollectionId | The ID of the collection to which this build or release belongs. Not available in TFS 2015.<br/><br />Example: `6c6f3423-1c84-4625-995a-f7f143a1e43d` |
+| System.DefinitionId | The ID of the release pipeline to which the current release belongs. Not available in TFS 2015.<br/><br />Example: `1` |
 | System.TeamProject | The name of the project to which this build or release belongs.<br/><br />Example: `Fabrikam` |
 | System.TeamProjectId | The ID of the project to which this build or release belongs. Not available in TFS 2015.<br/><br />Example: `79f5c12e-3337-4151-be41-a268d2c73344` |
 | System.ArtifactsDirectory | The directory to which artifacts are downloaded during deployment of a release. The directory is cleared before every deployment if it requires artifacts to be downloaded to the agent. Same as Agent.ReleaseDirectory and System.DefaultWorkingDirectory.<br/><br />Example: `C:\agent\_work\r1\a`  |

@@ -108,7 +108,7 @@ docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
 
 The above command results in an equivalent image in terms of content as the one built by using the Docker task. The Docker task itself internally calls docker binary on script, but also stitches together a few more commands to provide a few additional benefits as described in the [Docker task's documentation](../../tasks/build/docker.md).
 
-## Frequently asked questions
+## FAQ
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
 

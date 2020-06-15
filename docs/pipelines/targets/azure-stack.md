@@ -50,7 +50,7 @@ For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](http
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 * [Azure Stack Operator Documentation](/azure/azure-stack/)
 
-## Q&A
+## FAQ
 
 ### Are all the Azure tasks supported?
 
