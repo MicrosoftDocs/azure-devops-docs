@@ -297,6 +297,11 @@ The rule requirements translate to the following four rule definitions.
 
 ---  
 
+
+
+
+::: moniker range="azure-devops"
+
 ## Restrict state transitions 
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
@@ -525,6 +530,8 @@ When specifying one of the two conditions based on user or group membership, `Cu
 
 --> 
 
+::: moniker-end
+
 ## Automate state transitions of parent work items 
 
 To automate State transitions of parent work items based on the State assignments made to their child work items, you can add a web hook and use the code and configuration provided in the [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project. 
@@ -541,18 +548,7 @@ To automate State transitions of parent work items based on the State assignment
 
 
 <!---
-
-Best Practices. 32 workflow states, 1024 max number of rules per WIT. However, the more rules, ..... 
-
-
-Implementing restricted [State] transitions will enable us to
-- accurately rely on the state
-- control who does what
-- prevent unauthorised users from setting an invalid state (accidentally or otherwise)
-- prevent users from maliciously circumventing process (eg. Setting a work item straight to ‘Approved’)
-- ensure all expected users in a User Story are part of the value chain
-- demonstrate, for audit purposes, that we have a tested, reliable and controlled process in place 
-
+ 
 
 
 VS1640113: It is not allowed to have multiple rules with the same action type using the same conditions. The rules ['Transition restriction', 'Active state'] have the action type 'ProhibitedValues' using the same conditions. Change the conditions of the rule to fix this error.
