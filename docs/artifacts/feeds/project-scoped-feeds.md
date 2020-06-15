@@ -1,6 +1,6 @@
 ---
 title: Project scoped feeds
-description: Project scoped feeds in Azure Artifacts in Azure DevOps Services or Team Foundation Server. This article explains the difference between organization scoped and project scoped feeds. It also explains the concept of feeds visibility. 
+description: Project scoped feeds in Azure Artifacts in Azure DevOps Services or Team Foundation Server. This article explains the difference between organization scoped and project scoped feeds. It also explains the concept of feed visibility. 
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.date: 06/15/2020
@@ -19,7 +19,7 @@ A project-scoped feed is scoped to a project instead of an organization.
 
 Here are the main differences between the two feed types:
 
-1. **Visibilty**:
+1. **Visibility**:
 
     * Project-scoped feeds will always use the visibility of the project. If a project is public, the feed is also public and if the project is private, the feed is also private. 
     * Organization-scoped feeds will always remain private.
@@ -40,9 +40,16 @@ Here are the main differences between the two feed types:
 1. **Connection**:
     * When connecting to a private project scoped feed from an Azure DevOps pipeline that is in the same organization but in a different project, the project that the feed is scoped to must allow access to the other project's build service. The build service must also be separately added to the feed permissions, regardless of the scope of the feed.
 
-### What can I do if I'm concerned about my project-scoped feed's visibility
+## What can I do if I'm concerned about my project-scoped feed's visibility
 
-There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md). If you're concerned that your project will be turned public in the future and you want your feed remain private, you can use the organization-scoped feed that's automatically created when a new organization is created. Alternatively, you can use the [Create Feed API](https://docs.microsoft.com/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.1) to manually create a new organization-scoped feed. You will have to set the default permissions for the new feed manually either by using the [Feed Permission API](https://docs.microsoft.com/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.1) or the Artifacts feed settings. Creating new organization-scoped feeds is not recommended.
+There is an option to not allow public projects in an organization. It can be set under Security policies in [Organization Policy Settings](../../organizations/accounts/change-application-access-policies.md).
+
+If you're concerned that your project will be turned public in the future and you want your feed remain private, you can use the organization-scoped feed that's automatically created when a new organization is created.
+
+Alternatively, you can use the [Create Feed API](https://docs.microsoft.com/rest/api/azure/devops/artifacts/feed%20%20management/create%20feed?view=azure-devops-rest-5.1) to manually create a new organization-scoped feed. You will have to set the default permissions for the new feed manually either by using the [Feed Permission API](https://docs.microsoft.com/rest/api/azure/devops/artifacts/feed%20%20management/set%20feed%20permissions?view=azure-devops-rest-5.1) or the Artifacts feed settings.
+
+> [!IMPORTANT]
+> Creating new organization-scoped feeds is not recommended.
 
 > [!NOTE]
 > If you want to share a package in your feed with all the users in your organization, you can promote that package to a `view` and set its visibility to `People in my organization`. See [Get started with feed views](./views.md#get-started-with-feed-views) for more information.
