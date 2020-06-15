@@ -285,7 +285,7 @@ The following table lists the recommended settings to make based on the team lev
 
 
 > [!NOTE]
-> By setting the Default Iteration to **@CurrentIteration**, all work items created from the team's backlog or board are assigned to the current iteration based on the current date. By setting the Backlog Iteration to the root, **Fabrikam**, indicates that only the Area Path acts as a filter for work items to appear on the team backlogs and boards. 
+> By setting the Default Iteration to **\@CurrentIteration**, all work items created from the team's backlog or board are assigned to the current iteration based on the current date. By setting the Backlog Iteration to the root, **Fabrikam**, indicates that only the Area Path acts as a filter for work items to appear on the team backlogs and boards. 
 
 
 1. From the **Project Settings** page, choose **Team configuration**.  
