@@ -45,5 +45,5 @@ To change a policy, you need at least Basic access and organization Owner or Pro
 
 - [Need help?](faq-configure-customize-organization.md#get-support)
 - [Assign access levels and extensions by group membership](assign-access-levels-and-extensions-by-group-membership.md)
-- [Manage Conditional Access](change-application-access-policies.md.md)
+- [Manage Conditional Access](change-application-access-policies.md)
 - [Change application access policies](change-application-access-policies.md).

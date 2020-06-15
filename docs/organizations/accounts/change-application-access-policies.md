@@ -2,7 +2,7 @@
 title: Change application access, security policies for organizations
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
-description: Manage policies for security, like conditional access, and alternate authentication, like OAuth, SSH, and personal access tokens (PATs) so you don't have to enter user credentials multiple times.
+description: Manage policies for security, like conditional access, and alternate authentication, like OAuth, SSH, and personal access tokens (PATs) so you don't have to enter user credentials many times.
 ms.technology: devops-accounts
 ms.assetid: 2fdfbfe2-b9b2-4d61-ad3e-45f11953ef3e
 ms.topic: conceptual
@@ -18,7 +18,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
-In this article, learn how to manage the policies that determine which applications can integrate with services and resources in your organization, as well as your security policies. 
+In this article, learn how to manage your security policies and the policies that determine which applications can integrate with services and resources in your organization.
 
 ## Application connection policies
 
@@ -26,16 +26,15 @@ To access your organization without asking for user credentials multiple times, 
 
 * [OAuth](../../integrate/get-started/authentication/oauth.md) to generate tokens for accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md). The [Organizations](/rest/api/azure/devops/account) and [Profiles](/rest/api/azure/devops/profile/) APIs support only OAuth.
 
-* [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for using Linux, macOS, and Windows running [Git for Windows](https://www.git-scm.com/download/win), but you can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) for HTTPS authentication.
+* [**SSH authentication**](../../repos/git/use-ssh-keys-to-authenticate.md) to generate encryption keys for using Linux, macOS, and Windows running [Git for Windows](https://www.git-scm.com/download/win), but you can't use [Git credential managers](../../repos/git/set-up-credential-managers.md) or [personal access tokens](use-personal-access-tokens-to-authenticate.md) (PATs) for HTTPS authentication.
  
-* [Personal access tokens](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
+* [**PATs**](use-personal-access-tokens-to-authenticate.md) to generate tokens for:
 
    * Accessing specific resources or activities, like builds or work items
    * Clients like Xcode and NuGet that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication
    * Accessing [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md)
 
-> To remove access for personal access tokens,
-> you must [revoke them](use-personal-access-tokens-to-authenticate.md).
+To remove access for PATs, you must [revoke them](use-personal-access-tokens-to-authenticate.md).
 
 You can [restrict Azure AD users from creating new organizations](azure-ad-tenant-policy-restrict-org-creation.md), and for Web flows, CAP is honored 100%. For third-party client flow, like using a PAT with git.exe, we support IP fencing policies - we don't support MFA policies. See the following examples:
 - Policy 1 - Block all access from outside of IP range x, y, and z.
