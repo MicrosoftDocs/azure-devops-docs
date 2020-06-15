@@ -210,7 +210,7 @@ Microsoft-hosted agents run on secure Azure platform. However, you must be aware
 - Although Microsoft-hosted agents run on Azure public network, they are not assigned public IP addresses. So, external entities cannot target Microsoft-hosted agents. 
 - Microsoft-hosted agents are run in individual VMs, which are re-imaged after each run. Each agent is dedicated to a single organization, and each VM hosts only a single agent.
 - There are several benefits to running your pipeline on Microsoft-hosted agents, from a security perspective. If you run untrusted code in your pipeline, such as contributions from forks, it is safer to run the pipeline on Microsoft-hosted agents than on self-hosted agents that reside in your corporate network.
-- When a pipeline needs to access your corporate resources behind a firewall, you have to whitelist the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
+- When a pipeline needs to access your corporate resources behind a firewall, you have to allow the IP address range for the Azure geography. This may increase your exposure as the range of IP addresses is rather large and since machines in this range can belong to other customers as well. The best way to prevent this is to avoid the need to access internal resources.
 - Hosted images do not conform to [CIS hardening benchmarks](https://www.cisecurity.org/benchmark/azure/). To use CIS-hardened images, you must create either self-hosted agents or scale-set agents.
 
 ## Capabilities and limitations
@@ -298,13 +298,13 @@ Your local machine probably has all the right dependencies installed on it, wher
 
 Microsoft-hosted agents only have 10 GB of disk space available for running your job. This space is consumed when you check out source code, when you download packages, when you download docker images, or when you produce intermediate files. Unfortunately, we cannot increase the free space available on Microsoft-hosted images. You can restructure your pipeline so that it can fit into this space. Or, you can consider using [self-hosted agents](agents.md) or [scale set agents](scale-set-agents.md).
 
-### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to whitelist in our firewall?
+### My pipeline running on Microsoft-hosted agents requires access to servers on our corporate network? How do we get a list of IP addresses to allow in our firewall?
 
 See the section [Agent IP ranges](#agent-ip-ranges)
 
 ### Our pipeline running on Microsoft-hosted agents is unable to resolve the name of a server on our corporate network. How can we fix this?
 
-If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) whitelisted.
+If you refer to the server by its DNS name, then make sure that your server is publicly accessible on the Internet through its DNS name. If you refer to your server by its IP address, make sure that the IP address is publicly accessible on the Internet. In both cases, ensure that any firewall in between the agents and your corporate network has the [agent IP ranges](#agent-ip-ranges) allowed.
 
 <a name="mac-pick-tools"></a>
 
