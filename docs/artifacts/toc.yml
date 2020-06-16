@@ -58,7 +58,7 @@
   items:
   - name: NuGet quickstart
     href: get-started-nuget.md
-  - name: Publish to a NuGet feed
+  - name: Publish to a NuGet feed (YAML/Classic)
     href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   - name: Publish a NuGet package from the command line
     href: nuget/publish.md
