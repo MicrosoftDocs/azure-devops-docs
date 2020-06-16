@@ -236,10 +236,12 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("YOUR EMAIL", $patToken)
     ```
 
-3. Run the following command within PowerShell. The script will create a new PowerShell Repository named `PowershellAzureDevopsServices` and sets the Publish and Source Location as the links to the NuGet feed. This link can also be found by clicking on _Connect to Feed_ within the feeds page in Azure Artifacts.
+3. Run the following command within PowerShell after having replaced `<org_name>` and `<feed_name>` with your specific values. The script will create a new PowerShell Repository named `PowershellAzureDevopsServices` and sets the Publish and Source Location as the links to the NuGet feed. This link can also be found by clicking on _Connect to Feed_ within the feeds page in Azure Artifacts.
 
     ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    $orgName = '<org_name>'
+    $feedName = '<feed_name>'
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/$orgName/_packaging/$feedName/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/$orgName/_packaging/$feedName/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
     
     > [!NOTE]
@@ -248,7 +250,9 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     If you're still using the older ```visualstudio.com``` URLs, use this command instead:
 
     ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+    $orgName = '<org_name>'
+    $feedName = '<feed_name>'
+    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://$orgName.pkgs.visualstudio.com/_packaging/$feedName/nuget/v2" -PublishLocation "https://$orgName.pkgs.visualstudio.com/_packaging/$feedName/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
 
     > [!TIP]
