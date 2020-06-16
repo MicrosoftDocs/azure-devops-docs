@@ -157,6 +157,16 @@ landingContent:
             url: ./plans/review-team-plans.md
           - text: Implement Scaled Agile Framework®
             url: ./plans/scaled-agile-framework.md
+  - title: Troubleshoot
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fix re-ordering and nesting issues
+            url: ./backlogs/resolve-backlog-reorder-issues.md
+          - text: Set up your Backlogs and Boards
+            url: ./backlogs/set-up-your-backlog.md
+          - text: FAQs 
+            url: faqs.md
   - title: Quick reference
     linkLists:
       - linkListType: reference
@@ -169,16 +179,6 @@ landingContent:
             url: ./work-items/guidance/work-item-field.md
           - text: Default work tracking permissions
             url: ../organizations/security/permissions-access-work-tracking.md
-  - title: Troubleshoot
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Fix re-ordering and nesting issues
-            url: ./backlogs/resolve-backlog-reorder-issues.md
-          - text: Set up your Backlogs and Boards
-            url: ./backlogs/set-up-your-backlog.md
-          - text: FAQs 
-            url: faqs.md
   - title: Developer resources
     linkLists:
       - linkListType: reference
