@@ -1,7 +1,7 @@
 ---
-title: Quickstart guide to customizing your board
+title: Quickstart guide to configure and manage your project  
 titleSuffix: Azure Boards 
-description: Customize your issues board to show fields, add columns, and change card color
+description: Understand how to manage your project
 ms.custom: boards-get-started
 ms.technology: devops-new-user 
 ms.assetid: 
