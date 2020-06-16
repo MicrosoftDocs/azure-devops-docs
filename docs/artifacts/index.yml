@@ -5,13 +5,13 @@ summary: Code once and share packages across your organization. Host your privat
 
 metadata:
   title: Azure Artifacts documentation
-  description:  Code once and share your packages NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds. 
+  description: Code once and share your packages NuGet, npm, Maven, Python, and Universal packages with Azure Artifacts for more reliable and scalable builds. 
   ms.prod: devops 
   ms.technology: devops-artifacts
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 06/04/2020 
+  ms.date: 06/16/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 # Schema location: https://static.docs.com/ui/latest/schemas/Landing.schema.json
@@ -20,12 +20,14 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Azure Artifacts
+  - title: Get started with Azure Artifacts
     linkLists:
-      - linkListType: get-started
+      - linkListType: concept
         links:
           - text: What is Azure Artifacts?
             url: overview.md
+      - linkListType: quickstart
+        links:
           - text: Sign up for Azure Artifacts
             url: sign-up-azure-artifacts.md
           - text: Best practices for using Azure Artifacts
@@ -34,14 +36,16 @@ landingContent:
             url: ../pipelines/artifacts/artifacts-overview.md
           - text: Limits on package sizes and counts
             url: ./reference/limits.md
-  - title: Artifact Feeds
+  - title: Configure Feeds
     linkLists:
-    - linkListType: get-started
+    - linkListType: concept
       links:
         - text: What are feeds?
           url: ./concepts/feeds.md
         - text: What are feed views?
           url: ./concepts/views.md
+    - linkListType: quickstart
+      links:
         - text: Set feeds and views permissions
           url: ./feeds/feed-permissions.md
         - text: Understanding upstream sources
