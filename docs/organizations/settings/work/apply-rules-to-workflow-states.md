@@ -537,6 +537,9 @@ When specifying one of the two conditions based on user or group membership, `Cu
 
 To automate State transitions of parent work items based on the State assignments made to their child work items, you can add a web hook and use the code and configuration provided in the [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project. 
 
+> [!NOTE]   
+> The [Automate State Transitions](https://github.com/microsoft/azure-boards-automate-state-transitions) GitHub project is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using these extensions, raise them in the GitHub project page.   
+
 
 ## Related articles
 
@@ -549,8 +552,6 @@ To automate State transitions of parent work items based on the State assignment
 
 
 <!---
- 
-
 
 VS1640113: It is not allowed to have multiple rules with the same action type using the same conditions. The rules ['Transition restriction', 'Active state'] have the action type 'ProhibitedValues' using the same conditions. Change the conditions of the rule to fix this error.
 
