@@ -174,7 +174,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
 
 ### How can I use checks for scheduling a stage
-Using the business hours check, you can control the time for start of stage execution. You can achieve the same behavior as [predefined schedule on a stage](../release/triggers?view=azure-devops#stage-scheduled-triggers) in designer releases. 
+Using the business hours check, you can control the time for start of stage execution. You can achieve the same behavior as [predefined schedule on a stage](../release/triggers.md?#stage-scheduled-triggers) in designer releases. 
 
 ### How can I take advance approvals for a stage scheduled to run in future
 This scenario can be enabled 
@@ -183,7 +183,7 @@ This scenario can be enabled
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
 
 ### Can I wait for completion of security scanning on the artifact being deployed
-In order to wait for completion of security scanning on the artifact being deployed, you would need to use an external scanning service like AquaScan. The artifact being deployed would need to be uploaded at a location accessible to the scanning service before the start of checks, and can be identified using one of [the pre-defined variables](../build/variables?view=azure-devops&tabs=yaml#build-variables).
+In order to wait for completion of security scanning on the artifact being deployed, you would need to use an external scanning service like AquaScan. The artifact being deployed would need to be uploaded at a location accessible to the scanning service before the start of checks, and can be identified using one of [the pre-defined variables](../build/variables.md?tabs=yaml#build-variables).
 Using the Invoke REST API check, you can add a check to wait on the API in the security service and pass the artifact identifier as an input.
 
 ### How can I use output variables from previous stages in a check?
