@@ -54,8 +54,12 @@ minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
 
-Also note: the Red Hat Enterprise Linux 6 build of the agent won't run container job.
+> [!NOTE]
+> The Red Hat Enterprise Linux 6 build of the agent won't run container job.
 Choose another Linux flavor, such as Red Hat Enterprise Linux 7 or above.
+
+> [!NOTE]
+> For Windows-based Linux containers, Node.js must be pre-installed.
 
 ### Windows Containers
 

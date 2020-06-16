@@ -388,7 +388,7 @@ To assign or modify several fields, choose Edit from the context menu of one of 
 	> [!div class="mx-imgBorder"]  
 	> ![Edit work items dialog](media/bulk-modify/edit-work-items-new-text-editor.png)  
 
-2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  
+2. From the Query results page, you must save all work items that you bulk-modified. When you bulk modify items from the backlog, they are automatically saved. Work items shown in bold text indicate that local changes have not yet been saved to the data store.  The **Save items** button may be in a different place in the UI than shown in the picture below, depending on the layout of your browser and the specific version in use.
 
     > [!div class="mx-imgBorder"]  
     > ![Query results page, save bulk modified items](media/bulk-modify/query-results-bulk-save-items.png) 
