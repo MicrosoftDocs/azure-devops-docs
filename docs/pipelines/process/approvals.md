@@ -182,4 +182,11 @@ This scneario can be enabled
 2.	When approvals configured on the same resource, then the stage would wait for approvals before starting.
 3.	You can configure both the checks on a resource. The stage would wait on approvals and business hours. It would start in the next scheduled window after approvals are complete. 
 
+### Can I wait for completion of security scanning on the artifact being deployed
+In order to wait for completion of security scanning on the artifact being deployed, you would need to use an external scanning service like AquaScan. The artifact being deployed would need to be uploaded at a location accessible to the scanning service before the start of checks, and can be identified using one of [the pre-defined variables](../build/variables?view=azure-devops&tabs=yaml#build-variables).
+Using the Invoke REST API check, you can add a check to wait on the API in the security service and pass the artifact identifier as an input.
+
+### How can I use output variables from previous stages in a check?
+By default, only pre-defined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
+
 * * *
