@@ -446,15 +446,9 @@ Expressed as JSON, it would look like:
 "dependencies": {
   "<STAGE_NAME>" : {
     "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-    "<JOB_NAME>": {
-      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-      "outputs": {
-        "variable1": "value1",
-        "variable2": "value2",
-      }
-    },
-      "...": {
-    // another job
+    "outputs": {
+        "jobName.stepName.variableName": "variable"
+    }
   }
   },
     "...": {
@@ -559,7 +553,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), ne(stageDependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), ne(stageDependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
