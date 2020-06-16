@@ -52,7 +52,7 @@ landingContent:
           url: ./concepts/upstream-sources.md
         - text: Set up upstream sources
           url: ./how-to/set-up-upstream-sources.md
-  - title: NuGet
+  - title: Publish and consume NuGet packages
     linkLists:
       - linkListType: quickstart
         links:
@@ -68,7 +68,7 @@ landingContent:
             url: ./nuget/consume.md
           - text: Use packages from nuget.org
             url: ./nuget/upstream-sources.md
-  - title: npm
+  - title: Work with npm packages and feeds
     linkLists:
       - linkListType: quickstart
         links:
@@ -84,7 +84,7 @@ landingContent:
             url: ./npm/scopes.md
           - text: Use packages from npmjs.com
             url: ./npm/upstream-sources.md
-  - title: Maven
+  - title: Maven Artifacts and feeds
     linkLists:
       - linkListType: quickstart
         links:
@@ -100,7 +100,7 @@ landingContent:
             url: ./maven/install.md
           - text: Use packages from Maven Central
             url: ./maven/upstream-sources.md 
-  - title: Python
+  - title: Publish Python packages
     linkLists:
       - linkListType: quickstart
         links:
@@ -110,7 +110,7 @@ landingContent:
         links:
           - text: Publish to a Python feed
             url: ../pipelines/artifacts/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-  - title: Universal Packages
+  - title: Publish Universal packages
     linkLists:
       - linkListType: quickstart
         links:
