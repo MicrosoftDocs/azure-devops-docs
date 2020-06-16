@@ -5,7 +5,7 @@ ms.topic: tutorial
 ms.author: v-edkaim
 author: edkaim
 ms.date: 05/22/2020
-monikerRange: '>= tfs-2018'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Use secrets from Azure Key Vault in Azure Pipelines
@@ -127,7 +127,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 ### Create a new pipeline
 
-1. Go to **Pipelines**, and then select **Create Pipeline**.
+1. Go to **Pipelines**, and then select **New Pipeline**.
 
 1. Select the **Azure Repos Git** option.
 
@@ -160,6 +160,8 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 1. Select and authorize the Azure subscription used to create the key vault earlier. Then select the key vault and select **Add** to insert the task at the end of the pipeline. This task connects to your Azure Key Vault and loads its secrets as variables that can be accessed like any other pipeline or environment variables.
 
     ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
+
+     **Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
 
     > [!NOTE]
 	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
