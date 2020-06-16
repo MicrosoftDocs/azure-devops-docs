@@ -1,5 +1,5 @@
 ---
-title: Publishing to NuGet feeds using the Pipeline tasks or Azure DevOps classic 
+title: Publishing to NuGet feeds using the Pipeline tasks or the Classic user interface 
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds. This article will show you how to create a NuGet package, setup package versioning, and publish your symbols and packages to your feed.
@@ -10,7 +10,7 @@ ms.date: 06/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish to NuGet feeds using YAML or Azure DevOps classic 
+# Publish to NuGet feeds (YAML/Classic) 
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-You can publish NuGet packages from your build to NuGet feeds using the Pipeline tasks as well as the Azure DevOps classic. You can publish these packages to: 
+You can publish NuGet packages from your build to NuGet feeds using the Pipeline tasks as well as the Classic user interface. You can publish these packages to: 
 
 * Azure Artifacts or the TFS Package Management service.
 * Other NuGet services such as NuGet.org.
