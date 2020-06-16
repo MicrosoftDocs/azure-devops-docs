@@ -179,7 +179,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Troubeshoot builds and releases
-            url: troubleshooting.md
+            url: troubleshooting/troubleshooting.md
           - text: Run a release in debug mode
             url: ./release/variables.md#run-a-release-in-debug-mode
           - text: Troubleshoot Azure Resource Manager service connections

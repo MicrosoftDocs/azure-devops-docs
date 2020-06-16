@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 03/02/2020
+ms.date: 06/09/2020
 ---
 
 # Logging commands
@@ -17,6 +17,12 @@ The general format for a logging command is:
 
 ```
 ##vso[area.action property1=value;property2=value;...]message
+```
+
+There are also a few formatting commands with a slightly different syntax:
+
+```
+##[command]message
 ```
 
 To invoke a logging command, echo the command via standard output.
@@ -37,6 +43,32 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 ---
 
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
+
+## Formatting commands
+
+These commands are messages to the log formatter in Azure Pipelines.
+They mark specific log lines as errors, warnings, collapsible sections, and so on.
+
+The formatting commands are:
+
+```
+##[group]Beginning of a group
+##[warning]Warning message
+##[error]Error message
+##[debug]Debug-only text
+##[command]Command-line being run
+##[endgroup]
+```
+
+Those commands will render in the logs like this:
+
+![Screenshot of logs with custom formatting](media/log-formatting.png)
+
+That block of commands can also be collapsed, and looks like this:
+
+![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
+
+The debug line will only appear if you run the pipeline with diagnostics turned on.
 
 ## Task commands
 

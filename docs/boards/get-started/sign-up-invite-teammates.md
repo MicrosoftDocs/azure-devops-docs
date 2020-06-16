@@ -8,7 +8,6 @@ ms.topic: quickstart
 ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
-ms.topic: quickstart
 monikerRange: 'azure-devops'
 ms.date: 12/13/2019
 ---
