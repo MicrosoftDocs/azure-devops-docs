@@ -174,7 +174,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
 
 ### How can I use checks for scheduling a stage
-Using the business hours check, you can control the time for start of stage execution. You can achieve the same behavior as [A predefined schedule on a stage](../release/triggers?view=azure-devops#stage-scheduled-triggers) in designer releases. 
+Using the business hours check, you can control the time for start of stage execution. You can achieve the same behavior as [predefined schedule on a stage](../release/triggers?view=azure-devops#stage-scheduled-triggers) in designer releases. 
 
 ### How can I take advance approvals for a stage scheduled to run in future
 This scneario can be enabled 
