@@ -24,6 +24,8 @@
   items:
   - name: What are feeds?
     href: concepts/feeds.md
+  - name: Understanding project-scoped feeds
+    href: feeds/project-scoped-feeds.md
   - name: What are feed views?
     href: concepts/views.md
   - name: Create a private PowerShell repository

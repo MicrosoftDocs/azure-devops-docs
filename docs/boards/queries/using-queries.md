@@ -9,7 +9,6 @@ monikerRange: ">= tfs-2013"
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
 ms.date: 10/16/2019
 ---
 

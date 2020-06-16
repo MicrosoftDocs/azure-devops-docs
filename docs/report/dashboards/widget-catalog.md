@@ -1,7 +1,6 @@
 ---
 title: Catalog of widgets you can add to a dashboard
 titleSuffix: Azure DevOps
-ms.custom: Widget catalog
 description: Determine which widgets you want to add to your dashboards when working in Azure DevOps or Team Foundation Server  
 ms.custom: dashboards
 ms.technology: devops-analytics
