@@ -1,16 +1,16 @@
 ---
-title: Publishing to NuGet feeds
+title: Publishing to NuGet feeds using the Pipeline tasks or Azure DevOps classic 
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publishing NuGet packages to Azure Artifacts or other NuGet feeds. This article will show you how to create a NuGet package, setup package versioning, and publish your symbols and packages to your feed.
 services: vsts
 ms.assetid: 29101A33-7C17-437C-B61D-DF7AA4CB9EA2
 ms.topic: conceptual
-ms.date: 06/10/2020
+ms.date: 06/16/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish to NuGet feeds
+# Publish to NuGet feeds using YAML or Azure DevOps classic 
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
@@ -18,7 +18,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-You can publish NuGet packages from your build to NuGet feeds. You can publish these packages to: 
+You can publish NuGet packages from your build to NuGet feeds using the Pipeline tasks as well as the Azure DevOps classic. You can publish these packages to: 
 
 * Azure Artifacts or the TFS Package Management service.
 * Other NuGet services such as NuGet.org.
@@ -26,7 +26,7 @@ You can publish NuGet packages from your build to NuGet feeds. You can publish t
 
 ## Create a NuGet package
 
-There are various ways to create NuGet packages during a build. If you're already using MSBuild or some other task to create your packages, skip this section and [publish your packages](#publish-packages). Otherwise, add a **NuGet** task:
+There are various ways to create NuGet packages during a build. If you're already using MSBuild or some other task to create your packages, skip this section and [publish your packages](#publish-packages). Otherwise, add a [NuGet task](../tasks/package/nuget.md):
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -54,7 +54,9 @@ YAML is not supported in TFS.
 #### [Classic](#tab/classic/)
 Add the **NuGetAuthenticate** and **NuGet** tasks to your build in order to create a NuGet package. Make sure to add these below the task that builds your application and above any tasks that require the packages you build.
 
-The NuGetAuthenticate task will use the build credentials by default so you won't need to add your build credentials. See the [task documentation](../tasks/package/nuget-authenticate.md) to learn more. If you need to, you can add service connections to connect to feeds outside your organization. See the full [service connection documentation](../library/service-endpoints.md) for more information on service connections. 
+The NuGetAuthenticate task will use the build credentials by default so you won't need to add your build credentials. See the [task documentation](../tasks/package/nuget-authenticate.md) to learn more.
+
+If you need to, you can add service connections to connect to feeds outside your organization. See the full [service connection documentation](../library/service-endpoints.md) for more information on service connections. 
 
 The NuGet task supports a number of options. The following list describes some of the key ones. The [task documentation](../tasks/package/nuget.md) describes the rest.
 
@@ -207,6 +209,7 @@ To publish to an external NuGet feed, you must first create a service connection
 
 To publish to an external NuGet feed, you must first create a service connection to point to that feed. You can do this by going to **Project settings**, selecting **Services**, and then creating a **New service Endpoint**. Select the **NuGet** option for the service connection. To connect to the feed, fill in the feed URL and the API key or token.
 
+> [!NOTE]
 > If you are running TFS Update 2 or older, **Nuget** is not a service endpoint option, you must use the **Generic** connection.
 
 ::: moniker-end
