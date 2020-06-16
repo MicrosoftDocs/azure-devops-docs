@@ -159,15 +159,10 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select and authorize the Azure subscription used to create the key vault earlier. Then select the key vault and select **Add** to insert the task at the end of the pipeline. This task connects to your Azure Key Vault and loads its secrets as variables that can be accessed like any other pipeline or environment variables.
 
-  :::moniker range="< azure-devops-2020"
-  ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
-  :::moniker-end
-  :::moniker range="azure-devops"
-  This is for services img
-  :::moniker-end
+    ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
-  > [!NOTE]
-  > This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
+    > [!NOTE]
+	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
 
 1. It's important to note that Azure Pipelines protects your secrets, even when using them in the context of a pipeline. You can easily insert them into configurations or as parameters for other tasks, but they won't be printed to pipeline logs that might be inadvertently shared with others. To illustrate this, add the tasks below to the end of the pipeline. They will print the password secret to a file and then publish the file for review so we can confirm that the secret made it all the way through the chain.
 
