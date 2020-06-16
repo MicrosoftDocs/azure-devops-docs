@@ -75,7 +75,10 @@ Review this article to understand how to define rules that apply when you change
 
 The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
-The second group supports restricting state transitions. This group allows you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
+The second and third groups support restricting state transitions. These two groups allow you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
+
+> [!NOTE]   
+> State restriction rules are in private preview. If you are interested in participating in the private preview, [email us](dahellem@microsoft.com) directly with your organization name.
 
 ---
 :::row:::
@@ -296,8 +299,6 @@ The rule requirements translate to the following four rule definitions.
 :::row-end:::  
 
 ---  
-
-
 
 
 ::: moniker range="azure-devops"
