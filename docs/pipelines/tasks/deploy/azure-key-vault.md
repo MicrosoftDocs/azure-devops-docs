@@ -44,7 +44,9 @@ Add secrets to a key vault:
 
 * By using the Azure CLI. To add a secret to a key vault, for example a secret named **SQLPassword** with the value **Pa$$w0rd**, type:
 
-  `az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'`
+  ```azurecli
+  az keyvault secret set --vault-name 'ContosoKeyVault' --name 'SQLPassword' --value 'Pa$$w0rd'
+  ```
 
 When you want to access secrets:
 
