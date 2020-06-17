@@ -16,4 +16,4 @@ monikerRange: '>= tfs-2015'
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | VS 2017 | VS 2015 | VS 2013
 
-See [the Git overview](../../repos/git/overview.md).
+See [the Git overview](../../repos/git/index.yml).

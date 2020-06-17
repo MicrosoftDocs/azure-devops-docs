@@ -1,12 +1,12 @@
 ---
 title: Start Using Azure Artifacts 
-description: Quickly start hosting NuGet, npm, or Maven packages in Team Foundation Server
+description: Quickly start hosting NuGet, npm, Python, Maven, or Universal packages in Azure Artifacts. Find out the prerequisites to start using Azure Artifacts as well as details on billing, how to pay for the service, and a FAQ section. 
 ms.technology: devops-artifacts
 ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 09/03/2019
+ms.date: 06/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,6 +29,7 @@ Ensure that the following statements are true:
 
 - [Billing is set up for your organization](../organizations/billing/set-up-billing-for-your-organization-vs.md)
 - You have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md)
+- Your network connection is set up to [allow certain IP addresses and domain URLs](../organizations/security/allow-list-ip-url.md).
 
 ::: moniker-end
 
@@ -40,14 +41,15 @@ Users with a Basic license can use Azure Artifacts on-premises without needing t
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Azure Artifacts is an *extension* to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
+Azure Artifacts is an **extension** to TFS. The Azure Artifacts extension comes pre-installed in TFS 2017 and 2018.
 
-Azure Artifacts is required for each user that consumes packages from (e.g., nuget restore or npm install) or produces packages to (e.g., nuget push or npm publish) Azure Artifacts feeds. Azure Artifacts is also required for each user that consumes or publishes symbols.
+Azure Artifacts is required for each user that consumes or publishes packages to/from Azure Artifacts feeds as well as user that consumes or publishes symbols. The service currently supports the following package types: NuGet, npm, Python, Maven, and Universal packages.
 
 ## Install Azure Artifacts in TFS
 
-Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrade to TFS 2017 in order to use Azure Artifacts.
+Azure Artifacts is installed by default for TFS 2017 customers. You must upgrade to TFS 2017 in order to use Azure Artifacts.
 
+> [!NOTE]
 > If the Azure Artifacts extension has been removed, you can install it from the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed).
 
 ## Assign licenses in TFS
@@ -59,7 +61,7 @@ Azure Artifacts is installed by default for TFS 2017 customers.  You must upgrad
 2. Select **Assign**, enter the user to whom you want to assign licenses, and then select **Ok.**
 
    * Users with Visual Studio Enterprise subscriptions get Azure Artifacts automatically.  
-   * [Ensure that your Visual Studio Enterprise subscribers are assigned VSE access level](../organizations/security/change-access-levels.md).
+   * Ensure that your Visual Studio Enterprise subscribers are assigned **VS Enterprise** [Access level](../organizations/security/change-access-levels.md).
 
 ::: moniker-end
 
@@ -74,7 +76,7 @@ Azure Artifacts includes a free usage tier of 2 GB. Any usage below this level i
 
 ## View Billed Storage
 
-See your storage bill for Azure Artifacts.
+To see your storage bill for Azure Artifacts:
  
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
  
@@ -92,22 +94,22 @@ See your storage bill for Azure Artifacts.
    
 ## View Used Storage 
 
-Navigate and understand your used Azure Artifacts storage. 
+To navigate and understand your used Azure Artifacts storage: 
 
 1. In the same ![gear icon](../media/icons/gear-icon.png) **Organization settings** tab, select **Storage** under the Artifacts tab. 
 
-2. Review a breakdown of the different types of storage your organization is currently using. See the FAQs below for information on what artifacts count towards your storage total. 
+2. Review a breakdown of the different types of storage your organization is currently using. See the [FAQs](#faqs) below for information on what artifacts count towards your storage total. 
 
 
 ## Pay for Artifacts
 
-Each organization gets Azure Artifacts for free, up until they hit 2 GB of storage. If you need more than 2 GB, complete the following steps to set up billing.
+Each organization gets Azure Artifacts for free, up until they hit 2 GB of storage. If you need more than 2 GB, complete the following steps to set up billing:
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```). 
+1. Sign in to your organization `https://dev.azure.com/{yourorganization}`. 
  
-2. Repeat steps #2 and #3 from [View billed storage](#view-billed-storage).
+2. Repeat steps **#2** and **#3** from [View billed storage](#view-billed-storage).
  
-3. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Then, select **Save**. You're only charged for the storage you use, up to the limit. 
+3. Find Artifacts, under Resources, and increase the usage limit above the free tier, by selecting from the dropdown menu. Select **Save** when you are done. You will only be charged for the storage you use up to the limit.
 
    ![Increase artifacts beyond the free tier with the dropdown menu](media/increase-artifacts-beyond-free-tier.png)
 
@@ -143,7 +145,7 @@ For more information, see [Delete and recover packages in Azure Artifacts](how-t
 
 ### Q: What happens if I remove my Azure Subscription from my Azure DevOps organization?
 
-A: If you remove your Azure Subscription from your Azure DevOps organization, you'll only have access to the free tier of storage (< 2GB). If you have above 2 GB of used storage, you can read packages, but you can't push until you either get your usage below 2 GB, or reconnect an Azure subscription to your organization and increase your storage tier appropriately.
+A: If you remove your Azure Subscription from your Azure DevOps organization, you'll only have access to the free tier of storage (< 2 GB). If you have above 2 GB of used storage, you can read packages, but you can't push until you either get your usage below 2 GB, or reconnect an Azure subscription to your organization and increase your storage tier appropriately.
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 

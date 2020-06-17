@@ -41,7 +41,7 @@ We made an adjustment to both the Kanban board and Taskboard to implement respon
 
 ## Bugs on the Taskboard
 
-Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](../2014/nov-04-team-services.md##bugs-on-the-backlog) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
+Late last year we started work on a set of features designed to provide you with flexibility around how [bug work items show up on your backlogs](../2014/nov-04-team-services.md#bugs-on-the-backlog) and boards. Today’s deployment brings a new option that lets you choose to have bugs show up on your Taskboard just like tasks. In this mode, bugs that are children of requirements (stories, PBIs, etc.) are added to the Taskboard swim lane for the appropriate requirement.
 
 ![Bugs in the appropriate swim lanes on the Taskboard](media/3_10_05.png)
 

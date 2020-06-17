@@ -161,7 +161,7 @@ extends:
 
 ### Use the output variable from a job in a condition in a subsequent job
 
-You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable). 
+You can make a variable available to future jobs and specify it in a condition. Variables available to future jobs must be marked as [multi-job output variables](/azure/devops/pipelines/process/variables#set-a-multi-job-output-variable) using `isOutput=true`. 
 
 ```yaml
 jobs:
@@ -169,16 +169,16 @@ jobs:
   steps:
   - script: |
       echo "This is job Foo."
-      echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #The variable doThing is set to true
+      echo "##vso[task.setvariable variable=doThing;isOutput=true]Yes" #set variable doThing to Yes
     name: DetermineResult
 - job: Bar
   dependsOn: Foo
-  condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check if true
+  condition: eq(dependencies.Foo.outputs['DetermineResult.doThing'], 'Yes') #map doThing and check the value
   steps:
-  - script: echo "Job Foo ran and doThing is true."
+  - script: echo "Job Foo ran and doThing is Yes."
 ```
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

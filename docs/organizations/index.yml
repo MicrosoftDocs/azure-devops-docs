@@ -24,7 +24,6 @@ landingContent:
         links:
           - text: About settings
             url: ./settings/about-settings.md
-    linkLists:
       - linkListType: quickstart
         links:
           - text: Set user preferences

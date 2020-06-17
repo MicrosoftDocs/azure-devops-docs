@@ -2,10 +2,8 @@
 title: Search code, work items, or wiki
 titleSuffix: Azure DevOps
 description: Find code or work items quickly in Azure DevOps
-ms.assetid: 
 ms.custom: Navigation
 ms.technology: devops-collab
-ms.assetid: 
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

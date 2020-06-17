@@ -334,7 +334,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
@@ -376,7 +376,7 @@ The Publish Test Results task provides support for attachments for both test run
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
-## Frequently Asked Questions
+## FAQ
 
 #### What is the maximum permittable limit of FQN?
 

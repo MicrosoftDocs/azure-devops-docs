@@ -53,7 +53,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your project adds them to the Contributor group. When managing a large group of users, use <a href="../organizations/security/permissions.md" data-raw-source="[built-in groups to manage users and their permissions](../organizations/security/permissions.md)">built-in groups to manage users and their permissions</a>.</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to <a href="../organizations/accounts/add-team-members.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-team-members.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
+<p>To share and contribute to your project, add users to <a href="../organizations/security/add-users-team-project.md" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
 <img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 <p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
@@ -1986,7 +1986,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Provide team guidance through <a href="../project/wiki/markdown-guidance.md" data-raw-source="[Welcome](../project/wiki/markdown-guidance.md)">Welcome</a> (Markdown format) pages and add team <a href="../report/dashboards/dashboards.md" data-raw-source="[dashboards](../report/dashboards/dashboards.md)">dashboards</a> to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed <a href="../repos/git/index.md" data-raw-source="[Git repositories](../repos/git/index.md)">Git repositories</a> or <a href="../repos/tfvc/index.md" data-raw-source="[Team Foundation version control](../repos/tfvc/index.md)">Team Foundation version control</a>.  to </p>
+<p>Manage source code using distributed <a href="../repos/git/index.yml" data-raw-source="[Git repositories](../repos/git/index.yml)">Git repositories</a> or <a href="../repos/tfvc/index.yml" data-raw-source="[Team Foundation version control](../repos/tfvc/index.yml)">Team Foundation version control</a>.  to </p>
 
 <p><b>Work</b></p>
 <p>Plan and track work by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[creating a product backlog](../boards/backlogs/create-your-backlog.md)">creating a product backlog</a>, and managing work using <a href="../boards/boards/kanban-basics.md" data-raw-source="[Kanban](../boards/boards/kanban-basics.md)">Kanban</a> or <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[Scrum](../boards/sprints/assign-work-sprint.md)">Scrum</a> processes. Find work items you want to review or update by <a href="../boards/queries/using-queries.md" data-raw-source="[creating queries](../boards/queries/using-queries.md)">creating queries</a>, or visualize progress by <a href="../report/dashboards/charts.md" data-raw-source="[creating query-based charts](../report/dashboards/charts.md)">creating query-based charts</a>  </p>
