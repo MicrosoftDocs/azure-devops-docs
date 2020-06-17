@@ -42,6 +42,8 @@ If you have an Azure Pipeline that produces artifacts, you can consume the artif
 
 In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. 
 
+For an alternative way to download pipelines, see tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
+
 ## [Schema](#tab/schema)
 
 ```yaml
