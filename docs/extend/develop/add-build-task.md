@@ -748,7 +748,7 @@ For some of these tasks you will need a Visual Studio Marketplace service connec
     - Artifact name: The name you would like to give your artifact.
     - Arifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
 
-### Downloading Build Artifacts and Publishing the Extension
+#### Downloading Build Artifacts and Publishing the Extension
 
 - To download the artifacts onto a new job, use the 'Download build artifacts' task.
     - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading  on a new pipeline, pick 'Specific build'.
