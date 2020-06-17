@@ -40,7 +40,7 @@ This API does content negotiation based on the `Accept` header you send.
 <a name="afile" />
 
 ```no-highlight
-https://{instance}/DefaultCollection/{project}/_apis /repos/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
+https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={filePath}[&includeContentMetadata={bool}&lastProcessedChange={bool}]
 ```
 
 | Parameter              | Type    | Default | Notes
@@ -107,7 +107,7 @@ Set `scopePath` to the folder that you want to get in a zipped format and includ
 Accept: application/zip
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopePath={folderPath}
 ```
 
 You can get a .zip file that contains the contents of a [specific version](#getaspecificversion) of folder, too.
@@ -124,7 +124,7 @@ Set the accept header to `application/json` to get the metadata for a file, or f
 Accept: application/json
 ```
 ```no-highlight
-GET https://{instance}/DefaultCollection/{project}/_apis/repos/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
+GET https://{instance}/DefaultCollection/{project}/_apis/git/repositories/{repository}/items?api-version={version}&scopepath=/mywebsite/mywebsite/views/home/_home.cshtml
 ```
 
 #### Response
