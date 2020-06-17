@@ -41,6 +41,17 @@ jobs:
   condition: failed() # this job will only run if Foo fails
 ```
 
+You can also use variables in conditions. 
+
+```yaml
+
+variables:
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+steps:
+  - script: echo Hello!
+    condition: and(variables.isMain, succeeded())
+```
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
