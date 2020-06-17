@@ -25,7 +25,7 @@ In this tutorial, you learn about:
 
 [!INCLUDE [include](../includes/azure-prerequisites.md)]
 
-* An Azure DevOps organization. If you don't have one, you can [create one for free](../../get-started/pipelines-sign-up.md). 
+* An Azure DevOps organization. If you don't have one, you can [create one for free](../get-started/pipelines-sign-up.md). 
 
 <a name="creating-azure-key-vault"></a>
 
@@ -151,7 +151,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
     ![Showing the pipeline assistant](media/azure-key-vault/show-assistant.png)
 
-1. Search for **vault** and select the **Azure Key Vault** task.
+1. Search for **vault** and select the [**Azure Key Vault**](../tasks/deploy/azure-key-vault.md) task.
 
     ![Selecting the Azure Key Vault task](media/azure-key-vault/azure-key-vault-task.png)
 
