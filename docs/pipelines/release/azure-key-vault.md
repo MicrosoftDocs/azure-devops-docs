@@ -10,11 +10,7 @@ monikerRange: '>= azure-devops-2019'
 
 # Use secrets from Azure Key Vault in Azure Pipelines
 
-[!INCLUDE [version-tfs-2018](../includes/version-tfs-2018.md)]
-
-::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../includes/concept-rename-note.md)]
-::: moniker-end
+[!INCLUDE [version-server-2019-rtm](../includes/version-server-2019-rtm.md)]
 
 [Azure Key Vault](/azure/key-vault/general/basic-concepts) helps teams to securely store and manage sensitive information such as keys, passwords, certificates, etc., in a centralized storage which are safeguarded by industry-standard algorithms, key lengths, and even hardware security modules. This prevents the disclosure of information through source code, a common mistake that many developers make. Many developers leave confidential details such as database connection strings, passwords, private keys, etc., in their source code which when gained by malicious users can result in undesired consequences. Access to a key vault requires proper authentication and authorization and with RBAC, teams can have even fine granular control who has what permissions over the sensitive data.
 
