@@ -92,7 +92,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="4"><a href="2020/sprint-171.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
+    <td rowspan="4"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
         <td>Restricted state to state transitions in inherited (phase 1)</td><td>Boards</td><td>TBD</td>
     </tr>
     <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
@@ -4464,7 +4464,6 @@ Versions in the "Server" column are linked to the appropriate download location.
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"] 
-> ![Make a suggestion](media/help-make-a-suggestion.png)
+> [!div class="mx-imgBorder"] > ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

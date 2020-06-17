@@ -8,7 +8,7 @@ ms.topic: include
 
 ### State transition restriction rules (private preview)
 
-We continue to close the feature parity gaps between Hosted XML and the Inherited process model. Starting this sprint, there is a private preview available for customers who want to restrict state transitions in an inherited process. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –&gt; Active -&gt; Resolved
+We continue to close the feature parity gap between hosted XML and the inherited process model. Starting this sprint, a private preview of restricted state transitions for inherited processes is available. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –&gt; Active -&gt; Resolved
 
 ![img](../../media/171-boards-0-0.png)
 
