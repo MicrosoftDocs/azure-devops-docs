@@ -21,7 +21,7 @@ With this update, we have made it easier to authenticate Azure Artifacts with ot
 
 [!INCLUDE [sprint-170-update-links](includes/pipelines/sprint-170-update-links.md)]
 
-### Azue Artifacts
+### Azure Artifacts
 
 [!INCLUDE [sprint-170-update-links](includes/artifacts/sprint-170-update-links.md)]
 

@@ -348,6 +348,8 @@
     href: artifacts/pipeline-artifacts.md
   - name: Build artifacts
     href: artifacts/build-artifacts.md
+  - name: Release artifacts and artifact sources
+    href: release/artifacts.md
   - name: Maven
     href: artifacts/maven.md
   - name: npm
@@ -628,13 +630,13 @@
       - name: NuGet Installer 0.*
         href: tasks/package/prev-versions/nuget-installer-0.md
       - name: NuGet Restore 1.*
-        href: tasks/package/nuget.md#restore-nuget-packages
+        href: tasks/package/nuget.md
       - name: NuGet Packager 0.*
         href: tasks/package/prev-versions/nuget-packager-0.md
       - name: NuGet Publisher 0.*
         href: tasks/package/prev-versions/nuget-publisher-0.md
       - name: NuGet Command 0.*
-        href: tasks/package/nuget.md#custom-nuget-command
+        href: tasks/package/nuget.md
       - name: Pip Authenticate 0.*
         href: tasks/package/prev-versions/pip-authenticate-0.md
       - name: Twine Authenticate 0.*
@@ -741,8 +743,10 @@
       href: tasks/tool/vstest-platform-tool-installer.md
 - name: Troubleshooting
   items:
-  - name: Troubleshoot build & release
-    href: troubleshooting.md
+  - name: Troubleshoot pipeline runs
+    href: troubleshooting/troubleshooting.md
+  - name: Review logs
+    href: troubleshooting/review-logs.md
   - name: Debug deployment issues
     href: release/variables.md#debug-mode
   - name: Troubleshoot Azure connections

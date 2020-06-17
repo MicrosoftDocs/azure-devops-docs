@@ -9,7 +9,7 @@ author: chcomley
 ms.reviewer: gopinach
 ms.topic: reference
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2019
+ms.date: 06/11/2020
 ---
 
 # Syntax guidance for Markdown usage in Wiki
@@ -71,7 +71,6 @@ There's also a toolbar button to add a default Mermaid diagram to a wiki page.
 
 > [!NOTE]
 > Most HTML tags and fontawesome aren't supported in the Mermaid diagram syntax. Mermaid isn't supported in the Internet Explorer browser.
-> Current version of Mermaid used is 8.2.6 
 
 ::: moniker-end
 
