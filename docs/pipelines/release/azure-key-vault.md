@@ -25,6 +25,8 @@ In this tutorial, you learn about:
 
 [!INCLUDE [include](../includes/azure-prerequisites.md)]
 
+* An Azure DevOps organization. If you don't have one, you can [create one for free](../../get-started/pipelines-sign-up.md). 
+
 <a name="creating-azure-key-vault"></a>
 
 ## Create an Azure Key Vault
@@ -155,9 +157,10 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Select and authorize the Azure subscription used to create the key vault earlier. Then select the key vault and select **Add** to insert the task at the end of the pipeline. This task connects to your Azure Key Vault and loads its secrets as variables that can be accessed like any other pipeline or environment variables.
 
-    ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
+    >[!NOTE]
+    >**Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
 
-     **Make secrets available to whole job** is new and is not present in Azure DevOps Server 2019.
+    ![Configuring the Azure Key Vault task](media/azure-key-vault/configure-azure-key-vault-task.png)
 
     > [!NOTE]
 	> This process creates a principal in Azure that will need to be granted access to the key vault. You will authorize those permissions in a later step.
@@ -214,7 +217,7 @@ This pipeline will use YAML, which requires a repo. This repo could theoreticall
 
 1. Return to the browser tab open to the pipeline.
 
-1. Select **Save and run** and confirm the **Save and run**.
+1. Select **Save**, and select **Save** again to commit the change, which triggers the pipeline.
 
 1. Select the running job to follow it through to completion. It should complete pretty quickly since it's just pulling in a secret from the key vault and writing it to a file.  
 
@@ -243,7 +246,7 @@ In this tutorial, you learned how to access secrets from an Azure Key Vault from
 
 This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
 
-1. Delete the Azure DevOps project created by the Azure DevOps Demo Generator.
+1. If you created an Azure DevOps organization (or a project within an existing organization) for this tutorial, you can [delete the organization](../../organizations/accounts/delete-your-organization.md) (or [project](../../organizations/projects/delete-project.md)) if you no longer wish to use it.
 
 1. All Azure resources created during this tutorial were assigned to the **PipelinesKeyVaultResourceGroup** resource group. You may delete this using the portal UI or via the CLI command below.
 
