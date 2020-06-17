@@ -6,7 +6,7 @@ ms.technology: devops-agile
 ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: karrg
-author: RGKarthik
+author: Divais
 monikerRange: 'azure-devops'
 ms.date: 10/24/2019
 ---
@@ -89,7 +89,7 @@ In case the desired area path doesn't appear in the Area path dropdown menu, fol
 
 ## Add area paths
 
-You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. 
+You can add areas that your team works on to the channel so that they are always available for creating work items and subscriptions. This is key mainly  for teams with more than 100 area paths in their project. 
 
 - Use the following command to add area paths from your project to the Teams channel.
 
@@ -141,6 +141,9 @@ This command lists all the current subscriptions for the channel and allows you 
 > [!div class="mx-imgBorder"]  
 > ![View subscriptions](./media/integrations-teams/view-subscriptions.png)
 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
 ## Search and share work items using compose extension
 
 To help users search and share work items, Azure Boards app for Microsoft Teams supports compose extension. You can now search for work items by work item ID or by title. For compose extension to work, users will have to sign into Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
@@ -189,7 +192,15 @@ The following table lists all the `@azure boards` commands you can use in your M
 |@azure boards unlink	| Unlink a project from this channel|
 |@azure boards feedback	| Report a problem or suggest a feature |
 
-## Troubleshoot 
+## Configuring Azure DevOps Services Tabs in Microsoft Teams
+
+1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+
+   <img alt="Add a new tab to Teams channel" src="./media/teams-as-website.png" style="width:80%;" />
+
+2. Once you've authenticated you will see your Kanban board or Dashboard.
+   
+ ## Troubleshoot 
 
 If you are experiencing the following errors when using the [Azure Boards App for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview), follow the procedures in this section.
 

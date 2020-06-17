@@ -42,7 +42,7 @@ variables:
 ```
 
 The difference between these syntaxes is primarily what context is available.
-In a parse time expression, you have access to `parameters` and statically-defined `variables`.
+In a parse time expression, you have access to `parameters` and statically defined `variables`.
 In a runtime expression, you have access to more `variables` but no parameters.
 
 ::: moniker-end
@@ -446,15 +446,9 @@ Expressed as JSON, it would look like:
 "dependencies": {
   "<STAGE_NAME>" : {
     "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-    "<JOB_NAME>": {
-      "result": "Succeeded|SucceededWithIssues|Skipped|Failed|Canceled",
-      "outputs": {
-        "variable1": "value1",
-        "variable2": "value2",
-      }
-    },
-      "...": {
-    // another job
+    "outputs": {
+        "jobName.stepName.variableName": "variable"
+    }
   }
   },
     "...": {
@@ -559,7 +553,7 @@ stages:
        name: printvar
 
 - stage: B
-  condition: and(succeeded(), ne(stageDependencies.A.A1.outputs['printvar.skipsubsequent'], 'true'))
+  condition: and(succeeded(), ne(stageDependencies.A.outputs['A1.printvar.skipsubsequent'], 'true'))
   dependsOn: A
   jobs:
   - job: B1
@@ -630,7 +624,36 @@ This would return:
 
 ## Type casting
 
-Values in an expression may be converted from one type to another. Detailed conversion rules are listed further below.
+Values in an expression may be converted from one type to another as the expression gets evaluated. 
+When an expression is evaluated, the parameters are coalesced to the relevant data type and then turned back into strings. 
+
+For example, in this YAML, the values `true` and `false` are converted  to `1` and `0` when the expression is evaluated. 
+The function `lt()` returns `True` when the left parameter is less than the right parameter. 
+
+```yaml
+variables:
+  firstEval: $[lt(false, true)] # 0 vs. 1, True
+  secondEval: $[lt(true, false)] # 1 vs. 0, False
+
+steps:
+- script: echo $(firstEval)
+- script: echo $
+```
+
+
+In this example, the values `variables.emptyString` and the empty string both evaluate as empty strings. 
+The function `coalesce()` evaluates the parameters in order, and returns the first value that does not equal null or empty-string. 
+
+
+```yaml
+variables:
+  coalesceLiteral: $[coalesce(variables.emptyString, '', 'literal value')]
+
+steps:
+- script: echo $(coalesceLiteral) # outputs literal value
+```
+
+Detailed conversion rules are listed further below.
 
 |          |             | To          |             |             |             |             |
 | -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |

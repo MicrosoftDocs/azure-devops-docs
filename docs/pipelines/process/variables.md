@@ -38,7 +38,7 @@ You can use [templates](templates.md) to define variables that are used in multi
 In addition to user-defined variables, Azure Pipelines has system variables with predefined values. If you are using YAML or classic build pipelines, see [predefined variables](../build/variables.md) for a comprehensive list of system variables. 
 If you are using classic release pipelines, see [release variables](../release/variables.md).
 
-System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable. 
+System variables are set with their current value when you run the pipeline. Some variables are set automatically. As a pipeline author or end user, you change the value of a system variable before the pipeline is run. 
 
 System variables are read-only. 
 
@@ -58,7 +58,7 @@ User-defined variables can consist of letters, numbers, `.`, and `_` characters.
 
 Azure Pipelines supports three different ways to reference variables: macro, template expression, and runtime expression. Each syntax can be used for a different purpose and has some limitations. 
 
-In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. 
+In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. When you use a runtime expression, it must take up the entire right side of a definition. 
 
 In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at runtime before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
 
@@ -101,7 +101,7 @@ You can use template expression syntax to expand both [template parameters](../p
 ### Runtime expression syntax
 You can use runtime expression syntax for variables that are expanded at runtime (`$[variables.var]`). Runtime expression variables silently coalesce to empty strings when a replacement value isn't found. Runtime expressions are designed to be used in the conditions of jobs, to support conditional execution of jobs, or whole stages.
 
-Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`.
+Runtime expression variables are only expanded when they are used for a value, not as a keyword. Values appear on the right side of a pipeline definition. The following is valid: `key: $[variables.value]`. The following isn't valid: `$[variables.key]: value`. The runtime expression must take up the entire right side of a key-value pair. For example, `key: $[variables.value]` is valid but `key: $[variables.value] foo` is not. 
 
 |Syntax|Example|When is it processed?|Where does it expand in a pipeline definition?|How does it render when not found?|
 |---|---|---|---|---|
@@ -373,9 +373,9 @@ Deleted variable 'Configuration' successfully.
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-Don't set secret variables in your YAML file. Use the script's environment in order to pass secrets to the script. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input.
+Don't set secret variables in your YAML file. Operating systems often log commands for the processes that they run, and you wouldn't want the log to include a secret that you passed in as an input. Use the script's environment or map the variable within the `variables` block to pass secrets to your pipeline.
 
-Instead, you should set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline in which you set them. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
+You need to set secret variables in the pipeline settings UI for your pipeline. These variables are scoped to the pipeline in which you set them. You can also set [secret variables in variable groups](#reference-secret-variables-in-variable-groups). 
 
 [!INCLUDE [temp](includes/set-secrets.md)]
 
@@ -415,10 +415,10 @@ The output from the preceding script would look like this:
 This works: ***
 This does not work:
 Global does not work either:
-This works: someValue
+This works: foo
 This works: ***
 ```
-This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
+You can also map secret variables using the `variables` definition. This example shows how to use secret variables `$(vmsUser)` and `$(vmsAdminPass)` in an Azure file copy task. 
 
 ```yaml
 variables:

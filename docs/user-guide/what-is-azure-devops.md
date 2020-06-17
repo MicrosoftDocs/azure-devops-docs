@@ -64,9 +64,9 @@ You can use all the services included with Azure DevOps, or choose just what you
 
 ## Choose Azure DevOps Server
 
-Choose on-premises Azure DevOps Server when you need:
+Choose on-premises Azure DevOps Server when:
 
-- Your data to stay within your network.
+- You need your data to stay within your network.
 - Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
 
 When you deploy Azure DevOps Server, you can also configure the following servers or integration points:

@@ -262,18 +262,18 @@ This section provides troubleshooting tips for common issues that a user might e
 
 One of the available options to diagnose the issue is to take a look at the generated logs. You can view your pipeline logs by selecting the appropriate task and job in your pipeline run summary. 
 
-To get the logs of your pipeline execution [Get logs to diagnose problems](../../troubleshooting.md#get-logs-to-diagnose-problems)
+To get the logs of your pipeline execution [Get logs to diagnose problems](../../troubleshooting/review-logs.md)
 
 You can also setup and download a customized verbose log to assist with your troubleshooting:
 
-* [Configure verbose logs](../../troubleshooting.md#configure-verbose-logs)
-* [View and download logs](../../troubleshooting.md#view-and-download-logs)
+* [Configure verbose logs](../../troubleshooting/review-logs.md#configure-verbose-logs)
+* [View and download logs](../../troubleshooting/review-logs.md#view-and-download-logs)
 
 In addition to the pipeline diagnostic logs, you can also check these other types of logs that contain more information to help you debug and solve the problem:
 
-* [Worker diagnostic logs](../../troubleshooting.md##worker-diagnostic-logs)
-* [Agent diagnostic logs](../../troubleshooting.md##agent-diagnostic-logs)
-* [Other logs](../../troubleshooting.md##other-logs) (Environment and capabilities)
+* [Worker diagnostic logs](../../troubleshooting/review-logs.md#worker-diagnostic-logs)
+* [Agent diagnostic logs](../../troubleshooting/review-logs.md#agent-diagnostic-logs)
+* [Other logs](../../troubleshooting/review-logs.md#other-logs) (Environment and capabilities)
 
 ##### Try to reproduce the error locally
 

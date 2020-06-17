@@ -41,7 +41,7 @@ Connect your favorite development environment to Azure Repos to access your repo
 
 - [Command-line](../git/share-your-code-in-git-cmdline.md)
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team)
-- Visual Studio](../git/share-your-code-in-git-vs-2017.md)
+- [Visual Studio](../git/share-your-code-in-git-vs-2017.md)
 - [Xcode](../git/share-your-code-in-git-xcode.md)
 - [Eclipse](/azure/devops/java/download-eclipse-plug-in)
 - [IntelliJ](/azure/devops/java/download-intellij-plug-in)
