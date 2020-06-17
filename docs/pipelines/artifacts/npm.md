@@ -1,16 +1,16 @@
 ---
-title: Publishing npm packages
+title: Publishing npm packages using the Pipeline tasks or the Classic user interface 
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publishing npm packages to Azure Artifacts or other npm registries
 services: vsts
 ms.assetid: F4C61B91-2C5B-4848-A4BF-B658F549673A
 ms.topic: conceptual
-ms.date: 04/08/2020
+ms.date: 06/17/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Publish npm packages
+# Publish npm packages (YAML/Classic)
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
@@ -73,7 +73,8 @@ To publish to an external npm registry, you must first create a service connecti
 
 * * *
 > [!NOTE]
-> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
+> Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed.  
+> The build does not support using the `publishConfig` property to specify the `registry` to which you're publishing. The build will fail, potentially with unrelated authentication errors, if you include the `publishConfig` property in your `package.json` configuration file.
 
 ## FAQ
 
