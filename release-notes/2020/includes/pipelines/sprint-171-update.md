@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Additional agent platform: ARM64
 
-We added Linux/ARM64 to the list of supported platforms for the Azure Pipelines agent. Although the code changes were minimal, a lot of behind-the-scenes work had to be completed first. This was one of the most-liked, most-commented-on issues in the agent GitHub repository for the past 18 months, and we're excited to announce its release!
+We added Linux/ARM64 to the list of supported platforms for the Azure Pipelines agent. Although the code changes were minimal, a lot of behind-the-scenes work had to be completed first, and we're excited to announce its release!
 
 
 ### Tag filter support for pipeline resources
@@ -38,4 +38,4 @@ For instance, If you have a scheduled trigger set for your CD pipeline that you 
 
 ### Control which tasks are allowed in pipelines
 
-You can now disable Marketplace tasks. Some of you may allow Marketplace extensions, but not the Pipelines tasks they bring along. For even more control, we also allow you to independently disable all in-the-box tasks (except checkout, which is a special action). With both of these settings enabled, the only tasks allowed to run in a pipeline would be those uploaded using <a href="https://www.npmjs.com/package/tfx-cli">tfx</a>.
+You can now disable Marketplace tasks. Some of you may allow Marketplace extensions, but not the Pipelines tasks they bring along. For even more control, we also allow you to independently disable all in-the-box tasks (except checkout, which is a special action). With both of these settings enabled, the only tasks allowed to run in a pipeline would be those uploaded using <a href="https://www.npmjs.com/package/tfx-cli">tfx</a>. Visit `https://dev.azure.com/<your_org>/_settings/pipelinessettings` and look for the section called "Task restrictions" to get started.
