@@ -95,7 +95,7 @@ If users no longer require access to a team, project, or your organization, you 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](manage-users-table-view.md#update-user) | [Show users](manage-users-table-view.md#show-users)
+[Add a user](add-organization-users.md#add-user) | [List users](../security/export-users-audit-log.md#list-users) | [Remove a user](#remove-user) | [Update a user](add-organization-users.md#update-user) | [Show users](add-organization-users.md#show-users)
 
 <a id="remove-user" /> 
 

@@ -68,8 +68,8 @@ Microsoft will transfer your data if it needs to do any of the following actions
 > For builds and releases running on Microsoft-provided macOS agents, your data will be transferred to third party data centers as follows:
 >- US-based users: your data is transferred to a third party US data center
 >- Users from all other countries: your data is transferred to either a third party US data center or European data center
-This data center is owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 report.
 
+These two data center locations are owned and managed by a third party with information security certification assurances, such as ISO 27001 and SOC 2 Type II report.
 
 ## Related articles
 

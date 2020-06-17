@@ -24,7 +24,7 @@ You can update your wiki pages offline the same way you develop code in a Git re
 > GIT workflows, like branch policies, are applicable only for publish code as wiki workflows.
 ::: moniker-end
 
-You can use any client you want or git command-line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.md).
+You can use any client you want or git command-line tools to update your wiki offline. For details on working with Git repositories and supported tools, see [Git Repositories](../../repos/git/index.yml).
 
 The basic steps to update wiki content offline are as follows:
 

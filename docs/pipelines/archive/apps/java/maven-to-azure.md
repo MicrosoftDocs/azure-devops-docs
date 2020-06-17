@@ -115,7 +115,7 @@ On the Build tab, add these tasks:
 
 After a successful build, check your site: ```http://{web_app_name}.azurewebsites.net/{war_file_name}```
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

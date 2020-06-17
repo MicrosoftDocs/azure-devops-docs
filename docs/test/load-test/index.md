@@ -25,7 +25,6 @@ Load test from your preferred UI, and compare the results.
 | | |
 | --- | --- |
 | ![icon](media/visualstudio-icon.png)<br />[Load test with Visual Studio](getting-started-with-performance-testing.md) | ![icon](media/vsts-icon.png)<br />[Load test with Azure DevOps](get-started-simple-cloud-load-test.md) |
-| ![icon](media/azure-icon.png)<br />[Load test with Azure portal](app-service-web-app-performance-test.md) | ![icon](media/reviewresults-icon.png)<br />[View and compare results](performance-reports.md) |
 | | |
 
 ## Videos

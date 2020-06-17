@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 05/04/2020
+ms.date: 06/12/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
@@ -17,7 +17,11 @@ monikerRange: '>= azure-devops'
 
 A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **Jun 15th 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps (only available till **Jun 15th 2020**):
+This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us.
+
+We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
+
+We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
 1. Sign-in into your Azure DevOps Services organization
 2. Click on your Avatar on the top right and navigate to "Preview Features"
@@ -121,7 +125,7 @@ It is now easier to reuse the suites you have created already and import them in
 
 Define tab lets you collate, add and manage test cases for a test suite. Whereas the execute tab is for assigning test points and executing them. 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans]((https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
+> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else should be exercisable by a user with 'Basic' access level.
 
 
 **Tasks** 
@@ -183,7 +187,7 @@ Hence, test cases are reusable entities. By including them in a test plan or sui
 
 One of the primary benefits of the new page is for users who mainly do test execution/tracking (need to have only 'Basic' access level), they are not overwhelmed by the complexity of suite management (define tab is hidden for such users). 
 
-> The Define tab and certain operations are only available to users with [Basic + Test Plans]((https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
+> The Define tab and certain operations are only available to users with [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level or equivalent. Everything else, including the "Execute" tab should be exercisable by a user with 'Basic' access level.
 
 
 **Tasks** 

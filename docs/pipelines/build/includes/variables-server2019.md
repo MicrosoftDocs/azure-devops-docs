@@ -261,7 +261,7 @@ This variable is agent-scoped. It can be used as an environment variable in a sc
 <td>Build.Repository.Provider</td>
 <td>The type of <a href="/azure/devops/pipelines/repos/index" data-raw-source="[repository you selected](../repos/index.md)">repository you selected</a>.
 <ul>
-<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/overview.md)">TFS Git repository</a>
+<li><code>TfsGit</code>: <a href="/azure/devops/repos/git/overview" data-raw-source="[TFS Git repository](../../../repos/git/index.yml)">TFS Git repository</a>
 <li><code>TfsVersionControl</code>: <a href="/azure/devops/repos/tfvc/overview" data-raw-source="[Team Foundation Version Control](/azure/devops/repos/tfvc/overview)">Team Foundation Version Control</a>
 <li><code>Git</code>: Git repository hosted on an external server
 <li><code>GitHub</code>

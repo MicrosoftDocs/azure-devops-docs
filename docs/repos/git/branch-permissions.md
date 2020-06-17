@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 05/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -22,13 +22,21 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Use the branches view to configure security
 
+::: moniker range=">= azure-devops-2019"
+
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
    ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
-   If you're not using the new navigation preview, select **Code**, **Branches**.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Code**, **Branches**.
 
    ![Open up the Branches page on the web](media/branches/branches_nav.png)
+
+::: moniker-end
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 

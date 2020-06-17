@@ -291,7 +291,7 @@ steps:
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine.
 
 ### Using Git LFS with submodules
 
@@ -430,7 +430,7 @@ This setting is always true on non-Windows agents.
 
 When using an Other/external Git repository, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
 
