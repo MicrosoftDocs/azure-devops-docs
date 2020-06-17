@@ -63,7 +63,7 @@ A user account that has been granted membership to an organization in Azure DevO
 
 ## Conditional access
 
-Conditional access provides support for securing Azure DevOps resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. To learn more, see [Manage conditional access to Azure DevOps](../accounts/manage-conditional-access.md).
+Conditional access provides support for securing Azure DevOps resources backed by an Azure Active Directory (Azure AD) tenant. For example, you can enable multi-factor authentication to help protect against the risk of compromised credentials. To learn more, see [Manage conditional access to Azure DevOps](../accounts/change-application-access-policies.md).
 
 ## Inheritance
 
