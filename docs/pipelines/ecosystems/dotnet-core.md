@@ -493,7 +493,9 @@ If you're building on Linux or macOS, you can use [Coverlet](https://github.com/
 
 Code coverage results can be published to the server by using the [Publish Code Coverage Results](../tasks/test/publish-code-coverage-results.md) task. To leverage this functionality, the coverage tool must be configured to generate results in Cobertura or JaCoCo coverage format.
 
-To run tests and publish code coverage with Coverlet, add this snippet to your `azure-pipelines.yml` file:
+To run tests and publish code coverage with Coverlet:
+* Add a reference to the `coverlet.msbuild` NuGet package in your test project(s)
+* Add this snippet to your `azure-pipelines.yml` file:
 
 ```yaml
 - task: DotNetCoreCLI@2
