@@ -505,41 +505,141 @@ With your extension in the marketplace, you will likely need to update it as you
 
 - Part 1: Setup
 - Part 2: Task Steps
-- Part 3: Stages and Jobs
+<!-- - Part 3: Stages and Jobs -->
 
 ### Part 1: Setup
 
-- From within your project, select the 'Pipelines' tab.
-- Select 'New Pipeline'
-- Select the location of your code repository. If your code is on your Azure project, select 'Azure Repos Git'.
-- Next, select your repository.
-- Then select 'Starter pipeline'.
+First you will need to create a starter pipeline. To do that, visit [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2).
 
-Your new pipeline should then look something like this:
+You will also need to understand how the YAML structure works by visiting [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
+
+The last thing you should need is a pipeline library variable group. For more information on creating one of these, visit [Add and use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, you can use any variables within that group in your pipeline.
+
+Once you have gone through the following steps, your finished pipeline should look similar to the following:
 
 ``` yaml
-trigger:
+trigger: 
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+  - group: your-variable-group
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+stages:
+  - stage: Unit_Tests
+    jobs:
+      - job:
+        steps:
+          - task: TfxInstaller@2
+            inputs:
+              version: "v0.7.x"
+          - task: Npm@1
+            inputs:
+              command: 'install'
+              workingDir: '/yourTaskDirectory'
+          - task: Bash@3
+            displayName: Compile Javascript
+            inputs:
+              targetType: "inline"
+              script: |
+                cd yourTaskDirectory
+                tsc
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              workingDir: '/yourTestsDirectory'
+              customCommand: 'testScript'
+          - task: PublishTestResults@2
+            inputs:
+              testResultsFormat: 'JUnit'
+              testResultsFiles: '**/yourResultsFile.xml'
+  - stage: Build_Manifest_File
+    jobs:
+      - job:
+        steps:
+          - task: TfxInstaller@2
+            inputs:
+              version: "v0.7.x"
+          - task: Npm@1
+            inputs:
+              command: 'install'
+              workingDir: '/yourTaskDirectory'
+          - task: Bash@3
+            displayName: Compile Javascript
+            inputs:
+              targetType: "inline"
+              script: |
+                cd yourTaskDirectory
+                tsc
+          - task: QueryAzureDevOpsExtensionVersion@3
+            inputs:
+              connectTo: 'VsTeam'
+              connectedServiceName: 'yourServiceConnection'
+              publisherId: '$(yourPublisherID)'
+              extensionId: '$(yourExtensionID)'
+              versionAction: 'Patch'
+              outputVariable: 'Task.Extension.Version'
+          - task: PackageAzureDevOpsExtension@3
+            inputs:
+              rootFolder: '$(System.DefaultWorkingDirectory)'
+              publisherId: '$(yourPublisherID)'
+              extensionId: '$(yourExtensionID)'
+              extensionName: '$(yourExtensionName)'
+              extensionVersion: '$(Task.Extension.Version)'
+              updateTasksVersion: true
+              updateTasksVersionType: 'patch'
+              extensionVisibility: 'private'
+              extensionPricing: 'free'
+          - task: CopyFiles@2
+            displayName: "Copy Files to: $(Build.ArtifactStagingDirectory)"
+            inputs:
+              Contents: "**/*.vsix"
+              TargetFolder: "$(Build.ArtifactStagingDirectory)"
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+              ArtifactName: '$(yourArtifactName)'
+              publishLocation: 'Container'
+  - stage: Publish_Extension
+    jobs:
+      - job:
+        steps:
+          - task: TfxInstaller@2
+            inputs:
+              version: "v0.7.x"
+          - task: DownloadBuildArtifacts@0
+            inputs:
+              buildType: "current"
+              downloadType: "single"
+              artifactName: "$(yourArtifactName)"
+              downloadPath: "$(System.DefaultWorkingDirectory)"
+          - task: PublishAzureDevOpsExtension@3
+            inputs:
+              connectTo: 'VsTeam'
+              connectedServiceName: 'yourServiceConnection'
+              fileType: 'vsix'
+              vsixFile: '/yourPublisher.*.vsix'
+              publisherId: '$(yourPublisherID)'
+              extensionId: '$(yourExtensionID)'
+              extensionName: '$(yourExtensionName)'
+              updateTasksVersion: false
+              extensionVisibility: 'private'
+              extensionPricing: 'free'
 ```
 
-- If you don't want your pipeline to run every time that a change to master is made, you can change the trigger from master to none.
-- Make sure to select 'Save and run' to finish creating your pipeline.
+If you don't want your pipeline to run every time that a change to master is made, you can change the trigger from master to none. 
+
+Also keep in mind that this is an example of a multi-stage build and release pipeline. It is possible to this this in fewer or greater stages.
+
+An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependancies, pipeline generated files, and compiled files.
+
+To use the same dependancies across multiple jobs, you will need to reinstall them on each job that they are needed. The compiled files will need to be recompiled each time they are needed as well. 
 
 ### Part 2: Task Steps
 
-- Remove all of the generated tasks below the 'steps' tag.
+- After creating a starter pipeline, remove all of the generated tasks below the 'steps' tag.
 - Open the 'Show assistant' tab on the right side of the page. This window displays all of the available tasks that can be used on your pipeline.
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues.
 
@@ -556,7 +656,7 @@ steps:
     tsc
     ```
 
-The following is an example of the installation and compiling tasks:
+<!-- The following is an example of the installation and compiling tasks:
 
 ``` yaml
 steps:
@@ -573,12 +673,12 @@ steps:
     script: |
       cd yourTaskDirectory
       tsc
-```
+``` -->
 
 #### Running Unit tests
 
 - To run unit tests, add a custom script to your package.json, similar to:
-``` json
+``` JSON
 "scripts": {
     "testScript": "mocha ./yourTestFile --reporter xunit --reporter-option output=yourResultsFile.xml"
 },
@@ -592,7 +692,7 @@ steps:
     - Test results files: **/yourResultsFile.xml
     - Search folder: $(System.DefaultWorkingDirectory)
 
-The following is an example of the unit testing tasks:
+<!-- The following is an example of the unit testing tasks:
 
 ``` yaml
 - task: Npm@1
@@ -604,9 +704,22 @@ The following is an example of the unit testing tasks:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/yourResultsFile.xml'
-```
+``` -->
 
-#### Packaging and Publishing
+<!-- - This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. Inputs:
+    - Contents: All of the files that you would like to copy in order to publish them into an artifact.
+    - Target folder: The folder that the files will all be copied to. A good choice for this would be the                                 $(Build.ArtifactStagingDirectory).
+- The task for publishing the artifacts is 'Publish build artifacts'. This will publish your artifacts for use in other jobs, or pipelines. Inputs:
+    - Path to publish: The path to the folder that contains the files you are publishing. For example, the                                $(Build.ArtifactStagingDirectory).
+    - Artifact name: The name you would like to give your artifact.
+    - Arifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
+- To download the artifacts onto a new job, use the 'Download build artifacts' task.
+    - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading  on a new pipeline, pick 'Specific build'.
+    - Download type: Choose 'Specific artifact' to download all files that were published.
+    - Artifact name: The name that you gave your artifact when it was published.
+    - Destination directory: The folder where you would like the files to be downloaded. -->
+
+#### Packaging Extension and Publishing Build Artifacts
 
 For some of these tasks you will need a Visual Studio Marketplace service connection. Make sure to grant access permissions for all pipleines. For more information on creating a service extension, visit [Service connections](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml).
 
@@ -627,6 +740,21 @@ For some of these tasks you will need a Visual Studio Marketplace service connec
     - Override tasks version: checked (true)
     - Override Type: Replace Only Patch (1.0.r)
     - Extension Visibility: If you are still developing your extension, this should be set to private. This way only you and those your share the extension with can see it on the marketplace. If you are releasing the extension to the public, this should be set to public.
+- This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. Inputs:
+    - Contents: All of the files that you would like to copy in order to publish them into an artifact.
+    - Target folder: The folder that the files will all be copied to. A good choice for this would be the                                 $(Build.ArtifactStagingDirectory).
+- The task for publishing the artifacts is 'Publish build artifacts'. This will publish your artifacts for use in other jobs, or pipelines. Inputs:
+    - Path to publish: The path to the folder that contains the files you are publishing. For example, the                                $(Build.ArtifactStagingDirectory).
+    - Artifact name: The name you would like to give your artifact.
+    - Arifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
+
+### Downloading Build Artifacts and Publishing the Extension
+
+- To download the artifacts onto a new job, use the 'Download build artifacts' task.
+    - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading  on a new pipeline, pick 'Specific build'.
+    - Download type: Choose 'Specific artifact' to download all files that were published.
+    - Artifact name: Your published artifact's name
+    - Destination directory: The folder where you would like the files to be downloaded.
 - The last task you will need is the 'Publish Extension' task. Inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace connection: yourServiceConnection
@@ -637,7 +765,7 @@ For some of these tasks you will need a Visual Studio Marketplace service connec
     - Extension Name: Name of your extension in your vss-extension.json file
     - Extension visibility: Your choice of private or public.
 
-The following is an example of the packaging and publishing tasks:
+<!-- The following is an example of the packaging and publishing tasks:
 
 ``` yaml
 - task: QueryAzureDevOpsExtensionVersion@3
@@ -671,11 +799,10 @@ The following is an example of the packaging and publishing tasks:
     updateTasksVersion: false
     extensionVisibility: 'private'
     extensionPricing: 'free'
-```
+``` -->
 
-### Part 3: Stages and Jobs
+<!-- ### Part 3: Stages and Jobs
 
-To learn how to setup the structure of using multiple stages and jobs in one pipeline, visit [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
 An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependancies, pipeline generated files, and compiled files.
 
@@ -694,9 +821,9 @@ To use pipeline generated files, you will need to publish the files as artifacts
     - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading  on a new pipeline, pick 'Specific build'.
     - Download type: Choose 'Specific artifact' to download all files that were published.
     - Artifact name: The name that you gave your artifact when it was published.
-    - Destination directory: The folder where you would like the files to be downloaded.
+    - Destination directory: The folder where you would like the files to be downloaded. -->
 
-The following is an example of these tasks, and the structure for multi-stage pipelines:
+<!-- The following is an example of these tasks, and the structure for multi-stage pipelines:
 
 ``` yaml
           - task: CopyFiles@2
@@ -724,7 +851,7 @@ The following is an example of these tasks, and the structure for multi-stage pi
               downloadType: "single"
               artifactName: "yourArtifactName"
               downloadPath: "$(System.DefaultWorkingDirectory)"
-```
+``` -->
 
 <a name="installandtest" />
 
