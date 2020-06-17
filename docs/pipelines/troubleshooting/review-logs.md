@@ -36,7 +36,11 @@ In addition to viewing logs in the pipeline build summary, you can download comp
 
 * To configure verbose logs for a single run, you can start a new build by choosing **Queue build**, and setting the value for the `system.debug` variable to `true`.
 * To configure verbose logs for all runs, edit the build, navigate to the **Variables** tab, and add a variable named `system.debug`, set its value to `true`, and select to **Allow at Queue Time**.
-
+* To configure verbose logs in YAML pipeline, add it in variables section as shown below.
+   ```YAML
+   variables:
+     System.Debug: true
+   ```
 ::: moniker-end
 
 
