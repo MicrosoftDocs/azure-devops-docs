@@ -9,7 +9,7 @@ description: With this sprint 171, we are bringing a long-awaited feature that c
 
 # Azure Pipelines introduces support for Linux/ARM64
 
-With this update, we are bringing a long-awaitedfeature that customers has asked for as we are adding support for Linux/ARM64 in Azure Pipelines.
+With this update, we are bringing a long-awaited feature that customers has asked for as we are adding support for Linux/ARM64 in Azure Pipelines.
 
 ## Features
 
