@@ -92,9 +92,10 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-    <td rowspan="4"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
-        <td>Restricted state to state transitions in inherited (phase 1)</td><td>Boards</td><td>TBD</td>
+    <td rowspan="5"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
+        <td>Restrict new user invitations from Project and Team Administrators</td><td>General</td><td>2020.1</td>
     </tr>
+    <tr><td>State transition restriction rules (private preview)</td><td>Boards</td><td>TBD</td></tr>
     <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
     <tr><td>Additional agent platform: ARM64</td><td>Pipelines</td><td>2020.1</td></tr>
     <tr><td>Control which tasks are allowed in pipelines</td><td>Pipelines</td><td>2020.1</td></tr>

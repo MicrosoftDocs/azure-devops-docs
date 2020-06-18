@@ -13,19 +13,27 @@ With this update, we are bringing a long-awaited feature that customers has aske
 
 ## Features
 
-### Boards
+### General
+
+[!INCLUDE [sprint-171-update-links](includes/generak/sprint-171-update-links.md)]
+
+### Azure Boards
 
 [!INCLUDE [sprint-171-update-links](includes/boards/sprint-171-update-links.md)]
 
-### Pipelines
+### Azure Pipelines
 
 [!INCLUDE [sprint-171-update-links](includes/pipelines/sprint-171-update-links.md)]
 
-## Boards
+## General
+
+[!INCLUDE [sprint-171-update](includes/general/sprint-171-update.md)]
+
+## Azure Boards
 
 [!INCLUDE [sprint-171-update](includes/boards/sprint-171-update.md)]
 
-## Pipelines
+## Azure Pipelines
 
 [!INCLUDE [sprint-171-update](includes/pipelines/sprint-171-update.md)]
 
