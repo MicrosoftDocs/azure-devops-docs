@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 02/17/2020
+ms.date: 06/18/2020
 ---
 
 
@@ -26,57 +26,68 @@ Some features provide a new user interface and functionality, which can be manag
 
 
 Some preview features provide access to entire new functionality. Others reflect a change to the user interface, but little or no change in functionality. 
- 
-<table valign="top">
-<tbody valign="top">
-<tr>
-<th>Preview features per user</th>
-<th>Preview features per organization</th>
-</tr>
-<tr>
-<td width="50%"> 
-<ul>
-<li><a href="../../report/powerbi/what-are-analytics-views.md">Analytics Views</a></li>
-<li>Enable modern search</li>
-<li>Experimental themes</li>
-<li><a href="../../pipelines/process/stages.md">Multi-stage pipelines</a></li>
-<li>New account manager</li>
-<li><a href="/azure/devops/release-notes/2019/sprint-155-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports">New Boards reports</a></li>
-<li><a href="/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress">New release progress views</a></li>
-<li><a href="/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview">New Repos landing pages</a></li>
-<li><a href="#account-manager">New account manager</li>
-<li><a href="../../organizations/settings/add-teams.md">New Teams page</a></li>
-<li><a href="../../test/new-test-plans-page.md">New Test Plans Page</a></li>
-<li><a href="../../organizations/accounts/add-organization-users.md">New user hub</a></li>
-<li>New Wiki experience</li>
-<li><a href="../../organizations/security/set-project-collection-level-permissions.md#collection-level">Organization Permissions Settings Page v2</a></li>
-<li><a href="../../organizations/security/set-project-collection-level-permissions.md#project-level">Project Permissions Settings page</a></li>
-</ul>
-</td>
-<td width="50%"> 
-<ul>
-<li><a href="../../report/powerbi/what-are-analytics-views.md">Analytics Views</a></li>
-<li>Experimental themes</li>
-<li><a href="../../organizations/security/provide-stakeholder-pipeline-access.md">Full Access to Azure Pipelines for Stakeholders</a></li>
-<li><a href="../../repos/git/forks.md">Git Forks</a></li>
-<li><a href="../../pipelines/process/stages.md">Multi-stage pipelines</a></li>
-<li><a href="#account-manager">New account manager</li>
-<li><a href="/azure/devops/release-notes/2019/sprint-155-update#get-insights-into-your-teams-health-with-three-new-azure-boards-reports">New Boards reports</a></li>
-<li><a href="/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress">New release progress views</a></li>
-<li><a href="/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview">New Repos landing pages</a></li>
-<li>New service connections experience</li>
-<li><a href="../../organizations/settings/add-teams.md">New Teams page</a></li>
-<li><a href="../../test/new-test-plans-page.md">New Test Plans Page</a></li>
-<li><a href="../../organizations/accounts/add-organization-users.md">New user hub</a></li>
-<li>New Wiki experience</li>
-<li><a href="../../organizations/security/set-project-collection-level-permissions.md#collection-level">Organization Permissions Settings Page v2</a></li>
-<li><a href="../../extend/develop/add-pipeline-decorator.md">Pipeline decorators</a></li>
-<li><a href="../../organizations/security/set-project-collection-level-permissions.md#project-level">Project Permissions Settings page</a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+
+
+---
+:::row:::
+   :::column span="2":::
+      **Preview features per user**
+   :::column-end:::
+   :::column span="2":::
+      **Preview features per organization**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
+      - [Dependency Tracker Preview Features](../../boards/extensions/dependency-tracker.md)
+      - [Experimental themes](#experimental-themes)
+      - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
+      - [New Boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
+      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
+      - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
+      - [New Settings Search in the organization settings panel](#search-org-settings)
+      - [New account manager](#account-manager)  
+      - [New Teams page](../../organizations/settings/add-teams.md)  
+      - [New Test Plans Page](../../test/new-test-plans-page.md)  
+      - [New user hub](../../organizations/accounts/add-organization-users.md)  
+      - New Wiki experience  
+      - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      - Task Insights for Failed Pipeline Runs (Enables insights toast for the failed tasks in Pipeline Run) 
+   :::column-end:::
+   :::column span="2":::
+      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
+      - [Dependency Tracker Preview Features](../../boards/extensions/dependency-tracker.md)
+      - [Experimental themes](#experimental-themes)
+      - [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)
+      - [Git Forks](../../repos/git/forks.md)
+      - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
+      - [New account manager](#account-manager)
+      - [New Boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
+      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
+      - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
+      - [New Settings Search in the organization settings panel](#search-org-settings)
+      - [New account manager](#account-manager)  
+      - [New Teams page](../../organizations/settings/add-teams.md)  
+      - [New Test Plans Page](../../test/new-test-plans-page.md)  
+      - New TFVC Page 
+      - [New user hub](../../organizations/accounts/add-organization-users.md)  
+      - New Wiki experience  
+      - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md")  
+      - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      - Task Insights for Failed Pipeline Runs (Enables insights toast for the failed tasks in Pipeline Run) 
+   :::column-end:::
+:::row-end:::
+---
+
 
 <a id="user-level">  </a>
 
@@ -123,11 +134,37 @@ When you enable a feature at the organization level, you essentially turn it on 
 > [!div class="mx-imgBorder"]  
 > ![Preview features options for the account](media/preview-features/org-level-s160.png)
 
+<a id="experimental-themes">  </a>
+
+## Experimental themes  
+
+When you select **Theme** from the Profile menu you can select between **Dark** and **Light** themes for the display of Azure DevOps web portal. 
+
+> [!div class="mx-imgBorder"]  
+> ![Profile menu, Theme selected](media/preview-features/menu-theme.png)
+
+With **Experimental themes** enabled, you can select among a number of additional themes. 
+
+> [!div class="mx-imgBorder"]  
+> ![Choose your theme dialog](media/preview-features/choose-your-theme.png)
+
+
+<a id="search-org-settings">  </a>
+
+## New Settings Search in the organization settings panel 
+
+When enabled, you can enter keywords to search all settings within the Organization Settings hub. 
+
+> [!div class="mx-imgBorder"]  
+> ![Organizational Settings, Search feature](media/preview-features/org-search-settings.png)
+
+
 
 ## Features now enabled for all Azure DevOps Services 
 
 ### General
 
+- [New user hub](../../organizations/accounts/add-organization-users.md)  
 - [New PAT experience](/azure/devops/release-notes/2018/sprint-140-update#manage-your-personal-access-tokens-with-filtering-and-paging)  
 - [New Navigation](https://devblogs.microsoft.com/devops/new-navigation/)
 
