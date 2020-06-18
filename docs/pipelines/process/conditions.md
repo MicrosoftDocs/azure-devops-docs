@@ -55,7 +55,7 @@ stages:
       - script: echo Hello Stage A!
 
 - stage: B
-  condition: eq(variables.isMain, true)
+  condition: and(succeeded(), eq(variables.isMain, true))
   jobs:
   - job: B1
     steps:
