@@ -695,7 +695,7 @@ To use the same dependencies across multiple jobs, reinstall them on each job th
 
 Once the test results have been published, the output under the tests tab should look like this:
 
-![Test result example](/media/test-results-example.PNG)
+![Test result example](docs/extend/develop/media/test-results-example.PNG)
 
 <!-- - This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. Inputs:
     - Contents: All of the files that you would like to copy in order to publish them into an artifact.
