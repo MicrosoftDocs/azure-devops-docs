@@ -41,19 +41,20 @@ Some preview features provide access to entire new functionality. Others reflect
 :::row:::
    :::column span="2":::
       - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      - [Dependency Tracker Preview Features](../../boards/extensions/dependency-tracker.md)
+      - Dependency Tracker Preview Features
       - [Experimental themes](#experimental-themes)
-      - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
-      - [New Boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      - [New account manager](#account-manager)
+      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
       - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
       - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New Settings Search in the organization settings panel](#search-org-settings)
-      - [New account manager](#account-manager)  
+      - [New service connections experience](../../pipelines/library/service-endpoints.md)  
+      - [New Settings Search in the organization settings panel](#search-org-settings)  
+          
       - [New Teams page](../../organizations/settings/add-teams.md)  
       - [New Test Plans Page](../../test/new-test-plans-page.md)  
       - [New user hub](../../organizations/accounts/add-organization-users.md)  
+      - New TFVC Page 
       - New Wiki experience  
       - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
@@ -61,29 +62,25 @@ Some preview features provide access to entire new functionality. Others reflect
    :::column-end:::
    :::column span="2":::
       - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      - [Dependency Tracker Preview Features](../../boards/extensions/dependency-tracker.md)
       - [Experimental themes](#experimental-themes)
       - [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)
       - [Git Forks](../../repos/git/forks.md)
-      - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
       - [New account manager](#account-manager)
-      - [New Boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
       - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
-      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      - [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
+      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/) 
       - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New Settings Search in the organization settings panel](#search-org-settings)
-      - [New account manager](#account-manager)  
+      - [New service connections experience](../../pipelines/library/service-endpoints.md)  
+               
+      - [New Settings Search in the organization settings panel](#search-org-settings)  
       - [New Teams page](../../organizations/settings/add-teams.md)  
       - [New Test Plans Page](../../test/new-test-plans-page.md)  
       - New TFVC Page 
-      - [New user hub](../../organizations/accounts/add-organization-users.md)  
       - New Wiki experience  
       - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md")  
+      - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
       - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      - Task Insights for Failed Pipeline Runs (Enables insights toast for the failed tasks in Pipeline Run) 
+      - Task Insights for Failed Pipeline Runs (Enables insights toast for failed tasks in a pipeline run) 
    :::column-end:::
 :::row-end:::
 ---
@@ -101,12 +98,11 @@ To access the Preview features options, open your profile menu. The profile menu
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
-Choose your profile menu, then choose the ![ ](../../media/icons/actions-icon.png) actions icon, **User settings**, and then **Preview features**. 
+Choose the ![](../../media/icons/user-settings-gear.png) profile icon, and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
-> ![Open User settings](media/preview-features/open-preview-features-s161.png)  ![Open Preview Features](media/preview-features/user-settings-menu.png) 
+> ![Open User settings](media/preview-features/open-profile-menu-s170.png)   
 
-Choose **Azure DevOps profile** to access your personal Azure DevOps settings, notifications, usage, and security settings.  
 
 #### [New Account Manager not enabled](#tab/new-account-not-enabled)
 
@@ -120,19 +116,31 @@ Choose your profile menu and then choose **Preview features**.
 To enable or disable a feature, choose the slider. 
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for yourself](media/preview-features/user-level-s160.png) 
+> ![Preview features options for yourself](media/preview-features/preview-features-s170a.png) 
+
+> [!div class="mx-imgBorder"]  
+> ![Preview features options for yourself, part 2](media/preview-features/preview-features-s170-3.png) 
+
+
+For information on other user settings and preferences, see [Set user preferences](../../organizations/settings/set-your-preferences.md).
+
 
 <a id="account-level">  </a>
 
 ## Enable features at the organization level (for all users)  
 
-When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose.
+When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
 
 > [!TIP]  
 > If you don't see the **for this account** menu option, then you aren't an account administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 > [!div class="mx-imgBorder"]  
-> ![Preview features options for the account](media/preview-features/org-level-s160.png)
+> ![Preview features options for the organization](media/preview-features/org-features-s170a.png)
+
+> [!div class="mx-imgBorder"]  
+> ![Preview features options for the organization, part 2](media/preview-features/org-features-s170-3.png)
+
+
 
 <a id="experimental-themes">  </a>
 
@@ -170,6 +178,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Pipelines
 
+- [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
 - [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
 - [New builds hub](/azure/devops/release-notes/2018/sep-10-azure-devops-launch#manage-build-pipelines-using-the-new-builds-page)
@@ -186,6 +195,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Repos
 
+- [New Repos landing pages](/azure/devops/release-notes/2019/sprint-159-update#new-web-ui-for-azure-repos-landing-pages-preview)  
 - [Pull Request Status Policy](../../repos/git/pr-status-policy.md) 
 
 ### Azure Artifacts 
@@ -215,6 +225,8 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 
 
+## Related articles
 
-
+- [Set user preferences](../../organizations/settings/set-your-preferences.md)
+- [Azure DevOps Feature Timeline](/azure/devops/release-notes/features-timeline) 
 
