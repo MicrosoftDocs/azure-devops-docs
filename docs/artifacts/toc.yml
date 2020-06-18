@@ -94,7 +94,7 @@
   items:
   - name: Maven quickstart
     href: get-started-maven.md
-  - name: Publish to a Maven feed
+  - name: Set up a project to work with Maven feed
     href: ../pipelines/packages/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   - name: Publish a Maven package from the command line
     href: maven/publish.md
