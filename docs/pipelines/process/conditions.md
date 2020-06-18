@@ -44,13 +44,23 @@ jobs:
 You can also use variables in conditions. 
 
 ```yaml
-
 variables:
   isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
 
-steps:
-  - script: echo Hello!
-    condition: and(variables.isMain, succeeded())
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+      - script: echo Hello Stage A!
+
+- stage: B
+  condition: eq(variables.isMain, true)
+  jobs:
+  - job: B1
+    steps:
+      - script: echo Hello Stage B!
+      - script: echo $(isMain)
 ```
 ::: moniker-end
 
