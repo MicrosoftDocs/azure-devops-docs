@@ -499,23 +499,35 @@ Now that your extension is in the Marketplace and shared, anyone who wants to us
 
 ## Step 6: Create Build and Release Pipeline to Publish Extension
 
-With the extension in the marketplace, it will likely need to be updated as fixes and new features are added. To make this process easier, create a build and release pipeline to continuously publish your changes to the marketplace.
+<!-- With the extension in the marketplace, it will likely need to be updated as fixes and new features are added. To make this process easier, create a build and release pipeline to continuously publish your changes to the marketplace. -->
+Lets create a build and release pipeline on Azure DevOps to help maintain the custom task on the marketplace.
 
-### Pipeline Building
+### Prerequisites
+
+1. A project on your organization. For help creating a project, visit [Create a project](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page).
+2. The extensions code must be linked to the project.
+
+<!-- ### Pipeline Building
 
 - Part 1: Setup
 - Part 2: Task Steps
-<!-- - Part 3: Stages and Jobs -->
+- Part 3: Stages and Jobs
 
-### Part 1: Setup
+### Part 1: Setup -->
 
-To begin, create a starter pipeline. To do that, visit [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2).
+To begin, create a pipeline with the below yaml. For help creating a pipeline, visit [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2). For help with the YAML schema, visit [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
-You will also need to understand how the YAML structure works by visiting [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
+You will also need a pipeline library variable group. For more information on creating one of these, visit [Add and use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline.
 
-The last thing needed is a pipeline library variable group. For more information on creating one of these, visit [Add and use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline.
+The variables that need to be declared in the variable group for the below pipeline example are:
+- PublisherID: ID of your marketplace publisher
+- ExtensionID: ID of your extension, as declared in the vss-extension.json file
+- ExtensionName: Name of your extension, as declared in the vss-extension.json file
+- ArtifactName: Name of the artifact being created for the VSIX file
 
-After completing the following steps, the finished pipeline should look similar to this example pipeline:
+Lastly, you will need to create a Visual Studio Marketplace service connection. Make sure to grant access permissions for all pipleines. For more information on creating a service connection, visit [Service connections](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml).
+
+Example pipeline:
 
 ``` YAML
 trigger: 
@@ -633,13 +645,12 @@ To stop the pipeline from running every time that a change to master is made, ch
 
 Also this is an example of a multi-stage build and release pipeline. It is possible to do this this in fewer or greater stages.
 
-An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependancies, pipeline generated files, and compiled files.
+An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependencies, pipeline generated files, and compiled files.
 
-To use the same dependancies across multiple jobs, reinstall them on each job that they are needed. The compiled files will need to be recompiled each time they are needed as well. 
+To use the same dependencies across multiple jobs, reinstall them on each job that they are needed. The compiled files will need to be recompiled each time they are needed as well. 
 
-### Part 2: Task Steps
-
-The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues.
+### Pipeline Stages
+<!-- The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues.
 
 #### Installing Node modules, and Compiling Javascript
 
@@ -652,25 +663,7 @@ The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This wil
     ```
     cd 'TaskDirectory'
     tsc
-    ```
-<!-- The following is an example of the installation and compiling tasks:
-
-``` yaml
-steps:
-- task: TfxInstaller@3
-  inputs:
-    version: 'v0.7.x'
-- task: Npm@1
-  inputs:
-    command: 'install'
-    workingDir: '/yourTaskDirectory'
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      cd yourTaskDirectory
-      tsc
-``` -->
+    ``` -->
 
 #### Running and Publishing Unit Tests
 
@@ -680,6 +673,17 @@ steps:
     "testScript": "mocha ./TestFile --reporter xunit --reporter-option output=ResultsFile.xml"
 },
 ```
+- The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
+- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. Inputs:
+    - Command: install
+    - Working folder that contains package.json: /TaskDirectory
+- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. Inputs:
+    - Type: inline
+    - Script: Should look something like:
+    ```
+    cd 'TaskDirectory'
+    tsc
+    ```
 - This will require the 'npm' task again. Make sure to select 'custom' command, target the folder that contains the unit tests, and input testScript as the command. Inputs:
     - Command: custom
     - Working folder that contains package.json: /TestsDirectory
@@ -688,19 +692,10 @@ steps:
     - Test result format: JUnit
     - Test results files: **/ResultsFile.xml
     - Search folder: $(System.DefaultWorkingDirectory)
-<!-- The following is an example of the unit testing tasks:
 
-``` yaml
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    workingDir: '/yourTestsDirectory'
-    customCommand: 'testScript'
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/yourResultsFile.xml'
-``` -->
+Once the test results have been published, the output under the tests tab should look like this:
+
+![Test result example](/media/test-results-example.PNG)
 
 <!-- - This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. Inputs:
     - Contents: All of the files that you would like to copy in order to publish them into an artifact.
