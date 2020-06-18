@@ -218,7 +218,7 @@ The context menu on the Test point node within the Execute tab provides the foll
 
 <a name="feedback"></a>
 ## Provide feedback
-Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and now are ready to pull out the old page by **Jun 15th 2020**. 
+Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 
 Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
 
