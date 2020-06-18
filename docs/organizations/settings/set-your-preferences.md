@@ -112,44 +112,16 @@ From your profile page, you can change your information and  account preferences
 
 ## Related articles
 
-- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)
-- [Enable preview features](../../project/navigation/preview-features.md)
-- [Set favorites](../../notifications/howto-manage-personal-notifications.md)
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Usage](../../integrate/concepts/rate-limits.md)  
+- [Enable preview features](../../project/navigation/preview-features.md)  
+- [Set favorites](../../notifications/howto-manage-personal-notifications.md)  
+- [Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
+- [Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)  
+- [OAuth authorizations](../../integrate/get-started/authentication/oauth.md)  
+- [SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)  
+- [Manage authorizations](manage-authorizations.md)  
 
-
-<!--- 
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">Area</th>
-<th width="65%">Task</th>
-</tr>
-<tr>
-<td>Security</td>
-<td>
-<ul>
-<li><a href="../../accounts/use-personal-access-tokens-to-authenticate.md" data-raw-source="[Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)">Personal access tokens</a></li>
-<li><a href="../../repos/git/auth-overview.md#alternate-credentials" data-raw-source="[Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)">Alternate authentication credentials</a></li>
-<li><a href="../../integrate/get-started/authentication/oauth.md" data-raw-source="[OAuth authorizations](../../integrate/get-started/authentication/oauth.md)">OAuth authorizations</a></li>
-<li><a href="../../repos/git/use-ssh-keys-to-authenticate.md" data-raw-source="[SSH public keys](../../repos/git/use-ssh-keys-to-authenticate.md)">SSH public keys</a></li>
- <li><a href="manage-authorizations.md" data-raw-source="[Manage authorizations](manage-authorizations.md)">Manage authorizations</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Other</td>
-<td>
-<ul>
-<li><a href="../../notifications/howto-manage-personal-notifications.md" data-raw-source="[Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)">Manage personal notifications</a></li>
-<li><a href="../../integrate/concepts/rate-limits.md" data-raw-source="[Usage](../../integrate/concepts/rate-limits.md)">Usage</a></li>
-<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li>
-<li><a href="../../project/navigation/set-favorites.md" data-raw-source="[Set favorites](../../notifications/howto-manage-personal-notifications.md)">Set favorites</a></li> 
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
---> 
 
 
 
