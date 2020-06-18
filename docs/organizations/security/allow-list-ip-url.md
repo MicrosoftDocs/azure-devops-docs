@@ -32,7 +32,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 - `https://login.microsoftonline.com`
 - `https://login.live.com`
 - `https://go.microsoft.com`
-- `https://graph.windows.net`
+- `https://graph.microsoft.com`
 - `https://app.vssps.dev.azure.com`
 - `https://app.vssps.visualstudio.com`
 - `https://aadcdn.msauth.net`
