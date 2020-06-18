@@ -40,20 +40,18 @@ Some preview features provide access to entire new functionality. Others reflect
 ---
 :::row:::
    :::column span="2":::
-      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      - Dependency Tracker Preview Features
+      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)
       - [Experimental themes](#experimental-themes)
       - [New account manager](#account-manager)
-      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)
+      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)
       - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
       - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New service connections experience](../../pipelines/library/service-endpoints.md)  
-      - [New Settings Search in the organization settings panel](#search-org-settings)  
-          
-      - [New Teams page](../../organizations/settings/add-teams.md)  
-      - [New Test Plans Page](../../test/new-test-plans-page.md)  
-      - [New user hub](../../organizations/accounts/add-organization-users.md)  
+      - [New service connections experience](../../pipelines/library/service-endpoints.md)
+      - [New Settings Search in the organization settings panel](#search-org-settings)
+      - [New Teams page](../../organizations/settings/add-teams.md)
+      - [New Test Plans Page](../../test/new-test-plans-page.md)
+      - [New user hub](../../organizations/accounts/add-organization-users.md)
       - New TFVC Page 
       - New Wiki experience  
       - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
@@ -70,8 +68,7 @@ Some preview features provide access to entire new functionality. Others reflect
       - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
       - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/) 
       - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New service connections experience](../../pipelines/library/service-endpoints.md)  
-               
+      - [New service connections experience](../../pipelines/library/service-endpoints.md)
       - [New Settings Search in the organization settings panel](#search-org-settings)  
       - [New Teams page](../../organizations/settings/add-teams.md)  
       - [New Test Plans Page](../../test/new-test-plans-page.md)  
