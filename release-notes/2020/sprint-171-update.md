@@ -15,7 +15,7 @@ With this update, we are bringing a long-awaited feature that customers has aske
 
 ### General
 
-[!INCLUDE [sprint-171-update-links](includes/generak/sprint-171-update-links.md)]
+[!INCLUDE [sprint-171-update-links](includes/general/sprint-171-update-links.md)]
 
 ### Azure Boards
 
