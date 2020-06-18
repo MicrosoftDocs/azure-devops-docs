@@ -137,6 +137,21 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+## Limit job authorization scope to referenced Azure DevOps repositories
+
+Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by the pipeline.
+
+To configure this setting, navigate to **Organization settings**, **Pipelines**, **Settings**.
+
+When enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, either as a repository resource, or in a checkout step. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+
+By default this setting is enabled for new organizations created after May 2020.
+
+
+::: moniker-end
+
 ::: moniker range=">tfs-2018"
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
