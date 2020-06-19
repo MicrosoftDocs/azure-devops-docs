@@ -22,7 +22,7 @@ Here, the Bug WIT has been customized to support a Triaged state. The state and 
 
 ![Bug work item form, header area, added state](media/process/cust-workflow-form-triage-header.png)  
 
-This article addresses the supported workflow customization options and the how to of customizing a workflow. Specifically, you'll learn about:
+This article addresses the supported workflow customization options and  how to customize a workflow. Specifically, you'll learn about:
 
 >[!div class="checklist"]      
 > - Supported workflow customization scenarios 
