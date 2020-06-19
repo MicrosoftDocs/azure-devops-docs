@@ -153,7 +153,7 @@ When specifying a container resource or an inline container, you can specify an 
 
 ```yaml
 resources:
-  container:
+  containers:
   - container: my_service
     image: my_service:latest
     ports:

@@ -230,9 +230,7 @@ Git commit detail menu              | `ms.vss-code-web.git-commit-details-menu` 
 
 Name                       | Target ID                                   | Preview 
 ---------------------------|---------------------------------------------|-------------------
-Test run toolbar           | `ms.vss-test-web.test-run-toolbar-menu`     | 
 Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | 
-Test plan suites toolbar   | `ms.vss-test-web.test-plans-suites-toolbar` |
 Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |
 Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/media/test-plan-hub-pivot-tab-preview.png)
 
@@ -244,9 +242,7 @@ Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![tes
 
 Name                       | Target ID                                   | Preview 
 ---------------------------|---------------------------------------------|-------------------
-Test run toolbar           | `ms.vss-test-web.test-run-toolbar-menu`     | 
 Test run grid menu         | `ms.vss-test-web.test-run-grid-menu`        | 
-Test plan suites toolbar   | `ms.vss-test-web.test-plans-suites-toolbar` |
 Test plan suites tree menu | `ms.vss-test-web.test-plans-suites-context` |
 Test plan hub pivot tab    | `ms.vss-test-web.test-plan-pivot-tabs`      | ![testHubPivotTab](./vss/test/web/media/test-plan-hub-pivot-tab-preview.png)
 
