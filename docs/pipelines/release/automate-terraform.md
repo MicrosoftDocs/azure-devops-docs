@@ -241,9 +241,14 @@ In this tutorial, you learned how to automate repeatable deployments with Terraf
 
 This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
 
-1. Delete the Azure DevOps project created by the Azure DevOps Demo Generator.
+1. [Delete the Azure DevOps project](../../organizations/projects/delete-project.md) created by the Azure DevOps Demo Generator.
 
-1. All Azure resources created during this tutorial were assigned to either the **PULTerraform** or **terraformrg** resource groups. Deleting those two groups will delete the resources they contain. This can be done via the CLI or portal.
+1. All Azure resources created during this tutorial were assigned to either the **PULTerraform** or **terraformrg** resource groups. Deleting those two groups will delete the resources they contain. This can be done via the CLI or portal. The following example shows you how to delete the resource groups using Azure CLI.
+
+    ```azurecli-interactive
+	az group delete --name PULTerraform
+    az group delete --name terraformrg
+	```
 
 ## Next steps
 
