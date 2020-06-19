@@ -199,13 +199,13 @@ Now that the application has been built, it's time to release it. However, no de
 
     ![Configuring the Terraform apply task](media/automate-terraform/configure-cd-terraform-apply.png)
 
-1. Select the **Azure App Service Deploy** task. Select the **Azure subscription** created earlier. By the time this task runs, Terraform has ensure that the deployment environment has been configured to meet the app's requirements. It will use the created app service name set in the **Variables** section.
+1. Select the **Azure App Service Deploy** task. Select the **Azure subscription** created earlier. By the time this task runs, Terraform has ensured that the deployment environment has been configured to meet the app's requirements. It will use the created app service name set in the **Variables** section.
 
     ![Configuring the app service deployment task](media/automate-terraform/configure-cd-app-service-deploy.png)
 
 1. From the top of the page, select **Save** and confirm.
 
-1. Select **Create release**. Specify the recent build and select **Create**. 
+1. Select **Create release**. Specify the recent build and select **Create**. Your build number will most likely be different than this example.
 
     ![Creating a release](media/automate-terraform/cd-create-release.png)
 
