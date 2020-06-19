@@ -73,7 +73,7 @@ Review this article to understand how to define rules that apply when you change
 
 ::: moniker range="azure-devops"
 
-The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions sets the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
+The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
 The second and third groups support restricting state transitions. These two groups allow you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
 
@@ -194,7 +194,7 @@ When defining workflow states and rules, we recommend that you consider the foll
 - Minimize the number of rules you define for a WIT. While you can create multiple rules for a WIT, addition rules can negatively impact performance when a user adds and modifies work items. When users save work items, the system validates all rules associated with the fields for its work item type. Under certain conditions, the rule validation expression is too complex for SQL to evaluate.  
 - Minimize the number of custom WITs you define.  
 
-Worflow rules are applied when adding or modifying work items through any of the following interfaces: 
+Workflow rules are applied when adding or modifying work items through any of the following interfaces: 
 - Web portal: Work item form, bulk updates, updates in query view  ​
 - Web portal: Kanban Board or Taskboard, move work item to column​
 - Visual Studio 2017 and earlier versions, work item form 
