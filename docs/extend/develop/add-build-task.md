@@ -722,13 +722,13 @@ Inputs:
 
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
 - To download the artifacts onto a new job, use the 'Download build artifacts' task. 
-Inputs:
+ - Inputs:
     - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading on a new pipeline, pick 'Specific build'.
     - Download type: Choose 'Specific artifact' to download all files that were published.
     - Artifact name: The published artifact's name
     - Destination directory: The folder where the files should be downloaded.
 - The last task needed is the 'Publish Extension' task. 
-Inputs:
+ - Inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace connection: ServiceConnection
     - Input file type: VSIX file
