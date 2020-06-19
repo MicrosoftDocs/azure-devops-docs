@@ -139,6 +139,10 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ::: moniker range="azure-devops"
 
+## Limit job authorization scope to current project
+
+Pipelines can run with collection scoped access tokens unless **Limit job authorization scope to current project** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. If your Azure Repos Git repository is in a different project than your pipeline
+
 ## Limit job authorization scope to referenced Azure DevOps repositories
 
 Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by the pipeline.
