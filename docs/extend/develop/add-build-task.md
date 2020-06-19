@@ -504,7 +504,7 @@ Lets create a build and release pipeline on Azure DevOps to help maintain the cu
 ### Prerequisites
 
 1. A project on your organization. For help creating a project, visit [Create a project](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page).
-2. For several of these tasks, including 'Package extension' and 'Publish extension', you will need the [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) package installed on your organization.
+2. You will need the [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) package installed on your organization.
 
 To begin, create a new pipeline with the below yaml. Learn more on how to [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
@@ -634,11 +634,9 @@ stages:
 
 For more help with triggers, such as CI and PR triggers, visit [Specify events that trigger pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops).
 
-Also this is an example of a multi-stage build and release pipeline. It is possible to do this in fewer or greater stages.
-
-An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependencies, pipeline generated files, and compiled files.
-
-To use the same dependencies across multiple jobs, reinstall them on each job that they are needed. The compiled files will need to be recompiled each time they are needed as well. 
+> **Note** An important note to keep in mind when using multiple stages and jobs, is that each job uses a new user agent. This means that 
+> when a new job starts, anything installed on the previous jobs agent is gone. This includes dependencies, pipeline generated files, and 
+> compiled files.
 
 ### Pipeline Stages
 
