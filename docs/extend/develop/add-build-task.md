@@ -518,6 +518,8 @@ The variables that need to be declared in the variable group for the below pipel
 
 Lastly, you will need to create a Visual Studio Marketplace service connection. Make sure to grant access permissions for all pipleines. For more information on creating a service connection, visit [Service connections](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml).
 
+![Service connection](/docs/extend/develop/media/new-service-connection.png) ![VSM service connection](/docs/extend/develop/media/new-visual-studio-marketplace-service-connection.png)
+
 Example pipeline:
 
 ``` YAML
@@ -648,25 +650,21 @@ For more help with triggers, such as CI and PR triggers, visit [Specify events t
 },
 ```
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
-- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. 
-Inputs:
+- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. Inputs:
     - Command: install
     - Working folder that contains package.json: /TaskDirectory
-- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. 
-Inputs:
+- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. Inputs:
     - Type: inline
     - Script: Should look something like:
     ```
     cd 'TaskDirectory'
     tsc
     ```
-- This will require the 'npm' task again. Make sure to select 'custom' command, target the folder that contains the unit tests, and input testScript as the command. 
-Inputs:
+- This will require the 'npm' task again. Make sure to select 'custom' command, target the folder that contains the unit tests, and input testScript as the command. Inputs:
     - Command: custom
     - Working folder that contains package.json: /TestsDirectory
     - Command and arguments: testScript
-- Next add the 'Publish Test Results' task. Ensure that the result format is 'JUnit' and not 'XUnit', if using the Mocha XUnit reporter. Also set the search folder to the root directory. 
-Inputs:
+- Next add the 'Publish Test Results' task. Ensure that the result format is 'JUnit' and not 'XUnit', if using the Mocha XUnit reporter. Also set the search folder to the root directory. Inputs:
     - Test result format: JUnit
     - Test results files: **/ResultsFile.xml
     - Search folder: $(System.DefaultWorkingDirectory)
@@ -678,28 +676,24 @@ Once the test results have been published, the output under the tests tab should
 #### Packaging Extension and Publishing Build Artifacts
 
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
-- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. 
-Inputs:
+- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. Inputs:
     - Command: install
     - Working folder that contains package.json: /TaskDirectory
-- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. 
-Inputs:
+- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. Inputs:
     - Type: inline
     - Script: Should look something like:
     ```
     cd 'TaskDirectory'
     tsc
     ```
-- The first task for publishing the extension is the 'Query Extension Version' task. 
-Inputs:
+- The first task for publishing the extension is the 'Query Extension Version' task. Inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace (Service connection): ServiceConnection
     - Publisher ID: ID of your Visual Studio Marketplace publisher
     - Extension ID: ID of your extension in the vss-extension.json file
     - Increase version: Patch
     - Output Variable: Task.Extension.Version
-- The next task is the 'Package Extension' task. 
-Inputs:
+- The next task is the 'Package Extension' task. Inputs:
     - Root manifests folder: $(System.DefualtWorkingDirectory) _this is the root directory_
     - Manifest file(s): vss-extension.json 
     - Publisher ID: ID of your Visual Studio Marketplace publisher
@@ -709,26 +703,23 @@ Inputs:
     - Override tasks version: checked (true)
     - Override Type: Replace Only Patch (1.0.r)
     - Extension Visibility: If the extension is still in development, this should be set to private. This way only you and those your share the extension with can see it on the marketplace. If are releasing the extension to the public, this should be set to public.
-- This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. 
-Inputs:
+- This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. Inputs:
     - Contents: All of the files that need to be copied in order to publish them into an artifact.
-    - Target folder: The folder that the files will all be copied to. A good choice for this would be the                                     $(Build.ArtifactStagingDirectory).
+    - Target folder: The folder that the files will all be copied to. A good choice for this would be the                                 $(Build.ArtifactStagingDirectory).
 - The task for publishing the artifacts is 'Publish build artifacts'. This will publish the artifacts for use in other jobs, or pipelines. Inputs:
-    - Path to publish: The path to the folder that contains the files that are being published. For example the                               $(Build.ArtifactStagingDirectory).
+    - Path to publish: The path to the folder that contains the files that are being published. For example the                           $(Build.ArtifactStagingDirectory).
     - Artifact name: The name given to the artifact.
     - Arifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
 
 #### Downloading Build Artifacts and Publishing the Extension
 
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
-- To download the artifacts onto a new job, use the 'Download build artifacts' task. 
- - Inputs:
+- To download the artifacts onto a new job, use the 'Download build artifacts' task.
     - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading on a new pipeline, pick 'Specific build'.
     - Download type: Choose 'Specific artifact' to download all files that were published.
     - Artifact name: The published artifact's name
     - Destination directory: The folder where the files should be downloaded.
-- The last task needed is the 'Publish Extension' task. 
- - Inputs:
+- The last task needed is the 'Publish Extension' task. Inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace connection: ServiceConnection
     - Input file type: VSIX file
