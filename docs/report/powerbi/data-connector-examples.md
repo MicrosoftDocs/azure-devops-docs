@@ -21,7 +21,7 @@ This document provides guidance on how to generate the following example reports
 - [Number of Work Items](#number-of-work-items)  
 - [Number of Bugs by Area Path and Priority](#number-of-bugs-by-area-path-and-priority)  
 
-Prior to generating these reports, you must first [connect to Analyticss using the Power BI data connector](data-connector-connect.md). 
+Prior to generating these reports, you must first [connect to Analytics using the Power BI data connector](data-connector-connect.md). 
 
 > [!TIP]  
 > Use the search box if you are working with tables that contain many columns.

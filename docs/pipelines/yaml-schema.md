@@ -1,6 +1,6 @@
 ---
 title: YAML schema
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: An overview of all YAML syntax.
 ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
@@ -1244,6 +1244,7 @@ The `git` type refers to Azure Repos Git repos.
 * [Push trigger](#push-trigger)
 * [Pull request trigger](#pr-trigger)
 * [Scheduled trigger](#scheduled-trigger)
+* [Pipeline trigger](#pipeline-trigger)
 
 > [!NOTE]
 > Trigger blocks can't contain variables or template expressions.
@@ -1509,6 +1510,10 @@ It does so regardless of whether the code has changed since the last run.
 
 ::: moniker-end
 
+### Pipeline trigger
+
+Pipeline completion triggers are configured using a [pipeline resource](#pipeline-resource). For more information, see [Pipeline completion triggers](./process/pipeline-triggers.md).
+
 ## Pool
 
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
@@ -1619,19 +1624,19 @@ You can reduce the deployment target's scope to a particular resource within the
 
 ```yaml
 environment: 'smarthotel-dev.bookings'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: KubernetesManifest@0
-          displayName: Deploy to Kubernetes cluster
-          inputs:
-            action: deploy
-            namespace: $(k8sNamespace)
-            manifests: $(System.ArtifactsDirectory)/manifests/*
-            imagePullSecrets: $(imagePullSecret)
-            containers: $(containerRegistry)/$(imageRepository):$(tag)
-            # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
+strategy:
+  runOnce:
+    deploy:
+      steps:
+      - task: KubernetesManifest@0
+        displayName: Deploy to Kubernetes cluster
+        inputs:
+          action: deploy
+          namespace: $(k8sNamespace)
+          manifests: $(System.ArtifactsDirectory)/manifests/*
+          imagePullSecrets: $(imagePullSecret)
+          containers: $(containerRegistry)/$(imageRepository):$(tag)
+          # value for kubernetesServiceConnection input automatically passed down to task by environment.resource input
 ```
 
 ---
@@ -2118,6 +2123,9 @@ Learn more about [conditions](process/conditions.md?tabs=yaml),
 Syntax highlighting is available for the pipeline schema via a Visual Studio Code extension.
 You can [download Visual Studio Code](https://code.visualstudio.com), [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines), and [check out the project on GitHub](https://github.com/Microsoft/azure-pipelines-vscode).
 The extension includes a [JSON schema](https://github.com/microsoft/azure-pipelines-vscode/blob/master/service-schema.json) for validation.
-<!-- For people who get here by searching for, say, "azure pipelines template YAML schema",
+
+You also can obtain a schema that's specific to your organization (that is, it contains installed custom tasks) from the [Azure DevOps REST API yamlschema endpoint](https://docs.microsoft.com/rest/api/azure/devops/distributedtask/yamlschema/get?view=azure-devops-rest-5.1).
+
+<!-- For people who get here by searching for, say, "azure pipelines template YAML schema", 
      look around a bit, and then type "Ctrl-F JSON" when they don't see anything promising
      in the first few screenfuls. -->

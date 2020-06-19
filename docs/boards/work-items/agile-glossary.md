@@ -90,7 +90,7 @@ The Inheritance process model provides support for customizing work tracking obj
 
 ## Issue 
 
-**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It is defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md)). 
+**Agile process**: An issue is a type of work item that defines an item that you want to track as it may impact the completion of other work. It is defined for the Agile process and doesn't appear on any backlog or board. See [Manage issues and impediments](../backlogs/manage-issues-impediments.md). 
 
 **Basic process**: An issue is a type of work item that defines some work or code defect that needs to be tracked. It is defined for the Basic process and appears on the product backlog and [Issues Kanban board](../get-started/plan-track-work.md). 
 

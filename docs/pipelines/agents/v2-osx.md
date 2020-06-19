@@ -83,6 +83,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. Follow the instructions on the page.
 
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
+
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
@@ -105,6 +107,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. Follow the instructions on the page.
 
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
+
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
 ::: moniker-end
@@ -126,6 +130,8 @@ After you get a feel for how agents work, or if you want to automate setting up 
 1. Click the **Download** button.
 
 1. Follow the instructions on the page.
+
+1. Clear the extended attribute on the tar file: `xattr -c vsts-agent-osx-x64-V.v.v.tar.gz`.
 
 1. Unpack the agent into the directory of your choice. `cd` to that directory and run `./config.sh`. Make sure that the path to the directory contains no spaces because tools and scripts don't always properly escape spaces.
 
@@ -383,7 +389,7 @@ You can use the template described above as to facilitate generating other kinds
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

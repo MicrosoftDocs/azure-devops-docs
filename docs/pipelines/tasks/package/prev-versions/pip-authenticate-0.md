@@ -1,6 +1,6 @@
 ---
 title: Python Pip Authenticate
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
 ms.topic: reference
 ms.author: dastahel
@@ -36,5 +36,5 @@ Provides authentication for the `pip` client that can be used to install Python 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 

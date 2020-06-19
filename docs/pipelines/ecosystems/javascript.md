@@ -4,7 +4,7 @@ description:  Build and test JavaScript and Node.js apps with Azure Pipelines
 ms.assetid: 5BB4D9FA-DCCF-4661-B52B-0C42006A2AE5
 ms.reviewer: vijayma
 ms.topic: conceptual
-ms.custom: seodec18, seo-javascript-september2019, contentperfq4
+ms.custom: seodec18, seo-javascript-september2019, contperfq4
 ms.date: 05/08/2020
 monikerRange: '>= tfs-2017'
 ---
@@ -893,7 +893,7 @@ In each step where you need to use the `nvm` command, you'll need to start the s
     nvm <command>
 ```
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the Package Management service?
 

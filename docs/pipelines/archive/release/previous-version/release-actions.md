@@ -76,7 +76,7 @@ Open the **Inactive** list, open the action, and choose **Activate**.
 
 ![Inactive list on Inventory page](media/release-actions-03.png)
 
-## Q & A
+## FAQ
 
 ### Q: What permissions do I need to edit release actions?
 

@@ -103,7 +103,7 @@ You're now ready to create a release, which means to run the release pipeline wi
 
 [!INCLUDE [simple-create-release](../includes/simple-create-release.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

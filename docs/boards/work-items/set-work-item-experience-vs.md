@@ -1,9 +1,8 @@
-﻿---
+---
 title: Change Work Items page experience
 titleSuffix: Azure Boards and TFS
 description: Change the Work Items page setting from default to legacy in Visual Studio 2019 Team Explorer  
-ms.custom: seodec18  
-ms.custom: work-items
+ms.custom: work-items, seodec18  
 ms.technology: devops-agile
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: kaelli

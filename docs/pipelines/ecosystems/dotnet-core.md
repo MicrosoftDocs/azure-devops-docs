@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: 95ACB249-0598-4E82-B155-26881A5AA0AA
 ms.reviewer: vijayma
 ms.date: 05/06/2020
-ms.custom: contentperfq4
+ms.custom: contperfq4
 monikerRange: '>= tfs-2017'
 ---
 
@@ -163,7 +163,7 @@ steps:
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
 
-Ubuntu 18.06 is set here in the YAML file.  
+Ubuntu 18.04 is set here in the YAML file.  
 
 ```yaml
 pool:
@@ -657,7 +657,7 @@ something might break your build. This can happen, for example, if a newer versi
 is shipped with the SDK. To isolate these problems, use the **.NET Core Tool Installer** task to specify the version 
 of the .NET Core SDK that's used in your build.
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 
