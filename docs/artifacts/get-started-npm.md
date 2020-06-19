@@ -99,13 +99,14 @@ When you're done, select **Create**.
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
->![New feed dialog box azure devops 2019](media/new-feed-dialog.png)
+> ![New feed dialog box azure devops 2019](media/new-feed-dialog.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
-![New feed dialog box tfs](media/new-feed-dialog.png)
+> [!div class="mx-imgBorder"]
+> ![New feed dialog box tfs](media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -128,19 +129,21 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= azure-devops-2019"
     
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed button in Azure Artifacts](media/connect-to-feed-azure-devops-newnav.png)
+      > ![Connect to feed button in Azure Artifacts devops 2019](media/connect-to-feed-azure-devops-newnav.png)
 
       ::: moniker-end
 
-      ::: moniker range="<= tfs-2018"
-
-      ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
+      ::: moniker range=">= tfs-2018 < azure-devops-2019"
+        
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed button in Azure Artifacts tfs 2018](media/connect-to-feed.png)
 
       ::: moniker-end
 
-      ::: moniker range=">= tfs-2017 < azure-devops"
+      ::: moniker range="= tfs-2017"
 
-      ![Connect to feed button in Azure Artifacts](media/connect-to-feed.png)
+      > [!div class="mx-imgBorder"] 
+      > ![Connect to feed button in Azure Artifacts tfs 2017](media/connect-to-feed.png)
 
       ::: moniker-end
 
@@ -157,19 +160,21 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= azure-devops-2019"
 
       > [!div class="mx-imgBorder"] 
-      >![Connect to feed from Azure Artifacts](media/npm-azure-devops-newnav.png)
+      > ![Connect to feed from Azure Artifacts devops 2019](media/npm-azure-devops-newnav.png)
 
       ::: moniker-end
 
-      ::: moniker range="<= tfs-2018"
+      ::: moniker range=">= tfs-2018 < azure-devops-2019"
 
-      ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
+      > [!div class="mx-imgBorder"]
+      > ![Connect to feed from Azure Artifacts tfs 2018](media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
 
-      ::: moniker range=">= tfs-2017 < azure-devops"
+      ::: moniker range="= tfs-2017"
 
-      ![Connect to feed from Azure Artifacts](media/connect-to-feed-npm-registry.png)
+      > [!div class="mx-imgBorder"]
+      > ![Connect to feed from Azure Artifacts tfs 2017](media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
         
@@ -221,3 +226,7 @@ If you have followed all of the steps up to this point, your npm package should 
 
 > [!IMPORTANT]
 > Ensure that your working folder has an `.npmrc` file with a `registry=` line, as described in the **Connect to feed** screen in your feed. The build does not support using the `publishConfig` property to specify the registry to which you're publishing. If you include the `publishConfig` property in your package.json file, the build will fail with potentially an unrelated authentication error.
+
+## Next steps
+
+Check out the [Azure Artifacts landing page](./index.yml) to learn about other topics.
