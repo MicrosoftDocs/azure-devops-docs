@@ -141,15 +141,37 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 ## Limit job authorization scope to current project
 
-Pipelines can run with collection scoped access tokens unless **Limit job authorization scope to current project** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. If your Azure Repos Git repository is in a different project than your pipeline
+Pipelines can run with collection scoped access tokens unless **Limit job authorization scope to current project** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
+
+If your Azure Repos Git repository is in a different project than your pipeline, and **Limit job authorization scope to current project** is enabled, you must grant permission to the build service identity for your pipeline to the second project. For more information, see [Pipeline build options - build job authorization scope](../build/options.md#build-job-authorization-scope).
 
 ## Limit job authorization scope to referenced Azure DevOps repositories
 
 Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by the pipeline.
 
+> [!IMPORTANT]
+> If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, and you don't need to add the current repository as
+
 To configure this setting, navigate to **Organization settings**, **Pipelines**, **Settings**.
 
-When enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, either as a repository resource, or in a checkout step. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+When enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, even those you want to use from a script, either as a repository resource, or in a checkout step. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+
+To reference in a repository resource:
+
+```yml
+resources:  
+  repositories:
+  - repository: MyAzureReposGitRepository
+    type: git
+    name: FabrikamFiber/FabrikamRepo
+```
+
+To reference in a checkout step:
+
+```yml
+steps:
+- checkout: git://FabrikamFiber/FabrikamRepo # Azure Repos Git repository in the same organization
+```
 
 By default this setting is enabled for new organizations created after May 2020.
 
