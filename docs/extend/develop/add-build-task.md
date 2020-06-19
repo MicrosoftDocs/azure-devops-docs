@@ -504,11 +504,11 @@ Lets create a build and release pipeline on Azure DevOps to help maintain the cu
 ### Prerequisites
 
 1. A project on your organization. For help creating a project, visit [Create a project](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page).
-2. The extensions code must be linked to the project.
+2. For several of these tasks, including 'Package extension' and 'Publish extension', you will need the [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) package installed on your organization.
 
-To begin, create a pipeline with the below yaml. For help creating a pipeline, visit [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2). For help with the YAML schema, visit [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
+To begin, create a new pipeline with the below yaml. Learn more on how to [Create your first pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema%2Cparameter-schema).
 
-You will also need a pipeline library variable group. For more information on creating one of these, visit [Add and use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline.
+You will also need a pipeline library variable group to hold the variables used by this pipeline. For more information on creating one of these, visit [Add and use variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. For help linking the variable group, visit [Use a variable group](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#use-a-variable-group).
 
 The variables that need to be declared in the variable group for the below pipeline example are:
 - PublisherID: ID of your marketplace publisher
@@ -632,7 +632,7 @@ stages:
               extensionPricing: 'free'
 ```
 
-To stop the pipeline from running every time that a change to master is made, change the trigger from master to none. For more help with triggers, such as CI and PR triggers, visit [Specify events that trigger pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops).
+For more help with triggers, such as CI and PR triggers, visit [Specify events that trigger pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers?view=azure-devops).
 
 Also this is an example of a multi-stage build and release pipeline. It is possible to do this in fewer or greater stages.
 
