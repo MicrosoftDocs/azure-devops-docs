@@ -31,7 +31,7 @@ In this tutorial, you learn about:
 
 1. A Microsoft Azure account.
 1. An Azure DevOps account.
-1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77382&Name=Terraform) to provision the tutorial project on your Azure DevOps organization. This URL will automatically select Terraform template in the demo generator.
+1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77382&Name=Terraform) to provision the tutorial project on your Azure DevOps organization. This URL automatically selects the Terraform template in the demo generator.
 
 <a name="examine-terraform-file"></a>
 
@@ -143,7 +143,7 @@ Now that the application has been built, it's time to release it. However, no de
 
     This task executes a series of Azure CLI commands to set up some basic infrastructure required to use Terraform.
 
-    ```azurecli-interactive
+    ```azurecli
 	# this will create Azure resource group
 	call az group create --location westus --name $(terraformstoragerg)
 	
@@ -163,7 +163,7 @@ Now that the application has been built, it's time to release it. However, no de
 
     This task uses PowerShell commands to retrieve the storage account key needed for the Terraform provisioning.
 
-	```azurepowershell-interactive
+	```azurepowershell
 	# Using this script we will fetch storage key which is required in terraform file to authenticate backend storage account
 	
 	$key=(Get-AzureRmStorageAccountKey -ResourceGroupName $(terraformstoragerg) -AccountName $(terraformstorageaccount)).Value[0]
