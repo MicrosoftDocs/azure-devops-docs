@@ -30,3 +30,7 @@ To publish an npm package to your feed, follow these steps:
    ```
 
     See the [npm publish docs](https://docs.npmjs.com/cli/publish) for more information on the `publish` command.
+
+## What's next?
+
+Check out the [Azure Artifacts landing page](../../index.yml) to learn about other topics.
