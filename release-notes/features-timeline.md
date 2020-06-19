@@ -1,8 +1,8 @@
 ---
 title: Azure DevOps Feature Timeline
-author: gloridelmorales
-ms.author: glmorale
-ms.date: 04/30/2020
+author: sid-ah
+ms.author: simerzou
+ms.date: 06/01/2020
 ms.topic: article
 ms.technology: devops-release-notes
 description: Azure DevOps feature updates roadmap, release notes, release timeline, and server build numbers
@@ -11,14 +11,14 @@ hide_comments: true
 
 # Azure DevOps Feature Timeline
 
-****
+---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a> 
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a> 
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a> 
+| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
 | <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
 
-****
+---
 
 ## Features under development
 
@@ -76,7 +76,6 @@ This feature list is a peek into our roadmap. It identifies some of the signific
     </tbody>
 </table>
 
-
 ## Current features
 
 The features timeline lists significant features delivered to Azure DevOps Services and the corresponding version of Azure DevOps Server.
@@ -93,30 +92,59 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
-        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4/27/2020](2020/sprint-168-update.md)">4/27/2020</a></td>
+    <td rowspan="5"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
+        <td>Restrict new user invitations from Project and Team Administrators</td><td>General</td><td>2020.1</td>
+    </tr>
+    <tr><td>State transition restriction rules (private preview)</td><td>Boards</td><td>TBD</td></tr>
+    <tr><td>Tag filter support for pipeline resources</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Additional agent platform: ARM64</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr><td>Control which tasks are allowed in pipelines</td><td>Pipelines</td><td>2020.1</td></tr>
+    <tr>
+    <td rowspan="8"><a href="2020/sprint-170-update.md" data-raw-source="[28 May 2020](2020/sprint-170-update.md)">01 June 2020</a></td>
+        <td>Add "Parent Work Item" filter to the task board and sprint backlog</td><td>Boards</td><td>2020</td>    
+        </tr>
+        <tr><td>Improve error handling experience –– required fields on Bug/Task</td><td>Boards</td><td>N/A</td></tr>
+        <tr><td>Preview of scale set agents</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Github packages support in YAML pipelines</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Ubuntu 20.04 in preview for Azure Pipelines hosted pools</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Notifications for disabled upstream sources</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>License expressions and embedded licenses</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Lightweight authentication tasks</td><td>Artifacts</td><td>2020</td></tr>
+    <tr>
+        <td rowspan="6"><a href="2020/sprint-169-update.md" data-raw-source="[11 May 2020](2020/sprint-169-update.md)">11 May 2020</a></td>
+        <td>Pipelines YAML CD features now generally available</td><td>Pipelines</td><td>2020</td>
+        </tr>
+        <tr><td>Service connections new UI as default experience</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Role-based access for service connections</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Showing associated CD pipeline info in CI pipeline</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Cross-project sharing of service connections is now public</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Pipeline resource version picker in the create run dialogue</td><td>Pipelines</td><td>2020</td></tr>
+    </tr>  
+    <tr>
+        <td rowspan="9"><a href="2020/sprint-168-update.md" data-raw-source="[4 May 2020](2020/sprint-168-update.md)">4 May 2020</a></td>
         <td>Azure DevOps now allows team admin(s) to create subscriptions from MS Teams & Slack</td><td>General</td><td>N/A</td>
         </tr>
-        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>N/A</td></tr>
-        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>N/A</td></tr>
+        <tr><td>MS Teams & Slack notifications for Repos events</td><td>General</td><td>2020.1</td></tr>
+        <tr><td>Add attachments while creating a pull request</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>New web platform conversion - Team Foundation Version Control Hubs</td><td>Repos</td><td>2020</td></tr>
         <tr><td>Limit build service repos scope access</td><td>Pipeline</td><td>N/A</td></tr>
-        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Run conditional job depending on variables from prior stage</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Getting details at runtime about multiple repositories</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Multi stage pipelines GA</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Configure Deployment Strategies from Azure portal</td><td>Pipelines</td><td>N/A</td>
     </tr>    
        <tr>
-            <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[April 13 2020](2020/sprint-167-update.md)">April 13 2020</a></td>
+            <td rowspan="10"><a href="2020/sprint-167-update.md" data-raw-source="[13 April 2020](2020/sprint-167-update.md)">13 April 2020</a></td>
             <td>Support for Team Admins to create subscriptions for messaging apps in Slack and Teams</td></td><td>General</td><td>2020</td>
         </tr>
         <tr><td>Multi tenant support for Azure Boards, Repos and Pipelines app in Microsoft Teams</td></td><td>General</td><td>2020</td></tr>
         <tr><td>Sync GitHub Issues to Azure DevOps Work Items</td><td>Boards</td><td>2019</td></tr>
-        <tr><td>Improved PR actionability</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>N/A</td></tr>
-        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Approval notification</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>N/A</td></tr>
-        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>N/A</td></tr>
+        <tr><td>Improved PR actionability</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Improved comment-related filtering within pull requests</td><td>Repos</td><td>2020.1</td></tr>
+        <tr><td>Add built-in checks & extensibility using marketplace extensions</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Approval notification</td><td>Pipelines</td><td>2020</td></tr>
+        <tr><td>Accessibility improvements</td><td>Artifacts</td><td>2020</td></tr>
+        <tr><td>Auditing events are now available</td><td>Artifacts</td><td>2020</td></tr>
         <tr><td>npm performance improvements</td><td>Artifacts</td><td>N/A</td></tr>
         <tr>
             <td rowspan="4"><a href="2020/sprint-166-update.md" data-raw-source="[9 March 2020](2020/sprint-166-update.md)">16 March 2020</a></td>
@@ -4437,7 +4465,7 @@ Versions in the "Server" column are linked to the appropriate download location.
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
-> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"] 
 > ![Make a suggestion](media/help-make-a-suggestion.png)
 
 You can also get advice and your questions answered by the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops).

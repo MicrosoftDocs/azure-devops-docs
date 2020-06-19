@@ -106,7 +106,7 @@ If you want to restrict access, then you'll want to follow these steps:
    the Release Management client, or restart their client. This is required 
    for their client to register the changes in permission.
 
-## Q&A
+## FAQ
 
 ### Q: Who needs to be added as a user to Release Management?
 

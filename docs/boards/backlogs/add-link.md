@@ -1,4 +1,4 @@
-﻿---
+---
 title: Link user stories, issues, and other work items
 titleSuffix: Azure Boards
 description: Link one or more work items to other work items or to a new git branch in Azure Boards or TFS
@@ -96,6 +96,7 @@ When you link work items, you select a link type. In general, use the following 
 
 
 #### [Browser](#tab/browser/)
+
 From the Add link dialog, select the link type, enter a work item ID, and then choose OK. 
 
 For example, here we use the **Related** link type to link three items to the bug with ID of *400*. 
@@ -137,6 +138,7 @@ If you are working from the Query Results page, you'll need to bulk save the wor
 
 
 #### [Visual Studio](#tab/visual-studio/)
+
 From the Add link to Multiple Items dialog, select the link type, enter a work item ID, and then click OK. 
 
 For example, here we use the Related link type to link several items to the user story with ID of *4654*. 
@@ -148,6 +150,8 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 You'll need to bulk save the work items you've modified. 
 
 * * *
+
+
 ## Link to a new work item   
 
 Here, we have selected to add a link to the selected work items.  
@@ -221,6 +225,7 @@ From a backlog or query results page, [multi-select the work items](bulk-modify-
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
+
 <a id="find-items"> </a>  
 
 ## Find work items to link to   
@@ -275,7 +280,7 @@ Additional features you can use to quickly link or change links that use the par
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
-- [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)
+- [Use Excel to edit tree-topology links](../backlogs/office/bulk-add-modify-work-items-excel.md)
 - [Use Project to edit parent-child and predecessor-successor links](../backlogs/office/create-your-backlog-tasks-using-project.md)
 - [Linking, traceability, and managing dependencies](../queries/link-work-items-support-traceability.md)
 

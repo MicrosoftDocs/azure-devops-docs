@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: reference
 ms.author: ravishan-msft
 author: ravishan-msft
-ms.date: 05/04/2020
+ms.date: 06/12/2020
 monikerRange: '>= azure-devops'
 ---
 # New Test Plans page
@@ -17,7 +17,11 @@ monikerRange: '>= azure-devops'
 
 A new Test Plans Page (Test Plans*) for your planned testing needs is available for all Azure DevOps Services organizations. The new page provides you with streamlined views to help you focus on the task at hand - be it test planning, authoring, execution or tracking. It is also clutter-free and consistent with the rest of Azure DevOps offering. We hope that you find it easy and intuitive to use.
 
-This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us. We are almost towards the end of this journey and now are ready to pull out the old page by **Jun 15th 2020**. We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps (only available till **Jun 15th 2020**):
+This new page has been in public preview for past few quarters and has been made default for all Test Plans users. During this time, we have continued to add the missing features/capabilities and address the feedback you have been providing us.
+
+We had originally planned to pull out the old page by mid June 2020 with the assumption that most of the gaps have been addressed. However, recently, we have received consistent feedback about one capability which is not efficient/missing in the new page, which was to do with reviewing the test outcomes, test suites and test case details side-by-side when looking at the test case list - more details [here](https://developercommunity.visualstudio.com/idea/1060525/keep-the-old-test-plans-view.html). We are in the process of evaluating the possible options given the constraints of the design system. As such, we are pausing on the deadline for switching to the new Test Plans page. Once we have more clarity on the solution, we will revisit the deadline timelines.
+
+We highly recommend leveraging the new page and [sharing your feedback](#feedback) with us. However, if you absolutely need to leverage the prior page then enable it using the following steps:
 
 1. Sign-in into your Azure DevOps Services organization
 2. Click on your Avatar on the top right and navigate to "Preview Features"
@@ -72,7 +76,7 @@ The context menu on the Test Plan header provides the following options:
 
 ![copy test plan page](media/new-test-plans-page/copy-test-plan-dialog.png)
 
-We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1) and the API lets you copy/clone a test plan across projects too.<br>
+We recommend creating a new Test Plan per sprint/release. When doing so, generally the Test Plan for the prior cycle can be copied over and with few changes the copied test plan is ready for the new cycle. To make this process easy, we have enabled a 'Copy test plan' capability on the new page. By leveraging it you can copy or clone test plans within the project. Its backing REST API is covered [here](https://docs.microsoft.com/rest/api/azure/devops/testplan/test%20plan%20clone/clone%20test%20plan?view=azure-devops-rest-5.1). The API lets you copy/clone a test plan across projects too.<br>
 For more guidelines on Test Plans usage, refer [here](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2015/07/22/test-planning-and-management-guide-updated/).
 
 
@@ -214,7 +218,7 @@ The context menu on the Test point node within the Execute tab provides the foll
 
 <a name="feedback"></a>
 ## Provide feedback
-Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and now are ready to pull out the old page by **Jun 15th 2020**. 
+Thank you for all the feedback you have provided on this page. We have tried to address most of the feedback submitted and have filled all the functionality gaps. As such, we are reaching towards the end of this journey and plan to pull out the old page soon. 
 
 Reach us at `devops_tools@microsoft.com` to share your thoughts on the new page. In the process, share screenshots as appropriate.
 

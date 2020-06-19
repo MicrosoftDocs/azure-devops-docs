@@ -69,7 +69,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
 
-## Q&A
+## FAQ
 
 ### What base URLs are used when invoking Azure Management APIs?
 

@@ -4,7 +4,7 @@ ms.technology: devops-cicd
 ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 06/04/2020
 ---
 
 ## Add a build badge
@@ -104,10 +104,10 @@ Next, [base64-encode](https://www.base64encode.org/) this prefixed string to cre
 Finally, add this script to your pipeline:
 
 ```
-git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: basic <BASE64_ENCODED_TOKEN_DESCRIBED_ABOVE>" submodule update --init --recursive
+git -c http.https://<url of submodule repository>.extraheader="AUTHORIZATION: Bearer <BASE64_ENCODED_STRING>" submodule update --init --recursive
 ```
 
-Be sure to replace "<BASIC_AUTH_TOKEN>" with your Base64-encoded token.
+Be sure to replace "<BASE64_ENCODED_STRING>" with your Base64-encoded "pat:token" string.
 
 Use a secret variable in your project or build pipeline to store the basic auth token that you generated.
 Use that variable to populate the secret in the above Git command.

@@ -18,7 +18,7 @@
 - name: SQL Server Reporting (Legacy)  
   href: sql-reports/toc.yml 
 - name: SharePoint Integration (Deprecated)  
-  href: sharepoint-dashboards/toc.yml 
+  href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration
 - name: REST API Reference
   items:
   - name: Dashboards

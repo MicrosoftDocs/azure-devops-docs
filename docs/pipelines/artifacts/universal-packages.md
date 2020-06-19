@@ -186,7 +186,7 @@ To download a Universal Package, add the **Universal Package** task and configur
 
 You can use a wildcard expression as the version to get the latest (highest) version of a package. For more information, see [Downloading the latest version](../../artifacts/quickstarts/universal-packages.md#downloading-the-latest-version) in the quickstart guide.
 
-## Q&A
+## FAQ
 
 ### Where can I learn more about Azure Artifacts and the TFS Package Management service?
 

@@ -24,6 +24,8 @@
   items:
   - name: What are feeds?
     href: concepts/feeds.md
+  - name: Understanding project-scoped feeds
+    href: feeds/project-scoped-feeds.md
   - name: What are feed views?
     href: concepts/views.md
   - name: Create a private PowerShell repository
@@ -32,13 +34,13 @@
     href: tutorials/share-packages-publicly.md
   - name: Protect OSS packages with upstream sources
     href: tutorials/protect-oss-packages-with-upstream-sources.md
-  - name: Communicate quality with release views
+  - name: Promote a package to a view
     href: feeds/views.md
   - name: Migrate packages to Azure Artifacts
     href: tutorials/migrate-packages.md
   - name: Move your packages to the cloud
     href: nuget/move-from-fileshares.md
-  - name: Set permissions and grant access
+  - name: Set feeds and views permissions and grant access
     href: feeds/feed-permissions.md
   - name: Understanding upstream sources
     href: concepts/upstream-sources.md
@@ -56,7 +58,7 @@
   items:
   - name: NuGet quickstart
     href: get-started-nuget.md
-  - name: Publish to a NuGet feed
+  - name: Publish to a NuGet feed (YAML/Classic)
     href: ../pipelines/artifacts/nuget.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   - name: Publish a NuGet package from the command line
     href: nuget/publish.md
@@ -76,7 +78,7 @@
   items:
   - name: npm quickstart
     href: get-started-npm.md
-  - name: Publish to an npm feed 
+  - name: Publish to an npm feed (YAML/Classic)
     href: ../pipelines/artifacts/npm.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   - name: Publish an npm package from the command line
     href: npm/publish.md
@@ -92,7 +94,7 @@
   items:
   - name: Maven quickstart
     href: get-started-maven.md
-  - name: Publish to a Maven feed
+  - name: Set up a project to work with Maven feed
     href: ../pipelines/packages/maven.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json
   - name: Publish a Maven package from the command line
     href: maven/publish.md
@@ -108,9 +110,9 @@
     href: quickstarts/python-packages.md
   - name: Publish to a Python feed
     href: ../pipelines/targets/pypi.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
-- name: Universal
+- name: Universal Packages
   items:
-  - name: Universal quickstart
+  - name: Universal packages quickstart
     href: quickstarts/universal-packages.md
   - name: Publish to a Universal feed
     href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 

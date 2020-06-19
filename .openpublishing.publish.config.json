@@ -23,7 +23,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
+        "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
@@ -60,6 +60,24 @@
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "snippets",
+      "url": "https://github.com/MicrosoftDocs/snippets-azure-devops-docs-pr",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs-pr",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "quickstart-templates",
+      "url": "https://github.com/Azure/azure-quickstart-templates",
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
@@ -78,5 +96,8 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
