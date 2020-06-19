@@ -56,7 +56,7 @@ If you have a Visual Studio Enterprise license, you already have access to Packa
 
 Each organization gets five free licenses. If you need more than five licenses, go to the [Marketplace page for Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed) and select **Get**. Select **Buy** and purchase the additional licenses that you need.  
 
-If you aren't sure, you can select **Start 30 day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace.
+If you aren't sure, you can select **Start 30-day free trial**. Every user in your organization is then granted access to Azure Artifacts for 30 days. After the 30-day trial period, your organization reverts back to five entitled users, and you must assign licenses to individual users.  If you need additional licenses at this point, you can purchase them from this same dialog box in the Marketplace.
 
 > [!NOTE]
 > If you selected **Start 30 day free trial** and are still in the trial period, every user is granted access. Licenses don't need to be assigned until the trial period ends. 
@@ -68,7 +68,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 1. Select **Assign**, enter the users you want to assign licenses, and then select **Ok**.
 
-   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. Make sure that your Visual Studio Enterprise subscribers have the [VS Enterprise](../organizations/security/access-levels.md) access level. See [Change access levels](../organizations/security/change-access-levels.md) for more details on permissions and how to change access levels.
+   * Users with Visual Studio Enterprise subscriptions get Azure Artifacts for free. Make sure that your Visual Studio Enterprise subscribers have the [VS Enterprise](../organizations/security/access-levels.md) access level. See [Change access levels](../organizations/security/change-access-levels.md) for more information on how to set up permissions and change access levels.
 
    * Users who are using an instance of TFS that's disconnected from the internet (and thus can't purchase licenses from the Marketplace) can still assign licenses purchased through an enterprise agreement.
 
@@ -76,7 +76,7 @@ If you aren't sure, you can select **Start 30 day free trial**. Every user in yo
 
 ## Create a feed
 
-A feed is a container that allow users to group packages and control who can access them by modifying the feed permissions.
+A feed is a container that allows users to group packages and control who can access them by modifying the feed permissions.
 
 Feeds are not package type dependent. Azure Artifacts currently supports the storage of all the following package types in a single feed:
 
@@ -99,14 +99,14 @@ When you're done, select **Create**.
 ::: moniker range=">= azure-devops-2019"
 
 > [!div class="mx-imgBorder"] 
-> ![New feed dialog box azure devops 2019](media/new-feed-dialog.png)
+> ![New feed dialog box Azure DevOps 2019](media/new-feed-dialog.png)
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
 
 > [!div class="mx-imgBorder"]
-> ![New feed dialog box tfs](media/new-feed-dialog.png)
+> ![New feed dialog box TFS](media/new-feed-dialog.png)
 
 ::: moniker-end
 
@@ -136,14 +136,14 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= tfs-2018 < azure-devops-2019"
         
       > [!div class="mx-imgBorder"] 
-      > ![Connect to feed button in Azure Artifacts tfs 2018](media/connect-to-feed.png)
+      > ![Connect to feed button in Azure Artifacts TFS 2018](media/connect-to-feed.png)
 
       ::: moniker-end
 
       ::: moniker range="= tfs-2017"
 
       > [!div class="mx-imgBorder"] 
-      > ![Connect to feed button in Azure Artifacts tfs 2017](media/connect-to-feed.png)
+      > ![Connect to feed button in Azure Artifacts TFS 2017](media/connect-to-feed.png)
 
       ::: moniker-end
 
@@ -167,14 +167,14 @@ We recommend that you use two .npmrc files:
       ::: moniker range=">= tfs-2018 < azure-devops-2019"
 
       > [!div class="mx-imgBorder"]
-      > ![Connect to feed from Azure Artifacts tfs 2018](media/connect-to-feed-npm-registry.png)
+      > ![Connect to feed from Azure Artifacts TFS 2018](media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
 
       ::: moniker range="= tfs-2017"
 
       > [!div class="mx-imgBorder"]
-      > ![Connect to feed from Azure Artifacts tfs 2017](media/connect-to-feed-npm-registry.png)
+      > ![Connect to feed from Azure Artifacts TFS 2017](media/connect-to-feed-npm-registry.png)
 
       ::: moniker-end
         
@@ -220,7 +220,7 @@ You can now publish the npm package:
 
 1. Run `npm publish`.
 
-The `npm publish` command will authenticate to the feed using the .npmrc configuration files that you had to setup in this [previous step](#set-up-your-npmrc-files). See the [npm CLI docs](https://docs.npmjs.com/cli/publish) for more details.
+The `npm publish` command will authenticate to the feed using the .npmrc configuration files that you had to setup in this [previous step](#set-up-your-npmrc-files). See the [npm CLI docs](https://docs.npmjs.com/cli/publish) for more information.
 
 If you have followed all of the steps up to this point, your npm package should be available now in your feed.
 
