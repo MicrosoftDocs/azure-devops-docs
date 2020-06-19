@@ -382,6 +382,7 @@ You can use the following status check functions as expressions in conditions, b
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
   * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
+  * Evaluates to `False` if the pipeline is canceled.
 
 ### succeededOrFailed
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`
