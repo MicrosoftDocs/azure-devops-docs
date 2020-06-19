@@ -4,7 +4,7 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 06/01/2020
-description: With this **sprint 170**, we have made it easier to authenticate Azure Artifacts with other popular package managers. Find further details about the actual implementation below.
+description: With this sprint 170, we have made it easier to authenticate Azure Artifacts with other popular package managers. Find further details about the actual implementation below.
 ---
 
 # Azure Artifacts simplifies integration with other services
@@ -21,7 +21,7 @@ With this update, we have made it easier to authenticate Azure Artifacts with ot
 
 [!INCLUDE [sprint-170-update-links](includes/pipelines/sprint-170-update-links.md)]
 
-### Azue Artifacts
+### Azure Artifacts
 
 [!INCLUDE [sprint-170-update-links](includes/artifacts/sprint-170-update-links.md)]
 

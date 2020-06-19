@@ -42,6 +42,8 @@ If you have an Azure Pipeline that produces artifacts, you can consume the artif
 
 In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. 
 
+For an alternative way to download pipelines, see tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
+
 ## [Schema](#tab/schema)
 
 ```yaml
@@ -453,6 +455,8 @@ Resources must be authorized before they can be used. A resource owner controls 
 * When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
 
     > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+ 
+* If you continue to have problems authorizing resources, verify that the [agent pool security roles](../../organizations/security/about-security-roles.md) for your project are correct. 
 
 ## Set approval checks for resources
 
