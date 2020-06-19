@@ -46,7 +46,7 @@ For documentation on the workflow for build and release DevOps tasks, see [Use A
 
 The State drop-down menu lists States within the sequence you order them within each state category.  
 
-The following image illustrates the State sequence defined for User Story and it's corresponding drop-down menu. 
+The following image illustrates the State sequence defined for User Story and its corresponding drop-down menu. 
 
 
 > [!div class="mx-imgBorder"]  
@@ -93,16 +93,16 @@ States you add appear in the drop-down menu for the States field shown in work i
 1. (Optional) To change the sequence of the State within the drop-down menu, choose the ![ ](../../../media/icons/actions-icon.png) context menu icon and choose **Move up** or **Move down**. 
 
 	> [!div class="mx-imgBorder"]
-	> ![Move State up](media/customize-workflow/move-state-sequence.png) 
+	> ![Move up State](media/customize-workflow/move-state-sequence.png) 
 
-1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you just customized. 
+1. When you've finished adding states for the WIT, verify your changes by refreshing your browser and open a work item of the type you customized. 
 
 	Here we show the State drop-down menu with Triaged selected. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Triaged state added](media/process/cpw-added-triage-state-in-form.png) 
 
-1. Remember, when you add a State to a WIT which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
+1. Remember, when you add a State to a WIT, which is associated with a backlog level, each team that uses the Kanban board needs to [update their column settings](../../../boards/boards/add-columns.md).
 
 <a id="edit-state"></a>
 
@@ -161,7 +161,7 @@ You can hide an inherited state that your team doesn't use in its workflow proce
 
 ## View the State workflow model 
 
-You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Markeplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model. 
+You can view the State workflow model by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Marketplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model. 
 
 For example, the following image shows the Bug workflow that has been customized to have a **Triaged** state. This view illustrates the default transitions of the workflow model. All states can transition from one state to another. 
 
