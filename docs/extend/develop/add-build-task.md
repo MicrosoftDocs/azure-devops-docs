@@ -650,10 +650,10 @@ For more help with triggers, such as CI and PR triggers, visit [Specify events t
 },
 ```
 - The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
-- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. Inputs:
+- Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file.                        Inputs:
     - Command: install
     - Working folder that contains package.json: /TaskDirectory
-- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript. Inputs:
+- Next add the 'Bash' task. This will be used to compile the Typescript into Javascript.                                                Inputs:
     - Type: inline
     - Script: Should look something like:
     ```
