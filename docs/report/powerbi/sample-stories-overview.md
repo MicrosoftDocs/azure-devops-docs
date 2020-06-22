@@ -171,6 +171,8 @@ $apply=filter(
 
 ***
 
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]
+
 ### Query for status of bugs linked to the requirements
 
 #### [Power BI query](#tab/powerbi/)
