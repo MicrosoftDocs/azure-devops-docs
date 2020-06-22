@@ -134,23 +134,23 @@
     - name: Remove large binaries from Git
       href: git/remove-binaries.md
     - name: Manage branches
-    items:
-    - name: Manage your branches
-      href: manage-your-branches.md
-    - name: Create a new branch
-      href: create-branch.md
-    - name: Delete a branch
-      href: delete-branch.md
-    - name: Restore a deleted branch
-      href: restore-deleted-branch.md
-    - name: Require branch folders
-      href: require-branch-folders.md
-    - name: Lock a branch
-      href: lock-branches.md
-    - name: Branch policies
-      href: branch-policies.md
-    - name: "Branch permissions (Security)"
-      href: branch-permissions.md
+      items:
+      - name: Manage your branches
+        href: manage-your-branches.md
+      - name: Create a new branch
+        href: create-branch.md
+      - name: Delete a branch
+        href: delete-branch.md
+      - name: Restore a deleted branch
+        href: restore-deleted-branch.md
+      - name: Require branch folders
+        href: require-branch-folders.md
+      - name: Lock a branch
+        href: lock-branches.md
+      - name: Branch policies
+        href: branch-policies.md
+      - name: "Branch permissions (Security)"
+        href: branch-permissions.md
   - name: Map TFVC actions to Git
     href: mapping-my-tfvc-actions-to-git.md
   - name: Set up continuous integration
