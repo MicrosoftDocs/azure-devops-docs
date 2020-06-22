@@ -1,5 +1,12 @@
 ---
+---
+ms.technology: devops-analytics
+ms.author: kaelli
+author: KathrynEE
+ms.prod: azure-devops
+ms.date: 06/22/2020
 ms.topic: include
+---
 ---
 
 > [!NOTE]   
