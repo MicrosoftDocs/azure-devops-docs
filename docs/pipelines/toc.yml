@@ -418,6 +418,8 @@
       href: release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Add a deployment group job to a release pipeline
       href: process/deployment-group-phases.md
+    - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
+      href: release/deployment-groups/deploying-azure-vms-deployment-groups.md    
 - name: Configure security & settings
   items: 
 #    - name: About security options and requirements (New)
