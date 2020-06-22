@@ -132,7 +132,7 @@
     - name: Move Git repositories between Team Projects
       href: move-git-repos-between-team-projects.md
     - name: Remove large binaries from Git
-      href: git/remove-binaries.md
+      href: remove-binaries.md
     - name: Manage branches
       items:
       - name: Manage your branches
