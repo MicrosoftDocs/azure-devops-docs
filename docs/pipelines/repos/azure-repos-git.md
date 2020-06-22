@@ -149,32 +149,38 @@ If your Azure Repos Git repository is in a different project than your pipeline,
 
 Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by the pipeline.
 
-> [!IMPORTANT]
-> If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, and you don't need to add the current repository as
-
 To configure this setting, navigate to **Organization settings**, **Pipelines**, **Settings**.
 
-When enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, even those you want to use from a script, either as a repository resource, or in a checkout step. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+> [!IMPORTANT]
+> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations created after May 2020.
 
-To reference in a repository resource:
+When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, either as a [repository resource](../yaml-schema.md#repository-resource), or in a [checkout step](../yaml-schema.md#checkout). You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
+
+There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline.
+
+* If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, so you don't need to add the current repository as a repository resource.
+* If you are using a script to perform read-only operations on a repository in a public project, you don't need to add the public project repository as a repository resource.
+* If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository as a repository resource.
+
+For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must include `FabrikamProject/FabrikamTools` as a repository resource in your pipeline.
 
 ```yml
 resources:  
   repositories:
-  - repository: MyAzureReposGitRepository
+  - repository: FabrikamToolsTools
     type: git
-    name: FabrikamFiber/FabrikamRepo
+    name: FabrikamProject/FabrikamTools
 ```
 
-To reference in a checkout step:
+If you are already checking out the `FabrikamTools` repo in your pipeline using a checkout step, you may subsequently use scripts to interact with that repo, such as checking out different branches.
 
 ```yml
 steps:
-- checkout: git://FabrikamFiber/FabrikamRepo # Azure Repos Git repository in the same organization
+- checkout: git://FabrikamFiber/FabrikamTools # Azure Repos Git repository in the same organization
 ```
 
-By default this setting is enabled for new organizations created after May 2020.
-
+> [!NOTE]
+> For many scenarios, multi-repo checkout can be leveraged, removing the need to use scripts to check out additional repositories in your pipeline. For more information, see [Check out multiple repositories in your pipeline](multi-repo-checkout.md).
 
 ::: moniker-end
 
