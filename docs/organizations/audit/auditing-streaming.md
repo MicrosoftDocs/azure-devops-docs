@@ -3,7 +3,6 @@ title: Create audit streaming for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Get started sending your audit data to other locations for further processing for Azure DevOps, by creating and enabling a stream.  
 ms.technology: devops-audit
-ms.topic: conceptual
 ms.assetid: 
 ms.author: chcomley
 author: roferg

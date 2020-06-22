@@ -1,9 +1,7 @@
 ---
 title: Add a user who can set up billing for Azure DevOps
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
 description: Add a user who can set up and manage billing for Azure DevOps.
-titleSuffix: Azure DevOps
 ms.custom: seodec18
 ms.technology: devops-billing
 ms.assetid: bd87ec5c-84f2-4efa-bc37-a6999cb9532e
