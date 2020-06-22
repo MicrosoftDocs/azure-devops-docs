@@ -50,7 +50,6 @@ For an alternative way to download pipelines, see tasks in [Pipeline Artifacts](
 resources:        # types: pipelines | builds | repositories | containers | packages
   pipelines:
   - pipeline: string  # identifier for the resource used in pipeline resource variables
-    connection: string  # service connection for pipelines from other Azure DevOps organizations
     project: string # project for the source; optional for current project
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
