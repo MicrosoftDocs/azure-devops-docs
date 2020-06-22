@@ -131,6 +131,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
 
+[!INCLUDE [temp](includes/faq-critical-path.md)]
+
 
 ## Queries 
 
