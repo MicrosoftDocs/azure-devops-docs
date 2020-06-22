@@ -108,7 +108,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
 
 ## Edit the iteration backlog 
 
-The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and task boards. The default WIT for all processes is Task.  
+The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and Taskboards. The default WIT for all processes is Task.  
 
 For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
 
