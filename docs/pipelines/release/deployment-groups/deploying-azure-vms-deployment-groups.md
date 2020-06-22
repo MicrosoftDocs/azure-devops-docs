@@ -1,6 +1,6 @@
 ---
-title: Deploying to Azure VMs using Deployment Groups in Azure Pipelines
-description: DevOps CI CD - Deploy to Azure VMs using Deployment Groups in Azure Pipelines
+title: Deploying to Azure VMs using deployment groups in Azure Pipelines
+description: DevOps CI CD - Deploy to Azure VMs using deployment groups in Azure Pipelines
 ms.topic: tutorial
 ms.author: v-edkaim
 author: edkaim
@@ -8,7 +8,7 @@ ms.date: 05/26/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Deploy to Azure VMs using Deployment Groups in Azure Pipelines
+# Deploy to Azure VMs using deployment groups in Azure Pipelines
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
@@ -34,11 +34,10 @@ In this tutorial, you learn about:
 
 ## Prerequisites
 
-1. A Microsoft Azure account.
+- A Microsoft Azure account.
+- An Azure DevOps organization.
 
-1. An Azure DevOps account.
-
-1. Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77368&Name=deploymentgroups) to provision the tutorial project on your Azure DevOps organization.
+Use the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77368&Name=deploymentgroups) to provision the tutorial project on your Azure DevOps organization.
 
 ## Setting up the Azure deployment environment
 
@@ -123,9 +122,9 @@ Since there is no configuration change required for the build pipeline, the buil
 
 1. Select the **Disconnect Azure Network Load Balancer** task. As the target machines are connected to the NLB, this task will disconnect the machines from the NLB prior to the deployment and reconnect them back to the NLB after the deployment. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one). 
 
-1. Select the **IIS Web App Manage** task. This runs on the deployment target machines registered with the deployment group configured for the task/stage. It creates a web app and application pool locally with the name **PartsUnlimited** running under the port **80**
+1. Select the **IIS Web App Manage** task. This task runs on the deployment target machines registered with the deployment group configured for the task/stage. It creates a web app and application pool locally with the name **PartsUnlimited** running under the port **80**
 
-1. Select the **IIS Web App Deploy** task. This runs on the deployment target machines registered with the deployment group configured for the task/stage. It deploys the application to the IIS server using **Web Deploy**.
+1. Select the **IIS Web App Deploy** task. This task runs on the deployment target machines registered with the deployment group configured for the task/stage. It deploys the application to the IIS server using **Web Deploy**.
 
 1. Select the **Connect Azure Network Load Balancer** task. Configure the task to use the Azure connection, resource group, and load balancer (there should only be one).
 
@@ -142,7 +141,7 @@ Since there is no configuration change required for the build pipeline, the buil
     > [!IMPORTANT]
     > Make sure to replace your SQL server DNS name (which you noted from Azure portal earlier) in **DefaultConnectionString** variable.
 
-    Your DefaultConnectionString should be similar to this after replacing the SQL DNS:
+    Your DefaultConnectionString should be similar to this string after replacing the SQL DNS:
 
     `Data Source=cust1sqljo5zndv53idtw.westus2.cloudapp.azure.com;Initial Catalog=PartsUnlimited-Dev;User ID=sqladmin;Password=P2ssw0rd@123;MultipleActiveResultSets=False;Connection Timeout=30;`
 
@@ -175,7 +174,7 @@ Since there is no configuration change required for the build pipeline, the buil
 
 In this tutorial, you deployed a web application to a set of Azure VMs using Azure Pipelines and Deployment Groups. While this scenario covered a handful of machines, you can easily scale the process up to support hundreds, or even thousands, of machines using virtually any configuration.
 
-## Clean up resources
+## Cleaning up resources
 
 This tutorial created an Azure DevOps project and some resources in Azure. If you're not going to continue to use these resources, delete them with the following steps:
 
