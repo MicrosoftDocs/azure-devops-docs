@@ -90,6 +90,8 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
 
+[!INCLUDE [temp](includes/faq-copy-clone.md)]
+
 
 ::: moniker range=">= azure-devops-2019"
 
