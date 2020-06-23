@@ -63,8 +63,6 @@ Some preview features provide access to entire new functionality. Others, such a
       - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
       - Task Insights for Failed Pipeline Runs 
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="1":::
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
@@ -86,8 +84,6 @@ Some preview features provide access to entire new functionality. Others, such a
       ![](../../media/icons/checkmark.png)   
       ![](../../media/icons/checkmark.png)  
    :::column-end:::
-:::row-end:::
-:::row:::
    :::column span="1":::
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
