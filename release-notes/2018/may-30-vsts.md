@@ -94,7 +94,7 @@ Environments are modeled in a way to help understand their status, along with de
 
 #### Pre-deployment and post-deployment
 
-If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon hanging off the right or left side of the environment.
+If pre-deployment or post-deployment conditions have been set for an environment, it is indicated on the environment with the presence of the approvals and gates. The progress of approvals and gates show up in the status of the environment as well. You can take action or view further details by clicking on the environment’s condition icon displayed on the right or left side of the environment.
 
 > [!div class="mx-imgBorder"]
 > ![Release environment actions](media/135_05.png)
