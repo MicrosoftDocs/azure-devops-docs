@@ -39,7 +39,7 @@ This quickstart guides you through using Azure Artifacts to publish and consume 
    > [!div class="mx-imgBorder"]
    > ![New feed dialog box](../media/new-feed-dialog.png)
 
-To edit your feed settings, select the gear icon ![gear icon](../media/icons/gear-icon.png) at the upper right corner of the feed page. 
+To edit your feed settings, select the gear icon ![gear icon](../../media/icons/gear-icon.png) at the upper right corner of the feed page. 
 
 ## Connect to your feed
 
