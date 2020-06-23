@@ -74,7 +74,7 @@ Some preview features provide access to entire new functionality. Others, such a
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  <br/>
       ![](../../media/icons/checkmark.png)   
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
@@ -95,7 +95,7 @@ Some preview features provide access to entire new functionality. Others, such a
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  <br/>
       ![](../../media/icons/checkmark.png)   
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
