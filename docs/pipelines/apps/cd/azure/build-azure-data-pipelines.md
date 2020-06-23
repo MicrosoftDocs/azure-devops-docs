@@ -9,121 +9,70 @@ ms.date: 06/19/2020
 monikerRange: '=azure-devops'
 ---
 
-# Quickstart: <do something with X>
+# Quickstart: Implement a data pipeline with Azure DevOps, Azure Data Factory, and machine learning
 
-<!---Required:
-Starts with "Quickstart: " and is ideally two lines or less when rendered on a 1920x1080 screen.
-Make the first word following "Quickstart:" a verb, which is to say, an action.
-The "X" part should identify both the technology or service involved (e.g. App Service,
-Cosmos DB, etc.) and the language or framework, if applicable (.NET Core, Python, JavaScript,
-Java, etc.); the language or framework shouldn't appear in parentheses.
---->
+Get started with data pipelines by building a data pipeline with data ingestion, data transformation, and model training. 
 
-Get started with [service/product] by using [specific tools or activities] to [achieve a goal or job to be done]. [Summary of steps]. [Brief statement of cost incurred.]
-
-<!-- In the opening sentence, focus on the job or task to be completed, emphasizing
-general industry terms (such as "serverless," which are better for SEO) more than
-Microsoft-branded terms or acronyms (such as "Azure Functions" or "ACR"). That is, try
-to include terms people typically search for and avoid using *only* Microsoft terms. -->
-
-<!--After the opening sentence, summarize the steps taken in the article to answer "what is this
-article about?" Then include a brief statement of cost, if applicable. -->
-
-<!-- Example: 
-Get started with Azure Functions by using command-line tools to create a function that responds to HTTP requests. After testing the code locally, you deploy it to the serverless environment of Azure Functions. Completing this quickstart incurs a small cost of a few USD cents or less in your Azure account.
--->
-
-<!-- Avoid the following elements whenever possible:
-- Avoid callouts (note, important, tip, etc.) because readers tend to skip over them.
-Important callouts like preview status or version caveats can be included under prerequisites.
-
-- Avoid links, which are generally invitations for the reader to leave the article and
-not complete the experience of the quickstart. The exception are links to alternate versions
-of the same content (e.g. when you have a VS Code-oriented article and a CLI-oriented article). Those
-links help get the reader to the right article, rather than being a distraction. If you feel that there are
-other important concepts needing links, make reviewing a particular article a prerequisite. Otherwise, rely
-on the line of standard links (see below).
-
-- Avoid any indication of the time it takes to complete the quickstart, because there's already
-the "x minutes to read" at the top and making a second suggestion can be contradictory. (The standard line is probably misleading, but that's a matter for site design.)
-
-- Avoid a bullet list of steps or other details in the quickstart: the H2's shown on the right
-of the docs page already fulfill this purpose.
-
-- Avoid screenshots or diagrams: the opening sentence should be sufficient to explain the result,
-and other diagrams count as conceptual material that is best in a linked overview.
---->
-
-<!-- Optional standard links: if there are suitable links, you can include a single line
-of applicable links for companion content at the end of the introduction. Don't use the line
-if there's only a single link. In general, these links are more important for SDK-based quickstarts. -->
-
-(Service name) overview | Reference documentation | Sample source code
-
-<!-- NOTE: the Azure subscription line is moved to Prerequisites. -->
+Learn how to injest data from a CSV and save to blob storage, and then transform the injested data and save it to a staging area. Then, train a machine learning model using the transformed data and output the model as pickle file to blob storage. 
 
 ## Prerequisites
 
-<!-- Make Prerequisites the first H2 after the H1. Omit any preliminary text to the list.-->
-
+Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- (Optional: Completion of a previous quickstart if the current one depends on it. Use the language "Completion of (title)" where (title) is the link.)
-- First prerequisite
-- Second prerequisite
-- Third prerequisite
-- ...
-- (Any specific service-specific key - if specific actions are required, either link to an article that explains those steps, or make acquisition of a key one of the steps in the quickstart.)
+- An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+- A downloaded code sample [sample.csv](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)
+- Fork the [data pipeline solution](https://github.com/gary918/DataPipeline) in GitHub 
+- Install [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks) into your Azure DevOps account
 
-<!-- Include this heading even if there aren't any prerequisites, in which case just use the text: "None" (not bulleted). The reason for this is to maintain consistency across services, which trains
-readers to always look in the same place.-->
+## Provision Azure resources
 
-<!-- When there are prerequisites, list each as *items*, not instructions to minimize the verbiage.
-For example, use "Python 3.6" instead of "Install Python 3.6". If the prerequisite is something
-to install, link to the applicable and specific installer or download. Selecting the item/link is then the
-action to fulfill the prerequisite. Use an action word only if necessary to make the meaning clear.
-Don't use links to conceptual information about a prerequisite; only use links for installers.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Create a new resource group named `datapipeline`. 
+1. Create a storage account in `datapipeline`. Append the name with a unique identifiers. Use the default options available when creating the account. 
+    1. Within the storage account, create two containers, `rawdata`, `prepareddata`.
+    1. Open the `prepareddata` container and upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)). 
+1. Create a new Azure Data Factory account. 
+1. Add a new Azure Databricks service. 
+1. Add Azure Key Value. 
+1. Verify that you have the following resources in your resource group:
+    - Key vault
+    - Storage account
+    - Data factory (V2)
+    - Azure Databricks Service
 
-Do not bold items, because listing items alone fulfills that same purpose.
+## Set up Key Vault
 
-List prerequisites in the following order:
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- Language runtimes (Python, Node, .NET, etc.)
-- Packages (from pip, npm, nuget, etc.)
-- Tools (like VS Code IF REQUIRED. Don't include tools like pip if they're
-  automatically installed with another tool or language runtime, like Python. Don't include
-  optional tools like text editors--include them only if the quickstart demonstrates them.)
-- Sample code
-- Specialized hardware
-- Other preparatory work, such as creating a VM (OK to link to another article)
-- Azure keys
-- Service-specific keys
+You will use Key Vault to store all secrets (connection information) between the Azure services.
 
-The reason for placing runtimes and tools first is that it might take time to install
-them, and it's best to get a user started sooner than later.
+1. Generate a personal access token to use with Azure Databricks ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
+1. Copy the account key and connection string for your storage account.
+1.	Make key vault accessible by other services. You will need to first [create a service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal). 
 
-If you feel like your quickstart has a lot of prerequisites, the quickstart may be the
-wrong content type - a tutorial or how-to guide may be the better option. Remember that
-quickstarts should be something a reader can complete in 10 minutes or less.
+## Create your pipeline and deploy your template
 
---->
+1. Sign in to your Azure DevOps organization and navigate to your project.
+1. Go to **Pipelines**, and then select **Create Pipeline**.
+1. Create a service connection for Azure Resource Manager and name it azure_rm_connection.
+1. You will create two variable groups, one to connect to the Key Vault and one that stores information for the pipeline. 
+Names MATTER - datapipeline-vg
 
-## Sign in to <service/product/tool name>
+## Configure Azure Databricks
+Please refer to this document https://docs.microsoft.com/en-us/azure/databricks/security/secrets/secret-scopes to create a secret scope named "testscope" within the Azure Databricks workspace.
 
-<!-- If signing in requires more than one step, then use this section. If it's just a single
-step, include that step in the first section that requires it.
--->
+You can find the DNS Name and Resource ID in your Key Vault properties. 
 
-## Open Azure Cloud Shell
+## Configure Azure Data Factory 
 
-<!-- If you want to refer to using the Cloud Shell, place the instructions after the
-Prerequisites to keep the prerequisites as the first H2.
+1. Go to **Author & Monitor** in Azure Data Factory. 
+1. Click **Set up code repository** and connect your repo. 
+* ADD TABLE WITH SPECIFICS
+1. Update Key Pass
+1. Publish the pipeline under **Manage**
 
-However, only include the Cloud Shell if ALL commands can be run in the cloud shell.
+## Run the CI/CD Pipeline
 
---->
-
-## Procedure 1
-
+1. Create a Pipeline using `/pipelines/data_pipeline_ci_cd.yml`. 
+1. Need to give permission during the run. 
 <!---Required:
 Quickstarts are prescriptive and guide the customer through an end-to-end procedure.
 Make sure to use specific naming for setting up accounts and configuring technology.
@@ -220,11 +169,3 @@ so that a reader doesn't need to recreate those resources.
 Advance to the next article to learn how to create...
 > [!div class="nextstepaction"]
 > [Next steps button](contribute-get-started-mvc.md)
-
-<!--- Required:
-Quickstarts should always have a Next steps H2 that points to the next logical
-quickstart in a series, or, if there are no other quickstarts, to some other
-cool thing the customer can do. A single link in the blue box format should
-direct the customer to the next article - and you can shorten the title in the
-boxes if the original one doesn’t fit.
-Do not use a "More info section" or a "Resources section" or a "See also section". --->
