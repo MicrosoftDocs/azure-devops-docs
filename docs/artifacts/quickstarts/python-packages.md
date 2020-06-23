@@ -26,7 +26,7 @@ This quickstart guides you through using Azure Artifacts to publish and consume 
      
      _PyPI_ is the default repository name for `twine`, which is a tool for publishing Python packages. It's best not to name your feed _PyPI_ because if you don't use `-r` to specify a repository name when pushing, you might accidentally push to the wrong repository.
      
-   - Under **Visibility**, select who can read, contribute, or update packages in your feed. The recommended **People in your organization** setting allows all members in your organization to view and use your feed. 
+   - Under **Visibility**, select who can read, contribute, or update packages in your feed. The recommended **People in your organization setting allow all members in your organization to view and use your feed. 
    
    - Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstream sources to your feed. 
      
@@ -68,13 +68,13 @@ The Python Credential Provider is a manual interaction. If you want to set up au
    For `pip` installs, run the following command:
    
    ```bash
-   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your organization name>/_packaging/<your feed name>/pypi/simple
+   pip install <package-name> --index-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/simple
    ```
    
    For `twine` uploads, run the following command:
    
    ```bash
-   twine upload --repository-url https://pkgs.dev.azure.com/<your organization name>/_packaging/<your feed name>/pypi/upload <package wheel or other dist format>
+   twine upload --repository-url https://pkgs.dev.azure.com/<your-organization-name>/_packaging/<your-feed-name>/pypi/upload
    ```
    
 3. Follow the authentication flow in your browser.
@@ -84,15 +84,20 @@ The Python Credential Provider is a manual interaction. If you want to set up au
 1. From your feed in **Azure Artifacts**, select **Connect to feed**.
 
    > [!div class="mx-imgBorder"] 
-   >![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
-   > 
+   > ![Connect to feed button on the upper right of the page](../media/connect-to-feed-azure-devops-newnav.png)
 
 2. Choose either **pip** or **twine** under the Python header. 
 
-> [!NOTE]
-> You can use the **Get the tools** button to get **pip**, **twine** and the **artifacts keyring**.
+   > [!NOTE]
+   > You can use the **Get the tools** button to get **pip**, **twine** and the **artifacts keyring**.
 
-This will bring up instructions on how to publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/), and how to consume and download packages by using [pip](https://pypi.org/project/pip/).
+3. Follow the instructions under **Project setup** to set up your project.
+
+4. To publish your package, follow the steps in the **Publish packages** section.
+
+For more information, check out the following resources to:
+- Publish a package to your feed by using [Python’s twine command](https://pypi.org/project/twine/).
+- How to consume and download packages by using [pip](https://pypi.org/project/pip/).
 
 ## Next steps
 
