@@ -2,10 +2,13 @@
   href: backlogs-overview.md
 - name: Create your backlog
   href: create-your-backlog.md
+  displayname: product backlog, reorder, details, description, acceptance criteria, effort, story points, size, business value,    
 - name: Define features & epics
   href: define-features-epics.md
+  displayname: portfolio backlog, critical path, value area, business value, time criticality, target date 
 - name: Organize your backlog (map or reparent)
   href: organize-backlog.md
+  displayname: tree hierarchy, expand, collapse, mapping, reorder, display rollup   
 - name: Forecast
   displayname: velocity, sprints, iterations  
   href: ../sprints/forecast.md
@@ -17,6 +20,7 @@
     href: set-column-options.md
   - name: Display rollup progress bars or totals
     href: display-rollup.md
+    displayname: In Progress items, Completed child items, Progress by, Count of, Sum of, quick list, custom rollup, column metric  
   - name: "Filter backlogs & queries"
     href: filter-backlogs.md
   - name: Select backlog levels

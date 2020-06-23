@@ -301,6 +301,8 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../includes/faq-copy-clone.md)]
 
+[!INCLUDE [temp](../includes/faq-critical-path.md)]
+
 
 ## Try this next  
 
