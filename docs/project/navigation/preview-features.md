@@ -41,6 +41,7 @@ Some preview features provide access to entire new functionality. Others, such a
    :::column-end:::
 :::row-end:::
 ---
+:::row:::
    :::column span="2":::
       - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
       - [Experimental themes](#experimental-themes)
@@ -63,6 +64,7 @@ Some preview features provide access to entire new functionality. Others, such a
       - Task Insights for Failed Pipeline Runs 
    :::column-end:::
 :::row-end:::
+:::row:::
    :::column span="1":::
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
@@ -85,6 +87,7 @@ Some preview features provide access to entire new functionality. Others, such a
       ![](../../media/icons/checkmark.png)  
    :::column-end:::
 :::row-end:::
+:::row:::
    :::column span="1":::
       ![](../../media/icons/checkmark.png)  
       ![](../../media/icons/checkmark.png)  
