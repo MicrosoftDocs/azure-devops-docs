@@ -66,7 +66,7 @@ variables:
 `True` and `False` are boolean literal expressions.
 
 ### Null
-Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`).
+Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression. 
 
 ### Number
 Starts with '-', '.', or '0' through '9'.
