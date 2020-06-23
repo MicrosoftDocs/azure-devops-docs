@@ -1758,7 +1758,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <ul>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[English](https://msdn.microsoft.com/library/fda2bad5.aspx)">English</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Brazilian Portuguese</a></li>
 <li><a href="https://msdn.microsoft.com/v/library/fda2bad5.aspx" data-raw-source="[Chinese Simplified](https://msdn.microsoft.com/v/library/fda2bad5.aspx)">Chinese Simplified</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Chinese Traditional](https://msdn.microsoft.com/library/fda2bad5.aspx)">Chinese Traditional</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Czech](https://msdn.microsoft.com/library/fda2bad5.aspx)">Czech</a></li>
@@ -1768,6 +1767,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Japanese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Japanese</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Korean](https://msdn.microsoft.com/library/fda2bad5.aspx)">Korean</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Polish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Polish</a></li>
+<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Portuguese (Brazil)</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Russian](https://msdn.microsoft.com/library/fda2bad5.aspx)">Russian</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Spanish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Spanish</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Turkish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Turkish</a></li>
@@ -1783,7 +1783,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Brazilian Portuguese</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Simplified</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Traditional</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Czech</a></li>
@@ -1793,6 +1792,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Japanese</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Korean</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Polish</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Portuguese (Brazil)</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Russian</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Spanish</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Turkish</a></li>
