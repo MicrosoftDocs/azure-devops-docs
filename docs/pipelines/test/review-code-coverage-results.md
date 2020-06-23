@@ -39,8 +39,7 @@ code coverage for [JavaScript](../ecosystems/javascript.md) using Istanbul.
 
 ## View results 
 
-The code coverage summary can be viewed in the build timeline view.
-The summary shows the overall percentage of line coverage. 
+The code coverage summary can be viewed on the **Code Coverage** tab on the pipeline run summary.
 
 ![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
 
@@ -50,8 +49,7 @@ The summary shows the overall percentage of line coverage.
 
 ## Artifacts
 
-The code coverage artifacts published during the build can be viewed under the
-**Build artifacts published** milestone in the timeline view.
+The code coverage artifacts published during the build can be viewed under the **Summary** tab on the pipeline run summary.
 
 ![View code coverage artifact](media/review-code-coverage-results/view-code-coverage-artifact.png)
 
