@@ -3,7 +3,7 @@ title: Get started with Python packages
 description: Quickly start hosting python packages in Azure DevOps Services
 ms.technology: devops-artifacts
 ms.topic: quickstart
-ms.date: 10/03/2019
+ms.date: 06/23/2020
 monikerRange: '=azure-devops'
 ms.custom: tracking-python
 ---
@@ -12,11 +12,11 @@ ms.custom: tracking-python
 
 **Azure DevOps Services** | **Azure DevOps Server 2019 Update 1**
 
-This quickstart guides you through using Azure Artifacts to consume and publish Python packages by creating and connecting to a feed.
+This quickstart guides you through using Azure Artifacts to publish and consume Python packages by creating and connecting to a feed.
 
 ## Create a feed
 
-1. In the left navigation of your Azure DevOps project, select **Artifacts**. 
+1. Select **Artifacts** (in the left navigation of your Azure DevOps project).
 
 2. On the **Artifacts** page, select **Create Feed**.
 
@@ -24,19 +24,22 @@ This quickstart guides you through using Azure Artifacts to consume and publish 
 
    - In the **Name** field, give the feed a name. 
      
-     *PyPI* is the default repository name for `twine`, which is a tool for publishing Python packages. It's best not to name your feed *PyPI*, because if you don't use `-r` to specify a repository name when pushing, you might accidentally push to the wrong repository. 
+     _PyPI_ is the default repository name for `twine`, which is a tool for publishing Python packages. It's best not to name your feed _PyPI_ because if you don't use `-r` to specify a repository name when pushing, you might accidentally push to the wrong repository.
      
-   - Under **Visibility**, select who can read and contribute, or update, packages in your feed. The recommended **People in \<your organization>** setting lets all members in the organization see and use your feed. 
+   - Under **Visibility**, select who can read, contribute, or update packages in your feed. The recommended **People in your organization** setting allows all members in your organization to view and use your feed. 
    
-   - Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstreams to your feed. 
+   - Under **Packages from public sources**, select **Use packages from public sources through this feed** to add the public `npm`, `NuGet`, and `PyPI` registries as upstream sources to your feed. 
      
-     When these upstreams are enabled, your client will be able to fetch packages from the public registry through your private feed, and your private feed will cache those packages for you. If you select **Only use packages published to this feed**, your feed won't be connected to public registries, but you can connect to them later if you want.
+     > [!NOTE]
+     > After enabling these upstream sources your client will be able to fetch packages from the public registry through your private feed.
+     > Your private feed then will cache those packages for you. If you select **Only use packages published to this feed**, your feed won't be connected to the public registries. You can still connect to those public registries later if you chose to.
    
 4. Select **Create**.
 
-   ![New feed dialog box](../media/new-feed-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![New feed dialog box](../media/new-feed-dialog.png)
 
-To edit your feed settings, select the gear icon at upper right on the feed page, and then select **Feed settings**. 
+To edit your feed settings, select the gear icon ![gear icon](../media/icons/gear-icon.png) at the upper right corner of the feed page. 
 
 ## Connect to your feed
 
