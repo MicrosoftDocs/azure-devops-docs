@@ -167,7 +167,11 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 
 ***
 
-[!INCLUDE [temp](includes/note-test-suites-requirements.md)]
+  
+
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
+
+
 
 
 ### Query for status of bugs linked to the requirements

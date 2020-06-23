@@ -1,10 +1,18 @@
 ---
+ms.technology: devops-analytics
+ms.manager: mijacobs
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 06/22/2020
 ---
 
 
-<a id="prerequisites" />
- 
+<a id="prerequisites" />  
+
+
+
+
 ## Prerequisites
 
 For the report to generate useful data, you need to have performed the following tasks: 
