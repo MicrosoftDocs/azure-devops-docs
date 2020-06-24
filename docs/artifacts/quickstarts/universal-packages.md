@@ -25,7 +25,7 @@ You can install the Azure DevOps extension using the following command:
    az extension add --name azure-devops
    ```
 
-To check the extension version that you currently have run the following command: 
+To check the extension version that you currently have, run the following command: 
    ```cmd
    az --version
    ```
@@ -96,7 +96,7 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=ContosoWebApp
 ```
 
-#  [Legacy URLs](#tab/vsts)
+# [Legacy URLs](#tab/vsts)
 
 After you've installed the CLI, open your shell of choice (for example, PowerShell or cmd) and browse to the directory that you just created. Then, log in to Azure DevOps by using the following command. Replace the items in square brackets (`[]`) with appropriate values.
 
@@ -110,12 +110,10 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 az devops configure --defaults organization=https://[your-organization].visualstudio.com project=ContosoWebApp
 ```
 
----
-
 <a name="publish-a-package"></a>
 ## Publish a Universal Package
 
-Publish a package with `az artifacts universal publish`. The following example publishes a package named *my-first-package* with version *1.0.0* to the *FabrikamFiber* feed in the *fabrikam* organization with a placeholder description.
+Publish a package with `az artifacts universal publish`. The following example publishes a package named _my-first-package_ with version _1.0.0_ to the _FabrikamFiber_ feed in the _fabrikam_ organization with a placeholder description.
 
 Update these values as desired, and use the feed name that you noted earlier. Package names must be lowercase and can use only letters, numbers, and dashes (`-`). Package versions must be lowercase [Semantic Versioning (SemVer) 2.0.0](https://semver.org/spec/v2.0.0.html) without build metadata (`+` suffix).
 
@@ -125,13 +123,11 @@ Update these values as desired, and use the feed name that you noted earlier. Pa
 az artifacts universal publish --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
 
-#  [Legacy URLs](#tab/vsts)
+# [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
-
----
 
 ## View the package in your feed
 
@@ -142,7 +138,7 @@ To see the package that you just published, go to the organization that you spec
 
 ## Download a Universal Package
 
-Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then, download your package.
+Now that you've published a package, you can download it to a different directory on your machine. To do that, make a new directory and switch to it. Then run the command in the example to download your package.
 
 You must use the Azure CLI to download the package. Azure DevOps doesn't support direct HTTP/HTTPS download links or other ways to download the package. 
 
@@ -154,7 +150,7 @@ The following example downloads a package with the same metadata as the publish 
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
 
-#  [Legacy URLs](#tab/vsts)
+# [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
@@ -164,7 +160,9 @@ az artifacts universal download --organization https://fabrikam.visualstudio.com
 
 ### Filtered Universal Package downloads
 
-For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files. The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
+For large Universal Packages, you might want to download a few files instead of the entire package. You can use the ```--file-filter``` feature to download a subset of the Universal Package files.
+
+The ```--file-filter``` command follows the [.gitignore syntax](https://git-scm.com/docs/gitignore#_pattern_format). Make sure you have the latest Azure DevOps CLI extension: ```az extension update -n azure-devops```
 
 The following example uses a minimatch pattern to download all ```.exe```'s and ```dll```'s in your Universal Package. Don't forget to update these values to match the values that you selected when you published your package.
 
@@ -174,7 +172,7 @@ The following example uses a minimatch pattern to download all ```.exe```'s and 
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
 
-#  [Legacy URLs](#tab/vsts)
+# [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
@@ -197,4 +195,6 @@ Note that while Semantic Versioning specifies that versions must increase over t
 
 ## Next steps
 
-In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command. To use Universal Packages in a build, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
+In this quickstart, you published your first Universal Package and then downloaded back to your machine. To learn more about the Universal Package CLI, append `-h` to any CLI command.
+
+To use Universal Packages in Azure Pipelines, see the [Azure Pipelines doc for Universal Packages](../../pipelines/artifacts/universal-packages.md) or see the full [Universal Packages task documentation](../../pipelines/tasks/package/universal-packages.md).
