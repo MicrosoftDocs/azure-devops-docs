@@ -118,7 +118,7 @@ Here we open Boards.
 1. Choose **Epic Roadmap**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Epic Roadmap from Azure Boards](media/epic-roadmap/open-epic-roadmap.png.png)
+	> ![Choose Epic Roadmap from Azure Boards](media/epic-roadmap/open-epic-roadmap.png)
 
 	If you don't see the **Feature Timeline** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
