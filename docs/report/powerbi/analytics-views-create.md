@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 06/24/2020
 ---
 
 # Create an Analytics view in Azure DevOps 
@@ -59,6 +59,9 @@ Choose ![plus icon](../media/icons/blue-plus.png) **New View** to open the dialo
 5.	Verify and save the view
 
 Choose **Continue** to move to the next tab in the panel. If you need to revisit a tab, simply click the tab title. 
+
+> [!NOTE]   
+> The Kanban board fields&mdash;**Board Column**, **Board Column Done**, and **Board Lane**&mdash;aren't available to add as filters or selection to view at this time. A feature request is defined to add them, [Analytics View - Add Board Column to list of available Fields in Views](https://developercommunity.visualstudio.com/idea/467446/analytics-view-add-board-column-to-list-of-availab-1.html). 
 
 ### 1. Name the view and choose a sharing option
 
