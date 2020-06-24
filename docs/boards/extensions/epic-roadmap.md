@@ -23,6 +23,10 @@ Similar to the Feature Timeline, the Epic Roadmap supports portfolio management 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page.  
 
+> [!div class="mx-imgBorder"]  
+> ![Epic Roadmap initial view](media/epic-roadmap/intro.png)
+
+
 Use the Epic Roadmap to support the following tasks: 
 
 - Support roadmap planning  
@@ -32,8 +36,7 @@ Use the Epic Roadmap to support the following tasks:
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
-> [!div class="mx-imgBorder"]  
-> ![Feature Timeline](media/epic-roadmap/intro.png)
+
 
 
 The Feature Timeline and Epic Roadmap extension provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
@@ -46,11 +49,34 @@ The Feature Timeline and Epic Roadmap extension provides you with calendar views
 ## Prerequisites
 
 - Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
-- To view the Feature Timeline, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
+- To view the Epic Roadmap, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
 - To modify work items, you must have permissions to edit work items under the area path they are assigned to.   
 
 
 ## Define your epics, features, and stories 
+
+The Epic Roadmap displays individual epics, and the features and requirements mapped to them. Features are grouped under the Area Path their assigned to, which generally corresponds to a feature team. Only those features that are children of an epic appear in the Epic Roadmap view. 
+
+To use the Epic Roadmap, make the following definitions:
+
+- Define teams and area paths to support the rollup of the team's work into features and epics. 
+- Define sprints with dates for the project. Select sprints for the team.  
+	> [!NOTE]   
+	> Make sure you assign work items to a flat set of sprints. Assigning features to a hierarchy of sprints and child items to another set of sprints won't display correctly in the Epic Roadmap view.  
+or work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
+- Make sure the team is subscribed to the sprints of interest. 
+- Define epics and their child features. If no child work items are defined, then assign the feature to a sprint. 
+- When child work items are defined, assign the child items to sprints. 
+- To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
+- Once all child requirements are completed, set the State of the parent feature or epic to Done or Completed. Closed epics no longer appear in the drop-down list of the Epic Roadmap. 
+
+
+> [!TIP]   
+> To support roadmap planning, make sure your team has subscribed to several future iterations.  
+
+To learn more, review the following articles:  
+- [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
+- [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
 
 
 ## Open Boards or Backlogs 
