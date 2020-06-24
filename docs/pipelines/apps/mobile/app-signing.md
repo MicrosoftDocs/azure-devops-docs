@@ -244,7 +244,7 @@ Save your build pipeline, and you are all set! The build agent will now be able 
 
 ---
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

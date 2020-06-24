@@ -2,7 +2,7 @@
 title: View and add work items from Work Items hub
 titleSuffix: Azure Boards
 description: View and filter work items user stories, issues, bugs, & other work items from the Work Items hub and 7 personalized pivot views   
-ms.custom: "boards-work-items, seodec18"  
+ms.custom: boards-work-items, seodec18, contentperfq4
 f1_keywords: 
 - vs.tfc.teamexplorer.workitems
 - vs.tfc.teamexplorer.TeamExplorer
@@ -22,11 +22,10 @@ ms.date: 01/08/2018
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
 
-> [!NOTE]     
-> The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
-
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
+> [!NOTE]     
+> The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
 
 ## Open Work Items
 

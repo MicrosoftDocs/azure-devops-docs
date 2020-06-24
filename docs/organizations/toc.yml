@@ -49,6 +49,12 @@
       href: /azure/devops/organizations/accounts/delete-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Recover organization
       href: /azure/devops/organizations/accounts/recover-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Restrict admins from inviting new users
+      href: /security/restrict-invitations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Manage security policies
+      href: /azure/devops/organizations/accounts/change-application-access-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    - name: Set application connection policies
+      href: /azure/devops/organizations/accounts/change-application-access-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Add and manage banners
     href: /azure/devops/organizations/settings/manage-banners?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Troubleshooting
@@ -61,6 +67,8 @@
       href: /azure/devops/organizations/accounts/faq-azure-access?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set up Visual Studio
       href: /azure/devops/organizations/accounts/faq-set-up-vs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Audit
+  href: audit/toc.yml
 - name: Teams
   href: settings/scale/toc.yml
 - name: Notifications

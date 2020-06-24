@@ -152,7 +152,7 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings > Work > Project configuration**.
 
@@ -183,7 +183,7 @@ You define both areas and iterations from the **Work** pages of the project admi
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)
+    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
 
 2. Choose **Work**.  
 

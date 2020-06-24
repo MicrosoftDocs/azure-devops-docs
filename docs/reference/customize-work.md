@@ -206,7 +206,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
 <td>
 <ul>
 <li><a href="../organizations/security/access-levels.md" data-raw-source="[About access levels](../organizations/security/access-levels.md)">About access levels</a></li>
-<li><a href="../organizations/accounts/add-team-members.md" data-raw-source="[Add team members (Azure DevOps Services)](../organizations/accounts/add-team-members.md)">Add team members (Azure DevOps Services)</a></li>
+<li><a href="../organizations/security/add-users-team-project.md" data-raw-source="[Add team members (Azure DevOps Services)](../organizations/security/add-users-team-project.md)">Add team members (Azure DevOps Services)</a></li>
 <li><a href="../organizations/security/change-access-levels.md" data-raw-source="[Change access levels (on-premises deployments)](../organizations/security/change-access-levels.md)">Change access levels (on-premises deployments)</a></li>
 <li><a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[Add team members (on-premises deployments)](../organizations/settings/add-teams.md#add-team-members)">Add team members (on-premises deployments)</a></li>
 </ul>

@@ -1,14 +1,14 @@
 ---
-title: Build ASP.NET apps
-description: Automatically build ASP.NET apps in Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.topic: quickstart
+title: .NET Framework
+description: Use .NET Framework to build ASP.NET apps in Azure Pipelines
+ms.topic: conceptual
 ms.assetid: 840F4B48-D9F1-4B5F-98D9-00945501FA98
 ms.custom: seodec18
 ms.date: 04/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Build ASP.NET apps
+# Build ASP.NET apps with .NET Framework
 
 [!INCLUDE [version-tfs-2017-rtm](../../includes/version-tfs-2017-rtm.md)]
 
@@ -18,7 +18,10 @@ monikerRange: '>= tfs-2017'
 
 ::: moniker-end
 
-Learn how to build .NET Framework projects. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
+> [!NOTE]
+>
+> This article focuses on building .NET Framework projects with Azure Pipelines. For help with .NET Core projects, see [.NET Core](../../ecosystems/dotnet-core.md).
+
 
 ::: moniker range="tfs-2017"
 

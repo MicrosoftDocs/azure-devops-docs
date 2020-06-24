@@ -408,7 +408,7 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 ::: moniker-end
 
-## Q & A
+## FAQ
 
 ### If I don't schedule a maintenance window, when will the agents run maintenance?
 

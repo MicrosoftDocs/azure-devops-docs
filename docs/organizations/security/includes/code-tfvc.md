@@ -2,6 +2,8 @@
 ms.topic: include
 ---
 
+> [!NOTE]  
+> Tasks such as create, delete, or rename a TFVC repository are not supported. Once a TFVC repository is created you can't delete it. Also, you can only have one TFVC repository per project. This is different from Git repositories which allow for adding, renaming, and deleting multiple repositories. 
 
 <table>
 <tr valign="bottom">

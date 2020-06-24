@@ -5,7 +5,7 @@ ms.custom: seodec18
 description: Understand pipeline artifacts in Azure Pipelines and Azure DevOps Server
 ms.assetid: 028dcda8-a8fa-48cb-bb35-cdda8ac52e2c
 ms.topic: reference
-ms.date: 04/14/2020
+ms.date: 05/04/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -13,7 +13,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that need to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
+Pipeline artifacts provide a way to share files between stages in a pipeline or between different pipelines. They are typically the output of a build process that needs to be consumed by another job or be deployed. Artifacts are associated with the run they were produced in and remain available after the run has completed.
 
 > [!NOTE]
 > Both `PublishPipelineArtifact@1` and `DownloadPipelineArtifact@2` require a minimum agent version of 2.153.1
@@ -85,7 +85,7 @@ Keep in mind:
 
 ### Limiting which files are included
 
-`.artifactignore` files use the identical file-globbing syntax of `.gitignore` to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
+`.artifactignore` files use the identical file-globbing syntax of `.gitignore` (with very few limitations) to provide a version-controlled way to specify which files should _not_ be added to a pipeline artifact.
 
 Using an `.artifactignore` file, it is possible to omit the path from the task configuration, if you want to create a Pipeline Artifact containing everything in and under the working directory, minus all of the ignored files and folders. For example, to include only files in the artifact with a `.exe` extension:
 
@@ -93,6 +93,11 @@ Using an `.artifactignore` file, it is possible to omit the path from the task c
 **/*
 !*.exe
 ```
+
+The above statement instructs the universal package task and the pipeline artifacts task to ignore all files except the ones with `.exe` extension.
+
+> [!IMPORTANT]
+> `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
 
 To learn more, see [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or the [.gitignore documentation](https://git-scm.com/docs/gitignore).
 
@@ -299,7 +304,7 @@ When migrating from build artifacts to pipeline artifacts:
 
 3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
 
-## Q&A
+## FAQ
 
 ### Can this task publish artifacts to a shared folder or network path?
 

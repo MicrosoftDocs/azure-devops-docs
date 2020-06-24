@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
 * CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
-* code repositories (GitHub, Azure Repos, Git)
+* code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
 * package feeds (Azure Artifact feed, Artifactory package etc.)  
 
@@ -42,13 +42,14 @@ If you have an Azure Pipeline that produces artifacts, you can consume the artif
 
 In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. 
 
+For an alternative way to download pipelines, see tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
+
 ## [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
   pipelines:
   - pipeline: string  # identifier for the resource used in pipeline resource variables
-    connection: string  # service connection for pipelines from other Azure DevOps organizations
     project: string # project for the source; optional for current project
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
@@ -453,6 +454,8 @@ Resources must be authorized before they can be used. A resource owner controls 
 * When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
 
     > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+ 
+* If you continue to have problems authorizing resources, verify that the [agent pool security roles](../../organizations/security/about-security-roles.md) for your project are correct. 
 
 ## Set approval checks for resources
 

@@ -120,7 +120,7 @@ For example, by selecting Sprints 1 thru 4, the Fabrikam Fiber team gets access 
 
 ## Track team capacity
 
-Once you've [defined iteration paths (aka sprints) and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md), you can start using the following tools to plan your sprint.  
+Once you've [defined iteration (sprint) paths and configured team iterations](../../organizations/settings/set-iteration-paths-sprints.md), you can start using the following tools to plan your sprint.  
 
 At the start of each sprint, you'll want to plan the work that your team can commit to. The three Agile tools that support this work include the sprint backlog, capacity planning, and capacity bars. The sprint backlog contains a filtered subset of backlog items whose iteration path corresponds to the current sprint. 
 

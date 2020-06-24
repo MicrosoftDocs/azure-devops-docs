@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/04/2019
+ms.date: 06/01/2020
 ---
 
 # Set working days  
@@ -17,26 +17,21 @@ ms.date: 11/04/2019
 
 Each team's sprint planning and tracking tools automatically consider days off when calculating capacity and sprint burndown. Leave those days of the week that your team doesn't work unchecked in your team's Settings, Working days page.  
 
+> [!NOTE]   
+> The **Working days** setting specifies the days that teams regularly take off each week. To specify additional non-working days off, such as holidays or a team day off, set them through the **Capacity** page as described in [Set sprint capacity, Set capacity for the team and team members](../../boards/sprints/set-capacity.md#set-team-capacity).
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
   
 <a id="team-services-work-days" />  
 
-## Configure working days
+## Configure working days  
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+You can configure the Working days off from any team Settings dialog or from the Team configuration settings page. 
 
-#### [Preview page](#tab/preview-page) 
-
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
-
-![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-preview.png)  
-
-#### [Current page](#tab/current-page) 
+Here we show setting it through the Settings dialog. 
 
 [Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
@@ -44,9 +39,11 @@ Each team's sprint planning and tracking tools automatically consider days off w
 
 ::: moniker-end
 
-* * *
-
 ::: moniker range=">= tfs-2017 < azure-devops" 
+
+You can configure the Working days off from any team Settings dialog or from the Team configuration settings page. 
+
+Here we show setting it through the Settings dialog. 
 
 [Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
 
@@ -64,14 +61,13 @@ Open your team settings from the **Overview** tab of your team's admin context. 
 
 ::: moniker-end
 
-
 ::: moniker range="tfs-2013" 
 
-To set non-working days, modify the **ProcessConfiguration** file. For details, see [Process configuration XML element reference, Set non-working days](../../reference/xml/process-configuration-xml-element.md#weekend_days).  
+To set non-working days, modify the **ProcessConfiguration** file. For details, see [Process configuration XML element reference, Set non-working days](../../reference/xml/process-configuration-xml-element.md#weekend_days). 
 
 ::: moniker-end
 
 ## Related articles
 - [About Sprints, Scrum and project management](../../boards/sprints/scrum-overview.md) 
-- [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md)
+- [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md)
 - [Manage teams and configure team tools](manage-teams.md) 

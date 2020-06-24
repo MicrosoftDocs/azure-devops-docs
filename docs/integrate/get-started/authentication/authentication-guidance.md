@@ -4,6 +4,7 @@ description: Guidance for authentication with Azure DevOps Services.
 ms.assetid: 15CCEB1E-F42B-4439-8C35-B8A225F5546C
 ms.technology: devops-ecosystem
 ms.topic: conceptual
+ms.custom: has-adal-ref
 monikerRange: '>= tfs-2013'
 ms.author: chcomley
 author: chcomley
@@ -20,6 +21,7 @@ For applications that interface with Azure DevOps Services, you must authenticat
  Interactive client-side (REST) | Client application, that allows user interaction, calling [Azure DevOps Services REST APIs](/rest/api/vsts) | Console application enumerating projects in an organization | [Active Directory authentication library (ADAL)](/azure/active-directory/develop/active-directory-authentication-libraries) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ManagedClientConsoleAppSample) |
 | Interactive client-side (Client library) | Client application, that allows user interaction, calling Azure DevOps Services Client libraries | Console application enumerating bugs assigned to the current user |  [Client libraries](../../concepts/dotnet-client-libraries.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/ClientLibraryConsoleAppSample) |
 | Interactive JavaScript | GUI-based JavaScript application | AngularJS single page app displaying project information for a user | [Active Directory authentication Library for JS (ADAL JS)](https://github.com/AzureAD/azure-activedirectory-library-for-js) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/JavascriptWebAppSample) |
+| Personal access token (PAT) | Easy alternative to regular OAuth tokens.  | Use your PAT in place of your password. | [PATs](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 | Non-interactive client-side | Headless text only client-side application | Console app displaying all bugs assigned to a user | [Device Profile](/azure/active-directory/devices/overview) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DeviceProfileSample) |
 | Interactive client-side app targeting Azure DevOps Services and TFS | Client application, that allows user interaction, authenticates Azure DevOps Services and TFS users | Console application allowing Azure DevOps Services and TFS users to see assigned bugs |  [Client Library (Interactive and Windows authentication)](/azure/devops/integrate/get-started/client-libraries/samples#authenticating) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/DualSupportClientSample) |
 | Interactive web | GUI-based web application | Custom Web dashboard displaying build summaries |[OAuth](./oauth.md) | [sample](https://github.com/Microsoft/vsts-auth-samples/tree/master/OAuthWebSample) |
