@@ -96,7 +96,7 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 az devops configure --defaults organization=https://dev.azure.com/[your-organization] project=ContosoWebApp
 ```
 
-# [Legacy URLs](#tab/vsts)
+#  [Legacy URLs](#tab/vsts)
 
 After you've installed the CLI, open your shell of choice (for example, PowerShell or cmd) and browse to the directory that you just created. Then, log in to Azure DevOps by using the following command. Replace the items in square brackets (`[]`) with appropriate values.
 
@@ -123,7 +123,7 @@ Update these values as desired, and use the feed name that you noted earlier. Pa
 az artifacts universal publish --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
 
-# [Legacy URLs](#tab/vsts)
+#  [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
@@ -150,7 +150,7 @@ The following example downloads a package with the same metadata as the publish 
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
 
-# [Legacy URLs](#tab/vsts)
+#  [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
@@ -172,7 +172,7 @@ The following example uses a minimatch pattern to download all ```.exe```'s and 
 az artifacts universal download --organization https://dev.azure.com/fabrikam --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
 
-# [Legacy URLs](#tab/vsts)
+#  [Legacy URLs](#tab/vsts)
 
 ```azurecli
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
