@@ -17,15 +17,13 @@ ms.date: 02/14/2020
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
-
-Similar to the Feature Timeline, the Epic Roadmap supports portfolio management by providing a calendar view of a single epic and it's child features.  
-
-> [!NOTE]   
-> The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page.  
+Similar to the Feature Timeline, the Epic Roadmap supports portfolio management by providing a calendar view of a single epic and it's child features. Within each epic roadmap view, you can drill down to see details at the feature and requirements level.  
 
 > [!div class="mx-imgBorder"]  
 > ![Epic Roadmap initial view](media/epic-roadmap/intro.png)
-
+> 
+> [!NOTE]   
+> The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page.  
 
 Use the Epic Roadmap to support the following tasks: 
 
@@ -37,20 +35,27 @@ Use the Epic Roadmap to support the following tasks:
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
 
+## Minimum Viable Product (MVP)
 
+Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by performing these tasks: 
 
-The Feature Timeline and Epic Roadmap extension provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
+- Define requirements, features, and epics that support MVPs 
+- Prioritize your requirements, features, and epics to work on the most important work to deliver your MVPs
+- Group features under epics, and requirements under features. 
 
-> [!NOTE]   
-> The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap ](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension)
+[!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
 
+For additional context, see [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+
+[!INCLUDE [section-portfolio-backlog-requirements](../includes/section-portfolio-backlog-requirements.md)]
 
 
 ## Prerequisites
 
 - Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
 - To view the Epic Roadmap, you must be a member of the project and have view permissions to work items under the area path they are assigned to.
-- To modify work items, you must have permissions to edit work items under the area path they are assigned to.   
+- To modify work items, you must have permissions to edit work items under the area path they are assigned to.  
+
 
 
 ## Define your epics, features, and stories 
@@ -81,83 +86,29 @@ To learn more, review the following articles:
 
 ## Open Boards or Backlogs 
 
-You can access the Feature Timeline from either your team's Kanban board or backlog. 
-
-Here we open Boards. 
-
-::: moniker range="azure-devops"
-
-1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile-s155.png)  
-
-	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Select another team's board](../boards/media/quickstart/select-kanban-team-board.png) 
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open your Kanban board](../boards/media/quickstart/open-kanban-board-agile.png)  
-
-	To select another team's board, open the selector. Then select a different team, or select the ![home icon](../../media/icons/home-icon.png) **Browse all team boards** option. Or, you can enter a keyword in the search box to filter the list of team backlogs for the project.
-
-	> [!div class="mx-imgBorder"]  
-	> ![Select another team's board](../boards/media/quickstart/select-kanban-team-board.png) 
-
-::: moniker-end
-
-
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-1. To view your Kanban board, open your project from a web browser. Select **Work** > **Backlogs** > **Stories**, and then select **Board**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
-
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
-
-1. To select another team, open the project and team selector. Select a different team, or select the **Browse** option.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-standard.png)  
-
-   Your Kanban board appears. 
-	  
-	> [!div class="mx-imgBorder"]  
-	> ![Kanban board, Agile template](../boards/media/kanban-basics-intro.png)   
-
-::: moniker-end   
+You can access the Epic Roadmap from either your team's Kanban board or backlog. For instructions on how to open the Board or Backlog, see [View portfolio progress with the Feature Timeline, Open Boards or Backlogs](feature-timeline.md#open-boards). 
+ 
 
 ## Open Epic Roadmap 
 
 
-1. Choose **Epic Roadmap**. 
+1. Choose **Epic Roadmap** and then choose the Epic you want to view. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Epic Roadmap from Azure Boards](media/epic-roadmap/open-epic-roadmap.png)
 
-	If you don't see the **Feature Timeline** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
+	If you don't see the **Epic Road** link, then the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension isn't installed or enabled. Check with your Project Collection Administrator to request that it be installed. To learn more, [Request and approve extensions](../../marketplace/request-extensions.md). 
 
 2. Choose the Epic you want to view from the drop-down menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Choose Epic from drop-down menu](media/epic-roadmap/intro.png)
+	> ![Choose Epic from drop-down menu](media/epic-roadmap/choose-epic-drop-down-menu.png)
 	
 4. Customize your view. 
  
 	- **View Sprints**: Enter the number of iterations to show. The maximum number is 11. 
 		> [!NOTE]  
-		Sprint labels may not display for iterations above six, however, the calendar view represents those iterations.
+		Sprint labels may not display for iterations above six, however, the calendar view displays the iterations.
 	- **Show Details**: Displays progress bars of Feature child items
 	- **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 
