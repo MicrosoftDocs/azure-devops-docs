@@ -16,7 +16,12 @@ ms.date: 02/14/2020
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 
-The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level.  
+The Feature Timeline supports portfolio management by providing an all-up progress view of features grouped by their epic parents. This view provides you with calendar views of feature progress with the ability to drill down to see details at the requirements level. 
+
+[!INCLUDE [temp](../../includes/lightbox-image.md)] 
+
+[![Feature Timeline initial view](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
+
 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page. 
@@ -30,24 +35,7 @@ Use the Feature Timeline to support the following tasks:
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is available on TFS 2017 Update 2 and later versions. You can install it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
 
-[!INCLUDE [temp](../../includes/lightbox-image.md)]
-
-[![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
-
-
-## Minimum Viable Product (MVP)
-
-Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. 
-
-That said, you may find that one or more of the following features supports both CPM and MVP. You gain access to these features by installing a Marketplace extension.
- 
-- [Delivery Plans](/azure/devops/boards/plans/review-team-plans)
-- [Feature Timeline](/azure/devops/boards/extensions/feature-timeline)  
-- [Dependency Tracker](/azure/devops/boards/extensions/dependency-tracker)  
-
-If your organization supports connection to Microsoft Project, you may find additional [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
-
-For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+[!INCLUDE [section-portfolio-backlog-requirements](../includes/section-portfolio-backlog-requirements.md)]
 
 
 ## Prerequisites
@@ -59,6 +47,8 @@ For additional context, see [The Critical Path on Agile Projects](https://www.mo
 ## Define your features and requirements
  
 The Feature Timeline is designed to display features and the progress made to their child requirements. The Feature Timeline displays features grouped under epics when they are linked to parent epics. Ungrouped features appear at the bottom of the view. 
+
+[!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
 
 To gain the most from the Feature Timeline view, make the following definitions:
 
@@ -80,6 +70,9 @@ To learn more, review the following articles:
 - [Configure a hierarchy of teams](../plans/configure-hierarchical-teams.md) 
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
+
+<a id="open-boards" />
+
 
 ## Open Boards or Backlogs 
 
