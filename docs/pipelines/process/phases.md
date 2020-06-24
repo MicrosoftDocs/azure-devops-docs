@@ -407,7 +407,7 @@ YAML builds are not yet available on TFS.
 To add a new job, select '...' on the pipeline channel in the **Tasks** tab of the pipeline. The conditions and order of execution for a job are displayed when you select the job in the editor.
 
 ::: moniker range="> tfs-2018"
-When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not yet supported in release pipelines. Multiple jobs in a release pipeline run in sequence.
+When you specify multiple jobs in a build pipeline, they run in parallel by default. You can specify the order in which jobs must execute by configuring dependencies between jobs. Job dependencies are not supported in release pipelines. Multiple jobs in a release pipeline run in sequence. 
 ::: moniker-end
 
 ::: moniker range="tfs-2018"
@@ -540,7 +540,7 @@ Conditions are not supported in this version of TFS.
 * * *
 <h2 id="timeouts">Timeouts</h2>
 
-To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
+To avoid taking up resources when your job is unresponsive or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
@@ -815,6 +815,8 @@ When you run a pipeline on a self-hosted agent, by default, none of the sub-dire
 <a name="artifact-download"></a>
 
 ## Artifact download
+
+This example YAML file publishes the artifact `WebSite` and then downloads the artifact to `$(Pipeline.Workspace)`. The Deploy job only runs if the Build job is successful. 
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"

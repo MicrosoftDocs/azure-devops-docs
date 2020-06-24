@@ -1,7 +1,6 @@
 ---
 title: Catalog of widgets you can add to a dashboard
 titleSuffix: Azure DevOps
-ms.custom: Widget catalog
 description: Determine which widgets you want to add to your dashboards when working in Azure DevOps or Team Foundation Server  
 ms.custom: dashboards
 ms.technology: devops-analytics
@@ -134,13 +133,11 @@ The following widgets are organized under the service they support. Widgets that
 <li><a href="#test-trend-results-advanced" data-raw-source="[Test results trend (Advanced)](#test-trend-results-advanced)">Test results trend (Advanced)</a> (Analytics)</li>
 <li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
-<br/>
-<strong>Test Plans</strong>
-<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
-
-</ul>
 </td>
 <td width="28%">
+<strong>Test Plans</strong>
+<li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
+</ul>
 <strong>Other</strong>
 <ul>
 <li><a href="#embedded-webpage-widget" data-raw-source="[Embedded web page](#embedded-webpage-widget)">Embedded web page</a></li>
@@ -171,11 +168,10 @@ The following widgets are organized under the service they support. Widgets that
 <tbody valign="top">
 <tr>
 <td width="33%"> 
-<strong>Boards</strong>
+<strong>Work</strong>
 <ul>
 <li><a href="#assigned-to-me-widget" data-raw-source="[Assigned to me](#assigned-to-me-widget)">Assigned to me</a></li>
 <li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
-<li>Cumulative flow diagram</li>
 <li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
 <li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
 <li><a href="#query-tile-widget" data-raw-source="[Query tile](#query-tile-widget)">Query tile</a></li>
@@ -184,15 +180,13 @@ The following widgets are organized under the service they support. Widgets that
 <li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
 <li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
-
-</td>
-<td width="33%">
-<strong>Repos</strong>
+<strong>Code</strong>
 <ul>
 <li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
 </ul>
-<br/>
-<strong>Pipelines</strong>
+</td>
+<td width="33%">
+<strong>Build & Release</strong>
 <ul>
 <li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
 <li><a href="#build-history-widget" data-raw-source="[Chart for build history](#build-history-widget)">Chart for build history</a></li>
@@ -201,7 +195,7 @@ The following widgets are organized under the service they support. Widgets that
 <li><a href="#requirements-quality-widget" data-raw-source="[Requirements quality](#requirements-quality-widget)">Requirements quality</a></li>
 </ul>
 <br/>
-<strong>Test Plans</strong>
+<strong>Test</strong>
 <li><a href="#chart-test-plan-widget" data-raw-source="[Chart for test plans](#chart-test-plan-widget)">Chart for test plans</a></li>
 <li><a href="#test-results-widget" data-raw-source="[Test results trend](#test-results-widget)">Test results trend</a></li>
 <li>Test results trend (Advanced)</li>
@@ -245,14 +239,12 @@ The following widgets are organized under the service they support. Widgets that
 <li><a href="#sprint-overview-widget" data-raw-source="[Sprint overview](#sprint-overview-widget)">Sprint overview</a></li>
 <li><a href="#work-links-widget" data-raw-source="[Work links](#work-links-widget)">Work links</a></li>
 </ul>
-
-</td>
-<td width="33%">
 <strong>Code</strong>
 <ul>
 <li><a href="#code-tile-widget" data-raw-source="[Code tile](#code-tile-widget)">Code tile</a></li>
 </ul>
-<br/>
+</td>
+<td width="33%">
 <strong>Build &amp; Release</strong>
 <ul>
 <li><a href="#pull-request-widget" data-raw-source="[Pull request](#pull-request-widget)">Pull request</a> </li>
@@ -294,7 +286,7 @@ The following widgets are organized under the service they support. Widgets that
 <td width="33%"> 
 <strong>Work</strong>
 <ul>
-<li>Assigned to me</li>
+<li><a href="#assigned-to-me-widget">Assigned to me</a> </li>
 <li><a href="#chart-wit-widget" data-raw-source="[Chart for work items](#chart-wit-widget)">Chart for work items</a></li>
 <li><a href="#new-work-item-widget" data-raw-source="[New Work item](#new-work-item-widget)">New Work item</a> </li>
 <li><a href="#query-results-widget" data-raw-source="[Query results](#query-results-widget)">Query results</a></li>
@@ -321,7 +313,6 @@ The following widgets are organized under the service they support. Widgets that
 <td width="34%">
 <strong>Other</strong>
 <ul>
-<li>Embedded web page</li>
 <li><a href="#markdown-widget" data-raw-source="[Markdown](#markdown-widget)">Markdown</a></li>
 <li><a href="#other-links-widget" data-raw-source="[Other links](#other-links-widget)">Other links</a></li>
 <li><a href="#team-members-widget" data-raw-source="[Team members](#team-members-widget)">Team members</a> </li>

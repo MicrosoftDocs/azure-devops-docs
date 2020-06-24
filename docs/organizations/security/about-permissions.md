@@ -20,7 +20,7 @@ To access the resources you manage in Azure DevOps&mdash;such as your code, buil
 
 Permissions may apply to a specific project or objects within the project, such as Git or TFVC repositories, branches, build pipelines, area paths, and more. Or, they can apply to an entire Azure DevOps organization or TFS collection, or to a TFS instance. Each functional area uses groups to simplify management across the deployment.
 
-You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups.
+You manage security groups and permissions from the web portal administration context. Permissions are automatically set based on the group that you add users to, or based on the object, project, collection, or server level to which you add groups. For more information, see [Trace permissions](faq-trace-permissions.md).
 
 ## Permission settings
 
@@ -261,7 +261,7 @@ For more information, see [Determine permission levels and groups in SharePoint 
 
 ::: moniker range="azure-devops"  
 - [Permissions and groups reference](permissions.md)  
-- [Add users to an organization](../accounts/add-team-members.md) 
+- [Add users to an organization](../accounts/add-organization-users.md) 
 - [Add users to a team or a project](../../organizations/security/add-users-team-project.md)   
 - [Add and manage security groups](add-manage-security-groups.md)   
 - [Manage tokens, namespaces, permissions](manage-tokens-namespaces.md)   

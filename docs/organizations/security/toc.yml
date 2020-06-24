@@ -40,10 +40,12 @@
     href: security-glossary.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: How-to guides
   items:
-  - name: Add users to Azure DevOps Services
+  - name: Add users and manage access (cloud)
     href: ../accounts/add-organization-users.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Change access levels
     href: change-access-levels.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Restrict admins from inviting new users
+    href: restrict-invitations.md
   - name: Export user list  
     href: export-users-audit-log.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json   
   - name: Set permissions for an object or role
@@ -84,24 +86,24 @@
   items:
   - name: User and permissions management
     href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+  - name: Trace permissions
+    href: faq-trace-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add team members
-    href: ../accounts/faq-user-and-permissions-management.md#add-members-to-projects?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Authenticate & invite with GitHub
     href: faq-github-authentication.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Access with Azure AD
     href: ../accounts/faq-azure-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Change app access
-    href: ../accounts/faq-user-and-permissions-management.md#change-app-access-policies?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Add administrators
     href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Manage group-based licensing
-    href: ../accounts/faq-user-and-permissions-management.md#group-based-licensing?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: ../accounts/faq-user-and-permissions-management.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: Resolve connection issues
     href: ../../user-guide/troubleshoot-connection.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
   - name: "TF31002: Unable to connect"
     href: ../../reference/error/tf31002-unable-connect-tfs.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
-  - name: Trace permissions
-    href: faq-trace-permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Default permissions & access 

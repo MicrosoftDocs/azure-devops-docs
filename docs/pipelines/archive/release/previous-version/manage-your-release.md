@@ -181,7 +181,7 @@ To access this client, use the following URL:
 
 `http://<your-team-foundation-server-name>:1000/ReleaseManagement`
 
-## Q & A
+## FAQ
 
 ### Q: Can I deploy components of my multi-tiered app separately?
 

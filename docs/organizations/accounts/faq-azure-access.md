@@ -117,7 +117,7 @@ If your organization is connected to your organization's directory, only users f
 
 ### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad).
 
 ### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 

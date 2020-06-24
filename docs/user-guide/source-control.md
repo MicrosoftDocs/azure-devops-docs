@@ -43,4 +43,4 @@ Start sharing your code or get your code by using source control.
 ## Related articles
 
 * [Azure Repos documentation](../repos/index.yml)
-* [Git repositories documentation](../repos/git/index.md)
+* [Git repositories documentation](../repos/git/index.yml)

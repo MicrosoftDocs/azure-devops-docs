@@ -87,7 +87,7 @@ If your NuGet.config contains feeds in a different Azure DevOps organization (de
 8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
 9. Save the service connection and the build, then queue a new build
 
-## Q & A
+## FAQ
 
 ### Why can't my build restore packages?
 

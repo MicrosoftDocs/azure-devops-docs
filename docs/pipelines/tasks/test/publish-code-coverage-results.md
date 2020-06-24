@@ -65,7 +65,7 @@ In order to view the code coverage results in the pipeline, see [Review code cov
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 ### Is code coverage data merged when multiple files are provided as input to the task or multiple tasks are used in the pipeline? 
 At present, the code coverage reporting functionality provided by this task is limited and it does not merge coverage data. If you provide multiple files as input to the task, only the first match is considered. 

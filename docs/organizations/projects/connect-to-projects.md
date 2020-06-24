@@ -34,7 +34,7 @@ A project defines a process and data storage in which you manage your software p
 
 - From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 
-- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
+- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/index.yml).
 
 <a id="web-portal">  </a>
 

@@ -206,6 +206,7 @@ You  restrict access to work tracking objects in one of two ways:
 
 ## Related articles
 
+- [Trace permissions](faq-trace-permissions.md)
 - [Default permissions and access](permissions-access.md) 
 - [Permission lookup guide](permissions-lookup-guide.md) 
 - [About permissions and groups](about-permissions.md)

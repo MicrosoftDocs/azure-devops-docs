@@ -35,8 +35,9 @@ Read this article to learn how to:
 
 - To create subscriptions for repository-related events, you must be a member of the Azure DevOps Project Administrators group or Team Administrators group. To get added, see [Set permissions at the project- or collection-level](../../organizations/security/set-project-collection-level-permissions.md) or [Add Team Administrator](../../organizations/settings/add-team-administrator.md). 
 To get added, see [Set permissions at the project or collection level](../../organizations/security/set-project-collection-level-permissions.md).
-- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization. See [Change application 
+- To receive notifications, the **Third-party application access via OAuth** setting must be enabled for the Azure DevOps organization, see [Change application 
 access policies for your organization](../../organizations/accounts/change-application-access-policies.md).
+- To enable subscriptions, the project and/or repository must be public, see [Make your project public or private](../../organizations/public/make-project-public.md).
 
 > [!NOTE]
 > * Notifications are currently not supported inside direct messages.
@@ -117,6 +118,9 @@ To view, add, and remove subscriptions for a channel, use the `subscriptions` co
 
 The `subscription` command lists all the current subscriptions for the channel and allows you to add new subscriptions or remove existing ones. 
 When adding subscriptions, you can customize the notifications you get by using various filters, as described in the following section.
+
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
 
 > [!div class="mx-imgBorder"]
 > ![View subscriptions](./media/integrations-teams/Subscriptions.png)

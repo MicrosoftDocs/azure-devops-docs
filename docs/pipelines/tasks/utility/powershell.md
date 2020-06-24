@@ -143,13 +143,13 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+[Scripting with Windows PowerShell](/powershell/scripting/overview)
 
 [Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 

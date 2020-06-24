@@ -1,4 +1,4 @@
-﻿---
+---
 title: Email or print user stories, and other work items
 titleSuffix: Azure Boards
 description: Email or print work items to share information in Azure Boards, Azure DevOps, Visual Studio Team Explorer 
@@ -376,6 +376,16 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 
 ::: moniker-end  
+
+::: moniker range=">= tfs-2017"  
+
+## Marketplace extensions  
+
+You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+
+::: moniker-end
+
+
 
 ## Related articles  
 

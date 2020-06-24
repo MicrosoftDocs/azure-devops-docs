@@ -1,6 +1,6 @@
 ---
 title: PyPI Publisher task (Deprecated)
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
@@ -61,7 +61,7 @@ A generic service connection for a PyPI index.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]
