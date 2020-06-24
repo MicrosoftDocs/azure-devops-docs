@@ -83,13 +83,11 @@ To learn more, review the following articles:
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
 
-
-## Open Boards or Backlogs 
-
-You can access the Epic Roadmap from either your team's Kanban board or backlog. For instructions on how to open the Board or Backlog, see [View portfolio progress with the Feature Timeline, Open Boards or Backlogs](feature-timeline.md#open-boards). 
- 
-
 ## Open Epic Roadmap 
+
+You can access the Epic Roadmap from either your team's Kanban board or backlog. 
+
+1. Open the Board or Backlog for your team, see [View portfolio progress with the Feature Timeline, Open Boards or Backlogs](feature-timeline.md#open-boards). 
 
 
 1. Choose **Epic Roadmap** and then choose the Epic you want to view. 
@@ -127,22 +125,20 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
 
+<!--- 
+Guidance on granularity of requirements and features
+Showing work that spans iterations
+Have conversations with the team - dependencies
 
 
-## Q & A
-
-
-[!INCLUDE [temp](../includes/faq-critical-path.md)]
-
-<!--- Enter some notes about critical path and MVP  --> 
+-->
+ 
 
 ## Related articles
 
-
 - [Review team delivery plans](../plans/review-team-plans.md)
 - [View portfolio progress with the Feature Timeline](feature-timeline.md) 
-- [Plan and track dependencies using the Dependency Tracker](dependency-tracker.md)  
-- 
+- [Plan and track dependencies using the Dependency Tracker](dependency-tracker.md)
 
 
 ## Related Marketplace extensions
