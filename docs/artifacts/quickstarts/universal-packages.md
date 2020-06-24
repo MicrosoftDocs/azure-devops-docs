@@ -110,6 +110,8 @@ Next, set the organization that you just logged in to as the CLI's default. Agai
 az devops configure --defaults organization=https://[your-organization].visualstudio.com project=ContosoWebApp
 ```
 
+-----
+
 <a name="publish-a-package"></a>
 ## Publish a Universal Package
 
@@ -128,6 +130,8 @@ az artifacts universal publish --organization https://dev.azure.com/fabrikam --f
 ```azurecli
 az artifacts universal publish --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --description "Your description" --path .
 ```
+
+-----
 
 ## View the package in your feed
 
@@ -156,7 +160,7 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .
 ```
 
----
+-----
 
 ### Filtered Universal Package downloads
 
@@ -178,7 +182,7 @@ az artifacts universal download --organization https://dev.azure.com/fabrikam --
 az artifacts universal download --organization https://fabrikam.visualstudio.com --feed FabrikamFiber --name my-first-package --version 1.0.0 --path .  --file-filter **/*.exe;**/*.dll
 ```
 
----
+-----
 
 ### Downloading the latest version
 
