@@ -35,6 +35,21 @@ Use the Feature Timeline to support the following tasks:
 [![Feature Timeline](media/feature-timeline/intro-image.png)](media/feature-timeline/intro-image-expanded.png#lightbox)
 
 
+## Minimum Viable Product (MVP)
+
+Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by prioritizing epics, features, stories and tasks. 
+
+That said, you may find that one or more of the following features supports both CPM and MVP. You gain access to these features by installing a Marketplace extension.
+ 
+- [Delivery Plans](/azure/devops/boards/plans/review-team-plans)
+- [Feature Timeline](/azure/devops/boards/extensions/feature-timeline)  
+- [Dependency Tracker](/azure/devops/boards/extensions/dependency-tracker)  
+
+If your organization supports connection to Microsoft Project, you may find additional [Marketplace extensions](https://marketplace.visualstudio.com/search?target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance) that support connection of Azure DevOps to Microsoft Project.  
+
+For additional context, see [The Critical Path on Agile Projects](https://www.mountaingoatsoftware.com/blog/the-critical-path-on-agile-projects) and [Running a lean startup on Azure DevOps](https://medium.com/@giladkhen/running-a-lean-startup-on-azure-devops-5934ced2cc42). 
+
+
 ## Prerequisites
 
 - Install the [Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension) extension for the organization(s) or collection(s) for which you want to track progress at the epic and feature level. In order to install an extension, you must be a member of the Project Collection Administrator Group. To learn more, see [Install extensions](../../marketplace/install-extension.md). 
@@ -51,19 +66,18 @@ To gain the most from the Feature Timeline view, make the following definitions:
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
 	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
-- For work to be performed in some future iteration, you can leave the dates unset and it will appear as the last sprint in the roadmap. 
+- For work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
 - Make sure the team is subscribed to the sprints of interest. 
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
 - When child work items are defined, assign the child items to sprints. 
 - To view progress by Effort, Story Points, or Size, assign values to those fields to the child requirements. 
-- Once all child requirements are completed, set the State of the parent feature to Done or Completed.  
-
+- Once all child requirements are completed, set the State of the parent feature or epic to Done or Completed. Closed epics and features no longer appear in the Feature Timeline.  
 
 > [!TIP]   
 > To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
 To learn more, review the following articles:  
-- [Configuration and customization of Azure Boards](../configure-customize.md)  
+- [Configure a hierarchy of teams](../plans/configure-hierarchical-teams.md) 
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
 
@@ -188,6 +202,7 @@ A: Make sure you enter sufficient number of sprints to display the next three sp
 
 ## Related articles
 
+- [Configure and customize Azure Boards](../configure-customize.md) 
 - [Review team delivery plans](../plans/review-team-plans.md)  
 - [View progress using the Epic Roadmap](epic-roadmap.md)  
 
