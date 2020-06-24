@@ -483,6 +483,7 @@ Whenever a pipeline deploys to an environment, you can see a list of resources t
 ## FAQ
 
 ### Why should I use pipelines `resources` instead the `download` shortcut? 
+
 Using a `pipelines` resource is a first class way to consume artifacts from a CI pipeline and also configure automated triggers. It gives you full visibility into the process by displaying the version consumed, artifacts, commits and work-items. When you define a pipeline resources, the associated artifacts are automatically downloaded in deployment jobs. 
 
 You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md).
