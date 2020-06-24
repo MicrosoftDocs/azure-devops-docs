@@ -71,7 +71,7 @@ The following tools support integration and synchronization with Azure DevOps wi
 - [AgileCraft](https://marketplace.visualstudio.com/items?itemName=agilecraft.AgileCraft) enables organizations scaling Agile to the enterprise by connecting business strategy to technical execution.
 - [ConnectAll](https://www.connectall.com/) helps organizations achieve effective Value Stream Management by connecting the applications used to collaborate, drive decisions, and manage artifacts that are used during the software delivery process, like ALM, Agile, and DevOps. 
 - [Project Connect](https://us.wicresoft.com/projectconnect/) offers a seamless approach to exchange critical information between development teams and project teams using Microsoft Project Online and Azure DevOps Services.
-- [Tasktop](https://www.tasktop.com/product-overview) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
+- [Tasktop](http://www.tasktop.com/products) provides enterprise-grade integration between Microsoft Project Server and Azure DevOps, as well as to most other popular Agile, DevOps and Systems Development Lifecycle (SDLC) tools. 
 
 
 ## Related articles
