@@ -10,7 +10,7 @@ author: KathrynEE
 monikerRange: '>= tfs-2017'
 ms.date: 02/14/2020
 ---
-
+ 
 # View portfolio progress with the Feature Timeline 
 
 [!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
@@ -70,6 +70,7 @@ To learn more, review the following articles:
 ## Open Boards or Backlogs 
 
 You can access the Feature Timeline from either your team's Kanban board or backlog. 
+
 Here we open Boards. 
 
 ::: moniker range="azure-devops"
@@ -187,11 +188,8 @@ A: Make sure you enter sufficient number of sprints to display the next three sp
 
 ## Related articles
 
-- [Review team delivery plans](../plans/review-team-plans.md)
-- [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)
-- [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md)
-- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md)
-
+- [Review team delivery plans](../plans/review-team-plans.md)  
+- [View progress using the Epic Roadmap](epic-roadmap.md)  
 
 ## Related Marketplace extensions
 
