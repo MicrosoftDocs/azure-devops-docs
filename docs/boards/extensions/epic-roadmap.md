@@ -10,7 +10,7 @@ ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2020
+ms.date: 06/25/2020
 ---
 
 # View progress using the Epic Roadmap 
@@ -25,11 +25,14 @@ Similar to the Feature Timeline, the Epic Roadmap supports portfolio management 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the extension page.  
 
-Use the Epic Roadmap to support the following tasks: 
+Use the Epic Roadmap to focus on a single epic and to support the following tasks: 
 
 - Support roadmap planning  
+- View work that spans several iterations
 - Produce reports at each business level to show high and low-level progress views  
 - Adjust sprint assignments to child work items  
+- View dependencies linked to features 
+
 
 > [!NOTE]   
 > The Feature Timeline and Epic Roadmap  extension is available on TFS 2017 Update 2 and later versions. You can download it from the [Marketplace for Azure DevOps, Feature Timeline and Epic Roadmap](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.workitem-feature-timeline-extension).
@@ -37,11 +40,15 @@ Use the Epic Roadmap to support the following tasks:
 
 ## Minimum Viable Product (MVP)
 
-Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). By using MVP, you identify the shortest path and dependencies by performing these tasks: 
+Agile methodologies favor defining a Minimum Viable Product (MVP) over Critical Path Management (CPM). An MVP defines a product with just enough features to satisfy early adopters. You then define and complete additional features after receiving feedback from the early adopters users. By gleaning insights from an MVP, you're more likely to decrease development costs and risks.  
+
+By using MVP, you identify the shortest path and dependencies by performing these tasks: 
 
 - Define requirements, features, and epics that support MVPs 
 - Prioritize your requirements, features, and epics to work on the most important work to deliver your MVPs
 - Group features under epics, and requirements under features. 
+
+
 
 [!INCLUDE [note-requirements](../includes/note-requirements-terms.md)]
 
@@ -67,7 +74,7 @@ To use the Epic Roadmap, make the following definitions:
 - Define teams and area paths to support the rollup of the team's work into features and epics. 
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
-	> Make sure you assign work items to a flat set of sprints. Assigning features to a hierarchy of sprints and child items to another set of sprints won't display correctly in the Epic Roadmap view.  
+	> Make sure you assign work items to a **flat set of sprints**. Assigning features to a hierarchy of sprints and child items to another set of sprints won't display correctly in the Epic Roadmap view.  
 or work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
 - Make sure the team is subscribed to the sprints of interest. 
 - Define epics and their child features. If no child work items are defined, then assign the feature to a sprint. 
@@ -80,6 +87,8 @@ or work to be performed in some future iteration, you can leave the dates unset 
 > To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
 To learn more, review the following articles:  
+- [Create your backlog (Requirements)](../backlogs/create-your-backlog.md)  
+- [Define features and epics](../backlogs/define-features-epics.md)  
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
 
@@ -113,7 +122,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 ## Drill-down to view details 
 
-1. To view the requirements linked to a feature, choose the ![info icon](../media/icons/info.png) info icon for that feature. 
+1. To view the requirements linked to a feature, choose the ![ ](../media/icons/info.png) info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)
@@ -125,14 +134,10 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
 
-<!--- 
-Guidance on granularity of requirements and features
-Showing work that spans iterations
-Have conversations with the team - dependencies
+1. To view the dependency linked to a feature, choose the ![ ](../media/icons/icon-links-tab-wi.png) link icon for that feature. 
 
-
--->
- 
+	> [!div class="mx-imgBorder"]  
+	> ![Epic Roadmap, Feature, linked icon](media/epic-roadmap/view-dependency.png)
 
 ## Related articles
 
