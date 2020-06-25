@@ -37,7 +37,7 @@ You may want to automatically transition work items from one state to another st
 > <ACTION value="NameOfAction" />  
 > ```  
   
-### System defined Actions
+## System defined Actions
 
 The following table describes the system defined actions that appear in select XML definition files. 
 
