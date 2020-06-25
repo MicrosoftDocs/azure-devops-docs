@@ -1,13 +1,13 @@
 ---
 title: Create and manage Reporting Services reports
-titleSuffix: TFS 
+titleSuffix: Azure DevOps Server and TFS 
 ms.technology: devops-analytics
 ms.topic: conceptual
-description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project - Team Foundation Server 
+description: Understand how to use SQL Server Reporting Services to analyze the progress and quality of your project  
 ms.assetid: f45075c5-1f3e-4550-a40e-9171f59841fe
 ms.author: kaelli
 author: KathrynEE
-ms.date: 10/17/2017
+ms.date: 06/25/2020
 ---
 
 
@@ -60,13 +60,19 @@ You can download Report Builder for free from the following pages on the Microso
 	- [Comparing Report Authoring Environments](/previous-versions/sql/sql-server-2008-r2/dd220519(v=sql.105))   
 
 
-##  <a name="AdditionalResources"></a> Q & A  
+<a name="AdditionalResources"></a> 
+
+
+##  Q & A  
   
 ### Q: How do I view and organize default Reporting Services reports?  
- **A:**   See [Reporting Services Reports](reporting-services-reports.md).  
+
+**A:**   See [Reporting Services Reports](reporting-services-reports.md).  
   
 ### Q: How do I upload a report?  
- **A:** See [Upload reports](../admin/upload-reports.md).  
+
+**A:** See [Upload reports](../admin/upload-reports.md).  
   
 ### Q: How do I manage report properties?  
- **A:** After you create and publish reports, you can use Report Manager to view, organize, and configure those reports. By using Report Manager, you can group related reports in folders, adjust parameters and data sources, and schedule automated reports. See [View, organize, and configure reports using Report Manager](../admin/view-upload-organize-reporting-services-reports.md).
+
+**A:** After you create and publish reports, you can use Report Manager to view, organize, and configure those reports. By using Report Manager, you can group related reports in folders, adjust parameters and data sources, and schedule automated reports. See [View, organize, and configure reports using Report Manager](../admin/view-upload-organize-reporting-services-reports.md).
