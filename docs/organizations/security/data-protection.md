@@ -216,8 +216,8 @@ We are convinced that transparency around how we design and operate our
 service is critical to establishing trust with our customers. This white
 paper is part of our effort to shed light on how we manage and protect
 your data. In addition, we maintain a
-[blog](https://blogs.msdn.com/b/vsoservice/) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
-[blog](https://blogs.msdn.com/b/bharry/) addressing, among other things,
+[blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
+[blog](https://docs.microsoft.com/en-us/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
 lessons learned by operating the service.
 
 ## Compliance certifications
