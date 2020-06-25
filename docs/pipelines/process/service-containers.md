@@ -27,7 +27,7 @@ Service containers must define a `CMD` or `ENTRYPOINT`.
 The pipeline will `docker run` the provided container without additional arguments.
 
 Azure Pipelines can run Linux or [Windows Containers](/virtualization/windowscontainers/about/). Use either
-the Hosted Ubuntu 1604 pool for Linux containers, or the Hosted Windows Container pool for Windows containers.
+the Hosted Ubuntu 1604 or 18.04 pool for Linux containers, or the Hosted Windows Container pool for Windows containers.
 (The Hosted macOS pool does not support running containers.)
 
 # [YAML](#tab/yaml)
