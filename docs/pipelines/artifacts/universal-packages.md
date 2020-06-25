@@ -109,6 +109,7 @@ In the **Universal Packages** snippet that you added previously, add the `versio
 | versionPublish                                                    | The custom package version                                                        |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
+> [!NOTE]
 > See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 # [Classic](#tab/classic)
@@ -122,6 +123,7 @@ In the **Universal Packages** task that you configured previously, choose the ap
 You can also download a Universal Package from your pipeline.
 
 #### [YAML](#tab/yaml/)
+
 To download a Universal Package from a feed in your organization to a specified destination, use the following snippet: 
 
 ```yaml
@@ -143,6 +145,7 @@ steps:
 | vstsPackageVersion             | Version of the package to be downloaded. |
 | downloadDirectory              | Package destination directory. Default is $(System.DefaultWorkingDirectory). |
 
+> [!NOTE]
 > See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 To download a Universal Package from an external source, use the following snippet:
@@ -160,7 +163,6 @@ steps:
     versionDownloadExternal: 1.0.0
 ```
 
-
 | Argument                       | Description                                                         |
 | ------------------------------ | ------------------------------------------------------------------- |
 | feedsToUse                     | Value should be `external` when you're downloading from an external source.|
@@ -169,9 +171,11 @@ steps:
 | packageDownloadExternal        | Name of the package to be downloaded.                             |
 | versionDownloadExternal        | Version of the package to be downloaded.        |
 
+> [!NOTE]
 > See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 #### [Classic](#tab/classic/)
+
 To download a Universal Package, add the **Universal Package** task and configure these options:
 
 - **Command:** Download
@@ -181,10 +185,10 @@ To download a Universal Package, add the **Universal Package** task and configur
 - **Package name:** Select the package that you want to download.
 - **Version:** Select the version of the package that you want to download.
 
+> [!div class="mx-imgBorder"]
+> ![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
 
-![Example Download Universal Packages build step screenshot](media/universal-packages/download.png)
-
-* * *
+---
 
 ### Downloading the latest version
 
