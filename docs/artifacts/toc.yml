@@ -114,7 +114,7 @@
   items:
   - name: Universal packages quickstart
     href: quickstarts/universal-packages.md
-  - name: Publish to a Universal feed
+  - name: Publish to a Universal feed (YAML/Classic)
     href: ../pipelines/artifacts/universal-packages.md?toc=/azure/devops/artifacts/toc.json&bc=/azure/devops/artifacts/breadcrumb/toc.json 
 - name: Gradle
   items:
