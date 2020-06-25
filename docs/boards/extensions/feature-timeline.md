@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2020
+ms.date: 06/25/2020
 ---
  
 # View portfolio progress with the Feature Timeline 
@@ -55,7 +55,7 @@ To gain the most from the Feature Timeline view, make the following definitions:
 - Define teams and area paths to support the rollup of the team's work into features and epics. 
 - Define sprints with dates for the project. Select sprints for the team.  
 	> [!NOTE]   
-	> Make sure you assign work items to a flat set of sprints. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
+	> Make sure you assign work items to a **flat set of sprints**. Assigning features to one hierarchy of sprints and child items to another won't display correctly in the Feature Timeline view.  
 - For work to be performed in some future iteration, you can leave the dates unset for the iteration and it will appear as the last sprint in the roadmap. 
 - Make sure the team is subscribed to the sprints of interest. 
 - Define features and child work items. If no child work items are defined, then assign the feature to a sprint. 
@@ -67,6 +67,8 @@ To gain the most from the Feature Timeline view, make the following definitions:
 > To support roadmap planning, make sure your team has subscribed to several future iterations.  
 
 To learn more, review the following articles:  
+- [Create your backlog (Requirements)](../backlogs/create-your-backlog.md) 
+- [Define features and epics](../backlogs/define-features-epics.md) 
 - [Configure a hierarchy of teams](../plans/configure-hierarchical-teams.md) 
 - [Define area paths & assign to a team](../../organizations/settings/set-area-paths.md)  
 - [Define iteration paths (sprints) & assign team iterations ](../../organizations/settings/set-iteration-paths-sprints.md)  
