@@ -765,6 +765,7 @@ Example: <pre>["account-1", "account-2"]</pre>
 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 
+<!---
 
 ## Dependency Bot
 
@@ -773,6 +774,7 @@ The dependency bot works in the background to notify teams when dependencies are
 - Notify the consumer (copy the producer) when the producer has changed the State of the deliverable to Cut
 - Notify the consumer (copy the producer) when the producer has moved out the iteration path of a committed dependency.
 
+--> 
 
 <!--- TO BE COMPLETED
 
