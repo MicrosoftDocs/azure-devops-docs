@@ -115,7 +115,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
  
 	- **View Sprints**: Enter the number of iterations to show. The maximum number is 11. 
 		> [!NOTE]  
-		Sprint labels may not display for iterations above six, however, the calendar view displays the iterations.
+		> Sprint labels may not display for iterations above six, however, the calendar view displays the iterations.
 	- **Show Details**: Displays progress bars of Feature child items
 	- **Track Progress Using**: Progress bars indicate completion based on child requirements or overall total effort. 
 
