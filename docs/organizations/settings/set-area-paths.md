@@ -122,7 +122,7 @@ az boards area project list [--depth]
 #### Parameters 
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
-- **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level. 
+- **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
 #### Example
