@@ -6,7 +6,7 @@ description: Publishing Universal Packages to Azure Artifacts feeds
 services: vsts
 ms.assetid: 6c980df0-9e90-4625-88c9-955b11d54f10
 ms.topic: conceptual
-ms.date: 04/13/2020
+ms.date: 06/25/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -18,7 +18,9 @@ When you want to publish a set of related files from a pipeline as a single pack
 
 ## Prepare your Universal Package
 
-[Universal Packages](../../artifacts/quickstarts/universal-packages.md) are created from a directory of files. By default, the Universal Packages task will publish all files in `$(Build.ArtifactStagingDirectory)`. To prepare your Universal Package for publishing, either configure preceding tasks to place output files in that directory, or use the [Copy Files utility task](../tasks/utility/copy-files.md) to assemble the files that you want to publish.
+[Universal Packages](../../artifacts/quickstarts/universal-packages.md) are created from a directory of files. By default, the Universal Packages task will publish all files in `$(Build.ArtifactStagingDirectory)`.
+
+To prepare your Universal Package for publishing, either configure preceding tasks to place output files in that directory, or use the [Copy Files utility task](../tasks/utility/copy-files.md) to assemble the files that you want to publish.
 
 <a name="publish-packages"></a>
 
@@ -47,6 +49,7 @@ To publish a Universal Package to your feed, add the following snippet to your a
 | vstsFeedPackagePublish                                            | The package name.                                                                 |
 | packagePublishDescription                                         | Description of the content of the package.                                        |
 
+> [!NOTE]
 > See [Task control options](../process/tasks.md#task-control-options) to learn about the available control options for your task.
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-yaml-build.md)]
@@ -63,7 +66,8 @@ To publish the files that you assembled previously as a Universal Package, add t
 - **Destination feed:** Select the feed that you want to publish to.
 - **Package name:** Select an existing package (to publish a new version of that package), or enter a new package name (to publish the first version of a new package).
 
-![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
+> [!div class="mx-imgBorder"]
+> ![Example Publish Universal Packages build step screenshot](media/universal-packages/publish.png)
 
 [!INCLUDE [package management permissions](includes/package-management-permissions-for-web-build.md)]
 
