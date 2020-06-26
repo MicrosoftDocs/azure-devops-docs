@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2018'
-ms.date: 05/30/2019
+ms.date: 06/26/2020
 ---
 
 # Reporting roadmap for Azure DevOps 
@@ -42,7 +42,7 @@ Team Foundation Server (TFS) 2018 and earlier versions do not support Analytics.
 To learn more, see [What is Analytics](what-is-analytics.md). It currently contains partial data. We are working to add all reportable data to Analytics. See [Data Available in Analytics](./data-available-in-analytics.md) for more information.
 
 
-::: moniker range="tfs-2018 || azure-devops-2019"  
+
 
 ## Azure DevOps Server, TFS, and SQL Server Reporting
 
@@ -60,8 +60,8 @@ We currently support SQL Server Reporting through TFS 2018, and will continue to
 
 We will continue to support SQL Server Reporting until Analytics can replace its functionality. After that, we will likely support both SQL Server Reporting and Analytics for one additional major Azure DevOps Server release. This plan allows customers time to convert their reports to Analytics.
 
-::: moniker-end  
+
 
 ## Roadmap timeline
 
-Check out the [Features Timeline](/azure/devops/release-notes/) for the roadmap of reporting features.
+Check out the [Features Timeline](/azure/devops/release-notes/features-timeline) for the roadmap of reporting features.
