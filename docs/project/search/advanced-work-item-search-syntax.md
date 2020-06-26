@@ -4,8 +4,8 @@ description: How To Use Work Item Search - Advanced options for Work Item Search
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
