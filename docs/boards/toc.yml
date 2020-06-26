@@ -230,6 +230,8 @@
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
     href: ../reference/index.md
+  - name: Azure Test Plans 
+    href: ../test/index.yml
   - name: Client support 
     href: ../user-guide/tools.md
   - name: Azure DevOps CLI
