@@ -8,7 +8,7 @@ ms.reviewer: karrg
 ms.author: karrg
 author: Divais
 monikerRange: 'azure-devops'
-ms.date: 10/24/2019
+ms.date: 06/26/2020
 ---
  
 # Azure Boards with Microsoft Teams
@@ -17,7 +17,14 @@ ms.date: 10/24/2019
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to create work items and monitor work item activity in your Azure Boards project from your Teams channel. 
 
-With this app, users can set up and manage subscriptions for creating and updating work items, and managing other work item events. Also users get notifications for these events in their Teams channel. Users can create work items from conversations in the channel. Using messaging extension, users can search and share work items with other members in the channel. Users can also get previews for work item URLs to initiate discussions and keep the conversations contextual.
+This app enables users to perform the following tasks: 
+- Set up and manage subscriptions for creating and updating work items
+- Manage other work item events
+- Receive and manage notifications for work item events in their Teams channel
+- Create work items from conversations in the channel
+- Search and share work items with other members in the channel using the messaging extension
+- Get previews for work item URLs to initiate discussions and keep the conversations contextual.
+ 
 
 ![Pic: Notification](./media/integrations-teams/notifications.png)
 
@@ -45,7 +52,7 @@ Read this article to learn how to:
 
 You add the app to your Teams channel in Microsoft Teams.
 
-1. Visit the App store in Microsoft Teams and search for the Azure Boards app. Upon installing, you will see a welcome message from the app as shown in the following image. 
+1. Visit the App store in Microsoft Teams and search for the Azure Boards app. Upon installing, a welcome message from the app displays as shown in the following image. 
 
 	![Pic: Welcome message](./media/integrations-teams/welcome-message.png)
 
@@ -105,7 +112,7 @@ You can add areas that your team works on to the channel so that they are always
 
 	![add areapath success message](./media/integrations-teams/add-areapath.png)
 	
- - If you choose project name as your area path, then you will receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
+ - If you choose project name as your area path, then you'll receive notifications for all the area paths in the project. It is logically equivalent to choosing 'Any' area path.
 
 ## Create a work item with a command
 
@@ -146,17 +153,17 @@ Team administrators aren't able to remove or modify subscriptions created by Pro
 
 ## Search and share work items using compose extension
 
-To help users search and share work items, Azure Boards app for Microsoft Teams supports compose extension. You can now search for work items by work item ID or by title. For compose extension to work, users will have to sign into Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
+To help users search and share work items, the Azure Boards app for Microsoft Teams supports compose extension. You can search for work items by work item ID or by title. For compose extension to work, users must sign in to Azure Boards app either by running `@azure boards signin` command or by signing into the compose extension directly.
 
 ![Pic: URL unfurling](./media/integrations-teams/teams-boards-compose-extension.png)
 
 ## Preview work item URLs
 
-To support collaboration around work items discussed within a channel, a preview of work items referenced in the channel is displayed. When a user pastes the work item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
+To support collaboration around work items discussed within a channel, the channel displays a preview of work items referenced. When a user pastes the work item URL, a preview is shown similar to that in the following image. This helps to keep work item related conversations relevant and accurate. 
 
 ![Pic: URL unfurling](./media/integrations-teams/url-unfurling.png)
 
-For this feature to work, users have to be signed-in. Once they are signed in, this feature will work for all channels in a team in Microsoft Teams.
+For this feature to work, users must be signed in. Once signed in, this feature works for all channels in a team in Microsoft Teams.
 
 ## Unlink a project from a channel
 
@@ -166,7 +173,7 @@ Unlinking a project deletes all the subscriptions along with added area paths fr
 
 ## Threaded notifications
 
-- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item will be linked together.
+- To logically link a set of related notifications and also to reduce the space occupied by notifications in a channel, notifications are threaded. All notifications linked to a particular work item are linked together.
 
 ### Compact view of threaded notifications
 
@@ -192,16 +199,17 @@ The following table lists all the `@azure boards` commands you can use in your M
 |@azure boards unlink	| Unlink a project from this channel|
 |@azure boards feedback	| Report a problem or suggest a feature |
 
-## Configuring Azure DevOps Services Tabs in Microsoft Teams
+## Configure Azure DevOps Services Tabs in Microsoft Teams
 
 1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
    <img alt="Add a new tab to Teams channel" src="./media/teams-as-website.png" style="width:80%;" />
 
-2. Once you've authenticated you will see your Kanban board or Dashboard.
+2. Once you've authenticated you'll see your Kanban board or Dashboard.
    
  ## Multi-tenant support
- In your organization if you are using a different email / tenant for Microsoft Teams and Azure DevOps please follow the below steps to sign in and connect based on your usecase. 
+
+In your organization if you are using a different email or tenant for Microsoft Teams and Azure DevOps, perform the following steps to sign in and connect based on your use case. 
  
  <table>
   <tr>
@@ -223,13 +231,13 @@ The following table lists all the `@azure boards` commands you can use in your M
         1
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
+        <u>email1@abc.com</u> (tenant 1)
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
+        <u>email1@abc.com</u> (tenant 1)
    </td>
    <td>
-        Sign in using ‘Sign in’ button.
+        Sign in using <strong>Sign in</strong> button.
    </td>
   </tr>
   <tr>
@@ -237,15 +245,17 @@ The following table lists all the `@azure boards` commands you can use in your M
         2
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
+        <u>email1@abc.com</u> (tenant 1)
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 2)</span>
+        <u>email1@abc.com</u> (tenant 2)
    </td>
    <td>
-        *   Sign in the Azure DevOps account 
-	*   In the same browser, start a new tab, navigate to https://teams.microsoft.com/ 
-	*   Run the signin command and click 'Sign in’ button 
+    <ul>
+	<li>Sign in the Azure DevOps account/li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com//li> 
+	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
+    </ul>
    </td>
   </tr>
   <tr>
@@ -253,13 +263,13 @@ The following table lists all the `@azure boards` commands you can use in your M
         3
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
+        <u>email1@abc.com</u> (tenant 1) 
    </td>
    <td>
-        <span style="text-decoration:underline;">email2@pqr.com(tenant 2)</span>
+        <u>email2@pqr.com</u> (tenant 2) 
    </td>
    <td>
-        Sign in using ‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps.
+        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
    </td>
   </tr>
   <tr>
@@ -267,15 +277,17 @@ The following table lists all the `@azure boards` commands you can use in your M
         4
    </td>
    <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
+        <u>email1@abc.com</u> (tenant 1) 
    </td>
    <td>
         <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
    </td>
    <td>
-        *   Sign in the Azure DevOps account 
-	*   In the same browser, start a new tab, navigate to https://teams.microsoft.com/ 
-	*   Run the signin command and click '‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps. 
+    <ul>
+    <li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, and navigate to <code>https://teams.microsoft.com/</code></li>  
+	<li>Run the <code>signin</code> command and choose <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.</li>  
+	</ul>
    </td>
   </tr>
 </table>
