@@ -110,7 +110,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/sqldatabase.png":::
-        [Azure SQL database](../targets/azure-sqldb.m)
+        [Azure SQL database](../targets/azure-sqldb.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/app-service-web.png":::
@@ -240,7 +240,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
 :::row:::
     :::column:::
         :::image type="icon" source="./media/index/sqldatabase.png":::
-        [Azure SQL database](../targets/azure-sqldb.m)
+        [Azure SQL database](../targets/azure-sqldb.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/app-service-web.png":::
