@@ -201,84 +201,14 @@ The following table lists all the `@azure boards` commands you can use in your M
 2. Once you've authenticated you will see your Kanban board or Dashboard.
    
  ## Multi-tenant support
- In your organization if you are using a different email / tenant for Microsoft Teams and Azure DevOps please follow the below steps to sign in and connect based on your usecase. 
+ In your organization if you are using a different email / tenant for Microsoft Teams and Azure DevOps please follow the below steps to sign in and connect based on your use case. 
  
- <table>
-  <tr>
-   <td>
-       <strong>Case</strong>
-   </td>
-   <td>
-        <strong>Email ID and tenant in Microsoft Teams</strong>
-   </td>
-   <td>
-        <strong>Email ID and tenant in Azure DevOps</strong>
-   </td>
-   <td>
-        <strong>Steps to take </strong>
-   </td>
-  </tr>
-  <tr>
-   <td>
-        1
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
-   </td>
-   <td>
-        Sign in using ‘Sign in’ button.
-   </td>
-  </tr>
-  <tr>
-   <td>
-        2
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 2)</span>
-   </td>
-   <td>
-        *   Sign in the Azure DevOps account 
-	*   In the same browser, start a new tab, navigate to https://teams.microsoft.com/ 
-	*   Run the signin command and click 'Sign in’ button 
-   </td>
-  </tr>
-  <tr>
-   <td>
-        3
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email2@pqr.com(tenant 2)</span>
-   </td>
-   <td>
-        Sign in using ‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps.
-   </td>
-  </tr>
-  <tr>
-   <td>
-        4
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email1@abc.com (tenant 1)</span>
-   </td>
-   <td>
-        <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
-   </td>
-   <td>
-        *   Sign in the Azure DevOps account 
-	*   In the same browser, start a new tab, navigate to https://teams.microsoft.com/ 
-	*   Run the signin command and click '‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps. 
-   </td>
-  </tr>
-</table>
+| Case | Email ID and tenant in Microsoft Teams | Email ID and tenant in Azure DevOps  | Steps to take                                                                                                                                                                                                                                                                                         |
+| ---- | -------------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | email1@abc.com (tenant 1)              | email1@abc.com (tenant 1)            | Sign in using ‘Signin’ button.                                                                                                                                                                                                                                                                       |
+| 2    | email1@abc.com (tenant 1)              | email1@abc.com (tenant 2)            | In the browser, sign in the Azure DevOps account. Start a new tab, navigate to [https://teams.microsoft.com/](https://teams.microsoft.com/). Run the signin command and click 'Sign in’ button                                                                                            |
+| 3    | email1@abc.com (tenant 1)              | email2@pqr.com(tenant 2)             | Sign in using ‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps.                                                                                                                                                                              |
+| 4    | email1@abc.com (tenant 1)              | email2@pqr.com(non default tenant 3) | In the browser, sign in the Azure DevOps account. Start a new tab, navigate to [https://teams.microsoft.com/](https://teams.microsoft.com/). Run the signin command and click '‘Sign in with different email address’, in the email id picker use the email2 to signin into Azure DevOps. |
 
   
  ## Troubleshoot 
