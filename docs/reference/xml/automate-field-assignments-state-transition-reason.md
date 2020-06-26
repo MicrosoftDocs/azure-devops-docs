@@ -37,9 +37,9 @@ You may want to automatically transition work items from one state to another st
 > <ACTION value="NameOfAction" />  
 > ```  
   
-## System defined Actions
+## System-defined actions
 
-The following table describes the system defined actions that appear in select XML definition files. 
+The following table describes the system-defined actions that appear in select XML definition files. 
 
 :::row:::
    :::column span="1":::
@@ -86,17 +86,17 @@ The following table describes the system defined actions that appear in select X
    :::column-end:::
 :::row-end:::
 
-#### Notes:
+#### Get more information
 
-1. For more information on linking work items to changesets, see [Develop and share your code in TFVC using Visual Studio, Snapshot (check in) your code](../../repos/tfvc/share-your-code-in-tfvc-vs.md#snapshot-check-in-your-code).
-2. For more information on **My Work**, see [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). 
+- For more information on linking work items to changesets, see [Develop and share your code in TFVC using Visual Studio, Snapshot (check in) your code](../../repos/tfvc/share-your-code-in-tfvc-vs.md#snapshot-check-in-your-code).
+- For more information on **My Work**, see [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). 
 
 
 <a name="RequiredSteps"></a>   
 
 ##  Required steps to support automation  
 
- To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
+To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
   
 1.  Determine what state the work item should be transitioned to when the action is performed.  
   
