@@ -47,17 +47,15 @@ You can access both the relational data warehouse and the Analysis Services cube
 
 You can download Report Builder for free from the following pages on the Microsoft web site:    
 - **[Report Builder](/sql/reporting-services/install-windows/install-report-builder)** 
-- **[Report Builder 2.0 (for SQL Server 2008](https://www.microsoft.com/download/details.aspx?id=24085)** 
-
-- **Report Designer** is a graphical interface for creating full-featured Reporting Services reports. After your report is finished, you have access to the full functionality for managing Reporting Services reports. To use Report Designer, you must know how to connect to and query a data source, but you do not have to know Report Definition Language (RDL).  
-  
-   To use Report Designer, you must have Visual Studio and SQL Server Business Intelligence Development Studio.  
-  
-   To learn more about how to work with authoring tool, see these articles:  
-   - [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs)  
-   - [Reporting Services in SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt)  
-   - [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs)     
-   - [Comparing Report Authoring Environments](/previous-versions/sql/sql-server-2008-r2/dd220519(v=sql.105))   
+- **[Report Builder 2.0 (for SQL Server 2008](https://www.microsoft.com/download/details.aspx?id=24085)**
+- **Report Designer** is a graphical interface for creating full-featured Reporting Services reports. After your report is finished, you have access to the full functionality for managing Reporting Services reports. To use Report Designer, you must know how to connect to and query a data source, but you do not have to know Report Definition Language (RDL).
+   To use Report Designer, you must have Visual Studio and SQL Server Business Intelligence Development Studio.
+   
+   To learn more about how to work with the authoring tool, see these articles:
+      - [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs)
+      - [Reporting Services in SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt)
+      - [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs)
+      - [Comparing Report Authoring Environments](/previous-versions/sql/sql-server-2008-r2/dd220519(v=sql.105))   
 
 
 <a name="AdditionalResources"></a> 
