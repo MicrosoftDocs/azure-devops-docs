@@ -4,8 +4,8 @@ description: Learn how to use Work Item Search across all work item fields and a
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 08/19/2019
 monikerRange: '>= tfs-2017'
 ---
