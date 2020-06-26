@@ -199,7 +199,7 @@ The following table lists all the `@azure boards` commands you can use in your M
 |@azure boards unlink	| Unlink a project from this channel|
 |@azure boards feedback	| Report a problem or suggest a feature |
 
-## Configure Azure DevOps Services Tabs in Microsoft Teams
+## Configure Azure DevOps Services tabs in Microsoft Teams
 
 1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
