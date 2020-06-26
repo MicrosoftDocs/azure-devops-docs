@@ -17,7 +17,7 @@ ms.date: 06/25/2020
 
 If you added SQL Server Reporting Services at installation, then your on-premises Team Foundation Server (TFS) deployment is configured with a data warehouse, SQL Server Analysis Services cube, and Reporting Services Reports. If you didn't add these services previously and want to add them now, see [Add a report server to your deployment](../admin/add-a-report-server.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json ).  
   
- You can create or customize your own Reporting Services reports which support the following scenarios:  
+You can create or customize your own Reporting Services reports which support the following scenarios:  
   
 - Allow users to update the report without granting them read access to the databases.  
 - Share your reports in Team Explorer under the Reports folder.  
@@ -31,7 +31,7 @@ To learn more, see the following topics:
 - [Customizing Reports for Team Foundation Server 2010](https://go.microsoft.com/fwlink/?LinkID=199479) describes how to customize the default reports for Reporting Services that are provided with each process template. These reports use queries that are written in either SQL or Multidimensional Expressions (MDX). (There are only minor schema changes introduced for the TFS 2015 cube since TFS 2010).  
 - [Table reference for the relational warehouse database](table-reference-relational-warehouse-database.md). The warehouse contains data about builds, source code, test results and code coverage, and work items such as tasks and bugs. Data in the warehouse is collected from the operational stores and organized in a set of tables, views, and table-valued functions from which you can design reports. You can explore relationships between the integrated data sets by directly querying and creating reports from data that is stored in the relational warehouse database.  
   
-	![Team Foundation Warehouse](media/teamproj_warehouse.png "TeamProj_Warehouse")  
+   ![Team Foundation Warehouse](media/teamproj_warehouse.png "TeamProj_Warehouse")  
   
 - [Perspectives and measure groups provided in the Analysis Services cube](perspective-measure-groups-cube.md). The Team System cube  provides all metrics that are defined for all measure groups. By using the Analysis Services cube for TFS, you can generate reports of aggregated information about the data that is stored in team project collections. You can easily use this data to create PivotTable and PivotChart reports in Microsoft Excel.  
   
@@ -45,19 +45,19 @@ You can access both the relational data warehouse and the Analysis Services cube
 
 - **Report Builder** is an intuitive environment for authoring reports. This application is optimized for Microsoft Office so that business users can work in that familiar environment. You can use Report Builder to work with data, define a layout, preview a report, and publish a report to a report server or a SharePoint site. This application includes a wizard for creating tables or charts, in addition to query builders and an expression editor. It also supports the advanced reporting features in SQL Server Reporting Services.   
 
-You can download Report Builder for free from the following pages on the Microsoft Web site:    
-	- **[Report Builder](/sql/reporting-services/install-windows/install-report-builder)** 
-	- **[Report Builder 2.0 (for SQL Server 2008](https://www.microsoft.com/download/details.aspx?id=24085)** 
+You can download Report Builder for free from the following pages on the Microsoft web site:    
+- **[Report Builder](/sql/reporting-services/install-windows/install-report-builder)** 
+- **[Report Builder 2.0 (for SQL Server 2008](https://www.microsoft.com/download/details.aspx?id=24085)** 
 
 - **Report Designer** is a graphical interface for creating full-featured Reporting Services reports. After your report is finished, you have access to the full functionality for managing Reporting Services reports. To use Report Designer, you must know how to connect to and query a data source, but you do not have to know Report Definition Language (RDL).  
   
    To use Report Designer, you must have Visual Studio and SQL Server Business Intelligence Development Studio.  
   
-  To learn more about how to work with authoring tool, see these articles:  
-	- [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs)  
-	- [Reporting Services in SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt)  
-	- [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs)     
-	- [Comparing Report Authoring Environments](/previous-versions/sql/sql-server-2008-r2/dd220519(v=sql.105))   
+   To learn more about how to work with authoring tool, see these articles:  
+   - [Reporting Services Reports (SSRS)](/sql/reporting-services/reports/reporting-services-reports-ssrs)  
+   - [Reporting Services in SQL Server Data Tools (SSDT)](/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt)  
+   - [Design Reporting Services Paginated Reports with Report Designer (SSRS)](/sql/reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs)     
+   - [Comparing Report Authoring Environments](/previous-versions/sql/sql-server-2008-r2/dd220519(v=sql.105))   
 
 
 <a name="AdditionalResources"></a> 
