@@ -6,7 +6,7 @@ ms.technology: devops-test
 ms.topic: overview
 ms.author: sdanie
 author: steved0x
-ms.date: 01/18/2019
+ms.date: 06/26/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -42,10 +42,13 @@ arise during the support lifecycle of the product. See [Product Lifecycle and Se
  
 ### Cloud-based load testing service (CLT) availability timeframe for:
 
+> [!IMPORTANT]
+> The scheduled removal of CLT on March 31, 2020 has been delayed due to COVID-19. While CLT is currently still available, we recommend that new customers choose an alternative, and we recommend that existing customers migrate to an alternative offering. Some options are listed in the following [alternatives](#alternatives) section.
+
 1. Existing customers of CLT:
 
    * For existing Azure DevOps customers using cloud-load testing functionality in the Azure DevOps portal,
-     this feature will no longer be available as of March 31, 2020.  
+     this feature will no longer be available as of March 31, 2020.
 
    * For existing Azure customers using the performance test feature in App Services or Application Insights,
      this feature will no longer be available as of March 31, 2020. 
