@@ -414,6 +414,16 @@ Users in the **Agent Pool Service Accounts** group have permission to listen to 
 
 If no window is scheduled, then the agents in that pool will not run the maintenance job.
 
+### What is a maintenance job?
+
+You can configure agent pools to periodically clean up stale working directories and repositories. This should reduce the potential for the agents to run out of disk space. 
+
+Maintenance job settings are configured at the organization settings level
+
+
+
+The maintenance is done per agent, not per machine; so if you have multiple agents on a single machine, you may still run into disk space issues.
+
 ### I'm trying to create a project agent pool that uses an existing organization agent pool, but the controls are grayed out. Why?
 
 On the 'Create a project agent pool' dialog box, you can't use an existing organization agent pool if it is already referenced by another project agent pool. Each organization agent pool can be referenced by only one project agent pool within a given project collection.
