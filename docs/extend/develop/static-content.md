@@ -45,7 +45,7 @@ Your extension's static content is useful when you're enhancing or decorating da
    ```
 2. Remove the `baseUri` property (if set) from your extension manifest.    
 3. Package your extension ([steps](../publish/command-line.md))   
-4. Publish (or republish) your extension ([steps](../publish/overview.md)) 
+4. Publish (or republish) your extension ([steps](../publish/overview)) 
 
 <div class="alert alert-danger">
 > [!IMPORTANT]
