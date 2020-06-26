@@ -54,7 +54,11 @@ The summary shows the overall percentage of line coverage.
 
 :::moniker range=">= azure-devops-2019"
 
-The code coverage summary can be viewed on the **Code Coverage** tab on the pipeline run summary.
+The code coverage summary can be viewed on the **Summary** tab on the pipeline run summary.
+
+![View code coverage results](media/review-code-coverage-results/pipeline-run-summary.png)
+
+The results can be viewed and downloaded on the **Code coverage** tab.
 
 ![View code coverage results](media/review-code-coverage-results/view-code-coverage-summary.png)
 
