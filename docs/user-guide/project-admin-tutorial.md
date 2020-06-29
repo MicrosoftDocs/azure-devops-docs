@@ -18,13 +18,13 @@ ms.date: 06/14/2019
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-That said, as an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you're tasked with managing an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
+As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
 
 
 ## Add users to your project
 
 ::: moniker range="azure-devops"  
-The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
+Ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
 
@@ -32,7 +32,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 ::: moniker range="<= azure-devops-2019" 
  
-The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
+Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 - [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
@@ -45,7 +45,7 @@ To delegate the task of managing user access, add a user with Stakeholder or hig
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
-If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group. Or, add them to a specific role. To learn more, see the following articles:
+To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
 - [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
@@ -185,10 +185,10 @@ To learn more, see the following articles:
 
 An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
 
-- Planning and tracking of work items, sprints, scrums, etc.  
-- Build and release flows.
-- Code testing and tracking.
-- Collaboration among team members.
+- Planning and tracking of work items, sprints, scrums, and so on  
+- Build and release flows
+- Code testing and tracking
+- Collaboration among team members
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ For example, to support [code search](../project/search/code-search.md), install
 
 ::: moniker range=">= tfs-2015"  
 
-You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
+You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group. Or, you can get added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
 ::: moniker-end
 

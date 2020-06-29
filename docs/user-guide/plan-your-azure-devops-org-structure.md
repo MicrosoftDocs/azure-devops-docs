@@ -58,7 +58,7 @@ Take some time to review your work structure and the different business groups a
 
 ## What is a team?
 
-A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md), which help you plan and manage work, and make collaboration easier.
+A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md). These tools help you plan and manage work, and make collaboration easier.
 
 ### Creating a team for each distinct product or feature team
 
