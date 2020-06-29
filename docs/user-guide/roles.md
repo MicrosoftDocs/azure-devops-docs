@@ -60,12 +60,12 @@ Project managers (PMs) typically plan the feature set to deliver, set priorities
   
 For more information about getting started, see [About Azure Boards and Agile tools](../boards/get-started/what-is-azure-boards.md).  
 
-If you use Excel or Project to plan and track your work, you can integrate these tools with Azure DevOps. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
+You can integrate Microsoft Excel and Microsoft Project with Azure DevOps to plan and track your work. For more information, see [Bulk modify by using Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md) and [Create your backlog and tasks by using Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md). 
 
 
 ### DevOps: builders, testers, and release managers
 
-An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports:
+An advantage of working with Azure DevOps is the suite of tools and integrated functionality that support build, testing, and deploying software applications. See the following general DevOps-associated tasks that Azure DevOps supports.
 
 - Define builds
 - Unit test your code 
