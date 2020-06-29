@@ -34,8 +34,8 @@ app is deployed (usually to a QA environment).
 
 For more information about Selenium browser automation, see:
 
-* [Selenium HQ](https://www.seleniumhq.org/)
-* [Selenium documentation](https://www.seleniumhq.org/docs/)
+* [Selenium](https://www.selenium.dev/)
+* [Selenium documentation](https://www.selenium.dev/documentation)
 
 <a name="create-project"></a>
 ## Create your test project
