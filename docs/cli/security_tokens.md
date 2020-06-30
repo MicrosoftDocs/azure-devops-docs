@@ -4,7 +4,7 @@ titleSuffix: Azure DevOps
 description: Use Azure DevOps CLI to manage security tokens for permissions management
 ms.topic: reference 
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
 ms.author: geverghe
 author: KathrynEE
