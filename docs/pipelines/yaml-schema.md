@@ -1519,11 +1519,13 @@ Pipeline completion triggers are configured using a [pipeline resource](#pipelin
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
 A `pool` specification also holds information about the job's strategy for running.
 
-You can specify a pool at the pipeline 
-::: moniker range=">azure-devops-2019"
-, stage,
+::: moniker range=">azure-devops-2020"
+You can specify a pool at the pipeline or job level.
 :::moniker-end
-or job level.
+
+::: moniker range="<=azure-devops-2020"
+You can specify a pool at the pipeline, stage, or job level.
+:::moniker-end
 
 The pool specified at the lowest level of the hierarchy is used to run the job.
 
