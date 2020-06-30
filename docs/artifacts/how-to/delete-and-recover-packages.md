@@ -229,8 +229,8 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
     > ![Go to Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
 2. Select "Recycle Bin".
-
-   > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
+    > [!NOTE]
+    > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
 3. Click on a package to get more details such as *Version*, *Deleted date/time*, and *Scheduled permanent deletion*.
 
@@ -243,7 +243,8 @@ If you've deleted/unpublished an npm package, NuGet package, or Maven artifact f
 1. Find the Recycle Bin in the **Packages** page underneath the **Build and Release** page group in Azure DevOps Services: 
     > [!div class="mx-imgBorder"]
     > ![Azure DevOps Services Recycle Bin](../media/recycle-bin/find-recycle-bin.png)
-
+    
+    > [!NOTE]
     > Once in the Recycle Bin, you will see any packages that have been deleted from the current feed in the **past 30 days**.
 
 2. Click a package to get more details such as: *Version*, *Deleted date/time*, and *Scheduled permanent deletion:*
