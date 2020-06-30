@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
-ms.date: 10/14/2018
+ms.date: 10/14/2019
 --- 
 
 # Link work items to deployments
@@ -25,24 +25,24 @@ The release deployments control shows release information for those work items t
 
 First thing you must do is configure the release definition to post deployment information back to Azure Boards. 
 
-1. Open Release definition, Options and Integrations
+1. Open Release definition, choose **Options** and then **Integrations**.
 
    > [!div class="mx-imgBorder"]  
    > ![Release Settings](media/deployments-control/release-settings-1.png)
 
-2. Select the "Report deployment status to Boards" option and configure the stages and deployment types
+2. Select the **Report deployment status to Boards** checkbox and configure the stages and deployment types
 
    > [!div class="mx-imgBorder"]  
    > ![Release Settings Stages](media/deployments-control/release-settings-stages-1.png)
 
 ## Deployment control
 
-Once the release has been configured to send deployment information to Azure Boards, and you have work items associated to the commits in the build, you can now go to the work item and see the status of the release. In the below example we have multiple environments that the release is targeting.
+Once the release is configured to send deployment information to Azure Boards, and you have work items associated to the commits in the build, the work item will display the status of the release. In the following example we have multiple environments that the release targets.
 
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/releases-stages-1.png)
 
-When opening the work item, you can see the stages the release is being deployed, in real time.
+When you open the work item, you can see in real time the release deployment stages.
 
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/deployments-control-1.png)
