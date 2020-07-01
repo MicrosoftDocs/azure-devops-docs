@@ -191,7 +191,10 @@ jobs:
 
 In the preceding examples, the `variables` keyword is followed by a list of key-value pairs.
 The keys are the variable names and the values are the variable values.
-There is another syntax, useful when you want to use [variable templates](templates.md) or [variable groups](../library/variable-groups.md).
+
+There is another syntax, useful when you want to use [variable templates](templates.md) or [variable groups](../library/variable-groups.md). This syntax should be used at the root level of a pipeline. 
+
+
 In this alternate syntax, the `variables` keyword takes a list of variable specifiers.
 The variable specifiers are `name` for a regular variable, `group` for a variable group, and `template` to include a variable template.
 The following example demonstrates all three.
