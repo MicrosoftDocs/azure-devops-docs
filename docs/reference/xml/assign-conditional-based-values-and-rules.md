@@ -1,8 +1,9 @@
-﻿---
+---
 title: Assign conditional-based values and rules
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for WHEN, WHENNOT, WHENCHANGED, and WHENNOTCHANGED elements that define conditional rules and values
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 7975a8a3-6fa1-43c1-b32b-0bbb9bb336af
 ms.author: kaelli
 author: KathrynEE
