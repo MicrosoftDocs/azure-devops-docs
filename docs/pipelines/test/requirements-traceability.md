@@ -105,7 +105,7 @@ To link automated tests with requirements, visit [test report](review-continuous
 
    ![Select tests to be linked to requirements](media/requirements-traceability/link-results-to-requirements.png)
 
-2. Choose a work item to be linked to the selected test(s) in one of the specified way:
+1. Choose a work item to be linked to the selected test(s) in one of the specified way:
 
    * Choose an applicable work item from the list of suggested work items. The list is based on the most recently viewed and updated work items.
    * Specify a work item ID.
@@ -115,25 +115,19 @@ To link automated tests with requirements, visit [test report](review-continuous
 
    > The list shows only work items belonging to the Requirements category. 
 
-3. After the requirements have been linked to the test results you can view the test
-   results grouped by requirement. Requirement is one of the many "Group by" options provided
-   to make it easy to navigate the test results.
-
-   ![Group results by requirements](media/requirements-traceability/groupby-requirements.png)
-
-4. Teams often want to pin the summarized view of requirements traceability to a dashboard.
+1. Teams often want to pin the summarized view of requirements traceability to a dashboard.
    Use the [Requirements quality](../../report/dashboards/widget-catalog.md) widget for this.
 
    ![Create team dashboard](media/requirements-traceability/team-dashboard.png)
 
-5. Configure the **Requirements quality** widget with the required options and save it.
+1. Configure the **Requirements quality** widget with the required options and save it.
 
    * **Requirements query**: Select a work item query that captures the requirements, such as the user stories in the current iteration.
    * **Quality data**: Specify the stage of the pipeline for which the requirements quality should be traced.
 
    ![Configure widget](media/requirements-traceability/configure-widget.png)
 
-6. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
+1. View the widget in the team's dashboard. It lists all the **Requirements** in scope,
    along with the **Pass Rate** for the tests and count of Failed tests. Selecting a **Failed** test
    count opens the **Tests** tab for the selected build or release.
    The widget also helps to track the requirements without any associated test(s).
