@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshoot Azure DevOps command line interface
 titleSuffix: Azure DevOps 
 description: Azure DevOps extension command line interface troubleshooting 
@@ -6,7 +6,7 @@ ms.topic: troubleshooting
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli
 monikerRange: 'azure-devops'
 author: KathrynEE
 ms.date: 06/18/2019
@@ -16,7 +16,7 @@ ms.date: 06/18/2019
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
-## Boards - Iterations and Area commands
+##  Boards - Iterations and Area commands
 
 | Command group        | Error                                                                                                                                                                | Scenario                                                                                                                                                                                               | Fix/Workaround                                                                                                                                                                                                                                                                                                                   |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
