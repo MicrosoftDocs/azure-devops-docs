@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.prod: devops 
 ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 10/14/2019
