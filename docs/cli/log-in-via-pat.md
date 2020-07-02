@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: Use a Personal Access Token (PAT) with Azure DevOps CLI 
 ms.topic: reference 
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 06/18/2019

@@ -3,6 +3,7 @@ title: Categories XML element reference
 titleSuffix: TFS
 description: Default work item type categories used by Team Foundation Server  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d4b02c7c-a7ac-4c7a-b4c5-cbf9af74d489
 ms.author: kaelli
 author: KathrynEE

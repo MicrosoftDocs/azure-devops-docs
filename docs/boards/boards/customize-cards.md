@@ -405,6 +405,8 @@ You can control the test plan under which inline tests you add through the Kanba
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Tag colors dialog (Kanban)](media/customize-cards/settings-tests.png)  
 
+	In a test plan, a test case can exist in multiple test suites. For example, you may define several test suites for each product feature and the test cases test scenarios across features. The test case might exist in both feature's test suite with the same configurations and test steps. As a result of this setup, the tester might run the same test case multiple times for the same product version. To avoid the redundancies that can occur under this scenario, you should choose **Show same outcome of the tests in multiple suites under the same plan** checkbox. When checked, the Test Points of the same Test Case and configuration, shows the same latest outcome. When the tester runs any one test, the output is synced with all other test points (which are of same Test Case work item and same configuration) in the Test Plans. The tester can use the outcome and choose not to run the test again.
+
 4. Save your changes. 
 
 ::: moniker-end

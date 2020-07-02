@@ -144,7 +144,7 @@ Build and deploy your apps. Find guidance based on your language and platform.
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/appservice.png":::
-        [Web App forWeb App for Containers](../apps/cd/deploy-docker-webapp.md)
+        [Web App for Containers](../apps/cd/deploy-docker-webapp.md)
     :::column-end:::
     :::column:::
         :::image type="icon" source="./media/index/virtualmachine.png":::
