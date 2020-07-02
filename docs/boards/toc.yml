@@ -5,8 +5,8 @@
 - name: "Why use Azure Boards?"
   href: get-started/why-use-azure-boards.md
   displayName: scale, collaborate, visual, monitor, status, progress, dashboards, office integration, extensions, mobile, free
-  href: best-practices-agile-project-management.md
 - name: Best practices for Agile project management
+  href: best-practices-agile-project-management.md
 - name: Get started
   href: get-started/toc.yml
 - name: Basic concepts 
