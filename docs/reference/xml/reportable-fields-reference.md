@@ -3,6 +3,7 @@ title: Reportable fields reference
 titleSuffix: TFS
 description: Default set of fields that appear in the relational warehouse database or the cube 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 06284b8a-d780-471e-b6d8-f100400eebfa
 ms.author: kaelli
 author: KathrynEE
