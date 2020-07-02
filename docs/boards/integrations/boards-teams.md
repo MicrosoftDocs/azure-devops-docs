@@ -284,9 +284,7 @@ In your organization if you are using a different email or tenant for Microsoft 
    </td>
    <td>
     <ul>
-    <li>Sign in the Azure DevOps account</li> 
-	<li>In the same browser, start a new tab, and navigate to <code>https://teams.microsoft.com/</code></li>  
-	<li>Run the <code>signin</code> command and choose <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.</li>  
+    <li>This scenario is not supported today</li>  
 	</ul>
    </td>
   </tr>
