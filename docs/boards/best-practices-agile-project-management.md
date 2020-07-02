@@ -36,7 +36,7 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 
 ## Understand which work items you'll use 
 
-[!INCLUDE [temp](includes/note-requirements-terms.md)]
+[!INCLUDE [temp](includes/note-requirements-terms.md)]  
 
 
 ## Your product plan and your Product Backlog  
@@ -52,15 +52,11 @@ The main tool for planning your product is your team's Product Backlog. Use your
 
 Each sprint, perform the following tasks: 
 
-. Use your Product Backlog to capture the work to do and deliver - sized to be completed within a single sprint 
-
-2. Each sprint: Review your backlog priority, put work in priority order 
-
-3. Each sprint: Map unmapped work to the Larger Features and Epics 
-
-4. Use Story Points to estimate the size of work and to gage Team Velocity 
-
-5. Dependency Management: Link work items to work  items using Predecessor/Successor link types 
+1. Use your Product Backlog to capture the work to do and deliver - sized to be completed within a single sprint  
+2. Each sprint: Review your backlog priority, put work in priority order  
+3. Each sprint: Map unmapped work to the Larger Features and Epics  
+4. Use Story Points to estimate the size of work and to gage Team Velocity   
+5. Dependency Management: Link work items to work  items using Predecessor/Successor link types  
 
 
 ## Portfolio Backlog: Features & Epics 
