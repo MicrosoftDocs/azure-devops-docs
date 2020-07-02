@@ -50,7 +50,7 @@
     - name: Recover organization
       href: /azure/devops/organizations/accounts/recover-your-organization?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Restrict admins from inviting new users
-      href: /security/restrict-invitations.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+      href: /azure/devops/organizations/security/restrict-invitations?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Manage security policies
       href: /azure/devops/organizations/accounts/change-application-access-policies?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
     - name: Set application connection policies
