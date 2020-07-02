@@ -2,7 +2,7 @@
 title: Resources
 ms.custom: seodec18
 description: How to use resources with YAML definitions.
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: b3ca305c-b587-4cb2-8ac5-52f6bd46c25e
 ms.date: 03/11/2020
 monikerRange: azure-devops
@@ -14,7 +14,7 @@ monikerRange: azure-devops
 
 A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
 * CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
-* code repositories (GitHub, Azure Repos, Git)
+* code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
 * package feeds (Azure Artifact feed, Artifactory package etc.)  
 
@@ -42,13 +42,14 @@ If you have an Azure Pipeline that produces artifacts, you can consume the artif
 
 In your resource definition, `pipeline` is a unique value that you can use to reference the pipeline resource later on. `source` is the name of the pipeline that produces an artifact. 
 
+For an alternative way to download pipelines, see tasks in [Pipeline Artifacts](../artifacts/pipeline-artifacts.md).
+
 ## [Schema](#tab/schema)
 
 ```yaml
 resources:        # types: pipelines | builds | repositories | containers | packages
   pipelines:
   - pipeline: string  # identifier for the resource used in pipeline resource variables
-    connection: string  # service connection for pipelines from other Azure DevOps organizations
     project: string # project for the source; optional for current project
     source: string  # name of the pipeline that produces an artifact
     version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages
@@ -285,7 +286,7 @@ resources:
 
 ### Type
 
-Pipelines support the following values for the repository type: `git`, `github`, and `bitbucket`.
+Pipelines support the following values for the repository type: `git`, `github`, `githubenterprise`, and `bitbucket`.
 The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: git`, the `name` value refers to another repository in the same project.
@@ -295,7 +296,11 @@ The `git` type refers to Azure Repos Git repos.
 
 - If you specify `type: github`, the `name` value is the full name of the GitHub repo and includes the user or organization.
   An example is `name: Microsoft/vscode`.
-  GitHub repos require a [GitHub service connection](../library/service-endpoints.md) for authorization.
+  GitHub repos require a [GitHub service connection](../library/service-endpoints.md#sep-github) for authorization.
+
+- If you specify `type: githubenterprise`, the `name` value is the full name of the GitHub Enterprise repo and includes the user or organization.
+  An example is `name: Microsoft/vscode`.
+  GitHub Enterprise repos require a [GitHub Enterprise service connection](../library/service-endpoints.md#sep-githubent) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
   An example is `name: MyBitBucket/vscode`.
@@ -449,6 +454,8 @@ Resources must be authorized before they can be used. A resource owner controls 
 * When you make changes to the YAML file and add additional resources (assuming that these not authorized for use in all pipelines as explained above), then the build fails with a resource authorization error that is similar to the following: `Could not find a <resource> with name <resource-name>. The <resource> does not exist or has not been authorized for use.`
 
     > In this case, you will see an option to authorize the resources on the failed build. If you are a member of the **User** role for the resource, you can select this option. Once the resources are authorized, you can start a new build.
+ 
+* If you continue to have problems authorizing resources, verify that the [agent pool security roles](../../organizations/security/about-security-roles.md) for your project are correct. 
 
 ## Set approval checks for resources
 
@@ -471,4 +478,19 @@ For every pipeline run, we show the info about the
 ### Environment traceability
 Whenever a pipeline deploys to an environment, you can see a list of resources that are consumed in the environments view. This view includes resources consumed as part of the deployment-jobs and their associated commits and work-items.
 ![Commits in environment](media/environments-commits.png)
+
+
+## FAQ
+
+### Why should I use pipelines `resources` instead of the `download` shortcut? 
+
+Using a `pipelines` resource is a first class way to consume artifacts from a CI pipeline and also configure automated triggers. It gives you full visibility into the process by displaying the version consumed, artifacts, commits, and work-items. When you define a pipeline resource, the associated artifacts are automatically downloaded in deployment jobs. 
+
+You can choose to download the artifacts in build jobs or to override the download behavior in deployment jobs with `download`. The `download` task internally uses the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md).
+
+
+### Why should I use `resources` instead of the Download Pipeline Artifacts task?
+
+When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss out on traceability and triggers. At the same time, there are times when it makes sense to use the Download Pipeline Artifacts task directly. 
+For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template will add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build info to a task.
 

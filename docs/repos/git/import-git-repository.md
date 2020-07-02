@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 11/02/2018
@@ -108,7 +108,10 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
-    ``` 
+    ```
+    
+   > [!WARNING]
+   > Using `--mirror` will overwrite all branches in the target repo which includes deleting any branches not in the source repo.
 
 4. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 

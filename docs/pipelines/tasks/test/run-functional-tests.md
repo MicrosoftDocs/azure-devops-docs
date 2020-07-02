@@ -33,7 +33,7 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-Use this task in a build or release pipeline to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+Use this task to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
 Use this task when you want to run tests on remote machines, and you cannot run tests on the build machine.
 
 ### Demands and prerequisites
@@ -153,7 +153,7 @@ These scenarios are supported for:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]

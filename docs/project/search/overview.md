@@ -4,8 +4,8 @@ description: Quickly Search with Azure DevOps and TFS
 ms.assetid: A0889E82-EAE7-464C-B82A-B05D2E404426
 ms.technology: devops-collab
 ms.topic: overview
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---

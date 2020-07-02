@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Share code in a Git repo and a new team project 
 ms.assetid: 
 ms.technology: devops-new-user
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.date: 09/10/2018
 ms.topic: quickstart
@@ -273,4 +273,4 @@ Now you're ready to create a new branch, write some code, and do it again.
 > [!div class="nextstepaction"]
 > [Set up continuous integration and delivery](../../pipelines/get-started-designer.md?toc=/azure/devops/user-guide/toc.json&bc=/azure/devops/user-guide/breadcrumb/toc.json)
 > or
-> [learn more about working with a Git repo](../git/index.md).
+> [learn more about working with a Git repo](../git/index.yml).

@@ -32,7 +32,7 @@ You can use the comparison field operators&mdash;`=[Field], <>[Field], >[Field],
 > [!NOTE]  
 > Some combinations of data type and comparison field operator might not make sense to use, such as `Title >=[Field]` or `Assigned To <=[Field]`. 
 
-### Useful filters 
+## Sample filters 
 
 <table width="100%">
 <tbody valign="top">

@@ -11,7 +11,7 @@ ms.date: 08/10/2016
 
 **Azure Pipelines (deprecated) | TFS 2017 (deprecated in 2017 Update 2)**
 
-Use this task in a build or release pipeline to install and update NuGet package dependencies.
+Use this task to install and update NuGet package dependencies.
 
 ## Demands
 

@@ -1,7 +1,7 @@
 ---
 title: Artifact policy checks
 description: Ensure artifacts adhere to custom policies
-ms.topic: reference
+ms.topic: conceptual
 ms.assetid: C7E2BE58-2B01-414D-9A3A-67FA68637B51
 ms.manager: shashban
 ms.author: shashban
@@ -37,53 +37,53 @@ This policy checks if the images are built by Azure Pipelines and Pipeline-foo. 
 allowedBuilder := "AzureDevOps_pipeline-foo"
 
 checkBuilder[errors] {
-	trace("Check if images are built by Azure Pipelines")
-	resourceUri := values[index].build.resourceUri	
-	image := fetchImage(resourceUri)
-	builder := values[index].build.build.provenance.builderVersion
-	trace(sprintf("%s: builder", [builder]))
-	not startswith(builder, "allowedBuilder")
-	errors := sprintf("%s: image not built by Azure Pipeline [%s]", [image,builder])
+    trace("Check if images are built by Azure Pipelines")
+    resourceUri := values[index].build.resourceUri    
+    image := fetchImage(resourceUri)
+    builder := values[index].build.build.provenance.builderVersion
+    trace(sprintf("%s: builder", [builder]))
+    not startswith(builder, "allowedBuilder")
+    errors := sprintf("%s: image not built by Azure Pipeline [%s]", [image,builder])
 }
 
 fetchRegistry(uri) = reg {
-	out := regex.find_n("//.*/", uri, 1)
-	reg = trim(out[0], "/")
+    out := regex.find_n("//.*/", uri, 1)
+    reg = trim(out[0], "/")
 }
 
 fetchImage(uri) = img {
-	out := regex.find_n("/.*@", uri, 1)
-	img := trim(out[0], "/@")
+    out := regex.find_n("/.*@", uri, 1)
+    img := trim(out[0], "/@")
 }
 ```
 
-### Check whitelisted registries
+### Check allowed registries
 
-This policy checks if the images are from whitelisted registries only.
+This policy checks if the images are from allowed registries only.
 
 ```
-whitelist = {
+allowlist = {
  "gcr.io/myrepo",
  "raireg1.azurecr.io"
 }
 
 checkregistries[errors] {
-	trace(sprintf("Whitelisted registries: %s", [concat(", ", whitelist)]))
-	resourceUri := values[index].image.resourceUri
-	registry := fetchRegistry(resourceUri)
-	image := fetchImage(resourceUri)
-	not whitelist[registry]
-	errors := sprintf("%s: source registry not permitted", [image]) 
+    trace(sprintf("Allowed registries: %s", [concat(", ", allowlist)]))
+    resourceUri := values[index].image.resourceUri
+    registry := fetchRegistry(resourceUri)
+    image := fetchImage(resourceUri)
+    not allowlist[registry]
+    errors := sprintf("%s: source registry not permitted", [image]) 
 }
 
 fetchRegistry(uri) = reg {
-	out := regex.find_n("//.*/", uri, 1)
-	reg = trim(out[0], "/")
+    out := regex.find_n("//.*/", uri, 1)
+    reg = trim(out[0], "/")
 }
 
 fetchImage(uri) = img {
-	out := regex.find_n("/.*@", uri, 1)
-	img := trim(out[0], "/@")
+    out := regex.find_n("/.*@", uri, 1)
+    img := trim(out[0], "/@")
 }
 ```
 
@@ -93,30 +93,30 @@ This policy checks for any forbidden ports exposed in the container image.
 
 ```
 forbiddenPorts = {
-	"80",
-	"22"
+    "80",
+    "22"
 }
 
 checkExposedPorts[errors] {
-	trace(sprintf("Checking for forbidden exposed ports: %s", [concat(", ", forbiddenPorts)]))
-	layerInfos := values[index].image.image.layerInfo
-	layerInfos[x].directive == "EXPOSE"
-	resourceUri := values[index].image.resourceUri
-	image := fetchImage(resourceUri)
-	ports := layerInfos[x].arguments
-	trace(sprintf("exposed ports: %s", [ports]))
-	forbiddenPorts[ports]
-	errors := sprintf("%s: image exposes forbidden port %s", [image,ports])
+    trace(sprintf("Checking for forbidden exposed ports: %s", [concat(", ", forbiddenPorts)]))
+    layerInfos := values[index].image.image.layerInfo
+    layerInfos[x].directive == "EXPOSE"
+    resourceUri := values[index].image.resourceUri
+    image := fetchImage(resourceUri)
+    ports := layerInfos[x].arguments
+    trace(sprintf("exposed ports: %s", [ports]))
+    forbiddenPorts[ports]
+    errors := sprintf("%s: image exposes forbidden port %s", [image,ports])
 }
 
 fetchRegistry(uri) = reg {
-	out := regex.find_n("//.*/", uri, 1)
-	reg = trim(out[0], "/")
+    out := regex.find_n("//.*/", uri, 1)
+    reg = trim(out[0], "/")
 }
 
 fetchImage(uri) = img {
-	out := regex.find_n("/.*@", uri, 1)
-	img := trim(out[0], "/@")
+    out := regex.find_n("/.*@", uri, 1)
+    img := trim(out[0], "/@")
 }
 
 ```
@@ -127,29 +127,29 @@ This policy checks if the image has been pre-deployed to one/more of the environ
 
 ```
 predeployedEnvironments = {
-	"env/resource1",
-	"env2/resource3"
+    "env/resource1",
+    "env2/resource3"
 }
 
 checkDeployedEnvironments[errors] {
-	trace(sprintf("Checking if the image has been pre-deployed to one of: [%s]", [concat(", ", predeployedEnvironments)]))
-	deployments := values[index].deployment
-	deployedAddress := deployments[i].deployment.address
-	trace(sprintf("deployed to : %s",[deployedAddress]))
-	resourceUri := deployments[i].resourceUri
-	image := fetchImage(resourceUri)
-	not predeployedEnvironments[deployedAddress]
-	trace(sprintf("%s: fails pre-deployed environment condition. found %s", [image,deployedAddress]))
-	errors := sprintf("image %s fails pre-deployed environment condition. found %s", [image,deployedAddress])
+    trace(sprintf("Checking if the image has been pre-deployed to one of: [%s]", [concat(", ", predeployedEnvironments)]))
+    deployments := values[index].deployment
+    deployedAddress := deployments[i].deployment.address
+    trace(sprintf("deployed to : %s",[deployedAddress]))
+    resourceUri := deployments[i].resourceUri
+    image := fetchImage(resourceUri)
+    not predeployedEnvironments[deployedAddress]
+    trace(sprintf("%s: fails pre-deployed environment condition. found %s", [image,deployedAddress]))
+    errors := sprintf("image %s fails pre-deployed environment condition. found %s", [image,deployedAddress])
 }
 
 fetchRegistry(uri) = reg {
-	out := regex.find_n("//.*/", uri, 1)
-	reg = trim(out[0], "/")
+    out := regex.find_n("//.*/", uri, 1)
+    reg = trim(out[0], "/")
 }
 
 fetchImage(uri) = img {
-	out := regex.find_n("/.*@", uri, 1)
-	img := trim(out[0], "/@")
+    out := regex.find_n("/.*@", uri, 1)
+    img := trim(out[0], "/@")
 }
 ```

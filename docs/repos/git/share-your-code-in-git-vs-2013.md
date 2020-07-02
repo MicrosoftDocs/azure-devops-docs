@@ -5,7 +5,7 @@ description: Share code in Git using Visual Studio 2013
 ms.assetid: d4d85217-1967-412d-b253-b6c6289dc459
 ms.technology: devops-code-git 
 toc: show
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 08/29/2017

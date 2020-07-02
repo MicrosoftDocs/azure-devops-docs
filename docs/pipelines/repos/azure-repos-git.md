@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 03/29/2020
+ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -157,7 +157,7 @@ For more information on public projects, see [Create a public project](../../org
 ::: moniker-end
 
 <a name="q-a"></a>
-## Q & A
+## FAQ
 
 ### I see the following permission error in the log file during checkout step. How do I fix it?
 

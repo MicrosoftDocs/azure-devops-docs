@@ -10,7 +10,7 @@ ms.author: kaelli
 author: kaelli
 ms.reviewer: kaelli
 monikerRange: "azure-devops"
-ms.date: 06/28/2019
+ms.date: 04/17/2020
 ---
 
 # Change a project process from Scrum to Agile
@@ -82,7 +82,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/scrum-to-agile/step-2-retry.png)
 
-   Close the wizard dialog and add the missing work item types now.
+   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-wit.md).
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
@@ -136,7 +136,7 @@ You can customize Kanban boards to display intermediate columns. For each column
   > [!div class="mx-imgBorder"]
   > ![Board Configuration](media/change-process/change-process-scrum-to-agile-board-config.gif)
 
-5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items. Sort the list by state value. Highlight all Product Backlog Items and do a [change type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type) to User Story. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the User Story type. For example: Committed would change to Active. Do this for each state, one state at a time.
+5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items. Sort the list by state value. Highlight all Product Backlog Items and do a [change type](../../../boards/backlogs/move-change-type.md#change-type) to User Story. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the User Story type. For example: Committed would change to Active. Do this for each state, one state at a time.
 
 6. Adjust query to show only Issues. Highlight all Issue work items and a change type to be an Impediment. Do a bulk edit to update work items to the right state for the Impediment type. Do this for each state, one state at a time.
 
@@ -174,7 +174,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/scrum-to-agile/change-type-user-story.png)
 
-   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
+   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
    It's possible that you will receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
 

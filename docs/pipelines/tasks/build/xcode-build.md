@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 **[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
-Use this task in a build or release pipeline to build an Xcode workspace on macOS.
+Use this task to build an Xcode workspace on macOS.
 
 ## Demands
 
@@ -207,7 +207,7 @@ Select if you want to run <a href="https://github.com/facebook/xctool/blob/maste
 <tr>
 <td>xctool Test Reporter Format</td>
 <td>
-You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults" data-raw-source="[Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
+You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1" data-raw-source="[Publish Test Results](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
 </td>
 </tr>
 
@@ -226,7 +226,7 @@ You can specify this argument if you have selected Use xctool and included <code
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [temp](../../includes/qa-agents.md)]

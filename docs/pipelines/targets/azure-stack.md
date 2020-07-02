@@ -27,7 +27,7 @@ To deploy to Azure stack using Azure Pipelines, ensure the following:
 Azure stack requirements:
 
 * Use an Azure Stack integrated system or deploy the [Azure Stack Development Kit (ASDK)](https://docs.microsoft.com/azure-stack/asdk/asdk-install)
-* Use the [ConfigASDK.ps1](https://github.com/mattmcspirit/azurestack/blob/master/deployment/ConfigASDK.ps1) PowerShell script to automate ASDK post-deployment steps.
+* Use the [ConfigASDK.ps1](https://github.com/esache/Azure-Stack/blob/master/Scripts/ConfigASDK.ps1) PowerShell script to automate ASDK post-deployment steps.
 * Create a [tenant subscription](https://docs.microsoft.com/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) in Azure Stack.
 * Deploy a Windows Server 2012 Virtual Machine in the tenant subscription. You'll use this server as your build server and to run Azure DevOps Services.
 * Provide a Windows Server 2016 image with .NET 3.5 for a virtual machine (VM). This VM will be built on your Azure Stack as a private build agent.
@@ -50,7 +50,7 @@ For more details, refer to [Tutorial: Deploy apps to Azure and Azure Stack](http
 * [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md)
 * [Azure Stack Operator Documentation](/azure/azure-stack/)
 
-## Q&A
+## FAQ
 
 ### Are all the Azure tasks supported?
 

@@ -3,12 +3,13 @@ title: Use team fields instead of area paths to support teams
 titleSuffix: TFS
 description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013 <= azure-devops-2019'
-ms.date: 04/14/2017
+ms.date: 03/13/2020
 ---
 
 # Use team fields instead of area paths to support teams
@@ -76,6 +77,7 @@ When you customize your project to support team fields, the Team field tab appea
 
 
 <a id="addteamfield">  </a>  
+
 ### 2. Add a custom team field to work item types
 
 Add a custom team field to all work item types (WITs) that are included in the Feature Category, Requirement Category, and Task Category. And, if you've upgraded to TFS 2013.3 or later version, add the custom team field to all WITs included in the Test Plan Category.
@@ -92,7 +94,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
 2.  For each type, add a custom Team field that references the global list.
 
     > [!div class="tabbedCodeSnippets"]
-		```XML
+	```XML
     <FIELDS>
     . . . 
         <FIELD name="Team" refname="MyCompany.Team" type="String" reportable="dimension">
@@ -113,7 +115,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
 3.  Add the **Team** field to the [Layout section](xml/layout-xml-element-reference.md) of the work item form. You'll also need to edit the [**WebLayout** section](xml/weblayout-xml-elements.md) of the WIT definition. 
 
     > [!div class="tabbedCodeSnippets"]
-		```XML
+	```XML
     <FORM>
     . . . 
       <Group Label="Status">
@@ -140,6 +142,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     ```
 
 <a id="processconfig">  </a>  
+
 ### 3. Change process configuration to reference the team field
 
 1.  Export the ProcessConfiguration XML definition.
@@ -150,23 +153,24 @@ Add a custom team field to all work item types (WITs) that are included in the F
 
 2.  Replace `System.AreaPath` for the field used to specify `type="Team"`.
 
-    ```xml
+    > [!div class="tabbedCodeSnippets"]
+    ```XML
     <TypeField refname="MyCompany.Team" type="Team" />
     ```
 
 3.  (Optional) Add the Team field to the quick add panel for the backlog page.  
-  
 
-  ```XML
-  <RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
+	> [!div class="tabbedCodeSnippets"]
+	```XML
+	<RequirementBacklog category="Microsoft.RequirementCategory" parent="Microsoft.FeatureCategory" pluralName="Stories" singularName="User Story">
     <AddPanel>
       <Fields>
       <Field refname="System.Title" />
       <Field refname="MyCompany.Team " />
       </Fields>
     </AddPanel> 
-  . . .
-  ```
+	. . .
+	```  
 
 4. Import the definition file.
 
@@ -175,6 +179,7 @@ Add a custom team field to all work item types (WITs) that are included in the F
     ```
 
 <a id="config-teamfield">  </a>  
+
 ### 4. Configure the Team field for each team
 
 Create and configure teams in the web portal to both match and reference the Team field. Each team, including the project, Fabrikam Fiber Website, must be configured with a default value for the Team field.
@@ -238,10 +243,11 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 2. [Download the process template](../boards/work-items/guidance/manage-process-templates.md) that corresponds to the template used to create your project.
 
    > [!IMPORTANT]  
-   >Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
+   > Make sure that you download the process template from the upgraded server. Also, the Visual Studio client version you use for both the download process and using **witadmin** must match the server version. For example, if you have upgraded to TFS 2015, you need to work from Visual Studio 2015. If you use an older version of Visuals Studio, you may get errors during the upload process. 
 
 3. Modify the ProcessTemplate file, and update the process template name and version number. For example:
 
+> [!div class="tabbedCodeSnippets"]
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <ProcessTemplate>
@@ -260,9 +266,6 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 7. [Configure features](configure-features-after-upgrade.md) using the wizard. Upon verify, the wizard should select the process template that you uploaded in the previous step.
 
 
-
-
 ### Credits
 
-Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/
-), a devops consultant and Developer Technologies MVP.
+Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/), a devops consultant and Developer Technologies MVP.

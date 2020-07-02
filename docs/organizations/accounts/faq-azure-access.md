@@ -1,13 +1,13 @@
 ﻿---
 title: Troubleshoot access via Azure AD
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 description: Learn the answers to frequently asked questions (FAQs), like how to understand Azure AD groups, add users, connect to, disconnect from, or switch your directory.
 ms.technology: devops-accounts
 ms.assetid: d51de748-c53e-4468-ad9b-275d6bf1a4dd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -38,7 +38,7 @@ Also, in the [Azure portal](https://portal.azure.com), you must have Project Col
 
 ### Q: I made changes to Azure Active Directory (Azure AD), but they didn't seem to take effect, why?
 
-A: Changes made in Azure AD can take up to 24 hours to be visible in Azure DevOps.
+A: Changes made in Azure AD can take up to 1 hour to be visible in Azure DevOps.
 
 <a name="o365aad"></a>
 
@@ -117,7 +117,7 @@ If your organization is connected to your organization's directory, only users f
 
 ### Q: My organization controls access by using Azure Active Directory. Can I just delete users from the directory?
 
-A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](delete-users-from-services-aad.md).
+A: Yes, but deleting a user from the directory removes the user's access to all organizations and other assets associated with that directory. You must have Azure AD global administrator permissions to [delete a user from your Azure AD directory](add-users-to-azure-ad.md#delete-users-from-your-organization-connected-to-azure-ad).
 
 ### Q: Why are "no identities found" when I try to add users from Azure AD to my Azure DevOps organization?
 
@@ -184,9 +184,18 @@ or the group management tools that your organization supports.
 
 ### Q: How do I tell the difference between an Azure DevOps group and an Azure AD group?
 
-A: On the group's identity information, check the group's source.
+A: The Azure DevOps UI indicates membership scope using brackets `[]`. For example, consider this permissions settings page:
 
-![Screenshot of group identity information](media/manage-azure-ad-groups/checkidentitysourceaad.png)
+![Permissions Settings with various scopes](media/manage-azure-ad-groups/permissions-scope-example.png)
+
+| Scope name | Definition |
+|:--|:--|
+| `[fabrikam-fiber]` | Membership is defined in Organization Settings |
+| `[Project Name]` | Membership is defined in Project Settings |
+| `[TEAM FOUNDATION]` | Membership is defined _directly_ in Azure AD | 
+
+> [!Note]
+> If you add an Azure AD group to a custom security group _and_ use a similar name, you may see what appears to be duplicate groups. Examine the scope in `[]` to determine which is a DevOps Group and which is an Azure AD Group.
 
 ### Q: Why doesn't Users show all Azure AD group members?
 
@@ -307,10 +316,12 @@ A: Users who are disabled or removed from your directory, can no longer access y
 - [Connect your organization to Azure AD](connect-organization-to-aad.md)
 - [Disconnect your organization from your directory](disconnect-organization-from-aad.md)
 - [Change the directory that's connected to Azure DevOps](change-azure-ad-connection.md)
+- [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
 
 ### Q: How can I manage multiple organizations that are backed by Azure AD?
 
-A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Manage multiple organizations backed by Azure AD](connect-organization-to-azure-ad.md#manage-multiple-organizations-backed-by-azure-ad).
+A: You can download a complete list of organizations backed by an Azure Active Directory tenant. For more information, see [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md).
 
 <a name="connect-o365-azure-ad"></a>
 

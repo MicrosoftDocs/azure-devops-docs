@@ -8,7 +8,7 @@ ms.assetid: ec935536-6a5e-4b62-adf2-4207a70440bd
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 04/03/2020
+ms.date: 05/29/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -24,7 +24,8 @@ In this article, learn how to invite external users to your organization. If you
 
 * The Azure AD tenant, to which you want to invite external users, must allow adding new users, per your Azure AD guest policies. For more information, see [how to become eligible to invite external users on your Azure AD tenant](/azure/active-directory/active-directory-b2b-delegate-invitations).
 
-* The **External guest access** policy must be **On** for the organization that you want to invite external users to. See the following image example.
+* The user policy, **External guest access**, must be **On** for the organization that you want to invite external users to. See the following image example.
+* Team and Project Administrators can only invite external users if the user policy, **Allow team and project administrators to invite new users**, is **On**. For more information, see [Restrict invitations from Project and Team Administrators](../security/restrict-invitations.md).
 
 > [!NOTE]   
 > To enable the new user interface for the New user hub, see [Enable preview features](../../project/navigation/preview-features.md).
@@ -65,7 +66,7 @@ In this article, learn how to invite external users to your organization. If you
 
     :::image type="content" source="../public/media/invite-users/add-new-users-dialog.png" alt-text="Add new users dialog":::
 
-5. Advise the external user to locate the email that they received from Azure DevOps and select the URL link. This final step adds the user to your organization. The invitation looks similar to the following email.
+5. Advise the external user to locate the email that they received from AzureDevOps@microsoft.com with the subject, "You have been invited to an Azure DevOps project" and select **Join now**. This final step adds the user to your organization. The invitation looks similar to the following image.
 
     :::image type="content" source="media/add-external-user/external-user-email-invitation.png" alt-text="External user's invitation email":::
 
@@ -77,9 +78,8 @@ The external user gets added to the organization to which they were invited and 
 ## Related articles
 
 * [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
-
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
-
 * [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+* [Restrict invitations to new users](../security/restrict-invitations.md)
 
 

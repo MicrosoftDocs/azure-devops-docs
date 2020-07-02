@@ -3,6 +3,7 @@ title: Add or modify a work item type (WIT)
 titleSuffix: Azure DevOps & TFS 
 description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.author: kaelli
 author: KathrynEE

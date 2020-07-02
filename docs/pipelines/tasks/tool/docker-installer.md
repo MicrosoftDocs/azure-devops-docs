@@ -13,7 +13,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to install a specific version of
+Use this task to install a specific version of
 the Docker CLI on the agent machine.
 
 ## Task Inputs
