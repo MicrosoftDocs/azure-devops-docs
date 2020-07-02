@@ -52,8 +52,8 @@ Follow these steps to create and check-in a new Resource Manager template.
    Visual Studio **File | Add | New project** menu.
 
 1. Save the entire solution (not just the project) and 
-   commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.md) or 
-   [Azure Repos Git](../../../../repos/git/index.md) repository.
+   commit the changes into a [Team Foundation Server](../../../../repos/tfvc/index.yml) or 
+   [Azure Repos Git](../../../../repos/git/index.yml) repository.
 
 ## Create the build pipeline
 
@@ -67,7 +67,7 @@ Carry out the following steps to publish an artifact with the Resource Manager t
 
 1. Save the pipeline, queue a new build, and verify that the artifact contains the **Templates** folder containing the template files **WindowsVirtualMachine.json** and **WindowsVirtualMachine.parameters.json**. This is the template that your release pipeline will consume to provision an Azure virtual machine.
 
-For more details on each step, see [Continuous integration with Azure Resource Manager templates](/azure/azure-resource-manager/resource-manager-tutorial-use-azure-pipelines#prerequisites).
+For more details on each step, see [Continuous integration with Azure Resource Manager templates](/azure/azure-resource-manager/templates/deployment-tutorial-pipeline).
 
 ## Provision your virtual machine
 
@@ -75,7 +75,7 @@ After you've run the build, you're ready to create a release pipeline to provisi
 
 ![icon](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

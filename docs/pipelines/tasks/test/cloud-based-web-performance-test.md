@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [loadtest-deprecated-include](../../../test/includes/loadtest-deprecated-include.md)]
 
-Use this task in a build or release pipeline to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
+Use this task to run the Quick Web Performance Test to easily verify your web application exists and is responsive.
 The task generates load against an application URL
 using the Azure Pipelines Cloud-based Load Test Service based in Microsoft Azure.
 
@@ -62,7 +62,7 @@ The agent must have the following capability:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"

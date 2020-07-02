@@ -9,9 +9,6 @@ monikerRange: '>= azure-devops-2019'
 
 # Runtime parameters
 
-> [!IMPORTANT]
-> This new feature is rolling out now and may not be available in your organization. 
-
 Runtime parameters let you have more control over what values can be passed to a pipeline. With runtime parameters you can:
 - Supply different values to scripts and tasks at runtime
 - Control parameter types, ranges allowed, and defaults
@@ -21,7 +18,7 @@ You can specify [parameters in templates](templates.md) and in the pipeline. Par
 
 Parameters are only available at template parsing time. Parameters are expanded just before the pipeline runs so that values surrounded by `${{ }}` are replaced with parameter values. Use [variables](variables.md) if you need your values to be more widely available during your [pipeline run](runs.md). 
 
-Parameters must contain a name and data type. 
+Parameters must contain a name and data type. Parameters cannot be optional. A default value needs to be assigned in your YAML file or when you run your pipeline. 
 
 ## Use parameters in pipelines
 
@@ -170,6 +167,117 @@ stages:
     steps:
     - script: echo running UnitTest
 ```
+
+### Loop through parameters
+
+
+You can also loop through your string, number, and boolean parameters. 
+
+#### [Script](#tab/script)
+
+In this example, you loop through parameters and print out each parameter name and value. 
+
+```yaml
+# start.yaml
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+- ${{ each parameter in parameters }}:
+  - script: echo ${{ parameter.Key }} 
+  - script: echo ${{ parameter.Value }}
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+#### [PowerShell](#tab/powershell)
+
+You can loop through parameters in a PowerShell task and set each parameter as an environment variable. 
+
+```yaml
+# start.yaml
+
+parameters:
+- name: myStringName
+  type: string
+  default: a string value
+- name: myMultiString
+  type: string
+  default: default
+  values:
+  - default
+  - ubuntu
+- name: myNumber
+  type: number
+  default: 2
+  values:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+- name: myBoolean
+  type: boolean
+  default: true
+
+steps: 
+  - task: PowerShell@2
+    env:
+      ${{ each parameter in parameters }}:
+        ${{ parameter.Key }}: ${{ parameter.Value }}
+    inputs:
+      filePath: test_script.ps1
+      pwsh: true
+
+
+
+```
+
+```yaml
+# azure-pipeline.yaml
+trigger: none
+
+extends:
+  template: start.yaml
+```
+
+```powershell
+# test_script.ps1
+
+Write-Host "Hello, World!"
+Write-Host $env:myStringName
+
+```
+
+---
+
+
 ## Parameter data types
 
 [!INCLUDE [parameter-data-types](includes/parameter-data-types.md)]

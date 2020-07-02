@@ -369,7 +369,7 @@ Setting up a SQL Azure VM can be done from the Azure portal with just a few clic
 
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
 
-Use the table below to decide where you should create you SQL Azure VM if you're using this method to import. Creating your VM in a region outside of the list below is not supported for running an import.
+Use the table below to decide where you should create your SQL Azure VM if you're using this method to import. Creating your VM in a region outside of the list below is not supported for running an import.
 
 |    Desired Import Region        |    SQL Azure VM Region         |
 |---------------------------------|--------------------------------|
@@ -401,7 +401,7 @@ Below are some additional recommended configurations for your SQL Azure VM.
 
 It's highly recommended that you restrict access to your VM to only IPs from Azure DevOps Services. This can be accomplished by allowing connections only from the set of Azure DevOps Services IPs that are involved in the collection database import process. The IPs that need to be granted access to your collection database will depend on what region you're importing into. The tables below will help you identify the correct IPs. The only port that is required to be opened to connections is the standard SQL connection port 1433.
 
-First, no matter what Azure DevOps Services region you import into the following IP must be granted access to your collection database. 
+First, no matter what Azure DevOps Services region you import into, you must grant the following IP access to your collection database. 
 
 |    Service                                      |    IP               |
 |-------------------------------------------------|---------------------|
@@ -426,12 +426,12 @@ Next you will need to grant access to the data migration tool for Azure DevOps i
 |-------------------------------------------------|------------------------------------------------------------|
 |    Data migration tool - Central United States       |    52.173.74.9, 52.165.184.188, 20.45.1.234, 13.86.39.123  |
 |    Data migration tool - West Europe                 |    40.115.43.138, 13.95.15.128, 52.236.146.105, 40.67.219.89, 40.119.145.63, 52.142.236.228, 52.142.238.75              |
-|    Data migration tool - Australia East              |    13.75.134.204, 40.82.219.41, 20.40.124.19                             |
+|    Data migration tool - Australia East              |    13.75.134.204, 40.82.219.41, 20.40.124.19               |
 |    Data migration tool - Brazil South                |    104.41.24.164, 20.40.115.123                            |
 |    Data migration tool - India South                 |    13.71.120.31, 40.81.76.137                              |
 |    Data migration tool - Canada Central              |    52.237.18.100, 52.237.24.61, 40.82.191.163              |
 |    Data migration tool - East Asia (Hong Kong)       |    13.75.106.194, 40.81.27.181                             |
-|    Data migration tool - UK South                    |    40.81.153.223                                                        |
+|    Data migration tool - UK South                    |    40.81.153.223, 51.105.8.98, 51.104.26.2                 |
   
 Next you will need to grant Azure DevOps Services access. Again, you only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.  
 
@@ -442,9 +442,9 @@ Next you will need to grant Azure DevOps Services access. Again, you only need t
 |    Azure DevOps Services - Australia East                        |    13.75.145.145, 40.82.217.103, 20.188.213.113, 104.210.88.194, 40.81.62.114                                                        |
 |    Azure DevOps Services - Brazil South                          |    20.40.114.3, 191.235.90.183, 191.232.38.181, 191.233.25.175                                                                         |
 |    Azure DevOps Services - India South                           |    104.211.227.29, 40.81.75.130, 52.172.54.122, 52.172.49.252                                                        |
-|    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                                                           |
-|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                                                          |
-|    Azure DevOps Services - UK South                              |    40.81.159.67                                 |
+|    Azure DevOps Services - Canada Central                        |    52.237.19.6, 40.82.190.38                          |
+|    Azure DevOps Services - East Asia (Hong Kong)                 |    52.175.28.40, 40.81.25.218, 13.94.26.58                |
+|    Azure DevOps Services - UK South                              |    40.81.159.67, 51.105.8.98, 51.104.26.2                 |
 
 Next you will need to grant Azure Pipelines Releases service access. You only need to grant an exception for the Azure DevOps Services instance in the region that you're importing into.
 
@@ -517,7 +517,7 @@ You will need to add exceptions for Test Plans IPs in the region you're migratin
  
 **Analytics IPs (Azure DevOps Server 2019 or later only)**
 
-You only need to add an exception for the analytics IPs in your target import region if you included preview features with your import. 
+If you included preview features with your import, add an exception for the analytics IPs only in your target import region. 
 
 |    Service                                     |    IP                                                                             |
 |------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -718,6 +718,9 @@ The great news is that your team is now ready to begin the process of running an
 
 > [!NOTE]
 > Repeating a production run import of a completed import for a collection, such as in the event of a rollback, requires reaching out to Azure DevOps Services [Customer Support](https://azure.microsoft.com/support/devops/) before queuing another import.
+
+> [!NOTE]
+> Azure Administrators can forbid users from creating new Azure DevOps organizations. If the [Restrict organization creation](../organizations/accounts/azure-ad-tenant-policy-restrict-org-creation.md) policy is set, then your import will fail to complete. Before you begin, verify that this is not set or that there is an exception for the user performing the migration.
 
 ### Considerations for rollback plans
 

@@ -4,9 +4,9 @@ titleSuffix: Azure DevOps
 description: Use Azure DevOps extension command line interface 
 ms.topic: conceptual
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 10/14/2019
@@ -23,7 +23,7 @@ The Azure DevOps extension for Azure Command Line Interface (CLI) allows you to 
 
 To start using the Azure DevOps extension for Azure CLI, execute the following steps:
 
-1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.49. You can use `az --version` to validate.
+1. Install Azure CLI: Follow the instructions available [here](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) to set up Azure CLI in your environment. At a minimum, your Azure CLI version must be 2.0.69. You can use `az --version` to validate.
 
 2. Add the Azure DevOps extension:
 
@@ -33,9 +33,9 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 
 	You can use `az extension list` or `az extension show --name azure-devops` to confirm the installation.
 
-3. Sign in: Run `az login` to sign in.
+3. Sign in: Run `az login` to sign in. Note that we support only interactive or log in using user name and password with `az login`. We do not support use of service principals with `az login`. You would need to use a PAT token in this case. For more information, see [Log in via Azure DevOps Personal Access Token (PAT)](log-in-via-pat.md).  
 
-4. Configure defaults: Although you can provide the organization and project for each command, we recommend you set these as defaults in configuration for seamless commanding.
+4. Configure defaults: Although you can provide the organization and project for each command, we recommend you set these values as defaults in configuration for seamless commanding.
 
     ```
 	az devops configure --defaults organization=https://dev.azure.com/contoso project=ContosoWebApp
@@ -43,7 +43,7 @@ To start using the Azure DevOps extension for Azure CLI, execute the following s
 
 ## Command usage
 
-Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards` and `repos` groups.
+Adding the Azure DevOps Extension adds `devops`, `pipelines`, `artifacts`, `boards`, and `repos` groups.
 For usage and help content for any command, pass in the -h parameter, for example:
 
 ```bash
@@ -87,7 +87,7 @@ For example :
 az pipelines build show --id 1 --open
 ```
 
-This will show the details of build with `id 1` on the command-line and also open it in the default browser.
+This command will show the details of build with `id 1` on the command-line and also open it in the default browser.
 
 ## Related articles
 

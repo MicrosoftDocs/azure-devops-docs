@@ -1,12 +1,12 @@
 ---
 title: Service connections in Azure Pipelines & TFS
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: Service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A40435C0-2053-4D99-9A75-CCB97FBB15D2
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/17/2020
+ms.date: 05/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -31,10 +31,8 @@ and use this service connection name in an Azure Web Site Deployment task in a r
 
 You define and manage service connections from the Admin settings of your project:
 
-* Azure DevOps: `https://dev.azure.com/{organization}/{project}/_admin/_services`
+* Azure DevOps: `https://dev.azure.com/{organization}/{project}/adminservices`
 * TFS: `https://{tfsserver}/{collection}/{project}/_admin/_services`
-
-Service connections are created at project scope. A service connection created in one project is not visible in another project.
 
 <a name="create-new"></a>
 
@@ -155,7 +153,6 @@ Or you can choose to lock down the service connection and only allow selected YA
 ![Azure Resource Manager pipeline permissions](../release/media/azure-rm-endpoint/pipeline-permissions.png)
 
 ### Project permissions - Cross project sharing of service connections
-Project permissions control which projects can use this service connection. By default, service connections are not shared with any other projects.
 
 * Only the organization-level administrators from **User permissions** can share the service connection with other projects.
 * The user who is sharing the service connection with a project should have atleast create service connection permission in the target project.
@@ -177,11 +174,16 @@ Project permissions control which projects can use this service connection. By d
 
 After the new service connection is created:
 
+<a id="yaml"></a>
+
 # [YAML](#tab/yaml)
 
 Copy the connection name into your code as the **azureSubscription** (or the equivalent connection name) value.
 
   ![If you are using it in YAML](media/yaml-connection-setting.png)
+
+<a id="classic"></a>
+
 # [Classic](#tab/classic)
 
 Select the connection name you assigned in the **Azure subscription** (or the equivalent connection name) setting of your pipeline.
@@ -214,29 +216,20 @@ use one of the following techniques:
 
 Azure Pipelines and TFS support a variety of service connection types by default. Some of these are described below:
 
-* [Azure Classic service connection](#sep-azure-classic)
-* [Azure Resource Manager service connection](#sep-azure-resource-manager)
-* [Azure Service Bus service connection](#sep-servbus)
-* [Bitbucket Cloud service connection](#sep-bbucket)
-* [Chef service connection](#sep-chef)
-* [Docker Host service connection](#sep-dochost)
-* [Docker Registry service connection](#sep-docreg)
-* [External Git service connection](#sep-extgit)
-* [Generic service connection](#sep-generic)
-* [GitHub service connection](#sep-github)
-* [GitHub Enterprise Server service connection](#sep-githubent)
-* [Jenkins service connection](#sep-jenkins)
-* [Kubernetes service connection](#sep-kuber)
-* [Maven service connection](#sep-maven)
-* [npm service connection](#sep-npm)
-* [NuGet service connection](#sep-nuget)
-* [Python package download service connection](#sep-python-download)
-* [Python package upload service connection](#sep-python-upload)
-* [Service Fabric service connection](#sep-fabric)
-* [SSH service connection](#sep-ssh)
-* [Subversion service connection](#sep-subversion)
-* [Team Foundation Server / Azure Pipelines service connection](#sep-tfsts)
-* [Visual Studio App Center service connection](#sep-vsmobile)
+- [Service connections](#service-connections)
+  - [Create a service connection](#create-a-service-connection)
+  - [Manage a service connection](#manage-a-service-connection)
+  - [Secure a service connection](#secure-a-service-connection)
+    - [User permissions](#user-permissions)
+      - [Project level permissions](#project-level-permissions)
+      - [Organization level permissions](#organization-level-permissions)
+    - [Pipeline permissions](#pipeline-permissions)
+    - [Project permissions - Cross project sharing of service connections](#project-permissions---cross-project-sharing-of-service-connections)
+  - [Use a service connection](#use-a-service-connection)
+- [YAML](#yaml)
+- [Classic](#classic)
+  - [Common service connection types](#common-service-connection-types)
+  - [Extensions for other service connections](#extensions-for-other-service-connections)
 
 After you enter the parameters when creating a service connection, validate the
 connection. The validation link uses a REST call to the external service with
@@ -290,6 +283,8 @@ For more information, see [Connect to Microsoft Azure](connect-to-azure.md)
 *****
 
 <h3 id="sep-servbus">Azure Service Bus service connection</h3>
+
+
 
 Defines and secures a connection to a Microsoft Azure Service Bus queue.
 

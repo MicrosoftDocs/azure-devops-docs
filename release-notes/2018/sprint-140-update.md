@@ -64,7 +64,7 @@ The **.NET Core** task in Azure Pipelines now supports code coverage so that you
 
 ### Leverage restructured Process REST APIs
 
-In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/Microsoft/vsts-dotnet-samples/tree/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTrackingProcess) using the C# client libraries.
+In the REST API version 5.1 (Preview) we combined several Inherited Process related APIs into a single domain. This will make it easier for you to find and consume the right endpoints. See the [Process Behaviors](/rest/api/vsts/processes/behaviors/list?view=vsts-rest-5.0) documentation for more information. We have also created a [few samples](https://github.com/microsoft/azure-devops-dotnet-samples/tree/master/ClientLibrary/Samples/WorkItemTrackingProcess) using the C# client libraries.
 
 ## Azure Artifacts
 

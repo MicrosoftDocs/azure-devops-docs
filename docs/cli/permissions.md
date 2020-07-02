@@ -1,12 +1,12 @@
-﻿---
+---
 title: Manage Security permissions with Azure DevOps CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security permissions 
 ms.topic: reference 
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 06/18/2019

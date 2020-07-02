@@ -28,19 +28,20 @@ Then, read [Plan and track work](plan-track-work.md) to start adding and trackin
 
 If you are tasked with managing Azure Boards settings, review [Manage your Azure Boards project](manage-boards.md) for additional configurations and resources that you may want to make. 
 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
+
 ## Related articles
 
 - [Why use Azure Boards?](why-use-azure-boards.md)
-- [Key concepts](key-concepts.md)
 - [Default permissions & access (Security)](permissions-access-boards.md) 
+- [Agile glossary](../work-items/agile-glossary.md) 
 
 ## Additional resources
 
 - [Best tool for the job](../work-items/best-tool-add-update-link-work-items.md)  
-- [Web portal navigation](../../project/navigation/index.md) 
 - [Work items](../work-items/about-work-items.md)  
 - [Sprints (Scrum)](../sprints/scrum-overview.md)
-- [Process customization](../../organizations/settings/work/inheritance-process-model.md)
+- [Web portal navigation](../../project/navigation/index.md) 
 
 
 

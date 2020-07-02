@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Workspaces Command
 ms.assetid: 4b6f05fb-0520-44f8-8a31-7108ff956a72
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -65,7 +65,7 @@ tf workspaces /remove:(*|workspace1[,workspace2,...])
 </tr>
 <tr>
 <td><p><em>TeamProjectCollectionUrl</em></p></td>
-<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the workspaces about which you want to display information (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><em>username</em></p></td>
@@ -130,13 +130,13 @@ The following example displays a list of all workspaces for the current user on 
 c:\projects>tf workspaces
 ```
 
-The following example displays the list of all workspaces for all users on all computers that have been created in the following project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example displays the list of all workspaces for all users on all computers that have been created in the following project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
 ```
 c:\projects>tf workspaces /owner:* /computer:* /collection:http://myserver:8080/tfs/DefaultCollection
 ```
 
-The following example displays detailed information about all workspaces that the current user has created in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example displays detailed information about all workspaces that the current user has created in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
 ```
 c:\projects>tf workspaces /computer:* /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection
@@ -148,7 +148,7 @@ The following example displays detailed information including a list of workspac
 c:\projects>tf workspaces /format:detailed /collection:http://myserver:8080/tfs/DefaultCollection WS1
 ```
 
-The following example removes all cached workspaces from the cache in the project collection at the address http://myserver:8080/tfs/DefaultCollection.
+The following example removes all cached workspaces from the cache in the project collection at the address `http://myserver:8080/tfs/DefaultCollection`.
 
 ```
 c:\projects>tf workspaces /remove:* /collection:http://myserver:8080/tfs/DefaultCollection

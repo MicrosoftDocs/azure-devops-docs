@@ -225,7 +225,7 @@ may encounter the following known issues:
   configure Azure Pipelines to be backed by an Azure Active Directory (Azure AD) instance. For information on how to do this, see
   [Azure Pipelines - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -3,7 +3,7 @@ title: Running a self-hosted agent in Docker
 ms.topic: conceptual
 description: Instructions for running your pipelines agent in Docker
 ms.assetid: e34461fc-8e77-4c94-8f49-cf604a925a19
-ms.date: 03/13/2020
+ms.date: 05/29/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -16,6 +16,7 @@ We'll walk through a complete container example, including handling agent self-u
 Both [Windows](#windows) and [Linux](#linux) are supported as container hosts. 
 You'll pass a few [environment variables](#environment-variables) to `docker run` which configure the agent to connect to Azure Pipelines or Azure DevOps Server.
 Finally, you'll want to [customize the container](#adding-tools-and-customizing-the-container) to suit your needs.
+Tasks and scripts may depend on specific tools being available on the container's `PATH`, and it is your responsibility to ensure these tools are available.
 
 ::: moniker range="azure-devops-2019"
 
@@ -208,7 +209,7 @@ Next, we'll create the Dockerfile.
 4. Save the following content to `~/dockeragent/Dockerfile`:
 
     ```docker
-    FROM ubuntu:16.04
+    FROM ubuntu:18.04
 
     # To make it easier for build and release pipelines to run apt-get,
     # configure apt to not require confirmation (assume the -y argument by default)
@@ -222,8 +223,8 @@ Next, we'll create the Dockerfile.
             jq \
             git \
             iputils-ping \
-            libcurl3 \
-            libicu55 \
+            libcurl4 \
+            libicu60 \
             libunwind8 \
             netcat
 
@@ -372,7 +373,7 @@ You must also use some kind of container orchestration system like Kubernetes or
 | Environment variable | Description                                                 |
 |----------------------|-------------------------------------------------------------|
 | AZP_URL              | The URL of the Azure DevOps or Azure DevOps Server instance |
-| AZP_TOKEN            | Personal Access Token (PAT) granting access to `AZP_URL`    |
+| AZP_TOKEN            | [Personal Access Token (PAT)](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) with **Agent Pools (read, manage)** scope, created by a user that has permission to [configure agents](pools-queues.md#creating-agent-pools), at `AZP_URL`    |
 | AZP_AGENT_NAME       | Agent name (default value: the container hostname)          |
 | AZP_POOL             | Agent pool name (default value: `Default`)                  |
 | AZP_WORK             | Work directory (default value: `_work`)                     |
@@ -381,6 +382,7 @@ You must also use some kind of container orchestration system like Kubernetes or
 ## Adding tools and customizing the container
 
 In this walkthrough, you created a basic build agent.
+The suggested base Dockerfiles are just that: suggestions.
 You can extend the Dockerfile to include additional tools and their dependencies, or build your own container using this one as a base layer. Just make sure that the following things are left untouched:
 
 - The `start.sh` script is called by the Dockerfile

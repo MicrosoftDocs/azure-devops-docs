@@ -29,7 +29,7 @@ You can find more information in the [blog post](https://devblogs.microsoft.com/
 ## Database Import Service
 We are announcing the preview of the TFS Database Import Service for Visual Studio Team Services. Team Foundation Server customers have been asking Microsoft to be able to import their TFS databases to take advantage of all the great capabilities of Visual Studio Team Services.
 
-You can find more information in this [blog post](https://devblogs.microsoft.com/devops/import-your-tfs-database-into-visual-studio-team-services/). Our guide and tooling is available [here](https://aka.ms/TFSImportData).
+You can find more information in this [blog post](https://devblogs.microsoft.com/devops/import-your-tfs-database-into-visual-studio-team-services/). Our guide and tooling is available [here](https://azure.microsoft.com/services/devops/migrate/).
 
 ## Work Item Search preview
 We are also announcing the public preview of Work Item Search in Visual Studio Team Services. Work Item Search provides fast and flexible search across all your work items over all projects in an account. 

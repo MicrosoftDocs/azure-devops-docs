@@ -17,17 +17,10 @@ ms.date: 12/02/2019
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 
 
-<!--- Suggest link to tutorial be changed from https://osgwiki.com/wiki/Dependency 
-
-https://microsoft.visualstudio.com/OS/_apps/hub/wdgeswm.dependencytracker.dependencytracker-hub#b4cd1b1c9c7ce3dfbaa3fabc9532a040
-
---> 
-
-
 The Dependency Tracker extension provides you with the ability to plan and manage dependencies across teams, projects, and organizations. It provides filterable views to show all dependencies a team is consuming and producing. These views allow you to track the state and schedule of dependencies to support you in assessing the risk of dependencies to product deliverables. 
 
 > [!NOTE]   
-> The Dependency Tracker extension is only available on Azure DevOps Services at this time. You can download it from the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview)
+> The Dependency Tracker extension is not a supported feature of Azure Boards and therefore not supported by the product team. For questions, suggestions, or issues you have when using the extension, visit the [Marketplace for Azure DevOps, Dependency Tracker extension](https://marketplace.visualstudio.com/items?itemName=ms-eswm.dependencytracker&ssr=false#overview) page. The Dependency Tracker extension is only available on Azure DevOps Services. 
 
 You use the Dependency Tracker to plan dependencies at the beginning of an iteration or release, as well as to track the status during development. For any given dependency, there are two parties involved: 
 - **Consumer**: Feature team who has a need and initiates a request for work
@@ -772,6 +765,7 @@ Example: <pre>["account-1", "account-2"]</pre>
 
 - [Work Item Visualization](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) 
 
+<!---
 
 ## Dependency Bot
 
@@ -780,6 +774,7 @@ The dependency bot works in the background to notify teams when dependencies are
 - Notify the consumer (copy the producer) when the producer has changed the State of the deliverable to Cut
 - Notify the consumer (copy the producer) when the producer has moved out the iteration path of a committed dependency.
 
+--> 
 
 <!--- TO BE COMPLETED
 

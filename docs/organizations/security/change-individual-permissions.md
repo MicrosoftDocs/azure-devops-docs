@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/20/2019
+ms.date: 06/22/2020
 ---
 
 
@@ -32,6 +32,12 @@ In this article you learn how to do the following tasks:
 > * Change the permission assignments for an individual user 
 
 If you're new to managing permissions and groups, review [About permissions and groups](about-permissions.md) to learn about permission states and inheritance.
+
+
+## Prerequisites
+
+* To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
+* To manage permissions or groups at the collection or instance level, you must be a member of the Project Collection Administrators Group or have your **Edit instance-level information** set to Allow. If you created the organization or collection, you are automatically added as a member of this group. 
 
 [!INCLUDE [temp](../../includes/image-differences.md)]
 

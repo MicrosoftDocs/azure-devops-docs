@@ -13,7 +13,7 @@ monikerRange: azure-devops
 
 # Download Pipeline Artifacts task
 
-Use this task in a build or release pipeline to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
+Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
 ::: moniker range="azure-devops"
 
@@ -38,7 +38,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
 | `allowPartiallySucceededBuilds`<br/>Download artifacts from partially succeeded builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or partially succeeded <br/>Default value: false |
 | `allowFailedBuilds`<br/>Download artifacts from failed builds | (Optional) If checked, this build task will try to download artifacts whether the build is succeeded or failed <br/>Default value: false |
 | `artifact`<br/>Artifact Name | (Optional) The name of the artifact to download. If left empty, all artifacts associated to the pipeline run will be downloaded. <br/>Argument aliases: `artifactName` |
-| `patterns`<br/>Matching Patterns | (Optional) One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) <br/>Default value: * *<br/>Argument aliases: `itemPattern` |
+| `patterns`<br/>Matching Patterns | (Optional) One or more file matching patterns (new line delimited) that limit which files get downloaded. [More Information on file matching patterns](../file-matching-patterns.md) <br/>Default value: *\*<br/>Argument aliases: `itemPattern` |
 | `path`<br/>Destination Directory | (Required) Directory to download the artifact files. Can be relative to the pipeline workspace directory or absolute. If multi-download option is applied (by leaving an empty artifact name), a sub-directory will be created for each. See [Artifacts in Azure Pipelines](../../artifacts/pipeline-artifacts.md). <br/>Default value: $(Pipeline.Workspace) <br/>Argument aliases: `targetPath`, `downloadPath` |
 
 > [!NOTE]
@@ -97,7 +97,7 @@ Use this task in a build or release pipeline to download pipeline artifacts from
     runId: 40
 ```
 
-## Q&A
+## FAQ
 
 ### How can I find the ID of the Pipeline I want to download an artifact from? 
 

@@ -224,3 +224,8 @@ From the web portal, open the Security dialog for the object whose permissions y
 > [!div class="nextstepaction"]
 > [Look up the organization owner or a Project Administrator](lookup-organization-owner-admin.md) 
 
+## Related articles
+
+- [Trace permissions](faq-trace-permissions.md)
+- [Permissions and role lookup guide](permissions-lookup-guide.md)
+

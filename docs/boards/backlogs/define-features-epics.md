@@ -301,6 +301,8 @@ If you want bugs to show up on your backlog and you're not seeing them, [enable 
 
 [!INCLUDE [temp](../includes/faq-copy-clone.md)]
 
+[!INCLUDE [temp](../includes/faq-critical-path.md)]
+
 
 ## Try this next  
 
@@ -317,4 +319,4 @@ Portfolio backlogs are not only a great way to organize your project plan, but a
 - [Select backlog navigation levels for your team](../../organizations/settings/select-backlog-navigation-levels.md)   
 - [Work with multi-team ownership of backlog items](backlogs-overview.md#multi-team)  
 - [Product backlog controls](product-backlog-controls.md)
-- [Backlog keyboard shortcuts](backlogs-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

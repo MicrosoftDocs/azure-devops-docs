@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to execute PowerShell scripts on remote machine(s).
+Use this task to execute PowerShell scripts on remote machine(s).
 
 This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
@@ -65,7 +65,7 @@ This task can run both PowerShell scripts and PowerShell-DSC scripts:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [qa-agents](../../includes/qa-agents.md)]

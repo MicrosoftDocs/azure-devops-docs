@@ -9,7 +9,7 @@ ms.reviewer: jrice
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2019
+ms.date: 06/09/2020
 ---
 
 
@@ -41,6 +41,9 @@ Assign users or groups of users to one of the following access levels:
 - **Basic**: Provides access to most features. Assign to users with a Visual Studio Professional subscription, an Azure DevOps Server CAL, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
+
+> [!TIP]
+> As a best practice when adding new users, we recommend assigning the Visual Studio subscriber level when appropriate (as opposed to Basic) to prevent being charged the Basic rate before the user signs in for the first time.
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
@@ -128,7 +131,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -289,7 +292,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a> or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -472,7 +475,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -611,7 +614,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -691,12 +694,14 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
+- View Delivery Plans (a Marketplace extension) 
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 #### For Public projects:
 
 - View Delivery Plans (a Marketplace extension)    
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
@@ -708,6 +713,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views   
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 ::: moniker-end
