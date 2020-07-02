@@ -36,7 +36,7 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 
 ## Understand which work items you'll use 
 
-[!INCLUDE [temp](includes/note-requirements-terms.md.md)]
+[!INCLUDE [temp](includes/note-requirements-terms.md)]
 
 
 ## Your product plan and your Product Backlog  
@@ -91,10 +91,10 @@ Team Velocity:  Use to improve planning/estimating and forecasting
 
 Work item tags are a useful tool to support queries and filtering of backlogs, boards, and queries. For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the project wiki. 
  
-	• Have a policy in place about how your teams want to use tags
-	• Consider how tags will be used for queries, filtering, reporting 
-	• Cross-team dependency
-	• Cross-project dependency
+- Have a policy in place about how your teams want to use tags
+- Consider how tags will be used for queries, filtering, reporting 
+- Cross-team dependency
+- Cross-project dependency
 
 
 Cross-org dependency
