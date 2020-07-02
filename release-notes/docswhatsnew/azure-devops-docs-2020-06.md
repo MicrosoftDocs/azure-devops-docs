@@ -34,7 +34,7 @@ Welcome to what's new in the Azure DevOps docs from June 1, 2020 through June 30
 
 ### Updated articles
 
-- [Trace permissions](/azure/devops/organizations/security/faq-trace-permissions) - Security FAQs updates - adding azure-devops and 2019 media/monikers
+- [Trace permissions](/azure/devops/organizations/security/faq-trace-permissions) - Security FAQs updates
 - [Customize the workflow (Inheritance process)](/azure/devops/organizations/settings/work/customize-process-workflow)
 
 ## Pipelines
@@ -49,7 +49,6 @@ Welcome to what's new in the Azure DevOps docs from June 1, 2020 through June 30
 ### Updated articles
 
 - [Set up Azure Pipelines and Maven](/azure/devops/pipelines/artifacts/maven) - Working with Maven feeds
-- [Azure Pipelines ecosystem support](/azure/devops/pipelines/ecosystems/ecosystems) - Ecosystems index changes
 - [Define approvals and checks](/azure/devops/pipelines/process/approvals) - Update to approvals & checks documentation
 - [Troubleshoot pipeline runs](/azure/devops/pipelines/troubleshooting/troubleshooting) - Troubleshooting content performance improvements
 
@@ -58,7 +57,7 @@ Welcome to what's new in the Azure DevOps docs from June 1, 2020 through June 30
 ### Updated articles
 
 - [Enable preview features](/azure/devops/project/navigation/preview-features)
-  - Address several GH Issues
+  - Address customer feedback
   - Sprint 170 Updates, Preview Features
 
 ## GitHub issue content updates
