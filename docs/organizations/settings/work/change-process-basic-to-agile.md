@@ -134,7 +134,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/change-process/change-type-to-user-story.png)
 
-   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
+   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
    Choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
 

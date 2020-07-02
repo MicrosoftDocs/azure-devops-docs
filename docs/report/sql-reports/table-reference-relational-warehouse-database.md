@@ -59,7 +59,7 @@ You can query for data about code and other files that are under version control
 |[Build Project tables](table-reference-build-project.md)|Files that were built and the platforms and flavors that were used.|  
 |[Work Item Changeset tables](work-item-changeset-tables.md)|Links between work items and changesets.|  
   
-For more information about version control, see [Code](../../repos/tfvc/overview.md).  
+For more information about version control, see [Code](../../repos/tfvc/index.yml).  
  
 <a name="TestResults"></a>
  

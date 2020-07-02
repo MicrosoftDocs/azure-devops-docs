@@ -2,7 +2,7 @@
 title: Add and manage fields to an inherited process
 titleSuffix: Azure DevOps Services
 description: Add and manage fields in the web form of a work item type for an Inheritance process 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: D6616411-43D4-4A81-8951-772D98BD1569  
 ms.author: kaelli
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 12/12/2019
 ---
 
-# Add and manage fields for an inherited process   
+# Add and manage fields (Inheritance process)   
 
 [!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
@@ -94,7 +94,7 @@ You can add fields and specify the group and page where they should appear. Also
 	<img src="media/process/cpfield-customer-ticket-layout.png" alt="Add a field to Use story, specify layout" style="border: 1px solid #C3C3C3;" />  
 
 	> [!NOTE]    
-	> While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [task board](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
+	> While you can change the form label, you must use the field name whyou areen adding fields to cards ([Kanban](../../../boards/boards/customize-cards.md#fields), [Taskboard](../../../boards/sprints/customize-taskboard.md)) or [creating queries](../../../boards/queries/using-queries.md) based on the field.   
 
 1.	Choose <strong>Add field</strong> to complete adding the field. If you don't specify its layout location, the system adds it to the first group of fields on the form.  
 
@@ -107,6 +107,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 
 <a id="pick-list">  </a>
+<a id="edit-picklist-inherited" />
 
 ### Add a picklist  
 
@@ -123,7 +124,6 @@ You can add a new field and define a pick list or customize the pick list of an 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
 	::: moniker range="azure-devops"
-	<a id="edit-picklist-inherited" />
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
@@ -188,7 +188,7 @@ Use an Identity-based field to add a field similar to the Assigned To field. Ide
 4. By default, the field is added to the last group defined in the second column. Open the <strong>Layout</strong> tab to drag and drop the field to another group on the form.  
 
 	> [!NOTE]    
-	> The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Task board, then the field values of True and False display (not a checkbox).
+	> The field appears as a checkbox in the work item form. Check the box to indicate a True value. If you display the field on the Kanban or Taskboard, then the field values of True and False display (not a checkbox).
 
 <a id="add-existing-field">  </a>
 

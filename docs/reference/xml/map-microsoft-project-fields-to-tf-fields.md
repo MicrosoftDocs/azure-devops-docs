@@ -3,6 +3,7 @@ title: Map Microsoft Project fields to TFS fields
 titleSuffix: TFS
 description: Customize how work item fields map to Project fields for Team Foundation Server (TFS)
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 8c6550d9-9239-4dac-832b-5634924ec77b
 ms.author: kaelli
 author: KathrynEE

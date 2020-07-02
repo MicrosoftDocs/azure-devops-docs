@@ -193,7 +193,7 @@ You can connect to your code from the web portal **Code** hub, or using Xcode, E
 
 ### Git
 
-You can use [Git repositories](../../repos/git/overview.md) to host and collaborate on your source code. For an overview of code features and functions.
+You can use [Git repositories](../../repos/git/index.yml) to host and collaborate on your source code. For an overview of code features and functions.
 
 [!INCLUDE [temp](includes/code-git.md)]
 
@@ -207,7 +207,7 @@ You can use [Git repositories](../../repos/git/overview.md) to host and collabor
 
 ::: moniker range=">= tfs-2013"
 
-[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md) provides a centralized version control system to manage your source control. 
+[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml) provides a centralized version control system to manage your source control. 
 
 [!INCLUDE [temp](includes/code-tfvc.md)]
 

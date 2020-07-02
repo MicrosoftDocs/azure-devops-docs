@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Get the history of an item
 ms.assetid: 5a29031c-7fb6-42ac-885c-276b59a4b951
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

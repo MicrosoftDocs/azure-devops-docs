@@ -57,7 +57,7 @@ Call the authorization URL and pass your app ID and authorized scopes
 when you want to have a user authorize your app to access their organization.
 Call the access token URL when you want to get an access token to call an Azure DevOps Services REST API.
 
-The settings for each app that you register are available from your profile (`https://app.vssps.visualstudio.com/profile/view`).
+The settings for each app that you register are available from your profile `https://app.vssps.visualstudio.com/profile/view`.
 
 ## Authorize your app
 

@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Branch strategically
 ms.assetid: f586f036-a63f-40f9-8143-732e1d01323f
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

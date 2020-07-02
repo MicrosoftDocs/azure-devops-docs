@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2018'
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to invoke an HTTP API and parse the response.
+Use this task to invoke an HTTP API and parse the response.
 
 ::: moniker range="<= tfs-2018"
 
@@ -69,7 +69,7 @@ For more information about using this task, see [Approvals and gates overview](.
 
 Also see [this task on GitHub](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/InvokeRestApiV1).
 
-## Q&A
+## FAQ
 
 ### What base URLs are used when invoking Azure Management APIs?
 

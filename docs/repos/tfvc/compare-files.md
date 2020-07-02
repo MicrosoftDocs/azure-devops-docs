@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Compare files
 ms.assetid: d16677af-ab40-4e8c-99d3-ae54675dcfb6
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017

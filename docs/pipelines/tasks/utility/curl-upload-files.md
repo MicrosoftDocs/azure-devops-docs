@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
+Use this task to use [cURL](https://curl.haxx.se/) to upload files with supported protocols
 such as FTP, FTPS, SFTP, HTTP, and more.
 
 ## Demands
@@ -47,7 +47,7 @@ curl
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 [!INCLUDE [include](../includes/qa-minimatch.md)]

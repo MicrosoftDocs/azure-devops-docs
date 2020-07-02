@@ -295,6 +295,9 @@ You close a bug once it's verified as fixed. However, you may also close a bug f
 - Obsolete - the bug's feature is no longer in the product
 - Copied to Backlog - a PBI or user story has been opened to track the bug
 
+> [!TIP]   
+> Once a bug has been closed and the fix is actively released in deployments, recommended practice is to never reopen it due to regression. Instead, you should consider opening a new bug and link to the older, closed bug.   
+
 It's always a good idea to describe any additional details for closing a bug in the Discussion field (new web form) or the History field (old web form) to avoid future confusion as to why the bug was closed. 
 
 ## Monitor bug status, assignments, and trends  

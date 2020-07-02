@@ -1,4 +1,4 @@
-﻿---
+---
 title: Define sprints for a project or team
 titleSuffix: Azure Boards 
 description: Define the iterations or sprints to use when assigning work items in Azure DevOps
@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/06/2019
 ---
 
-# Define Iteration Paths (aka sprints) and configure team iterations 
+# Define Iteration Paths and configure team iterations 
 
 [!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
@@ -122,7 +122,7 @@ az boards iteration project list [--depth]
 #### Parameters
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
-- **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, lists iteration paths from the root level. 
+- **path**: Optional. Absolute path of an iteration.  `\Iteration\` must follow after the `\ProjectName`, which distinguishes this from an area path.  Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Iteration\Sprint 1". When not specified, lists iteration paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 
 #### Example
@@ -188,7 +188,7 @@ From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon 
 
 ## Add iterations and set iteration dates
 
-You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
+You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md).  
 
 ::: moniker range="azure-devops"
 
@@ -520,7 +520,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations-preview.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -555,7 +555,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -643,7 +643,7 @@ C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-73
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 

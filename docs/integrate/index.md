@@ -29,7 +29,8 @@ Check out the quick starts to get you started:
 - [.NET client libraries](./concepts/dotnet-client-libraries.md)
 - [Authentication](./get-started/authentication/authentication-guidance.md)
 - [Service hooks](./concepts/service-hooks.md)
-- [REST API Versioning](./concepts/rest-api-versioning.md)
+- [REST API overview](rest-api-overview.md)
+- [REST API versioning](./concepts/rest-api-versioning.md)
 - [Cross-origin resource sharing](./concepts/cross-origin-resource-sharing.md)
 - [Rate limits](./concepts/rate-limits.md)
 - [Deprecation of Work Item Tracking (WIT) & Test Client OM](./concepts/wit-client-om-deprecation.md)
@@ -42,6 +43,7 @@ Check out the quick starts to get you started:
 
 ## How-to guides
 
+- [Get started with REST APIs](how-to/call-rest-api.md)
 - [Authenticate with PATs](../organizations/accounts/use-personal-access-tokens-to-authenticate.md)
 - [Authenticate with OAuth 2.0](./get-started/authentication/oauth.md)
 - [Create service hooks subscriptions programmatically](../service-hooks/create-subscription.md?toc=/azure/devops/integrate/toc.json)

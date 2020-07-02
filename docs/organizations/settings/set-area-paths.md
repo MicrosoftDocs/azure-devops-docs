@@ -122,7 +122,7 @@ az boards area project list [--depth]
 #### Parameters 
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
-- **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level. 
+- **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
 #### Example
@@ -152,7 +152,7 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings > Work > Project configuration**.
 
@@ -183,7 +183,7 @@ You define both areas and iterations from the **Work** pages of the project admi
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horz nav](../../media/settings/open-project-settings-horz.png)
+    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
 
 2. Choose **Work**.  
 

@@ -8,7 +8,7 @@ ms.assetid: 882E6E07-F407-478A-9DCC-9324493CBE11
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/06/2019
+ms.date: 04/20/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -31,7 +31,7 @@ and differences in how you [control organization access with Microsoft accounts 
 * Your organization must be connected to Azure Active Directory. [My organization uses Microsoft accounts only. Can I switch to Azure AD?](faq-azure-access.md#ChangeMSA). Learn how to [connect your organization to Azure AD](connect-organization-to-azure-ad.md).
 * You must be a Project Administrator, Project Collection Administrator, or organization Owner. You must also have at least Basic access, not Stakeholder.
 * To create and manage Azure AD groups, you need Azure AD administrator permissions or have the directory administrator delegate those permissions to you in the [Azure portal](https://portal.azure.com).
-* Be aware that Azure AD changes might take up to 24 hours to be visible in Azure DevOps.
+* Azure AD changes might take up to 1 hour to be visible in Azure DevOps.
 
 ## Add an Azure AD group to an Azure DevOps group
 
@@ -77,7 +77,7 @@ and differences in how you [control organization access with Microsoft accounts 
    ![Add a member to your selected group](media/manage-azure-ad-groups/admin-settings-security-choose-group-add-member.png)
 4. Add groups, and then save your changes.
 
-    ![Bulk add members to a group](media/manage-azure-ad-groups/bulk-add-groups.png)
+    ![Bulk adds members to a group](media/manage-azure-ad-groups/bulk-add-groups.png)
 
     You [invite guests into Azure AD](https://devblogs.microsoft.com/devops/inviting-directory-guests-to-aad-backed-vsts-accounts/) and into your Azure AD-backed organizations, without waiting for them to accept. This invitation allows you to add those guests to your organization, grant access to projects, assign extensions, and more.
 
@@ -88,4 +88,5 @@ and differences in how you [control organization access with Microsoft accounts 
 ## Related articles
 
 - [Restrict organization creation with tenant policy](azure-ad-tenant-policy-restrict-org-creation.md)
-- [Manage conditional access](manage-conditional-access.md)
+- [Manage conditional access](change-application-access-policies.md)
+

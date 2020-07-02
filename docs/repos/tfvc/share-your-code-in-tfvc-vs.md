@@ -5,7 +5,7 @@ description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 08/10/2016

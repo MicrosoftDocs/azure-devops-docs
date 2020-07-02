@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 03/27/2020
+ms.date: 04/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -74,7 +74,33 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 
 ::: moniker-end
 
+> [!NOTE]
+> On macOS, you need to clear the special attribute on the download archive to prevent Gatekeeper protection from displaying for each assembly in the tar file when `./config.sh` is run. The following command clears the extended attribute on the file:
+>
+> ```bash
+> xattr -c vsts-agent-osx-x64-V.v.v.tar.gz  ## replace V.v.v with the version in the filename downloaded.
+> 
+> # then unpack the gzip tar file normally:
+> 
+> tar xvfz vsts-agent-osx-x64-V.v.v.tar.gz
+> ```
+
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
+
+::: moniker range="azure-devops"
+
+## Azure virtual machine scale set agents
+
+> [!NOTE]
+> This feature is currently in preview.
+
+Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+
+You specify a virtual machine scale set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+
+For more information, see [Azure virtual machine scale set agents](scale-set-agents.md).
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -400,7 +426,7 @@ To use this method of authentication, you must configure your TFS server as foll
 
 1. Sign in to the machine where you are running TFS.
 
-1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
@@ -515,7 +541,7 @@ Your pipelines won't run until they can target a compatible agent.
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
 
-## Q & A
+## FAQ
 
 [!INCLUDE [include](includes/v2/qa-agent-version.md)]
 

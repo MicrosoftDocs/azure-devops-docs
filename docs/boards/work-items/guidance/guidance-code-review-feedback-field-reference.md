@@ -22,7 +22,7 @@ You can use the code review and feedback fields to create queries and reports th
 >  If your TFS application server has been upgraded from an earlier version you might need to update your project to get access to these work item types. See [Configure features after an upgrade](../../../reference/configure-features-after-upgrade.md)  
   
 ##  <a name="codereviews"></a> Fields used to track code reviews  
- The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../repos/tfvc/overview.md). A code review response is created for each person who's been requested to provide review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
+ The following fields are used to track code review requests and responses. You can only make a Code Review request against code maintained in a [Team Foundation version control (TFVC) repository](../../../repos/tfvc/index.yml). A code review response is created for each person who's been requested to provide review comments. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   
 
 > [!div class="mx-tdCol2BreakAll"]

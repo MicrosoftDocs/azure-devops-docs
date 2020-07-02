@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a program from the command prompt.
+Use this task to run a program from the command prompt.
 
 ::: moniker range="<= tfs-2018"
 
@@ -151,7 +151,7 @@ On the Build tab of a build pipeline, add these tasks:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

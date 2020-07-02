@@ -79,7 +79,7 @@ If you are tracking dependencies across one or more organizations, you may want 
 
 **A:** No. Cloning doesn't copy work item subtasks.  
 
-Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_backlogs/backlog/Boards/Roadmap%20Items/?workitem=1666194).
+Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194).
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
@@ -89,6 +89,8 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [Work item form one click actions](https://marketplace.visualstudio.com/items?itemName=mohitbagra.witoneclickactions)  
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
+
+[!INCLUDE [temp](includes/faq-copy-clone.md)]
 
 
 ::: moniker range=">= azure-devops-2019"
@@ -128,6 +130,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 ### Q: Can I define sprints and use with my Kanban board? 
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+[!INCLUDE [temp](includes/faq-critical-path.md)]
 
 
 ## Queries 

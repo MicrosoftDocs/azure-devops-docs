@@ -15,7 +15,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to Chef environments by editing environment attributes.
+Use this task to deploy to Chef environments by editing environment attributes.
 
 ::: moniker range="> tfs-2018"
 

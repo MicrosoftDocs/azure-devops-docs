@@ -123,7 +123,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 
 
-## Q&A
+## FAQ
 
 ### Who can use the system?
 

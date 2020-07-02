@@ -3,7 +3,7 @@ title: Azure File Copy task
 description: Azure Pipelines and Team Foundation Server build task to copy files to Microsoft Azure storage blobs or virtual machines (VMs) 
 ms.assetid: 22879225-BB1B-436A-ADF3-6E0B6E5E6EF4
 ms.topic: reference
-ms.custom: seodec18
+ms.custom: seodec18, fasttrack-edit
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/07/2018
@@ -14,8 +14,11 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
-Use this task in a build or release pipeline to copy files to 
+Use this task to copy files to 
 Microsoft Azure storage blobs or virtual machines (VMs).
+
+> [!NOTE]
+> This task is written in PowerShell and thus works **only** when run on Windows agents. If your pipelines require Linux agents and need to copy files to an Azure Storage Account, consider running `az storage blob` commands in the [Azure CLI task](./azure-cli.md) as an alternative.
 
 ::: moniker range="<= tfs-2018"
 
@@ -96,7 +99,7 @@ The task supports authentication based on Azure Active Directory. Authentication
 * [Azure Cloud Service Deployment](azure-cloud-powershell-deployment.md)
 * [Azure Web App Deployment](azure-rm-web-app-deployment.md)
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 #### What are the Azure PowerShell prerequisites for using this task?

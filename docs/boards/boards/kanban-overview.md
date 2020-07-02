@@ -46,7 +46,7 @@ To get started, you'll want to follow the steps outlined below.
 
 ## Product and portfolio Kanban boards 
 
-Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+Each [product and portfolio backlog](../backlogs/backlogs-overview.md) has a corresponding Kanban board. Both backlogs and boards are associated with a team, and display work items based on the area and iteration paths selected by the team as described in [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 Each board supports many Kanban practices such as defining columns and swimlanes, setting Work-in-Progress (WIP) limits, defining the Definition of Done, and more. To get started, see [Kanban quickstart](../boards/kanban-quickstart.md). 
 
@@ -120,7 +120,7 @@ In addition to these team configurations, you can [customize a project](#customi
 
 Once you've configured your Kanban board, you can add work items directly to the board. You can then update the status of work by dragging a card to another column on the Kanban board. You can even change the order of items as you move a card to a new column. For additional information, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md). 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 ::: moniker-end
 

@@ -20,6 +20,9 @@
     href: add-markdown-to-dashboard.md
 - name: Tutorials
   items:
+  - name: Create work tracking charts
+    href: charts.md
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics 
@@ -53,9 +56,6 @@
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
 - name: How-to Guides
   items:
-  - name: Create work tracking charts
-    href: charts.md
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line 
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
   - name: Enable or install Analytics  

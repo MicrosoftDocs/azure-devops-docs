@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.date: 03/13/2020
+ms.date: 06/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -240,15 +240,20 @@ Agents in this mode will accept only one job and then spin down gracefully (usef
 
 ## Run as a systemd service
 
-If your agent is running on these operating systems you can run the agent as a systemd service:
+If your agent is running on these operating systems you can run the agent as a `systemd` service:
 
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
 
-> [!IMPORTANT]
-> If you run your agent as a service, you cannot run the agent service as `root` user.
+We provide an example `./svc.sh` script for you to run and manage your agent as a `systemd` service.
+This script will be generated after you configure the agent.
+We encourage you to review, and if needed, update the script before running it.
 
-We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
+Some important caveats:
+* If you run your agent as a service, you cannot run the agent service as `root` user.
+* Users running [SELinux](https://selinuxproject.org/) have reported difficulties with the provided `svc.sh` script.
+Refer to [this agent issue](https://github.com/microsoft/azure-pipelines-agent/issues/2738) as a starting point.
+SELinux is not an officially supported configuration.
 
 > [!NOTE]
 > If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -363,7 +368,7 @@ It's important to avoid situations in which the agent fails or become unusable b
 
 [!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

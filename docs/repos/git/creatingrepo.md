@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018

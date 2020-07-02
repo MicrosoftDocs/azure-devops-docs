@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
 ms.technology: devops-code-git
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018

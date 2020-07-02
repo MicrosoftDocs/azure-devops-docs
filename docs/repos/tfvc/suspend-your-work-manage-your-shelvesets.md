@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Suspend your work and manage your shelvesets
 ms.assetid: 91b026a7-a590-45d1-81cf-97dfa7acba1d
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
@@ -97,7 +97,7 @@ When you are ready to resume the work, go the **Suspended & Shelved Work** secti
     ![Find shelvesets](media/suspend-your-work-manage-your-shelvesets/IC612902.png)
 
 	> [!TIP]
-	> If you don't know the name of the owner, you can type ***** to list shelvesets for all users.
+	> If you don't know the name of the owner, you can type **\*** to list shelvesets for all users.
 
 4.  A list of shelvesets appears in the **Results** list. You can type a filter to reduce the size of the list.
 

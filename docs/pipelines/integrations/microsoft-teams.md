@@ -4,8 +4,8 @@ ms.topic: conceptual
 title: Azure Pipelines with Microsoft Teams
 description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelines in your channel by subscribing to notifications 
 ms.manager: bijuv
-ms.author: atinb
-author: atinb
+ms.author: divais
+author: divais
 ms.date: 12/17/2019
 monikerRange: 'azure-devops'
 ---
@@ -32,7 +32,7 @@ Visit the App store in Microsoft Teams and search for the Azure Pipelines app. U
 
 ## Connect the Azure Pipelines app to your pipelines
 
-Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands.
+Once the app is installed in your team, you can connect the app to the pipelines you want to monitor. The app asks you to sign in & authenticate to Azure Pipelines before running any commands. Use **Sign in with different email** if your Microsoft Teams and Azure Boards are in different tenants. 
 
 > [!div class="mx-imgBorder"]
 > ![Sign in prompt image ](media/integrations-teams/sign-in-teams.png)
@@ -87,6 +87,9 @@ To manage the subscriptions for a channel, use the following command:
 
 This command lists all of the current subscriptions for the channel and allows you to add/remove subscriptions.
 
+[!NOTE]
+Team administrators aren't able to remove or modify subscriptions created by Project administrators.
+
 > [!div class="mx-imgBorder"]
 > ![Subscriptions list image](media/integrations-teams/subscriptions-list-teams.png)
 
@@ -129,7 +132,7 @@ The app supports all of the checks and approval scenarios present in the Azure P
 
 ## Search and share pipeline information using compose extension
 
-To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline id or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
+To help users search and share information about pipelines, Azure Pipelines app for Microsoft Teams supports compose extension. You can now search for pipelines by pipeline ID or by pipeline name. For compose extension to work, users will have to sign into Azure Pipelines project that they are interested in either by running `@azure pipelines signin` command or by signing into the compose extension directly.
 
 > [!div class="mx-imgBorder"]
 > ![URL unfurling](./media/integrations-teams/compose-extension.png)

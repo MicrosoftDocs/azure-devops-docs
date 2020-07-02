@@ -7,7 +7,7 @@ ms.manager: dastahel
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 02/24/2020
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -15,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
+Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -43,7 +43,7 @@ The following prerequisites must be set up in the target machine(s) for the task
 * **App Service instance**. The task is used to deploy a Web App project or Azure Function project to an existing Azure App Service instance, which must exist before the task runs.
   The App Service instance can be created from the [Azure portal](https://azure.microsoft.com/documentation/videos/azure-app-service-web-apps-with-yochay-kiriaty/)
   and [configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/) there.
-  Alternatively, the [Azure PowerShell task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShell) can be used to run
+  Alternatively, the [Azure PowerShell task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV2) can be used to run
   [AzureRM PowerShell scripts](/powershell/module/azurerm.websites) to provision and configure the Web App.
 
 * **Azure Subscription**. To deploy to Azure, an Azure subscription must be [linked to the pipeline](../../library/connect-to-azure.md).
@@ -289,11 +289,11 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
+    ![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+    ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
