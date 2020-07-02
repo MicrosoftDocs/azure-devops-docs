@@ -83,8 +83,8 @@ and choose the version control to manage your code.
 
     Not sure which to choose? Learn which 
     [process](../../boards/work-items/guidance/choose-process.md) 
-    and version control ([Git](../../repos/git/overview.md) 
-    or [Team Foundation Version Control](../../repos/tfvc/overview.md))
+    and version control ([Git](../../repos/git/index.yml) 
+    or [Team Foundation Version Control](../../repos/tfvc/index.yml))
     work best for you.
 
 7. If you're a new Visual Studio user, you can change your settings here, 

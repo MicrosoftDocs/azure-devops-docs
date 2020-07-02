@@ -163,12 +163,13 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
 
-	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration. 
-
-	- **Planned:** Number of work items defined at the start of the sprint  
-	- **Completed:** Number of work items completed within the sprint start and end dates  
-	- **Completed Late:** Number of work items completed after the end of the sprint date  
-	- **Incomplete:** Number of work items which as yet aren't  completed.  
+	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
+	- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+		> [!TIP]   
+		> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+	- **Completed** - calculated based on the amount of work  assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+	- **Completed Late**  - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.  
+	- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed. 
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 

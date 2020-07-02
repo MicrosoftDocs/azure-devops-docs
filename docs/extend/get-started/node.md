@@ -14,6 +14,8 @@ ms.date: 05/11/2018
 
 Extensions enhance Azure DevOps Services and Team Foundation Server (TFS) by contributing enhancements like new web experiences, dashboard widgets, build tasks, and more. Extensions are developed using standard technologies like HTML, JavaScript, and CSS, are packaged and published to the Visual Studio Marketplace, and can then be installed into an organization.
 
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
+
 This tutorial guides you through creating your first web extension, which includes the following tasks.
 
 > [!div class="checklist"]
@@ -162,7 +164,7 @@ All extensions, including extensions from Microsoft, live under a publisher. Any
 
 3. In the Create Publisher form, enter your name in the publisher name field. The ID field should get set automatically based on your name:
 
-       ![Create publisher](media/create-publisher.png)
+    :::image type="content" source="media/create-publisher.png" alt-text="Create publisher." :::
 
     >[!NOTE]
     >Remember this ID. You need to set it in the manifest file of your extension.

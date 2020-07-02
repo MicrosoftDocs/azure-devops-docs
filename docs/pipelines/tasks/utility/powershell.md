@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
-Use this task in a build or release pipeline to run a PowerShell script.
+Use this task to run a PowerShell script.
 
 ::: moniker range="<= tfs-2018"
 
@@ -143,13 +143,13 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### Where can I learn about PowerShell scripts?
 
-[Scripting with Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)
+[Scripting with Windows PowerShell](/powershell/scripting/overview)
 
 [Microsoft Script Center (the Scripting Guys)](https://technet.microsoft.com/scriptcenter/bb410849.aspx)
 

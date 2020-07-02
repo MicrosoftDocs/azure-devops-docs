@@ -29,7 +29,7 @@ YAML pipelines are a new form of pipelines that have been introduced in Azure De
 | GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 and higher|No|
 | Subversion                |No|Yes|Yes|No|
 
-## Q & A
+## FAQ
 
 ### Why are some cloud version control systems not supported by on-premises installations?
 

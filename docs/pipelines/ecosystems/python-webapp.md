@@ -8,6 +8,7 @@ ms.author: kraigb
 author: kraigb
 ms.date: 04/06/2020
 monikerRange: 'azure-devops'
+ms.custom: tracking-python
 ---
 
 # Use CI/CD to deploy a Python web app to Azure App Service on Linux
@@ -235,7 +236,7 @@ Then we have script-based task that creates a virtual environment and installs d
        archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
        replaceExistingArchive: true
        verbose: # (no value); this input is optional
-   - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+   - publish: $(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip
      displayName: 'Upload package'
      artifact: drop
    ```

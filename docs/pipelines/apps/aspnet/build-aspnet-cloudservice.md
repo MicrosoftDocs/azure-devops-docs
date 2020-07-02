@@ -19,7 +19,7 @@ Here we'll show you how to define your continuous integration (CI) pipeline for 
 For the instructions in this topic, you need an Azure Cloud Service project in Visual Studio.
 
 > [!TIP]
-> If you don't yet have an app but want to try this out, then see the [Q&A below](#new_solution).
+> If you don't yet have an app but want to try this out, then see the [FAQ below](#new_solution).
 
 ## Define your CI build pipeline
 
@@ -50,7 +50,7 @@ After you've run the build, you're ready to create a release pipeline to deploy 
 
 * <a href="../cd/deploy-cloudservice-cloudservice.md"><img src="../../tasks/deploy/media/azure-cloud-service-deployment-icon.png"/> An Azure Cloud Service</a>
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

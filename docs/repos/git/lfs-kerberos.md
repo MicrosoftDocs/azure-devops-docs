@@ -3,7 +3,7 @@ title: Kerberos and Git LFS
 titleSuffix: Azure Repos
 description: Using Git LFS versions older than 2.4.0 with TFS
 ms.technology: devops-code-git 
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018

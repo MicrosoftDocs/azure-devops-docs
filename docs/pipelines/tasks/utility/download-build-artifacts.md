@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download build artifacts.
+Use this task to download build artifacts.
 
 ::: moniker range="> tfs-2018"
 

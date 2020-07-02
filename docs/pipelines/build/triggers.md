@@ -1,7 +1,7 @@
 ---
 title: Triggers in Azure Pipelines
 description: Learn about how you can specify CI, scheduled, gated, and other triggers in Azure Pipelines
-ms.topic: reference
+ms.topic: conceptual
 ms.custom: seodec18
 ms.author: vijayma
 author: vijayma
@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Select the appropriate one from the list below based on the type of your pipeline.
+Use triggers to run a pipeline automatically. Azure Pipelines supports many types of triggers. Based on your pipeline's type, select the appropriate trigger from the list below:
 
 <a name="ci"></a>
 ## Classic build pipelines and YAML pipelines
@@ -49,6 +49,6 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 [Scheduled release triggers](../release/triggers.md#scheduled-triggers) allow you to run a release pipeline according to a schedule.
 
-[Pull request release triggers](../release/triggers.md#prsettrigger) are used to deploy a pull request directly using classic releases.
+[Pull request release triggers](../release/triggers.md) are used to deploy a pull request directly using classic releases.
 
 [Stage triggers in classic release](../release/triggers.md#env-triggers) are used to configure how each stage in a classic release is triggered.

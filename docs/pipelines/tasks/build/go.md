@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to get, build, or test a go application, or run a custom go command.
+Use this task to get, build, or test a go application, or run a custom go command.
 
 ::: moniker range="> tfs-2018"
 
@@ -90,7 +90,7 @@ steps:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

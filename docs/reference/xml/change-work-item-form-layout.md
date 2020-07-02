@@ -3,6 +3,7 @@ title: Change the work item form layout
 titleSuffix: TFS 
 description: Change the work item form layout by exporting the XML file and modifying its contents for Team Foundation Server  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 73869d51-eaa2-4aad-90f4-3081b8d26963
 ms.author: kaelli
 author: KathrynEE

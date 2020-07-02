@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/21/2019
+ms.date: 04/23/2020
 ---
 
 # Set permissions at the project- or collection-level

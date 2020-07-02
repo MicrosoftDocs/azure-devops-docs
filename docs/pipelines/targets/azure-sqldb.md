@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 12/07/2018
+ms.date: 04/27/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -92,6 +92,7 @@ New-AzureRmSqlServerFirewallRule -ResourceGroupName $ResourceGroup -ServerName $
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
 
@@ -99,14 +100,14 @@ $ErrorActionPreference = 'Stop'
 
 function New-AzureSQLServerFirewallRule {
   $agentIP = (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+  New-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 function Update-AzureSQLServerFirewallRule{
   $agentIP= (New-Object net.webclient).downloadstring("http://checkip.dyndns.com") -replace "[^\d\.]"
-  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -RuleName $AzureFirewallName -ServerName $ServerName
+  Set-AzureSqlDatabaseServerFirewallRule -StartIPAddress $agentIp -EndIPAddress $agentIp -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue) -eq $null)
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue) -eq $null)
 {
   New-AzureSQLServerFirewallRule
 }
@@ -138,14 +139,15 @@ Remove-AzureRmSqlServerFirewallRule -ServerName $ServerName -FirewallRuleName $A
 param
 (
   [String] [Parameter(Mandatory = $true)] $ServerName,
+  [String] [Parameter(Mandatory = $true)] $ResourceGroupName,
   [String] $AzureFirewallName = "AzureWebAppFirewall"
 )
 
 $ErrorActionPreference = 'Stop'
 
-If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -RuleName $AzureFirewallName -ErrorAction SilentlyContinue))
+If ((Get-AzureSqlDatabaseServerFirewallRule -ServerName $ServerName -FirewallRuleName $AzureFirewallName -ResourceGroupName $ResourceGroupName -ErrorAction SilentlyContinue))
 {
-  Remove-AzureSqlDatabaseServerFirewallRule -RuleName $AzureFirewallName -ServerName $ServerName
+  Remove-AzureSqlDatabaseServerFirewallRule -FirewallRuleName $AzureFirewallName -ServerName $ServerName -ResourceGroupName $ResourceGroupName
 }
 ```
 

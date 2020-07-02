@@ -5,6 +5,8 @@ ms.topic: include
 
 ## Prerequisites
 
+Boards are automatically created when you create a project or add a team. Each team has access to their own product and portfolio boards as described in [About teams and Agile tools](/azure/devops/organizations/settings/about-teams-and-settings#each-team-gets-their-own-set-of-tools).
+
 ::: moniker range="azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/boards/get-started/sign-up-invite-teammates). 

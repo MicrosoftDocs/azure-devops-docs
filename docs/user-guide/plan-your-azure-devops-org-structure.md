@@ -58,7 +58,7 @@ Take some time to review your work structure and the different business groups a
 
 ## What is a team?
 
-A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md), which help you plan and manage work, and make collaboration easier.
+A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md). These tools help you plan and manage work, and make collaboration easier.
 
 ### Creating a team for each distinct product or feature team
 
@@ -200,7 +200,7 @@ Azure DevOps authenticates users through your Azure AD, so that only users who a
 
 After you create your Azure account, only members of that directory  can access your organization, or you must use [Azure AD business-to-business (B2B) collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations.
 
-Learn more about how to [manage users](../organizations/accounts/manage-users-table-view.md).
+Learn more about how to [manage users](../organizations/accounts/add-organization-users.md).
 
 ### Mapping organizations to business units
 

@@ -3,8 +3,8 @@ title: Define global lists
 titleSuffix: Azure DevOps & TFS
 description: Syntax and usage for the GLOBALLIST elements for defining pick lists used across several projects and work item types  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: b113865c-c68f-48fa-a467-4a94a8445078
-author: kaelli
 ms.author: kaelli
 author: KathrynEE
 ms.date: 05/23/2017

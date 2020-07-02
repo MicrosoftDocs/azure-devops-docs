@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Branch Command
 ms.assetid: 2e075024-9830-4373-a3d4-ac6a194d133f
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

@@ -54,7 +54,7 @@
       "MSHAttr.msprod": "ms.prod:ALM",
       "ms.prodfamily": "ALM",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/vsts-docs",
+      "feedback_github_repo": "MicrosoftDocs/azure-devops-docs",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/21/index.html",
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -121,7 +121,8 @@
         "pipelines/security/**": "jukullam",
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
-        "pipelines/test/**": "sdanie"
+        "pipelines/test/**": "sdanie",
+        "service-hooks/**": "aaronha"
 
       },
       "author": {
@@ -149,7 +150,8 @@
         "pipelines/security/**": "juliakm",
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
-        "pipelines/test/**": "steved0x"
+        "pipelines/test/**": "steved0x",
+        "service-hooks/**": "aaronhallberg"
 
       },
       "ms.technology": {
@@ -188,7 +190,7 @@
     "groups": {
       "all": {
         "dest": "all",
-        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019"
+        "moniker_range": "azure-devops || >= tfs-2013 <= tfs-2018 || >= azure-devops-2019 <= azure-devops-2020"
       }
     }
   }

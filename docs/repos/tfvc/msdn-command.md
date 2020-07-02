@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Display a help topic from the MSDN library using the Msdn Command
 ms.assetid: 6a1c9dfe-dacb-466b-a68e-efe3cd6df3e8
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

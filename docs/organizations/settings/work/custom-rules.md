@@ -2,14 +2,14 @@
 title: Add a custom rule to a work item type
 titleSuffix: Azure DevOps Services
 description: Add a custom rule to a work item type defined for an inherited process and project
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: 17A6AF2C-81E9-4717-971E-2621613AEB31
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 02/24/2020
+ms.date: 06/19/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -35,12 +35,10 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 ## Rule composition
 
-Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run.
+Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
 
 > [!NOTE]  
-> Currently, only 1 condition is supported for state-based rules.
-
-Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
+> Currently, only 1 condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md).
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
 &nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*`
@@ -55,9 +53,17 @@ As an example, you can make a field required based on the value assigned to the 
 > |-------------|----------|  
 > |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions.png)
 
-> [!NOTE]  
-> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
 
+ 
+> 
+> [!NOTE]  
+> The following conditions and actions are only available for Azure DevOps Services. Those that are in Private Preview require  participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
+> - Conditions:
+>     - `A work item state moved from ...` (Private Preview)  
+>     - `Current user is member of group...`  
+>     - `Current user is not member of group ...`   
+> - Action:  
+>     - `Restrict the transition to state...` (Private Preview)  
 ::: moniker-end
 
 
@@ -69,6 +75,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions.png)
 
 ::: moniker-end
+
+
+Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
 
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
@@ -127,17 +136,20 @@ You delete or disable the rule from the actions menu of the rule.
 
 You can add rules to work item types to support these restriction requests:
 
-- Restrict who can create or modify a work item
-- Restrict who can create a work item types 
 - Restrict who can modify a specific field for a work item type
 - Hide field from the form
+
+<!--
+- Restrict who can create or modify a work item
+- Restrict who can create a work item types 
 
 For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
 
 > [!div class="mx-imgBorder"]  
 > ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
 
-For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule.  
+For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule. 
+--> 
 
 > [!NOTE]   
 > Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 

@@ -184,14 +184,33 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker-end
 
+::: moniker range="azure-devops"
+
+### Delete a run
+
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. 
+
+> [!NOTE]
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+
+::: moniker-end
+
+
 <h2 id="release">Release retention</h2>
 
 The release retention policies for a release pipeline determine how long a release
-and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
+and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. 
+The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
 recent three will be retained indefinitely - irrespective of the number of
 days specified. However, you can manually delete these releases when you no longer require them.
 
+
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
+
+::: moniker range="azure-devops"
+The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section. 
+::: moniker-end
+
 ::: moniker range="<= tfs-2018"
 You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
 ::: moniker-end
@@ -267,7 +286,7 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
  
 ::: moniker-end
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 description: Describes the different integration options you can use to connect to Power BI to access Analytics for Azure DevOps
 ms.assetid: 8026A5ED-CD58-417A-913F-72A20272E7DC
 ms.technology: devops-analytics
-ms.author: stansw
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
@@ -106,5 +105,5 @@ For specific examples, see one of the following articles:
 
 - [Extend Analytics with OData](../extend-analytics/quick-ref.md)    
 - [Dashboards, charts, reports & widgets](../dashboards/overview.md)  
-- [Power BI Desktop](/power-bi/desktop-get-the-desktop) 
+- [Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop) 
 - [Power BI documentation](/power-bi)  

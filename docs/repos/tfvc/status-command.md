@@ -4,7 +4,7 @@ titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
 ms.technology: devops-code-tfvc
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -36,7 +36,7 @@ tf stat[us] itemspec [/collection:TeamProjectCollectionUrl]
 <tr><th><p><strong>Argument</strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><strong>/collection</strong>: <em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
+    <td><p>When you use the <strong>/workspace</strong> option, specifies the URL of the project collection that contains the workspace that contains the pending changes. For example: `http://myserver:8080/tfs/DefaultCollection`. If not specified, by default the project collection is presumed to be the one that contains the workspace that maps the current directory.</p><p>Ignored if you do not use the <strong>/workspace</strong> option.</p><table><thead>
 <tr><th><strong>Note</strong></th></tr></thead><tbody>
 <tr>
 	<td><p>See Remarks, below, for the limitations of this option.</p></td></tr></tbody></table></td></tr>

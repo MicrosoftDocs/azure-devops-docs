@@ -14,7 +14,7 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to create or update a Website, Web App, Virtual Directory, or Application Pool.
+Use this task to create or update a Website, Web App, Virtual Directory, or Application Pool.
 
 ::: moniker range="> tfs-2018"
 

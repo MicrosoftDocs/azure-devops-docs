@@ -9,7 +9,7 @@ ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
 monikerRange: '> azure-devops-2019'
-ms.date: 12/16/2019
+ms.date: 06/22/2020
 ---
 
 # Requirements tracking rollup sample report
@@ -166,6 +166,13 @@ iif(TestSuite/RequirementWorkItem/Parent ne null, TestSuite/RequirementWorkItem/
 ```
 
 ***
+
+  
+
+[!INCLUDE [temp](includes/note-test-suites-requirements.md)]  
+
+
+
 
 ### Query for status of bugs linked to the requirements
 

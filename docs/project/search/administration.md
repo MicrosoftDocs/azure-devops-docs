@@ -4,8 +4,8 @@ description: Setup notes and administration links for Microsoft Code, Wiki & Wor
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
@@ -124,7 +124,7 @@ For acceptable performance in multi-user scenarios, consider the
 following recommendations:
 
 * Fewer than 250 users with Search colocated on the server (typically used for demonstration and trial purposes):
-  - Quad core processor, 8 GB (minimum) RAM
+  - Quad core processor, 16 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
 

@@ -49,28 +49,24 @@ For on-premises deployments, AD is recommended when managing a large group of us
 
 Other applications and services can integrate with services and resources in Azure DevOps. To access your account without asking for user credentials multiple times, apps can use the following  authentication methods.
 
-*    [Alternate credentials](../../repos/git/auth-overview.md) 
+- [Alternate credentials](../../repos/git/auth-overview.md) 
 as a single set of credentials across all tools that don't have 
 plug-in, extension, or native support. For example, 
 you can use basic authentication to access 
 [REST APIs for Azure DevOps](../../integrate/get-started/rest/basics.md), 
 but you must turn on alternate credentials.
 
-*    [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
-to generate tokens for: 
+- [Personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) to generate tokens for:  
+	- Accessing specific resources or activities, like builds or work items
+	- Clients like Xcode and Nuget that require usernames and passwords as basic credentials and don't support Microsoft account and Azure Active Directory features like multi-factor authentication 
+	- Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
 
-    *    Accessing specific resources or activities, like builds or work items
-    *    Clients like Xcode and Nuget that require usernames and passwords 
-        as basic credentials and don't support Microsoft account 
-        and Azure Active Directory features like multi-factor authentication 
-    *    Accessing [Azure DevOps REST APIs](../../integrate/get-started/rest/basics.md)
-
-*    [OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
+- [OAuth](/azure/devops/integrate/get-started/Authentication/oauth) 
 to generate tokens for accessing [REST APIs](/azure/devops/integrate/get-started/rest/basics). The [Accounts](/rest/api/azure/devops/account) 
 and [Profiles](/rest/api/azure/devops/profile) 
 APIs support only OAuth. 
 
-*    [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+- [SSH authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
 to generate encryption keys when you use Linux, macOS, 
 or Windows running [Git for Windows](https://www.git-scm.com/download/win) 
 and can't use 

@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to build, test, package, or publish a dotnet application, or to run a custom dotnet command. For package commands, this task supports NuGet.org and authenticated feeds like Package Management and MyGet.
+Use this task to build, test, package, or publish a dotnet application, or to run a custom dotnet command. For package commands, this task supports NuGet.org and authenticated feeds like Package Management and MyGet.
 
 If your .NET Core or .NET Standard build depends on NuGet packages, make sure to add two copies of this step: one with the `restore` command and one with the `build` command.
 
@@ -60,7 +60,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 <tr><td><code>searchPatternPack</code><br/>Path to csproj or nuspec file(s) to pack</td><td>Pattern to search for csproj or nuspec files to pack. You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with <code>!</code>. <strong>Example:</strong> <code>&ast;&ast;/&ast;.csproj;!&ast;&ast;/&ast;.Tests.csproj</code><br/>Argument aliases: <code>packagesToPack</code></td></tr>
 <tr><td><code>configurationToPack</code><br/>Configuration to Package</td><td>When using a csproj file this specifies the configuration to package.<br/>Argument aliases: <code>configuration</code></td></tr>
 <tr><td><code>outputDir</code><br/>Package Folder</td><td>Folder where packages will be created. If empty, packages will be created alongside the csproj file.<br/>Argument aliases: <code>packDirectory</code></td></tr>
-<tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> command line parameter.</td></tr>
+<tr><td><code>nobuild</code><br/>Do not build</td><td>Don&#39;t build the project before packing. Corresponds to the <code>--no-build</code> parameter of the `build` command.</td></tr>
 <tr><td><code>includesymbols</code><br/>Include Symbols</td><td>Additionally creates symbol NuGet packages. Corresponds to the <code>--include-symbols</code> command line parameter.</td></tr>
 <tr><td><code>includesource</code><br/>Include Source</td><td>Includes source code in the package. Corresponds to the <code>--include-source</code> command line parameter.</td></tr>
 <tr><td><code>publishWebProjects</code><br/>Publish Web Projects</td><td>If true, the task will try to find the web projects in the repository and run the publish command on them. Web projects are identified by presence of either a web.config file or wwwroot folder in the directory.</td></tr>
@@ -164,7 +164,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
 # Publish package to an external endpoint with a stored NuGet config file and stored credentials.
 - task: DotNetCoreCLI@2
   inputs:
-    command: 'pack'
+    command: 'publish'
     selectOrConfig: 'config'
     nugetConfigPath: '$(System.DefaultWorkingDirectory)/NuGet.config'
     externalEndpoints: $(externalFeedCredential)
@@ -180,7 +180,7 @@ If you choose &#39;Use the build number&#39;, this will use the build number to 
     command: 'test'
 ```
 
-## Q & A
+## FAQ
 
 ### Why is my build, publish, or test step failing to restore packages?
 

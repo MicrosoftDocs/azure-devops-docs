@@ -89,7 +89,7 @@ Also, if you haven't yet set up your build system,
    **Deployment Step** to **Automated** for this stage, the release will not 
    be started. You must mark these steps as automated in the release path.
 
-## Q & A
+## FAQ
 
 <a name="blogposts"></a>
 ### Q: Where can I find out about other release scenarios?

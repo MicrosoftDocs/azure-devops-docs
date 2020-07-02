@@ -2,7 +2,7 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
 ms.author: kaelli
@@ -37,7 +37,7 @@ When defining work items or running queries, the following operational limits ap
 | Query length | 32,000 characters |
 
 
-If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ The following table lists the maximum number of objects that you can define for 
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
-| Number of processes you can have in an organization |          64 |         64 |
+| Number of processes you can have in an organization |          128|         64 |
 | Work item types defined for a process               |          64 |         64 |
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |

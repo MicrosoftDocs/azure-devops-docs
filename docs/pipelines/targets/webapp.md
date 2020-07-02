@@ -7,7 +7,7 @@ ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 02/10/2020
+ms.date: 04/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -94,10 +94,14 @@ add the following snippet to your azure-pipelines.yml file:
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of web app>'
-    package: $(System.ArtifactsDirectory)/**/*.zip    
+    package: $(System.DefaultWorkingDirectory)/**/*.zip    
 ```
 
-The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.ArtifactsDirectory)` folder on your agent.
+* **azureSubscription**: your Azure subscription.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+
+The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.DefaultWorkingDirectory)` folder on your agent.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -114,9 +118,14 @@ If you're building a [Java app](../apps/java/build-gradle.md), use the following
     package: '$(System.DefaultWorkingDirectory)/**/*.war'
 ```
 
+* **azureSubscription**: your Azure subscription.
+* **appType**: your Web App type.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+
 The snippet assumes that the build steps in your YAML file produce the .war archive in one of the folders in your source code folder structure;
-for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.ArtifactsDirectory)`
-instead, change the last line in the snippet to `$(System.ArtifactsDirectory)/**/*.war`.
+for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.DefaultWorkingDirectory)`
+instead, change the last line in the snippet to `$(System.DefaultWorkingDirectory)/**/*.war`.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -134,6 +143,11 @@ the iisnode handler on the Azure Web App:
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
 ```
+
+* **azureSubscription**: your Azure subscription.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+* **customWebConfig**: generate web.config parameters for Python, Node.js, Go and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -155,7 +169,7 @@ This task is automatically added to the release pipeline when you select one of 
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
 When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
-it's automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
+it's automatically downloaded and placed into the `$(System.DefaultWorkingDirectory)` folder on the agent as part of the release.
 This is where the task picks up the web package for deployment.
 
 * * *
@@ -207,6 +221,9 @@ By default, your deployment happens to the root application in the Azure Web App
   inputs:
     VirtualApplication: '<name of virtual application>'
 ```
+
+* **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
+](https://azure.microsoft.com/documentation/articles/web-sites-configure/) for more details.
 
 ::: moniker-end
 
