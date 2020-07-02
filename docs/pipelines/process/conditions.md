@@ -232,6 +232,56 @@ jobs:
   steps:
   - script: echo Job B ran
 ```
+### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
+
+You are experiencing this issue because the condition configured in the stage doesn't include a job status check function, so what you need to do is to add a job status check function to the condition so If you cancel a job while it's in the queue, then the entire job is canceled, including all the other stages with this functions configured. (see [Job status functions](expressions.md#job-status-functions)).
+
+```yml
+
+stages:
+- stage: Stage1
+  displayName: Stage 1
+  dependsOn: []
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables
+      inputs:
+        script: >
+          printenv
+
+- stage: Stage2
+  displayName: stage 2
+  dependsOn: Stage1
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/master')
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables 2
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables 2
+      inputs:
+        script: >
+          printenv
+          
+- stage: Stage3
+  displayName: stage 3
+  dependsOn: Stage2
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables 3
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables 3
+      inputs:
+        script: >
+          printenv
+
+```
 
 <!-- ENDSECTION -->
 
