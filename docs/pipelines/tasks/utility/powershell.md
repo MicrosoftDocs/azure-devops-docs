@@ -129,15 +129,38 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
 
 > [!TIP]
-> 
+>
 > If you want this error to fail the build, then add this line:
 >  ```ps
 > exit 1
-> ``` 
+> ```
 
 ### ApplyVersionToAssemblies.ps1
 
 [Use a script to customize your build pipeline](../../scripts/powershell.md)
+
+### Call powershell script with multiple arguments
+
+Create powershell script `test2.ps1`
+
+```ps
+param ($input1, $input2)
+Write-Host "$input1 $input2"
+```
+
+In your YAML pipeline call:
+
+```yaml
+- task: PowerShell@2
+  inputs:
+    targetType: 'filePath'
+    filePath: $(System.DefaultWorkingDirectory)\test2.ps1
+    arguments: > # Use this to avoid newline characters in multiline string
+      -input1 "Hello"
+      -input2 "World"
+  displayName: 'Print Hello World'
+```
+
 
 ## Open source
 
