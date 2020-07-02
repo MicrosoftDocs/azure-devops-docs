@@ -206,6 +206,89 @@ Here are all the commands supported by the Azure Pipelines app:
 > * Deployment approvals which have applied the **Revalidate identity of approver before completing the approval** policy are not supported
 > * 'Third party application access via OAuth' must be enabled to receive notifications for the organization in Azure DevOps (Organization Settings -> Security -> Policies)
 
+ ## Multi-tenant support
+
+In your organization if you are using a different email or tenant for Microsoft Teams and Azure DevOps, perform the following steps to sign in and connect based on your use case. 
+ 
+ <table>
+  <tr>
+   <td>
+       <strong>Case</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Microsoft Teams</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Azure DevOps</strong>
+   </td>
+   <td>
+        <strong>Steps to take </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        1
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        Sign in using <strong>Sign in</strong> button.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        2
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 2)
+   </td>
+   <td>
+    <ul>
+	<li>Sign in the Azure DevOps account/li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com//li> 
+	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        3
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+        <u>email2@pqr.com</u> (tenant 2) 
+   </td>
+   <td>
+        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        4
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+        <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
+   </td>
+   <td>
+    <ul>
+    <li>This scenario is not supported today</li>  
+	</ul>
+   </td>
+  </tr>
+</table>
+
 ## Troubleshooting
 
 If you are experiencing the following errors when using the
