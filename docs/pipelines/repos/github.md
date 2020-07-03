@@ -17,9 +17,9 @@ Azure Pipelines can automatically build and validate every pull request and comm
 
 If you're new to Azure Pipelines integration with GitHub, follow the steps in [Create your first pipeline](../create-first-pipeline.md) to get your first pipeline working with a GitHub repository, and then come back to this article to learn more about configuring and customizing the integration between GitHub and Azure Pipelines.
 
-## Map organizations and users
+## Organizations and users
 
-GitHub and Azure Pipelines are two independent services that integrate well together. Each of them have their own organization and user management. This section explains how to replicate the organization and users from GitHub to Azure Pipelines.
+GitHub and Azure Pipelines are two independent services that integrate well together. Each of them have their own organization and user management. This section makes a recommendation on how to replicate the organization and users from GitHub to Azure Pipelines.
 
 ### Organizations
 
@@ -37,7 +37,7 @@ Azure DevOps can reflect your GitHub structure with:
 
 ![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
-To set up this mapping between GitHub and Azure DevOps:
+To set up an idential structure in Azure DevOps:
 
 1. Create an Azure DevOps organization named after your GitHub organization or user account. It will have a URL like `https://dev.azure.com/your-organization`.
 1. In the Azure DevOps organization, create projects named after your repositories. They will have URLs like `https://dev.azure.com/your-organization/your-repository`.
@@ -52,17 +52,15 @@ Following this pattern, your GitHub repositories and Azure DevOps projects will 
 
 ### Users
 
-Your GitHub users do not automatically get access to Azure Pipelines. You must add your GitHub users explicitly to Azure Pipelines.
+Your GitHub users do not automatically get access to Azure Pipelines. Azure Pipelines is unaware of GitHub identities. For this reason, there is no way to configure Azure Pipelines to automatically notifiy users of a build failure or a PR validation failure using their GitHub identity and email address. You must explicitly create new users in Azure Pipelines to replicate GitHub users. Once you create new users, you can configure their permissions in Azure DevOps to reflect their permissions in GitHub. You can also configure notifications in Azure DevOps using their Azure DevOps identity.
 
-GitHub permissions on GitHub organizations, user accounts, and repositories can be reflected in Azure DevOps.
-
-#### Map GitHub organization roles
+#### GitHub organization roles
 
 GitHub organization member roles are found at `https://github.com/orgs/your-organization/people` (replace `your-organization`).
 
 Azure DevOps organization member permissions are found at `https://dev.azure.com/your-organization/_settings/security` (replace `your-organization`).
 
-GitHub organization roles map to Azure DevOps organization permissions as follows.
+Roles in a GitHub organization and equivalent roles in an Azure DevOps organization are shown below.
 
 | GitHub organization role | Azure DevOps organization equivalent          |
 | ------------------------ | --------------------------------------------- |
@@ -70,7 +68,7 @@ GitHub organization roles map to Azure DevOps organization permissions as follow
 | Billing manager          | Member of `Project Collection Administrators` |
 | Member                   | Member of `Project Collection Valid Users`. By default, this group lacks permission to create new projects. To change this, set the group's `Create new projects` permission to `Allow`, or create a new group with permissions you need. |
 
-#### Map GitHub user account roles
+#### GitHub user account roles
 
 A GitHub user account has one role, which is ownership of the account.
 
@@ -82,13 +80,13 @@ The GitHub user account role maps to Azure DevOps organization permissions as fo
 | ------------------------ | --------------------------------------------- |
 | Owner                    | Member of `Project Collection Administrators` |
 
-#### Map GitHub repository permissions
+#### GitHub repository permissions
 
 GitHub repository permissions are found at `https://github.com/your-organization/your-repository/settings/collaboration` (replace `your-organization` and `your-repository`).
 
 Azure DevOps project permissions are found at `https://dev.azure.com/your-organization/your-project/_settings/security` (replace `your-organization` and `your-project`).
 
-GitHub repository permissions map to Azure DevOps project permissions as follows.
+Equivalent permissions between GitHub repositories and Azure DevOps projects are as follows.
 
 | GitHub repository permission | Azure DevOps project equivalent    |
 | ---------------------------- | ---------------------------------- |
@@ -107,7 +105,7 @@ To grant permissions to users or teams for specific pipelines in an Azure DevOps
 1. From the '**...**' context menu, select **Security**.
 1. Click **Add...** to add a specific user, team, or group and customize their permissions for the pipeline.
 
-## Choose a repository to build
+## Access to GitHub repositories
 
 # [YAML](#tab/yaml/)
 
@@ -384,7 +382,7 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
-### Accepting contributions from external sources
+### Contributions from external sources
 
 If your GitHub repository is open source, you can make your Azure DevOps project [public](../../organizations/public/create-public-project.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
 
@@ -402,7 +400,7 @@ Be aware of the following access restrictions when you're running pipelines in A
 * **Cross-project access:** All pipelines in an Azure DevOps public project run with an access token restricted to the project. Pipelines in a public project can access resources such as build artifacts or test results only within the project and not in other projects of the Azure DevOps organization.
 * **Azure Artifacts packages:** If your pipelines need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
 
-#### Validate contributions from forks
+#### Contributions from forks
 
 > [!IMPORTANT]
 > These settings affect the security of your pipeline.
@@ -460,6 +458,14 @@ To enable this, in Azure Pipelines, select the **Triggers** tab in your pipeline
 If you have the necessary repository permissions, but pipelines aren't getting triggered by your comments, make sure that your membership is **public** in the repository's organization, or directly add yourself as a repository collaborator. Azure Pipelines cannot see private organization members unless they are direct collaborators or belong to a team that is a direct collaborator. You can change your GitHub organization membership from private to public here (replace `Your-Organization` with your organization name): `https://github.com/orgs/Your-Organization/people`.
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
+
+## Pre-defined variables
+
+When you build a GitHub repository, most of the [pre-defined variables](../build/variables.md) are available to your jobs. However, since Azure Pipelines does not recognize the identity of a user making an update in GitHub, the following variables are set to system identity instead of user's identity:
+
+* `Build.RequestedFor`
+* `Build.RequestedForId`
+* `Build.RequestedForEmail`
 
 ## GitHub Checks
 
