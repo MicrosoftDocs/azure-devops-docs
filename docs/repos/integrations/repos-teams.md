@@ -257,8 +257,8 @@ In your organization if you are using a different email or tenant for Microsoft 
    </td>
    <td>
     <ul>
-	<li>Sign in the Azure DevOps account/li> 
-	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com//li> 
+	<li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com/</li> 
 	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
     </ul>
    </td>
@@ -285,12 +285,10 @@ In your organization if you are using a different email or tenant for Microsoft 
         <u>email1@abc.com</u> (tenant 1) 
    </td>
    <td>
-        <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
+        <u>email2@pqr.com</u> (non default tenant 3)
    </td>
    <td>
-    <ul>
-    <li>This scenario is not supported today</li>  
-	</ul>
+    This scenario is not supported today.
    </td>
   </tr>
 </table>
