@@ -6,7 +6,7 @@ description: Connect Azure Pipelines to Microsoft Teams and monitor your pipelin
 ms.manager: bijuv
 ms.author: divais
 author: divais
-ms.date: 12/17/2019
+ms.date: 07/01/2020
 monikerRange: 'azure-devops'
 ---
  
@@ -153,17 +153,15 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 ## Remove subscriptions and pipelines from a channel
 
-If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
+If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.  
+```
+@azure pipelines unsubscribe all [project url]
+```
 
-	```
-	@azure pipelines unsubscribe all [project url]
-	```
-
-	For example:
-
-	```
-	@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
-	```
+For example:  
+```
+@azure pipelines unsubscribe all https://dev.azure.com/myorg/myproject
+```
 
 This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
 
@@ -251,8 +249,8 @@ In your organization if you are using a different email or tenant for Microsoft 
    </td>
    <td>
     <ul>
-	<li>Sign in the Azure DevOps account/li> 
-	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com//li> 
+	<li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com/</li> 
 	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
     </ul>
    </td>
@@ -279,12 +277,10 @@ In your organization if you are using a different email or tenant for Microsoft 
         <u>email1@abc.com</u> (tenant 1) 
    </td>
    <td>
-        <span style="text-decoration:underline;">email2@pqr.com(non default tenant 3)</span>
+	   <u>email2@pqr.com</u> (non default tenant 3) 
    </td>
    <td>
-    <ul>
-    <li>This scenario is not supported today</li>  
-	</ul>
+    This scenario is not supported today
    </td>
   </tr>
 </table>
