@@ -5,7 +5,7 @@ ms.topic: reference
 ms.assetid: 96a52d0d-5e01-4b30-818d-1893387522cd
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/03/2020
 monikerRange: azure-devops
 ---
 
@@ -382,6 +382,26 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
+### Protected branches
+
+You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
+
+To configure mandatory validation builds for a GitHub repository, you must be its owner, a collaborator with the Admin role, or a GitHub organization member with the Write role.
+
+1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
+
+2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+
+   For the status check, select the name of your pipeline in the **Status checks** list.
+
+   ![GitHub pipeline status check](media/github/github-pipeline-status-check.png)
+
+>[!IMPORTANT]
+>If your pipeline doesn't show up in this list, please ensure the following:
+>
+>* You are using [GitHub app authentication](#github-app-authentication)
+>* Your pipeline has run at least once in the last week
+
 ### Contributions from external sources
 
 If your GitHub repository is open source, you can make your Azure DevOps project [public](../../organizations/public/create-public-project.md) so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests.
@@ -467,27 +487,32 @@ When you build a GitHub repository, most of the [pre-defined variables](../build
 * `Build.RequestedForId`
 * `Build.RequestedForEmail`
 
-## GitHub Checks
+## Status updates
 
-If you're using [GitHub app authentication](#github-app-authentication) for your Azure Pipelines integration with GitHub, you can use your pipeline's build results with [GitHub Checks](https://developer.github.com/v3/checks/) to help protect your branches.
+There are two types of statuses that Azure Pipelines posts back to GitHub - basic statuses and GitHub Check Runs. GitHub Checks functionality is only available with GitHub Apps.
 
-You can run a validation build with each commit or pull request that targets a branch, and even prevent pull requests from merging until a validation build succeeds.
+Pipeline statuses show up in various places in the GitHub UI. 
 
-To configure mandatory validation builds for a GitHub repository, you must be its owner, a collaborator with the Admin role, or a GitHub organization member with the Write role.
+* For PRs, they are displayed on the PR conversations tab.
+* For individual commits, they are displayed when hovering over the status mark after the commit time on the repo's commits tab.
 
-1. First, create a pipeline for the repository and build it at least once so that its status is posted to GitHub, thereby making GitHub aware of the pipeline's name.
+### PAT or OAuth GitHub connections
 
-2. Next, follow GitHub's documentation for [configuring protected branches](https://help.github.com/articles/configuring-protected-branches/) in the repository's settings.
+For pipelines using [PAT](#personal-access-token-pat-authentication) or [OAuth](#oauth-authentication) GitHub connections, statuses are posted back to the commit/PR that triggered the run. The [GitHub status API](https://developer.github.com/v3/repos/statuses/) is used to post such updates. These statuses contain limited information: pipeline status (failed, success, etc), URL to link back to the build pipeline, and a brief description of the status.
 
-   For the status check, select the name of your pipeline in the **Status checks** list.
+Statuses for PAT or OAuth GitHub connections are only sent at the run level. In other words, you can have a single status updated for an entire run. If you have multiple jobs in a run, you cannot post a separate status for each job. However, multiple pipelines can post separate statuses to the same commit.
 
-   ![GitHub pipeline status check](media/github/github-pipeline-status-check.png)
+### GitHub Checks
 
->[!IMPORTANT]
->If your pipeline doesn't show up in this list, please ensure the following:
->
->* You are using [GitHub app authentication](#github-app-authentication)
->* Your pipeline has run at least once in the last week
+For pipelines set up using the Azure Pipelines [GitHub app]((#github-app-authentication)), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status as well as test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
+
+For every pipeline using the GitHub App, Checks are posted back for the overall run as well as each job in that run.
+
+GitHub allows three options when one or more Check Runs fail for a PR/commit. You can choose to "re-run" the individual Check, re-run all the failing Checks on that PR/commit, or re-run all the Checks, whether they succeeded initially or not.
+
+![GitHub checks rerun](media/github/github-checks-rerun.png)
+
+Clicking on the "Re-run" link next to the Check Run name will result in Azure Pipelines retrying the run that generated the Check Run. The resultant run will have the same run number and will use the same version of the source code, configuration, and YAML file as the initial build. Only those jobs that failed in the initial run and any dependent downstream jobs will be run again. Clicking on the "Re-run all failing checks" link will have the same effect. This is the same behavior as clicking "Re-try run" in the Azure Pipelines UI. Clicking on "Re-run all checks" will result in a new run, with a new run number and will pick up changes in the configuration or YAML file.
 
 ## Pricing
 
@@ -516,6 +541,10 @@ Depending on the authentication type and ownership of the repository, specific p
 [!INCLUDE [qa](includes/qa3.md)]
 
 ### How do I know the type of GitHub connection I'm using for my pipeline?
+
+If a repo is set up to use the GitHub app, then the statuses on PRs and commits will be Check Runs. If the repo has Azure pipelines set up with OAuth or PAT connections, the statuses will be the "old" style of statuses. A quick way to determine if the statuses are Check Runs or simple statuses is to look at the "conversation" tab on a GitHub PR. If the "Details" link redirects to the Checks tab, it is a Check Run and the repo is using the app. If the link redirects to the Azure DevOps pipeline, then the status is an "old style" status and the repo is not using the Azure DevOps app. Or you can simply check if the status shows up in the Checks tab of the PR, if it does, then it is a Check Run. Old style statuses will never appear in the Checks tab.
+
+You can also determine the type of connection by inspecting the pipeline in Azure Pipelines UI.
 
 - Open the editor for the pipeline.
 - Select **Triggers** to open the classic editor for the pipeline. Then, select **YAML** tab and then the **Get sources** step.
