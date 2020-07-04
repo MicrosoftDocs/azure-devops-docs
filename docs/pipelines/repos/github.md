@@ -45,7 +45,7 @@ To set up an idential structure in Azure DevOps:
 
 Following this pattern, your GitHub repositories and Azure DevOps projects will have matching URL paths. For example:
 
-|              |                                        |
+| Service      | URL                                    |
 |--------------|----------------------------------------|
 | GitHub       | `https://github.com/python/cpython`    |
 | Azure DevOps | `https://dev.azure.com/python/cpython` |
@@ -409,14 +409,14 @@ If your GitHub repository is open source, you can make your Azure DevOps project
 You should keep in mind the following considerations when using Azure Pipelines in a public project when accepting contributions from external sources.
 
 * [Access restrictions](#access-restrictions)
-* [Validate contributions from forks](#validate-contributions-from-forks)
+* [Validate contributions from forks](#contributions-from-forks)
 * [Important security considerations](#important-security-considerations)
 
 #### Access restrictions
 
 Be aware of the following access restrictions when you're running pipelines in Azure DevOps public projects:
 
-* **Secrets:** By default, secrets associated with your pipeline are not made available to pull request validations of forks. See [Validate contributions from forks](#validate-contributions-from-forks).
+* **Secrets:** By default, secrets associated with your pipeline are not made available to pull request validations of forks. See [Validate contributions from forks](#contributions-from-forks).
 * **Cross-project access:** All pipelines in an Azure DevOps public project run with an access token restricted to the project. Pipelines in a public project can access resources such as build artifacts or test results only within the project and not in other projects of the Azure DevOps organization.
 * **Azure Artifacts packages:** If your pipelines need access to packages from Azure Artifacts, you must explicitly grant permission to the **Project Build Service** account to access the package feeds.
 
@@ -504,7 +504,7 @@ Statuses for PAT or OAuth GitHub connections are only sent at the run level. In 
 
 ### GitHub Checks
 
-For pipelines set up using the Azure Pipelines [GitHub app]((#github-app-authentication)), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status as well as test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
+For pipelines set up using the Azure Pipelines [GitHub app](#github-app-authentication)), the status is posted back in the form of GitHub Checks. GitHub Checks allow for sending detailed information about the pipeline status as well as test, code coverage, and errors. The GitHub Checks API can be found [here](https://developer.github.com/v3/checks/).
 
 For every pipeline using the GitHub App, Checks are posted back for the overall run as well as each job in that run.
 
