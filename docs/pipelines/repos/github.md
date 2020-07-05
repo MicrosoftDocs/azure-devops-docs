@@ -514,16 +514,6 @@ GitHub allows three options when one or more Check Runs fail for a PR/commit. Yo
 
 Clicking on the "Re-run" link next to the Check Run name will result in Azure Pipelines retrying the run that generated the Check Run. The resultant run will have the same run number and will use the same version of the source code, configuration, and YAML file as the initial build. Only those jobs that failed in the initial run and any dependent downstream jobs will be run again. Clicking on the "Re-run all failing checks" link will have the same effect. This is the same behavior as clicking "Re-try run" in the Azure Pipelines UI. Clicking on "Re-run all checks" will result in a new run, with a new run number and will pick up changes in the configuration or YAML file.
 
-## Pricing
-
-Azure Pipelines is free for GitHub repositories, with multiple free offerings available depending on whether your GitHub repository and project are public or private.
-
-If your GitHub repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests. If both your GitHub repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-If either your GitHub repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs.
-
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
-
 ## FAQ
 
 ### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?

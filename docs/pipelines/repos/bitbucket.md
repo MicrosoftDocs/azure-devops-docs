@@ -16,7 +16,7 @@ Azure Pipelines can automatically build and validate every pull request and comm
 
 BitBucket and Azure Pipelines are two independent services that integrate well together. Your BitBucket Cloud users do not automatically get access to Azure Pipelines. You must add them explicitly to Azure Pipelines.
 
-## Choose a repository to build
+## Access to BitBucket repositories
 
 # [YAML](#tab/yaml/)
 
@@ -201,16 +201,6 @@ Select a branch name from the drop-down menu and select **Include** or **Exclude
 For included branches, a build will be triggered on each push to a pull request targeting that branch.
 
 ---
-
-## Pricing
-
-Azure Pipelines is free for BitBucket Cloud repositories, with multiple free offerings available depending on whether your BitBucket repository is public or private.
-
-If your BitBucket repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests. If both your BitBucket repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-If either your BitBucket repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs.
-
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
 
 ## FAQ
 
