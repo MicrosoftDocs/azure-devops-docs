@@ -21,17 +21,10 @@ YAML pipelines are a new form of pipelines that have been introduced in Azure De
 
 | Repository type | Azure Pipelines (YAML) | Azure Pipelines (classic editor) | Azure DevOps Server 2019, TFS 2018, TFS 2017, TFS 2015.4 | TFS 2015 RTM |
 |-|-|-|-|-|
-| [Azure Repos Git](azure-repos-git.md)  |Yes|Yes|Yes|Yes|
-| [Azure Repos TFVC](tfvc.md)            |No|Yes|Yes|Yes|
-| [Bitbucket Cloud](bitbucket.md)        |Yes|Yes|No|No|
-| Other Git (generic)                    |No|Yes|Yes|Yes|
-| [GitHub](github.md)                    |Yes|Yes|No|No|
-| GitHub Enterprise Server  |Yes|Yes|TFS 2018.2 and higher|No|
+| [Azure Repos Git](azure-repos-git.md)  |Yes|Yes|Yes|Yes
+| [Azure Repos TFVC](tfvc.md)            |No|Yes|Yes|Yes
+| [GitHub](github.md)                    |Yes|Yes|No|No
+| [GitHub Enterprise Server](ghe.md)     |Yes|Yes|TFS 2018.2 and higher|No
+| [Bitbucket Cloud](bitbucket.md)        |Yes|Yes|No|No
+| [BitBucket Server](onprem-bitbucket.md) |No|Yes|Yes|Yes
 | Subversion                |No|Yes|Yes|No|
-
-## FAQ
-
-### Why are some cloud version control systems not supported by on-premises installations?
-
-When a pipeline uses a remote, 3rd-party repository host such as Bitbucket Cloud, the repository is configured with webhooks that notify Azure Pipelines Server or TFS when code has changed and a build should be triggered. Since on-premises installations are normally protected behind a firewall, 3rd-party webhooks are unable to reach the on-premises server. As a workaround, you can use the **Other Git** or **External Git** repository type which uses polling instead of webhooks to trigger a build when code has changed.
-
