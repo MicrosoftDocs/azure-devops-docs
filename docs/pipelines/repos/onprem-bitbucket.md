@@ -20,9 +20,11 @@ If your on-premises server is not reachable from the servers that run Azure Pipe
 - you can set up classic build pipelines and start manual builds
 - you cannot configure CI triggers
 
-> [!NOTE] YAML pipelines do not work with on-premises BitBucket repositories.
+> [!NOTE] 
+> YAML pipelines do not work with on-premises BitBucket repositories.
 
-> [!NOTE] PR triggers are not available with on-premises BitBucket repositories.
+> [!NOTE] 
+> PR triggers are not available with on-premises BitBucket repositories.
 
 If your on-premises server is reachable from the hosted agents, then you can use the hosted agents to run manual, scheduled, or CI builds. Otherwise, you must set up self-hosted agents that can access your on-premises server and fetch the code.
 

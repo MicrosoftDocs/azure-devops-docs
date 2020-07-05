@@ -8,7 +8,7 @@ ms.date: 07/05/2020
 ---
 
     **Region: Central US**
-    ```
+```
     @{Name=pkgsprodcus1ip1; IpAddress=13.86.125.169}
     @{Name=pkgsprodcus1ip1ServiceTag; IpAddress=20.37.158.14}
     @{Name=spsprodcus1ip1; IpAddress=20.37.139.247}
@@ -34,10 +34,10 @@ ms.date: 07/05/2020
     @{Name=feedsprodcus1ip1; IpAddress=40.67.190.224}
     @{Name=feedsprodcus1ip1ServiceTag; IpAddress=20.37.158.13}
     @{Name=aexprodcus1ip1; IpAddress=13.86.32.158}
-    ```
+```
 
     **East US**
-    ```
+```
     @{Name=shprodeus2su1ip1; IpAddress=20.36.242.132}
     @{Name=shprodeus2su1ip1ServiceTag; IpAddress=20.41.6.7}
     @{Name=asprodeus21ip1; IpAddress=20.36.237.20}
@@ -66,6 +66,7 @@ ms.date: 07/05/2020
     @{Name=artprodeus21ip1ServiceTag; IpAddress=20.41.6.23}
     @{Name=pkgsprodcus1ip1; IpAddress=13.86.125.169}
     @{Name=pkgsprodcus1ip1ServiceTag; IpAddress=20.37.158.14}
-    ```
+```
 
-    > [!NOTE] IP addresses for other regions will be listed shortly.
+    > [!NOTE] 
+    > IP addresses for other regions will be listed shortly.
