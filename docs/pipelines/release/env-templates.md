@@ -6,7 +6,7 @@ ms.assetid: BE9E2883-5CEB-4A91-A038-CB45B728A0C4
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
-ms.date: 08/24/2018
+ms.date: 07/06/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -18,26 +18,14 @@ monikerRange: '>= tfs-2015'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-When you start a new release pipeline, or when you add a stage to
-an existing release pipeline, you can choose from a list of templates for
-each stage. These templates pre-populate the stage with the
-appropriate tasks and settings, which can considerably reduce the time and
-effort required to create a release pipeline for your DevOps CI/CD processes.
+When you start a new release pipeline, or when you add a stage to an existing release pipeline, you can choose from a list of templates for each stage. These templates pre-populate the stage with the appropriate tasks and settings, which can considerably reduce the time and effort required to create a release pipeline for your DevOps CI/CD processes.
 
-A set of pre-defined stage templates are available in
-Azure Pipelines and in each version of TFS. You can use these templates
-when you create a new release pipeline or add a new
-stage to a pipeline. You can also create your own custom
-stage templates from a stage you have populated and
-configured.
+A set of pre-defined stage templates are available in Azure Pipelines and in each version of TFS. You can use these templates when you create a new release pipeline or add a new stage to a pipeline. You can also create your own custom stage templates from a stage you have populated and configured.
 
+> [!NOTE]
 > Templates do not have any additional security capability. There is no way to restrict the use of a template to specific users. All templates, pre-defined and custom, are available for use by all users who have permission to create release pipelines.
 
-When a stage is created from a template, the tasks in the template are copied over to the stage.
-Any further updates to the template have no impact on existing stages.
-If you want a way to easily insert a number of stages into release pipelines
-(perhaps to keep the definitions consistent) and to enable these stages to all be updated
-in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
+When a stage is created from a template, the tasks in the template are copied over to the stage. Any further updates to the template have no impact on existing stages. If you want a way to easily insert a number of stages into release pipelines (perhaps to keep the definitions consistent) and to enable these stages to all be updated in one operation, use [task groups](../library/task-groups.md) instead of stage templates.
 
 ## FAQ
 
