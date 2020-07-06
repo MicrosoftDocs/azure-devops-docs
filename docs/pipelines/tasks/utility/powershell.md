@@ -32,7 +32,7 @@ Use this task to run a PowerShell script.
 
 [!INCLUDE [temp](../includes/yaml/PowerShellV2.md)]
 
-The Powershell task also has two shortcuts in YAML:
+The PowerShell task also has two shortcuts in YAML:
 
 ```yaml
 - powershell:  # inline script
@@ -90,9 +90,9 @@ Both of these resolve to the `PowerShell@2` task.
 
 ### Hello World
 
-Create ```test.ps1``` at the root of your repo:
+Create `test.ps1` at the root of your repo:
 
-```ps
+```powershell
 Write-Host "Hello World from $Env:AGENT_NAME."
 Write-Host "My ID is $Env:AGENT_ID."
 Write-Host "AGENT_WORKFOLDER contents:"
@@ -114,7 +114,7 @@ On the Build tab of a build pipeline, add this task:
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes a warning to build summary and to log in yellow text
 Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 ```
@@ -123,7 +123,7 @@ Write-Host  "##vso[task.LogIssue type=warning;]This is the warning"
 
 Add the PowerShell task, set the **Type** to `inline`, and paste in this script:
 
- ```ps
+ ```powershell
 # Writes an error to build summary and to log in red text
 Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 ```
@@ -131,7 +131,8 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 > [!TIP]
 >
 > If you want this error to fail the build, then add this line:
->  ```ps
+>
+>  ```powershell
 > exit 1
 > ```
 
@@ -141,14 +142,14 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 
 ### Call PowerShell script with multiple arguments
 
-Create PowerShell script `test2.ps1`
+Create PowerShell script `test2.ps1`:
 
-```ps
+```powershell
 param ($input1, $input2)
 Write-Host "$input1 $input2"
 ```
 
-In your YAML pipeline call:
+In your YAML pipeline, call:
 
 ```yaml
 - task: PowerShell@2
