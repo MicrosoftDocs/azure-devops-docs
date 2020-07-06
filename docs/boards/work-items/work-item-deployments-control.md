@@ -18,7 +18,7 @@ ms.date: 07/06/2020
 The release deployments control shows release information for those work items that have been associated to a Git commit which is part of a build being released. To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
 > [!NOTE]  
-> The release deployments control currently works with classic release pipelines and with Azure DevOps Services (cloud) only. If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
+> The release deployments control currently works with classic release pipelines and with Azure DevOps Server 2020 and Azure DevOps Services (cloud). If your project is customized using a Hosted XML process, you need to update your work item type definitions to display the control. For details, see [Hosted XML process model, Add release deployment support to a work item type](../../organizations/settings/work/hosted-xml-process-model.md#add-support-wit).
 
 ## Configure release
 
@@ -36,7 +36,9 @@ Configure your release definition to post deployment information to Azure Boards
 
 ## Deployment control
 
-The work item deployment control displays the status of releases within those work items that are associated with commits in the build or those release pipelines you've configured to report deployment information to Azure Boards. The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
+The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
+
+The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/releases-stages-1.png)
