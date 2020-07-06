@@ -141,7 +141,7 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 
 ### Call PowerShell script with multiple arguments
 
-Create powershell script `test2.ps1`
+Create PowerShell script `test2.ps1`
 
 ```ps
 param ($input1, $input2)
