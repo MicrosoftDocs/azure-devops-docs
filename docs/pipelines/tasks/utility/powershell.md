@@ -139,7 +139,7 @@ Write-Host  "##vso[task.LogIssue type=error;]This is the error"
 
 [Use a script to customize your build pipeline](../../scripts/powershell.md)
 
-### Call powershell script with multiple arguments
+### Call PowerShell script with multiple arguments
 
 Create powershell script `test2.ps1`
 
