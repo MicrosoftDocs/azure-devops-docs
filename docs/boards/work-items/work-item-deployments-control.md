@@ -36,7 +36,9 @@ Configure your release definition to post deployment information to Azure Boards
 
 ## Deployment control
 
-The work item deployment control displays the status of releases within those work items that are associated with commits in the build or those release pipelines you've configured to report deployment information to Azure Boards. The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
+The work item deployment control displays the status of releases within those work items that are associated with commits in the build and those release pipelines you've configured to report deployment information to Azure Boards. 
+
+The following example shows multiple environments that the release is targeting which the selected work item is associated with. 
 
 > [!div class="mx-imgBorder"]  
 > ![Release Settings Stages](media/deployments-control/releases-stages-1.png)
