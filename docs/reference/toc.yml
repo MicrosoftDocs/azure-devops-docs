@@ -64,6 +64,8 @@
     href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Changes made to process templates
     href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Work tracking object limits
+    href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths
