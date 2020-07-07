@@ -3,7 +3,7 @@ title: Build source repositories
 description: Build source repositories using Azure Pipelines
 ms.topic: reference
 ms.assetid: 6DFCFEB4-05EC-4A73-9382-A20D161A53D4
-ms.date: 06/28/2019
+ms.date: 07/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
