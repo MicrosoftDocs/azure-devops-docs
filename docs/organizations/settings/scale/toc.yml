@@ -1,7 +1,5 @@
 - name: "About teams & Agile tools"
-  href: ../about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: When to add a team or project
-  href: ../../projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: ../about-teams-and-settings.md
 - name: Add & manage teams
   items:
   - name: Add a team

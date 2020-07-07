@@ -123,6 +123,8 @@
     href: /rest/api/vsts/core/teams
 - name: Resources
   items:
+  - name: Boards settings  
+    href: ../reference/index.yml
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
   - name: Public projects
