@@ -22,13 +22,13 @@
     href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set working days
     href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Customize Inheritance process model 
+- name: Customize an Inherited process 
   href: ../organizations/settings/work/toc.yml
-- name: Customize On-premises XML process model  
+- name: Customize an On-premises XML process  
   href: xml/toc.yml
-- name: Customize Hosted XML process model 
+- name: Customize a Hosted XML process 
   href: ../organizations/settings/work/hosted/toc.yml
-- name: Customize Process templates
+- name: Customize a process template 
   href: process-templates/toc.yml
 - name: witadmin Reference
   href: witadmin/toc.yml
