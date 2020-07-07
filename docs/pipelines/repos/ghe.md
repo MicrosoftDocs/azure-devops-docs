@@ -89,3 +89,31 @@ Use the list below to find the appropriate range of IP addresses for your region
 [!INCLUDE [ip-addresses](includes/ip-addresses.md)]
 
 Add the corresponding range of IP addresses to your firewall exception rules.
+
+## FAQ
+
+Problems related to GitHub Enterprise integration fall into the following categories:
+
+1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+3. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
+
+[!INCLUDE [qa](includes/qa2.md)]
+
+* Webhooks are used to communicate updates from GitHub Enterprise to Azure Pipelines. In GitHub Enterprise, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist. Usually you should see two webhooks - push, pull_request. If you don't, then you must re-create the service connection and update the pipeline to use the new service connection.
+  
+* Select each of the webhooks in GitHub Enterprise and verify that the payload that corresponds to the user's commit exists and was sent successfully to Azure DevOps. You may see an error here if the event could not be communicated to Azure DevOps.
+
+* When Azure Pipelines receives a notification from GitHub, it tries to contact GitHub and fetch more information about the repo and YAML file. If the GitHub Enterprise Server is behind a firewall, this traffic may not reach your server. See [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules.
+
+[!INCLUDE [qa](includes/qa3.md)]
+
+### Failing checkout
+
+Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your BitBucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
+
+### Wrong version
+
+[!INCLUDE [qa](includes/qa1.md)]

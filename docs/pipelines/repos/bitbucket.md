@@ -204,8 +204,19 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ## FAQ
 
-[!INCLUDE [qa](includes/qa1.md)]
+Problems related to BitBucket integration fall into the following categories:
+
+1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+2. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
 
 [!INCLUDE [qa](includes/qa2.md)]
 
+* Webhooks are used to communicate updates from BitBucket to Azure Pipelines. In BitBucket, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist.
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+### Wrong version
+
+[!INCLUDE [qa](includes/qa1.md)]

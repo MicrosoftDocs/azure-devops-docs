@@ -74,3 +74,27 @@ Use the list below to find the appropriate range of IP addresses for your region
 Add the corresponding range of IP addresses to your firewall exception rules.
 
 Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** service connection.
+
+## FAQ
+
+Problems related to BitBucket Server integration fall into the following categories:
+
+1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+3. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
+
+[!INCLUDE [qa](includes/qa2.md)]
+
+* Is your BitBucket server accessible from Azure Pipelines? Azure Pipelines periodically polls BitBucket server for changes. If the BitBucket server is behind a firewall, this traffic may not reach your server. See [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server is not accessible from Azure Pipelines.
+
+[!INCLUDE [qa](includes/qa3.md)]
+
+### Failing checkout
+
+Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your BitBucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
+
+### Wrong version
+
+[!INCLUDE [qa](includes/qa1.md)]
