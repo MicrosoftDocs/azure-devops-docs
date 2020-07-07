@@ -1,4 +1,4 @@
-- name: Board Settings 
+- name: Azure Board Settings 
   href: index.yml
 - name: Configure & customize Azure Boards
   href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
@@ -66,6 +66,8 @@
   items:
   - name: Azure Boards
     href: /azure/devops/boards/index
+  - name: Settings, security, & usage
+    href: /azure/devops/organizations/index
   - name: Develop extensions
     href: /azure/devops/extend/overview
   - name: Deprecation of WIT & Test Client OM
