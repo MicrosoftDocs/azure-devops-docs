@@ -25,6 +25,6 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 * Have you excluded the branches or paths to which you pushed your changes? Test by pushing a change to an included path in an included branch. Note that paths in triggers are case-sensitive. Make sure that you use the same case as those of real folders when specifying the paths in triggers.
 
-* Do you have wildcards in your path filters? Understand the limitations of [wildcards](#wildcards) in your paths.
+* Do you have wildcards in your path filters? Understand the limitations of wildcards in your paths as described in this article.
 
-* Did you just push a new branch? If so, the new branch may not start a new run. See [Behavior of triggers when new branches are created](#behavior-of-triggers-when-new-branches-are-created).
+* Did you just push a new branch? If so, the new branch may not start a new run. See the section "Behavior of triggers when new branches are created".

@@ -38,7 +38,7 @@ CI triggers work through polling and not through webhooks. In other words, Azure
 
 If the BitBucket server cannot be reached from Azure Pipelines, you have two options:
 
-1. Work with your IT department to open a network path between Azure Pipelines and on-premises Git server. For example, you can add exceptions to your firewall rules to allow trafic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the BitBucket server so that Azure Pipelines can resolve the FQDN of your server to an IP address.
+1. Work with your IT department to open a network path between Azure Pipelines and on-premises Git server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the BitBucket server so that Azure Pipelines can resolve the FQDN of your server to an IP address.
 
 2. You can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection but tell Azure Pipelines not to **attempt accessing this Git server from Azure Pipelines**. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
@@ -56,7 +56,7 @@ If the simple test pipeline mentioned in the above section fails with the error 
 
 ## Azure DevOps IP addresses
 
-When you use **Other Git** connection to set up a classic pipeline, disable communication between Azure Pipelines service and BitBucket erver, and use self-hosted agents to build code, you will get a degraded experience:
+When you use **Other Git** connection to set up a classic pipeline, disable communication between Azure Pipelines service and BitBucket server, and use self-hosted agents to build code, you will get a degraded experience:
 
 * You will have to type in the name of the repository manually during pipeline creation
 * You cannot use CI triggers as Azure Pipelines won't be able to poll for changes to the code
