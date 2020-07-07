@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Start using Azure Artifacts
 
-**Azure DevOps** | **Azure DevOps Server 2019** | **TFS 2018** | **TFS 2017**
+**Azure DevOps Services | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 > [!NOTE]
 > If you are using a version of TFS, you will need to license Azure Artifacts instead of signing up. 
