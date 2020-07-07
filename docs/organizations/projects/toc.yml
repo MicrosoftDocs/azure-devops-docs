@@ -2,8 +2,8 @@
   href: about-projects.md
 - name: Project & team quick reference
   href: project-team-quick-reference.md
-  - name: Connect to a project
-    href: connect-to-projects.md
+- name: Connect to a project
+  href: connect-to-projects.md
 - name: Manage projects
   items:
   - name: Create a project
