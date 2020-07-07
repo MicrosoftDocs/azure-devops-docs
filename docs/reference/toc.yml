@@ -1,19 +1,42 @@
+- name: Board Settings 
+  expanded: false
+  href: index.yml
+- name: Configure & customize Azure Boards
+  href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: About process (work tracking) customization
-  href: customize-work.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  href: customize-work.md
 - name: Compare system processes  
-  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Inheritance process model 
-  href: ../organizations/settings/work/toc.yml
-- name: On-premises XML process model  
-  href: xml/toc.yml
-- name: Hosted XML process model 
-  href: ../organizations/settings/work/hosted/toc.yml
-- name: Process templates
-  href: process-templates/toc.yml
-- name: witadmin Reference
-  href: witadmin/toc.yml
-- name: Resources
+  href: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Configure projects & teams
   items:
+  - name: "Area & iteration paths"
+    href: ../organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Define area paths & assign to a team 
+    href: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Define iteration paths (sprints) & configure team iterations 
+    href: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Configure team tools
+    href: ../organizations/settings/manage-teams.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Select backlog levels
+    href: ../organizations/settings/select-backlog-navigation-levels.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Show bugs on backlogs & boards
+    href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+  - name: Set working days
+    href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+- name: Customize Inherited process
+  items:
+  - name: Inheritance process model 
+    href: ../organizations/settings/work/toc.yml
+  - name: On-premises XML process model  
+    href: xml/toc.yml
+  - name: Hosted XML process model 
+    href: ../organizations/settings/work/hosted/toc.yml
+  - name: Process templates
+    href: process-templates/toc.yml
+  - name: witadmin Reference
+    href: witadmin/toc.yml
+  - name: Resources
+    items:
   - name: Azure Boards
     href: /azure/devops/boards/index
   - name: Develop extensions
@@ -41,12 +64,11 @@
 - name: Reference
   items:
   - name: Naming restrictions
-    href: ./settings/naming-restrictions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: "Workflow states & categories"
-    href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Changes made to process templates
-    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-
+    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
   items:
   - name: Area and iteration paths
