@@ -263,9 +263,9 @@ additionalContent:
               url: ./organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
             - text: Customize Inherited process
               url: ./organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-             - text: On-premises XML process model
+            - text: On-premises XML process model
               url: ./reference/on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-             - text: Hosted XML process model
+            - text: Hosted XML process model
               url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         # Card
         - title: Marketplace and extensibility
