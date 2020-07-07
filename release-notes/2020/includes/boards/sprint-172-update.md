@@ -16,19 +16,19 @@ You can also create a rule to restrict state transitions by group membership. Fo
 
 ### Copy work item to copy children
 
-One of the top requested features for Azure Boards is the ability to copy a work item that also copies it's child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up too 100).
+One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up too 100).
 
 ![img](../../media/172-boards-2-0.png)
 
 ### Improved rules for activated and resolved fields
 
-Up until now, the rules for Activated By, Activated Date, Resolved By, and Resolved Date have been a mystery. They are only set for system work item types and are specific to the state value of  "Active" and "Resolved". In sprint 172 we changed the logic so that these rules are no longer for a specific state. Instead they are triggered by the category (state category) the state resides. For example, lets say you have two custom state values of "Needs Testing" and "Validation" in the Resolved category. When the work item changes from "Active" to "Needs Testing", the resolved by and resolved date rules are triggered.
+Up until now, the rules for Activated By, Activated Date, Resolved By, and Resolved Date have been a mystery. They are only set for system work item types and are specific to the state value of "Active" and "Resolved". In sprint 172 we changed the logic so that these rules are no longer for a specific state. Instead they are triggered by the category (state category) the state resides in. For example, lets say you have two custom state values of "Needs Testing" and "Validation" in the Resolved category. When the work item changes from "Active" to "Needs Testing", the resolved by and resolved date rules are triggered.
 
 This allows customers to create any custom state values and still generate the Activated By, Activated Date, Resolved By, and Resolved By fields without the need to use custom rules.
     
 ### System work item types on backlogs and boards (private preview)
 
-Ever since the inception of the inheritance process model, there have been a series of work item types that were excluded from being added to boards and backlogs. They were only accessible from queries. Example of these work item types include...
+Ever since the inception of the inheritance process model, there have been a series of work item types that were excluded from being added to boards and backlogs. They were only accessible from queries. Work item types include...
 
 | Process         | Work Item Type  | 
 | :------------- | :------------------| 

@@ -6,6 +6,9 @@ ms.date: 07/09/2020
 ms.topic: include
 ---
     
-- [Do not deploy more than one run at the same time](#do-not-deploy-more-than-one-run-at-the-same-time)
+- [Exclusive deployment lock policy](#exclusive-deployment-lock-policy)
+- [Stages filters for pipeline resource triggers](#stages-filters-for-pipeline-resource-triggers)
+- [Generic webhook based triggers for YAML pipelines](#generic-webhook-based-triggers-for-YAML-pipelines)
+- [YAML resource trigger issues support and traceability](#yaml-resource-trigger-issues-support-and-traceability)
 
     
