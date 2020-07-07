@@ -1,7 +1,7 @@
 - name: About managing organizations 
   href: organization-management.md 
 - name: Plan your organization structure
-  href: ../user-guide/plan-your-azure-devops-org-structure.md
+  href: ../../user-guide/plan-your-azure-devops-org-structure.md
 - name: Create your organization 
   href: create-organization.md 
 - name: Add and manage banners 

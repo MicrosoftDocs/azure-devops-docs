@@ -58,7 +58,7 @@
   - name: Usage and rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Work tracking, process, and project limits 
-    href: ./settings/work/object-limits/md
+    href: ./settings/work/object-limits.md
 - name: Service hooks >>
   href: ../service-hooks/overview.md
 - name: Pipelines (Build and release)
