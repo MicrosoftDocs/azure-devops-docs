@@ -181,7 +181,7 @@ You can use query results shortcuts whenever you have a list of work items, such
 ## Related articles 
 
 
-- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/ff458183(v=vs.140))  
+- [Keyboard shortcuts for Microsoft Test Manager](/previous-versions/visualstudio/visual-studio-2013/ff458183(v=vs.120))  
 - [Customize Visual Studio keyboard shortcuts](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio)  
 - [Default keyboard shortcuts for Visual Studio](/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio)  
 - [Accessibility Features of Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)   
