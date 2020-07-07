@@ -19,18 +19,8 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-
-  - title: Manage work tracking permissions (Azure Boards)
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: Default permissions and access for Azure Boards
-            url: ../boards/get-started/permissions-access-boards.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-      - linkListType: quickstart
-        links:
-          - text: Set work tracking permissions
-            url: ../organizations/security/set-permissions-access-work-tracking.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - title: Add and manage teams
+ 
+  - title: Configure teams
     linkLists:
       - linkListType: concept
         links:
@@ -44,7 +34,7 @@ landingContent:
             url: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
           - text: Configure team iterations
             url: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - title: Add and manage projects
+  - title: Configure projects
     linkLists:
       - linkListType: concept
         links:
@@ -62,7 +52,7 @@ landingContent:
         links:
           - text: Connect to GitHub
             url: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - title: Customize work tracking (Inheritance process)  
+  - title: Customize an Inheritance process  
     linkLists:
       - linkListType: overview
         links:
@@ -80,7 +70,7 @@ landingContent:
             url: ../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
           - text: Create and manage a process
             url: ../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - title: Customize work tracking (On-premises XML process)  
+  - title: Customize an On-premises XML process  
     linkLists:
       - linkListType: overview
         links:

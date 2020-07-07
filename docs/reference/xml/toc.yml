@@ -82,21 +82,24 @@
     items:
     - name: WORKFLOW elements
       href: all-workflow-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-    - name: FIELD (Workflow)
+    - name: FIELD (Workflow) elements
       href: field-workflow-element-reference.md
+    - name: Automate field assignments
       href: automate-field-assignments-state-transition-reason.md
     - name: TRANSITION
-      href: transition-xml-element.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: transition-xml-element.md 
   - name: FORM elements
     items:
     - name: All FORM elements
-      href: all-form-xml-elements-reference.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+      href: all-form-xml-elements-reference.md 
     - name: New web form layout
       items:
       - name: WebLayout and Control elements
-        href: weblayout-xml-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        href: weblayout-xml-elements.md 
       - name: LinksControlOptions (web)
-        href: linkscontroloptions-xml-elements.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+        href: linkscontroloptions-xml-elements.md 
+      - name: Manage roll out of the new web form
+        href: ../manage-new-form-rollout.md 
     - name: Old (web and client) form layout
       items:
       - name: Layout
@@ -119,7 +122,7 @@
     href: categories-xml-element-reference.md
   - name: ProcessConfiguration XML reference
     href: process-configuration-xml-element.md
-- name: Archive (manual updates)
+- name: Manual updates
   items:
   - name: Update a project based on a MSF v4.2 process template
     href: update-a-team-project-v4-dot-2-process-template.md
@@ -127,9 +130,22 @@
     href: update-a-team-project-manually-to-support-test-management.md
   - name: Update the workflow for agile projects
     href: update-the-workflow-for-agile-team-projects.md
-  - name: Manage roll out of the new web form
-    href: ../manage-new-form-rollout.md
   - name: Use team fields instead of area paths
     href: ../use-team-fields-instead-area-paths.md
-
+- name: Microsoft Project Mapping file (Deprecated)
+  href: ./mapping/toc.yml
+- name: Configure Features Wizard (Deprecated)
+  items:
+  - name: Configure features after an upgrade
+    href: ../configure-features-after-upgrade.md
+  - name: New features added through feature enablement
+    href: ../new-features-added.md
+  - name: Add features manually
+    href: ../add-features-manually.md
+  - name: Additional configuration options
+    href: ../additional-configuration-options.md
+  - name: Update a customized process template to access new features
+    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: When upgrading from TFS 2008 or TFS 2010
+    href: ../upgrade-tfs-2008-or-2010.md
 

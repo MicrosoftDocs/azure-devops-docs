@@ -32,38 +32,12 @@
   href: process-templates/toc.yml
 - name: witadmin Reference
   href: witadmin/toc.yml
-- name: Resources
-  items:
-  - name: Azure Boards
-    href: /azure/devops/boards/index
-  - name: Develop extensions
-    href: /azure/devops/extend/overview
-  - name: Deprecation of WIT & Test Client OM
-    href: /azure/devops/integrate/concepts/wit-client-om-deprecation
-- name: Microsoft Project Mapping file (Deprecated)
-  href: ../reference/mapping/toc.yml
-- name: Configure Features Wizard (Deprecated)
-  items:
-  - name: Configure features after an upgrade
-    href: ../reference/configure-features-after-upgrade.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: New features added through feature enablement
-    href: ../reference/new-features-added.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Add features manually
-    href: ../reference/add-features-manually.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Additional configuration options
-    href: ../reference/additional-configuration-options.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Update a customized process template to access new features
-    href: ../reference/update-customized-process-template.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: When upgrading from TFS 2008 or TFS 2010
-    href: ../reference/upgrade-tfs-2008-or-2010.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Reference
   items:
   - name: Naming restrictions
     href: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: "Workflow states & categories"
     href: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-  - name: Changes made to process templates
-    href: /azure/devops/boards/work-items/guidance/changes-to-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Work tracking object limits
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
@@ -88,3 +62,11 @@
       href: ../reference/api-ref/open.md
     - name: WorkItem.PartialOpen method
       href: ../reference/api-ref/partialopen.md
+- name: Resources
+  items:
+  - name: Azure Boards
+    href: /azure/devops/boards/index
+  - name: Develop extensions
+    href: /azure/devops/extend/overview
+  - name: Deprecation of WIT & Test Client OM
+    href: /azure/devops/integrate/concepts/wit-client-om-deprecation

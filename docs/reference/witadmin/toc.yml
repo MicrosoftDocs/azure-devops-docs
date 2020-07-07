@@ -1,14 +1,14 @@
 - name: witAdmin command reference
   href: witadmin-customize-and-manage-objects-for-tracking-work.md
-- name: Import and export categories
+- name: Import & export categories
   href: witadmin-import-export-categories.md
-- name: Import and export global workflow
+- name: Import & export global workflow
   href: witadmin-import-export-global-workflow.md
-- name: Import and export process configuration
+- name: Import & export process configuration
   href: witadmin-import-export-process-configuration.md
-- name: "Import, export, and manage work item types"
+- name: "Import, export, & manage work item types"
   href: witadmin-import-export-manage-wits.md
-- name: Manage global lists for work item types
+- name: Manage global lists  
   href: manage-global-lists-for-work-item-types.md
 - name: Manage link types
   href: manage-link-types.md
@@ -16,7 +16,7 @@
   href: manage-work-item-fields.md
 - name: Rebuild the client cache
   href: rebuild-client-cache.md
-- name: Remove work items permanently
+- name: Delete work items 
   href: remove-work-items-permanently.md
-- name: Customize and manage the test experience
+- name: Customize & manage the test experience
   href: tcm-customize-manage-test-experience.md
