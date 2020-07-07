@@ -228,33 +228,45 @@ additionalContent:
     - title: Tools and utilities
       items:
         # Card
-        - title: Configure and customize
+        - title: Settings, security, & usage
           links:
-            - text: User preferences
-              url: ./organizations/settings/set-your-preferences.md
-            - text: Teams
-              url: ./organizations/settings/scale/index.md
-            - text: Projects
-              url: ./organizations/projects/index.md
-            - text: Public projects
-              url: ./organizations/public/index.md
-            - text: Processes
-              url: ./reference/index.md
-            - text: Organizations
-              url: ./organizations/accounts/organization-management.md
-            - text: Repos, pipelines, & test
-              url: ./organizations/settings/index.md
-            - text: Notifications
-              url: ./notifications/index.md
-          # Card
-        - title: Security, access, and billing
-          links:
+            - text: Security, access, & identity
+              url: ./organizations/security/about-security-identity.md
             - text: Permissions and groups
               url: ./organizations/security/about-permissions.md
             - text: Access levels
               url: ./organizations/security/access-levels.md
-            - text: Billing overview
+            - text: Billing  
               url: ./organizations/billing/overview.md
+            - text: User preferences
+              url: ./organizations/settings/set-your-preferences.md
+            - text: Organizations
+              url: ./organizations/accounts/organization-management.md
+            - text: Projects
+              url: ./organizations/projects/index.md
+            - text: Teams 
+              url: ./organizations/settings/scale/index.md
+            - text: Repos, pipelines, & test
+              url: ./pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+            - text: Notifications
+              url: ./notifications/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/reference/organizations/toc.json
+            - text: Audit
+              url: ./organizations/audit/azure-devops-auditing.md
+          # Card
+        - title: Boards settings
+          links:
+            - text: Configure & customize Azure Boards
+              url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+            - text: Compare processes
+              url: ./boards/work-items/guidance/choose-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+            - text: "Area & iteration paths"
+              url: ./organizations/settings/about-areas-iterations.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+            - text: Customize Inherited process
+              url: ./organizations/settings/work/inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+             - text: On-premises XML process model
+              url: ./reference/on-premises-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+             - text: Hosted XML process model
+              url: ./organizations/settings/work/hosted-xml-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
         # Card
         - title: Marketplace and extensibility
           links:

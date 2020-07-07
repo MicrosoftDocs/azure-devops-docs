@@ -4,12 +4,12 @@
   href: ../import-process/differences.md
 - name: Differences between Hosted XML and Inherited
   href: ../inheritance-versus-hosted-xml.md
-- name: How-to guides
-  items:
-  - name: Customize a Hosted XML process
-    href: ../import-process/customize-process.md
-  - name: Import a process
-    href: ../import-process/import-process.md
+- name: Customize a Hosted XML process
+  href: ../import-process/customize-process.md
+- name: Import a process
+  href: ../import-process/import-process.md
+- name: Resolve validation errors
+  href: ../import-process/resolve-errors.md
   - name: Migrate Hosted XML to inherited
     items:
     - name: Supported clone operations
@@ -18,10 +18,8 @@
       href: ../upgrade-hosted-to-inherited.md
     - name: Change a project from Hosted XML to Inheritance
       href: ../change-process-from-hosted-to-inherited.md
-- name: Troubleshooting
-  items:
-  - name: Resolve validation errors
-    href: ../import-process/resolve-errors.md
+
+
 
 
 

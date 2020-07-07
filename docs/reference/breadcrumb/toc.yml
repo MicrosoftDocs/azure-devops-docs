@@ -8,7 +8,7 @@
     items: 
     - name: On-premises XML
       tocHref: /azure/devops/reference/
-      topicHref: /azure/devops/reference/on-premises-xml-process-model
+      topicHref: /azure/devops/reference/index
     - name: On-premises XML
       tocHref: /azure/devops/reference/xml
       topicHref: /azure/devops/reference/index

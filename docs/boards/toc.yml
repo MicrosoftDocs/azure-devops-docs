@@ -229,7 +229,7 @@
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
-    href: ../reference/index.md
+    href: ../reference/index.yml
   - name: Azure Test Plans 
     href: ../test/index.yml
   - name: Client support 
