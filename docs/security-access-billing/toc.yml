@@ -7,8 +7,7 @@
   href: ../organizations/security/toc.yml
 - name: Organizations
   href: ../organizations/accounts/toc.yml
-- name: Billing
-  href: ../organizations/billing/toc.yml
+
 - name: Audit
   items:
   - name: Access auditing
