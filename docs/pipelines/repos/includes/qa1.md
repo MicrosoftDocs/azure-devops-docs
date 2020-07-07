@@ -9,5 +9,5 @@ ms.date: 03/29/2020
 
 ### A wrong version of the YAML file is being used in the pipeline. Why is that?
 
-* For [CI triggers](#ci-triggers), the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
-* For [PR triggers](#pr-triggers), the YAML file resulting from merging the source and target branches of the PR is evaluated to see if a PR build should be run.
+* For CI triggers, the YAML file that is in the branch you are pushing is evaluated to see if a CI build should be run.
+* For PR triggers, the YAML file resulting from merging the source and target branches of the PR is evaluated to see if a PR build should be run.

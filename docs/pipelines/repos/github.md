@@ -37,7 +37,7 @@ Azure DevOps can reflect your GitHub structure with:
 
 ![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
-To set up an idential structure in Azure DevOps:
+To set up an identical structure in Azure DevOps:
 
 1. Create an Azure DevOps organization named after your GitHub organization or user account. It will have a URL like `https://dev.azure.com/your-organization`.
 1. In the Azure DevOps organization, create projects named after your repositories. They will have URLs like `https://dev.azure.com/your-organization/your-repository`.
@@ -52,7 +52,7 @@ Following this pattern, your GitHub repositories and Azure DevOps projects will 
 
 ### Users
 
-Your GitHub users do not automatically get access to Azure Pipelines. Azure Pipelines is unaware of GitHub identities. For this reason, there is no way to configure Azure Pipelines to automatically notifiy users of a build failure or a PR validation failure using their GitHub identity and email address. You must explicitly create new users in Azure Pipelines to replicate GitHub users. Once you create new users, you can configure their permissions in Azure DevOps to reflect their permissions in GitHub. You can also configure notifications in Azure DevOps using their Azure DevOps identity.
+Your GitHub users do not automatically get access to Azure Pipelines. Azure Pipelines is unaware of GitHub identities. For this reason, there is no way to configure Azure Pipelines to automatically notify users of a build failure or a PR validation failure using their GitHub identity and email address. You must explicitly create new users in Azure Pipelines to replicate GitHub users. Once you create new users, you can configure their permissions in Azure DevOps to reflect their permissions in GitHub. You can also configure notifications in Azure DevOps using their Azure DevOps identity.
 
 #### GitHub organization roles
 
@@ -498,7 +498,7 @@ Pipeline statuses show up in various places in the GitHub UI.
 
 ### PAT or OAuth GitHub connections
 
-For pipelines using [PAT](#personal-access-token-pat-authentication) or [OAuth](#oauth-authentication) GitHub connections, statuses are posted back to the commit/PR that triggered the run. The [GitHub status API](https://developer.github.com/v3/repos/statuses/) is used to post such updates. These statuses contain limited information: pipeline status (failed, success, etc), URL to link back to the build pipeline, and a brief description of the status.
+For pipelines using [PAT](#personal-access-token-pat-authentication) or [OAuth](#oauth-authentication) GitHub connections, statuses are posted back to the commit/PR that triggered the run. The [GitHub status API](https://developer.github.com/v3/repos/statuses/) is used to post such updates. These statuses contain limited information: pipeline status (failed, success), URL to link back to the build pipeline, and a brief description of the status.
 
 Statuses for PAT or OAuth GitHub connections are only sent at the run level. In other words, you can have a single status updated for an entire run. If you have multiple jobs in a run, you cannot post a separate status for each job. However, multiple pipelines can post separate statuses to the same commit.
 
@@ -528,7 +528,7 @@ Problems related to GitHub integration fall into the following categories:
 
 #### To troubleshoot triggers, how do I know the type of GitHub connection I'm using for my pipeline?
 
-Troubleshooting problems with triggers very much depends on the type of GitHub connection you use in your pipeleine. There are two ways to determine the type of connection - from GitHub and from Azure Pipelines.
+Troubleshooting problems with triggers very much depends on the type of GitHub connection you use in your pipeline. There are two ways to determine the type of connection - from GitHub and from Azure Pipelines.
 
 * From GitHub: If a repo is set up to use the GitHub app, then the statuses on PRs and commits will be Check Runs. If the repo has Azure pipelines set up with OAuth or PAT connections, the statuses will be the "old" style of statuses. A quick way to determine if the statuses are Check Runs or simple statuses is to look at the "conversation" tab on a GitHub PR. 
   * If the "Details" link redirects to the Checks tab, it is a Check Run and the repo is using the app. 
