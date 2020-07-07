@@ -9,9 +9,9 @@ description: With this sprint 172, we are annoucing the general release of state
 
 # State transition restriction rules - GA
 
-After several sprints in preview, we are now annoucing the general release of **state transition restriction rules** to all customers as part of the sprint 172 update.
+After several sprints in preview, we are now announcing the general release of **state transition restriction rules** to all customers as part of the sprint 172 update.
 
-Check out the [Features](#features) list below for more.
+Check out the [Features](#features) list below for more information.
 
 ## Features
 
