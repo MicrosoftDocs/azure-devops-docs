@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Configure & customize documentation
+title: Settings & Usage documentation
 summary: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
 
 metadata:
@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page 
   author: KathrynEE 
   ms.author: kaelli 
-  ms.date: 09/30/2019 
+  ms.date: 07/08/2020 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 

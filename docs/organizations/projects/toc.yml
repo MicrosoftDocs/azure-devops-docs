@@ -10,7 +10,7 @@
   href: project-vision-status.md
 - name: Connect a project to GitHub  
   href: /azure/devops/boards/github/install-github-app?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: How-to guides
+- name: Manage projects
   items:
   - name: Create a project
     href: create-project.md
@@ -28,17 +28,5 @@
     href: save-project-data.md
   - name: Connect a project
     href: connect-to-projects.md
-- name: Troubleshooting
-  items:
-  - name: Create a project
-    href: faq-create-project.md
-  - name: Rename a project
-    href: faq-rename-project.md
-  - name: Add administrators
-    href: ../accounts/faq-add-administrators.md
-  - name: Set up Visual Studio
-    href: ../accounts/faq-set-up-vs.md
-  - name: Troubleshoot connection
-    href: /azure/devops/user-guide/troubleshoot-connection?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: "TF31002: Unable to connect"
-    href: /azure/devops/reference/error/tf31002-unable-connect-tfs?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+
+ 
