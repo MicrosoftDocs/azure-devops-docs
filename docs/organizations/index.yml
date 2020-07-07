@@ -54,16 +54,10 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Configure and customize Boards 
-            url: ../boards/configure-customize.md
           - text: About projects and scaling up
             url: ./projects/about-projects.md
       - linkListType: quickstart
         links:
-          - text: Define area paths
-            url: ./settings/set-area-paths.md
-          - text: Configure iterations
-            url: ./settings/set-iteration-paths-sprints.md
           - text: Add users to a project
             url: ./security/add-users-team-project.md
           - text: Add project administrators or set project-level permissions
@@ -88,8 +82,6 @@ landingContent:
         links:
           - text: Create an organization 
             url: ./accounts/create-organization.md
-          - text: "See more >"
-            url: ../security-access-billing/index.yml
   - title: Set alerts or notifications
     linkLists:
       - linkListType: concept
@@ -146,55 +138,4 @@ landingContent:
             url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Integrate with Slack
             url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Customize work tracking (Inheritance process)  
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Inheritance process model
-            url: ./settings/work/inheritance-process-model.md
-      - linkListType: quickstart
-        links:
-          - text: Add a custom field
-            url: ./settings/work/add-custom-field.md
-          - text: Add a custom work item type
-            url: ./settings/work/add-custom-wit.md
-      - linkListType: tutorial
-        links:
-          - text: Customize a project
-            url: ./settings/work/customize-process.md
-          - text: Create and manage a process
-            url: ./settings/work/manage-process.md
-  - title: Customize work tracking (On-premises XML process)  
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: On-premises XML process model
-            url: ../reference/on-premises-xml-process-model.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-      - linkListType: how-to-guide
-        links:
-          - text: Add or modify a field
-            url: ../reference/add-modify-field.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Add or modify a work item type
-            url: ../reference/add-modify-wit.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-      - linkListType: reference
-        links:
-          - text: XML element reference
-            url: ../reference/xml/xml-element-reference.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Customize a process template (on-premises)  
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: About processes and process templates
-            url: ../boards/work-items/guidance/choose-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Process template files
-            url: ../reference/process-templates/overview-process-template-files.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-      - linkListType: how-to-guide
-        links:
-          - text: Customize a process template
-            url: ../reference/process-templates/customize-process.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Upload/download process templates
-            url: ../boards/work-items/guidance/manage-process-templates.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-      - linkListType: reference
-        links:
-          - text: XML element reference
-            url: ../reference/process-templates/process-template-plug-ins-xml-elements-index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+
