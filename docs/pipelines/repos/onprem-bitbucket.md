@@ -81,7 +81,6 @@ Problems related to BitBucket Server integration fall into the following categor
 
 1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
 2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
-3. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
 
 ### Failing triggers
 
@@ -94,7 +93,3 @@ Problems related to BitBucket Server integration fall into the following categor
 ### Failing checkout
 
 Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your BitBucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
-
-### Wrong version
-
-[!INCLUDE [qa](includes/qa1.md)]
