@@ -109,7 +109,7 @@
   - name: Set SQL Server report permissions 
     href: ../../report/admin/grant-permissions-to-reports.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Set SharePoint project portal permissions
-    href: set-sharepoint-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+    href: set-sharepoint-permissions.md
 - name: Data security, Azure DevOps Services
   items:
   - name: Data protection overview
@@ -117,7 +117,7 @@
   - name: Data location
     href: data-location.md
   - name: Allowed address lists and network connections
-    href: allow-list-ip-url.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: allow-list-ip-url.md
     displayname: Personal access tokens, PATs, basic auth, Oauth, SSH
   - name: Data Subject Requests for the GDPR and CCPA
     href: /microsoft-365/compliance/gdpr-dsr-vsts?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
@@ -126,18 +126,18 @@
 - name: Reference
   items:
   - name: Default permissions & access 
-    href: permissions-access.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: permissions-access.md
   - name: Permission lookup guide 
-    href: permissions-lookup-guide.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: permissions-lookup-guide.md
   - name: Permissions & groups 
-    href: permissions.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: permissions.md
   - name: Manage tokens and namespaces
     href: manage-tokens-namespaces.md 
   - name: Git permissions prior to TFS 2017 Update 1
-    href: git-permissions-before-2017.md?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: git-permissions-before-2017.md
   - name: Web site settings and security (on-premises)
-    href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: /azure/devops/server/admin/websitesettings?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: TFSSecurity command (on-premises)
-    href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/security-access-billing/toc.json&bc=/azure/devops/security-access-billing/breadcrumb/toc.json
+    href: /azure/devops/server/command-line/tfssecurity-cmd?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Get started as a Stakeholder
     href: get-started-stakeholder.md 
