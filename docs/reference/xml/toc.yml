@@ -12,6 +12,12 @@
     href: expand-list-items-and-exclude-groups-from-lists.md
   - name: Combine list types
     href: combine-list-types.md
+  - name: Reporting reference
+    items:
+    - name: Reportable fields reference 
+      href: reportable-fields-reference.md
+    - name: Change reporting attributes 
+      href: add-or-modify-work-item-fields-to-support-reporting.md
 - name: Change the workflow
   href: change-workflow-wit.md
 - name: Work item type or form
@@ -34,6 +40,8 @@
     href: specify-work-item-form-controls.md
   - name: Define link controls
     href: define-link-controls.md
+  - name: Change the maximum attachment size for work items
+    href: change-maximum-attachment-size-work-items.md
 - name: Backlogs and boards
   items:
   - name: Add work item types
@@ -46,20 +54,6 @@
     href: ../troubleshoot-process-configuration.md
 - name: Define a custom link type
   href: define-custom-link-type.md
-- name: Change the maximum attachment size for work items
-  href: change-maximum-attachment-size-work-items.md
-- name: Archive (manual updates)
-  items:
-  - name: Update a project based on a MSF v4.2 process template
-    href: update-a-team-project-v4-dot-2-process-template.md
-  - name: Update a project manually to support test management
-    href: update-a-team-project-manually-to-support-test-management.md
-  - name: Update the workflow for agile projects
-    href: update-the-workflow-for-agile-team-projects.md
-  - name: Manage roll out of the new web form
-    href: ../manage-new-form-rollout.md
-  - name: Use team fields instead of area paths
-    href: ../use-team-fields-instead-area-paths.md
 - name: Work tracking XML element reference
   items:
   - name: XML element reference
@@ -125,12 +119,17 @@
     href: categories-xml-element-reference.md
   - name: ProcessConfiguration XML reference
     href: process-configuration-xml-element.md
-- name: Reporting
+- name: Archive (manual updates)
   items:
-  - name: Reportable fields reference 
-    href: reportable-fields-reference.md
-  - name: Change reporting attributes 
-    href: add-or-modify-work-item-fields-to-support-reporting.md
-
+  - name: Update a project based on a MSF v4.2 process template
+    href: update-a-team-project-v4-dot-2-process-template.md
+  - name: Update a project manually to support test management
+    href: update-a-team-project-manually-to-support-test-management.md
+  - name: Update the workflow for agile projects
+    href: update-the-workflow-for-agile-team-projects.md
+  - name: Manage roll out of the new web form
+    href: ../manage-new-form-rollout.md
+  - name: Use team fields instead of area paths
+    href: ../use-team-fields-instead-area-paths.md
 
 
