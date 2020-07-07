@@ -22,9 +22,6 @@
     href: /azure/devops/security-access-billing/index
   - name: Deprecation of WIT & Test Client OM
     href: /azure/devops/integrate/concepts/wit-client-om-deprecation
-- name: Process
-  href: ../reference/toc.yml
-
 - name: Microsoft Project Mapping file (Deprecated)
   href: ../reference/mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
