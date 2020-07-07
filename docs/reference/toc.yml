@@ -1,5 +1,4 @@
 - name: Board Settings 
-  expanded: false
   href: index.yml
 - name: Configure & customize Azure Boards
   href: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
@@ -23,20 +22,18 @@
     href: ../organizations/settings/show-bugs-on-backlog.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - name: Set working days
     href: ../organizations/settings/set-working-days.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-- name: Customize Inherited process
+- name: Customize Inheritance process model 
+  href: ../organizations/settings/work/toc.yml
+- name: Customize On-premises XML process model  
+  href: xml/toc.yml
+- name: Customize Hosted XML process model 
+  href: ../organizations/settings/work/hosted/toc.yml
+- name: Customize Process templates
+  href: process-templates/toc.yml
+- name: witadmin Reference
+  href: witadmin/toc.yml
+- name: Resources
   items:
-  - name: Inheritance process model 
-    href: ../organizations/settings/work/toc.yml
-  - name: On-premises XML process model  
-    href: xml/toc.yml
-  - name: Hosted XML process model 
-    href: ../organizations/settings/work/hosted/toc.yml
-  - name: Process templates
-    href: process-templates/toc.yml
-  - name: witadmin Reference
-    href: witadmin/toc.yml
-  - name: Resources
-    items:
   - name: Azure Boards
     href: /azure/devops/boards/index
   - name: Develop extensions
