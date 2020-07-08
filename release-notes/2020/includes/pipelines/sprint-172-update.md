@@ -28,7 +28,7 @@ resources:
       - Production
 ```
 
-When the stage(s) have completed successfully for the provided filter in your CI pipeline, a new run will be automatically created for your CD pipeline.
+When the stages provided in the trigger filter are successfully completed in your CI pipeline, a new run is automatically triggered for your CD pipeline.
 
 
 ### Generic webhook based triggers for YAML pipelines
