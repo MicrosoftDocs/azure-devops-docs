@@ -36,7 +36,7 @@
 - name: Notifications
   href: ../notifications/toc.yml
 - name: Extensions >>
-  href: ../marketplace-overview.md
+  href: ../marketplace/marketplace-overview.md
 - name: Usage
   items:
   - name: Usage & rate limits 
