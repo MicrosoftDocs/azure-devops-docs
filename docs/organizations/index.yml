@@ -55,8 +55,6 @@ landingContent:
             url: ./accounts/add-organization-users.md
           - text: Connect your organization to Azure Active Directory
             url: ./accounts/connect-organization-to-azure-ad.md
-          - text: Access, export, and filter audit logs 
-            url: ..//audit/azure-devops-auditing.md
   - title: Manage permissions & security groups  
     linkLists:
       - linkListType: overview
@@ -87,7 +85,7 @@ landingContent:
             url: ./billing/buy-more-build-vs.md
           - text: Try Azure Test Plans for free
             url: ./billing/try-additional-features-vs.md
-  - title: Add & manage organizations (cloud)
+  - title: Manage organizations (cloud)
     linkLists:
       - linkListType: overview
         links:
@@ -187,18 +185,5 @@ landingContent:
         links:
           - text: Set test retention policies
             url: ..//test/how-long-to-keep-test-results.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Service hooks
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Integrate with Service hooks
-            url: ../service-hooks/overview.md
-      - linkListType: quickstart
-        links:
-          - text: Create a service hook with Web Hooks
-            url: ../service-hooks/services/webhooks.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Teams
-            url: ../service-hooks/services/teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Integrate with Slack
-            url: ../service-hooks/services/slack.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+
 
