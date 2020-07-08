@@ -24,11 +24,11 @@ resources:
     source: Farbrikam-CI  
     trigger:    
       stages:            ### This stage filter is used when evaluating conditions for triggering your CD pipeline
-      - PreProduction    ### stages are AND'ed. Upon successful completion of the stages provided, your CD pipeline will be triggered. 
+      - PreProduction    ### stages are AND'ed. On successful completion of all the stages provided, your CD pipeline will be triggered. 
       - Production
 ```
 
-Upon successful completion of the stage(s) provided in the filter, a new run will be automatically created for your CD pipeline.
+Upon successful completion of the stage(s) provided in the filter in your CI pipeline, a new run will be automatically created for your CD pipeline.
 
 
 ### Generic webhook based triggers for YAML pipelines
@@ -39,27 +39,25 @@ You can subscribe to any external events through its webhooks (Github, Github En
 
 Here are the steps to configure the webhook triggers:
 
-**Event Type** can select either Asset or Component, and it's also possible that it can select both. 
-
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
     - Request Url - "https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview"
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value. 
     - Event - The event on which to send the notification.
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information.
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
-    - **HTTP Header** - the name of the HTTP header in the request that contains the payload hash value for request verification. In the case of the GitHub webhook request, the request header will be "**X-Hub-Signature**"
-    - **Secret** - the shared secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key.
+    - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
+    - **Secret** - The shared secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key.
 
 ![Image](../../media/172-pipelines-0-1.png)
 
-3. Setup your Pipeline -  you can now subscribe to a webhook as part of your YAML pipeline with a new resource typed called webhooks. A pipeline run will be triggered each time Azure DevOps receives a request to the incoming webhook endpoint.  You can filter for the incoming Webhook requests based on the JSON payload data and consume that payload data in the form of variables in your jobs.
+3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. Whenever a webhook event is received by the Incoming Webhook service connection, a new run will be triggered for all the pipelines subcribed to the webhook. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline. You can also consume the payload data in the form of variables in your jobs.
 
 ```yml
 trigger: none
 
 resources:
   webhooks:
-    - webhook: MyWebhookTrigger
+    - webhook: MyWebhookTrigger          ### Webhook alias
       connection: MyWebhookConnection
       filters:
         - path: repositoryName      ### JSON path in the payload
@@ -72,7 +70,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}} ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
       Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
       Write-Host ${{ parameters.MyWebhookTrigger.component.name}}
       Write-Host ${{ parameters.MyWebhookTrigger.component.version}}
@@ -80,7 +78,7 @@ steps:
 
 4. A new pipeline run is triggered whenever a webhook notification is received and meets the conditions defined in your YAML pipeline. Multiple pipelines can subscribe to one Webhook and have different filter conditions. If you want to use the same webhook across the projects, you can share the incoming webhook service connection across projects and subscribe to the shared connection in each of the projects.
 
-Webhooks is a catch-all for integrating with any external service. Also, in cases where you have on-premise services to which Azure DevOps does not have a line of sight, webhook triggers would be a great way to automate workflows.
+Webhook triggers is be a great way to automate the workflows when you need to integrate with any external services apart from the first class resources (Jenkins, ACR and GitHub) we already support.
 
 ### YAML resource trigger issues support and traceability
 
@@ -89,6 +87,6 @@ In this Sprint, we have added support for showing info about the resource trigge
 Resource triggers can fail to execute for two reasons.
 
 1. Invalid configuration: If the source of the service connection provided is not valid. Or if there are any syntax errors, triggers will not be configured, so we show these as errors. 
-2. Filter conditions did not match: Based on the filters set on triggers, some of the CI runs that don't match the condition will not trigger the CD run. The error will show you the exact CI run, and the CD YAML commit that correlates to the exception.
+2. Trigger conditions did not match: For any resource trigger defined in your YAML pipeline, if the filter conditions didn't match the event received, no action is taken. This info is logged as part for trigger issues along with the event details (CI run in case of pipeline resource) and YAML of the CD pipeline used for evaluation.
 
 ![Image](../../media/172-pipelines-0-2.png)
