@@ -212,6 +212,86 @@ The following table lists all the `azure repos` commands you can use in your Tea
 | @azure repos feedback	| Report a problem or suggest a feature |
 | @azure repos unsubscribe all [project url] | Remove all repositories (belonging to a project) and their associated subscriptions from a channel |
 
+ ## Multi-tenant support
+
+In your organization if you are using a different email or tenant for Microsoft Teams and Azure DevOps, perform the following steps to sign in and connect based on your use case. 
+ 
+ <table>
+  <tr>
+   <td>
+       <strong>Case</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Microsoft Teams</strong>
+   </td>
+   <td>
+        <strong>Email ID and tenant in Azure DevOps</strong>
+   </td>
+   <td>
+        <strong>Steps to take </strong>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        1
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        Sign in using <strong>Sign in</strong> button.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        2
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1)
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 2)
+   </td>
+   <td>
+    <ul>
+	<li>Sign in the Azure DevOps account</li> 
+	<li>In the same browser, start a new tab, navigate to https://teams.microsoft.com/</li> 
+	<li>Run the <code>signin</code> command and choose the <strong>Sign in</strong> button. </li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td>
+        3
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+        <u>email2@pqr.com</u> (tenant 2) 
+   </td>
+   <td>
+        Sign in using <strong>Sign in with different email address</strong>, in the email id picker use the email2 to sign in to Azure DevOps.
+   </td>
+  </tr>
+  <tr>
+   <td>
+        4
+   </td>
+   <td>
+        <u>email1@abc.com</u> (tenant 1) 
+   </td>
+   <td>
+        <u>email2@pqr.com</u> (non default tenant 3)
+   </td>
+   <td>
+    This scenario is not supported today.
+   </td>
+  </tr>
+</table>
 
 ## Troubleshooting
 
