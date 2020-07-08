@@ -245,7 +245,7 @@ The following table describes the permissions that control access to test functi
 
 You can grant permissions by following the procedures that are indicated for the specific scope area:  
 
-- You can set project-level permissions or area node permissions from the administration page of web portal. See ![Permissions reference](../../organizations/security/permissions.md) and [Customize your area or iteration paths](../../organizations/settings/set-area-paths.md).  
+- You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../organizations/security/permissions.md) and [Customize your area or iteration paths](../../organizations/settings/set-area-paths.md).  
 
 - You can set project collection permissions from Team Explorer by choosing <strong>Team, Team Project Collection Settings, Security</strong>, by opening and using the administration console for Team Foundation, or by using the <strong>TFSSecurity</strong> and <strong>tf</strong> command-line tools. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
 
