@@ -110,7 +110,7 @@
   - name: Azure Boards settings  
     href: ../reference/index.yml
   - name: Search  
-    href: ../projects/search/overview.md
+    href: ../project/search/overview.md
   - name: Get started  
     href: ../get-started/index.yml
   - name: Marketplace & extensibility  
