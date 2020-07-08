@@ -443,6 +443,54 @@ steps:
 ```
 ---
 
+## Resources: `packages`
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. 
+
+When specifying `package` resources, set the package as NuGet or npm. You can also enable automated pipeline triggers when a new package version gets released. 
+
+To use GitHub packages, you will need to use PAT-based authentication and create a GitHub service connection that uses PAT. 
+
+By default, packages will not be automatically downloaded into jobs. To download, use `getPackage`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+---
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](../library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
+```
+---
+
 ## Troubleshooting authorization for a YAML pipeline
 
 Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
