@@ -7,7 +7,7 @@ author: vijayma
 ms.date: 07/05/2020
 ---
 
-**Region: Central US**
+**Central US**
 
 ```
     @{Name=pkgsprodcus1ip1; IpAddress=13.86.125.169}
