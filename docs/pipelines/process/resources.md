@@ -16,7 +16,7 @@ A resource is anything used by a pipeline that lives outside the pipeline. Any o
 * CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
 * code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
-* package feeds (Azure Artifact feed, Artifactory package etc.)  
+* package feeds (Azure Artifact feed, GitHub packages, Artifactory package etc.)  
 
 ## Why resources?
 
