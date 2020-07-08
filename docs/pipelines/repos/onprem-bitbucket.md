@@ -92,4 +92,10 @@ Problems related to BitBucket Server integration fall into the following categor
 
 ### Failing checkout
 
+#### When I atempt to start a new run manually, there is a delay of 4-8 minutes before it starts.
+
+* Your BitBucket server is not reachable from Azure Pipelines. Make sure that you have not selected the option to **attempt accessing this Git server from Azure Pipelines** in the BitBucket service connection. If that option is selected, Azure Pipelines will attempt to contact to your server and since your server is unreachable, it eventually times out and starts the run anyway. Unchecking that option speeds up your manual runs.
+
+#### The checkout step fails with the error that the server cannot be resolved.
+
 Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your BitBucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
