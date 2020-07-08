@@ -30,9 +30,9 @@ landingContent:
         links:
           - text: Configure team tools
             url: ../organizations/settings/manage-teams.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          - text: Define team area paths
+          - text: Set team area paths
             url: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          - text: Configure team iterations
+          - text: Set team iterations
             url: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - title: Configure projects
     linkLists:
@@ -46,12 +46,8 @@ landingContent:
         links:
           - text: Define area paths
             url: ../organizations/settings/set-area-paths.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          - text: Configure iterations
+          - text: Define iteration paths (sprints)
             url: ../organizations/settings/set-iteration-paths-sprints.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-      - linkListType: how-to-guide
-        links:
-          - text: Connect to GitHub
-            url: ../boards/github/connect-to-github.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - title: Customize an Inheritance process  
     linkLists:
       - linkListType: overview
@@ -66,6 +62,10 @@ landingContent:
             url: ../organizations/settings/work/add-custom-wit.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
       - linkListType: tutorial
         links:
+          - text: Customize a workflow
+            url: ../organizations/settings/work/customize-process-workflow.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
+          - text: Apply rules to workflow
+            url: ../organizations/settings/work/apply-rules-to-workflow-states.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
           - text: Customize a project
             url: ../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
           - text: Create and manage a process

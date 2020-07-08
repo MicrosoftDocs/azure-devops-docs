@@ -123,7 +123,7 @@
     href: /rest/api/vsts/core/teams
 - name: Resources
   items:
-  - name: Boards settings  
+  - name: Azure Boards settings  
     href: ../reference/index.yml
   - name: Marketplace & extensibility  
     href: ../marketplace-extensibility/index.yml
