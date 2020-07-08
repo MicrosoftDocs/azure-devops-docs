@@ -149,7 +149,7 @@ landingContent:
             url: ../notifications/howto-manage-personal-notifications.md
           - text: Set team notifications
             url: ../notifications/howto-manage-team-notifications.md
- - title: Audit & usage (cloud)
+  - title: Audit & usage (cloud)
     linkLists:
       - linkListType: quickstart
         links:
