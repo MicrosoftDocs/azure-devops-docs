@@ -28,7 +28,7 @@ resources:
       - Production
 ```
 
-Upon successful completion of the stage(s) provided in the filter in your CI pipeline, a new run will be automatically created for your CD pipeline.
+When the stage(s) have completed successfully for the provided filter in your CI pipeline, a new run will be automatically created for your CD pipeline.
 
 
 ### Generic webhook based triggers for YAML pipelines
@@ -82,7 +82,7 @@ Webhook triggers are a great way to automate the workflows when you need to inte
 
 ### YAML resource trigger issues support and traceability
 
-In this Sprint, we have added support for showing info about the resource triggers that failed to execute. There is a new menu item in the pipeline definition page called 'Trigger issues' where this info is recorded for the customer to track.
+In this Sprint, we have added support for showing info about the resource triggers when it fails to execute. There is a new menu item in the pipeline definition page called 'Trigger issues' where this info is recorded for the customer to track.
 
 Resource triggers can fail to execute for two reasons.
 
