@@ -52,13 +52,12 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
     > [!div class="mx-imgBorder"]
     > ![PAT setup](../../repos/git/media/setup-personal-access-token.png)
 
-5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will authorize for *your specific tasks*.
+5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will be authorized to access. You will only need **Packaging: Read, write & manage** permissions for this tutorial but you can also add more privileges if you'd like to use this token for other tasks.
 
-    For this tutorial, you will only need **Packaging: Read, write & manage** permissions, but you may want to add more if you'd like to use this token for other tasks.
+6. When you're done, make sure to copy your token to a safe location, as you won't be able to view it afterwards.
 
-6. When you're done, make sure to *copy the token*, as this value will only be shown once. You'll use this token as your password, you can choose to store this value in whatever manner you prefer, but it should be treated as safely as a password. **You will need this value later in the tutorial**.
-
-> If you like, you can [learn more about using PATs to authenticate in Azure DevOps Services](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate).
+> [!NOTE]
+> To learn more about how to user personal access tokens, check out the [Authenticate with PAT](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) article.
 
 ## Create the feed
 
