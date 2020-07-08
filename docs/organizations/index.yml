@@ -1,10 +1,11 @@
 ### YamlMime:Landing
 
-title: Settings & Usage documentation
-summary: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
+title: Settings, Security, & Usage documentation
+summary: Assign users to security groups, manage permissions, access levels, and billing for Azure DevOps. Configure resources and manage settings for an organization, project, team, or user. 
+
 
 metadata:
-  title: Configure resources and manage settings for an organization, project, team, or user. Customize work tracking resources for Azure Boards and Agile tools.
+  title: Assign users to security groups, manage permissions, access levels, and billing for Azure DevOps. Configure resources and manage settings for an organization, project, team, or user. 
   ms.prod: devops 
   ms.technology: devops-settings
   ms.topic: landing-page 
@@ -24,37 +25,85 @@ landingContent:
         links:
           - text: About settings
             url: ./settings/about-settings.md
+          - text: About security & identity
+            url: ./security/about-security-identity.md 
       - linkListType: quickstart
         links:
-          - text: Set user preferences
-            url: ./settings/set-your-preferences.md
           - text: Get started as an administrator
-            url: ../user-guide/project-admin-tutorial.md
+            url: ../user-guide/project-admin-tutorial.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add users to a team or project
+            url: ../organizations/security/add-users-team-project.md
+          - text: Set repository permissions
+            url: ../organizations/security/set-git-tfvc-repository-permissions.md
           - text: Add project or collection administrators
             url: ../organizations/security/set-project-collection-level-permissions.md
-  - title: Add and manage teams
+          - text: Set user preferences
+            url: ./settings/set-your-preferences.md
+ - title: Manage access to your organization (cloud)
     linkLists:
-      - linkListType: concept
+      - linkListType: overview
         links:
-          - text: About teams and Agile tools
-            url: ./settings/about-teams-and-settings.md
+          - text: About organizations
+            url: ./accounts/organization-management.md
+          - text: About access levels
+            url: ./security/access-levels.md 
+          - text: About accessing your organization with Azure Active Directory
+            url: ./accounts/access-with-azure-ad.md
       - linkListType: quickstart
         links:
-          - text: Add a team
-            url: ./settings/add-teams.md
-          - text: Configure team tools
-            url: ./settings/add-teams.md
-          - text: Define team area paths
-            url: ./settings/set-area-paths.md
-          - text: Configure team iterations
-            url: ./settings/set-iteration-paths-sprints.md
-          - text: Add a team administrator
-            url: ./settings/add-team-administrator.md
-  - title: Add and manage projects
+          - text: Add users to an organization 
+            url: ./accounts/add-organization-users.md
+          - text: Connect your organization to Azure Active Directory
+            url: ./accounts/connect-organization-to-azure-ad.md
+          - text: Access, export, and filter audit logs 
+            url: ..//audit/azure-devops-auditing.md
+  - title: Manage permissions & security groups  
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About permissions & groups
+            url: ./security/about-permissions.md
+      - linkListType: quickstart
+        links:
+          - text: View permissions
+            url: ./security/view-permissions.md
+          - text: Change individual permissions
+            url: ./security/change-individual-permissions.md
+          - text: Add users to a team or project
+            url: ./security/add-users-team-project.md
+  - title: Manage billing
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Billing overview
+            url: ./billing/overview.md
+      - linkListType: quickstart
+        links:
+          - text: Buy Basic access
+            url: ./billing/buy-basic-access-add-users.md
+          - text: Set up billing for your organization
+            url: ./billing/set-up-billing-for-your-organization-vs.md
+          - text: Buy CI/CD for Azure DevOps
+            url: ./billing/buy-more-build-vs.md
+          - text: Try Azure Test Plans for free
+            url: ./billing/try-additional-features-vs.md
+  - title: Add & manage organizations (cloud)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About organizations
+            url: ./accounts/organization-management.md
+          - text: Plan your organizational structure
+            url: ../user-guide/plan-your-azure-devops-org-structure.md
+      - linkListType: quickstart
+        links:
+          - text: Create an organization 
+            url: ./accounts/create-organization.md
+  - title: Add & manage projects
     linkLists:
       - linkListType: concept
         links:
-          - text: About projects and scaling up
+          - text: About projects & scaling up
             url: ./projects/about-projects.md
       - linkListType: quickstart
         links:
@@ -70,18 +119,24 @@ landingContent:
             url: ../user-guide/project-admin-tutorial.md
           - text: Connect to GitHub
             url: ../boards/github/connect-to-github.md
-  - title: Add and manage organizations (cloud)
+  - title: Add & manage teams
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
-          - text: About organizations
-            url: ./accounts/organization-management.md
-          - text: Plan your organizational structure
-            url: ../user-guide/plan-your-azure-devops-org-structure.md
+          - text: About teams & Agile tools
+            url: ./settings/about-teams-and-settings.md
       - linkListType: quickstart
         links:
-          - text: Create an organization 
-            url: ./accounts/create-organization.md
+          - text: Add a team
+            url: ./settings/add-teams.md
+          - text: Configure team tools
+            url: ./settings/add-teams.md
+          - text: Define team area paths
+            url: ./settings/set-area-paths.md
+          - text: Configure team iterations
+            url: ./settings/set-iteration-paths-sprints.md
+          - text: Add a team administrator
+            url: ./settings/add-team-administrator.md
   - title: Set alerts or notifications
     linkLists:
       - linkListType: concept
@@ -94,6 +149,14 @@ landingContent:
             url: ../notifications/howto-manage-personal-notifications.md
           - text: Set team notifications
             url: ../notifications/howto-manage-team-notifications.md
+ - title: Audit & usage (cloud)
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Access, export, and filter audit logs 
+            url: ./audit/azure-devops-auditing.md
+          - text: Rate limits & usage 
+            url: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Repos resources
     linkLists:
       - linkListType: how-to-guide
@@ -110,13 +173,13 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Create and manage agent pools
+          - text: Create & manage agent pools
             url: ../pipelines/agents/pools-queues.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage deployment groups
+          - text: Create & manage deployment groups
             url: ../pipelines/release/deployment-groups/index.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Set build and release retention policies
+          - text: Set build & release retention policies
             url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Create and manage service connections
+          - text: Create & manage service connections
             url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Test resources
     linkLists:

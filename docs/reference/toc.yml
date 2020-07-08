@@ -42,7 +42,7 @@
     href: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: REST API reference
   items:
-  - name: Area and iteration paths
+  - name: Area & iteration paths
     href: /rest/api/vsts/wit/classification%20nodes
   - name: Processes
     href: /rest/api/azure/devops/processes/processes
