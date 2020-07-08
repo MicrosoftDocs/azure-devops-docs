@@ -39,7 +39,7 @@ landingContent:
             url: ../organizations/security/set-project-collection-level-permissions.md
           - text: Set user preferences
             url: ./settings/set-your-preferences.md
- - title: Manage access to your organization (cloud)
+  - title: Manage access to your organization (cloud)
     linkLists:
       - linkListType: overview
         links:
