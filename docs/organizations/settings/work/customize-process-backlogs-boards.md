@@ -72,7 +72,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Edit, rename, or delete a portfolio backlog 
 
-From the Backlog levels page, choose the ![](../../../media/icons/more-actions.png)  context menu of a portfolio backlog to edit, rename, or delete it.  
+From the Backlog levels page, choose the ![](../../../media/icons/actions-icon.png)  context menu of a portfolio backlog to edit, rename, or delete it.  
 
 > [!NOTE]    
 > You can't add an inherited work item type to any backlog level. 
