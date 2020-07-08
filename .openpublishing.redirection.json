@@ -13153,6 +13153,11 @@
       "source_path": "release-notes/index.md",
       "redirect_url": "https://aka.ms/azuredevops/releasenotes",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/security-access-billing/index.yml",
+      "redirect_url": "/azure/devops/organizations/index",
+      "redirect_document_id": false
     }
   ]
 }
