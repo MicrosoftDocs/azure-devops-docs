@@ -25,6 +25,8 @@ landingContent:
         links:
           - text: About settings
             url: ./settings/about-settings.md
+          - text: About access levels
+            url: ./security/access-levels.md
           - text: About security & identity
             url: ./security/about-security-identity.md 
       - linkListType: quickstart
@@ -46,10 +48,8 @@ landingContent:
           - text: About managing your organization
             url: ./accounts/organization-management.md
           - text: Plan your organizational structure
-            url: ../user-guide/plan-your-azure-devops-org-structure.md
-          - text: About access levels
-            url: ./security/access-levels.md 
-          - text: About accessing your organization with Azure Active Directory
+            url: ../user-guide/plan-your-azure-devops-org-structure.md 
+          - text: Manage access with Azure Active Directory
             url: ./accounts/access-with-azure-ad.md
       - linkListType: quickstart
         links:
@@ -143,18 +143,6 @@ landingContent:
             url: ./audit/azure-devops-auditing.md
           - text: Rate limits & usage 
             url: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - title: Configure Repos resources
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Create & manage Git repositories
-            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage Git branch policies
-            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Manage repository permissions
-            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-          - text: Add TFVC check-in policies
-            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Pipelines resources
     linkLists:
       - linkListType: how-to-guide
@@ -167,6 +155,18 @@ landingContent:
             url: ../pipelines/policies/retention.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
           - text: Create & manage service connections
             url: ../pipelines/library/service-endpoints.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - title: Configure Repos resources
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create & manage Git repositories
+            url: ../repos/git/create-new-repo.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage Git branch policies
+            url: ../repos/git/branch-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Manage repository permissions
+            url: ./security/set-git-tfvc-repository-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+          - text: Add TFVC check-in policies
+            url: ../repos/tfvc/add-check-policies.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - title: Configure Test resources
     linkLists:
       - linkListType: how-to-guide

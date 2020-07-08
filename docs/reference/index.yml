@@ -104,3 +104,13 @@ landingContent:
         links:
           - text: XML element reference
             url: process-templates/process-template-plug-ins-xml-elements-index.md 
+  - title: Reference  
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Naming restrictions
+            url: ../organizations/settings/naming-restrictions.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+          - text: Workflow states & categories
+            url: /azure/devops/boards/work-items/workflow-and-state-categories?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
+          - text: Work tracking object limits
+            url: ../organizations/settings/work/object-limits.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
