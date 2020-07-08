@@ -1,4 +1,4 @@
-Every item on the Visual Studio Marketplace, including extensions and integrations, belong to a publisher. 
+Every item on the Visual Studio Marketplace, including extensions and integrations, belongs to a publisher. 
 
 A publisher is owned by a user, typically the user that created it, and can also be shared with other users.
 

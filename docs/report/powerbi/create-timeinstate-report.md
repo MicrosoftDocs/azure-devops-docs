@@ -352,9 +352,12 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > IF (
 >     ISBLANK ( 'View Name'[State Previous] ),
 >     'View Name'[Created Date].[Date] = 'View Name'[Date],
->     'View Name'[State Previous] = 'View Name'[State]
+>     'View Name'[State Previous] <> 'View Name'[State]
 > )
 > ```
+
+The calculated column is a boolean value that identifies whether the row is a state transition. By using the `Not Equal To` operator, you correctly catch rows where the previous state does not match the current state, which means the comparison returns True as expected.  
+
 
 <a id="state-flow" />
 

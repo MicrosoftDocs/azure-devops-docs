@@ -117,7 +117,7 @@ Job authorization scope can be set for each pipeline. To set this scope:
 ---
 
 >[!NOTE]
-> If your pipeline is in a **pubic project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
+> If your pipeline is in a **public project**, then the job authorization scope is automatically restricted to **project** no matter what you configure in any setting. Jobs in a public project can access resources such as build artifacts or test results only within the project and not from other projects of the organization.
 
 ## Build service account
 

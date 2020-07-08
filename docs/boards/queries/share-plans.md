@@ -383,6 +383,15 @@ To learn more, see [Share information using the project portal](../../report/sha
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"  
+
+## Marketplace extensions  
+
+You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+
+::: moniker-end
+
+
 ## Related articles  
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
@@ -390,11 +399,4 @@ As you can see, there are many ways to share information using work items alone.
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
 
-::: moniker range=">= tfs-2017"  
-
-### Marketplace extensions  
-
-You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#VSTS). 
-
-::: moniker-end
 
