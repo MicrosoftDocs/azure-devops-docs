@@ -39,19 +39,23 @@ landingContent:
             url: ../organizations/security/set-project-collection-level-permissions.md
           - text: Set user preferences
             url: ./settings/set-your-preferences.md
-  - title: Manage access to your organization (cloud)
+  - title: Manage your organization (cloud)
     linkLists:
       - linkListType: overview
         links:
-          - text: About organizations
+          - text: About managing your organization
             url: ./accounts/organization-management.md
+          - text: Plan your organizational structure
+            url: ../user-guide/plan-your-azure-devops-org-structure.md
           - text: About access levels
             url: ./security/access-levels.md 
           - text: About accessing your organization with Azure Active Directory
             url: ./accounts/access-with-azure-ad.md
       - linkListType: quickstart
         links:
-          - text: Add users to an organization 
+          - text: Create an organization 
+            url: ./accounts/create-organization.md
+          - text: Add users to your organization 
             url: ./accounts/add-organization-users.md
           - text: Connect your organization to Azure Active Directory
             url: ./accounts/connect-organization-to-azure-ad.md
@@ -85,30 +89,12 @@ landingContent:
             url: ./billing/buy-more-build-vs.md
           - text: Try Azure Test Plans for free
             url: ./billing/try-additional-features-vs.md
-  - title: Manage organizations (cloud)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: About organizations
-            url: ./accounts/organization-management.md
-          - text: Plan your organizational structure
-            url: ../user-guide/plan-your-azure-devops-org-structure.md
-      - linkListType: quickstart
-        links:
-          - text: Create an organization 
-            url: ./accounts/create-organization.md
   - title: Add & manage projects
     linkLists:
       - linkListType: concept
         links:
           - text: About projects & scaling up
             url: ./projects/about-projects.md
-      - linkListType: quickstart
-        links:
-          - text: Add users to a project
-            url: ./security/add-users-team-project.md
-          - text: Add project administrators or set project-level permissions
-            url: ./security/set-project-collection-level-permissions.md
       - linkListType: how-to-guide
         links:
           - text: Create a project
@@ -117,6 +103,8 @@ landingContent:
             url: ../user-guide/project-admin-tutorial.md
           - text: Connect to GitHub
             url: ../boards/github/connect-to-github.md
+          - text: Customize your project
+            url: ../reference/index.yml
   - title: Add & manage teams
     linkLists:
       - linkListType: concept
