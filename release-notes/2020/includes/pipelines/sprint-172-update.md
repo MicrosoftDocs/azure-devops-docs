@@ -33,20 +33,20 @@ Upon successful completion of the stage(s) provided in the filter in your CI pip
 
 ### Generic webhook based triggers for YAML pipelines
 
-Today, we have various resources (such as pipelines, containers, builds, and packages) through which you can consume artifacts and enable automated triggers. These are first-class resources, and if you need to automate your deployment process based on any generic external event, they cannot be used. To extend the support to integrate pipelines with any external service and automate the entire workflow, we have introduced WebHook triggers support in YAML pipelines.
+Today, we have various resources (such as pipelines, containers, builds, and packages) through which you can consume artifacts and enable automated triggers. These are first-class resources, and if you need to automate your deployment process based on any generic external event, they cannot be used. We have introduced webhook triggers support in YAML Pipelines to help integrate pipelines with any external service and automate the entire workflow.
 
-You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. You can also configure additional filter conditions on triggers based on the JSON data received from the webhook. And the entire JSON data is available to you in the form of variables that can be consumed in your jobs.
+You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. You can also configure additional filter conditions on triggers based on the JSON data received from the webhook. The entire JSON data is available to you in the form of variables that can be consumed in your jobs.
 
 Here are the steps to configure the webhook triggers:
 
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
     - Request Url - "https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview"
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value. 
-    - Event - The event on which to send the notification.
+    - Event - The event on which to send the notification
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information.
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
-    - **Secret** - The shared secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key.
+    - **Secret** - The shared secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key
 
 ![Image](../../media/172-pipelines-0-1.png)
 
