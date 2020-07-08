@@ -90,3 +90,8 @@ Resource triggers can fail to execute for two reasons.
 2. Trigger conditions did not match: For any resource trigger defined in your YAML pipeline, if the filter conditions didn't match the event received, no action is taken. This info is logged as part for trigger issues along with the event details (CI run in case of pipeline resource) and YAML of the CD pipeline used for evaluation.
 
 ![Image](../../media/172-pipelines-0-2.png)
+
+
+### Banner for live site incidents impacting pipelines
+
+We've added a warning banner to the pipelines page to alert users of ongoing incidents in your region, which may impact your pipelines. 
