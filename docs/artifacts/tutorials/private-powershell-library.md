@@ -5,7 +5,7 @@ ms.technology: devops-artifacts
 ms.author: rabououn
 author: ramiMSFT
 ms.reviewer: amullans
-ms.date: 03/17/2020
+ms.date: 07/08/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -29,7 +29,7 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 ## Prerequisites
 
 1. [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
-2. [An Azure DevOps Services Account](https://azure.microsoft.com/services/devops/)
+2. An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
 
 ## Create a PAT to get command-line access to Azure DevOps Services
 
@@ -39,17 +39,18 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 2. From your home page, open your profile. Go to your security details:
 
-    <img alt="Go to organization home, open your profile, go to Security" src="../../repos/git/media/my-profile-team-services.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Profile security](../../repos/git/media/my-profile-team-services.png)  
 
 3. Create a personal access token.
 
-   <img alt="Add a personal access token" src="../../repos/git/media/add-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Personal access token](../../repos/git/media/add-personal-access-token.png)
 
-4.  Name your token. Select a lifespan for your token.
+4.  Provide a name and an expiration date for your token and select your organization.
 
-    If you have more than one organization, you can also select the organization where you want to use the token.
-
-    <img alt="Name your token, select a lifespan. If using Azure DevOps Services, select an account for your token" src="../../repos/git/media/setup-personal-access-token.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![PAT setup](../../repos/git/media/setup-personal-access-token.png)
 
 5.  Select the [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes) that this token will authorize for *your specific tasks*.
 
