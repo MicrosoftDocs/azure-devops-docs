@@ -35,33 +35,17 @@
   href: audit/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
-- name: Extensions
-  items: 
-  - name: Marketplace extensions
-    href: ../marketplace/overview.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Trusting Marketplace offerings
-    href: ../marketplace/trust.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Install extensions (cloud)
-    href: ../marketplace/install-extension.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Install extensions (on-premises)
-    href: ../marketplace/get-tfs-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Request and approve extensions
-    href: ../marketplace/request-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Uninstall or disable extensions
-    href: ../marketplace/uninstall-disable-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Manage extension permissions
-    href: ../marketplace/how-to/grant-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: FAQs about extensions
-    href: ../marketplace/faq-extensions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Extensions >>
+  href: ../marketplace-overview.md
 - name: Usage
   items:
-  - name: Usage and rate limits 
+  - name: Usage & rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Work tracking, process, and project limits 
+  - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
 - name: Service hooks >>
   href: ../service-hooks/overview.md
-- name: Pipelines (Build and release)
+- name: Pipelines (Build & release)
   items:
   - name: Agent pools & queues
     href: /azure/devops/pipelines/agents/pools-queues?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
@@ -87,7 +71,7 @@
     href: /azure/devops/test/how-long-to-keep-test-results?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: Troubleshooting
   items:
-  - name: User and permissions management
+  - name: User & permissions management
     href: ./accounts/faq-user-and-permissions-management.md
   - name: Trace permissions
     href: ./security/faq-trace-permissions.md

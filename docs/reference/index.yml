@@ -24,7 +24,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: About teams and Agile tools
+          - text: About teams & Agile tools
             url: ../organizations/settings/about-teams-and-settings.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
       - linkListType: quickstart
         links:
@@ -38,9 +38,9 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Configure and customize Boards 
+          - text: Configure & customize Boards 
             url: ../boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          - text: About projects and scaling up
+          - text: About projects & scaling up
             url: ../organizations/projects/about-projects.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
       - linkListType: quickstart
         links:
@@ -68,7 +68,7 @@ landingContent:
             url: ../organizations/settings/work/apply-rules-to-workflow-states.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
           - text: Customize a project
             url: ../organizations/settings/work/customize-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
-          - text: Create and manage a process
+          - text: Create & manage a process
             url: ../organizations/settings/work/manage-process.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
   - title: Customize an On-premises XML process  
     linkLists:
@@ -90,7 +90,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: About processes and process templates
+          - text: About processes & process templates
             url: ../boards/work-items/guidance/choose-process.md 
           - text: Process template files
             url: process-templates/overview-process-template-files.md 
