@@ -61,20 +61,26 @@ The first step is to create a PAT through the Azure DevOps Services UI to authen
 
 ## Create the feed
 
-A feed is a central repository that can store multiple packages of different types. We will need to create a feed in order to store packages, which will be PowerShell Modules in this scenario.
+A feed is a central repository that can store multiple packages of different types. To store our packages, the PowerShell Modules in this scenario, we will need to create a new feed.
 
 1. Navigate to **Azure Artifacts** from your organization.
 
-2. On your first visit to **Azure Artifacts**, you'll be welcomed with an image telling you to create a new feed, click _+ New feed_. If you already have feeds in **Azure Artifacts**, simply click _+ New feed_ near the top of the UI.
+    > [!div class="mx-imgBorder"]
+    > ![Azure Artifacts](../media/goto-feed-hub-azure-devops-newnav.png)
 
-3. In the dialog:
-    * **Name**: Give the feed a name.
-    * **Visibility**: Choose who can use your feed. The options are either: all people in your organization or, only you. Choose People in your organization for this scenario.
-    * **Packages from public sources**: This is for enabling upstream sources like NuGet or NPM registries, this option is not applicable in this scenario, you can keep the default choice.
+2. Select **Create Feed**
+
+    > [!div class="mx-imgBorder"]
+    > ![Create feed](../media/new-feed-button-azure-devops-newnav.png)
+
+3. In the dialog, provide a feed name and chose your visibility, scope and upstream sources.
+ 
+    > [!div class="mx-imgBorder"]
+    > ![new feed dialog box](../media/new-feed-with-scope-dialog.png)
     
-4. Click _Create_. 
+4. Select **Create**. 
 
-Now that you have the feed created that will act as your PowerShell repository, let's create and package a PowerShell module to store.
+Now that you've created a feed that will act as your PowerShell repository, let's create and package a PowerShell module.
 
 ## Creating, packaging, and sending a module
 
