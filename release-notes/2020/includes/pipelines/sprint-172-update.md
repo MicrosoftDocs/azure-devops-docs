@@ -41,16 +41,16 @@ Here are the steps to configure the webhook triggers:
 
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
     - Request Url - "https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview"
-    - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value. 
+    - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
     - Event - The event on which to send the notification
-2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information.
+2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
     - **Secret** - The shared secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key
 
 ![Image](../../media/172-pipelines-0-1.png)
 
-3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. Whenever a webhook event is received by the Incoming Webhook service connection, a new run will be triggered for all the pipelines subcribed to the webhook. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline. You can also consume the payload data in the form of variables in your jobs.
+3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. Whenever a webhook event is received by the Incoming Webhook service connection, a new run will be triggered for all the pipelines subcribed to the webhook. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline. You can also consume the payload data in the form of variables in your jobs
 
 ```yml
 trigger: none
@@ -76,9 +76,9 @@ steps:
       Write-Host ${{ parameters.MyWebhookTrigger.component.version}}
 ```
 
-4. A new pipeline run is triggered whenever a webhook notification is received and meets the conditions defined in your YAML pipeline. Multiple pipelines can subscribe to one Webhook and have different filter conditions. If you want to use the same webhook across the projects, you can share the incoming webhook service connection across projects and subscribe to the shared connection in each of the projects.
+4. A new resource type called webhooks is introduced in YAML pipelines. To subscribe to a webhook event, you need to define a webhook resource in your pipeline and point it to the  Incoming Webhook service connection. Whenever a webhook event is received by the Incoming Webhook service connection, a new run will be triggered for all the pipelines subscribed to the webhook event. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline, and you can use that payload data in the form of variables in your jobs.
 
-Webhook triggers is be a great way to automate the workflows when you need to integrate with any external services apart from the first class resources (Jenkins, ACR and GitHub) we already support.
+Webhook triggers are a great way to automate the workflows when you need to integrate with any external services apart from the first-class resources (Jenkins, ACR, and GitHub) we already support.
 
 ### YAML resource trigger issues support and traceability
 
