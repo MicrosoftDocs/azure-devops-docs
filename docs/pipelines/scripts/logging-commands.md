@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 06/09/2020
+ms.date: 07/07/2020
 ---
 
 # Logging commands
@@ -193,18 +193,20 @@ Finish the timeline record for the current task, set task result and current ope
 ##vso[task.complete result=Succeeded;]DONE
 ```
 
-### LogDetail: Create and update a timeline record for a task
+### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
 
 #### Usage
 
-Create and update detail timeline records.
+Creates and updates timeline records.
+This is primarily used internally by Azure Pipelines to report about steps, jobs, and stages.
+While customers can add entries to the timeline, they won't typically be shown in the UI.
 
-The first time we saw `##vso[task.detail]` for each task, we will create a detail timeline for the task. We will create and update nested timeline record base on id and `parentid`.
+The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
-Task author need to remember which GUID they used for each timeline record.
-The logging system will keep tracking the GUID for each timeline records that been created, so any new GUID will result a new timeline record.
+Task authors must remember which GUID they used for each timeline record.
+The logging system will keep track of the GUID for each timeline record, so any new GUID will result a new timeline record.
 
 #### Properties
 
@@ -236,7 +238,7 @@ Create new nested timeline record:
 Update exist timeline record: 
 
 ```
-##vso[task.logdetail id=exist timeline record guid;progress=15;state=InProgress;]update timeline record
+##vso[task.logdetail id=existing timeline record guid;progress=15;state=InProgress;]update timeline record
 ```
 
 ### SetVariable: Initialize or modify the value of a variable
