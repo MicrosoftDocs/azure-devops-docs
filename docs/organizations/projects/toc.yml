@@ -1,15 +1,19 @@
 - name: About projects
   href: about-projects.md
+- name: Create a project
+  href: create-project.md
 - name: Project & team quick reference
   href: project-team-quick-reference.md
 - name: When to add a team or project
   href: about-projects.md
 - name: Connect to a project
   href: connect-to-projects.md
+- name: What do I get with a project?
+  href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: Resources granted to members
+  href: resources-granted-to-project-members.md 
 - name: Manage projects
   items:
-  - name: Create a project
-    href: create-project.md
   - name: Connect a project to GitHub  
     href: ../../boards/github/connect-to-github.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Share your project vision  
@@ -26,12 +30,8 @@
     href: ../public/make-project-public.md
   - name: Save project data
     href: save-project-data.md
-- name: Reference
-  items:
-  - name: What do I get with a project?
-    href: ../../user-guide/services.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-  - name: Resources granted to members
-    href: resources-granted-to-project-members.md 
+
+
 
 
  
