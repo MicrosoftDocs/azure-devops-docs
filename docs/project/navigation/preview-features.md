@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: 'azure-devops'
-ms.date: 06/18/2020
+ms.date: 06/22/2020
 ---
 
 
@@ -31,53 +31,105 @@ Some preview features provide access to entire new functionality. Others, such a
 ---
 :::row:::
    :::column span="2":::
-      **Preview features per user**
+      **Preview features**
    :::column-end:::
-   :::column span="2":::
-      **Preview features per organization**
+   :::column span="1":::
+      **Per user**
+   :::column-end:::
+   :::column span="1":::
+      **Per organization**
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="2":::
-      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)
-      - [Experimental themes](#experimental-themes)
-      - [New account manager](#account-manager)
-      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)
-      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)
-      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)
-      - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New service connections experience](../../pipelines/library/service-endpoints.md)
-      - [New Settings Search in the organization settings panel](#search-org-settings)
-      - [New Teams page](../../organizations/settings/add-teams.md)
-      - [New Test Plans Page](../../test/new-test-plans-page.md)
-      - [New user hub](../../organizations/accounts/add-organization-users.md)
-      - New TFVC Page 
-      - New Wiki experience  
-      - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      - Task Insights for Failed Pipeline Runs (Enables insights toast for the failed tasks in Pipeline Run) 
+      [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
+      [Experimental themes](#experimental-themes)  
+      [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)  
+      [Git Forks](../../repos/git/forks.md)  
+      [New account manager](#account-manager)  
    :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      &nbsp;  
+      &nbsp;  
+      ![](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
    :::column span="2":::
-      - [Analytics Views](../../report/powerbi/what-are-analytics-views.md)  
-      - [Experimental themes](#experimental-themes)
-      - [Full Access to Azure Pipelines for Stakeholders](../../organizations/security/provide-stakeholder-pipeline-access.md)
-      - [Git Forks](../../repos/git/forks.md)
-      - [New account manager](#account-manager)
-      - [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      - [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
-      - [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/) 
-      - [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)
-      - [New service connections experience](../../pipelines/library/service-endpoints.md)
-      - [New Settings Search in the organization settings panel](#search-org-settings)  
-      - [New Teams page](../../organizations/settings/add-teams.md)  
-      - [New Test Plans Page](../../test/new-test-plans-page.md)  
-      - New TFVC Page 
-      - New Wiki experience  
-      - [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
-      - [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
-      - [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
-      - Task Insights for Failed Pipeline Runs (Enables insights toast for failed tasks in a pipeline run) 
+      [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
+      [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
+      [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
+      [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
+      [New service connections experience](../../pipelines/library/service-endpoints.md)  
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png) 
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [New Settings Search in the organization settings panel](#search-org-settings)  
+      [New Teams page](../../organizations/settings/add-teams.md)  
+      [New Test Plans Page](../../test/new-test-plans-page.md)  
+      New TFVC Page  
+      New Wiki experience  
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      &nbsp;  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png) 
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      &nbsp;  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
+      [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
+      [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
+      Task Insights for Failed Pipeline Runs 
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      &nbsp;  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+   :::column-end:::
+   :::column span="1":::
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
+      ![](../../media/icons/checkmark.png)  
    :::column-end:::
 :::row-end:::
 ---

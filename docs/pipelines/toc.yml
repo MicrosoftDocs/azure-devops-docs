@@ -280,6 +280,8 @@
     href: release/deploy-pull-request-builds.md
   - name: Classic CD pipelines
     href: release/define-multistage-release-process.md
+  - name: Stage templates in Azure Pipelines
+    href: release/env-templates.md
   - name: Deploy apps to Azure (Classic)
     items:
     - name: Azure Web App (Classic)
@@ -418,6 +420,8 @@
       href: release/deployment-groups/howto-provision-deployment-group-agents.md
     - name: Add a deployment group job to a release pipeline
       href: process/deployment-group-phases.md
+    - name: Deploying to Azure VMs using deployment groups in Azure Pipelines
+      href: release/deployment-groups/deploying-azure-vms-deployment-groups.md    
 - name: Configure security & settings
   items: 
 #    - name: About security options and requirements (New)
@@ -443,6 +447,8 @@
       href: release/approvals/servicenow.md
     - name: Integrate with Jenkins (Classic)
       href: release/integrate-jenkins-pipelines-cicd.md
+    - name: Automate infrastructure deployment with Terraform
+      href: release/automate-terraform.md
 - name: Migrate
   items:
   - name: Migrate from Jenkins

@@ -1,7 +1,8 @@
-﻿---
+---
 title: Edit multiple user stories, & other work items
 titleSuffix: Azure Boards
 description: Bulk edit/modify/update several/multiple backlog items, tasks, or bugs or linked parent-child items for Azure Boards or TFS 
+ms.technology: devops-agile
 ms.custom: "boards-backlogs, seodec18" 
 ms.assetid: 152CAFE0-2360-470A-98AC-F613A67C24D2  
 ms.author: kaelli

@@ -1,9 +1,9 @@
-﻿---
+---
 title: Troubleshoot process configuration issues
 titleSuffix: Azure DevOps & TFS 
 description: Resolve process configuration issues in Azure DevOps Services & Team Foundation Server
 ms.technology: devops-agile
-ms.assetid:  
+ms.custom: process
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting

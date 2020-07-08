@@ -353,9 +353,15 @@ In addition, deployment jobs can be run as a [container job](container-phases.md
  
 Define output variables in a deployment job's [lifecycle hooks](#descriptions-of-lifecycle-hooks) and consume them in other downstream steps and jobs within the same stage. 
 
+   > [!NOTE] 
+   > You cannot consume output variables in different stages. 
+   > To share variables between stages, output an [artifact](../artifacts/pipeline-artifacts.md) in one stage and then consume it in a subsequent stage.
+ 
+
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` 
+    - For virtual machine jobs using the **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. For example, if you have a deployment job to a virtual machine named `Vm1`, the output variable would be `$[dependencies.<job-name>.outputs['Deploy_vm1.<step-name>.<variable-name>']]`
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 

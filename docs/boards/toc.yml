@@ -95,7 +95,7 @@
   items:
   - name: Configure & customize
     href: configure-customize.md
-    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy, 
+    displayname: Scrum, Kanban, Scrumban, portfolio, hierarchy
   - name: Define area paths & assign to a team 
     href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Define iteration (sprints) & configure team iterations 
@@ -230,6 +230,8 @@
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
     href: ../reference/index.md
+  - name: Azure Test Plans 
+    href: ../test/index.yml
   - name: Client support 
     href: ../user-guide/tools.md
   - name: Azure DevOps CLI

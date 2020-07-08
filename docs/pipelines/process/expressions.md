@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Learn about how you can use expressions in Azure Pipelines or Team Foundation Server (TFS).
 ms.topic: conceptual
 ms.assetid: 4df37b09-67a8-418e-a0e8-c17d001f0ab3
-ms.date: 03/05/2020
+ms.date: 06/25/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -66,7 +66,7 @@ variables:
 `True` and `False` are boolean literal expressions.
 
 ### Null
-Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`).
+Null is a special literal expression that's returned from a dictionary miss, e.g. (`variables['noSuch']`). Null can be the output of an expression but cannot be called directly within an expression. 
 
 ### Number
 Starts with '-', '.', or '0' through '9'.
@@ -290,11 +290,13 @@ steps:
 * Min parameters: 1. Max parameters 1
 * Example: `length('fabrikam')` returns 8
 
+::: moniker range="> azure-devops-2019"
 ### lower
 * Converts a string or variable value to all lowercase characters
 * Min parameters: 1. Max parameters 1
 * Returns the lowercase equivalent of a string
 * Example: `lower('FOO')` returns `foo`
+::: moniker-end
 
 ### lt
 * Evaluates `True` if left parameter is less than the right parameter
@@ -331,11 +333,13 @@ steps:
 * Short-circuits after first `True`
 * Example: `or(eq(1, 1), eq(2, 3))` (returns True, short-circuits)
 
+::: moniker range="> azure-devops-2019"
 ### replace
 * Returns a new string in which all instances of a string in the current instance are replaced with another string
 * Min parameters: 3. Max parameters: 3
 * `replace(a, b, c)`: returns a, with all instances of b replaced by c
 * Example: `replace('https://www.tinfoilsecurity.com/saml/consume','https://www.tinfoilsecurity.com','http://server')` (returns `http://server/saml/consume`)
+::: moniker-end
 
 
 ### startsWith
@@ -345,11 +349,13 @@ steps:
 * Performs ordinal ignore-case comparison
 * Example: `startsWith('ABCDE', 'AB')` (returns True)
 
+::: moniker range="> azure-devops-2019"
 ### upper
 * Converts a string or variable value to all uppercase characters
 * Min parameters: 1. Max parameters 1
 * Returns the uppercase equivalent of a string
 * Example: `upper('bah')` returns `BAH`
+::: moniker-end
 
 
 ### xor
@@ -382,6 +388,7 @@ You can use the following status check functions as expressions in conditions, b
   * With no arguments, evaluates to `True` only if all previous jobs in the dependency graph succeeded or partially succeeded. 
   * If the previous job succeeded but a dependency further upstream failed, `succeeded('previousJobName')` will return true. When you just use `dependsOn: previousJobName`, it will fail because all of the upstream dependencies were not successful. To only evaluate the previous job, use `succeeded('previousJobName')` in a condition. 
   * With job names as arguments, evaluates to `True` if all of those jobs succeeded or partially succeeded.
+  * Evaluates to `False` if the pipeline is canceled.
 
 ### succeededOrFailed
 * For a step, equivalent to `in(variables['Agent.JobStatus'], 'Succeeded', 'SucceededWithIssues', 'Failed')`

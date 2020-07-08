@@ -90,6 +90,8 @@ Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item 
 - [1-Click Child-Links](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-child-links)  
 - [1-Click Tasks](https://marketplace.visualstudio.com/items?itemName=ruifig.vsts-work-item-one-click-tasks)  
 
+[!INCLUDE [temp](includes/faq-copy-clone.md)]
+
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -128,6 +130,8 @@ To learn more, see [Tasks supported by Backlogs, Boards, Taskboards, and Plans](
 ### Q: Can I define sprints and use with my Kanban board? 
 
 **A:** Yes. You can assign sprints to work items and filter your Kanban board based on the iteration path. To learn more, see [Filter your Kanban board](boards/filter-kanban-board.md). 
+
+[!INCLUDE [temp](includes/faq-critical-path.md)]
 
 
 ## Queries 
