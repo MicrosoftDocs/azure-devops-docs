@@ -22,13 +22,13 @@ One of the top requested features for Azure Boards is the ability to copy a work
 
 ### Improved rules for activated and resolved fields
 
-Up until now, the rules for **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** have been a mystery. They are only set for system work item types and are specific to the state value of "Active" and "Resolved". In sprint 172 we changed the logic so that these rules are no longer for a specific state. Instead, they are triggered by the category (state category) that the state resides in. For example, let's say you have a custom state of "Needs Testing" in the Resolved category. When the work item changes from "Active" to "Needs Testing", the **resolved by** and **resolved date** rules are triggered.
+Up until now, the rules for **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** have been a mystery. They are only set for system work item types and are specific to the state value of "Active" and "Resolved". In sprint 172 we changed the logic so that these rules are no longer for a specific state. Instead, they are triggered by the category (state category) that the state resides in. For example, let's say you have a custom state of "Needs Testing" in the Resolved category. When the work item changes from "Active" to "Needs Testing", the **Resolved By** and **Resolved Date** rules are triggered.
 
-This allows customers to create any custom state values and still generate the **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date fields**. Without the need to use custom rules.
+This allows customers to create any custom state values and still generate the **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** fields. Without the need to use custom rules.
     
 ### System work item types on backlogs and boards (private preview)
 
-Ever since the inception of the inheritance process model, several work item types are excluded from being added to boards and backlogs. These work item types include:
+Since the inception of the inheritance process model, several work item types are excluded from being added to boards and backlogs. These work item types include:
 
 | Process         | Work Item Type  | 
 | :------------- | :------------------| 
