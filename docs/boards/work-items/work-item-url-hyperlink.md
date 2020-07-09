@@ -23,12 +23,12 @@ You can define the URL for a work item using the syntax provided based on the ve
 
 Examples in this article use the following conventions:
 
--   *OrganizationName* specifies the name of the Azure Boards organization  
--   *ServerName* specifies the name of the TFS application tier server   
--   *Port* specifies the port, default=8080
--   *CollectionName* specifies the name of the project collection.
--   *TeamProjectName* specifies the project name
--   *WorkItemNumber* specifies the ID of the bug, task, or other work item.
+- *OrganizationName* specifies the name of the Azure Boards organization  
+- *ServerName* specifies the name of the TFS application tier server   
+- *Port* specifies the port, default=8080
+- *CollectionName* specifies the name of the project collection.
+- *TeamProjectName* specifies the project name
+- *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
 ::: moniker range="azure-devops"  
@@ -66,15 +66,23 @@ Share links to work items within the context of your board or backlog with the w
 
 For example: 
 
-```
-https://dev.azure.com/fabrikam/FabrikamFiber/_boards/board/t/Voice/Stories/?showParents=true&workitem=191
-```
+::: moniker-end  
 
-or, for Azure DevOps Server 2020: 
+::: moniker range="azure-devops"  
 
 ```
 https://dev.azure.com/fabrikam/FabrikamFiber/_boards/board/t/Voice/Stories/?showParents=true&workitem=191
 ```
+::: moniker-end  
+
+::: moniker range="azure-devops-2020"  
+
+```
+https://ServerName/DefaultCollection/ProjectName/_boards/board/t/Voice/Stories/?workitem=56
+```
+::: moniker-end  
+
+::: moniker range=">= azure-devops-2020"  
 
 Anyone you share the link with open to the same context you had when you shared the link.
 
