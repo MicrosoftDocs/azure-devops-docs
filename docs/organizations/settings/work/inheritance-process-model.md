@@ -304,8 +304,6 @@ Using one of the following two conditions, you can make select fields required f
 
 For example, you can make the Title or the State field Read-only for select users or groups. 
 
-### Restrict modification of closed work items 
-
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 ### Restrict modification of work items based on Area Path 

@@ -163,7 +163,7 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 ## Restrict modification of work items based on a user or group  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types restrict who can modify a specific field for a work item type. 
 
@@ -176,11 +176,11 @@ You can restrict modification of work items by adding a custom rule to the work 
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
-> The ability to restrict modification of work items based on a user or group is only supported with the On-premises XML process model at this time for on-premises Azure DevOps. 
+> For Azure DevOps Server 2019 and earlier versions, you can only restrict modification of work items based on a user or group with the On-premises XML process model. 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
