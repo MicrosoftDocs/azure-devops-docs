@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 07/08/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -555,15 +555,13 @@ You can use a branch other than `master` for new changes or change your main lin
 
 ::: moniker range=">= azure-devops-2019"
 
-1. [Go to your project](../../project/navigation/go-to-project-repo.md) and select **Project settings**.
+1. [Navigate](../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
-1. Scroll down and select **Repositories** from the **Code** section.
+3. Select the desired new default branch.
 
-1. Select your repository and expand the branches.
+4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
-1. Select **...** next to a branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
+   ![Set default branch](media/pull-requests/set-default-branch-in-product.png)
 
 ::: moniker-end
 

@@ -11,8 +11,9 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-> [!NOTE]
-> - The job name and stages can not contain keywords.
+> [!IMPORTANT]
+> - Job and stage names cannot contain keywords.
+> - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
 
@@ -359,7 +360,8 @@ Define output variables in a deployment job's [lifecycle hooks](#descriptions-of
 
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
-- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]`  
+- For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` 
+    - For virtual machine jobs using the **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. For example, if you have a deployment job to a virtual machine named `Vm1`, the output variable would be `$[dependencies.<job-name>.outputs['Deploy_vm1.<step-name>.<variable-name>']]`
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 

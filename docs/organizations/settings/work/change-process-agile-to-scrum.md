@@ -6,7 +6,7 @@ description: Change the process for your project from Agile to Scrum
 ms.topic: conceptual
 ms.technology: devops-agile
 ms.author: kaelli
-author: kaelli
+author: KathrynEE
 ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 04/17/2020
