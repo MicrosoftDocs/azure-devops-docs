@@ -239,7 +239,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ::: moniker-end
 
-### Configurable picklists 
+### Configurable drop-down menus or picklists 
 
 The following picklists are configured for each project and not customizable through an inherited process.   
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
@@ -247,9 +247,14 @@ The following picklists are configured for each project and not customizable thr
 
 Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
 
-......
+You can modify the following system fields' picklists: 
 
-
+- Resolved Reason
+- Priority
+- Severity
+- Risk
+- Value Area
+- Activity
 
 <a id="rename-field">  </a>
 
@@ -304,6 +309,12 @@ For details on defining custom rules, see [Add a rule to a work item type](../..
 ::: moniker-end
 
 [!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range=">= azure-devops-2020"
+
+### Restrict modification of closed work items
+
+::: moniker-end
 
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 

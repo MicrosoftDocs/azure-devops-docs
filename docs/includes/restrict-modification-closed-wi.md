@@ -9,8 +9,6 @@ ms.date: 07/09/2020
 
 <a id="restrict-modification-closed-wi" />
 
-## Restrict modification of closed work items
-
 Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
 
 ::: moniker range="azure-devops"

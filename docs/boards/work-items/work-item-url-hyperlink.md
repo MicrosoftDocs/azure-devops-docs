@@ -27,7 +27,7 @@ Examples in this article use the following conventions:
 - *ServerName* specifies the name of the TFS application tier server   
 - *Port* specifies the port, default=8080
 - *CollectionName* specifies the name of the project collection.
-- *TeamProjectName* specifies the project name
+- *ProjectName* specifies the project name
 - *WorkItemNumber* specifies the ID of the bug, task, or other work item.
  
 
@@ -58,6 +58,57 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
+::: moniker range="azure-devops-2020"  
+
+http://*ServerName:Port/CollectionName/ProjectName*/**_workitems?id=***WorkItemNumber***&_a=edit**</b>
+
+**Example:** 
+```  
+http://fabrikamprime:8080/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
+```  
+
+::: moniker-end  
+
+
+::: moniker range=">= tfs-2015 <= azure-devops-2019"  
+
+http://*ServerName:Port*/**tfs**/*CollectionName/ProjectName*/**_workitems?id**=*WorkItemNumber***&_a=edit** 
+
+**Example:** 
+```  
+http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
+```  
+
+::: moniker-end  
+
+::: moniker range="tfs-2013"  
+
+## TFS 2013.2
+
+<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/ProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
+
+**Example:**
+```
+http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133
+```
+
+## TFS 2013.1 and earlier versions
+
+<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems#_a=edit&id=</b>*WorkItemNumber*  
+
+
+**Example:**
+
+```
+http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit&id=133
+```
+
+
+::: moniker-end  
+
+
+
+
 ::: moniker range=">= azure-devops-2020"  
 
 ## Share links in context with your board or backlog
@@ -84,45 +135,9 @@ https://ServerName/DefaultCollection/ProjectName/_boards/board/t/Voice/Stories/?
 
 ::: moniker range=">= azure-devops-2020"  
 
-Anyone you share the link with open to the same context you had when you shared the link.
+Anyone you share the link with, opens the work item within the same context you had when you shared the link.
 
 
 ::: moniker-end  
 
-
-
-::: moniker range=">= tfs-2015 < azure-devops"  
-
-<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
-
-**Example:** 
-```  
-http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/133&_a=edit
-```  
-
-::: moniker-end  
-
-::: moniker range="tfs-2013"  
-
-## TFS 2013.2
-
-<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems/edit/</b>*WorkItemNumber*
-
-**Example:**
-```
-http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems/edit/133
-```
-
-## TFS 2013.1 and earlier versions
-
-<b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems#_a=edit&id=</b>*WorkItemNumber*  
-
-
-**Example:**
-```
-http://fabrikamprime:8080/tfs/DefaultCollection/Phone%20Saver/_workitems#_a=edit&id=133
-```
-
-
-::: moniker-end  
 
