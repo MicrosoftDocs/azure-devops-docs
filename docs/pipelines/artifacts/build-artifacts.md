@@ -208,7 +208,7 @@ YAML is not supported in TFS.
 
 ### Consume artifacts in release pipelines
 
-You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice. At present, you cannot download artifact produced by a YAML pipeline in another YAML pipeline.
+You can download artifacts produced by either a build pipeline (created in a classic editor) or a YAML pipeline (created through a YAML file) in a release pipeline and deploy them to the target of your choice.
 
 ### Consume an artifact in the next job of your pipeline
 
