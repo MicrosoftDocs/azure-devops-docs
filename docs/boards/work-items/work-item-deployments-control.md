@@ -13,7 +13,7 @@ ms.date: 07/06/2020
 
 # Link work items to deployments
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 The release deployments control shows release information for those work items that have been associated to a Git commit which is part of a build being released. To learn how to associate work items to commits, see [Drive Git development from a work item](../backlogs/connect-work-items-to-git-dev-ops.md).
 
