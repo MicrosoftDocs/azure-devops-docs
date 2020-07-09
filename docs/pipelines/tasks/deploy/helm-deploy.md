@@ -74,7 +74,7 @@ variables:
 ### Kubernetes Service Connection
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required unless environment resource already present) Select a Kubernetes service connection.</td></tr>
+<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required unless an environment resource is already present) Select a Kubernetes service connection.</td></tr>
 <tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the <strong>kubectl</strong> commands are run. If not specified, the default namespace is used.</td></tr>
 </table>
 
