@@ -14,7 +14,7 @@ ms.date: 04/27/2020
 
 # Link type reference 
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="link-type-guidance"></a>
 
