@@ -52,7 +52,7 @@ If the simple test pipeline mentioned in the above section fails with the error 
 
 1. Work with your IT department to open a network path between Microsoft-hosted agents and BitBucket server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
 
-2. Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the BitBucket server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the GitHub Enterprise Server connection is resolvable from the self-hosted agents.
+2. Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the BitBucket server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the service connection is resolvable from the self-hosted agents.
 
 ## Azure DevOps IP addresses
 
@@ -63,7 +63,7 @@ When you use **Other Git** connection to set up a classic pipeline, disable comm
 * You cannot use scheduled triggers with the option to build only when there are changes
 * You cannot view information about the latest commit in the user interface
 
-If you want to enhance this experience, it is important that you enable communication from Azure Pipelines to GitHub Enterprise Server. 
+If you want to enhance this experience, it is important that you enable communication from Azure Pipelines to BitBucket Server. 
 
 Determine the region your Azure DevOps organization is hosted in. Go to the **Organization settings** in your Azure DevOps UI. The region is listed under **Region** in the **Overview** page.
 
@@ -84,11 +84,15 @@ Problems related to BitBucket Server integration fall into the following categor
 
 ### Failing triggers
 
-[!INCLUDE [qa](includes/qa2.md)]
+#### I pushed a change to my server, but the pipeline is not being triggered.
+
+Follow each of these steps to troubleshoot your failing triggers:
 
 * Is your BitBucket server accessible from Azure Pipelines? Azure Pipelines periodically polls BitBucket server for changes. If the BitBucket server is behind a firewall, this traffic may not reach your server. See [Azure DevOps IP Addresses](#azure-devops-ip-addresses) and verify that you have granted exceptions to all the required IP addresses. These IP addresses may have changed since you have originally set up the exception rules. You can only start manual runs if you used an external Git connection and if your server is not accessible from Azure Pipelines.
 
-[!INCLUDE [qa](includes/qa3.md)]
+* Is your pipeline paused or disabled? Open the editor for the pipeline, and then select **Settings** to check. If your pipeline is paused or disabled, then triggers do not work.
+
+* Have you excluded the branches or paths to which you pushed your changes? Test by pushing a change to an included path in an included branch. Note that paths in triggers are case-sensitive. Make sure that you use the same case as those of real folders when specifying the paths in triggers.
 
 ### Failing checkout
 
