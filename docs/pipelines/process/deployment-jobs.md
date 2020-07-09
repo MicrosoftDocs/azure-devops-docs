@@ -11,7 +11,7 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-> [!WARNING]
+> [!IMPORTANT]
 > - The job name and stages cannot contain keywords.
 > - Each job in a stage must have a unique name. 
 
