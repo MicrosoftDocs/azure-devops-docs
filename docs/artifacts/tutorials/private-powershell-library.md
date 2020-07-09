@@ -228,27 +228,28 @@ Our PowerShell module is now available in our feed.
 
 ## Connecting to the feed as a PowerShell repo
 
-We now have a private repository within Azure Artifacts that we can push our PowerShell modules to and we have a module that we can install. In the next step, we will connect PowerShell to our new Azure Artifacts feed so we can publish our modules and install modules published from others on our team.
+We now have a private repository within Azure Artifacts that we can push our PowerShell modules to and we have a module that we can install. In the next step, we will connect to our new Azure Artifacts feed so we can publish our own modules as well as install other modules published by members on our team.
 
-1. Open a PowerShell session as an Administrator
+1. Open an elevated PowerShell prompt
 
-2. First we need to set up our credentials to be able to access register our repository and access our module. Within PowerShell, run the following to take in your Personal access token, convert it to secureString and then use it within a PSCredential object to create the credential object.
+2. Set up authentication to access Azure artifact feeds. Replace the placeholders with your personal access token and email:
 
     ```powershell
-    $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
+        $patToken = "YOUR PERSONAL ACCESS TOKEN" | ConvertTo-SecureString -AsPlainText -Force
     ```
+
     ```powershell
     $credsAzureDevopsServices = New-Object System.Management.Automation.PSCredential("YOUR EMAIL", $patToken)
     ```
 
-3. Run the following command within PowerShell. The script will create a new PowerShell Repository named `PowershellAzureDevopsServices` and sets the Publish and Source Location as the links to the NuGet feed. This link can also be found by clicking on _Connect to Feed_ within the feeds page in Azure Artifacts.
+3. Register your PowerShell repository. The `SourceLocation` link can also be found by selecting **Connect to Feed** then **NuGet.exe** from the feed's page in Azure Artifacts.
 
     ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
     
-    > [!NOTE]
-    > You will notice above that the Publish and Source location both reference Version 2 of NuGet. PowerShell does not support Version 3 of NuGet.
+    > [!IMPORTANT]
+    > PowerShell does not support Version 3 of NuGet.
     
     If you're still using the older ```visualstudio.com``` URLs, use this command instead:
 
