@@ -7,13 +7,13 @@ ms.topic: tutorial
 ms.reviewer: karrg
 ms.author: karrg
 author: Divais
-monikerRange: 'azure-devops'
-ms.date: 06/26/2020
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/09/2020
 ---
  
 # Azure Boards with Microsoft Teams
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 If you use [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software), you can use the [Azure Boards app for Microsoft Teams](https://appsource.microsoft.com/product/office/WA200000644?tab=Overview) to create work items and monitor work item activity in your Azure Boards project from your Teams channel. 
 

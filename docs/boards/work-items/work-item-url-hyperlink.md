@@ -60,7 +60,7 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker range="azure-devops-2020"  
 
-http://*ServerName:Port/CollectionName/ProjectName*/**_workitems?id=***WorkItemNumber***&_a=edit**</b>
+http://*ServerName:Port/CollectionName/ProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 
 **Example:** 
 ```  

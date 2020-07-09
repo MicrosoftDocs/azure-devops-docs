@@ -193,10 +193,18 @@ You  restrict access to work tracking objects in one of two ways:
 
 
 
+::: moniker range="<= azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
 [!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
 
 
 ::: moniker range="< azure-devops"
+
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
 
 For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
 

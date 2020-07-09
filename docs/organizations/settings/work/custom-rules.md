@@ -155,7 +155,7 @@ For example, the following condition indicates that the Justification field is h
 
 [!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
 
-::: moniker range=">= azure-devops"
+::: moniker range="azure-devops"
 
 ## Restrict modification of closed work items
  
