@@ -4,12 +4,12 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 07/09/2020
-description: With this sprint 172, we are annoucing the general release of state transition restriction rules to all customers.
+description: With Sprint 172 Update, we are announcing the general release of state transition restriction rules to all customers.
 ---
 
-# State transition restriction rules - GA
+# Restrict work item state transitions
 
-After several sprints in preview, we are now announcing the general release of **state transition restriction rules** to all customers as part of the sprint 172 update.
+After several sprints in preview, we are now announcing the general release of **state transition restriction rules** to all customers as part of the Sprint 172 Update.
 
 Check out the [Features](#features) list below for more information.
 
@@ -41,7 +41,7 @@ Check out the [Features](#features) list below for more information.
 Head over to Azure DevOps and take a look.
 
 > [!div class="nextstepaction"] 
-> [go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
+> [Go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
 ## Feedback
 
