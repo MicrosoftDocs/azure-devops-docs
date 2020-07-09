@@ -37,12 +37,12 @@ Azure Pipelines has built-in support for Helm charts:
 ## Service Connection
 
 The task works with two service connection types: **Azure Resource Manager** and **Kubernetes Service Connection**.<br/>
-**NOTE:** A service connection is not required if an environment resource has already been specified in the pipeline.
+**NOTE:** A service connection is not required if an environment resource pointing to a Kubernetes cluster has already been specified in the pipeline.
 
 ### Azure Resource Manager
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
+<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required unless environment resource already present) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
 <tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure service connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>(Resource group)</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>(Kubernetes cluster)</td><td>(Required) Name of the AKS cluster.</td></tr>
@@ -71,7 +71,7 @@ variables:
 ### Kubernetes Service Connection
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required) Select a Kubernetes service connection.</td></tr>
+<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required unless environment resource already present) Select a Kubernetes service connection.</td></tr>
 <tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the <strong>kubectl</strong> commands are run. If not specified, the default namespace is used.</td></tr>
 </table>
 
