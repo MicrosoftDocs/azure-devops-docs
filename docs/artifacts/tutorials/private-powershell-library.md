@@ -84,7 +84,7 @@ Now that you've created a feed that will act as your PowerShell repository, let'
 
 ## Creating, packaging, and sending a module
 
-These next steps will be using a simple `Get-Hello` script that simply writes "Hello from my Azure DevOps Services Package." If you are unfamiliar with PowerShell, the below code will get you what you want. 
+These next steps will be using a simple `Get-Hello` script that simply writes "Hello from my Azure DevOps Services Package."
 
 ### Create the file structure
 
@@ -98,67 +98,63 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
 
 ### Create and populate the PowerShell module and module manifest
 
-1. Paste the following into your newly created `Get-Hello.psm1` file:
+1. Paste the following script into your newly created `Get-Hello.psm1` file:
 
     ```powershell
     Function Get-Hello{
-    Write-Host "Hello from my Azure DevOps Services Package."
+        Write-Host "Hello from my Azure DevOps Services Package."
     }
     ```
 
-2. Create the module manifest by running the following snippet in your `Get-Hello` directory:
+2. Create the module manifest by running the following command in your `Get-Hello` directory path. This will write the module manifest to your `Get-Hello.psd1` file.
 
-    ```
+    ```powershell
     New-ModuleManifest -Path .\Get-Hello.psd1
     ```
 
-    This will write the module manifest within the file specified (`Get-Hello.psd1`).
-
-3. Within the new `Get-Hello.psd1` file, find the _Nested Modules_ field. Within that field, place the path to your `Get-Hello.psm1` file. 
-
-    It may also be necessary when creating your own Module Manifests to define your RootModule:
+3. Find the **Nested Modules** field in your `Get-Hello.psd1` file and paste in the path to your `Get-Hello.psm1` file. You may also need to define your `RootModule` when creating your own Module Manifests. To do so, paste the following snippet in your `Get-Hello.psd1`
     
-    ```
+    ```powershell
     RootModule = 'Get-Hello.psm1'
     ```
 
-4. The ```FunctionsToExport = @()``` section is meant to define the module's exported functions. This is simply a list of all exported functions. Take part of an example from ```PowerShellGet.psd1```:
+4. The `FunctionsToExport = @()` section is meant to define the module's exported functions. This is simply a list of all exported functions. Take following is an example from `PowerShellGet.psd1`:
 
-    ```
+    ```powershell
     FunctionsToExport = @('Install-Module',
-                      'Find-Module',
-                      'Save-Module',
-                      'Update-Module',
-                      'Publish-Module', 
-                      'Get-InstalledModule',
-                      'Uninstall-Module',
-                      'Find-Command', 
-                      'Find-DscResource', 
-                      'Find-RoleCapability',
-                      'Install-Script',
-                      'Find-Script',
-                      'Save-Script',
-                      'Update-Script',
-                      'Publish-Script', 
-                      'Get-InstalledScript',
-                      'Uninstall-Script',
-                      'Test-ScriptFileInfo',
-                      'New-ScriptFileInfo',
-                      'Update-ScriptFileInfo',
-                      'Get-PSRepository',
-                      'Set-PSRepository',                      
-                      'Register-PSRepository',
-                      'Unregister-PSRepository',
-                      'Update-ModuleManifest')
+                          'Find-Module',
+                          'Save-Module',
+                          'Update-Module',
+                          'Publish-Module', 
+                          'Get-InstalledModule',
+                          'Uninstall-Module',
+                          'Find-Command', 
+                          'Find-DscResource', 
+                          'Find-RoleCapability',
+                          'Install-Script',
+                          'Find-Script',
+                          'Save-Script',
+                          'Update-Script',
+                          'Publish-Script', 
+                          'Get-InstalledScript',
+                          'Uninstall-Script',
+                          'Test-ScriptFileInfo',
+                          'New-ScriptFileInfo',
+                          'Update-ScriptFileInfo',
+                          'Get-PSRepository',
+                          'Set-PSRepository',                      
+                          'Register-PSRepository',
+                          'Unregister-PSRepository',
+                          'Update-ModuleManifest')
     ```
     
-5. It is also possible to define a list of files as part of your module. Just add this list under ```FileList=@()```. The syntax is the same as above, and the clear example from the ```PowerShellGet.psd1``` definition is:
+5. It is also possible to define a list of files as part of your module. Just add this list under `FileList=@()`.
 
-    ```
+    ```powershell
     FileList = @('PSModule.psm1',
-             'PSGet.Format.ps1xml',
-             'PSGet.Resource.psd1')
-   ```       
+                 'PSGet.Format.ps1xml',
+                 'PSGet.Resource.psd1')
+    ```       
 
 ### Package and send the module
 
