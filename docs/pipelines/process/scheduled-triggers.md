@@ -421,18 +421,6 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
 
-### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
-
-Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say features/X, then make sure that the YAML file in that branch has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in features/X branch should have the following in this example: 
- 
-```yaml
-schedules: 
-- cron: "0 12 * * 0"   # replace with your schedule 
-  branches: 
-    include: 
-    - features/X  
-```
-
 ### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
 
 * If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
@@ -447,4 +435,27 @@ schedules:
 
 * If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
 
+### My code hasn't changed, yet a scheduled build is triggered. Why?
+
+* You might have enabled an option to **always** runs a scheduled build even if there are no code changes. If you use a YAML file, verify the syntax for the schedule in the YAML file. If you use classic pipelines, verify if you checked this option in the scheduled triggers.
+
+* You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
+
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will eiter start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository.
+
+### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
+
+* The **Scheduled runs** panel shows all potential schedules. However, it may not actually run unless you have made real updates to the code. To force a schedule to always run, ensure that you have set the **always** property in the YAML pipeline, or checked the option to always run in a classic pipeline.
+
+### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
+
+Schedules are defined in YAML files, and these files are associated with branches. If you want a pipeline to be scheduled for a particular branch, say features/X, then make sure that the YAML file in that branch has the cron schedule defined in it, and that it has the correct branch inclusions for the schedule. The YAML file in features/X branch should have the following in this example: 
+ 
+```yaml
+schedules: 
+- cron: "0 12 * * 0"   # replace with your schedule 
+  branches: 
+    include: 
+    - features/X  
+```
 ::: moniker-end
