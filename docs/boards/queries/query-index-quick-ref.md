@@ -14,7 +14,7 @@ ms.date: 05/15/2020
 
 # Query quick reference 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access information on query editor tasks, operators available based on data type, and access sample queries. 
 

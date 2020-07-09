@@ -14,7 +14,7 @@ ms.date: 06/04/2020
 
 # Choose a process 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Anytime you create a project, you must choose a process or process template based on the process model you use. 
 - A **process** defines the building blocks of the work item tracking system and supports the Inheritance process model for Azure Boards. This model supports customization of projects through a WYSIWYG user interface. 

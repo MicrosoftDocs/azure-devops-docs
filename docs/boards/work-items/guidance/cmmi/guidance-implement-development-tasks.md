@@ -13,7 +13,7 @@ ms.date: 07/08/2020
 
 # Implement development tasks
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 A development task is a small piece of development work that stems from a requirement. Implementing a development task involves adding the appropriate new functionality to your software. After you complete a development task, it should be unit tested, reviewed, code analyzed, and integrated into the existing code base.  
    

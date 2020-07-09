@@ -14,7 +14,7 @@ ms.date: 10/14/2018
 
 # Plans (Agile at scale) 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 As your organization grows, you want your tools to scale to support your growing business needs. Azure Boards tools scale primarily by supporting the addition of teams. Each team provides configurable tools that allow teams to focus on their set of work. 
 

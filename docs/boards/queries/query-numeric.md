@@ -14,7 +14,7 @@ ms.date: 10/03/2019
 
 # Query by numeric fields    
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do I determine how much work each developer has completed on my team? Is there a way to sum up the effort or story points for an iteration? 
 

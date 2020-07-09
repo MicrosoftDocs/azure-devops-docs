@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # About area and iteration (sprint) paths 
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 

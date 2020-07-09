@@ -15,7 +15,7 @@ ms.date: 10/14/2019
 
 # About Boards and Kanban  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
  
 
 Collaborate with others by adding, updating, and reviewing your work items as cards on a Kanban board. 

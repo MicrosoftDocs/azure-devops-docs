@@ -17,7 +17,7 @@ ms.date: 04/28/2020
 
 # 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="define-tasks">  </a>
 

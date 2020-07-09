@@ -14,7 +14,7 @@ ms.date: 07/22/2019
 
 # Kanban key concepts
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article provides a short dictionary of terms and available tools used in tracking work using Kanban boards and Kanban methods. See also: 
 - [Agile glossary](../work-items/agile-glossary.md) 

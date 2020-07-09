@@ -15,7 +15,7 @@ ms.date: 01/11/2019
 
 # Customize your boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 

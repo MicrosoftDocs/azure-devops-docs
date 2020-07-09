@@ -15,7 +15,7 @@ ms.date: 02/14/2019
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 

@@ -15,7 +15,7 @@ ms.date: 2/14/2019
 
 # Schedule sprints  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 
 With Scrum, teams plan and track work at regular time intervals, referred to as a sprint cadence. 

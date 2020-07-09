@@ -16,7 +16,7 @@ ms.date: 10/17/2019
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 ::: moniker range=">= tfs-2017"
 

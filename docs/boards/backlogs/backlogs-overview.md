@@ -14,7 +14,7 @@ ms.date: 10/14/2019
 
 # Backlogs, portfolios, and Agile project management 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 ::: moniker range=">= tfs-2017"

@@ -15,7 +15,7 @@ ms.date: 05/22/2020
 
 # Bulk add or modify work items with Excel 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 When you have many work items to add or modify, using Microsoft Excel can save you time. Excel supports adding work items, updating existing work items, adding links and attachments to multiple work items, and more. In addition, you can use native Excel features to support other actions, such as summing a column, copy-and-paste rows, perform fill down, and more. 
 

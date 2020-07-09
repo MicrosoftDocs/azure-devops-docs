@@ -14,7 +14,7 @@ ms.date: 09/26/2019
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 

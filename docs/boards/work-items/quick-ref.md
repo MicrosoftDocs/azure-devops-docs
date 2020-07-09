@@ -14,7 +14,7 @@ ms.date: 04/10/2019
 
 # Work items quick reference
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 

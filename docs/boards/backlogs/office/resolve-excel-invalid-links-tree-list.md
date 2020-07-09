@@ -11,7 +11,7 @@ ms.date: 02/22/2017
 ---
 # Resolve invalid links in an Excel tree list 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 If you try to publish a tree list that contains an invalid link, the **Work Item Publishing Errors** dialog box appears and displays an error message that states why the tree is invalid. When you work with work items in a tree in Excel, the tree must be in a valid state before it can be published. In Excel, an invalid link occurs in a tree list of work items if the title of a work item title is missing or occurs in the wrong title column.  
   

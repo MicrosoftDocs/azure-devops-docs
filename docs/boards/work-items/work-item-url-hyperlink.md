@@ -8,16 +8,18 @@ ms.assetid:
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   
-ms.date: 11/19/2018
+ms.date: 07/09/2020
 ---
 
 
 
 # Define the URL for a work item 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
+
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 Examples in this article use the following conventions:
 
@@ -56,7 +58,32 @@ https://fabrikam/DefaultCollection/Phone%20Saver/_workitems/edit/390
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"  
+::: moniker range=">= azure-devops-2020"  
+
+## Share links in context with your board or backlog
+
+Share links to work items within the context of your board or backlog with the work item URL parameter. When you open a work item form from your board, backlog, or sprint backlog, the parameter `?workitem=[ID]` is appended to the URL.
+
+For example: 
+
+```
+https://dev.azure.com/fabrikam/FabrikamFiber/_boards/board/t/Voice/Stories/?showParents=true&workitem=191
+```
+
+or, for Azure DevOps Server 2020: 
+
+```
+https://dev.azure.com/fabrikam/FabrikamFiber/_boards/board/t/Voice/Stories/?showParents=true&workitem=191
+```
+
+Anyone you share the link with open to the same context you had when you shared the link.
+
+
+::: moniker-end  
+
+
+
+::: moniker range=">= tfs-2015 < azure-devops"  
 
 <b>http://</b>*ServerName:Port*/<b>tfs/</b>*CollectionName/TeamProjectName*/<b>_workitems?id=</b>*WorkItemNumber*<b>&_a=edit</b>
 

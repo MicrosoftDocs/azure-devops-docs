@@ -7,7 +7,7 @@ ms.topic: include
 ms.date: 07/09/2020
 ---
 
-<a id="restrict-modifications-wits" /> 
+
 
 
 ::: moniker range=">= azure-devops-2020"

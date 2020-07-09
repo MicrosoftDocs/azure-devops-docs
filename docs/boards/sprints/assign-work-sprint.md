@@ -15,7 +15,7 @@ ms.date: 2/14/2019
 
 # 1. Assign backlog items to a sprint 
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 The first step in planning your sprint is to assign work from your backlog to a sprint. 
 Your team builds the sprint backlog during the sprint planning meeting, typically held on the first day of the sprint. 

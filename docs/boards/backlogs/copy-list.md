@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Copy a list of work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="html"></a>
 
