@@ -58,7 +58,6 @@ resources:
           value: maven-releases     ### Expected value in the path provided
         - path: action
           value: CREATED
-
 steps:
 - task: PowerShell@2
   inputs:
