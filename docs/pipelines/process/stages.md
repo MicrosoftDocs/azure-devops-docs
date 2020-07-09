@@ -21,10 +21,6 @@ The concept of stages varies depending on whether you use YAML pipelines or clas
 #### [YAML](#tab/yaml/)
 ::: moniker range="azure-devops"
 
-> [!NOTE]
->
-> To use stages in YAML, [make sure the Multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
-
 You can organize the jobs in your pipeline into stages. Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages. They are a logical boundary in your pipeline at which you can pause the pipeline and perform various checks.
 
 Every pipeline has at least one stage even if you do not explicitly define it. Stages may be arranged into a dependency graph: "run this stage before that one".
