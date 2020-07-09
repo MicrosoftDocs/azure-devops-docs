@@ -29,21 +29,36 @@ steps:
 
 Another common use of expressions is in defining variables.
 Expressions can be evaluated at [compile time](runs.md#process-the-pipeline) or at [run time](runs.md#run-each-step).
-Compile-time expressions can be used anywhere; runtime expressions are more limited.
+Compile time expressions can be used anywhere; runtime expressions can be used in variables and conditions. 
 
 ```yaml
 # Two examples of expressions used to define variables
-# The first one, a, is evaluated when the YAML file is parsed into a plan.
-# The second one, b, is evaluated at run time. 
-# Note the syntax ${{}} for parse time and $[] for runtime expressions.
+# The first one, a, is evaluated when the YAML file is compiled into a plan.
+# The second one, b, is evaluated at runtime. 
+# Note the syntax ${{}} for compile time and $[] for runtime expressions.
 variables:
   a: ${{ <expression> }}
   b: $[ <expression> ]
 ```
 
-The difference between these syntaxes is primarily what context is available.
-In a parse time expression, you have access to `parameters` and statically defined `variables`.
-In a runtime expression, you have access to more `variables` but no parameters.
+The difference between runtime and compile time expression syntaxes is primarily what context is available.
+In a compile-time expression (`${{ <expression> }}`), you have access to `parameters` and statically defined `variables`.
+In a runtime expression (`$[ <expression> ]`), you have access to more `variables` but no parameters. 
+
+In this example, a runtime expression sets the  value of `$(isMain)`. A static variable in a compile expression sets the value of `$(compileVar)`.
+
+```yaml
+variables:
+  staticVar: 'my value' # static variable
+  compileVar: ${{ variables.staticVar }} # compile time expression
+  isMain: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')] # runtime expression
+
+steps:
+  - script: |
+      echo ${{variables.staticVar}} # outputs my value
+      echo $(compileVar) # outputs my value
+      echo $(isMain) # outputs True
+```
 
 ::: moniker-end
 
