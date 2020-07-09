@@ -35,16 +35,18 @@
   href: audit/toc.yml
 - name: Notifications
   href: ../notifications/toc.yml
-- name: Extensions >>
-  href: ../marketplace/overview.md
+- name: Service hooks >>
+  href: ../service-hooks/overview.md
 - name: Usage
   items:
   - name: Usage & rate limits 
     href: ../integrate/concepts/rate-limits.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Work tracking, process, & project limits 
     href: ./settings/work/object-limits.md
-- name: Service hooks >>
-  href: ../service-hooks/overview.md
+- name: Extensions >>
+  href: ../marketplace/overview.md
+- name: Process >>
+  href: ./settings/work/inheritance-process-model.md
 - name: Pipelines (Build & release)
   items:
   - name: Agent pools & queues
