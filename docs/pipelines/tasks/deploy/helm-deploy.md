@@ -37,7 +37,7 @@ Azure Pipelines has built-in support for Helm charts:
 ## Service Connection
 
 The task works with two service connection types: **Azure Resource Manager** and **Kubernetes Service Connection**.<br/>
-**NOTE:** A service connection is not required if an environment resource pointing to a Kubernetes cluster has already been specified in the pipeline.
+**NOTE:** A service connection is not required if an environment resource pointing to a Kubernetes cluster has already been specified in the pipeline's stage.
 
 ### Azure Resource Manager
 
