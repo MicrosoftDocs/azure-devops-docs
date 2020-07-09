@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Exclusive deployment lock policy
 
-With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Future runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.
+With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Subsequent runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.
 
 ![img](../../media/172-pipelines-0-0.png)
 
@@ -33,7 +33,7 @@ When the stages provided in the trigger filter are successfully completed in you
 
 ### Generic webhook based triggers for YAML pipelines
 
-Today, we have various resources (such as pipelines, containers, builds, and packages) through which you can consume artifacts and enable automated triggers. These are first-class resources, and if you need to automate your deployment process based on any generic external event, they cannot be used. We have introduced webhook triggers support in YAML Pipelines to help integrate pipelines with any external service and automate the entire workflow.
+Until now, however, you could not automate your deployment process based on other external events or services. In this release, we are introducing webhook trigger support in YAML pipelines to enable integration of pipeline automation with any external service.
 
 You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. You can also configure additional filter conditions on triggers based on the JSON data received from the webhook. The entire JSON data is available to you in the form of variables that can be consumed in your jobs.
 
@@ -82,12 +82,12 @@ Webhook triggers are a great way to automate the workflows when you need to inte
 
 ### YAML resource trigger issues support and traceability
 
-In this Sprint, we have added support for showing info about the resource triggers when it fails to execute. There is a new menu item in the pipeline definition page called 'Trigger issues' where this info is recorded for the customer to track.
+It can be confusing when pipeline triggers fail to execute as you expect them to. To help better understand this, we've added a new menu item in the pipeline definition page called 'Trigger Issues' where information is surfaced regarding why triggers are not executing.
 
 Resource triggers can fail to execute for two reasons.
 
-1. Invalid configuration: If the source of the service connection provided is not valid. Or if there are any syntax errors, triggers will not be configured, so we show these as errors. 
-2. Trigger conditions did not match: For any resource trigger defined in your YAML pipeline, if the filter conditions didn't match the event received, no action is taken. This info is logged as part for trigger issues along with the event details (CI run in case of pipeline resource) and YAML of the CD pipeline used for evaluation.
+1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
+2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.
 
 ![Image](../../media/172-pipelines-0-2.png)
 
