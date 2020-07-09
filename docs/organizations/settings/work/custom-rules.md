@@ -135,6 +135,7 @@ You delete or disable the rule from the actions menu of the rule.
 ::: moniker range=">= azure-devops-2020"
 
 ## Hide or restrict modification of a field based on a user or group 
+
 When you select the `Current user is a member of group...` or `Current user is not a member of group...`, you can hide a field, make a field read-only, or make a field required. 
 
 For example, the following condition indicates that the Justification field is hidden for members who don't belong to the Fabrikam Fiber\Voice group.  
@@ -154,6 +155,12 @@ For example, the following condition indicates that the Justification field is h
 
 [!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
 
+::: moniker range=">= azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 
@@ -161,5 +168,6 @@ For example, the following condition indicates that the Justification field is h
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [Apply rules to workflow states](apply-rules-to-workflow-states.md)  
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)
