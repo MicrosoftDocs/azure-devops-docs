@@ -7,11 +7,12 @@ ms.topic: include
 ms.date: 07/09/2020
 ---
 
+<a id="restrict-modifications-wits" /> 
 
 
 ::: moniker range=">= azure-devops-2020"
 
-For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types to restrict who can modify a specific field for a work item type. You restrict modification by adding a custom rule to the work item type. 
+For the Inheritance process model, you can customize work item types to restrict who can modify a specific field for a work item type. You restrict modification by adding a custom rule to the work item type. 
 
 Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
 
