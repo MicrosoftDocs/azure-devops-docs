@@ -15,6 +15,7 @@ monikerRange: '> tfs-2018'
 Use this task to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
 Helm is a tool that streamlines deploying and managing Kubernetes apps using a packaging format called
 charts.
+
 You can define, version, share, install, and upgrade even the most complex Kubernetes app by using Helm. 
 
 * Helm helps you combine multiple Kubernetes manifests (yaml) such as service, deployments, configmaps, and more into a single unit called Helm Charts.
@@ -37,12 +38,14 @@ Azure Pipelines has built-in support for Helm charts:
 ## Service Connection
 
 The task works with two service connection types: **Azure Resource Manager** and **Kubernetes Service Connection**.<br/>
-**NOTE:** A service connection is not required if an environment resource pointing to a Kubernetes cluster has already been specified in the pipeline's stage.
+
+> [!NOTE]
+> A service connection isn't required if an environment resource that points to a Kubernetes cluster has already been specified in the pipeline's stage.
 
 ### Azure Resource Manager
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required unless environment resource already present) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
+<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required unless an environment resource is already present) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
 <tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure service connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>(Resource group)</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>(Kubernetes cluster)</td><td>(Required) Name of the AKS cluster.</td></tr>
