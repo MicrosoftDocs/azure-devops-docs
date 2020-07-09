@@ -9,9 +9,9 @@ ms.date: 07/09/2020
 
 <a id="restrict-modification-closed-wi" />
 
-Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
-
 ::: moniker range="azure-devops"
+
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
 
 For the Inherited process, you can add a rule that restricts state transition. For example, the following rule restricts transitioning from closed to the other two States, New and Active. 
 

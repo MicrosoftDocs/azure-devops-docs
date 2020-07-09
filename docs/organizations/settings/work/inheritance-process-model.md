@@ -310,13 +310,15 @@ For details on defining custom rules, see [Add a rule to a work item type](../..
 
 [!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
 
-::: moniker range=">= azure-devops-2020"
+::: moniker range="azure-devops"
 
 ### Restrict modification of closed work items
 
 ::: moniker-end
 
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+
+
 
 ### Restrict modification of work items based on Area Path 
 
