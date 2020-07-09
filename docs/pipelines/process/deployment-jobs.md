@@ -422,7 +422,7 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
     name: echovar
 ```
 
-When you define an environment in a deployment job, the syntax of the output variable varies depending on how the environment gets defined. In this example, `env1` uses shorthand notation and `env2` includes a resource type. 
+When you define an environment in a deployment job, the syntax of the output variable varies depending on how the environment gets defined. In this example, `env1` uses shorthand notation and `env2` includes the full syntax with a defined resource type. 
 
 ```yaml
 stages:
