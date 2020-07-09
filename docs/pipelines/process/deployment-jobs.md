@@ -12,8 +12,8 @@ monikerRange: azure-devops
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 > [!NOTE]
-> - To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
-> - The job name and stages can not contain keywords.
+> - The job name and stages cannot contain keywords.
+> - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
 
