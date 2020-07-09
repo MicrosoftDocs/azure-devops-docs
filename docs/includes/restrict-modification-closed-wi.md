@@ -26,27 +26,9 @@ For the Inherited process, you can add a rule that restricts state transition. F
 For more information on applying rules to a workflow, see [Apply rules to workflow states (Inheritance process)](/azure/devops/organizations/settings/work/apply-rules-to-workflow-states).
 
 
-::: moniker range="< azure-devops"
-
-For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
-
-```
-<TRANSITION from="Closed" to="New"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-<TRANSITION from="Closed" to="Active"  
-   for="[Project]\Testers"  
-   not="[Project]\Developers">  
-   . . .  
-</TRANSITION>  
-```
-
-To learn more, see [Apply a field rule](/azure/devops/reference/xml/apply-rule-work-item-field).  
+> [!NOTE]   
+> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
 
 ::: moniker-end
 
 
-> [!NOTE]   
-> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to modify the work item. 
