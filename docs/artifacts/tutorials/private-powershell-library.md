@@ -156,21 +156,22 @@ Create a folder named `Get-Hello`. Within that folder create a `Get-Hello.psm1` 
                  'PSGet.Resource.psd1')
     ```       
 
-### Package and send the module
+### Package and publish the module
 
-We now have the module and the module manifest. We are ready to package it and send it to our Azure Artifacts feed.
+We now have the module and the module manifest. We are ready to package it and publish it to our Azure Artifacts feed.
 
-1. Within PowerShell, run:
+1. In an elevated PowerShell prompt, run the following snippet:
 
     ```powershell
     nuget spec Get-Hello
     ```
 
-    The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs when we package our module in the next few steps. There are two key things we need to do to this file:
+    The `spec` command will create a `Get-Hello.nuspec` file. This specifies the information that NuGet needs to package our module. Few things to keep in mind here:
 
-   * _A key part here: WE NEED THE VERSION NUMBER TO HAVE 3 PLACES. (EX: 1.0.0) and match as described below_
-   * The version number on the Module Manifest and the version number on the .nuspec file _must be the same_, use `1.0.0` for this tutorial.
-   * By default, if we leave the sample dependencies, NuGet will install jQuery, we should take that out. Here is a sample `Get-Hello.nuspec` file:
+   * The version number on the Module Manifest and the .nuspec file must match.
+   * By default, if we leave the sample dependencies, NuGet will install jQuery.
+
+    Here is the `Get-Hello.nuspec` file:
 
      ```xml
      <?xml version="1.0"?>
@@ -191,37 +192,39 @@ We now have the module and the module manifest. We are ready to package it and s
      </package>
      ```
 
-2. Now that the module is made and the NuGet spec file is ready to go, we need to pack it up and ship it out. Run the following commands from PowerShell:
+2. Now that we have both the PowerShell module and the NuGet spec file, we are ready to to pack it and publish it.
 
-     Package the module with the defined parameters within the `.nuspec` file:
+    - Package the module:
+    
     ```powershell
     nuget pack Get-Hello.nuspec
     ```
 
-    Add the Azure DevOps Services repo as a source for NuGet:
+    - Add the new package source to your NuGet configuration file:
+    
     ```powershell
     nuget sources Add -Name "PowershellModules" -Source "https://pkgs.dev.azure.com/<org_name>/_packaging/<feed_name>/nuget/v3/index.json" -username "<user_name>" -password "<personal_access_token(PAT)>"
     ```
     
-    If you're still using the older ```visualstudio.com``` URLs, use this command instead:
+    If you're still using the older `visualstudio.com` URLs, use the following command instead:
+
     ```powershell
     nuget sources Add -Name "PowershellModules" -Source "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v3/index.json" -username "<user_name>" -password "<personal_access_token_you_created>"
     ```
 
-    Push the file to the NuGet feed in Azure Artifacts. You will have to change the name of the `.nupkg` file:
+    - Publish the NuGet package to your feed:
+    
     ```powershell
     nuget push -Source "PowershellModules" -ApiKey AzureDevOpsServices "your .nupkg path. eg: .\Get-Hello.1.0.0.nupkg"
     ```
 
+Our PowerShell module is now available in our feed.
+
 > [!div class="mx-imgBorder"]
 > ![uploaded package](../../repos/git/media/artifact-package-powershell.png)
 
-Our module is now available to be installed from our feed in Azure Artifacts.
-
 > [!NOTE]
-> You can view your package sources and credentials in the `NuGet.config` file located in `%appdata%\NuGet\NuGet.Config` for Windows and `~/.config/NuGet/NuGet.Config` or `~/.nuget/NuGet/NuGet.Config` for Mac/Linux (depending on the OS distribution)
-
-
+> Your `NuGet.config` file is located at `%appdata%\NuGet\NuGet.Config` for Windows, and at `~/.config/NuGet/NuGet.Config` or `~/.nuget/NuGet/NuGet.Config` for Mac/Linux (depending on the OS distribution).
 
 ## Connecting to the feed as a PowerShell repo
 
