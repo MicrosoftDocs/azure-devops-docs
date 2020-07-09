@@ -13,7 +13,7 @@ ms.date: 03/24/2020
 
 # Change column options 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="column-options">  </a>
 

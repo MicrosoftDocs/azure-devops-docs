@@ -8,7 +8,7 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
+ms.date: 07/09/2020
 ---
 
 # Grant or restrict access
@@ -159,6 +159,7 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 </tr>
 </table>
 
+<a id="restrict-modifications-wits" /> 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -166,7 +167,7 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
  
 ::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 
 
 ::: moniker range="azure-devops-2019"

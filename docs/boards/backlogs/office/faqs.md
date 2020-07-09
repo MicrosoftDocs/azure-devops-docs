@@ -13,7 +13,7 @@ ms.date: 11/22/2019
 
 # FAQs: Work in Excel connected to Azure Boards 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 

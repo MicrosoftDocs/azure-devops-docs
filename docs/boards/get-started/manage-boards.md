@@ -15,7 +15,7 @@ ms.date: 07/17/2019
 
 # Configure settings and manage your Azure Boards project
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You can start using Azure Boards and configure resources as you go. No up-front work is required. Most settings define defaults.
 

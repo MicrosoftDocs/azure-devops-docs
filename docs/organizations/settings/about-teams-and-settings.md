@@ -13,7 +13,7 @@ ms.date: 04/16/2020
 
 # About teams and Agile tools
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 <a id="teams"></a>
 

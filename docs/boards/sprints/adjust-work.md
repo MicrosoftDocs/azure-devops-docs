@@ -16,7 +16,7 @@ ms.date: 2/14/2019
 
 # 4. Adjust work to fit sprint capacity
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="adjust-work">  </a>
 

@@ -14,7 +14,7 @@ ms.date: 01/10/2020
 
 # Track work with user stories, issues, bugs, features, and epics 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Track the features and requirements you're developing, code defects or bugs, and other particulars using work items. Work items are similar to GitHub issues, but offer different types to track different types of information.
 

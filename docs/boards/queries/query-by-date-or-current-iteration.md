@@ -14,7 +14,7 @@ ms.date: 03/10/2020
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
 

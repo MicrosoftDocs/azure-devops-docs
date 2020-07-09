@@ -15,7 +15,7 @@ ms.date: 01/11/2019
 
 # 11 Reasons for using Azure Boards to plan and track your work 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 We know you have a choice of tracking systems. So why use Azure Boards to plan and track your work, bugs, and customer issues? 
 

@@ -13,7 +13,7 @@ ms.date: 10/14/2019
 
 # Manage issues or impediments 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a name="manage-impediments"></a>
 

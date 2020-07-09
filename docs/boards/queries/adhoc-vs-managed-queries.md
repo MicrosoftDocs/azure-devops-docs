@@ -14,7 +14,7 @@ ms.date: 02/14/2019
 
 # Ad hoc vs managed work item queries
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
 
