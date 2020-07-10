@@ -251,39 +251,41 @@ We now have a private repository within Azure Artifacts that we can push our Pow
     > [!IMPORTANT]
     > PowerShell does not support Version 3 of NuGet.
     
-    If you're still using the older ```visualstudio.com``` URLs, use this command instead:
+    If you're still using the older `visualstudio.com` URLs, use the following command instead:
 
     ```powershell
-    Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
+        Register-PSRepository -Name "PowershellAzureDevopsServices" -SourceLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -PublishLocation "https://<org_name>.pkgs.visualstudio.com/_packaging/<feed_name>/nuget/v2" -InstallationPolicy Trusted -Credential $credsAzureDevopsServices
     ```
 
     > [!TIP]
-    > Certain versions of PowerShell requires closing and starting a new session after executing  `Register-PSRepository` cmdlet otherwise it will trigger `Unable to resolve package source` warning. 
+    > Certain versions of PowerShell requires restarting a new session after executing `Register-PSRepository` cmdlet to avoid the `Unable to resolve package source` warning. 
 
-4. We can confirm we have a repository by running:
-
-    ```powershell
-    Get-PSRepository
-    ```
-
-5. Let's see what we can install from the feed by running the following:
+4. To confirm that the repository was registered successfully run the `Get-PSRepository` cmdlet. This command gets all module repositories registered for the current user:
 
     ```powershell
-    Find-Module -Repository PowershellAzureDevopsServices
+        Get-PSRepository
     ```
 
-    We can see our `Get-Hello` module and install it:
+5. Find modules in our repository:
+
     ```powershell
-    Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
+        Find-Module -Repository PowershellAzureDevopsServices
     ```
 
-    You can check for your installed module:
+    Our `Get-Hello` module should be one of the entries in the previous cmdlet's return message. To install it, run the following command:
+    
     ```powershell
-    Get-Module -ListAvailable Get-Hello
+        Install-Module -Name Get-Hello -Repository PowershellAzureDevopsServices
     ```
 
-We now have a repository that pulls down NuGet packages with our PowerShell modules and scripts that we can have version control, access management and best of all, available to all our other developers.
+    You can check for your module by running the following command:
+    
+    ```powershell
+        Get-Module -ListAvailable Get-Hello
+    ```
+
+We now have our private PowerShell repository to publish and download our packages to and from our feed and best of all, available to everyone on our team.
 
 ## Credit
 
-Credit to the [well-written article on Medium](https://medium.com/@jsrice7391/using-vsts-for-your-companys-private-powershell-library-e333b15d58c8) that was used as a source for this tutorial.
+Credit to this [article on Medium](https://medium.com/@jsrice7391/using-vsts-for-your-companys-private-powershell-library-e333b15d58c8) that was used as a source for this tutorial.
