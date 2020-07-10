@@ -118,7 +118,7 @@ Once you've defined your product backlog, you can use the following controls to 
          
    :::column-end:::
    :::column span="2":::
-      [Show/Hide in progress items](create-backlog.md#show-hide-in-progress)   
+      [Show/Hide in progress items](create-your-backlog.md#show-hide-in-progress)   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,8 +159,8 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column span="2":::
       - [Turn Parents on/off](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog) 
-      - [Turn In Progress items on/off](create-backlog.md#show-hide-in-progress)  
-      - [Turn Completed child items on/off](create-backlog.md#show-hide-completed)  
+      - [Turn In Progress items on/off](create-your-backlog.md.md#show-hide-in-progress)  
+      - [Turn Completed child items on/off](create-your-backlog.md.md#show-hide-completed)  
       - [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Show Planning](../sprints/assign-work-sprint.md)  
         ![view options](media/controls/mapping-control-2020.png)
@@ -178,7 +178,7 @@ Once you've defined your product backlog, you can use the following controls to 
    :::column span="2":::
       - [Turn Parents on/off](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog)  
-      - [Turn In Progress items on/off](create-backlog.md#show-hide-in-progress)   
+      - [Turn In Progress items on/off](create-your-backlog.md.md#show-hide-in-progress)   
       - [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Show Planning](../sprints/assign-work-sprint.md)  
         ![view options](media/view-options.png)

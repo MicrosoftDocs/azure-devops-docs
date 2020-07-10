@@ -54,7 +54,7 @@ You use issues or impediments to track items that may block work from getting do
 
 You define tasks when you want to create a [checklist of tasks](../boards/add-task-checklists.md) or if you use Scrum methods and track work using the [Remaining Work](../sprints/task-board.md) field. By linking user stories, or other requirement work item types, to tasks using the Parent-Child link type, the tasks appear on the taskboard for each linked user story.
 
-::: moniker range="azure-devops-2019 | azure-devops-2020"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
 > [!NOTE]  
 > If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Set up your backlogs and boards, Customize your Kanban Board checklist items](set-up-your-backlog.md#customize-checklist-2019). 
