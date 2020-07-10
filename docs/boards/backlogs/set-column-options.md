@@ -21,13 +21,15 @@ Each column corresponds to a work item field. You can add and remove columns fro
 
 Specifically, you can perform the following actions from the following list views: 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 | Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) | 
 | :---------------------------- | :-----: | :------------: | :-----: | :--------: |   
 | Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
+| Add or remove the Parent field| Yes     | Yes            | Yes     | No         |  
 | Add or remove a rollup column | Yes     | No             | No      | No         |  
 | Sort on a column              | No      | No             | Yes     | Yes        |  
+
 
 ::: moniker-end
 
@@ -75,6 +77,7 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 Once you set the column options for a specific view, your settings  persist until you change them. The following notes apply to specific views. 
 
 ::: moniker range=">= azure-devops-2019"
+
 - Column options you set for a backlog apply only to the active team and backlog. Options you set for the product backlog differ from the options you set for a portfolio backlog. 
 - Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
 - Column options you set for a query persist when you save the query. 
@@ -83,6 +86,7 @@ Once you set the column options for a specific view, your settings  persist unti
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
+
 - Column options you set for a backlog apply only to the active team and backlog. Options set for the product backlog differ from those you set for a portfolio backlog. 
 - Column options you set for a Sprint backlog persist for all sprints you select until you change them.  
 - Column options you set for a query persist when you save the query. For Shared queries, your settings can get overwritten when someone else saves different column option settings. 
