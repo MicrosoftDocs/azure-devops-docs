@@ -90,6 +90,18 @@ Versions in the "Server" column are linked to the appropriate download location.
     </thead>
     <tbody>
     <tr>
+    <td rowspan="9"><a href="2020/sprint-172-update.md" data-raw-source="[10 July 2020](2020/sprint-172-update.md)">10 July 2020</a></td>
+    <td>State transition restriction rules</td><td>Boards</td><td>Future</td>
+    </tr>
+    <tr><td>Copy work item to copy children</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Improved rules for activated and resolved fields</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>System work item types on backlogs and boards (private preview)</td><td>Boards</td><td>Future</td></tr>
+    <tr><td>Exclusive deployment lock policy</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Stages filters for pipeline resource triggers</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Generic webhook based triggers for YAML pipelines</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>YAML resource trigger issues support and traceability</td><td>Pipelines</td><td>Future</td></tr>
+    <tr><td>Ability to create org-scoped feeds from UI</td><td>Artifacts</td><td>Future</td></tr>
+    <tr>
     <td rowspan="5"><a href="2020/sprint-171-update.md" data-raw-source="[18 June 2020](2020/sprint-171-update.md)">18 June 2020</a></td>
         <td>Restrict new user invitations from Project and Team Administrators</td><td>General</td><td>2020.1</td>
     </tr>
