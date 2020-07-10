@@ -24,6 +24,11 @@ ms.date: 02/14/2019
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 
 
+> [!IMPORTANT]  
+> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
+
+
+
 :::row:::
    :::column span="":::
       **Icon or Link**
@@ -38,7 +43,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ---
 :::row:::
    :::column span="":::
-      Backlog   
+      **Backlog**   
    :::column-end:::
    :::column span="":::
          
@@ -50,7 +55,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
-      Analytics  
+      **Analytics**  
    :::column-end:::
    :::column span="":::
          
@@ -63,7 +68,7 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range="<= tfs-2018"
 :::row:::
    :::column span="":::
-      Board  
+      **Board**  
    :::column-end:::
    :::column span="":::
          
@@ -74,7 +79,7 @@ Once you've defined your product backlog, you can use the following controls to 
 :::row-end:::
 :::row:::
    :::column span="":::
-      Forecast  
+      **Forecast**  
    :::column-end:::
    :::column span="":::
          
@@ -85,7 +90,7 @@ Once you've defined your product backlog, you can use the following controls to 
 :::row-end:::
 :::row:::
    :::column span="":::
-      Mapping  
+      **Mapping**  
    :::column-end:::
    :::column span="":::
          
@@ -96,7 +101,7 @@ Once you've defined your product backlog, you can use the following controls to 
 :::row-end:::
 :::row:::
    :::column span="":::
-      Parents  
+      **Parents**  
    :::column-end:::
    :::column span="":::
          
@@ -107,13 +112,13 @@ Once you've defined your product backlog, you can use the following controls to 
 :::row-end:::
 :::row:::
    :::column span="":::
-      In progress items 
+      **In progress items** 
    :::column-end:::
    :::column span="":::
          
    :::column-end:::
    :::column span="2":::
-      [Show/Hide in progress items](../sprints/forecast.md) 
+      [Show/Hide in progress items](create-backlog.md#show-hide-in-progress)   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -137,7 +142,9 @@ Once you've defined your product backlog, you can use the following controls to 
       Backlog selector
    :::column-end:::
    :::column span="2":::
-      [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png) 
+      [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)  
+      > [!NOTE]
+      > Your backlog levels may differ from that shown in the previous image based on the process selected or customizations made to your process. Other common labels are Backlog items (Scrum), Requirements (CMMI), and Issues (Basic). To learn more, see [Choose a process](../work-items/guidance/choose-process.md). 
    :::column-end:::
 :::row-end:::
 ::: moniker-end
@@ -150,11 +157,11 @@ Once you've defined your product backlog, you can use the following controls to 
       View options
    :::column-end:::
    :::column span="2":::
-      - [Turn Parents on/off](organize-backlog.md)  
-      - [Turn Forecasting on/off](../sprints/forecast.md)  
-      - [Turn In Progress items on/off](../sprints/forecast.md)  
-      - [Turn Completed child items on/off](../sprints/forecast.md)  
-      - [Show Mapping](organize-backlog.md)  
+      - [Turn Parents on/off](organize-backlog.md) (not available for top-level portfolio backlog) 
+      - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog) 
+      - [Turn In Progress items on/off](create-backlog.md#show-hide-in-progress)  
+      - [Turn Completed child items on/off](create-backlog.md#show-hide-completed)  
+      - [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Show Planning](../sprints/assign-work-sprint.md)  
         ![view options](media/controls/mapping-control-2020.png)
    :::column-end:::
@@ -163,16 +170,16 @@ Once you've defined your product backlog, you can use the following controls to 
 ::: moniker range="azure-devops-2019"
 :::row:::
    :::column span="":::
-      ![view options](../../media/icons/view-options-icon.png) |  |
+      ![view options](../../media/icons/view-options-icon.png) 
    :::column-end:::
    :::column span="":::
       View options
    :::column-end:::
    :::column span="2":::
-      - [Turn Parents on/off](organize-backlog.md)  
-      - [Turn Forecasting on/off](../sprints/forecast.md)  
-      - [Turn In Progress items on/off](../sprints/forecast.md)  
-      - [Show Mapping](organize-backlog.md)  
+      - [Turn Parents on/off](organize-backlog.md) (not available for top-level portfolio backlog) 
+      - [Turn Forecasting on/off](../sprints/forecast.md) (Only available on product backlog)  
+      - [Turn In Progress items on/off](create-backlog.md#show-hide-in-progress)   
+      - [Show Mapping](organize-backlog.md) (not available for top-level portfolio backlog) 
       - [Show Planning](../sprints/assign-work-sprint.md)  
         ![view options](media/view-options.png)
    :::column-end:::
@@ -277,8 +284,6 @@ Once you've defined your product backlog, you can use the following controls to 
 ---
 
 
-> [!IMPORTANT]  
-> If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
 
 
 Even if you have show parents turned on, the **Create query** and mail ![mail icon](../media/icons/mail_icon.png) controls will only list items at the currently selected level. 
