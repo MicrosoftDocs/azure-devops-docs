@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Revisions | REST API Reference for Team Foundation Server
 description: Work with work item revisions programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 19599ABC-A720-43DA-9CDA-FA8C91CD687E
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -215,7 +213,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?api-
 
 #### Sample code
 
-* [C# (GetListOfWorkItemRevisions method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L19)
+* [C# (GetListOfWorkItemRevisions method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RevisionsSample.cs#L19)
 
 ### A page at a time
 
@@ -283,7 +281,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions?$ski
 
 #### Sample code
 
-* [C# (GetListOfWorkItemRevisionsPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L48)
+* [C# (GetListOfWorkItemRevisionsPaged method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RevisionsSample.cs#L48)
 
 ## Get a work item revision
 
@@ -348,7 +346,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/revisions/2?ap
 
 #### Sample code
 
-* [C# (GetWorkItemRevision method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RevisionsSample.cs#L78)
+* [C# (GetWorkItemRevision method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RevisionsSample.cs#L78)
 
 ###  With links and attachments
 

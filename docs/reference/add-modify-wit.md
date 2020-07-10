@@ -3,9 +3,8 @@ title: Add or modify a work item type (WIT)
 titleSuffix: Azure DevOps & TFS 
 description: Modify or add a work item type to support queries, reports, and workflow in Azure DevOps Services & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +13,7 @@ ms.date: 01/24/2019
 
 # Add or modify a work item type 
 
-[!INCLUDE [temp](../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 Your project contains a number of work item types (WITs), based on the process&mdash;[Agile](../boards/work-items/guidance/agile-process.md), [Scrum](../boards/work-items/guidance/scrum-process.md), or [CMMI](../boards/work-items/guidance/cmmi-process.md)&mdash;used to create the project. A WIT is the object you use to [track different types of work](../boards/backlogs/add-work-items.md).  
 
@@ -65,7 +64,7 @@ To get added as an administrator, see [Add administrators](../organizations/secu
 >If you use the Hosted XML process model, you need to import and export the process template used by your project. For details, see [Customize the work item tracking web form](customize-wit-form.md).
 
 1. If you don't have administration permissions for your project, [get them](../organizations/security/set-project-collection-level-permissions.md).   
-   [!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 2. Export the WIT definition file where you want to modify or add a field. Specify the name of the WIT and a name for the file.  
 
@@ -187,7 +186,7 @@ The Agile planning tools&mdash;product backlog, sprint backlog, and task board p
 
 For example, you can add bugs from the product backlog page.
 
-[!INCLUDE [temp](../_shared/image-differences.md)]
+[!INCLUDE [temp](../includes/image-differences.md)]
 
 ![](media/add-modify-wit-quick-add-panel.png)
 

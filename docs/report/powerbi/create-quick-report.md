@@ -2,10 +2,8 @@
 title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
 description: Quick start helping users to create a trend report using an Analytics view
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -15,11 +13,11 @@ ms.date: 12/04/2018
 
 # Create a Power BI report with a default Analytics view
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Power BI Desktop, you can easily connect to an Analytics view to start creating reports for your project in Azure DevOps. An Analytics view provides a simplified way to specify the filter criteria for a Power BI report based on Analytics data. 
 
-[!INCLUDE [temp](_shared/analytics-views-warning.md)]
+[!INCLUDE [temp](includes/analytics-views-warning.md)]
 
 If you don't have Power BI Desktop, you can [download](/power-bi/desktop-what-is-desktop) and install it for free.
 
@@ -68,7 +66,7 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/analytics-open.md)]
+[!INCLUDE [temp](../includes/analytics-open.md)]
 
 
 ## Verify the default Analytics view for your data 
@@ -221,7 +219,7 @@ The reports shown in this quickstart illustrate how easy it is to generate repor
 
 
 ## Related articles 
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
 - [Connect with Power BI Data Connector](./data-connector-connect.md)

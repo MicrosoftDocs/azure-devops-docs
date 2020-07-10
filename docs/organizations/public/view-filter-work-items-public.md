@@ -3,10 +3,8 @@ title: View and filter work items
 titleSuffix: Azure DevOps Services Public Project
 description: View and filter work items using the work items page   
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -16,11 +14,11 @@ monikerRange: 'azure-devops'
 
 # Quickstart: View and filter work items  
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]
+[!INCLUDE [temp](includes/version-public-projects.md)]
 
 In this quickstart, you learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
-[!INCLUDE [temp](_shared/anon-user.md)]
+[!INCLUDE [temp](includes/anon-user.md)]
 
 ## View work items
 

@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Updates | REST API Reference for Team Foundation Server
 description: Work with updates to work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B4C07EF4-535A-4479-803D-C181553613EE
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -508,7 +506,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?api-ve
 
 #### Sample code
 
-* [C# (GetListOfWorkItemUpdates method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L19)
+* [C# (GetListOfWorkItemUpdates method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L19)
 
 ### A page at a time
 
@@ -635,7 +633,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates?$skip=
 
 #### Sample code
 
-* [C# (GetListOfWorkItemUpdatesPaged method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L43)
+* [C# (GetListOfWorkItemUpdatesPaged method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L43)
 
 ## Get a work item update
 
@@ -728,7 +726,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/updates/2?api-
 
 #### Sample code
 
-* [C# (GetWorkItemUpdate method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/UpdatesSample.cs#L68)
+* [C# (GetWorkItemUpdate method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/UpdatesSample.cs#L68)
 
 If the update included changes to the links or attachments, those are included, too.
 

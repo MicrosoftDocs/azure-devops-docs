@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Security with VSTS | REST API Reference for Team Foundation Server
 description: Security overview for integrating with VSTS
 ms.assetid: ae811730-f033-4d5a-b3a6-6cbb0743cada
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitStatus API | Extensions for Azure DevOps Services
 ms.assetid: 46222fb4-12c2-f6cf-f2a9-15d9b9e222b9
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

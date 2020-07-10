@@ -2,8 +2,6 @@
 title: Azure IoT Edge task
 description: Build, test, and deploy applications quickly and efficiently to Azure IoT Edge
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 0803ABDD-002B-4179-B824-9765403F4289
 ms.manager: dastahel
 ms.author: vijayma
@@ -14,7 +12,7 @@ author: vijayma
 
 # Azure IoT Edge task
 
-Use this task in a build or release pipeline to build, test, and deploy applications quickly and efficiently to Azure IoT Edge.
+Use this task to build, test, and deploy applications quickly and efficiently to Azure IoT Edge.
 
 ## Container registry types
 
@@ -65,8 +63,8 @@ The following YAML example pushes module images:
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
 
 steps:    
 - task: AzureIoTEdge@2

@@ -2,11 +2,9 @@
 title: Work tracking, process, and project limits
 titleSuffix: Azure DevOps Services
 description: Limits placed on the number of objects that can be specified for work tracking objects, queries and more  
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: E5FABB7C-ECA8-4FA5-9488-4AD78C60869A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +14,7 @@ ms.date: 12/18/2019
 
 # Work tracking, process, and project limits
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 This article defines operational and object limits placed on work tracking operations and work tracking customization. In addition to the specified hard limits on select objects, certain practical limits apply. When you customize work item types (WITs), consider the limits placed on objects. 
 
@@ -39,7 +37,7 @@ When defining work items or running queries, the following operational limits ap
 | Query length | 32,000 characters |
 
 
-If you need a limit increased, [file a support ticket](https://support.microsoft.com/supportforbusiness/productselection?sapId=4d7c8158-200d-893b-5161-06d00803fd9c). To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
+To improve query performance, see [Optimization best practices](../../../integrate/concepts/integration-bestpractices.md#optimize-queries). 
 
 ::: moniker-end
 
@@ -130,7 +128,7 @@ The following table lists the maximum number of objects that you can define for 
 
 | Object                                              | Inheritance | Hosted XML |
 | --------------------------------------------------- | ----------: | ---------: |
-| Number of processes you can have in an organization |          64 |         64 |
+| Number of processes you can have in an organization |          128|         64 |
 | Work item types defined for a process               |          64 |         64 |
 | Fields defined for an organization                  |        8192 |       8192 |
 | Fields defined for a process                        |        1024 |       1024 |
@@ -281,7 +279,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [About process customization and inherited processes](inheritance-process-model.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end
@@ -291,7 +289,7 @@ To learn more, see [Migrate data from Azure DevOps Server to Azure DevOps Servic
 - [Guidance to create high-performing queries](../../../boards/queries/high-performing-queries.md)
 - [Customize your work tracking experience](../../../reference/customize-work.md)
 - [On-premises XML process customization](../../../reference/on-premises-xml-process-model.md)
-- [Add a rule to a work item type](/reference/xml/apply-rule-work-item-field.md)
+- [Add a rule to a work item type](../../../reference/xml/apply-rule-work-item-field.md)
 - [Naming restrictions and conventions](../naming-restrictions.md) 
 
 ::: moniker-end

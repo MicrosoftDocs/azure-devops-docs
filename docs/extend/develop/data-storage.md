@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Data and Setting Storage | Extensions for Azure DevOps Services
 description: Add an action for your extension that extends Azure DevOps Services.
 ms.assetid: 4662d1cf-ddb6-4079-8eb4-6f553861c1b4
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ Azure DevOps Services extensions have the ability to store user preferences and 
 
 There are two ways to interact with the data storage service: REST APIs or a Microsoft-provided client service available as part of the VSS SDK. It is highly recommended that extension developers use the provided client service APIs, which provide a convenient wrapper over the REST APIs. 
 
-[!INCLUDE [rest-api-docs-rollout](../../_shared/rest-api-docs-rollout.md)]
+[!INCLUDE [rest-api-docs-rollout](../../includes/rest-api-docs-rollout.md)]
 
 ### What you can store
 

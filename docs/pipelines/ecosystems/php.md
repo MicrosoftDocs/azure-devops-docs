@@ -1,11 +1,8 @@
 ---
 title: Build and test PHP apps
 description: Build and test PHP apps with Azure Pipelines, Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: f8510914-9716-4a76-92be-333133fbd97b
-ms.manager: mijacobs
 ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
@@ -24,7 +21,7 @@ Use a pipeline to automatically build and test your PHP projects.
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
-[!INCLUDE [include](_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-php

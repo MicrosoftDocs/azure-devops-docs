@@ -3,7 +3,6 @@ title: General - Sprint 146 Update
 description: See the Sprint 146 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 01/14/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 01/14/2019
 
 ## Features
 
-[!INCLUDE [sprint-146-update-links](../_shared/general/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](../includes/general/sprint-146-update-links.md)]
 
-[!INCLUDE [sprint-146-update](../_shared/general/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](../includes/general/sprint-146-update.md)]
 
 ## Next steps
 

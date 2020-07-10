@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use the Kanban board, process, and tools to plan and track work in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: BDB9CF5A-D83C-4823-BD53-29D49F797FB4
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,18 +14,18 @@ ms.date: 02/14/2019
 
 
 # Reorder cards  
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 <a id="reorder-cards"></a>
 
 You can drag any work item to any column or swimlane on the Kanban board. You can even change the order of items as you move a card to a new column. 
 
-![Reorder cards while changing columns](https://i3-vso.sec.s-msft.com/dynimg/IC822185.gif)
+![Reorder cards while changing columns](media/8_7_02.gif)
 
 <a id="card-reorder-note"></a>
 
 The last column, typically the **Closed** or **Done** column, is always ordered by *Closed Date* with the most recently closed items appearing towards the top of the column. In all other columns, cards are ordered by the backlog order or they are reorder based on the Card reordering setting selected.  
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 
 <a id="card-reorder-setting"></a>
@@ -80,7 +78,7 @@ If you want to preserve the backlog priority when you move a card to a new colum
 3. When done with your changes, choose **Save**.
 
 	> [!TIP]
-	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
+	> You can drag-and-drop work items onto a sprint from any backlog or board. To add sprints to a team backlog, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 

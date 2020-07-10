@@ -3,8 +3,6 @@ title: Why am I not receiving notification emails?
 titleSuffix: Azure DevOps
 description: Discover why you aren't receiving emails from your Azure DevOps or TFS notification subscriptions and fix it.
 ms.technology: devops-collab
-ms.prod: devops
-ms.manager: mijacobs
 ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Not getting emails from subscriptions or notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 An email is sent when an [event](oob-supported-event-types.md) occurs that matches a notification subscription. For more information about notification subscriptions, see the [notifications overview](about-notifications.md).
 
@@ -41,7 +39,7 @@ Ensure the email wasn't delivered to a different email folder, including the jun
 
 ## Locate the subscription and ensure it's enabled
 
-Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#navigating-to-the-personal-notifications-page).
+Go to your personal subscriptions and locate the subscription, which you feel should have produced an email. [Learn how to navigate to your personal subscriptions](navigating-the-ui.md#open-person-level).
 
 If the subscription is grayed-out in the user interface, then it's disabled. The following screenshot shows the first subscription enabled and the second disabled.
 

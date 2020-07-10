@@ -2,10 +2,8 @@
 title: Use the Dialog Control | Extensions for Azure DevOps Services
 description: Use the modal dialog control to collect user input or display message in your app for Azure DevOps Services.
 ms.assetid: 84F3452D-9EB6-4908-AB52-07903644EDA8
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ This page shows different samples about the modal dialog control.
 
 **Go to [API Reference](../../reference/client/controls/modaldialog.md) for more details.**
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <div class="alert alert-warning">
 When using this modal dialog, dialog overlay covers only the area dedicated to the extension due to iframe limitations. If you want the modal dialog cover whole window, see <a href="../using-host-dialog.md" data-raw-source="[Using host dialog](../using-host-dialog.md)">Using host dialog</a>.

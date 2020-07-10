@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Make Your Extension or Integration Public | Extensions for Azure DevOps Services
 description: Guideline for making an integration or extension publicly visible on the Visual Studio Marketplace
 ms.assetid: d4dab00f-5089-4754-85f0-19bff1cb364a
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= azure-devops-2019'
 ms.author: chcomley
 author: chcomley
@@ -24,7 +22,7 @@ This page covers the required steps to make your integration or extension listin
 * Learn more about [packaging and publishing an extension to the Marketplace](./overview.md)
 * Learn more about [packaging and publishing an integration to the Marketplace](./integration.md)
 
-> As you are developing your extension or the content for your Marketplace page (for either an extension or integration), your extension can and should remain private.
+> As you are developing your extension or the content for your Marketplace page (for either an extension or integration), your extension can and should remain private. To make your extension available publicly, you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest.
 
 ## Qualifications
 
@@ -35,20 +33,6 @@ To have a public listing on the Marketplace, your integration or extension must 
 3. The extension or integration is actively maintained.
 
 Microsoft might also request a demo and to review the content planned for your Marketplace entry.
-
-## Process
-
-The process to have a public Azure DevOps Services listing for an integration or extension is the same. The publisher needs to be verified in order to do so. Only **verified** publishers can have public offerings for Azure DevOps in the Marketplace.
-
-Once you are ready to publish a public Azure DevOps listing to the Marketplace, follow these steps:
-
-1. Visit https://marketplace.visualstudio.com/manage/publishers and login with the organization using which you publish and manage Azure DevOps Services listings in Marketplace.
-2. Select the publisher and through the **Details tab** apply for publisher verification. Find the appropriate section towards the bottom of the tab.
-3. Expect Microsoft to approve or respond within 3 business days to your verification request.
-
-Once your publisher is verified, you need to set the [public flag](../develop/manifest.md#public-flag) to true in your manifest for your extension to be available publicly.
-
-> **Important**: Once your publisher is verified, you can't change its display name without contacting Microsoft.
 
 
 ## Top Publisher 

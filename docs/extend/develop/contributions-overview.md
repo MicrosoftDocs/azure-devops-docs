@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Contributions Model Fundamentals | Extensions for Azure DevOps Services
 description: Overview of the contribution model, including an overview of contributions, types, and targeting other contributions
 ms.assetid: 96509f47-bac2-4319-9085-2621ff8f814a
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -19,7 +17,7 @@ A contribution type defines something that can be added to the system. A contrib
 example, `hub` is a contribution type defined by a core, Microsoft-provided extension. The `Explorer` hub under the Build hub group is a 
 specific contribution of type `hub`.
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ### Contribution types
 

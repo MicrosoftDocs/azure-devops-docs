@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts QueuePriority API | Extensions for Azure DevOps Services
 description: Data representation of a queue priority.
 ms.assetid: 04ef4239-e7f9-06cf-3e1d-95e3d154c69e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

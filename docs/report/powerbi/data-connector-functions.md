@@ -3,11 +3,9 @@ title: Connect using Power Query & Azure DevOps functions
 titleSuffix: Azure DevOps 
 description: Describes the available functions that the Power BI Data Connector and Analytics support for Azure DevOps 
 ms.assetid: EC735BA2-24C9-4BA3-B35E-2CE9D2F1D7F1
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.reviewer: stansw
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -16,7 +14,7 @@ ms.date: 8/1/2019
 
 # Connect using Power Query and Azure DevOps functions 
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 The Data Connector for Azure DevOps includes Power Query M functions which query authors can use. These functions can handle Azure DevOps specific requirements, such as authentication for you. This article describes the arguments for the functions and how to use them to connect to Analytics. 
 

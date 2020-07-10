@@ -2,10 +2,8 @@
 title: VSS/WebApi/Contracts ApiResourceLocation API | Extensions for Azure DevOps Services
 description: Information about the location of a REST API resource
 ms.assetid: 37361343-f0c8-b926-f488-9327d6f58edc
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

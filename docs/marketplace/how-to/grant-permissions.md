@@ -2,10 +2,8 @@
 title: Manage extension permissions - Azure DevOps
 description: Grant users or groups permission for managing extensions for Azure DevOps
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 07/11/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage extension permissions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../../boards/includes/version-vsts-tfs-2015-on.md)]
 
 ::: moniker range="azure-devops"
 
@@ -34,7 +32,7 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Extensions**.
 
@@ -56,11 +54,11 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Admin settings**.
 
-    ![Open Admin settings](../../_shared/media/settings/open-admin-settings-server.png)
+    ![Open Admin settings](../../media/settings/open-admin-settings-server.png)
 
 3. Select **Extensions**, and then select **Security**.
 
-    ![Extension settings hub](../_shared/media/select-extensions-and-security.png)
+    ![Extension settings hub](../media/select-extensions-and-security.png)
 
 4. Add users or update permission settings:
 

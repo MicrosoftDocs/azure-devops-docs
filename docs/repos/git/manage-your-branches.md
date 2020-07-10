@@ -3,13 +3,11 @@ title: Manage branches in your Git repo
 titleSuffix: Azure Repos
 description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 07/08/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -100,15 +98,13 @@ This is useful when you want to use a branch other than `master` for new changes
 
 ::: moniker range=">= azure-devops-2019"
 
-1. [Navigate](../../project/navigation/go-to-project-repo.md) to your project and select **Project settings**.
+1. [Navigate](../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
-2. Scroll down and select **Repositories** from the **Code** section.
-
-3. Select the desired repository and expand the branches.
+3. Select the desired new default branch.
 
 4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
+   ![Set default branch](media/pull-requests/set-default-branch-in-product.png)
 
 ::: moniker-end
 

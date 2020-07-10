@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces ContributedServiceContext API | Extensions for Azure DevOps Services
 description: Page context configuration that can be contributed by remote services (different Azure DevOps Services services delivering content to the page)
 ms.assetid: 342d593c-8248-6e29-40dc-b61354481a0c
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

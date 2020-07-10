@@ -1,12 +1,10 @@
 ---
 title: Create an aggregate report with Report Designer 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: How to create a report that shows how many active work items are assigned to each person on the team - Team Foundation Server  
 ms.assetid: b02997f4-2c4b-4814-868e-37e0c2414254
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -16,7 +14,7 @@ ms.date: 10/17/2017
 
 # Create an aggregate report using Report Designer and the Analysis Services Cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can track your team's progress more easily by creating reports that aggregate data from Visual Studio Application Lifecycle Management (ALM) (TFS) into charts and tables. For example, you can create a report that shows how many active work items are assigned to each person on the team. To create this type of report, you use Report Designer in SQL Server and the SQL Server Analysis Services cube for TFS.  
 

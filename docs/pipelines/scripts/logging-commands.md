@@ -2,12 +2,8 @@
 title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.manager: mijacobs
-ms.author: phwilson
-ms.date: 12/04/2019
+ms.date: 07/07/2020
 ---
 
 # Logging commands
@@ -21,6 +17,12 @@ The general format for a logging command is:
 
 ```
 ##vso[area.action property1=value;property2=value;...]message
+```
+
+There are also a few formatting commands with a slightly different syntax:
+
+```
+##[command]message
 ```
 
 To invoke a logging command, echo the command via standard output.
@@ -41,6 +43,32 @@ Write-Host "##vso[task.setvariable variable=testvar;]testvalue"
 ---
 
 File paths should be given as absolute paths: rooted to a drive on Windows, or beginning with `/` on Linux and macOS.
+
+## Formatting commands
+
+These commands are messages to the log formatter in Azure Pipelines.
+They mark specific log lines as errors, warnings, collapsible sections, and so on.
+
+The formatting commands are:
+
+```
+##[group]Beginning of a group
+##[warning]Warning message
+##[error]Error message
+##[debug]Debug-only text
+##[command]Command-line being run
+##[endgroup]
+```
+
+Those commands will render in the logs like this:
+
+![Screenshot of logs with custom formatting](media/log-formatting.png)
+
+That block of commands can also be collapsed, and looks like this:
+
+![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
+
+The debug line will only appear if you run the pipeline with diagnostics turned on.
 
 ## Task commands
 
@@ -165,18 +193,20 @@ Finish the timeline record for the current task, set task result and current ope
 ##vso[task.complete result=Succeeded;]DONE
 ```
 
-### LogDetail: Create and update a timeline record for a task
+### LogDetail: Create or update a timeline record for a task
 
 `##vso[task.logdetail]current operation`
 
 #### Usage
 
-Create and update detail timeline records.
+Creates and updates timeline records.
+This is primarily used internally by Azure Pipelines to report about steps, jobs, and stages.
+While customers can add entries to the timeline, they won't typically be shown in the UI.
 
-The first time we saw `##vso[task.detail]` for each task, we will create a detail timeline for the task. We will create and update nested timeline record base on id and `parentid`.
+The first time we see `##vso[task.detail]` during a step, we create a "detail timeline" record for the step. We can create and update nested timeline records base on `id` and `parentid`.
 
-Task author need to remember which GUID they used for each timeline record.
-The logging system will keep tracking the GUID for each timeline records that been created, so any new GUID will result a new timeline record.
+Task authors must remember which GUID they used for each timeline record.
+The logging system will keep track of the GUID for each timeline record, so any new GUID will result a new timeline record.
 
 #### Properties
 
@@ -208,7 +238,7 @@ Create new nested timeline record:
 Update exist timeline record: 
 
 ```
-##vso[task.logdetail id=exist timeline record guid;progress=15;state=InProgress;]update timeline record
+##vso[task.logdetail id=existing timeline record guid;progress=15;state=InProgress;]update timeline record
 ```
 
 ### SetVariable: Initialize or modify the value of a variable
@@ -224,7 +254,9 @@ When `issecret` is set to `true`, the value of the variable will be saved as sec
 #### Properties
 
 * `variable` = variable name (Required)
-* `issecret` = `true` (Optional)
+* `issecret` = boolean (Optional, defaults to false)
+* `isoutput` = boolean (Optional, defaults to false)
+* `isreadonly` = boolean (Optional, defaults to false)
    
 #### Examples
 
@@ -235,6 +267,7 @@ Set the variables:
 ```bash
 echo "##vso[task.setvariable variable=sauce;]crushed tomatoes"
 echo "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+echo "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
 ```
 
 Read the variables:
@@ -243,6 +276,7 @@ Read the variables:
 echo "Non-secrets automatically mapped in, sauce is $SAUCE"
 echo "Secrets are not automatically mapped in, secretSauce is $SECRETSAUCE"
 echo "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+echo "Future jobs can also see $OUTPUTSAUCE"
 ```
 
 # [PowerShell](#tab/powershell)
@@ -252,6 +286,7 @@ Set the variables:
 ```ps
 Write-Host "##vso[task.setvariable variable=sauce;]crushed tomatoes"
 Write-Host "##vso[task.setvariable variable=secretSauce;issecret=true]crushed tomatoes with garlic"
+Write-Host "##vso[task.setvariable variable=outputSauce;isoutput=true]canned goods"
 ```
 
 Read the variables:
@@ -260,6 +295,7 @@ Read the variables:
 Write-Host "Non-secrets automatically mapped in, sauce is $env:SAUCE"
 Write-Host "Secrets are not automatically mapped in, secretSauce is $env:SECRETSAUCE"
 Write-Host "You can use macro replacement to get secrets, and they'll be masked in the log: $(secretSauce)"
+Write-Host "Future jobs can also see $env:OUTPUTSAUCE"
 ```
 
 ---
@@ -270,6 +306,7 @@ Console output:
 Non-secrets automatically mapped in, sauce is crushed tomatoes
 Secrets are not automatically mapped in, secretSauce is
 You can use macro replacement to get secrets, and they'll be masked in the log: ***
+Future jobs can also see canned goods
 ```
 
 ### SetEndpoint: Modify a service connection field

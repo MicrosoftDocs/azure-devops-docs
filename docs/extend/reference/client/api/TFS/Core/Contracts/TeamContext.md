@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts TeamContext API | Extensions for Azure DevOps Services
 description: The Team Context for an operation.
 ms.assetid: ed8224a3-58fc-a5b3-86a2-1f956fff316d
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

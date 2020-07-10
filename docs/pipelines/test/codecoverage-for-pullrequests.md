@@ -2,11 +2,8 @@
 title: Code coverage for pull requests
 description: Continuous testing. Measuring code coverage for changes in pull requests. 
 ms.assetid: 1B7C890E-FB67-4BEF-A48E-20C9453BD54A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 10/04/2019
@@ -15,7 +12,7 @@ monikerRange: 'azure-devops'
 
 # Code coverage for pull requests
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Code coverage is an important quality metric and helps you measure the percentage of your project's code that is being tested. To ensure that quality for your project improves over time (or at the least, does not regress), it is essential that new code being brought into the system is well tested. This means that when developers raise pull requests, knowing whether their changes are covered by tests would help plug any testing holes before the changes are merged into the target branch. Repo owners may also want to set policies to prevent merging large untested changes.
 
@@ -28,7 +25,7 @@ However, in the context of pull requests, developers are focused on the changes 
 
 In order to get coverage metrics for a pull request, first configure a pipeline that validates pull requests. In this pipeline, configure the test tool you are using to collect code coverage metrics. Coverage results must then be published to the server for reporting. 
 
-To learn more about collecting and publishing code coverage results for the language of your choice, see the [Ecosystems](../ecosystems/index.md) section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md#collect-code-coverage).
+To learn more about collecting and publishing code coverage results for the language of your choice, see the [Ecosystems](../ecosystems/ecosystems.md) section. For example, collect and publish code coverage for [.NET core apps](../ecosystems/dotnet-core.md#collect-code-coverage).
 
 > [!NOTE] 
 > While you can collect and publish code coverage results for many different languages using Azure Pipelines, the **code coverage for pull requests** feature discussed in this document is currently available only for .NET and .NET core projects using the Visual Studio code coverage results format (file extension .coverage). Support for other languages and coverage formats will be added in future milestones.
@@ -83,7 +80,7 @@ Code coverage status check for pull requests is only a suggestion for developers
 > [!NOTE] 
 > Branch policies in Azure Repos (even optional policies) prevent pull requests from completing automatically if they fail. This behavior is not specific to code coverage policy.
 
-## Q&A
+## FAQ
 
 ### Which coverage tools and result formats can be used for validating code coverage in pull requests?
 
@@ -95,4 +92,4 @@ Support for other coverage tools and result formats will be added in future mile
 If multiple pipelines are triggered when a pull request is raised, code coverage will not be merged. The capability is currently designed for a single pipeline that collects and publishes code coverage for pull requests. 
 If you need the ability to merge coverage data across pipelines, please file a feature request on [developer community](https://developercommunity.visualstudio.com/spaces/21/index.html). 
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

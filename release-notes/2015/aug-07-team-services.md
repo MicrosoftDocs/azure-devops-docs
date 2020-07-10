@@ -1,7 +1,6 @@
 ---
 title: Multi-select backlog items, reorder when changing columns, client libraries availability – Aug 7
 description: VSTS release notes for August 7 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 8e5ea1bd-811a-46eb-8b25-f12f449b1c93

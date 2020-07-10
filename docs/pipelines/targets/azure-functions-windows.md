@@ -2,10 +2,7 @@
 title: Deploy a function app to Azure Functions windows
 description: Deploy to Azure Functions windows from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.assetid: CF5192EB-3505-4E87-8F73-77DD75B57C93
 ms.custom: seodec18
 ms.author: puagarw
@@ -122,9 +119,9 @@ You must supply an Azure service connection to the AzureFunctionApp task. Add th
 
 ```yaml
 variables: 
-    ## Add this under variables section in the pipeline
-    azureSubscription: <Name of the Azure subscription>
-    appName: <Name of the Function App>
+  ## Add this under variables section in the pipeline
+  azureSubscription: <Name of the Azure subscription>
+  appName: <Name of the Function App>
 
 ## Add the below snippet at the end of your pipeline
 - task: AzureFunctionApp@1

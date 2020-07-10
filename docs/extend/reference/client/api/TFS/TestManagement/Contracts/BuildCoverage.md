@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts BuildCoverage API | Extensions for Azure DevOps Services
 description: Data representation of build coverage.
 ms.assetid: 3fccf151-f87a-3f82-638a-0eff83606b8e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitPushEventData API | Extensions for Azure DevOps Services
 ms.assetid: ec8b6f6c-6de0-e0f1-30f3-2fcb76913144
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

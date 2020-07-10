@@ -1,14 +1,11 @@
 ---
 title: Backlog overview (Scrum) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Reports the lists of all product backlog items (PBIs) - Team Foundation Server  
 ms.assetid: b3e2c54e-99de-47d1-9fa5-08539ff31c87
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 
@@ -16,7 +13,7 @@ ms.date: 10/17/2017
 
 # Backlog overview (Scrum)
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Backlog Overview report lists all product backlog items (PBIs), both active and completed. It doesn't include bugs. The report presents a snapshot of the work that has been performed for the filtered set of PBIs.  
   

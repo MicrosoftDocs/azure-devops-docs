@@ -3,10 +3,8 @@ title: Define the hyperlink for a work item
 titleSuffix: Azure Boards
 description: Construct a URL for a work item for Azure Boards, Azure DevOps & TFS
 ms.custom: work-items, seodec18
-ms.prod: devops
 ms.technology: devops-agile   
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: reference   
 monikerRange: '>= tfs-2013'   
@@ -17,7 +15,7 @@ ms.date: 11/19/2018
 
 # Define the URL for a work item 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can define the URL for a work item using the syntax provided based on the version or platform you work from. 
 

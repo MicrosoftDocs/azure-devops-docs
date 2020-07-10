@@ -2,10 +2,8 @@
 title: Share steps between test cases
 description: Manual and exploratory testing - Share steps between all your test cases when you want to test web applications
 ms.assetid: 5b7b1bfa-d958-442d-ab90-a0339b8baf0a
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,14 +12,14 @@ monikerRange: '>= tfs-2015'
 
 # Share steps between test cases
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 When you [plan manual tests](../create-a-test-plan.md) there are some sequences of steps, such as logging in, that occur in many test cases. To avoid having to enter these sequences again and again, create *shared steps*.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ## Create shared steps 
  
@@ -53,4 +51,4 @@ When you [run a test](../run-manual-tests.md), you can either mark the whole sha
 
 *  [FAQs for manual testing](../reference-qa.md#sharesteps)
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

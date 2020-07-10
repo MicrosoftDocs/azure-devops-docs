@@ -3,10 +3,8 @@ title: Add a widget to a team dashboard
 titleSuffix: Azure DevOps
 description: Choose and configure widgets that you add to a team dashboard in Azure DevOps & Team Foundation Server  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 0869DB42-6983-49A2-855C-2678CFFF4967
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,14 +15,14 @@ ms.date: 04/05/2019
 
 # Add widgets to a dashboard
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Widgets smartly format data to provide access to easily consumable data. You add widgets to your team dashboards to gain visibility into the status and trends occurring as you develop your software project. 
 
 Each widget provides access to a chart, user-configurable information, or a set of links that open a feature or function. 
 You can add one or more charts or widgets to your dashboard. Up to 200 widgets total. You add several widgets at a time simply by selecting each one. See [Manage dashboards](dashboards.md#manage) to determine the permissions you need to add and remove widgets from a dashboard.  
 
-[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ::: moniker range=">= azure-devops-2019"
 

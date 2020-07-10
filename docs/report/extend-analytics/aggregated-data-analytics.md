@@ -2,9 +2,7 @@
 title: Aggregate work tracking data 
 titleSuffix: Azure DevOps
 description: How to guide to aggregate and filter data with Analytics and the OData aggregation extension in Azure DevOps
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -14,7 +12,7 @@ ms.date: 11/1/2018
 
 # Aggregate work tracking data using Analytics   
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 You can get a sum of your work tracking data in one of two ways using Analytics with Odata. The first method returns a simple count of work items based on your  OData query. The second method returns a JSON formatted result based on your OData query which exercises the OData Aggregation Extension.   
 
@@ -27,7 +25,7 @@ In this article you'll learn:
 > * How to group and filter aggregated results 
 > * How to aggregate data to generate a Cumulative Flow diagram  
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 
 ## What is the Aggregation Extension for OData?
@@ -74,7 +72,7 @@ Where the full OData query is:
 > ```OData
 > https://analytics.dev.azure.com/{OrganizationName}/_odata/{version}/WorkItems/$count
 > ``` 
-> [!INCLUDE [temp](../_shared/api-versioning.md)]
+> [!INCLUDE [temp](../includes/api-versioning.md)]
 
 For comparison, using the OData aggregation extension, you add the following to your query:
 

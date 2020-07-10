@@ -3,7 +3,6 @@ title: General - Sprint 154 Update
 description: See the Sprint 154 general updates for Azure DevOps, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 07/01/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 07/01/2019
 
 ## Features
 
-[!INCLUDE [sprint-154-update-links](../_shared/general/sprint-154-update-links.md)]
+[!INCLUDE [sprint-154-update-links](../includes/general/sprint-154-update-links.md)]
 
-[!INCLUDE [sprint-154-update](../_shared/general/sprint-154-update.md)]
+[!INCLUDE [sprint-154-update](../includes/general/sprint-154-update.md)]
 
 ## Next steps
 

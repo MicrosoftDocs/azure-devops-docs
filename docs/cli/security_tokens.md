@@ -1,13 +1,12 @@
-﻿---
+---
 title: CLI Security tokens for permissions management
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security tokens for permissions management
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 06/18/2019
@@ -15,7 +14,7 @@ ms.date: 06/18/2019
 
 # Security tokens for permissions management
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 Tokens are arbitrary strings representing resources in Azure DevOps. Token format differs per resource type, however hierarchy and separator characters are common between all tokens.
 
@@ -30,9 +29,9 @@ Tokens in a flat namespace have no concept of a parent-child relationship betwee
 Tokens in a hierarchical namespace either have a fixed length for each path part, or variable length.
 If the tokens have variable-length path parts, then a separator character is used to distinguish where one path part ends and another begins.
 
-## Token examples for different namespaces
+Token examples for different namespaces are provided in the following sections.
 
-### Namespace name: Project
+## Namespace: Project
 
    Namespace ID:52d39943-cb85-4d7f-8fa8-c6baac873819
 
@@ -51,7 +50,7 @@ If the tokens have variable-length path parts, then a separator character is use
    Thus, the token to secure project related permissions for 'Test Project 1' would be
    '$PROJECT:vstfs:///Classification/TeamProject/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
-### Namespace name : Tagging
+## Namespace: Tagging
 
    Namespace ID : bb50f182-8e5e-40b8-bc21-e8752a1e7ae2
 
@@ -59,7 +58,7 @@ If the tokens have variable-length path parts, then a separator character is use
 
    Example : '/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
-### Namespace name : AnalyticsViews
+## Namespace: AnalyticsViews
 
    Namespace ID : d34d3680-dfe5-4cc6-a949-7d9c68f73cba
 
@@ -75,7 +74,7 @@ If the tokens have variable-length path parts, then a separator character is use
 
    Example : '$/xxxxxxxx-a1de-4bc8-b751-188eea17c3ba'
 
-### Namespace name: Iteration
+## Namespace: Iteration
 
    Namespace ID : bf7bfa03-b2b7-47db-8113-fa2e002cc5b1
 
@@ -96,13 +95,13 @@ If the tokens have variable-length path parts, then a separator character is use
 
    'vstfs:///Classification/Node/ProjectIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1_Identifier:vstfs:///Classification/Node/TeamIteration1ChildIteration1_Identifier'
 
-### Namespace name :  BuildAdministration
+## Namespace: BuildAdministration
 
    Namespace ID : 302acaca-b667-436d-a946-87133492041c
 
    Token format: 'BuildPrivileges'
 
-### Namespace name :  Build
+## Namespace:  Build
 
    Namespace ID : 33344d9c-fc72-4d6f-aba5-fa317101a7e9
 
@@ -114,7 +113,7 @@ If the tokens have variable-length path parts, then a separator character is use
 
    Example : 'xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12'
 
-### Namespace name :  Identity
+## Namespace: Identity
 
    Namespace ID : 5a27515b-ccd7-42c9-84f1-54c998f03866
 
@@ -126,7 +125,7 @@ If the tokens have variable-length path parts, then a separator character is use
 
    Token : 'xxxxxxxx-a1de-4bc8-b751-188eea17c3ba\2b087996-2e64-4cc1-a1dc-1ccd5e7eb95b'
 
-### Namespace name :  ReleaseManagement
+## Namespace: ReleaseManagement
 
    Namespace ID : c788c23e-1b46-4162-8f5e-d7585343b5de
 
@@ -137,10 +136,16 @@ If the tokens have variable-length path parts, then a separator character is use
    If you need to update permissions for a particular release definition ID [Let's say 12], security token for that release definition would look like this
 
    Token format for project level build permissions : 'PROJECT_ID/12'
-
+   
    Example : 'xxxxxxxx-a1de-4bc8-b751-188eea17c3ba/12'
+   
+   If the release definition ID lives in a folder, then the security token would look like this
+   
+   Token format: 'PROJECT_ID/{folderName}/12'
+   
+   For stages, tokens look like: 'PROJECT_ID/{folderName}/{DefinitionId}/Environment/{EnvironmentId}'
 
-### Namespace name :  Git Repositories
+## Namespace name: Git Repositories
 
    Namespace ID : 2e9eb7ed-3c0a-47d4-87c1-0ffdd275fd87
 
@@ -151,3 +156,63 @@ If the tokens have variable-length path parts, then a separator character is use
    Token format for repository level permissions : 'repoV2/PROJECT_ID/REPO_ID'
 
    For more information on this namespace and its tokens refer this [blog](https://devblogs.microsoft.com/devops/git-repo-tokens-for-the-security-service/)
+
+## Namespace: AuditLog
+   
+   Namespace ID : a6cc6381-a1ca-4b36-b3c1-4e65211e82b6
+   
+   Token format : '/AllPermissions'
+ 
+## Namespace: UtilizationPermissions
+   
+   Namespace ID : 83abde3a-4593-424e-b45f-9898af99034d
+   
+   Token format : '/'
+   
+   This namespace controls the ability to query usage summaries for users. 
+   
+## Namespace WorkItemTrackingProvision 
+
+   Namespace ID : 5a6cd233-6615-414d-9393-48dbb252bd23
+   
+   Root token format : '/$'
+   
+   Token format for a specific project: '$/PROJECT_ID'
+   
+   This is an older security namespace that is mostly used for Azure DevOps Server and older Azure DevOps Services projects. It has been largely replaced by the "Process" namespace. 
+   
+### Namespace name : Workspaces 
+   
+   Namespace ID : 93bafc04-9075-403a-9367-b7164eac6b5c
+   
+   Root token format: '/'
+   
+   Token format for a specific workspace: '/{workspace_name};{owner_id}' 
+   
+   This security namespace is used only with TFVC. The user ID in the token is the TeamFoundationID of the Workspace's owner/creator.
+
+### Deprecated/read-only namespaces
+
+The following namespaces are either deprecated or read-only. You shouldn't use them. 
+- CrossProjectWidgetView
+- DataProvider
+- Favorites
+- Graph
+- IdentityPicker
+- Job
+- Location
+- ProjectAnalysisLanguageMetrics
+- Proxy
+- Registry
+- Security
+- ServicingOrchestration
+- SettingEntries
+- Social
+- StrongBox
+- TestManagement
+- ViewActivityPaneSecurity
+- WebPlatform
+- WorkItemsHub
+- WorkItemTracking
+- WorkItemTrackingConfiguration.
+

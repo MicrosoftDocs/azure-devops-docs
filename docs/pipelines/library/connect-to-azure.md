@@ -3,10 +3,7 @@ title: Connect to Microsoft Azure
 ms.custom: seodec18
 description: Use an ARM service connection to connect Azure Pipelines or TFS to Microsoft Azure
 ms.assetid: 4CC6002E-9EF6-448C-AD48-5C618C103950
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 12/18/2018
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Connect to Microsoft Azure
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 To deploy your app to an Azure resource (to an app service or to a virtual machine), you need an Azure Resource Manager service connection. 
 
@@ -121,7 +118,7 @@ or a [VM with a managed service identity](#use-msi).
 
 1. If required, modify the service principal to expose the appropriate permissions. For more details, see 
    [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/role-based-access-control/role-assignments-portal).
-   [This blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/10/04/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-build-release-management.aspx)
+   [This blog post](https://devblogs.microsoft.com/devops/automating-azure-resource-group-deployment-using-a-service-principal-in-visual-studio-online-buildrelease-management/)
    also contains more information about using service principal authentication.
 
 See also: [Troubleshoot Azure Resource Manager service connections](../release/azure-rm-endpoint.md).
@@ -130,11 +127,17 @@ See also: [Troubleshoot Azure Resource Manager service connections](../release/a
 
 ## Create an Azure Resource Manager service connection to a VM with a managed service identity
 
+> [!NOTE]
+> 
+> You are required to use a self-hosted agent on an Azure VM in order to use managed service identity 
+
 You can configure Azure Virtual Machines (VM)-based agents with an
 [Azure Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview)
 in Azure Active Directory (Azure AD). This lets you use the system assigned identity (Service Principal)
  to grant the Azure VM-based agents access to any Azure resource that supports Azure AD,
 such as Key Vault, instead of persisting credentials in Azure DevOps for the connection.
+
+
 
 1. In Azure DevOps, open the **Service connections** page from the [project settings page](../../project/navigation/go-to-service-page.md#open-project-settings).
    In TFS, open the **Services** page from the "settings" icon in the top menu bar.
@@ -188,4 +191,4 @@ For information about connecting to Azure Stack, see:
 * [Connect Azure Stack to Azure using VPN](/azure/azure-stack/azure-stack-connect-vpn)
 * [Connect Azure Stack to Azure using ExpressRoute](/azure/azure-stack/azure-stack-connect-expressroute)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

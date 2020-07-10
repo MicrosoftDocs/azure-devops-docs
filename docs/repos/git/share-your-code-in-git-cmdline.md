@@ -3,19 +3,17 @@ title: Share your code with Git from the command line
 titleSuffix: Azure Repos
 description: Share code in Git using the command line
 ms.assetid: 4b299dbf-3ca9-47af-bd6d-8c40bafac447
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
-ms.date: 09/10/2018
-monikerRange: '>= tfs-2015'
+ms.date: 05/11/2020
+monikerRange: 'azure-devops'
 ---
 
 # Get started with Git from the command line
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015
+#### Azure Repos
 
 This guide shows you how to share your code in a Git repo in Azure Repos using the command line.
 

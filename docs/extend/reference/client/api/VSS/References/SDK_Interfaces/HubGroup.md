@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces HubGroup API | Extensions for Azure DevOps Services
 description: Model representing a hub group in Azure DevOps Services pages&#x27; navigation menu
 ms.assetid: bcc23993-711a-f2c1-64c1-4cbfb3f0a0e3
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

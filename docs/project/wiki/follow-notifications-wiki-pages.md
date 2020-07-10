@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Learn how to follow wiki pages and get notifications in Azure DevOps 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -17,7 +15,7 @@ ms.date: 04/02/2019
 
 # Follow a wiki page, get notifications
 
-[!INCLUDE [temp](../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-only.md)]
 
 Follow a Wiki page and get notified by email whenever the page is edited, deleted, or renamed.
 

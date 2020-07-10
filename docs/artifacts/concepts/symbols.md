@@ -1,13 +1,9 @@
 ---
 title: Symbol files (PDBs)
 description: Symbol files conceptual overview for Azure DevOps Services and Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
 ms.assetid: 6D0F0D86-2ADC-4902-AFA7-98F7EF78EE07
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 10/19/2017
 monikerRange: '>= tfs-2017'
 ---
@@ -18,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 **Azure DevOps Services** | **TFS 2018** | **TFS 2017**
 
-[!INCLUDE [](../_shared/availability-symbols.md)]
+[!INCLUDE [](../includes/availability-symbols.md)]
 
 To debug compiled executables, especially executables compiled from native code languages like C++, you need symbol files that contain debugging information. These files generally have the PDB (program database) extension. 
 

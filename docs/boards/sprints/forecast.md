@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Determine how much work your team can deliver across several sprints by forecasting in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-sprints    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: C46ED4AA-4B8F-4D5D-BC51-52F6D67BF8C6
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -16,7 +14,7 @@ ms.date: 2/14/2019
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints. Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -26,7 +24,7 @@ Use this article to learn:
 > * How to forecast upcoming sprints     
 > * Required and recommended team activities to support forecasting  
 
-[!INCLUDE [temp](../_shared/setup-backlogs-boards.md)]
+[!INCLUDE [temp](../includes/setup-backlogs-boards.md)]
 
 ## Prerequisites
 
@@ -56,7 +54,7 @@ Use this article to learn:
 Here's what you need to have in place before you attempt to forecast your team's backlog.   
 
 **Required:** 
-*	[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+*	[Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Sprints should be of the same duration. 
 	- Select enough future sprints to forecast your entire product backlog.
 *	[Define and estimate backlog items](../backlogs/create-your-backlog.md#estimates). If you work from your team's backlog, the items you create will automatically be assigned to the current sprint (Iteration) and to your team's default Area Path.  
@@ -112,7 +110,7 @@ To forecast your product backlog, perform the following actions.
 
 	Set **In Progress Items** to **Off** to hide those items that won't be counted in the forecast. The forecast tool ignores Scrum items set to *Committed* or *Done* and Agile and CMMI items set to *Active*, *Resolved*, or *Completed*. 
 
-4. Enter your team's predicted velocity. If the **Forecasting** bar doesn't appear.
+4. Enter your team's predicted velocity. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, Set Forecast velocity](media/forecast/set-forecast-velocity.png)
@@ -269,7 +267,7 @@ Now that you understand how to work with forecasting, you can use this tool to s
 ## Related articles
 
 *	[Team velocity](../../report/dashboards/team-velocity.md)  
-*	[Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+*	[Define iteration paths (sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 *	Use the [taskboard](task-board.md) to track work during your sprint
 *	Monitor the [sprint burndown chart](task-board.md) to determine if your team is on track to complete the sprint plan
 

@@ -2,11 +2,9 @@
 title: Process customization and inherited processes
 titleSuffix: Azure DevOps Services
 description: Describes work tracking customizations supported by the inherited process model for Azure DevOps Services 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
@@ -16,7 +14,7 @@ ms.date: 12/12/2019
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 <a id="inherited" /> 
 
@@ -28,7 +26,13 @@ To customize the work tracking system, you *customize* an inherited process thro
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
 <a id="what-you-can-customize">  </a>
+
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
 Below you'll find an index to those tasks you can perform to customize an inherited process. Some options of inherited elements are locked and can't be customized.  
+
+[!INCLUDE [temp](../../../boards/includes/note-configure-customize.md)]
+
 
 
 ## System versus inherited processes 
@@ -241,7 +245,7 @@ The following picklists are configured for each project and not customizable thr
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
 - [Iteration paths](../../../organizations/settings/set-iteration-paths-sprints.md)
 
-Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you add to a [project or team](../../accounts/add-team-members.md).   
+Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
 
 
 <a id="rename-field">  </a>
@@ -258,9 +262,9 @@ You can delete a field, and later restore it. Deleting a field deletes all data 
 
 Instead of deleting a field, you may want to instead hide or remove the field from a work item form. For details, see [Add and manage fields, Show, hide, or remove a field](customize-process-field.md#show-hide-remove-field).
 
-[!INCLUDE [temp](../_shared/field-reference.md)] 
+[!INCLUDE [temp](../includes/field-reference.md)] 
 
-[!INCLUDE [temp](../_shared/fields-become-invalid-after-customization.md)] 
+[!INCLUDE [temp](../includes/fields-become-invalid-after-customization.md)] 
 
 
 <a id="system-rules">  </a>
@@ -286,7 +290,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 - When the value of Approved is True, then make Approved By a required field 
 - When a user story is created, make the following fields required: Priority, Risk, and  Effort
 
-[!INCLUDE [temp](../_shared/tip-formula-rule.md)]
+[!INCLUDE [temp](../includes/tip-formula-rule.md)]
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
@@ -302,7 +306,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 ### Restrict modification of closed work items 
 
-[!INCLUDE [temp](../../../_shared/restrict-modification-closed-wi.md)]
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 ### Restrict modification of work items based on Area Path 
 
@@ -428,54 +432,7 @@ When the display width won't accommodate all columns, columns appear stacked wit
 
 ## Workflow customizations
 
-You can customize the workflow of any WIT by hiding inherited states or adding custom states. By default, each WIT is defined with three or four workflow states. Inherited states differ based on the system process &mdash;[Agile](../../../boards/work-items/guidance/agile-process.md), [Scrum](../../../boards/work-items/guidance/scrum-process.md), or [CMMI](../../../boards/work-items/guidance/cmmi-process.md)&mdash;you chose from which to create your custom process. 
-
-> [!NOTE]    
-> Before adding a workflow state, review [Workflow states and state categories](../../../boards/work-items/workflow-and-state-categories.md) to learn how workflow states are used to support several Agile tools. 
-
-
-<table width="80%">
-<tbody valign="top">
-<tr>
-<th width="35%">State types</th>
-<th width="65%">Customization support</th>
-</tr>
-<tr>
-<td><img src="media/process/inherited-icon.png" alt="Inherited icon"/> Inherited states   </td>
-<td>
-<ul>
-<li><a href="customize-process-workflow.md#hide-state" data-raw-source="[View workflow states](customize-process-workflow.md#hide-state)">View workflow states</a></li>
-<li><a href="customize-process-workflow.md#hide-state" data-raw-source="[Hide a state](customize-process-workflow.md#hide-state)">Hide a state</a></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>Custom states  </td>
-<td>
-<ul>
-<li><a href="customize-process-workflow.md#add-states" data-raw-source="[Add a state](customize-process-workflow.md#add-states)">Add a state</a></li>
-<li><a href="customize-process-workflow.md#edit-state" data-raw-source="[Edit a state (change color or category)](customize-process-workflow.md#edit-state)">Edit a state (change color or category)</a></li>
-<li><a href="customize-process-workflow.md#remove-state" data-raw-source="[Remove a state](customize-process-workflow.md#remove-state)">Remove a state</a></li><br/></ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-**The workflow states must conform to the following rules:** 
-
-- At least one state must be defined for either the *Proposed* or *In Progress* state categories 
-- At a minimum, there must be at least two workflow states defined
-
-**What you can't customize**  
-
-- You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
-- You can't modify the state assigned to the *Completed* state category for any WIT, custom or inherited 
-- You can't change the name of a custom state 
-- You can't change the order of states (states are listed in the order you add them within the States page, and they're listed  alphabetically within the drop-down list of a work item form)  
-- You can't specify a Reason for a state, instead, default reasons are defined such as *Moved to state Triaged*, *Moved out of state Triaged* 
-- You can't change the location of the State and Reason fields on the form
-- You can't restrict transitions, all transitions are defined from any state to another state.  
-
+[!INCLUDE [temp](../includes/process-customize-workflow.md)]
 
 ## Backlog and board customizations 
 

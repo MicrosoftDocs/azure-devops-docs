@@ -1,7 +1,6 @@
 ---
 title: Turn bugs on/off on your backlog – Nov 4
 description: VSTS release notes for November 04 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 31dc487d-11d6-4aea-9c4f-255b4bd61bf5

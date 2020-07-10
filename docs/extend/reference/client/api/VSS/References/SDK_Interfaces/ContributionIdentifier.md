@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces ContributionIdentifier API | Extensions for Azure DevOps Services
 description: Identifier for contributions and contribution types
 ms.assetid: 96e55a05-2199-4940-f164-757886667e31
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

@@ -1,7 +1,6 @@
 ---
 title: Card configuration options – Apr 10
 description: VSTS release notes for April 10 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 585770d3-173f-4c37-bad9-acfb4ea143ff
@@ -44,7 +43,7 @@ This sprint we also made a change to the code history hub by introducing a new v
 
 ## Cloud load testing support for 100 cores
 
-Finally, we enabled last week [support for up to 100 cores](https://blogs.msdn.com/b/visualstudioalm/archive/2015/03/23/announcing-100-core-support-for-vso-cloud-load-testing-and-more.aspx) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
+Finally, we enabled last week [support for up to 100 cores](https://devblogs.microsoft.com/devops/announcing-100-core-support-for-vso-cloud-based-load-testing-and-more/) (from the earlier limit of 20 cores) for the Cloud Load Testing service. This means that customers can now simulate five times the user load they were able to simulate earlier.
 
 If you have questions, feel free to reach out on [Twitter](https://twitter.com/AzureDevOps). And if you’ve got ideas on what you’d like to see prioritized, head over to UserVoice to add either an idea or your support to an existing idea.
 

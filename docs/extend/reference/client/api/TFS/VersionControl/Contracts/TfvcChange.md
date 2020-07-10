@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts TfvcChange API | Extensions for Azure DevOps Services
 ms.assetid: 8be72e4a-370c-3c74-234d-cc0890dff662
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -2,19 +2,17 @@
 title: Administer code, wiki, and work item search
 description: Setup notes and administration links for Microsoft Code, Wiki & Work Item Search in Azure DevOps Services, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: A78DC9CF-4ADD-46D7-9E25-D1A0764FCB06
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/05/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Install and manage Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="= azure-devops"
 
@@ -126,7 +124,7 @@ For acceptable performance in multi-user scenarios, consider the
 following recommendations:
 
 * Fewer than 250 users with Search colocated on the server (typically used for demonstration and trial purposes):
-  - Quad core processor, 8 GB (minimum) RAM
+  - Quad core processor, 16 GB (minimum) RAM
   - CPU Utilization factor less than 50%
   - Fast hard drive backed by Solid State Drive (SSD) storage<p />
 
@@ -615,13 +613,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range="azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -665,13 +663,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
    ::: moniker range=">= azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace-new.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
 
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
 
-   ![Checking that the extension is installed](media/_shared/goto-marketplace.png)
+   ![Checking that the extension is installed](media/shared/goto-marketplace.png)
 
    ::: moniker-end
 
@@ -705,4 +703,4 @@ Search for Azure DevOps Server and TFS has the following limitation:
 
 <a name="support"></a>
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

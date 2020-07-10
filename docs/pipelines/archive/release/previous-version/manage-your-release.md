@@ -3,10 +3,7 @@ title: Manage your release with RM for VS and TFS
 ms.custom: seodec18
 description: Manage your release with Microsoft Release Management server and client for Visual Studio 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: FF4993B5-4961-4735-B678-54110C36FA48
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage your release
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Improve the process of managing the release of your app. Deploy your app to a specific 
 environment for each separate stage.
@@ -184,7 +181,7 @@ To access this client, use the following URL:
 
 `http://<your-team-foundation-server-name>:1000/ReleaseManagement`
 
-## Q & A
+## FAQ
 
 ### Q: Can I deploy components of my multi-tiered app separately?
 
@@ -240,7 +237,7 @@ you can remap these tag sequences to a different tag if you want.
 **[vNext release path](release-without-agents.md)**, 
 you can use the change summary to see these work items that were completed since the previous release.
 It makes it easier to know what to test and what to put in your release notes. More details are 
-**[here](https://blogs.msdn.com/b/visualstudioalm/archive/2014/08/05/work-items-tracking-using-release-management.aspx)**.
+**[here](https://devblogs.microsoft.com/devops/work-items-tracking-using-release-management/)**.
 
 ![Configure Apps tab; vNext Release Templates tab; Change Summary tab](media/manage-release-16.png)
 
@@ -293,6 +290,6 @@ for hands-on labs to try Release Management and other devops products.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

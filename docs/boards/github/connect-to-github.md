@@ -3,10 +3,8 @@ title: Connect a project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards 
 ms.assetid: 
-ms.prod: devops
 ms.technology: devops-agile
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 06/28/2019
 
 # Connect Azure Boards to GitHub  
 
-[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -37,7 +35,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ::: moniker-end
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 
 ## Prerequisites 

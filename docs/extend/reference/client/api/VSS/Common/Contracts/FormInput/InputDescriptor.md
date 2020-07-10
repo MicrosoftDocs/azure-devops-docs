@@ -2,10 +2,8 @@
 title: VSS/Common/Contracts/FormInput InputDescriptor API | Extensions for Azure DevOps Services
 description: Describes an input for subscriptions.
 ms.assetid: 95830c27-9577-a67a-13e6-8291b57d93c4
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

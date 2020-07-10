@@ -83,6 +83,8 @@
       items:
       - name: Outcome summary
         href: sample-pipelines-outcome-summary.md
+      - name: Outcome summary for all pipelines
+        href: sample-pipelines-allpipelines.md
       - name: Pass rate trend
         href: sample-pipelines-pass-rate-trend.md
       - name: Stage wise failures

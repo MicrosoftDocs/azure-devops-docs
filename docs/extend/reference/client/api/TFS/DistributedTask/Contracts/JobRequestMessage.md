@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts JobRequestMessage API | Extensions for Azure DevOps Services
 description: Data representation of a job request message.
 ms.assetid: 82ef08c9-37ab-873e-8003-7bd8f8894d70
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

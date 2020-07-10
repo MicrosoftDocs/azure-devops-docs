@@ -3,10 +3,8 @@ title: Upload reports to a team project
 titleSuffix: TFS
 description: Manually upload SQL Server reports to a team project hosted on an on-premises Team Foundation Server  
 ms.assetid: 4CA8789D-9F9D-4D78-9F03-64F4E884D117  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Upload reports to a team project
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the second task in the four-task sequence to add reports to your team project. You can use the procedures in this article to upload reports for the first time, or to upload updated reports provided with the latest process templates. 
 

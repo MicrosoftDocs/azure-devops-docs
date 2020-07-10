@@ -3,10 +3,8 @@ title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
 ms.technology: devops-new-user
-ms.prod: devops
 ms.topic: quickstart
 ms.assetid: 1372e56c-b34f-42c2-b72c-94b57620c75c
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 11/15/2019 
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Connect to a project in Azure DevOps
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
@@ -36,7 +34,7 @@ A project defines a process and data storage in which you manage your software p
 
 - From each of these clients, you can switch context to a different project and connect as a different user. If you work remotely, configure your client to [connect to an Azure DevOps Proxy Server](#proxy).
 
-- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/overview.md).
+- To get started with a code base, [set up Git](../../repos/git/gitquickstart.md) or [set up TFVC](../../repos/tfvc/index.yml).
 
 <a id="web-portal">  </a>
 

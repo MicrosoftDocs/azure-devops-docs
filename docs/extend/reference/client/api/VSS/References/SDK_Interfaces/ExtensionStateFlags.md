@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces ExtensionStateFlags API | Extensions for Azure DevOps Services
 description: States of an extension
 ms.assetid: 2591929e-6a57-94d8-6b7e-d63e7d767f72
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

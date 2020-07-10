@@ -2,10 +2,7 @@
 title: Run Functional Tests task
 description: Run Coded UI/Selenium/Functional tests on a set of machines using the Test Agent to integrate cloud-based load tests into your build and release pipelines
 ms.assetid: DAA55EF5-A6A2-4962-80A0-7D25E64D1DE2
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # Run Functional Tests task
 
-[!INCLUDE [version-tfs-2015-rtm](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -36,7 +33,7 @@ For more details, see [Testing with unified agents and jobs](../../test/test-wit
 
 ## TFS 2017 and earlier
 
-Use this task in a build or release pipeline to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
+Use this task to run Coded UI tests, Selenium tests, and functional tests on a set of machines using the test agent.
 Use this task when you want to run tests on remote machines, and you cannot run tests on the build machine.
 
 ### Demands and prerequisites
@@ -47,7 +44,7 @@ This task must be preceded by a **Visual Studio Test Agent Deployment** task.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/RunDistributedTestsV1.md)]
+[!INCLUDE [temp](../includes/yaml/RunDistributedTestsV1.md)]
 
 ::: moniker-end
 
@@ -156,20 +153,20 @@ These scenarios are supported for:
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-test-azurerg-machine-group](../_shared/qa-test-azurerg-machine-group.md)]
+[!INCLUDE [qa-test-azurerg-machine-group](../includes/qa-test-azurerg-machine-group.md)]
 
-[!INCLUDE [qa-test-run-settings-file](../_shared/qa-test-run-settings-file.md)]
+[!INCLUDE [qa-test-run-settings-file](../includes/qa-test-run-settings-file.md)]
 
-[!INCLUDE [qa-test-customize-code-coverage](../_shared/qa-test-customize-code-coverage.md)]
+[!INCLUDE [qa-test-customize-code-coverage](../includes/qa-test-customize-code-coverage.md)]
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [qa-versions](../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../includes/qa-versions.md)]
 
 ::: moniker-end
 
@@ -177,4 +174,4 @@ This task is open source [on GitHub](https://github.com/Microsoft/azure-pipeline
 
 ::: moniker-end
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

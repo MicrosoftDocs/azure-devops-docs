@@ -2,10 +2,8 @@
 title: Process template and plug-in files 
 titleSuffix: Azure DevOps & TFS
 description: Describes each process template and plug-in file and what is supported when you create a project via Visual Studio or the web portal  
-ms.prod: devops
 ms.technology: devops-agile 
 ms.assetid: 5a0b9512-d663-4a5e-99d5-f5454fb986f7
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +13,7 @@ ms.date: 10/19/2017
 
 # Process template and plug-in files
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 You customize the initial configuration of projects by customizing one or more process template files. You can customize several types of template files, which include the root XML file, plug-in files, and XML definition files. By customizing these files, you can define the initial configuration of all projects that are created from the process template.  
 
@@ -181,7 +179,7 @@ Windows SharePoint Services<br/>
 <p>Defines the project portal based on a template for a SharePoint site. Only supported for on-premises TFS. 
 
 <blockquote>
-TFS 2018 and later versions no longer support native integration with SharePoint products. If you&#39;re planning to upgrade to TFS 2018, read <a href="/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration" data-raw-source="[About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration)">About SharePoint integration</a> to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see <a href="../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md" data-raw-source="[Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)">Configure or add a project portal</a>. Creating a project from the web portal will ignore the WssTasks.xml plug-in. 
+TFS 2018 and later versions no longer support native integration with SharePoint products. If you&#39;re planning to upgrade to TFS 2018, read <a href="/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration" data-raw-source="[About SharePoint integration](/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration)">About SharePoint integration</a> to learn about the options available to you. For TFS 2017 and earlier versions, you must use Visual Studio/Team Explorer to add SharePoint Integration. Or, to add a project portal site after creating a project, see <a href="../../project/configure-or-add-a-project-portal.md" data-raw-source="[Configure or add a project portal](../../project/configure-or-add-a-project-portal.md)">Configure or add a project portal</a>. Creating a project from the web portal will ignore the WssTasks.xml plug-in. 
 </blockquote>
 
 <p>This plug-in also uploads the information contained in the following files and folders:</p> 

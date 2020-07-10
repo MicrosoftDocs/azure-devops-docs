@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 title: Samples Overview | Extensions for Azure DevOps Services
 description: Overview of the available extension samples, including a description, the link to the repo and the contributions they touch
 ms.assetid: 2639a776-d2f7-4866-b54f-1da3883b1b91
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -16,7 +14,7 @@ ms.date: 08/04/2016
 
 Get started developing your extension by working from a sample. 
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 The Microsoft samples listed below show the capabilities of the extension framework and how to 
 contribute to various areas. Each sample illustrates one or more contributions. We've limited the 

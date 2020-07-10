@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts StreamedBatch API | Extensions for Azure DevOps Services
 ms.assetid: 8ee05eb2-6748-34af-9c1b-b1ebc291218c
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

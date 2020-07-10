@@ -3,9 +3,8 @@ title: Add portfolio backlogs
 titleSuffix: Azure DevOps & TFS 
 description: Add up to two additional work item types and portfolio backlogs in Azure DevOps Services & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 764D98C3-9DAD-4F40-8D5D-D0C95E023485
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +13,7 @@ ms.date: 12/15/2017
 
 # Add a portfolio backlog level
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
 
 > [!IMPORTANT]  
 >This topic applies to project customization for Hosted XML and On-premises XML process models. For the Inheritance process model, see [Customize your backlogs or boards for a process](../organizations/settings/work/customize-process.md). 
@@ -217,9 +216,9 @@ If you're updating a project that connects to an on-premises TFS, you'll use the
 - Categories.xml (located in the WorkItem Tracking folder)
 - ProcessConfiguration.xml (located in the WorkItem Tracking/Process folder)
 
-[!INCLUDE [temp](../_shared/process-editor.md)]   
+[!INCLUDE [temp](../includes/process-editor.md)]   
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]
 
 1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 

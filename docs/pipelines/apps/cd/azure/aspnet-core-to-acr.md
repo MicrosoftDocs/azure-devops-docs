@@ -1,11 +1,8 @@
 ﻿---
 title: Deploy ASP.NET Core app to Linux, Docker, & ACR
 description: Set up a CI build for your ASP.NET Core app to Linux App Service using Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.author: mlearned
 author: mlearned
-ms.manager: mijacobs
 ms.assetid: EF5F37B7-774B-410C-8A82-83F722EF9692
 ms.custom: "mvc, seodec18"
 ms.date: 12/07/2018
@@ -30,9 +27,9 @@ With your CI/CD processes in place, you'll push a change into your team's git re
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)    
 * [Continuous Delivery Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)
 
-[!INCLUDE [create-azure-container-registry](../../../apps/_shared/create-azure-container-registry.md)]
+[!INCLUDE [create-azure-container-registry](../../../apps/includes/create-azure-container-registry.md)]
 
-[!INCLUDE [import-code-aspnet-core](../../../apps/_shared/import-code-aspnet-core-docker.md)]
+[!INCLUDE [import-code-aspnet-core](../../../apps/includes/import-code-aspnet-core-docker.md)]
 
 ##  Clone the solution
 Use the following steps to clone the sample solution and open it in Visual Studio 2017.  This allows you to work with the solution in a local development environment.  In upcoming steps, you use Visual Studio 2017 to configure continuous integration and continuous delivery for the web app.

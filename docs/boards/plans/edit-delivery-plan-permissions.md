@@ -3,9 +3,7 @@ title: Edit or manage Delivery Plan permissions
 titleSuffix: Azure Boards
 description: Edit or change permissions for a delivery plan    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -15,7 +13,7 @@ ms.date: 12/19/2018
 
 # Edit or manage Delivery Plan permissions 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 <a id="configure-plan-permissions">  </a>
 <a id="plan-permissions">  </a>

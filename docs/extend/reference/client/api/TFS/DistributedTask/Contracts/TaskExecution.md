@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskExecution API | Extensions for Azure DevOps Services
 description: Data representation of a task execution.
 ms.assetid: a3374279-ec5b-de03-3609-3650d3610de5
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

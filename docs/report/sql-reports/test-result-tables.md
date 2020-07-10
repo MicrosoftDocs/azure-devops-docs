@@ -1,12 +1,10 @@
 ---
 title: Test Result tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about test results 
 ms.assetid: 0fa44e3e-3033-49e7-a796-eb4fbd12d984
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 # Test Result tables
 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about test results by using the FactTestResult table and the associated dimension tables. For information about the measures and dimensions that are associated with these tables in the SQL Server Analysis Services cube, see [Test results](perspective-test-analyze-report-test-results.md).  
   

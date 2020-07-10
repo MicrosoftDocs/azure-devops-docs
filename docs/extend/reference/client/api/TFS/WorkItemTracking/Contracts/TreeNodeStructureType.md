@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts TreeNodeStructureType API | Extensions for Azure DevOps Services
 ms.assetid: f969d690-821a-bdad-fdd3-e6d5d07a1496
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

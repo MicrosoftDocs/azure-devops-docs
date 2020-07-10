@@ -3,26 +3,23 @@ title: Index Sources & Publish Symbols
 ms.custom: seodec18
 description: Index Sources & Publish Symbols build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: BD27A4F7-F870-4D90-AD3F-C74E2A94538B
-ms.manager: mijacobs
 ms.author: pbora
 author: PBoraMSFT
-ms.date: 12/17/2019
+ms.date: 04/13/2020
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Index Sources & Publish Symbols task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 > [!NOTE]
 > A symbol server is available with Package Management in **Azure Artifacts** and works best with **Visual Studio 2017.4 and newer**.
 > **Team Foundation Server** users and users without the Package Management extension can publish symbols to a file share using this task.
 
-Use this task in a build or release pipeline to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
+Use this task to index your source code and optionally publish symbols to the Package Management symbol server or a file share.
 
 Indexing source code enables you to use your .pdb symbol files to debug an app on a machine other than the one you used to build the app. For example, you can debug an app built by a build agent from a dev machine that does not have the source code.
 
@@ -41,7 +38,7 @@ None
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishSymbolsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishSymbolsV2.md)]
 
 ::: moniker-end
 
@@ -145,17 +142,19 @@ None
         <td><code>SymbolsArtifactName</code><br/>Artifact name</td>
         <td>(Optional) Specify the artifact name to use for the Symbols artifact.  The default is Symbols_$(BuildConfiguration). <br/>Default value: Symbols_$(BuildConfiguration)</td>
     </tr>
-
-[!INCLUDE [temp](../_shared/control-options-arguments.md)]
-
 </table>
 
+For more information about the different types of tasks and their uses, see [Task control options](../../process/tasks.md#controloptions).
+
+> [!IMPORTANT]
+> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by [manually deleting the run](../../policies/retention.md#delete-a-run).
+> For information about debugging your app, see [Use indexed symbols to debug your app](../../artifacts/symbols.md#use-indexed-symbols-to-debug-your-app), [Debug with symbols in Visual Studio](../../../artifacts/symbols/debug-with-symbols-visual-studio.md), [Debug with symbols in WinDbg](../../../artifacts/symbols/debug-with-symbols-windbg.md).
 
 ## Open source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 ### How does indexing work?
@@ -185,7 +184,7 @@ No, source indexing is currently not enabled for Portable PDBs as SourceLink doe
 
 [Source Indexing and Symbol Servers: A Guide to Easier Debugging](https://www.codeproject.com/Articles/115125/Source-Indexing-and-Symbol-Servers-A-Guide-to-Easi)
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ### How long are Symbols retained?
 

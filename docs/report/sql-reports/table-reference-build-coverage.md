@@ -1,12 +1,10 @@
 ---
 title: Build Coverage tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Query for data about how thoroughly source code was covered by the tests that use specific builds.
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -16,7 +14,7 @@ ms.date: 10/17/2017
 
 # Build Coverage tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about how thoroughly source code was covered by the tests that use specific builds by using FactBuildCoverage and the associated dimension tables.   
 

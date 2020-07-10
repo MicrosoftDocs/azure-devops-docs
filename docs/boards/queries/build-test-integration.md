@@ -3,9 +3,7 @@ title: Build and test integration queries
 titleSuffix: Azure DevOps
 description: Track work by creating queries based on build and test integration fields in Azure Boards and Team Foundation Server (TFS)
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 6e162a82-c98b-4c94-862c-addcdcbc182d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -16,7 +14,7 @@ ms.date: 02/06/2019
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  

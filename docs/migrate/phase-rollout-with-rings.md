@@ -2,10 +2,8 @@
 title: Progressively expose your releases using deployment rings
 description: Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 ms.assetid: F6B1E468-A762-4E6A-BBAB-8D9C0EA8A095
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Explore how to progressively expose your Azure DevOps extension releases in production to validate, before impacting all users
 
-[!INCLUDE [version-azure-devops](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-azure-devops](../includes/version-vsts-tfs-all-versions.md)]
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 
@@ -107,7 +105,7 @@ Let's observe how a change triggers and moves through the ring-based deployment 
 
 > [!NOTE]
 >
-> Review [CI/CD Pipelines](https://aka.ms/cicdpipelines) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
+> Review [CI/CD Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started) and [Approvals](/azure/devops/pipelines/release/approvals/index) for detailed documentation of pipelines and the approval features for releases.
 
 ## Dealing with monitoring and noise
 
@@ -126,7 +124,7 @@ Using a ring-deployment strategy you can gather feedback to validate your hypoth
 
 Here's a summary of how the ALM | DevOps Ranger engineering process evolved with ring deployment models.
 
-| Before using Rings |   | With Rings |
+| Before using Rings | Impacted area  | With Rings |
 |--------------------|:-:|-----------:|
 |Manual and error prone|Build|Automated and consistent|
 |Manual and error prone|Release|Automated and consistent|
@@ -180,7 +178,9 @@ Refer to [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) to s
 * [Configuring your release pipelines for safe deployments](https://devblogs.microsoft.com/devops/configuring-your-release-pipelines-for-safe-deployments/)
 * [DevOps @ Microsoft](https://aka.ms/devops)
 
-> Authors: Josh Garverick, Willy Schaub | Find the origin of this article and connect with the ALM | DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
+> > [!NOTE]   
+> Authors: Josh Garverick, Willy Schaub 
+> Find the origin of this article and connect with the ALM DevOps Rangers [here](https://github.com/ALM-Rangers/Guidance/blob/master/README.md)
  
 *(c) 2017 Microsoft Corporation. All rights reserved. This document is
 provided "as-is." Information and views expressed in this document,

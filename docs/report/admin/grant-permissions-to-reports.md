@@ -3,10 +3,8 @@ title: Grant permissions to view or create reports
 titleSuffix: TFS
 description: Grant permissions to view or create SQL Server reports configured to support Team Foundation Server
 ms.assetid: FBE3ECC1-51A0-43EC-9923-B7C4FC78E333  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Grant permissions to view or create SQL Server reports in TFS
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 This is the third task in the four-task sequence to add reports to your team project. You can use the procedures in this article to set permissions to view or author reports.  
 
@@ -95,7 +93,7 @@ If members need to create or customize reports, add their accounts to the **TfsW
 
 ## Related notes
  
-- [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md)  
+- [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md)  
 
     
 

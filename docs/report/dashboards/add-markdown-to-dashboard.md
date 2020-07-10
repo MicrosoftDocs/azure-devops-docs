@@ -3,10 +3,8 @@ title: Add markdown content to a team dashboard
 titleSuffix: Azure DevOps
 description: Add and configure the Markdown widget you add to a team dashboard  
 ms.custom: dashboards
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Add Markdown to a dashboard
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 
 <a id="markdown-widget">  </a> 
@@ -28,7 +26,7 @@ Use the Markdown widget to support your team and stakeholders by adding informat
 Here's an example:  
 <img src="../../project/wiki/media/markdown-guidance/markdown-widget-configured.png" alt="Web portal, Sample Markdown widget" style="border: 2px solid #C3C3C3;" /> 
 
-[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 ## Supported Markdown syntax
 

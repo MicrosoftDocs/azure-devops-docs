@@ -3,9 +3,7 @@ title: Sample work item templates showing usage
 titleSuffix: Azure Boards   
 description: Sample work item templates to pre-populate fields and provide guidance in work item forms 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +13,7 @@ ms.date: 04/24/2019
 
 # Sample work item templates  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 Work item templates can help save time and provide guidance to your team when defining user stories, features, bugs, or tasks. Teams use templates to support the following objectives:
 
@@ -41,7 +39,7 @@ In this example, the Voice team sets the <strong>Area Path</strong>=`Fabrikam Fi
 > [!div class="mx-imgBorder"]  
 > ![Capture template dialog](media/template/area-path.png) 
 
-To learn more about area paths, see [About area and iteration paths (aka sprints)](../../organizations/settings/about-areas-iterations.md). 
+To learn more about area paths, see [About area and iteration (sprint) paths](../../organizations/settings/about-areas-iterations.md). 
 
 
 <a id="rich-text"> </a> 

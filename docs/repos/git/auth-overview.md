@@ -3,9 +3,7 @@ title: Authenticate with your Git repos
 titleSuffix: Azure Repos
 description: Choose between HTTPS, SSH, personal access tokens, and alternate credentials to securely sign in to your Git repos.
 ms.assetid: 138f12d0-e3fd-4fde-a727-1b39d45c05c4
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
@@ -21,7 +19,7 @@ Choose a method to securely access the code in Azure Repos, Azure DevOps Server 
 Use these credentials with Git at a command prompt. These credentials also work with any Git client that supports HTTPS or SSH authentication.
 Limit the scope of access and revoke these credentials when they're no longer needed.
 
-[!INCLUDE [alt-creds-deprecation-notice](../../_shared/alt-creds-deprecation-notice.md)]
+[!INCLUDE [alt-creds-deprecation-notice](../../includes/alt-creds-deprecation-notice.md)]
 
 Azure DevOps Server was formerly named Visual Studio Team Foundation Server.
 

@@ -3,10 +3,7 @@ title: Xamarin.iOS build and release task
 ms.custom: seodec18
 description: Xamarin.iOS build and release task for Azure Pipelines and Team Foundation Server (TFS)
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 00000000-0000-0000-0000-000000000000
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Xamarin.iOS task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 Use this task in a pipeline to build an iOS app with Xamarin on macOS. For more information, see the [Xamarin guidance](../../ecosystems/xamarin.md) and [Sign your app during CI](../../apps/mobile/app-signing.md).
 
@@ -27,7 +24,7 @@ Xamarin.iOS
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/XamariniOSV2.md)]
+[!INCLUDE [temp](../includes/yaml/XamariniOSV2.md)]
 
 ::: moniker-end
 
@@ -97,14 +94,14 @@ Xamarin.iOS
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

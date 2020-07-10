@@ -2,23 +2,24 @@
 title: View, upload, and organize Reporting Services reports
 titleSuffix: TFS
 description: View, upload, and organize Reporting Services reports to analyze the progress and quality of the project  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 6368a79e-32d4-4451-89de-0975530e3d17
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
-monikerRange: "<= azure-devops-2019" 
-ms.date: 11/19/2018
+monikerRange: "<= tfs-2017" 
+ms.date: 04/22/2020
 ---
 
 
 # View, upload, and organize Reporting Services reports
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version-2017.md)]
 
 You can analyze the progress and quality of your project by viewing the reports in SQL Server Reporting Services.  
+
+> [!NOTE]  
+> This article applies to TFS-2017 and earlier versions. Starting with TFS-2018, the integration of SQL Reporting Services and Team Explorer was deprecated. 
   
  The ![Report](media/icon_reportte.png "Icon_reportTE")**Reports** page in Team Explorer provides a tree view of the reports defined for your team project. To open a report, choose it and press Enter.  
   
@@ -45,7 +46,7 @@ You can analyze the progress and quality of your project by viewing the reports 
     >  If you are running Windows Server 2008 or Windows Vista, you might have trouble opening Web pages or sites from Team Explorer. For example, you might not be able to open the project portal by right-clicking a team project in Team Explorer and then clicking **Show Project Portal**. For more information about access issues that may occur with Windows Server 2008 or Windows Vista, see the following page on the Microsoft Web site: [User Account Control](https://go.microsoft.com/fwlink/?LinkId=111235).  
   
 ##  <a name="Viewing"></a>  
-  
+
 #### To view a report from Team Explorer  
   
 1.  From the ![Home icon](media/alm_te_home_icon.png "ALM_TE_Home_Icon") home page in Team Explorer, choose ![Report](media/icon_reportte.png "Icon_reportTE")**Reports**.  

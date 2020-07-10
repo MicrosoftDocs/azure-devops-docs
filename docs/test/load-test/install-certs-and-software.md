@@ -2,10 +2,8 @@
 title: Install certificates and software on agents
 description: Install certificates and custom software on agent machines with Azure DevOps
 ms.assetid: B733894B-D79F-4250-9BA9-662FAC40FBFD
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,9 +12,9 @@ monikerRange: '> tfs-2018'
 
 # Install certificates and custom software on agent machines
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 In some test scenarios you might need to set up the environment for the test, such as installing certificates
 or custom software, and then clean up the environment afterwards (such as removing temporary files or folders created during test execution).
@@ -93,6 +91,5 @@ in the cloud, assuming you have added `WebDeploy_x64_en-US.msi` to the deploymen
 
 * [Load test with Visual Studio](getting-started-with-performance-testing.md)
 * [Load test with Azure DevOps](get-started-simple-cloud-load-test.md) 
-* [Load test with Azure portal](app-service-web-app-performance-test.md) 
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

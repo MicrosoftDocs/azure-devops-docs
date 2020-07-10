@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitPullRequest API | Extensions for Azure DevOps Services
 ms.assetid: 7d0200ed-37a8-aeea-3c2e-c033091ade71
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

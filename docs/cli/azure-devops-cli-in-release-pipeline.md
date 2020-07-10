@@ -3,11 +3,10 @@ title: Azure DevOps CLI in a release pipeline
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to create a release pipeline
 ms.topic: reference 
-ms.manager: mijacobs
 ms.prod: devops 
-ms.technology: devops-ref
+ms.technology: devops-reference
 ms.manager: mijacobs 
-ms.author: geverghe
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 06/18/2019
@@ -16,7 +15,7 @@ ms.date: 06/18/2019
 
 # Azure DevOps CLI in a release pipeline
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 <!--- QUESTION: Are there any prerequisites or Features that need to be enabled for this flow to be valid? --> 
 

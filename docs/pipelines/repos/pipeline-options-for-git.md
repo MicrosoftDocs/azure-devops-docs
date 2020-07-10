@@ -2,23 +2,18 @@
 title: Options for Git repositories
 description: Options that are available when using a Git repository with Azure Pipelines
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: a74b3efe-d7bd-438a-be32-47d036556f74
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.custom: seodec18
-ms.date: 11/5/2019
+ms.date: 06/22/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Pipeline options for Git repositories
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 While editing a pipeline that uses a Git repo&mdash;in an Azure DevOps or TFS project, GitHub, GitHub Enterprise Server, Bitbucket Cloud, or another Git repo&mdash;you have the following options.
@@ -64,13 +59,21 @@ This is the branch that you want to be the default when you manually queue this 
 
 ## Clean the local repo on the agent
 
-[!INCLUDE [include](_shared/build-clean-intro.md)]
+[!INCLUDE [include](includes/build-clean-intro.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 > [!NOTE]
-> Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time.
+> Cleaning is not effective if you're using a [Microsoft-hosted agent](../agents/hosted.md) because you'll get a new agent every time. 
+> When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops"
+
+> [!NOTE]
+> When using self-hosted agents, depending on how your agents pools are configured, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages. You can use [Build artifacts](../artifacts/build-artifacts.md) to share outputs of a pipeline run, stage, or job with subsequent runs, stages, or jobs.
+
 ::: moniker-end
 
 ::: moniker range=">= tfs-2017"
@@ -101,7 +104,7 @@ Select one of the following options:
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -111,7 +114,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 If you select **True** then the build pipeline performs an undo of any changes. If errors occur, then it deletes the contents of `$(Build.SourcesDirectory)`.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ### TFS 2015 RTM
 
@@ -119,7 +122,7 @@ If you select **True** then the build pipeline performs an undo of any changes. 
 
 Select **true** to delete the repository folder.
 
-[!INCLUDE [temp](_shared/build-clean-variable.md)]
+[!INCLUDE [temp](includes/build-clean-variable.md)]
 
 ::: moniker-end
 
@@ -127,7 +130,7 @@ Select **true** to delete the repository folder.
 
 ## Label sources
 
-[!INCLUDE [include](_shared/label-sources.md)]
+[!INCLUDE [include](includes/label-sources.md)]
 
 The build pipeline labels your sources with a [Git tag](https://git-scm.com/book/en/v2/Git-Basics-Tagging).
 
@@ -288,7 +291,7 @@ steps:
 
 ::: moniker range=">= tfs-2015"
 
-If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work.
+If you're using TFS, or if you're using Azure Pipelines with a self-hosted agent, then you must install `git-lfs` on the agent for this option to work. If your hosted agents use Windows, consider using the `System.PreferGitFromPath` variable to ensure that pipelines use the versions of git and git-lfs you installed on the machine.
 
 ### Using Git LFS with submodules
 
@@ -336,7 +339,7 @@ If the repo is not public, you will need to pass authentication to the Git comma
 
 ### Azure Repos
 
-[Your pipeline will already have access to other repos in its project](./azure-repos-git.md#authorize-access-to-your-repositories).
+Your pipeline will already have access to other repos in its project.
 If you need to clone a repo from another project that is not public, you will need to authenticate as a user who has access to that project.
 
 > [!NOTE]
@@ -427,16 +430,16 @@ This setting is always true on non-Windows agents.
 
 When using an Other/external Git repository, CI builds require that the repository is accessible from the internet. If the repository is behind a firewall or proxy, then only scheduled and manual builds will work.
 
-## Q & A  
+## FAQ  
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](_shared/git-protocols.md)]
+[!INCLUDE [temp](includes/git-protocols.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../_shared/qa-versions.md)]
+[!INCLUDE [temp](../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

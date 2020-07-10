@@ -3,10 +3,8 @@ title: Working with Git tags
 titleSuffix: Azure Repos
 description: Learn how to use Git tags
 ms.assetid: f8273944-a319-43bf-b145-b34a9ad5647f
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
@@ -30,7 +28,7 @@ This article provides an overview of working with Git tags in Azure DevOps Servi
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
-[!INCLUDE [project-urls](../../_shared/project-urls.md)]
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 ### View tags in the Tags view
 
@@ -56,7 +54,7 @@ You can view tags in the **Tags** view and in the **Commits** view in the web po
 
 You can view tags in the **Tags** view and in the **Commits** view in the web portal.
 
-[!INCLUDE [project-urls](../../_shared/project-urls.md)]
+[!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 ### View tags in the Tags view
 

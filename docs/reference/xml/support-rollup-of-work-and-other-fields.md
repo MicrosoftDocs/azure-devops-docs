@@ -2,10 +2,8 @@
 title: Support rollup of work and other fields
 titleSuffix: Azure DevOps & TFS
 description: Provides summed values of select fields for all child work items of a parent.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 03d26ae1-cbfa-4156-82e3-1d2fc27f48f3
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 08/22/2019
 
 # Rollup of work and other fields
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Rollup provides summed values of select fields for all child work items of a parent. Because Azure DevOps Services and Team Foundation Server (TFS) support multiple levels of nesting, when you perform rollup, you want to make sure you don't double-count values. Most project managers are interested in getting rollup of estimated or completed work, effort, size, or story points.  
   
@@ -32,7 +30,7 @@ Azure Boards supports rollup columns on product and portfolio backlogs, rollup w
 
 From any product or portfolio backlog, you can add rollup progress bars, counts of descendant work items within a hierarchy, or sum of select fields, such as Story Points or Remaining Work.
 
-[!INCLUDE [temp](../../boards/_shared/display-progress-bars.md)]
+[!INCLUDE [temp](../../boards/includes/display-progress-bars.md)]
 
 To learn more, see [Display rollup progress or totals](../../boards/backlogs/display-rollup.md).
 

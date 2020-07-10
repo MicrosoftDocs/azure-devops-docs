@@ -1,11 +1,9 @@
-﻿---
+---
 title: Define sprints for a project or team
 titleSuffix: Azure Boards 
 description: Define the iterations or sprints to use when assigning work items in Azure DevOps
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 27631A15-9EB1-4E79-814E-8145BB7707C8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -13,9 +11,9 @@ monikerRange: '>= tfs-2013'
 ms.date: 11/06/2019
 ---
 
-# Define Iteration Paths (aka sprints) and configure team iterations 
+# Define Iteration Paths and configure team iterations 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 You add Iteration Paths to support teams who implement Scrum or use sprint planning to group work items based on a time-box interval or sprint. You define Iteration Paths at the project level and then each team selects the ones they want to be active for them under the team configuration. You can create a flat iteration path structure or a hierarchy of paths to support releases, sub-releases, and sprints. 
 
@@ -26,7 +24,7 @@ Each team has access to a number of Agile tools as described in [About teams and
 
 Newly created projects contain a single, root Area Path that corresponds to the project name. You add Area Paths under this root. Also, each project typically specifies a predefined set of Iteration Paths to help you get started tracking your work. All you need to do is specify the dates. 
 
-[!INCLUDE [temp](../../_shared/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 ## Prerequisites
 
@@ -124,7 +122,7 @@ az boards iteration project list [--depth]
 #### Parameters
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
-- **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, lists iteration paths from the root level. 
+- **path**: Optional. Absolute path of an iteration.  `\Iteration\` must follow after the `\ProjectName`, which distinguishes this from an area path.  Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Iteration\Sprint 1". When not specified, lists iteration paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 
 #### Example
@@ -159,7 +157,7 @@ ID     Identifier                            Name            Path               
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -182,7 +180,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
-![Open the project administration page](../../_shared/media/settings/open-project-settings-tfs-2015.png)
+![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
 
@@ -190,7 +188,7 @@ From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon 
 
 ## Add iterations and set iteration dates
 
-You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-sprint-planning-tools.md).  
+You can add iterations in the same way you add areas. For more information about working within a sprint cadence, see [Scrum and sprint planning tools](../../boards/sprints/scrum-key-concepts.md).  
 
 ::: moniker range="azure-devops"
 
@@ -297,7 +295,7 @@ C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --star
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -442,7 +440,7 @@ dd10f1bf-bedd-4c6f-926f-b2abea81bb50  Sprint 2   2019-01-21T00:00:00+00:00  2019
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -522,7 +520,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations-preview.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -557,7 +555,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -610,7 +608,7 @@ C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-73
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -645,7 +643,7 @@ C:\WINDOWS\system32>az boards iteration team add --id a0554e98-b1f1-4230-8500-73
 	> [!div class="mx-imgBorder"]
 	> ![Work, Iterations page for team, activates sprint list](media/team-defaults/selected-iterations.png) 
 
-	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration paths (aka sprints)](set-iteration-paths-sprints.md).   
+	If you don't see the sprints you need, or the dates aren't set, you can add or edit iterations for the project, provided you have the required permissions. To learn more, see [Define iteration (sprint) paths](set-iteration-paths-sprints.md).   
 
 5. To see the newly activated sprint backlogs, refresh your team's [product backlog page](../../boards/backlogs/create-your-backlog.md).  
 
@@ -819,7 +817,7 @@ ID     Identifier                            Name      Start Date            Fin
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

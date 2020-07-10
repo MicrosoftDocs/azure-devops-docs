@@ -24,7 +24,6 @@ landingContent:
         links:
           - text: About settings
             url: ./settings/about-settings.md
-    linkLists:
       - linkListType: quickstart
         links:
           - text: Set user preferences
@@ -55,6 +54,8 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
+          - text: Configure and customize Boards 
+            url: ../boards/configure-customize.md
           - text: About projects and scaling up
             url: ./projects/about-projects.md
       - linkListType: quickstart

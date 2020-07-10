@@ -2,20 +2,18 @@
 title: Get started with Stakeholder access 
 titleSuffix: Azure DevOps 
 description: Add & update work items, view work tracking progress with Stakeholder access
-ms.technology: devops-new-user
-ms.prod: devops
+ms.technology: devops-agile
 ms.assetid: D76507F1-3154-4EE5-A23A-9179C2F5A365
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 04/16/2020
 ---
 
 # Get started as a Stakeholder
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops" 
 
@@ -37,8 +35,18 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 
 ::: moniker-end  
 
-Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). 
- 
+::: moniker range="azure-devops"
+
+Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your organization owner or Project Collection Administrator to [add you to a project with Stakeholder access](../accounts/add-organization-users.md). 
+
+::: moniker-end  
+
+::: moniker range="< azure-devops"
+
+Stakeholder access is one of several supported access levels as described in [About access levels](access-levels.md#stakeholder-access). To get access as a Stakeholder, ask your server administrator to [add you to a security group that has Stakeholder access](change-access-levels.md). 
+
+::: moniker-end  
+
 
 > [!NOTE]   
 > Azure Boards supports several Agile methods such as Kanban and Scrum. Depending on what methods your team uses, you'll want to become familiar with other tools that Azure Boards supports. This article focuses on getting familiar with work items and the Kanban board. For additional information, see [Related articles](#related-articles) at the end of this article.
@@ -78,7 +86,7 @@ You must have been added to the Azure DevOps project and been granted Stakeholde
 
 Work items support planning and tracking work. Each work item represents an object stored in the work item data store. Each work item is based on a work item type and is assigned an identifier which is unique within an organization or project collection.  Different work items are used to track different types of work as described in [About work items](../../boards/work-items/about-work-items.md). The work item types available to you are based on the [process used when your project was created](../../boards/work-items/guidance/choose-process.md)&mdash;Agile, Basic, Scrum, or CMMI&mdash;as illustrated in the following images.  
 
-[!INCLUDE [temp](../../boards/_shared/work-item-types.md)]
+[!INCLUDE [temp](../../boards/includes/work-item-types.md)]
 
 
 ## Open your Kanban board from the web portal
@@ -136,7 +144,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/_shared/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -157,7 +165,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/_shared/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -210,12 +218,12 @@ From the Kanban board, you can add work items. However, with Stakeholder access,
 1. From the Product Backlog Items board, choose **New item** and start adding those Product Backlog Items you want to track. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/_shared/media/add-new-item-kanban-scrum.png) 
+	> ![Add new item](../../boards/media/add-new-item-kanban-scrum.png) 
 
 2. Enter return and the system assigns a work item ID to the issue. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/_shared/media/new-kanban-item-added-scrum.png) 
+	> ![Added item](../../boards/media/new-kanban-item-added-scrum.png) 
 
 3. Add as many product backlog items that you want to track.  
 
@@ -225,12 +233,12 @@ From the Kanban board, you can add work items. However, with Stakeholder access,
 1. From the Issues board, choose **New item** and start adding those issues you want to track. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Add new item](../../boards/_shared/media/add-new-item-kanban-cmmi.png) 
+	> ![Add new item](../../boards/media/add-new-item-kanban-cmmi.png) 
 
 2. Enter return and the system assigns a work item ID to the issue. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Added item](../../boards/_shared/media/new-kanban-item-added-cmmi.png) 
+	> ![Added item](../../boards/media/new-kanban-item-added-cmmi.png) 
 
 3. Add as many requirements that you want to track.  
 
@@ -279,7 +287,7 @@ For example, here we assign the issue to Raisa Pokrovskaya and we add a discussi
 For example, here we assign the Product Backlog Item to Jamal Hartnett and add a description and tags. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]
-> ![Scrum Product Backlog work item form, add details ](../../boards/_shared/media/pbi-form-cloud.png)
+> ![Scrum Product Backlog work item form, add details ](../../boards/media/pbi-form-cloud.png)
 
 
 
@@ -288,7 +296,7 @@ For example, here we assign the Product Backlog Item to Jamal Hartnett and add a
 For example, here we assign the Requirement to Jamal Hartnett. Choose **Save & Close** when done. 
 
 > [!div class="mx-imgBorder"]  
-> ![Requirement work item form](../../boards/_shared/media/requirement-form-cloud.png) 
+> ![Requirement work item form](../../boards/media/requirement-form-cloud.png) 
 
 ### CMMI-specific field descriptions
 
@@ -534,7 +542,7 @@ Tags that appear in the tag bar are already assigned to the work item. To unassi
 ::: moniker-end	
 
 
-[!INCLUDE [temp](../../boards/_shared/discussion-tip.md)]
+[!INCLUDE [temp](../../boards/includes/discussion-tip.md)]
 
 
 <a id="check-backlog">  </a> 
@@ -548,7 +556,7 @@ You can check the product backlog to see how the team has prioritized work. Back
 From the Kanban board, choose **View as backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/_shared/media/switch-to-backlog-cloud.png) 
+> ![Choose Backlog](../../boards/media/switch-to-backlog-cloud.png) 
 
 ::: moniker-end
 
@@ -557,7 +565,7 @@ From the Kanban board, choose **View as backlog**.
 From the Kanban board, choose **View as backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/_shared/media/switch-to-backlog-2019.png) 
+> ![Choose Backlog](../../boards/media/switch-to-backlog-2019.png) 
 
 ::: moniker-end
 
@@ -567,7 +575,7 @@ From the Kanban board, choose **View as backlog**.
 From the Kanban board, choose **Backlog**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Choose Backlog](../../boards/_shared/media/switch-to-backlog-2015.png) 
+> ![Choose Backlog](../../boards/media/switch-to-backlog-2015.png) 
 
 ::: moniker-end
 
@@ -623,7 +631,7 @@ With Stakeholder access, users can create and modify work items and create and s
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
+[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
 
 ::: moniker-end
 

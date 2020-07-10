@@ -2,11 +2,8 @@
 title: Run any tests in parallel
 description: Continuous testing. Speed up testing by running tests in parallel using Visual Studio Test task. 
 ms.assetid: 8AEECA6C-6CC8-418C-AF75-6527E365FD88
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 11/13/2019
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Run tests in parallel using the Visual Studio Test task
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="< tfs-2018"
 
@@ -39,7 +36,7 @@ This article discusses how you can configure the
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -239,4 +236,4 @@ In the context of the [Visual Studio Test task](../tasks/test/vstest.md), parall
      Execution on the agent then conforms to the parallelism described in **1** and **2** above.
      However, **2** may not occur if an agent receives only one assembly to run.
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)]
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)]

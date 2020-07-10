@@ -2,10 +2,8 @@
 title: Create a Power BI report with an OData Query
 titleSuffix: Azure DevOps
 description: Quick start to create a trend report using an OData Query
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: romik
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 08/02/2019
 
 # Create a Power BI report with an OData Query
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 With Power BI Desktop, you can easily start creating reports for your project in Azure DevOps. 
 
@@ -118,9 +116,9 @@ Create a Power BI Query to pull the data into Power BI as follows:
 
 ## Create Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-expandcolumns.md)]
+[!INCLUDE [temp](includes/sample-expandcolumns.md)]
 
-[!INCLUDE [temp](_shared/sample-finish-query.md)]
+[!INCLUDE [temp](includes/sample-finish-query.md)]
 
 
 ## Create the report
@@ -147,7 +145,7 @@ The example report:
 > [!div class="mx-imgBorder"] 
 > ![Sample - Boards Rollup - Report](media/odatapowerbi-bugtrend-report.png)
 
-[!INCLUDE [temp](_shared/sample-multipleteams.md)]
+[!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 <a id="q-a">  </a>
 ## Try this next
@@ -157,4 +155,4 @@ The example report:
 
 ## Related articles
 
-[!INCLUDE [temp](_shared/sample-relatedarticles.md)]
+[!INCLUDE [temp](includes/sample-relatedarticles.md)]

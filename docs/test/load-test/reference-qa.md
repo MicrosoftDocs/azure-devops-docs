@@ -2,10 +2,8 @@
 title: FAQs for load testing  
 description: FAQs for load testing topics using the features of Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: 1A993338-0EEE-4C54-BA07-F9E54312BDE6
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,9 +12,9 @@ monikerRange: '> tfs-2018'
 
 # FAQs for load testing
 
-[!INCLUDE [version-header-devops-services](../_shared/version-header-devops-services.md)] 
+[!INCLUDE [version-header-devops-services](../includes/version-header-devops-services.md)] 
 
-[!INCLUDE [loadtest-deprecated-include](../_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../includes/loadtest-deprecated-include.md)]
 
 <a name="qageneral"></a>
 ## General
@@ -103,7 +101,7 @@ If you have only web performance tests, we suggest using between 600 and 2,500 v
 If you have unit tests, the agent count depends on what your unit tests do. 
 This means you will have to test if you have enough agents by 
 running a shorter duration load test run or use 
-[goal-based load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/03/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests.aspx).
+[goal-based load testing](https://devblogs.microsoft.com/devops/announcing-support-for-goal-based-load-pattern-in-cloud-based-load-tests/).
 
 <a name="VUM"></a>
 ### Q: What are virtual user minutes (VUMs)? How many minutes will my load test use?
@@ -202,7 +200,7 @@ for the duration of the run. So if you retain 20 cores for 10 minutes, an additi
 
 * Resource retention is not available for Apache JMeter tests at the present time.
 
-For more details, see [this blog post](https://blogs.msdn.microsoft.com/visualstudioalm/2016/07/18/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
+For more details, see [this blog post](https://devblogs.microsoft.com/devops/speed-up-cloud-load-test-execution-by-retaining-resources-for-quick-consecutive-runs/).
 
 <a name="deletetests"></a>
 ### Q: How do I delete a load test?
@@ -249,73 +247,6 @@ and [coded UI tests](/visualstudio/test/use-ui-automation-to-test-your-code).
 ### Q: Why should I use Cloud-based Load Testing?
 
 **A**: If you don't want to set up machines for load testing, or you don't have available resources, you can use the [Cloud-based Load Testing service](https://go.microsoft.com/fwlink/?LinkID=317257). It sets up virtual machines in the cloud that will run your load test. Note that your web site must be publicly available on the internet for load testing using Azure DevOps to access it.
-
----
-
-<a name="qaazure"></a>
-## Azure load testing
-
-[Go to related topic &gt;](app-service-web-app-performance-test.md)
-
-### Q: Why can't I see my existing Azure DevOps subscription to run load tests? 
-
-**A**: To use an Azure DevOps subscription for running load tests from the Azure
-portal, one of the following criteria must be satisfied:
-
-* The subscription is backed by Azure Active Directory,
-  [Has an Azure subscription](/azure/active-directory/active-directory-how-subscriptions-associated-directory)
-  is linked to it, and the user is a member of the linked Azure subscription.
-
-* The subscription is backed by [Azure Active Directory](/azure/active-directory/)
-  and the user is an owner of the subscription.
-
-<a name="qaazure-limits"></a>
-### Q: What is the maximum test duration and number of concurrent users? 
-
-**A**: The limitations for load testing in the Azure Portal depend on the web application service tier license type, as follows:
-
-| License type |  Max duration (mins) | Max user load (VUser) |
-| --- |:---:|:---:|
-| Free | 1 | 40 |
-| Shared | 30 | 1,000 |
-| Basic/Standard/Premium | 60 | 20,000 |
-
-
-### Q: Where can I check how much test time I've used so far?
-
-**A**: You can check this in the Azure Portal. For details, see
-[Manage pricing and data volume in Application Insights](/azure/application-insights/app-insights-pricing#understand-your-usage-and-estimate-costs).
-
-### Q: What is the default option and are my existing tests impacted?
-
-**A**: The default option for performance load tests is a manual test -
-the same as before the multiple URL test option was added to the portal.
-Your existing tests continue to use the configured URL and will work as before.
-
-### Q: What features not supported in the Visual Studio Web Test file?
-
-**A**: At present this feature does not support Web Test plug-ins, data 
-sources, and extraction rules. You must edit your Web Test file to remove 
-these. We hope to add support for these features in future updates.
-
-### Q: Does it support any other Web Test file formats?
-  
-**A**: At present only Visual Studio Web Test format files are supported.
-We'd be pleased to hear from you if you need support for other file formats. 
-Email us at [vsoloadtest@microsoft.com](mailto:vsoloadtest@microsoft.com).
-
-<a name="Team ServicesAccount"></a>
-### Q: What else can I do with an Azure DevOps subscription?
-
-**A**: Share your code, build, test, track work, and ship software - all in the cloud 
-using any tool or language. Learn more about how [Azure DevOps](https://visualstudio.microsoft.com/products/what-is-visual-studio-online-vs) 
-features and services help your team collaborate more easily and deploy continuously.
-
-### Q: Can I get more detailed profiler information?
-
-**A**: Yes, see [Profiling live Azure web apps with Application Insights](/azure/application-insights/app-insights-profiler).
-
----
 
 <a name="set-up-tests"></a>
 ## Setting up tests
@@ -438,13 +369,13 @@ For more information, see
 ### Q:  Can I debug a load test while it's running in the cloud?
 
 **A**: Yes, you can do this when you use Visual Studio Enterprise 2015 or later. 
-[Learn more](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test.aspx).
+[Learn more](https://devblogs.microsoft.com/devops/using-advanced-diagnostics-to-debug-issues-in-cloud-load-test/).
 
 ### Q: How can I check the status of the Cloud-based Load Testing service?
 
 **A**: You can view the service status at the top of the 
 [Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
-and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
+and on our [service blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 
@@ -585,13 +516,13 @@ If none of the above works, contact us at [vsoloadtest@microsoft.com](mailto:vso
 ## Troubleshooting
 
 ### Q: What do I do if Visual Studio stops responding when I try run a load test in the cloud?
-**A**: To resolve this issue, see [Known issues with load testing](https://blogs.msdn.com/b/visualstudioalm/archive/2013/11/07/known-issues-with-load-testing-in-visual-studio-2013.aspx).
+**A**: To resolve this issue, see [Known issues with load testing](https://devblogs.microsoft.com/devops/known-issues-with-load-testing-in-visual-studio-2013/).
 
 ### Q: How do I record a web performance test with Internet Explorer 11?
 
 **A**: If the web test recorder is not active when you try and record your 
 web test with Internet Explorer 11, 
-see [Using Internet Explorer 11 and not able to record a web performance test](https://blogs.msdn.com/b/visualstudioalm/archive/2013/09/16/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully.aspx) 
+see [Using Internet Explorer 11 and not able to record a web performance test](https://devblogs.microsoft.com/devops/using-internet-explorer-11-and-not-able-to-record-a-web-performance-test-successfully/) 
 to resolve the issue.
 
 ### Q: How do I view errors and warnings that happen when my load test is running in the cloud?
@@ -705,7 +636,7 @@ See [Load Test Run Settings Properties](/visualstudio/test/load-test-run-setting
 * VS1550083
 
 [Contact Azure DevOps support](https://azure.microsoft.com/support/devops). 
-You will have to give them your test run id.
+You will have to give them your test run ID.
 
 ### Q: My run was aborted because the .loadtest xml file could not be parsed. What do I do?
 
@@ -734,11 +665,11 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ### Q: My load test got an error when it started or was aborted during the run. What do I do?
 
-**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run id.
+**A**: Generally, these problems happen due to issues with the cloud-based load testing service. Just try and run your load test again. If these problems still happen, contact Azure DevOps support. You will have to give them your test run ID.
 
 ### Q: Where can I find information about other errors?
 
-**A**: See [Visual Studio Cloud Load Testing error codes](https://blogs.msdn.com/b/visualstudioalm/archive/2014/10/21/visual-studio-cloud-load-testing-amp-error-codes.aspx) to find more details about other errors and their resolutions, where applicable.
+**A**: See [Visual Studio Cloud Load Testing error codes](https://devblogs.microsoft.com/devops/visual-studio-cloud-load-testing-error-codes/) to find more details about other errors and their resolutions, where applicable.
 
 ---
 
@@ -748,26 +679,26 @@ To fix this problem, create another load test. Delete the failed test run.
 **Tutorials**
 
 * [All about Load Test planning](/archive/blogs/geoffgr/all-about-load-test-planning-part-1introduction)
-* [Simulating expected load - how to model real world load in CLT](https://blogs.msdn.microsoft.com/edglas/archive/2010/04/02/simulating-peak-load-with-vs-load-tests.aspx)
+* [Simulating expected load - how to model real world load in CLT](/archive/blogs/edglas/simulating-peak-load-with-vs-load-tests)
 * [Analyzing Load Test results](https://devblogs.microsoft.com/devops/analyzing-load-test-results-and-everything-you-wanted-to-know-about-load-test-reports/)
 * [Data driven Load Tests with VSO and SQL Azure](https://devblogs.microsoft.com/devops/data-driven-load-tests-using-visual-studio-online-and-sql-azure/)
 * [Driving Unit Tests from Cloud-based Load test](https://devblogs.microsoft.com/devops/driving-unit-tests-from-cloud-load-test/)
-* [Parameterizing tests to run in different environments](https://blogs.msdn.microsoft.com/edglas/archive/2010/02/16/parameterizing-tests-to-run-in-different-environments.aspx)
+* [Parameterizing tests to run in different environments](/archive/blogs/edglas/parameterizing-tests-to-run-in-different-environments)
 * [A Web Performance Test primer](/archive/blogs/edglas/web-test-authoring-and-debugging-techniques-for-visual-studio-2010)
 * [Managing Load Test results](https://docs.microsoft.com/archive/blogs/slumley/managing-load-test-results)
-* [Getting 90th and 95th percentile results in a Load Test](https://blogs.msdn.microsoft.com/slumley/archive/2007/07/06/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation.aspx)
-* [Understanding Load Test results schema](https://blogs.msdn.microsoft.com/billbar/archive/2006/02/10/what-is-the-data-in-the-vsts-load-test-results-store.aspx)
-* [Load Test plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/04/10/load-test-plug-ins.aspx)
+* [Getting 90th and 95th percentile results in a Load Test](/archive/blogs/slumley/how-to-get-90th-and-95th-percentile-information-as-well-as-timing-details-for-every-page-test-and-transcation)
+* [Understanding Load Test results schema](/archive/blogs/billbar/what-is-the-data-in-the-vsts-load-test-results-store)
+* [Load Test plug-ins](/archive/blogs/slumley/load-test-plug-ins)
 * [Generating Excel reports for your Load Test runs](https://devblogs.microsoft.com/devops/generating-excel-reports-for-load-test-runs-done-in-between-0319-0331/)
 * [Generating Run Comparison report in Excel](https://devblogs.microsoft.com/devops/content-index-for-visual-studio-web-tests-and-load-tests-2/)
-* [Understanding Virtual User Activity visualization](https://blogs.msdn.microsoft.com/slumley/archive/2009/06/09/vsts-2010-feature-load-test-virtual-user-activity-visualization.aspx)
+* [Understanding Virtual User Activity visualization](/archive/blogs/slumley/vsts-2010-feature-load-test-virtual-user-activity-visualization)
 * [Using fiddler to create web tests](http://www.bugtrap.co.uk/2010/06/using-fiddler-with-visual-studio-team.html) 
-* [Creating web tests transactions from fiddler](https://blogs.msdn.microsoft.com/nexpert/archive/2009/05/04/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert.aspx)
-* [Creating custom Load profiles via plug-ins](https://blogs.msdn.microsoft.com/slumley/archive/2009/05/04/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down.aspx)
+* [Creating web tests transactions from fiddler](/archive/blogs/nexpert/creating-transactional-web-tests-for-visual-studio-with-fiddler-nexpert)
+* [Creating custom Load profiles via plug-ins](/archive/blogs/slumley/creating-a-custom-load-profile-which-will-step-user-load-up-and-then-back-down)
 
 **Case Studies**
 
-* [Load Testing Visual Studio Online itself](https://blogs.msdn.microsoft.com/edglas/archive/2013/11/27/load-testing-visual-studio-online.aspx)
+* [Load Testing Visual Studio Online itself](/archive/blogs/edglas/load-testing-visual-studio-online)
 * [NORAD Tracks Santa](https://devblogs.microsoft.com/devops/using-visual-studio-online-to-load-test-the-norad-tracks-santa-website/)
 
 **Blogs and other references**
@@ -785,4 +716,4 @@ To fix this problem, create another load test. Delete the failed test run.
 
 ---
 
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

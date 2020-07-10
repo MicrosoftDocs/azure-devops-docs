@@ -2,11 +2,9 @@
 title: Post migration import steps to validate and configure an organization
 titleSuffix: Azure DevOps
 description: Guidance on how to validate and configure an organization after it has been imported to Azure DevOps Services.
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: db186305-0d82-4152-bb04-e7b44b56305f
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -15,7 +13,7 @@ ms.date: 10/21/2019
 
 # Post import
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!NOTE]
 > It's recommended that you use the [Migration Guide](https://aka.ms/AzureDevOpsImport) to progress through your import. The guide links to the technical documentation as needed.
@@ -32,7 +30,7 @@ After spot checking the organization you will want to consider if you want to re
 
 ## Set up billing
 
-To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-org billing](../organizations/billing/billing-faq.md#multi-org-billing). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
+To pay for users or services in Azure DevOps Services, like hosted build and deployment agents, you need to [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization. If you import more than one collection, you should ensure all your organizations are set up for billing with the same Azure subscription, and that your subscription is enabled for [multi-organization billing](../organizations/billing/billing-faq.md#multi-organization-billing). You can then assign as many Basic users as you need free of charge during the calendar month in which you run the import.
 
 ## Manage users and access
 

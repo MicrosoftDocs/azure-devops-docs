@@ -2,10 +2,7 @@
 title: Start using Build and Release
 titleSuffix: TFS
 description: Build and deploy your app using Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: B1233296-C583-4F2E-981C-82D6A39CFEE4
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 08/31/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015 < azure-devops'
 
 # Start using Build and Release
 
-[!INCLUDE [version-tfs-only-2015](_shared/version-tfs-only-2015.md)]
+[!INCLUDE [version-tfs-only-2015](includes/version-tfs-only-2015.md)]
 
 Team Foundation Server (TFS) is the on-premises Azure DevOps offering. TFS includes Build and Release and can be installed and managed on your own servers.
 

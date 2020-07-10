@@ -3,12 +3,7 @@ title: Migrate from Travis to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Travis to Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: F4592A2E-714A-4208-AD46-00D1A6D709C4
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/20/2018
 monikerRange: azure-devops
 ---
@@ -317,7 +312,7 @@ script: echo $MY_ENVIRONMENT_VARIABLE
 **azure-pipelines.yml**
 ``` yaml
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 strategy:
   matrix:
     set_env_to_one:
@@ -400,7 +395,7 @@ strategy:
     linux:
       imageName: 'ubuntu-16.04'
     mac:
-      imageName: 'macos-10.13'
+      imageName: 'macos-10.14'
     windows:
       imageName: 'vs2017-win2016'
 

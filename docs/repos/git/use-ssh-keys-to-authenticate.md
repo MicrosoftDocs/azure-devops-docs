@@ -3,10 +3,8 @@ title: Connect to your Git repos with SSH
 titleSuffix: Azure Repos
 description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 12/10/2019
@@ -128,7 +126,7 @@ Associate the public key generated in the previous step with your user ID.
 
    ![Azure Repos SSH Clone URL](media/use-ssh-authentication/ssh_clone_URL.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
  
 2. Run `git clone` from the command prompt. 
 

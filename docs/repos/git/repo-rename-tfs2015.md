@@ -3,10 +3,8 @@ title: Rename a Git repo in TFS 2015
 titleSuffix: Azure Repos
 description: You can rename a Git repository in a few steps, but be aware that your team will have to take a few more steps to adapt to the change.
 ms.assetid: 05971618-4ea9-4997-bb51-2d74211352ef
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
@@ -24,7 +22,7 @@ You can rename a Git repository in a project from your web browser. After you re
 
 ## Rename the repo on the server
 
-[!INCLUDE [temp](_shared/steps-open-control-panel-team-project.md)]
+[!INCLUDE [temp](includes/steps-open-control-panel-team-project.md)]
 
 1. Rename the repo from the Version Control tab.
 

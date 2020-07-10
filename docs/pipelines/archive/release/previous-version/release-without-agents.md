@@ -3,10 +3,7 @@ title: Release without deployment agents
 ms.custom: seodec18
 description: Release your app to Microsoft Azure or on-premises without using deployment agents
 ms.assetid: 3C4A0EA1-C4ED-4674-8E9F-AE54D6DA05C0
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release your app to environments without deployment agents
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 If you want to use 
 [Windows PowerShell](https://msdn.microsoft.com/library/dd835506%28v=vs.85%29.aspx), 
@@ -130,7 +127,7 @@ environment in Release Management.
    listed above for PowerShell and DSC are not yet met, 
    add the Visual Studio Release Management extension to meet 
    the prerequisites.
-   **[Learn how](https://blogs.msdn.com/b/visualstudioalm/archive/2014/11/10/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management.aspx)**.
+   **[Learn how](https://devblogs.microsoft.com/devops/how-to-install-rm-azure-extension-and-use-the-azure-vm-in-release-management/)**.
 
 1. Add the details for your Azure subscription to Release Management.
 
@@ -355,7 +352,7 @@ You also need a build definition that builds your app.
 1. [Start a new release](manage-your-release.md#StartRelease).
 1. [Approve steps in a stage](manage-your-release.md#ApproveSteps).
 
-## Q & A
+## FAQ
 
 ### Q: Are there any DSC actions that are not currently supported by Release Management?
 
@@ -475,6 +472,6 @@ You also need a build definition that builds your app.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

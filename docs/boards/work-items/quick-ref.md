@@ -1,13 +1,11 @@
-﻿---
+---
 title: Quick index to work item tasks and key concepts
 titleSuffix: Azure Boards
 description: Index to query operators, macros, and sample queries used to list work items for Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-work-items  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 04/10/2019
 
 # Work items quick reference
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -46,7 +44,7 @@ Use this index to quickly access concepts related to work items and information 
 <li><a href="../backlogs/backlogs-boards-plans.md" data-raw-source="[Delivery plans](../backlogs/backlogs-boards-plans.md)">Delivery plans</a></li>
 <li><a href="../../organizations/settings/work/inheritance-process-model.md" data-raw-source="[Inheritance process model](../../organizations/settings/work/inheritance-process-model.md)">Inheritance process model</a></li>
 <li><a href="../../organizations/settings/about-areas-iterations.md" data-raw-source="[Iteration Paths](../../organizations/settings/about-areas-iterations.md)">Iteration Paths</a></li>
-<li><a href="work-item-form-keyboard-shortcuts.md" data-raw-source="[Keyboard shortcuts](work-item-form-keyboard-shortcuts.md)">Keyboard shortcuts</a></li>
+<li><a href="../../project/navigation/keyboard-shortcuts.md">Keyboard shortcuts</a></li>
 </ul>
 </td>
 <td width="33%">
@@ -113,7 +111,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify work items (web)](../backlogs/bulk-modify-work-items.md)">Bulk modify work items (web)</a></li>
 <br/>
 <li><a href="../backlogs/work-item-template.md#capture-a-work-item-as-a-template" data-raw-source="[Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)">Capture work item as a template</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
+<li><a href="../backlogs/move-change-type.md#change-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
 <li><a href="../backlogs/copy-clone-work-items.md" data-raw-source="[Copy or clone a work item](../backlogs/copy-clone-work-items.md)">Copy or clone a work item</a></li>
 <li><a href="work-item-form-controls.md#copy-the-url" data-raw-source="[Copy work item URL](work-item-form-controls.md#copy-the-url)">Copy work item URL</a></li>
 <li><a href="../backlogs/copy-list.md" data-raw-source="[Copy list of work items](../backlogs/copy-list.md)">Copy list of work items</a></li>
@@ -143,19 +141,19 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../queries/using-queries.md" data-raw-source="[List work items](../queries/using-queries.md)">List work items</a></li>
 <li><a href="../../project/wiki/wiki-markdown-guidance.md" data-raw-source="[List work items in a wiki](../../project/wiki/wiki-markdown-guidance.md)">List work items in a wiki</a></li>
 <br/>
-<li><a href="../backlogs/manage-bugs.md" data-raw-source="[Manage bugs](../backlogs/manage-bugs.md)">Manage bugs</a></li>
-<li><a href="../backlogs/manage-issues-impediments.md" data-raw-source="[Manage issues or impediments](../backlogs/manage-issues-impediments.md)">Manage issues or impediments</a></li>
+<li><a href="../backlogs/manage-bugs.md">Manage bugs</a></li>
+<li><a href="../backlogs/manage-issues-impediments.md">Manage issues or impediments</a></li>
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
+<li><a href="../backlogs/move-change-type.md#move">Move work items to another project</a></li>
 </ul>
 </td>
 <td width="34%">
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -213,7 +211,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../backlogs/bulk-modify-work-items.md" data-raw-source="[Bulk modify work items (web)](../backlogs/bulk-modify-work-items.md)">Bulk modify work items (web)</a></li>
 <br/>
 <li><a href="../backlogs/work-item-template.md#capture-a-work-item-as-a-template" data-raw-source="[Capture work item as a template](../backlogs/work-item-template.md#capture-a-work-item-as-a-template)">Capture work item as a template</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#change-the-work-item-type" data-raw-source="[Change work item type](../backlogs/remove-delete-work-items.md#change-the-work-item-type)">Change work item type</a></li>
+<li><a href="../backlogs/move-change-type.md#change-type">Change work item type</a></li>
 <li><a href="../backlogs/copy-clone-work-items.md" data-raw-source="[Copy or clone a work item](../backlogs/copy-clone-work-items.md)">Copy or clone a work item</a></li>
 <li><a href="work-item-form-controls.md#copy-the-url" data-raw-source="[Copy work item URL](work-item-form-controls.md#copy-the-url)">Copy work item URL</a></li>
 <li><a href="../backlogs/copy-list.md" data-raw-source="[Copy list of work items](../backlogs/copy-list.md)">Copy list of work items</a></li>
@@ -247,14 +245,14 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <li><a href="../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags" data-raw-source="[Manage work item tags](../queries/add-tags-to-work-items.md#delete-remove-or-manage-tags)">Manage work item tags</a></li>
 <li><a href="../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic" data-raw-source="[Map work items](../backlogs/organize-backlog.md#map-items-to-group-them-under-a-feature-or-epic)">Map work items</a></li>
 <li><a href="../sprints/assign-work-sprint.md" data-raw-source="[Move work items to a sprint](../sprints/assign-work-sprint.md)">Move work items to a sprint</a></li>
-<li><a href="../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/remove-delete-work-items.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
+<li><a href="../backlogs/move-change-type.md#move-a-work-item-to-another-project" data-raw-source="[Move work items to another project](../backlogs/move-change-type.md#move-a-work-item-to-another-project)">Move work items to another project</a></li>
 </ul>
 </td>
 <td width="34%">
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/bulk-modify-work-items.md#reassign-work-items">Reassign work items</a></li>
@@ -350,7 +348,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](view-add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#move-items-into-priority-order)">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog" data-raw-source="[Prioritize backlog items](../backlogs/create-your-backlog.md#reorder-backlog)">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>
@@ -434,7 +432,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 <ul>
 <li><a href="view-add-work-items.md" data-raw-source="[Open work items](../backlogs/add-work-items.md)">Open work items</a></li>
 <li><a href="email-work-items.md#print-items" data-raw-source="[Print work items](email-work-items.md#print-items)">Print work items</a></li>
-<li><a href="../backlogs/create-your-backlog.md#move-items-into-priority-order">Prioritize backlog items</a></li>
+<li><a href="../backlogs/create-your-backlog.md#reorder-backlog">Prioritize backlog items</a></li>
 <li><a href="../queries/using-queries.md" data-raw-source="[Query for work items](../queries/using-queries.md)">Query for work items</a></li>
 <br/>
 <li><a href="../backlogs/remove-delete-work-items.md#remove-work-items">Remove work items</a></li>

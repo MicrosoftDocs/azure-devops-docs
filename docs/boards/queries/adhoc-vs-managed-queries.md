@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Use ad hoc or built-in search/managed queries to find work items in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5A96317D-5A10-44CB-B2F9-F166BBAE916B
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -16,7 +14,7 @@ ms.date: 02/14/2019
 
 # Ad hoc vs managed work item queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
 
@@ -24,7 +22,7 @@ You have two ways to perform work item searches: semantic or ad hoc searches and
 
 You perform semantic or ad hoc searches using the work item search box (shown below)   
 
-Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/_shared/start-search-icon.png) start search icon.  
+Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon.  
 
 > [!div class="mx-imgBorder"]
 > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
@@ -41,7 +39,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 You perform semantic or ad hoc searches using the work item search box (shown below). 
 
-In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/_shared/start-search-icon.png) start search icon. 
+In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon. 
 
 ![Search Work Items Text Box](media/using-queries-search-box-ts.png)
 
@@ -63,7 +61,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker range="tfs-2013"  
 
-![Editor View of a Flat List Query - On-premises TFS](media/5.png)  
+![Editor View of a Flat List Query - on-premises Azure DevOps](media/5.png)  
 
 ::: moniker-end
 

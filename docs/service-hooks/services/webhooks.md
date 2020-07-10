@@ -1,14 +1,10 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: WebHooks with Azure DevOps Services
 description: Use WebHooks with your Azure DevOps Services organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
-ms.author: phwilson
-author: chasewilson
 ms.date: 2/08/2019
 ---
 

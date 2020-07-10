@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts TaskAgentSession API | Extensions for Azure DevOps Services
 description: Data representation of a task agent session.
 ms.assetid: ecbcde63-fa84-c605-b0be-e134f1fb8be5
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

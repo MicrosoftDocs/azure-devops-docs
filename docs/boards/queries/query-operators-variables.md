@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Field data types, operators, and macros/variables used by the Query Editor in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 814c2dca-cf8f-44bf-bba1-a5d8e293fc05
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -17,7 +15,7 @@ ms.date: 02/04/2019
 
 # Query fields, operators, and macros
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
 
 Here you'll find detailed descriptions of each field data type, query operators, and query macros. Some data types, operators, and macros are only valid for the indicated Azure DevOps Server or Team Foundation Server (TFS) version. 
 
@@ -169,11 +167,11 @@ You can use query operators in the following table to specify how each value in 
     <td><p> <strong>String</strong> </p></td></tr>
 <tr>
     <td><p><strong>Contains Words</strong></p></td>
-    <td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong></strong>*. For restrictions, see <a href="#full-text" data-raw-source="[Full-text searches](#full-text)">Full-text searches</a> for server and collation requirements.</p></td>
+    <td><p>Contains the exact text string or words within the field you selected for filtering. You can also enter partial words or phrases that contain the wildcard character, <strong>*</strong>. Text string is limited to 100 characters. For restrictions, see <a href="#full-text" data-raw-source="[Full-text searches](#full-text)">Full-text searches</a> for server and collation requirements.</p></td>
     <td><p>Long-text fields that are indexed for full-text search, which correspond to all <strong>PlainText</strong> and <strong>HTML</strong> fields, and the <strong>History</strong> and <strong>Title</strong> fields.</p></td></tr>
 <tr>
     <td><p><strong>Does Not Contain Words</strong></p></td>
-    <td><p>Does not contain the exact text string or words within the field you selected for filtering.</p></td>
+    <td><p>Does not contain the exact text string or words within the field you selected for filtering. Text string is limited to 100 characters. </p></td>
     <td><p>Text fields that are indexed for full text search.</p></td></tr>
 <tr>
     <td><p><strong>In</strong></p></td>
@@ -348,7 +346,7 @@ You can use the macros described in the following table to filter your queries b
 1. The <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, and <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"></xref></strong> macros are supported for Azure DevOps Server 2019 Update 1 and later versions.
 1. The <strong><xref href="TeamAreas" data-throw-if-not-resolved="False" data-raw-source="@TeamAreas"></xref></strong> macro is supported for Azure Boards and Azure DevOps Server 2019 and later versions.
 
-
+[!INCLUDE [temp](../includes/note-macro-web-portal.md)]
 
 <a id="full-text" /> 
 
@@ -383,7 +381,7 @@ For more information, see [Full-Text Search Queries and Collation Settings](/azu
 - [Work item field index](../work-items/guidance/work-item-field.md)
 - [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md)
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)] 
+[!INCLUDE [temp](../includes/rest-apis-queries.md)] 
 
 
 <!---

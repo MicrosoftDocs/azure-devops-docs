@@ -3,9 +3,7 @@ title: How are area and iteration paths used?
 titleSuffix: Azure DevOps
 description: Understand how areas and iterations are used in Azure DevOps
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,9 +12,9 @@ ms.date: 11/19/2018
 ---
 
 
-# About area and iteration paths (aka sprints) 
+# About area and iteration (sprint) paths 
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 Area paths allow you to group work items by team, product, or feature area. Whereas, iteration paths allow you to group work into sprints, milestones, or other event-specific or time-related period. Both these fields allow you to define a hierarchy of paths. 
 
@@ -79,7 +77,7 @@ Avoid creating an area structure that is too complex. You can create areas to pa
 
 ## End-to-end sequence to define and assign Iteration Paths
 
-Use the following guidance to configure Iteration Paths (aka sprints) for your project and teams:  
+Use the following guidance to configure Iteration Paths for your project and teams:  
 
 1. First, define the Area Paths and teams following the guidance provided in [Define area paths and assign to a team](set-area-paths.md#guidance).  
 1. Determine the length of the iteration you want to support. Recommended practice is to have all teams use the same sprint cadence.  
@@ -139,7 +137,7 @@ The **Area Path** and **Iteration Path** fields, [data type=TreePath](../../boar
 As you can see, areas and iterations play a major role in supporting Agile tools and managing work items. You can learn more about working with these fields from these topics: 
  
 - [Define area paths and assign to a team](set-area-paths.md)
-- [Define iteration paths (aka sprints) and configure team iterations](set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](set-iteration-paths-sprints.md)
 - [Agile tools and sprint definitions](../../boards/sprints/define-sprints.md)  
 - [Query by date or current iteration](../../boards/queries/query-by-date-or-current-iteration.md)  
 

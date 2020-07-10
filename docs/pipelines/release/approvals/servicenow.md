@@ -3,19 +3,16 @@ title: Control deployments by using ServiceNow
 ms.custom: seodec18
 description: Understand ServiceNow gated releases in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0824A7C4-9353-4BDA-B652-5B826E0EF2A5
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: shashban
-author: shashankbarsin
+author: azooinmyluggage
 ms.date: 01/10/2019
 monikerRange: '>= tfs-2018'
 ---
 
 # Integrate with ServiceNow change management
 
-[!INCLUDE [version-team-services](../../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../../includes/version-team-services.md)]
 
 Azure Pipelines and ServiceNow bring an integration of Azure Pipelines with
 ServiceNow Change Management to enhance collaboration between development and IT teams.
@@ -189,4 +186,4 @@ and [Update change request states](https://docs.servicenow.com/bundle/istanbul-i
 * [GitHub issues as a release gate](https://www.visualstudiogeeks.com/DevOps/github-issues-as-deployment-gate-in-vsts-rm)
 * [Author custom gates](https://github.com/Microsoft/azure-pipelines-tasks/blob/master/docs/authoring/gates.md). [Library with examples](https://github.com/Microsoft/vsts-rm-extensions/tree/master/ServerTaskHelper/DistributedTask.ServerTask.Remote.Common) 
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]

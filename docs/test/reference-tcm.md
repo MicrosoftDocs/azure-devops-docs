@@ -2,10 +2,8 @@
 title: Test Case Management Reporting FAQs   
 description: FAQs for Test Case Management Reporting for Azure DevOps and Microsoft Team Foundation Server (TFS)
 ms.assetid: FFBBD2F9-C1C5-4273-916A-28834B794CC3
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 01/18/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # FAQs for Test Case Management Reporting
 
-[!INCLUDE [version-inc-vs-all](_shared/version-inc-vs-all.md)] 
+[!INCLUDE [version-inc-vs-all](includes/version-inc-vs-all.md)] 
 
 ## I am using Microsoft Test Manager (MTM) for my testing activities - what type of reports can I see within MTM?
 
@@ -279,4 +277,4 @@ You can find a Sample custom warehouse adapter below, that you can use as a star
 
 [https://code.msdn.microsoft.com/Tfs2010SampleAdapter](https://code.msdn.microsoft.com/Tfs2010SampleAdapter)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

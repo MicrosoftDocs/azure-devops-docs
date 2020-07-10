@@ -45,7 +45,7 @@
 - name: Concepts
   items:
   - name: Plan your org structure
-    href: /azure/devops/plan-your-azure-devops-org-structure?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
+    href: /azure/devops/user-guide/plan-your-azure-devops-org-structure?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
   - name: Source control 
     href: source-control.md
   - name: Clients and tools
@@ -76,6 +76,8 @@
     href: /azure/devops/reference/error/tf31002-unable-connect-tfs?toc=/azure/devops/organizations/projects/toc.json&bc=/azure/devops/organizations/breadcrumb/projects/toc.json
   - name: Allowed address lists and network connections
     href: /azure/devops/organizations/security/allow-list-ip-url?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
+  - name: Configure a network adapter to adjust speed
+    href: /azure/devops/reference/xml/configure-network-adapter-automatically-adjust-speed?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json  
   - name: Get support or provide feedback
     href: provide-feedback.md?toc=/azure/devops/get-started/toc.json&bc=/azure/devops/get-started/breadcrumb/toc.json
 

@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces Extension API | Extensions for Azure DevOps Services
 description: Represents an Azure DevOps Services &quot;extension&quot; which is a container for contributions and contribution types
 ms.assetid: dd0441f1-1e7e-a3f9-952a-6d905d28d7a3
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

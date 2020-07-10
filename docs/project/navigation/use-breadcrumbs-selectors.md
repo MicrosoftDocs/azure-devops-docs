@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Navigate to pages and artifacts using breadcrumbs or selectors in the web portal for Azure DevOps
 ms.custom: Navigation
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
@@ -17,7 +15,7 @@ ms.date: 02/08/2019
 
 # Use breadcrumbs, selectors, and directories to navigate and open artifacts 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 To quickly navigate to a feature or artifact&mdash;such as a dashboard, repository, product backlog, Kanban board, build pipeline&mdash;you can use breadcrumbs, selectors, and directories. 
 
@@ -36,7 +34,7 @@ To navigate to the project summary page, choose the project link within the brea
 
 Horizontal navigation doesn't provide a breadcrumb structure for the organization and project levels. Instead, you can select a recent team or project from the project/team selector. 
 
- ![Choose a different team or project from the project/team selector](../../_shared/media/work-web-portal-ts-switch-team-focus.png)
+ ![Choose a different team or project from the project/team selector](../../media/work-web-portal-ts-switch-team-focus.png)
 
 Choosing **Browse all** [opens the **projects** page](work-across-projects.md). 
 
@@ -81,7 +79,7 @@ This particular selector features these navigational elements:
 
 Within **Dashboards**, you select the team whose dashboards you want to view. 
 
-![Choose a different team or project from the project/team selector](../../_shared/media/work-web-portal-ts-switch-team-focus.png)
+![Choose a different team or project from the project/team selector](../../media/work-web-portal-ts-switch-team-focus.png)
 
 Then, choose the name of the dashboard to view it. 
 

@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Index to dashboard, charts&, and widgets tasks for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -16,11 +14,11 @@ ms.date: 10/23/2019
 
 # Dashboards, reports, & widgets quick reference 
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 Use this index to quickly access information on tasks for configuring or accessing dashboards, charts, reports, and widgets.  
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ## Tasks
 
@@ -142,7 +140,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <li><a href="../powerbi/overview.md#sample-reports">Power BI reports</a></li>
 <li><a href="../extend-analytics/quick-ref.md" data-raw-source="[OData](../extend-analytics/quick-ref.md)">OData</a> </li>
 <li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
-<li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
+<li><a href="../../report/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
 </ul>
 <strong>Widgets</strong>
 <ul>
@@ -200,7 +198,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 <strong>Reports</strong>
 <ul>
 <li><a href="../../report/sql-reports/reporting-services-reports.md" data-raw-source="[SQL Server reports](../../report/sql-reports/reporting-services-reports.md)">SQL Server reports</a></li>
-<li><a href="../../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/excel/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
+<li><a href="../../report/create-status-and-trend-excel-reports.md" data-raw-source="[Excel work tracking reports](../../report/create-status-and-trend-excel-reports.md)">Excel work tracking reports</a></li>
 </ul>
 <strong>Widgets</strong>
 <ul>

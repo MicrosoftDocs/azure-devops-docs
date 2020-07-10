@@ -5,9 +5,7 @@ ms.global_help.title: Definition of Done
 description: Support teams shared understanding by providing a definition for what "done" means for each column of the Kanban board  
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: f5b9223e-5be2-4df7-a735-02f0cb59a46b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.date: 02/14/2019
 
 # Definition of Done
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [temp](../includes/version-vsts-tfs-2015-on.md)]  
 
 As your team updates the status of work as it progresses from one stage to the next, it helps that they agree on what "done" means. By specifying the Definition of Done criteria for each Kanban column, you help share the essential tasks to complete before moving an item into a downstream stage. 
 Also, you'll have implemented one of the core Kanban tenets: **make processes and policies explicit.**
@@ -39,7 +37,7 @@ When set, team members can quickly double-check the done criteria.
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to implement Kanban.
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 ## Specify the Definition of Done for a column 
 

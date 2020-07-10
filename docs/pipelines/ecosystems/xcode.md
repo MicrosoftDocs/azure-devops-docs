@@ -1,11 +1,8 @@
 ---
 title: Build, test, and deploy Xcode apps
 description: Automatically build Xcode projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: e9dd0efb-8932-4a77-93be-28e209d486ca
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 02/14/2019
@@ -14,7 +11,7 @@ monikerRange: '>= tfs-2017'
 
 # Build, test, and deploy Xcode apps
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 This guidance explains how to automatically build Xcode projects.
 
@@ -41,7 +38,7 @@ Create a file named **azure-pipelines.yml** in the root of your repository. Then
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/xcode
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 ```
 
 ## Build an app with Xcode
@@ -139,7 +136,7 @@ Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app
 
 [Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterTestV1.md)]
 
 ### Retain artifacts with the build record
 
@@ -161,7 +158,7 @@ to store your IPA with the build record or test and deploy it in subsequent pipe
 Add the [App Center Distribute](../tasks/deploy/app-center-distribute.md) task to distribute an app to a group of testers or beta users,
 or promote the app to Intune or the Apple App Store. A free [App Center](https://appcenter.ms) account is required (no payment is necessary).
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterDistributeV1.md)]
 
 ### Apple App Store
 

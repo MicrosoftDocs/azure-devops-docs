@@ -4,20 +4,17 @@ titleSuffix: Azure Boards
 description: Create flat-list, tree, or direct-links queries to list, triage, update, and chart work items in Azure Boards, Azure DevOps Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 364000d3-200a-495a-bfb9-83915240af67
 monikerRange: ">= tfs-2013"
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013'
 ms.date: 10/16/2019
 ---
 
-# Create and save managed queries with the query editor
+# Create and save managed queries
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
@@ -37,11 +34,11 @@ In this article you'll learn:
 
 For quick access to all query tasks, supported operators&mdash;such as, `Contains`, `In`, `In Group`, and `<>`(not operator) &mdash; based on field data type, and query examples, see [Query quick reference](query-index-quick-ref.md).  
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 
 <a id="flat-list-query"/>
@@ -150,8 +147,7 @@ For a quick reference of the operators available based on the field data type, s
 
 All clauses you add are added as an **And** statement. Choose **Or** to change the grouping. You group clauses to ensure that the clause statements are executed in the sequence required. 
 
-> [!TIP]
-> To view the WIQL syntax for a query, and how parenthesis are used to group clauses, install the [Marketplace Wiql Editor](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor). This extension supports viewing the WIQL syntax and exporting it to a WIQL file for use in REST API calls. To learn more, see [Syntax for the Work Item Query Language (WIQL)](wiql-syntax.md).
+[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
 ### Checklist for how to define a query clause
 
@@ -246,7 +242,7 @@ Use the tree query (![Tree Query](media/11.png)) to view a multi-tiered, nested 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
 > [!div class="mx-imgBorder"]  
-> ![Results List Showing a Tree Query, tfs experience](media/view-run-queries/tree-query-view-tfs.png)  
+> ![Results List Showing a Tree Query](media/view-run-queries/tree-query-view-tfs.png)  
 
 ::: moniker-end  
 
@@ -387,11 +383,11 @@ That's the basics about using queries. For an index of query examples, see [Crea
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Define a query as a hyperlink](define-query-hyperlink.md) 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 
 If you want to export a query to Excel, you can do that from [Excel or Visual Studio/Team Explorer](../backlogs/office/bulk-add-modify-work-items-excel.md). Or, to export a query directly from the web portal Queries page, install the [VSTS Open in Excel Marketplace extension](https://marketplace.visualstudio.com/items?itemName=blueprint.vsts-open-work-items-in-excel). This extension will add in **Open in Excel** link to the toolbar of the query results page. 
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
  
  

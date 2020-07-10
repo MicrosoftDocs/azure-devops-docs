@@ -1,12 +1,10 @@
 ---
 title: Requirements Progress Report (CMMI) 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Lists all requirements, filtered by product area and iteration in order of importance.
 ms.assetid: c5ecc16d-9645-4b5f-97b9-e92f76a88852
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 
 # Requirements Progress Report (CMMI)
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 The Requirements Progress report lists all requirements, filtered by product area and iteration in order of importance.  
   

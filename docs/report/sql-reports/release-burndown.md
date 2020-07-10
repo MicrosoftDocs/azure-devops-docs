@@ -1,12 +1,10 @@
 ---
 title: Release Burndown
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.
 ms.assetid: 9044206f-c993-451d-bcc8-6f3980c90b3e
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 
 # Release Burndown
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 By reviewing the release burndown report, you can understand how quickly your team has delivered backlog items and track how much work the team must still perform to complete a product release.  
   

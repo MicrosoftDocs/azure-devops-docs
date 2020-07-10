@@ -4,10 +4,8 @@ titleSuffix: Azure Repos
 description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
@@ -26,7 +24,7 @@ monikerRange: '>= tfs-2013'
 
 Whether your software project is large, small, or brand new, in most cases you'll be better off if you use version control as early as possible. 
 Here, we'll show you how to get started with Git, a distributed version control system. 
-If you want to work in a centralized version control system, you can instead use [Team Foundation Version Control](../../repos/tfvc/overview.md) (TFVC).
+If you want to work in a centralized version control system, you can instead use [Team Foundation Version Control](../../repos/tfvc/index.yml) (TFVC).
 
 ## Create a project for your repositories
 Projects hold your repositories, backlogs, and builds.  When you create a project, a new repository will be automatically created for you.

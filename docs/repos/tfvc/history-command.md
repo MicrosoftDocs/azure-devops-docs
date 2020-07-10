@@ -3,10 +3,8 @@ title: History command
 titleSuffix: Azure Repos
 description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -42,7 +40,7 @@ tf hist[ory] itemspec [/version:versionspec]
 <tbody>
 <tr>
 <td><p><strong>/collection</strong>: <i>TeamProjectCollectionUrl</i></p></td>
-<td><p>Specifies the URL of the project collection that contains the items. For example: <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>.</p>
+<td><p>Specifies the URL of the project collection that contains the items. For example: `http://myserver:8080/tfs/DefaultCollection`.</p>
 <p>By default, the project collection is presumed to be the one that contains the workspace that maps the current directory.</p></td>
 </tr>
 <tr>

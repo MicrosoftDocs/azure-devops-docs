@@ -1,21 +1,18 @@
 ---
 title: Bug Status Report 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Track the team's progress toward resolving and closing bugs by viewing the Bug Status report - Team Foundation Server 
 ms.assetid: ede30011-e04a-4914-ab68-b4c725a54f96
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.date: 10/17/2017
 ---
 
 
 # Bug Status Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 After the team has started to find and fix bugs, you can track the team's progress toward resolving and closing bugs by viewing the Bug Status report. This report shows the cumulative bug count based on the bug state, priority, and severity.  
   

@@ -2,10 +2,8 @@
 title: Card Styling Rules for Kanban Boards | REST API Reference for Team Foundation Server
 description: Work with Kanban board Card Styling Rules programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: B1E4A7C6-E04C-42B9-8A55-0B18E00970EA
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

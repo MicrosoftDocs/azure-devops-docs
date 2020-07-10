@@ -3,9 +3,7 @@ title: Search for work items
 titleSuffix: Azure DevOps Services Public Project
 description: Use Work Item Search to search across all work item fields over one or more public projects  
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
@@ -15,7 +13,7 @@ monikerRange: 'azure-devops'
 
 # Quickstart: Search for work items defined in a public project
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn how to perform a work item search to quickly find work items defined within a public project.
 
@@ -32,7 +30,7 @@ In this quickstart, you learn how to perform a work item search to quickly find 
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 
 3. Select **Boards**, and then **Work items**.
 
@@ -44,7 +42,7 @@ In this quickstart, you learn how to perform a work item search to quickly find 
 
 #### [Current page](#tab/current-page)
 
-1. Choose **Work > Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/_shared/start-search-icon.png) start search icon.
+1. Choose **Work > Work Items**, enter a keyword or phrase in the search box, and press *Enter* or choose the ![start search icon](../../project/search/media/shared/start-search-icon.png) start search icon.
 
 	> [!div class="mx-imgBorder"]
 	> ![Work Item Search box, new navigation](media/search/work-item-search-vert.png)
@@ -61,7 +59,7 @@ In this quickstart, you learn how to perform a work item search to quickly find 
   
    >Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](../../project/search/media/_shared/start-search-icon.png) icon.
+   ![start search icon](../../project/search/media/shared/start-search-icon.png) icon.
    In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab.
 

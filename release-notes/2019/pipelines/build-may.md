@@ -2,7 +2,6 @@
 title: Azure Pipelines - Microsoft Build Announcements
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 ---
@@ -11,9 +10,9 @@ ms.date: 05/10/2019
 
 ## Features
 
-[!INCLUDE [build-may-links](../_shared/pipelines/build-may-links.md)]
+[!INCLUDE [build-may-links](../includes/pipelines/build-may-links.md)]
 
-[!INCLUDE [build-may](../_shared/pipelines/build-may.md)]
+[!INCLUDE [build-may](../includes/pipelines/build-may.md)]
 
 ## Next steps
 

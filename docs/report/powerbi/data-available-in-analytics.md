@@ -2,10 +2,8 @@
 title: Data available from Analytics
 titleSuffix: Azure DevOps
 description: Data available for reporting purposes using Analytics for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: greggboe   
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +13,7 @@ ms.date: 10/24/2019
 
 # Data available from Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and in preview for Azure DevOps Server 2019. 
 

@@ -3,10 +3,8 @@ title: Check out and edit files
 titleSuffix: Azure Repos
 description: Check out and edit files
 ms.assetid: eb404d63-c448-4994-9416-3e6d50ec554a
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

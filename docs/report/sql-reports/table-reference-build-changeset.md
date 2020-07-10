@@ -1,12 +1,10 @@
 ---
 title: Build Changeset tables 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Uses FactBuildChangeset to query for data about the changesets.
 ms.assetid: 66ab6ac3-ff81-4ed7-9535-dd7ce9ebbb37
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 # Build Changeset tables
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for data about the changesets that were incorporated in each build by using FactBuildChangeset and the associated dimension tables.  
   

@@ -1,20 +1,17 @@
 ---
 title: Build an image
 description: Build container images
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 4fd7bae1-7484-4bb2-9bb9-a95ef17cb8fb
-ms.manager: mijacobs
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Build an image
 
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 
 Azure Pipelines can be used to build images for any repository containing a Dockerfile. Building of both Linux and Windows containers is possible based on the agent platform used for the build.
 
@@ -61,8 +58,8 @@ https://github.com/MicrosoftDocs/pipelines-javascript-docker
 5. Select **Save and run**, after which you're prompted for a commit message as Azure Pipelines adds the azure-pipelines.yml file to your repository. After editing the message, select **Save and run** again to see the pipeline in action.
 
    > [!TIP]
-   > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub
-   > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample
+   > Learn more about how to push the image to [Azure Container Registry](acr-template.md) or [push it other container registries](./push-image.md) such as Google Container Registry or Docker Hub.
+   > Learn more about the [Docker task](../../tasks/build/docker.md) used in the above sample.
    > Instead of using the recommended Docker task, it is also possible to invoke docker commands directly using a [command line task](../../tasks/utility/command-line.md)(script)
 
 ## Windows container images
@@ -111,7 +108,7 @@ docker build -f Dockerfile -t foobar.azurecr.io/hello:world .
 
 The above command results in an equivalent image in terms of content as the one built by using the Docker task. The Docker task itself internally calls docker binary on script, but also stitches together a few more commands to provide a few additional benefits as described in the [Docker task's documentation](../../tasks/build/docker.md).
 
-## Frequently asked questions
+## FAQ
 
 ### Is reutilizing layer caching during builds possible on Azure Pipelines?
 

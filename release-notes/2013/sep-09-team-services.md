@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Sep 9
 description: VSTS release notes for September 09 2013
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: a58950a3-279f-4f24-bee4-7934e81d52f6

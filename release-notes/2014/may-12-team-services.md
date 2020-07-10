@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Online Updates - May 12
 description: VSTS release notes for May 12 2014
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: c2b37732-0483-4345-9832-b0cda35b8c5e
@@ -70,7 +69,7 @@ Since we launched Visual Studio Online, many of our on-premises Team Foundation 
 
 The migration utility will take you through a step-by-step process for mapping your team projects in Team Foundation Server on-premises to Visual Studio Online team projects. Team projects using standard process templates from TFS 2010, TFS 2012, and TFS 2013 are supported with this free migration utility, and you do not need to have upgraded the process templates used by the team projects or upgrade to the latest version of TFS 2013 to use the utility. Once you are finished migrating to Visual Studio Online, you’ll be on our latest version, able to take advantage of all of the latest features automatically!
 
-We suggest you test out your migration before having your team come on board. You’ll want to get a sense of how long your migration will take, see whether you run into any issues to be addressed, and give yourself a chance to inspect the test migration after it is finished. You can always [delete the team project](https://blogs.msdn.com/b/buckh/archive/2013/09/13/how-to-delete-a-team-project-from-team-foundation-service.aspx) in Visual Studio Online and run the migration utility as many times as you need to until you are satisfied with your migration plan.
+We suggest you test out your migration before having your team come on board. You’ll want to get a sense of how long your migration will take, see whether you run into any issues to be addressed, and give yourself a chance to inspect the test migration after it is finished. You can always [delete the team project](https://devblogs.microsoft.com/buckh/how-to-delete-a-team-project-from-team-foundation-service-tfs-visualstudio-com/) in Visual Studio Online and run the migration utility as many times as you need to until you are satisfied with your migration plan.
 
 For those with more advanced scenarios, such as integrating or synchronizing TFS and Visual Studio Online with other devops tools (HP devops/Quality Center, IBM Rational, Atlassian Jira, etc.) and enable customized business rules during the migration with customized process templates, OpsHub also has a commercially available offering to help: the [OpsHub Integration Platform](https://www.opshub.com/integrations/azure-devops-vsts-integration/). Also, keep in mind some data will ultimately not be migrated with this free utility, such as builds, team room history, lab management environments, team and personal favorites, work item queries, alerts, security and permissions, team settings, and other types of data. You’ll want to keep backup copies of your Team Foundation Server databases around in case you need data that isn’t migrated.
 

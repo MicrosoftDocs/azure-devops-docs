@@ -3,10 +3,7 @@ title: Install Release Management server & client
 ms.custom: seodec18
 description: Learn how you can install the Release Management server and client for VS 2015 and Team Foundation Server (TFS) 2015.
 ms.assetid: 6F4596D5-848B-42AF-BFDD-7698BC815942
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Install Release Management server and client 
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
 ![Installing Release Management on TFS](media/install-server-client-01.png)
 
@@ -148,6 +145,6 @@ instance that you used before for the database server.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

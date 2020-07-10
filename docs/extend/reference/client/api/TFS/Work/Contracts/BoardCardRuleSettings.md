@@ -1,10 +1,8 @@
 ---
 title: TFS/Work/Contracts BoardCardRuleSettings API | Extensions for Azure DevOps Services
 ms.assetid: 8d328a58-fab6-9f88-706f-8f8ac8a362c8
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -3,10 +3,8 @@ title: Create a new Git repo
 titleSuffix: Azure Repos
 description: Create new Git repos using Visual Studio or command line init 
 ms.assetid: 83c20dac-85c6-4fa0-93b5-912d5477246a
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
@@ -74,7 +72,7 @@ another remote Git repository.
 
    ![Creating a new local Git repository in Visual Studio Team Explorer](media/CreateNewRepoVS.png)</ol>
 
-<a name="remotes" />
+<a name="remotes"></a>
 ### Connect a local repo to a remote
 
 To connect a local repository to a hosted remote Git repository to share your work, go the **Settings** page in Team Explorer. Select **Repository Settings**.

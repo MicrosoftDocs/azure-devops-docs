@@ -3,10 +3,7 @@ title: Deploy continually to Azure with Release Management
 ms.custom: seodec18
 description: Release your app continuously to Microsoft Azure environments with Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 40DF8A8C-2D94-4127-BE79-C0B8386960C6
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Deploy continuously to Azure
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 With Visual Studio 2015 and Azure Pipelines you can easily 
 set up continuous deployment to Azure VMs.
@@ -40,7 +37,7 @@ Before you start, you'll need:
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
   go to **Tools**, **Extensions and Updates**, and search for **Release Management for Visual Studio**.
 * **A deployment script.**  Find out how to set up and check-in this script 
-  **[here](https://go.microsoft.com/fwlink/?LinkId=518666)**.
+  **[here](https://devblogs.microsoft.com/devops/deploying-and-testing-web-applications-using-release-management/)**.
 
 ## Create a release definition
 
@@ -123,6 +120,6 @@ Learn more **[here](release-without-agents.md)**.
 * [Release with deployment agents](release-with-agents.md)
 * [Trigger a release from a build](trigger-a-release.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

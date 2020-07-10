@@ -2,10 +2,8 @@
 title: Create manual tests
 description: Test tools - Create manual tests in Azure DevOps and TFS to make sure each of the deliverables meets your users needs
 ms.assetid: C3C10A82-C7F2-4AB6-9CED-B43DAF722800
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Create manual test cases
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 <a name="test-cases"></a>
 Create manual test cases to check that each of the deliverables 
@@ -24,7 +22,7 @@ the tests.
 
 [What are test plans, test suites, and test cases?](create-a-test-plan.md#testplans)
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 > [!NOTE]
 > Stakeholders cannot create or manage test cases. You must have at least Basic access.

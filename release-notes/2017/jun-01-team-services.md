@@ -2,7 +2,6 @@
 title: New Visual Studio Enterprise pipeline benefit, mobile work item form GA, and source based release triggers – June 1
 description: VSTS release notes for June 1 2017
 ms.ContentId: d07ea7a5-92ec-4d13-b1ac-49180b237a97
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.author: egeaney
 author: egeaney

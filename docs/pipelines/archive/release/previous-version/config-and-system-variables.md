@@ -3,10 +3,7 @@ title: Configuration and system variables for Release Management
 ms.custom: seodec18
 description: Configuration variables and system variables for Release Management server/client for Visual Studio 2015 and TFS 2015
 ms.assetid: 50D20F24-19E6-4660-B3EC-25148BDFE2A3
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Configuration variables and system variables
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 Often when you deploy your app, you need access to configuration or system 
 settings for your script. That way you don't have to hardcode values in 
@@ -144,6 +141,6 @@ variable will be unassigned.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md) 
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts HistoryQueryResults API | Extensions for Azure DevOps Services
 ms.assetid: f8c7b496-4c33-36ad-c7cc-578aa8ffda07
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -3,24 +3,22 @@ title: Change process from Agile to Scrum
 titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Agile to Scrum
-ms.prod: devops
 ms.topic: conceptual
-ms.assetid:
-ms.manager: mijacobs
+ms.technology: devops-agile
 ms.author: kaelli
-author: kaelli
+author: KathrynEE
 ms.reviewer: kaelli
 monikerRange: "azure-devops"
-ms.date: 06/28/2019
+ms.date: 04/17/2020
 ---
 
 # Change a project process from Agile to Scrum
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
 
 You can change a project based on the Agile process to use an inherited Scrum process.  This article provides the steps needed to make this change. 
 
-[!INCLUDE [temp](../_shared/cloud-only-feature.md)]
+[!INCLUDE [temp](../includes/cloud-only-feature.md)]
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
@@ -39,11 +37,11 @@ Reasons you might want to change your process from Agile to Scrum:
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
-[!INCLUDE [temp](../_shared/change-process-manual-steps.md)]
+[!INCLUDE [temp](../includes/change-process-manual-steps.md)]
 
-[!INCLUDE [temp](../_shared/prerequisites-change-process.md)]
+[!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 <a id="create-customize-process" />
 
@@ -86,7 +84,7 @@ The first step is to create an inherited process that you can customize. The def
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/agile-to-scrum/step-2-retry.png)
 
-   Close the wizard dialog and add the missing work item types now.
+   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-wit.md).
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
@@ -129,7 +127,7 @@ You can customize Kanban boards to display intermediate columns. For each column
   > [!div class="mx-imgBorder"]
   > ![Board Configuration](media/change-process/change-process-agile-to-scrum-board-config.gif)
 
-5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all User Stories. Sort the list by state value. Highlight all User Stories and do a [change type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type) to Product Backlog Item. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the Product Backlog Item type. For example: Active would change to Committed. Do this for each state, one state at a time.
+5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all User Stories. Sort the list by state value. Highlight all User Stories and do a [change type](../../../boards/backlogs/move-change-type.md#change-type) to Product Backlog Item. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the Product Backlog Item type. For example: Active would change to Committed. Do this for each state, one state at a time.
 
 6. Adjust query to show only Issues. Highlight all Issue work items and a change type to be an Impediment. Do a bulk edit to update work items to the right state for the Impediment type. Do this for each state, one state at a time.
 
@@ -168,7 +166,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/agile-to-scrum/change-type-pbi.png)
 
-   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
+   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
    It's possible that you will receive errors where the work item type and the state are mismatched. In that case, you can't save your changes until you update the state as described in the next step.
 

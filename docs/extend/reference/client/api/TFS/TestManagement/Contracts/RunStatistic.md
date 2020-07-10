@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts RunStatistic API | Extensions for Azure DevOps Services
 description: Data representation of a run statistic.
 ms.assetid: 62577fc4-e0af-ceee-a8d3-b6a52697b324
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

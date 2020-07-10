@@ -3,7 +3,6 @@ title: Azure Artifacts - Sprint 153 Update
 description:  See the Sprint 153 feature update for Azure Artifacts, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 06/10/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 06/10/2019
 
 ## Features
 
-[!INCLUDE [sprint-153-update-links](../_shared/artifacts/sprint-153-update-links.md)]
+[!INCLUDE [sprint-153-update-links](../includes/artifacts/sprint-153-update-links.md)]
 
-[!INCLUDE [sprint-153-update](../_shared/artifacts/sprint-153-update.md)]
+[!INCLUDE [sprint-153-update](../includes/artifacts/sprint-153-update.md)]
 
 ## Next steps
 

@@ -3,10 +3,8 @@ title: Plan, code, collaborate, ship applications
 titleSuffix: Azure DevOps 
 ms.custom: seodec18
 description: Get an integrated set of features to help you plan, code, collaborate, and ship your applications faster.
-ms.prod: devops
 ms.technology: devops-new-user
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 11/08/2019
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # What is Azure DevOps?
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Azure DevOps provides developer services to support teams to plan work, collaborate on code development, and build and deploy applications. Developers can work in the cloud using Azure DevOps Services or on-premises using Azure DevOps Server. Azure DevOps Server was formerly named Visual Studio Team Foundation Server (TFS).
 
@@ -66,9 +64,9 @@ You can use all the services included with Azure DevOps, or choose just what you
 
 ## Choose Azure DevOps Server
 
-Choose on-premises Azure DevOps Server when you need:
+Choose on-premises Azure DevOps Server when:
 
-- Your data to stay within your network.
+- You need your data to stay within your network.
 - Your work tracking customization requirements are met better with the on-premises XML process model over the inheritance process model. The on-premises model supports modification of XML definition files.
 
 When you deploy Azure DevOps Server, you can also configure the following servers or integration points:
@@ -104,7 +102,7 @@ You can still use `visualstudio.com` to access Azure DevOps Services. We've move
 This content supports a platform/version selector. Toggle the Content version selector dropdown, located above the table of contents, to access the content that is specific to your version. The table of contents and content page refresh to show only that content specific to the selected version.
 
    > [!div class="mx-imgBorder"]  
-   > ![Documentation version selector](../_shared/media/version-selector.png)
+   > ![Documentation version selector](../media/version-selector.png)
 
 ## Next steps  
 

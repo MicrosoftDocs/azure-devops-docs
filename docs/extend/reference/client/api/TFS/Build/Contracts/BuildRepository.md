@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildRepository API | Extensions for Azure DevOps Services
 description: Data representation of a build repository.
 ms.assetid: e937ba8a-3550-9753-6a50-a281778559b4
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

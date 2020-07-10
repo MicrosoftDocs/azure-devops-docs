@@ -4,12 +4,10 @@ titleSuffix: Azure Boards
 ms.custom: seodec18
 description: Change the process for your project from Basic to Agile
 ms.technology: devops-agile
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid:
-ms.manager: mijacobs
 ms.author: kaelli
-author: kaelli
+author: KathrynEE
 ms.reviewer: kaelli
 monikerRange: "azure-devops"
 ms.date: 06/28/2019
@@ -17,11 +15,11 @@ ms.date: 06/28/2019
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [temp](../../../_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
 
 You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
-[!INCLUDE [temp](../_shared/cloud-only-feature.md)]
+[!INCLUDE [temp](../includes/cloud-only-feature.md)]
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task and Epic work item types are the same for both Basic and Agile processes. Most State and Reason field values, however, are different.
 
@@ -39,13 +37,13 @@ Reasons you might want to change your process from Basic to Agile:
 - You want access to both Feature and Epic portfolio backlogs to organize your work items
 - Your organization is requiring everyone to standardize their tracking with a customized inherited process based on the Agile process.
 
-[!INCLUDE [temp](../_shared/change-process-manual-steps.md)]
+[!INCLUDE [temp](../includes/change-process-manual-steps.md)]
 
 <!--- QUESTION: What happens to Analytics data when you do this change?  -->
 
-[!INCLUDE [temp](../_shared/prerequisites-change-process.md)]
+[!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 ## Change the process
 
@@ -136,7 +134,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/change-process/change-type-to-user-story.png)
 
-   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/remove-delete-work-items.md#change-the-work-item-type).
+   For more details, see [Move, change, or delete work items, Change the work item type](../../../boards/backlogs/move-change-type.md#change-type).
 
    Choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
 

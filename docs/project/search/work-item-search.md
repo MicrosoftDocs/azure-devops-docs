@@ -2,19 +2,17 @@
 title: Search for work items across your projects
 description: Learn how to use Work Item Search across all work item fields and all projects in Azure DevOps and TFS
 ms.assetid: 133EF8B9-B4F9-4057-9CB3-E745A7E0B8F5
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 08/19/2019
 monikerRange: '>= tfs-2017'
 ---
 
 # Search for work items
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 Work Item Search provides fast and flexible search across all your work items over all your projects. 
 
@@ -28,12 +26,12 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
 1. Open the **Azure Boards** section in Azure DevOps (see [Web portal navigation](../navigation/index.md)).
 
-2. Choose the ![start search icon](media/_shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
+2. Choose the ![start search icon](media/shared/start-search-icon-new.png) icon at the top right of the window to show the search textbox.
 
    ![The Work Item Search textbox in the title bar](media/work-item-search-get-started/show-search-box.png)    
 
 3. Enter a search string in the textbox, and select _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon-new.png) icon) to start your search. 
+   ![start search icon](media/shared/start-search-icon-new.png) icon) to start your search. 
 
    Access your recently visited boards, backlogs, queries, and sprints. 
 
@@ -56,7 +54,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    say _Search code_. In this case, use the drop down selector to change it. 
 
 3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](media/shared/start-search-icon.png) icon) to start your search. 
 
 ::: moniker-end
 
@@ -71,7 +69,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
    say _Search code_. In this case, use the drop-down selector to change it. 
 
 3. Enter a search string in the textbox, and press _Enter_ (or choose the 
-   ![start search icon](media/_shared/start-search-icon.png) icon) to start your search. 
+   ![start search icon](media/shared/start-search-icon.png) icon) to start your search. 
 
 ::: moniker-end
 
@@ -92,7 +90,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 
    > Open the search results in a new browser tab from a search box by
    pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
-   ![start search icon](media/_shared/start-search-icon-new.png) icon.
+   ![start search icon](media/shared/start-search-icon-new.png) icon.
    In Google Chrome or Firefox, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
    to the new browser tab. 
 
@@ -124,7 +122,7 @@ See also: [Adhoc vs managed work item queries](../../boards/queries/adhoc-vs-man
 3. Widen your search across all projects, or narrow it to specific types
    and states. Use the "filter" icon to show the selector lists.
 
-   ![Showing the filter lists](media/_shared/show-filters.png)    
+   ![Showing the filter lists](media/shared/show-filters.png)    
 
 4. Select the criteria you want in the drop-down selector lists, or search across the entire organization.
 

@@ -3,7 +3,6 @@ title: Administration - Sprint 150 Update
 description: See the Sprint 150 Update for Azure DevOps administration, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 04/08/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 04/08/2019
 
 ## Features
 
-[!INCLUDE [sprint-150-update-links](../_shared/administration/sprint-150-update-links.md)]
+[!INCLUDE [sprint-150-update-links](../includes/administration/sprint-150-update-links.md)]
 
-[!INCLUDE [sprint-150-update](../_shared/administration/sprint-150-update.md)]
+[!INCLUDE [sprint-150-update](../includes/administration/sprint-150-update.md)]
 
 ## Next steps
 

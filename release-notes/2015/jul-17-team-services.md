@@ -1,7 +1,6 @@
 ---
 title: Multiple activities per team member – Jul 17
 description: VSTS release notes for July 17 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 8262711a-b981-49ea-ad6f-442ae416dfd0

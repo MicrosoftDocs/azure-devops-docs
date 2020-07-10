@@ -2,7 +2,6 @@
 title: Kubernetes integration with Azure Pipelines - Microsoft Build Announcements
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 description: The Microsoft Build conference was held on May 6 - 8 in Seattle.
@@ -20,35 +19,35 @@ Check out the [Features](#features) list below for more.
 
 General:
 
-[!INCLUDE [build-may-links](_shared/general/build-may-links.md)]
+[!INCLUDE [build-may-links](includes/general/build-may-links.md)]
 
 Azure Pipelines:
 
-[!INCLUDE [build-may-links](_shared/pipelines/build-may-links.md)]
+[!INCLUDE [build-may-links](includes/pipelines/build-may-links.md)]
 
 Azure Artifacts:
 
-[!INCLUDE [build-may-links](_shared/artifacts/build-may-links.md)]
+[!INCLUDE [build-may-links](includes/artifacts/build-may-links.md)]
 
 Administration:
 
-[!INCLUDE [build-may-links](_shared/administration/build-may-links.md)]
+[!INCLUDE [build-may-links](includes/administration/build-may-links.md)]
 
 ## General
 
-[!INCLUDE [build-may](_shared/general/build-may.md)]
+[!INCLUDE [build-may](includes/general/build-may.md)]
 
 ## Azure Pipelines
 
-[!INCLUDE [build-may](_shared/pipelines/build-may.md)]
+[!INCLUDE [build-may](includes/pipelines/build-may.md)]
 
 ## Azure Artifacts
 
-[!INCLUDE [build-may](_shared/artifacts/build-may.md)]
+[!INCLUDE [build-may](includes/artifacts/build-may.md)]
 
 ## Administration
 
-[!INCLUDE [build-may](_shared/administration/build-may.md)]
+[!INCLUDE [build-may](includes/administration/build-may.md)]
 
 ## Next steps
 

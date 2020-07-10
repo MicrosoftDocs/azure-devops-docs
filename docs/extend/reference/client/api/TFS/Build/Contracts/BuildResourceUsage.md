@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts BuildResourceUsage API | Extensions for Azure DevOps Services
 description: Data representation of a build resource usage.
 ms.assetid: 1f7f680c-c954-b1d6-f438-42cd6ec5ae45
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

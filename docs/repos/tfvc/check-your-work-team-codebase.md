@@ -3,10 +3,8 @@ title: Check in your work to the team's codebase
 titleSuffix: Azure Repos
 description: Check in your work to the team's codebase
 ms.assetid: 325ef815-f163-4b3c-8fcb-2b7faf09c83d
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

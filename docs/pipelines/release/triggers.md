@@ -2,10 +2,7 @@
 title: Release triggers for stages, branches, and pipelines
 description: DevOps CI CD - Understand triggers in Azure Pipelines
 ms.assetid: FDB5DA41-1ADA-485E-86BD-8BF147788568
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Release triggers
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -210,4 +207,4 @@ only be given to selected and approved users.
 
 ::: moniker-end
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -2,10 +2,8 @@
 title: Policy Overview | REST API Reference for Team Foundation Server
 description: Work with policies programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: c7fc7c92-075e-4bfc-8b66-9a9a5f28bdbd
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley

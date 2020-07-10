@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts Process API | Extensions for Azure DevOps Services
 description: Data representation of a process.
 ms.assetid: 2d415ad3-fb91-a243-5687-676548658e19
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

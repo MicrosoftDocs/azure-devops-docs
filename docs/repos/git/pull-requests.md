@@ -3,13 +3,11 @@ title: Review and merge code with pull requests
 titleSuffix: Azure Repos
 description:  Conduct a code review in a Git with Azure Repos or Azure DevOps Server, create a pull request.
 ms.assetid: 4C9DFD24-E894-454A-A080-DA511C90CA74
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 07/08/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -28,7 +26,7 @@ New to pull requests? Learn more about how to [get feedback with Git pull reques
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To view pull requests in a specific repository in a project, [got to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
+1. To view pull requests in a specific repository in a project, [go to that project](../../project/navigation/go-to-project-repo.md) in the web portal and select **Repos** > **Pull requests**.
 
    ![View your pull requests](media/repos-navigation/repos-pull-requests.png)
 
@@ -242,7 +240,7 @@ Add reviewers to your pull request:
 
 1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
@@ -260,7 +258,7 @@ Add reviewers to your pull request:
 
 1. Select the add button in the **Reviewers** area. ![Add button in pull requests](media/pull-requests/pr_add_icon.png)
 
-1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/accounts/add-team-members.md).
+1. Enter the name of the user or group to add to the reviewer list for the pull request. If the user isn't a member of your project, you'll need to [add them](../../organizations/security/add-users-team-project.md).
 
 1. As you enter a name or email address, a list of matching users or groups appears. Select the user or group from the list to add them as a reviewer.
 
@@ -444,7 +442,7 @@ Linked work items are also updated showing the pull request completion.
 
 ### Complete automatically
 
-Select **Set auto-complete** from the **Complete** drop-down list to complete the pull request and merge the changes as soon the meet all [branch policies](branch-policies.md).
+Select **Set auto-complete** from the **Complete** drop-down list to complete the pull request and merge the changes as soon as it meets all [branch policies](branch-policies.md).
 When the conditions satisfy branch policies, the pull request is completed. You receive an email notification. If there's a conflict or an error completing the pull request, email notifies you of the issue.
 
 Once you set auto-complete, the pull request displays a banner.
@@ -557,15 +555,13 @@ You can use a branch other than `master` for new changes or change your main lin
 
 ::: moniker range=">= azure-devops-2019"
 
-1. [Go to your project](../../project/navigation/go-to-project-repo.md) and select **Project settings**.
+1. [Navigate](../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
-1. Scroll down and select **Repositories** from the **Code** section.
+3. Select the desired new default branch.
 
-1. Select your repository and expand the branches.
+4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
-1. Select **...** next to a branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
+   ![Set default branch](media/pull-requests/set-default-branch-in-product.png)
 
 ::: moniker-end
 

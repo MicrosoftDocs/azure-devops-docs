@@ -2,12 +2,11 @@
 title: Add the Attachments control
 titleSuffix: TFS
 description: Add a file attachment control to a work item form for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: ff6ce2b2-1062-4b53-93ac-c226366281af
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 ms.topic: reference
 monikerRange: '>= tfs-2013 <= tfs-2017'
 ms.date: 05/10/2017  
@@ -15,7 +14,7 @@ ms.date: 05/10/2017
 
 # Add the Attachments control
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
 
 > [!NOTE]  
 > This topic applies to project customization for the On-premises XML process model using the old form layout. For the new form layout, see [WebLayout and Control elements](weblayout-xml-elements.md). For an overview of process models, see [Customize your work tracking experience](../customize-work.md).  

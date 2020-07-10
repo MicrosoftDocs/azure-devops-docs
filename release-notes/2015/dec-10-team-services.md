@@ -1,7 +1,6 @@
 ---
 title: Custom work item fields and more – Dec 10
 description: VSTS release notes for December 10 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 85a01555-f03d-4f49-8d8e-173db66cb79c
@@ -25,7 +24,7 @@ I’m happy to announce that, with our deployment this week, all customers now h
 
 ![Customizing a work item](media/12_10_01.png)
 
-As many of you know, we’ve been waiting quite a while to get this capability ready for VS Team Services. While we’re excited about this first step, I want to assure you that we’re far from done. Our next steps will include support for pick-list fields, state customization, HTML fields, completely custom work item types, completely custom processes, and more. You can read all about today’s updates in Justin’s [blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/08/24/adding-a-custom-field-to-a-work-item.aspx?wa=wsignin1.0).
+As many of you know, we’ve been waiting quite a while to get this capability ready for VS Team Services. While we’re excited about this first step, I want to assure you that we’re far from done. Our next steps will include support for pick-list fields, state customization, HTML fields, completely custom work item types, completely custom processes, and more. You can read all about today’s updates in Justin’s [blog post](https://devblogs.microsoft.com/devops/adding-a-custom-field-to-a-work-item/?wa=wsignin1.0).
 
 ## Work item discussion
 

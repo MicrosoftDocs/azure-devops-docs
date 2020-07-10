@@ -3,7 +3,6 @@ title: Wiki - Sprint 146 Update
 description: See the Sprint 146 feature updates for Wiki, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 01/14/2018
 ---
@@ -12,9 +11,9 @@ ms.date: 01/14/2018
 
 ## Features
 
-[!INCLUDE [sprint-146-update-links](../_shared/wiki/sprint-146-update-links.md)]
+[!INCLUDE [sprint-146-update-links](../includes/wiki/sprint-146-update-links.md)]
 
-[!INCLUDE [sprint-146-update](../_shared/wiki/sprint-146-update.md)]
+[!INCLUDE [sprint-146-update](../includes/wiki/sprint-146-update.md)]
 
 ## Next steps
 

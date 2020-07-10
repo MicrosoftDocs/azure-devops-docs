@@ -2,6 +2,8 @@
   href: ../about-teams-and-settings.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
 - name: When to add a team or project
   href: ../../projects/about-projects.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+- name: "Area & iteration paths"
+  href: ../about-areas-iterations.md
 - name: Quickstarts
   items:
   - name: Define area paths & assign to a team 
@@ -20,14 +22,12 @@
     href: ../../../boards/plans/portfolio-management.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: Configure a hierarchy of teams
     href: ../../../boards/plans/configure-hierarchical-teams.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
-- name: Concepts
-  items:
-  - name: "Area & iteration paths"
-    href: ../about-areas-iterations.md
 - name: How-to Guides
   items:    
   - name: Configure team tools
     href: ../manage-teams.md
+  - name: Rename or delete a team
+    href: ../rename-remove-team.md
   - name: Select backlog levels
     href: ../select-backlog-navigation-levels.md
   - name: Show bugs on backlogs & boards

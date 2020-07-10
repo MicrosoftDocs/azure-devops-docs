@@ -2,10 +2,8 @@
 title: Update the Agile process workflow 
 titleSuffix: TFS
 description: Update the workflow for agile projects to manually update the user story and task workflow assignments.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 88e33e19-20f5-403d-b106-b0057ebe6a19
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<=tfs-2015'
@@ -62,7 +60,7 @@ To run the **witadmin** command-line tool, you must be a member of one of the fo
   
 #### To update the workflow states and transitions for User Story  
   
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
   
 1. To export the type definition for **User Story**, enter the following command, substituting your data for the arguments that are shown here, where *CollectionURL* specifies the URL of a project collection, *ProjectName* specifies the name of a project defined within the collection, and "*DirectoryPath*\\*FileName*.xml" specifies the name and location for the file to export. Then press Enter.  
   

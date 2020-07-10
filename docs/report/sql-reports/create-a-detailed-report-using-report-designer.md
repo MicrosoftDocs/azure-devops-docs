@@ -1,12 +1,10 @@
 ---
 title: Create a Detailed Report using Report Designer
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 description: Understand how to track team's progress by creating reports that contain detailed information - Team Foundation Server 
 ms.assetid: 073c4d96-8525-40fc-8fd6-944d161acc2d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -16,7 +14,7 @@ ms.date: 10/17/2017
 
 # Create a Detailed Report using Report Designer
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can track your team's progress more easily by creating reports that contain detailed information from Visual Studio Application Lifecycle Management (ALM) (TFS). For example, you can create a report that includes details such as titles of work items. To create this type of report, you can use SQL Server's Report Designer and the relational database of the TFS data warehouse.  
   

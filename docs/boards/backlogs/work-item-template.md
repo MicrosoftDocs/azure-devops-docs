@@ -1,11 +1,9 @@
-﻿---
+---
 title: Use work item templates to update stories, & more
 titleSuffix: Azure Boards   
 description: Add and manage work item templates to pre-populate fields in work item forms in Azure DevOps, Team Foundation Server, and Visual Studio
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9b575c05-16f3-4027-aa5a-67b017a0089d
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -67,7 +65,7 @@ The steps to capture a work item differ based on the platform, version, and clie
 2. Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu. Choose **Templates** and then **Capture**.   
 
     > [!div class="mx-imgBorder"]  
-    > ![Capture work item field definitions as a template, vsts](media/templates/wi-templates-capture-bug-vsts-s136.png) 
+    > ![Capture work item field definitions as a template, latest version](media/templates/wi-templates-capture-bug-vsts-s136.png) 
 
     Name the template, select the team for which you want to save it under, and optionally define or clear fields. Save the template when finished. 
 
@@ -178,11 +176,11 @@ The main method for adding a work item using a template is to open the template 
 1. Go to **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+    > ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
     Expand **Boards** and choose **Team configuration**.  Then, choose **Templates**.
 
-1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link the team dashboard](#markdown-widget).  
+1. Copy the link to a shared network or send to your team via email. Also, consider [adding a link to the team dashboard](#markdown-widget).  
 
 2. Use the URL whenever you want to add a work item of the type you've defined with its predefined values.  
 
@@ -395,7 +393,7 @@ You manage templates from  team settings. All templates are defined for a team. 
     Choose **Project Settings**.
 
     > [!div class="mx-imgBorder"]  
-    > ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+    > ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
     Expand **Boards** and choose **Team configuration**. If you need to switch to a different team, use the team selector.
 

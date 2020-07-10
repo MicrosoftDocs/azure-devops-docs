@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces PageContext API | Extensions for Azure DevOps Services
 description: Global context placed on each VSSF web page (through json island data) which gives enough information for core TypeScript modules/controls on the page to operate
 ms.assetid: 9a3b5883-8245-6560-dbd9-ea56b6d2c802
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

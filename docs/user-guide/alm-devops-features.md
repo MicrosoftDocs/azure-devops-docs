@@ -2,11 +2,9 @@
 title: Feature overview for Azure DevOps
 titleSuffix: Azure DevOps 
 description: Comprehensive index to all features for Azure DevOps
-ms.prod: devops
 ms.technology: devops-new-user  
 ms.article: quickstart
 ms.assetid: 330E6DA5-3DC9-432D-B3CA-BF999F151733
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: reference
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # What are the features in Azure DevOps?
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Learn about all the features available to help you plan and track your projects and code, build, test, and release your software applications in Azure DevOps.  
 
@@ -55,7 +53,7 @@ Use features supported by these familiar clients to manage your project and illu
 <p>Add members to your project adds them to the Contributor group. When managing a large group of users, use <a href="../organizations/security/permissions.md" data-raw-source="[built-in groups to manage users and their permissions](../organizations/security/permissions.md)">built-in groups to manage users and their permissions</a>.</p>
 <br/>
 <p><b>Add team members </b></p>
-<p>To share and contribute to your project, add users to <a href="../organizations/accounts/add-team-members.md" data-raw-source="[Azure DevOps Services](../organizations/accounts/add-team-members.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
+<p>To share and contribute to your project, add users to <a href="../organizations/security/add-users-team-project.md" data-raw-source="[Azure DevOps Services](../organizations/security/add-users-team-project.md)">Azure DevOps Services</a> or your <a href="../organizations/settings/add-teams.md#add-team-members" data-raw-source="[TFS](../organizations/settings/add-teams.md#add-team-members)">TFS</a>.</p>
 <img src="media/features/alm-feature-manage-members.png" alt="Manage users, add team members"/><br/><br/>
 
 <p><b>Azure Active Directory (Azure AD) (Azure DevOps Services)</b></p>
@@ -1026,7 +1024,7 @@ Use features supported by these familiar clients to manage your project and illu
 
 
 <p><b>Gated check-in (TFVC, Azure DevOps Services) </b></p>
-<p>Use <a href="../pipelines/build/triggers.md#gated" data-raw-source="[gated check-in](../pipelines/build/triggers.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
+<p>Use <a href="../pipelines/repos/tfvc.md#gated" data-raw-source="[gated check-in](../pipelines/repos/tfvc.md#gated)">gated check-in</a> to protect against breaking changes when checking code into TFVC.  </p>
 
 
 <p><b>Branch policies (Git)</b></p>
@@ -1048,7 +1046,7 @@ pipelines\tasks\build\media
 <p><img src="../pipelines/tasks/build/media/publish-build-artifacts.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/index-sources-publish-symbols.md" data-raw-source="[Index source code and publish symbols](../pipelines/tasks/build/index-sources-publish-symbols.md)">Index source code and publish symbols</a></p>
 <p><img src="../pipelines/tasks/build/media/maven.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/maven.md" data-raw-source="[Build with Apache Maven](../pipelines/tasks/build/maven.md)">Build with Apache Maven</a></p>
 <p><img src="../pipelines/tasks/build/media/msbuild.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/msbuild.md" data-raw-source="[Build with MSbuild](../pipelines/tasks/build/msbuild.md)">Build with MSbuild</a></p>
-<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://go.microsoft.com/fwlink/?LinkId=620063" data-raw-source="[SonarQube for MSbuild](https://go.microsoft.com/fwlink/?LinkId=620063)">SonarQube for MSbuild</a></p>
+<p><img src="../pipelines/tasks/build/media/sonarqube.png" alt=""/>&#160;&#160;<a href="https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/" data-raw-source="[SonarQube for MSbuild](https://devblogs.microsoft.com/devops/build-tasks-for-sonarqube-analysis/)">SonarQube for MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/visual-studio-build.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/visual-studio-build.md" data-raw-source="[Visual Studio and MSbuild](../pipelines/tasks/build/visual-studio-build.md)">Visual Studio and MSbuild</a></p>
 <p><img src="../pipelines/tasks/build/media/xamarin-android.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-android.md" data-raw-source="[Build an Android app with Xamarin](../pipelines/tasks/build/xamarin-android.md)">Build an Android app with Xamarin</a> </p>
 <p><img src="../pipelines/tasks/build/media/xamarin-ios.png" alt=""/>&#160;&#160;<a href="../pipelines/tasks/build/xamarin-ios.md" data-raw-source="[Build an iOS app with Xamarin on macOS](../pipelines/tasks/build/xamarin-ios.md)">Build an iOS app with Xamarin on macOS</a> </p>
@@ -1760,7 +1758,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 <ul>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[English](https://msdn.microsoft.com/library/fda2bad5.aspx)">English</a></li>
-<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Brazilian Portuguese</a></li>
 <li><a href="https://msdn.microsoft.com/v/library/fda2bad5.aspx" data-raw-source="[Chinese Simplified](https://msdn.microsoft.com/v/library/fda2bad5.aspx)">Chinese Simplified</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Chinese Traditional](https://msdn.microsoft.com/library/fda2bad5.aspx)">Chinese Traditional</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Czech](https://msdn.microsoft.com/library/fda2bad5.aspx)">Czech</a></li>
@@ -1770,6 +1767,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Japanese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Japanese</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Korean](https://msdn.microsoft.com/library/fda2bad5.aspx)">Korean</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Polish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Polish</a></li>
+<li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Brazilian Portuguese](https://msdn.microsoft.com/library/fda2bad5.aspx)">Portuguese (Brazil)</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Russian](https://msdn.microsoft.com/library/fda2bad5.aspx)">Russian</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Spanish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Spanish</a></li>
 <li><a href="https://msdn.microsoft.com/library/fda2bad5.aspx" data-raw-source="[Turkish](https://msdn.microsoft.com/library/fda2bad5.aspx)">Turkish</a></li>
@@ -1785,7 +1783,6 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Install the <a href="https://www.microsoft.com/download/details.aspx?id=48157" data-raw-source="[language pack](https://www.microsoft.com/download/details.aspx?id=48157)">language pack</a> to <a href="https://msdn.microsoft.com/library/ms246590.aspx" data-raw-source="[switch the UI display to different languages](https://msdn.microsoft.com/library/ms246590.aspx)">switch the UI display to different languages</a>.  Visual Studio provides localized UI support for these 14 languages.</p>
 <ul>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">English</a></li>
-<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Brazilian Portuguese</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Simplified</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Chinese Traditional</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Czech</a></li>
@@ -1795,6 +1792,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Japanese</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Korean</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Polish</a></li>
+<li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Portuguese (Brazil)</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Russian</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Spanish</a></li>
 <li><a href="https://msdn.microsoft.com/library/dd831853.aspx">Turkish</a></li>
@@ -1894,7 +1892,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Distribute mobile apps for testing, collect user metrics and feedback, and respond to crashes more easily by <a href="https://visualstudio.microsoft.com/app-center/" data-raw-source="[adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows](https://visualstudio.microsoft.com/app-center/)">adding HockeyApp to your Agile, continuous integration, and continuous delivery workflows</a>. </p>
 
 <p><b>Simplified distribution </b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution" data-raw-source="[Manage distribution of development and production versions of your apps](https://support.hockeyapp.net/kb/app-management-2/how-to-organize-development-and-production-apps-for-distribution)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
+<p><a href="https://docs.microsoft.com/appcenter/distribution/" data-raw-source="[Manage distribution of development and production versions of your apps](https://docs.microsoft.com/appcenter/distribution/)">Manage distribution of development and production versions of your apps</a> and use independent bundle identifiers that can run in parallel on the same device.</p>
 
 
 <p><b>Integrate with Azure DevOps Services and TFS</b></p>
@@ -1920,19 +1918,19 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <td width="33%">
 
 <p><b>Invite or recruit testers</b></p>
-<p><a href="http://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers" data-raw-source="[Invite beta testers and distribute your beta versions](https://support.hockeyapp.net/kb/app-management-2/how-to-invite-beta-testers)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
+<p><a href="https://docs.microsoft.com/appcenter/dashboard/" data-raw-source="[Invite beta testers and distribute your beta versions](https://docs.microsoft.com/appcenter/dashboard/)">Invite beta testers and distribute your beta versions</a> through the dashboard.</p>
 
 
 <p><b>Usage</b></p>
-<p><a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board" data-raw-source="[Get advanced metrics](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-with-status-board)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
+<p><a href="https://docs.microsoft.com/appcenter/analytics/event-metrics" data-raw-source="[Get advanced metrics](https://docs.microsoft.com/appcenter/analytics/event-metrics)">Get advanced metrics</a> to understand the testing performed on your app. See which devices were tested, which testers used the app for how long, and which language was tested. </p>
 
 <p><b>Crash reports</b></p>
-<p>Get the information you need to analyze and respond to crashes by getting <a href="http://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports" data-raw-source="[symbolicated stack traces and environment details](https://support.hockeyapp.net/kb/app-management-2/what-data-is-collected-with-crash-reports)">symbolicated stack traces and environment details</a>.
+<p>Get the information you need to analyze and respond to crashes by getting <a href="https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics" data-raw-source="[symbolicated stack traces and environment details](https://docs.microsoft.com/appcenter/diagnostics/enabling-diagnostics)">symbolicated stack traces and environment details</a>.
  </p>
 
 
 <p><b>Webhooks</b></p>
-<p>Use webhooks to <a href="http://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://support.hockeyapp.net/kb/third-party-bug-trackers-services-and-webhooks/how-to-use-hockeyapp-webhooks)">receive notifications about new versions, crash groups, and feedback</a>. </p>
+<p>Use webhooks to <a href="https://docs.microsoft.com/appcenter/dashboard/webhooks/" data-raw-source="[receive notifications about new versions, crash groups, and feedback](https://docs.microsoft.com/appcenter/dashboard/webhooks/)">receive notifications about new versions, crash groups, and feedback</a>. </p>
 
 
 </td>
@@ -1964,7 +1962,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>To view and quickly navigate to teams, team projects, branches, work items, pull requests and other objects that are relevant to you, use your <a href="../project/navigation/work-across-projects.md" data-raw-source="[Project page](../project/navigation/work-across-projects.md)">Project page</a>. </p>
 
 <p><b>Your profile and preferences</b></p>
-<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[set alerts](../boards/queries/alerts-and-notifications.md)">set alerts</a>, and log-in or out.</p>
+<p>Choose your name to access <a href="../organizations/settings/set-your-preferences.md" data-raw-source="[your profile settings](../organizations/settings/set-your-preferences.md)">your profile settings</a>, set preferences, <a href="../repos/git/command-prompt.md#pat" data-raw-source="[create personal access tokens (Azure DevOps Services)](../repos/git/command-prompt.md#pat)">create personal access tokens (Azure DevOps Services)</a>, <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[set alerts](../notifications/manage-your-personal-notifications.md)">set alerts</a>, and log-in or out.</p>
 <img src="media/features/alm-index-my-profile-menu.png" alt="Profile drop down menu"/><br/><br/>
 
 <p><b>Switch team context</b></p>
@@ -1988,7 +1986,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <p>Provide team guidance through <a href="../project/wiki/markdown-guidance.md" data-raw-source="[Welcome](../project/wiki/markdown-guidance.md)">Welcome</a> (Markdown format) pages and add team <a href="../report/dashboards/dashboards.md" data-raw-source="[dashboards](../report/dashboards/dashboards.md)">dashboards</a> to monitor progress and trends. </p>
 
 <p><b>Code</b></p>
-<p>Manage source code using distributed <a href="../repos/git/index.md" data-raw-source="[Git repositories](../repos/git/index.md)">Git repositories</a> or <a href="../repos/tfvc/index.md" data-raw-source="[Team Foundation version control](../repos/tfvc/index.md)">Team Foundation version control</a>.  to </p>
+<p>Manage source code using distributed <a href="../repos/git/index.yml" data-raw-source="[Git repositories](../repos/git/index.yml)">Git repositories</a> or <a href="../repos/tfvc/index.yml" data-raw-source="[Team Foundation version control](../repos/tfvc/index.yml)">Team Foundation version control</a>.  to </p>
 
 <p><b>Work</b></p>
 <p>Plan and track work by <a href="../boards/backlogs/create-your-backlog.md" data-raw-source="[creating a product backlog](../boards/backlogs/create-your-backlog.md)">creating a product backlog</a>, and managing work using <a href="../boards/boards/kanban-basics.md" data-raw-source="[Kanban](../boards/boards/kanban-basics.md)">Kanban</a> or <a href="../boards/sprints/assign-work-sprint.md" data-raw-source="[Scrum](../boards/sprints/assign-work-sprint.md)">Scrum</a> processes. Find work items you want to review or update by <a href="../boards/queries/using-queries.md" data-raw-source="[creating queries](../boards/queries/using-queries.md)">creating queries</a>, or visualize progress by <a href="../report/dashboards/charts.md" data-raw-source="[creating query-based charts](../report/dashboards/charts.md)">creating query-based charts</a>  </p>
@@ -2556,7 +2554,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 
 
 <p><b>Team alerts</b></p>
-<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../boards/queries/alerts-and-notifications.md" data-raw-source="[receive email notifications for alerts](../boards/queries/alerts-and-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
+<p>As changes occur to work items, code reviews, source control files, and builds, your team can automatically <a href="../notifications/manage-your-personal-notifications.md" data-raw-source="[receive email notifications for alerts](../notifications/manage-your-personal-notifications.md)">receive email notifications for alerts</a> that you define.  </p>
 
 
 <p><b>Team rooms</b></p>

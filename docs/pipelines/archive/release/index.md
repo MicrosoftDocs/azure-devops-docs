@@ -3,10 +3,7 @@ title: Version selector for Microsoft Release Management
 ms.custom: seodec18
 description: Version selector for Microsoft Release Management for Visual Studio, Azure Pipelines, and Team Foundation Server
 ms.assetid: 8E6798F6-F900-461F-950F-5AC8FC457FC7
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: overview
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018

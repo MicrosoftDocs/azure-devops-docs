@@ -1,11 +1,8 @@
 ---
 title: Build and test Ruby apps
 description: Automatically build and test Ruby apps with Azure Pipelines, Azure DevOps
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 61052605-ec85-45ca-b57e-8664cd41c0ea
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.reviewer: dastahel
@@ -64,7 +61,7 @@ Add the [Use Ruby Version](../tasks/tool/use-ruby-version.md) task to set the ve
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/ruby
 pool:
-  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
 
 steps:
 - task: UseRubyVersion@0

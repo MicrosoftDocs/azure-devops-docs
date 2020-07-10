@@ -3,10 +3,8 @@ title: Work with large files in your Git repo
 titleSuffix: Azure Repos
 description: Recommendations on how to manage large binary files in Git, Visual Studio, and Team Foundation Server.
 ms.assetid: 57ad13a3-9178-4f31-b776-79f32b1afa58
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
@@ -78,7 +76,7 @@ The benefit of Git LFS is that your team can use the familiar end to end Git wor
 LFS files can be as big as you need them to be.
 Additionally, as of version 2.0, Git LFS supports [file locking](https://github.com/git-lfs/git-lfs/wiki/File-Locking) to help your team work on large, undiffable assets like videos, sounds, and game maps.
 
-Git LFS is [is fully supported and free in Azure DevOps Services](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/).
+Git LFS is [is fully supported and free in Azure DevOps Services](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/).
 To use LFS with Visual Studio, you need at least [Visual Studio 2015 Update 2](/visualstudio/releasenotes/vs2017-relnotes).
 Just follow the [instructions to install the client](https://git-lfs.github.com/), set up LFS tracking for files on your local repo, and then push your changes to Azure Repos.
 

@@ -3,10 +3,8 @@ title: Disable the data warehouse and cube
 titleSuffix: TFS
 description: Disable the data warehouse and cube for Team Foundation Server 
 ms.assetid:   
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= tfs-2013 <= azure-devops-2019" 
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Disable the data warehouse and cube
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Follow the steps below to disable the data warehouse and cube on your Azure DevOps Server instance.
 

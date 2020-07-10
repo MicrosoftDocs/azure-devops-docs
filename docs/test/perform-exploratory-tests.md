@@ -2,10 +2,8 @@
 title: Exploratory test your web app
 description: Test tools - Exploratory test your web app in Azure DevOps from your web browser with the Microsoft Test & Feedback extension
 ms.assetid: 1426e139-c7d4-4270-8db7-af7d6da80574
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 06/02/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Install the Test &amp; Feedback extension
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 The **Test &amp; Feedback extension** helps teams perform exploratory testing and provide feedback. 
 Everyone in the team, such as developers, product owners, managers, UX or UI engineers, 
@@ -22,7 +20,7 @@ marketing teams, early adopters, and other stakeholders can use the
 extension to submit bugs or provide feedback and contribute to the 
 quality of your product. 
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="installext"></a>
 
@@ -68,7 +66,7 @@ update it automatically.
 ##  Select an exploratory testing mode
 
 1. Open the extension you installed in your browser by choosing the
-   ![Test and Feedback](media/_shared/exp-test-icon.png) icon.
+   ![Test and Feedback](media/shared/exp-test-icon.png) icon.
 
    ![Open extension](media/perform-exploratory-tests/open-extension.png)
  

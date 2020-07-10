@@ -2,11 +2,9 @@
 title: Customize backlogs and boards 
 titleSuffix: Azure DevOps Services 
 description: Modify the work item types that appear on backlogs and boards, add portfolio backlogs for the Inheritance process model 
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 4B6014AA-5CD8-47B9-A1E3-BFB0CCA721AF  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Customize your backlogs or boards (Inheritance process)  
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]    
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]    
 
 You can customize your backlogs to add more levels or add custom work item types (WITs) to them. As shown below, we've added a third level portfolio backlog labeled *Initiatives* which tracks the custom *Initiative* WIT, and we've renamed the product backlog to *Stories and Tickets* to indicate that we not only track *User Stories*, but also *Customer Tickets* on the product backlog. 
  
@@ -25,7 +23,7 @@ You can customize your backlogs to add more levels or add custom work item types
 
 Your project defines two portfolio backlogs: Features and Epics. However, if you need one or more additional portfolio backlogs, you can add them.   
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 
 Portfolio backlogs are useful for organizing your backlog under various business initiatives and user scenarios. When you [organize your backlogs into portfolios](../../../boards/backlogs/organize-backlog.md), you can gain a hierarchical view of the work defined in lower-level backlogs, including work in progress across several teams. Program managers can track the status of those backlog items of interest and drill down to ensure that all work is represented.  
@@ -35,11 +33,11 @@ To learn more about what you can customize, see [About process customization and
 > [!NOTE]   
 > You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog.   
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
  
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
 
 
 <a id="portfolio-backlogs">  </a>
@@ -74,21 +72,19 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Edit, rename, or delete a portfolio backlog 
 
-Open the context menu of a portfolio backlog that you've added to edit, rename, or delete it. From the Backlog levels page, open the Add portfolio backlog dialog. 
+From the Backlog levels page, choose the ![](../../../media/icons/actions-icon.png)  context menu of a portfolio backlog to edit, rename, or delete it.  
 
 > [!NOTE]    
-> You can't add an inherited WIT to any backlog level. 
+> You can't add an inherited work item type to any backlog level. 
 
-<img src="media/process/process-portfolio-backlog-context-menu.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
 
 Deleting a backlog level removes the backlog and board associated with the level for all teams, including customizations made to them. The work items defined with the associated work item types are not deleted or affected in any way. 
 
-<img src="media/process/process-edit-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-portfolio-backlog-dialog.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited WIT from the Epics or Features portfolio backlogs. 
-
-
+> You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs.  
 
 <a id="edit-product-backlog">  </a>
 
@@ -110,7 +106,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
 
 ## Edit the iteration backlog 
 
-The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and task boards. The default WIT for all processes is Task.  
+The Iteration backlog, also referred to as the sprint backlogs, defines the WITs that are displayed on the sprint backlogs and Taskboards. The default WIT for all processes is Task.  
 
 For the iteration backlog, you can add WITs and change the default WIT. Open the Edit backlog dialog from the context menu for the Iteration backlog. 
 
@@ -124,11 +120,13 @@ Here, we've added the *Ticket* WIT which is tracked along with tasks.
 
 ## Related articles  
 
-- [Add a custom work item type](add-custom-wit.md)
-- [Customize a project using an inherited process](customize-process.md) 
-- [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)    
-- [Create your backlog](../../../boards/backlogs/create-your-backlog.md)
-- [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
+
+- [Add a custom work item type](add-custom-wit.md)  
+- [Customize a project using an inherited process](customize-process.md)  
+- [Backlogs, boards, and plans](../../../boards/backlogs/backlogs-boards-plans.md)  
+- [Create your backlog](../../../boards/backlogs/create-your-backlog.md)  
+- [Organize your backlog, work with portfolio backlogs](../../../boards/backlogs/organize-backlog.md)  
 
 
 

@@ -3,10 +3,8 @@ title: Add, rename, delete, and manage team dashboards
 titleSuffix: Azure DevOps  
 description: View progress and trends by defining dashboards in Azure DevOps & Team Foundation Server 
 ms.custom: "dashboards, seodec18" 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: B080CEFA-4D94-44B2-99E3-0E3E85616D04  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -16,7 +14,7 @@ ms.date: 12/12/2019
 
 # Add, rename, and delete dashboards in Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)] 
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
 ::: moniker range="azure-devops"
 
@@ -51,7 +49,7 @@ When a project is first created, a default team and default team dashboard is cr
 > For information on SharePoint dashboards, see [Project portal dashboards](../sharepoint-dashboards/project-portal-dashboards.md).
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/dashboard-prerequisites.md)]  
+[!INCLUDE [temp](../includes/dashboard-prerequisites.md)]  
 
 
 

@@ -3,7 +3,6 @@ title: Create your backlog and tasks using Microsoft Project
 titleSuffix: Azure Boards
 description: Add items, plan, order, and estimate your backlog of deliverables in Azure Boards or Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: be5cef4f-755f-4ffe-8dd7-876d1e02c330
 ms.manager: mijacobs 
 ms.author: kaelli
@@ -16,11 +15,11 @@ ms.date: 08/15/2019
 
 # Create your backlog and tasks using Microsoft Project 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2013-2018.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2013-2018.md)]
 
 If Microsoft Project is your preferred tool for tracking projects, you can use it to create and update work items. Create your backlog, schedule tasks, assign resources, and track work in Project and have it also tracked in Azure Boards or Azure DevOps Server. You can use Project while your development team uses the tools they prefer, all while sharing information transparently.
 
-[!INCLUDE [temp](../../_shared/deprecate-project.md)]
+[!INCLUDE [temp](../../includes/deprecate-project.md)]
 
 Working in Project is similar to publishing and refreshing work items using [Office Excel](bulk-add-modify-work-items-excel.md), with a few differences as described [later in this article](#differences).
 
@@ -69,7 +68,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    > The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+3. In Project, start with a blank worksheet. If you don't see the **Team** ribbon see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    > If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -145,7 +144,7 @@ To learn more about compatibility requirements, see [Azure DevOps client compati
    > [!NOTE]    
    >The only way to get the Team Foundation plug-in is by installing one of the latest editions of Visual Studio or the TFS Standalone Office Integration installer. TFS Office Integration 2015 supports connection to Azure Boards and TFS from Excel, Project, and the PowerPoint-based storyboarding tool. 
 
-1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [TFS-Office integration issues](tfs-office-integration-issues.md). 
+1. In Project, start with a blank worksheet. If you don't see the **Team** ribbon (or the **Team** menu if you use Project 2007) see step 2 or [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
    > [!TIP]  
    >If you want to first import a list or tree of work items you've already defined, follow steps 3 and 4 under [Bulk add or modify work items with Excel, Add work items](bulk-add-modify-work-items-excel.md#add-work-items). In the New list dialog, select the **Query** that contains the work items you want to import. 
@@ -311,7 +310,7 @@ You can manage your project plan using Project and all the features that Project
 - [Create your backlog](../create-your-backlog.md)
 - [Azure DevOps Service and TFS compatibility](/azure/devops/server/requirements) 
 
-If the Team ribbon fails to appear, see [TFS-Office integration issues](tfs-office-integration-issues.md). 
+If the Team ribbon fails to appear, see [Azure DevOps-Office integration issues](tfs-office-integration-issues.md). 
 
 ### Delete work items
 

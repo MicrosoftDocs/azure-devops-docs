@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Create a branch, commit, or pull request & automatically link work items with source control branches, builds, commits, or other code development actions  
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: BD7CE3C1-9E15-4BD6-B9CD-F78569C74D0D  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -16,7 +14,7 @@ ms.date: 12/04/2018
 
 # Drive Git development from a work item   
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
@@ -53,7 +51,7 @@ The Development section records all Git development processes that support compl
 
 From it, you can quickly access branches, pull requests, and commits which are linked to the work item. Also, you can initiate a pull request for a branch you've created or linked to from the work item.  
 
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]
 
 
 <a id="git-development">  </a>
@@ -167,9 +165,9 @@ Learn more about tracking work with work items and developing with Git from thes
 ::: moniker range="azure-devops"
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md) 
+- [Git overview](../../repos/git/index.yml) 
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md) 
-- [TFVC overview](../../repos/tfvc/overview.md)  
+- [TFVC overview](../../repos/tfvc/index.yml)  
 - [Create your backlog](create-your-backlog.md)   
 
 ::: moniker-end
@@ -177,8 +175,8 @@ Learn more about tracking work with work items and developing with Git from thes
 ::: moniker range="<= azure-devops-2019"
 
 - [Add work items](add-work-items.md)  
-- [Git overview](../../repos/git/overview.md)  
-- [TFVC overview](../../repos/tfvc/overview.md)  
+- [Git overview](../../repos/git/index.yml)  
+- [TFVC overview](../../repos/tfvc/index.yml)  
 - [Create your backlog](create-your-backlog.md)   
 
 ::: moniker-end

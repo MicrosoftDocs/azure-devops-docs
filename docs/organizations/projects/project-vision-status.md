@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: View or update your project home page to share project vision, objectives, and activity for Azure DevOps
 ms.topic: quickstart
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: A9ED2BF5-BD0B-4114-A7BD-693C5D747E16
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= tfs-2015'
@@ -15,7 +13,7 @@ ms.date: 03/26/2019
 
 # Quickstart: Share your project vision, view project activity
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
 In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
@@ -53,7 +51,7 @@ If you haven't set up your project summary yet, you'll see this welcome page:
 
 Select one of the following tasks to get started:
 
-- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). Note, you can only invite users who have already been [added to your organization](../../organizations/accounts/add-team-members.md).
+- **Invite** to begin [adding others to your project](../../organizations/security/add-users-team-project.md). You can only invite users who have already been [added to your organization](../security/add-users-team-project.md#add-users-to-a-project)).
 - **Boards** to begin [adding work items](../../boards/work-items/view-add-work-items.md).
 - **Repos** to open [Repos>Files](../../repos/git/clone.md) page where you can clone or import a repository, or [initialize a README file](#initialize-a-readme-file-for-a-git-repo) for your project summary page.
 - **Pipelines** to start [defining a pipeline](../../pipelines/index.yml).
