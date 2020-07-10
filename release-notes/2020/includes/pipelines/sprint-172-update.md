@@ -8,7 +8,7 @@ ms.topic: include
 
 ### Exclusive deployment lock policy
 
-With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Subsequent runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.<br />
+With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Subsequent runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.  
 
 <img src="../../media/172-pipelines-0-0.png" width="500">
 
@@ -42,7 +42,7 @@ Here are the steps to configure the webhook triggers:
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
     - **Webhook Name**: The name of the webhook should match webhook created in your external service.
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
-    - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key
+    - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key  
 
 <img src="../../media/172-pipelines-0-1.png" width="500">
 
@@ -76,7 +76,7 @@ It can be confusing when pipeline triggers fail to execute as you expect them to
 Resource triggers can fail to execute for two reasons.
 
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
-2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.
+2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
 
 <img src="../../media/172-pipelines-0-2.png" width="500">
 
