@@ -29,7 +29,7 @@ When you change to a different default branch, other parts of your workflow may 
 You'll need to take these parts into account when you're planning a change.
 
 ### Pipelines
-Update the CI triggers for all pipelines.
+Update the [CI triggers](../../pipelines/build/triggers.md) for all pipelines.
 Designer pipelines can be edited in the web.
 YAML pipelines can be edited in their respective repositories.
 
@@ -45,18 +45,18 @@ Future new branches should be based on the new default.
 Some bookmarks, documents, and other non-code files which point to files in Azure Repos will need to be updated.
 The branch name for a file or directory can appear in the URL.
 
-If a URL contains a querystring for `version` (e.g. `&version=GBmaster`), then that URL should be updated.
+If a URL contains a querystring for `version` (e.g. `&version=GBmybranchname`), then that URL should be updated.
 Fortunately, most links to the default branch will not have a `version` segment and can be left as-is.
 Also, once you delete the old default branch, attempts to navigate to it will be taken to the new default anyways.
 
-## Temporary coexistence of two branches
+## Temporary mirroring
 A Git repository can only have one default branch.
 However, for a period of time, you can set up ad-hoc mirroring between your old default and your new default.
 This way, if your end users continue pushing to the old default, they won't need to re-do the work on their end.
 We'll use [Azure Pipelines](../../pipelines/overview.md) to set up this temporary mirroring.
 
 > [!NOTE]
-> This section uses language which is at odds with [Microsoft's perspective and approach](https://blogs.microsoft.com/blog/2020/06/23/addressing-racial-injustice/).
+> This section uses language which is at odds with [Microsoft's perspective](https://blogs.microsoft.com/blog/2020/06/23/addressing-racial-injustice/).
 > Specifically, the word `master` appears in several places consistent with how it's been used in Git.
 > The purpose of this topic is to explain how to switch to more inclusive language, such as `main`.
 > Avoiding all mention of `master` would make the directions much harder to understand.
