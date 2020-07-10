@@ -228,7 +228,7 @@ additionalContent:
     - title: Tools & utilities
       items:
         # Card
-        - title: Settings, security, & usage
+        - title: Settings, Security, & Usage
           links:
             - text: Security, access, & identity
               url: ./organizations/security/about-security-identity.md
@@ -253,7 +253,7 @@ additionalContent:
             - text: Auditing
               url: ./organizations/audit/azure-devops-auditing.md
           # Card
-        - title: Boards settings
+        - title: Azure Boards settings
           links:
             - text: Configure & customize Azure Boards
               url: ./boards/configure-customize.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
