@@ -10,7 +10,7 @@ ms.topic: include
 
 With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Subsequent runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.
 
-![img](../../media/172-pipelines-0-0.png)
+<img src="../../media/172-pipelines-0-0.png" width="500">
 
 ### Stages filters for pipeline resource triggers
 
@@ -44,7 +44,7 @@ Here are the steps to configure the webhook triggers:
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
     - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key
 
-![Image](../../media/172-pipelines-0-1.png)
+<img src="../../media/172-pipelines-0-1.png" width="500">
 
 3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline, and you can consume the payload data in the form of variables in your jobs.
 
@@ -78,7 +78,7 @@ Resource triggers can fail to execute for two reasons.
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
 2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.
 
-![Image](../../media/172-pipelines-0-2.png)
+<img src="../../media/172-pipelines-0-2.png" width="500">
 
 
 ### Banner for live site incidents impacting pipelines

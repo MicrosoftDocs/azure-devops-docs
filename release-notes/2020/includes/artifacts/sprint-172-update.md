@@ -12,6 +12,6 @@ We are bringing back the ability for customers to create and manage organization
 
 You can now create org-scoped feeds via the UI, by going to Artifacts -> Create Feed and choosing a type of feed within Scope. 
 
-![img](../../media/172-artifacts-0-0.png)
+<img src="../../media/172-artifacts-0-0.png" width="500">
 
 While we do recommend the usage of project-scoped feeds in alignment with the rest of Azure DevOps offerings, you can again create, manage, and use organization-scoped feeds via UI and various REST APIs. Please see our feeds documentation for more information.
