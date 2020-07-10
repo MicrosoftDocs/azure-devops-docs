@@ -172,7 +172,7 @@ fatal: repository 'XYZ' not found
 
 Follow each of these steps to troubleshoot your failing triggers:
 
-* Does the repository still exist? First, make sure it does by opening it in the Repos page.
+* Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
   * If the scope is **collection**: 
