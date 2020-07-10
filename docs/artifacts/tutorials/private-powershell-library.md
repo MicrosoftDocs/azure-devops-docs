@@ -28,8 +28,8 @@ In this tutorial, you'll learn how to use Azure Artifacts as a private PowerShel
 
 ## Prerequisites
 
-1. [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
-2. An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
+- [The NuGet CLI](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference)
+- An [Azure DevOps Services](https://azure.microsoft.com/services/devops/) account.
 
 ## Create a PAT to get command-line access to Azure DevOps Services
 
