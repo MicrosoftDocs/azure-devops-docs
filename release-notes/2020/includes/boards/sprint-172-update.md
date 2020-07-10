@@ -8,7 +8,7 @@ ms.topic: include
 
 ### State transition restriction rules
 
-After several sprints of private preview, state transition restriction rules are now generally available for all customers. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –> Active -> Resolved
+After several sprints of private preview, state transition restriction rules are now generally available for all customers. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –> Active -> Resolved<br />
 
 <img src="../../media/172-boards-3-0.png" width="500">
 
@@ -16,7 +16,7 @@ You can also create a rule to restrict state transitions by group membership. Fo
 
 ### Copy work item to copy children
 
-One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up too 100).
+One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up too 100).<br />
 
 <img src="../../media/172-boards-2-0.png" width="500">
 
@@ -39,7 +39,7 @@ Since the inception of the inheritance process model, several work item types ha
 |                      | Review |
 |                      | Risk | 
 
-Starting this sprint, we are allowing a private preview for those customers who want to enable these work items types to be available on any backlog level.
+Starting this sprint, we are allowing a private preview for those customers who want to enable these work items types to be available on any backlog level.<br />
 
 <img src="../../media/172-boards-1-0.png" width="500">
 
