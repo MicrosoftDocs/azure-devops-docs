@@ -109,7 +109,7 @@
   items:
   - name: Azure Boards settings  
     href: ../reference/index.yml
-  - name: Service hooks >>
+  - name: Service hooks 
     href: ../service-hooks/overview.md
   - name: Extensions 
     href: ../marketplace/overview.md
