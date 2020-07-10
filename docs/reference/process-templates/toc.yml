@@ -2,8 +2,6 @@
   href: index.md
 - name: Customize a process template
   href: customize-process.md
-- name: Choose a process 
-  href: /azure/devops/boards/work-items/guidance/choose-process?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Manage process templates
   href: /azure/devops/boards/work-items/guidance/manage-process-templates?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json
 - name: Changes made to process templates
