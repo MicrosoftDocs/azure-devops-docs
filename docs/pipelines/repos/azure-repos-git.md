@@ -146,11 +146,11 @@ Building pull requests from Azure Repos forks is no different from building pull
 <a name="q-a"></a>
 ## FAQ
 
-Problems related to Azure repos integration fall into three categories:
+Problems related to Azure Repos integration fall into three categories:
 
-1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
-2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
-3. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
 
 ### Failing triggers
 

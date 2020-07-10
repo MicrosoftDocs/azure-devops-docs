@@ -41,9 +41,9 @@ To set up an identical structure in Azure DevOps:
 
 1. Create an Azure DevOps organization named after your GitHub organization or user account. It will have a URL like `https://dev.azure.com/your-organization`.
 1. In the Azure DevOps organization, create projects named after your repositories. They will have URLs like `https://dev.azure.com/your-organization/your-repository`.
-1. In the Azure DevOps projects, create pipelines named after the GitHub organization and repository they build, such as `your-organization.your-repository`. Then, it's clear which repositories they're for.
+1. In the Azure DevOps Project, create pipelines named after the GitHub organization and repository they build, such as `your-organization.your-repository`. Then, it's clear which repositories they're for.
 
-Following this pattern, your GitHub repositories and Azure DevOps projects will have matching URL paths. For example:
+Following this pattern, your GitHub repositories and Azure DevOps Projects will have matching URL paths. For example:
 
 | Service      | URL                                    |
 |--------------|----------------------------------------|
@@ -86,7 +86,7 @@ GitHub repository permissions are found at `https://github.com/your-organization
 
 Azure DevOps project permissions are found at `https://dev.azure.com/your-organization/your-project/_settings/security` (replace `your-organization` and `your-project`).
 
-Equivalent permissions between GitHub repositories and Azure DevOps projects are as follows.
+Equivalent permissions between GitHub repositories and Azure DevOps Projects are as follows.
 
 | GitHub repository permission | Azure DevOps project equivalent    |
 | ---------------------------- | ---------------------------------- |
@@ -518,11 +518,11 @@ Clicking on the "Re-run" link next to the Check Run name will result in Azure Pi
 
 Problems related to GitHub integration fall into the following categories:
 
-1. **[Connection types](#connection-types):** I am not sure what connection type I am using to connect my pipeline to GitHub.
-2. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
-3. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
-4. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
-5. **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipeline did not report a status update.
+* **[Connection types](#connection-types):** I am not sure what connection type I am using to connect my pipeline to GitHub.
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+* **[Missing status updates](#missing-status-updates):** My GitHub PRs are blocked because Azure Pipeline did not report a status update.
 
 ### Connection types
 
@@ -530,12 +530,12 @@ Problems related to GitHub integration fall into the following categories:
 
 Troubleshooting problems with triggers very much depends on the type of GitHub connection you use in your pipeline. There are two ways to determine the type of connection - from GitHub and from Azure Pipelines.
 
-* From GitHub: If a repo is set up to use the GitHub app, then the statuses on PRs and commits will be Check Runs. If the repo has Azure pipelines set up with OAuth or PAT connections, the statuses will be the "old" style of statuses. A quick way to determine if the statuses are Check Runs or simple statuses is to look at the "conversation" tab on a GitHub PR. 
+* From GitHub: If a repo is set up to use the GitHub app, then the statuses on PRs and commits will be Check Runs. If the repo has Azure Pipelines set up with OAuth or PAT connections, the statuses will be the "old" style of statuses. A quick way to determine if the statuses are Check Runs or simple statuses is to look at the "conversation" tab on a GitHub PR. 
   * If the "Details" link redirects to the Checks tab, it is a Check Run and the repo is using the app. 
   * If the "Details" link redirects to the Azure DevOps pipeline, then the status is an "old style" status and the repo is not using the app.
 
 * From Azure Pipelines: You can also determine the type of connection by inspecting the pipeline in Azure Pipelines UI. Open the editor for the pipeline. Select **Triggers** to open the classic editor for the pipeline. Then, select **YAML** tab and then the **Get sources** step. You'll notice a banner **Authorized using connection:** indicating the service connection that was used to integrate the pipeline with GitHub. The name of the service connection is a hyperlink. Select it to navigate to the service connection properties. The properties of the service connection will indicate the type of connection being used:
-  * **azure pipelines app** indicates GitHub app connection
+  * **Azure Pipelines app** indicates GitHub app connection
   * **oauth** indicates OAuth connection
   * **personalaccesstoken** indicates PAT authentication
 
@@ -543,15 +543,15 @@ Troubleshooting problems with triggers very much depends on the type of GitHub c
 
 Using a GitHub app instead of OAuth or PAT connection is the recommended integration between GitHub and Azure Pipelines. To switch to GitHub app, follow these steps:
 
-* Navigate [here](https://github.com/apps/azure-pipelines) and install the app in the GitHub organization of your repository.
-* During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contain the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
-* In the next page that appears, you do not need to proceed creating a new pipeline.
-* Edit your pipeline by visiting the Pipelines page (e.g., https:\//dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
-* If this is a YAML pipeline, select the **Triggers** menu to open the classic editor.
-* Select the "Get sources" step in the pipeline.
-* On the green bar with text "Authorized using connection", click "Change" and select the GitHub App connection with the same name as the GitHub organization in which you installed the app.
-* On the toolbar, select "Save and queue" and then "Save and queue". Click the link to the pipeline run that was queued to make sure it succeeds.
-* Create (or close and reopen) a pull request in your GitHub repository to verify that a build is successfully queued in its "Checks" section.
+1. Navigate [here](https://github.com/apps/azure-pipelines) and install the app in the GitHub organization of your repository.
+2. During installation, you'll be redirected to Azure DevOps to choose an Azure DevOps organization and project. Choose the organization and project that contain the classic build pipeline you want to use the app for. This choice associates the GitHub App installation with your Azure DevOps organization. If you choose incorrectly, you can visit [this page](https://github.com/apps/azure-pipelines) to uninstall the GitHub app from your GitHub org and start over.
+3. In the next page that appears, you do not need to proceed creating a new pipeline.
+4. Edit your pipeline by visiting the Pipelines page (e.g., https:\//dev.azure.com/YOUR_ORG_NAME/YOUR_PROJECT_NAME/_build), selecting your pipeline, and clicking Edit.
+5. If this is a YAML pipeline, select the **Triggers** menu to open the classic editor.
+6. Select the "Get sources" step in the pipeline.
+7. On the green bar with text "Authorized using connection", click "Change" and select the GitHub App connection with the same name as the GitHub organization in which you installed the app.
+8. On the toolbar, select "Save and queue" and then "Save and queue". Click the link to the pipeline run that was queued to make sure it succeeds.
+9. Create (or close and reopen) a pull request in your GitHub repository to verify that a build is successfully queued in its "Checks" section.
 
 #### Why isn't a GitHub repository displayed for me to choose in Azure Pipelines?
 
@@ -575,9 +575,9 @@ Depending on the authentication type and ownership of the repository, specific p
 
 * Are you using OAuth or PAT to connect the pipeline to GitHub? See [Connection types](#connection-types) to determine the type of connection you have. If you are using a GitHub connection, follow these steps:
 
-  * OAuth and PAT connections rely on webhooks to communicate updates to Azure Pipelines. In GitHub, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist. Usually you should see three webhooks - push, pull_request, and issue_comment. If you don't, then you must re-create the service connection and update the pipeline to use the new service connection.
+  1. OAuth and PAT connections rely on webhooks to communicate updates to Azure Pipelines. In GitHub, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist. Usually you should see three webhooks - push, pull_request, and issue_comment. If you don't, then you must re-create the service connection and update the pipeline to use the new service connection.
   
-  * Select each of the webhooks in GitHub and verify that the payload that corresponds to the user's commit exists and was sent successfully to Azure DevOps. You may see an error here if the event could not be communicated to Azure DevOps.
+  2. Select each of the webhooks in GitHub and verify that the payload that corresponds to the user's commit exists and was sent successfully to Azure DevOps. You may see an error here if the event could not be communicated to Azure DevOps.
 
 * The traffic from Azure DevOps could be throttled by GitHub. When Azure Pipelines receives a notification from GitHub, it tries to contact GitHub and fetch more information about the repo and YAML file. If you have a repo with a large number of updates and pull requests, this call may fail due to such throttling. In this case, see if you can reduce the frequency of builds by using batching or stricter path/branch filters.
 

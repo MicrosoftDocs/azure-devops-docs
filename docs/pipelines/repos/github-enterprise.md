@@ -26,10 +26,10 @@ If your on-premises server is reachable from Microsoft-hosted agents, then you c
 
 The first thing to check is whether your GitHub Enterprise Server is reachable from Azure Pipelines service.
 
-* In your Azure DevOps UI, navigate to your project settings, and select **Service Connections** under **Pipelines**.
-* Select **New service connection** and choose **GitHub Enterprise Server** as the connection type.
-* Enter the required information to create a connection to your GitHub Enterprise Server.
-* Select **Verify** in the service connection panel.
+1. In your Azure DevOps UI, navigate to your project settings, and select **Service Connections** under **Pipelines**.
+2. Select **New service connection** and choose **GitHub Enterprise Server** as the connection type.
+3. Enter the required information to create a connection to your GitHub Enterprise Server.
+4. Select **Verify** in the service connection panel.
 
 If the verification passes, then the servers that run Azure Pipelines service are able to reach your on-premises GitHub Enterprise Server. You can proceed and set up the connection. Then, you can use this service connection when creating a classic build or YAML pipeline. You can also configure CI and PR triggers for the pipeline. A majority of features in Azure Pipelines that work with GitHub also work with GitHub Enterprise Server. Review the documentation for [GitHub](github.md) to understand these features. Here are some differences:
 
@@ -42,9 +42,9 @@ If the verification passes, then the servers that run Azure Pipelines service ar
 
 When the verification of a GitHub Enterprise Server connection as explained in the above section fails, then Azure Pipelines cannot communicate with your server. This is likely caused by how your enterprise network is set up. For instance, a firewall in your network may prevent external traffic from reaching your servers. You have two options in this case:
 
-1. Work with your IT department to open a network path between Azure Pipelines and GitHub Enterprise Server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the GitHub Enterprise Server so that Azure Pipelines can resolve the FQDN of your server to an IP address. With all of these changes, attempt to create and verify a GitHub Enterprise Server connection in Azure Pipelines.
+* Work with your IT department to open a network path between Azure Pipelines and GitHub Enterprise Server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the GitHub Enterprise Server so that Azure Pipelines can resolve the FQDN of your server to an IP address. With all of these changes, attempt to create and verify a GitHub Enterprise Server connection in Azure Pipelines.
 
-2. Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
+* Instead of a using a GitHub Enterprise Server connection, you can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection. Make sure to uncheck the option to **Attempt accessing this Git server from Azure Pipelines**. With this connection type, you can only configure a classic build pipeline. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
 ## Reachable from Microsoft-hosted agents
 
@@ -54,9 +54,9 @@ Another decision you possibly have to make is whether to use Microsoft-hosted ag
 
 If the simple test pipeline mentioned in the above section fails with the error `TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting`, then the GitHub Enterpriser Server is not reachable from Microsoft-hosted agents. This is again probably caused by a firewall blocking traffic from these servers. You have two options in this case:
 
-1. Work with your IT department to open a network path between Microsoft-hosted agents and GitHub Enterprise Server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
+* Work with your IT department to open a network path between Microsoft-hosted agents and GitHub Enterprise Server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
 
-2. Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the GitHub Enterprise Server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the GitHub Enterprise Server connection is resolvable from the self-hosted agents.
+* Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the GitHub Enterprise Server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the GitHub Enterprise Server connection is resolvable from the self-hosted agents.
 
 ## Azure DevOps IP addresses
 
@@ -94,9 +94,9 @@ Add the corresponding range of IP addresses to your firewall exception rules.
 
 Problems related to GitHub Enterprise integration fall into the following categories:
 
-1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
-2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
-3. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
 
 ### Failing triggers
 

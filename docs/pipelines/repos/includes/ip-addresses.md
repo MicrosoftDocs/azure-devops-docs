@@ -69,6 +69,3 @@ ms.date: 07/05/2020
     @{Name=pkgsprodcus1ip1; IpAddress=13.86.125.169}
     @{Name=pkgsprodcus1ip1ServiceTag; IpAddress=20.37.158.14}
 ```
-
-> [!NOTE] 
-> IP addresses for other regions will be listed shortly.

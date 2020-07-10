@@ -437,7 +437,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 ### My code hasn't changed, yet a scheduled build is triggered. Why?
 
-* You might have enabled an option to **always** runs a scheduled build even if there are no code changes. If you use a YAML file, verify the syntax for the schedule in the YAML file. If you use classic pipelines, verify if you checked this option in the scheduled triggers.
+* You might have enabled an option to **always** run a scheduled build even if there are no code changes. If you use a YAML file, verify the syntax for the schedule in the YAML file. If you use classic pipelines, verify if you checked this option in the scheduled triggers.
 
 * You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
 
