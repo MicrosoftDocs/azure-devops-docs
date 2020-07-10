@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/21/2020
+ms.date: 7/09/2020
 ---
 
 # Create your product backlog 
@@ -36,7 +36,7 @@ and more. Because the most important work appears at the top of the list, your t
 
 From your web browser, open your product backlog.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 

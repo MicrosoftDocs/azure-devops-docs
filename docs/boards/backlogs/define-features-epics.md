@@ -69,7 +69,7 @@ you can <a href="../../organizations/settings/select-backlog-navigation-levels.m
 
 For example, when you choose **Epics**, you'll see a list of all Epics in your team's active area paths. From there, you can drill down to see child features and backlog items.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 
