@@ -30,7 +30,7 @@ Review this article to learn:
 -->
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"  
 
 > [!IMPORTANT]   
 > This article addresses creating new branches and adding links to commits and pull requests to a Git repository hosted on Azure DevOps. To link to GitHub commits and pull requests, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md). 
@@ -162,7 +162,7 @@ Or, you can select it from the ![Links tab icon](media/icon-links-tab-wi.png) Li
 
 Learn more about tracking work with work items and developing with Git from these resources: 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"  
 
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml) 
@@ -172,7 +172,7 @@ Learn more about tracking work with work items and developing with Git from thes
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= tfs-2018"
 
 - [Add work items](add-work-items.md)  
 - [Git overview](../../repos/git/index.yml)  

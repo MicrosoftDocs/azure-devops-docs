@@ -3,7 +3,7 @@ ms.topic: include
 ---
 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 ## Display rollup progress, counts, or totals 
 

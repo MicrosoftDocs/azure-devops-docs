@@ -123,7 +123,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 Each team can customize their **Taskboard** in the following ways: 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
 - [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
@@ -140,7 +140,7 @@ Unlike the Kanban board for a product backlog, you can't add additional columns 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
@@ -179,10 +179,17 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
+
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]
+> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+::: moniker-end
+
+
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 > [!TIP]
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).
+> If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).
 
 <a id="show-item-progress">  </a>
 
