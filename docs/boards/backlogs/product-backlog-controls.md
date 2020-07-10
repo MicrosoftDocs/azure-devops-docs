@@ -1,4 +1,4 @@
-﻿---
+---
 title: Backlog controls to switch views or enable options
 titleSuffix: Azure Boards 
 description: Switch views and turn controls on or off from your product or portfolio backlogs for Azure Boards or TFS 
@@ -23,19 +23,128 @@ ms.date: 02/14/2019
 
 Once you've defined your product backlog, you can use the following controls to change or filter the view. 
 
+
+:::row:::
+   :::column span="":::
+      **Icon**
+   :::column-end:::
+   :::column span="":::
+      **Control**
+   :::column-end:::
+   :::column span="2":::
+      **Function**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      ![backlogs](../../media/icons/backlogs.png)   
+   :::column-end:::
+   :::column span="":::
+      Backlog selector
+   :::column-end:::
+   :::column span="2":::
+      [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png) 
+   :::column-end:::
+:::row-end:::
+::: moniker range=">= azure-devops-2020"
+:::row:::
+   :::column span="":::
+      ![view options](../../media/icons/view-options-icon.png)  
+   :::column-end:::
+   :::column span="":::
+      View options
+   :::column-end:::
+   :::column span="2":::
+      - [Turn Parents on/off](organize-backlog.md)  
+      - [Turn Forecasting on/off](../sprints/forecast.md)  
+      - [Turn In Progress items on/off](../sprints/forecast.md)  
+      - [Turn Completed child items on/off](../sprints/forecast.md)  
+      - [Show Mapping](organize-backlog.md)  
+      - [Show Planning](../sprints/assign-work-sprint.md)  
+        ![view options](media/controls/mapping-control-2020.png)
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+::: moniker range="azure-devops-2019"
+:::row:::
+   :::column span="":::
+      ![view options](../../media/icons/view-options-icon.png) |  |
+   :::column-end:::
+   :::column span="":::
+      View options
+   :::column-end:::
+   :::column span="2":::
+      - [Turn Parents on/off](organize-backlog.md)  
+      - [Turn Forecasting on/off](../sprints/forecast.md)  
+      - [Turn In Progress items on/off](../sprints/forecast.md)  
+      - [Show Mapping](organize-backlog.md)  
+      - [Show Planning](../sprints/assign-work-sprint.md)  
+        ![view options](media/view-options.png)
+   :::column-end:::
+:::row-end:::
+::: moniker-end
+:::row:::
+   :::column span="":::
+      ![Filter](../media/icons/filter-icon.png)  
+   :::column-end:::
+   :::column span="":::
+      Filter
+   :::column-end:::
+   :::column span="2":::
+      [Turn filtering On/Off](filter-backlogs.md)
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ![Settings icon](../../media/icons/blue-gear.png)   
+   :::column-end:::
+   :::column span="":::
+      Settings
+   :::column-end:::
+   :::column span="2":::
+      [Manage teams and configure team tools](../../organizations/settings/manage-teams.md) 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      | ![full screen](../../media/icons/full-screen-icon.png) / ![exit full screen](../../media/icons/exit-full-screen-icon.png)   
+   :::column-end:::
+   :::column span="":::
+      Full screen  
+   :::column-end:::
+   :::column span="2":::
+      Enter or exit full screen mode
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      | ![expand icon](../media/icons/expand_icon.png) / ![collapse icon](../media/icons/collapse_icon.png) 
+   :::column-end:::
+   :::column span="":::
+      Expand/Collapse
+   :::column-end:::
+   :::column span="2":::
+      Expand or collapse one level of the tree hierarchy
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ![actions](../../media/icons/actions-icon.png) 
+   :::column-end:::
+   :::column span="":::
+      Actions options 
+   :::column-end:::
+   :::column span="2":::
+      - [Set column options](set-column-options.md)  
+      - [Create query](../queries/using-queries.md)  
+      - [Email](../work-items/email-work-items.md)   
+   :::column-end:::
+:::row-end:::
+
+---
+
 ::: moniker range=">= azure-devops-2019"
-
-| Icon  | Control                  | Function              |
-|---------|------------------------|--------------------|
-| ![backlogs](../../media/icons/backlogs.png) | Backlog options  | [Switch backlog view](create-your-backlog.md)<br/>![backlogs menu](media/backlogs-menu.png)    |  
-| ![view options](../../media/icons/view-options-icon.png) | View options |- [Turn Parents on/off](organize-backlog.md)<br/>- [Turn Forecasting on/off](../sprints/forecast.md)<br/>- [Turn In Progress items on/off](../sprints/forecast.md)<br/>- [Show Mapping](organize-backlog.md)<br/>- [Show Planning](../sprints/assign-work-sprint.md)<br/>![view options](media/view-options.png) |  
-| ![Filter](../media/icons/filter-icon.png) |  Filter | [Turn filtering On/Off](filter-backlogs.md)  |   
-| ![Settings icon](../../media/icons/blue-gear.png) | Settings   | [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  |  
-| ![full screen](../../media/icons/full-screen-icon.png) / ![exit full screen](../../media/icons/exit-full-screen-icon.png)  | Full screen | Enter or exit full screen mode  |  
-| ![expand icon](../media/icons/expand_icon.png) / ![collapse icon](../media/icons/collapse_icon.png) | Expand/Collapse | Expand or collapse one level of the tree hierarchy |   
-| ![actions](../../media/icons/actions-icon.png) | Actions options |- [Set column options](set-column-options.md)<br/>-[Create query](../queries/using-queries.md)<br/>- [Email](../work-items/email-work-items.md)  |  
-
-
 
 > [!IMPORTANT]  
 > If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or in the In Progress category state won't appear in the backlog. 
