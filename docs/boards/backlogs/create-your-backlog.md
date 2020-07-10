@@ -306,6 +306,50 @@ Choose **Save & Close** when done.
 :::row-end:::
 
 
+<a id="show-hide-in-progress" />  
+
+
+## Show/hide In progress items
+
+::: moniker range=">= azure-devops-2019"
+
+From the **View options** selector, you can choose to show or hide **In Progress items**. If you turn the **In Progress** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+:::image type="content" source="media/create-backlog/in-progress-control-2020.png" alt-text="View options selector, In progress control":::
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+:::image type="content" source="media/create-backlog/in-progress-control-2019.png" alt-text="View options selector, In progress control":::
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+Choose **In progress items** show or hide **In Progress** backlog items. If you turn the **In Progress items** control off, then items that are in the *Active*, *Committed*, or *Resolved* states or states that map to the  [In Progress category state](../work-items/workflow-and-state-categories.md) won't appear in the backlog. 
+::: moniker-end
+
+You usually choose to hide **In Progress items** when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+
+
+<a id="show-hide-completed" />  
+
+::: moniker range=">= azure-devops-2020"
+
+## Show/hide Completed child items
+
+From the **View options** selector, you can choose to show or hide **Completed Child items**.   
+
+:::image type="content" source="media/create-backlog/completed-child-items-control-2020.png" alt-text="View options selector, Completed child items control":::
+
+You usually choose to show Completed child items when you want to [view rollup columns](display-rollup.md).   
+
+You usually choose to hide Completed child items when you want to forecast work. To learn more, see [Forecast your product backlog](../sprints/forecast.md).
+
+
+::: moniker-end
+
+
 ## Try this next
 
 Now that you have a working backlog in place, your team can begin work on the top-priority items. From here, it's time to decide how you want to work as a team. Do you want to use Scrum or Kanban? You can use these methods independently or together.
@@ -318,7 +362,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ## Related articles
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)

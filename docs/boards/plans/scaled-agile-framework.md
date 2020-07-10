@@ -16,7 +16,7 @@ ms.date: 05/28/2020
 
 # Implement Scaled Agile Framework&reg; 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 With many enterprises benefiting from individual Agile teams, the need to scale Agile practices as the organization grows is of greater interest. The need for enterprises to view progress of many Agile teams and across a portfolio continues to grow. To address these needs, many businesses have adopted the Scaled Agile Framework&reg; (SAFe&reg;). 
 
