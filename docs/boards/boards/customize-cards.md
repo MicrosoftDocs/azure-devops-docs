@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 06/25/2020 
+ms.date: 07/09/2020 
 ---
 
 
@@ -128,10 +128,14 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
 
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]  
+> To show the parent work item, choose the Parent field. You can't change the Parent field from the card. Instead, choosing that field opens the parent work item. You can also filter your board based on parent work items, whether the Parent field is added to cards or not.  
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
  
-As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work//add-custom-field.md). 
+As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"  

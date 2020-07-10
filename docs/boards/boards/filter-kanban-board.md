@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 06/01/2020
+ms.date: 07/09/2020
 ---
 
 # Filter your Kanban board
@@ -31,7 +31,7 @@ To filter the Kanban board, first customize the board settings so that the cards
 For example, to filter by Assign To, Iteration Path, or Work Item Type&mdash;or the contents of any other field&mdash;you add those fields to show on the cards. For details, see [Customize cards](../../boards/boards/customize-cards.md).
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, customize card fields](media/filter/filter-kb-card-field-settings-services.png)
@@ -54,14 +54,14 @@ The filter function displays work items based on any visible/displayed column or
 
 For example, here we filter the backlog to only show items that include 'Web' in any one of the displayed column fields.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter using keyword search](../boards/media/filter/filter-kb-text-web-services.png)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 < azure-devops"
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 
 ![Kanban board, Filter using keyword search](../boards/media/filter/filter-options-web.png)
 
@@ -107,7 +107,7 @@ To start filtering, choose the ![Kanban filter icon](../media/icons/kanban-filte
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Enable kanban field-based filtering](media/filter/filter-kb-choose-filter-services.png)
@@ -138,7 +138,7 @@ For example, here we filter for all items assigned to Jamal and Raisa.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](media/filter/filter-kb-filters-chosen-services.png)
@@ -179,7 +179,7 @@ Here, we choose two features on which to filter the board.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Kanban board, Filter on assignment field](media/filter/filter-kb-parent-filters-services.png)
