@@ -10,7 +10,7 @@ ms.topic: include
 
 We are bringing back the ability for customers to create and manage organization-scoped feeds through the web UI for both on-prem and hosted services. 
 
-You can now create org-scoped feeds via the UI, by going to Artifacts -> Create Feed and choosing a type of feed within Scope.<br />
+You can now create org-scoped feeds via the UI, by going to Artifacts -> Create Feed and choosing a type of feed within Scope.  
 
 <img src="../../media/172-artifacts-0-0.png" width="500">
 
