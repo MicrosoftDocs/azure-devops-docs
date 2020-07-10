@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # About dashboards, charts, reports, & widgets   
@@ -25,7 +25,7 @@ If you're just starting out, read [Add, rename, and delete dashboards](dashboard
 
 ## Key concepts
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - <strong>Dashboards</strong> are customizable interactive signboards that provide real-time information. Dashboards are associated with a team or a project and display configurable charts and widgets.
 - <strong>Charts</strong> are query-based status or trend charts derived from a work item query or test results.
@@ -393,7 +393,7 @@ With the code tile widgets, you can monitor the activity occurring within a repo
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Analytics widgets
 
@@ -440,7 +440,7 @@ Or, you can [create your own widget using the REST API](../../extend/develop/add
 
 ## In-context reports: Work tracking 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Azure Boards provides several in-context reports that derive from Analytics data. From your backlog or board, you can view the Cumulative Flow Diagram and team Velocity reports by selecting the **Analytics** tab. Each report provides interactive controls to provide each user the view of interest to them. From a Sprint backlog, you can view the sprint burndown trend. 
 
@@ -528,7 +528,7 @@ Azure Pipelines provides an in-context Test failures report, derived from Analyt
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Pipeline pass rate report
 
@@ -576,7 +576,7 @@ Learn more about the [Pipeline duration report](../../pipelines/reports/pipeline
 
 ### Add custom work tracking fields
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can add data to support reporting requirements by [adding a custom field](../../organizations/settings/work/customize-process-field.md).   
 ::: moniker-end
