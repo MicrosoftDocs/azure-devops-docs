@@ -206,8 +206,8 @@ For included branches, a build will be triggered on each push to a pull request 
 
 Problems related to BitBucket integration fall into the following categories:
 
-1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
-2. **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
 
 ### Failing triggers
 

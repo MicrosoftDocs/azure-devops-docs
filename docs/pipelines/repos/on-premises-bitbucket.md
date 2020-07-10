@@ -38,9 +38,9 @@ CI triggers work through polling and not through webhooks. In other words, Azure
 
 If the BitBucket server cannot be reached from Azure Pipelines, you have two options:
 
-1. Work with your IT department to open a network path between Azure Pipelines and on-premises Git server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the BitBucket server so that Azure Pipelines can resolve the FQDN of your server to an IP address.
+* Work with your IT department to open a network path between Azure Pipelines and on-premises Git server. For example, you can add exceptions to your firewall rules to allow traffic from Azure Pipelines to flow through. See the section on [Azure DevOps IPs](#azure-devops-ip-addresses) to see which IP addresses you need to allow. Furthermore, you need to have a public DNS entry for the BitBucket server so that Azure Pipelines can resolve the FQDN of your server to an IP address.
 
-2. You can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection but tell Azure Pipelines not to **attempt accessing this Git server from Azure Pipelines**. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
+* You can use a **[Other Git](../library/service-endpoints.md#sep-extgit)** connection but tell Azure Pipelines not to **attempt accessing this Git server from Azure Pipelines**. CI and PR triggers will not work in this configuration. You can only start manual or scheduled pipeline runs.
 
 ### Reachable from Microsoft-hosted agents
 
@@ -50,9 +50,9 @@ Another decision you possibly have to make is whether to use Microsoft-hosted ag
 
 If the simple test pipeline mentioned in the above section fails with the error `TF401019: The Git repository with name or identifier <your repo name> does not exist or you do not have permissions for the operation you are attempting`, then the BitBucket server is not reachable from Microsoft-hosted agents. This is again probably caused by a firewall blocking traffic from these servers. You have two options in this case:
 
-1. Work with your IT department to open a network path between Microsoft-hosted agents and BitBucket server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
+* Work with your IT department to open a network path between Microsoft-hosted agents and BitBucket server. See the section on [networking](../agents/hosted.md#agent-ip-ranges) in Microsoft-hosted agents.
 
-2. Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the BitBucket server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the service connection is resolvable from the self-hosted agents.
+* Switch to using [self-hosted agents](../agents/agents.md) or [scale-set agents](../agents/scale-set-agents.md). These agents can be set up within your network and hence will have access to the BitBucket server. These agents only require outbound connections to Azure Pipelines. There is no need to open a firewall for inbound connections. Make sure that the name of the server you specified when creating the service connection is resolvable from the self-hosted agents.
 
 ## Azure DevOps IP addresses
 
@@ -79,8 +79,8 @@ Allow Azure Pipelines to attempt accessing the Git server in the **Other Git** s
 
 Problems related to BitBucket Server integration fall into the following categories:
 
-1. **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
-2. **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
 
 ### Failing triggers
 

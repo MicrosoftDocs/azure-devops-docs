@@ -13,7 +13,7 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 * Is your pipeline paused or disabled? Open the editor for the pipeline, and then select **Settings** to check. If your pipeline is paused or disabled, then triggers do not work.
 
-* Are your YAML CI or PR triggers being [overridden by pipeline settings in the UI](../../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting). While editing your pipeline, choose **...** and then **Triggers**.
+* Are your YAML CI or PR triggers being [overridden by pipeline settings in the UI](../../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting)? While editing your pipeline, choose **...** and then **Triggers**.
 
   ![Pipeline settings UI.](../media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
