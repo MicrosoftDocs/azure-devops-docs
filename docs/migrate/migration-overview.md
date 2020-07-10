@@ -1,11 +1,9 @@
 ---
 title: Azure DevOps Server to Services Migration overview
 description: Overview of the high fidelity migration process from Server to Services
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
 ms.contentid: 3d6edd06-ceed-43b4-9e77-4a121864594c
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -14,7 +12,7 @@ ms.date: 12/16/2019
 
 # Migrate data from Azure DevOps Server to Azure DevOps Services  
 
-[!INCLUDE [version-azure-devops](_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
 > [!NOTE]
 > [Visual Studio Team Services (VSTS) is now Azure DevOps Services.](../user-guide/what-is-azure-devops.md#vsts)

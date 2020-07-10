@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts DtlEnvironmentDetails API | Extensions for Azure DevOps Services
 description: This is a temporary class to provide the details for the test run environment.
 ms.assetid: b437c5ea-15e9-2378-be94-4bf77ebaafa8
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

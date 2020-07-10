@@ -2,11 +2,9 @@
 title: Add a time-in-state measure to a Power BI report 
 titleSuffix: Azure DevOps
 description: Sample report that shows how to add a time-in-state measure to an existing Power BI report based on Analytics for Azure DevOps 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.assetid: 
 ms.reviewer: angurusw
-ms.manager: mijacobs
 ms.author: kaelli
 ms.topic: sample
 monikerRange: '>= azure-devops-2019'
@@ -15,7 +13,7 @@ ms.date: 04/05/2019
 
 # Calculate time-in-state for an existing Analytics view
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 The time a work item spends in a specific state or series of states is an important aspect for understanding efficiency. The Analytics widgets, [Cycle Time and Lead Time](../dashboards/cycle-time-and-lead-time.md), provide some measures of time-in-state. However, these widgets may not have the level of detail that you want. 
 
@@ -354,9 +352,12 @@ From the **Modeling** tab, choose **New Column** and then replace the default te
 > IF (
 >     ISBLANK ( 'View Name'[State Previous] ),
 >     'View Name'[Created Date].[Date] = 'View Name'[Date],
->     'View Name'[State Previous] = 'View Name'[State]
+>     'View Name'[State Previous] <> 'View Name'[State]
 > )
 > ```
+
+The calculated column is a boolean value that identifies whether the row is a state transition. By using the `Not Equal To` operator, you correctly catch rows where the previous state does not match the current state, which means the comparison returns True as expected.  
+
 
 <a id="state-flow" />
 
@@ -489,7 +490,7 @@ Additional information is provided in this section for the DAX functions used to
 
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)
-- [Get started with Power BI Desktop](/power-bi/desktop-getting-started)
+- [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Dataset design for the Power BI Connector](data-connector-dataset.md)
 - [Workflow states and state categories](/azure/devops/boards/work-items/workflow-and-state-categories)
 - [Data model for Analytics](../extend-analytics/data-model-analytics-service.md)

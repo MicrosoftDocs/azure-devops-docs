@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts CodeCoverageStatistics API | Extensions for Azure DevOps Services
 description: Represents the code coverage statistics for a particular coverage label (modules, statements, blocks, etc.)
 ms.assetid: 278a764a-6310-1a0b-06ca-9fcd6991637f
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -2,11 +2,9 @@
 title: Query work tracking data using OData 
 titleSuffix: Azure DevOps
 description: How to generate work item tracking reports for Azure DevOps using OData Analytics  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -15,12 +13,12 @@ ms.date: 04/05/2019
 
 # Query your work tracking data using OData Analytics
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 
 Using Analytics for Azure DevOps, you can construct basic and filtered queries to return work items of interest. You can run these queries directly in your browser.
 
-[!INCLUDE [temp](../_shared/analytics-preview.md)]
+[!INCLUDE [temp](../includes/analytics-preview.md)]
 
 In this article, the base root URL is scoped to a project as shown:  
 
@@ -84,7 +82,7 @@ You construct a basic query by entering the OData URL into a [supported web brow
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/api-versioning.md)]
+[!INCLUDE [temp](../includes/api-versioning.md)]
 
 <a id="single-entity" />
 

@@ -2,7 +2,6 @@
 title: Kanban Updates, new Branch Policies, and more... – Sep 18
 description: VSTS release notes for September 18 2015
 ms.assetid: 9232867d-6a5f-4716-8d60-c3e5debc311d
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.date: 06/01/2016
@@ -57,7 +56,7 @@ In the export selection dialog, you can choose to export the latest test outcome
 
 ## Work item trend and rollup reporting in Power BI
 
-Earlier this month we blogged about improvements in the Visual Studio Online Power BI Connector to support trend and rollup reporting. Have a look at [Jeff’s blog post](https://blogs.msdn.com/b/visualstudioalm/archive/2015/09/04/general-availability-of-work-item-trend-and-rollup-reporting-in-power-bi.aspx) for more details.
+Earlier this month we blogged about improvements in the Visual Studio Online Power BI Connector to support trend and rollup reporting. Have a look at [Jeff’s blog post](https://devblogs.microsoft.com/devops/general-availability-of-work-item-trend-and-rollup-reporting-in-power-bi/) for more details.
 
 ## Support for publishing xUnit results
 

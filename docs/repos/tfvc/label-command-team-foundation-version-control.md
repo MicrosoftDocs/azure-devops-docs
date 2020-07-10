@@ -3,10 +3,8 @@ title: Label Command (Team Foundation Version Control)
 titleSuffix: Azure Repos
 description: Label Command (Team Foundation Version Control)
 ms.assetid: 815fd18a-1511-4f72-8a4a-7b1b0d3b2144
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -91,7 +89,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the specified project collection that contains a version of a file or folder to which you want to attach a label or from which you want to delete a label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 </tbody>
 </table>

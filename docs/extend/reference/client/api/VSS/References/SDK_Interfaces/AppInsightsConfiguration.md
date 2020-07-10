@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces AppInsightsConfiguration API | Extensions for Azure DevOps Services
 description: Model used to configure how TFS reports usage data to Application Insights
 ms.assetid: f203b1bf-1c09-444f-aac5-91788754d051
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

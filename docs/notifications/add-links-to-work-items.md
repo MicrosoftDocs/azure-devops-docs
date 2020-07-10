@@ -2,11 +2,9 @@
 title: Use ID to link work items & pull requests
 titleSuffix: Azure DevOps
 description: Link to work items in discussions and pull requests 
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Use #ID to link to work items  
 
-[!INCLUDE [temp](../_shared/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)]
 
 The **#ID** control quickly links objects to work items. With this control, you can specify or select a work item ID and it's automatically linked to the object. 
 

@@ -1,10 +1,8 @@
 ---
 title: TFS/Work/Contracts DateRange API | Extensions for Azure DevOps Services
 ms.assetid: 6a641371-d27b-e306-e9f5-d8214cbc737f
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

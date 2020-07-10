@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts WorkItemClassificationNode API | Extensions for Azure DevOps Services
 ms.assetid: 0417f101-9984-0a36-0344-1b9d02663a59
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

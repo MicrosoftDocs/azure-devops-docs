@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Begin planning your organizational structure, including projects, teams, repos, version control
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 robots: NOINDEX, NOFOLLOW
@@ -17,7 +15,7 @@ ms.date: 04/22/2019
 
 # Plan your organizational structure
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Your business structure should act as a guide to the number of organizations, projects, and teams that you create in Azure DevOps. This article helps you plan for different structures and scenarios for Azure DevOps.  
 
@@ -48,9 +46,9 @@ Each organization gets its own *free tier* of services (up to five users for eac
 * [Azure Repos](https://azure.microsoft.com/services/devops/repos/): Unlimited private Git repos
 * [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/): Package management
 * Unlimited Stakeholders
-  [!INCLUDE [free-tier](../_shared/free-tier.md)]
+  [!INCLUDE [free-tier](../includes/free-tier.md)]
 
-[!INCLUDE [loadtest-deprecated-include](../test/_shared/loadtest-deprecated-include.md)]
+[!INCLUDE [loadtest-deprecated-include](../test/includes/loadtest-deprecated-include.md)]
 
 ## How many organizations do you need?
 
@@ -60,7 +58,7 @@ Take some time to review your work structure and the different business groups a
 
 ## What is a team?
 
-A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md), which help you plan and manage work, and make collaboration easier.
+A team is a unit that supports many [team-configurable tools](../organizations/settings/manage-teams.md). These tools help you plan and manage work, and make collaboration easier.
 
 ### Creating a team for each distinct product or feature team
 
@@ -77,7 +75,7 @@ A project in Azure DevOps contains the following set of features:
 
 In the following image, the Contoso company has four projects within their Contoso-Manufacturing organization.
 
-![Image of an organization with four projects](_shared/contoso-organization-with-projects.png)
+![Image of an organization with four projects](media/contoso-organization-with-projects.png)
 
 ## How many projects do you need?
 
@@ -140,7 +138,7 @@ Consider the specific strategic work scoped to one of the organizations you crea
 
 Configure your project by visiting its URL and select the **Project settings** button at the lower left of the page.
 
-![open-project-settings-vert-brn.png](../_shared/media/settings/open-project-settings-vert-brn.png)
+![open-project-settings-vert-brn.png](../media/settings/open-project-settings-vert-brn.png)
 
 To learn more about managing projects, see [Manage projects in Azure DevOps](../organizations/projects/index.md). You can move a project to a different organization by migrating the data. To learn more about migrating your project, see [Migration options](../migrate/migrate-from-tfs.md).
 ## Managing version control
@@ -188,7 +186,7 @@ When you create an organization, the identity that you sign in with defines the 
 
 Use your Microsoft account if you don't need to authenticate users for an organization with Azure AD. All users must sign in to your organization with a Microsoft account. If you don't have a Microsoft account, you can [create a Microsoft account](https://login.live.com/login.srf?lw=1) at this time.
 
-   ![Enter your password and sign in](../_shared/media/enter-password-sign-in.png)
+   ![Enter your password and sign in](../media/enter-password-sign-in.png)
 
 If you don't have an Azure Active Directory instance, create one for free from the [Azure portal](https://ms.portal.azure.com/) or use your Microsoft account to create an organization. Then, you can [connect the organization to Azure AD](../organizations/accounts/connect-organization-to-azure-ad.md).
 
@@ -202,7 +200,7 @@ Azure DevOps authenticates users through your Azure AD, so that only users who a
 
 After you create your Azure account, only members of that directory  can access your organization, or you must use [Azure AD business-to-business (B2B) collaboration](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) to add users from other organizations.
 
-Learn more about how to [manage users](../organizations/accounts/manage-users-table-view.md).
+Learn more about how to [manage users](../organizations/accounts/add-organization-users.md).
 
 ### Mapping organizations to business units
 

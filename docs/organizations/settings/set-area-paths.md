@@ -3,9 +3,7 @@ title: Define area paths for a project
 titleSuffix: Azure Boards
 description: Group work items based on team, product, or feature area by defining area paths for Azure Boards and Azure DevOps
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 97358022-AE19-4775-AE25-47BA24FF3C74
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -15,7 +13,7 @@ ms.date: 11/18/2019
 
 # Define area paths and assign to a team
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 
 You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.
@@ -29,7 +27,7 @@ New projects contain a single, root area that corresponds to the project name. A
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
 
-[!INCLUDE [temp](../../_shared/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector.md)]
 
 ## Prerequisites
 
@@ -124,7 +122,7 @@ az boards area project list [--depth]
 #### Parameters 
 
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
-- **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, lists area paths from the root level. 
+- **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 
 #### Example
@@ -150,11 +148,11 @@ ID     Identifier                            Name                Path           
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings > Work > Project configuration**.
 
@@ -185,7 +183,7 @@ You define both areas and iterations from the **Work** pages of the project admi
     If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
 
     > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horz nav](../../_shared/media/settings/open-project-settings-horz.png)
+    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
 
 2. Choose **Work**.  
 
@@ -197,7 +195,7 @@ You define both areas and iterations from the **Work** pages of the project admi
 
 1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**.
 
-    ![Open the project administration page](../../_shared/media/settings/open-project-settings-tfs-2015.png)
+    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
 ::: moniker-end
 
@@ -292,7 +290,7 @@ ID     Identifier                            Name    Path                       
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -413,7 +411,7 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -561,7 +559,7 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
@@ -716,7 +714,7 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

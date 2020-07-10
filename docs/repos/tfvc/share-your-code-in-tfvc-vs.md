@@ -4,10 +4,8 @@ titleSuffix: Azure Repos
 description: Share code in Team Foundation Version Control using Visual Studio
 ms.assetid: 108544c0-c29e-4b3b-9a39-4573cf4a71dc
 toc: show
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 08/10/2016
@@ -29,7 +27,7 @@ you can instead use [Git with Azure Repos](../../repos/git/share-your-code-in-gi
 
 Is your code in another place? [Learn how to migrate it here](#migrate).
 
-[!INCLUDE [open-team-project-in-vs](_shared/open-team-project-in-vs.md)]
+[!INCLUDE [open-team-project-in-vs](includes/open-team-project-in-vs.md)]
 
 <a name="workspace"></a>
 ## Configure your workspace

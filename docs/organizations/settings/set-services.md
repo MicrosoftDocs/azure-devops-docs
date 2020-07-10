@@ -4,10 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Control which services are available for a project from the web portal  
 ms.technology: devops-settings
-ms.prod: devops
-ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -17,7 +14,7 @@ ms.date: 11/21/2019
 
 # Turn a service on or off
 
-[!INCLUDE [temp](../../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../../includes/version-azure-devops.md)]
 
 You can control which services are available through the web portal by turning a service on or off. Turning a service off removes the service from the user interface for all project users. However, data defined for the service is preserved and available if you later decide to turn the service on.  
 
@@ -43,7 +40,7 @@ You can control which services are available through the web portal by turning a
 2. Choose **Project settings** in the sidebar.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
 3. Select **Overview**, and then choose the slider for the service that you want to enable or disable.
 

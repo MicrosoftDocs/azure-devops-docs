@@ -2,10 +2,8 @@
 title: Collect more diagnostic data
 description: Manual and exploratory testing - Collect more diagnostic data in manual tests when you want to test web applications
 ms.assetid: bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Collect more diagnostic data in manual tests
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 **For Azure DevOps and TFS, see [Collect diagnostic data while testing](../collect-diagnostic-data.md).**
 
@@ -27,7 +25,7 @@ While you are testing your application, Microsoft Test Manager can collect data 
   
 You can decide what kinds of data you want to collect.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ## What diagnostic data can I collect in a test?
 
@@ -92,4 +90,4 @@ On the Data and Diagnostics page you can add and configure diagnostic adapters t
 |**Test impact**: Enables the **Recommended Tests** feature in Testing Center, Track. This determines which tests are affected by the changes since a previous build, based on code coverage.|If you are testing an ASP.NET application:<br /><br /> 1. On the role where the IIS server will run, enable **Test Impact** and then choose **Configure**, **Advanced**, **ASP.NET**.<br />2.  In the web client role, enable **ASP.NET Client Proxy for IntelliTrace and Test Impact**<br /><br /> Restart your server application after enabling this option.|  
 |**Video Recorder** records the desktop in real time while you work.|To record audio, choose **Configure**.|
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

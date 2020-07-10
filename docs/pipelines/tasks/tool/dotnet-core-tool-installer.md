@@ -1,22 +1,19 @@
 ---
 title: Use .NET Core task
 description: Acquires a specific version of .NET Core from the internet or the tools cache and adds it to the PATH
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
 ms.assetid: B0CE7256-7898-45D3-9CB5-176B752BFEA6
-ms.manager: mijacobs
 ms.author: puagarw
 author: pulkitaggarwl
 ms.date: 10/21/2019
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2019'
 ---
 
 # Use .NET Core task
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to acquire a specific version of .NET Core from the Internet or the tools cache
+Use this task to acquire a specific version of .NET Core from the Internet or the tools cache
 and add it to the PATH. 
 
 You can also use this task to change the version of .NET Core used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).

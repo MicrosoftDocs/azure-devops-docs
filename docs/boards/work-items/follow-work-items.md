@@ -4,9 +4,7 @@ titleSuffix: Azure Boards & Azure Repos
 description: Track updates made to a work item or pull request by following it when using Azure Boards or Azure Repos 
 ms.custom: work-items, seodec18
 ms.technology: devops-collab
-ms.prod: devops
 ms.assetid: 77CAEE8E-BF1A-47DA-9818-A0C52BAC813C
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -94,7 +92,7 @@ By default, you are **Subscribed** to receive a notification when any change is 
 ::: moniker range="tfs-2017"
 
 > [!NOTE]   
-> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises TFS, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
+> The **Follow a work item** feature is available from TFS 2017 and later versions. The **Follow a pull request** feature is available from TFS 2017.1 and later versions. To update your on-premises Azure DevOps, visit the [Visual Studio downloads page for Team Foundation Server](https://visualstudio.microsoft.com/downloads). 
 
 ::: moniker-end
 

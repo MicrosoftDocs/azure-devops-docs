@@ -3,9 +3,7 @@ title: Link GitHub commits and PRs to work items
 titleSuffix: Azure Boards 
 description: Add links to GitHub commits and pull requests to or from Azure Boards work items 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid:    
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,11 +15,11 @@ ms.date: 07/22/2019
 
 # Link GitHub commits, pull requests, and issues to work items
 
-[!INCLUDE[temp](../_shared/version-vsts-plus-azdevserver-2019.md)] 
+[!INCLUDE[temp](../includes/version-vsts-plus-azdevserver-2019.md)] 
 
  When using GitHub with Azure Boards, it's easy to keep all of your work connected. Links can be added using the **#mention** syntax familiar to GitHub users or from the Azure Boards work item.
 
-[!INCLUDE[temp](../_shared/github-platform-support.md)]
+[!INCLUDE[temp](../includes/github-platform-support.md)]
 
 ## Prerequisites 
 

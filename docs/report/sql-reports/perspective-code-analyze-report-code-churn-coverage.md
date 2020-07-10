@@ -1,12 +1,10 @@
 ---
 title: Analyze and report on code churn and code coverage 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: View measures, dimensions, and attributes that are associated with the changes in lines of codes 
 ms.assetid: 7a6c9101-c38d-4d6d-be8d-d64a3931487b
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 # Analyze and report on code churn and coverage using the code churn and run coverage perspectives
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can report on the software quality by using the Code Churn and Run Coverage perspectives from the SQL Server Analysis Services cube for Visual Studio Team Foundation Server.  By using these perspectives, you can view just the measures, dimensions, and attributes that are associated with the changes in lines of codes and the extent to which code is covered in builds and test runs.  
   
@@ -54,7 +52,7 @@ By using a PivotChart report in Excel, you can create a trend report that displa
   
 1.  In Excel, connect to the SQL Server Analysis Services cube for Visual Studio Team Foundation Server, and insert a PivotChart report.  
   
-     For more information, see [Create Excel reports from a work item query](../excel/create-status-and-trend-excel-reports.md).  
+     For more information, see [Create Excel reports from a work item query](../create-status-and-trend-excel-reports.md).  
   
 2.  Right-click the chart and then choose **Change Chart Type**, **Area**, **Stacked Area**.  
   

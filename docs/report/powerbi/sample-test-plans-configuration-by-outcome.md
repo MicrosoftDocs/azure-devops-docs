@@ -2,10 +2,8 @@
 title: Manual test Configuration by Outcome history report sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate a Configuration by Outcome matrix report
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -16,18 +14,18 @@ ms.date: 12/09/2019
 
 # Configuration by outcome matrix sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 When you have multiple configurations in your product to release, you can take a decision about releasing different configurations independently based on the progress of tests made for each configuration. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
 
 An example of the configuration by outcome matrix report is shown in the following image.
  
 > [!div class="mx-imgBorder"] 
 > ![Sample - Configuration by Outcome matrix - Report](media/odatapowerbi-configurationbyoutcome.png)
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Prerequisites
@@ -46,7 +44,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -61,7 +59,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPoints?  
@@ -76,7 +74,7 @@ https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/Tes
 
 ### Substitution strings
 
-[!INCLUDE [temp](_shared/sample-query-substitutions-3.md)]
+[!INCLUDE [temp](includes/sample-query-substitutions-3.md)]
 
 ### Query breakdown
 
@@ -160,7 +158,7 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

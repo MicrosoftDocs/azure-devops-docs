@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
 title: Create a service hook for Azure DevOps Services and TFS with Datadog
 description: Use Datadog with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -14,7 +12,7 @@ ms.date: 10/31/2019
 
 # Create a service hook for Azure DevOps Services and TFS with Datadog
 
-[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
 Create events and metrics in Datadog in response to events from Azure DevOps Services. Use these metrics and events in Datadog to create dashboards, troubleshoot issues, and create monitors to alert you of critical issues. Accepts all Azure DevOps event types.
 

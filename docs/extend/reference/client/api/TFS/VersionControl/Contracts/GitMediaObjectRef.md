@@ -2,10 +2,8 @@
 title: TFS/VersionControl/Contracts GitMediaObjectRef API | Extensions for Azure DevOps Services
 description: Encapsulates the reference metadata of a Git media object.
 ms.assetid: 00720d1a-2cfa-6461-fc4b-8167df5f2013
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

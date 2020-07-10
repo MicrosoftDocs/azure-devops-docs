@@ -2,10 +2,7 @@
 title: Xcode build and release task
 ms.custom: seodec18
 description: Xcode build and release task for Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 130B3990-0B64-41AE-9330-75AD7228B5C4
-ms.manager: mijacobs
 ms.author: vijayma
 author: vijayma
 ms.date: 12/23/2019
@@ -16,7 +13,7 @@ monikerRange: azure-devops
 
 **Azure Pipelines | [TFS 2018](xcode-build.md) | [TFS 2017](xcode-build.md) | [TFS 2015](xcode-build.md)**
 
-Use this task in a build or release pipeline to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
+Use this task to build, test, or archive an Xcode workspace on macOS, and optionally package an app.
 
 ## Demands
 
@@ -26,7 +23,7 @@ xcode
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/XcodeV5.md)]
+[!INCLUDE [temp](../includes/yaml/XcodeV5.md)]
 
 ::: moniker-end
 
@@ -190,7 +187,7 @@ xcode
    <tr>
       <td><code>destinationSimulators</code><br/>Simulators</td>
       <td>
-         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.14-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/Microsoft/azure-pipelines-image-generation/blob/master/images/macos/macos-10.14-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
+         (Optional) Enter an Xcode simulator name to be used for UI testing. For example, enter <code>iPhone X</code> (iOS and watchOS) or <code>Apple TV 4K</code> (tvOS). A target OS version is optional and can be specified in the format &#39;OS=<i>versionNumber</i>&#39;, such as <code>iPhone X,OS=11.1</code>. A list of simulators installed on the <strong>Hosted macOS</strong> agent can be <a href="https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks" data-raw-source="[found here](https://github.com/actions/virtual-environments/blob/master/images/macos/macos-10.15-Readme.md#installed-sdks)">found here</a>. <br/>Default value: iPhone 7
       </td>
    </tr>
    <tr>
@@ -239,9 +236,9 @@ xcode
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

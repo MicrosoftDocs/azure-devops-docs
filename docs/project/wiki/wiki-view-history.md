@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Add and update pages offline for your  built-in team project wiki 
 ms.technology: devops-collab
 ms.custom: wiki
-ms.prod: devops
 ms.topic: conceptual
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
@@ -17,7 +15,7 @@ ms.date: 12/17/2018
 
 # View wiki page history and revert changes
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-2018.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 You can see details of the changes made to a wiki page and revert to an earlier version, if needed.
 

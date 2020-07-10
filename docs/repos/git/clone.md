@@ -3,10 +3,8 @@ title: Clone an existing Git repo
 titleSuffix: Azure Repos
 description: Create a local clone of an existing repo using Visual Studio or command prompt
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: tutorial
 ms.date: 11/15/2019
@@ -82,7 +80,7 @@ Copy this URL into the clipboard or store it in a place where you can find it ea
    You may need to add an Azure DevOps Server where the repo is hosted.
    Select the **Add Azure DevOps Server** link.
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your PC and select **Clone**.
 

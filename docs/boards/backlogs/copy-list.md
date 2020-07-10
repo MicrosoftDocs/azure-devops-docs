@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
 ms.custom: seodec18
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -16,7 +14,7 @@ ms.date: 11/19/2018
 
 # Copy a list of work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="html"></a>
 
@@ -32,7 +30,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 ::: moniker range="<= azure-devops-2019"  
 
 > [!TIP]  
->The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
+>The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 
 ::: moniker-end  
 

@@ -2,10 +2,8 @@
 title: Clone a Hosted XML process to an inherited process
 titleSuffix: Azure DevOps Services     
 description: Clone a Hosted XML process model to an inherited process in Azure DevOps Services
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +13,7 @@ ms.date: 05/30/2018
 
 # Clone a Hosted XML process to an Inheritance process   
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-only.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-only.md)]
 
 Cloning your Hosted XML process to the Inheritance process model allows you to manage customizations through the user interface versus XML definition files. The inherited process supports the set of customizations described here [About process customization and inherited processes](inheritance-process-model.md). 
 
@@ -37,7 +35,7 @@ The general sequence of steps to support clone are:
 3. Manually reapply customizations that were ignored during clone
 4. Create a test project to verify customizations. 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
 
 
 ## Clone a Hosted XML process to an Inheritance process 
@@ -66,7 +64,7 @@ The general sequence of steps to support clone are:
 
 3. After you've confirmed that the information is correct, choose **Save**. 
 
-[!INCLUDE [temp](../_shared/post-upgrade-steps.md)]
+[!INCLUDE [temp](../includes/post-upgrade-steps.md)]
 
 <a id="verify">  </a>
 ## Verify the customization you made 

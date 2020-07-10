@@ -2,13 +2,10 @@
 title: Wait Control | Extensions for Azure DevOps Services
 description: Use the wait control to display progress message for long running operations in your app for Azure DevOps Services.
 ms.assetid: 418275E5-F2BA-42DF-B5E6-A88324B25123
-ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---

@@ -1,34 +1,33 @@
 ---
-title: Use the Splitter Control | Extensions for Azure DevOps Services
-description: Use the splitter control to have split and resizable containers for other controls.
+title: Use the splitter control | Extensions for Azure DevOps Services
+description: Use the splitter control to split and have resizable containers for other controls.
 ms.assetid: 1EE1DD70-0C64-4B65-8F7F-175A9385041A
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/31/2019
+ms.date: 06/03/2020
 ---
 
 # Use the splitter control
 
-This page shows different samples about the splitter control.
+[!INCLUDE [version-vsts-only](../../../includes/version-vsts-only.md)]
 
-**Go to [API Reference](../../reference/client/controls/splitter.md) for more details.**
+This article explains the splitter control and how to use it in your code. 
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+> [!TIP]
+> For more information, see [Formula Design System](https://azdevinternal.azureedge.net/components/splitter), and [API Reference](../../reference/client/controls/splitter.md)
 
 <a name="basic"></a>
 
 ## Splitter enhancement
 
-Unlike other controls, it is more convenient to instantiate splitter control on an existing markup since splitter is a container control. Otherwise, it would be difficult to fill left and right panes programmatically.
+It's more convenient, than using other controls, to instantiate the splitter control on existing markup, as the splitter is a container control. Otherwise, it's hard to fill the left and right panes programmatically.
  
-There is a technic called enhancement which converts an existing html to a control. It is basically similar to what `Controls.create` does but instead of creating a new DOM element and associating it with the control, enhancement uses an existing element in the DOM tree.
+There's an enhancement, which converts existing HTML to a control. It's similar to what `Controls.create` does, but instead of creating a new DOM element and associating it with the control, the enhancement uses an existing element in the DOM tree.
 
-Below sample shows a typical usage of splitter control.
+The following example shows typical usage of the splitter control.
 
 ``` html
 	<button id="expand">Expand</button>
@@ -54,7 +53,8 @@ Below sample shows a typical usage of splitter control.
 	}
 ```
 
-See how enhance is used below instead of `Controls.create`.
+The following example shows how to use `enhance(...)` instead of `Controls.create`.
+
 ``` javascript
 	import Controls = require("VSS/Controls");
 	import Splitter = require("VSS/Controls/Splitter");
@@ -65,11 +65,11 @@ See how enhance is used below instead of `Controls.create`.
 	$("#collapse").click(()=> { splitter.collapse(); });
 ```
 
-### Splitter Toggle Button via Enhancement
+### Splitter toggle button via enhancement
 
-In the sample above the ```#expand``` and ```#collapse``` buttons are used to expand or collapse the Splitter control. However the Splitter control can include built-in toggle to expand or collapse the splitter and provide a label for the collapsed pane.
+In the previous example, the ```#expand``` and ```#collapse``` buttons are used to expand or collapse the splitter control. However, the splitter control can include a built-in toggle to expand or collapse the splitter and provide a label for the collapsed pane.
 
-When using the ```Controls.create(...)``` method of Splitter creation the toggle can be included using the ```enableToggleButton``` field on the options object. However this facility is not available when using the ```Controls.Enhancement.enhance(...)``` method. To work around this you should include HTML which the ```enhance(...)``` method can attach appropriate styles and JavaScript handlers.
+Using the ```Controls.create(...)``` method of the splitter creation, the toggle can be included using the ```enableToggleButton``` field on the options object. However, this facility isn't available when using the ```Controls.Enhancement.enhance(...)``` method. As a work-around, you should include HTML, to which the ```enhance(...)``` method can attach appropriate styles and JavaScript handlers.
 
 ```html
     <div class="my-splitter horizontal splitter toggle-button-enabled">
@@ -87,4 +87,4 @@ When using the ```Controls.create(...)``` method of Splitter creation the toggle
 	</div>
 ```
 
-By including this HTML structure in your code, you have a Splitter control with an integrated toggle button and when collapsed a label on the collapsed pane.
+By including this HTML structure in your code, you have the splitter control with an integrated toggle button and when it's collapsed, a label on the collapsed pane.

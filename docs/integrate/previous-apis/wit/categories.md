@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Type Categories | REST API Reference for Team Foundation Server
 description: Work with categories of work item types programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: 5DACB173-F971-4288-8EBD-29B4EF98237C
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -293,7 +291,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
+* [C# (GetListOfWorkItemTypeCategories method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L23)
 
 ## Get a work item type category
 <a name="getaworkitemtypecategory" />
@@ -339,4 +337,4 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/workItemT
 
 #### Sample code
 
-* [C# (GetWorkItemCategory method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)
+* [C# (GetWorkItemCategory method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/WorkItemTypeCategoriesSample.cs#L43)

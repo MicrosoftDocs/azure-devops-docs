@@ -2,11 +2,8 @@
 title: Use Test Impact Analysis
 description: Speed up testing by using Test Impact Analysis (TIA) in Azure Pipelines or TFS with a build or release pipeline
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 12/07/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2017'
 
 # Speed up testing by using Test Impact Analysis (TIA)
 
-[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
@@ -52,7 +49,7 @@ However, be aware of the following caveats when using TIA with Visual Studio 201
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -185,4 +182,4 @@ For an example of the XML file format, see [TIA custom dependency mapping](https
 * [TIA advanced configuration](https://blogs.msdn.microsoft.com/devops/2017/06/13/accelerated-continuous-testing-with-test-impact-analysis-part-3/)
 * [TIA custom dependency mapping](https://blogs.msdn.microsoft.com/devops/2017/08/04/accelerated-continuous-testing-with-test-impact-analysis-part-4/)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

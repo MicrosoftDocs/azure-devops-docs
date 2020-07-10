@@ -2,23 +2,21 @@
 title: Automate field assignments 
 titleSuffix: TFS
 description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
 ms.author: kaelli
-ms.manager: mijacobs
-ms.manager: mijacobs
 ms.topic: reference
 ms.date: 02/14/2017
 ---
 
 # Automate field assignments based on State, Transition, or Reason
 
-[!INCLUDE [temp](../../_shared/version-tfs-all-versions.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)] 
 
 You may want to automatically transition work items from one state to another state based on an event that occurs within or external to your Azure DevOps project. For example, you may want to automate the transition of a bug from one state to another based on what occurs in a call tracking tool. The work item type model and the Work Item Tracking API are extended to support automatic transitioning of work items by other systems.  
   
- If you have code that changes the state of a work item, you can generalize that code by associating your action with the appropriate state transition by using the **ACTION** element. You can pass the value of your action to the [WorkItem.GetNextState](assetId:///WorkItem.GetNextState?qualifyHint=False&autoUpgrade=True) method to get the post-action state of that work item. The version control check-in dialog box uses this method to resolve bugs and close tasks that are associated with the check-in.  
+ If you have code that changes the state of a work item, you can generalize that code by associating your action with the appropriate state transition by using the **ACTION** element. You can pass the value of your action to the `[WorkItem.GetNextState](assetId:///WorkItem.GetNextState?qualifyHint=False&autoUpgrade=True)` method to get the post-action state of that work item. The version control check-in dialog box uses this method to resolve bugs and close tasks that are associated with the check-in.  
   
  `ACTION` is an optional child element of `ACTIONS`.  
   
@@ -40,12 +38,66 @@ You may want to automatically transition work items from one state to another st
 > <ACTION value="NameOfAction" />  
 > ```  
   
-  
+## System-defined actions
+
+The following table describes the system-defined actions that appear in select XML definition files. 
+
+:::row:::
+   :::column span="1":::
+      **System Action**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+   :::column span="1":::
+      **Work Item Types**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.CheckIn`
+   :::column-end:::
+   :::column span="2":::
+      This action transitions the state of work items associated with a changeset at a checkin. It is only valid when checking in code into a TFVC repository and the work items have been linked to a changeset (See Note 1). 
+   :::column-end:::
+   :::column span="1":::
+      Bug (Agile, CMMI), Change Request, Code Review Request, Issue, Requirement, Task, User Story 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.StartWork`
+   :::column-end:::
+   :::column span="2":::
+      This action supports the Visual Studio, Team Explorer **My Work** (See Note 2) feature to transition the state of work items when a developer moves a work item to In Progress. The State is automatically moved from *New* to *Active* (Agile), from *To Do* and *In Progress* (Scrum), from *Proposed* to *Active* (CMMI), from *To Do* to *Doing* (Basic). It is only valid when developing code maintained in a TFVC repository. 
+   :::column-end:::
+   :::column span="1":::
+      Bug, Task 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      `Microsoft.VSTS.Actions.StopWork`
+   :::column-end:::
+   :::column span="2":::
+      This action supports the Visual Studio, Team Explorer **My Work** feature to transition the state of work items when a developer moves a work item to Suspended Work.  The State is automatically moved from from *Active* to *New* (Agile), from *In Progress* to *To Do* (Scrum), from *Active* to *Proposed* (CMMI), from *Doing* (Basic) to *To Do*. It is only valid when developing code maintained in a TFVC repository. 
+   :::column-end:::
+   :::column span="1":::
+      Bug, Task 
+   :::column-end:::
+:::row-end:::
+
+#### Get more information
+
+- For more information on linking work items to changesets, see [Develop and share your code in TFVC using Visual Studio, Snapshot (check in) your code](../../repos/tfvc/share-your-code-in-tfvc-vs.md#snapshot-check-in-your-code).
+- For more information on **My Work**, see [Day in the life of a devops developer: suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md). 
+
+
 <a name="RequiredSteps"></a>   
 
 ##  Required steps to support automation  
 
- To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
+To integrate a tool with Work Item Tracking, the tool must perform the following steps:  
   
 1.  Determine what state the work item should be transitioned to when the action is performed.  
   

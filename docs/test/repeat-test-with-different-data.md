@@ -2,10 +2,8 @@
 title: Repeat a test with different data
 description: Manual and exploratory testing - repeat a test with different data in Azure DevOps and Team Foundation Server (TFS)
 ms.assetid: C9953A56-9BD6-408B-899B-FAD816B9FC0C
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 06/02/2019
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Repeat a test with different data
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 When you write a [manual test](create-test-cases.md), 
 you often want to specify that the test should be repeated several 
@@ -29,7 +27,7 @@ use the web portal with TFS 2015 and later or
 Azure DevOps. That way you can run multiple test cases with the 
 same data.
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 ## Add parameters to a test case
 
@@ -83,7 +81,7 @@ containing all of the parameters - even though a few of the columns in the set w
 
 ## Run a test case with parameters
 
-1. Select a test case with parameters and start it running.
+1. Select a test case with parameters and start running it.
 The Test Runner shows the first row of parameter values.
  
    ![Test Runner showing the first row of parameter values](media/repeat-test-with-different-data/repeat-test-with-different-data-06.png)
@@ -146,4 +144,4 @@ Record and playback doesn't work with all applications. For details, see
 * [Collect diagnostic data](collect-diagnostic-data.md)
 * [Manage test results](how-long-to-keep-test-results.md)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

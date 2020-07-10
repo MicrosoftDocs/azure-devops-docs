@@ -3,10 +3,7 @@ title: Release Management deployment tools
 ms.custom: seodec18
 description: Learn about the release Management tools to deploy an app in Release Management for Azure Pipelines and Team Foundation Server (TFS.
 ms.assetid: 0FD15EFD-35AA-4F56-9603-64D3302C0941
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release Management tools to deploy an app
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
 Each release action uses a release management tool. For example, Command Line Runner is a tool that runs a specific executable for an action. If you need to perform a task that the provided tools do not support, you can create your own custom tool and add that to a custom release action. Tools can also be used to deploy a component of your app.
 
@@ -360,6 +357,6 @@ tool are:
 * [Trigger a release from a build](../trigger-a-release.md)
 * [Deploy continuously to Azure](../deploy-continuously-to-azure.md)
 
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
 
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

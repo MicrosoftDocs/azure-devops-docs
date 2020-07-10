@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Review of OOB charts, widgets, dashboards, & reports available to monitor status and trends in Azure DevOps & Team Foundation Server (TFS)  
 ms.custom: dashboards
 ms.assetid: 7BAD53A1-080E-40E8-8866-24EC00395D39
-ms.prod: devops
 ms.technology: devops-analytics
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
@@ -16,13 +14,13 @@ ms.date: 07/22/2019
 
 # About dashboards, charts, reports, & widgets   
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 Gain visibility into your team's progress by adding one or more widgets or charts to your dashboard. Customizable, highly-configurable dashboards provide you and your teams with the flexibility to share information, monitor progress and trends, and improve your workflow processes.  Each team can tailor their dashboards to share information and monitor their progress.  
 
 If you're just starting out, read [Add, rename, and delete dashboards](dashboards.md). If you're looking for instructions on a specific task, in context chart, widget, or report&mdash;review [Dashboards and widgets quick reference](quick-ref.md). To learn about our reporting solutions, read [Reporting Roadmap](../powerbi/reporting-roadmap.md).
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 
 ## Key concepts
@@ -601,7 +599,7 @@ Using the REST API service, you can [create a custom widget](../../extend/develo
 
 ::: moniker-end
 
-[excel-adhoc-query-report]: ../excel/create-status-and-trend-excel-reports.md
+[excel-adhoc-query-report]: ../create-status-and-trend-excel-reports.md
 [add-a-team]: ../../organizations/settings/add-teams.md
 [team-assets]: ../../organizations/settings/manage-teams.md
 [add-team-members]: ../../organizations/settings/add-teams.md#add-team-members

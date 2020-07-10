@@ -3,12 +3,7 @@ title: Simple, Secure CI App Signing
 ms.custom: seodec18
 description: Sign your mobile app during CI with Azure Pipelines or Team Foundation Server
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ed39a1b4-bce0-416e-b3a2-253b21722b02
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.reviewer: dastahel
 ms.date: 01/16/2018
 monikerRange: '>= tfs-2017 < tfs-2018'
@@ -19,7 +14,7 @@ monikerRange: '>= tfs-2017 < tfs-2018'
 **[Azure Pipelines](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 When developing an app for Android or iOS, you will eventually need to manage signing certificates, and in the case of iOS, [provisioning profiles](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013839). This article will highlight some features to help you manage and secure them for your app.
@@ -223,14 +218,14 @@ Follow these steps:
 
 You are now all set! Any build agent will now be able to securely build your app without any certificate management on the build machine itself.
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

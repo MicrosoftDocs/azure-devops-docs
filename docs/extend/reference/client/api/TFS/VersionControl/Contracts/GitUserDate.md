@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitUserDate API | Extensions for Azure DevOps Services
 ms.assetid: 648bce87-ce2f-6264-3d61-4430374d6230
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

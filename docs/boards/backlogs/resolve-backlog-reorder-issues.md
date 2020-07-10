@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Fix error messages due to nesting issues that occur in a Backlog or Board in Azure Boards & TFS 
 ms.custom: "boards-backlogs, seodec18"  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: BDEAA5D4-83A3-49FC-BEEB-EE685E92B68B
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -18,7 +16,7 @@ ms.date: 10/17/2019
 
 <a id="display-hierarchy">  </a>
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <!--- Supports FWLINK https://go.microsoft.com/fwlink/?linkid=529135 --> 
 

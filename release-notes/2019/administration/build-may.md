@@ -3,7 +3,6 @@ title: Administration - Microsoft Build Announcements
 description: See the Microsoft build announcements for Azure DevOps administration, May 2019, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 05/10/2019
 
 ## Features
 
-[!INCLUDE [build-may-links](../_shared/administration/build-may-links.md)]
+[!INCLUDE [build-may-links](../includes/administration/build-may-links.md)]
 
-[!INCLUDE [build-may](../_shared/administration/build-may.md)]
+[!INCLUDE [build-may](../includes/administration/build-may.md)]
 
 ## Next steps
 

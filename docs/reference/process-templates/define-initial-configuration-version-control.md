@@ -2,10 +2,8 @@
 title: Define Git or TFVC initial configuration 
 titleSuffix: Azure DevOps & TFS
 description: Configure the initial security permissions, check-out policies, and check-in notes for TFVC or Git 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: a7dff64f-4bb7-4083-bcf5-12d70e4915ea
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -16,7 +14,7 @@ ms.date: 10/11/2017
 
 # Define the initial configuration of Git and TFVC
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)]
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
 > [!NOTE]  
 >  For TFS 2017.3 and later versions, you create projects from the web 
@@ -142,4 +140,4 @@ The default assignments for TFVC and GIt permissions made to all default process
 
 ## Related articles  
 -  [Configure initial groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)   
--  [Code](../../repos/git/overview.md)
+-  [Code](../../repos/git/index.yml)

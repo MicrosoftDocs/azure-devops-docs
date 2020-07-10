@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Fields | REST API Reference for Team Foundation Server
 description: Work with work item fields programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A2365AB4-482A-46A5-A235-2D3C94C2ED96
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -7657,7 +7655,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/fields?api-version=1.0
 
 #### Sample code
 
-* [C# (GetReadonlyWorkItemFields method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/FieldsSample.cs#L40)
+* [C# (GetReadonlyWorkItemFields method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)
 
 ## Get a work item field
 
@@ -7715,4 +7713,4 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/fields/System.IterationPath?
 
 #### Sample code
 
-* [C# (GetFieldDetails method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/FieldsSample.cs#L40)
+* [C# (GetFieldDetails method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/FieldsSample.cs#L40)

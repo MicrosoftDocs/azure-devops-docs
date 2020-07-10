@@ -1,14 +1,12 @@
 ---
 title: Build Quality Indicators Report
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Shows test coverage, code churn, and bug counts for a specified build definition - Team Foundation Server
 ms.assetid: 7e9e87ae-43c7-4ede-9c66-dd887f5a8905
 ms.author: kaelli
 author: KathrynEE
-ms.manager: mijacobs
 monikerRange: '<= azure-devops-2019'
 ms.date: 10/17/2017
 ---
@@ -16,7 +14,7 @@ ms.date: 10/17/2017
 
 # Build Quality Indicators Report
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 The Build Quality Indicators report shows test coverage, code churn, and bug counts for a specified build definition. You can use this report to help determine how close portions of the code are to release quality.  

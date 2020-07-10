@@ -1,10 +1,8 @@
 ---
 title:  Progressively expose your features using feature flags 
 description: Explore how to progressively expose your features in production for some or all users 
-ms.prod: devops
 ms.topic: conceptual
 ms.technology: devops-migrate
-ms.manager: mijacobs
 ms.date: 04/26/2018
 ms.author: kaelli
 author: KathrynEE
@@ -13,7 +11,7 @@ monikerRange: '>= tfs-2013'
 
 # Explore how to progressively expose your features in production for some or all users 
 
-[!INCLUDE [version-azure-devops](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-azure-devops](../includes/version-vsts-tfs-all-versions.md)]
 
 In today's fast-paced, feature-driven markets, it's important to continuously deliver value and receive feedback on features quickly and continuously. Partnering with end users to get early versions of features vetted out is valuable.
 

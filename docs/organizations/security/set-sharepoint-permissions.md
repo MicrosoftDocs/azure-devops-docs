@@ -1,12 +1,10 @@
 ---
 title: Set SharePoint permissions for TFS
 description: How-to guide to set add users to SharePoint integrated with Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-security
 ms.topic: conceptual
 ms.assetid: 
 toc: show
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/02/2017
@@ -15,10 +13,10 @@ monikerRange: '>= tfs-2013 <= tfs-2017'
 
 # Set SharePoint site permissions
 
-[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [version-tfs-2013-2017](../../includes/version-tfs-2013-2017.md)]
 
 > [!IMPORTANT]
-> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md). 
+> Integration with a SharePoint site is only supported for on-premises TFS. For information on what is supported for Azure DevOps, see [Dashboards and reports overview](../../report/overview.md). If you don't have a site and want to add it, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md). 
 
 ## Add users to SharePoint site
 
@@ -53,6 +51,6 @@ or they won't be able to view or edit those reports.
 
 	-   **Site Collection Administrators** group for all site collections that the deployment of Team Foundation Server uses
 
-	![Follow instructions for your version of SharePoint](/azure/devops/server/admin/media/add-administrator-tfs/people-and-groups.png)
+	![Follow instructions for your version of SharePoint](media/people-and-groups.png)
 
 

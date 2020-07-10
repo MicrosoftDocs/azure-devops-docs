@@ -3,19 +3,17 @@ title: advanced package search syntax
 titleSuffix: Azure Artifacts
 description: Advanced options for using Package Search across all your feeds in a Azure DevOps organization
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: 'azure-devops'
 ms.date: 04/18/2019
 ---
 
 # How To: Use Package Search
 
-[!INCLUDE [version-header](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-header](../../includes/version-vsts-only.md)]
 
 Package Search is automatically available to users of Azure DevOps Services. By using Package Search you can:
 
@@ -24,7 +22,7 @@ free text search on title and description.
 You can also narrow your search by using Boolean operators and combine search criteria. 
 
 > [!div class="mx-imgBorder"]  
-> [Web portal package search](media/_shared/pkg-srch-u2.png)
+> [Web portal package search](media/shared/pkg-srch-u2.png)
 
 * **Search across all of your organization feeds**:
   Search in your and your team's feeds across the organization. Narrow your search by using feed, view 
@@ -32,7 +30,7 @@ You can also narrow your search by using Boolean operators and combine search cr
   Boolean operators to fine-tune it. 
 
 > [!div class="mx-imgBorder"]  
-> [Web portal package search across organization feeds](media/_shared/pkg-srch-u1.png)
+> [Web portal package search across organization feeds](media/shared/pkg-srch-u1.png)
 
 <a name="syntaxdetails"></a>
 
@@ -91,4 +89,4 @@ Within a phrase:
 
 * Boolean operators are treated as literal text.
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IHostHandshakeData API | Extensions for Azure DevOps Services
 description: Data passed from the host to an extension frame via the initial handshake
 ms.assetid: a91732d8-ba66-b488-9dfa-fc178d794f89
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Understand the tools that support connecting to Azure DevOps 
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 3836C81D-6E0A-46B5-8D1D-20E973E4F373
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -17,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Tools and clients that connect to Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 In this article, learn about the tools and clients that connect to Azure DevOps.
 
@@ -55,9 +53,9 @@ Developers have access to many tools through these versions of Visual Studio and
 - **Visual Studio Enterprise**: Integrated, end-to-end development tools and solutions for teams of any size, and with a need to scale. It supports designing, building, and managing complex enterprise applications.
 - **Visual Studio Test Professional**: Provides access to Microsoft Test and development tools to support quality and collaboration throughout the development process.
 - **Visual Studio Team Explorer**: Free solution for non-developers to interact with Team Foundation Server and Visual Studio Team Services.  
-- **[Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)**: Free plug-in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
-- **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](../java/download-android-studio-plug-in.md)**: Free plug-in to support Android developers and connect to Git repositories on Azure DevOps.
-- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)**: Free plug-in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
+- **[Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)**: Free plug in to support teams running Eclipse on Linux, macOS, or Windows that connects to Azure DevOps.  
+- **[Android Studio with the Azure DevOps Services Plug-in for Android Studio](../java/download-android-studio-plug-in.md)**: Free plug in to support Android developers and connect to Git repositories on Azure DevOps.
+- **[IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)**: Free plug in to support developers who use IntelliJ IDEA or Android Studio to connect to Git repositories on Azure DevOps.
 - **[Visual Studio Code](../java/vscode-extension.md)**: Free, open-source code editor with a free extension to support connecting to Git repositories on Azure DevOps.  
 
 To get started with client libraries, see [Client library samples](../integrate/get-started/client-libraries/samples.md).
@@ -164,7 +162,7 @@ The following extensions are available and are built and maintained by the Azure
 - [Azure Test Plans](../organizations/billing/buy-basic-access-add-users.md): Run tests by using your browser with simple pass/fail of steps, add comments/attachments, take screenshots, and file bugs. You can accomplish it all with automatic end-to-end traceability.  
 - [Azure Artifacts](../artifacts/start-using-azure-artifacts.md): Build packages of reusable code components and share them. The Azure Artifacts extension enables continuous delivery workflows by supporting multiple packaging protocols such as NuGet and npm. It makes packages available to your team, your builds, and your releases.
 - [Code search](https://marketplace.visualstudio.com/items?itemName=ms.vss-code-search): Increase cross-team collaboration and code sharing. Enables developers to quickly locate relevant information within the code base of all projects that are hosted within an organization or collection. You can discover implementation examples, browsing definitions, and error text.
-- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): Quickly find relevant work items by searching across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
+- [Work item search](https://marketplace.visualstudio.com/items?itemName=ms.vss-workitem-search): To quickly find relevant work items, search across all work item fields over all projects in an organization. Do full-text searches across all fields to efficiently locate relevant work items. Use inline search filters, on any work item field, to quickly narrow down a list of work items.  
   
 Find additional extensions in Azure DevOps **Organization settings** > **Extensions** > **Browse marketplace**.
 
@@ -196,7 +194,7 @@ With HockeyApp, you can develop, distribute, and beta test your mobile apps. Hoc
 - Open-source SDKs to let you know what code is running in your apps
 - Integration with your existing build system and work item management solution
 
-To learn more, see [Microsoft Azure - HockeyApp](/azure/application-insights/app-insights-overview).
+To learn more, see [Microsoft Azure - HockeyApp](https://azure.microsoft.com/updates/hockeyapp-available-for-purchase-through-azure/).
 
 ## Command-line tools
 

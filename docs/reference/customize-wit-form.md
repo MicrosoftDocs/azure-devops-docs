@@ -3,9 +3,7 @@ title: Customize the layout of the work item web form
 titleSuffix: Azure DevOps & TFS
 description: Customize the web version of the work item form in Azure DevOps Services & Team Foundation Server    
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 4DE53686-3349-41B8-A361-814B2519E60F
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -15,7 +13,7 @@ ms.date: 12/15/2017
 
 # Customize the work tracking web form  
 
-[!INCLUDE [temp](../_shared/dev15-and-ts-version-header.md)]  
+[!INCLUDE [temp](../includes/dev15-and-ts-version-header.md)]  
 
 
 > [!IMPORTANT]  
@@ -105,7 +103,7 @@ See the following topics to make the indicated customizations:
    For more information about using **witadmin**, see [Import, export, and manage work item types](witadmin/witadmin-import-export-manage-wits.md).
 
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
 <a id="resizing"></a>  
 ## Layout and resizing 

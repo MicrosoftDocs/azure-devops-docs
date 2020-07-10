@@ -2,24 +2,21 @@
 title: Publish Test Results task
 description: Publish Test Results to integrate test reporting into your build and release pipelines 
 ms.assetid: 6A752841-345D-4BC6-8765-C45F63D91D75
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: pbora
 author: pboraMSFT
-ms.date: 06/27/2019
+ms.date: 04/20/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Publish Test Results task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -51,6 +48,12 @@ produced when running tests to Azure Pipelines or TFS in order to obtain coverag
 The task supports popular coverage result formats such as [Cobertura](https://cobertura.github.io/cobertura/)
 and [JaCoCo](https://www.eclemma.org/jacoco/).
 
+## Check prerequisites
+
+If you're using a Windows self-hosted agent, be sure that your machine has this prerequisite installed:
+
+- [.NET Framework](https://docs.microsoft.com/dotnet/framework/install/) 4.6.2 or a later version
+
 <a name="demands"></a>
 
 ## Demands
@@ -63,7 +66,7 @@ and [JaCoCo](https://www.eclemma.org/jacoco/).
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PublishTestResultsV2.md)]
+[!INCLUDE [temp](../includes/yaml/PublishTestResultsV2.md)]
 
 The default option uses JUnit format to publish test results.
 When using VSTest as the **testRunner**, the **testResultsFiles** option should
@@ -88,17 +91,15 @@ in the **Ecosystems** section of these topics, which also includes examples for 
 
 | Argument | Description |
 | -------- | ----------- |
-| **Test result formats** | Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) |
-| **Test results files** | Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. |
-| **Search folder** | Folder to search for the test result files. Default is `$(System.DefaultWorkingDirectory)` |
-| **Merge test results** | When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly.  |
-| **Fail if there are test failures** | When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. |
-| **Test run title** | Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
-| **Fully Qualified Name** | This is the reference of the namespace, test method, and test class used to publish the test result. The format of FQN is namespace.testclass.methodname. It is not supported in the UI but is available via API.  |
-| **Advanced - Platform** | Build platform against which the test run should be reported. For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. |
-| **Advanced - Configuration** | Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. |
-| **Advanced - Upload test results files** | When selected, the task will upload all the test result files as attachments to the test run. |
-| **Control options** | See [Control options](../../process/tasks.md#controloptions) |
+|`testRunner` <br/>Test result format| (Required) Specify the format of the results files you want to publish. The following formats are supported:<br />- [CTest](https://cmake.org/cmake/help/latest/manual/ctest.1.html), [JUnit](https://github.com/windyroad/JUnit-Schema/blob/master/JUnit.xsd), [NUnit 2](https://nunit.org/documentation/), [NUnit 3](https://github.com/nunit/docs/wiki/Test-Result-XML-Format), Visual Studio Test (TRX) and [xUnit 2](https://xunit.github.io/docs/format-xml-v2.html) <br/>Default value: `JUnit` <br/>Argument alias: `testResultsFormat`|
+|`testResultsFiles` <br/>Test results files| (Required) Use this to specify one or more test results files.<br />- You can use a single-folder wildcard (`*`) and recursive wildcards (`**`). For example, `**/TEST-*.xml` searches for all the XML files whose names start with `TEST-` in all subdirectories. If using VSTest as the test result format, the file type should be changed to `.trx` e.g. `**/TEST-*.trx` <br />- Multiple paths can be specified, separated by a semicolon.<br />- Additionally accepts [minimatch patterns](../file-matching-patterns.md). <br/>For example, `!TEST[1-3].xml` excludes files named `TEST1.xml`, `TEST2.xml`, or `TEST3.xml`. <br/>Default value: `**/TEST-*.xml`|
+|`searchFolder`<br/>Search folder| (Optional) Folder to search for the test result files. <br/>Default value: `$(System.DefaultWorkingDirectory)`|
+|`mergeTestResults`<br/>Merge test results| When this option is selected, test results from all the files will be reported against a single [test run](../../test/test-glossary.md). If this option is not selected, a separate test run will be created for each test result file. <br />Note: Use merge test results to combine files from same test framework to ensure results mapping and duration are calculated correctly. <br/>Default value: `false`|
+|`failTaskOnFailedTests`<br/>Fail if there are test failures| (Optional) When selected, the task will fail if any of the tests in the results file is marked as failed. The default is false, which will simply publish the results from the results file. <br/>Default value: `false`|
+|`testRunTitle`<br/>Test run title| (Optional) Use this option to provide a name for the test run against which the results will be reported. Variable names declared in the build or release pipeline can be used. |
+|`platform`<br/>Build Platform| (Optional) Build platform against which the test run should be reported. <br/> For example, `x64` or `x86`. If you have defined a variable for the platform in your build task, use that here. <br/>Argument alias: `buildPlatform`|
+|`configuration`<br/>Build Configuration| Build configuration against which the Test Run should be reported. For example, Debug or Release. If you have defined a variable for configuration in your build task, use that here. <br/>Argument alias: `buildConfiguration`|
+|`publishRunAttachments`<br/>Upload test results files| (Optional) When selected, the task will upload all the test result files as attachments to the test run. <br/>Default value: `true`|
 
 <a name="resultmapping"></a>
 
@@ -333,7 +334,7 @@ YAML builds are not yet available on TFS.
        docker push $(dockerId).azurecr.io/dotnetcore-sample:$BUILD_BUILDID
        ```
 1. If you use Azure Container Registry, ensure you have
-   [pre-created the registry](https:/docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
+   [pre-created the registry](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) in the Azure portal.
    Copy the admin user name and password shown in the **Access keys** section of the registry settings in Azure portal.
 
 1. In the **Variables** tab of the build pipeline, define two variables:
@@ -375,7 +376,7 @@ The Publish Test Results task provides support for attachments for both test run
 * [Visual Studio Test](./vstest.md)  
 * [Publish Code Coverage Results](publish-code-coverage-results.md)
 
-## Frequently Asked Questions
+## FAQ
 
 #### What is the maximum permittable limit of FQN?
 
@@ -399,4 +400,4 @@ All test sub-result published will only have the test case name and the data of 
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-[!INCLUDE [test-help-support-shared](../../_shared/test-help-support-shared.md)]
+[!INCLUDE [test-help-support-shared](../../includes/test-help-support-shared.md)]

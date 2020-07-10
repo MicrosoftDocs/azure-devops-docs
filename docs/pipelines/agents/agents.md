@@ -1,25 +1,20 @@
 ---
-ms.prod: devops
 title: Azure Pipelines Agents
 ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
-ms.technology: devops-cicd
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 11/20/2019
+ms.date: 04/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Azure Pipelines agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -36,7 +31,7 @@ Jobs can be run [directly on the host machine of the agent](../process/phases.md
 
 ## Microsoft-hosted agents
 
-[!INCLUDE [include](_shared/hosted-agent-intro.md)]
+[!INCLUDE [include](includes/hosted-agent-intro.md)]
 
 [Learn more about Microsoft-hosted agents](hosted.md).
 
@@ -79,7 +74,33 @@ You can install the agent on Linux, macOS, or Windows machines. For more informa
 
 ::: moniker-end
 
+> [!NOTE]
+> On macOS, you need to clear the special attribute on the download archive to prevent Gatekeeper protection from displaying for each assembly in the tar file when `./config.sh` is run. The following command clears the extended attribute on the file:
+>
+> ```bash
+> xattr -c vsts-agent-osx-x64-V.v.v.tar.gz  ## replace V.v.v with the version in the filename downloaded.
+> 
+> # then unpack the gzip tar file normally:
+> 
+> tar xvfz vsts-agent-osx-x64-V.v.v.tar.gz
+> ```
+
 After you've installed the agent on a machine, you can install any other software on that machine as required by your jobs.
+
+::: moniker range="azure-devops"
+
+## Azure virtual machine scale set agents
+
+> [!NOTE]
+> This feature is currently in preview.
+
+Azure virtual machine scale set agents are a form of self-hosted agents that can be auto-scaled to meet your demands. This elasticity reduces your need to run dedicated agents all the time. Unlike Microsoft-hosted agents, you have flexibility over the size and the image of machines on which agents run.
+
+You specify a virtual machine scale set, a number of agents to keep on standby, a maximum number of virtual machines in the scale set, and Azure Pipelines manages the scaling of your agents for you.
+
+For more information, see [Azure virtual machine scale set agents](scale-set-agents.md).
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -129,11 +150,11 @@ You can view the details of an agent, including its version and system capabilit
 
 1. In your web browser, navigate to Agent pools:
 
-   [!INCLUDE [agent-pools-tab](_shared/agent-pools-tab.md)]
+   [!INCLUDE [agent-pools-tab](includes/agent-pools-tab.md)]
 
 1. Navigate to the capabilities tab:
  
-   [!INCLUDE [agent-capabilities](_shared/agent-capabilities-tab.md)]
+   [!INCLUDE [agent-capabilities](includes/agent-capabilities-tab.md)]
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
@@ -258,7 +279,7 @@ ID    Name                             Is Hosted    Pool Type
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * *
 
@@ -405,7 +426,7 @@ To use this method of authentication, you must configure your TFS server as foll
 
 1. Sign in to the machine where you are running TFS.
 
-1. Configure basic authentication. See [Using tfx against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
+1. Configure basic authentication. See [Using `tfx` against Team Foundation Server 2015 using Basic Authentication](https://github.com/Microsoft/tfs-cli/blob/master/docs/configureBasicAuth.md).
 
 ::: moniker-end
 
@@ -472,12 +493,32 @@ We indicate the agent version in the format `{major}.{minor}`.
 For instance, if the agent version is `2.1`, then the major version is 2 and the minor version is 1.
 
 Microsoft-hosted agents are always kept up-to-date.
-If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically by Azure Pipelines.
+If the newer version of the agent is only different in _minor_ version, self-hosted agents can usually be updated automatically (configure this setting in **Agent pools**, select your agent, **Settings** - the default is enabled) by Azure Pipelines.
 An upgrade is requested when a platform feature or one of the tasks used in the pipeline requires a newer version of the agent.
 
 If you run a self-hosted agent interactively, or if there is a newer _major_ version of the agent available, then you may have to manually upgrade the agents.
 You can do this easily from the **Agent pools** tab under your organization.
 Your pipelines won't run until they can target a compatible agent.
+
+### To update self-hosted agents
+
+1. Navigate to **Project settings**, **Agent pools**.
+
+    ![Project settings, Agent pools](media/agent-queues-tab/agent-queues.png)
+
+2. Select your agent pool and choose **Update all agents**.
+
+    ![Update all agents](media/agents/update-all-agents.png)
+
+    You can also update agents individually by choosing **Update agent** from the **...** menu.
+
+    ![Update agent](media/agents/update-agent.png)
+
+3. Select **Update** to confirm the update.
+
+    ![Update all agents confirmation](media/agents/update-all-agents-confirmation.png)
+
+4. An update request is queued for each agent in the pool, that runs when any currently running jobs complete. Upgrading typically only takes a few moments - long enough to download the latest version of the agent software (approximately 200 MB), unzip it, and restart the agent with the new version. You can monitor the status of your agents on the **Agents** tab.
 
 ::: moniker-end
 
@@ -500,9 +541,9 @@ Your pipelines won't run until they can target a compatible agent.
 
 You can view the version of an agent by navigating to **Agent pools** and selecting the **Capabilities** tab for the desired agent, as described in [View agent details](#view-agent-details).
 
-## Q & A
+## FAQ
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 <h3 id="private-agent-performance-advantages">Do self-hosted agents have any performance advantages over Microsoft-hosted agents?</h3>
 

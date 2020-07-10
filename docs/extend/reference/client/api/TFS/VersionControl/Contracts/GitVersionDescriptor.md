@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitVersionDescriptor API | Extensions for Azure DevOps Services
 ms.assetid: 939b061b-f663-d236-e528-26c44c294558
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

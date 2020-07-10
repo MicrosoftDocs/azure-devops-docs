@@ -2,10 +2,8 @@
 title: Exploratory testing in connected mode
 description: Manual and exploratory testing - exploratory testing by using the Test & Feedback extension in Connected mode
 ms.assetid: 0F52826C-218D-437A-B6FF-EB8E8292CE3C
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: quickstart
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing with the Test &amp; Feedback extension in Connected mode
 
-[!INCLUDE [version-header](_shared/version-header.md)] 
+[!INCLUDE [version-header](includes/version-header.md)] 
 
 To use the Test &amp; Feedback extension in **Connected** mode you must connect 
 to Azure DevOps or TFS 2015 and later.
@@ -31,7 +29,7 @@ This automatically configures the extension based on your access level:
   by the team by choosing the **Provide feedback** link in the email.
   [More details](provide-stakeholder-feedback.md#email).
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="connectvtfs"></a>
 ## Connect to Azure DevOps or TFS
@@ -44,11 +42,11 @@ This automatically configures the extension based on your access level:
 
 1. Open the extension in your web browser and select **Connected** mode.
 
-   ![Start the extension in Connected mode](media/_shared/connectedmode-01.png)
+   ![Start the extension in Connected mode](media/shared/connectedmode-01.png)
  
 1. Enter the Azure DevOps or TFS URL you want to connect to and choose **Next**.
 
-   ![Enter the Azure DevOps or TFS URL you want to connect to](media/_shared/connectedmode-02.png)
+   ![Enter the Azure DevOps or TFS URL you want to connect to](media/shared/connectedmode-02.png)
 
    If you are connecting for the first time, you may be prompted to sign in. 
  
@@ -166,7 +164,7 @@ The extension lets you create test cases as you explore your application.
 
    ![View the exploratory testing session](media/connected-mode-exploratory-testing/create-bugs-06.png)
 
-   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](_shared/test-hub-include.md)].
+   Alternatively, open the **Recent exploratory sessions** list directly in the **Runs** page of [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
  
    ![View exploratory testing sessions on the server](media/connected-mode-exploratory-testing/create-bugs-07.png)
 

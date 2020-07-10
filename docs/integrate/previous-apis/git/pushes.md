@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Pushes | REST API Reference for Team Foundation Server
 description: Work with Git pushes programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 20422F1A-30A6-405F-AAE2-BABDA6371E40
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -20,7 +18,7 @@ ms.date: 08/04/2016
 
 [!INCLUDE [GET_STARTED](../_data/get-started.md)]
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/PushesSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/PushesSample.cs) available for this endpoint.
 
 
 ## Get a list of pushes

@@ -2,11 +2,10 @@
 title: Remove work items permanently
 titleSuffix: TFS  
 description: Permanently delete work items added to Team Foundation Server
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: witadmin
 ms.assetid: 345641a1-0c8d-4af8-84ce-37a449627a52
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops-2019'
@@ -15,7 +14,7 @@ ms.date: 07/12/2018
 
 # Remove work items permanently
 
-[!INCLUDE [temp](../../_shared/version-header-tfs-only.md)]
+[!INCLUDE [temp](../../includes/version-header-tfs-only.md)]
 
 You can permanently remove one or more work items from the on-premises Team Foundation database for a project collection by using the **witadmin destroywi** command. Work items whose state is set to Closed remain in the database and can be reactivated. Permanently removed work items are removed from the database and cannot be restored nor reactivated.  
   
@@ -23,7 +22,7 @@ You can permanently remove one or more work items from the on-premises Team Foun
   
  You can run **witadmin destroywi** against an on-premises TFS only. 
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool.md)]    
+[!INCLUDE [temp](../../includes/witadmin-run-tool.md)]    
   
  **Requirements**  
   

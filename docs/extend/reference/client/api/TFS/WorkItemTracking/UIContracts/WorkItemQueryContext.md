@@ -2,10 +2,8 @@
 title: TFS/WorkItemTracking/UIContracts WorkItemQueryContext API | Extensions for Azure DevOps Services
 description: A work item query in the WIT UI
 ms.assetid: 0129f51a-152c-7e03-9a0a-46ec7e5f4ec5
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

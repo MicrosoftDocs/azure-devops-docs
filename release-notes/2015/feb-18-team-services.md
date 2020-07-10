@@ -1,7 +1,6 @@
 ---
 title: Kanban split columns, inline adding and editing – Feb 18
 description: VSTS release notes for February 18 2015
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: b6ba0a5e-3260-4dd0-937d-9491c29e01b8
@@ -44,7 +43,7 @@ Application Insights in the Azure Preview Portal
 
 Finally, we want to give everyone a heads up that new customers on-boarding apps to Application Insights must now use [Application Insights in the Azure Preview Portal](https://azure.microsoft.com/services/application-insights/). While existing users of Application Insights in the Visual Studio Online Portal are unaffected, we recommend all customers begin monitoring in the Azure Preview Portal. Because historical data will not migrate between portals, adding the second telemetry collection will ensure monitoring is unaffected while you transition your apps.
 
-Additional information is available here: [Application Insights: Moving from Visual Studio Online Portal to Azure Preview Portal](https://blogs.msdn.com/b/visualstudioalm/archive/2015/02/06/application-insights-moving-from-visual-studio-online-portal-to-azure-preview-portal.aspx)
+Additional information is available here: [Application Insights: Moving from Visual Studio Online Portal to Azure Preview Portal](https://devblogs.microsoft.com/devops/application-insights-moving-from-visual-studio-online-portal-to-azure-preview-portal/)
 
 Feel free to reach out with feedback on [Twitter](https://twitter.com/VisualStudio) and don’t forget to share what you’d like to see us prioritize on [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

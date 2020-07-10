@@ -2,10 +2,7 @@
 title: Deploy to VMware
 description: Provision and manage virtual machines (VMs) in VMware vCenter Server
 ms.assetid: 1A6903E4-B0B3-426E-9E07-67492ADB1F42
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2017'
 
 # Deploy to VMware vCenter Server
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically provision virtual machines in a VMware environment and deploy to those virtual machines after every successful build.
 

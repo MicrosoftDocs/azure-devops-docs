@@ -2,10 +2,8 @@
 title: Add a Hub | Extensions for Azure DevOps Services
 description: Extend Azure DevOps Services with your own hub.
 ms.assetid: 0d06c2d8-402f-4373-a2d3-2513ae278443
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
@@ -14,13 +12,13 @@ ms.date: 12/31/2019
 
 # Add a hub
 
-[!INCLUDE [version-azure-devops](../../_shared/version-azure-devops.md)]
+[!INCLUDE [version-azure-devops](../../includes/version-azure-devops.md)]
 
-[!INCLUDE [extension-docs-new-sdk](../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 We'll create a new hub that displays in the Work hub group, after the Backlogs and Queries hubs.
 
-![Location of a new hub in Azure DevOps Services](../_shared/procedures/media/hub-location.png)
+![Location of a new hub in Azure DevOps Services](../media-procedures/hub-location.png)
 
 ## Structure of an extension
 ```no-highlight

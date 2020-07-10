@@ -3,10 +3,8 @@ title: Git and TFVC version control
 titleSuffix: Azure Repos
 description: Choosing which version control to use in Azure Repos
 ms.assetid: A4D7295A-22AB-4990-BE68-EF81A1C31F01
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 05/12/2017
@@ -36,7 +34,7 @@ Git is a distributed version control system. Each developer has a copy of the so
 >[!NOTE]
 >Git in Visual Studio, Azure DevOps Services, and TFS is standard Git. You can use Visual Studio with third-party Git services, and you can also use third-party Git clients with TFS.
  
-To learn more, see [Git and Azure Repos](../../repos/git/overview.md).
+To learn more, see [Git and Azure Repos](../../repos/git/index.yml).
 
 ### TFVC (centralized)
  
@@ -110,7 +108,7 @@ Need more help to make a choice? These charts might help.
 <tr>
 <td>File storage</td>
 <td>You can check in large binary files. You might also want to use <a href="https://go.microsoft.com/fwlink/?LinkId=246165" data-raw-source="[NuGet](https://go.microsoft.com/fwlink/?LinkId=246165)">NuGet</a> in combination or as an alternative.</td>
-<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://blogs.msdn.microsoft.com/visualstudioalm/2015/10/01/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
+<td>You can check in small binary files as you would regular files. When working with large binary files, use <a href="https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/" data-raw-source="[Git-LFS](https://devblogs.microsoft.com/devops/announcing-git-lfs-on-all-vso-git-repos/)">Git-LFS</a> to store your large binary files in Azure Repos.</td>
 </tr>
 <tr>
 <td>History</td>

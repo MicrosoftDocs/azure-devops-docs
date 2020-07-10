@@ -2,14 +2,12 @@
 title: Azure App Service Deploy task
 description: The Azure App Service Deploy task is used to update Azure App Services to deploy Web Apps, Functions, and WebJobs.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6D557DD5-9373-47AD-AA2E-72B6DE264F66
 ms.manager: dastahel
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
-ms.date: 11/29/2019
+ms.date: 04/22/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -17,7 +15,7 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy to a range of App Services on Azure.
+Use this task to deploy to a range of App Services on Azure.
 The task works on cross-platform agents running Windows, Linux, or Mac 
 and uses several different [underlying deployment technologies](#deploy-methods).
 
@@ -45,7 +43,7 @@ The following prerequisites must be set up in the target machine(s) for the task
 * **App Service instance**. The task is used to deploy a Web App project or Azure Function project to an existing Azure App Service instance, which must exist before the task runs.
   The App Service instance can be created from the [Azure portal](https://azure.microsoft.com/documentation/videos/azure-app-service-web-apps-with-yochay-kiriaty/)
   and [configured](https://azure.microsoft.com/documentation/articles/web-sites-configure/) there.
-  Alternatively, the [Azure PowerShell task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShell) can be used to run
+  Alternatively, the [Azure PowerShell task](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/AzurePowerShellV2) can be used to run
   [AzureRM PowerShell scripts](/powershell/module/azurerm.websites) to provision and configure the Web App.
 
 * **Azure Subscription**. To deploy to Azure, an Azure subscription must be [linked to the pipeline](../../library/connect-to-azure.md).
@@ -211,7 +209,7 @@ For windows based agents.
 <table><thead><tr><th>App Service type</th><th>Package type</th><th>Deployment Method</th></tr></thead>
 <tr><td>WebApp on Linux or Function App on Linux</td><td>Folder/Zip/jar <br/>War</td><td>Zip Deploy<br/>War Deploy</td></tr>
 <tr><td>WebApp for Containers (Linux) or Function App for Containers (Linux)</td><td>Update the App settings</td><td>NA</td></tr>
-<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/> Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/>if postDeploymentScript == true Zip Deploy <br/> else, Run From Package</td></tr>
+<tr><td>WebApp on Windows, Function App on Windows, API App, or Mobile App</td><td>War<br/>Jar<br/>MsBuild package type or deploy to virtual application <br/><br/><br/>   Folder/Zip</td><td>War Deploy<br/>Zip Deploy <br/>Web Deploy <br/><br/> if postDeploymentScript == true, Zip Deploy <br/> else, Run From Package</td></tr>
 </table>
 
 On non-Windows agents (for any App Service type), the task relies on
@@ -261,7 +259,7 @@ container registry, repository, image name, and tag information. You can also us
 
 ### Zip Deploy
 
-Creates a .zip deployment package and deploys the file contents to the **wwwroot** folder of the App Service or Function App in Azure.
+Expects a .zip deployment package and deploys the file contents to the **wwwroot** folder of the App Service or Function App in Azure.
 This option overwrites all existing contents in the **wwwroot** folder. For more information, see
 [Zip deployment for Azure Functions](https://docs.microsoft.com/azure/azure-functions/deployment-zip-push).
 
@@ -269,7 +267,7 @@ This option overwrites all existing contents in the **wwwroot** folder. For more
 
 ### Run From Package
 
-Creates the same deployment package as Zip Deploy. However, instead of deploying files to the **wwwroot** folder, the entire package is
+Expects the same deployment package as Zip Deploy. However, instead of deploying files to the **wwwroot** folder, the entire package is
 mounted by the Functions runtime and files in the **wwwroot** folder become read-only. For more information, see
 [Run your Azure Functions from a package file](https://docs.microsoft.com/azure/azure-functions/run-functions-from-deployment-package).
 
@@ -277,13 +275,13 @@ mounted by the Functions runtime and files in the **wwwroot** folder become read
 
 ### War Deploy
 
-Creates a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
+Expects a .war deployment package and deploys the file content to the **wwwroot** folder or **webapps** folder of the App Service in Azure.
 
 ## Troubleshooting
 
-[!INCLUDE [rm-app-service-troubleshoot-shared](./_shared/rm-app-service-troubleshoot-shared.md)]
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
 
-[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared](./_shared/rm-webapp-functionapp-troubleshoot-shared.md)]
+[!INCLUDE [rm-webapp-functionapp-troubleshoot-shared](./includes/rm-webapp-functionapp-troubleshoot-shared.md)]
 
 ### Web app deployment on Windows is successful but the app is not working
 
@@ -291,11 +289,11 @@ This may be because web.config is not present in your app. You can either add a 
 
 * Click on the task and go to Generate web.config parameters for Python, Node.js, Go and Java apps.
 
-![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
+    ![Generate web.config parameters Dialog](media/azure-rm-web-app-deployment-01.png)
 
 * Click on the more button Generate web.config parameters for Python, Node.js, Go and Java apps to edit the parameters.
 
-![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
+    ![Drop Down Dialog](media/azure-rm-web-app-deployment-02.png)
 
 * Select your application type from the drop down.
 * Click on OK. This will populate web.config parameters required to generate web.config.
@@ -310,9 +308,16 @@ You can also use *Run From Package deployment* method to avoid resource locking.
 
 If you are using web deploy to deploy your app, in some error scenarios Web Deploy will show an error code in the log. To troubleshoot a web deploy error see [this](https://docs.microsoft.com/iis/publish/troubleshooting-web-deploy/web-deploy-error-codes).
 
+### Web app deployment on App Service Environment (ASE) is not working
+* Ensure that the Azure DevOps build agent is on the same VNET (subnet can be different) as the Internal Load Balancer (ILB) of  ASE. This will enable the agent to pull code from Azure DevOps and deploy to ASE. 
+* If you are using Azure DevOps, the agent neednt be accessible from internet but needs only outbound access to connect to Azure DevOps Service. 
+* If you are using TFS/Azure DevOps Server deployed in a Virtual Network, the agent can be completely isolated.
+* Build agent must be configured with the DNS configuration of the Web App it needs to deploy to. Since the private resources in the Virtual Network don't have entries in Azure DNS, this needs to be added to the hosts file on the agent machine.
+* If a self-signed certificate is used for the ASE configuration, "-allowUntrusted" option needs to be set in the deploy task for MSDeploy.It is also recommended to set the variable VSTS_ARM_REST_IGNORE_SSL_ERRORS to true. If a certificate from a certificate authority is used for ASE configuration, this should not be necessary.
+
 ## FAQs
 
-[!INCLUDE [rm-app-service-FAQs-shared](./_shared/rm-app-service-faqs-shared.md)]
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open source
 

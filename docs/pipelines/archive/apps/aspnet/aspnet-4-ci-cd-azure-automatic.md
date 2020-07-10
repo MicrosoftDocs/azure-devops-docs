@@ -3,10 +3,7 @@ ms.assetid: 6DD68CF7-072E-42F4-99FF-06C93D997947
 title: Generate a pipeline to deploy an ASP.NET app
 ms.custom: seodec18
 description: Learn how you can automatically generate a CI/CD pipeline to deploy an ASP.NET app from Azure Pipelines or Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 01/02/2017
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Use Azure to automatically generate a CI/CD pipeline to deploy an ASP.NET app
 
-[!INCLUDE [version-tfs-2015-rtm](../../../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../../../includes/version-tfs-2015-rtm.md)]
 
 This tutorial shows how to configure a continuous delivery (CD) workflow for
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-changes-existing-services/)
@@ -228,7 +225,7 @@ may encounter the following known issues:
   configure Azure Pipelines to be backed by an Azure Active Directory (Azure AD) instance. For information on how to do this, see
   [Azure Pipelines - Access with Azure Active Directory](../../../../organizations/accounts/access-with-azure-ad.md).
 
-## Q&A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
@@ -253,9 +250,9 @@ may encounter the following known issues:
 1. [Commit and push (Git)](../../../../repos/git/share-your-code-in-git-vs.md) or [check in (TFVC)](../../../../repos/tfvc/share-your-code-in-tfvc-vs.md) your code.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [qa-versions](../../../_shared/qa-versions.md)]
+[!INCLUDE [qa-versions](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->
 
-[!INCLUDE [rm-help-support-shared](../../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../../includes/rm-help-support-shared.md)]

@@ -2,10 +2,8 @@
 title: Use the Menubar Control | Extensions for Azure DevOps Services
 description: Used to display a menubar in your app for Azure DevOps Services.
 ms.assetid: 13A6E34D-BE7D-463E-570C-C27B4ACC2129
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ This page shows different samples about the menubar control.
 
 **Go to [API Reference](../../reference/client/controls/menubar.md) for more details.**
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 

@@ -4,7 +4,6 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Guide to providing product and content feedback, and accessing support resources in Azure DevOps
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: 8A725F33-19F1-4964-BD5C-E1FB92F02B6E  
 ms.manager: chcomley
 ms.author: chcomley
@@ -16,7 +15,7 @@ monikerRange: '>= tfs-2013'
 
 # Get support and provide feedback
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 > [!Important]
 > Having problems? We can help. We offer a [live chat](https://visualstudio.microsoft.com/vs/support/#talktous) (English only) support option. Choose from **Technical Support**, **Sales Support**, **Visual Studio (For your Company)**, and **Account, Subscription, and Billing Support**. Select your country from the dropdown menu, and then select **Live Chat (English)**.

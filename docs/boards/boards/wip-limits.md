@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Set Work In Progress Limits on the Kanban board in Azure Boards and Team Foundation Server 
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: d18351c1-e9e1-4c16-869d-e15ca478c748
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,9 +15,9 @@ ms.date: 02/14/2019
 
 # Work in Progress limits
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
-An essential Kanban practice&mdash;Work in Progress limits, aka "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
+An essential Kanban practice&mdash;Work in Progress limits, referred to as "WIP limits"&mdash;constrains the amount of work your team undertakes at each work stage. It's designed to focus your team on completing items before starting new work. While counter-intuitive at first, many teams find WIP limits helps them increase their productivity and improve their software quality.  
 
 You define WIP limits for each work stage, corresponding to each intermediate column. The limit sets a soft constraint on the number of items allowed within the column. Nothing actually prevents you from moving more items into the column and exceeding the limit. Your Kanban board shows the count of items at each stage next to each limit.
 
@@ -27,7 +25,7 @@ You define WIP limits for each work stage, corresponding to each intermediate co
 
 While [setting WIP limits](#Set) is simple, adhering to the limits takes a team commitment. Successful adoption of WIP limits involves a culture change. It moves teams from a focus on individual productivity to one of team productivity. 
 
-[!INCLUDE [temp](../_shared/prerequisites-team-settings.md)]
+[!INCLUDE [temp](../includes/prerequisites-team-settings.md)]
 
 <a id="Initial WIP" />
 

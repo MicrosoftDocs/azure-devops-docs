@@ -1,12 +1,8 @@
 ﻿---
 title: Using packages in Azure DevOps best practices
 description: Learn best practices for producing and consuming feeds and packages in Visual Studio Team Services and Team Foundation Server
-ms.prod: devops
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 05/18/2018
 monikerRange: '>= tfs-2017'
 ---

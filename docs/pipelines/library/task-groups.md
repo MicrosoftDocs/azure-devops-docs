@@ -3,10 +3,7 @@ title: Task Groups in Azure Pipelines and TFS
 ms.custom: seodec18
 description: Understand Task Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 0FEAE814-2AF8-441B-A099-E77B1008D2F0
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 04/02/2019
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2017'
 
 # Task groups for builds and releases
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 > [!NOTE]
@@ -195,4 +192,4 @@ However, if your taskgroup update is not a breaking change but you would like to
 * [Tasks](../process/tasks.md)
 * [Task jobs](../process/phases.md)
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

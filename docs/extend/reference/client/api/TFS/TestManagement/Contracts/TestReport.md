@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts TestReport API | Extensions for Azure DevOps Services
 description: Data representation of a test report.
 ms.assetid: 42c3a548-aae5-71da-c940-20fe2a5b52ae
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

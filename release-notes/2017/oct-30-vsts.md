@@ -4,7 +4,6 @@ author: alexcnichols
 ms.author: alexn
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 description: Visual Studio Team Services (VSTS) release notes for Sprint 125 Update on October 30, 2017.

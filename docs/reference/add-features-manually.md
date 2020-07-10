@@ -3,9 +3,7 @@ title: Manually add features after an upgrade
 titleSuffix: TFS
 description: Manually update an existing project to access new features after upgrading Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 21AB0EE7-FB48-43E6-89EA-EC438C5D4F21
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -293,7 +291,7 @@ To learn more about managing process templates, see, [Upload or download a proce
 
 ## Import a WIT 
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)]  
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)]  
 
 1. Enter the ```witadmin importwitd``` command, substituting your data for the arguments that are shown.   
 

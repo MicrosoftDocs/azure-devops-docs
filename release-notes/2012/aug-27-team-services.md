@@ -1,7 +1,6 @@
 ---
 title: Team Foundation Service updates - Aug 27
 description: VSTS release notes for August 27 2012
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.manager: jillfra
 ms.assetid: 98cc1eb1-1b6f-415d-814b-da3d8a02d90c

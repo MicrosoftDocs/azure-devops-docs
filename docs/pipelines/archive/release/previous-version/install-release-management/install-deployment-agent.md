@@ -3,10 +3,7 @@ title: Install Release Management deployment agent
 ms.custom: seodec18
 description: Learn how you can install deployment agent and set up machines for an environment for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Install deployment agents and set an environment
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
 ![Installing Release Management on TFS](media/install-agent-01.png)
 
@@ -103,6 +100,6 @@ automatically added to Release Management.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
   
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

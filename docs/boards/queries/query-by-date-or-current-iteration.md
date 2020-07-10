@@ -4,19 +4,17 @@ titleSuffix: Azure Boards
 description: Query for work items based on a date, a team's current iteration, or a sliding window of sprints in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 95D9F558-E3C4-4D5F-BB69-76A3BD7625D8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 03/10/2020  
 ---
 
 # Query by date or current iteration
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 The <strong>@Today</strong> and <strong>@CurrentIteration</strong> macros are useful for listing work items based on relative dates or their assignment to a team's current iteration. To list work items based on when they were created, closed, resolved, or changed state&mdash;use <strong>@Today</strong> or specify dates. For queries that list work items based on their assignment to a team's current sprint, use <strong>@CurrentIteration</strong>. 
 
@@ -33,7 +31,6 @@ In addition, you can use  the <b>@CurrentIteration +/- <i>n</i></b> macro to cre
 
 Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iteration Path</strong> can use the operators and macros listed in the following table.
 
-
 ::: moniker range=">= azure-devops-2019"
 
 <table valign="top">
@@ -47,7 +44,7 @@ Query clauses that specify a <strong>DateTime</strong> field or the <strong>Iter
 <tr>
 	<td><p><strong>DateTime</strong> </p></td>
     <td>= , &lt;&gt; , &gt; , &lt; , &gt;= , &lt;= , =[Field], &lt;&gt;[Field], &gt;[Field], &lt;[Field], &gt;=[Field], &lt;=[Field], In, Not In, Was Ever
-    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"><sup>1</sup></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> interger.</p></td>
+    <p><strong>Macros</strong>:  <strong><xref href="StartOfDay" data-throw-if-not-resolved="False" data-raw-source="@StartOfDay"></xref></strong>, <strong><xref href="StartOfWeek" data-throw-if-not-resolved="False" data-raw-source="@StartOfWeek"></xref></strong>, <strong><xref href="StartOfMonth" data-throw-if-not-resolved="False" data-raw-source="@StartOfMonth"></xref></strong>, <strong><xref href="StartOfYear" data-throw-if-not-resolved="False" data-raw-source="@StartOfYear"><sup>1</sup></xref></strong>, and <strong><xref href="Today" data-throw-if-not-resolved="False" data-raw-source="@Today"></xref></strong>; each of these macros can be specified with a <strong> +/- n</strong> integer.</p></td>
 </tr>
 <tr>
 	<td><p> <strong>TreePath</strong> </p></td>
@@ -167,7 +164,7 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 </tbody>
 </table>
 
-[!INCLUDE [temp](../_shared/query-clause-tip.md)]
+[!INCLUDE [temp](../includes/query-clause-tip.md)]
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -236,7 +233,7 @@ If your team follows Scrum processes, you [schedule work to be completed in spri
 Any item assigned to a sprint which corresponds to the current iteration path for the team will be found.  For example, if a team is on Sprint 5, then the query will return items assigned to Sprint 5. Later, when the team is working in Sprint 6, the same query will return items assigned to Sprint 6.  
 
 > [!NOTE]
-> For the <strong>@CurrentIteration</strong> macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
+> For the <strong>@CurrentIteration</strong> macro to work, the team must have selected an **Iteration Path** whose date range encompasses the current date. For details, see [Define iteration paths (also referred to as sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). Also, queries that contain this macro are only valid when run from the web portal.
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -248,7 +245,7 @@ Azure Boards adds a team parameter when you select the <strong>@CurrentIteration
 > ![Query filter using the @CurrentIteration macro with team parameter](media/query-date-iteration/at-current-with-team-parameter.png)  
 
 > [!TIP]  
-> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it]((../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> If the @CurrentIteration macro isn't working, check that the [expected iteration is selected for your team and that dates have been set for it](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 
 To change the team parameter the system automatically sets, you choose it by typing the name of the team into the parameter field added below the <strong>@CurrentIteration</strong> macro.  
 
@@ -276,7 +273,7 @@ Use the <b>@CurrentIteration +/- <i>n</i></b> macro when you want to track the w
 
 > [!NOTE]
 > For the <b>@CurrentIteration +/- <i>n</i></b> macro to work, the team must have selected **Iteration Paths** that meet the <b>+/- <i>n</i></b>
-> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
+> criteria and date ranges encompass the current date for the <strong>@CurrentIteration</strong>. For details about team selection of Iteration Paths, see [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md#activate). 
 > 
 > See also [Client restrictions on the use of the @CurrentIteration macros](#current_sprint_restrict) later in this article.
 
@@ -290,7 +287,9 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 ::: moniker-end
 
 <a id="date_fields">  </a>
+
 ## Date and Iteration Path fields
+
 <p>You can use date fields to filter your queries. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table.</p>
 
 <table>
@@ -302,15 +301,13 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Activated Date <sup>1</sup>  </p>
+    <p>Activated Date <sup>1, 2</sup>  </p>
   </td>
   <td>
     <p>The date and time when the work item was created or when its status was changed from closed, completed, or done to a new or active state.  </p>
 	<p>Reference name=Microsoft.VSTS.Common.ActivatedDate, Data type=DateTime</p>
   </td>
-  <td>
-    <p>All</p>
-  </td>
+  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
 </tr>
 <tr>
   <td>
@@ -326,8 +323,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Closed Date <sup>1</sup> </p>
-
+   <p>Closed Date <sup>2</sup> </p>
   </td>
   <td>
     <p>The date and time when a work item was closed.</p>
@@ -361,18 +357,15 @@ To use this macro, the specified team must have [selected a set of sprints](../.
     <p>Issue (Agile)</p>
   </td>
 </tr>
-
 <tr>
   <td>
-    <p>Finish Date <sup>2</sup> </p>
+    <p>Finish Date <sup>3</sup> </p>
   </td>
   <td>
     <p>The date and time when the schedule indicates that the task will be completed. </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.FinishDate, Data type=DateTime</p>
   </td>
-  <td>
-    <p>Task, Bug</p>
-  </td>
+  <td>Requirement, Task, Test Plan, User Story </td>
 </tr>
 <tr>
   <td>Iteration Path</td>
@@ -383,27 +376,23 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 </tr>
 <tr>
   <td>
-    <p>Resolved Date <sup>1</sup> </p>
+    <p>Resolved Date <sup>1, 2</sup> </p>
   </td>
   <td>
     <p>The date and time when the work item was moved into a Resolved state. </p>
 	<p>Reference name=Microsoft.VSTS.Common.ResolvedDate, Data type=DateTime</p>
   </td>
-  <td>
-    <p>Bug (Agile, CMMI)</p>
-  </td>
+  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
 </tr>
 <tr>
   <td>
-    <p>Start Date <sup>2</sup> </p>
+    <p>Start Date <sup>3</sup> </p>
   </td>
   <td>
     <p>The date and time when the schedule indicates that the task will start.  </p>
 <p>Reference name=Microsoft.VSTS.Scheduling.StartDate, Data type=DateTime</p>
   </td>
-  <td>
-    <p>Task, Bug</p>
-  </td>
+  <td>Epic, Feature, Requirement, Task, Test Plan, User Story </td>
 </tr>
 <tr>
   <td>
@@ -426,7 +415,7 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <p>Reference name=Microsoft.VSTS.Scheduling.TargetDate, Data type=DateTime</p>
   </td>
   <td>
-    <p>Feature</p>
+    <p>Epic, Feature</p>
   </td>
 </tr>
 </tbody>
@@ -434,6 +423,8 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 
 #### Notes:
  
+1. See also [Query by assignment or workflow changes, Date and Identity fields](query-by-workflow-changes.md).
+
 1. For these fields to be defined for a WIT, they must be included in the ```WORKFLOW``` section of the WIT definition. For example, this syntax is included within the ```FIELDS``` definition when transitioning to a Resolved state:  
 	```xml
 	<FIELD refname="Microsoft.VSTS.Common.ResolvedDate" />  
@@ -447,10 +438,11 @@ To use this macro, the specified team must have [selected a set of sprints](../.
 <a id="current_sprint_restrict"> </a> 
 
 ## Client restrictions on the use of the @CurrentIteration macros 
-You can use the <strong>@CurrentIteration</strong> in a query from the following clients:  
+
+You can use the <strong>@CurrentIteration</strong> in a query from the following clients:
 
 - Web portal that connects to Azure Boards 
-- Web portal that connects to an on-premises TFS 2015 or later version 
+- Web portal that connects to an on-premises Azure DevOps 2015 or later version 
 - Visual Studio 2015 or Team Explorer 2015 or later versions connected to Azure Boards or TFS 2015 or later versions. 
 - Using the REST API
 
@@ -461,16 +453,18 @@ An error occurs if you open a query that contains the <strong>@CurrentIteration<
 
 
 ## Related articles
+
 To query for items based on text entered in the History field, see [History and auditing](history-and-auditing.md). 
 
+- [Query by assignment or workflow changes](query-by-workflow-changes.md)
 - [Query quick reference](query-index-quick-ref.md)
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
+- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md)
 - [Create managed queries with the query editor](using-queries.md)  
 - [Query operators & macros](query-operators-variables.md)  
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)
 
 
-[!INCLUDE [temp](../_shared/rest-apis-queries.md)]
+[!INCLUDE [temp](../includes/rest-apis-queries.md)]
 
  

@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps Services
 ms.custom: seodec18
 description: Restore a recently deleted project in Azure DevOps
 ms.assetid: f8638962-1732-4600-94bb-3dc34e0ac48e
-ms.prod: devops
 ms.technology: devops-accounts
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
@@ -16,7 +14,7 @@ ms.date: 10/31/2019
 
 # Restore a project
 
-[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [version-vsts-plus-azdevserver-2019](../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 You can restore a deleted project up to 28 days after it was deleted. This article shows you how.
 
@@ -49,10 +47,10 @@ To restore a project, you must delete project permissions and have the "delete p
 
 2. Choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-   ![Choose the gear icon, Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+   ![Choose the gear icon, Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Overview**, and then scroll down to "recently deleted projects."
 
-   ![organization-settings-select-overview.png](../accounts/media/_shared/organization-settings-select-overview.png)
+   ![organization-settings-select-overview.png](../accounts/media/shared/organization-settings-select-overview.png)
 
 4. Highlight the project you want to restore, and then select **Restore**.
 
@@ -107,8 +105,8 @@ To restore a project, you must delete project permissions and have the "delete p
    ```
    $collectionUrl = "https://localhost/defaultcollection"
    $projectName = 'Project1'
-   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where > name -eq $projectName
-   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -Headers @> > > {'Content-Type' = 'application/json'}
+   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where {$_.name -eq $projectName}
+   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
    ```
 ::: moniker-end
 

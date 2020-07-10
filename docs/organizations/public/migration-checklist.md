@@ -3,20 +3,18 @@ title: Migration checklist
 titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 02/19/2019
+ms.date: 06/08/2020
 monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Private-to-public migration checklist
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
@@ -33,6 +31,10 @@ When you invite someone to become a member of a project, that person gains acces
 > | Identities       | Email contact information for each project member   |
 > | Settings         | Read-only view of all organization and project settings  |
 > | Process metadata | All picklist values in all projects in the organization  |
+
+Opening up a project to the public can reveal identities in a number of other ways, as well.
+Builds and releases may show the names of people who triggered them, plus identities (including email addresses) embedded in Git commits.
+Git commits and work items may contain embedded identity information such as first name, last name and email address.
 
 ## Cross-project linked objects
 
@@ -114,7 +116,7 @@ In that case, we recommend creating an entirely separate organization to host yo
 
 ### Move work items to a private project
 
-If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/remove-delete-work-items.md#move) into a separate, private project.
+If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/move-change-type.md#move) into a separate, private project.
 Cross-project links continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 

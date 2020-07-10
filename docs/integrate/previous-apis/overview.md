@@ -2,11 +2,10 @@
 title: REST API documentation for Team Foundation Server 2015, 2017, 2018 (RTW and Update 1)
 description: Overview of REST APIs and their references for Team Foundation Server.
 ms.assetid: 5C49CA02-A8C1-4B8D-AE52-B955FAFC7B06
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
-ms.manager: mijacobs
 ms.topic: article
+ms.custom: has-adal-ref
 ms.author: chcomley
 author: chcomley
 ms.date: 08/04/2016

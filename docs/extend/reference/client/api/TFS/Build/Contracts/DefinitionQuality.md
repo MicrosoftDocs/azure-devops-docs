@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts DefinitionQuality API | Extensions for Azure DevOps Services
 description: Data representation of a definition quality.
 ms.assetid: 9de9a8e6-f52d-9024-de00-463026169be8
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

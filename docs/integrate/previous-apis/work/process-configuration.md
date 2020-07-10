@@ -1,22 +1,22 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Process Configuration | REST API Reference for Team Foundation Server
 description: Work with Process Configuration programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 086ce0df-bb60-4cd0-99de-4d54cf348985
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
 ms.date: 08/17/2016
 ---
 
-[!INCLUDE [latest](./_data/see-latest.md)]
-
 # Process Configuration
 
+[!INCLUDE [latest](./_data/see-latest.md)]
+
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
+
+[!INCLUDE [latest](./_data/see-latest.md)]
 
 [!INCLUDE [API_version](../_data/version2-preview1.md)]
 

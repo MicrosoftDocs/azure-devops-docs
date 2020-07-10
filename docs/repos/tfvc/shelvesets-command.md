@@ -3,10 +3,8 @@ title: Shelvesets Command
 titleSuffix: Azure Repos
 description: Shelvesets Command
 ms.assetid: 731a4339-1ba7-45ab-a551-51c3f4ae158c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016

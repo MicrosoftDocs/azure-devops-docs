@@ -2,7 +2,6 @@
 title: Link GitHub commits and pull requests to Azure Boards work items - Sprint 144 Update
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 12/04/2018
 description: In the Sprint 144 Update of Azure DevOps, we continue to expand the integration with GitHub
@@ -163,7 +162,7 @@ strategy:
     win:
       vm: vs2017-win2016
     mac:
-      vm: macos-10.13
+      vm: macos-10.14
     linux:
       vm: ubuntu-16.04
 

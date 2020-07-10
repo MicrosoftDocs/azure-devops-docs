@@ -3,12 +3,7 @@ title: CI build Node.js app | Azure Pipelines or Team Foundation Server
 ms.custom: seodec18
 description: Learn how you can set up a continuous integration (CI) build for your Node.js app in Azure Pipelines or Team Foundation Server (TFS)
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid:
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
 ms.date: 08/04/2016
 monikerRange: 'tfs-2017'
 ---
@@ -43,7 +38,7 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-open-team-project">Open your project in your web browser &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-open-team-project">
-<img src="~/pipelines/_shared/media/browse-to-team-project.png" alt="Browse to project">
+<img src="~/pipelines/media/browse-to-team-project.png" alt="Browse to project">
 
 <p>(If you don&#39;t see your project listed on the home page, select <strong>Browse</strong>.)</p>
 <ul>
@@ -56,7 +51,7 @@ Here we'll show you how to define a continuous integration (CI) build pipeline f
 
 <li><p><a data-toggle="collapse" href="#expando-begin-create-build-definition-create">Create a build pipeline (Pipelines tab &gt; Builds) &#x25BC;</a></p>
 <div class="collapse" id="expando-begin-create-build-definition-create">
-<img src="~/pipelines/_shared/media/create-new-build-definition.png" alt="Build tab">
+<img src="~/pipelines/media/create-new-build-definition.png" alt="Build tab">
 <p>
 </div>
 </li>
@@ -152,7 +147,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 
 * [![Build Machine Image](../../../tasks/deploy/media/build-machine-image.png) An Azure Scale Set](../../../apps/cd/azure/deploy-azure-scaleset.md)
 
-## Q&A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
 <h3 id="code">What code is in the sample app?</h3>
@@ -172,7 +167,7 @@ After you've run the CI build, you're ready to create a continuous deployment (C
 The gulpfile.js script zips up the app so it can be deployed to Azure. The web.config file enables running the app on Azure. The .gitignore file keeps build artifacts on your dev machine from getting into your Git repo.
 
 ::: moniker range="< azure-devops"
-[!INCLUDE [temp](../../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 
 <!-- ENDSECTION -->

@@ -1,12 +1,10 @@
 ---
 title: Work Item Link History tables
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use Work Item Link History tables to query for links between bugs, tasks, and other types of work items.
 ms.assetid: 8fc040dc-8ff4-4ca6-be89-86a60a460cfa
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -14,7 +12,7 @@ ms.date: 10/17/2017
 
 
 # Work Item Link History tables
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 You can query for links between bugs, tasks, and other types of work items by using FactWorkItemLinkHistory and the associated dimension tables. To include details about the linked work items, you join SourceWorkItemID and TargetWorkItemID to Dim.System_ID.  
   

@@ -1,11 +1,10 @@
-﻿---
+---
 title: Add work item types to backlogs and boards   
 titleSuffix: Azure DevOps & TFS
 description: Add work item types to customize your tracking capabilities on product backlogs and Kanban, Scrum, Sprint, and task boards in Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: f3e42cd4-912b-4fff-a6f2-cf584edc782a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -14,7 +13,7 @@ ms.date: 12/15/2017
 
 # Add a work item type to a backlog and board
 
-[!INCLUDE [temp](../_shared/version-header-hosted-plus-tfs.md)]
+[!INCLUDE [temp](../includes/version-header-hosted-plus-tfs.md)]
 
 
 > [!IMPORTANT]  
@@ -468,9 +467,9 @@ WITs that you add to the Bug Category will be treated based on the [team setting
 ## Import and export definition files (On-premises XML) 
 Use the **witadmin** commands to import and export definition files. For details, see [witAdmin: Customize and manage objects for tracking work](witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md).   
 
-[!INCLUDE [temp](../_shared/process-editor.md)]  
+[!INCLUDE [temp](../includes/process-editor.md)]  
 
-[!INCLUDE [temp](../_shared/witadmin-run-tool-example.md)] 
+[!INCLUDE [temp](../includes/witadmin-run-tool-example.md)] 
 
 1. Enter the ```witadmin``` command, substituting your data for the arguments that are shown. For example, to import a WIT:   
 

@@ -2,12 +2,9 @@
 title: Manage flaky tests
 description: Improve productivity with flaky test management system
 ms.assetid: BBDD071F-4017-4AF0-AB59-71F8FEFF1E37
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual 
 ms.custom: "continuous-test, seodec18"
-ms.manager: mijacobs
-ms.reviewer: divais
+ms.reviewer: KathrynEE 
 ms.author: kaelli
 author: KathrynEE
 ms.date: 07/16/2019
@@ -16,13 +13,13 @@ monikerRange: 'azure-devops'
 
 # Manage flaky tests
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-Productivity for developers relies on the ability of tests to find real problems with the code being developed or modified, in a timely and reliable fashion. Flaky tests are a barrier to finding real problems, since those failures often are not related to the changes being tested. Flaky tests also impact the quality of shipped code. 
+Productivity for developers relies on the ability of tests to find real problems with the code under development or update in a timely and reliable fashion. Flaky tests present a barrier to finding real problems, since the failures often don't relate to the changes being tested. A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. Flaky tests also impact the quality of shipped code. 
 
-[!INCLUDE [temp](../../_shared/feature-support-cloud-only.md)] 
+[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
-A flaky test is a test that provides different outcomes, such as pass or fail, even when there are no changes in the source code or execution environment. 
+
 The goal of bringing flaky test management in-product is to reduce developer pain cause by flaky tests and cater to the whole workflow. Flaky test management provides the following benefits.
 
 * **Detection** - Auto detection of flaky test with rerun or extensibility to plug in your own custom detection method
@@ -92,6 +89,6 @@ You can create bugs to manage flaky test debt. If you create or add to bug for a
 
 ![Flaky Bug](media/flaky-test-management/flaky_bug.png)-->
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 
 
 

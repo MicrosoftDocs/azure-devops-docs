@@ -3,10 +3,8 @@ title: View or run a query
 titleSuffix: Azure Boards
 description: View, run, or favorite a query in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -17,20 +15,20 @@ ms.date: 10/18/2019
 
 # View, run, or email a work item query  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 To find work items assigned to you or your team, run a query. A number of work item queries are predefined with your process. Also, members of your team may have created shared queries that you can view and run. Oftentimes, it's easier to define a new query by building on the query definition that's already available to you. 
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 ## Run a query 
 
-To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure Devops CLI.
+To run any query, expand a folder and choose the title of the query. The view opens to display the query **Results**. You can also run a query by using the Azure DevOps CLI.
 
 #### [Browser](#tab/browser)
 
@@ -160,7 +158,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 ``` 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
 
 * * * 
 
@@ -249,7 +247,7 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 ![Web portal, Query Editor/Results, Copy query URL](media/view-run-queries/copy-url-old-exp.png)  
 
 > [!NOTE]
-> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises TFS, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
+> With **Email query**, the system will email the formatted list to those teammates you select. To email a formatted list to people not part of the project, you'll need to use the **Copy as HTML** option described in [Copy a list of work items](../backlogs/copy-clone-work-items.md#html). For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. 
 
 ::: moniker-end
 
@@ -263,5 +261,5 @@ Choose **Copy query URL**. To email query items, see [Copy a list of work items]
 - [Create and save managed queries with the query editor](using-queries.md)
 - [Change column options](../backlogs/set-column-options.md?toc=/azure/devops/boards/queries/toc.json&bc=/azure/devops/boards/queries/breadcrumb/toc.json)
 - [Set personal or team favorites](../../project/navigation/set-favorites.md) 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [About access levels](../../organizations/security/access-levels.md)

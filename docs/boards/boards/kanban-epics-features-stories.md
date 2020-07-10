@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Quickly define and view the status of child features, user stories, or backlog items using Kanban features or epic boards in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-kanban 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 489C612D-983E-47D3-BD1A-F13C5DCD74E2  
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -18,7 +16,7 @@ ms.date: 02/14/2019
 
 # Kanban board features and epics  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -44,7 +42,7 @@ For information on managing features and epics as a list and examples for featur
 >Child checklists for feature and epic Kanban boards are supported from TFS 2017 and later versions.
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/prerequisites-kanban.md)]
+[!INCLUDE [temp](../includes/prerequisites-kanban.md)]
 
 
 ## Open your Kanban board from the web portal
@@ -79,7 +77,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -101,7 +99,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/_shared/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 

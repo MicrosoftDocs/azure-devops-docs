@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts TfvcPolicyFailureInfo API | Extensions for Azure DevOps Services
 ms.assetid: 6a2c7802-245c-6c52-d335-d848262b9f99
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -3,10 +3,7 @@ title: Use deployment groups in a release pipeline
 ms.custom: seodec18
 description: Deployment Groups in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: 21416B0A-F60F-436F-AB46-D6C2A54D5707
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2018'
 
 # Provision deployment groups
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 A deployment group is a logical set of deployment target machines 
@@ -126,5 +123,5 @@ will see the deployment group you added and you can assign project-specific mach
 * [Deploy an agent on macOS](../../agents/v2-osx.md)
 * [Deploy an agent on Linux](../../agents/v2-linux.md)
 
-[!INCLUDE [rm-help-support-shared](../../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../../includes/rm-help-support-shared.md)]
 

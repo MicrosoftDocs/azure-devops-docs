@@ -3,10 +3,8 @@ title: Review team activities to support useful reports
 titleSuffix: TFS
 description: Ensure basic operations are performed by team members to generate useful SQL Server reports when working in Team Foundation Server    
 ms.assetid: 46456FBF-EECC-4096-9A98-3A9457F97EB2  
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: "<= azure-devops-2019" 
@@ -15,7 +13,7 @@ ms.date: 11/19/2018
 
 # Review team activities to support useful reports 
 
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 
 > [!IMPORTANT]

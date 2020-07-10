@@ -4,10 +4,8 @@ titleSuffix: Azure DevOps
 description: Upload, download, delete, or make default a process template for a project collection 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5D5AF176-B3C6-47AD-87FF-5FAFE1BA4AAE
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
@@ -16,7 +14,7 @@ ms.date: 12/10/2019
 
 # Upload or download a process template
 
-[!INCLUDE [temp](../../../_shared/version-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-tfs-all-versions.md)]
 
 When you create a project, the Project Creation Wizard (PCW) reads the process template to configure initial settings and upload artifacts and template files. Each process template defines the building blocks of the work item tracking system as well as other sub-systems. For the Hosted XML and On-premises XML process models, you can customize a process template to either update a project or create a project. For the Inheritance process model, you customize work tracking through a process. To learn more, see [Customize your work tracking experience](../../../reference/customize-work.md).  
 
@@ -40,7 +38,7 @@ Support for uploading and downloading Inherited processes isn't supported throug
 You can upload, download, and delete process templates for a project collection. Also, you can mark a template to appear as the default when you add projects.
 ::: moniker-end 
 
-[!INCLUDE [temp](../../_shared/get-latest-process-templates.md)]
+[!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
 ::: moniker range="<= azure-devops-2019"
 
@@ -90,7 +88,7 @@ You can upload, download, and delete process templates for a project collection.
 
 # [Visual Studio 2017](#tab/visual-studio-2017)
 
-1. From Visual Studio 2017, connect to an on-premises TFS collection. 
+1. From Visual Studio 2017, connect to an on-premises Azure DevOps collection. 
 
 2. Choose **Team>Team Project Collection Settings>Process Template Manager** from the menu bar.
 
@@ -318,7 +316,7 @@ Periodically, updates are made to the process templates to support new features.
 
 ### Update a process template to enable new features 
 
-When you upgrade your on-premises TFS to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
+When you upgrade your on-premises Azure DevOps to a later version, new features may become available. [To gain access to these new features](../../../reference/configure-features-after-upgrade.md), you may need to [update a customized process template](../../../reference/update-customized-process-template.md). 
 
 ::: moniker-end
 

@@ -2,10 +2,8 @@
 title: Copy and clone test suites and cases
 description: Manual and exploratory testing - Copying and cloning test suites and test cases when you want to test web applications
 ms.assetid: 3bdbaf71-2530-4681-9bb3-cc98c75664f4
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Copying and cloning test suites and test cases
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 There are several ways to duplicate test suites and test cases.
 It's important to understand that a test suite or plan contains a set of *references* to test cases.
@@ -25,7 +23,7 @@ If you delete the suite, or if you delete a test case from every suite, the test
 
 **For details about copying tests in Azure DevOps or TFS, see [this FAQ](../reference-qa.md#copyclonetce).**
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
 
 ## Copying and cloning in Microsoft Test Manager  
 
@@ -179,4 +177,4 @@ tcm suites /clone /collection:http://tfs.fabrikam.com:8080/tfs/DefaultCollection
   
 ```
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

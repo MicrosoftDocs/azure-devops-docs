@@ -3,9 +3,7 @@ title: Upgrade information about TFS 2008 or TFS 2010
 titleSuffix: TFS
 description: Follow these steps to when you upgrade from TFS 2008 or TFS 2010 to TFS 2015 so that you can configure the new features.
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: F52E3DB7-4A62-4BD2-8C6F-CC44CC09464D
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual

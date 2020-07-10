@@ -3,25 +3,23 @@ title: What are access levels? What access levels are supported?
 titleSuffix: Azure DevOps
 description: Understand how access levels are used to grant or restrict access to web portal features through stakeholder, basic, basic+Test Plans, or VS Enterprise access levels 
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid: E2C63C7B-6273-41D7-BD14-BFB340DF8D65
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 12/04/2019
+ms.date: 06/09/2020
 ---
 
 
 # About access levels
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups, which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
 
-[!INCLUDE [temp](../../_shared/version-selector-minimize.md)] 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 When you add a user or group to a team or project, they're automatically granted access to those features supported by the default access level and those supported by the security group to which they are added. Most users can access most features by being assigned to the **Basic** access level and **Contributors** security group. For a simplified overview of the permissions assigned to the most common groups **Readers**, **Contributors**, and **Project Administrators** as well as the **Stakeholder** access group, see [Permissions and access](permissions-access.md).  
 
@@ -44,6 +42,9 @@ Assign users or groups of users to one of the following access levels:
 - **Basic + Test Plans**: Provides access to all features included in Basic, as well as Azure Test Plans. Assign to users with a Visual Studio Test Professional or MSDN Platforms subscription, and to users for whom you're paying for Basic + Test Plans access in an organization.
 - **Visual Studio subscription**: Assign to users who already have a Visual Studio subscription. The system automatically recognizes the user's subscription&mdash;Visual Studio Enterprise, Visual Studio Professional, Visual Studio Test Professional, or MSDN Platform&mdash;and enables any other features that are included in their subscription level. If you assign Basic or Stakeholder, they also receive their Visual Studio subscription benefits upon sign-in.
 
+> [!TIP]
+> As a best practice when adding new users, we recommend assigning the Visual Studio subscriber level when appropriate (as opposed to Basic) to prevent being charged the Basic rate before the user signs in for the first time.
+
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
 <table>
@@ -61,7 +62,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md" data-raw-source="[backlog](../../boards/backlogs/backlogs-overview.md)">backlog</a> and <a href="../../boards/sprints/scrum-overview.md" data-raw-source="[sprint planning](../../boards/sprints/scrum-overview.md)">sprint planning</a> tools</td>
+<td align="left"><strong>Advanced backlog and sprint planning tools</strong><br/>Includes full access to all <a href="../../boards/backlogs/backlogs-overview.md">backlog</a> and <a href="../../boards/sprints/scrum-overview.md">sprint planning</a> tools</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -73,7 +74,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlog](../../boards/backlogs/define-features-epics.md)">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban board](../../boards/boards/kanban-epics-features-stories.md)">Kanban board</a></td>
+<td align="left"><strong>Advanced portfolio management</strong><br/>Includes full access to define features and epics from a portfolio <a href="../../boards/backlogs/define-features-epics.md">backlog</a> or <a href="../../boards/boards/kanban-epics-features-stories.md">Kanban board</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -88,12 +89,6 @@ The following table indicates those features available for each supported access
 <tr>
 <td align="left"><strong>Agile Portfolio Management</strong><br/>Includes limited access to portfolio <a href="../../boards/backlogs/define-features-epics.md" data-raw-source="[backlogs](../../boards/backlogs/define-features-epics.md)">backlogs</a> and <a href="../../boards/boards/kanban-epics-features-stories.md" data-raw-source="[Kanban boards](../../boards/boards/kanban-epics-features-stories.md)">Kanban boards</a>. Stakeholders can&#39;t change the backlog priority order, and can&#39;t assign items to an iteration, use the mapping pane, or exercise forecasting. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -118,7 +113,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md"> manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -136,7 +131,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -168,7 +163,20 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)"> testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
+<td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -183,19 +191,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a>; when the <a href="provide-stakeholder-pipeline-access.md" data-raw-source="[**Free access to Pipelines Preview** feature is enabled](provide-stakeholder-pipeline-access.md)"><strong>Free access to Pipelines Preview</strong> feature is enabled</a>, Stakeholders gain access to all <strong>Azure Pipelines</strong> features.</td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -259,13 +254,6 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -286,13 +274,13 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Build</strong><br/>Includes full access to all features to<a href="../../pipelines/overview.md" data-raw-source="[manage continuous integration and continuous delivery of software](../../pipelines/overview.md)">manage continuous integration and continuous delivery of software</a> </td>
+<td align="left"><strong>Build</strong><br/>Includes full access to all features to <a href="../../pipelines/overview.md">manage continuous integration and continuous delivery of software</a> </td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md" data-raw-source="[query charts](../../report/dashboards/charts.md)">query charts</a></td>
+<td align="left"><strong>Chart Authoring</strong><br/>Can create work tracking <a href="../../report/dashboards/charts.md">query charts</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -304,7 +292,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a> or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -336,6 +324,19 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -351,19 +352,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -446,13 +434,6 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
-<tr>
-<td align="left"><strong>Analyze test results and manage machine groups</strong><br/>Includes <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-
 
 <tr>
 <td align="left"><strong><a href="../../artifacts/overview.md" data-raw-source="[Artifacts](../../artifacts/overview.md)">Artifacts</a></strong><br/>Includes full access to all <strong>Azure Artifacts</strong> features (also referred to as package management)</td>
@@ -494,7 +475,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -525,6 +506,19 @@ read wiki pages. </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>Test summary access to Stakeholder license</strong><br/>Includes <a href="../../test/user-acceptance-testing.md" data-raw-source="[performing user acceptance testing](../../test/user-acceptance-testing.md)">performing user acceptance testing</a> and <a href="../../test/request-stakeholder-feedback.md" data-raw-source="[requesting Stakeholder feedback using the Test &amp; Feedback extension](../../test/request-stakeholder-feedback.md)">requesting Stakeholder feedback using the Test &amp; Feedback extension</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -540,19 +534,6 @@ read wiki pages. </td>
 <tr>
 <td align="left"><strong>View Releases and Manage Approvals</strong><br/>Includes <a href="../../pipelines/release/approvals/index.md" data-raw-source="[viewing releases](../../pipelines/release/approvals/index.md)">viewing releases</a> and <a href="../../pipelines/release/approvals/index.md" data-raw-source="[approving releases](../../pipelines/release/approvals/index.md)">approving releases</a></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> </td>
-<td> </td>
-<td> </td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Execution</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
-</td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
@@ -633,7 +614,7 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
-<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a>or using <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC)</a></td>
+<td align="left"><strong>Code</strong><br/>Includes full access to all features to manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a>or using <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC)](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC)</a></td>
 <td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
@@ -657,16 +638,23 @@ The following table indicates those features available for each supported access
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 <tr>
+<td align="left"><strong>Test Case Management</strong><br/>Includes <a href="../../test/create-a-test-plan.md" data-raw-source="[adding test plans and test suites](../../test/create-a-test-plan.md)">adding test plans and test suites</a>, <a href="../../test/create-test-cases.md" data-raw-source="[creating manual test cases](../../test/create-test-cases.md)">creating manual test cases</a>, and <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[deleting test artifacts](../../boards/backlogs/delete-test-artifacts.md)">deleting test artifacts</a> and <a href="../../test/test-different-configurations.md" data-raw-source="[testing different configurations](../../test/test-different-configurations.md)">testing different configurations</a> </td>
+<td> </td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>
+<tr>
+<td align="left"><strong>Test Execution and Test Analysis</strong><br/> Includes running <a href="../../test/run-manual-tests.md" data-raw-source="[manual](../../test/run-manual-tests.md)">manual</a>, <a href="../../test/track-test-status.md" data-raw-source="[tracking test status](../../test/track-test-status.md)">tracking test status</a> and <a href="../../test/run-automated-tests-from-test-hub.md" data-raw-source="[automated tests](../../test/run-automated-tests-from-test-hub.md)">automated tests</a>
+</td>
+<td> </td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
+</tr>	
+<tr>
 <td align="left"><strong>View My Work Items</strong><br/>Includes limited access to <a href="../../boards/work-items/about-work-items.md" data-raw-source="[add and modify work items](../../boards/work-items/about-work-items.md)">add and modify work items</a>, <a href="../../boards/work-items/follow-work-items.md" data-raw-source="[follow work items](../../boards/work-items/follow-work-items.md)">follow work items</a>, <a href="../../boards/queries/view-run-query.md" data-raw-source="[view and create queries](../../boards/queries/view-run-query.md)">view and create queries</a>, and <a href="../../project/feedback/give-feedback.md" data-raw-source="[submit, view, and change feedback responses](../../project/feedback/give-feedback.md)">submit, view, and change feedback responses</a>. Stakeholders can only assign existing tags to work items (can&#39;t add new tags) and can only save queries under My Queries (can&#39;t save under Shared Queries).
 </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-<td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
-</tr>
-<tr>
-<td align="left"><strong>Web-based Test Management</strong><br/>Includes adding and executing <a href="../../test/create-a-test-plan.md" data-raw-source="[test plans and test suites](../../test/create-a-test-plan.md)">test plans and test suites</a> and <a href="../../test/create-test-cases.md" data-raw-source="[manual test cases](../../test/create-test-cases.md)">manual test cases</a>, and deleting <a href="../../boards/backlogs/delete-test-artifacts.md" data-raw-source="[test artifacts](../../boards/backlogs/delete-test-artifacts.md)">test artifacts</a> </td>
-<td> </td>
-<td> </td>
 <td><img src="/azure/devops/media/icons/checkmark.png" alt="checkmark"/></td>
 </tr>
 </tbody>
@@ -691,7 +679,7 @@ To get started as a Stakeholder, see [Get started as a Stakeholder](get-started-
 
 Stakeholder access grants access to features differently depending on whether you're working from a private or a public project. To learn more about public projects, see [What is a public project?](../public/about-public-projects.md).  
 
-[!INCLUDE [temp](../../_shared/stakeholder-access-table.md)]
+[!INCLUDE [temp](../../includes/stakeholder-access-table.md)]
 
 ::: moniker-end
 
@@ -706,12 +694,14 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
+- View Delivery Plans (a Marketplace extension) 
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 #### For Public projects:
 
 - View Delivery Plans (a Marketplace extension)    
+- Add, edit, or view Analytics views    
 - Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
 
 ::: moniker-end
@@ -723,6 +713,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 - Delete work items or move work items to another project
 - Create shared queries, view charts, and modify the home page  
 - View Delivery Plans (a Marketplace extension)
+- Add, edit, or view Analytics views   
 - Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
 
 ::: moniker-end

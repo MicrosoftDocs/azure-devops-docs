@@ -1,16 +1,14 @@
 ---
 title: Build and test Python apps
 description: Automatically build and test Python apps with Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 141149f8-d1a9-49fa-be98-ee9a825a951a
-ms.manager: mijacobs
 ms.author: macoope
 ms.reviewer: vtbassmatt
 ms.date: 11/04/2019
 monikerRange: '>=azure-devops-2019'
 author: vtbassmatt
+ms.custom: tracking-python
 ---
 
 # Build Python apps
@@ -53,9 +51,9 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](_shared/create-project.md)]
+[!INCLUDE [include](includes/create-project.md)]
 
 ::: moniker-end
 
@@ -63,7 +61,7 @@ https://github.com/Microsoft/python-sample-vscode-flask-tutorial
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
 > When the **Configure** tab appears, select **Python package**. This will create a Python package to test on multiple Python versions.
 
@@ -142,7 +140,7 @@ To run a pipeline with multiple Python versions, for example to test a package a
 jobs:
 - job: 'Test'
   pool:
-    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.13', 'vs2017-win2016'
+    vmImage: 'ubuntu-16.04' # other options: 'macOS-10.14', 'vs2017-win2016'
   strategy:
     matrix:
       Python27:
@@ -241,7 +239,7 @@ Use this YAML to install `pytest` and `pytest-cov`, run tests, output test resul
 - script: |
     pip install pytest
     pip install pytest-cov
-    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+    pytest tests --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml --cov-report=html
   displayName: 'Test with pytest'
 ```
 ::: moniker range="azure-devops"

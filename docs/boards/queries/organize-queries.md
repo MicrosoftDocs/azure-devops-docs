@@ -1,13 +1,10 @@
-﻿---
+---
 title: Organize and view queries, create query folders 
 titleSuffix: Azure Boards  
-ms.global_help.title: Organize queries
 description: Manage your queries by using favorites and folders in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: BAD9F638-3F26-4FE3-8A7D-F5C0793BE8AC  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -18,7 +15,7 @@ ms.date: 10/16/2019
 
 # Organize queries, add a query folder    
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -26,14 +23,17 @@ Organize your personal or shared queries by adding a query folder. You can then 
 > To create and manage queries in Visual Studio 2019, you need to [Set the Work Items experience](../work-items/set-work-item-experience-vs.md) to the legacy option.
 
  
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 
 ## Add a query folder, move items into a folder 
+
+> [!TIP]   
+> You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to. To view or set permissions, see [Set permissions on queries and query folders](set-query-permissions.md).
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -123,7 +123,7 @@ In Team Explorer Everywhere (a plugin for Eclipse), choose **Move** from the con
 
 ## Related articles
 
-- [Query keyboard shortcuts](queries-keyboard-shortcuts.md)
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Set query permissions](set-query-permissions.md)
 - [Set project-level permissions](../../organizations/security/set-project-collection-level-permissions.md)
 

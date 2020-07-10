@@ -3,10 +3,8 @@ title: DevOps tools overview for Azure DevOps
 titleSuffix: Azure DevOps
 ms.custom: seodec18  
 description: Guide to getting started using DevOps and Agile tools provided by Azure DevOps Services and Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-new-user  
 ms.assetid: 0C0261DC-57B7-4520-82A4-2C2AB7AB0F4A  
-ms.manager: mijacobs
 ms.author: kaelli
 ms.date: 06/02/2019
 monikerRange: '>= tfs-2013'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # DevOps tools overview for Azure DevOps
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Learn how to use our integrated tool set to speed the development and delivery of your software applications. Build better apps for any platform, including Android, iOS, Linux, macOS, or Windows.  
  

@@ -2,10 +2,8 @@
 title: VSS/Common/Contracts/System.Data SqlDbType API | Extensions for Azure DevOps Services
 description: Specifies SQL Server-specific data type of a field, property, for use in a System.Data.SqlClient.SqlParameter.
 ms.assetid: 32e64e0a-65fb-56dd-512c-0de496068625
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

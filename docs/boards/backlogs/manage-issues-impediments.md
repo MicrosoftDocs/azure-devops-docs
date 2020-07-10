@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Track problems, risks, or other issues that may impeded your plans or schedule - Azure Boards & TFS
 ms.custom: "boards-backlogs, seodec18"
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5B126205-599D-40EB-BC95-23CF1444EF2A
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
@@ -15,7 +13,7 @@ ms.date: 10/14/2019
 
 # Manage issues or impediments 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 <a name="manage-impediments"></a>
 
@@ -46,9 +44,9 @@ In this article you'll learn:
 > * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
-[!INCLUDE [temp](../_shared/prerequisites-work-items.md)]   
+[!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
 
-[!INCLUDE [temp](../_shared/image-differences-with-wits.md)]   
+[!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
 
 ## When to use issues versus tasks
 
@@ -104,7 +102,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ## Customize issues tracking
 
-[!INCLUDE [temp](../_shared/customize-work-tracking.md)] 
+[!INCLUDE [temp](../includes/customize-work-tracking.md)] 
 
 
 ::: moniker range="azure-devops"

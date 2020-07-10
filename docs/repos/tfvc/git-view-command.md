@@ -3,10 +3,8 @@ title: Git view command
 titleSuffix: Azure Repos
 description: Git view command
 ms.assetid: e9ec11ff-9f66-454a-8448-e2b354ae5b74
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 01/07/2019
@@ -36,7 +34,7 @@ tf git view /collection:TeamProjectCollectionUrl
 
 |                     Parameter                     |                                                                                                            Description                                                                                                            |
 |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **/collection:**<em>TeamProjectCollectionUrl</em> |            Specifies the URL of the project collection that contains the file to view. For example: <http://myserver:8080/tfs/DefaultCollection> or https://dev.azure.com/fabrikam-fiber. This parameter is required.             |
+| **/collection:**<em>TeamProjectCollectionUrl</em> |            Specifies the URL of the project collection that contains the file to view. For example: `http://myserver:8080/tfs/DefaultCollection` or `https://dev.azure.com/fabrikam-fiber`. This parameter is required.             |
 |  **/teamproject:**<em>TeamProjectIdentifier</em>  |                                                                       Specifies the name of the project that contains the repo. This parameter is required.                                                                       |
 |   **/repository:**<em>RepositoryIdentifier</em>   |                                                                    Specifies the name of the repo that contains the file to view. This parameter is required.                                                                     |
 |            **/blobId:**<em>blobId</em>            |                                          Specifies the ID of a blob to retrieve. This option cannot be used with the **path** parameter. One of either **path** or **blob** is required.                                          |

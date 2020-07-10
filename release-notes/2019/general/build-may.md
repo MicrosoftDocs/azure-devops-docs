@@ -2,7 +2,6 @@
 title: General - Microsoft Build Announcements
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/10/2019
 ---
@@ -11,9 +10,9 @@ ms.date: 05/10/2019
 
 ## Features
 
-[!INCLUDE [build-may-links](../_shared/general/build-may-links.md)]
+[!INCLUDE [build-may-links](../includes/general/build-may-links.md)]
 
-[!INCLUDE [build-may](../_shared/general/build-may.md)]
+[!INCLUDE [build-may](../includes/general/build-may.md)]
 
 ## Next steps
 

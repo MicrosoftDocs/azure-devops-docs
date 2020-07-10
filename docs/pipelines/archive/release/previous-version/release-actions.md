@@ -3,10 +3,7 @@ title: Release actions to deploy an app with Release Management
 ms.custom: seodec18
 description: Learn about the release actions to define the deployment sequence for an app in Azure Pipelines and Team Foundation Server (TFS).
 ms.assetid: FE87197A-610D-4426-A812-2322EAA8700C
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # Release actions to deploy an app
 
-[!INCLUDE [previous-version-header](../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../includes/previous-version-header.md)]
 
 You add release actions to define the deployment sequence for each stage 
 of your release. Each action uses a specific tool to run a command with 
@@ -79,7 +76,7 @@ Open the **Inactive** list, open the action, and choose **Activate**.
 
 ![Inactive list on Inventory page](media/release-actions-03.png)
 
-## Q & A
+## FAQ
 
 ### Q: What permissions do I need to edit release actions?
 
@@ -298,6 +295,6 @@ about this tool, go **[here](release-actions/release-action-tools.md)**.
 * [Trigger a release from a build](trigger-a-release.md)
 * [Deploy continuously to Azure](deploy-continuously-to-azure.md)
  
-[!INCLUDE [wpfver-back-to-index-shared](../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../includes/wpfver-support-shared.md)]

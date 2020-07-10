@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts TfvcHistoryEntry API | Extensions for Azure DevOps Services
 ms.assetid: 5cdb0eff-8183-6bd1-f54d-6b3c8a219b67
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

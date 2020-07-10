@@ -1,12 +1,10 @@
 ---
 title: Git permissions prior to TFS 2017 Update 1
 description: Git repository project permissions in usage for TFS 2017 update 1 and earlier versions 
-ms.prod: devops
 ms.technology: devops-security
 ms.assetid: EF010374-22A9-4179-B49F-9B601ACBB5A0
 toc: hide
 ms.topic: reference
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/01/2016
@@ -14,7 +12,7 @@ monikerRange: '<= tfs-2017'
 ---
 # Git permissions prior to TFS 2017 Update 1
 
-[!INCLUDE [version-tfs-2013-2017](../../_shared/version-tfs-2013-2017.md)]
+[!INCLUDE [version-tfs-2013-2017](../../includes/version-tfs-2013-2017.md)]
 
 In TFS 2017 Update 1 (and Azure DevOps), Git repository permissions have changed.
 For those customers using previous versions of TFS, here are the old permissions.

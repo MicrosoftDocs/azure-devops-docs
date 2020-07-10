@@ -2,10 +2,8 @@
 title: Manual test execution trend sample Power BI report 
 titleSuffix: Azure DevOps
 description: Sample Power BI queries to generate an execution trend of manual tests
-ms.prod: devops
 ms.technology: devops-analytics
 ms.reviewer: ravishan
-ms.manager: mijacobs
 ms.author: shdalv
 ms.custom: powerbisample
 author: KathrynEE
@@ -16,11 +14,11 @@ ms.date: 12/09/2019
 
 # Manual test execution trend sample report
 
-[!INCLUDE [temp](../_shared/version-azure-devops-cloud.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-cloud.md)]
 
 This article shows you how to get the execution state of one or more Test Plans in Power BI. 
 
-[!INCLUDE [temp](_shared/preview-note.md)]
+[!INCLUDE [temp](includes/preview-note.md)]
  
 The report generated is similar to following image and the Outcome trend chart of the [Track test status - Progress report](../../test/track-test-status.md).
 
@@ -47,7 +45,7 @@ This report helps you track the team's progress with respect to planned testing 
 
 A healthy test execution trend report shows a steady progress in test plans running and passing. Ideally, the report shows a relatively flat number of test cases for a given plan. As the development cycle progresses, the number of passing test cases should increase, and the numbers of test cases in other states should decrease.
 
-[!INCLUDE [temp](_shared/sample-required-reading.md)]
+[!INCLUDE [temp](includes/sample-required-reading.md)]
 
 
 ## Prerequisites
@@ -65,7 +63,7 @@ For the report to generate useful data, the team must perform the following acti
 
 #### [Power BI query](#tab/powerbi/)
 
-[!INCLUDE [temp](_shared/sample-powerbi-query.md)]
+[!INCLUDE [temp](includes/sample-powerbi-query.md)]
 
 ```
 let 
@@ -89,7 +87,7 @@ in
 
 #### [OData query](#tab/odata/)
 
-[!INCLUDE [temp](_shared/sample-odata-query.md)]
+[!INCLUDE [temp](includes/sample-odata-query.md)]
 
 ```
 https://analytics.dev.azure.com/{organization}/{project}/_odata/v3.0-preview/TestPointHistorySnapshot? 
@@ -142,7 +140,7 @@ The following table describes each part of the query.
 
 ## Power BI transforms
 
-[!INCLUDE [temp](_shared/sample-test-plans-finish-query.md)]
+[!INCLUDE [temp](includes/sample-test-plans-finish-query.md)]
 
 
 ## Create the report
@@ -169,7 +167,7 @@ Your report should look similar to the following image.
 
 ## Full list of sample reports for Test Plans
 
-[!INCLUDE [temp](_shared/sample-full-list-test-plans.md)]
+[!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
 
 ## Related articles
 

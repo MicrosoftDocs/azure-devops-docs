@@ -2,11 +2,8 @@
 title: Enforce Azure Policy compliance
 description: Understand how to use Azure Policy in Azure Pipelines
 ms.assetid: 3B51122B-7354-467C-93B8-A20D81AFFADE
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: seodec18
-ms.manager: mijacobs
 ms.author: atulmal
 author: azooinmyluggage
 ms.date: 03/21/2019
@@ -15,7 +12,7 @@ monikerRange: azure-devops
 
 # Check policy compliance with gates
 
-[!INCLUDE [version-team-services](../_shared/version-team-services.md)]
+[!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Azure Policy helps you manage and prevent IT issues by using policy definitions
 that enforce rules and effects for your resources. When you use Azure Policy,
@@ -76,4 +73,4 @@ about the policy and its conditions.
 ![Azure Policy Violations tab](media/azure-policy/azure-policy-04.png)
 -->
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

@@ -1,12 +1,10 @@
 ---
 title: Unplanned Work 
 titleSuffix: TFS 
-ms.prod: devops
 ms.technology: devops-analytics
 ms.topic: reference
 description: Use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration.
 ms.assetid: 4c174c3c-2e3d-4f09-913d-bbc17b6382a8
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.date: 10/17/2017
@@ -15,7 +13,7 @@ ms.date: 10/17/2017
 
 
 # Unplanned Work
-[!INCLUDE [temp](../_shared/tfs-report-platform-version.md)]
+[!INCLUDE [temp](../includes/tfs-report-platform-version.md)]
 
 Toward the end of an iteration, you can use the Unplanned Work report to determine how much work was added to the iteration that was not planned at the start of the iteration. You can view the unplanned work as measured by work items added, such as tasks, test cases, user stories, and bugs.  
   

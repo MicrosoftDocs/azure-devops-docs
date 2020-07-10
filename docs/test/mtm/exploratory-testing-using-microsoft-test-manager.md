@@ -2,10 +2,8 @@
 title: Exploratory test using MTM
 description: Manual and exploratory testing - Exploratory testing using Microsoft Test Manager when you want to test web applications
 ms.assetid: bf3fc3b0-7e43-407c-b2bc-dcf773ae889f
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,16 +12,16 @@ monikerRange: '>= tfs-2015'
 
 # Exploratory testing using Microsoft Test Manager
 
-[!INCLUDE [version-inc-vs](../_shared/version-inc-vs.md)]
+[!INCLUDE [version-inc-vs](../includes/version-inc-vs.md)]
 
 >[!NOTE]
->[!INCLUDE [mtm-deprecate-message](../_shared/mtm-deprecate-message.md)]
+>[!INCLUDE [mtm-deprecate-message](../includes/mtm-deprecate-message.md)]
 
 **For Azure DevOps and TFS, see [Exploratory testing with the Test &amp; Feedback extension](../connected-mode-exploratory-testing.md).**
 
 While you work with your application, Microsoft Test Manager can record your actions, comments, screenshots and other data. The recording makes it easy to reproduce bugs. And you can quickly play back your tests whenever the application is updated.  
 
-[!INCLUDE [feature-availability](../_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](../includes/feature-availability.md)] 
   
 ## Explore your app  
   
@@ -94,4 +92,4 @@ If you want to run tests without real-time recording, go back to the test plan p
   
 [Collect more diagnostic data](collect-more-diagnostic-data-in-manual-tests.md)  
   
-[!INCLUDE [help-and-support-footer](../_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](../includes/help-and-support-footer.md)] 

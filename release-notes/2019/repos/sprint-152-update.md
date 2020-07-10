@@ -3,7 +3,6 @@ title: Azure Repos - Sprint 152 Update
 description: See the Sprint 152 feature updates for Azure Repos, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 05/20/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 05/20/2019
 
 ## Features
 
-[!INCLUDE [sprint-152-update-links](../_shared/repos/sprint-152-update-links.md)]
+[!INCLUDE [sprint-152-update-links](../includes/repos/sprint-152-update-links.md)]
 
-[!INCLUDE [sprint-152-update](../_shared/repos/sprint-152-update.md)]
+[!INCLUDE [sprint-152-update](../includes/repos/sprint-152-update.md)]
 
 ## Next steps
 

@@ -4,11 +4,9 @@ titleSuffix: Azure DevOps Services
 description: Track team velocity across several sprints using the in-context Analytics report or velocity widget    
 ms.custom: dashboards   
 ms.technology: devops-analytics  
-ms.prod: devops
 ms.assetid: 31CBF001-CFF2-49CF-97A1-FDFFEFDDF3AB
 ms.topic: tutorial
 ms.reviewer: greggboe
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 
@@ -18,7 +16,7 @@ ms.date: 07/22/2019
 
 # View or configure team velocity
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -45,7 +43,7 @@ Velocity will vary depending on team capacity, sprint over sprint. However, over
 
 Once your team has completed a few sprints, they can use their velocity to [forecast](../../boards/sprints/forecast.md) how much of the backlog they can finish within upcoming sprints. For usage guidance, see [Velocity metrics and usage guidance](velocity-guidance.md).
 
-[!INCLUDE [temp](../../boards/_shared/image-differences-with-wits.md)]  
+[!INCLUDE [temp](../../boards/includes/image-differences-with-wits.md)]  
 
 Use this article to learn: 
 
@@ -75,7 +73,7 @@ Use this article to learn:
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ## Open your backlog from the web portal
@@ -164,6 +162,14 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Velocity Analytics](media/velocity/analytics-velocity-azure-devops.png)
+
+	With the following assignments made to the color bars. All work items counted are assigned to the sprint or iteration.  
+	- **Planned** - calculated based on the amount of work assigned to the sprint prior to the start of the sprint. This count includes work that was moved to a different sprint after the start of the sprint, but doesn't include work that was added later after the sprint started.
+		> [!TIP]   
+		> To list the work items included in the count, click the velocity bar. A query results page will open with the list of work items included.
+	- **Completed** - calculated based on the amount of work  assigned to the sprint prior to the start of the sprint and completed prior to the sprint end date..
+	- **Completed Late**  - calculated based on the amount of work assigned to the sprint prior to the start of the sprint but was completed after the end of the sprint.  
+	- **Incomplete** - Amount of work not completed, calculated based on the amount of work assigned to the sprint prior to the start of the sprint and has not been set to completed. 
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
@@ -316,9 +322,9 @@ You configure your velocity widget for a single team. If you want to view the ve
 
 ::: moniker-end
 
-[!INCLUDE [temp](../_shared/velocity-activities.md)] 
+[!INCLUDE [temp](../includes/velocity-activities.md)] 
 
-[!INCLUDE [temp](../_shared/add-teams.md)] 
+[!INCLUDE [temp](../includes/add-teams.md)] 
 
 ## Try this next
 

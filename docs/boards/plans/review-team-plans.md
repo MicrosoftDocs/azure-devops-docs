@@ -3,9 +3,7 @@ title: Review team delivery plans
 titleSuffix: Azure Boards
 description: Add & use plans to review scheduled multi-team deliverables in Azure Boards, Azure DevOps, & Team Foundation Server   
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 3B41D55E-B7B1-41B1-B68F-7A83BA2890A5  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
@@ -17,7 +15,7 @@ ms.date: 02/14/2019
 
 # Review team Delivery Plans 
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-2017-on.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-2017-on.md)]
 
 Use the visualization options provided by Delivery Plans to review the schedule of stories or features your teams plan to deliver. Delivery Plans show the scheduled work items by sprint (iteration path) of selected teams against a calendar view.
 
@@ -48,7 +46,7 @@ In this article you'll learn:
 	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md).  Users granted **Stakeholder** access for private projects cannot add nor view plans. Users granted **Stakeholder** access for a public project can add and view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
 	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
@@ -62,7 +60,7 @@ In this article you'll learn:
 	- Be a member of a project and granted [Basic access or greater access level](../../organizations/security/access-levels.md). Users granted **Stakeholder** access cannot add nor view plans.
 	- [Configured teams](../../organizations/settings/add-teams.md)
 	- [Define area paths and assign to a team](../../organizations/settings/set-area-paths.md)
-	- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+	- [Define iteration (sprint) paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 	- Teams have defined [user stories](../backlogs/create-your-backlog.md), features, or other product or portfolio backlogs and assigned those items to iterations.  
 - To view a Delivery Plan, you must be a member of the Project Collection Valid Users group. Members of the project's Readers group are valid users. Users with Stakeholder access for a private project can't view or add plans.  
 - To manage permissions for a Delivery Plan or edit or delete a plan, you must be the creator of the plan, a member of the Project Administrators or Project Collection Administrators group, or granted explicit permission through the plan's Security dialog. For details, see [Edit or manage Delivery Plan permissions](edit-delivery-plan-permissions.md).  
@@ -197,7 +195,7 @@ You can interact with the plan in the following ways:
 - Enter **t** to quickly toggle fields shown on cards to just the Title or all other card field settings 
 - Click the ![Settings gear icon](../media/icons/team-settings-gear-icon.png) settings gear to edit the plan and [change the fields displayed on the cards](#card-settings).   
 
-For a list of all keyboard shortcuts, see [Keyboard shortcuts to interact with delivery plans](delivery-plan-keyboard-shortcuts.md).  
+For a list of all keyboard shortcuts, see [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).  
 
 <!--- QUESTION: What determines the order of team rows? --> 
 
@@ -245,7 +243,7 @@ For additional resources for working with multiple teams, see these additional t
 - [Add teams](../../organizations/settings/add-teams.md)  
 - [Portfolio management](portfolio-management.md)  
 - [Manage teams and configure team tools](../../organizations/settings/manage-teams.md)  
-- [Delivery plan keyboard shortcuts](delivery-plan-keyboard-shortcuts.md)  
+- [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)  
 
 
 <a id="plans-rest-api">  </a>

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitChange API | Extensions for Azure DevOps Services
 ms.assetid: 135fb0e3-0069-781b-ff58-49d40c86fd5c
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

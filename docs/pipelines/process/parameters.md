@@ -3,25 +3,18 @@ title: Process parameters
 ms.custom: seodec18
 description: You can link all important fields for tasks used across the build definition as process parameters
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 27AD0094-FDF1-4B36-A82E-B845980984AF
-ms.manager: mijacobs
-ms.author: phwilson
-author: chasewilson
 ms.date: 9/21/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # Process parameters
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
 > [!NOTE]
+> This guidances does not apply to YAML pipelines. For parameters in YAML pipelines, see [runtime parameters](runtime-parameters.md).
 > 
-> This guidance applies to TFS version 2017.3 and newer.
-> 
-> This guidance applies only to classic editor pipelines. It does not apply to YAML pipelines.
 
 You can link all important arguments for tasks used across the build definition as process parameters, which are then shown at one place - the Pipeline view.
 This means you can quickly edit these arguments without needing to click through all the tasks.

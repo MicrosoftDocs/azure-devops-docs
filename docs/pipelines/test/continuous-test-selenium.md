@@ -2,11 +2,8 @@
 title: Perform UI tests with Selenium
 description: UI Testing with Selenium in a continuous deployment pipeline in Azure Pipelines and Team Foundation Server TFS
 ms.assetid: 1B90D2DF-4AB0-4B65-8039-2B14A25FB547
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.custom: continuous-test, seodec18
-ms.manager: mijacobs
 ms.author: pbora
 author: pboraMSFT
 ms.date: 03/15/2019
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # UI test with Selenium
 
-[!INCLUDE [version-header-vs-vsts-tfs](../_shared/version-header-test-vs-vsts-tfs.md)]
+[!INCLUDE [version-header-vs-vsts-tfs](../includes/version-header-test-vs-vsts-tfs.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -37,8 +34,8 @@ app is deployed (usually to a QA environment).
 
 For more information about Selenium browser automation, see:
 
-* [Selenium HQ](https://www.seleniumhq.org/)
-* [Selenium documentation](https://www.seleniumhq.org/docs/)
+* [Selenium](https://www.selenium.dev/)
+* [Selenium documentation](https://www.selenium.dev/documentation)
 
 <a name="create-project"></a>
 ## Create your test project
@@ -207,7 +204,7 @@ and [Run Functional Tests](../tasks/test/run-functional-tests.md) tasks instead.
 
 1. If you don't have an existing release pipeline that deploys your web app:
 
-   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](_shared/pipelines-hub-include.md)] and choose the **+** icon, then choose
+   * Open the **Releases** page in the [!INCLUDE [pipelines-hub-include](includes/pipelines-hub-include.md)] and choose the **+** icon, then choose
      **Create release pipeline**.
      
      ![Creating a new release pipeline](media/continuous-test-selenium/continuous-test-selenium-06.png)

@@ -2,13 +2,8 @@
 title: Download Package task
 description: Download a package from a Package Management feed in Azure Artifacts or TFS.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
-ms.manager: mijacobs
 ms.custom: seodec18
-ms.author: phwilson
-author: chasewilson
 ms.date: 12/07/2018
 monikerRange: 'azure-devops'
 ---
@@ -17,14 +12,14 @@ monikerRange: 'azure-devops'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to download a package from a package management feed in Azure Artifacts or TFS.
+Use this task to download a package from a package management feed in Azure Artifacts or TFS.
 Requires the Package Management extension.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/DownloadPackageV1.md)]
+[!INCLUDE [temp](../includes/yaml/DownloadPackageV1.md)]
 
 ::: moniker-end
 
@@ -32,7 +27,7 @@ Requires the Package Management extension.
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
 <tr><td>Package type</td><td>(Required) Select the type of package to download</td></tr>
-<tr><td>Feed</td><td>(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our <a href="#qa">Q&As</a> below for information on how to get a feed or project ID, or information on using project and feed name instead.</td></tr>
+<tr><td>Feed</td><td>(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our <a href="#faq">FAQ</a> below for information on how to get a feed or project ID, or information on using project and feed name instead.</td></tr>
 <tr><td>View</td><td>(Optional) Select a view to see package versions only promoted to that view.</td></tr>
 <tr><td>Package</td><td>(Required) Select the package to download</td></tr>
 <tr><td>Version</td><td>(Required) Version of the package</td></tr>
@@ -77,7 +72,7 @@ Requires the Package Management extension.
     downloadPath: '$(System.ArtifactsDirectory)'
 ```
 
-## Q&A
+## FAQ
 
 ### How do I find the id of the feed (or project) I want to download my artifact from
 

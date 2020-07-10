@@ -3,9 +3,7 @@ title: Resolve validation errors
 titleSuffix: Azure DevOps Services  
 description: Fix errors reported upon importing a process to support customization of tracking work in Azure DevOps Services.  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 2407FB2B-FAE6-4BBB-99CB-B88904293A43  
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: 'azure-devops'
@@ -1087,7 +1085,7 @@ The Scrum process specifies the following `TypeField` elements. If any of these 
 <TypeFields>
     <TypeField refname="System.AreaPath" type="Team" />
     <TypeField refname="Microsoft.VSTS.Scheduling.RemainingWork" type="RemainingWork" format="format h" />
-    <TypeField refname=" Microsoft.VSTS.Common.BacklogPriority" type="Order" />
+    <TypeField refname="Microsoft.VSTS.Common.BacklogPriority" type="Order" />
     <TypeField refname="Microsoft.VSTS.Scheduling.Effort" type="Effort" />
     <TypeField refname="Microsoft.VSTS.Common.Activity" type="Activity" />
     <TypeField refname="Microsoft.VSTS.Feedback.ApplicationStartInformation" type="ApplicationStartInformation" />

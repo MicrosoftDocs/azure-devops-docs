@@ -3,10 +3,8 @@ title: What settings are supported?
 titleSuffix: Azure DevOps
 description: Configure team, project, collection, and organizational-level settings in Azure DevOps
 ms.technology: devops-settings
-ms.prod: devops
 ms.topic: overview
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +15,7 @@ ms.date: 10/28/2019
 
 # About settings at the user, team, project, or organization-level 
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 
@@ -272,7 +270,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <li><a href="../../repos/git/branch-policies.md" data-raw-source="[Manage branch policies](../../repos/git/branch-policies.md)">Manage branch policies</a></li>
 <li><a href="../../repos/tfvc/add-check-policies.md" data-raw-source="[Add TFVC Check-In Policies](../../repos/tfvc/add-check-policies.md)">Add TFVC Check-In Policies</a></li>
 </ul></td>
-<td>You can manage code using <a href="../../repos/git/overview.md" data-raw-source="[Git repositories](../../repos/git/overview.md)">Git repositories</a> or one <a href="../../repos/tfvc/overview.md" data-raw-source="[Team Foundation Version Control (TFVC) repository](../../repos/tfvc/overview.md)">Team Foundation Version Control (TFVC) repository</a>. </td>
+<td>You can manage code using <a href="../../repos/git/index.yml" data-raw-source="[Git repositories](../../repos/git/index.yml)">Git repositories</a> or one <a href="../../repos/tfvc/index.yml" data-raw-source="[Team Foundation Version Control (TFVC) repository](../../repos/tfvc/index.yml)">Team Foundation Version Control (TFVC) repository</a>. </td>
 </tr>
 <tr>
 <td><a id="test-center" /><strong>Test</strong> </td>
@@ -390,9 +388,8 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td><strong>Users</strong></td>
 <td><ul>
-<li><a href="../accounts/add-organization-users.md" data-raw-source="[Add users](../accounts/add-organization-users.md)">Add users</a></li>
+<li><a href="../accounts/add-organization-users.md" data-raw-source="[Add and manage users](../accounts/add-organization-users.md)">Add and manage users</a></li>
 <li><a href="../accounts/add-external-user.md" data-raw-source="[Add external users](../accounts/add-external-user.md)">Add external users</a></li>
-<li><a href="../accounts/manage-users-table-view.md" data-raw-source="[Manage user access levels](../accounts/manage-users-table-view.md)">Manage user access levels</a></li>
 <li><a href="../accounts/delete-organization-users.md" data-raw-source="[Remove users](../accounts/delete-organization-users.md)">Remove users</a></li>
 </ul></td>
 <td>For large organizations with a sizable number of users, we recommend that you <a href="../accounts/access-with-azure-ad.md" data-raw-source="[manage user access through Azure Active Directory](../accounts/access-with-azure-ad.md)">manage user access through Azure Active Directory</a>. For a small number of users, you can manage user access by adding their Microsoft Service Account (MSA) email. From the account-level <strong>Users</strong> page, you can also <a href="../security/export-users-audit-log.md" data-raw-source="[export the set of users and their access levels](../security/export-users-audit-log.md)">export the set of users and their access levels</a>.  </td>
@@ -405,7 +402,7 @@ For an overview of managing your organization, see [About organization managemen
 <li><a href="../security/set-project-collection-level-permissions.md" data-raw-source="[Add administrators](../security/set-project-collection-level-permissions.md)">Add administrators</a></li>
 <li><a href="../accounts/manage-azure-active-directory-groups.md" data-raw-source="[Add Azure Active Directory groups](../accounts/manage-azure-active-directory-groups.md)">Add Azure Active Directory groups</a></li>
 <li><a href="../accounts/connect-organization-to-azure-ad.md" data-raw-source="[Connect to Azure Active Directory](../accounts/connect-organization-to-azure-ad.md)">Connect to Azure Active Directory</a></li>
-<li><a href="../accounts/manage-conditional-access.md" data-raw-source="[Manage conditional access](../accounts/manage-conditional-access.md)">Manage conditional access</a></li>
+<li><a href="../accounts/change-application-access-policies.md" data-raw-source="[Manage conditional access](../accounts/change-application-access-policies.md)">Manage conditional access</a></li>
 </ul></td>
 <td>For an overview of security concepts, see <a href="../security/about-permissions.md" data-raw-source="[About permissions and groups](../security/about-permissions.md)">About permissions and groups</a> and <a href="../security/access-levels.md" data-raw-source="[About access levels](../security/access-levels.md)">About access levels</a>. For a list of collection-level permissions, see <a href="../security/permissions.md#collection-level" data-raw-source="[Permissions and groups reference, Collection-level permissions](../security/permissions.md#collection-level)">Permissions and groups reference, Collection-level permissions</a>.</p></td>
 </tr>

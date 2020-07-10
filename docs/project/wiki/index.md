@@ -3,10 +3,8 @@ title: Share information using READMEs or Wikis in Azure DevOps
 titleSuffix: Azure DevOps
 description: Share information using READMEs or Wikis in Azure DevOps  
 ms.technology: devops-collab
-ms.prod: devops
 ms.topic: overview
 ms.assetid:  
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 08/01/2019
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # READMEs & Wikis  
 
-[!INCLUDE [temp](../../_shared/version-ts-tfs-2015-2016.md)]  
+[!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]  
 
 Wikis and repository README files are great ways to share information with your team and stakeholders.
 

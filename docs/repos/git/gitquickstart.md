@@ -3,10 +3,8 @@ title: Get started with Git and Visual Studio 2017
 titleSuffix: Azure Repos
 description: Quickstart with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
@@ -47,7 +45,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
    ![Cloning a Git Repository from a connected organization in Azure Repos](media/gitquickstart-vs2017/vs2019-connect-add-server.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. Verify the location of the cloned repo on your computer and select **Clone**.
 
@@ -60,7 +58,7 @@ If you don't have a Git repository yet, you can create one [using your own code]
 
    ![Finding the Clone URL for your Git Repository in Azure Repos](media/gitquickstart-vs2017/clone-url.png)
 
-   [!INCLUDE [project-urls](../../_shared/project-urls.md)]
+   [!INCLUDE [project-urls](../../includes/project-urls.md)]
 
 1. At the command prompt, go to the folder where you want the code stored on your local computer.
 

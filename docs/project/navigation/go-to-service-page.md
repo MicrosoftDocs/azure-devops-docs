@@ -3,10 +3,8 @@ title: Navigate to an application or functional area
 titleSuffix: Azure DevOps 
 description: Access the application area or change your view
 ms.custom: Navigation
-ms.prod: devops
 ms.technology: devops-collab
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.date: 02/08/2019
 
 # Open a service, page, or settings 
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-through-vsts.md)] 
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)] 
 
 The web portal for Azure DevOps provides support for software development teams to collaborate through the planning, development, and release cycles. You can manage source code, plan and track work, define builds, run tests, and manage releases. 
 
@@ -80,7 +78,7 @@ Select configurations are made to teams through the team settings pages. For an 
 1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
 1. Expand **Boards** and choose **Team configuration**. 
 
@@ -123,7 +121,7 @@ Administrators configure resources for a project and manage project-level permis
 1. Choose **Project Settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open project settings](../../_shared/media/settings/open-project-settings-vert-brn.png)  
+	> ![Open project settings](../../media/settings/open-project-settings-vert-brn.png)  
 
 1. From there, you can choose a page from the list. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards**, **Build and release**, **Code**, **Test**, and **Extensions** to select from the list. 
 
@@ -145,7 +143,7 @@ From a user context, open **Project settings** by choosing the ![ ](../../media/
  
 Open any admin page by choosing it's name. Choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon to access other administrative options. Note that you can choose any of the user-context areas&mdash;**Dashboards**, **Code**, **Work**&mdash;to return to the user context. 
 
-![Project Settings](../../_shared/media/settings/open-project-settings-horz.png) 
+![Project Settings](../../media/settings/open-project-settings-horz.png) 
 
 ::: moniker-end
 
@@ -194,7 +192,7 @@ Members of the Project Collection Administrators group configure resources for a
 1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
 
 1. From there, you can choose a page from the list of settings. Settings are organized based on the service they support. Expand or collapse the major sections such as **Boards** and **Build and release** to select a page from the list. 
 
@@ -209,7 +207,7 @@ Members of the Project Collection Administrators group configure resources for a
 1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Organization settings** or **Collection settings**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![Organization settings, Policy page, Security policies](../../_shared/media/settings/open-organization-settings.png) 
+	> ![Organization settings, Policy page, Security policies](../../media/settings/open-organization-settings.png) 
 
 1. From there, you can choose a page. Settings are organized based on the service they support. 
 

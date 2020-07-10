@@ -2,11 +2,9 @@
 title: Customize a project  
 titleSuffix: Azure DevOps Services
 description: Your guide to configuring and customizing work tracking processes for a project by customizing an inherited process
-ms-custom: inherited-process
+ms.custom: inherited-process
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 31CA1DCB-8E3E-4B9E-A64A-D47DF23490A3   
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
@@ -16,7 +14,7 @@ ms.date: 04/22/2019
 
 # Customize a project using an inherited process
 
-[!INCLUDE [temp](../../../boards/_shared/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
 
 
 ::: moniker range="azure-devops"
@@ -33,7 +31,7 @@ Each project is based on a process that defines the building blocks for tracking
 
 You can only customize inherited processes. Any changes you make to the inherited process automatically appears in the projects that use that process. 
 
-[!INCLUDE [temp](../_shared/note-on-prem-link.md)]
+[!INCLUDE [temp](../includes/note-on-prem-link.md)]
 
 
 
@@ -58,14 +56,15 @@ Learn how to perform these tasks:
 > * Verify the customizations you made  
 > * Change the process used by a project 
  
+[!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-[!INCLUDE [temp](../_shared/process-prerequisites.md)] 
+[!INCLUDE [temp](../includes/process-prerequisites.md)] 
 
-[!INCLUDE [temp](../_shared/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
 
-[!INCLUDE [temp](../_shared/automatic-update-project.md)] 
+[!INCLUDE [temp](../includes/automatic-update-project.md)] 
  
-[!INCLUDE [temp](../_shared/create-inherited-process.md)] 
+[!INCLUDE [temp](../includes/create-inherited-process.md)] 
 
 
 ## Add or modify a field 
@@ -222,15 +221,27 @@ We recommend that you create a test project and apply your customized inherited 
 
 ### Create a test project and copy of your customized process
 
-1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New project**.  
+1. Open the **All processes** page, and choose the &hellip; context menu for the process you want to use, and then select **New team project**.  
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
+	::: moniker-end
 
-1. The Create new project page opens. Fill out the form. 
+1. The Create new project page opens. Fill out the form. To learn more, see [Create a project](../../projects/create-project.md).
 
+	::: moniker range="azure-devops"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project.png) 
+	::: moniker-end
 
 2. Open the **Work>Work Items** page (user context) and choose **New Work Item** and select a WIT you customized. Here we choose **Bug**. 
 
@@ -251,7 +262,7 @@ You can also use the following steps to verify the customizations you've made to
 4. Use the import/export process tool again to import the modified process to the production organization.  
 
 
-[!INCLUDE [temp](../_shared/change-project-to-inherited-process.md)] 
+[!INCLUDE [temp](../includes/change-project-to-inherited-process.md)] 
 
 
 <a id="process-rest-api">  </a>

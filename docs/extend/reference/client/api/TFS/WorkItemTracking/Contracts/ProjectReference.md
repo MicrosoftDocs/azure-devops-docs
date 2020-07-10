@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts ProjectReference API | Extensions for Azure DevOps Services
 ms.assetid: a0bd88ee-10ff-4fcd-1c6a-406ad6164a4b
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

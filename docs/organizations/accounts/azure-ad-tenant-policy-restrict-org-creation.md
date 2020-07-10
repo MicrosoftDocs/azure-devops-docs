@@ -1,24 +1,22 @@
 ---
 title: Restrict new organization creation, Azure Active Directory tenant policy
 titleSuffix: Azure DevOps Services
-ms.custom: seodec18
-description: Learn how to restrict users from creating new organizations via Azure Active Directory
-ms.prod: devops
+ms.custom: 
+description: Learn how Azure DevOps Administrators can prevent users from creating new organizations via the Azure Active Directory tenant policy.
 ms.technology: devops-accounts
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
-ms.date: 11/15/2019
+ms.date: 03/16/2020
 monikerRange: 'azure-devops'
 ---
 
 # Restrict organization creation via Azure AD tenant policy
 
-[!INCLUDE [version-vsts-only](../../_shared/version-vsts-only.md)]
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy. This policy restricts users from creating an organization in Azure DevOps and is turned off, by default.
+In this article, learn how to turn on the Azure Active Directory (Azure AD) tenant policy, which restricts users from creating an organization in Azure DevOps. This policy is turned off, by default.
 
 ## Prerequisites
 
@@ -39,7 +37,7 @@ You can also check your role using the Azure AD PowerShell module.
 
 2. Select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**.
 
-    ![Open Organization settings](../../_shared/media/settings/open-admin-settings-vert.png)
+    ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)
 3. Select **Azure Active Directory**, and then switch the toggle to turn on the policy, restricting organization creation.
    
    ![Turn on Azure AD policy](media/azure-ad-tenant-policy/azure-ad-turn-policy-on.png)
@@ -81,4 +79,7 @@ The error message is customized.
 ## Related articles
 
 * [Connect your organization to Azure Active Directory](connect-organization-to-azure-ad.md)
-* [Access with Azure AD](access-with-azure-ad.md)
+* [About access with Azure AD](access-with-azure-ad.md)
+* [Get a list of organizations backed by Azure AD](get-list-of-organizations-connected-to-azure-active-directory.md)
+* [Resolve orphaned organization](resolve-orphaned-organization.md)
+

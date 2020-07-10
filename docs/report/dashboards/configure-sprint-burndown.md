@@ -4,18 +4,16 @@ titleSuffix: Azure DevOps
 description: Configure the Sprint burndown in-context chart or widget that to track team progress in Azure DevOps  
 ms.custom: dashboards
 ms.technology: devops-analytics
-ms.prod: devops
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
-ms.date: 10/28/2019
+ms.date: 06/01/2020
 ---
 
 # Configure and monitor sprint burndown 
 
-[!INCLUDE [temp](../_shared/version-azure-devops-all.md)]
+[!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 
 ::: moniker range="azure-devops"
@@ -102,6 +100,8 @@ The **Total Scope** line indicates the number of work items added after the spri
 
 The blue area indicates the number of work items active or in progress each day of the sprint. As shown in this example, one work item is still active at the end of the sprint.  
 
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
+
 > [!div class="mx-imgBorder"]  
 > ![Choose another team](media/burndown/analytics-burndown-stories-count-past-s159.png) 
 
@@ -175,7 +175,7 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 ::: moniker-end
 
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"
@@ -255,7 +255,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -276,7 +276,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/select-specific-sprint-agile.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then choose **New Sprint** from the menu, and then choose **Select existing iteration**. For details, see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 
 ::: moniker-end
@@ -301,7 +301,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
     > [!div class="mx-imgBorder"]  
     > ![Choose another sprint](../../boards/sprints/media/add-tasks/choose-sprint-standard.png)
 
-    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths (aka sprints)](../../organizations/settings/set-iteration-paths-sprints.md). 
+    The system lists only those sprints that have been selected for the current team focus. If you don't see the sprints you want listed, then see [Define iteration paths](../../organizations/settings/set-iteration-paths-sprints.md). 
 
 ::: moniker-end
 
@@ -318,15 +318,15 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 1. Use the interactive controls to choose from the following options:  
 
-	a. The **Start Date** and **End Date** of the sprint. These will default to the team's current iteration sprint dates.   
+   1. The **Start Date** and **End Date** of the sprint. These will default to the team's current iteration sprint dates.   
 
-	b. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.  
+   1. The **Backlogs/Work Items** to burn down on, either the product backlog&mdash;Stories, Issues, Product Backlog Items, or Requirements&mdash;or Tasks backlog to use. Your selection impacts the options available for the **Burndown on** menu.  
 
-	c. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of a field, such as Story Points, Effort, or Size.  
+   1. The **Burndown on** field to use to calculate burndown, either a Count of Work Items or a sum of a field, such as Story Points, Effort, or Size.  
 
-	d. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../../organizations/settings/set-working-days.md) and [Set sprint capacity](../../boards/sprints/set-capacity.md).  
+   1. Check or uncheck **Show non-working days**. Non-working days appear as gray bars in the background when enabled. Default non-working days are set for a team and for a team's sprint through the capacity page. See [Set working days](../../organizations/settings/set-working-days.md) and [Set sprint capacity](../../boards/sprints/set-capacity.md).  
 
-	Choose **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
+      Choose **Reset** to reset the controls to the default options. By default, the dates are set to the selected sprint. Changes to the start and end dates don't change any sprint date definitions. 
 
 1. If you don't track Remaining Work in tasks, you can view burndown based on a count of work items/tasks. Hover over any point on the chart to show a summary of the data for a specific day.
 
@@ -490,6 +490,8 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
     - **Show non working days**: Displays non working days on the burndown. When displayed, non working days are shaded.  
     - **Plot remaining using work item type color**: Displays remaining work based on the work item type color, rather than the default blue color. If multiple work items are included, then it stacks colors by work item type.  
 
+[!INCLUDE [temp](../../includes/note-working-days-off.md)]
+
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -533,7 +535,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
 To view a past sprint and its burndown chart, choose the sprint listed under the **Past** section of the sidebar.  
-![Past sprints provide historical record, tfs 2013, 2015](media/burndown/ALM_DS_PastSprints.png)  
+![Past sprints provide historical record](media/burndown/ALM_DS_PastSprints.png)  
 
 ::: moniker-end
 
@@ -585,7 +587,7 @@ In addition to the sprint burndown chart, teams can review the [velocity](team-v
 
 You can learn more about defining, planning, and executing your sprints from these articles: 
 
-- [Define iteration paths (aka sprints) and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
+- [Define iteration paths and configure team iterations](../../organizations/settings/set-iteration-paths-sprints.md) 
 - [Sprint planning](../../boards/sprints/assign-work-sprint.md)  
 - [Add tasks to backlog items](../../boards/sprints/add-tasks.md)
 - [Update and monitor your Taskboard](../../boards/sprints/task-board.md)  

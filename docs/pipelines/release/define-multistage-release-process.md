@@ -3,10 +3,7 @@ title: Define a multi-stage CD release pipeline
 ms.custom: seodec18
 description: DevOps CI CD - Define a multi-stage continuous deployment (CD) pipeline for your ASP.NET Core app using Azure Pipelines
 ms.assetid: 12F57ADB-49B9-4E21-A346-5EDB1D1EC2F7
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # Define your multi-stage continuous deployment (CD) pipeline
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -143,7 +140,7 @@ a groups of servers, or any other legitimate physical or virtual deployment targ
    may differ. For example, if you are using deployment groups, you may be able to select a different deployment group,
    or a different set of tags within the same deployment group.
 
-[!INCLUDE [edit-template-vars-in-environment](../apps/_shared/edit-template-vars-in-environment.md)]
+[!INCLUDE [edit-template-vars-in-environment](../apps/includes/edit-template-vars-in-environment.md)]
 
 <a name="add-approvals"></a>
 

@@ -4,9 +4,7 @@ titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: Learn how to structure a project, manage users, and more to support your software development teams in Azure DevOps
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
@@ -16,17 +14,17 @@ ms.date: 06/14/2019
 
 # Manage your project 
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]  
 
 With most Azure DevOps Services, you can start using the service and configure resources as you go. No up-front work is required. Most settings define defaults.  
 
-That said, as an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you're tasked with managing an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
+As an organization Owner or a Project Administrator, there are a few tasks you might want to do to ensure a smooth operational experience. If you need to manage an organization with a large user base, you'll want to consider additional tasks to structure your projects to support multiple teams or software development apps.  
 
 
 ## Add users to your project
 
 ::: moniker range="azure-devops"  
-The first task is to ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
+Ensure that all members of your organization or group are added to your organization and projects. For small groups, using [Microsoft Accounts](https://account.microsoft.com/account) to add users to your organization and projects works fine.
 
 Larger enterprises may want to consider using Azure Active Directory to manage permissions and user access. To learn more, see [About organization management](../organizations/accounts/organization-management.md).
 
@@ -34,7 +32,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 ::: moniker range="<= azure-devops-2019" 
  
-The first task is to ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory prior to installing TFS. To learn more, see these articles:
+Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
 - [Install Azure Active Directory Domain Services (Level 100)](/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
 - [Step-By-Step: Setting up Azure Active Directory in Windows Server 2016](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
@@ -47,7 +45,7 @@ To delegate the task of managing user access, add a user with Stakeholder or hig
 
 Access to features and functions is controlled by access-level assignments, permissions, and security groups. To quickly understand the defaults configured for your project, see [Default permissions and access](../organizations/security/permissions-access.md). 
 
-If you decide that you want to delegate specific tasks to others, then you'll want to add them to a built-in or custom security group. Or, add them to a specific role. To learn more, see the following articles:
+To delegate specific tasks to others, add them to a built-in or custom security group or add them to a specific role. To learn more, see the following articles.
 
 - [Grant or restrict access to select features and functions](../organizations/security/restrict-access.md)  
 - [Set permissions at the project level or project collection level](../organizations/security/set-project-collection-level-permissions.md)
@@ -126,7 +124,7 @@ If you support several products, you can assign work items by feature area by de
 
 ## Customize work-tracking processes
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
   
 All work-tracking tools are available immediately after you create a project. Often, one or more users may want to customize the experience to meet one or more business needs. Processes are easily customized through the user interface. However, you may want to establish a methodology for who manages the updates and evaluates requests.
 
@@ -187,10 +185,10 @@ To learn more, see the following articles:
 
 An extension is an installable unit that adds new capabilities to your projects. Azure DevOps extensions support the following functions:
 
-- Planning and tracking of work items, sprints, scrums, etc.  
-- Build and release flows.
-- Code testing and tracking.
-- Collaboration among team members.
+- Planning and tracking of work items, sprints, scrums, and so on  
+- Build and release flows
+- Code testing and tracking
+- Collaboration among team members
 
 ::: moniker-end
 
@@ -202,7 +200,7 @@ For example, to support [code search](../project/search/code-search.md), install
 
 ::: moniker range=">= tfs-2015"  
 
-You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group, or added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
+You want to tell your users about extensions and that they can [request an extension](../marketplace/request-extensions.md). To install and manage extensions, you must be an organization Owner, a member of the Project Collection Administrators group. Or, you can get added to the [Manager role for extensions](../marketplace/how-to/grant-permissions.md).
 
 ::: moniker-end
 
@@ -223,15 +221,16 @@ All organizations can add up to five users with Basic access and unlimited users
 
 ::: moniker range="azure-devops"  
 
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"  
+::: moniker range="< azure-devops"  
 
-- [Manage projects](../organizations/projects/index.md)
+- [Project and team quick reference](../organizations/projects/project-team-quick-reference.md)  
 - [Security & identity](../organizations/security/index.md)
 - [Organization management](../organizations/accounts/organization-management.md)
 - [About user, team, project, and organization-level settings](../organizations/settings/about-settings.md)

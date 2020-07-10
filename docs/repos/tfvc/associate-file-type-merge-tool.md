@@ -3,10 +3,8 @@ title: Associate a file type with a merge tool
 titleSuffix: Azure Repos
 description: Associate a file type with a merge tool
 ms.assetid: be153b5c-b26d-4bfe-aec2-fd23156ead68
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

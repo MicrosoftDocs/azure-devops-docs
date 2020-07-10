@@ -2,10 +2,8 @@
 title: VSS/References/SDK.Interfaces InstalledExtension API | Extensions for Azure DevOps Services
 description: Represents an Azure DevOps Services extension along with its installation state
 ms.assetid: 0b2dda96-6ff3-0d05-711c-a33de4a6da69
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

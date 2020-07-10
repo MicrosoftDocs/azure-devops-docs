@@ -2,10 +2,8 @@
 title: Use the TreeView Control | Extensions for Azure DevOps Services
 description: Use the treeview to display hierarchical data in your app for Azure DevOps Services.
 ms.assetid: 8A32169B-3E9F-688A-B886-0A5627B863E8
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: mijacobs
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -18,7 +16,7 @@ This page shows different samples about the treeview control.
 
 **Go to [API Reference](../../reference/client/controls/tree.md) for more details.**
 
-[!INCLUDE [extension-docs-new-sdk](../../../_shared/extension-docs-new-sdk.md)]
+[!INCLUDE [extension-docs-new-sdk](../../../includes/extension-docs-new-sdk.md)]
 
 <a name="basic"></a>
 

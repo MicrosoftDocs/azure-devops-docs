@@ -7,7 +7,6 @@ ms.prod: devops
 ms.technology: devops-analytics  
 ms.assetid: C444622C-A2CA-4FCF-9E68-90D8D4896E6B  
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019' 
@@ -17,7 +16,7 @@ ms.date: 08/30/2019
 
 # Lead time and cycle time widgets
 
-[!INCLUDE [temp](../_shared/version-azure-devops.md)]
+[!INCLUDE [temp](../includes/version-azure-devops.md)]
 
 
 Both lead time and cycle time widgets are extremely useful to teams as they indicate how long it takes for work to flow through their development pipeline. Lead time measures the total time elapsed from the creation of work items to their completion. Cycle time measures the time it takes for your team to complete work items once they begin actively working on them.  
@@ -37,7 +36,7 @@ In this article you'll learn:
 
 To learn more, see [Cumulative flow, lead time, and cycle time guidance](cumulative-flow-cycle-lead-time-guidance.md).
 
-[!INCLUDE [temp](../_shared/analytics-widgets-prerequisites.md)]
+[!INCLUDE [temp](../includes/analytics-widgets-prerequisites.md)]
 
 
 ::: moniker range=">= azure-devops-2019" 

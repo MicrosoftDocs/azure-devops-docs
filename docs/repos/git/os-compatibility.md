@@ -3,7 +3,6 @@ title: Cross-Platform Compatibility
 titleSuffix: Azure Repos
 description: How Git interacts with multiple platform filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
-ms.prod: devops
 ms.technology: devops-code-git
 ms.topic: conceptual
 ms.date: 10/03/2018

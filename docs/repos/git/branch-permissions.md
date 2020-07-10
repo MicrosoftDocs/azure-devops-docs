@@ -3,13 +3,11 @@ title: Set Git branch security and permissions
 titleSuffix: Azure Repos
 description: Set permissions for Git branches in Azure DevOps Services/TFS.
 ms.assetid: 0dacda14-c251-4a89-8141-ae60a47dab52
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 05/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,13 +22,21 @@ You can set permissions for individual users and groups, and inherit and overrid
 
 ## Use the branches view to configure security
 
+::: moniker range=">= azure-devops-2019"
+
 1. Open the **Branches** page by navigating to your project in the web portal and selecting **Repos**, **Branches**.
 
    ![Open up the Branches page on the web](media/branches/branches_nav-new-nav.png)
 
-   If you're not using the new navigation preview, select **Code**, **Branches**.
+::: moniker-end
+
+::: moniker range="< azure-devops-2019"
+
+1. Open the **Branches** page by navigating to your project in the web portal and selecting **Code**, **Branches**.
 
    ![Open up the Branches page on the web](media/branches/branches_nav.png)
+
+::: moniker-end
 
 2. Locate your branch in the page. You can browse the list or you can search for your branch using the **Search all branches** box in the upper right.
 
@@ -64,7 +70,7 @@ Control branch permission settings from the branch permission view. Users and gr
 > Ensure you are viewing the correct version of this documentation for permissions by choosing your product version
 > in the upper left corner of the window.
 >
-> ![Content version selector](../../_shared/media/version-selector.png)
+> ![Content version selector](../../media/version-selector.png)
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 

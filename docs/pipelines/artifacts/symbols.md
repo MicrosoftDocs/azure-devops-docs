@@ -3,25 +3,20 @@ title: Publish symbols for debugging
 titleSuffix: Azure Pipelines and TFS
 ms.custom: seodec18
 description: Publish symbols to a symbol server for debugging using Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 8794A5F8-B646-4E2F-A426-47CC62ABFF5D
-ms.manager: mijacobs
-ms.author: phwilson
-ms.date: 10/18/2017
+ms.date: 04/23/2020
 monikerRange: '> tfs-2015'
-author: chasewilson
 ---
 
 # Publish symbols for debugging
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-[!INCLUDE [](../../artifacts/_shared/availability-symbols.md)]
+[!INCLUDE [](../../artifacts/includes/availability-symbols.md)]
 
 Symbol servers enable debuggers to automatically retrieve the correct symbol files without knowing product names, build numbers, or package names. To learn more about symbols, read the [concept page](/azure/devops/artifacts/concepts/symbols). To consume symbols, see [this page for Visual Studio](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio) or [this page for WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-windbg).
 
@@ -113,7 +108,11 @@ C:\BuildAgent\_work\1\src\MyApp\SomeHelper.cs*TFS_COLLECTION*TFS_TEAM_PROJECT*TF
 TFS_COLLECTION=http://DIFFERENT_SERVER:8080/tfs/DifferentCollection
 ```
 
-## Q&A
+> [!IMPORTANT]
+> If you want to delete symbols that were published using the `Index Sources & Publish Symbols` task, you must first remove the build that generated those symbols. This can be accomplished by [using retention policies to clean up your build](../build/ci-build-git.md#use-retention-policies-to-clean-up-your-completed-builds) or by [manually deleting the run](../policies/retention.md#delete-a-run).
+> For more information about debugging your app, see [Debug with symbols in Visual Studio](../../artifacts/symbols/debug-with-symbols-visual-studio.md), and [Debug with symbols in WinDbg](../../artifacts/symbols/debug-with-symbols-windbg.md).
+
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 

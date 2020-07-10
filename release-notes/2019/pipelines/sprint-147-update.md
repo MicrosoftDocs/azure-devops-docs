@@ -3,7 +3,6 @@ title: Azure Pipelines - Sprint 147 Update
 description: See the Sprint 147 feature updates for Azure Pipelines, including next steps.
 author: gloridelmorales
 ms.author: glmorale
-ms.prod: devops
 ms.technology: devops-release-notes
 ms.date: 02/13/2019
 ---
@@ -12,9 +11,9 @@ ms.date: 02/13/2019
 
 ## Features
 
-[!INCLUDE [sprint-147-update-links](../_shared/pipelines/sprint-147-update-links.md)]
+[!INCLUDE [sprint-147-update-links](../includes/pipelines/sprint-147-update-links.md)]
 
-[!INCLUDE [sprint-147-update](../_shared/pipelines/sprint-147-update.md)]
+[!INCLUDE [sprint-147-update](../includes/pipelines/sprint-147-update.md)]
 
 ## Next steps
 

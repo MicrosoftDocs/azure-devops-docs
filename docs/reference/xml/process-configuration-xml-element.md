@@ -3,9 +3,8 @@ title: ProcessConfiguration syntax
 titleSuffix: Azure DevOps & TFS  
 description: XML syntax and usage for all ProcessConfiguration elements to support customization of work item types and Agile tool backlogs and boards 
 ms.technology: devops-agile
-ms.prod: devops
+ms.custom: process
 ms.assetid: 4314c6ad-d6ca-4cf2-a3c8-46e4e8ed759a
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -14,7 +13,7 @@ ms.date: 12/15/2017
 
 # Process configuration XML element reference
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 Process configuration defines the default configuration and functional capabilities that your teams can access using the web portal Agile tools. These tools, include the product backlog, sprint backlogs, Kanban board, and task board and are customizable for each team you add to project.
 
@@ -51,7 +50,7 @@ To update the process configuration for a project, you export the XML definition
 
 [![Export ProcessConfig definition file](media/export-process-step-1.png)](../witadmin/witadmin-import-export-process-configuration.md)[![Edit XML definition file](media/export-process-step-2.png)](#areas-to-customize)[![Import WIT definition file](media/export-process-step-3.png)](../witadmin/witadmin-import-export-process-configuration.md)![Refresh and verify changes](media/export-process-step-4.png)  
 
-[!INCLUDE [temp](../../_shared/process-editor.md)]  
+[!INCLUDE [temp](../../includes/process-editor.md)]  
 
 <a id="backlog_page">  </a>
 
@@ -790,7 +789,7 @@ Here we show how it appears in the work item form:
 
 The supported set of icons you can specify for a work item type are shown below. 
 
-![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_color_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
+![icon_airplane, icon_asterisk, icon_book, icon_car, icon_chart, icon_chat_bubble, icon_check_box, icon_clipboard, icon_code_response, icon_code_review](media/processconfig-wit-icons-one.png) ![icon_palette, icon_crown, icon_database_storage, icon_diamond, icon_flame, icon_gavel, icon_gear, icon_gift, icon_government, icon_headphone](media/processconfig-wit-icons-two.png) ![icon_insect, icon_key, icon_list, icon_megaphone, icon_paint_brush, icon_parachute, icon_response, icon_review, icon_ribbon, icon_sticky_note](media/processconfig-wit-icons-three.png) ![icon_star, icon_test_beaker, icon_test_parameter, icon_test_plan, icon_test_step, icon_test_suite, icon_traffic_cone, icon_trophy](media/processconfig-wit-icons-four.png)
 
 > [!NOTE]    
 > Icons noted with an asterisk are supported on Azure DevOps Services and TFS 2017.3 and later versions.

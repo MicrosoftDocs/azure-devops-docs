@@ -2,10 +2,8 @@
 title: TFS/DistributedTask/Contracts ServiceEndpoint API | Extensions for Azure DevOps Services
 description: Represents an endpoint which may be used by an orchestration job.
 ms.assetid: 38c251e5-9a98-d26d-2167-73b385234785
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

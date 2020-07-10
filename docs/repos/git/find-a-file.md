@@ -3,10 +3,8 @@ title: Find a file in your Git repo
 titleSuffix: Azure Repos
 description: Search your Git repo in Azure DevOps Services or TFS for a specific file or folder
 ms.assetid: 228495b9-f3cb-484a-a798-d026d650fa26
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: mijacobs
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018

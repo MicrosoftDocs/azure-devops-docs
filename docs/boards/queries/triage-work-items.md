@@ -4,11 +4,9 @@ titleSuffix: Azure Boards
 ms.global_help.title: Triage work items
 description: Review and update work items use the triage mode from the query results view in Azure Boards, Azure DevOps, & Team Foundation Server
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 486A876F-A04F-4DC7-829C-94E88BB9B7E1 
 ms.topic: tutorial
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -18,7 +16,7 @@ ms.date: 01/08/2018
 
 # Triage work items  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 
@@ -33,12 +31,12 @@ In this article you'll learn how to:
 > * Use triage query mode to update a list of work items   
 > * Bulk save work items that you've updated  
 
-[!INCLUDE [temp](../_shared/prerequisites-queries.md)]
+[!INCLUDE [temp](../includes/prerequisites-queries.md)]
 
 
 ## Open Queries 
 
-[!INCLUDE [temp](../_shared/open-queries.md)] 
+[!INCLUDE [temp](../includes/open-queries.md)] 
 
 ::: moniker range=">= azure-devops-2019"
 

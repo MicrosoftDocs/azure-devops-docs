@@ -3,10 +3,7 @@ title: Troubleshoot Azure Resource Manager service connections
 ms.custom: seodec18
 description: DevOps CI CD - Troubleshoot Azure Resource Manager service connections in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: B43E78DE-5D73-4303-981F-FB86D46F0CAE
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: ronai
 author: RoopeshNair
 ms.date: 08/24/2018
@@ -15,11 +12,11 @@ monikerRange: '>= tfs-2015'
 
 # Troubleshoot Azure Resource Manager service connections
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -171,4 +168,4 @@ Managed identities for Azure resources provides Azure services with an automatic
 >
 > Managed identities are not supported on Microsoft Hosted Agents. You will have to [set-up a self hosted agent](/azure/devops/pipelines/agents/agents?view=azure-devops#install) on an Azure VM and configure managed identity for the virtual machine.
 
-[!INCLUDE [rm-help-support-shared](../_shared/rm-help-support-shared.md)]
+[!INCLUDE [rm-help-support-shared](../includes/rm-help-support-shared.md)]

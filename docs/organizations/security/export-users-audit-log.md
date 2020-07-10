@@ -3,10 +3,8 @@ title: Export access level audit log
 titleSuffix: Azure DevOps
 description: Determine the access level-stakeholder, basic, advanced, or VS Enterprise-granted to user accounts  
 ms.technology: devops-security
-ms.prod: devops
 ms.assetid: 
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.reviewer: jrice 
 ms.author: kaelli
 author: KathrynEE
@@ -16,7 +14,7 @@ ms.date: 09/18/2019
 
 # Export a list of users and their access levels
 
-[!INCLUDE [temp](../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
 
 <a id="export-audit-log" >  </a>
 
@@ -52,7 +50,7 @@ From your web browser or the Azure DevOps CLI command, you can get a list of the
 1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/_shared/media/settings/open-admin-settings-vert.png)  
+	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
 
 1. Choose **Users**, and then **Export users**. 
 
@@ -131,7 +129,7 @@ You can get a list of users and groups that have access to your TFS instance by 
 
 ::: moniker range="azure-devops"  
 
-[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/manage-users-table-view.md#update-user) | [Show users](../accounts/manage-users-table-view.md#show-users)
+[Add a user](../accounts/add-organization-users.md#add-user) | [List users](#list-users) | [Remove a user](../accounts/delete-organization-users.md#remove-user) | [Update a user](../accounts/add-organization-users.md#update-user) | [Show users](../accounts/add-organization-users.md#show-users)
 
 
 <a id="list-users" /> 
@@ -169,7 +167,7 @@ f14a4f19-9910-6116-9836-cccd6dd1b7b7  contoso2@contoso.com    contoso2@contoso.c
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../_shared/note-cli-not-supported.md)]
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 

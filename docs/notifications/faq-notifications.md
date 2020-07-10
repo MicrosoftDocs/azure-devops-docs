@@ -2,11 +2,9 @@
 title: Notification FAQs
 titleSuffix: Azure DevOps
 description: General questions and answers about notifications set in Azure DevOps or Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-collab
 toc: show
 ms.topic: conceptual
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.date: 12/30/2019
@@ -15,7 +13,7 @@ monikerRange: '>= tfs-2015'
 
 # Frequently asked questions (FAQs) on notifications
 
-[!INCLUDE [version-vsts-tfs-2017-on](../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
 ## Can I receive emails in plain text?
 No. Plain text was supported in earlier versions of Azure DevOps and TFS, but all emails are now HTML formatted.

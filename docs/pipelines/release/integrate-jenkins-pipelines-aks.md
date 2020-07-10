@@ -1,13 +1,10 @@
 ---
 title: Deploy to Kubernetes on AKS with Jenkins
 description: Set up continuous integration (CI) and continuous deployment (CD) with Kubernetes for your apps using Jenkins, Azure Container Service (AKS), and Azure Pipelines
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 ms.author: mlearned
 author: mlearned
 ms.reviewer: nicolela
-ms.manager: mijacobs
 ms.custom: "mvc, seodec18"
 ms.date: 04/17/2018
 monikerRange: '>= tfs-2015'
@@ -15,10 +12,10 @@ monikerRange: '>= tfs-2015'
 
 # Tutorial:  Deploy to Kubernetes on Azure Container Service (AKS) with Jenkins CI and Azure Pipelines CD
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
 Azure Pipelines provides integration with Jenkins so that you can:
@@ -59,7 +56,7 @@ You will:
 * An AKS cluster.  You can follow the steps for creating this [here](/azure/aks/tutorial-kubernetes-deploy-cluster).
 
 * Access to a Jenkins server with Maven and the VSTS plugin configured. If you have not yet created a Jenkins server,
-  see [Create a Jenkins master on an Azure Virtual Machine](/azure/jenkins/install-jenkins-solution-template).  Also, the following Jenkins plugins must be installed:
+  see [Create a Jenkins master on an Azure Virtual Machine](/azure/developer/jenkins/configure-on-linux-vm).  Also, the following Jenkins plugins must be installed:
     * **VS Team Services Continuous Deployment** plugin.  You can find additional information about the **TFS plugin** [here](https://github.com/jenkinsci/tfs-plugin).
     * **Config File Provider** plugin.  You can find additional information about the **Config File plugin** [here](https://wiki.jenkins.io/display/JENKINS/Config+File+Provider+Plugin).
     * **Maven Integration** plugin.  You can find additional information about the **Maven Integration plugin** [here](https://plugins.jenkins.io/maven-plugin).

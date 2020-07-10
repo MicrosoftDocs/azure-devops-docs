@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Recycle Bin | REST API Reference for Team Foundation Server
 description: Work with deleted work items programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: A4633743-4644-421E-9B4F-3C906F9D4D42
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -65,7 +63,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebi
 
 #### Sample code
 
-* [C# (GetDeleteWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L15)
+* [C# (GetDeleteWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L15)
 
 ##	Get a deleted item in the recycle bin
 
@@ -149,7 +147,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/72?api-version=1.
 
 #### Sample code
 
-* [C# (GetDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L28)
+* [C# (GetDeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L28)
 
 ##	Get multiple deleted items in the recycle bin
 
@@ -213,7 +211,7 @@ GET https://mytfsserver/DefaultCollection/Fabrikam-Fiber-Git/_apis/wit/recyclebi
 
 #### Sample code
 
-* [C# (GetMultipleDeletedWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L41)
+* [C# (GetMultipleDeletedWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L41)
 
 ## Restore a work item
 <a name="restoreaworkitem" />
@@ -236,7 +234,7 @@ PATCH https://{instance}/DefaultCollection/_apis/wit/recyclebin/{id}?api-version
 
 #### Sample code
 
-* [C# (RestoreWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L53)
+* [C# (RestoreWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L53)
 
 ## Restore multiple work items
 
@@ -311,7 +309,7 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
 
 #### Sample code
 
-* [C# (RestoreMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L70)
+* [C# (RestoreMultipleWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L70)
 
 ## Permanently delete a work item
 
@@ -337,7 +335,7 @@ DELETE https://mytfsserver/DefaultCollection/_apis/wit/recyclebin/403?api-versio
 
 #### Sample code
 
-* [C# (PermanentlyDeleteWorkItem method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L90)
+* [C# (PermanentlyDeleteWorkItem method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L90)
 
 ## Permanently delete multiple work items
 
@@ -390,4 +388,4 @@ POST https://mytfsserver/DefaultCollection/_apis/wit/$batch?api-version=3.0-prev
 
 #### Sample code
 
-* [C# (PermanentlyDeleteMultipleWorkItems method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/RecycleBinSample.cs#L101)
+* [C# (PermanentlyDeleteMultipleWorkItems method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/RecycleBinSample.cs#L101)

@@ -1,10 +1,8 @@
 ---
 title: TFS/WorkItemTracking/Contracts QueryType API | Extensions for Azure DevOps Services
 ms.assetid: 8769a5bd-5d5e-a0d4-d65c-e9b36d97a860
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

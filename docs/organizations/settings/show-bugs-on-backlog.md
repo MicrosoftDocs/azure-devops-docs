@@ -3,18 +3,16 @@ title: Show bugs on backlogs and boards
 titleSuffix: Azure DevOps 
 description: Choose how bugs appear on Agile tools in Azure Boards and Azure DevOps
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 02/20/2019
+ms.date: 06/24/2020
 ---
 
 # Show bugs on backlogs and boards  
 
-[!INCLUDE [temp](../../boards/_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
 
@@ -27,7 +25,10 @@ As your team identifies code defects or bugs, they can add them to the backlog a
 
 When you track bugs as requirements, they'll show up on the product backlog and Kanban board. When you track bugs similar to tasks, they'll show up on the sprint backlogs and task boards. If you want to track additional work item types (WITs) or custom WITs on your backlogs or boards, you can. See [Add other work item types to backlogs or boards](#add-other-wits) later in this topic.
 
-[!INCLUDE [temp](_shared/prerequisites-team-settings.md)]
+[!INCLUDE [requirements-term](../../boards/includes/note-requirements-terms.md)]
+
+
+[!INCLUDE [temp](includes/prerequisites-team-settings.md)]
 
 ## Set your team's preferences for tracking bugs  
 

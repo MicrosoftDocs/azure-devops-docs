@@ -2,19 +2,17 @@
 title: Use advanced workitem search options
 description: How To Use Work Item Search - Advanced options for Work Item Search in Microsoft Azure DevOps and TFS for all projects of your projects 
 ms.assetid: B64E70C5-E5B2-49E6-BD05-FF5932F9894C
-ms.prod: devops
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.manager: mijacobs
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 12/07/2018
 monikerRange: '>= tfs-2017'
 ---
 
 # How To: Use Work Item Search
 
-[!INCLUDE [version-header](../../_shared/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
 Work Item Search is available as a built-in extension in Azure DevOps and TFS.
 Users can use Work Item Search by default without any installation 
@@ -69,7 +67,7 @@ Notice that hit counts are also shown for projects that are not selected.
 
 Open the search results in a new browser tab from either search box by
 pressing _Ctrl+Shift+Enter_ or by holding _Ctrl_ and clicking  the
-![start search icon](media/_shared/start-search-icon.png) icon.
+![start search icon](media/shared/start-search-icon.png) icon.
 
 <a name="quickfilters"></a>
 ## Quick Filters for matching in specific fields
@@ -183,7 +181,7 @@ You can use more than one `?` wildcard to match more than one character.
 
 -----------------
 
-![Warning](media/_shared/Warning-hightop.png) **No results found for ...**  
+![Warning](media/shared/Warning-hightop.png) **No results found for ...**  
 
 * If there are no results matching the input, try removing filters and retry the search. This will broaden the search and after you view the search results,
   you can apply appropriate filters again and search again for relevant results
@@ -202,8 +200,8 @@ You can use more than one `?` wildcard to match more than one character.
 ## See more of the work item
 
 You can quickly get a full screen view of the selected work item using the expand
-![Expand the file to fullscreen](media/_shared/fullscreen-icon-expand.png)
-and shrink ![Shrink the file to a window](media/_shared/fullscreen-icon-shrink.png)
+![Expand the file to fullscreen](media/shared/fullscreen-icon-expand.png)
+and shrink ![Shrink the file to a window](media/shared/fullscreen-icon-shrink.png)
 icons in the toolbar. However, another way to see more of the work item, while still being able to 
 select work items from the list of matching results, is to hide the left column filter pane
 by choosing the **&lt;** icon at the top left of the column. Use the **&gt;** icon to restore the filter pane. 
@@ -215,4 +213,4 @@ search results list.
 >Search remembers the state of the filter pane, configuration of the work item 
 view pane, and its position between sessions as part of your user preferences.
 
-[!INCLUDE [shared-got-feedback](_shared/shared-got-feedback.md)]
+[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]

@@ -5,19 +5,15 @@ ms.custom: seodec18
 description: Learn about parallel jobs in Azure Pipelines
 ms.topic: conceptual
 ms.assetid: FAFB2DE4-F462-4E9E-8312-4F343F2A35B8
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: mijacobs
 ms.author: jukullam
-author: juliakm
-ms.date: 08/13/2019
+ms.date: 03/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
 
 # Run parallel jobs 
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="azure-devops"
 
@@ -65,6 +61,11 @@ We provide a *free tier* of service by default in every organization:
 
 - Public project: 10 free Microsoft-hosted parallel jobs that can run for up to 360 minutes (6 hours) each time, with no overall time limit per month.
 - Private project: One free job that can run for up to 60 minutes each time, until you've used 1,800 minutes (30 hours) per month.
+ 
+> [!TIP]
+> If your pipeline exceeds the maximum job timeout, try splitting your pipeline 
+> into multiple jobs. For more information on jobs, see 
+> [Specify jobs in your pipeline](../process/phases.md).
 
 When the free tier is no longer sufficient, you can pay for additional capacity per parallel job. Paid parallel jobs remove the monthly time limit and allow you to run each job for up to 360 minutes (6 hours). [Buy Microsoft-hosted parallel jobs](https://marketplace.visualstudio.com/items?itemName=ms.build-release-hosted-pipelines).
 
@@ -162,7 +163,7 @@ Parallel jobs are purchased at the organization level, and they are shared by al
 
 1. You start a run in the second project. That run won't start until one of the runs in your first project is completed.
 
-## Q&A
+## FAQ
 
 ### How do I qualify for the free tier of public projects?
 
@@ -283,7 +284,7 @@ If you need to run more parallel releases, you can [buy additional private jobs 
 
 
 
-## Q & A
+## FAQ
 
 ### Who can use the system?
 

@@ -3,23 +3,18 @@ title: Deploy a Azure Pipelines agent on Linux
 ms.custom: seodec18
 description: Learn how you can easily deploy a self-hosted agent on Linux for Azure Pipelines and Team Foundation Server (TFS).
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 834FFB19-DCC5-40EB-A3AD-18B7EDCA976E
-ms.manager: mijacobs
-ms.author: sdanie
-author: steved0x
-ms.date: 01/09/2020
+ms.date: 06/25/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Self-hosted Linux agents
 
-[!INCLUDE [version-tfs-2015-rtm](../_shared/version-tfs-2015-rtm.md)]
+[!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
@@ -29,7 +24,7 @@ To run your jobs, you'll need at least one agent. A Linux agent can build and de
 > * If your pipelines are in [Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs) and a [Microsoft-hosted agent](hosted.md) meets your needs, you can skip setting up a private Linux agent.
 > *  Otherwise, you've come to the right place to set up an agent on Linux. Continue to the next section.
 
-[!INCLUDE [include](_shared/concepts.md)]
+[!INCLUDE [include](includes/concepts.md)]
 
 ## Check prerequisites
 
@@ -92,7 +87,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 <h2 id="permissions">Prepare permissions</h2>
 
-[!INCLUDE [include](_shared/v2/prepare-permissions.md)]
+[!INCLUDE [include](includes/v2/prepare-permissions.md)]
 
 <a name="download-configure"></a>
 ## Download and configure the agent
@@ -105,7 +100,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -129,7 +124,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-server-2019.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-server-2019.md)]
 
 1. Click **Download agent**.</li>
 
@@ -153,7 +148,7 @@ After you get a feel for how agents work, or if you want to automate setting up 
 
 1. In your web browser, sign in to TFS, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](_shared/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
+   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab-tfs-2018.md)]
 
 1. Click **Download agent**.
 
@@ -211,7 +206,7 @@ TFS 2015: `http://{your_server}:8080/tfs`
 
 ### Authentication type
 
-[!INCLUDE [include](_shared/v2/unix-authentication-types.md)]
+[!INCLUDE [include](includes/v2/unix-authentication-types.md)]
 
 ## Run interactively
 
@@ -232,17 +227,33 @@ To run the agent interactively:
 To use your agent, run a [job](../process/phases.md) using the agent's pool.
 If you didn't choose a different pool, your agent will be in the **Default** pool.
 
+### Run once
+
+For agents configured to run interactively, you can choose to have the agent accept only one job.
+To run in this configuration:
+
+ ```bash
+./run.sh --once
+```
+
+Agents in this mode will accept only one job and then spin down gracefully (useful for running in [Docker](docker.md) on a service like Azure Container Instances).
+
 ## Run as a systemd service
 
-If your agent is running on these operating systems you can run the agent as a systemd service:
+If your agent is running on these operating systems you can run the agent as a `systemd` service:
 
 * Ubuntu 16 LTS or newer
 * Red Hat 7.1 or newer
 
-> [!IMPORTANT]
-> If you run your agent as a service, you cannot run the agent service as `root` user.
+We provide an example `./svc.sh` script for you to run and manage your agent as a `systemd` service.
+This script will be generated after you configure the agent.
+We encourage you to review, and if needed, update the script before running it.
 
-We provide the `./svc.sh` script for you to run and manage your agent as a systemd service. This script will be generated after you configure the agent.
+Some important caveats:
+* If you run your agent as a service, you cannot run the agent service as `root` user.
+* Users running [SELinux](https://selinuxproject.org/) have reported difficulties with the provided `svc.sh` script.
+Refer to [this agent issue](https://github.com/microsoft/azure-pipelines-agent/issues/2738) as a starting point.
+SELinux is not an officially supported configuration.
 
 > [!NOTE]
 > If you have a different distribution, or if you prefer other approaches, you can use whatever kind of service mechanism you prefer. See [Service files](#service-files).
@@ -349,19 +360,19 @@ You can use the template described above as to facilitate generating other kinds
 
 It's important to avoid situations in which the agent fails or become unusable because otherwise the agent can't stream pipeline logs or report pipeline status back to the server. You can mitigate the risk of this kind of problem being caused by high memory pressure by using cgroups and a lower `oom_score_adj`. After you've done this, Linux reclaims system memory from pipeline job processes before reclaiming memory from the agent process. [Learn how to configure cgroups and OOM score](https://github.com/Microsoft/azure-pipelines-agent/blob/master/docs/start/resourceconfig.md).
 
-[!INCLUDE [include](_shared/v2/replace-agent.md)]
+[!INCLUDE [include](includes/v2/replace-agent.md)]
 
-[!INCLUDE [include](_shared/v2/remove-and-reconfigure-unix.md)]
+[!INCLUDE [include](includes/v2/remove-and-reconfigure-unix.md)]
 
-[!INCLUDE [include](_shared/v2/configure-help-unix.md)]
+[!INCLUDE [include](includes/v2/configure-help-unix.md)]
 
-[!INCLUDE [include](_shared/capabilities.md)]
+[!INCLUDE [include](includes/capabilities.md)]
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [include](_shared/v2/qa-agent-version.md)]
+[!INCLUDE [include](includes/v2/qa-agent-version.md)]
 
 ### Why is sudo needed to run the service commands?
 
@@ -371,7 +382,7 @@ Source code: [systemd.svc.sh.template on GitHub](https://github.com/Microsoft/az
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-firewall.md)]
+[!INCLUDE [include](includes/v2/qa-firewall.md)]
 
 ::: moniker-end
 
@@ -389,19 +400,19 @@ If you are running the agent interactively, see the restart instructions in [Run
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/web-proxy-bypass.md)]
+[!INCLUDE [include](includes/v2/web-proxy-bypass.md)]
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
 
-[!INCLUDE [include](_shared/v2/qa-urls.md)]
+[!INCLUDE [include](includes/v2/qa-urls.md)]
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [include](../_shared/qa-versions.md)]
+[!INCLUDE [include](../includes/qa-versions.md)]
 
 ::: moniker-end
 

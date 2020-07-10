@@ -2,10 +2,8 @@
 title: TFS/Build/Contracts InformationNode API | Extensions for Azure DevOps Services
 description: Data representation of an information node associated with a build
 ms.assetid: d0822b03-5b46-0b84-1277-034da053c55e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley

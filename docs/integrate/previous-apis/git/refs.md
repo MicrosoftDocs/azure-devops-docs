@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Refs | REST API Reference for Team Foundation Server
 description: Work with Git references programmatically using the REST APIs for Team Foundation Server.
 ms.assetid: 7E4F1631-12C0-4B17-A460-6A6BE002C838
-ms.manager: mijacobs
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -24,7 +22,7 @@ Refs are named references to Git objects.
 The most common type of ref is a branch.
 A branch is a ref that points to a commit.
 
-There are [code samples](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/repos/git/RefsSample.cs) available for this endpoint.
+There are [code samples](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/Git/RefsSample.cs) available for this endpoint.
 
 ## Get a list of references
 

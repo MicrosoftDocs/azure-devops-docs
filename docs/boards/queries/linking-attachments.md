@@ -3,9 +3,7 @@ title: Query by link of attachment count
 titleSuffix: Azure Boards
 description: Query work items based on link type, link count, link restrictions, and attachment file count in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 219717a0-de6e-4f70-8558-54f813f82507
-ms.manager: mijacobs
 ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
@@ -16,7 +14,7 @@ ms.date: 10/02/2019
 
 # Query by link or attachment count  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 You can [link work items to track related work and dependencies](link-work-items-support-traceability.md) and [attach files to share information with your team](share-plans.md#attachments). You can then list work items based on one or more of the following integer fields:
 

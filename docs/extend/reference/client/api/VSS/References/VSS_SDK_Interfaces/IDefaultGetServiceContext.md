@@ -2,10 +2,8 @@
 title: VSS/References/VSS.SDK.Interfaces IDefaultGetServiceContext API | Extensions for Azure DevOps Services
 description: Context passed to GetServiceInstance
 ms.assetid: 8b2653a7-2a13-4d86-9581-827e8d6df5af
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 ms.author: chcomley
 author: chcomley
 ms.topic: article

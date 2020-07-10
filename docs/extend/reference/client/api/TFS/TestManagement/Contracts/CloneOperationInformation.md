@@ -2,10 +2,8 @@
 title: TFS/TestManagement/Contracts CloneOperationInformation API | Extensions for Azure DevOps Services
 description: Data representation of clone operation information.
 ms.assetid: fa068d85-c81b-76b0-007b-6cb3d4f5c223
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: mijacobs
 author: chcomley
 ms.topic: article
 ms.author: chcomley
