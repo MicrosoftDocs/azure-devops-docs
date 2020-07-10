@@ -1,4 +1,4 @@
-﻿---
+---
 title: System or basic work item field reference
 titleSuffix: Azure Boards
 description: Index to those fields used in the Basic process for Azure Boards
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/20/2018
+ms.date: 07/09/2020
 ---
 
 # Index to system field descriptions 
@@ -75,6 +75,7 @@ To support additional tracking needs, you can [define your own custom work item 
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Comment](../../queries/linking-attachments.md)">Link Comment</a> </li>
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Link Description](../../queries/linking-attachments.md)">Link Description</a> </li>
 <li><a href="../../queries/query-by-area-iteration-path.md" data-raw-source="[Node Name](../../queries/query-by-area-iteration-path.md)">Node Name</a> </li>
+<li><a href="../../queries/linking-attachments.md#parent">Parent</a></li>
 <li><a href="../../queries/planning-ranking-priorities.md" data-raw-source="[Priority](../../queries/planning-ranking-priorities.md)">Priority</a> </li>
 </ul>
 <h3>R</h3>
