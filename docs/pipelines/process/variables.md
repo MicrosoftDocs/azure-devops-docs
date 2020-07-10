@@ -482,7 +482,7 @@ steps:
 ```
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -496,7 +496,7 @@ Each task that needs to use the secret as an environment variable does remapping
 
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
