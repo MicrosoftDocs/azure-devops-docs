@@ -124,7 +124,7 @@ resources:
       - Production
 ```
 
-Tag filters for default version evaluation and for triggers
+Tag filters for default version evaluation and for triggers.
 
 ```yml
 resources:
@@ -139,6 +139,7 @@ resources:
       - Production      ### Tags are AND'ed
       - Signed
 ```
+Note: These are tags set on the CI pipeline. These tags are different from the tags set on the branches in the git repo.
 ---
 
 > [!IMPORTANT]
@@ -603,6 +604,7 @@ resources:
         - path: JSONParameterPath              ### JSON path in the payload
           value: JSONParameterExpectedValue    ### Expected value in the path provided
 ```
+Webhooks are a great way to automate your workflow based on any external webhook event that is not supported by first class resources like pipelines, builds, containers and packages. Also, incases of onpremise services where Azure DevOps doesn't have line sight, you can configure webhooks on the service and to trigger your pipelines automatically.
 
 ## [Example](#tab/example)
 ```yml
