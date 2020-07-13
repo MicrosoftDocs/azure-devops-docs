@@ -99,8 +99,7 @@ Here, we've renamed the backlog, added *Customer Ticket*, and changed the defaul
 <img src="media/process/process-edit-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
 
 > [!NOTE]    
->You can't remove the default, inherited WIT from the Requirements backlog. 
-
+> You can't remove the default, inherited WIT from the Requirements backlog.  
 
 <a id="edit-iteration-backlog">  </a>
 
@@ -117,6 +116,17 @@ Here, we've added the *Ticket* WIT which is tracked along with tasks.
 > [!NOTE]    
 > You can't remove the default, inherited WIT from the Iteration backlog. 
 
+::: moniker range="azure-devops"
+
+<a id="add-oob-to-backlog" /> 
+
+## Add a system work item type to a backlog (Private Preview) 
+
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by editing the corresponding backlog.    
+
+[!INCLUDE [oob-wits](../../../boards/includes/note-oob-wits-backlog-support.md)]
+
+::: moniker-end 
 
 ## Related articles  
 
