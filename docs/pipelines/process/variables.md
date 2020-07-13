@@ -60,7 +60,7 @@ Azure Pipelines supports three different ways to reference variables: macro, tem
 
 In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. When you use a runtime expression, it must take up the entire right side of a definition. 
 
-In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at runtime before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
+In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at compile time before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
 
 ```yaml
 variables:
@@ -482,7 +482,7 @@ steps:
 ```
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -496,7 +496,7 @@ Each task that needs to use the secret as an environment variable does remapping
 
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 

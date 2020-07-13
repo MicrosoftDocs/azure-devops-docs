@@ -11,9 +11,9 @@ monikerRange: azure-devops
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
-> [!NOTE]
-> - To use deployment jobs, [make sure the multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
-> - The job name and stages can not contain keywords.
+> [!IMPORTANT]
+> - Job and stage names cannot contain keywords.
+> - Each job in a stage must have a unique name. 
 
 In YAML pipelines, we recommend that you put your deployment steps in a deployment job. A deployment job is a special type of [job](phases.md) that's a collection of steps, which are run sequentially against the environment. A deployment job and a [traditional job](phases.md) can exist in the same stage. 
 
@@ -361,7 +361,7 @@ Define output variables in a deployment job's [lifecycle hooks](#descriptions-of
 While executing deployment strategies, you can access output variables across jobs using the following syntax.
 
 - For **runOnce** strategy: `$[dependencies.<job-name>.outputs['<job-name>.<step-name>.<variable-name>']]` 
-    - For virtual machine jobs using the **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. For example, if you have a deployment job to a virtual machine named `Vm1`, the output variable would be `$[dependencies.<job-name>.outputs['Deploy_vm1.<step-name>.<variable-name>']]`
+    - For deployment jobs using the **runOnce** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`. For example, if you have a deployment job to a virtual machine named `Vm1`, the output variable would be `$[dependencies.<job-name>.outputs['Deploy_vm1.<step-name>.<variable-name>']]`
 - For **canary** strategy:  `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<increment-value>.<step-name>.<variable-name>']]`  
 - For **rolling** strategy: `$[dependencies.<job-name>.outputs['<lifecycle-hookname>_<resource-name>.<step-name>.<variable-name>']]`
 
@@ -420,6 +420,60 @@ For a `runOnce` job, specify the name of the job instead of the lifecycle hook:
   steps:
   - script: "echo $(myVarFromDeploymentJob)"
     name: echovar
+```
+
+When you define an environment in a deployment job, the syntax of the output variable varies depending on how the environment gets defined. In this example, `env1` uses shorthand notation and `env2` includes the full syntax with a defined resource type. 
+
+```yaml
+stages:
+- stage: MyStage
+  jobs:
+  - deployment: A1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: env1
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "##vso[task.setvariable variable=myOutputVar;isOutput=true]this is the deployment variable value"
+            name: setvarStep
+          - script: echo $(System.JobName)
+  - deployment: A2
+    pool:
+      vmImage: 'ubuntu-16.04'
+    environment: 
+      name: env1
+      resourceType: virtualmachine
+    strategy:                  
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "##vso[task.setvariable variable=myOutputVarTwo;isOutput=true]this is the second deployment variable value"
+            name: setvarStepTwo
+  
+  - job: B1
+    dependsOn: A1
+    pool:
+      vmImage: 'ubuntu-16.04'
+    variables:
+      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStep.myOutputVar'] ]
+      
+    steps:
+    - script: "echo $(myVarFromDeploymentJob)"
+      name: echovar
+ 
+  - job: B2
+    dependsOn: A2
+    pool:
+      vmImage: 'ubuntu-16.04'
+    variables:
+      myVarFromDeploymentJob: $[ dependencies.A1.outputs['A1.setvarStepTwo.myOutputVar'] ]
+      myOutputVarTwo: $[ dependencies.A2.outputs['Deploy_vmsfortesting.setvarStepTwo.myOutputVarTwo'] ]
+    
+    steps:
+    - script: "echo $(myOutputVarTwo)"
+      name: echovartwo
 ```
 
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)
