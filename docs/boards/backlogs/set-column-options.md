@@ -19,7 +19,98 @@ ms.date: 03/24/2020
 
 Each column corresponds to a work item field. You can add and remove columns from work item lists to show the fields of interest to you. Or, you can drag a column to a new position. Your settings persist for each page you customize and are only valid for your views. 
 
-Specifically, you can perform the following actions from the following list views: 
+Specifically, you can perform the following actions from the following list views:  
+
+::: moniker range=">= azure-devops-2020"
+
+:::row:::
+   :::column span="":::
+      Action
+   :::column-end:::
+   :::column span="":::
+      [Backlogs](create-your-backlog.md)
+   :::column-end:::
+   :::column span="":::
+      [Sprint backlogs](../sprints/assign-work-sprint.md)
+   :::column-end:::
+   :::column span="":::
+      [Queries](../queries/view-run-query.md) 
+   :::column-end:::
+   :::column span="":::
+      [Work items](../work-items/view-add-work-items.md)
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="":::
+      Add or remove a column field
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="":::
+      Add or remove the Parent field
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="":::
+      Add or remove a rollup column
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      No
+   :::column-end:::
+   :::column span="":::
+      No
+   :::column-end:::
+   :::column span="":::
+      No
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="":::
+      Sort on a column
+   :::column-end:::
+   :::column span="":::
+      No
+   :::column-end:::
+   :::column span="":::
+      No
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+   :::column span="":::
+      Yes
+   :::column-end:::
+:::row-end::: 
+
+::: moniker-end
+
 
 ::: moniker range=">= azure-devops-2020"
 
