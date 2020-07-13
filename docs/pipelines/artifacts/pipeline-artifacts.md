@@ -158,7 +158,7 @@ Keep in mind:
 
 * By default, files are downloaded to `$(Pipeline.Workspace)/{artifact}`, where `artifact` is the name of the artifact. The folder structure of the artifact is always preserved.
 
-* File matching patterns can be used to limit which files from the artifact(s) are downloaded. See [artifact selection](#artifact-selection) for more details on how pattern matching works.
+* File matching patterns can be used to limit which files from the artifact(s) are downloaded. For more information on how pattern matching works, see [artifact selection](#artifact-selection).
 
 For advanced scenarios, including downloading artifacts from other pipelines, see the [Download Pipeline Artifact](../tasks/utility/download-pipeline-artifact.md) task.
 
@@ -305,7 +305,10 @@ When migrating from build artifacts to pipeline artifacts:
 
 2. By default, the **Download Pipeline Artifact** task downloads files to `$(Pipeline.Workspace)`. This is the default and recommended path for all types of artifacts.
 
-3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. See [single artifact selection](#single-artifact) for more details.
+3. File matching patterns for the **Download Build Artifacts** task are expected to start with (or match) the artifact name, regardless if a specific artifact was specified or not. In the **Download Pipeline Artifact** task, patterns should not include the artifact name when an artifact name has already been specified. For more information, see [single artifact selection](#single-artifact).
+ 
+> [!TIP]
+> For more information on billing and usage tiers, check out the [Azure DevOps pricing tool](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/).
 
 ## FAQ
 
