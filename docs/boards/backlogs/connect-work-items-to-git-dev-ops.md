@@ -91,7 +91,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	If this is the first time pushing changes from a new branch, you'll need to publish the branch before pushing your changes. For more details, see [Share code with push](../../repos/git/pushing.md).   
 
-4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md)  from the work item form.  
+4. <a id="create-pull-request">  </a> Create a [pull request](../../repos/git/pull-requests.md) from the work item form.  
 
 	You create a pull request to merge the changes you made to a master branch and get your changes reviewed by other members of your team.  
 
