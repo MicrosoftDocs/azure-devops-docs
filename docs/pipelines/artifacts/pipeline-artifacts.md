@@ -84,7 +84,7 @@ Keep in mind:
 * If you plan to consume the artifact from a job running on a different operating system or file system, you must ensure all file paths in the artifact are valid for the target environment. For example, a file name containing a `\` or `*` character will typically fail to download on Windows.
 
 > [!NOTE]
-> You will not be billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts#q-which-artifacts-count-toward-my-total-billed-storage).
+> You will not be billed by Azure Artifacts for storage of Pipeline Artifacts, Build Artifacts, and Pipeline Caching. For more information, see [Which artifacts count toward my total billed storage](../../artifacts/start-using-azure-artifacts.md#q-which-artifacts-count-toward-my-total-billed-storage).
 
 ### Limiting which files are included
 
