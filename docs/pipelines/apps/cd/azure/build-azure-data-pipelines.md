@@ -27,18 +27,111 @@ Before you begin, you need:
 ## Provision Azure resources
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Create a new resource group named `datapipeline`. 
-1. Create a storage account in `datapipeline`. Append the name with a unique identifiers. Use the default options available when creating the account. 
-    1. Within the storage account, create two containers, `rawdata`, `prepareddata`.
-    1. Open the `prepareddata` container and upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)). 
-1. Create a new Azure Data Factory account. 
-1. Add a new Azure Databricks service. 
-1. Add Azure Key Value. 
-1. Verify that you have the following resources in your resource group:
-    - Key vault
-    - Storage account
-    - Data factory (V2)
-    - Azure Databricks Service
+1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+
+    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+
+    > [!NOTE]
+    > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+
+## Select an Azure region
+
+A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+
+To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+
+1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+
+    ```azurecli
+    az account list-locations \
+      --query "[].{Name: name, DisplayName: displayName}" \
+      --output table
+    ```
+
+1. From the `Name` column in the output, choose a region that's close to you. For example, choose `eastasia` or `westus2`.
+
+1. Run `az configure` to set your default region. Replace `<REGION>` with the name of the region you chose.
+
+    ```azurecli
+    az configure --defaults location=<REGION>
+    ```
+
+    This example sets `westus2` as the default region:
+
+    ```azurecli
+    az configure --defaults location=westus2
+    ```
+
+### Create Bash variables
+
+1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
+
+    ```bash
+    resourceSuffix=$RANDOM
+    ```
+
+1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+
+    ```bash
+    webName="data-cicd-${resourceSuffix}"
+    registryName="data-cicd${resourceSuffix}"
+    dbServerName="data-cicd-${resourceSuffix}"
+    storageName="data-cicd-${resourceSuffix}"
+    ```
+
+1. Create two more Bash variables to store the names of your resource group and service plan.
+
+    ```bash
+    rgName='data-pipeline-cicd-rg'
+    keyVault='data-pipeline-cicd-keyvault'
+    ```
+
+## Create Azure resources
+
+1. Run the following `az group create` command to create a resource group using `rgName`.
+
+    ```azurecli
+    az group create --name $rgName
+    ```
+
+1. Run the following `az storage account create` command to create a new storage account.
+
+    ```azurecli
+    az storage account create \
+        --name $storageName \
+        --resource-group $rgName \
+        --sku Standard_RAGRS \
+        --kind StorageV2
+    ```
+
+    1. Run the following `az storage container create` command to create two containers, `rawdata`, `prepareddata`.
+    
+    ```azurecli
+    az storage container create -n rawdata
+    az storage container create -n prepareddata
+    ```
+    
+    1. Open the `prepareddata` container in the Azure Portal UI and upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)).
+
+1. Run the following `az keyvault create` command to create a new key vault. 
+
+    ```azurecli
+    az keyvault create \
+        --name $keyVault \
+        --resource-group $rgName
+    ```
+
+1. [Create a new Azure Data Factory](https://ms.portal.azure.com/#create/hub) within the Azure Portal UI. 
+
+    * Name: `data-factory-cicd`
+    * Version: `V2`
+    * Resource Group: `data-pipeline-cicd-rg`
+    * Location: your closest location
+    * Uncheck **Enable GIT**
+
+1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
+    * Resource Group: `data-pipeline-cicd-rg`
+    * Location: your closest location
 
 ## Set up Key Vault
 
