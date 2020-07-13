@@ -477,7 +477,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 You can add or remove an inherited or system WIT to or from a backlog, for example, you can add the Issue WIT to the product backlog.   
 
-[!INCLUDE [oob-wits](../includes/note-oob-wits-backlog-support.md)]
+[!INCLUDE [oob-wits](../../../boards/includes/note-oob-wits-backlog-support.md)]
 
 ::: moniker-end
 
