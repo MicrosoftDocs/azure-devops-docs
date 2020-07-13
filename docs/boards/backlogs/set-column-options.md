@@ -21,27 +21,28 @@ Each column corresponds to a work item field. You can add and remove columns fro
 
 Specifically, you can perform the following actions from the following list views:  
 
-::: moniker range=">= azure-devops-2020"
-
+ 
+--- 
 :::row:::
-   :::column span="":::
-      Action
+   :::column span="2":::
+      **Action**
    :::column-end:::
    :::column span="":::
-      [Backlogs](create-your-backlog.md)
+      [**Backlogs**](create-your-backlog.md)
    :::column-end:::
    :::column span="":::
-      [Sprint backlogs](../sprints/assign-work-sprint.md)
+      [**Sprint backlogs**](../sprints/assign-work-sprint.md)
    :::column-end:::
    :::column span="":::
-      [Queries](../queries/view-run-query.md) 
+      [**Queries**](../queries/view-run-query.md) 
    :::column-end:::
    :::column span="":::
-      [Work items](../work-items/view-add-work-items.md)
+      [**Work items**](../work-items/view-add-work-items.md)
    :::column-end:::
 :::row-end::: 
+---
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       Add or remove a column field
    :::column-end:::
    :::column span="":::
@@ -57,8 +58,9 @@ Specifically, you can perform the following actions from the following list view
       Yes
    :::column-end:::
 :::row-end::: 
+::: moniker range=">= azure-devops-2020"
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       Add or remove the Parent field
    :::column-end:::
    :::column span="":::
@@ -75,7 +77,7 @@ Specifically, you can perform the following actions from the following list view
    :::column-end:::
 :::row-end::: 
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       Add or remove a rollup column
    :::column-end:::
    :::column span="":::
@@ -91,8 +93,9 @@ Specifically, you can perform the following actions from the following list view
       No
    :::column-end:::
 :::row-end::: 
+::: moniker-end
 :::row:::
-   :::column span="":::
+   :::column span="2":::
       Sort on a column
    :::column-end:::
    :::column span="":::
@@ -108,40 +111,8 @@ Specifically, you can perform the following actions from the following list view
       Yes
    :::column-end:::
 :::row-end::: 
+---
 
-::: moniker-end
-
-
-::: moniker range=">= azure-devops-2020"
-
-| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) | 
-| :---------------------------- | :-----: | :------------: | :-----: | :--------: |   
-| Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
-| Add or remove the Parent field| Yes     | Yes            | Yes     | No         |  
-| Add or remove a rollup column | Yes     | No             | No      | No         |  
-| Sort on a column              | No      | No             | Yes     | Yes        |  
-
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | [Work items](../work-items/view-add-work-items.md) | 
-| :---------------------------- | :-----: | :------------: | :-----: | :--------: |  
-| Add or remove a column field  | Yes     | Yes            | Yes     | Yes        |  
-| Sort on a column              | No      | No             | Yes     | Yes        |  
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2018"
-
-| Action                        | [Backlogs](create-your-backlog.md) | [Sprint backlogs](../sprints/assign-work-sprint.md) | [Queries](../queries/view-run-query.md) | 
-| :---------------------------- | :-----: | :------------: | :-----: |    
-| Add or remove a column field  | Yes     | Yes            | Yes     |  
-| Sort on a column              | No      | No             | Yes     |  
-
-::: moniker-end
 
 > [!TIP]    
 > Unlike a query result, you can't sort a backlog by a column. However, you can use the **Create Query** link on each backlog to create a query that you can sort on any field column you choose.
@@ -152,7 +123,7 @@ You can add most fields listed in the [Work item field index](../work-items/guid
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
 
 You can add most fields listed in the [Work item field index](../work-items/guidance/work-item-field.md). All fields defined within the project collection or organization are available for selection, even those fields that aren't used for your particular project. If your project uses the Inherited process model, you can view the list of fields defined for your collection from [**Organization Settings>Process>Fields**](../../organizations/settings/work/customize-process-field.md#review-fields)
 ::: moniker-end 
@@ -265,7 +236,7 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 
 ## Related articles
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - [Display rollup progress or totals](display-rollup.md)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
