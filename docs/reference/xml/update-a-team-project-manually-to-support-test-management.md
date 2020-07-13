@@ -15,7 +15,7 @@ ms.date: 12/15/2017
 **TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
 
 > [!IMPORTANT]  
->This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS)and was created using a process template that doesn't have test plans and test suites work item types.    
+> This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS) and was created using a process template that doesn't have test plans and test suites work item types.    
 
 When you upgrade your existing on-premises deployment to Team Foundation Server (TFS) 2013.3, you have the ability to customize test plans and test suites because these objects are now remodeled as work item types (WITs).  
   
