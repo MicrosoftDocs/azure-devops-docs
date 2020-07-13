@@ -13,6 +13,8 @@ You can use a branch other than `master` for new changes or change your main lin
 1. [Navigate](../../../project/navigation/go-to-project-repo.md) to your repository and select **Branches**.
 
 3. Select the desired new default branch.
+You need at least two branches in order to change the default.
+If there's only one, it will already be the default branch.
 
 4. Select the **...** beside the desired branch and choose **Set as default branch**.
 
