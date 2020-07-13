@@ -320,6 +320,7 @@ Teams that want the least overhead in terms of tracking and estimating might pre
 
 ::: moniker range="azure-devops"
 
+- [Configure and customize Azure Boards](../configure-customize.md)  
 - [Bulk modify work items](bulk-modify-work-items.md)
 - [Copy or clone work items](copy-clone-work-items.md)
 - [Refine your backlog](best-practices-product-backlog.md)  

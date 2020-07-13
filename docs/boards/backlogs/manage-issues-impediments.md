@@ -40,10 +40,24 @@ Don't confuse impediments with bugs. You track impediments that may cause proble
 
 In this article you'll learn: 
 
+::: moniker range="azure-devops"
+
+> [!div class="checklist"]      
+> * When to use issues versus tasks
+> * How to capture issues or impediments as a work item  
+> * Add issues or impediments to your product backlog  
+ 
+::: moniker-end
+
+::: moniker range="< azure-devops"
+
 > [!div class="checklist"]      
 > * When to use issues versus tasks
 > * How to capture issues or impediments as a work item   
  
+::: moniker-end
+
+
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)]   
 
 [!INCLUDE [temp](../includes/image-differences-with-wits.md)]   
@@ -107,7 +121,7 @@ From the Queries page, choose Impediment from the **New** drop down menu.
 
 ::: moniker range="azure-devops"
 
-Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). 
+By default, issues and impediments don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). To track them on a backlog, see the next section, [Add issues or impediments to your product backlog](#add-to-backlog). 
 
 ::: moniker-end
 
@@ -122,6 +136,19 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 Impediments and issues don't appear on your backlog. Instead, you track them using [queries](../queries/using-queries.md). If you want them to appear on your backlog, or you want to track other work item types on your backlog, see [Add a work item type to a backlog and board](../../reference/add-wits-to-backlogs-and-boards.md).
 
 ::: moniker-end
+
+::: moniker range="azure-devops"
+
+<a id="add-to-backlog" /> 
+
+## Add issues or impediments to your product backlog (Private Preview) 
+
+If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
+
+[!INCLUDE [oob-wits](../includes/note-oob-wits-backlog-support.md)]
+
+::: moniker-end
+
 
 ## Related articles 
 
