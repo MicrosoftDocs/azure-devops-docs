@@ -41,4 +41,4 @@ Having a CI/CD data pipeline is crucial for the data science team to deliver the
 
 ## Next steps
 
-- [Build a data pipeline with Azure](global-quickstart-template.md)
+- [Build a data pipeline with Azure](build-azure-data-pipeline.md)
