@@ -141,7 +141,7 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 >
 > Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
 > meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
-> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don’t need 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
 > to use capabilities with Microsoft-hosted agents.
 
 ### View agent details
