@@ -52,7 +52,7 @@ resources:        # types: pipelines | builds | repositories | containers | pack
   - pipeline: string  # identifier for the resource used in pipeline resource variables
     project: string # project for the source; optional for current project
     source: string  # name of the pipeline that produces an artifact
-    version: string  # the pipeline run number to pick the artifact, defaults to Latest pipeline successful across all stages; Used only for manual or scheduled triggers
+    version: string  # the pipeline run number to pick the artifact, defaults to latest pipeline successful across all stages; Used only for manual or scheduled triggers
     branch: string  # branch to pick the artifact, optional; defaults to all branches; Used only for manual or scheduled triggers
     tags: [ string ] # list of tags required on the pipeline to pickup default artifacts, optional; tags are AND'ed; Used only for manual or scheduled triggers
     trigger:     # triggers are not enabled by default unless you add trigger section to the resource
@@ -698,4 +698,3 @@ You can choose to download the artifacts in build jobs or to override the downlo
 
 When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss out on traceability and triggers. At the same time, there are times when it makes sense to use the Download Pipeline Artifacts task directly. 
 For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template will add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build info to a task.
-
