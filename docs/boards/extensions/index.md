@@ -18,7 +18,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Integration 
 
@@ -37,7 +37,7 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - [Delivery Plans](../plans/review-team-plans.md)
 - [Feature Timeline](feature-timeline.md)
@@ -118,11 +118,20 @@ The Azure DevOps Marketplace offers a wide variety of extensions to customize or
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
 
+ 
 ## Command line interface
 
+::: moniker range=">= azure-devops-2020"
+
 - [Azure DevOps CLI](../../cli/index.md)
+- [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
+
+::: moniker-end
+
+
+::: moniker range="<= azure-devops-2019"
+
 - [Azure Boards Teams Tool CLI](https://marketplace.visualstudio.com/items?itemName=jessehouwing.azure-boards-teams-tool&ssr=false#overview)
 
 ::: moniker-end

@@ -122,7 +122,7 @@ Updating your Kanban board as work progresses helps keep you and your team in sy
 
 As with most Agile practices, Kanban encourages monitoring key metrics to fine tune your processes. After your team has used the Kanban board for several weeks, check out your Cumulative Flow Diagram (CFD).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Choose the **Analytics** tab, and then choose **View full report** for the Cumulative Flow Diagram as shown in the following image. 
 

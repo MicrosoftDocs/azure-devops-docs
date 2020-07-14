@@ -8,7 +8,7 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Start using your Kanban board
@@ -30,13 +30,13 @@ Each Kanban board is associated with a team and a work item type. For the Agile 
 
 When you add a team, you add a number of team assets. A team admin can configure the assets to support the way the team works. To add a set of Kanban boards to support a new team, [add a team](../../organizations/settings/add-teams.md). 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 
 To add a board to support an additional portfolio backlog, see [Customize your backlogs or boards](../../organizations/settings/work/customize-process-backlogs-boards.md).
 
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 To add a board to support an additional portfolio backlog level, see [Add a portfolio backlog level](../../reference/add-portfolio-backlogs.md).
 
@@ -55,7 +55,7 @@ To add a work item, select the ![ ](../media/icons/add_icon.png) plus sign, ente
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Add a new item on Kanban board, new nav](media/quickstart/add-new-item-agile-s155.png) 
