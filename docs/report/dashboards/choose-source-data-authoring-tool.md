@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.assetid: cc71c69f-230b-47e6-b29b-398e3e280894
 ms.author: kaelli
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 04/05/2019
 ---
 
