@@ -637,7 +637,7 @@ Resource version picker is supported for pipeline, build, repository, container 
 
 For pipeline resource you can see all the available runs across all branches. You can search them based on the pipeline number or branch. And you can pick a run that is successfull, failed or in-progress run. This flexibility is given to ensure you can run your CD pipeline if you are sure your CI pipeline produced all the artifacts you need and you dont need to wait for the CI run is complete or re-run due to some unrelated stage in the CI run failed. However, when we evaluate defaut version for scheduled triggers or if you dont use manual version picker, we only consider successfully completed CI runs. 
 
-For resources for which we cant fetch available versions (like github packages), we will show a text box as part of version picker so that user can provide the version to be picked in the run.
+For resources for where you can't fetch available versions (like GitHub packages), we will show a text box as part of version picker so that user can provide the version to be picked in the run.
 
 ## Troubleshooting authorization for a YAML pipeline
 Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
