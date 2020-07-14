@@ -2,28 +2,25 @@
 title: Python Script task
 description: Run a Python script in a build or release pipeline
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6392F95F-7E76-4A18-B3C7-7F078D2F7700
-ms.manager: jillfra
-ms.custom: seodec18
-ms.author: brcrista
-author: brcrista
-ms.date: 12/07/2018
-monikerRange: 'azure-devops'
+ms.custom: seodec18, tracking-python
+ms.author: macoope
+author: vtbassmatt
+ms.date: 05/21/2020
+monikerRange: azure-devops
 ---
 
 # Python Script task
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to run a Python script.
+Use this task to run a Python script.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PythonScriptV0.md)]
+[!INCLUDE [temp](../includes/yaml/PythonScriptV0.md)]
 
 ::: moniker-end
 
@@ -33,7 +30,7 @@ Use this task in a build or release pipeline to run a Python script.
 <tr><td>Type</td><td>(Required) Target script type: File path or Inline</td></tr>
 <tr><td>Script Path</td><td>(Required when targetType == filePath) Path of the script to execute. Must be a fully qualified path or relative to $(System.DefaultWorkingDirectory).</td></tr>
 <tr><td>Script</td><td>(Required when targetType == inline) The Python script to run</td></tr>
-<tr><td>Arguments</td><td>(Optional) Arguments passed to the script execution, available through <code>sys.argv</code>.</td></tr>
+<tr><td>Arguments</td><td>(Optional) A string containing arguments passed to the script. They'll be available through <code>sys.argv</code> as if you passed them on the command line.</td></tr>
 <tr><td>Python interpreter</td><td>(Optional) Absolute path to the Python interpreter to use. If not specified, the task assumes a Python interpreter is available on the PATH and simply attempts to run the <code>python</code> command.</td></tr>
 <tr><td>Working directory</td><td>(Optional) undefined</td></tr>
 <tr><td>Fail on standard error</td><td>(Optional) If this is true, this task will fail if any text are written to the stderr stream.</td></tr>

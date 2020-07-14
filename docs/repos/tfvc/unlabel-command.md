@@ -3,10 +3,8 @@ title: Unlabel Command
 titleSuffix: Azure Repos
 description: Unlabel Command
 ms.assetid: 37b15bd4-ec75-4fbe-938e-544793c88a3c
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -24,7 +22,9 @@ Removes an item from an existing label in the server for Team Foundation version
 
 To use the **unlabel** command, you must either own the label, or have the **Administer labels** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username, [password]] labelname itemspec
+```
+tf unlabel [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username, [password]] labelname itemspec
+```
 
 ## Parameters
 
@@ -38,7 +38,7 @@ To use the **unlabel** command, you must either own the label, or have the **Adm
 <tbody>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the item that you want to remove from an existing label (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 <tr>
 <td><p><i>labelname</i></p></td>
@@ -83,11 +83,15 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 
 The following example removes the "goodbuild" label from 314.cs.
 
-    c:\projects>tf unlabel goodbuild $/src/314.cs
+```
+c:\projects>tf unlabel goodbuild $/src/314.cs
+```
 
 The following example removes the "Beta1" label from all files and folders in the collection at http://myserver:8080/tfs/DefaultCollection.
 
-    c:\projects>tf unlabel Beta1 $/ /collection:http://myserver:8080/tfs/DefaultCollection /recursive
+```
+c:\projects>tf unlabel Beta1 $/ /collection:http://myserver:8080/tfs/DefaultCollection /recursive
+```
 
 ## See Also
 

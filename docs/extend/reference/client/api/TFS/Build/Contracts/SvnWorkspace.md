@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts SvnWorkspace API | Extensions for Azure DevOps Services
+description: Data representation of an SVN workspace.
 ms.assetid: d6c10dff-4280-b667-c091-60cc76fd5bda
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

@@ -1,10 +1,8 @@
 ---
 title: TFS/VersionControl/Contracts GitRepository API | Extensions for Azure DevOps Services
 ms.assetid: 05099736-46dd-4ee6-c2e8-47e785dfa68b
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -26,7 +24,7 @@ Module path: `TFS/VersionControl/Contracts`
 
 * `name`: string. 
 
-* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `project`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `remoteUrl`: string. 
 

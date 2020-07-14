@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts DefinitionType API | Extensions for Azure DevOps Services
+description: Data representation of a definition type.
 ms.assetid: 3b938c73-2d2f-4ef8-c091-43f5e88657b8
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

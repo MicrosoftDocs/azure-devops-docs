@@ -6,7 +6,6 @@ summary: Discover, manage, develop extensions and widgets for integration with A
 metadata:
   title: Marketplace & extensibility documentation
   description: Discover, manage, and develop extensions and widgets for integration with Azure DevOps. 
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-marketplace
   ms.topic: landing-page 
@@ -41,7 +40,7 @@ landingContent:
       - linkListType: video
         links:
           - text: Develop an Azure DevOps Services extension with continuous delivery pipeline
-            url: .https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3
+            url: https://www.youtube.com/watch?v=uzQFvYY0xiM&list=PLe14MLC-Nwy6saThL6NSv2rTtFNpkvfp3
       - linkListType: quickstart
         links:
           - text: Develop a web extension

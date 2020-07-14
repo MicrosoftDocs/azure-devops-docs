@@ -2,10 +2,9 @@
 title: Support bug update status using My Work 
 titleSuffix: TFS
 description: Update the ProcessConfiguration bug category states to support code review requests working from Visual Studio   
-ms.prod: devops
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 355d8fb4-d8fa-49ad-b1a2-7baaec3556cc
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 01/20/2017
@@ -14,7 +13,7 @@ ms.date: 01/20/2017
 
 # Support bug update status using My Work  
 
-[!INCLUDE [temp](../../_shared/customization-phase-0-and-1-plus-version-header.md)] 
+[!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)] 
 
 With My Work in Team Explorer you can conduct and respond to code reviews. If you have customized the workflow states for work item types (WITs) that you use to track bugs, you may need to update the process configuration state-to-metastate mappings. **My Work** uses these mappings to update the bug state as developers update the bug status using My Work. **My Work** allows developers to manage their work in progress, suspend and resume work, and request code reviews. See [Day in the life of a Developer: Suspend work, fix a bug, and conduct a code review](../../repos/tfvc/day-life-alm-developer-suspend-work-fix-bug-conduct-code-review.md).  
   

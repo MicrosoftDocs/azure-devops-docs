@@ -1,11 +1,9 @@
 ---
 title: Notification API Contracts | VSTS
 ms.assetid: 9889e558-78df-e571-6884-75fdfd014546
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 generated: true
-ms.manager: jillfra
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -558,7 +556,7 @@ Encapsulates the properties of an operator constraint. An operator constraint de
 <a id="ReferenceLinks"></a>
 
 ## ReferenceLinks
-The class to represent a collection of REST reference links.  Example: { self: { href: "<http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1>" } }
+The class to represent a collection of REST reference links.  Example: `{ self: { href: "http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1" } }`
 
 
 | Field        | Type      | Notes

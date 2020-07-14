@@ -1,10 +1,9 @@
 ---
 title: TFS/TestManagement/Contracts PlanUpdateModel API | Extensions for Azure DevOps Services
+description: Data representation of a plan update model.
 ms.assetid: 898c0ab2-91cc-d547-a98d-94e4d5aa44ed
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

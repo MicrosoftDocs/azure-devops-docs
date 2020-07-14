@@ -1,15 +1,13 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
-title: How to Use a Control | Extensions for Azure DevOps Services
+title: How to use a Control | Extensions for Azure DevOps Services
 description: How to use a control in your extension for Azure DevOps Services.
 ms.assetid: eadb8d03-0664-4810-a6e8-62d64e834d33
 ms.topic: conceptual
-ms.manager: jillfra
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 06/03/2020
 ---
 
 # Use a control
@@ -25,3 +23,12 @@ ms.date: 08/04/2016
 * [Use splitter](./ui-controls/splittero.md)
 * [Use wait control](./ui-controls/waitcontrolo.md)
 * [Use pivot filter control](./ui-controls/pivotfiltero.md)
+
+> [!TIP]
+> For more information, see the [Formula Design System documentation](https://azdevinternal.azureedge.net/). 
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Reference the Formula Design System documentation](https://azdevinternal.azureedge.net/)
+

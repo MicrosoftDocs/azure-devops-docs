@@ -2,16 +2,12 @@
 title: TFS/WorkItemTracking/Services Work Item Form Navigation Service API | Extensions for Azure DevOps Services
 description: Host service for opening the work item form
 ms.assetid: 924f89e9-0914-2308-8090-b0543fac0556
-ms.prod: devops
 ms.technology: devops-ecosystem
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
 ms.date: 08/04/2016
 ---
-
-[!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
 
 # Work Item Form Navigation Service
 

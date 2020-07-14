@@ -1,15 +1,13 @@
 ---
 title: Add a dashboard widget | Extensions for Azure DevOps Services
 description: Tutorial for creating a widget that you can then add to a dashboard  
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.assetid: 1D393A4A-2D25-479D-972B-304F99B5B1F8
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/07/2019
+ms.date: 10/31/2019
 ---
 
 # Add a dashboard widget
@@ -17,7 +15,9 @@ ms.date: 08/07/2019
 Widgets on a dashboard are implemented as [contributions](./contributions-overview.md) in the [extension framework](../overview.md). 
 A single extension can have multiple contributions. In this article, learn how to create an extension with multiple widgets as contributions.
 
-This guide is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.
+This article is divided into three parts, each building on the previous - beginning with a simple widget and ending with a comprehensive widget.
+
+[!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Preparation and required setup for this tutorial
 
@@ -65,7 +65,7 @@ Get started with some [basic styles for widgets](./styles-from-widget-sdk.md) th
 
 This part presents a widget that prints "Hello World" using JavaScript.
 
-![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sample.png)
+![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample.png)
 
 ### Step 1: Get the client SDK - `VSS.SDK.min.js`
 
@@ -109,7 +109,7 @@ Add the below HTML in `hello-world.html`. We add the mandatory reference to `VSS
 ### Step 3: Your JavaScript
 
 We use JavaScript to render content in the widget. In this article, we wrap all of our JavaScript code inside a <code>&lt;script&gt;</code> element in the HTML file. You can choose to have this code in a separate JavaScript file and refer it in the HTML file.
-The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures. 
+The code renders the content. This JavaScript code also initializes the VSS SDK, maps the code for your widget to your widget name, and notifies the extension framework of widget successes or failures.
 In our case, below is the code that would print &quot;Hello World&quot; in the widget. Add this <code>script</code> element in the <code>head</code> of the HTML.
 
 ```html    
@@ -135,6 +135,7 @@ In our case, below is the code that would print &quot;Hello World&quot; in the w
         });
     </script>
 ```
+
 <a name="vss-methods"></a>
 
 `VSS.init` initializes the handshake between the iframe hosting the widget and the host frame.
@@ -235,6 +236,8 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory w
     }
 ```
 
+For more information about required attributes, see the [Extension manifest reference](manifest.md)
+
 > [!NOTE]
 > The **publisher** here needs to be changed to your publisher name. To create a publisher now, visit [Package/Publish/Install](../publish/overview.md). 
 
@@ -279,7 +282,7 @@ as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command
 
 #### Get the packaging tool
 
-You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](http://nodejs.org), from your command line.
+You can install or update the TFS Cross Platform Command Line Interface (tfx-cli) using `npm`, a component of [Node.js](https://nodejs.org), from your command line.
 
 ```no-highlight
 npm i -g tfx-cli
@@ -335,11 +338,14 @@ tfx extension publish --manifest-globs your-manifest.json --share-with yourOrgan
 
 <a id="add-from-catalog" />
 
-### Step 7: Add Widget From the Catalog
+### Step 7: Add widget from the catalog
 
-Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, then refresh it. 
-Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
-Choose your widget and select the 'Add' button to add it to your dashboard.
+1. Go to your project in Azure DevOps, `http://dev.azure.com/{yourOrganization}/{yourProject}`
+2. Select **Overview**, and then select **Dashboards**.
+3. Choose **Add a widget**.
+4. Highlight your widget, and then select **Add**.
+   
+   The widget appears on your dashboard.
 
 <a id="part-2" />
 
@@ -349,7 +355,7 @@ Widgets can call any of the [REST APIs](/rest/api/vsts/?view=azure-devops) in Az
 In this example, we use the REST API for WorkItemTracking to fetch information about an existing query and display some query info in the widget right 
 below the "Hello World" text. 
 
-![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sample2.png)
+![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sample2.png)
 
 <a id="step-1-files" />
 
@@ -626,13 +632,13 @@ You need another preview image for the second widget. Name this `preview2.png` a
 
 ### Step 6: Package, Publish, and Share
 
-If you haven't published your extension yet, then read [this](#package-publish-share) to package, publish, and share your extension. 
-If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
+If you haven't published your extension yet, go [here](#package-publish-share) to package, publish, and share your extension. 
+If you've already published the extension, you can repackage the extension, as described [here](#package-the-extension), and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
 
 
 ### Step 7: Add Widget From the Catalog
 
-Now, go to your team dashboard at `http://dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
+Now, go to your team dashboard at `https:\//dev.azure.com/{yourOrganization}/{yourProject}`. If this page is already open, then refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
@@ -644,7 +650,7 @@ In [Part 2](#part-2) of this guide, you saw how to create a widget that shows qu
 In this part, we add the ability to configure the query to be used instead of the hard-coded one.
 When in configuration mode, the user gets to see a live preview of the widget based on their changes. These changes get saved to the widget on the dashboard when the user clicks the Save button.
 
-![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sampleConfiguration.png)
+![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleConfiguration.png)
 
 ### Step 1: HTML
 
@@ -973,16 +979,16 @@ At the end of this part, the manifest file should contain three widgets and one 
 ### Step 6: Package, Publish, and Share
 
 If you have not published your extension yet, then read [this section](#package-publish-share) to package, publish, and share your extension. 
-If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
+If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
-Now, go to your team dashboard at http://dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
+Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
 Hover on the Edit button in the bottom right, and select the Add button. This should open the widget catalog where you find the widget you installed. 
 Choose your widget and select the 'Add' button to add it to your dashboard.
 
 You would see a message asking you to configure the widget.
 
-![Overview dashboard in with a sample widget](../_shared/procedures/_img/add-dashboard-widget/sampleWidgetWithNoSettings.png)
+![Overview dashboard in with a sample widget](../media-procedures/add-dashboard-widget/sampleWidgetWithNoSettings.png)
 
 There are two ways to configure widgets. One is to hover on the widget, select the ellipsis that appears on the top-right corner and then select Configure.
 The other is to select the Edit button in the bottom right of the dashboard, and then select the configure button that appears on the top-right corner of the widget.
@@ -1037,13 +1043,12 @@ The extension manifest for the third sample in this guide would look like the be
 }
 ```
 
-With the above change, [repackage](#package-the-extension) and [update](../publish/overview.md#update) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
+With the above change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
 Open the configuration mode for your widget, you should now be able to see the option to change the widget name and size.
 
-![Widget where name and size can be configured](../_shared/procedures/_img/add-dashboard-widget/sampleConfigureNameAndSize.png)
+![Widget where name and size can be configured](../media-procedures/add-dashboard-widget/sampleConfigureNameAndSize.png)
 
 Go ahead and choose a different size from the drop-down. You see the live preview get resized. Save the change and the widget on the dashboard is resized as well.
-doesn't
 
 > [!WARNING]  
 > If you remove an already supported size, then the widget fails to load properly. We are working on a fix for a future release.
@@ -1075,5 +1080,5 @@ return {
 }
 ```
 
-[Repackage](#package-the-extension) and [update](../publish/overview.md#update) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
+[Repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
 

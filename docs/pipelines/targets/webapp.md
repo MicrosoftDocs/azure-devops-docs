@@ -2,23 +2,20 @@
 title: Deploy an Azure Web App
 description: Deploy to Azure Web Apps from Azure Pipelines or TFS
 services: vsts
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.assetid:
 ms.custom: seodec18
 ms.author: jukullam
 author: juliakm
-ms.date: 4/4/2019
+ms.date: 04/15/2020
 monikerRange: '>= tfs-2017'
 ---
 
 # Deploy an Azure Web App
 
-[!INCLUDE [version-tfs-2017-rtm](../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
-[!INCLUDE [temp](../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../includes/concept-rename-note.md)]
 
 You can automatically deploy your web app to an Azure App Service web app after every successful build.
 
@@ -97,10 +94,14 @@ add the following snippet to your azure-pipelines.yml file:
   inputs:
     azureSubscription: '<Azure service connection>'
     appName: '<Name of web app>'
-    package: $(System.ArtifactsDirectory)/**/*.zip    
+    package: $(System.DefaultWorkingDirectory)/**/*.zip    
 ```
 
-The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.ArtifactsDirectory)` folder on your agent.
+* **azureSubscription**: your Azure subscription.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+
+The snippet assumes that the build steps in your YAML file produce the zip archive in the `$(System.DefaultWorkingDirectory)` folder on your agent.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -117,16 +118,21 @@ If you're building a [Java app](../apps/java/build-gradle.md), use the following
     package: '$(System.DefaultWorkingDirectory)/**/*.war'
 ```
 
+* **azureSubscription**: your Azure subscription.
+* **appType**: your Web App type.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+
 The snippet assumes that the build steps in your YAML file produce the .war archive in one of the folders in your source code folder structure;
-for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.ArtifactsDirectory)`
-instead, change the last line in the snippet to `$(System.ArtifactsDirectory)/**/*.war`.
+for example, under `<project root>/build/libs`. If your build steps copy the .war file to `$(System.DefaultWorkingDirectory)`
+instead, change the last line in the snippet to `$(System.DefaultWorkingDirectory)/**/*.war`.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
 ### Deploy a JavaScript Node.js app
 
 If you're building a [JavaScript Node.js app](../ecosystems/javascript.md), you publish the entire contents of your
-working directory to the web app. The following snippet also generates a Web.config file during deployment if the application does not have one and starts
+working directory to the web app. This snippet also generates a Web.config file during deployment if the application does not have one and starts
 the iisnode handler on the Azure Web App:
 
 ```yaml
@@ -137,6 +143,11 @@ the iisnode handler on the Azure Web App:
     package: '$(System.DefaultWorkingDirectory)'
     customWebConfig: '-Handler iisnode -NodeStartFile server.js -appType node'
 ```
+
+* **azureSubscription**: your Azure subscription.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents. Wildcards are supported.
+* **customWebConfig**: generate web.config parameters for Python, Node.js, Go and Java apps. A standard `web.config` file will be generated and deployed to Azure App Service if the application does not have one.
 
 For information on Azure service connections, see the [following section](#endpoint).
 
@@ -158,7 +169,7 @@ This task is automatically added to the release pipeline when you select one of 
 Templates exist for apps developed in various programming languages. If you can't find a template for your language, select the generic **Azure App Service Deployment** template.
 
 When you link the artifact in your release pipeline to a build that compiles and publishes the web package,
-it's automatically downloaded and placed into the `$(System.ArtifactsDirectory)` folder on the agent as part of the release.
+it's automatically downloaded and placed into the `$(System.DefaultWorkingDirectory)` folder on the agent as part of the release.
 This is where the task picks up the web package for deployment.
 
 * * *
@@ -210,6 +221,9 @@ By default, your deployment happens to the root application in the Azure Web App
   inputs:
     VirtualApplication: '<name of virtual application>'
 ```
+
+* **VirtualApplication**: the name of the Virtual Application that has been configured in the Azure portal. See [Configure an App Service app in the Azure portal
+](https://azure.microsoft.com/documentation/articles/web-sites-configure/) for more details.
 
 ::: moniker-end
 
@@ -284,33 +298,34 @@ jobs:
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-
-  # add steps here to build the app
-
-  # the following will publish an artifact called drop
+  # publish an artifact called drop
   - task: PublishBuildArtifacts@1
+    inputs:
+      artifactName: drop
 
+  # deploy to Azure Web App staging
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<Test stage Azure service connection>'
+      azureSubscription: '<test stage Azure service connection>'
       appName: '<name of test stage web app>'
 
-- job: prod
+- job: deploy
   pool:
     vmImage: 'ubuntu-16.04'
   dependsOn: buildandtest
   condition: succeeded()
   steps:
 
-  # step to download the artifacts from the previous job
+  # download the artifact drop from the previous job
   - task: DownloadBuildArtifacts@0
     inputs:
       artifactName: drop
-
+  
+  # deploy to Azure Web App production
   - task: AzureWebApp@1
     inputs:
-      azureSubscription: '<Prod stage Azure service connection>'
-      appName: '<name of prod stage web app>'
+      azureSubscription: '<prod Azure service connection>'
+      appName: '<name of prod web app>'
 ```
 
 ::: moniker-end
@@ -333,7 +348,7 @@ App settings can also be resolved from Key Vault using [Key Vault references](ht
 
 For ASP.NET and ASP.NET Core developers, setting app settings in App Service are like setting them in <appSettings> in Web.config.
 You might want to apply a specific configuration for your web app target before deploying to it. 
-This is particularly useful when you deploy the same build to multiple web apps in a pipeline.
+This is useful when you deploy the same build to multiple web apps in a pipeline.
 For example, if your Web.config file contains a connection string named `connectionString`,
 you can change its value before deploying to each web app. You can do this either by applying
 a Web.config transformation or by substituting variables in your Web.config file. 
@@ -435,4 +450,4 @@ In your release pipeline, you can implement various checks and conditions to con
 To learn more, see [Release, branch, and stage triggers](../release/triggers.md), [Release deployment control using approvals](../release/approvals/approvals.md), [Release deployment control using gates](../release/approvals/gates.md), and [Specify conditions for running a task](../process/conditions.md).
 
 * * *
-[!INCLUDE [include](_shared/webapp/deploy-options.md)]
+[!INCLUDE [include](includes/webapp/deploy-options.md)]

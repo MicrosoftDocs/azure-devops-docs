@@ -1,16 +1,14 @@
 ---
 title: Build, test, and deploy Android apps
 description: Automatically build, test, and deploy Android projects with Azure Pipelines, Azure DevOps, & Team Foundation Server
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 7b2856ea-290d-4fd4-9734-ea2d48cb19d3
-ms.manager: jillfra
-ms.author: dastahel
+ms.author: vijayma
 ms.reviewer: dastahel
 ms.custom: seodec18
 ms.date: 10/07/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
+author: vijayma
 ---
 
 # Build, test, and deploy Android apps
@@ -55,7 +53,7 @@ Gradle is a common build tool used for building Android projects. See the [Gradl
 ```yaml
 # https://docs.microsoft.com/azure/devops/pipelines/ecosystems/android
 pool:
-  vmImage: 'macOS-10.13'
+  vmImage: 'macOS-10.14'
 
 steps:
 - task: Gradle@2
@@ -143,9 +141,11 @@ echo "Emulator started"
 
 Add the [App Center Test](../tasks/test/app-center-test.md) task to test the app in a hosted lab of iOS and Android devices. An [App Center](https://appcenter.ms) free trial is required which must later be converted to paid.
 
+[Sign up with App Center](https://appcenter.ms/signup?utm_source=DevOps&utm_medium=Azure&utm_campaign=docs) first.
+
 ::: moniker range="> tfs-2018"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterTestV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterTestV1.md)]
 
 ::: moniker-end
 
@@ -175,7 +175,7 @@ or promote the app to Intune or Google Play. A free [App Center](https://appcent
 
 ::: moniker range="> tfs-2018"
 
-[!INCLUDE [temp](../tasks/_shared/yaml/AppCenterDistributeV1.md)]
+[!INCLUDE [temp](../tasks/includes/yaml/AppCenterDistributeV1.md)]
 
 ::: moniker-end
 

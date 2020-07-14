@@ -1,11 +1,9 @@
 ---
 title: Extend the work item form | Extensions for Azure DevOps Services
-description: Describes how to extend work item tracking, including adding an action, an observer, a group or a page to the work item form.
+description: Describes how to extend work item tracking, including adding an action, an observer, a group, or a page to the work item form.
 ms.assetid: bffc76b7-f6ba-41f0-8460-ccb44d45d670
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
@@ -14,7 +12,7 @@ ms.date: 08/22/2016
 
 # Extend the work item form
 
-You can now customize how the work item form is presented to users via contributions made through an extension:
+In this article, learn how to customize how the work item form gets presented to users via contributions that are made through an extension.
 
 * [Add a group to the main page](#addagroup)
 * [Add a page (tab)](#addapage) 
@@ -23,14 +21,13 @@ You can now customize how the work item form is presented to users via contribut
 * [Listen for events on the form](#listenforevents)
 * [Configure contributions in work item form](#showcontributions)
 
-If you are just getting started and haven't created an extension, refer to the [Create your first extension with Visual Studio](../get-started/visual-studio.md). 
-
 See the **UI** example in the [Azure DevOps Services Extension Samples](https://github.com/Microsoft/vso-extension-samples/tree/master/ui) on GitHub for the full source.
 
 <a name="addagroup"></a>
+
 ## Add a group
 
-![toolbar item in work item form](./_img/add-workitem-extension-group.png)
+![toolbar item in work item form](./media/add-workitem-extension-group.png)
 
 To add a group to the main page, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-group` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -57,11 +54,11 @@ To add a group to the main page, add a contribution to your extension manifest. 
 |--------------|-----------------------|
 | ```name```         | Text that appears on the group   |
 | ```uri```         | URI to a page that hosts the html that shows on the work item form and its scripts
-| ```height```       | (Optional) Defines the height of the group. When omitted, it is 100%
+| ```height```       | (Optional) Defines the height of the group. When omitted, it's 100%
 
 ###  JavaScript sample
 
-This sample shows how to register an object that is called when various events happen on the work item form that may impact your contributed group.
+This sample shows how to register an object that's called when events occur on the work item form that may impact your contributed group.
 
 ```js   
     VSS.require(["TFS/WorkItemTracking/Services"], function (_WorkItemServices) {
@@ -117,14 +114,14 @@ This sample shows how to register an object that is called when various events h
     });
 ```     
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="addapage"></a>
 ## Add a page
 
 A new page is rendered as a tab on the work item form. New pages appear next to the Details tab.
 
-![toolbar item in work item form](./_img/add-workitem-extension-page.png)
+![toolbar item in work item form](./media/add-workitem-extension-page.png)
 
 To add a page to the work item form, add a contribution to your extension manifest. The type of this contribution should be `ms.vss-work-web.work-item-form-page` and it should target the `ms.vss-work-web.work-item-form` contribution. 
 
@@ -156,7 +153,7 @@ To add a page to the work item form, add a contribution to your extension manife
 
 See the JavaScript sample in the form group section. The name of the registered object should match the `id` of the contribution.
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 <a name="showcontributions"></a>
 
@@ -167,7 +164,7 @@ In Azure DevOps Services, by default the group extensions appear in the end of t
 <a name="addmenuaction"></a>
 ## Add menu action
 
-![toolbar item in work item form](./_img/add-workitem-extension-toolbar.png)
+![toolbar item in work item form](./media/add-workitem-extension-toolbar.png)
 
 To add an item to the work item toolbar, add this contribution to your extension manifest. The item appears in the ... dropdown in the top right of the work item form.
 
@@ -196,17 +193,17 @@ To add an item to the work item toolbar, add this contribution to your extension
 | Property     | Description           |
 |--------------|-----------------------|
 | text         | Text that appears on the toolbar item. |
-| title        | Tooltip text that appear on the menu item. |
+| title        | Tooltip text that appears on the menu item. |
 | toolbarText  | Text that appears when the item is being hovered over. |
 | uri          | URI to a page that registers the toolbar action handler. |
 | icon         | URL to an icon that appears on the menu item. Relative URLs are resolved using baseUri. |
-| group        | Determines where this menu item appears in relation to the others. Toolbar items with the same group name are grouped together divided by a separator from the rest of the items.
-| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution id.
+| group        | Determines where the menu item appears, related to others. Toolbar items with the same group name are grouped and divided by a separator from the rest of the items.
+| registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contribution ID.
 
 <a name="listenforevents"></a>   
 ## Listen for events
 
-To add an observer to the work item which listens to the work item events, add this contribution to your extension manifest. There is no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
+To add an observer to the work item, which listens to the work item events, add this contribution to your extension manifest. There's no visualization for observers on the work item form. This is the best way to listen to work item form onSaved event since the observer lives outside of the form and doesn't get destroyed when form closes, which might happen right after save.
 
  ```json
 "contributions": [
@@ -230,7 +227,7 @@ To add an observer to the work item which listens to the work item events, add t
 |--------------|-----------------------|
 | uri          | URI to a page that hosts the scripts listening to events |
 
-[!INCLUDE [Events](../_shared/add-workitem-extension-sharedevents.md)]
+[!INCLUDE [Events](../includes/add-workitem-extension-sharedevents.md)]
 
 ### HTML/JavaScript sample
 

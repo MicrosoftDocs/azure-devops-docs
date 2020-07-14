@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts TimelineReference API | Extensions for Azure DevOps Services
+description: Data representation of a timeline reference.
 ms.assetid: 68f48f8b-0dee-7134-5496-c6668e3b78ac
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

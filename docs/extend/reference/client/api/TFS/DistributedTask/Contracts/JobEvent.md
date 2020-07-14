@@ -1,10 +1,9 @@
 ---
 title: TFS/DistributedTask/Contracts JobEvent API | Extensions for Azure DevOps Services
+description: Data representation of a job event.
 ms.assetid: faab7d9f-f823-dd49-5cd8-538b4e8e3d19
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

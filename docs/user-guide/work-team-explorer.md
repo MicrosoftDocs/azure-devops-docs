@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 description: Download TFS clients, navigate in Team Explorer for Azure DevOps Services & Team Foundation Server 
 keywords: Download TFS clients 
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -24,10 +22,10 @@ You use Team Explorer to coordinate your code efforts with other team members to
 > You can install the latest version of Visual Studio clients from the [Visual Studio downloads page](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). 
 > 
 > Additional options for connecting to Azure DevOps Services or TFS include:  
-> - [Team Explorer Everywhere](../java/download-eclipse-plug-in.md)
-> - [Azure DevOps Plugin for Android Studio](../java/download-android-studio-plug-in.md)  
-> - [Azure DevOps Plugin for IntelliJ](../java/download-intellij-plug-in.md)
-> - [Visual Studio Code](../java/vscode-extension.md)  
+> - [Team Explorer Everywhere](/previous-versions/azure/devops/java/download-eclipse-plug-in)
+> - [Azure DevOps Plugin for Android Studio](/previous-versions/azure/devops/java/download-android-studio-plug-in)  
+> - [Azure DevOps Plugin for IntelliJ](/previous-versions/azure/devops/java/download-intellij-plug-in)
+> - [Visual Studio Code](/previous-versions/azure/devops/java/vscode-extension)  
 > 
 > For information about compatibility among client and server versions, see [Requirements and compatibility](/azure/devops/server/requirements).
 
@@ -47,7 +45,7 @@ Team Explorer connects Visual Studio to projects in Azure DevOps. You can manage
 
 From the **Connect** page, you can select the projects you want to connect to and quickly switch connection to a different project and or repository. For details, see [Connect to a project](../organizations/projects/connect-to-projects.md).
 
-![Team Explorer, Connect](_img/vs-2019-te/manage-connections.png)
+![Team Explorer, Connect](media/vs-2019-te/manage-connections.png)
 
 
 The Git and TFVC repos support different pages and functions. For a comparison of the two version control systems, see [Choosing the right version control for your project](../repos/tfvc/comparison-git-tfvc.md). 
@@ -58,7 +56,7 @@ The following images show the pages available when you connect to a Git reposito
 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|  
-> | ![Visual studio 2019, Team Explorer Home page with Git as source control](_img/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](_img/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827210.png) |  
+> | ![Visual studio 2019, Team Explorer Home page with Git as source control](media/vs-2019-te/te-git-full.png) |![Visual studio 2017, Team Explorer Home page with Git as source control](media/vs-2017-te/te-git-full.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827210.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -117,7 +115,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 
@@ -133,7 +131,7 @@ The following images show the pages available when you connect to a TFVC reposit
 > 
 > |Visual Studio 2019| Visual Studio 2017 | Visual Studio 2015 |  
 > |------|---------|---------|
-> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](_img/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](_img/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](_img/IC827209.png) |  
+> | ![Visual Studio 2019, Team Explorer Home page w/ TFVC as source control](media/vs-2019-te/te-tfvc.png) | ![Visual Studio 2017, Team Explorer Home page w/ TFVC as source control](media/vs-2017-te/te-tfvc.png) | ![Visual Studio 2015, Team Explorer Home page w/ TFVC as source control](media/IC827209.png) |  
 
 To learn more about each page, see the following articles. 
 
@@ -190,7 +188,7 @@ To learn more about each page, see the following articles.
 <li><a href="../boards/backlogs/office/bulk-add-modify-work-items-excel.md" data-raw-source="[Open query in Excel](../boards/backlogs/office/bulk-add-modify-work-items-excel.md)">Open query in Excel</a></li>
 <li><a href="../boards/backlogs/office/create-your-backlog-tasks-using-project.md" data-raw-source="[Open query in Project](../boards/backlogs/office/create-your-backlog-tasks-using-project.md)">Open query in Project</a></li>
 <li><a href="../boards/queries/share-plans.md" data-raw-source="[Email query results using Outlook](../boards/queries/share-plans.md)">Email query results using Outlook</a></li>
-<li><a href="../report/excel/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/excel/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="../report/create-status-and-trend-excel-reports.md" data-raw-source="[Create reports from query in Excel](../report/create-status-and-trend-excel-reports.md)">Create reports from query in Excel</a> (TFS only)</li>
 
 </ul>
 </td>
@@ -203,13 +201,13 @@ To learn more about each page, see the following articles.
 
 ## Team Explorer plug-in for Eclipse
 
-If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/../java/download-eclipse-plug-in#_install-the-tee-plugin-for-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
+If you work in Eclipse or on a non-Windows platform, you can [install the Team Explorer plug-in for Eclipse](/previous-versions/azure/devops/java/download-eclipse-plug-in#to-install-team-explorer-everywhere-from-within-eclipse). Once installed, you can share your Eclipse projects by adding them to Azure DevOps Services or TFS using [Git](../repos/git/share-your-code-in-git-eclipse.md) or [TFVC](../repos/tfvc/share-your-code-in-tfvc-eclipse.md).
 
 
 > [!div class="mx-tdBreakAll"]  
 > |Home page with Git (Eclipse) |Home page with TFVC (Eclipse) |
 > |-------------|----------|
-> |![Eclipse, Team Explorer, Git source control](_img/work-team-explorer/tee-git-10.2018.png) |![Eclipse, Team Explorer, TFVC source control](_img/work-team-explorer/tee-tfvc-10.2018.png) |
+> |![Eclipse, Team Explorer, Git source control](media/work-team-explorer/tee-git-10.2018.png) |![Eclipse, Team Explorer, TFVC source control](media/work-team-explorer/tee-tfvc-10.2018.png) |
 
 
 To learn more about each page, see the following articles. 
@@ -280,7 +278,7 @@ To learn more about each page, see the following articles.
 
 The **Reports** page opens the [Reporting Services report site](../report/sql-reports/reporting-services-reports.md). This page appears only when your project has been configured with SQL Server Analysis Services and Reporting Services. Also, the option to **Create Report in Microsoft Excel** appears only when reporting has been configured for the project.
 
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/config-tfs-resources).
+If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
 ::: moniker-end
 
@@ -295,7 +293,7 @@ The **Reports** page opens the [Reporting Services report site](../report/sql-re
 
 From the **Documents** page, you can [open project portal](../report/sharepoint-dashboards/share-information-using-the-project-portal.md) and [manage documents and document libraries](../report/sharepoint-dashboards/manage-documents-and-document-libraries.md). This page appears only if your project has been configured with a SharePoint Products portal.
 
-If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/config-tfs-resources).
+If your project is missing one or more pages, you may be able to [add functionality to your on premises TFS deployment](/azure/devops/server/admin/admin-quick-ref).
 
 ::: moniker-end
 
@@ -319,7 +317,7 @@ From the **Settings** page, you can configure administrative features for either
 <li><a href="../organizations/security/set-git-tfvc-repository-permissions.md" data-raw-source="[Security, Source Control (TFVC)](../organizations/security/set-git-tfvc-repository-permissions.md)">Security, Source Control (TFVC)</a></li>
 <li><a href="../organizations/settings/set-area-paths.md" data-raw-source="[Work Item Areas](../organizations/settings/set-area-paths.md)">Work Item Areas</a></li>
 <li><a href="../organizations/settings/set-iteration-paths-sprints.md" data-raw-source="[Work Item Iterations](../organizations/settings/set-iteration-paths-sprints.md)">Work Item Iterations</a></li>
-<li><a href="../report/sharepoint-dashboards/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../report/sharepoint-dashboards/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
+<li><a href="../project/configure-or-add-a-project-portal.md" data-raw-source="[Portal Settings](../project/configure-or-add-a-project-portal.md)">Portal Settings</a></li>
 <li><a href="../notifications/howto-manage-team-notifications.md" data-raw-source="[Project Alerts](../notifications/howto-manage-team-notifications.md)">Project Alerts</a></li>
 </ul>
 </td>
@@ -351,13 +349,13 @@ To learn more about settings, see [About team, project, and organizational-level
 
 If data doesn't appear as expected, the first thing to try is to refresh your client. Refreshing your client updates the local cache with changes that were made in another client or in TFS. To refresh Team Explorer, do one of the following actions:
 
-- To refresh a page that you are currently viewing, choose ![ ](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
-- To refresh the project you currently have selected, choose ![](_img/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
-- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/_img/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh a page that you are currently viewing, choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon in the menu bar (or choose the F5 key).
+- To refresh the project you currently have selected, choose ![](media/work-team-explorer/IC547418.png) **Home**, and then choose ![Refresh icon](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
+- To refresh the set of teams defined for the project that you currently have selected, choose the Connect icon, and then choose ![ ](../boards/media/icons/te-refresh-query-icon.png) **Refresh** icon (or choose the F5 key).
 
-[!INCLUDE [temp](_shared/when-to-refresh-client.md)]
+[!INCLUDE [temp](includes/when-to-refresh-client.md)]
 
-[!INCLUDE [temp](../_shared/images-not-appearing-vs.md)] 
+[!INCLUDE [temp](../includes/images-not-appearing-vs.md)] 
 
 
 ## Related articles

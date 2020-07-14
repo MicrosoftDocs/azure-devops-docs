@@ -3,10 +3,8 @@ title: Folderdiff Command
 titleSuffix: Azure Repos
 description: Folderdiff Command
 ms.assetid: 6bfb8318-ee32-4114-b5d1-d7196b1a1855
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 03/26/2018
@@ -24,7 +22,9 @@ Use the **folderdiff** command to display and compare a visual representation of
 
 To use the **folderdiff** command, you must have the **Read** permission set to **Allow**. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:TeamProjectCollectionUrl] [/filter:filter] [/filterLocalPathsOnly] [/login:username,[password]] [/view:same,different,sourceOnly,targetOnly]
+```
+tf folderdiff [sourcePath] targetPath [/recursive] [/noprompt] [/collection:TeamProjectCollectionUrl] [/filter:filter] [/filterLocalPathsOnly] [/login:username,[password]] [/view:same,different,sourceOnly,targetOnly]
+```
 
 ## Parameters<table>
 <thead>
@@ -48,7 +48,7 @@ To use the **folderdiff** command, you must have the **Read** permission set to 
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains the files for which you want to display and compare the differences (for example,`http://myserver:8080/tfs/DefaultCollection`).</p></td>
 </tr>
 <tr>
 <td><p><i>username</i></p></td>
@@ -156,7 +156,9 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example compares the files in the server folder and a local folder. It organizes the files in the localFolder recursively and displays the output in the Command Prompt window.
 
-    C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
+```
+C:>tf folderdiff $/serverFolder F:\localFolder /recursive /noprompt
+```
 
 ## See Also
 

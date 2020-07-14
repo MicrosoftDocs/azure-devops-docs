@@ -1,7 +1,5 @@
-- name: Team Foundation version control
-  href: index.md?toc=/azure/devops/repos/tfvc/toc.json&bc=/azure/devops/repos/tfvc/breadcrumb/toc.json 
-- name: Learn about TFVC
-  href: overview.md
+- name: TFVC
+  href: index.yml
 - name: Quickstarts
   items:
   - name: Visual Studio
@@ -18,6 +16,8 @@
     href: get-code-reviewed-vs.md
 - name: Concepts
   items:
+  - name: What is TFVC?
+    href: what-is-tfvc.md
   - name: Compare TFVC and Git 
     href: comparison-git-tfvc.md
   - name: Use Git and TFVC

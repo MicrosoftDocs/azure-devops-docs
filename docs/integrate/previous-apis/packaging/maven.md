@@ -7,7 +7,6 @@ ms.topic: article
 ms.author: chcomley
 author: chcomley
 ms.date: 02/10/2017
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 ---

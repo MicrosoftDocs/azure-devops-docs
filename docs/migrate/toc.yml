@@ -1,5 +1,3 @@
-- name: Migrate & Import
-  href: index.md?toc=/azure/devops/migrate/toc.json&bc=/azure/devops/migrate/breadcrumb/toc.json
 - name: Migrate data from TFS to Azure DevOps Services
   href: migration-overview.md
 - name: Migrate options
@@ -12,13 +10,3 @@
   href: migration-post-import.md
 - name: Troubleshooting
   href: migration-troubleshooting.md
-- name: Azure DevOps articles
-  items:
-    - name: Add Continuous Security Validation to your CICD Pipeline 
-      href: security-validation-cicd-pipeline.md  
-    - name: Build and Deployment Automation Case Study
-      href: build-deployment-best-practices.md
-    - name: Progressively expose your features using feature flags
-      href: phase-features-with-feature-flags.md
-    - name: Progressively expose your releases using deployment rings
-      href: phase-rollout-with-rings.md

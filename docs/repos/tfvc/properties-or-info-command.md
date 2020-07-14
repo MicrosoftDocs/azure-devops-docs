@@ -3,10 +3,8 @@ title: Properties Command
 titleSuffix: Azure Repos
 description: Properties Command
 ms.assetid: f306bc7a-db55-47d8-aa22-e2399260e838
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -24,15 +22,18 @@ Displays information about items under version control.
 
 To use the **properties** command, you must have the **Read** permission set to **Allow** for all specified files and folders. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
-    itemspec [/version:versionspec] [/workspace] 
+```
+tf properties [/collection:TeamProjectCollectionUrl] [/recursive] [/login:username,[password]]
+itemspec [/version:versionspec] [/workspace] 
+```
+
 ## Parameters
 
 <table><thead>
 <tr><th><p><strong>Argument </strong></p></th><th><p><strong>Description</strong></p></th></tr></thead><tbody>
 <tr>
 	<td><p><em>TeamProjectCollectionUrl</em></p></td>
-    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td></tr>
+    <td><p>The URL of the project collection that contains the items for which you want to display properties (for example, http://myserver:8080/tfs/DefaultCollection).</p></td></tr>
 <tr>
 	<td><p><em>Itemspec</em></p></td>
 	<td><p>Identifies the files and folders that are specified for property retrieval.</p><p>For more information about how Visual Studio Team Foundation Server parses <em>itemspecs</em> to determine which items are within scope, see <a href="https://msdn.microsoft.com/library/4y2ash30">Command-Line Options</a>.</p><p><strong>Note:</strong> You can specify more than one <em>Itemspec</em> argument.</p></td></tr>
@@ -104,11 +105,15 @@ For more information on how to find the **tf** command-line utility, see [Tf Com
 ## Examples
 The following example displays properties information about the file 314.cs.
 
-    c:\projects>tf properties 314.cs
+```
+c:\projects>tf properties 314.cs
+```
 
 The following example displays the properties of the working folder c:\\projects\\objects.
 
-    c:\projects>tf properties objects
+```
+c:\projects>tf properties objects
+```
 
 ## See Also
 

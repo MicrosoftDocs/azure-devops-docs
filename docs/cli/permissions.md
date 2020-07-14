@@ -1,13 +1,12 @@
 ---
-title: Manage security permissions using Azure DevOps CLI  
+title: Manage Security permissions with Azure DevOps CLI
 titleSuffix: Azure DevOps 
 description: Use Azure DevOps CLI to manage security permissions 
 ms.topic: reference 
-ms.manager: jillfra
 ms.prod: devops 
-ms.technology: devops-ref
-ms.manager: jillfra 
-ms.author: geverghe
+ms.technology: devops-reference
+ms.manager: mijacobs 
+ms.author: kaelli  
 author: KathrynEE
 monikerRange: 'azure-devops'
 ms.date: 06/18/2019
@@ -15,7 +14,7 @@ ms.date: 06/18/2019
 
 # Manage security permissions  
 
-[!INCLUDE [temp](../_shared/version-vsts-only.md)] 
+[!INCLUDE [temp](../includes/version-vsts-only.md)] 
 
 Security permissions for a User or Security group can be managed by running following group of commands:
 
@@ -60,17 +59,17 @@ Here, permissions could be a single permission type or combination of multiple p
 You will get the permission details available for any namespace with `az devops security permission namespace show --id` command.
 You will have to pass this permission bits while assigning allow/deny permissions and removing permissions.
 
-#### Add permissions
+#### Assign permissions
 
-`az  devops security permission add  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --allow-bit 4 deny-bit 1`
+`az  devops security permission update  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --allow-bit 4 --deny-bit 1`
 
 Here, --allow-bit/--deny-bit could be a single permission bit or addition of multiple permission bits.
 
 #### Reset permissions
 
-`az  devops security permission reset  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --permissions 5`
+`az  devops security permission reset  --namespace-id <NAMESPACE_ID> --subject <USER_ID/GROUP_DESCRIPTOR> --token <SECURITY_TOKEN> --permission-bit 5`
 
-Here, --permissions could be a single permission bit or addition of multiple permission bits.
+Here, --permission-bit could be a single permission bit or addition of multiple permission bits.
 
 #### Reset all permissions
 

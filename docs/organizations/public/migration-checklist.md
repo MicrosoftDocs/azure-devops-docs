@@ -3,20 +3,18 @@ title: Migration checklist
 titleSuffix: Azure DevOps Services Public Project 
 description: Best practices when changing a private project to a public project 
 ms.technology: devops-public-projects
-ms.prod: devops
 ms.assetid:
 ms.reviewer: 
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: quickstart
-ms.date: 02/19/2019
+ms.date: 06/08/2020
 monikerRange: 'azure-devops'
 ---
 
 # Quickstart: Private-to-public migration checklist
 
-[!INCLUDE [temp](_shared/version-public-projects.md)]  
+[!INCLUDE [temp](includes/version-public-projects.md)]  
 
 In this quickstart, you learn about the private-to-public migration checklist, which helps you to consider what data may be exposed to non-members, before you change the visibility of your private project to public. Most existing private projects contain a large amount of historical data. Old work items, early commits, and previous build pipelines might have content you don't want to share publicly.
 
@@ -34,13 +32,17 @@ When you invite someone to become a member of a project, that person gains acces
 > | Settings         | Read-only view of all organization and project settings  |
 > | Process metadata | All picklist values in all projects in the organization  |
 
+Opening up a project to the public can reveal identities in a number of other ways, as well.
+Builds and releases may show the names of people who triggered them, plus identities (including email addresses) embedded in Git commits.
+Git commits and work items may contain embedded identity information such as first name, last name and email address.
+
 ## Cross-project linked objects
 
 In Azure DevOps, you can link objects that exist in different projects defined in the same organization. For example, you can link a bug in Project A to a pull request in Project B. If links exist between a public and a private project, details about the linked artifact in the private project are visible within the public project.
 
 The link types used to construct these links, as illustrated in the following image, are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, and Versioned Item.
 
-![Cross project link types](../../boards/queries/_img/link-tracking-artifact-to-artifact-link-types.png) 
+![Cross project link types](../../boards/queries/media/link-tracking-artifact-to-artifact-link-types.png) 
 
 Five kinds of cross-project links expose content from the private project.
 
@@ -91,6 +93,11 @@ If you need to migrate build pipelines to a new project (perhaps because you're 
 
 * Consider building a dashboard intended for the public. Some [widgets are unavailable](feature-differences.md#dashboard-widget-support) to non-members, so don't rely on these.
 
+## Artifacts
+
+* Confirm that none of the packages in any of the feeds that are scoped to the project have privacy concerns. All packages in the feeds that are scoped to the project will become public.
+* Be aware that public feeds cannot have upstream sources. All existing upstream settings of the feeds that are scoped to the project will be disabled once the project becomes public.
+
 ## Extensions
 
 Are any extensions vital to your project's experience?
@@ -109,7 +116,7 @@ In that case, we recommend creating an entirely separate organization to host yo
 
 ### Move work items to a private project
 
-If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/remove-delete-work-items.md#move) into a separate, private project.
+If one or a handful of work items are sensitive, you can [move them](../../boards/backlogs/move-change-type.md#move) into a separate, private project.
 Cross-project links continue to work for members.
 Non-members won't have access to the content since it resides in a private project.
 

@@ -3,10 +3,8 @@ title: Import a Git repo into your project
 titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
-ms.prod: devops
 ms.technology: devops-code-git 
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: quickstart
 ms.date: 11/02/2018
@@ -53,17 +51,17 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 1. Select **Repos**, **Files**.
 
-   ![View your branches](_img/repos-navigation/repos-files.png)
+   ![View your branches](media/repos-navigation/repos-files.png)
 
 2. From the repo drop-down, select **Import repository**.
 
-   ![Manage repositories](_img/repo-mgmt/import-repository.png)
+   ![Manage repositories](media/repo-mgmt/import-repository.png)
 
 3. If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
    If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
-   ![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+   ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -71,13 +69,13 @@ This issue is resolved starting with [Team Foundation Server 2018 Update 2 RC1 a
 
 From the repo drop-down, select **Import repository**.
 
-![Import Repository Option](_img/Import-Repo/ImportRepository.png)
+![Import Repository Option](media/Import-Repo/ImportRepository.png)
 
 If the source repo is publicly available, just [enter the clone URL](clone.md#clone_url) of the source repository and a name for your new Git repository.
 
 If the source repository is private but can be accessed using basic authentication (username-password, personal access token, etc.),  select **Requires authorization** and enter the your credentials. SSH authentication is not supported, but you can manually import a repository that uses SSH authentication by following the steps in [Manually import a repo](#manually-import-a-repo).
 
-![Import Repository Dialog](_img/Import-Repo/ImportRepoDialog.png)
+![Import Repository Dialog](media/Import-Repo/ImportRepoDialog.png)
 
 ::: moniker-end
 
@@ -86,7 +84,7 @@ If the source repository is private but can be accessed using basic authenticati
 
 On the **Files** page of the empty Git repository, select **Import** and [enter the clone URL](clone.md#clone_url). You will need to provide credentials if the source repository requires authentication. 
 
-![Import Repository into an existing repository](_img/Import-Repo/ImportRepofromEmptyRepo.png)
+![Import Repository into an existing repository](media/Import-Repo/ImportRepofromEmptyRepo.png)
 
 >[!NOTE]
 >The import feature disables automated linking for work items mentioned in a commit comment since the work item IDs in the destination project might not be the same as ones in the source project. Automatic linking for work items mentioned in a commit can be re-enabled by navigating to **Settings**, **Version Control**,  selecting your repository, and choosing **Options**. For more information on linking commits with work items, see [How do I associate my commits with work items?](share-your-code-in-git-vs-2017.md#how-do-i-associate-my-commits-with-work-items)
@@ -110,7 +108,10 @@ The import repo feature was introduced in TFS 2017 Update 1. If you are using TF
 
     ```
     git push --mirror https://dev.azure.com/contoso-ltd/MyFirstProject/_git/new-contoso-repo
-    ``` 
+    ```
+    
+   > [!WARNING]
+   > Using `--mirror` will overwrite all branches in the target repo which includes deleting any branches not in the source repo.
 
 4. If the source repository has LFS objects then fetch them, and copy them from the source repo to the target repo.
 
@@ -190,9 +191,9 @@ LFS objects can be moved using the following steps:
 To move over the LFS files (you will need both Git.exe and LFS client in the same box and access to both source repository and destination repository)
 - Clone the imported repository from Azure DevOps to local system, clone will work but it will fail while performing checkout of LFS files
 - Add the source repository as remote (say ‘source’)
-- Perform “git lfs fetch source –all”  (this will bring over all LFS files from source to your local repository)
+- Perform `git lfs fetch source --all`  (this will bring over all LFS files from source to your local repository)
 - Assuming the destination VSTS repository is your ‘target’ remote 
-- Perform “git lfs push target –all”
+- Perform `git lfs push target --all`
 
 ::: moniker-end
 

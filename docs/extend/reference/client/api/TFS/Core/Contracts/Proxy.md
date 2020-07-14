@@ -1,10 +1,9 @@
 ---
 title: TFS/Core/Contracts Proxy API | Extensions for Azure DevOps Services
+description: Data representation of a proxy.
 ms.assetid: 640ed63c-eca1-8bbc-5836-8d6ca2845772
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

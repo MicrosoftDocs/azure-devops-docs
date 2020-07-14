@@ -1,11 +1,9 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Work Item Comments | REST API Reference for Team Foundation Server
 description: Work with work item comments programmatically using the REST APIs for Team Foundation Server. 
 ms.assetid: EF2796AF-2400-4396-ABFC-1903BA1581CC
-ms.manager: jillfra
 ms.topic: article
 ms.author: chcomley
 author: chcomley
@@ -62,7 +60,7 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments/2?api
 
 #### Sample code
 
-* [C# (GetSingleWorkItemComment method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/CommentsSample.cs#L13)
+* [C# (GetSingleWorkItemComment method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L13)
 
 ## Get a page of comments
 
@@ -124,5 +122,5 @@ GET https://mytfsserver/DefaultCollection/_apis/wit/workitems/299/comments?fromR
 
 #### Sample code
 
-* [C# (GetPageOfWorkItemComments method)](https://github.com/Microsoft/vsts-dotnet-samples/blob/master/ClientLibrary/Snippets/Microsoft.TeamServices.Samples.Client/WorkItemTracking/CommentsSample.cs#L30)
+* [C# (GetPageOfWorkItemComments method)](https://github.com/microsoft/azure-devops-dotnet-samples/blob/master/ClientLibrary/Samples/WorkItemTracking/CommentsSample.cs#L30)
 

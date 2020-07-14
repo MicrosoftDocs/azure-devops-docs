@@ -3,13 +3,8 @@ title: Migrate from Jenkins to Azure Pipelines
 titleSuffix: Azure Pipelines
 description: How to migrate from Jenkins to Azure Pipelines
 ms.topic: conceptual
-ms.prod: devops
-ms.technology: devops-cicd
-ms.manager: jillfra
-ms.author: ethomson
-author: ethomson
 ms.date: 02/07/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Migrate from Jenkins to Azure Pipelines
@@ -199,7 +194,7 @@ keyword. For example, to select a macOS build:
 
 ``` yaml
 pool:
-  vmimage: macOS-10.13
+  vmimage: macOS-10.14
 ```
 
 Additionally, you can specify a `container` and specify a docker image

@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts BuildController API | Extensions for Azure DevOps Services
+description: Data representation of a build controller.
 ms.assetid: c5f8000a-00fd-8ae0-bf26-1e1ef0aa5ecf
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

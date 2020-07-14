@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts QueryDeletedOption API | Extensions for Azure DevOps Services
+description: Data representation of a query deleted option.
 ms.assetid: 243c80c5-77bf-7c46-a1e9-1aefaab4a1b6
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

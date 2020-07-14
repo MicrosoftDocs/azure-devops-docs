@@ -3,10 +3,8 @@ title: Remove Access to Version Control Files
 titleSuffix: Azure Repos
 description: Remove Access to Version Control Files
 ms.assetid: 4264ddaf-ef39-430a-a388-770e2d06b319
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

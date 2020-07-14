@@ -2,10 +2,8 @@
 title: Update a project
 titleSuffix: TFS
 description: Update a project based on a Microsoft Solutions Framework (MSF) version 4.2 process template.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017
@@ -51,7 +49,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
  Perform this task for each project collection defined on the application-tier server you've upgraded.  
 
-[!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)]
+[!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)]
 
 1. Type each of the following commands, substituting your data for the arguments that are shown, and then choose the **ENTER** key.  
 
@@ -63,10 +61,11 @@ For more information, see [Add administrators, set permissions at the project-le
    witadmin changefield /collection:CollectionURL /n:System.RelatedLinkCount /name:"Related Link Count"  
    ```  
 
-    Use this format for *CollectionURL*: <strong>http://ServerName:Port/VirtualDirectoryName/CollectionName</strong>, for example: **<http://srvalm:8080/tfs/DefaultCollection>**.  
+    Use this format for *CollectionURL*: `http://ServerName:Port/VirtualDirectoryName/CollectionName`, for example: `http://srvalm:8080/tfs/DefaultCollection`.  
 
 
 ## 2. (Agile only) Rename the Scenario work item type  
+
  To minimize the amount of customizations you need to make, and to comply with future updates to the Agile process template, you should rename the Scenario work item type to User Story.  
 
 > [!NOTE]   
@@ -92,9 +91,10 @@ For more information, see [Add administrators, set permissions at the project-le
 > [!TIP]  
 >  To get access to the latest versions of the default process templates, install the latest update for TFS. TFS 2012.1 provided significant updates that were made to the workflow for several work item types. These changes support backward transitions so that when you inadvertently drag a work item on the Kanban board or the task board to a resolved or closed state, you can drag it back to an earlier workflow state.  
 >   
-> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](http://go.microsoft.com/fwlink/?LinkId=272181).   
+> You can obtain the upgrade for TFS 2012 from the Microsoft download site: [Quarterly Update for Microsoft Visual Studio Team Foundation Server 2012](https://go.microsoft.com/fwlink/?LinkId=272181).   
 
 ## 4. Import link types  
+
  Import the link types, SharedSteps and TestedBy, located in the LinkTypes folder in the process template that you downloaded in task 3.  
 
  Perform this task for each project collection defined on your upgraded application-tier server.  
@@ -135,6 +135,7 @@ For more information, see [Add administrators, set permissions at the project-le
 
 
 ## 6. Import work item types  
+
  Import the following work item types based on the process template you are working with.  
 
 - **Agile**: Bug, Task, User Story, Test Case, Shared Steps, Code Review Request, Code Review Response, Feedback Request, Feedback Response  
@@ -229,11 +230,24 @@ You must grant permissions to team members who will manage test environments and
 
 The following table describes the permissions that control access to test functions and support interfacing with the project for testing. It also indicates the default assignments that are made in version 5.0 of the Agile and CMMI process templates, in addition to the recommended permissions to grant manual testers and test leads.
 
-|<strong>Permission</strong>|<strong>Description</strong>|Scope|Readers|Contributors|Builders|Recommended for manual testers|Recommended for test leads|<br/>|--------------------|---------------------|-----------|-------------|------------------|--------------|------------------------------------|--------------------------------|<br/>|<strong>View project-level information</strong>|Can view membership of project-level groups and the permissions of those members.|Project-level|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>View test runs</strong>|Can view test plans in this node.|Project-level|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Create test runs</strong>|Can add and remove test results and add or modify test runs for the project.|Project-level||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test configurations</strong>|Can create and delete test configurations for the project.|Project-level||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test environments</strong>|Can create and delete test environments for the project.|Project-level||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Delete test runs</strong>|Can delete a scheduled test for the project.|Project-level||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>View this node</strong>|Can view the security settings for an area node.|Area node|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test plans</strong>|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>|<strong>Manage test controllers</strong>|Can register and unregister test controllers for the project collection.|Project collection|||||<img src="_img/icon_witcheckgreen.png" alt="check mark" title="Icon_WITcheckgreen"/>|<br/>
- You can grant permissions by following the procedures that are indicated for the specific scope area:<br/>
--   You can set project-level permissions or area node permissions from the administration page of web portal. See <a href="../../organizations/security/permissions.md" data-raw-source="[Permissions reference](../../organizations/security/permissions.md)">Permissions reference</a> and <a href="../../organizations/settings/set-area-paths.md" data-raw-source="[Customize your area or iteration paths](../../organizations/settings/set-area-paths.md)">Customize your area or iteration paths</a>.  update-a-team-project-manually-to-support-test-management.md
+|Permission|Description|Scope|Readers|Contributors|Builders|Recommended for manual testers|Recommended for test leads|
+|--------------------|---------------------|-----------|-------------|------------------|--------------|-------------------|-----------------------|
+|View project-level information|Can view membership of project-level groups and the permissions of those members.|Project-level|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
+|View test runs|Can view test plans in this node.|Project-level|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
+|Create test runs|Can add and remove test results and add or modify test runs for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
+|Manage test configurations|Can create and delete test configurations for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
+|Manage test environments|Can create and delete test environments for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
+|Delete test runs|Can delete a scheduled test for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
+|View this node|Can view the security settings for an area node.|Area node|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
+|Manage test plans|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
+|Manage test controllers|Can register and unregister test controllers for the project collection.|Project collection|||||![](media/icon_witcheckgreen.png)|  
 
--   You can set project collection permissions from Team Explorer by choosing <strong>Team, Team Project Collection Settings, Security</strong>, by opening and using the administration console for Team Foundation, or by using the <strong>TFSSecurity</strong> and <strong>tf</strong> command-line tools. For more information, see <a href="../../organizations/security/set-project-collection-level-permissions.md" data-raw-source="[Add an administrator](../../organizations/security/set-project-collection-level-permissions.md)">Add an administrator</a>.<br/>  
+
+You can grant permissions by following the procedures that are indicated for the specific scope area:  
+
+- You can set project-level permissions or area node permissions from the administration page of web portal. See [Permissions reference](../../organizations/security/permissions.md) and [Customize your area or iteration paths](../../organizations/settings/set-area-paths.md).  
+
+- You can set project collection permissions from Team Explorer by choosing <strong>Team, Team Project Collection Settings, Security</strong>, by opening and using the administration console for Team Foundation, or by using the <strong>TFSSecurity</strong> and <strong>tf</strong> command-line tools. For more information, see [Add an administrator](../../organizations/security/set-project-collection-level-permissions.md).  
 
 <a id="launch_mtm" /> 
 
@@ -251,13 +265,13 @@ After you have completed the upgrade tasks that are described earlier in this to
 
  When you upgrade from Visual Studio Team System 2008 Team Foundation Server to TFS 2012, you receive updates made to both TFS 2010 and TFS 2012. There were a number of architectural changes made with the release of TFS 2011. To learn more about the changes made by upgrading to the latest version of TFS from Visual Studio Team System 2008 Team Foundation Server, see the following resources:  
 
--   [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)  
--   [Update a customized process template to access new features](../update-customized-process-template.md)    
--    [Locating reports after the upgrade to TFS 2010](../../report/admin/locate-reports-after-upgrade.md)    
--   [Changes and Additions to the Schema for the Analysis Services Cube](https://msdn.microsoft.com/library/ff472574%28v=vs.100%29.aspx)     
--   [Changes made to process templates](../../boards/work-items/guidance/changes-to-process-templates.md)   
+- [Team Foundation Server 2010 Key Concepts](https://devblogs.microsoft.com/bharry/team-foundation-server-2010-key-concepts/) (blog post)  
+- [Update a customized process template to access new features](../update-customized-process-template.md)    
+-  [Locating reports after the upgrade to TFS 2010](../../report/admin/locate-reports-after-upgrade.md)    
+- [Changes and Additions to the Schema for the Analysis Services Cube](/previous-versions/visualstudio/visual-studio-2010/ff472574(v=vs.100))     
+- [Changes made to process templates](../../boards/work-items/guidance/changes-to-process-templates.md)   
 
 ## Related articles
 
--  [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
--  [Configure features after an upgrade](../configure-features-after-upgrade.md) 
+- [witAdmin: Customize and manage objects for tracking work](../witadmin/witadmin-customize-and-manage-objects-for-tracking-work.md)   
+- [Configure features after an upgrade](../configure-features-after-upgrade.md) 

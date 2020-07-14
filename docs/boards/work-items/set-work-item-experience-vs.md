@@ -1,13 +1,10 @@
 ---
-title: Switch the Team Explorer Work Items page experience  
+title: Change Work Items page experience
 titleSuffix: Azure Boards and TFS
 description: Change the Work Items page setting from default to legacy in Visual Studio 2019 Team Explorer  
-ms.custom: seodec18  
-ms.custom: work-items
+ms.custom: work-items, seodec18  
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
-ms.manager: jillfra
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
@@ -42,7 +39,7 @@ Each view supports the following tasks:
 <li><a href="/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel" data-raw-source="[Open query in Excel](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)">Open query in Excel</a></li>
 <li><a href="/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project" data-raw-source="[Open query in Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)">Open query in Project</a></li>
 <li><a href="/azure/devops/boards/queries/share-plans" data-raw-source="[Email query results list using Outlook](/azure/devops/boards/queries/share-plans)">Email query results list using Outlook</a></li>
-<li><a href="/azure/devops/report/excel/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports)">Create reports from query in Excel</a> (TFS only)</li>
+<li><a href="/azure/devops/report/create-status-and-trend-excel-reports" data-raw-source="[Create reports from query in Excel](/azure/devops/report/create-status-and-trend-excel-reports)">Create reports from query in Excel</a> (TFS only)</li>
 </ul>
 </td>
 </tr>
@@ -58,7 +55,7 @@ Each view supports the following tasks:
 1. Choose your **Landing page** option from the menu. 
 
 	> [!div class="mx-imgBorder"]  
-	> ![Open Tools>Options>Work Items](_img/set-vs-experience/option-vs-options-work-items.png)
+	> ![Open Tools>Options>Work Items](media/set-vs-experience/option-vs-options-work-items.png)
 
 To learn more about **Options**, see [Options Dialog Box (Visual Studio)](/visualstudio/ide/reference/options-dialog-box-visual-studio).
 

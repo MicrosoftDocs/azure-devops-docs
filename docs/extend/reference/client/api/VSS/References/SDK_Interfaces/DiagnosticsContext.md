@@ -1,10 +1,9 @@
 ---
 title: VSS/References/SDK.Interfaces DiagnosticsContext API | Extensions for Azure DevOps Services
+description: Data representation of diagnostics context.
 ms.assetid: 94e99ee9-ba85-9b1c-31f3-dcb9c21e98a0
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: article

@@ -2,19 +2,18 @@
 title: CMMI process guidance, Plan an iteration  
 titleSuffix: Azure Boards
 description: Understand the planning iterations to decide how long you want your iterations to be, determining how much work your team can get done in that time, and planning what work should be included in each iteration - Team Foundation Server (TFS)
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 63b93130-06bf-474c-883f-9514e3e92db0
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: kaelliauthor: KathrynEE
+ms.author: kaelli
+author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.date: 01/20/2017
 ---
 
 # Plan an iteration (CMMI)
 
-[!INCLUDE [temp](../../../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
 
 Developing software in iterations means that you divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. Ideally, you have something to show the customer after even the first iteration. Iterations let you receive feedback early so that you can make course corrections early.  
   
@@ -58,6 +57,6 @@ Developing software in iterations means that you divide your work into increment
 ##  <a name="AdditionalResources"></a> Additional resources  
  For more information, see the following Web resources:  
   
- [Project Retrospectives: A Handbook for Team Reviews](http://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
+ [Project Retrospectives: A Handbook for Team Reviews](https://go.microsoft.com/fwlink/?LinkId=179023), Norman Kerth; Dorset House, 2001.  
   
- [Agile Retrospectives: Making Good Teams Great](http://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.
+ [Agile Retrospectives: Making Good Teams Great](https://go.microsoft.com/fwlink/?LinkId=179024), Esther Derby and Diana Larsen; Pragmatic Bookshelf, 2006.

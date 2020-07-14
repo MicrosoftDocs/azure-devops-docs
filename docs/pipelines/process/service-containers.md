@@ -3,19 +3,14 @@ title: Service Containers
 titleSuffix: Azure Pipelines & TFS
 description: Run containerized services alongside pipeline jobs
 ms.assetid: a6af47c5-2358-487a-ba3c-d213930fceb8
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
-ms.author: dakale
-author: dakale
 ms.date: 01/14/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
-# Service Containers
+# Service containers
 
-**Azure Pipelines**
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 If your pipeline requires the support of one or more services, in many cases you'll want to create, connect to, and clean up each
 service on a per-job basis. For instance, a pipeline may run integration tests that require access to
@@ -32,9 +27,8 @@ Service containers must define a `CMD` or `ENTRYPOINT`.
 The pipeline will `docker run` the provided container without additional arguments.
 
 Azure Pipelines can run Linux or [Windows Containers](/virtualization/windowscontainers/about/). Use either
-the Hosted Ubuntu 1604 pool for Linux containers, or the Hosted Windows Container pool for Windows containers.
+hosted Ubuntu for Linux containers, or the Hosted Windows Container pool for Windows containers.
 (The Hosted macOS pool does not support running containers.)
-If you want to use a self-hosted agent, it must be running [Windows Server version 1803](/windows-server/get-started/get-started-with-1803) or newer.
 
 # [YAML](#tab/yaml)
 
@@ -147,9 +141,9 @@ container: my_container
 services:
   postgres: $[ variables['postgresService'] ]
 steps:
-  - script: |
-      apt install -y postgresql-client
-      psql --host=postgres --username=postgres --command="SELECT 1;"
+- script: |
+    apt install -y postgresql-client
+    psql --host=postgres --username=postgres --command="SELECT 1;"
 ```
 
 ## Ports
@@ -158,7 +152,7 @@ When specifying a container resource or an inline container, you can specify an 
 
 ```yaml
 resources:
-  container:
+  containers:
   - container: my_service
     image: my_service:latest
     ports:
@@ -206,7 +200,7 @@ an absolute path in the container.
 ## Other options
 
 Service containers share the same container resources as container jobs. This means that you can use the same
-[additional options](container-phases.md?tabs=yaml#other-settings).
+[additional options](container-phases.md?tabs=yaml#options).
 
 # [Classic](#tab/classic)
 

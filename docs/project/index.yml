@@ -6,7 +6,6 @@ summary: Share information, create public projects, integrate with other service
 metadata:
   title: Collaborate documentation
   description: Share information, create public projects, integrate with other services, and collaborate with team members and stakeholders in Azure DevOps.
-  ms.service: visual-studio-online
   ms.prod: devops 
   ms.technology: devops-collab
   ms.topic: landing-page 
