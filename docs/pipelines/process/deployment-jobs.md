@@ -477,3 +477,11 @@ stages:
 ```
 
 Learn more about how to [set a multi-job output variable](variables.md#set-a-multi-job-output-variable)
+
+## FAQ
+
+### My pipeline seems to be stuck and has the message "Job is pending..." How do I troubleshoot this?
+ 
+This can happen when there is a name conflict between two jobs. Verify that any deployment jobs in the same stage have a unique name and that job and stage names do not contain keywords. If renaming does not fix the problem, review [troubleshooting pipeline runs](../troubleshooting/troubleshooting.md).
+
+
