@@ -73,10 +73,8 @@ To make commands easier to run, start by selecting a default region. After you s
 1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
 
     ```bash
-    webName="data-cicd-${resourceSuffix}"
     registryName="data-cicd${resourceSuffix}"
-    dbServerName="data-cicd-${resourceSuffix}"
-    storageName="data-cicd-${resourceSuffix}"
+    storageName="datacicd${resourceSuffix}"
     ```
 
 1. Create two more Bash variables to store the names of your resource group and service plan.
