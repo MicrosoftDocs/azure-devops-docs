@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.custom: seodec18
-ms.date: 03/06/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,38 +23,24 @@ monikerRange: '>= tfs-2015'
 > This topic covers classic release pipelines. To understand triggers in YAML pipelines, see [pipeline triggers](../build/triggers.md).
 ::: moniker-end
 
-You can configure when releases should be created, and when those releases should be deployed to stages,
-in your DevOps CI/CD processes.
-The former is configured through [release triggers](#release-triggers),
-and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
+You can configure when releases should be created, and when those releases should be deployed to stages, in your DevOps CI/CD processes.
+The former is configured through [release triggers](#release-triggers), and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
 
 <h2 id="release-triggers">Continuous deployment triggers</h2>
 
-If you specify [certain types](artifacts.md#sources) of
-artifacts in a release pipeline, you can enable continuous deployment.
-This instructs Azure Pipelines to create
-new releases automatically when it detects new artifacts
-are available. At present this option is available only for Team Foundation Build artifacts
-and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
+If you specify [certain types of artifacts](artifacts.md#sources) in a release pipeline, you can enable continuous deployment.
+This instructs Azure Pipelines to create new releases automatically when it detects new artifacts are available. At present this option is available only for Team Foundation Build artifacts and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
 
-![Selecting a trigger for a release](media/trigger-01.png)
+> [!div class="mx-imgBorder"]
+> ![Selecting a trigger for a release](media/trigger-01.png)
 
-If you have linked multiple Team Foundation Build artifacts to a release pipeline,
-you can configure continuous deployment for each of them.
-In other words, you can choose to have a release created automatically when a new build
-of any of those artifacts is produced.
+If you have linked multiple Team Foundation Build artifacts to a release pipeline, you can configure continuous deployment for each of them.
+In other words, you can choose to have a release created automatically when a new build of any of those artifacts is produced.
 
-You add build branch filters if you want to create the release only
-when the build is produced by compiling code from certain branches
-(only applicable when the code is in a TFVC, Git, or GitHub repository)
-or when the build has certain tags. These can be both include and exclude filters.
-For example, use **features/*** to include all builds under the **features** branch.
-You can also include [custom variables](variables.md) in a filter value.
+You add build branch filters if you want to create the release only when the build is produced by compiling code from certain branches (only applicable when the code is in a TFVC, Git, or GitHub repository) or when the build has certain tags. These can be both include and exclude filters.
+For example, use **features/*** to include all builds under the **features** branch. You can also include [custom variables](variables.md) in a filter value.
 
-Alternatively, you can specify a filter to use the default branch specified
-in the build pipeline. This is useful when, for example, the default build branch
-changes in every development sprint. It means you don't need to update the trigger
-filter across all release pipelines for every change - instead you just change the
+Alternatively, you can specify a filter to use the default branch specified in the build pipeline. This is useful when, for example, the default build branch changes in every development sprint. It means you don't need to update the trigger filter across all release pipelines for every change - instead you just change the
 default branch in the build pipeline.
 
 >Note that, even though a release is automatically created, it
