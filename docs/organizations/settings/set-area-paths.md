@@ -80,14 +80,20 @@ As needed, you can do the following actions at any time:
 
 <a id="open-admin-context" /><br/><a id="admin-intro-team-services" />
 
+
+
 ## Open Project Settings, list project areas
 
-::: moniker range="azure-devops"
 
+::: moniker range="azure-devops"
 > [!NOTE]   
 > To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
 
+::: moniker-end
+
 #### [Preview page](#tab/preview-page) 
+
+::: moniker range=">= azure-devops-2020"  
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and go to your project.
 2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
@@ -95,7 +101,11 @@ As needed, you can do the following actions at any time:
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Project Configuration](media/areas/open-project-work-areas-settings-vert.png)   
 
+::: moniker-end
+
 #### [Current page](#tab/current-page)
+
+::: moniker-end
 
 1. From the web portal, open your project.
 
@@ -104,7 +114,11 @@ As needed, you can do the following actions at any time:
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Project Configuration](media/areas/open-project-work-areas-settings-vert.png)   
 
+::: moniker-end
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 [List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
 
