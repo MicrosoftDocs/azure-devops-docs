@@ -59,7 +59,7 @@ As needed, you can perform the following actions at any time:
 
 ## Backlog iteration versus default iteration 
 
-::: moniker range=">= tfs-2017"\
+::: moniker range=">= tfs-2017" 
 
 Teams can set a default iteration different from the backlog iteration. The backlog iteration determines which items appear on the team's backlogs and boards. And, the default iteration determines what value is assigned to work items created from the team context. 
 
@@ -105,18 +105,10 @@ Define both areas and iterations for a project from the **Project settings > Wor
 	> [!div class="mx-imgBorder"]  
 	> ![Project Settings>Work>Project Configuration](media/iterations/open-work-project-config-iterations-preview.png)   
 
-#### [Current page](#tab/current-page) 
+::: moniker-end
+   
 
-From the web portal, open **Project Settings**.
-
-Define both areas and iterations for a project from the **Project configuration > Iterations**. 
-
-1. From the web portal, choose **Project settings**(1), select **Project configuration**(2), and then **Iterations**(3) .   
-
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings>Work>Project Configuration](media/iterations/open-work-project-config-iterations-vert.png)   
-
-::: moniker range=" >= tfs-2017 < azure-devops"
+::: moniker range="azure-devops-2019"
 
 From the web portal, open **Project Settings**.
 
@@ -131,7 +123,7 @@ Define both areas and iterations for a project from the **Project configuration 
 
 <a id="admin-intro-tfs-2015" />
 
-::: moniker range="<= tfs-2015" 
+::: moniker range="<= tfs-2018" 
 
 From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then, choose **Iterations**.  
 
