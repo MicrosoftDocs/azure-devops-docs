@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 05/05/2020
+ms.date: 07/14/2020
 monikerRange: 'azure-devops-2019 || azure-devops'
 ---
 
@@ -553,7 +553,7 @@ steps:
 
 Within a template expression, you have access to the `parameters` context that contains the values of parameters passed in.
 Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
-the [system variables](../build/variables.md#system-variables). 
+many of the [predefined variables](../build/variables.md) (noted on each variable in that topic). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 

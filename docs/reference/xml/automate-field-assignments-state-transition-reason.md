@@ -3,6 +3,7 @@ title: Automate field assignments
 titleSuffix: TFS
 description: Transition work items from one state to another state based on an event that occurs elsewhere for Team Foundation Server 
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
 ms.author: kaelli
 ms.topic: reference

@@ -375,7 +375,7 @@ For more information, see
 
 **A**: You can view the service status at the top of the 
 [Azure DevOps support page](https://azure.microsoft.com/support/devops/) 
-and on our [service blog](https://blogs.msdn.com/b/vsoservice/). 
+and on our [service blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015). 
 You can also subscribe to alerts for service status by following 
 [this post in our support forum](https://social.msdn.microsoft.com/Forums/vstudio/74fdaf92-e293-4d71-bd63-cfcc8a9dcd60/subscribe-to-alerts-about-team-foundation-service-and-elastic-load-service-status).
 

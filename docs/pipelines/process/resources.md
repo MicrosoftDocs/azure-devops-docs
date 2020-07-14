@@ -16,7 +16,7 @@ A resource is anything used by a pipeline that lives outside the pipeline. Any o
 * CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
 * code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
-* package feeds (Azure Artifact feed, Artifactory package etc.)  
+* package feeds (GitHub packages)  
 
 ## Why resources?
 
@@ -440,6 +440,52 @@ steps:
     echo $(resources.container.mycontainer.URI)
     echo $(resources.container.mycontainer.location)
 
+```
+---
+
+## Resources: `packages`
+
+You can consume NuGet and npm GitHub packages as a resource in YAML pipelines. 
+
+When specifying `package` resources, set the package as NuGet or npm. You can also enable automated pipeline triggers when a new package version gets released. 
+
+To use GitHub packages, you will need to use PAT-based authentication and create a GitHub service connection that uses PAT. 
+
+By default, packages will not be automatically downloaded into jobs. To download, use `getPackage`. 
+
+## [Schema](#tab/schema)
+
+```yaml
+resources:
+  packages:
+    - package: myPackageAlias # alias for the package resource
+      type: Npm # type of the package NuGet/npm
+      connection: GitHubConnectionName # Github service connection with the PAT type
+      name: nugetTest/nodeapp # <Repository>/<Name of the package>
+      version: 1.0.1 # Version of the packge to consume; Optional; Defaults to latest
+      trigger: true # To enable automated triggers (true/false); Optional; Defaults to no triggers
+```
+
+## [Example](#tab/example)
+
+In this example, there is an [GitHub service connection](../library/service-endpoints.md#common-service-connection-types) named `pat-contoso` to a GitHub npm package named `contoso`. Learn more about [GitHub packages](https://github.com/features/packages). 
+
+```yaml
+resources:
+  packages:
+    - package: contoso
+      type: npm
+      connection: pat-contoso
+      name: yourname/contoso 
+      version: 7.130.88 
+      trigger: true
+
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- getPackage: contoso 
 ```
 ---
 
