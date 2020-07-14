@@ -678,7 +678,7 @@ To provide end to end traceability, user should be able to track which CD pipeli
 ![CD pipelines info in CI pipeline](media/CDInfoInCIPipelines.png)
 
 ### YAML resource trigger issues support and traceability
-It can be confusing when pipeline triggers fail to execute as you expect them to. To help better understand this, we've added a new menu item in the pipeline definition page called 'Trigger Issues' where information is surfaced regarding why triggers are not executing.
+It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing.
 
 Resource triggers can fail to execute for two reasons.
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
