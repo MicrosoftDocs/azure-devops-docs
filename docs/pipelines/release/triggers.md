@@ -40,22 +40,19 @@ In other words, you can choose to have a release created automatically when a ne
 You add build branch filters if you want to create the release only when the build is produced by compiling code from certain branches (only applicable when the code is in a TFVC, Git, or GitHub repository) or when the build has certain tags. These can be both include and exclude filters.
 For example, use **features/*** to include all builds under the **features** branch. You can also include [custom variables](variables.md) in a filter value.
 
-Alternatively, you can specify a filter to use the default branch specified in the build pipeline. This is useful when, for example, the default build branch changes in every development sprint. It means you don't need to update the trigger filter across all release pipelines for every change - instead you just change the
-default branch in the build pipeline.
+Alternatively, you can specify a filter to use the default branch specified in the build pipeline. This is useful when, for example, the default build branch changes in every development sprint. It means you don't need to update the trigger filter across all release pipelines for every change - instead you just change the default branch in the build pipeline.
 
->Note that, even though a release is automatically created, it
-might not be deployed automatically to any stages. The
-[stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+> [!NOTE]
+> Note that, even though a release is automatically created, it might not be deployed automatically to any stages. The [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
 For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
 
 <h2 id="scheduled-triggers">Scheduled release triggers</h2>
 
-If you want to create and start a release at specific times, define one or more
-scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your
-pipeline and enable scheduled release triggers. You can configure multiple schedules.
+If you want to create and start a release at specific times, define one or more scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your pipeline and enable scheduled release triggers. You can configure multiple schedules.
 
-![Defining a scheduled release trigger](media/trigger-04.png)
+> [!div class="mx-imgBorder"]
+> ![Defining a scheduled release trigger](media/trigger-04.png)
 
 See also [stage scheduled triggers](#stage-scheduled-triggers).
 
