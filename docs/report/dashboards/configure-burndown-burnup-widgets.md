@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2019' 
+monikerRange: '>= azure-devops-2019'  
 ms.date: 07/08/2019
 ---
 
