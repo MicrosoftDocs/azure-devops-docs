@@ -1,12 +1,9 @@
----
-title: Install Microsoft Release Management deployment agent
+﻿---
+title: Install Release Management deployment agent
 ms.custom: seodec18
 description: Learn how you can install deployment agent and set up machines for an environment for VS 2015 and Team Foundation Server (TFS) 2015
 ms.assetid: 0C70DBD0-A1A4-4E20-AFA2-F4EC7BF7FA2A
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: ronai
 author: RoopeshNair
 ms.date: 07/16/2018
@@ -15,9 +12,9 @@ monikerRange: '>= tfs-2013'
 
 # Install deployment agents and set an environment
 
-[!INCLUDE [previous-version-header](../../_shared/previous-version-header.md)]
+[!INCLUDE [previous-version-header](../../includes/previous-version-header.md)]
 
-![Installing Release Management on TFS](_img/install-agent-01.png)
+![Installing Release Management on TFS](media/install-agent-01.png)
 
 You can install deployment agents to each of the machines that are required to 
 deploy your app with Release Management. Or you can use Windows PowerShell,
@@ -52,9 +49,9 @@ automatically added to Release Management.
 
    _Note that this is a 90-day trial version of Release Management. For 
    information about obtaining a non-trial version, see 
-   [How to buy Release Management](http://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
+   [How to buy Release Management](https://visualstudio.microsoft.com/products/how-to-buy-release-management-vs)
    or 
-   [Release Management Licensing](http://visualstudio.microsoft.com/release-mgmt-licensing-vs).
+   [Release Management Licensing](https://visualstudio.microsoft.com/release-mgmt-licensing-vs).
    If you are an MSDN subscriber, you can download a non-trial version from the 
    [MSDN Subscriber website](https://msdn.microsoft.com/subscriptions/downloads/)._ 
  
@@ -62,7 +59,7 @@ automatically added to Release Management.
    in the file system, choose the browse button (...) next to the default 
    install location. Then choose **Install**.
    
-   ![Starting the installation of the agent](_img/install-agent-02.png)
+   ![Starting the installation of the agent](media/install-agent-02.png)
 
 4. Restart your computer, if prompted, and then choose **Launch**.
 
@@ -84,11 +81,11 @@ automatically added to Release Management.
    the agent, this must be in the form **domain\user**. Do not use the format 
    <strong>user@domain</strong>.</em>
 
-   ![Configuring the agent service account and server location](_img/install-agent-03.png)
+   ![Configuring the agent service account and server location](media/install-agent-03.png)
  
 6. Choose **Apply settings**.
 
-   ![Configuration summary page](_img/install-agent-04.png)
+   ![Configuration summary page](media/install-agent-04.png)
 
 7. After the success message appears, close the configuration summary. Repeat
    these steps as required on every computer in the environment.
@@ -103,6 +100,6 @@ automatically added to Release Management.
 * [Manage users, groups, and permissions](../add-users-and-groups.md)
 * [Manage your release](../manage-your-release.md) 
   
-[!INCLUDE [wpfver-back-to-index-shared](../../_shared/wpfver-back-to-index-shared.md)]
+[!INCLUDE [wpfver-back-to-index-shared](../../includes/wpfver-back-to-index-shared.md)]
  
-[!INCLUDE [wpfver-support-shared](../../_shared/wpfver-support-shared.md)]
+[!INCLUDE [wpfver-support-shared](../../includes/wpfver-support-shared.md)]

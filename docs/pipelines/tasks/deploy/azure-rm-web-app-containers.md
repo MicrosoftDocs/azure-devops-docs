@@ -2,10 +2,7 @@
 title: Azure Web App for Container task
 description: Deploy Web Apps, Functions, and WebJobs to Azure App Services
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 6862AFD0-6F0E-4AD7-8C5D-9AD4CC496089
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -54,6 +51,14 @@ steps:
     azureSubscription: $(azureSubscription)
     imageName: $(imageName)
 ```
+
+## Troubleshooting
+
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

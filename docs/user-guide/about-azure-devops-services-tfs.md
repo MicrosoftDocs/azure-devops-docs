@@ -7,23 +7,22 @@ description: Understand the fundamental differences between Azure DevOps Service
 ms.prod: devops  
 ms.technology: devops-new-user
 ms.assetid: 458FAFD1-98B0-4B74-B8E7-F2C73D4EED6B
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual 
 monikerRange: '>= tfs-2013' 
-ms.date: 08/23/2019 
+ms.date: 11/13/2019 
 ---
 
 # Azure DevOps Services vs. Azure DevOps Server
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Azure DevOps Services and Azure DevOps Server were formerly named Visual Studio Team Services (VSTS) and Team Foundation Server (TFS). Both offerings provide an integrated, collaborative environment that supports Git, continuous integration, and Agile tools for planning and tracking work.  
 
 Azure DevOps Services is the **cloud offering** that provides a scalable, reliable, and globally available hosted service. It's backed by a 99.9% SLA, monitored by our 24/7 operations team, and available in local data centers around the world.
 
-Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Companies usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
+Azure DevOps Server is the **on-premises offering** that's built on a SQL Server back end. Customers usually choose on-premises when they need their data to stay within their network or when they want access to SQL Server reporting services that integrate with Azure DevOps data and tools.  
 
 Although both offerings provide the same [essential services](services.md), compared with Azure DevOps Server, Azure DevOps Services offers the following added benefits:
 
@@ -103,22 +102,22 @@ Project collections serve as containers for security and administration, and phy
 
 Finally, projects are used to encapsulate the assets of individual software projects, including source code, work items, and so on.
 
-To learn more, see [Plan your Azure DevOps organization structure](/azure/devops/user-guide/plan-your-azure-devops-org-structure.md).
+Learn more: [Plan your organizational structure in Azure DevOps](plan-your-azure-devops-org-structure.md).
 
 <a name="authentication"></a>
 
 ## Authentication
 
-With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](http://www.microsoft.com/account) credentials or with
+With Azure DevOps Services, you connect over the public internet (for example, ```https://contoso.visualstudio.com```). You either authenticate with [Microsoft account](https://www.microsoft.com/account) credentials or with
 [Azure AD](/azure/active-directory/active-directory-whatis)  
 credentials, depending on your organization setup. You can also set up Azure AD to require features such as multi-factor-authentication, IP address restrictions, and so on.
 
 We recommend that you configure your organizations to use Azure AD rather than
 Microsoft accounts. This method provides a better experience in many scenarios and more options for enhanced security.
 
-Learn more: [Access Azure DevOps Services with Azure Active Directory](../organizations/accounts/access-with-azure-ad.md).
+Learn more: [About accessing Azure DevOps Services with Azure AD](../organizations/accounts/access-with-azure-ad.md).
 
-With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is transparent and you never see any kind of sign in experience.
+With Azure DevOps Server, you connect to an intranet server (for example, ```https://tfs.corp.contoso.com:8080/tfs```). You authenticate with Windows Authentication and your Active Directory (AD) domain credentials. This process is transparent and you never see any kind of sign-in experience.
 
 <a name="users-groups"></a>
 
@@ -144,7 +143,7 @@ to each user in your organization. Azure DevOps Services validates Visual Studio
 To give Basic access or higher to more users, [set up billing](../organizations/billing/set-up-billing-for-your-organization-vs.md) for your organization and [pay for more users](../organizations/billing/buy-basic-access-add-users.md).
 Otherwise, all other users get Stakeholder access.
 
-If you use Azure AD groups to give access to groups of users, access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
+Azure AD groups give access to groups of users. Access levels are automatically assigned at first sign-in. For organizations that are configured to use Microsoft accounts for signing in, you must assign access levels to each user explicitly.
 
 In Azure DevOps Server, all use is on the honor system. To set access levels for users based on their licenses, specify their
 [access levels](../organizations/security/change-access-levels.md) on the administration page. For example, assign unlicensed users Stakeholder access only.
@@ -161,15 +160,15 @@ Many entities want to know more about data protection when they consider moving 
 
 ## Process customization
 
-You customize the work-tracking experience in two different ways, depending on the supported process model:
+You can customize the work-tracking experience in two different ways, depending on the supported process model:
 
-- For Azure DevOps Services, you use the **Inheritance** process model, which supports WYSIWYG customization.
-- For Azure DevOps Server, you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects.
-- For Azure DevOps Server 2018 and earlier versions, you only have access to the **On-premises XML** process model.
+- Azure DevOps Services: you use the **Inheritance** process model, which supports WYSIWYG customization
+- Azure DevOps Server: you can choose the **Inheritance** process model or the **On-premises XML** process model, which supports customization through import or export of XML definition files for work-tracking objects
+- Azure DevOps Server 2018 and earlier versions: you only have access to the **On-premises XML** process model
 
 Although the **On-premises XML** process model option is powerful, it can cause various issues. The main issue is that processes for existing projects aren't automatically updated.
 
-For example, Azure DevOps Server 2013 introduced several new features that depended on new work-item types and other process template
+Azure DevOps Server 2013, for example, introduced several new features that depended on new work-item types and other process template
 changes. When you upgrade from 2012 to 2013, each project collection gets new versions of each of the
 "in the box" process templates that include these changes. However, these changes aren't automatically incorporated into existing projects. Instead, after you finish upgrading, you have to include the changes in each project by using the [Configure features](../reference/configure-features-after-upgrade.md)
 wizard or a more manual process.

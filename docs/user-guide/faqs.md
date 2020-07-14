@@ -4,9 +4,7 @@ titleSuffix:  Azure DevOps
 ms.custom: seodec18
 description: FAQs to support getting started using the hosted cloud offering and on-premises offering of Azure DevOps
 ms.technology: devops-new-user 
-ms.prod: devops
 ms.assetid: 50CA182B-D305-41A9-8C8F-9EA80A89ED3C
-ms.manager: jillfra
 ms.author: kaelli
 ms.date: 04/16/2019
 monikerRange: '>= tfs-2013'
@@ -14,7 +12,7 @@ monikerRange: '>= tfs-2013'
 
 # FAQs about signing up and getting started
 
-[!INCLUDE [version-vsts-tfs-all-versions](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
 
 Signing up for Azure DevOps is now easier than ever - it's a two-minute process. See the following FAQs, which contain links for getting started.
 
@@ -53,10 +51,10 @@ Signing up for Azure DevOps is now easier than ever - it's a two-minute process.
 Go to one of the following pages to download a version of Visual Studio or client tool plug-in that supports connecting to a project:
 
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 
-- [Eclipse/Team Explorer Everywhere](/../java/download-eclipse-plug-in.md)  
-- [Android Studio with the Azure DevOps Services Plugin for Android Studio](/../java/download-android-studio-plug-in.md)
-- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](/../java/download-intellij-plug-in.md)
-- [Visual Studio Code](/../java/vscode-extension.md)
+- [Eclipse/Team Explorer Everywhere](../java/download-eclipse-plug-in.md)  
+- [Android Studio with the Azure DevOps Services Plugin for Android Studio](../java/download-android-studio-plug-in.md)
+- [IntelliJ with the Azure DevOps Services Plugin for IntelliJ](../java/download-intellij-plug-in.md)
+- [Visual Studio Code](../java/vscode-extension.md)
 
 ::: moniker-end
 
@@ -128,7 +126,7 @@ You can also find several open-source clients that have been added to [Marketpla
 
 ::: moniker range="<= tfs-2015"
 
-- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provides enhancements, tools, and command-line utilities that support increased productivity.
+- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.
 
 ::: moniker-end
 

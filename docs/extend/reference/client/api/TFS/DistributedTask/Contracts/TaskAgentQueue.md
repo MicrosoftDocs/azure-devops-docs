@@ -1,10 +1,9 @@
 ---
 title: TFS/DistributedTask/Contracts TaskAgentQueue API | Extensions for Azure DevOps Services
+description: Data representation of a task agent queue.
 ms.assetid: dd622ef8-d1b2-df8a-33c1-61756ec3280f
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

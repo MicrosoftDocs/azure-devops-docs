@@ -20,15 +20,18 @@
     href: add-markdown-to-dashboard.md
 - name: Tutorials
   items:
+  - name: Create work tracking charts
+    href: charts.md
+    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line  
   - name: View/configure CFD
     href: cumulative-flow.md
     displayname: cumulative flow diagram, in-context report, team, analytics 
   - name: View/configure velocity 
     displayname: planned, completed, completed late, incomplete, team, in-context report, analytics
     href: team-velocity.md
-  - name: Monitor sprint burndown
+  - name: View/configure sprint burndown
     displayname: sprint backlog, current, past
-    href: ../../boards/sprints/sprint-burndown.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json
+    href: configure-sprint-burndown.md
   - name: Configure a Burndown or Burnup widget
     href: configure-burndown-burnup-widgets.md
     displayname: release burndown, burndown widget, burndown metrics, burnup metrics, scope, date range, main metric, % completed, average burndown, items not estimated, total scope increase, projected completion, orginal scope, total scope, calculate burndown, time period, plotting interval 
@@ -53,9 +56,6 @@
     displayname: delivery plans, calendar, portfolio backlogs, multi-teams
 - name: How-to Guides
   items:
-  - name: Create work tracking charts
-    href: charts.md
-    displayname: progress, trend, work tracking, stacked bar, pie, bar, column, pivot table, stacked area, area, line 
   - name: Add charts to a dashboard
     href: add-charts-to-dashboard.md
   - name: Enable or install Analytics  

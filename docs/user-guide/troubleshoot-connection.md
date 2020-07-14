@@ -4,9 +4,7 @@ titleSuffix: Azure DevOps
 ms.custom: seodec18
 description: Follow these steps to resolve connection issues with Azure DevOps Services & Team Foundation Server  
 ms.technology: devops-new-user
-ms.prod: devops
 ms.assetid: 
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: troubleshooting
@@ -16,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Troubleshoot connecting to a project
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 ::: moniker range="azure-devops"
 
@@ -41,7 +39,7 @@ Two types of identities can sign in: Microsoft accounts and Azure Active Directo
 > 401 - Not Authorized
 > 
 > [!div class="mx-imgBorder"]
-> ![Troubleshoot Azure DevOps connection 401 error 1](_img/troubleshoot-connection/401_notauthorized.png)
+> ![Troubleshoot Azure DevOps connection 401 error 1](media/troubleshoot-connection/401_notauthorized.png)
 
 The most common error page is the *401 Not Authorized* error, which occurs when your identity doesn't have permissions to enter an organization. Common reasons for the error include:
 
@@ -57,13 +55,13 @@ Your work or school Azure AD account doesn't have access, but your personal Micr
 > 401 - Work or school, or Personal account
 > 
 > [!div class="mx-imgBorder"]
-> ![troubleshoot Azure DevOps connection 401 error 2](_img/troubleshoot-connection/401_AAD.png)
+> ![troubleshoot Azure DevOps connection 401 error 2](media/troubleshoot-connection/401_AAD.png)
 
  A highly specific 401 error case. In this case, both a personal Microsoft account and a work or school account (Azure AD) that have the same sign-in address exist. You've signed in with your work or school account, but your personal account is the identity with access to the organization.
 
 ### Mitigation
 
-In some cases, you might not know you have two identities with the same sign in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
+In some cases, you might not know you have two identities with the same sign-in address. The work or school Azure AD account might have been created by an administrator when you were added to Office365 or Azure AD.
 
 To sign out of your current work or school Azure AD account, select **Sign in with your personal MSA account**, and then sign in by using your personal Microsoft account. After authentication, you should have access to the organization.
 
@@ -77,11 +75,11 @@ Your personal Microsoft account doesn't have access, but your Azure AD account d
 > 401 - Work or school, or Personal account
 > 
 > [!div class="mx-imgBorder"]
-> ![troubleshoot Azure DevOps connection 401 error 3](_img/troubleshoot-connection/401_MSA.png)
+> ![troubleshoot Azure DevOps connection 401 error 3](media/troubleshoot-connection/401_MSA.png)
 
 ### Mitigation
 
-If you enter your credentials correctly, but are redirected back to the original sign-in page, we recommend clearing all cookies, and then reattempting to sign in. If that doesn't fix the issue, contact customer support.
+When you get redirected back to the original sign-in page, we recommend that you clear all cookies, and then reattempt to sign in. If that doesn't fix the issue, contact [customer support](https://support.microsoft.com/).
 
 ::: moniker-end
 
@@ -109,7 +107,7 @@ For additional troubleshooting tips, see [TF31002: Unable to connect to this Tea
 
 ## Switch organizations
 
-When you use two or more organizations that are linked to Azure AD, such as organizations  created in the Azure portal, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
+When you use two or more organizations that are linked to Azure AD, the sign-out function might not work as expected. For example, you can't switch between different organizations to connect to multiple organizations that are linked to directory tenants.
 
 When this problem occurs, a blank screen flashes several times. Then, one of the following error messages appears after you connect to or add a new connection in the **Connect to Team Foundation Server** dialog box:
 
@@ -117,7 +115,7 @@ When this problem occurs, a blank screen flashes several times. Then, one of the
 > 
 > TF31002: Unable to connect to this Team Foundation Server
 
-To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](http://visualstudio.microsoft.com/downloads).
+To resolve this issue, apply Visual Studio 2013.2 or install a later version from the [Visual Studio download website](https://visualstudio.microsoft.com/downloads).
 
 Another solution is to delete your browser cookies. For more information, see the support article [You can't switch between different organizations in Visual Studio Online](https://support.microsoft.com/help/2958966/you-can-t-switch-between-different-organizational-accounts-in-visual-s).
 
@@ -127,17 +125,17 @@ Another solution is to delete your browser cookies. For more information, see th
 
 ## Connect to TFS with Secure Sockets Layer
 
-If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, you must install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
+If you connect to a TFS instance that has Secure Sockets Layer (SSL) configured, install a certificate and clear the client cache. For details, see [Set up HTTPS with Secure Sockets Layer (SSL) for TFS - Configuring client computers](/azure/devops/server/admin/setup-secure-sockets-layer#config-client-computers). 
 
 ## Clear the cache on client computers
 
-When the on-premises TFS configuration changes, such as when you move or split a project collection, you may need to clear the cache.
+When the on-premises TFS configuration changes, such as when you move or split a project collection, clear the cache.
 
 1. Sign in to your client computer for TFS by using the credentials of the user whose cache you want to clear.
 
 2. Close any open instances of Visual Studio.
 
-3. Open a browser and go to one of the following folders, depending on the operating system that's running on your computer:
+3. Open a browser and go to one of the following folders, depending on the operating system your computer runs on:
 
     - **Windows 10**
         *Drive*:\\Users\<i>UserName</i>\AppData\Local\Microsoft\Team Foundation\6.0\Cache

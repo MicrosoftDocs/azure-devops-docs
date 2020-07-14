@@ -1,10 +1,9 @@
 ---
 title: TFS/TestManagement/Contracts TestReport API | Extensions for Azure DevOps Services
+description: Data representation of a test report.
 ms.assetid: 42c3a548-aae5-71da-c940-20fe2a5b52ae
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -22,7 +21,7 @@ Module path: `TFS/TestManagement/Contracts`
 
 * `build`: [BuildReference](../../../TFS/TestManagement/Contracts/BuildReference.md). 
 
-* `teamProject`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md). 
+* `teamProject`: [TFS_Core_Contracts.TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md). 
 
 * `testFailures`: [TestFailuresAnalysis](../../../TFS/TestManagement/Contracts/TestFailuresAnalysis.md). 
 

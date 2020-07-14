@@ -1,5 +1,4 @@
 ---
-ms.prod: devops
 ms.technology: devops-ecosystem
 monikerRange: '>= tfs-2015 < azure-devops'
 title: Git Tags - Annotated | REST API Reference for VAzure DevOps Services and Team Foundation Server

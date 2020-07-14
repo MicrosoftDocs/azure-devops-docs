@@ -1,19 +1,16 @@
 ---
 title: Bake manifests
 description: Bake manifests to be used in deployments to Kubernetes clusters
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: quickstart
 ms.assetid: 33ffbd7f-746b-4338-8669-0cd6adce6ef4
-ms.manager: jillfra
-ms.author: shasb
-author: shashankbarsin
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 08/28/2019
 monikerRange: 'azure-devops'
 ---
 
 # Bake manifests
-[!INCLUDE [include](../../_shared/version-team-services.md)]
+[!INCLUDE [include](../../includes/version-team-services.md)]
 Bake action of the [Kubernetes manifest task](../../tasks/deploy/kubernetes-manifest.md) is useful for turning templates into manifests with the help of a template engine. The bake action of Kubernetes manifest task is intended to provide visibility into the transformation between the input templates and the end manifest files that are used in the deployments. [Helm 2](https://helm.sh), [kustomize](https://github.com/kubernetes-sigs/kustomize), and [kompose](https://github.com/kubernetes/kompose) are supported as templating options under the bake action.
 
 The baked manifest files are intended to be consumed downstream (subsequent task) where these manifest files are used as inputs for the deploy action of the Kubernetes manifest task.
@@ -58,7 +55,7 @@ The baked manifest files are intended to be consumed downstream (subsequent task
 steps:
 - task: KubernetesManifest@0
   name: bake
-  displayName: Bake K8s manifests from Helm chart
+  displayName: Bake K8s manifests from kustomization path
   inputs:
     action: bake
     renderType: kustomize
@@ -77,7 +74,7 @@ steps:
 steps:
 - task: KubernetesManifest@0
   name: bake
-  displayName: Bake K8s manifests from Helm chart
+  displayName: Bake K8s manifests from Docker Compose
   inputs:
     action: bake
     renderType: kompose

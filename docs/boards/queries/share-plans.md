@@ -4,9 +4,7 @@ titleSuffix: Azure Boards
 description: Email links, Copy URL, and share information about work items, queries, and more in Azure Boards or Team Foundation Server 
 ms.custom: boards-queries
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 5edac6b9-2642-419a-8745-9e91ee40993b
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
@@ -90,23 +88,23 @@ The specific set of formatting features differs depending on the client you use.
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
 
 > [!div class="mx-imgBorder"]  
-> ![Rich Text Editor toolbar](_img/share-plans/new-rich-text-editor-toolbar.png) 
+> ![Rich Text Editor toolbar](media/share-plans/new-rich-text-editor-toolbar.png) 
 
-You can use the ![ ](../../_img/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+You can use the ![ ](../../media/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
-For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../_img/icons/at-mention.png) at-mention, ![ ](../../_img/icons/work-id.png) #-work-item-id, and  ![ ](../../_img/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../media/icons/at-mention.png) at-mention, ![ ](../../media/icons/work-id.png) #-work-item-id, and  ![ ](../../media/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
-> ![Discussion section, New Rich Text Editor toolbar](_img/share-plans/discussion-rich-text-editor-toolbar.png)  
+> ![Discussion section, New Rich Text Editor toolbar](media/share-plans/discussion-rich-text-editor-toolbar.png)  
 
 **Keyboard shortcuts**  
 
-You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts for work item forms](../work-items/work-item-form-keyboard-shortcuts.md).
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+c** and **Ctrl+v** shortcuts. You can also use the keyboard shortcuts listed in [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md).
 
 > [!TIP]    
 > Enter **Shift-?** to view additional Keyboard shortcuts for the work item form. 
 > >[!div class="mx-imgBorder"]  
-> >![work item form keyboard shortcuts](_img/share-plans/shortcuts-work-item-form-s142.png)
+> >![work item form keyboard shortcuts](media/share-plans/shortcuts-work-item-form-s142.png)
 
 ::: moniker-end
 
@@ -114,14 +112,14 @@ You can copy and paste HTML text or an image from another application directly i
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
-![Rich text tool bar](_img/rich-text-ui-team-services.png)
+![Rich text tool bar](media/rich-text-ui-team-services.png)
 
 You can use the following shortcut keys to format your text:  
 - **Bold**: **Ctrl+B**  
 - *Italic*: **Ctrl+I**  
 - <u>Underscore</u>: **Ctrl+U** 
 
-You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the ![Remove format](../_img/icons/remove-formatting-icon.png) icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can also use the ![Remove format](../media/icons/remove-formatting-icon.png) icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
 ::: moniker-end
 
@@ -132,7 +130,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.  
 
-![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png)
+![Rich text tool bar - web portal](media/rich-text-ui-web-portal.png)
 
 ::: moniker-end
 
@@ -143,21 +141,21 @@ The rich text formatting toolbar appears above each text box that can be formatt
 
 From Team Explorer you can choose the font, font size, and text and background colors.
 
-![Rich text tool bar - Team Explorer](_img/rich-text-ui-te.png)  
+![Rich text tool bar - Team Explorer](media/rich-text-ui-te.png)  
 
 You can copy and paste HTML text or an image from another application directly into the text box using **Ctrl+C** and **Ctrl+V** shortcuts. You can use the following shortcut keys to format your text:  
 - **Bold**: **Ctrl+B**  
 - *Italic*: **Ctrl+I**  
 - <u>Underscore</u>: **Ctrl+U** 
 
-[!INCLUDE [temp](../../_shared/images-not-appearing-vs.md)] 
+[!INCLUDE [temp](../../includes/images-not-appearing-vs.md)] 
 
 
 #### [Team Explorer Everywhere](#tab/tee/)
 
 From Team Explorer Everywhere you can exercise only basic format operations.
 
-![Rich text tool bar - web portal](_img/rich-text-ui-web-portal.png) 
+![Rich text tool bar - web portal](media/rich-text-ui-web-portal.png) 
 
 You can use the following shortcut keys to format your text:  
 - **Bold**: **Ctrl+B**  
@@ -187,7 +185,7 @@ Again, your link options will differ depending on the client you use. For specif
 
 You and your team can centralize reference materials by attaching files to your work items. That way they are always readily accessible when you need them. For example, you can attach a screen image that illustrates a problem, a line of code in a text file, a log, an e-mail thread, or a product feature's specification.
 
-Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
+Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) or **Attachments** tab to attach a file with supplemental information. 
 
 
 <a id="attach-browser" />
@@ -196,7 +194,7 @@ Choose the ![Attachment tab icon](../backlogs/_img/icon-attachments-tab-wi.png) 
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
+Choose the ![ ](../backlogs/media/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
 
@@ -213,7 +211,7 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 You can continue viewing the attachments as a list or switch to a grid view to show a thumbnail preview. Double-click or right-click on the file to open a preview and cycle through them to quickly find the information you need. 
 
-![Attachments tab, list or grid view](_img/share-plans/142_attachments.gif) 
+![Attachments tab, list or grid view](media/share-plans/142_attachments.gif) 
 
 You can drag and drop files into the attachment area. From the browse menu, you can multi-select several files and attach within a single action. Also, you can add attachments to your pull request comments. You can also add attachments in pull request comments by drag-and-drop or by browsing. For details, see [Syntax support for Markdown files, widgets, and pull request comments, Attachments](../../project/wiki/markdown-guidance.md#attach).  
 
@@ -230,17 +228,17 @@ You can add up to 100 attachments to a work item. Attempts to add more result in
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Choose the ![ ](../backlogs/_img/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
+Choose the ![ ](../backlogs/media/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
 
-![Attachment controls, web portal](_img/share-plans-attachment-tab-vsts.png)  
+![Attachment controls, web portal](media/share-plans-attachment-tab-vsts.png)  
 
 
 
-You can edit, open, save, or delete an attachment by choosing an attachment and opening it's ![actions icon](../_img/icons/actions-icon.png) actions menu. 
+You can edit, open, save, or delete an attachment by choosing an attachment and opening it's ![actions icon](../media/icons/actions-icon.png) actions menu. 
 
-<img src="_img/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
+<img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
 
 ::: moniker-end 
 
@@ -249,9 +247,9 @@ You can edit, open, save, or delete an attachment by choosing an attachment and 
 
 Choose the **Attachments** tab icon to attach a file to the work item. 
 
-<img src="_img/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises TFS), and Eclipse" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
 
-Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../_img/icons/open-icon.png) the open icon to open the attachment or ![ ](../_img/icons/download-icon.png) download icon to save a copy.  
+Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../media/icons/open-icon.png) the open icon to open the attachment or ![ ](../media/icons/download-icon.png) download icon to save a copy.  
 
 ::: moniker-end 
 
@@ -260,23 +258,23 @@ Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attach
 <a id="attach-team-explorer" />
 
 #### [Visual Studio](#tab/visual-studio/)
-Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
+Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Or, drag and drop files into the attachment area. 
 
-<img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises TFS), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, web portal (on-premises Azure DevOps), Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
-<img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 
 #### [Team Explorer Everywhere](#tab/tee/)
-Choose the ![plus icon](../_img/icons/Action_Add.png) plus icon to add an attachment.Or, drag and drop files into the attachment area.
+Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment.Or, drag and drop files into the attachment area.
 
-<img src="_img/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
+<img src="media/share-plans-attachment-controls-tfs.png" alt="Attachment controls, Visual Studio and Eclipse" style="border: 2px solid #C3C3C3;" /> 
 
 To open the menu options to download or delete several attachments, choose one or more items and then right-click. 
 
-<img src="_img/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-attachment-tab-team-explorer.png" alt="Attachment menu options, Team Explorer" style="border: 2px solid #C3C3C3;" />
 
 * * *
 ::: moniker range="<= azure-devops-2019"
@@ -294,9 +292,9 @@ By default, the size of work item attachments is limited to 4 MB. You can use th
 Storyboarding your ideas and goals increases visual understanding. With [PowerPoint Storyboarding](../backlogs/office/storyboard-your-ideas-using-powerpoint.md) you can bring your ideas to life with storyboard shapes, text, animation, and all the other features that PowerPoint provides.  
 
 > [!NOTE]  
-> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](http://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
+> Storyboarding with PowerPoint requires [Office PowerPoint 2007 or later](https://www.microsoftstore.com/store/msstore/pd/PowerPoint-2010/productID.216564300) and the TFS Storyboarding add-in. You install the TFS Storyboarding add-in for PowerPoint by installing one of the latest editions of [Visual Studio](https://visualstudio.microsoft.com/downloads/download-visual-studio-vs) or [Team Foundation Server Standalone Office Integration](https://visualstudio.microsoft.com/downloads). 
 
-By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/_img/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
+By linking your storyboard to a work item, you provide your team access to the shared file where they can add their comments. From the ![Links tab icon](../backlogs/media/icon-links-tab-wi.png), **Links**, or a **Storyboards** tab, you can link storyboards that you created using PowerPoint Storyboarding or other application. When you make changes to a linked storyboard, the work item continues to link to the file with the latest changes.
 
 
 <a id="team-services-storyboard" />
@@ -304,11 +302,11 @@ By linking your storyboard to a work item, you provide your team access to the s
 #### [Browser](#tab/browser/)
 ::: moniker range=">= tfs-2017"
 
-You can open Storyboarding with PowerPoint from the ![actions icon](../_img/icons/actions-icon.png) actions menu within a work item form. 
+You can open Storyboarding with PowerPoint from the ![actions icon](../media/icons/actions-icon.png) actions menu within a work item form. 
 
-<img src="_img/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
+<img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
 
-To link to an existing storyboard, click the ![Links page icon](../_img/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
+To link to an existing storyboard, click the ![Links page icon](../media/icons/icon-links-tab-wi.png) Links tab and add a storyboard link.  
 
 ::: moniker-end 
 
@@ -316,7 +314,7 @@ To link to an existing storyboard, click the ![Links page icon](../_img/icons/ic
 
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
-![Storyboard links control](_img/share-plans-storyboard-tfs-web-tab.png)  
+![Storyboard links control](media/share-plans-storyboard-tfs-web-tab.png)  
 
 ::: moniker-end 
 
@@ -327,14 +325,14 @@ From the **Storyboards** tab, click **Start Storyboarding** to open Storyboardin
 
 **Storyboards tab control** 
 
-<img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 #### [Team Explorer Everywhere](#tab/tee/)
 From the **Storyboards** tab, click **Start Storyboarding** to open Storyboarding with PowerPoint. Or, you can link to an existing storyboard.
 
 **Storyboards tab control**  
 
-<img src="_img/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
+<img src="media/share-plans-storyboard-vs-tab.png" alt="Storyboards tab, Visual Studio Team Explorer and Eclipse" style="border: 2px solid #C3C3C3;" />
 
 
 * * *
@@ -385,6 +383,15 @@ To learn more, see [Share information using the project portal](../../report/sha
 
 ::: moniker-end
 
+::: moniker range=">= tfs-2017"  
+
+## Marketplace extensions  
+
+You may find additional ways to share information by exporting work items to other applications such as Microsoft Word. To learn more, review the [Marketplace extensions that support Microsoft Word](https://marketplace.visualstudio.com/search?term=word&target=AzureDevOps&category=Azure%20Boards&sortBy=Relevance). 
+
+::: moniker-end
+
+
 ## Related articles  
 
 As you can see, there are many ways to share information using work items alone. See these additional tools and features to support planning, tracking, and sharing information with your team.   
@@ -392,11 +399,4 @@ As you can see, there are many ways to share information using work items alone.
 - [Dashboards](../../report/dashboards/dashboards.md)
 - [Add and edit a wiki](../../project/wiki/add-edit-wiki.md)
 
-::: moniker range=">= tfs-2017"  
-
-### Marketplace extensions  
-
-You may find additional ways to share information and collaborate as a team by adding a [Marketplace extension](https://marketplace.visualstudio.com/?targetId=754f8691-19ce-47a2-a1e8-ebeab1e67955#VSTS). 
-
-::: moniker-end
 

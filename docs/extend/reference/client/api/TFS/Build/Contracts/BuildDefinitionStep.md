@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts BuildDefinitionStep API | Extensions for Azure DevOps Services
+description: Data representation of a build definition step.
 ms.assetid: 83081eda-4b23-35dd-c8b0-e9b4b1287951
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

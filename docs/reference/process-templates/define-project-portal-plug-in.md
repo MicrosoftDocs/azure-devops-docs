@@ -1,11 +1,9 @@
----
-title: Define the project portal plug-in for a process template 
+﻿---
+title: Define project portal plug-in for process template
 titleSuffix: TFS
 description: Define the initial document libraries, library structure, and documents of a project's SharePoint portal for Team Foundation Server 
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 3351a292-1ce5-4573-ac88-b86ad7482ac0
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
@@ -35,7 +33,7 @@ The tasks that you specify in the plug-in for SharePoint Products are run only w
 > [!IMPORTANT]  
 > When you create a project from the web portal, the WssTasks.xml 
 > plug-in file is ignored. To add SharePoint integration after you create your project, 
-> see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+> see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
 > Clients that support project creation vary depending on the TFS version. 
 > For details, see [Process template and plug-in files, Client support for project creation](overview-process-template-files.md#client-support).    
 
@@ -108,7 +106,7 @@ The following example shows how to reference the English version of the Agile pr
  However, there is a benefit to listing files in WssTasks.xml. You can bind Microsoft Project and Microsoft Excel files to a query using the queryId attribute described previously. This assists team members when they open the files because they will already be connected to the correct Team Foundation Server and query.  
   
 ### Use an alternate website  
- If you have a large collection of files that are shared amongst multiple projects, you can use an alternate Web site to host the files and link to the files from the project portal or Web pages. This strategy also increases performance when creating projects since the files do not need to be copied to the project portal. For more information, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+ If you have a large collection of files that are shared amongst multiple projects, you can use an alternate Web site to host the files and link to the files from the project portal or Web pages. This strategy also increases performance when creating projects since the files do not need to be copied to the project portal. For more information, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
   
 <a name="DocLibraries"></a> 
 ##  Create document libraries  
@@ -213,7 +211,7 @@ The following example shows how to reference the English version of the Agile pr
 ### Process guidance content and support files  
 Process guidance is content that documents the processes to be followed by team members who work on a software project. Work items, reports, and queries can all change during the lifecycle of a project, and they can be different between projects. Process guidance content provides details about a project, such as information about how to complete work item fields, examples of healthy and unhealthy reports, and descriptions of the queries. Process guidance also provides details about the process to follow on a project, such as roles to assume and activities to complete.  
   
-To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](_img/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
+To support access to process guidance from the work item forms in Team Explorer, a set of .htm files are uploaded to the Process Guidance folder within the Documents SharePoint library. These files specify URLs to the visualstudio.com content that is opened when a team member chooses the process guidance ![Open process guidance for work item](media/processguidance_wi_icon.png "ProcessGuidance_WI_Icon") icon within a work item form. These files are uploaded based on the `file` tasks defined within the portal plug-in. For example, the Agile process template defines the following `file` tasks:  
   
 > [!div class="tabbedCodeSnippets"]
 > ```XML 
@@ -238,7 +236,7 @@ To support access to process guidance from the work item forms in Team Explorer,
 >           <file source="Windows SharePoint Services\Process Guidance\Supporting Files\UserStory.htm" documentLibrary="Process Guidance" target="Supporting Files/User Story.aspx" />  
 > ```  
   
-You can customize these files to point to other resources for process guidance. You can also add files to support access to other process guidance that you have created for your team. For more information, see [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md).  
+You can customize these files to point to other resources for process guidance. You can also add files to support access to other process guidance that you have created for your team. For more information, see [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md).  
   
 <a name="Activate"></a> 
 ##  Activating dashboard features  
@@ -300,6 +298,6 @@ You use the **activateFeatures** element to cause the creation of the dashboards
 - [Scrum](../../boards/work-items/guidance/scrum-process.md)
 - [Agile](../../boards/work-items/guidance/agile-process.md)
 - [CMMI](../../boards/work-items/guidance/cmmi-process.md) 
-- [Configure or add a project portal](../../report/sharepoint-dashboards/configure-or-add-a-project-portal.md) 
+- [Configure or add a project portal](../../project/configure-or-add-a-project-portal.md) 
 
 ::: moniker-end  

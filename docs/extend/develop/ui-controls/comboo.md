@@ -2,21 +2,20 @@
 title: Use the Combo Control | Extensions for Azure DevOps Services
 description: Use the combo control to have an editable control with the drop down support like list, tree, date-time and multi-value.
 ms.assetid: 03575E92-8FA7-7DC6-5699-2E5811A332CA
-ms.prod: devops
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-ms.manager: jillfra
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 08/04/2016
+ms.date: 12/17/2019
 ---
 
 # Use the combo control
 
-This page shows different samples about the combo control. There are TypeScript and JavaScript examples. 
+This article shows samples about the combo control. There are TypeScript and JavaScript examples. 
 
-For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
+> [!TIP]
+> Check out our newest developer site, [Formula Design System](https://developer.microsoft.com/azure-devops).
 
 ## How to organize your code
 
@@ -52,8 +51,12 @@ Put the following code snippets into a `main.js` file in a `scripts` folder, so 
 
 ## Combos
 
+For more details, [see the Combo Control API reference.](../../reference/client/controls/combo.md)
+
 <a name="list"></a>
+
 ### Plain list combo
+
 This sample shows combo of type `list`. It also shows how `change` delegate is used to populate another combo. 
 If the second combo doesn't have any source, its mode is changed to text to hide the unnecessary drop icon.
 
@@ -153,11 +156,13 @@ VSS.require(["VSS/Controls", "VSS/Controls/Combos"], function(Controls, Combos) 
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic list combo gif" src="_img/list_combo.gif" /> 
+<img alt="Basic list combo gif" src="media/list_combo.gif" /> 
 </div>
 
 <a name="searchTree"></a>
+
 ### Tree combo
+
 This sample shows combo of type `tree` which displays its source hierarchically by supporting expand/collapse. It also supports search by node.
 
 <ul class="nav nav-tabs" data-tabs="tabs">
@@ -237,7 +242,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic tree combo gif" src="_img/tree_combo.gif" /> 
+<img alt="Basic tree combo gif" src="media/tree_combo.gif" /> 
 </div>
 
 <a name="date-time"></a>
@@ -301,7 +306,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic date time combo gif" src="_img/datetime_combo.gif" /> 
+<img alt="Basic date time combo gif" src="media/datetime_combo.gif" /> 
 </div>
 
 
@@ -371,5 +376,7 @@ var commandArea = $("&lt;div style='margin:10px' /&gt;").appendTo(container);
 </div>
 
 <div align="center" style="padding-top:15px">
-<img alt="Basic multivalue combo gif" src="_img/multivalue_combo.gif" /> 
+<img alt="Basic multivalue combo gif" src="media/multivalue_combo.gif" /> 
 </div>
+
+

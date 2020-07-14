@@ -4,10 +4,8 @@ titleSuffix: Azure Boards
 description: Index to all fields used in the Agile, Scrum, and CMMI processes/process templates for Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: work-items
 ms.technology: devops-agile
-ms.prod: devops
 ms.assetid: 9720b88e-474c-451b-b3fe-5253ba24a653
 ms.topic: reference  
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -16,7 +14,7 @@ ms.date: 10/03/2019
 
 # Work item field index  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -189,7 +187,7 @@ Values in parenthesis indicate the following:
 <li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Review](../../queries/query-numeric.md)">Requires Review</a> (CMMI)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Requires Test](../../queries/query-numeric.md)">Requires Test</a> (CMMI)</li>
-<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution]](../../queries/titles-ids-descriptions.md)">Resolution]</a> (Scrum)</li>
+<li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Resolution](../../queries/titles-ids-descriptions.md)">Resolution</a> (Scrum)</li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved By](../../queries/query-by-workflow-changes.md)">Resolved By</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Date](../../queries/query-by-workflow-changes.md)">Resolved Date</a></li>
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Resolved Reason](../../queries/query-by-workflow-changes.md)">Resolved Reason</a></li>
@@ -244,7 +242,7 @@ Values in parenthesis indicate the following:
 <br/>
 
 
-####Notes: 
+#### Notes: 
 
 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
@@ -293,6 +291,6 @@ The following articles describe fields that are used in common by several WITs, 
 - [Create managed queries](../../queries/example-queries.md)
 - [Define a query](../../queries/using-queries.md) 
 - [Choose a process](choose-process.md)  
-- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises TFS only)    
+- [Reportable fields reference](../../../reference/xml/reportable-fields-reference.md) (on-premises Azure DevOps only)    
 
 

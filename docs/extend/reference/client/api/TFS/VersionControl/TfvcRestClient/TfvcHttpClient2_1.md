@@ -1,17 +1,13 @@
 ---
 title: TFS/VersionControl/TfvcRestClient TfvcHttpClient2_1 API | Extensions for Azure DevOps Services
 ms.assetid: 77aa8667-9f64-465d-a0ae-378c0cd91cb6
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
 ms.date: 08/04/2016
 ---
-
-[!INCLUDE [styleoverrides](../../../_data/style-overrides.md)]
 
 # TfvcHttpClient2_1
 

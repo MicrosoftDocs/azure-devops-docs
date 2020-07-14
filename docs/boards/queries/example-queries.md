@@ -3,11 +3,9 @@ title: List work items with managed queries
 titleSuffix: Azure Boards 
 description: Track work by creating queries to list work items in Azure Boards, Azure DevOps, & Team Foundation Server 
 ms.custom: boards-queries
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: 285a014e-89bf-4e5f-bebf-11094e93d796  
 ms.topic: overview
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
@@ -17,7 +15,13 @@ ms.date: 09/26/2019
 
 # About managed queries  
 
-[!INCLUDE [temp](../_shared/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+
+List bugs, user stories, or other work items based on field criteria you specify using queries. You can then review these lists with your team, triage work, or perform bulk work item updates. 
+
+If you're just getting started, read [View, run, or email a work item query](view-run-query.md). For a quick reference to query editor tasks and sample queries, see [Query quick reference](query-index-quick-ref.md). 
+
+## Use queries
 
 A query lists a filtered set of work items. You can initiate a query using the [query editor](using-queries.md). Optionally, you can perform an ad hoc search using the [search box](search-box-queries.md). 
 
@@ -35,7 +39,7 @@ For the mechanics of constructing and saving queries, see [Use the query editor 
 
 For specific examples, choose one of the following articles listed under [Example queries](#examples).  
 
-## Getting started 
+## Get started 
 
 If you are looking for a specific work item, use the ad hoc search box. If you want to generate a list of work items to triage, update, chart, or share with others, then use a managed query. 
  
@@ -69,7 +73,9 @@ Queries you and others save under **Shared Queries** can be viewed by everyone w
 For details, see:
 - [Organize queries, add a query folder](organize-queries.md)
 - [Set query permissions](set-query-permissions.md)
-- [Favorite a query](view-run-query.md#favorite) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
+- [Favorite a query](view-run-query.md) and [Set personal or team favorites](../../project/navigation/set-favorites.md#favorite-a-shared-query)
+
+[!INCLUDE [temp](../includes/tip-wiql-extension.md)]
 
 <a id="examples"/>
 
@@ -91,7 +97,7 @@ You can list work items based on the following criteria...
 
 - [Keyword or phrase queries](titles-ids-descriptions.md#keyword)
 - [Undefined field value queries](titles-ids-descriptions.md#undefined-value)
-- [Empty or not empty HTML field queries](titles-ids-descriptions.md#empty)
+- [Empty or not empty HTML field queries](titles-ids-descriptions.md)
 - [Category based queries](titles-ids-descriptions.md#category)
 
 ### Work item count and numeric field queries 
@@ -178,12 +184,18 @@ You can list work items based on the following criteria...
 ## Related articles
 
 - [Query quick reference](query-index-quick-ref.md)
-- [Work item field index](../work-items/guidance/work-item-field.md)   
+- [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Query permissions](set-query-permissions.md)  
+- [Wiql Editor (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor)
+- [Enhanced Export (Marketplace extension)](https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export)
+  
+### Add a custom field to support your queries
 
 To add a custom field to support your query needs, see [Customize your work tracking experience](../../reference/customize-work.md). 
 
-To learn about query charts and widgets, see these topics:  
+### About query charts and widgets
+
+To learn about query charts and widgets, see these articles:  
 - [Chart a flat-list query](../../report/dashboards/charts.md)   
 - [Chart for work items widget](../../report/dashboards/widget-catalog.md#chart-wit-widget)  
 - [Query results widget](../../report/dashboards/widget-catalog.md#query-results-widget)   
@@ -197,3 +209,4 @@ By default, you query within a single project. However, using the query editor, 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
+

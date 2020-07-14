@@ -2,13 +2,8 @@
 title: NuGet restore, pack, and publish task
 ms.custom: seodec18
 description: Learn all about how you can make use of NuGet packages when you are building code in Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: conceptual
 ms.assetid: 7e2793cd-7ce1-4268-9f51-ecb41842f13e
-ms.manager: jillfra
-ms.author: phwilson
-author: chasewilson
 ms.date: 09/10/2019
 monikerRange: '>= tfs-2018'
 ---
@@ -17,30 +12,33 @@ monikerRange: '>= tfs-2018'
 
 **Version 2.**
 
-[!INCLUDE [version-tfs-2018](../../_shared/version-tfs-2018.md)]
+[!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
-Use this task in a build or release pipeline to install and update NuGet package dependencies, or package and publish NuGet packages.
+Use this task to install and update NuGet package dependencies, or package and publish NuGet packages. Uses NuGet.exe and works with .NET Framework apps. For .NET Core and .NET Standard apps, use the .NET Core task.
+
+> [!NOTE]
+> Moving forward, the [NuGet Authenticate](nuget-authenticate.md) task is the recommended way to use authenticated feeds within a pipeline. 
 
 ::: moniker range="<= tfs-2018"
 
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 
 ::: moniker-end
 
 If your code depends on NuGet packages, make sure to add this step before your [Visual Studio Build step](../build/visual-studio-build.md). Also make sure to clear the deprecated **Restore NuGet Packages** checkbox in that step.
 
+
 > [!TIP]
 > Looking for help to get started? See the how-tos for [restoring](../../../artifacts/nuget/consume.md) and [publishing](../../../artifacts/nuget/publish.md) packages.
 > This version of the NuGet task uses NuGet 4.1.0 by default. To select a different version of NuGet, use the [Tool Installer](../tool/nuget.md).
 
-> [!NOTE]
-> Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
+Using or creating .NET Core or .NET Standard packages? Use the [.NET Core](../build/dotnet-core-cli.md) task, which has full support for all package scenarios currently supported by dotnet, including restore, pack, and nuget push.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/NuGetCommandV2.md)]
+[!INCLUDE [temp](../includes/yaml/NuGetCommandV2.md)]
 
 ::: moniker-end
 
@@ -63,17 +61,16 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `publishVstsFeed`<br/>Target feed | Select a feed hosted in this account. You must have Azure Artifacts installed and licensed to select a feed here. |
 | `publishPackageMetadata`<br/>Publish pipeline metadata | If you continually publish a set of packages and only change the version number of the subset of packages that changed, use this option. |
 | `allowPackageConflicts` | It allows the task to report success even if some of your packages are rejected with 409 Conflict errors.<br/>This option is currently only available on Azure Pipelines and using Windows agents. If NuGet.exe encounters a conflict, the task will fail. This option will not work and publish will fail if you are within a proxy environment. |
-| `publishFeedCredentials`<br/>Verbosity | Specifies the amount of detail displayed in the output. |
-| `verbosityRestore`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
+| `publishFeedCredentials`<br/>NuGet server | The NuGet service connection that contains the external NuGet server’s credentials. |
 | `verbosityPush`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
-| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack" | Pattern to search for csproj directories to pack.\n\nYou can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
+| `packagesToPack`<br/>Path to csproj or nuspec file(s) to pack | Pattern to search for csproj directories to pack.<br />You can separate multiple patterns with a semicolon, and you can make a pattern negative by prefixing it with '!'. Example: `**\\*.csproj;!**\\*.Tests.csproj` |
 | `configuration`<br/>Configuration to package | When using a csproj file this specifies the configuration to package. |
 | `packDestination`<br/>Package folder | Folder where packages will be created. If empty, packages will be created at the source root. |
-| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](http://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.\n\nIf you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.\n\nIf you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
+| `versioningScheme`<br/>Automatic package versioning | Cannot be used with include referenced projects. If you choose 'Use the date and time', this will generate a [SemVer](https://semver.org/spec/v1.0.0.html)-compliant version formatted as `X.Y.Z-ci-datetime` where you choose X, Y, and Z.<br />If you choose 'Use an environment variable', you must select an environment variable and ensure it contains the version number you want to use.<br />If you choose 'Use the build number', this will use the build number to version your package. **Note:** Under Options set the build number format to be '[$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)](https://go.microsoft.com/fwlink/?LinkID=627416)'.<br/>Options: `off`, `byPrereleaseNumber`, `byEnvVar`, `byBuildNumber` |
 | `includeReferencedProjects`<br/>Environment variable | Enter the variable name without $, $env, or %. |
-| `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
-| `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
-| `patchVersion`<br/>Patch | The 'Z' in version [X.Y.Z](http://semver.org/spec/v1.0.0.html) |
+| `majorVersion`<br/>Major | The 'X' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
+| `minorVersion`<br/>Minor | The 'Y' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
+| `patchVersion`<br/>Patch | The 'Z' in version [X.Y.Z](https://semver.org/spec/v1.0.0.html) |
 | `packTimezone`<br/>Time zone | Specifies the desired time zone used to produce the version of the package. Selecting UTC is recommended if you're using hosted build agents as their date and time might differ.<br/>Options: `utc`, `local` |
 | `includeSymbols`<br/>Create symbols package | Specifies that the package contains sources and symbols. When used with a .nuspec file, this creates a regular NuGet package file and the corresponding symbols package. |
 | `toolPackage`<br/>Tool Package | Determines if the output files of the project should be in the tool folder. |
@@ -81,7 +78,7 @@ If your code depends on NuGet packages, make sure to add this step before your [
 | `basePath`<br/>Base path | The base path of the files defined in the nuspec file. |
 | `verbosityPack`<br/>Verbosity | Specifies the amount of detail displayed in the output.<br/>Options: `Quiet`, `Normal`, `Detailed` |
 | `arguments`<br/>Command and arguments | The command and arguments which will be passed to NuGet.exe for execution. If NuGet 3.5 or later is used, authenticated commands like list, restore, and publish against any feed in this organization/collection that the Project Collection Build Service has access to will be automatically authenticated. |
-| [!INCLUDE [control-options-arguments-md](../_shared/control-options-arguments-md.md)] | |
+| [!INCLUDE [control-options-arguments-md](../includes/control-options-arguments-md.md)] | |
 
 ::: moniker range="> tfs-2018"
 
@@ -102,12 +99,33 @@ For **byBuildNumber**, the version will be set to the build number, ensure that 
 Restore all solutions. Packages are restored into a packages folder alongside solutions using currently selected feeds.
 
 ```YAML
-# Restore project
+# Restore from a project scoped feed in the same organization
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
-    feedsToUse: Select
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
     restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from an organization scoped feed in the same organization
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-organization-scoped-feed'
+    restoreSolution: '**/*.sln'
+```
+
+```YAML
+# Restore from feed(s) set in nuget.config
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'config'
+    nugetConfigPath: 'nuget.config'
 ```
 
 ### Package
@@ -140,7 +158,7 @@ Push/Publish a package to a feed defined in your NuGet.config.
     nugetConfigPath: '$(Build.WorkingDirectory)/NuGet.config'
 ```
 
-Push/Publish a package to a feed you define in the task
+Push/Publish a package to a feed in the same organization you define in the task
 
 ```YAML
 # Push a project
@@ -148,7 +166,8 @@ Push/Publish a package to a feed you define in the task
   inputs:
     command: 'push'
     feedsToUse: 'select'
-    vstsFeed: 'myTestFeed'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    publishVstsFeed: 'myTestFeed'
 ```
 
 Push/Publish a package to NuGet.org
@@ -164,21 +183,21 @@ Push/Publish a package to NuGet.org
 
 ## Open source
 
-These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
+These tasks are open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome. 
 
-## Q & A
+## FAQ
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../_shared/nuget-step-qa.md)]
+[!INCLUDE [temp](../includes/nuget-step-qa.md)]
 
-[!INCLUDE [temp](../../_shared/qa-definition-common-all-platforms.md)]
+[!INCLUDE [temp](../../includes/qa-definition-common-all-platforms.md)]
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

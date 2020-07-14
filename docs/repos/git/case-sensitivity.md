@@ -3,10 +3,8 @@ title: Case sensitivity
 titleSuffix: Azure Repos
 description: How Git interacts with case-insensitive filesystems
 ms.assetid: 7e02f9e9-ebb1-4d7a-aeb2-37445a6cf8c7
-ms.prod: devops
 ms.technology: devops-code-git
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
@@ -21,7 +19,7 @@ The Windows and macOS file systems are case-insensitive (but case-preserving) by
 Most Linux filesystems are case-sensitive.
 Git was built originally to be the Linux kernel's version control system, so unsurprisingly, it's case-sensitive.
 
-While many of the issues with a case-insensitive OS have been addressed in [Git for Windows](http://gitforwindows.org/), a few quirks remain.
+While many of the issues with a case-insensitive OS have been addressed in [Git for Windows](https://gitforwindows.org/), a few quirks remain.
 
 ## File and folder names
 

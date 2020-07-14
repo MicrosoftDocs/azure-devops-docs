@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts DefinitionTriggerType API | Extensions for Azure DevOps Services
+description: Data representation of a definition trigger type.
 ms.assetid: d20502f9-69e8-79bc-61c3-41d4d896bd30
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

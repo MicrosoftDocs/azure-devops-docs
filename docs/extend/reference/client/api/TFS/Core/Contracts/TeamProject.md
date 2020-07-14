@@ -2,10 +2,8 @@
 title: TFS/Core/Contracts TeamProject API | Extensions for Azure DevOps Services
 description: Represents a Project object.
 ms.assetid: 148745ef-ce48-34c7-69eb-5dc2720a15ee
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -16,7 +14,7 @@ ms.date: 08/04/2016
 
 Module path: `TFS/Core/Contracts`
 
-Extends: [TeamProjectReference](../../../TFS/Core/Contracts/TeamProjectReference.md)
+Extends: [TeamProjectReference](../../../TFS/DistributedTask/Contracts/TeamProjectReference.md)
 
 ### Members
 

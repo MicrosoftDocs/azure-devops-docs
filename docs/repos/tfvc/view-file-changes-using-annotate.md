@@ -3,10 +3,8 @@ title: View file changes using annotate
 titleSuffix: Azure Repos
 description: View file changes using annotate
 ms.assetid: 34e29de4-0972-4e32-9d3d-26dc09f00713
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016

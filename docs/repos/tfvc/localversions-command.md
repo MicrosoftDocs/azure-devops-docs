@@ -3,10 +3,8 @@ title: LocalVersions Command
 titleSuffix: Azure Repos
 description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
-ms.prod: devops
 ms.technology: devops-code-tfvc
-ms.manager: jillfra
-ms.author: sdanie
+ms.author: apawast
 author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
@@ -23,9 +21,11 @@ Displays the version of one or more items in a workspace.
 **Required Permissions**  
 To use the **localversions** command, you must have the **Use** permission to the workspace. For more information, see [Permissions and groups reference](../../organizations/security/permissions.md).
 
-    tf localversions ItemSpec
-    [/recursive] [/format:brief|detailed]
-    [/workspace:WorkspaceName[;WorkspaceOwner]] [/collection:TeamProjectCollectionUrl]
+```
+tf localversions ItemSpec
+[/recursive] [/format:brief|detailed]
+[/workspace:WorkspaceName[;WorkspaceOwner]] [/collection:TeamProjectCollectionUrl]
+```
 
 ## Parameters
 <table>
@@ -61,7 +61,7 @@ You can specify more than one <i>Itemspec</i> argument.
 </tr>
 <tr>
 <td><p><i>TeamProjectCollectionUrl</i></p></td>
-<td><p>The URL of the project collection that contains one or more items for which you want to display the version (for example, <a href="http://myserver:8080/tfs/DefaultCollection" data-raw-source="http://myserver:8080/tfs/DefaultCollection">http://myserver:8080/tfs/DefaultCollection</a>).</p></td>
+<td><p>The URL of the project collection that contains one or more items for which you want to display the version (for example, http://myserver:8080/tfs/DefaultCollection).</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,11 +112,15 @@ For more information about how to find and use the **tf** command-line utility, 
 ## Examples
 The following example displays the version of the `ControllerBase.cs` file in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\controller` folder.
 
-    c:\workspaces\FeatureA\catalog\controller>tf localversions ControllerBase.cs
+```
+c:\workspaces\FeatureA\catalog\controller>tf localversions ControllerBase.cs
+```
 
 The following example displays the versions of all files (including those in subfolders) in the workspace that is mapped to the `c:\\workspaces\\FeatureA\\catalog\\` folder. Because the **/format:detailed** option is specified, each file appears with its full path.
 
-    c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
+```
+c:\workspaces\FeatureA\catalog\>tf localversions . /recursive /format:detailed
+```
 
 ## See Also
 

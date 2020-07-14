@@ -2,19 +2,17 @@
 title: Visual Studio Marketplace overview | Azure DevOps
 description: Overview of Visual Studio, Visual Studio Code, and Azure DevOps extensions offered through the Visual Studio Marketplace
 ms.topic: conceptual
-ms.prod: devops
 ms.technology: devops-marketplace
 ms.assetid: 50c06553-9fba-40da-8c04-357497cc1db7
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2019
+ms.date: 11/26/2019
 monikerRange: '>= tfs-2015'
 ---
 
 #  Marketplace extensions for Azure DevOps
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/_shared/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
 
 Extensions are simple add-ons that can be used to customize and extend your experience with Azure DevOps. The [Marketplace](https://marketplace.visualstudio.com/azuredevops) is home to hundreds of extensions that can be installed to help with the following tasks:
 
@@ -28,7 +26,7 @@ In the Azure DevOps Marketplace you can do the following tasks:
 - Discover and install extensions for Azure DevOps, Visual Studio, and Visual Studio Code
 - Purchase Visual Studio subscriptions
 
-![Extensions Marketplace](../organizations/billing/_img/_shared/extensions-marketplace.png)
+![Extensions Marketplace](../organizations/billing/media/shared/extensions-marketplace.png)
 
 Most extensions are available for free. 
 For information on purchasing, see the following articles:
@@ -38,6 +36,8 @@ For information on purchasing, see the following articles:
 
 ## Add an extension
 
+#### [Browser](#tab/browser)
+
 You can quickly add extensions to your organization with the following steps:
 
 1. Search and find extensions for your organization in the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
@@ -45,13 +45,54 @@ You can quickly add extensions to your organization with the following steps:
 
 To upload, install, or assign extensions you need [Project Collection Administrator or organization Owner permissions](./faq-extensions.md#find-owner).
 
+#### [Azure DevOps CLI](#tab/azure-devops-cli/)
+
+::: moniker range="= azure-devops"
+
+Add an extension to your organization by first searching for and then installing the extension from the [Marketplace > Azure DevOps](https://marketplace.visualstudio.com/azuredevops).
+
+[Search for extension](#search-extension) | [Install extension](install-extension.md#install-extension) 
+
+<a id="search-extension" /> 
+
+### Search for an extension
+
+You can search for extensions from the marketplace with the [az devops extension search](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-search) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
+
+```CLI
+az devops extension search --search-query
+```
+
+#### Parameters
+
+- **search-query**: Specify a term to search in the marketplace.
+
+#### Example
+
+The following command searches the marketplace for the term **Timetracker** and returns the *Publisher ID* and *Extension ID* in table format.  
+
+```CLI 
+az devops extension search --search-query Timetracker --output table
+
+Publisher Id    Extension Id    Name
+--------------  --------------  -----------
+7pace           Timetracker     Timetracker
+7pacelabs       kitten          Kitten
+```
+
+::: moniker-end
+
+[!INCLUDE [temp](../includes/note-cli-not-supported.md)]
+
+* * *
+
 ## Get or build extensions
 
 | Product | Articles |
 |-----------------------------|--------------------------------------------------------------------------------------------------|
 | Azure DevOps | [Get extensions for Azure DevOps](install-extension.md) <br/> [Develop extensions for Azure DevOps](https://aka.ms/vsoextensions) |
 | Visual Studio | [Get extensions for Visual Studio](https://marketplace.visualstudio.com/vs) <br/> [Develop extensions for Visual Studio](https://aka.ms/extendvs) |
-| Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](http://go.microsoft.com/fwlink/?LinkID=703825) |
+| Visual Studio Code | [Get extensions for Visual Studio Code](https://marketplace.visualstudio.com/vscode) <br/> [Develop extensions for Visual Studio Code](https://go.microsoft.com/fwlink/?LinkID=703825) |
 
 
 ## Related articles

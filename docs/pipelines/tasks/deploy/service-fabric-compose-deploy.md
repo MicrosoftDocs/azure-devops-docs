@@ -2,10 +2,7 @@
 title: Service Fabric Compose Deploy task
 description: Service Fabric Compose Deploy Deployment task
 ms.assetid: 891A8845-6EC1-4A70-B187-BBF9416AB41F
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -17,25 +14,25 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy a Docker-compose application to a Service Fabric cluster.
+Use this task to deploy a Docker-compose application to a Service Fabric cluster.
 This task deploys an Azure Service Fabric application to a cluster according to the settings defined in the compose file.
 
 ## Prerequisites
 
 NOTE: This task is currently in preview and requires a preview version of Service Fabric that supports compose deploy.
-See [/azure/service-fabric/service-fabric-docker-compose](/azure/service-fabric/service-fabric-docker-compose).
+See [Docker Compose deployment support in Azure Service Fabric](/azure/service-fabric/service-fabric-docker-compose).
 
 ### Service Fabric
 
 * This task uses a Service Fabric installation to connect and deploy to a Service Fabric cluster.  
 
-* [Azure Service Fabric Core SDK](http://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
+* Download and install [Azure Service Fabric Core SDK](https://www.microsoft.com/web/handlers/webpi.ashx?command=getinstallerredirect&appid=MicrosoftAzure-ServiceFabric-CoreSDK) on the build agent.
 
 ::: moniker range="> tfs-2018"
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricComposeDeployV0.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricComposeDeployV0.md)]
 
 ::: moniker-end
 
@@ -58,9 +55,9 @@ Also see: [Service Fabric PowerShell Utility](../utility/service-fabric-powershe
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [qa-agents](../../_shared/qa-agents.md)]
+[!INCLUDE [qa-agents](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

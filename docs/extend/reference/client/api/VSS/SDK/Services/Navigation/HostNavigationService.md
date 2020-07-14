@@ -2,10 +2,8 @@
 title: VSS/SDK/Services/Navigation HostNavigationService API | Extensions for Azure DevOps Services
 description: Service which allows interaction with the browser location and navigation of the host frame
 ms.assetid: 2eb91c1e-0665-771c-e764-8a1982fdf35e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: article
@@ -18,7 +16,7 @@ ms.date: 08/04/2016
 Service which allows interaction with the browser location and navigation of the host frame
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/HostNavigationService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/HostNavigationService.md)]
 
 ## Methods
 

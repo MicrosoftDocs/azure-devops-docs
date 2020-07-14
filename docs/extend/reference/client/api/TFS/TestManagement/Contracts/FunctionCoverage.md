@@ -1,10 +1,9 @@
 ---
 title: TFS/TestManagement/Contracts FunctionCoverage API | Extensions for Azure DevOps Services
+description: Data representation of a function coverage.
 ms.assetid: 49fd64d7-eb18-d835-e0a1-0049994be27f
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

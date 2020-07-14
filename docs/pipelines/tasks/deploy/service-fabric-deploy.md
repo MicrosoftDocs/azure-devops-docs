@@ -2,10 +2,7 @@
 title: Service Fabric Application Deployment task 
 description: Service Fabric Application Deployment task
 ms.assetid: 82493BC9-241C-491F-9B42-075FD0E33b52
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: reference
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: ronai
 author: RoopeshNair
@@ -15,14 +12,14 @@ monikerRange: '>= tfs-2017'
 
 # Service Fabric Application Deployment task
 
-[!INCLUDE [temp](../../_shared/version-tfs-2017-rtm.md)]
+[!INCLUDE [temp](../../includes/version-tfs-2017-rtm.md)]
 
-Use this task in a build or release pipeline to deploy a Service Fabric application to a cluster.
+Use this task to deploy a Service Fabric application to a cluster.
 This task deploys an Azure Service Fabric application to a cluster 
 according to the settings defined in the publish profile.
 
 ::: moniker range="<= tfs-2018"
-[!INCLUDE [temp](../../_shared/concept-rename-note.md)]
+[!INCLUDE [temp](../../includes/concept-rename-note.md)]
 ::: moniker-end
 
 ## Prerequisites
@@ -35,16 +32,16 @@ deploy to a Service Fabric cluster.
 
 ::: moniker range=">= azure-devops-2019"
 ## YAML snippet
-[!INCLUDE [temp](../_shared/yaml/ServiceFabricDeployV1.md)]
+[!INCLUDE [temp](../includes/yaml/ServiceFabricDeployV1.md)]
 
 ## Task Inputs
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>applicationPackagePath</code><br/>Application Package</td><td>(Required) Path to the application package that is to be deployed. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) and wildcards can be used in the path</td></tr>
 <tr><td><code>serviceConnectionName</code><br/>Cluster Service Connection</td><td>(Required) Select an Azure Service Fabric service connection to be used to connect to the cluster. The settings defined in this referenced service connection will override those defined in the publish profile. Choose 'Manage' to register a new service connection. <br/>To connect to the cluster, the service fabric task uses the machine cert store to store the information about the certificate. Using the same certificate, if two releases run together on one machine they will start properly. However, if one of the tasks is complete, the certificate from the machine cert store would be cleaned up, which would affect the second release</td></tr>
-<tr><td><code>publishProfilePath</code><br/>Publish Profile</td><td>(Optional) Path to the publish profile file that defines the settings to use. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) and wildcards can be used in the path. Publish profiles can be created in Visual Studio as shown <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster#publish-the-application-to-the-cluster">here</a></td></tr>
-<tr><td><code>applicationParameterPath</code><br/>Application Parameters</td><td>(Optional) Path to the application parameters file. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) and wildcards can be used in the path. If specified, this will override the value in the publish profile. Application parameters file can be created in Visual Studio as shown <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-manage-multiple-environment-app-configuration#specifying-parameters-during-application-creation">here</a></td></tr>
-<tr><td><code>overrideApplicationParameter</code><br/>Override Application Parameters</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the 'Parameter Name' entries in the application manifest file. Application parameters file can be created in Visual Studio as shown <a href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-manage-multiple-environment-app-configuration#specifying-parameters-during-application-creation">here</a><br/>Example: If your application has a parameter defined as below- <br/>
+<tr><td><code>publishProfilePath</code><br/>Publish Profile</td><td>(Optional) Path to the publish profile file that defines the settings to use. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) and wildcards can be used in the path. Publish profiles can be created in Visual Studio as shown <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster#publish-the-application-to-the-cluster">here</a></td></tr>
+<tr><td><code>applicationParameterPath</code><br/>Application Parameters</td><td>(Optional) Path to the application parameters file. [Variables](https://go.microsoft.com/fwlink/?LinkID=550988) and wildcards can be used in the path. If specified, this will override the value in the publish profile. Application parameters file can be created in Visual Studio as shown <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-manage-multiple-environment-app-configuration#specifying-parameters-during-application-creation">here</a></td></tr>
+<tr><td><code>overrideApplicationParameter</code><br/>Override Application Parameters</td><td>(Optional) Variables defined in the build or release pipeline will be matched against the 'Parameter Name' entries in the application manifest file. Application parameters file can be created in Visual Studio as shown <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-manage-multiple-environment-app-configuration#specifying-parameters-during-application-creation">here</a><br/>Example: If your application has a parameter defined as below- <br/>
 
 ```xml
 <Parameters>

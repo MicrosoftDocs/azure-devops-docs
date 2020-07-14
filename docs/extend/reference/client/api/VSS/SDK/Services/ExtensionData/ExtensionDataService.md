@@ -2,10 +2,8 @@
 title: VSS/SDK/Services/ExtensionData ExtensionDataService API | Extensions for Azure DevOps Services
 description: Provides a wrapper around the REST client for getting and saving extension setting values
 ms.assetid: 40a987e0-ade7-1b69-b246-fe2a259e59bc
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: article
@@ -19,7 +17,7 @@ ms.date: 08/04/2016
 Provides a wrapper around the REST client for getting and saving extension setting values
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/ExtensionDataService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/ExtensionDataService.md)]
 
 ## Methods
 
@@ -50,7 +48,7 @@ Factory method for creating/getting an instance of the extension settings servic
 * `publisherName`: string. 
 * `extensionName`: string. 
 * `registrationId`: string. 
-* `webContext`: [Contracts_Platform.WebContext](../../../../VSS/Common/Contracts/Platform/WebContext.md). Optional. 
+* `webContext`: [Contracts_Platform.WebContext](../../../References/SDK_Interfaces/WebContext.md). Optional. 
 
 #### Returns
 

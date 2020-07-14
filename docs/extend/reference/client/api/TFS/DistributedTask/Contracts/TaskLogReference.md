@@ -1,10 +1,9 @@
 ---
 title: TFS/DistributedTask/Contracts TaskLogReference API | Extensions for Azure DevOps Services
+description: Data representation of a task log reference.
 ms.assetid: 0b4c7761-25e7-8ed0-d761-aa925b5f278e
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

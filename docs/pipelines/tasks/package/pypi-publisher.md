@@ -1,23 +1,21 @@
 ---
 title: PyPI Publisher task (Deprecated)
-ms.custom: seodec18
+ms.custom: seodec18, tracking-python
 description: How to upload a package to PyPI when building code in Azure Pipelines and TFS
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: ADFFA0DA-D282-4D83-ADC0-43B4EB7ECB52
 ms.manager: madhurig
-ms.author: brcrista
-author: brcrista
+ms.author: macoope
+author: vtbassmatt
 ms.reviewer: dastahel
 ms.date: 5/7/2018
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Package: PyPI Publisher task (deprecated)
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
+Use this task to create and upload an sdist or wheel to a PyPI-compatible index using Twine.
 
 This task builds an sdist package by running `python setup.py sdist` using the Python instance in `PATH`.
 It can optionally build a universal wheel in addition to the sdist.
@@ -47,7 +45,7 @@ A generic service connection for a PyPI index.
 
 ## YAML snippet
 
-[!INCLUDE [temp](../_shared/yaml/PyPIPublisherV0.md)]
+[!INCLUDE [temp](../includes/yaml/PyPIPublisherV0.md)]
 
 ::: moniker-end
 
@@ -63,9 +61,9 @@ A generic service connection for a PyPI index.
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 <!-- ENDSECTION -->

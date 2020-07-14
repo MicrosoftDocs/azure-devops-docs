@@ -1,10 +1,9 @@
 ---
 title: TFS/DistributedTask/Contracts AgentRefreshMessage API | Extensions for Azure DevOps Services
 ms.assetid: 2daaa29d-3538-df8f-6d05-f03a3a5fb9fa
-ms.prod: devops
+description: Data representation of an agent refresh message.
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

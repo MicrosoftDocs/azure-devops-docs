@@ -2,10 +2,8 @@
 title: VSS/SDK/Services/Dialogs HostDialogService API | Extensions for Azure DevOps Services
 description: Class which manages showing dialogs in the parent frame
 ms.assetid: 1b396411-a908-5fee-8a4f-6bae357e54c4
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 ms.author: chcomley
 author: chcomley
 ms.topic: article
@@ -18,7 +16,7 @@ ms.date: 08/04/2016
 Class which manages showing dialogs in the parent frame
 
 ## Example
-[!INCLUDE [x](../../../../../samples/client-services/HostDialogService.md)]
+[!INCLUDE [x](../../../../../../../../includes/extend/reference/samples/client-services/HostDialogService.md)]
 
 ## Methods
 

@@ -2,10 +2,8 @@
 title: Update a project manually to support test management 
 titleSuffix: TFS
 description: Update a project manually to support test management.
-ms.prod: devops
 ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
-ms.manager: jillfra
 ms.author: kaelli
 author: KathrynEE
 ms.date: 12/15/2017
@@ -17,7 +15,7 @@ ms.date: 12/15/2017
 **TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
 
 > [!IMPORTANT]  
->This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS)and was created using a process template that doesn't have test plans and test suites work item types.    
+> This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS) and was created using a process template that doesn't have test plans and test suites work item types.    
 
 When you upgrade your existing on-premises deployment to Team Foundation Server (TFS) 2013.3, you have the ability to customize test plans and test suites because these objects are now remodeled as work item types (WITs).  
   
@@ -29,7 +27,7 @@ When you upgrade your existing on-premises deployment to Team Foundation Server 
   
    Data migration depends on a successful import of WIT definitions and updates. If the first activity fails, the second one will not occur. In the event that either activity is unsuccessful, the wizard logs one or more warnings or errors.  
   
-   ![TFS Upgrade Wizard showing Test Management error](_img/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
+   ![TFS Upgrade Wizard showing Test Management error](media/alm_upg_errortestmanagement.png "ALM_UPG_ErrorTestManagement")  
   
    When this occurs, you'll need to manually update your project. You won't be able to access existing test plans and test suites until you perform the manual updates.  
   
@@ -45,7 +43,7 @@ The following steps provide support for the test experience available with TFS 2
   
    1. [Download the latest process template](../../boards/work-items/guidance/manage-process-templates.md).  
   
-   [!INCLUDE [temp](../../_shared/witadmin-run-tool-example.md)] 
+   [!INCLUDE [temp](../../includes/witadmin-run-tool-example.md)] 
   
    1. Import the test plan and test suite WIT definitions.  Specify the *DirectoryPath* to the WorkItem Tracking/TypeDefinitions folder that contains the process template that you downloaded.  
   
@@ -54,7 +52,7 @@ The following steps provide support for the test experience available with TFS 2
       witadmin importwitd /collection:"CollectionURL" /p:"ProjectName" /f:"DirectoryPath\TestSuite.xml"  
       ```  
   
-       An example of *CollectionURL* is http://MyServer:8080/tfs/DefaultCollection.  
+       An example of *CollectionURL* is `http://MyServer:8080/tfs/DefaultCollection`.  
   
        The *DirectoryPath* must follow this structure: *Drive:TemplateFolder*WorkItem TrackingTypeDefinitions. For example:  
   

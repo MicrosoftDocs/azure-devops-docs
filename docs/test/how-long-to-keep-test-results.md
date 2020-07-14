@@ -2,10 +2,8 @@
 title: Manage how long to keep test results
 description: Manage how long Azure DevOps keeps your manual test results by clearing test results that you do not need anymore or when you delete your builds
 ms.assetid: 7a9e6fbe-bdd0-4cb5-8e57-f4d8d2126218
-ms.prod: devops
 ms.technology: devops-test
 ms.topic: conceptual
-ms.manager: jillfra
 ms.author: sdanie
 author: steved0x
 ms.date: 12/07/2018
@@ -14,7 +12,7 @@ monikerRange: '> tfs-2018'
 
 # Control how long to keep test results
 
-[!INCLUDE [version-header](_shared/version-header.md)]
+[!INCLUDE [version-header](includes/version-header.md)]
 
 Running tests, especially automated ones, generates lots of data. 
 To keep your test system responsive and performing well,
@@ -23,7 +21,7 @@ Delete automated test results when you delete your builds.
 You can keep manual test results while you're still reviewing them, 
 for example, up to a year. 
 
-[!INCLUDE [feature-availability](_shared/feature-availability.md)] 
+[!INCLUDE [feature-availability](includes/feature-availability.md)] 
 
 <a name="manual-test-results-limits"></a> 
 ## Manual test results 
@@ -40,7 +38,7 @@ your test results before you can analyze the data.
   
 1. In the **Test | Retention** page, select a limit for how long you want to keep manual test data. 
 
-   ![Select test data retention limits](_img/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
+   ![Select test data retention limits](media/how-long-to-keep-test-results/team-project-test-data-retention-limits.png)
 
 ## Automated test results 
 
@@ -55,11 +53,11 @@ you can specify how long to keep automated test results based on the branch.
 
 1. Go to your project. Find and edit your build pipeline.
 
-   ![Build pipeline](_img/how-long-to-keep-test-results/edit-build-def.png)
+   ![Build pipeline](media/how-long-to-keep-test-results/edit-build-def.png)
 
 1. Open the **Retention** page. Modify the default policies as required, or add new policies.
 
-   ![Delete test results by branch](_img/how-long-to-keep-test-results/vso-git-keep-test-data-builds.png)
+   ![Delete test results by branch](media/how-long-to-keep-test-results/vso-git-keep-test-data-builds.png)
 
    If you use Git, and have more than one branch, 
    set the branch filter to delete test results and builds
@@ -77,4 +75,4 @@ set the retention limits at the project level as shown [here](#manual-test-resul
 
 *  [FAQs for manual testing](reference-qa.md#manageresults)
 
-[!INCLUDE [help-and-support-footer](_shared/help-and-support-footer.md)] 
+[!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

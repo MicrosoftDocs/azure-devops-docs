@@ -1,10 +1,9 @@
 ---
 title: TFS/TestManagement/Contracts RunCreateModel API | Extensions for Azure DevOps Services
+description: Data representation of a run create model.
 ms.assetid: bcff5da0-0e52-452d-b50b-b974a36ea263
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley

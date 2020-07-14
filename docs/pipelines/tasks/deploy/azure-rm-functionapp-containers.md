@@ -2,10 +2,7 @@
 title: Azure Function App for Container task
 description: Deploy Azure Functions on Linux using custom images
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: F1EB01AB-EB5F-4D70-8023-87197D65B338
-ms.manager: jillfra
 ms.custom: seodec18
 ms.author: atulmal
 author: azooinmyluggage
@@ -53,6 +50,14 @@ steps:
     appName: functionappcontainers
     imageName: $(imageName)
 ```
+
+## Troubleshooting
+
+[!INCLUDE [rm-app-service-troubleshoot-shared](./includes/rm-app-service-troubleshoot-shared.md)]
+
+## FAQs
+
+[!INCLUDE [rm-app-service-FAQs-shared](./includes/rm-app-service-faqs-shared.md)]
 
 ## Open Source
 

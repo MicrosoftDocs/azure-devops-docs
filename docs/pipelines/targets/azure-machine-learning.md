@@ -1,22 +1,20 @@
 ---
-title: Azure Machine Learning service training and deployment
+title: Azure Machine Learning training and deployment
 titleSuffix: Azure Pipelines
 description: Train machine learning models and deploy to web services from Azure Pipelines. Learn how to create a pipeline that uses the Azure Machine Learning service to train and deploy models.
 services: machine-learning
-ms.prod: devops
-ms.technology: devops-cicd
 ms.topic: tutorial
 manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
-ms.author: jordane
-author: jpe316
+ms.author: atulmal
+author: azooinmyluggage
 ms.date: 09/24/2019
-monikerRange: 'azure-devops'
+monikerRange: azure-devops
 ---
 
 # Train and deploy machine learning models
 
-[!INCLUDE [include](../_shared/version-team-services.md)]
+[!INCLUDE [include](../includes/version-team-services.md)]
 
 You can use a pipeline to automatically train and deploy machine learning models with the Azure Machine Learning service.
 Here you'll learn how to build a machine learning model, and then deploy the model as a web service. 
@@ -30,7 +28,7 @@ Follow the steps in [Azure Machine Learning quickstart: portal](/azure/machine-l
 
 ## Get the code
 
-[!INCLUDE [include](../ecosystems/_shared/get-code-before-sample-repo.md)]
+[!INCLUDE [include](../ecosystems/includes/get-code-before-sample-repo.md)]
 
 ```
 https://github.com/MicrosoftDocs/pipelines-azureml
@@ -40,9 +38,9 @@ This sample includes an `azure-pipelines.yml` file at the root of the repository
 
 ## Sign in to Azure Pipelines
 
-[!INCLUDE [include](../ecosystems/_shared/sign-in-azure-pipelines.md)]
+[!INCLUDE [include](../ecosystems/includes/sign-in-azure-pipelines.md)]
 
-[!INCLUDE [include](../ecosystems/_shared/create-project.md)]
+[!INCLUDE [include](../ecosystems/includes/create-project.md)]
 
 ## Create the pipeline
 
@@ -50,7 +48,7 @@ You can use 1 of the following approach to create a new pipeline.
 
 #### [YAML](#tab/yaml/)
 
-[!INCLUDE [include](../ecosystems/_shared/create-pipeline-before-template-selected.md)]
+[!INCLUDE [include](../ecosystems/includes/create-pipeline-before-template-selected.md)]
 
 When your new pipeline appears:
 
@@ -73,7 +71,7 @@ To create a pipeline in the classic editor, use our template so that you automat
 
 1. Select **Use the classic editor** to create a pipeline without YAML.
 
-   ![classic-editor](../_shared/_img/classic-editor.png)
+   ![classic-editor](../media/classic-editor.png)
 
 1. Walk through the steps of the wizard by first selecting **GitHub** as the location of your source code.
 
@@ -87,11 +85,11 @@ To create a pipeline in the classic editor, use our template so that you automat
    |---------|---------|
    |resourceGroupName     | Name of an existing resource group|
    |workspaceName     | Name of the workspace (will be created if it does not already exist) |
-   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/.azureml/sklearn.runconfig)|
+   |runConfig     | Name of the runconfig file (the text before *.runconfig if you are looking at your file system). Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/examples/runconfigs/sklearn.runconfig)|
    |modelAssetPath     | The cloud path where the experiment run stores the model file. This should be equivalent to the path which will be used as the working directory when loading individual models in the score.py file. This could either be the root folder of all model files or the full path of the model file itself depending on how score.py loads it|
    |modelName     | Name of model to register. This should be the same as used by the score.py when loading models|
    |serviceName     | Name of the service to be deployed (will be overwritten if already present)|
-   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/inferenceConfig.yml)|
+   |inferenceConfigFile      | Path to a JSON or YAML file containing inference configuration. Sample [here](https://github.com/MicrosoftDocs/pipelines-azureml/blob/master/models/diabetes/config/inference-config.yml)|
    |deploymentConfigFile     |  Path to a JSON or YAML file containing deployment metadata. Sample [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsdata.visualstudio.com%2FVienna%2F_git%2FAzureMlCli%3Fpath%3D%252Fsrc%252Fazure-cli-ml%252Ftests%252Fo16n_unit_tests%252Fdata%252FAksDeployConfig.yml%26version%3DGBmaster&data=01%7C01%7Cv-srmar%40microsoft.com%7C73ff3ab12e664f0c9e8a08d6cf9d4ecc%7C72f988bf86f141af91ab2d7cd011db47%7C1&sdata=AQS2lpDU97igwSw7zRO%2FAqJLalVhvHvHxBogByRsgoE%3D&reserved=0)|
    |aksComputeName     | Name of the existing AKS|
 

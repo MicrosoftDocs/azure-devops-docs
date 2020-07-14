@@ -2,12 +2,9 @@
 title: Xcode Build build and release task
 ms.custom: seodec18
 description: Xcode Build build and release task for Azure Pipelines and Team Foundation Server (TFS)
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: 37B7092E-9205-4050-BBC8-E35C3A4B0A8A
-ms.manager: jillfra
-ms.author: dastahel
-author: davidstaheli
+ms.author: vijayma
+author: vijayma
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015 <= tfs-2018'
 ---
@@ -16,7 +13,7 @@ monikerRange: '>= tfs-2015 <= tfs-2018'
 
 **[Azure Pipelines](xcode.md) | TFS 2018 | TFS 2017 | TFS 2015**
 
-Use this task in a build or release pipeline to build an Xcode workspace on macOS.
+Use this task to build an Xcode workspace on macOS.
 
 ## Demands
 
@@ -210,7 +207,7 @@ Select if you want to run <a href="https://github.com/facebook/xctool/blob/maste
 <tr>
 <td>xctool Test Reporter Format</td>
 <td>
-You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults" data-raw-source="[Publish Test Results](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks/PublishTestResults)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
+You can specify this argument if you have selected Use xctool and included <code>test</code> in Actions (arguments described above). Specify <code>junit:output-file-path-here.xml</code> to generate a file that you can publish using the <a href="https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1" data-raw-source="[Publish Test Results](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/PublishTestResultsV1)">Publish Test Results</a> task. When specified, <code>plain</code> is automatically added as well.
 </td>
 </tr>
 
@@ -229,14 +226,14 @@ You can specify this argument if you have selected Use xctool and included <code
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
 
-## Q & A
+## FAQ
 <!-- BEGINSECTION class="md-qanda" -->
 
-[!INCLUDE [temp](../../_shared/qa-agents.md)]
+[!INCLUDE [temp](../../includes/qa-agents.md)]
 
 ::: moniker range="< azure-devops"
 
-[!INCLUDE [temp](../../_shared/qa-versions.md)]
+[!INCLUDE [temp](../../includes/qa-versions.md)]
 
 ::: moniker-end
 

@@ -1,10 +1,9 @@
 ---
 title: TFS/Build/Contracts TimelineRecordsUpdatedEvent API | Extensions for Azure DevOps Services
+description: Data representation of a timeline records updated event.
 ms.assetid: 703aafe9-6593-72bf-8fb1-a90f5fbf6f82
-ms.prod: devops
 ms.technology: devops-ecosystem
 generated: true
-ms.manager: jillfra
 author: chcomley
 ms.topic: article
 ms.author: chcomley
@@ -19,5 +18,5 @@ Extends: [RealtimeBuildEvent](./RealtimeBuildEvent.md)
 
 ### Members
 
-* `timelineRecords`: [TimelineRecord](./TimelineRecord.md)[]. 
+* `timelineRecords`: [TimelineRecord](../../DistributedTask/Contracts/TimelineRecord.md)[]. 
 

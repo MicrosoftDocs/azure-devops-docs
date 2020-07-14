@@ -2,12 +2,9 @@
 title: Package and Deploy Helm Charts task
 description: Deploy, configure, update your Kubernetes cluster in Azure Container Service by running helm commands.
 ms.topic: reference
-ms.prod: devops
-ms.technology: devops-cicd
 ms.assetid: AFA7D54D-537B-4DC8-B60A-E0EEEA2C9A87
-ms.manager: jillfra
-ms.author: shasb
-ms.date: 02/12/2019
+ms.author: atulmal
+ms.date: 02/28/2020
 monikerRange: '> tfs-2018'
 ---
 
@@ -15,9 +12,10 @@ monikerRange: '> tfs-2018'
 
 **Azure Pipelines**
 
-Use this task in a build or release pipeline to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
+Use this task to deploy, configure, or update a Kubernetes cluster in Azure Container Service by running Helm commands.
 Helm is a tool that streamlines deploying and managing Kubernetes apps using a packaging format called
-[charts](https://github.com/helm/helm/blob/master/docs/charts.md).
+charts.
+
 You can define, version, share, install, and upgrade even the most complex Kubernetes app by using Helm. 
 
 * Helm helps you combine multiple Kubernetes manifests (yaml) such as service, deployments, configmaps, and more into a single unit called Helm Charts.
@@ -39,12 +37,15 @@ Azure Pipelines has built-in support for Helm charts:
 
 ## Service Connection
 
-The task works with two service connection types: **Azure Resource Manager** and **Kubernetes Service Connection**.
+The task works with two service connection types: **Azure Resource Manager** and **Kubernetes Service Connection**.<br/>
+
+> [!NOTE]
+> A service connection isn't required if an environment resource that points to a Kubernetes cluster has already been specified in the pipeline's stage.
 
 ### Azure Resource Manager
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
+<tr><td><code>connectionType</code><br/>(Service connection type)</td><td>(Required unless an environment resource is already present) <b>Azure Resource Manager</b> to use Azure Kubernetes Service. <b>Kubernetes Service Connection</b> for any other cluster.<br/>Default value: Azure Resource Manager</td></tr>
 <tr><td><code>azureSubscriptionEndpoint</code><br/>(Azure subscription)</td><td>(Required) Name of the Azure service connection.</td></tr>
 <tr><td><code>azureResourceGroup</code><br/>(Resource group)</td><td>(Required) Name of the resource group within the subscription.</td></tr>
 <tr><td><code>kubernetesCluster</code><br/>(Kubernetes cluster)</td><td>(Required) Name of the AKS cluster.</td></tr>
@@ -56,10 +57,10 @@ This is used with one of the helm [commands](#commands) and the appropriate valu
 
 ```YAML
 variables:
-    azureSubscriptionEndpoint: Contoso
-    azureContainerRegistry: contoso.azurecr.io
-    azureResourceGroup: Contoso
-    kubernetesCluster: Contoso
+  azureSubscriptionEndpoint: Contoso
+  azureContainerRegistry: contoso.azurecr.io
+  azureResourceGroup: Contoso
+  kubernetesCluster: Contoso
 
 - task: HelmDeploy@0
   displayName: Helm deploy
@@ -73,7 +74,7 @@ variables:
 ### Kubernetes Service Connection
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
-<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required) Select a Kubernetes service connection.</td></tr>
+<tr><td><code>kubernetesServiceEndpoint</code><br/>(Kubernetes service connection)</td><td>(Required unless an environment resource is already present) Select a Kubernetes service connection.</td></tr>
 <tr><td><code>namespace</code><br/>(Namespace)</td><td>(Optional) The namespace on which the <strong>kubectl</strong> commands are run. If not specified, the default namespace is used.</td></tr>
 </table>
 
@@ -91,7 +92,7 @@ This is used with one of the helm [commands](#commands) and the appropriate valu
 <a name="commands"></a>
 ## Command values
 
-The command input accepts one of the following [helm commands](https://docs.helm.sh/helm/helm): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
+The command input accepts one of the following [helm commands](https://v2-14-0.helm.sh/docs/helm/): create/delete/expose/get/init/install/login/logout/ls/package/rollback/upgrade.
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>
@@ -142,7 +143,7 @@ This YAML example demonstrates the **init** command:
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>
 <tr><td><code>chartType</code><br/>(Chart Type)</td><td>(Required) Select how you want to enter chart information. You can provide either the name of the chart or the folder/file path to the chart.<br/>Default value: Name</td></tr>
 <tr><td><code>chartName</code><br/>(Chart Name)</td><td>(Required) Chart reference to install, this can be a url or a chart name. For example, if chart name is <b>stable/mysql</b>, the task will run <b>helm install stable/mysql</b></td></tr>
-<tr><td><code>releaseName</code><br/>(Release Name)</td><td>(Optional) Release name. If not specified, it will be autogenerated.</td></tr>
+<tr><td><code>releaseName</code><br/>(Release Name)</td><td>(Optional) Release name. If not specified, it will be autogenerated. releaseName input is only valid for 'install' and 'upgrade' commands</td></tr>
 <tr><td><code>overrideValues</code><br/>(Set Values)</td><td>(Optional) Set values on the command line. You can specify multiple values, or separate values with commas. For example, <b>key1=val1,key2=val2</b>. The task will construct the helm command by using these set values. For example, <b>helm install --set key1=val1 ./redis</b></td></tr>
 <tr><td><code>valueFile</code><br/>(Value File)</td><td>(Optional) Specify values in a YAML file or a URL. For example, specifying <b>myvalues.yaml</b> will result in <b>helm install --values=myvals.yaml</b></td></tr>
 <tr><td><code>updatedependency</code><br/>(Update Dependency)</td><td>(Optional) Run helm dependency update before installing the chart. Update dependencies from <b>requirements.yaml</b> to the <b>charts/</b> directory before packaging.<br/>Default value: false</td></tr>
@@ -168,7 +169,7 @@ This YAML example demonstrates the **install** command:
 
 <table><thead><tr><th>Parameters</th><th>Description</th></tr></thead>
 <tr><td><code>command</code><br/>(Command)</td><td>(Required) Select a helm command.<br/>Default value: ls</td></tr>
-<tr><td><code>chartPath</code><br/>(Chart Path)</td><td>(Required) Path to the chart to install. This can be a path to a packaged chart or a path to an unpacked chart directory. For example, if <b>./redis</b> is specified the task will run <b>helm install ./redis</b></td></tr>
+<tr><td><code>chartPath</code><br/>(Chart Path)</td><td>(Required) Path to the chart to install. This can be a path to a packaged chart or a path to an unpacked chart directory. For example, if <b>./redis</b> is specified the task will run <b>helm install ./redis</b>. If you are consuming a chart which is published as an artifact then the path will be <b>$(System.DefaultWorkingDirectory)/ARTIFACT-NAME/Charts/CHART-NAME</b></td></tr>
 <tr><td><code>version</code><br/>(Version)</td><td>(Optional) Specify the exact chart version to install. If this is not specified, the latest version is installed. Set the version on the chart to this semver version.</td></tr>
 <tr><td><code>destination</code><br/>(Destination)</td><td>(Optional) Specify values in a YAML file or a URL.<br/>Default value: $(Build.ArtifactStagingDirectory)</td></tr>
 <tr><td><code>updatedependency</code><br/>(Update Dependency)</td><td>(Optional) Run helm dependency update before installing the chart. Update dependencies from <b>requirements.yaml</b> to the <b>charts/</b> directory before packaging.<br/>Default value: false</td></tr>
@@ -222,6 +223,16 @@ This YAML example demonstrates the **upgrade** command:
 ```
 
 ::: moniker-end
+
+## Troubleshooting
+
+### HelmDeploy task throws error 'unknown flag: --wait' while running 'helm init --wait --client-only' on Helm 3.0.2 version.
+
+There are some breaking changes between Helm 2 and Helm 3. One of them includes removal of tiller, and hence `helm init` command is no longer supported. Remove command: init when you use Helm 3.0+ versions.
+
+### When using Helm 3, if System.debug is set to true and Helm upgrade is the command being used, the pipeline fails even though the upgrade was successful.
+
+This is a known issue with Helm 3, as it writes some logs to stderr. Helm Deploy Task is marked as failed if there are logs to stderr or exit code is non-zero. Set the task input failOnStderr: false to ignore the logs printed to stderr.
 
 ## Open source
 
