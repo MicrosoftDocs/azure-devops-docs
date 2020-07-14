@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/18/2019
+ms.date: 07/14/2020
 ---
 
 # Define area paths and assign to a team
