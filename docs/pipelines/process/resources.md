@@ -162,7 +162,7 @@ In case your pipeline run is created by manual trigger or by scheduled trigger, 
 1.	If you provide a build version (number), we will pickup that version.
 2.	If you provide a branch, the latest version from the given branch runs.
 3.  If you provide a list of tags, we will pick up the latest run that has all the tags matched.
-4.  If you provide a branch and list of tags, we will pick up the latest run from the branch provided and has the matching tags.
+4.  If you provide a branch and list of tags, the latest run from the branch provided and that has the matching tags runs.
 3.	If you don’t provide anything, we will pickup the latest run across all the branches.
 
 ```yml
