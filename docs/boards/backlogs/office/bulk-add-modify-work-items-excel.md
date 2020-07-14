@@ -9,7 +9,7 @@ author: KathrynEE
 ms.custom: contentperfq4
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -37,7 +37,7 @@ In this article you'll learn how to perform the following tasks:
 
 For information about connecting to Excel, see [Connect Azure Boards to an Office client](track-work.md). For answers to specific questions about the integration of Excel and Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards ](faqs.md).  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]  
 > If you don't have access to Excel, you can still perform bulk import and update using CSV formatted files. To learn more, see [Bulk import or update work items using CSV files](../../queries/import-work-items-from-csv.md).
@@ -223,7 +223,18 @@ You can't perform the following tasks from an Excel worksheet:
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops" 
+::: moniker range="azure-devops-2020" 
+
+- You can't delete work items 
+- You can't change the work item type of an existing work item 
+- You can't import or update test case steps or other test artifacts 
+- You can't add work items in any other State than the new State 
+- You can't add to a work item discussion thread 
+- You can't move work items to another project 
+
+::: moniker-end  
+
+::: moniker range="<= azure-devops-2019" 
 
 - You can't delete work items 
 - You can't import or update test case steps or other test artifacts 
@@ -670,7 +681,7 @@ To resolve publishing errors that arise when working in Excel, see one of the fo
 
 ## Related articles
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 - [Bulk modify work items (web portal)](../../backlogs/bulk-modify-work-items.md)  
 - [Azure DevOps Office integration issues](tfs-office-integration-issues.md)

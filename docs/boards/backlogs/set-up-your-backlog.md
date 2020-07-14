@@ -231,7 +231,8 @@ For details, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=“>= azure-devops-2019 < azure-devops"
+
 
 **Inheritance process model:**  
 - [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)

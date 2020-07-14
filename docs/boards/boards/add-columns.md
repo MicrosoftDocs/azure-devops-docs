@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
+ms.date: 07/09/2020
 ---
 
 # Add columns to your Kanban board
@@ -26,7 +26,7 @@ For example, the main workflow stages performed by our example dev team are capt
 
 If you're just getting started, review [Kanban basics](kanban-basics.md) to get an overview of how to access your board and implement Kanban.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE]    
 > If you're looking at how to add columns to a sprint Taskboard, see [Customize a Taskboard](../sprints/customize-taskboard.md). To add columns to a backlog or query results, see [Change column options](../backlogs/set-column-options.md).   

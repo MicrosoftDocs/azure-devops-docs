@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 01/11/2019
+ms.date: 07/09/2020
 ---
 
 # Quick guide to default permissions and access for Azure Boards 
