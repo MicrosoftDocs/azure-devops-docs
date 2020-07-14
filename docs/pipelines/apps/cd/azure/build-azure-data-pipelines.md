@@ -70,18 +70,17 @@ To make commands easier to run, start by selecting a default region. After you s
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your storage account and key vault. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
 
     ```bash
-    registryName="data-cicd${resourceSuffix}"
     storageName="datacicd${resourceSuffix}"
+    keyVault="keyvault${resourceSuffix}"
     ```
 
-1. Create two more Bash variables to store the names of your resource group and service plan.
+1. Create one more Bash variables to store the names of your resource group.
 
     ```bash
     rgName='data-pipeline-cicd-rg'
-    keyVault='data-pipeline-cicd-keyvault'
     ```
 
 ## Create Azure resources
@@ -105,12 +104,10 @@ To make commands easier to run, start by selecting a default region. After you s
     1. Run the following `az storage container create` command to create two containers, `rawdata`, `prepareddata`.
     
     ```azurecli
-    az storage container create -n rawdata
-    az storage container create -n prepareddata
+    az storage container create -n rawdata --account-name $storageName 
+    az storage container create -n prepareddata --account-name $storageName 
     ```
     
-    1. Open the `prepareddata` container in the Azure Portal UI and upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)).
-
 1. Run the following `az keyvault create` command to create a new key vault. 
 
     ```azurecli
@@ -127,17 +124,65 @@ To make commands easier to run, start by selecting a default region. After you s
     * Location: your closest location
     * Uncheck **Enable GIT**
 
+   Add the Azure Databricks extension if it is not already installed. 
+   
+    ```azurecli
+   az extension add --name datafactory
+    ```   
+    Run the following `az datafactory factory create` command to create a new datafactory.  
+    
+   ```azurecli
+    az datafactory factory create \
+        --name data-factory-cicd \
+        --resource-group $rgName
+   ```
+
 1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
     * Resource Group: `data-pipeline-cicd-rg`
+    * Workspace name: `databricks-cicd-ws`    
     * Location: your closest location
+     
+   Add the Azure Databricks extension if it is not already installed. 
+
+   ```azurecli
+    az extension add --name databricks
+    ```   
+    
+    Run the following `az databricks workspace create` command to create a new workspace.  
+    ```azurecli
+    az databricks workspace create \
+        --resource-group $rgName \
+        --name databricks-cicd-ws  \
+        --location eastus2  \
+        --sku standard
+    ```
+
+## Upload data to your storage container
+
+1. Open your storage account in the Azure Portal UI in the `data-pipeline-cicd-rg` resource group. 
+1. Go to **Blob Service** > **Containers**.
+1. Open the `prepareddata` container.
+1. Upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)).
 
 ## Set up Key Vault
 
 You will use Key Vault to store all secrets (connection information) between the Azure services.
 
-1. Generate a personal access token to use with Azure Databricks ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
-1. Copy the account key and connection string for your storage account.
-1.	Make key vault accessible by other services. You will need to first [create a service principal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal). 
+### Create a Databricks Personal Access Token
+1. Go Databricks in the Azure Portal and launch your workspace. 
+1. Generate and copy a personal access token in the Azure Databricks UI ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
+
+### Copy the account key and connection string for your storage account 
+1. Go to your storage account. 
+1. Open **Access keys**. 
+1. Copy the first key and connection string. 
+
+<!-- ### Make key vault accessible by other services
+1. Create a service principal. 
+1.	Make key vault accessible by other services. You will need to first [create a service principal](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal).  -->
+
+Names MATTER - datapipeline-vg
+
 
 ## Create your pipeline and deploy your template
 
@@ -145,7 +190,6 @@ You will use Key Vault to store all secrets (connection information) between the
 1. Go to **Pipelines**, and then select **Create Pipeline**.
 1. Create a service connection for Azure Resource Manager and name it azure_rm_connection.
 1. You will create two variable groups, one to connect to the Key Vault and one that stores information for the pipeline. 
-Names MATTER - datapipeline-vg
 
 ## Configure Azure Databricks
 Please refer to this document https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes to create a secret scope named "testscope" within the Azure Databricks workspace.
@@ -171,16 +215,3 @@ If you're not going to continue to use this application, delete <resources> with
 1. From the left-hand menu...
 2. ...click Delete, type...and then click Delete
 
-<!---Required:
-To avoid any costs associated with following the quickstart procedure, a
-Clean up resources (H2) should come just before Next steps (H2).
-
-If there is a follow-on quickstart that uses the same resources, make that option clear
-so that a reader doesn't need to recreate those resources.
---->
-
-## Next steps
-
-Advance to the next article to learn how to create...
-> [!div class="nextstepaction"]
-> [Next steps button](contribute-get-started-mvc.md)
