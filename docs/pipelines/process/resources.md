@@ -577,7 +577,7 @@ steps:
 
 ## Resources: `webhooks`
 
-With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you could not automate your deployment process based on other external events or services. `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Aritfactory, etc.) and trigger your pipelines. 
+With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you could not automate your deployment process based on other external events or services. `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Artifactory, etc.) and trigger your pipelines. 
 
 Here are the steps to configure the webhook triggers:
 1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
