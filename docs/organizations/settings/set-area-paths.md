@@ -86,6 +86,8 @@ As needed, you can do the following actions at any time:
 
 You define both areas and iterations for a project from the **Project Settings > Boards > Project configuration**.
 
+::: moniker-end
+
 ::: moniker range="<= tfs-2018"
 
 You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the ![ ](../../media/icons/gear-icon.png) gear icon.
@@ -237,6 +239,8 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 <a id="add-area" /> 
 
+::: moniker range="azure-devops"  
+
 You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 > [!div class="tabbedCodeSnippets"]
@@ -251,6 +255,7 @@ az boards area project create --name
 - **name**: Required. Area path name. 
 - **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
 #### Example: JSON format
 
 For example, the following command adds the Voice area path to the Fabrikam Fiber project at the root node.  
@@ -328,6 +333,8 @@ You open team settings from the top navigation bar. Select the team you want and
 
 <a id="list-team-area-paths" /> 
 
+::: moniker range="azure-devops"
+
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
 > [!div class="tabbedCodeSnippets"]
@@ -381,7 +388,6 @@ You define both areas and iterations from **Project Settings > Team configuratio
     > [!div class="mx-imgBorder"]  
     > ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context.png) 
 
- 
 ::: moniker-end
 
 <a id="default-iteration">  </a>
@@ -550,7 +556,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 ::: moniker-end
 
 
-::: moniker range="<= tfs-2018 "
+::: moniker range="<= tfs-2018"
 
 1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
 
@@ -681,7 +687,6 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 ::: moniker range="<= azure-devops-2019"
 
-- [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)
