@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.assetid: b318851c-4240-4dc2-8688-e70aba1cec55
 ms.manager: ushan
 ms.date: 01/24/2020
-monikerRange: azure-devops
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Environment - virtual machine resource
