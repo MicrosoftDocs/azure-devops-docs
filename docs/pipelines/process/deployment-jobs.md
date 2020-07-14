@@ -4,7 +4,7 @@ description: Deploy to resources within an environment
 ms.topic: conceptual
 ms.assetid: fc825338-7012-4687-8369-5bf8f63b9c10
 ms.date: 5/2/2019
-monikerRange: '>= azure-devops'
+monikerRange: '>= azure-devops-2020'
 ---
 
 # Deployment jobs
