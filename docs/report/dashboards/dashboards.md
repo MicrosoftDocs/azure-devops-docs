@@ -16,7 +16,7 @@ ms.date: 12/12/2019
 
 [!INCLUDE [temp](../includes/version-ts-tfs-2015-2016.md)] 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Share progress and status with your team using configurable team or project dashboards. Dashboards provide easy-to-read, easy access, real-time information. At a glance, you can make informed decisions without having to drill down into other parts of your project. 
 
@@ -55,7 +55,15 @@ When a project is first created, a default team and default team dashboard is cr
 
 ## Connect to your project 
 
-All dashboards are associated with a team.
+::: moniker range=">= azure-devops-2020"
+
+All dashboards are associated with either a team or a project. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to, or if they are project dashboard.  
+::: moniker-end
+::: moniker range="<= azure-devops-2019"  
+
+All dashboards are associated with a team. From the **Overview>Dashboards** page, you can browse all dashboards and see which team they belong to.  
+
+::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"  
 
@@ -93,9 +101,9 @@ If you need to switch to a different project, choose the ![ ](../../media/icons/
 
 <a id="choose-dashboard" />
 
-::: moniker range=">= azure-devops-2019"
-
 ## Select a dashboard 
+
+::: moniker range=">= azure-devops-2019"
 
 1. Choose a dashboard from the directory list, or from the selector. To return to the dashboard directory, choose the **Browse all dashboards** option. 
  
@@ -114,8 +122,6 @@ If you need to switch to a different project, choose the ![ ](../../media/icons/
 
 ::: moniker range=">= tfs-2015  <= tfs-2018"  
 
-## Select a dashboard 
-
 1. Select the team whose dashboards you want to view. To switch your team focus, see [Switch project, repo or team](../../project/navigation/go-to-project-repo.md#switch-team-context).
 
 2. From **Dashboards**, choose the name of the dashboard to view it. 
@@ -132,7 +138,7 @@ If you need to switch to a different project, choose the ![ ](../../media/icons/
 
 Add a new dashboard as needed to support your team's needs. You can also edit and rename any existing dashboards associated with your team.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From the Dashboards directory, choose **New Dashboard**. Or, when viewing a dashboard, open the selector and choose the ![plus icon](media/icons/blue-plus-icon.png) **New Dashboard** option. 
 
@@ -195,6 +201,7 @@ With the dashboard selected, you can add [widgets and charts to the dashboard](a
 
 
 <a id="manage">  </a> 
+
 ## Rename, delete, and enable auto-refresh  
 
 You can rename or delete a dashboard. Also, you can enable auto-refresh, and the dashboard will automatically update every 5 minutes.  
@@ -206,6 +213,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 
 ::: moniker range=">= azure-devops-2019"
+
 - To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
 - To delete a dashboard, open the Dashboards directory, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.  
