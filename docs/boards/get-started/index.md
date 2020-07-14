@@ -8,7 +8,7 @@ ms.topic: landing-page
 ms.assetid:  
 ms.author: kaelli
 author: KathrynEE
-monikerRange: 'azure-devops'
+monikerRange: '>= tfs-2013'
 ms.date: 10/14/2019
 ---
 
