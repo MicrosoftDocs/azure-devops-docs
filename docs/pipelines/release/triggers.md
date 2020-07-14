@@ -60,19 +60,15 @@ See also [stage scheduled triggers](#stage-scheduled-triggers).
 
 <h2 id="prsettrigger">Pull request triggers</h2>
 
-You can configure a pull request trigger that will create a new release when a pull request 
-uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests
-that you want to activate this trigger. 
+You can configure a pull request trigger that will create a new release when a pull request uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests that you want to activate this trigger. 
 
-![Selecting a trigger for a release](media/trigger-01a.png)
+> [!div class="mx-imgBorder"]
+> ![Selecting a trigger for a release](media/trigger-01a.png)
 
-However, to use a pull request trigger, you must also enable it for specific stages of the pipeline.
-Do this in the stage [triggers panel](#prtrigger) for the required stage(s). 
-You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
+However, to use a pull request trigger, you must also enable it for specific stages of the pipeline. Do this in the stage [triggers panel](#prtrigger) for the required stage(s). You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
->Note that, even though a release is automatically created, it
-might not be deployed automatically to any stages. The
-[stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
+> [!NOTE]
+> Note that, even though a release is automatically created, it might not be deployed automatically to any stages. The [stage triggers](#env-triggers) govern when and if a release should be deployed to a stage.
 
 ::: moniker-end
 
