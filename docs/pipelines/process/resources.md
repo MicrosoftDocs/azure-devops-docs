@@ -161,7 +161,7 @@ The pipeline version (CI build run) that gets picked in your pipeline run is con
 In case your pipeline run is created by manual trigger or by scheduled trigger, the default version, branch and tags are used to evaluate the version of CI pipeline version.
 1.	If you provide a build version (number), that version runs.
 2.	If you provide a branch, the latest version from the given branch runs.
-3.  If you provide a list of tags, we will pick up the latest run that has all the tags matched.
+3.  If you provide a list of tags, the latest run that has all the matching tags runs.
 4.  If you provide a branch and list of tags, the latest run from the branch provided and that has the matching tags runs.
 3.	If you don’t provide anything, the latest version across all the branches runs.
 
