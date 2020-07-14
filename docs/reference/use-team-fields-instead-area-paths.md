@@ -3,6 +3,7 @@ title: Use team fields instead of area paths to support teams
 titleSuffix: TFS
 description: Steps to modify the XML syntax to support using a team field with Team Foundation Server
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.author: kaelli
 author: KathrynEE
@@ -267,4 +268,4 @@ For backlog items you create from a team's backlog page, TFS assigns the default
 
 ### Credits
 
-Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/about-martin-hinshelwood/), a devops consultant and Developer Technologies MVP.
+Guidance for [customizing teams decoupled from area paths](https://nkdagility.com/team-foundation-server-2012-teams-without-areas/) was developed in partnership with [Martin Hinshelwood](https://nkdagility.com/company/who-are-we/), a devops consultant and Developer Technologies MVP.

@@ -87,7 +87,7 @@ To publish to an external npm registry, you must first create a service connecti
 
 - **Where can I learn about the Azure Pipelines and TFS Package Management service?**
 
-    Check ou the [Azure Artifacts landing page](../../artifacts/index.yml) for details about Artifacts in Azure Pipelines.
+    Check out the [Azure Artifacts landing page](../../artifacts/index.yml) for details about Artifacts in Azure Pipelines.
 
 - **How to publish packages to my feed from the command line?**
 

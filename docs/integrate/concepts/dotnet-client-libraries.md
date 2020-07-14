@@ -109,10 +109,11 @@ creds.Storage = new VssClientCredentialStorage();
 VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
 
 // Get a GitHttpClient to talk to the Git endpoints
-GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
-
-// Get data about a specific repository
-var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
+{
+    // Get data about a specific repository
+    var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+}
 ```
 
 Authentication paths that produce an interactive dialog are not available in the .NET Standard version of the .NET client libraries. When using the .NET Standard version of the .NET client libraries, you will need to provide credentials more explicitly in order to authenticate, as in the example below.
@@ -141,10 +142,11 @@ namespace ConsoleApp1
             VssConnection connection = new VssConnection(new Uri(c_collectionUri), creds);
 
             // Get a GitHttpClient to talk to the Git endpoints
-            GitHttpClient gitClient = connection.GetClient<GitHttpClient>();
-
-            // Get data about a specific repository
-            var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+            using (GitHttpClient gitClient = connection.GetClient<GitHttpClient>())
+            {
+                // Get data about a specific repository
+                var repo = gitClient.GetRepositoryAsync(c_projectName, c_repoName).Result;
+            }
         }
     }
 }

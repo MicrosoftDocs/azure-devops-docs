@@ -56,7 +56,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline settings UI. If your `trigger` or `pr` triggers don't seem to be firing, check that setting. While editing your pipeline, choose **...** and then **Triggers**.
 
-![Pipeline settings UI.../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 Check the **Override the YAML trigger from here** setting for the types of trigger (**Continuous integration** or **Pull request validation**) available for your repo.
 
@@ -209,7 +209,7 @@ To check the capabilities and demands specified for your agents and pipelines, s
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands and you are using Microsoft-hosted agents, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands that don't match the system capabilities of the agent, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
 
 ::: moniker-end
 
