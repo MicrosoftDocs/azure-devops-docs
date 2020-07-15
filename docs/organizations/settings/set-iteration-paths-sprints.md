@@ -291,13 +291,13 @@ For Scrum-based projects, you see the following set of sprints.
 
 	For Scrum-based projects, you'll see these set of sprints. 
 
-	<img src="../../boards/sprints/media/activate-team-sprints.png" alt="Example Iterations for a Team" style="border: 1px solid #C3C3C3;" />  
+	![Example Iterations for a Team](../../boards/sprints/media/activate-team-sprints.png)
 
 	You can change the name, location within the tree hierarchy, or set dates for any sprint. Simply open it (double-click or press Enter key) and specify the info you want.
 
 2. Schedule the start and end dates for those sprints you plan to use. 
 
-	<img src="../../boards/sprints/media/set-sprint-start-end-dates.png" alt="Define start and end dates for a sprint" style="border: 1px solid #C3C3C3;" />  
+	![Define start and end dates for a sprint](../../boards/sprints/media/set-sprint-start-end-dates.png)  
 
 	After you set the start and end dates for one iteration, the calendar tool automatically attempts to set the next set of dates, based on the same iteration length you specified for the first. For example, if you set a three week sprint for Sprint 1, then when you select the start date for Sprint 2, the calendar tool automatically determines the start and end dates based on the next three weeks. You can accept or change these dates.  
 
