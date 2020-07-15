@@ -162,7 +162,8 @@ To make commands easier to run, start by selecting a default region. After you s
 1. Open your storage account in the Azure Portal UI in the `data-pipeline-cicd-rg` resource group. 
 1. Go to **Blob Service** > **Containers**.
 1. Open the `prepareddata` container.
-1. Upload `sample.csv`([source](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)).
+1. Upload `sample.csv`([source](~/../snippets/pipelines/azure/cd/datapipeline-sample.csv)).
+
 
 ## Set up Key Vault
 
