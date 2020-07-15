@@ -1,4 +1,4 @@
-﻿---
+---
 title: Permissions and access for charts and dashboards
 titleSuffix: Azure DevOps  
 description: How to set permissions and access levels to view and configure charts and dashboards
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 06/24/2019
+ms.date: 07/14/2020
 ---
 
 # Default permissions and access for charts and dashboards   

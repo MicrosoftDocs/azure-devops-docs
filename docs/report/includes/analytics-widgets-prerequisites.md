@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-analytics  
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/14/2020
 ---
 
 <a id="permissions">  </a>
@@ -18,7 +22,7 @@ ms.topic: include
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 ## Prerequisites  
 

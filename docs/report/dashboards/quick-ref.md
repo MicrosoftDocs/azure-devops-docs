@@ -1,4 +1,4 @@
-﻿---
+---
 title: Quick reference to dashboards, charts, & widgets 
 titleSuffix: Azure DevOps  
 description: Index to dashboard, charts&, and widgets tasks for Azure Boards, Azure DevOps, & Team Foundation Server 
@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2015'
-ms.date: 10/23/2019
+ms.date: 07/14/2020
 ---
 
 # Dashboards, reports, & widgets quick reference 
@@ -22,7 +22,7 @@ Use this index to quickly access information on tasks for configuring or accessi
 
 ## Tasks
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops"
 
 <table valign="top">
 <tbody valign="top">

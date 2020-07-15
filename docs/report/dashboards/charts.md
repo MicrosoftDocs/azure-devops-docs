@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 07/14/2020
 ---
 
 # Track progress with status and trend query-based charts 
@@ -61,7 +61,7 @@ By default, users with **Basic** access or higher can create charts. Users with 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * To create a chart, you must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -401,7 +401,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Analytics provides a number of [additional widgets based on Analytics data](../dashboards/analytics-widgets.md).  
  
