@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/24/2020
+ms.date: 7/09/2020
 ---
 
 # Change column options 
@@ -199,7 +199,7 @@ Find the field you want to add from the **Available columns** set and choose **>
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add or remove rollup columns
 
@@ -207,11 +207,20 @@ Rollup columns can display progress bars or the sum of numeric fields of child i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018"
-
 ## Sort on a column 
 
+::: moniker range=">= azure-devops-2019"
+
 You can sort query results and Work items views. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
+
+> [!div class="mx-imgBorder"]  
+> ![Column options, Sorting page dialog](media/columns/sort-dialog.png) 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+You can sort query results. From the Column options dialog, choose **Sorting**.  Add or remove a column field and drag and drop it into the order you want. Choose the up or down arrows to choose whether it sorts in ascending or descending order. 
 
 > [!div class="mx-imgBorder"]  
 > ![Column options, Sorting page dialog](media/columns/sort-dialog.png) 
@@ -241,11 +250,12 @@ For additional keyboard shortcuts, enter **?** to display available shortcuts ba
 - [Display rollup progress or totals](display-rollup.md)
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
+- [View, run, or email a work item query](../queries/view-run-query.md)
 - [Create managed queries](../queries/using-queries.md)
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops-2020"
 
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 - [Backlogs, boards, and plans](backlogs-boards-plans.md)   
