@@ -20,7 +20,7 @@ Learn how to grab data from a CSV and save to blob storage, and then transform t
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
-- A downloaded code sample [sample.csv](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)
+- A downloaded code sample [datapipeline-sample.csv](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)
 - Fork the [data pipeline solution](https://github.com/gary918/DataPipeline) in GitHub 
 - Install [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks) into your Azure DevOps organization
 
@@ -165,7 +165,7 @@ To make commands easier to run, start by selecting a default region. After you s
 1. Open your storage account in the Azure portal UI in the `data-pipeline-cicd-rg` resource group. 
 1. Go to **Blob Service** > **Containers**.
 1. Open the `prepareddata` container.
-1. Upload `sample.csv`([source](~/../snippets/pipelines/azure/cd/datapipeline-sample.csv)).
+1. Upload `datapipeline-sample.csv` (source).
 
 
 ## Set up Key Vault
@@ -222,7 +222,7 @@ You will use Key Vault to store all connection information for your Azure servic
     * STORAGE_ACCOUNT_NAME: `storage account name from Azure portal`
     * STORAGE_CONTAINER_NAME: `rawdata`
 1. Create a second variable group named `keys-vg` that pulls data variables from Azure key vault. 
-1. Check **Link secrets from an Azure key vault as variables**. Learn how to [link secrets from an Azure key vault](../../../library/variable-groups.mdl#link-secrets-from-an-azure-key-vault). 
+1. Check **Link secrets from an Azure key vault as variables**. Learn how to [link secrets from an Azure key vault](../../../library/variable-groups.md#link-secrets-from-an-azure-key-vault). 
 1. Authorize the Azure subscription. 
 1. Choose all of the available secrets to add as variables (`databricks-token`,`StorageConnectString`,`StorageKey`).
 
