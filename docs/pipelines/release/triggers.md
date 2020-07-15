@@ -74,30 +74,22 @@ However, to use a pull request trigger, you must also enable it for specific sta
 
 <h2 id="env-triggers">Stage triggers</h2>
 
-You can choose to have the deployment to each stage triggered automatically
-when a release is created by a continuous deployment trigger, based on:
+You can choose to have the deployment to each stage triggered automatically when a release is created by a continuous deployment trigger, based on:
 
 * **The result of deploying to a previous stage in the pipeline**.
-  Use this setting if you want the release to be first deployed and validated in
-  another stage(s) before it is deployed to this stage.
-  Triggers are configured for each stage,
-  but the combination of these allows you to orchestrate
-  the overall deployment - such as the sequence in which automated
-  deployments occur across all the stages in a release
-  pipeline. For example, you can set up a linear pipeline where
-  a release is deployed first to the **Test** and **QA** stages.
-  Then, if these two deployments succeed, it will be deployed to a **Staging**
-  stage. In addition, you can configure the trigger to fire
-  for partially succeeded (but not failed) deployments.
+  Use this setting if you want the release to be first deployed and validated in another stage(s) before it is deployed to this stage.
+  Triggers are configured for each stage, but the combination of these allows you to orchestrate the overall deployment - such as the sequence in which automated deployments occur across all the stages in a release pipeline. For example, you can set up a linear pipeline where a release is deployed first to the **Test** and **QA** stages.
+  Then, if these two deployments succeed, it will be deployed to a **Staging** stage. In addition, you can configure the trigger to fire for partially succeeded (but not failed) deployments.
 
-  ![The stage trigger conditions settings](media/trigger-02a.png)
+  > [!div class="mx-imgBorder"]
+  > ![The stage trigger conditions settings](media/trigger-02a.png)
 
-* **Filters based on the artifacts**. You can add one or more filters for each artifact linked to the release pipeline,
-  and specify if you want to include or exclude particular branches of the code.
-  Deployment will be triggered to this stage only if all the artifact conditions are successfully met.
-  Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
+* **Filters based on the artifacts**.
+  You can add one or more filters for each artifact linked to the release pipeline, and specify if you want to include or exclude particular branches of the code.
+  Deployment will be triggered to this stage only if all the artifact conditions are successfully met. Unlike [build branch filters](#release-triggers), variables _cannot_ be used in artifact filter conditions.
 
-  ![The artifact filter trigger conditions settings](media/trigger-02b.png)
+  > [!div class="mx-imgBorder"]
+  > ![The artifact filter trigger conditions settings](media/trigger-02b.png)
 
   <a name="stage-scheduled-triggers"></a>
 
