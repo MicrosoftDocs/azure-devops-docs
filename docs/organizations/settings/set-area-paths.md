@@ -231,7 +231,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 2. Add a new child node to the area you've selected.</p>
 
-    <img src="media/areas/ALM_CW_CreateArea.png" alt="Create a new area node" style="border: 2px solid #C3C3C3;" />
+    ![Create a new area node](media/areas/ALM_CW_CreateArea.png) 
 
 ::: moniker-end
 
