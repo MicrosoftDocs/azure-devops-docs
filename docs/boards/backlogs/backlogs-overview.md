@@ -9,8 +9,9 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/14/2019
+ms.date: 07/09/2020
 ---
+
 
 # Backlogs, portfolios, and Agile project management 
 
@@ -49,7 +50,7 @@ If you're new to Agile, see [What is Agile?](/azure/devops/learn/agile/what-is-a
 
 ::: moniker-end 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops-2020"  
 
 - Quickly define the work your team is tasked with by [defining user stories, product backlog items, or requirements](create-your-backlog.md)
 - [Reorder your backlog](create-your-backlog.md#move-items-priority-order) to make sure your working on the highest priority items first

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -59,7 +59,7 @@ In this article you'll learn how to:
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 **Stakeholder** access users can't use drag and drop to map or reparent work items or change their sprint. 
 

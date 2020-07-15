@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 05/22/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -137,7 +137,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
 - To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).
@@ -257,7 +257,7 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 ::: moniker range="<= tfs-2018" 
 
 > [!NOTE]  
-> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint is similar. 
+> While this section illustrates how to connect Excel to an Azure Boards project, the steps for connecting from Project or PowerPoint are similar. 
 
 ::: moniker-end  
 

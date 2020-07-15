@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect a project to a GitHub repository
 titleSuffix: Azure Boards
 description: Configure one or more GitHub repositories to integrate with Azure Boards 
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 06/28/2019
+ms.date: 07/09/2020
 ---
 
 # Connect Azure Boards to GitHub  
@@ -29,7 +29,7 @@ When you make the connection from Azure Boards, the list of GitHub repositories 
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 By connecting your Azure DevOps Server project with your GitHub Enterprise Server repositories, you support linking between GitHub commits and pull requests to work items. You can use GitHub Enterprise for software development while using Azure Boards to plan and track your work. 
 
@@ -50,7 +50,7 @@ By connecting your Azure DevOps Server project with your GitHub Enterprise Serve
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 * You must connect to an Azure Boards or Azure DevOps project. If you don't have a project yet, [create one](../../organizations/projects/create-project.md). 
 * You must be a member of the [Project Administrators group](../../organizations/security/set-project-collection-level-permissions.md) and the project's [Contributors group](../../organizations/security/add-users-team-project.md). If you created the project, then you have permissions. 
@@ -89,7 +89,8 @@ Depending on the platform you work from to connect to GitHub, you have a choice 
 </td>
 </tr>
 <tr>
-<td>Azure DevOps Server</td>
+<td>Azure DevOps Server 2020<br/>
+Azure DevOps Server 2019</td>
 <td>
 <ul>
 <li>Not supported</li>
@@ -286,7 +287,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 <a id="register-server-oauth" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ###  Register Azure DevOps Server 
 
@@ -355,7 +356,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 <a id="register-server-github-ent-oauth" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ### Register your OAuth configuration in Azure DevOps Server
 
@@ -442,7 +443,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 <a id="github-ent-oauth-server" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Connect Azure DevOps Server to GitHub Enterprise Server
 

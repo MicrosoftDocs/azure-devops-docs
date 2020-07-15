@@ -214,23 +214,25 @@ You can't perform the following tasks from an Excel worksheet:
 ::: moniker range="azure-devops" 
 
 - You can't delete work items 
-- You can't change the work item type of an existing work item 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
 - You can't import or update test case steps or other test artifacts 
 - You can't add work items in any other State than the new State 
 - You can't add to a work item discussion thread 
-- You can't link to a remote work item 
-- You can't move work items to another project 
+- You can't link to a remote work item. 
+
 
 ::: moniker-end  
 
 ::: moniker range="azure-devops-2020" 
 
 - You can't delete work items 
-- You can't change the work item type of an existing work item 
+- You can't change the work item type of an existing work item
+- You can't move work items to another project  
 - You can't import or update test case steps or other test artifacts 
 - You can't add work items in any other State than the new State 
-- You can't add to a work item discussion thread 
-- You can't move work items to another project 
+- You can't add to a work item discussion thread. 
+
 
 ::: moniker-end  
 
@@ -564,7 +566,7 @@ You can use the Select User feature to find user accounts and assign values to p
 
 You can perform a number of actions from the **Links** tab of the **Links and Attachments** dialog. Specifically, you can: 
 - Review the existing links defined for the selected work item 
-- Add links to one or more work items or select objects 
+- Add links to a selected work items to one or more work items or select objects 
 - Delete links 
 - Open a linked work item (opens in the web portal)  
 - Edit the link type of an existing link 
@@ -574,6 +576,8 @@ For more information on linking work items, see [Link user stories, issues, bugs
 
 
 ### View and add links 
+
+You can't use the Links and Attachments dialog to bulk update work item links. You can only bulk update tree-topology link types using a tree list. 
 
 1. To link a work item to other work items, choose the work item and then choose **Links and Attachments**. From the Links tab, choose **Link to** and then choose the **Link Type** and work item(s) you want to link to. Choose **OK** and then **Publish**. 
 
