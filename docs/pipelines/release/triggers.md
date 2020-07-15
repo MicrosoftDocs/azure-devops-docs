@@ -26,7 +26,9 @@ monikerRange: '>= tfs-2015'
 You can configure when releases should be created, and when those releases should be deployed to stages, in your DevOps CI/CD processes.
 The former is configured through [release triggers](#release-triggers), and the latter through [stage triggers](#env-triggers) - both in a release pipeline.
 
-<h2 id="release-triggers">Continuous deployment triggers</h2>
+<a id="release-triggers"></a>
+
+## Continuous deployment triggers
 
 If you specify [certain types of artifacts](artifacts.md#sources) in a release pipeline, you can enable continuous deployment.
 This instructs Azure Pipelines to create new releases automatically when it detects new artifacts are available. At present this option is available only for Team Foundation Build artifacts and Git-based sources such as Team Foundation Git, GitHub, and other Git repositories.
@@ -47,7 +49,9 @@ Alternatively, you can specify a filter to use the default branch specified in t
 
 For information about the ID of the requester for CI triggers, see [How are the identity variables set?](../build/variables.md#how-are-the-identity-variables-set)
 
-<h2 id="scheduled-triggers">Scheduled release triggers</h2>
+<a id="scheduled-triggers"></a>
+
+## Scheduled release triggers
 
 If you want to create and start a release at specific times, define one or more scheduled release triggers. Choose the schedule icon in the **Artifacts** section of your pipeline and enable scheduled release triggers. You can configure multiple schedules.
 
@@ -58,7 +62,9 @@ See also [stage scheduled triggers](#stage-scheduled-triggers).
 
 ::: moniker range="> tfs-2018"
 
-<h2 id="prsettrigger">Pull request triggers</h2>
+<a id="prsettrigger"></a>
+
+## Pull request triggers
 
 You can configure a pull request trigger that will create a new release when a pull request uploads a new version of the artifact. Enable the trigger and add the branches targeted by pull requests that you want to activate this trigger. 
 
@@ -72,7 +78,9 @@ However, to use a pull request trigger, you must also enable it for specific sta
 
 ::: moniker-end
 
-<h2 id="env-triggers">Stage triggers</h2>
+<a id="env-triggers"></a>
+
+## Stage triggers
 
 You can choose to have the deployment to each stage triggered automatically when a release is created by a continuous deployment trigger, based on:
 
