@@ -4,7 +4,6 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.topic: quickstart 
 ms.date: 07/15/2020
 ms.topic: conceptual
 monikerRange: '=azure-devops'
