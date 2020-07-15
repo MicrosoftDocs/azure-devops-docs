@@ -40,4 +40,5 @@ To complicate the matter even further – to ensure the quality of the machine l
 Having a CI/CD data pipeline is crucial for the data science team to deliver the machine learning models to the business in a timely and quality manner. 
 
 ## Next steps
-- [Build a data pipeline with Azure](build-azure-data-pipelines.md)
+> [!div class="nextstepaction"]
+> [Build a data pipeline with Azure](build-azure-data-pipelines.md)
