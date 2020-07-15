@@ -9,11 +9,11 @@ ms.date: 07/15/2020
 monikerRange: '=azure-devops'
 ---
 
-# Quickstart: Implement a data pipeline with DevOps, Azure Data Factory, and machine learning
+# Build a data pipeline with DevOps, Azure Data Factory, and machine learning
 
 Get started with data pipelines by building a data pipeline with data ingestion, data transformation, and model training. 
 
-Learn how to grab data from a CSV and save to blob storage, and then transform the data and save it to a staging area. Then, train a machine learning model using the transformed data and output the model as pickle file to blob storage. 
+Learn how to grab data from a CSV and save to blob storage, and then transform the data and save it to a staging area. Then train a machine learning model using the transformed data and output the model as pickle file to blob storage. 
 
 ## Prerequisites
 
