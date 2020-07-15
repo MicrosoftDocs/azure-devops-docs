@@ -93,36 +93,28 @@ You can choose to have the deployment to each stage triggered automatically when
 
   <a name="stage-scheduled-triggers"></a>
 
-* **A predefined schedule**. When you select this option,
-  you can select the days of the week and the time of day that
-  Azure Pipelines will automatically start a new deployment. Unlike scheduled
-  release triggers, you cannot configure multiple schedules for stage triggers.
-  Note that, with scheduled triggers, a new deployment request is created that deploys the 
-  artifacts from the current release. All deployment requests are executed on the stage as per the configured [queueing policies](../process/stages.md?tabs=classic#queuing-policies) defined on the stage.
-  For example, if the queueing policy is set to **Deploy latest and cancel the others**, any previously deployed artifacts
-  on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be
-  available.
+* **A predefined schedule**.
+  When you select this option, you can select the days of the week and the time of day that Azure Pipelines will automatically start a new deployment. Unlike scheduled release triggers, you cannot configure multiple schedules for stage triggers.
+  Note that, with scheduled triggers, a new deployment request is created that deploys the artifacts from the current release. All deployment requests are executed on the stage as per the configured [queueing policies](../process/stages.md?tabs=classic#queuing-policies) defined on the stage.
+  For example, if the queueing policy is set to **Deploy latest and cancel the others**, any previously deployed artifacts on the stage will be overwritten by the _most recently requested_ deployment. It does not necessarily require a newer version of the artifacts to be available.
 
-  ![The scheduled trigger conditions settings](media/trigger-02.png)
+  > [!div class="mx-imgBorder"]
+  > ![The scheduled trigger conditions settings](media/trigger-02.png)
 
 <a name="prtrigger"></a>
 
-* **A pull request that updates the artifacts**. If you have enabled
-  pull request triggers for your pipeline, you must also enable
-  pull request deployment for the specific stages where you want the release to be deployed. 
+* **A pull request that updates the artifacts**.
+  If you have enabled pull request triggers for your pipeline, you must also enable pull request deployment for the specific stages where you want the release to be deployed. 
   You may also want to set up a [branch policy](../../repos/git/pr-status-policy.md) for the branch. For more information, see [Deploy pull request builds](deploy-pull-request-builds.md).
 
-  ![The pull request trigger conditions settings](media/trigger-02c.png)
+  > [!div class="mx-imgBorder"]
+  > ![The pull request trigger conditions settings](media/trigger-02c.png)
 
-* **Manually by a user**. Releases are
-  not automatically deployed to the stage. To
-  deploy a release to this stage, you must manually
-  start a release and deployment from the release pipeline
+* **Manually by a user**.
+  Releases are not automatically deployed to the stage. To deploy a release to this stage, you must manually start a release and deployment from the release pipeline
   or from a build summary.
 
-You can combine the automated settings to have deployments created
-automatically either when a new build is available or according to
-a schedule.
+You can combine the automated settings to have deployments created automatically either when a new build is available or according to a schedule.
 
 ::: moniker range="tfs-2015"
 
