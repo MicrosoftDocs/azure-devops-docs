@@ -24,19 +24,6 @@ Both the report and the widget derive data from [Analytics](../powerbi/what-is-a
 
 You can add either the report or widget to a dashboard. Also, you can monitor progress using the [Analytics-based burndown or burnup widgets](configure-burndown-burnup-widgets.md) which provide additional configuration options. 
 
-> [!NOTE]  
-> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
-
-Use this article to learn about:
-
-> [!div class="checklist"]  
-> * Metrics tracked in the sprint burndown report and widget  
-> * Team activities required to track tasks and Remaining Work      
-> * How to set interactive controls to personalize your view of the sprint burndown report 
-> * How to add the in-context Burndown Trend report to a dashboard  
-> * How to configure the Sprint Burndown widgets  
-> * How to view current and past sprint burndowns 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
@@ -73,12 +60,22 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
+
+Use this article to learn about: 
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="checklist"]  
+> * Metrics tracked in the sprint burndown report and widget  
+> * Team activities required to track tasks and Remaining Work      
+> * How to set interactive controls to personalize your view of the sprint burndown report 
+> * How to add the in-context Burndown Trend report to a dashboard  
+> * How to configure the Sprint Burndown widgets  
+> * How to view current and past sprint burndowns 
+
+::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
 
-> [!NOTE]  
-> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
-
-Use this article to learn:
 
 > [!div class="checklist"]  
 > * Metrics tracked in the sprint burndown report and widget  
@@ -87,6 +84,10 @@ Use this article to learn:
 > * How to view current and past sprint burndowns 
 
 ::: moniker-end
+
+
+> [!NOTE]  
+> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
 
 
 ## The in-context Burndown Trend report
@@ -137,7 +138,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 In the widget catalog, you'll find two versions of the Sprint Burndown widget:  the Analytics-based **Sprint Burndown** and **Sprint Burndown (Legacy)** which is built from the work tracking data store.  
 
