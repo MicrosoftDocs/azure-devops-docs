@@ -105,7 +105,7 @@ The above statement instructs the universal package task and the pipeline artifa
 To learn more, see [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or the [.gitignore documentation](https://git-scm.com/docs/gitignore).
 
 > [!IMPORTANT]
-> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables#system-variables) to learn more about predefined variables.
+> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables.md#system-variables) to learn more about predefined variables.
 
 ## Downloading artifacts
 
