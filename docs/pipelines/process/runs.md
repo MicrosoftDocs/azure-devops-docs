@@ -177,7 +177,8 @@ To help detect these conditions, the agent sends a heartbeat message once per mi
 If the server doesn't receive a heartbeat for five consecutive minutes, it assumes the agent will not come back.
 The job is marked as a failure, letting the user know they should re-try the pipeline.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
+
 ## Manage runs through the CLI
 
 Using the Azure DevOps CLI, you can list the pipeline runs in your project and view details about a specific run. You can also add and delete tags in your pipeline run. 
