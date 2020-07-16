@@ -1,4 +1,4 @@
-Once your extension has been packaged, you can upload it to the Marketplace under a publisher. The `publisher` identifer specified in your [extension's manifest file](../../develop/manifest.md) must match the identifier of the publisher the extension is uploaded under.
+Once your extension is packaged, you can upload it to the Marketplace under a publisher. The `publisher` identifer specified in your [extension's manifest file](../../develop/manifest.md) must match the identifier of the publisher the extension is uploaded under.
 
 To upload an extension to the Marketplace:
 
@@ -7,7 +7,7 @@ To upload an extension to the Marketplace:
 3. After a quick validation, your extension appears in the extensions list: 
     ![first](../../publish/media/manage-first.png)
 
-At this point, your extension is not visible to any accounts and can't be installed until you share it.
+At this point, your extension isn't visible to any accounts and can't be installed until you share it.
 
 **Protective Scans**
 

@@ -178,7 +178,7 @@ You can name these images however you want as long as the extension manifest in 
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
+* Find out more about the contribution points in the [extension points reference](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/reference/targets/overview)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 
@@ -632,8 +632,8 @@ You need another preview image for the second widget. Name this `preview2.png` a
 
 ### Step 6: Package, Publish, and Share
 
-If you haven't published your extension yet, then read [this](#package-publish-share) to package, publish, and share your extension. 
-If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
+If you haven't published your extension yet, go [here](#package-publish-share) to package, publish, and share your extension. 
+If you've already published the extension, you can repackage the extension, as described [here](#package-the-extension), and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
 
 
 ### Step 7: Add Widget From the Catalog
@@ -979,7 +979,7 @@ At the end of this part, the manifest file should contain three widgets and one 
 ### Step 6: Package, Publish, and Share
 
 If you have not published your extension yet, then read [this section](#package-publish-share) to package, publish, and share your extension. 
-If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update) to the Marketplace.
+If you have already published the extension before this point, you can repackage the extension as described [here](#package-the-extension) and directly [update it](../publish/overview.md#update-an-extension) to the Marketplace.
 
 ### Step 7: Add Widget From the Catalog
 Now, go to your team dashboard at https:\//dev.azure.com/{yourOrganization}/{yourProject}. If this page is already open, refresh it. 
@@ -1043,7 +1043,7 @@ The extension manifest for the third sample in this guide would look like the be
 }
 ```
 
-With the above change, [repackage](#package-the-extension) and [update](../publish/overview.md#update) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
+With the above change, [repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension. Refresh the dashboard that has this widget (Hello World Widget 3 (with config)). 
 Open the configuration mode for your widget, you should now be able to see the option to change the widget name and size.
 
 ![Widget where name and size can be configured](../media-procedures/add-dashboard-widget/sampleConfigureNameAndSize.png)
@@ -1080,5 +1080,5 @@ return {
 }
 ```
 
-[Repackage](#package-the-extension) and [update](../publish/overview.md#update) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
+[Repackage](#package-the-extension) and [update](../publish/overview.md#update-an-extension) your extension again. Refresh the dashboard that has this widget. Any changes to the widget name, in the configuration mode, update the widget title now.
 

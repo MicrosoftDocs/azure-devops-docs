@@ -12,6 +12,8 @@
       href: get-started/client-libraries/samples.md
     - name: .NET (Legacy)
       href: get-started/client-libraries/soapSamples.md
+    - name: REST API Samples
+      href: get-started/rest/samples.md
 - name: Concepts
   items:
     - name: Best practices
@@ -40,6 +42,8 @@
       href: get-started/authentication/oauth.md
     - name: Create service hooks subscriptions programmatically
       href: ../service-hooks/create-subscription.md
+    - name: Call REST API
+      href: how-to/call-rest-api.md
     - name: Create a PR status server
       href: ../repos/git/create-pr-status-server.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Use Azure Functions to create custom branch policies
@@ -50,6 +54,8 @@
       href: ../service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Service hooks events
       href: ../service-hooks/events.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
+    - name: Azure DevOps Services REST API
+      href: https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1
     - name: REST APIs for TFS 2015, 2017, and 2018
       items:
         - name: Overview

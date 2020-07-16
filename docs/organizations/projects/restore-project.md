@@ -105,8 +105,8 @@ To restore a project, you must delete project permissions and have the "delete p
    ```
    $collectionUrl = "https://localhost/defaultcollection"
    $projectName = 'Project1'
-   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where > name -eq $projectName
-   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -Headers @> > > {'Content-Type' = 'application/json'}
+   $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where {$_.name -eq $projectName}
+   irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
    ```
 ::: moniker-end
 

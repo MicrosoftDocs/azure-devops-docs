@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 12/05/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -228,6 +228,13 @@ Jobs can be of different types, depending on where they run.
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
 Use demands to specify what capabilities an agent must have to run your job.
+
+> [!NOTE]
+>
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -540,7 +547,7 @@ Conditions are not supported in this version of TFS.
 * * *
 <h2 id="timeouts">Timeouts</h2>
 
-To avoid taking up resources when your job is hung or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
+To avoid taking up resources when your job is unresponsive or waiting too long, it's a good idea to set a limit on how long your job is allowed to run. Use the job timeout setting to specify the limit in minutes for running the job. Setting the value to **zero** means that the job can run:
 
 * Forever on self-hosted agents
 * For 360 minutes (6 hours) on Microsoft-hosted agents with a public project and public repository
@@ -807,7 +814,7 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
-- [GitHub](../repos/github.md#get-the-source-code)
+- [GitHub](../repos/github.md#checkout)
 - [Azure Repos Git](../repos/azure-repos-git.md)
 - [TFVC](../repos/tfvc.md)
 

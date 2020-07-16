@@ -4,8 +4,8 @@ description: Get started with Code Search in Azure DevOps and TFS across all you
 ms.assetid: 95BAB38A-C7D3-414D-9FE3-BB72B549C21C
 ms.technology: devops-collab
 ms.topic: quickstart
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 ms.date: 10/16/2019
 monikerRange: '>= tfs-2017'
 ---

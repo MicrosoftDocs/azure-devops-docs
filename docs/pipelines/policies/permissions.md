@@ -208,6 +208,10 @@ You [add users to the following roles](set-permissions.md) from the collection-l
 [!INCLUDE [temp](../../organizations/security/includes/deployment-pool-roles.md)]
 
 
+## Environment permissions 
+
+You can use roles to control who [can create, view, and manage environments](../process/environments.md#security). When you create an environment in a YAML, contributors and project administrators will be granted the administrator role. When you create an environment through the UI, only the creator will have the administrator role. 
+
 ## Related notes 
 
 - [Set build and release permissions](set-permissions.md)
