@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -70,6 +70,7 @@ In this article you'll learn:
 
 
 <a id="install-plans">  </a>
+
 ### Install the Delivery Plans extension 
 
 The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
@@ -247,7 +248,9 @@ For additional resources for working with multiple teams, see these additional t
 
 
 <a id="plans-rest-api">  </a>
+
 ### Programmatically manage Delivery Plans  
+
 You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans).
 
 

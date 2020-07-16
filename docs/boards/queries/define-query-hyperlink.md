@@ -57,7 +57,7 @@ SELECT [System.ID], [System.Title]
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 ```  
 https://{ServerName}/{CollectionName}/{ProjectName}/_workitems?_a=query&wiql={Encoded WorkItemQueryLanguage}

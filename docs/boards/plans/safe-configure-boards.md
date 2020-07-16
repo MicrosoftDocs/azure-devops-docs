@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -382,7 +382,7 @@ For teams that support several other teams, such as a UX Design team, configure 
 <a id="programmatic-tools" /> 
 <a id="command-line-and-programmatic-tools" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Command-line and programmatic tools
 

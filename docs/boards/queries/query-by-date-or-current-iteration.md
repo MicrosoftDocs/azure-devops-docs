@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: sample
 monikerRange: '>= tfs-2013'
-ms.date: 03/10/2020  
+ms.date: 07/09/2020
 ---
 
 # Query by date or current iteration
@@ -171,14 +171,11 @@ Not all fields are valid for all work item types (WITs). Jump to [date fields](#
 ## Start of Day, Week, Month, or Year date-based queries
 
 The following examples show how to use the <strong>StartOf...</strong> macros to filter for work items with various offsets. For additional examples for using these macros, see [WIQL syntax](wiql-syntax.md#start-of). 
-
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
-
 > [!NOTE]   
 > Requires Azure DevOps Server 2019 Update 1 or later version. 
-
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019"

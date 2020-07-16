@@ -137,7 +137,7 @@ Connection from an Office client to an Azure Boards project requires that you ha
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019 || azure-devops-2020" 
+::: moniker range=">= azure-devops-2019 < azure-devops" 
 
 - To connect Excel to Azure Boards, you must have installed Office Excel 2010 or later version, including Office Excel 365. 
 - Installed [Azure DevOps Office Integration 2019 (free)](https://visualstudio.microsoft.com/downloads/#other-family).

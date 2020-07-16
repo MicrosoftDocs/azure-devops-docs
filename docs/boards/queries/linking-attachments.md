@@ -29,7 +29,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019" 
+::: moniker range=">= tfs-2017 < azure-devops" 
 - Attachment File Count
 - (Discussion) Comment Count 
 - External Link count
@@ -39,7 +39,7 @@ You can [link work items to track related work and dependencies](link-work-items
 ::: moniker-end 
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015" 
+::: moniker range="<= tfs-2015" 
 - Attachment File Count
 - External Link count
 - Hyperlink Count
@@ -306,14 +306,14 @@ For Azure Boards (cloud service), you can add up to 100 attachments to a work it
 - [Work item field index](../work-items/guidance/work-item-field.md) 
 
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019" 
+::: moniker range=">= tfs-2015 < azure-devops" 
 
 ### Visualize related work and other objects 
 
 You can view related work items and object within a work item form by installing the [Work item visualization extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.WorkItemVisualization) available from the Visual Studio Marketplace, Azure DevOps tab. 
 ::: moniker-end 
 
-::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+::: moniker range=">= tfs-2013 < azure-devops" 
 
 ### Add custom link types or customize the links controls 
 
