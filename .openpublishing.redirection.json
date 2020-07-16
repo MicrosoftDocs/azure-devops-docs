@@ -13166,48 +13166,48 @@
     }, 
  {
     "source_path": "docs/extend/develop/ui-controls/comboo.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/comboo",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/comboo",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/configure.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/configure",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/configure",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/grido.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/grido",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/menubaro.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/menubaro",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/menubaro",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/modaldialogo.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/modaldialogo",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/modaldialogo",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/pivotfiltero.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/pivotfiltero",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/pivotfiltero",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/splittero.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/splittero",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/splittero",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/treeviewo.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/treeviewo",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/treeviewo",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/develop/ui-controls/waitcontrolo.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/develop/ui-controls/waitcontrolo",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/develop/ui-controls/waitcontrolo",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/_data/disclaimer.md",
@@ -13221,58 +13221,58 @@
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/AgentPoolQueue.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/AgentPoolQueue",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/AgentPoolQueue",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/AgentStatus.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/AgentStatus",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/AgentStatus",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/ArtifactResource.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/ArtifactResource",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/ArtifactResource",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/AuditAction.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/AuditAction",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/AuditAction",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/Build.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/Build",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/Build",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildAgent.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildAgent",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildAgent",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildArtifact.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildArtifact",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildArtifact",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildArtifactAddedEvent.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildArtifactAddedEvent",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildArtifactAddedEvent",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildAuthorizationScope.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildAuthorizationScope",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildAuthorizationScope",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildBadge.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildBadge",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildBadge",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildChangesCalculatedEvent.md",
-    "redirect_url": "/previous-versions/azure/devops/docs/extend/reference/client/api/TFS/Build/Contracts/BuildChangesCalculatedEvent",
-    "redirect_document_id": true
+    "redirect_url": "/previous-versions/azure/devops/extend/reference/client/api/TFS/Build/Contracts/BuildChangesCalculatedEvent",
+    "redirect_document_id": false
 },
 {
     "source_path": "docs/extend/reference/client/api/TFS/Build/Contracts/BuildCompletedEvent.md",
