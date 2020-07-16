@@ -5,8 +5,8 @@ description: Advanced options for using Code Search across all your projects in 
 ms.assetid: 936AA33C-4AEF-461E-B49B-C98A59098282
 ms.technology: devops-collab
 ms.topic: conceptual
-ms.author: kaelli
-author: KathrynEE
+ms.author: chcomley
+author: chcomley
 monikerRange: '>= tfs-2017'
 ms.date: 10/10/2019
 ---

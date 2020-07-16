@@ -3,6 +3,7 @@ title: Upload or download the Microsoft Project Mapping file
 titleSuffix: TFS
 description: Upload or download the Microsoft Project mapping file using the TFSFieldMapping command
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 43474098-a23a-49c2-bfa8-2f4beb0e5399
 ms.author: kaelli
 author: KathrynEE

@@ -7,7 +7,7 @@ ms.technology: devops-code-git
 ms.author: apawast
 author: apawast
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 07/10/2020
 monikerRange: '>= tfs-2013'
 ---
 
@@ -547,38 +547,7 @@ To copy changes made in a pull request to another branch in your repo, follow th
 
 ## Set a new default branch
 
->[!NOTE]
->This step requires [Edit Policies permissions](../../organizations/security/set-git-tfvc-repository-permissions.md#git-repository) on your Git repo.
+[!INCLUDE [](includes/change-default-branch-instructions.md)]
 
-Configure your Git repo to use a different default branch to merge code into when your team creates new pull requests.
-You can use a branch other than `master` for new changes or change your main line of development in your repo.
-
-::: moniker range=">= azure-devops-2019"
-
-1. [Go to your project](../../project/navigation/go-to-project-repo.md) and select **Project settings**.
-
-1. Scroll down and select **Repositories** from the **Code** section.
-
-1. Select your repository and expand the branches.
-
-1. Select **...** next to a branch and choose **Set as default branch**.
-
-   ![Set default branch](media/pull-requests/set-default-branch-new-nav.png)
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-1. Select the settings button in your project open to open the project administration page.
-
-   ![Open the administrative area of the web portal for your project](media/pull-requests/gear_icon_settings.png)
-
-1. Select **Version Control**.
-
-1. Select your Git repository. Your branches are displayed under your repo.
-
-1. Select the **...** next to the branch you want to set as default, then select **Set as default branch**.
-
-   ![Set a default branch for a Git repo](media/pull-requests/set_default_branch.png)
-
-::: moniker-end
+There are other aspects you should consider before making this change.
+Learn about them in the topic on [changing your default branch](change-default-branch.md).

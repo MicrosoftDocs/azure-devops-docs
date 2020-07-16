@@ -216,8 +216,8 @@ We are convinced that transparency around how we design and operate our
 service is critical to establishing trust with our customers. This white
 paper is part of our effort to shed light on how we manage and protect
 your data. In addition, we maintain a
-[blog](https://blogs.msdn.com/b/vsoservice/) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
-[blog](https://blogs.msdn.com/b/bharry/) addressing, among other things,
+[blog](https://blogs.msdn.microsoft.com/vsoservice/?p=15015) that provides real-time updates whenever a service disruption, planned, or unplanned, takes place so you can adjust your activities as needed. Furthermore, Brian Harry, the corporate vice-president in charge of Azure DevOps, maintains an active
+[blog](https://docs.microsoft.com/archive/blogs/korbyp/brian-harry-blogs) addressing, among other things,
 lessons learned by operating the service.
 
 ## Compliance certifications
@@ -285,7 +285,7 @@ In addition to this white paper, see the following resources available for
 your review and education.
 
 - [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
-- [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
+- [Azure DevOps status](https://devblogs.microsoft.com/devopsservice/)
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)
