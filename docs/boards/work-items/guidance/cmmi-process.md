@@ -79,7 +79,7 @@ To get started, you can open a shared query and create a chart based on your tra
 [!INCLUDE [temp](../../includes/powerbi-reports-links.md)] 
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 <a id="reports"></a>
 ## SQL Server reports  
 
@@ -113,7 +113,7 @@ As updates are made to the CMMI process template, the version number is updated.
 > [!div class="mx-tdCol2BreakAll"]
 > |TFS version | CMMI name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | CMMI | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | CMMI | 17 |
 > | TFS 2018 | CMMI | 16 |
 > | TFS 2017 | CMMI | 15 |
 > | TFS 2015 | CMMI | 7 |
