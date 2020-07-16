@@ -215,7 +215,7 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 
 You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
 
-```yml
+```yaml
 
 jobs:
 - job: A
@@ -234,9 +234,9 @@ jobs:
 ```
 ### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
 
-You are experiencing this issue because the condition configured in the stage doesn't include a job status check function, so what you need to do is to add a job status check function to the condition so If you cancel a job while it's in the queue, then the entire job is canceled, including all the other stages with this functions configured. (see [Job status functions](expressions.md#job-status-functions)).
+You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
 
-```yml
+```yaml
 
 stages:
 - stage: Stage1
