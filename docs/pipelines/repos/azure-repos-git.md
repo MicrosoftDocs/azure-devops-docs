@@ -4,7 +4,7 @@ description: Using an Azure Repos Git repository with Azure Pipelines
 ms.topic: reference
 ms.assetid: aa910a2f-b668-4a08-9ac0-adc5f9ae417a
 ms.custom: seodec18
-ms.date: 04/13/2020
+ms.date: 07/07/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -141,40 +141,47 @@ Building pull requests from Azure Repos forks is no different from building pull
 
 [!INCLUDE [ci-triggers](includes/source-options.md)]
 
-## Pricing
-
-Azure Pipelines is free for Azure Repos Git repositories, with multiple free offerings available depending on whether your Azure DevOps project is public or private.
-
-If your Azure Repos Git repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users submit pull requests, they can view the status of builds that automatically validate those pull requests.
-
-> [!NOTE]
-> Azure Repos Git repositories do not support forks by users who do not have explicit access to the project.
-
-If your project is public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each. If your project is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. For more information, see [parallel jobs](../licensing/concurrent-jobs.md).
-
-For more information on public projects, see [Create a public project](../../organizations/public/create-public-project.md).
-
 ::: moniker-end
 
 <a name="q-a"></a>
 ## FAQ
 
-### I see the following permission error in the log file during checkout step. How do I fix it?
+Problems related to Azure Repos integration fall into three categories:
+
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Failing checkout](#failing-checkout):** My pipeline is being triggered, but it fails in the checkout step.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
+
+[!INCLUDE [qa](includes/qa2.md)]
+
+* Are you configuring the PR trigger in the YAML file or in branch policies for the repo? For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
+
+[!INCLUDE [qa](includes/qa3.md)]
+
+### Failing checkout
+
+#### I see the following error in the log file during checkout step. How do I fix it?
 
 ```log
 remote: TF401019: The Git repository with name or identifier XYZ does not exist or you do not have permissions for the operation you are attempting.
 fatal: repository 'XYZ' not found
-##[error]Git fetch failed with exit code: 128
+##[error] Git fetch failed with exit code: 128
 ```
 
-* First, check if the repository still exists.
-* Determine the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline.
+Follow each of these steps to troubleshoot your failing triggers:
+
+* Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
+
+* What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
   * If the scope is **collection**: 
     * This may be an intermittent error. Re-run the pipeline.
     * Someone may have removed the access to **Project Collection Build Service account**.
       * Go to the **project settings** of the project in which the repository exists. Select Repos -> Repositories -> specific repository.
       * Check if **Project Collection Build Service (your-collection-name)** exists in the list of users.
       * Check if that account has **Create tag** and **Read** access.
+
   * If the scope is **project**: 
     * Is the repo in the same project as the pipeline?
       * Yes: 
@@ -191,11 +198,6 @@ fatal: repository 'XYZ' not found
             * Add **your-project-name Build Service (your-collection-name)** to the list of users, where your-project-name is the name of the project in which your pipeline exists (A).
             * Give **Create tag** and **Read** access to the account.
 
+### Wrong version
+
 [!INCLUDE [qa](includes/qa1.md)]
-
-[!INCLUDE [qa](includes/qa2.md)]
-
-* For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
-
-[!INCLUDE [qa](includes/qa3.md)]
-

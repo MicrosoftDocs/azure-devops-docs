@@ -285,7 +285,7 @@ In addition to this white paper, see the following resources available for
 your review and education.
 
 - [Azure DevOps home page](https://azure.microsoft.com/services/devops/)
-- [Azure DevOps status](https://blogs.msdn.com/b/vsoservice/)
+- [Azure DevOps status](https://devblogs.microsoft.com/devopsservice/)
 - [Azure DevOps credential storage](credential-storage.md)
 - [Azure DevOps data location](data-location.md)
 - [Developer Services privacy statement](https://privacy.microsoft.com/privacystatement)

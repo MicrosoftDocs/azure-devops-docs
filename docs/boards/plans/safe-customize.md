@@ -145,6 +145,12 @@ You can capture a value stream using a field or tags. Tags represent a more info
 ### WSJF (Weighted Shortest Job First)
 
 We recommend using the [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) to compute and store WSJF for your SAFe® deliverables. 
+
+
+> [!NOTE]  
+> The [WSJF extension by Microsoft DevLabs](https://marketplace.visualstudio.com/items?itemName=MS-Agile-SAFe.WSJF-extension) is not a supported feature of Azure Boards and therefore not supported by the product team. It is an open-source project. For questions, suggestions, or issues you have when using this extension, visit the extension page.
+
+
  
 SAFe® defines WSJF (Weighted Shortest Job First) as a calculation of cost of delay versus job size. This value can help teams prioritize their portfolio backlogs with the items contributing the highest ROI.
 
