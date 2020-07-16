@@ -16558,6 +16558,66 @@
     "source_path": "docs/extend/test/debug-in-browser.md",
     "redirect_url": "/previous-versions/azure/devops/extend/test/debug-in-browser",
     "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/collect-more-diagnostic-data-in-manual-tests.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/connect-microsoft-test-manager-to-your-team-project-and-test-plan",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/copying-and-cloning-test-suites-and-test-cases.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/exploratory-testing-using-microsoft-test-manager.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/exploratory-testing-using-microsoft-test-manager",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/guidance-mtm-usage.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/guidance-mtm-usage",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/plan-manual-tests-with-microsoft-test-manager.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/record-play-back-manual-tests.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/run-automated-tests-with-microsoft-test-manager.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/run-manual-tests-with-microsoft-test-manager.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/share-steps-between-test-cases.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/test-configurations-specifying-test-platforms.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/test-configurations-specifying-test-platforms",
+    "redirect_document_id": true
+},
+{
+    "source_path": "docs/test/mtm/testing-microsoft-store-apps.md",
+    "redirect_url": "/previous-versions/azure/devops/test/mtm/testing-microsoft-store-apps",
+    "redirect_document_id": true
 }
  ]
 }
