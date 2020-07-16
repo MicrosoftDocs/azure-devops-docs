@@ -203,9 +203,9 @@ jobs:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I've got a conditional step that runs even when a job is canceled. Does this affect a job that I canceled in the queue?
+### I've got a conditional step that runs even when a job is canceled. Does my conditional step affect a job that I canceled in the queue?
 
-No. If you cancel a job while it's in the queue, then the entire job is canceled, including steps like this.
+No. If you cancel a job while it's in the queue, then the entire job is canceled, including conditional steps.
 
 ### I've got a conditional step that should run even when the deployment is canceled. How do I specify this?
 
