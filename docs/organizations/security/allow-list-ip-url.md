@@ -56,6 +56,7 @@ To ensure your organization works with any existing firewall or IP restrictions,
 * `https://gallerycdn.vsassets.io` (hosts Azure DevOps extensions)
 * `https://static2.sharepointonline.com`  (hosts some resources that Azure DevOps uses in "office fabric" UI kit for fonts, and so on)
 * `https://*.vstmrblob.vsassets.io` (hosts Azure DevOps TCM log data)
+* `https://vsrm.dev.azure.com` (package feed)
 
 
 ## Additional domains
