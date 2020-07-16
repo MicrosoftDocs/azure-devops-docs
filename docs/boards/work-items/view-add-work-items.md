@@ -17,7 +17,7 @@ ms.date: 07/09/2020
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2020 |Azure DevOps Server 2019 |Azure DevOps Server 2019 | Visual Studio 2019** 
+**Azure Boards | Azure DevOps Server 2020 |Azure DevOps Server 2019 | Visual Studio 2019** 
 
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 

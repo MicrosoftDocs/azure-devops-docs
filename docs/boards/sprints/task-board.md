@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 # 6. Update and monitor your Taskboard
@@ -49,10 +49,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Open the sprint Taskboard for your team
 
-
-
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
@@ -396,6 +393,6 @@ Requires TFS 2015.1 or later version.
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end

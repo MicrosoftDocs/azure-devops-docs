@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -71,7 +71,7 @@ some or all of the items based on these estimates.
 >
 > For a beginner's guide to planning and tracking work, see [Get started with Agile tools](../get-started/what-is-azure-boards.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 From your web browser, open your product backlog. 
 
