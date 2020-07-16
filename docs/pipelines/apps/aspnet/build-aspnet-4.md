@@ -33,7 +33,7 @@ monikerRange: '>= tfs-2017'
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
@@ -41,7 +41,7 @@ monikerRange: '>= tfs-2017'
 
 ### Get the code
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](../../ecosystems/includes/get-code-before-sample-repo.md)]
 
@@ -75,7 +75,7 @@ The sample app is a Visual Studio solution that has two projects:
 * An ASP.NET Web Application project that targets .NET Framework 4.5
 * A Unit Test project
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
@@ -97,7 +97,7 @@ The sample app is a Visual Studio solution that has two projects:
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build your .NET Framework projects without needing to set up any infrastructure of your own. The [Microsoft-hosted agents](../../agents/hosted.md) in Azure Pipelines have several released versions of Visual Studio pre-installed to help you build your projects.
 * Use `windows-2019` for Windows Server 2019 with Visual Studio 2019
