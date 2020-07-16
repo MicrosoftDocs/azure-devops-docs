@@ -216,7 +216,7 @@ The following YAML installs the `scipy` package in the conda environment named `
 On Hosted macOS, the agent user doesn't have ownership of the directory where Miniconda is installed.
 For a fix, see the "Hosted macOS" tab under [Add conda to your system path](#add-conda-to-your-system-path).
 
-### Why is my build hanging on a `conda create` or `conda install` step?
+### Why does my build stop responding on a `conda create` or `conda install` step?
 If you forget to pass `--yes`, conda will stop and wait for user interaction.
 
 ### Why is my script on Windows stopping after it activates the environment?

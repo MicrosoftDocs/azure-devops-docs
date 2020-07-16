@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 09/18/2019
+ms.date: 06/04/2020
 ---
 
 # Choose a process 
@@ -364,9 +364,12 @@ used by the three default processes.
 
 ### Workflow states, transitions, and reasons
 
-Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. 
+Workflow states support tracking the status of work as it moves from a new state to a closed or a done state. Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state.
 
-Each workflow consists of a set of states, the valid transitions between the states, and the reasons for transitioning the work item to the selected state. 
+> [!IMPORTANT]  
+> For Azure DevOps Services and Azure DevOps Server 2019, the default workflow transitions support any state to any state transition. You can customize these workflows to restrict some transitions .See [Customize work tracking objects to support your team's processes](../../../reference/customize-work.md).  
+> 
+> Also, you can view the supported workflow transitions for each work item type by installing the [State Model Visualization](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization) Markeplace extension. This extension adds a new hub under Boards labeled **State Visualizer**. On that page you can choose a work item type and view the workflow state model.  
 
 The following diagrams show the typical forward progression of 
 those WITs used to track work and code defects for the three default processes. 

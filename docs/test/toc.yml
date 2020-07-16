@@ -113,6 +113,8 @@
     href: /rest/api/azure/devops/testplan/test%20%20plans
 - name: Resources
   items:
+  - name: Azure Pipelines Test
+    href: ../pipelines/test/test-glossary.md
   - name: Azure DevOps Blog, Test
     href: /archive/blogs/anutthara/books-on-software-testing-with-visual-studio-alm-2010
   - name: Plug-ins for Visual Studio

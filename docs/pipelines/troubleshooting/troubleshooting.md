@@ -56,7 +56,7 @@ If a pipeline doesn't start at all, check the following common trigger related i
 
 YAML pipelines can have their `trigger` and `pr` trigger settings overridden in the pipeline settings UI. If your `trigger` or `pr` triggers don't seem to be firing, check that setting. While editing your pipeline, choose **...** and then **Triggers**.
 
-![Pipeline settings UI.../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
+![Pipeline settings UI](../repos/media/pipelines-options-for-git/yaml-pipeline-git-options-menu.png)
 
 Check the **Override the YAML trigger from here** setting for the types of trigger (**Continuous integration** or **Pull request validation**) available for your repo.
 
@@ -209,7 +209,7 @@ To check the capabilities and demands specified for your agents and pipelines, s
 ::: moniker range="azure-devops"
 
 > [!NOTE]
-> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands and you are using Microsoft-hosted agents, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
+> Capabilities and demands are typically used only with self-hosted agents. If your pipeline has demands that don't match the system capabilities of the agent, unless you have explicitly labelled the agents with matching capabilities, your pipelines won't get an agent.
 
 ::: moniker-end
 
@@ -285,7 +285,7 @@ If your pipeline gets an agent but fails to complete, check the following common
 * [My pipeline is failing on a command-line step such as MSBUILD](#my-pipeline-is-failing-on-a-command-line-step-such-as-msbuild)
 * [File or folder in use errors](#file-or-folder-in-use-errors)
 * [Intermittent or inconsistent MSBuild failures](#intermittent-or-inconsistent-msbuild-failures)
-* [Process hang](#process-hang)
+* [Process stops responding](#process-stops-responding)
 * [Line endings for multiple platforms](#line-endings-for-multiple-platforms)
 * [Variables having ' (single quote) appended](#variables-having--single-quote-appended)
 * [Service Connection related issues](#service-connection-related-issues)
@@ -400,9 +400,9 @@ File-in-use issues may result when leveraging the concurrent-process feature of 
 
 If you are experiencing intermittent or inconsistent MSBuild failures, try instructing MSBuild to use a single-process only. Intermittent or inconsistent errors may indicate that your target configuration is incompatible with the concurrent-process feature of MSBuild. See [MSBuild and /maxcpucount:[n]](#msbuild-and-maxcpucountn).
 
-### Process hang
+### Process stops responding
 
-Process hang causes and troubleshooting steps:
+Process stops responding causes and troubleshooting steps:
 
 * [Waiting for Input](#waiting-for-input)
 * [Process dump](#process-dump)
@@ -410,7 +410,7 @@ Process hang causes and troubleshooting steps:
 
 #### Waiting for Input
 
-A process hang may indicate that a process is waiting for input.
+A process that stops responding may indicate that a process is waiting for input.
 
 Running the agent from the command line of an interactive logged on session may help to identify whether a process is prompting with a dialog for input.
 
@@ -501,4 +501,3 @@ For detailed instructions for configuring and using logs, see [Review logs to di
 Report any problems or submit feedback at [Developer Community](https://developercommunity.visualstudio.com/).
 
 We welcome your suggestions:
-

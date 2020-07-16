@@ -14,7 +14,7 @@ ms.date: 12/13/2019
 
 
 
-# Sign up for free and invite others to collaborate on your project
+# Sign up for free and invite others to collaborate in Azure Boards
 
 [!INCLUDE [temp](../includes/version-vsts-only.md)]
 

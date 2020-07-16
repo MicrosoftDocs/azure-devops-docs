@@ -1,13 +1,12 @@
 ---
 title: Release artifacts and artifact sources
-ms.custom: seodec18
 description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS). This article lists and explains the different artifacts sources and how to consume them. It also explains the artifacts variables and download.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
 ms.author: ronai
 author: RoopeshNair
 ms.date: 05/21/2020
-ms.custom: contentperfq4
+ms.custom: "contentperfq4, seodec18"
 monikerRange: '>= tfs-2015'
 ---
 

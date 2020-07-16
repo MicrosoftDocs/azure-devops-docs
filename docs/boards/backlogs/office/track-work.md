@@ -263,6 +263,9 @@ To work in Project, see [Create your backlog and tasks using Project](create-you
 
 To add or modify work items by using Excel, you connect your worksheet to a project. Establishing this connection binds the document to the Azure DevOps project to exchange information. 
 
+> [!NOTE]   
+> When you connect to Azure Boards in the cloud, the **Team Project Collection** is automatically selected as their is only one collection associated with your Azure DevOps Services organization. When you connect to Azure Boards in an on-premises server, you choose the **Team Project Collection** prior to choosing the project.  
+
 You can start work from the web portal, Excel, or Visual Studio/Team Explorer. Your worksheet is associated with either a list of work items or a work item query.  
 
 ::: moniker range="<= tfs-2018" 

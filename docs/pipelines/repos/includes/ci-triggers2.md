@@ -24,5 +24,5 @@ trigger:
 If you don't specify any tag triggers, then by default, tags will not trigger pipelines.
 
 > [!NOTE]
-> If you specify tags in combination with branch filters that include file paths, the trigger will fire if the branch filter is satisfied and either the tag or the path filter is satisfied.
+> If you specify tags in combination with branch filters, the trigger will fire if either the branch filter is satisfied or the tag filter is satisfied.
 
