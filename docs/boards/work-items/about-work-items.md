@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 01/10/2020
+ms.date: 07/09/2020
 ---
 
 # Track work with user stories, issues, bugs, features, and epics 
@@ -241,7 +241,7 @@ Once you have a template defined, you can share it via email or a [dashboard](..
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md). 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
 - For project collections that use the On-premises XML process model: [Customize the On-premises XML process model](../../reference/on-premises-xml-process-model.md). 

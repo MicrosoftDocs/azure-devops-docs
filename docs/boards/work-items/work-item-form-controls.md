@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using work item form controls
 titleSuffix: Azure Boards 
 description: Use work item form controls to update status, link work items, and more in Azure Boards, Azure DevOps, & Team Foundation Server  
@@ -8,7 +8,7 @@ ms.assetid: A9AB9B95-61B4-41E7-AE7A-B96CD4AF9B33
 ms.topic: reference
 ms.author: kaelli
 monikerRange: '>= tfs-2017'
-ms.date: 04/09/2019
+ms.date: 07/09/2020
 ---
 
 # Work item form  
@@ -24,7 +24,7 @@ As the following image shows, each work item form comes with a number of control
 ![Work item form to track features or user stories](../backlogs/media/add-work-item-vsts-user-story-form.png)
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]    
 > Depending on the process chosen when the project was created&mdash;
@@ -34,7 +34,7 @@ As the following image shows, each work item form comes with a number of control
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops-2019"
 
 > [!NOTE]    
 >Depending on the process chosen when the project was created&mdash;
@@ -70,7 +70,9 @@ As the following image shows, each work item form comes with a number of control
 | ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  | 
 
 <a id="update-work-status">  </a>
+
 ## Update work status  
+
 As work progresses, team members can update the state and reassign it as needed. 
 
 <img src="../backlogs/media/add-work-item-vsts-update-state.png" alt="Product backlog item workflow, Scrum process" style="border: 1px solid #C3C3C3;" />  
