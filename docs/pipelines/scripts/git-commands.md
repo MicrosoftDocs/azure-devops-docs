@@ -99,7 +99,7 @@ On the [variables tab](../build/variables.md) set this variable:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
@@ -136,7 +136,7 @@ Certain kinds of changes to the local repository are not automatically cleaned u
 
 If you run into problems using an on-premises agent, make sure the repo is clean:
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 

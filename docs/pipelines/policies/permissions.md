@@ -26,11 +26,7 @@ For permissions, you grant or restrict permissions by setting the permission sta
 
 Once you have been added as a team member, you are a member of the Contributors group. This allows you to define and manage builds and releases. The most common built-in groups include Readers, Contributors, and Project Administrators. These groups are assigned the default permissions as listed below.
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](../../organizations/security/provide-stakeholder-pipeline-access.md).
-
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [temp](../../organizations/security/includes/pipelines-cloud.md)]
 

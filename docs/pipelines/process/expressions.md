@@ -499,7 +499,7 @@ The `stageDependencies` object is structured the same way. Within a single stage
   }
 }
 ```
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can check job status with dependencies. In this example, Job A will always be skipped and Job B will run.
 Job C will run, since all of its dependencies either succeed or are skipped.

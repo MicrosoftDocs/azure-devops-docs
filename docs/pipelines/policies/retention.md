@@ -184,7 +184,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Delete a run
 
@@ -207,7 +207,7 @@ days specified. However, you can manually delete these releases when you no long
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section. 
 ::: moniker-end
 

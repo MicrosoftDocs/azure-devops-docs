@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2015'
 You can customize how your pipeline runs are numbered. The default value for run number is `$(Date:yyyyMMdd).$(Rev:r)`.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 In YAML, this property is called `name`.
 If not specified, your run is given a unique integer as its name.
@@ -121,7 +121,7 @@ The time zone is the same as the time zone of the operating system of the machin
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### How can you reference the run number variable within a script?
 
