@@ -277,7 +277,8 @@ Additional features you can use to quickly link or change links that use the par
 
 ## Related articles
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md)
@@ -288,6 +289,7 @@ Additional features you can use to quickly link or change links that use the par
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
+
 - [Map backlog items to portfolio backlog items](organize-backlog.md)
 - [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md)
 - [Use Excel to edit parent-child links](../backlogs/office/bulk-add-modify-work-items-excel.md)

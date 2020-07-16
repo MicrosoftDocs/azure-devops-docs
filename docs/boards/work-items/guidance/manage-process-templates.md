@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2019
+ms.date: 07/09/2020
 ---
 
 # Upload or download a process template
@@ -27,7 +27,7 @@ When you create a project, the Project Creation Wizard (PCW) reads the process t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
 
 Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator). To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
@@ -40,7 +40,7 @@ You can upload, download, and delete process templates for a project collection.
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Prerequisites
 
