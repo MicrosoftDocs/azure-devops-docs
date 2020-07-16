@@ -20,7 +20,7 @@ To deploy your app to an Azure resource (to an app service or to a virtual machi
 
 > For other types of connection, and general information about creating and using connections, see [Service connections for builds and releases](service-endpoints.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Create an Azure Resource Manager service connection using automated security
 

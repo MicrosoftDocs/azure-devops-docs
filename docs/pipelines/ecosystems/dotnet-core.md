@@ -39,7 +39,7 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 ## Create your first pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Are you new to Azure Pipelines? If so, then we recommend you try this section before moving on to other sections.
 
@@ -47,7 +47,7 @@ Use a pipeline to automatically build and test your .NET Core projects. Learn ho
 
 ### Get the code
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](includes/get-code-before-sample-repo.md)]
 
@@ -69,7 +69,7 @@ Import this repo into your Git repo in TFS:
 https://github.com/MicrosoftDocs/pipelines-dotnet-core
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Sign in to Azure Pipelines
 
@@ -81,7 +81,7 @@ https://github.com/MicrosoftDocs/pipelines-dotnet-core
 
 ### Create the pipeline
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 [!INCLUDE [include](includes/create-pipeline-before-template-selected.md)]
 
@@ -158,7 +158,7 @@ steps:
 
 ## Build environment
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can use Azure Pipelines to build your .NET Core projects on Windows, Linux, or macOS without needing to set up any infrastructure of your own. 
 The [Microsoft-hosted agents](../agents/hosted.md) in Azure Pipelines have several released versions of the .NET Core SDKs preinstalled.
@@ -291,7 +291,7 @@ If your feed is authenticated, manage its credentials by creating a NuGet servic
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If you use Microsoft-hosted agents, you get a new machine every time your run a build, which means restoring the packages every time. 
 This restoration can take a significant amount of time. To mitigate this issue, you can either use Azure Artifacts or a self-hosted agent, in which case, 
@@ -299,7 +299,7 @@ you get the benefit of using the package cache.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 
 To restore packages from an external custom feed, use the **.NET Core** task:
 
@@ -341,7 +341,7 @@ For more information about NuGet service connections, see [publish to NuGet feed
 
 You build your .NET Core project either by running the `dotnet build` command in your pipeline or by using the .NET Core task.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 To build your project by using the .NET Core task, add the following snippet to your `azure-pipelines.yml` file:
 
@@ -401,7 +401,7 @@ To install a .NET Core global tool like [dotnetsay](https://www.nuget.org/packag
 If you have test projects in your repository, then use the **.NET Core** task to run unit tests by using testing frameworks like MSTest, xUnit, and NUnit. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher.
 Test results are automatically published to the service. These results are then made available to you in the build summary and can be used for troubleshooting failed tests and test-timing analysis.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -445,7 +445,7 @@ Use the **.NET Core** task with **Command** set to **test**.
 If you're building on the Windows platform, code coverage metrics can be collected by using the built-in coverage data collector. For this functionality, the test project must reference [Microsoft.NET.Test.SDK](https://www.nuget.org/packages/Microsoft.NET.Test.SDK) version 15.8.0 or higher. 
 If you use the **.NET Core** task to run tests, coverage data is automatically published to the server. The **.coverage** file can be downloaded from the build summary for viewing in Visual Studio.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Add the following snippet to your `azure-pipelines.yml` file:
 
@@ -518,7 +518,7 @@ To run tests and publish code coverage with Coverlet:
 After you've built and tested your app, you can upload the build output to Azure Pipelines or TFS, create and publish a NuGet package, 
 or package the build output into a .zip file to be deployed to a web application.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ### Publish artifacts to Azure Pipelines
 
@@ -628,7 +628,7 @@ For your app, you can also [build an image](containers/build-image.md) and [push
 
 If you're able to build your project on your development machine, but you're having trouble building it on Azure Pipelines or TFS, explore the following potential causes and corrective actions:
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 * We don't install prerelease versions of the .NET Core SDK on Microsoft-hosted agents. After a new version of the .NET Core SDK is released, 
 it can take a few weeks for us to roll it out to all the datacenters that Azure Pipelines runs on. You don't have to wait for us to finish 
 this rollout. You can use the **.NET Core Tool Installer**, as explained in this guidance, to install the desired version of the .NET Core SDK 
