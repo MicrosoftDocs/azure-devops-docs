@@ -28,6 +28,7 @@ You can select the exact versions of operating systems, tools, and dependencies 
 When you specify a container in your pipeline, the agent will first
 fetch and start the container.
 Then, each step of the job will run inside the container.
+You cannot have nested containers. Containers are not supported when an agent is already running inside a container. 
 
 ::: moniker range="> azure-devops-2019"
 If you need fine-grained control at the individual step level, [step targets](tasks.md#step-target) allow you to choose container or host for each step.
@@ -53,6 +54,7 @@ containers available on Docker Hub, especially those based on Alpine Linux, don'
 minimum requirements. Containers with a `ENTRYPOINT` might not work, since Azure Pipelines
 will `docker create` an awaiting container and `docker exec` a series of commands which expect
 the container is always up and running.
+
 
 > [!NOTE]
 > For Windows-based Linux containers, Node.js must be pre-installed.
