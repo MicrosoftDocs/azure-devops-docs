@@ -1,12 +1,12 @@
 ---
 title: Classic release and artifacts variables
-ms.custom: seodec18
 description: Understand the different Azure DevOps variables within the classic release Pipelines. This reference article covers both custom and default variables.
+author: shashban
+ms.author: shashban
 ms.assetid: 864FEB87-FE29-446D-804E-AD6ABDEA82C3
 ms.topic: conceptual
-ms.author: shashban
-author: shashban
-ms.date: 05/13/2020
+ms.custom: seodec18, contentperfq4
+ms.date: 07/15/2020
 monikerRange: '>= tfs-2015'
 ---
 
