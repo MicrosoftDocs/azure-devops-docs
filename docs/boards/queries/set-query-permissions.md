@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/25/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -52,7 +52,7 @@ If you're not a member of the project administrators group, [get added](../../or
 > [!TIP]   
 > You need **Delete** permissions to rename or move a shared query or folder, and **Contribute** permissions for the folder where you move the query to.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Choose **All**. Expand **Shared Queries**. 
  

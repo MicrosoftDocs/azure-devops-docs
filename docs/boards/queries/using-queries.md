@@ -9,7 +9,7 @@ monikerRange: ">= tfs-2013"
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 07/09/2020
 ---
 
 # Create and save managed queries

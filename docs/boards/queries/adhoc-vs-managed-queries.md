@@ -47,7 +47,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker-end  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png)  
 
@@ -55,7 +55,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-<img src="media/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" />   
+![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)   
 
 ::: moniker-end  
 
