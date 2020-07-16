@@ -110,7 +110,7 @@ As updates are made to the Agile process template, the version number is updated
 > [!div class="mx-tdCol2BreakAll"]
 > |On-premises version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | Agile | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Agile | 17 |
 > | TFS 2018 | Agile | 16 |
 > | TFS 2017 | Agile | 15 |
 > | TFS 2015 | Agile | 7 |
