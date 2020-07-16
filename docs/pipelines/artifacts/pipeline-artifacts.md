@@ -99,10 +99,13 @@ Using an `.artifactignore` file, it is possible to omit the path from the task c
 
 The above statement instructs the universal package task and the pipeline artifacts task to ignore all files except the ones with `.exe` extension.
 
-> [!IMPORTANT]
+> [!NOTE]
 > `.artifactignore` follows the same syntax as [.gitignore](https://git-scm.com/docs/gitignore) with some minor limitations. The plus sign character `+` is not supported in URL paths as well as some of the builds semantic versioning metadata (`+` suffix) in some packages types such as Maven.
 
 To learn more, see [Use the .artifactignore file](../../artifacts/reference/artifactignore.md) or the [.gitignore documentation](https://git-scm.com/docs/gitignore).
+
+> [!IMPORTANT]
+> Deleting and/or overwriting Pipeline Artifacts is not currently supported. The recommended workflow if you want to re-run a failed pipeline job is to include the job ID in the artifact name. `$(system.JobId)` is the appropriate variable for this purpose. See [System variables](../build/variables#system-variables) to learn more about predefined variables.
 
 ## Downloading artifacts
 
