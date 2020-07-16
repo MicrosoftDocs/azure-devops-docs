@@ -126,7 +126,7 @@ You can also find several open-source clients that have been added to [Marketpla
 
 ::: moniker range="<= tfs-2015"
 
-- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provides enhancements, tools, and command-line utilities that support increased productivity.
+- For TFS 2015 and earlier versions, you can install [TFS Power Tools](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.MicrosoftVisualStudioTeamFoundationServer2015Power). TFS Power Tools provide enhancements, tools, and command-line utilities that support increased productivity.
 
 ::: moniker-end
 

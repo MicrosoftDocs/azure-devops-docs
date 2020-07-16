@@ -72,21 +72,19 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Edit, rename, or delete a portfolio backlog 
 
-Open the context menu of a portfolio backlog that you've added to edit, rename, or delete it. From the Backlog levels page, open the Add portfolio backlog dialog. 
+From the Backlog levels page, choose the ![](../../../media/icons/actions-icon.png)  context menu of a portfolio backlog to edit, rename, or delete it.  
 
 > [!NOTE]    
-> You can't add an inherited WIT to any backlog level. 
+> You can't add an inherited work item type to any backlog level. 
 
-<img src="media/process/process-portfolio-backlog-context-menu.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
 
 Deleting a backlog level removes the backlog and board associated with the level for all teams, including customizations made to them. The work items defined with the associated work item types are not deleted or affected in any way. 
 
-<img src="media/process/process-edit-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-portfolio-backlog-dialog.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited WIT from the Epics or Features portfolio backlogs. 
-
-
+> You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs.  
 
 <a id="edit-product-backlog">  </a>
 

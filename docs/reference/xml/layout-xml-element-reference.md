@@ -3,6 +3,7 @@ title: Layout XML element reference
 titleSuffix: TFS 
 description: Use the Layout element to define how the elements on the work item form appear in Team Foundation Server
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 8898c116-62f8-416f-af33-90c389a038bb
 ms.author: kaelli
 author: KathrynEE

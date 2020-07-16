@@ -38,7 +38,7 @@ extensions can be installed directly by Azure DevOps Services users.
 
 ## What can you do with extensions?
 
-There are dozens of places where you can add to the Azure DevOps Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](./reference/targets/overview.md).
+There are dozens of places where you can add to the Azure DevOps Services user interface, and we're adding more every sprint. Learn about all of the places where you can add a hub in the [contributions reference](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/reference/targets/overview).
 
 - [Provide new Azure Pipelines tasks](./develop/add-build-task.md) that teams can use in their builds.
 - Use [dashboard widgets](./develop/add-dashboard-widget.md) to get custom views within Azure DevOps Services. 
@@ -54,15 +54,15 @@ You can develop an Azure DevOps Services extension for your continuous delivery 
 
 ## Extension building checklist
 
-1. Familiarize yourself with an overview of our platform and what's possible with it
-    1. [Azure DevOps extensions overview](https://azure.microsoft.com/services/devops/extend/)
+1. Familiarize yourself with this article, as well as the extension types already available within the Marketplace
+    1. [Extensions for Azure DevOps](https://marketplace.visualstudio.com/)
 2. Learn to build your first extension or check out our full set samples
     1. [Build your first extension](./get-started/node.md)
     2. [Samples](./develop/samples-overview.md)
 3. Familiarize yourself with our RESTful APIs. If you're integrating from a 3rd party app or service, you'll also want to check out our Service Hooks
-    1. [REST APIs](../integrate/index.md)
+    1. [REST APIs](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1)
     2. [Service Hooks](../service-hooks/overview.md)
-4. Once your extension is ready, you'll want to package it up, publish it to the Marketplace, and we hope you'll share it with the community!
+4. Once your extension is ready, you'll want to package it, publish it to the Marketplace, and then we hope you'll share it with the community!
     1. [Package, publish, and install your extension](./publish/overview.md)
     2. [Package and publish your integration with an external app or service](./publish/integration.md)
     3. [Share your work publicly with the entire community](./publish/publicize.md)

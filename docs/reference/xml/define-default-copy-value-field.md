@@ -3,8 +3,10 @@ title: Define default value or copy a value
 titleSuffix: TFS
 description: Syntax and usage for the COPY, DEFAULT, and SERVERDEFAULT elements  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 35c3fcdb-8399-406d-bb8b-179bb543c9ba
 ms.author: kaelli
+author: KathrynEE
 ms.date: 04/05/2017
 ---
 

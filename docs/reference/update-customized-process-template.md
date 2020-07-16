@@ -3,6 +3,7 @@ title: Update a process template
 titleSuffix: TFS  
 description: Update a process template to support customizing work tracking for Team Foundation Server  
 ms.technology: devops-agile
+ms.custom: process
 ms.assetid: 09A88E62-F887-4139-923E-FACE6D759F92  
 ms.author: kaelli
 author: KathrynEE
