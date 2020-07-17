@@ -590,7 +590,7 @@ Here are the steps to configure the webhook triggers:
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
     - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key 
   
-![Incoming Webhook Service connection](media/IncomingWebhook.png)
+![Incoming Webhook Service connection](media/incoming-webhook.png)
 
 3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline, and you can consume the payload data in the form of variables in your jobs.
 
@@ -635,7 +635,7 @@ When you manually trigger a CD YAML pipeline, we automatically evaluate the defa
 2. Clicking on it shows the list of resources consumed in this pipeline. 
 3. You can select each of the resource and pick a specific version from the list of versions available.
 Resource version picker is supported for pipeline, build, repository, container and package resources. 
-![Pipeline Version Picker](media/PipelineVersionPicker.png)
+![Pipeline Version Picker](media/pipelineversionpicker.png)
 
 For pipeline resource you can see all the available runs across all branches. You can search them based on the pipeline number or branch. And you can pick a run that is successfull, failed or in-progress run. This flexibility is given to ensure you can run your CD pipeline if you are sure your CI pipeline produced all the artifacts you need and you dont need to wait for the CI run is complete or re-run due to some unrelated stage in the CI run failed. However, when we evaluate defaut version for scheduled triggers or if you dont use manual version picker, we only consider successfully completed CI runs. 
 
@@ -677,7 +677,7 @@ Whenever a pipeline deploys to an environment, you can see a list of resources t
 
 ### Showing associated CD pipelines info in CI pipelines
 To provide end to end traceability, user should be able to track which CD pipelines are consuming a giving CI pipeline. You can see the list of CD YAML pipelines runs where a CI pipeline run is consumed through `pipeline` resource. In your CI pipeline run view, if it is consumed by other pipeline(s), you will see a 'Associated pipelines' tab where you can find all the pipeline runs that consume your pipeline and artifacts from it.
-![CD pipelines info in CI pipeline](media/CDInfoInCIPipelines.png)
+![CD pipelines info in CI pipeline](media/cdinfo-in-ci-pipelines.png)
 
 ### YAML resource trigger issues support and traceability
 It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing.
@@ -685,7 +685,7 @@ It can be confusing when pipeline triggers fail to execute. To help better under
 Resource triggers can fail to execute for two reasons.
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
 2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
-![Trigger Issues Supportability](media/TriggerIssuesSupportability.png)
+![Trigger Issues Supportability](media/trigger-supportability.png)
 
 ## FAQ
 
