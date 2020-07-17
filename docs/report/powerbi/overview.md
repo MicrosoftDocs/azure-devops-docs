@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>=azure-devops-2019'
-ms.date: 10/04/2019
+ms.date: 07-14-2020
 ---
 
 # About Power BI integration
@@ -26,7 +26,7 @@ With Power BI, you can pull data from [Azure DevOps Analytics](what-is-analytics
 
 Before you get started using Power BI to work with Analytics, make sure you have completed the following steps:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Install the *Power BI Desktop* *October 2018 Update* or a newer version. You can download it from the official [Power BI Desktop download page](/power-bi/desktop-what-is-desktop).  
 1. Configure the [permissions required to access Analytics](analytics-security.md).  
