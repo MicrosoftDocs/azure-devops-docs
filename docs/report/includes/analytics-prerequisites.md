@@ -1,8 +1,13 @@
 ---
+ms.technology: devops-analytics
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07-14-2020
 ---
 
 <a id="prerequisites">  </a>
+
 ## Prerequisites  
 
 
@@ -18,7 +23,7 @@ ms.topic: include
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 < azure-devops"
 
 - You must be a member of a project with Basic access or higher. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except stakeholders, can view Analytics views.

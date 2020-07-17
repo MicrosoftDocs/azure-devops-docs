@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/16/2019
+ms.date: 07-14-2020
 ---
 
 # What is Analytics?
@@ -24,6 +24,15 @@ Analytics provides the reporting platform for Azure DevOps and Azure DevOps Serv
 ::: moniker range="azure-devops"
 
 Analytics is enabled for all Azure DevOps Services projects and automatically populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
+
+You can access Analytics through dashboard widgets, in-context reports and rollup columns, Power BI, and OData queries. In addition to the [work tracking widgets](../dashboards/analytics-widgets.md), you can [analyze test results](../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) via the test analytic charts for builds and releases. 
+
+::: moniker-end
+
+
+::: moniker range="azure-devops-2020"
+
+Analytics is enabled for all projects on new project collections and automatically populates itself with all available Azure DevOps data. Once populated, it updates itself as data changes occur. For more information, read [Data available in Analytics](./data-available-in-analytics.md) and [Performance and latency](performance-latency.md).
 
 You can access Analytics through dashboard widgets, in-context reports and rollup columns, Power BI, and OData queries. In addition to the [work tracking widgets](../dashboards/analytics-widgets.md), you can [analyze test results](../../pipelines/test/test-analytics.md?toc=/azure/devops/report/toc.json&bc=/azure/devops/report/breadcrumb/toc.json) via the test analytic charts for builds and releases. 
 
@@ -50,7 +59,7 @@ For example, the Velocity widget shown in the following image provides insights 
 
 Here, the Velocity widget shows that this team has a history of closing stories late. It also shows a discrepancy between planned and completed work across all the sprints displayed. The team can drill into the data to determine the root causes. After implementing new practices, the team can use the Velocity widget to track their effectiveness.
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-dashboard.md#add-analytics-widget) for a step-by-step guide to get started with the Velocity widget.
 
@@ -58,7 +67,7 @@ Check out [Add an Analytics widget to a dashboard](../dashboards/add-widget-to-d
 
 If you want to develop your own widget based on Analytics, see [Create an Analytics widget](../extend-analytics/example-analytics-widget.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## In-context reports and roll-up columns 
 
@@ -95,7 +104,7 @@ At this point, not all data is available via Analytics. For more information, re
 
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Availability for Azure DevOps Server
 

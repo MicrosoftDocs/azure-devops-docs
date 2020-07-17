@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-analytics
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07-14-2020
 ---
 
 - [Open bugs](/azure/devops/report/powerbi/sample-boards-openbugs)  
