@@ -76,13 +76,13 @@
       topicHref: /azure/devops/organizations/accounts/organization-management
     - name: Billing
       tocHref: /azure/devops/organizations/billing/
-      topicHref: /azure/devops/organizations/billing/billing-overview
+      topicHref: /azure/devops/organizations/billing/overview?view=azure-devops
     - name: Projects
       tocHref: /azure/devops/organizations/projects/
       topicHref: /azure/devops/organizations/projects/about-projects
     - name: Audit
       tocHref: /azure/devops/organizations/audit/ 
-      topicHref: /azure/devops/organizations/audit/access-auditing
+      topicHref: /azure/devops/organizations/audit/azure-devops-auditing?view=azure-devops&tabs=preview-page#access-auditing
     - name: Notifications
       tocHref: /azure/devops/notifications
       topicHref: /azure/devops/notifications/about-notifications
