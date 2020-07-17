@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 12/05/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -229,6 +229,13 @@ Jobs can be of different types, depending on where they run.
 These are the most common type of jobs and they run on an agent in an agent pool. 
 Use demands to specify what capabilities an agent must have to run your job.
 
+> [!NOTE]
+>
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
+
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
@@ -306,6 +313,19 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 ::: moniker range="tfs-2017"
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
+
+<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
+
+Currently only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+As tasks are extensible additional agentless tasks can be added through extensions.
 
 ---
 
