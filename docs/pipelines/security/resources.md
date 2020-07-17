@@ -35,7 +35,7 @@ They cannot be accessed by users and pipelines outside of a project.
 Repositories can optionally be protected.
 At the organization or project level, you may choose to limit the scope of the Azure Pipelines access token to mentioned repositories.
 When you do this, Azure Pipelines will add two additional protections:
-1. The access token given to the agent for running jobs will only have acess to repositories explicitly mentioned in the `resources` section of the pipeline.
+1. The access token given to the agent for running jobs will only have access to repositories explicitly mentioned in the `resources` section of the pipeline.
 2. Repositories added to the pipeline will have to be authorized by someone with read access to the repository the first time that pipeline uses the repository.
 
 This setting is on by default for all organizations created after May 2020.
