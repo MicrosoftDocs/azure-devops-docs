@@ -170,17 +170,17 @@ Copy the code below and replace the `{{placeholders}}` with your tasks informati
 **task.json components**<br>
 Here is a description of some of the components of the `task.json` file:
 
-| Property              | Description            |
-|-----------------------|------------------------|
-| `id`                  | A unique guid for your task | 
-| `name`                | Name with no spaces |
-| `friendlyName`        | Descriptive name (spaces allowed) |
-| `description`         | Detailed description of what your task does |
-| `author`              | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation" | 
-| `instanceNameFormat`  | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
-| `groups`              | Describes groups that task properties may be logically grouped by in the UI. |
-| `inputs`              | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring" |
-| `execution`           | Execution options for this task, including scripts |
+| Property             | Description                                                                                                                |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `id`                 | A unique guid for your task                                                                                                |
+| `name`               | Name with no spaces                                                                                                        |
+| `friendlyName`       | Descriptive name (spaces allowed)                                                                                          |
+| `description`        | Detailed description of what your task does                                                                                |
+| `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation"              |
+| `instanceNameFormat` | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
+| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
+| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring"            |
+| `execution`          | Execution options for this task, including scripts                                                                         |
 
 >[!NOTE]
 >For a more in-depth look into the task.json file, or to learn how to bundle multiple versions in your extension, check out the **[build/release task reference](./integrate-build-task.md)**.
@@ -410,18 +410,18 @@ Copy the .json code below and save it as your `vss-extension.json` file in your 
 
 ### Contributions
 
-| Property     | Description            |
-|--------------|------------------------|
-| `id`          | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. | 
-| `type`         | Type of the contribution. Should be **ms.vss-distributed-task.task**.
-| `targets`      | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.
-| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline. |
+| Property          | Description                                                                                                                                                                                                   |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`              | Identifier of the contribution. Must be unique within the extension. Doesn't need to match the name of the build or release task. Typically the build or release task name is  in the ID of the contribution. |
+| `type`            | Type of the contribution. Should be **ms.vss-distributed-task.task**.                                                                                                                                         |
+| `targets`         | Contributions "targeted" by this contribution. Should be **ms.vss-distributed-task.tasks**.                                                                                                                   |
+| `properties.name` | Name of the task. This name must match the folder name of the corresponding self-contained build or release task pipeline.                                                                                    |
 
 ### Files
 
-| Property     | Description            |
-|--------------|------------------------|
-| `path`          | Path of the file or folder relative to the `home` directory | 
+| Property | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| `path`   | Path of the file or folder relative to the `home` directory |
 
 >[!NOTE]
 >For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
@@ -504,11 +504,11 @@ Let's create a build and release pipeline on Azure DevOps to help maintain the c
 ### Prerequisites
 
 - A project in your organization. For help creating a project, see [Create a project](../../organizations/projects/create-project.md?view=azure-devops&tabs=preview-page).
-- You will need the [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) package installed in your organization.
+- [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 To begin, create a new pipeline with the below yaml. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?view=azure-devops&tabs=schema%2Cparameter-schema).
 
-You will also need a pipeline library variable group to hold the variables used by this pipeline. For more information about creating one of these, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. For help linking the variable group, see [Use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
+You will also need a pipeline library variable group to hold the variables used by this pipeline. For more information about creating variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. For help linking the variable group, see [Use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
 
 The variables that need to be declared in the variable group for the below pipeline example are:
 - PublisherID: ID of your marketplace publisher
@@ -639,7 +639,7 @@ stages:
 For more help with triggers, such as CI and PR triggers, see [Specify events that trigger pipelines](../../pipelines/build/triggers.md?view=azure-devops).
 
 > [!NOTE]
-> Each job uses a new user agent. This means that when a new job starts, anything installed on the previous jobs agent is gone. This includes dependencies, pipeline-generated files, and compiled files.
+> Each job uses a new user agent and requires dependencies to be installed.
 >
 
 ### Pipeline stages
@@ -654,11 +654,11 @@ To run unit tests, add a custom script to the package.json file, similar to:
 },
 ```
 
-1. The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
+1. The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)' which will  install the tfx-cli onto your build agent to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
 1. Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. <br/>Inputs:
    1. Command: install
    1. Working folder that contains package.json: /TaskDirectory
-1. Next add the 'Bash' task. This will be used to compile the Typescript into JavaScript. <br/>Inputs:
+1. Next add the 'Bash' task to compile the Typescript into JavaScript. <br/>Inputs:
    1. Type: inline
    1. Script: Should look something like:
 
@@ -681,7 +681,7 @@ Once the test results have been published, the output under the tests tab should
 
 #### Package extension and publish build artifacts
 
-1. The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
+1. Add 'Use Node CLI for Azure DevOps (tfx-cli)'to install the tfx-cli onto your build agent.
 1. Add the 'npm' task. Make sure to use the install command, and to target the folder with the package.json file. <br/>Inputs:
    1. Command: install
    1. Working folder that contains package.json: /TaskDirectory
@@ -695,7 +695,7 @@ Once the test results have been published, the output under the tests tab should
 
 1. The first task for publishing the extension is the 'Query Extension Version' task. <br/>Inputs:
     1. Connect to: Visual Studio Marketplace
-    1. Visual Studio Marketplace (Service connection): ServiceConnection
+    1. Visual Studio Marketplace (Service connection): Service Connection
     1. Publisher ID: ID of your Visual Studio Marketplace publisher
     1. Extension ID: ID of your extension in the vss-extension.json file
     1. Increase version: Patch
@@ -709,18 +709,18 @@ Once the test results have been published, the output under the tests tab should
     1. Extension Version: $(Task.Extension.Version)
     1. Override tasks version: checked (true)
     1. Override Type: Replace Only Patch (1.0.r)
-    1. Extension Visibility: If the extension is still in development, this should be set to private. This way only you and those your share the extension with can see it on the marketplace. If are releasing the extension to the public, this should be set to public.
+    1. Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, this should be set to public.
 1. This task makes it easier to locate and publish multiple files. This is the 'Copy files' task. <br/>Inputs:
     1. Contents: All of the files that need to be copied in order to publish them into an artifact.
-    1. Target folder: The folder that the files will all be copied to. A good choice for this would be the $(Build.ArtifactStagingDirectory).
-1. The task for publishing the artifacts is 'Publish build artifacts'. This will publish the artifacts for use in other jobs, or pipelines. <br/>Inputs:
+    1. Target folder: The folder that the files will all be copied to e.g. $(Build.ArtifactStagingDirectory).
+1. Use 'Publish build artifacts' to publish the artifacts for use in other jobs, or pipelines. <br/>Inputs:
     1. Path to publish: The path to the folder that contains the files that are being published. For example, the $(Build.ArtifactStagingDirectory).
     1. Artifact name: The name given to the artifact.
     1. Artifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
 
 #### Download build artifacts and publish the extension
 
-1. The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)'. This will install the tfx-cli onto your build agent. This is installed to ensure that some of the later tasks don't run into any deprecation issues. Use all base inputs.
+1. The first task to add is the 'Use Node CLI for Azure DevOps (tfx-cli)' to install the tfx-cli onto your build agent.
 1. To download the artifacts onto a new job, use the 'Download build artifacts' task. <br/>Inputs:
     1. Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading on a new pipeline, pick 'Specific build'.
     1. Download type: Choose 'Specific artifact' to download all files that were published.
