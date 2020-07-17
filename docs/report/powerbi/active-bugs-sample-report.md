@@ -143,7 +143,7 @@ Choose **Continue** to move to the next tab in the panel. If you need to revisit
     ![Azure DevOps dialog, Organization and project name](media/create-report/specify-account.png)  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 2. Choose (1) **Get Data**, (2) **Online Services**, (3) **Azure DevOps Server (Beta)**, and then (4) **Connect**.  
 
     > [!div class="mx-imgBorder"]
