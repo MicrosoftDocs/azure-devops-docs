@@ -36,6 +36,7 @@ Users granted Stakeholder access to private projects can't view or create query 
 ::: moniker-end    
 
 ::: moniker range=">= tfs-2015"
+
 [!INCLUDE [temp](../../organizations/security/includes/report.md)]
 
 ::: moniker-end  
