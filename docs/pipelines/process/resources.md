@@ -12,8 +12,8 @@ monikerRange: azure-devops
 
 **Azure Pipelines**
 
-A resource is anything used by a pipeline that lives outside the pipeline. Any of these can be pipeline resources:
-* CI/CD pipeline that produces artifacts (Azure Pipelines, Jenkins, etc.)
+A resource is anything used by a pipeline that lives outside the pipeline. Pipeline resources include:
+* CI/CD pipelines that produce artifacts (Azure Pipelines, Jenkins, etc.)
 * code repositories (Azure Repos Git repos, GitHub, GitHub Enterprise, Bitbucket Cloud)
 * container image registries (Azure Container Registry, Docker Hub, etc.) 
 * package feeds (GitHub packages)  
@@ -132,7 +132,7 @@ resources:
   - pipeline: MyCIAlias
     project: Fabrikam
     source: Farbrikam-CI
-    tags:               ### These tags are used for resolving default version when the pipeline is triggered manually or scheduled
+    tags:               ### tags are used for resolving default version when the pipeline is triggered manually or scheduled
     - Production        ### Tags are AND'ed
     trigger:
       tags:             ### This filter is used for triggering the pipeline run
@@ -150,7 +150,7 @@ Note: These are tags set on the CI pipeline. These tags are different from the t
 
 ### Default branch for triggers
 Triggers for resources are created based on the default branch configuration of your YAML, which is master. However, if you want to configure resource triggers from a different branch, you need to change the default branch for the pipeline. 
-1. Go to the edit view of the pipeline and click on the overflow menu on the top right corner and choose **Triggers**.
+1. Go to the edit view of the pipeline and click on the overflow menu on the top-right corner and choose **Triggers**.
 ![Commits in pipeline run](media/triggers-view.png)
 1. Now select 'YAML' tab and go to 'Get sources'.
 1. Now you can set the default branch for your pipeline.
@@ -160,12 +160,12 @@ Triggers for resources are created based on the default branch configuration of 
 ### Evaluation of artifact version
 The pipeline version (CI build run) that gets picked in your pipeline run is controlled by how your pipeline run is triggered.
 
-In case your pipeline run is created by manual trigger or by scheduled trigger, the default version, branch and tags are used to evaluate the version of CI pipeline version.
-1.	If you provide a build version (number), that version runs.
-2.	If you provide a branch, the latest version from the given branch runs.
-3.  If you provide a list of tags, the latest run that has all the matching tags runs.
-4.  If you provide a branch and list of tags, the latest run from the branch provided and that has the matching tags runs.
-3.	If you don’t provide anything, the latest version across all the branches runs.
+In case your pipeline run is created by manual trigger or by scheduled trigger, the default version, branch, and tags are used to evaluate the version of CI pipeline version.
+*	If you provide a build version (number), that version runs.
+*	If you provide a branch, the latest version from the given branch runs.
+*  If you provide a list of tags, the latest run that has all the matching tags runs.
+* If you provide a branch and list of tags, the latest run from the branch provided and that has the matching tags runs.
+*	If you don’t provide anything, the latest version across all the branches runs.
 
 ```yml
 resources:
@@ -180,12 +180,12 @@ resources:
 ```
 
 In case your pipeline is triggered automatically, the CI pipeline version will be picked based on the trigger event. The default version info provided irrelevant.
-1. If you provide branches, a new pipeline will be triggered whenever a CI run is succesfully completed that matches to the branches that are included.
-2. If you provide tags, a new pipeline will be triggered whenever a CI run is succesfully completed that matches all the tags mentioned.
-3. If you provide stages, new pipeline will be triggered whenever a CI run has all the stages mentioned are completed succesfully.
-4. If you provide branches, tags and stages together, a new pipeline run is triggered whenever a CI run matches all the conditions.
-5. If you don't provide anything and just say `trigger: true`, a new pipeline run is triggered whenever a CI run is succesfully completed.
-6. If you don't provide any trigger for the resource, no pipeline run will be triggered. Triggers are disabled by defaut unless you specifically enable them.
+* If you provide branches, a new pipeline will be triggered whenever a CI run is successfully completed that matches to the branches that are included.
+* If you provide tags, a new pipeline will be triggered whenever a CI run is successfully completed that matches all the tags mentioned.
+* If you provide stages, new pipeline will be triggered whenever a CI run has all the stages mentioned are completed successfully.
+* If you provide branches, tags and stages together, a new pipeline run is triggered whenever a CI run matches all the conditions.
+* If you don't provide anything and just say `trigger: true`, a new pipeline run is triggered whenever a CI run is successfully completed.
+* If you don't provide any trigger for the resource, no pipeline run will be triggered. Triggers are disabled by default unless you specifically enable them.
 
 ```yaml
 resources:
@@ -579,10 +579,10 @@ steps:
 
 ## Resources: `webhooks`
 
-With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you could not automate your deployment process based on other external events or services. `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (Github, Github Enterprise, Nexus, Artifactory, etc.) and trigger your pipelines. 
+With other resources (such as pipelines, containers, build, and packages) you can consume artifacts and enable automated triggers. However, you could not automate your deployment process based on other external events or services. `webhooks` resource enables you to integrate your pipeline with any external service and automate the workflow. You can subscribe to any external events through its webhooks (GitHub, GitHub Enterprise, Nexus, Artifactory, etc.) and trigger your pipelines. 
 
 Here are the steps to configure the webhook triggers:
-1. Setup a webhook on your external service. When creating your webhook, you need to provide the following info:
+1. Set up a webhook on your external service. When creating your webhook, you need to provide the following info:
     - Request Url - `https://dev.azure.com/<ADO Organization>/_apis/public/distributedtask/webhooks/<**WebHook Name**>?api-version=6.0-preview`
     - Secret - This is optional. If you need to secure your JSON payload, provide the **Secret** value
 2. Create a new "Incoming Webhook" service connection. This is a newly introduced Service Connection Type that will allow you to define three important pieces of information:
@@ -606,7 +606,7 @@ resources:
         - path: JSONParameterPath              ### JSON path in the payload
           value: JSONParameterExpectedValue    ### Expected value in the path provided
 ```
-Webhooks are a great way to automate your workflow based on any external webhook event that is not supported by first class resources like pipelines, builds, containers and packages. Also, incases of onpremise services where Azure DevOps doesn't have line sight, you can configure webhooks on the service and to trigger your pipelines automatically.
+Webhooks are a great way to automate your workflow based on any external webhook event that is not supported by first class resources like pipelines, builds, containers, and packages. Also, for on-premise services where Azure DevOps doesn't have visibility into the process, you can configure webhooks on the service and to trigger your pipelines automatically.
 
 ## [Example](#tab/example)
 ```yml
@@ -629,22 +629,22 @@ steps:
 ```
 ---
 
-## Manual version picker for resoures in the create run dialogue
+## Manual version picker for resources in the create run dialogue
 When you manually trigger a CD YAML pipeline, we automatically evaluate the default version for the resources defined in the pipeline based on the inputs provided. However, you can choose to pick a different version from resource version picker in create run dialogue. 
 1. In the create run pane, you can see resources section. 
 2. Clicking on it shows the list of resources consumed in this pipeline. 
 3. You can select each of the resource and pick a specific version from the list of versions available.
-Resource version picker is supported for pipeline, build, repository, container and package resources. 
+Resource version picker is supported for pipeline, build, repository, container, and package resources. 
 ![Pipeline Version Picker](media/pipelineversionpicker.png)
 
-For pipeline resource you can see all the available runs across all branches. You can search them based on the pipeline number or branch. And you can pick a run that is successfull, failed or in-progress run. This flexibility is given to ensure you can run your CD pipeline if you are sure your CI pipeline produced all the artifacts you need and you dont need to wait for the CI run is complete or re-run due to some unrelated stage in the CI run failed. However, when we evaluate defaut version for scheduled triggers or if you dont use manual version picker, we only consider successfully completed CI runs. 
+For pipeline resources, you can see all the available runs across all branches. You can search them based on the pipeline number or branch. And you can pick a run that is successful, failed or in-progress run. This flexibility is given to ensure you can run your CD pipeline if you are sure your CI pipeline produced all the artifacts you need and you don't need to wait for the CI run is complete or rerun due to some unrelated stage in the CI run failed. However, when we evaluate default version for scheduled triggers or if you don't use manual version picker, we only consider successfully completed CI runs. 
 
-For resources for where you can't fetch available versions (like GitHub packages), we will show a text box as part of version picker so that user can provide the version to be picked in the run.
+For resources where you can't fetch available versions (like GitHub packages), we will show a text box as part of version picker so that user can provide the version to be picked in the run.
 
 ## Troubleshooting authorization for a YAML pipeline
-Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must directly be authorized to use the resource. There are multiple ways to accomplish this.
+Resources must be authorized before they can be used. A resource owner controls the users and pipelines that can access that resource. The pipeline must be authorized to use the resource. There are multiple ways to accomplish this.
 
-* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for e.g., test resources.
+* Navigate to the administration experience of the resource. For example, variable groups and secure files are managed in the **Library** page under **Pipelines**. Agent pools and service connections are managed in **Project settings**. Here you can authorize **all pipelines** to be able to access that resource. This is convenient if you do not have a need to restrict access to a resource - for for example, test resources.
 
 * When you create a pipeline for the first time, all the resources that are referenced in the YAML file are automatically authorized for use by the pipeline, provided that you are a member of the **User** role for that resource. So, resources that are referenced in the YAML file at pipeline creation time are automatically authorized.
 
@@ -683,8 +683,8 @@ To provide end to end traceability, user should be able to track which CD pipeli
 It can be confusing when pipeline triggers fail to execute. To help better understand this, we've added a new menu item in the pipeline definition page called **Trigger Issues** where you can learn why triggers are not executing.
 
 Resource triggers can fail to execute for two reasons.
-1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
-2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
+* If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
+* If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
 ![Trigger Issues Supportability](media/trigger-supportability.png)
 
 ## FAQ
@@ -698,5 +698,5 @@ You can choose to download the artifacts in build jobs or to override the downlo
 
 ### Why should I use `resources` instead of the Download Pipeline Artifacts task?
 
-When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss out on traceability and triggers. At the same time, there are times when it makes sense to use the Download Pipeline Artifacts task directly. 
+When you use the [Download Pipeline Artifacts task](../tasks/utility/download-pipeline-artifact.md) directly, you miss traceability and triggers. At the same time, there are times when it makes sense to use the Download Pipeline Artifacts task directly. 
 For example, you might have a script task stored in a different template and the script task requires artifacts from a build to be downloaded. Or, you may not know if someone using a template will add a pipeline resource. To avoid dependencies, you can use the Download Pipeline Artifacts task to pass all the build info to a task.
