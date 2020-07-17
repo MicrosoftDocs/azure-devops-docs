@@ -703,7 +703,7 @@ For each project that you create, the system creates the followings project-leve
     <tr>
         <td>Build Administrators</td>
         <td>Has permissions to administer build resources and build permissions for the project. Members can manage test environments, create test runs, and manage builds.</td>
-        <td></td>
+        <td>Assign to users who define and manage build pipelines.</td>
     </tr>
     <tr>
         <td>Contributors</td>
