@@ -139,7 +139,9 @@ resources:
       - Production      ### Tags are AND'ed
       - Signed
 ```
+
 Note: These are tags set on the CI pipeline. These tags are different from the tags set on the branches in the git repo.
+
 ---
 
 > [!IMPORTANT]
