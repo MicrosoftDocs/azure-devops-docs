@@ -8,12 +8,12 @@ ms.assetid: EBDE0739-FAE6-4BEA-8F59-E9D20AFE5FE8
 ms.author: kaelli
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/04/2018
+ms.date: 07/09/2020
 ---
 
 # Set the Work Items experience in Visual Studio 2019
 
-**Azure Boards | Azure DevOps Server 2019 | Visual Studio 2019**  
+**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | Visual Studio 2019**  
 
 Visual Studio 2019 supports switching between the default view of the Work Items page and the legacy view. The default view is designed to match the Work Items page available in the web portal. The legacy view supports the Work Items page available with the previous versions of Visual Studio. 
 

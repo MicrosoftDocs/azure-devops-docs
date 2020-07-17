@@ -144,7 +144,7 @@ Additional menu options support the following tasks:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 ### View work item
 
@@ -220,7 +220,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-# [Azure DevOps CLI](#tab/azure-devops-cli)
+# [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
@@ -250,7 +250,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
 * * *
 

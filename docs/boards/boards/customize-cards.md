@@ -342,7 +342,7 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
 > |-------------|----------|----------|    
-> |<img src="media/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="media/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="media/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
+> |![Task annotations enabled](media/annotate-task.png) | ![Test annotations enabled](media/annotate-test.png) | ![Annotations disabled](media/annotate-none.png) | 
 
 To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
@@ -360,6 +360,8 @@ To learn more about using these features, see [Add task checklists](../../boards
 ::: moniker range=">= tfs-2017"  
 
 ### Enable or disable an annotation
+
+When you disable an annotation, you also disable the feature to add the associated object from the Kanban board. For example, if you disable the Tests annotation, you disable the ability to add tests from the Kanban board. 
 
 ::: moniker-end
 

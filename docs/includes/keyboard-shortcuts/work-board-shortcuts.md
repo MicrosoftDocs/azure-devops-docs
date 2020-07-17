@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <table>
 <tbody valign="top">
@@ -58,7 +58,7 @@ You can use the following keyboard shortcuts from any Kanban board, that is, whe
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 
 <table>

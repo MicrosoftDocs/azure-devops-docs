@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2017'
-ms.date: 12/04/2018
+ms.date: 07/09/2020
 ---
 
 # Drive Git development from a work item   
@@ -18,7 +18,6 @@ ms.date: 12/04/2018
 
 One of the ways your team can drive their development and stay in sync is to link your work items to the objects created during development, such as branches, commits, pull requests, and builds. You can begin that linking by creating a branch from one or more work items. Later, you can create pull requests, quickly open commits, and maintain a record of development operations performed to complete specific work.  
 
-<!---
 Review this article to learn:  
 
 >[!div class="checklist"]    
@@ -27,7 +26,6 @@ Review this article to learn:
 > * Perform a squash merge  
 > * Create a branch for several work items  
 > * Link a work item to existing development and build objects    
--->
 
 
 ::: moniker range=">= azure-devops-2019"  
@@ -99,16 +97,16 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 5.	Your view will switch to **Code**, Pull Requests page. Complete creating the pull request as shown. 
   
- 	<img src="media/git-dev-create-pull-request.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" />  
+ 	![Pull Request page, Create pull request](media/git-dev-create-pull-request.png)   
 
 	> [!NOTE]  
-	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.
+	> Once you've created a pull request, you can't create a new pull request for the same branch until you complete the previous pull request.  
 	 
-	<img src="media/git-dev-pr-complete.png" alt="Pull Request page, Create pull request" style="border: 1px solid #C3C3C3;" /> 
+	![Pull Request page, Create pull request](media/git-dev-pr-complete.png)  
 
 	Check the box for **Squash changes when merging** and then complete the merge. 
 
-	<img src="media/git-dev-complete-merge.png" alt="Complete pull request dialog box, check squash-merge" style="border: 1px solid #C3C3C3;" /> 
+	![Complete pull request dialog box, check squash-merge](media/git-dev-complete-merge.png)  
 
 6. Upon completion, you should see a similar screen as follows.   
 
@@ -117,7 +115,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 7.	Open the work item form or refresh the form, expand the Development section (click the ![full screen icon](../media/icons/fullscreen_icon.png) icon), and you'll see the links that have been added to support the operations you just completed.  
 
-	<img src="media/git-dev-development-section-completed-links.png" alt="Work item form, Development section, links added" style="border: 1px solid #C3C3C3;" /> 
+	![Work item form, Development section, links added](media/git-dev-development-section-completed-links.png)  
 
 
 <a id="add-branch-multi-wi">  </a>

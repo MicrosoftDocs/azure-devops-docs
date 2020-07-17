@@ -75,7 +75,7 @@ For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-### Use managed queries to perform the following tasks: |
+### Use managed queries to perform the following tasks: 
 
 - Review or triage a group of work items
 - Perform bulk updates on several work items such as change Assign To, Iteration Path, or more

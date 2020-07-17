@@ -70,6 +70,7 @@ The following table indicates the Office clients that are supported for each Azu
 :::row:::
    :::column span="2":::
       Azure DevOps Services  
+      Azure DevOps Server 2020  
       Azure DevOps Server 2019  
       Visual Studio 2019  
       Azure DevOps Office Integration 2019 
