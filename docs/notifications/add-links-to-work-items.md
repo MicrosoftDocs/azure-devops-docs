@@ -1,4 +1,4 @@
-﻿---
+---
 title: Use ID to link work items & pull requests
 titleSuffix: Azure DevOps
 description: Link to work items in discussions and pull requests 
@@ -20,7 +20,7 @@ The **#ID** control quickly links objects to work items. With this control, you 
 
 Use the **#ID** control within the following areas:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 - A work item discussion or any rich-text field
 - A pull request discussion
 - Commit comments
@@ -58,7 +58,9 @@ Enter **#** to trigger the **#ID** work item picker in your pull request comment
 
 Narrow the list of suggested work items by entering keywords that match the work item type, ID, or title.
 
-<img src="media/ALM_PRD_ID_PR.png" alt="Pull request comment area, enter # to invoke work item control" style="border: 1px solid #CCCCCC;" /><br/>To further filter the list, continue to enter keywords until you&#39;ve found a match. You can enter up to five keywords.
+![Pull request comment area, enter # to invoke work item control](media/ALM_PRD_ID_PR.png)  
+
+To further filter the list, continue to enter keywords until you've found a match. You can enter up to five keywords.
 
 
 ## Link to work items in pull requests, comments, and commits

@@ -16,7 +16,7 @@ ms.date: 07/09/2020
 
 # Share information within work items and social tools
 
-**Azure Boards | Azure DevOps Server 2019 | Azure DevOps Server 2020 | TFS 2018 - TFS 2013 | Visual Studio | Team Explorer Everywhere**
+**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 

@@ -8,14 +8,12 @@
 - name: Epic Roadmap
   href: epic-roadmap.md      
 - name: Dependency Tracker
-  href: dependency-tracker.md 
-- name: WIQL Editor 
-  href: https://marketplace.visualstudio.com/items?itemName=ottostreifel.wiql-editor
-- name: Enhanced Export 
-  href: https://marketplace.visualstudio.com/items?itemName=mskold.mskold-enhanced-export     
+  href: dependency-tracker.md  
 - name: Azure Boards with Slack
   href: ../integrations/boards-slack.md
 - name: Azure Boards with Teams
   href: ../integrations/boards-teams.md
 - name: Project Server Integration (Deprecated)>>
   href: /previous-versions/azure/devops/reference/tfs-ps-sync/
+- name: TFS-SharePoint Integration (Deprecated)>>
+  href: /previous-versions/azure/devops/report/sharepoint-dashboards/about-sharepoint-integration

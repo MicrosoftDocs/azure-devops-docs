@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts when working from the **Boards>Work
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 :::row:::
