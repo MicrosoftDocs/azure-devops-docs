@@ -211,7 +211,7 @@ Notice the `Node` statement:
 Node $AllNodes.Where{$_.Role -eq 'DNSServer'}.NodeName
 ```
 
-This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](powershell/reference/docs-conceptual/dsc/configurations/configData.md),
+This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](/powershell/reference/docs-conceptual/dsc/configurations/configData.md),
 which is created by the `DevEnv.ps1` script.
 
 You can read more about the `Where` method in [about_arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
