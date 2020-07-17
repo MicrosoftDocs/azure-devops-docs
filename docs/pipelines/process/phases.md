@@ -320,10 +320,10 @@ Currently only the following tasks are supported out of the box for agentless jo
 
 * [Delay task](../tasks/utility/delay.md)
 * [Invoke Azure function task](../tasks/utility/azure-function.md)
-* [Invoke REST API task](../pipelines/tasks/utility/http-rest-api.md)
-* [Publish To Azure Service Bus task](../pipelines/tasks/utility/publish-to-azure-service-bus.md)
-* [Query Azure Monitor Alerts task](../pipelines/tasks/utility/azure-monitor.md)
-* [Query Work Items task](../pipelines/tasks/utility/work-item-query.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
 
 As tasks are extensible additional agentless tasks can be added through extensions.
 
