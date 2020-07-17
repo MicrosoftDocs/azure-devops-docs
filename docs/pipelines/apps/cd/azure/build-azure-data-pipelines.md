@@ -4,7 +4,7 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.date: 07/15/2020
+ms.date: 07/17/2020
 ms.topic: conceptual
 monikerRange: '=azure-devops'
 ---
@@ -20,8 +20,8 @@ Learn how to grab data from a CSV and save to blob storage, and then transform t
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
-- A downloaded code sample [datapipeline-sample.csv](https://github.com/gary918/DataPipeline/blob/master/data/sample.csv)
-- Fork the [data pipeline solution](https://github.com/gary918/DataPipeline) in GitHub 
+- Downloaded data - [sample.csv](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv)
+- Fork the [data pipeline solution](https://github.com/MicrosoftDocs/azure-devops-docs-samples/tree/main/azure-data-pipeline) in GitHub 
 - Install [DevOps for Azure Databricks](https://marketplace.visualstudio.com/items?itemName=riserrad.azdo-databricks) into your Azure DevOps organization
 
 ## Provision Azure resources
@@ -165,7 +165,7 @@ To make commands easier to run, start by selecting a default region. After you s
 1. Open your storage account in the Azure portal UI in the `data-pipeline-cicd-rg` resource group. 
 1. Go to **Blob Service** > **Containers**.
 1. Open the `prepareddata` container.
-1. Upload `datapipeline-sample.csv` (source).
+1. Upload `sample.csv` (source).
 
 
 ## Set up Key Vault
@@ -198,7 +198,7 @@ You will use Key Vault to store all connection information for your Azure servic
 
 ## Import the data pipeline solution
 1. Sign in to your Azure DevOps organization and navigate to your project.
-1. Go to **Repos** and import the [GitHub repository](https://github.com/gary918/DataPipeline/). Learn more about [importing repositories from GitHub](../../../../repos/git/import-git-repository.md). 
+1. Go to **Repos** and import your forked version of the [GitHub repository](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/). Learn more about [importing repositories from GitHub](../../../../repos/git/import-git-repository.md). 
 
 ## Add an Azure Resource Manager service connection
 1. Create an Azure Resource Manager [service connection](../../../library/service-endpoints.md).
@@ -259,7 +259,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 1. Select **Azure Repos Git** as the location of your source code.
 1. When the list of repositories appears, select your repository. 
-1. When configuring your pipeline, select **Existing Azure Pipelines YAML file** and choose the YAML file at `/pipelines/data_pipeline_ci_cd.yml`.
+1. When configuring your pipeline, select **Existing Azure Pipelines YAML file** and choose the YAML file at `/azure-data-pipeline/data_pipeline_ci_cd.yml`.
 1. Run the pipeline.  If this is the first time running your pipeline, you will need to give permission to access a resource during the run. 
 1. You may need to give permission during the run. 
 
