@@ -16,11 +16,11 @@ You can use data pipelines to:
 * Process / transform the data 
 * Save the processed data to a staging location for others to consume
 
-:::image type="content" source="media/data_pipeline_overview.png" alt-text="Data pipeline overview":::
+<!-- :::image type="content" source="media/data_pipeline_overview.png" alt-text="Data pipeline overview"::: -->
 
 Data pipelines in the enterprise can evolve into more complicated scenarios with multiple source systems and supporting various downstream applications.
 
-:::image type="content" source="media/data-pipeline-complicated.png" alt-text="Enterprise data pipeline":::
+<!-- :::image type="content" source="media/data-pipeline-complicated.png" alt-text="Enterprise data pipeline"::: -->
 
 Data pipelines provide:
 * Consistency: Data pipelines transform data into a consistent format for users to consume
