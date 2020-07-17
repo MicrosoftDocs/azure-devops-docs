@@ -7,7 +7,7 @@ ms.technology: devops-analytics
 ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
-monikerRange: ">= tfs-2013 <= azure-devops-2019" 
+monikerRange: "< azure-devops" 
 ms.date: 11/19/2018
 ---
 
@@ -18,6 +18,7 @@ ms.date: 11/19/2018
 Follow the steps below to disable the data warehouse and cube on your Azure DevOps Server instance.
 
 <a id="prerequisites">  </a>
+
 ## Prerequisites 
 
 In order to disable the data warehouse and cube, you must have an Azure DevOps Server instance already [set up](/azure/devops/server/install/get-started).
