@@ -503,12 +503,12 @@ Let's create a build and release pipeline on Azure DevOps to help maintain the c
 
 ### Prerequisites
 
-- A project in your organization. For help creating a project, see [Create a project](../../organizations/projects/create-project.md?view=azure-devops&tabs=preview-page).
+- A project in your organization. Read more on creating a project, [Create a project](../../organizations/projects/create-project.md?view=azure-devops&tabs=preview-page).
 - [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 To begin, create a new pipeline with the below yaml. Learn more about how to [Create your first pipeline](../../pipelines/create-first-pipeline.md?view=azure-devops&tabs=javascript%2Cyaml%2Cbrowser%2Ctfs-2018-2) and [YAML schema](../../pipelines/yaml-schema.md?view=azure-devops&tabs=schema%2Cparameter-schema).
 
-You will also need a pipeline library variable group to hold the variables used by this pipeline. For more information about creating variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. For help linking the variable group, see [Use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
+You will also need a pipeline library variable group to hold the variables used by this pipeline. For more information about creating variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
 
 The variables that need to be declared in the variable group for the below pipeline example are:
 - PublisherID: ID of your marketplace publisher
