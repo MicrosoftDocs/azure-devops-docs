@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 07-14-2020
+ms.date: 07/14/2020
 ---
 
 # Create a Power BI report with an OData Query

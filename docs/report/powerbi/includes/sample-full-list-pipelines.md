@@ -3,7 +3,7 @@ ms.technology: devops-analytics
 ms.author: kaelli
 author: KathrynEE
 ms.topic: include
-ms.date: 07-14-2020
+ms.date: 07/14/2020
 ---
 
 - [Outcome summary](/azure/devops/report/powerbi/sample-pipelines-outcome-summary)

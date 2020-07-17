@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'
-ms.date: 07-14-2020
+ms.date: 07/14/2020
 ---
 
 # Data available from Analytics
