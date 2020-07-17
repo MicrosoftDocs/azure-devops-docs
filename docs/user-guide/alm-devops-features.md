@@ -1229,7 +1229,7 @@ pipelines\tasks\build\media
 <p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Azure Test Plans, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can <a href="/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests" data-raw-source="[record your keystrokes and gestures while you test an application](/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
