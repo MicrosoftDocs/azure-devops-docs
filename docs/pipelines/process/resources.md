@@ -635,7 +635,7 @@ When you manually trigger a CD YAML pipeline, we automatically evaluate the defa
 2. Clicking on it shows the list of resources consumed in this pipeline. 
 3. You can select each of the resource and pick a specific version from the list of versions available.
 Resource version picker is supported for pipeline, build, repository, container, and package resources. 
-![Pipeline Version Picker](media/pipelineversionpicker.png)
+![Pipeline Version Picker](media/pipeline-version-picker.png)
 
 For pipeline resources, you can see all the available runs across all branches. You can search them based on the pipeline number or branch. And you can pick a run that is successful, failed or in-progress run. This flexibility is given to ensure you can run your CD pipeline if you are sure your CI pipeline produced all the artifacts you need and you don't need to wait for the CI run is complete or rerun due to some unrelated stage in the CI run failed. However, when we evaluate default version for scheduled triggers or if you don't use manual version picker, we only consider successfully completed CI runs. 
 
