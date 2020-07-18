@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 06/19/2020
+ms.date: 07/17/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -53,11 +53,9 @@ As an example, you can make a field required based on the value assigned to the 
 > |-------------|----------|  
 > |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions.png)
 
-
- 
 > 
 > [!NOTE]  
-> The following conditions and actions are only available for Azure DevOps Services. Those that are in Private Preview require  participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
+> The following conditions and actions that are in Private Preview require participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
 > - Conditions:
 >     - `A work item state moved from ...` (Private Preview)  
 >     - `Current user is member of group...`  
@@ -66,13 +64,22 @@ As an example, you can make a field required based on the value assigned to the 
 >     - `Restrict the transition to state...` (Private Preview)  
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](media/rules/when-condition-2020.png) | ![list of actions](media/rules/rule-actions-2020.png)
+
+::: moniker-end
+
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions.png)
+> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions-2020.png)
 
 ::: moniker-end
 
@@ -123,14 +130,10 @@ You can temporarily disable a rule or delete it altogether.
 
 You delete or disable the rule from the actions menu of the rule.
 
-<img src="media/process/custom-rule-delete-disable-rule.png" alt="Delete or disable a rule" style="border: 1px solid #C3C3C3;" />
-
-## Restrict modification of closed work items
-
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+![Delete or disable a rule](media/process/custom-rule-delete-disable-rule.png)  
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Restrict modification of work items based on a user or group
 
@@ -139,17 +142,6 @@ You can add rules to work item types to support these restriction requests:
 - Restrict who can modify a specific field for a work item type
 - Hide field from the form
 
-<!--
-- Restrict who can create or modify a work item
-- Restrict who can create a work item types 
-
-For example, the following condition indicates that the State field, for the Initiative custom work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a new Initiative, they are unable to save it as the State field can't automatically be set to New.
-
-> [!div class="mx-imgBorder"]  
-> ![Custom rule](../../security/media/grant-restrict/restrict-creating-work-items-inheritance.png)
-
-For custom work item types you can specify the System.State. For default work item types, you can specify to make the System.ChangeDate read-only. While entering either of these fields presents a message indicating that the field is not valid, you are still able to **Save** the rule. 
---> 
 
 > [!NOTE]   
 > Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
