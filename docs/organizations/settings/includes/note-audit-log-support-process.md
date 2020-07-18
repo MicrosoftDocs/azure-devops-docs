@@ -1,5 +1,8 @@
 ---
 ms.topic: include
+ms.author: kaelli
+author: KathrynEE
+ms.date: 07/17/2020
 ---
 
 
@@ -7,15 +10,6 @@ ms.topic: include
 
 > [!NOTE]  
 > For Azure DevOps Services, you can review changes made to an inherited process through the audit log. To learn more, see [Access, export, and filter audit logs](/azure/devops/organizations/audit/azure-devops-auditing).  
-
-
-<!---
-
-## Access audit log of process changes 
-
-Process changes are logged for audit purposes. To learn more, see [Access, export, and filter audit logs](../../audit/azure-devops-auditing.md) 
-
--->
 
 
 ::: moniker-end

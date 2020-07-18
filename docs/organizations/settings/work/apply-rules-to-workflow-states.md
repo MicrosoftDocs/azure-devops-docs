@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 06/19/2020
+ms.date: 07/17/2020
 ---
 
 
@@ -30,8 +30,7 @@ After you add or modify your workflow states for a work item type, you may want 
 - Automate closure of parent work items
 ::: moniker-end
 
-
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range="azure-devops-2019 < azure-devops"
 
 - Support an approval process 
 - Make a field required or read-only or other value based on State changes

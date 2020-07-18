@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/12/2019
+ms.date: 07/17/2020
 ---
 
 # About process customization and inherited processes  
@@ -43,21 +43,17 @@ You'll see two types of processes:
 - ![inherited icon](media/process/inherited-process-icon.png) Inherited processes, which you can customize and that inherit definitions from the system process from which they were created. System processes are owned and updated periodically by Microsoft. Any updates made to a system process automatically cause an update to your inherited processes. 
 
 ::: moniker range="azure-devops-2019"
-
 > [!NOTE]   
 > The Basic process is available with Azure DevOps Server 2019 Update 1 and later versions.  
-
 ::: moniker-end
 
 In addition, all processes are shared. That is, one or more projects can use a single process. Instead of customizing a single project, you customize a process. Changes made to the process automatically update all projects that use that process. 
-
 Once you've created an inherited process, you can customize it, create projects based on it, make a copy of it, and change existing projects to use it. 
 
 For example, as shown in the following image, you see a list of  projects defined for the *fabrikam* organization. The second column shows the process used by each project. To change the customizations of the *Fabrikam Fiber* project, you need to modify the *MyScrum* process (which inherits from the *Scrum* system process). Any changes you make to the *MyScrum* process also update other projects that use that process. You can't customize the *Query test* project, on the other hand, until you change it to a process which inherits from *Agile*.
 
 > [!div class="mx-imgBorder"]  
 > ![Admin context, Organization settings, Project list and the process they use](media/process/projects-list.png)
-
 
 <a id="process-naming"></a>
 
@@ -83,7 +79,6 @@ Prior to making this change, we recommend you familiarize yourself with the proc
 
 
 ::: moniker-end
-
 
 ## Inherited objects versus custom objects 
 
@@ -214,12 +209,10 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ### What you can't customize 
 
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - You can't change the field name or data type once you've defined it
 - You can't modify the gray area on the form where the State, Reason, Area Path, and Iteration Path fields are located  
-- You can't change the picklist order, picklists display in alphabetic order
 - You can't import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
 
 ::: moniker-end
@@ -232,7 +225,6 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
     - Change the picklist of an inherited field, such as the Activity or Discipline field  
     - Change the picklist order, picklists display in alphabetic order
 - Import or define a global list as supported by the Hosted XML and On-premises XML process models. To learn more, see [Define global lists](../../../reference/xml/define-global-lists.md).  
-
 
 > [!NOTE]    
 > With the inherited process, you can't modify the picklists of pre-defined fields&mdash;such as [Activity](../../../boards/queries/query-numeric.md), [Automation Status](../../../boards/queries/build-test-integration.md), [Discipline](../../../boards/queries/query-numeric.md), [Priority](../../../boards/queries/planning-ranking-priorities.md), plus others.  
@@ -294,6 +286,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+::: moniker range=">= azure-devops-2020"
 
 ### Restrict modification of select fields for select user groups
 
@@ -303,10 +296,6 @@ Using one of the following two conditions, you can make select fields required f
 - `current user is not a member of a group...`
 
 For example, you can make the Title or the State field Read-only for select users or groups. 
-
-### Restrict modification of closed work items 
-
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 ### Restrict modification of work items based on Area Path 
 
@@ -354,9 +343,13 @@ Here are your customization options for inherited and custom WITs.
 </tr>
 </tbody>
 </table>
-<strong>What you can&#39;t customize</strong><br/>- You can&#39;t add or remove an inherited WIT to or from a backlog<br/>- You can&#39;t change the position of an inherited field within the form layout (however, you can hide the field in one area of the form and add it elsewhere in the form) 
-- You can&#39;t remove the inherited portfolio level from the product (but you can rename them)
-- You can&#39;t change the name of a custom WIT. 
+
+#### What you can't customize</strong>
+
+- You can't add or remove an inherited WIT to or from a backlog
+- You can't change the position of an inherited field within the form layout (however, you can hide the field in one area of the form and add it elsewhere in the form) 
+- You can't remove the inherited portfolio level from the product (but you can rename them)
+- You can't change the name of a custom WIT. 
 
 
 ### Work item form customizations 

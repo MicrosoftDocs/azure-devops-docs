@@ -27,7 +27,7 @@ You create, manage, and make customizations to processes from **Organization set
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You create, manage, and make customizations to processes from **Admin settings>Process**. 
 
