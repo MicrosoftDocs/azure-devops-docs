@@ -27,7 +27,28 @@ You create, manage, and make customizations to processes from **Organization set
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+
+
+
+
+
+::: moniker range="azure-devops-2020"
+
+You create, manage, and make customizations to processes from **Collection Settings>Process**. 
+
+1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Choose the project collection whose processes you want to customize, and then choose **Collection Settings**. 
+
+	> [!div class="mx-imgBorder"]  
+	> ![Open Organization settings](/azure/devops/organizations/settings/work/media/process/open-process-page-2020.png)  
+
+1. Then, choose **Process**. 
+   
+	> [!div class="mx-imgBorder"]  
+	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
 
 You create, manage, and make customizations to processes from **Admin settings>Process**. 
 
@@ -40,9 +61,5 @@ You create, manage, and make customizations to processes from **Admin settings>P
    
 	> [!div class="mx-imgBorder"]  
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-page-2019.png) 
-
-	> [!IMPORTANT]  
-	> If you don't see **Process**, then the collection you've created is set to work with the On-premises XML process model. You must use the features supported for the [On-premises XML process model](/azure/devops/reference/customize-work).
-
 
 ::: moniker-end
