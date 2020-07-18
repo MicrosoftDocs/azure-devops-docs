@@ -26,6 +26,10 @@ The first step is to create an inherited process that you can customize. The def
 	> [!div class="mx-imgBorder"]  
 	> ![Context menu, Choose Create inherited process](/azure/devops/organizations/settings/work/media/process/create-inherited-process-menu-agile.png) 
 	::: moniker-end 
+	::: moniker range=">= azure-devops-2019 < azure-devops"
+	> [!IMPORTANT]  
+	> If you don't see the **Create inherited process** menu option, then the collection you've selected is set to work with the On-premises XML process model. You can import and export process templates and use the features supported for the [On-premises XML process model](/azure/devops/reference/customize-work).
+	::: moniker-end 
 
 2.	Enter a name for your process and optionally a description. Process names must be unique and no more than 128 characters. For additional restrictions, see [Create and manage inheritance processes, Process name restrictions](/azure/devops/organizations/settings/work/inheritance-process-model#process-naming). Optionally, add a description.   
 
