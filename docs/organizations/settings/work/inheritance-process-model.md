@@ -297,6 +297,9 @@ Using one of the following two conditions, you can make select fields required f
 
 For example, you can make the Title or the State field Read-only for select users or groups. 
 
+::: moniker-end
+
+
 ### Restrict modification of work items based on Area Path 
 
 You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).

@@ -194,11 +194,6 @@ You  restrict access to work tracking objects in one of two ways:
    
 ::: moniker-end
 
-## Restrict modification of closed work items 
-
-[!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
-
-
 ## Next steps
 
 > [!div class="nextstepaction"]
