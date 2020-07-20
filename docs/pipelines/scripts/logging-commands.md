@@ -8,6 +8,9 @@ ms.date: 07/07/2020
 
 # Logging commands
 
+> [!NOTE]
+> Use UTF-8 formatting for logging commands. 
+
 ## Overview
 
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
@@ -357,7 +360,7 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 #### Usage
 
-Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs.
+Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. 
 
 #### Examples
 
