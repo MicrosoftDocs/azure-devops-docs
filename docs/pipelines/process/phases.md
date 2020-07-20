@@ -314,6 +314,19 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
 
+<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
+
+Currently only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+As tasks are extensible additional agentless tasks can be added through extensions.
+
 ---
 
 <h2 id="dependencies">Dependencies</h2>
