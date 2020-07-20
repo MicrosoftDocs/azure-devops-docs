@@ -306,7 +306,6 @@ Here are your customization options for inherited and custom WITs.
       - [Add/remove custom pages](customize-process-form.md#pages) 
       - [Add/remove a custom control](custom-controls-process.md)  
       - [Enable/disable](customize-process-wit.md#enable-disable)  
-      ::: moniker-end  
    :::column-end:::
 :::row-end:::
 ---
@@ -360,7 +359,6 @@ You can make the following customizations to a WIT form.
       - [Relabel](customize-process-form.md#groups)   
       - [Add/remove custom fields](customize-process-field.md)  
       - [Show/hide fields](customize-process-field.md#remove-field)  
-      ::: moniker-end  
    :::column-end:::
 :::row-end:::
 ---
@@ -382,8 +380,7 @@ You can make the following customizations to a WIT form.
    :::column span="2":::
       - [Relabel](customize-process-form.md#pages) 
       - [Add/remove custom fields](customize-process-field.md) 
-      - [Add/remove a custom group](customize-process-form.md#groups) 
-      ::: moniker-end  
+      - [Add/remove a custom group](customize-process-form.md#groups)   
    :::column-end:::
 :::row-end:::
 ---
@@ -447,14 +444,13 @@ Backlogs and boards are essential Agile tools for creating and managing work for
       ::: moniker-end  
       - [Change the default WIT](customize-process-backlogs-boards.md) 
       - [Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog) 
-      - [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog) 
-      ::: moniker-end  
+      - [Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)  
    :::column-end:::
 :::row-end:::
 ---
 :::row:::
    :::column span="":::
-      **Custom portfolio backlogs **
+      **Custom portfolio backlogs**
    :::column-end:::
    :::column span="2":::
       - [Add a portfolio backlog which displays custom WITs](customize-process-backlogs-boards.md#portfolio-backlogs) 
