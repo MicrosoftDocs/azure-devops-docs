@@ -58,6 +58,9 @@ If you want to create and start a release at specific times, define one or more 
 > [!div class="mx-imgBorder"]
 > ![Defining a scheduled release trigger](media/trigger-04.png)
 
+> [!NOTE]
+> Automated release triggers for GitHub release is not supported currently.
+
 See also [stage scheduled triggers](#stage-scheduled-triggers).
 
 ::: moniker range="> tfs-2018"
