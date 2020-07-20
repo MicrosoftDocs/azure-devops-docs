@@ -70,7 +70,7 @@ To make commands easier to run, start by selecting a default region. After you s
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your storage account and key vault. These commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your storage account and key vault. These commands use double quotes, which instruct Bash to interpolate the variables using the inline syntax.
 
     ```bash
     storageName="datacicd${resourceSuffix}"
@@ -241,7 +241,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal). 
 1. Click **Set up code repository** and connect your repo. 
     * Repository type: Azure DevOps Git
-    * Azure DevOps Account: Your active account
+    * Azure DevOps organization: Your active account
     * Project name: Your Azure DevOps data pipeline project
     * Git repository name: **Use existing**. 
         * Select the **master** branch for collaboration.     
