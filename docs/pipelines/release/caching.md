@@ -365,29 +365,6 @@ steps:
 - script: yarn --frozen-lockfile
 ```
 
-## PHP/Composer
-
-For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
-
-### Example
-
-```yaml
-variables:
-  COMPOSER_CACHE_DIR: $(Pipeline.Workspace)/.composer
-
-steps:
-- task: Cache@2
-  inputs:
-    key: 'composer | "$(Agent.OS)" | composer.lock'
-    restoreKeys: |
-      composer | "$(Agent.OS)"
-      composer
-    path: $(COMPOSER_CACHE_DIR)
-  displayName: Cache composer
-
-- script: composer install
-```
-
 ## Python/pip
 
 For Python projects using pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you are using Poetry, replace `requirements.txt` in the `key` field with `poetry.lock`.
@@ -432,6 +409,29 @@ steps:
   displayName: Cache pipenv packages
 
 - script: pipenv install
+```
+
+## PHP/Composer
+
+For PHP projects using Composer, override the `COMPOSER_CACHE_DIR` [environment variable](https://getcomposer.org/doc/06-config.md#cache-dir) used by Composer.
+
+### Example
+
+```yaml
+variables:
+  COMPOSER_CACHE_DIR: $(Pipeline.Workspace)/.composer
+
+steps:
+- task: Cache@2
+  inputs:
+    key: 'composer | "$(Agent.OS)" | composer.lock'
+    restoreKeys: |
+      composer | "$(Agent.OS)"
+      composer
+    path: $(COMPOSER_CACHE_DIR)
+  displayName: Cache composer
+
+- script: composer install
 ```
 
 ## Known issues and feedback
