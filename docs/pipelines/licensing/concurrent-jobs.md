@@ -51,7 +51,7 @@ You can buy additional private jobs from the Visual Studio Marketplace.
 
 
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 ## Microsoft-hosted CI/CD
 
