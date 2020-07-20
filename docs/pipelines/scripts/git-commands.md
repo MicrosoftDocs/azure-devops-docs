@@ -177,7 +177,7 @@ On the [build tab](../tasks/index.md) add this task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/media/command-line.png)<br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
+|  :::image type="icon" source="../tasks/utility/media/command-line.png"::: <br/>[Utility: Command Line](../tasks/utility/command-line.md)<br />List the files in the Git repo. | **Tool**: `git`<br /><br />**Arguments**: `ls-files` |
 
 ### Merge a feature branch to master
 
@@ -217,7 +217,7 @@ On the [build tab](../tasks/index.md) add this as the last task:
 
 | Task | Arguments |
 | ---- | --------- |
-| ![](../tasks/utility/media/batch-script.png)<br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
+| :::image type="icon" source="../tasks/utility/media/batch-script.png"::: <br/>[Utility: Batch Script](../tasks/utility/batch-script.md)<br />Run merge.bat. | **Path**: `merge.bat` |
 
 ## FAQ
 
