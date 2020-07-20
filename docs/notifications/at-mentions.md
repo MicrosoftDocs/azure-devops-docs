@@ -47,7 +47,7 @@ Use the <strong>@mention</strong> control to start or continue a discussion with
 
 <a id="mention-person-id">  </a>
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"
+::: moniker range=">= tfs-2015 < azure-devops"
 
 For team members to receive notifications, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts).
 
@@ -81,7 +81,7 @@ Upon completion of your selection and text entry, your <strong>@mention</strong>
 Use the **\@mention** control in pull request discussions, commit comments, changeset comments, and shelveset comments.
 
 > [!NOTE]
-> Do not copy/paste <strong>@mention</strong> users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
+> Don't copy/paste <strong>@mention</strong> users from a previous comment. While the resulting formatting will look identical to a properly entered mention, it will not register as a true mention nor send an email notification.
 
 
 
