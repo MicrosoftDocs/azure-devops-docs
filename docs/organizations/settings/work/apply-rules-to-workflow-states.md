@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 06/19/2020
+ms.date: 07/20/2020
 ---
 
 
@@ -76,9 +76,6 @@ Review this article to understand how to define rules that apply when you change
 The following table indicates the three groups of workflow rules you can define. The first group applies standard actions when a work item is created, in a selected state, or is moved from one state to another. These standard actions set the value of a field or makes a field read-only or required. In this group, you can specify one or two conditions and several actions. 
 
 The second and third groups support restricting state transitions. These two groups allow you to specify one and only one condition indicating the state a work item has moved to. You can then specify one or more actions to restrict the transition from that state to other states.  
-
-> [!NOTE]   
-> State restriction rules are in Private Preview for Azure DevOps Services only. If you are interested in participating in the Private Preview, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1).
 
 ---
 :::row:::
@@ -527,13 +524,13 @@ For the rules defined in the previous table, you should see the following State 
 |**Active**|**In Review**|**Closed**|**Cut**|   
 |![Active menu](media/customize-workflow/active-state-transition-menu.png) |![In Review menu](media/customize-workflow/in-review-state-transition-menu.png) |![Closed menu](media/customize-workflow/closed-state-transition-menu.png)|![Cut menu](media/customize-workflow/cut-state-transition-menu.png) |
 
-<!--- 
+
 
 ## Restrict state transition based on user or group membership 
 
 When specifying one of the two conditions based on user or group membership, `Current user is member of group ...` or `Current user is not member of group ...`, you can specify only one condition. Also, if specifying the action `Restrict the transition to state...`, you can only specify one action. 
 
---> 
+
 
 ::: moniker-end
 
