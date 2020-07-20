@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot pipeline runs
-description: Learn how to troubleshoot pipeine runs in Azure Pipelines and Team Foundation Server.
+description: Learn how to troubleshoot pipeline runs in Azure Pipelines and Team Foundation Server.
 ms.assetid: BFCB144F-9E9B-4FCB-9CD1-260D6873BC2E
 ms.author: sdanie
 ms.reviewer: steved0x
