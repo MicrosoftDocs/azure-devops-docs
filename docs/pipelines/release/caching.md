@@ -367,7 +367,7 @@ steps:
 
 ## Python/pip
 
-For Python projects using pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you are using Poetry, replace `requirements.txt` in the `key` field with `poetry.lock`.
+For Python projects that use pip or Poetry, override the `PIP_CACHE_DIR` environment variable. If you use Poetry, in the `key` field, replace `requirements.txt` with `poetry.lock`.
 
 ### Example
 
@@ -390,7 +390,7 @@ steps:
 
 ## Python/Pipenv
 
-For Python projects using Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
+For Python projects that use Pipenv, override the `PIPENV_CACHE_DIR` environment variable.
 
 ### Example
 
