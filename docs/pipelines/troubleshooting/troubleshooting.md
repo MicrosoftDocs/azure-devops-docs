@@ -349,7 +349,8 @@ Check the logs for the exact command-line executed by the failing task. Attempti
 For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
 
-::: moniker "= azure-devops"
+::: moniker range="azure-devops"
+
 #### File layout
 
 The location of tools, libraries, headers, and other things needed for a build may be different on the hosted agent than from your local machine.
