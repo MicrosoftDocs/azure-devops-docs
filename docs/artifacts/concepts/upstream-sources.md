@@ -4,7 +4,7 @@ description: Upstream sources manage packages from public sources in an Azure De
 ms.assetid: 7cb70122-7c5b-46c1-b07e-1382cfc7d62b
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 2/1/2018
+ms.date: 07/20/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -133,7 +133,14 @@ When you configure an upstream source and begin to query it through your feed, t
 
 ### Upstream health
 
-If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. You can see the health status of the upstream source by navigating to feed settings > upstream settings in the Artifacts UI. If there are any failing upstream sources, the Artifacts UI shows a warning message to notify that issues have been detected and manual action may be needed. Upstream setting page will show which one of the upstream sources is failing and by clicking the failing source, users can find the reason for the failure and instructions on how to solve it.
+If a feed has failing upstream sources, the metadata no longer can be refreshed for packages of the same protocol. You can view the health status of the upstream source by doing the following:
+
+With your feed selected, select the gear icon ![gear icon](../../media/icons/gear-icon.png) to access your **Feed settings**, then select **Upstream sources** in your feed settings UI. 
+
+If there are any failing upstream sources, the Artifacts UI shows a warning message to notify that issues have been detected and manual action may be needed. Upstream setting page will show which one of the upstream sources is failing and by clicking the failing source, users can find the reason for the failure and instructions on how to solve it.
+
+> [!div class="mx-imgBorder"]
+> ![Upstream health](../media/upstream-health.png)
 
 <a name="offline-upstreams"></a>
 
