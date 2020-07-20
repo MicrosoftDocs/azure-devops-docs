@@ -6,7 +6,7 @@ ms.author: sdanie
 ms.reviewer: steved0x
 ms.custom: "seodec18, contentperfQ4"
 ms.topic: troubleshooting
-ms.date: 06/09/2020
+ms.date: 07/20/2020
 monikerRange: '>= tfs-2015'
 author: steved0x
 ---
@@ -348,6 +348,61 @@ Check the logs for the exact command-line executed by the failing task. Attempti
 
 For example, is the problem happening during the MSBuild part of your build pipeline (for example, are you using either the [MSBuild](../tasks/build/msbuild.md) or [Visual Studio Build](../tasks/build/visual-studio-build.md) task)? If so, then try running the same [MSBuild command](/visualstudio/msbuild/msbuild-command-line-reference) on a local machine using the same arguments. If you can reproduce the problem on a local machine, then your next steps are to investigate the [MSBuild](/visualstudio/msbuild/msbuild) problem.
 
+
+::: moniker range="azure-devops"
+
+#### File layout
+
+The location of tools, libraries, headers, and other things needed for a build may be different on the hosted agent than from your local machine.
+If a build fails because it can't find one of these files, you can use the below scripts to inspect the layout on the agent.
+This may help you track down the missing file.
+
+Create a new YAML pipeline in a temporary location (e.g. a new repo created for the purpose of troubleshooting).
+As written, the script searches directories on your path.
+You may optionally edit the `SEARCH_PATH=` line to search other places.
+
+```yaml
+# Script for Linux and macOS
+pool: { vmImage: ubuntu-latest } # or whatever pool you use
+steps:
+- checkout: none
+- bash: |
+    SEARCH_PATH=$PATH  # or any colon-delimited list of paths
+    IFS=':' read -r -a PathDirs <<< "$SEARCH_PATH"
+    echo "##[debug] Found directories"
+    for element in "${PathDirs[@]}"; do
+        echo "$element"
+    done;
+    echo;
+    echo;  
+    echo "##[debug] Found files"
+    for element in "${PathDirs[@]}"; do
+        find "$element" -type f
+    done
+```
+
+```yaml
+# Script for Windows
+pool: { vmImage: windows-2019 } # or whatever pool you use
+steps:
+- checkout: none
+- powershell: |
+    $SEARCH_PATH=$Env:Path
+    Write-Host "##[debug] Found directories"
+    ForEach ($Dir in $SEARCH_PATH -split ";") {
+      Write-Host "$Dir"
+    }
+    Write-Host ""
+    Write-Host ""
+    Write-Host "##[debug] Found files"
+    ForEach ($Dir in $SEARCH_PATH -split ";") {
+      Get-ChildItem $Dir -File -ErrorAction Continue | ForEach-Object -Process {
+        Write-Host $_.FullName
+      }
+    }
+```
+
+::: moniker-end
 
 #### Differences between local command prompt and agent
 
