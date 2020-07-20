@@ -9,7 +9,7 @@ ms.date: 07/07/2020
 # Logging commands
 
 > [!NOTE]
-> Use UTF-8 formatting with logging commands. 
+> Use UTF-8 formatting for logging commands. 
 
 ## Overview
 
