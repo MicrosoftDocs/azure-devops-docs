@@ -220,31 +220,47 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 ## Show, hide, or remove a field   
 
-You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+::: moniker range=">= azure-devops-2020"
+
+You can choose to show or hide any field or custom control from appearing on a form. If you want to reinstate a field onto the form later, you can un-hide These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it by choosing **Show on layout**. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
 
 > [!NOTE]      
 > Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
 >
-> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results.
-If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
+> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results. If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
   
 
 
 <a id="show-hide-field">  </a>
 
-### Hide an inherited field or custom control 
 
-1. Open the context menu for the inherited field and choose Hide from layout.
+::: moniker range=">= azure-devops-2020"
+### Hide a field or custom control
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+### Hide a inherited field or custom control
+::: moniker-end 
+
+1. Open the context menu for the field or control and choose **Hide from layout**.
 
 	![Bug layout, inherited field, open context menu, choose Hide from layout](media/process/cpfield-hide-inherited-field.png) 
 
-1. To add a hidden field to the form, choose **Show on layout**.  
+1. To add a hidden field or control to the form, choose **Show on layout**.  
 
 <a id="remove-field">  </a>
 
 ### Remove a custom field from a form
 
-1. Choose Remove from the context menu of the field you want to remove. 
+1. Choose **Remove** from the context menu of the field you want to remove. 
 
 	![Remove field from bug work item type](media/process/cpfield-remove-customer-ticket.png)  
 
