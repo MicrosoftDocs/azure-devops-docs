@@ -19,7 +19,7 @@ You can specify the conditions under which each job runs. By default, a job runs
 ::: moniker-end
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 You can specify conditions under which a step, job, or stage will run.
 [!INCLUDE [include](includes/task-run-built-in-conditions.md)]

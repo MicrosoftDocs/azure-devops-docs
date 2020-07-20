@@ -405,7 +405,7 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## FAQ
 
