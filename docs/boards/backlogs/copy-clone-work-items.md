@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/17/2020
+ms.date: 07/20/2020
 ---
 
 # Copy or clone work items  
@@ -52,41 +52,88 @@ Use this article to learn how to:
 Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
 > [!NOTE]
-> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the  Closed By field when the State is New or Active, then that field will get copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
+> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field get'S copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
 
-::: moniker range=">= tfs-2018"
-<!---#### Azure Boards and TFS 2018-->
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
-    <img src="media/copy-wi-copy-clone-ts.png" alt="web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+::: moniker range="azure-devops"
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
 
-2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+    ![web portal, user story work item form, open context menu, choose Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
 
-    <img src="media/copy-wi-copy-clone-ts-dialogue.png" alt="web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. 
+
+    ![Copy work item dialog](media/copy/copy-work-item-s171.png)  
+
+	Optionally, check one or more of the boxes: 
+	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing attachments**: To include attachments in the copied work item
+	- **Include child work items**: To include existing links to child work items in the copied work item. 
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
+
+    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
+
+1. Choose the project and work item type if different from the copied work item.   
+
+    ![Copy work item dialog](media/copy/copy-wi-2020.png)  
+
+	Optionally, check one or more of the boxes: 
+	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing attachments**: To include attachments in the copied work item.
+
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+
+::: moniker-end
+
+::: moniker range=">= tfs-2018"
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
+
+    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-wi-copy-clone-ts.png) 
+
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+
+    ![Copy work item dialog](media/copy-wi-copy-clone-ts-dialogue.png)  
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+::: moniker-end
+
 ::: moniker range="tfs-2017"
 
-<!---#### TFS 2017-->
 1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
 
-    <img src="media/copy-wi-copy-clone-2017.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item " style="border: 1px solid #CCCCCC;" /> 
+    ![TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item](media/copy-wi-copy-clone-2017.png) 
 
-2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+1. Choose the project and work item type if different from the copied work item. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    <img src="media/copy-wi-copy-clone-2017-dialogue.png" alt="TFS 2017, web portal, user story work item form, open context menu, click Copy work item " style="border: 1px solid #CCCCCC;" /> 
-   ::: moniker-end
+    ![TFS 2017, web portal, user story work item form, open context menu, click Copy work item](media/copy-wi-copy-clone-2017-dialogue.png)  
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+::: moniker-end
 
 ::: moniker range="tfs-2015"
 
 <!---#### TFS 2015-->
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
-    <img src="media/copy-wi-copy-clone-2015.png" alt="TFS 2015, web portal, user story work item form, click copy-clone icon" style="border: 1px solid #CCCCCC;" /> 
+    ![TFS 2015, web portal, user story work item form, click copy-clone icon](media/copy-wi-copy-clone-2015.png) 
 
-2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type. 
+2. Choose the project (if copying to another project) and work item type if different from the copied work item. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+
 ::: moniker-end
 
 
