@@ -140,7 +140,7 @@ With your feed selected, select the gear icon ![gear icon](../../media/icons/gea
 If there are any failing upstream sources, the Artifacts UI shows a warning message to notify that issues have been detected and manual action may be needed. Upstream setting page will show which one of the upstream sources is failing and by clicking the failing source, users can find the reason for the failure and instructions on how to solve it.
 
 > [!div class="mx-imgBorder"]
-> ![Upstream health](../media/upstream-health.png)
+> ![Upstream health](media/upstream-health.png)
 
 <a name="offline-upstreams"></a>
 
