@@ -15,13 +15,11 @@ monikerRange: '>= tfs-2015'
 
 [!INCLUDE [version-tfs-2015-rtm](../includes/version-tfs-2015-rtm.md)]
 
-::: moniker range="azure-devops-2020"
+::: moniker range="azure-devops"
 
 For each _parallel job_ in Azure Pipelines, you can run a single job at a time in your organization. In Azure Pipelines, you can run parallel jobs on Microsoft-hosted infrastructure or your own (self-hosted) infrastructure.
 
 ::: moniker-end
-
-
 
 
 ::: moniker range="< azure-devops-2019"
