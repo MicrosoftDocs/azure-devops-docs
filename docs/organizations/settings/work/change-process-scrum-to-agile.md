@@ -9,7 +9,6 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.reviewer: kaelli
-monikerRange: "azure-devops"
 monikerRange: ">= azure-devops-2020"
 ms.date: 07/17/2020
 ---
@@ -41,7 +40,7 @@ Reasons you might want to change your process from Scrum to Agile:
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
 <a id="create-customize-process" />
 

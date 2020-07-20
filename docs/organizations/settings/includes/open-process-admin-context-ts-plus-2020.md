@@ -1,5 +1,15 @@
 ---
 ms.topic: include
+---
+
+<a id="open-process-wit"></a>
+
+## Organization Settings > Process
+
+You create, manage, and make customizations to processes from **Organization settings > Process**.
+
+1. Choose the ![Azure DevOps logo](/azu---
+ms.topic: include
 ms.author: kaelli
 author: KathrynEE
 ms.date: 07/17/2020
@@ -45,19 +55,4 @@ You create, manage, and make customizations to processes from **Collection Setti
 	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-2020.png) 
 
 ::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-You create, manage, and make customizations to processes from **Admin settings>Process**. 
-
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
-
-	> [!div class="mx-imgBorder"]  
-	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-2019.png)  
-
-1. Then, choose **Process**. 
-   
-	> [!div class="mx-imgBorder"]  
-	> ![Organization Settings, Process page](/azure/devops/organizations/settings/work/media/process/open-process-page-2019.png) 
-
-::: moniker-end
+ 
