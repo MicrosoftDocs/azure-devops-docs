@@ -199,7 +199,7 @@ Link category: Process-defined</p></td>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases with shared steps. You <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="../../test/mtm/share-steps-between-test-cases.md" data-raw-source="[Share steps between test cases](../../test/mtm/share-steps-between-test-cases.md)">Share steps between test cases</a>.</p>
+<p>Use to link test cases with shared steps. You <a href="/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases" data-raw-source="[share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases" data-raw-source="[Share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases)">Share steps between test cases</a>.</p>
 </td>
 </tr>
 </tbody>

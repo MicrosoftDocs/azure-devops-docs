@@ -86,7 +86,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Your pipeline may have multiple stages, each with multiple jobs. In that case, use the `stages` keyword.
 
@@ -134,7 +134,7 @@ The full syntax to specify a job is:
 ```
 
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
 
@@ -174,7 +174,7 @@ To add jobs to your release pipeline, edit the pipeline in Releases page, and se
 
 Jobs can be of different types, depending on where they run.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
@@ -594,7 +594,7 @@ Select the job and then specify the timeout value.
 On the Options tab, you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 * * *
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 

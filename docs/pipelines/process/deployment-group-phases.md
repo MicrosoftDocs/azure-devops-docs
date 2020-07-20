@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2018'
 You can select specific sets of servers from a deployment group to receive the deployment by specifying the machine tags that you have defined for each server in the deployment group. You can also specify the proportion of the target servers that the pipeline should deploy to at the same time. This ensures that the app running on these servers is capable of handling requests while the deployment is taking place.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > [!NOTE]
 > Deployment group jobs are not yet supported in YAML. You can use [Virtual machine resources in Environments](environments-virtual-machines.md) to do a rolling deployment to VMs in YAML pipelines. 
