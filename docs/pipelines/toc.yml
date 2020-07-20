@@ -259,6 +259,13 @@
     - name: Deploy a Linux web app - ARM template
       href: apps/cd/azure/deploy-arm-template.md
       displayName: Resource Manager
+    - name: Deploy a data pipeline with Azure
+      items:
+      - name: Data pipeline overview
+        href: apps/cd/azure/data-pipeline-azure-overview.md
+        displayName: Data pipeline overview
+      - name: Build a data pipeline
+        href: apps/cd/azure/build-azure-data-pipelines.md
     - name: Azure Government Cloud
       href: library/government-cloud.md
     - name: Azure Resource Manager
