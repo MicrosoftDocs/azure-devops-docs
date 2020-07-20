@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 05/14/2020
+ms.date: 07/20/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -83,6 +83,19 @@ steps:
 
 > [!NOTE]
 > In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
+
+## Authorize resources
+
+When you check out other Azure Repos Git repositories using multi-repo checkout, you may be prompted to authorize access to that resource before the pipeline runs for the first time. You can perform this authorization from the pipeline run summary page. 
+
+:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
+
+:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
+
+:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
+
+For more information, see [Troubleshooting authorization for a YAML pipeline]../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
+
 
 ## Checkout path
 
