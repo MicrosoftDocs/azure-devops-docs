@@ -25,7 +25,7 @@ This article provides guidance to configure and customize Azure Boards. You shou
 - Track time estimates or actual work completed 
 
 > [!NOTE]   
-> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portolio planning tools, are only available for the cloud at this time. 
+> This article applies to Azure DevOps Services. Most of the guidance is valid for both the cloud and on-premises versions. However, some of the features included in this article, such as Rollup, Analytics, and some portfolio planning tools, are only available for the cloud at this time. 
 
 
 If you're just getting started as a Project Administrator, see also [Get started as an administrator](../user-guide/project-admin-tutorial.md).

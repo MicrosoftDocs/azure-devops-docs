@@ -203,9 +203,9 @@ jobs:
 
 <!-- BEGINSECTION class="md-qanda" -->
 
-### I've got a conditional step that runs even when a job is canceled. Does this affect a job that I canceled in the queue?
+### I've got a conditional step that runs even when a job is canceled. Does my conditional step affect a job that I canceled in the queue?
 
-No. If you cancel a job while it's in the queue, then the entire job is canceled, including steps like this.
+No. If you cancel a job while it's in the queue, then the entire job is canceled, including conditional steps.
 
 ### I've got a conditional step that should run even when the deployment is canceled. How do I specify this?
 
@@ -215,7 +215,7 @@ If you defined the pipelines using a YAML file, then this is supported. This sce
 
 You can use the result of the previous job. For example, in this YAML file, the condition `eq(dependencies.A.result,'SucceededWithIssues')` allows the job to run because Job A succeeded with issues. 
 
-```yml
+```yaml
 
 jobs:
 - job: A
@@ -231,6 +231,56 @@ jobs:
   displayName: Job B
   steps:
   - script: echo Job B ran
+```
+### I've got a conditional step that runs even when a job is canceled. How do I manage to cancel all jobs at once?
+
+You'll experience this issue if the condition that's configured in the stage doesn't include a job status check function. To resolve the issue, add a job status check function to the condition. If you cancel a job while it's in the queue, the entire job is canceled, including all the other stages, with this function configured. For more information, see [Job status functions](expressions.md#job-status-functions).
+
+```yaml
+
+stages:
+- stage: Stage1
+  displayName: Stage 1
+  dependsOn: []
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables
+      inputs:
+        script: >
+          printenv
+
+- stage: Stage2
+  displayName: stage 2
+  dependsOn: Stage1
+  condition: contains(variables['build.sourceBranch'], 'refs/heads/master')
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables 2
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables 2
+      inputs:
+        script: >
+          printenv
+          
+- stage: Stage3
+  displayName: stage 3
+  dependsOn: Stage2
+  condition: and(contains(variables['build.sourceBranch'], 'refs/heads/master'), succeeded())
+  jobs:
+  - job: ShowVariables
+    displayName: Show variables 3
+    steps:
+    - task: CmdLine@2
+      displayName: Show variables 3
+      inputs:
+        script: >
+          printenv
+
 ```
 
 <!-- ENDSECTION -->

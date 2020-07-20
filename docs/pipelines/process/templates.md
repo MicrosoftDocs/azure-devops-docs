@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-- ${{ if eq(parameters.experimentalTemplate, true) }}:
-  - template: experimental.yml
-- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-  - template: stable.yml
+  - ${{ if eq(parameters.experimentalTemplate, true) }}:
+    - template: experimental.yml
+  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+    - template: stable.yml
 ```
 
 ### Parameter data types

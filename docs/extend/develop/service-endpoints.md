@@ -300,4 +300,4 @@ Now that you've written your extension, the next steps are to Package, Publish, 
 documentation for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/test/debug-in-browser)
+* [Testing and debugging extensions](/previous-versions/azure/devops/docs/extend/test/debug-in-browser)
