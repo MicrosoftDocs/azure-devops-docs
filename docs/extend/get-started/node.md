@@ -183,12 +183,22 @@ You're now ready to package your extension and publish (upload) it to the Market
     }
     ```     
 
-2. From a command prompt, run the TFX tool's packaging command from your extension directory:
+2. TFX requires the  the VSS Web Extensions SDK. If you haven't already installed it, open a command prompt and run this command: 
+   
+   ```
+   npm install vss-web-extension-sdk --save
+   ```
+
+
+3. From a command prompt, run the TFX tool's packaging command from your extension directory:
    ```
    tfx extension create
    ```
+   
 
+   
 3. Once this completes, you see a message indicating your extension has been successfully packaged:
+
    ```
    === Completed operation: create extension ===
    - VSIX: C:\my-first-extension\AnnetteNielsen.my-first-extension-1.0.0.vsix

@@ -703,7 +703,7 @@ For each project that you create, the system creates the followings project-leve
     <tr>
         <td>Build Administrators</td>
         <td>Has permissions to administer build resources and build permissions for the project. Members can manage test environments, create test runs, and manage builds.</td>
-        <td></td>
+        <td>Assign to users who define and manage build pipelines.</td>
     </tr>
     <tr>
         <td>Contributors</td>
@@ -941,7 +941,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="alter-trace-settings">Alter trace settings</td>
         <td>
-            Can <a href="https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
+            Can <a href="/previous-versions/ms400797%28v%3dvs.80%29">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
         </td>
     </tr>
     <tr>
@@ -1191,7 +1191,7 @@ You manage collection-level permissions through the [web portal admin context](.
     <tr>
         <td id="alter-trace-settings-permission">Alter trace settings</td>
         <td>
-            Can <a href="https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29" data-raw-source="[change the trace settings](https://docs.microsoft.com/previous-versions/ms400797%28v%3dvs.80%29)">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
+            Can <a href="/previous-versions/ms400797%28v%3dvs.80%29" data-raw-source="[change the trace settings](/previous-versions/ms400797%28v%3dvs.80%29)">change the trace settings</a> for gathering more detailed diagnostic information about Azure DevOps Web services.
         </td>
     </tr>
     <tr>

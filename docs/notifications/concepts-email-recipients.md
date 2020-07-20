@@ -7,7 +7,7 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -130,8 +130,8 @@ The delivery option is taken from the team's delivery setting. It can be one of 
 
 The team's delivery setting value is displayed under the _Address_ label and can't be changed.
 
-### Option: Custom email address
-The email is sent to the email address chosen for the subscription.
+### Option: Custom email addresses
+The email gets sent to multiple custom email addresses, which are separated by semicolons.
 
 ![email-team-delivery-option-custom](media/email-team-delivery-option-custom.png)
 

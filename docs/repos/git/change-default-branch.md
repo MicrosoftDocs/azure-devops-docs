@@ -38,7 +38,7 @@ YAML pipelines can be edited in their respective repositories.
 
 ### Existing clones
 New clones of the repository will get the new default branch.
-After the switch, everyone with an existing clone should pull the repo.
+After the switch, everyone with an existing clone should run `git remote set-head origin -a` (replacing `origin` with the name of their remote if it's something else) to update their view of the remote's default branch.
 Future new branches should be based on the new default.
 
 ### Incoming links
