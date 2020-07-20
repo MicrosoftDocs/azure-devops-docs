@@ -8,6 +8,9 @@ ms.date: 07/07/2020
 
 # Logging commands
 
+> [!NOTE]
+> You should use UTF-8 formatting with logging commands. 
+
 ## Overview
 
 Logging commands are how [tasks](../process/tasks.md) and scripts communicate with the agent.
