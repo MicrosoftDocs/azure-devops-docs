@@ -359,7 +359,7 @@ This may help you track down the missing file.
 
 Create a new YAML pipeline in a temporary location (e.g. a new repo created for the purpose of troubleshooting).
 As written, the script searches directories on your path.
-You may optionally edit the `YourPath=` line to search other places.
+You may optionally edit the `SEARCH_PATH=` line to search other places.
 
 ```yaml
 # Script for Linux and macOS
