@@ -16618,6 +16618,11 @@
     "source_path": "docs/test/mtm/testing-microsoft-store-apps.md",
     "redirect_url": "/previous-versions/azure/devops/test/mtm/testing-microsoft-store-apps",
     "redirect_document_id": false
+},
+{
+    "source_path": "docs/report/powerbi/test-topic-azdevops-2019-only.md",
+    "redirect_url": "/azure/devops/report/powerbi/sample-odata-overview",
+    "redirect_document_id": false
 }
  ]
 }
