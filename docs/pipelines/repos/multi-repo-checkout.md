@@ -90,6 +90,10 @@ When you check out other Azure Repos Git repositories using multi-repo checkout,
 
 :::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
 
+:::image type="content" source="media/multi-repo-checkout/media/multi-repo-checkout/.png" alt-text="Authorize resource":::
+
+Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
+
 :::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
 
 :::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
