@@ -224,7 +224,7 @@ The retention policy for YAML and build pipelines is the same. You can see your 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
-You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention).
+You can also customize these policies on a [stage-by-stage basis](#stage-specific-retention-policies).
 ::: moniker-end
 
 ### Global release retention policy
