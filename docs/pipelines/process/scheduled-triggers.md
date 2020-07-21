@@ -414,7 +414,6 @@ In this example, the classic editor scheduled trigger has two entries, producing
 * [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
 * [I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-does-not-run-at-that-time-why)
 * [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
-* 
 
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
