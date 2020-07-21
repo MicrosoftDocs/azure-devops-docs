@@ -58,13 +58,15 @@ For more information, see the [Copy Files](../tasks/utility/copy-files.md) utili
 # [Classic](#tab/classic)
 
 1. Add the **Copy Files task** to your Pipeline.  
-![copy files](media/copy_files_classic_task.png)
+
+> [!div class="mx-imgBorder"]
+> ![copy files](media/copy_files_classic_task.png)
 
 2. Configure the **Copy Files task**. 
-![configure Copy Files](media/copy_files_classic_config.png)
+
+> [!div class="mx-imgBorder"]
+> ![configure Copy Files](media/copy_files_classic_config.png)
 ---
-
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -103,9 +105,9 @@ The **Permanently destroy releases** helps you keep the runs for a certain perio
 
 If your [repository type](../repos/index.md) is one of the following, you can define multiple retention policies with branch filters:
 
-* Azure Repos Git or TFS Git
-* GitHub
-* Other/external Git
+* Azure Repos Git or TFS Git.
+* GitHub.
+* Other/external Git.
 
 For example, your team may want to keep:
 
@@ -113,10 +115,10 @@ For example, your team may want to keep:
 * Master and feature branch builds for 10 days, with a minimum of three successful or partially successful builds for each of these branches. You exclude a special feature branch that you want to keep for a longer period of time.
 * Builds from the special feature branch and all other branches for 15 days, with a minimum of a single successful or partially successful build for each branch.
 
-The following example retention policy for a build pipeline
-meets the above requirements:
+The following example retention policy for a build pipeline meets the above requirements:
 
-![define git retention policies](media/define-git-retention-policies.png)
+> [!div class="mx-imgBorder"]
+> ![define git retention policies](media/define-git-retention-policies.png)
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
