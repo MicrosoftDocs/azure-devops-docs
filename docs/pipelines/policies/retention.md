@@ -19,9 +19,7 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-Retention policies are used to configure how long runs and releases are to be retained by the system. 
-The primary reasons to delete older runs and releases are to conserve storage and reduce clutter. 
-The main reasons to keep runs and releases are for audit and tracking.
+With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter. 
 
 ## Run retention policies
 
