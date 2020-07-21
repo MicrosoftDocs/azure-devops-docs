@@ -9,13 +9,12 @@ ms.author: kaelli
 author: KathrynEE 
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 07/09/2020
+ms.date: 07/20/2020 
 ---
 
 # Copy or clone work items  
 
-[!INCLUDE [temp](../includes/version-all.md)]   
- 
+[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
 ::: moniker range=">= azure-devops-2019"
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 
@@ -53,41 +52,85 @@ Use this article to learn how to:
 Clone a work item when you want to create another instance of it. This action opens a form with all fields filled out. Copy a work item when you want to create another instance of it and optionally change its work item type. This action opens a form with all fields filled out except for the Title. A related link to the original work item is created. Also any parent link is copied over. No history or attachments are copied over from the original work item.  
 
 > [!NOTE]
-> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the  Closed By field when the State is New or Active, then that field will get copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
+> It is possible that some fields are copied over depending on the on-premise version you are working with and how you have customized your work item types. If the work item type of the work item that you are cloning has no state transition rule that says to clear the *Closed By* field when the *State* is **New** or **Active**, then that field get'S copied over. The current system out-of-box templates have this rule defined. It was added to TFS 2018 and later versions. 
 
-::: moniker range=">= tfs-2018"
 
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
+::: moniker range="azure-devops"
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
+    ![web portal, user story work item form, open context menu, choose Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
 
-    ![web portal, user story work item form, open context menu, click Create copy of work item ](media/copy-wi-copy-clone-ts.png)  
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. 
 
-2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+    :::image type="content" source="media/copy/copy-work-item-s171.png" alt-text="Copy work item dialog":::
 
-    ![web portal, user story work item form, open context menu, click Copy work item](media/copy-wi-copy-clone-ts-dialogue.png)  
+	Optionally, check one or more of the boxes: 
+	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing attachments**: To include attachments in the copied work item
+	- **Include child work items**: To include existing links to child work items in the copied work item. 
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.   
 
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020"
+
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
+    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy/choose-copy-work-item-s171.png) 
+
+1. Choose the project and work item type if different from the copied work item.   
+
+    :::image type="content" source="media/copy/copy-work-item-2020.png" alt-text="Copy work item dialog":::
+
+	Optionally, check one or more of the boxes: 
+	- **Include existing links**: To link the copied work item as a Related link type and maintain all other related and external links included in the copied work item.  
+	- **Include existing attachments**: To include attachments in the copied work item.
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+
+::: moniker-end
+
+::: moniker range="tfs-2018"
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and choose **Create copy of work item**.  
+    ![web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-ts.png) 
+
+1. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+
+    ![Copy work item dialog](media/copy-work-item-copy-clone-ts-dialogue.png)  
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+::: moniker-end
+
 ::: moniker range="tfs-2017"
 
-1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.   
+1. From the web portal, open the work item you want to copy or clone, open the &hellip; context menu, and click **Create copy of work item**.  
 
-    ![TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item](media/copy-wi-copy-clone-2017.png)  
+    ![TFS 2017, web portal, user story work item form, open context menu, click Create copy of work item](media/copy-work-item-copy-clone-2017.png) 
 
-2. Choose the project and work item type if different from the copied work item.  Optionally change the Title and provide additional details. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
+1. Choose the project and work item type if different from the copied work item. To link the copied work item as a Related link type and maintain all other links (related links and external links) included in the copied work item, check the **Include existing links** checkbox.  
 
-    ![TFS 2017, web portal, user story work item form, open context menu, click Copy work item](media/copy-wi-copy-clone-2017-dialogue.png)  
-   ::: moniker-end
+    ![TFS 2017, web portal, user story work item form, open context menu, click Copy work item](media/copy-work-item-copy-clone-2017-dialogue.png)  
+
+1. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+::: moniker-end
 
 ::: moniker range="tfs-2015"
 
 1. From the web portal, open the work item you want to copy or clone, and click the copy/clone icon. The copied work item is automatically linked to the original work item through a Related link type.
 
-    ![TFS 2015, web portal, user story work item form, click copy-clone icon](media/copy-wi-copy-clone-2015.png)  
+    ![TFS 2015, web portal, user story work item form, click copy-clone icon](media/copy-work-item-copy-clone-2015.png) 
 
-2. Choose the project (if copying to another project) and work item type if different from the copied work item. Optionally change the Title and provide additional details. The copied work item is automatically linked to the original work item through a Related link type. 
+2. Choose the project (if copying to another project) and work item type if different from the copied work item. Choose **OK**.
+
+1. In the work item form that opens, update other fields as needed. All work items start in the New state.  
+
 ::: moniker-end
-
 
 ::: moniker range="tfs-2013"
 
@@ -111,7 +154,7 @@ If you have a large number of work items whose type you want to change, use [Cha
 
 With this option, you can copy an HTML formatted table of selected items from either a backlog page or query results list. You can then email this list using your choice of email client, or paste into a Word document, Excel spreadsheet, or other application. 
 
-::: moniker range="< azure-devops"
+::: moniker range="<= azure-devops-2019"
 > [!NOTE]  
 > The data copied with **Copy as HTML** is the same as that copied when you select **Email selected work items**. If you don't have an SMTP server configured, you can work around this by using **Copy as HTML**. For on-premises Azure DevOps, all email actions require an [SMTP server to be configured](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
@@ -124,7 +167,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
     Here we multi-select from the product backlog and choose <b>Copy to clipboard</b>.
 
-    ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-wi-copy-to-clipboard-ts-1.png)  
+    ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-work-item-copy-to-clipboard-ts-1.png) 
 
 ::: moniker-end
 
@@ -136,7 +179,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
     Here we multi-select from the backlog page. 
 
-    ![TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/bulk-modify-copy-as-html.png)  
+    ![TFS 2017, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/bulk-modify-copy-as-html.png) 
    ::: moniker-end 
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
@@ -147,7 +190,7 @@ With this option, you can copy an HTML formatted table of selected items from ei
 
     Here we multi-select from the backlog page.
 
-    ![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-wi-copy-as-html-2015.png)  
+    ![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-work-item-copy-as-html-2015.png) 
    ::: moniker-end 
 
 ## Paste the contents into your email client
@@ -161,19 +204,20 @@ The formatted table contains a link to each work item included in your selected 
 
 
 <a id="copy-url">  </a>
+
 ## Copy the URL
 
 #### [Browser](#tab/browser/)
 ::: moniker range=">= tfs-2017"
 Copy the URL from the web browser address or hover over the title and then click the ![Copy to clipboard icon](media/icon-copy-to-clipboard.png) copy-to-clipboard icon.  
 
-![Copy hyperlink for a work item from web portal](media/add-work-item-copy-URL.png)  
+<img src="media/add-work-item-copy-URL.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" />
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2015" 
 Right click the link ID to open the browser copy link option.
 
-![Copy hyperlink for a work item from web portal](media/copy-wi-url-2015.png)  
+<img src="media/copy-work-item-url-2015.png" alt="Copy hyperlink for a work item from web portal" style="border: 1px solid #CCCCCC;" /> 
 ::: moniker-end
 
 

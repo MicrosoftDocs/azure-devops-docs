@@ -43,7 +43,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 	Here we multi-select from the product backlog and choose **Copy to clipboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-wi-copy-to-clipboard-ts-1.png)
+	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-work-item-copy-to-clipboard-ts-1.png)
 
 ::: moniker-end 
 
@@ -68,7 +68,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 
 	Here we multi-select from the backlog page.
 
-	![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-wi-copy-as-html-2015.png)
+	![TFS 2015, Backlog page, multi-select items, open context menu, click Copy as HTML menu option](media/copy-work-item-copy-as-html-2015.png)
  
 ::: moniker-end 
 
