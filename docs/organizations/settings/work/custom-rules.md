@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: ">= azure-devops-2019"
 ms.topic: conceptual
-ms.date: 07/17/2020
+ms.date: 07/09/2020
 ---
 
 # Add a rule to a work item type (Inheritance process)
@@ -38,7 +38,7 @@ With a custom rule, you can define a number of actions based on specific conditi
 Each rule consists of two parts: Conditions and Actions. Conditions define the circumstances which must be met in order for the rule to be applied. Actions define the operations to perform. You can specify a maximum of two conditions and 10 actions per rule. All custom rules require all conditions to be met in order to be run. 
 
 > [!NOTE]  
-> Currently, only 1 condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md).
+> Currently, only one condition is supported for state-transition rules. If you're applying rules based on State, see [Apply rules to workflow states](apply-rules-to-workflow-states.md).
 
 As an example, you can make a field required based on the value assigned to the state and another field. For example:
 &nbsp;&nbsp;&nbsp;`(Condition) When a work item State is *Active*`
@@ -51,17 +51,8 @@ As an example, you can make a field required based on the value assigned to the 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions.png)
+> |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions-cloud.png)
 
-> 
-> [!NOTE]  
-> The following conditions and actions that are in Private Preview require participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
-> - Conditions:
->     - `A work item state moved from ...` (Private Preview)  
->     - `Current user is member of group...`  
->     - `Current user is not member of group ...`   
-> - Action:  
->     - `Restrict the transition to state...` (Private Preview)  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
@@ -73,18 +64,17 @@ As an example, you can make a field required based on the value assigned to the 
 
 ::: moniker-end
 
-
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions-2020.png)
+> |![list of conditions](media/rules/when-condition-1.png) | ![list of actions](media/rules/rule-actions-2019.png)
 
 ::: moniker-end
 
 
-Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel based Add-in.
+Rules are always enforced, not only when you are interacting with the form but also when interfacing through other tools. For example, setting a field as read-only not only applies the rule on the work item form, but also through the API and Excel Azure DevOps Server Add-in.
 
 
 [!INCLUDE [temp](../includes/tip-formula-rule.md)]
@@ -132,27 +122,42 @@ You delete or disable the rule from the actions menu of the rule.
 
 ![Delete or disable a rule](media/process/custom-rule-delete-disable-rule.png)  
 
-
 ::: moniker range=">= azure-devops-2020"
 
-## Restrict modification of work items based on a user or group
+## Hide or restrict modification of a field based on a user or group 
 
-You can add rules to work item types to support these restriction requests:
+When you select the `Current user is a member of group...` or `Current user is not a member of group...`, you can hide a field, make a field read-only, or make a field required. 
 
-- Restrict who can modify a specific field for a work item type
-- Hide field from the form
+For example, the following condition indicates that the Justification field is hidden for members who don't belong to the Fabrikam Fiber\Voice group.  
 
-
-> [!NOTE]   
-> Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
+:::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
 ::: moniker-end
 
+
+<a id="restrict-modifications-wits" />
+
+::: moniker range=">= azure-devops-2020"
+
+## Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range="azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
 
 
 ## Related articles
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [Apply rules to workflow states](apply-rules-to-workflow-states.md)  
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)

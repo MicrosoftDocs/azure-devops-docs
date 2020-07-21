@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 
@@ -19,7 +23,7 @@ By default, all project members and users with **Stakeholder** access can view a
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * To view, run, or email a query, you must be granted **Stakeholder** access or higher. For details, see .

@@ -6,7 +6,7 @@ ms.topic: include
 <a id="global-shortcuts"></a>
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can use the following keyboard shortcuts from the web portal.
 

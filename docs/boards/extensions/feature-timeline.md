@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 06/25/2020
+ms.date: 07/09/2020
 ---
  
 # View portfolio progress with the Feature Timeline 
@@ -82,7 +82,7 @@ You can access the Feature Timeline from either your team's Kanban board or back
 
 Here we open Boards. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 

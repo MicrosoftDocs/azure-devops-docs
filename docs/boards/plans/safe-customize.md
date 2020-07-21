@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 07/09/2020
 ---
 
 
 # Customize Azure Boards to support SAFe&reg;  
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 The main reason to customize your process is to support tracking and monitoring progress, reporting on key metrics, and meeting specific business requirements. In this article you'll learn about select process customizations you can make and why you might want to make them to support your SAFe® practices. Most of these customizations are optional. 
 
@@ -193,32 +193,39 @@ For an index of existing fields, see [Work item field index](../work-items/guida
 
 Field rules provide support for a number of business use cases. Rules specify an action to take based on a selected condition. For example you can make a field required based on the value assigned to another field. You can add several rules to a field. 
 
-The following image shows the supported conditions and actions you can select from. 
+The following images show the supported conditions and actions you can select from. 
 
-
-
+ 
 ::: moniker range="azure-devops"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-cloud.png)
 
-> [!NOTE]  
-> "When current user is member of group..." and "When current user is not member of group ..." rules are currently only available for Azure DevOps Services.
 
 ::: moniker-end
 
+ 
+
+::: moniker range="azure-devops-2020"
+
+> [!div class="mx-tdBreakAll"]  
+> |Supported conditions |Supported actions |
+> |-------------|----------|  
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-2020.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-2020.png)
+
+::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
 > [!div class="mx-tdBreakAll"]  
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
-> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions.png)
+> |![list of conditions](../../organizations/settings/work/media/rules/when-condition-1.png) | ![list of actions](../../organizations/settings/work/media/rules/rule-actions-2019.png)
 
 ::: moniker-end
- 
+
 
 For details on setting field rules, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md). 
 
