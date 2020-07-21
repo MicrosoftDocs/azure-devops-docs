@@ -15,7 +15,7 @@ ms.date: 03/26/2019
 
 # Perform a semantic or ad hoc work item search
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="search-box"/>
 

@@ -13,7 +13,7 @@ ms.date: 01/20/2017
 
 # Plan an iteration (CMMI)
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 Developing software in iterations means that you divide your work into incremental stages such that you have software with progressively more working features at the end of each iteration. Ideally, you have something to show the customer after even the first iteration. Iterations let you receive feedback early so that you can make course corrections early.  
   

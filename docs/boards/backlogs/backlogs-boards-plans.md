@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 10/17/2019
+ms.date: 07/09/2020
 ---
 
 
 
 # Tasks supported by Backlogs, Boards, Taskboards, and Plans 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -477,7 +477,7 @@ Delivery Plans is available for TFS 2017.2 and later versions.
 ::: moniker range=">= tfs-2017"
 When you configure a plan, you select the team or teams and backlog levels of interest. To learn more about Delivery Plans, see [Review team plans](../plans/review-team-plans.md). 
 
-<img src="media/backlogs-boards-plans-delivery-plans.png" alt="Example plans view" style="border: 1px solid #C3C3C3;" /> 
+![Example plans view](media/backlogs-boards-plans-delivery-plans.png)  
 ::: moniker-end
 
 
@@ -513,7 +513,7 @@ These reasons can cause work items that belong to the Task Category to not appea
 If you need more than three backlog and board levels, you can add more. To learn how, see [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md). 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 If you need more than three backlog levels and board levels, you can add more. You can also add or modify the fields defined for a work item type (WIT) or add a custom WIT. To learn how, see the following articles based on the process model used to update your project:  
 

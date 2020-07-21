@@ -9,12 +9,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/10/2019
+ms.date: 07/09/2020
 ---
 
 # Work items quick reference
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Use this index to quickly access concepts related to work items and information on adding and updating work items&mdash;such as users stories, features, tasks, and bugs.
 
@@ -187,7 +187,7 @@ Tasks listed below are available to users with Contributor permissions and Basic
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 <table valign="top">
 <tbody valign="top">
@@ -518,7 +518,7 @@ You customize work item types using the Inheritance process model.
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You customize work item types using either the Inheritance process model or On-premises XML process model, depending on the selection made when [creating the project collection](/azure/devops/server/admin/manage-project-collections?view=azure-devops-2019) on which the project is defined.
 
