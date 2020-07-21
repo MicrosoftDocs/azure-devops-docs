@@ -52,7 +52,8 @@ As an example, you can make a field required based on the value assigned to the 
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
 > |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions-cloud.png)
- 
+
+::: moniker-end
 
 ::: moniker range="azure-devops-2020"
 
@@ -129,7 +130,7 @@ When you select the `Current user is a member of group...` or `Current user is n
 
 For example, the following condition indicates that the Justification field is hidden for members who don't belong to the Fabrikam Fiber\Voice group.  
 
-:::image type="content" source="/media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
+:::image type="content" source="media/rules/rule-hide-justification-field.png" alt-text="Custom rule, Current user is not a member of a group, Hide Justification field":::
 
 ::: moniker-end
 
