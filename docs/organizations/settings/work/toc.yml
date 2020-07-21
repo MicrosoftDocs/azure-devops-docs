@@ -1,5 +1,5 @@
 - name: About the inheritance process 
-  href: inheritance-process-model.md
+  href: inheritance-process-model.md?toc=/azure/devops/reference/toc.json&bc=/azure/devops/reference/breadcrumb/toc.json 
 - name: Add a custom field
   href: add-custom-field.md
 - name: Add a custom work item type

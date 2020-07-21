@@ -35,7 +35,7 @@ You can set the job authorization scope to be **collection** or **project**. By 
 
 # [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Job authorization scope can be set for the entire Azure DevOps organization or for a specific project. 
 
@@ -69,7 +69,7 @@ YAML pipelines are not available in TFS.
 
 # [Classic](#tab/classic/)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Job authorization scope can be set for the entire Azure DevOps organization, for a specific project, or for a specific pipeline. 
 
