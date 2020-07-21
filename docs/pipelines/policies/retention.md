@@ -122,15 +122,18 @@ The following example retention policy for a build pipeline meets the above requ
 
 When specifying custom policies for each pipeline, you cannot exceed the maximum limits set by administrator.
 
-<h4 id="branch-policy-pr-builds">Clean up pull request builds</h4>
+<a id="branch-policy-pr-builds"></a>
+
+#### Clean up pull request builds
 
 If you [protect your Git branches with pull request builds](../../repos/git/branch-policies.md#build-validation), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
 
 ```
-refs/pull/*
+  refs/pull/*
 ```
 
-![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
+> [!div class="mx-imgBorder"]
+> ![retention-policy-for-pull-request-builds](media/retention-policy-for-pull-request-builds.png)
 
 ### TFVC and Subversion repositories
 
@@ -142,7 +145,8 @@ When the system is purging old builds, it evaluates each build against the polic
 
 The "All" branches policy is automatically added as the last policy in the evaluation order to enforce the maximum limits for all other branches.
 
-![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
+> [!div class="mx-imgBorder"]
+> ![define git retention policy max shown in pipeline](media/define-git-retention-policy-max-shown-in-definition.png)
 
 ::: moniker-end
 
@@ -158,7 +162,7 @@ When the retention policies mark a build for deletion, you can control which inf
 
 The following information is deleted when a build is deleted:
 
-* Logs
+* [Logs](../troubleshooting/review-logs.md)
 * [Published artifacts](../tasks/utility/publish-build-artifacts.md)
 * [Published symbols](../tasks/build/index-sources-publish-symbols.md)
 
@@ -168,7 +172,7 @@ The following information is deleted when a build is deleted:
 
 The following information is deleted when a run is deleted:
 
-* Logs
+* [Logs](../troubleshooting/review-logs.md)
 * [All artifacts](../tasks/utility/publish-build-artifacts.md)
 * [All symbols](../tasks/build/index-sources-publish-symbols.md)
 * Binaries
@@ -196,7 +200,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ### Delete a run
 
-You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page. 
+You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
