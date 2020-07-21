@@ -1,4 +1,4 @@
-﻿---
+---
 title: Copy list of stories, issues, or other work items
 titleSuffix: Azure Boards   
 description: Copy a list of user stories, issues, bugs, tasks, or other work items  from a backlog or query  
@@ -43,7 +43,7 @@ You can copy an HTML formatted table of selected items from either a backlog pag
 	Here we multi-select from the product backlog and choose **Copy to clipboard**.
 
 	> [!div class="mx-imgBorder"]  
-	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-wi-copy-to-clipboard-ts-1.png)
+	> ![backlog page, multi-select items, open context menu, Copy to clipboard](media/copy-work-item-copy-to-clipboard-ts-1.png)
 
 ::: moniker-end 
 
