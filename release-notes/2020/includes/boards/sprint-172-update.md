@@ -16,7 +16,7 @@ You can also create a rule to restrict state transitions by group membership. Fo
 
 ### Copy work item to copy children
 
-One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up too 100).  
+One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up to 100).  
 
 &nbsp;<img src="../../media/172-boards-2-0.png" width="500">
 
