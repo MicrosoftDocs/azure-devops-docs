@@ -1,5 +1,5 @@
 ---
-title: Build and release retention policies
+title: Retention policies for builds, tests, and releases
 ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
@@ -9,7 +9,7 @@ ms.date: 07/21/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Build and release retention policies
+# Retention policies for builds, tests, and releases
 
 **Azure Pipelines | TFS 2018 | TFS 2017 | TFS 2015 | [Previous versions (XAML builds)](https://msdn.microsoft.com/library/ms181716%28v=vs.120%29.aspx)**
 
@@ -19,7 +19,26 @@ monikerRange: '>= tfs-2015'
 
 ::: moniker-end
 
-With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter. 
+With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter.
+
+## prerequisites 
+
+In order to be able to manage the build and release retention policies, you will need to be part of one of the following built-in groups:
+
+* Contributors.
+* Build Admins.
+* Project Admins.
+* Release Admins.
+
+To manage your test result, you must have one of the following subscriptions:
+
+- [Enterprise](https://visualstudio.microsoft.com/vs/enterprise/)
+- [Test Professional](https://visualstudio.microsoft.com/vs/test-professional/)
+- [MSDN Platforms](https://visualstudio.microsoft.com/msdn-platforms/)
+
+Or, configure [Basic + Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web) access level.
+
+See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
 ## Run retention policies
 
