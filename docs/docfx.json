@@ -87,12 +87,9 @@
       },
       "monikerRange": {
         "report/admin/**": "<= azure-devops-2019",
-        "report/analytics/**": ">= azure-devops-2019",
-        "report/excel/**": "<= tfs-2017",
         "report/extend-analytics/**": ">= azure-devops-2019",
         "report/powerbi/**": ">= azure-devops-2019",
-        "report/sql-reports/**": "<= azure-devops-2019",
-        "reference/tfs-ps-sync/**": "<= tfs-2015",
+        "report/sql-reports/**": "<= azure-devops-2020",
         "reference/witadmin/**": "<= azure-devops-2019",
         "reference/mapping/**": "<= azure-devops-2019"
       },

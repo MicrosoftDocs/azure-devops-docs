@@ -154,7 +154,7 @@ To configure a widget, add the widget to a dashboard, choose open the ![actions 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Additional information is provided to configure the following widgets: 
 - [Burndown/burnup](configure-burndown-burnup-widgets.md)

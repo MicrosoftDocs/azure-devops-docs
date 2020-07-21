@@ -34,7 +34,7 @@ To configure or view sprint burndown charts, see [Sprint burndown](configure-spr
 By estimating remaining work of tasks for each backlog item, teams better understand what they can accomplish within a sprint. Because the sprint tasks define the overall sprint scope, defining the remaining work leads to a well-defined sprint scope. Anything that is not represented by a task in the sprint should be considered out of scope for the sprint.
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 As the team makes progress, divergences from the ideal trend line help the team monitor divergences from scope. 
 
@@ -87,7 +87,7 @@ As the team makes progress, divergences from the ideal trend line help the team 
 ## Mitigate risk through daily inspection
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Your burn-down chart shows you if your project is on schedule. A daily check can mitigate risks and provide early warning of potential schedule or cost overruns, two metrics associated with traditional project management. 
 
