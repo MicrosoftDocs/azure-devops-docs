@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/12/2019
+ms.date: 07/20/2020 
 ---
 
 # About process customization and inherited processes  
@@ -449,7 +449,6 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 <td>Standard backlogs  </td>
 <td>
 <ul>
-<li><a href="customize-process-backlogs-boards.md" data-raw-source="[Add a custom WIT](customize-process-backlogs-boards.md)">Add a custom WIT</a></li>
 <li><a href="customize-process-backlogs-boards.md" data-raw-source="[Change the default WIT](customize-process-backlogs-boards.md)">Change the default WIT</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-product-backlog" data-raw-source="[Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)">Rename the requirement backlog</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Rename a portfolio backlog</a> </li>
@@ -473,8 +472,25 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 <img src="media/process/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
 
+::: moniker range="azure-devops"
+
+You can add or remove an inherited or system WIT to or from a backlog, for example, you can add the Issue WIT to the product backlog.   
+
+::: moniker-end
 
 **What you can't customize**  
+
+::: moniker range="azure-devops"
+
+- You can't remove an inherited portfolio level from the product (but you can rename them)
+- You can't insert a backlog level within the existing set of defined backlogs
+- You can't reorder the backlog levels  
+- You can't create a custom task level, although you can add custom WITs to the iteration backlog  
+- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
 
 - You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
 - You can't remove an inherited portfolio level from the product (but you can rename them)
@@ -482,6 +498,8 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 - You can't reorder the backlog levels  
 - You can't create a custom task level, although you can add custom WITs to the iteration backlog  
 - You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
+
+::: moniker-end
 
 
 ### Fields added to WITs associated with a backlog level 
