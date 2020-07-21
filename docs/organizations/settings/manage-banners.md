@@ -7,7 +7,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azure-devops'
+monikerRange: '>= azure-devops-2020'
 ms.date: 08/15/2019
 ---
 
@@ -39,6 +39,8 @@ Could not update the expiration date to a null value
 - You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
 
 ## admin banner commands
 

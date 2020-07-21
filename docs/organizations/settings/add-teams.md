@@ -171,6 +171,8 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
 ::: moniker range=">= azure-devops-2020"
 
 From the Azure DevOps CLI command, you can list teams, add teams, and run other team management commands. 
