@@ -34,12 +34,28 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 ## Rename a team
 
+#### [Browser](#tab/browser) 
+
+
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
 > To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page) 
+::: moniker-end
+
+::: moniker range="azure-devops"
+**New Teams Page**
+::: moniker-end
+
+
+#### [Browser](#tab/browser) 
+
+::: moniker range="azure-devops"
+**New Teams Page**
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020" 
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -54,7 +70,13 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 1. Choose **Save**.
 
-#### [Current page](#tab/current-page) 
+::: moniker-end
+::: moniker range="azure-devops"
+**Teams Page (current version)** 
+::: moniker-end
+
+::: moniker range="azure-devops-2019 || azure-devops"
+
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -67,9 +89,50 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
+::: moniker-end
+
+
+::: moniker range=">= tfs-2017 <= tfs-2018"
+
+<a id="add-team-team-services" /> 
+
+1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+
+	![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
+
+2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
+
+To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2013 <= tfs-2015"
+
+<a id="add-team-tfs-2015" />
+
+1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+
+	![Open project admin page](../../media/settings/open-admin-page-tfs2015.png)  
+
+2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
+
+	> [!div class="mx-imgBorder"]
+	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
+
+
+To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+ 
+::: moniker-end
+
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 <a id="update-team" /> 
+
+::: moniker range="< azure-devops-2020"
 
 You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -89,6 +152,11 @@ az devops team update --team
 - **org**: Optional. URL of organization. You can configure the default organization using `az devops configure -d org=URL`. Required if not configured as default or picked up via git config.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  You can configure the default project using `az devops configure -d project=NAME_OR_ID`. Required if not configured as default or picked up via git config.
 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range="< azure-devops-2020"
 
 #### Example
 
@@ -175,70 +243,35 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 }
 ```
 
----
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-1. From the web portal, choose **Project settings** and open **Teams**. 
-
-   ![Open Project settings, and then Teams](media/shared/open-project-settings-team-new-nav.png)
-
-2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
-
-::: moniker-end
+* * *
 
 
-::: moniker range=">= tfs-2017 <= tfs-2018"
-
-<a id="add-team-team-services" /> 
-
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
-
-	![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
-
-2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
-
-::: moniker-end
-
-::: moniker range=">= tfs-2013 <= tfs-2015"
-
-<a id="add-team-tfs-2015" />
-
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
-
-	![Open project admin page](../../media/settings/open-admin-page-tfs2015.png)  
-
-2. Choose the team you want to rename. Under the Team Profile, enter the new name and optionally update the description.  Choose **Save** when done. 
-
-	> [!div class="mx-imgBorder"]
-	> ![Create a subteam with its own area path](media/rename-remove-team/rename-team-prev-ui.png)
-
-
-To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
- 
-::: moniker-end
 
 ## Delete a team 
 
 > [!IMPORTANT]   
 > Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
 
+
 ::: moniker range="azure-devops"
 
+> [!NOTE]   
+> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
 
-#### [Preview page](#tab/preview-page)
+::: moniker-end
+
+#### [Browser](#tab/browser) 
+
+::: moniker range="azure-devops"
+**New Teams Page**
+::: moniker-end
+
+::: moniker range=">= azure-devops-2020" 
 
 1. From the web portal, choose **Project settings** and open **Teams** as shown in the previous section.
 
@@ -252,8 +285,12 @@ To configure other team features, see [Manage teams and configure team tools](ma
 	> [!div class="mx-imgBorder"]
 	> ![Delete team confirmation dialog](media/rename-remove-team/delete-team-confirmation.png) 
 
+::: moniker-end
+::: moniker range="azure-devops"
+**Teams Page (current version)** 
+::: moniker-end
 
-#### [Current page](#tab/current-page) 
+::: moniker range="azure-devops-2019 || azure-devops"
 
 1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 
@@ -267,9 +304,27 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
 
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+
+1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
+
+	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
+
+2. To complete the delete operation, you must type the name of the WIT as shown. 
+
+	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
+
+::: moniker-end
+
+
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="delete-team" /> 
+
+::: moniker range="< azure-devops-2020"
 
 You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
 
@@ -295,37 +350,19 @@ Are you sure you want to delete this team? (y/n): y
 
 ```
 
+::: moniker-end
+
+
+::: moniker range="< azure-devops-2020"
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
+
+::: moniker-end
+
 * * *
 
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-	> [!div class="mx-imgBorder"]  
-	> ![Project Settings > Teams > Delete team](media/add-team/delete-team-vert.png)  
-
-	> [!IMPORTANT]   
-	> Deleting a team deletes all team configuration settings, including team dashboards, backlogs, and boards. Data defined for work items assigned to the team are left unchanged. Once deleted, you can't recover the team configurations. 
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-::: moniker-end
 
 
-::: moniker range="<= tfs-2018"
-
-1. To delete a team, open **Project Settings>Work>Overview**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
-
-	![Web portal, admin context-project level, Delete team](media/add-team/multiple-teams-delete-team.png)
-
-2. To complete the delete operation, you must type the name of the WIT as shown. 
-
-	![Delete team confirmation dialog](media/add-team/multiple-teams-delete-team-confirmation-dialog.png)
-
-::: moniker-end
 
 
 ## Related articles
