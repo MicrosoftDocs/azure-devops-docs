@@ -304,10 +304,6 @@ The rule requirements translate to the following four rule definitions.
 
 When specifying the condition, `A work item state moved from ...`, you can specify only that condition. You can specify up to 10 actions.   
 
-> [!NOTE]   
-> State restriction rules are in Private Preview for Azure DevOps Services only. If you are interested in participating in the Private Preview, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1).
-
-
 ### Example of restricting state transitions and Approved state
 
 In keeping with the terminology used by a business group, the following workflow states are defined for the User Story. The *New*, *Resolved*, and *Removed* inherited states are hidden. Instead, *Proposed*, *In Review*, and *Cut* States are used. In addition, three additional States are defined: *Investigate*, *Design*, and *Approved*. These States should follow the sequence as shown in the following image. 

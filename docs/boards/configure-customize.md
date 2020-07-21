@@ -384,19 +384,22 @@ Talk with your team to determine how they want to manage bugs. Then [change your
 > After you refresh a backlog or board and you don't see bugs where you expect them, review [How backlogs and boards display hierarchical (nested) items](backlogs/resolve-backlog-reorder-issues.md#leaf-nodes). Only leaf nodes of nested items appear on sprint taskboards.  
 
 
-::: moniker range="azure-devops"
-
 <a id="add-oob-to-backlog" /> 
+
+<!--- Removing Preview content 
+
+::: moniker range="azure-devops"
 
 ## Add system work item types to a backlog (Private Preview) 
 
 If you want to track issues or impediments along with your requirements or in a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
-[!INCLUDE [oob-wits](includes/note-oob-wits-backlog-support.md)]
+[!INCLUDE [oob-wits](includes/note-system-work-item-types-backlog-support.md)]
 
 ::: moniker-end
 
 
+--> 
 
 <a id="hierarchy" />
 

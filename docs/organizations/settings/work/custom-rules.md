@@ -144,7 +144,7 @@ You can add rules to work item types to support these restriction requests:
 For example, the following rule disallows members of the Fabrikam Fiber\Voice group to create the User Story work item type as they can't transition the work item to the New state. When a user of this group opens a new User Story, they are unable to save it as the State field can't automatically be set to New.
 
 > [!div class="mx-imgBorder"]  
-> ![Custom rule]media/rules/restrict-group-create-work-item.png)
+> ![Custom rule](media/rules/restrict-group-create-work-item.png)
 
 > [!NOTE]   
 > Depending on the rule action you specify, either the **Save** button on the work item form may be disabled, or an error message displays when a restricted user attempts to create or modify the work item. 
