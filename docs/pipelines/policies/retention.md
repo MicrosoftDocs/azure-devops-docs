@@ -250,10 +250,9 @@ The **destruction policy** helps you keep the releases for a certain period of t
 > [!NOTE]
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-### Stage-specific retention
+### Stage-specific retention policies
 
-You may want to retain more releases that have been deployed to specific stages.
-For example, your team may want to keep:
+You may want to retain more releases that have been deployed to specific stages. For example, your team may want to keep:
 
 * Releases deployed to Production stage for 60 days, with a minimum of three last deployed releases.
 * Releases deployed to Pre-production stage for 15 days, with a minimum of one last deployed release.
@@ -262,13 +261,10 @@ For example, your team may want to keep:
 
 The following example retention policy for a release pipeline meets the above requirements:
 
-![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
+> [!div class="mx-imgBorder"]
+> ![Configuring the release retention setting for a release pipeline](media/retention-policy-01.png)
 
-In this example, if a release that is deployed to Dev is not
-promoted to QA for 10 days, it is a potential candidate for
-deletion. However, if that same release is deployed to QA eight
-days after being deployed to Dev, its retention timer is reset,
-and it is retained in the system for another 30 days.
+In this example, if a release that is deployed to Dev is not promoted to QA for 10 days, it is a potential candidate for deletion. However, if that same release is deployed to QA eight days after being deployed to Dev, its retention timer is reset, and it is retained in the system for another 30 days.
 
 When specifying custom policies per pipeline, you cannot exceed the maximum limits set by administrator.
 
@@ -276,19 +272,14 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker range=">= tfs-2017"
 
-### Interaction between build and release retention
+### Interaction between build and release retention policies
 
-The build linked to a release has its own retention policy,
-which may be shorter than that of the release. If you want to retain
-the build for the same period as the release, set the
-**Retain associated artifacts** checkbox for the appropriate stages. This
-overrides the retention policy for the build, and ensures that the
+The build linked to a release has its own retention policy, which may be shorter than that of the release. If you want to retain the build for the same period as the release, set the **Retain associated artifacts** checkbox for the appropriate stages. This overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
 
-When you delete a release pipeline, delete a release, or when the
-retention policy deletes a release automatically, the retention policy
-for the associated build will determine when that build is deleted.
+When you delete a release pipeline, delete a release, or when the retention policy deletes a release automatically, the retention policy for the associated build will determine when that build is deleted.
 
+> [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
 
