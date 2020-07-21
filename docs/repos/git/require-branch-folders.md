@@ -29,8 +29,8 @@ Decide on the folder structure you want to allow.
 As an example, we'll set our repository to enforce the following rules:
 
 * Only `master` can exist at the repository root.
-* All users will be allowed to create branches under the `features/` and `users/` folders.
-* Administrators will be able to create branches under the `releases/` folder.
+* All users will be allowed to create branches under the `feature/` and `users/` folders.
+* Administrators will be able to create branches under the `release/` folder.
 
 >[!NOTE]
 >For more examples and information about branch naming strategies, see [Adopt a Git branching strategy](git-branching-guidance.md).
@@ -54,20 +54,20 @@ First, block the Create Branch permission at the repository root for the project
 tf git permission /deny:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo
 ```
 
-Then, allow contributors to create branches under `features` and `users`.
+Then, allow contributors to create branches under `feature` and `users`.
 
 ```
-tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:features
+tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:feature
 ```
 
 ```
 tf git permission /allow:CreateBranch /group:[FabrikamProject]\Contributors /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:users
 ```
 
-Allow administrators to create branches under `releases`.
+Allow administrators to create branches under `release`.
 
 ```
-tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:releases
+tf git permission /allow:CreateBranch /group:"[FabrikamProject]\Project Administrators" /collection:https://dev.azure.com/fabrikam-fiber/ /teamproject:FabrikamProject /repository:FabrikamRepo /branch:release
 ```
 
 Finally, allow administrators to create a branch called `master` (in case it ever gets deleted accidentally.

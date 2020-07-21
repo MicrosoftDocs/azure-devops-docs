@@ -56,7 +56,7 @@ To define the branch control check:
 
 2. Navigate to **Approvals and Checks** for the resource.
 
-3. Choose the **Branch control** check and provide a command separated  list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
+3. Choose the **Branch control** check and provide a comma separated list of allowed branches. You can mandate that the branch should have protection enabled and the behavior of the check in case protection status for one of the branches is not known.
 
 :::image type="content" source="media/checks/branch-control-check.png" alt-text="Configuring branch control check.":::
 

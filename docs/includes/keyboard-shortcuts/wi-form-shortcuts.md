@@ -19,7 +19,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 :::row:::
@@ -58,7 +58,7 @@ You can use the following keyboard shortcuts when [interacting with a work item 
  
 ::: moniker-end
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"
 
 ## Rich text field shortcuts
 
