@@ -156,7 +156,7 @@ az devops team update --team
 
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -242,11 +242,11 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
   "url": "https://dev.azure.com/fabrikam/_apis/projects/56af920d-393b-4236-9a07-24439ccaa85c/teams/7f099146-29a2-4798-9949-77c9f5f79653"
 }
 ```
-
+::: moniker-end
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
-::: moniker-end
+
 
 * * *
 
@@ -352,12 +352,8 @@ Are you sure you want to delete this team? (y/n): y
 
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
-::: moniker-end
 
 * * *
 
