@@ -18,11 +18,33 @@ ms.date: 08/07/2019
 
 In this section, we provide samples for the most popular reports:
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
-| Azure Boards | Azure Pipelines | Azure Test Plans | 
-|----------------------|--------------------------| 
-| [!INCLUDE [temp](includes/sample-fulllist.md)] | [!INCLUDE [temp](includes/sample-full-list-pipelines.md)] | [!INCLUDE [temp](includes/sample-full-list-test-plans.md)] |
+---
+:::row:::
+   :::column span="":::
+      **Azure Boards**
+   :::column-end:::
+   :::column span="":::
+      **Azure Pipelines**  
+   :::column-end:::
+   :::column span="":::
+      **Azure Test Plans**  
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="":::
+      [!INCLUDE [temp](includes/sample-fulllist.md)]
+   :::column-end:::
+   :::column span="":::
+      [!INCLUDE [temp](includes/sample-full-list-pipelines.md)]
+   :::column-end:::
+   :::column span="":::
+      [!INCLUDE [temp](includes/sample-full-list-test-plans.md)]
+   :::column-end:::
+:::row-end:::
+---
 
 ::: moniker-end
 
