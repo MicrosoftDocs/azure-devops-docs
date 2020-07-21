@@ -66,7 +66,8 @@ For more information, see the [Copy Files](../tasks/utility/copy-files.md) utili
 
 > [!div class="mx-imgBorder"]
 > ![configure Copy Files](media/copy_files_classic_config.png)
----
+
+* * *
 
 ::: moniker range="<= tfs-2018"
 
