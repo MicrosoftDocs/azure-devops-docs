@@ -3,6 +3,7 @@ ms.topic: include
 ---
 
 <a id="permissions">  </a>
+
 ## Prerequisites  
 
 ::: moniker range="azure-devops"
@@ -15,7 +16,7 @@ ms.topic: include
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).

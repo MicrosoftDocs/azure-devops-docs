@@ -11,7 +11,7 @@ You can use the following keyboard shortcuts when working from a **Boards>Backlo
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 :::row:::
    :::column span="2":::

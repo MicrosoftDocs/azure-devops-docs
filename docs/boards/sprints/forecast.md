@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 # Forecast your product backlog
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 Teams use the forecast tool to help in their sprint planning efforts. By plugging in a value for the [team velocity](../../report/dashboards/team-velocity.md), the forecast tool will show which items in the backlog can be completed within future sprints. Both tools are team-specific tools that rely on the team's ability to estimate backlog items. Once your team has completed a sprint or two, they can use the team velocity  to forecast how much of the backlog they can finish within the upcoming sprints. 
 
@@ -40,7 +40,7 @@ Use this article to learn:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** security group. If you're not on a project or team, [get added now](/azure/devops/organizations/security/add-users-team-project). 
@@ -80,7 +80,7 @@ You can use the forecast tool to get an idea of how many items you can complete 
 To forecast your product backlog, perform the following actions.
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
@@ -196,6 +196,7 @@ To forecast your product backlog, perform the following actions.
 
 
 ## Review the forecast results 
+
 *	Check the results manually to understand discrepancies in what you expect and what the forecast tool displays.  
 *	Check the amount of effort (Effort, Story Points, or Size) forecasted per sprint. 
 *	Question forecast results where the effort of an item is near to, or greater than, team velocity.  
@@ -256,13 +257,16 @@ In summary:
 ::: moniker-end
 
 ## Determine the velocity needed to complete all items in the backlog
+
 Another way to use the forecast tool is to enter different velocity values until all the backlog items are completed within a given set of sprints. This provides an estimate of what velocity is required to complete your backlog of items. 
 
 You can then assess the delta between the current team's velocity and the required velocity to determine what additional resources are required to meet production demands within a required time. 
 
  
 ## Try this next
-Now that you understand how to work with forecasting, you can use this tool to support your team's [sprint planning activities](assign-work-sprint.md).
+
+> [!div class="nextstepaction"]
+> [Assign work to a sprint](assign-work-sprint.md)
 
 ## Related articles
 

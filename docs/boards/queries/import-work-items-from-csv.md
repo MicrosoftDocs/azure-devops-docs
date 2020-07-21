@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: ">= azure-devops-2019"
-ms.date: 03/06/2020
+ms.date: 07/09/2020
 ---
 
 # Bulk import or update work items using CSV files
@@ -30,7 +30,7 @@ You can perform bulk export of work items using a CSV formatted file. While you 
 > [!NOTE]   
 > The export feature is available with [Azure DevOps Server 2019 Update 1](https://go.microsoft.com/fwlink/?LinkId=2097609) and later versions. The import feature is available with Azure DevOps Server 2020 and Azure DevOps Services. 
 
-::: moniker range="> azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 ## Import new work items
 
@@ -143,7 +143,7 @@ From any query, you can export a list of work items as a comma-delimited list. S
 
 ::: moniker-end 
 
-::: moniker range="> azure-devops-2019"
+::: moniker range=">= azure-devops-2020"
 
 ## Q & A
 

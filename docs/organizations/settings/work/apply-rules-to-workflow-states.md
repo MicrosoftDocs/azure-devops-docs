@@ -48,9 +48,9 @@ Review this article to understand how to define rules that apply when you change
 > - Workflow state and rule limits and best practices 
 > - Set a field value or make a field read-only or required based on State selection 
 > - Restrict state transitions 
+> - Restrict or allow State transitions to specific users or groups
 > - Automate state transitions of parent work items  
 
-<!--- Restrict or allow State transitions to specific users or groups --> 
 ::: moniker-end
 
 
