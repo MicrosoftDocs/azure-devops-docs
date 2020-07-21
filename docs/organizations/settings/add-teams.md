@@ -171,7 +171,6 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
 
 ::: moniker range=">= azure-devops-2020"
 
@@ -200,6 +199,12 @@ az devops team list [--project]
 
 > [!NOTE]   
 > If you don't specify a **top** number, 100 teams are returned. To list all teams in a project, specify a number for **top** which is greater than the current number of teams defined.  
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
 
 
 #### Example
@@ -332,12 +337,7 @@ C:\WINDOWS\system32>az devops team create --name Web --project "Fabrikam Fiber"
 ```
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
-
-::: moniker-end
 
 * * *
 
@@ -560,12 +560,8 @@ C:\WINDOWS\system32>az boards work-item update --id 487 --area "Fabrikam Fiber\S
 
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
-::: moniker-end
 
 * * *
 
@@ -677,12 +673,8 @@ Fabrikam Fiber\Voice                   True                 True
 
 ::: moniker-end
 
-
-::: moniker range="< azure-devops-2020"
-
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]  
 
-::: moniker-end
 
 * * *
 
