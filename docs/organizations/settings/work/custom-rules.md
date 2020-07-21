@@ -52,18 +52,7 @@ As an example, you can make a field required based on the value assigned to the 
 > |Supported conditions |Supported actions |
 > |-------------|----------|  
 > |![list of conditions](media/rules/when-condition-2.png) | ![list of actions](media/rules/rule-actions-cloud.png)
-
-> 
-> [!NOTE]  
-> The following conditions and actions are only available for Azure DevOps Services. Those that are in Private Preview require participating in the Private Preview. For details, see [State transition restriction rules (private preview)](/azure/devops/release-notes/2020/sprint-171-update#azure-boards-1). 
-> - Conditions:
->     - `A work item state moved from ...` (Private Preview)  
->     - `Current user is member of group...`  
->     - `Current user is not member of group ...`   
-> - Action:  
->     - `Restrict the transition to state...` (Private Preview)  
-::: moniker-end
-
+ 
 
 ::: moniker range="azure-devops-2020"
 
