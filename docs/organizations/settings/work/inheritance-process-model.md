@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/12/2019
+ms.date: 07/20/2020 
 ---
 
 # About process customization and inherited processes  
@@ -449,7 +449,6 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 <td>Standard backlogs  </td>
 <td>
 <ul>
-<li><a href="customize-process-backlogs-boards.md" data-raw-source="[Add a custom WIT](customize-process-backlogs-boards.md)">Add a custom WIT</a> or a system WIT (Private Preview)</li>
 <li><a href="customize-process-backlogs-boards.md" data-raw-source="[Change the default WIT](customize-process-backlogs-boards.md)">Change the default WIT</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-product-backlog" data-raw-source="[Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)">Rename the requirement backlog</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Rename a portfolio backlog</a> </li>
@@ -477,7 +476,7 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 You can add or remove an inherited or system WIT to or from a backlog, for example, you can add the Issue WIT to the product backlog.   
 
-[!INCLUDE [oob-wits](../../../boards/includes/note-oob-wits-backlog-support.md)]
+[!INCLUDE [oob-wits](../../../boards/includes/note-system-work-item-types-backlog-support.md)]
 
 ::: moniker-end
 

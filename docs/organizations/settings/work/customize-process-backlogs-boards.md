@@ -116,21 +116,10 @@ Here, we've added the *Ticket* WIT which is tracked along with tasks.
 > [!NOTE]    
 > You can't remove the default, inherited WIT from the Iteration backlog. 
 
-::: moniker range="azure-devops"
+
 
 <a id="add-oob-to-backlog" /> 
 
-## Add a system work item type to a backlog (Private Preview) 
-
-If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by editing the corresponding backlog.    
-
-[!INCLUDE [oob-wits](../../../boards/includes/note-oob-wits-backlog-support.md)]
-
-For example, here we add the Issue work item type to the Requirements backlog. 
-
-:::image type="content" source="/media/backlogs/add-oob-issue-to-backlog.png" alt-text="Edit backlog dialog, add Issue work item type":::
-
-::: moniker-end 
 
 ## Related articles  
 

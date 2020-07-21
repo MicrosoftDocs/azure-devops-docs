@@ -137,18 +137,21 @@ Impediments and issues don't appear on your backlog. Instead, you track them usi
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
-
 <a id="add-to-backlog" /> 
+
+<!--- Removing Preview content 
+
+
+::: moniker range="azure-devops"
 
 ## Add issues or impediments to your product backlog (Private Preview) 
 
 If you want to track issues or impediments along with your requirements or a portfolio backlog, you can by adding them to your custom Inherited process. For details, see [Customize your backlogs or boards (Inheritance process)](../../organizations/settings/work/customize-process-backlogs-boards.md#edit-product-backlog).
 
-[!INCLUDE [oob-wits](../includes/note-oob-wits-backlog-support.md)]
+[!INCLUDE [oob-wits](../includes/note-system-work-item-types-backlog-support.md)]
 
 ::: moniker-end
-
+--> 
 
 ## Related articles 
 
