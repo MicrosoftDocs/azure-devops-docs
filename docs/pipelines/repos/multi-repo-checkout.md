@@ -90,7 +90,7 @@ When you check out other Azure Repos Git repositories using multi-repo checkout,
 
 :::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
 
-:::image type="content" source="media/multi-repo-checkout/media/multi-repo-checkout/.png" alt-text="Authorize resource":::
+:::image type="content" source="media/multi-repo-checkoutauthorize-resource-prompt.png" alt-text="Authorize resource":::
 
 Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
 
@@ -98,7 +98,7 @@ Choose **View** or **Authorize resources**, and follow the prompts to authorize 
 
 :::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
 
-For more information, see [Troubleshooting authorization for a YAML pipeline]../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
+For more information, see [Troubleshooting authorization for a YAML pipeline]()../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
 
 
 ## Checkout path
