@@ -23,11 +23,11 @@ ms.date: 08/30/2019
 
 <a id="add-charts"></a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Analytics, Builds, Releases, or Queries. 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 You can add the charts described in this article to a dashboard from their corresponding functional page, such as Builds, Releases, or Queries. 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ You can add the charts described in this article to a dashboard from their corre
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2018 <= azure-devops-2019"
+::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - You must have [created the team dashboard](dashboards.md) to which you want to add a chart to.  
@@ -80,7 +80,7 @@ To learn more, see [Default permissions and access for charts and dashboards](ch
 
 ## In-context work tracking reports 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can add each of the in-context Analytics reports to a dashboard. 
 
@@ -100,7 +100,7 @@ You can add each of the in-context Analytics reports to a dashboard.
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 There are a number of in-context reports that you can access from the web portal, but can't add to a dashboard. However, you may find a comparable widget listed in the [widget catalog](widget-catalog.md) that tracks the same or similar data which you can add to the dashboard. These include: 
 
