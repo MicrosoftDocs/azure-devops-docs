@@ -208,19 +208,19 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 ::: moniker-end
 
 
-<h2 id="release">Release retention</h2>
+<a id="release"></a>
 
-The release retention policies for a release pipeline determine how long a release
-and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline. 
-The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most
-recent three will be retained indefinitely - irrespective of the number of
-days specified. However, you can manually delete these releases when you no longer require them.
+## Release retention policies
+
+The release retention policies for a release pipeline determine how long a release and the run linked to it are retained. Using these policies, you can control **how many days** you want to keep each release after it has been last modified or deployed and the **minimum number of releases** that should be retained for each pipeline.
+
+The retention timer on a release is reset every time a release is modified or deployed to a stage. The minimum number of releases to retain setting takes precedence over the number of days. For example, if you specify to retain a minimum of three releases, the most recent three will be retained indefinitely - irrespective of the number of days specified. However, you can manually delete these releases when you no longer require them.
 
 
 As an author of a release pipeline, you can customize retention policies for releases of your pipeline on the **Retention** tab.
 
 ::: moniker range=">=azure-devops-2020"
-The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section. 
+The retention policy for YAML and build pipelines is the same. You can see your pipeline's retention settings in **Project Settings** for **Pipelines** in the **Settings** section.
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"
@@ -238,8 +238,7 @@ Global release retention policy settings can be managed from the **Release** set
 * Azure Pipelines: `https://dev.azure.com/{organization}/{project}/_settings/release?app=ms.vss-build-web.build-release-hub-group`
 * On-premises: `https://{your_server}/tfs/{collection_name}/{project}/_admin/_apps/hub/ms.vss-releaseManagement-web.release-project-admin-hub`
 
-The **maximum retention policy** sets the upper limit for how long releases can be retained
-for all release pipelines. Authors of release pipelines cannot
+The **maximum retention policy** sets the upper limit for how long releases can be retained for all release pipelines. Authors of release pipelines cannot
 configure settings for their definitions beyond the values specified here.
 
 The **default retention policy** sets the default retention values for all the release pipelines. Authors of build pipelines can override these values.
@@ -248,6 +247,7 @@ The **destruction policy** helps you keep the releases for a certain period of t
 
 ::: moniker range="<=tfs-2018"
 
+> [!NOTE]
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
 ### Stage-specific retention
