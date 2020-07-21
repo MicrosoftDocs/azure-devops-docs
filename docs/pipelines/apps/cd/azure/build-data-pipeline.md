@@ -129,14 +129,14 @@ To make commands easier to run, start by selecting a default region. After you s
     ```azurecli
    az extension add --name datafactory
     ```   
-   1. Run the following `az datafactory factory create` command to create a new data factory.  
+   2. Run the following `az datafactory factory create` command to create a new data factory.  
     
    ```azurecli
     az datafactory factory create \
         --name data-factory-cicd \
         --resource-group $rgName
    ```
-    1. Copy the Subscription ID for your Data Factory to use later. 
+    3. Copy the Subscription ID for your Data Factory to use later. 
 
 
 1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
@@ -150,7 +150,7 @@ To make commands easier to run, start by selecting a default region. After you s
     az extension add --name databricks
     ```   
     
-    1. Run the following `az databricks workspace create` command to create a new workspace.  
+   2. Run the following `az databricks workspace create` command to create a new workspace.  
     ```azurecli
     az databricks workspace create \
         --resource-group $rgName \
@@ -158,7 +158,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --location eastus2  \
         --sku standard
     ```
-  1. Copy the Subscription ID for your Databricks service to use later. 
+  3. Copy the Subscription ID for your Databricks service to use later. 
 
 ## Upload data to your storage container
 
@@ -172,7 +172,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 You will use Key Vault to store all connection information for your Azure services.
 
-### Create a Databricks Personal Access Token
+### Create a Databricks personal access token
 1. Go Databricks in the Azure portal and launch your workspace. 
 1. Generate and copy a personal access token in the Azure Databricks UI ([steps](https://docs.microsoft.com/azure/databricks/dev-tools/api/latest/authentication#--generate-a-personal-access-token)). 
 
@@ -181,7 +181,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Open **Access keys**. 
 1. Copy the first key and connection string. 
 
-### Save values to Key vault
+### Save values to Key Vault
 1. Create three secrets:
     
     * databricks-token: `your-databricks-pat`
@@ -207,7 +207,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Name the service connection `azure_rm_connection`.
 1. Check **Grant access permission to all pipelines**. 
 
-## Add Pipeline variables
+## Add pipeline variables
 1. [Create a new variable group](../../../library/variable-groups.md) named `datapipeline-vg`.
 1. Add these variables:
     * LOCATION: `location for your resources in the Azure Portal, example eastus2`
@@ -254,7 +254,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Click **Publish** to update the pipeline. 
 
 
-## Run the CI/CD Pipeline
+## Run the CI/CD pipeline
 
 1. Navigate to the **Pipelines** page. Then choose the action to create a new pipeline.
 1. Select **Azure Repos Git** as the location of your source code.
@@ -271,3 +271,6 @@ If you're not going to continue to use this application, delete your data pipeli
 1. Delete the `data-pipeline-cicd-rg` resource group. 
 2. Delete your Azure DevOps project. 
   
+## Next steps
+> [!div class="nextstepaction"]
+> [Learn more about data in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities)
