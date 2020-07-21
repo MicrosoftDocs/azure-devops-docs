@@ -9,19 +9,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/20/2020 
+ms.date: 07/09/2020
 ---
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-azure-boards-plus-azure-devops-server-2019-2020.md)]
 
 <a id="inherited" /> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
 > [!IMPORTANT]  
-> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 only. 
+> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
@@ -239,7 +239,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ::: moniker-end
 
-### Configurable picklists 
+### Configurable drop-down menus or picklists 
 
 The following picklists are configured for each project and not customizable through an inherited process.   
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
@@ -247,6 +247,14 @@ The following picklists are configured for each project and not customizable thr
 
 Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
 
+You can modify the following system fields' picklists: 
+
+- Resolved Reason
+- Priority
+- Severity
+- Risk
+- Value Area
+- Activity
 
 <a id="rename-field">  </a>
 
@@ -294,19 +302,23 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+::: moniker range=">= azure-devops-2020"
 
-### Restrict modification of select fields for select user groups
+### Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
 
-Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
 
-- `current user is a member of a group...`
-- `current user is not a member of a group...`
+::: moniker range="azure-devops"
 
-For example, you can make the Title or the State field Read-only for select users or groups. 
+### Restrict modification of closed work items
 
-### Restrict modification of closed work items 
+::: moniker-end
 
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+
+
 
 ### Restrict modification of work items based on Area Path 
 
@@ -449,6 +461,7 @@ Backlogs and boards are essential Agile tools for creating and managing work for
 <td>Standard backlogs  </td>
 <td>
 <ul>
+<li><a href="customize-process-backlogs-boards.md" data-raw-source="[Add a custom WIT](customize-process-backlogs-boards.md)">Add a custom WIT</a></li>
 <li><a href="customize-process-backlogs-boards.md" data-raw-source="[Change the default WIT](customize-process-backlogs-boards.md)">Change the default WIT</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-product-backlog" data-raw-source="[Rename the requirement backlog](customize-process-backlogs-boards.md#edit-product-backlog)">Rename the requirement backlog</a></li>
 <li><a href="customize-process-backlogs-boards.md#edit-portfolio-backlog" data-raw-source="[Rename a portfolio backlog](customize-process-backlogs-boards.md#edit-portfolio-backlog)">Rename a portfolio backlog</a> </li>
@@ -472,25 +485,8 @@ When you change the default WIT for a backlog level, it causes that WIT to appea
 
 <img src="media/process/process-backlog-boards-quick-add-panel.png" alt="Product backlog, Quick Add Panel, Displays Default WIT for a backlog level" style="border: 1px solid #C3C3C3;" /> 
 
-::: moniker range="azure-devops"
-
-You can add or remove an inherited or system WIT to or from a backlog, for example, you can add the Issue WIT to the product backlog.   
-
-::: moniker-end
 
 **What you can't customize**  
-
-::: moniker range="azure-devops"
-
-- You can't remove an inherited portfolio level from the product (but you can rename them)
-- You can't insert a backlog level within the existing set of defined backlogs
-- You can't reorder the backlog levels  
-- You can't create a custom task level, although you can add custom WITs to the iteration backlog  
-- You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
-
-::: moniker-end
-
-::: moniker range="< azure-devops"
 
 - You can't add or remove an inherited WIT to or from a backlog, for example, you can't add the Issue WIT to the product backlog    
 - You can't remove an inherited portfolio level from the product (but you can rename them)
@@ -498,8 +494,6 @@ You can add or remove an inherited or system WIT to or from a backlog, for examp
 - You can't reorder the backlog levels  
 - You can't create a custom task level, although you can add custom WITs to the iteration backlog  
 - You can't add the *Bug* WIT to any backlog level. Instead, the system allows each team to decide how they want to manage bugs. To learn more, see [Show bugs on backlogs and boards](../show-bugs-on-backlog.md).
-
-::: moniker-end
 
 
 ### Fields added to WITs associated with a backlog level 

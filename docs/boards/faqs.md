@@ -12,7 +12,7 @@ ms.date: 02/07/2020
 
 # Azure Boards FAQs 
 
-[!INCLUDE [temp](includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](includes/version-all.md)]
  
 
 Find answers to frequently asked questions when using Azure Boards. For FAQs specific to Microsoft Excel integration to add or modify work items defined in Azure DevOps, see [FAQs: Work in Excel connected to Azure Boards](backlogs/office/faqs.md). 

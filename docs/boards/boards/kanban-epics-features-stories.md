@@ -16,7 +16,7 @@ ms.date: 02/14/2019
 
 # Kanban board features and epics  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 

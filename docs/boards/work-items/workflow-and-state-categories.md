@@ -8,12 +8,12 @@ ms.assetid: C6FEEE5A-CD13-413E-8A3F-84A7D4F3A2C9
 ms.author: kaelli
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # How workflow states and state categories are used in Backlogs and Boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 All workflows consist of states, transitions, and reasons. Workflows are defined for a work item type (WIT). A transition supports forward and backward movement among two states. When you add a custom state, the system automatically adds transitions from the custom state to all other inherited states (except for Removed).  
 
@@ -228,7 +228,7 @@ To learn more about process models, see [Customize your work tracking experience
 - [Customize a workflow for a process](../../organizations/settings/work/customize-process-workflow.md)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 - [Lead Time and Cycle Time control charts (widgets)](../../report/dashboards/cycle-time-and-lead-time.md)
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
@@ -236,7 +236,7 @@ To learn more about process models, see [Customize your work tracking experience
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 - [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)
 - [ProcessConfiguration XML element reference](../../reference/xml/process-configuration-xml-element.md)
 - [Customize your work tracking experience](../../reference/on-premises-xml-process-model.md) 
