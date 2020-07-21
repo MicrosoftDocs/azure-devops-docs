@@ -192,6 +192,21 @@ You  restrict access to work tracking objects in one of two ways:
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2020"
+
+## Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range="azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-work-items.md)]
 
 ::: moniker range="< azure-devops"
 
