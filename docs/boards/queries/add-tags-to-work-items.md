@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 09/26/2019
+ms.date: 07/09/2020
 ---
 
 # Add work item tags to categorize and filter lists and boards  
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 
 Tagging work items helps you quickly filter the product backlog or a work 
@@ -235,7 +235,7 @@ Simply save the work item with the tags (100 or less) that you've added, and the
 Limit queries to fewer than 25 tags. More than that and the query will likely time out.  
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ### Add tags to the default column view on the product backlog 
 

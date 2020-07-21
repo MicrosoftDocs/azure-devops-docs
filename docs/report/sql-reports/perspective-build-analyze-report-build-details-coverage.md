@@ -7,7 +7,7 @@ description: View the measures, dimensions, and attributes in the SQL Server Ana
 ms.assetid: 36b4e35a-d81d-4851-bd49-8b23d177fb53
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 

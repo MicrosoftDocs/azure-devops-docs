@@ -14,7 +14,8 @@ ms.date: 07/20/2020
 
 # Copy or clone work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../includes/version-all.md)] 
+   
 ::: moniker range=">= azure-devops-2019"
 
 There are two types of copy functions you can use. The first is to duplicate a single work item, referred to as copy or clone. In addition, you can choose to change the project or work item type when copying/cloning a work item. 

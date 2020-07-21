@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/17/2020
+ms.date: 7/09/2020
 ---
 
 
@@ -19,14 +19,14 @@ ms.date: 02/17/2020
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
@@ -44,7 +44,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 <a id="add-columns" > </a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add columns
 
@@ -344,6 +344,15 @@ Requires TFS 2015.1 or later version.
 5. When done with your changes, choose **Save**.
 
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+## Taskboard automatically updates 
+
+Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+
+::: moniker-end
+
 
 
 ## Related articles
