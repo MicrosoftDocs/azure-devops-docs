@@ -77,9 +77,17 @@ If you are tracking dependencies across one or more organizations, you may want 
 
 ### Q: Can I copy a work item including its subtasks? 
 
-**A:** No. Cloning doesn't copy work item subtasks.  
+::: moniker range="azure-devops"
+**A:** Yes. Azure Boards (cloud service) now supports copying child work items when copying a work item. For details, see [Copy or clone work items](backlogs/copy-clone-work-items.md#copy-clone).  
 
-Is this feature on the roadmap? Yes. See [Roadmap Item 1666194: Clone work item including subtasks](https://dev.azure.com/mseng/AzureDevOpsRoadmap/_workitems/edit/1666194).
+::: moniker-end
+::: moniker range="< azure-devops"
+
+**A:** No. Cloning doesn't copy work item subtasks for on-premises deployments. 
+
+Is this feature on the roadmap? Yes. In fact, it has been released on Azure Boards (cloud service).  
+
+::: moniker-end
 
 ### Q: Can I create a work item template that creates links to other work items? 
 
