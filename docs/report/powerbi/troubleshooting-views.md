@@ -66,6 +66,7 @@ This error indicates that you have a custom field with the same display name as 
 To resolve this collision, remove the duplicate column from the view's fields. You'll need to customize your fields selection and remove the duplicate field from the [field list](analytics-views-create.md#select-fields). 
 
 ## Related articles
+
 - [Create an Analytics view](analytics-views-create.md) 
 - [Manage Analytics views](analytics-views-manage.md).  
 - [Data available from Analytics](data-available-in-analytics.md)

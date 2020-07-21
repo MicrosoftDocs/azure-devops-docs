@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 
 # Organize your backlog, map child work items to parents 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 After you've added [features or epics](define-features-epics.md) to your portfolio backlog, you can organize your backlog by mapping backlog items. You can quickly add and group items into a hierarchy. You can also drill up or down within the hierarchy, reorder and reparent items, and filter hierarchical views.  
 
@@ -59,7 +59,7 @@ In this article you'll learn how to:
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 **Stakeholder** access users can't use drag and drop to map or reparent work items or change their sprint. 
 
@@ -69,7 +69,7 @@ In this article you'll learn how to:
 
 From your web browser, open your product backlog.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. (1) Check that you have selected the right project, (2) choose **Boards>Backlogs**, and then (3) select the correct team from the team selector menu. 
 

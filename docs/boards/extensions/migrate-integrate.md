@@ -13,7 +13,7 @@ ms.date: 02/06/2020
 
 # Azure Boards migration and integration 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You have a choice of tools to support migration of your work tracking data to the Azure DevOps platform. This article provides an overview of what's available and links to tools that support migration of work tracking data and processes. In addition, you can integrate Azure Boards with a number of third-party tools. 
 

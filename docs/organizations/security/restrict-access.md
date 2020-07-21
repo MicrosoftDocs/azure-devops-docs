@@ -8,7 +8,7 @@ ms.technology: devops-security
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 08/15/2019
+ms.date: 07/09/2020
 ---
 
 # Grant or restrict access
@@ -159,40 +159,73 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 </tr>
 </table>
 
-<a id="restrict-modifications-wits" />
+<a id="restrict-modifications-wits" /> 
 
-## Restrict modification of work items based on a user or group  
+::: moniker range=">= azure-devops-2019"
 
-::: moniker range="azure-devops"
-
-For the [Inheritance process model](../../organizations/settings/work/inheritance-process-model.md), you can customize work item types restrict who can modify a specific field for a work item type. 
-
-For example, the Priority field, for the User Story work item type, becomes read-only for members of the Fabrikam Fiber\Voice group. When a user of this group opens a User Story, they are unable to change the value on the Priority field.
-
-You can restrict modification of work items by adding a custom rule to the work item type. To learn more, see [Add a rule to a work item type (Inheritance process)](../../organizations/settings/work/custom-rules.md#). 
-
+## Restrict modification of select fields based on a user or group 
+ 
 ::: moniker-end
+
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
+
 
 ::: moniker range="azure-devops-2019"
 
 > [!NOTE]
-> The ability to restrict modification of work items based on a user or group is only supported with the On-premises XML process model at this time for on-premises Azure DevOps. 
+> For Azure DevOps Server 2019 and earlier versions, you can only restrict modification of work items based on a user or group with the On-premises XML process model. 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
-For the [On-premises XML process model](../../reference/on-premises-xml-process-model.md), you can customize work item types to support these restriction requests: 
+For the [On-premises XML process model](/azure/devops/reference/on-premises-xml-process-model), you can customize work item types to support these restriction requests: 
 - Restrict who can create or modify a work item 
 - Restrict who can create specific work item types, such as Epics or Features 
 
-For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](../../reference/xml/apply-rule-work-item-field.md#apply-ignore). 
+For example, you can restrict modification of work items by adding a rule to the work item type, usually within the **WORKFLOW** section. To learn more, see [Add a rule to a work item type, Apply or ignore rules based on user or group](/azure/devops/reference/xml/apply-rule-work-item-field#apply-ignore). 
 
 You  restrict access to work tracking objects in one of two ways:
-- [Set a condition field rule](../../reference/xml/apply-rule-work-item-field.md), [a condition-based field rule](../../reference/xml/assign-conditional-based-values-and-rules.md) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
-- By [adding WITs to the Hidden Categories group](../../reference/xml/use-categories-to-group-work-item-types.md), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](../../boards/backlogs/work-item-template.md) that opens the work item form and share that link with those team members who you do want to create them. 
+- [Set a condition field rule](/azure/devops/reference/xml/apply-rule-work-item-field), [a condition-based field rule](/azure/devops/reference/xml/assign-conditional-based-values-and-rules) or a combination of the two that applies to a group. You can restrict changes from being made to a field by specifying a qualifying rule and making it apply for a specific group. Conditional rules can include **CANNOTLOSEVALUE**, **EMPTY**, **FROZEN**, **NOTSAMEAS**, **READONLY**, and **REQUIRED** elements. 
+- By [adding WITs to the Hidden Categories group](/azure/devops/reference/xml/use-categories-to-group-work-item-types), you can prevent the majority of project contributors from creating them. You [can create a hyperlink to a template](/azure/devops/boards/backlogs/work-item-template) that opens the work item form and share that link with those team members who you do want to create them. 
    
 ::: moniker-end
+
+
+
+::: moniker range="<= azure-devops"
+
+## Restrict modification of closed work items
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
+
+
+::: moniker range="< azure-devops"
+
+Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
+
+For on-premises deployments, you can add rules to a work item type to prevent re-opening after a work item has been closed. For example, the following workflow transition rules allow Testers to reopen a work item, but not members of the Developers group. 
+
+```
+<TRANSITION from="Closed" to="New"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+<TRANSITION from="Closed" to="Active"  
+   for="[Project]\Testers"  
+   not="[Project]\Developers">  
+   . . .  
+</TRANSITION>  
+```
+
+To learn more, see [Apply a field rule](/azure/devops/reference/xml/apply-rule-work-item-field).  
+
+::: moniker-end
+
+
 
 ## Next steps
 

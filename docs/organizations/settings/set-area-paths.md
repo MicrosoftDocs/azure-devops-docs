@@ -13,7 +13,7 @@ ms.date: 07/14/2020
 
 # Define area paths and assign to a team
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 
 You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.

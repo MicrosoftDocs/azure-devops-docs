@@ -1,4 +1,4 @@
-﻿---
+---
 title: Enable Kanban board badge status for GitHub repo
 titleSuffix: Azure Boards
 description: Configure your Kanban board badge status to appear on your GitHub repo  
@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 07/19/2019
+ms.date: 07/09/2020
 ---
 
 # Configure status badges to add to GitHub README files 

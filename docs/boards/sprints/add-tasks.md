@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/28/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 04/28/2020
 
 # 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -41,7 +41,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ## Open a Sprint backlog for a team 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 

@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/18/2020
+ms.date: 07/09/2020
 ---
 
 # Work item fields and attributes
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Work item fields are used to track information. Each work item type (WIT) definition specifies the fields defined for that WIT. Each field is associated with a number of attributes, many of which are set by the system and cannot be changed. 
 
@@ -80,7 +80,7 @@ You can view the data type of fields defined for your organization by [opening t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 When your project collection uses the Inheritance process model to customize work tracking, you can view the data type of fields by [opening the Process>Fields page](../../organizations/settings/work/customize-process-field.md#review-fields). 
 
@@ -554,7 +554,7 @@ To add fields to a process, you add them to one or more work item types. To lear
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 You can add or modify the fields contained within a WIT or add a custom WIT. To learn more, see:
 - For project collections that use the Inheritance process model: [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md).  
@@ -584,7 +584,7 @@ You can change the field name, the index, and the report attributes for any fiel
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - [Query quick reference](../queries/query-index-quick-ref.md)
 - [Work item field index](guidance/work-item-field.md) 

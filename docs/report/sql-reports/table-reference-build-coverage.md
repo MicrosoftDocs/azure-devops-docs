@@ -7,7 +7,7 @@ description: Query for data about how thoroughly source code was covered by the 
 ms.assetid: 262d8253-6e8c-4c2f-8b11-db3f9a5bcd89
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 10/17/2017
 ---
 
