@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 07/14/2020
+ms.date: 07/20/2020
 ---
 
 # Define Iteration Paths and configure team iterations 
@@ -24,7 +24,7 @@ Each team has access to a number of Agile tools as described in [About teams and
 
 Newly created projects contain a single, root Area Path that corresponds to the project name. You add Area Paths under this root. Also, each project typically specifies a predefined set of Iteration Paths to help you get started tracking your work. All you need to do is specify the dates. 
 
-[!INCLUDE [temp](../../includes/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Prerequisites
 
@@ -78,7 +78,6 @@ For TFS 2015 and earlier versions, the default iteration is the same as the back
 
 ## Open Project Settings, list project iterations    
 
-
 ::: moniker range=">= azure-devops-2019"
 
 You define both areas and iterations for a project from the **Project Settings > Boards > Project configuration**.
@@ -94,7 +93,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 #### [Browser](#tab/browser/)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 From the web portal, open **Project Settings**.
 
@@ -135,7 +134,7 @@ From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 [List project iteration paths](#iteration-project-list) | [Add a project iteration](#add-project-iteration) | [List team iteration paths](#list-team-iteration-paths) | [Set team iteration paths](#set-team-iteration-paths) | [Delete or update a project iteration path](#delete-update-iteration-paths)
 
@@ -155,6 +154,10 @@ az boards iteration project list [--depth]
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3.
 - **path**: Optional. Absolute path of an iteration.  `\Iteration\` must follow after the `\ProjectName`, which distinguishes this from an area path.  Example: --path \ProjectName\Iteration\IterationName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Iteration\Sprint 1". When not specified, lists iteration paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -201,7 +204,7 @@ You can add iterations in the same way you add areas. For more information about
 
 #### [Browser](#tab/browser/)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 Add and modify area paths from **Project settings > Project configuration > Iterations**.   
 
@@ -314,7 +317,7 @@ For Scrum-based projects, you see the following set of sprints.
 
 <a id="add-project-iteration" />
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 You can add iteration paths to a project using [az boards iteration project create](/cli/azure/ext/azure-devops/boards/iteration/project#ext-azure-devops-az-boards-iteration-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -334,6 +337,10 @@ az boards iteration project create --name
 - **path**: Optional. Absolute path of an iteration. Example: \ProjectName\Iteration\IterationName. When not specified, adds an iteration at the root level.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
 - **start-date**: Optional. Enter the start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -372,8 +379,8 @@ C:\WINDOWS\system32>az boards iteration project create --name "Sprint 36" --star
 You can set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
 
 
-#### [Browser](#tab/browser/)
- 
+#### [Browser](#tab/browser) 
+
 ::: moniker range=">= azure-devops-2019"
 
 You define both areas and iterations from **Project settings > Boards > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
@@ -411,7 +418,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 <a id="list-team-iteration-paths" />
 
-::: moniker range="azure-devops"
+::: moniker range="< azure-devops-2020"
 
 You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -427,6 +434,10 @@ az boards iteration team list --team
 - **team**: Required. Name or ID of the team.
 - **project**: Optional. Name or ID of the project.
 - **timeframe**: Optional. A filter for which iterations are returned based on relative time. Only *Current* is supported. 
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -457,9 +468,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 <a id="activate-team-services">  </a>
 
-
 #### [Browser](#tab/browser/)
-
 
 ::: moniker range=">= azure-devops-2019" 
 
@@ -571,7 +580,7 @@ You [define sprints for the project](../../boards/sprints/define-sprints.md) and
 
 <a id="set-team-iteration-paths" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 You can add iteration paths, set the default iteration path, or set the backlog iteration path for a team using one of the following [az boards iteration team](/cli/azure/ext/azure-devops/boards/iteration/team)[Azure DevOps CLI](../../cli/index.md) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).   
 
@@ -595,6 +604,10 @@ az boards iteration team set-backlog-iteration --id --team
 - **default-iteration-macro**: Optional. Default iteration macro, the only valid entry is @CurrentIteration.  
 - **id**: Optional. Enter the ID of an iteration path. To determine the ID, list the iteration paths using [az boards iteration project list](#iteration-project-list).  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example 
 
@@ -652,7 +665,7 @@ When you rename an iteration, or move the node within the tree hierarchy, the sy
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 You can rename, move, or delete an iteration path for a project, using the following [az boards iteration project](/cli/azure/ext/azure-devops/boards/iteration/project) commands. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -687,6 +700,10 @@ az boards iteration project update --path
 - **start-date**: Optional. Start date of the iteration path. Example: "2019-06-03". Must be earlier than the finish-date.
 - **yes**: Optional. Do not prompt for confirmation.
  
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
+
 #### Example 
 
 For example, the following command updates the start and end dates of the Sprint 3 iteration path for the Fabrikam Fiber project. 
@@ -745,7 +762,7 @@ As you can see, iterations play a major role in supporting Agile tools and manag
 
 ### Programmatic resources
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 - [az boards iteration (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/iteration)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)

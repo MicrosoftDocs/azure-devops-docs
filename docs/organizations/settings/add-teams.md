@@ -52,7 +52,6 @@ As your team grows, you can easily move from one team to two. In this example, w
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
-
    ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
 2. Choose **New team**. Give the team a name, and optionally a description. 
