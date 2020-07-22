@@ -7,13 +7,6 @@ ms.date: 07/17/2020
 
 <a id="open-process-wit"></a>
 
-## Organization Settings > Process
-
-You create, manage, and make customizations to processes from **Organization settings > Process**.
-
-1. Choose the ![Azure DevOps logo](/azu---
-
-<a id="open-process-wit">  </a>
 
 ## Open Settings>Process
 
@@ -32,6 +25,3 @@ You create, manage, and make customizations to processes from **Organization set
 	> [!IMPORTANT]  
 	> If you don't see **Process**, then you're working from TFS-2018 or earlier version. The **Process** page isn't supported. You must use the features supported for the [On-premises XML process model](/azure/devops/reference/customize-work).
 
-
- 
- 

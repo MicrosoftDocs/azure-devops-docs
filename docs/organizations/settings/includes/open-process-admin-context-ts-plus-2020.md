@@ -1,21 +1,14 @@
 ---
 ms.topic: include
----
-
-<a id="open-process-wit"></a>
-
-## Organization Settings > Process
-
-You create, manage, and make customizations to processes from **Organization settings > Process**.
-
-1. Choose the ![Azure DevOps logo](/azu---
 ms.topic: include
 ms.author: kaelli
 author: KathrynEE
 ms.date: 07/17/2020
 ---
 
-<a id="open-process-wit">  </a>
+<a id="open-process-wit"></a>
+
+ 
 
 ## Open Settings>Process
 
