@@ -151,7 +151,7 @@ Azure Pipelines provides several security settings to configure the job authoriz
 > [!NOTE]
 > This setting does not apply to [classic release pipelines](../release/index.md).
 
-Pipelines can run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
+Pipelines run with collection scoped access tokens unless **Limit job authorization scope to current project for non-release pipelines** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to the current project. This can impact your pipeline if you are accessing an Azure Repos Git repository in a different project in your organization. 
 
 If your Azure Repos Git repository is in a different project than your pipeline, and **Limit job authorization scope to current project for non-release pipelines** is enabled, you must grant permission to the build service identity for your pipeline to the second project. For more information, see [Pipeline build options - build job authorization scope](../build/options.md#build-job-authorization-scope).
 
@@ -159,10 +159,10 @@ If your Azure Repos Git repository is in a different project than your pipeline,
 
 Pipelines can access any Azure DevOps repositories in authorized projects unless **Limit job authorization scope to referenced Azure DevOps repositories** is enabled. With this option enabled, you can reduce the scope of access for all pipelines to only Azure DevOps repositories explicitly referenced by the pipeline.
 
-To configure this setting, navigate to **Organization settings**, **Pipelines**, **Settings**.
+To configure this setting, navigate to **Pipelines**, **Settings** at either **Organization settings** or **Project settings**. If enabled at the organization level, the setting is grayed out and unavailable at the project settings level.
 
 > [!IMPORTANT]
-> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled by default for new organizations created after May 2020.
+> **Limit job authorization scope to referenced Azure DevOps repositories** is enabled at the organization level by default for new organizations created after May 2020.
 
 When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline, either as a [repository resource](../yaml-schema.md#repository-resource), or in a [checkout step](../yaml-schema.md#checkout). You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
 
