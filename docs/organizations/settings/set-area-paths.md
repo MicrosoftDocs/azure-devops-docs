@@ -27,7 +27,7 @@ New projects contain a single, root area that corresponds to the project name. A
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
 
-[!INCLUDE [temp](../../includes/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Prerequisites
 
@@ -701,7 +701,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 ### Programmatic resources
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
