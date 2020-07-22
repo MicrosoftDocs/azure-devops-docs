@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-analytics
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/14/2020
 ---
 
 ::: moniker range="azure-devops"
@@ -13,6 +17,20 @@ ms.topic: include
 > [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
 
 ::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+> [!NOTE]
+> The Analytics service is automatically installed on all new project collections for Azure DevOps Server 2020.  It is supported for use in production. We encourage you to use it and provide us feedback. If you upgraded from Azure DevOps Server 2019, then you're provided with the option to install the Analytics service during upgrade.  
+> 
+> The Analytics service provides several [advanced widgets](/azure/devops/report/dashboards/analytics-widgets), [Power BI integration](/azure/devops/report/powerbi/index), and access to the [OData feed](/azure/devops/report/extend-analytics/index).
+> 
+> If you are looking for information about Azure Analysis Services, see 
+> [Azure Analysis Services](https://azure.microsoft.com/services/analysis-services/).
+
+::: moniker-end
+
+
 
 ::: moniker range="azure-devops-2019"
 

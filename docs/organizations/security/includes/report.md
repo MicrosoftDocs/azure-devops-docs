@@ -1,6 +1,6 @@
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <table>
 <tr valign="bottom">

@@ -14,7 +14,7 @@ ms.date: 12/20/2018
 
 # Agile process work item types and workflow  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Teams use the work item types (WITs) provided with the Agile process to plan and track progress of software projects. Teams define user stories to manage the backlog of work and then, using the Kanban board, track progress by updating the status of those stories.
 

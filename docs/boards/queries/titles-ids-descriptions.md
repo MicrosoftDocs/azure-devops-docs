@@ -14,7 +14,7 @@ ms.date: 10/16/2019
 
 # Query by titles, IDs, and rich-text fields
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 When you want to find work items based on a keyword or phrase or a null text field, you can do so by filtering on single-line text (String), multi-line text (PlainText), and rich-text (HTML) fields. If you find that your queries take too long to return results, review the [Guidance to create high-performing queries](high-performing-queries.md).  
 

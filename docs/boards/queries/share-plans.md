@@ -9,14 +9,14 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 07/19/2019
+ms.date: 07/09/2020
 ---
 
 
 
 # Share information within work items and social tools
 
-**Azure Boards | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013 | Visual Studio | Team Explorer Everywhere**
+**Azure Boards | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 - TFS 2013 | Visual Studio | Team Explorer Everywhere**
 
 Using work items to track your work provides a host of benefits, including the ability to easily share information. You can capture most information within the work item *Description* or other rich-text formatted fields. If you need to maintain the information in a different format, you can easily link to or attach a file.  
 
@@ -83,7 +83,7 @@ The specific set of formatting features differs depending on the client you use.
 
 #### [Browser](#tab/browser/)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 The editor toolbar appears below each text box that accepts formatted text. It only becomes active when you move your cursor within the text box.
 
@@ -108,7 +108,7 @@ You can copy and paste HTML text or an image from another application directly i
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops-2020"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box. 
 
@@ -126,7 +126,7 @@ You can copy and paste HTML text or an image from another application directly i
 <a id="tfs-portal-rich-text" />
 
 
-::: moniker range=">= tfs-2013 <= tfs-2015"
+::: moniker range="<= tfs-2015"
 
 The rich text formatting toolbar appears above each text box that can be formatted. It only becomes active when you click within the text box.  
 
@@ -201,10 +201,8 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
-
 > [!NOTE]  
 > Some features require upgrade to Azure DevOps Server 2019.1. 
-
 ::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
@@ -221,9 +219,7 @@ You can drag and drop files into the attachment area. From the browse menu, you 
 ::: moniker-end 
 
 ::: moniker range="azure-devops"
-
 You can add up to 100 attachments to a work item. Attempts to add more result in an error message upon saving the work item.
-
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"

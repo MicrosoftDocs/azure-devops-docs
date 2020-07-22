@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 08/02/2019
+ms.date: 07/14/2020
 ---
 
 # Create a Power BI report with an OData Query
@@ -43,7 +43,7 @@ In order to create a Power BI report, you must meet the following criteria:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
@@ -148,7 +148,9 @@ The example report:
 [!INCLUDE [temp](includes/sample-multipleteams.md)]
 
 <a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create an Open bugs report](sample-boards-openbugs.md)
 

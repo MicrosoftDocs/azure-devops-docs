@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 
-**Azure Boards | Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
+**Azure Boards | Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
 
 
 <a id="follow"></a>  
@@ -53,7 +53,7 @@ This article shows you how to:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -62,13 +62,11 @@ This article shows you how to:
 
 ::: moniker-end 
 
-follow-work-with-notifications
-
 ## Follow a work item
 
 When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
@@ -160,6 +158,15 @@ From this view, you can view all items you're following across all projects. Als
 You can also view and manage work that you're following from your Project pages. To learn more, see [Work across projects](../../project/navigation/work-across-projects.md). 
 
 ::: moniker-end 
+
+## Query work items that you're following
+
+You can use the **@Follows** macro in a query to filter a list based on work items you're following in addition to other query filters. 
+
+For example, the following query shows how to query across all projects for active work items that you're following. You use the ID field and the In operator with the **@Follows** macro.  
+
+
+:::image type="content" source="media/follow-work/query-follows.png" alt-text="Query Editor, with ID In @Follows query clause":::
 
 ## Try this next
 

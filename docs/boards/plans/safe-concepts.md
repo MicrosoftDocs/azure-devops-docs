@@ -14,7 +14,7 @@ ms.date: 05/28/2020
 
 # How SAFe&reg; concepts map to Azure Boards artifacts 
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 <!--- Intro To be provided --> 
 
