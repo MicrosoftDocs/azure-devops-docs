@@ -12,8 +12,6 @@ monikerRange: "> azure-devops-2019"
 
 Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
 
-[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
-
 ## Specify multiple repositories
 
 Repositories can be specified as a [repository resource](../yaml-schema.md#repository-resource), or inline with the `checkout` step. 
