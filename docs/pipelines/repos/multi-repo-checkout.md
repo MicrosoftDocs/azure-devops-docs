@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 07/20/2020
+ms.date: 07/22/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -11,8 +11,6 @@ monikerRange: "> azure-devops-2019"
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
 Pipelines often rely on multiple repositories. You can have different repositories with source, tools, scripts, or other items that you need to build your code. By using multiple `checkout` steps in your pipeline, you can fetch and check out other repositories in addition to the one you use to store your YAML pipeline.
-
-[!INCLUDE [temp](../../includes/feature-support-cloud-only.md)] 
 
 ## Specify multiple repositories
 
@@ -31,11 +29,21 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
+> [!NOTE]
+> When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
+> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
+
 ### Repository declared using a repository resource
 
-You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
-In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github) and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+* Bitbucket cloud repositories
+* GitHub repositories
+* Azure Repos Git repositories in a different organization than your pipeline
+
+You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts), [GitHub](../library/service-endpoints.md#sep-github), and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -48,9 +56,10 @@ resources:
     type: bitbucket
     endpoint: MyBitbucketServiceConnection
     name: MyBitbucketOrgOrUser/MyBitbucketRepo
-  - repository: MyAzureReposGitRepository
+  - repository: MyAzureReposGitRepository # In a different organization
+    endpoint: MyAzureReposGitServiceConnection
     type: git
-    name: MyProject/MyAzureReposGitRepo
+    name: OtherProject/MyAzureReposGitRepo
 
 trigger:
 - master
@@ -74,7 +83,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> GitHub and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
+> Azure Repos Git repositories in a different organization, GitHub repositories, and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
 
 ```yaml
 steps:
@@ -84,28 +93,11 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
 
-## Authorize resources
-
-When you check out other Azure Repos Git repositories using multi-repo checkout, you may be prompted to authorize access to that resource before the pipeline runs for the first time. You can perform this authorization from the pipeline run summary page. 
-
-:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
-
-:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
-
-Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
-
-:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
-
-:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
-
-For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
-
-
 ## Checkout path
 
 Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
 
-- **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Single repository**: If you have a single `checkout` step in your job, or you have no checkout step which is equivalent to `checkout: self`, your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1`, your code is checked out to `C:\agent\_work\1\s`.
 - **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
   
   > [!NOTE]
@@ -129,7 +121,7 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
-When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch.
 
 ```yaml
 resources:
@@ -141,3 +133,27 @@ resources:
     ref: features/tools
 ```
 
+## FAQ
+
+* [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
+* [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
+
+### Why can't I check out a repository from another project? It used to work.
+
+Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
+
+### Why am I am prompted to authorize resources the first time I try to check out a different repository?
+
+When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
+
+:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
+
+:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
+
+Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
+
+:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
+
+:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
+
+For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
