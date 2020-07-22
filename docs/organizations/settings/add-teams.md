@@ -456,6 +456,12 @@ az boards work-item update --id
 - **state**: Optional. State of the work item, for example, *Active*. 
 - **title**: Optional. Title of the work item. 
 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
+
 #### Example
 
 You can only move one work item at a time using Azure DevOps CLI. In this example, we move work item ID=487 under the Fabrikam Fiber/Service Delivery/Email area path.
@@ -656,6 +662,10 @@ az boards area team add --path  --team
 - **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true. 
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 

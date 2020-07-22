@@ -96,6 +96,9 @@ From the web portal, open the admin page for the team.
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+See the New Teams page for information on adding team administrators.
+::: moniker-end
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open **Team Settings**.
@@ -170,7 +173,9 @@ From the Administrators section, choose the ![delete icon](../../media/icons/del
 > ![Remove a team admin](media/add-team-admin/remove-admin-prev-ui.png)  
 
 ::: moniker-end
-
+::: moniker range="azure-devops-2020"
+See the **New Teams page** for information on removing team administrators.
+::: moniker-end
 ::: moniker range=">= tfs-2013 < azure-devops-2019"
 
 From the Administrators section, choose the ![delete icon](../../media/icons/delete-icon.png) for the account you want to remove as a team administrator. 
