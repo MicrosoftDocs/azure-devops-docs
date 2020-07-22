@@ -49,12 +49,14 @@ A project defines a process and data storage in which you manage your software p
    ::: moniker-end
 
    ::: moniker range=">= azure-devops-2019 < azure-devops" 
-   <pre><code>http://<i>ServerName</i>:8080/DefaultCollection/<i>ProjectName</i></code></pre> 
+   <pre><code>http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i></code></pre> 
 
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
+   ::: moniker-end
    ::: moniker range=">= tfs-2013 < azure-devops-2019" 
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
 
    The default Port is 8080. If you don't use default values, specify the port number and directory for your server.
    ::: moniker-end
