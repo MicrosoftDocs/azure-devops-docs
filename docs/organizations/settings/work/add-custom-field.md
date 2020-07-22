@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 02/24/2020
+ms.date: 07/17/2020
 ---
 
 # Add a custom field to a work item type (Inheritance process)    
@@ -32,6 +32,7 @@ To learn more about what you can customize, see [About process customization and
 [!INCLUDE [temp](../includes/create-inherited-process.md)]
 
 <a id="add-wit">  </a>
+
 ## Add a field 
 
 You always add a field to an existing work item type.  
@@ -92,6 +93,10 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/new-team-project-from-inherited-process-menu.png) 
 	::: moniker-end
+	::: moniker range="azure-devops-2020"
+	> [!div class="mx-imgBorder"]  
+	> ![Create a project from the selected process](media/add-custom-field/choose-new-team-project.png) 
+	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
 	> ![Create a project from the selected process](media/process/add-new-team-project.png) 
@@ -102,6 +107,10 @@ We recommend that you create a test project and apply your customized  inherited
 	::: moniker range="azure-devops"
 	> [!div class="mx-imgBorder"]  
 	> ![Create new project form](media/process/create-test-project-sprint166.png) 
+	::: moniker-end
+	::: moniker range="azure-devops-2020"
+	> [!div class="mx-imgBorder"]  
+	> ![Create new project form](media/add-custom-field/create-new-project-2020.png) 
 	::: moniker-end
 	::: moniker range="azure-devops-2019"
 	> [!div class="mx-imgBorder"]  
@@ -128,6 +137,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 
 > Or
