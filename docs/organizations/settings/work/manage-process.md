@@ -176,7 +176,7 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 > [!div class="nextstepaction"]
 > [Add and manage fields for an inherited process](customize-process-field.md) 
 > Or
-> [Add and manage work item types](customize-process-wit.md)
+> [Add and manage work item types](customize-process-work-item-type.md)
 
 
 ## Related articles  

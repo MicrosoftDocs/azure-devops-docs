@@ -19,7 +19,7 @@
   - name: Add and manage fields
     href: customize-process-field.md
   - name: Add and manage work item types
-    href: customize-process-wit.md
+    href: customize-process-work-item-type.md
   - name: Customize backlogs & boards
     href: customize-process-backlogs-boards.md
   - name: Customize a web form

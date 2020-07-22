@@ -45,7 +45,7 @@ To add a WIT to track as requirements, tasks, or as bugs perform the correspondi
 ### Hosted XML process model customization sequence  
 
 > [!NOTE]    
->Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-wit.md).
+>Use the following guidance if you customize your process through import/export of definition files. Otherwise, if you customize your process through the admin UI, see [Add or modify a custom work item type for a process](../organizations/settings/work/customize-process-work-item-type.md).
 
 You'll make your changes to your process definition files, and then import that process to either update existing projects or use the process to create a project. 
 
