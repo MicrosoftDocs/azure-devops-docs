@@ -167,7 +167,27 @@ $(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
 <a name="oauth"></a>
 ## Use the OAuth token to access the REST API
 
-To enable your script to use the build pipeline OAuth token, go to the **Options** tab of the build pipeline and select **Allow Scripts to Access OAuth Token**.
+#### [YAML](#tab/yaml)
+
+You can use `$env:SYSTEM_ACCESSTOKEN` in your script in a YAML pipeline to access the OAuth token. 
+
+```yaml
+- task: PowerShell@2
+  inputs:
+   targetType: inline
+   script: |
+      $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=5.0"
+      Write-Host "URL: $url"
+      $pipeline = Invoke-RestMethod -Uri $url -Headers @{
+          Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN"
+      }
+      Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
+```
+
+
+#### [Classic](#tab/classic)
+
+To enable your script to use the build process OAuth token, go to the **Tasks** tab of the build definition and within your build phase, select **Allow Scripts to Access OAuth Token** which is located in the **Additional options** section.
 
 After you've done that, your script can use to SYSTEM_ACCESSTOKEN environment variable to access the [Azure Pipelines REST API](../../integrate/index.md). For example:
 
@@ -179,6 +199,9 @@ $pipeline = Invoke-RestMethod -Uri $url -Headers @{
 }
 Write-Host "Pipeline = $($pipeline | ConvertTo-Json -Depth 100)"
 ```
+
+
+--- 
 
 
 ## FAQ
