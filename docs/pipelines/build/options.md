@@ -90,7 +90,7 @@ The **project-scoped identity** name has the following format:
 
 By default, the collection-scoped identity is used, unless the **Limit job authorization scope to current project for non-release pipelines** is set in **Project Settings** > **Settings**.
 
-![Limit job authorization scope](media/options/limit-job-authorization-scope.png)
+:::image type="content" source="media/options/limit-job-authorization-scope.png" alt-text="Limit job authorization scope":::
 
 > [!NOTE]
 > This setting does not apply to [classic release pipelines](../release/index.md).
