@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 02/20/2020
+ms.date: 07/20/2020
 ---
 
 # Rename or remove a team  
@@ -36,20 +36,10 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 #### [Browser](#tab/browser) 
 
-
 ::: moniker range="azure-devops"
-
 > [!NOTE]   
 > To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
-
 ::: moniker-end
-
-::: moniker range="azure-devops"
-**New Teams Page**
-::: moniker-end
-
-
-#### [Browser](#tab/browser) 
 
 ::: moniker range="azure-devops"
 **New Teams Page**
@@ -76,7 +66,6 @@ When you remove or delete a team, you delete all team configuration settings, in
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019 || azure-devops"
-
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -126,7 +115,6 @@ To configure other team features, see [Manage teams and configure team tools](ma
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
  
 ::: moniker-end
-
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 

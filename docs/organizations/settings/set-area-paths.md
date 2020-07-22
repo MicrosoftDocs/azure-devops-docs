@@ -602,8 +602,6 @@ You can rename, move, or delete an area path for a project, using [az boards are
 
 ### Rename or move an area path
 
-::: moniker range="azure-devops"
-
 To rename or move an area path, use the `az boards area project update` command.
 
 > [!div class="tabbedCodeSnippets"]
