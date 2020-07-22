@@ -3,9 +3,9 @@ title: Build and release retention policies
 ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.author: rabououn
-author: ramiMSFT
-ms.date: 07/21/2020
+ms.author: jukullam
+author: juliakm
+ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -23,7 +23,7 @@ Retention policies are used to configure how long runs and releases are to be re
 The primary reasons to delete older runs and releases are to conserve storage and reduce clutter. 
 The main reasons to keep runs and releases are for audit and tracking.
 
-## Run retention policies
+## Run retention
 
 In most cases you don't need to retain completed runs longer than a certain number of days. 
 Using run retention policies, you can control **how many days** you want to keep each run before deleting it. 
@@ -34,7 +34,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
-As an author of a run pipeline, you can customize retention policies on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+As an author of a run pipeline, you can customize retention policies on the **Settings** tab of your project's settings.
 
 You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
@@ -48,12 +48,6 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
     Contents: '_buildOutput/**'
     TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
 ```
-
-* **SourceFolder**: Folder that contains the files you want to copy (optional).
-* **Contents**: File paths to include as part of the copy (required).
-* **TargetFolder**: Destination folder or UNC path (required).
-
-For more information, see the [Copy Files](../tasks/utility/copy-files.md) utility task.
 
 # [Classic](#tab/classic)
 
