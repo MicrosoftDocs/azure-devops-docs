@@ -7,6 +7,7 @@ ms.custom: process
 ms.author: kaelli
 author: KathrynEE
 ms.topic: troubleshooting
+monikerRange: '< azure-devops' 
 ms.date: 09/29/2017  
 ---
 
