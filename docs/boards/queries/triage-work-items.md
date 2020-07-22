@@ -16,7 +16,7 @@ ms.date: 01/08/2018
 
 # Triage work items  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Using a work item query you can quickly review and update work items. Oftentimes team use the triage mode for a query to perform the following tasks: 
 - Set the priority of a bug or work item 

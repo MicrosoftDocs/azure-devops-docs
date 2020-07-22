@@ -18,7 +18,7 @@ To call a REST API from your extension, get the client service first, and then u
 
 ## Client services
 
-You can find the [full list of available REST clients and their references here](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/reference/client/rest-clients).
+You can find the [full list of available REST clients and their references here](/previous-versions/azure/devops/docs/extend/reference/client/rest-clients).
 
 ## Call an API
 
@@ -28,4 +28,4 @@ You can find the [full list of available REST clients and their references here]
 
 ## Try this next
 
-Display the results of your REST API call [in a Grid](https://docs.microsoft.com/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido).
+Display the results of your REST API call [in a Grid](/previous-versions/azure/devops/docs/extend/develop/ui-controls/grido).

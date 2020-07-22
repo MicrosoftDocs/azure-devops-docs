@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 12/12/2019
+ms.date: 07/20/2020
 ---
 
 # Add and manage fields (Inheritance process)   

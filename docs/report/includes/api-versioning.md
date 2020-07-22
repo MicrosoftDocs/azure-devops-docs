@@ -1,5 +1,10 @@
 ---
 ms.topic: include
+ms.technology: devops-analytics
+ms.reviewer: prprice
+ms.author: kaelli
+author: KathrynEE
+ms.date: 07/14/2020
 ---
 
 > [!NOTE]  
