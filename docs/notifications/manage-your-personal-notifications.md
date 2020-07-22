@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage your notifications
 
-[!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../includes/version-all.md)]
 
 As changes occur to work items, code reviews, source control files, and builds, you can receive email notifications for alerts that you define. For example, you can set an alert to be notified whenever a bug that you opened is resolved or a work item is assigned to you. You can set personal alerts, as described in this article, or [team or project alerts](manage-team-group-notifications.md).
 
@@ -57,7 +57,7 @@ From the web portal, select the icon with your initials or picture, and then sel
 ::: moniker-end  
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 > [!div class="mx-imgBorder"] 
 >![Navigate to personal notifications page](media/nav-personal-notifications-hub.png) 
@@ -137,7 +137,7 @@ This view shows all subscriptions that you've created or that have been created 
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 <img src="media/unsubscribe-personal-notifications.png" alt="Personal notification subscriptions" style="border: 2px solid #C3C3C3;" />  
 
