@@ -1,4 +1,4 @@
-﻿---
+---
 title: Create a Power BI report with an Analytics view
 titleSuffix: Azure DevOps
 description: Quick start helping users to create a trend report using an Analytics view
@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: quickstart
-ms.date: 12/04/2018
+ms.date: 07/14/2020
 ---
 
 # Create a Power BI report with a default Analytics view
@@ -53,7 +53,7 @@ In order to create a Power BI report that references an Analytics view, you must
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project). Anyone with access to the project, except Stakeholders, can view Analytics views.
@@ -92,7 +92,7 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 
 	To learn more about defining views, see [Create an Analytics view](analytics-views-create.md).  
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Connect to an Analytics view on Azure DevOps Server 
 
@@ -213,12 +213,15 @@ By verifying the view you'll use in Power BI, your view is more likely to load c
 The reports shown in this quickstart illustrate how easy it is to generate reports of your work tracking data using Analytics views. 
 
 <a id="q-a">  </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Create an Active bugs report](active-bugs-sample-report.md)
 
 
 ## Related articles 
+
 - [Get started with Power BI Desktop](/power-bi/fundamentals/desktop-getting-started)
 - [Power BI integration overview](overview.md) 
 - [Create Analytics views](analytics-views-create.md)

@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= azure-devops-2019'
-ms.date: 11/1/2018
+ms.date: 07/14/2020
 ---
 
 # Aggregate work tracking data using Analytics   
@@ -33,6 +33,7 @@ In this article you'll learn:
 Analytics relies on OData to author queries over your work tracking data. Aggregations in OData are achieved using an extension that introduces the `$apply` keyword. We have some examples of how to use this keyword below. Learn more about the extension at [OData Extension for Data Aggregation](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html).
 
 ## Basic root URL
+
 Use the following basic root URL as a prefix for all the examples provided in this article.
 
 ::: moniker range="azure-devops"
@@ -44,7 +45,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -52,7 +53,7 @@ Use the following basic root URL as a prefix for all the examples provided in th
 > ```
 > 
 > [!NOTE]
-> The examples shown in this document are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL
+> The examples shown in this article are based on a Azure DevOps Services URL, you will need to substitute in your Azure DevOps Server URL. 
 
 ::: moniker-end
 

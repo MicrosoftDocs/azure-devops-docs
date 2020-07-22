@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 10/16/2019
+ms.date: 07/09/2020
 ---
 
 
 # Filter backlogs or queries based on keywords, tags, or other fields  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="filter"></a>
  
@@ -40,7 +40,7 @@ Choose one or more values from the multi-select drop-down menu for each field. T
 - **Iteration**: All Iteration Paths [selected for the current team](../sprints/define-sprints.md) and for which there are work items assigned to that iteration 
 - **Work item type**: Work item types defined for the Requirements Category (product backlog) or Features or Epic categories (feature or epic portfolio backlogs), subject to work items being assigned to the work item types
 - **Tags**: All tags assigned to work items on the board
-- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board (The Parent Work Items field doesn't appear when viewing the Epic or top-level Kanban board)
+- **Parent Work Items**: All features defined for the team, or all epics defined for the team when viewing the Features board  
 
 > [!NOTE]   
 > Filter options are dependent on the work items that meet the filter criteria. For example, if you don't have any work items assigned to Sprint 4, then the Sprint 4 option won't appear in the filter options for the Iteration Path.  

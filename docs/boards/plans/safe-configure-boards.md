@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 07/09/2020
 ---
 
 
 # Configure Azure Boards to support SAFe®
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
@@ -382,7 +382,7 @@ For teams that support several other teams, such as a UX Design team, configure 
 <a id="programmatic-tools" /> 
 <a id="command-line-and-programmatic-tools" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Command-line and programmatic tools
 

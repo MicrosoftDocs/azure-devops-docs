@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
 ms.topic: quickstart
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 # Add and update a work item
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You add work items to plan and manage your project. You use different types of work items to track different types of work&mdash;such as user stories or product backlog items, tasks, bugs, or issues. You can describe the work to be done, assign work, track status, and coordinate efforts within your team.   
 
@@ -159,34 +159,26 @@ The following image shows the work flow states for a user story. If you want to 
 
 ::: moniker-end
 
-
-<table>
-<tbody valign="top">
-<tr>
-<td>
-<p><b>Typical workflow progression:</b></p>
-<ul>
-<li>The product owner creates a user story in the <strong>New</strong> state with the default reason, <strong>New user story</strong> </li>
-<li>The team updates the status to <strong>Active</strong> when they decide to complete the work during the sprint</li>
-<li>A user story is moved to <strong>Resolved</strong> when the team has completed all its associated tasks and unit tests for the story pass.</li>
-<li>A user story is moved to the <strong>Closed</strong> state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.</li>
-</ul>
-<p><b>Atypical transitions:</b></p>
-<ul>
-<li>Change the State from <strong>Active</strong> to <strong>New</strong>.</li>
-<li>Change the State from <strong>Resolved</strong> to <strong>Active</strong>.</li>
-<li>Change the State from <strong>Resolved</strong> to <strong>New</strong>.</li>
-<li>Change the State from <strong>Closed</strong> to <strong>Active</strong>.</li>
-<li>Change the State from <strong>New</strong> to <strong>Removed</strong>.</li>
-<li>Change the State from <strong>Removed</strong> to <strong>New</strong>.</li>
-</ul>
-</td>
-<td>
-<img src="../work-items/guidance/media/alm_pt_agile_wf_userstory.png" alt="User story workflow, Agile process"/>
-</td>
-</tr>
-</tbody>
-</table>
+:::row:::
+   :::column span="2":::
+      **Typical workflow progression:**
+      - The product owner creates a user story in the **New** state with the default reason, **New user story**   
+      - The team updates the status to **Active** when they decide to complete the work during the sprint  
+      - A user story is moved to **Resolved** when the team has completed all its associated tasks and unit tests for the story pass.  
+      - A user story is moved to the **Closed** state when the product owner agrees that the story has been implemented according to the Acceptance Criteria and acceptance tests pass.  
+    
+**Atypical transitions**: 
+      - Change the State from **Active** to **New**.  
+      - Change the State from **Resolved** to **Active**.  
+      - Change the State from **Resolved** to **New**.  
+      - Change the State from **Closed** to **Active**.  
+      - Change the State from **New** to **Removed**.  
+      - Change the State from **Removed** to **New**.  
+   :::column-end:::
+   :::column span="2":::
+      ![User story workflow, Agile process](../work-items/guidance/media/alm_pt_agile_wf_userstory.png)  
+   :::column-end:::
+:::row-end:::
 
 Removed work items remain in the data store and can be reactivated by changing the State.   
 
@@ -328,7 +320,7 @@ To stop following changes, choose the ![ ](../media/icons/following-icon.png) fo
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 > [!IMPORTANT]
 > To support the follow feature, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.  

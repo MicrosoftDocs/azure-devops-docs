@@ -1,5 +1,10 @@
 ---
+ms.technology: devops-agile
+ms.prod: devops
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 <a id="discussion" />
@@ -44,7 +49,7 @@ Type a name, or enter a number and the menu list will filter to match your entry
 
 ### Edit or delete a comment 
 
-If you need to edit or delete any of your discussion comments, choose ![ ](/azure/devops/media/icons/edit.png) <strong>Edit</strong> or choose the ![ ](/azure/devops/media/icons/actions-icon.png) actions icon and then choose <strong>Delete</strong>. 
+If you need to edit or delete any of your discussion comments, choose ![ ](/azure/devops/media/icons/edit.png) <strong>Edit</strong> or choose the ![ ](/azure/devops/media/icons/actions-icon.png) actions icon and then choose **Delete**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, Edit, Delete actions](/azure/devops/boards/media/discussion-edit-delete.png)  
@@ -60,28 +65,30 @@ If you need to edit or delete any of your discussion comments, choose ![ ](/azur
 
 ::: moniker range=">= azure-devops-2019"  
 
-After updating the comment, choose <strong>Update</strong>. To delete the comment, you'll need to confirm that you want to delete it. 
+After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it. 
 
-A full audit trail of all  edited and deleted comments is maintained in the <strong>History</strong> tab on the work item form. 
+A full audit trail of all  edited and deleted comments is maintained in the **History** tab on the work item form. 
 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017 <= tfs-2018" 
 
-Use the [<strong>@mention</strong> control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
+Use the [**@mention** control](/azure/devops/notifications/at-mentions) to notify another team member about the discussion. Simply type **@** and their name. To reference a work item, use the [**#ID** control](/azure/devops/notifications/add-links-to-work-items). Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
 
 To reference a work item, use the **#ID** control. Type **#** and a list of work items that you've recently referenced will appear from which you can select.  
-
-> [!IMPORTANT]  
-> For on-premises Azure DevOps Server or TFS, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.
 
 Note that you can't edit or delete comments once they've been entered. 
 
 ::: moniker-end 
 
+::: moniker range=">= tfs-2017 <= azure-devops-2020" 
 
+> [!IMPORTANT]  
+> For on-premises Azure DevOps Server, [you must configure an SMTP server](/azure/devops/server/admin/setup-customize-alerts) in order for team members to receive notifications.
 
-::: moniker range="azure-devops"
+::: moniker-end 
+
+::: moniker range=">= azure-devops-2020"
 
 ### Add a reaction to a comment 
 
