@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 10/28/2019
+ms.date: 07/20/2020
 ---
 
 # Select backlog navigation levels for your team
@@ -17,16 +17,16 @@ ms.date: 10/28/2019
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
-- **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
+- **On-premises XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ::: moniker-end
 
-::: moniker range="tfs-2015 <= tfs-2018" 
+::: moniker range="tfs-2015 < azure-devops-2019" 
 If you want additional portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 ::: moniker-end
 
