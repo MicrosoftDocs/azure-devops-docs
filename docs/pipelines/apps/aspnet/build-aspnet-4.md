@@ -66,7 +66,7 @@ https://github.com/Microsoft/devops-project-samples.git
 The sample repo includes several different projects, and the sample application for this article is located in the following path:
 
 ```
-https://github.com/Microsoft/devops-project-samples/tree/master/dotnet/aspnet/webapp/Application
+https://github.com/Microsoft/devops-project-samples/dotnet/aspnet/webapp/Application
 ```
 
 Your `azure-pipelines.yml` file needs to run from within the `dotnet/aspnet/webapp/Application` folder for the build to complete successfully.   
