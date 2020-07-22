@@ -29,6 +29,10 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
 
+> [!NOTE]
+> When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
+> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
+
 ### Repository declared using a repository resource
 
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
@@ -89,23 +93,6 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
 
-## Authorize resources
-
-When you check out other Azure Repos Git repositories using multi-repo checkout, you may be prompted to authorize access to that resource before the pipeline runs for the first time. You can perform this authorization from the pipeline run summary page. 
-
-:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
-
-:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
-
-Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
-
-:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
-
-:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
-
-For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
-
-
 ## Checkout path
 
 Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
@@ -134,7 +121,7 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
-When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch.
 
 ```yaml
 resources:
@@ -146,3 +133,27 @@ resources:
     ref: features/tools
 ```
 
+## FAQ
+
+* [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
+* [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
+
+### Why can't I check out a repository from another project? It used to work.
+
+Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
+
+### Why am I am prompted to authorize resources the first time I try to check out a different repository?
+
+When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
+
+:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
+
+:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
+
+Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
+
+:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
+
+:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
+
+For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
