@@ -192,17 +192,26 @@ You  restrict access to work tracking objects in one of two ways:
 ::: moniker-end
 
 
+::: moniker range=">= azure-devops-2020"
 
-::: moniker range="<= azure-devops"
+## Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
+
+::: moniker range="azure-devops"
 
 ## Restrict modification of closed work items
  
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/restrict-modification-closed-wi.md)]
-
+[!INCLUDE [temp](../../includes/restrict-modification-closed-work-items.md)]
 
 ::: moniker range="< azure-devops"
+
+## Restrict modification of closed work items
+
 
 Depending on your business processes, you may want to prevent users from continuing to modify or update work items that have been closed or completed. You can add rules to work item types to prevent users from re-opening closed work items. 
 
