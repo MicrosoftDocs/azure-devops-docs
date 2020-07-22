@@ -50,6 +50,7 @@ From the **Settings** context, **Extensions**, you can view the extensions that 
 To learn more about extensions, see [Install free extensions](../../../marketplace/install-extension.md).
 
 <a id="add-extension">  </a>
+
 ## Add a Marketplace extension   
 
 You can [browse the Marketplace](https://marketplace.visualstudio.com/search?term=control%20group%20tab%20page&target=vsts&category=Plan%20and%20track&hosting=cloud&sortBy=Relevance) to determine what extension(s) you want to add.
@@ -76,6 +77,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
 
 
 <a id="add-field-control"></a>
+
 ## Add a field-level contribution or custom control 
 
 1. Install the [custom control](#add-extension) as discussed in the previous section.  
@@ -121,6 +123,7 @@ You can [browse the Marketplace](https://marketplace.visualstudio.com/search?ter
    </tr> 
    </table>
 
+<a id="group-level" />
 
 ## Group-level and page-level contributions
 
