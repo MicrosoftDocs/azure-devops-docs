@@ -8,8 +8,8 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 05/22/2020
 monikerRange: '>= tfs-2013'
+ms.date: 07/20/2020
 ---
 
 # Create a project in Azure DevOps
@@ -75,6 +75,13 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 ::: moniker-end
 
 ## Create a project
+
+::: moniker range=">= tfs-2018 < azure-devops"
+
+> [!IMPORTANT]  
+> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a teams project](../../report/admin/add-reports-to-a-team-project.md). 
+
+::: moniker-end
 
 ::: moniker range="azure-devops"
 
@@ -156,6 +163,9 @@ Choose Current page tab for information on creating a project.
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+Choose the Preview page tab for instructions.
+::: moniker-end
 ::: moniker range="azure-devops-2019"
 
 1. Select Azure DevOps to open the **Projects** page. ![Azure DevOps logo](../../media/icons/project-icon.png) Then, select **Create Project**.
@@ -198,13 +208,6 @@ Choose Current page tab for information on creating a project.
 
    > [!div class="mx-imgBorder"]  
    > ![New Project TFS 2017](media/create-project/new-team-project-tfs-2017.png)
-
-::: moniker-end
-
-::: moniker range=">= tfs-2018 < azure-devops"
-
-> [!IMPORTANT]  
-> When you create a project from the web portal, several process template files are ignored. Specifically, the files that would create a Report Manager site aren't supported. You can add reports later by following the instructions provided in [Add reports to a teams project](../../report/admin/add-reports-to-a-team-project.md). 
 
 ::: moniker-end
 
@@ -436,7 +439,7 @@ Connect to a project, collection, or server from your web browser.
 ::: moniker-end
 
 ::: moniker range="azure-devops-2020"
-Choose the Preview tab for information.
+Choose the Preview page tab for information.
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018 <= azure-devops-2019"  
@@ -472,6 +475,7 @@ You can choose a project to open project settings for that project on this page.
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="list-projects" /> 
+
 ::: moniker range=">= azure-devops-2020" 
 
 ### List projects
