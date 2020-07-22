@@ -8,13 +8,13 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.reviewer: kaelli
-monikerRange: "azure-devops"
-ms.date: 04/17/2020
+monikerRange: ">= azure-devops-2020"
+ms.date: 07/17/2020
 ---
 
 # Change a project process from Agile to Scrum
 
-[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
 You can change a project based on the Agile process to use an inherited Scrum process.  This article provides the steps needed to make this change. 
 
@@ -41,7 +41,7 @@ Reasons you might want to change your process from Agile to Scrum:
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
 <a id="create-customize-process" />
 

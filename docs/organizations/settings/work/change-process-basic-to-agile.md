@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.reviewer: kaelli
-monikerRange: "azure-devops"
-ms.date: 06/28/2019
+monikerRange: ">= azure-devops-2020"
+ms.date: 07/17/2020
 ---
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
 You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
@@ -43,7 +43,7 @@ Reasons you might want to change your process from Basic to Agile:
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
 ## Change the process
 

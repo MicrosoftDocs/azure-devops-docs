@@ -9,17 +9,16 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.reviewer: kaelli
-monikerRange: "azure-devops"
-ms.date: 04/17/2020
+monikerRange: ">= azure-devops-2020"
+ms.date: 07/17/2020
 ---
 
 # Change a project process from Scrum to Agile
 
-[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
 You can change a project based on the Scrum process to use to use an inherited Agile process. This article provides the steps needed to make this change. 
 
-[!INCLUDE [temp](../includes/cloud-only-feature.md)]
 
 Prior to making this change, we recommend you familiarize yourself with the process you are changing to. The Task, Bug, Feature, and Epic work item types are the same for both Scrum and Agile processes. Some State and Reason field values, however, are different.
 
@@ -41,7 +40,7 @@ Reasons you might want to change your process from Scrum to Agile:
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
 <a id="create-customize-process" />
 
@@ -115,39 +114,6 @@ You can customize Kanban boards to display intermediate columns. For each column
    > [!div class="mx-imgBorder"]  
    > ![Open team Kanban board](media/scrum-to-agile/column-settings-fixed.png)
 
-<!---
-
-## Steps
-
-1. [Create a custom process](./manage-process.md) under Agile called "Agile - Inherited".
-
-2. If the work item types are being used by your project then [add the work item type](./customize-process-wit.md) Product Backlog Item and Impediment to the "Agile - Inherited" process.
-
-  > [!div class="mx-imgBorder"]
-  > ![Agile Inherited WITs](media/change-process/agile-inherited-wits.png)
-
-3. Run the Change Process Wizard by going to Organization Settings > Process. Select the process that contains the project you want to change. For example, Agile. Click on the Projects tab and hover over the project. Click the ... context menu and select "Change Process". Follow the steps in the wizard.
-
-  > [!div class="mx-imgBorder"]
-  > ![Change Process Wizard](media/change-process/change-process-wizard.gif)
-
-4. Update the [board settings](../../../boards/get-started/customize-boards.md) for each board so that the column to state mapping is correct.
-
-  > [!div class="mx-imgBorder"]
-  > ![Board Configuration](media/change-process/change-process-scrum-to-agile-board-config.gif)
-
-5. [Create a query](../../../boards/queries/using-queries.md) to get a list of all Product Backlog Items. Sort the list by state value. Highlight all Product Backlog Items and do a [change type](../../../boards/backlogs/move-change-type.md#change-type) to User Story. Next do a [bulk edit](../../../boards/backlogs/bulk-modify-work-items.md) to update work items to the right state for the User Story type. For example: Committed would change to Active. Do this for each state, one state at a time.
-
-6. Adjust query to show only Issues. Highlight all Issue work items and a change type to be an Impediment. Do a bulk edit to update work items to the right state for the Impediment type. Do this for each state, one state at a time.
-
-7. Adjust query to only show Tasks. Use bulk edit to update state value for all Tasks, one state at a time. Rinse and repeat the same process for Bugs, Epics, and Features.
-
-  > [!div class="mx-imgBorder"]
-  > ![Update Work Items](media/change-process/change-process-scrum-to-agile-update-work-items.gif)
-
-8. [Change the process used by the project](./manage-process.md#change-the-process-used-by-a-project) to use the system Agile process
-
--->
 
 ## Update work items
 
