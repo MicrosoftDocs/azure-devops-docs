@@ -2,7 +2,7 @@
 title: Check out multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
-ms.date: 07/22/2020
+ms.date: 07/20/2020
 monikerRange: "> azure-devops-2019"
 ---
 
@@ -33,13 +33,7 @@ The following combinations of `checkout` steps are supported.
 
 ### Repository declared using a repository resource
 
-You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
-
-* Bitbucket cloud repositories
-* Github repositories
-* Azure Repos Git repositories in a different organization than your pipeline
-
-You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
+You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
 In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github) and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
@@ -80,7 +74,7 @@ If the `self` repository is named `CurrentRepo`, the `script` command produces t
 If your repository doesn't require a service connection, you can declare it inline with your `checkout` step.
 
 > [!NOTE]
-> Azure Repos Git repositories in a different organization, GitHub repositories, and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
+> GitHub and Bitbucket Cloud repositories require a [service connection](../library/service-endpoints.md) and must be declared as a [repository resource](#repository-declared-using-a-repository-resource).
 
 ```yaml
 steps:
