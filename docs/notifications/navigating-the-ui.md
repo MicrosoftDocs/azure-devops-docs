@@ -48,7 +48,7 @@ For additional permission settings regarding notifications, see [Permissions and
 
 Enter the following URL to reach your personal notifications page, replacing {organization} with your organization's name. 
 
-::: moniker range=" azure-devops"
+::: moniker range="azure-devops"
 
 ```URL
 https://dev.azure.com/{organization}/usersSettings/notifications
@@ -60,7 +60,7 @@ https://dev.azure.com/{organization}/usersSettings/notifications
 
 ::: moniker-end
 
-::: moniker range=" azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ```URL
 https://dev.azure.com/{organization}/_notifications
