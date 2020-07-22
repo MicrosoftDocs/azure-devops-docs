@@ -36,7 +36,7 @@ The following combinations of `checkout` steps are supported.
 You must use a [repository resource](../yaml-schema.md#repository-resource) if your repository type requires a service connection or other extended resources field. The following repository types require a service connection.
 
 * Bitbucket cloud repositories
-* Github repositories
+* GitHub repositories
 * Azure Repos Git repositories in a different organization than your pipeline
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
