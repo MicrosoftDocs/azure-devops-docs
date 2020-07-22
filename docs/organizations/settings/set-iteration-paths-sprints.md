@@ -418,7 +418,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 <a id="list-team-iteration-paths" />
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 You can list the iteration paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 

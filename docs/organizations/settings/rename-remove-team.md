@@ -120,7 +120,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="update-team" /> 
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 You can rename a team or its description using [Azure DevOps team update](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -312,7 +312,7 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 
 <a id="delete-team" /> 
 
-::: moniker range="< azure-devops-2020"
+::: moniker range=">= azure-devops-2020"
 
 You can delete a team using [az devops team delete](/cli/azure/ext/azure-devops/devops/team#ext-azure-devops-az-devops-team-delete).  
 
