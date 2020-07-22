@@ -15,6 +15,9 @@ monikerRange: azure-devops
 
 Use this task to download pipeline artifacts from earlier stages in this pipeline, or from another pipeline.
 
+> [!NOTE]
+> For more information, including Azure CLI commands, see [downloading artifacts](https://docs.microsoft.com/azure/devops/pipelines/artifacts/pipeline-artifacts?view=azure-devops&tabs=yaml#downloading-artifacts).
+
 ::: moniker range="azure-devops"
 
 ## YAML snippet
