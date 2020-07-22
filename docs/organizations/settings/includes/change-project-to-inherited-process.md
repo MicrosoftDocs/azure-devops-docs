@@ -1,5 +1,9 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/20/2020
 ---
 
 <a id="change-inherited-process"></a>
@@ -11,7 +15,7 @@ After you've verified your customizations, you can now apply the process to your
 > [!TIP]    
 > As you customize a WIT, all projects that reference the inherited process that you're customizing automatically updates to reflect the custom WITs you've added. To view your customizations, refresh your web browser.
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. For the process currently used by the project, choose the number of projects. 
 

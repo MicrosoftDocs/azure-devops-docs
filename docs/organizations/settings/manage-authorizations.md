@@ -7,10 +7,12 @@ ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
-ms.date: 10/28/2019
+ms.date: 07/20/2020
 ---
 
 #  Authorize other services to access Azure DevOps
+
+[!INCLUDE [temp](../../version-vsts-plus-azdevserver-2019.md)]
 
 When you use a service that's integrated with Azure DevOps Services, we use the industry-standard OAuth 2.0 authorization framework to provide safe, secure access to your resources by those other services. With OAuth, you grant a service the authorization to access your Azure DevOps resources such as work items, source code, and build results.
 
