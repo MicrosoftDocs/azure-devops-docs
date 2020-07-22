@@ -41,7 +41,7 @@ You must use a [repository resource](../yaml-schema.md#repository-resource) if y
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github) and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github), [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket), and [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -54,9 +54,10 @@ resources:
     type: bitbucket
     endpoint: MyBitbucketServiceConnection
     name: MyBitbucketOrgOrUser/MyBitbucketRepo
-  - repository: MyAzureReposGitRepository
+  - repository: MyAzureReposGitRepository # In a different organization
+    endpoint: MyAzureReposGitServiceConnection
     type: git
-    name: MyProject/MyAzureReposGitRepo
+    name: OtherProject/MyAzureReposGitRepo
 
 trigger:
 - master
