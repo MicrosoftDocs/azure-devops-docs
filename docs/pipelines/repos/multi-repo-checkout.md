@@ -31,7 +31,7 @@ The following combinations of `checkout` steps are supported.
 
 > [!NOTE]
 > When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
-> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#FAQ) section.
+> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
 
 ### Repository declared using a repository resource
 
@@ -135,16 +135,16 @@ resources:
 
 ## FAQ
 
-* [Why can't I check out a repository in another project? It used to work.](#why-cant-i-check-out-a-repository-in-another-project-it-used-to-work)
+* [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
 * [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
 
-### Why can't I check out a repository in another project? It used to work.
+### Why can't I check out a repository from another project? It used to work.
 
 Azure pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
 
 ### Why am I am prompted to authorize resources the first time I try to check out a different repository?
 
-When you check out other Azure Repos Git repositories using multi-repo checkout, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
+When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
 
 :::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
 
