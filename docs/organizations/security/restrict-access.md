@@ -198,7 +198,7 @@ You  restrict access to work tracking objects in one of two ways:
  
 ::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
+[!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 
 ::: moniker range="azure-devops"
 
@@ -206,7 +206,7 @@ You  restrict access to work tracking objects in one of two ways:
  
 ::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-work-items.md)]
+[!INCLUDE [temp](../../includes/restrict-modification-closed-work-items.md)]
 
 ::: moniker range="< azure-devops"
 
