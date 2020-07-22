@@ -12,12 +12,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= azure-devops-2019'
-ms.date: 01/08/2018
+ms.date: 07/09/2020
 ---
 
 # View and add work items using the Work Items page  
 
-**Azure Boards | Azure DevOps Server 2019 | Visual Studio 2019** 
+**Azure Boards | Azure DevOps Server 2020 |Azure DevOps Server 2019 | Visual Studio 2019** 
 
 
 View work items that you created or are assigned to you. The **Work Items** page provides several personalized pivots and filter functions to streamline listing work items. Use this page to quickly find work items defined across teams within a project. 
@@ -25,7 +25,7 @@ View work items that you created or are assigned to you. The **Work Items** page
 [!INCLUDE [temp](../includes/prerequisites-work-items.md)] 
 
 > [!NOTE]     
-> The **Work Items** page is currently available from Azure DevOps Services, Azure DevOps Server 2019 RC1, and Visual Studio 2019 RC1. 
+> The **Work Items** page is available from Azure DevOps Services, Azure DevOps Server 2019 and later versions, and Visual Studio 2019 RC1. 
 
 ## Open Work Items
 
@@ -144,7 +144,7 @@ Additional menu options support the following tasks:
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 ### View work item
 
@@ -220,7 +220,7 @@ Enter a title and then save the work item. Before you can change the State from 
 
 ![Agile process, User story work item form](../backlogs/media/add-new-work-item-vsts-user-story.png)  
 
-# [Azure DevOps CLI](#tab/azure-devops-cli)
+# [Azure DevOps CLI](#tab/azure-devops-cli) 
 
 [!INCLUDE [temp](../includes/add-work-items-cli.md)]
 
@@ -250,7 +250,7 @@ You can filter each work item pivot view by typing a keyword or using one or mor
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
+There is no [**az boards**](/cli/azure/ext/azure-devops/boards) command that applies to filtering. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud) and Azure DevOps Server 2020 and later versions.
 
 * * *
 
@@ -288,6 +288,7 @@ For details, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md?
 
 
 <a id="page-controls">  </a>
+
 ## Work Items page controls  
 
 Use the following three controls to manage your views in the web portal.
@@ -306,7 +307,7 @@ Use the following three controls to manage your views in the web portal.
 ## Related articles
 
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
-- [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md?toc=/azure/devops/boards/work-items/toc.json&bc=/azure/devops/boards/work-items/breadcrumb/toc.json)
+- [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)
 - [Enable preview features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)

@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 2/14/2019
+ms.date: 07/09/2020
 ---
 
 # 6. Update and monitor your Taskboard
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Once you have your [sprint plan](assign-work-sprint.md) in place, you'll execute that plan for the duration of the sprint. In your daily Scrum meetings, your team can view progress made to backlog items and tasks from the sprint **Taskboard**.
 
@@ -49,10 +49,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 ## Open the sprint Taskboard for your team
 
-
-
-
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open the sprint backlog for your team. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose (4) **Taskboard**.
 
@@ -123,7 +120,7 @@ If you haven't yet [added tasks to your sprint backlog](add-tasks.md), do that n
 
 Each team can customize their **Taskboard** in the following ways: 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - [Add or rename columns](customize-taskboard.md#add-columns).
 - [Customize cards](customize-taskboard.md#choose-fields) to show additional fields or change card color based on specified field criteria.
@@ -140,7 +137,7 @@ Unlike the Kanban board for a product backlog, you can't add additional columns 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"
 
 An administrator can customize the **Taskboard** for all teams in the following ways:  
 - [Add a custom workflow state to the task WIT for a process](../../organizations/settings/work/customize-process-workflow.md)
@@ -179,10 +176,17 @@ During your daily Scrum, you can filter your **Taskboard** to help focus on item
 *	Group by Backlog items or Group by stories to monitor progress of your product backlog items, stories, requirements, or bugs.
 *	Group by People when you want to monitor progress of individual team members.
 
+
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]
+> Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+::: moniker-end
+
+
 Use the Person filter when you want to focus on work assigned to individual team members.
 
 > [!TIP]
->If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).
+> If you're seeing tasks that don't belong to your team, check that you've [selected the correct team](../../project/navigation/go-to-project-repo.md?toc=/azure/devops/boards/sprints/toc.json&bc=/azure/devops/boards/sprints/breadcrumb/toc.json).
 
 <a id="show-item-progress">  </a>
 
@@ -389,6 +393,6 @@ Requires TFS 2015.1 or later version.
 - If you need to move several items, you can create a query from the sprint backlog and then use the query to [bulk modify the iteration path](../backlogs/bulk-modify-work-items.md).
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 Or, you can [increase the maximum number of allowed items](../../reference/customize-work.md#limits).
 ::: moniker-end

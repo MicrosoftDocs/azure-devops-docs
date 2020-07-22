@@ -1,14 +1,18 @@
 ---
+ms.technology: devops-analytics
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/14/2020
 ---
 
 <a id="open-analytics">  </a>
 
 ## Open Analytics to access views
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
-A set of default Analytics views are defined for each team project. You can view, modify, and create a custom view from **Analytics**. 
+A set of default Analytics views are defined for each project. You can view, modify, and create a custom view from **Analytics**. 
 
 ::: moniker-end  
 

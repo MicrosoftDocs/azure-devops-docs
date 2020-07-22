@@ -5,12 +5,12 @@ description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
 ms.date: 07/14/2020
-monikerRange: 'azure-devops-2019 || azure-devops'
+monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
@@ -25,7 +25,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Parameters
 
@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-- ${{ if eq(parameters.experimentalTemplate, true) }}:
-  - template: experimental.yml
-- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-  - template: stable.yml
+  - ${{ if eq(parameters.experimentalTemplate, true) }}:
+    - template: experimental.yml
+  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+    - template: stable.yml
 ```
 
 ### Parameter data types

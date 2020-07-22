@@ -9,19 +9,19 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual 
 monikerRange: '>= azure-devops-2019'
-ms.date: 12/12/2019
+ms.date: 07/09/2020
 ---
 
 # About process customization and inherited processes  
 
-[!INCLUDE [temp](../../../boards/includes/version-vsts-plus-azdevserver-2019.md)]
+[!INCLUDE [temp](../../../boards/includes/version-azure-boards-plus-azure-devops-server-2019-2020.md)]
 
 <a id="inherited" /> 
 
 To customize the work tracking system, you *customize* an inherited process through the administrative user interface for the organization. All projects that use an inherited process get the customizations made to that process. On the other hand, you *configure* your Agile tools&mdash;[Backlogs, Sprints, Kanban boards, and Taskboard](../about-teams-and-settings.md)&mdash;for each team. 
 
 > [!IMPORTANT]  
-> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 only. 
+> To customize an on-premises project or update XML definition files to support customization, see [On-premises XML process model](../../../reference/on-premises-xml-process-model.md). This article applies to Azure DevOps Services and Azure DevOps Server 2019 and later versions. 
 
 There are a number of customizations you can make. The primary ones are adding custom work item types (WITs) or modifying an existing WIT to add custom fields, modify the layout, or change the workflow. 
 
@@ -239,7 +239,7 @@ In addition, you can [add an existing field](customize-process-field.md#add-exis
 
 ::: moniker-end
 
-### Configurable picklists 
+### Configurable drop-down menus or picklists 
 
 The following picklists are configured for each project and not customizable through an inherited process.   
 - [Area paths](../../../organizations/settings/set-area-paths.md)  
@@ -247,6 +247,14 @@ The following picklists are configured for each project and not customizable thr
 
 Picklists associated with person-name fields, such as Assigned To and Changed By, are managed based on the users you [add to a project or team](../../security/add-users-team-project.md).   
 
+You can modify the following system fields' picklists: 
+
+- Resolved Reason
+- Priority
+- Severity
+- Risk
+- Value Area
+- Activity
 
 <a id="rename-field">  </a>
 
@@ -294,19 +302,23 @@ With a custom rule, you can define a number of actions based on specific conditi
 
 For details on defining custom rules, see [Add a rule to a work item type](../../../organizations/settings/work/custom-rules.md). 
 
+::: moniker range=">= azure-devops-2020"
 
-### Restrict modification of select fields for select user groups
+### Restrict modification of select fields based on a user or group 
+ 
+::: moniker-end
 
-Using one of the following two conditions, you can make select fields required for a user of a security group or who are not a member of a security group. 
+[!INCLUDE [temp](../../../includes/restrict-modification-fields-for-not.md)]
 
-- `current user is a member of a group...`
-- `current user is not a member of a group...`
+::: moniker range="azure-devops"
 
-For example, you can make the Title or the State field Read-only for select users or groups. 
+### Restrict modification of closed work items
 
-### Restrict modification of closed work items 
+::: moniker-end
 
 [!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+
+
 
 ### Restrict modification of work items based on Area Path 
 

@@ -7,13 +7,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 11/22/2019
+ms.date: 07/09/2020
 ---
 
 
 # FAQs: Work in Excel connected to Azure Boards 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Find answers to frequently asked questions when using Microsoft Excel to add or modify work items defined in Azure DevOps. 
 
@@ -46,7 +46,7 @@ Once you've installed the add-in, open Excel and look for the **Team** ribbon.
 > [!div class="mx-imgBorder"]  
 > ![Azure DevOps Open in Excel extension](media/excel/open-in-excel.png)
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 ### Q: Can I import or update work items without using Excel?  
 
@@ -85,12 +85,11 @@ If you want to share an Excel workbook that has work items listed within it, you
 
 To bulk edit links of other types, you can use the following clients: 
 
-::: moniker range="azure-devops" 
-
--   Use [Project](../../backlogs/office/create-your-backlog-tasks-using-project.md) to edit parent-child and predecessor-successor link relationships.  
--   Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
--   Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
--  Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
+::: moniker range=">= azure-devops-2020" 
+ 
+- Use the web portal, to [map backlog items to portfolio backlog items](../../backlogs/organize-backlog.md) which creates parent-child links.  
+- Use either the web portal or Team Explorer, to modify parent-child links by [dragging items within a hierarchical backlog page](../../backlogs/organize-backlog.md#reparent) or within a tree query.
+- Use the [az boards work-item relation add](/cli/azure/ext/azure-devops/boards/work-item/relation) command.
 
 ::: moniker-end   
 
@@ -172,7 +171,14 @@ If you start your worksheet from an existing query, you'll see all the column fi
 
 ::: moniker-end  
 
-::: moniker range="< azure-devops" 
+::: moniker range="azure-devops-2020" 
+
+**A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal, or with the `az boards work-item delete` or **witadmin** command-line tools. For details, see [Remove or delete work items](../../backlogs/remove-delete-work-items.md#delete-work-items).
+
+::: moniker-end 
+
+
+::: moniker range="< azure-devops-2020" 
 
 **A:** No. You can't delete work items from Excel. The only way to delete work items is from the web portal or the **witadmin** command-line tool. For details, see [Move, change, or delete work items](../../backlogs/remove-delete-work-items.md).
 

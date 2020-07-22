@@ -31,7 +31,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 
 <!---Projects differ from [software application projects or solutions](https://msdn.microsoft.com/library/zfzh36t7.aspx). -->  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!NOTE]
 > If you don't want to manage an on-premises server, you can [sign up for Azure DevOps Services](../accounts/create-organization.md) and create a project.
 ::: moniker-end

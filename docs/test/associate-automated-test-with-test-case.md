@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
   Automated tests can also be run from [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
   If you are using XAML builds you can also
-  [run these automated tests by using Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md).
+  [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/docs/test/mtm/run-automated-tests-with-microsoft-test-manager).
 
 * You want to enable end-to-end traceability of requirements.
   If your test cases are linked to requirements or user stories,
@@ -58,7 +58,7 @@ parameters are for manual tests only.
 [Add files to the server](../repos/tfvc/add-files-server.md)
 and [Continuous integration on any platform](../pipelines/overview.md).
 For more information about action recordings and coded UI tests, see 
-[Recording and Playing Back Manual Tests](mtm/record-play-back-manual-tests.md)
+[Recording and Playing Back Manual Tests](/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests)
 and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
 
 <a name="add-test"></a>
@@ -132,6 +132,6 @@ change the **Work Items | General** setting from the **Tools | Options** menu in
 
 * [Associate automated test results with requirements](associate-automated-results-with-requirements.md)
 * [Run automated tests from test plans](run-automated-tests-from-test-hub.md)
-* [Run automated tests with Microsoft Test Manager](mtm/run-automated-tests-with-microsoft-test-manager.md)
+* [Run automated tests with Microsoft Test Manager](/previous-versions/azure/devops/docs/test/mtm/run-automated-tests-with-microsoft-test-manager)
 
 [!INCLUDE [help-and-support-footer](includes/help-and-support-footer.md)] 

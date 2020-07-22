@@ -1,5 +1,10 @@
 ---
+ms.technology: devops-agile
+ms.prod: devops
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 07/09/2020
 ---
 
 
@@ -48,13 +53,13 @@ If you need to edit or delete any of your discussion comments, choose ![ ](/azur
 
 ::: moniker-end
 
-After updating the comment, choose <strong>Update</strong>. To delete the comment, you'll need to confirm that you want to delete it. 
+After updating the comment, choose **Update**. To delete the comment, you'll need to confirm that you want to delete it. 
 
 A full audit trail of all  edited and deleted comments is maintained in the <strong>History</strong> tab on the work item form. 
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ### Add a reaction to a comment 
 
