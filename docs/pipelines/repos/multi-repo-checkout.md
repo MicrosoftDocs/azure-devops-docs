@@ -121,7 +121,7 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
-When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch.
 
 ```yaml
 resources:
@@ -140,7 +140,7 @@ resources:
 
 ### Why can't I check out a repository from another project? It used to work.
 
-Azure pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
+Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
 
 ### Why am I am prompted to authorize resources the first time I try to check out a different repository?
 
