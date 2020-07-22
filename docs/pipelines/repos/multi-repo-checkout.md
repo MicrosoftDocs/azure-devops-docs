@@ -41,7 +41,7 @@ You must use a [repository resource](../yaml-schema.md#repository-resource) if y
 
 You may use a repository resource even if your repository type doesn't require a service connection, for example if you have a repository resource defined already for templates in a different repository.
 
-In the following example, three repositories are declared as repository resources. The [GitHub](../library/service-endpoints.md#sep-github), [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket), and [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts) repository resources require [service connections](../library/service-endpoints.md) which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
+In the following example, three repositories are declared as repository resources. The [Azure Repos Git repository in another organization](../library/service-endpoints.md#sep-tfsts), [GitHub](../library/service-endpoints.md#sep-github), and [Bitbucket Cloud](../library/service-endpoints.md#sep-bbucket) repository resources require [service connections](../library/service-endpoints.md), which are specified as the `endpoint` for those repository resources. This example has four `checkout` steps, which check out the three repositories declared as repository resources along with the current `self` repository that contains the pipeline YAML.
 
 ```yaml
 resources:
@@ -112,7 +112,7 @@ For more information, see [Troubleshooting authorization for a YAML pipeline](..
 
 Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
 
-- **Single repository**: If you have a single `checkout` step in your job, (or you have no checkout step which is equivalent to `checkout: self`), your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` then your code is checked out to `C:\agent\_work\1\s`.
+- **Single repository**: If you have a single `checkout` step in your job, or you have no checkout step which is equivalent to `checkout: self`, your source code is checked out into a directory called `s` located as a subfolder of `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1`, your code is checked out to `C:\agent\_work\1\s`.
 - **Multiple repositories**: If you have multiple `checkout` steps in your job, your source code is checked out into directories named after the repositories as a subfolder of `s` in `(Agent.BuildDirectory)`. If `(Agent.BuildDirectory)` is `C:\agent\_work\1` and your repositories are named `tools` and `code`, your code is checked out to `C:\agent\_work\1\s\tools` and `C:\agent\_work\1\s\code`.
   
   > [!NOTE]
