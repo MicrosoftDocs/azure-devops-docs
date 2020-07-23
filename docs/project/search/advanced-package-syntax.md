@@ -89,4 +89,4 @@ Within a phrase:
 
 * Boolean operators are treated as literal text.
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+

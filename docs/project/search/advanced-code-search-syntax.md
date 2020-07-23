@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 10/10/2019
 ---
 
-# How To: Use Code Search
+# Perform a code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -71,10 +71,8 @@ Specify the branches for each repository that you want Code
 Search to index in the **Options** tab of the **Repositories** section in the
 [project settings page](../navigation/go-to-service-page.md#open-project-settings).
 
-::: moniker range="azure-devops-2019"
-
+::: moniker range=">= azure-devops-2019"
 ![Configure Git branches to include in search](media/advanced-work-item-search-syntax/configure-branches.png)
-
 ::: moniker-end
 
 In a TFVC project, you see a list of folder paths in that project for 
@@ -154,7 +152,7 @@ Within a phrase:
 ### Search for special characters
 
 > [!NOTE]
-> This feature is currently available only for Azure DevOps Services customers and not TFS.
+> This feature is currently available only for Azure DevOps Services.
 
 You can include special characters in a search string, or search specifically for special characters,
 according to the following rules:
@@ -307,4 +305,4 @@ pressing _Ctrl_ + _Enter_ or by holding _Ctrl_ and clicking  the
 In Google Chrome, press _Ctrl_ + _Shift_ + _Enter_ to switch the focus
 to the new browser tab. 
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+
