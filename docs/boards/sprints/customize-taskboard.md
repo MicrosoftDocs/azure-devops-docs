@@ -139,7 +139,7 @@ Another handy feature is to simply update a field without having to open the wor
 
 This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates or update Remaining Work. 
 
-To change the title, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then choose **Edit title**. 
+To change the title, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Edit title**. 
 
 > [!div class="mx-imgBorder"]
 > ![Edit title](media/customize/edit-title.png)
@@ -194,7 +194,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the Settings dialog. 
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the Settings dialog. 
 
    > [!div class="mx-imgBorder"]  
    > ![Taskboard, open Settings dialog](media/customize/open-taskboard-settings-new-nav.png)  
@@ -280,7 +280,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 1. [Open the Taskboard](task-board.md) that you want to customize.  
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the **Settings** dialog. 
 
 3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
@@ -300,7 +300,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 	> [!div class="mx-imgBorder"]
 	> ![Delete-clone-move menu options](media/customize/delete-clone-move.png)
@@ -339,7 +339,7 @@ Requires TFS 2015.1 or later version.
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
