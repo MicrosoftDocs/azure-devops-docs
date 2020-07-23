@@ -1,6 +1,5 @@
 ---
 ms.topic: include
-ms.topic: include
 ms.author: kaelli
 author: KathrynEE
 ms.date: 07/17/2020

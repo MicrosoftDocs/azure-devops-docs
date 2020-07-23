@@ -51,7 +51,7 @@ Each work item type defines the fields that capture and store information. You c
 - [Add a custom control or extension](#custom-control) to support custom functions such as a calculated field. 
 
 
-For details on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md).
+For details on customizing a work item type, see [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md).
 
 <a id="add-custom-field" /> 
 
