@@ -6,11 +6,11 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/07/2018
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# How To: Use Work Item Search
+# Search for work items 
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -213,4 +213,4 @@ search results list.
 >Search remembers the state of the filter pane, configuration of the work item 
 view pane, and its position between sessions as part of your user preferences.
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+
