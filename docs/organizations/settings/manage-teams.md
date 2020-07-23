@@ -194,7 +194,7 @@ You can configure most of your team settings from the common configuration dialo
 
 For details on each configuration option, see one of the following articles:  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 <table width="80%">
 <tbody valign="top">
@@ -382,13 +382,13 @@ Additional elements you can configure include:
 
 ::: moniker-end
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards as well as addition of customized columns. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops" 
+::: moniker range=">= tfs-2015 < azure-devops-2020" 
 
 Similar to Kanban boards, each sprint Taskboard can be customized to support information-rich, color-coded cards. For details, see [Customize sprint Taskboards](../../boards/sprints/customize-taskboard.md). 
 
@@ -414,7 +414,7 @@ Team administrators can add, configure, and manage permissions for team dashboar
 
 ## Update team description and picture
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 Team settings also include the team name, description, and team profile image. To add a team picture, open the **Settings** tab, and then choose **Upload image**. The maximum file size is 2.5 MB.
 
