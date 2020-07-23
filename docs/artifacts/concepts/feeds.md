@@ -4,7 +4,7 @@ description: Feeds manage and set permissions for packages in Azure DevOps Servi
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -23,6 +23,9 @@ Feeds are not package type dependent. You can store every package type (npm, NuG
 Until now, all feeds were scoped to an organization, they could be viewed and accessed in the Azure Artifacts hub from any project within an organization. With the introduction of public feeds, we also introduced **project-scoped feeds**, which live inside the project that they were created in, and can only be seen when accessing the Azure Artifacts hub within that project. 
 
 Only project-scoped feeds can be made public, see the following section on [public feeds](#public-feeds). [Learn more](../feeds/project-scoped-feeds.md) about the differences between project-scoped and organization-scoped feeds.
+
+> [!NOTE]
+> To access a feed in a different organization, a user must be given access to the project hosting that feed.
 
 ## Public feeds
 
