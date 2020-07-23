@@ -41,9 +41,9 @@ There some important things to note regarding public feeds:
 
 ## Restoring a deleted feed
 
-If you accidentally delete a feed, Azure Artifacts gives you the opportunity to recover the feed and return it to original state without side effects. The deleted feed will be available to recover for 30 days and then permanently deleted. During this time, the feed name will be reserved and unable to reuse. Also, packages cannot be downloaded from the feed and write access is suspended (you can't delete, promote, push etc...).
+If you accidentally delete a feed, Azure Artifacts gives you the opportunity to recover the feed and return it to original state without side effects. The deleted feed will be available to recover for 30 days and then permanently deleted. During this time, the feed name will be reserved and unable to reuse. Also, packages cannot be downloaded from the feed and write access is suspended (you can't delete, promote, push etc.).
 
-You can view your your feeds pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
+You can view your feed's pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
 
 ![Go to Azure Artifacts](media/deleted-feeds-dropdown.png)
 
