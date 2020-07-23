@@ -396,7 +396,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Deploy external Git repositories to Azure Kubernetes Services (AKS)</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for BitBucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Support for Bitbucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Select a Dockerfile in deployment center for AKS and WebApp Containers</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>2020</td></tr>
         <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>2020</td></tr>
