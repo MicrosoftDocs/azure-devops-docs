@@ -1206,6 +1206,16 @@ resources:
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use; defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
+    trigger:  # CI trigger for this repository, if not specified, there is no CI trigger
+      branches:
+        include: [ string ] # branch names which will trigger a build
+        exclude: [ string ] # branch names which will not
+      tags:
+        include: [ string ] # tag names which will trigger a build
+        exclude: [ string ] # tag names which will not
+      paths:
+        include: [ string ] # file paths which must match to trigger a build
+        exclude: [ string ] # file paths which will not trigger a build
 ```
 
 # [Example](#tab/example)

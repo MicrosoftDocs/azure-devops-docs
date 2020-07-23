@@ -368,7 +368,10 @@ pr: none
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 > [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).
+> If your `pr` trigger isn't firing, follow the troubleshooting steps in the [FAQ](#failing-triggers).
+
+>[!NOTE]
+>[Draft pull requests](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) do not trigger a pipeline.
 
 # [Classic](#tab/classic/)
 
