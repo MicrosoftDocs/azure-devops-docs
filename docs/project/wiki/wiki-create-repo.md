@@ -1,4 +1,4 @@
-﻿---
+---
 title: Create a project wiki to share information
 titleSuffix: Azure DevOps
 description: Share information with your team  and increase collaboration using a built-in team project wiki in Azure DevOps
@@ -10,7 +10,7 @@ ms.author: chcomley
 author: chcomley
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 01/22/2020  
+ms.date: 07/23/2020  
 ---
 
 # Quickstart: Create a Wiki for your project
@@ -45,7 +45,7 @@ Each team project wiki is powered by a Git repository in the back-end. When you 
 
 ::: moniker-end
 
-::: moniker range="tfs-2018 || azure-devops-2019"
+::: moniker range=">= tfs-2018 <= azure-devops-2020"
 
 * You must have a team project. If you don't have a team project yet, create one [on-premises](../../organizations/projects/create-project.md).
 * You must have the permission **Create Repository** to publish code as wiki. By default, this permissions is set for members of the [Project Administrators group](../../organizations/security/set-git-tfvc-repository-permissions.md). 
@@ -89,11 +89,11 @@ The Wiki Git repo is referred as *TeamProjectName.wiki*. For example, if your te
 The *TeamProjectName.wiki* doesn't appear in the drop-down menu of repositories from **Repos** or **Code**. It also isn't in the list provided from the **Project Settings > Repositories** or **Project Settings > Version Control** pages.  
 However, you can navigate to it from the following URL:
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 `https://dev.azure.com/<OrgName>/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
-::: moniker range="tfs-2018"
+::: moniker range=">= tfs-2018 < azure-devops"
 `https://<ServerName>/DefaultCollection/<TeamProjectName>/_git/<WikiName>` 
 ::: moniker-end
 
@@ -105,7 +105,7 @@ The URL of the wiki Git repository is exposed. Copy and paste it into your web b
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can create a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
 
@@ -131,6 +131,10 @@ az devops wiki create [--mapped-path]
 - **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
 - **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
 - **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]
+::: moniker range=">= azure-devops-2020"
 
 #### Example 
 
