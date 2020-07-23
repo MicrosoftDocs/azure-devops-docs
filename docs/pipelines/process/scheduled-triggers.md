@@ -447,6 +447,8 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
 
+* You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
+
 * Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will either start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository.
 
 ### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?

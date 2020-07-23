@@ -124,10 +124,13 @@ You can also tell Azure Pipelines to skip running a pipeline that a commit would
 
 ## PR triggers
 
-Pull request (PR) triggers cause a build to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
+Pull request (PR) triggers cause a pipeline to run whenever a pull request is opened with one of the specified target branches, or when changes are pushed to such a pull request. In Azure Repos Git, this functionality is implemented using branch policies. To enable pull request validation in Azure Git Repos, navigate to the branch policies for the desired branch, and configure the [Build validation policy](../../repos/git/branch-policies.md#build-validation) for that branch. For more information, see [Configure branch policies](../../repos/git/branch-policies.md).
 
 >[!NOTE]
 >To configure validation builds for an Azure Repos Git repository, you must be a project administrator of its project.
+
+>[!NOTE]
+>[Draft pull requests](../../repos/git/pull-requests.md#draft-pull-requests) do not trigger a pipeline even if you configure a branch policy.
 
 ::: moniker range=">tfs-2018"
 
