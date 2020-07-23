@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.reviewer: kaelli
-monikerRange: "azure-devops"
-ms.date: 06/28/2019
+monikerRange: ">= azure-devops-2020"
+ms.date: 07/17/2020
 ---
 
 # Change a project process from Basic to Agile
 
-[!INCLUDE [temp](../../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../../includes/version-cloud-plus-2020.md)]
 
 You can change a project based on the Basic process to use to use an inherited Agile process.  This article provides the steps needed to make this change. 
 
@@ -43,7 +43,7 @@ Reasons you might want to change your process from Basic to Agile:
 
 [!INCLUDE [temp](../includes/prerequisites-change-process.md)]
 
-[!INCLUDE [temp](../includes/open-process-admin-context-ts-only.md)]
+[!INCLUDE [temp](../includes/open-process-admin-context-ts-plus-2020.md)]
 
 ## Change the process
 
@@ -189,7 +189,7 @@ After changing the process, you may want to make additional updates as follows:
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
-- [Add and manage work item types](./customize-process-wit.md)
+- [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 - [Customize your boards](../../../boards/get-started/customize-boards.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

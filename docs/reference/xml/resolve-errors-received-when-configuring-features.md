@@ -7,19 +7,19 @@ ms.custom: process
 ms.assetid: abab1c67-6aa8-494b-86ee-3bc97c650429
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '< azure-devops'
 ms.date: 12/19/2017
 ---
 
 
 # Resolve errors received when configuring features
 
-<b>TFS 2017 | TFS 2015 | TFS 2013</b> 
-
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)] 
 
 You may be able to resolve errors and warnings that the [Configure Features](../configure-features-after-upgrade.md) wizard displays. These problems occur because definitions in the project conflict with definitions in the process templates uploaded to your project collection. You should change the process template to resolve the error and rerun the wizard. Or, you can change your project and then rerun the wizard.    
 
 > [!IMPORTANT]  
->This topic applies only to projects defined on an on-premises Team Foundation Server (TFS). 
+> This article applies only to projects defined on an on-premises Team Foundation Server (TFS). 
 
   
 ## Required permissions 

@@ -151,7 +151,7 @@ For example, the following condition indicates that the Justification field is h
  
 ::: moniker-end
 
-[!INCLUDE [temp](../../../includes/restrict-modification-closed-wi.md)]
+[!INCLUDE [temp](../../../includes/restrict-modification-closed-work-items.md)]
 
 
 ## Related articles

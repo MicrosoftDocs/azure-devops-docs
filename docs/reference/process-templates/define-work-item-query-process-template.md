@@ -7,6 +7,7 @@ ms.assetid: 2e035f4a-c542-487f-96f9-d730e4700af2
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops' 
 ms.date: 02/24/2017
 ---
 
@@ -14,7 +15,9 @@ ms.date: 02/24/2017
 
 [!INCLUDE [temp](../../includes/customization-phase-0-and-1-plus-version-header.md)]
 
-<a name="top"></a> You can create a work item query (.wiq) file most easily in Team Explorer. In an existing project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  
+<a name="top"></a> 
+
+You can create a work item query (.wiq) file most easily in Team Explorer. In an existing project, you can use Team Explorer to create all work item queries that you want to add to your process template and then follow the steps in this topic to save each query as a .wiq file. For more information about how to create work item queries, see [Use the query editor to list and manage queries](../../boards/queries/using-queries.md).  
   
  **Requirements**  
   
@@ -23,6 +26,7 @@ ms.date: 02/24/2017
 -   To save a query as a team query, you must have the appropriate permissions described in [Set permissions on queries](../../boards/queries/set-query-permissions.md).  
   
 <a name="create"></a> 
+
 ##  Save a work item query as a .wiq file  
   
 1. In Team Explorer, open the query that you want to save.   
@@ -45,6 +49,7 @@ ms.date: 02/24/2017
   
 
 <a name="path"></a> 
+
 ##  Create a work item query that references an iteration path  
  You can define a query that references a specific iteration path by including the macro for the project, $$PROJECTNAME$$, and the name of an iteration path that is defined in the Classification plug-in file. For example, the following syntax specifies a query that includes only those work items whose iteration path is under Iteration 1.  
   
@@ -60,7 +65,9 @@ ms.date: 02/24/2017
  When you upload iteration-specific queries, the task to process the Classification.xml file must complete before the task to process the query files. For more information, see [Define initial areas, iterations, and Project mapping file](define-classification-plug-in.md) and [Define the root tasks](define-root-tasks-process-template-plug-in.md).  
   
 <a name="iterationspecific"></a> 
+
 ###  Example of an iteration-specific work item query  
+
  The following example shows the Iteration1Backlog work item query, which supports the Iteration Backlog workbook. For details on WIQL, see [Work Item Query Language](../../boards/queries/wiql-syntax.md).
   
 > [!div class="tabbedCodeSnippets"]
@@ -99,7 +106,9 @@ ms.date: 02/24/2017
 > ```  
   
 <a name="elements"></a> 
+
 ## WorkItemQuery element reference  
+
  The following syntax shows the structure of the **WorkItemQuery** element and its child elements.  
   
 > [!div class="tabbedCodeSnippets"]
@@ -123,6 +132,7 @@ ms.date: 02/24/2017
 |**Wiql**|`<Wiql>`<br />      `WorkItemQueryLanguage`<br /> `</Wiql>`|Required child element of **WorkItemQuery**.<br /><br /> Specifies a sequence of Structured Query Language (SQL) commands that act as filter criteria to find a set of work items in a project and return the values that are assigned to a set number of fields. For details, see [Work Item Query Language](../../boards/queries/wiql-syntax.md). <br /><br /> The default process templates provide several examples of the SQL commands that the **Wiql** element supports. These files are located in the Queries folder of the WorkItem Tracking folder. |  
   
 ## Related articles   
+
 -  [Create managed queries](../../boards/queries/example-queries.md)  
 -  [Use the query editor to list and manage queries](../../boards/queries/using-queries.md)      
 -  [Define objects for tracking work items](define-objects-track-work-items-plug-in.md)  
