@@ -6,22 +6,16 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/05/2019
-monikerRange: '>= tfs-2017'
+monikerRange: '>= tfs-2017 < azure-devops'
+ms.date: 07/23/2020
 ---
 
 # Install and manage Search
 
-[!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
+**Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS-2018 - TFS 2017**
 
-::: moniker range="= azure-devops"
+In this article, learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Server.
 
-In this article, learn how to install and uninstall the Search extension for Code, Wiki, and Work item in Azure DevOps Services.
-
-::: moniker-end
-
-
-::: moniker range="<= azure-devops-2019"
 
 * **Configure Search (Code, Work Item, and Wiki) in Azure DevOps Server or Team Foundation Server (TFS)**
   - [Install the Search extension](#install-tfs)
@@ -33,25 +27,20 @@ In this article, learn how to install and uninstall the Search extension for Cod
   - [Limitations of Search](#limit-tfs)
   - [Troubleshoot Search](faq-search.md)
 
-Also see [Install and configure Azure DevOps Server or TFS](../../tfs-server/install/get-started.md)
+Also see [Install and configure Azure DevOps Server or TFS](/azure/devops/server/install/get-started) 
 and [Requirements and compatibility](/azure/devops/server/requirements).
 
 > [!NOTE]
 > Users with at least a **Basic** access can use Code Search. 
 **Stakeholders** don't have access to code, and therefore no access to Code Search. 
 All users have access to Work Item and Wiki Search.
-
-*****
-
-::: moniker-end
-
-::: moniker range="= azure-devops"
+ 
 
 <a name="config-ts-azuredevops"></a>
 
 ##  Install the Search extension
 
-* Work Item and Wiki search are built-in features of Azure DevOps Services, they require no installation on your part.
+* Work Item and Wiki search are built-in features of Azure DevOps, they require no installation on your part.
 
 * Go to [Azure DevOps Marketplace](https://marketplace.visualstudio.com/) to install the Code Search extension in Azure DevOps as an administrator.
 Non-administrative users can also request to add the Code Search extension. 
@@ -60,17 +49,9 @@ For more information, see [Install an extension](../../marketplace/install-exten
 
 <a name="uninstall-ts-azuredevops"></a>
 
-## Uninstall the Search extension
-
-* For Work item and Wiki search, users can't uninstall, as they are built-in extensions in Azure DevOps Server and TFS.
+## Uninstall the Code Search extension
 
 * For Code Search, see [Uninstall or disable an extension](../../marketplace/uninstall-disable-extensions.md) in the Marketplace documentation. 
-
-*****
-
-::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
 
 ## Prerequisites
 
@@ -83,11 +64,11 @@ Non-administrative users can also request the extension is added.
 
 ### Availability
 
-* Code Search is available in TFS 2017 and later, and in Azure DevOps Server.
+* Code Search is available in TFS 2017 and later versions.
 
-* Work Item Search is available in TFS 2017 Update 2 and later, and in Azure DevOps Server.
+* Work Item Search is available in TFS 2017 Update 2 and later versions.
 
-* Wiki Search is available in TFS 2018 Update 2 and later, and in Azure DevOps Server.
+* Wiki Search is available in TFS 2018 Update 2 and and later versions.
 
 * Work Item and Wiki search are built-in extensions that are installed by default during Search configuration.
 
@@ -105,7 +86,7 @@ in the Local gallery documentation.
 ## Configure Search
 
 Configure the Search service using the dedicated pages in the Server Configuration Wizard
-as you install Azure DevOps Server or TFS. You can also [configure and unconfigure Search](#uninstall-tfs)
+as you install Azure DevOps Server. You can also [configure and unconfigure Search](#uninstall-tfs)
 afterwards by running the Server Configuration Wizard again or by launching the Search Configuration Wizard.
 
 <a name="hardware-recommendations"></a>
@@ -154,7 +135,7 @@ code files in version control, disk space requirement could be significant. As a
 allocate up to 150% of the size of all the repositories to be indexed. From TFS 2018 Update 3 onwards
 and Azure DevOps Server, users can exclude folders from their repositories during the time of indexing to optimize the disk space that's consumed by search.
 
-### Software Dependencies
+### Software dependencies
 
 Search has the following dependencies, which are installed automatically
 as part of the configuration:
@@ -227,7 +208,7 @@ If you can't install the version of Java required by Search due to other depende
 >
 > * If you choose to continue with Oracle JRE, contact Oracle for a [Java SE Subscription](https://www.oracle.com/java/java-se-subscription.html), so that you can continue to receive JRE updates.
 
-#### Migrating to Zulu OpenJDK from Oracle Server JRE
+#### Migrateto Zulu OpenJDK from Oracle Server JRE
 
 Search in Azure DevOps Server and TFS supports both Azul Zulu OpenJDK and Oracle JRE, allowing you to choose between them based on your needs.
 When selecting a JRE during installation, Azure DevOps Server defaults to Azul Zulu OpenJDK 8.
@@ -316,7 +297,7 @@ Consider the following points when configuring Search:
 
 <a name="separate-server"></a>
 
-### Installing or updating Search on a separate server
+### Install or update Search on a separate server
 
 To install or update  Search on a separate (remote) server, typically when you have more than 250 users,
 follow these steps:
@@ -343,7 +324,7 @@ follow these steps:
 
 <a name="secure-search"></a>
 
-## Secure Search
+## Secure search
 
 The Search service uses a modified version of 
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) 
@@ -390,7 +371,7 @@ Consider the following techniques for using IPSec to secure Elasticsearch on a W
 
 <a name="upgrading-search"></a>
 
-## Upgrade Search
+## Upgrade search
 
 TFS 2017 Update 1 includes updated Search components. If the Search
 service was configured in TFS 2017 RTM during an upgrade, the
@@ -416,8 +397,7 @@ TFS 2018 Update 1.1 and TFS 2018 Update 3 include basic authentication for the c
 between the TFS and Search service to make it more secure. Any installation or upgrade 
 to TFS 2018 Update 1.1 or TFS 2018 Update 3, needs to provide credentials as part of configuring Search feature, through Server or the Search configuration wizard.
 
-Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a reinstallation of search. While following [these](#installing-or-updating-search-on-a-separate-server) instructions for an upgrade, in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
-
+Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a reinstallation of search. While following [the instructions for an upgrade](#separate-server), in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
 
 ```
 Configure-TFSSearch.ps1 -Operation remove
@@ -427,7 +407,7 @@ Configure-TFSSearch.ps1 -Operation install -TFSSearchInstallPath <install locati
 
 <a name="manage-tfs"></a>
 
-## Manage Search
+## Manage search
 
 Search is managed by running PowerShell and SQL scripts. All of
 these scripts are available to download from 
@@ -609,21 +589,13 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    Navigate to the **Manage Extensions** page of each collection in
    your Azure DevOps Server or TFS instance:
 
-::: moniker-end
-
-   ::: moniker range="azure-devops-2019"
-
+   ::: moniker range=">= azure-devops-2019"
    ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
-
    ::: moniker-end
 
    ::: moniker range="<= tfs-2018"
-
    ![Checking that the extension is installed](media/shared/goto-marketplace.png)
-
    ::: moniker-end
-
-::: moniker range="<= azure-devops-2019"
 
 2. Remove the Search feature:
 
@@ -659,22 +631,15 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
 
 1. Uninstall the Search extension, like for Code, Work item, or Wiki, for each collection where it's installed. Navigate to the **Manage Extensions** page of each collection in your Azure DevOps Server or TFS instance.
 
-::: moniker-end
-
    ::: moniker range=">= azure-devops-2019"
-
    ![Checking that the extension is installed](media/shared/goto-marketplace-new.png)
-
    ::: moniker-end
 
    ::: moniker range="< azure-devops-2019"
-
    ![Checking that the extension is installed](media/shared/goto-marketplace.png)
-
    ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
-
 2. Remove the Search feature:
 
    - Open the In the Remove Feature dialog,  Administration Console.
@@ -689,18 +654,17 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    - Run the script again with the remove option: 
      * For TFS 2017 RTM, `"Configure Search.ps1 -RemoveTFSSearch"`
      * For TFS 2017 Update1 and above, and Azure DevOps Server, `"ConfigureTFSSearch.ps1 -remove"`<p />
-  
+::: moniker-end
+
 <a name="limit-tfs"></a>
 
-## Limitations of Search
+## Search limitaitons
 
 Search for Azure DevOps Server and TFS has the following limitation: 
 
 * If you do a disaster recovery (DR) operation and move your server back 
   to an earlier snapshot of your SQL database, you need to [reindex all your collections](#re-index).  
 
-::: moniker-end
 
-<a name="support"></a>
 
-[!INCLUDE [shared-got-feedback](includes/shared-got-feedback.md)]
+

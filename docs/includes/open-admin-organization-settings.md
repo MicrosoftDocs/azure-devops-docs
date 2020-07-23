@@ -22,7 +22,7 @@ Organization settings configure resources for all projects or the entire organiz
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**, and then choose **Organization settings**.
 
