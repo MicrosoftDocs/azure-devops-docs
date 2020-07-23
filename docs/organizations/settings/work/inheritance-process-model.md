@@ -305,7 +305,7 @@ Here are your customization options for inherited and custom WITs.
       - [Add/remove custom groups](customize-process-form.md#groups)  
       - [Add/remove custom pages](customize-process-form.md#pages) 
       - [Add/remove a custom control](custom-controls-process.md)  
-      - [Enable/disable](customize-process-wit.md#enable-disable)  
+      - [Enable/disable](customize-process-work-item-type.md#enable-disable)  
    :::column-end:::
 :::row-end:::
 ---
@@ -314,16 +314,16 @@ Here are your customization options for inherited and custom WITs.
       **Custom work item types**
    :::column-end:::
    :::column span="2":::
-      - [Add custom WIT](customize-process-wit.md#add-wit)  
-      - [Change color or description](customize-process-wit.md#overview)  
+      - [Add custom WIT](customize-process-work-item-type.md#add-wit)  
+      - [Change color or description](customize-process-work-item-type.md#overview)  
       - [Add/remove custom fields](customize-process-field.md)  
       - [Add/remove custom groups](customize-process-form.md#groups)  
       - [Add/remove custom pages](customize-process-form.md#pages)  
       - [Add/remove a custom control](custom-controls-process.md)  
       - [Add custom rules to a wit](custom-rules.md)  
       - [Add, edit, or remove a workflow state](customize-process-workflow.md#states)  
-      - [Enable/disable](customize-process-wit.md#enable-disable)  
-      - [Delete](customize-process-wit.md#destroy)  
+      - [Enable/disable](customize-process-work-item-type.md#enable-disable)  
+      - [Delete](customize-process-work-item-type.md#destroy)  
    :::column-end:::
 :::row-end:::
 ---
