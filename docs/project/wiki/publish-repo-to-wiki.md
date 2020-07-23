@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publish Markdown files from Git repository to wiki
 titleSuffix: Azure DevOps  
 description: Maintain Markdown files in a Git code repository and publish them to your team project wiki in Azure DevOps
@@ -9,13 +9,13 @@ ms.assetid:
 ms.author: chcomley
 ms.reviewer: gopinach
 author: chcomley
-monikerRange: '>= azure-devops-2019'
-ms.date: 02/14/2020 
+monikerRange: '>= tfs-2018'
+ms.date: 07/23/2020  
 ---
 
 # Quickstart: Publish a Git repository to a wiki
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../../includes/version-vsts-tfs-2018.md)]
 
 In this quickstart, learn how to do the following tasks:
 
@@ -115,7 +115,7 @@ For the Wiki that's provisioned with the Markdown files you've added, you can no
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can publish a Git repository to a wiki with the [az devops wiki create](/cli/azure/ext/azure-devops/devops/wiki#ext-azure-devops-az-devops-wiki-create) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). Run this command when you maintain Markdown files in an existing Git repo and you want to publish them to a wiki.
 
@@ -141,6 +141,10 @@ az devops wiki create [--mapped-path]
 - **repository**: (Required for the **codewiki** type). Name or ID of the repository to publish the wiki from.
 - **type**: Type of wiki to create. The accepted values are **projectwiki** (default) and **codewiki**.
 - **version**: (Required for the **codewiki** type). Repository branch name to publish the code wiki from.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example 
 
