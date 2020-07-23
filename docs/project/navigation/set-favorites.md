@@ -90,7 +90,7 @@ Access views that you have favorited by choosing the ![ ](../../media/icons/inbo
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Access views that you have favorited by choosing the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+1. Access views that you have favorited by choosing the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
@@ -208,7 +208,7 @@ You can also set a query as a personal favorite by opening the query and choosin
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Open **Work>Queries**. Next, open the ![ ](../../media/icons/actions-icon.png) actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
+Open **Work>Queries**. Next, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu of the shared query you want to favorite, and then select **Add to my favorites** or **Add to team favorites**.  
 
 ![Web portal, Work, Queries, Add to my favorites](media/set-favorites-shared-query.png)
 
