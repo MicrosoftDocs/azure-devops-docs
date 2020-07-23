@@ -551,7 +551,7 @@ For more information about steps, see the schema references for:
 
 - [Script](#script)
 - [Bash](#bash)
-- [Pwsh](#pwsh)
+- [pwsh](#pwsh)
 - [PowerShell](#powershell)
 - [Checkout](#checkout)
 - [Task](#task)
@@ -1015,7 +1015,7 @@ jobs:
 
 ### [Template Example](#tab/template-example)
 
-You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
+You can use parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml
@@ -1206,6 +1206,16 @@ resources:
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use; defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
+    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
+      branches:
+        include: [ string ] # branch names which will trigger a build
+        exclude: [ string ] # branch names which will not
+      tags:
+        include: [ string ] # tag names which will trigger a build
+        exclude: [ string ] # tag names which will not
+      paths:
+        include: [ string ] # file paths which must match to trigger a build
+        exclude: [ string ] # file paths which will not trigger a build
 ```
 
 # [Example](#tab/example)
@@ -1236,7 +1246,7 @@ The `git` type refers to Azure Repos Git repos.
   GitHub repos require a [GitHub service connection](library/service-endpoints.md) for authorization.
 
 - If you specify `type: bitbucket`, the `name` value is the full name of the Bitbucket Cloud repo and includes the user or organization.
-  An example is `name: MyBitBucket/vscode`.
+  An example is `name: MyBitbucket/vscode`.
   Bitbucket Cloud repos require a [Bitbucket Cloud service connection](library/service-endpoints.md#sep-bbucket) for authorization.
 
 ## Triggers
@@ -1767,7 +1777,7 @@ steps:
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
-## Pwsh
+## pwsh
 
 The `pwsh` keyword is a shortcut for the [PowerShell task](tasks/utility/powershell.md) when that task's **pwsh** value is set to **true**.
 The task runs a script in PowerShell Core on Windows, macOS, and Linux.
