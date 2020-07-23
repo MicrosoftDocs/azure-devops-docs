@@ -26,15 +26,14 @@ Requires the Package Management extension.
 ## Arguments
 
 <table><thead><tr><th>Argument</th><th>Description</th></tr></thead>
-<tr><td>Package type</td><td>(Required) Select the type of package to download</td></tr>
+<tr><td>PackageType</td><td>(Required) Select the type of package to download.</td></tr>
 <tr><td>Feed</td><td>(Required) ID of the feed that contains the package. For project-scoped feeds, the format is projectID/feedID. See our <a href="#faq">FAQ</a> below for information on how to get a feed or project ID, or information on using project and feed name instead.</td></tr>
 <tr><td>View</td><td>(Optional) Select a view to see package versions only promoted to that view.</td></tr>
-<tr><td>Package</td><td>(Required) Select the package to download</td></tr>
-<tr><td>Version</td><td>(Required) Version of the package</td></tr>
-<tr><td>Destination directory</td><td>(Required) Path on the agent machine where the package will be downloaded</td></tr>
-<tr><td>Extract</td><td>(Optional) Specify whether to extract the package contents at the destination directory</td></tr>
+<tr><td>Definition</td><td>(Required) Select the package to download. This can be the artifact ID or the package name.</td></tr>
+<tr><td>Version</td><td>(Required) Version of the package.</td></tr>
 <tr><td>Files</td><td>(Optional) Specify files to be downloaded as multiline minimatch patterns. <a href="https://aka.ms/minimatchexamples" data-raw-source="[More Information](https://aka.ms/minimatchexamples)">More Information</a>.<p>The default pattern (<code>**</code>) will download all files within the artifact.</p></td></tr>
-
+<tr><td>Extract</td><td>(Optional) Specify whether to extract the package contents at the destination directory.</td></tr>
+<tr><td>DownloadPath</td><td>(Required) Path on the agent machine where the package will be downloaded.</td></tr>
 
 <tr>
 <th style="text-align: center" colspan="2"><a href="~/pipelines/process/tasks.md#controloptions" data-raw-source="[Control options](../../process/tasks.md#controloptions)">Control options</a></th>
