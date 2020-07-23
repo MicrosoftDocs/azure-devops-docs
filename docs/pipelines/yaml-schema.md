@@ -1206,7 +1206,7 @@ resources:
     name: string  # repository name (format depends on `type`)
     ref: string  # ref name to use; defaults to 'refs/heads/master'
     endpoint: string  # name of the service connection to use (for types that aren't Azure Repos)
-    trigger:  # CI trigger for this repository, if not specified, there is no CI trigger
+    trigger:  # CI trigger for this repository, no CI trigger if skipped (only works for Azure Repos)
       branches:
         include: [ string ] # branch names which will trigger a build
         exclude: [ string ] # branch names which will not
