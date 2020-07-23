@@ -47,6 +47,11 @@ In this article, learn how to change the Azure subscription that your organizati
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
+> [!NOTE]
+> Please note a a user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing to does not show up, you can follow either of the following two workarounds:
+> 1. Create a new user account, grant it Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Finally, use this new account to link the organization to the desired target subscription.
+> 2. Open a support ticket
+
 ## Remove your billing subscription 
 
 > [!NOTE]
