@@ -309,7 +309,7 @@ Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Pro
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
-- [Azure Test Plans](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility
