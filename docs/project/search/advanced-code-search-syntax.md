@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 10/10/2019
 ---
 
-# Perform a code search  
+# Advanced code search  
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -62,7 +62,7 @@ project. You can navigate up to higher levels to broaden your search.
 
 In a Git project, you see a list of the repositories it contains. 
 Use the project and repository checkboxes to widen your search to more or all projects, or to 
-narrow your search to fewer projects and repositories. If there is more than a few 
+narrow your search to fewer projects and repositories. If there are more than a few 
 projects or repositories, use the **Show more** link to see them all.
 
 Code Search can index multiple branches in a Git repository - by default it indexes 

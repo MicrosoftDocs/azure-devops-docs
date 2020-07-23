@@ -11,7 +11,7 @@ monikerRange: 'azure-devops'
 ms.date: 04/18/2019
 ---
 
-# How To: Use Package Search
+# Advanced artifact or package search
 
 [!INCLUDE [version-header](../../includes/version-vsts-only.md)]
 
