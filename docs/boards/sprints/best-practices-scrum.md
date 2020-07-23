@@ -14,7 +14,7 @@ ms.date: 11/19/2018
 
 # Scrum and best practices 
  
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="assign-work-sprint-meeting">  </a>
 ## Sprint planning meetings 

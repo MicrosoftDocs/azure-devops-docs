@@ -1,4 +1,4 @@
-- name: Customize the Project field mapping
+- name: Customize Project field mapping
   href: ../xml/customize-project-field-mapping-file.md
 - name: Upload/download the Project mapping file
   href: ../xml/upload-or-download-the-microsoft-project-mapping-file.md

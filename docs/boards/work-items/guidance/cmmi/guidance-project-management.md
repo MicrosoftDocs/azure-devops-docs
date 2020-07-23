@@ -13,7 +13,7 @@ ms.date: 03/16/2017
 
 # Project management (CMMI)  
 
-[!INCLUDE [temp](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../../includes/version-all.md)]
 
 You can use the Project Management section of the MSF for CMMI process improvement guidance to better understand how to manage, plan, and coordinate the development and maintenance of software products. For more information about CMMI, see [Background to CMMI](guidance-background-to-cmmi.md).  
   

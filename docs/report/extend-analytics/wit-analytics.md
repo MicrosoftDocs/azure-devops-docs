@@ -8,7 +8,7 @@ ms.assetid: 0ABC2F7B-AFA5-465F-8DFE-4779D90452CD
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 # Query your work tracking data using OData Analytics
@@ -31,7 +31,7 @@ In this article, the base root URL is scoped to a project as shown:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!div class="tabbedCodeSnippets"]
 > ```OData
@@ -54,8 +54,8 @@ All additional URL parts are specified as an additional part of the query string
 - You will have to have defined several work items. See [Plan and track work](../../boards/get-started/plan-track-work.md).  
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-- Have [enabled or installed Analytics](../dashboards/analytics-extension.md). You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.  
+::: moniker range=">= azure-devops-2019 < azure-devops"
+- [Verify that Analytics](../dashboards/analytics-extension.md)] is installed, and if not, then enable it. You must be an account owner or a member of the [Project Collection Administrator group](/azure/devops/organizations/security/set-project-collection-level-permissions) to add extensions or enable the service.  
 - You must be a member of a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project). 
 - If you haven't been added as a project member, [get added now](/azure/devops/organizations/security/add-users-team-project).  
 - Have the **View Analytics** permission set to **Allow**. See [Grant permissions  to access Analytics](/azure/devops/report/powerbi/analytics-security).

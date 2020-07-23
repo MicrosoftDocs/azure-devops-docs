@@ -6,6 +6,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: July 09
+          href: 2020/sprint-172-update.md
         - name: June 18
           href: 2020/sprint-171-update.md
         - name: June 01
@@ -352,6 +354,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: July 09
+          href: 2020/boards/sprint-172-update.md
         - name: June 18
           href: 2020/boards/sprint-171-update.md
         - name: June 01
@@ -436,6 +440,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: July 09
+          href: 2020/pipelines/sprint-172-update.md
         - name: June 18
           href: 2020/pipelines/sprint-171-update.md
         - name: June 01
@@ -511,6 +517,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: July 09
+          href: 2020/artifacts/sprint-172-update.md
         - name: June 01
           href: 2020/artifacts/sprint-170-update.md
         - name: April 13

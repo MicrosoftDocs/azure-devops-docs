@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 12/12/2019
+ms.date: 07/17/2020
 ---
 
 # Add and manage fields (Inheritance process)   
@@ -111,7 +111,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 ### Add a picklist  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can add a new field and define a pick list or customize the pick list of an inherited field. 
 
@@ -119,26 +119,27 @@ You can add a new field and define a pick list or customize the pick list of an 
 
 1. Start by choosing ![add new field icon](media/process/new-field-icon.png) <strong>New field</strong>, then specify the picklist type&mdash;integer or string&mdash;and then add the items to appear in the picklist. You can simply add an item and then press **Enter** to add another item. 
 
-	<img src="media/process/add-a-field-pick-list-up1.png" alt="Add a custom picklist" style="border: 1px solid #C3C3C3;" />  
+	![Add a custom picklist](media/process/add-a-field-pick-list-up1.png)  
 
 	To delete an item in the list, highlight the item and then click the ![Delete icon](../../../media/icons/delete_icon.png) delete icon.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	To modify the pick list of an inherited field, choose **Edit** to edit the field. On the **Definition** tab, you can choose to **Add value**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Priority field, Definition tab dialog](media/field/edit-priority-picklist.png)   
+
+	To reorder the list, simply drag the item to where you want it in the list. 
 	::: moniker-end
 
-2. (Optional) Choose the <strong>Options</strong> tab to define the field as required, specify a default, or allow users to enter their own values. 
+2. (Optional) Choose the **Options** tab to define the field as required, specify a default, or allow users to enter their own values. 
 
-	<img src="media/process/add-a-field-pick-list-options.png" alt="Allow values in a custom picklist" style="border: 1px solid #C3C3C3;" />  
+	![Allow values in a custom picklist](media/process/add-a-field-pick-list-options.png)  
 
-3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (<strong>Layout</strong>  tab). 
+3. (Optional) See previous [step 5](#layout) to specify where you want the field to appear on the form (**Layout** tab). 
  
 <!---
-2. To reorder the list, simply drag the item to where you want it in the list. Add the items in the order you want them to appear in the list.
-
+2. Add the items in the order you want them to appear in the list.
 	![Add a custom picklist](media/process/customize-field-reorder-list.png)
 -->
 
@@ -219,31 +220,47 @@ Here, we relabel the Customer Ticket field to Ticket Number.
 
 ## Show, hide, or remove a field   
 
-You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it later, you can add it back to the form. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+::: moniker range=">= azure-devops-2020"
+
+You can choose to show or hide any field or custom control from appearing on a form. If you want to reinstate a field onto the form later, you can un-hide These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+You can choose to show or hide an inherited field or a custom control from appearing on a form. For custom fields, you can remove it from the form. If you want to reinstate it by choosing **Show on layout**. These actions differ from the [**Delete**](#delete-field) option, which deletes the field from the organization.
+
+::: moniker-end
 
 > [!NOTE]      
 > Data defined for an inherited field, even if you hide it, is maintained in the data store and work item history. You can view a record of it by viewing the history tab for a work item. 
 >
-> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results.
-If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
+> When you remove a custom field from the layout, it is maintained in the data store but stripped from the history. You can view it from the query results. If you add the field back to the form, then the history for it is restored.To delete a custom field from a project collection, see [Delete a field](#delete-field).
   
 
 
 <a id="show-hide-field">  </a>
 
-### Hide an inherited field or custom control 
 
-1. Open the context menu for the inherited field and choose Hide from layout.
+::: moniker range=">= azure-devops-2020"
+### Hide an field or custom control
+::: moniker-end 
+
+::: moniker range="azure-devops-2019"
+### Hide an inherited field or custom control
+::: moniker-end 
+
+1. Open the context menu for the field or control and choose **Hide from layout**.
 
 	![Bug layout, inherited field, open context menu, choose Hide from layout](media/process/cpfield-hide-inherited-field.png) 
 
-1. To add a hidden field to the form, choose **Show on layout**.  
+1. To add a hidden field or control to the form, choose **Show on layout**.  
 
 <a id="remove-field">  </a>
 
 ### Remove a custom field from a form
 
-1. Choose Remove from the context menu of the field you want to remove. 
+1. Choose **Remove** from the context menu of the field you want to remove. 
 
 	![Remove field from bug work item type](media/process/cpfield-remove-customer-ticket.png)  
 
@@ -285,7 +302,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  

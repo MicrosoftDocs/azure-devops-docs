@@ -178,7 +178,7 @@ You can name these images however you want as long as the extension manifest in 
 
 * ***Every*** extension must have an extension manifest file
 * Read the [extension manifest reference](./manifest.md)
-* Find out more about the contribution points in the [extension points reference](../reference/targets/overview.md)
+* Find out more about the contribution points in the [extension points reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview)
 
 Create a json file (`vss-extension.json`, for example) in the `home` directory with the following contents:
 

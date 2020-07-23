@@ -16,18 +16,17 @@ We have now added 'tags' in YAML pipelines. You can use tags to set the CI pipel
 
 ```yml
 resources:
-pipelines:
-
-- pipeline: MyCIAlias
-  project: Fabrikam
-  source: Farbrikam-CI
-  branch: master
-  tags: ### This filter is used for resolving default version
-  - Production ### Tags are AND'ed
+  pipelines:
+  - pipeline: MyCIAlias
+    project: Fabrikam
+    source: Farbrikam-CI
+    branch: master
+    tags:              ### This filter is used for resolving default version
+    - Production       ### Tags are AND'ed
     trigger:
-    tags: ### This filter is used for triggering the pipeline run
-  - Production ### Tags are AND'ed
-  - Signed
+      tags:            ### This filter is used for triggering the pipeline run
+      - Production     ### Tags are AND'ed
+      - Signed
 ```
 
 The above snippet shows that tags can be used to determine the default version of the CI (continuous integration) pipeline to run when the CD (continuous deployment) pipeline run is not triggered by some other source/resource or a scheduled run trigger.

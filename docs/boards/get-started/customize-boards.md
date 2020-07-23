@@ -1,4 +1,4 @@
-﻿---
+---
 title: Quickstart guide to customizing your Kanban boards
 titleSuffix: Azure Boards 
 description: Customize your issues board to show fields, add columns, and change card color
@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '<= azure-devops'
-ms.date: 01/11/2019
+ms.date: 07/09/2020
 ---
 
 
 # Customize your boards
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 This article shows how to customize a Kanban board. You have one Kanban board for each active product or portfolio backlog. 
 
@@ -38,7 +38,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](media/customize-boards/open-settings-s155.png)  
 	::: moniker-end
@@ -78,7 +78,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings](media/customize-boards/open-settings-agile-s155.png)  
 	::: moniker-end
@@ -233,7 +233,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 * * *
 
 > [!NOTE]   
-> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-wit.md#enable-disable).
+> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable).
 
 ## Review your changes 
 
@@ -246,7 +246,7 @@ Here we show the customizations made in this article. The following image also s
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view.png) 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-customized-view-s155.png) 
 ::: moniker-end
@@ -259,7 +259,7 @@ Here we show the customizations made in this article. The following image also s
 
 Here we show the customizations made in this article. The following image also shows a style applied to the color when the Priority=1. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 > [!div class="mx-imgBorder"]
 > ![Settings,Backlogs dialog, Turn Epics off ](media/customize-boards/boards-agile-customized-view-s155.png)  
 ::: moniker-end

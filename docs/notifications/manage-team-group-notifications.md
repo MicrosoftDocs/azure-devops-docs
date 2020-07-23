@@ -14,11 +14,13 @@ monikerRange: '>= tfs-2013'
 
 # Manage notifications for a team or group
 
-[!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version-all](../includes/version-all.md)]
 
 As changes occur to work items, code reviews, pull requests, source control files, and builds, your team or group can be notified via email. For example, when a high priority work item is assigned to your team's area path, an email can be sent to the team.
 
 [!INCLUDE [note-earlier-tfs-version](includes/note-earlier-tfs-version.md)]
+
+[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
 
 ::: moniker range=">= tfs-2017"
 
@@ -27,7 +29,7 @@ As changes occur to work items, code reviews, pull requests, source control file
 A subscription lets you control what your team should be notified about and how the team receives those notifications.
 ::: moniker-end
 
-[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
+
 
 ::: moniker range="azure-devops"
 
@@ -72,7 +74,7 @@ A subscription lets you control what your team should be notified about and how 
 ::: moniker-end  
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 
@@ -165,12 +167,6 @@ A subscription lets you control what your team should be notified about and how 
 ## Manage team delivery settings
 
 Choose the default method for your team to receive notifications by updating the **team delivery settings**.
-
-::: moniker-end
-
-[!INCLUDE [note-smtp-server](includes/note-smtp-server.md)]
-
-::: moniker range=">= tfs-2017"  
 
 1. Open the Notifications page under team settings: `https://dev.azure.com/{organization}/{project}/_admin/_notifications?view=contents`
 

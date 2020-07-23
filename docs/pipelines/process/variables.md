@@ -17,7 +17,7 @@ Variables give you a convenient way to get key bits of data into various parts o
 
 When you define the same variable in multiple places with the same name, the most locally scoped variable wins. So, a variable defined at the job level can override a variable set at the stage level. A variable defined at the stage level will override a variable set at the pipeline root level. A variable set in the pipeline root level will override a variable set in the Pipeline settings UI. 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 Variables are different from [runtime parameters](runtime-parameters.md), which are typed and available during template parsing. 
 ::: moniker-end
 
@@ -60,7 +60,7 @@ Azure Pipelines supports three different ways to reference variables: macro, tem
 
 In a pipeline, template expression variables (`${{ variables.var }}`) get processed at compile time, before runtime starts. Macro syntax variables (`$(var)`) get processed during runtime before a task runs. Runtime expressions (`$[variables.var]`) also get processed during runtime but were designed for use with conditions and expressions. When you use a runtime expression, it must take up the entire right side of a definition. 
 
-In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at runtime before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
+In this example, you can see that the template expression still has the initial value of the variable after the variable is updated. The value of the macro syntax variable updates. The template expression value does not change because all template expression variables get processed at compile time before tasks run. In contrast, macro syntax variables are evaluated before each task runs. 
 
 ```yaml
 variables:
@@ -237,7 +237,7 @@ To use a variable as an input to a task, wrap it in `$()`.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 
 Using the Azure DevOps CLI, you can create and update variables for the pipeline runs in your project. You can also delete the variables if you no longer need them.
 
@@ -482,7 +482,7 @@ steps:
 ```
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
@@ -496,11 +496,11 @@ Each task that needs to use the secret as an environment variable does remapping
 
 
 > [!IMPORTANT]
-> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Validate contributions from forks](../repos/github.md#validate-contributions-from-forks).
+> By default with GitHub repositories, secret variables associated with your pipeline aren't made available to pull request builds of forks. For more information, see [Contributions from forks](../repos/github.md#contributions-from-forks).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 To set secret variables using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -558,7 +558,7 @@ You must use YAML to consume output variables in a different job.
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to using output variables from tasks. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -566,7 +566,7 @@ There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command th
 
 * * *
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 
 ## List variables
 
@@ -809,7 +809,7 @@ You can't pass a variable from one job to another job of a build pipeline, unles
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables in scripts. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -857,7 +857,7 @@ For more information about counters and other expressions, see [expressions](exp
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to setting variables using expressions. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 
@@ -888,7 +888,7 @@ To do this, select the variable in the **Variables** tab of the build pipeline, 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 To choose which variables are allowed to be set at queue time using the Azure DevOps CLI, see [Create a variable](#create-variable) or [Update a variable](#update-variable).
 ::: moniker-end
 
@@ -1048,7 +1048,7 @@ Variables are expanded once when the run is started, and again at the beginning 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="azure-devops"  
+::: moniker range=">=azure-devops-2020"
 There is no [**az pipelines**](/cli/azure/ext/azure-devops/pipelines) command that applies to the expansion of variables. The Azure DevOps CLI commands are only valid for Azure DevOps Services (cloud service).
 ::: moniker-end
 

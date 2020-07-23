@@ -9,12 +9,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/28/2020
+ms.date: 7/09/2020
 ---
 
 # Set up your Backlogs and Boards  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 In most cases you can start using your product and portfolio backlogs once your project is created. A default team is created along with associated backlogs and boards. You can start adding work items to your product backlog using the [Backlog](create-your-backlog.md) or [Board](../boards/kanban-quickstart.md). 
 
@@ -38,7 +38,7 @@ The first thing you need to understand is that your product **Backlog** and **Bo
 
 ::: moniker-end
 
-[!INCLUDE [temp](../includes/basic-process-note.md)]
+[!INCLUDE [temp](../includes/basic-process-note.md)] 
 
 ::: moniker range="<= tfs-2018"
 
@@ -186,7 +186,7 @@ To learn more about checklists, see the following articles:
 
 <a id="customize-checklist-2019" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019"
 
 ## Add other work item types to your Kanban Board checklist items
 
@@ -225,16 +225,17 @@ For details, see the following resources:
 
 ::: moniker range="azure-devops"
 
-- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
 - [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md) 
 - [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
+
 
 **Inheritance process model:**  
-- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
 - [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md) 
 - [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
 
@@ -254,7 +255,7 @@ For details, see the following resources:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 <a id="taskboard-types" />
 
@@ -296,7 +297,7 @@ For on-premises deployments that use the On-premises XML process model to custom
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 > [!NOTE]
 > If your project collection uses the On-premises XML process model to customize work tracking, you can enable work item types that you add to the Task Category to appear as a checklist on your product Kanban board. To learn how, see [Customize your Kanban Board checklist items](#customize-checklist-2019) provided earlier in this article. 
@@ -317,7 +318,7 @@ The following settings can impact on the type and number of work items that will
 
 - If you have turned off the **In Progress** view, then those work items where work has started won't appear in the backlog list.  
 
-	::: moniker range="azure-devops"
+	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]  
 	> ![Backlogs, View Options, Hide In Progress](media/setup-backlog/hide-in-progress-s155.png)  
 	::: moniker-end
@@ -338,7 +339,7 @@ The following settings can impact on the type and number of work items that will
 
 - Sprint backlogs show only those work items that meet the team's area path and the **Iteration Path** defined for the sprint. 
 
-- (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-wit.md#enable-disable), it will no longer appear on backlogs and boards. 
+- (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable), it will no longer appear on backlogs and boards. 
 
 - (On-premises XML process model) If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it will no longer appear on backlogs and boards.
 

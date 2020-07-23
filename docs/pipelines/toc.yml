@@ -26,40 +26,32 @@
   items:
   - name: Key concepts
     href: get-started/key-pipelines-concepts.md
-  - name: Jobs & stages 
-    items:
-    - name: Specify jobs in your pipeline
-      href: process/phases.md
-      displayName: phases, stages, job type, dependencies, conditions, timeouts, multi-configuration, slicing, job variables, artifact download, oauth token
-    - name: Define container jobs
-      href: process/container-phases.md
-    - name: Add stages, dependencies & conditions
-      href: process/stages.md
-      displayName: stage, dependencies, conditions, queuing policies, approvals
-    - name: Deployment jobs
-      href: process/deployment-jobs.md
-    - name: Specify conditions 
-      href: process/conditions.md
-    - name: Specify demands 
-      href: process/demands.md
-      displayName: task demands, manually entered demands, capabilities
   - name: Repositories
     items:
     - name: Supported repositories 
       href: repos/index.md
-      displayName: supported repository types, version control, azure repos git, tfvc, github, bitbucket, subversion, ghe, 
+      displayName: supported repository types, version control, azure repos git, tfvc, github, bitbucket, subversion, github enterprise, ghe
     - name: Azure Repos Git
       href: repos/azure-repos-git.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, branch policy, access token, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch, exit code 128
     - name: GitHub
       href: repos/github.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, github app, oauth, pat, open source, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, tag trigger, forks, badge, prefergitfrompath, checkout, clone, fetch, get sources, checks, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+    - name: GitHub Enterprise Server
+      href: repos/github-enterprise.md
+      displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
     - name: BitBucket Cloud
       href: repos/bitbucket.md
-      displayName: ci, pr, pull request, triggers, self, batching, batched CI, triggers, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+      displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
+    - name: BitBucket Server
+      href: repos/on-premises-bitbucket.md
+      displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, ip address range
     - name: TFVC
       href: repos/tfvc.md
       displayName: tfvc, version control, workspace, ci, gated, checkin, mappings, scroch, triggers, path filter, clean
+    - name: Subversion
+      href: repos/subversion.md
+      displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
     - name: Multi-repo checkout
       href: repos/multi-repo-checkout.md
   - name: Triggers
@@ -86,6 +78,23 @@
     - name: Template types & usage 
       href: process/templates.md
       displayName: parameters, passing, job reuse, stage reuse, variable reuse, expressions, context, conditional insertion, iterative insertion, escape a value
+  - name: Jobs & stages 
+    items:
+    - name: Specify jobs in your pipeline
+      href: process/phases.md
+      displayName: phases, stages, job type, dependencies, conditions, timeouts, multi-configuration, slicing, job variables, artifact download, oauth token
+    - name: Define container jobs
+      href: process/container-phases.md
+    - name: Add stages, dependencies & conditions
+      href: process/stages.md
+      displayName: stage, dependencies, conditions, queuing policies, approvals
+    - name: Deployment jobs
+      href: process/deployment-jobs.md
+    - name: Specify conditions 
+      href: process/conditions.md
+    - name: Specify demands 
+      href: process/demands.md
+      displayName: task demands, manually entered demands, capabilities
   - name: Library, variables & secure files
     items:
     - name: Library & shared resources
