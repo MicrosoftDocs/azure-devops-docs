@@ -233,7 +233,7 @@ If you decide you want to use Epics to track work, you can turn it on and it wil
 * * *
 
 > [!NOTE]   
-> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-wit.md#enable-disable).
+> Contributors will still be able to create Epics from other views, they just won't be able to view Epics within a backlog or board. To completely disable the Epic work item type, see [Add and manage work item types, Enable or disable a WIT](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable).
 
 ## Review your changes 
 

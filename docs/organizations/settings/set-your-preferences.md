@@ -8,13 +8,13 @@ ms.assetid:
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-monikerRange: '>= tfs-2015'
+monikerRange: '>= tfs-2013'
 ms.date: 03/02/2020
 ---
 
 # Set user preferences
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 From your profile page, you can change your information and  account preferences. In this article, learn how to complete the following tasks:
 
@@ -32,7 +32,7 @@ From your profile page, you can change your information and  account preferences
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the **New account manager**, see [Enable preview features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -58,7 +58,7 @@ From your profile page, you can change your information and  account preferences
 
 * * *
 
-::: moniker range="azure-devops-2019"  
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
 1. To change your user preferences, open your profile menu, and then select **My profile**.
 
