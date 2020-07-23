@@ -189,7 +189,7 @@ Members of the Project Collection Administrators group configure resources for a
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  

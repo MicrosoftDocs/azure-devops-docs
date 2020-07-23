@@ -63,7 +63,7 @@ Choose **Overview>Wiki**.
 > [!div class="mx-imgBorder"]  
 > ![Create wiki, provision a Git repo for your wiki, or publish existing repo Markdown files](../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
+If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](/azure/devops/project/navigation/work-across-projects).  
 
 ::: moniker-end
 
@@ -169,7 +169,7 @@ ID                                    Name         Type
 
 1. To edit, rename, or delete a page, open **Repos>Files** or **Code>Files**.
 
-2. Choose the page you want, open the ![ ](../../media/icons/actions-icon.png) actions icon, and then choose the operation you want.
+2. Choose the page you want, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose the operation you want.
 
     > [!div class="mx-imgBorder"]  
     > ![Edit, rename, or delete wiki content](media/wiki/publish-code-edit-rename-file.png)
@@ -223,7 +223,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Add a page from the web portal
 
-1. From **Repos>Files** or **Code>Files** for the published repo, open the ![ ](../../media/icons/actions-icon.png) actions icon and choose **File**.
+1. From **Repos>Files** or **Code>Files** for the published repo, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose **File**.
 
     > [!div class="mx-imgBorder"]  
     > ![Add a page to the wiki from the web portal](media/wiki/publish-code-add-edit-files-folder.png)
@@ -241,7 +241,7 @@ Each update you make requires you commit your changes to the repository. You can
 
 ### Upload files to a folder
 
-1. If you have existing content already defined, you can upload it into a folder. Open the ![ ](../../media/icons/actions-icon.png) actions icon and choose **Upload file(s)**.
+1. If you have existing content already defined, you can upload it into a folder. Open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose **Upload file(s)**.
 
     > [!div class="mx-imgBorder"]  
     > ![Upload files to a folder option](media/wiki/publish-wiki-upload-files.png)
