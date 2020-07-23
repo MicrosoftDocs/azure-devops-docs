@@ -1015,7 +1015,7 @@ jobs:
 
 ### [Template Example](#tab/template-example)
 
-You can use a parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
+You can use parameters to extend a template. In this example, the pipeline using the template supplies the values to fill into the template.
 
 ```yaml
 # File: simple-param.yml

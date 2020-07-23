@@ -138,7 +138,7 @@ resources:
 You can trigger a pipeline when an update is pushed to the `self` repository or to any of the repositories declared as resources. This is useful, for instance, in the following scenarios:
 
 - You consume a tool or a library from a different repository. You want to run tests for your application whenever the tool or library is updated.
-- You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline everytime an update is pushed to the application repository.
+- You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
 
 > [!NOTE]
 > Repository resource triggers only work for Azure Reopos Git repositories at present. They do not work for GitHub or BitBucket repository resources.
