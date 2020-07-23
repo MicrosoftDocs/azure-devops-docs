@@ -27,7 +27,7 @@ New projects contain a single, root area that corresponds to the project name. A
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
 
-[!INCLUDE [temp](../../includes/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Prerequisites
 
@@ -137,7 +137,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 [List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
 
@@ -157,6 +157,13 @@ az boards area project list [--depth]
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
 - **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
+
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -239,7 +246,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 <a id="add-area" /> 
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -255,6 +262,12 @@ az boards area project create --name
 - **name**: Required. Area path name. 
 - **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
 
 #### Example: JSON format
 
@@ -333,7 +346,7 @@ You open team settings from the top navigation bar. Select the team you want and
 
 <a id="list-team-area-paths" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops"
 
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -415,7 +428,7 @@ The default area path determines the default area path assigned to work items th
  
 #### [Browser](#tab/browser/)
 
-::: moniker range=">= azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -441,7 +454,7 @@ The default area path determines the default area path assigned to work items th
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 < azure-devops"  
+::: moniker range=">= tfs-2017 < azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -485,7 +498,7 @@ The default area path determines the default area path assigned to work items th
 
 <a id="set-team-area-paths" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -504,6 +517,10 @@ az boards area team add --path  --team
 - **include-sub-areas**: Optional. Include child nodes of the area path. Accepted values: false, true. 
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -577,13 +594,13 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
+::: moniker range=">= azure-devops-2020" 
+
 You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
 <a id="rename-move-project-area-path" /> 
 
 ### Rename or move an area path
-
-::: moniker range="azure-devops"
 
 To rename or move an area path, use the `az boards area project update` command.
 
@@ -599,6 +616,10 @@ az boards area project update --path
 - **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.  
 - **name**: Optional. Specifies the new name of the area path.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -678,7 +699,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 ### Programmatic resources
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
