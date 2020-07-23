@@ -62,7 +62,7 @@ Consider creating a new branch when there are no linked code artifacts. If there
 
 	<img src="media/git-dev-pr-create-branch.png" alt="User story work item form, Development section, create new branch" style="border: 1px solid #C3C3C3;" /> 
  
-	... or, from the form's ![Actions icon](../media/icons/actions-icon.png) Actions menu.  
+	... or, from the form's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu.  
 
 	<img src="media/git-dev-pr-create-branch-from-action-menu.png" alt="User story work item form, Action menu, add new branch" style="border: 1px solid #C3C3C3;" /> 
 

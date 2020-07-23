@@ -36,7 +36,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board setting settings.  
 
 	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]
@@ -76,7 +76,7 @@ Each team can customize their Issues and Epics boards and sprint Taskboards.
 
 1. [Open your Kanban board](plan-track-work.md). <!--- If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board. -->
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board setting settings.  
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board setting settings.  
 
 	::: moniker range=">= azure-devops-2020"
 	> [!div class="mx-imgBorder"]

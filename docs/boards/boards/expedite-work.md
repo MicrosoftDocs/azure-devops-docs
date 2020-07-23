@@ -82,7 +82,7 @@ Once you've identified one or two, add them to your Kanban board.
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -99,7 +99,7 @@ Once you've identified one or two, add them to your Kanban board.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
 
-4. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Remove**. 
+4. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
@@ -129,7 +129,7 @@ Once you've identified one or two, add them to your Kanban board.
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Reorder a swimlane](media/expedite/swimlanes-reorder.png)  
 
-5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Remove**. 
+5. If you need to delete a swimlane, first move all items out of the lane. Then open the Settings dialog, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove**. 
 	
    > [!div class="mx-imgBorder"]
    > ![Kanban board settings dialog, Remove a swimlane](media/expedite/swimlanes-remove.png)  
@@ -159,7 +159,7 @@ Once you've identified one or two, add them to your Kanban board.
 10. To reorder your swimlanes, simply grab the lane and move it up or down.   
      <img src="media/ALM_EW_ReorderLanes.png" alt="Kanban board, Open swimlanes" style="border: 2px solid #C3C3C3;" />   
 
-11. If you need to delete a lane, first move all items out of the lane. Then, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Delete**.      
+11. If you need to delete a lane, first move all items out of the lane. Then, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete**.      
 
      ![Kanban board settings, Delete a swimlane](media/ALM_EW_DeleteLane.png)
 

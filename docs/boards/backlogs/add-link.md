@@ -54,7 +54,7 @@ For a list of all link types and supported link relationships, see [Linking, tra
 
 1. From the web portal, open a [backlog](create-your-backlog.md) or [query results page](../queries/view-run-query.md), and [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to add a link to.
 
-2. Open the![ ](../../media/icons/actions-icon.png) actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
+2. Open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu of one of the selected work items, choose **Add link**, and then choose **Existing item**&hellip; or **New item**&hellip;. 
 
     Here we multi-select from the product backlog and choose **Existing item**&hellip;.
 
@@ -120,7 +120,7 @@ To link to multiple work items, enter their IDs separated by commas or spaces. I
 ::: moniker-end 
 
 ::: moniker range=">= tfs-2018"
-To view the work items selected for linking, you can choose the ![info icon](../media/icons/info-icon.png).   
+To view the work items selected for linking, you can choose the  :::image type="icon" source="../media/icons/info.png" border="false"::: .   
 > [!div class="mx-imgBorder"]  
 > ![Add link to an existing work item](media/add-link/info-linked-items.png) 
 ::: moniker-end     
@@ -195,7 +195,7 @@ For example, here we use the **Remote Related** link type to link to  work item 
 
 The link tab maintains a count of all links to the work item.  The [*Remote Link Count* field](../queries/linking-attachments.md) maintains a count of the number of links added to a work item that link to a work item defined in another project or organization. 
 
-The following image shows an example of two remote links, indicated by the ![ ](../../media/icons/cloud-link.png) cloud icon, added to a user story. 
+The following image shows an example of two remote links, indicated by the  :::image type="icon" source="../../media/icons/cloud-link.png" border="false":::  cloud icon, added to a user story. 
 
 > [!div class="mx-imgBorder"]  
 > ![User Story form, Link tab, showing two external links](media/add-link/link-tab-remote-links.png)  
@@ -209,7 +209,7 @@ The following image shows an example of two remote links, indicated by the ![ ](
 
 You can add a new git branch and link them to existing work items at the same time. 
 
-From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
+From a backlog or query results page, [multi-select the work items](bulk-modify-work-items.md#multi-select) you want to link to a new git branch, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then **New branch...**. To learn more, see [Link work items to Git development objects](connect-work-items-to-git-dev-ops.md).  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2018"

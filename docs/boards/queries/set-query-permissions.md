@@ -56,7 +56,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 1. Choose **All**. Expand **Shared Queries**. 
  
-1. To add a folder, choose the ![ ](../media/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
@@ -68,7 +68,7 @@ If you're not a member of the project administrators group, [get added](../../or
 	> [!div class="mx-imgBorder"]  
 	> ![New folder dialog](media/permissions/new-folder-dialog.png)
 
-3. To set permissions for the folder you just added, choose the ![ ](../media/icons/actions-icon.png) actions icon and select **Security**.
+3. To set permissions for the folder you just added, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.
 
 4. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Enter the name of a user or group within the search box.   
 
@@ -94,7 +94,7 @@ If you're not a member of the project administrators group, [get added](../../or
 
 1. Choose **All**. Expand **Shared Queries**. 
  
-1. To add a folder, choose the ![ ](../media/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
@@ -106,7 +106,7 @@ If you're not a member of the project administrators group, [get added](../../or
 	> [!div class="mx-imgBorder"]  
 	> ![New folder dialog](media/permissions/new-folder-dialog.png)
 
-3. To set permissions for the folder you just added, choose the ![ ](../media/icons/actions-icon.png) actions icon and select **Security**.
+3. To set permissions for the folder you just added, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.
 
 4. Change the permissions so that the team member or group can contribute and manage permissions for the folder. Choose the **Add...** menu to add a user identity or group. 
 
@@ -152,7 +152,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose  the ![ ](../media/icons/actions-icon.png) actions icon and select **Security**.  
+1. Choose  the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select **Security**.  
 
    > [!div class="mx-imgBorder"]  
    > ![Open query permissions](media/permissions/query-permissions-select.png)
