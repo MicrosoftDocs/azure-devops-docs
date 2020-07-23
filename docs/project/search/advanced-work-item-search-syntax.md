@@ -10,7 +10,7 @@ ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Search for work items 
+# Advanced work items search
 
 [!INCLUDE [version-header](../../includes/version-tfs-2017-through-vsts.md)]
 
@@ -86,24 +86,25 @@ Mix and match the functions to create quick powerful searches. For example:
 * Use the operators `>`, `>=`, `<`, `<=`, `=`, and `!=` for date, integer and float fields.
   For example, a search such as <strong>t: Bug CreatedDate> @Today-7</strong> finds all bugs created in the last week
 
-* For the search query that contain multiple terms and users looking for exact match, embed the search term inside " ";
+* For the search query that contains multiple terms and users looking for exact match, embed the search term inside " ";
   for example, a search such as **BuildPath: "tools.demoproject.com"** finds all work items that necessarily contain the path "tools.demoproject.com". 
 
 <img alt="Quick inline search filters let you refine work items in seconds" src="media/work-item-search-get-started/NewFilters.gif" width="710" height="400" border="0"></img>  
 
-## Quick Filters shortcuts
+## Quick filter shortcuts
 
-The common inline search filters can be quickly accessed using shortcuts:
+You can use the following common inline search filters to quickly access common shortcuts:
 
 * `a:` for **Assigned to:** 
 * `c:` for **Created by:** 
 * `s:` for **State** 
 * `t:` for **Work item type**
 
-For example, you can use quick searches such as **a:@Me s:active t:bug** to find all bugs assigned to you.
+For example, you can use quick searches such as **`a:@Me s:active t:bug`** to find all bugs assigned to you.
 
 <a name="locationfunctions"></a>
-## Filters to scope projects, area and iteration paths
+
+## Scope projects and area and iteration paths using filters 
 
 Filters make it easy to narrow the search to specified projects and area paths.
 Narrow the search to a specific location using the `proj`, `area`, or `iteration` filters:
@@ -117,6 +118,7 @@ Narrow the search to a specific location using the `proj`, `area`, or `iteration
   For example: `Wiki path:"Contoso/Windows Phones and Devices/Services"`.
   
 <a name="quicknavigation"></a>
+
 ## Quickly navigate to a work item using its ID
 
 Type or paste the work item ID in the search box in the Azure DevOps or TFS title bar 

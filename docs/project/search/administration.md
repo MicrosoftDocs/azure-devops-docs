@@ -397,8 +397,7 @@ TFS 2018 Update 1.1 and TFS 2018 Update 3 include basic authentication for the c
 between the TFS and Search service to make it more secure. Any installation or upgrade 
 to TFS 2018 Update 1.1 or TFS 2018 Update 3, needs to provide credentials as part of configuring Search feature, through Server or the Search configuration wizard.
 
-Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a reinstallation of search. While following [these](#installing-or-updating-search-on-a-separate-server) instructions for an upgrade, in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
-
+Update from TFS 2018 Update 2 (or higher) to version Azure DevOps Server 2019 Update 1, when search is configured on a separate server, requires a reinstallation of search. While following [the instructions for an upgrade](#separate-server), in step 4 instead of updating `Configure-TFSSearch.ps1 – Operation update`, run the following command to re-install search:
 
 ```
 Configure-TFSSearch.ps1 -Operation remove
@@ -655,10 +654,11 @@ on the [same server](#unconfig-same-server) as Azure DevOps Server or TFS, or on
    - Run the script again with the remove option: 
      * For TFS 2017 RTM, `"Configure Search.ps1 -RemoveTFSSearch"`
      * For TFS 2017 Update1 and above, and Azure DevOps Server, `"ConfigureTFSSearch.ps1 -remove"`<p />
-  
+::: moniker-end
+
 <a name="limit-tfs"></a>
 
-## Limitations of Search
+## Search limitaitons
 
 Search for Azure DevOps Server and TFS has the following limitation: 
 
