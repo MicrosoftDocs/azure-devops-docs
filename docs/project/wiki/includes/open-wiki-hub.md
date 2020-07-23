@@ -11,7 +11,7 @@ Connect to your project using a [supported web browser](/azure/devops/server/com
 > [!div class="mx-imgBorder"] 
 >![Create wiki, provision a Git repo for your wiki or publish existing repo Markdown files](../../../organizations/public/media/wiki/open-wiki-vert-brn.png)
 
-If you need to switch your team project, choose the ![project-icon.png](../../../media/icons/project-icon.png) Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
+If you need to switch your team project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all team projects and teams](../../navigation/work-across-projects.md).
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
