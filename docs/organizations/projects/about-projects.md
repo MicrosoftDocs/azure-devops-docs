@@ -47,7 +47,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to Azure DevOps, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 You can scale your organization in the following ways:
 
 - To support different business units, you can add projects
@@ -58,8 +58,8 @@ You can scale your organization in the following ways:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-You can scale your on-premises TFS deployment in the following ways:
+::: moniker range="< azure-devops"
+You can scale your on-premises Azure DevOps deployment in the following ways:
 
 - To increase performance, you can add server instances
 - To support different business units, you can add project collections and projects
@@ -120,7 +120,7 @@ Even if you have many teams working on hundreds of different applications and so
 
 ### Reasons to add another project
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -131,7 +131,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="< azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project
@@ -141,7 +141,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Private and public projects
 
