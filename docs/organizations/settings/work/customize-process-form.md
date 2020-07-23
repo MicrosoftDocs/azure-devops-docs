@@ -145,7 +145,7 @@ Choose the ![Delete icon](../../../media/icons/delete_icon.png) Delete option fr
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md) 
 - [Add extensions and custom controls to a work item type](custom-controls-process.md) 
 - [Customize a project using an inherited process](customize-process.md)  

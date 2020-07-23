@@ -8,14 +8,14 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/28/2019
+ms.date: 07/20/2020
 ---
 
 
 
 # About settings at the user, team, project, or organization-level 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 ::: moniker range="azure-devops"
 
@@ -28,7 +28,7 @@ If you're just getting started as a Project Administrator, see [Get started as a
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 You configure resources either for yourself, your team, a project, or your project collection from a **Settings** page. The settings you can configure depend on the security group or administrative role you belong to.
 
@@ -173,7 +173,7 @@ From the administrative **Project settings** pages, you can configure settings a
 ![Project settings, conceptual](media/about/project-settings-prev-nav.png)  
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 > [!NOTE]  
 > Project settings differ depending on your on-premises TFS version. Some settings aren't available for earlier versions of TFS. 
@@ -454,7 +454,7 @@ For an overview of managing your organization, see [About organization managemen
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 <= azure-devops-2020" 
 
 For an overview of managing collections, see [Configure and manage Azure DevOps Server resources](/azure/devops/server/admin/admin-quick-ref).
 
@@ -613,7 +613,7 @@ For an overview of managing collections, see [Configure and manage TFS resources
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 <a id="admin" />
 

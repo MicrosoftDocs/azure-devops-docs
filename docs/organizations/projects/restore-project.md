@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: '>= azure-devops-2019'
-ms.date: 10/31/2019
+ms.date: 07/20/2020
 ---
 
 # Restore a project
@@ -29,7 +29,7 @@ To restore a project, you must have the "delete project" permission set to **All
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 To restore a project, you must delete project permissions and have the "delete project" permission set to **Allow**. To learn how to check your permissions, see [View permissions](../security/view-permissions.md).
 
@@ -41,7 +41,6 @@ To restore a project, you must delete project permissions and have the "delete p
 
 ## Restore project
 
-::: moniker range="azure-devops"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -56,15 +55,12 @@ To restore a project, you must delete project permissions and have the "delete p
 
    ![Highlight the project, and then select Restore](media/restore-project/recently-deleted-projects.png)
 
-::: moniker-end
 
-::: moniker range="azure-devops-2019"
 
 ### Using REST API
 
 > [!WARNING]
 > If you're trying to restore a project with a name that's already taken, you need to rename the project before it can be restored. To rename the project, enter the following in the request body: `"name":"new name"`
-> 
 
 1. Open a browser window and enter a URL that uses the following form:  
 
@@ -108,7 +104,7 @@ To restore a project, you must delete project permissions and have the "delete p
    $project = (irm -Uri "$collectionUrl/_apis/projects?stateFilter=deleted&api-version=5.0-preview.3" -UseDefaultCredentials).value | where {$_.name -eq $projectName}
    irm -Uri ($project.url + "?api-version=5.0-preview.3") -UseDefaultCredentials -Method PATCH -Body '{"state":"wellFormed"}' -ContentType 'application/json'
    ```
-::: moniker-end
+
 
 Your project and associated data are restored.
 

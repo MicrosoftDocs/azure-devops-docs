@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 10/28/2019
+ms.date: 07/20/2020
 ---
 
 # Select backlog navigation levels for your team
@@ -17,22 +17,22 @@ ms.date: 10/28/2019
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 If you want additional portfolio backlogs, see the following topics based on the process model you use: 
 - **Inheritance**: [Customize your backlogs or boards for a process](work/customize-process-backlogs-boards.md)  
-- **Hosted XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
+- **On-premises XML**: [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 
 For an overview of process models, see [Customize your work tracking experience](../../reference/customize-work.md).
 
 ::: moniker-end
 
-::: moniker range="tfs-2015 <= tfs-2018" 
+::: moniker range="tfs-2015 < azure-devops-2019" 
 If you want additional portfolio backlogs, see [Add portfolio backlogs](../../reference/add-portfolio-backlogs.md).  
 ::: moniker-end
 
 ::: moniker range="tfs-2015" 
 > [!NOTE]    
-> **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
+> The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
@@ -41,7 +41,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 
 ## Set your team's preferences for backlog levels
 
-Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](add-team-administrator.md).
+Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. To get added as a team administrator, see [Add team administrator](add-team-administrator.md).
 
 You can change the setting from a backlog or board view. Here we show how to change it from the board view.
 
