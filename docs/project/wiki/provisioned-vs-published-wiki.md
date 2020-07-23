@@ -70,7 +70,7 @@ The following table summarizes those operations or features that may differ, dep
 > |[Support multiple wikis, name the wiki](publish-repo-to-wiki.md)  |  | :::image type="icon" source="media/checkmark.png" border="false":::|
 > |[Add or edit pages from **Repos>Files** or **Code>Files**](publish-repo-to-wiki.md) |  |:::image type="icon" source="media/checkmark.png" border="false"::: |
 > |[Revert to an earlier revision from the **Wiki**](wiki-view-history.md#revert-provision) |:::image type="icon" source="media/checkmark.png" border="false"::: |  |
-> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |!:::image type="icon" source="media/checkmark.png" border="false"::: |
+> |[Revert to an earlier revision from **Repos** or **Code**](wiki-view-history.md#revert-publish) |  |:::image type="icon" source="media/checkmark.png" border="false"::: |
 > |[Maintain versioned wikis](#versioning) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |
 > |[Select a wiki version](wiki-select-unpublish-versions.md) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |
 > |[Unpublish a wiki](wiki-select-unpublish-versions.md) |  | :::image type="icon" source="media/checkmark.png" border="false"::: |

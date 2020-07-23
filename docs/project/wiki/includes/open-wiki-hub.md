@@ -15,7 +15,7 @@ If you need to switch your team project, choose the ![project-icon.png](../../..
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can view and open a wiki page defined for a project using the `az devops wiki show` command. To get started, see [Get started with Azure DevOps CLI](../../../cli/index.md).
 
@@ -33,6 +33,10 @@ az devops wiki show --wiki
 - **--open**: Optional. Open the wiki page in your web browser.
 - **--project -p**: Optional. Name or ID of the project.
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 ### Example
 
@@ -78,10 +82,8 @@ az devops wiki page show --path 'my wiki' --wiki 'myprojectwiki' --content "Hell
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2018 < azure-devops"
-
-[!INCLUDE [note-cli-not-supported](../../../includes/note-cli-not-supported.md)]
-
+::: moniker range="< azure-devops-2020"
+Azure DevOps CLI commands aren't supported for Azure DevOps Server 2019 and earlier versions.  
 ::: moniker-end
 
 * * *
