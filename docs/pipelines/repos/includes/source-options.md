@@ -7,11 +7,7 @@ author: vijayma
 ms.date: 06/04/2020
 ---
 
-## Add a build badge
-
-To add a build badge to the `readme.md` file at the root of your repository, follow the steps in [Get the status badge](../../create-first-pipeline.md#get-the-status-badge).
-
-## Get the source code
+## Checkout
 
 When a pipeline is triggered, Azure Pipelines pulls your source code from the Azure Repos Git repository. You can control various aspects of how this happens.
 

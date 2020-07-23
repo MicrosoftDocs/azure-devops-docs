@@ -56,7 +56,7 @@ Below is the code snippet that adds your action to the contributions section of 
 | uri                | URI to a page that registers the menu action handler (see below).                                               |                   
 | registeredObjectId | (Optional) Name of the registered menu action handler. Defaults to the contributor id.                          |                   
 
-Learn about all of the places where you can add actions in the [contributions reference](../reference/targets/overview.md).
+Learn about all of the places where you can add actions in the [contributions reference](/previous-versions/azure/devops/docs/extend/reference/targets/overview).
 
 ## Your HTML page
 
@@ -113,4 +113,4 @@ Now that you've written your extension, the next steps are to Package, Publish, 
 documentation for Testing and Debugging your extension. 
 
 * [Package, publish, and install extensions](../publish/overview.md)
-* [Testing and debugging extensions](../test/debug-in-browser.md)
+* [Testing and debugging extensions](/previous-versions/azure/devops/docs/extend/test/debug-in-browser)

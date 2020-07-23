@@ -301,7 +301,7 @@ Use features supported by these familiar clients to manage your project and illu
 <li><a href="../organizations/settings/work/customize-process-field.md" data-raw-source="[Add and modify fields](../organizations/settings/work/customize-process-field.md)">Add and modify fields</a></li>
 <li><a href="../organizations/settings/work/customize-process-form.md" data-raw-source="[Modify the web form layout](../organizations/settings/work/customize-process-form.md)">Modify the web form layout</a></li>
 <li><a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Modify the workflow states](../organizations/settings/work/customize-process-workflow.md)">Modify the workflow states</a> </li>
-<li><a href="../organizations/settings/work/customize-process-wit.md" data-raw-source="[Add a custom work item type](../organizations/settings/work/customize-process-wit.md)">Add a custom work item type</a> </li>
+<li><a href="../organizations/settings/work/customize-process-work-item-type.md" data-raw-source="[Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)">Add a custom work item type</a> </li>
 <li><a href="../organizations/settings/work/custom-controls-process.md" data-raw-source="[Add a custom control](../organizations/settings/work/custom-controls-process.md)">Add a custom control</a> </li>
 </ul>
 
@@ -352,7 +352,7 @@ Use features supported by these familiar clients to manage your project and illu
 <img src="media/features/index-add-group.png" alt="Add custom group"/><br/><br/>
 
 <p><b>Add a custom work item type</b></p>
-<p>You can <a href="../organizations/settings/work/customize-process-wit.md" data-raw-source="[add and modify a custom work item type](../organizations/settings/work/customize-process-wit.md)">add and modify a custom work item type</a>.    </p>
+<p>You can <a href="../organizations/settings/work/customize-process-work-item-type.md" data-raw-source="[add and modify a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)">add and modify a custom work item type</a>.    </p>
 
 <p><b>Customize the workflow</b></p>
 <p>For each work item type, you can <a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[add custom workflow states to support your business tracking needs](../organizations/settings/work/customize-process-workflow.md)">add custom workflow states to support your business tracking needs</a>.    </p>
@@ -1229,7 +1229,7 @@ pipelines\tasks\build\media
 <p>Or, <a href="../test/perform-exploratory-tests.md" data-raw-source="[download and install the Test &amp;amp; Feedback extension](../test/perform-exploratory-tests.md)">download and install the Test &amp; Feedback extension</a>. Capture screenshots, annotate them, and submit bugs while you explore your web app - all directly from your Chrome browser. </p>
 
 <p><b>Record and play back manual tests</b></p>
-<p>With Azure Test Plans, you can <a href="../test/mtm/record-play-back-manual-tests.md" data-raw-source="[record your keystrokes and gestures while you test an application](../test/mtm/record-play-back-manual-tests.md)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
+<p>With Azure Test Plans, you can <a href="/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests" data-raw-source="[record your keystrokes and gestures while you test an application](/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests)">record your keystrokes and gestures while you test an application</a>. The next time you run the test, you can play back your actions quickly and accurately.</p>
 
 
 
@@ -2331,7 +2331,7 @@ Oauth 2.0 provides safe, secure access to your resources like work items, source
 <li><a href="../organizations/settings/work/customize-process-field.md" data-raw-source="[Add and modify fields](../organizations/settings/work/customize-process-field.md)">Add and modify fields</a></li>
 <li><a href="../organizations/settings/work/customize-process-form.md" data-raw-source="[Modify the web form layout](../organizations/settings/work/customize-process-form.md)">Modify the web form layout</a></li>
 <li><a href="../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Modify the workflow states](../organizations/settings/work/customize-process-workflow.md)">Modify the workflow states</a> </li>
-<li><a href="../organizations/settings/work/customize-process-wit.md" data-raw-source="[Add a custom work item type](../organizations/settings/work/customize-process-wit.md)">Add a custom work item type</a> </li>
+<li><a href="../organizations/settings/work/customize-process-work-item-type.md" data-raw-source="[Add a custom work item type](../organizations/settings/work/customize-process-work-item-type.md)">Add a custom work item type</a> </li>
 </ul>
 
 <p><b>Manage processes (Azure DevOps Services) </b></p>

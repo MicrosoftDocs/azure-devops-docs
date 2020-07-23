@@ -26,7 +26,7 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 3. Configure the default the delivery setting.
 
 > [!div class="mx-imgBorder"] 
->![Organization notification settings delivery option](media/manage-organization-notifications-settings-delivery.png)
+> ![Organization notification settings delivery option](media/manage-organization-notifications-settings-delivery.png)
 
 ## Related articles
 

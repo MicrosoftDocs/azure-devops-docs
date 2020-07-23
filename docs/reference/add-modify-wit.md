@@ -8,6 +8,7 @@ ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 01/24/2019
 ---
 

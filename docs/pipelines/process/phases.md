@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 12/05/2019
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -86,7 +86,7 @@ jobs:
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Your pipeline may have multiple stages, each with multiple jobs. In that case, use the `stages` keyword.
 
@@ -134,7 +134,7 @@ The full syntax to specify a job is:
 ```
 
 ::: moniker-end
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 If the primary intent of your job is to deploy your app (as opposed to build or test your app), then you can use a special type of job called **deployment job**.
 
@@ -174,7 +174,7 @@ To add jobs to your release pipeline, edit the pipeline in Releases page, and se
 
 Jobs can be of different types, depending on where they run.
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 # [YAML](#tab/yaml)
 
@@ -228,6 +228,13 @@ Jobs can be of different types, depending on where they run.
 
 These are the most common type of jobs and they run on an agent in an agent pool. 
 Use demands to specify what capabilities an agent must have to run your job.
+
+> [!NOTE]
+>
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
@@ -306,6 +313,19 @@ You add a server job in the editor by selecting '...' on the **Pipeline** channe
 ::: moniker range="tfs-2017"
 Server jobs are not supported in this version of TFS.
 ::: moniker-end
+
+<h3 id="agentless-tasks">Tasks supported in agentless jobs</h3>
+
+Currently only the following tasks are supported out of the box for agentless jobs:
+
+* [Delay task](../tasks/utility/delay.md)
+* [Invoke Azure function task](../tasks/utility/azure-function.md)
+* [Invoke REST API task](../tasks/utility/http-rest-api.md)
+* [Publish To Azure Service Bus task](../tasks/utility/publish-to-azure-service-bus.md)
+* [Query Azure Monitor Alerts task](../tasks/utility/azure-monitor.md)
+* [Query Work Items task](../tasks/utility/work-item-query.md)
+
+As tasks are extensible additional agentless tasks can be added through extensions.
 
 ---
 
@@ -574,7 +594,7 @@ Select the job and then specify the timeout value.
 On the Options tab, you can specify default values for all jobs in the pipeline. If you specify a non-zero value for the job timeout, then it overrides any value that is specified in the pipeline options. If you specify a zero value, then the timeout value from the pipeline options is used. If the pipeline value is also set to zero, then there is no timeout.
 
 * * *
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 > Jobs targeting Microsoft-hosted agents have [additional restrictions](../agents/hosted.md) on how long they may run.
 
@@ -807,7 +827,7 @@ YAML is not yet supported in TFS.
 #### [Classic](#tab/classic/)
 When you run a pipeline on a self-hosted agent, by default, none of the sub-directories are cleaned in between two consecutive runs. As a result, you can run incremental builds and deployments, provided that tasks are implemented to do that. However, you can override this behavior using the `Clean build` option under `Get sources` task. The options vary depending on the type of repository that you use.
 
-- [GitHub](../repos/github.md#get-the-source-code)
+- [GitHub](../repos/github.md#checkout)
 - [Azure Repos Git](../repos/azure-repos-git.md)
 - [TFVC](../repos/tfvc.md)
 

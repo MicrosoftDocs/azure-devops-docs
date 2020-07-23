@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 06/19/2020
+ms.date: 07/17/2020
 ---
 
 # Customize the workflow (Inheritance process)  
@@ -175,7 +175,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a work item type](customize-process-wit.md)
+- [Add or modify a work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md)  
 - [Customize a form](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md) 

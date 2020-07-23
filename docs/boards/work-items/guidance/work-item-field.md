@@ -9,12 +9,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 10/03/2019
+ms.date: 07/09/2020
 ---
 
 # Work item field index  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Use this index to look up a description of each field used to track work items. This reference includes all fields defined within the core system processes/process templates: [Basic](../../get-started/plan-track-work.md), [Agile](agile-process.md), [Scrum](scrum-process.md), and [CMMI](cmmi-process.md). The fields and work item types (WITs) available to you depend on the process you chose when you [created your project](../../../organizations/projects/create-project.md).
 
@@ -24,7 +24,7 @@ To support additional tracking needs, you can [define your own custom work item 
 
 ::: moniker-end  
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 
 To support additional tracking needs, you can [define your own custom work item fields](../../../organizations/settings/work/customize-process.md) using the Inheritance process model, or if your project collection is configured to use the On-premises XML process model, then see [Modify or add a custom field](../../../reference/add-modify-field.md).  
 
@@ -181,7 +181,7 @@ Values in parenthesis indicate the following:
 <li><a href="../../queries/query-by-workflow-changes.md" data-raw-source="[Reason](../../queries/query-by-workflow-changes.md)">Reason</a> (System)</li>
 <li><a href="../../queries/linking-attachments.md" data-raw-source="[Related Link Count](../../queries/linking-attachments.md)">Related Link Count</a> (System)</li>
 <li><a href="../../queries/query-numeric.md" data-raw-source="[Remaining Work](../../queries/query-numeric.md)">Remaining Work</a> </li>
-<li><a href="../../queries/linking-attachments.md#remote-link-count">Remote Link Count<sup>3</sup></a> (System)</li>
+<li><a href="../../queries/linking-attachments.md#remote-link-count">Remote Link Count<sup>4</sup></a> (System)</li>
 <li><a href="../../queries/titles-ids-descriptions.md" data-raw-source="[Repro Steps](../../queries/titles-ids-descriptions.md)">Repro Steps</a></li>
 <li><a href="cmmi/guidance-review-meeting-field-reference-cmmi.md" data-raw-source="[Required Attendee 1-8](cmmi/guidance-review-meeting-field-reference-cmmi.md)">Required Attendee 1-8</a> (CMMI)</li>
 <li><a href="cmmi/guidance-requirements-field-reference-cmmi.md" data-raw-source="[Requirement Type](cmmi/guidance-requirements-field-reference-cmmi.md)">Requirement Type</a> (CMMI)</li>
@@ -246,7 +246,8 @@ Values in parenthesis indicate the following:
 
 1. These fields are available from Azure DevOps Services and TFS 2015.1 or later versions. 
 2. The Comment Count field is available from Azure DevOps Services and TFS 2017 or later versions. 
-3. These fields are available from Azure DevOps Services only at this time.
+3. These fields are available from Azure DevOps Services and Azure DevOps Server 2020.
+4. These fields are available from Azure DevOps Services only.
 
 By using the system fields or other fields you have added to your project collection, you can enable meaningful cross-project reports and queries. In addition, any non-system field that is referenced in the workflow or forms section of the work item type definition must have a **FIELD** element that defines it in the **FIELDS** section of the work item type definition XML file. Also, you must specify any non-system field that you might want to use to generate a query or report in the **FIELDS** section.  
 

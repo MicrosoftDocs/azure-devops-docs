@@ -15,7 +15,7 @@ ms.date: 04/11/2019
 
 # Agile process 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 The Agile process supports the following work item types (WITs) to plan and track work, tests, feedback, and code review. With different WITs you can track different types of work&mdash;such as features, user stories, and tasks. These artifacts are created when you create a project using the Agile  process. They are based on Agile principles and values.  
  
@@ -110,7 +110,7 @@ As updates are made to the Agile process template, the version number is updated
 > [!div class="mx-tdCol2BreakAll"]
 > |On-premises version | Agile process name | Major version |
 > |-------------|-------------------|--------------|
-> | Azure DevOps Server 2019 | Agile | 17 |
+> | Azure DevOps Server 2020<br/>Azure DevOps Server 2019 | Agile | 17 |
 > | TFS 2018 | Agile | 16 |
 > | TFS 2017 | Agile | 15 |
 > | TFS 2015 | Agile | 7 |

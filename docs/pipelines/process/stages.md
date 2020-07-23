@@ -19,11 +19,7 @@ monikerRange: '>= tfs-2015'
 The concept of stages varies depending on whether you use YAML pipelines or classic release pipelines.
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
-
-> [!NOTE]
->
-> To use stages in YAML, [make sure the Multi-stage pipelines experience is turned on](../../project/navigation/preview-features.md).
+::: moniker range=">=azure-devops-2020"
 
 You can organize the jobs in your pipeline into stages. Stages are the major divisions in a pipeline: "build this app", "run these tests", and "deploy to pre-production" are good examples of stages. They are a logical boundary in your pipeline at which you can pause the pipeline and perform various checks.
 
@@ -57,7 +53,7 @@ and [queuing policies](#queuing-policies).
 ## Specify stages
 
 #### [YAML](#tab/yaml/)
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 In the simplest case, you do not need any logical boundaries in your pipeline. In that case, you do not have to explicitly use the `stage` keyword. You can directly specify the jobs in your YAML file.
 
@@ -156,7 +152,7 @@ for a stage in a release pipeline. You can:
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 When you define multiple stages in a pipeline, by default, they run one after the other in the order in which you define them in the YAML file. Pipelines must contain at least one stage with no dependencies.
 
@@ -249,7 +245,7 @@ You can specify the conditions under which each stage runs. By default, a stage 
 
 #### [YAML](#tab/yaml/)
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Example to run a stage based upon the status of running a previous stage:
 

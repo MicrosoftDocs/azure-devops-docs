@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 06/25/2020 
+ms.date: 07/09/2020 
 ---
 
 
@@ -128,10 +128,14 @@ What rules should you apply to highlight work items? Here are a few examples and
 
 By showing a field on a card, you can edit that field directly on the board without having to open the card, unless it's a read-only field, such as the Change By and Changed Date fields. You can also customize the cards that appear on the Kanban board for features and epics. You follow similar steps, however you start from the [corresponding portfolio backlog](../../boards/backlogs/define-features-epics.md).  
 
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]  
+> To show the parent work item, choose the Parent field. You can't change the Parent field from the card. Instead, choosing that field opens the parent work item. You can also filter your board based on parent work items, whether the Parent field is added to cards or not.  
+::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
  
-As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work//add-custom-field.md). 
+As a first step, you'll see that you can determine which fields appear on each card type. To add a custom field, you must first [add it to the process used to customize the project](../../organizations/settings/work/add-custom-field.md). 
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2015 < azure-devops-2019"  
@@ -338,7 +342,7 @@ As shown in the following examples, the **Task** and **Test** annotations indica
 > [!div class="mx-tdBreakAll"]  
 > | Task annotations  |Test annotations  |No annotations |
 > |-------------|----------|----------|    
-> |<img src="media/annotate-task.png" alt="Task annotations enabled" style="border: 1px solid #C3C3C3;" /> | <img src="media/annotate-test.png" alt="Test annotations enabled" style="border: 1px solid #C3C3C3;" />  | <img src="media/annotate-none.png" alt="Annotations disabled" style="border: 1px solid #C3C3C3;" /> | 
+> |![Task annotations enabled](media/annotate-task.png) | ![Test annotations enabled](media/annotate-test.png) | ![Annotations disabled](media/annotate-none.png) | 
 
 To learn more about using these features, see [Add task checklists](../../boards/boards/add-task-checklists.md) and [Add, run, and update inline tests](../../boards/boards/add-run-update-tests.md).  
 
@@ -356,6 +360,8 @@ To learn more about using these features, see [Add task checklists](../../boards
 ::: moniker range=">= tfs-2017"  
 
 ### Enable or disable an annotation
+
+When you disable an annotation, you also disable the feature to add the associated object from the Kanban board. For example, if you disable the Tests annotation, you disable the ability to add tests from the Kanban board. 
 
 ::: moniker-end
 

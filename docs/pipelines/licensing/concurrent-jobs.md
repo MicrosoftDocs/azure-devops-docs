@@ -22,8 +22,6 @@ For each _parallel job_ in Azure Pipelines, you can run a single job at a time i
 ::: moniker-end
 
 
-
-
 ::: moniker range="< azure-devops-2019"
 
 This article describes the licensing model for Azure Pipelines in Team Foundation Server 2017 (TFS 2017) or newer. We don't charge you for Team Foundation Build (TFBuild) so long as you have a TFS Client Access License (CAL).

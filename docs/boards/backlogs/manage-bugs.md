@@ -8,12 +8,12 @@ ms.assetid: 6E5710EE-21C8-4264-AD65-A827D186F134
 ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
-ms.date: 07/22/2019
+ms.date: 07/09/2020
 ---
 
 # Define, triage, and manage bugs
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 How do you track and manage defects in your code? How do you make sure software problems and customer feedback get addressed in a timely manner to support high-quality software deployments? And, how do you do this while making good progress on new features? 
 
@@ -277,7 +277,7 @@ Choose the **Verify** option to re-run tests which identified the bug. (Requires
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2017"  
-<img src="../media/verify-bug-menu-option.png" alt="Bug work item form, Actions menu, Verify option" style="border: 1px solid #C3C3C3;" />  
+![Bug work item form, Actions menu, Verify option](../media/verify-bug-menu-option.png)  
 
 To learn more about running test from the web portal, see [Run tests for web apps](../../test/run-manual-tests.md).
 ::: moniker-end  
@@ -350,12 +350,12 @@ You can use Power BI to create more complex reports than what you can get from a
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 
 ### Pre-defined SQL Server bug reports
 
-If you work from an on-premises Azure DevOps Server or TFS and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
+If you work from an on-premises Azure DevOps Server and you have SQL Server Analysis Services and SQL Server Reporting Services configured for your project, you have access to the following reports (Agile and CMMI processes only).  
 
 - [Bug Status](../../report/sql-reports/bug-status-report.md)  
 - [Bug Trends](../../report/sql-reports/bug-trends-report.md)  

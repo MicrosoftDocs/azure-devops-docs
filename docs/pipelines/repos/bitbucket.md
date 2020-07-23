@@ -4,7 +4,7 @@ description: Using a BitBucket Cloud repository with Azure Pipelines
 ms.topic: reference
 ms.author: vijayma
 author: vijayma
-ms.date: 03/29/2020
+ms.date: 07/07/2020
 monikerRange: azure-devops
 ---
 
@@ -16,7 +16,7 @@ Azure Pipelines can automatically build and validate every pull request and comm
 
 BitBucket and Azure Pipelines are two independent services that integrate well together. Your BitBucket Cloud users do not automatically get access to Azure Pipelines. You must add them explicitly to Azure Pipelines.
 
-## Choose a repository to build
+## Access to BitBucket repositories
 
 # [YAML](#tab/yaml/)
 
@@ -202,20 +202,21 @@ For included branches, a build will be triggered on each push to a pull request 
 
 ---
 
-## Pricing
-
-Azure Pipelines is free for BitBucket Cloud repositories, with multiple free offerings available depending on whether your BitBucket repository is public or private.
-
-If your BitBucket repository is open source, you can make your Azure DevOps project **public** so that anyone can view your pipeline's build results, logs, and test results without signing in. When users outside your organization fork your repository and submit pull requests, they can view the status of builds that automatically validate those pull requests. If both your BitBucket repository and your pipeline are public, you can run up to 10 parallel jobs in Azure Pipelines for free. These free jobs have a maximum timeout of 360 minutes (6 hours) each.
-
-If either your BitBucket repository or your pipeline is private, we still provide a free tier. In this tier, you can run one free parallel job that can run up to 60 minutes each time until you've used 1800 minutes per month. When the free tier is no longer sufficient, you can purchase additional Microsoft-hosted parallel jobs.
-
-Learn more about pricing based on [parallel jobs](../licensing/concurrent-jobs.md).
-
 ## FAQ
 
-[!INCLUDE [qa](includes/qa1.md)]
+Problems related to BitBucket integration fall into the following categories:
+
+* **[Failing triggers](#failing-triggers):** My pipeline is not being triggered when I push an update to the repo.
+* **[Wrong version](#wrong-version):** My pipeline runs, but it is using an unexpected version of the source/YAML.
+
+### Failing triggers
 
 [!INCLUDE [qa](includes/qa2.md)]
 
+* Webhooks are used to communicate updates from BitBucket to Azure Pipelines. In BitBucket, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist.
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+### Wrong version
+
+[!INCLUDE [qa](includes/qa1.md)]
