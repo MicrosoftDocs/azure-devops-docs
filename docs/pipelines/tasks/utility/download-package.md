@@ -4,7 +4,7 @@ description: Download a package from a Package Management feed in Azure Artifact
 ms.topic: reference
 ms.assetid: 8d6e8f7e-267d-442d-8c92-1f586864c62f
 ms.custom: seodec18
-ms.date: 12/07/2018
+ms.date: 07/23/2020
 monikerRange: 'azure-devops'
 ---
 
@@ -43,7 +43,7 @@ Requires the Package Management extension.
 
 ## Examples
 
-### Download a nuget package from an organization-scoped feed and extract to destination directory
+### Download a NuGet package from an organization-scoped feed and extract to destination directory
 
 ```YAML
 # Download an artifact with id 'cfe01b64-ded4-47b7-a569-2ac17cbcedbd' to $(System.ArtifactsDirectory)
@@ -73,14 +73,14 @@ Requires the Package Management extension.
 
 ## FAQ
 
-### How do I find the id of the feed (or project) I want to download my artifact from
+### How do I find the ID of the feed (or project) I want to download my artifact from
 
-The get feed api can be used to retrieve the feed and project id for your feed. The api is documented [here](https://go.microsoft.com/fwlink/?linkid=2099537).
+The get feed api can be used to retrieve the feed and project ID for your feed. The api is documented [here](https://go.microsoft.com/fwlink/?linkid=2099537).
 
-### Can I use the project or feed name instead of ids
+### Can I use the project or feed name instead of IDs
 
 Yes, you can use the project or feed name in your definition, however if your project or feed is renamed in the future, your task will also have to be updated or it might fail.
 
-## Open source
+## Open-source
 
 This task is open source [on GitHub](https://github.com/Microsoft/azure-pipelines-tasks). Feedback and contributions are welcome.
