@@ -14,8 +14,7 @@ ms.date: 11/19/2018
 
 # Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 
-**Azure Boards | Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
-
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 <a id="follow"></a>  
 
