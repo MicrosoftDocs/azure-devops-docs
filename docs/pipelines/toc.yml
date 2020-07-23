@@ -21,7 +21,7 @@
   - name: Multi-stage pipelines user experience
     href: get-started/multi-stage-pipelines-experience.md
   - name: Pipelines with PowerShell DSC
-    href: get-started/dscCiCd.md
+    href: get-started/dsc-cicd.md
 # - name: Clean up pipeline steps
 #   href: get-started/pipelines-get-started.md
 - name: Pipeline basics
