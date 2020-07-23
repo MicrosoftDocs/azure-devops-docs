@@ -281,7 +281,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
-## WIT customizations 
+## Work item type (WIT) customizations 
 
 Here are your customization options for inherited and custom WITs. 
 
