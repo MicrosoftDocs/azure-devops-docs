@@ -40,10 +40,10 @@
     - name: GitHub Enterprise Server
       href: repos/github-enterprise.md
       displayName: github enterprise, ci, pr, pull request, triggers, oauth, pat, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, classic, yaml, ip address range
-    - name: BitBucket Cloud
+    - name: Bitbucket Cloud
       href: repos/bitbucket.md
       displayName: ci, pr, pull request, triggers, self, batching, batched CI, oauth, public project, private project, skip ci, no_ci, build.reason, path filter, branch filter, badge, prefergitfrompath, checkout, clone, fetch, get sources, clean, label sources, tag sources, checkout path, submodules, shallow fetch
-    - name: BitBucket Server
+    - name: Bitbucket Server
       href: repos/on-premises-bitbucket.md
       displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, other git, external git, service connection, ip address range
     - name: TFVC

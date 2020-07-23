@@ -551,7 +551,7 @@ For more information about steps, see the schema references for:
 
 - [Script](#script)
 - [Bash](#bash)
-- [Pwsh](#pwsh)
+- [pwsh](#pwsh)
 - [PowerShell](#powershell)
 - [Checkout](#checkout)
 - [Task](#task)
@@ -1777,7 +1777,7 @@ steps:
 Learn more about [conditions](process/conditions.md?tabs=yaml),
 [timeouts](process/phases.md?tabs=yaml#timeouts), and [step targets](process/tasks.md#step-target).
 
-## Pwsh
+## pwsh
 
 The `pwsh` keyword is a shortcut for the [PowerShell task](tasks/utility/powershell.md) when that task's **pwsh** value is set to **true**.
 The task runs a script in PowerShell Core on Windows, macOS, and Linux.
