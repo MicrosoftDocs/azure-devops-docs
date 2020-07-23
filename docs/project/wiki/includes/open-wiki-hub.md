@@ -35,7 +35,15 @@ az devops wiki show --wiki
 - **--subscription**: Optional. Name or ID of subscription. You can configure the default subscription using `az account set -s NAME_OR_ID`.
 
 ::: moniker-end
-[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range="azure-devops-2020"
+
+> [!NOTE]   
+> For Azure DevOps Server 2020, you can use the following command to set the default server instance, collection, and project.  
+> `az devops configure --defaults organization=https://ServerName/CollectionName project=ContosoWebApp`
+
+::: moniker-end
+
 ::: moniker range=">= azure-devops-2020"
 
 ### Example
