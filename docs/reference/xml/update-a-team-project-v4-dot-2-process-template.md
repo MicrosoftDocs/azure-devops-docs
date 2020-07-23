@@ -259,7 +259,7 @@ You can grant permissions by following the procedures that are indicated for the
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
 > [!NOTE]    
-> Microsoft Test Manager is in the process of being deprecated. The web portal **Test** pages for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use **Test** over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from **Test**. To learn more, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/docs/test/mtm/guidance-mtm-usage). 
+> Microsoft Test Manager is in the process of being deprecated. The web portal **Test** pages for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use **Test** over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from **Test**. To learn more, see [Guidance on Microsoft Test Manager usage](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/guidance-mtm-usage?view=azure-devops). 
 
 
 <a id="additional_info" /> 
