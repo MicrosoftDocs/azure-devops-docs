@@ -16623,6 +16623,11 @@
     "source_path": "docs/report/powerbi/test-topic-azdevops-2019-only.md",
     "redirect_url": "/azure/devops/report/powerbi/sample-odata-overview",
     "redirect_document_id": false
+},
+{
+    "source_path": "docs/organizations/settings/work/customize-process-wit.md ",
+    "redirect_url": "/azure/devops/organizations/settings/work/customize-process-work-item-type",
+    "redirect_document_id": false
 }
  ]
 }
