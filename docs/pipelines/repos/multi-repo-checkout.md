@@ -213,7 +213,7 @@ resources:
     - release
 ```
 
-The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior in your `checkour` tasks.
+The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior during `checkout`.
 
 | Change made to | Pipeline triggered | Version of YAML | Version of `self` | Version of `A` | Version of `B` |
 |----------------|--------------------|-----------------|-------------------|----------------|----------------|
