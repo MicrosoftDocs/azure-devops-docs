@@ -52,8 +52,9 @@
     - name: Subversion
       href: repos/subversion.md
       displayName: ci, triggers, checkout, firewall, whitelist, exception, rule, service connection, ip address range
-    - name: Multi-repo checkout
+    - name: Multiple repositories
       href: repos/multi-repo-checkout.md
+      displayName: ci, pr, pull request, triggers, checkout, branch policy, path filter, branch filter, tag trigger, multiple repos, multi-repo, multi-checkout, multi-trigger, repo resource, repository resource, self
   - name: Triggers
     items:
     - name: Types of triggers

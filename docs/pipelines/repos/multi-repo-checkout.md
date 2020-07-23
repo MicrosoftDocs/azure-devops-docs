@@ -1,12 +1,12 @@
 ---
-title: Check out multiple repositories in your pipeline
+title: Use multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.date: 07/22/2020
 monikerRange: "> azure-devops-2019"
 ---
 
-# Check out multiple repositories in your pipeline
+# Use multiple repositories in your pipeline
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
@@ -62,7 +62,7 @@ resources:
     name: OtherProject/MyAzureReposGitRepo
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -151,7 +151,7 @@ The trigger for `self` repository can be defined in a `trigger` section at the r
 
 ```yaml
 trigger:
-- master
+- main
 
 steps:
 ...
@@ -164,7 +164,7 @@ resources:
     type: git
     name: MyProject/MyGitRepo
     trigger:
-    - master
+    - main
 
 steps:
 ...
@@ -192,7 +192,7 @@ Consider the following example, where the `self` repository contains the YAML fi
 
 ```yaml
 trigger:
-- master
+- main
 - feature
 
 resources:
@@ -200,16 +200,16 @@ resources:
   - repository: A
     type: git
     name: MyProject/A
-    ref: master
+    ref: main
     trigger:
-    - master
+    - main
 
   - repository: B
     type: git
     name: MyProject/B
     ref: release
     trigger:
-    - master
+    - main
     - release
 ```
 
@@ -217,11 +217,13 @@ The following table shows which versions are checked out for each repository by 
 
 | Change made to | Pipeline triggered | Version of YAML | Version of `self` | Version of `A` | Version of `B` |
 |----------------|--------------------|-----------------|-------------------|----------------|----------------|
-| `master` in `self` | Yes | commit from `master` that triggered the pipeline | commit from `master` that triggered the pipeline | latest from `master` | latest from `release` |
-| `feature` in `self` | Yes | commit from `feature` that triggered the pipeline | commit from `feature` that triggered the pipeline | latest from `master` | latest from `release` |
-| `master` in `A` | Yes | latest from `master` | latest from `master` | commit from `master` that triggered the pipeline | latest from `release` |
-| `master` in `B` | Yes | latest from `master` | latest from `master` | latest from `master` | commit from `master` that triggered the pipeline |
-| `release` in `B` | Yes | latest from `master` | latest from `master` | latest from `master` | commit from `release` that triggered the pipeline |
+| `main` in `self` | Yes | commit from `main` that triggered the pipeline | commit from `main` that triggered the pipeline | latest from `main` | latest from `release` |
+| `feature` in `self` | Yes | commit from `feature` that triggered the pipeline | commit from `feature` that triggered the pipeline | latest from `main` | latest from `release` |
+| `main` in `A` | Yes | latest from `main` | latest from `main` | commit from `main` that triggered the pipeline | latest from `release` |
+| `main` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `main` that triggered the pipeline |
+| `release` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `release` that triggered the pipeline |
+
+You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
 
 ## FAQ
 
