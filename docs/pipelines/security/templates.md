@@ -42,7 +42,7 @@ resources:
   - repository: templates
     type: git
     name: MyProject/MyTemplates
-    ref: tags/v1
+    ref: refs/tags/v1
 
 extends:
   template: template.yml@templates

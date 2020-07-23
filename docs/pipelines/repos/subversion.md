@@ -62,4 +62,4 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### The checkout step fails with the error that the server cannot be resolved.
 
-Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your BitBucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
+Do you use Microsoft-hosted agents? If so, these agents may not be able to reach your Bitbucket server. See [Not reachable from Microsoft-hosted agents](#not-reachable-from-microsoft-hosted-agents) for more information.
