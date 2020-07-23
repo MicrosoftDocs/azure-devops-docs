@@ -9,7 +9,7 @@ ms.date: 02/19/2020
 
 ## Help and support
 
-* See our [troubleshooting](../../troubleshooting/troubleshooting.md) page.
+* See our [troubleshooting](../../troubleshooting/troubleshooting.md) page
 * Get advice on [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-devops),
-  and get support via our [Support](https://azure.microsoft.com/support/devops/) page.
+  and get support via our [Support](https://azure.microsoft.com/support/devops/) page
 
