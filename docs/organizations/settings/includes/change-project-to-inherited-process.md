@@ -1,8 +1,9 @@
 ---
-ms.topic: include
+ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
-ms.date: 07/17/2020
+ms.topic: include
+ms.date: 07/20/2020
 ---
 
 <a id="change-inherited-process"></a>

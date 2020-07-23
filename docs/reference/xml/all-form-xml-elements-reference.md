@@ -8,6 +8,7 @@ ms.assetid: 07E12386-621F-4749-BF75-F753B710393B
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 03/02/2017
 ---
 

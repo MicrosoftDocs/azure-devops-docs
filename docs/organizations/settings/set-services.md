@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= azure-devops-2019'  
-ms.date: 11/21/2019
+ms.date: 07/20/2020
 ---
 
 # Turn a service on or off
@@ -26,7 +26,7 @@ You can control which services are available through the web portal by turning a
 - As an organization owner or member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - You must have a project defined. If you don't have one, [add one now](../projects/create-project.md).
 - As a member of the Project Administrators group, you can change policies and change project information. If you're not [a member get added as one](../security/set-project-collection-level-permissions.md#project-level).
 - 
@@ -70,7 +70,7 @@ If you disable **Boards**, you also disable [**Analytics views**](../../report/p
 - [About user, team, project, and organization-level settings](about-settings.md)
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - [About projects and scaling the organization](../projects/about-projects.md)  
 - [About user, team, project, and collection-level settings](about-settings.md)
 ::: moniker-end

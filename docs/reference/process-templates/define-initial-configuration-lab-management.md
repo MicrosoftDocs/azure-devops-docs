@@ -7,6 +7,7 @@ ms.assetid: cd34554f-1ab8-450d-b997-942e7a2352cf
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
+monikerRange: '< tfs-2018' 
 ms.date: 09/08/2017
 ---
 

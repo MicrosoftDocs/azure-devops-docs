@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 04/16/2020
+ms.date: 07/20/2020
 ---
 
 # About teams and Agile tools
@@ -39,7 +39,7 @@ Each team you create gets access to a suite of Agile tools and team assets. Thes
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!NOTE] 
 > In addition to team dashboards, you can add a project dashboard which isn't specific to any one team. To learn how, see [Add, rename, and delete dashboards](../../report/dashboards/dashboards.md). 
@@ -156,7 +156,7 @@ When you add a team, a security group is automatically created with the team nam
 
 ::: moniker range=">= tfs-2017"
 
-You can also use the <strong>@mention</strong> control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
+You can also use the **@mention** control within discussions and pull requests to notify all members of a team. Start entering the name of a team or a security group, select the search icon, and then select from the options listed. To learn more, see [Use &#64;mentions to further discussion](../../notifications/at-mentions.md).  
 
 ::: moniker-end
 
@@ -176,6 +176,7 @@ You can choose to limit access to select features by making a user a [Stakeholde
 
 
 ## Summary 
+
 - Every team owns their own backlog, to create a new backlog you [create a new team](../../organizations/settings/add-teams.md) 
 - Every backlog has a corresponding [Kanban board](../../boards/boards/kanban-basics.md) you can use to track progress and update status  
 - The team's specified area and iteration paths determine which work items appear on the backlog and Kanban board&mdash;you can easily decide to include or exclude work items under a specific area path   

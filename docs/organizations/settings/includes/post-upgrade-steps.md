@@ -13,6 +13,6 @@ The upgrade makes a best-effort attempt to reconcile the system process and the 
 - [Custom rules](/azure/devops/organizations/settings/work/custom-rules): You can recreate select rules as needed. Note, however, there is not a one-to-one mapping of rules defined in a Hosted XML process model and those for an inherited process. Specifically:   
 	- Some rules are already defined in the system process or auto-generated (e.g. certain system fields such as Changed By, Change Date, Closed By, Closed Date)  
 	- Some rules are now specified as field attributes (default, required)  
-- [Disable work item types](/azure/devops/organizations/settings/work/customize-process-wit#enable-disable)
+- [Disable work item types](/azure/devops/organizations/settings/work/customize-process-work-item-type#enable-disable)
 - [Hide inherited fields or controls](/azure/devops/organizations/settings/work/customize-process-field#show-hide-or-remove-a-field)
 - [Custom controls](/azure/devops/organizations/settings/work/custom-controls-process): verify that custom controls are applied as expected; disable or hide unwanted [groups or page extensions](/azure/devops/organizations/settings/work/custom-controls-process#group-level-and-page-level-contributions).

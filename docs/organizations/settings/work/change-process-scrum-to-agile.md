@@ -48,7 +48,7 @@ Reasons you might want to change your process from Scrum to Agile:
 
 1. [Create a custom process](./manage-process.md) under Agile called "Agile - Inherited".
 
-2. If the Product Backlog Item and Impediment work item types are used in your current Scrum-based project, you need to [add these work item types](./customize-process-wit.md) to the "Agile - Inherited" process.
+2. If the Product Backlog Item and Impediment work item types are used in your current Scrum-based project, you need to [add these work item types](./customize-process-work-item-type.md) to the "Agile - Inherited" process.
 
    You don't have to add any details to these work item types as you'll be changing them later to User Story and Issue. However, if you have captured details within a field&mdash;such as Effort, Priority, or other field&mdash;then add those fields to the work item types.
 
@@ -81,7 +81,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/scrum-to-agile/step-2-retry.png)
 
-   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-wit.md).
+   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-work-item-type.md).
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
@@ -186,14 +186,14 @@ After changing the process, you may want to make additional updates as follows:
 
 - [Change the project name](../../../organizations/projects/rename-project.md)
 - [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
-- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-wit.md#enable-disable)
+- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable)
 
 ## Related articles
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
-- [Add and manage work item types](./customize-process-wit.md)
+- [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 - [Customize your boards](../../../boards/get-started/customize-boards.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)

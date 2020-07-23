@@ -141,7 +141,7 @@ We recommend that you create a test project and apply your customized  inherited
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 
 > Or
-> [Add or manage fields](customize-process-wit.md)
+> [Add or manage fields](customize-process-work-item-type.md)
 
 ## Related articles  
 
