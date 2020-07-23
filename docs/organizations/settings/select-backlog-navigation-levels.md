@@ -32,7 +32,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 
 ::: moniker range="tfs-2015" 
 > [!NOTE]    
-> **Feature availability**: The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
+> The team setting for choosing which backlog levels is available for TFS 2015 and later versions. For TFS 2013, the Feature portfolio backlog level is enabled for all teams.  
 ::: moniker-end
 
 [!INCLUDE [temp](includes/prerequisites-team-settings.md)]
@@ -41,7 +41,7 @@ If you want additional portfolio backlogs, see [Add portfolio backlogs](../../re
 
 ## Set your team's preferences for backlog levels
 
-Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. Go [here to get added as a team administrator](add-team-administrator.md).
+Because this setting affects all team members' view of the team backlogs and boards, you must be a team administrator to change the setting. Changing the setting is disabled if you're not a team administrator. To get added as a team administrator, see [Add team administrator](add-team-administrator.md).
 
 You can change the setting from a backlog or board view. Here we show how to change it from the board view.
 
