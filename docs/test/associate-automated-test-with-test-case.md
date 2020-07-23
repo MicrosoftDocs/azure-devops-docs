@@ -58,7 +58,7 @@ parameters are for manual tests only.
 [Add files to the server](../repos/tfvc/add-files-server.md)
 and [Continuous integration on any platform](../pipelines/overview.md).
 For more information about action recordings and coded UI tests, see 
-[Recording and Playing Back Manual Tests](/previous-versions/azure/devops/docs/test/mtm/record-play-back-manual-tests)
+[Recording and Playing Back Manual Tests](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/record-play-back-manual-tests?view=azure-devops)
 and [Use UI Automation To Test Your Code](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).
 
 <a name="add-test"></a>
