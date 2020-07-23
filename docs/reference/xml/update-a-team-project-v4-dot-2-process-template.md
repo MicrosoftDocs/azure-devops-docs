@@ -6,12 +6,15 @@ ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '<= tfs-2017'
 ms.date: 12/15/2017
 ---
 
 # Update a project based on a MSF v4.2 process template 
 
 **TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+
 
 > [!IMPORTANT]  
 > This topic applies to project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   

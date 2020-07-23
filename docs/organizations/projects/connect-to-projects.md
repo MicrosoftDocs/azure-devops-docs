@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2013'
 
 # Quickstart: Connect to a project in Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
@@ -48,10 +48,15 @@ A project defines a process and data storage in which you manage your software p
    <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
    ::: moniker-end
 
-   ::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+   ::: moniker range=">= azure-devops-2019 < azure-devops" 
+   <pre><code>http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i></code></pre> 
+
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
+   ::: moniker-end
+   ::: moniker range=">= tfs-2013 < azure-devops-2019" 
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
 
    The default Port is 8080. If you don't use default values, specify the port number and directory for your server.
    ::: moniker-end

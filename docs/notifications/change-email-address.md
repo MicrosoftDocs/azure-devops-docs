@@ -1,4 +1,4 @@
-﻿---
+---
 title: Change your preferred notification email address
 titleSuffix: Azure DevOps
 description: Change the email address used to receive alerts or email  notifications managed in Azure DevOps or Team Foundation Server (TFS)
@@ -21,10 +21,11 @@ You can change your preferred email address for notifications from your organiza
 
 ::: moniker range="azure-devops"
 
-> [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
+
+> [!NOTE]   
+> To enable the new user interface for the New account manager, see [Enable preview features](../project/navigation/preview-features.md).
 
 1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
 
@@ -45,12 +46,12 @@ You can change your preferred email address for notifications from your organiza
 
    ![Edit the About page](../organizations/settings/media/edit-about-page.png)
 
-::: moniker-end
-
 * * *
 
+::: moniker-end
 
-::: moniker range="= azure-devops-2019"
+
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 1. To change your preferred email address, open your organization menu and select **My profile**.
 
@@ -59,6 +60,7 @@ You can change your preferred email address for notifications from your organiza
 2. From your profile and information page, select **Edit profile**.
 
 3. Update the address and select **Save changes**.
+
 ::: moniker-end
 
 ::: moniker range="<= tfs-2018"

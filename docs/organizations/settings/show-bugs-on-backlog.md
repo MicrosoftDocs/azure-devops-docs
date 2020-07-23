@@ -7,7 +7,7 @@ ms.assetid: 27DCB879-30F6-44F3-998A-755DF66D6E24
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 06/24/2020
+ms.date: 07/20/2020
 ---
 
 # Show bugs on backlogs and boards  
@@ -16,7 +16,7 @@ ms.date: 06/24/2020
 
 As your team identifies code defects or bugs, they can add them to the backlog and track them similar to requirements. Or, they can schedule them to be fixed within a sprint along with other tasks. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 > [!NOTE]
 > You can define this team setting for the [Agile](/azure/devops/boards/work-items/guidance/agile-process), [Scrum](/azure/devops/boards/work-items/guidance/scrum-process), and [CMMI](/azure/devops/boards/work-items/guidance/cmmi-process) processes. The Bug work item type isn't defined for the [Basic](../../boards/get-started/track-issues-tasks.md) process, so there isn't a team setting for Basic. Instead, you should track bugs and code defects using the Issue work item type. 

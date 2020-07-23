@@ -22,7 +22,7 @@ Rollup provides summed values of select fields for all child work items of a par
 
 ## Native support of rollup within the web portal 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Azure Boards supports rollup columns on product and portfolio backlogs, rollup within the sprint Planning pane, as well as rollup on sprint backlogs and taskboards. 
 
@@ -49,7 +49,7 @@ In addition, you can view rollup of Remaining Work from a sprint backlog or task
 
 ::: moniker-end 
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 You can view rollup of Remaining Work from a sprint backlog or task board.  
 
@@ -57,7 +57,7 @@ You can view rollup of Remaining Work from a sprint backlog or task board.
 
 From the sprint backlog, the sum of all **Remaining Work** defined for all tasks is displayed for the parent work item. This value also displays on the parent work item card when you view the task board.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint backlog displays rollup of Remaining Work](media/rollup/remaining-work-rollup-s155.png )
@@ -82,7 +82,7 @@ From a sprint task board, there are three types of rollup:
 - The sum of all Remaining Work defined for all tasks within a column displays at the top of each column
 - The sum of all Remaining Work defined for all tasks for a backlog item displays within each row, grouped by column.      
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Sprint Taskboard displays rollup of Remaining Work](media/rollup/taskboard-remaining-work-s155.png )
@@ -191,7 +191,7 @@ You can use the [Analytics Service](../../report/powerbi/what-is-analytics.md) t
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 ## SQL Server Reporting Services report  
 
