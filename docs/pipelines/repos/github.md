@@ -33,7 +33,7 @@ Azure DevOps' structure consists of **organizations** that contain **projects**.
 
 Azure DevOps can reflect your GitHub structure with:
 * An Azure DevOps **organization** for your GitHub **organization or user account**
-* Azure DevOps **projects** for your GitHub **repositories**
+* Azure DevOps **Projects** for your GitHub **repositories**
 
 ![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
