@@ -22,7 +22,7 @@ Consider using Visual Studio to associate automated tests with a test case when:
   in the settings of the [Visual Studio Test](../pipelines/tasks/test/vstest.md) task.
   Automated tests can also be run from [!INCLUDE [test-hub-include](includes/test-hub-include.md)].
   If you are using XAML builds you can also
-  [run these automated tests by using Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager?view=azure-devops).
+  [run these automated tests by using Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/run-automated-tests-with-microsoft-test-manager).
 
 * You want to enable end-to-end traceability of requirements.
   If your test cases are linked to requirements or user stories,
