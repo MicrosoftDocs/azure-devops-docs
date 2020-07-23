@@ -139,14 +139,14 @@ IntelliTrace, and Test Impact data in addition to the data items listed above,
 you must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)
 and other run settings in Microsoft Test Manager and run your 
 tests using Microsoft Test Manager. For more details, see 
-[Run manual tests with Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager?view=azure-devops).
+[Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 <p />
 
 > [!NOTE]
 > If you have an older version of Microsoft Test Manager, we recommend you upgrade to the latest version.
 > However, if you have Microsoft Test Manager 2015 or an earlier version installed, you can choose **Microsoft Test Runner 2015 and earlier** when you launch the test runner using **Run with options**.
 > You must [configure the data collectors](/previous-versions/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) and other run settings in Microsoft Test Manager and specify these as the default settings for the test plan.
-> For more details, see [Run manual tests with Microsoft Test Manager](https://docs.microsoft.com/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager?view=azure-devops).
+> For more details, see [Run manual tests with Microsoft Test Manager](/previous-versions/azure/devops/test/mtm/plan-manual-tests-with-microsoft-test-manager).
 
 ## See also
 
