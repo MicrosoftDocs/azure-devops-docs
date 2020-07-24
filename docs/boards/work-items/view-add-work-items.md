@@ -308,7 +308,7 @@ Use the following three controls to manage your views in the web portal.
 
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)
-- [Enable preview features](../../project/navigation/preview-features.md)
+- [Manage or enable features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Work across projects](../../project/navigation/work-across-projects.md)
