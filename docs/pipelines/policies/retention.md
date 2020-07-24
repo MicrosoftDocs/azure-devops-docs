@@ -222,6 +222,9 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 > [!NOTE]
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
 
+> [!div class="mx-imgBorder"]
+> ![delete a run](media/delete-a-run.png)
+
 ::: moniker-end
 
 <a id="release"></a>
