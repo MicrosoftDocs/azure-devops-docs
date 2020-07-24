@@ -6,8 +6,8 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 12/30/2019
 monikerRange: '>= tfs-2015'
+ms.date: 07/24/2020 
 ---
 
 # Change your preferred email address for notifications

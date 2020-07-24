@@ -7,8 +7,8 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019 
 monikerRange: '>= tfs-2017'
+ms.date: 07/24/2020 
 ---
 
 # Access notification settings
@@ -98,7 +98,7 @@ https://dev.azure.com/{organization}/{project}/_settings/notifications
 ```
 
 > [!div class="mx-imgBorder"]  
->![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
+> ![Navigate to team notifications page](media/nav-team-notifications-hub-newnav.png)  
 
 ::: moniker-end
 
@@ -109,29 +109,58 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 ```
 
 > [!div class="mx-imgBorder"] 
->![Navigate to team notifications page](media/nav-team-notifications-hub.png)
+> ![Navigate to team notifications page](media/nav-team-notifications-hub.png)
 
 > [!div class="mx-imgBorder"] 
->![View team level notifications page](media/view-team-notification-hub.png)
+> ![View team level notifications page](media/view-team-notification-hub.png)
 
    ::: moniker-end
 
 <a id="open-org-level" />
 
+## Open Global notifications
 
-## Open organization-level notifications
+::: moniker range="azure-devops" 
 
-Enter the following URL to reach the organization-level notifications page, replacing {organization} with your organization's name. 
 
-::: moniker range=">= azure-devops-2019" 
+1. Enter the following URL to reach the organization-level notifications page, replacing *OrganizationName* with your organization's name. 
 
-```URL
-https://dev.azure.com/{organization}/_settings/notifications
-```
+	```URL
+	https://dev.azure.com/OrganizationName/_settings/notifications
+	```
 
-![Navigate to organization notifications page](media/nav-organization-notifications-hub-newnav.png) 
+	Or, choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: project icon and then choose **Organization settings**. 
+
+	:::image type="content" source="../media/settings/open-org-settings-s172.png" alt-text="Open Organization settings":::
+
+1. Choose **Global Notifications**.  
+
+	:::image type="content" source="media/nav-ui/org-notifications-s172.png" alt-text="Open Global Notifications":::
 
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2019 < azure-devops" 
+
+## Open collection-level notifications
+
+Enter the following URL to reach the organization-level notifications page, replacing *ServerName* and *CollectionName* with your instance name. 
+
+1. Enter the following URL to reach the organization-level notifications page, replacing *OrganizationName* with your organization's name. 
+
+	```URL
+	http://ServerName/CollectionName/_settings/notifications?view=defaultSubscriptions
+	```
+
+	Or, choose the :::image type="icon" source="../media/icons/project-icon.png" border="false"::: project icon and then choose **Collection settings**. 
+
+	:::image type="content" source="../media/settings/open-collection-settings-2020.png" alt-text="Open Collection settings":::
+
+1. Choose **Global Notifications**.  
+
+	:::image type="content" source="media/nav-ui/collection-notifications-2020.png" alt-text="Open Global Notifications":::
+
+::: moniker-end
+
 
 ::: moniker range="<= tfs-2018" 
 
