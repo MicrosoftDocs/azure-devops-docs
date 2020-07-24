@@ -93,7 +93,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -119,7 +119,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. You may want to add the Iteration Path to the set of columns that appear on your backlog. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -221,7 +221,7 @@ Multi-select of backlog work items requires TFS 2015.1 or later version.
 
 ::: moniker range=">= tfs-2015"  
 
-To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (![actions icon](../media/icons/actions-icon.png)) menu of one of the items. 
+To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint, or select an option from the context (![context icon](../media/icons/context_menu.png)) or action (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) menu of one of the items. 
 
 To learn more, see [Bulk modify work items](../backlogs/bulk-modify-work-items.md). 
 
