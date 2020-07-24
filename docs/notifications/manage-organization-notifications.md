@@ -11,7 +11,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 07/24/2020 
 ---
 
-# # Manage Global notification
+# Manage Global notifications
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
@@ -35,14 +35,6 @@ Global notifications manage notifications for all projects defined for an organi
 > You can send an email to all collections in an application tier. See [Configure an SMTP server and customize email for alerts and feedback requests](/azure/devops/server/admin/setup-customize-alerts). 
 ::: moniker-end
 
-
-::: moniker range="< azure-devops"
-
-> [!TIP]
-> We don't support organization-wide notifications. As an alternative, you can provide an email distribution list that goes to your entire organization. 
-> 
-::: moniker-end
-
 ## Global notifications
 
 Open the Global notifications page as described in [Navigating the UI, Open Global notifications ](navigating-the-ui.md#open-org-level).
@@ -59,12 +51,12 @@ You can select from one of the following four tabs to perform various administra
 
 ## Default subscriptions
 
-The `Default subscriptions` section lists all default subscriptions available to the organization. The globe icon on a notification subscription indicates the subscription is a default subscription.
+The **Default subscriptions** tab lists all default global subscriptions available. The globe icon on a notification subscription indicates the subscription is a default subscription.
 
-Members of the **project collection administrators** group have permission to enable/disable any default subscription in this view. Any member project collection valid users have permission to view the details of the default subscription. The view and enable options are available in the context menu (`...`) associated with each individual subscription.
+Members of the **Project Collection Administrators** group have permission to enable/disable any default subscription in this view. Any member of the **Project Collection Valid Users** group has permission to view the details of the default subscription. The view and enable options are available in the context menu (`...`) associated with each individual subscription.
 
 > [!div class="mx-imgBorder"] 
->![Organization level notifications page: Default subscriptions](media/view-organization-notification-default-subscriptions.png)
+> ![Organization level notifications page: Default subscriptions](media/view-organization-notification-default-subscriptions.png)
 
 ## Subscribers
 
@@ -76,7 +68,11 @@ The **Subscribers** section begins with an empty identity search box. Enter any 
 All notification subscriptions for the chosen identity are listed in this view. Management options are available from the context menu (`...`) associated with each subscription. Note, the ![globe](media/oob-notification.png) icon on subscription row indicates a default subscription.
 
 > [!div class="mx-imgBorder"] 
->![Organization level notifications page: Subscribers list](media/view-organization-notification-subscribers.png)
+> ![Organization level notifications page: Subscribers list](media/view-organization-notification-subscribers.png)
+
+For selected security groups or teams, you can change the delivery settings by choosing **Delivery settings**. 
+
+:::image type="content" source="media/global/delivery-settings-dialog.png" alt-text="Delivery settings dialog":::
 
 ## Statistics
 

@@ -1,7 +1,7 @@
 ---
-title: Manage organization notification delivery settings
+title: Manage Global notification delivery settings
 titleSuffix: Azure DevOps 
-description: Manage organization notification delivery settings
+description: Manage organization or collection Global notification delivery settings
 ms.technology: devops-collab
 ms.reviewer: wismythe
 ms.author: chcomley

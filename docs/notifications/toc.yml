@@ -16,9 +16,9 @@
     href: unsubscribe-default-notification.md 
   - name: Manage team and group notifications
     href: manage-team-group-notifications.md 
-  - name: Manage organization notifications
+  - name: Manage Global notifications
     href: manage-organization-notifications.md 
-  - name: Manage organization default delivery settings
+  - name: Manage Global default delivery settings
     href: manage-organization-notifications-settings.md
   - name: Exclude yourself from notification of events you initiated
     href: exclude-self-from-email.md  

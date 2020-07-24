@@ -45,44 +45,28 @@ For additional permission settings regarding notifications, see [Permissions and
 <a id="open-person-level" />
 
 ## Open your personal notifications 
-
-Enter the following URL to reach your personal notifications page, replacing {organization} with your organization's name. 
-
+ 
 ::: moniker range="azure-devops"
-
-```URL
-https://dev.azure.com/{organization}/usersSettings/notifications
-```
 
 ![Navigate to personal notifications page](media/personal-notifications-preview.png)  
 
-![View personal notifications page](media/personal-notifications-page.png)
+:::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 
 ::: moniker-end
 
+
+::: moniker range="< azure-devops"
+Open your profile menu and choose **Notification settings**. 
+::: moniker-end
 ::: moniker range=">= azure-devops-2019 < azure-devops"
-
-```URL
-https://dev.azure.com/{organization}/_notifications
-```
-
-> [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](media/nav-personal-notifications-hub-newnav.png)  
-
-> [!div class="mx-imgBorder"] 
->![View personal notifications page](media/view-personal-notification-hub-newnav.png)
-
+:::image type="content" source="media/personal/open-profile-menu-notifications-2020.png" alt-text="Select your profile menu, and then Notification settings":::
 ::: moniker-end
-
 ::: moniker range="<= tfs-2018"
-
-```URL
-https://dev.azure.com/{organization}/_notifications
-```
-
 > [!div class="mx-imgBorder"] 
->![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
-
+> ![Navigate to personal notifications page](media/nav-personal-notifications-hub.png)
+::: moniker-end
+::: moniker range=">= azure-devops-2019 < azure-devops"
+:::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 ::: moniker-end
 
 
