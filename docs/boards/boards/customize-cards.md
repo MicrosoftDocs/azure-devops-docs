@@ -147,7 +147,7 @@ As a first step, you'll see that you can determine which fields appear on each c
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -240,7 +240,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
 1. [Open the Kanban board](kanban-quickstart.md) or [taskboard](../sprints/task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the **Settings** dialog. 
 
 3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
@@ -260,7 +260,7 @@ You can apply style rules to change the color of cards on Kanban boards and task
 
      ![Taskboard, Style dialog, example style rule](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
@@ -294,7 +294,7 @@ Requires TFS 2015.1 or later version.
 
      ![taskboard, Style dialog, example style rule](../sprints/media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
@@ -406,7 +406,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
-3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Settings, Tag colors dialog (Kanban)](media/customize-cards/settings-tests.png)  
@@ -423,7 +423,7 @@ You can control the test plan under which inline tests you add through the Kanba
 
 2. Choose **Annotations** and make sure that **Test** annotation is enabled. This is a requirement to configure inline tests.
 
-3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select one test plan from the query provided.  
+3. Choose **Tests**, and then choose the options you want. To select a test plan, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select one test plan from the query provided.  
 
 	![Settings dialog, Tests tab (Kanban), TFS 2015](media/c-cards-test-settings.png)   
 

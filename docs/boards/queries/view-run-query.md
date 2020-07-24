@@ -168,7 +168,7 @@ Priority    Node Name       Work Item Type    Title                  Remaining W
 
 ::: moniker range=">= azure-devops-2019"
 
-From either the **Favorites** or **All** page, choose the ![ ](../media/icons/actions-icon.png) actions icon of a query to run, edit, rename, or delete the query. 
+From either the **Favorites** or **All** page, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of a query to run, edit, rename, or delete the query. 
 
 ![New query experience, Favorites page, query context menu](media/view-run-queries/query-context-menu-favorites-page.png)  
 
@@ -229,7 +229,7 @@ From the **Query Editor** or **Results** view, you can email a formatted list of
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose the ![ ](../media/icons/actions-icon.png) actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
+Choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon to open the menu and select from the options listed, **Email query** or **Copy query URL**. 
  
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Query Editor/Results, Open Actions menu, Choose Email query or Copy query URL](media/view-run-queries/email-query-new-exp.png)  

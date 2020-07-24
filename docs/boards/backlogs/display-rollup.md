@@ -80,7 +80,7 @@ Each user can set their own column options which persist for each backlog across
 	>
 	> ![Open column options](media/rollup/view-in-progress-and-completed-items.png) 
 
-2. Choose **Column options**, or choose the ![](../../media/icons/actions-icon.png) actions icon and then select **Column options**. 
+2. Choose **Column options**, or choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and then select **Column options**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open column options](media/rollup/open-column-options.png) 
@@ -124,7 +124,7 @@ Each user can set their own column options which persist for each backlog across
 
 Rollup data is calculated from the Analytics service. When there is a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the ![ ](../../media/icons/rollup.png) rollup icon, you can determine the state of the data. 
 
-If an error occurs in retrieving rollup data, you'll see an ![ ](../../media/icons/info.png) info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services is still processing changes made which may affect rollup calculations. Once the Analytics data is up-to-date, the rollup columns will refresh with the latest data.  
+If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services is still processing changes made which may affect rollup calculations. Once the Analytics data is up-to-date, the rollup columns will refresh with the latest data.  
 
 > [!div class="mx-imgBorder"]  
 > ![Error getting data](media/rollup/error-getting-data.png) 

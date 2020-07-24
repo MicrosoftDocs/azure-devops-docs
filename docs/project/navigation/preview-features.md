@@ -50,18 +50,18 @@ Some preview features provide access to entire new functionality. Others, such a
       [New account manager](#account-manager)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,18 +73,18 @@ Some preview features provide access to entire new functionality. Others, such a
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,20 +96,20 @@ Some preview features provide access to entire new functionality. Others, such a
       New Wiki experience  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -120,16 +120,16 @@ Some preview features provide access to entire new functionality. Others, such a
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 ---

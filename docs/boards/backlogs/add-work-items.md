@@ -72,7 +72,7 @@ Create as many work items as you need of the type you need to track the work you
     >
     > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
-    Choose the ![pin icon](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+    Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -316,7 +316,7 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
+To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
 
 ::: moniker-end
 

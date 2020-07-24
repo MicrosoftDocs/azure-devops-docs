@@ -287,7 +287,7 @@ This connection method requires that you have installed [Azure DevOps Open in Ex
 
 2. Choose the query you want to open in Excel. 
 
-3. From the **Results** tab, choose the ![ ](../../media/icons/actions-icon.png) actions icon
+3. From the **Results** tab, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon
 
 	> [!div class="mx-imgBorder"]  
 	> ![QUery Results, context menu, Open in Excel Open Boards>Queries, vertical nav](media/connect/open-in-excel-from-portal.png) 
