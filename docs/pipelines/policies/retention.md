@@ -142,7 +142,7 @@ When specifying custom policies for each pipeline, you cannot exceed the maximum
 
 <a id="branch-policy-pr-builds"></a>
 
-#### Clean up pull request builds
+### Clean up pull request builds
 
 If you [protect your Git branches with pull request builds](../../repos/git/branch-policies.md#build-validation), then you can use retention policies to automatically delete the completed builds. To do it, add a policy that keeps a minimum of `0` builds with the following branch filter:
 
@@ -168,7 +168,7 @@ The "All" branches policy is automatically added as the last policy in the evalu
 
 ::: moniker-end
 
-### What parts of the run get deleted
+## What parts of the run get deleted
 
 ::: moniker range="<= tfs-2018"
 
@@ -199,7 +199,7 @@ The following information is deleted when a run is deleted:
 
 ::: moniker-end
 
-### When are runs deleted
+## When are runs deleted
 
 ::: moniker range="> tfs-2018"
 
@@ -215,7 +215,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 
 ::: moniker range=">=azure-devops-2020"
 
-### Delete a run
+## Delete a run
 
 You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
