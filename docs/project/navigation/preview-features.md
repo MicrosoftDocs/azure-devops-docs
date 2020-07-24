@@ -83,10 +83,10 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row:::
    :::column span="2":::
       [New boards reports](../../report/dashboards/overview.md#in-context-reports-work-tracking)  
-      [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
       [New Repos pull request experience](https://devblogs.microsoft.com/devops/introducing-the-new-pull-request-experience-for-azure-repos/)  
       [New Repos settings experience](/azure/devops/release-notes/2020/sprint-168-update#new-web-platform-conversion--repository-settings)  
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
+      [New Settings Search in the organization settings panel](#search-org-settings)  
    :::column-end:::
    :::column span="1":::
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
@@ -105,11 +105,11 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [New Settings Search in the organization settings panel](#search-org-settings)  
       [New Teams page](../../organizations/settings/add-teams.md)  
       [New Test Plans Page](../../test/new-test-plans-page.md)  
       New TFVC Page  
       New Wiki experience  
+      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
    :::column-end:::
    :::column span="1":::
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
@@ -128,19 +128,16 @@ The follow table indicates which preview features can be enabled per user or tea
 :::row-end:::
 :::row:::
    :::column span="2":::
-      [Organization Permissions Settings Page v2](../../organizations/security/set-project-collection-level-permissions.md#collection-level)  
       [Pipeline decorators](../../extend/develop/add-pipeline-decorator.md)  
       [Project Permissions Settings page](../../organizations/security/set-project-collection-level-permissions.md#project-level)  
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
-   :::column span="1":::
-       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column span="1"::: 
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
        :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
@@ -151,7 +148,7 @@ The follow table indicates which preview features can be enabled per user or tea
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range="azure-devops-2020"
 
 The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator.  
 
@@ -256,37 +253,32 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 ## Enable or disable a feature   
 
-Open your profile menu by choosing your image icon and select **Manage features**.  
+1. Open your profile menu by choosing your image icon and select **Manage features**.  
 
-Select the level from the menu provided. 
+	:::image type="content" source="media/manage-features/open-profile-2020.png" alt-text="Open profile menu":::
 
-#### User-level
+1. Select the level from the menu provided. 
 
-> [!div class="mx-imgBorder"]  
-> ![Manage features for the user](media/manage-features/manage-features-user-2020.png)
+	> [!TIP]  
+	> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
-#### Project-level
+1. To enable or disable a feature, choose the slider. 
 
-> [!div class="mx-imgBorder"]  
-> ![Manage features for the project](media/manage-features/manage-features-project-2020.png)
+	**User-level**
+	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Manage features for the user":::
 
- 
-#### Collection-level
+	**Project-level**
+	:::image type="content" source="media/manage-features/manage-features-project-2020.png" alt-text="Manage features for the project":::
 
-> [!div class="mx-imgBorder"]  
-> ![Manage features for the collection](media/manage-features/manage-features-collection-2020.png)
+	**Collection-level**
+	:::image type="content" source="media/manage-features/manage-features-collection-2020.png" alt-text="Manage features for the collection":::
 
-To enable or disable a feature, choose the slider. 
+When you enable a feature at the project or collection-level, you essentially turn it on for all users. If you disable a feature at the project or collection-level, user settings are not changed. Users can enable or disable the feature on their own. 
 
-When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
-
-> [!TIP]  
-> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
 
 ::: moniker-end
 
 ::: moniker range="azure-devops"
-
 
 <a id="experimental-themes">  </a>
 
@@ -324,6 +316,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 
 ### Azure Pipelines
 
+- [New release progress views](/azure/devops/release-notes/2018/may-30-vsts#visualize-release-progress)  
 - [Multi-stage pipelines](../../report/powerbi/../../pipelines/process/stages.md)  
 - [Test tab in new web platform](../../pipelines/test/review-continuous-test-results-after-build.md)
 - [Test analytics in new web platform](../../pipelines/test/test-analytics.md)  
