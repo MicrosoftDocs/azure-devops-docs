@@ -7,7 +7,7 @@ ms.topic: include
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -252,7 +252,7 @@ You can regenerate or extend a PAT, and modify its [scope](~/integrate/get-start
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -294,7 +294,7 @@ You can revoke a PAT at any time, for various reasons.
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager page, see [Enable preview features](~/project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager page, see [Manage or enable features](~/project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
