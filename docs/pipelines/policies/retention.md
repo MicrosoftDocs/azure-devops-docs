@@ -180,9 +180,9 @@ When the retention policies mark a build for deletion, you can control which inf
 
 The following information is deleted when a build is deleted:
 
-* [Logs](../troubleshooting/review-logs.md)
-* [Published artifacts](../tasks/utility/publish-build-artifacts.md)
-* [Published symbols](../tasks/build/index-sources-publish-symbols.md)
+* Logs
+* Published artifacts
+* Published symbols
 
 ::: moniker-end
 
@@ -190,15 +190,14 @@ The following information is deleted when a build is deleted:
 
 The following information is deleted when a run is deleted:
 
-* [Logs](../troubleshooting/review-logs.md)
-* [All artifacts](../tasks/utility/publish-build-artifacts.md)
-* [All symbols](../tasks/build/index-sources-publish-symbols.md)
+* Logs
+* All artifacts
+* All symbols
 * Binaries
 * Test results
 * Run metadata
 
 ::: moniker-end
-
 
 ### When are runs deleted
 
@@ -224,7 +223,6 @@ You can delete runs using the [context menu](../get-started/multi-stage-pipeline
 > If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
 
 ::: moniker-end
-
 
 <a id="release"></a>
 
