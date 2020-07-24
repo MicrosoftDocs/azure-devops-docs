@@ -32,7 +32,7 @@ From your profile page, you can change your information and  account preferences
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **New account manager**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the **New account manager**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -114,7 +114,7 @@ From your profile page, you can change your information and  account preferences
 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
-- [Enable preview features](../../project/navigation/preview-features.md)  
+- [Manage or enable features](../../project/navigation/preview-features.md)  
 - [Set favorites](../../notifications/howto-manage-personal-notifications.md)  
 - [Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)  
