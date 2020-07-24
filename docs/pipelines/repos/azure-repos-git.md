@@ -169,13 +169,13 @@ To configure this setting, navigate to **Pipelines**, **Settings** at either **O
 
 When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, your YAML pipelines must explicitly reference any Azure Repos Git repositories you want to use in the pipeline as a [checkout step](../yaml-schema.md#checkout) in the job that uses the repository. You won't be able to fetch code using scripting tasks and git commands for an Azure Repos Git repository unless that repo is first explicitly referenced.
 
-There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline.
+There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
 
 * If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, so you may subsequently use scripts to interact with that repository.
 * If you are using a script to perform read-only operations on a repository in a public project, you don't need to reference the public project repository in a `checkout` step.
 * If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository in a `checkout` step.
 
-For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must reference this repository in a `checkout` step.
+For example, when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, if your pipeline is in the `FabrikamProject/Fabrikam` repo in your organization, and you want to use a script to check out the `FabrikamProject/FabrikamTools` repo, you must also reference this repository in a `checkout` step.
 
 If you are already checking out the `FabrikamTools` repository in your pipeline using a checkout step, you may subsequently use scripts to interact with that repository, such as checking out different branches.
 
