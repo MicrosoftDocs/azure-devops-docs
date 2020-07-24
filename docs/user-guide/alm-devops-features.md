@@ -1335,7 +1335,7 @@ pipelines\tasks\build\media
 <p>Track the progress of work on your backlogs <a href="../report/dashboards/cumulative-flow.md" data-raw-source="[through the CFD charts](../report/dashboards/cumulative-flow.md)">through the CFD charts</a>.  </p>
 
 <p><b>Power BI dashboards (Azure DevOps Services)</b></p>
-<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Online account once you <a href="../report/powerbi/report-on-vso-with-power-bi-vs.md" data-raw-source="[connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md)">connect to Power BI</a>. </p>
+<p>You can create dashboards, individual reports, or explore data collected for your Visual Studio Codespaces account once you <a href="../report/powerbi/report-on-vso-with-power-bi-vs.md" data-raw-source="[connect to Power BI](../report/powerbi/report-on-vso-with-power-bi-vs.md)">connect to Power BI</a>. </p>
 
 
 </td>
@@ -1671,7 +1671,7 @@ pipelines\tasks\build\media
 <td width="33%">
 
 <p><b>.NET client libraries</b></p>
-<p>For .NET developers building Windows apps and services that integrate with Visual Studio Online,
+<p>For .NET developers building Windows apps and services that integrate with Visual Studio Codespaces,
 <a href="../integrate/get-started/client-libraries/dotnet.md" data-raw-source="[client libraries](../integrate/get-started/client-libraries/dotnet.md)">client libraries</a> are available
 for integrating with work item tracking, version control, build, and other services are now available.
 These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute
@@ -1704,7 +1704,7 @@ the libraries needed by your app or service.</p>
 
 <p><b>Integrate with service hooks</b></p>
 <p><a href="../service-hooks/overview.md" data-raw-source="[Service hooks](../service-hooks/overview.md)">Service hooks</a> enable you to perform tasks on other services
-when events happen in your Visual Studio Online projects</p>
+when events happen in your Visual Studio Codespaces projects</p>
 
 <p><b>Create integrations</b></p>
 <p>Integrate other services like <a href="../service-hooks/services/hipchat.md" data-raw-source="[HipChat](../service-hooks/services/hipchat.md)">HipChat</a>,

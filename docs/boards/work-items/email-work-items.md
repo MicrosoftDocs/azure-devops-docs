@@ -142,7 +142,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 ::: moniker range=">= tfs-2018"  
 <a id="team-services-email" />  
-<strong>From the web portal</strong>, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the <strong>Email work item</strong> option. The first 200 items in the list will appear in a formatted table. 
+<strong>From the web portal</strong>, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the <strong>Email work item</strong> option. The first 200 items in the list will appear in a formatted table. 
 
 > [!div class="mx-imgBorder"]  
 > ![Email work items](media/email/email-work-item.png)   
@@ -150,7 +150,7 @@ You can quickly email a summary of one or more work items. Summaries include the
 
 ::: moniker range="tfs-2017"  
 
-**From the web portal**, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
+**From the web portal**, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email work item** option. The first 200 items in the list will appear in a formatted table. 
 
 ![Email work item](../queries/media/share-plans-email-work-item-ts.png)    
 
@@ -222,7 +222,7 @@ Depending on the option and client you choose, summary lists may or may not incl
 ::: moniker-end  
 
 ::: moniker range=">= tfs-2018"
-If you want to mail a list of all items in the backlog or query, choose the ![ ](../media/icons/actions-icon.png) actions icon, and select the **Email** option. 
+If you want to mail a list of all items in the backlog or query, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon, and select the **Email** option. 
 
 > [!div class="mx-imgBorder"]  
 > ![Email backlog or query results list](media/email/email-backlog.png)  

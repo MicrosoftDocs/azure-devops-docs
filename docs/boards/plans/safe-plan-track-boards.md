@@ -143,7 +143,7 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 
 1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The  ![ ](../../media/icons/info.png) info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The   :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, with Parents enabled](media/safe-plan-track/list-epics-features.png)
@@ -199,7 +199,7 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 
 1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The ![ ](../../media/icons/info.png) info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)
