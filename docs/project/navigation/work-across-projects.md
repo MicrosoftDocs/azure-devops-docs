@@ -194,7 +194,7 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 ## Related articles
 
-- [Enable preview features](preview-features.md)  
+- [Manage or enable features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
   
 
