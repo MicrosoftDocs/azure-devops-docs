@@ -48,7 +48,20 @@ For additional permission settings regarding notifications, see [Permissions and
  
 ::: moniker range="azure-devops"
 
-![Navigate to personal notifications page](media/personal-notifications-preview.png)  
+Open your ![](../../media/icons/user-settings-gear.png) profile menu, and then choose **Notifications** or **Notification settings**. 
+
+The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
+
+:::row:::
+   :::column span="2":::
+      **New Account Manager enabled**
+      :::image type="content" source="media/personal/open-profile-menu-s170-new-account-manager.png" alt-text="Select your profile menu, and then Notifications":::
+   :::column-end:::
+   :::column span="2":::
+      **New Account Manager not enabled**
+      :::image type="content" source="media/personal/open-profile-menu-not-new-account-s170.png" alt-text="Select your profile menu, and then Notification settings":::
+   :::column-end:::
+:::row-end:::
 
 :::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 
@@ -69,7 +82,7 @@ Open your profile menu and choose **Notification settings**.
 :::image type="content" source="media/personal/user-notifications.png" alt-text="View personal notifications page":::
 ::: moniker-end
 
-
+To learn more, see [Manage your notifications](manage-your-personal-notifications.md)
 
 ## Open team or project level notifications
 
@@ -98,14 +111,15 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 > [!div class="mx-imgBorder"] 
 > ![View team level notifications page](media/view-team-notification-hub.png)
 
-   ::: moniker-end
+::: moniker-end
+
+To learn more, see [Manage notifications for a team or group](manage-team-group-notifications.md)
 
 <a id="open-org-level" />
 
 ## Open Global notifications
 
 ::: moniker range="azure-devops" 
-
 
 1. Enter the following URL to reach the organization-level notifications page, replacing *OrganizationName* with your organization's name. 
 
@@ -124,8 +138,6 @@ https://dev.azure.com/{organization}/{project}/_admin/_notifications
 ::: moniker-end
 
 ::: moniker range=">= azure-devops-2019 < azure-devops" 
-
-## Open collection-level notifications
 
 Enter the following URL to reach the organization-level notifications page, replacing *ServerName* and *CollectionName* with your instance name. 
 
@@ -159,6 +171,8 @@ https://dev.azure.com/{organization}/_admin/_notifications
 >![View organization level notifications page](media/view-organization-notification-hub.png)  
 
 ::: moniker-end
+
+To learn more, see [Manage Global notifications](manage-organization-notifications.md)
 
 ## Related articles
 
