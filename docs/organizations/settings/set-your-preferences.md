@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/02/2020
+ms.date: 07/24/2020 
 ---
 
 # Set user preferences
@@ -32,7 +32,7 @@ From your profile page, you can change your information and  account preferences
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the **New account manager**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the **New account manager**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

@@ -7,11 +7,11 @@ ms.reviewer: wismythe
 ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
-ms.date: 12/30/2019
 monikerRange: '>= tfs-2017'
+ms.date: 07/24/2020 
 ---
 
-# Manage organization notification settings
+# Manage Global notification settings
 
 [!INCLUDE [version-vsts-tfs-2017-on](../includes/version-tfs-2017-through-vsts.md)]
 
