@@ -308,22 +308,22 @@ Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup job
 
 ## FAQ
 
-* **Are manual test results deleted?**
+### Are manual test results deleted?
 
 No
 
-* **If I mark a run or a release to be retained indefinitely, does the retention policy still apply?**
+### If I mark a run or a release to be retained indefinitely, does the retention policy still apply?
 
 No. Neither the pipeline's retention policy nor the maximum limits set by the administrator are applied when you mark an individual run or release to be retained indefinitely. It will remain until you stop retaining it indefinitely.
 
-* **How do I specify that runs deployed to production will be retained longer?**
+### How do I specify that runs deployed to production will be retained longer?
 
 Customize the retention policy on the release pipeline. Specify the number of days that releases deployed to production must be retained. In addition, indicate that runs associated with that release are to be retained. This will override the run retention policy.
 
-* **I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?**
+### I did not mark runs to be retained indefinitely. However, I see a large number of runs being retained. How can I prevent this?
 
 Runs that are deployed as part of releases are also governed by the release retention policy. Customize the release retention policy as explained above.
 
-* **Are automated test results that are published as part of a release retained until the release is deleted?**
+### Are automated test results that are published as part of a release retained until the release is deleted?
 
 Test results published within a stage of a release are associated with both the release and the run. These test results are retained as specified by the retention policy configured for the run and for the test results. If you are not deploying Team Foundation or Azure Pipelines Build, and are still publishing test results, the retention of these results is governed by the retention settings of the release they belong to.
