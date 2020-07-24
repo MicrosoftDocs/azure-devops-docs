@@ -47,7 +47,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

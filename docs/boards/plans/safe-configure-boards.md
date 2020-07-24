@@ -76,7 +76,7 @@ You'll need to be a [project administrator](../../organizations/security/add-use
 Add each team, one by one.
 
 > [!NOTE]   
-> The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Enable preview features](../../project/navigation/preview-features.md).
+> The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
