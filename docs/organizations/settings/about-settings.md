@@ -194,7 +194,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <li>Set project description</li>
 <li><a href="../public/make-project-public.md" data-raw-source="[Change the project visibility, public or private](../public/make-project-public.md)">Change the project visibility, public or private</a> (Azure DevOps Services only) </li>
 </ul></td>
-<td>Update the project description or change it&#39;s visibility.</p></td>
+<td>Update the project description or change its visibility.</p></td>
 </tr>
 <tr>
 <td><strong>Services</strong> </td>
