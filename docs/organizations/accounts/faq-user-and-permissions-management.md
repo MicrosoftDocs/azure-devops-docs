@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # User and permissions management FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 In this article, learn the answers to the following frequently asked questions (FAQs) about user and permissions management in Azure DevOps. FAQs are grouped by the following subjects:
 - [General permissions](#general-permissions)
@@ -43,11 +43,11 @@ A: You must be a Project Collection Administrator or [organization Owner](../sec
 
 If you have at least Basic access, you can find the current owner in your organization settings.
 
-1.    Go to your **Organization settings**.
+1. Go to your **Organization settings**.
 
-   ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)    
+   ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)
 
-2.    Find the current owner.
+2. Find the current owner.
 
    ![Find the current owner in organization information](/azure/devops/media/find-organization-owner.png)
 
@@ -332,5 +332,3 @@ A: If you experience delays finding new users or having deleted users promptly r
 - [Access with Azure AD FAQs](faq-azure-access.md)
 - [Configure and customize organization FAQs](faq-configure-customize-organization.md)
 - [Set up Visual Studio FAQs](faq-set-up-vs.md)
-
-

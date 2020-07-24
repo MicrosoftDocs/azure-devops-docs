@@ -14,8 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Billing overview for Azure DevOps
 
-
-[!INCLUDE [version-vsts-tfs-all-versions](../../includes/version-ts-tfs-2015-2016.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 [Set up billing](set-up-billing-for-your-organization-vs.md) when you need more than the *free tier* of resources in your organization, or to buy other features for your users that are offered by Microsoft or other companies.
 
