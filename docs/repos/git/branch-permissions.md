@@ -13,7 +13,7 @@ monikerRange: '>= tfs-2017'
 
 # Set branch permissions
 
-#### Azure Repos | Azure DevOps Server 2019 | TFS 2018 | TFS 2017 Update 1
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 ## Overview
 

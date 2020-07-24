@@ -118,7 +118,7 @@ For **Security**, **Notification settings**, and **Manage features** profile men
 
 - [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
 - [Usage](../../integrate/concepts/rate-limits.md)  
-- [Enable preview features](../../project/navigation/preview-features.md)  
+- [Manage or enable features](../../project/navigation/preview-features.md)  
 - [Set favorites](../../notifications/howto-manage-personal-notifications.md)  
 - [Personal access tokens](../../accounts/use-personal-access-tokens-to-authenticate.md)  
 - [Alternate authentication credentials](../../repos/git/auth-overview.md#alternate-credentials)  

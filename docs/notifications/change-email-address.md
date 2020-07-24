@@ -25,7 +25,7 @@ You can change your preferred email address for notifications from your organiza
 #### [Preview page](#tab/preview-page) 
 
 > [!NOTE]   
-> To enable the new user interface for the New account manager, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the New account manager, see [Manage or enable features](../project/navigation/preview-features.md).
 
 1. From your home page, open user settings ![user-settings-gear.png](../media/icons/user-settings-gear.png), and then select **Profile**.
 

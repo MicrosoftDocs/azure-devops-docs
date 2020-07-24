@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Manage extension permissions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range="azure-devops"
 

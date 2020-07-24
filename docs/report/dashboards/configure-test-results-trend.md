@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure the Test results trend widget (Advanced)
 titleSuffix: Azure DevOps 
 description: Monitor test trends and gain insights about  pipeline test efforts using  Analytics Test Results Trend (Advanced) widget
@@ -56,6 +56,7 @@ In order to configure the Test Results Trend widget, you must have the following
 - Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 - To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin. Default settings provide all team members with permissions.
 - **Pipelines**  must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- **Test Plans** must be enabled. If disabled, the Test Results Trend widget displays an "Access not supported" error message. To enable test plans, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
 
 ::: moniker-end
 
