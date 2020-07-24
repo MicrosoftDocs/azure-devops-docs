@@ -150,7 +150,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-Azure DevOps CLI commands aren't supported for adding users to a project at this time. 
+Azure DevOps CLI commands aren't supported for adding users to a project at this time.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 * * *
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -422,7 +422,7 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
@@ -492,21 +492,22 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-## Add users or groups to an access level   
+
+::: moniker range="< azure-devops"
+
+## Add users or groups to an access level
 
 For on-premises deployments, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md).
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-## Add users or groups to SQL Server Reports 
+## Add users or groups to SQL Server Reports
 
 If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](../../report/admin/grant-permissions-to-reports.md).
 
-::: moniker-end 
-
+::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 ## Add users or groups to SharePoint or SQL Server Reports 
@@ -516,21 +517,17 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
 * [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
 
-::: moniker-end 
-
+::: moniker-end
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md) 
 
-
 ## Related articles
-
 
 * To view permissions for yourself or another user, see [View permissions](view-permissions.md).
 * [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
-

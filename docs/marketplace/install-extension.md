@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2015'
 
 # Install extensions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../includes/version-ts-tfs-2015-2016.md)]
 
 Add new features and capabilities to your organization by installing extensions.
 
