@@ -25,8 +25,8 @@ The Marketplace provides you with the following resources to make an informed de
 | Read the Q&A section | It may answer the questions you have and is a good mechanism to engage with the extension’s publisher(s) to have a meaningful dialogue to make yourself comfortable. Use it to understand the development, testing, and security practices the publisher follows. It also gives you a sense of the publisher's responsiveness. |
 | Read the privacy, license, and support policies | See if the publisher has provided them and if they meet your needs/concerns. |
 
+Be aware of the following important information:
 
-Important information to be aware of:
 * **Malware Scan**: As a customer, you expect to not get malicious software when you acquire an extension from the Marketplace. The Marketplace runs a virus scan on each extension package that's published, to ensure its safety. The virus scan is run for each new extension and for each extension update. Until the scan is all clear, we don't publish the extension in the Marketplace for public usage. Note: stated virus scan is run at extension publish only and not during extension's execution.
 * **Content scan**: The Marketplace does a content scan for every new and updated extension in the Marketplace. With these content scans, we avoid surfacing inappropriate or offensive content on the Marketplace pages.
 * **Access to approved scopes only**: An extension can only operate within the scopes it has been granted. For example: an extension that has only read permissions on work items can't modify your features and bugs. Azure DevOps web extensions run in a sandboxed browser iframe. They're only able to access Azure DevOps data and APIs approved for the extension. During installation, admins are  prompted to approve permissions and scopes. One way to protect yourself is to carefully review the scopes being requested by the extension. Note: if the scopes required by an extension change, the consumer must approve the update before it can become applicable on the consumer's organization or collection. 
@@ -42,6 +42,7 @@ The Top Publisher program is for publishers with one or more global Azure DevOps
 The Top Publisher program in Marketplace is designed to help consumers evaluate or acquire Azure DevOps extensions and integrations with confidence. The Top Publisher badge <img src="../extend/publish/media/top-publisher.png" alt="Top Publisher badge" width="25"/> implies that the publisher has shown commitment to their customers and the Marketplace through exemplary policies, quality, reliability, and support.
 
 Marketplace assigns the badge to a publisher after carefully reviewing the publisher across the following parameters:
+
 * Privacy policy
 * Licensing policy
 * Support policy

@@ -127,7 +127,7 @@ You do this by opening each area path associated with a feature team and changin
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Work>Project Configuration](../../organizations/settings/media/areas/open-project-work-areas-settings-vert.png)   
 
-1. Next, choose the ![ ](../../media/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+1. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 
@@ -153,7 +153,7 @@ You do this by opening each area path associated with a feature team and changin
 
 1. Choose **Work**.  
 
-2. Next, choose the ![ ](../../media/icons/actions-icon.png) actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
+2. Next, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for one of the area paths associated with a feature team and select **Edit**. Then change the **Location** to move it under it's corresponding management team area path.  
 
     For example, here we move the Customer Profile to under Account Management.
 

@@ -111,7 +111,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -135,7 +135,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the ![](../../media/icons/actions-icon.png) actions icon from the column tab and select **Remove** from the menu.  
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, open **Settings**, choose **Columns**, and choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon from the column tab and select **Remove** from the menu.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Settings dialog, Columns tab, open Column tab menu, remove column](media/columns/remove-column.png)    
@@ -174,7 +174,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Remove** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Remove** from the menu. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Kanban board, delete a column](media/columns/remove-column.png)  
@@ -213,7 +213,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](media/kanban-delete-column.png)  
 
@@ -247,7 +247,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 4. To change the column order, simply drag the column tab to the position you want.  
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab ![](../../media/icons/actions-icon.png) actions icon and select **Delete** from the menu. 
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, choose the column tab  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Delete** from the menu. 
 
 	![Kanban board, delete a column](media/kanban-delete-column.png)  
 

@@ -76,12 +76,12 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
@@ -110,12 +110,12 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)

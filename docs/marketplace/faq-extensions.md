@@ -5,7 +5,7 @@ ms.technology: devops-marketplace
 ms.assetid: fecee97a-b715-4d8d-b500-7b3b559eacc7
 ms.author: chcomley
 author: chcomley
-ms.date: 11/25/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2015'
 ms.topic: conceptual
 ---
@@ -46,16 +46,18 @@ If you have at least Basic access, you can find the current owner in your organi
 A: You can't install extensions for one of the following reasons.
 
 <a name="no-permissions"></a>
-*    You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
+
+* You must have [Project Collection Administrator or organization Owner permissions](../organizations/security/lookup-organization-owner-admin.md).
 If you don't have permissions, but you're an organization member, you can [request extensions](request-extensions.md) instead.
 
 <a name="no-assignment"></a>
-*    If you get an "already installed or requested" error check with your Project Collection Administrator
+
+* If you get an "already installed or requested" error check with your Project Collection Administrator
 or organization Owner, and ask them to assign the extension to you.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 <!-- BEGINSECTION class="m-qanda" -->
 
@@ -103,15 +105,7 @@ to sign in to the Marketplace.
    with the identity that's a user in the project collection
    where you want to install the extension.
 
-   > If you're asked to choose "work or school organization" or
-   > "personal account", this means you used an email address
-   > that's the same for a Microsoft account and a "work or school account"
-   > that's managed by your organization in Azure Active Directory.
-   > Although these identities have the same email address,
-   > they're still separate identities with different profiles,
-   > security settings, and permissions.
-   >
-   > Choose the identity that's the user in your project collection.
+   If you're asked to choose "work or school organization" or "personal account", this means you used an email address that's the same for a Microsoft account and a "work or school account" that's managed by your organization in Azure Active Directory. Although these identities have the same email address, they're still separate identities with different profiles, security settings, and permissions. Choose the identity that's the user in your project collection.
 
 6. From your project collection, go to the Marketplace.
 

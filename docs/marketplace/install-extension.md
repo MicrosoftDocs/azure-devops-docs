@@ -6,7 +6,7 @@ ms.technology: devops-marketplace
 ms.assetid: dd117c5c-111f-4361-91c6-ed37fb476c75 
 ms.author: chcomley
 author: chcomley
-ms.date: 03/21/2020
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -36,13 +36,13 @@ To learn about building your own Azure DevOps extensions, see [developing](https
 
    ![Select the shopping bag icon to browse the Marketplace](media/shopping-bag-icon-browse-marketplace.png)
 
-3.    Find the extension that you want to install.
+3. Find the extension that you want to install.
 
-4.    Select **Get it free**.
+4. Select **Get it free**.
 
       ![Get extension](media/get-vsts-extensions/get-extension.png)
 
-5.  Select your organization from the dropdown menu, and then select **Install** to install the extension.
+5. Select your organization from the dropdown menu, and then select **Install** to install the extension.
 
     ![Select organization for this extension](media/get-vsts-extensions/select-install-extension.png)
 
@@ -56,7 +56,7 @@ Your extension is now installed! You can now go to your organization to use your
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli/)
 
-::: moniker range="= azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can install an extension with the [az devops extension install](/cli/azure/ext/azure-devops/devops/extension#ext-azure-devops-az-devops-extension-install) command. To get started, see [Get started with Azure DevOps CLI](../cli/index.md).
 
@@ -114,7 +114,6 @@ version: 5.0.1.34507
 [!INCLUDE [temp](../includes/note-cli-not-supported.md)] 
 
 * * *
-
 
 ## Next steps
 

@@ -99,7 +99,7 @@ Prior to running the test, you must add details.
 
 ## Run test 
 
-Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the ![Actions icon](../media/icons/actions-icon.png) actions menu for the inline test.  
+Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu for the inline test.  
 
 <img src="media/i-test-run-test.png" alt="Run a test" style="border: 1px solid #C3C3C3;" />  
 
@@ -108,7 +108,7 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 ## Update the status of a test  
 
-You can update the status of the test from the ![Actions icon](../media/icons/actions-icon.png) actions menu . 
+You can update the status of the test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu . 
 
 <img src="media/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /> 
  
