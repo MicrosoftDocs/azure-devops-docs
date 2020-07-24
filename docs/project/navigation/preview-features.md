@@ -1,31 +1,47 @@
 ---
-title: Turn preview features on or off 
+title: Manage preview features
 titleSuffix: Azure DevOps Services
-description: Enable/disable or activate/deactivate features in preview at the user, team project, or account level  
+description: Enable/disable or activate/deactivate features in preview at the user, team project, or organization level  
 ms.custom: Navigation
 ms.technology: devops-collab
 ms.assetid: FB4E044D-B916-4901-A322-C87C3581A90A
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azure-devops'
-ms.date: 06/22/2020
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/24/2020
 ---
 
 
-# Enable preview features 
+# Manage or enable features 
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)] 
+[!INCLUDE [temp](../../includes/version-cloud-plus-2020.md)] 
+
+::: moniker range="azure-devops"
 
 As new features are introduced, you can turn them on or off. That way, you can try them out, provide feedback, and work with those features that meet your requirements.  
 
-Some features provide a new user interface and functionality, which can be managed per user or team member. Others support a default experience for the account and are managed by an account administrator. 
- 
+Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
+
 > [!NOTE]   
 > You can turn on or off select features for Azure DevOps Services. Preview features become available first on Azure DevOps Services and then become standard features with an update to Azure DevOps Server. At some point, the preview feature moves out of preview status and becomes a regular feature of the web portal.  
 
+Some preview features provide access to entire new functionality. Others, such as the New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
 
-Some preview features provide access to entire new functionality. Others, such as the New TFVC Page and New Wiki experience, reflect a change to the user interface, but little or no change in functionality. 
+::: moniker-end
+
+
+::: moniker range="azure-devops-2020"
+
+There are a few features you or an administrator can enable or disable. Some  features provide access to entire new functionality, while others provide a change to the user interface.  
+
+::: moniker-end
+
+
+
+::: moniker range="azure-devops"
+
+The follow table indicates which preview features can be enabled per user or team member, and those that can be enabled for the organization.  You must be a member of the Project Collection Administrators group to change a preview feature at the organization-level. 
 
 
 ---
@@ -50,18 +66,18 @@ Some preview features provide access to entire new functionality. Others, such a
       [New account manager](#account-manager)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,18 +89,18 @@ Some preview features provide access to entire new functionality. Others, such a
       [New service connections experience](../../pipelines/library/service-endpoints.md)  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -96,20 +112,18 @@ Some preview features provide access to entire new functionality. Others, such a
       New Wiki experience  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png) 
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::  
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -120,20 +134,67 @@ Some preview features provide access to entire new functionality. Others, such a
       Task Insights for Failed Pipeline Runs 
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
       &nbsp;  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
    :::column span="1":::
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
-      ![](../../media/icons/checkmark.png)  
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
    :::column-end:::
 :::row-end:::
 ---
 
+::: moniker-end
+
+
+::: moniker range="azure-devops"
+
+The follow table indicates those features that you can enable as a user, project administrator, or project collection administrator.  
+
+
+---
+:::row:::
+   :::column span="2":::
+      **Feature**
+   :::column-end:::
+   :::column span="1":::
+      **User**
+   :::column-end:::
+   :::column span="1":::
+      **Project**
+   :::column-end:::
+   :::column span="1":::
+      **Collection**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="2":::
+      [New service connections experience](../../pipelines/library/service-endpoints.md)    
+      [Selective artifacts download feature for collection/project](../../pipelines/library/service-endpoints.md)  
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      &nbsp;   
+   :::column-end:::
+   :::column span="1":::
+      &nbsp;     
+      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column-end:::
+   :::column span="1":::
+      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+      :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
+   :::column-end:::
+:::row-end:::
+---
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 <a id="user-level">  </a>
 
@@ -189,6 +250,42 @@ When you enable a feature at the organization level, you essentially turn it on 
 > [!div class="mx-imgBorder"]  
 > ![Preview features options for the organization, part 2](media/preview-features/org-features-s170-3.png)
 
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+## Enable or disable a feature   
+
+Open your profile menu by choosing your image icon and select **Manage features**.  
+
+Select the level from the menu provided. 
+
+#### User-level
+
+> [!div class="mx-imgBorder"]  
+> ![Manage features for the user](media/manage-features/manage-features-user-2020.png)
+
+#### Project-level
+
+> [!div class="mx-imgBorder"]  
+> ![Manage features for the project](media/manage-features/manage-features-project-2020.png)
+
+ 
+#### Collection-level
+
+> [!div class="mx-imgBorder"]  
+> ![Manage features for the collection](media/manage-features/manage-features-collection-2020.png)
+
+To enable or disable a feature, choose the slider. 
+
+When you enable a feature at the organization level, you essentially turn it on for all users of your account. Each user can then disable the feature if they so choose. If you disable a feature at the organization level, user settings are not changed. Users can enable or disable the feature on their own. 
+
+> [!TIP]  
+> If you don't see the **for this project** or **for this collection** menu options, then you aren't an administrator. To get added as one, see [Add administrators, set permissions at the team project or collection level](../../organizations/security/set-project-collection-level-permissions.md).  
+
+::: moniker-end
+
+::: moniker range="azure-devops"
 
 
 <a id="experimental-themes">  </a>
@@ -272,7 +369,7 @@ When enabled, you can enter keywords to search all settings within the Organizat
 ### Organization, project, and billing management
 - [Streamlined User Management](../../accounts/add-account-users-assign-access-levels.md)   
 
-
+::: moniker-end
 
 ## Related articles
 
