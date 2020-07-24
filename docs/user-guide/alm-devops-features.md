@@ -1704,7 +1704,7 @@ the libraries needed by your app or service.</p>
 
 <p><b>Integrate with service hooks</b></p>
 <p><a href="../service-hooks/overview.md" data-raw-source="[Service hooks](../service-hooks/overview.md)">Service hooks</a> enable you to perform tasks on other services
-when events happen in your Azure DevOps projects</p>
+when events happen in your Azure DevOps Projects</p>
 
 <p><b>Create integrations</b></p>
 <p>Integrate other services like <a href="../service-hooks/services/hipchat.md" data-raw-source="[HipChat](../service-hooks/services/hipchat.md)">HipChat</a>,
