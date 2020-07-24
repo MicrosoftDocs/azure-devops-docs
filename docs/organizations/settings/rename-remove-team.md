@@ -38,7 +38,7 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -249,7 +249,7 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

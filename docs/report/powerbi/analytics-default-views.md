@@ -24,7 +24,7 @@ A default set of Analytics views are provided, as shown below.
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> To access **Analytics views**, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
+> To access **Analytics views**, you must enable the feature as described in [Manage or enable features](/azure/devops/project/navigation/preview-features).  
 
 ::: moniker-end
 

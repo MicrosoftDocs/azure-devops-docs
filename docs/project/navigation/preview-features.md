@@ -30,6 +30,7 @@ Some preview features provide access to entire new functionality. Others, such a
 
 ::: moniker-end
 
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
 ::: moniker range="azure-devops-2020"
 
@@ -172,7 +173,7 @@ The follow table indicates those features that you can enable as a user, project
 :::row:::
    :::column span="2":::
       [New service connections experience](../../pipelines/library/service-endpoints.md)    
-      [Selective artifacts download feature for collection/project](../../pipelines/library/service-endpoints.md)  
+      [Selective artifacts download feature for collection/project](../../pipelines/process/phases.md#artifact-download)  
    :::column-end:::
    :::column span="1":::
       :::image type="icon" source="../../media/icons/checkmark.png" border="false":::   
