@@ -226,6 +226,8 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 * Does the repository still exist? First, make sure it does by opening it in the **Repos** page.
 
+* Are you accessing the repository using a script? If so, check the [Limit job authorization scope to referenced Azure DevOps repositories](#limit-job-authorization-scope-to-referenced-azure-devops-repositories) setting. When **Limit job authorization scope to referenced Azure DevOps repositories** is enabled, you won't be able to check out Azure Repos Git repositories using a script unless they are explicitly referenced first in the pipeline.
+
 * What is the [job authorization scope](../process/access-tokens.md#q-a) of the pipeline?
   * If the scope is **collection**: 
     * This may be an intermittent error. Re-run the pipeline.
