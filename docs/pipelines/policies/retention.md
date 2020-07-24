@@ -269,7 +269,7 @@ The **destruction policy** helps you keep the releases for a certain period of t
 > [!NOTE]
 > In TFS, release retention management is restricted to specifying the number of days, and this is available only in TFS 2015.3 and newer.
 
-### Stage-specific retention policies
+## Stage-specific retention policies
 
 You may want to retain more releases that have been deployed to specific stages. For example, your team may want to keep:
 
@@ -291,7 +291,7 @@ When specifying custom policies per pipeline, you cannot exceed the maximum limi
 
 ::: moniker range=">= tfs-2017"
 
-### Interaction between build and release retention policies
+## Interaction between build and release retention policies
 
 The build linked to a release has its own retention policy, which may be shorter than that of the release. If you want to retain the build for the same period as the release, set the **Retain associated artifacts** checkbox for the appropriate stages. This overrides the retention policy for the build, and ensures that the
 artifacts are available if you need to redeploy that release.
@@ -300,6 +300,22 @@ When you delete a release pipeline, delete a release, or when the retention poli
 
 > [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
+
+## Manual test run retention policies
+
+To delete manual test results after a specific number of days, set the retention limit at the project level. Azure DevOps keeps manual test results related to builds, even after you delete those builds. That way, build policies don't delete your test results before you can analyze the data.
+
+1. Sign into your Azure DevOps. You'll need at least project administrator permissions.
+
+1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+ 
+> [!div class="mx-imgBorder"]
+> ![project settings](media/project-settings.png)
+
+1. In the Test | Retention page, select a limit for how long you want to keep manual test data.
+
+> [!div class="mx-imgBorder"]
+> ![manual tests retention policies](media/manual-tests-retention-policies.png)
 
 ## Artifact retention
 
