@@ -32,8 +32,8 @@ Choose to allow or block delivery of emails for all subscriptions owned by a tea
 
 Learn about the following details at the [organization notifications page](manage-organization-notifications.md):
 
-* [Default subscriptions](manage-organization-notifications.md#organization-notifications-page-default-subscriptions) - view all [default notification subscriptions](./oob-built-in-notifications.md)
-* [Subscribers](manage-organization-notifications.md#organization-notifications-page-subscribers) - view notification subscriptions for a specific group, team, or individual
-* [Statistics](manage-organization-notifications.md#organization-notifications-page-statistics) - view the most active subscriptions and top event initiators
-* [Settings](manage-organization-notifications.md#organization-notifications-page-settings) - manage organization-level settings, such as delivery preferences
+* [Default subscriptions](manage-organization-notifications.md#default-subscriptions) - view all [default notification subscriptions](./oob-built-in-notifications.md)
+* [Subscribers](manage-organization-notifications.md#subscribers) - view notification subscriptions for a specific group, team, or individual
+* [Statistics](manage-organization-notifications.md#statistics) - view the most active subscriptions and top event initiators
+* [Settings](manage-organization-notifications.md#settings) - manage organization-level settings, such as delivery preferences
 
