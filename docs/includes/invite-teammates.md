@@ -2,7 +2,9 @@
 ms.topic: include
 ---
 
+
 ## Invite team members
+
 
 Give team members access to your organization by adding their email addresses or GitHub usernames to your organization. For GitHub user invitations, ensure you've [enabled the policy, *Invite GitHub users*](/azure/devops/user-guide/sign-up-invite-teammates#enable-github-invitations) in **Organization settings** > **Policies** tab.
 
