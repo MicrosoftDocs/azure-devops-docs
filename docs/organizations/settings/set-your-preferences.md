@@ -9,7 +9,7 @@ ms.author: chcomley
 author: chcomley
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 03/02/2020
+ms.date: 07/24/2020 
 ---
 
 # Set user preferences
@@ -62,23 +62,27 @@ From your profile page, you can change your information and  account preferences
 
 1. To change your user preferences, open your profile menu, and then select **My profile**.
 
-   ![Select your profile menu, and then My profile](media/select-profile-my-profile-2019.png) 
+	:::image type="content" source="media/user-preferences/open-profile-menu-2020.png" alt-text="Select your profile menu, and then My profile":::
 
 2. From the **General** tab, you can change the following information:
-   - profile picture
-   - display name
-   - contact information
-   - whether borders appear for fields on work item forms
+   - Profile picture
+   - Display name
+   - Preferred email 
+   - Whether borders appear for fields on work item forms.
 
-	![General user settings](media/general-user-settings-2019.png)
+	:::image type="content" source="media/user-preferences/user-profile-dialog-general-tab.png" alt-text="User Profile dialog, General tab":::
 
 3. From the **Locale** tab, you can change your preferred language, date and time pattern, and time zone. 
 
-   ![Change locale](media/locale-user-settings-2019.png)
+	:::image type="content" source="media/user-preferences/user-profile-dialog-locale-tab.png" alt-text="User Profile dialog, Locale tab":::
 
 4. To change your UI theme, go back to your profile menu and select **Theme**. Choose between **Dark** and **Light**.
 
-   ![Change the theme to dark or light](media/change-theme-2019.png)
+For **Security**, **Notification settings**, and **Manage features** profile menu options, see the following articles. 
+- [Use personal access tokens](../accounts/use-personal-access-tokens-to-authenticate.md) 
+- [Use SSH key authentication](../../repos/git/use-ssh-keys-to-authenticate.md) 
+- [Manage personal notifications](../../notifications/howto-manage-personal-notifications.md)  
+- [Manage or enable features](../../project/navigation/preview-features.md). 
 
 ::: moniker-end
 
