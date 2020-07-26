@@ -245,7 +245,14 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 ### Q: Can I move or transfer a project to another organization or collection? 
 
 **A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
- 
+### Q: What programmatic tools support projects?
+
+**A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
+
+::: moniker range=">= azure-devops-2020"
+Also, you can use the [**az devops projects** commands](/cli/azure/ext/azure-devops/devops/project).  
+::: moniker-end
+
 
 ## Related articles
 

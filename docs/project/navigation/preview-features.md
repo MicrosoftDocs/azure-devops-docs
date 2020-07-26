@@ -265,13 +265,13 @@ When you enable a feature at the organization level, you essentially turn it on 
 
 1. To enable or disable a feature, choose the slider. 
 
-	**User-level**
+	**User-level**  
 	:::image type="content" source="media/manage-features/manage-features-user-2020.png" alt-text="Manage features for the user":::
 
-	**Project-level**
+	**Project-level**  
 	:::image type="content" source="media/manage-features/manage-features-project-2020.png" alt-text="Manage features for the project":::
 
-	**Collection-level**
+	**Collection-level**  
 	:::image type="content" source="media/manage-features/manage-features-collection-2020.png" alt-text="Manage features for the collection":::
 
 When you enable a feature at the project or collection-level, you essentially turn it on for all users. If you disable a feature at the project or collection-level, user settings are not changed. Users can enable or disable the feature on their own. 
