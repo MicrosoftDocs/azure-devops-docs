@@ -135,7 +135,7 @@ To learn more, see [Manage notifications for a team or group](manage-team-group-
 
 1. Choose **Global Notifications**.  
 
-	:::image type="content" source="media/nav-ui/org-notifications-s172.png" alt-text="Open Global Notifications":::
+	:::image type="content" source="media/nav-ui/organization-notifications-s172.png" alt-text="Open Global Notifications":::
 
 ::: moniker-end
 
