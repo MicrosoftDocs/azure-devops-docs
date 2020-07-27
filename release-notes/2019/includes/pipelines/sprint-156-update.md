@@ -65,7 +65,7 @@ For a full list of tools available for a particular image, go to **Settings > Ag
 
 ### Support for Bitbucket repositories in Deployment Center for AKS and Web App for containers
 
-With this update, we added native support for BitBucket repositories to our Deployment Center workflows for AKS and Web App for containers. Now you can get OAuth experience and a populated list of repositories and branches of your Bitbucket account. This will help you deploy to your respective resources. In addition, we added an assisted experience by analyzing the Bitbucket repository selected and detecting the DockerFile.
+With this update, we added native support for Bitbucket repositories to our Deployment Center workflows for AKS and Web App for containers. Now you can get OAuth experience and a populated list of repositories and branches of your Bitbucket account. This will help you deploy to your respective resources. In addition, we added an assisted experience by analyzing the Bitbucket repository selected and detecting the DockerFile.
 
 > [!div class="mx-imgBorder"]
 > ![Badge](../../media/156_15.png)

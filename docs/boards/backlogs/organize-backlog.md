@@ -89,7 +89,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -115,7 +115,7 @@ From your web browser, open your product backlog.
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -253,7 +253,7 @@ Reordering from a portfolio backlog works the same as when you [moved items into
 
 ### Limitations on reordering backlog items owned by other teams
 
-If you find you can't reorder a backlog item, check whether the ![ ](../../media/icons/info.png) info icon appears in the first column as shown in the following image. 
+If you find you can't reorder a backlog item, check whether the  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears in the first column as shown in the following image. 
 
 > [!div class="mx-imgBorder"]  
 > ![Limitations on reordering multi-team backlog items](media/organize-backlog/multi-team-reorder-limitation.png) 

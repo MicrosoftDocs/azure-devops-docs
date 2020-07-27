@@ -66,7 +66,7 @@ You can update several work items through the triage process, and then do a bulk
 
 ::: moniker range=">= tfs-2018"
 
-Multi-select the work items you want to update, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then select the option you want from the menu of options.
+Multi-select the work items you want to update, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then select the option you want from the menu of options.
 
 ![Query results multi-select menu](../backlogs/media/bulk-m-query-results-menu-options-ts.png) 
 ::: moniker-end

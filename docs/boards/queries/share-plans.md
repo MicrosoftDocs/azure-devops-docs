@@ -232,7 +232,7 @@ You can drag and drop a file onto the tab or anywhere on the work item form.
 
 
 
-You can edit, open, save, or delete an attachment by choosing an attachment and opening it's ![actions icon](../media/icons/actions-icon.png) actions menu. 
+You can edit, open, save, or delete an attachment by choosing an attachment and opening it's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu. 
 
 <img src="media/share-plans-attachment-menu-options.png" alt="Attachment menu options" style="border: 2px solid #C3C3C3;" />   
 
@@ -298,7 +298,7 @@ By linking your storyboard to a work item, you provide your team access to the s
 #### [Browser](#tab/browser/)
 ::: moniker range=">= tfs-2017"
 
-You can open Storyboarding with PowerPoint from the ![actions icon](../media/icons/actions-icon.png) actions menu within a work item form. 
+You can open Storyboarding with PowerPoint from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu within a work item form. 
 
 <img src="media/share-plans-storyboard-vsts-menu.png" alt="Start storyboarding within work item web form, web portal" style="border: 1px solid #C3C3C3;" />  
 

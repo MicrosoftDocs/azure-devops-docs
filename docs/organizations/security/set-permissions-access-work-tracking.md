@@ -13,7 +13,7 @@ ms.date: 04/23/2020
 
 # Set permissions and access for work tracking
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You grant or restrict access to various work tracking features by granting users or groups specific permissions for an object, project, or collection. Or, when you assign a user as a team administrator, they have permissions to manage all assets for the specific team. Add users to the Contributors group to provide access to most features as listed in [Permissions and access for work tracking](permissions-access-work-tracking.md).
 > [!NOTE]

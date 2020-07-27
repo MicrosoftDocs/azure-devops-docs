@@ -14,8 +14,7 @@ ms.date: 11/19/2018
 
 # Tutorial: Follow a user story, bug, issue, or other work item or pull request  
 
-**Azure Boards | Azure Repos | Azure DevOps Server 2020 | Azure DevOps Server 2019 | TFS 2018 | TFS 2017**
-
+[!INCLUDE [temp](../../includes/version-tfs-2017-through-vsts.md)]
 
 <a id="follow"></a>  
 
@@ -98,13 +97,13 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md)
 
-To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
+To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
  
 <a id="follow-pr"></a>
 
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the ![ ](../media/icons/actions-icon.png) actions icon for the pull request, and select the ![ ](../media/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the ![ ](../media/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
 <img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 
@@ -112,7 +111,7 @@ You'll only receive notifications when other members of your team modifies the P
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, open the PR context menu and choose the ![ ](../media/icons/following-icon.png) Following icon. 
+To stop following changes, open the PR context menu and choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  Following icon. 
 
 ## Manage work items that you're following  
 

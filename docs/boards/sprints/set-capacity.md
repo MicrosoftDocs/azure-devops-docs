@@ -121,7 +121,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= azure-devops-2019"
 
-1. If you don't see your team members listed, add them. Choose the ![ ](../../media/icons/actions-icon.png) action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon and select **Add all team members**. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/add-team-members.png) 
@@ -222,7 +222,7 @@ For example, here we choose Sprint 2 and copy the capacity set for Sprint 1.
 
 ## Remove a user from capacity 
 
-To remove a user, choose the option from the users ![ ](../../media/icons/actions-icon.png) action menu. This will not remove the user from the team.
+To remove a user, choose the option from the users  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action menu. This will not remove the user from the team.
 
 ::: moniker-end
 

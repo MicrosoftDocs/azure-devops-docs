@@ -396,7 +396,7 @@ Versions in the "Server" column are linked to the appropriate download location.
         <tr><td>Azure Kubernetes Service Cluster link in Kubernetes environments resource view</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Release folder filters in notification subscriptions</td><td>Pipelines</td><td>2020</td></tr>
         <tr><td>Deploy external Git repositories to Azure Kubernetes Services (AKS)</td><td>Pipelines</td><td>N/A</td></tr>
-        <tr><td>Support for BitBucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
+        <tr><td>Support for Bitbucket repositories in DevOps Projects</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>Select a Dockerfile in deployment center for AKS and WebApp Containers</td><td>Pipelines</td><td>N/A</td></tr>
         <tr><td>New Test Plan page public preview</td><td>Test Plans</td><td>2020</td></tr>
         <tr><td>Auditing for Azure Repos events</td><td>Repos</td><td>2020</td></tr>
@@ -4471,7 +4471,7 @@ Versions in the "Server" column are linked to the appropriate download location.
     </table>
 * TFS 2015 RTM has multiple build numbers, due to the componentized nature of its build and packaging process. The number of the installer, which will show up in Add/Remove Programs, is 14.0.23129.01. The number of the majority of the assemblies, which will show up in the TFS Administration Console, is 14.0.23128.00.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report any problems or suggest a feature through [Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
 

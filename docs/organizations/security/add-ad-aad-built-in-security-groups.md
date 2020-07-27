@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 11/20/2019
+ms.date: 07/27/2020
 ---
 
 # Add AD/Azure AD users or groups to a built-in security group
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 As described in [About security and identity](about-security-identity.md), there are two main types of built-in security groups: project-level and collection-level. In general, you add users and groups to a project-level group such as Contributors and Readers. For users that need to administrate select features and functions, add them or associated groups to the Build Administrators or Project Administrators groups.
 
@@ -27,7 +27,7 @@ In this article, learn how to do the following task:
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 In this article, learn how to do the following task:
 > [!div class="checklist"]
@@ -120,7 +120,7 @@ The method for adding a user or group to a built-in security group is the same, 
 
 ---
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 ## Add an Active Directory user or group to a built-in security group 
 

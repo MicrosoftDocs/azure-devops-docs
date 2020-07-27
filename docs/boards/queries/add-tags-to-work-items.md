@@ -122,7 +122,7 @@ For example, here we query for all work items that are tagged either ```Web``` o
 ## Show tags in your backlog or query results
 
 ::: moniker range=">= tfs-2017"
-Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../media/icons/actions-icon.png) to select it from the menu of options.    
+Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  to select it from the menu of options.    
 
 > [!div class="mx-imgBorder"]
 > ![Add Tags to the selected columns to display](media/add-tags/column-options-add-tags-field.png)
@@ -137,7 +137,7 @@ All tags that have been added to the listed work items appear.
 
 ::: moniker range="<= tfs-2015"
 
-1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the ![actions icon](../media/icons/actions-icon.png) actions icon to select it from the menu of options.    
+1. Click **Column Options** to add the Tags field to the product backlog or a work item query. If the option doesn't appear, click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions icon to select it from the menu of options.    
 
 	![Add Tags to the selected columns to display](media/add-tags-to-query-results.png)
 

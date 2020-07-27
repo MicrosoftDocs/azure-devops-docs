@@ -494,7 +494,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ## Add or remove repositories, or remove a connection 
 
-1. To add or remove repositories, open the ![ ](../../media/icons/actions-icon.png) actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
+1. To add or remove repositories, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the connection and choose <strong>Add</strong> repositories or <strong>Remove</strong> repositories from the menu. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Add or remove GitHub repositories](media/github/repo-actions-menu.png)  

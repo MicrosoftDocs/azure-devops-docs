@@ -27,7 +27,7 @@ If you don't have a project yet, [create one](../../user-guide/sign-up-invite-te
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 This article shows you how to navigate to functional and administrative tasks available from the web portal. There are four levels of administrative tasks: team, project, collection, and server.  
 
@@ -39,7 +39,7 @@ If you don't have a project yet, [create one](../../organizations/projects/creat
 
 Services support getting work done&mdash;managing code, planning and tracking work, defining and managing pipelines, creating and running tests, and so on.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 > [!NOTE]  
 > Only those services that are enabled will appear in the user interface. For example, if **Boards** is disabled, then **Boards** or **Work** and all pages associated with that service won't appear. To enable or disable a service, see [Turn an Azure DevOps service on or off](../../organizations/settings/set-services.md).
 ::: moniker-end
@@ -173,6 +173,7 @@ Open any admin page by choosing it's name. Choose or hover over the ![ ](../../m
 <a id="collection-admin-context" /> 
 
 ::: moniker range="azure-devops"
+
 ## Open Organization settings 
 
 Organization owners and members of the Project Collection Administrators group configure resources for all projects or the entire organization, including adding users, from the Organization settings pages. This includes managing permissions at the organization-level. For an overview of all organization settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
@@ -180,16 +181,17 @@ Organization owners and members of the Project Collection Administrators group c
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
+
 ## Open Collection settings 
 
 Members of the Project Collection Administrators group configure resources for all projects or the entire project collection from the Collection settings pages. This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin).
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
-1. Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](../../media/settings/open-admin-settings-vert.png)  
@@ -218,9 +220,10 @@ Members of the Project Collection Administrators group configure resources for a
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
+
 ## Open Server settings 
 
-Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. <!---This includes managing permissions at the collection-level. For an overview of all collection-level settings, see [Project collection administrator role and managing collections of projects](../../organizations/settings/about-settings.md#admin). -->
+Members of the Team Foundation Server Administrators group configure resources for the server instance from the Server settings pages. 
 
 1. From the web portal home page for a project, choose or hover over the ![ ](../../media/icons/gear_icon.png) gear icon and select **Server settings**. 
 

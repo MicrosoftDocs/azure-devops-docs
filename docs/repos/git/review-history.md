@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Git history tools with Visual Studio and git command line tools to help you determine the changes in your files.
 ms.assetid: aed4bd97-378a-45f6-8b13-59143fccfe3b
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 10/10/2018
 monikerRange: '>= tfs-2013'
@@ -51,13 +49,11 @@ Use the `git log` command to view the commits that changed a file in your repo f
 &gt; git log index.html   
 
 <font color="#b5bd68">commit bbc3b679197b659544a6f8070c79fb535b496613
-Author: Francis Totten &lt;ftottendev@outlook.com&gt;
 Date:   Thu Jun 30 13:42:50 2016 -0400
 
     update landing page
 
 commit e5402fe710c25eca1b96a4e238eee9c01ed41c6a
-Author: Francis Totten &lt;ftottendev@outlook.com&gt;
 Date:   Thu Jun 30 13:42:23 2016 -0400
 
     initial commit

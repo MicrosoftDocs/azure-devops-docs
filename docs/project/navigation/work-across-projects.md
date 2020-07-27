@@ -69,7 +69,7 @@ To view work items assigned to you for a specific project, [open **Work>Work Ite
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**. 
+Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open Projects page](../../media/settings/open-project-hub-horz.png)   
@@ -194,7 +194,7 @@ To learn more about team rooms, see [Collaborate in a team room](../../notificat
 
 ## Related articles
 
-- [Enable preview features](preview-features.md)  
+- [Manage or enable features](preview-features.md)  
 - [Connect to team projects](../../organizations/projects/connect-to-projects.md)  
   
 

@@ -13,7 +13,7 @@ ms.date: 07/20/2020
 
 # Select backlog navigation levels for your team
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-2015-on.md)]  
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]  
 
 Each team can determine the backlog levels that they use. For example, feature teams may want to only focus on their product backlog, while a management team may choose to only show feature and epics (the two default portfolio backlogs). You configure which backlog levels appear from your team settings dialog. 
 

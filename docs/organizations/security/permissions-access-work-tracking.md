@@ -13,7 +13,7 @@ ms.date: 11/20/2019
 
 # Permissions and access for work tracking
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range=">= azure-devops-2019"
 

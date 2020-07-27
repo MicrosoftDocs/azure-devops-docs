@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Sign up and get started using Azure Repos 
 ms.technology: devops-new-user
 ms.assetid:  
-ms.author: apawast
-author: apawast
 ms.date: 09/10/2018
 ms.custom: seo-javascript-september2019
 monikerRange: '>= tfs-2013'
