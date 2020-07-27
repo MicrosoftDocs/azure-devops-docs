@@ -32,7 +32,7 @@ ms.date: 10/10/2019
 1. Select the organization you will use to host the project created by the Azure DevOps Demo Generator. (You may have multiple accounts of which you are a member, and which are associated with your login, so choose carefully.) Provide a name for your project (such as "MyProjectDemo" ) that you and other contributors can use to identify it as a demo project. Lastly, select the demo project template you want to provision by clicking **...** (Browse) button.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="media/templateselection.png" alt-text="Azure DevOps Demo Generator template selection screen" lightbox="(media/templateselection.png":::
+    > :::image type="content" source="media/templateselection.png" alt-text="Azure DevOps Demo Generator template selection screen" lightbox="media/templateselection.png":::
 
     The default template is **SmartHotel360**, which contains complete ASP.NET 2 web mobile and desktop business apps for a hotel, and can be deployed using Docker containers. 
 
