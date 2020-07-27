@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 #  Authorize other services to access Azure DevOps 
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 When you use a service that's integrated with Azure DevOps,
 we use the industry-standard OAuth 2.0 authorization framework to provide safe,

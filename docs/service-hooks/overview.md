@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Integrate with service hooks
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 Service hooks let you run tasks on other services when events happen in your Azure DevOps 
 projects. For example, create a card in Trello when a work item is created 

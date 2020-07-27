@@ -15,7 +15,7 @@ ms.date: 07/27/2020
 
 [!INCLUDE [version](../../includes/version-vsts-plus-azdevserver-2019.md)]
 
-Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB. You can use the service hook described in this article to annotate Grafana dashboards upon completion of deployments in Azure Pipelines.
+Grafana is an open source, feature-rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB. You can use the service hook described in this article to annotate Grafana dashboards upon completion of deployments in Azure Pipelines.
 
 ![Grafana dashboard with annotations](./media/grafana/dashboard-with-annotations.png)
 
@@ -37,7 +37,7 @@ Grafana is an open source, feature rich metrics dashboard and graph editor for G
 
 	Select **Create Subscription**.
 
-2. Choose **Grafana** among the list of services and click on **Next**
+2. Choose **Grafana** among the list of services and choose **Next**
 
     ![Choose Grafana service](./media/grafana/choose-grafana.png)
 
@@ -45,6 +45,12 @@ Grafana is an open source, feature rich metrics dashboard and graph editor for G
 
     ![Configure release deployment completed filters](./media/grafana/deployment-completed-filters.png)
 
-4. Provide the Grafana URL and [Grafana API token](https://go.microsoft.com/fwlink/?linkid=2085301) required for Azure DevOps to post annotations. If the **Annotate deployment duration window** checkbox is checked, the annotation added corresponds to the duration of the deployment (start and end timestamps of deployment). If unchecked, annotation corresponds to only the completion timestamp of the deployment. The dashboard input can be used to choose a specific dashboard as the target of annotations rather than the default behaviour of annotating all dashboards. Click on **Test** to verify that Azure DevOps is able to use the provided configuration and successfully create a subscription. Once verified, click on **Finish** to complete the creation of subscription.
+4. Provide the Grafana URL and [Grafana API token](https://go.microsoft.com/fwlink/?linkid=2085301) required for Azure DevOps to post annotations. 
+	- If the **Annotate deployment duration window** checkbox is checked, the annotation added corresponds to the duration of the deployment (start and end timestamps of deployment). 
+	- If unchecked, annotation corresponds to only the completion timestamp of the deployment. The dashboard input can be used to choose a specific dashboard as the target of annotations rather than the default behavior of annotating all dashboards. 
+
+5. CHoose **Test** to verify that Azure DevOps is able to use the provided configuration and successfully create a subscription. 
+
+6. Once verified, choose **Finish** to complete the creation of subscription.
 
     ![Annotation settings](./media/grafana/annotation-settings.png)
