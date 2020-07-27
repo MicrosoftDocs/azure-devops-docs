@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 
 With retention policies, you can specify the duration to keep your runs, tests, and releases stored in the system. This data is mainly used for audit and tracking. The older runs, tests, and releases get deleted to conserve storage and reduce clutter.
 
-## prerequisites 
+## Prerequisites 
 
 In order to be able to manage the build and release retention policies, you will need to be part of one of the following built-in groups:
 
