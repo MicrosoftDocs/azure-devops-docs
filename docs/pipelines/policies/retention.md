@@ -301,7 +301,7 @@ When you delete a release pipeline, delete a release, or when the retention poli
 > [!NOTE]
 > In TFS, interaction between build and release retention is available in TFS 2017 and newer.
 
-## Manual test run retention policies
+## Manual test-runs retention policies
 
 To delete manual test results after a specific number of days, set the retention limit at the project level. Azure DevOps keeps manual test results related to builds, even after you delete those builds. That way, build policies don't delete your test results before you can analyze the data.
 
@@ -312,10 +312,28 @@ To delete manual test results after a specific number of days, set the retention
 > [!div class="mx-imgBorder"]
 > ![project settings](media/project-settings.png)
 
-1. In the Test | Retention page, select a limit for how long you want to keep manual test data.
+1. In the Retention page under the Test section, select a limit for how long you want to keep manual test data.
 
 > [!div class="mx-imgBorder"]
 > ![manual tests retention policies](media/manual-tests-retention-policies.png)
+
+## Automated test-runs retention policies
+
+### Builds automated test results
+
+By default, Azure DevOps keeps automated test results related to builds only as long as you keep those builds. To keep test results after you delete your builds, edit the build retention policy. If you use Git for version control, you can specify how long to keep automated test results based on the branch.
+
+1. Sign into Azure DevOps. You'll need at least build level permissions to edit build pipelines.
+ 
+1. Go to your project and then select ![gear icon](../../media/icons/gear-icon.png) project settings at the bottom of the page.
+
+> [!div class="mx-imgBorder"]
+> ![project settings](media/project-settings.png)
+
+1. Select ![gear icon](../../media/icons/gear-icon.png) Settings under Pipelines and modify your retention policies.
+
+> [!div class="mx-imgBorder"]
+> ![project settings](media/build-pipelines-retention-policies.png)
 
 ## Artifact retention
 
