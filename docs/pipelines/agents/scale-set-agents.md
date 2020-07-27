@@ -88,7 +88,7 @@ In the following example, a new resource group and virtual machine scale set are
     --platform-fault-domain-count 1 \
     --load-balancer "" \
     --ephemeral-os-disk true \
-    --os-disk-caching readonly \
+    --os-disk-caching readonly
     ```
 
     Because Azure Pipelines manages the scale set, the following settings are required:
@@ -98,10 +98,11 @@ In the following example, a new resource group and virtual machine scale set are
     * `--load-balancer ""`
     * `--instance-count 2` - this setting is not required, but it will give you an opportunity to verify that the scale set is fully functional before you create an agent pool. Creation of the two VMs can take several minutes. Later, when you create the agent pool, Azure Pipelines will delete these two VMs and create new ones.
 
+
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
-    The following parameters to enable (Ephemeral OS disks)[https://docs.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks] are optional but recommended to improve virtual machine reimage times.
+    The following parameters to enable [Ephemeral OS disks](https://docs.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks) are optional but recommended to improve virtual machine reimage times.
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
@@ -211,7 +212,7 @@ To achieve maximum stability, scale set operations are done sequentially.  For e
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 ## Customizing Pipeline Agent Configuration
-You can customize the configuration of the Azure DevOps Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the (Pipelines Agent Unattended Configuration)[https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config] documentation. Some examples include:
+You can customize the configuration of the Azure DevOps Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
 
     - VSTS_AGENT_INPUT_WORK
     - VSTS_AGENT_INPUT_PROXYURL
@@ -219,21 +220,21 @@ You can customize the configuration of the Azure DevOps Pipeline Agent by defini
     - VSTS_AGENT_INPUT_PROXYPASSWORD
 
 > [!IMPORTANT]
-> Caution must be exercised when customizing the Pipelines agent.  Some settings will conflict with other required settings and cause the agent to fail to register with your agent pool.
-> Some examples of settings that should not be set or altered include:
-> - VSTS_AGENT_INPUT_URL
-> - VSTS_AGENT_INPUT_AUTH
-> - VSTS_AGENT_INPUT_TOKEN
-> - VSTS_AGENT_INPUT_USERNAME
-> - VSTS_AGENT_INPUT_PASSWORD
-> - VSTS_AGENT_INPUT_POOL
-> - VSTS_AGENT_INPUT_AGENT
-> - VSTS_AGENT_INPUT_RUNASSERVICE
-> ... and anything related to Deployment Groups.
+> Caution must be exercised when customizing the Pipelines agent.  Some settings will conflict with other required settings, causing the agent to fail to register, and the VM to be deleted.
+> These settings that should not be set or altered:
+    - VSTS_AGENT_INPUT_URL
+    - VSTS_AGENT_INPUT_AUTH
+    - VSTS_AGENT_INPUT_TOKEN
+    - VSTS_AGENT_INPUT_USERNAME
+    - VSTS_AGENT_INPUT_PASSWORD
+    - VSTS_AGENT_INPUT_POOL
+    - VSTS_AGENT_INPUT_AGENT
+    - VSTS_AGENT_INPUT_RUNASSERVICE
+    - ... and anything related to Deployment Groups.
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
-Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the (Custom Script Extension for Windows)[https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows] or (Custom Script Extension for Linux)[https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux]. This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
+Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
 Here is an example to create a custom script extension for Linux:
 
@@ -241,11 +242,11 @@ Here is an example to create a custom script extension for Linux:
     az vmss extension set \
         --vmss-name <scaleset name> \
         --resource-group <resource group> \
-        --name CustomScript
-        --version 2.0
+        --name CustomScript \
+        --version 2.0 \
         --publisher Microsoft.Azure.Extensions
         --settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash /myScript.sh /myArgs \" }'
-     ```
+    ```
 
 Here is an example to create a custom script extension for Windows:
 
@@ -257,7 +258,7 @@ Here is an example to create a custom script extension for Windows:
         --version 1.9 \
         --publisher Microsoft.Compute \
         --settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myscript.ps1\"], \"commandToExecute\": \"Powershell.exe -ExecutionPolicy Unrestricted -File myscript.ps1 \" }'
-     ```
+    ```
 
 > [!IMPORTANT]
 > The scripts executed in the Custom Script Extension must return with exit code 0 in order for the VM to finish the VM creation process.
@@ -273,12 +274,13 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension.  If the Custom Script Extension returns a non-zero exit code the VM creation process is aborted and will be deleted.
 
 4. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. (Note: This URL may change.)
-      (https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)[https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh]
-      (https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1)[https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1]
+      [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
+      [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1)
 
 5. The configuration script creates a local user for the pipelines agent.  The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
 6a. For most scenarios, the configuration script then immediately starts the agent.  The agent goes Online and is ready to run pipeline jobs.
+
 6b. If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
 <a name="q-a"></a>
