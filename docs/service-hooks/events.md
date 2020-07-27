@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Azure DevOps Services service hooks events
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 ## Available event types
 

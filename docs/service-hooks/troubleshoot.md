@@ -10,7 +10,7 @@ ms.date: 07/27/2020
 
 # Troubleshoot a service hooks issue
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 ## View activity and debug problems
 

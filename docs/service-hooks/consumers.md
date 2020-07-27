@@ -11,7 +11,7 @@ ms.date: 07/27/2020
 
 # Service hook consumers
 
-[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action. 
 Select the consumer that you want to use in your subscription from the following consumers:
