@@ -1,26 +1,17 @@
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
 title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
-ms.date: 03/16/2020
+monikerRange: '>= tfs-2017'
+ms.date: 07/27/2020
 ---
 
-# Create a service hook for Team Foundation Server (TFS) with Microsoft Teams
+# Create a service hook for Azure DevOps with Microsoft Teams 
 
->[!NOTE]
->If you use Azure DevOps Services, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-### Azure Boards app for Teams
-[Azure Boards app for Teams](https://aka.ms/AzureBoardsTeamsIntegration) helps to easily create and monitor work items from your Teams channels.Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
-### Azure Pipelines app for Teams
-[Azure Pipelines app for Teams](https://aka.ms/AzurePipelinesTeamsIntegration) helps to easily monitor the events in your pipelines. Users can set up and manage subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
-### Azure Repos app for Teams
-[Azure Repos app for Teams](https://aka.ms/AzureReposTeamsIntegration) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels. 
-
- 
 See activity about your Team Foundation Server (2017.2 and later) projects directly in your Microsoft Teams channel, for example:
 * Work item updates
 * Pull requests
@@ -28,16 +19,37 @@ See activity about your Team Foundation Server (2017.2 and later) projects direc
 * Builds
 * Release deployments and approvals
 
-## Configuring a new connector for TFS
 
-Configuring integration between Team Foundation Server and Teams is a two-step process. First set up a connector in Teams, then set up one or more service hook subscriptions in your Team Foundation Server project.
+::: moniker range=">= azure-devops-2020"
+> [!NOTE]
+> For Azure DevOps Services and Azure DevOps 2020 and later versions, we recommend you use the following suite of apps which offer rich features, to integrate with Microsoft Teams.
 
->[!NOTE]  
->Project administrator permissions are required to create service hook subscriptions. 
+### Azure Boards app for Teams
+
+[Azure Boards app for Microsoft Teams](../../boards/integrations/boards-teams.md) helps to easily create and monitor work items from your Teams channels.Users can create work items using a command, or use message actions to convert conversations in the channel into work items. Users can also set up and manage subscriptions to get notifications in their channel whenever work items are created or updated. 
+
+### Azure Pipelines app for Teams
+
+[Azure Pipelines app for Microsoft Teams](../../pipelines/integrations/microsoft-teams.md) helps to easily monitor the events in your pipelines. Users can set up and manage subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
+
+### Azure Repos app for Teams
+
+[Azure Repos app for Microsoft Teams](../../repos/integrations/repos-teams.md) helps to easily monitor the events in your repositories. Users can set up and manage subscriptions for code commits, PR creation and PR updates and more from the app and get notifications for these events in their channels. 
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017 <= azure-devops-2019"
+
+## Configure a new connector for Azure DevOps Server
+
+Configuring integration between Azure DevOps Server and Teams is a two-step process. First set up a connector in Teams, then set up one or more service hook subscriptions in your Azure DevOps Server project.
+
+> [!NOTE]  
+> Project administrator permissions are required to create service hook subscriptions. 
 >Events for YAML pipelines are not supported. 
 
 
-### From Teams
+### From Teams 
 
 1. To bring events from TFS into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select Connectors. 
 
@@ -45,7 +57,7 @@ Configuring integration between Team Foundation Server and Teams is a two-step p
 
 1. Select **Team Foundation Server** from the list.
 
-   <img alt="Connectors list" src="./media/teams/Teams Connector config tfs 1.png" style="width:80%;" />
+   ![Connectors list](./media/teams/Teams Connector config tfs 1.png)
 
 1. Choose a name for the Connector, for example "My project notifications", and click Create. Note: this name is only used for managing the Connector.
 <br/>
@@ -53,11 +65,11 @@ Configuring integration between Team Foundation Server and Teams is a two-step p
 
 1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your TFS project.
 
-### From Team Foundation Server
+### From Azure DevOps Server
 
-1. From your TFS team project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
+1. From your project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
 
-   <img alt="Azure DevOps Services, Service Hook Settings" src="./media/slack/vsts-service-hooks.png" style="width:70%; height:auto;" />
+   ![Azure DevOps Services, Service Hook Settings](./media/slack/vsts-service-hooks.png)  
 
 1. Click **Create subscription** and select the "Teams" service.
 
@@ -68,16 +80,16 @@ Configuring integration between Team Foundation Server and Teams is a two-step p
 
 1. Paste the web hook URL from the Teams connector configuration step and click Finish.
 
-Activity from your TFS project will start appearing in your Teams channel.
+Activity from your project begins appearing in your Teams channel.
 
 
-## Configuring Azure DevOps Services Tabs in Microsoft Teams
+## Configure Azure DevOps tabs in Microsoft Teams
 
-1. To bring your Kanban board or Dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
+1. To bring your Kanban board or dashboard into Microsoft Teams, click the '+' ('add new tab') button on the top nav of your team channel. Find the Website icon and add the link to your Azure DevOps board or dashboard. 
 
-   <img alt="Add a new tab to Teams channel" src="./media/teams/teams-as-website.png" style="width:80%;" />
+   ![Add a new tab to Teams channel](./media/teams/teams-as-website.png)
 
-2. Once you've authenticated you will see your Kanban board or Dashboard.
+2. Once you've authenticated, your Kanban board or dashboard appears.
    
 
 ## Frequently asked questions (FAQs)
@@ -97,3 +109,5 @@ A: Only organizations in the same Azure Active Directory tenant as your Microsof
 Create a new Team in the same Azure Active Directory (Azure AD) as Azure DevOps Services, or move your Azure DevOps Services to the same Azure AD as Teams, see [Q: Why is my organization already connected to a directory? Can I change that directory?](../../organizations/accounts/faq-azure-access.md#q-why-is-my-organization-already-connected-to-a-directory-can-i-change-that-directory).
 
 <!-- ENDSECTION -->
+
+::: moniker-end

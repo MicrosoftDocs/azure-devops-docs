@@ -5,27 +5,29 @@ title: Create a service hook with Trello
 description: Use Trello with your Azure DevOps Services organization
 ms.assetid: 7472f06c-11f3-4603-953c-9a0de5abe29d
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 07/27/2020
 ---
 
 # Create a service hook for Azure DevOps Services and TFS with Trello
 
-Create cards and lists in Trello in response to events from Azure DevOps Services.
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+
+Create cards and lists in Trello in response to events from Azure DevOps.
 For example, when code is pushed, or a build occurs.
 
 ## Get a Trello authorization token
 
-1. If you don't have a Trello account, get one [here](https://trello.com/signup).
+1. If you don't have a Trello account, sign up at [Trello](https://trello.com/signup).
 
 2. Go to the [Authorize Azure DevOps Services for Trello page](https://trello.com/1/authorize?key=7d6630fd03ac2b6fc9fde2f2ef0c4096&name=Visual%20Studio%20Online&expiration=never&response_type=token&scope=read%2cwrite), and sign in with your Trello credentials.
 
-3. Allow Azure DevOps Services to use your Trello account.
+3. Allow Azure DevOps to use your Trello account.
 
-   <img alt="Allow Azure DevOps Services" src="./media/trello/allow.png" style="border: 1px solid #CCCCCC" />
+   ![Allow Azure DevOps Services](./media/trello/allow.png)
 
 4. Copy the authorization token.
 
-   <img alt="Trello authorization token" src="./media/trello/authorization-token.png" style="border: 1px solid #CCCCCC" />
+   ![Trello authorization token](./media/trello/authorization-token.png) 
 
 Create a Trello card or list from an Azure DevOps Services event.
 
@@ -41,18 +43,18 @@ Create a Trello card or list from an Azure DevOps Services event.
 
 1. Pick the Trello service.
 
-   <img alt="Service page, Trello selected" src="./media/trello/service.png" style="border: 1px solid #CCCCCC" />
+   ![Service page, Trello selected](./media/trello/service.png)
 
 1. Configure the triggering Visual Studio event. In this case,
 we're going to have the subscription respond when a work item is created.
 
-   <img alt="Trigger configuration page" src="./media/trello/trigger.png" style="border: 1px solid #CCCCCC" />
+   ![Trigger configuration page](./media/trello/trigger.png)
 
 
 1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
-   <img alt="Action configuration page" src="./media/trello/action.png" style="border: 1px solid #CCCCCC" />
+   ![Action configuration page](./media/trello/action.png)
 
    You can use  placeholders to insert content from the event into the
    name and description of the cards or lists that the subscription creates.
@@ -62,7 +64,7 @@ either create a card or a list.
 
 1. Test the service hook subscription and finish the wizard.
 
-   <img alt="Test notification" src="./media/trello/test.png" style="border: 1px solid #CCCCCC" />
+   ![Test notification](./media/trello/test.png) 
 
 ::: moniker-end
 
@@ -78,18 +80,18 @@ either create a card or a list.
 
 1. Pick the Trello service.
 
-   <img alt="Service page, Trello selected" src="./media/trello/service.png" style="border: 1px solid #CCCCCC" />
+   ![Service page, Trello selected](./media/trello/service.png)
 
 1. Configure the triggering Visual Studio event. In this case,
 we're going to have the subscription respond when a work item is created.
 
-   <img alt="Trigger configuration page" src="./media/trello/trigger.png" style="border: 1px solid #CCCCCC" />
+   ![Trigger configuration page](./media/trello/trigger.png)
 
 
 1. Set up the action that Trello will take in response to the trigger -
 either create a card or a list.
 
-   <img alt="Action configuration page" src="./media/trello/action.png" style="border: 1px solid #CCCCCC" />
+   ![Action configuration page](./media/trello/action.png) 
 
    You can use  placeholders to insert content from the event into the
    name and description of the cards or lists that the subscription creates.
@@ -99,13 +101,13 @@ either create a card or a list.
 
 1. Test the service hook subscription and finish the wizard.
 
-   <img alt="Test notification" src="./media/trello/test.png" style="border: 1px solid #CCCCCC" />
+  ![Test notification](./media/trello/test.png) 
 
 ::: moniker-end
 
 Now it's set up. Go to Trello and see the cards appear.
 
-<img alt="Welcome board with a card for Bug #5" src="./media/trello/welcome-board.png" style="border: 1px solid #CCCCCC" />
+![Welcome board with a card for Bug #5](./media/trello/welcome-board.png)
 
 ## Placeholders
 
@@ -180,7 +182,8 @@ Handlebars paths          | ...<br/>this<br/>For example, ```{{../comment/id}}``
 Template comments          | ```{{!-- this is a handlebar comment --}}``` 
 
 ## Pricing
-Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+
+Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

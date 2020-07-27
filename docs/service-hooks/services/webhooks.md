@@ -5,12 +5,14 @@ title: WebHooks with Azure DevOps Services
 description: Use WebHooks with your Azure DevOps Services organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 07/27/2020
 ---
 
-# Web Hooks
+# Web hooks
 
-Web Hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+
+Web hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 
 For more information about the JSON payloads posted by this consumer, see [events](../events.md).
 
@@ -74,7 +76,8 @@ Now the Web hook is set up. Go to the target service to view the JSON representa
 
 
 ## Pricing
-Azure DevOps Services doesn't charge for the framework for integrating with external services. Check out the specific service's site
+
+Azure DevOps doesn't charge for the framework for integrating with external services. Check out the specific service's site
 for pricing related to their services. 
 
 ## Q & A

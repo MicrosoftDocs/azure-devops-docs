@@ -5,10 +5,12 @@ title: Troubleshoot your service hooks integrations | Azure DevOps Services
 description: Troubleshoot problems with the services you have integrated with your Azure DevOps Services organization
 ms.assetid: dcf00653-24c5-4ab6-b9e8-19ec098bbb66
 monikerRange: '>= tfs-2017'
-ms.date: 2/08/2019
+ms.date: 07/27/2020
 ---
 
 # Troubleshoot a service hooks issue
+
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
 ## View activity and debug problems
 
