@@ -120,7 +120,9 @@
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
-        "repos/tfvc/**": "v-maksim"
+        "repos/tfvc/**": "v-maksim",
+        "repos/*.md": "macoope",
+        "repos/git/**": "macoope"
 
       },
       "author": {
@@ -150,7 +152,9 @@
         "pipelines/tasks/**": "steved0x",
         "pipelines/test/**": "steved0x",
         "service-hooks/**": "aaronhallberg",
-        "repos/tfvc/**": "MaximMalygin"
+        "repos/tfvc/**": "MaximMalygin",
+        "repos/*.md": "vtbassmatt",
+        "repos/git/**": "vtbassmatt"
 
       },
       "ms.technology": {
