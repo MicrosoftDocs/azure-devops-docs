@@ -123,7 +123,7 @@ So when a bug is created with the ID 5 and title "Some great new idea!",
 the card name is "Bug #5: Some great new idea!".
 
 The basic form of the placeholder is ```{{resource.field}}```
-where resource is the name of the resource raising the event (workitem, build, and so on)
+where resource is the name of the resource raising the event (work item, build, and so on)
 and field is a field within the resource section of the event, like ID.
 So, if the subscription is for a completed build, it might be something like
 

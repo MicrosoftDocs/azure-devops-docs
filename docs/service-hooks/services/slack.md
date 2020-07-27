@@ -40,23 +40,23 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ## Create a custom app in Slack
 
-1. Refer to the [Slack documentation, Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks) to understand the process of using webhooks to push information to a Slack channel.
+1. Refer to the [Slack documentation, Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks) to understand the process of using Web Hooks to push information to a Slack channel.
 
 2. Create a new [Slack app](https://api.slack.com/apps/new)
 	![Create slack app](./media/slack/create-slack-app.png)
 
-3. Activate incoming webhook and add a new webhook to the desired workspace
-	![incoming webhook](./media/slack/incoming-webhook.png)
+3. Activate incoming Web Hook and add a new Web Hook to the desired workspace
+	![incoming Web Hook](./media/slack/incoming-webhook.png)
 
-	![toggle webhook](./media/slack/toggle-webhook.png)
+	![toggle Web Hook](./media/slack/toggle-webhook.png)
 
-4. Select the channel for which webhook must be created
+4. Select the channel for which Web Hook must be created
 
-	![create-webhook](./media/slack/create-webhook.png)
+	![create-Web Hook](./media/slack/create-webhook.png)
 
-5. Copy the webhook URL and navigate to Azure DevOps portal
+5. Copy the Web Hook URL and navigate to Azure DevOps portal
 
-	![copy webhook](./media/slack/copy-webhook.png)
+	![copy Web Hook](./media/slack/copy-webhook.png)
 
 ## Create a service hook subscription in your organization
 
@@ -64,7 +64,7 @@ subscriptions for completed builds, releases, pending approvals and more from th
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Go to your project Service Hooks page: 
+1. Go to your project **Service Hooks** page: 
 
 	`https://{orgName}/{project_name}/_settings/serviceHooks`
 
@@ -77,9 +77,9 @@ subscriptions for completed builds, releases, pending approvals and more from th
    > For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,
    > the target branch it applies to, and the team members that are required or invited to review the request.
 
-3. Paste the web hook URL from the Slack integration that you created and select **Finish**.
+3. Paste the Web Hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the web hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   <img alt="Action dialog box with the Web Hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 
@@ -102,9 +102,9 @@ subscriptions for completed builds, releases, pending approvals and more from th
    > For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,
    > the target branch it applies to, and the team members that are required or invited to review the request.
 
-3. Paste the web hook URL from the Slack integration that you created and select **Finish**.
+3. Paste the Web Hook URL from the Slack integration that you created and select **Finish**.
 
-   <img alt="Action dialog box with the web hook URL" src="./media/slack/action.png" style="border: 1px solid #CCCCCC; width:60%; height:auto; display:block;margin-right:auto;margin-left:auto;margin-top:10px" />
+   ![Action dialog box with the Web Hook URL]./media/slack/action.png) 
 
 4. Now, when the event you configured occurs in your project, a notification will appear in your team's Slack channel.
 

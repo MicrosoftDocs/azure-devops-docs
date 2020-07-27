@@ -120,7 +120,7 @@
                   href: previous-apis/git/pull-requests/work-items.md
             - name: Pushes
               href: previous-apis/git/pushes.md
-            - name: Refs
+            - name: References
               href: previous-apis/git/refs.md
             - name: Repositories
               href: previous-apis/git/repositories.md
@@ -155,7 +155,7 @@
               href: previous-apis/packaging/maven.md
             - name: Npm
               href: previous-apis/packaging/npm.md
-            - name: Nuget
+            - name: NuGet
               href: previous-apis/packaging/nuget.md
             - name: Packages
               href: previous-apis/packaging/packages.md

@@ -1,18 +1,18 @@
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
-title: WebHooks with Azure DevOps Services
-description: Use WebHooks with your Azure DevOps Services organization
+title: Web Hooks with Azure DevOps Services
+description: Use Web Hooks with your Azure DevOps Services organization
 ms.assetid: 6c7dfe37-800d-47b8-b9db-9f73878eeb77
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-# Web hooks
+# Web Hooks
 
 [!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
 
-Web hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
+Web Hooks provides a way to send a JSON representation of an event to any service. All that is required is a public endpoint (HTTP or HTTPS).
 
 For more information about the JSON payloads posted by this consumer, see [events](../events.md).
 
@@ -70,7 +70,7 @@ For more information about the JSON payloads posted by this consumer, see [event
 
 ::: moniker-end
 
-Now the Web hook is set up. Go to the target service to view the JSON representation:
+Now the Web Hook is set up. Go to the target service to view the JSON representation:
 
 ![View the JSON representation](./media/webhooks/request-bin.png)
 
@@ -125,16 +125,16 @@ Sample JSON:
 
 **A:** Yes, see details [here](../create-subscription.md).
 
-#### Q: Can I send web hooks to non HTTPS endpoints?
+#### Q: Can I send Web Hooks to non HTTPS endpoints?
 
-**A:** Yes. However, it's recommended that you only use HTTPS endpoints for your web hooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your web hook. 
+**A:** Yes. However, it's recommended that you only use HTTPS endpoints for your Web Hooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your Web Hook. 
 
-#### Q: Can I use basic authentication when setting up a web hook that isn't HTTPS?
+#### Q: Can I use basic authentication when setting up a Web Hook that isn't HTTPS?
 
-**A:** No. You must use HTTPS when utilizing basic authentication on a web hook. 
+**A:** No. You must use HTTPS when utilizing basic authentication on a Web Hook. 
 
-#### Q: Can we use localhost or special range IPs as web hook targets?
+#### Q: Can we use localhost or special range IPs as Web Hook targets?
 
-A: No. Web hooks cannot target localhost (loopback) or special range [IPv4](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml)/[IPv6](https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) addresses. 
+A: No. Web Hooks cannot target localhost (loopback) or special range [IPv4](https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml)/[IPv6](https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) addresses. 
 
 <!-- ENDSECTION -->

@@ -16,7 +16,7 @@
     href: services/datadog.md
   - name: Microsoft Teams
     href: services/teams.md
-- name: WebHooks
+- name: Web Hooks
   href: services/webhooks.md
 - name: Authorize other services
   href: authorize.md
