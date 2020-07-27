@@ -40,10 +40,10 @@ Or, configure [Basic + Test Plans](https://marketplace.visualstudio.com/items?it
 
 See [Testing access by user role](../../test/manual-test-permissions.md#access-by-user-role).
 
-## Run retention policies
+## Build retention policies
 
 In most cases you don't need to retain completed runs longer than a certain number of days. 
-Using run retention policies, you can control **how many days** you want to keep each run before deleting it. 
+Using retention policies, you can control **how many days** you want to keep each run before deleting it. 
 
 ::: moniker range="<= tfs-2018"
 
@@ -51,7 +51,7 @@ Along with defining how many days to retain runs, you can also decide the minimu
 
 ::: moniker-end
 
-As an author of a run pipeline, you can customize retention policies on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
+As an author of a build pipeline, you can customize retention policies on the ![gear icon](../../media/icons/gear-icon.png) **Settings** tab of your project's settings.
 
 You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your build and artifact data for longer than what is set in the retention policies. The **Copy Files task** is preferable to the [Publish Build Artifacts task](../tasks/utility/publish-build-artifacts.md) because data saved with the **Publish Build Artifacts task** will get periodically cleaned up and deleted. 
 
@@ -220,7 +220,7 @@ Your retention policies run every day at 3:00 A.M. UTC. There is no option to ch
 You can delete runs using the [context menu](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu) on the [Pipeline run details](../get-started/multi-stage-pipelines-experience.md#view-pipeline-run-details) page.
 
 > [!NOTE]
-> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipe run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
+> If any retention policies currently apply to the run, they must be removed before the run can be deleted. For instructions, see [Pipeline run details - delete a run](../get-started/multi-stage-pipelines-experience.md#pipeline-run-context-menu).
 
 > [!div class="mx-imgBorder"]
 > ![delete a run](media/delete-a-run.png)
@@ -337,7 +337,7 @@ By default, Azure DevOps keeps automated test results related to builds only as 
 
 ### Other automated test results
 
-o clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
+To clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
 
 ## Artifact retention
 
