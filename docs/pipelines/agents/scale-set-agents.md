@@ -102,7 +102,7 @@ In the following example, a new resource group and virtual machine scale set are
     > [!IMPORTANT]
     >  If you run this script using Azure CLI on Windows, you must enclose the `""` in `--load-balancer ""` with single quotes like this: `--load-balancer '""'`
 
-    The following parameters to enable [Ephemeral OS disks](https://docs.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks) are optional but recommended to improve virtual machine reimage times.
+    The following parameters to enable [Ephemeral OS disks](https://docs.microsoft.com/azure/virtual-machines/ephemeral-os-disks) are optional but recommended to improve virtual machine reimage times.
 
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
@@ -208,7 +208,7 @@ To achieve maximum stability, scale set operations are done sequentially.  For e
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 ## Customizing Pipeline Agent Configuration
-You can customize the configuration of the Azure DevOps Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure DevOps Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
 
     - VSTS_AGENT_INPUT_WORK
     - VSTS_AGENT_INPUT_PROXYURL
@@ -231,31 +231,31 @@ You can customize the configuration of the Azure DevOps Pipeline Agent by defini
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
-Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
+Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
 Here is an example to create a custom script extension for Linux.
 
-    ```azurecli
-    az vmss extension set \
-        --vmss-name <scaleset name> \
-        --resource-group <resource group> \
-        --name CustomScript \
-        --version 2.0 \
-        --publisher Microsoft.Azure.Extensions
-        --settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash /myScript.sh /myArgs \" }'
-    ```
+```azurecli
+az vmss extension set \
+--vmss-name <scaleset name> \
+--resource-group <resource group> \
+--name CustomScript \
+--version 2.0 \
+--publisher Microsoft.Azure.Extensions
+--settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash /myScript.sh /myArgs \" }'
+```
 
 Here is an example to create a custom script extension for Windows.
 
-    ```azurecli
-    az vmss extension set \
-        --vmss-name <scaleset name> \
-        --resource-group <resource group> \
-        --name CustomScriptExtension \
-        --version 1.9 \
-        --publisher Microsoft.Compute \
-        --settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myscript.ps1\"], \"commandToExecute\": \"Powershell.exe -ExecutionPolicy Unrestricted -File myscript.ps1 \" }'
-    ```
+```azurecli
+az vmss extension set \
+--vmss-name <scaleset name> \
+--resource-group <resource group> \
+--name CustomScriptExtension \
+--version 1.9 \
+--publisher Microsoft.Compute \
+--settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myscript.ps1\"], \"commandToExecute\": \"Powershell.exe -ExecutionPolicy Unrestricted -File myscript.ps1 \" }'
+```
 
 > [!IMPORTANT]
 > The scripts executed in the Custom Script Extension must return with exit code 0 in order for the VM to finish the VM creation process.
