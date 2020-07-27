@@ -261,7 +261,7 @@ az vmss extension set \
 > The scripts executed in the Custom Script Extension must return with exit code 0 in order for the VM to finish the VM creation process.
 > If the custom script extension throws an exception or returns a non-zero exit code, the Azure DevOps Pipeline extension will not be executed and the VM will not register with Azure DevOps agent pool.
 
-## Lifecyle of a Scale Set Agent
+## Lifecycle of a Scale Set Agent
 Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Scale Set Agent
 
 1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure DevOps Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
@@ -280,21 +280,7 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 
 6b. If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
-<a name="q-a"></a>
-## FAQ
-
-* [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
-* [How do I create a scale set with custom software and custom disk size?](#how-do-i-create-a-scale-set-with-custom-software-and-custom-disk-size)
-* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
-* [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
-
-### Are there any limitations during the preview?
-
-During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
-
-- You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
-
-### How do I create a scale set with custom software and custom disk size?
+## Create a scale set with custom image, software, or disk size
 
 These are steps to create a scale set with a custom OS disk size and custom software.
 
@@ -383,6 +369,19 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
 7. Verify that both VMs created in the scale set come online, have different names, and reach the Succeeded state
 
 You are now ready to create an agent pool using this scale set.
+
+<a name="q-a"></a>
+## FAQ
+
+* [Are there any limitations during the preview?](#are-there-any-limitations-during-the-preview)
+* [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
+* [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
+
+### Are there any limitations during the preview?
+
+During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
+
+- You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
