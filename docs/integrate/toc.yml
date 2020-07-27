@@ -50,10 +50,6 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
-    - name: Service hooks consumers and actions
-      href: ../service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-    - name: Service hooks events
-      href: ../service-hooks/events.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Azure DevOps Services REST API
       href: https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1
     - name: REST APIs for TFS 2015, 2017, and 2018
