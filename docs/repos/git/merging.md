@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Resolving Merge Conflicts in Git from Visual Studio or the command line.
 ms.assetid: 2a51a33a-134b-4357-bcfc-540b3195682f
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2013'
@@ -98,8 +96,7 @@ Resolve merge conflicts on the command line:
     > git log --merge
     commit fac422e78f105ccb44b50a00fc82d6ea89b15513
     Merge: 9b28b1e 1dd2603
-    Author: Francis Totten frank@fabrikam.com
-
+    
         merging new api endpoint
     ```
 
