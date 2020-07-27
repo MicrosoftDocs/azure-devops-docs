@@ -22,6 +22,6 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [sign-in-github-account](../../includes/sign-in-github-account.md)]
 
-<a id="invite-others" />
+<a name="invite-others"></a>
 
 [!INCLUDE [invite-teammates](../../includes/invite-teammates.md)]
