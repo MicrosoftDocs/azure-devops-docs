@@ -165,7 +165,7 @@ In addition, the Links control tab provides access to all links made to the work
 
 ## Copy the URL
 
-From the web portal, simply copy the URL from the web browser address or hover over the title and then click the ![  ](../../media/icons/copy-clone-icon.png) copy icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
+From the web portal, simply copy the URL from the web browser address or hover over the title and then click the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
 
 ![Copy hyperlink for a work item from web portal](../backlogs/media/add-work-item-copy-URL.png) 
 
