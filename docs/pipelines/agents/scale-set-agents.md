@@ -156,8 +156,8 @@ In the following example, a new resource group and virtual machine scale set are
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
     - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job.  After running a job, the VM will go offline and be reimaged before it picks up another job.
-    - **Delay in minutes before deleting excess idle agents. - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
-    - **Configure VMs to run interactive tests. (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions.  Check this box to run unelevated with interactive UI.
+    - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
+    - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions.  Check this box to run unelevated with interactive UI.
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
@@ -268,7 +268,7 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 
 1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure DevOps Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
 
-2. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets individually executes any installed VM extensions.
+2. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
 3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension.  If the Custom Script Extension returns a non-zero exit code the VM creation process is aborted and will be deleted.
 
@@ -279,7 +279,7 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 5. The configuration script creates a local user for the pipelines agent.  The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
 6a. For most scenarios, the configuration script then immediately starts the agent.  The agent goes Online and is ready to run pipeline jobs.
-6b. (Optional) If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
+6b. If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
 <a name="q-a"></a>
 ## FAQ
@@ -392,4 +392,4 @@ Licensing considerations limit us from distributing Microsoft-hosted images. We 
 
 ### How do I configure scale set agents to run UI tests?
 
-Create a Scale Set with a Windows Server OS and when creating the Agent Pool select the "Configure VMs to run interactive tests" checkbox.
+Create a Scale Set with a Windows Server OS and when creating the Agent Pool select the "Configure VMs to run interactive tests" option.
