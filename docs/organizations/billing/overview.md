@@ -52,9 +52,9 @@ The following links take you to the paid services that are offered by Microsoft:
  * [Sign up for Azure Artifacts](../../artifacts/start-using-azure-artifacts.md)
  * [Buy cloud-based load testing](buy-load-testing-vs.md). You're charged based on the load tests that you run. By default, paid usage is turned off for your organization.
 
-Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
-
 [!INCLUDE [loadtest-deprecated-include](../../test/includes/loadtest-deprecated-include.md)]
+
+Enable paid usage via the **Billing** tab within **Organization settings** in Azure DevOps.
 
 [!INCLUDE [pricing-calculator-tip](../../includes/pricing-calculator-tip.md)]
 

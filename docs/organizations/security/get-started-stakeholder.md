@@ -13,7 +13,7 @@ ms.date: 04/16/2020
 
 # Get started as a Stakeholder
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range="azure-devops" 
 
@@ -24,7 +24,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
@@ -72,7 +72,7 @@ You must have been added to the Azure DevOps project and been granted Stakeholde
 	::: moniker range="azure-devops"  
 	`https://dev.azure.com/OrganizationName/ProjectName`
 	::: moniker-end
-	::: moniker range="<= azure-devops-2019"
+	::: moniker range="< azure-devops"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
@@ -115,7 +115,7 @@ You can start viewing and adding work items once you connect to a project. The e
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
@@ -560,7 +560,7 @@ From the Kanban board, choose **View as backlog**.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 From the Kanban board, choose **View as backlog**.  
 
@@ -657,7 +657,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
