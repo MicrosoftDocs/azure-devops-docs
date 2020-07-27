@@ -20,6 +20,10 @@
   href: services/webhooks.md
 - name: Authorize other services
   href: authorize.md
+- name: Service hook consumers
+  href: consumers.md
+- name: Service hook events
+  href: consumers.md
 - name: Troubleshoot and FAQs
   href: troubleshoot.md
 
