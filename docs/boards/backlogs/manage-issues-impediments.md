@@ -91,13 +91,13 @@ Open **Boards>Work Items**, and choose the ![ ](../../media/icons/blue-add.png) 
 > [!div class="mx-imgBorder"]  
 > ![Add issue, new nav](media/manage-issues/add-issue-vert.png)   
 
-Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within the add drop down menu. 
+Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within the add drop down menu. 
 
 ::: moniker-end   
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the ![ ](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+From **Work**, choose **Impediment** from the **New Work Item** list of options. Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
 <img src="media/cyb-new-work-item-impediment.png" alt="TFS 2017 - Add an impediment" style="border: 1px solid #C3C3C3;" />  
   

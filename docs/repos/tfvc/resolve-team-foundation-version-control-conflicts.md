@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Resolve Team Foundation Version Control conflicts
 ms.assetid: 61cae295-0864-4ae9-8327-9bd1dd14cae9
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

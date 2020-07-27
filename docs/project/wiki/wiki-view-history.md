@@ -106,7 +106,7 @@ If you need to revert to an earlier revision for a page that you have published 
 	> [!div class="mx-imgBorder"]  
 	> ![Copy the full commit id for an earlier commit](media/wiki/revert-publish-as-code-paste-commit-id.png)
 	
-4. From the commit page, open the ![ ](../../media/icons/actions-icon.png) actions icon and choose the **Revert** option.  
+4. From the commit page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and choose the **Revert** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose revert menu option of an earlier commit](media/wiki/revert-publish-as-code-option.png)

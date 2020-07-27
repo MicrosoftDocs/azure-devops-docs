@@ -14,7 +14,7 @@ ms.date: 06/02/2019
 
 # Change access levels
 
-[!INCLUDE [temp](../../includes/version-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Users must be added to a group with the appropriate permissions, to connect and use the functions and features that Azure DevOps Server provides. To use select web portal features, they must also belong to the access level that enables access to that feature. For an overview of each access level, see [About access levels](access-levels.md).
 
@@ -26,7 +26,7 @@ This article applies to managing access levels for project collections defined o
 
 For a simplified overview of the permissions that are assigned to the most common groups&mdash;Readers, Contributors, and Project Administrators&mdash;and the Stakeholder access group, see [Permissions and access](permissions-access.md).  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 > [!NOTE]  
 > Even if you set a user or group's access level, you must [add them to a project](add-users-team-project.md) for them to connect to a project and access features available through a supported client or the web portal.
@@ -42,7 +42,7 @@ Make sure to set each user's access level based on what you've purchased for tha
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Open access levels
 
@@ -50,7 +50,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
 
@@ -83,7 +83,7 @@ From a user context, open **Server Settings** by choosing the ![ ](../../boards/
 
 <a id="add" /> 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Add a user or group to an access level 
 
@@ -91,7 +91,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Select the access level you want to manage.
 
@@ -136,7 +136,7 @@ Changes you make to the access level settings take affect immediately. You can a
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Change the access level for a user or group 
 
@@ -154,7 +154,7 @@ To change the access level for a user or group, first remove them from their exi
 
 <a id="set-default" >  </a>
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Change the default access level
 
@@ -164,7 +164,7 @@ You set an access level from its page. Choose **Set as default access level** as
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 > [!div class="mx-imgBorder"]  
 > ![Stakeholder access level, set as default](media/change-access-levels/set-stakeholder-as-default-2019.png)
 ::: moniker-end
@@ -173,7 +173,7 @@ You set an access level from its page. Choose **Set as default access level** as
 <img src="media/change-access-levels-set-default.png" alt="Admin context, Control panel, Access levels, Stakeholder tab, set as default access level" style="border: 1px solid #C3C3C3;" />  
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 > [!IMPORTANT]  
 > Service accounts are added to the default access level. If you set Stakeholder as the default access level, you must add the Azure DevOps service accounts to the Basic or an advanced access level  group.
 ::: moniker-end

@@ -14,9 +14,10 @@ monikerRange: '>= tfs-2013'
 
 # Create and configure organization FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
-In this article, learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects: 
+In this article, learn the answers to frequently asked questions (FAQs) about creating and configuring an organization in Azure DevOps. FAQs are grouped by the following subjects:
+
 - [General](#general-organization-faqs)
 - [Create an organization](#create-organization-faqs)
 - [Configure an organization](#configure-organization-faqs)

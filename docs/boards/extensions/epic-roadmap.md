@@ -122,7 +122,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 ## Drill-down to view details 
 
-1. To view the requirements linked to a feature, choose the ![ ](../media/icons/info.png) info icon for that feature. 
+1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)

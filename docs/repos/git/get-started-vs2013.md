@@ -5,8 +5,6 @@ description: Get started using Git in Visual Studio
 toc: show
 ms.assetid: BFDE8FAF-63B8-4BC9-9A24-32EE2CA73C13
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'

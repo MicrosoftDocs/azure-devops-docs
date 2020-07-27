@@ -205,7 +205,7 @@ To learn more, see [Link user stories, issues, bugs, and other work items](../ba
 
 ## Remove dependency links
 
-You can remove a dependency by choosing the ![ ](../../media/icons/actions-icon.png) actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
+You can remove a dependency by choosing the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from the linked work item and choose **Remove Dependency Link** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
 > ![Create links manually](media/tracker/remove-dependency-link.png)
@@ -214,7 +214,7 @@ Optionally, you can remove the link from the work item's **Links** tab.
 
 ## Create a query of dependencies 
 
-To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
+To open a set of dependent work items, select them in the same way you would via a [bulk edit](../backlogs/bulk-modify-work-items.md), choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon from one of the selected linked work items and choose **Open in Query** option from the menu. 
 
 > [!div class="mx-imgBorder"]  
 > ![Create links manually](media/tracker/open-as-query.png)
@@ -331,7 +331,7 @@ You can drill down into specifics by choosing one of the dependencies.
 
 You must be a member of the  Project Collection Administrator Group in order to modify the configuration. All changes to the configuration apply to all projects defined in the organization. 
 
-To change the configuration, choose the ![ ](../../media/icons/blue-gear.png) gear icon  and modify the syntax listed. Choose **Save** when done. 
+To change the configuration, choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon  and modify the syntax listed. Choose **Save** when done. 
 
 The main properties you can modify are summarized as follows: 
 - The link types to use to create dependency links. Defaults are the Successor/Predecessor link types. Only customize when you use the [Hosted XML process model](../../organizations/settings/work/hosted-xml-process-model.md) to customize work tracking.  

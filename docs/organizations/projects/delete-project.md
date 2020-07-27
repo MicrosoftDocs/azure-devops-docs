@@ -8,13 +8,13 @@ ms.technology: devops-accounts
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-monikerRange: '>= tfs-2015'
-ms.date: 06/11/2020
+monikerRange: '>= tfs-2013'
+ms.date: 07/20/2020
 ---
 
 # Delete a project
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]    
+[!INCLUDE [temp](../../includes/version-all.md)]    
 
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
 
@@ -41,11 +41,15 @@ In this article, learn how to delete a project from Azure DevOps. Deleting a pro
 
 ::: moniker-end
 
+::: moniker range=">= azure-devops-2020"
+
 ## Delete project
 
-::: moniker range=">= azure-devops-2019"
+::: moniker-end
 
 #### [Browser](#tab/browser) 
+
+::: moniker range=">= azure-devops-2019"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -65,13 +69,56 @@ Your project is deleted and can be restored up to 28 days afterward.
 
 ::: moniker-end
 
+
+#### [Azure DevOps CLI](#tab/azure-devops-cli) 
+
+::: moniker range=">= azure-devops-2020"
+
+You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
+
+```CLI 
+az devops project delete --id
+                         [--org]
+                         [--yes] 
+``` 
+
+#### Parameters 
+
+- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
+- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
+- **yes**: Do not prompt for confirmation.
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
+
+#### Example 
+
+The following command deletes the team project with the specified ID without prompting you for confirmation.
+
+```CLI 
+az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
+``` 
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
+
+* * * 
+
+
+
 <a name="delete-team-proj"></a>
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 [!INCLUDE [temp](../../includes/open-admin-organization-settings.md)]
 
-## Delete a project from TFS
+::: moniker-end
+
+::: moniker range="<= tfs-2018"
+
+## Delete a project 
 
 Using the administration console, you can delete a project from a project collection. Afterwards, you'll need to manually delete any associated reports and SharePoint project portal. Or, you can use the [TFSDeleteProject command line tool](/azure/devops/server/command-line/tfsdeleteproject-cmd) to delete all artifacts.
 
@@ -97,7 +144,7 @@ Using the administration console, you can delete a project from a project collec
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ## Delete reports that remain after deleting a project
 
@@ -107,7 +154,7 @@ If your project used reporting and you didn't choose to delete external artifact
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ## Remove the project portal
 
@@ -115,7 +162,7 @@ If your project had a project portal, all links to that portal get removed from 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 ## What to do if the delete action doesn't finish
 
@@ -135,38 +182,7 @@ Review the status and log files for the delete action. Open the **Status** tab a
 
 ::: moniker-end
 
-::: moniker range="= azure-devops"
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli) 
-
-You can delete a team project with the [az devops project delete](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-delete) command. To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).
-
-```CLI 
-az devops project delete --id
-                         [--org]
-                         [--yes] 
-``` 
-
-#### Parameters 
-
-- **id**: Required. The ID of the project you want to delete. To determine the ID of a project, use the [az devops project list](/cli/azure/ext/azure-devops/devops/project#ext-azure-devops-az-devops-project-list) command.
-- **org**: Azure DevOps organization URL. You can configure the default organization using `az devops configure -d organization=ORG_URL`. Required if not configured as default or picked up using `git config`. Example: `--org https://dev.azure.com/MyOrganizationName/`.
-- **yes**: Do not prompt for confirmation.
-
-#### Example 
-
-The following command deletes the team project with the specified ID without prompting you for confirmation.
-
-```CLI 
-az devops project delete --id 9a61d475-b1a7-4da7-b9db-80df15ac985c --yes
-``` 
-
-
-[!INCLUDE [temp](../../includes/note-cli-not-supported.md)] 
-
-* * * 
-
-::: moniker-end
 
 ## Related articles
 
