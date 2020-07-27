@@ -13,7 +13,7 @@ ms.date: 04/23/2020
 
 # Set permissions at the project- or collection-level
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Several permissions are set at the project or at the organization/project collection level. You can grant these permissions by adding a user or group to one of the default security groups listed here. Or, you can create a custom security group within a level and add members to that group. You can then change the default permission settings.
 
@@ -22,7 +22,7 @@ Several permissions are set at the project or at the organization/project collec
 An organization is the container for several projects that share resources. For more information about projects and project collections, see [Plan your organizational structure](../../user-guide/plan-your-azure-devops-org-structure.md).
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 A project collection is the container for several projects that share resources. For more information about projects and project collections, see [About projects and scaling your organization](../../organizations/projects/about-projects.md).
 ::: moniker-end
 
@@ -31,7 +31,7 @@ A project collection is the container for several projects that share resources.
 > |-------------|----------| 
 > |- Build Administrators<br/>- Contributors<br/>- Project Administrators<br/>- Project Valid Users<br/>- Readers<br/>- Release Administrators<br/>- *TeamName* Team |- Project Collection Administrators<br/>-  Project Collection Build Administrators<br/>- Project Collection Build Service Accounts<br/>- Project Collection Proxy Service Accounts<br/>- Project Collection Service Accounts<br/>- Project Collection Test Service Accounts<br/>- Project Collection Valid Users<br/>- Security Service Group | 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 > [!Note]  
 > The above list indicates the latest groups defined for Azure DevOps and TFS 2017 and later versions. For earlier versions of TFS, the list may differ. Only add service accounts to [TFS service account groups](/azure/devops/server/admin/service-accounts-dependencies). To understand valid user groups, see [About permissions and groups, Valid user groups](about-permissions.md#validusers). 
@@ -55,7 +55,7 @@ For a description of each group and each permission, see [Permissions and groups
 ::: moniker range="azure-devops"  
 * You must be a member of a project. If you don't have a project yet, create one in [Azure DevOps](../accounts/set-up-vs.md). If you haven't been added as a team member, [get added now](../accounts/add-organization-users.md). 
   ::: moniker-end  
-  ::: moniker range="<= azure-devops-2019"  
+  ::: moniker range="< azure-devops"  
 * You must be a member of a project. If you don't have a project yet, create one in an [on-premises TFS](../projects/create-project.md). If you haven't been added as a team member, [get added now](../../organizations/security/add-users-team-project.md). 
   ::: moniker-end  
 * To manage permissions or groups at the project level, you must be a member of the Project Administrators Group or have your **Edit project-level information** set to Allow. If you created the project, you are automatically added as a member of this group. 
@@ -127,7 +127,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 ::: moniker-end 
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -198,7 +198,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 1. To remove a user from a group, choose **Remove** next to the user's name that you want to remove. 
 
@@ -258,7 +258,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 1. From the **Security** page, choose the group whose permissions you want to change. 
 
@@ -275,7 +275,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
     > [!NOTE]   
     > You can't change the permission settings for the Project Administrators group. This is by design.  
 
-1. Choose **Save changes**.   
+2. Choose **Save changes**.   
 
 
 ::: moniker-end
@@ -324,7 +324,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
@@ -447,13 +447,13 @@ You can change a group description or add a group image by editing the group pro
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops" 
 
 You can change a group name, description, add a group image, or delete a group. 
 
 1. From the **Project > Settings > Security** or **Organization > Settings > Security** page, choose the group you want to manage
 
-1. Choose from the **Edit** menu to either **Edit profile** or **Delete**. 
+2. Choose from the **Edit** menu to either **Edit profile** or **Delete**. 
 
     For example, here we open the **Edit profile** for the Stakeholder Access group.  
 
@@ -465,12 +465,7 @@ You can change a group name, description, add a group image, or delete a group.
     > [!div class="mx-imgBorder"]  
     > ![Edit group profile description](media/project-collection/edit-project-level-group-current.png)   
 
-1. Choose **Save** to save your changes.
-
-::: moniker-end
-
-
-::: moniker range="<= azure-devops-2019"  
+3. Choose **Save** to save your changes.
 
 ## On-premises deployments
 
@@ -544,6 +539,3 @@ A: You can find detailed information about individual permissions and their rela
 1. From the team page, select the settings icon ![Settings icon](media/icons/gear_icon.png) to go to the team administration page.
 
 2. Add the user to the **Project Administrators** group.
-
-
-                
