@@ -162,10 +162,6 @@ In the following example, a new resource group and virtual machine scale set are
 
     :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
 
-    > [!IMPORTANT]
-    > During the preview, scale set agents have the following limitations:
-    > - You may not select **Preserve machines with failed runs for diagnostics**.
-
 6. When your settings are configured, choose **Create** to create the agent pool.
 
 ## Use scale set agent pool
@@ -296,7 +292,6 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 
 During the preview, scale set agent pools have some limitations that you need to be aware of. We are actively working on removing these limitations.
 
-- Azure Pipelines cannot preserve a machine for debugging if you have a job that fails.
 - You should not enable or disable agents in the scale set agent pool using Azure Pipelines project settings. This can lead to unexpected behavior.
 
 ### How do I create a scale set with custom software and custom disk size?
