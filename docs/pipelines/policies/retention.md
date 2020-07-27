@@ -335,6 +335,10 @@ By default, Azure DevOps keeps automated test results related to builds only as 
 > [!div class="mx-imgBorder"]
 > ![project settings](media/build-pipelines-retention-policies.png)
 
+### Other automated test results
+
+o clean up automated test results that are left over from deleted builds or test results that aren't related to builds, for example, results published from external test systems, set the retention limits at the project level as shown in the [Manual test-runs retention policies](#manual-test-runs-retention-policies)
+
 ## Artifact retention
 
 Setting a `Build.Cleanup` capability on agents will cause the pool's cleanup jobs to be directed to just those agents, leaving the rest free to do regular work. When a pipeline run is deleted, artifacts stored outside of Azure DevOps are cleaned up through a job run on the agents. When the agent pool gets saturated with cleanup jobs, this can cause a problem. The solution to that is to designate a subset of agents in the pool that are the cleanup agents. If any agents have `Build.Cleanup` set, only those agents will run the cleanup jobs, leaving the rest of the agents free to continue running pipeline jobs.
