@@ -119,7 +119,8 @@
         "pipelines/targets/**": "rabououn",
         "pipelines/tasks/**": "sdanie",
         "pipelines/test/**": "sdanie",
-        "service-hooks/**": "aaronha"
+        "service-hooks/**": "aaronha",
+        "repos/tfvc/**": "v-maksim"
 
       },
       "author": {
@@ -148,7 +149,8 @@
         "pipelines/targets/**": "ramiMSFT",
         "pipelines/tasks/**": "steved0x",
         "pipelines/test/**": "steved0x",
-        "service-hooks/**": "aaronhallberg"
+        "service-hooks/**": "aaronhallberg",
+        "repos/tfvc/**": "MaximMalygin"
 
       },
       "ms.technology": {

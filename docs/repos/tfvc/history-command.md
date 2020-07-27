@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: History command
 ms.assetid: 14c451c2-c59e-46c7-afd5-c727ba683eb2
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

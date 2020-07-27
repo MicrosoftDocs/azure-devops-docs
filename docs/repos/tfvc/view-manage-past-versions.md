@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: View and manage past versions
 ms.assetid: 752b4a6f-4212-4117-a994-03856d0c8ea9
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
