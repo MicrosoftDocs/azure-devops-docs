@@ -121,7 +121,7 @@
         "pipelines/test/**": "sdanie",
         "service-hooks/**": "aaronha",
         "repos/tfvc/**": "v-maksim",
-        "repos/*.md": "macoope",
+        "repos/get-started/**": "macoope",
         "repos/git/**": "macoope"
 
       },
@@ -153,7 +153,7 @@
         "pipelines/test/**": "steved0x",
         "service-hooks/**": "aaronhallberg",
         "repos/tfvc/**": "MaximMalygin",
-        "repos/*.md": "vtbassmatt",
+        "repos/get-started/**": "vtbassmatt",
         "repos/git/**": "vtbassmatt"
 
       },
