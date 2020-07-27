@@ -1,4 +1,4 @@
-﻿---
+---
 title: Subscribe to Azure DevOps events from another service
 description: Use service hooks to set up actions to take when specific events occur in Azure DevOps Services.
 toc: Hide
@@ -6,10 +6,13 @@ ms.assetid: 0614F217-4F4E-45DC-A50C-B9FF81F8A5BD
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
 # Create a service hooks subscription programmatically
+
+[!INCLUDE [version](../../includes/version-tfs-2017-through-vsts.md)]
+
 
 Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/?view=vsts-rest-4.1) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
