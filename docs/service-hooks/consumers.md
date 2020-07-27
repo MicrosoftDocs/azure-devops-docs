@@ -43,7 +43,7 @@ This action sends a generic, template notification to the specified Azure Notifi
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **notificationHubName**
@@ -67,12 +67,12 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **queueName**
     * Queue name
-    * The name of the queue to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the queue does not exists, it will be created if the specified connection string has the necessary permissions.
+    * The name of the queue to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the queue doesn't exist, it is created if the specified connection string has the necessary permissions.
     * Data type: **string**
     * Required: **Yes**
   * **resourceDetailsToSend**
@@ -101,12 +101,12 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **topicName**
     * Topic name
-    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic does not exists, it will be created if the specified connection string has the necessary permissions.
+    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic doesn't exist, it will be created if the specified connection string has the necessary permissions.
     * Data type: **string**
     * Required: **Yes**
   * **resourceDetailsToSend**
@@ -211,15 +211,18 @@ Post a message about the event to a room in Campfire. To learn more, see [Campfi
     * Required: **Yes**
   * **showDetails**
     * Send a detailed message
-    * Post a short or detailed messages about the event.
+    * Post a short or detailed message about the event.
     * Data type: **boolean**
     * Required: **No**
 
 <a id="flowdock"></a>
+
 ## Flowdock
+
 Flowdock is chat and inbox for teams.
 
 ### Post a message to a team chat
+
 Post a message about the event to a team chat in Flowdock. To learn more, see [Flowdock Messages API](https://www.flowdock.com/api/messages).
 
 * Consumer ID: **flowdock**
@@ -307,11 +310,14 @@ Post a message about the event to a team inbox in Flowdock. To learn more, see [
     * Required: **No**
 
 <a id="hipchat"></a>
+
 ## HipChat
+
 HipChat provides group instant messaging for companies and teams.
 
 ### Post a message to a room
-Post a message about the event to a room in HipChat. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
+
+Post a message about the event to a room in HipChat. [Messages, Hipchat Cloud and Developer guide](https://developer.atlassian.com/server/hipchat/messages/).
 
 * Consumer ID: **hipChat**
 * Action ID: **postMessageToRoom**
@@ -424,6 +430,7 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
 Kato provides a messaging service for modern organizations.
 
 ### Post event to room
+
 Posts an event to a Kato room
 
 * Consumer ID: **kato**
