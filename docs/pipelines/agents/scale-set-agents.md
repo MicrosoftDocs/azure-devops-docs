@@ -222,6 +222,7 @@ You can customize the configuration of the Azure DevOps Pipeline Agent by defini
 > [!IMPORTANT]
 > Caution must be exercised when customizing the Pipelines agent.  Some settings will conflict with other required settings, causing the agent to fail to register, and the VM to be deleted.
 > These settings that should not be set or altered:
+
     - VSTS_AGENT_INPUT_URL
     - VSTS_AGENT_INPUT_AUTH
     - VSTS_AGENT_INPUT_TOKEN
@@ -236,7 +237,7 @@ You can customize the configuration of the Azure DevOps Pipeline Agent by defini
 
 Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
-Here is an example to create a custom script extension for Linux:
+Here is an example to create a custom script extension for Linux.
 
     ```azurecli
     az vmss extension set \
@@ -248,7 +249,7 @@ Here is an example to create a custom script extension for Linux:
         --settings '{ \"FileUris\":[\"https://<myGitHubRepoUrl>/myScript.sh\"], \"commandToExecute\": \"bash /myScript.sh /myArgs \" }'
     ```
 
-Here is an example to create a custom script extension for Windows:
+Here is an example to create a custom script extension for Windows.
 
     ```azurecli
     az vmss extension set \
@@ -273,7 +274,7 @@ Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Sca
 
 3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension.  If the Custom Script Extension returns a non-zero exit code the VM creation process is aborted and will be deleted.
 
-4. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. (Note: This URL may change.)
+4. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. (Note: These URLs may change.)
       [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
       [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1)
 
