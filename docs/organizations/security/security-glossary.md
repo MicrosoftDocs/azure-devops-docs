@@ -14,7 +14,7 @@ ms.date: 12/04/2018
 
 # Security key concepts
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 This article provides definitions for select terms used to manage authentication and permissions for Azure DevOps.
  

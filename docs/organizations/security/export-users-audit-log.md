@@ -14,7 +14,7 @@ ms.date: 07/24/2020
 
 # Export a list of users and their access levels
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 <a id="export-audit-log" >  </a>
 

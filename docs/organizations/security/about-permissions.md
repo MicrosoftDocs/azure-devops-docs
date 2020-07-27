@@ -14,7 +14,7 @@ ms.date: 04/14/2020
 
 # About permissions and groups
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 To access the resources you manage in Azure DevOps&mdash;such as your code, builds, and work tracking&mdash;you must have permissions for those specific resources. Most permissions are granted through built-in security groups as described in [Permissions and access](permissions-access.md). You can grant or deny permissions to specific users, built-in security groups, or groups defined in Azure Active Directory (Azure AD) if integrated with Azure DevOps, or Active Directory if integrated with TFS. 
 
@@ -197,7 +197,7 @@ You use the [web portal administration context](../../organizations/security/add
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 |  Permission level |  Web portal security pages | [Team Foundation Administration Console](/azure/devops/server/admin/add-administrator) |    [TFSSecurity CLI](/azure/devops/server/command-line/tfssecurity-cmd) |  [Tf command-line tool](../../repos/tfvc/permission-command.md)  |   
 |-------------------------------------------------------------------------------------|:-----------------------------------:|:--------------------------------------:|:-----------------------------------:|:-----------------------------------:|  
