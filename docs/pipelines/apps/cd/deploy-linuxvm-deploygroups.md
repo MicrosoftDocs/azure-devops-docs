@@ -123,6 +123,8 @@ Your CD release pipeline picks up the artifacts published by your CI build and t
    the path to the **deploy.sh** script in the build artifact. For example, when you use the **nodejs-sample**
    repository to build your app, the location of the script is  
    `$(System.DefaultWorkingDirectory)/nodejs-sample/drop/deploy/deploy.sh`
+   
+   Sample [deploy.sh](https://github.com/azure-devops/fabrikam-node/blob/master/deployscript.sh) file for NodeJS webapp.
 
    ![Configuring the Shell Script task](media/deploy-linuxvm-deploygroups/configure-shellscript-task.png)
 
