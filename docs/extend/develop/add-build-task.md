@@ -1,6 +1,6 @@
 ---
 title: Add a build or release task | Extensions for Azure DevOps 
-description: Add a custom build or release task in an extension for Azure DevOps
+description: Add a custom build or release task in an extension for Azure DevOps.
 ms.assetid: 98821825-da46-498e-9b01-64d3a8c78ea0
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -13,9 +13,9 @@ ms.date: 05/26/2020
 # Add a build or release task
 
 In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
-These tasks appear next to Microsoft-provided tasks in the Add Step wizard.
+These tasks appear next to Microsoft-provided tasks in the **Add Step** wizard.
 
-![Build task catalog for extensions in Azure DevOps](media/build-task-ext-choose-task.png)
+![Screenshot of Build task catalog for extensions in Azure DevOps.](media/build-task-ext-choose-task.png)
 
 To learn more about the new cross-platform build/release system, see [Team Foundation Build & Release](../../pipelines/overview.md). 
 
@@ -38,29 +38,20 @@ To create extensions for Azure DevOps, you need the following software and tools
 - A `home` directory for your project.
     - The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
 
-```
-|--- README.md    
-|--- images                        
-    |--- extension-icon.png  
-|--- buildAndReleaseTask            // where your task scripts are placed
-|--- vss-extension.json             // extension's manifest
-```
+  ```
+  |--- README.md    
+  |--- images                        
+      |--- extension-icon.png  
+  |--- buildAndReleaseTask            // where your task scripts are placed
+  |--- vss-extension.json             // extension's manifest
+  ```
 
 ### Develop in Unix versus Windows
 
-This walk through was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
+This walk-through was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
 
 If using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
 
-## Process 
-Below are the steps to create a build or release task extension and put it on the Marketplace:
-* [Step 1: Create a custom task](#createtask)
-* [Step 2: Unit test the task scripts](#testscripts)
-* [Step 3: Create the extension manifest file](#extensionmanifest)
-* [Step 4: Package your extension](#packageext)
-* [Step 5: Publish your extension](#publishext)
-* [Step 6: Create Build and Release Pipeline to Publish Extension to Marketplace](#createbuildrelease)
-* [Optional: Install and test your extension](#installandtest)
 
 <a name="createtask"></a>
 
@@ -74,7 +65,7 @@ Create the folder structure for the task and install the required libraries and 
 
 #### Create a directory and package.json file
 
-From within your `buildAndReleaseTask` folder, run:
+From within your `buildAndReleaseTask` folder, run the following command.
 
 ```
 npm init
@@ -83,11 +74,11 @@ npm init
 `npm init` creates the `package.json` file. You can accept all of the default `npm init` options.
 
 > [!TIP]
-> The agent doesn't automatically install the required modules, as it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildAndReleaseTask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a vsix file. Before you copy the node folder, you may want to run `npm install --production`, or `npm prune --production`, or you can write a script to build and pack everything.
+> The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildAndReleaseTask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a vsix file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
 
 #### Add azure-pipelines-task-lib
 
-We provide a library, _azure-pipelines-task-lib_, that should be used to create tasks. Add it to your library:
+We provide a library, _azure-pipelines-task-lib_, that should be used to create tasks. Add it to your library.
 
 ```
 npm install azure-pipelines-task-lib --save
@@ -103,7 +94,7 @@ npm install @types/q --save-dev
 ```
 
 Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and `typings install`
-so node_modules are built each time and don't need to be checked in.
+so that node_modules are built each time and don't need to be checked in.
 
 ```
 echo node_modules > .gitignore
@@ -129,9 +120,9 @@ Now that the scaffolding is complete, we can start to create our custom task.
 
 #### task.json
 
-Next, we create a `task.json` file in the `buildAndReleaseTask` folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+Create a `task.json` file in the `buildAndReleaseTask` folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
-Copy the code below and replace the `{{placeholders}}` with your tasks information. The most important placeholder is the `taskguid`, which must be unique and can be generated [here](https://www.guidgen.com/).
+Copy the code below and replace the `{{placeholders}}` with your tasks information. The most important placeholder is the `taskguid`, and it must be unique. You can generate the `taskguid` by using [Microsoft's online GuidGen tool](https://www.guidgen.com/).
 
 ```json
 {
@@ -172,7 +163,7 @@ Here is a description of some of the components of the `task.json` file:
 
 | Property             | Description                                                                                                                |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | A unique guid for your task                                                                                                |
+| `id`                 | A unique GUID for your task                                                                                                |
 | `name`               | Name with no spaces                                                                                                        |
 | `friendlyName`       | Descriptive name (spaces allowed)                                                                                          |
 | `description`        | Detailed description of what your task does                                                                                |
