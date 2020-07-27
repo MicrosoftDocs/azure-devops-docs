@@ -54,28 +54,28 @@ look at the information on the service that you're interested in.
 
 2. 	Create a subscription by running the wizard.
 
-    <img alt="Click the link to run the subscription wizard" src="./media/devops-create-subscription.png" style="border: 1px solid #CCCCCC" />
+    ![Click the link to run the subscription wizard](./media/devops-create-subscription.png)
  
 3.	Select the service you want to integrate with.
 
-    <img alt="Select the service to integrate" src="./media/selectservice.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/selectservice.png" alt-text="Select the service to integrate":::   
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    <img alt="Select the event to trigger on and any filters" src="./media/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    <img alt="Select an action to perform on the target service" src="./media/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action to perform on the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    <img alt="Test notification 1" src="./media/test1.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/test1.png" alt-text="Test notification 1":::  
 	
-    <img alt="Test notification 2" src="./media/test2.png" style="border: 1px solid #CCCCCC" />	
+    :::image type="content" source="./media/test2.png" alt-text="Test notification 2":::  
  
 ::: moniker-end
 
@@ -83,32 +83,32 @@ look at the information on the service that you're interested in.
 
 1.	Open the admin page for a project in web access.
 
-    <img alt="Open the admin page" src="./media/openadmin.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/openadmin.png" alt-text="Open the admin page"::: 
 
 2. 	Create a subscription by running the wizard.
 
-    <img alt="Click the link to run the subscription wizard" src="./media/createfirst.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/createfirst.png" alt-text="Click the link to run the subscription wizard"::: 
  
 3.	Select the service you want to integrate with.
 
-    <img alt="Select the service to integrate" src="./media/selectservice.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/selectservice.png" alt-text="Select the service to integrate":::  
  
 4.	Select the event to trigger on and any filters (if applicable).
 
-    <img alt="Select the event to trigger on and any filters" src="./media/Trello_wizard_Event.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/Trello_wizard_Event.png" alt-text="Select the event to trigger on and any filters":::  
  
 5.	Select an action to run on the target service. 
 
 	> [!NOTE]
     > The list of available actions may be limited based on the event type you selected. 
 
-    <img alt="Select an action to perform on the target service" src="./media/Trello_wizard_Action.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/Trello_wizard_Action.png" alt-text="Select an action to perform on the target service":::  
 
 6.	To confirm the settings are correct, test the subscription and then finish the wizard.
 
-    <img alt="Test notification 1" src="./media/test1.png" style="border: 1px solid #CCCCCC" />
+    :::image type="content" source="./media/test1.png" alt-text="Test notification 1":::  
 	
-    <img alt="Test notification 2" src="./media/test2.png" style="border: 1px solid #CCCCCC" />	
+    :::image type="content" source="./media/test2.png" alt-text="Test notification 2":::  
  
 ::: moniker-end
 

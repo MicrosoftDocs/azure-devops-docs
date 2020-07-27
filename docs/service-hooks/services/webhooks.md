@@ -123,15 +123,15 @@ Sample JSON:
 
 #### Q: Can I programmatically create subscriptions?
 
-A: Yes, see details [here](../create-subscription.md).
+**A:** Yes, see details [here](../create-subscription.md).
 
 #### Q: Can I send web hooks to non HTTPS endpoints?
 
-A: Yes. However, it's recommended that you only use HTTPS endpoints for your web hooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your web hook. 
+**A:** Yes. However, it's recommended that you only use HTTPS endpoints for your web hooks. Using HTTP means there is a the potential for private data being sent unencrypted. This includes any authentication headers in your web hook. 
 
 #### Q: Can I use basic authentication when setting up a web hook that isn't HTTPS?
 
-A: No. You must use HTTPS when utilizing basic authentication on a web hook. 
+**A:** No. You must use HTTPS when utilizing basic authentication on a web hook. 
 
 #### Q: Can we use localhost or special range IPs as web hook targets?
 

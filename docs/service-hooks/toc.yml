@@ -1,29 +1,25 @@
-- name: Integrate with service hooks
+- name: About service hooks
   href: overview.md
-- name: Quickstarts
+- name: Create a service hook
   items:
-  - name: Create a service hook with Grafana
-    href: services/grafana.md
-  - name: Create a service hook with Slack
-    href: services/slack.md
-  - name: Create a service hook with Jenkins
-    href: services/jenkins.md
-  - name: Create a service hook with Trello
-    href: services/trello.md
-  - name: Create a service hook with Datadog
-    href: services/datadog.md
-  - name: Create a service hook with Microsoft Teams
-    href: services/teams.md
-- name: How-to Guides
-  items:
-  - name: Create a service hook with WebHooks
-    href: services/webhooks.md
-  - name: Integrate with workplace messaging apps
+  - name: Workplace messaging apps
     href: services/workplace-messaging-apps.md
-  - name: Authorize other services
-    href: authorize.md
-- name: Reference
-  items:
-  - name: Troubleshoot and FAQs
-    href: troubleshoot.md
+  - name: Grafana
+    href: services/grafana.md
+  - name: Slack
+    href: services/slack.md
+  - name: Jenkins
+    href: services/jenkins.md
+  - name: Trello
+    href: services/trello.md
+  - name: Datadog
+    href: services/datadog.md
+  - name: Microsoft Teams
+    href: services/teams.md
+- name: WebHooks
+  href: services/webhooks.md
+- name: Authorize other services
+  href: authorize.md
+- name: Troubleshoot and FAQs
+  href: troubleshoot.md
 

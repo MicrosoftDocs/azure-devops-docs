@@ -50,7 +50,7 @@ Create events and metrics in Datadog in response to events from Azure DevOps. Us
 
 ### Q: Can I create service hook subscriptions programmatically?
 
-A: Yes. For details, see [Create a service hooks subscription programmatically](create-subscription.md). Submit to either of the following Datadog endpoints: 
+A: Yes. For details, see [Create a service hooks subscription programmatically](../create-subscription.md). Submit to either of the following Datadog endpoints: 
 - **US:** `https://app.datadoghq.com/intake/webhook/azuredevops?api_key=<API_KEY>`
 - **EU:** `https://app.datadoghq.eu/intake/webhook/azuredevops?api_key=<API_KEY>`
 
