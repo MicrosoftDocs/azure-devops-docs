@@ -5,8 +5,6 @@ description: Tips, advice, and suggestions on how to create a great readme file 
 ms.assetid: fcd84ee1-909c-4837-9c39-bf036afe6232
 toc: show
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
