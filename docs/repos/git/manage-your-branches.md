@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Find your work and search for branches using the branches page in Azure DevOps Services/TFS
 ms.assetid: 17722c33-e156-49f1-acad-5fcf4bc3c4fc
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 07/10/2020
 monikerRange: '>= tfs-2017'

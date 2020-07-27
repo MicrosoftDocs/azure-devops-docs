@@ -5,8 +5,6 @@ ms.assetid: cd71e039-6e11-44f9-80fd-66c3bc146b46
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 07/10/2020
-ms.author: macoope
-author: vtbassmatt
 monikerRange: '>= tfs-2015'
 ---
 
