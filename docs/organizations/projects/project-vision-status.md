@@ -221,7 +221,7 @@ Any additional Markdown files you have (ones with a *.md extension) in the root 
 In addition to sharing information, the project summary page pulls data from the applications to give visitors a bird's-eye view of your project activity.
 
 ::: moniker range=">= azure-devops-2019"
-To add users to the project, choose the ![ ](media/share-project/add-members-new-nav.png) **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
+To add users to the project, choose the :::image type="icon" source="media/share-project/add-members-new-nav.png" border="false"::: **add** button. You can only add users to a project that you have already added to the organization. To learn more, see [Add users to a team project or team](../../organizations/security/add-users-team-project.md).
 
 > [!div class="mx-imgBorder"]
 > ![Project stats](media/share-project/project-stats-new-nav.png)

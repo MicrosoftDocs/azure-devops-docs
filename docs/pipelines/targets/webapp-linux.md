@@ -11,7 +11,7 @@ ms.date: 09/09/2019
 monikerRange: '>= tfs-2017'
 ---
 
-# Deploy an Azure Web App
+# Deploy an Azure Web App (Linux)
 
 [!INCLUDE [version-Azure DevOps Services-rtm](../includes/version-tfs-2017-rtm.md)]
 

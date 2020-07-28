@@ -1,5 +1,5 @@
 ---
-title: Service hooks consumers for Azure DevOps Services
+title: Service hook consumers for Azure DevOps Services
 description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 08/04/2016
 ---
 
-# Service hook consumers
+# Service hook consumers for Azure DevOps Services
 
 Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action. 
 Select the consumer that you want to use in your subscription from the following consumers:

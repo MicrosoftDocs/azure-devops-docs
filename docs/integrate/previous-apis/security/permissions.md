@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 03/15/2017
 ---
 
-# Permissions
+# Permissions and security
 
 [!INCLUDE [azure-devops](../_data/azure-devops-message.md)]
 

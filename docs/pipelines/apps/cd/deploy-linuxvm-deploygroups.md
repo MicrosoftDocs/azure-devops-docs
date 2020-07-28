@@ -10,7 +10,7 @@ ms.date: 02/23/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Deploy to a Linux Virtual Machine
+# Deploy a web app to an nginx web server on a Linux Virtual Machine
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
