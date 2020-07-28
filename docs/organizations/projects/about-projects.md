@@ -47,7 +47,7 @@ The collection-project-team structure provides teams a high-level of autonomy to
 
 When you connect to Azure DevOps, you connect to an organization or project collection. Within that container, one or more projects may be defined. At a minimum, at least one project must be created in order to use the system.
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 You can scale your organization in the following ways:
 
 - To support different business units, you can add projects
@@ -58,8 +58,8 @@ You can scale your organization in the following ways:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
-You can scale your on-premises TFS deployment in the following ways:
+::: moniker range="< azure-devops"
+You can scale your on-premises Azure DevOps deployment in the following ways:
 
 - To increase performance, you can add server instances
 - To support different business units, you can add project collections and projects
@@ -78,7 +78,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
@@ -89,7 +89,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)
@@ -120,7 +120,7 @@ Even if you have many teams working on hundreds of different applications and so
 
 ### Reasons to add another project
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project to select groups
@@ -131,7 +131,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="< azure-devops"
 Instances where you may want to add another project include the following:
 
 - To prohibit or manage access to the information contained within a project
@@ -141,7 +141,7 @@ Instances where you may want to add another project include the following:
 
 ::: moniker-end
 
-::: moniker range=">= azure-devops-2019"
+::: moniker range="azure-devops"
 
 ## Private and public projects
 
@@ -245,7 +245,14 @@ See also, [Compatibility with Azure DevOps Server versions](/azure/devops/server
 ### Q: Can I move or transfer a project to another organization or collection? 
 
 **A:** Not without losing data. You can't move a project from one collection/organization to another collection/organization without losing data. You can either manually copy resources and leave some behind, or some third party tool, such as [Opshub Visual Studio Migration Utility](https://www.opshub.com/products/opshub-visual-studio-migration-utility/) that copies data using the REST APIs. 
- 
+### Q: What programmatic tools support projects?
+
+**A.** See [Projects REST API](/rest/api/azure/devops/core/projects). 
+
+::: moniker range=">= azure-devops-2020"
+Also, you can use the [**az devops projects** commands](/cli/azure/ext/azure-devops/devops/project).  
+::: moniker-end
+
 
 ## Related articles
 

@@ -38,7 +38,7 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 ::: moniker range="azure-devops"
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 ::: moniker-end
 
 ::: moniker range="azure-devops"
@@ -85,7 +85,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-team-services" /> 
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open the **Project settings** page for the project.  
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open the **Project settings** page for the project.  
 
 	![Open project admin page](media/add-team/open-admin-context-tfs-2017.png) 
 
@@ -102,7 +102,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 <a id="add-team-tfs-2015" />
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear settings icon to open **Project Settings.**  
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear settings icon to open **Project Settings.**  
 
 	![Open project admin page](../../media/settings/open-admin-page-tfs2015.png)  
 
@@ -249,7 +249,7 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 

@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2013'
 ---
 # Cloud Solution Providers: Buy Visual Studio App Center resources
 
-[!INCLUDE [version-vsts-tfs-all-versions](../../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 Partners in the Cloud Solution Provider (CSP) program can enable their customers to purchase [Visual Studio App Center resources](https://azure.microsoft.com/services/app-center/) by using a CSP-based Azure subscription. Resources include build pipelines, test device concurrencies, and advanced push notifications.
 

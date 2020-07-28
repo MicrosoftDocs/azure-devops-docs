@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Create a local clone of an existing repo using Visual Studio or command prompt
 ms.assetid: b6240e2f-2d3d-4874-9953-7e554d5e3b97
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'

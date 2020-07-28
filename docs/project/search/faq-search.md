@@ -6,11 +6,11 @@ ms.technology: devops-collab
 ms.topic: conceptual
 ms.author: sunar
 author: chcomley
-ms.date: 11/18/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017 < azure-devops'
 ---
 
-# Troubleshoot Search
+# Troubleshoot search
 
 [!INCLUDE [version-header-tfs-only](../../includes/version-header-tfs-only.md)]
 

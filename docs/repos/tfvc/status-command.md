@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Status command
 ms.assetid: e9f0b3a1-b8b1-45cf-b113-9fea2948405d
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

@@ -47,7 +47,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the user interface for the **New Teams Page**, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 
@@ -101,12 +101,12 @@ See the New Teams page for information on adding team administrators.
 ::: moniker-end
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open **Team Settings**.
+1. From the web portal and team context, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open **Team Settings**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Team Settings](media/add-team-admin/open-team-settings-horz.png)
 
-	If you choose the ![ ](../../media/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
+	If you choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon from the project context, then choose **Overview**, and select the team you want to configure.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.  
 
@@ -121,12 +121,12 @@ See the New Teams page for information on adding team administrators.
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal and team context, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open the administration page.
+1. From the web portal and team context, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open the administration page.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, TFS, Open Admin context, project level](../../media/settings/open-admin-page-tfs2015.png)
 
-	If you choose the ![ ](../../media/icons/gear_icon.png) gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
+	If you choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon from the project context, then choose **Overview**, and select the team you want to add an administrator to.   
 
 2. Choose the **Add** link to open the dialog for adding user identities.    
   

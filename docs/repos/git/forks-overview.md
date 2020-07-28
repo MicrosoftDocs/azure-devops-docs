@@ -1,17 +1,15 @@
 ---
-title: Forks
+title: Forks overview
 titleSuffix: Azure Repos     
 description: Learn about forks in Azure DevOps Services & TFS  
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.author: apawast
-author: apawast
 ms.topic: overview
 ms.date: 06/01/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Forks
+# Forks overview
 
 #### Azure Repos | Azure DevOps Server 2019 | TFS 2018
 

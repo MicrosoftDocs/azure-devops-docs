@@ -4,7 +4,7 @@
   href: wiki/toc.yml
 - name: Public Projects
   href: ../organizations/public/toc.yml
-- name: Search across Azure DevOps
+- name: Search  
   href: ./search/toc.yml  
 - name: Feedback
   href: feedback/toc.yml 

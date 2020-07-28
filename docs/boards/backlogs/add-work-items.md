@@ -33,7 +33,7 @@ You can start adding work items once you connect to a project.
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](../../project/navigation/media/add-artifact/add-work-item-query-vert.png)
@@ -72,7 +72,7 @@ Create as many work items as you need of the type you need to track the work you
     >
     > For an overview of all three processes, see [Choose a process](../work-items/guidance/choose-process.md). 
 
-    Choose the ![pin icon](../media/icons/pin-icon.png) pin icon to have it show up within **Work** drop down menu. 
+    Choose the  :::image type="icon" source="../media/icons/pin-icon.png" border="false":::  pin icon to have it show up within **Work** drop down menu. 
 
 3. Enter a title and then save the work item. Before you can change the State from its initial default, you must save it.  
 
@@ -307,7 +307,7 @@ ID    Type    Title       Assigned To          State
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.   
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 
@@ -316,7 +316,7 @@ You'll only receive notifications when other members of your team modifies the w
 
 Notifications are sent to your preferred email address, which [you can change from your user profile](../../notifications/change-email-address.md).  
 
-To stop following changes, choose the ![ ](../media/icons/following-icon.png) following icon.
+To stop following changes, choose the  :::image type="icon" source="../media/icons/following-icon.png" border="false":::  following icon.
 
 ::: moniker-end
 
