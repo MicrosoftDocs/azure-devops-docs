@@ -14,7 +14,7 @@ ms.date: 07/20/2020
 
 # Delete a project
 
-[!INCLUDE [temp](../../includes/version-all.md)]    
+[!INCLUDE [version-all](../../includes/version-all.md)]  
 
 In this article, learn how to delete a project from Azure DevOps. Deleting a project helps simplify navigating to projects that are only in use.
 
