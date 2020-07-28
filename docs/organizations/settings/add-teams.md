@@ -17,6 +17,9 @@ ms.date: 11/05/2019
 
 As your organization grows, make sure that you configure your Agile tools to support that growth. Each team needs their own set of team tools to enable the autonomy it needs to manage their backlog and plan their sprints. For more information about features assigned to teams, see [About teams and Agile tools](about-teams-and-settings.md). 
 
+Each new project is configured with a default team with the project name. You can rename the default team and you can reassign a new team as the default. 
+
+
 > [!NOTE]    
 > This article describes how to add a team or team members to a project defined in Azure DevOps. To learn about Microsoft Teams, see the Marketplace extension, [Microsoft Teams Integration](https://marketplace.visualstudio.com/items?itemName=ms-vsts.vss-services-teams). 
 >
@@ -25,7 +28,7 @@ As your organization grows, make sure that you configure your Agile tools to sup
 
 <a id="add-team"> </a>  
 
-As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber team with visibility across each of these two teams.  
+As your team grows, you can easily move from one team to two. In this example, we add two feature teams, Email and Voice, and maintain the Fabrikam Fiber default team with visibility across each of these two teams.  
 
 ## Prerequisites 
 
@@ -45,9 +48,6 @@ As your team grows, you can easily move from one team to two. In this example, w
 
 ::: moniker range="azure-devops"
 **New Teams Page**
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020" 
 
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
 
@@ -74,13 +74,11 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 **Teams Page (current version)** 
+
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 From your web browser, you can view teams that have been added and add teams. 
 
@@ -140,6 +138,8 @@ To configure other team features, see [Manage teams and configure team tools](ma
 	> Team tools aren't available until the team's default area path is set. 
 
 	To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
+
+5. To assign a team as the default team, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for that team and select **Set team as project default**. 
 
 ::: moniker-end
 
@@ -377,9 +377,6 @@ Now that your two feature teams are configured, you need to move existing work i
 
 ::: moniker range="azure-devops"
 **New Teams Page** 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020"
 
 1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
@@ -389,13 +386,10 @@ Now that your two feature teams are configured, you need to move existing work i
   
    ![Bulk save edited work items](media/add-team/query-bulk-save.png)
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 **Teams Page (current version)** 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range=">= azure-devops-2019"
 
 1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
@@ -581,10 +575,6 @@ One last step in moving from one team to two teams requires configuring the defa
 
 ::: moniker range="azure-devops"
 **New Teams Page**
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020" 
-
 1. Open **Project settings > Team configuration > Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
@@ -595,13 +585,10 @@ One last step in moving from one team to two teams requires configuring the defa
   > [!div class="mx-imgBorder"]  
   > ![Product backlog, default project team](media/add-team/product-backlog-default-team.png)
 
-::: moniker-end
-
-::: moniker range="azure-devops"
 **Teams Page (current version)** 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops" 
+::: moniker range=">= azure-devops-2019" 
 
 1. Open **Project settings > Team configuration > Areas** settings page for the default project team, and change the setting as shown.  
 
@@ -701,7 +688,7 @@ For teams to work autonomously, you may want to provide them with permissions th
 For more information on setting the above permissions or restricting access for select users, see [Set permissions and access for work tracking](../security/set-permissions-access-work-tracking.md).
 
 
-::: moniker range=">= tfs-2018 < azure-devops" 
+::: moniker range="< azure-devops" 
 
 If your Azure DevOps Server or TFS deployment is integrated with SQL Server Reports, you'll need to [Grant permissions to view or create SQL Server reports to team members](../../report/admin/grant-permissions-to-reports.md). 
 
