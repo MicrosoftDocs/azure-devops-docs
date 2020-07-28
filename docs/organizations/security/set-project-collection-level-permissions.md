@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2020
+ms.date: 07/28/2020
 ---
 
 # Set permissions at the project- or collection-level
@@ -446,6 +446,8 @@ You can change a group description or add a group image by editing the group pro
 1. Choose **Save** to save your changes.
 
 ::: moniker-end
+
+* * *
 
 ::: moniker range="< azure-devops" 
 
