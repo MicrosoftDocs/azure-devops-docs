@@ -581,6 +581,8 @@ Depending on the authentication type and ownership of the repository, specific p
 
 * The traffic from Azure DevOps could be throttled by GitHub. When Azure Pipelines receives a notification from GitHub, it tries to contact GitHub and fetch more information about the repo and YAML file. If you have a repo with a large number of updates and pull requests, this call may fail due to such throttling. In this case, see if you can reduce the frequency of builds by using batching or stricter path/branch filters.
 
+[!INCLUDE [qa](includes/qa2_1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
 
 ### Failing checkout

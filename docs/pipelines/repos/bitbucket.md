@@ -215,6 +215,8 @@ Problems related to BitBucket integration fall into the following categories:
 
 * Webhooks are used to communicate updates from BitBucket to Azure Pipelines. In BitBucket, navigate to the settings for your repository, then to Webhooks. Verify that the webhooks exist.
 
+[!INCLUDE [qa](includes/qa2_1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
 
 ### Wrong version
