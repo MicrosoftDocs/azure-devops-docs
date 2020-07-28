@@ -67,7 +67,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -88,7 +88,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
