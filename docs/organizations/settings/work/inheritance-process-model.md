@@ -113,7 +113,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 ## Field customizations 
 
-Fields defined in the system process appear with an ![ ](media/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
+Fields defined in the system process appear with an :::image type="icon" source="media/process/inherited-icon.png" border="false"::: inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
 Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process. 
 
@@ -129,7 +129,7 @@ Fields are defined for all projects and processes in the organization. That mean
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited fields** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited fields** 
    :::column-end:::
    :::column span="2":::
       - [Change the field label](customize-process-field.md#rename-field)  
@@ -297,7 +297,7 @@ Here are your customization options for inherited and custom WITs.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited work item types** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited work item types** 
    :::column-end:::
    :::column span="2":::
       - [Add custom rules to a WIT](custom-rules.md)  
@@ -353,7 +353,7 @@ You can make the following customizations to a WIT form.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited groups** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited groups** 
    :::column-end:::
    :::column span="2":::
       - [Relabel](customize-process-form.md#groups)   
@@ -375,7 +375,7 @@ You can make the following customizations to a WIT form.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited pages** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited pages** 
    :::column-end:::
    :::column span="2":::
       - [Relabel](customize-process-form.md#pages) 

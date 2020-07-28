@@ -125,7 +125,7 @@ All work items you import are created in a new state. This rule means that you c
 
 ## Export list as CSV 
 
-From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the ![  ](../../media/icons/actions-icon.png) actions icon, and choose **Export to CSV**.
+From any query, you can export a list of work items as a comma-delimited list. Simply [open the query](view-run-query.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose **Export to CSV**.
 
 ::: moniker-end
 
