@@ -13,6 +13,8 @@ ms.date: 08/04/2016
 
 # Get started with the REST APIs
 
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
 Integrate your app with Azure DevOps Services and Team Foundation Server (TFS) using these REST APIs.
 
 These APIs follow a common pattern: 
