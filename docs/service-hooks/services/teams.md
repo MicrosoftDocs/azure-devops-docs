@@ -5,7 +5,7 @@ title: Create a service hook Microsoft Teams
 titleSuffix: Azure DevOps Server
 description: Use Microsoft Teams with your Azure DevOps organization
 monikerRange: '>= tfs-2017'
-ms.date: 07/27/2020
+ms.date: 07/27/2020 
 ---
 
 # Create a service hook for Azure DevOps with Microsoft Teams 
