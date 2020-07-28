@@ -48,8 +48,8 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	> [!div class="mx-imgBorder"]  
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
-	> [!TIP]
-  > Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
+	> [!TIP]    
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
