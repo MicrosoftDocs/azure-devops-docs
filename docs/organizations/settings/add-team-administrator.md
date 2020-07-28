@@ -71,7 +71,7 @@ If you need to add a team, see [Add teams](add-teams.md).
 
 ::: moniker-end
  
-[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)]  
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
