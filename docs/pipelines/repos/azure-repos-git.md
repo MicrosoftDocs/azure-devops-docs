@@ -222,7 +222,11 @@ Problems related to Azure Repos integration fall into three categories:
 
 [!INCLUDE [qa](includes/qa3.md)]
 
-#### I have the YAML file in one repo and the application code in a different repo. How do I set up the pipeline to be triggered by changes to application code?
+[!INCLUDE [qa](includes/qa4.md)]
+
+#### I have multiple repositories in my YAML pipeline. How do I set up triggers for each repository?
+
+See triggers in [Using multiple repositories](multi-repo-checkout.md#triggers).
 
 ### Failing checkout
 

@@ -564,6 +564,14 @@ Depending on the authentication type and ownership of the repository, specific p
 - If you're using OAuth, see [OAuth authentication](#oauth-authentication).
 - If you're using PATs, see [Personal access token (PAT) authentication](#personal-access-token-pat-authentication).
 
+#### When I select a repository during pipeline creation, I get an error "The repository <repo-name> is in use with the Azure Pipelines GitHub App in another Azure DevOps organization."
+
+This means that your repository is already associated with a pipeline in a different organization. CI and PR events from this repository won't work as they will be delivered to the other organization. Here are the steps you should take to remove the mapping to the other organization before proceeding to create a pipeline.
+
+  1. Open a pull request in your GitHub repository, and make the comment `/azp where`. This reports back the Azure DevOps organization that the repository is mapped to. 
+  
+  2. To change the mapping, uninstall the app from the GitHub organization, and re-install it. As you re-install it, make sure to select the correct organization when you are redirected to Azure DevOps.
+
 ### Failing triggers
 
 [!INCLUDE [qa](includes/qa2.md)]
@@ -587,6 +595,8 @@ Depending on the authentication type and ownership of the repository, specific p
 [!INCLUDE [qa](includes/qa2_1.md)]
 
 [!INCLUDE [qa](includes/qa3.md)]
+
+[!INCLUDE [qa](includes/qa4.md)]
 
 ### Failing checkout
 
