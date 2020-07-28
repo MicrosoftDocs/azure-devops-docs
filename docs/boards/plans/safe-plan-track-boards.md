@@ -126,7 +126,7 @@ Each program manager defines and prioritizes their features. Here, we show the F
 
 In this next step you'll map each Feature to it's parent Epic. The Mapping tool quickly create parent-child links between Epics and Features. 
 
-1. From the Features backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Features backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping.png)
@@ -141,7 +141,7 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Drag and drop feature onto epic](media/safe-plan-track/map-feature-to-epic.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
 	Your list should look something like that shown in the following image. The   :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
 
@@ -182,7 +182,7 @@ In a similar manner to portfolio and program teams, each Agile feature team add 
 
 Just as you earlier mapped each Feature to it's parent Epic, now you'll map each User Story to it's parent Feature. The Mapping tool quickly create parent-child links between Features and User Stories. 
 
-1. From the Stories backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Stories backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
@@ -197,7 +197,7 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, Drag and drop user story onto feature](media/safe-plan-track/map-story-to-feature.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
 	Your list should look something like that shown in the following image. The  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
 

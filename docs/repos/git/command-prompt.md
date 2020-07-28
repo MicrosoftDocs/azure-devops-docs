@@ -5,8 +5,6 @@ description: Commands reference for common Git tasks in Visual Studio or the com
 ms.assetid: FAED51BE-2CB0-46DE-8C72-E4EEF6CB8827
 toc: show
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'

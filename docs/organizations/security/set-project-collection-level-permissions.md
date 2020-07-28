@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 04/23/2020
+ms.date: 07/28/2020
 ---
 
 # Set permissions at the project- or collection-level
@@ -120,7 +120,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
     > [!NOTE]   
     > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-5. Choose **Save changes**. Choose the ![ ](../../media/icons/refresh.png) refresh icon to see the additions.  
+5. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 * * *
 
@@ -150,7 +150,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
     > [!NOTE]   
     > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-1. Choose **Save changes**. Choose the ![ ](../../media/icons/refresh.png) refresh icon to see the additions.  
+1. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 ::: moniker-end 
 
@@ -158,7 +158,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
+1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
@@ -176,7 +176,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
     > [!NOTE]   
     > Users that have limited access, such as Stakeholders, won't be able to access select features even if granted permissions to those features. To learn more, see [Permissions and access](permissions-access.md).
 
-4. Choose **Save changes**. Choose the ![ ](../../media/icons/refresh.png) refresh icon to see the additions.  
+4. Choose **Save changes**. Choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see the additions.  
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="azure-devops"
 
-1. To remove a user or group from a security group, choose the ![ ](../../media/icons/more-actions.png) **More actions** icon, and then **Remove**. 
+1. To remove a user or group from a security group, choose the :::image type="icon" source="../../media/icons/more-actions.png" border="false"::: **More actions** icon, and then **Remove**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Remove a user](media/project-collection/remove-admin-member-s157.png)  
@@ -290,7 +290,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 > [!NOTE]   
 > To enable the new user interface for the **Organization Permissions Settings Page v2**, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not. 
 
-1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert-2.png)  
@@ -326,7 +326,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert-2.png)  
@@ -359,7 +359,7 @@ Here we show how to add a user to the built-in Project Administrators group. The
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the ![ ](/azure/devops/media/icons/gear_icon.png) settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** (Azure DevOps) or **Collection settings** (on-premises).  
     
     > [!div class="mx-imgBorder"]  
     > ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  
@@ -446,6 +446,8 @@ You can change a group description or add a group image by editing the group pro
 1. Choose **Save** to save your changes.
 
 ::: moniker-end
+
+* * *
 
 ::: moniker range="< azure-devops" 
 
