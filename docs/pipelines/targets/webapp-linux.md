@@ -1,5 +1,5 @@
 ---
-title: Deploy an Azure Web App
+title: Deploy an Azure Web App (Linux)
 description: Deploy to Azure Web Apps on Linux from Azure Pipelines 
 services: vsts
 ms.topic: conceptual
