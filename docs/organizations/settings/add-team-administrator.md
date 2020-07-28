@@ -70,9 +70,8 @@ If you need to add a team, see [Add teams](add-teams.md).
 	> ![Add team administrator dialog](media/add-team-admin/add-team-administrator-dialog-preview.png)
 
 ::: moniker-end
-::: moniker range="<+ azure-devops-2020" 
-The **New Teams Page** isn't available for Azure DevOps Server 2020 and earlier versions. 
-::: moniker-end
+ 
+[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
@@ -157,7 +156,7 @@ From the Administrators section, choose the ![remove icon](../../media/icons/rem
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)]  
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
