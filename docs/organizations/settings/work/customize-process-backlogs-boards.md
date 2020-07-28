@@ -53,7 +53,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Add a portfolio backlog 
 	
-1. From the  **Backlog levels** page, choose ![ ](../../../media/icons/blue-add-icon.png) **New top level portfolio backlog**. 
+1. From the  **Backlog levels** page, choose :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](media/process/process-new-portfolio-backlog.png) 
@@ -72,7 +72,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Edit, rename, or delete a portfolio backlog 
 
-From the Backlog levels page, choose the ![](../../../media/icons/actions-icon.png)  context menu of a portfolio backlog to edit, rename, or delete it.  
+From the Backlog levels page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
 
 > [!NOTE]    
 > You can't add an inherited work item type to any backlog level. 

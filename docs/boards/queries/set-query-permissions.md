@@ -39,7 +39,7 @@ To learn more about access levels, see [About access levels](../../organizations
 
 ## Default query permissions
 
-A ![ ](/azure/devops/media/icons/checkmark.png) checkmark in the following table indicates that the corresponding access level or security group has access to a feature by default. 
+A :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark in the following table indicates that the corresponding access level or security group has access to a feature by default. 
 
 [!INCLUDE [temp](../../organizations/security/includes/boards-queries.md)]
 
@@ -124,11 +124,11 @@ If you're not a member of the project administrators group, [get added](../../or
 
 ::: moniker range="<= tfs-2018"
 
-1. Add a query folder under **Shared queries** or a sub-folder. Choose the ![ ](../media/icons/context_menu.png) context menu icon for the folder and choose **New query folder**.  
+1. Add a query folder under **Shared queries** or a sub-folder. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder and choose **New query folder**.  
 
 	![New query folder link on queries context menu](media/set-query-perm-new-folder.png)  
 
-1. To set permissions for the folder, choose the ![ ](../media/icons/context_menu.png) context menu icon for the folder you just added and choose **Security**.
+1. To set permissions for the folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon for the folder you just added and choose **Security**.
 
    ![Permissions dialog for a query folder](media/set-permissions-query-folder-security.png)
 
@@ -169,7 +169,7 @@ To keep anyone else from modifying a shared query that you create, you may want 
 
 ::: moniker range="<= tfs-2018"
 
-1. Choose the ![ ](../media/icons/context_menu.png) context menu icon and select **Security**. 
+1. Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon and select **Security**. 
 
    ![Open query permissions](media/set-query-perm-security-menu-option.png)
 

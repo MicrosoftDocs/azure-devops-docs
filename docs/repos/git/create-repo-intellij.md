@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Intro to the IntelliJ plugin available for Azure Repos.
 ms.assetid:
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2015'
