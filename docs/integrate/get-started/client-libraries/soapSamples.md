@@ -113,4 +113,3 @@ public static void MicrosoftAccountSample()
 	}
 }
 ```
-```
