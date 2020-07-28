@@ -6,9 +6,9 @@ ms.topic: include
 
 |Query editor   |Action  |Query results |  Action  |
 |-------------|----------|---------|---------|
-|![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) ![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png) |Move focus left/right |![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) ![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png) |Scroll left/right |
-|![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png) ![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png) |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
-|**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png)![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png) |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png)![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Down.png) | Highlight consecutive rows|
+|![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) :::image type="icon" source="/azure/devops/boards/media/icons/Arrow_Previous.png" border="false"::: |Move focus left/right |![Left/right arrow](/azure/devops/boards/media/icons/Arrow_Next.png) :::image type="icon" source="/azure/devops/boards/media/icons/Arrow_Previous.png" border="false"::: |Scroll left/right |
+|![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png) :::image type="icon" source="/azure/devops/boards/media/icons/Arrow_Down.png" border="false"::: |Move focus up/down |**PgUp/PgDn**|Scroll up/down |
+|**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png):::image type="icon" source="/azure/devops/boards/media/icons/Arrow_Down.png" border="false"::: |Highlight consecutive clauses |**Shift+**![Up/Down arrow](/azure/devops/boards/media/icons/Arrow_Up.png):::image type="icon" source="/azure/devops/boards/media/icons/Arrow_Down.png" border="false"::: | Highlight consecutive rows|
 |**Shift+**![Left arrow](/azure/devops/boards/media/icons/Arrow_Next.png) |Move focus left one field at a time |**Shift+Alt,n** | Move focus to next item |
 |**Shift+**![Right arrow](/azure/devops/boards/media/icons/Arrow_Previous.png) |Move focus right one field at a time |**Shift+Alt,p** | Move focus to previous item |
 |**End** |Move focus to end of current clause | **End** |Move focus to bottom of list|

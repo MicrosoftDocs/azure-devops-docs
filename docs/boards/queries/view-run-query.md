@@ -78,18 +78,18 @@ Open **Queries>All**. Under the **My Queries** section are two fully customizabl
 
 ### How do I quickly navigate to queries I view frequently?  
 
-- Favorite those queries and other artifacts that you view frequently. Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a query. 
-- Favorited queries (![ ](../../media/icons/icon-favorited.png) favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
+- Favorite those queries and other artifacts that you view frequently. Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a query. 
+- Favorited queries (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) are listed in the **Queries>Favorites** page. Also, you can select one from the queries selector, as shown in the following image.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![queries selector](media/example-queries/queries-selector.png)  
-	Or, you can select from any of your favorited items by choosing the ![ ](../../media/icons/inbox.png) inbox icon and choose **Favorites**.  
+	Or, you can select from any of your favorited items by choosing the :::image type="icon" source="../../media/icons/inbox.png" border="false"::: inbox icon and choose **Favorites**.  
 
 	![queries selector](media/example-queries/favorites-selector.png)  
 
 ### How do I quickly navigate to queries within the same query folder?  
 
-When viewing a query, you can use the queries breadcrumb selector (![ ](../../media/icons/breadcrumb-selector.png) the breadcrumb icon changes to ![ ](../../media/icons/context-menu-selector.png) a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
+When viewing a query, you can use the queries breadcrumb selector (:::image type="icon" source="../../media/icons/breadcrumb-selector.png" border="false"::: the breadcrumb icon changes to :::image type="icon" source="../../media/icons/context-menu-selector.png" border="false"::: a context menu selector) to view the queries defined within the folder. To open the queries folder, choose the folder name. 
 
 > [!div class="mx-imgBorder"]  
 > ![queries breadcrumb example](media/view-run-queries/folder-selector.png)  
@@ -181,7 +181,7 @@ For shared queries, you can also choose to perform one of these tasks:
 
 ::: moniker range="<= tfs-2018"  
 
-Choose the ![ ](../media/icons/context_menu.png) context menu icon of a query to edit, rename, or delete the query.
+Choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu icon of a query to edit, rename, or delete the query.
 
 ![Web portal, Boards>Queries, Open Shared queries, Active Bugs](media/using-queries-active-bugs-ts.png)
 

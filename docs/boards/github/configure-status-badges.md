@@ -51,7 +51,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Status badge](media/badges/status-badge.png) 
 
-1. Choose the badge type you want and choose the ![ ](../../media/icons/copy.png) copy icon to copy the Markdown syntax for the badge. 
+1. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 
 	In progress items ignores the first and last columns.
 	All columns includes the first and last columns. 

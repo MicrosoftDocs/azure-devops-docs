@@ -148,7 +148,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
 ::: moniker range="tfs-2015" 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](media/add-columns-open-settings-ts.png)  
 
@@ -166,7 +166,7 @@ With an understanding of how you'll use WIP limits, here's how you set them. If 
    ::: moniker range="tfs-2013"    
 6. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-7. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the common configuration settings dialog for the Kanban board.  
+7. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the common configuration settings dialog for the Kanban board.  
 
 	![Open configuration settings](media/columns/open-settings-2013.png)    
 

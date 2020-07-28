@@ -130,7 +130,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	> ![Choose board level, vert nav](media/configure-team/choose-board-level-vert.png)
 
-4. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+4. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
@@ -144,7 +144,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
@@ -153,7 +153,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
  
 	For example, from the Kanban board ...  
 
@@ -169,7 +169,7 @@ You can configure most of your team settings from the common configuration dialo
 
 ::: moniker range="tfs-2015"
 
-1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
+1. Make sure that you select the team from the project/team selector. You can switch your team focus to one that you've recently viewed from the project/team selector. If you don't see the team or project you want, choose **Browse&hellip;** or choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [access the **Projects** page](../../project/navigation/work-across-projects.md).  
 
 	![Choose another team from the project menu](../../media/work-web-portal-ts-switch-team-focus.png)
 
@@ -178,7 +178,7 @@ You can configure most of your team settings from the common configuration dialo
 	> [!div class="mx-imgBorder"]
 	>![Open Kanban board](../../boards/boards/media/kanban-basics-intro.png)  
 
-3. Choose the board you want to configure and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to configure the board and set general team settings.  
+3. Choose the board you want to configure and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	For example, from the Kanban board ...  
 

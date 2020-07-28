@@ -190,14 +190,14 @@ CFD reports are available for each backlog level, both product and portfolio bac
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
-1. To add the report to a dashboard, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
 	
 	Select the dashboard and choose **OK**.  
 
-1. To return to the Analytics summary, choose the ![ ](../../media/icons/back-arrow.png)back arrow.
+1. To return to the Analytics summary, choose the :::image type="icon" source="../../media/icons/back-arrow.png" border="false":::back arrow.
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range="azure-devops-2019" 
 
-1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the ![ ](../../boards/media/icons/team-settings-gear-icon.png) gear icon.  
+1. Open the [backlog level for which you want to configure](../../boards/boards/kanban-quickstart.md) and then open the common configuration dialog. Choose the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Board settings](media/cfd/open-cfd-settings-new-nav.png)
@@ -254,7 +254,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 ::: moniker range="<= tfs-2018"
 
-1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the ![ ](../../boards/media/icons/team-settings-gear-icon.png) gear icon.  
+1. Open the backlog level for which you want to configure and then open the common configuration dialog. Choose the :::image type="icon" source="../../boards/media/icons/team-settings-gear-icon.png" border="false"::: gear icon.  
 
 	<img src="../../boards/boards/media/kanban-card-customize-open-settings.png" alt="Kanban board, open common configuration settings" style="border: 2px solid #C3C3C3;" />  
 
@@ -282,7 +282,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 	![Cumulative flow diagram widget](media/cfd-choose-widget.png)  
 
-1. Choose the ![ ](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+1. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="media/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />   
 
@@ -296,7 +296,7 @@ Each team can set their preferences for the in-context cumulative flow charts.
 
 	![Cumulative flow diagram widget](media/cfd-choose-widget.png)  
 
-1. Choose the ![ ](../media/icons/actions-icon.png) actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
+1. Choose the :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option to open the configuration dialog. Modify the title, and then select the team, backlog level, swimlanes, and time period you want to monitor.  
 
 	<img src="media/cfd-configure.png" alt="Configure CFD chart" style="border: 2px solid #C3C3C3;" />   
 

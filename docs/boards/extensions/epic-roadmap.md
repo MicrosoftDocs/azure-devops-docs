@@ -134,7 +134,7 @@ You can access the Epic Roadmap from either your team's Kanban board or backlog.
 
 	The Start and End iterations are derived from the iteration paths assigned to the child work items. You can change those values by selecting new Start and End iterations from the drop down path. 
 
-1. To view the dependency linked to a feature, choose the ![ ](../media/icons/icon-links-tab-wi.png) link icon for that feature. 
+1. To view the dependency linked to a feature, choose the :::image type="icon" source="../media/icons/icon-links-tab-wi.png" border="false"::: link icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Epic Roadmap, Feature, linked icon](media/epic-roadmap/view-dependency.png)

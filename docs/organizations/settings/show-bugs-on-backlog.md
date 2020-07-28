@@ -47,7 +47,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1.  [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+2. Choose the :::image type="icon" source="../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](media/configure-team/open-board-settings.png)  
@@ -67,7 +67,7 @@ In the **Working with bugs** dialog, you can select from the following three opt
 
 1. [Open your Kanban board](../../boards/boards/kanban-quickstart.md). If you're not a team admin, [get added as one](add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the  settings dialog.  
+2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the  settings dialog.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team](media/configure-team/open-settings-tfs.png)  
