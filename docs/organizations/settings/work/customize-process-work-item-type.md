@@ -33,7 +33,7 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 ## Add a work item type
 
-1. From the <strong>Work Item Types</strong> page, choose ![ ](../../../media/icons/blue-add-icon.png) <strong>New work item type</strong>.
+1. From the <strong>Work Item Types</strong> page, choose :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: <strong>New work item type</strong>.
 
 	![Process, Inherited process, Work Item Types, Add new work item type](media/process/cpwit-add-new-wit.png)
 
@@ -63,7 +63,7 @@ You can add custom work item types (WITs) or modify existing WITs to add fields,
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-7. Verify that the field you added appears on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+7. Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
    > [!div class="mx-imgBorder"]  
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png) 

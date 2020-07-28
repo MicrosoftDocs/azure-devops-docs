@@ -111,7 +111,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
 
-1. From the web portal for the project, choose the ![ ](../../media/icons/gear_icon.png) gear icon.  
+1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.  
 
     > [!div class="mx-imgBorder"]  
     > ![Web portal, Open Admin context, project level](../settings/media/areas/modify-areas-its-open-admin-context-ts.png)
@@ -131,7 +131,7 @@ You define both areas and iterations for a project from the **Project Settings>W
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"  
 
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**. 
+1. From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**. 
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 

@@ -138,7 +138,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
+1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
@@ -213,7 +213,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 ::: moniker range="<= tfs-2018"
 
-1. From the web portal, open the admin context by choosing the ![ ](../../boards/media/icons/gear_icon.png) **Settings** and choose **Version Control**.
+1. From the web portal, open the admin context by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Settings** and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 
