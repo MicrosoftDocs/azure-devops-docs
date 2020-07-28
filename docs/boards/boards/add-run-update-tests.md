@@ -55,7 +55,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 1. To view your Kanban board, open your (1) project from a web browser and choose (2) **Work**, (3) **Backlogs**, (4) **Stories**, and then (5) **Board**. 
 	![Taskboard, collapsed backlog items, cloud service](media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png)" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](media/kanban-quickstart-reduced-screensize.png)   
 
