@@ -77,7 +77,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png)" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -99,7 +99,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 	![Open Features Kanban board](media/features-epics/open-features-board-standard.png)
 
-	If you don't see **Work**, your screen size may be reduced. Click the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)), then choose **Work**, **Backlogs**, and then **Board**.   
+	If you don't see **Work**, your screen size may be reduced. Click the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png)" border="false":::, then choose **Work**, **Backlogs**, and then **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
