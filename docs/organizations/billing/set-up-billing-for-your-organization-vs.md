@@ -5,10 +5,10 @@ ms.custom: seodec18, contentperfq4
 description: Use an Azure subscription to configure billing and pay for users, CI/CD concurrency, and extensions for Azure DevOps.
 ms.technology: devops-billing
 ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
-ms.topic: quickstart
+ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 05/27/2020 
+ms.date: 07/28/2020 
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-In this article, learn how to set up billing for your organization in Azure DevOps. Do so before making purchases, so you have it in place once you're ready to buy.
+Set up billing in Azure DevOps before making purchases, so you have it in place once you're ready to buy. You only need to set up billing once for your organization. 
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
@@ -30,7 +30,7 @@ In this article, learn how to set up billing for your organization in Azure DevO
 > [!NOTE]
 > The [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/) isn't supported.
 
-## Set up billing
+## Set up billing for your organization
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -50,7 +50,7 @@ In this article, learn how to set up billing for your organization in Azure DevO
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
 
-Billing is set up for Azure DevOps.
+Billing is set up for your Azure DevOps organization.
 
 ## Next steps
 

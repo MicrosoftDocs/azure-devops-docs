@@ -16,7 +16,7 @@ ms.date: 07/22/2019
 
 [!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this quickstart, you learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
+In this article, learn how to view your permissions or the permissions that are set for others in Azure DevOps. If you don't have a permission to access a feature or function, you can request it from the right resource.
 
 Permissions are set at the collection, project, and object level as described in [About permissions and groups](about-permissions.md). So to view the permissions you have, you need to open the permissions at the object, project, or collection level.
 
@@ -123,21 +123,16 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops"
 
-
-> [!NOTE]   
-> To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
-
-
 1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
 
-1. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
+2. Choose **Permissions**, the **Project Collection Administrators** group, and then **Members**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Permissions, Project Collection Administrators group, Members tab](media/view-permissions/project-collection-admin-users-s154.png)  
-2. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
+3. Follow steps 2 through 4 in the procedure outlined previously for view project-level permissions. 
 
 ::: moniker-end 
 
