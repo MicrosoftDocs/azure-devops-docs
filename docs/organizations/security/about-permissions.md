@@ -79,6 +79,12 @@ A new dialog opens that shows the inheritance information for that permission.
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
+The preview user interface for the Project Permissions Settings Page isn't available for Azure DevOps Server 2020 and earlier versions.  
+
+::: moniker-end
+
 #### [Current page](#tab/current-page) 
 
 ::: moniker range=">= tfs-2017"
