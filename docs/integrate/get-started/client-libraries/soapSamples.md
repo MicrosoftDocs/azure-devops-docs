@@ -10,7 +10,7 @@ author: wireznak
 ms.date: 09/26/2019
 ---
 
-# C# client library samples 
+# C# client library samples for SOAP clients and services
 
 [!INCLUDE [version-all](../../../includes/version-all.md)]
 

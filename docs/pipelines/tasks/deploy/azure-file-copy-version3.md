@@ -13,7 +13,7 @@ ms.date: 12/07/2018
 monikerRange: '>= tfs-2015'
 ---
 
-# Azure File Copy task
+# Azure File Copy task version 3 or below
 
 [!INCLUDE [temp](../../includes/version-tfs-2015-update.md)]
 
