@@ -75,7 +75,7 @@ To configure other team features, see [Manage teams and configure team tools](ma
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)]  
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
@@ -571,7 +571,7 @@ One last step in moving from one team to two teams requires configuring the defa
 
 ::: moniker-end
 
-[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)] 
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
 
 #### [Current page](#tab/current-page) 
 
