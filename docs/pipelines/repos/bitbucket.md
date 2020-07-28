@@ -219,6 +219,8 @@ Problems related to Bitbucket integration fall into the following categories:
 
 [!INCLUDE [qa](includes/qa3.md)]
 
+[!INCLUDE [qa](includes/qa4.md)]
+
 ### Wrong version
 
 [!INCLUDE [qa](includes/qa1.md)]
