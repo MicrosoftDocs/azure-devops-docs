@@ -120,7 +120,6 @@ In this example, we grant members assigned to the Test Admin group permissions t
 > [!div class="mx-imgBorder"]  
 > ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-project-level-test-permissions-new-ui.png)  
 
-
 #### [Current page](#tab/current-page) 
 
 > [!div class="mx-imgBorder"]  
@@ -128,7 +127,8 @@ In this example, we grant members assigned to the Test Admin group permissions t
 
 ::: moniker-end    
 
-
+* * *
+* 
 ::: moniker range=">= tfs-2017 < azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
@@ -163,6 +163,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 > [!div class="mx-imgBorder"]  
 > ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  
 
+* * *
 
 ::: moniker-end    
 
