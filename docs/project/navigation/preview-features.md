@@ -206,7 +206,7 @@ To access the Preview features options, open your profile menu. The profile menu
 
 #### [New Account Manager enabled](#tab/new-account-enabled)
 
-Choose the ![](../../media/icons/user-settings-gear.png) profile icon, and then choose **Preview features**. 
+Choose the :::image type="icon" source="../../media/icons/user-settings-gear.png" border="false"::: profile icon, and then choose **Preview features**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Open User settings](media/preview-features/open-profile-menu-s170.png)   

@@ -128,7 +128,7 @@ Open admin settings for the organization or a project collection.
 > To enable the new user interface for the Organizations Permissions Settings Page v2, see [Enable preview features](../../project/navigation/preview-features.md). The preview page provides a group settings page that the current page does not.  
 
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
@@ -143,7 +143,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Admin settings**. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  
@@ -159,7 +159,7 @@ Open admin settings for the organization or a project collection.
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 
-1. Choose the ![ ](/azure/devops/media/icons/gear_icon.png) settings icon and select **Organization settings** or **Collection settings**.  
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/gear_icon.png" border="false"::: settings icon and select **Organization settings** or **Collection settings**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Organization Settings](/azure/devops/media/settings/open-account-settings.png)  

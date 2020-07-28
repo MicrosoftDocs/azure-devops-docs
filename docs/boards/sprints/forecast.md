@@ -103,7 +103,7 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
 
-3. Choose the ![ ](../../media/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+3. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](media/forecast/turn-forecasting-on-agile.png)
@@ -144,7 +144,7 @@ To forecast your product backlog, perform the following actions.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
 
-3. Choose the ![ ](../../media/icons/view-options-icon.png) view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
+3. Choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and slide **Forecasting** to **On**. To keep things simple, turn the **Mapping** and **Planning** panes **Off**.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Boards>Backlog, view options menu, Forecast on](media/forecast/turn-forecasting-on-agile.png)

@@ -86,7 +86,7 @@ If you want to add these work item types to a backlog, see [Customize your backl
 
 ::: moniker range=">= azure-devops-2019"  
 
-Open **Boards>Work Items**, and choose the ![ ](../../media/icons/blue-add.png) plus icon, and then select from the **New work item** menu of options. 
+Open **Boards>Work Items**, and choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon, and then select from the **New work item** menu of options. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add issue, new nav](media/manage-issues/add-issue-vert.png)   

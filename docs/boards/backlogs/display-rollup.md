@@ -122,7 +122,7 @@ Each user can set their own column options which persist for each backlog across
 
 ## Analytics, latency, and error states
 
-Rollup data is calculated from the Analytics service. When there is a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the ![ ](../../media/icons/rollup.png) rollup icon, you can determine the state of the data. 
+Rollup data is calculated from the Analytics service. When there is a large amount of data, it's possible to experience some latency in displaying rollup. If you hover over the :::image type="icon" source="../../media/icons/rollup.png" border="false"::: rollup icon, you can determine the state of the data. 
 
 If an error occurs in retrieving rollup data, you'll see an  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon and empty rows. Errors indicate when the Analytics data was last updated. This means that the Analytics services is still processing changes made which may affect rollup calculations. Once the Analytics data is up-to-date, the rollup columns will refresh with the latest data.  
 

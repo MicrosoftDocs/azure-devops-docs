@@ -390,7 +390,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 > If you encounter this error, check that your server is accessible. For more information, see [Azure DNS FAQ](/azure/dns/dns-faq). 
 
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 
 1. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Click here</strong> to connect to your GitHub Enterprise organization.   
 
@@ -447,7 +447,7 @@ If you plan to use OAuth to connect Azure DevOps Services or Azure DevOps Server
 
 ## Connect Azure DevOps Server to GitHub Enterprise Server
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open <strong>Projects</strong>, and then choose the Azure Boards project you want to configure to connect to your GitHub Enterprise repositories.
 
 2. Choose (1) <strong>Project Settings</strong>, choose (2) <strong>GitHub connections</strong> and then (3) <strong>Connect your GitHub Enterprise account</strong>.   
 
