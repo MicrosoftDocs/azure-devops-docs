@@ -399,7 +399,7 @@ Choose the chart to display it in a larger view.
 
 ## Add the report to a dashboard
 
-1. To add the report to a dashboard, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
@@ -426,7 +426,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 	> [!div class="mx-imgBorder"]  
 	> ![Add widget dialog, filter by sprint burndown](media/burndown/add-sprint-burndown-widget-devops.png)  
  
-	1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+	1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Configure dialog](media/add-widgets/configure-widget.png) 
@@ -434,7 +434,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose ![ ](media/icons/edit-icon.png) **Edit** to add the Sprint burndown widget to your team dashboard.
+1. Choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to add the Sprint burndown widget to your team dashboard.
 
 	The widget catalog automatically opens. Drag the Sprint Burndown widget onto the dashboard. 
 
@@ -468,7 +468,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ## Configure the Analytics-based Sprint Burndown widget 
 
-1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"] 
 	> ![Sprint Burndown Widget - Configuration](media/sprint-burndown/sprint-burndown-config.png)  
@@ -500,7 +500,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ## Configure the Sprint Burndown (Legacy) widget 
 
-1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"] 
 	> ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)  

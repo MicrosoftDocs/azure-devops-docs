@@ -52,7 +52,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
-- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the ![](/azure/devops/media/icons/project-icon.png) Azure DevOps logo and then choose **Access levels**.
+- From the web portal home page for a project collection (for example, `http://MyServer:8080/tfs/DefaultCollection/`), open **Access levels**. If you are at a project level, choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo and then choose **Access levels**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![web portal, Open Access levels dialog](media/change-access-levels/open-access-levels-2019.png)
@@ -63,7 +63,7 @@ You manage access levels for the collections defined on the application tier. Th
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-From a user context, open **Server Settings** by choosing the ![ ](../../boards/media/icons/gear_icon.png) gear icon. The tabs and pages available differ depending on which settings level you access.
+From a user context, open **Server Settings** by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: gear icon. The tabs and pages available differ depending on which settings level you access.
 
 - From the web portal home page for a project (for example, `http://MyServer:8080/tfs/DefaultCollection/MyProject/`), open **Server settings**.
 

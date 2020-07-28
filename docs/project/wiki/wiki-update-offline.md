@@ -66,7 +66,7 @@ Your wiki repository stores pages, images, attachments, and the sequence of page
 
 	<img src="media/wiki/clone-wiki.png" alt="Clone wiki Git repository" style="border: 1px solid #C3C3C3;" />
 
-2. From the **Clone repo** dialog, select the ![ ](../../media/icons/copy-clone-icon.png) copy-clone icon.  
+2. From the **Clone repo** dialog, select the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy-clone icon.  
 
 	<img src="media/wiki/clone-wiki-dialog.png" alt="Copy the wiki url" style="border: 1px solid #C3C3C3;" />
 

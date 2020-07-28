@@ -98,7 +98,7 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Project Settings**.
+2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
@@ -170,7 +170,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ## Show the organization owner 
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
 	![Open organization settings](../../media/open-organization-settings-preview.png)  
 
