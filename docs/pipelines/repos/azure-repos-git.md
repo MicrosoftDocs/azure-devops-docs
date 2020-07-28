@@ -215,7 +215,11 @@ Problems related to Azure Repos integration fall into three categories:
 
 * Are you configuring the PR trigger in the YAML file or in branch policies for the repo? For an Azure Repos Git repo, you cannot configure a PR trigger in the YAML file. You need to use [branch policies](../../repos/git/branch-policies.md).
 
+[!INCLUDE [qa](includes/qa2_1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+#### I have the YAML file in one repo and the application code in a different repo. How do I set up the pipeline to be triggered by changes to application code?
 
 ### Failing checkout
 
