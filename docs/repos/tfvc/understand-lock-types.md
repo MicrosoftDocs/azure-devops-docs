@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Understand lock types
 ms.assetid: 5da8c9b3-78cf-4d49-827f-3f1a95bf4b9b
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

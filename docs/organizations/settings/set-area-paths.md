@@ -90,7 +90,7 @@ You define both areas and iterations for a project from the **Project Settings >
 
 ::: moniker range="<= tfs-2018"
 
-You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the ![ ](../../media/icons/gear-icon.png) gear icon.
+You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
 
 ::: moniker-end
 
@@ -110,7 +110,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 ::: moniker range=">=tfs-2017 <= tfs-2018"
 
-1. From the web portal for the project, choose the ![ ](../../media/icons/gear_icon.png) gear icon.
+1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
@@ -128,7 +128,7 @@ You define both areas and iterations from the **Work** pages of the **Project Se
 
 ::: moniker range="<= tfs-2015"  
 
-- From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**.
+- From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**.
 
     ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
 
@@ -208,7 +208,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 ::: moniker range=">= tfs-2018"  
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -219,7 +219,7 @@ If you haven't added any areas or teams, you'll see that only one area is define
 
 ::: moniker range="tfs-2017"  
 
-- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
@@ -333,7 +333,7 @@ You set team defaults from team settings. If you're not a team administrator, [g
 
 ::: moniker range="<= tfs-2018"  
 
-You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../media/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
+You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
 > [!div class="mx-imgBorder"]  
 > ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
@@ -384,7 +384,7 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
@@ -553,7 +553,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 ::: moniker range=">= azure-devops-2019"
 
-1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work>Project Configuration](media/areas/edit-area-rename-preview.png)  
@@ -575,7 +575,7 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 ::: moniker range="<= tfs-2018"
 
-1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work>Project Configuration](media/areas/edit-area-rename.png)  

@@ -12,7 +12,7 @@ ms.date: 07/17/2020
 
 You create, manage, and make customizations to processes from **Organization settings>Process**. 
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**. Then choose **Organization settings**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Organization settings](/azure/devops/media/settings/open-admin-settings-vert.png)  

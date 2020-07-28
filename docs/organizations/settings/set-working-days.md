@@ -33,7 +33,7 @@ You can configure the Working days off from any team Settings dialog or from the
 
 Here we show setting it through the Settings dialog. 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the settings dialog. 
 
 ![Capacity page, Settings, Working days](media/capacity-planning-open-team-settings-new-nav.png)  
 
@@ -45,7 +45,7 @@ You can configure the Working days off from any team Settings dialog or from the
 
 Here we show setting it through the Settings dialog. 
 
-[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the settings dialog. 
+[Open the Capacity page](../../boards/sprints/set-capacity.md), and then choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the settings dialog. 
 
 ![Capacity page, Settings, Working days](../../boards/plans/media/capacity-planning-open-team-settings-tfs-15.png)  
 

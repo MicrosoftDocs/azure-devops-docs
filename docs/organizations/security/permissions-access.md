@@ -14,7 +14,7 @@ ms.date: 03/24/2020
 
 # Default permissions and access for Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 To use  Azure DevOps features, users must be added to a security group with the appropriate permissions and granted access to the web portal. Limitations to select features are based on the *access level* and *security group* to which a user is assigned. The **Basic** access level and higher supports full access to all Azure Boards features. **Stakeholder** access level provides partial support to select features, allowing users to view and modify work items, but not use all features. **Stakeholder** access is available to support free access to a limited set of features by an unlimited set of stakeholders. 
 
@@ -28,7 +28,7 @@ In general, use the following guidance when assigning users to an access level a
 
 To learn more about administrative tasks see [About user, team, project, and organization-level settings](../settings/about-settings.md).  For a complete reference of all built-in groups and permissions, see [Permissions and groups](permissions.md). For information about access levels, see [About access levels](access-levels.md). 
 
-In the tables provided in this article, a ![ ](/azure/devops/media/icons/checkmark.png) checkmark indicates that the corresponding access level or security group has access to a feature by default. 
+In the tables provided in this article, a :::image type="icon" source="/azure/devops/media/icons/checkmark.png" border="false"::: checkmark indicates that the corresponding access level or security group has access to a feature by default. 
 
 
 For a comparison chart of Stakeholder versus Basic access, see the [Feature matrix](https://azure.microsoft.com/services/devops/compare-features/). To assign or change an access level, see [Add users and assign licenses](../accounts/add-organization-users.md). If you need to [grant specific users select permissions](change-individual-permissions.md), you can do so.
@@ -232,13 +232,13 @@ You can define and manage your builds and releases from the web portal **Pipelin
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
->  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the ![ ](/azure/devops/media/icons/preview.png) preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the :::image type="icon" source="/azure/devops/media/icons/preview.png" border="false"::: preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](provide-stakeholder-pipeline-access.md).
 
 [!INCLUDE [temp](includes/pipelines-cloud.md)]
 
 ::: moniker-end  
   
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 ### Build  
 
@@ -309,7 +309,7 @@ Users granted Stakeholder or Basic access, or higher can access Azure Artifacts 
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
 Users granted Basic access or higher can access Azure Artifacts features. Users granted Stakeholder access have no access to Azure Artifacts.  
 

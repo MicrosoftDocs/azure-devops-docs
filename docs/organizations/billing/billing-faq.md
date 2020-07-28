@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2015'
 
 # Billing FAQs
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 In this article, find answers to frequently asked questions (FAQs) about billing for your organization in Azure DevOps.
 

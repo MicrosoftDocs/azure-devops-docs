@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Squash merge your pull requests to keep a linear Git history 
 ms.assetid: 2ec21de7-92fc-4d60-a5e1-7e179627b2bb
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018
 monikerRange: '>= tfs-2017'

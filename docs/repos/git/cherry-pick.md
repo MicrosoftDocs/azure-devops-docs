@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Copy and port changes from one branch to another in Git with cherry-pick,
 ms.assetid: 5bf5a8d2-9ff2-4d89-b59f-484a3c14021a
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2013'
@@ -47,7 +45,6 @@ Use `git log` to find the commit ID of the commit whose changes you want to copy
 <pre style="color:white;background-color:black;font-family:Consolas,Courier,monospace;padding:10px">
 &gt; git log app.ts
 <font color="#b5bd68">commit d34bcef232f6cf033e1252b7300465d3e561b2ee
-Author: Francis Totten &lt; frank@fabrikam.com &gt;
 Date:   Wed May 18 21:10:39 2016 +0000
 
 add complex query parsing logic</font>

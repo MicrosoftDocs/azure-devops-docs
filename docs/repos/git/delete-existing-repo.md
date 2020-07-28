@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Remove an existing Git repo in an Azure DevOps Services or Team Foundation Server project
 ms.assetid: 271f8473-e77d-4a95-80d9-0bd347de7533
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2015'

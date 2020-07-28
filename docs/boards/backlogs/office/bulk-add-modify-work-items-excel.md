@@ -603,7 +603,7 @@ The **Choose Linked Work Items** dialog works in the same way as the **Get Work 
 
 ### Add columns to the links list
 
-1. From the **Links** tab, choose the ![ ](media/icons/choose-columns.png) **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
+1. From the **Links** tab, choose the :::image type="icon" source="media/icons/choose-columns.png" border="false"::: **Columns** icon, and add the fields you want displayed. Here we add the Assigned to and State fields. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Links and Attachments dialog, Links tab, Added columns](media/excel/link-tabs-choose-columns-dialog.png) 
@@ -627,7 +627,7 @@ The work item opens in your web portal.
 
 You can edit any link listed. You can change the link type and the work items linked to.
   
-1. Choose the link and choose the ![ ](media/icons/edit.png) **Edit** icon. 
+1. Choose the link and choose the :::image type="icon" source="media/icons/edit.png" border="false"::: **Edit** icon. 
 
 1. Change the link type as needed. 
 
