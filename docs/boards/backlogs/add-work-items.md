@@ -33,7 +33,7 @@ You can start adding work items once you connect to a project.
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](../../project/navigation/media/add-artifact/add-work-item-query-vert.png)
@@ -307,7 +307,7 @@ ID    Type    Title       Assigned To          State
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.   
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.   
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](../work-items/media/follow-work/follow-work-item.png) 

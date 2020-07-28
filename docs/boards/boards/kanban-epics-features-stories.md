@@ -61,7 +61,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> ![Choose another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png) favorited icon" border="false"::: appear at the top of the team selector list.
+	> Choose the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
 
 1. Select **Features** or **Epics** from the backlog selector menu . 
 

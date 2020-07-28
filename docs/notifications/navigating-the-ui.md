@@ -48,7 +48,7 @@ For additional permission settings regarding notifications, see [Permissions and
  
 ::: moniker range="azure-devops"
 
-Open your ![](../media/icons/user-settings-gear.png) profile menu, and then choose **Notifications** or **Notification settings**. 
+Open your :::image type="icon" source="../media/icons/user-settings-gear.png" border="false"::: profile menu, and then choose **Notifications** or **Notification settings**. 
 
 The profile menu appears as shown below based on whether the **New Account Manager** feature has been enabled or not. To enable the **New Account Manager** feature, see [Manage or enable features](../project/navigation/preview-features.md).  
 

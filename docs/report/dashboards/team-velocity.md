@@ -173,14 +173,14 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
-1. To add the report to a dashboard, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
 	
 	Select the dashboard and choose **OK**.  
 
-1. To return to the Analytics summary, choose the ![ ](../../media/icons/back-arrow.png) back arrow.
+1. To return to the Analytics summary, choose the :::image type="icon" source="../../media/icons/back-arrow.png" border="false"::: back arrow.
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
