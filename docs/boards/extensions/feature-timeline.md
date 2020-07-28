@@ -118,7 +118,7 @@ Here we open Boards.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   

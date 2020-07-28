@@ -148,7 +148,7 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 You can add and invite others to work on your project by adding their email address to your organization and project.
 
-1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
