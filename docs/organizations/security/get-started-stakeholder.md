@@ -144,7 +144,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -165,7 +165,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
