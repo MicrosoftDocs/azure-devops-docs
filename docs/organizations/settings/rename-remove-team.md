@@ -34,24 +34,22 @@ When you remove or delete a team, you delete all team configuration settings, in
 
 ## Rename a team
 
-#### [Browser](#tab/browser) 
-
 ::: moniker range="azure-devops"
+
 > [!NOTE]   
 > To enable the user interface for the **New Teams Page**, see [Manage or enable features](../../project/navigation/preview-features.md).
+
 ::: moniker-end
+
+#### [New Teams Page](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
-**New Teams Page**
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020" 
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
    ![Open Project settings, and then Teams](media/shared/open-project-settings-teams-preview.png)
 
-2. Choose the team you want to rename, and then choose **Settings**.   
+2. Choose the team you want to rename, and then choose **Settings**.  
 
 3. Under **Team Details**, enter a new name for the team. Optionally, add a new description.  
 
@@ -61,11 +59,12 @@ When you remove or delete a team, you delete all team configuration settings, in
 1. Choose **Save**.
 
 ::: moniker-end
-::: moniker range="azure-devops"
-**Teams Page (current version)** 
-::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops"
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
+
+#### [Current page](#tab/current-page) 
+
+::: moniker range=">= azure-devops-2019"
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -79,7 +78,6 @@ When you remove or delete a team, you delete all team configuration settings, in
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -253,13 +251,9 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 
 ::: moniker-end
 
-#### [Browser](#tab/browser) 
+#### [New Teams Page](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
-**New Teams Page**
-::: moniker-end
-
-::: moniker range=">= azure-devops-2020" 
 
 1. From the web portal, choose **Project settings** and open **Teams** as shown in the previous section.
 
@@ -274,11 +268,12 @@ C:\WINDOWS\system32>az devops team update --team "Account Management" --name "Or
 	> ![Delete team confirmation dialog](media/rename-remove-team/delete-team-confirmation.png) 
 
 ::: moniker-end
-::: moniker range="azure-devops"
-**Teams Page (current version)** 
-::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops"
+[!INCLUDE [temp](../../includes/note-new-teams-not-supported.md)]  
+
+#### [Current page](#tab/current-page) 
+
+::: moniker range=">= azure-devops-2019"  
 
 1. To delete a team, open **Project Settings > Teams**, choose the &hellip; context menu for the team you want to delete, and select the **Delete** option.   
 
