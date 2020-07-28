@@ -44,7 +44,7 @@ Here are the steps to configure the webhook triggers:
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
     - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key  
 
-:::image type="content" source="../../media/172-pipelines-0-1.png" alt-text="In the Edit service connection page, configure webhook triggers.":::
+    :::image type="content" source="../../media/172-pipelines-0-1.png" alt-text="In the Edit service connection page, configure webhook triggers.":::
 
 3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline, and you can consume the payload data in the form of variables in your jobs.
 
@@ -78,7 +78,7 @@ Resource triggers can fail to execute for two reasons.
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
 2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
 
-:::image type="content" source="../../media/172-pipelines-0-2.png" alt-text="This pipeline definition page called Trigger Issues displays information regarding why triggers are not running.":::
+    :::image type="content" source="../../media/172-pipelines-0-2.png" alt-text="This pipeline definition page called Trigger Issues displays information regarding why triggers are not running.":::
 
 
 ### Banner for live site incidents impacting pipelines
