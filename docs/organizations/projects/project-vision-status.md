@@ -94,7 +94,7 @@ You can share your project and objective, as well as ways for team members to co
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../media/icons/edit.png) edit icon.
+3. Return to **Overview>Summary** and choose the README file for the project page. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
@@ -246,7 +246,7 @@ You can change the repository used to support your project vision, including poi
 
 1. Open **Overview > Summary** .
 
-2. Choose the ![ ](../../media/icons/edit.png) edit icon.
+2. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  

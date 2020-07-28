@@ -44,7 +44,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
 1. Sign in to your organization.
-2. From the Projects page, open the ![](../../media/icons/actions-icon.png) actions icon menu for the project that you want to rename and choose **Rename**.
+2. From the Projects page, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu for the project that you want to rename and choose **Rename**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Enter a new project name](media/rename-project/choose-rename-menu-option.png)
@@ -61,7 +61,7 @@ Post rename, there might be some [actions](#more-work) required from team member
 ::: moniker range="tfs-2015"
 
 1. Sign in to your organization.
-2. From the **Overview** tab, open the ![](../../media/icons/context-menu.png) context icon menu for the project that you want to rename and choose **Rename**.
+2. From the **Overview** tab, open the :::image type="icon" source="../../media/icons/context-menu.png" border="false"::: context icon menu for the project that you want to rename and choose **Rename**.
 
 	![Enter a new project name](media/rename-project/collection-rename.png)
 
