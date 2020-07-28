@@ -1,14 +1,14 @@
 ---
 ms.technology: devops-collab
 ms.topic: conceptual
-title: Authorize Other Services | Azure DevOps Services
-description: Authorize other services to work with Azure DevOps Services
+title: Authorize services 
+description: Authorize services to work with Azure DevOps
 ms.assetid: 314a28cd-b2ae-41a0-8dfb-330222c1aed0
 monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-#  Authorize other services to access Azure DevOps 
+#  Manage authorization of services to access Azure DevOps 
 
 [!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
@@ -20,12 +20,12 @@ resources such as work items, source code, build results.
 
 - Authorizations are bound to your credentials,
 so the service can use the authorization to access resources
-in any Azure DevOps Services account that you have access to.
+in Azure DevOps that you have access to.
 
 - Use your Microsoft account (like ```me@live.com```) or your work account
 (your account in Azure AD - like ```me@my-workplace.com```) to authorize the service.
 
-- The service that you authorize never has access to your Azure DevOps Services credentials.
+- The service that you authorize never has access to your Azure DevOps credentials.
 
 - Revoke any authorizations that you've granted to other services.
 
