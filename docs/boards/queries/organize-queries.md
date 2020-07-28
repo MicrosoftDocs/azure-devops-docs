@@ -15,7 +15,7 @@ ms.date: 10/16/2019
 
 # Organize queries, add a query folder    
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Organize your personal or shared queries by adding a query folder. You can then add queries to or move existing queries into those folders. You can create queries and query folders from the web portal or from a supported client, such as Visual Studio Team Explorer and [Team Explorer Everywhere](../../user-guide/work-team-explorer.md#team-explorer-plug-in-for-eclipse), a plug-in for [Eclipse](https://www.eclipse.org/).
 
@@ -41,7 +41,7 @@ You add query folders from the **Boards>Queries>All** page.
  
 1. Choose **All**. Expand **My Queries** or Shared Queries depending on where you want to add a query folder. 
  
-1. To add a folder, choose the ![ ](../media/icons/actions-icon.png) actions icon for an existing folder or the top container folder, and choose **New folder**. 
+1. To add a folder, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for an existing folder or the top container folder, and choose **New folder**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Actions menu, choose New folder](media/organize-queries/select-new-folder.png)
@@ -52,7 +52,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 3. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can click the ![Actions icon](../media/icons/actions-icon.png)  for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
+	Optionally, you can click the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::   for an existing query, choose **Edit**, and then choose **Save As**. In the Save query as dialog, choose the folder you want to save the query in. 
 
 	<img src="media/organize-queries/save-query-as-dialog.png" alt="Save query as dialog" style="border: 2px solid #C3C3C3;" />
   
@@ -63,7 +63,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 You add query folders from the **Boards>Queries** page.
 
-1. To add a folder, choose the ![ ](../media/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
+1. To add a folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
@@ -71,7 +71,7 @@ You add query folders from the **Boards>Queries** page.
 
 1. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can choose the ![ ](../media/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
+	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
 	![Rename query dialog](media/organize-queries/rename-query-old-experience.png) 
 
@@ -84,7 +84,7 @@ You add query folders from the **Boards>Queries** page.
 
 ## Add a query to the dashboard or share it with your team 
 
-To add a query to the home page or a dashboard, open the ![ ](../media/icons/actions-icon.png) actions icon (or ![ ](media/22.png) context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
+To add a query to the home page or a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or ![ ](media/22.png) context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
 Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 

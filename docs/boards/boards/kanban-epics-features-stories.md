@@ -16,7 +16,7 @@ ms.date: 02/14/2019
 
 # Kanban board features and epics  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 If you use Kanban to track progress on your backlog, you can also use Kanban boards to track epics and features.  
 
@@ -61,7 +61,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 	> ![Choose another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
 
 1. Select **Features** or **Epics** from the backlog selector menu . 
 
@@ -115,7 +115,7 @@ Your Kanban board is one of two types of boards available to you. For an overvie
 
 ## Add epics or features    
 
-Add new items to a feature or epic through the item's ![actions icon](../media/icons/actions-icon.png) Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
+Add new items to a feature or epic through the item's   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Action menu. For descriptions of fields used to support features and epics, see [Define features and epics](../backlogs/define-features-epics.md). 
 
 ![Web portal, Feature Kanban board, Open the context menu of a feature to add a story](media/features-epics/add-user-story.png)
 
@@ -131,7 +131,7 @@ For additional guidance on working with a checklist on a Kanban board, see [Add 
 - Mark an item as done  
 - Reorder and reparent work items  
 
-To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the ![ ](../../media/icons/blue-gear.png) or ![ ](../../media/icons/gear_icon.png) gear icon to open the Settings dialog. See these topics for details: 
+To customize the columns, swimlanes, or cards for each Kanban board, make sure you first select the board and then choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  or :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open the Settings dialog. See these topics for details: 
 
 * [Add columns](add-columns.md)  
 * [Customize cards](../../boards/boards/customize-cards.md)  

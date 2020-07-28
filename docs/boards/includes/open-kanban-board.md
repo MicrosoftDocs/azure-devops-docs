@@ -24,7 +24,7 @@ Your Kanban board is one of two types of boards available to you. The other is t
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 
@@ -49,7 +49,7 @@ To switch to the [product backlog](/azure/devops/boards/backlogs/create-your-bac
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Backlog items** for Scrum, **Stories** for Agile, or **Requirements** for CMMI as the backlog level. 
 

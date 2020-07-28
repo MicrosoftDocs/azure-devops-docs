@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Administering Team Foundation Version Control
 ms.assetid: 0d96b6d2-f00a-4d28-98b9-83fe75cde284
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

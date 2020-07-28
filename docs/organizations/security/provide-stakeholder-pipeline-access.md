@@ -124,12 +124,12 @@ To create a project-level security group, open the web portal and choose the pro
 
 Open the Security dialog for all or a select build pipeline. 
 
-1. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the ![ ](../../media/icons/folder.png) folder icon, and then, with **All build pipelines** selected, choose the ![ ](../../media/icons/actions-icon.png)actions icon and select **Security**.
+1. To set the permissions for all build pipelines, choose **Pipelines>Builds**, choose the :::image type="icon" source="../../media/icons/folder.png" border="false"::: folder icon, and then, with **All build pipelines** selected, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::actions icon and select **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build pipelines, vertical nav](media/stakeholder-security/open-security-all-build-pipelines-new-nav.png)  
 
-1. To set the permissions for a specific build pipeline, open the ![ ](../../media/icons/actions-icon.png) actions icon for the specific build and choose **Security**.
+1. To set the permissions for a specific build pipeline, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the specific build and choose **Security**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the security dialog for a build pipeline](media/stakeholder-security/open-security-build-pipeline-new-nav.png)  
@@ -172,7 +172,7 @@ Open the Security dialog for all or a select release pipeline.
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Security dialog for all build definitions, vertical nav](media/stakeholder-security/open-security-release-definitions-vert.png)  
 
-1. To set the permissions for a specific release pipeline, open the ![ ](../../media/icons/actions-icon.png) actions icon menu for the build and choose **Security**.
+1. To set the permissions for a specific release pipeline, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon menu for the build and choose **Security**.
 
 2. Add the custom security group, such as *Stakeholder Access*, to the permissions dialog.
 

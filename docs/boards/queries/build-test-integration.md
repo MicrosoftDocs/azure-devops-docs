@@ -14,7 +14,7 @@ ms.date: 02/06/2019
 
 # Query based on build and test integration fields
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Work item fields that support build and test integration support the following actions:  
 -   Associate bugs with the builds where they were found or fixed  

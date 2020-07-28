@@ -55,7 +55,7 @@ Use this index to quickly access concepts and tasks related to managing projects
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 :::row:::
    :::column span="":::
@@ -173,7 +173,7 @@ Several of the following tasks require permissions granted to a member of the Pr
 
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 :::row:::
    :::column span="":::

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2015'
-ms.date: 11/01/2018
+ms.date: 07/14/2020
 ---
 
 # Widget catalog 
@@ -26,7 +26,7 @@ The following widgets are organized under the service they support. Widgets that
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <table valign="top">
 <tbody valign="top">
@@ -494,7 +494,7 @@ To create a shared query, see [Use the query editor to list and manage queries](
   
 ----
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 <a id="sprint-burndown-analytics-widget"></a>
 
@@ -518,7 +518,7 @@ Adds the team's burndown chart for the current sprint to the dashboard. This cha
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 
 <a id="sprint-burndown-widget"></a>
@@ -571,6 +571,7 @@ Inserts a visual overview of sprint progress indicating the number of backlog it
 
 ::: moniker range=">= azure-devops-2019"
 <a id="velocity-widget"></a> 
+
 ### Velocity   
 
 ![Sprint velocity widget](media/widget-velocity.png)

@@ -10,7 +10,7 @@ author: chcomley
 ms.topic: reference
 ms.reviewer: gopinach
 monikerRange: '>= tfs-2018'
-ms.date: 12/17/2018  
+ms.date: 07/23/2020 
 ---
 
 # Keyboard shortcuts for managing Wiki pages
@@ -19,7 +19,7 @@ ms.date: 12/17/2018
 
 ::: moniker range="tfs-2018"
 > [!NOTE]  
-> Keyboard shortcuts for managing Wiki pages are supported on TFS 2018.2 or later versions.
+> Keyboard shortcuts for managing Wiki pages are available with TFS 2018.2 and later versions.
 ::: moniker-end
 
 [!INCLUDE [temp](../../includes/keyboard-shortcuts/wiki-shortcuts.md)]

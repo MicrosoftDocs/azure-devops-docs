@@ -8,13 +8,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
 monikerRange: '>= tfs-2013'
-ms.date: 04/27/2020
+ms.date: 07/09/2020
 ---
 
 
 # Link type reference 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 <a id="link-type-guidance"></a>
 
@@ -35,7 +35,7 @@ A specific field maintains a count of links for the first four link types, such 
 
 ::: moniker-end 
 
-::: moniker range="azure-devops-2019"  
+::: moniker range=">= azure-devops-2019 < azure-devops"  
 
 - [**Work link types**](#work-link-types): links work items including select test case management work items
 - [**Hyperlink**](#hyperlink): connects a work item to any URL or network share
@@ -73,7 +73,7 @@ Each work link type defines the link labels, topology type, and restrictions tha
 
 A work item's [*Related Link Count*](linking-attachments.md#related-link-count) corresponds to the sum of all links defined with a work link type.
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 
 The following table describes the work item link types you can specify to scope a links control using the [**WorkItemLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 
@@ -199,7 +199,7 @@ Link category: Process-defined</p></td>
 <p>Topology type: Dependency<br/>
 Link category: Process-defined</p></td>
 <td>
-<p>Use to link test cases with shared steps. You <a href="/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases" data-raw-source="[share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases" data-raw-source="[Share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases)">Share steps between test cases</a>.</p>
+<p>Use to link test cases with shared steps. You <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">share steps between test cases</a> to avoid having to create multiple entries of the same sequence of steps. To learn more, see <a href="/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases" data-raw-source="[Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)">Share steps between test cases</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -251,7 +251,7 @@ External link types are system-defined link types. They support linking work ite
 The following table describes the external link types you can choose when adding a link type from a work item or test case. 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"  
+::: moniker range=">= tfs-2017 < azure-devops"  
 The following table describes the external link types you can choose when adding a link type from a work item or test case. Also, you can use specify one of these link types to scope a links control using the [**ExternalLinksFilter** XML element](../../reference/xml/linkscontroloptions-xml-elements.md). 
 ::: moniker-end  
 
@@ -510,10 +510,10 @@ GitHub link types are system-defined link types. They support linking work items
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
-> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types.png) 
+> ![GitHub link types, conceptual image](media/link-type-reference/linkscontrol-github-link-types.png)  
 
 ::: moniker-end
 
@@ -524,27 +524,12 @@ GitHub link types are system-defined link types. They support linking work items
 
 ::: moniker-end
 
-
-::: moniker range="azure-devops"
-> [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-> [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
-
-::: moniker-end
-
 ::: moniker range=">= azure-devops-2019"
 
+> [!IMPORTANT]  
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Connect Azure Boards to GitHub](../github/connect-to-github.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+
 The following table describes the GitHub link types you can choose when adding a link type from a work item. 
-
-::: moniker-end
-
-::: moniker range="azure-devops"
-
 
 :::row:::
    :::column span="":::
@@ -568,6 +553,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub commit.
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2020"
 :::row:::
    :::column span="":::
       GitHub Issue
@@ -579,6 +566,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub issue.
    :::column-end:::
 :::row-end:::
+::: moniker-end
+::: moniker range=">= azure-devops-2019"
 :::row:::
    :::column span="":::
       GitHub Pull Request
@@ -590,48 +579,8 @@ The following table describes the GitHub link types you can choose when adding a
       Used to link a work item to a GitHub pull request.
    :::column-end:::
 :::row-end:::
-
+ 
 ::: moniker-end
-
-
-::: moniker range="azure-devops-2019"
-
-:::row:::
-   :::column span="":::
-      **Link name**
-   :::column-end:::
-   :::column span="":::
-      **Artifact type**
-   :::column-end:::
-   :::column span="":::
-      **Usage**
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      GitHub Commit
-   :::column-end:::
-   :::column span="":::
-      GitHub repository commit
-   :::column-end:::
-   :::column span="":::
-      Used to link a work item to a GitHub commit.
-   :::column-end:::
-:::row-end:::
-:::row:::
-   :::column span="":::
-      GitHub Pull Request
-   :::column-end:::
-   :::column span="":::
-      GitHub repository pull request
-   :::column-end:::
-   :::column span="":::
-      Used to link a work item to a GitHub pull request.
-   :::column-end:::
-:::row-end:::
-
-::: moniker-end
-
 
 ::: moniker range="azure-devops"   
 
@@ -690,7 +639,7 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops" 
 
 ## Custom link types
 
@@ -704,8 +653,11 @@ You can create custom link types; export and import definitions of link types; a
 
 ## List link types
 
+To get a list of link types, you can use one of the supported command line tools. 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
+
+### az boards work-item relation list-type  
 
 You can list link types supported by your organization with the [az boards work-item relationlist-type](/cli/azure/ext/azure-devops/boards/work-item/relation#ext-azure-devops-az-boards-work-item-relation-list-type) command or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. To get started, see [Get started with Azure DevOps CLI](/azure/devops/cli/index). 
 
@@ -790,6 +742,8 @@ The default json format provides additional information about the attributes def
 ::: moniker-end
 
 ::: moniker range="< azure-devops" 
+
+### witadmin listlinktypes 
 
 You can list link types supported for your project collection using the [**witadmin listlinktypes**](../../reference/witadmin/manage-link-types.md) command line tool or the [Work Item Relation Types - List](/rest/api/azure/devops/wit/work%20item%20relation%20types/list) REST API command. 
 

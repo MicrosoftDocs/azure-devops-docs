@@ -1,4 +1,4 @@
-﻿---
+---
 title: Configure the Test results trend widget (Advanced)
 titleSuffix: Azure DevOps 
 description: Monitor test trends and gain insights about  pipeline test efforts using  Analytics Test Results Trend (Advanced) widget
@@ -56,6 +56,7 @@ In order to configure the Test Results Trend widget, you must have the following
 - Set up continuous testing for your build pipeline. For details, see [Run unit tests with your builds](../../pipelines/ecosystems/dotnet-core.md#run-your-tests).
 - To add a widget to a team dashboard, you need to be a member of the team. You must have **Basic** access or greater, have [dashboard permissions](/azure/devops/report/dashboards/dashboard-permissions), or be a [team admin](/azure/devops/organizations/settings/add-team-administrator) or project admin. Default settings provide all team members with permissions.
 - **Pipelines**  must be enabled. If disabled, none of the Analytics widgets for pipelines will display. To re-enable it, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
+- **Test Plans** must be enabled. If disabled, the Test Results Trend widget displays an "Access not supported" error message. To enable test plans, see [Turn an Azure DevOps service on or off](/azure/devops/organizations/settings/set-services).
 
 ::: moniker-end
 
@@ -76,14 +77,14 @@ In order to configure the Test Results Trend widget, you must have the following
 
 You can configure your Test Results Trend (Advanced) widget to show results for either build or release pipelines. 
 
-1. From your team's dashboard, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
+1. From your team's dashboard, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
 	
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
 	> ![Test Results Trend (Advanced) widget configuration panel](media/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
-	Choose the ![ ](../../media/icons/blue-add.png) plus icon to add one or more pipelines. 
+	Choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon to add one or more pipelines. 
 
 1. Next, choose the **Period**, and then choose the metrics that you want to track. Optionally, apply filters for **Branch**, **Test file**, **Owner**, and **Test run**.   
 

@@ -25,7 +25,7 @@ Continuous integration (CI) triggers vary based on the type of repository you bu
 
 - [CI triggers in Azure Repos Git](../repos/azure-repos-git.md#ci-triggers)
 - [CI triggers in GitHub](../repos/github.md#ci-triggers)
-- [CI triggers in BitBucket Cloud](../repos/bitbucket.md#ci-triggers)
+- [CI triggers in Bitbucket Cloud](../repos/bitbucket.md#ci-triggers)
 - [CI triggers in TFVC](../repos/tfvc.md#ci-triggers)
 
 <a name="pr-triggers"></a>
@@ -33,7 +33,7 @@ Pull request validation (PR) triggers also vary based on the type of repository.
 
 - [PR triggers in Azure Repos Git](../repos/azure-repos-git.md#pr-triggers)
 - [PR triggers in GitHub](../repos/github.md#pr-triggers)
-- [PR triggers in BitBucket Cloud](../repos/bitbucket.md#pr-triggers)
+- [PR triggers in Bitbucket Cloud](../repos/bitbucket.md#pr-triggers)
 
 [Gated check-in](../repos/tfvc.md#gated) is supported for TFVC repositories.
 

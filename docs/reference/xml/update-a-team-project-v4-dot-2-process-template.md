@@ -6,12 +6,15 @@ ms.technology: devops-agile
 ms.assetid: d2a264e1-7dd3-4cbd-ab50-735290a1ea74
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '<= tfs-2017'
 ms.date: 12/15/2017
 ---
 
 # Update a project based on a MSF v4.2 process template 
 
 **TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../../includes/version-tfs-2013-2017.md)]
+
 
 > [!IMPORTANT]  
 > This topic applies to project that was created using a Microsoft Solutions Framework (MSF) version 4.2 process template and is defined on an on-premises Team Foundation Server (TFS). You only have to follow the procedures in this topic if you are upgrading a project that you created with a process template provided with Visual Studio Team System 2008 Team Foundation Server, or one that does not contain the work item types Test Cases and Shared Steps.   
@@ -232,15 +235,15 @@ The following table describes the permissions that control access to test functi
 
 |Permission|Description|Scope|Readers|Contributors|Builders|Recommended for manual testers|Recommended for test leads|
 |--------------------|---------------------|-----------|-------------|------------------|--------------|-------------------|-----------------------|
-|View project-level information|Can view membership of project-level groups and the permissions of those members.|Project-level|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
-|View test runs|Can view test plans in this node.|Project-level|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
-|Create test runs|Can add and remove test results and add or modify test runs for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
-|Manage test configurations|Can create and delete test configurations for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
-|Manage test environments|Can create and delete test environments for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
-|Delete test runs|Can delete a scheduled test for the project.|Project-level||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
-|View this node|Can view the security settings for an area node.|Area node|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)||![](media/icon_witcheckgreen.png)|  
-|Manage test plans|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|![](media/icon_witcheckgreen.png)|  
-|Manage test controllers|Can register and unregister test controllers for the project collection.|Project collection|||||![](media/icon_witcheckgreen.png)|  
+|View project-level information|Can view membership of project-level groups and the permissions of those members.|Project-level|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|View test runs|Can view test plans in this node.|Project-level|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Create test runs|Can add and remove test results and add or modify test runs for the project.|Project-level||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Manage test configurations|Can create and delete test configurations for the project.|Project-level||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Manage test environments|Can create and delete test environments for the project.|Project-level||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Delete test runs|Can delete a scheduled test for the project.|Project-level||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|View this node|Can view the security settings for an area node.|Area node|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Manage test plans|Can create and edit test plans that are assigned to an area node. If test plans have not been run, you can also delete them.|Area node||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
+|Manage test controllers|Can register and unregister test controllers for the project collection.|Project collection|||||:::image type="icon" source="media/icon_witcheckgreen.png" border="false":::|  
 
 
 You can grant permissions by following the procedures that are indicated for the specific scope area:  
@@ -256,7 +259,7 @@ You can grant permissions by following the procedures that are indicated for the
 After you have completed the upgrade tasks that are described earlier in this topic, you can start Microsoft Test Manager, connect to your project, and start to plan your test efforts. 
 
 > [!NOTE]    
-> Microsoft Test Manager is in the process of being deprecated. The web portal **Test** pages for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use **Test** over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from **Test**. To learn more, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/docs/test/mtm/guidance-mtm-usage). 
+> Microsoft Test Manager is in the process of being deprecated. The web portal **Test** pages for TFS 2017 and later versions is a fully featured Test management solution which works across all platforms and with all browsers, we recommend you use **Test** over Microsoft Test Manager for all your test management requirements. You can use Microsoft Test Manager to test your desktop applications by launching the Microsoft Test Runner (client) from **Test**. To learn more, see [Guidance on Microsoft Test Manager usage](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage). 
 
 
 <a id="additional_info" /> 

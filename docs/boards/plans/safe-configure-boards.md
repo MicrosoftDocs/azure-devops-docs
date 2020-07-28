@@ -9,13 +9,13 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/28/2020
+ms.date: 07/09/2020
 ---
 
 
 # Configure Azure Boards to support SAFe®
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 This tutorial walks you through the steps to convert a new project with a single team to one that is configured to support SAFe® programs and portfolios. Specifically, you'll learn how to configure Azure Boards to support SAFe® programs and portfolios by performing the following tasks: 
 
@@ -76,7 +76,7 @@ You'll need to be a [project administrator](../../organizations/security/add-use
 Add each team, one by one.
 
 > [!NOTE]   
-> The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Enable preview features](../../project/navigation/preview-features.md).
+> The following procedure uses the **New Teams Page** user interface that is in preview. To enable this feature, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 1. From the web portal, choose **Project settings** and open **Teams**. 
 
@@ -331,7 +331,7 @@ The following table lists the recommended settings to make based on the team lev
 
 1. For program and portfolio teams, choose the **Areas** tab to change the default setting from **Include sub areas** to **Exclude sub areas**. 
 
-	Open the ![ ](../../media/icons/actions-icon.png) context menu, and choose **Exclude sub areas**.   
+	Open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu, and choose **Exclude sub areas**.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Team configuration, Areas, Exclude sub areas](media/safe-configure/exclude-sub-areas.png)  
@@ -382,7 +382,7 @@ For teams that support several other teams, such as a UX Design team, configure 
 <a id="programmatic-tools" /> 
 <a id="command-line-and-programmatic-tools" /> 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Command-line and programmatic tools
 

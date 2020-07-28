@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.assetid: 45ECCEFD-3804-4D8C-8567-57C84F92A705
 ms.author: chcomley
 author: chcomley
-ms.date: 06/08/2020
+ms.date: 07/27/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -33,9 +33,9 @@ Ensure that the following statements are true:
 
 ::: moniker-end
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
-Users with a Basic license can use Azure Artifacts on-premises without needing to purchase an Azure Artifacts extension. This means with Azure DevOps Server 2019, users with a Basic license can create and consume Azure Artifacts on-premises if they have a Basic license assigned.
+Users with a Basic license can use Azure Artifacts on-premises without needing to purchase an Azure Artifacts extension. This means with Azure DevOps Server 2019 and 2020, users with a Basic license can create and consume Azure Artifacts on-premises if they have a Basic license assigned.
 
 ::: moniker-end
 

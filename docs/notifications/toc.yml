@@ -16,20 +16,20 @@
     href: unsubscribe-default-notification.md 
   - name: Manage team and group notifications
     href: manage-team-group-notifications.md 
-  - name: Manage organization notifications
+  - name: Manage Global notifications
     href: manage-organization-notifications.md 
-  - name: Manage organization default delivery settings
+  - name: Manage Global default delivery settings
     href: manage-organization-notifications-settings.md
   - name: Exclude yourself from notification of events you initiated
     href: exclude-self-from-email.md  
 - name: Follow work, link work items, use @mentions  
   items:
   - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md 
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
   - name: "Use @mentions to further discussion"
-    href: at-mentions.md 
+    href: at-mentions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
   - name: "Use #ID to link to work items"
-    href: add-links-to-work-items.md 
+    href: add-links-to-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
 - name: Notifications to third parties
   items:
   - name: Send notifications to third-party services (Slack, Teams, etc.)
@@ -51,7 +51,7 @@
 - name: Reference
   items:
   - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
   - name: View notification statistics for your organization
     href: view-organization-notification-statistics.md 
   - name: Default notifications

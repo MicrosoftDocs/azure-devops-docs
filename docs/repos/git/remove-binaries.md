@@ -5,8 +5,6 @@ ms.assetid: ea4cadcc-c8c7-4f05-adc3-9a3ba07a2bd6
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 04/27/2018
-ms.author: edwardf
-author: edwardaf
 monikerRange: '>= tfs-2015'
 ---
 

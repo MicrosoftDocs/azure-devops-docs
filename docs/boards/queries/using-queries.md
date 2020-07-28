@@ -9,12 +9,12 @@ monikerRange: ">= tfs-2013"
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 07/09/2020
 ---
 
 # Create and save managed queries
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 Managed queries generate a list of work items based on the filter criteria you provide. You can create queries from the web portal or from a supported client, such as Visual Studio Team Explorer and Team Explorer Everywhere. Also, you can open a query in [Excel](../backlogs/office/bulk-add-modify-work-items-excel.md) to perform bulk additions and modifications.  
 
@@ -201,12 +201,12 @@ These queries return work items that are type Bug and meet the following logical
 - **Query 3**: OR (State=Active AND Assigned to @Me)  
 
 
-To group one or more clauses, select them and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
@@ -224,7 +224,7 @@ If your query results don't return expected results, follow these steps:
 
 ## Ungroup a clause
 
-To ungroup a clause, choose the ![ ](../media/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 

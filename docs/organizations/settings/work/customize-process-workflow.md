@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: tutorial
-ms.date: 06/19/2020
+ms.date: 07/17/2020
 ---
 
 # Customize the workflow (Inheritance process)  
@@ -90,7 +90,7 @@ States you add appear in the drop-down menu for the States field shown in work i
 
 	> [!div class="mx-imgBorder"]
 	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
-1. (Optional) To change the sequence of the State within the drop-down menu, choose the ![ ](../../../media/icons/actions-icon.png) context menu icon and choose **Move up** or **Move down**. 
+1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Move up State](media/customize-workflow/move-state-sequence.png) 
@@ -175,7 +175,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a work item type](customize-process-wit.md)
+- [Add or modify a work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md)  
 - [Customize a form](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md) 

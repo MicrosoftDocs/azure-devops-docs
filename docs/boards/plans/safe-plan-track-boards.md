@@ -14,7 +14,7 @@ ms.date: 05/28/2020
 
 # Plan and track SAFe® programs and portfolios  
 
-[!INCLUDE [temp](../includes/version-vsts-only.md)]
+[!INCLUDE [temp](../includes/version-azure-boards-plus-azure-devops-server-2020.md)]
 
 Once you've configured your Agile tools to support SAFe®, trace relationships can be created from Stories all the way up to Epics. Additionally, you can view progress from the portfolio, program, and feature team levels.  
 
@@ -126,7 +126,7 @@ Each program manager defines and prioritizes their features. Here, we show the F
 
 In this next step you'll map each Feature to it's parent Epic. The Mapping tool quickly create parent-child links between Epics and Features. 
 
-1. From the Features backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Features backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping.png)
@@ -141,9 +141,9 @@ In this next step you'll map each Feature to it's parent Epic. The Mapping tool 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Drag and drop feature onto epic](media/safe-plan-track/map-feature-to-epic.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The  ![ ](../../media/icons/info.png) info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The   :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, with Parents enabled](media/safe-plan-track/list-epics-features.png)
@@ -182,7 +182,7 @@ In a similar manner to portfolio and program teams, each Agile feature team add 
 
 Just as you earlier mapped each Feature to it's parent Epic, now you'll map each User Story to it's parent Feature. The Mapping tool quickly create parent-child links between Features and User Stories. 
 
-1. From the Stories backlog, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and select **Mapping**.  
+1. From the Stories backlog, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and select **Mapping**.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Features backlog, Turn on Mapping](media/safe-plan-track/turn-on-mapping-for-stories.png)
@@ -197,9 +197,9 @@ Just as you earlier mapped each Feature to it's parent Epic, now you'll map each
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, Drag and drop user story onto feature](media/safe-plan-track/map-story-to-feature.png)
 
-1.	When finished, choose the ![ ](../../media/icons/view-options-icon.png) view options icon and enable **Parents** and turn **Mapping** off. 
+1.	When finished, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and enable **Parents** and turn **Mapping** off. 
 
-	Your list should look something like that shown in the following image. The ![ ](../../media/icons/info.png) info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
+	Your list should look something like that shown in the following image. The  :::image type="icon" source="../../media/icons/info.png" border="false":::  info icon appears next to each Epic and Feature, indicating that the work item is owned by another team than the one currently selected.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Stories backlog, with Parents enabled](media/safe-plan-track/stories-parented-list.png)

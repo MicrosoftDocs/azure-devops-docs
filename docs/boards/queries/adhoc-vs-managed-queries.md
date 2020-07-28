@@ -14,7 +14,7 @@ ms.date: 02/14/2019
 
 # Ad hoc vs managed work item queries
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You have two ways to perform work item searches: semantic or ad hoc searches and managed queries. 
 
@@ -22,7 +22,7 @@ You have two ways to perform work item searches: semantic or ad hoc searches and
 
 You perform semantic or ad hoc searches using the work item search box (shown below)   
 
-Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon.  
+Choose any **Boards** page, enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon.  
 
 > [!div class="mx-imgBorder"]
 > ![Work Item Search box](../../project/navigation/media/search/work-item-search-vert.png)    
@@ -39,7 +39,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 You perform semantic or ad hoc searches using the work item search box (shown below). 
 
-In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the ![ ](../../project/search/media/shared/start-search-icon.png) start search icon. 
+In the search box, check that the text says _Search work items_. If it doesn't, use the selector to select it. Enter a keyword or phrase in the search box, and press *Enter* or choose the :::image type="icon" source="../../project/search/media/shared/start-search-icon.png" border="false"::: start search icon. 
 
 ![Search Work Items Text Box](media/using-queries-search-box-ts.png)
 
@@ -47,7 +47,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker-end  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]
 > ![Web portal, Queries page, new queries experience, Editor view of a Flat List Query](media/using-queries-new-vsts-exp.png)  
 
@@ -55,7 +55,7 @@ You add and run managed queries using the built-in query-editor available from t
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"  
 
-<img src="media/query-active-bugs-editor-vso.png" alt="Web portal, Queries page, Editor view of a Flat List Query" style="border: 1px solid #C3C3C3;" />   
+![Web portal, Queries page, Editor view of a Flat List Query](media/query-active-bugs-editor-vso.png)   
 
 ::: moniker-end  
 
@@ -75,7 +75,7 @@ For details about semantic or ad hoc searches, see [Perform a semantic or ad hoc
 - Search against specific work item fields to quickly narrow down a list of work items
 - Determine what key words will support a managed search
 
-### Use managed queries to perform the following tasks: |
+### Use managed queries to perform the following tasks: 
 
 - Review or triage a group of work items
 - Perform bulk updates on several work items such as change Assign To, Iteration Path, or more

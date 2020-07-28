@@ -5,8 +5,6 @@ description: Using Version Control for your project in Azure DevOps
 ms.assetid: F1DE1F34-50BD-49A6-BF67-D27F884944F4
 toc: show
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 09/10/2018 
 monikerRange: '>= tfs-2015'
