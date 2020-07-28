@@ -57,7 +57,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 1. Select **Azure DevOps** from the list.
 
-  :::image type="content" source="./media/teams/connectors-list-s172.png" alt-text="Connectors list":::
+	:::image type="content" source="./media/teams/connectors-list-s172.png" alt-text="Connectors list":::
 
 1. Choose the **Add** button.
 
@@ -67,7 +67,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 ### From Azure DevOps Server
 
-1. From your project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
+1. From your project page (`https://mycompany/tfs/[collection]/[project]`), navigate to **Service Hooks** in the settings:
 
    ![Azure DevOps Services, Service Hook Settings](media/slack/vsts-service-hooks.png)  
 
