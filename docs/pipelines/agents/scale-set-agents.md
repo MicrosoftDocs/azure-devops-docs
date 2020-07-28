@@ -107,7 +107,7 @@ In the following example, a new resource group and virtual machine scale set are
     * `--ephemeral-os-disk true`
     * `--os-disk-caching readonly`
 
-    Select any Linux or Windows image - either from Azure marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
+    Select any Linux or Windows image - either from Azure Marketplace or your own custom image - to create the scale set. Do not pre-install Azure Pipelines agent in the image. Azure Pipelines automatically installs the agent as it provisions new virtual machines. In the above example, we used a plain `UbuntuLTS` image. For instructions on creating and using a custom image, see [FAQ](#faq).
     
     Select any VM SKU and storage SKU.
 
@@ -209,7 +209,7 @@ Due to the sampling size of 5 minutes, it is possible that all agents can be run
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure DevOps Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`
@@ -260,13 +260,13 @@ az vmss extension set \
 
 > [!IMPORTANT]
 > The scripts executed in the Custom Script Extension must return with exit code 0 in order for the VM to finish the VM creation process.
-> If the custom script extension throws an exception or returns a non-zero exit code, the Azure DevOps Pipeline extension will not be executed and the VM will not register with Azure DevOps agent pool.
+> If the custom script extension throws an exception or returns a non-zero exit code, the Azure Pipeline extension will not be executed and the VM will not register with Azure DevOps agent pool.
 
 ## Lifecycle of a Scale Set Agent
 
-Here is the flow of operations for an Azure DevOps Pipelines Virtual Machine Scale Set Agent
+Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set Agent
 
-1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure DevOps Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
+1. The Azure DevOps Scale Set Agent Pool sizing job determines the pool has too few idle agents and needs to scale up. Azure Pipelines makes a call to Azure Scale Sets to increase the scale set capacity.
 
 2. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
