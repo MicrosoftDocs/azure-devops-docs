@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/05/2019
+ms.date: 7/28/2020
 ---
 
 # Add a team, move from one default team to several teams
@@ -44,10 +44,9 @@ As your team grows, you can easily move from one team to two. In this example, w
 
 ::: moniker-end
 
-#### [Browser](#tab/browser) 
+#### [New Teams Page](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
-**New Teams Page**
 
 Add and configure two teams, Email and Voice. Here we show you how to add and configure the Email team. 
 
@@ -74,9 +73,11 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
-**Teams Page (current version)** 
-
 ::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)]  
+
+#### [Current page](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -110,7 +111,6 @@ Add and configure two teams, Email and Voice. Here we show you how to add and co
 To configure other team features, see [Manage teams and configure team tools](manage-teams.md).
 
 ::: moniker-end
-
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
@@ -204,7 +204,6 @@ az devops team list [--project]
 [!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
 
 ::: moniker range=">= azure-devops-2020"
-
 
 #### Example
 
@@ -373,24 +372,9 @@ Now that your two feature teams are configured, you need to move existing work i
 
 
 
-#### [Browser](#tab/browser) 
-
-::: moniker range="azure-devops"
-**New Teams Page** 
-
-1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
-
-   ![Web portal, Queries page, Bulk modify select work items](media/add-team/query-bulk-edit-area-path.png)
-
-2. After you bulk modify, do a bulk save.  
-  
-   ![Bulk save edited work items](media/add-team/query-bulk-save.png)
-
-**Teams Page (current version)** 
-::: moniker-end
-
-::: moniker range=">= azure-devops-2019"
-
+### Browser  
+ 
+::: moniker range=">= azure-devops-2019" 
 1. The quickest way to do this, is to [create a query](../../boards/queries/using-queries.md) of all work items you want to reassign, multi-select those items belonging to each team, and [bulk edit the area path](../../boards/backlogs/bulk-modify-work-items.md).
 
    ![Web portal, Queries page, Bulk modify select work items](media/add-team/query-bulk-edit-area-path.png)
@@ -413,7 +397,7 @@ Now that your two feature teams are configured, you need to move existing work i
 
 ::: moniker-end  
 
-#### [Azure DevOps CLI](#tab/azure-devops-cli)
+### Azure DevOps CLI
 
 <a id="move-work-items" /> 
 
@@ -571,10 +555,10 @@ C:\WINDOWS\system32>az boards work-item update --id 487 --area "Fabrikam Fiber\S
 
 One last step in moving from one team to two teams requires configuring the default project team to exclude sub-areas.  
 
-#### [Browser](#tab/browser) 
+#### [New Teams Page](#tab/preview-page) 
 
 ::: moniker range="azure-devops"
-**New Teams Page**
+
 1. Open **Project settings > Team configuration > Areas** settings page for the default project team, and change the setting as shown.  
 
 	> [!div class="mx-imgBorder"]  
@@ -585,8 +569,11 @@ One last step in moving from one team to two teams requires configuring the defa
   > [!div class="mx-imgBorder"]  
   > ![Product backlog, default project team](media/add-team/product-backlog-default-team.png)
 
-**Teams Page (current version)** 
 ::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-new teams-not-supported.md)] 
+
+#### [Current page](#tab/current-page) 
 
 ::: moniker range=">= azure-devops-2019" 
 
