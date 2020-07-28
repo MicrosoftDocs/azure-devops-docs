@@ -41,7 +41,7 @@ To use the Azure DevOps CLI in a hosted agent using a Release Pipeline, execute 
 	> [!div class="mx-imgBorder"]  
 	> ![Agent Job Configuration](media/job-config.png)
 
-5. Choose the ![ ](../media/icons/blue-add.png) plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
+5. Choose the :::image type="icon" source="../media/icons/blue-add.png" border="false"::: plus icon to add another task and configure it as a PowerShell task. Enter *Power* into the search box to filter the list.
 
 	> [!div class="mx-imgBorder"]  
 	> ![PowerShell](media/power-shell.png)

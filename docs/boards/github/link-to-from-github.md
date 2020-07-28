@@ -112,7 +112,7 @@ Examples:
 
 ## View or open links from the Development section
 
-The Development section within the work item form lists the links created to GitHub commits and pull requests with the ![ ](../../media/icons/github.png) GitHub icon. 
+The Development section within the work item form lists the links created to GitHub commits and pull requests with the :::image type="icon" source="../../media/icons/github.png" border="false"::: GitHub icon. 
 
 > [!div class="mx-imgBorder"]  
 > ![Development section shows GitHub links](media/link/git-hub-development-links.png)  

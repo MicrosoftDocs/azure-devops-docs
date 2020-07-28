@@ -176,7 +176,7 @@ It lists boards in the following order:
 - All boards of teams that you belong to
 - All boards defined for the project in alphabetical order. 
 
-Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list as described in [Filter basics](filter-basics.md).
 
 From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
 

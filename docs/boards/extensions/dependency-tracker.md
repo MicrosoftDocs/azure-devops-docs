@@ -113,7 +113,7 @@ In addition, the following configuration or customization tasks should be perfor
 
 You can filter each supported view by typing a keyword or using one or more of the fields. Provided field include State, Work item type, and Iteration Path. Based on the keyword that you enter, the filter function lists work items based on any displayed column field.  
 
-To show the filter toolbar, choose the ![ ](../../media/icons/filter-icon.png) filter icon. 
+To show the filter toolbar, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon. 
 
 > [!div class="mx-imgBorder"]  
 > ![Filter by keyword or field](media/tracker/filter.png)  
@@ -243,7 +243,7 @@ Each column on the bar chart represents another area path that is producing depe
 Within the table, you can perform the following actions. 
 
 - Filter the list of work items by choosing one of the area path bars and progress states in the bar chart graph 
-- Expand or collapse the list of work items to show the full list of dependent work items using the ![ ](../media/icons/expand_icon.png) expand and ![ ](../media/icons/collapse_icon.png) collapse icons 
+- Expand or collapse the list of work items to show the full list of dependent work items using the :::image type="icon" source="../media/icons/expand_icon.png" border="false"::: expand and :::image type="icon" source="../media/icons/collapse_icon.png" border="false"::: collapse icons 
 - Add or remove column fields by opening Column Options
 - Switch the sequence of work items by choosing the Display: **Consumer on top** or **Producer on top**
 
