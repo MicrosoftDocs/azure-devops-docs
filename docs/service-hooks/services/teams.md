@@ -57,7 +57,7 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 1. Select **Azure DevOps** from the list.
 
-   ![Connectors list](./media/teams/connectors-list-s172.png)
+  :::image type="content" source="./media/teams/connectors-list-s172.png" alt-text="Connectors list":::
 
 1. Choose the **Add** button.
 
