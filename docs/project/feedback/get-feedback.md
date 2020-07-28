@@ -12,7 +12,7 @@ ms.date: 01/15/2019
 
 # Get feedback
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../includes/version-all.md)]
 
 Once you have working software, you're ready to get feedback from your stakeholders. You can ask reviewers to provide videos, screenshots, type-written comments, and ratings. Their feedback is captured into work items that you can review and use to create a bug or suggest a new backlog item. 
 
@@ -41,7 +41,7 @@ Before requesting feedback, make sure that you [provide stakeholders who'll you 
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 * You must connect to a project. If you don't have a project yet, [create one](/azure/devops/organizations/projects/create-project).
 * You must be added to a project as a member of the **Contributors** or **Project Administrators** security group. To get added, [Add users to a project or team](/azure/devops/organizations/security/add-users-team-project). 
@@ -90,7 +90,7 @@ Add the **Other links** widget to a web portal team dashboard. For details, see 
 
 To request feedback, you fill out a form that generates an email request to your stakeholders.
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2020"  
 
 1. From the dashboard, choose the **Request feedback** link from the Other links widget.  
 
@@ -237,4 +237,4 @@ Reviewers launch your application and provide feedback through the free Microsof
 
 - You can [change the audio device or annotation tool](change-audio-device-annotation-tool.md) using the Settings icon change settings icon on the Microsoft Feedback Client.  
 - If you access the Microsoft Feedback Client from a remote machine, you can [enable remote audio](enable-remote-audio-capture.md).  
-- You can download the Feedback client from here: [Visual Studio download site](https://www.microsoft.com/download/details.aspx?id=48142).  
+- You can install the Test & Feedback extension from the Marketplace, [Test & Feedback](https://marketplace.visualstudio.com/items?itemName=ms.vss-exploratorytesting-web).  

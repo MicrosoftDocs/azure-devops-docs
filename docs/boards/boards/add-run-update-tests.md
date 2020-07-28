@@ -46,7 +46,7 @@ Tests you create from the Kanban board are automatically linked to the user stor
 	> ![Choose another team's board](media/quickstart/select-kanban-team-board.png)  
 
 	> [!TIP]    
-	> Choose the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to favorite a team board. Favorited artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list.
+	> Choose the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team board. Favorited artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list.
 
 ::: moniker-end
 
@@ -99,7 +99,7 @@ Prior to running the test, you must add details.
 
 ## Run test 
 
-Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the ![Actions icon](../media/icons/actions-icon.png) actions menu for the inline test.  
+Run the test by selecting ![Run icon](../media/icons/run_query.png) Run test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu for the inline test.  
 
 <img src="media/i-test-run-test.png" alt="Run a test" style="border: 1px solid #C3C3C3;" />  
 
@@ -108,7 +108,7 @@ Microsoft Test Runner starts in a new browser instance. For details on running a
 
 ## Update the status of a test  
 
-You can update the status of the test from the ![Actions icon](../media/icons/actions-icon.png) actions menu . 
+You can update the status of the test from the   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  actions menu . 
 
 <img src="media/i-test-update-status.png" alt="Check tasks that are complete" style="border: 1px solid #C3C3C3;" /> 
  

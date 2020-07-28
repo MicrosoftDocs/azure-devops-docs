@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2013'
-ms.date: 05/06/2019
+ms.date: 07/09/2020
 ---
 
 # Linking, traceability, and managing dependencies  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 By linking work items and other objects, you can track related work, dependencies, and changes made over time. All links are defined with a specific link type. For example, you can use Parent/Child links to link work items to support a hierarchical tree structure. Whereas, the Commit and Branch link types support links between work items and commits and branches, respectively.    
 
@@ -32,6 +32,7 @@ This article describes the link types available for your use. You can link objec
 > Work item forms and features available to you can differ depending on whether you open the form from the web portal or Visual Studio Team Explorer. 
 
 <a id="link-work-items">  </a>
+
 ## Work items linked to work items
 
 There are several system link types used to link work items to each other: two tree topology, one dependency topology, and one network. Tree topology links support nested hierarchies, tree queries, and several reports. Dependent links support tracking tasks that must be completed before others can be started. And, the **Related** link type supports connecting work items that are at the same level.
@@ -57,6 +58,7 @@ Also, you can use the context menu in the web portal or Team Explorer.
 > For each work item, you can add a maximum of 1000 links to other work items.  
 
 ::: moniker range="azure-devops" 
+
 <a id="link-remote-work-items">  </a>
 
 ## Cross-organization work item linking 
@@ -78,23 +80,24 @@ You can create links between work items by using one of the links control tabs w
 
 
 #### [New web form](#tab/new-web-form/)
+
 ::: moniker range=">= tfs-2017"
 <a id="team-services-link" /> 
 
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
-Open a work item and choose the ![ ](../media/icons/Action_Add.png) plus icon to add a link. 
+Open a work item and choose the :::image type="icon" source="../media/icons/Action_Add.png" border="false"::: plus icon to add a link. 
 
-<img src="media/link-work-items-new-form-control.png" alt="Web portal, work item form, Related work section, " style="border: 2px solid #C3C3C3;" />
+![Web portal, work item form, Related work section](media/link-work-items-new-form-control.png) 
 
 Choose **Existing item** to link to a work item or other object using any supported link type. Choose **New item** to initiate a link and define a new work item at the same time. For details, see [Add link to work items](../backlogs/add-link.md).
 
-<img src="../../reference/xml/media/linkscontrol-related-work-menu-options.png" alt="Links control menu of options" style="border: 2px solid #C3C3C3;" />
+![Links control menu of options](../../reference/xml/media/linkscontrol-related-work-menu-options.png)   
 
 From the **Related Work** or **Links** tab, you can also perform these actions: 
 
 - Open an associated item or object: choose the linked item  
-- Delete a link: highlight it and choose the ![ ](../media/icons/delete_icon.png) delete icon  
+- Delete a link: highlight it and choose the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: delete icon  
 
 From a query results page, you can also perform these actions: 
 - Link selected items to a new work item  
@@ -166,7 +169,7 @@ The following image shows the full set of link types used in linking test manage
 
 ![Link types used to link test objects](media/link-tracking-work-item-test-case-link-types.png)  
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases?view=azure-devops). 
 
 **Test case work item form (TFS 2015)**
 
@@ -182,13 +185,13 @@ As you develop your software, you can capture which code changes and builds supp
 ::: moniker range=">= azure-devops-2019"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Found in build, Integrated in build, Pull Request, Versioned Item, and Integrated in release environment. 
 
-<img src="media/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+![Artifact-to-artifact link types](media/link-tracking-artifact-to-artifact-link-types.png)  
 ::: moniker-end
 
 ::: moniker range=">= tfs-2013 <= tfs-2018"
 The link types used to construct these links&mdash;as illustrated in the following image&mdash;are: Branch, Build, Changeset, Commit, Pull Request, and Versioned Item. 
 
-<img src="../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+![Artifact-to-artifact link types](../backlogs/media/git/link-tracking-artifact-to-artifact-link-types.png)  
 
 To learn more about the links control or to customize the Development links control, see [LinksControlOptions elements, Development links control](../../reference/xml/linkscontroloptions-xml-elements.md#development-links-control). 
 
@@ -209,7 +212,7 @@ Git lets you link work items to commits by using the **Commit** link type. You c
 - You can use the [git-commit](https://git-scm.com/docs/git-commit) command and include the work item ID in your comment. For example, you apply this comment #35 Catch null exception to your commit. When you push the commit, the system creates a Commit link between the commit and work item #35. 
 - And, with the new work item form (available from Azure Boards and TFS 2017), you can [drive your git development from the work item](../backlogs/connect-work-items-to-git-dev-ops.md) as shown in the following image.  
 
-    <img src="../backlogs/media/drive-git-development-dev-section.png" alt="Work item form, Development section" style="border: 1px solid #C3C3C3;" />   
+    ![Work item form, Development section](../backlogs/media/drive-git-development-dev-section.png)  
 
 ::: moniker-end
 
@@ -224,21 +227,22 @@ By connecting Azure Boards with GitHub repositories, you enable linking between 
 
 ::: moniker-end 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
-The link types supported include <strong>GitHub Commit</strong>, <strong>GitHub Issue</strong> and <strong>GitHub Pull Request</strong>.
-
-> [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
+The link types supported include **GitHub Commit**, **GitHub Issue**, and **GitHub Pull Request**.
 
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 
-The link types supported include <strong>GitHub Commit</strong> and <strong>GitHub Pull Request</strong>.
+The link types supported include **GitHub Commit** and **GitHub Pull Request**.
 
+
+::: moniker-end
+
+::: moniker range=">= azure-devops-2019"
 > [!IMPORTANT]  
-> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Install and configure the Azure Boards app for GitHub](../github/install-github-app.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits and pull requests to work items](../github/link-to-from-github.md).
+> You can only link to GitHub artifacts whose repositories you have connected to Azure Boards. To create that connection, see [Connect Azure Boards to GitHub](../github/connect-to-github.md). To learn more about linking to GitHub artifacts, see [Link GitHub commits, pull requests, and issues to work items](../github/link-to-from-github.md).
 
 ::: moniker-end
 
@@ -247,15 +251,16 @@ The link types supported include <strong>GitHub Commit</strong> and <strong>GitH
 
 Team Foundation version control (TFVC) lets you link work items to version control changesets or versioned source code files by using the **Changeset** and **Versioned Item** link types. When you check in pending changes or use My Work to check in changes, [work items are automatically linked to your changes](../../repos/tfvc/check-your-work-team-codebase.md).
 
-<img src="../../repos/tfvc/media/check-your-work-team-codebase/ic593474.png" alt="Team Explorer, My Work, Pending Changes, check in" style="border: 1px solid #C3C3C3;" />  
+![Team Explorer, My Work, Pending Changes, check in](../../repos/tfvc/media/check-your-work-team-codebase/ic593474.png)  
 
 
 <a id="links-attachments"></a>
+
 ## Work items linked to a Web site, network share, storyboard, or document 
 
 You can use the Hyperlinks or Storyboard link type to link a work item to a Web site, network share, or document located on a network share. Both of these link types are one-way links. To add links of this type, you can use the same links controls [described earlier for linking work items](#link-work-items). 
 
-<img src="media/link-tracking-work-item-to-url-link-types.png" alt="Artifact-to-artifact link types" style="border: 1px solid #C3C3C3;" /> 
+![Artifact-to-artifact link types](media/link-tracking-work-item-to-url-link-types.png)  
 
 ::: moniker range=">= tfs-2013 <= tfs-2015"
 
@@ -276,7 +281,7 @@ By using the Storyboard link type, you differentiate the link your adding to spe
 
 You choose the **Model** link type when you want to link a work item to an architectural diagram created using Visual Studio Enterprise. This link type is only available when you work from Visual Studio Enterprise. With this link type, you can  track tasks, test cases, bugs, requirements, issues, or other kinds of work that are associated with specific parts of your model. 
 
-<img src="media/link-tracking-work-item-to-model-diagrams-link-types.png" alt="Model link type links work items to diagrams" style="border: 1px solid #C3C3C3;" /> 
+![Model link type links work items to diagrams](media/link-tracking-work-item-to-model-diagrams-link-types.png)  
 
 To link a work item to a diagram, open the work item in Visual Studio, choose the **All Links** or **Other Links** tab and choose the **Model** link type. You can also open the linked diagram from the links tab. 
 

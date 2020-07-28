@@ -3,9 +3,9 @@ title: Retention policies for builds, tests, and releases
 ms.topic: conceptual
 description: Build and release retention policies in Azure Pipelines and Team Foundation Server (TFS)
 ms.assetid: A9AC68EB-E013-4F86-8604-E69BB330817B
-ms.author: rabououn
-author: ramiMSFT
-ms.date: 07/21/2020
+ms.author: jukullam
+author: juliakm
+ms.date: 12/04/2019
 monikerRange: '>= tfs-2015'
 ---
 
@@ -65,12 +65,6 @@ You can use the [Copy Files task](../tasks/utility/copy-files.md) to save your b
     Contents: '_buildOutput/**'
     TargetFolder: '\\mypath\storage\$(Build.BuildNumber)'
 ```
-
-* **SourceFolder**: Folder that contains the files you want to copy (optional).
-* **Contents**: File paths to include as part of the copy (required).
-* **TargetFolder**: Destination folder or UNC path (required).
-
-For more information, see the [Copy Files](../tasks/utility/copy-files.md) utility task.
 
 # [Classic](#tab/classic)
 

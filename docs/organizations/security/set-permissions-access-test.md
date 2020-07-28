@@ -13,7 +13,7 @@ ms.date: 01/27/2020
 
 # Set permissions and access for testing
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You grant or restrict access to various manual test features by granting users or groups specific permissions for an object or project.  
 
@@ -129,7 +129,7 @@ In this example, we grant members assigned to the Test Admin group permissions t
 ::: moniker-end    
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 In this example, we grant members assigned to the Test Admin group permissions to delete test runs.   
 
@@ -166,7 +166,7 @@ In this example, we grant members assigned to the Team Collection Admin group pe
 
 ::: moniker-end    
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 > [!div class="mx-imgBorder"]  
 > ![Set project-level test permissions for a custom group, Team Admin](media/test-permissions/set-collection-level-test-permissions-old-ui.png)  

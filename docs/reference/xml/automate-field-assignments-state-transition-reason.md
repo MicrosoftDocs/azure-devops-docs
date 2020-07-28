@@ -7,6 +7,7 @@ ms.custom: process
 ms.assetid: f4c6c550-ed55-4bff-a5a7-0e25e87249a5
 ms.author: kaelli
 ms.topic: reference
+monikerRange: '< azure-devops'
 ms.date: 02/14/2017
 ---
 

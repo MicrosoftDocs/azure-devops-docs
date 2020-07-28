@@ -14,7 +14,7 @@ ms.date: 06/24/2019
 
 # Set repository permissions for Git or TFVC
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 By default, members of the project Contributors group have permissions to contribute to a repository. However, to create and manage permissions for a repository, you must be a member of the Project Administrators group.  You can grant or restrict access to a repository by setting the permission state to **Allow** or **Deny** for a single user or a security group. 
 
@@ -31,7 +31,7 @@ To contribute to the source code, you must be granted **Basic** access level or 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 To contribute to the source code, you must be granted **Basic** access level or greater. Users granted **Stakeholder** access have no access to source code. To learn more, see [About access levels](access-levels.md).
 ::: moniker-end
@@ -112,7 +112,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -138,7 +138,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-1. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
+1. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
@@ -194,7 +194,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. To set the set the permissions for the TFVC repository for a project, choose **TFVC Repository** and then choose the security group whose permissions you want to manage.
 
@@ -213,7 +213,7 @@ To learn about inheritance, see [About permissions and groups, Inheritance and s
 
 ::: moniker range="<= tfs-2018"
 
-1. From the web portal, open the admin context by choosing the ![ ](../../boards/media/icons/gear_icon.png) **Settings** and choose **Version Control**.
+1. From the web portal, open the admin context by choosing the :::image type="icon" source="../../boards/media/icons/gear_icon.png" border="false"::: **Settings** and choose **Version Control**.
 
 1. Choose the TFVC repository for the project and then choose the security group whose permissions you want to manage.   
 

@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
 monikerRange: '>= tfs-2015'
-ms.date: 02/17/2020
+ms.date: 7/09/2020
 ---
 
 
@@ -19,14 +19,14 @@ ms.date: 02/17/2020
 
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)] 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards and add columns.  
 
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 <= azure-devops-2019"
 
 Sprint Taskboards are similar to Kanban boards in that they show work items as cards instead of as lists, but are different in the ways summarized in [Backlogs, Boards, and Plans, Kanban and Taskboards](../backlogs/backlogs-boards-plans.md#kanban-taskboards). Similar to the Kanban boards, you can customize cards. To change column names or add columns, you need to customize the workflow.   
 
@@ -44,7 +44,7 @@ Sprint Taskboards are similar to Kanban boards in that they show work items as c
 
 <a id="add-columns" > </a>
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add columns
 
@@ -68,12 +68,12 @@ The changes made apply to all sprint Taskboards for the selected team.
 
 	Similar to the Kanban board, each column must map to a category state. There are four category states: *Proposed*, *Committed*, *In Progress*, and *Completed*. At least one column must map to *Proposed* and one column must map to *Completed*. To learn more about each state, see [Workflow states and state categories](../work-items/workflow-and-state-categories.md).
 
-4. To change the column order, hover over the column and choose the ![](../media/icons/grabber.png) grabber icon and drag it up or down within the list of columns.   
+4. To change the column order, hover over the column and choose the :::image type="icon" source="../media/icons/grabber.png" border="false"::: grabber icon and drag it up or down within the list of columns.   
 
 	> [!div class="mx-imgBorder"]
 	> ![Move column](media/customize/choose-column-move.png)
 
-5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, hover over the column and choose the ![](../media/icons/trash-can.png) delete icon.
+5. To delete a column, first make sure that the column doesn't contain any work items. If it does, move the items to another column. Then, hover over the column and choose the :::image type="icon" source="../media/icons/trash-can.png" border="false"::: delete icon.
 
 	> [!div class="mx-imgBorder"]
 	> ![Delete column](media/customize/choose-column-delete.png)
@@ -139,7 +139,7 @@ Another handy feature is to simply update a field without having to open the wor
 
 This quick update feature is particularly useful when you need to update a number of work items at once. For example, you can add estimates or update Remaining Work. 
 
-To change the title, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and then choose **Edit title**. 
+To change the title, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and then choose **Edit title**. 
 
 > [!div class="mx-imgBorder"]
 > ![Edit title](media/customize/edit-title.png)
@@ -194,7 +194,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the Settings dialog. 
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the Settings dialog. 
 
    > [!div class="mx-imgBorder"]  
    > ![Taskboard, open Settings dialog](media/customize/open-taskboard-settings-new-nav.png)  
@@ -208,9 +208,9 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.  
 
-4. To add a field, choose the ![ ](../media/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add. 
+4. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add. 
  
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 6. When done with your changes, choose **Save**.
 
@@ -221,7 +221,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
-1. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
+1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the Settings dialog.  
 
    ![taskboard, open card customization dialog](media/customize/task-board-customize-open-settings.png)    
 
@@ -234,9 +234,9 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 
-4. To add a field, choose the ![ ](../media/icons/green_plus_icon.png) plus icon and enter the name of a field  you want to add.  
+4. To add a field, choose the :::image type="icon" source="../media/icons/green_plus_icon.png" border="false"::: plus icon and enter the name of a field  you want to add.  
 
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.  
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.  
 
 6. When done with your changes, choose **Save**.
 
@@ -246,7 +246,7 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 1. [Open the taskboard](task-board.md) for the sprint you want to customize. Remember, only [team or project administrators](../../organizations/settings/add-team-administrator.md) can customize the taskboard.  
 
-1. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the Settings dialog.  
+1. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the Settings dialog.  
 
    ![Taskboard, open card customization dialog](media/customize/task-board-customize-open-settings.png)    
 
@@ -261,9 +261,9 @@ You change the way cards appear on the taskboard in the same way you change the 
 
 	Repeat this step for each work item type you want to change. Don't be surprised if the options change when you choose a different work item type. For example, **Show Remaining Work** only applies to tasks and perhaps bugs, but not to user stories or product backlog items.   
 
-4. To add a field, choose the ![ ](../media/icons/add_icon.png) plus icon and enter the name of a field  you want to add.  
+4. To add a field, choose the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus icon and enter the name of a field  you want to add.  
 
-5. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.  
+5. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.  
 
 6. When done with your changes, choose **Save**.
 
@@ -280,9 +280,9 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
 1. [Open the Taskboard](task-board.md) that you want to customize.  
 
-2. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to open the **Settings** dialog. 
+2. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to open the **Settings** dialog. 
 
-3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -300,7 +300,7 @@ You can apply style rules to change the color of Taskboard cards based on specif
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 	> [!div class="mx-imgBorder"]
 	> ![Delete-clone-move menu options](media/customize/delete-clone-move.png)
@@ -319,9 +319,9 @@ Requires TFS 2015.1 or later version.
 
 1. [Open the Taskboard](task-board.md) that you want to customize. If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize boards.
 
-2. Choose the ![ ](../../media/icons/team-settings-gear-icon.png) gear icon to open the **Settings** dialog. 
+2. Choose the :::image type="icon" source="../../media/icons/team-settings-gear-icon.png" border="false"::: gear icon to open the **Settings** dialog. 
 
-3. Choose **Styles** to specify a style rule. Choose the ![ ](../../media/icons/green_plus_icon.png) plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
+3. Choose **Styles** to specify a style rule. Choose the :::image type="icon" source="../../media/icons/green_plus_icon.png" border="false"::: plus icon to add a style. Select the color to apply to the card and define the criteria for the style rule. 
 
 	In this example we show the **Styles** dialog for the taskboard. 
 
@@ -339,11 +339,20 @@ Requires TFS 2015.1 or later version.
 
      ![taskboard, Style dialog, example style rule](media/customize/task-board-card-style-rule-stale-tasks.png)   
 
-4. To copy or delete a style rule, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Clone** or **Delete**, respectively.
+4. To copy or delete a style rule, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Clone** or **Delete**, respectively.
 
 5. When done with your changes, choose **Save**.
 
 ::: moniker-end
+
+::: moniker range=">= azure-devops-2020"
+
+## Taskboard automatically updates 
+
+Your Taskboard automatically refreshes when changes occur. There isn't any live updates control, it simply happens in the backgroun.  As other team members move or reorder cards on the taskboard, the Taskboard automatically updates with these changes. You don't need to press F5 to see the latest changes.
+
+::: moniker-end
+
 
 
 ## Related articles

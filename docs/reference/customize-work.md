@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= tfs-2013'
-ms.date: 04/17/2020
+ms.date: 07/20/2020
 ---
 
 # Customize your work tracking experience 
@@ -169,7 +169,7 @@ The following table summarizes the differences between the three supported proce
 
 <a id="choose-process-model" />
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ## Choose the process model for your project collection 
 
@@ -244,7 +244,7 @@ Otherwise, to grant or restrict access to select features or functions, review o
   
 
 
-::: moniker range=">= tfs-2013 <=azure-devops-2019"
+::: moniker range="< azure-devops"
 
 <a id="test-experience"></a>
 

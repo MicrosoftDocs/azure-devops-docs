@@ -86,7 +86,7 @@ landingContent:
             url: ./repos/azure-repos-git.md
           - text: Team Foundation version control 
             url: ./repos/tfvc.md
-          - text: BitBucket Cloud
+          - text: Bitbucket Cloud
             url: ./repos/pipeline-options-for-git.md
           - text: Subversion 
             url: ./repos/pipeline-options-for-git.md

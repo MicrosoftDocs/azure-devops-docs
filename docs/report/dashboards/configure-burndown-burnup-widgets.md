@@ -7,8 +7,8 @@ ms.technology: devops-analytics
 ms.topic: tutorial
 ms.author: kaelli
 author: KathrynEE
-monikerRange: '>= azure-devops-2019' 
-ms.date: 07/08/2019
+monikerRange: '>= azure-devops-2019'  
+ms.date: 07/14/2020
 ---
 
 # Configure a Burndown or Burnup widget 
@@ -87,15 +87,15 @@ As the following diagram shows, charts based on the Burndown and Burnup widgets 
  
 The Configuration dialog for the Burndown and Burnup widgets is the same. You configure these widgets for one or more teams. To learn more about teams, see [Add teams](../../organizations/settings/add-teams.md).
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.  
+1. To open the configuration dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option.  
 ::: moniker-end
 
 ::: moniker range="azure-devops-2019"
 1. If you haven't yet [enabled or installed Analytics](analytics-extension.md)], do that now.    
 1. If you haven't yet [added the Burndown widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
-1. To open the configuration dialog, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option.   
+1. To open the configuration dialog, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option.   
 ::: moniker-end
 
 
@@ -126,7 +126,7 @@ The Configuration dialog for the Burndown and Burnup widgets is the same. You co
    > [!NOTE]   
    > If your project has been customized using a [Hosted XML process](../../organizations/settings/work/hosted-xml-process-model.md) and has created a customized bug work item category name, then the Burndown and Burnup widgets won't be able to query for work items within that category. To query for bugs, the customized bug work item type must belong to the default **Bug Category**, reference name `Microsoft.BugCategory`.  
    
-	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-wit.md).   
+	You can also select **Work item type** to burndown on a specific work item type. In the list, you will find all the project's work item types including [custom work item types](../../organizations/settings/work/customize-process-work-item-type.md).   
 	![Burndown Widget - Configuration - Select work item types](./media/burndown-widget/burndownup-config-select-work-item-type.png)  
 
    > [!NOTE]   
