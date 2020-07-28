@@ -27,7 +27,7 @@ when an event occurs.
 
 ## Available services
 
-> These services are available as the target of service hooks. To learn about others apps and services that 
+These services are available as the target of service hooks. To learn about others apps and services that 
 integrate with Azure DevOps Services, visit the [Visual Studio Marketplace](https://marketplace.visualstudio.com/#AzureDevOpsServices)
 
 Pipelines                  |  Collaborate 	                    | Customer support	                    | Plan and track 	             | Integrate

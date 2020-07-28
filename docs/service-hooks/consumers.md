@@ -335,7 +335,7 @@ Post a message about the event to a room in HipChat. [Messages, Hipchat Cloud an
     * Required: **Yes**
   * **notifyRoom**
     * Notify room participants
-    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc). Each recipient's notification preferences are taken into account.
+    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc.). Each recipient's notification preferences are taken into account.
     * Data type: **boolean**
     * Required: **No**
   * **showDetails**
