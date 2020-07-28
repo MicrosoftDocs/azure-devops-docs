@@ -42,7 +42,7 @@ Grafana is an open source, feature-rich metrics dashboard and graph editor. It s
 
 3. For **Release deployment completed** event, configure the optional filters: **Release pipeline name**, **Stage name**, and **Status**
 
-     :::image type="content" source="./media/grafana/deployment-completed-filters.png" alt-text="Configure release deployment completed filtersa":::
+     :::image type="content" source="./media/grafana/deployment-completed-filters.png" alt-text="Configure release deployment completed filters":::
 
 4. Provide the Grafana URL and [Grafana API token](https://go.microsoft.com/fwlink/?linkid=2085301) required for Azure DevOps to post annotations. 
 	- If you check the **Annotate deployment duration window**, the annotation added corresponds to the duration of the deployment (start and end timestamps of deployment). 

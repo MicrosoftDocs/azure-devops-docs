@@ -38,7 +38,7 @@ take for the subscription.
 
 ### Before you begin
 
-To create a subscription, the following data will be required:
+To create a subscription, the following data is required:
 
 - project ID (use the [Project REST API](https://docs.microsoft.com/rest/api/vsts/core/projects?view=vsts-rest-4.1) to get the project ID)
 - event ID and settings (see the [event reference](./events.md))
@@ -46,7 +46,7 @@ To create a subscription, the following data will be required:
 
 ### Create the request
 
-Construct the body of the HTTP POST request to create the subscription based on the project id, event, consumer and action. 
+Construct the body of the HTTP POST request to create the subscription based on the project ID, event, consumer and action. 
 
 Here is an example request for creating a subscription that will cause a build event to be POSTed to `https://myservice/event` when the build `WebSite.CI` fails. 
 

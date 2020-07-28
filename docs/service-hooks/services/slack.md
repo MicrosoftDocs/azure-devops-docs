@@ -27,7 +27,7 @@ Users can also set up and manage subscriptions to get notifications in their cha
 
 ### Azure Pipelines app for Slack
 
->[Azure Pipelines app for Slack](../../pipelines/integrations/slack.md) helps to easily monitor the events in your pipelines. Users can set up and manage 
+[Azure Pipelines app for Slack](../../pipelines/integrations/slack.md) helps to easily monitor the events in your pipelines. Users can set up and manage 
 subscriptions for completed builds, releases, pending approvals and more from the app and get notifications for these events in their channels. Users can also approve release deployments from their channels. 
 
 ### Azure Repos app for Slack

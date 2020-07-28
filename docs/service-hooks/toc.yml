@@ -23,7 +23,7 @@
 - name: Service hook consumers
   href: consumers.md
 - name: Service hook events
-  href: consumers.md
+  href: events.md
 - name: Troubleshoot and FAQs
   href: troubleshoot.md
 

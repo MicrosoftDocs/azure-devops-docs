@@ -46,37 +46,37 @@ Configuring integration between Azure DevOps Server and Teams is a two-step proc
 
 > [!NOTE]  
 > Project administrator permissions are required to create service hook subscriptions. 
->Events for YAML pipelines are not supported. 
+> Events for YAML pipelines are not supported. 
 
 
 ### From Teams 
 
-1. To bring events from TFS into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select Connectors. 
+1. To bring events from Azure DevOps into Microsoft Teams, click the ellipsis or '...' at the top nav of your team channel, and select **Connectors**. 
 
-   <img alt="Adding a new Connector to Teams" src="./media/teams/Teams Connector config 1.png" style="width:80%;" />
+   ![Open the Teams actions menu](./media/teams/open-teams-menu-s172.png) 
 
-1. Select **Team Foundation Server** from the list.
+1. Select **Azure DevOps** from the list.
 
-   ![Connectors list](./media/teams/Teams Connector config tfs 1.png)
+   ![Connectors list](./media/teams/connectors-list-s172.png)
 
-1. Choose a name for the Connector, for example "My project notifications", and click Create. Note: this name is only used for managing the Connector.
-<br/>
-<img alt="Connectors list" src="./media/teams/Teams Connector config tfs 2.png" style="width:80%;" />
+1. Choose the **Add** button.
 
-1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your TFS project.
+2. Configure the connector. 
+
+1. Copy the generated web hook URL. Provide this URL when you're setting up service hook subscriptions in your Azure DevOps project.
 
 ### From Azure DevOps Server
 
 1. From your project page (```https://mycompany/tfs/[collection]/[project]```), navigate to **Service Hooks** in the settings:
 
-   ![Azure DevOps Services, Service Hook Settings](./media/slack/vsts-service-hooks.png)  
+   ![Azure DevOps Services, Service Hook Settings](media/slack/vsts-service-hooks.png)  
 
-1. Click **Create subscription** and select the "Teams" service.
+1. Click **Create subscription** and select the **Teams** service.
 
-1. Choose the type of activity you want to appear in your Teams channel.
-   > You can filter each of the triggers in specific ways.
-   > For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs,
-   > the target branch it applies to, and the team members that are required or invited to review the request.
+1. Choose the type of activity you want to appear in your Teams channel.	You can filter each of the triggers in specific ways.
+
+	For example, the *pull request created* trigger can be filtered on the repository in which the pull request occurs, 
+    the target branch it applies to, and the team members that are required or invited to review the request.
 
 1. Paste the web hook URL from the Teams connector configuration step and click Finish.
 
