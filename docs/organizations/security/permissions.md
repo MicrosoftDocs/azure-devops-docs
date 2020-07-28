@@ -1372,7 +1372,7 @@ You manage project-level permissions from the [web portal admin context](set-pro
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range="= azure-devops"
 
 #### [Preview page](#tab/preview-page) 
 

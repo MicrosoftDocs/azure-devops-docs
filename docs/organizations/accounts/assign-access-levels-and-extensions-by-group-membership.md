@@ -56,7 +56,7 @@ A notification displays, showing the status and outcome of the rule. If the assi
 
 ## Manage group members
 
-1. Select **Group rules** > ![](../../media/ellipses-reduced-screen-size.png) > **Manage members**.
+1. Select **Group rules** > :::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false"::: > **Manage members**.
    ![Highlight a group rule and select manage members](media/migrate-to-group-based-resource-management/highlight-rule-choose-manage-members.png)
 
    > [!NOTE]
