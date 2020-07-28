@@ -159,7 +159,7 @@ Copy the code below and replace the `{{placeholders}}` with your tasks informati
 ```
 
 **task.json components**<br>
-Here is a description of some of the components of the `task.json` file:
+Here are descriptions of some of the components of the `task.json` file:
 
 | Property             | Description                                                                                                                |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -169,7 +169,7 @@ Here is a description of some of the components of the `task.json` file:
 | `description`        | Detailed description of what your task does                                                                                |
 | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation"              |
 | `instanceNameFormat` | How the task is displayed within the build or release step list - you can use variable values by using **$(variablename)** |
-| `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
+| `groups`             | Describes groups that task properties may be logically grouped by in the UI                                               |
 | `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring"            |
 | `execution`          | Execution options for this task, including scripts                                                                         |
 
@@ -206,7 +206,7 @@ Enter "tsc" from the buildAndReleaseTask folder to compile an `index.js` file fr
 
 ### Run the task
 
-The task can be run with `node index.js` from PowerShell—that is exactly what an agent does.
+An agent can run the task with `node index.js` from PowerShell.
 
 ```
 node index.js
@@ -218,9 +218,9 @@ node index.js
 ##vso[task.complete result=Failed;]Input required: samplestring
 ```
 
-**The task failed!** That's exactly what would happen if the task ran and inputs weren't supplied (`samplestring` is a required input).
+In this example, the task failed because inputs weren't supplied (`samplestring` is a required input).
 
-As a fix, we can set the `samplestring` input and run again:
+As a fix, we can set the `samplestring` input and run the task again:
 
 ```
 $env:INPUT_SAMPLESTRING="Human"
@@ -237,7 +237,7 @@ node index.js
 Hello Human
 ```
 
-This time the task succeeded since `samplestring` was supplied, and it correctly outputted "Hello Human"!
+This time, the task succeeded because `samplestring` was supplied, and it correctly outputted "Hello Human"!
 
 <a name="testscripts"></a>
 
@@ -286,8 +286,8 @@ describe('Sample task tests', function () {
 ```
 
 > [!TIP]
-> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the buildAndReleaseTask folder with the following command.
->  `npm i --save-dev sync-request`
+> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the buildAndReleaseTask folder with the command
+>  `npm i --save-dev sync-request`.
 
 ### Create success test
 
@@ -396,7 +396,7 @@ Copy the .json code below and save it as your `vss-extension.json` file in your 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
 >[!NOTE]
->The **publisher** here must be changed to your publisher name. If you would like to create a publisher now, go to
+>The **publisher** here must be changed to your publisher name. If you'd like to create a publisher now, go to
 [create your publisher](#createpublisher) for instructions.
 
 ### Contributions
@@ -412,7 +412,7 @@ Copy the .json code below and save it as your `vss-extension.json` file in your 
 
 | Property | Description                                                 |
 | -------- | ----------------------------------------------------------- |
-| `path`   | Path of the file or folder relative to the `home` directory |
+| `path`   | Path of the file or folder relative to the `home` directory. |
 
 >[!NOTE]
 >For more information about the **extension manifest file**, such as its properties and what they do, check out the [extension manifest reference](./manifest.md).
@@ -421,10 +421,10 @@ Copy the .json code below and save it as your `vss-extension.json` file in your 
 
 ## Step 4: Package your extension
 
-Once you've written your extension, the next step towards getting it into the Marketplace is to package all of your files together. All extensions are packaged
-as VSIX 2.0 compatible .vsix files - Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
+Once you've written your extension, the next step towards getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
+as VSIX 2.0 compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
 
-Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command.
+Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command:
 
 ```no-highlight
 tfx extension create --manifest-globs vss-extension.json
