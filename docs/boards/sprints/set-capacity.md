@@ -129,7 +129,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	> [!NOTE]  
 	> The **Add all team members** action retrieved a maximum of 100 team members. If you have more team members to add, then you can add them one by one by choosing **Add user**.
 
-1. If you need to add other contributors to your project, choose the ![ ](../../media/icons/blue-add-icon.png) **Add user**.  
+1. If you need to add other contributors to your project, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: **Add user**.  
 
 2. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 
@@ -157,7 +157,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/add-team-members-standard.png)  
 
-2. If you need to add other contributors to your project, choose the ![ ](../media/icons/add-light-icon.png) **Add user** icon.  
+2. If you need to add other contributors to your project, choose the :::image type="icon" source="../media/icons/add-light-icon.png" border="false"::: **Add user** icon.  
 
 3. Next, set any time off that a team member will take. For the entire team days off, choose the **0 days** link as shown.  
 

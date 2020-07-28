@@ -84,7 +84,7 @@ To learn more, see [Default permissions and access for charts and dashboards](ch
 
 You can add each of the in-context Analytics reports to a dashboard. 
 
-1. Simply open the report, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. Simply open the report, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart.png)  
@@ -96,7 +96,7 @@ You can add each of the in-context Analytics reports to a dashboard.
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/select-a-dashboard-dialogue.png)  
 
-1. (Optional) Open the dashboard and choose the ![ ](media/icons/actions-icon.png) actions icon for the widget to configure the size or change other report properties. 
+1. (Optional) Open the dashboard and choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon for the widget to configure the size or change other report properties. 
 
 ::: moniker-end
 
@@ -220,7 +220,7 @@ Requires TFS 2017.2 or later version.
 
 	![Add a test plan chart to a dashboard](media/add-chart-test-quality.png)  
 
-3. Open the ![ ](media/icons/actions-icon.png) actions menu and choose the dashboard to add the chart to.  
+3. Open the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions menu and choose the dashboard to add the chart to.  
 
 	![Open Actions menu and select dashboard](media/add-chart-test-failures.png)  
 

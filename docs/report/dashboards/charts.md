@@ -290,7 +290,7 @@ In addition to query-based burndown charts, you can [Configure a Burndown or Bur
 
 To add a chart to a dashboard, you must be a [team administrator](../../organizations/settings/add-team-administrator.md) or have permissions to edit a dashboard (default settings). You can only add charts defined for shared queries.
 
-Choose the ![ ](../../media/icons/actions-icon.png) actions icon for the chart you want to add, and select **Add to dashboard**.  
+Choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the chart you want to add, and select **Add to dashboard**.  
 
 ::: moniker range=">= azure-devops-2019"  
 > [!div class="mx-imgBorder"]  
@@ -327,7 +327,7 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 1. From the web portal, open the [dashboard](dashboards.md) you want to add the chart to.  
 
-2. To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**.  The widget catalog will automatically open. Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or get permissions to edit dashboards. 
 
@@ -335,7 +335,7 @@ If you've already defined your [flat list query](../../boards/queries/using-quer
 
 	![Web portal, Dashboards page, Widget catalog, Chart for work items widget](media/widget-chart-work-query.png) 
 
-4. Choose the widget's ![ ](../../media/icons/dashboard-configure.png) gear icon to open the Configuration dialog. 
+4. Choose the widget's :::image type="icon" source="../../media/icons/dashboard-configure.png" border="false"::: gear icon to open the Configuration dialog. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Configuration dialog for chart work items widget](media/charts/configure-chart-widget.png)   
@@ -365,7 +365,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 1. From the web portal, open the [team dashboard](dashboards.md) you want to add the chart to.   
 
-2. To add widgets to the dashboard, choose ![ ](media/icons/edit-icon.png) **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
+2. To add widgets to the dashboard, choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit**. The widget catalog will automatically open.  Add all the widgets that you want and drag their tiles into the sequence you want. 
 
 	If you don't see these icons, then you need to be added as a [team administrator](../../organizations/settings/add-team-administrator.md) or a member of the Project Administrators group. 
 
@@ -373,7 +373,7 @@ The widget requires TFS 2015.2 or a later version. You add it to a team dashboar
 
 	<img src="media/widget-chart-work-query.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget" style="border: 2px solid #C3C3C3;" /> 
 
-4. Choose the widget's ![ ](media/icons/gear-icon.png) gear icon to open the configuration dialog. 
+4. Choose the widget's :::image type="icon" source="media/icons/gear-icon.png" border="false"::: gear icon to open the configuration dialog. 
 
 	<img src="media/charts-chart-wit-widget-configure-dialog.png" alt="Web portal, Dashboards page, Widget catalog, Chart for work items widget, Configuration dialog" style="border: 2px solid #C3C3C3;" /> 
 

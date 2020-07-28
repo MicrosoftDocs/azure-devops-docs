@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Keep your repository's branch layout clean and understandable by requiring the use of branch folders
 ms.assetid: dd0fa717-0150-4fd3-8677-29d80b979e65
 ms.technology: devops-code-git
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2018'

@@ -223,7 +223,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. the ![ ](../media/icons/team-settings-gear-icon.png) gear icon, to open the common configuration settings dialog for the Kanban board. 
+1. the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open the common configuration settings dialog for the Kanban board. 
 
 	![Kanban board, open common configuration settings](../../boards/boards/media/kanban-card-customize-open-settings.png)  
 
@@ -283,7 +283,7 @@ You'll see different column titles and choices based on the [Process](../work-it
 
 1. [Open your Kanban board](kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.  
 
-1. Choose the ![ ](../media/icons/team-settings-gear-icon.png) gear icon, to open Customize Columns.  
+1. Choose the :::image type="icon" source="../media/icons/team-settings-gear-icon.png" border="false"::: gear icon, to open Customize Columns.  
 
 	![Kanban board, open common configuration settings](media/columns/open-settings-2013.png)  
 

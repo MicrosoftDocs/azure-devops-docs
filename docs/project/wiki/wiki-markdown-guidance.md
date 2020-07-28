@@ -186,11 +186,19 @@ Enter the pound sign (`#`), and then enter a work item ID.
 ## HTML tag support in wiki pages
 
 In wiki pages, you can also create rich content using HTML tags.
+(You can nest markdown within your HTML, but you must include a blank line between the HTML element and the markdown.)
+ ```HTML
+<p>
+  
+  [A markdown link](https://microsoft.com) 
+</p>
+```
 
 ::: moniker range=">= tfs-2018"
 
 > [!NOTE]
 > Pasting rich content as HTML is supported in Azure DevOps Server 2019.1 and later versions.
+
 
 **Example - Embedded video**
 

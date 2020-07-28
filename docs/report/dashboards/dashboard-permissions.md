@@ -117,7 +117,7 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker range=">= azure-devops-2020"
 
-1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
@@ -136,7 +136,7 @@ By default, all team members have permissions to create and edit dashboards for 
 
 ::: moniker range="azure-devops-2019"
 
-1. Open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. Open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboards](media/set-permissions/open-dashboard-security.png)
@@ -202,7 +202,7 @@ By default, all team members have permissions to edit dashboards defined for the
 
 ## Set permissions for a project dashboard 
 
-1. To set permissions for a project dashboard, open the [Dashboards directory](dashboards.md), choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and then select the **Security** menu option. 
+1. To set permissions for a project dashboard, open the [Dashboards directory](dashboards.md), choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and then select the **Security** menu option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, open Dashboard security option](media/set-permissions/open-project-dashboard-security.png)

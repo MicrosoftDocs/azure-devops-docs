@@ -4,10 +4,8 @@ titleSuffix: Azure Repos
 description: Authenticate to Azure Repos Git Repositories with SSH Keys
 ms.assetid: 2f89b7e9-3d10-4293-a277-30e26cae54c5
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
-ms.date: 12/10/2019
+ms.date: 07/28/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -96,8 +94,6 @@ compromised, attackers can use it to trick servers into thinking the connection 
 
 Associate the public key generated in the previous step with your user ID.
 
-#### [Current page](#tab/current-page) 
-
 1. Open your security settings by browsing to the web portal and selecting your avatar in the upper right of the
    user interface. Select **Security** in the menu that appears.
 
@@ -115,8 +111,6 @@ Associate the public key generated in the previous step with your user ID.
     ![Configuring Public Key in Azure DevOps Services](media/use-ssh-authentication/ssh_key_input.png)
 
 4. Give the key a useful description (this description will be displayed on the **SSH public keys** page for your profile) so that you can remember it later. Select **Save** to store the public key. Once saved, you cannot change the key. You can delete the key or create a new entry for another key. There are no restrictions on how many keys you can add to your user profile.
-
-* * *
 
 <a name="copy-url"></a>
 
