@@ -125,7 +125,7 @@ should locate these agents in separate resource groups. This allows isolated run
 
 In the ARM templates, the machine size to **Standard_D4_V2**. This size provides 8 CPU cores and 28 GB of memory. You can change
 this by editing the template. See
-[Sizes for Windows virtual machines in Azure](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-sizes/).
+[Sizes for Windows virtual machines in Azure](/azure/virtual-machines/sizes).
 
 ## Queue a run using load agents
 
