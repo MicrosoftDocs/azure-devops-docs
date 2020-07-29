@@ -22,7 +22,7 @@ Examples on this page require the following NuGet packages:
 * [Microsoft.VisualStudio.Services.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.Client/)
 * [Microsoft.VisualStudio.Services.InteractiveClient](https://www.nuget.org/packages/Microsoft.VisualStudio.Services.InteractiveClient/)
 
-#### Example: Using SOAP-based client
+## Example: Using SOAP-based client
 
 ```cs
 // https://www.nuget.org/packages/Microsoft.TeamFoundationServer.ExtendedClient/
@@ -74,7 +74,7 @@ public static void SampleSOAP()
 
 To change the method of authentication to Azure DevOps Services or Azure DevOps Server, change the VssCredential type passed to VssConnection when creating it.
 
-##### Personal Access Token authentication for SOAP services
+### Personal Access Token authentication for SOAP services
 ```cs
 public static void PersonalAccessTokenSoapSample()
 {
@@ -88,29 +88,28 @@ public static void PersonalAccessTokenSoapSample()
 }
 ```
 
-##### Azure Active Directory authentication for SOAP services
+### Azure Active Directory authentication for SOAP services
 ```cs
 public static void AADSoapSample()
 {
-	// Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
-	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssAadCredential()))
-	{
-		tpc.Authenticate();
-		Console.WriteLine(tpc.InstanceId);
-	}
+    // Authenticate using Azure Active Directory credential (requires a Azure AD-backed organization)
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssAadCredential()))
+    {
+        tpc.Authenticate();
+        Console.WriteLine(tpc.InstanceId);
+    }
 }
 ```
 
-##### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
+### Visual Studio sign-in prompt (Microsoft Account or Azure Active Directory backed) for SOAP services
 ```cs
 public static void MicrosoftAccountSample()
 {
-	// authenticate using Visual Studio sign-in prompt
-	using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
-	{
-		tpc.Authenticate();
-		Console.WriteLine(tpc.InstanceId);
-	}
+    // authenticate using Visual Studio sign-in prompt
+    using (TfsTeamProjectCollection tpc = new TfsTeamProjectCollection(new Uri(collectionUri), new VssClientCredentials()))
+    {
+        tpc.Authenticate();
+        Console.WriteLine(tpc.InstanceId);
+    }
 }
-```
 ```
