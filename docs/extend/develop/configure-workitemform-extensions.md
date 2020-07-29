@@ -1,6 +1,6 @@
 ---
-title: Configure work item form extensions in TFS | Extensions for Azure DevOps Services
-description: Describes how to add and configure work item form extensions in TFS.
+title: Configure work item form extensions in TFS | Extensions for Azure DevOps
+description: Describes how to add and configure work item form extensions in Azure DevOps and Team Foundation Server (TFS).
 ms.contentid: DEC28077-2F52-490D-B87C-48D4785CD597
 ms.technology: devops-ecosystem
 ms.topic: conceptual
@@ -10,9 +10,11 @@ author: chcomley
 ms.date: 10/10/2017
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps Services</blockquote>  
+<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps</blockquote>  
 
 # Add extensions in work item form via work item type definition xml
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 A work item type can be exported as XML using witadmin tool, that includes the layout of the work item form. As part of the walk through, you add the page, group, and control contributions to the layout.  [Read more information on WebLayout XML](/azure/devops/reference/xml/weblayout-xml-elements). In this example, we add the control to the Agile "User Story" work item type.
 
