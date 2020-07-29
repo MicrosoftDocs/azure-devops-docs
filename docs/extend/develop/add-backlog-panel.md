@@ -4,7 +4,7 @@ description: Extend Azure DevOps Services with panels on backlogs.
 ms.assetid: 34f01da42-5a98-4bc5-981e-3f8d1ffdf163
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 08/22/2016
@@ -12,7 +12,9 @@ ms.date: 08/22/2016
 
 # Add panels on backlog pages
 
-In this example, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
+Here, we add a simple Hello World extension as a panel on the Portfolio backlog, Product backlog, and Iteration backlog.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
