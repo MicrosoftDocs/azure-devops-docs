@@ -172,7 +172,7 @@ Here are descriptions of some of the components of the `task.json` file:
 | `author`             | Short string describing the entity developing the build or release task, for example: "Microsoft Corporation."              |
 | `instanceNameFormat` | How the task is displayed within the build or release step list. You can use variable values by using **$(variablename)**. |
 | `groups`             | Describes groups that task properties may be logically grouped by in the UI.                                               |
-| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name "samplestring."            |
+| `inputs`             | Inputs to be used when your build or release task runs. This task expects an input with the name **samplestring**.          |
 | `execution`          | Execution options for this task, including scripts.                                                                         |
 
 >[!NOTE]
@@ -503,7 +503,7 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 
 You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
 
-The following variables need to be declared in the variable group:
+Declare the following variables in the variable group:
 - `publisherId`: ID of your marketplace publisher
 - `extensionId`: ID of your extension, as declared in the vss-extension.json file
 - `extensionName`: Name of your extension, as declared in the vss-extension.json file
