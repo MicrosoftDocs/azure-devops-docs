@@ -29,6 +29,13 @@ Analytics is available for all organizations using Azure DevOps Services. It pro
 
 ::: moniker-end
 
+::: moniker range="azure-devops-2020"
+
+Analytics is generally available for Azure DevOps Server 2020. It provides several [advanced widgets](../dashboards/analytics-widgets.md). [Power BI integration](overview.md) and access to the [OData feed](../extend-analytics/quick-ref.md) of Analytics remain in Preview. 
+
+::: moniker-end
+
+
 ::: moniker range="azure-devops-2019"
 
 Analytics is in Public Preview for Azure DevOps Server 2019 and later versions. You gain access to it by [enabling or installing Analytics](../dashboards/analytics-extension.md). Analytics provides several [advanced widgets](../dashboards/analytics-widgets.md), [Power BI integration](overview.md), and access to the [OData feed](../extend-analytics/quick-ref.md).
