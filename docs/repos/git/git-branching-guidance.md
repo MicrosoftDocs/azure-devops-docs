@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Git branching guidance
 ms.assetid: 9445be16-3bf4-46ff-bef8-52b72da03d0a
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'

@@ -67,7 +67,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 

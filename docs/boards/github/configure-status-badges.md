@@ -41,7 +41,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 
 1.  [Open your Kanban board](../boards/kanban-quickstart.md). If you're not a team admin, [get added as one](../../organizations/settings/add-team-administrator.md). Only team and project admins can customize the Kanban board.
 
-1. Choose the ![ ](../../media/icons/blue-gear.png) gear icon to configure the board and set general team settings.  
+1. Choose the  :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::  gear icon to configure the board and set general team settings.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Open board settings for a team, vert nav](../../organizations/settings/media/configure-team/open-board-settings.png)  
@@ -51,7 +51,7 @@ The syntax shown works whether you have or haven't [connected your project to a 
 	> [!div class="mx-imgBorder"]
 	> ![Settings,Status badge](media/badges/status-badge.png) 
 
-1. Choose the badge type you want and choose the ![ ](../../media/icons/copy.png) copy icon to copy the Markdown syntax for the badge. 
+1. Choose the badge type you want and choose the :::image type="icon" source="../../media/icons/copy.png" border="false"::: copy icon to copy the Markdown syntax for the badge. 
 
 	In progress items ignores the first and last columns.
 	All columns includes the first and last columns. 

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Compare folders and files
 ms.assetid: 62dd76a4-8315-4415-8bd9-4cbddc689e7f
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

@@ -12,7 +12,9 @@ ms.date: 05/30/2019
 
 # REST API Versioning
 
-Azure DevOps Services and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
+Azure DevOps and Team Foundation Server REST APIs are versioned to ensure applications and services continue to work as APIs evolve.
 
 ### Guidelines
 

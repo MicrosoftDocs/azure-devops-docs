@@ -328,7 +328,7 @@ The menu options available to you change depending on the platform you work from
 
 To select several items in a sequence, hold down the shift key. To select several non-sequential items, use the Ctrl key. Then, you can either drag the selected items to a new position within the backlog, to a different sprint. 
 
-To open the context menu, click (![actions icon](../media/icons/actions-icon.png)) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
+To open the context menu, click (  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: ) or (![context icon](../media/icons/context_menu.png)), and then choose the option from the menu. 
 
 Here, we use the context menu to move several non-sequential items to the current sprint.
 

@@ -64,7 +64,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Choose the process](media/scrum-to-agile/choose-scrum-process.png)
 
-1. Choose **Projects**, and then choose the ![ ](../../../media/icons/actions-icon.png) actions icon for the project you want to change, and select **Change process**. Here we choose the Fabrikam Fiber PB project.
+1. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change, and select **Change process**. Here we choose the Fabrikam Fiber PB project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose Projects tab](media/scrum-to-agile/choose-project-to-change.png)
@@ -102,9 +102,9 @@ You can customize Kanban boards to display intermediate columns. For each column
    > [!div class="mx-imgBorder"]  
    > ![Open team Kanban board](media/scrum-to-agile/open-kanban-board.png)
 
-1. Choose the **Correct this now** link or the ![ ](../../../media/icons/blue-gear.png) gear icon to configure the board settings.
+1. Choose the **Correct this now** link or the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
-   The Settings dialog opens. Those tabs that display a ![ ](../../../media/icons/required-icon.png) required icon need correction.
+   The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    > [!div class="mx-imgBorder"]  
    > ![Columns dialog ](media/scrum-to-agile/column-settings-to-fix.png)
@@ -128,14 +128,14 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Query all items](media/scrum-to-agile/query-all-items-scrum-to-agile.png)
 
-2. Choose the ![ ](../../../media/icons/actions-icon.png) actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
+2. Choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
 
    > [!div class="mx-imgBorder"]  
    > ![Column options dialog, sort tab](media/change-process/query-column-sort.png)
 
 3. Choose **Results** to just show the list of work items.
 
-4. Highlight all User Stories, choose the ![ ](../../../media/icons/actions-icon.png) actions icon, select **Change type**, and change the type to Product Backlog Item.
+4. Highlight all User Stories, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, select **Change type**, and change the type to Product Backlog Item.
 
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/scrum-to-agile/change-type-user-story.png)
@@ -147,7 +147,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items.png)
 
-5. Highlight all work items of the same State, such as Resolved, choose the ![ ](../../../media/icons/actions-icon.png) actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
+5. Highlight all work items of the same State, such as Resolved, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Edit work item dialog](media/scrum-to-agile/edit-work-items-state-reason.png)
@@ -157,11 +157,11 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items-fixed.png)
 
-6. To save your changes, choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
+6. To save your changes, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 7. Repeat the above steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
 
-8. When done, make sure you choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
+8. When done, make sure you choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 > [!TIP]  
 > If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, you can do that using Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).

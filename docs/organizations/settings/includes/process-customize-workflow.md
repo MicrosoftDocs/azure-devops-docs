@@ -75,7 +75,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops-2020"
 
 - You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
 - You can only have one state in the *Completed* state category. The system disallows adding any custom state to this category 

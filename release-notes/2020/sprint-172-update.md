@@ -43,7 +43,7 @@ Head over to Azure DevOps and take a look.
 > [!div class="nextstepaction"] 
 > [Go to azure devops](https://go.microsoft.com/fwlink/?LinkId=307137&campaign=o~msft~docs~product-vsts~release-notes)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the help menu to report a problem or provide a suggestion.
 

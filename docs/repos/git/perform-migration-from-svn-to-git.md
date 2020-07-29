@@ -4,8 +4,6 @@ description: Learn how to migrate from Subversion (SVN) to Git, including histor
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 06/04/2019
-ms.author: hkamel
-author: hkamel
 monikerRange: '>= tfs-2013'
 ---
 
