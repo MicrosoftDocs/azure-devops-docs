@@ -175,15 +175,15 @@ To add the field to the form:
 - For an Inherited process, add the Stack Rank field to a work item type ([for the custom process that your project references](../../organizations/settings/work/customize-process-form.md)).
 - For an On-premises XML process, add the field to the form, [modify the WIT XML definition to add the following control element](../../reference/add-modify-wit.md):
 
-	```xml
-	<Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
-	```
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.StackRank" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
 
-or, for Scrum
+    or, for Scrum:
 
-	```xml
-	<Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
-	```
+    ```xml
+    <Control FieldName="Microsoft.VSTS.Common.BacklogPriority" Type="FieldControl" Label="Stack Rank" LabelPosition="Left" />
+    ```
 
 
 ## Related articles 
