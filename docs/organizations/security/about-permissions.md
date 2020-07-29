@@ -79,6 +79,12 @@ A new dialog opens that shows the inheritance information for that permission.
 
 ::: moniker-end
 
+::: moniker range="< azure-devops"
+
+The preview user interface for the Project Permissions Settings Page isn't available for Azure DevOps Server 2020 and earlier versions.  
+
+::: moniker-end
+
 #### [Current page](#tab/current-page) 
 
 ::: moniker range=">= tfs-2017"
@@ -89,8 +95,6 @@ A new dialog opens that shows the inheritance information for that permission.
 A new window opens that shows the inheritance information for that permission.  
 
 ![Permissions trace dialog](media/about-permissions-trace.png)
-
-* * *
 
 ::: moniker-end
 
@@ -104,6 +108,9 @@ Use this option to disable inheritance for folders, shared queries, and other ob
 ![Permissions trace dialog](media/permissions/turn-on-inheritance.png)
 
 ::: moniker-end
+
+* * *
+
 
 ### When assigning permissions
  
@@ -173,7 +180,7 @@ You set most permissions through the web portal. You can use the tools listed in
 Different tools are used depending on whether you are setting permissions at a server, collection, or project level.
 You use the [web portal administration context](../../organizations/security/add-users-team-project.md) to set most permissions.
 
-::: moniker range="= azure-devops"
+::: moniker range="azure-devops"
 
 |   Permission level   |  Web portal security pages | az devops CLI |   [Tf permission command-line tool](../../repos/tfvc/permission-command.md)  |   
 |-------------------|:-----------------------------------:|:----------------:|:----------------:|  

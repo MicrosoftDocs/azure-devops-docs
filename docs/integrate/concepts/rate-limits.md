@@ -15,7 +15,7 @@ monikerRange: '>= tfs-2018'
 
 # Rate limits  
 
-**Azure DevOps Services**
+[!INCLUDE [version-vsts-tfs-2018](../../includes/version-vsts-tfs-2018.md)]
 
 Azure DevOps Services, like many software-as-a-service solutions, uses multi-tenancy to reduce costs and improve performance.
 This design leaves users vulnerable to performance issues and even outages when other users of their shared resources have spikes in their consumption.
