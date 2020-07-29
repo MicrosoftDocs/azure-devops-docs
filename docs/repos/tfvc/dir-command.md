@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Displays all or some of the contents of the server for Team Foundation version control using the Dir command
 ms.assetid: 1e226700-a685-4c42-970b-fa6fd764726f
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

@@ -173,7 +173,7 @@ Due to security concerns, we have added SVG constraints to make extensions safer
 * The badges provided in the manifest can not be SVGs unless they are from [approved badge providers](https://visualstudio.microsoft.com/docs/integrate/extensions/develop/manifest#approvedbadges).
 * Images in README.md and CHANGELOG.md can not be SVGs unless they are from approved badge providers.
 
-## Feedback
+## How to provide feedback
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu. 
 
 ![Feedback menu](media/07_14_00.png)

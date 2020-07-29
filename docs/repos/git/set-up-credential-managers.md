@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Authenticate to Azure Repos and TFS Git repos using credential managers
 ms.assetid: 7779af87-460c-4078-bc2b-ceb4b758c24e
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2015'
