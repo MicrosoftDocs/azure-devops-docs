@@ -43,6 +43,11 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 ## Create a virtual machine scale set agent pool
 
+Creating a virtual machine scale set agent pool consists of the the following two steps.
+
+* [Create the scale set](#create-the-scale-set)
+* [Create the agent pool](#create-the-agent-pool)
+
 ### Create the scale set
 
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
@@ -160,8 +165,6 @@ In the following example, a new resource group and virtual machine scale set are
     - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
     - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions.  Check this box to run unelevated with interactive UI.
 
-    :::image type="content" source="media/scale-set-agents/agent-pool-settings.png" alt-text="Create agent pool." :::
-
 6. When your settings are configured, choose **Create** to create the agent pool.
 
 ## Use scale set agent pool
@@ -184,7 +187,7 @@ Azure Pipelines samples the state of the agents in the pool and virtual machines
 
 If one of these conditions is met, Azure Pipelines grows the number of VMs. Scaling up is done in increments of a certain percentage of the maximum pool size. Allow 20 minutes for machines to be created for each step.
 
-Azure Pipelines scales down the agents when the number of idle agents exceeds the standby count for more than 30 minutes (configurable).
+Azure Pipelines scales down the agents when the number of idle agents exceeds the standby count for more than 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**).
 
 To put all of this into an example, consider a scale set agent pool that is configured with 2 standby agents and 4 maximum agents. Let us say that you want to tear down the VM after each use. Also, let us assume that there are no VMs to start with in the scale set.
 
@@ -196,7 +199,7 @@ To put all of this into an example, consider a scale set agent pool that is conf
 
 - Let us say that the job on the first agent completes. Azure Pipeline takes that agent offline to re-image that machine. After a few minutes, it comes back with a fresh image. At this time, we'll have 4 idle agents.
 
-- If no other jobs arrive for 30 minutes (configurable), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales down the pool to two agents.
+- If no other jobs arrive for 30 minutes (configurable using **Delay in minutes before deleting excess idle agents**), Azure Pipelines determines that there are more idle agents than are necessary. So, it scales down the pool to two agents.
 
 Throughout this operation, the goal for Azure Pipelines is to reach the desired number of idle agents on standby. Pools scale up and down slowly. Over the course of a day, the pool will scale up as requests are queued in the morning and scale down as the load subsides in the evening. You may observe more idle agents than you desire at various times. This is expected as Azure Pipelines converges gradually to the constraints that you specify.
 
@@ -218,17 +221,17 @@ You can customize the configuration of the Azure Pipeline Agent by defining envi
 
 > [!IMPORTANT]
 > Caution must be exercised when customizing the Pipelines agent.  Some settings will conflict with other required settings, causing the agent to fail to register, and the VM to be deleted.
-> These settings that should not be set or altered:
-
-- `VSTS_AGENT_INPUT_URL`
-- `VSTS_AGENT_INPUT_AUTH`
-- `VSTS_AGENT_INPUT_TOKEN`
-- `VSTS_AGENT_INPUT_USERNAME`
-- `VSTS_AGENT_INPUT_PASSWORD`
-- `VSTS_AGENT_INPUT_POOL`
-- `VSTS_AGENT_INPUT_AGENT`
-- `VSTS_AGENT_INPUT_RUNASSERVICE`
-- ... and anything related to Deployment Groups.
+> These settings should not be set or altered:
+> 
+> - `VSTS_AGENT_INPUT_URL`
+> - `VSTS_AGENT_INPUT_AUTH`
+> - `VSTS_AGENT_INPUT_TOKEN`
+> - `VSTS_AGENT_INPUT_USERNAME`
+> - `VSTS_AGENT_INPUT_PASSWORD`
+> - `VSTS_AGENT_INPUT_POOL`
+> - `VSTS_AGENT_INPUT_AGENT`
+> - `VSTS_AGENT_INPUT_RUNASSERVICE`
+> - ... and anything related to Deployment Groups.
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
@@ -287,9 +290,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 These are steps to create a scale set with a custom OS disk size and custom software.
 
-If you just want to create a scale set with the default 128GiB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
+If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
 
-1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128GiB to <myDiskSizeGb>.
+1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to <myDiskSizeGb>.
 
     - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
     
@@ -331,7 +334,7 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
         Open DiskPart tool as administrator and run these DiskPart commands:
         - `list volume`  (to see the volumes)
         - `select volume 2` (depends on which volume is the OS drive)
-        - `extend size 72000` (to extend the drive by 72 GiB, from 128GiB to 200GiB)
+        - `extend size 72000` (to extend the drive by 72 GB, from 128 GB to 200 GB)
           
    - Install any additional software on the VM
 
