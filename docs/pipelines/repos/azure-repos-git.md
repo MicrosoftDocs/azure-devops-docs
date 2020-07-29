@@ -171,7 +171,7 @@ When **Limit job authorization scope to referenced Azure DevOps repositories** i
 
 There are a few exceptions where you don't need to explicitly reference an Azure Repos Git repository before using it in your pipeline when **Limit job authorization scope to referenced Azure DevOps repositories** is enabled.
 
-* If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, so you may subsequently use scripts to interact with that repository.
+* If you do not have an explicit checkout step in your pipeline, it is as if you have a `checkout: self` step, and the `self` repository is checked out.
 * If you are using a script to perform read-only operations on a repository in a public project, you don't need to reference the public project repository in a `checkout` step.
 * If you are using a script that provides its own authentication to the repo, such as a PAT, you don't need to reference that repository in a `checkout` step.
 
