@@ -7,7 +7,7 @@ author: vijayma
 ms.date: 07/29/2020
 ---
 
-#### I do not want users to override the list of branches for triggers when they checkout the YAML file. How can I do this?
+#### I do not want users to override the list of branches for triggers when they update the YAML file. How can I do this?
 
 Users with permissions to contribute code can update the YAML file and include/exclude additional branches. As a result, users can include their own feature or user branch in their YAML file and push that update to a feature or user branch. This may cause the pipeline to be triggered for all updates to that branch. If you want to prevent this behavior, then you can:
 
