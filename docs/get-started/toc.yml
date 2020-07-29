@@ -36,7 +36,7 @@
     href: /azure/devops/java/download-intellij-plug-in
 - name: Resources
   items:
-  - name: Configure & customize 
+  - name: Settings, security, & usage
     href: /azure/devops/organizations/index
   - name: Manage projects 
     href: /azure/devops/organizations/projects/index

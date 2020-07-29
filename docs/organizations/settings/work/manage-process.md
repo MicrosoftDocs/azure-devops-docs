@@ -88,7 +88,7 @@ For the second method, we have provided detailed steps for three common scenario
    > [!div class="mx-imgBorder"]  
    > ![Choose the Agile process](media/agile-to-scrum/choose-agile.png)
 
-2. Choose **Projects**, and then choose the ![ ](../../../media/icons/actions-icon.png) actions icon for the project you want to change, and select **Change process**. 
+2. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change, and select **Change process**. 
 
    > [!div class="mx-imgBorder"]  
    > ![Choose Projects tab](media/agile-to-scrum/choose-projects-myfirstproject.png)
@@ -176,7 +176,7 @@ Project Collection Administrators can [add projects](../../projects/create-proje
 > [!div class="nextstepaction"]
 > [Add and manage fields for an inherited process](customize-process-field.md) 
 > Or
-> [Add and manage work item types](customize-process-wit.md)
+> [Add and manage work item types](customize-process-work-item-type.md)
 
 
 ## Related articles  

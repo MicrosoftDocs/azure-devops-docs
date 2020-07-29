@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Quickstart with Azure Repos and Visual Studio 2017
 ms.assetid: d7dcb364-056f-421b-8896-0304cddf12fe
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2017'

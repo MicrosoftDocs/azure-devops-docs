@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Changeset Command
 ms.assetid: 74d584cf-277f-41f9-b7a1-642ebab963af
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

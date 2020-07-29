@@ -11,6 +11,9 @@ ms.date: 08/04/2016
 ---
 
 # Service hooks in Azure DevOps Services
+
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
 Using the [Subscriptions](https://docs.microsoft.com/rest/api/vsts/hooks/subscriptions?view=azure-devops-rest-5.0) REST APIs, you can programmatically create a subscription that performs an action on an external (consumer) service when a specific event occurs in a project. For example, you can create a subscription to notify your service when a build fails.
 
 Supported events:

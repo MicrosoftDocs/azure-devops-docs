@@ -4,9 +4,9 @@ titleSuffix: Azure Repos
 description: Learn about pull requests in Azure DevOps Services & TFS  
 ms.technology: devops-code-git 
 ms.assetid: 36A4986E-BFB8-422B-BFC9-8A0CB75D0603    
-ms.author: apawast
-author: apawast
 ms.topic: overview
+ms.author: vijayma
+author: vijayma
 ms.date: 06/01/2020
 monikerRange: '>= tfs-2013'
 ---

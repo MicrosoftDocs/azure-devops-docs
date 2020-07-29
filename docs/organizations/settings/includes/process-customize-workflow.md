@@ -3,8 +3,8 @@ ms.technology: devops-agile
 ms.author: kaelli
 author: KathrynEE
 ms.prod: azure-devops
-ms.date: 06/22/2020
 ms.topic: include
+ms.date: 07/17/2020
 ---
 
 You can customize the workflow of any work item type (WIT) by hiding inherited states or adding custom states. Inherited states differ based on the system process &mdash;[Agile, Basic, Scrum, or CMMI](/azure/devops/boards/work-items/guidance/choose-process#workflow-states), &mdash;you chose from which to create your custom process.  
@@ -64,7 +64,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 
 ### Unsupported workflow customizations   
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 - You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
 - You can only have one state in the *Completed* state category. If you add a custom state to the Completed category, any other state is removed or hidden 
@@ -75,7 +75,7 @@ For example, the Basic process, Issue WIT is characterized by the three States&m
 ::: moniker-end
 
 
-::: moniker range=">= azure-devops-2019 < azure-devops"
+::: moniker range=">= azure-devops-2019 < azure-devops-2020"
 
 - You can't modify an inherited state (you can't change its name, color, or category), but you can hide it
 - You can only have one state in the *Completed* state category. The system disallows adding any custom state to this category 

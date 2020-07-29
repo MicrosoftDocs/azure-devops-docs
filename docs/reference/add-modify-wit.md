@@ -8,6 +8,7 @@ ms.assetid: 62c0168a-23b8-4a92-9ecf-b67926f7756f
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
+monikerRange: '< azure-devops' 
 ms.date: 01/24/2019
 ---
 
@@ -188,7 +189,7 @@ For example, you can add bugs from the product backlog page.
 
 [!INCLUDE [temp](../includes/image-differences.md)]
 
-![](media/add-modify-wit-quick-add-panel.png)
+![This screen shows how to add bugs from the product backlog page.](media/add-modify-wit-quick-add-panel.png)
 
 
 To learn how to add or remove WITs from the backlog or task board, see [Add a work item type to a backlog and board](add-wits-to-backlogs-and-boards.md). To add a new WIT to support a portfolio backlog, see [Add a portfolio backlog level](add-portfolio-backlogs.md).

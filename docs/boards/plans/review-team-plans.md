@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2017'
-ms.date: 02/14/2019
+ms.date: 07/09/2020
 ---
 
 
@@ -70,6 +70,7 @@ In this article you'll learn:
 
 
 <a id="install-plans">  </a>
+
 ### Install the Delivery Plans extension 
 
 The Delivery Plans extension is free to install from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms.vss-plans), Azure DevOps tab. 
@@ -150,7 +151,7 @@ When defining a plan, note the following:
 
 Once you've defined a plan, you can further customize it. 
 
-1. Choose the ![ ](media/plans/gear-icon.png) gear icon to open the Settings dialog. 
+1. Choose the :::image type="icon" source="media/plans/gear-icon.png" border="false"::: gear icon to open the Settings dialog. 
 
 2. Then, choose the page you want to edit. You can customize the plan in the following ways: 
    - Edit the teams you've selected and their backlog level  
@@ -247,7 +248,9 @@ For additional resources for working with multiple teams, see these additional t
 
 
 <a id="plans-rest-api">  </a>
+
 ### Programmatically manage Delivery Plans  
+
 You can manage plans using the [REST API, Plans](/rest/api/azure/devops/work/plans).
 
 

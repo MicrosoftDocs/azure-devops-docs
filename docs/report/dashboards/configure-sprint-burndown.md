@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013' 
-ms.date: 06/01/2020
+ms.date: 07/14/2020
 ---
 
 # Configure and monitor sprint burndown 
@@ -16,26 +16,13 @@ ms.date: 06/01/2020
 [!INCLUDE [temp](../includes/version-azure-devops-all.md)]
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 Throughout your sprint, you can monitor the sprint burndown report to determine if your team is on track to complete its [sprint plan](../../boards/sprints/assign-work-sprint.md). There are two sprint burndown charts you can access: the in-context Burndown Trend report you can view from a team sprint backlog and the Sprint Burndown widget you can add to a dashboard. 
 
 Both the report and the widget derive data from [Analytics](../powerbi/what-is-analytics.md) and support monitoring burndown based on a count of work items or a sum of Story Points/Size/Effort, Remaining Work, or other numeric field. 
 
 You can add either the report or widget to a dashboard. Also, you can monitor progress using the [Analytics-based burndown or burnup widgets](configure-burndown-burnup-widgets.md) which provide additional configuration options. 
-
-> [!NOTE]  
-> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
-
-Use this article to learn about:
-
-> [!div class="checklist"]  
-> * Metrics tracked in the sprint burndown report and widget  
-> * Team activities required to track tasks and Remaining Work      
-> * How to set interactive controls to personalize your view of the sprint burndown report 
-> * How to add the in-context Burndown Trend report to a dashboard  
-> * How to configure the Sprint Burndown widgets  
-> * How to view current and past sprint burndowns 
 
 ::: moniker-end
 
@@ -73,12 +60,22 @@ Throughout your sprint, you can monitor the sprint burndown chart to determine i
 
 ::: moniker-end
 
+
+Use this article to learn about: 
+
+::: moniker range=">= azure-devops-2020"
+> [!div class="checklist"]  
+> * Metrics tracked in the sprint burndown report and widget  
+> * Team activities required to track tasks and Remaining Work      
+> * How to set interactive controls to personalize your view of the sprint burndown report 
+> * How to add the in-context Burndown Trend report to a dashboard  
+> * How to configure the Sprint Burndown widgets  
+> * How to view current and past sprint burndowns 
+
+::: moniker-end
+
 ::: moniker range="<= azure-devops-2019"
 
-> [!NOTE]  
-> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
-
-Use this article to learn:
 
 > [!div class="checklist"]  
 > * Metrics tracked in the sprint burndown report and widget  
@@ -89,9 +86,13 @@ Use this article to learn:
 ::: moniker-end
 
 
+> [!NOTE]  
+> Sprint burndown reports are derived from data tracked by a team during a sprint or iteration. To learn more, see [About teams and Agile tools](../../organizations/settings/about-teams-and-settings.md). 
+
+
 ## The in-context Burndown Trend report
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 The Burndown Trend report is based on either a count of tasks or Remaining Work estimates, or other numeric field that you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md). To open this report, jump to the section [Open a Sprint backlog](#open-chart).   
 
@@ -111,7 +112,7 @@ The blue area indicates the number of work items active or in progress each day 
 ::: moniker-end
  
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 The in-context sprint burndown report is based on the tasks and Remaining Work estimates you define and update throughout the sprint cycle. For details, see [Sprint planning](../../boards/sprints/assign-work-sprint.md) and [taskboard](../../boards/sprints/task-board.md). To open the sprint burndown chart, jump to the section [Open sprint burndown chart](#open-chart).   
 
@@ -137,7 +138,7 @@ The in-context sprint burndown report is based on the tasks and Remaining Work e
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 In the widget catalog, you'll find two versions of the Sprint Burndown widget:  the Analytics-based **Sprint Burndown** and **Sprint Burndown (Legacy)** which is built from the work tracking data store.  
 
@@ -165,7 +166,7 @@ If your dashboard already has a legacy version available, you can easily upgrade
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops"
+::: moniker range=">= tfs-2015 < azure-devops-2020"
 
 The **Sprint Burndown** widget adds a chart based on Remaining Work defined for tasks in the team's current sprint. There are no configuration options for this widget. 
 
@@ -200,7 +201,8 @@ The **Sprint Burndown** widget adds a chart based on Remaining Work defined for 
 
 ## Team activities to track tasks and Remaining Work  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 To monitor sprint burndown, your team must [schedule sprints](../../boards/sprints/define-sprints.md) and [assign work to those sprints](../../boards/sprints/assign-work-sprint.md).
 
 If you want to monitor sprint burndown based on tasks and Remaining Work, your team must perform the additional following actions.  
@@ -238,7 +240,7 @@ If your sprint burndown chart appears empty, check the following:
 
 You view the in-context sprint burndown report from a team's Sprint backlog. 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -282,7 +284,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 ::: moniker-end
 
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range="<= tfs-2018"
 
 1. From your web browser, open your team's sprint backlog. (1) Select the team from the project/team selector, choose (2) **Work**, (3) **Backlogs**, and then (4) the product backlog, which is **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI). 
 
@@ -309,7 +311,7 @@ You view the in-context sprint burndown report from a team's Sprint backlog.
 
 ## View the in-context Burndown Trend report   
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. To open the Sprint burndown report, choose **Analytics**. 
 
@@ -393,11 +395,11 @@ Choose the chart to display it in a larger view.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Add the report to a dashboard
 
-1. To add the report to a dashboard, choose the ![ ](../../media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
@@ -413,7 +415,7 @@ Choose the chart to display it in a larger view.
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 You can add the Sprint Burndown widget to a dashboard and select the team whose progress you want to monitor. You configure these widgets for one or more teams. 
 
@@ -424,7 +426,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 	> [!div class="mx-imgBorder"]  
 	> ![Add widget dialog, filter by sprint burndown](media/burndown/add-sprint-burndown-widget-devops.png)  
  
-	1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+	1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open the Configure dialog](media/add-widgets/configure-widget.png) 
@@ -432,7 +434,7 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ::: moniker range="azure-devops-2019"
 
-1. Choose ![ ](media/icons/edit-icon.png) **Edit** to add the Sprint burndown widget to your team dashboard.
+1. Choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to add the Sprint burndown widget to your team dashboard.
 
 	The widget catalog automatically opens. Drag the Sprint Burndown widget onto the dashboard. 
 
@@ -462,11 +464,11 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Configure the Analytics-based Sprint Burndown widget 
 
-1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"] 
 	> ![Sprint Burndown Widget - Configuration](media/sprint-burndown/sprint-burndown-config.png)  
@@ -494,11 +496,11 @@ You can add the Sprint Burndown widget to a dashboard and select the team whose 
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 ## Configure the Sprint Burndown (Legacy) widget 
 
-1. To configure the widget, choose the ![  ](../../media/icons/actions-icon.png) actions icon and select the **Configure** option. 
+1. To configure the widget, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon and select the **Configure** option. 
 
 	> [!div class="mx-imgBorder"] 
 	> ![Sprint Burndown Legacy Widget - Configuration - Legacy Version](media/sprint-burndown/sprint-burndown-legacy-config.png)  
@@ -541,7 +543,7 @@ To view a past sprint and its burndown chart, choose the sprint listed under the
 
 You can review sprint burndown in-context reports to show the team patterns in execution. The burndown charts maintain a record of the team's ability to plan and estimate.  
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 #### [May](#tab/may)
 
@@ -561,7 +563,7 @@ You can review sprint burndown in-context reports to show the team patterns in e
 
 ::: moniker-end
 
-::: moniker range="< azure-devops"
+::: moniker range="< azure-devops-2020"
 
 | Sprint 1   |  Sprint 2  | Sprint 3 |  
 |------------|------------|----------|  

@@ -10,7 +10,7 @@ ms.reviewer: greggboe
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013' 
-ms.date: 07/22/2019
+ms.date: 07/14/2020
 ---
 
 
@@ -47,7 +47,7 @@ Once your team has completed a few sprints, they can use their velocity to [fore
 
 Use this article to learn: 
 
-::: moniker range="azure-devops" 
+::: moniker range=">= azure-devops-2020" 
 
 > [!div class="checklist"]
 > * How to configure the Velocity widget (Analytics)
@@ -78,7 +78,7 @@ Use this article to learn:
 
 ## Open your backlog from the web portal
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 1. Check that you selected the right project, and select **Boards** > **Backlogs**. Then select the correct team from the team selector menu. 
 
@@ -142,7 +142,7 @@ On your web browser, open your team's product backlog. Select **Boards** > **Bac
 
 ## View the Velocity in-context report   
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 Velocity reports are available for each backlog level, both product and portfolio backlogs. Each report provides interactive controls to provide each user the view of interest to them.  
 
@@ -173,14 +173,14 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 	The selections you make are only set for you, and persist across sessions until you change them. 
 
-1. To add the report to a dashboard, choose the ![ ](media/icons/actions-icon.png) actions icon and select **Copy to Dashboard**.
+1. To add the report to a dashboard, choose the :::image type="icon" source="media/icons/actions-icon.png" border="false"::: actions icon and select **Copy to Dashboard**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Analytics in-context report, Copy to dashboard](media/add-charts/add-analytics-chart-abbreviated.png) 
 	
 	Select the dashboard and choose **OK**.  
 
-1. To return to the Analytics summary, choose the ![ ](../../media/icons/back-arrow.png) back arrow.
+1. To return to the Analytics summary, choose the :::image type="icon" source="../../media/icons/back-arrow.png" border="false"::: back arrow.
 
 ::: moniker-end
 
@@ -198,7 +198,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 	> ![Choose another team](../../boards/sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
 	> [!TIP]    
-	> Choose the ![ ](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![ ](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false"::: star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Backlog items** (for Scrum), **Stories** (for Agile), or **Requirements** (for CMMI) as the backlog level. 
 
@@ -224,8 +224,6 @@ Velocity reports are available for each backlog level, both product and portfoli
    > [!NOTE]  
    > Work items based on the [Scrum process](../../boards/work-items/guidance/scrum-process.md) get counted in the chart once their State is set to Committed, whereas items based on the [Agile](../../boards/work-items/guidance/agile-process.md) and [CMMI](../../boards/work-items/guidance/cmmi-process.md) processes get counted once their State is set to Active. This behavior is set through the [workflow states to category state mappings](../../boards/work-items/workflow-and-state-categories.md).
    ::: moniker-end
-
-
 
 ::: moniker range="<= tfs-2018"
 
@@ -257,7 +255,7 @@ Velocity reports are available for each backlog level, both product and portfoli
 
 ::: moniker-end
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020" 
 
 - If you haven't yet [added the Velocity widget to your dashboard](../add-widget-to-dashboard.md), do that now.  
 

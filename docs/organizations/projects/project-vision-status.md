@@ -11,12 +11,12 @@ monikerRange: '>= tfs-2015'
 ms.date: 03/26/2019
 ---
 
-# Quickstart: Share your project vision, view project activity
+# Share your project vision, view project activity
 
 [!INCLUDE [temp](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range=">= azure-devops-2019"
-In this quickstart, you learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
+In this article, learn how to share your project with your team, add project members, and check the latest project activity. Share your project and objective, and ways for team members to contribute to the project through a project README file or through a project wiki.  
 
 If you want to use a project wiki, then first [create a Wiki for your project](../../project/wiki/wiki-create-repo.md). You can then [change the project summary page to point to the wiki](#change-repo).
 ::: moniker-end
@@ -94,7 +94,7 @@ You can share your project and objective, as well as ways for team members to co
 
    A default README file is added to the project repository, in this case, the **Fabrikam Test** repo.
 
-3. Return to **Overview>Summary** and choose the README file for the project page. Choose the ![ ](../../media/icons/edit.png) edit icon.
+3. Return to **Overview>Summary** and choose the README file for the project page. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  
@@ -246,7 +246,7 @@ You can change the repository used to support your project vision, including poi
 
 1. Open **Overview > Summary** .
 
-2. Choose the ![ ](../../media/icons/edit.png) edit icon.
+2. Choose the :::image type="icon" source="../../media/icons/edit.png" border="false"::: edit icon.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose README file, new nav](media/share-project/choose-readme-file-new-nav.png)  

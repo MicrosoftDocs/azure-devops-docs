@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 12/10/2019
+ms.date: 07/09/2020
 ---
 
 # Upload or download a process template
@@ -27,7 +27,7 @@ When you create a project, the Project Creation Wizard (PCW) reads the process t
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 You can upload and export process templates only for those project collections configured to use the On-premises XML processes. Also, you can mark a template to appear as the default when you add projects.
 
 Support for uploading and downloading Inherited processes isn't supported through the user interface. You may be able to export a process using the [Process Migrator for Node.js](https://github.com/microsoft/process-migrator). To manage Inherited processes, see [About process customization and inherited processes](../../../organizations/settings/work/inheritance-process-model.md).
@@ -40,7 +40,7 @@ You can upload, download, and delete process templates for a project collection.
 
 [!INCLUDE [temp](../../includes/get-latest-process-templates.md)]
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
@@ -76,12 +76,12 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
@@ -100,7 +100,7 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
@@ -110,12 +110,12 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-dialog.png)
 
-4. To download or export a process template, choose the ![ ](../../media/icons/actions-icon.png) actions icon, and choose the **Export** option.
+4. To download or export a process template, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon, and choose the **Export** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Export Process](media/process-template/export-process.png)
 
-4. To set a process as the default when adding new projects or to disable a process from being used, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the process, and select either the **Set as default process** or **Disable process** options.
+4. To set a process as the default when adding new projects or to disable a process from being used, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the process, and select either the **Set as default process** or **Disable process** options.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Disable or Delete a Process](media/process-template/disable-default-options.png)
@@ -249,7 +249,7 @@ To determine the type of process template that was used to create your project, 
 
 <a id="restrictions"> </a>
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## Process template restrictions and validation checks 
 
@@ -264,7 +264,7 @@ Uploading a process template requires that it pass the following validation chec
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 - Process template names must be unique and 256 Unicode characters or less. Same-named templates will overwrite existing templates.<br/>
 Also, names cannot contain the following characters: . , ; ' ` : / \ * | ? " &amp; % $ ! + = ( ) [ ] { } &lt; &gt;<br/>
