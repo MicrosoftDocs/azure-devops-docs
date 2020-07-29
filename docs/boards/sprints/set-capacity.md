@@ -152,7 +152,7 @@ From the **Capacity** page, you can add team members, enter the team time off, a
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. If you don't see your team members listed, add them. Choose the ![ ](media/capacity/capacity-add-users.png) **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
+1. If you don't see your team members listed, add them. Choose the :::image type="icon" source="media/capacity/capacity-add-users.png" border="false"::: **Add missing team members** icon. For this feature to work, [team members will have been added to the team](../../organizations/settings/add-teams.md#add-team-members).  
 
 	> [!div class="mx-imgBorder"]
 	> ![Add team members](media/capacity/add-team-members-standard.png)  
