@@ -21,7 +21,7 @@ monikerRange: '>= tfs-2015'
 To build your code or deploy your software using Azure Pipelines, you need at least one agent. As you add more code and people, you'll eventually need more.
 
 When your pipeline runs, the system begins one or more jobs.
-An agent is installable software that runs one job at a time.
+An agent is computing infrastructure that installs and runs software one job at a time.
 
 ::: moniker range=">= azure-devops-2019"
 Jobs can be run [directly on the host machine of the agent](../process/phases.md) or [in a container](../process/container-phases.md).
