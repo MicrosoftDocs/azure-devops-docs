@@ -305,7 +305,7 @@ If you just want to create a scale set with the default 128GiB OS disk using a p
 
         Shutdown the VM
         ```azurecli
-        az vm shutdown --resource-group <myResourceGroup> --name <MyVM>
+        az vm stop --resource-group <myResourceGroup> --name <MyVM>
         ```
 
         Deallocate the VM

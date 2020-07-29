@@ -133,7 +133,7 @@ To quickly assign fields from the card without having to open the work item, add
 	> [!div class="mx-imgBorder"]
 	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 
@@ -150,7 +150,7 @@ To quickly assign fields from the card without having to open the work item, add
 	> [!div class="mx-imgBorder"]
 	> ![Settings, Fields dialog, Add Priority field](media/customize-boards/settings-fields-agile-change-priority.png) 
 	
-3. To remove a field, choose the ![ ](../../media/icons/delete-icon.png) delete icon next to the field.
+3. To remove a field, choose the :::image type="icon" source="../../media/icons/delete-icon.png" border="false"::: delete icon next to the field.
 
 4. Choose **Save and close** when done. To learn more, see [Customize cards](../boards/customize-cards.md). 
 

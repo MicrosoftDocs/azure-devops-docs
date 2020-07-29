@@ -106,7 +106,7 @@ You can start viewing and adding work items once you connect to a project. The e
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 	> [!div class="mx-imgBorder"]  
@@ -127,7 +127,7 @@ You can start viewing and adding work items once you connect to a project. The e
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 	Here we have selected **Backlog Items** for the Scrum process.
@@ -144,7 +144,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -165,7 +165,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 

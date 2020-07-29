@@ -8,7 +8,7 @@ ms.assetid:
 ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
-ms.date: 03/16/2020
+ms.date: 07/28/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -36,13 +36,11 @@ For users, if you want to create or revoke your own PATs, see [Create or revoke 
 
 <a id="token-expiration" />
 
-## Token expiration
-
-### FedAuth tokens
+## FedAuth token expiration
 
 A FedAuth token gets issued when you sign in. It's valid for a seven-day sliding window. The expiry automatically extends another seven days whenever you refresh it within the sliding window. If users access the service regularly, only an initial sign-in is needed. After a period of inactivity extending seven days, the token becomes invalid and the user must sign in again.
 
-### Personal access tokens
+## Personal access token expiration
 
 Users can choose an expiry date for their personal access token, not to exceed one year. We recommend you use shorter time periods, generating new PATs upon expiry. Users receive a notification email one week before token expiry. Users can generate a new token, extend expiry of the existing token, or change the scope of the existing token, if needed.
 

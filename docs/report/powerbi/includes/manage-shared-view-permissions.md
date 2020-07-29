@@ -9,7 +9,7 @@ All members of the Contributors group for your project can use **Shared** views 
 
 1. To change the permissions for a shared view, open **Analytics views**, and choose **All**. For details, see [Create an Analytics view](/azure/devops/report/powerbi/analytics-views-create). 
 
-1. Choose the ![ ](/azure/devops/report/media/icons/actions-icon.png) actions icon and then select **Security**.
+1. Choose the :::image type="icon" source="/azure/devops/report/media/icons/actions-icon.png" border="false"::: actions icon and then select **Security**.
 
 2. Change the permissions so that the team member or group can't edit or delete the view.
 

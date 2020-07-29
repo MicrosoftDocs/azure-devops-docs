@@ -5,7 +5,6 @@ ms.assetid: 7910781F-8DA2-4AFB-B73C-B1833A364734
 ms.topic: article
 ms.technology: devops-code-tfvc
 ms.date: 04/25/2018
-ms.author: apawast
 author: wpschaub
 monikerRange: '>= tfs-2015'
 ---

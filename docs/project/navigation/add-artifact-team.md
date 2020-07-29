@@ -25,7 +25,7 @@ You can quickly add a query or work item when working from a **Boards** or **Wor
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Choose a **Boards** page&mdash;such as **Work Items**, **Boards**, or **Backlogs**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](media/add-artifact/add-work-item-query-vert.png)
@@ -57,7 +57,7 @@ You can quickly add a pull request, Git repository, or work item using the **Add
 
 ::: moniker range=">= azure-devops-2019"
 
-Expand the **Repos** service and choose **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Expand the **Repos** service and choose **Files**, **Commits**, or **Pull Requests** (Git repos) or **Files**, **Changesets**, or **Shelvesets** (TFVC). Then, choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Add artifact](media/add-artifact/add-repo-vert.png)
@@ -91,7 +91,7 @@ Note that you can only add one TFVC repository per project, but an unlimited num
 
 ::: moniker range=">= azure-devops-2019"
 
-Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the ![ ](../../media/icons/blue-add.png) plus icon and select from the menu of options. 
+Expand  **Pipelines** and choose **Builds** or **Releases**. Then choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon and select from the menu of options. 
 
 > [!div class="mx-imgBorder"]
 > ![Work, add artifact](media/add-artifact/add-pipeline-vert.png)

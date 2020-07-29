@@ -100,7 +100,7 @@ If you're just getting started, review [Kanban basics](kanban-basics.md) to get 
 
 ::: moniker-end   
 
-Team members can quickly check that they have met the criteria by choosing the Information tooltip ![](media/ALM_DD_InfoIcon.png) info icon.  
+Team members can quickly check that they have met the criteria by choosing the Information tooltip :::image type="icon" source="media/ALM_DD_InfoIcon.png" border="false"::: info icon.  
 
 
 ## Related articles

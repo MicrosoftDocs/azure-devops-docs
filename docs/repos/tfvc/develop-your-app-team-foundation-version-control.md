@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Develop your app in Team Foundation version control
 ms.assetid: 8535caa8-584a-454b-8c71-ce0cd362d9b1
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'
