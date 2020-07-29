@@ -50,7 +50,7 @@ You can organize your release pipeline into jobs. Every release pipeline has at 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword. You can directly specify the steps in your YAML file.
+In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword unless you are using a [template](templates.md). You can directly specify the steps in your YAML file. 
 
 ```yaml
 pool:
