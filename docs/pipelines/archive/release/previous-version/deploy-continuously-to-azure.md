@@ -31,7 +31,7 @@ Before you start, you'll need:
 * **An Azure DevOps organization**.
 * **A project**.
 * **Azure VMs**. If you need to create them, 
-  **[here's how](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-tutorial/)**.
+  **[here's how](/azure/virtual-machines/windows/)**.
 * **An Azure storage account.** Create one 
   **[here](https://azure.microsoft.com/documentation/articles/storage-create-storage-account/)**.
 * **Release Management for Visual Studio extension.** To install in Visual Studio, 
