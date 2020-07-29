@@ -16,7 +16,7 @@ You can use data pipelines to:
 * Process and transform the data 
 * Save the processed data to a staging location for others to consume
 
-:::image type="content" source="media/data-pipeline-overview.png" alt-text="Data pipeline overview":::
+![Data pipeline overview](media/data-pipeline-overview.png)
 
 Data pipelines in the enterprise can evolve into more complicated scenarios with multiple source systems and supporting various downstream applications.
 
