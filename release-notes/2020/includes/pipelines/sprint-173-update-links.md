@@ -7,5 +7,5 @@ ms.topic: include
 ---
 
 - [Multi-repo triggers](#multi-repo-triggers)
-- [Updates to Mac OS 10.14 (Mojave) image](#updates-to-mac-os-10.14-mojave-image)
-- [GitHub draft pull requests do not trigger pipelines](#gitHub-draft-pull-requests-do-not-trigger-pipelines)
+- [Updates to Mac OS 10.14 (Mojave) image](#updates-to-mac-os-1014-mojave-image)
+- [GitHub draft pull requests do not trigger pipelines](#github-draft-pull-requests-do-not-trigger-pipelines)
