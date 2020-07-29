@@ -7,10 +7,12 @@ ms.assetid: fe3e1e94-0415-400a-9b2d-7eeadb6101fc
 ms.author: macoope
 author: vtbassmatt
 ms.date: 03/01/2019
-monikerRange: '>= azure-devops'
+monikerRange: 'azure-devops'
 ---
 
 # Pipeline decorator expression context
+
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 [Pipeline decorators](add-pipeline-decorator.md) have access to context about the pipeline in which they run.
 As a pipeline decorator author, you can use this context to make decisions about the decorator's behavior. The information available in context is different for pipelines and for release.
