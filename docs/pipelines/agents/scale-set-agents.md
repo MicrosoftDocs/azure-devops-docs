@@ -161,9 +161,9 @@ In the following example, a new resource group and virtual machine scale set are
 
     - **Maximum number of virtual machines in the scale set** - Azure Pipelines will automatically scale-up the number of agents, but won't exceed this limit.
     - **Number of agents to keep on standby** - Azure Pipelines will automatically scale-down the number of agents, but will ensure that there are always this many agents available to run new jobs. If you set this to **0**, for example to conserve cost for a low volume of jobs, Azure Pipelines will start a VM only when it has a job.
-    - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job.  After running a job, the VM will go offline and be reimaged before it picks up another job.
+    - **Automatically tear down virtual machines after every use** - A new VM instance is used for every job. After running a job, the VM will go offline and be reimaged before it picks up another job.
     - **Delay in minutes before deleting excess idle agents** - To account for the variability in build load throughout the day, Azure Pipelines will wait this long before deleting an excess idle agent.
-    - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions.  Check this box to run unelevated with interactive UI.
+    - **Configure VMs to run interactive tests** (Windows Server OS Only) - Windows agents can either be configured to run unelevated with autologon and with interactive UI, or they can be configured to run with elevated permissions. Check this box to run unelevated with interactive UI.
 
 6. When your settings are configured, choose **Create** to create the agent pool.
 
@@ -180,7 +180,7 @@ Using a scale set agent pool is similar to any other agent pool. You can use it 
 
 Once the scale set agent pool is created, Azure Pipelines automatically scales the agent machines.
 
-Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes.  The decision to scale up or down is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale up operation if either of the following conditions is satisfied:
+Azure Pipelines samples the state of the agents in the pool and virtual machines in the scale set every 5 minutes. The decision to scale up or down is based on the number of idle agents at that time. An agent is considered idle if it is online and is not running a pipeline job. Azure Pipelines performs a scale up operation if either of the following conditions is satisfied:
 
 - The number of idle agents falls below the number of standby agents you specify
 - There are no idle agents to service pipeline jobs waiting in the queue
@@ -206,13 +206,13 @@ Throughout this operation, the goal for Azure Pipelines is to reach the desired 
 > [!NOTE]
 >  It can take an hour or more for Azure Pipelines to scale up or scale down the virtual machines. Azure Pipelines will scale up in steps, monitor the operations for errors, and react by deleting unusable machines and by creating new ones in the course of time. This corrective operation can take over an hour.
 
-To achieve maximum stability, scale set operations are done sequentially.  For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
+To achieve maximum stability, scale set operations are done sequentially. For example if the pool needs to scale up and there are also unhealthy machines to delete, Azure Pipelines will first scale up the pool. Once the pool has scaled up to reach the desired number of idle agents on standby, the unhealthy machines will be deleted.
 
 Due to the sampling size of 5 minutes, it is possible that all agents can be running pipelines for a short period of time and no scaling up will occur.
 
 ## Customizing Pipeline Agent Configuration
 
-You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set.  For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory.  More information can be found in the [Pipelines Agent Unattended Configuration](/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
+You can customize the configuration of the Azure Pipeline Agent by defining environment variables in your operating system custom image for your scale set. For example if you want to change the working directory of the pipeline agent, create an environment variable named VSTS_AGENT_INPUT_WORK with the desired working directory. More information can be found in the [Pipelines Agent Unattended Configuration](/azure/devops/pipelines/agents/v2-windows?view=azure-devops#unattended-config) documentation. Some examples include:
 
 - `VSTS_AGENT_INPUT_WORK`
 - `VSTS_AGENT_INPUT_PROXYURL`
@@ -220,7 +220,7 @@ You can customize the configuration of the Azure Pipeline Agent by defining envi
 - `VSTS_AGENT_INPUT_PROXYPASSWORD`
 
 > [!IMPORTANT]
-> Caution must be exercised when customizing the Pipelines agent.  Some settings will conflict with other required settings, causing the agent to fail to register, and the VM to be deleted.
+> Caution must be exercised when customizing the Pipelines agent. Some settings will conflict with other required settings, causing the agent to fail to register, and the VM to be deleted.
 > These settings should not be set or altered:
 > 
 > - `VSTS_AGENT_INPUT_URL`
@@ -235,7 +235,7 @@ You can customize the configuration of the Azure Pipeline Agent by defining envi
 
 ## Customizing Virtual Machine Startup via the Custom Script Extension
 
-Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged.  The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
+Users may want to execute startup scripts on their scaleset agent machines before those machines start running pipeline jobs. Some common use cases for start up scripts include installing software, warming caches, or fetching repos. You can execute startup scripts by installing the [Custom Script Extension for Windows](/azure/virtual-machines/extensions/custom-script-windows) or [Custom Script Extension for Linux](/azure/virtual-machines/extensions/custom-script-linux). This extension will be executed on every virtual machine in the scaleset immediately after it is created or reimaged. The custom script extension will be executed before the Azure Pipelines agent extension is executed. 
 
 Here is an example to create a custom script extension for Linux.
 
@@ -273,16 +273,16 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 2. The Azure Scale Set begins creating the new virtual machines. Once the virtual machines are running, Azure Scale Sets sequentially executes any installed VM extensions.
 
-3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension.  If the Custom Script Extension returns a non-zero exit code the VM creation process is aborted and will be deleted.
+3. If the Custom Script Extension is installed, it is executed before the Azure Pipelines Agent extension. If the Custom Script Extension returns a non-zero exit code the VM creation process is aborted and will be deleted.
 
 4. The Azure Pipelines Agent extension is executed. This extension downloads the latest version of the Azure Pipelines Agent along with a configuration script which can be found here. (Note: These URLs may change.)
 
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Linux/6/enableagent.sh)
     - [https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1](https://vstsagenttools.blob.core.windows.net/tools/ElasticPools/Windows/5/enableagent.ps1)
 
-5. The configuration script creates a local user for the pipelines agent.  The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
+5. The configuration script creates a local user for the pipelines agent. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
-6. For most scenarios, the configuration script then immediately starts the agent.  The agent goes Online and is ready to run pipeline jobs.
+6. For most scenarios, the configuration script then immediately starts the agent. The agent goes Online and is ready to run pipeline jobs.
 
     If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
@@ -290,9 +290,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
 
 These are steps to create a scale set with a custom OS disk size and custom software.
 
-If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set.  Otherwise follow these steps to customize your VM image.
+If you just want to create a scale set with the default 128 GB OS disk using a publicly available Azure image, then skip straight to step 6 and use the public image name (UbuntuLTS, Win2019DataCenter, etc.) to create the scale set. Otherwise follow these steps to customize your VM image.
 
-1.  Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to <myDiskSizeGb>.
+1. Create a VM with your desired OS image and optionally expand the OS disk size from 128 GB to <myDiskSizeGb>.
 
     - If starting with an available Azure Image, for example <myBaseImage> = (Win2019DataCenter, UbuntuLTS):
     
@@ -340,7 +340,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 
    - Reboot the VM when finished with customizations
    
-   - Generalize the VM.  
+   - Generalize the VM. 
        
         - [Windows] From an admin console window: `C:\Windows\System32\sysprep\sysprep.exe /generalize /oobe /shutdown`
         - [Linux] `sudo waagent -deprovision+user -force`
