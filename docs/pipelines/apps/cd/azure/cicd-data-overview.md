@@ -5,7 +5,7 @@ ms.technology: devops-cicd-apps
 ms.topic: conceptual
 ms.author: jukullam
 author: JuliaKM
-ms.date: 07/15/2020
+ms.date: 07/29/2020
 monikerRange: '=azure-devops'
 ---
 
@@ -16,7 +16,7 @@ You can use data pipelines to:
 * Process and transform the data 
 * Save the processed data to a staging location for others to consume
 
-<!--:::image type="content" source="media/data-pipeline-overview.png" alt-text="Data pipeline overview":::-->
+:::image type="content" source="media/data-pipeline-overview.png" alt-text="Data pipeline overview":::
 
 Data pipelines in the enterprise can evolve into more complicated scenarios with multiple source systems and supporting various downstream applications.
 
