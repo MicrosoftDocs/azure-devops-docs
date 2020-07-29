@@ -4,13 +4,15 @@ description: Extend Azure DevOps Services with your own hub.
 ms.assetid: 3D0B51DA-66AA-45C7-B9F1-08973CFF7E5E
 ms.technology: devops-ecosystem
 ms.topic: conceptual
-monikerRange: '>= tfs-2017'
+monikerRange: 'azure-devops'
 ms.author: chcomley
 author: chcomley
 ms.date: 03/21/2019
 ---
 
 # Add tabs on backlog pages
+
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 

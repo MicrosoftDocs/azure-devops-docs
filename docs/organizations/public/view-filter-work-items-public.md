@@ -12,11 +12,11 @@ ms.date: 02/19/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: View and filter work items  
+# View and filter work items  
 
 [!INCLUDE [temp](includes/version-public-projects.md)]
 
-In this quickstart, you learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
+In this article, learn how to view work items that are defined for a public project. If you're a contributor or Stakeholder, you can also [add and edit work items](../../boards/work-items/view-add-work-items.md).  
 
 [!INCLUDE [temp](includes/anon-user.md)]
 
@@ -58,7 +58,7 @@ Using the drop-down menu, you can focus on relevant items using one of the three
 
 ## Filter the list of work items
 
-Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to view the filters available to you. You can filter each view by typing a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to view the filters available to you. You can filter each view by entering a keyword or using one or more of the fields provided, such as work item type (Types), State, Area Path, and Tags. The page remembers the filters you set for each pivot, supporting personalized views across all pivots.
 
 > [!div class="mx-imgBorder"]
 > ![Work Items page, filter by work item type ](media/view-work-items/filter-bug.png)
@@ -74,7 +74,7 @@ Choose the :::image type="icon" source="../../media/icons/filter-icon.png" borde
 
 You can sort your view by one of the column fields. If the column fields aren't displaying, choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon.
 
-To sort on a column, click the column title. To reverse the sort order, click the column title again.
+To sort on a column, select the column title. To reverse the sort order, select the column title again.
 
 To view or hide completed work items, choose the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon, and switch the slider to show/hide **Completed Work Items**.
 

@@ -191,9 +191,9 @@ As the following examples show, the grouped clauses are translated to the corres
 > [!div class="mx-tdCol2BreakAll"]
 > |Query | Grouped clauses|Logical expression|
 > |---|---|---|
-> |1| ![ ](media/using-queries/and-or-clause-no-grouping.png)|![ ](media/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |2| ![ ](media/using-queries/and-or-clause-with-grouping.png)|![ ](media/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |3| ![ ](media/using-queries/and-or-clause-reverse-grouping.png)|![ ](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+> |1| ![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |2| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |3| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
 - **Query 1**: AND State=Active OR Assigned to @Me  

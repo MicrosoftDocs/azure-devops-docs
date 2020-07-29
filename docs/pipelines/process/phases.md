@@ -4,7 +4,7 @@ ms.custom: seodec18
 description: Understand jobs in Azure Pipelines, Azure DevOps Server, and Team Foundation Server (TFS)
 ms.assetid: B05BCE88-73BA-463E-B35E-B54787631B3F
 ms.topic: conceptual
-ms.date: 07/14/2020
+ms.date: 07/29/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -50,7 +50,7 @@ You can organize your release pipeline into jobs. Every release pipeline has at 
 #### [YAML](#tab/yaml/)
 ::: moniker range=">= azure-devops-2019"
 
-In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword. You can directly specify the steps in your YAML file.
+In the simplest case, a pipeline has a single job. In that case, you do not have to explicitly use the `job` keyword unless you are using a [template](templates.md). You can directly specify the steps in your YAML file. 
 
 ```yaml
 pool:
@@ -122,7 +122,7 @@ The full syntax to specify a job is:
     # you may specify one or the other; including both is an error
     # `maxParallel` is only valid with `matrix`
   continueOnError: boolean  # 'true' if future jobs should run even if this job fails; defaults to 'false'
-  pool: pool # see pool schema
+  pool: pool # agent pool
   workspace:
     clean: outputs | resources | all # what to clean up before the job runs
   container: containerReference # container to run this job inside
@@ -818,6 +818,8 @@ When you specify one of the `clean` options, they are interpreted as follows:
 
 > [!NOTE]
 >  `$(Build.ArtifactStagingDirectory)` and `$(Common.TestResultsDirectory)` are always deleted and recreated prior to every build regardless of any of these settings.
+>
+> For Microsoft-hosted agents, each job is run on a different agent. As a result, you may get a new agent for subsequent pipeline runs (or stages or jobs in the same pipeline), so **not** cleaning is not a guarantee that subsequent runs, jobs, or stages will be able to access outputs from previous runs, jobs, or stages.
 
 ::: moniker-end
 ::: moniker range="< azure-devops-2019"
