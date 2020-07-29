@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Reconcile differences between two folders
 ms.assetid: 8776e3dd-fc70-422c-a191-81b22a989403
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

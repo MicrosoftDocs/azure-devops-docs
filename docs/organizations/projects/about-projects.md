@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # About projects and scaling your organization
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 A project provides a repository for source code and a place for a group of people to plan, track progress, and collaborate on building software solutions. It represents a fundamental container where data is stored when added to Azure DevOps.
 
@@ -78,7 +78,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects](media/about-projects/projects-hub-vert.png)  
@@ -89,7 +89,7 @@ You can view the projects defined for your organization by opening the **Project
 
 ::: moniker range=">= tfs-2015 <= tfs-2018"
 
-1. Choose the ![](../../media/icons/project-icon.png) Azure DevOps logo to open **Projects**.
+1. Choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**.
 
     > [!div class="mx-imgBorder"]  
     > ![Open Projects, horizontal nav](../../media/settings/open-project-hub-horz.png)

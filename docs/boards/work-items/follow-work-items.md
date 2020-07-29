@@ -63,14 +63,14 @@ This article shows you how to:
 
 ## Follow a work item
 
-When you want to track the progress of a single work item, choose the ![ ](../media/icons/follow-icon.png) follow icon. This signals the system to notify you when changes are made to the work item.  
+When you want to track the progress of a single work item, choose the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: follow icon. This signals the system to notify you when changes are made to the work item.  
 
 ::: moniker range=">= azure-devops-2020"
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Follow icon control](media/follow-work/follow-work-item.png) 
 
-If you want to specify conditions on when you'll get notified of changes, choose the ![ ](../media/icons/gear_icon.png) gear icon and choose from the options provided. 
+If you want to specify conditions on when you'll get notified of changes, choose the :::image type="icon" source="../media/icons/gear_icon.png" border="false"::: gear icon and choose from the options provided. 
 
 > [!div class="mx-imgBorder"]  
 > ![Work item form, Notification settings dialog for follow](media/follow-work/notification-settings-for-follow.png) 
@@ -103,7 +103,7 @@ To stop following changes, choose the  :::image type="icon" source="../media/ico
 
 ## Follow a pull request 
 
-To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the ![ ](../media/icons/follow-icon.png) **Follow** option. This signals the system to notify you when changes are made to the PR.  
+To track the progress of a single pull request, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon for the pull request, and select the :::image type="icon" source="../media/icons/follow-icon.png" border="false"::: **Follow** option. This signals the system to notify you when changes are made to the PR.  
 
 <img src="media/follow-pull-request.png" alt="Pull Request, context menu, Follow icon option" style="border: 1px solid #C3C3C3;" />  
 

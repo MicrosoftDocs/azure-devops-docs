@@ -22,7 +22,7 @@ If you only have to manage a small set of users, then you can skip this step. Ho
 [!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ::: moniker range="azure-devops"
-Use this topic to access articles that show you how to:
+Use this article to access articles that show you how to:
 > [!div class="checklist"]
 > * Set up Azure Active Directory for use with Azure DevOps Services
 > * Manage organizational access with Azure AD
@@ -30,7 +30,7 @@ Use this topic to access articles that show you how to:
 
 ::: moniker range="< azure-devops"
 
-Use this topic to access articles that show you how to:
+Use this article to access articles that show you how to:
 > [!div class="checklist"]
 > * Set up Active Directory for use with on-premises Azure DevOps Server
 

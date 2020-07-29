@@ -63,7 +63,7 @@ You add query folders from the **Boards>Queries>All** page.
 
 You add query folders from the **Boards>Queries** page.
 
-1. To add a folder, choose the ![ ](../media/icons/context_menu.png) context menu for an existing folder or the top container folder and select **New query folder**. 
+1. To add a folder, choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context menu for an existing folder or the top container folder and select **New query folder**. 
 
 	Enter the name for the folder in the New query folder dialog.  
 
@@ -71,7 +71,7 @@ You add query folders from the **Boards>Queries** page.
 
 1. To move items into a folder, drag-and-drop a query onto the folder. 
 
-	Optionally, you can choose the ![ ](../media/icons/context_menu.png) context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
+	Optionally, you can choose the :::image type="icon" source="../media/icons/context_menu.png" border="false"::: context icon for an existing query and choose **Rename**. In the Rename query dialog, select the folder you want to save the query in. 
 
 	![Rename query dialog](media/organize-queries/rename-query-old-experience.png) 
 
@@ -84,7 +84,7 @@ You add query folders from the **Boards>Queries** page.
 
 ## Add a query to the dashboard or share it with your team 
 
-To add a query to the home page or a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or ![ ](media/22.png) context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
+To add a query to the home page or a dashboard, open the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon (or :::image type="icon" source="media/22.png" border="false"::: context icon) menu for the query and [add it to a specific dashboard](../../report/dashboards/dashboards.md) or as a team favorite. 
 
 Share queries with your team by adding them to a folder under the **Shared Queries** container.  To save a query to a Shared Queries folder, get added to the [project administrators group](../../organizations/security/set-project-collection-level-permissions.md) or have your [permissions set for a folder under Shared Queries](set-query-permissions.md). 
 

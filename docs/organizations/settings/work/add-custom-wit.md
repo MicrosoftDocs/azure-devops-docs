@@ -42,7 +42,7 @@ To learn more about what you can customize, see [About process customization and
 
 ## Add a work item type
 
-1. From the **Work Item Types** page, choose the ![ ](../../../media/icons/blue-add-icon.png) **New work item type**.
+1. From the **Work Item Types** page, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New work item type**.
 
 	![Process, Inherited process, Work Item Types, Add new work item type](media/process/cpwit-add-new-wit.png)
  
@@ -73,7 +73,7 @@ To learn more about what you can customize, see [About process customization and
    <a id="layout">  </a>
 4. (Optional) On the **Layout** tab, you can enter a different form label than the name of the field. Also, you can choose the page and group where the field appears on the form.  
 
-   Here we choose to add a new field. Choose the ![ ](media/process/new-field-icon.png) (**New Field** icon).  
+   Here we choose to add a new field. Choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: (**New Field** icon).  
 
    > [!div class="mx-imgBorder"]  
    > ![New WIT, customize layout](media/process/cpwit-new-ticket-define.png)    
@@ -133,7 +133,7 @@ We recommend that you create a test project and apply your customized  inherited
 
 	If you don't see the custom WIT, refresh your browser to make sure it registers all the custom changes you've made. 
 
-4. Verify that the field you added appears on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+4. Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
    > [!div class="mx-imgBorder"]  
    > ![Ticket form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-ticket-form.png)  

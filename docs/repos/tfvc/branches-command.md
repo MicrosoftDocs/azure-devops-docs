@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Branches Command
 ms.assetid: dae78c90-c65a-444d-96cb-84027b91ad4a
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

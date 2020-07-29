@@ -77,14 +77,14 @@ In order to configure the Test Results Trend widget, you must have the following
 
 You can configure your Test Results Trend (Advanced) widget to show results for either build or release pipelines. 
 
-1. From your team's dashboard, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
+1. From your team's dashboard, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the Test Results Trend (Advanced) widget you want to configure and select **Configure**.
 	
 	Modify the **Title** and choose either **Build** or **Release** for the type of **Pipelines** that you'll select.
    
 	> [!div class="mx-imgBorder"]  
 	> ![Test Results Trend (Advanced) widget configuration panel](media/test-results-trend-widget/configure-test-results-trend-widget-1.png)  
 
-	Choose the ![ ](../../media/icons/blue-add.png) plus icon to add one or more pipelines. 
+	Choose the :::image type="icon" source="../../media/icons/blue-add.png" border="false"::: plus icon to add one or more pipelines. 
 
 1. Next, choose the **Period**, and then choose the metrics that you want to track. Optionally, apply filters for **Branch**, **Test file**, **Owner**, and **Test run**.   
 
