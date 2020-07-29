@@ -24,7 +24,7 @@ You create the virtual machine using Azure Powershell, and then you set up CI/CD
 
 [!INCLUDE [temp](../includes/vsts-and-azure-setup.md)]
 
-On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/install-azurerm-ps?view=azurermps-4.2.0).
+On your dev machine, you need Azure PowerShell module version 4.0 or newer. See [Install and configure Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.4.0).
 
 [!INCLUDE [temp](../includes/create-azure-windows-vm.md)]
 
