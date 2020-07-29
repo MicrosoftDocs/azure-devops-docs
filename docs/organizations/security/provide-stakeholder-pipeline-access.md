@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: 'azure-devops'
-ms.date: 11/21/2019
+ms.date: 07/28/2020
 ---
 
 
@@ -60,8 +60,6 @@ Create a custom security group at the project-level or the collection-level. The
 
 To create a project-level security group, open the web portal and choose the project where you want to add users or groups. 
 
-::: moniker range="azure-devops"
-
 > [!NOTE]   
 > To enable the Project Permissions Settings Page user interface that is in preview, see [Enable preview features](../../project/navigation/preview-features.md).
 
@@ -99,8 +97,6 @@ To create a project-level security group, open the web portal and choose the pro
 	> ![Create group dialog](media/stakeholder-security/create-group-dialog.png) 
 
 4. Choose **Create group**.
-
-::: moniker-end
 
 * * *
 
