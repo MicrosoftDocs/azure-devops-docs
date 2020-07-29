@@ -133,6 +133,7 @@ To create a project-level security group, open the web portal and choose the pro
 
 2. Choose **Save changes**.
 
+* * *
 
 <a id="build-permissions" /> 
 
