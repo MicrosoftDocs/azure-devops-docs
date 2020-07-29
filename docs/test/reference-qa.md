@@ -212,7 +212,7 @@ you use tags.
 ### Q: Can I share test steps between test cases?
 
 **A:** Yes, choose the steps that you want to share. Find out more about 
-[sharing test steps](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases).
+[sharing test steps](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases).
 
 ![Create shared test steps](media/create-test-cases/CreateSharedSteps.png)
 
@@ -480,7 +480,7 @@ Test results are often deleted before you can analyze them.
 <a name="sharesteps"><a/>
 ## Sharing steps between test cases
 
-[Go to related topic &gt;](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases)
+[Go to related topic &gt;](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases)
 
 ### Q: Can I share steps between test plans and projects?**  
 

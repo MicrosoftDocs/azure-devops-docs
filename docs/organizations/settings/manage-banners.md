@@ -7,30 +7,22 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: 'azure-devops'
-ms.date: 08/15/2019
+monikerRange: '>= azure-devops-2020'
+ms.date: 07/20/2020
 ---
 
 # Add and manage information banners
 
-[!INCLUDE [temp](../../includes/version-vsts-only.md)]  
+[!INCLUDE [temp](../../includes/version-azure-devops-plus-azure-devops-server-2020.md)]  
 
 A quick and effective way to communicate with your organization is through information banners. You can specify one of three types of banners: error, information, and warning. Only one banner, the last one added or updated, is displayed at a time. Banners remain in effect until their expiration date. 
 
-The following image shows how an information message is displayed. Users can cancel the message by clicking the ![ ](../../media/icons/close-filter.png) close icon. 
+The following image shows how an information message is displayed. Users can cancel the message by clicking the :::image type="icon" source="../../media/icons/close-filter.png" border="false"::: close icon. 
 
 > [!div class="mx-imgBorder"]  
 > ![Information banner](media/banners/show-banner-info.png)   
 
 You can only manage banners using the Azure DevOps Command Line Interface (CLI), [`az devops admin banner commands`](/cli/azure/ext/azure-devops/devops/admin/banner). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
-
-
-<!--- QUESTIONS 
-Is there a limit to the message text string? 
-Is there any way to show multiple banners?  
-Could not update the expiration date to a null value 
---> 
-
 
 
 ## Prerequisites 
@@ -39,6 +31,8 @@ Could not update the expiration date to a null value
 - You must have installed the Azure DevOps CLI extension as described in [Get started with Azure DevOps CLI](../../cli/index.md).  
 - Sign into Azure DevOps using `az login`.  
 - For the examples in this article, set the default organization using `az devops configure --defaults organization=YourOrganizationURL`.  
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
 
 ## admin banner commands
 
@@ -233,3 +227,8 @@ C:\WINDOWS\system32>az devops admin banner update --id 7653f414-3c01-424f-8f84-e
 - [About projects and scaling your organization](../projects/about-projects.md)  
 
 
+<!--- QUESTIONS 
+Is there a limit to the message text string? 
+Is there any way to show multiple banners?  
+Could not update the expiration date to a null value 
+--> 

@@ -7,7 +7,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: overview
 monikerRange: '>= azure-devops-2019'
-ms.date: 04/05/2019
+ms.date: 07/14/2020
 ---
 
 
@@ -35,7 +35,7 @@ As set of default Analytics views are provided. The default views and are immedi
 ::: moniker range="azure-devops"
 
 > [!NOTE]  
-> To access <strong>Analytics views</strong>, you must enable the feature as described in [Enable preview features](/azure/devops/project/navigation/preview-features).  
+> To access **Analytics views**, you must enable the feature as described in [Manage or enable features](/azure/devops/project/navigation/preview-features).  
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ When you use the Power BI Data Connector, these same default views appear in the
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range=">= azure-devops-2019 < azure-devops"
 
 ![Power BI Azure DevOps Server Connector (Beta)](media/pbi-getstarted-123-onprem.png)
 
@@ -84,7 +84,9 @@ To learn more, see [Create an Analytics view](./analytics-views-create.md).
 For more information on how the dataset is modeled when using the Power BI Data Connector, see [dataset design for the Power BI Data Connector](data-connector-dataset.md).
 
 <a id="q-a"> </a>
+
 ## Try this next
+
 > [!div class="nextstepaction"]
 > [Data available from Analytics](data-available-in-analytics.md)
 

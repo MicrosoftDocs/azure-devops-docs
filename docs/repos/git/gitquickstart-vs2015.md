@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Quick Start with Git and Azure DevOps Services
 ms.assetid: aa9c2f22-6912-4834-8ed3-ed16771760c2
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 03/14/2018
 monikerRange: '>= tfs-2015'

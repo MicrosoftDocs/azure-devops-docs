@@ -8,7 +8,7 @@ ms.author: kaghai
 ms.custom: powerbisample
 author: KathrynEE
 ms.topic: sample
-monikerRange: '>= azure-devops'  
+monikerRange: '>= azure-devops-2020'     
 ms.date: 01/30/2020
 ---
 

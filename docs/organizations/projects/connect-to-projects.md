@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connect to project from browser/supported client
 titleSuffix: Azure DevOps
 description: Learn how to connect a client to the cloud service Azure DevOps or on-premises
@@ -11,11 +11,11 @@ ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Connect to a project in Azure DevOps
+# Connect to a project in Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
+In this article, learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
@@ -48,10 +48,15 @@ A project defines a process and data storage in which you manage your software p
    <pre><code>https://dev.azure.com/<i>OrganizationName</i>/<i>ProjectName</i> </code></pre>
    ::: moniker-end
 
-   ::: moniker range=">= tfs-2013 <= azure-devops-2019" 
+   ::: moniker range=">= azure-devops-2019 < azure-devops" 
+   <pre><code>http://<i>ServerName</i>/DefaultCollection/<i>ProjectName</i></code></pre> 
+
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime/DefaultCollection**.
+   ::: moniker-end
+   ::: moniker range=">= tfs-2013 < azure-devops-2019" 
    <pre><code>http://<i>ServerName</i>:8080/tfs/DefaultCollection/<i>ProjectName</i></code></pre> 
 
-   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/**.
+   For example, to connect to the server named **FabrikamPrime**, type: **http://FabrikamPrime:8080/tfs/DefaultCollection**.
 
    The default Port is 8080. If you don't use default values, specify the port number and directory for your server.
    ::: moniker-end
@@ -304,7 +309,7 @@ Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Pro
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
-- [Azure Test Plans](/previous-versions/azure/devops/docs/test/mtm/guidance-mtm-usage) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility

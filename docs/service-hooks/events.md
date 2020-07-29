@@ -5,14 +5,16 @@ ms.assetid: 1DC15791-5614-405E-8372-79A5ED6E66EE
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
 # Azure DevOps Services service hooks events
 
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
+
 ## Available event types
 
-* Build and release
+* **Build and release**
   * [Build completed](#build.complete)
   * [Release created](#ms.vss-release.release-created-event)
   * [Release abandoned](#ms.vss-release.release-abandoned-event)
@@ -21,31 +23,33 @@ ms.date: 08/04/2016
   * [Release deployment completed](#ms.vss-release.deployment-completed-event)
   * [Release deployment started](#ms.vss-release.deployment-started-event)
 
-::: moniker range="azure-devops"
-* Pipelines
+::: moniker range=">= azure-devops-2020"
+* **Pipelines**
   * [Run state changed](#run.statechanged)
   *	[Run stage state changed](#run.stagestatechanged)
   * [Run stage waiting for approval](#run.stageapprovalpending)
   * [Run stage approval completed](#run.stageapprovalcompleted)
 ::: moniker-end
 
-* Code
+* **Code**
   * [Code checked in](#tfvc.checkin)
   * [Code pushed](#git.push)
   * [Pull request created](#git.pullrequest.created)
   * [Pull request merge commit created](#git.pullrequest.merged)
   * [Pull request updated](#git.pullrequest.updated)
 
-* Work item 
+* **Work items**
   * [Work item commented on](#workitem.commented)
   * [Work item created](#workitem.created)
   * [Work item deleted](#workitem.deleted)
   * [Work item restored](#workitem.restored)
   * [Work item updated](#workitem.updated)
 
-Deprecated event types:
+::: moniker range="<= tfs-2017"
+**Deprecated event types**:
 
 * [Team room message posted](#message.posted)
+::: moniker-end
 
 > [!NOTE]
 > The [Nuget WebHooks Receivers package](https://www.nuget.org/packages/Microsoft.AspNet.WebHooks.Receivers.vsts) provides support for receiving WebHooks from Azure DevOps Services.
@@ -53,6 +57,7 @@ Deprecated event types:
 ## Build and release
 
 <a name="build.complete"></a>
+
 ### Build completed
 
 A build completes
@@ -1182,13 +1187,15 @@ A deployment was started
 }
 ```
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
+
 ## Pipelines
 
 > [!NOTE]
-> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events
+> [Multi-stage pipelines](https://go.microsoft.com/fwlink/?linkid=2097082) preview feature needs to be enabled for these events.
 
 <a name="run.statechanged"></a>
+
 ### Run state changed
 
 Overall status of a pipeline run changed. A new run has started, or a run has transitioned to canceling, canceled, failed, partially succeeded or succeeded state.
@@ -2464,6 +2471,8 @@ Filter events to include only work items commented on.
 }
 ```
 
+::: moniker range="<= tfs-2017"
+
 ## Deprecated event types
 
 <a name="message.posted"></a>
@@ -2524,6 +2533,8 @@ Triggers when a message is posted to a team room
   "createdDate": "2016-09-19T13:03:29.2506967Z"
 }
 ```
+
+::: moniker-end
 
 ## Resource containers
 

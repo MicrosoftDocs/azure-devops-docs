@@ -6,13 +6,13 @@ ms.technology: devops-marketplace
 ms.assetid: 5b0786ec-9f5e-419f-acef-c15d15985285
 ms.author: chcomley
 author: chcomley
-ms.date: 07/11/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2015'
 ---
 
 # Manage extension permissions
 
-[!INCLUDE [version-vsts-tfs-2015-on](../../boards/includes/version-vsts-tfs-2015-on.md)]
+[!INCLUDE [version-ts-tfs-2015-2016](../../includes/version-ts-tfs-2015-2016.md)]
 
 ::: moniker range="azure-devops"
 
@@ -48,7 +48,7 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
@@ -66,7 +66,7 @@ In this article, learn how to grant permissions for publishing or updating exten
 
 ::: moniker-end
 
-::: moniker range=">=tfs-2015 < azure-devops-2019"
+::: moniker range=">=tfs-2015 <= tfs-2018"
 
 To grant permissions for publishing or updating to users or groups, use [TFSSecurity](/azure/devops/server/command-line/tfssecurity-cmd#permissions) command-line tool.
 
@@ -103,3 +103,9 @@ You can add users later to "TFS Extension Publishers". This permission is a serv
 so updating and deleting an extension affects all the project collections that use the extension.
 
 ::: moniker-end
+
+## Related articles
+
+- [Install extensions](../install-extension.md)
+- [Request extensions](../request-extensions.md)
+- [About permissions](../../organizations/security/about-permissions.md)
