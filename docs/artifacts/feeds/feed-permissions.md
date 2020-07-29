@@ -100,7 +100,7 @@ To restrict access to your feed, simply select a user or group from the permissi
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-permissions.png)
 
-After restricting your view's visibility, the permissions column should indicate that your view is only available to `feed users`.
+After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-settings.png)

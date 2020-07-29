@@ -205,7 +205,7 @@ The main method for adding a work item using a template is to open the template 
 
 #### [Browser](#tab/browser/)
 
-1. Choose the ![ ](../../media/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+1. Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
     > [!div class="mx-imgBorder"]  
     > ![Open team admin context](../../media/open-admin-context-standard.png)
@@ -413,7 +413,7 @@ You manage templates from  team settings. All templates are defined for a team. 
 
 1. From the web portal, open settings for a team. 
 
-    Choose the ![ ](../../media/icons/admin-gear-icon.png) gear icon to open the settings for a team. 
+    Choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon to open the settings for a team. 
 
     Here we open the admin page for the Web team. 
 

@@ -5,8 +5,6 @@ ms.topic: article
 ms.technology: devops-code-git
 ms.assetid: 5CB114EA-EC65-4FF8-BC71-1B7E4B15D921
 ms.date: 04/27/2018
-ms.author: apawast
-author: wpschaub
 monikerRange: '>= tfs-2013'
 ---
 

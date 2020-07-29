@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: RPC failures and http.postBuffer
 ms.technology: devops-code-git 
 ms.manager: jepling
-ms.author: jobourne
-author: thejoebourneidentity
 ms.topic: conceptual
 ms.date: 01/22/2019
 monikerRange: '>= tfs-2013'

@@ -90,9 +90,9 @@ The editor toolbar appears below each text box that accepts formatted text. It o
 > [!div class="mx-imgBorder"]  
 > ![Rich Text Editor toolbar](media/share-plans/new-rich-text-editor-toolbar.png) 
 
-You can use the ![ ](../../media/icons/rtf-clear.png) clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
+You can use the :::image type="icon" source="../../media/icons/rtf-clear.png" border="false"::: clear format icon or **CTRL+Spacebar** to remove formatting from highlighted text.
 
-For the **Discussion** section, the tool bar comes with a few extra icons&mdash;![ ](../../media/icons/at-mention.png) at-mention, ![ ](../../media/icons/work-id.png) #-work-item-id, and  ![ ](../../media/icons/pr-id.png) pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
+For the **Discussion** section, the tool bar comes with a few extra icons&mdash;:::image type="icon" source="../../media/icons/at-mention.png" border="false"::: at-mention, :::image type="icon" source="../../media/icons/work-id.png" border="false"::: #-work-item-id, and  :::image type="icon" source="../../media/icons/pr-id.png" border="false"::: pull-request id &mdash;to facilitate bringing others into the discussion or linking to work items or pull requests. Choose one of these icons and a menu displays with the most recent options that you've worked with. 
 
 > [!div class="mx-imgBorder"]  
 > ![Discussion section, New Rich Text Editor toolbar](media/share-plans/discussion-rich-text-editor-toolbar.png)  
@@ -194,7 +194,7 @@ Choose the ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png)
 
 ::: moniker range=">= azure-devops-2019"
 
-Choose the ![ ](../backlogs/media/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
+Choose the :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
 
@@ -224,7 +224,7 @@ You can add up to 100 attachments to a work item. Attempts to add more result in
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Choose the ![ ](../backlogs/media/icon-attachments-tab-wi.png) Attachment tab icon to attach a file to the work item. 
+Choose the :::image type="icon" source="../backlogs/media/icon-attachments-tab-wi.png" border="false"::: Attachment tab icon to attach a file to the work item. 
 
 You can drag and drop a file onto the tab or anywhere on the work item form. 
 
@@ -245,7 +245,7 @@ Choose the **Attachments** tab icon to attach a file to the work item.
 
 <img src="media/share-plans-attachments-tfs-web-portal-tools.png" alt="Attachment controls, web portal (on-premises Azure DevOps), and Eclipse" style="border: 1px solid #C3C3C3;" />  
 
-Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose ![ ](../media/icons/open-icon.png) the open icon to open the attachment or ![ ](../media/icons/download-icon.png) download icon to save a copy.  
+Choose the ![plus icon](../media/icons/Action_Add.png) plus icon to add an attachment. Choose an item and then choose :::image type="icon" source="../media/icons/open-icon.png" border="false"::: the open icon to open the attachment or :::image type="icon" source="../media/icons/download-icon.png" border="false"::: download icon to save a copy.  
 
 ::: moniker-end 
 

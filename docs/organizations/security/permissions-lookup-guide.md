@@ -13,7 +13,7 @@ ms.date: 06/04/2020
 
 # Permissions lookup guide for Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Use this index to locate the topic on how to manage a specific permission. Most permissions are managed for an object, project, or collection. Other permissions are managed by adding users and groups to a role.   To learn more, see [About permissions and groups](about-permissions.md) and [About security roles](about-security-roles.md), and [Trace permissions](faq-trace-permissions.md).  
 
@@ -255,7 +255,7 @@ Values in parenthesis indicate what level the permission is managed:
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - **Object**: Permissions are managed at the object-level    
 - **Project**: Permissions are managed at the project level

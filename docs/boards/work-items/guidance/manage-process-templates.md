@@ -66,7 +66,7 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
@@ -100,7 +100,7 @@ You can upload, download, and delete process templates for a project collection.
 	> [!div class="mx-imgBorder"] 
 	> ![Open Process](media/process-template/open-collection-process-ado-2019.png)
 
-3. To upload a process template, choose the ![ ](../../../media/icons/blue-add-icon.png)**Upload Process Template** option.
+3. To upload a process template, choose the :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false":::**Upload Process Template** option.
 
 	> [!div class="mx-imgBorder"] 
 	> ![Upload Process](media/process-template/upload-process-ado-2019.png)
