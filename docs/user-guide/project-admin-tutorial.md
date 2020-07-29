@@ -12,7 +12,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 06/14/2019
 ---
 
-# Manage your project 
+# Manage your project
 
 [!INCLUDE [version-vsts-tfs-all-versions](../includes/version-vsts-tfs-all-versions.md)]  
 
@@ -30,7 +30,7 @@ Larger enterprises may want to consider using Azure Active Directory to manage p
 
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019" 
+::: moniker range="< azure-devops"
  
 Ensure that all members of your organization or group are added to your organization and project. Larger organizations may want to consider using Azure Active Directory to keep the maintenance of managing permissions and user access. Typically, you should install Azure Active Directory before installing TFS. To learn more, see the following articles.
 
@@ -69,7 +69,7 @@ Each project has a summary page that's useful for sharing information through **
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= azure-devops-2019"  
+::: moniker range=">= tfs-2015 < azure-devops"  
 Each project has a summary page that's useful for sharing information through **README files**. For users who are new to your project, we recommend that you [set up your project summary page](../organizations/projects/project-vision-status.md). Use this feature to share established processes and procedures for your project. 
 
 ::: moniker-end
@@ -95,7 +95,8 @@ Set policies to support collaboration across your teams, secure your projects, a
 
 ::: moniker-end  
 
-::: moniker range="azure-devops"  
+::: moniker range=">= azure-devops-2019"
+
 - [Change application access policies for your organization](../organizations/accounts/change-application-access-policies.md)
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add Team Foundation Version Control (TFVC) check-in policies](../repos/tfvc/add-check-policies.md)  
@@ -103,7 +104,8 @@ Set policies to support collaboration across your teams, secure your projects, a
 - [Set test retention policies](../test/how-long-to-keep-test-results.md) 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2015 <= tfs-2018"  
+::: moniker range=">= tfs-2015 <= tfs-2018"
+
 - [Manage branch policies](../repos/git/branch-policies.md)  
 - [Add TFVC check-in policies](../repos/tfvc/add-check-policies.md)  
 - [Set build and release pipeline retention policies](../pipelines/policies/retention.md) 
@@ -159,7 +161,7 @@ If users believe they're getting too many notifications, direct them to [opt out
 > ![Personal notifications](media/services/personal-notifications.png)   
 
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 
 ## Configure an SMTP server
 

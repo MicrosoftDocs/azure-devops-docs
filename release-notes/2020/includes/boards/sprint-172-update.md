@@ -10,7 +10,7 @@ ms.topic: include
 
 After several sprints of private preview, state transition restriction rules are now generally available for all customers. This new work item type rule allows you to restrict work items from being moved from one state to another. For example, you can restrict Bugs from going from New to Resolved. Instead, they must go from New –> Active -> Resolved  
 
-&nbsp;<img src="../../media/172-boards-3-0.png" width="500">
+:::image type="content" source="../../media/172-boards-3-0.png" alt-text="This example restricts Bugs to go from the New state to Active, then to Resolved instead of going from the New to Resolved state.":::
 
 You can also create a rule to restrict state transitions by group membership. For example, only users in the “Approvers” group can move user stories from New -> Approved.
 
@@ -18,7 +18,7 @@ You can also create a rule to restrict state transitions by group membership. Fo
 
 One of the top requested features for Azure Boards is the ability to copy a work item that also copies the child work items. In this sprint, we added a new option to &quot;Include child work items&quot; to the copy work item dialog. When selected, this option will copy the work item and copy all child work items (up to 100).  
 
-&nbsp;<img src="../../media/172-boards-2-0.png" width="500">
+:::image type="content" source="../../media/172-boards-2-0.png" alt-text="This page shows the new option in Azure Boards to Include child work items in a copied work item.":::
 
 ### Improved rules for activated and resolved fields
 
@@ -41,6 +41,6 @@ Since the inception of the inheritance process model, several work item types ha
 
 Starting this sprint, we are allowing a private preview for those customers who want to enable these work items types to be available on any backlog level.  
 
-&nbsp;<img src="../../media/172-boards-1-0.png" width="500">
+:::image type="content" source="../../media/172-boards-1-0.png" alt-text="Use this Azure Boards page to add previously excluded work item types to boards and backlogs.":::
 
 If you are interested in previewing this feature, please <a href="mailto: dahellem@microsoft.com">email us</a> with your organization name and we can give you access.

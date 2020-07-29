@@ -1,4 +1,4 @@
-﻿---
+---
 title: Change Azure subscription used for billing
 titleSuffix: Azure DevOps Services
 ms.custom: seodec18
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.author: chcomley
 author: chcomley
 monikerRange: 'azure-devops'
-ms.date: 12/10/2019
+ms.date: 07/23/2020
 ---
 
 # Change or remove the Azure subscription that your organization uses for billing
@@ -46,6 +46,11 @@ In this article, learn how to change the Azure subscription that your organizati
 5. Select your Azure subscription, and then select **Save**.
 
    ![Select your Azure subscription](media/shared/select-azure-subscription.png)
+
+> [!NOTE]
+> A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
+> - Create a new user account. Grant the account Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Use the new account to link the organization to the target subscription.
+> - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 ## Remove your billing subscription 
 

@@ -75,11 +75,12 @@ After you've run the build, you're ready to create a release pipeline to provisi
 
 ![icon](../../../tasks/deploy/media/azure-resource-group-deployment-icon.png) [Provision an Azure virtual machine using an Azure RM template](deploy-provision-azure-vm.md)
 
-## FAQ
-
 <!-- BEGINSECTION class="md-qanda" -->
 
 ::: moniker range="<= tfs-2018"
+
+## FAQ
+
 [!INCLUDE [temp](../../../includes/qa-versions.md)]
 ::: moniker-end
 

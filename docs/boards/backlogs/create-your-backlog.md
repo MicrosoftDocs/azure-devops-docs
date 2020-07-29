@@ -49,14 +49,14 @@ From your web browser, open your product backlog.
 	> ![Choose another team](../sprints/media/assign-items-sprint/backlog-team-selector-s155.png) 
 
 	> [!TIP]    
-	> Choose the ![](../../media/icons/icon-favorite-star.png) star icon to favorite a team backlog. Favorited artifacts (![](../../media/icons/icon-favorited.png) favorited icon) appear at the top of the team selector list. 
+	> Choose the  :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::  star icon to favorite a team backlog. Favorited artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorited icon) appear at the top of the team selector list. 
 
 1. Check that you have selected **Stories** (for Agile), **Issues** (for Basic), **Backlog items** (for Scrum), or **Requirements** (for CMMI) as the backlog level. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint//select-product-backlog-agile-s155.png) 
 
-2. (Optional) To choose which columns should display and in what order, choose the ![](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To choose which columns should display and in what order, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Column Options](../sprints/media/assign-items-sprint/open-column-options-s155.png) 
@@ -70,20 +70,20 @@ From your web browser, open your product backlog.
 
     ![Open Boards > Backlogs, for a team](../sprints/media/assign-items-sprint/open-work-backlogs-agile.png)
 
-    To select another backlog, open the selector and then choose a different team or select the ![](../../media/icons/home-icon.png) **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
+    To select another backlog, open the selector and then choose a different team or select the :::image type="icon" source="../../media/icons/home-icon.png" border="false"::: **Browse all backlogs** option. Or, enter a keyword in the search box to filter the list of team backlogs for the project.
 
     > [!div class="mx-imgBorder"]  
     > ![Select another team](../sprints/media/assign-items-sprint/team-selector-backlogs-agile.png) 
 
     > [!TIP]    
-    > Select the ![](../../media/icons/icon-favorite-star.png) star icon to make a team backlog a favorite. Favorite artifacts (![](../../media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list. 
+    > Select the  :::image type="icon" source="../../media/icons/icon-favorite-star.png" border="false":::  star icon to make a team backlog a favorite. Favorite artifacts (:::image type="icon" source="../../media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list. 
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 
     > [!div class="mx-imgBorder"]  
     > ![Select product backlog level, Backlog items, Stories, or Requirements](../sprints/media/assign-items-sprint/select-product-backlog-agile.png) 
 
-2. (Optional) To select which columns display and in what order, select the ![](../../media/icons/actions-icon.png) actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
+2. (Optional) To select which columns display and in what order, select the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon and select **Column options**. To learn more, see [Change column options](../backlogs/set-column-options.md). 
 
     > [!div class="mx-imgBorder"]  
     > ![Open Column options](../sprints/media/assign-items-sprint/open-work-backlogs-column-options-agile.png) 
@@ -132,12 +132,12 @@ Users with **Stakeholder** access can only add work items to the end of the back
 
 ::: moniker range=">= azure-devops-2019"
 
-1. Before you add work items, select the ![](../../media/icons/view-options-icon.png) view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
+1. Before you add work items, select the :::image type="icon" source="../../media/icons/view-options-icon.png" border="false"::: view options icon and turn the slider for **Parents** and **Forecasting** to **Off**. Optionally, turn **In Progress Items** on or off. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/view-options-parents-off.png) 
 
-1. To add a work item, select ![](../../media/icons/blue-add-icon.png)**New Work Item** and enter a title. Then press Enter or select **Add to top**. 
+1. To add a work item, select :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false":::**New Work Item** and enter a title. Then press Enter or select **Add to top**. 
 
     > [!div class="mx-imgBorder"]
     > ![Add a product backlog item](media/create-backlog/add-new-items-agile.png) 
@@ -197,7 +197,7 @@ Backlogs that participate in portfolio management or that contain nested same-ty
 
 Building and prioritizing your backlog provides you with a high-level roadmap. Before your team can start work on any item, however, they need more details. You capture these details within the work item form.
 
-To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the ![](../media/icons/icon-attachments-tab-wi.png) **Attachments** tab and drag-and-drop a file to share the file with others.  
+To open each item, double-click or press Enter. Then add all the information you want to track.  Change one or more field values, add a description, or make a note in the **Discussion** section. You can also choose the :::image type="icon" source="../media/icons/icon-attachments-tab-wi.png" border="false"::: **Attachments** tab and drag-and-drop a file to share the file with others.  
 
 Enter as much detail as the team needs to:  
 - Understand the scope. 

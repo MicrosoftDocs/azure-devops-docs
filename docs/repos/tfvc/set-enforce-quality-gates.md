@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Set and Enforce Quality Gates
 ms.assetid: bdc5666e-6cf0-45b2-a0a1-133c3f61e852
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

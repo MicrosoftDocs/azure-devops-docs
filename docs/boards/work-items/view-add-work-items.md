@@ -266,7 +266,7 @@ From the web portal, you can sort your view by one of the column fields that you
 
 ## Copy selected items to the clipboard or email them
 
-To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click (![ ](../media/icons/actions-icon.png) actions icon), and then select an option from the menu. 
+To select several items in a sequence, hold down the shift key from a web portal page. To select several non-sequential items, use the **Ctrl** key. Then, you can use **Ctrl+c** to copy the selected items to a clipboard. Or, you can open the context menu for the selected work items, click ( :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon), and then select an option from the menu. 
 
 > [!div class="mx-imgBorder"]
 > ![Boards>Work Items, Following view, Select work items, context menu](media/view-add/following-context-menu.png)
@@ -308,7 +308,7 @@ Use the following three controls to manage your views in the web portal.
 
 - [Best tool to add, update, and link work items](best-tool-add-update-link-work-items.md)  
 - [Move, change, or delete work items (Recycle Bin)](../backlogs/remove-delete-work-items.md)
-- [Enable preview features](../../project/navigation/preview-features.md)
+- [Manage or enable features](../../project/navigation/preview-features.md)
 - [Use work item form controls](work-item-form-controls.md)
 - [Keyboard shortcuts](../../project/navigation/keyboard-shortcuts.md)
 - [Work across projects](../../project/navigation/work-across-projects.md)
