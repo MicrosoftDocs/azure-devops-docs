@@ -41,14 +41,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 > You cannot run Mac agents using scale sets. You can only run Windows or Linux agents this way.
 
 
-## Create a virtual machine scale set agent pool
-
-Creating a virtual machine scale set agent pool consists of the the following two steps.
-
-* [Create the scale set](#create-the-scale-set)
-* [Create the agent pool](#create-the-agent-pool)
-
-### Create the scale set
+## Create the scale set
 
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
@@ -139,7 +132,7 @@ In the following example, a new resource group and virtual machine scale set are
 
         :::image type="content" source="media/scale-set-agents/manual-scale.png" alt-text="Verify upgrade policy." :::
 
-### Create the agent pool
+## Create the scale set agent pool
 
 1. Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select **Add pool** to create a new agent pool.
 
