@@ -27,11 +27,11 @@ To learn more about the new cross-platform build/release system, see [Team Found
 To create extensions for Azure DevOps, you need the following software and tools:
 
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
-- A text editor. For many of the tutorials, we used **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
-- The latest version of node, which can be downloaded [here](https://nodejs.org/en/download/).
+- A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
+- The latest version of Node.js, which can be downloaded [here](https://nodejs.org/en/download/).
 
   - The production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- Typescript Compiler 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript).
+- TypeScript Compiler 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript).
     <a name="cli"></a>
 - TFS Cross Platform Command Line Interface (tfx-cli) to package your extensions.
     - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`.
@@ -74,7 +74,7 @@ npm init
 `npm init` creates the `package.json` file. You can accept all of the default `npm init` options.
 
 > [!TIP]
-> The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildAndReleaseTask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a vsix file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
+> The agent doesn't automatically install the required modules because it's expecting your task folder to include the node modules. To mitigate this, copy the `node_modules` to `buildAndReleaseTask`. As your task gets bigger, it's easy to exceed the size limit (50MB) of a VSIX file. Before you copy the node folder, you may want to run `npm install --production` or `npm prune --production`, or you can write a script to build and pack everything.
 
 #### Add azure-pipelines-task-lib
 
@@ -93,7 +93,7 @@ npm install @types/node --save-dev
 npm install @types/q --save-dev
 ```
 
-Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and `typings install`
+Create a `.gitignore` file and add node_modules to it. Your build process should do an `npm install` and a `typings install`
 so that node_modules are built each time and don't need to be checked in.
 
 ```
@@ -109,14 +109,14 @@ tsc --init
 ```
 
 For example, we want to compile to the ES6 standard instead of ES5.
-To ensure the ES6 standard happens, open the newly generated `tsconfig.json` and update the `target` field to "es6".
+To ensure the ES6 standard happens, open the newly generated `tsconfig.json` and update the `target` field to "es6."
 
 >[!NOTE]
 >To have the command run successfully, make sure that TypeScript is installed globally with npm on your local machine.
 
 ### Task implementation
 
-Now that the scaffolding is complete, we can start to create our custom task.
+Now that the scaffolding is complete, we can create our custom task.
 
 #### task.json
 
@@ -206,7 +206,10 @@ Enter "tsc" from the `buildAndReleaseTask` folder to compile an `index.js` file 
 
 ### Run the task
 
-An agent can run the task with `node index.js` from PowerShell.
+An agent can run the task with `node index.js` from PowerShell. 
+
+In the following example, the task fails because inputs weren't supplied (`samplestring` is a required input).
+
 
 ```
 node index.js
@@ -217,8 +220,6 @@ node index.js
 ##vso[task.issue type=error;]Input required: samplestring
 ##vso[task.complete result=Failed;]Input required: samplestring
 ```
-
-In this example, the task failed because inputs weren't supplied (`samplestring` is a required input).
 
 As a fix, we can set the `samplestring` input and run the task again.
 
@@ -380,7 +381,7 @@ tsc
 mocha tests/_suite.js
 ```
 
-Both tests should pass. If you want to run the tests with more verbose output (what you would see in the build console), set the environment variable: `TASK_TEST_TRACE=1`:
+Both tests should pass. If you want to run the tests with more verbose output (what you would see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
 
 ```
 $env:TASK_TEST_TRACE=1
@@ -422,7 +423,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 ## Step 4: Package your extension
 
 Once you've written your extension, the next step towards getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
-as VSIX 2.0 compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
+as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
 
 Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command:
 
@@ -495,10 +496,10 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 ### Prerequisites
 
 - A project in your organization. If you need to create one, see [Create a project](../../organizations/projects/create-project.md?view=azure-devops&tabs=preview-page).
-- [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
+- An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 
-You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
+You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
 
 The following variables need to be declared in the variable group:
 - `publisherId`: ID of your marketplace publisher
@@ -650,13 +651,13 @@ To run unit tests, add a custom script to the package.json file. For example:
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
 1. Add "npm" task with install command and target the folder with the package.json file. 
-1. Add "Bash" task to compile the Typescript into JavaScript.
+1. Add "Bash" task to compile the TypeScript into JavaScript.
 1. Add "npm" task with "custom" command, target the folder that contains the unit tests, and input `testScript` as the command. Use the following inputs:
     - Command: custom
     - Working folder that contains package.json: /TestsDirectory
     - Command and arguments: testScript
 
-1. Add the "Publish Test Results" task. If you're using the Mocha XUnit reporter,ensure that the result format is "JUnit" and not "XUnit". Also set the search folder to the root directory. Use the following inputs:
+1. Add the "Publish Test Results" task. If you're using the Mocha XUnit reporter, ensure that the result format is "JUnit" and not "XUnit." Set the search folder to the root directory. Use the following inputs:
     - Test result format: JUnit
     - Test results files: **/ResultsFile.xml
     - Search folder: $(System.DefaultWorkingDirectory)
@@ -669,7 +670,7 @@ Once the test results have been published, the output under the tests tab should
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
 1. Add "npm" task with install command and target the folder with the package.json file.
-1. Add "Bash" task to compile the Typescript into JavaScript. 
+1. Add "Bash" task to compile the TypeScript into JavaScript. 
 1. Add "Query Extension Version" task to query the existing extension version. Use the following inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace (Service connection): Service Connection
@@ -679,30 +680,33 @@ Once the test results have been published, the output under the tests tab should
     - Output Variable: Task.Extension.Version
 
 1. Add "Package Extension" task to package the extensions based on manifest Json. Use the following inputs:
-    - Root manifests folder: Point to root directory that contains manifest file e.g $(System.DefualtWorkingDirectory) is the root directory
-    - Manifest file(s): vss-extension.json 
-    - Publisher ID: ID of your Visual Studio Marketplace publisher
-    - Extension ID: ID of your extension in the vss-extension.json file
-    - Extension Name: Name of your extension in the vss-extension.json file
-    - Extension Version: $(Task.Extension.Version)
-    - Override tasks version: checked (true)
-    - Override Type: Replace Only Patch (1.0.r)
-    - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set to public.
-1. Add 'Copy files' task to copy published files. Use the following inputs:
-    - Contents: All of the files that need to be copied for publishing them as an artifact.
-    - Target folder: The folder that the files will all be copied to for example $(Build.ArtifactStagingDirectory).
-1. Add 'Publish build artifacts' to publish the artifacts for use in other jobs, or pipelines. Use the following inputs:
-    - Path to publish: The path to the folder that contains the files that are being published. For example, the $(Build.ArtifactStagingDirectory).
+    - Root manifests folder: Points to root directory that contains manifest file. For example, $(System.DefualtWorkingDirectory) is the root directory.
+    - Manifest file(s): vss-extension.json. 
+    - Publisher ID: ID of your Visual Studio Marketplace publisher.
+    - Extension ID: ID of your extension in the vss-extension.json file.
+    - Extension Name: Name of your extension in the vss-extension.json file.
+    - Extension Version: $(Task.Extension.Version).
+    - Override tasks version: checked (true).
+    - Override Type: Replace Only Patch (1.0.r).
+    - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
+1. Add "Copy files" task to copy published files. Use the following inputs:
+    - Contents: All of the files that need to be copied for publishing them as an artifact
+    - Target folder: The folder that the files will all be copied to
+       - For example: $(Build.ArtifactStagingDirectory)
+1. Add "Publish build artifacts" to publish the artifacts for use in other jobs or pipelines. Use the following inputs:
+    - Path to publish: The path to the folder that contains the files that are being published.
+       - For example: $(Build.ArtifactStagingDirectory).
     - Artifact name: The name given to the artifact.
-    - Artifact publish location: Pick 'Azure Pipelines' to use the artifact in future jobs.
+    - Artifact publish location: Choose "Azure Pipelines" to use the artifact in future jobs.
 
 #### Stage: Download build artifacts and publish the extension
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
+
 1. Add "Download build artifacts" task to download the artifacts onto a new job. Use the following inputs:
-    - Download artifacts produced by: If downloading the artifact on a new job from the same pipeline, pick 'Current build', if downloading on a new pipeline, pick 'Specific build'.
-    - Download type: Choose 'Specific artifact' to download all files that were published.
-    - Artifact name: The published artifact's name
+    - Download artifacts produced by: If you're downloading the artifact on a new job from the same pipeline, select "Current build." If you're downloading on a new pipeline, select "Specific build."
+    - Download type: Choose "Specific artifact" to download all files that were published.
+    - Artifact name: The published artifact's name.
     - Destination directory: The folder where the files should be downloaded.
 1. The last task that you need is the "Publish Extension" task. Use the following inputs:
     - Connect to: Visual Studio Marketplace
@@ -712,7 +716,7 @@ Once the test results have been published, the output under the tests tab should
     - Publisher ID: ID of your Visual Studio Marketplace publisher
     - Extension ID: ID of your extension in the vss-extension.json file
     - Extension Name: Name of your extension in the vss-extension.json file
-    - Extension visibility: Either private or public.
+    - Extension visibility: Either private or public
 
 <a name="installandtest"></a>
 
