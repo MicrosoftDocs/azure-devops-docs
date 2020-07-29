@@ -564,7 +564,7 @@ Depending on the authentication type and ownership of the repository, specific p
 - If you're using OAuth, see [OAuth authentication](#oauth-authentication).
 - If you're using PATs, see [Personal access token (PAT) authentication](#personal-access-token-pat-authentication).
 
-#### When I select a repository during pipeline creation, I get an error "The repository <repo-name> is in use with the Azure Pipelines GitHub App in another Azure DevOps organization."
+#### When I select a repository during pipeline creation, I get an error "The repository {repo-name} is in use with the Azure Pipelines GitHub App in another Azure DevOps organization."
 
 This means that your repository is already associated with a pipeline in a different organization. CI and PR events from this repository won't work as they will be delivered to the other organization. Here are the steps you should take to remove the mapping to the other organization before proceeding to create a pipeline.
 
@@ -592,7 +592,7 @@ This means that your repository is already associated with a pipeline in a diffe
 
 * The traffic from Azure DevOps could be throttled by GitHub. When Azure Pipelines receives a notification from GitHub, it tries to contact GitHub and fetch more information about the repo and YAML file. If you have a repo with a large number of updates and pull requests, this call may fail due to such throttling. In this case, see if you can reduce the frequency of builds by using batching or stricter path/branch filters.
 
-[!INCLUDE [qa](includes/qa2_1.md)]
+[!INCLUDE [qa](includes/qa2-1.md)]
 
 [!INCLUDE [qa](includes/qa3.md)]
 

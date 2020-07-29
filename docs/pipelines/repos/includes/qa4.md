@@ -16,4 +16,4 @@ Users with permissions to contribute code can update the YAML file and include/e
   3. Select **Override the YAML continuous Integration trigger from here**.
   4. Specify the branches to include or exclude for the trigger.
 
-Note that when you follow these steps, any CI triggers specified in the YAML file are ignored.
+When you follow these steps, any CI triggers specified in the YAML file are ignored.
