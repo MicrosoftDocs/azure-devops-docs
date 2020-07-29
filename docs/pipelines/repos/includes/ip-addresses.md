@@ -88,7 +88,7 @@ shproduks1ip1	40.81.156.105
 shprodwcus0ip1	52.159.49.185
 ```
 
-**Western Europe*
+**Western Europe**
 
 ```
 tfsprodweu2ip1	 52.236.147.103
