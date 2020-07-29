@@ -46,7 +46,7 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
 |Build status|Color|Indicates|  
 |------------------|-|-----------|---------------|  
 |Passed|:::image type="icon" source="media/procguid_buildsuccess_green.png" border="false"::: Green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was good.|  
-|Tests Passed, Low Coverage|:::image type="icon" source="media/procguid_buildsuccess_lightgreen.png" border="false"::: Light green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
+|Tests Passed, Low Coverage|:::image type="icon" source="media/procguid_buildsuccess_lightgreen.png" border="false"::: Light&nbsp;green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
 |Build Succeeded, No Tests|:::image type="icon" source="media/procguid_buildsuccess_yellow.png" border="false"::: Yellow|-   Build succeeded.<br />-   No tests were run.|  
 |Build Failed|:::image type="icon" source="media/procguid_buildsuccess_red.png" border="false"::: Red|-   Build ran but did not pass.<br />-   At least one test failed that did not previously fail. Either the test is new or the test passed in previous test runs.|  
 |Tests Failed|:::image type="icon" source="media/procguid_buildsuccess_orange.png" border="false"::: Orange|-   Build failed due to a compile error or other error.|  
