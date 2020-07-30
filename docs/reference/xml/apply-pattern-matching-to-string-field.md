@@ -46,7 +46,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### Release Number  
  Pattern: ANN.NN.NN  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|R01.03.04 or V05.08.99|  
 |Fails validation|1.3.4 or V5.8.99 or v1.3|  
@@ -54,7 +54,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### A Flexible Identifier  
  Pattern: XXX-XXX  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|001-abc or a00-b02|  
 |Fails validation|1-abc or 001.abc|  
@@ -62,7 +62,7 @@ You can use the **MATCH** element to force values in a field of String type to f
 ### Priority  
  Pattern: PN  
   
-|||  
+|Validates/Fails|Example|  
 |-|-|  
 |Validates|P1 or P5 or P9|  
 |Fails validation|1 or P10|  

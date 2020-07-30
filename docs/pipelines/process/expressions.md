@@ -677,14 +677,13 @@ steps:
 
 Detailed conversion rules are listed further below.
 
-|          |             | To          |             |             |             |             |
-| -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-|          |             | **Boolean** | **Null**    | **Number**  | **String**  | **Version** |
-| **From** | **Boolean** | -           | -           | Yes         | Yes         | -           |
-|          | **Null**    | Yes         | -           | Yes         | Yes         | -           |
-|          | **Number**  | Yes         | -           | -           | Yes         | Partial     |
-|          | **String**  | Yes         | Partial     | Partial     | -           | Partial     |
-|          | **Version** | Yes         | -           | -           | Yes         | -           |
+| From / To   | Boolean | Null    | Number  | String  | Version |
+| ----------- | ------- | ------- | ------- | ------- | ------- |
+| **Boolean** | -       | -       | Yes     | Yes     | -       |
+| **Null**    | Yes     | -       | Yes     | Yes     | -       |
+| **Number**  | Yes     | -       | -       | Yes     | Partial |
+| **String**  | Yes     | Partial | Partial | -       | Partial |
+| **Version** | Yes     | -       | -       | Yes     | -       |
 
 ### Boolean
 
