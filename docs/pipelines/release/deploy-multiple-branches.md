@@ -12,13 +12,13 @@ monikerRange: '>= azure-devops-2019'
 
 **Azure Pipelines | Azure DevOps Server 2019**
 
-Artifact filters can be with After release triggers to deploy from multiple branches. When you use an artifact filter and select a build branch, the stage will execute only when the the artifact filter condition is met.
+Artifact filters can be used with release triggers to deploy from multiple branches. Applying the artifact filter to a specific branch results in the artifact deploying to a specific stage only when those filter conditions are met.
 
 ## Prerequisites
 
 You'll need:
 
-* A build pipeline builds multiple branches and publishes an artifact
+* A working build for your repository
 
   - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
  
@@ -26,30 +26,30 @@ You'll need:
 
 ## Set up a release pipeline
 
-1. In **Azure Pipelines**, open the **Releases** tab. Create a New release Pipeline. Add the build artifact that was published in your build pipeline.
+1. In **Azure Pipelines**, open the **Releases** tab. Create a New release Pipeline, select **Add an artifact** and specify your build artifact.
 
-1. Choose the **Continuous deployment trigger** icon in the **Artifacts** section to open the trigger panel. Make sure this is enabled so that a new release is created after every new successful build is completed.
+1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open up the _continuous deployment trigger_ panel and switch the button to **Enabled**.
 
   > [!div class="mx-imgBorder"]  
   > ![CI trigger](media/deploy-multiple-branches/ci-trigger.png)
 
-1. Add a stage and name it *Dev*. This stage would be triggered if the artifact was published from the dev branch.
+1. Add a stage with a name **Dev**. This stage will be triggered when a build artifact is published from the dev branch.
 
-1. Choose the **Pre-deployment conditions** icon in the **Stages** section to open the conditions panel. Make sure that the trigger for deployment to this stage is set to **After release**. This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
+1. Choose the **Pre-deployment conditions** icon in the **Stages** section to open up the _pre-deployment conditions_ panel. Under _select trigger_ select **After release**. This means that a deployment will be initiated automatically when a new release is created from this release pipeline.   
 
 1. Enable the **Artifact filters**. Select Add and specify your artifact. In the **Build branch** select the dev branch then Save.
 
   > [!div class="mx-imgBorder"]  
   > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter1.png)
 
-1. Add another stage and name it *Prod*. This stage would be triggered if the artifact was published from the master branch. Repeat steps 4-5 by selecting **Build branch** as master.
+1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the master branch. Repeat steps 4-5 and replace **Build branch** to master.
 
   > [!div class="mx-imgBorder"]  
   > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter2.png)
 
-1. Add the deployment tasks in each stage
+1. Add your appropriate deployment tasks in each stage.
 
-The next time the pipeline runs, the filter the branch which triggered the build and only that stage will get executed.
+Now the next time you have a successful build, the artifact filter will detect which branch triggered that build and only the appropriate stage will get deployed.
 
   > [!div class="mx-imgBorder"] 
   > ![After release](media/deploy-multiple-branches/after-release.png)
@@ -58,4 +58,4 @@ The next time the pipeline runs, the filter the branch which triggered the build
 
 - [Release triggers](triggers.md)
 
-If you encounter issues or have suggestions, please feel free to post a question or suggest a feature on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
+If you encounter issues or have any suggestions, please feel free to ask questions or suggest a feature on our [Azure DevOps Developer Community](https://developercommunity.visualstudio.com/spaces/21/index.html).
