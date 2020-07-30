@@ -4,7 +4,7 @@ description: DevOps CI CD - Deploy from multiple branches to multiple stages
 ms.topic: tutorial
 ms.author: ninallam
 author: ninallam
-ms.date: 03/03/2020
+ms.date: 07/30/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -22,11 +22,7 @@ You'll need:
 
   - [Build multiple branches](/azure/devops/pipelines/build/ci-build-git)
  
-* Two separate targets where you will deploy the app. These could be virtual machines,
-  web servers, on-premises physical deployment groups, or other types of deployment target.
-  You will have to choose names that are unique, but it's a good idea to include
-  "Dev" in the name of one, and "Prod" in the name of the other so that you
-  can easily identify them. 
+* Two separate targets where you will deploy the app. These could be virtual machines, web servers, on-premises physical deployment groups, or other types of deployment target. You will have to choose names that are unique, but it's a good idea to include "Dev" in the name of one, and "Prod" in the name of the other so that you can easily identify them.
 
 ## Set up a release pipeline
 
