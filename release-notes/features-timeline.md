@@ -13,10 +13,10 @@ hide_comments: true
 
 ---
 
-| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
-| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
-| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
-| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> |
+\| <a href="https://aka.ms/azuredevops/releasenotes" target="blank">What's New</a>
+\| <a href="https://developercommunity.visualstudio.com/spaces/21/index.html" target="blank">Developer Community</a>
+\| <a href="https://devblogs.microsoft.com/devops/" target="blank">DevOps Blog</a>
+\| <a href="https://docs.microsoft.com/azure/devops/?view=azure-devops" target="blank">Documentation</a> \|
 
 ---
 
