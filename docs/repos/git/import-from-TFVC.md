@@ -22,6 +22,9 @@ We strongly recommend reading our whitepapers - [Centralized version control to 
 
 The import experience is great for small simple TFVC repositories. It's also good for repositories that have already been "cleaned up" as outlined in the previous whitepapers. Those whitepapers also recommend other tools for more advanced TFVC repository configurations.
 
+> [!IMPORTANT] 
+> Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
+
 ## Importing the repository
 
 ::: moniker range=">= azure-devops-2019"
@@ -44,9 +47,6 @@ The import experience is great for small simple TFVC repositories. It's also goo
 6. Give a name to the new Git repository and click **Import**. Depending on the size of the import, your Git repository would be ready in a few minutes. 
 
    ![Import Repository Dialog](media/Import-Repo/ImportRepoDialog-TFVC.png)
-
-> [!IMPORTANT] 
-> Due to the differences in how TFVC and Git store version control history, we [recommend](/azure/devops/learn/git/migrate-from-tfvc-to-git) that you don't migrate your history. This is the approach that Microsoft took when it migrated Windows and other products from centralized version control to Git.
 
 ::: moniker-end
 
