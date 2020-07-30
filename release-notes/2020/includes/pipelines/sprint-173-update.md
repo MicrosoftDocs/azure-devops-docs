@@ -40,7 +40,7 @@ The pipeline in this example will be triggered if there are any updates to:
 
 For more information, see [Multiple repositories in your pipeline](https://docs.microsoft.com/azure/devops/pipelines/repos/multi-repo-checkout?view=azure-devops).
     
-### Updates to  macOS 10.14 (Mojave) image 
+### Updates to macOS 10.14 (Mojave) image 
 
 In the next few weeks, we'll update the Node.js version on the macOS 10.14 (Mojave) image from 6 to 8. If you still need to use node.js version 6, consider using the node.js tool installer task - [here](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/node-js?view=azure-devops). 
 
