@@ -294,7 +294,7 @@
 - name: Deploy apps (Classic)
   items:
   - name: Release Pipelines
-    href: index.md
+    href: release/index.md
   - name: Deploy from multiple branches
     href: release/deploy-mulitple-branches.md
   - name: Deploy pull request builds
