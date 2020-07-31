@@ -36,52 +36,40 @@ See [Releases in Azure Pipelines](releases.md) to understand releases and deploy
   > [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
 
 <a name="howrmworks"></a>
+
 ## How do release pipelines work?
 
-Release pipelines store the data about your pipelines,
-stages, tasks, releases, and deployments in Azure Pipelines or TFS.
+Release pipelines stores the data for your pipelines, stages, tasks, releases, and deployments in Azure Pipelines or TFS.
 
-![Azure release pipeline components](media/what-is-release-management/understand-rm-05.png)
+> [!div class="mx-imgBorder"] 
+> ![Azure release pipeline components](media/what-is-release-management/understand-rm-05.png)
 
 Azure Pipelines runs the following steps as part of every deployment:
 
-1. **Pre-deployment approval:** When a new deployment request is triggered,
-   Azure Pipelines checks whether a pre-deployment approval is required
-   before deploying a release to a stage. If it is required, it sends
-   out email notifications to the appropriate approvers.
+1. **Pre-deployment approval**:
+   When a new deployment request is triggered, Azure Pipelines checks whether a pre-deployment approval is required before deploying a release to a stage. If it is required, it sends out email notifications to the appropriate approvers.
 
-1. **Queue deployment job:** Azure Pipelines schedules the deployment job on
-   an available [automation agent](../agents/agents.md). An agent is a piece
-   of software that is capable of running tasks in the deployment.
+1. **Queue deployment job:**:
+   Azure Pipelines schedules the deployment job on an available [automation agent](../agents/agents.md). An agent is a piece of software that is capable of running tasks in the deployment.
 
-1. **Agent selection**: An automation agent picks up the job.
-   The agents for release pipelines are exactly the same as those that run your
-   builds in Azure Pipelines and TFS. A release pipeline can
-   contain settings to select an appropriate agent at runtime.
+1. **Agent selection**:
+   An automation agent picks up the job. The agents for release pipelines are exactly the same as those that run your builds in Azure Pipelines and TFS. A release pipeline can contain settings to select an appropriate agent at runtime.
 
-1. **Download artifacts**: The agent downloads all the artifacts specified
-   in that release (provided you have not opted to skip the download). The
-   agent currently understands two types of artifacts: Azure Pipelines artifacts
-   and Jenkins artifacts.
+1. **Download artifacts**:
+   The agent downloads all the artifacts specified in that release (provided you have not opted to skip the download). The agent currently understands two types of artifacts: Azure Pipelines artifacts and Jenkins artifacts.
 
-1. **Run the deployment tasks**: The agent then runs all the tasks in the
-   deployment job to deploy the app to the target servers for a stage.
+1. **Run the deployment tasks**:
+   The agent then runs all the tasks in the deployment job to deploy the app to the target servers for a stage.
 
-1. **Generate progress logs**: The agent creates detailed logs for each
-   step while running the deployment, and pushes these logs back to Azure Pipelines
-   or TFS.
+1. **Generate progress logs**:
+   The agent creates detailed logs for each step while running the deployment, and pushes these logs back to Azure Pipelines or TFS.
 
-1. **Post-deployment approval:** When deployment to a stage is complete,
-   Azure Pipelines checks if there is a post-deployment approval required
-   for that stage. If no approval is required, or upon completion of
-   a required approval, it proceeds to trigger deployment to
-   the next stage.
+1. **Post-deployment approval**:
+   When deployment to a stage is complete, Azure Pipelines checks if there is a post-deployment approval required for that stage. If no approval is required, or upon completion of a required approval, it proceeds to trigger deployment to the next stage.
 
 ::: moniker range="< azure-devops-2019"
 
-Release pipelines and build pipelines have separate UIs.
-The main differences in the pipelines are the support in release
-pipelines for different types of triggers, and the support for approvals and gates.
+Release pipelines and build pipelines have separate UIs. The main differences in the pipelines are the support in release pipelines for different types of triggers, and the support for approvals and gates.
 
 ::: moniker-end
 
