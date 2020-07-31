@@ -45,6 +45,8 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's auto-scaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
+To customize the permissions of the pipeline agent user, you can create the user, named AzDevOps, and grant that user the permissions you require. This is the user name used by scaleset agents.
+
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
 1. Browse to [Azure Cloud Shell](https://shell.azure.com/) at `https://shell.azure.com/`.
@@ -276,9 +278,9 @@ Here is the flow of operations for an Azure Pipelines Virtual Machine Scale Set 
     > [!NOTE]
     > These URLs may change.
 
-5. The configuration script creates a local user for the pipelines agent. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
+5. The configuration script creates a local user named AzDevOps if it does not exist. The script then unzips, installs, and configures the Azure Pipelines Agent. As part of configuration, the agent registers with the Azure DevOps agent pool and appears in the agent pool list in the Offline state. 
 
-6. For most scenarios, the configuration script then immediately starts the agent. The agent goes Online and is ready to run pipeline jobs.
+6. For most scenarios, the configuration script then immediately starts the agent to run as the local user AzDevOps. The agent goes Online and is ready to run pipeline jobs.
 
     If the pool is configured for interactive UI, the virtual machine reboots after the agent is configured. After reboot the local user created for the pipelines agent will auto-login and immediately start the pipelines agent. The agent then goes Online and is ready to run pipeline jobs.
 
@@ -356,7 +358,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
     az vm generalize --resource-group <myResourceGroup> --name <MyVM>
     ```
 
-5. Create a VM Image based on the generalized image
+5. Create a VM Image based on the generalized image. When performing these steps to update an existing scaleset image, make note of the image id url in the output.
 
     ```azurecli
     az image create  --resource-group <myResourceGroup> --name <MyImage> --source <MyVM>
@@ -372,6 +374,17 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 
 You are now ready to create an agent pool using this scale set.
 
+## Update an existing scale set with a new custom image
+To update the image on an existing scaleset, follow steps 1-5 in section [Create a scale set with custom image, software, or disk size](#Create-a-scale-set-with-custom-image,-software,-or-disk-size) to generate the custom OS image. Make note of the id property URL that is output from the az image create command in step 5.  Then update the scaleset with the new image. After the scaleset image has been updated, all future VMs in the scaleset will be created with the new image.
+
+    ```azurecli
+    az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virtualMachineProfile.storageProfile.imageReference.id=<id url>
+    ```
+
+## Troubleshooting issues
+Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled Diagnostics.
+The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete or Reimage VMs in your Azure Scale Set.  Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. For example your Azure subscription might have reached quota in VMs, CPU cores, disks, or IP Addresses.
+     
 <a name="q-a"></a>
 ## FAQ
 
