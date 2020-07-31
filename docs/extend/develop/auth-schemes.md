@@ -146,7 +146,7 @@ The value of certificate has to be provided in the text area.
         "displayName": "i18n:Certificate Based",
         "authenticationSchemes": [
             {
-                "type": "ms.vss-endpoint.endpoint-auth-scheme-cert,
+                "type": "ms.vss-endpoint.endpoint-auth-scheme-cert",
                 "inputDescriptors": [
                     {
                         "id": "certificate",
