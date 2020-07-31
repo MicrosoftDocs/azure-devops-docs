@@ -83,35 +83,38 @@ You define the **release pipeline** using [stages](../process/stages.md), and re
 
 An example of a release pipeline that can be modeled through a release pipeline in shown below:
 
-![Artifacts in a pipeline and release](media/definition-01.png)
+> [!div class="mx-imgBorder"] 
+> ![release definition](media/definition-01.png)
 
-In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage
-and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
+In this example, a release of a website is created by collecting specific versions of two builds (artifacts), each from a different build pipeline. The release is first deployed to a Dev stage and then forked to two QA stages in parallel. If the deployment succeeds in both the QA stages, the release is deployed to Prod ring 1 and then to Prod ring 2. Each production ring represents multiple instances of the same website deployed at various locations around the globe.
 
 ::: moniker range=">= tfs-2017"
 
 An example of how deployment automation can be modeled within a stage is shown below:
 
-![Artifacts in a pipeline and release](media/definition-02.png)
+> [!div class="mx-imgBorder"] 
+> ![deployment definition](media/definition-02.png)
 
-In this example, a [job](../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1.
-After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
+In this example, a [job](../process/phases.md) is used to deploy the app to websites across the globe in parallel within production ring 1. After all those deployments are successful, a second job is used to switch traffic from the previous version to the newer version.
 
 ::: moniker-end
 
 ::: moniker range="<= tfs-2015"
 
-> **TFS 2015**: Jobs, and fork and join deployments, are not available in TFS 2015.
+> [!NOTE]
+> **TFS 2015**: Jobs and fork/join deployments are not available in TFS 2015.
 
 ::: moniker-end
 
 **Next:**
 
-* **[Create your first pipeline](../create-first-pipeline.md)**
+Check out the following articles to learn how to:
 
-* **[Set up a multi-stage managed release pipeline](define-multistage-release-process.md)**
+* [Create your first pipeline](../create-first-pipeline.md).
+
+* [Set up a multi-stage managed release pipeline](define-multistage-release-process.md).
     
-* **[Manage deployments by using approvals and gates](deploy-using-approvals.md)**
+* [Manage deployments by using approvals and gates](deploy-using-approvals.md).
 
 
 <a name="draftrelease"></a>
