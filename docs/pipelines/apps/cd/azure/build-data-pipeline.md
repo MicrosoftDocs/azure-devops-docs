@@ -116,7 +116,7 @@ To make commands easier to run, start by selecting a default region. After you s
         --resource-group $rgName
     ```
 
-1. [Create a new Azure Data Factory](https://ms.portal.azure.com/#create/hub) within the Azure portal UI. 
+1. [Create a new Azure Data Factory](https://ms.portal.azure.com/#create/hub) within the portal UI or using Azure CLI.
 
     * Name: `data-factory-cicd`
     * Version: `V2`
@@ -165,7 +165,7 @@ To make commands easier to run, start by selecting a default region. After you s
 1. Open your storage account in the Azure portal UI in the `data-pipeline-cicd-rg` resource group. 
 1. Go to **Blob Service** > **Containers**.
 1. Open the `prepareddata` container.
-1. Upload `sample.csv` (source).
+1. Upload `sample.csv` ([source](https://github.com/MicrosoftDocs/azure-devops-docs-samples/raw/main/azure-data-pipeline/data/sample.csv)).
 
 
 ## Set up Key Vault
@@ -245,7 +245,7 @@ You will use Key Vault to store all connection information for your Azure servic
     * Project name: Your Azure DevOps data pipeline project
     * Git repository name: **Use existing**. 
         * Select the **master** branch for collaboration.     
-        * Set **/factorydata** as the root folder
+        * Set **/azure-data-pipeline/factorydata** as the root folder
     * Branch to import resource into: Select **Use existing** and **master**
 
 ### Update key vault linked service in Azure Data Factory
