@@ -33,43 +33,48 @@ Default authentication header used is: "Basic {{ #base64 endpoint.username \":\"
 {
     "id": "endpoint-auth-scheme-basic",
     "description": "Basic Authentication based endpoint authentication scheme",
-    "type": "ms.vss-endpoint.service-endpoint-auth-scheme",
+    "type": "ms.vss-endpoint.service-endpoint-type",
     "targets": [
-        "ms.vss-endpoint.endpoint-auth-schemes"
+        "ms.vss-endpoint.endpoint-types"
     ],
     "properties": {
         "name": "UsernamePassword",
         "displayName": "i18n:Basic Authentication",
-        "headers": [
+        "authenticationSchemes": [
             {
-                "name": "Authorization",
-                "value": "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
-            }
-        ],
-        "inputDescriptors": [
-            {
-                "id": "username",
-                "name": "i18n:Username",
-                "description": "i18n:Username for connecting to the endpoint",
-                "inputMode": "textbox",
-                "isConfidential": false,
-                "validation": {
-                    "isRequired": true,
-                    "dataType": "string",
-                     "maxLength": 300
-                }
-            },
-            {   
-                "id": "password",
-                "name": "i18n:Password",
-                "description": "i18n:Password for connecting to the endpoint",
-                "inputMode": "passwordbox",
-                "isConfidential": true,
-                "validation": {
-                    "isRequired": true,
-                    "dataType": "string",
-                    "maxLength": 300
-                }
+                "type": "ms.vss-endpoint.endpoint-auth-scheme-basic",
+                "headers": [
+                    {
+                        "name": "Authorization",
+                        "value": "Basic {{ #base64 endpoint.username \":\" endpoint.password }}"
+                    }
+                ],
+                "inputDescriptors": [
+                    {
+                        "id": "username",
+                        "name": "i18n:Username",
+                        "description": "i18n:Username for connecting to the endpoint",
+                        "inputMode": "textbox",
+                        "isConfidential": false,
+                        "validation": {
+                            "isRequired": true,
+                            "dataType": "string",
+                             "maxLength": 300
+                        }
+                    },
+                    {   
+                        "id": "password",
+                        "name": "i18n:Password",
+                        "description": "i18n:Password for connecting to the endpoint",
+                        "inputMode": "passwordbox",
+                        "isConfidential": true,
+                        "validation": {
+                            "isRequired": true,
+                            "dataType": "string",
+                            "maxLength": 300
+                        }
+                    }
+                ]
             }
         ]
     }
@@ -86,31 +91,36 @@ Default authentication header used is: {{endpoint.apitoken}}
 {
     "id": "endpoint-auth-scheme-token",
     "description": "i18n:Token based endpoint authentication scheme",
-    "type": "ms.vss-endpoint.service-endpoint-auth-scheme",
+    "type": "ms.vss-endpoint.service-endpoint-type",
     "targets": [
-        "ms.vss-endpoint.endpoint-auth-schemes"
+        "ms.vss-endpoint.endpoint-types"
     ],
     "properties": {
         "name": "Token",
         "displayName": "i18n:Token Based Authentication",
-        "headers": [
+        "authenticationSchemes": [
             {
-                "name": "Authorization",
-                "value": "{{endpoint.apitoken}}"
-            }
-        ],
-        "inputDescriptors": [
-            {
-                "id": "apitoken",
-                "name": "i18n:API Token",
-                "description": "i18n:API Token for connection to endpoint",
-                "inputMode": "textbox",
-                "isConfidential": true,
-                "validation": {
-                    "isRequired": true,
-                    "dataType": "string",
-                    "maxLength": 300
-                }
+                "type": "ms.vss-endpoint.endpoint-auth-scheme-token",
+                "headers": [
+                    {
+                        "name": "Authorization",
+                        "value": "{{endpoint.apitoken}}"
+                    }
+                ],
+                "inputDescriptors": [
+                    {
+                        "id": "apitoken",
+                        "name": "i18n:API Token",
+                        "description": "i18n:API Token for connection to endpoint",
+                        "inputMode": "textbox",
+                        "isConfidential": true,
+                        "validation": {
+                            "isRequired": true,
+                            "dataType": "string",
+                            "maxLength": 300
+                        }
+                    }
+                ]
             }
         ]
     }
@@ -127,24 +137,29 @@ The value of certificate has to be provided in the text area.
 {
     "id": "endpoint-auth-scheme-cert",
     "description": "i18n:Creates a certificate-based endpoint authentication scheme",
-    "type": "ms.vss-endpoint.service-endpoint-auth-scheme",
+    "type": "ms.vss-endpoint.service-endpoint-type",
     "targets": [
-        "ms.vss-endpoint.endpoint-auth-schemes"
+        "ms.vss-endpoint.endpoint-types"
     ],
     "properties": {
         "name": "Certificate",
         "displayName": "i18n:Certificate Based",
-        "inputDescriptors": [
+        "authenticationSchemes": [
             {
-                "id": "certificate",
-                "name": "i18n:Certificate",
-                "description": "Content of the certificate",
-                "inputMode": "TextArea",
-                "isConfidential": true,
-                "validation": {
-                    "isRequired": true,
-                    "dataType": "string"
-                }
+                "type": "ms.vss-endpoint.endpoint-auth-scheme-cert,
+                "inputDescriptors": [
+                    {
+                        "id": "certificate",
+                        "name": "i18n:Certificate",
+                        "description": "Content of the certificate",
+                        "inputMode": "TextArea",
+                        "isConfidential": true,
+                        "validation": {
+                            "isRequired": true,
+                            "dataType": "string"
+                        }
+                    }
+                ]
             }
         ]
     }
