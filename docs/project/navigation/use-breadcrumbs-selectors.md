@@ -163,7 +163,7 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 
 ## Directories 
 
-Directories provide a filterable list of all artifacts defined for a service area. Often times when you navigate to an application, it will open the application's directory. 
+Directories provide a filterable list of all artifacts defined for a service area. Often when you navigate to an application, it will open the application's directory. 
 
 For example, here is the **Boards>Boards** directory. 
 
