@@ -25,21 +25,15 @@ monikerRange: '>= tfs-2015'
 > This topic covers classic release pipelines. If you want to use YAML to author CI/CD pipelines, then see [Create your first pipeline](../create-first-pipeline.md).
 ::: moniker-end
 
-
-**Release pipelines** in Azure Pipelines
-and Team Foundation Server (TFS 2015.2 and later) help your team **continuously deliver** software
-to your customers at a faster pace and with lower risk.
-You can **fully automate** the testing and delivery of your software
-in multiple stages all the way to production, or set up
+**Release pipelines** in Azure Pipelines and Team Foundation Server (TFS 2015.2 and later) help your team **continuously deliver** software to your customers at a faster pace and with lower risk. You can **fully automate** the testing and delivery of your software in multiple stages all the way to production, or set up
 semi-automated processes with **approvals** and **on-demand deployments**.
 
-![A release pipeline defines the stages for deployment](media/what-is-release-management/understand-rm-01.1.png)
+> [!div class="mx-imgBorder"]  
+> ![Release pipeline overview](media/what-is-release-management/understand-rm-01.1.png)
 
-[What's the difference between a release pipeline and a release?](releases.md)
+See [Releases in Azure Pipelines](releases.md) to understand releases and deployments and watch the below video to see release pipelines in action.
 
-* **[Watch this video](https://channel9.msdn.com/events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101)** - see Azure Pipelines releases in action.
-
-  <p><iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe></p>
+  > [!VIDEO https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A101/player]
 
 <a name="howrmworks"></a>
 ## How do release pipelines work?
