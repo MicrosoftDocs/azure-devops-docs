@@ -14,22 +14,24 @@ A [virtual machine scale set](https://docs.microsoft.com/azure/virtual-machine-s
 
 VMs are created as needed in a scale set. You define rules to control how and when VMs are added or removed from the scale set. These rules can be triggered based on metrics such as CPU load, memory usage, or network traffic.
 
-In this tutorial, you deploy a virtual machine scale set and deploy it using DevOps Pipelines. You learn how to:
+In this tutorial, you deploy a virtual machine scale set with Java VMs and deploy it using DevOps Pipelines. You learn how to:
 
 > [!div class="checklist"]
-> * Use cloud-init to create an app to scale
+> * Create a Java virtual machine
 > * Create a virtual machine scale set
 > * Increase or decrease the number of instances in a scale set
 > * Create autoscale rules
 > * View connection info for scale set instances
 > * Use data disks in a scale set
 
-
 ## Prerequisites
 
 Before you begin, you need:
 - An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 - An active Azure DevOps organization. [Sign up for Azure Pipelines](../../../get-started/pipelines-sign-up.md).
+
+
+## Create a Java app
 
 
 ## Create an app to scale
