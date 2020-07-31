@@ -8,7 +8,8 @@ manager: jillfra
 ms.assetid: C426EDB7-675F-41D7-9AFF-44540D6402A6
 ms.author: atulmal
 author: azooinmyluggage
-ms.date: 09/24/2019
+ms.date: 09/24/2019 
+ms.custom: devx-track-azurecli
 monikerRange: azure-devops
 ---
 
