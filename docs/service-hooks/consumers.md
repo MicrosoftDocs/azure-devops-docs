@@ -38,7 +38,7 @@ This action sends a generic, template notification to the specified Azure Notifi
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **notificationHubName**
@@ -61,7 +61,7 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **queueName**
@@ -94,7 +94,7 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **topicName**
@@ -315,7 +315,7 @@ Post a message about the event to a room in HipChat. [Learn more](https://go.mic
     * Required: **Yes**
   * **notifyRoom**
     * Notify room participants
-    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc). Each recipient's notification preferences are taken into account.
+    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc.). Each recipient's notification preferences are taken into account.
     * Data type: **boolean**
     * Required: **No**
   * **showDetails**
