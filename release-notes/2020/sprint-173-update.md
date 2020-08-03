@@ -27,7 +27,7 @@ Check out the [Features](#features) list below for more information.
 ## Azure Boards
 [!INCLUDE [sprint-173-update-links](includes/boards/sprint-173-update.md)]
 
-### Azure Repos
+## Azure Repos
 [!INCLUDE [sprint-172-update-links](includes/repos/sprint-173-update.md)]
 
 ## Azure Pipelines
