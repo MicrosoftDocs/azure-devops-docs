@@ -165,19 +165,17 @@ Then, when you create a new release, you can edit the values for these variables
 > ![Editing variables when a release is created and queued](media/what-is-release-management/populate-release-edit-variables.png)
 
 <a name="reportstatus"></a>
+
 ## How do I integrate and report release status?
 
-The current status for a release can be reported back in the source repository.
-In the **Options** tab of a release pipeline, open the **Integrations** page.
+The current status for a release can be reported back in the source repository. In the **Options** tab of a release pipeline, open the **Integrations** page.
 
-![Setting the options for reporting status](media/what-is-release-management/report-options.png)
+> > [!div class="mx-imgBorder"]
+> ![Setting the options for reporting status](media/what-is-release-management/report-options.png)
 
 **Report deployment status to the repository host**
 
-If your sources are in an Azure Repos Git repository in your project,
-this option displays a badge on the Azure Repos pages to indicate where the
-specific commit was deployed and whether the deployment is passing or failing.
-This improves the traceability from code commit to deployment. 
+If your sources are in an Azure Repos Git repository in your project, this option displays a badge on the Azure Repos pages to indicate where the specific commit was deployed and whether the deployment is passing or failing. This improves the traceability from code commit to deployment. 
 
 The deployment status is displayed in the following sections of Azure Repos:
 
@@ -185,21 +183,14 @@ The deployment status is displayed in the following sections of Azure Repos:
 * **Commits**: Indicates the deployment status for each commit (this requires the continuous integration (CD) trigger to be enabled for your release).
 * **Branches**: Indicates the status of the latest deployment for each branch.
 
-If a commit is deployed to multiple release pipelines (with multiple stages), each has an entry in the badge
-with the status shown for each stage. By default, when you create a release pipeline, deployment status is
-posted for all stages. However, you can selectively choose the stages for which deployment status should be
-displayed in the status badge (for example, show only the production stage). Your team members can click the
-status badge to view the latest deployment status for each of the selected stages of the release pipelines.
+If a commit is deployed to multiple release pipelines (with multiple stages), each has an entry in the badge with the status shown for each stage. By default, when you create a release pipeline, deployment status is posted for all stages. However, you can selectively choose the stages for which deployment status should be displayed in the status badge (for example, show only the production stage). Your team members can click the status badge to view the latest deployment status for each of the selected stages of the release pipelines.
 
 > [!NOTE]
-> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to
-> automatically publish the deployment status to your repository. However, you can still use the
-> "Enable the Deployment status badge" option described below to show deployment status within your version control system.
+> If your source is not an Azure Repos Git repository, you cannot use Azure Pipelines or TFS to automatically publish the deployment status to your repository. However, you can still use the _Enable the Deployment status badge_ option described below to show deployment status within your version control system.
 
 **Report deployment status to Work**
 
-Select this option if you want to create links to all work items that represent associated changes
-to the source when a release is complete.
+Select this option if you want to create links to all work items that represent associated changes to the source when a release is complete.
 
 **Enable the deployment status badge**
 
