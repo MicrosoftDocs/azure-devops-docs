@@ -3,7 +3,7 @@ title: Security through templates
 description: Using template features to improve pipeline security.
 ms.assetid: 73d26125-e3ab-4e18-9bcd-387fb21d3568
 ms.reviewer: macoope
-ms.date: 03/11/2020
+ms.date: 08/03/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -31,7 +31,7 @@ parameters:
   type: stepList
   default: []
 steps:
-- ${{ each step in parameters.usersteps }}
+- ${{ each step in parameters.usersteps }}:
   - ${{ step }}
 ```
 
