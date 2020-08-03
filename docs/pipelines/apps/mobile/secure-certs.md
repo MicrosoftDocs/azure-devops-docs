@@ -9,7 +9,7 @@ ms.date: 01/16/2018
 monikerRange: '>= tfs-2017 < tfs-2018'
 ---
 
-# Sign your mobile app
+# Sign your mobile app in your Xcode, Xamarin.iOS, Android, or Xamarin.Android build
 
 **[Azure Pipelines](app-signing.md) | [TFS 2018](app-signing.md) | TFS 2017.2**
 
