@@ -51,6 +51,3 @@ In addition to these changes, the macOS 10.14 image will be added to [the virtua
 When you create a draft pull request in Azure Repos, we wouldn't trigger a PR validation pipeline configured in your branch policy. We consider a draft pull request to be just that - a draft for which we shouldn't automatically run validations. While this use case worked for Azure Repos, the same behavior didn't hold for GitHub repos. 
 
 With this change, we're making the experience consistent for GitHub repos as well. When you create a [draft pull request](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) in GitHub, we won't start a pipeline automatically even if you configure a pull request trigger for the target branch. In order to validate your changes in a draft pull request, you can manually start a pipeline pointing to the `ref` of the pull request.
-
-    
-
