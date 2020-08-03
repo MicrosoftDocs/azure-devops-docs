@@ -24,7 +24,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2020 through July 31
 
 ### Updated articles
 
-- [Add a build or release task](/azure/devops/extend/develop/add-build-task) - [PUBLIC_MOVE] commit from public PR 8694
+- [Add a build or release task](/azure/devops/extend/develop/add-build-task)
 - [Service endpoint authentication schemes](/azure/devops/extend/develop/auth-schemes)
   - Authentication schema examples
   - Updated JSON examples
@@ -43,7 +43,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2020 through July 31
 - [Create a project in Azure DevOps](/azure/devops/organizations/projects/create-project) - Updates to Settings, CLI for Azure DevOps Server 2020
 - [Add a team, move from one default team to several teams](/azure/devops/organizations/settings/add-teams) - Updates to Settings, CLI for Azure DevOps Server 2020
 - [Rename or remove a team](/azure/devops/organizations/settings/rename-remove-team) - Updates to Settings, CLI for Azure DevOps Server 2020
-- [Define area paths and assign to a team](/azure/devops/organizations/settings/set-area-paths) - Update area paths monikers, remove preview
+- [Define area paths and assign to a team](/azure/devops/organizations/settings/set-area-paths) - Remove preview
 - [Define Iteration Paths and configure team iterations](/azure/devops/organizations/settings/set-iteration-paths-sprints) - Update area paths monikers, remove preview
 - [About process customization and inherited processes](/azure/devops/organizations/settings/work/inheritance-process-model) - Updates for Azure DevOps Server 2020.
 
