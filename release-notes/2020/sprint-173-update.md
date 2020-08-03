@@ -4,12 +4,12 @@ author: sid-ah
 ms.author: simerzou
 ms.technology: devops-release-notes
 ms.date: 08/03/2020
-description: With Sprint 173 Update, we have introduced a new option that allows customers to set their default branch name just by following a few easy steps.
+description: With Sprint 173 Update, we have introduced a new option that allows customers to set a custom default branch name for all new repositories.
 ---
 
-# Introducing default naming branch 
+# Customize your default branch name 
 
-In this sprint, we have introduced a new option that allows customers to set their **default branch name** just by following a few easy steps.
+In this sprint, we have introduced a new option that allows customers to set a **custom default branch name** for all new repositories.
 
 Check out the [Features](#features) list below for more information.
 
