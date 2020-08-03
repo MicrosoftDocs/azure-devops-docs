@@ -16636,8 +16636,8 @@
 },
 {
     "source_path": "docs/pipelines/release/deploy-mulitple-branches.md",
-    "redirect_url": "/docs/pipelines/release/deploy-multiple-branches ",
-    "redirect_document_id": true
+    "redirect_url": "/docs/pipelines/release/deploy-multiple-branches",
+    "redirect_document_id": false
 }
  ]
 }
