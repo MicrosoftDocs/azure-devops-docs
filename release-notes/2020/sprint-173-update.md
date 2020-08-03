@@ -15,7 +15,6 @@ Check out the [Features](#features) list below for more information.
 
 ## Features
 
-
 ### Azure Boards
 [!INCLUDE [sprint-172-update-links](includes/boards/sprint-173-update-links.md)]
 
