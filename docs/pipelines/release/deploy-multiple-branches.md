@@ -30,8 +30,8 @@ You'll need:
 
 1. Select the **Continuous deployment trigger** icon in the **Artifacts** section to open up the _continuous deployment trigger_ panel and switch the button to **Enabled**.
 
-  > [!div class="mx-imgBorder"]  
-  > ![CI trigger](media/deploy-multiple-branches/ci-trigger.png)
+    > [!div class="mx-imgBorder"]  
+    > ![CI trigger](media/deploy-multiple-branches/ci-trigger.png)
 
 1. Add a stage with a name **Dev**. This stage will be triggered when a build artifact is published from the dev branch.
 
@@ -39,13 +39,13 @@ You'll need:
 
 1. Enable the **Artifact filters**. Select Add and specify your artifact. In the **Build branch** select the dev branch then Save.
 
-  > [!div class="mx-imgBorder"]  
-  > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter1.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter1.png)
 
 1. Add another stage and name it **Prod**. This stage will be triggered when a build artifact is published from the master branch. Repeat steps 4-5 and replace **Build branch** to master.
 
-  > [!div class="mx-imgBorder"]  
-  > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter2.png)
+    > [!div class="mx-imgBorder"]  
+    > ![Select Artifact filter](media/deploy-multiple-branches/artifact-filter2.png)
 
 1. Add your appropriate deployment tasks in each stage.
 
