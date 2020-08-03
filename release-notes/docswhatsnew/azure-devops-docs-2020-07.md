@@ -67,6 +67,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2020 through July 31
 - [Release triggers](/azure/devops/pipelines/release/triggers) - Release triggers
 - [Build GitHub repositories](/azure/devops/pipelines/repos/github) - Updates
 - [Use multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout) - Various fixes
+- [Stage templates in Azure Pipelines](/azure/devops/pipelines/release/env-templates) - Updates
 
 ## Project
 
