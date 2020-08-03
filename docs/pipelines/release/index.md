@@ -118,6 +118,7 @@ Check out the following articles to learn how to:
 
 
 <a name="draftrelease"></a>
+
 ## What is a draft release?
 
 ::: moniker range="azure-devops"
@@ -128,35 +129,40 @@ Draft releases are deprecated in Azure Pipelines because you can change variable
 
 ::: moniker range="<= azure-devops-2019"
 
-Creating a draft release allows you to edit some of the settings for the release and the tasks,
-depending on your role permissions, before starting the deployment.
+Creating a draft release allows you to edit some of the settings for the release and the tasks, depending on your role permissions, before starting the deployment.
 The changes apply only to that release, and do not affect the settings of the original pipeline.
 
 Create a draft release using the "..." ellipses link in the list of releases:
 
-![Create a draft release in the list of releases](media/what-is-release-management/draft-release.png)
+> [!div class="mx-imgBorder"]
+> ![Create a draft release in the list of releases](media/what-is-release-management/draft-release.png)
 
 ... or the **Release** drop-down in the pipeline definition page: 
 
-![Create a draft release in the pipeline definition page](media/what-is-release-management/new-draft-release.png)
+> [!div class="mx-imgBorder"]
+> ![Create a draft release in the pipeline definition page](media/what-is-release-management/new-draft-release.png)
 
 After you finish editing the draft release, choose **Start** from the draft release toolbar. 
 
-![Start a draft release](media/what-is-release-management/start-draft.png)
+> [!div class="mx-imgBorder"]
+> ![Start a draft release](media/what-is-release-management/start-draft.png)
 
 ::: moniker-end
 
 <a name="editvariables"></a>
+
 ## How do I specify variables I want to edit when a release is created?
 
 In the **Variables** tab of a release pipeline, when you add new variables, set the **Settable at release time** option for those
 you want to be able to edit when a release is created and queued.
 
-![Specifying variables to be edited when a release is created and queued](media/what-is-release-management/define-release-edit-variables.png)
+> [!div class="mx-imgBorder"]
+> ![Specifying variables to be edited when a release is created and queued](media/what-is-release-management/define-release-edit-variables.png)
 
 Then, when you create a new release, you can edit the values for these variables.
 
-![Editing variables when a release is created and queued](media/what-is-release-management/populate-release-edit-variables.png)
+> [!div class="mx-imgBorder"]
+> ![Editing variables when a release is created and queued](media/what-is-release-management/populate-release-edit-variables.png)
 
 <a name="reportstatus"></a>
 ## How do I integrate and report release status?
