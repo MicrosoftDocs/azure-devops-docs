@@ -6,6 +6,15 @@ ms.date: 08/03/2020
 ms.topic: include
 ---
 
+### Pipelines images announcements
+
+> [!NOTE]
+> We’re constantly working to improve your experience using Azure Pipelines. To learn more about upcoming updates on our windows/linux/mac images updates please check here:
+>
+> - Window - https://github.com/actions/virtual-environments/blob/main/images/win/announcements.md
+> - Linux - https://github.com/actions/virtual-environments/blob/main/images/linux/announcements.md
+
+
 ### Multi-repo triggers
 
 You can specify multiple repositories in one YAML file and cause a pipeline to trigger by updates to any of the repositories. This feature is useful, for instance, in the following scenarios:
