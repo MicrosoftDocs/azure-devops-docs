@@ -67,7 +67,7 @@ You can add fields and specify the group and page where they should appear. Also
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 
-1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
@@ -243,11 +243,11 @@ You can choose to show or hide an inherited field or a custom control from appea
 
 
 ::: moniker range=">= azure-devops-2020"
-### Hide a field or custom control
+### Hide an field or custom control
 ::: moniker-end 
 
 ::: moniker range="azure-devops-2019"
-### Hide a inherited field or custom control
+### Hide an inherited field or custom control
 ::: moniker-end 
 
 1. Open the context menu for the field or control and choose **Hide from layout**.
@@ -302,7 +302,7 @@ Deleting a field deletes all data associated with that field, including historic
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
-- [Add or modify a custom work item type](customize-process-wit.md)
+- [Add or modify a custom work item type](customize-process-work-item-type.md)
 - [Customize the web layout](customize-process-form.md)
 - [Customize a project using an inherited process](customize-process.md)    
 - [Customize cards on boards](../../../boards/boards/customize-cards.md)  

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: LocalVersions Command
 ms.assetid: 5531edc7-0333-43eb-bea0-59db9bc35c33
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

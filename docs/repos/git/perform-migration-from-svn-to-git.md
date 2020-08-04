@@ -4,8 +4,6 @@ description: Learn how to migrate from Subversion (SVN) to Git, including histor
 ms.topic: article
 ms.technology: devops-code-git
 ms.date: 06/04/2019
-ms.author: hkamel
-author: hkamel
 monikerRange: '>= tfs-2013'
 ---
 
@@ -128,7 +126,7 @@ In this step, you will create a bare repository and make its default branch matc
     ```
     git init --bare c:\new-bare.git
     cd c:\new-bare.git
-    git symbolic-ref HEAD refs/heads/trunk
+    git symbolic-ref HEAD refs/heads/svn/trunk
     ```
 
 2. Push the local Git repository to the new bare Git repository
@@ -145,7 +143,7 @@ Your main development branch will be named "trunk", which matches the name it wa
    
     ```
     cd c:\new-bare.git
-    git branch -m trunk master
+    git branch -m svn/trunk master
     ```
 4. Clean up branches and tags
 git-svn makes all of Subversions tags into very-short branches in Git of the form "tags/name". You'll want to convert all those branches into actual Git tags or delete them.
@@ -154,7 +152,7 @@ git-svn makes all of Subversions tags into very-short branches in Git of the for
 
 ```
 cd c:\new-bare.git
-git for-each-ref --format='%(refname)' refs/heads/tags | % { $_.Replace('refs/heads/tags/','') } | % { git tag $_ "refs/heads/tags/$_"; git branch -D "tags/$_" }
+git for-each-ref --format='%(refname)' refs/heads/svn/tags | % { $_.Replace('refs/heads/svn/tags/','') } | % { git tag $_ "refs/heads/svn/tags/$_"; git branch -D "svn/tags/$_" }
 ```
 
 ## Advanced migrations

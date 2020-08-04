@@ -8,14 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/22/2019
+ms.date: 07/27/2020
 ---
-
-
 
 # Look up administrators or an organization owner 
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 An administrator or organization Owner can give you access to select features or functions, or change your permissions. In this article, learn how to look up administrators or organization Owners.
 
@@ -78,7 +76,7 @@ Choose the Project Administrators group from the **Project Settings > Permission
 ::: moniker-end    
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -100,7 +98,7 @@ Choose the Project Administrators group from the **Project Settings > Permission
 
 1. Open the web portal and choose your project. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open **Project Settings**.
+2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open **Project Settings**.
 
    ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
@@ -137,7 +135,7 @@ To find out who is a member of the Project Collection Administrators group, chec
 
 ::: moniker-end   
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 To find out who is a member, check the **Security** settings at the collection level. 
 
@@ -172,7 +170,7 @@ To find out who is a member, check the **Security** settings at the collection l
 
 ## Show the organization owner 
 
-1. Choose the ![ ](/azure/devops/media/icons/project-icon.png) Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. Choose the :::image type="icon" source="/azure/devops/media/icons/project-icon.png" border="false"::: Azure DevOps logo to open **Projects**, and then choose ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
 
 	![Open organization settings](../../media/open-organization-settings-preview.png)  
 

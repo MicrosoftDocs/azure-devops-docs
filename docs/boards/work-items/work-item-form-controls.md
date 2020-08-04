@@ -53,7 +53,7 @@ As the following image shows, each work item form comes with a number of control
 |--------------------------|-------------------------------|
 | ![Copy to clipboard icon](../backlogs/media/icon-copy-to-clipboard.png) | Copy URL of work item to clipboard (appears on hover over work item title)  |
 | ![Discussions icon](../media/icons/icon-discussions-wi.png) | Go to Discussions section  |
-| ![Actions icon](../media/icons/actions-icon.png) | Open Actions menu for additional work item tasks           |
+|   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  | Open Actions menu for additional work item tasks           |
 | ![Refresh icon](../media/icons/icon-refresh-wi.png) | Refresh work item with latest changes  |  
 | ![Undo icon](../media/icons/icon-undo-changes-wi.png) | Revert changes to work item           |  
 | ![History tab icon](../media/icons/icon-history-tab-wi.png) | Open History tab        |
@@ -61,13 +61,13 @@ As the following image shows, each work item form comes with a number of control
 | ![Attachment tab icon](../backlogs/media/icon-attachments-tab-wi.png) | Open Attachments tab   |
 | ![full screen icon](../media/icons/fullscreen_icon.png) / ![exit full screen icon](../media/icons/exitfullscreen_icon.png)     | Enter or exit full display mode of a section within the form   |
 |![Collapse section icon](../media/icons/collapse-wi-section.png)/![Expand section icon](../media/icons/expand-wi-section.png) | Collapse or expand a section within the form   |  
-| ![New linked work item icon](../media/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  |  
-| ![Change work item type icon](../media/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  | 
-| ![Change project icon](../media/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  | 
-| ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  |  
-| ![Email icon](../media/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  |  
-| ![Delete icon](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  | 
-| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under ![Actions icon](../media/icons/actions-icon.png) Actions menu)  | 
+| ![New linked work item icon](../media/icons/new-linked-work-item.png) | Add new work item and link to existing work item (May appear under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
+| ![Change work item type icon](../media/icons/change-type-icon.png) | [Change work item type](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
+| ![Change project icon](../media/icons/change-team-project-icon.png) | [Move work item to a different project](../backlogs/remove-delete-work-items.md) (Appears under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
+| ![Clone icon](../media/icons/clone-icon.png) | [Copy work item and optionally change work item type](../backlogs/copy-clone-work-items.md#copy-clone) (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
+| ![Email icon](../media/icons/email-icon.png) | [Email work item](email-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  |  
+| ![Delete icon](../media/icons/delete_icon.png) | [Recycle work item](../backlogs/remove-delete-work-items.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
+| ![Storyboard icon](../media/icons/storyboard-icon.png) | [Storyboard with PowerPoint](../backlogs/office/storyboard-your-ideas-using-powerpoint.md)  (Appears  under   :::image type="icon" source="../media/icons/actions-icon.png" border="false":::  Actions menu)  | 
 
 <a id="update-work-status">  </a>
 
@@ -165,7 +165,7 @@ In addition, the Links control tab provides access to all links made to the work
 
 ## Copy the URL
 
-From the web portal, simply copy the URL from the web browser address or hover over the title and then click the ![  ](../../media/icons/copy-clone-icon.png) copy icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
+From the web portal, simply copy the URL from the web browser address or hover over the title and then click the :::image type="icon" source="../../media/icons/copy-clone-icon.png" border="false"::: copy icon. For other copy options, see [Copy or clone work items](../backlogs/copy-clone-work-items.md). 
 
 ![Copy hyperlink for a work item from web portal](../backlogs/media/add-work-item-copy-URL.png) 
 

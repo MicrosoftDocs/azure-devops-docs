@@ -1,12 +1,12 @@
 ---
-title: Check out multiple repositories in your pipeline
+title: Use multiple repositories in your pipeline
 description: Learn how to check out multiple repositories in your pipeline
 ms.topic: reference
 ms.date: 07/22/2020
 monikerRange: "> azure-devops-2019"
 ---
 
-# Check out multiple repositories in your pipeline
+# Use multiple repositories in your pipeline
 
 [!INCLUDE [version-team-services](../includes/version-team-services.md)]
 
@@ -28,6 +28,10 @@ The following combinations of `checkout` steps are supported.
 - If there is a single `checkout: self` step, the current repository is checked out.
 - If there is a single `checkout` step that isn't `self` or `none`, that repository is checked out instead of `self`.
 - If there are multiple `checkout` steps, each designated repository is checked out to a folder named after the repository, unless a different `path` is specified in the `checkout` step. To check out `self` as one of the repositories, use `checkout: self` as one of the `checkout` steps.
+
+> [!NOTE]
+> When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time.
+> For more information, see [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository) in the [FAQ](#faq) section.
 
 ### Repository declared using a repository resource
 
@@ -58,7 +62,7 @@ resources:
     name: OtherProject/MyAzureReposGitRepo
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -89,23 +93,6 @@ steps:
 > [!NOTE]
 > In the previous example, the `self` repository is not checked out. If you specify any `checkout` steps, you must include `checkout: self` in order for `self` to be checked out.
 
-## Authorize resources
-
-When you check out other Azure Repos Git repositories using multi-repo checkout, you may be prompted to authorize access to that resource before the pipeline runs for the first time. You can perform this authorization from the pipeline run summary page. 
-
-:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
-
-:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
-
-Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
-
-:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
-
-:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
-
-For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).
-
-
 ## Checkout path
 
 Unless a `path` is specified in the `checkout` step, source code is placed in a default directory. This directory is different depending on whether you are checking out a single repository or multiple repositories. 
@@ -134,7 +121,7 @@ If you are using inline syntax, designate the ref by appending `@<ref>`. For exa
 - checkout: git://MyProject/MyRepo@refs/tags/MyTag # checks out the commit referenced by MyTag.
 ```
 
-When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/ branch.
+When using a repository resource, specify the ref using the `ref` property. The following example checks out the `features/tools/` branch.
 
 ```yaml
 resources:
@@ -146,3 +133,119 @@ resources:
     ref: features/tools
 ```
 
+## Triggers
+
+You can trigger a pipeline when an update is pushed to the `self` repository or to any of the repositories declared as resources. This is useful, for instance, in the following scenarios:
+
+- You consume a tool or a library from a different repository. You want to run tests for your application whenever the tool or library is updated.
+- You keep your YAML file in a separate repository from the application code. You want to trigger the pipeline every time an update is pushed to the application repository.
+
+> [!NOTE]
+> Repository resource triggers only work for Azure Repos Git repositories at present. They do not work for GitHub or Bitbucket repository resources.
+
+If you do not specify a `trigger` section in a repository resource, then the pipeline won't be triggered by changes to that repository. If you specify a `trigger` section, then the behavior for triggering is similar to how CI triggers work for the self repository.
+
+If you specify a `trigger` section for multiple repository resources, then a change to any of them will start a new run.
+
+The trigger for `self` repository can be defined in a `trigger` section at the root of the YAML file, or in a repository resource for `self`. For example, the following two are equivalent.
+
+```yaml
+trigger:
+- main
+
+steps:
+...
+```
+
+```yaml
+resources:
+  repositories:
+  - repository: self
+    type: git
+    name: MyProject/MyGitRepo
+    trigger:
+    - main
+
+steps:
+...
+```
+
+> [!NOTE]
+> It is an error to define the trigger for `self` repository twice. Do not define it both at the root of the YAML file and in the `resources` section.
+
+When a pipeline is triggered, Azure Pipelines has to determine the version of the YAML file that should be used and a version for each repository that should be checked out. If a change to the `self` repository triggers a pipeline, then the commit that triggered the pipeline is used to determine the version of the YAML file. If a change to any other repository resource triggers the pipeline, then the latest version of YAML from the **default branch** of `self` repository is used.
+
+When an update to one of the repositories triggers a pipeline, then the following variables are set based on triggering repository:
+
+- `Build.Repository.ID`
+- `Build.Repository.Name`
+- `Build.Repository.Provider`
+- `Build.Repository.Uri`
+- `Build.SourceBranch`
+- `Build.SourceBranchName`
+- `Build.SourceVersion`
+- `Build.SourceVersionMessage`
+
+For the triggering repository, the commit that triggered the pipeline determines the version of the code that is checked out. For other repositories, the `ref` defined in the YAML for that repository resource determines the default version that is checked out.
+
+Consider the following example, where the `self` repository contains the YAML file and repositories `A` and `B` contain additional source code.
+
+```yaml
+trigger:
+- main
+- feature
+
+resources:
+  repositories:
+  - repository: A
+    type: git
+    name: MyProject/A
+    ref: main
+    trigger:
+    - main
+
+  - repository: B
+    type: git
+    name: MyProject/B
+    ref: release
+    trigger:
+    - main
+    - release
+```
+
+The following table shows which versions are checked out for each repository by a pipeline using the above YAML file, unless you explicitly override the behavior during `checkout`.
+
+| Change made to | Pipeline triggered | Version of YAML | Version of `self` | Version of `A` | Version of `B` |
+|----------------|--------------------|-----------------|-------------------|----------------|----------------|
+| `main` in `self` | Yes | commit from `main` that triggered the pipeline | commit from `main` that triggered the pipeline | latest from `main` | latest from `release` |
+| `feature` in `self` | Yes | commit from `feature` that triggered the pipeline | commit from `feature` that triggered the pipeline | latest from `main` | latest from `release` |
+| `main` in `A` | Yes | latest from `main` | latest from `main` | commit from `main` that triggered the pipeline | latest from `release` |
+| `main` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `main` that triggered the pipeline |
+| `release` in `B` | Yes | latest from `main` | latest from `main` | latest from `main` | commit from `release` that triggered the pipeline |
+
+You can also trigger the pipeline when you create or update a pull request in any of the repositories. To do this, declare the repository resources in the YAML files as in the examples above, and configure a branch policy in the repository (Azure Repos only).
+
+## FAQ
+
+* [Why can't I check out a repository from another project? It used to work.](#why-cant-i-check-out-a-repository-from-another-project-it-used-to-work)
+* [Why am I am prompted to authorize resources the first time I try to check out a different repository?](#why-am-i-am-prompted-to-authorize-resources-the-first-time-i-try-to-check-out-a-different-repository)
+
+### Why can't I check out a repository from another project? It used to work.
+
+Azure Pipelines provides a **Limit job authorization scope to current project for non-release pipelines** setting, that when enabled, doesn't permit the pipeline to access resources outside of the project that contains the pipeline. This setting can be set at either the organization or project level. If this setting is enabled, you won't be able to check out a repository in another project unless you explicitly grant access. For more information, see [Build job authorization scope](../build/options.md#build-job-authorization-scope).
+
+### Why am I am prompted to authorize resources the first time I try to check out a different repository?
+
+When you check out Azure Repos Git repositories other than the one containing the pipeline, you may be prompted to authorize access to that resource before the pipeline runs for the first time. These prompts are displayed on the pipeline run summary page. 
+
+:::image type="content" source="media/multi-repo-checkout/pipeline-resource-prompt.png" alt-text="This pipeline needs permission to access a resource":::
+
+:::image type="content" source="media/multi-repo-checkout/authorize-resource-prompt.png" alt-text="Authorize resource":::
+
+Choose **View** or **Authorize resources**, and follow the prompts to authorize the resources.
+
+:::image type="content" source="media/multi-repo-checkout/waiting-for-review.png" alt-text="Waiting for review":::
+
+:::image type="content" source="media/multi-repo-checkout/permit-access.png" alt-text="Permit access":::
+
+For more information, see [Troubleshooting authorization for a YAML pipeline](../process/resources.md#troubleshooting-authorization-for-a-yaml-pipeline).

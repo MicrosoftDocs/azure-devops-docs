@@ -41,7 +41,7 @@ The new Test Plans page has total of 6 sections of which the first 4 are new, wh
 3. **Define tab**: Collate, add and manage test cases in a test suite of choice via this tab.
 4. **Execute tab**: Assign and execute tests via this tab or locate a test result to drill into.
 5. **Chart tab**: Track test execution and status via charts which can also be pinned to dashboards.
-6. **Extensibility**: Supports the [current extensibility points](https://docs.microsoft.com/azure/devops/extend/reference/targets/overview?view=azure-devops) within the product.
+6. **Extensibility**: Supports the [current extensibility points](/azure/devops/extend/overview) within the product.
 
 Lets take a broad stroke view of these new sections below.
 

@@ -199,7 +199,7 @@ Once you've defined your product backlog, you can use the following controls to 
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Settings icon](../../media/icons/blue-gear.png)   
+       :::image type="icon" source="../../media/icons/blue-gear.png" border="false":::    
    :::column-end:::
    :::column span="":::
       Settings

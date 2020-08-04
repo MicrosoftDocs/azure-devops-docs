@@ -148,7 +148,7 @@ ms.topic: include
 
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 <table>
 <tr valign="bottom">
 <th width="310px">Task</th>

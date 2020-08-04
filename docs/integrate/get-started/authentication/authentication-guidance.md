@@ -13,6 +13,7 @@ ms.date: 04/06/2020
 
 # Choosing the right authentication mechanism
 
+[!INCLUDE [version-all](../../../includes/version-all.md)]
 
 For applications that interface with Azure DevOps Services, you must authenticate to gain access to resources like REST APIs. We understand that Azure DevOps Services offers many different ways to authenticate your application. This article provides guidance to help you choose the right authentication for your application. The following table outlines the recommended authentication mechanism for different application types. See the following basic descriptions, examples, and code samples to get you started.
 

@@ -46,7 +46,7 @@ You always add a field to an existing work item type.
 
 	If the <strong>New field</strong> and other options are disabled, you don't have the necessary permissions to edit the process. See [Set permissions and access for work tracking, Customize an inherited process](../../../organizations/security/set-permissions-access-work-tracking.md#customize-an-inherited-process).
 	
-1. With the WIT selected, choose the ![ ](media/process/new-field-icon.png) <strong>New field</strong>.  
+1. With the WIT selected, choose the :::image type="icon" source="media/process/new-field-icon.png" border="false"::: <strong>New field</strong>.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Process Work Item Types page, Add a field to a WIT](media/field/bug-new-field.png) 
@@ -127,7 +127,7 @@ We recommend that you create a test project and apply your customized  inherited
 	> [!div class="mx-imgBorder"]  
 	> ![Work, Work Items Page, Add New Work Item, Bug](media/process/add-custom-field-verify-bug.png) 
 
-1.  Verify that the field you added appears on the form. Note that the ![ ](../../../media/icons/required-icon.png) (exclamation mark) icon indicates the field is required.  
+1.  Verify that the field you added appears on the form. Note that the :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: (exclamation mark) icon indicates the field is required.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Bug form, Customer Ticket field added to Customer Focus group](media/process/add-custom-field-verify-bug-form.png) 
@@ -141,7 +141,7 @@ We recommend that you create a test project and apply your customized  inherited
 > [!div class="nextstepaction"]
 > [Add a custom work item type](add-custom-wit.md) 
 > Or
-> [Add or manage fields](customize-process-wit.md)
+> [Add or manage fields](customize-process-work-item-type.md)
 
 ## Related articles  
 

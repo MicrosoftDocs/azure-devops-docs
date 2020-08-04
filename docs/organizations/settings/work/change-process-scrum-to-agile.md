@@ -48,7 +48,7 @@ Reasons you might want to change your process from Scrum to Agile:
 
 1. [Create a custom process](./manage-process.md) under Agile called "Agile - Inherited".
 
-2. If the Product Backlog Item and Impediment work item types are used in your current Scrum-based project, you need to [add these work item types](./customize-process-wit.md) to the "Agile - Inherited" process.
+2. If the Product Backlog Item and Impediment work item types are used in your current Scrum-based project, you need to [add these work item types](./customize-process-work-item-type.md) to the "Agile - Inherited" process.
 
    You don't have to add any details to these work item types as you'll be changing them later to User Story and Issue. However, if you have captured details within a field&mdash;such as Effort, Priority, or other field&mdash;then add those fields to the work item types.
 
@@ -64,7 +64,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Choose the process](media/scrum-to-agile/choose-scrum-process.png)
 
-1. Choose **Projects**, and then choose the ![ ](../../../media/icons/actions-icon.png) actions icon for the project you want to change, and select **Change process**. Here we choose the Fabrikam Fiber PB project.
+1. Choose **Projects**, and then choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon for the project you want to change, and select **Change process**. Here we choose the Fabrikam Fiber PB project.
 
    > [!div class="mx-imgBorder"]  
    > ![Choose Projects tab](media/scrum-to-agile/choose-project-to-change.png)
@@ -81,7 +81,7 @@ Reasons you might want to change your process from Scrum to Agile:
    > [!div class="mx-imgBorder"]  
    > ![Step 2 of 3 of change process dialog, Retry](media/scrum-to-agile/step-2-retry.png)
 
-   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-wit.md).
+   Close the wizard dialog and add the missing work item types now. See [Add and manage work item types](customize-process-work-item-type.md).
 
 1. Upon successful completion, the wizard displays the following information. Make a note of the steps to follow and then choose **Close**.
 
@@ -102,9 +102,9 @@ You can customize Kanban boards to display intermediate columns. For each column
    > [!div class="mx-imgBorder"]  
    > ![Open team Kanban board](media/scrum-to-agile/open-kanban-board.png)
 
-1. Choose the **Correct this now** link or the ![ ](../../../media/icons/blue-gear.png) gear icon to configure the board settings.
+1. Choose the **Correct this now** link or the :::image type="icon" source="../../../media/icons/blue-gear.png" border="false"::: gear icon to configure the board settings.
 
-   The Settings dialog opens. Those tabs that display a ![ ](../../../media/icons/required-icon.png) required icon need correction.
+   The Settings dialog opens. Those tabs that display a :::image type="icon" source="../../../media/icons/required-icon.png" border="false"::: required icon need correction.
 
    > [!div class="mx-imgBorder"]  
    > ![Columns dialog ](media/scrum-to-agile/column-settings-to-fix.png)
@@ -128,14 +128,14 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Query all items](media/scrum-to-agile/query-all-items-scrum-to-agile.png)
 
-2. Choose the ![ ](../../../media/icons/actions-icon.png) actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
+2. Choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and then select **Column options**. Choose to show the State and Reason fields. Choose the **Sort** tab, and set it to sort the list by work item type and state value.
 
    > [!div class="mx-imgBorder"]  
    > ![Column options dialog, sort tab](media/change-process/query-column-sort.png)
 
 3. Choose **Results** to just show the list of work items.
 
-4. Highlight all User Stories, choose the ![ ](../../../media/icons/actions-icon.png) actions icon, select **Change type**, and change the type to Product Backlog Item.
+4. Highlight all User Stories, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, select **Change type**, and change the type to Product Backlog Item.
 
    > [!div class="mx-imgBorder"]  
    > ![Change type dialog](media/scrum-to-agile/change-type-user-story.png)
@@ -147,7 +147,7 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items.png)
 
-5. Highlight all work items of the same State, such as Resolved, choose the ![ ](../../../media/icons/actions-icon.png) actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
+5. Highlight all work items of the same State, such as Resolved, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon, and then select **Edit**. Add the State field and select Committed or a valid value for the Product Backlog Item. You may also need to update the Reason field. For details, see [Bulk edit work items](../../../boards/backlogs/bulk-modify-work-items.md).
 
    > [!div class="mx-imgBorder"]  
    > ![Edit work item dialog](media/scrum-to-agile/edit-work-items-state-reason.png)
@@ -157,11 +157,11 @@ Your next step is to bulk update work items. The recommended sequence is:
    > [!div class="mx-imgBorder"]  
    > ![Error state of changed work item type](media/scrum-to-agile/mismatch-items-fixed.png)
 
-6. To save your changes, choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
+6. To save your changes, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 7. Repeat the above steps to change the work item type for Impediment to Issue, and update the states to valid states for the work item types.
 
-8. When done, make sure you choose the ![ ](../../../media/icons/actions-icon.png) actions icon and select **Save items**.
+8. When done, make sure you choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: actions icon and select **Save items**.
 
 > [!TIP]  
 > If you have a number of field value changes, such as populating the Story Points field with the value held in Effort, you can do that using Excel. See [Bulk add or modify work items with Excel](../../../boards/backlogs/office/bulk-add-modify-work-items-excel.md).
@@ -186,14 +186,14 @@ After changing the process, you may want to make additional updates as follows:
 
 - [Change the project name](../../../organizations/projects/rename-project.md)
 - [Update your project summary or vision](../../../organizations/projects/project-vision-status.md)
-- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-wit.md#enable-disable)
+- Disable or delete the work item types that won't be used going forward. See [Customize a work item type for an inherited process](customize-process-work-item-type.md#enable-disable)
 
 ## Related articles
 
 - [Bulk modify work items](../../../boards/backlogs/bulk-modify-work-items.md)
 - [Change the process used by a project](./manage-process.md#change-the-process-used-by-a-project)
 - [Create an inherited process](./manage-process.md#create-an-inherited-process)
-- [Add and manage work item types](./customize-process-wit.md)
+- [Add and manage work item types](./customize-process-work-item-type.md)
 - [Show bugs on backlogs and boards](../show-bugs-on-backlog.md)
 - [Customize your boards](../../../boards/get-started/customize-boards.md)
 - [Create and saved managed queries with the query editor](../../../boards/queries/using-queries.md)
