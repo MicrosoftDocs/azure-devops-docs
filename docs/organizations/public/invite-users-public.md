@@ -12,9 +12,9 @@ ms.date: 10/16/2019
 monikerRange: 'azure-devops'
 ---
 
-<a id="invite-others" />
-
 # Invite users to your public project
+
+<a id="invite-others" />
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
