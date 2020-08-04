@@ -3,7 +3,7 @@ title: Set up upstream sources for packages
 description: Find out how to configure upstream packages from multiple sources in Azure DevOps Services and TFS
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 07/22/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -20,6 +20,9 @@ Navigate to the **Packages** page and select "New Feed".
 Underneath _Upstream Sources_, select _Use packages from public sources through this feed_.
 
 Selecting this option now means your feed will be configured to find and use packages from all of the public upstream sources (**nuget.org** (NuGet), **npmjs.org** (npm), **PyPI** (Python), and **Maven Central** (Maven)) without having to include those package repositories in any of your settings or configuration files. 
+
+> [!IMPORTANT]
+> Maven snapshot artifacts are not currently supported in upstream sources.
 
 ## Add public upstream sources to an existing feed
 
