@@ -3,7 +3,7 @@ title: Other security considerations
 description: Additional tips for securing your pipelines.
 ms.assetid: 95fe319a-60bd-4b1b-9111-5fd8852f7839
 ms.reviewer: macoope
-ms.date: 2/04/2020
+ms.date: 08/04/2020
 monikerRange: '> azure-devops-2019'
 ---
 
@@ -22,6 +22,28 @@ For security-critical scripts and binaries, always use a fully qualified path to
 Azure Pipelines attempts to scrub secrets from logs wherever possible.
 This filtering is on a best-effort basis and cannot catch every way that secrets can be leaked.
 Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
+
+## Lock down containers
+
+Containers have a few system-provided volume mounts mapping in the tasks, the workspace, and external components required to communicate with the host agent.
+You can mark any or all of these volumes read-only.
+
+```yaml
+resources:
+  containers:
+  - container: example
+    image: ubuntu:18.04
+    mountReadOnly:
+      externals: true
+      tasks: true
+      tools: true
+      work: false  # the default; shown here for completeness
+```
+
+Most people should mark the first three read-only and leave `work` as read-write.
+If you know you won't write to the work directory in a given job or step, go ahead and make `work` read-only as well.
+If you have tasks in your pipeline which self-modify, you may need to leave `tasks` read-write.
+
 
 ## Use the Auditing service
 
