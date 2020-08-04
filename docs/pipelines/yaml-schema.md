@@ -336,6 +336,7 @@ container:
   options: string  # arguments to pass to container at startup
   endpoint: string  # endpoint for a private container registry
   env: { string: string }  # list of environment variables to add
+  # you can also use any of the other supported container attributes
 ```
 
 # [Example](#tab/example)
@@ -1146,6 +1147,30 @@ The `container` keyword lets you specify your container images.
 
 # [Schema](#tab/schema)
 
+::: moniker range="azure-devops"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+    mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
+    mountReadOnly:  # volumes to mount read-only - all default to false
+      externals: boolean  # components required to talk to the agent
+      tasks: boolean  # tasks required by the job
+      tools: boolean  # installable tools like Python and Ruby
+      work: boolean # the work directory
+```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
 ```yaml
 resources:
   containers:
@@ -1158,6 +1183,24 @@ resources:
     volumes: [ string ] # volumes to mount on the container
     mapDockerSocket: bool # whether to map in the Docker daemon socket; defaults to true
 ```
+
+::: moniker-end
+
+::: moniker range="azure-devops-2019"
+
+```yaml
+resources:
+  containers:
+  - container: string  # identifier (A-Z, a-z, 0-9, and underscore)
+    image: string  # container image name
+    options: string  # arguments to pass to container at startup
+    endpoint: string  # reference to a service connection for the private registry
+    env: { string: string }  # list of environment variables to add
+    ports: [ string ] # ports to expose on the container
+    volumes: [ string ] # volumes to mount on the container
+```
+
+::: moniker-end
 
 # [Example](#tab/example)
 
