@@ -25,24 +25,6 @@ ms.date: 02/13/2020
 </tr>
 
 <tr>
-<td>Agent.ContainerMapping</td>
-<td>
-<p>A mapping from container resource names in YAML to their Docker IDs at runtime.</p>
-<p>For example: <code><pre>
-{
-  "one_container": {
-    "id": "bdbb357d73a0bd3550a1a5b778b62a4c88ed2051c7802a0659f1ff6e76910190"
-  },
-  "another_container": {
-    "id": "82652975109ec494876a8ccbb875459c945982952e0a72ad74c91216707162bb"
-  }
-}
-</pre></code>
-</p>
-</td>
-</tr>
-
-<tr>
 <td>Agent.HomeDirectory</td>
 <td>The directory the agent is installed into. This contains the agent software. For example: <code>c:\agent</code>.</td>
 </tr>
