@@ -225,7 +225,7 @@ For details, see the following resources:
 
 ::: moniker range="azure-devops"
 
-- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
 - [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md) 
 - [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
 
@@ -235,7 +235,7 @@ For details, see the following resources:
 
 
 **Inheritance process model:**  
-- [Add and manage work item types](../../organizations/settings/work/customize-process-wit.md)
+- [Add and manage work item types](../../organizations/settings/work/customize-process-work-item-type.md)
 - [Customize your backlogs or boards for a process](../../organizations/settings/work/customize-process-backlogs-boards.md) 
 - [Customize an inheritance process](../../organizations/settings/work/inheritance-process-model.md)  
 
@@ -339,7 +339,7 @@ The following settings can impact on the type and number of work items that will
 
 - Sprint backlogs show only those work items that meet the team's area path and the **Iteration Path** defined for the sprint. 
 
-- (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-wit.md#enable-disable), it will no longer appear on backlogs and boards. 
+- (Inheritance process model) If an administrator [disables or deletes a work item type](../../organizations/settings/work/customize-process-work-item-type.md#enable-disable), it will no longer appear on backlogs and boards. 
 
 - (On-premises XML process model) If an administrator [deletes or destroys a work item type](../../reference/witadmin/witadmin-import-export-manage-wits.md), it will no longer appear on backlogs and boards.
 

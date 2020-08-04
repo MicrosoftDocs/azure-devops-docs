@@ -113,7 +113,7 @@ You can add fields and modify the workflow and work item form for all inherited 
 
 ## Field customizations 
 
-Fields defined in the system process appear with an ![ ](media/process/inherited-icon.png) inherited icon, indicating that you can make limited modifications to it in your inherited process. 
+Fields defined in the system process appear with an :::image type="icon" source="media/process/inherited-icon.png" border="false"::: inherited icon, indicating that you can make limited modifications to it in your inherited process. 
 
 Fields are defined for all projects and processes in the organization. That means that any custom field you defined for a WIT in one process can be added to any other WIT defined for another process. 
 
@@ -129,7 +129,7 @@ Fields are defined for all projects and processes in the organization. That mean
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited fields** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited fields** 
    :::column-end:::
    :::column span="2":::
       - [Change the field label](customize-process-field.md#rename-field)  
@@ -281,7 +281,7 @@ For example, you can make the Title or the State field Read-only for select user
 
 You can disallow users from modifying select work items by setting permissions on an Area path. This is not a rule setting, but a permission setting. To learn more, see [Create child nodes, modify work items under an area path](../../security/set-permissions-access-work-tracking.md#create-child-nodes-modify-work-items-under-an-area-path).
 
-## WIT customizations 
+## Work item type (WIT) customizations 
 
 Here are your customization options for inherited and custom WITs. 
 
@@ -297,7 +297,7 @@ Here are your customization options for inherited and custom WITs.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited work item types** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited work item types** 
    :::column-end:::
    :::column span="2":::
       - [Add custom rules to a WIT](custom-rules.md)  
@@ -305,7 +305,7 @@ Here are your customization options for inherited and custom WITs.
       - [Add/remove custom groups](customize-process-form.md#groups)  
       - [Add/remove custom pages](customize-process-form.md#pages) 
       - [Add/remove a custom control](custom-controls-process.md)  
-      - [Enable/disable](customize-process-wit.md#enable-disable)  
+      - [Enable/disable](customize-process-work-item-type.md#enable-disable)  
    :::column-end:::
 :::row-end:::
 ---
@@ -314,16 +314,16 @@ Here are your customization options for inherited and custom WITs.
       **Custom work item types**
    :::column-end:::
    :::column span="2":::
-      - [Add custom WIT](customize-process-wit.md#add-wit)  
-      - [Change color or description](customize-process-wit.md#overview)  
+      - [Add custom WIT](customize-process-work-item-type.md#add-wit)  
+      - [Change color or description](customize-process-work-item-type.md#overview)  
       - [Add/remove custom fields](customize-process-field.md)  
       - [Add/remove custom groups](customize-process-form.md#groups)  
       - [Add/remove custom pages](customize-process-form.md#pages)  
       - [Add/remove a custom control](custom-controls-process.md)  
       - [Add custom rules to a wit](custom-rules.md)  
       - [Add, edit, or remove a workflow state](customize-process-workflow.md#states)  
-      - [Enable/disable](customize-process-wit.md#enable-disable)  
-      - [Delete](customize-process-wit.md#destroy)  
+      - [Enable/disable](customize-process-work-item-type.md#enable-disable)  
+      - [Delete](customize-process-work-item-type.md#destroy)  
    :::column-end:::
 :::row-end:::
 ---
@@ -353,7 +353,7 @@ You can make the following customizations to a WIT form.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited groups** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited groups** 
    :::column-end:::
    :::column span="2":::
       - [Relabel](customize-process-form.md#groups)   
@@ -375,7 +375,7 @@ You can make the following customizations to a WIT form.
 ---
 :::row:::
    :::column span="":::
-      ![](media/process/inherited-icon.png)**Inherited pages** 
+      :::image type="icon" source="media/process/inherited-icon.png" border="false":::**Inherited pages** 
    :::column-end:::
    :::column span="2":::
       - [Relabel](customize-process-form.md#pages) 

@@ -285,5 +285,3 @@ Work item forms displayed in a client and the web portal for TFS 2015 and earlie
 </table>
 
 
-
-[!INCLUDE [temp](../../../includes/help-support-shared.md)]

@@ -47,7 +47,7 @@ If users no longer require access to a team, project, or your organization, you 
 
    ![Confirm removing an existing user](media/delete-user/confirm-remove-existing-user-preview.png)
 
-6. To confirm that you've removed the users completely, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
+6. Note that removing a user from the organization will not remove their memberships to any security groups. If the user is a member of an access-granting security group, then the user will still have access to Azure DevOps, even after you remove them from the organization. If you'd like to completely remove the user from the organization, make sure they aren't in any of your [security groups](../../organizations/security/add-users-team-project.md). 
 
    [Why don't users appear or disappear promptly after I add or delete them in the Users Services page?](faq-user-and-permissions-management.md#users-delay)
 
