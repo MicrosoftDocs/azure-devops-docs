@@ -31,15 +31,12 @@ To create extensions for Azure DevOps, you need the following software and tools
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
 - A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
 - The [latest version](https://nodejs.org/en/download/) of Node.js.
-
   The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
 - TypeScript Compiler 2.2.0 or greater. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - TFS Cross Platform Command Line Interface (tfx-cli) to package your extensions.
-     
-   You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
+     You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
-  
   The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
 
   ```
@@ -61,7 +58,7 @@ If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with
 
 ## Step 1: Create a custom task
 
-Set up your task. Do every part of Step 1 within the `buildAndReleaseTask` folder.
+Set up your task. Do every part of Step 1 within the buildAndReleaseTask folder.
 
 ### Create task scaffolding
 
@@ -69,7 +66,7 @@ Create the folder structure for the task and install the required libraries and 
 
 #### Create a directory and package.json file
 
-From within your `buildAndReleaseTask` folder, run the following command:
+From within your buildAndReleaseTask folder, run the following command:
 
 ```
 npm init
@@ -124,7 +121,7 @@ Now that the scaffolding is complete, we can create our custom task.
 
 #### task.json
 
-Next, we create a `task.json` file in the `buildAndReleaseTask` folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+Next, we create a `task.json` file in the buildAndReleaseTask folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
 Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique. You can generate the `taskguid` by using [Microsoft's online GuidGen tool](https://www.guidgen.com/).
 
@@ -206,7 +203,7 @@ run();
 
 ### Compile
 
-Enter "tsc" from the `buildAndReleaseTask` folder to compile an `index.js` file from `index.ts`.
+Enter "tsc" from the buildAndReleaseTask folder to compile an `index.js` file from `index.ts`.
 
 ### Run the task
 
@@ -291,7 +288,7 @@ describe('Sample task tests', function () {
 ```
 
 > [!TIP]
-> Your test folder should be located in the `buildAndReleaseTask` folder. If you get a sync-request error, you can work around it by installing sync-request from inside of the `buildAndReleaseTask` folder with the command
+> Your test folder should be located in the buildAndReleaseTask folder. If you get a sync-request error, you can work around it by adding sync-request to the buildAndReleaseTask folder with the command
 >  `npm i --save-dev sync-request`.
 
 ### Create success test
@@ -396,7 +393,7 @@ $env:TASK_TEST_TRACE=1
 ## Step 3: Create the extension manifest file
 The extension manifest contains all of the information about your extension. It includes links to your files, including your task folders and images folders. Ensure you've created an images folder with extension-icon.png. The following example is an extension manifest that contains the build or release task.
 
-Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. Don't create this file in the `buildAndReleaseTask` folder.
+Copy the following .json code and save it as your `vss-extension.json` file in your `home` directory. Don't create this file in the buildAndReleaseTask folder.
 
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
@@ -654,9 +651,9 @@ To run unit tests, add a custom script to the package.json file. For example:
 ```
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
-1. Add "npm" task with install command and target the folder with the package.json file. 
-1. Add "Bash" task to compile the TypeScript into JavaScript.
-1. Add "npm" task with "custom" command, target the folder that contains the unit tests, and input `testScript` as the command. Use the following inputs:
+1. Add the "npm" task with the "install" command and target the folder with the package.json file. 
+1. Add the "Bash" task to compile the TypeScript into JavaScript.
+1. Add the "npm" task with the "custom" command, target the folder that contains the unit tests, and input `testScript` as the command. Use the following inputs:
     - Command: custom
     - Working folder that contains package.json: /TestsDirectory
     - Command and arguments: testScript
@@ -670,12 +667,12 @@ After the test results have been published, the output under the tests tab shoul
 
 ![Screenshot of the test result example.](media/test-results-example.png)
 
-#### Stage: Package extension and publish build artifacts
+#### Stage: Package the extension and publish build artifacts
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
-1. Add "npm" task with install command and target the folder with the package.json file.
-1. Add "Bash" task to compile the TypeScript into JavaScript. 
-1. Add "Query Extension Version" task to query the existing extension version. Use the following inputs:
+1. Add the "npm" task with the "install" command and target the folder with the package.json file.
+1. Add the "Bash" task to compile the TypeScript into JavaScript. 
+1. Add the "Query Extension Version" task to query the existing extension version. Use the following inputs:
     - Connect to: Visual Studio Marketplace
     - Visual Studio Marketplace (Service connection): Service Connection
     - Publisher ID: ID of your Visual Studio Marketplace publisher
@@ -683,7 +680,7 @@ After the test results have been published, the output under the tests tab shoul
     - Increase version: Patch
     - Output Variable: Task.Extension.Version
 
-1. Add "Package Extension" task to package the extensions based on manifest Json. Use the following inputs:
+1. Add the "Package Extension" task to package the extensions based on manifest Json. Use the following inputs:
     - Root manifests folder: Points to root directory that contains manifest file. For example, $(System.DefualtWorkingDirectory) is the root directory.
     - Manifest file(s): vss-extension.json. 
     - Publisher ID: ID of your Visual Studio Marketplace publisher.
@@ -693,7 +690,7 @@ After the test results have been published, the output under the tests tab shoul
     - Override tasks version: checked (true).
     - Override Type: Replace Only Patch (1.0.r).
     - Extension Visibility: If the extension is still in development, set the value to private. To release the extension to the public, set the value to public.
-1. Add "Copy files" task to copy published files. Use the following inputs:
+1. Add the "Copy files" task to copy published files. Use the following inputs:
     - Contents: All of the files that need to be copied for publishing them as an artifact
     - Target folder: The folder that the files will all be copied to
        - For example: $(Build.ArtifactStagingDirectory)
