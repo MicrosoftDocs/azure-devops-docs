@@ -26,7 +26,7 @@ Complete the following steps to change application connection, security, and use
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
-    [Why am I asked to choose between my work or school account and my personal account?](/azure/devops/organizations/accounts/faq-user-and-permissions-management.md#ChooseOrgAcctMSAcct)
+    [Why am I asked to choose between my work or school account and my personal account?](/azure/devops/organizations/accounts/faq-user-and-permissions-management)
 
 2. Select ![gear icon](/azure/devops/media/icons/gear-icon.png) **Organization settings**.
 
