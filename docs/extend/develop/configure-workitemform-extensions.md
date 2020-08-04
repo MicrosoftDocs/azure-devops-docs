@@ -10,9 +10,9 @@ author: chcomley
 ms.date: 10/10/2017
 ---
 
-<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps</blockquote>  
-
 # Add extensions in work item form via work item type definition xml
+
+<blockquote style="font-size: 13px"><b>Note:</b> work item form customization via xml is supported only on TFS, not Azure DevOps</blockquote>  
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
