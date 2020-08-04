@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Use Git commit to save your work into Git version control with Visual Studio or the command line.
 ms.assetid: 223c0064-06ec-433e-8ec2-d73a5435cf23
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 11/12/2018
 monikerRange: '>= tfs-2013'

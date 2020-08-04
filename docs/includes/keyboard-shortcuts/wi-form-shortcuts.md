@@ -67,7 +67,7 @@ The rich text editor tool bar displays below the text entry area when you click 
 > [!div class="mx-imgBorder"]  
 > ![New Rich Text Editor toolbar](/azure/devops/boards/queries/media/share-plans/new-rich-text-editor-toolbar.png) 
 
-You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=![ ](/azure/devops/media/icons/mac-command-symbol.png))
+You can use the following keyboard shortcuts when working in a web browser on one of the following operating systems. (**Command**=:::image type="icon" source="/azure/devops/media/icons/mac-command-symbol.png" border="false":::)
 
 > [!div class="mx-tdCol2BreakAll"]  
 > 

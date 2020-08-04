@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Share code in TFVC using Xcode
 ms.assetid: 582BE341-2026-4C83-8F2B-552A37561DBB
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: quickstart
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

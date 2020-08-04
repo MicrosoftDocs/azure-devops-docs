@@ -191,9 +191,9 @@ As the following examples show, the grouped clauses are translated to the corres
 > [!div class="mx-tdCol2BreakAll"]
 > |Query | Grouped clauses|Logical expression|
 > |---|---|---|
-> |1| ![ ](media/using-queries/and-or-clause-no-grouping.png)|![ ](media/using-queries/and-or-clause-no-grouping-wiql.png)|
-> |2| ![ ](media/using-queries/and-or-clause-with-grouping.png)|![ ](media/using-queries/and-or-clause-with-grouping-wiql.png)|
-> |3| ![ ](media/using-queries/and-or-clause-reverse-grouping.png)|![ ](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
+> |1| ![Screenshot showing a group clause query. Filters are set up for the Work item type field and either the State field or the Assigned to field.](media/using-queries/and-or-clause-no-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type, State, and Assigned to fields. An OR operator groups the State and Assigned to fields.](media/using-queries/and-or-clause-no-grouping-wiql.png)|
+> |2| ![Screenshot showing a group clause query, with filters for both the Work item type field and one of either the State field or the Assigned to field.](media/using-queries/and-or-clause-with-grouping.png)|![Screenshot of a logical expression. An AND operator groups the Work item type with the State or Assigned to fields, which are grouped by an OR operator.](media/using-queries/and-or-clause-with-grouping-wiql.png)|
+> |3| ![Screenshot showing a group clause query. Filters are set up for either the Work item type field or both the State field and the Assigned to field.](media/using-queries/and-or-clause-reverse-grouping.png)|![Screenshot of a logical expression. An OR operator links the Work item type to both the State and the Assigned to fields, which are linked by an AND operator.](media/using-queries/and-or-clause-reverse-grouping-wiql.png)|
 
 These queries return work items that are type Bug and meet the following logical expressions:  
 - **Query 1**: AND State=Active OR Assigned to @Me  
@@ -201,12 +201,12 @@ These queries return work items that are type Bug and meet the following logical
 - **Query 3**: OR (State=Active AND Assigned to @Me)  
 
 
-To group one or more clauses, select them and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+To group one or more clauses, select them and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Web portal, Group Selected Query Clauses](media/view-run-queries/group-clauses.png)  
 
-You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the ![ ](../media/icons/group-clauses-icon.png) group clauses icon.
+You can also group several grouped clauses by checking the boxes of each clause that has already been grouped, and then choose the :::image type="icon" source="../media/icons/group-clauses-icon.png" border="false"::: group clauses icon.
 
 > [!div class="mx-imgBorder"]  
 > ![Group multiple query clauses](media/using-queries/multiple-clauses.png)
@@ -224,7 +224,7 @@ If your query results don't return expected results, follow these steps:
 
 ## Ungroup a clause
 
-To ungroup a clause, choose the ![ ](../media/icons/ungroup-clause.png) ungroup clauses icon for the grouped clause. 
+To ungroup a clause, choose the :::image type="icon" source="../media/icons/ungroup-clause.png" border="false"::: ungroup clauses icon for the grouped clause. 
 
 <a id="tree-query" />
 

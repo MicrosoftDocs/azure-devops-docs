@@ -10,7 +10,7 @@ ms.date: 02/23/2020
 monikerRange: '>= tfs-2018'
 ---
 
-# Deploy to a Linux Virtual Machine
+# Deploy a web app to an nginx web server on a Linux Virtual Machine
 
 [!INCLUDE [version-tfs-2018](../../includes/version-tfs-2018.md)]
 
@@ -61,7 +61,7 @@ Follow the additional steps described below based on the runtime stack used for 
 
 #### [JavaScript](#tab/java-script)
 
-To install a javascript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
+To install a JavaScript app or a Node.js app, you'll need a Linux VM with Nginx web server to deploy the app.
 If you don't already have a Linux VM with Nginx, create one now in Azure using the steps in
 [this example](/azure/virtual-machines/linux/quick-create-cli).
 

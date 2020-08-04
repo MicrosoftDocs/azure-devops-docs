@@ -12,6 +12,8 @@ ms.date: 07/15/2020
 
 # .NET client libraries
 
+[!INCLUDE [version-all](../../includes/version-all.md)]
+
 ## Overview
 
 Client libraries are available for .NET developers who build Windows apps and services that integrate with Azure DevOps. Client libraries integrate with work item tracking, version control, build, and other services. These packages replace the traditional TFS Client OM installer and make it easy to acquire and redistribute the libraries needed by your app or service.
@@ -20,7 +22,7 @@ Client libraries are available for .NET developers who build Windows apps and se
 > For more information, see [Azure DevOps REST API Reference](https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1).
 
 ### Dependency diagram
-![](../concepts/media/dotnet-client-libraries-dependancy-diagram.jpg)
+![Dependency diagram shows the relationshp between Services.Client, Services.InteractiveClient, and TeamFoundationServer.Client.](../concepts/media/dotnet-client-libraries-dependancy-diagram.jpg)
 
 ### Features
 

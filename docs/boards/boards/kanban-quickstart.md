@@ -51,7 +51,7 @@ To add a board to support an additional portfolio backlog level, see [Add a port
 
 ::: moniker range=">= azure-devops-2019"
 
-To add a work item, select the ![ ](../media/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
+To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then press Enter. 
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ The system automatically saves the work item with the title you entered. You can
 
 ::: moniker range="<= tfs-2018"
 
-To add a work item, select the ![ ](../media/icons/add_icon.png) plus sign, enter a title, and then press Enter. 
+To add a work item, select the :::image type="icon" source="../media/icons/add_icon.png" border="false"::: plus sign, enter a title, and then press Enter. 
 
 > [!div class="mx-imgBorder"]  
 > ![Add a new item on Kanban board, prev nav](media/quickstart/add-new-item-standard.png)

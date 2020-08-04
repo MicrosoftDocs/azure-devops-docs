@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Use the branches page to create a new Git branch in Azure DevOps Services or TFS
 ms.assetid: 13783230-7762-4fd0-b392-5187c7f9fe1e
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 10/11/2018
 monikerRange: '>= tfs-2013'
