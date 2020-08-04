@@ -116,7 +116,7 @@
   - name: Azure Pipelines Test
     href: ../pipelines/test/test-glossary.md
   - name: Azure DevOps Blog, Test
-    href: /archive/blogs/anutthara/books-on-software-testing-with-visual-studio-alm-2010
+    href: https://devblogs.microsoft.com/devops/
   - name: Plug-ins for Visual Studio
     href: https://devblogs.microsoft.com/devops/visual-studio-11-beta-unit-testing-plugins-list/
   - name: Create custom code & plug-ins

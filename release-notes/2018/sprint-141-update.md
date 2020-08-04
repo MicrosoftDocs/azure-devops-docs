@@ -160,7 +160,7 @@ Here's an example scenario where this experience may be useful: Dorothy is the A
 
 See our [blog post](https://blogs.msdn.microsoft.com/devops/2018/09/27/using-azuread-identities-in-azure-devops-organizations-backed-by-microsoft-accounts/) for more information.
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Use the feedback menu to report a problem or provide a suggestion.
 

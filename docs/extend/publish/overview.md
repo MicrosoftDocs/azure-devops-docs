@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Package, publish, unpublish extensions | Azure DevOps Services
-description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps Services.
+title: Package, publish, unpublish extensions | Azure DevOps
+description: An overview of packaging, publishing, unpublishing, and sharing an extension for Azure DevOps or Team Foundation Server (TFS).
 ms.assetid: 77b385a2-069a-4704-9a17-ad9f79a36f17
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -12,7 +12,9 @@ ms.date: 06/24/2020
 
 # Package, publish, unpublish, and install extensions
 
-Once you've written your extension, the next step is to package it. Then, you publish or upload it to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Users can install the extension from the Marketplace if it's shared with them. The Marketplace is a centralized global repository for private and public extensions, integrations, and other offers from Microsoft.
+[!INCLUDE [version-tfs-2017-through-vsts](../../report/includes/version-tfs-2017-through-vsts.md)]
+
+Once you've written your extension, the next step is to package it. Then, you publish or upload it to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops). Users can install the extension from the Marketplace if it's shared with them. The Marketplace is a global repository for private and public extensions, integrations, and other offers from Microsoft.
 
 >[!NOTE]
 >For information on the discovery properties available in your extension's manifest file that helps users discover and learn about your extension, 
@@ -68,9 +70,9 @@ Check the size of the vsix after it's packaged. If it's greater than 50 MB then 
 
 <a name="shareextension" />
 
-An extension must be shared with an organization before you can install it in Azure DevOps Services. Sharing is a requirement during development and testing of an extension, as it is the only way to run an extension.
+An extension must be shared with an organization before you can install it in Azure DevOps or TFS. Sharing is a requirement during development and testing of an extension, as it's the only way to run an extension.
 
-To share an extension so, it can be installed:
+To share an extension, do the following tasks:
 
 1. Select the ellipses of an extension item to bring up the menu
 2. Select the **Share** button

@@ -12,6 +12,8 @@ ms.date: 05/26/2020
 
 # Add a build or release task
 
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
+
 In this article, learn how to install extensions to your organization for custom build or release tasks in Azure DevOps. 
 These tasks appear next to Microsoft-provided tasks in the Add Step wizard.
 
@@ -477,7 +479,7 @@ After creating a publisher, you can upload your extension to the Marketplace.
 You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create`
 to package and publish your extension in one step.
 You can optionally use `--share-with` to share your extension with one or more accounts after publishing.
-You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#acquire-a-personal-access-token).
+You'll need a personal access token, too. For more information, see [Acquire a personal access token](../publish/command-line.md#acquire-a-pat).
 
 ```no-highlight
 tfx extension publish --manifest-globs your-manifest.json --share-with yourOrganization

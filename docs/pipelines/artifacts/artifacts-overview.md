@@ -9,7 +9,7 @@ ms.date: 02/26/2020
 monikerRange: '>= tfs-2015'
 ---
 
-# Artifacts in Azure Pipelines
+# Overview of artifacts in Azure Pipelines
 
 ::: moniker range="<= tfs-2018"
 [!INCLUDE [temp](../includes/concept-rename-note.md)]

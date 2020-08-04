@@ -93,7 +93,7 @@ On the first run after the task is added, the cache step will report a "cache mi
 
 #### Required software on self-hosted agent
 
-|        | Windows | Linux | Mac |
+| Archive software / Platform | Windows | Linux | Mac |
 |--------|-------- |------ |-------|
 |GNU Tar | Required| Required | No |
 |BSD Tar | No | No | Required |

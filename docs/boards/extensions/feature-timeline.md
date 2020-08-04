@@ -118,7 +118,7 @@ Here we open Boards.
 	> [!div class="mx-imgBorder"]  
 	> ![Open Portfolio Kanban board, features](../boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](../../media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="../../media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	> [!div class="mx-imgBorder"]  
 	> ![Open Work when screen size is reduced](../boards/media/kanban-quickstart-reduced-screensize.png)   
@@ -170,7 +170,7 @@ You can customize your view of the Feature Timeline with the controls shown in t
 
 ## Drill-down and change Start and End iterations 
  
-1. To view the requirements linked to a feature, choose the ![info icon](../media/icons/info.png) info icon for that feature. 
+1. To view the requirements linked to a feature, choose the  :::image type="icon" source="../media/icons/info.png" border="false":::  info icon for that feature. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Feature, Info icon](media/feature-timeline/drill-down-1.png)

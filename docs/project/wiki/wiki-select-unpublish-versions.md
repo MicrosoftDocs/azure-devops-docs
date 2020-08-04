@@ -1,4 +1,4 @@
-﻿---
+---
 title: Publish, select, or unpublish a wiki version
 titleSuffix: Azure DevOps  
 description: Publish or unpublish files in a Git code repository to a wiki in Azure DevOps 
@@ -23,9 +23,7 @@ When you publish a Git repository to a wiki, you can publish new branch of the r
 
 If your published wiki corresponds to a product version, you can publish new branches as you release new versions of your product. To create a new version, create a new branch of your repo, and then make updates to that new branch.
 
-::: moniker range=">= azure-devops-2019"  
-
-1. To create a new branch from the web portal, open **Repos > Branches**, open the ![ ](../../media/icons/actions-icon.png) actions icon for the branch you have previously published, and select **New branch**.
+1. To create a new branch from the web portal, open **Repos > Branches**, open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the branch you have previously published, and select **New branch**.
 
 	> [!div class="mx-imgBorder"]  
 	> ![Create a new branch](media/wiki/publish-wiki-create-branch-vert.png)
@@ -41,8 +39,6 @@ If your published wiki corresponds to a product version, you can publish new bra
 	> ![Publish new version dialog box](media/wiki/publish-new-version.png)
 
 1. Select **Update**.
-
-::: moniker-end
 
 
 ## Select a wiki version

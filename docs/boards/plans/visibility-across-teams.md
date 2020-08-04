@@ -65,7 +65,7 @@ With the multi-team portfolio backlog view, you can:
 Management teams can drill down from their portfolio backlog to see how **Epics** are progressing. Drilling down, you can see all the backlog items and features, even though they belong to one of three different teams: Customer Service, Phone, and Web.
 
 ::: moniker range=">= azure-devops-2019"
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics.png)   
@@ -77,7 +77,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](../backlogs/media/multi-ownership/management-team-backlog-epics-pre-nav.png)  
@@ -101,7 +101,7 @@ Feature teams can turn **Show parents** on their backlogs to see context and tho
 
 ::: moniker range=">= azure-devops-2019"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-new-nav.png)   
@@ -110,7 +110,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"  
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
    
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](media/visibility/web-team-backlog-multi-team-ownership-prev-nav.png)   

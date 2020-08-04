@@ -9,7 +9,7 @@ ms.topic: overview
 ms.author: chcomley
 author: chcomley
 ms.date: 04/13/2020
-monikerRange: '>= tfs-2013'
+monikerRange: 'azure-devops'
 ---
 
 # About organization management in Azure DevOps
@@ -25,7 +25,7 @@ With an organization, you gain access to the platform in which you can do the fo
 * Obtain additional features and extensions
 * Create one or more projects to segment work. 
 
-> [!NOTE]   
+> [!NOTE]
 > This article applies to the Azure DevOps cloud service. If you manage an on-premises Azure DevOps Server, refer to [Administrative tasks quick reference](/azure/devops/server/admin/admin-quick-ref) for details on managing the server. 
 
 ## Create your organization
@@ -125,14 +125,12 @@ Using Azure AD, you can segment access by adding select Azure AD groups to Contr
 
 A best practice to use when managing users is to manage them through security groups. You can use the default security groups Azure DevOps provides, create custom security groups, or reference Azure AD groups. You can use any of these  groups to add and manage user access levels using group rules. To learn more, see [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md).
 
-
 ## Add users implementation notes
 
 The following notes address details specific to adding users at different levels&mdash;such as to a team, project, or organization.
 
 - All users added at the organization or collection level can be assigned to work items of all projects. However, if the user doesn't have access to the project, then they can't view or edit the work item.
 - All users invited or added as a member at the project level can be assigned to work items of the project. 
-
 
 ## Set up billing
 
@@ -199,7 +197,6 @@ You can then pay for more users with Basic access, buy more services, and purcha
 </tbody>
 </table>
 
-
 ## Related articles
 
 - [About access levels](../security/access-levels.md) 
@@ -208,4 +205,3 @@ You can then pay for more users with Basic access, buy more services, and purcha
 - [Add a user as a team administrator](../settings/add-team-administrator.md)
 - [About using Azure AD to authenticate access to Azure DevOps Services](access-with-azure-ad.md)
 - [Troubleshoot permissions and access with Azure AD](faq-azure-access.md)
-
