@@ -79,9 +79,15 @@ pushes and pulls in your scripts.
 
 For more detailed logs to debug pipeline problems, define `System.Debug` and set it to `true`.
 
-::: moniker range=">=azure-devops-2020"
+::: moniker range="azure-devops"
 
 [!INCLUDE [include](includes/variables-hosted.md)]
+
+::: moniker-end
+
+::: moniker range="azure-devops-2020"
+
+[!INCLUDE [include](includes/variables-server2020.md)]
 
 ::: moniker-end
 
