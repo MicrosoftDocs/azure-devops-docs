@@ -170,7 +170,7 @@ Then, when you create a new release, you can edit the values for these variables
 
 The current status for a release can be reported back in the source repository. In the **Options** tab of a release pipeline, open the **Integrations** page.
 
-> > [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Setting the options for reporting status](media/what-is-release-management/report-options.png)
 
 **Report deployment status to the repository host**
@@ -208,49 +208,40 @@ Select this option if you want to display the latest outcome of a stage deployme
     For example: `<img src="{URL you copied from the link}"/>`
 
 <a name="editrelease"></a>
+
 ## When should I edit a release instead of the pipeline that defines it?
 
-You can edit the approvals, tasks, and variables of a previously deployed release, instead of editing these
-values in the pipeline from which the release was created. However, these edits apply to only the release
-generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments,
-choose the option to edit the release pipeline instead.
+You can edit the approvals, tasks, and variables of a previously deployed release, instead of editing these values in the pipeline from which the release was created. However, these edits apply to only the release generated when you redeploy the artifacts. If you want your edits apply to all future releases and deployments, choose the option to edit the release pipeline instead.
 
 <a name="abandonrelease"></a>
+
 ## When and why would I abandon a release?
 
-After you create a [release](releases.md), you can use it to redeploy the artifacts
-to any of the stages defined in that release.
-This is useful if you want to perform regular manual releases, or set up a 
-continuous integration [stage trigger](triggers.md#env-triggers)
-that redeploys the artifacts using this release.
+After you create a [release](releases.md), you can use it to redeploy the artifacts to any of the stages defined in that release.This is useful if you want to perform regular manual releases, or set up a continuous integration [stage trigger](triggers.md#env-triggers) that redeploys the artifacts using this release.
 
-If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts,
-you can abandon the release using the shortcut menu that opens from the ellipses (**...**) icon in the
-**Pipeline** view of the pipeline.
+If you do not intend to reuse the release, or want to prevent it being used to redeploy the artifacts, you can abandon the release using the shortcut menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline.
 
-![Abandoning a release](media/what-is-release-management/abandon-release.png)
+> [!div class="mx-imgBorder"]
+> ![Abandoning a release](media/what-is-release-management/abandon-release.png)
 
 You cannot abandon a release when a deployment is in progress, you must cancel the deployment first.
 
 <a name="sendemail"></a>
+
 ## How do I send release summaries by email?
 
-After a release is triggered and completed, you may want to email the summary to stakeholders.
-Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
+After a release is triggered and completed, you may want to email the summary to stakeholders. Use the **Send Email** option on the menu that opens from the ellipses (**...**) icon in the **Pipeline** view of the pipeline. 
 
-![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
+> [!div class="mx-imgBorder"]
+> ![Emailing a release summary](media/what-is-release-management/email-release-summary.png)
 
-In the **Send release summary mail** window, you can further customize the information to be sent in the email
-by selecting only certain sections of the release summary.
+In the **Send release summary mail** window, you can further customize the information to be sent in the email by selecting only certain sections of the release summary.
 
 <a name="numbering"></a>
+
 ## How do I manage the names for new releases?
 
-The names of releases for a release pipeline are, by default, sequentially numbered.
-The first release is named **Release-1**, the next release is
-**Release-2**, and so on. You can change this naming scheme by editing the
-release name format mask. In the **Options** tab of a release pipeline,
-edit the **Release name format** property in the **General** page.
+The names of releases for a release pipeline are, by default, sequentially numbered. The first release is named **Release-1**, the next release is **Release-2**, and so on. You can change this naming scheme by editing the release name format mask. In the **Options** tab of a release pipeline, edit the **Release name format** property in the **General** page.
 
 When specifying the format mask, you can use the following pre-defined variables.
 
@@ -278,6 +269,7 @@ You can customize how long releases of this pipeline must be retained. For more 
 Every time you save a release pipeline, Azure Pipelines keeps a copy of the changes. This allows you to compare the changes at a later point, especially when you are debugging a deployment failure.
 
 <a name="getstartednow"></a>
+
 ## Get started now!
 
 Follow these steps:
@@ -288,4 +280,5 @@ Follow these steps:
 
 ## Related topics
 
-* [Sign up for Azure Pipelines](https://visualstudio.microsoft.com/products/visual-studio-team-services-vs)
+* [Deploy pull request builds using Azure Pipelines](./deploy-pull-request-builds.md)
+* [Stage templates in Azure Pipelines](./env-templates.md)
