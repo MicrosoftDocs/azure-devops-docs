@@ -29,16 +29,18 @@ To learn more about the new cross-platform build/release system, see [Team Found
 To create extensions for Azure DevOps, you need the following software and tools:
 
 - An organization in Azure DevOps. For more information, see [Create an organization](../../organizations/accounts/create-organization.md).
-- A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support and can be downloaded [here](https://code.visualstudio.com/).
-- The latest version of Node.js, which can be downloaded [here](https://nodejs.org/en/download/).
+- A text editor. For many of the tutorials, we use **Visual Studio Code**, which provides intellisense and debugging support. Go to [code.visualstudio.com](https://code.visualstudio.com/) to download the latest version.
+- The [latest version](https://nodejs.org/en/download/) of Node.js.
 
-  - The production Environment only uses [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
-- TypeScript Compiler 2.2.0 or greater, which can be downloaded [here](https://www.npmjs.com/package/typescript).
+  The production environment uses only [Node10](http://blog.majcica.com/2018/12/04/node10-provider-available-for-agent-v2-144-0/) or Node6 (by using the `"Node"` in the `"execution"` object instead of `Node10`). 
+- TypeScript Compiler 2.2.0 or greater. Go to [npmjs.com](https://www.npmjs.com/package/typescript) to download the compiler.
     <a name="cli"></a>
 - TFS Cross Platform Command Line Interface (tfx-cli) to package your extensions.
-    - **tfx-cli** can be installed using `npm`, a component of Node.js by running `npm i -g tfx-cli`.
+     
+   You can install **tfx-cli** by using `npm`, a component of Node.js, by running `npm i -g tfx-cli`.
 - A `home` directory for your project.
-    - The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
+  
+  The `home` directory of a build or release task extension should look like the following example after you complete the steps in this tutorial:
 
   ```
   |--- README.md    
@@ -50,16 +52,16 @@ To create extensions for Azure DevOps, you need the following software and tools
 
 ### Develop in Unix vs. Windows
 
-This walk-through was done on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
+We did this walk-through on Windows with PowerShell. We attempted to make it generic for all platforms, but the syntax for getting environment variables is different.
 
-If using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
+If you're using a Mac or Linux, replace any instances of `$env:<var>=<val>` with `export <var>=<val>`.
 
 
 <a name="createtask"></a>
 
 ## Step 1: Create a custom task
 
-Set up your task. Every part of Step 1 should be done within the `buildAndReleaseTask` folder.
+Set up your task. Do every part of Step 1 within the `buildAndReleaseTask` folder.
 
 ### Create task scaffolding
 
@@ -122,7 +124,7 @@ Now that the scaffolding is complete, we can create our custom task.
 
 #### task.json
 
-Create a `task.json` file in the `buildAndReleaseTask` folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
+Next, we create a `task.json` file in the `buildAndReleaseTask` folder. The `task.json` file describes the build or release task and is what the build/release system uses to render configuration options to the user and to know which scripts to execute at build/release time.
 
 Copy the following code and replace the `{{placeholders}}` with your task's information. The most important placeholder is the `taskguid`, and it must be unique. You can generate the `taskguid` by using [Microsoft's online GuidGen tool](https://www.guidgen.com/).
 
@@ -161,7 +163,7 @@ Copy the following code and replace the `{{placeholders}}` with your task's info
 ```
 
 **task.json components**<br>
-Here are descriptions of some of the components of the `task.json` file:
+Following are descriptions of some of the components of the `task.json` file:
 
 | Property             | Description                                                                                                                |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -180,7 +182,7 @@ Here are descriptions of some of the components of the `task.json` file:
 
 #### index.ts
 
-Create an `index.ts` file using the following code as a reference. This code runs when the task is called.
+Create an `index.ts` file by using the following code as a reference. This code runs when the task is called.
 
 ```typescript
 import tl = require('azure-pipelines-task-lib/task');
@@ -383,7 +385,7 @@ tsc
 mocha tests/_suite.js
 ```
 
-Both tests should pass. If you want to run the tests with more verbose output (what you would see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
+Both tests should pass. If you want to run the tests with more verbose output (what you'd see in the build console), set the environment variable: `TASK_TEST_TRACE=1`.
 
 ```
 $env:TASK_TEST_TRACE=1
@@ -399,7 +401,7 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 [!code-javascript[JSON](../_data/extension-build-tasks.json)]
 
 >[!NOTE]
->The **publisher** here must be changed to your publisher name. If you'd like to create a publisher now, go to
+>The **publisher** here must be changed to your publisher name. If you want to create a publisher now, go to
 [create your publisher](#createpublisher) for instructions.
 
 ### Contributions
@@ -424,10 +426,10 @@ Copy the following .json code and save it as your `vss-extension.json` file in y
 
 ## Step 4: Package your extension
 
-Once you've written your extension, the next step towards getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
+After you've written your extension, the next step toward getting it into the Visual Studio Marketplace is to package all of your files together. All extensions are packaged
 as VSIX 2.0-compatible .vsix files. Microsoft provides a cross-platform command-line interface (CLI) to package your extension. 
 
-Packaging your extension into a .vsix file is effortless once you have the [tfx-cli](#cli), navigate to your extension's home directory, and run the following command:
+Packaging your extension into a .vsix file is effortless after you have the [tfx-cli](#cli), go to your extension's home directory, and run the following command:
 
 ```no-highlight
 tfx extension create --manifest-globs vss-extension.json
@@ -452,7 +454,7 @@ All extensions, including extensions from Microsoft, are identified as being pro
 If you aren't already a member of an existing publisher, you'll create one.
 
 1. Sign in to the [Visual Studio Marketplace Publishing Portal](https://marketplace.visualstudio.com/manage).
-2. If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select **Publish Extensions** underneath **Related Sites**.
+2. If you aren't already a member of an existing publisher, you're prompted to create a publisher. If you're not prompted to create a publisher, scroll down to the bottom of the page and select **Publish Extensions** under **Related Sites**.
    * Specify an identifier for your publisher, for example: `mycompany-myteam`.
      * This identifier is used as the value for the `publisher` attribute in your extensions' manifest file.
    * Specify a display name for your publisher, for example: `My Team`.
@@ -466,7 +468,7 @@ without the need to share a set of credentials across users.
 
 After creating a publisher, you can upload your extension to the Marketplace.
 
-- Find the **Upload new extension** button, navigate to your packaged .vsix file, and select **Upload**.
+- Find the **Upload new extension** button, go to your packaged .vsix file, and select **Upload**.
 
 You can also upload your extension via the command line by using the `tfx extension publish` command instead of `tfx extension create`
 to package and publish your extension in one step.
@@ -501,13 +503,13 @@ Create a build and release pipeline on Azure DevOps to help maintain the custom 
 - An [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks&targetId=85fb3d5a-9f21-420f-8de3-fc80bf29054b&utm_source=vstsproduct&utm_medium=ExtHubManageList) extension installed in your organization.
 
 
-You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that variable groups can be made from the Azure DevOps Library tab or through the CLI. Once a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
+You must first create a pipeline library variable group to hold the variables used by the pipeline. For more information about creating a variable group, see [Add and use variable groups](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=classic). Keep in mind that you can make variable groups from the Azure DevOps Library tab or through the CLI. After a variable group is made, use any variables within that group in your pipeline. Read more on [How use a variable group](../../pipelines/library/variable-groups.md?view=azure-devops&tabs=yaml#use-a-variable-group).
 
 Declare the following variables in the variable group:
-- `publisherId`: ID of your marketplace publisher
-- `extensionId`: ID of your extension, as declared in the vss-extension.json file
-- `extensionName`: Name of your extension, as declared in the vss-extension.json file
-- `artifactName`: Name of the artifact being created for the VSIX file
+- `publisherId`: ID of your marketplace publisher.
+- `extensionId`: ID of your extension, as declared in the vss-extension.json file.
+- `extensionName`: Name of your extension, as declared in the vss-extension.json file.
+- `artifactName`: Name of the artifact being created for the VSIX file.
 
 Create a new Visual Studio Marketplace service connection and grant access permissions for all pipelines. For more information about creating a service connection, see [Service connections](../../pipelines/library/service-endpoints.md?view=azure-devops&tabs=yaml).
 
@@ -664,7 +666,7 @@ To run unit tests, add a custom script to the package.json file. For example:
     - Test results files: **/ResultsFile.xml
     - Search folder: $(System.DefaultWorkingDirectory)
 
-Once the test results have been published, the output under the tests tab should look like this:
+After the test results have been published, the output under the tests tab should look like this:
 
 ![Screenshot of the test result example.](media/test-results-example.png)
 
@@ -705,7 +707,7 @@ Once the test results have been published, the output under the tests tab should
 
 1. Add "Use Node CLI for Azure DevOps (tfx-cli)" to install the tfx-cli onto your build agent.
 
-1. Add "Download build artifacts" task to download the artifacts onto a new job. Use the following inputs:
+1. Add the "Download build artifacts" task to download the artifacts onto a new job. Use the following inputs:
     - Download artifacts produced by: If you're downloading the artifact on a new job from the same pipeline, select "Current build." If you're downloading on a new pipeline, select "Specific build."
     - Download type: Choose "Specific artifact" to download all files that were published.
     - Artifact name: The published artifact's name.
@@ -730,13 +732,13 @@ Install an extension that is shared with you in just a few steps:
 2. In the **Extensions** tab, find your extension in the "Extensions Shared With Me" group and select the extension link.
 3. Install the extension.
 
-If you can't see the **Extensions** tab, make sure you're in the control panel (the project-collection-level administration page, `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
+If you can't see the **Extensions** tab, make sure you're in the control panel (the administration page at the project collection level, `https://dev.azure.com/{organization}/_admin`) and not the administration page for a project.
 
 If you don't see the **Extensions** tab on the control panel, then extensions aren't enabled for your organization. You can get early access to the extensions feature by joining the Visual Studio Partner Program.
 
 For build and release tasks to package and publish Azure DevOps Extensions to the Visual Studio Marketplace, you can download [Azure DevOps Extension Tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vsts-developer-tools-build-tasks).
 
-## Next steps
+## Helpful links
 * [Extension Manifest Reference](./manifest.md)
 * [Build/Release Task JSON Schema](./integrate-build-task.md)
 * [Build/Release Task Examples](https://github.com/Microsoft/vso-agent-tasks/tree/master/Tasks)
