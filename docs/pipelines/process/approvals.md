@@ -168,6 +168,8 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
+* * *
+
 ## FAQs
 
 ### The checks defined did not start. What happened?
