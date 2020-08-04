@@ -141,13 +141,6 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in this version of TFS.
 ::: moniker-end
@@ -250,13 +243,6 @@ stages:
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
-
-::: moniker-end
-
 ::: moniker range="< azure-devops-2019"
 YAML is not supported in this version of TFS.
 ::: moniker-end
@@ -318,13 +304,6 @@ stages:
 ```
 
 You cannot currently specify that a stage run based on the value of an output variable set in a previous stage.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-> [!NOTE]
-> Support for stages was added in Azure DevOps Server 2019.1.
 
 ::: moniker-end
 
