@@ -4,7 +4,7 @@ description: Feeds manage and set permissions for packages in Azure DevOps Servi
 ms.assetid: 21673f53-68a3-4d44-866e-ad29435a3fde
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 10/28/2019
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -24,6 +24,9 @@ Until now, all feeds were scoped to an organization, they could be viewed and ac
 
 Only project-scoped feeds can be made public, see the following section on [public feeds](#public-feeds). [Learn more](../feeds/project-scoped-feeds.md) about the differences between project-scoped and organization-scoped feeds.
 
+> [!NOTE]
+> To access a feed in a different organization, a user must be given access to the project hosting that feed.
+
 ## Public feeds
 
 Public feeds can be used to share your packages publicly, with anyone on the Internet; these users don't have to be a member of your organization or enterprise, or even have an Azure DevOps account at all. 
@@ -38,9 +41,9 @@ There some important things to note regarding public feeds:
 
 ## Restoring a deleted feed
 
-If you accidentally delete a feed, Azure Artifacts gives you the opportunity to recover the feed and return it to original state without side effects. The deleted feed will be available to recover for 30 days and then permanently deleted. During this time, the feed name will be reserved and unable to reuse. Also, packages cannot be downloaded from the feed and write access is suspended (you can't delete, promote, push etc...).
+If you accidentally delete a feed, Azure Artifacts gives you the opportunity to recover the feed and return it to original state without side effects. The deleted feed will be available to recover for 30 days and then permanently deleted. During this time, the feed name will be reserved and unable to reuse. Also, packages cannot be downloaded from the feed and write access is suspended (you can't delete, promote, push etc.).
 
-You can view your your feeds pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
+You can view your feed's pending deletion in your **Feeds** dropdown under the **Deleted Feeds** sub header.
 
 ![Go to Azure Artifacts](media/deleted-feeds-dropdown.png)
 
