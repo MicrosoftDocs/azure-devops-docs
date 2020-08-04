@@ -50,7 +50,7 @@ Individual contributors can set their user preferences, enable features that are
 <td><strong>General</strong></td>
 <td><ul>
 <li><a href="set-your-preferences.md" data-raw-source="[Set your preferences](set-your-preferences.md)">Set your preferences</a></li> 
-<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li>
+<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Manage or enable features](../../project/navigation/preview-features.md)">Enable preview features</a></li>
 </ul></td>
 <td>For an overview of default permission assignments by role, see <a href="../security/permissions-access.md" data-raw-source="[Default permissions and access](../security/permissions-access.md)">Default permissions and access</a>.</td>
 </tr>
@@ -194,7 +194,7 @@ From the administrative **Project settings** pages, you can configure settings a
 <li>Set project description</li>
 <li><a href="../public/make-project-public.md" data-raw-source="[Change the project visibility, public or private](../public/make-project-public.md)">Change the project visibility, public or private</a> (Azure DevOps Services only) </li>
 </ul></td>
-<td>Update the project description or change it&#39;s visibility.</p></td>
+<td>Update the project description or change its visibility.</p></td>
 </tr>
 <tr>
 <td><strong>Services</strong> </td>
@@ -345,7 +345,7 @@ For an overview of managing your organization, see [About organization managemen
 <tr>
 <td><strong>Preview features</strong></td>
 <td><ul>
-<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Enable preview features](../../project/navigation/preview-features.md)">Enable preview features</a></li>
+<li><a href="../../project/navigation/preview-features.md" data-raw-source="[Manage or enable features](../../project/navigation/preview-features.md)">Enable preview features</a></li>
 </ul></td>
 <td>Organization administrators can enable or disable account-level features that are in preview.</td>
 </tr>

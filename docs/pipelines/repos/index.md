@@ -26,5 +26,5 @@ YAML pipelines are a new form of pipelines that have been introduced in Azure De
 | [GitHub](github.md)                    |Yes|Yes|No|No
 | [GitHub Enterprise Server](github-enterprise.md)     |Yes|Yes|TFS 2018.2 and higher|No
 | [Bitbucket Cloud](bitbucket.md)        |Yes|Yes|No|No
-| [BitBucket Server](on-premises-bitbucket.md) |No|Yes|Yes|Yes
+| [Bitbucket Server](on-premises-bitbucket.md) |No|Yes|Yes|Yes
 | Subversion                |No|Yes|Yes|No|

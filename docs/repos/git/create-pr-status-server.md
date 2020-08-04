@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Create a web server to listen to pull request events and post status on the pull request status API.
 ms.assetid: 2653589c-d15e-4dab-b8b0-4f8236c4a67b
 ms.technology: devops-code-git
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 10/31/2018
 monikerRange: '>= tfs-2018'

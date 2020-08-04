@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Get files or folders under TFVC version control using the Get command
 ms.assetid: f374dfcb-9c1b-4cab-9a20-3c81d29593a3
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

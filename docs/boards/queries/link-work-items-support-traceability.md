@@ -86,7 +86,7 @@ You can create links between work items by using one of the links control tabs w
 
 From the new work item form, you can add a link using the **Related Work** section or from the **Links** tab.
 
-Open a work item and choose the ![ ](../media/icons/Action_Add.png) plus icon to add a link. 
+Open a work item and choose the :::image type="icon" source="../media/icons/Action_Add.png" border="false"::: plus icon to add a link. 
 
 ![Web portal, work item form, Related work section](media/link-work-items-new-form-control.png) 
 
@@ -97,7 +97,7 @@ Choose **Existing item** to link to a work item or other object using any suppor
 From the **Related Work** or **Links** tab, you can also perform these actions: 
 
 - Open an associated item or object: choose the linked item  
-- Delete a link: highlight it and choose the ![ ](../media/icons/delete_icon.png) delete icon  
+- Delete a link: highlight it and choose the :::image type="icon" source="../media/icons/delete_icon.png" border="false"::: delete icon  
 
 From a query results page, you can also perform these actions: 
 - Link selected items to a new work item  
@@ -169,7 +169,7 @@ The following image shows the full set of link types used in linking test manage
 
 ![Link types used to link test objects](media/link-tracking-work-item-test-case-link-types.png)  
 
-For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/docs/test/mtm/share-steps-between-test-cases). 
+For example, when you add Shared Steps to a Test Case, they are automatically linked using the **Test Case/Shared Steps** link types. See [Share steps between test cases](/previous-versions/azure/devops/test/mtm/share-steps-between-test-cases?view=azure-devops). 
 
 **Test case work item form (TFS 2015)**
 

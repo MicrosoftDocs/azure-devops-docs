@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Merge Command
 ms.assetid: 4075b4a8-1d11-49d5-8dbe-4fd00cdb0fca
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

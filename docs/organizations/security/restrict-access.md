@@ -13,7 +13,7 @@ ms.date: 07/09/2020
 
 # Grant or restrict access
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 You can grant or restrict access to resources that you manage in Azure DevOps. You may want to open up or close down access to a select set of features and for a select set of users. While the built-in security groups provide a standard set of permission assignments, you may need additional security requirements not met by these assignments.
 
@@ -161,11 +161,8 @@ See <a href="../../report/dashboards/dashboard-permissions.md" data-raw-source="
 
 <a id="restrict-modifications-wits" /> 
 
-::: moniker range=">= azure-devops-2019"
 
 ## Restrict modification of select fields based on a user or group 
- 
-::: moniker-end
 
 [!INCLUDE [temp](../../includes/restrict-modification-fields-for-not.md)]
 

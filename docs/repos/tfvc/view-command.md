@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Retrieve a file using the TFVC View Command for Azure DevOps Services or TFS
 ms.assetid: d67fcb55-6f54-434f-ba05-4564f976b8d9
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Configure Check-Out Settings
 ms.assetid: 9f4eb366-7e99-49f9-899d-cf3209c0ff72
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

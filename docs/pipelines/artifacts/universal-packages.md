@@ -85,7 +85,11 @@ The Universal Packages task automatically selects the next major, minor, or patc
 
 # [YAML](#tab/yaml)
 
-In the **Universal Packages** snippet that you added previously, add the `versionOption` key with the `major`, `minor`, `patch`, or `custom` value. If you enter the `custom` value, you must also provide the `versionPublish` key.
+In the **Universal Packages** snippet that you added previously, add a `versionOption`. The options for publishing a new package version are: `major`, `minor`, `patch`, or `custom`.
+
+Selecting `custom` allows you to specify any SemVer2 compliant version number for your package. The other options will get the latest version of the package from your feed and increment the chosen version segment by 1. So if you have a _testPackage v1.0.0_, and you publish a new version of _testPackage_ and select the _major_ option, your package version number will be 2.0.0. If you select the _minor_ option, your package version will be 1.1.0, and if you select the _patch_ option, your package version will be 1.0.1.
+
+One thing to keep in mind is that if you select the `custom` option, you must also provide a `versionPublish`.
 
 ```yaml
 - task: UniversalPackages@0

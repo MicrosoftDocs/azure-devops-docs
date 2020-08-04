@@ -15,7 +15,7 @@ ms.date: 07/14/2020
 
 [!INCLUDE [temp](../includes/version-azure-devops.md)]
 
-Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and in preview for Azure DevOps Server 2019. 
+Analytics provides the reporting platform for Azure DevOps. Analytics is generally available for Azure DevOps Service and Azure DevOps Server 2020. It is in preview for Azure DevOps Server 2019. 
 
 
 ::: moniker range=">= azure-devops-2019 < azure-devops"
