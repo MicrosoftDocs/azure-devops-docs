@@ -293,7 +293,7 @@
       href: targets/webapp.md
 - name: Deploy apps (Classic)
   items:
-  - name: Release Pipelines
+  - name: Release pipelines
     href: release/index.md
   - name: Deploy from multiple branches
     href: release/deploy-mulitple-branches.md
