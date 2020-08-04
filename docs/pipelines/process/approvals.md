@@ -170,7 +170,7 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 * * *
 
-## FAQs
+## FAQ
 
 ### The checks defined did not start. What happened?
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
