@@ -551,7 +551,7 @@ For an RBAC enabled cluster, a ServiceAccount is created in the chosen namespace
 For an RBAC disabled cluster, a ServiceAccount is created in the chosen namespace. But the created ServiceAccount has cluster-wide privileges (across namespaces).
 
 > [!NOTE]
-> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you are unable to see subscriptions from other Azure tenants, please check you AAD permissions in those tenants.
+> This option lists all the subscriptions the service connection creator has access to *across different Azure tenants*. If you are unable to see subscriptions from other Azure tenants, please check your AAD permissions in those tenants.
 
 **Service account option**
 
