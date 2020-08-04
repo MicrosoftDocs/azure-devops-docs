@@ -29,7 +29,7 @@ A work item type can be exported as XML using `witadmin` tool, that includes the
 ```
 
 <br>
-<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the `Weblayout` Section a comment blob is present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions are listed with their IDs and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
+<strong>Step 3:</strong>  This creates a file in the directory that you specified. Inside this file, navigate to the section called &quot;WebLayout&quot;. Inside the &quot;Weblayout&quot Section a comment blob is present that specifies what extensions targeting work item form are installed in your collection. For each extension, all its form contributions are listed with their IDs and inputs (if it&#39;s a Control contribution). In the example below, the comment shows that the &quot;color-control-dev&quot; extension has been installed on the collection which has one control contribution that takes 2 inputs -
 
 ```xml
         <!--**********************************Work Item Extensions***************************
@@ -129,5 +129,5 @@ Note that if a control contribution has any required input defined, users must g
 
 
 <br>
-<strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using `witadmin`.
+<strong>Step 7:</strong>  Finally, import this <em>.xml</em> file, using <code>witadmin</code>.
 <code>witadmin importwitd /collection:CollectionURL /p:Project /f:FileName</code> 
