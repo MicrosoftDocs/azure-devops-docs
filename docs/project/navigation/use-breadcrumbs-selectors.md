@@ -8,7 +8,7 @@ ms.assetid:
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2017'
-ms.date: 02/08/2019
+ms.date: 07/30/2020 
 ---
 
 
@@ -163,7 +163,7 @@ Choose the **Deployment** breadcrumb link to return to the *Deployment* folder.
 
 ## Directories 
 
-Directories provide a filterable list of all artifacts defined for a service area. Often times when you navigate to an application, it will open the application's directory. 
+Directories provide a filterable list of all artifacts defined for a service area. Often when you navigate to an application, it will open the application's directory. 
 
 For example, here is the **Boards>Boards** directory. 
 
@@ -176,14 +176,26 @@ It lists boards in the following order:
 - All boards of teams that you belong to
 - All boards defined for the project in alphabetical order. 
 
-Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list as described in [Filter basics](filter-basics.md).
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list as described in [Filter basics](filter-basics.md).
 
 From a specific page, you can open the directory from the breadcrumbs or a selector. For example, choose **Browse all boards** from the Boards selector. 
 
-> [!div class="mx-tdCol2BreakAll"]  
-> | Open from breadcrumb | Open from selector |
-> |------|---------|
-> | ![Open Boards directory from breadcrumb](media/breadcrumbs/open-directory-boards-from-breadcrumbs.png)|![Open Boards directory from selector](media/breadcrumbs/open-directory-boards.png)|
+:::row:::
+   :::column span="2":::
+      **Open from breadcrumb**
+   :::column-end:::
+   :::column span="":::
+      **Open from selector**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="2":::
+      :::image type="content" source="media/breadcrumbs/open-directory-boards.png" alt-text="Open Boards directory from selector":::
+   :::column-end:::
+   :::column span="":::
+      :::image type="content" source="media/breadcrumbs/open-directory-boards-from-breadcrumbs.png" alt-text="Open Boards directory from breadcrumb":::
+   :::column-end:::
+:::row-end:::
 
 ::: moniker-end
 

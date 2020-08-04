@@ -335,7 +335,7 @@ Azure Active Directory (Azure AD) users will be able to see a users **Reports to
 
 In the past, our REST documentation has been focused solely on using PATs for access to our REST APIs. We’ve updated our documentation for extensions and integrations to give guidance on how best to authenticate given your application scenario. Whether you’re developing a native client application, interactive web app, or simply calling an API via Powershell, we have clear sample on how best to authenticate with VSTS. For more information see the [documentation](https://visualstudio.microsoft.com/docs/integrate/get-started/authentication/authentication_guidance).
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 

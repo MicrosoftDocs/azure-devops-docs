@@ -33,7 +33,7 @@ Azure DevOps' structure consists of **organizations** that contain **projects**.
 
 Azure DevOps can reflect your GitHub structure with:
 * An Azure DevOps **organization** for your GitHub **organization or user account**
-* Azure DevOps **projects** for your GitHub **repositories**
+* Azure DevOps **Projects** for your GitHub **repositories**
 
 ![GitHub structure mapped to Azure DevOps](media/github-structure-mapped-to-azure-devops.png)
 
@@ -368,7 +368,10 @@ pr: none
 For more information, see [PR trigger](../yaml-schema.md#pr-trigger) in the [YAML schema](../yaml-schema.md).
 
 > [!NOTE]
-> If your `pr` trigger isn't firing, ensure that you have not [overridden YAML PR triggers in the UI](../troubleshooting/troubleshooting.md#overridden-yaml-trigger-setting).
+> If your `pr` trigger isn't firing, follow the troubleshooting steps in the [FAQ](#failing-triggers).
+
+>[!NOTE]
+>[Draft pull requests](https://docs.github.com/github/collaborating-with-issues-and-pull-requests/about-pull-requests#draft-pull-requests) do not trigger a pipeline.
 
 # [Classic](#tab/classic/)
 
@@ -561,6 +564,14 @@ Depending on the authentication type and ownership of the repository, specific p
 - If you're using OAuth, see [OAuth authentication](#oauth-authentication).
 - If you're using PATs, see [Personal access token (PAT) authentication](#personal-access-token-pat-authentication).
 
+#### When I select a repository during pipeline creation, I get an error "The repository {repo-name} is in use with the Azure Pipelines GitHub App in another Azure DevOps organization."
+
+This means that your repository is already associated with a pipeline in a different organization. CI and PR events from this repository won't work as they will be delivered to the other organization. Here are the steps you should take to remove the mapping to the other organization before proceeding to create a pipeline.
+
+  1. Open a pull request in your GitHub repository, and make the comment `/azp where`. This reports back the Azure DevOps organization that the repository is mapped to. 
+  
+  2. To change the mapping, uninstall the app from the GitHub organization, and re-install it. As you re-install it, make sure to select the correct organization when you are redirected to Azure DevOps.
+
 ### Failing triggers
 
 [!INCLUDE [qa](includes/qa2.md)]
@@ -581,7 +592,11 @@ Depending on the authentication type and ownership of the repository, specific p
 
 * The traffic from Azure DevOps could be throttled by GitHub. When Azure Pipelines receives a notification from GitHub, it tries to contact GitHub and fetch more information about the repo and YAML file. If you have a repo with a large number of updates and pull requests, this call may fail due to such throttling. In this case, see if you can reduce the frequency of builds by using batching or stricter path/branch filters.
 
+[!INCLUDE [qa](includes/qa2-1.md)]
+
 [!INCLUDE [qa](includes/qa3.md)]
+
+[!INCLUDE [qa](includes/qa4.md)]
 
 ### Failing checkout
 

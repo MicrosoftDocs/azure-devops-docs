@@ -38,7 +38,7 @@ In this tutorial, learn how to do the following tasks:
 ## View your personal notifications
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -121,7 +121,7 @@ This view shows all subscriptions that you've created or that have been created 
 ::: moniker range="azure-devops"  
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 
@@ -160,7 +160,7 @@ With custom personal subscriptions, you can define precise criteria for the even
 ::: moniker range="azure-devops"  
 
 > [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../project/navigation/preview-features.md).
+> To enable the new user interface for the Project Permissions Settings Page, see [Manage or enable features](../project/navigation/preview-features.md).
 
 #### [Preview page](#tab/preview-page) 
 

@@ -50,10 +50,6 @@
       href: ../repos/git/create-pr-status-server-with-azure-functions.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
 - name: Reference
   items:
-    - name: Service hooks consumers and actions
-      href: ../service-hooks/consumers.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
-    - name: Service hooks events
-      href: ../service-hooks/events.md?toc=/azure/devops/marketplace-extensibility/toc.json&bc=/azure/devops/marketplace-extensibility/breadcrumb/toc.json
     - name: Azure DevOps Services REST API
       href: https://docs.microsoft.com/rest/api/azure/devops/?view=azure-devops-rest-5.1
     - name: REST APIs for TFS 2015, 2017, and 2018
@@ -124,7 +120,7 @@
                   href: previous-apis/git/pull-requests/work-items.md
             - name: Pushes
               href: previous-apis/git/pushes.md
-            - name: Refs
+            - name: References
               href: previous-apis/git/refs.md
             - name: Repositories
               href: previous-apis/git/repositories.md
@@ -159,7 +155,7 @@
               href: previous-apis/packaging/maven.md
             - name: Npm
               href: previous-apis/packaging/npm.md
-            - name: Nuget
+            - name: NuGet
               href: previous-apis/packaging/nuget.md
             - name: Packages
               href: previous-apis/packaging/packages.md

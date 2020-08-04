@@ -148,32 +148,25 @@ If you signed up for Azure DevOps with an existing MSA or GitHub identity, you'r
 
 You can add and invite others to work on your project by adding their email address to your organization and project.
 
-1. From your project web portal, choose the ![](../../media/icons/project-icon.png) Azure DevOps icon, and then select ![gear icon](../../media/icons/gear-icon.png) **Organization settings**. 
+1. From your project web portal, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps icon, and then select :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: **Organization settings**. 
 
    ![Open Organization settings](../../media/settings/open-admin-settings-vert-2.png)
 
 2. Select **Users** > **Add new users**.
 
-   :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users":::]
+   :::image type="content" source="../../media/add-new-users.png" alt-text="Select Add users"::: 
 
-3. Complete the form by entering or selecting the following information:
-	<ul>
-	<li>**Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.</li>
-	<li>**Access level:** Assign one of the following access levels: 
-		<ul>
-        <li><strong>Basic</strong>: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free. </li>
-        <li><strong>Stakeholder</strong>: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users <strong>Stakeholder</strong> access for free.</li>
-		</ul>
-	</li>
-    <li><strong>Add to project:</strong> Select the project you named in the preceding procedure.</li>
-    <li><strong>Azure DevOps Groups:</strong> Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):
-	<ul>
-        <li><strong>Project Readers</strong>: Assign to users who only require read-only access. </li>
-        <li><strong>Project Contributors</strong>: Assign to users who will contribute fully to the project. </li>
-        <li><strong>Project Administrators</strong>: Assign to users who will configure project resources.</li>
-		</ul></li>
-	</ul>
-
+3. Complete the form by entering or selecting the following information:  
+	- **Users:** Enter the email addresses (Microsoft accounts) or GitHub IDs for the users. You can add several email addresses by separating them with a semicolon (;). An email address appears in red when it's accepted.  
+	- **Access level:** Assign one of the following access levels: 
+		- **Basic**: Assign to users who must have access to all Azure Boards features. You can grant up to five users <strong>Basic</strong> access for free.  
+        - **Stakeholder**: Assign to users who will have limited access to features to view, add, and modify work items. You can assign an unlimited number of users **Stakeholder** access for free.   
+	- **Add to project**: Select the project you named in the preceding procedure.  
+    - **Azure DevOps Groups**: Select one of the following security groups which will determine the permissions the users have to perform select tasks (To learn more, see [Default permissions and access for Azure Boards](permissions-access-boards.md).):  
+        - **Project Readers**: Assign to users who only require read-only access.   
+        - **Project Contributors**: Assign to users who will contribute fully to the project.  
+        - **Project Administrators**: Assign to users who will configure project resources.  
+		
 	> [!NOTE]  
 	> Add email addresses for [personal Microsoft accounts](https://account.microsoft.com/account) and IDs for GitHub accounts unless you plan to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) to authenticate users and control organization access. If a user doesn't have a Microsoft or GitHub account, ask the user to [sign up](https://signup.live.com/) for a Microsoft account or a GitHub account.  
 

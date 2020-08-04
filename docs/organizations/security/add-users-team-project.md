@@ -13,7 +13,7 @@ ms.date: 11/07/2019
 
 # Add users to a project or team
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 In this quickstart, learn how to add users to a project or specific team. For anyone to access a project, they must be added to one of the default security groups or a custom group. Usually you add them to the Contributors group. For a quick look at what permissions are assigned to the default groups, see [Permissions and access](permissions-access.md).
 
@@ -150,7 +150,7 @@ If you are adding a user to Azure DevOps for the first time, see [Add account us
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli) 
 
-Azure DevOps CLI commands aren't supported for adding users to a project at this time. 
+Azure DevOps CLI commands aren't supported for adding users to a project at this time.
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 * * *
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).
 
@@ -209,7 +209,7 @@ Azure DevOps CLI commands aren't supported for adding users to a project at this
 
 1. Open the web portal and choose the project where you want to add users or groups. To choose another project, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md).  
 
-2. Choose the ![ ](../../media/icons/gear-icon.png) gear icon to open the administrative context.
+2. Choose the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon to open the administrative context.
 
    ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)  
 
@@ -264,7 +264,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 #### [Preview page](#tab/preview-page) 
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
@@ -288,7 +288,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
@@ -304,7 +304,7 @@ Several Agile tools, like capacity planning, team alerts, and dashboard widgets 
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
@@ -328,7 +328,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
@@ -422,11 +422,11 @@ a48cb46f-7366-4f4b-baf5-b3632398ed1e  Fabrikam Team  The default project team. W
 
 * * *
 
-::: moniker range="= azure-devops-2019"
+::: moniker range="= azure-devops-2019 || azure-devops-2020"
 
 You add team members from **Project Settings>Work>Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Web team and from there the team profile.  
 
@@ -450,7 +450,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, the account is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
 5. To remove members, return to this page, highlight the user name and choose **Remove**.
 
@@ -479,7 +479,7 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
    > [!TIP]
    > You must enter user and group names one at a time. However, after entering a name, it is added to the list, and you can enter another name in the Identities text box before choosing to save your changes.
 
-	You may need to choose the ![ ](../../media/icons/refresh.png) refresh icon to see your updates. 
+	You may need to choose the :::image type="icon" source="../../media/icons/refresh.png" border="false"::: refresh icon to see your updates. 
 
 4. To remove members, return to this page, highlight the user name, and then choose **Remove**.
 
@@ -492,21 +492,22 @@ You add team members from **Project Settings>Work>Team configuration**. You can 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
-## Add users or groups to an access level   
+
+::: moniker range="< azure-devops"
+
+## Add users or groups to an access level
 
 For on-premises deployments, you may need to set the access level for a user or group, particularly if those groups don't belong to the default access level. To learn more, see [Change access levels](change-access-levels.md).
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range=">= tfs-2018 < azure-devops"
 
-## Add users or groups to SQL Server Reports 
+## Add users or groups to SQL Server Reports
 
 If your on-premises deployment is integrated with SQL Server Reports, you need to manage membership for those products separately from their websites. See [Grant permissions to view or create SQL Server reports in Azure DevOps](../../report/admin/grant-permissions-to-reports.md).
 
-::: moniker-end 
-
+::: moniker-end
 
 ::: moniker range="<= tfs-2017"
 ## Add users or groups to SharePoint or SQL Server Reports 
@@ -516,21 +517,17 @@ If your on-premises deployment is integrated with a SharePoint product or SQL Se
 * [Set SharePoint site permissions](../../organizations/security/set-sharepoint-permissions.md)
 * [Grant permissions to view or create SQL Server reports in Azure DevOps Server](../../report/admin/grant-permissions-to-reports.md)
 
-::: moniker-end 
-
+::: moniker-end
 
 ## Next steps
 
 > [!div class="nextstepaction"]
 > [Add administrators or set permissions at the project or collection level](set-project-collection-level-permissions.md) 
 
-
 ## Related articles
-
 
 * To view permissions for yourself or another user, see [View permissions](view-permissions.md).
 * [Set Git or TFVC repository permissions](set-git-tfvc-repository-permissions.md)
 * [Set Git branch permissions](../../repos/git/branch-permissions.md)
 * [Set build and release permissions](../../pipelines/policies/set-permissions.md)
 * [Set permissions and access for work tracking](set-permissions-access-work-tracking.md)
-

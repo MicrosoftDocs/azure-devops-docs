@@ -181,7 +181,7 @@ you'll see the parent epic of the features and backlog items, even if the epic o
 
 ::: moniker range=">= azure-devops-2020"  
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on-s155.png)   
@@ -193,7 +193,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker range="azure-devops-2019"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png).  
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: .  
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on.png)   
@@ -205,7 +205,7 @@ Items that are owned by other teams appear with an information icon, ![ ](../../
 
 ::: moniker range=">= tfs-2017 <= tfs-2018"
 
-Items that are owned by other teams appear with an information icon, ![ ](../../media/icons/info.png). 
+Items that are owned by other teams appear with an information icon,  :::image type="icon" source="../../media/icons/info.png" border="false"::: . 
 
 > [!div class="mx-imgBorder"]  
 > ![Backlog that shows parents and multi-team ownership](media/multi-ownership/customer-service-backlog-parents-on-prev-nav.png)   

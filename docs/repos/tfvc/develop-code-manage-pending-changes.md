@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Develop code and manage pending changes
 ms.assetid: dded21d3-4869-4e19-bca4-62e27179539c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

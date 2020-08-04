@@ -12,6 +12,8 @@ ms.date: 03/10/2017
 
 # Use the TFS Cross Platform Command Line with TFS using basic authentication or personal access tokens (PATs)
 
+[!INCLUDE [version-all](../../../includes/version-all.md)]
+
 > [!IMPORTANT]
 > Basic authentication is not recommended.  Turning on IIS basic authentication causes various issues, and you should 
 > use [personal access tokens (PATs)](../../../organizations/accounts/use-personal-access-tokens-to-authenticate.md) instead.  For example, if you turn on IIS basic authentication, GIT command line will stop working.

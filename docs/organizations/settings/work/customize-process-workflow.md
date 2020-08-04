@@ -90,7 +90,7 @@ States you add appear in the drop-down menu for the States field shown in work i
 
 	> [!div class="mx-imgBorder"]
 	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
-1. (Optional) To change the sequence of the State within the drop-down menu, choose the ![ ](../../../media/icons/actions-icon.png) context menu icon and choose **Move up** or **Move down**. 
+1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 
 
 	> [!div class="mx-imgBorder"]
 	> ![Move up State](media/customize-workflow/move-state-sequence.png) 

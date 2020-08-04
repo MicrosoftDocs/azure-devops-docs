@@ -12,11 +12,11 @@ ms.date: 02/14/2019
 monikerRange: 'azure-devops'
 ---
 
-# Quickstart: View project homepage or a dashboard
+# View project homepage or a dashboard
 
 [!INCLUDE [temp](includes/version-public-projects.md)]  
 
-In this quickstart, you learn how to view the project homepage, which typically provides information about the project, and dashboards, which provide charts, links, or focused information for a team or project.
+In this article, learn how to view the project homepage, which typically provides information about the project, and dashboards, which provide charts, links, or focused information for a team or project.
 
 If you're a contributor, you can also [edit README files for a project](../projects/project-vision-status.md) and [add and edit dashboards](../../report/dashboards/dashboards.md).  
 

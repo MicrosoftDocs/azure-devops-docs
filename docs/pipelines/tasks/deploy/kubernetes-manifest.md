@@ -111,7 +111,7 @@ The following list shows the key benefits of this task:
     <br/>
     Acceptable values are <b>pod</b> and <b>smi</b>. The default value is <b>pod</b>.<br/>
     <br/>
-    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-wd.md)">TrafficSplit</a> objects.
+    For the value <b>smi</b>, the percentage traffic split is done at the request level by using a service mesh. A service mesh must be set up by a cluster admin. This task handles orchestration of SMI <a href="https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-WD.md" data-raw-source="TrafficSplit](https://github.com/servicemeshinterface/smi-spec/blob/master/apis/traffic-split/traffic-split-WD.md)">TrafficSplit</a> objects.
     <br/><br/>
     For the value <b>pod</b>, the percentage split isn't possible at the request level in the absence of a service mesh. Instead, the percentage input is used to calculate the replicas for baseline and canary. The calculation is a percentage of replicas that are specified in the input manifests for the stable variant.</td>
   </tr>

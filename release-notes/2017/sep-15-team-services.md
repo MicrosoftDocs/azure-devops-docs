@@ -322,7 +322,7 @@ See the [documentation](https://aka.ms/vsmarketplace_parser) for more informatio
 > [!div class="mx-imgBorder"]
 > ![markdown-it parser](media/09_15_18.png)
 
-## Feedback
+## How to provide feedback
 
 We would love to hear what you think about these features. Report a problem or provide a suggestion if you have ideas on things you’d like to see us prioritize through the new feedback menu.
 
