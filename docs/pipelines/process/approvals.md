@@ -191,4 +191,4 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 ### How can I use output variables from previous stages in a check?
 By default, only pre-defined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
-* * *
+
