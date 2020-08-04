@@ -11,7 +11,7 @@ Running an ASP.NET Core app on Windows requires some dependencies.
 
 On your VM, open an **Administrator: Windows PowerShell** console. Install IIS and the required .NET features:
 
-```PowerShell
+```powershell
 # Install IIS
 Install-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features
 
@@ -26,3 +26,4 @@ Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wa
 # Restart the web server so that system PATH updates take effect
 Stop-Service was -Force
 Start-Service w3svc
+```

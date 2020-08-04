@@ -1,5 +1,5 @@
 ---
-title: Service hooks consumers for Azure DevOps Services
+title: Service hook consumers for Azure DevOps Services
 description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
@@ -9,7 +9,7 @@ monikerRange: '>= tfs-2017'
 ms.date: 07/27/2020
 ---
 
-# Service hook consumers
+# Service hook consumers for Azure DevOps Services
 
 [!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
