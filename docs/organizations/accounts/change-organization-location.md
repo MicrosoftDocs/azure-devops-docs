@@ -31,7 +31,7 @@ When you [create an organization](create-organization.md), you can choose the re
 
 ## Prerequisites
 
-You must be a [Project Collection Administrator or an organization Owner](../security/lookup-organization-owner-admin.md) to add a privacy policy URL.
+You must be a [Project Collection Administrator or the organization Owner](../security/lookup-organization-owner-admin.md) to change your organization region.
 
 ## Change organization region
 
