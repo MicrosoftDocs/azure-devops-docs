@@ -10,7 +10,7 @@ author: chcomley
 ms.date: 11/04/2019
 ---
 
-# Service endpoints
+# Create a service endpoint
 
 [!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
