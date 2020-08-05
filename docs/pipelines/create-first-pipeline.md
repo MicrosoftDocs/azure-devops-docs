@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.assetid: 038A5329-1B8F-46D9-A0C3-DA3FCFA43996
 ms.author: sdanie
 author: steved0x
-ms.date: 04/28/2020
+ms.date: 08/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -229,7 +229,7 @@ You can also create new build or release definitions by exporting an existing on
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 [!INCLUDE [temp](includes/concept-rename-note.md)]
 
@@ -243,7 +243,7 @@ You can also create new build or release definitions by exporting an existing on
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 We'll show you how to use the classic editor in Azure DevOps Server 2019 to create a build and release that prints "Hello world".
 
@@ -255,7 +255,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 ## Prerequisites
 
@@ -268,7 +268,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Go to **Azure Repos**. (The **Code** hub in the previous navigation)
 
@@ -290,7 +290,7 @@ We'll show you how to use the classic editor in TFS to create a build and a rele
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 <a name="add-script"></a>
 
@@ -300,7 +300,7 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Go to **Azure Repos**.
 
@@ -366,7 +366,7 @@ Create a PowerShell script that prints `Hello world`.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > In this tutorial, our focus is on CI/CD, so we're keeping the code part simple. We're working in an Azure Repos Git repository directly in your web browser.
 >
@@ -378,7 +378,7 @@ Create a build pipeline that prints "Hello world."
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Select **Azure Pipelines**, it should automatically take you to the **Builds** page.
 
@@ -478,7 +478,7 @@ Create a build pipeline that prints "Hello world."
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > A build pipeline is the entity through which you define your automated build pipeline. In the build pipeline, you compose a set of tasks, each of which perform a step in your build. The task catalog provides a rich set of tasks for you to get started. You can also add PowerShell or shell scripts to your build pipeline.
 
@@ -488,7 +488,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. On the **Tasks** tab, select the plus sign **( + )** to add a task to **Job 1**.
 
@@ -521,7 +521,7 @@ A typical build produces an artifact that can then be deployed to various stages
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > Artifacts are the files that you want your build to produce. Artifacts can be nearly anything your team needs to test or deploy your app. For example, you've got a .DLL and .EXE executable files and .PDB symbols file of a C# or C++ .NET Windows app.
 >
@@ -541,7 +541,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Select **Save & queue**, and then select **Save & queue**.
 
@@ -622,7 +622,7 @@ Save and queue a build manually and test your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 ## Add some variables and commit a change to your script
 
@@ -636,7 +636,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    ::: moniker-end
 
-   ::: moniker range="azure-devops-2019"
+   ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
    > [!div class="mx-imgBorder"] 
    > ![build console](media/get-started-designer/powershell-task-2-azure-devops-newnavon.png)
@@ -661,7 +661,7 @@ We'll pass some build variables to the script to make our pipeline a bit more in
 
    ::: moniker-end
 
-   ::: moniker range="<= azure-devops-2019"
+   ::: moniker range="<= azure-devops-2020"
 
    **Arguments**
 
@@ -692,7 +692,7 @@ Next you'll add the arguments to your script.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 Now you can see the results of your changes. Go to **Azure Pipelines** and select **Queued**. Notice under the **Queued or running** section that a build is automatically triggered by the change that you committed.
 
@@ -704,7 +704,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 1. Select the new build that was created and view its log.
 
@@ -712,7 +712,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-   ::: moniker range="azure-devops-2019"
+   ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
    > [!div class="mx-imgBorder"] 
    > ![Build a summary PowerShell script log](media/get-started-designer/build-summary-powershell-script-log-azure-devops-newnav.png)
@@ -726,7 +726,7 @@ Now you can see the results of your changes. Go to the **Build and Release** pag
 
    ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > We just introduced the concept of build variables in these steps. We printed the value of a variable that is automatically predefined and initialized by the system. You can also define custom variables and use them either in arguments to your tasks, or as environment variables within your scripts. To learn more about variables, see [Build variables](build/variables.md).
 
@@ -740,7 +740,7 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Go to the **Pipelines** tab, and then select **Releases**.
 
@@ -892,7 +892,7 @@ Define the process for running the script in two stages.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > A release pipeline is a collection of stages to which the application build artifacts are deployed. It also defines the actual deployment pipeline for each stage, as well as how the artifacts are promoted from one stage to another.
 >
@@ -904,7 +904,7 @@ Run the script in each stage.
 
 ::: moniker-end
 
- ::: moniker range="azure-devops-2019"
+ ::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Create a new release.
 
@@ -961,7 +961,7 @@ Run the script in each stage.
 
    ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > You can track the progress of each release to see if it has been deployed to all the stages. You can track the commits that are part of each release, the associated work items, and the results of any test runs that you've added to the release pipeline.
 
@@ -991,7 +991,7 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"] 
 > ![release script step final log](media/get-started-designer/release-script-step-final-log-azure-devops-newnavon.png)
@@ -1013,14 +1013,14 @@ Your new code automatically is deployed in the **QA** stage, and then in the **P
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 > In many cases, you probably would want to edit the release pipeline so that the production deployment happens
   only after some testing and approvals are in place. See [Approvals and gates overview](release/approvals/index.md).
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 <= azure-devops-2020"
 
 <a name="next-steps"></a>
 
@@ -1082,7 +1082,7 @@ When you're ready to get going with CI/CD for your app, you can use the version 
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 * Clients
 
@@ -1138,7 +1138,7 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"] 
 > ![save-as-draft](media/get-started-designer/save-as-draft-newnav.png)
@@ -1152,13 +1152,13 @@ If you're editing a build pipeline and you want to test some changes that are no
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 You can edit and test your draft as needed.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"] 
 > ![edit draft](media/get-started-designer/edit-draft-newnav.png)
@@ -1172,13 +1172,13 @@ You can edit and test your draft as needed.
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 When you're ready you can publish the draft to merge the changes into your build pipeline.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 > [!div class="mx-imgBorder"] 
 > ![publish draft](media/get-started-designer/publish-draft-newnav.png)
@@ -1192,7 +1192,7 @@ When you're ready you can publish the draft to merge the changes into your build
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 Or, if you decide to discard the draft, you can delete it from the **All Pipeline** tab shown above.
 
@@ -1207,13 +1207,14 @@ To delete a pipeline, navigate to the summary page for that pipeline, and choose
 ::: moniker-end
 
 ::: moniker range="<= azure-devops"
+
 <a name="queueabuild"></a>
 
 ### What else can I do when I queue a build?
 
 ::: moniker-end
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="<= azure-devops-2020"
 
 You can queue builds [automatically](build/triggers.md) or manually.
 
