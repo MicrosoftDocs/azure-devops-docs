@@ -103,9 +103,8 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 ### Set up an Azure Monitor Log stream
 
 1. Create a [Log Analytics workspace](https://aka.ms/adostreamingcreateloganalytics).
-2. Open the workspace and select **Advanced settings**.
-3. Select **Connected Sources** > **Windows Server**. 
-4. Make note of the workspace ID and primary key.
+2. Open the workspace and select **Agents management**.
+3. Make note of the workspace ID and primary key.
 
    :::image type="content" source="media/auditing-streaming/azure-monitor-log-keys.png" alt-text="Make note of workspace ID and primary key":::
 
