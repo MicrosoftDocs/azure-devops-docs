@@ -22,10 +22,10 @@ Learn how to change the Azure subscription that your Azure DevOps organization u
 
 ## Prerequisites
 
-To change or remove your billing subscription, you need the following permissions:
+To change or remove your billing subscription, you need the following:
 
-- [organization Owner](../security/lookup-organization-owner-admin.md) or member of the  [Project Collection Administrators group](../security/set-project-collection-level-permissions.md)  
-- [Owner or Contributor to an Azure subscription](add-backup-billing-managers.md), which you can use to purchase.  
+- [Organization Owner](../security/lookup-organization-owner-admin.md) permissions or be a member of the  [Project Collection Administrators group](../security/set-project-collection-level-permissions.md)  
+- [Owner or Contributor permission for an Azure subscription](add-backup-billing-managers.md), which you can use to purchase
 
 <a id="change-subscription" />
 
