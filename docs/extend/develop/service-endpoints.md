@@ -1,13 +1,13 @@
 ---
 ms.technology: devops-ecosystem
-title: Service endpoints | Extensions for Azure DevOps
-description: Browse through the places where your extension can extend Visual Studio Online for Azure DevOps and Team Foundation Server (TFS).
+title: Create service endpoints | Extensions for Azure DevOps
+description: Browse through the places where your extension can extend Visual Studio Codespace for Azure DevOps and Team Foundation Server (TFS).
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
 ms.author: chcomley
 author: chcomley
-ms.date: 11/04/2019
+ms.date: 08/05/2020
 ---
 
 # Create a service endpoint
@@ -28,16 +28,16 @@ Service endpoints are a way for Azure DevOps and TFS to connect to external syst
 - Certificates or tokens
 - User names and passwords
   
-Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service. 
-Follow this guide to create a new Service Point contribution and leverage it in your extension.
+Extensions are then able to use the service endpoint to acquire the stored details to do the necessary operations on that service. 
+Follow this guide to create a new Service Point contribution and use it in your extension.
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 
 ## Task overview
 
-This article walks through developing a service endpoint by creating an example extension for Azure DevOps or TFS that includes:
-- A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
-- A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
+You can develop a service endpoint by creating an example extension for Azure DevOps or TFS that includes the following items:
+- A custom service endpoint with data sources, which enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
+- A build task, which defines two properties: The service endpoint & a picklist, which has values populated from the REST endpoint data source.
 
 > Note: Service endpoints created by users are created at the project level, not the organization level. 
 
@@ -163,7 +163,7 @@ Add the following `contributions` array underneath the `targets` array of the ba
 > Below is what your endpoint looks like after you've packaged and published your extension. See the [Next Steps](#next-steps) section below for info on how to package and publish.
 
 
-If you have successfully added the service contribution correctly, you see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
+If you've successfully added the service contribution correctly, you see the Fabrikam endpoint when trying to add a new service endpoint to your organization.
 <img alt= "Service endpoint picker" src="./media/service-endpoint-endpoint-picker.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Go ahead and create a service endpoint using the Fabrikam endpoint.
@@ -186,8 +186,8 @@ Inside the `contributions` array from the previous step, add the following objec
     }
 ```
 
-Note that the datasource endpointUrl is usually computed from the url of the endpoint (or a fixed url), and some additional values. 
-For this tutorial this REST call returns nothing and is meant to be replaced by any REST calls you wish to make to your service.
+The datasource endpoint URL is computed from the url of the endpoint (or a fixed url), and some additional values. 
+For this tutorial, this REST call returns nothing and is meant to be replaced by any REST calls you wish to make to your service.
 
 It's possible to use other parameters than the endpoint url for the REST URL, for instance some endpoint properties. 
 For instance, assuming that we had a property in the endpoint named subscriptionId, the REST URL could use it with the following syntax: $(endpoint.subscription)
@@ -200,7 +200,7 @@ The `task.json` file describes your build task.
 > [!NOTE]
 > Take a look at the [build task reference](./integrate-build-task.md) to find the schema for the build task json file. 
 
-Create a `task.json` file in your `BuildTaskFolder` directory, if you have not created this folder yet, do so now. 
+Create a `task.json` file in your `BuildTaskFolder` directory, if you haven't created this folder yet, do so now. 
 
 ```json
 {
@@ -266,15 +266,15 @@ Create a `task.json` file in your `BuildTaskFolder` directory, if you have not c
 
 **The `FabrikamService` input object**
 <br>
-This is the first field, of type connectedService:Fabrikam. connectedService expresses the fact that this is an endpoint type, 
+This field is the first of type connectedService:Fabrikam. connectedService expresses the fact that this is an endpoint type, 
 and Fabrikam is simply the name of the object. 
 
 **The `project` input object**
 <br>
-This is the second field. It's a picklist
+This field is second. It's a picklist
 - This field is populated by a REST call. 
 - The values from the field "project" are taken from the "Projects" REST data source of the custom endpoint.
-- This is expressed in the `dataSourceBindings` array
+- Expressed in the `dataSourceBindings` array
   - The target is the name of the build task field to be populated ("project")
   - The endpointId is the name of the build task field containing the custom endpoint type
   - The REST call is chosen by the dataSourceName
@@ -283,16 +283,15 @@ If you've added the Build Task successfully, you should now see the Build Task w
 <img alt="Service endpoint build task selector" src="./media/service-endpoint-build-task-selector.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 Once you've added the Build Task to your pipeline, confirm that it can see the Fabrikam endpoint you created. 
-The projects dropdown in this tutorial is blank since we are not using a real service. 
+The projects dropdown in this tutorial is blank since we aren't using a real service. 
 Once you replace Fabrikam with your service, replace the Projects call with your own REST api call to leverage dynamic data inside your build task
 <img alt="Service endpoint build task setup" src="./media/service-endpoint-build-task-setup.png" style="padding:10px;display:block;margin-left:auto;margin-right:auto">
 
 ## Authentication Documentation
-The authentication scheme in a service endpoint determines the credentials that would be used to connect to the external service. Check out the
-[authentication schemes documentation](./auth-schemes.md) for more information and to see the following authentication schemes:
+The authentication scheme in a service endpoint determines the credentials that would be used to connect to the external service. For more information and to see the following authentication schemes, see the [authentication schemes documentation](./auth-schemes.md) 
 - Basic authentication
-- Token based authentication
-- Certificate based authentication
+- Token-based authentication
+- Certificate-based authentication
 - No authentication
 
 
