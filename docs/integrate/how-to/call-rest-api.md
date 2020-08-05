@@ -88,13 +88,19 @@ Most samples on this site use Personal Access Tokens as they're a compact exampl
 
 ## TFS
 
-For TFS, `instance` is `{server:port}` and by default the port is 8080.
+For TFS, `instance` is `{server:port}` and by default the port is 8080 for non-SSL connections.
 The default collection is `DefaultCollection`, but can be any collection.
 
-Here's how to get a list of projects from TFS using the default port and collection.
+Here's how to get a list of projects from TFS using the default port and collection across SSL.
 
 ```dos
-curl -u {username}[:{personalaccesstoken}] https://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
+curl -u {username}[:{personalaccesstoken}] https://{server}/DefaultCollection/_apis/projects?api-version=2.0
+```
+
+And across non-SSL connection
+
+```dos
+curl -u {username}[:{personalaccesstoken}] http://{server}:8080/DefaultCollection/_apis/projects?api-version=2.0
 ```
 
 The examples above use personal access tokens, which requires that you [create a personal access token](../../organizations/accounts/use-personal-access-tokens-to-authenticate.md).
