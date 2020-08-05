@@ -246,10 +246,10 @@ A: No, the organization resource is created in its own resource group with a pre
 6. Move it to **Selected columns**, and then select **Apply**. 
 
 ### Q: Why is the location of my organization resource incorrect? 
-A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
+A: If you've [changed your organizations location](../accounts/change-organization-location.md) after you set up billing, the region listed in the Azure portal is the original location and not the new location. To know where your organization is located [check the region listed in Azure DevOps](../accounts/change-organization-location.md). To change the location listed in the Azure portal to match the actual new location of your organization, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again.  
 
 ### Q: Why is the name of my organization resource incorrect? 
-A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-billing-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
+A: If you've [renamed your organization](../accounts/rename-organization.md) after setting up billing, then the name of the organization resource is the original name. To change the name of the organization resource to the new name, first [remove billing](change-azure-subscription.md#remove-your-subscription), and then [set up billing](set-up-billing-for-your-organization-vs.md) again. 
 
 ### Q: Does Azure DevOps support billing tags? 
 A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-resources#tags-and-billing) to the organization resource in the Azure portal and they're included in billing charges associated with your organization.  
@@ -259,7 +259,7 @@ A: Yes, you can apply [billing tags](https://docs.microsoft.com/azure/azure-reso
 3. Select **Assign tags**. 
 
 ### Q: What happens if I delete my organization resource? 
-A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-billing-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
+A: Deleting the organization resource from the Azure portal [removes billing for your organization](change-azure-subscription.md#remove-your-subscription) and your organization returns to its [free limits](billing-faq.md#q-can-i-use-azure-devops-for-free). To [delete your Azure DevOps organization](../accounts/delete-your-organization.md) and all the data it contains, you must delete it from within Azure DevOps administration. 
 
 ## How charges are processed
 
