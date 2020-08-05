@@ -77,6 +77,7 @@ When there's no *.order* file the pages are sorted alphabetically. To revert to 
 1. Copy the clone URL for the Wiki and open it in a browser.
    Doing so opens the Git Repo (Files Hub), which backs the Wiki.
 2. Navigate to the *.order* file and delete it.
+   The .order file is automatically (re)created after deletion, for example, in a drag and drop action on an article.
 
 ## Related articles
 
