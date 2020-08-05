@@ -6,7 +6,7 @@ ms.assetid: 2c586863-078f-4cfe-8158-167080cd08c1
 ms.author: sdanie
 author: steved0x
 ms.reviewer: macoope
-ms.date: 05/15/2020
+ms.date: 08/04/2020
 monikerRange: '>= azure-devops-2019'
 ---
 
@@ -1529,11 +1529,12 @@ Pipeline completion triggers are configured using a [pipeline resource](#pipelin
 The `pool` keyword specifies which [pool](agents/pools-queues.md) to use for a job of the pipeline.
 A `pool` specification also holds information about the job's strategy for running.
 
-::: moniker range=">azure-devops-2020"
-You can specify a pool at the pipeline or job level.
+::: moniker range="azure-devops-2019"
+
+In Azure DevOps Server 2019 you can specify a pool at the job level in YAML, and at the pipeline level in the pipeline settings UI. In Azure DevOps Server 2019.1 you can also specify a pool at the pipeline level in YAML if you have a single implicit job.
 :::moniker-end
 
-::: moniker range="<=azure-devops-2020"
+::: moniker range=">azure-devops-2019"
 You can specify a pool at the pipeline, stage, or job level.
 :::moniker-end
 
