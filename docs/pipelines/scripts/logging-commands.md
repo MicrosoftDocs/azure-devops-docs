@@ -3,7 +3,7 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 07/07/2020
+ms.date: 08/04/2020
 ---
 
 # Logging commands
@@ -71,8 +71,6 @@ Those commands will render in the logs like this:
 That block of commands can also be collapsed, and looks like this:
 
 ![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
-
-The debug line will only appear if you run the pipeline with diagnostics turned on.
 
 ## Task commands
 
