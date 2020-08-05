@@ -117,6 +117,9 @@ Once you have your Event Grid stream configured you can set up subscriptions on 
 
 The stream is enabled and new events begin to flow within minutes. 
 
+> [!NOTE]
+> The default retention time for azure monitor logs is 30 days only. You can configure and chose longer retention by selecting **Data Retention** under **Usage and estimated costs** in your workspace settings. This will incur additional charges. Check the [documentation](https://docs.microsoft.com/azure/azure-monitor/platform/manage-cost-storage#change-the-data-retention-period) to manage usage and costs with Azure Monitor Logs for more details.
+
 ## Edit a stream
 
 Details about your stream target can change over time. To reflect these changes in your streams you can edit them. To edit a stream, make sure you have the “Manage audit streams” permission.
