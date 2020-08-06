@@ -35,7 +35,6 @@ Requires the Package Management extension.
 |Files|(Optional) Specify files to be downloaded as multiline minimatch patterns. [More Information](https://aka.ms/minimatchexamples). The default pattern (**) will download all files within the artifact.|
 |Extract|(Optional) Specify whether to extract the package contents at the destination directory.|
 |DownloadPath|(Required) Path on the agent machine where the package will be downloaded.|
-[Control options](../../process/tasks.md#controloptions)
 
 ## Examples
 
