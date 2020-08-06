@@ -3,8 +3,8 @@ title: Release artifacts and artifact sources
 description: DevOps CI CD - Understand build artifacts in Azure Pipelines and Team Foundation Server (TFS). This article lists and explains the different artifacts sources and how to consume them. It also explains the artifacts variables and download.
 ms.assetid: 6820FA1F-4B20-4845-89E0-E6AB4BD5888D
 ms.topic: conceptual
-ms.author: ronai
-author: RoopeshNair
+ms.author: shashban
+author: shashban
 ms.date: 05/21/2020
 ms.custom: "contentperfq4, seodec18"
 monikerRange: '>= tfs-2015'
@@ -108,6 +108,33 @@ The following features are available when using Azure Pipelines sources:
 | Artifact download | By default, build artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
+::: moniker range=">=azure-devops-2020"
+
+By default, the releases execute in with a collection level Job authorization scope. That means releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to artifacts for releases in a project.
+
+To set job authorization scope for the organization:
+
+- Navigate to your organization settings page in the Azure DevOps user interface.
+- Select Settings under Pipelines.
+- Turn on the toggle *Limit job authorization scope to current project for release pipelines* to limit the scope to current project. This is the recommended setting, as it enhances security for your pipelines.
+
+To set job authorization scope for a specific project:
+
+- Navigate to your project settings page in the Azure DevOps user interface.
+- Select Settings under Pipelines.
+- Turn on the toggle Limit job authorization scope to current project to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
+
+> [!NOTE] 
+> If the scope is set to project at the organization level, you cannot change the scope in each project.
+
+::: moniker-end
+
+::: moniker range="<= azure-devops-2019"
+
+All jobs in releases run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. 
+
+::: moniker-end
+
 <a name="tfvc" id="tfvcsource"></a>
 
 ## Artifact sources - TFVC, Git, and GitHub
@@ -138,6 +165,12 @@ The following features are available when using TFVC, Git, and GitHub sources:
 | Artifact variables | A number of [artifact variables](variables.md) are supported for version control sources. |
 | Work items and commits | Azure Pipelines cannot show work items or commits associated with releases when using version control artifacts.|
 | Artifact download | By default, version control artifacts are downloaded to the agent. You can configure an option in the stage to [skip the download](../process/phases.md#agent-phase) of artifacts. |
+
+::: moniker range=">=azure-devops-2020"
+
+By default, the releases execute in with a collection level Job authorization scope. That means releases can access all repositories in the organization (or collection for Azure DevOps Server). You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to artifacts for releases in a project.
+
+::: moniker-end
 
 <a name="jenkins" id="jenkinssource"></a>
 
