@@ -4,7 +4,7 @@ description: Learn how to use an Azure CI/CD data pipeline to ingest, process, a
 ms.author: jukullam
 author: JuliaKM
 ms.technology: devops-cicd-apps
-ms.date: 07/17/2020
+ms.date: 08/06/2020
 ms.topic: conceptual
 monikerRange: '=azure-devops'
 ---
@@ -118,7 +118,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 1. [Create a new Azure Data Factory](https://ms.portal.azure.com/#create/hub) within the portal UI or using Azure CLI.
 
-    * Name: `data-factory-cicd`
+    * Name: `data-factory-cicd-dev`
     * Version: `V2`
     * Resource Group: `data-pipeline-cicd-rg`
     * Location: your closest location
@@ -133,12 +133,29 @@ To make commands easier to run, start by selecting a default region. After you s
     
    ```azurecli
     az datafactory factory create \
-        --name data-factory-cicd \
+        --name data-factory-cicd-dev \
         --resource-group $rgName
    ```
     3. Copy the Subscription ID for your Data Factory to use later. 
 
+1. [Create a second Azure Data Factory](https://ms.portal.azure.com/#create/hub) within the portal UI or using Azure CLI for test.
 
+    * Name: `data-factory-cicd-test`
+    * Version: `V2`
+    * Resource Group: `data-pipeline-cicd-rg`
+    * Location: your closest location
+    * Uncheck **Enable GIT**
+
+    ```   
+   1. Run the following `az datafactory factory create` command to create a new data factory.  
+    
+   ```azurecli
+    az datafactory factory create \
+        --name data-factory-cicd-test \
+        --resource-group $rgName
+   ```
+    3. Copy the Subscription ID for your Data Factory to use later. 
+ 
 1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
     * Resource Group: `data-pipeline-cicd-rg`
     * Workspace name: `databricks-cicd-ws`    
@@ -212,9 +229,9 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Add these variables:
     * LOCATION: `location for your resources in the Azure Portal, example eastus2`
     * RESOURCE_GROUP: `data-pipeline-cicd-rg`
-    * DATA_FACTORY_NAME: `data factory name from Azure portal`
-    * DATA_FACTORY_DEV_NAME: `data factory name from Azure portal`
-    * DATA_FACTORY_TEST_NAME: `data factory name from Azure portal`
+    * DATA_FACTORY_NAME: `data factory name from Azure portal (you can use the dev factory)`
+    * DATA_FACTORY_DEV_NAME: `dev data factory name from Azure portal`
+    * DATA_FACTORY_TEST_NAME: `test data factory name from Azure portal`
     * ADF_PIPELINE_NAME: `DataPipeline`
     * DATABRICKS_NAME: `databricks name from Azure portal`
     * AZURE_RM_CONNECTION: `azure_rm_connection`
@@ -235,11 +252,19 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Copy the **DNS Name** and **Resource ID**. 
 1. [Create a secret scope in your Azure Databricks workspace](https://docs.microsoft.com/azure/databricks/security/secrets/secret-scopes) named `testscope`. 
 
+### Add a new cluster in Azure Databricks
 
-### Set up code repository in Azure Data Factory
+1. Go to **Clusters** in the Azure Databricks workspace. 
+1. Select **Create Cluster**. 
+1. Name and save your new cluster. 
+1. Click on your new cluster name. 
+1. In the URL string copy the content between `/clusters/` and `/configuration`. For example, in the string `clusters/0306-152107-daft561/configuration`, you would copy `0306-152107-daft561`. 
+1. Save this string to use later. 
+
+### Set up your code repository in Azure Data Factory
 
 1. Go to **Author & Monitor** in Azure Data Factory. Learn more about [setting up Azure Data Factory](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal). 
-1. Click **Set up code repository** and connect your repo. 
+1. Select **Set up code repository** and connect your repo. 
     * Repository type: Azure DevOps Git
     * Azure DevOps organization: Your active account
     * Project name: Your Azure DevOps data pipeline project
@@ -248,11 +273,35 @@ You will use Key Vault to store all connection information for your Azure servic
         * Set **/azure-data-pipeline/factorydata** as the root folder
     * Branch to import resource into: Select **Use existing** and **master**
 
+### Link Azure Data Factory to your Key Vault
+1. In the Azure Portal UI, open the Key Vault. 
+1. Select **Access policies**.
+1. Select **Add Access Policy**.
+1. For **Configure from template**, select **Key & Secret Management**. 
+1. In **Select principal**, search for the name of your dev Data Factory and add it.  
+1. Select **Add** to add your access policies.
+1. Repeat these steps to add an Access policy for the test Data Factory. 
+
 ### Update key vault linked service in Azure Data Factory
 1. Go to **Manage** > **Linked services**.
 1. Update the Azure key vault to connect to your subscription. 
-1. Click **Publish** to update the pipeline. 
 
+### Update storage linked service in Azure Data Factory
+1. Go to **Manage** > **Linked services**.
+1. Update the Azure Blob Storage value to connect to your subscription. 
+
+### Update Azure Databricks linked service in Azure Data Factory
+1. Go to **Manage** > **Linked services**.
+1. Update the Azure Databricks value to connect to your subscription. 
+1. For the **Existing Cluster ID** enter the cluster value you saved earlier. 
+
+### Test and Publish the Data Factory
+1. Go to **Edit** in Azure Data Factory. 
+1. Open `DataPipeline`. 
+1. Select **Variables**. 
+1. Verify that the `storage_account_name` refers to your storage account in the Azure Portal. Update the default value if necessary and save.
+1. Select **Validate** to verify `DataPipeline`. 
+1. Select **Publish** to publish Data Factory assets to the `adf_publish` branch of your repository.  
 
 ## Run the CI/CD pipeline
 
