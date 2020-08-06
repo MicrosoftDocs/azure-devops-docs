@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 08/06/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -32,6 +32,24 @@ By default, the Project Collection Build Service is a Contributor and your proje
 
 > [!NOTE]
 > To access a feed in a different organization, a user must be given access to the project hosting that feed.
+
+## Azure artifacts settings
+
+Azure artifacts settings allow you to specify who can create and administer feeds.
+
+> [!div class="mx-imgBorder"] 
+> ![Azure artifacts settings button](media/artifacts-settings-button.png)
+
+By default, everyone in the same organization have the permissions to create feeds. a user who creates a feed is both an owner and an administrator of that feed.
+
+> [!div class="mx-imgBorder"] 
+> ![Azure artifacts settings](media/artifacts-settings.png)
+
+1. Any user in the organization is allowed to create feeds.
+
+1. Only feeds administrators and users or groups specified in the text box number 2 are allowed to create feeds. You can specify a feed administrator by adding users or groups in the **who can administer feeds** section.
+
+1. Users or groups added here are allowed to administer any feed in the organization.
 
 ::: moniker range=">= azure-devops-2019"
 
