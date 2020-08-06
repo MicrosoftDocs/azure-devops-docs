@@ -146,7 +146,8 @@ To make commands easier to run, start by selecting a default region. After you s
     * Location: your closest location
     * Uncheck **Enable GIT**
 
-    ```   
+    ``` 
+  
    1. Run the following `az datafactory factory create` command to create a new data factory.  
     
    ```azurecli
@@ -154,7 +155,8 @@ To make commands easier to run, start by selecting a default region. After you s
         --name data-factory-cicd-test \
         --resource-group $rgName
    ```
-    3. Copy the Subscription ID for your Data Factory to use later. 
+
+    2. Copy the Subscription ID for your Data Factory to use later. 
  
 1. [Add a new Azure Databricks service](https://ms.portal.azure.com/#create/hub). 
     * Resource Group: `data-pipeline-cicd-rg`
@@ -258,7 +260,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Select **Create Cluster**. 
 1. Name and save your new cluster. 
 1. Click on your new cluster name. 
-1. In the URL string copy the content between `/clusters/` and `/configuration`. For example, in the string `clusters/0306-152107-daft561/configuration`, you would copy `0306-152107-daft561`. 
+1. In the URL string, copy the content between `/clusters/` and `/configuration`. For example, in the string `clusters/0306-152107-daft561/configuration`, you would copy `0306-152107-daft561`. 
 1. Save this string to use later. 
 
 ### Set up your code repository in Azure Data Factory
@@ -274,7 +276,7 @@ You will use Key Vault to store all connection information for your Azure servic
     * Branch to import resource into: Select **Use existing** and **master**
 
 ### Link Azure Data Factory to your Key Vault
-1. In the Azure Portal UI, open the Key Vault. 
+1. In the Azure portal UI, open the Key Vault. 
 1. Select **Access policies**.
 1. Select **Add Access Policy**.
 1. For **Configure from template**, select **Key & Secret Management**. 
@@ -293,13 +295,13 @@ You will use Key Vault to store all connection information for your Azure servic
 ### Update Azure Databricks linked service in Azure Data Factory
 1. Go to **Manage** > **Linked services**.
 1. Update the Azure Databricks value to connect to your subscription. 
-1. For the **Existing Cluster ID** enter the cluster value you saved earlier. 
+1. For the **Existing Cluster ID**, enter the cluster value you saved earlier. 
 
 ### Test and Publish the Data Factory
 1. Go to **Edit** in Azure Data Factory. 
 1. Open `DataPipeline`. 
 1. Select **Variables**. 
-1. Verify that the `storage_account_name` refers to your storage account in the Azure Portal. Update the default value if necessary and save.
+1. Verify that the `storage_account_name` refers to your storage account in the Azure portal. Update the default value if necessary and save.
 1. Select **Validate** to verify `DataPipeline`. 
 1. Select **Publish** to publish Data Factory assets to the `adf_publish` branch of your repository.  
 
