@@ -741,6 +741,7 @@ You can use the following fields to filter your queries or build reports. Some o
       The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
       ::: moniker range="azure-devops"
       To modify the workflow states, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
+      ::: moniker-end 
       ::: moniker range=">= azure-devops-2019 < azure-devops"
       To modify the workflow states, see the following articles:  
       - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
