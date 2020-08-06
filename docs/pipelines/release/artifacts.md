@@ -109,6 +109,7 @@ The following features are available when using Azure Pipelines sources:
 | Deployment section in build | The build summary includes a **Deployment** section, which lists all the stages to which the build was deployed. |
 
 ::: moniker range=">=azure-devops-2020"
+
 By default, the releases execute in with a collection level Job authorization scope. That means releases can access resources in all projects in the organization (or collection for Azure DevOps Server). This is useful when linking build artifacts from other projects. You can enable **Limit job authorization scope to current project for release pipelines** in project settings to restrict access to artifacts for releases in a project.
 
 To set job authorization scope for the organization:
@@ -123,13 +124,14 @@ To set job authorization scope for a specific project:
 - Select Settings under Pipelines.
 - Turn on the toggle Limit job authorization scope to current project to limit the scope to project. This is the recommended setting, as it enhances security for your pipelines.
 
-[!NOTE] If the scope is set to project at the organization level, you cannot change the scope in each project.
+> [!NOTE] 
+> If the scope is set to project at the organization level, you cannot change the scope in each project.
 
 ::: moniker-end
 
 ::: moniker range="<= azure-devops-2019"
 
-If you use Azure DevOps Server 2019, then all jobs in releases run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. You cannot change this in Azure DevOps server 2019.
+All jobs in releases run with the job authorization scope set to collection. In other words, these jobs have access to resources in all projects in your project collection. 
 
 ::: moniker-end
 
