@@ -84,6 +84,56 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 ## Setup continuous deployment
 
 ### Deploy canary stage
+#### [YAML](#tab/yaml/)
+::: moniker range=">=azure-devops-2020"
+
+1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
+1. Change the step you created previously to now use a Stage. And add 2 additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. Your complete YAML should now look like this: 
+
+    ```YAML
+    trigger:
+    - master
+    
+    pool:
+      vmImage: Ubuntu-16.04
+    
+    variables:
+      imageName: azure-pipelines-canary-k8s
+    
+    stages:
+    - stage: Build
+      displayName: Build stage
+      jobs:  
+      - job: Build
+        displayName: Build
+        pool:
+          vmImage: Ubuntu-16.04
+        steps:
+        - task: Docker@2
+          displayName: Build and push image
+          inputs:
+            containerRegistry: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
+            repository: $(imageName)
+            command: buildAndPush
+            Dockerfile: app/Dockerfile
+            tags: |
+              $(Build.BuildId)
+
+        - upload: manifests
+          artifact: manifests
+    
+        - upload: misc
+          artifact: misc
+    ```
+ 
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+#### [Classic](#tab/classic/)
 1. Navigate to **Pipelines** -> **Releases** -> **New** -> **New release pipeline**. Name it **CanaryK8sDemo**
 1. In the subsequent model for selecting a template for Stage 1, choose **Empty job**. Name the stage as **Deploy canary**.
 1. Select **Add an artifact**, choose **GitHub**, and configure the following - 
@@ -121,6 +171,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Strategy**: None
     - **Manifests**: azure-pipelines-canary-k8s/misc/*
 
+* * *
 ### Manual intervention for promoting or rejecting canary
 1. Click on **Pipeline** tab to go back to the pipeline view. Add a new stage named **Promote/reject canary** based on the empty job template.
 1. Add an agentless job to this stage and reorder this job to be the first job of this stage. Name this agentless job **Promote/reject input**.
