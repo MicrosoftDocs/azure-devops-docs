@@ -3,7 +3,7 @@ title: Project scoped feeds
 description: Project scoped feeds in Azure Artifacts in Azure DevOps Services or Team Foundation Server. This article explains the difference between organization scoped and project scoped feeds. It also explains the concept of feed visibility. 
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/15/2020
+ms.date: 08/05/2020
 monikerRange: '>= tfs-2017'
 ---
 
