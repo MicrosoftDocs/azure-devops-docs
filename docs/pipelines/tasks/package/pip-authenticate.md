@@ -123,3 +123,7 @@ To do so, you can either:
   >The `http_proxy` and `no_proxy` variables are case-sensitive on Linux and Mac operating systems and must be lowercase. Attempting to use an Azure Pipelines variable to set the environment variable will not work, as it will be converted to uppercase. Instead, set the environment variables on the self-hosted agent's machine and restart the agent.
 * Add the proxy settings to the [pip config file](https://pip.pypa.io/en/stable/user_guide/#config-file) file using `proxy` key.
 * Use the `--proxy` command-line option to specify proxy in the form `[user:passwd@]proxy.server:port`.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project that the feed is scoped to, the project that the feed is scoped to must give permissions to Pipeline's project's build service. [How to allow a Pipeline to access a feed in a different project](/azure/devops/artifacts/how-to/project-scoped-feeds-pipeline-project-permissions.md).

@@ -112,3 +112,7 @@ This task must run before you use twine to upload python distributions to an aut
 ### My agent is behind a web proxy. Will TwineAuthenticate set up twine to use my proxy?
 
 No. While this task itself will work behind a web proxy <a href="~/pipelines/agents/proxy.md" data-raw-source="[secret variable](~/pipelines/agents/proxy.md)">your agent has been configured to use</a>, it does not configure twine to use the proxy.
+
+### My Pipeline needs to access a feed in a different project
+
+If the pipeline is running in a different project than the project that the feed is scoped to, the project that the feed is scoped to must give permissions to Pipeline's project's build service. [How to allow a Pipeline to access a feed in a different project](/azure/devops/artifacts/how-to/project-scoped-feeds-pipeline-project-permissions.md).
