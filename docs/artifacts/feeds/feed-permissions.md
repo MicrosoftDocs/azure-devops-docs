@@ -47,9 +47,14 @@ By default, everyone in the same organization have the permissions to create fee
 
 1. Any user in the organization is allowed to create feeds.
 
-1. Only feeds administrators and users or groups specified in the text box number 2 are allowed to create feeds. You can specify a feed administrator by adding users or groups in the **who can administer feeds** section.
+1. Only feed administrators and users or groups specified in the text box 2 are allowed to create feeds. You can specify a feed administrator by adding users or groups in the **who can administer feeds** section.
 
 1. Users or groups added here are allowed to administer any feed in the organization.
+
+> [!NOTE]
+> It's very important to understand the difference between feed, project, and project collection administrators. A feed administrator can perform all operations on **the feed** (edit feed permissions, delete packages, promote packages, etc.).  
+> A project administrator on the other hand has permissions to administer all aspects of **teams and project** (delete team project, update project visibility, manage test environments etc.).  
+> Project Collection Administrators are granted **all collection-level permissions** to manage resources for projects and project collections (add and delete projects, trigger events, manage build resources and audit streams etc.).
 
 ::: moniker range=">= azure-devops-2019"
 
