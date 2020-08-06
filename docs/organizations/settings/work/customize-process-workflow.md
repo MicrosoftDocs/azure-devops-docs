@@ -175,6 +175,7 @@ You can zoom in and zoom out of the view. Also, you can move the state nodes aro
 
 [!INCLUDE [temp](../includes/note-audit-log-support-process.md)]
 
+- [How workflow states and state categories are used in Backlogs and Boards](../../../boards/work-items/workflow-and-state-categories.md) 
 - [Add or modify a work item type](customize-process-work-item-type.md)
 - [Add and manage fields](customize-process-field.md)  
 - [Customize a form](customize-process-form.md)
