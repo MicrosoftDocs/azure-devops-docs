@@ -296,7 +296,7 @@ You will use Key Vault to store all connection information for your Azure servic
 1. Update the Azure Databricks value to connect to your subscription. 
 1. For the **Existing Cluster ID**, enter the cluster value you saved earlier. 
 
-### Test and Publish the Data Factory
+### Test and publish the data factory
 1. Go to **Edit** in Azure Data Factory. 
 1. Open `DataPipeline`. 
 1. Select **Variables**. 
