@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 
 # Get started as a Stakeholder

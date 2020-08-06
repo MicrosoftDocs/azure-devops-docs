@@ -1,7 +1,10 @@
 ---
+ms.technology: devops-agile
+ms.author: kaelli
+author: KathrynEE
 ms.topic: include
+ms.date: 08/06/2020
 ---
-
 
 ### Features not available to users with Stakeholder access 
 
