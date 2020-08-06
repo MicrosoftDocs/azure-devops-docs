@@ -56,7 +56,7 @@ Use this tutorial to learn how to do the following tasks:
 > [!div class="checklist"]
 > * Sign in to a project
 > * Understand which work item types are available to your project
-> * Open the Kanban board and add a work item
+> * Open the Kanban board and open a work item
 > * Add details, tags, or comments to a work item
 > * View the product backlog 
 > * Find work assigned to you, or query for other work items
@@ -183,8 +183,9 @@ You can start viewing and adding work items once you connect to a project. The e
 
 ## Add work items to a product backlog 
 
-From the Kanban board, you can add work items. However, with Stakeholder access, you can't update the status of a work item by drag and drop to a different column. 
+From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link. Also, you can't update the status of a work item by drag-and-drop to a different column or reorder cards within a column. 
 
+<!--- 
 #### [Agile process](#tab/agile-process) 
 
 1. From the User Stories board, choose **New item** and start adding those stories you want to track. 
@@ -245,7 +246,7 @@ From the Kanban board, you can add work items. However, with Stakeholder access,
 
 * * *
 
-
+-->
 
 ## Add details to a work item
 
@@ -635,66 +636,7 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ::: moniker-end
 
-
-### Features not available to users with Stakeholder access 
-
-If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to have <strong>Basic</strong> access.  
-
-::: moniker range="azure-devops"
-
-#### For Private projects:
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-#### For Public projects:
-
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify dashboards 
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.  
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify dashboards  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify dashboards  
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
+[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
 
 <a id="related-articles" /> 
 
