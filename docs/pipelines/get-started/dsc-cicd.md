@@ -34,7 +34,7 @@ To use this example, you should be familiar with the following:
 - CI-CD concepts. A good reference can be found at [The Release Pipeline Model](/azure/devops/pipelines/get-started/key-pipelines-concepts).
 - [Git](https://git-scm.com/) source control
 - The [Pester](https://github.com/pester/Pester) testing framework
-- [Desired State Configuration](/powershell/scripting/dsc/overview/overview)(DSC)
+- [Desired State Configuration](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview)(DSC)
 
 ## What you will need
 
@@ -211,7 +211,7 @@ Notice the `Node` statement:
 Node $AllNodes.Where{$_.Role -eq 'DNSServer'}.NodeName
 ```
 
-This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](/powershell/scripting/dsc/configurations/configData),
+This finds any nodes that were defined as having a role of `DNSServer` in the [configuration data](https://docs.microsoft.com/powershell/scripting/dsc/configurations/configData),
 which is created by the `DevEnv.ps1` script.
 
 You can read more about the `Where` method in [about_arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
