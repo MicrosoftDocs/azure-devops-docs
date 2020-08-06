@@ -47,6 +47,8 @@ Assign users or groups of users to one of the following access levels:
 
 The following table indicates those features available for each supported access level. Visual Studio Test Professional and MSDN Platform subscriptions grant access to the same features as Visual Studio Enterprise. 
 
+<a id="access-level-settings" />
+
 <table>
 <tr valign="bottom">
 <th width="50%">Feature</th>
@@ -685,80 +687,10 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ::: moniker-end
 
-### Features not available to users with Stakeholder access 
+[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
 
-If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to grant them <strong>Basic</strong> access.  
-
-::: moniker range="azure-devops"
-
-#### For Private projects:
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension) 
-- Add, edit, or view Analytics views    
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-#### For Public projects:
-
-- View Delivery Plans (a Marketplace extension)    
-- Add, edit, or view Analytics views    
-- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
-
-::: moniker-end
-
-
-::: moniker range="azure-devops-2019 || azure-devops-2020"
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)
-- Add, edit, or view Analytics views   
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-::: moniker-end
-
-
-::: moniker range="tfs-2018"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-
-::: moniker range="<= tfs-2015"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-
-> [!NOTE]
-> Stakeholders that choose a feature that's not available to them  receive an error message indicating that they don't have permissions to complete the task.
 
 <a id="basic" />
-
-
 
 ::: moniker range="azure-devops"
 
@@ -921,6 +853,7 @@ Service accounts don't require a CAL or other purchase.
 
 - [Free access to Pipelines Preview](provide-stakeholder-pipeline-access.md)
 - [Manage users and access](../accounts/add-organization-users.md)
+- [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 
@@ -931,6 +864,7 @@ Service accounts don't require a CAL or other purchase.
 ::: moniker range="< azure-devops"
 
 - [Change access levels](change-access-levels.md)
+- [Get started as a Stakeholder](get-started-stakeholder.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)
 - [Default permissions and access](permissions-access.md)
 - [Compare features between plans](https://azure.microsoft.com/services/devops/compare-features/)
