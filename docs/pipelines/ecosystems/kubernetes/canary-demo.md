@@ -87,6 +87,16 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 #### [YAML](#tab/yaml/)
 ::: moniker range=">=azure-devops-2020"
 
+1. Navigate to **Pipelines** -> **Environments** -> **New environment**
+1. Configure the new environment as follows -
+    - **Name**: akscanary
+    - **Resource**: choose Kubernetes
+1. Hit **Next** and now configure your Kubernetes resource as follows - 
+    - **Provider**: Azure Kubernetes Service
+    - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
+    - **Cluster**: Choose your cluster
+    - **Namespace**: Choose the namespace you want to deploy to or create a new one
+1. Hit **Validate and Create**
 1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
 1. Change the step you created previously to now use a Stage. And add 2 additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. Your complete YAML should now look like this: 
 
@@ -179,7 +189,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
                   manifests: |
                     $(Pipeline.Workspace)/misc/*
     ```
-The above Deploycanary job makes use of the akscanary environment that we will create in one of the next steps.
+1. Save your pipeline by committing directly to the master branch. This should already run it successfully. 
 
 ::: moniker-end
 
@@ -227,6 +237,89 @@ YAML builds are not yet available on TFS.
 
 * * *
 ### Manual intervention for promoting or rejecting canary
+#### [YAML](#tab/yaml/)
+::: moniker range=">=azure-devops-2020"
+
+1. Navigate to **Pipelines** -> **Environments** -> **New environment**
+1. Configure the new environment as follows -
+    - **Name**: akspromote
+    - **Resource**: choose Kubernetes
+1. Hit **Next** and now configure your Kubernetes resource as follows - 
+    - **Provider**: Azure Kubernetes Service
+    - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
+    - **Cluster**: Choose your cluster
+    - **Namespace**: Choose the namespace you want to deploy to or create a new one
+1. Hit **Validate and Create**
+1. Select your new akspromote environment from the list of environments. 
+1. Click the button with the **3 dots** in the top right -> **Approvals and checks** -> **Approvals**
+1. Configure your approval as follows -
+    - **Approvers**: Add your own user account
+    - **Advanced**: Make sure the **Allow approvers to approve their own runs** checkbox is checked.
+1. Click **Create**
+1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
+1. Add an additional stage PromoteRejectCanary at the end of your YAML file to promote the changes. 
+
+    ```YAML
+    - stage: PromoteRejectCanary
+      displayName: Promote or Reject canary
+      dependsOn: DeployCanary
+      condition: succeeded()
+    
+      jobs:
+      - deployment: PromoteCanary
+        displayName: Promote Canary
+        pool: 
+          vmImage: Ubuntu-16.04
+        environment: akspromote
+        strategy:
+          runOnce:
+            deploy:
+              steps:            
+              - task: KubernetesManifest@0
+                displayName: promote canary
+                inputs:
+                  action: 'promote'
+                  kubernetesServiceConnection: azure-pipelines-canary-k8s
+                  strategy: 'canary'
+                  manifests: '$(Pipeline.Workspace)/manifests/*'
+                  containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+                  imagePullSecrets: '$(imagePullSecret)'
+    ```
+
+1. Add an additional stage RejectCanary at the end of your YAML file to rollback the changes. 
+    ```YAML
+    - stage: RejectCanary
+      displayName: Reject canary
+      dependsOn: PromoteRejectCanary
+      condition: failed()
+    
+      jobs:
+      - deployment: RejectCanary
+        displayName: Reject Canary
+        pool: 
+          vmImage: Ubuntu-16.04
+        environment: akscanary
+        strategy:
+          runOnce:
+            deploy:
+              steps:            
+              - task: KubernetesManifest@0
+                displayName: reject canary
+                inputs:
+                  action: 'reject'
+                  kubernetesServiceConnection: azure-pipelines-canary-k8s
+                  strategy: 'canary'
+                  manifests: '$(Pipeline.Workspace)/manifests/*'
+    ```
+1. Save your YAML pipeline by hitting **Save**
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+#### [Classic](#tab/classic/)
 1. Click on **Pipeline** tab to go back to the pipeline view. Add a new stage named **Promote/reject canary** based on the empty job template.
 1. Add an agentless job to this stage and reorder this job to be the first job of this stage. Name this agentless job **Promote/reject input**.
 1. Add a **Manual Intervention** task to this job and change the display name of the task to **Promote or reject canary**
@@ -257,6 +350,7 @@ YAML builds are not yet available on TFS.
     - **Percentage**: 25
     - **Manifests**: azure-pipelines-canary-k8s/manifests/*
 
+* * *
 ## Deploy a stable version
 Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
 1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. The continuous deployment trigger setup earlier on the image push event results in triggering of the release pipeline.
