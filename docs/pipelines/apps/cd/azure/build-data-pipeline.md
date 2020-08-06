@@ -146,9 +146,8 @@ To make commands easier to run, start by selecting a default region. After you s
     * Location: your closest location
     * Uncheck **Enable GIT**
 
-    ``` 
   
-   1. Run the following `az datafactory factory create` command to create a new data factory.  
+   1. Run the following `az datafactory factory create` command to create a new data factory for testing.  
     
    ```azurecli
     az datafactory factory create \
