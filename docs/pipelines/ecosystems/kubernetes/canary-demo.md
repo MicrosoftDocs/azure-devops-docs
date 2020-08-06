@@ -99,6 +99,11 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     
     variables:
       imageName: azure-pipelines-canary-k8s
+      dockerRegistryServiceConnection: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
+      imageRepository: 'azure-pipelines-canary-k8s'
+      containerRegistry: containerRegistry #replace with the name of your container registry, Should be in the format foobar.azurecr.io
+      dockerfilePath: '**/Dockerfile'
+      tag: '$(Build.BuildId)'
     
     stages:
     - stage: Build
@@ -112,12 +117,12 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
         - task: Docker@2
           displayName: Build and push image
           inputs:
-            containerRegistry: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
+            containerRegistry: $(dockerRegistryServiceConnection)
             repository: $(imageName)
             command: buildAndPush
             Dockerfile: app/Dockerfile
             tags: |
-              $(Build.BuildId)
+              $(tag)
 
         - upload: manifests
           artifact: manifests
@@ -125,7 +130,56 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
         - upload: misc
           artifact: misc
     ```
- 
+
+ 1. Add an additional stage at the bottom of your YAML file to deploy the canary version.
+
+    ```YAML
+    - stage: DeployCanary
+      displayName: Deploy canary
+      dependsOn: Build
+      condition: succeeded()
+    
+      jobs:
+      - deployment: Deploycanary
+        displayName: Deploy canary
+        pool:
+          vmImage: Ubuntu-16.04
+        environment: 'akscanary'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+              - task: KubernetesManifest@0
+                displayName: Create imagePullSecret
+                inputs:
+                  action: createSecret
+                  secretName: azure-pipelines-canary-k8s
+                  dockerRegistryEndpoint: azure-pipelines-canary-k8s
+                  kubernetesServiceConnection: azure-pipelines-canary-k8s
+                  
+                  
+              - task: KubernetesManifest@0
+                displayName: Deploy to Kubernetes cluster
+                inputs:
+                  action: 'deploy'
+                  kubernetesServiceConnection: azure-pipelines-canary-k8s
+                  strategy: 'canary'
+                  percentage: '25'
+                  manifests: |
+                    $(Pipeline.Workspace)/manifests/deployment.yml
+                    $(Pipeline.Workspace)/manifests/service.yml
+                  containers: '$(containerRegistry)/$(imageRepository):$(tag)'
+                  imagePullSecrets: azure-pipelines-canary-k8s
+    
+              - task: KubernetesManifest@0
+                displayName: Deploy Forbio and ServiceMonitor
+                inputs:
+                  action: 'deploy'
+                  kubernetesServiceConnection: azure-pipelines-canary-k8s
+                  manifests: |
+                    $(Pipeline.Workspace)/misc/*
+    ```
+The above Deploycanary job makes use of the akscanary environment that we will create in one of the next steps.
 
 ::: moniker-end
 
