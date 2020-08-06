@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2017'
 
 *If you're familiar with the principles behind views, you can jump to the [docs page](../feeds/views.md) to quickly start using them.*
 
-Views enable you to share subsets of the NuGet, npm, Maven, and Python package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
+Views enable you to share subsets of the NuGet, npm, Maven, Python and Universal Packages package-versions in your feed with consumers. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and packages that didn't meet a quality bar.
 
 ## Views and upstream sources
 

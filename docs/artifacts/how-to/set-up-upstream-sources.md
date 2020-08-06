@@ -48,6 +48,9 @@ Selecting this option now means your feed will be configured to find and use pac
 
 ## Add an Azure Artifacts feed in a different organization within your AAD tenant as an upstream source
 
+    > [!NOTE]
+    > The Universal Packages protocol currently only supports upstream sources in the same Azure DevOps organization.
+
 1. From your feed page, go to **Feed settings** by clicking the gear icon
 2. On the **Upstream sources** tab, if you don't have any upstream sources you will see the below dialog where you can choose _Add upstream source_. If you do already have upstreams, you can select _Add upstream source_ in the top menu.
 3. In the **Add a new upstream source** dialog, choose _Azure Artifacts feed in another organization_
