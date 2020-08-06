@@ -24,6 +24,9 @@ View builds
 
 -->
 
+> [!NOTE]   
+>  When the **Free access to Pipelines for Stakeholders** preview feature is enabled for the organization, Stakeholders get access to all **Build** and **Release** features. This is indicated by the :::image type="icon" source="/azure/devops/media/icons/preview.png" border="false"::: preview icon shown in the following table. Without this feature enabled, stakeholders can only view and approve releases. To learn more, see [Provide Stakeholders access to edit build and release pipelines](/azure/devops/organizations/security/provide-stakeholder-pipeline-access).
+
 <table>
 <tr valign="bottom">
 <th>Task</th>

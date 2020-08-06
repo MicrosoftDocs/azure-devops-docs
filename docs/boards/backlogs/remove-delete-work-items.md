@@ -224,16 +224,16 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. You can delete a work item from within the work item form, by multi-selecting work items from a backlog or query results page, or from a Kanban board or taskboard. 
 
-	To delete a single work item, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![List of work items, actions menu, Delete](media/move-change-delete/multi-delete.png) 
 
-	To delete a work item from your Kanban or taskboard, choose the ![ ](../media/icons/actions-icon.png) actions icon of the card and select <strong>Delete</strong>. 
+	To delete a work item from your Kanban or taskboard, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon of the card and select <strong>Delete</strong>. 
  
 	> [!div class="mx-imgBorder"]  
 	> ![Delete work item from Kanban board](media/move-change-delete/delete-work-items-from-kanban-board.png)
@@ -257,12 +257,12 @@ Deleted work items won't appear in your backlogs, boards, or queries. Deleted it
 
 1. You can delete a work item from within the work item form, or by multi-selecting work items from a backlog or query results page.   
 
-	To delete a single work item, open the work item, choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete a single work item, open the work item, choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![work item form, actions menu, Delete](media/move-change-delete/delete-work-item.png)  
 
-	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the ![ ](../media/icons/actions-icon.png) actions icon and select <strong>Delete</strong>. 
+	To delete several work items, [multi-select them from a backlog or a query results list](bulk-modify-work-items.md) and then choose the  :::image type="icon" source="../media/icons/actions-icon.png" border="false"::: actions icon and select <strong>Delete</strong>. 
 
 	> [!div class="mx-imgBorder"]
 	> ![List of work items, actions menu, Delete](media/move-change-delete/multi-delete.png)  

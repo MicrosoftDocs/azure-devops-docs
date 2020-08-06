@@ -15,7 +15,7 @@ ms.date: 06/09/2020
 
 # About access levels
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Access levels grant or restrict access to select web portal features. This is in addition to permissions granted through security groups, which provide or restrict specific tasks. Access levels enable administrators to provide their user base access to the features they need and only pay for those features. 
 
@@ -27,7 +27,7 @@ When you add a user or group to a team or project, they're automatically granted
 To add user accounts or groups to specific access levels, see [Manage users and access](../accounts/add-organization-users.md). Make sure to set each user's access level based on what you've purchased for that user.
 ::: moniker-end  
 
-::: moniker range="<= azure-devops-2019"  
+::: moniker range="< azure-devops"  
 To add user accounts or groups to specific access levels, see [Change access levels](change-access-levels.md). Make sure to set each user's access level based on what you've purchased for that user. 
 ::: moniker-end  
 
@@ -197,9 +197,9 @@ read wiki pages. </td>
 </tbody>
 </table>
 
-::: moniker-end    
+::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign  to users with an Azure DevOps Server CAL, with a Visual Studio Professional subscription, and to users for whom you're paying for Basic access in an organization.
 - **Basic + Test Plans**: Provides access for users who have a monthly Test Manager subscription, Visual Studio Test Professional, or MSDN Platforms subscription. 
@@ -368,6 +368,7 @@ read wiki pages. </td>
  
 
 ::: moniker range="tfs-2018"
+
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio Professional subscription. 
 - **Advanced** (legacy access level, deprecated in Azure DevOps Server 2019): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -377,6 +378,7 @@ read wiki pages. </td>
 ::: moniker-end    
 
 ::: moniker range="tfs-2017"
+
 - **Stakeholder**: Provides partial access, can be assigned to unlimited users for free. Assign to users with no license or subscriptions who need access to a limited set of features.
 - **Basic**: Provides access to most features. Assign to users with a CAL or with a Visual Studio subscription. 
 - **Advanced** (TFS 2017): Provides access to premium features. Only assign to users with a subscription to MSDN Platforms or Visual Studio Test Professional.
@@ -707,7 +709,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 - Change the priority of an item within a backlog  
 - Delete work items or move work items to another project
@@ -720,6 +722,7 @@ If a Stakeholder needs access to one or more of the following features&mdash;whi
 
 
 ::: moniker range="tfs-2018"
+
 - Change the priority of an item within a backlog
 - Delete work items 
 - Create shared queries, view charts, and modify the home page  
@@ -767,7 +770,7 @@ The system automatically recognizes their subscription and enables any other fea
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 ## VS Enterprise access
 
@@ -791,7 +794,7 @@ Users assigned Advanced access can manage test cases when you have [purchased th
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 Users assigned Advanced access have all the Basic features, plus [web-based test case management tools](../../test/create-a-test-plan.md). You can [buy monthly access](../billing/buy-access-tfs-test-hub.md#buy-monthly-access-to-azure-test-plans) or add users who already have a Visual Studio Test Professional with MSDN or MSDN Platforms subscription. 
  
@@ -869,7 +872,7 @@ You can manage access levels programmatically using the [`az devops user add` (A
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019" 
+::: moniker range="azure-devops-2019 || azure-devops-2020" 
 
 You can manage access levels programmatically using the [User Entitlement - Add REST API](/rest/api/azure/devops/memberentitlementmanagement/user%20entitlements/add). The following table provides a mapping of the access level selected through the user interface and the `AccountLicenseType` and `msdnLicenseType` parameters.
 
@@ -898,7 +901,7 @@ You can manage access levels programmatically using the [User Entitlement - Add 
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 ## What features are available to users who are added to two different access levels?
 
@@ -925,7 +928,7 @@ Service accounts don't require a CAL or other purchase.
 ::: moniker-end
 
 
-::: moniker range="<= azure-devops-2019"
+::: moniker range="< azure-devops"
 
 - [Change access levels](change-access-levels.md)
 - [Export a list of users and their access levels](export-users-audit-log.md)

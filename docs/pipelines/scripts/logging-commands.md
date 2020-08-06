@@ -58,8 +58,7 @@ The formatting commands are:
 ##[group]Beginning of a group
 ##[warning]Warning message
 ##[error]Error message
-##[section]Start of a section
-##[debug]Debug-only text
+##[debug]Debug text
 ##[command]Command-line being run
 ##[endgroup]
 

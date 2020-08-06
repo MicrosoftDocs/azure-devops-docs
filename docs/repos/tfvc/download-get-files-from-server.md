@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Download (get) files from the Server
 ms.assetid: 33798544-9e9e-4200-b7d8-127fb088c735
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

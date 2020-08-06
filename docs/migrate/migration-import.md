@@ -365,7 +365,7 @@ If you are under the DACPAC threshold, follow the instructions to [generate a DA
 
 #### Create the SQL Azure VM
 
-Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-portal-sql-server-provision/) on how to setup and configure a SQL Azure VM. 
+Setting up a SQL Azure VM can be done from the Azure portal with just a few clicks. Azure has a [tutorial](/azure/azure-sql/virtual-machines/windows/create-sql-vm-portal) on how to setup and configure a SQL Azure VM. 
 
 Azure DevOps Services is available in several Azure [regions](https://azure.microsoft.com/regions/services/) across the globe. When importing to these regions it's critical that you place your data in the correct region to ensure that the import can start correctly. Setting up your SQL Azure VM in a location other than the ones recommended below will result in the import failing to start.
 
@@ -548,7 +548,7 @@ You will need to repeat adding inbound port rules until all necessary Azure DevO
 
 #### Restore your database on the VM
 
-After setting up and configuring an Azure VM, you will need to take your detached backup from your Azure DevOps Server instance to your Azure VM. Azure has several methods [documented](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-migrate-sql/) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require Azure DevOps Server to be installed on the VM. 
+After setting up and configuring an Azure VM, you will need to take your detached backup from your Azure DevOps Server instance to your Azure VM. Azure has several methods [documented](/azure/azure-sql/virtual-machines/windows/migrate-to-vm-from-sql-server) for how to accomplish this task. The collection database needs to be restored on SQL and doesn't require Azure DevOps Server to be installed on the VM. 
 
 #### Configure your collection for import
 

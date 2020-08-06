@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Labels Command
 ms.assetid: 7772bc3d-7c43-47d8-ba5c-eee89aeed3ce
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

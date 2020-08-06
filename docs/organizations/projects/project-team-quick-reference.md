@@ -14,7 +14,7 @@ ms.date: 02/26/2020
 
 # Project and team quick reference
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 Use this index to quickly access concepts and tasks related to managing projects and teams.  
 

@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Roll back changesets
 ms.assetid: 11864092-7a1d-4810-ae01-148afbaa7852
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: conceptual
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

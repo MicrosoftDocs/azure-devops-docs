@@ -10,7 +10,7 @@ ms.topic: include
 
 With this update, you can ensure that only a single run deploys to an environment at a time. By choosing the "Exclusive lock" check on an environment, only one run will proceed. Subsequent runs which want to deploy to that environment will be paused. Once the run with the exclusive lock completes, the latest run will proceed. Any intermediate runs will be canceled.
 
-&nbsp;<img src="../../media/172-pipelines-0-0.png" width="500">
+:::image type="content" source="../../media/172-pipelines-0-0.png" alt-text="In the Add check page, select Exclusive Lock to ensure that only a single run deploys to an environment at a time.":::
 
 ### Stages filters for pipeline resource triggers
 
@@ -44,7 +44,7 @@ Here are the steps to configure the webhook triggers:
     - **HTTP Header** - The name of the HTTP header in the request that contains the payload hash value for request verification. For example, in the case of the GitHub, the request header will be "**X-Hub-Signature**"
     - **Secret** - The secret is used to parse the payload hash used for verification of the incoming request (this is optional). If you have used a secret in creating your webhook, you will need to provide the same secret key  
 
-&nbsp;<img src="../../media/172-pipelines-0-1.png" width="500">
+    :::image type="content" source="../../media/172-pipelines-0-1.png" alt-text="In the Edit service connection page, configure webhook triggers.":::
 
 3. A new resource type called `webhooks` is introduced in YAML pipelines. For subscribing to a webhook event, you need to define a webhook resource in your pipeline and point it to the Incoming webhook service connection. You can also define additional filters on the webhook resource based on the JSON payload data to further customize the triggers for each pipeline, and you can consume the payload data in the form of variables in your jobs.
 
@@ -62,8 +62,9 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
     script: |
-      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}} ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
       Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
 ```
 
@@ -78,7 +79,7 @@ Resource triggers can fail to execute for two reasons.
 1. If the source of the service connection provided is invalid, or if there are any syntax errors in the trigger, the trigger will not be configured at all. These are surfaced as errors.
 2. If trigger conditions are not matched, the trigger will not execute. Whenever this occurs, a warning will be surfaced so you can understand why the conditions were not matched.  
 
-&nbsp;<img src="../../media/172-pipelines-0-2.png" width="500">
+    :::image type="content" source="../../media/172-pipelines-0-2.png" alt-text="This pipeline definition page called Trigger Issues displays information regarding why triggers are not running.":::
 
 
 ### Banner for live site incidents impacting pipelines

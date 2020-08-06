@@ -78,12 +78,12 @@ It lists dashboards in the following order:
 - All dashboards of teams that you belong to
 - All dashboards defined for the project in alphabetical order. 
 
-Choose the ![ ](../../media/icons/filter-icon.png) filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
+Choose the :::image type="icon" source="../../media/icons/filter-icon.png" border="false"::: filter icon to filter the list by keyword or team. Keywords apply to dashboard titles, descriptions, and team names.
 
 > [!div class="mx-imgBorder"]  
 > ![Filter the dashboard directory](media/dashboards/filter-directory.png)   
 
-If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end  
 
@@ -93,7 +93,7 @@ Open a web browser, connect to your project, and choose **Dashboards**.
 
 ![Dashboards directory, previous navigation](media/dashboards-go-to.png) 
 
-If you need to switch to a different project, choose the ![ ](../../media/icons/project-icon.png) Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
+If you need to switch to a different project, choose the :::image type="icon" source="../../media/icons/project-icon.png" border="false"::: Azure DevOps logo to [browse all projects](../../project/navigation/go-to-project-repo.md).  
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 - To rename a dashboard, modify it's description, or change it's automatic refresh setting, open the dashboard, choose the ![gear icon](media/icons/gear-icon.png) gear icon, and change the field options shown. Save your changes. 
 
-- To delete a dashboard, open the Dashboards directory, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the dashboard, and select the **Delete** menu option.  
+- To delete a dashboard, open the Dashboards directory, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the dashboard, and select the **Delete** menu option.  
 
 	> [!div class="mx-imgBorder"]
 	> ![Delete a dashboard](media/dashboards/delete-dashboard.png)  
@@ -235,7 +235,7 @@ You can rename or delete a dashboard. Also, you can enable auto-refresh, and the
 
 3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. 
  
-4. To delete a dashboard, choose the ![ ](media/icons/delete_icon.png) delete icon.
+4. To delete a dashboard, choose the :::image type="icon" source="media/icons/delete_icon.png" border="false"::: delete icon.
 
 5. Choose Save to save your changes. 
 
@@ -243,7 +243,7 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 ::: moniker-end
 
 ::: moniker range="tfs-2015"
-1. To manage dashboards, choose the ![ ](../../media/icons/admin-gear-icon.png) gear icon.
+1. To manage dashboards, choose the :::image type="icon" source="../../media/icons/admin-gear-icon.png" border="false"::: gear icon.
  
 	![Open Manage dashboards dialog](media/dashboards-open-manage-dashboards-tfs.png) 
 
@@ -253,7 +253,7 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 
 3. (Optional) Select the Auto-refresh checkbox when you want the dashboard to refresh every five minutes. The Auto-refresh feature requires TFS 2015.2 or later version.   
 
-4. To delete a dashboard, choose the ![ ](media/icons/delete_icon.png) delete icon.
+4. To delete a dashboard, choose the :::image type="icon" source="media/icons/delete_icon.png" border="false"::: delete icon.
 
 5. Choose **Save** to save your changes. 
 ::: moniker-end
@@ -266,7 +266,7 @@ You can also [manage dashboard permissions](dashboard-permissions.md).
 
 
 ::: moniker range=">= azure-devops-2019"
-Choose ![ ](media/icons/edit-icon.png) **Edit** to modify your dashboard. 
+Choose :::image type="icon" source="media/icons/edit-icon.png" border="false"::: **Edit** to modify your dashboard. 
 
 You can then add widgets or drag tiles to reorder their sequence on the dashboard. 
 

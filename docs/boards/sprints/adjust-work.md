@@ -132,7 +132,7 @@ If your team's over capacity, you can move items from the sprint backlog back to
 
 ::: moniker range=">= azure-devops-2019"
 
-Here we select two items at the bottom of the sprint backlog, open the ![ ](../../media/icons/actions-icon.png) action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
+Here we select two items at the bottom of the sprint backlog, open the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: action icon for one of the items, choose **Move to iteration**, and then select **Backlog**. 
 
 > [!div class="mx-imgBorder"]  
 > ![Move work items to backlog](media/adjust-work/move-items-to-backlog-agile.png)
