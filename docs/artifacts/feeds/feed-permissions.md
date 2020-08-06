@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 07/23/2020
+ms.date: 06/11/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,9 +29,6 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Edit feed permissions                         |          |          |          | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
-
-> [!NOTE]
-> To access a feed in a different organization, a user must be given access to the project hosting that feed.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -129,6 +126,8 @@ you can also use the `Allow project-scoped builds` feature if you would like to 
 
 > [!div class="mx-imgBorder"]
 >![views permissions](media/project-scoped-builds.png)
+
+If the pipeline is running in a different project than the project that the feed is scoped to, the project that the feed is scoped to must give permissions to Pipeline's project's build service. [How to allow a Pipeline to access a feed in a different project](/azure/devops/artifacts/how-to/project-scoped-feeds-pipeline-project-permissions.md).
 
 ## Sharing packages with everyone in your organization
 
