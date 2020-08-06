@@ -14,7 +14,7 @@ ms.date: 07/20/2020
 
 # Create a project in Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range="tfs-2013"
 
@@ -86,7 +86,7 @@ If you don't want to create a project in Azure DevOps or TFS, you can create [Az
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Settings page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the Settings page, see [Manage or enable features](../../project/navigation/preview-features.md).
 
 ::: moniker-end
 
@@ -387,7 +387,7 @@ You can create a project from Visual Studio/Team Explorer after you've connected
 ::: moniker range="azure-devops"
 
 > [!NOTE]   
-> To enable the new user interface for the Settings page, see [Enable preview features](../../project/navigation/preview-features.md).
+> To enable the new user interface for the Settings page, see [Manage or enable features](../../project/navigation/preview-features.md).
 ::: moniker-end
 
 #### [Preview page](#tab/preview-page) 

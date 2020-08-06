@@ -68,7 +68,7 @@ On the Build tab of a build pipeline, add this task:
    <tr>
       <td>
 
-![](media/batch-script.png)
+:::image type="icon" source="media/batch-script.png" border="false":::
 
 <br/>**Utility: Batch Script**</td>
 

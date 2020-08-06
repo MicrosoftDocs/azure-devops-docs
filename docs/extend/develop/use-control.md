@@ -12,6 +12,8 @@ ms.date: 06/03/2020
 
 # Use a control
 
+[!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
+
 [!INCLUDE [disclaimer](../../integrate/api/_data/disclaimer.md)]
 
 * [Configure](/previous-versions/azure/devops/docs/extend/develop/ui-controls/configure)

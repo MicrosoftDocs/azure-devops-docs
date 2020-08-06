@@ -132,12 +132,12 @@ Previously, we supported Azure Repos and GitHub as code locations in the AKS dep
 > [!div class="mx-imgBorder"]
 > ![Badge](../../media/154_25.png "Deploy to AKS from your external Git repos")
 
-### Support for BitBucket repositories in DevOps Projects
+### Support for Bitbucket repositories in DevOps Projects
 
-We've added support for BitBucket repositories to DevOps Projects. Now you can get OAuth experience and a populated list of repositories and branches to select from when deploying to Azure resources.
+We've added support for Bitbucket repositories to DevOps Projects. Now you can get OAuth experience and a populated list of repositories and branches to select from when deploying to Azure resources.
 
 > [!div class="mx-imgBorder"]
-> ![Badge](../../media/154_26.png "BitBucket repositories in DevOps Projects")
+> ![Badge](../../media/154_26.png "Bitbucket repositories in DevOps Projects")
 
 ### Select a Dockerfile in deployment center for AKS and WebApp Containers
 

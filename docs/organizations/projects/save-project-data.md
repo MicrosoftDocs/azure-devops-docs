@@ -14,9 +14,9 @@ monikerRange: '>= tfs-2013'
 
 # Save project data
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-When you delete a project, you cannot recover its data later. Therefore, you should save project data.
+When you delete a project, you can't recover its data later. So, you should save project data.
 
 You can use the following procedures to save data that users most care about, such as source code, build data, and work items.
 

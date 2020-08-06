@@ -14,7 +14,7 @@ monikerRange: '>= tfs-2013'
 
 # Manage paid access for users
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 > [!NOTE]
 > We've recently simplified Azure DevOps billing, so now rather than complete a purchase process, you assign and remove users. You're billed according to these assignments. This article is repurposed to help you take advantage of the tools we have for managing paid access for users. This way you only pay for what you need.

@@ -11,11 +11,11 @@ ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'
 ---
 
-# Quickstart: Connect to a project in Azure DevOps
+# Connect to a project in Azure DevOps
 
-[!INCLUDE [temp](../../includes/version-all.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
-In this quickstart, you learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
+In this article, learn how to connect to a project to share code, build apps, track work, and collaborate with team members. You can use any of the following clients:
   
 - [Web portal](#web-portal)  
 - [Visual Studio or Team Explorer](#visual-studio)  
@@ -309,7 +309,7 @@ Besides connecting through a web browser, Visual Studio, Eclipse, Excel, and Pro
 - [Visual Studio Code](https://code.visualstudio.com/Docs)
 - [Visual Studio Community](https://visualstudio.microsoft.com/products/visual-studio-community-vs.aspx) 
 - [Eclipse: Team Explorer Everywhere](/azure/devops/java/download-eclipse-plug-in) 
-- [Azure Test Plans](/previous-versions/azure/devops/docs/test/mtm/guidance-mtm-usage) (formerly Test Manager)
+- [Azure Test Plans](/previous-versions/azure/devops/test/mtm/guidance-mtm-usage) (formerly Test Manager)
 - [Microsoft Feedback Client](../../project/feedback/give-feedback.md) 
 
 ### Requirements and client compatibility

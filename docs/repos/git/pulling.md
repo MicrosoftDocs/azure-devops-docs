@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Using Git Pull, fetch, and merge to get code from others
 ms.assetid: b06b9f18-b76f-418c-93d0-f12d1f48f3c0
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: tutorial
 ms.date: 11/15/2019
 monikerRange: '>= tfs-2013'
@@ -184,6 +182,9 @@ When working in a branch, you may want to incorporate the latest changes from th
 >This article demonstrates the `merge` approach. For more information on `rebase` and guidance on which method is right for your scenario, see [Apply changes with Rebase - When to rebase vs. merge](rebase.md#when-to-rebase-vs-merge) and [Rebase vs merge](https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_vs_merge) from the Pro Git book.
 
 #### [Visual Studio](#tab/visual-studio/)
+
+> [!NOTE]
+> The `git pull origin master` command combines `git fetch` and `git merge` commands. To do this properly in Visual Studio integration, you will need to **Sync** in **Team Explorer** to do the `fetch` part. This ensures your local git repository is up to date with its remote origin. 
 
 To merge the latest changes from the master branch to your branch:
 

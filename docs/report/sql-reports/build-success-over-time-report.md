@@ -43,14 +43,14 @@ The Build Success Over Time report provides a pictorial version of the Build Sum
   
  The daily results of runs of build definitions appear in the colors that the following table describes:  
   
-|Build status||Color|Indicates|  
+|Build status|Color|Indicates|  
 |------------------|-|-----------|---------------|  
-|Passed|![Color green used in Build Success report](media/procguid_buildsuccess_green.png "ProcGuid_BuildSuccess_Green")|Green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was good.|  
-|Tests Passed, Low Coverage|![Color light green used in Build Success report](media/procguid_buildsuccess_lightgreen.png "ProcGuid_BuildSuccess_LightGreen")|Light green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
-|Build Succeeded, No Tests|![Color yellow used in Build Success report](media/procguid_buildsuccess_yellow.png "ProcGuid_BuildSuccess_Yellow")|Yellow|-   Build succeeded.<br />-   No tests were run.|  
-|Build Failed|![Color red used in Build Success report](media/procguid_buildsuccess_red.png "ProcGuid_BuildSuccess_Red")|Red|-   Build ran but did not pass.<br />-   At least one test failed that did not previously fail. Either the test is new or the test passed in previous test runs.|  
-|Tests Failed|![Color orange used in Build Success report](media/procguid_buildsuccess_orange.png "ProcGuid_BuildSuccess_Orange")|Orange|-   Build failed due to a compile error or other error.|  
-|No build|![Color white used in Build Success report](media/procguid_buildsuccess_white.png "ProcGuid_BuildSuccess_White")|White|-   Build was not run on this day.|  
+|Passed|:::image type="icon" source="media/procguid_buildsuccess_green.png" border="false"::: Green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was good.|  
+|Tests Passed, Low Coverage|:::image type="icon" source="media/procguid_buildsuccess_lightgreen.png" border="false"::: Light&nbsp;green|-   Build succeeded.<br />-   All tests completed successfully.<br />-   Code coverage was minimal.|  
+|Build Succeeded, No Tests|:::image type="icon" source="media/procguid_buildsuccess_yellow.png" border="false"::: Yellow|-   Build succeeded.<br />-   No tests were run.|  
+|Build Failed|:::image type="icon" source="media/procguid_buildsuccess_red.png" border="false"::: Red|-   Build ran but did not pass.<br />-   At least one test failed that did not previously fail. Either the test is new or the test passed in previous test runs.|  
+|Tests Failed|:::image type="icon" source="media/procguid_buildsuccess_orange.png" border="false"::: Orange|-   Build failed due to a compile error or other error.|  
+|No build|:::image type="icon" source="media/procguid_buildsuccess_white.png" border="false"::: White|-   Build was not run on this day.|  
   
  You can filter the report in the following ways:  
   

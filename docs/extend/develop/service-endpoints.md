@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Service Endpoints | Extensions for Azure DevOps Services
-description: Browse through the places where your extension can extend Visual Studio Online.
+title: Service endpoints | Extensions for Azure DevOps
+description: Browse through the places where your extension can extend Visual Studio Online for Azure DevOps and Team Foundation Server (TFS).
 ms.assetid: ad0ea9de-620e-4605-8fcd-3c1443b26d8c
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -10,7 +10,9 @@ author: chcomley
 ms.date: 11/04/2019
 ---
 
-# Service Endpoints in Azure DevOps Services
+# Service endpoints
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 ::: moniker range="<= tfs-2018"
 > [!NOTE]
@@ -18,7 +20,7 @@ ms.date: 11/04/2019
 > _Pipelines_ are called _definitions_ in TFS 2018 and older versions.
 ::: moniker-end
 
-Service endpoints are a way for Azure DevOps Services to connect to external systems or services. They are a bundle of properties securely stored by Azure DevOps Services which includes but is not limited to:
+Service endpoints are a way for Azure DevOps and TFS to connect to external systems or services. They're a bundle of properties securely stored by Azure DevOps and TFS, which includes but isn't limited to the following properties:
 
 - Service name
 - Description
@@ -33,7 +35,7 @@ Follow this guide to create a new Service Point contribution and leverage it in 
 
 ## Task overview
 
-This article walks through developing a service endpoint by creating an example extension for Azure DevOps Services that includes:
+This article walks through developing a service endpoint by creating an example extension for Azure DevOps or TFS that includes:
 - A custom service endpoint with data sources. This enables a build task or dashboard widget to call a REST endpoint on the service/server defined by the endpoint.
 - A build task which defines 2 properties: The service endpoint & a picklist which has values populated from the REST endpoint data source.
 
@@ -67,7 +69,7 @@ Create a json file (`vss-extension.json`, for example) in the `home` directory o
   "id": "service-endpoint-tutorial",
   "version": "0.1.1",
   "name": "Sample extension that leverages a service endpoint",
-  "description": "A sample Azure DevOps Services extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
+  "description": "A sample Azure DevOps extension which shows how to create a custom endpoint and dynamic build task parameters taking value from a REST API.",
   "publisher": "francistotten",
   "targets": [
     {
