@@ -5,7 +5,7 @@ ms.topic: quickstart
 ms.assetid: 50ed6bb4-5f35-4e1e-aafc-295eb10198df
 ms.author: vijayma
 ms.reviewer: dastahel
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 ms.date: 10/10/2019
 monikerRange: azure-devops
 author: vijayma
