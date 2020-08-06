@@ -8,7 +8,7 @@ ms.reviewer: vtbassmatt
 ms.date: 11/04/2019
 monikerRange: '>=azure-devops-2019'
 author: vtbassmatt
-ms.custom: tracking-python
+ms.custom: devx-track-python
 ---
 
 # Build Python apps
