@@ -455,7 +455,7 @@ For example, here we assign the Requirement to Jamal Hartnett. Choose **Save & C
 </tr>
 <tr>
     <td><a href="../../boards/queries/query-by-area-iteration-path.md">Iteration</a></td>
-    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../settings/set-iteration-paths-sprints.md">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
+    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../settings/set-iteration-paths-sprints.md">Define iteration paths and configure team iterations</a>.</td>
 </tr>
 <tr>
 <td><a href="../../boards/queries/titles-ids-descriptions.md" >Description</a></td> 
