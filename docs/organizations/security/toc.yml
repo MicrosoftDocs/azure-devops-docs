@@ -49,7 +49,7 @@
   - name: Manage groups
     href: ../accounts/manage-azure-active-directory-groups.md 
   - name: Manage group rules
-    href: ../accounts/assign-access-levels-and-extensions-by-group-membership.md 
+    href: ../accounts/assign-access-levels-by-group-membership.md 
   - name: Connect organization to Azure AD
     href: ../accounts/connect-organization-to-azure-ad.md 
   - name: Change Azure AD connection
