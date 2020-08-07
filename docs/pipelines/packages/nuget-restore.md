@@ -45,8 +45,7 @@ Finally, **save** your build.
 
 ## Specifying sources in NuGet.config
 
-The NuGet.config you check in should list all the package sources you want to consume.
-The example below demonstrates how that might look.
+The NuGet.config you check-in should list all the package sources you want to consume. The example below demonstrates how that might look.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -62,8 +61,7 @@ The example below demonstrates how that might look.
 </configuration>
 ```
 
-> [!NOTE]
-> To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
+To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
 
 ```YAML
 - task: DotNetCoreCLI@2
@@ -75,6 +73,12 @@ The example below demonstrates how that might look.
     vstsFeed: '<projectName>/<feedName>'
     includeNuGetOrg: true
 ```
+
+* `command`: The dotnet command to run. Options: `build`, `push`, `pack`, `restore`, `run`, `test`, and `custom`.
+* `projects`: The path to the csproj file(s) to use. You can use wildcards (e.g. **/*.csproj for all .csproj files in all subfolders).
+* `feedsToUse`: You can either choose to select a feed or commit a NuGet.config file to your source code repository and set its path using `nugetConfigPath`. Options: `select`, `config`.
+* `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
+* `includeNuGetOrg`: Use packages from NuGet.org.
 
 ## Restoring packages from feeds in a different organization
 
