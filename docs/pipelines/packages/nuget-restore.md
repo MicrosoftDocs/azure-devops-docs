@@ -4,11 +4,11 @@ ms.custom: seodec18
 description: Work with feeds in Azure Pipelines
 ms.assetid: C3D7008E-7C23-49A4-9642-E5906DAE3BAD
 ms.topic: conceptual
-ms.date: 04/16/2020
+ms.date: 08/07/2020
 monikerRange: '>= tfs-2017'
 ---
 
-# Restore Package Management NuGet packages in Azure Pipelines
+# Restore NuGet packages in Azure Pipelines
 
 [!INCLUDE [version-tfs-2017-rtm](../includes/version-tfs-2017-rtm.md)]
 
@@ -16,13 +16,13 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-This walkthrough will cover setting up an existing build to restore NuGet packages from Package Management feeds. It assumes that you've already:
+This walkthrough will cover setting up an existing build to restore NuGet packages from Azure artifacts feeds. It assumes that you've already:
 
-- [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from a Package Management feed
+- [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from Azure artifacts feed
 - [Created a build](/azure/devops/pipelines/) for that solution
 - [Added the correct build service identity](/azure/devops/artifacts/feeds/feed-permissions) to your feed
 
-To build a solution that relies on NuGet packages from Package Management feeds, add the **NuGet** task (if one is not already present).
+To build a solution that relies on NuGet packages from Azure artifacts feeds, add the **NuGet** task (if one is not already present).
 
 First, click **Add build tasks...**, select the **Package** category, and add the **NuGet** task. Then drag to order the task above any build tasks that require your packages.
 
