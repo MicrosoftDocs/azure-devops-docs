@@ -82,17 +82,20 @@ To restore your package using YAML and the [.NET Core CLI task](../tasks/build/d
 
 ## Restoring packages from feeds in a different organization
 
-If your NuGet.config contains feeds in a different Azure DevOps organization (dev.azure.com/*organization*) than the organization running the build, you'll need to set up credentials for those feeds manually.
+If your NuGet.config contains feeds in a different Azure DevOps organization than the one running the build, you'll need to set up credentials for those feeds manually.
+ 
+1. Select an account (either a service account (recommended) or a user account) that has access to the remote feed.
+1. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization that hosts the feed. Sign in with the credentials mentioned in step 1, select **User settings** then **Personal Access Tokens**.
+  > [!div class="mx-imgBorder"]
+  > ![promote button](media/pat.png)
 
-1. Select a login account (either a service account (recommended) or a user's account) that has access to the remote feed
-2. Using your browser's InPrivate mode, Incognito mode, or similar, go to the Azure DevOps organization that contains the feed, sign in with the login account you selected in step 1, click the user profile circle in the top right, and select Security
-3. Create a PAT with the **Packaging (read)** scope and keep it handy
-4. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector
-5. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
-6. Set the path to your NuGet.config in the **Path to NuGet.config**
-7. In **Credentials for feeds outside this organization/collection**, click the **+**
-8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
-9. Save the service connection and the build, then queue a new build
+1. Create a PAT with the **Packaging (read)** scope and keep it handy
+1. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector
+1. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
+1. Set the path to your NuGet.config in the **Path to NuGet.config**
+1. In **Credentials for feeds outside this organization/collection**, click the **+**
+1. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
+1. Save the service connection and the build, then queue a new build
 
 ## FAQ
 
