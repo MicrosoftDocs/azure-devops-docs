@@ -2,46 +2,44 @@
   href: about-notifications.md
 - name: Navigating the UI
   href: navigating-the-ui.md
-- name: Concepts
+- name: Events and notifications
+  href: concepts-events-and-notifications.md 
+- name: How email recipients are determined
+  href: concepts-email-recipients.md 
+- name: Add & manage notifications
   items:
-  - name: Events and notifications
-    href: concepts-events-and-notifications.md 
-  - name: How email recipients are determined
-    href: concepts-email-recipients.md 
-- name: Tutorials
-  items:
-  - name: "Follow work & pull requests"
-    href: ../boards/work-items/follow-work-items.md 
-  - name: Manage personal notifications
-    href: manage-your-personal-notifications.md
-  - name: Manage team and group notifications
-    href: manage-team-group-notifications.md 
-- name: How-to guides
-  items:
-  - name: Manage organization notifications
-    href: manage-organization-notifications.md 
-  - name: Manage organization default delivery settings
-    href: manage-organization-notifications-settings.md 
-  - name: View notification statistics for your organization
-    href: view-organization-notification-statistics.md 
   - name: Change your preferred email address
     href: change-email-address.md 
-  - name: Enable subscription logging for troubleshooting
-    href: use-subscription-logging.md 
-  - name: Exclude yourself from notification of events you initiated
-    href: exclude-self-from-email.md 
-  - name: "Use @mentions to further discussion"
-    href: at-mentions.md 
-  - name: "Use #ID to link to work items"
-    href: add-links-to-work-items.md 
-  - name: Send notifications to third-party services (Slack, Teams, etc.)
-    href: integrate-third-party-services.md 
-  - name: Collaborate in a Team room
-    href: collaborate-in-a-team-room.md 
+  - name: Manage personal notifications
+    href: manage-your-personal-notifications.md
   - name: Unsubscribe from default notification
     href: unsubscribe-default-notification.md 
+  - name: Manage team and group notifications
+    href: manage-team-group-notifications.md 
+  - name: Manage Global notifications
+    href: manage-organization-notifications.md 
+  - name: Manage Global default delivery settings
+    href: manage-organization-notifications-settings.md
+  - name: Exclude yourself from notification of events you initiated
+    href: exclude-self-from-email.md  
+- name: Follow work, link work items, use @mentions  
+  items:
+  - name: "Follow work & pull requests"
+    href: ../boards/work-items/follow-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json 
+  - name: "Use @mentions to further discussion"
+    href: at-mentions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+  - name: "Use #ID to link to work items"
+    href: add-links-to-work-items.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json  
+- name: Notifications to third parties
+  items:
+  - name: Send notifications to third-party services (Slack, Teams, etc.)
+    href: integrate-third-party-services.md 
 - name: Troubleshooting
   items:
+  - name: Enable subscription logging for troubleshooting
+    href: use-subscription-logging.md 
+  - name: FAQs 
+    href: faq-notifications.md 
   - name: Why am I not getting an email
     href: troubleshoot-not-getting-email.md 
   - name: Why am I getting this email
@@ -52,13 +50,15 @@
     href: troubleshoot-contact-support.md 
 - name: Reference
   items:
+  - name: Default permissions (Security)  
+    href: ../project/wiki/wiki-readme-permissions.md?toc=/azure/devops/organizations/toc.json&bc=/azure/devops/organizations/breadcrumb/toc.json
+  - name: View notification statistics for your organization
+    href: view-organization-notification-statistics.md 
   - name: Default notifications
     href: oob-built-in-notifications.md 
   - name: Events
     href: oob-supported-event-types.md 
-  - name: Default permissions (Security)  
-    href: ../project/wiki/wiki-readme-permissions.md 
-  - name: FAQs 
-    href: faq-notifications.md 
+  - name: Collaborate in a Team room
+    href: collaborate-in-a-team-room.md 
 
 

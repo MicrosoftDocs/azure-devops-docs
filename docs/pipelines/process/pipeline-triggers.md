@@ -43,10 +43,7 @@ setting, edit the YAML pipeline, choose **Triggers** from the settings menu, and
 
 > [!NOTE] 
 > If the triggering pipeline is in another Azure DevOps project, you must specify the
-> project name using `project: OtherProjectName`. If the triggering pipeline is in another
-> Azure DevOps organization, you must also create a 
-> [service connection](../library/service-endpoints.md) to that project and reference it 
-> in your pipeline resource. For more information, see [pipeline resource](resources.md#resources-pipelines).
+> project name using `project: OtherProjectName`. For more information, see [pipeline resource](resources.md#resources-pipelines).
 
 In the above example, we have two pipelines - `app-ci` and `security-lib-ci`. We want the `app-ci` pipeline to run automatically every time a new version of the security library is built in master or a release branch.
 

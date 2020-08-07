@@ -1,15 +1,17 @@
 ---
-title: Service hooks consumers for Azure DevOps Services
+title: Service hook consumers for Azure DevOps Services
 description: Service hooks consumer documentation for Azure DevOps Services
 toc: Hide
 ms.assetid: CDACB8A1-4BAB-499F-B9ED-BD1680743B26
 ms.technology: devops-collab
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
-ms.date: 08/04/2016
+ms.date: 07/27/2020
 ---
 
-# Service hook consumers
+# Service hook consumers for Azure DevOps Services
+
+[!INCLUDE [version](../includes/version-tfs-2017-through-vsts.md)]
 
 Use service hook consumers to [programmatically create a subscription](./create-subscription.md). The subscription specifies the event, the consumer and the action. 
 Select the consumer that you want to use in your subscription from the following consumers:
@@ -26,10 +28,13 @@ Select the consumer that you want to use in your subscription from the following
 - [Zendesk](#zendesk)
 
 <a id="azureservicebus"></a>
+
 ## Azure Service Bus
+
 Provides integration with Microsoft Azure Service Bus, including Notification Hubs.
 
 ### Send a message to a Notification Hub
+
 This action sends a generic, template notification to the specified Azure Notification Hub. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
 
 * Consumer ID: **azureServiceBus**
@@ -38,7 +43,7 @@ This action sends a generic, template notification to the specified Azure Notifi
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **notificationHubName**
@@ -53,7 +58,8 @@ This action sends a generic, template notification to the specified Azure Notifi
     * Required: **No**
 
 ### Send a message to a Service Bus Queue
-This action sends a JSON string representation of the event to the specified Azure Service Bus queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
+
+This action sends a JSON string representation of the event to the specified Azure Service Bus queue. To learn more, see [Service Bus queues, topics, and subscriptions](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusQueueSend**
@@ -61,12 +67,12 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **queueName**
     * Queue name
-    * The name of the queue to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the queue does not exists, it will be created if the specified connection string has the necessary permissions.
+    * The name of the queue to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the queue doesn't exist, it is created if the specified connection string has the necessary permissions.
     * Data type: **string**
     * Required: **Yes**
   * **resourceDetailsToSend**
@@ -86,7 +92,8 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **No**
 
 ### Send a message to a Service Bus Topic
-This action sends a JSON string representation of the event to the specified Azure Service Bus topic. [Learn more](https://go.microsoft.com/fwlink/?LinkID=392636).
+
+This action sends a JSON string representation of the event to the specified Azure Service Bus topic. To learn more, see [Use the Azure portal to create a Service Bus topic and subscriptions to the topic](/azure/service-bus-messaging/service-bus-quickstart-topics-subscriptions-portal).
 
 * Consumer ID: **azureServiceBus**
 * Action ID: **serviceBusTopicSend**
@@ -94,12 +101,12 @@ This action sends a JSON string representation of the event to the specified Azu
 * Settings:
   * **connectionString**
     * SAS connection string
-    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure Portal.
+    * The SAS (shared access signature) connection string to use to connect with Azure Service Bus. This connection string is available in the Azure portal.
     * Data type: **string**
     * Required: **Yes**
   * **topicName**
     * Topic name
-    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic does not exists, it will be created if the specified connection string has the necessary permissions.
+    * The name of the topic to send the message to. The name can contain only letters, numbers, periods, hyphens, forward slashes, and underscores. The name must start and end with a letter or number. If the topic doesn't exist, it will be created if the specified connection string has the necessary permissions.
     * Data type: **string**
     * Required: **Yes**
   * **resourceDetailsToSend**
@@ -119,11 +126,14 @@ This action sends a JSON string representation of the event to the specified Azu
     * Required: **No**
 
 <a id="azurestorage"></a>
+
 ## Azure Storage
+
 Provides integration with Microsoft Azure Storage.
 
 ### Insert a message in a Storage Queue
-This action inserts a JSON string representation of the event to the specified Azure storage queue. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390532).
+
+This action inserts a JSON string representation of the event to the specified Azure storage queue. To learn more, see [What are Azure queues?](/azure/storage/queues/storage-queues-introduction).
 
 * Consumer ID: **azureStorageQueue**
 * Action ID: **enqueue**
@@ -171,11 +181,14 @@ This action inserts a JSON string representation of the event to the specified A
     * Required: **No**
 
 <a id="campfire"></a>
+
 ## Campfire
-Campfire is like instant messaging, but designed exclusively for groups.
+
+Campfire is similar to instant messaging, but designed exclusively for groups.
 
 ### Post a message to a room
-Post a message about the event to a room in Campfire. [Learn more](https://go.microsoft.com/fwlink/?LinkID=393613).
+
+Post a message about the event to a room in Campfire. To learn more, see [Campfire](https://docs.helpscout.com/article/263-campfire).
 
 * Consumer ID: **campfire**
 * Action ID: **postMessageToRoom**
@@ -198,16 +211,19 @@ Post a message about the event to a room in Campfire. [Learn more](https://go.mi
     * Required: **Yes**
   * **showDetails**
     * Send a detailed message
-    * Post a short or detailed messages about the event.
+    * Post a short or detailed message about the event.
     * Data type: **boolean**
     * Required: **No**
 
 <a id="flowdock"></a>
+
 ## Flowdock
+
 Flowdock is chat and inbox for teams.
 
 ### Post a message to a team chat
-Post a message about the event to a team chat in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
+
+Post a message about the event to a team chat in Flowdock. To learn more, see [Flowdock Messages API](https://www.flowdock.com/api/messages).
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToChat**
@@ -240,7 +256,8 @@ Post a message about the event to a team chat in Flowdock. [Learn more](https://
     * Required: **No**
 
 ### Post a message to a team inbox
-Post a message about the event to a team inbox in Flowdock. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
+
+Post a message about the event to a team inbox in Flowdock. To learn more, see [Flowdock Messages API](https://www.flowdock.com/api/messages).
 
 * Consumer ID: **flowdock**
 * Action ID: **postMessageToTeamInbox**
@@ -293,11 +310,14 @@ Post a message about the event to a team inbox in Flowdock. [Learn more](https:/
     * Required: **No**
 
 <a id="hipchat"></a>
+
 ## HipChat
+
 HipChat provides group instant messaging for companies and teams.
 
 ### Post a message to a room
-Post a message about the event to a room in HipChat. [Learn more](https://go.microsoft.com/fwlink/?LinkId=392098).
+
+Post a message about the event to a room in HipChat. [Messages, Hipchat Cloud and Developer guide](https://developer.atlassian.com/server/hipchat/messages/).
 
 * Consumer ID: **hipChat**
 * Action ID: **postMessageToRoom**
@@ -315,7 +335,7 @@ Post a message about the event to a room in HipChat. [Learn more](https://go.mic
     * Required: **Yes**
   * **notifyRoom**
     * Notify room participants
-    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc). Each recipient's notification preferences are taken into account.
+    * Whether or not this message should trigger a notification for people in the room (change the tab color, play a sound, etc.). Each recipient's notification preferences are taken into account.
     * Data type: **boolean**
     * Required: **No**
   * **showDetails**
@@ -330,10 +350,13 @@ Post a message about the event to a room in HipChat. [Learn more](https://go.mic
     * Required: **No**
 
 <a id="jenkins"></a>
+
 ## Jenkins
+
 Jenkins is a continuous integration server which allows building and testing software projects continuously.
 
 ### Trigger Git build
+
 Triggers a build configured to use a Git repository using the [Jenkins Git Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin).
 
 * Consumer ID: **jenkins**
@@ -357,6 +380,7 @@ Triggers a build configured to use a Git repository using the [Jenkins Git Plugi
     * Required: **Yes**
 
 ### Trigger generic build
+
 Triggers a generic Jenkins build, invoking the Jenkins build URL.
 
 * Consumer ID: **jenkins**
@@ -400,10 +424,13 @@ Triggers a generic Jenkins build, invoking the Jenkins build URL.
     * Required: **No**
 
 <a id="kato"></a>
+
 ## Kato
+
 Kato provides a messaging service for modern organizations.
 
 ### Post event to room
+
 Posts an event to a Kato room
 
 * Consumer ID: **kato**
@@ -422,11 +449,14 @@ Posts an event to a Kato room
     * Required: **No**
 
 <a id="trello"></a>
+
 ## Trello
+
 Provides integration with Trello.
 
 ### Create a card
-This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
+
+This action creates a card on an existing list in Trello. A card can represent a task, issue, event, or just about anything. A card's state is typically determined by what list it is on. To learn more, see [Create a service hook for Azure DevOps with Trello](services/trello.md).
 
 * Consumer ID: **trello**
 * Action ID: **createCard**
@@ -459,7 +489,8 @@ This action creates a card on an existing list in Trello. A card can represent a
     * Required: **No**
 
 ### Create a list
-This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390530).
+
+This action creates a list on an existing board in Trello. A list is used to organize cards on a board and typically represents a state. To learn more, see [Create a service hook for Azure DevOps with Trello](services/trello.md).
 
 * Consumer ID: **trello**
 * Action ID: **createList**
@@ -482,11 +513,14 @@ This action creates a list on an existing board in Trello. A list is used to org
     * Required: **No**
 
 <a id="webhooks"></a>
+
 ## Web Hooks
+
 Provides event communication via HTTP.
 
 ### Post via HTTP
-This action posts a JSON object representation of the event to the specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. [Learn more](https://go.microsoft.com/fwlink/?LinkID=390531).
+
+This action posts a JSON object representation of the event to the specified URL. HTTPS endpoints are recommended due to the potential for private data in the event payload. To learn more, see [Webhooks](services/webhooks.md).
 
 * Consumer ID: **webHooks**
 * Action ID: **httpRequest**
@@ -529,10 +563,13 @@ This action posts a JSON object representation of the event to the specified URL
     * Required: **No**
 
 <a id="zendesk"></a>
+
 ## Zendesk
+
 Zendesk is a SaaS suite that offers help desk ticketing, issue tracking, and customer service support.
 
 ### Create a private comment in a ticket
+
 Create a private comment in a ticket
 
 * Consumer ID: **zendesk**

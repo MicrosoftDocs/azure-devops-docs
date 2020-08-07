@@ -6,6 +6,10 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/sprint-173-update.md
+        - name: July 09
+          href: 2020/sprint-172-update.md
         - name: June 18
           href: 2020/sprint-171-update.md
         - name: June 01
@@ -334,6 +338,8 @@
     - name: 2020
       expanded: true
       items:
+      - name: July
+        href: docswhatsnew/azure-devops-docs-2020-07.md
       - name: June
         href: docswhatsnew/azure-devops-docs-2020-06.md
       - name: May
@@ -352,6 +358,10 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/boards/sprint-173-update.md
+        - name: July 09
+          href: 2020/boards/sprint-172-update.md
         - name: June 18
           href: 2020/boards/sprint-171-update.md
         - name: June 01
@@ -393,6 +403,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/Repos/sprint-173-update.md
         - name: May 4
           href: 2020/repos/sprint-168-update.md
         - name: April 13
@@ -436,6 +448,10 @@
     - name: 2020
       expanded: true
       items:
+        - name: August 03
+          href: 2020/pipelines/sprint-173-update.md
+        - name: July 09
+          href: 2020/pipelines/sprint-172-update.md
         - name: June 18
           href: 2020/pipelines/sprint-171-update.md
         - name: June 01
@@ -511,6 +527,8 @@
     - name: 2020
       expanded: true
       items:
+        - name: July 09
+          href: 2020/artifacts/sprint-172-update.md
         - name: June 01
           href: 2020/artifacts/sprint-170-update.md
         - name: April 13

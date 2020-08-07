@@ -8,7 +8,7 @@ ms.assetid: d61dcfa8-e9ec-4b50-b79b-89512cf1e3ea
 ms.author: kaelli
 author: KathrynEE
 ms.topic: conceptual
-monikerRange: '>= tfs-2013 <= azure-devops-2019'
+monikerRange: '>= tfs-2013 < azure-devops'
 ms.date: 03/13/2020
 ---
 
@@ -17,7 +17,7 @@ ms.date: 03/13/2020
 [!INCLUDE [temp](../includes/version-header-tfs-only.md)]
 
 > [!IMPORTANT]  
-> **Feature availability:** Team fields are only supported for on-premises TFS. Also, you can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
+> Team fields are only supported for on-premises Azure DevOps Server and with the On-premises XML process model. You can use a Team field or Area Paths to configure Team-scoped tools, but not both. 
 
 The default configuration for projects configures each team as an area path. For information on adding a team, see [Add teams](../organizations/settings/add-teams.md).
 

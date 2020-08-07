@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Workspace Command
 ms.assetid: a7b374f5-02c2-4318-9130-31533bf0732c
 ms.technology: devops-code-tfvc
-ms.author: apawast
-author: apawast
 ms.topic: reference
 ms.date: 08/10/2016
 monikerRange: '>= tfs-2015'

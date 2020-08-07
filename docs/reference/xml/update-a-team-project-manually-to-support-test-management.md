@@ -6,16 +6,17 @@ ms.technology: devops-agile
 ms.assetid: edbe689d-7863-4273-916f-b7e93b7f00b3
 ms.author: kaelli
 author: KathrynEE
+monikerRange: '<= tfs-2018'
 ms.date: 12/15/2017
 ---
 
 
 # Update a project manually to support test management
 
-**TFS 2018 | TFS 2017 | TFS 2015 | TFS 2013** 
+[!INCLUDE [temp](../../includes/version-tfs-2018-earlier.md)]
 
 > [!IMPORTANT]  
->This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS)and was created using a process template that doesn't have test plans and test suites work item types.    
+> This topic applies to a project that is defined on an on-premises Team Foundation Server (TFS) and was created using a process template that doesn't have test plans and test suites work item types.    
 
 When you upgrade your existing on-premises deployment to Team Foundation Server (TFS) 2013.3, you have the ability to customize test plans and test suites because these objects are now remodeled as work item types (WITs).  
   

@@ -4,7 +4,7 @@ ms.topic: conceptual
 ms.custom: seodec18
 description: Learn about building your code or deploying your software using agents in Azure Pipelines and Team Foundation Server
 ms.assetid: 5C14A166-CA77-4484-8074-9E0AA060DE58
-ms.date: 04/07/2020
+ms.date: 07/14/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -139,8 +139,10 @@ When you author a pipeline you specify certain **demands** of the agent. The sys
 
 > [!NOTE]
 >
-> Demands and capabilities apply only to self-hosted agents. When using Microsoft-hosted agents, you select an image for the hosted agent. 
-> You cannot use capabilities with hosted agents.
+> Demands and capabilities are designed for use with self-hosted agents so that jobs can be matched with an agent that 
+> meets the requirements of the job. When using Microsoft-hosted agents, you select an image for the agent that 
+> matches the requirements of the job, so although it is possible to add capabilities to a Microsoft-hosted agent, you don't need 
+> to use capabilities with Microsoft-hosted agents.
 
 ### View agent details
 
