@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '<= azure-devops'
-ms.date: 06/24/2020
+ms.date: 08/07/2020
 ---
 
 
@@ -17,6 +17,8 @@ ms.date: 06/24/2020
 [!INCLUDE [temp](includes/version-all.md)]
 
 As a project manager new to Azure Boards, use the guidance provided in this article to get started. 
+
+Light-weight 
 
 Project Planning 
 
@@ -32,12 +34,45 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 2. Each team gets their own set of tools  - can focus on their set of work with less noise 
 
 3. Program team can view Dev/Feature teams work and manage the Features and Epics 
+4. How big is your backlog? 
+ 
 
 
-## Understand which work items you'll use 
+## Understand which work item types you'll use  
 
-[!INCLUDE [temp](includes/note-requirements-terms.md)]  
+Determine which work item types your team will use to capture customer requirements and development work. Based on your project and the process used to create it, you have a choice from those shown in the following images. 
 
+[!INCLUDE [temp](includes/work-item-types.md)]
+
+ 
+[!INCLUDE [temp](includes/note-requirements-terms.md)]
+
+#### Best practice tips: 
+
+- Use Features to capture customer features you want to ship 
+- Quickly add features or requirements from the backlog and fill in details later
+- Use Requirements&mdash;User Stories, Product Backlog Items, Issues, or Requirements&mdash;to break-down Features into work the development team will own 
+- Map Requirements to Features to track progress 
+- Let Developers use Tasks to break-down their work as needed. 
+
+As project managers, you manage your features and the development team manages the requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. 
+
+If you have larger initiatives or scenarios that require shipping several Features, you can group these under Epics, again using parent-child links. 
+
+#### To learn how: 
+
+- [Define features and epics](backlogs/define-features-epics.md)  
+- [Create your backlog](backlogs/create-your-backlog.md)  
+- [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)  
+
+
+## Review, prioritize, and update your product plan  
+
+The main tool for planning your product is your team's Product Backlog or Feature Backlog. Use your backlog to perform the following tasks: 
+
+- Define the user stories or requirements that specify the work to be performed. Define user stories sized to be completed within a single sprint. Each user story you add to the backlog is automatically assigned the default area path and iteration path set for your team. 
+- Resequence or reorder the user stories so that they are listed in priority order.
+- Add details to each user story to capture the work to be delivered. 
 
 ## Organize your product backlog with Features & Epics  
 
@@ -48,13 +83,6 @@ You can start from a bottom-up or top-down approach, choose one for your initial
 2. Size Features to be delivered within a few sprints, Size Epics to be delivered Quarterly or to some Milestone objective 
 	
 
-## Your product plan and your Product Backlog  
-
-The main tool for planning your product is your team's Product Backlog. Use your Product Backlog to perform the following tasks: 
-
-- Define the user stories or requirements that specify the work to be performed. Define user stories sized to be completed within a single sprint. Each user story you add to the backlog is automatically assigned the default area path and iteration path set for your team. 
-- Resequence or reorder the user stories so that they are listed in priority order.
-- Add details to each user story to capture the work to be delivered. 
 
 	
 ## Your sprint plan and your Sprint Backlog   
