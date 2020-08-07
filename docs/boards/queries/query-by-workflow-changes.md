@@ -375,7 +375,7 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Activated By <sup> 1,&nbsp;2</sup> 
+      Activated By <sup> 1,&nbsp;2, 3</sup> 
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -395,7 +395,7 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Activated Date <sup> 2</sup> 
+      Activated By <sup> 1, 3</sup> 
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -415,10 +415,15 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Assigned To <sup> 1,&nbsp;2,&nbsp;3</sup>
+      ::: moniker range="azure-devops"
+      Assigned To <sup> 2</sup>
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Assigned To <sup> 2,&nbsp;3,&nbsp;4</sup>
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
-      The name of the team member who currently owns the work item. For more information, see ![Note 1 on synchronization and person-name fields](#sync).  
+      The name of the team member who currently owns the work item. For more information, see [Note 1 on synchronization and person-name fields](#sync).  
       Reference name=`System.AssignedTo`
    :::column-end:::
    :::column span="1":::
@@ -440,7 +445,12 @@ You can use the following fields to filter your queries or build reports. Some o
       String  
    :::column-end:::
    :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup>4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
       Requirement Category<sup>5</sup> 
+      ::: moniker-end 
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -455,12 +465,17 @@ You can use the following fields to filter your queries or build reports. Some o
       Boolean  
    :::column-end:::
    :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup>4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
       Requirement Category<sup>5</sup> 
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
-      >Board Lane
+      Board Lane
    :::column-end:::
    :::column span="2":::
       The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.
@@ -470,12 +485,22 @@ You can use the following fields to filter your queries or build reports. Some o
       String  
    :::column-end:::
    :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup>4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
       Requirement Category<sup>5</sup> 
+      ::: moniker-end
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
+      ::: moniker range="azure-devops"
       Closed By <sup> 1,&nbsp;2</sup> 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Closed By <sup> 1,&nbsp;2, 3</sup> 
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       The name of the team member who set the state to closed, completed, or done.   
@@ -505,7 +530,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Created By <sup> 1,&nbsp;2</sup>
+      ::: moniker range="azure-devops"
+      Created By <sup> 2</sup>
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Created By <sup> 2, 3</sup>
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       The name of the team member who created the work item. 
@@ -535,7 +565,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Reason <sup> 2,&nbsp;3</sup>
+      ::: moniker range="azure-devops"
+      Reason 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Reason <sup> 3,&nbsp;4</sup>
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason.  
@@ -554,6 +589,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row:::
    :::column span="1":::
       Resolved By <sup> 1,&nbsp;2</sup>  
+      ::: moniker range="azure-devops"
+      Resolved Date 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved By <sup> 1,&nbsp;2,&nbsp;3</sup>  
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -573,7 +614,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Resolved Date<sup> 2</sup> 
+      ::: moniker range="azure-devops"
+      Resolved Date 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved Date<sup> 1, 2</sup> 
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       ::: moniker range="azure-devops"
@@ -593,7 +639,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::
 :::row:::
    :::column span="1":::
-      Resolved Reason <sup> 2</sup>
+      ::: moniker range="azure-devops"
+      Resolved Reason 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved Reason <sup> 3</sup>
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed. This field is read-only and only valid for Agile and CMMI work item types.  
@@ -623,7 +674,12 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end:::  
 :::row:::
    :::column span="1":::
-      State <sup> 2, 3</sup>
+      ::: moniker range="azure-devops"
+      State  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      State <sup> 3, 4</sup>
+      ::: moniker-end
    :::column-end:::
    :::column span="2":::
       The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
@@ -638,6 +694,7 @@ You can use the following fields to filter your queries or build reports. Some o
       ::: moniker range="< azure-devops-2019"
       To modify the workflow states, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
       ::: moniker-end 
+      Reference name=`System.State`
    :::column-end:::
    :::column span="1":::
       String  
@@ -666,14 +723,26 @@ You can use the following fields to filter your queries or build reports. Some o
 
 <a id="sync">  </a>
 
-::: moniker range="> tfs-2013"
+::: moniker range="azure-devops"
+
+1. See [Date and Identity fields](#date-identity).  
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md). 
+3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
+3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
+	> [!NOTE]  
+	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+
+::: moniker-end
+
+
+::: moniker range="> tfs-2013 < azure-devops"
 
 1. See [Date and Identity fields](#date-identity).
 
 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
 
     For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
-3.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
+3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 5. The Requirement Category applies to all work item types that appear on the Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
 	> [!NOTE]  
@@ -700,7 +769,20 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ### Activated By/Date and Resolved By/Date fields 
 
-The logic managing the **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** fields has changed. The values assigned to these fields are now governed based on the state categories of *Proposed* and *Resolved*.  
+The system updates the **Activated By**, **Activated Date**, **Resolved By**, and **Resolved Date** fields when a change occurs to the workflow category state. These fields get updated when the workflow state changes to one that is in a state category  of *Proposed* for **Activated By** and **Activated Date**, and *Resolved* for **Resolved By** and **Resolved Date**. 
+
+To learn more how workflow states map to state categories, see [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md). 
+
+> [!NOTE]   
+> The logic governing the fields described here applies to Azure DevOps Services only.   
+   
+Because these fields now reference the workflow state categories, custom workflow states that you add are now referenced when updating the fields. 
+
+**Additional notes: **
+
+- The fields get updated anytime a work item moves from any category state other than that being set. For example, if you update a work item from *New* to *Fixed*, the **Resolved By/Resolved Date** fields are updated. However, if you update from *Fixed* and *Ready for Testing*&mdash;which are in the same category state&mdash; the **Resolved By/Resolved Date** fields aren't updated.
+- When you transition backwards, such as going from a *Resolved* to an *Active* state, the system clears the values for **Resolved By/Resolved Date**  fields. If you got from *Active* to *New*, the system clears the values for  **Activated By/Activated Date** fields.
+- You should never attempt to manually change the values for these fields.   They are system fields that are goverened by system rules. Any value you attempt to set will get over written. 
 
 ::: moniker-end
 
@@ -710,11 +792,17 @@ The logic managing the **Activated By**, **Activated Date**, **Resolved By**, an
 
 ### Date and Identity fields 
 
-Several date and identity fields are set based on workflow states or transitions. Some fields, such as Created By and Created Date, are set by the system when a work item is added. Other fields, such as Closed Date and Closed By, are set through the workflow definition of the work item type. Additionally, customized work item types may have additional rules defined that impact the date and identity field assignments.   
+Several date and identity fields are set based on workflow states or transitions. Some fields, such as **Created By** and **Created Date**, are set by the system when a work item is added. Other fields, such as **Closed Date** and **Closed By**, are set through the workflow definition of the work item type. Additionally, customized work item types may have additional rules defined that impact the date and identity field assignments.   
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
 
 #### State changes
 
-For example, the Resolved Date, Resolved By, Closed Date, Closed By, Activated Date, and Activated By fields are set to `EMPTY` when a State value is set to New. The State value assignments are evaluated first, and then the transition assignments are evaluated next. 
+The following XML syntax example illustrates rules that may be defined for a work item type that govern the values for select fields. 
+Here, the **Resolved Date**, **Resolved By**, **Closed Date**, **Closed By**, **Activated Date**, and **Activated By** fields are set to `EMPTY` when a State value is set to New. The State value assignments are evaluated first, and then the transition assignments are evaluated next. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
