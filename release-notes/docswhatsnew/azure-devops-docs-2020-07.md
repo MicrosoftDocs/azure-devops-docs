@@ -55,7 +55,7 @@ Welcome to what's new in the Azure DevOps docs from July 1, 2020 through July 31
 - [Why data pipelines?](/azure/devops/pipelines/apps/cd/azure/cicd-data-overview) - CI/CD Data Pipeline Articles
 - [Building a Continuous Integration and Continuous Deployment pipeline with DSC](/azure/devops/pipelines/get-started/dsc-cicd)
 - [Build GitHub Enterprise Server repositories](/azure/devops/pipelines/repos/github-enterprise)
-- [Build on-premises BitBucket repositories](/azure/devops/pipelines/repos/on-premises-bitbucket)
+- [Build on-premises Bitbucket repositories](/azure/devops/pipelines/repos/on-premises-bitbucket)
 - [Build Subversion repositories](/azure/devops/pipelines/repos/subversion)
 
 ### Updated articles
