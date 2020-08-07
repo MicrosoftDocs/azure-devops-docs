@@ -359,6 +359,7 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker-end
 
+---
 :::row:::
    :::column span="1":::
       **Field name**
@@ -373,6 +374,7 @@ You can use the following fields to filter your queries or build reports. Some o
       **Work item type**
    :::column-end:::
 :::row-end:::
+---
 :::row:::
    :::column span="1":::
       Activated By <sup> 1,&nbsp;2, 3</sup> 
@@ -718,7 +720,9 @@ You can use the following fields to filter your queries or build reports. Some o
       All
    :::column-end:::
 :::row-end:::
- 
+
+---
+
 ####Notes:  
 
 <a id="sync">  </a>
