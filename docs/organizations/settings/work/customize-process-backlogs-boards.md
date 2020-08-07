@@ -9,7 +9,7 @@ ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= azure-devops-2019'
 ms.topic: conceptual
-ms.date: 11/19/2018
+ms.date: 07/20/2020
 ---
 
 # Customize your backlogs or boards (Inheritance process)  
@@ -53,7 +53,7 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 ### Add a portfolio backlog 
 	
-1. From the  **Backlog levels** page, choose ![ ](../../../media/icons/blue-add-icon.png) **New top level portfolio backlog**. 
+1. From the  **Backlog levels** page, choose :::image type="icon" source="../../../media/icons/blue-add-icon.png" border="false"::: **New top level portfolio backlog**. 
 
 	> [!div class="mx-imgBorder"]  
 	> ![Web portal, Admin context, Process page, select Process](media/process/process-new-portfolio-backlog.png) 
@@ -65,28 +65,26 @@ You can add a custom work item type when adding or editing a portfolio backlog, 
 
 1. If you are associating only one work item type with the backlog, then click Save to save your changes. Otherwise, you can add more work item types as needed. 
 
-	<img src="media/process/process-add-portfolio-backlog-dialog-save.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 1px solid #C3C3C3;" /> 
+	![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-add-portfolio-backlog-dialog-save.png)
 
 
 <a id="edit-portfolio-backlog">  </a>
 
 ### Edit, rename, or delete a portfolio backlog 
 
-Open the context menu of a portfolio backlog that you've added to edit, rename, or delete it. From the Backlog levels page, open the Add portfolio backlog dialog. 
+From the Backlog levels page, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false":::  context menu of a portfolio backlog to edit, rename, or delete it.  
 
 > [!NOTE]    
-> You can't add an inherited WIT to any backlog level. 
+> You can't add an inherited work item type to any backlog level. 
 
-<img src="media/process/process-portfolio-backlog-context-menu.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-portfolio-backlog-context-menu.png)
 
 Deleting a backlog level removes the backlog and board associated with the level for all teams, including customizations made to them. The work items defined with the associated work item types are not deleted or affected in any way. 
 
-<img src="media/process/process-edit-portfolio-backlog-dialog.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-portfolio-backlog-dialog.png)  
 
 > [!NOTE]    
-> You can't remove the default, inherited WIT from the Epics or Features portfolio backlogs. 
-
-
+> You can't remove the default, inherited work item type from the Epics or Features portfolio backlogs.  
 
 <a id="edit-product-backlog">  </a>
 
@@ -98,11 +96,10 @@ You can rename the backlog, change the color, add WITs, and change the default W
 
 Here, we've renamed the backlog, added *Customer Ticket*, and changed the default type to *Customer Ticket*. 
 
-<img src="media/process/process-edit-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-backlog-dialog-modified.png)  
 
 > [!NOTE]    
->You can't remove the default, inherited WIT from the Requirements backlog. 
-
+> You can't remove the default, inherited WIT from the Requirements backlog.  
 
 <a id="edit-iteration-backlog">  </a>
 
@@ -114,10 +111,14 @@ For the iteration backlog, you can add WITs and change the default WIT. Open the
 
 Here, we've added the *Ticket* WIT which is tracked along with tasks. 
 
-<img src="media/process/process-edit-iteration-backlog-dialog-modified.png" alt="Web portal, Add a portfolio backlog dialog, Save changes" style="border: 2px solid #C3C3C3;" />
+![Web portal, Add a portfolio backlog dialog, Save changes](media/process/process-edit-iteration-backlog-dialog-modified.png)  
 
 > [!NOTE]    
 > You can't remove the default, inherited WIT from the Iteration backlog. 
+
+
+
+<a id="add-oob-to-backlog" /> 
 
 
 ## Related articles  

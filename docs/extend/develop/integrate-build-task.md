@@ -1,7 +1,7 @@
 ---
 ms.technology: devops-ecosystem
-title: Custom build/release task reference | Extensions for Azure DevOps Services
-description: Reference for creating a custom build or release task with an extension in Azure DevOps Services.
+title: Custom build/release task reference | Extensions for Azure DevOps
+description: Reference for creating a custom build or release task with an extension in Azure DevOps or Team Foundation Server (TFS).
 ms.assetid: 00806e48-3839-40eb-880f-12ec53bfdf73
 ms.topic: conceptual
 monikerRange: '>= tfs-2017'
@@ -11,6 +11,8 @@ ms.date: 11/29/2018
 ---
 
 # Reference for integrating custom build tasks into extensions
+
+[!INCLUDE [version-tfs-2017-through-vsts](../../includes/version-tfs-2017-through-vsts.md)]
 
 [!INCLUDE [extension-docs-new-sdk](../../includes/extension-docs-new-sdk.md)]
 

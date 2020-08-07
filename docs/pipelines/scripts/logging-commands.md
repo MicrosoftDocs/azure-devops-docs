@@ -3,10 +3,13 @@ title: Logging commands
 description: How scripts can request work from the agent
 ms.topic: reference
 ms.assetid: 3ec13da9-e7cf-4895-b5b8-735c1883cc7b
-ms.date: 07/07/2020
+ms.date: 08/04/2020
 ---
 
 # Logging commands
+
+> [!NOTE]
+> Use UTF-8 formatting for logging commands. 
 
 ## Overview
 
@@ -55,9 +58,10 @@ The formatting commands are:
 ##[group]Beginning of a group
 ##[warning]Warning message
 ##[error]Error message
-##[debug]Debug-only text
+##[debug]Debug text
 ##[command]Command-line being run
 ##[endgroup]
+
 ```
 
 Those commands will render in the logs like this:
@@ -67,8 +71,6 @@ Those commands will render in the logs like this:
 That block of commands can also be collapsed, and looks like this:
 
 ![Screenshot of collapsed section of logs](media/log-formatting-collapsed.png)
-
-The debug line will only appear if you run the pipeline with diagnostics turned on.
 
 ## Task commands
 
@@ -357,7 +359,7 @@ Upload and attach attachment to current timeline record. These files are not ava
 
 #### Usage
 
-Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs.
+Upload and attach summary markdown to current timeline record. This summary shall be added to the build/release summary and not available for download with logs. The summary should be in UTF-8 or ASCII format. 
 
 #### Examples
 

@@ -15,7 +15,7 @@ ms.date: 02/21/2020
 
 # Plan and track work  
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../includes/version-all.md)]
 
 You track your work by creating work items. This article walks you through creating issues and tasks using a Kanban board for the Basic process, or creating user stories and tasks using for the Agile process. 
 
@@ -461,7 +461,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 
 #### [Agile process](#tab/agile-process) 
 
-1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](media/plan-track-work/add-child-task.png) 
@@ -486,7 +486,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 
 #### [Basic process](#tab/basic-process) 
 
-1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the issue and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon for the issue and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](media/track-issues/add-tasks.png) 
@@ -510,7 +510,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 
 #### [Scrum process](#tab/scrum-process) 
 
-1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](media/plan-track-work/add-child-task.png) 
@@ -535,7 +535,7 @@ Tasks that you create from the Kanban board show up on your sprint taskboard. Al
 
 #### [CMMI process](#tab/cmmi-process) 
 
-1. To start adding tasks, choose the ![](../../media/icons/actions-icon.png) actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
+1. To start adding tasks, choose the  :::image type="icon" source="../../media/icons/actions-icon.png" border="false":::  actions icon for the story and select the  ![plus icon](../../media/icons/green_plus_icon.png) **Add Task** option.  
 
 	> [!div class="mx-imgBorder"]  
 	> ![Choose Add Task from Issues menu](media/plan-track-work/add-child-task.png) 

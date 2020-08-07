@@ -4,13 +4,13 @@ ms.custom: seodec18
 description: How to reuse pipelines through templates
 ms.assetid: 6f26464b-1ab8-4e5b-aad8-3f593da556cf
 ms.topic: conceptual
-ms.date: 05/05/2020
-monikerRange: 'azure-devops-2019 || azure-devops'
+ms.date: 08/03/2020
+monikerRange: 'azure-devops-2019 || azure-devops || azure-devops-2020'
 ---
 
 # Template types & usage
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 Templates let you define reusable content, logic, and parameters. Templates function in two ways. You can insert reusable content with a template or you can use a template to control what is allowed in a pipeline. 
 
@@ -25,7 +25,7 @@ Use templates to define your logic once and then reuse it several times. Templat
 ::: moniker-end
 
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## Parameters
 
@@ -71,10 +71,10 @@ parameters:
   default: false
 
 steps:
-- ${{ if eq(parameters.experimentalTemplate, true) }}:
-  - template: experimental.yml
-- ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
-  - template: stable.yml
+  - ${{ if eq(parameters.experimentalTemplate, true) }}:
+    - template: experimental.yml
+  - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
+    - template: stable.yml
 ```
 
 ### Parameter data types
@@ -553,7 +553,7 @@ steps:
 
 Within a template expression, you have access to the `parameters` context that contains the values of parameters passed in.
 Additionally, you have access to the `variables` context that contains all the variables specified in the YAML file plus 
-the [system variables](../build/variables.md#system-variables). 
+many of the [predefined variables](../build/variables.md) (noted on each variable in that topic). 
 Importantly, it doesn't have runtime variables such as those stored on the pipeline or given when you start a run.
 Template expansion happens [very early in the run](runs.md#process-the-pipeline), so those variables aren't available.
 
@@ -856,7 +856,7 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 100 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end
@@ -1359,7 +1359,8 @@ If you need to escape a value that literally contains `${{`, then wrap the value
 Templates and template expressions can cause explosive growth to the size and complexity of a pipeline.
 To help prevent runaway growth, Azure Pipelines imposes the following limits:
 - No more than 50 separate YAML files may be included (directly or indirectly)
-- No more than 10 megabytes of total YAML content can be included
+- No more than 10 megabytes of memory consumed while parsing the YAML (in practice, this is typically between 600KB - 2MB of on-disk YAML, depending on the specific features used)
+
 - No more than 2000 characters per template expression are allowed
 
 ::: moniker-end

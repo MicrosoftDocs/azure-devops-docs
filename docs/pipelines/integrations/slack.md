@@ -141,15 +141,15 @@ For this feature to work, users have to be signed-in. Once they are signed in, t
 
 If you want to clean up your channel, use the following commands to unsubscribe from all pipelines within a project.
 
-	```
-	/azpipelines unsubscribe all [project url]
-	```
+```
+/azpipelines unsubscribe all [project url]
+```
 
-	For example:
+For example:
 
-	```
-	/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
-	```
+```
+/azpipelines unsubscribe all https://dev.azure.com/myorg/myproject
+```
 
 This command deletes all the subscriptions related to any pipeline in the project and removes the pipelines from the channel. 
 

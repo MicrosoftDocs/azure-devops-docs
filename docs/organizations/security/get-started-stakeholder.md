@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 
 # Get started as a Stakeholder
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [version-all](../../includes/version-all.md)]
 
 ::: moniker range="azure-devops" 
 
@@ -24,7 +24,7 @@ Stakeholders are users with free but limited access to Azure DevOps features and
 
 ::: moniker-end  
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
 
 Stakeholders are users with free but limited access to Azure DevOps features and functions. With Stakeholder access, you can add and modify work items, view and approve pipelines, and view dashboards. You can check project status and provide direction, feedback, feature ideas, and business alignment to a team. 
 ::: moniker-end  
@@ -56,7 +56,7 @@ Use this tutorial to learn how to do the following tasks:
 > [!div class="checklist"]
 > * Sign in to a project
 > * Understand which work item types are available to your project
-> * Open the Kanban board and add a work item
+> * Open the Kanban board and open a work item
 > * Add details, tags, or comments to a work item
 > * View the product backlog 
 > * Find work assigned to you, or query for other work items
@@ -72,7 +72,7 @@ You must have been added to the Azure DevOps project and been granted Stakeholde
 	::: moniker range="azure-devops"  
 	`https://dev.azure.com/OrganizationName/ProjectName`
 	::: moniker-end
-	::: moniker range="<= azure-devops-2019"
+	::: moniker range="< azure-devops"
   	`http://ServerName:8080/tfs/DefaultCollection/ProjectName`  	
   	For example, to connect to the server named *FabrikamPrime* and project named *Contoso*, enter ```http://FabrikamPrime:8080/tfs/DefaultCollection/Contoso```.
 	::: moniker-end
@@ -106,7 +106,7 @@ You can start viewing and adding work items once you connect to a project. The e
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 	> [!div class="mx-imgBorder"]  
@@ -115,7 +115,7 @@ You can start viewing and adding work items once you connect to a project. The e
 ::: moniker-end
 
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 1. Check that you selected the right project, and select **Boards** > **Boards**. Then select the correct team from the team selector menu. 
 
@@ -127,7 +127,7 @@ You can start viewing and adding work items once you connect to a project. The e
 	> ![Select another team's board](/azure/devops/boards/boards/media/quickstart/select-kanban-team-board.png) 
 
 	> [!TIP]    
-	> Select the ![ ](/azure/devops/media/icons/icon-favorite-star.png) star icon to make a team board a favorite. Favorite artifacts (![ ](/azure/devops/media/icons/icon-favorited.png) favorite icon) appear at the top of the team selector list.
+	> Select the :::image type="icon" source="/azure/devops/media/icons/icon-favorite-star.png" border="false"::: star icon to make a team board a favorite. Favorite artifacts (:::image type="icon" source="/azure/devops/media/icons/icon-favorited.png" border="false"::: favorite icon) appear at the top of the team selector list.
 
 1. Check that you selected **Stories** for Agile, **Issues** for Basic, **Backlog items** for Scrum, or **Requirements** for CMMI as the backlog level. 
 	Here we have selected **Backlog Items** for the Scrum process.
@@ -144,7 +144,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -165,7 +165,7 @@ You can start viewing and adding work items once you connect to a project. The e
 
 	![Open Portfolio Kanban board, features](/azure/devops/boards/boards/media/quickstart/open-kanban-board.png)
 
-	If you don't see **Work**, your screen size might be reduced. Select the three dots (![ ](/azure/devops/media/ellipses-reduced-screen-size.png)) icon. Then select **Work** > **Backlogs** > **Board**.   
+	If you don't see **Work**, your screen size might be reduced. Select the three dots (:::image type="icon" source="/azure/devops/media/ellipses-reduced-screen-size.png" border="false":::) icon. Then select **Work** > **Backlogs** > **Board**.   
 
 	![Open Work when screen size is reduced](/azure/devops/boards/boards/media/kanban-quickstart-reduced-screensize.png)   
 
@@ -183,8 +183,9 @@ You can start viewing and adding work items once you connect to a project. The e
 
 ## Add work items to a product backlog 
 
-From the Kanban board, you can add work items. However, with Stakeholder access, you can't update the status of a work item by drag and drop to a different column. 
+From the Kanban board, you can't add work items, but you can open them and annotate them. To add work items, open the backlog by choosing the **Backlog** link. Also, you can't update the status of a work item by drag-and-drop to a different column or reorder cards within a column. 
 
+<!--- 
 #### [Agile process](#tab/agile-process) 
 
 1. From the User Stories board, choose **New item** and start adding those stories you want to track. 
@@ -245,7 +246,7 @@ From the Kanban board, you can add work items. However, with Stakeholder access,
 
 * * *
 
-
+-->
 
 ## Add details to a work item
 
@@ -454,7 +455,7 @@ For example, here we assign the Requirement to Jamal Hartnett. Choose **Save & C
 </tr>
 <tr>
     <td><a href="../../boards/queries/query-by-area-iteration-path.md">Iteration</a></td>
-    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../settings/set-iteration-paths-sprints.md">Define iteration paths (aka sprints) and configure team iterations</a>.</td>
+    <td>Choose the sprint or iteration in which the work is to be completed, or leave it blank and assign it later during a planning meeting. To change the drop-down list of iterations, see <a href="../settings/set-iteration-paths-sprints.md">Define iteration paths and configure team iterations</a>.</td>
 </tr>
 <tr>
 <td><a href="../../boards/queries/titles-ids-descriptions.md" >Description</a></td> 
@@ -560,7 +561,7 @@ From the Kanban board, choose **View as backlog**.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019"
+::: moniker range="azure-devops-2019 || azure-devops-2020"
 
 From the Kanban board, choose **View as backlog**.  
 
@@ -635,66 +636,7 @@ Stakeholder access grants access to features differently depending on whether yo
 
 ::: moniker-end
 
-
-### Features not available to users with Stakeholder access 
-
-If a Stakeholder needs access to one or more of the following features&mdash;which support the daily work of product owners, team leads, developers, testers, and project administrators&mdash;you need to have <strong>Basic</strong> access.  
-
-::: moniker range="azure-devops"
-
-#### For Private projects:
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify the home page  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong> or <strong>Test Plans</strong>.  
-
-#### For Public projects:
-
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Repos</strong> or <strong>Test Plans</strong>.
-
-::: moniker-end
-
-::: moniker range="azure-devops-2019"
-
-- Change the priority of an item within a backlog  
-- Delete work items or move work items to another project
-- Create shared queries, view charts, and modify dashboards 
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features under <strong>Pipelines</strong>, <strong>Repos</strong>, <strong>Test Plans</strong>, or <strong>Artifacts</strong>.  
-
-::: moniker-end
-
-::: moniker range="tfs-2018"
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify dashboards  
-- View Delivery Plans (a Marketplace extension)    
-- Access the full set of features under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>.  
-::: moniker-end
-
-::: moniker range="tfs-2017"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify dashboards  
-- View Delivery Plans (a Marketplace extension)
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"
-
-- Change the priority of an item within a backlog
-- Delete work items 
-- Create shared queries, view charts, and modify the home page  
-- Access the full set of features provided under <strong>Code</strong>, <strong>Build and Release</strong> or <strong>Test</strong>
-- Participate in team rooms, which capture interactive, detailed conversations about the project.  
-
-::: moniker-end
+[!INCLUDE [temp](../../includes/features-not-available-stakeholder.md)]
 
 <a id="related-articles" /> 
 

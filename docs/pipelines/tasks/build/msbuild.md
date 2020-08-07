@@ -50,7 +50,7 @@ msbuild
       <td>
          <p>(Required) If you want to build a single project, click the <strong>...</strong> button and select the project.</p>
          <p>If you want to build multiple projects, specify search criteria. You can use a single-folder wildcard (<code><em>*</em></code>) and recursive wildcards (<code><em>**</em></code>). For example, <code><em>**.*</em>proj</code> searches for all MSBuild project (.*proj) files in all subdirectories.</p>
-         <p>Make the sure the projects you specify are downloaded by this build pipeline. On the Repository tab:</p>
+         <p>Make sure the projects you specify are downloaded by this build pipeline. On the Repository tab:</p>
          <ul>
             <li>
                If you use TFVC, make sure that the  project is a child of one of the mappings on the Repository tab.

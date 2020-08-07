@@ -4,7 +4,7 @@ description: Secure and share packages using feed permissions in Azure Artifacts
 ms.assetid: 70313C3C-2E52-4FFC-94C2-41F1E37C9D26
 ms.technology: devops-artifacts
 ms.topic: conceptual
-ms.date: 06/11/2020
+ms.date: 07/23/2020
 monikerRange: '>= tfs-2017'
 ---
 
@@ -29,6 +29,9 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 | Edit feed permissions                         |          |          |          | &#x2713; |
 
 By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
+
+> [!NOTE]
+> To access a feed in a different organization, a user must be given access to the project hosting that feed.
 
 ::: moniker range=">= azure-devops-2019"
 
@@ -100,7 +103,7 @@ To restrict access to your feed, simply select a user or group from the permissi
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-permissions.png)
 
-After restricting your view's visibility, the permissions column should indicate that your view is only available to `feed users`.
+After restricting your view's visibility to `specific people`, the access permissions column should reflect your changes.
 
 > [!div class="mx-imgBorder"]
 >![views permissions](media/view-settings.png)

@@ -14,7 +14,7 @@ ms.date: 02/25/2020
 
 # Naming restrictions and conventions  
 
-[!INCLUDE [temp](../../includes/version-vsts-tfs-all-versions.md)]  
+[!INCLUDE [temp](../../includes/version-all.md)]  
 
 Most components in Azure DevOps must follow naming restrictions and conventions. Restrictions help guarantee a consistent user experience and provide compatibility with other applications.  
 
@@ -31,7 +31,7 @@ The length restrictions in this article are measured by the number of Unicode ch
 
 As with other operating system files, ASCII control characters (ASCII 1-31) and surrogate combinations are also not allowed. For general information about the operating system restrictions applied to file names, see [Naming Files, Paths, and Namespaces](/windows/win32/fileio/naming-a-file).
 
-::: moniker range=">= tfs-2013 <= tfs-2018"
+::: moniker range=">= tfs-2013 < azure-devops"
 
 <a id="ComputerNames">   </a>
 
@@ -1419,7 +1419,7 @@ Workspace names must conform to the following restrictions.
 
 ## Wiki page title naming conventions
 
-[!INCLUDE [temp](../../../docs/project/wiki/includes/wiki-naming-conventions.md)]
+[!INCLUDE [temp](../../project/wiki/includes/wiki-naming-conventions.md)]
 
 
 ## Related articles 

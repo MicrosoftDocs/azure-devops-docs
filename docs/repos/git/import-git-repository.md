@@ -4,8 +4,6 @@ titleSuffix: Azure Repos
 description: Import a repo from GitHub, GitLab, or Bitbucket into your Azure DevOps Services/TFS Project
 ms.assetid: 5439629e-23fd-44f1-a345-f00a435f1430
 ms.technology: devops-code-git 
-ms.author: apawast
-author: apawast
 ms.topic: quickstart
 ms.date: 11/02/2018
 monikerRange: '>= tfs-2013'

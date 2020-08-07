@@ -1,6 +1,6 @@
 ---
 title: Python Pip Authenticate
-ms.custom: seodec18, tracking-python
+ms.custom: seodec18, devx-track-python
 description: Sets up authentication with pip so you can perform pip commands in your pipeline. 
 ms.topic: reference
 ms.date: 08/02/2019

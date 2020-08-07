@@ -4,7 +4,7 @@ description: Configure schedules to run pipelines
 ms.topic: conceptual
 ms.author: sdanie
 author: steved0x
-ms.date: 05/27/2020
+ms.date: 07/21/2020
 monikerRange: '>= tfs-2015'
 ---
 
@@ -405,19 +405,55 @@ In this example, the classic editor scheduled trigger has two entries, producing
 
 * * *
 
-::: moniker range="azure-devops"
+::: moniker range=">=azure-devops-2020"
 
 ## FAQ
 
+* [I defined a schedule in the YAML file. But it didn't run. What happened?](#i-defined-a-schedule-in-the-yaml-file-but-it-didnt-run-what-happened)
+* [My YAML schedules were working fine. But, they stopped working now. How do I debug this?](#my-yaml-schedules-were-working-fine-but-they-stopped-working-now-how-do-i-debug-this)
+* [My code hasn't changed, yet a scheduled build is triggered. Why?](#my-code-hasnt-changed-yet-a-scheduled-build-is-triggered-why)
+* [I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?](#i-see-the-planned-run-in-the-scheduled-runs-panel-however-it-does-not-run-at-that-time-why)
+* [Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?](#schedules-defined-in-yaml-pipeline-work-for-one-branch-but-not-the-other-how-do-i-fix-this)
+
 ### I defined a schedule in the YAML file. But it didn't run. What happened?
 
-* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. You need to have the **Multi-stage pipelines** preview feature enabled to see this action. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. The list is filtered down to only show you the upcoming few runs over the next few days. If this does not meet your expectation, it is probably the case that you have mistyped your cron schedule, or you do not have the schedule defined in the correct branch. Read the topic above to understand how to configure schedules. Reevaluate your cron syntax. All the times for cron schedules are in UTC.
+
+* Make a small trivial change to your YAML file and push that update into your repository. If there was any problem in reading the schedules from the YAML file earlier, it should be fixed now.
 
 * If you have any schedules defined in the UI, then your YAML schedules are not honored. Ensure that you do not have any UI schedules by navigating to the editor for your pipeline and then selecting **Triggers**.
 
 * There is a limit on the number of runs you can schedule for a pipeline. Read more about [limits](#limits).
 
 * If there are no changes to your code, they Azure Pipelines may not start new runs. Learn how to [override](#always) this behavior.
+
+### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
+
+* If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
+
+* There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
+
+* Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
+
+* Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
+
+* Check the next few runs that Azure Pipelines has scheduled for your pipeline. You can find these by selecting the **Scheduled runs** action in your pipeline. If you do not see the schedules that you expected, make a small trivial change to you YAML file, and push the update to your repository. This should re-sync the schedules.
+
+* If you use GitHub for storing your code, it is possible that Azure Pipelines may have been throttled by GitHub when it tried to start a new run. Check if you can start a new run manually.
+
+### My code hasn't changed, yet a scheduled build is triggered. Why?
+
+* You might have enabled an option to **always** run a scheduled build even if there are no code changes. If you use a YAML file, verify the syntax for the schedule in the YAML file. If you use classic pipelines, verify if you checked this option in the scheduled triggers.
+
+* You might have updated the build pipeline or some property of the pipeline. This will cause a new run to be scheduled even if you have not updated your source code. Verify the **History** of changes in the pipeline using the classic editor.
+
+* You might have updated the service connection used to connect to the repository. This will cause a new run to be scheduled even if you have not updated your source code.
+
+* Azure Pipelines first checks if there are any updates to your code. If Azure Pipelines is unable to reach your repository or get this information, it will either start a scheduled run anyway or it will create a failed run to indicate that it is unable to reach the repository. If you notice that a run was created and that failed immediately, this is likely the reason. It is a dummy build to let you know that Azure Pipelines is unable to reach your repository.
+
+### I see the planned run in the Scheduled runs panel. However, it does not run at that time. Why?
+
+* The **Scheduled runs** panel shows all potential schedules. However, it may not actually run unless you have made real updates to the code. To force a schedule to always run, ensure that you have set the **always** property in the YAML pipeline, or checked the option to always run in a classic pipeline.
 
 ### Schedules defined in YAML pipeline work for one branch but not the other. How do I fix this?
 
@@ -430,15 +466,4 @@ schedules:
     include: 
     - features/X  
 ```
-
-### My YAML schedules were working fine. But, they stopped working now. How do I debug this?
-
-* If you did not specify `always:true`, your pipeline won't be scheduled unless there are any updates made to your code. Check whether there have been any code changes and how you [configured the schedules](#always).
-
-* There is a [limit](#limits) on how many times you can schedule your pipeline. Check if you have exceeded those limits.
-
-* Check if someone enabled additional schedules in the UI. Open the editor for your pipeline, and select **Triggers**. If they defined schedules in the UI, then your YAML schedules won't be honored.
-
-* Check if your pipeline is paused or disabled. Select **Settings** for your pipeline.
-
 ::: moniker-end

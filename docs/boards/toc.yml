@@ -25,7 +25,7 @@
     href: /azure/devops/organizations/settings/about-areas-iterations?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Best tool for the job
     href: work-items/best-tool-add-update-link-work-items.md
-  - name: Quick guide to default permissions and access
+  - name: Quick guide to default permissions & access
     href: ./get-started/permissions-access-boards.md
     displayname: security
   - name: Process guidance
@@ -102,9 +102,9 @@
     href: /azure/devops/organizations/settings/set-area-paths?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
   - name: Define iteration (sprints) & configure team iterations 
     href: /azure/devops/organizations/settings/set-iteration-paths-sprints?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-  - name: Set up your backlogs and boards
+  - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
-  - name: Add and manage teams
+  - name: Add & manage teams
     items:
     - name: Add a team
       href: /azure/devops/organizations/settings/add-teams?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
@@ -118,7 +118,7 @@
     items:
     - name: Default permissions & access (Security)
       href: /azure/devops/organizations/security/permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
-    - name: Set work tracking and plan permissions 
+    - name: Set work tracking & plan permissions 
       href: /azure/devops/organizations/security/set-permissions-access-work-tracking?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
     - name: Grant or restrict permissions to select tasks
       href: /azure/devops/organizations/security/restrict-access?toc=/azure/devops/boards/toc.json&bc=/azure/devops/boards/breadcrumb/toc.json
@@ -158,7 +158,7 @@
     href: backlogs/office/schedule-projects-using-microsoft-project.md
   - name: Storyboard your ideas
     href: backlogs/office/storyboard-your-ideas-using-powerpoint.md
-  - name: Add and share storyboard shapes
+  - name: Add & share storyboard shapes
     href: backlogs/office/add-share-storyboard-shapes.md
   - name: Troubleshooting
     items:
@@ -178,7 +178,7 @@
   items:
   - name: FAQs 
     href: faqs.md 
-  - name: Set up your backlogs and boards
+  - name: Set up your backlogs & boards
     href: backlogs/set-up-your-backlog.md 
   - name: Fix "Ordering backlog items is disabled"
     href: backlogs/resolve-backlog-reorder-issues.md
@@ -231,7 +231,7 @@
   - name: Dashboards, Charts, Reports, & Widgets
     href: ../report/dashboards/dashboards.md 
   - name: Process customization 
-    href: ../reference/index.md
+    href: ../reference/index.yml
   - name: Azure Test Plans 
     href: ../test/index.yml
   - name: Client support 

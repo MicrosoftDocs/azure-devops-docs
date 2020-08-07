@@ -8,7 +8,7 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: tutorial
 monikerRange: '>= tfs-2013'
-ms.date: 04/28/2020
+ms.date: 07/09/2020
 ---
 
 
@@ -17,7 +17,7 @@ ms.date: 04/28/2020
 
 # 2. Add tasks to backlog items 
 
-[!INCLUDE [temp](../includes/version-vsts-tfs-all-versions.md)] 
+[!INCLUDE [temp](../includes/version-all.md)] 
 
 <a id="define-tasks">  </a>
 
@@ -41,7 +41,7 @@ Add as many tasks as needed to capture the work required to complete each item. 
 ## Open a Sprint backlog for a team 
 
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 
 1. From your web browser, open your team's sprint backlog. (1) Check that you have selected the right project, (2) choose **Boards>Sprints**, (3) select the correct team from the team selector menu, and lastly (4), choose **Backlog**. 
 
@@ -149,7 +149,7 @@ From the **Backlog** view, choose the plus sign to open the work item form for a
 
 Fill out the form as described in the next section. 
 
-Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.   
+Another option, is to open the **Taskboard**, and add tasks as cards. Simply click the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.   
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the taskboard](media/add-tasks/add-task-board-agile.png)
@@ -164,14 +164,14 @@ Another option, is to open the **Taskboard**, and add tasks as cards. Simply cli
 
 You can add tasks from the sprint **Backlog** or **Taskboard**. 
 
-From the **Backlog** view, choose the ![ ](../../media/icons/blue-add-icon.png) plus icon to add a new task.  
+From the **Backlog** view, choose the :::image type="icon" source="../../media/icons/blue-add-icon.png" border="false"::: plus icon to add a new task.  
 
 > [!div class="mx-imgBorder"]
 > ![print backlog page, add task](media/add-tasks/sp-add-tasks.png)
 
 Fill out the form as described in the next section. 
 
-Another option, is to open **Taskboard**, and add tasks as cards. Simply click the ![ ](../../media/icons/add-icon.png) plus icon, enter a title for the item, and then press Enter on your keyboard.    
+Another option, is to open **Taskboard**, and add tasks as cards. Simply click the :::image type="icon" source="../../media/icons/add-icon.png" border="false"::: plus icon, enter a title for the item, and then press Enter on your keyboard.    
 
 > [!div class="mx-imgBorder"]
 > ![Add task from the taskboard](media/add-tasks/add-task-board-standard.png)

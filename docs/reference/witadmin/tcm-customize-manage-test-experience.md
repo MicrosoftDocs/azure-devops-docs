@@ -8,7 +8,7 @@ ms.assetid: a4820ed4-9213-4cfc-99e6-f974382036f8
 ms.author: kaelli
 author: KathrynEE
 ms.topic: reference
-monikerRange: '<= azure-devops-2019'
+monikerRange: '< azure-devops'
 ms.date: 03/20/2018
 ---
 
@@ -29,7 +29,7 @@ You can customize three of the features that are supported in Microsoft Test Man
 The **tcm** command-line tool only works when run against an on-premises Team Foundation Server. 
 
 
-Also, you can use `tcm` command options to [copy and clone test suites and test cases](../../test/mtm/copying-and-cloning-test-suites-and-test-cases.md).  
+Also, you can use `tcm` command options to [copy and clone test suites and test cases](/previous-versions/azure/devops/test/mtm/copying-and-cloning-test-suites-and-test-cases).  
 
  **Requirements**  
 
@@ -38,7 +38,8 @@ Also, you can use `tcm` command options to [copy and clone test suites and test 
 To run the **tcm** command-line tool, open a Command Prompt window where Visual Studio is installed. To do this, enter **Developer Command Prompt** in the **Type here to search** box and choose the version that applies to you. The **tcm** command is located in the following folder: 
 
 
-::: moniker range=">= tfs-2017 <= azure-devops-2019"
+::: moniker range=">= tfs-2017 < azure-devops"
+
 #### TFS 2018 and TFS 2017, Visual Studio 2017 client:
 
 `%programfiles(x86)%\Microsoft Visual Studio\2017\Professional\Common7\IDE`
@@ -47,6 +48,7 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 
 
 ::: moniker range="tfs-2015"
+
 #### TFS 2015, Visual Studio 2015 client 
 
 `%programfiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE`
@@ -56,6 +58,7 @@ To run the **tcm** command-line tool, open a Command Prompt window where Visual 
 
 
 ::: moniker range="tfs-2013"
+
 #### TFS 2013, Visual Studio 2013 client 
 
 `%programfiles(x86)%\Microsoft Visual Studio 12.0\Common7\IDE`

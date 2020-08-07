@@ -8,12 +8,12 @@ ms.author: kaelli
 author: KathrynEE
 ms.topic: quickstart
 monikerRange: '>= tfs-2013'
-ms.date: 11/18/2019
+ms.date: 07/14/2020
 ---
 
 # Define area paths and assign to a team
 
-[!INCLUDE [temp](../../boards/includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](../../boards/includes/version-all.md)]
 
 
 You can add area paths to support teams and to group work items based on product, feature, or business areas. Then, define area paths at the project level and assign them to a team under the team configuration. You can also create a hierarchy of area paths to support subcategories within categories.
@@ -27,7 +27,7 @@ New projects contain a single, root area that corresponds to the project name. A
 
 To understand how the system uses area paths, see [About area and iteration paths](about-areas-iterations.md).
 
-[!INCLUDE [temp](../../includes/version-selector.md)]
+[!INCLUDE [temp](../../includes/version-selector-minimize.md)]
 
 ## Prerequisites
 
@@ -77,34 +77,67 @@ As needed, you can do the following actions at any time:
 - Change the Area Path assignments made to a team
 
 <a id="open-project-settings" />
-
-<a id="open-admin-context" /><br/><a id="admin-intro-team-services" />
+<a id="open-admin-context" />
+<a id="admin-intro-team-services" />
 
 ## Open Project Settings, list project areas
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2019"
 
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+You define both areas and iterations for a project from the **Project Settings > Boards > Project configuration**.
 
-#### [Preview page](#tab/preview-page) 
+::: moniker-end
 
-1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```) and go to your project.
-2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
+::: moniker range="<= tfs-2018"
+
+You define both areas and iterations from the **Work** pages of the **Project Settings** context. From the user context, you open the admin context by choosing the :::image type="icon" source="../../media/icons/gear-icon.png" border="false"::: gear icon.
+
+::: moniker-end
+
+#### [Browser](#tab/browser/)
+
+::: moniker range=">= azure-devops-2019 "
+
+- From your web portal, choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
 
     > [!div class="mx-imgBorder"]  
     > ![Project Settings>Project Configuration](media/areas/open-project-work-areas-settings-vert.png)   
 
-#### [Current page](#tab/current-page)
+::: moniker-end
 
-1. From the web portal, open your project.
 
-2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
+<a id="admin-intro-team-services" /> 
+
+::: moniker range=">=tfs-2017 <= tfs-2018"
+
+1. From the web portal for the project, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon.
 
     > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Project Configuration](media/areas/open-project-work-areas-settings-vert.png)   
+    > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
+
+    If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
+
+    > [!div class="mx-imgBorder"]
+    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
+
+2. Choose **Work**.  
+
+::: moniker-end   
+
+<a id="admin-intro-tfs-2015" />
+
+::: moniker range="<= tfs-2015"  
+
+- From the web portal, choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon to open project administration pages. Then choose **Areas**.
+
+    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
+
+::: moniker-end
+
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020"
 
 [List project area paths](#list-areas) | [Add a project area path](#add-area) | [List team areas paths](#list-team-area-paths) | [Set team area paths](#set-team-area-paths) | [Rename or move a project area path](#rename-move-project-area-path) | [Remove area path from a team](#remove-area-path-from-team)
 
@@ -124,6 +157,13 @@ az boards area project list [--depth]
 - **depth**: Optional. Depth of child nodes to be listed. Example: --depth 3. When not specified, only the top-level area paths are returned.
 - **path**: Optional. Absolute path of an area.  `\Area\` must follow after the `\ProjectName`, which distinguishes this from an iteration path.  Example: --path \ProjectName\Area\AreaName. If spaces are used within a node, then enclose in double-quotes, for example, --path "\Fabrikam Fiber\Area\Service Delivery\Performance". When not specified, lists area paths from the root level.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber". 
+
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -152,95 +192,61 @@ ID     Identifier                            Name                Path           
 
 * * *
 
-::: moniker range="azure-devops-2019"
-
-You define both areas and iterations for a project from the **Project Settings > Work > Project configuration**.
-
-1. From the web portal, open **Project settings**.
-
-2. Choose (1) **Project settings**, choose (2) **Project configuration** and then (3) **Areas**.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Project Settings>Project Configuration](media/areas/open-project-work-areas-settings-vert.png)   
-
-::: moniker-end
-
-::: moniker range="<= tfs-2018"
-
-You define both areas and iterations from the **Work** pages of the project admin context. From the user context, you open the admin context by choosing the ![ ](../../media/icons/gear-icon.png) gear icon.
-
-::: moniker-end
-
-<a id="admin-intro-team-services" /> 
-
-::: moniker range=">=tfs-2017 <= tfs-2018"
-
-1. From the web portal for the project, choose the ![ ](../../media/icons/gear_icon.png) gear icon.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Admin context, project level](media/areas/modify-areas-its-open-admin-context-ts.png)
-
-    If you're currently working from a team context, then hover over the ![gear icon](../../media/icons/gear_icon.png) and choose **Project settings**.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Open Project Settings, horizontal nav](../../media/settings/open-project-settings-horz.png)
-
-2. Choose **Work**.  
-
-::: moniker-end   
-
-<a id="admin-intro-tfs-2015" />
-
-::: moniker range="<= tfs-2015"  
-
-1. From the web portal, choose the ![ ](../../media/icons/gear_icon.png) gear icon to open project administration pages. Then choose **Areas**.
-
-    ![Open the project administration page](../../media/settings/open-project-settings-tfs-2015.png)
-
-::: moniker-end
-
 <a id="add-areas" /><br/>
 <a id="add-areas-team-services" />
 <a id="tfs-15-area-paths" />
 
 ## Add an area path 
 
-::: moniker range="azure-devops"
-
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
-
 If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
 
 > [!div class="mx-imgBorder"]  
 > ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
 
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+
+#### [Browser](#tab/browser/)
+
+::: moniker range=">= tfs-2018"  
+
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
     > ![Add a new area path](media/areas/new-area-preview.png) 
+ 
+::: moniker-end
 
-#### [Current page](#tab/current-page)
+::: moniker range="tfs-2017"  
 
-If you haven't added any areas or teams, you'll see that only one area is defined. You add area paths under the root area path for the project, or as a child to another area path.  
-
-> [!div class="mx-imgBorder"]  
-> ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
-
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
+- To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: context menu for the area path and choose **New child**.   
 
     Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
 
     > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/new-area-vert.png) 
+    > ![Add a new area path](media/areas/m-areas-add-area-path.png) 
+
+::: moniker-end
+
+::: moniker range="<= tfs-2015"  
+
+1. Open **Areas**.  
+
+    ![Open the areas page defined for project](media/areas/ALM_CW_OpenAreas.png)
+
+    From the areas page, you can set the default area path used to filter the backlog. The default area path is also used when new work items a user creates new work items. 
+
+2. Add a new child node to the area you've selected.</p>
+
+    ![Create a new area node](media/areas/ALM_CW_CreateArea.png) 
+
+::: moniker-end
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="add-area" /> 
+
+::: moniker range=">= azure-devops-2020"  
 
 You can add area paths to a project using [az boards area project create](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-create). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -256,6 +262,13 @@ az boards area project create --name
 - **name**: Required. Area path name. 
 - **path**: Optional. Absolute path of an area. Example: --path \ProjectName\Area\AreaName. When not specified, adds an area at the root level.
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
+
+::: moniker-end
+
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+
+::: moniker range=">= azure-devops-2020"
+
 #### Example: JSON format
 
 For example, the following command adds the Voice area path to the Fabrikam Fiber project at the root node.  
@@ -294,47 +307,6 @@ ID     Identifier                            Name    Path                       
 
 * * *
 
-::: moniker range=">= tfs-2018 < azure-devops"
-
-> [!div class="mx-imgBorder"]  
-> ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
-
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
-
-    Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/new-area-vert.png) 
-
-::: moniker-end
-
-::: moniker range="tfs-2017"  
-
-> [!div class="mx-imgBorder"]  
-> ![Areas, defaults defined for project](media/areas/modify-areas-its-areas-ts.png)
-
-* To add a child node, highlight the area path and then choose **New child**. Optionally, you can open the ![ ](../../media/icons/actions-icon.png) context menu for the area path and choose **New child**.   
-
-    Enter a name (255 characters or less) for the node. For additional name restrictions, see [About areas and iterations, Naming restrictions](about-areas-iterations.md#naming-restrictions). 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Add a new area path](media/areas/m-areas-add-area-path.png) 
-
-::: moniker-end
-
-::: moniker range="<= tfs-2015"  
-
-1. Open **Areas**.  
-
-    ![Open the areas page defined for project](media/areas/ALM_CW_OpenAreas.png)
-
-    From the areas page, you can set the default area path used to filter the backlog. The default area path is also used when new work items a user creates new work items. 
-
-2. Add a new child node to the area you've selected.</p>
-
-    <img src="media/areas/ALM_CW_CreateArea.png" alt="Create a new area node" style="border: 2px solid #C3C3C3;" />
-
-::: moniker-end
 
 
 <a id="open-team-settings" />
@@ -342,13 +314,11 @@ ID     Identifier                            Name    Path                       
 ## Open team settings, list team area paths  
 
 You set team defaults from team settings. If you're not a team administrator, [get added as one](add-team-administrator.md). Only team or project administrators can change team settings. 
+ 
 
-::: moniker range="azure-devops"
+#### [Browser](#tab/browser/)
 
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
+::: moniker range=">= azure-devops-2019"
 
 1. Open your project, and then select **Project settings > Team configuration > Areas**.
 
@@ -359,32 +329,24 @@ You set team defaults from team settings. If you're not a team administrator, [g
     > [!div class="mx-imgBorder"]  
     > ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context-preview.png) 
 
-#### [Current page](#tab/current-page)
+::: moniker-end
 
-From a web browser, open the web portal administrative context for your team.
+::: moniker range="<= tfs-2018"  
 
-You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
+You open team settings from the top navigation bar. Select the team you want and then choose the :::image type="icon" source="../../media/icons/gear_icon.png" border="false"::: gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+> [!div class="mx-imgBorder"]  
+> ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
 
-   Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
+::: moniker-end
 
-   > [!div class="mx-imgBorder"]  
-   > ![Work Backlog or Board, choose team profile icon](media/team-defaults/open-team-profile-choose-team-settings.png)  
 
-2. Choose **Iterations and areas**. 
-
-    > [!div class="mx-imgBorder"]  
-    > ![Team Profile, choose Iterations and area](media/team-defaults/team-profile-choose-iterations-areas.png)   
-
-3. If you need to switch the team context, use the team selector within the breadcrumbs.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context.png) 
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="list-team-area-paths" /> 
+
+::: moniker range=">= azure-devops-2020"
 
 You can list the area paths defined for a team using [az boards area team list](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-list). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md).  
 
@@ -415,11 +377,14 @@ Fabrikam Fiber\Service Delivery  True                 True
 
 * * *
 
-::: moniker range="= azure-devops-2019"  
+
+::: moniker range=">= azure-devops-2019"  
+
+## Open team settings from the team profile 
 
 You define both areas and iterations from **Project Settings > Team configuration**. You can quickly navigate to it from a team work tracking backlog, board, or dashboard. 
 
-1. Open a backlog or board for a team and choose the ![ ](../../media/icons/team.png) team profile icon. Then choose **Team Settings**. 
+1. Open a backlog or board for a team and choose the :::image type="icon" source="../../media/icons/team.png" border="false"::: team profile icon. Then choose **Team Settings**. 
 
    Here we open the Board for the Fabrikam Fiber team and from there the team profile. 
 
@@ -437,16 +402,6 @@ You define both areas and iterations from **Project Settings > Team configuratio
     > ![Team Configuration, Team breadcrumb](media/team-defaults/select-team-context.png) 
 
 ::: moniker-end
-
-::: moniker range="<= tfs-2018"  
-
-You open team settings from the top navigation bar. Select the team you want and then choose the ![ ](../../media/icons/gear_icon.png) gear icon. To learn more about switching your team focus, see [Switch project, repository, team](../../project/navigation/go-to-project-repo.md#switch-team-context)
-
-> [!div class="mx-imgBorder"]  
-> ![Open team settings](media/team-defaults/open-team-settings-horz.png) 
-
-::: moniker-end
-
 
 <a id="default-iteration">  </a>
 <a id="team-area-paths">  </a>
@@ -470,12 +425,10 @@ The default area path determines the default area path assigned to work items th
 > [!IMPORTANT]  
 > Work items that appear on more then one team's Kanban board can yield query results that don't meet your expectations. Because each team can customize the Kanban board [columns](../../boards/boards/add-columns.md) and [swimlanes](../../boards/boards/expedite-work.md), the values assigned to work items which appear on different boards may not be the same. The primary work around for this issue is to maintain single ownership of work items by team area path.   
 
-::: moniker range="azure-devops"
+ 
+#### [Browser](#tab/browser/)
 
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
-
-#### [Preview page](#tab/preview-page) 
+::: moniker range=">= azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -499,7 +452,9 @@ The default area path determines the default area path assigned to work items th
 
    ![Add Area Path column to backlog](media/team-defaults/add-a-column-backlog.png)
 
-#### [Current page](#tab/current-page)
+::: moniker-end  
+
+::: moniker range=">= tfs-2017 < azure-devops-2020"  
 
 1. Open **Areas** for the team context.  
 
@@ -520,11 +475,30 @@ The default area path determines the default area path assigned to work items th
 3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
 
    > [!div class="mx-imgBorder"]  
-   > ![Backlog view of default team](media/add-team/product-backlog-default-team-horz.png)
+   > ![Backlog view of default team](media/add-team/product-backlog-default-team-horz.png)  
+
+::: moniker-end  
+
+::: moniker range="<= tfs-2015"  
+
+1. Open the Areas admin page for the team context.  
+
+    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
+
+    ![Work, Area page for Fabrikam Fiber team](media/team-defaults/stdefaults-open-team-area-page-tfs.png)  
+
+2. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
+
+   ![Product backlog for Fabrikam Fiber team](media/team-defaults/stdefaults-backlog-web-team-list.png)  
+
+::: moniker-end  
+
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
 
 <a id="set-team-area-paths" /> 
+
+::: moniker range=">= azure-devops-2020"
 
 You can set the default area path for a team or add an area path, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/team#ext-azure-devops-az-boards-area-team-add).  To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -544,6 +518,10 @@ az boards area team add --path  --team
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".  
 - **set-as-default**: Optional. Specify as the default area path for the team. Default: False.
 
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
+
 #### Example
 
 For example, the following command adds the Voice area path to the Voice team for the Fabrikam Fiber project, sets it as the default and to include sub-areas. 
@@ -556,51 +534,13 @@ Area                                   Include sub areas    Is Default
 Fabrikam Fiber\Service Delivery\Voice  False                False
 Fabrikam Fiber\Voice                   True                 True
 ```
-
 ::: moniker-end
+
 
 [!INCLUDE [temp](../../includes/note-cli-not-supported.md)]
 
 * * *
 
-::: moniker range=">= tfs-2017 < azure-devops"  
-
-1. Open **Areas** for the team context.  
-
-   Here, we show the Areas for the Fabrikam Fiber team.  
-
-   > [!div class="mx-imgBorder"]
-   > ![Area page for team](media/team-defaults/open-areas-fabrikam-team.png)
-
-2. Choose the area path(s) to be active for each team.  
-
-    > [!div class="mx-imgBorder"]
-    > ![Work, Iterations page for team](media/team-defaults/stdefaults-add-area-paths.png)  
-
-    In this instance, we choose to activate all three sub-area paths for the project. The management team can now track progress across all three teams.  
-
-    ![Multiple area paths assigned to team](media/team-defaults/stdefaults-set-team-area-paths-management-team-team-services-list.png)  
-
-3. When you've finished, refresh the product backlog page for the team, and you'll see those work items assigned to the team. Add Area Path to the columns shown to see the assignments made to work items.  
-
-   > [!div class="mx-imgBorder"]  
-   > ![Backlog view of default team](media/add-team/product-backlog-default-team-horz.png  
-
-::: moniker-end  
-
-::: moniker range="<= tfs-2015"  
-
-1. Open the Areas admin page for the team context.  
-
-    Here, we navigate to the Fabrikam Fiber team. The checked box indicates the area paths selected for the team. To exclude sub-areas, select the option from the area path context menu.  
-
-    ![Work, Area page for Fabrikam Fiber team](media/team-defaults/stdefaults-open-team-area-page-tfs.png)  
-
-2. Refresh the product backlog page for the team, and you'll see only those work items assigned to the Fabrikam Fiber area path.   
-
-   ![Product backlog for Fabrikam Fiber team](media/team-defaults/stdefaults-backlog-web-team-list.png)  
-
-::: moniker-end  
 
 
 <a name="rename-delete"></a>
@@ -609,14 +549,11 @@ Fabrikam Fiber\Voice                   True                 True
 
 When you rename an area or an iteration, or move the node within the tree hierarchy, the system automatically updates the work items and queries that reference the existing path or paths.  
 
-::: moniker range="azure-devops"
+#### [Browser](#tab/browser/)
 
-> [!NOTE]   
-> To enable the new user interface for the Project Permissions Settings Page, see [Enable preview features](../../project/navigation/preview-features.md).
+::: moniker range=">= azure-devops-2019"
 
-#### [Preview page](#tab/preview-page) 
-
-1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
+1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work>Project Configuration](media/areas/edit-area-rename-preview.png)  
@@ -630,9 +567,15 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 4. To delete a node, choose the **Delete** option from the actions menu.
 
-#### [Current page](#tab/current-page)
+> [!NOTE]
+> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
 
-1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
+::: moniker-end
+
+
+::: moniker range="<= tfs-2018"
+
+1. To rename an area or iteration path, choose the :::image type="icon" source="../../media/icons/actions-icon.png" border="false"::: actions icon for the node, and then select **Edit**.  
 
     > [!div class="mx-imgBorder"]  
     > ![Open Work>Project Configuration](media/areas/edit-area-rename.png)  
@@ -646,10 +589,12 @@ When you rename an area or an iteration, or move the node within the tree hierar
 
 4. To delete a node, choose the **Delete** option from the actions menu.
 
-> [!NOTE]
-> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
+::: moniker-end
+
 
 #### [Azure DevOps CLI](#tab/azure-devops-cli)
+
+::: moniker range=">= azure-devops-2020" 
 
 You can rename, move, or delete an area path for a project, using [az boards area team add](/cli/azure/ext/azure-devops/boards/area/project#ext-azure-devops-az-boards-area-project-update). To get started, see [Get started with Azure DevOps CLI](../../cli/index.md). 
 
@@ -671,6 +616,10 @@ az boards area project update --path
 - **child-id**: Optional. Moves an existing area path and adds it as a child node for the specified path name or ID.  
 - **name**: Optional. Specifies the new name of the area path.  
 - **project**: Optional. Name or ID of the project. Example: --project "Fabrikam Fiber".   
+
+::: moniker-end
+[!INCLUDE [temp](../../includes/note-cli-supported-server.md)]  
+::: moniker range=">= azure-devops-2020"
 
 #### Example
 
@@ -718,26 +667,6 @@ az boards area team remove --path "\Fabrikam Fiber\Area\Service Delivery\Voice" 
 
 * * *
 
-::: moniker range=">= tfs-2017"
-
-1. To rename an area or iteration path, choose the ![ ](../../media/icons/actions-icon.png) actions icon for the node, and then select **Edit**.  
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename.png)  
-
-2. In the dialog that opens, enter the new name.
-
-    > [!div class="mx-imgBorder"]  
-    > ![Open Work>Project Configuration](media/areas/edit-area-rename-dialog.png)
-
-3. To move the node within the hierarchy, change the Location field.
-
-4. To delete a node, choose the **Delete** option from the actions menu.
-
-> [!NOTE]
-> When you delete an area node or change the Location field for a node, the system automatically updates the existing work items with the node that you enter at the deletion prompt.
-
-::: moniker-end
 
 ## Chart progress by area
 
@@ -770,7 +699,7 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 ### Programmatic resources
 
-::: moniker range="azure-devops"
+::: moniker range=">= azure-devops-2020"
 - [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
@@ -779,7 +708,6 @@ As you can see, Area Paths play a major role in supporting Agile tools, teams, a
 
 ::: moniker range="<= azure-devops-2019"
 
-- [az boards area (Azure DevOps CLI)](/cli/azure/ext/azure-devops/boards/area)
 - [Teams (REST API)](/rest/api/azure/devops/core/teams)
 - [Classification Nodes (REST API)](/rest/api/azure/devops/wit/classification%20nodes)
 - [Define the classification plug-in (Process Template)](../../reference/process-templates/define-classification-plug-in.md)

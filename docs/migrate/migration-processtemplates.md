@@ -10,7 +10,7 @@ monikerRange: '>= tfs-2013'
 ms.date: 04/13/2018
 ---
 
-# Process templates
+# Process template validation
 
 [!INCLUDE [version-azure-devops](includes/version-azure-devops.md)]
 
