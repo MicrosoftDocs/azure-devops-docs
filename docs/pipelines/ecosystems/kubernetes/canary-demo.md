@@ -91,14 +91,14 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 1. Configure the new environment as follows -
     - **Name**: akscanary
     - **Resource**: choose Kubernetes
-1. Hit **Next** and now configure your Kubernetes resource as follows - 
+1. Click on **Next** and now configure your Kubernetes resource as follows - 
     - **Provider**: Azure Kubernetes Service
     - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
     - **Cluster**: Choose your cluster
     - **Namespace**: Choose the namespace you want to deploy to or create a new one
-1. Hit **Validate and Create**
+1. Click on **Validate and Create**
 1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
-1. Change the step you created previously to now use a Stage. And add 2 additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. Your complete YAML should now look like this: 
+1. Change the step you created previously to now use a Stage. And add 2 additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables for easier usage later in your pipeline. Your complete YAML should now look like this: 
 
     ```YAML
     trigger:
@@ -112,7 +112,6 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
       dockerRegistryServiceConnection: dockerRegistryServiceConnectionName #replace with name of your Docker registry service connection
       imageRepository: 'azure-pipelines-canary-k8s'
       containerRegistry: containerRegistry #replace with the name of your container registry, Should be in the format foobar.azurecr.io
-      dockerfilePath: '**/Dockerfile'
       tag: '$(Build.BuildId)'
     
     stages:
@@ -165,14 +164,11 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
                   action: createSecret
                   secretName: azure-pipelines-canary-k8s
                   dockerRegistryEndpoint: azure-pipelines-canary-k8s
-                  kubernetesServiceConnection: azure-pipelines-canary-k8s
-                  
-                  
+                                    
               - task: KubernetesManifest@0
                 displayName: Deploy to Kubernetes cluster
                 inputs:
                   action: 'deploy'
-                  kubernetesServiceConnection: azure-pipelines-canary-k8s
                   strategy: 'canary'
                   percentage: '25'
                   manifests: |
@@ -185,11 +181,10 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
                 displayName: Deploy Forbio and ServiceMonitor
                 inputs:
                   action: 'deploy'
-                  kubernetesServiceConnection: azure-pipelines-canary-k8s
                   manifests: |
                     $(Pipeline.Workspace)/misc/*
     ```
-1. Save your pipeline by committing directly to the master branch. This should already run it successfully. 
+1. Save your pipeline by committing directly to the main branch. This should already run it successfully. 
 
 ::: moniker-end
 
@@ -244,18 +239,18 @@ YAML builds are not yet available on TFS.
 1. Configure the new environment as follows -
     - **Name**: akspromote
     - **Resource**: choose Kubernetes
-1. Hit **Next** and now configure your Kubernetes resource as follows - 
+1. Click on **Next** and now configure your Kubernetes resource as follows - 
     - **Provider**: Azure Kubernetes Service
     - **Azure subscription**: Choose the subscription that holds your kubernetes cluster
     - **Cluster**: Choose your cluster
     - **Namespace**: Choose the namespace you want to deploy to or create a new one
-1. Hit **Validate and Create**
+1. Click on **Validate and Create**
 1. Select your new akspromote environment from the list of environments. 
-1. Click the button with the **3 dots** in the top right -> **Approvals and checks** -> **Approvals**
+1. Click on the button with the **3 dots** in the top right -> **Approvals and checks** -> **Approvals**
 1. Configure your approval as follows -
     - **Approvers**: Add your own user account
     - **Advanced**: Make sure the **Allow approvers to approve their own runs** checkbox is checked.
-1. Click **Create**
+1. Click on **Create**
 1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
 1. Add an additional stage PromoteRejectCanary at the end of your YAML file to promote the changes. 
 
@@ -279,7 +274,6 @@ YAML builds are not yet available on TFS.
                 displayName: promote canary
                 inputs:
                   action: 'promote'
-                  kubernetesServiceConnection: azure-pipelines-canary-k8s
                   strategy: 'canary'
                   manifests: '$(Pipeline.Workspace)/manifests/*'
                   containers: '$(containerRegistry)/$(imageRepository):$(tag)'
@@ -307,11 +301,10 @@ YAML builds are not yet available on TFS.
                 displayName: reject canary
                 inputs:
                   action: 'reject'
-                  kubernetesServiceConnection: azure-pipelines-canary-k8s
                   strategy: 'canary'
                   manifests: '$(Pipeline.Workspace)/manifests/*'
     ```
-1. Save your YAML pipeline by hitting **Save**
+1. Save your YAML pipeline by clicking on **Save** and commit it directly to the main branch. 
 
 ::: moniker-end
 
@@ -352,11 +345,26 @@ YAML builds are not yet available on TFS.
 
 * * *
 ## Deploy a stable version
+#### [YAML](#tab/yaml/)
+::: moniker range=">=azure-devops-2020"
+Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
+1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. It will also trigger the DeployCanary stage. 
+2. Given you have configured an approval on the **akspromote** environment, the release will wait before executing that stage. 
+3. In the summary of the run click on **Review** and next click on **Approve** in the subsequent fly-out. This will result in the stable version of the workloads (`sampleapp` deployment in manifests/deployment.yml) being deployed to the namespace
+
+::: moniker-end
+
+::: moniker range="< azure-devops"
+YAML builds are not yet available on TFS.
+::: moniker-end
+
+#### [Classic](#tab/classic/)
 Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
 1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. The continuous deployment trigger setup earlier on the image push event results in triggering of the release pipeline.
 2. In the **CanaryK8sDemo** release pipeline, select the **Promote/reject canary** stage of the release where it is waiting on manual intervention.
 3. Click on **Resume/Reject** button and then on **Resume button** in the subsequent dialog box. This will result in the stable version of the workloads (`sampleapp` deployment in manifests/deployment.yml) being deployed to the namespace
 
+* * *
 ## Initiate canary workflow
 Once the above release has been completed, the stable version of workload `sampleapp` now exists in the cluster. To understand how baseline and canaries are created for comparison purposes with every subsequent deployment, perform the following changes to the simulation application - 
 1. In `app/app.py`, change `success_rate = 10` to `success_rate = 20`
