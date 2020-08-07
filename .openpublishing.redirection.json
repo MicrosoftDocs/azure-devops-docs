@@ -8307,7 +8307,7 @@
     },
     {
       "source_path": "docs/accounts/assign-access-levels-and-extensions-by-group-membership.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -8457,7 +8457,7 @@
     },
     {
       "source_path": "docs/accounts/migrate-to-group-based-resource-management-in-VSTS.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -8467,7 +8467,7 @@
     },
     {
       "source_path": "docs/accounts/remove-direct-assignments.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
     },
     {
@@ -11437,12 +11437,12 @@
     },
     {
       "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management-in-vsts.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/migrate-to-group-based-resource-management.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership",
       "redirect_document_id": false
     },
     {
@@ -12172,7 +12172,7 @@
     },
     {
       "source_path": "docs/organizations/accounts/remove-direct-assignments.md",
-      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-and-extensions-by-group-membership#remove-direct-assignments",
+      "redirect_url": "/azure/devops/organizations/accounts/assign-access-levels-by-group-membership#remove-direct-assignments",
       "redirect_document_id": false
     },
     {
@@ -16638,6 +16638,11 @@
     "source_path": "docs/pipelines/release/deploy-mulitple-branches.md",
     "redirect_url": "/azure/devops/pipelines/release/deploy-multiple-branches",
     "redirect_document_id": true
+},
+{
+    "source_path": "docs/organizations/accounts/assign-access-levels-and-extensions-by-group-membership.md",
+    "redirect_url": "/azure/devops/organization/accounts/assign-access-levels-by-group-membership",
+    "redirect_document_id": false
 }
  ]
 }

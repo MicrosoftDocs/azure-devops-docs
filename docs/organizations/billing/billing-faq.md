@@ -32,7 +32,7 @@ A: With user assignment-based billing, you only pay for the users you assign an 
 
 In assignment-based billing, all organizations begin with new users added from projects with Stakeholder access. We don't charge for new users who only need free Stakeholder access. If you want all new users to get Basic, change the [default access level](#q-how-can-new-users-get-basic-instead-of-stakeholder-when-added-to-a-project) for your organization to Basic.
 
-[Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
+[Group rules](../accounts/assign-access-levels-by-group-membership.md) are a great way to automate access level assignment for your organization and under assignment-based billing, you'll find that assignment errors are no longer common.
 
 ### Q: How can new users get Basic instead of Stakeholder when added to a Project?
 
@@ -42,11 +42,11 @@ If you want all new users added to a project to get Basic, change the default ac
 
 ![Default access](media/shared/default-access-level-basic.png)
 
-For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-and-extensions-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-and-extensions-by-group-membership.md#remove-direct-assignments).
+For more granular control over the access level that's assigned to new users, consider setting up group rules. [Group rules](../accounts/assign-access-levels-by-group-membership.md) take precedence over default access level. The default access level only applies when a user has zero group rules applied. Group rules assign access to users who aren't directly assigned an access level. To have these group rules apply to your existing users, you need to [remove direct assignments](../accounts/assign-access-levels-by-group-membership.md#remove-direct-assignments).
 
 ### Q: Am I charged for users even if they never sign in?
 
-A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-and-extensions-by-group-membership.md) that applies to potential new users, that you haven't added manually, you don't start paying until they sign in and receive an access level.
+A: If you add a user with Basic or Basic + Test Plans access level, you pay at the time of assignment. When you create a [group rule](../accounts/assign-access-levels-by-group-membership.md) that applies to potential new users, that you haven't added manually, you don't start paying until they sign in and receive an access level.
 
 ### Q: How can I stop paying for users who aren't actively using Azure DevOps?
 

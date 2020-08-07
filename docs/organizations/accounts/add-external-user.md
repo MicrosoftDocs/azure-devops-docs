@@ -79,7 +79,7 @@ The external user gets added to the organization to which they were invited and 
 
 * [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)
 * [Migrate to group-based resource management](migrate-to-group-based-resource-management-in-VSTS.md)
-* [Assign access levels and extensions to users by group membership](assign-access-levels-and-extensions-by-group-membership.md)
+* [Assign access levels to users by group membership](assign-access-levels-by-group-membership.md)
 * [Restrict invitations to new users](../security/restrict-invitations.md)
 
 
