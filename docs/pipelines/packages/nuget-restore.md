@@ -22,6 +22,8 @@ This walkthrough will cover setting up an existing build to restore NuGet packag
 - [Created your first pipeline](../create-first-pipeline.md) for your repository.
 - [Set up the build identity permissions](../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for your feed.
 
+## Restore packages with NuGet restore build task
+
 To build a solution that relies on NuGet packages from Azure artifacts feeds, add the **NuGet** task (if one is not already present).
 
 First, click **Add build tasks...**, select the **Package** category, and add the **NuGet** task. Then drag to order the task above any build tasks that require your packages.
@@ -36,9 +38,10 @@ Then, select feeds to use:
 - If you've checked in a [NuGet.config](https://docs.nuget.org/Consume/NuGet-Config-File), select **Feeds in my NuGet.config** and select the file from your repo.
 - If you're using a single Azure Artifacts/TFS feed, select the **Feed(s) I select here** option and select your feed from the dropdown.
 
-![A screenshot of the NuGet task configured as outlined above](media/restore-pkgs-on-build.png)
+> [!div class="mx-imgBorder"]
+> ![NuGet restore task](media/restore-pkgs-on-build.png)
 
-Finally, save your build.
+Finally, **save** your build.
 
 ## Specifying sources in NuGet.config
 
