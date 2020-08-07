@@ -113,7 +113,7 @@ The process of adding users to projects when you're managing them through Azure 
 2. Go to [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) and sign in with your organization account.  
 3. [Add organization users to your Azure AD](add-users-to-azure-ad.md).  
 4. [Add an Azure AD group to an Azure DevOps group](manage-azure-active-directory-groups.md).  
-5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-and-extensions-by-group-membership.md).    
+5. [Create bulk assignments of access levels for users](add-organization-users.md), or [define group rules and assign access levels](assign-access-levels-by-group-membership.md).    
 
 You can also add users through the steps outlined in the previous section about [direct assignment](#add-users).
 
@@ -123,7 +123,7 @@ Using Azure AD, you can segment access by adding select Azure AD groups to Contr
 
 ## Add users through group rules 
 
-A best practice to use when managing users is to manage them through security groups. You can use the default security groups Azure DevOps provides, create custom security groups, or reference Azure AD groups. You can use any of these  groups to add and manage user access levels using group rules. To learn more, see [Add a group rule to assign access levels and extensions](assign-access-levels-and-extensions-by-group-membership.md).
+A best practice to use when managing users is to manage them through security groups. You can use the default security groups Azure DevOps provides, create custom security groups, or reference Azure AD groups. You can use any of these  groups to add and manage user access levels using group rules. To learn more, see [Add a group rule to assign access levels and extensions](assign-access-levels-by-group-membership.md).
 
 ## Add users implementation notes
 
@@ -163,7 +163,7 @@ You can then pay for more users with Basic access, buy more services, and purcha
 </ul>
 <h4>Manage group-based licensing</h4>
 <ul>
-<li><a href="assign-access-levels-and-extensions-by-group-membership.md">Add a group rule to assign access levels and extensions</a></li>
+<li><a href="assign-access-levels-by-group-membership.md">Add a group rule to assign access levels and extensions</a></li>
 </ul>
 </td>
 <td width="33%"> 
