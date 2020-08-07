@@ -96,7 +96,7 @@ Follow each of these steps to troubleshoot your failing triggers:
 
 #### I did not push any updates to my code, however the pipeline is still being triggered.
 
-* The continuous integration trigger for BitBucket works through polling. After each polling interval, Azure Pipelines attempts to contact the BitBucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. In a few cases, Azure Pipelines may also create a dummy failed build with an error message to indicate that it was unable to reach the server.
+* The continuous integration trigger for Bitbucket works through polling. After each polling interval, Azure Pipelines attempts to contact the Bitbucket server to check if there have been any updates to the code. If Azure Pipelines is unable to reach the Bitbucket server (possibly due to a network issue), then we start a new run anyway assuming that there might have been code changes. In a few cases, Azure Pipelines may also create a dummy failed build with an error message to indicate that it was unable to reach the server.
 
 ### Failing checkout
 
