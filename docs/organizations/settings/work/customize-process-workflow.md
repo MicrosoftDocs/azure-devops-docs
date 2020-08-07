@@ -89,7 +89,13 @@ States you add appear in the drop-down menu for the States field shown in work i
 2. Enter the name of the State, choose its category and color, and then click **Save**. The color you specify appears throughout the product including on the work item form and when the State field appears on a backlog, boards, query results, and more.  
 
 	> [!div class="mx-imgBorder"]
-	> ![State menu in work item form](media/process/cpw-new-state-triaged.png)  
+	> ![State menu in work item form](media/process/cpw-new-state-triaged.png) 
+
+	::: moniker range="azure-devops"
+	> [!NOTE]   
+	> Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. To learn more, see [Query by assignment or workflow changes](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).  
+	::: moniker-end
+
 1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 
 
 	> [!div class="mx-imgBorder"]
