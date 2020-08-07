@@ -14,7 +14,7 @@ ms.date: 06/24/2020
 
 # Best practices for Agile project management 
 
-[!INCLUDE [temp](includes/version-vsts-tfs-all-versions.md)]
+[!INCLUDE [temp](includes/version-all.md)]
 
 As a project manager new to Azure Boards, use the guidance provided in this article to get started. 
 
@@ -39,6 +39,15 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 [!INCLUDE [temp](includes/note-requirements-terms.md)]  
 
 
+## Organize your product backlog with Features & Epics  
+
+You can start from a bottom-up or top-down approach, choose one for your initial planning. 
+
+1. Use to capture larger initiatives - Features to Ship,  Epics or larger Scenarios to deliver to customers 
+
+2. Size Features to be delivered within a few sprints, Size Epics to be delivered Quarterly or to some Milestone objective 
+	
+
 ## Your product plan and your Product Backlog  
 
 The main tool for planning your product is your team's Product Backlog. Use your Product Backlog to perform the following tasks: 
@@ -48,7 +57,7 @@ The main tool for planning your product is your team's Product Backlog. Use your
 - Add details to each user story to capture the work to be delivered. 
 
 	
-## Plan a sprint  
+## Your sprint plan and your Sprint Backlog   
 
 Each sprint, perform the following tasks: 
 
@@ -59,12 +68,6 @@ Each sprint, perform the following tasks:
 5. Dependency Management: Link work items to work  items using Predecessor/Successor link types  
 
 
-## Portfolio Backlog: Features & Epics 
-
-1. Use to capture larger initiatives - Features to Ship,  Epics or larger Scenarios to deliver to customers 
-
-2. Size Features to be delivered within a few sprints, Size Epics to be delivered Quarterly or to some Milestone objective 
-	
 ## During Sprint: 
 
 Kanban Board: Use to talk to status, blocks/issues/risks/changes, update status; Filter to Current sprint, Assigned To 
@@ -79,7 +82,7 @@ Taskboard:
 
 1. Use Delivery Plans to review a Calendar view of what's being delivered across teams 
 	
-## Monitor porgress, process improvement  
+## Monitor progress, process improvement  
 
 Team Velocity:  Use to improve planning/estimating and forecasting 
 
@@ -93,4 +96,4 @@ Work item tags are a useful tool to support queries and filtering of backlogs, b
 - Cross-project dependency
 
 
-Cross-org dependency
+## Cross-org dependency
