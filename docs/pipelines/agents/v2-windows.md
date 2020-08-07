@@ -71,7 +71,7 @@ running 4 self-hosted agents apiece.
 
 1. In your web browser, sign in to Azure Pipelines, and navigate to the **Agent pools** tab:
 
-   [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+   [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Select the **Default** pool, select the **Agents** tab, and choose **New agent**.
 
@@ -97,7 +97,7 @@ If you aren't sure which version of Windows is installed, [follow these instruct
 
 1. In your web browser, sign in to Azure DevOps Server 2019, and navigate to the **Agent pools** tab:
 
-      [!INCLUDE [include](includes/agent-pools-tab/agent-pools-tab.md)]
+      [!INCLUDE [include](includes/agent-pools-tab.md)]
 
 1. Click **Download agent**.</li>
 
