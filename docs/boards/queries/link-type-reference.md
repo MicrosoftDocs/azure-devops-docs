@@ -612,8 +612,8 @@ A work item's [*Remote Link Count*](linking-attachments.md#remote-link-count) co
       ![Produced For topology conceptual image](media/link-work-items-support-traceability/affects-cmmi.png)
    :::column-end:::
    :::column span="":::
-      Microsoft.VSTS.Common.ProducedFor.Forward  
-      Microsoft.VSTS.Common.ConsumesFrom.Reverse  
+      System.LinkTypes.Remote.Dependency-Forward  
+      System.LinkTypes.Remote.Dependency-Reverse  
       Topology type: Dependency  
       Link category: System-defined  
    :::column-end:::
