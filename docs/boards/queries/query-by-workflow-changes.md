@@ -418,10 +418,10 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
-      Assigned To <sup> 2</sup>
+      Assigned To&nbsp;<sup> 2</sup>
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      Assigned To <sup> 2,&nbsp;3,&nbsp;4</sup>
+      Assigned To&nbsp;<sup> 2,&nbsp;3,&nbsp;4</sup>
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -533,10 +533,10 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row:::
    :::column span="1":::
       ::: moniker range="azure-devops"
-      Created By <sup> 2</sup>
+      Created By <sup> 1,&nbsp;2</sup> 
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      Created By <sup> 2, 3</sup>
+      Created By <sup> 1,&nbsp;2, 3</sup> 
       ::: moniker-end
    :::column-end:::
    :::column span="2":::
@@ -590,9 +590,8 @@ You can use the following fields to filter your queries or build reports. Some o
 :::row-end::: 
 :::row:::
    :::column span="1":::
-      Resolved By <sup> 1,&nbsp;2</sup>  
       ::: moniker range="azure-devops"
-      Resolved Date 
+      Resolved By <sup> 1,&nbsp;2</sup>  
       ::: moniker-end 
       ::: moniker range="< azure-devops"
       Resolved By <sup> 1,&nbsp;2,&nbsp;3</sup>  
