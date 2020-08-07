@@ -18,9 +18,9 @@ monikerRange: '>= tfs-2017'
 
 This walkthrough will cover setting up an existing build to restore NuGet packages from Azure artifacts feeds. It assumes that you've already:
 
-- [Set up your solution](/azure/devops/artifacts/nuget/consume) to consume packages from Azure artifacts feed
-- [Created a build](/azure/devops/pipelines/) for that solution
-- [Added the correct build service identity](/azure/devops/artifacts/feeds/feed-permissions) to your feed
+- [Set up your solution](../../artifacts/nuget/consume.md) to consume packages from Azure artifacts feed.
+- [Created your first pipeline](../create-first-pipeline.md) for your repository.
+- [Set up the build identity permissions](../../artifacts/feeds/feed-permissions.md#package-permissions-in-azure-pipelines) for your feed.
 
 To build a solution that relies on NuGet packages from Azure artifacts feeds, add the **NuGet** task (if one is not already present).
 
