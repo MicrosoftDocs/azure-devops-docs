@@ -93,7 +93,7 @@ States you add appear in the drop-down menu for the States field shown in work i
 
 	::: moniker range="azure-devops"
 	> [!NOTE]   
-	> Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. To learn more, see [Query by assignment or workflow changes](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).  
+	> Any workflow state you add to the *In Progress* or *Resolved* state categories will cause the **Activated By**/**Activated Date** and **Resolved By**/**Resolved Date** fields to update with workflow state changes in and out of these categories. To learn more, see [Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields](../../../boards/queries/query-by-workflow-changes.md#activated-resolved-fields).  
 	::: moniker-end
 
 1. (Optional) To change the sequence of the State within the drop-down menu, choose the :::image type="icon" source="../../../media/icons/actions-icon.png" border="false"::: context menu icon and choose **Move up** or **Move down**. 

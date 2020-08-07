@@ -719,7 +719,7 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
 :::row-end:::
  
-
+####Notes:  
 
 <a id="sync">  </a>
 
@@ -728,7 +728,7 @@ You can use the following fields to filter your queries or build reports. Some o
 1. See [Date and Identity fields](#date-identity).  
 2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md). 
 3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
-3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
+3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
 	> [!NOTE]  
 	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 
@@ -744,7 +744,7 @@ You can use the following fields to filter your queries or build reports. Some o
     For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
 3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
 4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-5. The Requirement Category applies to all work item types that appear on the Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
+5. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
 	> [!NOTE]  
 	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
 
@@ -761,8 +761,6 @@ You can use the following fields to filter your queries or build reports. Some o
 3.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises server, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
 
 ::: moniker-end
-
-[!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
 
 ::: moniker range=">= tfs-2015"
 
@@ -896,6 +894,10 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 ```
 
 ::: moniker-end
+
+
+[!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
+
 
 ## Related articles
 
