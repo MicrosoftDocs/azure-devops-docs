@@ -186,7 +186,7 @@ mm HH DD MM DW
 Field        | Accepted values
 -------------|----------------
 Minutes      | 0 through 59
-Hours        | 0 though 23
+Hours        | 0 through 23
 Days         | 1 through 31
 Months       | 1 through 12, full English names, first three letters of English names
 Days of week | 0 through 6 (starting with Sunday), full English names, first three letters of English names
