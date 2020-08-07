@@ -448,10 +448,10 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
-      Requirement Category<sup>4</sup>  
+      Requirement Category<sup> 4</sup>  
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      Requirement Category<sup>5</sup> 
+      Requirement Category<sup> 5</sup> 
       ::: moniker-end 
    :::column-end:::
 :::row-end:::
@@ -468,10 +468,10 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
-      Requirement Category<sup>4</sup>  
+      Requirement Category<sup> 4</sup>  
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      Requirement Category<sup>5</sup> 
+      Requirement Category<sup> 5</sup> 
       ::: moniker-end
    :::column-end:::
 :::row-end:::
@@ -488,10 +488,10 @@ You can use the following fields to filter your queries or build reports. Some o
    :::column-end:::
    :::column span="1":::
       ::: moniker range="azure-devops"
-      Requirement Category<sup>4</sup>  
+      Requirement Category<sup> 4</sup>  
       ::: moniker-end 
       ::: moniker range="< azure-devops"
-      Requirement Category<sup>5</sup> 
+      Requirement Category<sup> 5</sup> 
       ::: moniker-end
    :::column-end:::
 :::row-end:::

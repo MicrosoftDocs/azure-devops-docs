@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 08/06/2020
 ---
 
 # Changes made to process templates  
@@ -33,7 +33,7 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <p>Azure DevOps Services (August 2020) </p>
 </td>
 <td>
-<p>The logic managing the <strong>Activated By</strong>, <strong>Activated Date</strong>, <strong>Resolved By</strong>, and <strong>Resolved Date</strong> fields has changed. The values assigned to these fields are now governed based on the state categories of <em>Proposed</em> and <em>Resolved</em>. To learn more, see <a href="../../queries/query-by-workflow-changes.md#activated-resolved-field#activated-resolved-fields" data-raw-source="[Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields)">Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields </a>.</p>
+<p>The logic managing the <strong>Activated By</strong>, <strong>Activated Date</strong>, <strong>Resolved By</strong>, and <strong>Resolved Date</strong> fields has changed. The values assigned to these fields are now governed based on the state categories of <em>Proposed</em> and <em>Resolved</em>. To learn more, see <a href="../../queries/query-by-workflow-changes.md#activated-resolved-field" data-raw-source="[Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields)">Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields </a>.</p>
 </td>
 </tr>
 <tr>
