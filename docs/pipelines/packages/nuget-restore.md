@@ -86,11 +86,16 @@ If your NuGet.config contains feeds in a different Azure DevOps organization tha
  
 1. Select an account (either a service account (recommended) or a user account) that has access to the remote feed.
 1. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization that hosts the feed. Sign in with the credentials mentioned in step 1, select **User settings** then **Personal Access Tokens**.
-  > [!div class="mx-imgBorder"]
-  > ![promote button](media/pat.png)
 
-1. Create a PAT with the **Packaging (read)** scope and keep it handy
-1. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector
+  > [!div class="mx-imgBorder"]
+  > ![personal access token](media/pat.png)
+
+1. Create your PAT with the **Packaging (read)** scope and keep it handy.
+1. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector.
+
+  > [!div class="mx-imgBorder"]
+  > ![NuGet v2](media/nuget-v-2.png)
+
 1. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
 1. Set the path to your NuGet.config in the **Path to NuGet.config**
 1. In **Credentials for feeds outside this organization/collection**, click the **+**
