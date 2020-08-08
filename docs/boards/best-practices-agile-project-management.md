@@ -18,12 +18,23 @@ ms.date: 08/07/2020
 
 As a project manager new to Azure Boards, use the guidance provided in this article to get started. 
 
+You can start from a bottom-up or top-down approach, choose one for your initial planning.
 Light-weight 
-
+If practicing Scrum and tracking work and sprint burndown - see Scrum. 
 Project Planning 
 
+Goals to consider: 
+- Autonomy
+- Alignment 
 
-## Team sizing, team settings  
+
+#### To learn more: 
+
+- [Agile culture](backlogs/plans/agile-culture.md)  
+- [Scaling Agile - Practices that scale](plans/practices-that-scale.md)  
+ 
+
+## Configure your teams   
 
 Azure Boards provides teams the tools to plan and track work. Each project defines a default team, which you can start using immediately. However, if you have a number of development or feature teams, you should consider defining a team in Azure DevOps for each feature team. Consider the following guidance:  
 
@@ -37,10 +48,21 @@ Azure Boards provides teams the tools to plan and track work. Each project defin
 4. How big is your backlog? 
  
 
+## Configure your sprints 
 
-## Understand which work item types you'll use  
+Sprints are defined for a project and then selected by teams. Sprint cadence can vary between one week to four weeks, or longer. Sprints are used to focus a team on delivering a set of work. 
 
-Determine which work item types your team will use to capture customer requirements and development work. Based on your project and the process used to create it, you have a choice from those shown in the following images. 
+
+
+#### Best practice tips: 
+
+- Define a sprint cadence that all teams will use 
+- Work should be sized to be completed within a sprint, or within several sprints 
+- 
+
+## Choose the work item types you'll use  
+
+Determine which work item types your team will use to capture customer requirements and development work. Based on your project and the process used to create it, you have a choice from those shown in the following images. Also, each team can determine how they want to track bugs. 
 
 [!INCLUDE [temp](includes/work-item-types.md)]
 
@@ -53,9 +75,11 @@ Determine which work item types your team will use to capture customer requireme
 - Quickly add features or requirements from the backlog and fill in details later
 - Use Requirements&mdash;User Stories, Product Backlog Items, Issues, or Requirements&mdash;to break-down Features into work the development team will own 
 - Map Requirements to Features to track progress 
+- Define requirements sized to be completed within a single sprint. 
 - Let Developers use Tasks to break-down their work as needed. 
+- Size Features to be delivered within a few sprints and size Epics to be delivered quarterly or to some milestone objective 
 
-As project managers, you manage your features and the development team manages the requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. 
+As project managers, you manage your features and the development team manages the requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team. 
 
 If you have larger initiatives or scenarios that require shipping several Features, you can group these under Epics, again using parent-child links. 
 
@@ -66,35 +90,49 @@ If you have larger initiatives or scenarios that require shipping several Featur
 - [Organize your backlog (map or reparent)](backlogs/organize-backlog.md)  
 
 
-## Review, prioritize, and update your product plan  
+## Review, prioritize, and update your product plan   
 
-The main tool for planning your product is your team's Product Backlog or Feature Backlog. Use your backlog to perform the following tasks: 
+Periodically you'll want to review and groom your product plan. The main tools you'll use are your team's Product Backlog or Feature Backlog. Use your backlog to perform the following tasks: 
 
-- Define the user stories or requirements that specify the work to be performed. Define user stories sized to be completed within a single sprint. Each user story you add to the backlog is automatically assigned the default area path and iteration path set for your team. 
-- Resequence or reorder the user stories so that they are listed in priority order.
-- Add details to each user story to capture the work to be delivered. 
+- Define work to be performed
+- Open work items and add details 
+- Assign work to team members or to sprints
+- Reorder work items using drag-and-drop so that they appear in priority order 
+- Capture technical debt and non-feature work required to support a healthy ecosystem of delivery 
+- (Optional) Estimate requirements to gage team velocity and support forecasting 
 
-## Organize your product backlog with Features & Epics  
+#### Best practice tips: 
 
-You can start from a bottom-up or top-down approach, choose one for your initial planning. 
+- Periodically refine your backlog  
+- Make sure features and requirements are sized appropriately
+- Define the acceptance criteria and the definition of done for features and work 
+- Map unmapped work to the Larger Features and Epics 
+- Forecast your backlog 
 
-1. Use to capture larger initiatives - Features to Ship,  Epics or larger Scenarios to deliver to customers 
+#### To learn how: 
 
-2. Size Features to be delivered within a few sprints, Size Epics to be delivered Quarterly or to some Milestone objective 
+- [Refine your backlog](backlogs/best-practices-product-backlog.md) 
+- [Define features and epics](backlogs/define-features-epics.md)  
+- [Create your backlog](backlogs/create-your-backlog.md)  
+- [Forecast your product backlog](sprints/forecast.md)  
 	
+## Work in sprints  
 
-
-	
-## Your sprint plan and your Sprint Backlog   
+Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs only apply to requirements.  
 
 Each sprint, perform the following tasks: 
 
-1. Use your Product Backlog to capture the work to do and deliver - sized to be completed within a single sprint  
-2. Each sprint: Review your backlog priority, put work in priority order  
-3. Each sprint: Map unmapped work to the Larger Features and Epics  
-4. Use Story Points to estimate the size of work and to gage Team Velocity   
-5. Dependency Management: Link work items to work  items using Predecessor/Successor link types  
+- Plan each sprint with your team 
+- Ensure each work item is scoped to be completed within the sprint
+- Ensure the acceptance criteria for the work is well defined and understood
+- Assign work items to a sprint and to a team member
 
+#### To learn how: 
+
+- [Assign backlog items to a sprint](sprints/assign-work-sprint.md) 
+- [Define features and epics](backlogs/define-features-epics.md)  
+- [Create your backlog](backlogs/create-your-backlog.md)  
+- [Forecast your product backlog](sprints/forecast.md)   
 
 ## During Sprint: 
 
@@ -106,22 +144,31 @@ Taskboard:
 
 1. Product Backlog: Use Forecast to determine what can be completed within the next 3 sprints (Requires Story Points)  
 
-## Review of deliverables and dependencies
+## Review team deliverables and dependencies
 
-1. Use Delivery Plans to review a Calendar view of what's being delivered across teams 
+1. Use Delivery Plans to review a calendar view of what's being delivered across teams 
 	
 ## Monitor progress, process improvement  
 
 Team Velocity:  Use to improve planning/estimating and forecasting 
 
-## Guidance on tag usage  
-
+## Use tags to support queries and filtering 
+ 
 Work item tags are a useful tool to support queries and filtering of backlogs, boards, and queries. For tags to be useful to the team, provide some general guidance on how your team should use tags. Consider documenting this guidance in a central place, such as the project wiki. 
  
+#### Best practice tips: 
+
 - Have a policy in place about how your teams want to use tags
 - Consider how tags will be used for queries, filtering, reporting 
 - Cross-team dependency
 - Cross-project dependency
 
+## Manage dependencies  
 
-## Cross-org dependency
+- Dependency Management: Link work items to work  items using Predecessor/Successor link types  
+
+
+## Related articles
+
+- [Configure and customize Azure Boards](configure-customize.md) 
+- [Visibility across teams](plans/visibility-across-teams.md) 
