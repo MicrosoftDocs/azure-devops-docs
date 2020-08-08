@@ -30,7 +30,7 @@ Goals to consider:
 
 #### To learn more: 
 
-- [Agile culture](backlogs/plans/agile-culture.md)  
+- [Agile culture](plans/agile-culture.md)  
 - [Scaling Agile - Practices that scale](plans/practices-that-scale.md)  
  
 
@@ -75,9 +75,9 @@ Determine which work item types your team will use to capture customer requireme
 - Quickly add features or requirements from the backlog and fill in details later
 - Use Requirements&mdash;User Stories, Product Backlog Items, Issues, or Requirements&mdash;to break-down Features into work the development team will own 
 - Map Requirements to Features to track progress 
-- Define requirements sized to be completed within a single sprint. 
-- Let Developers use Tasks to break-down their work as needed. 
-- Size Features to be delivered within a few sprints and size Epics to be delivered quarterly or to some milestone objective 
+- Define requirements sized to be completed within a single sprint  
+- Let Developers use Tasks to break-down their work as needed 
+- Size Features to be delivered within a few sprints and size Epics to be delivered quarterly or to some milestone objective. 
 
 As project managers, you manage your features and the development team manages the requirements. By mapping them using parent-child links, you gain visibility into the progress of your features. Each work item you add to your team backlog is automatically assigned the default area path and iteration path set for your team. 
 
@@ -118,7 +118,7 @@ Periodically you'll want to review and groom your product plan. The main tools y
 	
 ## Work in sprints  
 
-Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs only apply to requirements.  
+Sprints allow your team to focus on a pre-selected set of work to be accomplished. Work you assign to a sprint appears on your team's sprint backlog. Sprint backlogs are defined only for product backlogs.  
 
 Each sprint, perform the following tasks: 
 
