@@ -21,8 +21,6 @@ You create a custom Analytics view to define the filtered set of data and other 
 
 You create custom views in the web portal for Azure DevOps, and then load the view using the [Power BI Data Connector](data-connector-connect.md). Like work item queries, you can create views only for your use, or share them with others on your team. 
 
-[!INCLUDE [temp](../includes/boards-disabled.md)]
-
 Use this article to learn how to:
 
 > [!div class="checklist"]
@@ -31,6 +29,8 @@ Use this article to learn how to:
 > * Browse your Analytics views
 > * Create a custom Analytics view
 > * Review filter criteria for a view 
+
+[!INCLUDE [temp](../includes/boards-disabled.md)]
 
 [!INCLUDE [temp](../includes/analytics-prerequisites.md)] 
 
