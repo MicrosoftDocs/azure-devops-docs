@@ -124,7 +124,8 @@ If you're using Azure Pipelines or TFS 2018, new template-based builds will work
 
 For existing builds, just add or update a NuGet Tool Installer task to select the version of NuGet for all the subsequent tasks. You can see all available versions of NuGet [on nuget.org](https://dist.nuget.org/tools.json).
 
-![Build with NuGet Tool Installer task](media/nuget-tool-installer.jpg)
+> [!div class="mx-imgBorder"]
+> ![Build with NuGet Tool Installer task](media/nuget-tool-installer.png)
 
 ::: moniker-end 
 
