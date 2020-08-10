@@ -40,7 +40,7 @@ From your web portal, expand **Overview** and choose **Analytics views**.
 From your web portal, expand **Boards** and choose **Analytics views**.  
 
 > [!div class="mx-imgBorder"]  
-> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/open-analytics-2020.png)  
+> ![Open Analytics view, new navigation](/azure/devops/report/powerbi/media/analytics-views/open-analytics-2020.png)  
 
 ::: moniker-end 
 
