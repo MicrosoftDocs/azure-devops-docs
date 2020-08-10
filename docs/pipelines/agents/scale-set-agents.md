@@ -388,7 +388,7 @@ The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete,
 
 * [Where can I find the images used for Microsoft-hosted agents?](#where-can-i-find-the-images-used-for-microsoft-hosted-agents)
 * [How do I configure scale set agents to run UI tests?](#how-do-i-configure-scale-set-agents-to-run-ui-tests)
-* [How can I delete agents?](#how-can-I-delete-agents)
+* [How can I delete agents?](#how-can-i-delete-agents)
 
 ### Where can I find the images used for Microsoft-hosted agents?
 
