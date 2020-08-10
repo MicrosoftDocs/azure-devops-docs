@@ -133,7 +133,7 @@
   - name: Use team fields instead of area paths
     href: ../use-team-fields-instead-area-paths.md
 - name: Microsoft Project Mapping file (Deprecated)
-  href: ./mapping/toc.yml
+  href: ../mapping/toc.yml
 - name: Configure Features Wizard (Deprecated)
   items:
   - name: Configure features after an upgrade
