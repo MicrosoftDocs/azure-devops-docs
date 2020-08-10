@@ -86,7 +86,6 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
 
 ### Deploy canary stage
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2020"
 
 1. Navigate to **Pipelines** -> **Environments** -> **New environment**
 1. Configure the new environment as follows -
@@ -187,11 +186,6 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     ```
 1. Save your pipeline by committing directly to the main branch. This commit should already run your pipeline successfully. 
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 1. Navigate to **Pipelines** -> **Releases** -> **New** -> **New release pipeline**. Name it **CanaryK8sDemo**
@@ -234,7 +228,6 @@ YAML builds are not yet available on TFS.
 * * *
 ### Manual intervention for promoting or rejecting canary
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2020"
 
 1. Navigate to **Pipelines** -> **Environments** -> **New environment**
 1. Configure the new environment as follows -
@@ -247,7 +240,7 @@ YAML builds are not yet available on TFS.
     - **Namespace**: Choose the namespace canarydemo namespace you created earlier
 1. Click on **Validate and Create**
 1. Select your new akspromote environment from the list of environments. 
-1. Click on the button with the **3 dots** in the top right -> **Approvals and checks** -> **Approvals**
+1. Click on the button with the **three dots** in the top right -> **Approvals and checks** -> **Approvals**
 1. Configure your approval as follows -
     - **Approvers**: Add your own user account
     - **Advanced**: Make sure the **Allow approvers to approve their own runs** checkbox is checked.
@@ -307,12 +300,6 @@ YAML builds are not yet available on TFS.
     ```
 1. Save your YAML pipeline by clicking on **Save** and commit it directly to the main branch. 
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
-
 #### [Classic](#tab/classic/)
 1. Click on **Pipeline** tab to go back to the pipeline view. Add a new stage named **Promote/reject canary** based on the empty job template.
 1. Add an agentless job to this stage and reorder this job to be the first job of this stage. Name this agentless job **Promote/reject input**.
@@ -347,17 +334,11 @@ YAML builds are not yet available on TFS.
 * * *
 ## Deploy a stable version
 #### [YAML](#tab/yaml/)
-::: moniker range=">=azure-devops-2020"
 Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
 1. In `app/app.py`, change `success_rate = 5` to `success_rate = 10`.This change triggers the  pipeline leading to build and push of the image to container registry. It will also trigger the DeployCanary stage. 
 2. Given you have configured an approval on the **akspromote** environment, the release will wait before executing that stage. 
 3. In the summary of the run click on **Review** and next click on **Approve** in the subsequent fly-out. This will result in the stable version of the workloads (`sampleapp` deployment in manifests/deployment.yml) being deployed to the namespace
 
-::: moniker-end
-
-::: moniker range="< azure-devops"
-YAML builds are not yet available on TFS.
-::: moniker-end
 
 #### [Classic](#tab/classic/)
 Currently for the first run of the pipeline, the stable version of the workloads and their baseline/canary version do not exist in the cluster. To deploy the stable version -
