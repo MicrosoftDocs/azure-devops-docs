@@ -83,37 +83,37 @@
     {
       "source_path": "docs/pipelines/packages/maven.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/maven",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/symbols/index.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/symbols",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/targets/nuget.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/nuget",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/targets/pypi.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/pypi",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/targets/universal-packages.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/universal-packages",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/targets/npm.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/npm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/build/artifacts.md",
       "redirect_url": "/azure/devops/pipelines/artifacts/artifacts-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/artifacts/index-a.md",
@@ -163,22 +163,22 @@
     {
       "source_path": "docs/package/collaborate-with-packages.md",
       "redirect_url": "/azure/devops/artifacts/collaborate-with-packages",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/get-started-maven.md",
       "redirect_url": "/azure/devops/artifacts/get-started-maven",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/get-started-npm.md",
       "redirect_url": "/azure/devops/artifacts/get-started-npm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/get-started-nuget.md",
       "redirect_url": "/azure/devops/artifacts/get-started-nuget",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/index.md",
@@ -193,7 +193,7 @@
     {
       "source_path": "docs/package/overview.md",
       "redirect_url": "/azure/devops/artifacts/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/vsts-package-badges.md",
@@ -203,7 +203,7 @@
     {
       "source_path": "docs/package/concepts/best-practices.md",
       "redirect_url": "/azure/devops/artifacts/concepts/best-practices",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/feeds.md",
@@ -213,27 +213,27 @@
     {
       "source_path": "docs/package/concepts/package-graph.md",
       "redirect_url": "/azure/devops/artifacts/concepts/package-graph",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/symbols.md",
       "redirect_url": "/azure/devops/artifacts/concepts/symbols",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/upstream-sources.md",
       "redirect_url": "/azure/devops/artifacts/concepts/upstream-sources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/extend/develop/build-task-schema.md",
       "redirect_url": "/azure/devops/extend/develop/integrate-build-task",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/concepts/views.md",
       "redirect_url": "/azure/devops/artifacts/concepts/views",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/feeds/create-feed.md",
@@ -248,7 +248,7 @@
     {
       "source_path": "docs/package/feeds/feed-permissions.md",
       "redirect_url": "/azure/devops/artifacts/feeds/feed-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/feeds/immutability.md",
@@ -258,22 +258,22 @@
     {
       "source_path": "docs/package/feeds/views.md",
       "redirect_url": "/azure/devops/artifacts/feeds/views",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/gradle/publish-package-gradle.md",
       "redirect_url": "/azure/devops/artifacts/gradle/publish-package-gradle",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/gradle/pull-package-gradle.md",
       "redirect_url": "/azure/devops/artifacts/gradle/pull-package-gradle",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/how-to/follow-package-notifications.md",
       "redirect_url": "/azure/devops/artifacts/how-to/follow-package-notifications",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/how-to/retention-policies.md",
@@ -283,7 +283,7 @@
     {
       "source_path": "docs/package/how-to/set-up-upstream-sources.md",
       "redirect_url": "/azure/devops/artifacts/how-to/set-up-upstream-sources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/maven/delete-artifact.md",
@@ -293,17 +293,17 @@
     {
       "source_path": "docs/package/maven/install.md",
       "redirect_url": "/azure/devops/artifacts/maven/install",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/maven/pom-and-settings.md",
       "redirect_url": "/azure/devops/artifacts/maven/pom-and-settings",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/maven/publish.md",
       "redirect_url": "/azure/devops/artifacts/maven/publish",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/deprecate-unpublish.md",
@@ -313,57 +313,57 @@
     {
       "source_path": "docs/package/npm/npmrc.md",
       "redirect_url": "/azure/devops/artifacts/npm/npmrc",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/publish.md",
       "redirect_url": "/azure/devops/artifacts/npm/publish",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/scopes.md",
       "redirect_url": "/azure/devops/artifacts/npm/scopes",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/npm/upstream-sources.md",
       "redirect_url": "/azure/devops/artifacts/npm/upstream-sources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/bootstrap-nuget.md",
       "redirect_url": "/azure/devops/artifacts/nuget/bootstrap-nuget",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/consume.md",
       "redirect_url": "/azure/devops/artifacts/nuget/consume",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/dotnet-exe.md",
       "redirect_url": "/azure/devops/artifacts/nuget/dotnet-exe",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/move-from-fileshares.md",
       "redirect_url": "/azure/devops/artifacts/nuget/move-from-fileshares",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/nuget-exe.md",
       "redirect_url": "/azure/devops/artifacts/nuget/nuget-exe",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/publish.md",
       "redirect_url": "/azure/devops/artifacts/nuget/publish",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/tfs.md",
       "redirect_url": "/azure/devops/artifacts/nuget/tfs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/nuget/unlist-delete.md",
@@ -373,52 +373,52 @@
     {
       "source_path": "docs/package/nuget/upstream-sources.md",
       "redirect_url": "/azure/devops/artifacts/nuget/upstream-sources",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/preview/maven-docs.md",
       "redirect_url": "/azure/devops/artifacts/preview/maven-docs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/repos/other-git.md",
       "redirect_url": "/azure/devops/pipelines/repos/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/ecosystems/index.md",
       "redirect_url": "/azure/devops/pipelines/ecosystems/ecosystems",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/preview/updated-experience.md",
       "redirect_url": "/azure/devops/artifacts/preview/updated-experience",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/quickstarts/universal-packages.md",
       "redirect_url": "/azure/devops/artifacts/quickstarts/universal-packages",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/reference/feed-upgrade-learn-more.md",
       "redirect_url": "/azure/devops/artifacts/reference/feed-upgrade-learn-more",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/symbols/debug-with-symbols-visual-studio.md",
       "redirect_url": "/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/symbols/debug-with-symbols-windbg.md",
       "redirect_url": "/azure/devops/artifacts/symbols/debug-with-symbols-windbg",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/package/symbols/setting-up-github-sourcelinking.md",
       "redirect_url": "/azure/devops/artifacts/symbols/setting-up-github-sourcelinking",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/notifications/manage-personal-notifications.md",
@@ -1923,7 +1923,7 @@
     {
       "source_path": "docs/pipelines/archive/preview/2017-user-experience.md",
       "redirect_url": "/azure/devops/pipelines/process/parameters",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/preview/release-definition-editor.md",
@@ -6248,7 +6248,7 @@
     {
       "source_path": "docs/build-release/actions/agents/certificate.md",
       "redirect_url": "/azure/devops/pipelines/agents/certificate",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/configure-tfs-authentication.md",
@@ -6258,32 +6258,32 @@
     {
       "source_path": "docs/build-release/actions/agents/prepare-permissions.md",
       "redirect_url": "/azure/devops/pipelines/agents/prepare-permissions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/proxy.md",
       "redirect_url": "/azure/devops/pipelines/agents/proxy",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/v1-windows.md",
       "redirect_url": "/azure/devops/pipelines/agents/v1-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/v2-linux.md",
       "redirect_url": "/azure/devops/pipelines/agents/v2-linux",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/v2-osx.md",
       "redirect_url": "/azure/devops/pipelines/agents/v2-osx",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/agents/v2-windows.md",
       "redirect_url": "/azure/devops/pipelines/agents/v2-windows",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/build-yaml.md",
@@ -6303,12 +6303,12 @@
     {
       "source_path": "docs/build-release/actions/scripts/git-commands.md",
       "redirect_url": "/azure/devops/pipelines/scripts/git-commands",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/actions/scripts/powershell.md",
       "redirect_url": "/azure/devops/pipelines/scripts/powershell",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-4-ci-cd-azure-automatic.md",
@@ -6318,7 +6318,7 @@
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnet-4-ci-cd-vs-automatic",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnet-core-from-vsts-to-azure-web-app.md",
@@ -6333,17 +6333,17 @@
     {
       "source_path": "docs/build-release/archive/apps/aspnet/aspnetcore-docker-to-azure.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/aspnet/aspnetcore-docker-to-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/java/maven-to-azure.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/java/maven-to-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/java/quick-to-azure.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/java/quick-to-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/apps/mobile/cordova-build.md",
@@ -6358,37 +6358,37 @@
     {
       "source_path": "docs/build-release/archive/apps/nodejs/nodejs-to-azure.md",
       "redirect_url": "/azure/devops/pipelines/archive/apps/nodejs/nodejs-to-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/2015-01.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/2015-01",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/2015-02.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/2015-02",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/2015.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/2015",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/2016.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/2016",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/2017.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/2017",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/news/rm-archived.md",
       "redirect_url": "/azure/devops/pipelines/archive/news/rm-archived",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/preview/2017-user-experience.md",
@@ -6413,102 +6413,102 @@
     {
       "source_path": "docs/build-release/archive/release/overview-rm2013.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/overview-rm2013",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/overview-rm2015.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/overview-rm2015",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/add-users-and-groups.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/add-users-and-groups",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/config-and-system-variables.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/config-and-system-variables",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/deploy-continuously-to-azure.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/deploy-continuously-to-azure",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/install-release-management.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/install-release-management",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/manage-your-release.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/manage-your-release",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/release-actions.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/release-actions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/release-management-overview.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/release-management-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/release-with-agents.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/release-with-agents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/release-without-agents.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/release-without-agents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/trigger-a-release.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/trigger-a-release",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/install-release-management/connect-to-tfs.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/install-release-management/connect-to-tfs",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/install-release-management/install-deployment-agent.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/install-release-management/install-deployment-agent",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/install-release-management/install-server-and-client.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/install-release-management/install-server-and-client",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/install-release-management/system-requirements.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/install-release-management/system-requirements",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/archive/release/previous-version/release-actions/release-action-tools.md",
       "redirect_url": "/azure/devops/pipelines/archive/release/previous-version/release-actions/release-action-tools",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/agents/agents.md",
       "redirect_url": "/azure/devops/pipelines/agents/agents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/agents/hosted.md",
       "redirect_url": "/azure/devops/pipelines/agents/hosted",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/agents/pools-queues.md",
       "redirect_url": "/azure/devops/pipelines/agents/pools-queues",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/artifacts.md",
@@ -6518,12 +6518,12 @@
     {
       "source_path": "docs/build-release/concepts/definitions/build/history.md",
       "redirect_url": "/azure/devops/pipelines/build/history",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/options.md",
       "redirect_url": "/azure/devops/pipelines/build/options",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/repository.md",
@@ -6533,27 +6533,27 @@
     {
       "source_path": "docs/build-release/concepts/definitions/build/triggers.md",
       "redirect_url": "/azure/devops/pipelines/build/triggers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/build/variables.md",
       "redirect_url": "/azure/devops/pipelines/build/variables",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/artifacts.md",
       "redirect_url": "/azure/devops/pipelines/release/artifacts",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/env-templates.md",
       "redirect_url": "/azure/devops/pipelines/release/env-templates",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/environments.md",
       "redirect_url": "/azure/devops/pipelines/process/stages",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/index.md",
@@ -6563,17 +6563,17 @@
     {
       "source_path": "docs/build-release/concepts/definitions/release/triggers.md",
       "redirect_url": "/azure/devops/pipelines/release/triggers",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/variables.md",
       "redirect_url": "/azure/devops/pipelines/release/variables",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/what-is-release-management.md",
       "redirect_url": "/azure/devops/pipelines/release/index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/build-release/concepts/definitions/release/approvals/approvals.md",
