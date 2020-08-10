@@ -375,7 +375,7 @@ If you just want to create a scale set with the default 128 GB OS disk using a p
 You are now ready to create an agent pool using this scale set.
 
 ## Update an existing scale set with a new custom image
-To update the image on an existing scaleset, follow steps 1-5 in section [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image,-software,-or-disk-size) to generate the custom OS image. Make note of the id property URL that is output from the az image create command in step 5.  Then update the scaleset with the new image. After the scaleset image has been updated, all future VMs in the scaleset will be created with the new image.
+To update the image on an existing scaleset, follow steps 1-5 in section [Create a scale set with custom image, software, or disk size](#create-a-scale-set-with-custom-image-software-or-disk-size) to generate the custom OS image. Make note of the id property URL that is output from the az image create command in step 5.  Then update the scaleset with the new image. After the scaleset image has been updated, all future VMs in the scaleset will be created with the new image.
 
     ```azurecli
     az vmss update --resource-group <myResourceGroup> --name <myScaleSet> --set virtualMachineProfile.storageProfile.imageReference.id=<id url>
