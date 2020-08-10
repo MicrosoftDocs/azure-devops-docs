@@ -108,7 +108,7 @@ To customize a process template, you customize one or more files associated with
 <ul style="padding-left:20px;font-size:90%">
  <li style="margin-bottom:2px"><a href="define-classification-plug-in.md" data-raw-source="[Area and iteration paths](define-classification-plug-in.md)">Area and iteration paths</a></li>
  <li style="margin-bottom:2px"><a href="configure-initial-groups-teams-members-permissions.md" data-raw-source="[Groups, teams, members, and permissions](configure-initial-groups-teams-members-permissions.md)">Groups, teams, members, and permissions</a></li>
- <li style="margin-bottom:2px"><a href="../xml/map-microsoft-project-fields-to-tf-fields.md" data-raw-source="[Microsoft Project mapping file](../xml/map-microsoft-project-fields-to-tf-fields.md)">Microsoft Project mapping file</a></li>
+ <li style="margin-bottom:2px"><a href="/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields" data-raw-source="[Microsoft Project mapping file](/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields)">Microsoft Project mapping file</a></li>
 </ul>
 
 #### Work item tracking  
@@ -230,6 +230,3 @@ The Process Editor Tool provides a user interface that you can use to customize 
     -   Add files to be uploaded.  
 
 You can't customize Office Excel reports and dashboards through the process template files. These artifacts are created for a project depending on the selections that you make in the New Team Project wizard. For more information, see [Customizing TFS Project Portals](/previous-versions/visualstudio/visual-studio-2010/ff678492(v=vs.100)).  
- 
-
- 
