@@ -8,7 +8,7 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 monikerRange: '>= tfs-2013'
-ms.date: 04/11/2019
+ms.date: 08/06/2020
 ---
 
 # Changes made to process templates  
@@ -28,7 +28,14 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <th width="22%">Version</th>
 <th width="78%">Changes introduced</th>
 </tr>
-
+<tr>
+<td>
+<p>Azure DevOps Services (August 2020) </p>
+</td>
+<td>
+<p>The logic managing the <strong>Activated By</strong>, <strong>Activated Date</strong>, <strong>Resolved By</strong>, and <strong>Resolved Date</strong> fields has changed. The values assigned to these fields are now governed based on the state categories of <em>Proposed</em> and <em>Resolved</em>. To learn more, see <a href="../../queries/query-by-workflow-changes.md#activated-resolved-fields" data-raw-source="[Query by assignment or workflow changes](../../queries/query-by-workflow-changes.md#activated-resolved-fields)">Query by assignment or workflow changes, Activated By/Date and Resolved By/Date fields </a>.</p>
+</td>
+</tr>
 <tr>
 <td>
 <p>Azure DevOps Server 2019</p>
@@ -37,7 +44,6 @@ If you've customized your project and haven't upgraded your on-premises deployme
 <p>Predefined Shared Queries are no longer created upon project creation. The definitions for Shared Queries have been removed from the process template. Shared Queries defined in custom process templates are created. You can also add Shared Queries to a process template as described in <a href="../../../reference/process-templates/add-work-item-queries-process-template.md" data-raw-source="[Add work item queries to a process template](../../../reference/process-templates/add-work-item-queries-process-template.md)">Add work item queries to a process template</a>.</p>
 </td>
 </tr>
-
 <tr>
 <td>
 <p>TFS 2017</p>
