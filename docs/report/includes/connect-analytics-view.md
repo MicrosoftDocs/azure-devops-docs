@@ -85,4 +85,4 @@ ms.date: 08/10/2020
 	> [!div class="mx-imgBorder"]
 	> ![Apply query changes loading dialog](/azure/devops/report/powerbi/media/power-bi-data-loading-onprem.png)
 
-3. **Review the Data model**. While the model loads, review the [Dataset design for the Power BI Data Connector](data-connector-dataset.md)
+3. **Review the Data model**. While the model loads, review the [Dataset design for the Power BI Data Connector](/azure/devops/report/powerbi/data-connector-dataset).
