@@ -96,11 +96,19 @@ If your NuGet.config contains feeds in a different Azure DevOps organization tha
   > [!div class="mx-imgBorder"]
   > ![NuGet v2](media/nuget-v-2.png)
 
-1. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button
-1. Set the path to your NuGet.config in the **Path to NuGet.config**
-1. In **Credentials for feeds outside this organization/collection**, click the **+**
-1. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3
-1. Save the service connection and the build, then queue a new build
+1. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button.
+1. Set the path to your NuGet.config in the **Path to NuGet.config**.
+1. In **Credentials for feeds outside this organization/collection**, select the **+ New**.
+
+  > [!div class="mx-imgBorder"]
+  > ![Feeds and authentication](media/feeds-and-authentication.png)
+
+1. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
+
+  > [!div class="mx-imgBorder"]
+  > ![NuGet service connection](media/service-connection.png)
+
+1. Save the service connection and the build, then queue a new build.
 
 ## FAQ
 
