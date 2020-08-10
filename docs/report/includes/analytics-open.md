@@ -35,7 +35,7 @@ From your web portal, expand **Overview** and choose **Analytics views**.
 
 ::: moniker-end
 
-::: moniker range="azure-devops-2019 || azure-devops"
+::: moniker range="azure-devops-2020"
 
 From your web portal, expand **Boards** and choose **Analytics views**.  
 
