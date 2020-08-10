@@ -62,8 +62,9 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
+    ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
     script: |
-      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}} ### JSON payload data is available in the form of ${{ parameters.<WebhookAlias>.<JSONPath>}}
+      Write-Host ${{ parameters.MyWebhookTrigger.repositoryName}}
       Write-Host ${{ parameters.MyWebhookTrigger.component.group}}
 ```
 

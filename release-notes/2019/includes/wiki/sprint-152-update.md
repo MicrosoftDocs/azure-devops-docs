@@ -56,10 +56,10 @@ Now, you can create richer content in wiki using HTML tags. Check out what you c
 
 2. In addition, you can add a caption to your images using the **figure** and **figcaption** tags. These tags let you add alternate text for images and create associated image blocks. The **figcaption** tag can be added above or below the image.
 
-  > [!div class="mx-imgBorder"]
-  >![Badge](../../media/152_08.png)
+    > [!div class="mx-imgBorder"]
+    >![Badge](../../media/152_08.png)
 
-    For more information on the **figcaption** tag, see the documentation [here](https://www.w3schools.com/tags/tag_figcaption.asp)
+    For more information on the **figcaption** tag, see the documentation [here](https://www.w3schools.com/tags/tag_figcaption.asp).
 
 3. Finally, you can highlight parts of text in your wiki pages by using the **mark** tag. This lets you highlight important text in your wiki pages to draw readers attention.
 
@@ -76,8 +76,8 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
     You no longer have to remember the markdown table syntax. Now you can create a markdown table easily by selecting from a 15 X 15 grid. Just select the required number of columns and rows to insert a table with a single click.
 
-  > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/152_03.png)
+    > [!div class="mx-imgBorder"]
+    > ![Badge](../../media/152_03.png)
 
     This feature has been prioritized based on the following suggestion tickets:
 
@@ -95,7 +95,7 @@ Until now, creating and editing tables in a wiki was difficult. We've made chang
 
     You no longer have to add spaces to align your markdown columns. With the **Format tables** button, your markdown tables are automatically formatted by adding spaces to the cells to align the columns. If you have large tables, use it with **disable word wrap** to make the tables easier to read.​
 
-  > [!div class="mx-imgBorder"]
-  > ![Badge](../../media/152_05.png "Wiki page")
+    > [!div class="mx-imgBorder"]
+    > ![Badge](../../media/152_05.png "Wiki page")
 
     You can also use the **Ctrl + Shift + F** shortcut to format your tables.
