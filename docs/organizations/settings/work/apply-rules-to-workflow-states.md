@@ -105,7 +105,7 @@ The second and third groups support restricting state transitions. These two gro
 ---  
 :::row:::  
    :::column span="4":::
-      **Retrict a transition based on State**
+      **Restrict a transition based on State**
    :::column-end:::
 :::row-end:::
 :::row:::  
@@ -121,7 +121,7 @@ The second and third groups support restricting state transitions. These two gro
 ---  
 :::row:::  
    :::column span="4":::
-      **Retrict a transition based on State and user or group membership**
+      **Restrict a transition based on State and user or group membership**
    :::column-end:::
 :::row-end:::
 :::row:::  
