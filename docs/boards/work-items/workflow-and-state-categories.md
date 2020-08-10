@@ -190,6 +190,9 @@ Here's how the default, inherited states map to the state categories for all thr
 
 * * *
 
+[!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
+
+
 <a id="add-state-vs-kanban-column" />
 
 ## When to add a State versus a Kanban column
