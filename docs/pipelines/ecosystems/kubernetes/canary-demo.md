@@ -99,7 +99,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
     - **Namespace**: Create a new namespace with the name **canarydemo**
 1. Click on **Validate and Create**
 1. Navigate to **Pipelines** -> Select the pipeline you just created -> **Edit**
-1. Change the step you created previously to now use a Stage. And add 2 additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables for easier usage later in your pipeline. Your complete YAML should now look like this: 
+1. Change the step you created previously to now use a Stage. And add two additional steps to copy the manifests and mics directories as artifacts for use by consecutive stages. You might also want to move a couple of values to variables for easier usage later in your pipeline. Your complete YAML should now look like this: 
 
     ```YAML
     trigger:
@@ -185,7 +185,7 @@ In manifests/deployment.yml, replace `<foobar>` with your container registry's U
                   manifests: |
                     $(Pipeline.Workspace)/misc/*
     ```
-1. Save your pipeline by committing directly to the main branch. This should already run it successfully. 
+1. Save your pipeline by committing directly to the main branch. This commit should already run your pipeline successfully. 
 
 ::: moniker-end
 
@@ -203,7 +203,7 @@ YAML builds are not yet available on TFS.
     - **Source alias**: azure-pipelines-canary-k8s
     - Confirm your inputs by choosing **Add**.
 1. Select **Add an artifact**, choose **Azure container registry** or **Docker Hub** depending on the container registry you had chosen under Prerequisites. Provide appropriate values for the input dropdowns to locate your container registry, provide `image` as the alias for this artifact, and confirm the inputs by choosing **Add**. Once the artifact has been added, click on the lightning bolt icon on the artifact card to enable continuous deployment trigger.
-1. In **Deploy Canary** stage that you just created, click on **1 job, 0 task** link to be navigated to the window for adding jobs and stages
+1. In **Deploy Canary** stage that you created, click on **1 job, 0 task** link to be navigated to the window for adding jobs and stages
 1. Click on **Agent job**. In the configuration window, in the **Agent pool** dropdown window, choose **Hosted Ubuntu 1604**
 1. Click on the '+' on the agent job row to add a new task. Add **Deploy Kubernetes manifests** task with the following configuration -
     - **Display name**: Create secret
@@ -281,7 +281,7 @@ YAML builds are not yet available on TFS.
                   imagePullSecrets: '$(imagePullSecret)'
     ```
 
-1. Add an additional stage RejectCanary at the end of your YAML file to rollback the changes. 
+1. Add an additional stage RejectCanary at the end of your YAML file to roll back the changes. 
     ```YAML
     - stage: RejectCanary
       displayName: Reject canary
