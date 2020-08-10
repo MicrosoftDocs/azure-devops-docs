@@ -101,7 +101,7 @@ For more information, see:
 
 The project mapping file determines how the fields in each task are mapped to fields in Team Foundation and how each field is published and refreshed. Each project is associated with its own mapping file. You use the `TFSFieldMapping` command-line tool to download and upload the project mapping XML file.
 
-To learn more, see [TFSFieldMapping](../../../reference/xml/upload-or-download-the-microsoft-project-mapping-file.md).   
+To learn more, see [TFSFieldMapping](/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file).   
   
 ## Related articles
 
