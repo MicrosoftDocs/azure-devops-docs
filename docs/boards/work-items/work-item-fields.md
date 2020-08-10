@@ -542,7 +542,7 @@ To access the Work Item Field Explorer, you must install the Process Editor Tool
 
 ## Project integration and project field mapping  
 
-You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](../../reference/xml/customize-project-field-mapping-file.md). 
+You can change how work tracking fields map to fields in Project, and you can change how specific fields are published. See [The Microsoft Project Field Mapping File](/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file. 
 
 ::: moniker-end  
 
