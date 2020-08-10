@@ -149,6 +149,6 @@ A: If you remove your Azure Subscription from your Azure DevOps organization, yo
 
 ### Q: What about customers who were using Artifacts before May 6, 2019 under the previous per user model?
 
-A: Customers from before May 6, 2019 aren't charged for Artifacts storage until July 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on July 6, 2020, you're charged under the new storage model.
+A: Customers from before May 6, 2019 aren't charged for Artifacts storage until July 6, 2020. You can opt in to the new storage model by setting a paid limit above the amount of storage you're currently using. Then, starting on October 5, 2020, you're charged under the new storage model.
 
 ::: moniker-end

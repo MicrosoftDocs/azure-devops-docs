@@ -168,7 +168,9 @@ You can also see the complete logs of the policy checks from the pipeline view.
 
 :::image type="content" source="media/checks/policy-check-failed-logs.png" alt-text="Viewing detailed logs.":::
 
-# FAQs
+* * *
+
+## FAQ
 
 ### The checks defined did not start. What happened?
 The evaluation of checks starts once the stage conditions are satisfied. You should confirm run of the stage started after the checks were added on the resource and that the resource is consumed in the stage.
@@ -189,4 +191,4 @@ Using the Invoke REST API check, you can add a check to wait on the API in the s
 ### How can I use output variables from previous stages in a check?
 By default, only pre-defined variables are available to checks. You can use a linked variable group to access other variables. The output variable from the previous stage can be written to the variable group and accessed in the check.
 
-* * *
+
