@@ -45,7 +45,7 @@ If you like self-hosted agents but wish that you could simplify managing them, y
 
 In preparation for creating scale set agents, you must first create a virtual machine scale set in the Azure portal. You must create the virtual machine scale set in a certain way so that Azure Pipelines can manage it. In particular, you must disable Azure's autoscaling so that Azure Pipelines can determine how to perform scaling based on number of incoming pipeline jobs. We recommend that you use the following steps to create the scale set.
 
-To customize the permissions of the pipeline agent user, you can create a user named 'AzDevOps', and grant that user the permissions you require. This username is created by the scaleset agents startup script if it does not already exist.
+To customize the permissions of the pipeline agent user, you can create a user named 'AzDevOps', and grant that user the permissions you require. This user is created by the scaleset agents startup script if it does not already exist.
 
 In the following example, a new resource group and virtual machine scale set are created with Azure Cloud Shell using the UbuntuLTS VM image.
 
@@ -380,7 +380,7 @@ To update the image on an existing scaleset, follow steps 1-5 in section [Create
     ```
 
 ## Troubleshooting issues
-Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled Diagnostics.
+Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Diagnostics**.
 The Diagnostic tab shows all actions executed by Azure DevOps to Create, Delete, or Reimage VMs in your Azure Scale Set.  Diagnostics also logs any errors encountered while trying to perform these actions. Review the errors to make sure your scaleset has sufficient resources to scale up. If your Azure subscription has reached the resource limit in VMs, CPU cores, disks, or IP Addresses, those errors will show up here.
      
 <a name="q-a"></a>
@@ -399,6 +399,6 @@ Licensing considerations limit us from distributing Microsoft-hosted images. We 
 Create a Scale Set with a Windows Server OS and when creating the Agent Pool select the "Configure VMs to run interactive tests" option.
 
 ### How can I delete agents?
-Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled Agents.
-Click the 'Enabled' toggle button to disable the agent.  The disabled agent will complete the pipeline it is currently running and will not pick up additional work.  Within a few minutes after completing its current pipeline job, the agent will be deleted.
+Navigate to your Azure DevOps **Project settings**, select **Agent pools** under **Pipelines**, and select your agent pool. Click the tab labeled **Agents**.
+Click the 'Enabled' toggle button to disable the agent.  The disabled agent will complete the pipeline it is currently running and will not pick up additional work.  Within a few minutes after completing its current pipeline job, the agent  will be deleted.
 
