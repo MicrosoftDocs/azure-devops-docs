@@ -78,7 +78,7 @@
     {
       "source_path": "docs/extend/test/discover-menu-group-ids.md",
       "redirect_url": "/azure/devops/extend/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/pipelines/packages/maven.md",
