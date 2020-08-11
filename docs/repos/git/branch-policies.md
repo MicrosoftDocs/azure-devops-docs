@@ -291,7 +291,9 @@ You can select **Requestors can approve their own changes**.
 
 When all required reviewers approve the code, you can complete the pull request.
 
-![Pull request status shows that reviewers have approved](media/branch-policies/RequiredReviewerApproved.png)
+::: moniker range="< azure-devops-2020"
+![Pull request status shows that reviewers have approved](media/branch-policies/required-reviewer-approved.png)
+::: moniker-end
 
 ## Bypass branch policies
 
