@@ -90,7 +90,17 @@ When the required number of reviewers approve the pull request, it can finish.
 Require associations between pull requests and a work item to ensure that changes to your branch have [work item management tracking](../../boards/backlogs/connect-work-items-to-git-dev-ops.md).
 Linking work items provides additional context for your changes and ensures that updates go through your work item tracking process.
 
+::: moniker range=">= azure-devops-2020"
+
 ![Require linked work items in your pull requests](media/branch-policies/work_item_linking.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+![Require linked work items in your pull requests](media/branch-policies/work_item_linking_2018.png)
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2017" 
 
@@ -98,7 +108,17 @@ Linking work items provides additional context for your changes and ensures that
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
+::: moniker range=">= azure-devops-2020"
+
 ![Check for comment resolution](media/branch-policies/comment-resolution.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
+
+::: moniker-end
 
 For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
