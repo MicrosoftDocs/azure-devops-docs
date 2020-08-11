@@ -125,7 +125,7 @@ NuGet restore can fail due to a variety of issues. One of the most common issues
 
 ### How do I use the latest version of NuGet?
 
-::: moniker range=">= tfs-2018" 
+::: moniker range="= tfs-2018" 
 
 If you're using Azure Pipelines or TFS 2018, new template-based builds will work automatically thanks to a new "NuGet Tool Installer" task that's been added to the beginning of all build templates that use the NuGet task. We periodically update the default version that's selected for new builds around the same time we install Visual Studio updates on the Hosted build agents.
 
@@ -136,7 +136,7 @@ For existing builds, just add or update a NuGet Tool Installer task to select th
 
 ::: moniker-end 
 
-::: moniker range="tfs-2017" 
+::: moniker range="<=tfs-2017" 
 
 #### TFS 2017 and earlier
 
