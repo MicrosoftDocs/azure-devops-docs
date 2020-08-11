@@ -53,11 +53,26 @@ To require teams to review their changes before completing a pull request, selec
 
 The basic policy requires that a certain number of reviewers approve the code with no rejections.
 
-![Check the Require Code Reviews box](media/branch-policies/require-minimum-number-of-pr-reviews.png)  
+::: moniker range=">= azure-devops-2020"
+
+![Enable the Require Code Reviews policy](media/branch-policies/require-minimum-number-of-pr-reviews.png)  
+
+- If **Allow requestors to approve their own changes** is selected, the creator of the pull request may vote on its approval. If not, they can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
+- By default, anyone with push permissions on the source branch may both add commits and vote on the pull request's approval. By enabling **Prohibit the most recent pusher from approving their own changes**, you can enforce segregation of duties - having the most recent push automatically makes the pusher's vote not count.
+- If any reviewer rejects the changes, the pull request can't finish unless you select **Allow completion even if some reviewers vote to wait or reject**.
+- You can reset code reviewer votes when new changes are pushed to the source branch. Select **Reset code reviewer votes when there are new changes**.
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+![Check the Require Code Reviews box](media/branch-policies/require-minimum-number-of-pr-reviews-2018.png)  
 
 - If **Requestors can approve their own changes** isn't selected, the creator of the pull request can still vote **Approve** on their pull request, but their vote won't count toward the **Minimum number of reviewers**.
 - If any reviewer rejects the changes, the pull request can't finish unless you select **Allow completion even if some reviewers vote to wait or reject**.
 - You can reset code reviewer votes when new changes are pushed to the source branch. Select **Reset code reviewer votes when there are new changes**.
+
+::: moniker-end
 
 When the required number of reviewers approve the pull request, it can finish.
 
