@@ -341,7 +341,7 @@ In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** pe
 ## Path filters
 
 Several branch policies offer path filters.
-If a path filter is set, the policy wil only apply when files which match the filter are changed.
+If a path filter is set, the policy will only apply when files which match the filter are changed.
 Leaving this field blank means that the policy will always apply.
 
 You can specify absolute paths and wildcards.
