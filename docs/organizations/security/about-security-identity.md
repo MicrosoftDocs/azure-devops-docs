@@ -231,7 +231,7 @@ Certain features are only available to users who have the appropriate licensing 
 
 - [Permissions and groups reference](permissions.md)
 - [Default permissions and access for Azure DevOps](permissions-access.md)
-- [Access with Azure Active Directory (Azure AD)](../accounts/add-users-to-azure-ad.md)
+- [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Set up groups for use in on-premises deployments](/azure/devops/server/admin/setup-ad-groups)
 - [Setting up HTTPS with Secure Sockets Layer (SSL)](/azure/devops/server/admin/setup-secure-sockets-layer)
 
