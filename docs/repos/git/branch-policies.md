@@ -30,9 +30,19 @@ Policies enforce your team's code quality and change management standards.
 
    ![Open the branch policies from the context menu](media/branches/branches_context_menu_policy.png)
 
+::: moniker range=">= azure-devops-2020"
+
+1. Configure policies on the **Settings** page. See the following sections for descriptions of each policy type.
+
+::: end-moniker
+
+::: moniker range="< azure-devops-2020"
+
 1. Configure your policies in the **Policies** page. See the following sections for descriptions of each policy type. Select **Save changes** to apply your new policy configuration.
 
    ![Policies tab](media/branch-policies/save-policy-changes.png)  
+
+::: moniker-end
 
 <a name="require_reviewers"></a>
 
