@@ -4952,7 +4952,7 @@
     },
     {
       "source_path": "docs/work/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -5042,7 +5042,7 @@
     },
     {
       "source_path": "docs/work/reference/customize-project-field-mapping-file.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -5097,7 +5097,7 @@
     },
     {
       "source_path": "docs/work/reference/field-mappings-in-microsoft-project.md",
-      "redirect_url": "/azure/devops/reference/xml/field-mappings-in-microsoft-project",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-mappings-in-microsoft-project",
       "redirect_document_id": false
     },
     {
@@ -5147,7 +5147,7 @@
     },
     {
       "source_path": "docs/work/reference/map-microsoft-project-fields-to-tf-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields",
       "redirect_document_id": false
     },
     {
@@ -5217,7 +5217,7 @@
     },
     {
       "source_path": "docs/work/reference/upload-or-download-the-microsoft-project-mapping-file.md",
-      "redirect_url": "/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -10122,7 +10122,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -10212,7 +10212,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/customize-project-field-mapping-file.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -10267,7 +10267,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/field-mappings-in-microsoft-project.md",
-      "redirect_url": "/azure/devops/reference/xml/field-mappings-in-microsoft-project",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/field-mappings-in-microsoft-project",
       "redirect_document_id": false
     },
     {
@@ -10317,7 +10317,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/map-microsoft-project-fields-to-tf-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/map-microsoft-project-fields-to-tf-fields",
       "redirect_document_id": false
     },
     {
@@ -10382,7 +10382,7 @@
     },
     {
       "source_path": "docs/work/customize/reference/upload-or-download-the-microsoft-project-mapping-file.md",
-      "redirect_url": "/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/upload-or-download-the-microsoft-project-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -11782,7 +11782,7 @@
     },
     {
       "source_path": "docs/reference/xml/add-or-change-how-project-fields-map-to-tfs-fields.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
@@ -12057,7 +12057,7 @@
     },
     {
       "source_path": "docs/reference/mapping/index.md",
-      "redirect_url": "/azure/devops/reference/xml/customize-project-field-mapping-file",
+      "redirect_url": "/previous-versions/azure/devops/reference/xml/customize-project-field-mapping-file",
       "redirect_document_id": false
     },
     {
