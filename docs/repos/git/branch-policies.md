@@ -293,8 +293,6 @@ When all required reviewers approve the code, you can complete the pull request.
 
 ![Pull request status shows that reviewers have approved](media/branch-policies/RequiredReviewerApproved.png)
 
-::: moniker range=">= tfs-2015" 
-
 ## Bypass branch policies
 
 In some cases, you need to bypass policy requirements. Bypassing lets you push changes to the branch directly or complete a pull request even if branch policies aren't satisfied. You can grant a permission from the previous list to a user or group. You can scope this permission to an entire project, a repo, or a single branch. Manage this permission along with other [Git permissions](../../organizations/security/permissions.md#git-repository-permissions-object-level).  
@@ -324,7 +322,6 @@ In TFS 2015 through TFS 2018 Update 2, the **Exempt from policy enforcement** pe
 > at the repo and project level.
 > Policies are a cornerstone of secure and compliant source code management.
 
-::: moniker-end 
 
 ::: moniker range=">= azure-devops-2019"
 
