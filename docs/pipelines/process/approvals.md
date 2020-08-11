@@ -73,7 +73,7 @@ The check fails if execution of the stage does not start within the **Timeout** 
 
 ## Invoke Azure function
 
-Azure functions are the serverless computation platform offered by Azure. with Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
+Azure functions are the serverless computation platform offered by Azure. With Azure functions, you can run small pieces of code (called "functions") without worrying about application infrastructure. 
 Given the high flexibility, Azure functions provide a great way to author your own checks. You include the logic of the check in Azure function such that each execution is triggered on http request, has a short execution time and returns a response. While defining the check, you can parse the response body to infer if the check is successful. The evaluation can be repeated periodically using the Time between evaluations setting in control options. [Learn More](../tasks/utility/azure-function.md)
 
 :::image type="content" source="media/checks/azure-function-check.png" alt-text="Configuring Azure function check.":::
