@@ -8,7 +8,7 @@ ms.assetid: 87b994d6-2a92-46e5-b667-afe4eb198e25
 ms.topic: how-to
 ms.author: chcomley
 author: chcomley
-ms.date: 07/28/2020 
+ms.date: 08/11/2020 
 monikerRange: 'azure-devops'
 ---
 
@@ -16,7 +16,7 @@ monikerRange: 'azure-devops'
 
 [!INCLUDE [version-vsts-only](../../includes/version-vsts-only.md)]
 
-Set up billing in Azure DevOps before making purchases, so you have it in place once you're ready to buy. You only need to set up billing once for your organization. 
+Set up billing in Azure DevOps before you make purchases. That way, you have it in place once you're ready to buy. You only need to set up billing once for your organization. 
 
 *All services are billed via Azure*. You're not required to use any other Azure services.
 
@@ -31,6 +31,11 @@ Set up billing in Azure DevOps before making purchases, so you have it in place 
 > The [Azure Free Trial](https://azure.microsoft.com/offers/ms-azr-0044p/) isn't supported.
 
 ## Set up billing for your organization
+
+> [!NOTE]
+> A user interface limitation prevents the subscription picker from displaying more than 50 subscriptions. If your user account has access to more than 50 subscriptions and the target subscription you want to change the billing for isn't visible, you can follow either of the following two workarounds:
+> - Create a new user account. Grant the account Owner/Contributor rights to the target subscription and administrative privileges to the Azure DevOps organization. Use the new account to link the organization to the target subscription.
+> - Open a [support ticket](https://developercommunity.visualstudio.com/spaces/21/index.html).
 
 1. Sign in to your organization (```https://dev.azure.com/{yourorganization}```).
 
