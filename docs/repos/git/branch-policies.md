@@ -163,7 +163,7 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
   
 ::: moniker-end 
  
-::: moniker range=">= azure-devops-2019" 
+::: moniker range=">= azure-devops-2020" 
 
 ## Build validation
 
@@ -198,7 +198,7 @@ When the owner pushes changes that build successfully, the policy status is upda
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2015 < azure-devops-2019" 
+::: moniker range=">= tfs-2015 < azure-devops-2020" 
 
 ## Build validation
 
