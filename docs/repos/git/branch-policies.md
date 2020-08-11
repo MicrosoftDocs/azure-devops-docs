@@ -5,7 +5,7 @@ description: Branch policies provide teams with the means to protect their impor
 ms.assetid: 5D76697E-16A0-4048-91D1-806FE24C92A3
 ms.technology: devops-code-git 
 ms.topic: conceptual
-ms.date: 11/15/2019
+ms.date: 08/11/2020
 monikerRange: '>= tfs-2015'
 ---
 
