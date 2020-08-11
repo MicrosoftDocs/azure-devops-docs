@@ -8297,12 +8297,17 @@
     },
     {
       "source_path": "docs/accounts/add-users-to-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/organizations/accounts/add-users-to-aad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/organizations/accounts/add-users-to-azure-ad.md",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
       "redirect_document_id": false
     },
     {
@@ -13002,7 +13007,7 @@
     },
     {
       "source_path": "docs/organizations/accounts/delete-users-from-services-azure-ad.md",
-      "redirect_url": "/azure/devops/organizations/accounts/add-users-to-azure-ad",
+      "redirect_url": "/azure/active-directory/fundamentals/add-users-azure-active-directory",
       "redirect_document_id": false
     },
     { "source_path": "docs/artifacts/preview/maven-docs.md",
