@@ -34,7 +34,7 @@ Policies enforce your team's code quality and change management standards.
 
 1. Configure policies on the **Settings** page. See the following sections for descriptions of each policy type.
 
-::: end-moniker
+::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
 
