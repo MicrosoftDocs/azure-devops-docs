@@ -16,7 +16,7 @@ monikerRange: '>= tfs-2017'
 [!INCLUDE [temp](../includes/concept-rename-note.md)]
 ::: moniker-end
 
-NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. You can use the NuGet restore task in your Azure pipeline with both YAML and classic editor for a cleaner development environment and smaller repository size.
+NuGet package restore allows you to have all your project's dependencies available without having to store them in source control. This allows for a cleaner development environment and smaller repository size. You can restore your NuGet packages using the NuGet restore build task, the NuGet CLI, and the .NET Core CLI. This article will show you how to restore your NuGet packages using both YAML and the classic Azure pipelines. 
 
 ### Prerequisites
 
@@ -26,7 +26,7 @@ NuGet package restore allows you to have all your project's dependencies availab
 
 ## Restore packages with NuGet restore build task
 
-To build a solution that relies on NuGet packages from Azure artifacts feeds, we will want to add the **NuGet** task.
+To build a solution that relies on NuGet packages from Azure artifacts feeds, we will want to add the **NuGet** build task to our pipeline.
 
 1. Navigate to your build pipeline and select **Edit**.
 2. Under **Tasks**, **Agent job**, select the plus sign **"+"** to add a new task. Search for **NuGet** task and add it to your agent job.
@@ -41,9 +41,10 @@ To build a solution that relies on NuGet packages from Azure artifacts feeds, we
 > [!div class="mx-imgBorder"]
 > ![NuGet restore task](media/restore-pkgs-on-build.png)
 
-## Specifying sources in NuGet.config
+## Restore your NuGet packages with the NuGet CLI
 
-The NuGet.config you check-in should list all the package sources you want to consume. The example below demonstrates how that might look.
+In order for your project to be set up properly, your `nuget.config` must be in the same folder as your `.csproj` or `.sln`file.
+The `nuGet.config` file you check-in also should list all the package sources you want to consume. The example below demonstrates how that might look.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -58,6 +59,14 @@ The NuGet.config you check-in should list all the package sources you want to co
   </packageSources>
 </configuration>
 ```
+
+To restore your NuGet packages run the following command in your project directory:
+
+```cmd
+nuget.exe restore
+```
+
+## Restore NuGet packages with the .NET Core CLI task
 
 To restore your package using YAML and the [.NET Core CLI task](../tasks/build/dotnet-core-cli.md), use the following example:
 
@@ -78,35 +87,35 @@ To restore your package using YAML and the [.NET Core CLI task](../tasks/build/d
 * `vstsFeed`: This argument is required when `feedsToUse` == `Select`. Value format: `<projectName>/<feedName>`.
 * `includeNuGetOrg`: Use packages from NuGet.org.
 
-## Restoring packages from feeds in a different organization
+## Restore NuGet packages from feeds in a different organization
 
 If your NuGet.config contains feeds in a different Azure DevOps organization than the one running the build, you'll need to set up credentials for those feeds manually.
  
 1. Select an account (either a service account (recommended) or a user account) that has access to the remote feed.
-1. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization that hosts the feed. Sign in with the credentials mentioned in step 1, select **User settings** then **Personal Access Tokens**.
+2. In your browser, open a Private mode, Incognito mode, or a similar mode window and navigate to the Azure DevOps organization that hosts the feed. Sign in with the credentials mentioned in step 1, select **User settings** then **Personal Access Tokens**.
 
-  > [!div class="mx-imgBorder"]
-  > ![personal access token](media/pat.png)
+    > [!div class="mx-imgBorder"]
+    > ![personal access token](media/pat.png)
 
-1. Create your PAT with the **Packaging (read)** scope and keep it handy.
-1. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector.
+3. Create your PAT with the **Packaging (read)** scope and keep it handy.
+4. In the Azure DevOps organization that contains the build, edit the build's NuGet step and ensure you're using version 2 or greater of the task, using the version selector.
 
-  > [!div class="mx-imgBorder"]
-  > ![NuGet v2](media/nuget-v-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![NuGet v2](media/nuget-v-2.png)
 
-1. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button.
-1. Set the path to your NuGet.config in the **Path to NuGet.config**.
-1. In **Credentials for feeds outside this organization/collection**, select the **+ New**.
+5. In the **Feeds and authentication** section, Ensure you've selected the **Feeds in my NuGet.config** radio button.
+6. Set the path to your NuGet.config in the **Path to NuGet.config**.
+7. In **Credentials for feeds outside this organization/collection**, select the **+ New**.
 
-  > [!div class="mx-imgBorder"]
-  > ![Feeds and authentication](media/feeds-and-authentication.png)
+    > [!div class="mx-imgBorder"]
+    > ![Feeds and authentication](media/feeds-and-authentication.png)
 
-1. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
+8. In the service connection dialog that appears, enter the feed URL (make sure it matches what's in your NuGet.config) and the PAT you created in step 3.
 
-  > [!div class="mx-imgBorder"]
-  > ![NuGet service connection](media/service-connection.png)
+    > [!div class="mx-imgBorder"]
+    > ![NuGet service connection](media/service-connection.png)
 
-1. Save the service connection and the build, then queue a new build.
+9. Save & queue a new build.
 
 ## FAQ
 
