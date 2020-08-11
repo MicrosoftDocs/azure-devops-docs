@@ -102,25 +102,31 @@ Linking work items provides additional context for your changes and ensures that
 
 ::: moniker-end
 
-::: moniker range=">= tfs-2017" 
+::: moniker range=">= azure-devops-2020" 
 
 ## Check for comment resolution
 
 Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
 
-::: moniker range=">= azure-devops-2020"
-
 ![Check for comment resolution](media/branch-policies/comment-resolution.png)
+
+For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
+
+::: moniker-end
+
+::: moniker range=">= tfs-2017  < azure-devops-2020"
+
+## Check for comment resolution
+
+Configure a comment resolution policy for your branch by selecting **Check for comment resolution**.
+
+![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
+
+For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
 ::: moniker-end
 
 ::: moniker range="< azure-devops-2020"
-
-![Check for comment resolution](media/branch-policies/comment-resolution-2018.png)
-
-::: moniker-end
-
-For more information on working with pull request comments, see [Pull requests - leave comments](pull-requests.md#leave-comments).
 
 ## Enforce a merge strategy
 
