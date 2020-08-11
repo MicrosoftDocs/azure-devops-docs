@@ -343,170 +343,12 @@ Items in any swimlane that contains &quot;Test&quot;
 
 ## Workflow and Kanban board fields
 
-The following fields are useful to filter queries. Some of these fields get updated  as a work item progresses from one state to another. Or they are updated as you  move a work item in the [Kanban board](../boards/kanban-basics.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they are tracked for those work item types listed in the following table.
+The following fields are useful to filter queries. Some of these fields get updated as a work item progresses from one state to another. Or they are updated as you  move a work item in the [Kanban board](../boards/kanban-basics.md) to a different column or swimlane. Several of these fields don't appear on the work item form, but they are tracked for those work item types listed in the following table.
 
 For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
+::: moniker-end 
 
-<table width="100%">
-<thead>
-<tr>
-  <th width="20%">Field name</th>
-  <th width="46%">Description</th>
-  <th width="12%">Data type </th>
-  <th width="22%">Work item type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-  <td>Activated By<sup>1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who changed the status from New to Active or re-activated a work item after it was closed, completed, or done. 
-<p>Reference name=Microsoft.VSTS.Common.ActivatedBy</p></td>
-  <td>String (Identity)</td>
-  <td>Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story  </td>
-</tr>
-
-<tr>
-  <td>Activated Date <sup> 1,3</sup></td>
-  <td>The date and time when the work item transitioned from New to an In Progress category state or was re-activated after it was closed, completed, or done. The Activated Date is always empty when it is in the New state or just created. 
-<p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-
-<tr>
-  <td>Assigned To<sup>2,&nbsp;3,&nbsp;4</sup> </td>
-  <td>The name of the team member who currently is assigned to the work item. For more information, see <a href="#sync">Note 1 on synchronization and person-name fields</a>. 
-<p>Reference name=System.AssignedTo</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Board Column </td>
-  <td>The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
-<p>Reference name=System.BoardColumn</p></td>
-  <td>String</td>
-  <td>Requirement Category<sup> 5</sup> </td>
-</tr>
-<tr>
-  <td>Board Column Done </td>
-  <td>
-    <p>The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when <a href="../boards/split-columns.md" data-raw-source="[split-columns](../boards/split-columns.md)">split-columns</a> has been enabled for a Kanban board column. </p>
-<p>Reference name=System.BoardColumnDone</p></td>
-  <td>Boolean</td>
-  <td>Requirement Category<sup> 5</sup> </td>
-</tr>
-<tr>
-  <td>
-    <p>Board Lane </p>
-  </td>
-  <td><p>The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.</p>
-<p>Reference name=System.BoardLane</p></td>
-  <td>String</td>
-  <td>Requirement Category<sup> 5</sup>  </td>
-</tr> 
-<tr>
-  <td>Closed By<sup> 1, 2,&nbsp;3</sup>  </td>
-  <td>The name of the team member who set the state to closed, completed, or done.
-<p>Reference name=System.ClosedBy</p></td>
-  <td>String</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Closed Date</td>
-  <td>The date and time when a team member closed or completed a work item.
-<p>Reference name=Microsoft.VSTS.Common.ClosedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-
-<tr>
-  <td>Created By<sup> 2,&nbsp;3</sup> </td>
-  <td><p>The name of the team member who created the work item.</p>
-<p>Reference name=Microsoft.VSTS.Common.CreatedBy</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Created Date</td>
-  <td><p>The date and time when a team member added the work item.</p>
-<p>Reference name=Microsoft.VSTS.Common.CreatedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Reason <sup> 3,&nbsp;4</sup> </td>
-  <td>The reason why the work item is in the current state.
-<p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see [Change the workflow for a work item type (On-premises XML process model only)](../../reference/xml/change-workflow-wit.md).</p>
-<p>Reference name=System.Reason</p></td>
-  <td>String</td>
-  <td>All (except Test Case and Shared Steps)</td>
-</tr>
-<tr>
-  <td>Resolved By <sup> 1,&nbsp;2,&nbsp;3</sup>  </td>
-  <td><p>The date and time when a team member resolved a work item.</p>
-<p>Reference name=Microsoft.VSTS.Common.ResolvedBy</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Resolved Date <sup> 1, 3</sup>  </td>
-  <td>The date and time when a team member resolved a work item.
-<p>Reference name=Microsoft.VSTS.Common.ResolvedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Resolved Reason <sup> 3</sup>  </td>
-  <td>The reason why a work item was resolved. For example, the user story is code complete or a bug is fixed.
-<p>This field is read-only and only valid for Agile and CMMI work item types.</p>
-<p>Reference name=Microsoft.VSTS.Common.ResolvedReason</p></td>
-  <td>String</td>
-  <td>All (Agile, CMMI)</td>
-</tr>
-<tr>
-  <td>Reviewed By </td>
-  <td>The name of the team member who responded to a code review request and is cataloged in the code review response. </p>
-    <p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
-  </td>
-  <td>String (Identity)</td>
-  <td>Code Review Response
-  </td>
-</tr>
-<tr>
-  <td>State <sup> 3, 4</sup>  </td>
-  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md">Customize the workflow for a process</a>. To add or modify States or the workflow, see <a href="../../reference/xml/change-workflow-wit.md">Change the workflow for a work item type</a>.</p>
-<p>Reference name=System.State</p></td>
-  <td>String</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>State Changed Date</td>
-  <td>The date and time when the value of the State field changed.
-<p>Reference name=Microsoft.VSTS.Common.StateChangeDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-
-</tbody>
-</table>
-
-#### Notes
-
-<a id="sync">  </a>
-
-1. See [Date and Identity fields](#date-identity).
-
-2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
-
-    For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
-3.  Reportable field with attribute set to Dimension. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
-4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
-5. The Requirement Category applies to all work item types that appear on the Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). 
-	> [!NOTE]  
-	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
-
-::: moniker-end
 
 
 ::: moniker range="tfs-2013"
@@ -515,125 +357,403 @@ For more information about field attributes, see [Work item fields and attribute
 
 You can use the following fields to filter your queries or build reports. Some of these fields are populated with information as a work item progresses from one state to another. Several of these fields do not appear on the work item form, but they are tracked for those WITs listed in the following table. For more information about field attributes, see [Work item fields and attributes](../work-items/work-item-fields.md).
 
+::: moniker-end
 
-<table width="100%">
-<thead>
-<tr>
-  <th width="20%">Field name</th>
-  <th width="48%">Description</th>
-  <th width="12%">Data type </th>
-  <th width="20%">Work item type</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr>
-  <td>Activated By <sup> 1,&nbsp;2</sup> </td>
-  <td>The name of the team member who changed the status of a work item from New to Active or re-activated a work item after it had been closed, completed, or done. 
-<p>Reference name=Microsoft.VSTS.Common.ActivatedBy</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Activated Date <sup> 2</sup></td>
-  <td>The date and time when the work item was changed from New to Active or re-activated after it had been closed, completed, or done. 
-<p>Reference name=Microsoft.VSTS.Common.ActivatedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Assigned To <sup> 1,&nbsp;2,&nbsp;3</sup> </td>
-  <td>The name of the team member who currently owns the work item. For more information, see <a href="#sync">Note 1 on synchronization and person-name fields</a>. 
-<p>Reference name=System.AssignedTo</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Closed By <sup> 1,&nbsp;2</sup>  </td>
-  <td><p>The name of the team member who set the state to closed, completed, or done. </p>
-<p>Reference name=System.ClosedBy</p></td>
-  <td>String</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Closed Date</td>
-  <td><p>The date and time when a work item was closed.</p>
-<p>Reference name=Microsoft.VSTS.Common.ClosedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Created By <sup> 1,&nbsp;2</sup>   </td>
-  <td><p>The name of the team member who created the work item.</p>
-<p>Reference name=Microsoft.VSTS.Common.CreatedBy</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Created Date</td>
-  <td><p>The date and time when a work item was created.</p>
-<p>Reference name=Microsoft.VSTS.Common.CreatedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Reason <sup> 2,&nbsp;3</sup> </td>
-  <td>The reason why the work item is in the current state.
-<p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>REASON</code> element. To modify the defined reasons, see Change the workflow for a work item type.</p>
-<p>Reference name=System.Reason</p></td>
-  <td>String</td>
-  <td>All (except Test Case and Shared Steps)</td>
-</tr>
-<tr>
-  <td>Resolved By <sup> 1,&nbsp;2</sup>  </td>
-  <td><p>The date and time when the work item was moved into a resolved or done state.</p>
-<p>Reference name=Microsoft.VSTS.Common.ResolvedBy</p></td>
-  <td>String (Identity)</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Resolved Date<sup> 2</sup>  </td>
-  <td>The date and time when the work item was moved into a resolved or done state.
-<p>Reference name=Microsoft.VSTS.Common.ResolvedDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>Resolved Reason <sup> 2</sup>  </td>
-  <td>The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed.
-<p>This field is read-only and only valid for Agile and CMMI work item types.</p>
-<p>Reference name=Microsoft.VSTS.Common.ResolvedReason</p></td>
-  <td>String</td>
-  <td>All (Agile, CMMI)</td>
-</tr>
-<tr>
-  <td>Reviewed By </td>
-  <td>The name of the team member who responded to a code review request and is cataloged in the code review response. </p>
-    <p>Reference name=Microsoft.VSTS.Common.ReviewedBy</p>
-  </td>
-  <td>String (Identity)</td>
-  <td>Code Review Response
-  </td>
-</tr>
-<tr>
-  <td>State <sup> 2, 3</sup>  </td>
-  <td>The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.<br/>   <p>Values are defined within the <code>WORKFLOW</code> section of the WIT definition using the <code>STATE</code> element. To add a custom state to Azure Boards, see <a href="../../organizations/settings/work/customize-process-workflow.md" data-raw-source="[Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md)">Customize the workflow for a process</a>. To add or modify States or the workflow for an on-premises server, see <a href="../../reference/xml/change-workflow-wit.md" data-raw-source="[Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md)">Change the workflow for a work item type</a>.</p>
-<p>Reference name=System.State</p></td>
-  <td>String</td>
-  <td>All</td>
-</tr>
-<tr>
-  <td>State Changed Date</td>
-  <td>The date and time when the value of the State field changed.
-<p>Reference name=Microsoft.VSTS.Common.StateChangeDate</p></td>
-  <td>DateTime</td>
-  <td>All</td>
-</tr>
-</tbody>
-</table>
+---
+:::row:::
+   :::column span="1":::
+      **Field name**
+   :::column-end:::
+   :::column span="2":::
+      **Description**
+   :::column-end:::
+   :::column span="1":::
+      **Data type**
+   :::column-end:::
+   :::column span="1":::
+      **Work item type**
+   :::column-end:::
+:::row-end:::
+---
+:::row:::
+   :::column span="1":::
+      Activated By <sup> 1,&nbsp;2, 3</sup> 
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range="azure-devops"
+      The name of the team member who changed the status of a work item to an *In Progress* category state. 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      The name of the team member who changed the status of a work item from *New* to *Active* or re-activated a work item after it had been closed, completed, or done. 
+      ::: moniker-end 
+      Reference name=`Microsoft.VSTS.Common.ActivatedBy`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      Bug, Change Request, Epic, Feature, Issue, Product Backlog Item, Requirement, Review, Risk, Shared Step, Task, Test Case, User Story 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Activated By <sup> 1, 3</sup> 
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range="azure-devops"
+      The date and time when the work item was changed to an *In Progress* category state. 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      The date and time when the work item was changed from *New* to *Active* or re-activated after it had been closed, completed, or done. 
+      ::: moniker-end 
+      Reference name=`Microsoft.VSTS.Common.ActivatedDate`
+   :::column-end:::
+   :::column span="1":::
+      DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Assigned To&nbsp;<sup> 2</sup>
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Assigned To&nbsp;<sup> 2,&nbsp;3,&nbsp;4</sup>
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The name of the team member who currently owns the work item. For more information, see [Note 1 on synchronization and person-name fields](#sync).  
+      Reference name=`System.AssignedTo`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Board Column
+   :::column-end:::
+   :::column span="2":::
+      The current Kanban board column assignment of the work item, for example: Active, Closed, Committed, Done, or other custom column assignment. 
+      Reference name=`System.BoardColumn`
+   :::column-end:::
+   :::column span="1":::
+      String  
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup> 4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Requirement Category<sup> 5</sup> 
+      ::: moniker-end 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Board Column Done 
+   :::column-end:::
+   :::column span="2":::
+      The current assignment of the work item to Doing (False) or Done (True) Kanban column. Only assigned when [split-columns](../boards/split-columns.md) is enabled for a Kanban board column. 
+      Reference name=`BoardColumnDone`
+   :::column-end:::
+   :::column span="1":::
+      Boolean  
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup> 4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Requirement Category<sup> 5</sup> 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Board Lane
+   :::column-end:::
+   :::column span="2":::
+      The current Kanban board swimlane assignment of the work item, for example: Default, Expedite, Blocked, or other custom swimlane assignment.
+      Reference name=`System.BoardLane`
+   :::column-end:::
+   :::column span="1":::
+      String  
+   :::column-end:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Requirement Category<sup> 4</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Requirement Category<sup> 5</sup> 
+      ::: moniker-end
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Closed By <sup> 1,&nbsp;2</sup> 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Closed By <sup> 1,&nbsp;2, 3</sup> 
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The name of the team member who set the state to closed, completed, or done.   
+      Reference name=`System.ClosedBy`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Closed Date 
+   :::column-end:::
+   :::column span="2":::
+      The date and time when a work item was closed. 
+      Reference name=`Microsoft.VSTS.Common.ClosedDate`
+   :::column-end:::
+   :::column span="1":::
+      DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Created By <sup> 1,&nbsp;2</sup> 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Created By <sup> 1,&nbsp;2, 3</sup> 
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The name of the team member who created the work item. 
+      Reference name=`Microsoft.VSTS.Common.CreatedBy`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      Created Date 
+   :::column-end:::
+   :::column span="2":::
+      The date and time when a work item was created. 
+      Reference name=`Microsoft.VSTS.Common.CreatedDate`
+   :::column-end:::
+   :::column span="1":::
+      DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Reason 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Reason <sup> 3,&nbsp;4</sup>
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The reason why the work item is in the current state. Each transition from one workflow state to another is associated with a corresponding reason.  
+      ::: moniker range="< azure-devops-2019"
+      For On-premises XML process models, the reason values are defined within the `WORKFLOW` section of the work item type definition using the `REASON` element. To modify the defined reasons, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+      ::: moniker-end 
+      Reference name=`System.Reason`
+   :::column-end:::
+   :::column span="1":::
+      String
+   :::column-end:::
+   :::column span="1":::
+      All (except Test Case and Shared Steps)
+   :::column-end:::
+:::row-end::: 
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Resolved By <sup> 1,&nbsp;2</sup>  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved By <sup> 1,&nbsp;2,&nbsp;3</sup>  
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range="azure-devops"
+      The name of the team member who changed the status of a work item to a *Resolved* category state. 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      The name of the team member who changed the status of a work item to *Resolved* or done workflow state. 
+      ::: moniker-end 
+      Reference name=`Microsoft.VSTS.Common.ActivatedBy`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Resolved Date 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved Date<sup> 1, 2</sup> 
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      ::: moniker range="azure-devops"
+      The date and time when the work item was changed to an *In Resolved* category state. 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      The date and time when the work item was moved into a *Resolved* or done workflow state. 
+      ::: moniker-end 
+      Reference name=`Microsoft.VSTS.Common.ActivatedDate`
+   :::column-end:::
+   :::column span="1":::
+      DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      Resolved Reason 
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      Resolved Reason <sup> 3</sup>
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The reason why a work item was resolved. For example, the user story is code complete or the bug is fixed. This field is read-only and only valid for Agile and CMMI work item types.  
+      Reference name=`Microsoft.VSTS.Common.ResolvedReason`
+   :::column-end:::
+   :::column span="1":::
+      String
+   :::column-end:::
+   :::column span="1":::
+      All (Agile, CMMI)
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      Reviewed By 
+   :::column-end:::
+   :::column span="2":::
+      The name of the team member who responded to a code review request and is cataloged in the code review response.   
+      Reference name=`Microsoft.VSTS.Common.ReviewedBy`
+   :::column-end:::
+   :::column span="1":::
+      String (Identity)
+   :::column-end:::
+   :::column span="1":::
+      Code Review Response
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      ::: moniker range="azure-devops"
+      State  
+      ::: moniker-end 
+      ::: moniker range="< azure-devops"
+      State <sup> 3, 4</sup>
+      ::: moniker-end
+   :::column-end:::
+   :::column span="2":::
+      The current state of the work item. This field allows you to update the status of a work item as it progresses from new or active to a done or closed state.  
+      ::: moniker range="azure-devops"
+      To modify the workflow states, see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md). 
+      ::: moniker-end 
+      ::: moniker range=">= azure-devops-2019 < azure-devops"
+      To modify the workflow states, see the following articles:  
+      - For Inherited process model: see [Customize the workflow for a process](../../organizations/settings/work/customize-process-workflow.md) 
+      - For On-premises XML process models: see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+      ::: moniker-end 
+      ::: moniker range="< azure-devops-2019"
+      To modify the workflow states, see [Change the workflow for a work item type](../../reference/xml/change-workflow-wit.md).
+      ::: moniker-end 
+      Reference name=`System.State`
+   :::column-end:::
+   :::column span="1":::
+      String  
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::  
+:::row:::
+   :::column span="1":::
+      State Changed Date 
+   :::column-end:::
+   :::column span="2":::
+      The date and time when the value of the State field changed.
+      Reference name=`Microsoft.VSTS.Common.ActivatedDate`
+   :::column-end:::
+   :::column span="1":::
+      DateTime
+   :::column-end:::
+   :::column span="1":::
+      All
+   :::column-end:::
+:::row-end:::
 
-#### Notes
+---
+
+#### Notes:  
 
 <a id="sync">  </a>
+
+::: moniker range="azure-devops"
+
+1. See [Date and Identity fields](#date-identity).  
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: **Activated By**, **Assigned To**, **Closed By**, **Created By**, and **Resolved By**. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md). 
+3. See [Activated By/Date and Resolved By/Date fields](#activated-resolved-fields).   
+3. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
+	> [!NOTE]  
+	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+
+::: moniker-end
+
+
+::: moniker range="> tfs-2013 < azure-devops"
+
+1. See [Date and Identity fields](#date-identity).
+
+2.  By default, the server synchronizes system-defined person-name or Identity-based fields with Active Directory or Azure Active Directory. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
+
+    For on-premises deployments, you can enable or disable synchronization for a person-name field by using the **witadmin changefields** command-line tool. You can also synchronize custom person-name fields by specifying the **syncnamechanges** attribute. See [Manage work item fields](../../reference/witadmin/manage-work-item-fields.md) and [FIELD (Definition) element reference](../../reference/xml/field-definition-element-reference.md).  
+3.  Reportable field with attribute set to Dimension. Only valid when the collection is configured to support the On-premises XML model. Reportable data is exported to the data warehouse and can be included in Excel or SQL Server reports. For on-premises Azure DevOps, use the [**witadmin changefield**](../../reference/witadmin/manage-work-item-fields.md) command to change the reportable attribute for a field.  
+4.  Indexed field. Enabling indexing for a field may increase the performance of finding work items whose queries specify that field. For on-premises Azure DevOps, use the [**witadmin indexfield** command](../../reference/witadmin/manage-work-item-fields.md) to change the index attribute for a field.  
+5. The Requirement Category applies to all work item types that appear on the product backlog and Kanban board, and may include those added to the Bug Category based on the team setting for [Show bugs on boards and backlogs](../../organizations/settings/show-bugs-on-backlog.md). For more information on work item type categories, see [Use categories to group work item types](../../reference/xml/use-categories-to-group-work-item-types.md). 
+	> [!NOTE]  
+	> Even if you add a board-related field, such as Board Column or Board Lane, to a work item form, you can't modify the field from the form.  
+
+::: moniker-end
+
+::: moniker range="tfs-2013"
 
 1.  By default, the server synchronizes system-defined person-name fields with Active Directory or Azure Active Directory, if these are configured. These fields include: Activated By, Assigned To, Closed By, Created By, and Resolved By. You can grant access to a project by adding security groups that you created in AD or Azure AD or by adding accounts to existing or custom groups defined from the collection setting **Security** page. See [Set up Active Directory or Azure Active Directory](../../organizations/security/setup-ad-aad.md).
 
@@ -645,18 +765,23 @@ You can use the following fields to filter your queries or build reports. Some o
 
 ::: moniker-end
 
-
 ::: moniker range=">= tfs-2015"
 
 <a id="date-identity" />
 
 ### Date and Identity fields 
 
-Several date and identity fields are set based on workflow states or transitions. Some fields, such as Created By and Created Date, are set by the system when a work item is added. Other fields, such as Closed Date and Closed By, are set through the workflow definition of the work item type. Additionally, customized work item types may have additional rules defined that impact the date and identity field assignments.   
+Several date and identity fields are set based on workflow states or transitions. Some fields, such as **Created By** and **Created Date**, are set by the system when a work item is added. Other fields, such as **Closed Date** and **Closed By**, are set through the workflow definition of the work item type. Additionally, customized work item types may have additional rules defined that impact the date and identity field assignments.   
+
+::: moniker-end
+
+
+::: moniker range="< azure-devops"
 
 #### State changes
 
-For example, the Resolved Date, Resolved By, Closed Date, Closed By, Activated Date, and Activated By fields are set to `EMPTY` when a State value is set to New. The State value assignments are evaluated first, and then the transition assignments are evaluated next. 
+The following XML syntax example illustrates rules that may be defined for a work item type that govern the values for select fields. 
+Here, the **Resolved Date**, **Resolved By**, **Closed Date**, **Closed By**, **Activated Date**, and **Activated By** fields are set to `EMPTY` when a State value is set to New. The State value assignments are evaluated first, and then the transition assignments are evaluated next. 
 
 > [!div class="tabbedCodeSnippets"]
 ```XML
@@ -773,8 +898,13 @@ Then the Activated By and Activated Date fields are set to `READONLY`.
 
 ::: moniker-end
 
+
+[!INCLUDE [activated-resolved-by-fields](../includes/activated-resolved-by-fields.md)]
+
+
 ## Related articles
 
+- [How workflow states and state categories are used in Backlogs and Boards](../work-items/workflow-and-state-categories.md) 
 - [Query by date or current iteration](query-by-date-or-current-iteration.md)
 - [Query quick reference](query-index-quick-ref.md) 
 - [Work item fields and attributes](../work-items/work-item-fields.md)
