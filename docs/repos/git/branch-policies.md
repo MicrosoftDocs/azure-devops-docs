@@ -98,7 +98,7 @@ Linking work items provides additional context for your changes and ensures that
 
 ::: moniker range="< azure-devops-2020"
 
-![Require linked work items in your pull requests](media/branch-policies/work-item-linking_2018.png)
+![Require linked work items in your pull requests](media/branch-policies/work-item-linking-2018.png)
 
 ::: moniker-end
 
