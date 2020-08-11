@@ -248,24 +248,48 @@ For instructions on configuring this policy, see [Configure a branch policy for 
 
 Select reviewers for specific directories and files in your repo.
 
-![Enter the path and required reviewers](media/branch-policies/RequireSpecificReviewers.png)
+::: moniker range=">= azure-devops-2020"
+
+![Enter the path and required reviewers](media/branch-policies/require-specific-reviewers.png)
+
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+
+![Enter the path and required reviewers](media/branch-policies/require-specific-reviewers-2018.png)
+
+::: moniker-end
 
 These reviewers are automatically added to pull requests that change files along those paths. You can also specify an **Activity feed message**.
 
+::: moniker range=">= azure-devops-2020"
 ![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests.png)
+::: moniker-end
+
+::: moniker range="< azure-devops-2020"
+![Add automatic reviewers](media/branch-policies/automatically-include-reviewers-for-pull-requests-2018.png)
+::: moniker-end
 
 If you select **Required**, then the pull request can't be completed until:
 
 - Every user added as a reviewer for the path approves the changes.
 - At least one person in every group added to the path approves the changes.
 
-![Required reviewers are automatically added](media/branch-policies/RequiredReviewerAdded.png)
+::: moniker range="< azure-devops-2020"
+![Required reviewers are automatically added](media/branch-policies/required-reviewer-added.png)
+::: moniker-end
 
 Select **Optional** if you want to add reviewers automatically, but not require their approval to complete the pull request.
 
-You can select **Requestors can approve their own changes**.
+::: moniker range=">= azure-devops-2020"
+You can select **Allow requestors to approve their own changes**.
+::: moniker-end
 
-When the required reviewers approve the code, you can complete the pull request.
+::: moniker range="< azure-devops-2020"
+You can select **Requestors can approve their own changes**.
+::: moniker-end
+
+When all required reviewers approve the code, you can complete the pull request.
 
 ![Pull request status shows that reviewers have approved](media/branch-policies/RequiredReviewerApproved.png)
 
