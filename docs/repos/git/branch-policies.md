@@ -163,7 +163,42 @@ Select **Enforce a merge strategy** and pick an option to require that pull requ
   
 ::: moniker-end 
  
-::: moniker range=">= tfs-2015" 
+::: moniker range=">= azure-devops-2019" 
+
+## Build validation
+
+Set a policy requiring changes in a pull request to build successfully with the protected branch before the pull request can be completed.
+Build policies reduce breaks and keep your test results passing. Build policies help even if you're using [continuous integration](/azure/devops/learn/what-is-continuous-integration) (CI) on your development branches to catch problems early.
+
+If a build validation policy is enabled, a new build is queued when either a new pull request is created, or if changes are pushed to an existing pull request targeting the branch. The build policy then evaluates the results of the build to determine whether the pull request can be completed.
+
+>[!IMPORTANT]
+>Before specifying a build validation policy, you must have a build pipeline. If you don't have one, see [Create a build pipeline](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
+
+![Add build policy](media/branch-policies/add-build-policy.png)
+
+Choose the **+** button next to **Build validation**.
+
+![Build policy settings](media/branch-policies/build-policy-settings.png)
+
+1. Select the **Build pipeline**.
+1. Optionally set a **Path filter**. Learn more about [path filters](#path-filters) in branch policies.
+1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
+1. Select the **Policy requirement**. If you choose **Required**, builds must complete successfully to complete pull requests. Choose **Optional** to provide a notification of the build failure but still allow pull requests to complete.
+1. Set a build expiration to make sure that updates to your protected branch don't break changes for open pull requests.
+
+   - **Immediately when `branch name` is updated**: This option sets the build policy status in a pull request to *failed* when the protected branch is updated. Requeue a build to refresh the build status. This setting ensures that the changes in pull requests build successfully even as the protected branch changes. This option is best for teams that have important branches with a lower volume of changes. Teams working in busy development branches may find it disruptive to wait for a build to complete every time the protected branch is updated.
+   - **After `n` hours if `branch name` has been updated**: This option expires the current policy status when the protected branch updates if the passing build is older than the threshold entered. This option is a compromise between always requiring a build when the protected branch updates and never requiring one. This choice is excellent for reducing the number of builds when your protected branch has frequent updates.
+   - **Never**: Updates to the protected branch don't change the policy status. This value reduces the number of builds for your branch. It can cause problems when closing pull requests that haven't updated recently.
+  
+1. Enter an optional **Display name** for this build policy. This name identifies the policy on the **Branch policies** page. If you don't specify a display name, the policy uses the build pipeline name.
+1. Select **Save**.
+
+When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
+
+::: moniker-end
+
+::: moniker range=">= tfs-2015 < azure-devops-2019" 
 
 ## Build validation
 
@@ -175,11 +210,11 @@ If a build validation policy is enabled, a new build is queued when either a new
 >[!IMPORTANT]
 >Before specifying a build validation policy, you must have a build definition. If you don't have one, see [Create a build definition](../../pipelines/apps/index.md) and choose the type of build that matches your project type.
 
-![Add build policy](media/branch-policies/add-build-policy.png)
+![Add build policy](media/branch-policies/add-build-policy-2018.png)
 
 Choose **Add build policy** and configure your options in **Add build policy**.
 
-![Build policy settings](media/branch-policies/build-policy-settings.png)
+![Build policy settings](media/branch-policies/build-policy-settings-2018.png)
 
 1. Select the **Build definition**.
 1. Choose the type of **Trigger**. Select **Automatic (whenever the source branch is updated)** or **Manual**.
@@ -195,7 +230,7 @@ Choose **Add build policy** and configure your options in **Add build policy**.
 
 When the owner pushes changes that build successfully, the policy status is updated. If you have an **Immediately when `branch name` is updated** or **After `n` hours if `branch name` has been updated** build policy chosen, the policy status updates when the protected branch is updated if the most recent build is no longer valid.
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range="azure-devops" 
 
@@ -260,6 +295,34 @@ In some cases, you need to bypass policy requirements. Bypassing lets you push c
 > at the repo and project level.
 
 ::: moniker-end 
+
+::: moniker range=">= azure-devops-2019"
+
+## Path filters
+
+Several branch policies offer path filters.
+If a path filter is set, the policy wil only apply when files which match the filter are changed.
+Leaving this field blank means that the policy will always apply.
+
+You can specify absolute paths and wildcards.
+Examples:
+- `/WebApp/Models/Data.cs`
+- `/WebApp/*`
+- `*.cs`
+
+You can specify multiple paths using `;` as a separator.
+Example:
+- `/WebApp/Models/Data.cs;ClientApp/Models/Data.cs`
+
+Paths prefixed with `!` are excluded if they would otherwise be included.
+Example:
+- `/WebApp/*;!/WebApp/Tests/*` - includes all files in `/WebApp` except files in `/WebApp/Tests`
+- `!/WebApp/Tests/*` - specifies no files, since nothing is included first
+
+The order of filters is significant.
+They're applied left-to-right.
+
+::: moniker-end
 
 ::: moniker range=">= tfs-2015" 
 
